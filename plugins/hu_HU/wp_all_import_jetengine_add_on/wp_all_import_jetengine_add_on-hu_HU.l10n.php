@@ -1,0 +1,27 @@
+<?php
+return [
+	'project-id-version' => 'WP All Import - JetEngine Add-On 1.0.0',
+	'report-msgid-bugs-to' => 'support@hellowp.io',
+	'po-revision-date' => '2025-10-19 20:09',
+	'last-translator' => 'HelloWP <translate@hellowp.io>',
+	'language-team' => 'HelloWP <translate@hellowp.io>',
+	'language' => 'hu',
+	'mime-version' => '1.0',
+	'content-type' => 'text/plain; charset=utf-8',
+	'content-transfer-encoding' => '8bit',
+	'plural-forms' => 'nplurals=2; plural=(n != 1);',
+	'x-generator' => 'sinann-po-translator',
+	'x-plugin-name' => 'WP All Import - JetEngine Add-On',
+	'x-plugin-version' => '1.0.0',
+	'messages' => [
+		'WP All Import - JetEngine Add-On' => 'WP All Import - JetEngine kiegészítő',
+		'http://www.wpallimport.com/' => 'http://www.wpallimport.com/',
+		'Import to JetEngine Meta Fields. Requires WP All Import & JetEngine.' => 'Importálás a JetEngine meta mezőibe. WP All Import és JetEngine szükséges.',
+		'Soflyy' => 'Soflyy',
+		'JetEngine Add-On' => 'JetEngine kiegészítő',
+		'Import data from JetEngine' => 'Adatok importálása a JetEngine-ből',
+		'Relations' => 'Relációk',
+		'<b>%s</b>: WP All Import Pro must be installed: <a href="http://www.wpallimport.com/">http://www.wpallimport.com/</a>' => '<b>%s</b>: A WP All Import Pro-t telepíteni kell: <a href="http://www.wpallimport.com/">http://www.wpallimport.com/</a>',
+		'<b>%s</b>: WP All Import must be updated to version 4.9.1 or higher.' => '<b>%s</b>: A WP All Importot frissíteni kell 4.9.1 vagy újabb verzióra.',
+	],
+];

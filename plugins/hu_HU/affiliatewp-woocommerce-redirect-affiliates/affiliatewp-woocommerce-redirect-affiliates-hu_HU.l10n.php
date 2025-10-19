@@ -1,0 +1,28 @@
+<?php
+return [
+	'project-id-version' => 'AffiliateWP - WooCommerce Redirect Affiliates 1.2',
+	'report-msgid-bugs-to' => 'support@hellowp.io',
+	'po-revision-date' => '2025-10-19 20:09',
+	'last-translator' => 'HelloWP <translate@hellowp.io>',
+	'language-team' => 'HelloWP <translate@hellowp.io>',
+	'language' => 'hu',
+	'mime-version' => '1.0',
+	'content-type' => 'text/plain; charset=utf-8',
+	'content-transfer-encoding' => '8bit',
+	'plural-forms' => 'nplurals=2; plural=(n != 1);',
+	'x-generator' => 'sinann-po-translator',
+	'x-plugin-name' => 'AffiliateWP - WooCommerce Redirect Affiliates',
+	'x-plugin-version' => '1.2',
+	'messages' => [
+		'AffiliateWP - WooCommerce Redirect Affiliates' => 'AffiliateWP - WooCommerce partnerek átirányítása',
+		'https://affiliatewp.com/add-ons/official-free/woocommerce-redirect-affiliates/' => 'https://affiliatewp.com/add-ons/official-free/woocommerce-redirect-affiliates/',
+		'Redirect affiliates to their affiliate area when they login via WooCommerce\'s /my-account page' => 'A partnereket a partnerfelületükre irányítja, amikor a WooCommerce /my-account oldalán keresztül jelentkeznek be',
+		'Sandhills Development, LLC' => 'Sandhills Development, LLC',
+		'https://sandhillsdev.com' => 'https://sandhillsdev.com',
+		'AffiliateWP - WooCommerce Redirect Affiliates Requirements' => 'AffiliateWP - WooCommerce partnerek átirányításának követelményei',
+		'Cheatin&#8217; huh? This object cannot be cloned.' => 'Csalni próbálsz, mi? Ezt az objektumot nem lehet klónozni.',
+		'Cheatin&#8217; huh? This class cannot be unserialized.' => 'Csalni próbálsz, mi? Ezt az osztályt nem lehet deszerializálni.',
+		'More add-ons' => 'További kiegészítők',
+		'Get more add-ons for AffiliateWP' => 'Szerezzen be további kiegészítőket az AffiliateWP-hez',
+	],
+];
