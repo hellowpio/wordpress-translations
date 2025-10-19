@@ -41,12 +41,63 @@ Példa: `themes/hu_HU/astra/`
 
 ## Fordítás fájlok telepítése
 
+### 1. módszer: Manuális telepítés
+
 1. Navigálj a megfelelő mappába (plugins vagy themes)
 2. Válaszd ki a nyelvi kódot (pl. `hu_HU`)
 3. Keresd meg a bővítmény/téma nevét
-4. Másold a `.po` és `.mo` fájlokat a WordPress telepítésed megfelelő könyvtárába:
+4. Másold a `.po` fájlt a WordPress telepítésed megfelelő könyvtárába:
    - Bővítmények: `wp-content/languages/plugins/`
    - Témák: `wp-content/languages/themes/`
+
+### 2. módszer: Loco Translate bővítménnyel
+
+1. Telepítsd és aktiváld a [Loco Translate](https://wordpress.org/plugins/loco-translate/) bővítményt
+2. Töltsd le a `.po` fájlt ebből a repository-ból
+3. Másold a `.po` fájlt a megfelelő WordPress languages mappába:
+   - Bővítmények: `wp-content/languages/plugins/`
+   - Témák: `wp-content/languages/themes/`
+4. WordPress admin felületen: **Loco Translate → Plugins** vagy **Themes**
+5. Válaszd ki a bővítményt/témát
+6. Kattints a fordítási nyelvre (pl. Magyar)
+7. Nyisd meg a fordítást és kattints a **Mentés** gombra
+8. A Loco automatikusan generálja a `.mo` és `.l10n.php` fájlokat
+
+**Tipp:** A Loco Translate segítségével szerkesztheted is a fordításokat közvetlenül a WordPress admin felületen.
+
+## POT fájl generálása (fejlesztőknek)
+
+A POT (Portable Object Template) fájl generálásához az alábbi eszközöket használhatod:
+
+### WP-CLI
+```bash
+wp i18n make-pot /path/to/plugin /path/to/plugin/languages/plugin-name.pot
+```
+
+### Gulp
+```bash
+npm install --save-dev gulp-wp-pot
+```
+
+```javascript
+const gulp = require('gulp');
+const wpPot = require('gulp-wp-pot');
+
+gulp.task('pot', function() {
+    return gulp.src('**/*.php')
+        .pipe(wpPot({
+            domain: 'your-text-domain',
+            package: 'Your Plugin Name'
+        }))
+        .pipe(gulp.dest('languages/your-plugin.pot'));
+});
+```
+
+### Homebrew eszközök (macOS)
+```bash
+brew install gettext
+xgettext --language=PHP --from-code=UTF-8 --keyword=__ --keyword=_e --keyword=_n:1,2 --keyword=_x:1,2c --keyword=_ex:1,2c --keyword=esc_attr__ --keyword=esc_attr_e --keyword=esc_attr_x:1,2c --keyword=esc_html__ --keyword=esc_html_e --keyword=esc_html_x:1,2c -o languages/plugin-name.pot **/*.php
+```
 
 ## Hozzájárulás
 
@@ -54,10 +105,15 @@ Ha szeretnél hozzájárulni új fordításokkal vagy javításokkal:
 
 1. Fork-old ezt a repository-t
 2. Hozz létre egy új branch-et (`git checkout -b uj-forditas`)
-3. Add hozzá a fordításokat a megfelelő mappastruktúrában
-4. Commit-old a változtatásokat (`git commit -m 'Új fordítás hozzáadása'`)
-5. Push-old a branch-et (`git push origin uj-forditas`)
-6. Nyiss egy Pull Request-et
+3. **Csak a `.po` fájlt add hozzá** - a `.mo` és `.l10n.php` fájlok automatikusan generálódnak
+4. A `.po` fájl fejlécébe add meg a verzió információt:
+   ```
+   "X-Plugin-Version: 5.3.0\n"
+   ```
+   (ahol a szám a bővítmény/téma verzióját jelöli, amiről a fordítás készült)
+5. Commit-old a változtatásokat (`git commit -m 'Új fordítás hozzáadása'`)
+6. Push-old a branch-et (`git push origin uj-forditas`)
+7. Nyiss egy Pull Request-et
 
 ## Licenc
 
