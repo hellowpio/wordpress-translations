@@ -1,10 +1,10 @@
-const gulp = require('gulp');
-const through2 = require('through2');
-const gettextParser = require('gettext-parser');
-const fs = require('fs');
-const path = require('path');
-const chalk = require('chalk');
-const { glob } = require('glob');
+import gulp from 'gulp';
+import through2 from 'through2';
+import gettextParser from 'gettext-parser';
+import fs from 'fs';
+import path from 'path';
+import chalk from 'chalk';
+import { glob } from 'glob';
 
 /**
  * Convert PO file to MO (binary format)
@@ -168,6 +168,5 @@ function watch() {
     return gulp.watch(['plugins/**/*.po', 'themes/**/*.po'], build);
 }
 
-exports.build = build;
-exports.watch = watch;
-exports.default = build;
+export { build, watch };
+export default build;

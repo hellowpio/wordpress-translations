@@ -120,7 +120,7 @@ npm run watch
 
 A repository automatikusan futtatja a következő ellenőrzéseket:
 
-- **PHP Syntax Check**: Ellenőrzi a `.l10n.php` fájlok szintaxisát PHP 7.4-8.3 verziókon
+- **PHP Syntax Check**: Ellenőrzi a `.l10n.php` fájlok szintaxisát PHP 8.0-8.3 verziókon
 - **Dependabot**: Hetente ellenőrzi és frissíti az npm függőségeket
 
 ## Hozzájárulás
