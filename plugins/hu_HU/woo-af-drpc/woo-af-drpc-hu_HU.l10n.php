@@ -11,6 +11,7 @@ return [
 	'content-transfer-encoding' => '8bit',
 	'plural-forms' => 'nplurals=2; plural=(n != 1);',
 	'x-generator' => 'sinann-po-translator',
+	'x-plugin-name' => 'Product Dynamic Pricing and Discounts',
 	'x-plugin-version' => '1.3.1',
 	'messages' => [
 		'	 Use {product_name} for product name , {req_qty} for required quantity to get discount  , {discount} \n						for discount amount , {start_date} for start date of discount rule , {end_date} for ending of discount rule, {gift_product}\n						for gift products in conditional discount and {min_spent_amount} for informing user about min spent amount to get discount \n						from rule' => '	 Használja a {product_name} jelölőt a terméknévhez , {req_qty} a kedvezményhez szükséges mennyiséghez  , {discount} \n						a kedvezmény összegéhez , {start_date} a kedvezményszabály kezdő dátumához , {end_date} a kedvezményszabály befejezéséhez, {gift_product}\n						a feltételes kedvezményben szereplő ajándéktermékekhez és a {min_spent_amount} a felhasználó tájékoztatásához a kedvezményhez szükséges minimális költésről \n						a szabályból',

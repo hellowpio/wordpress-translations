@@ -1,6 +1,6 @@
 <?php
 return [
-	'project-id-version' => 'Divi 1.0',
+	'project-id-version' => 'Divi 5.0',
 	'report-msgid-bugs-to' => 'support@hellowp.io',
 	'po-revision-date' => '2025-10-19 10:30',
 	'last-translator' => 'HelloWP <translate@hellowp.io>',
@@ -11,7 +11,8 @@ return [
 	'content-transfer-encoding' => '8bit',
 	'plural-forms' => 'nplurals=2; plural=(n != 1);',
 	'x-generator' => 'sinann-po-translator',
-	'x-plugin-version' => '1.0',
+	'x-plugin-name' => 'Divi',
+	'x-plugin-version' => '5.0',
 	'messages' => [
 		' Enable custom title ' => ' Egyéni cím engedélyezése ',
 		' Enable meta description' => ' Meta leírás engedélyezése',

@@ -11,6 +11,7 @@ return [
 	'content-transfer-encoding' => '8bit',
 	'plural-forms' => 'nplurals=2; plural=(n != 1);',
 	'x-generator' => 'sinann-po-translator',
+	'x-plugin-name' => 'All-in-One WP Migration URL Extension',
 	'x-plugin-version' => '2.78',
 	'messages' => [
 		'"Restore" functionality is available in a <a href="https://servmask.com/products/unlimited-extension" target="_blank">paid extension</a>.<br />You could also download the backup and then use "Import from file".' => 'A "Visszaállítás" funkció egy <a href="https://servmask.com/products/unlimited-extension" target="_blank">fizetős kiterjesztésben</a> érhető el.<br />A biztonsági mentést le is töltheti, majd használhatja az "Importálás fájlból" lehetőséget.',

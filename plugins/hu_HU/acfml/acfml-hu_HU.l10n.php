@@ -11,6 +11,7 @@ return [
 	'content-transfer-encoding' => '8bit',
 	'plural-forms' => 'nplurals=2; plural=(n != 1);',
 	'x-generator' => 'sinann-po-translator',
+	'x-plugin-name' => 'Advanced Custom Fields Multilingual',
 	'x-plugin-version' => '2.1.5',
 	'messages' => [
 		'%1$sChange translation settings%2$s' => '%1$sFordítási beállítások módosítása%2$s',

@@ -11,6 +11,7 @@ return [
 	'content-transfer-encoding' => '8bit',
 	'plural-forms' => 'nplurals=2; plural=(n != 1);',
 	'x-generator' => 'sinann-po-translator',
+	'x-plugin-name' => 'AffiliateWP - Show Affiliate Coupons',
 	'x-plugin-version' => '1.0.7',
 	'messages' => [
 		' requires %sAffiliateWP%s. Please activate it to continue.' => ' az %sAffiliateWP%s szükséges. A folytatáshoz aktiválja.',

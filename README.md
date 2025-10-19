@@ -130,11 +130,15 @@ Ha szeretnél hozzájárulni új fordításokkal vagy javításokkal:
 1. Fork-old ezt a repository-t
 2. Hozz létre egy új branch-et (`git checkout -b uj-forditas`)
 3. **Csak a `.po` fájlt add hozzá** - a `.mo` és `.l10n.php` fájlok automatikusan generálódnak
-4. A `.po` fájl fejlécébe add meg a verzió információt:
+4. **A `.po` fájl fejlécébe add meg a következő kötelező metaadatokat:**
    ```
-   "X-Plugin-Version: 5.3.0\n"
+   "X-Plugin-Name: Advanced Custom Fields Multilingual\n"
+   "X-Plugin-Version: 2.1.5\n"
    ```
-   (ahol a szám a bővítmény/téma verzióját jelöli, amiről a fordítás készült)
+   - `X-Plugin-Name`: A bővítmény/téma teljes neve (angolul)
+   - `X-Plugin-Version`: A verzió száma, amiről a fordítás készült
+
+   Ezek a metaadatok bekerülnek a generált `.l10n.php` fájlba és segítenek a verziókövetésben.
 5. Commit-old a változtatásokat (`git commit -m 'Új fordítás hozzáadása'`)
 6. Push-old a branch-et (`git push origin uj-forditas`)
 7. Nyiss egy Pull Request-et

@@ -114,6 +114,9 @@ function po2php() {
             if (headers['X-Generator']) {
                 phpContent += `\n\t'x-generator' => '${headers['X-Generator']}',`;
             }
+            if (headers['X-Plugin-Name']) {
+                phpContent += `\n\t'x-plugin-name' => '${headers['X-Plugin-Name']}',`;
+            }
             if (headers['X-Plugin-Version']) {
                 phpContent += `\n\t'x-plugin-version' => '${headers['X-Plugin-Version']}',`;
             }
@@ -233,6 +236,9 @@ async function build() {
             }
             if (headers['X-Generator']) {
                 phpContent += `\n\t'x-generator' => '${headers['X-Generator']}',`;
+            }
+            if (headers['X-Plugin-Name']) {
+                phpContent += `\n\t'x-plugin-name' => '${headers['X-Plugin-Name']}',`;
             }
             if (headers['X-Plugin-Version']) {
                 phpContent += `\n\t'x-plugin-version' => '${headers['X-Plugin-Version']}',`;

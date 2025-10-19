@@ -11,6 +11,7 @@ return [
 	'content-transfer-encoding' => '8bit',
 	'plural-forms' => 'nplurals=2; plural=(n != 1);',
 	'x-generator' => 'sinann-po-translator',
+	'x-plugin-name' => 'Admin Menu Editor Pro',
 	'x-plugin-version' => '2.29.1',
 	'messages' => [
 		'Access denied. Invalid nonce.' => 'Hozzáférés megtagadva. Érvénytelen nonce.',

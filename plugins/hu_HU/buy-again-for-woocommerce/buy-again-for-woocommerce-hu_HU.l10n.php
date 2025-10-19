@@ -11,6 +11,7 @@ return [
 	'content-transfer-encoding' => '8bit',
 	'plural-forms' => 'nplurals=2; plural=(n != 1);',
 	'x-generator' => 'sinann-po-translator',
+	'x-plugin-name' => 'Buy Again for WooCommerce',
 	'x-plugin-version' => '5.3.0',
 	'messages' => [
 		'#%s Product was deleted' => 'A #%s termék törölve lett',

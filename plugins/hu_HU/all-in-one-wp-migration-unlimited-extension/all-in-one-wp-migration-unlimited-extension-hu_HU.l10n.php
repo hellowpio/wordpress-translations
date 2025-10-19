@@ -11,6 +11,7 @@ return [
 	'content-transfer-encoding' => '8bit',
 	'plural-forms' => 'nplurals=2; plural=(n != 1);',
 	'x-generator' => 'sinann-po-translator',
+	'x-plugin-name' => 'All-in-One WP Migration Unlimited Extension',
 	'x-plugin-version' => '2.79',
 	'messages' => [
 		'%s ago' => '%s ezelőtt',

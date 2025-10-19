@@ -11,6 +11,7 @@ return [
 	'content-transfer-encoding' => '8bit',
 	'plural-forms' => 'nplurals=2; plural=(n != 1);',
 	'x-generator' => 'sinann-po-translator',
+	'x-plugin-name' => 'All-in-One WP Migration and Backup',
 	'x-plugin-version' => '7.100',
 	'messages' => [
 		'"Restore" functionality is available in our <a href="%s" target="_blank">Unlimited Extension</a>.<br /> If you would rather go the manual route, you can still restore by downloading your backup and using "Import from file".' => '"Restore" funkció elérhető az <a href="%s" target="_blank">Unlimited Extension</a>-ben.<br /> Ha inkább a kézi megoldást választja, a biztonsági mentés letöltésével és az "Import from file" használatával továbbra is visszaállíthatja.',

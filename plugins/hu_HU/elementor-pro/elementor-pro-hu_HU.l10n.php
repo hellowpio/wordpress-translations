@@ -8,6 +8,7 @@ return [
 	'content-transfer-encoding' => '8bit',
 	'plural-forms' => 'nplurals=2; plural=n != 1;',
 	'x-generator' => 'GlotPress/2.3.1',
+	'x-plugin-name' => 'Elementor Pro',
 	'messages' => [
 		'Coupon code' => 'Kuponkód',
 		'Edit %s' => '%s szerkesztése',
