@@ -99,6 +99,30 @@ brew install gettext
 xgettext --language=PHP --from-code=UTF-8 --keyword=__ --keyword=_e --keyword=_n:1,2 --keyword=_x:1,2c --keyword=_ex:1,2c --keyword=esc_attr__ --keyword=esc_attr_e --keyword=esc_attr_x:1,2c --keyword=esc_html__ --keyword=esc_html_e --keyword=esc_html_x:1,2c -o languages/plugin-name.pot **/*.php
 ```
 
+## Automatikus Build Rendszer
+
+Ez a repository automatikusan generálja a `.mo` és `.l10n.php` fájlokat a `.po` fájlokból.
+
+### Lokális build (fejlesztőknek)
+
+```bash
+# Függőségek telepítése (első alkalommal)
+npm install
+
+# Fordítások build-elése
+npm run build
+
+# Watch mód (automatikus újragenerálás változáskor)
+npm run watch
+```
+
+### GitHub Actions
+
+A repository automatikusan futtatja a következő ellenőrzéseket:
+
+- **PHP Syntax Check**: Ellenőrzi a `.l10n.php` fájlok szintaxisát PHP 7.4-8.3 verziókon
+- **Dependabot**: Hetente ellenőrzi és frissíti az npm függőségeket
+
 ## Hozzájárulás
 
 Ha szeretnél hozzájárulni új fordításokkal vagy javításokkal:
