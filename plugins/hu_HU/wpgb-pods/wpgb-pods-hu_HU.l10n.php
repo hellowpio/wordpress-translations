@@ -1,0 +1,25 @@
+<?php
+return [
+	'project-id-version' => 'WP Grid Builder - Pods 1.1.0',
+	'report-msgid-bugs-to' => 'support@hellowp.io',
+	'po-revision-date' => '2025-10-19 21:14',
+	'last-translator' => 'HelloWP <translate@hellowp.io>',
+	'language-team' => 'HelloWP <translate@hellowp.io>',
+	'language' => 'hu',
+	'mime-version' => '1.0',
+	'content-type' => 'text/plain; charset=utf-8',
+	'content-transfer-encoding' => '8bit',
+	'plural-forms' => 'nplurals=2; plural=(n != 1);',
+	'x-generator' => 'sinann-po-translator',
+	'x-plugin-name' => 'WP Grid Builder - Pods',
+	'x-plugin-version' => '1.1.0',
+	'messages' => [
+		'WP Grid Builder - Pods' => 'WP Grid Builder - Pods',
+		'https://www.wpgridbuilder.com' => 'https://www.wpgridbuilder.com',
+		'Integrate WP Grid Builder with Pods plugin.' => 'Integrálja a WP Grid Buildert a Pods bővítménnyel.',
+		'Loïc Blascos' => 'Loïc Blascos',
+		'Yes' => 'Igen',
+		'No' => 'Nem',
+		'<strong>Gridbuilder ᵂᴾ - Pods</strong> add-on requires at least <code>Gridbuilder ᵂᴾ v1.6.9</code>. Please update Gridbuilder ᵂᴾ to use Pods add-on.' => '<strong>Gridbuilder ᵂᴾ - Pods</strong> kiegészítőhöz legalább <code>Gridbuilder ᵂᴾ v1.6.9</code> szükséges. Kérjük, frissítse a Gridbuilder ᵂᴾ-t a Pods kiegészítő használatához.',
+	],
+];

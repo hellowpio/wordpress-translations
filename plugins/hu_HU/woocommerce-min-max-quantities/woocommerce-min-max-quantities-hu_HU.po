@@ -1,0 +1,740 @@
+# Hungarian translation for WooCommerce Min/Max Quantities.
+# Copyright (C) 2025 WooCommerce
+# This file is distributed under the GPL license.
+# Translator Team <hello@hellowp.io>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Min/Max Quantities 5.2.7\n"
+"Report-Msgid-Bugs-To: support@hellowp.io\n"
+"POT-Creation-Date: 2025-10-19T19:14:03+00:00\n"
+"PO-Revision-Date: 2025-10-19 21:14\n"
+"Last-Translator: HelloWP <translate@hellowp.io>\n"
+"Language-Team: HelloWP <translate@hellowp.io>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: sinann-po-translator\n"
+"X-Plugin-Name: WooCommerce Min/Max Quantities\n"
+"X-Plugin-Version: 5.2.7\n"
+
+#. Plugin Name of the plugin
+#: woocommerce-min-max-quantities.php
+msgid "WooCommerce Min/Max Quantities"
+msgstr "WooCommerce Min/Max Quantities"
+
+#. Plugin URI of the plugin
+#: woocommerce-min-max-quantities.php
+msgid "https://woocommerce.com/products/minmax-quantities/"
+msgstr "https://woocommerce.com/products/minmax-quantities/"
+
+#. Description of the plugin
+#: woocommerce-min-max-quantities.php
+msgid ""
+"Define minimum/maximum allowed quantities for products, variations and "
+"orders."
+msgstr ""
+"Határozza meg a termékekhez, variációkhoz és rendelésekhez engedélyezett "
+"minimális/maximális mennyiségeket."
+
+#. Author of the plugin
+#: woocommerce-min-max-quantities.php
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#. Author URI of the plugin
+#: woocommerce-min-max-quantities.php
+msgid "https://woocommerce.com"
+msgstr "https://woocommerce.com"
+
+#. translators: docs url
+#: includes/admin/class-wc-min-max-quantities-admin-notices.php:328
+#, php-format
+msgid ""
+"Thank you for installing <strong>WooCommerce Min/Max Quantities</strong>. <a"
+" href=\"%1$s\">Learn more</a> about how to set up quantity and value "
+"restrictions for your products and orders."
+msgstr ""
+"Köszönjük a <strong>WooCommerce Min/Max Quantities</strong> telepítését. <a "
+"href=\"%1$s\">Tudjon meg többet</a> arról, hogyan állíthat be mennyiségi és "
+"értékbeli korlátozásokat a termékeihez és rendeléseihez."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:35
+msgid "Min/Max Order Rules"
+msgstr "Min/Max rendelési szabályok"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:41
+msgid "Minimum Order Quantity"
+msgstr "Minimális rendelési mennyiség"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:42
+msgid "The minimum quantity of items required in an order."
+msgstr "A rendelésben szükséges minimális darabszám."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:52
+msgid "Maximum Order Quantity"
+msgstr "Maximális rendelési mennyiség"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:53
+msgid "The maximum quantity of items allowed in an order."
+msgstr "A rendelésben engedélyezett maximális darabszám."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:63
+msgid "Minimum Order Value"
+msgstr "Minimális rendelési érték"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:64
+msgid "The minimum value of an order."
+msgstr "A rendelés minimális értéke."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:71
+msgid "Maximum Order Value"
+msgstr "Maximális rendelési érték"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:72
+msgid "The maximum value of an order."
+msgstr "A rendelés maximális értéke."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:130
+msgid "Please enter a valid number for Minimum Order Value."
+msgstr "Adjon meg érvényes számot a Minimális rendelési értékhez."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:138
+msgid "Please enter a valid number for Maximum Order Value."
+msgstr "Adjon meg érvényes számot a Maximális rendelési értékhez."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:216
+#: includes/admin/class-wc-min-max-quantities-admin.php:566
+msgid "Quantity rules"
+msgstr "Mennyiségi szabályok"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:221
+#: includes/admin/class-wc-min-max-quantities-admin.php:602
+msgid "Minimum quantity"
+msgstr "Minimális mennyiség"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:222
+msgid "Enter a minimum required quantity for this product."
+msgstr "Adja meg a termékhez szükséges minimális mennyiséget."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:235
+#: includes/admin/class-wc-min-max-quantities-admin.php:614
+msgid "Maximum quantity"
+msgstr "Maximális mennyiség"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:236
+msgid "Enter a maximum allowed quantity for this product."
+msgstr "Adja meg a termékhez engedélyezett maximális mennyiséget."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:249
+#: includes/admin/class-wc-min-max-quantities-admin.php:626
+#: includes/admin/class-wc-min-max-quantities-admin.php:690
+#: includes/admin/class-wc-min-max-quantities-admin.php:723
+#: includes/admin/class-wc-min-max-quantities-admin.php:937
+msgid "Group of"
+msgstr "Csoportméret"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:250
+msgid ""
+"Enter a value to require customers to purchase this product in multiples."
+msgstr ""
+"Adjon meg egy értéket, hogy a vásárlók a terméket csak többszörösével "
+"vásárolhassák meg."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:263
+msgid "Combine variations"
+msgstr "Variációk összevonása"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:265
+msgid ""
+"Enable this option to combine the quantities of all purchased variations "
+"when checking 'Minimum/Maximum quantity' and 'Group of' rules. "
+"<strong>Note:</strong> Cannot be used together with variation-level quantity"
+" rules."
+msgstr ""
+"Engedélyezze ezt az opciót, hogy a megvásárolt variációk mennyiségei "
+"összeadódjanak a 'Minimális/Maximális mennyiség' és 'Csoportméret' szabályok"
+" ellenőrzésekor. <strong>Megjegyzés:</strong> Nem használható együtt a "
+"variációszintű mennyiségi szabályokkal."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:273
+#: includes/admin/class-wc-min-max-quantities-admin.php:648
+msgid "Don't count in Order rules"
+msgstr "Ne számítsa bele a rendelési szabályokba"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:275
+msgid ""
+"Don't count the quantity and cost of this product when checking order rules."
+msgstr ""
+"Ne számolja bele e termék mennyiségét és költségét a rendelési szabályok "
+"ellenőrzésekor."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:284
+msgid "Exclude from"
+msgstr "Kizárás innen:"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:287
+msgid "Order rules"
+msgstr "Rendelési szabályok"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:287
+msgid ""
+"Exclude this product from order rules (minimum/maximum quantity and value)."
+msgstr ""
+"Zárja ki ezt a terméket a rendelési szabályokból (minimális/maximális "
+"mennyiség és érték)."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:291
+msgid "Category rules"
+msgstr "Kategóriaszabályok"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:291
+msgid "Exclude this product from all category quantity rules."
+msgstr "Zárja ki ezt a terméket minden kategória mennyiségi szabályából."
+
+#. translators: %1$s: Product name, %2$d: Group of quantity, %3$d: Invalid min
+#. quantity, %4$d: Adjusted min quantity
+#. translators: %1$s: Category name, %2$d: Group of quantity, %3$d: Invalid
+#. min quantity, %4$d: Adjusted min quantity
+#: includes/admin/class-wc-min-max-quantities-admin.php:361
+#: includes/admin/class-wc-min-max-quantities-admin.php:493
+#: includes/admin/class-wc-min-max-quantities-admin.php:881
+#, php-format
+msgid ""
+"The <strong>Minimum Quantity</strong> of <strong>%1$s</strong> must be a "
+"multiple of <strong>%2$d</strong>. Its value has been adjusted from "
+"<strong>%3$d</strong> to <strong>%4$d</strong>."
+msgstr ""
+"A(z) <strong>%1$s</strong> <strong>minimális mennyiségének</strong> a(z) "
+"<strong>%2$d</strong> többszörösének kell lennie. Az értéke "
+"<strong>%3$d</strong> helyett <strong>%4$d</strong> lett beállítva."
+
+#. translators: %1$s: Product name, %2$d: Group of quantity, %3$d: Invalid max
+#. quantity, %4$d: Adjusted max quantity
+#. translators: %1$s: Category name, %2$d: Group of quantity, %3$d: Invalid
+#. max quantity, %4$d: Adjusted max quantity
+#: includes/admin/class-wc-min-max-quantities-admin.php:377
+#: includes/admin/class-wc-min-max-quantities-admin.php:506
+#: includes/admin/class-wc-min-max-quantities-admin.php:895
+#, php-format
+msgid ""
+"The <strong>Maximum Quantity</strong> of <strong>%1$s</strong> must be a "
+"multiple of <strong>%2$d</strong>. Its value has been adjusted from "
+"<strong>%3$d</strong> to <strong>%4$d</strong>."
+msgstr ""
+"A(z) <strong>%1$s</strong> <strong>maximális mennyiségének</strong> a(z) "
+"<strong>%2$d</strong> többszörösének kell lennie. Az értéke "
+"<strong>%3$d</strong> helyett <strong>%4$d</strong> lett beállítva."
+
+#. translators: Product name
+#. translators: Category name
+#: includes/admin/class-wc-min-max-quantities-admin.php:395
+#: includes/admin/class-wc-min-max-quantities-admin.php:524
+#: includes/admin/class-wc-min-max-quantities-admin.php:915
+#, php-format
+msgid ""
+"The <strong>Maximum Quantity</strong> of <strong>%s</strong> was not valid "
+"and has been adjusted. Please enter a positive number equal to or higher "
+"than the <strong>Minimum Quantity</strong>, or leave the <strong>Maximum "
+"Quantity</strong> field empty for an unlimited maximum quantity."
+msgstr ""
+"A(z) <strong>%s</strong> <strong>maximális mennyisége</strong> érvénytelen "
+"volt, ezért módosítottuk. Adjon meg egy a <strong>Minimális "
+"mennyiséggel</strong> megegyező vagy annál nagyobb pozitív számot, vagy "
+"hagyja üresen a <strong>Maximális mennyiség</strong> mezőt korlátlan "
+"maximális mennyiséghez."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:558
+msgid ""
+"Use this option to override 'Minimum/Maximum quantity' and 'Group of' rules "
+"at variation level. Can be checked only when <strong>Product Data > General "
+"> Combine Variations</strong> is disabled."
+msgstr ""
+"Ezzel az opcióval felülírhatja a 'Minimális/Maximális mennyiség' és "
+"'Csoportméret' szabályokat variációszinten. Csak akkor jelölhető be, ha a "
+"<strong>Termékadatok > Általános > Variációk összevonása</strong> ki van "
+"kapcsolva."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:648
+msgid ""
+"Don't count the quantity and cost of this variation when checking order "
+"rules."
+msgstr ""
+"Ne számolja bele e variáció mennyiségét és költségét a rendelési szabályok "
+"ellenőrzésekor."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:661
+msgid "Exclude from Order rules"
+msgstr "Kizárás a rendelési szabályokból"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:661
+msgid ""
+"Exclude this variation from order rules (minimum/maximum quantity and "
+"value)."
+msgstr ""
+"Zárja ki ezt a variációt a rendelési szabályokból (minimális/maximális "
+"mennyiség és érték)."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:664
+msgid "Exclude from Category rules"
+msgstr "Kizárás a kategóriaszabályokból"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:664
+msgid "Exclude this variation from all category quantity rules."
+msgstr "Zárja ki ezt a variációt minden kategória mennyiségi szabályából."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:680
+#: includes/admin/class-wc-min-max-quantities-admin.php:709
+msgid "Minimum Quantity"
+msgstr "Minimális mennyiség"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:682
+#: includes/admin/class-wc-min-max-quantities-admin.php:712
+msgid "Enter a minimum required quantity for products in this category."
+msgstr ""
+"Adja meg a kategóriába tartozó termékekhez szükséges minimális mennyiséget."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:685
+#: includes/admin/class-wc-min-max-quantities-admin.php:716
+msgid "Maximum Quantity"
+msgstr "Maximális mennyiség"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:687
+#: includes/admin/class-wc-min-max-quantities-admin.php:719
+msgid "Enter a maximum required quantity for products in this category."
+msgstr ""
+"Adja meg a kategóriába tartozó termékekhez engedélyezett maximális "
+"mennyiséget."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:692
+#: includes/admin/class-wc-min-max-quantities-admin.php:726
+msgid ""
+"Enter a value to require customers to purchase products from this category "
+"in multiples."
+msgstr ""
+"Adjon meg egy értéket, hogy a vásárlók a kategória termékeit csak "
+"többszörösével vásárolhassák meg."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:748
+msgid ""
+"The <strong>Group of</strong> value of this category could not be saved. "
+"Please enter a positive number, or leave the <strong>Group of</strong> field"
+" empty."
+msgstr ""
+"Ennek a kategóriának a <strong>Csoportméret</strong> értékét nem sikerült "
+"menteni. Adjon meg egy pozitív számot, vagy hagyja üresen a "
+"<strong>Csoportméret</strong> mezőt."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:755
+msgid ""
+"The <strong>Minimum Quantity</strong> value of this category could not be "
+"saved. Please enter a positive number, or leave the <strong>Minimum "
+"Quantity</strong> field empty."
+msgstr ""
+"Ennek a kategóriának a <strong>Minimális mennyiség</strong> értékét nem "
+"sikerült menteni. Adjon meg egy pozitív számot, vagy hagyja üresen a "
+"<strong>Minimális mennyiség</strong> mezőt."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:762
+msgid ""
+"The <strong>Maximum Quantity</strong> value of this category could not be "
+"saved. Please enter a positive number, or leave the <strong>Maximum "
+"Quantity</strong> field empty."
+msgstr ""
+"Ennek a kategóriának a <strong>Maximális mennyiség</strong> értékét nem "
+"sikerült menteni. Adjon meg egy pozitív számot, vagy hagyja üresen a "
+"<strong>Maximális mennyiség</strong> mezőt."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:769
+msgid ""
+"The <strong>Maximum Quantity</strong> value of this category could not be "
+"saved. Please enter a positive number equal to or higher than the "
+"<strong>Minimum Quantity</strong>, or leave the <strong>Maximum "
+"Quantity</strong> field empty for an unlimited maximum quantity."
+msgstr ""
+"Ennek a kategóriának a <strong>Maximális mennyiség</strong> értékét nem "
+"sikerült menteni. Adjon meg egy pozitív számot, amely egyenlő a "
+"<strong>Minimális mennyiség</strong> értékkel vagy annál nagyobb, vagy "
+"hagyja üresen a <strong>Maximális mennyiség</strong> mezőt korlátlan "
+"maximumhoz."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:784
+msgid ""
+"The <strong>Minimum Quantity</strong> value of this category could not be "
+"saved. It must be a multiple of the <strong>Group of</strong> field."
+msgstr ""
+"Ennek a kategóriának a <strong>Minimális mennyiség</strong> értékét nem "
+"sikerült menteni. A(z) <strong>Csoport mérete</strong> mező értékének "
+"többszöröse kell legyen."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:795
+msgid ""
+"The <strong>Maximum Quantity</strong> value of this category could not be "
+"saved. It must be a multiple of the <strong>Group of</strong> field."
+msgstr ""
+"Ennek a kategóriának a <strong>Maximális mennyiség</strong> értékét nem "
+"sikerült menteni. A(z) <strong>Csoport mérete</strong> mező értékének "
+"többszöröse kell legyen."
+
+#. translators: Category name
+#: includes/admin/class-wc-min-max-quantities-admin.php:831
+#, php-format
+msgid ""
+"The <strong>Group of</strong> value of <strong>%s</strong> could not be "
+"saved. Please enter a positive number, or leave the <strong>Group "
+"of</strong> field empty."
+msgstr ""
+"A(z) <strong>%s</strong> <strong>Csoport mérete</strong> értékét nem "
+"sikerült menteni. Adjon meg egy pozitív számot, vagy hagyja üresen a "
+"<strong>Csoport mérete</strong> mezőt."
+
+#. translators: Category name
+#: includes/admin/class-wc-min-max-quantities-admin.php:848
+#, php-format
+msgid ""
+"The <strong>Minimum Quantity</strong> value of <strong>%s</strong> could not"
+" be saved. Please enter a positive number, or leave the <strong>Minimum "
+"Quantity</strong> field empty."
+msgstr ""
+"A(z) <strong>%s</strong> <strong>Minimális mennyiség</strong> értékét nem "
+"sikerült menteni. Adjon meg egy pozitív számot, vagy hagyja üresen a "
+"<strong>Minimális mennyiség</strong> mezőt."
+
+#. translators: Category name
+#: includes/admin/class-wc-min-max-quantities-admin.php:865
+#, php-format
+msgid ""
+"The <strong>Maximum Quantity</strong> value of <strong>%s</strong> could not"
+" be saved. Please enter a positive number, or leave the <strong>Maximum "
+"Quantity</strong> field empty."
+msgstr ""
+"A(z) <strong>%s</strong> <strong>Maximális mennyiség</strong> értékét nem "
+"sikerült menteni. Adjon meg egy pozitív számot, vagy hagyja üresen a "
+"<strong>Maximális mennyiség</strong> mezőt."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:935
+msgid "Min"
+msgstr "Min."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:936
+msgid "Max"
+msgstr "Max."
+
+#. translators: %1$s: Product name, %2$s: Group of quantity
+#: includes/admin/class-wc-min-max-quantities-admin.php:995
+#, php-format
+msgid ""
+"The <strong>Maximum Quantity</strong> of <strong>%1$s</strong> must be a "
+"positive number equal to or higher than the <strong>Minimum "
+"Quantity</strong>. Please adjust its value and save your changes."
+msgstr ""
+"A(z) <strong>%1$s</strong> <strong>Maximális mennyisége</strong> legyen "
+"pozitív szám, amely egyenlő a <strong>Minimális mennyiség</strong> értékével"
+" vagy annál nagyobb. Kérjük, módosítsa az értékét, és mentse a "
+"változtatásokat."
+
+#. translators: %1$s: Product name, %2$s: Group of quantity
+#. translators: %1$s: Variation name, %2$s: Group of quantity
+#: includes/admin/class-wc-min-max-quantities-admin.php:1007
+#: includes/admin/class-wc-min-max-quantities-admin.php:1047
+#, php-format
+msgid ""
+"The <strong>Minimum Quantity</strong> of <strong>%1$s</strong> must be a "
+"multiple of <strong>%2$d</strong>. Please adjust its value and save your "
+"changes."
+msgstr ""
+"A(z) <strong>%1$s</strong> <strong>Minimális mennyiségének</strong> a(z) "
+"<strong>%2$d</strong> többszörösének kell lennie. Kérjük, módosítsa az "
+"értékét, és mentse a változtatásokat."
+
+#. translators: %1$s: Product name, %2$s: Group of quantity
+#. translators: %1$s: Variation name, %2$s: Group of quantity
+#: includes/admin/class-wc-min-max-quantities-admin.php:1013
+#: includes/admin/class-wc-min-max-quantities-admin.php:1053
+#, php-format
+msgid ""
+"The <strong>Maximum Quantity</strong> of <strong>%1$s</strong> must be a "
+"multiple of <strong>%2$d</strong>. Please adjust its value and save your "
+"changes."
+msgstr ""
+"A(z) <strong>%1$s</strong> <strong>Maximális mennyiségének</strong> a(z) "
+"<strong>%2$d</strong> többszörösének kell lennie. Kérjük, módosítsa az "
+"értékét, és mentse a változtatásokat."
+
+#. translators: %1$s: Product name, %2$s: Group of quantity
+#: includes/admin/class-wc-min-max-quantities-admin.php:1036
+#, php-format
+msgid ""
+"The <strong>Maximum Quantity</strong> of <strong>%s</strong> must be a "
+"positive number equal to or higher than the <strong>Minimum "
+"Quantity</strong>. Please adjust its value and save your changes."
+msgstr ""
+"A(z) <strong>%s</strong> <strong>Maximális mennyisége</strong> legyen "
+"pozitív szám, amely egyenlő a <strong>Minimális mennyiség</strong> értékével"
+" vagy annál nagyobb. Kérjük, módosítsa az értékét, és mentse a "
+"változtatásokat."
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:1086
+msgid "Documentation"
+msgstr "Dokumentáció"
+
+#: includes/admin/class-wc-min-max-quantities-admin.php:1087
+msgid "Support"
+msgstr "Támogatás"
+
+#: includes/api/class-wc-mmq-rest-api.php:160
+#: includes/api/class-wc-mmq-rest-api.php:499
+msgid "The Allow Combinations option can only be set for Variable Products."
+msgstr ""
+"A Kombinációk engedélyezése opció csak Variálható termékeknél állítható be."
+
+#. translators: Minimum quantity
+#: includes/api/class-wc-mmq-rest-api.php:187
+#: includes/api/class-wc-mmq-rest-api.php:528
+#, php-format
+msgid ""
+"The minimum quantity must be less than %d, which is the Maximum Quantity."
+msgstr ""
+"A minimális mennyiségnek kisebbnek kell lennie, mint %d, ami a Maximális "
+"mennyiség."
+
+#. translators: Group of quantity
+#: includes/api/class-wc-mmq-rest-api.php:192
+#: includes/api/class-wc-mmq-rest-api.php:533
+#, php-format
+msgid "The minimum quantity must be a multiple of %d."
+msgstr "A minimális mennyiségnek a(z) %d többszörösének kell lennie."
+
+#. translators: Group of quantity
+#: includes/api/class-wc-mmq-rest-api.php:197
+#: includes/api/class-wc-mmq-rest-api.php:538
+#, php-format
+msgid "The maximum quantity must be a multiple of %d."
+msgstr "A maximális mennyiségnek a(z) %d többszörösének kell lennie."
+
+#: includes/api/class-wc-mmq-rest-api.php:261
+msgid "Enable this option to set quantity rules for a specific variation."
+msgstr ""
+"Engedélyezze ezt az opciót, hogy mennyiségszabályokat állítson be egy adott "
+"változathoz."
+
+#: includes/api/class-wc-mmq-rest-api.php:267
+msgid "Require variations to be purchased in multiples of this value."
+msgstr ""
+"Kötelezővé teszi, hogy a változatokat ennek az értéknek a többszörösében "
+"vásárolják meg."
+
+#: includes/api/class-wc-mmq-rest-api.php:272
+msgid "Minimum required variation quantity."
+msgstr "A változat minimálisan szükséges mennyisége."
+
+#: includes/api/class-wc-mmq-rest-api.php:277
+msgid "Maximum allowed variation quantity."
+msgstr "A változat megengedett maximális mennyisége."
+
+#: includes/api/class-wc-mmq-rest-api.php:282
+msgid "Exclude variation from order quantity and value rules."
+msgstr "A változat kizárása a rendelési mennyiség- és értékszabályok alól."
+
+#: includes/api/class-wc-mmq-rest-api.php:288
+msgid "Exclude variation from category quantity rules."
+msgstr "A változat kizárása a kategóriára vonatkozó mennyiségszabályok alól."
+
+#: includes/api/class-wc-mmq-rest-api.php:332
+msgid "Require products to be purchased in multiples of this value."
+msgstr "A termékeket ennek az értéknek a többszörösében kell megvásárolni."
+
+#: includes/api/class-wc-mmq-rest-api.php:337
+msgid "Minimum required product quantity."
+msgstr "A termék minimálisan szükséges mennyisége."
+
+#: includes/api/class-wc-mmq-rest-api.php:342
+msgid "Maximum allowed product quantity."
+msgstr "A termék megengedett maximális mennyisége."
+
+#: includes/api/class-wc-mmq-rest-api.php:347
+msgid "Exclude product from order quantity and value rules."
+msgstr "A termék kizárása a rendelési mennyiség- és értékszabályok alól."
+
+#: includes/api/class-wc-mmq-rest-api.php:353
+msgid "Exclude product from category quantity rules."
+msgstr "A termék kizárása a kategóriára vonatkozó mennyiségszabályok alól."
+
+#: includes/api/class-wc-mmq-rest-api.php:359
+msgid ""
+"Enable this option to combine the quantities of all purchased variations "
+"when checking quantity rules."
+msgstr ""
+"Engedélyezze ezt az opciót, hogy a mennyiségszabályok ellenőrzésekor az "
+"összes megvásárolt változat mennyisége összevonásra kerüljön."
+
+#: includes/api/class-wc-mmq-rest-api.php:498
+msgid ""
+"The Allow Combinations option can only be set for Variable and Variable "
+"Subscription Products."
+msgstr ""
+"A Kombinációk engedélyezése opció csak Variálható és Variálható előfizetéses"
+" termékeknél állítható be."
+
+#: includes/compatibility/class-wc-min-max-quantities-compatibility.php:66
+#: includes/compatibility/class-wc-min-max-quantities-compatibility.php:75
+msgid "Foul!"
+msgstr "Szabálytalanság!"
+
+#. translators: %s: WooCommerce version.
+#: woocommerce-min-max-quantities.php:301
+#, php-format
+msgid ""
+"<strong>Min/Max Quantities</strong> requires at least WooCommerce "
+"<strong>%s</strong>."
+msgstr ""
+"<strong>Min/Max Quantities</strong> legalább WooCommerce "
+"<strong>%s</strong>-t igényel."
+
+#. translators: %s: Minimum required PHP version
+#: woocommerce-min-max-quantities.php:324
+#, php-format
+msgid ""
+"WooCommerce Min/Max Quantities requires at least PHP <strong>%1$s</strong>. "
+"Learn <a href=\"%2$s\">how to update PHP</a>."
+msgstr ""
+"A WooCommerce Min/Max Quantities legalább PHP <strong>%1$s</strong>-t "
+"igényel. <a href=\"%2$s\">Tudja meg, hogyan frissítse a PHP-t</a>."
+
+#: woocommerce-min-max-quantities.php:798
+msgid "excludes "
+msgstr "kizárja "
+
+#. translators: %d: Minimum amount of items in the cart
+#: woocommerce-min-max-quantities.php:803
+#, php-format
+msgid "To place an order, your cart must contain at least %d items."
+msgstr "A rendelés leadásához a kosárban legalább %d tételnek kell lennie."
+
+#. translators: %d: Maximum amount of items in the cart
+#: woocommerce-min-max-quantities.php:809
+#, php-format
+msgid "Your cart must not contain more than %d items to place an order."
+msgstr "A rendelés leadásához a kosár nem tartalmazhat %d tételnél többet."
+
+#. translators: %s: Minimum order value
+#: woocommerce-min-max-quantities.php:818
+#, php-format
+msgid "To place an order, your cart total must be at least %s."
+msgstr ""
+"A rendelés leadásához a kosár végösszegének legalább %s-nek kell lennie."
+
+#. translators: %s: Maximum order value
+#: woocommerce-min-max-quantities.php:825
+#, php-format
+msgid "Your cart total must not be higher than %s to place an order."
+msgstr "A rendelés leadásához a kosár végösszege nem lehet magasabb, mint %s."
+
+#. translators: %1$s: Category name, %2$s: Comma separated list of product
+#. names, %3$d: Group amount
+#: woocommerce-min-max-quantities.php:855
+#, php-format
+msgid ""
+"Products in the <strong>%1$s</strong> category (<em>%2$s</em>) must be "
+"bought in multiples of %3$d."
+msgstr ""
+"A <strong>%1$s</strong> kategóriába tartozó termékeket (<em>%2$s</em>) a(z) "
+"%3$d többszörösében kell megvásárolni."
+
+#. translators: %1$s: Product name, %2$s: Minimum order quantity, %3$s: Total
+#. cart quantity
+#: woocommerce-min-max-quantities.php:975
+#, php-format
+msgid ""
+"To place an order, the quantity of \"%1$s\" must be at least %2$s. You "
+"currently have %3$s in your cart."
+msgstr ""
+"A rendelés leadásához a(z) \"%1$s\" mennyiségének legalább %2$s-nek kell "
+"lennie. Jelenleg %3$s van a kosarában."
+
+#. translators: %1$s: Product name, %2$s: Minimum order quantity
+#: woocommerce-min-max-quantities.php:983
+#, php-format
+msgid ""
+"The quantity of \"%1$s\" has been increased to %2$s. This is the minimum "
+"required quantity."
+msgstr ""
+"A(z) \"%1$s\" mennyisége %2$s-re lett növelve. Ez a minimálisan szükséges "
+"mennyiség."
+
+#. translators: %1$s: Product name, %2$s: Minimum order quantity
+#: woocommerce-min-max-quantities.php:986
+#, php-format
+msgid "To place an order, the quantity of \"%1$s\" must be at least %2$s."
+msgstr ""
+"A rendelés leadásához a(z) \"%1$s\" mennyiségének legalább %2$s-nek kell "
+"lennie."
+
+#. translators: %1$s: Product name, %2$s: Maximum order quantity, %3$s: Total
+#. cart quantity
+#: woocommerce-min-max-quantities.php:995
+#, php-format
+msgid ""
+"The quantity of \"%1$s\" cannot be higher than %2$s to place an order. You "
+"currently have %3$s in your cart."
+msgstr ""
+"A rendelés leadásához a(z) \"%1$s\" mennyisége nem lehet magasabb, mint "
+"%2$s. Jelenleg %3$s van a kosarában."
+
+#. translators: %1$s: Product name, %2$s: Maximum order quantity
+#: woocommerce-min-max-quantities.php:1003
+#, php-format
+msgid ""
+"The quantity of \"%1$s\" has been decreased to %2$s. This is the maximum "
+"allowed quantity."
+msgstr ""
+"A(z) \"%1$s\" mennyisége %2$s-re lett csökkentve. Ez a megengedett maximális"
+" mennyiség."
+
+#. translators: %1$s: Product name, %2$s: Maximum order quantity
+#: woocommerce-min-max-quantities.php:1006
+#, php-format
+msgid "The quantity of \"%1$s\" cannot be higher than %2$s to place an order."
+msgstr ""
+"A rendelés leadásához a(z) \"%1$s\" mennyisége nem lehet magasabb, mint "
+"%2$s."
+
+#. translators: %1$s: Product name, %2$d: Group amount
+#: woocommerce-min-max-quantities.php:1018
+#: woocommerce-min-max-quantities.php:1028
+#, php-format
+msgid ""
+"\"%1$s\" must be bought in multiples of %2$d. Please adjust its quantity to "
+"continue."
+msgstr ""
+"\"%1$s\"-t a(z) %2$d többszörösében kell megvásárolni. A folytatáshoz "
+"igazítsa a mennyiségét."
+
+#. translators: %1$s: Product name, %2$d: Group amount
+#: woocommerce-min-max-quantities.php:1025
+#, php-format
+msgid ""
+"The quantity of \"%1$s\" has been adjusted. \"%1$s\" must be bought in "
+"multiples of %2$d."
+msgstr ""
+"A(z) \"%1$s\" mennyisége módosítva lett. \"%1$s\"-t a(z) %2$d többszörösében"
+" kell megvásárolni."
+
+#. translators: %1$s: Product name, %2$d: Group of quantity
+#: woocommerce-min-max-quantities.php:1093
+#, php-format
+msgid "\"%1$s\" can only be bought in multiples of %2$d."
+msgstr "\"%1$s\" csak a(z) %2$d többszörösében vásárolható meg."
+
+#. translators: %1$s: Product name, %2$d: Minimum Quantity
+#: woocommerce-min-max-quantities.php:1114
+#, php-format
+msgid "The minimum required quantity for \"%1$s\" is %2$d."
+msgstr "A(z) \"%1$s\" minimálisan szükséges mennyisége %2$d."
+
+#. translators: %1$s: Product name, %2$d: Maximum quantity
+#: woocommerce-min-max-quantities.php:1136
+#, php-format
+msgid "The maximum allowed quantity for \"%1$s\" is %2$d."
+msgstr "A(z) \"%1$s\" megengedett legnagyobb mennyisége %2$d."

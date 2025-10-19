@@ -1,0 +1,240 @@
+# Hungarian translation for WP Grid Builder - Caching.
+# Copyright (C) 2025 Loïc Blascos
+# This file is distributed under the GPL license.
+# Translator Team <hello@hellowp.io>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Grid Builder - Caching 1.2.1\n"
+"Report-Msgid-Bugs-To: support@hellowp.io\n"
+"POT-Creation-Date: 2025-10-19T19:14:05+00:00\n"
+"PO-Revision-Date: 2025-10-19 21:14\n"
+"Last-Translator: HelloWP <translate@hellowp.io>\n"
+"Language-Team: HelloWP <translate@hellowp.io>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: sinann-po-translator\n"
+"X-Plugin-Name: WP Grid Builder - Caching\n"
+"X-Plugin-Version: 1.2.1\n"
+
+#. Plugin Name of the plugin
+#: wp-grid-builder-caching.php
+msgid "WP Grid Builder - Caching"
+msgstr "WP Grid Builder - Gyorsítótárazás"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: wp-grid-builder-caching.php
+msgid "https://www.wpgridbuilder.com"
+msgstr "https://www.wpgridbuilder.com"
+
+#. Description of the plugin
+#: wp-grid-builder-caching.php
+msgid ""
+"Speed up loading time when filtering grids by caching content and facets."
+msgstr ""
+"Gyorsítsa a betöltési időt a rácsok szűrésekor a tartalom és a facetták "
+"gyorsítótárazásával."
+
+#. Author of the plugin
+#: wp-grid-builder-caching.php
+msgid "Loïc Blascos"
+msgstr "Loïc Blascos"
+
+#. translators: %d: time in day
+#: includes/class-cron.php:72
+msgid "Every day"
+msgstr "Minden nap"
+
+#: includes/class-menu.php:77
+msgid "Gridbuilder ᵂᴾ"
+msgstr "Gridbuilder ᵂᴾ"
+
+#: includes/class-menu.php:91
+msgid "Clear cache (all)"
+msgstr "Gyorsítótár törlése (összes)"
+
+#: includes/class-menu.php:111
+msgid "Clear cache (this page)"
+msgstr "Gyorsítótár törlése (ezen az oldalon)"
+
+#: includes/class-rest.php:83
+msgid "You do not have enough permissions to complete the operation."
+msgstr "Nincs elegendő jogosultsága a művelet befejezéséhez."
+
+#: includes/class-rest.php:104
+msgid "Cache cleared."
+msgstr "Gyorsítótár törölve."
+
+#: includes/class-settings.php:137 includes/class-settings.php:158
+#: includes/class-settings.php:159
+msgid "Caching"
+msgstr "Gyorsítótárazás"
+
+#: includes/class-settings.php:160
+msgid "Manage caching of your grids and facets."
+msgstr "Kezelje a rácsok és a facetták gyorsítótárazását."
+
+#. translators: %1$s Number of rows in cache table, %2$s cache table length.
+#: includes/class-settings.php:256
+#, php-format
+msgid "Cache table: &#126;%1$d row (&#126;%2$.2fMB)"
+msgid_plural "Cache table: &#126;%1$d rows (&#126;%2$.2fMB)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-settings.php:274
+msgid "Cache cleared!"
+msgstr "Gyorsítótár törölve!"
+
+#: includes/controls.php:19 includes/fields.php:76
+msgid "Caching Rules"
+msgstr "Gyorsítótárazási szabályok"
+
+#: includes/controls.php:20
+msgid "Include and exclude content from cache."
+msgstr "Tartalmak bevonása és kizárása a gyorsítótárból."
+
+#: includes/controls.php:24 includes/fields.php:81
+msgid "Exclude Grids"
+msgstr "Rácsok kizárása"
+
+#: includes/controls.php:26 includes/fields.php:87
+msgctxt "Exclude Grids default value"
+msgid "None"
+msgstr "Nincs"
+
+#: includes/controls.php:32 includes/fields.php:93
+msgid "Exclude Facets"
+msgstr "Facetták kizárása"
+
+#: includes/controls.php:34 includes/fields.php:99
+msgctxt "Exclude Facets default value"
+msgid "None"
+msgstr "Nincs"
+
+#: includes/controls.php:42
+msgid "Behaviour"
+msgstr "Működés"
+
+#: includes/controls.php:43
+msgid "Manage caching duration and actions."
+msgstr "Kezelje a gyorsítótárazás időtartamát és műveleteit."
+
+#: includes/controls.php:51 includes/fields.php:119
+msgid "Cache Lifespan"
+msgstr "Gyorsítótár élettartama"
+
+#: includes/controls.php:57
+msgid "Cache Lifespan Unit"
+msgstr "Gyorsítótár élettartamának egysége"
+
+#: includes/controls.php:63 includes/fields.php:136
+msgid "Minutes"
+msgstr "Perc"
+
+#: includes/controls.php:67 includes/fields.php:137
+msgid "Hours"
+msgstr "Óra"
+
+#: includes/controls.php:71 includes/fields.php:138
+msgid "Days"
+msgstr "Nap"
+
+#: includes/controls.php:79 includes/fields.php:112
+msgid "Automatic Purge"
+msgstr "Automatikus ürítés"
+
+#: includes/controls.php:80
+msgid "Purge cache automatically when updating content."
+msgstr "A gyorsítótár automatikus ürítése tartalom frissítésekor."
+
+#: includes/controls.php:84 includes/fields.php:66
+msgid "Admin Bar"
+msgstr "Admin sáv"
+
+#: includes/controls.php:85
+msgid "Display a quick-action menu in the admin bar."
+msgstr "Gyorsműveleti menü megjelenítése az admin sávban."
+
+#: includes/controls.php:96
+msgid ""
+"<strong>If you change cache lifespan</strong>, please clear the cache to "
+"prevent any issue. Otherwise, several cache versions from different "
+"lifespans can be mixed."
+msgstr ""
+"<strong>Ha módosítja a gyorsítótár élettartamát</strong>, a problémák "
+"elkerülése érdekében törölje a gyorsítótárat. Ellenkező esetben különböző "
+"élettartamú gyorsítótár-verziók keveredhetnek."
+
+#: includes/fields.php:61
+msgid "Cache Menu"
+msgstr "Gyorsítótár menü"
+
+#: includes/fields.php:67
+msgid "Display a menu of quick actions in the admin bar to clear cache."
+msgstr ""
+"Gyorsműveleti menü megjelenítése az admin sávban a gyorsítótár törléséhez."
+
+#: includes/fields.php:107
+msgid "Cache Behaviour"
+msgstr "Gyorsítótár működése"
+
+#: includes/fields.php:113
+msgid ""
+"Purge cache automatically when updating your posts, taxonomy terms, users "
+"and any related data."
+msgstr ""
+"A gyorsítótár automatikus ürítése a bejegyzések, taxonómiák kifejezései, "
+"felhasználók és minden kapcsolódó adat frissítésekor."
+
+#: includes/fields.php:120
+msgid ""
+"The whole cache will be automatically cleared according to the time period "
+"you specified."
+msgstr ""
+"A teljes gyorsítótár automatikusan törlésre kerül az Ön által megadott "
+"időközönként."
+
+#: includes/fields.php:146
+msgid "Cache Content"
+msgstr "Gyorsítótár tartalma"
+
+#: includes/fields.php:152
+msgid "Processing..."
+msgstr "Feldolgozás..."
+
+#: includes/fields.php:153
+msgid "Clear cache"
+msgstr "Gyorsítótár törlése"
+
+#: includes/fields.php:154
+msgid "Please refresh the page to get cache stats."
+msgstr "Frissítse az oldalt a gyorsítótár statisztikáinak megtekintéséhez."
+
+#: includes/fields.php:154
+msgid "Loading cache stats..."
+msgstr "Gyorsítótár-statisztikák betöltése..."
+
+#: includes/fields.php:160
+msgid ""
+"<strong>If you change cache lifespan</strong>, please clear the cache to "
+"prevent any issue.<br>Otherwise, several cache versions from different "
+"lifespans can be mixed."
+msgstr ""
+"<strong>Ha módosítja a gyorsítótár élettartamát</strong>, a problémák "
+"elkerülése érdekében törölje a gyorsítótárat.<br>Ellenkező esetben különböző"
+" élettartamú gyorsítótár-verziók keveredhetnek."
+
+#: assets/js/admin.js:10
+msgid "Clearing..."
+msgstr "Törlés..."
+
+#: assets/js/admin.js:10
+#, js-format
+msgid "Clear Cache (%d row)"
+msgid_plural "Clear Cache (%d rows)"
+msgstr[0] ""
+msgstr[1] ""

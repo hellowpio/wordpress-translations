@@ -1,0 +1,25 @@
+<?php
+return [
+	'project-id-version' => 'WP Grid Builder - Meta Box 1.2.0',
+	'report-msgid-bugs-to' => 'support@hellowp.io',
+	'po-revision-date' => '2025-10-19 21:14',
+	'last-translator' => 'HelloWP <translate@hellowp.io>',
+	'language-team' => 'HelloWP <translate@hellowp.io>',
+	'language' => 'hu',
+	'mime-version' => '1.0',
+	'content-type' => 'text/plain; charset=utf-8',
+	'content-transfer-encoding' => '8bit',
+	'plural-forms' => 'nplurals=2; plural=(n != 1);',
+	'x-generator' => 'sinann-po-translator',
+	'x-plugin-name' => 'WP Grid Builder - Meta Box',
+	'x-plugin-version' => '1.2.0',
+	'messages' => [
+		'WP Grid Builder - Meta Box' => 'WP Grid Builder - Meta Box',
+		'https://www.wpgridbuilder.com' => 'https://www.wpgridbuilder.com',
+		'Integrate WP Grid Builder with Meta Box plugin.' => 'Integrálja a WP Grid Buildert a Meta Box bővítménnyel.',
+		'Loïc Blascos' => 'Loïc Blascos',
+		'Yes' => 'Igen',
+		'No' => 'Nem',
+		'<strong>Gridbuilder ᵂᴾ - Meta Box</strong> add-on requires at least <code>Gridbuilder ᵂᴾ v1.5.7</code>. Please update Gridbuilder ᵂᴾ to use Meta Box add-on.' => 'A <strong>Gridbuilder ᵂᴾ - Meta Box</strong> kiegészítőhöz legalább a <code>Gridbuilder ᵂᴾ v1.5.7</code> verzió szükséges. Frissítse a Gridbuilder ᵂᴾ-t a Meta Box kiegészítő használatához.',
+	],
+];

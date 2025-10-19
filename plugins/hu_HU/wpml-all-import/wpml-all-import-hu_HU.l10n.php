@@ -1,0 +1,23 @@
+<?php
+return [
+	'project-id-version' => 'WPML All Import 2.3.2',
+	'report-msgid-bugs-to' => 'support@hellowp.io',
+	'po-revision-date' => '2025-10-19 21:14',
+	'last-translator' => 'HelloWP <translate@hellowp.io>',
+	'language-team' => 'HelloWP <translate@hellowp.io>',
+	'language' => 'hu',
+	'mime-version' => '1.0',
+	'content-type' => 'text/plain; charset=utf-8',
+	'content-transfer-encoding' => '8bit',
+	'plural-forms' => 'nplurals=2; plural=(n != 1);',
+	'x-generator' => 'sinann-po-translator',
+	'x-plugin-name' => 'WPML All Import',
+	'x-plugin-version' => '2.3.2',
+	'messages' => [
+		'WPML All Import' => 'WPML All Import',
+		'http://wpml.org' => 'http://wpml.org',
+		'Adds compatibility between WP All Import and WPML | <a href="https://wpml.org/documentation/related-projects/wpml-all-import-plugin-website-import-with-wpml/?utm_source=plugin&utm_medium=gui&utm_campaign=wpmlai">Documentation</a>' => 'Kompatibilitást biztosít a WP All Import és a WPML között | <a href="https://wpml.org/documentation/related-projects/wpml-all-import-plugin-website-import-with-wpml/?utm_source=plugin&utm_medium=gui&utm_campaign=wpmlai">Dokumentáció</a>',
+		'OnTheGoSystems' => 'OnTheGoSystems',
+		'http://www.onthegosystems.com/' => 'http://www.onthegosystems.com/',
+	],
+];

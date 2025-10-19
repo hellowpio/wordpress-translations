@@ -1,0 +1,26 @@
+<?php
+return [
+	'project-id-version' => 'MB Settings Page 2.2.0',
+	'report-msgid-bugs-to' => 'support@hellowp.io',
+	'po-revision-date' => '2025-10-19 21:14',
+	'last-translator' => 'HelloWP <translate@hellowp.io>',
+	'language-team' => 'HelloWP <translate@hellowp.io>',
+	'language' => 'hu',
+	'mime-version' => '1.0',
+	'content-type' => 'text/plain; charset=utf-8',
+	'content-transfer-encoding' => '8bit',
+	'plural-forms' => 'nplurals=2; plural=(n != 1);',
+	'x-generator' => 'sinann-po-translator',
+	'x-plugin-name' => 'MB Settings Page',
+	'x-plugin-version' => '2.2.0',
+	'messages' => [
+		'MB Settings Page' => 'MB Settings Page',
+		'https://metabox.io/plugins/mb-settings-page/' => 'https://metabox.io/plugins/mb-settings-page/',
+		'Add-on for meta box plugin which helps you create settings pages easily.' => 'A Meta Box bővítményhez készült kiegészítő, amely megkönnyíti a beállítási oldalak létrehozását.',
+		'MetaBox.io' => 'MetaBox.io',
+		'https://metabox.io' => 'https://metabox.io',
+		'To export settings, copy the content of this field and save to a file. To import settings, paste the content of the backup file here.' => 'A beállítások exportálásához másolja ki ennek a mezőnek a tartalmát, és mentse egy fájlba. A beállítások importálásához illessze be ide a biztonsági mentési fájl tartalmát.',
+		'Save Settings' => 'Beállítások mentése',
+		'Settings saved.' => 'Beállítások mentve.',
+	],
+];
