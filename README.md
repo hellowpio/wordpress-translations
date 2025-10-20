@@ -39,6 +39,51 @@ Példa: `themes/hu_HU/astra/`
 - `hu_HU` - Magyar
 - További nyelvek később...
 
+## Fordítási fájlformátumok
+
+A WordPress fordítási rendszere több fájlformátumot használ különböző célokra:
+
+### .po fájlok (Portable Object)
+- **Célja**: Emberi olvasásra szánt szövegfájl, amely tartalmazza az eredeti szövegeket és fordításaikat
+- **Használat**: Fordítók és fejlesztők számára a fordítások szerkesztéséhez
+- **Példa**: `plugin-name-hu_HU.po`
+
+### .mo fájlok (Machine Object)
+- **Célja**: Bináris formátum a gyors betöltéshez
+- **Használat**: A WordPress hagyományosan ezt használja PHP kódban található szövegek fordításához (`__()`, `_e()` függvények)
+- **Generálás**: Automatikusan generálódik a .po fájlokból
+- **Példa**: `plugin-name-hu_HU.mo`
+
+### .l10n.php fájlok (WordPress 6.5+)
+- **Célja**: Optimalizált PHP cache fájl a gyorsabb betöltéshez
+- **Használat**: WordPress 6.5 óta ez az elsődleges formátum, 10-30%-kal gyorsabb mint a .mo fájlok
+- **Előnyök**:
+  - Natív PHP array formátum, nem igényel bináris parsing-ot
+  - OPcache-elhető a még jobb teljesítményért
+  - Kisebb memóriahasználat
+- **Generálás**: Automatikusan generálódik a .po fájlokból
+- **Példa**: `plugin-name-hu_HU.l10n.php`
+
+### .json fájlok (WordPress 5.0+)
+- **Célja**: JavaScript alapú fordítások támogatása
+- **Használat**: Gutenberg blokkok, React komponensek és más JavaScript kód fordításaihoz
+- **Mikor kell**:
+  - Ha a plugin/téma használja a Block Editor-t (Gutenberg)
+  - Ha JavaScript kódban van `wp.i18n.__()` függvény
+  - Modern admin felületeknél, ahol React/Vue.js keretrendszert használnak
+- **Generálás**: WP-CLI `wp i18n make-json` paranccsal a .po fájlokból
+- **Példa**: `plugin-name-hu_HU-{script-handle-hash}.json`
+
+### Melyik fájlra van szükség?
+
+| WordPress verzió | PHP fordítások | JavaScript fordítások |
+|-----------------|---------------|----------------------|
+| < 5.0 | .mo | - |
+| 5.0 - 6.4 | .mo | .json |
+| 6.5+ | .l10n.php (elsődleges) vagy .mo | .json |
+
+**Fontos**: Ez a repository automatikusan generálja az összes szükséges formátumot (.mo, .l10n.php, .json) a .po fájlokból, így biztosítva a kompatibilitást minden WordPress verzióval.
+
 ## Fordítás fájlok telepítése
 
 ### 1. módszer: Manuális telepítés
@@ -101,7 +146,7 @@ xgettext --language=PHP --from-code=UTF-8 --keyword=__ --keyword=_e --keyword=_n
 
 ## Automatikus Build Rendszer
 
-Ez a repository automatikusan generálja a `.mo` és `.l10n.php` fájlokat a `.po` fájlokból.
+Ez a repository automatikusan generálja a `.mo`, `.l10n.php` és `.json` fájlokat a `.po` fájlokból.
 
 ### Lokális build (fejlesztőknek)
 
@@ -109,12 +154,20 @@ Ez a repository automatikusan generálja a `.mo` és `.l10n.php` fájlokat a `.p
 # Függőségek telepítése (első alkalommal)
 npm install
 
-# Fordítások build-elése
+# Fordítások build-elése (generálja: .mo, .l10n.php, .json)
 npm run build
 
 # Watch mód (automatikus újragenerálás változáskor)
 npm run watch
 ```
+
+#### Mi generálódik a build során?
+
+1. **`.mo` fájlok** - Régebbi WordPress verziók és visszafelé kompatibilitás miatt
+2. **`.l10n.php` fájlok** - WordPress 6.5+ optimalizált teljesítmény
+3. **`.json` fájlok** - JavaScript fordítások (ha a plugin használ Gutenberg blokkokat vagy modern JS-t)
+
+**Megjegyzés**: A JSON fájlok generálásához szükséges a WP-CLI telepítése (`wp` parancs)
 
 ### GitHub Actions
 

@@ -5,6 +5,10 @@ import fs from 'fs';
 import path from 'path';
 import chalk from 'chalk';
 import { glob } from 'glob';
+import { exec } from 'child_process';
+import { promisify } from 'util';
+
+const execAsync = promisify(exec);
 
 /**
  * Convert PO file to MO (binary format)
@@ -148,7 +152,51 @@ function po2php() {
 }
 
 /**
- * Build task: Generate MO and L10N.php files from all PO files
+ * Generate JSON translation files for JavaScript using WP-CLI
+ */
+async function generateJsonTranslations(poFile) {
+    const dir = path.dirname(poFile);
+    const basename = path.basename(poFile, '.po');
+
+    try {
+        // Check if wp-cli is available
+        await execAsync('wp --version');
+
+        // Generate JSON files using WP-CLI
+        // The command will create JSON files for all JavaScript handles found in the PO file
+        const { stderr } = await execAsync(`wp i18n make-json "${poFile}" "${dir}" --no-purge`, {
+            cwd: process.cwd()
+        });
+
+        if (stderr && !stderr.includes('Success')) {
+            console.log(chalk.yellow('⚠'), 'JSON generation warning:', stderr);
+        }
+
+        // Count generated JSON files
+        const jsonFiles = await glob(path.join(dir, `${basename}-*.json`));
+
+        if (jsonFiles.length > 0) {
+            console.log(chalk.green('✓'), `Generated ${jsonFiles.length} JSON file(s) for:`, chalk.cyan(basename));
+            jsonFiles.forEach(jsonFile => {
+                console.log(chalk.gray('  →'), path.basename(jsonFile));
+            });
+        }
+
+        return true;
+    } catch (err) {
+        if (err.message.includes('wp: command not found') || err.message.includes('\'wp\' is not recognized')) {
+            console.log(chalk.yellow('⚠'), 'WP-CLI not found. Skipping JSON generation.');
+            console.log(chalk.gray('  Install WP-CLI to enable JSON translations: https://wp-cli.org'));
+            return false;
+        }
+        console.log(chalk.yellow('⚠'), 'Could not generate JSON for:', poFile);
+        console.log(chalk.gray('  Error:'), err.message);
+        return false;
+    }
+}
+
+/**
+ * Build task: Generate MO, L10N.php, and JSON files from all PO files
  */
 async function build() {
     console.log(chalk.blue.bold('\n🔨 Building translation files...\n'));
@@ -259,6 +307,9 @@ async function build() {
             const phpPath = path.join(dir, `${basename}.l10n.php`);
             fs.writeFileSync(phpPath, phpContent);
             console.log(chalk.green('✓'), 'Generated PHP:', chalk.cyan(phpPath));
+
+            // Generate JSON files for JavaScript translations
+            await generateJsonTranslations(poFile);
 
         } catch (err) {
             console.log(chalk.red('✗'), 'Error processing:', poFile, err.message);
