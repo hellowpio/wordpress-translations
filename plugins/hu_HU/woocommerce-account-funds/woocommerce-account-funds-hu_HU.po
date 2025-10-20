@@ -1,0 +1,1900 @@
+# Hungarian translation for Account Funds for WooCommerce.
+# Copyright (C) 2025 Kestrel
+# This file is distributed under the GPL license.
+# Translator Team <hello@hellowp.io>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: Account Funds for WooCommerce 4.0.4\n"
+"Report-Msgid-Bugs-To: support@hellowp.io\n"
+"POT-Creation-Date: 2025-10-19T20:50:35+00:00\n"
+"PO-Revision-Date: 2025-10-19 22:50\n"
+"Last-Translator: HelloWP <translate@hellowp.io>\n"
+"Language-Team: HelloWP <translate@hellowp.io>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: sinann-po-translator\n"
+"X-Plugin-Name: Account Funds for WooCommerce\n"
+"X-Plugin-Version: 4.0.4\n"
+
+#. Plugin Name of the plugin
+#: woocommerce-account-funds.php
+msgid "Account Funds for WooCommerce"
+msgstr "Számlaegyenleg a WooCommerce-hez"
+
+#. Plugin URI of the plugin
+#: woocommerce-account-funds.php
+msgid "https://woocommerce.com/products/account-funds/"
+msgstr "https://woocommerce.com/products/account-funds/"
+
+#. Description of the plugin
+#: woocommerce-account-funds.php
+msgid ""
+"Allow customers to deposit funds into their accounts and pay with account "
+"funds during checkout."
+msgstr ""
+"Engedje meg a vásárlóknak, hogy befizessenek az egyenlegükre, és a "
+"pénztárnál az egyenlegükkel fizessenek."
+
+#. Author of the plugin
+#: woocommerce-account-funds.php
+msgid "Kestrel"
+msgstr "Kestrel"
+
+#. Author URI of the plugin
+#: woocommerce-account-funds.php
+msgid "http://kestrelwp.com"
+msgstr "http://kestrelwp.com"
+
+#. translators: Placeholders: %1$s - Refund amount, %2$s - Account funds
+#. label, e.g. "Account funds"
+#. translators: Placeholders: %1$s- refund amount, %2$s - payment gateway
+#. title
+#: legacy/includes/admin/class-wc-account-funds-admin-refunds.php:128
+#: src/Gateway.php:461
+#, php-format
+msgid "Refunded %1$s via %2$s."
+msgstr "Visszatérítve %1$s a következőn keresztül: %2$s."
+
+#. Translators: Placeholders: %1$s - Store credit amount to be removed, %$2s -
+#. Customer store credit balance amount -  %3$s - Label used to describe store
+#. credit
+#: legacy/includes/admin/class-wc-account-funds-admin-refunds.php:178
+#, php-format
+msgid ""
+"Insufficient %1$s in customer's balance (%2$s) to remove the amount of %3$s."
+msgstr ""
+"Nincs elegendő %1$s a vásárló egyenlegén (%2$s) a(z) %3$s összeg "
+"levonásához."
+
+#. Translators: Placeholders: %1$s - Store credit amount, %2$s - Label used to
+#. describe store credit
+#: legacy/includes/admin/class-wc-account-funds-admin-refunds.php:193
+#, php-format
+msgid "Removed %1$s in %2$s from customer's balance."
+msgstr "Levonva %1$s %2$s a vásárló egyenlegéről."
+
+#. translators: Placeholder: %s - Average daily account funds deposits
+#: legacy/includes/class-wc-account-funds-deposits-by-date.php:97
+#, php-format
+msgid "%s average daily deposits"
+msgstr "%s átlagos napi befizetés"
+
+#. translators: Placeholder: %s - Average monthly account funds deposits
+#: legacy/includes/class-wc-account-funds-deposits-by-date.php:102
+#, php-format
+msgid "%s average monthly deposits"
+msgstr "%s átlagos havi befizetés"
+
+#. translators: Placeholder: %s - Total account funds deposits in a chosen
+#. period
+#: legacy/includes/class-wc-account-funds-deposits-by-date.php:108
+#, php-format
+msgid "%s total deposits in this period"
+msgstr "%s befizetés összesen ebben az időszakban"
+
+#: legacy/includes/class-wc-account-funds-deposits-by-date.php:109
+msgid ""
+"This is the sum of the order totals after any refunds and including shipping"
+" and taxes."
+msgstr ""
+"Ez a megrendelések végösszegének összege a visszatérítések után, a "
+"szállítással és adókkal együtt."
+
+#. translators: Placeholder: %s - Account funds deposits made in total for a
+#. chosen period
+#: legacy/includes/class-wc-account-funds-deposits-by-date.php:120
+#, php-format
+msgid "%s deposits made"
+msgstr "%s befizetés történt"
+
+#: legacy/includes/class-wc-account-funds-deposits-by-date.php:201
+msgid "Number of deposits made"
+msgstr "Befizetések száma"
+
+#: legacy/includes/class-wc-account-funds-deposits-by-date.php:209
+msgid "Average sales amount"
+msgstr "Átlagos eladási összeg"
+
+#: legacy/includes/class-wc-account-funds-deposits-by-date.php:219
+msgid "Deposits amount"
+msgstr "Befizetések összege"
+
+#. translators: Placeholder- %s - minimum account funds deposits top-up amount
+#: legacy/includes/class-wc-account-funds-my-account.php:154
+#, php-format
+msgid "The minimum amount that can be topped up is %s"
+msgstr "A feltölthető minimum összeg: %s"
+
+#. translators: Placeholder: %s - maximum account funds deposits top-up amount
+#: legacy/includes/class-wc-account-funds-my-account.php:158
+#, php-format
+msgid "The maximum amount that can be topped up is %s"
+msgstr "A feltölthető maximum összeg: %s"
+
+#: legacy/includes/class-wc-account-funds-my-account.php:168
+msgid "View cart"
+msgstr "Kosár megtekintése"
+
+#. translators: Placeholder: %s - Account funds deposits top-up amount
+#: legacy/includes/class-wc-account-funds-my-account.php:170
+#, php-format
+msgid "Top-up of %1$s has been added to cart."
+msgstr "A(z) %1$s értékű feltöltés a kosárba került."
+
+#. translators: Account funds deposits
+#: legacy/includes/class-wc-account-funds-reports.php:24
+msgid "Deposits"
+msgstr "Befizetések"
+
+#. translators: Account funds deposits overview
+#: legacy/includes/class-wc-account-funds-reports.php:28
+msgid "Overview"
+msgstr "Áttekintés"
+
+#. translators: Name of the account funds widget
+#: legacy/includes/class-wc-account-funds-widget.php:17
+msgid "My Account Funds"
+msgstr "Saját számlaegyenleg"
+
+#. translators: Placeholders: %1$s - account funds amount, 2$s - account funds
+#. label, e.g. "Account Funds"
+#. translators: Placeholders: %1$s - Funds amount, %2$s - Label used to
+#. describe account funds
+#: legacy/includes/class-wc-account-funds-widget.php:45
+#: templates/myaccount/account-funds.php:38
+#, php-format
+msgid ""
+"You currently have <strong>%1$s</strong> worth of %2$s in your account."
+msgstr "Jelenleg <strong>%1$s</strong> értékű %2$s van a fiókjában."
+
+#. translators: Account funds deposits
+#: legacy/includes/class-wc-account-funds-widget.php:57
+msgid "View deposits"
+msgstr "Befizetések megtekintése"
+
+#. translators: Placeholder: %s - label used to describe account funds owned
+#. by the current user, e.g. "My account funds"
+#: legacy/includes/class-wc-account-funds-widget.php:85
+#, php-format
+msgid "My %s"
+msgstr "Saját %s"
+
+#: legacy/includes/class-wc-account-funds-widget.php:90
+msgid "Title:"
+msgstr "Cím:"
+
+#. translators: Placeholder: %s - label used to describe account funds, e.g.
+#. "Account Funds"
+#: legacy/includes/emails/class-wc-account-funds-email-account-funds-increase.php:54
+#, php-format
+msgid "%s increase"
+msgstr "%s növelése"
+
+#. translators: Placeholder: %s - label used to describe account funds, e.g.
+#. "Account Funds"
+#: legacy/includes/emails/class-wc-account-funds-email-account-funds-increase.php:58
+#, php-format
+msgid ""
+"This email is sent to the customer when the %s amount is manually increased."
+msgstr ""
+"Ezt az e‑mailt akkor küldjük a vásárlónak, amikor a(z) %s összeget kézzel "
+"növelik."
+
+#. translators: Placeholder: %s - label used to describe account funds, e.g.
+#. "Account Funds"
+#: legacy/includes/emails/class-wc-account-funds-email-account-funds-increase.php:88
+#, php-format
+msgid "%s increased"
+msgstr "%s növelve"
+
+#. translators: Placeholder: %s - label used to describe account funds, e.g.
+#. "Account Funds"
+#: legacy/includes/emails/class-wc-account-funds-email-account-funds-increase.php:103
+#, php-format
+msgid "Your %s amount has increased to:"
+msgstr "A(z) %s összege a következőre nőtt:"
+
+#: legacy/includes/emails/class-wc-account-funds-email-account-funds-increase.php:129
+msgid "Message"
+msgstr "Üzenet"
+
+#. translators: Placeholder: %s - list of available placeholders
+#: legacy/includes/emails/class-wc-account-funds-email-account-funds-increase.php:251
+#, php-format
+msgid "Available placeholders: %s."
+msgstr "Elérhető helyőrzők: %s."
+
+#: legacy/includes/wc-account-funds-order-functions.php:115
+msgid "Customer not found."
+msgstr "Vásárló nem található."
+
+#. translators: Placeholder: %s - label used to describe account funds, e.g.
+#. insufficient account funds amount
+#: legacy/includes/wc-account-funds-order-functions.php:129
+#, php-format
+msgid "Insufficient %s amount."
+msgstr "Elégtelen %s összeg."
+
+#. translators: Placeholders: %1$s payment gateway title, %2$s account funds
+#. used (applied at checkout)
+#: legacy/includes/wc-account-funds-order-functions.php:150
+#, php-format
+msgid "%1$s payment applied: %2$s"
+msgstr "%1$s fizetés alkalmazva: %2$s"
+
+#: src/Admin.php:86
+msgid "Account funds"
+msgstr "Számlaegyenleg"
+
+#: src/Admin.php:191
+msgid ""
+"The store credit gateway is not enabled. Customers will not be able to pay "
+"for orders using their store credit."
+msgstr ""
+"A bolti jóváírás fizetési átjáró nincs engedélyezve. A vásárlók nem tudnak a"
+" bolti jóváírásukkal fizetni a rendeléseikért."
+
+#: src/Admin.php:193
+msgid "View gateway settings"
+msgstr "Átjáró beállításainak megtekintése"
+
+#: src/Admin.php:207
+msgid ""
+"Version 4.0.0 of Kestrel Account funds for WooCommerce is a major upgrade "
+"paving the way for many new features to reward customers with store credit "
+"and expand your business opportunities in building customer loyalty."
+msgstr ""
+"A Kestrel Account funds for WooCommerce 4.0.0-s verziója jelentős frissítés,"
+" amely számos új funkció előtt nyit utat, hogy bolti jóváírással jutalmazza "
+"a vásárlókat, és bővítse az ügyfélhűség építésében rejlő üzleti "
+"lehetőségeit."
+
+#: src/Admin.php:209
+msgid "Learn more"
+msgstr "További információ"
+
+#: src/Admin.php:216
+msgid "Account funds for WooCommerce"
+msgstr "Számlaegyenleg a WooCommerce-hez"
+
+#: src/Admin/Products.php:66
+#: src/Lifecycle/Migrations/Upgrade_To_Version_4_0_0.php:81
+#: src/Settings/Store_Credit_Label.php:87
+#: src/Store_Credit/Reward_Status.php:84
+msgid "Store credit"
+msgstr "Bolti jóváírás"
+
+#: src/Admin/Products.php:137
+msgid ""
+"Store credit products can be purchased by customers to increase their store "
+"credit balance by an amount equal to the price paid."
+msgstr ""
+"A vásárlók bolti jóváírás termékeket vásárolhatnak, hogy a fizetett árral "
+"megegyező összeggel növeljék bolti jóváírás egyenlegüket."
+
+#: src/Admin/Products.php:138
+msgid ""
+"If a sale price is set, customers will pay the sale price and receive the "
+"full price amount in store credit instead."
+msgstr ""
+"Ha akciós ár van beállítva, a vásárlók az akciós árat fizetik, és ehelyett a"
+" teljes ár összegét kapják meg bolti jóváírásként."
+
+#: src/Admin/Products.php:139
+msgid ""
+"Important note: store credit products should not be taxed if you are "
+"charging tax on the purchase of products."
+msgstr ""
+"Fontos megjegyzés: a bolti jóváírás termékeket nem szabad adóztatni, ha a "
+"termékvásárlásokra adót számít fel."
+
+#: src/Admin/Screens/Settings_Screen.php:78
+msgid "Settings"
+msgstr "Beállítások"
+
+#: src/Admin/Screens/Settings_Screen.php:108
+msgid "Labels"
+msgstr "Címkék"
+
+#: src/Admin/Screens/Settings_Screen.php:109
+msgid ""
+"Determine how store credit is presented to customers. Leave blank to use the"
+" default \"Store credit\"."
+msgstr ""
+"Határozza meg, hogyan jelenjen meg a bolti jóváírás a vásárlók számára. "
+"Hagyja üresen az alapértelmezett \"Store credit\" használatához."
+
+#: src/Admin/Screens/Settings_Screen.php:113
+msgid "Funding"
+msgstr "Feltöltés"
+
+#: src/Admin/Screens/Settings_Screen.php:114
+msgid ""
+"Determine if customers are able to increase their store credit from their "
+"account page."
+msgstr ""
+"Határozza meg, hogy a vásárlók növelhetik‑e bolti jóváírásukat a "
+"fiókoldalukról."
+
+#. translators: Placeholder: %1$s - opening link tag, %2$s - closing link tag
+#: src/Admin/Screens/Settings_Screen.php:163
+#, php-format
+msgid ""
+"To configure the store credit payment gateway and let customers pay with "
+"their store credit, please visit the %1$s store credit payment gateway "
+"settings%2$s."
+msgstr ""
+"A bolti jóváírás fizetési átjáró beállításához és hogy a vásárlók a bolti "
+"jóváírásukkal fizethessenek, keresse fel a(z) %1$s bolti jóváírás fizetési "
+"átjáró beállításait%2$s."
+
+#: src/Admin/Screens/Settings_Screen.php:184
+msgid "Save changes"
+msgstr "Változtatások mentése"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:53
+#: src/Store_Credit/Reward_Type.php:65 src/Store_Credit/Reward_Type.php:84
+#: src/System_Status_Report.php:121
+msgid "Cashback"
+msgstr "Pénzvisszatérítés"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:67
+msgid "Edit cashback reward"
+msgstr "Pénzvisszatérítési jutalom szerkesztése"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:70
+msgid "Add new cashback reward"
+msgstr "Új pénzvisszatérítési jutalom hozzáadása"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:82
+msgid ""
+"Award store credit to customers when they make a purchase. Choose to award "
+"credit as percentage or fixed amount, relative to the whole order value or "
+"specific products within the order."
+msgstr ""
+"Adjon bolti jóváírást a vásárlóknak vásárláskor. Választhat százalékos vagy "
+"fix összegű jóváírást, a teljes rendelési értékhez vagy a rendelésen belüli "
+"konkrét termékekhez viszonyítva."
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:111
+msgid ""
+"Award cashback store credit when the customer pays for an order that fits "
+"the eligibility rules."
+msgstr ""
+"Adjon pénzvisszatérítésként bolti jóváírást, amikor a vásárló olyan "
+"rendelést fizet ki, amely megfelel a jogosultsági szabályoknak."
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:115
+msgid ""
+"Award cashback store credit for every eligible product within a paid order."
+msgstr ""
+"Adjon pénzvisszatérítésként bolti jóváírást minden jogosult termék után a "
+"kifizetett rendelésben."
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:165
+msgid "Define who qualifies for cashback based on order value or contents."
+msgstr ""
+"Határozza meg, ki jogosult pénzvisszatérítésre a rendelés értéke vagy "
+"tartalma alapján."
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:171
+msgid "Eligible orders"
+msgstr "Jogosult rendelések"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:175
+msgid "Award cashback only if the paid order meets the specified criteria."
+msgstr ""
+"Csak akkor adjon pénzvisszatérítést, ha a kifizetett rendelés megfelel a "
+"megadott feltételeknek."
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:183
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:349
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:188
+msgid "Products"
+msgstr "Termékek"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:184
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:350
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:189
+msgid "Search for products&hellip;"
+msgstr "Termékek keresése&hellip;"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:208
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:373
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:212
+msgid "Product categories"
+msgstr "Termékkategóriák"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:209
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:374
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:213
+msgid "Select categories&hellip;"
+msgstr "Kategóriák kiválasztása&hellip;"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:234
+msgid "Product types"
+msgstr "Terméktípusok"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:241
+msgid "Select product types&hellip;"
+msgstr "Terméktípusok kiválasztása&hellip;"
+
+#. translators: Placeholder: %s - Currency symbol
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:252
+#, php-format
+msgid "Minimum order value (%s)"
+msgstr "Minimális rendelési érték (%s)"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:257
+msgid ""
+"The order must reach this value (after discounts, before tax and shipping) "
+"to qualify for cashback."
+msgstr ""
+"A rendelésnek el kell érnie ezt az értéket (kedvezmények után, adó és "
+"szállítás előtt), hogy jogosult legyen pénzvisszatérítésre."
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:258
+msgid "Leave blank for no minimum."
+msgstr "Hagyja üresen, ha nincs minimum."
+
+#. translators: Placeholder: %s - Currency symbol
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:269
+#, php-format
+msgid "Maximum order value (%s)"
+msgstr "Maximális rendelési érték (%s)"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:274
+msgid "Award cashback only if the order total is less than this amount."
+msgstr ""
+"Csak akkor adjon pénzvisszatérítést, ha a rendelés végösszege kisebb ennél "
+"az összegnél."
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:275
+msgid "Leave blank for no maximum."
+msgstr "Hagyja üresen, ha nincs maximum."
+
+#. translators: Context: Limit awarding store credit once per customer
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:282
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:410
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:249
+msgid "Award limits"
+msgstr "Jutalomkorlátok"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:290
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:418
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:259
+msgid "Unlimited"
+msgstr "Korlátlan"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:291
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:419
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:258
+msgid "Once per customer"
+msgstr "Vásárlónként egyszer"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:297
+msgid "Exclude free items"
+msgstr "Ingyenes tételek kizárása"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:298
+msgid "Do not award cashback if the order contains any free products"
+msgstr ""
+"Ne adjon pénzvisszatérítést, ha a rendelés bármilyen ingyenes terméket "
+"tartalmaz"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:305
+msgid "Exclude items on sale"
+msgstr "Akciós tételek kizárása"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:306
+msgid ""
+"Do not award cashback if the order contains any products marked on sale"
+msgstr ""
+"Ne adjon pénzvisszatérítést, ha a rendelésben bármilyen akciósnak jelölt "
+"termék van"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:313
+msgid "Exclude coupons"
+msgstr "Kuponok kizárása"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:314
+msgid "Do not award cashback if any coupon was applied to the order"
+msgstr ""
+"Ne adjon pénzvisszatérítést, ha a rendelésre bármilyen kupont alkalmaztak"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:331
+msgid "Define who qualifies for cashback based on products within an order."
+msgstr ""
+"Határozza meg, ki jogosult pénzvisszatérítésre a rendelésen belüli termékek "
+"alapján."
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:337
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:172
+msgid "Eligible products"
+msgstr "Jogosult termékek"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:343
+msgid "Select the products that customers can buy to earn cashback."
+msgstr ""
+"Válassza ki azokat a termékeket, amelyeket a vásárlók megvásárolhatnak "
+"pénzvisszatérítés megszerzéséhez."
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:370
+msgid ""
+"Award cashback when the customer purchases any of the selected products."
+msgstr ""
+"Adjon pénzvisszatérítést, amikor a vásárló megvásárol bármely kiválasztott "
+"terméket."
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:392
+msgid ""
+"Award cashback when the customer purchases any products in the selected "
+"product categories."
+msgstr ""
+"Adjon pénzvisszatérítést, amikor a vásárló a kiválasztott termékkategóriák "
+"bármely termékét megvásárolja."
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:420
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:257
+msgid "Once per product"
+msgstr "Termékenként egyszer"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:426
+msgid "Product quantity"
+msgstr "Termékmennyiség"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:430
+msgid ""
+"Multiply cashback awarded for each eligible product by its quantity in the "
+"same order"
+msgstr ""
+"A jogosult termékenként járó pénzvisszatérítést szorozza meg az adott termék"
+" ugyanazon rendelésben szereplő mennyiségével"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:431
+msgid ""
+"Award cashback once per eligible product ignoring its quantity in the same "
+"order"
+msgstr ""
+"Adjon pénzvisszatérítést jogosult termékenként egyszer, figyelmen kívül "
+"hagyva az adott termék mennyiségét ugyanazon rendelésben"
+
+#: src/Admin/Screens/Store_Credit/Cashback_Screen.php:451
+msgid ""
+"The maximum order amount defined by this cashback should not be less than "
+"the minimum order amount, otherwise the reward will be unapplicable."
+msgstr ""
+"A pénzvisszatérítés által meghatározott maximális rendelési összeg nem lehet"
+" kisebb a minimális rendelési összegnél, különben a jutalom nem lesz "
+"alkalmazható."
+
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:50
+#: src/Store_Credit/Reward_Type.php:86 src/System_Status_Report.php:134
+msgid "Milestones"
+msgstr "Mérföldkövek"
+
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:64
+msgid "Edit milestone reward"
+msgstr "Mérföldkő jutalom szerkesztése"
+
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:67
+msgid "Add new milestone reward"
+msgstr "Új mérföldkő jutalom hozzáadása"
+
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:79
+msgid ""
+"Award store credit to customers when they perform specific actions in the "
+"shop."
+msgstr ""
+"Adjon bolti jóváírást a vásárlóknak, amikor meghatározott műveleteket "
+"hajtanak végre az áruházban."
+
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:108
+msgid ""
+"Award milestone store credit when a guest customer signs up for an account."
+msgstr ""
+"Adjon mérföldkőként bolti jóváírást, amikor egy vendég vásárló fiókot "
+"regisztrál."
+
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:112
+msgid ""
+"Award milestone store credit when a customer leaves a product review, based "
+"on the eligibility rules."
+msgstr ""
+"Adjon mérföldkőként bolti jóváírást, amikor egy vásárló termékértékelést ír,"
+" a jogosultsági szabályok alapján."
+
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:166
+msgid "Define who qualifies for store credit by leaving a product review."
+msgstr "Határozza meg, ki jogosult bolti jóváírásra termékértékelés írásával."
+
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:177
+msgid ""
+"Select the products that customers must review to earn the milestone award."
+msgstr ""
+"Válassza ki azokat a termékeket, amelyeket az ügyfeleknek értékelniük kell a"
+" mérföldkő-jutalom elnyeréséhez."
+
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:180
+msgid "Any product"
+msgstr "Bármely termék"
+
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:181
+msgid "Specific products"
+msgstr "Konkrét termékek"
+
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:182
+msgid "Products within specific categories"
+msgstr "Konkrét kategóriákba tartozó termékek"
+
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:209
+msgid ""
+"Award store credit when the customer reviews any of the selected products."
+msgstr ""
+"Adjon boltjóváírást, amikor a vásárló a kiválasztott termékek bármelyikét "
+"értékeli."
+
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:231
+msgid ""
+"Award store credit when the customer reviews any products in the selected "
+"product categories."
+msgstr ""
+"Adjon boltjóváírást, amikor a vásárló a kiválasztott termékkategóriák "
+"bármelyik termékét értékeli."
+
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:267
+msgid "Verified purchase required"
+msgstr "Igazolt vásárlás szükséges"
+
+#: src/Admin/Screens/Store_Credit/Milestones_Screen.php:268
+msgid "Only reward reviews for products the customer has purchased"
+msgstr "Csak a vásárló által megvásárolt termékek értékelését jutalmazza"
+
+#. translators: Context: Store credit configuration name
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:70
+msgid "Name"
+msgstr "Név"
+
+#. translators: Context: Store credit configuration status
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:72
+msgid "Status"
+msgstr "Állapot"
+
+#. translators: Context: Store credit financial amount (e.g. milestone,
+#. reward...) or percentage (e.g. cashback)
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:74
+#: src/Admin/User_Profiles.php:126
+msgid "Amount"
+msgstr "Összeg"
+
+#. translators: Context: Event name upon which store credit is awarded to a
+#. customer
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:76
+msgid "Awarded upon"
+msgstr "Jóváírva ekkor"
+
+#. translators: Context: Number of times a store credit has been awarded to
+#. customers
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:78
+msgid "Awarded times"
+msgstr "Jóváírások száma"
+
+#. translators: Context: Total amount of store credit awarded to customers
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:80
+msgid "Awarded total"
+msgstr "Összesen jóváírva"
+
+#. translators: Context: Button label to edit a credit configuration
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:157
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#. translators: Context: Button label to soft-delete a credit configuration
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:160
+msgid "Trash"
+msgstr "Lomtár"
+
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:163
+msgid "Credit configuration name"
+msgstr "Jóváírási konfiguráció neve"
+
+#. translators: Context: Button label to restore a credit configuration from
+#. the trash
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:169
+msgid "Restore"
+msgstr "Visszaállítás"
+
+#. translators: Context: Button label to permanently delete a credit
+#. configuration
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:171
+msgid "Permanently delete"
+msgstr "Végleges törlés"
+
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:247
+msgid "Limited to once per customer"
+msgstr "Ügyfelenként egyszeri"
+
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:249
+msgid "Limited to once per product"
+msgstr "Termékenként egyszeri"
+
+#. translators: Placeholders: %1$s - current count of awarded store credit
+#. across customers, %2$s - remaining available redemptions
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:268
+#, php-format
+msgid "%1$s out of %2$s"
+msgstr "%1$s / %2$s"
+
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:329
+msgid "Empty trash"
+msgstr "Lomtár ürítése"
+
+#. translators: Placeholder: %d - count of all credit configuration tyes
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:341
+#, php-format
+msgid "All (%d)"
+msgstr "Összes (%d)"
+
+#. translators: Placeholder: %d - count of trashed credit configurations
+#: src/Admin/Screens/Store_Credit/Rewards_Table.php:356
+#, php-format
+msgid "Trash (%d)"
+msgstr "Lomtár (%d)"
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:143
+msgid "A customer will receive store credit every time they review a product."
+msgstr "Az ügyfél minden egyes termékértékelés után boltjóváírást kap."
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:144
+msgid ""
+"A customer will receive store credit whe they review any product once only."
+msgstr ""
+"Az ügyfél boltjóváírást kap, ha bármely terméket csak egyszer értékel."
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:145
+msgid ""
+"A customer will receive store credit only once per product they review."
+msgstr ""
+"Az ügyfél termékenként csak egyszer kap boltjóváírást az értékelésért."
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:149
+msgid ""
+"A customer will receive store credit every time they pay for an eligible "
+"order."
+msgstr ""
+"Az ügyfél minden alkalommal boltjóváírást kap, amikor egy jogosult rendelést"
+" kifizet."
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:150
+msgid ""
+"A customer will receive store credit only once for an eligible order they "
+"have paid for."
+msgstr ""
+"Az ügyfél egy jogosult, kifizetett rendelésért csak egyszer kap "
+"boltjóváírást."
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:151
+msgid ""
+"A customer will receive store credit only once for each eligible product "
+"they purchase in any order."
+msgstr ""
+"Az ügyfél minden egyes jogosult, megvásárolt termék után csak egyszer kap "
+"boltjóváírást bármely rendelésben."
+
+#. translators: Placeholders: %1$s - date, %2$s - time
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:188
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s ekkor: %2$s"
+
+#. translators: Placeholder: %1$s - label of the credit type (e.g. "Cashback",
+#. "Milestone", "Reward", etc.), %2$s - opening <a> link tag, %3$s closning
+#. </a> link tag
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:300
+#, php-format
+msgid "1 %1$s moved to trash. %2$sUndo%3$s"
+msgstr "1 %1$s a lomtárba helyezve. %2$sVisszavonás%3$s"
+
+#. translators: Placeholder: %s - label of the credit type (e.g. "Cashback",
+#. "Milestone", "Reward", etc.)
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:303
+#, php-format
+msgid "Could not move %s to trash."
+msgstr "Nem sikerült a(z) %s lomtárba helyezése."
+
+#. translators: Placeholder: %s - label of the credit type (e.g. "Cashback",
+#. "Milestone", "Reward", etc.)
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:329
+#, php-format
+msgid "1 %s restored from trash."
+msgstr "1 %s visszaállítva a lomtárból."
+
+#. translators: Placeholder: %s - label of the credit type (e.g. "Cashback",
+#. "Milestone", "Reward", etc.)
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:332
+#, php-format
+msgid "Could not restore %s from trash."
+msgstr "Nem sikerült a(z) %s visszaállítása a lomtárból."
+
+#. translators: Placeholder: %s - label of the credit type (e.g. "Cashback",
+#. "Milestone", "Reward", etc.)
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:358
+#, php-format
+msgid "%s permanently deleted"
+msgstr "%s véglegesen törölve"
+
+#. translators: Placeholder: %s - label of the credit type (e.g. "Cashback",
+#. "Milestone", "Reward", etc.)
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:361
+#, php-format
+msgid "Could not delete %s permanently."
+msgstr "Nem sikerült a(z) %s végleges törlése."
+
+#. translators: Placeholder: %s - label of the credit type (e.g. "Cashback",
+#. "Milestone", "Reward", etc.)
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:385
+#, php-format
+msgid "No %s permanently deleted."
+msgstr "Egyetlen %s sem került véglegesen törlésre."
+
+#. translators: Placeholder: %d - number of deleted items, %s - label of the
+#. credit type (e.g. "Cashback", "Milestone", "Reward", etc.)
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:389
+#, php-format
+msgid "%1$d %2$s permanently deleted."
+msgid_plural "%1$d %2$s permanently deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:425
+msgid "Configuration"
+msgstr "Konfiguráció"
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:433
+msgid "Details"
+msgstr "Részletek"
+
+#. translators: Placeholder: %s - singular name of the store credit type being
+#. created
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:474
+#, php-format
+msgid "%s name"
+msgstr "%s neve"
+
+#. translators: Context: Label for the store credit label input field
+#. (indicates how the store credit will be displayed in the frontend)
+#. translators: Context: Label used to describe store credit in the frontend
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:477
+#: src/System_Status_Report.php:99
+msgid "Store credit label"
+msgstr "Boltjóváírás címkéje"
+
+#. translators: Context: Store credit configuration rules
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:523
+msgid "Eligibility"
+msgstr "Jogosultság"
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:607
+msgid ""
+"Customers will be awarded store credit as configured while its status is "
+"active."
+msgstr ""
+"Amíg az állapota aktív, az ügyfelek a beállítások szerint kapnak "
+"boltjóváírást."
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:609
+msgid ""
+"This store credit resource is deplete and it cannot be awarded to customers "
+"because it has reached its maximum usage limit. Increase the limit to "
+"reactivate it."
+msgstr ""
+"Ez a boltjóváírási erőforrás kimerült, és nem adható az ügyfeleknek, mert "
+"elérte a maximális felhasználási korlátot. A korlát növelésével aktiválható "
+"újra."
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:613
+msgid "Status:"
+msgstr "Állapot:"
+
+#. translators: Placeholder: %s - label of the credit type (e.g. "Cashback",
+#. "Milestone", "Reward", etc.)
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:643
+#, php-format
+msgid ""
+"The number of times this store credit %s has been awarded to customers, out "
+"of the maximum usage limit allowed by its configuration."
+msgstr ""
+"Ez a(z) %s boltjóváírás ennyiszer lett odaítélve az ügyfeleknek, a "
+"konfigurációban engedélyezett maximális felhasználási korláthoz viszonyítva."
+
+#. translators: Placeholder: %s - label of the credit type (e.g. "Cashback",
+#. "Milestone", "Reward", etc.)
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:650
+#, php-format
+msgid ""
+"The number of times this store credit %s has been awarded to customers."
+msgstr "Ez a(z) %s boltjóváírás ennyiszer lett odaítélve az ügyfeleknek."
+
+#. translators: Placeholder: %s - label of the credit type (e.g. "Cashback",
+#. "Milestone", "Reward", etc.)
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:658
+#, php-format
+msgid "The total amount of store credit awarded to customers from this %s."
+msgstr "Az ügyfeleknek ebből a(z) %s-ből jóváírt boltjóváírás teljes összege."
+
+#. translators: Context: Follows number of times store credit has been awarded
+#. to customers
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:664
+msgid "Awarded times:"
+msgstr "Jóváírások száma:"
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:665
+msgid "Total awarded:"
+msgstr "Összesen jóváírva:"
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:666
+msgid "Created on:"
+msgstr "Létrehozva:"
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:667
+msgid "Last modified:"
+msgstr "Utoljára módosítva:"
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:690
+msgid "Move to trash"
+msgstr "Áthelyezés a lomtárba"
+
+#. translators: Context: Button to create or update a credit configuration
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:700
+msgid "Create"
+msgstr "Létrehozás"
+
+#. translators: Context: Button to create or update a credit configuration
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:700
+msgid "Update"
+msgstr "Frissítés"
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:727
+msgid ""
+"Set the value of the store credit and choose the event that will trigger the"
+" reward."
+msgstr ""
+"Állítsa be a boltjóváírás értékét, és válassza ki az eseményt, amely "
+"kiváltja a jutalmat."
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:735
+msgid "Amount type"
+msgstr "Összeg típusa"
+
+#. translators: Placeholder: %s - currency symbol for the store credit amount
+#. to be specified afterwards
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:741
+#, php-format
+msgid "Fixed (%s)"
+msgstr "Fix (%s)"
+
+#. translators: Context: percentage value of the store credit amount to be
+#. specified afterwards
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:743
+msgid "Percentage (%)"
+msgstr "Százalék (%)"
+
+#. translators: Context: Percentage amount of store credit awarded to
+#. customers
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:753
+msgid "Amount (%)"
+msgstr "Összeg (%)"
+
+#. translators: Placeholder: %s - label of the credit type (e.g. "Cashback",
+#. "Milestone", "Reward", etc.)
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:759
+#, php-format
+msgid ""
+"Percentage amount awarded as store credit to customers that meet the "
+"conditions defined by the %s eligibility rules."
+msgstr ""
+"A %s jogosultsági szabályai által meghatározott feltételeknek megfelelő "
+"ügyfeleknek boltjóváírásként jóváírt százalékos összeg."
+
+#. translators: Placeholder: %s - currency symbol, in the context of store
+#. credit amount awarded to customers
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:766
+#, php-format
+msgid "Amount (%s)"
+msgstr "Összeg (%s)"
+
+#. translators: Placeholder: %s - label of the credit type (e.g. "Cashback",
+#. "Milestone", "Reward", etc.)
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:772
+#, php-format
+msgid ""
+"Fixed amount awarded as store credit to customers that meet the conditions "
+"defined by the %s eligibility rules."
+msgstr ""
+"A %s jogosultsági szabályai által meghatározott feltételeknek megfelelő "
+"ügyfeleknek boltjóváírásként jóváírt fix összeg."
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:778
+msgid "Award cap"
+msgstr "Jutalomkorlát"
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:782
+msgid ""
+"Choose whether to limit the number of times this store credit can be awarded"
+" to customers."
+msgstr ""
+"Válassza ki, hogy korlátozza-e, hányszor ítélhető oda ez a boltjóváírás az "
+"ügyfeleknek."
+
+#. translators: Placeholder: %s - label of the credit type (e.g. "Cashback",
+#. "Milestone", "Reward", etc.)
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:787
+#, php-format
+msgid "Keep awarding this %s indefinitely"
+msgstr "Ezt a(z) %s korlátlanul lehet odaítélni"
+
+#. translators: Placeholder: %s - label of the credit type (e.g. "Cashback",
+#. "Milestone", "Reward", etc.)
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:792
+#, php-format
+msgid "Limit the number of times the %s will trigger in the shop"
+msgstr "Korlátozza, hányszor aktiválódhat a(z) %s az áruházban"
+
+#. translators: Context: Limit to the number of times store credit can be
+#. awarded to customers
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:801
+msgid "Maximum awards"
+msgstr "Jutalmak maximális száma"
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:805
+msgid ""
+"The maximum number of times the store credit can be awarded across all "
+"customers until depletion."
+msgstr ""
+"A boltjóváírás odaítélésének maximális száma minden ügyfélre együtt, a "
+"kimerülésig."
+
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:814
+msgid "Award trigger"
+msgstr "Jutalom kiváltó eseménye"
+
+#. translators: Placeholder: %s - label of the credit type (e.g. "Cashback",
+#. "Milestone", "Reward", etc.)
+#: src/Admin/Screens/Store_Credit/Reward_Screen.php:841
+#, php-format
+msgid "%s successfully saved."
+msgstr "%s sikeresen mentve."
+
+#. translators: Placeholder: %s - Label used to describe store credit, e.g.
+#. "Store credit" by default
+#: src/Admin/User_Profiles.php:134
+#, php-format
+msgid "The amount of %s this user can use to purchase items."
+msgstr "Az a %s-mennyiség, amelyet ez a felhasználó vásárlásra felhasználhat."
+
+#: src/Admin/User_Profiles.php:173
+msgid "Store credit manually increased by a shop manager."
+msgstr "Boltjóváírás kézi növelése üzletvezető által."
+
+#: src/Admin/User_Profiles.php:183
+msgid "Store credit manually decreased by a shop manager."
+msgstr "Boltjóváírás kézi csökkentése üzletvezető által."
+
+#. translators: Placeholder: %s - Label used to describe store credit, e.g.
+#. "Store credit" (default)
+#: src/API/Store/Cart_Extension_Endpoint.php:188
+#: src/API/Store/Cart_Extension_Endpoint.php:216
+#, php-format
+msgid "Invalid request data to handle %s."
+msgstr "Érvénytelen kérésadatok a(z) %s kezeléséhez."
+
+#. translators: Placeholder: %s - Label used to describe store credit, e.g.
+#. "Store credit" (default)
+#: src/API/Store/Cart_Extension_Endpoint.php:194
+#, php-format
+msgid "Session not available to handle %s."
+msgstr "A munkamenet nem érhető el a(z) %s kezeléséhez."
+
+#. translators: Placeholder: %s - Label used to describe store credit, e.g.
+#. "Store credit" (default)
+#: src/API/Store/Cart_Extension_Endpoint.php:199
+#, php-format
+msgid "Partial payments using %s are not allowed."
+msgstr "A %s használatával részleges fizetés nem engedélyezett."
+
+#. translators: Placeholder: %s - Label used to describe store credit, e.g.
+#. "Store credit" (default)
+#: src/API/Store/Cart_Extension_Endpoint.php:204
+#, php-format
+msgid "Customer is not eligible to use %s."
+msgstr "Az ügyfél nem jogosult a %s használatára."
+
+#: src/API/Store/Cart_Extension_Endpoint.php:232
+msgid "The current state of store credit for the current cart session."
+msgstr "A boltjóváírás aktuális állapota a jelenlegi kosármunkamenethez."
+
+#: src/API/Store/Cart_Extension_Endpoint.php:238
+msgid "The ID of the user."
+msgstr "A felhasználó azonosítója."
+
+#: src/API/Store/Cart_Extension_Endpoint.php:243
+msgid "Whether partial payments using store credit are allowed."
+msgstr "Engedélyezettek-e a részleges fizetések boltjóváírással."
+
+#: src/API/Store/Cart_Extension_Endpoint.php:248
+msgid "Whether the store credit payment gateway is available."
+msgstr "Elérhető-e a boltjóváírás fizetési átjáró."
+
+#: src/API/Store/Cart_Extension_Endpoint.php:253
+msgid "Whether the cart contains a store credit deposit."
+msgstr "Tartalmaz-e a kosár boltjóváírás-befizetést."
+
+#: src/API/Store/Cart_Extension_Endpoint.php:258
+msgid "The store credit balance available to the current user."
+msgstr "Az aktuális felhasználó számára elérhető boltjóváírás-egyenleg."
+
+#: src/API/Store/Cart_Extension_Endpoint.php:262
+msgid "The amount of store credit available."
+msgstr "A rendelkezésre álló boltjóváírás összege."
+
+#: src/API/Store/Cart_Extension_Endpoint.php:271
+msgid "The store credit used in the current session."
+msgstr "A jelenlegi munkamenetben felhasznált boltjóváírás."
+
+#: src/API/Store/Cart_Extension_Endpoint.php:275
+msgid "The amount of store credit used, in cents."
+msgstr "A felhasznált boltjóváírás összege, centben."
+
+#: src/API/Store/Cart_Extension_Endpoint.php:284
+msgid "The store credit remaining to be used in the current session."
+msgstr "A jelenlegi munkamenetben még felhasználható boltjóváírás."
+
+#: src/API/Store/Cart_Extension_Endpoint.php:288
+msgid "The amount of store credit remaining, in cents."
+msgstr "A fennmaradó boltjóváírás összege, centben."
+
+#. translators: Placeholders: %1$s - formatted store credit amount HTML, %2$s
+#. - store credit label
+#: src/Cart.php:203
+#, php-format
+msgid "Earn %1$s in %2$s for placing this order!"
+msgstr "Szerezzen %1$s-t %2$s formájában a rendelés leadásáért!"
+
+#. translators: Placeholders: %1$s - Store credit amount, %2$s - Label used to
+#. describe store credits (default: "Store credit")
+#: src/Cart.php:467
+#, php-format
+msgid "Use <strong>%1$s</strong> from your %2$s balance."
+msgstr "A %2$s egyenlegéből használjon fel <strong>%1$s</strong>-t."
+
+#. translators: Context: Button label to remove applied store credit from cart
+#: src/Cart.php:492
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: src/Gateway.php:119
+msgid ""
+"This gateway allows customers to pay for an order at checkout using their "
+"available store credit."
+msgstr ""
+"Ez az átjáró lehetővé teszi, hogy a vásárlók a pénztárnál a rendelkezésre "
+"álló boltjóváírásukkal fizessenek a rendelésért."
+
+#. translators: Placeholder: %s - literal {store_credit_balance} merge tag
+#. translators: Placeholder: %s - Store credit balance placeholder
+#: src/Gateway.php:132
+#: src/Lifecycle/Migrations/Upgrade_To_Version_4_0_0.php:126
+#, php-format
+msgid "Available balance: %s"
+msgstr "Elérhető egyenleg: %s"
+
+#. translators: Context: Payment gateway enabled or disabled status
+#: src/Gateway.php:169
+msgid "Enabled"
+msgstr "Engedélyezve"
+
+#: src/Gateway.php:172
+msgid "Enable store credit"
+msgstr "Boltjóváírás engedélyezése"
+
+#. translators: Context: Payment gateway title
+#: src/Gateway.php:176
+msgid "Title"
+msgstr "Cím"
+
+#: src/Gateway.php:178
+msgid ""
+"This controls the payment gateway title which the user sees during checkout."
+msgstr ""
+"Ez szabályozza a fizetési átjáró címét, amelyet a felhasználó a pénztárnál "
+"lát."
+
+#. translators: Placeholders: %1$s - opening HTML link tag, %2$s - closing
+#. HTML link tag
+#: src/Gateway.php:183
+#, php-format
+msgid ""
+"This value can be set and overridden by defining the customer-facing label "
+"for store credit in the plugin's %1$sgeneral settings%2$s."
+msgstr ""
+"Ez az érték beállítható és felülírható a bővítmény %1$sgeneral settings%2$s "
+"részében a vásárlók felé látható bolti egyenleg címke meghatározásával."
+
+#: src/Gateway.php:192
+msgid "Description"
+msgstr "Leírás"
+
+#. translators: Placeholder: %s - Literal {store_credit_balance} merge tag
+#: src/Gateway.php:196
+#, php-format
+msgid ""
+"Payment method description that the customer will see on your checkout. "
+"Available placeholder: %s."
+msgstr ""
+"A fizetési mód leírása, amelyet a vásárló a pénztárnál lát. Elérhető "
+"helyettesítő: %s."
+
+#: src/Gateway.php:197
+msgid "Displays the current customer's store credit balance"
+msgstr "Megjeleníti az aktuális vásárló bolti egyenlegét"
+
+#: src/Gateway.php:204
+msgid "Partial payment"
+msgstr "Részleges fizetés"
+
+#: src/Gateway.php:205
+msgid ""
+"Allow customers to apply available store credit and pay the difference via "
+"another gateway"
+msgstr ""
+"Engedélyezze, hogy a vásárlók felhasználják a rendelkezésre álló bolti "
+"egyenleget, és a különbözetet egy másik átjárón keresztül fizessék ki"
+
+#: src/Gateway.php:206
+msgid ""
+"If disabled, users must pay for the entire order using store credit: if they"
+" don't have enough store credit, the gateway will not be available at "
+"checkout."
+msgstr ""
+"Ha le van tiltva, a felhasználóknak a teljes rendelést bolti egyenleggel "
+"kell kifizetniük: ha nincs elegendő bolti egyenlegük, az átjáró nem lesz "
+"elérhető a pénztárban."
+
+#: src/Gateway.php:354
+msgid "You must be logged in to use this payment method."
+msgstr "Ennek a fizetési módnak a használatához be kell jelentkeznie."
+
+#. translators: Placeholder: %s - Error message
+#: src/Gateway.php:357 src/Gateway.php:368 src/Gateway.php:385
+#: src/Gateway.php:416 src/Orders.php:160
+#, php-format
+msgid "Payment error: %s"
+msgstr "Fizetési hiba: %s"
+
+#: src/Gateway.php:365
+msgid "Order not found."
+msgstr "A rendelés nem található."
+
+#. translators: Placeholder: %s - Title of the payment gateway an order was
+#. paid via
+#: src/Gateway.php:538
+#, php-format
+msgid "Via %s"
+msgstr "A következőn keresztül: %s"
+
+#. translators: Placeholders: %1$s - Product name in cart (cart item), %2$s:
+#. Label for store credit (default: "Store credit")
+#: src/Integrations/PayPal.php:88
+#, php-format
+msgid "%1$s (with tax, discount, and %2$s applied)"
+msgstr "%1$s (az adó, a kedvezmény és a %2$s alkalmazásával)"
+
+#. translators: Placeholder: %s - May output the shop manager ID in
+#. parenthesis or empty string when undefined
+#: src/Lifecycle/Database.php:300
+#, php-format
+msgid ""
+"Store credit manually increased by a shop manager %s using "
+"update_user_meta() (deprecated)."
+msgstr ""
+"A bolti egyenleget %s boltvezető manuálisan növelte az update_user_meta() "
+"használatával (elavult)."
+
+#. translators: Placeholder: %s - May output the shop manager ID in
+#. parenthesis or empty string when undefined
+#: src/Lifecycle/Database.php:313
+#, php-format
+msgid ""
+"Store credit manually decreased by a shop manager %s using "
+"update_user_meta() (deprecated)."
+msgstr ""
+"A bolti egyenleget %s boltvezető manuálisan csökkentette az "
+"update_user_meta() használatával (elavult)."
+
+#: src/Lifecycle/Migrations/Upgrade_To_Version_4_0_0.php:163
+msgid "Account funds on registration"
+msgstr "Számlaegyenleg regisztrációkor"
+
+#. translators: Placeholders: %1$s - opening <a> HTML link tag, %2$s - closing
+#. </a> HTML link tag
+#: src/Lifecycle/Milestones/Customer_Paid_With_Store_Credit.php:48
+#, php-format
+msgid ""
+"Success! %1$sA customer just paid for their order using store credit!%2$s"
+msgstr ""
+"Siker! %1$sEgy vásárló épp bolti egyenleggel fizette ki a rendelését!%2$s"
+
+#: src/Lifecycle/Milestones/Customer_Paid_With_Store_Credit.php:63
+msgid ""
+"Liking the experience so far? It helps us a bunch if you tell other "
+"WooCommerce users what made it work for you."
+msgstr ""
+"Eddig tetszik a használat? Sokat segít, ha elmondja más WooCommerce "
+"felhasználóknak, miért működött Önnek."
+
+#: src/Lifecycle/Milestones/Customer_Paid_With_Store_Credit.php:64
+msgid "Leave a quick review"
+msgstr "Írjon egy gyors értékelést"
+
+#: src/Lifecycle/Milestones/First_Store_Credit_Awarded.php:43
+msgid "Nice! A customer was awarded store credit!"
+msgstr "Remek! Egy vásárló bolti egyenleget kapott!"
+
+#. translators: Placeholders: %1$s - opening anchor tag, %2$s - closing anchor
+#. tag, %3$s - opening anchor tag, %4$s - closing anchor tag
+#: src/Lifecycle/Milestones/First_Store_Credit_Awarded.php:57
+#, php-format
+msgid ""
+"They can use the store credit they earned to pay for an order. Excited? "
+"Having questions or feedback? %1$sLeave a review%2$s or %3$sget in touch "
+"with us%4$s!"
+msgstr ""
+"A megszerzett bolti egyenleggel kifizethetnek egy rendelést. Izgatott? "
+"Kérdése vagy visszajelzése van? %1$sHagyjon értékelést%2$s vagy %3$slépjen "
+"kapcsolatba velünk%4$s!"
+
+#: src/Lifecycle/Milestones/First_Store_Credit_Reward_Configured.php:43
+msgid "Awesome, your first store credit is live!"
+msgstr "Szuper, az első bolti egyenlege él!"
+
+#. translators: Placeholders: %1$s - opening <a> HTML link tag, %2$s - closing
+#. </a> HTML link tag
+#: src/Lifecycle/Milestones/First_Store_Credit_Reward_Configured.php:57
+#, php-format
+msgid ""
+"Want a say in what we build? %1$sJoin our newsletter%2$s for roadmap "
+"updates, early access, and the occasional bird pun. Then reply to the "
+"welcome email and tell us what you’d love to see next."
+msgstr ""
+"Szeretne beleszólni, mit építünk? %1$sIratkozzon fel hírlevelünkre%2$s "
+"ütemtervfrissítésekért, korai hozzáférésért és alkalmankénti madaras "
+"szóviccekért. Ezután válaszoljon az üdvözlő e-mailre, és írja meg, mit látna"
+" szívesen legközelebb."
+
+#: src/Orders.php:200
+msgid "Customer bought store credit top-up."
+msgstr "A vásárló bolti egyenleg-feltöltést vásárolt."
+
+#: src/Orders.php:202
+msgid "Customer bought store credit deposit."
+msgstr "A vásárló bolti egyenleg-befizetést vásárolt."
+
+#. translators: Placeholders: %1$s - Store credit amount, %2$s - Label used to
+#. describe store credit, e.g. "Store credit"
+#: src/Orders.php:216
+#, php-format
+msgid "Added %1$s in %2$s to the customer's balance."
+msgstr "Hozzáadtuk %1$s összeget %2$s pénznemben a vásárló egyenlegéhez."
+
+#. translators: Placeholders: %1$s - Store credit amount, %2$s - Label used to
+#. describe store credit, e.g. "Store credit"
+#: src/Orders.php:324
+#, php-format
+msgid ""
+"Removed %1$s in %2$s from the customer's balance used to pay for the order."
+msgstr ""
+"Eltávolítottuk %1$s összeget %2$s pénznemben a vásárló egyenlegéből, a "
+"rendelés kifizetésére felhasználva."
+
+#. translators: Placeholders: %1$s - Store credit amount, %2$s - Label used to
+#. describe store credit, e.g. "Store credit"
+#: src/Orders.php:375
+#, php-format
+msgid ""
+"Restored %1$s in %2$s from the customer's balance after the order was "
+"cancelled."
+msgstr ""
+"Visszaállítottunk %1$s összeget %2$s pénznemben a vásárló egyenlegére, "
+"miután a rendelés törlésre került."
+
+#. translators: Placeholders: %1$s - Store credit amount, %2$s - Label used to
+#. describe store credit, e.g. "Store credit"
+#: src/Orders.php:443
+#, php-format
+msgid "Granted %1$s in %2$s to the customer after refunding order items."
+msgstr ""
+"A rendelési tételek visszatérítése után %1$s összeget %2$s pénznemben adtunk"
+" a vásárlónak."
+
+#. translators: Placeholder: %s - label used to describe store credit to
+#. customers, e.g. "store credit"
+#: src/Orders/Order.php:112
+#, php-format
+msgid "Unable to determine the order to pay with %s."
+msgstr ""
+"Nem sikerült meghatározni, melyik rendelést kell %s használatával kifizetni."
+
+#. translators: Placeholder: %s - label used to describe store credit to
+#. customers, e.g. "store credit"
+#: src/Orders/Order.php:119
+#, php-format
+msgid ""
+"A registered customer with a valid email is required to pay for the order "
+"using %s."
+msgstr ""
+"A rendelés %s használatával történő kifizetéséhez regisztrált, érvényes "
+"e-mail-címmel rendelkező vásárló szükséges."
+
+#. translators: Placeholder: %s - label used to describe store credit, e.g.
+#. "Insufficient store credit amount".
+#: src/Orders/Order.php:126
+#, php-format
+msgid "Insufficient %s amount to pay for the order."
+msgstr "Nem áll rendelkezésre elegendő %s összeg a rendelés kifizetéséhez."
+
+#. translators: Placeholders: %1$s - Store credit label, %2$s - Amount paid
+#. using store credit
+#: src/Orders/Order.php:142
+#, php-format
+msgid "Customer paid with %1$s: %2$s."
+msgstr "A vásárló %1$s használatával fizetett: %2$s."
+
+#: src/Plugin.php:137 src/System_Status_Report.php:47
+#: assets/js/blocks/wc-account-funds-cart-checkout-block-partial-payment.js:1
+#: assets/js/blocks/wc-account-funds-cart-checkout-block.js:1
+msgid "Account Funds"
+msgstr "Számlaegyenleg"
+
+#. translators: Placeholders: %1$s - formatted store credit amount HTML, %2$s
+#. - store credit label
+#: src/Products.php:206
+#, php-format
+msgid "Earn %1$s in %2$s for reviewing this product!"
+msgstr ""
+"Keressen %2$s pénznemben %1$s összeget ennek a terméknek az értékeléséért!"
+
+#. translators: Placeholders: %1$s - formatted store credit amount HTML, %2$s
+#. - store credit label
+#: src/Products.php:297
+#, php-format
+msgid "Earn up to %1$s in %2$s upon purchase!"
+msgstr "Vásárláskor akár %2$s pénznemben %1$s összeget is kereshet!"
+
+#. translators: Placeholders: %s - Account funds label, e.g. "Account funds"
+#. translators: Placeholder: %s - Label used to represent store credit (e.g.
+#. "Store credit top-up")
+#: src/Products/Store_Credit_Top_Up.php:98
+#: src/Settings/Store_Credit_Account_Top_Up.php:298
+#, php-format
+msgid "%s top-up"
+msgstr "%s feltöltés"
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:70
+msgid "Enable \"My Account\" top-up"
+msgstr "\"My Account\" feltöltés engedélyezése"
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:71
+msgid "Allow customers to top up their store credit via their account page"
+msgstr ""
+"Engedélyezze, hogy a vásárlók a fiókoldalukon keresztül feltöltsék bolti "
+"egyenlegüket"
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:77
+msgid "Allow rewards"
+msgstr "Jutalmak engedélyezése"
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:78
+msgid "Top-up orders may trigger eligible rewards, when applicable"
+msgstr ""
+"A feltöltési rendelések adott esetben jogosult jutalmakat válthatnak ki"
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:79
+msgid ""
+"For example, disabling this will prevent store credit cashback to be awarded"
+" to customers that top-up."
+msgstr ""
+"Például ennek letiltása megakadályozza, hogy a feltöltő vásárlóknak bolti "
+"egyenleg-visszatérítés kerüljön odaítélésre."
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:85
+msgid "Minimum top-up"
+msgstr "Minimális feltöltés"
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:86
+msgid ""
+"The minimum amount of store credit a customer is allowed to top up from "
+"their account page."
+msgstr ""
+"A bolti egyenleg minimális összege, amelyet a vásárló a fiókoldaláról "
+"feltölthet."
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:92
+msgid "Maximum top-up"
+msgstr "Maximális feltöltés"
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:93
+msgid ""
+"The maximum amount of store credit a customer is allowed to top up from "
+"their account page."
+msgstr ""
+"A bolti egyenleg maximális összege, amelyet a vásárló a fiókoldaláról "
+"feltölthet."
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:99
+msgid "Top-up image type"
+msgstr "Feltöltés képtípusa"
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:100
+msgid "The type of image to display for the top-up button."
+msgstr "A feltöltés gombhoz megjelenítendő kép típusa."
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:105
+msgid "Use default image"
+msgstr "Alapértelmezett kép használata"
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:106
+msgid "Use a custom image"
+msgstr "Egyéni kép használata"
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:112
+msgid "Top-up image"
+msgstr "Feltöltés képe"
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:114
+msgid ""
+"Choose or upload an image from the media gallery to use as the image shown "
+"in cart when the customer adds store credit for top-up."
+msgstr ""
+"Válasszon vagy töltsön fel egy képet a médiatárból, amely a kosárban jelenik"
+" meg, amikor a vásárló bolti egyenleget ad hozzá feltöltésre."
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:144
+msgid "Top-up image used in the cart"
+msgstr "A kosárban használt feltöltési kép"
+
+#: src/Settings/Store_Credit_Account_Top_Up.php:145
+msgid "Select image"
+msgstr "Kép kiválasztása"
+
+#: src/Settings/Store_Credit_Label.php:60
+msgid "Singular label"
+msgstr "Egyes számú címke"
+
+#: src/Settings/Store_Credit_Label.php:61
+msgid ""
+"The label shown to customers when referring to store credit in its singular "
+"form."
+msgstr ""
+"Az a címke, amely egyes számban hivatkozva jelenik meg a bolti egyenlegre."
+
+#: src/Settings/Store_Credit_Label.php:68
+msgid "Plural label"
+msgstr "Többes számú címke"
+
+#: src/Settings/Store_Credit_Label.php:69
+msgid ""
+"The label shown to customers when referring to store credit in its plural "
+"form."
+msgstr ""
+"Az a címke, amely többes számban hivatkozva jelenik meg a bolti egyenlegre."
+
+#: src/Store_Credit/Eligible_Orders_Group.php:81
+msgid "Order contains specific products"
+msgstr "A rendelés meghatározott termékeket tartalmaz"
+
+#: src/Store_Credit/Eligible_Orders_Group.php:83
+msgid "Order does not contain specific products"
+msgstr "A rendelés nem tartalmaz meghatározott termékeket"
+
+#: src/Store_Credit/Eligible_Orders_Group.php:85
+msgid "Order contains product categories"
+msgstr "A rendelés termékkategóriákat tartalmaz"
+
+#: src/Store_Credit/Eligible_Orders_Group.php:87
+msgid "Order does not contain product categories"
+msgstr "A rendelés nem tartalmaz termékkategóriákat"
+
+#: src/Store_Credit/Eligible_Orders_Group.php:89
+msgid "Order contains product types"
+msgstr "A rendelés terméktípusokat tartalmaz"
+
+#: src/Store_Credit/Eligible_Orders_Group.php:91
+msgid "Order does not contain product types"
+msgstr "A rendelés nem tartalmaz terméktípusokat"
+
+#: src/Store_Credit/Eligible_Orders_Group.php:94
+msgid "Any order"
+msgstr "Bármely rendelés"
+
+#: src/Store_Credit/Eligible_Products_Group.php:67
+msgid "Some products"
+msgstr "Néhány termék"
+
+#: src/Store_Credit/Eligible_Products_Group.php:69
+msgid "Some product categories"
+msgstr "Néhány termékkategória"
+
+#: src/Store_Credit/Eligible_Products_Group.php:72
+msgid "All products"
+msgstr "Minden termék"
+
+#. translators: Context: Store credit status
+#: src/Store_Credit/Reward_Status.php:63
+msgid "Active"
+msgstr "Aktív"
+
+#. translators: Context: Store credit status
+#: src/Store_Credit/Reward_Status.php:66
+msgid "Depleted"
+msgstr "Kimerült"
+
+#. translators: Context: Store credit status
+#: src/Store_Credit/Reward_Status.php:70
+msgid "Inactive"
+msgstr "Inaktív"
+
+#. translators: Placeholder: %s - Store credit type label
+#: src/Store_Credit/Reward_Status.php:89
+#, php-format
+msgid ""
+"This %s configuration is active and will be awarded to customers when its "
+"conditions are met."
+msgstr ""
+"Ez a %s konfiguráció aktív, és feltételeinek teljesülésekor odaítélésre "
+"kerül a vásárlóknak."
+
+#. translators: Placeholder: %s - Store credit type label
+#: src/Store_Credit/Reward_Status.php:92
+#, php-format
+msgid ""
+"This %s configuration has reached its award limit and will no longer be "
+"awarded to customers."
+msgstr ""
+"Ez a %s konfiguráció elérte a jutalmi limitjét, és többé nem kerül "
+"odaítélésre a vásárlóknak."
+
+#. translators: Placeholder: %s - Store credit type label
+#: src/Store_Credit/Reward_Status.php:96
+#, php-format
+msgid ""
+"This %s configuration is inactive and will not be awarded to customers."
+msgstr "Ez a %s konfiguráció inaktív, és nem kerül odaítélésre a vásárlóknak."
+
+#: src/Store_Credit/Reward_Type.php:67
+msgid "Milestone"
+msgstr "Mérföldkő"
+
+#: src/Store_Credit/Reward_Type.php:69
+msgid "Reward"
+msgstr "Jutalom"
+
+#: src/Store_Credit/Reward_Type.php:88
+msgid "Rewards"
+msgstr "Jutalmak"
+
+#: src/Store_Credit/Wallet.php:351
+msgid "Cannot award store credit to a user account without an email."
+msgstr ""
+"Nem lehet bolti egyenleget odaítélni e-mail nélküli felhasználói fióknak."
+
+#: src/Store_Credit/Wallet.php:359
+msgid "Credit transactions should have a positive amount."
+msgstr "A jóváírási tranzakciók összege legyen pozitív."
+
+#: src/Store_Credit/Wallet.php:384
+msgid "Cannot debit a user account without an email."
+msgstr "Nem lehet terhelni e-mail nélküli felhasználói fiókot."
+
+#: src/Store_Credit/Wallet.php:397
+msgid "Cannot debit an amount larger than the available store credit balance."
+msgstr ""
+"Nem lehet a rendelkezésre álló bolti egyenlegnél nagyobb összeget terhelni."
+
+#: src/Store_Credit/Wallet/Transaction_Event.php:93
+msgid "User action"
+msgstr "Felhasználói művelet"
+
+#: src/Store_Credit/Wallet/Transaction_Event.php:95
+msgid "Customer account registration"
+msgstr "Vásárlói fiók regisztrációja"
+
+#: src/Store_Credit/Wallet/Transaction_Event.php:97
+msgid "Product purchase"
+msgstr "Termékvásárlás"
+
+#: src/Store_Credit/Wallet/Transaction_Event.php:99
+msgid "Product review"
+msgstr "Termékértékelés"
+
+#: src/Store_Credit/Wallet/Transaction_Event.php:101
+msgid "Order paid"
+msgstr "Rendelés kifizetve"
+
+#: src/Store_Credit/Wallet/Transaction_Event.php:103
+msgid "Order refunded"
+msgstr "Rendelés visszatérítve"
+
+#: src/Store_Credit/Wallet/Transaction_Event.php:105
+msgid "Order cancelled"
+msgstr "Rendelés törölve"
+
+#: src/Store_Credit/Wallet/Transaction_Event.php:107
+msgid "Data migration"
+msgstr "Adatmigráció"
+
+#: src/Store_Credit/Wallet/Transaction_Event.php:110
+msgid "Undefined event"
+msgstr "Nem definiált esemény"
+
+#: src/Store_Credit/Wallet/Transaction_Status.php:62
+msgid "Voided"
+msgstr "Érvénytelenítve"
+
+#: src/Store_Credit/Wallet/Transaction_Status.php:64
+msgid "Expired"
+msgstr "Lejárt"
+
+#: src/Store_Credit/Wallet/Transaction_Status.php:67
+msgid "Committed"
+msgstr "Véglegesített"
+
+#. translators: Placeholders: %1$s - Minimum store credit top-up amount, %2$s
+#. - Maximum store credit top-up amount
+#: src/System_Status_Report.php:75
+#, php-format
+msgid "Minimum: %1$s - Maximum: %2$s"
+msgstr "Minimum: %1$s - Maximum: %2$s"
+
+#: src/System_Status_Report.php:77
+msgid "No limit"
+msgstr "Nincs korlát"
+
+#: src/System_Status_Report.php:100
+msgid "Label used to display store credit in the frontend."
+msgstr ""
+"A bolti egyenleg megjelenítésére szolgáló címke a felhasználói felületen."
+
+#. translators: Placeholders: %1$s - Singular store credit label, %2$s -
+#. Plural store credit label
+#: src/System_Status_Report.php:102
+#, php-format
+msgid "Singular: \"%1$s\" - Plural: \"%2$s\""
+msgstr "Egyes szám: \"%1$s\" - Többes szám: \"%2$s\""
+
+#: src/System_Status_Report.php:107
+msgid "Gateway enabled"
+msgstr "Átjáró engedélyezve"
+
+#: src/System_Status_Report.php:108
+msgid "Whether the store credit gateway is enabled."
+msgstr "A bolti egyenleg átjáró engedélyezve van-e."
+
+#: src/System_Status_Report.php:114
+msgid "Partial payments enabled"
+msgstr "Részleges fizetések engedélyezve"
+
+#: src/System_Status_Report.php:115
+msgid "Whether customers can use store credit for partial payments."
+msgstr "A vásárlók használhatnak-e bolti egyenleget részfizetéshez."
+
+#: src/System_Status_Report.php:122
+msgid "Number of configured cashback awards."
+msgstr "Beállított pénzvisszatérítési jutalmak száma."
+
+#: src/System_Status_Report.php:135
+msgid "Number of configured milestone awards"
+msgstr "Beállított mérföldkő-jutalmak száma"
+
+#: src/System_Status_Report.php:147
+msgid "Top-up enabled"
+msgstr "Feltöltés engedélyezve"
+
+#: src/System_Status_Report.php:148
+msgid "Customers are allowed to top up store credit from their account page."
+msgstr "A vásárlók a fiókoldalukról feltölthetik a bolti egyenlegüket."
+
+#: src/System_Status_Report.php:163
+msgid "Top-up rewards allowed"
+msgstr "Feltöltések után járó jutalmak engedélyezve"
+
+#: src/System_Status_Report.php:164
+msgid "Whether top-ups are excluded from earning rewards."
+msgstr "A feltöltések ki vannak-e zárva a jutalomszerzésből."
+
+#. translators: Placeholders: %1$s is the amount of store credit, %2$s is the
+#. pluralized store credit label
+#: src/Users.php:90
+#, php-format
+msgid "You will receive up to %1$s in %2$s when you create your account!"
+msgstr "Fiók létrehozásakor akár %1$s-t kaphat %2$s formájában!"
+
+#: templates/myaccount/account-funds/topup-in-cart-notice.php:29
+msgid "View Cart"
+msgstr "Kosár megtekintése"
+
+#. translators: Placeholder: %s - Account funds top-up product title, e.g.
+#. "Account funds"
+#: templates/myaccount/account-funds/topup-in-cart-notice.php:32
+#, php-format
+msgid "You have \"%s\" in your cart."
+msgstr "A kosarában \"%s\" van."
+
+#: templates/myaccount/recent-deposits.php:34
+msgid "Recent deposits"
+msgstr "Legutóbbi jóváírások"
+
+#. translators: Placeholder: %s: Label used to describe account funds
+#: templates/myaccount/topup-form.php:34
+#, php-format
+msgid "Top-up %s"
+msgstr "Feltöltés %s"
+
+#. translators: Placeholder: %s - Minimum account fund top-up amount
+#: templates/myaccount/topup-form.php:47
+#, php-format
+msgid "Minimum: <strong>%s</strong>."
+msgstr "Minimum: <strong>%s</strong>."
+
+#. translators: Placeholder: %s - Maximum account fund top-up amount
+#: templates/myaccount/topup-form.php:50
+#, php-format
+msgid "Maximum: <strong>%s</strong>."
+msgstr "Maximum: <strong>%s</strong>."
+
+#: templates/myaccount/topup-form.php:59
+msgid "Top-up"
+msgstr "Feltöltés"
+
+#: assets/js/blocks/wc-account-funds-cart-checkout-block-partial-payment.js:1
+#, js-format
+msgid "Use %s from your %s"
+msgstr "Használjon %s-t %s-ből"
+
+#: assets/js/blocks/wc-account-funds-cart-checkout-block-partial-payment.js:1
+msgctxt "failed to apply account funds to order"
+msgid ""
+"An error occurred, please try again or try an alternate form of payment."
+msgstr ""
+"Hiba történt, kérjük, próbálja újra, vagy válasszon másik fizetési módot."
+
+#: assets/js/blocks/wc-account-funds-cart-checkout-block-partial-payment.js:1
+#, js-format
+msgid "Remove %s"
+msgstr "Távolítsa el %s"
+
+#: assets/js/blocks/wc-account-funds-cart-checkout-block.js:1
+msgid "Available balance:"
+msgstr "Elérhető egyenleg:"

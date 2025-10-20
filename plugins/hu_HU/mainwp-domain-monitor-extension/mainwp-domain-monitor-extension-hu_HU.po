@@ -1,0 +1,870 @@
+# Hungarian translation for MainWP Domain Monitor Extension.
+# Copyright (C) 2025 MainWP
+# This file is distributed under the GPL license.
+# Translator Team <hello@hellowp.io>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: MainWP Domain Monitor Extension 5.1.3\n"
+"Report-Msgid-Bugs-To: support@hellowp.io\n"
+"POT-Creation-Date: 2025-10-19T20:49:28+00:00\n"
+"PO-Revision-Date: 2025-10-19 22:49\n"
+"Last-Translator: HelloWP <translate@hellowp.io>\n"
+"Language-Team: HelloWP <translate@hellowp.io>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: sinann-po-translator\n"
+"X-Plugin-Name: MainWP Domain Monitor Extension\n"
+"X-Plugin-Version: 5.1.3\n"
+
+#. Plugin Name of the plugin
+#: mainwp-domain-monitor-extension.php
+msgid "MainWP Domain Monitor Extension"
+msgstr "MainWP Domainfigyelő bővítmény"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: mainwp-domain-monitor-extension.php
+msgid "https://mainwp.com"
+msgstr "https://mainwp.com"
+
+#. Description of the plugin
+#: mainwp-domain-monitor-extension.php
+msgid ""
+"MainWP Domain Monitor Add-on lets you keep a watchful eye on your domains. "
+"It alerts you via email when monitored domains are nearing expiration."
+msgstr ""
+"A MainWP Domainfigyelő bővítmény segítségével szemmel tarthatja a "
+"domaineket. E-mailben értesít, amikor a figyelt domainek közelednek a "
+"lejárathoz."
+
+#. Author of the plugin
+#: mainwp-domain-monitor-extension.php
+#: templates/emails/mainwp-domain-monitor-notification-email.php:78
+msgid "MainWP"
+msgstr "MainWP"
+
+#: class/class-mainwp-domain-monitor-admin.php:153
+#: class/class-mainwp-domain-monitor-admin.php:794
+#: class/class-mainwp-domain-monitor-admin.php:1181
+#: class/class-mainwp-domain-monitor-hooks.php:87
+#: mainwp-domain-monitor-extension.php:137
+msgid "Domain Monitor"
+msgstr "Domainfigyelő"
+
+#: class/class-mainwp-domain-monitor-admin.php:178
+msgid "Undefined site id. Please, try again."
+msgstr "Meghatározatlan webhelyazonosító. Kérjük, próbálja újra."
+
+#: class/class-mainwp-domain-monitor-admin.php:213
+msgid "Dashboard"
+msgstr "Vezérlőpult"
+
+#: class/class-mainwp-domain-monitor-admin.php:214
+#: class/class-mainwp-domain-monitor-admin.php:252
+msgid "Settings"
+msgstr "Beállítások"
+
+#: class/class-mainwp-domain-monitor-admin.php:248
+#: class/class-mainwp-domain-monitor-dashboard.php:306
+msgid "Domain Info"
+msgstr "Domaininformáció"
+
+#: class/class-mainwp-domain-monitor-admin.php:250
+msgid "Edit Domain Info"
+msgstr "Domaininformáció szerkesztése"
+
+#: class/class-mainwp-domain-monitor-admin.php:322
+#, php-format
+msgid ""
+"Manage the Domain Monitor settings. For detailed information, review "
+"%1$shelp documentation%2$s."
+msgstr ""
+"A Domainfigyelő beállításainak kezelése. Részletes információkért tekintse "
+"át a %1$ssúgódokumentációt%2$s."
+
+#: class/class-mainwp-domain-monitor-admin.php:327
+msgid "Domain Profile Check Mode"
+msgstr "Domainprofil ellenőrzési mód"
+
+#: class/class-mainwp-domain-monitor-admin.php:329
+msgid "Manual domain information entry"
+msgstr "Domaininformációk kézi megadása"
+
+#: class/class-mainwp-domain-monitor-admin.php:330
+msgid ""
+"Activate this to input domain information manually when automatic retrieval "
+"fails."
+msgstr ""
+"Aktiválja ezt, ha az automatikus lekérés sikertelen, és kézzel szeretné "
+"megadni a domaininformációkat."
+
+#: class/class-mainwp-domain-monitor-admin.php:334
+msgid "Individual Site Domain Monitor Settings"
+msgstr "Egyéni webhely domainfigyelő beállításai"
+
+#: class/class-mainwp-domain-monitor-admin.php:336
+msgid "Overwrite general settings"
+msgstr "Általános beállítások felülírása"
+
+#: class/class-mainwp-domain-monitor-admin.php:337
+msgid "Enable to overwrite the general settings for this child site."
+msgstr ""
+"Engedélyezze az általános beállítások felülírását ennél a gyermek "
+"webhelynél."
+
+#: class/class-mainwp-domain-monitor-admin.php:345
+msgid "Domain Monitor Settings"
+msgstr "Domainfigyelő beállításai"
+
+#: class/class-mainwp-domain-monitor-admin.php:347
+msgid "Notifications threshold"
+msgstr "Értesítési küszöb"
+
+#: class/class-mainwp-domain-monitor-admin.php:348
+msgid "Set the domain expiration threshold for the email notification."
+msgstr "Állítsa be a domain lejárati küszöböt az e-mail értesítéshez."
+
+#: class/class-mainwp-domain-monitor-admin.php:352
+msgid "Automated Checks"
+msgstr "Automatikus ellenőrzések"
+
+#: class/class-mainwp-domain-monitor-admin.php:354
+msgid "Automatically check domains"
+msgstr "Domainek automatikus ellenőrzése"
+
+#: class/class-mainwp-domain-monitor-admin.php:355
+msgid "Enable if you want the extension to run domain checks automatically."
+msgstr ""
+"Engedélyezze, ha azt szeretné, hogy a bővítmény automatikusan futtassa a "
+"domainellenőrzéseket."
+
+#: class/class-mainwp-domain-monitor-admin.php:360
+msgid "Automated domain checks frequency"
+msgstr "Automatikus domainellenőrzések gyakorisága"
+
+#: class/class-mainwp-domain-monitor-admin.php:361
+msgid "Select automated domain lookup frequency."
+msgstr "Válassza ki az automatikus domainlekérdezés gyakoriságát."
+
+#: class/class-mainwp-domain-monitor-admin.php:381
+#: class/class-mainwp-domain-monitor-admin.php:752
+#: class/class-mainwp-domain-monitor-dashboard.php:392
+msgid "Save Settings"
+msgstr "Beállítások mentése"
+
+#: class/class-mainwp-domain-monitor-admin.php:404
+msgid "Child site's domain informatino is sourced from RDAP or WHOIS server."
+msgstr ""
+"A gyermek webhely domaininformációja az RDAP- vagy WHOIS-kiszolgálóról "
+"származik."
+
+#: class/class-mainwp-domain-monitor-admin.php:414
+#, php-format
+msgid "Domain Profile (Last check: %s)"
+msgstr "Domainprofil (Utolsó ellenőrzés: %s)"
+
+#: class/class-mainwp-domain-monitor-admin.php:423
+#: class/class-mainwp-domain-monitor-dashboard.php:87
+#: class/class-mainwp-domain-monitor-dashboard.php:325
+msgid "Domain Name"
+msgstr "Domainnév"
+
+#: class/class-mainwp-domain-monitor-admin.php:428
+#: class/class-mainwp-domain-monitor-admin.php:438
+#: class/class-mainwp-domain-monitor-admin.php:449
+#: class/class-mainwp-domain-monitor-admin.php:459
+#: class/class-mainwp-domain-monitor-admin.php:469
+#: class/class-mainwp-domain-monitor-admin.php:479
+#: class/class-mainwp-domain-monitor-admin.php:489
+#: class/class-mainwp-domain-monitor-admin.php:499
+#: class/class-mainwp-domain-monitor-admin.php:509
+#: class/class-mainwp-domain-monitor-admin.php:520
+#: class/class-mainwp-domain-monitor-admin.php:530
+#: class/class-mainwp-domain-monitor-admin.php:540
+#: class/class-mainwp-domain-monitor-dashboard.php:285
+msgid "N/A"
+msgstr "N/A"
+
+#: class/class-mainwp-domain-monitor-admin.php:433
+#: class/class-mainwp-domain-monitor-admin.php:623
+#: class/class-mainwp-domain-monitor-dashboard.php:92
+#: class/class-mainwp-domain-monitor-dashboard.php:330
+msgid "Registrar"
+msgstr "Regisztrátor"
+
+#: class/class-mainwp-domain-monitor-admin.php:444
+#: class/class-mainwp-domain-monitor-admin.php:630
+msgid "Registrar URL"
+msgstr "Regisztrátor URL-je"
+
+#: class/class-mainwp-domain-monitor-admin.php:447
+#: class/class-mainwp-domain-monitor-dashboard.php:278
+msgid "Visit registrar website."
+msgstr "Látogassa meg a regisztrátor webhelyét."
+
+#: class/class-mainwp-domain-monitor-admin.php:454
+msgid "Registry Domain ID"
+msgstr "Nyilvántartási domain ID"
+
+#: class/class-mainwp-domain-monitor-admin.php:464
+msgid "Registrar WHOIS Server"
+msgstr "Regisztrátor WHOIS-kiszolgálója"
+
+#: class/class-mainwp-domain-monitor-admin.php:474
+#: class/class-mainwp-domain-monitor-admin.php:651
+msgid "Registrar Abuse Contact Email"
+msgstr "Regisztrátor visszaélés-bejelentési e-mail-címe"
+
+#: class/class-mainwp-domain-monitor-admin.php:484
+#: class/class-mainwp-domain-monitor-admin.php:658
+msgid "Registrar Abuse Contact Phone"
+msgstr "Regisztrátor visszaélés-bejelentési telefonszáma"
+
+#: class/class-mainwp-domain-monitor-admin.php:494
+#: class/class-mainwp-domain-monitor-admin.php:665
+msgid "Registrar IANA ID"
+msgstr "Regisztrátor IANA ID"
+
+#: class/class-mainwp-domain-monitor-admin.php:504
+#: class/class-mainwp-domain-monitor-admin.php:672
+msgid "DNSSEC"
+msgstr "DNSSEC"
+
+#: class/class-mainwp-domain-monitor-admin.php:515
+msgid "Domain Creation Date"
+msgstr "Domain létrehozásának dátuma"
+
+#: class/class-mainwp-domain-monitor-admin.php:525
+msgid "Domain Update Date"
+msgstr "Domain frissítésének dátuma"
+
+#: class/class-mainwp-domain-monitor-admin.php:535
+msgid "Domain Expiration Date"
+msgstr "Domain lejáratának dátuma"
+
+#: class/class-mainwp-domain-monitor-admin.php:545
+#: class/class-mainwp-domain-monitor-dashboard.php:93
+#: class/class-mainwp-domain-monitor-dashboard.php:331
+msgid "Domain Status"
+msgstr "Domain állapota"
+
+#: class/class-mainwp-domain-monitor-admin.php:569
+#: class/class-mainwp-domain-monitor-admin.php:734
+msgid "Name Server(s)"
+msgstr "Névszerver(ek)"
+
+#: class/class-mainwp-domain-monitor-admin.php:600
+msgid "Enter the domain status here to add or modify its information."
+msgstr ""
+"Adja meg itt a domain állapotát az információk hozzáadásához vagy "
+"módosításához."
+
+#: class/class-mainwp-domain-monitor-admin.php:608
+msgid ""
+"If the extension fails to retrieve data from the RDAP server, or if you need"
+" to manually adjust specific details, you have the option to enter the "
+"domain information manually here."
+msgstr ""
+"Ha a bővítmény nem tud adatokat lekérni az RDAP-kiszolgálóról, vagy ha "
+"bizonyos részleteket kézzel kell módosítania, itt kézzel is megadhatja a "
+"domaininformációkat."
+
+#: class/class-mainwp-domain-monitor-admin.php:613
+msgid "Domain Info Settings"
+msgstr "Domaininformációk beállításai"
+
+#: class/class-mainwp-domain-monitor-admin.php:616
+msgid "Domain name"
+msgstr "Domainnév"
+
+#: class/class-mainwp-domain-monitor-admin.php:617
+msgid "Enter the domain name here to add or modify its information."
+msgstr ""
+"Adja meg itt a domainnevet az információk hozzáadásához vagy módosításához."
+
+#: class/class-mainwp-domain-monitor-admin.php:624
+msgid "Enter the registrar here to add or modify its information."
+msgstr ""
+"Adja meg itt a regisztrátort az információk hozzáadásához vagy "
+"módosításához."
+
+#: class/class-mainwp-domain-monitor-admin.php:631
+msgid "Enter the registrar URL here to add or modify its information."
+msgstr ""
+"Adja meg itt a regisztrátor URL-jét az információk hozzáadásához vagy "
+"módosításához."
+
+#: class/class-mainwp-domain-monitor-admin.php:637
+msgid "Registry domain ID"
+msgstr "Nyilvántartási domain ID"
+
+#: class/class-mainwp-domain-monitor-admin.php:638
+msgid "Enter the registry domain ID here to add or modify its information."
+msgstr ""
+"Adja meg itt a nyilvántartási domain ID-t az információk hozzáadásához vagy "
+"módosításához."
+
+#: class/class-mainwp-domain-monitor-admin.php:644
+msgid "Registrar WHOIS server"
+msgstr "Regisztrátor WHOIS-kiszolgálója"
+
+#: class/class-mainwp-domain-monitor-admin.php:645
+msgid ""
+"Enter the registrar WHOIS server here to add or modify its information."
+msgstr ""
+"Adja meg itt a regisztrátor WHOIS-kiszolgálóját az információk hozzáadásához"
+" vagy módosításához."
+
+#: class/class-mainwp-domain-monitor-admin.php:652
+msgid ""
+"Enter the registrar abuse contact email here to add or modify its "
+"information."
+msgstr ""
+"Adja meg itt a regisztrátor visszaélés-bejelentési e-mail-címét az "
+"információk hozzáadásához vagy módosításához."
+
+#: class/class-mainwp-domain-monitor-admin.php:659
+msgid ""
+"Enter the registrar abuse contact phone here to add or modify its "
+"information."
+msgstr ""
+"Adja meg itt a regisztrátor visszaélés-bejelentési telefonszámát az "
+"információk hozzáadásához vagy módosításához."
+
+#: class/class-mainwp-domain-monitor-admin.php:666
+msgid "Enter the registrar IANA ID here to add or modify its information."
+msgstr ""
+"Adja meg itt a regisztrátor IANA ID-ját az információk hozzáadásához vagy "
+"módosításához."
+
+#: class/class-mainwp-domain-monitor-admin.php:673
+msgid "Enter the DNSSEC here to add or modify its information."
+msgstr ""
+"Adja meg itt a DNSSEC-et az információk hozzáadásához vagy módosításához."
+
+#: class/class-mainwp-domain-monitor-admin.php:679
+msgid "Domain creation date"
+msgstr "Domain létrehozásának dátuma"
+
+#: class/class-mainwp-domain-monitor-admin.php:680
+msgid "Enter the domain creation date here to add or modify its information."
+msgstr ""
+"Adja meg itt a domain létrehozásának dátumát az információk hozzáadásához "
+"vagy módosításához."
+
+#: class/class-mainwp-domain-monitor-admin.php:691
+msgid "Domain update date"
+msgstr "Domain frissítésének dátuma"
+
+#: class/class-mainwp-domain-monitor-admin.php:692
+msgid "Enter the domain update date here to add or modify its information."
+msgstr ""
+"Adja meg itt a domain frissítésének dátumát az információk hozzáadásához "
+"vagy módosításához."
+
+#: class/class-mainwp-domain-monitor-admin.php:703
+msgid "Domain expiration date"
+msgstr "Domain lejáratának dátuma"
+
+#: class/class-mainwp-domain-monitor-admin.php:704
+msgid ""
+"Enter the domain expiration date here to add or modify its information."
+msgstr ""
+"Adja meg itt a domain lejáratának dátumát az információk hozzáadásához vagy "
+"módosításához."
+
+#: class/class-mainwp-domain-monitor-admin.php:715
+msgid "Domain Status(es)"
+msgstr "Domain állapot(ok)"
+
+#: class/class-mainwp-domain-monitor-admin.php:717
+msgid "Status 1"
+msgstr "Állapot 1"
+
+#: class/class-mainwp-domain-monitor-admin.php:720
+msgid "Status 2"
+msgstr "Állapot 2"
+
+#: class/class-mainwp-domain-monitor-admin.php:723
+msgid "Status 3"
+msgstr "Állapot 3"
+
+#: class/class-mainwp-domain-monitor-admin.php:726
+msgid "Status 4"
+msgstr "Állapot 4"
+
+#: class/class-mainwp-domain-monitor-admin.php:729
+msgid "Status 5"
+msgstr "Állapot 5"
+
+#: class/class-mainwp-domain-monitor-admin.php:736
+msgid "Name Server 1"
+msgstr "Névszerver 1"
+
+#: class/class-mainwp-domain-monitor-admin.php:739
+msgid "Name Server 2"
+msgstr "Névszerver 2"
+
+#: class/class-mainwp-domain-monitor-admin.php:742
+msgid "Name Server 3"
+msgstr "Névszerver 3"
+
+#: class/class-mainwp-domain-monitor-admin.php:745
+msgid "Name Server 4"
+msgstr "Névszerver 4"
+
+#: class/class-mainwp-domain-monitor-admin.php:795
+msgid "Domain expiration monitoring."
+msgstr "Domain lejáratának figyelése."
+
+#: class/class-mainwp-domain-monitor-admin.php:803
+msgid "Domain"
+msgstr "Domain"
+
+#: class/class-mainwp-domain-monitor-admin.php:804
+msgid "Expiration Date"
+msgstr "Lejárati dátum"
+
+#: class/class-mainwp-domain-monitor-admin.php:834
+#, php-format
+msgid "Expires in %s day(s)."
+msgstr "Lejár %s nap múlva."
+
+#: class/class-mainwp-domain-monitor-admin.php:846
+#: class/class-mainwp-domain-monitor-admin.php:941
+msgid "Domain Monitor Dashboard"
+msgstr "Domainfigyelő vezérlőpult"
+
+#: class/class-mainwp-domain-monitor-admin.php:915
+#, php-format
+msgid "Expires in %d days"
+msgstr "Lejár %d nap múlva"
+
+#: class/class-mainwp-domain-monitor-admin.php:920
+msgid "Domain info not available!"
+msgstr "Domaininformáció nem érhető el!"
+
+#: class/class-mainwp-domain-monitor-admin.php:933
+msgid "No Domain Data"
+msgstr "Nincs domainadat"
+
+#: class/class-mainwp-domain-monitor-admin.php:934
+msgid ""
+"Domain data not available, recheck the domain or add the data manually."
+msgstr ""
+"A domainadatok nem érhetők el, ellenőrizze újra a domaint, vagy adja meg az "
+"adatokat kézzel."
+
+#: class/class-mainwp-domain-monitor-admin.php:1292
+msgid "Domain info not found."
+msgstr "Domaininformáció nem található."
+
+#: class/class-mainwp-domain-monitor-admin.php:1326
+msgid "Domain Name: "
+msgstr "Domainnév: "
+
+#: class/class-mainwp-domain-monitor-admin.php:1327
+msgid "Registrar: "
+msgstr "Regisztrátor: "
+
+#: class/class-mainwp-domain-monitor-admin.php:1328
+msgid "Registrar URL: "
+msgstr "Regisztrátor URL-je: "
+
+#: class/class-mainwp-domain-monitor-admin.php:1329
+msgid "Registrar IANA ID: "
+msgstr "Regisztrátor IANA ID: "
+
+#: class/class-mainwp-domain-monitor-admin.php:1330
+msgid "Registrar Abuse Contact Email: "
+msgstr "Regisztrátor visszaélés-bejelentési e-mail-címe: "
+
+#: class/class-mainwp-domain-monitor-admin.php:1331
+msgid "Registrar Abuse Contact Phone: "
+msgstr "Regisztrátor visszaélés-bejelentési telefonszáma: "
+
+#: class/class-mainwp-domain-monitor-admin.php:1332
+msgid "Regisrar WHOIS Server: "
+msgstr "Regisztrátor WHOIS-kiszolgálója: "
+
+#: class/class-mainwp-domain-monitor-admin.php:1333
+msgid "Registry Domain ID: "
+msgstr "Nyilvántartási domain ID: "
+
+#: class/class-mainwp-domain-monitor-admin.php:1334
+msgid "Domain Updated Date: "
+msgstr "Domain frissítésének dátuma: "
+
+#: class/class-mainwp-domain-monitor-admin.php:1335
+msgid "Domain Creation Date: "
+msgstr "Domain létrehozásának dátuma: "
+
+#: class/class-mainwp-domain-monitor-admin.php:1336
+msgid "Domain Expiry Date: "
+msgstr "Domain lejárati dátuma: "
+
+#: class/class-mainwp-domain-monitor-admin.php:1339
+msgid "Domain data not found."
+msgstr "Domainadatok nem találhatók."
+
+#: class/class-mainwp-domain-monitor-admin.php:1351
+msgid "How to use the Extension"
+msgstr "A bővítmény használata"
+
+#: class/class-mainwp-domain-monitor-core.php:485
+#: class/class-mainwp-domain-monitor-wp-cli-command.php:115
+#: class/class-mainwp-domain-monitor-wp-cli-command.php:152
+#: includes/rest-api/version1/class-mainwp-domain-monitor-rest-api-v1.php:220
+msgid "An undefined error occured."
+msgstr "Meghatározatlan hiba történt."
+
+#: class/class-mainwp-domain-monitor-core.php:1345
+msgid "Once a Day"
+msgstr "Naponta egyszer"
+
+#: class/class-mainwp-domain-monitor-core.php:1346
+msgid "Once a Week"
+msgstr "Hetente egyszer"
+
+#: class/class-mainwp-domain-monitor-core.php:1347
+msgid "Twice a Month"
+msgstr "Havonta kétszer"
+
+#: class/class-mainwp-domain-monitor-core.php:1348
+msgid "Once Monthly"
+msgstr "Havonta egyszer"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:46
+msgid "Bulk actions"
+msgstr "Csoportos műveletek"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:47
+#: class/class-mainwp-domain-monitor-dashboard.php:305
+msgid "Check Domain"
+msgstr "Domain ellenőrzése"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:48
+msgid "Go to WP Admin"
+msgstr "Ugrás a WP Adminba"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:49
+msgid "Go to Site"
+msgstr "Ugrás a webhelyre"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:51
+msgid "Apply"
+msgstr "Alkalmaz"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:54
+msgid "Check All Sites Domains"
+msgstr "Minden webhely domainjének ellenőrzése"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:77
+msgid "Get domain information for your child sites."
+msgstr "Kérje le a gyermek webhelyek domaininformációit."
+
+#: class/class-mainwp-domain-monitor-dashboard.php:78
+msgid ""
+"Domain lookup may fail or return incomplete data for some TLDs due to "
+"restrictions or a lack of available information from the RDAP. MainWP will "
+"give its best to keep the list of supported TLDs up to date for the best "
+"extension performance."
+msgstr ""
+"A domainlekérdezés meghiúsulhat vagy hiányos adatokat adhat vissza egyes "
+"TLDs esetén korlátozások vagy az RDAP-ból elérhető információk hiánya miatt."
+" A MainWP mindent megtesz, hogy a támogatott TLDs listáját naprakészen "
+"tartsa a bővítmény lehető legjobb teljesítménye érdekében."
+
+#: class/class-mainwp-domain-monitor-dashboard.php:79
+#, php-format
+msgid "Here you can see the %1$slist of supported TLDs%2$s."
+msgstr "Itt látható a %1$stámogatott TLDs listája%2$s."
+
+#: class/class-mainwp-domain-monitor-dashboard.php:86
+#: class/class-mainwp-domain-monitor-dashboard.php:324
+msgid "Site"
+msgstr "Webhely"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:88
+#: class/class-mainwp-domain-monitor-dashboard.php:326
+msgid "Expires"
+msgstr "Lejár"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:89
+#: class/class-mainwp-domain-monitor-dashboard.php:327
+msgid "Creation Date"
+msgstr "Létrehozás dátuma"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:90
+#: class/class-mainwp-domain-monitor-dashboard.php:328
+msgid "Updated Date"
+msgstr "Frissítés dátuma"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:91
+#: class/class-mainwp-domain-monitor-dashboard.php:329
+msgid "Expiry Date"
+msgstr "Lejárat dátuma"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:94
+#: class/class-mainwp-domain-monitor-dashboard.php:332
+msgid "Mode"
+msgstr "Mód"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:246
+msgid "Domain info retrieved automatically."
+msgstr "A domaininformációk automatikusan lekérve."
+
+#: class/class-mainwp-domain-monitor-dashboard.php:248
+msgid "Domain info added manually."
+msgstr "A domaininformációk manuálisan hozzáadva."
+
+#: class/class-mainwp-domain-monitor-dashboard.php:252
+msgid "Click to select the site."
+msgstr "Kattintson a webhely kiválasztásához."
+
+#: class/class-mainwp-domain-monitor-dashboard.php:255
+msgid "Jump to the WP Admin."
+msgstr "Ugrás a WP Adminba."
+
+#: class/class-mainwp-domain-monitor-dashboard.php:256
+msgid "Go to the site overview."
+msgstr "Ugrás a webhely áttekintéséhez."
+
+#: class/class-mainwp-domain-monitor-dashboard.php:258
+msgid "Go to the website."
+msgstr "Ugrás a webhelyre."
+
+#: class/class-mainwp-domain-monitor-dashboard.php:263
+#: class/class-mainwp-domain-monitor-hooks.php:137
+msgid " days"
+msgstr " nap"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:307
+msgid "Overview"
+msgstr "Áttekintés"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:308
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:333
+msgid "Action"
+msgstr "Művelet"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:353
+#: class/class-mainwp-domain-monitor-dashboard.php:401
+msgid "Screen Options"
+msgstr "Képernyő beállításai"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:359
+msgid "Show columns"
+msgstr "Oszlopok megjelenítése"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:389
+msgid ""
+"Returns this page to the state it was in when installed. The feature also "
+"restores any column you have moved through the drag and drop feature on the "
+"page."
+msgstr ""
+"Visszaállítja ezt az oldalt a telepítéskori állapotra. A funkció "
+"visszaállítja az oldalon a fogd és vidd funkcióval áthelyezett bármely "
+"oszlopot is."
+
+#: class/class-mainwp-domain-monitor-dashboard.php:389
+msgid "Reset Page"
+msgstr "Oldal alaphelyzetbe állítása"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:403
+msgid ""
+"Would you like to turn on home screen previews? This function queries "
+"WordPress.com servers to capture a screenshot of your site the same way "
+"comments shows you preview of URLs."
+msgstr ""
+"Bekapcsolja a kezdőképernyő előnézeteit? Ez a funkció a WordPress.com "
+"szervereit kérdezi le, hogy képernyőképet készítsen a webhelyéről, ugyanúgy,"
+" ahogy a hozzászólások megmutatják az URLs előnézetét."
+
+#: class/class-mainwp-domain-monitor-dashboard.php:406
+msgid "Yes"
+msgstr "Igen"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:407
+msgid "No"
+msgstr "Nem"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:439
+msgid "Domain Status Info"
+msgstr "Domain állapotinformáció"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:474
+msgid "Domain Lookup"
+msgstr "Domainlekérdezés"
+
+#: class/class-mainwp-domain-monitor-dashboard.php:485
+msgid "Go to the site Overview page."
+msgstr "Ugrás a webhely Áttekintés oldalára."
+
+#: class/class-mainwp-domain-monitor-dashboard.php:486
+msgid "Pending."
+msgstr "Függőben."
+
+#: class/class-mainwp-domain-monitor-dashboard.php:507
+#: class/class-mainwp-domain-monitor-wp-cli-command.php:87
+#: class/class-mainwp-domain-monitor-wp-cli-command.php:124
+#: class/class-mainwp-domain-monitor-wp-cli-command.php:226
+#: includes/rest-api/version1/class-mainwp-domain-monitor-rest-api-v1.php:265
+#: includes/rest-api/version2/class-mainwp-domain-monitor-rest-controller.php:221
+msgid "Sites not found."
+msgstr "Nem találhatók webhelyek."
+
+#: class/class-mainwp-domain-monitor-dashboard.php:543
+msgid "Invalid site ID. Please reload and try again."
+msgstr ""
+"Érvénytelen webhelyazonosító. Kérjük, töltse újra, és próbálja meg újra."
+
+#: class/class-mainwp-domain-monitor-hooks.php:106
+msgid "Domain Expires"
+msgstr "Domain lejárata"
+
+#: class/class-mainwp-domain-monitor-hooks.php:159
+#: class/class-mainwp-domain-monitor-hooks.php:202
+msgid "Domain Monitor Notification Email"
+msgstr "Domainfigyelő értesítő e-mail"
+
+#: class/class-mainwp-domain-monitor-hooks.php:258
+msgid "This template has been overridden and can be found in:"
+msgstr "Ezt a sablont felülírták, és itt található:"
+
+#: class/class-mainwp-domain-monitor-hooks.php:258
+msgid "To override and edit this email template copy:"
+msgstr "Az e-mail sablon felülírásához és szerkesztéséhez másolja:"
+
+#: class/class-mainwp-domain-monitor-hooks.php:258
+msgid "to the folder:"
+msgstr "ebbe a mappába:"
+
+#: class/class-mainwp-domain-monitor-hooks.php:305
+msgid "Valid"
+msgstr "Érvényes"
+
+#: class/class-mainwp-domain-monitor-hooks.php:310
+msgid "Expired"
+msgstr "Lejárt"
+
+#: class/class-mainwp-domain-monitor-schedule.php:136
+msgid "MainWP Domain Monitor Continue Interval"
+msgstr "MainWP Domain Monitor folytatási időköz"
+
+#: class/class-mainwp-domain-monitor-schedule.php:141
+msgid "Once Every 5 Minutes"
+msgstr "5 percenként egyszer"
+
+#: class/class-mainwp-domain-monitor-schedule.php:480
+msgid "Start domain lookup"
+msgstr "Domainlekérdezés indítása"
+
+#: class/class-mainwp-domain-monitor-schedule.php:482
+msgid "Once every 5 minutes"
+msgstr "5 percenként egyszer"
+
+#: class/class-mainwp-domain-monitor-utility.php:174
+msgid "year"
+msgstr "év"
+
+#: class/class-mainwp-domain-monitor-utility.php:175
+msgid "month"
+msgstr "hónap"
+
+#: class/class-mainwp-domain-monitor-utility.php:176
+msgid "week"
+msgstr "hét"
+
+#: class/class-mainwp-domain-monitor-utility.php:177
+msgid "day"
+msgstr "nap"
+
+#: class/class-mainwp-domain-monitor-utility.php:178
+msgid "hour"
+msgstr "óra"
+
+#: class/class-mainwp-domain-monitor-utility.php:179
+msgid "minute"
+msgstr "perc"
+
+#: class/class-mainwp-domain-monitor-utility.php:180
+msgid "second"
+msgstr "másodperc"
+
+#: class/class-mainwp-domain-monitor-utility.php:189
+msgid "s ago"
+msgstr "s ezelőtt"
+
+#: class/class-mainwp-domain-monitor-utility.php:189
+msgid "ago"
+msgstr "ezelőtt"
+
+#: class/class-mainwp-domain-monitor-utility.php:521
+msgid "Nonce could not be verified. Please reload and try again."
+msgstr ""
+"A noncét nem sikerült ellenőrizni. Kérjük, töltse újra, és próbálja meg "
+"újra."
+
+#: class/class-mainwp-domain-monitor-wp-cli-command.php:108
+#: class/class-mainwp-domain-monitor-wp-cli-command.php:145
+msgid "Domain lookup completed successfully."
+msgstr "A domainlekérdezés sikeresen befejeződött."
+
+#: includes/rest-api/version1/class-mainwp-domain-monitor-rest-api-v1.php:206
+msgid "Site not found."
+msgstr "A webhely nem található."
+
+#: includes/rest-api/version2/class-mainwp-domain-monitor-rest-controller.php:195
+msgid "Website domain checked successfully."
+msgstr "A webhely domainjét sikeresen ellenőriztük."
+
+#: includes/rest-api/version2/class-mainwp-domain-monitor-rest-controller.php:198
+msgid "An undefined error occured. Please try again."
+msgstr "Ismeretlen hiba történt. Kérjük, próbálja meg újra."
+
+#: mainwp-domain-monitor-extension.php:205
+msgid ""
+"requires <a href=\"https://mainwp.com/\" target=\"_blank\">MainWP Dashboard "
+"Plugin</a> to be activated in order to work. Please install and activate <a "
+"href=\"http://mainwp.com/\" target=\"_blank\">MainWP Dashboard Plugin</a> "
+"first."
+msgstr ""
+"a működéshez az <a href=\"https://mainwp.com/\" target=\"_blank\">MainWP "
+"Dashboard Plugin</a> aktiválása szükséges. Kérjük, először telepítse és "
+"aktiválja a <a href=\"http://mainwp.com/\" target=\"_blank\">MainWP "
+"Dashboard Plugin</a>-t."
+
+#: templates/emails/mainwp-domain-monitor-notification-email.php:56
+msgid " child site domain is about to expire!"
+msgstr " a gyermek webhely domainje hamarosan lejár!"
+
+#: templates/emails/mainwp-domain-monitor-notification-email.php:60
+msgid "Domain Name:"
+msgstr "Domainnév:"
+
+#: templates/emails/mainwp-domain-monitor-notification-email.php:61
+msgid "Expires:"
+msgstr "Lejár:"
+
+#: templates/emails/mainwp-domain-monitor-notification-email.php:62
+msgid "Registrar:"
+msgstr "Regisztrátor:"
+
+#: templates/emails/mainwp-domain-monitor-notification-email.php:69
+msgid "Click here"
+msgstr "Kattintson ide"
+
+#: templates/emails/mainwp-domain-monitor-notification-email.php:69
+msgid "to check your domain info."
+msgstr "a domaininformációi ellenőrzéséhez."
+
+#: templates/emails/mainwp-domain-monitor-notification-email.php:78
+msgid "Powered by "
+msgstr "Működteti "
