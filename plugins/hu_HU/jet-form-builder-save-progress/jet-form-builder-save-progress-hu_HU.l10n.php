@@ -1,0 +1,26 @@
+<?php
+return [
+	'project-id-version' => 'JetFormBuilder Save Form Progress 1.0.11',
+	'report-msgid-bugs-to' => 'support@hellowp.io',
+	'po-revision-date' => '2025-10-19 22:48',
+	'last-translator' => 'HelloWP <translate@hellowp.io>',
+	'language-team' => 'HelloWP <translate@hellowp.io>',
+	'language' => 'hu',
+	'mime-version' => '1.0',
+	'content-type' => 'text/plain; charset=utf-8',
+	'content-transfer-encoding' => '8bit',
+	'plural-forms' => 'nplurals=2; plural=(n != 1);',
+	'x-generator' => 'sinann-po-translator',
+	'x-plugin-name' => 'JetFormBuilder Save Form Progress',
+	'x-plugin-version' => '1.0.11',
+	'messages' => [
+		'JetFormBuilder Save Form Progress' => 'JetFormBuilder Save Form Progress',
+		'https://jetformbuilder.com/addons/save-form-progress/' => 'https://jetformbuilder.com/addons/save-form-progress/',
+		'A tweak to autosave the form progress and inputted data if the filling process was interrupted.' => 'Egy kiegészítő, amely automatikusan menti az űrlap előrehaladását és a bevitt adatokat, ha a kitöltés megszakad.',
+		'Crocoblock' => 'Crocoblock',
+		'https://crocoblock.com/' => 'https://crocoblock.com/',
+		'<b>Warning</b>: <b>JetFormBuilder Save From Progress</b> needs <b>JetEngine</b> update.' => '<b>Figyelmeztetés</b>: <b>JetFormBuilder Save From Progress</b> <b>JetEngine</b> frissítést igényel.',
+		'<b>Warning</b>: <b>JetFormBuilder Save From Progress</b> needs <b>JetFormBuilder</b> update.' => '<b>Figyelmeztetés</b>: <b>JetFormBuilder Save From Progress</b> <b>JetFormBuilder</b> frissítést igényel.',
+		'<b>Error:</b> <b>JetFormBuilder Save Form Progress</b> plugin requires a PHP version ">= 7.0"' => '<b>Hiba:</b> A <b>JetFormBuilder Save Form Progress</b> bővítmény a \\">= 7.0\\" PHP-verziót igényel.',
+	],
+];

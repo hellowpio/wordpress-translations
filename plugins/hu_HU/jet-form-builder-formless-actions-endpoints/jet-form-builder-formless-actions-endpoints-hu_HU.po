@@ -1,0 +1,663 @@
+# Hungarian translation for JetFormBuilder Formless Actions Endpoints.
+# Copyright (C) 2025 Crocoblock
+# This file is distributed under the GPL license.
+# Translator Team <hello@hellowp.io>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: JetFormBuilder Formless Actions Endpoints 1.0.4\n"
+"Report-Msgid-Bugs-To: support@hellowp.io\n"
+"POT-Creation-Date: 2025-10-19T20:48:45+00:00\n"
+"PO-Revision-Date: 2025-10-19 22:48\n"
+"Last-Translator: HelloWP <translate@hellowp.io>\n"
+"Language-Team: HelloWP <translate@hellowp.io>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: sinann-po-translator\n"
+"X-Plugin-Name: JetFormBuilder Formless Actions Endpoints\n"
+"X-Plugin-Version: 1.0.4\n"
+
+#. Plugin Name of the plugin
+#: jet-form-builder-formless-actions-endpoints.php
+msgid "JetFormBuilder Formless Actions Endpoints"
+msgstr "JetFormBuilder űrlap nélküli műveletek végpontjai"
+
+#. Plugin URI of the plugin
+#: jet-form-builder-formless-actions-endpoints.php
+msgid "https://jetformbuilder.com/"
+msgstr "https://jetformbuilder.com/"
+
+#. Description of the plugin
+#: jet-form-builder-formless-actions-endpoints.php
+msgid ""
+"A tweak to execute specific after-submit actions without front-end forms."
+msgstr ""
+"Egy megoldás konkrét beküldés utáni műveletek végrehajtására front-end "
+"űrlapok nélkül."
+
+#. Author of the plugin
+#: jet-form-builder-formless-actions-endpoints.php
+msgid "Crocoblock"
+msgstr "Crocoblock"
+
+#. Author URI of the plugin
+#: jet-form-builder-formless-actions-endpoints.php
+msgid "https://crocoblock.com/"
+msgstr "https://crocoblock.com/"
+
+#: modules/Bricks/Module.php:88
+msgid "Submit JetFormBuilder form"
+msgstr "JetFormBuilder űrlap beküldése"
+
+#: modules/Bricks/Module.php:104 modules/Elementor/Module.php:81
+#: modules/BlockEditor/assets/build/editor.js:1
+msgid "Enable form submission"
+msgstr "Űrlapbeküldés engedélyezése"
+
+#: modules/Bricks/Module.php:113 modules/Elementor/Module.php:89
+#: modules/BlockEditor/assets/build/editor.js:1
+msgid "Choose route"
+msgstr "Útvonal kiválasztása"
+
+#: modules/Bricks/Module.php:117 modules/BlockEditor/assets/build/editor.js:1
+msgid "-- Select route --"
+msgstr "-- Útvonal kiválasztása --"
+
+#: modules/Bricks/Module.php:124 modules/Elementor/Module.php:100
+#: modules/BlockEditor/assets/build/editor.js:1
+msgid "Data for the request"
+msgstr "Adatok a kéréshez"
+
+#: modules/Bricks/Module.php:129 modules/Elementor/Module.php:104
+#: modules/BlockEditor/assets/build/editor.js:1
+msgid ""
+"Here should be a JSON object. It is better to copy it from on JetFormBuilder"
+" -> Routes page, to avoid invalid JSON"
+msgstr ""
+"Itt egy JSON objektumnak kell lennie. Jobb, ha a JetFormBuilder -> Útvonalak"
+" oldalról másolja, hogy elkerülje az érvénytelen JSON-t."
+
+#: modules/Elementor/Module.php:73
+#: modules/BlockEditor/assets/build/editor.js:1
+msgid "Submit JetFormBuilder Form"
+msgstr "JetFormBuilder űrlap beküldése"
+
+#: modules/Listeners/ListenerProxy.php:48
+msgid "Invalid route ID."
+msgstr "Érvénytelen útvonal ID."
+
+#: modules/Listeners/ListenerProxy.php:56
+msgid "Route not founded."
+msgstr "Útvonal nem található."
+
+#: modules/Listeners/ListenerProxy.php:66
+msgid "Invalid endpoint."
+msgstr "Érvénytelen végpont."
+
+#: modules/Listeners/ListenerProxy.php:78
+msgid "You have not access to this endpoint"
+msgstr "Nincs hozzáférése ehhez a végponthoz"
+
+#: modules/Routes/Pages/Routes.php:27
+msgid "Endpoints"
+msgstr "Végpontok"
+
+#: modules/Routes/Pages/RouteSingle.php:27
+msgid "Endpoint"
+msgstr "Végpont"
+
+#: modules/Routes/REST/Endpoints/CreateRoute.php:37
+#: modules/Routes/REST/Endpoints/UpdateRoute.php:49
+msgid "Possible values: ajax (by default), rest, url"
+msgstr "Lehetséges értékek: ajax (alapértelmezett), rest, url"
+
+#: modules/Routes/REST/Endpoints/CreateRoute.php:44
+#: modules/Routes/REST/Endpoints/UpdateRoute.php:56
+msgid "Possible values: 0 (for any user), 1 (by role), 2 (by capability)"
+msgstr ""
+"Lehetséges értékek: 0 (bármely felhasználó), 1 (szerep szerint), 2 "
+"(jogosultság szerint)"
+
+#: modules/Routes/REST/Endpoints/CreateRoute.php:51
+#: modules/Routes/REST/Endpoints/UpdateRoute.php:63
+msgid "Roles slugs, if restriction_type equals to 1"
+msgstr "Szerep-slugok, ha a restriction_type értéke 1"
+
+#: modules/Routes/REST/Endpoints/CreateRoute.php:58
+#: modules/Routes/REST/Endpoints/UpdateRoute.php:70
+msgid "Capability slug, if restriction_type equals to 2"
+msgstr "Jogosultság slug, ha a restriction_type értéke 2"
+
+#. translators: string-code of the exception
+#: modules/Routes/REST/Endpoints/CreateRoute.php:118
+#: modules/Routes/REST/Endpoints/UpdateRoute.php:124
+#, php-format
+msgid "Problem occurred: %s"
+msgstr "Hiba történt: %s"
+
+#: modules/Routes/REST/Endpoints/CreateRoute.php:132
+msgid "Endpoint created."
+msgstr "Végpont létrehozva."
+
+#: modules/Routes/REST/Endpoints/DeleteRoute.php:57
+msgid "Bad request"
+msgstr "Hibás kérés"
+
+#: modules/Routes/REST/Endpoints/GetPresetValue.php:32
+msgid "Your preset is empty has invalid value"
+msgstr "Az előbeállítás üres, vagy érvénytelen értékű"
+
+#: modules/Routes/REST/Endpoints/UpdateRoute.php:135
+msgid "Endpoint updated."
+msgstr "Végpont frissítve."
+
+#: modules/AdminComponents/assets/build/index.js:16511
+msgid "(no property) from (no type)"
+msgstr "(nincs tulajdonság) innen: (nincs típus)"
+
+#. translators: %1$s - property, %2$s - CCT type slug
+#: modules/AdminComponents/assets/build/index.js:16516
+#, js-format
+msgid "%1$s from %1$s"
+msgstr "%1$s innen: %1$s"
+
+#: modules/AdminComponents/assets/build/index.js:16521
+msgid "CCT"
+msgstr "CCT"
+
+#: modules/AdminComponents/assets/build/index.js:16568
+msgid "(no field)"
+msgstr "(nincs mező)"
+
+#: modules/AdminComponents/assets/build/index.js:16568
+msgid "from"
+msgstr "innen:"
+
+#: modules/AdminComponents/assets/build/index.js:16568
+msgid "(no page)"
+msgstr "(nincs oldal)"
+
+#: modules/AdminComponents/assets/build/index.js:16569
+msgid "Options page"
+msgstr "Beállítások oldal"
+
+#: modules/AdminComponents/assets/build/index.js:16614
+msgid "Post ID"
+msgstr "Bejegyzés ID"
+
+#: modules/AdminComponents/assets/build/index.js:16615
+msgid "Post Title"
+msgstr "Bejegyzés címe"
+
+#: modules/AdminComponents/assets/build/index.js:16616
+msgid "Post Content"
+msgstr "Bejegyzés tartalma"
+
+#: modules/AdminComponents/assets/build/index.js:16617
+msgid "Post Status"
+msgstr "Bejegyzés állapota"
+
+#: modules/AdminComponents/assets/build/index.js:16618
+msgid "Post Author"
+msgstr "Bejegyzés szerzője"
+
+#: modules/AdminComponents/assets/build/index.js:16619
+msgid "Post Excerpt"
+msgstr "Bejegyzés kivonata"
+
+#: modules/AdminComponents/assets/build/index.js:16620
+msgid "Post"
+msgstr "Bejegyzés"
+
+#: modules/AdminComponents/assets/build/index.js:16621
+msgid "Post Date GMT"
+msgstr "Bejegyzés dátuma GMT"
+
+#: modules/AdminComponents/assets/build/index.js:16622
+msgid "Post Thumbnail"
+msgstr "Bejegyzés kiemelt képe"
+
+#: modules/AdminComponents/assets/build/index.js:16626
+#: modules/AdminComponents/assets/build/index.js:16629
+#: modules/AdminComponents/assets/build/index.js:16793
+msgid "(no name)"
+msgstr "(nincs név)"
+
+#: modules/AdminComponents/assets/build/index.js:16626
+#: modules/AdminComponents/assets/build/index.js:16793
+msgid "field"
+msgstr "mező"
+
+#: modules/AdminComponents/assets/build/index.js:16629
+msgid "term(s)"
+msgstr "kifejezés(ek)"
+
+#: modules/AdminComponents/assets/build/index.js:16634
+#: modules/AdminComponents/assets/build/index.js:16798
+msgid "(no property)"
+msgstr "(nincs tulajdonság)"
+
+#: modules/AdminComponents/assets/build/index.js:16641
+#: modules/AdminComponents/assets/build/index.js:16805
+msgid "(current)"
+msgstr "(aktuális)"
+
+#. translators: %s - url query field
+#: modules/AdminComponents/assets/build/index.js:16645
+#: modules/AdminComponents/assets/build/index.js:16809
+#, js-format
+msgid "(var:%s)"
+msgstr "(változó:%s)"
+
+#: modules/AdminComponents/assets/build/index.js:16645
+#: modules/AdminComponents/assets/build/index.js:16809
+msgid "(not set)"
+msgstr "(nincs beállítva)"
+
+#: modules/AdminComponents/assets/build/index.js:16650
+msgid "from Post"
+msgstr "innen: Bejegyzés"
+
+#. translators: %s - url query variable
+#: modules/AdminComponents/assets/build/index.js:16695
+#, js-format
+msgid "%s Query var"
+msgstr "%s lekérdezési változó"
+
+#: modules/AdminComponents/assets/build/index.js:16695
+msgid "(no var)"
+msgstr "(nincs változó)"
+
+#. translators: %d - relation ID
+#: modules/AdminComponents/assets/build/index.js:16738
+#, js-format
+msgid "Relation (id:%d)"
+msgstr "Kapcsolat (id:%d)"
+
+#: modules/AdminComponents/assets/build/index.js:16782
+msgid "User ID"
+msgstr "Felhasználó ID"
+
+#: modules/AdminComponents/assets/build/index.js:16783
+msgid "User Login"
+msgstr "Felhasználónév"
+
+#: modules/AdminComponents/assets/build/index.js:16784
+msgid "Email"
+msgstr "E-mail"
+
+#: modules/AdminComponents/assets/build/index.js:16785
+msgid "Password"
+msgstr "Jelszó"
+
+#: modules/AdminComponents/assets/build/index.js:16786
+msgid "First Name"
+msgstr "Keresztnév"
+
+#: modules/AdminComponents/assets/build/index.js:16787
+msgid "Last Name"
+msgstr "Vezetéknév"
+
+#: modules/AdminComponents/assets/build/index.js:16788
+msgid "Display Name"
+msgstr "Megjelenített név"
+
+#: modules/AdminComponents/assets/build/index.js:16789
+msgid "User URL"
+msgstr "Felhasználó URL"
+
+#: modules/AdminComponents/assets/build/index.js:16814
+msgid "from User"
+msgstr "innen: Felhasználó"
+
+#: modules/AdminComponents/assets/build/index.js:17232
+msgid "Delete this item?"
+msgstr "Törli ezt az elemet?"
+
+#: modules/AdminComponents/assets/build/index.js:17236
+msgid "Yes"
+msgstr "Igen"
+
+#: modules/AdminComponents/assets/build/index.js:17239
+msgid "No"
+msgstr "Nem"
+
+#: modules/FrontComponents/assets/build/core.js:1
+msgid "Form successfully submitted!"
+msgstr "Az űrlap sikeresen elküldve!"
+
+#: modules/FrontComponents/assets/build/core.js:1
+msgid "Something went wrong."
+msgstr "Valami hiba történt."
+
+#: modules/Routes/assets/build/all.js:2
+msgid "Add new route"
+msgstr "Új útvonal hozzáadása"
+
+#: modules/Routes/assets/build/all.js:2
+#: modules/Routes/assets/build/single.js:2
+msgid "Delete"
+msgstr "Törlés"
+
+#: modules/Routes/assets/build/all.js:2
+msgid "Are you sure you want to delete route"
+msgstr "Biztosan törli az útvonalat"
+
+#: modules/Routes/assets/build/all.js:2
+#, js-format
+msgid "Are you sure you want to delete %d routes?"
+msgstr "Biztosan töröl %d útvonalat?"
+
+#: modules/Routes/assets/build/all.js:2
+#: modules/Routes/assets/build/single.js:2
+msgid "Cancel"
+msgstr "Mégse"
+
+#: modules/Routes/assets/build/all.js:2
+#, js-format
+msgid "Route %s deleted."
+msgstr "Útvonal %s törölve."
+
+#: modules/Routes/assets/build/all.js:2
+msgid "Routes deleted."
+msgstr "Útvonalak törölve."
+
+#: modules/Routes/assets/build/all.js:2
+#, js-format
+msgid "%d routes deleted."
+msgstr "%d útvonal törölve."
+
+#: modules/Routes/assets/build/all.js:2
+#, js-format
+msgid "An error occurred while deleting the route %s."
+msgstr "Hiba történt a(z) %s útvonal törlése közben."
+
+#: modules/Routes/assets/build/all.js:2
+msgid "An error occurred while deleting the routes."
+msgstr "Hiba történt az útvonalak törlése közben."
+
+#: modules/Routes/assets/build/all.js:2
+#, js-format
+msgid "An error occurred while deleting the route %1$s: %2$s"
+msgstr "Hiba történt a(z) %1$s útvonal törlése közben: %2$s"
+
+#: modules/Routes/assets/build/all.js:2
+#, js-format
+msgid "Some errors occurred while deleting the routes: %s"
+msgstr "Néhány hiba történt az útvonalak törlése közben: %s"
+
+#: modules/Routes/assets/build/all.js:2
+msgid "Edit endpoint"
+msgstr "Végpont szerkesztése"
+
+#: modules/Routes/assets/build/all.js:2
+#: modules/Routes/assets/build/single.js:2
+msgid "Related Form"
+msgstr "Kapcsolódó űrlap"
+
+#: modules/Routes/assets/build/all.js:2
+msgid "URL"
+msgstr "URL"
+
+#: modules/Routes/assets/build/all.js:2
+#: modules/Routes/assets/build/single.js:2
+msgid "Created at"
+msgstr "Létrehozva ekkor"
+
+#: modules/Routes/assets/build/all.js:2
+msgid "JetFormBuilder Actions Endpoints"
+msgstr "JetFormBuilder műveletek végpontjai"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "WordPress AJAX"
+msgstr "WordPress AJAX"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "AJAX action slug"
+msgstr "AJAX művelet slugja"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "REST API Endpoint"
+msgstr "REST API végpont"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Route namespace"
+msgstr "Útvonal névtere"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Route"
+msgstr "Útvonal"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "URL Query String"
+msgstr "URL lekérdezési karakterlánc"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "URL action slug"
+msgstr "URL művelet slugja"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Any registered user"
+msgstr "Bármely regisztrált felhasználó"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "User with given role…"
+msgstr "Megadott szerepű felhasználó…"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "User with given capability…"
+msgstr "Megadott jogosultságú felhasználó…"
+
+#: modules/Routes/assets/build/single.js:2
+msgid ""
+"You form protected from submission from 3rd party resources. If you planning"
+" to use this endpoint on other website(s), you need to disable this"
+msgstr ""
+"Az űrlap védett a külső forrásokból érkező beküldésekkel szemben. Ha ezt a "
+"végpontot más webhely(ek)en szeretné használni, ezt ki kell kapcsolnia"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Form settings"
+msgstr "Űrlap beállításai"
+
+#: modules/Routes/assets/build/single.js:2
+msgid ""
+"If you want to protect this endpoint from unwanted submissions, please use "
+"\"Is restricted\" setting of the current endpoint"
+msgstr ""
+"Ha védeni szeretné ezt a végpontot a nem kívánt beküldésekkel szemben, "
+"használja az aktuális végpont \"Is restricted\" beállítását"
+
+#: modules/Routes/assets/build/single.js:2
+msgid ""
+"This action will disable all form safety settings in the selected form."
+msgstr ""
+"Ez a művelet letiltja az összes űrlapbiztonsági beállítást a kiválasztott "
+"űrlapon."
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Disable. I know what I'm doing"
+msgstr "Letiltás. Tudom, mit csinálok"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Settings"
+msgstr "Beállítások"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Related form field should be filled"
+msgstr "A kapcsolódó űrlapmezőt ki kell tölteni"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Action type"
+msgstr "Művelet típusa"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Is restricted"
+msgstr "Korlátozott"
+
+#: modules/Routes/assets/build/single.js:2
+msgid ""
+"If disabled - this public action would be allowed for everyone. If enabled -"
+" allowed only for users fits specific criteria"
+msgstr ""
+"Ha le van tiltva - ez a nyilvános művelet mindenki számára engedélyezett. Ha"
+" engedélyezve van - csak a meghatározott feltételeknek megfelelő "
+"felhasználóknak engedélyezett"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Who can trigger this action"
+msgstr "Ki indíthatja ezt a műveletet"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "User roles"
+msgstr "Felhasználói szerepkörök"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "User capability"
+msgstr "Felhasználói jogosultság"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "You can find list of capabilities"
+msgstr "A jogosultságok listája megtalálható"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "here"
+msgstr "itt"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Log Requests"
+msgstr "Kérések naplózása"
+
+#: modules/Routes/assets/build/single.js:2
+msgid ""
+"Allow to log requests. If enable this option - each attempt to submit form "
+"via this route will be stored below"
+msgstr ""
+"Engedélyezi a kérések naplózását. Ha engedélyezi ezt az opciót - az ezen az "
+"útvonalon keresztül történő űrlapbeküldés minden kísérlete alább lesz "
+"tárolva"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Publish"
+msgstr "Közzététel"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Update"
+msgstr "Frissítés"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Copy request"
+msgstr "Kérés másolása"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Copied data for the request."
+msgstr "A kérés adatai kimásolva."
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Copy data for the request"
+msgstr "A kérés adatainak másolása"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Data values for AJAX request successfully copied."
+msgstr "Az AJAX kérés adatértékei sikeresen kimásolva."
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Read more about WordPress API requests and authentication"
+msgstr "Olvasson többet a WordPress API kéréseiről és a hitelesítésről"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "CURL request to the REST API successfully copied."
+msgstr "A CURL kérés a REST API-hoz sikeresen kimásolva."
+
+#: modules/Routes/assets/build/single.js:2
+msgid "URL endpoint successfully copied."
+msgstr "URL végpont sikeresen kimásolva."
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Field name"
+msgstr "Mező neve"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Field type"
+msgstr "Mező típusa"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Default value"
+msgstr "Alapértelmezett érték"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Sample value"
+msgstr "Mintaérték"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Fields"
+msgstr "Mezők"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Sample request"
+msgstr "Mintakérés"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Data Fields"
+msgstr "Adatmezők"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Select base form to get data from"
+msgstr "Válassza ki az alap űrlapot, ahonnan az adatokat veszi"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Body"
+msgstr "Törzs"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "User Agent"
+msgstr "User Agent"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "IP"
+msgstr "IP"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Are you sure you want to delete request log?"
+msgstr "Biztosan törli a kérésnaplót?"
+
+#: modules/Routes/assets/build/single.js:2
+#, js-format
+msgid "Are you sure you want to delete %d request logs?"
+msgstr "Biztosan töröl %d kérésnaplót?"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Request log deleted."
+msgstr "Kérésnapló törölve."
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Request logs deleted."
+msgstr "Kérésnaplók törölve."
+
+#: modules/Routes/assets/build/single.js:2
+msgid "An error occurred while deleting the request log."
+msgstr "Hiba történt a kérésnapló törlése közben."
+
+#: modules/Routes/assets/build/single.js:2
+msgid "An error occurred while deleting the request logs."
+msgstr "Hiba történt a kérésnaplók törlése közben."
+
+#: modules/Routes/assets/build/single.js:2
+#, js-format
+msgid "An error occurred while deleting the request log: %s"
+msgstr "Hiba történt a kérésnapló törlése közben: %s"
+
+#: modules/Routes/assets/build/single.js:2
+#, js-format
+msgid "Some errors occurred while deleting the request logs: %s"
+msgstr "Néhány hiba történt a kérésnaplók törlése közben: %s"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "Log of requests"
+msgstr "Kérések naplója"
+
+#: modules/Routes/assets/build/single.js:2
+msgid "JetFormBuilder Actions Endpoint"
+msgstr "JetFormBuilder műveletek végpontja"

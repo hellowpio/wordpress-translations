@@ -1,0 +1,25 @@
+<?php
+return [
+	'project-id-version' => 'JetFormBuilder Limit Form Responses 1.1.1',
+	'report-msgid-bugs-to' => 'support@hellowp.io',
+	'po-revision-date' => '2025-10-19 22:48',
+	'last-translator' => 'HelloWP <translate@hellowp.io>',
+	'language-team' => 'HelloWP <translate@hellowp.io>',
+	'language' => 'hu',
+	'mime-version' => '1.0',
+	'content-type' => 'text/plain; charset=utf-8',
+	'content-transfer-encoding' => '8bit',
+	'plural-forms' => 'nplurals=2; plural=(n != 1);',
+	'x-generator' => 'sinann-po-translator',
+	'x-plugin-name' => 'JetFormBuilder Limit Form Responses',
+	'x-plugin-version' => '1.1.1',
+	'messages' => [
+		'JetFormBuilder Limit Form Responses' => 'JetFormBuilder Limit Form Responses',
+		'https://jetformbuilder.com/addons/limit-form-responses/' => 'https://jetformbuilder.com/addons/limit-form-responses/',
+		'A lightweight addon to control the overall number of form submissions and those per user.' => 'Könnyű kiegészítő, amellyel szabályozható az űrlapbeküldések összesített és felhasználónkénti száma.',
+		'Crocoblock' => 'Crocoblock',
+		'https://crocoblock.com/' => 'https://crocoblock.com/',
+		'<b>Warning</b>: <b>JetFormBuilder Limit Form Responses</b> needs <b>JetEngine</b> update.' => '<b>Figyelmeztetés</b>: <b>JetFormBuilder Limit Form Responses</b> <b>JetEngine</b> frissítést igényel.',
+		'<b>Warning</b>: <b>JetFormBuilder Limit Form Responses</b> needs <b>JetFormBuilder</b> update.' => '<b>Figyelmeztetés</b>: <b>JetFormBuilder Limit Form Responses</b> <b>JetFormBuilder</b> frissítést igényel.',
+	],
+];
