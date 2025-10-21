@@ -1,6 +1,6 @@
 # WordPress Fordítások Gyűjteménye
 
-Ez a repository WordPress bővítmények és témák fordításait tartalmazza különböző nyelveken. Jelenleg **393 bővítmény** és **9 téma** magyar fordítása érhető el. Jelenleg **391 bővítmény** és **5 téma** magyar fordítása érhető el.
+Ez a repository WordPress bővítmények és témák fordításait tartalmazza különböző nyelveken. Jelenleg **393 bővítmény** és **9 téma** magyar fordítása érhető el.
 
 ## Mappastruktúra
 
