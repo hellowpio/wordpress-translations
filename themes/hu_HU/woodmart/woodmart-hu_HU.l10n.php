@@ -2,7 +2,7 @@
 return [
 	'project-id-version' => 'Woodmart 8.3.3',
 	'report-msgid-bugs-to' => 'support@hellowp.io',
-	'po-revision-date' => '2025-10-20 08:24',
+	'po-revision-date' => '2025-10-21 09:05+0200',
 	'last-translator' => 'HelloWP <translate@hellowp.io>',
 	'language-team' => 'HelloWP <translate@hellowp.io>',
 	'language' => 'hu',

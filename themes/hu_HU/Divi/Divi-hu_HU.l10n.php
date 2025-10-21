@@ -2,7 +2,7 @@
 return [
 	'project-id-version' => 'Divi 5.0',
 	'report-msgid-bugs-to' => 'support@hellowp.io',
-	'po-revision-date' => '2025-10-19 10:30',
+	'po-revision-date' => '2025-10-21 09:05+0200',
 	'last-translator' => 'HelloWP <translate@hellowp.io>',
 	'language-team' => 'HelloWP <translate@hellowp.io>',
 	'language' => 'hu',
