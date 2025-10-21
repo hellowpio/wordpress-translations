@@ -7,8 +7,85 @@ import chalk from 'chalk';
 import { glob } from 'glob';
 import { exec } from 'child_process';
 import { promisify } from 'util';
+import crypto from 'crypto';
 
 const execAsync = promisify(exec);
+
+/**
+ * Check if PO file has changed compared to the last committed version
+ * @param {string} poFile - Path to the PO file
+ * @returns {Promise<boolean>} - True if file changed, false otherwise
+ */
+async function hasPoFileChanged(poFile) {
+    try {
+        // Get the file content from git HEAD
+        const { stdout: gitContent } = await execAsync(`git show HEAD:"${poFile}" 2>/dev/null`);
+
+        // Read current file content
+        const currentContent = fs.readFileSync(poFile, 'utf-8');
+
+        // Parse both versions
+        const gitPo = gettextParser.po.parse(gitContent);
+        const currentPo = gettextParser.po.parse(currentContent);
+
+        // Compare translations (excluding headers like PO-Revision-Date)
+        const gitTranslations = JSON.stringify(gitPo.translations);
+        const currentTranslations = JSON.stringify(currentPo.translations);
+
+        return gitTranslations !== currentTranslations;
+    } catch (err) {
+        // File doesn't exist in git (new file) or other error
+        return true;
+    }
+}
+
+/**
+ * Update PO-Revision-Date header in PO file if translations changed
+ * @param {string} poFile - Path to the PO file
+ */
+async function updateRevisionDate(poFile) {
+    try {
+        const hasChanged = await hasPoFileChanged(poFile);
+
+        if (!hasChanged) {
+            return false;
+        }
+
+        // Read and parse PO file
+        const poContent = fs.readFileSync(poFile, 'utf-8');
+        const now = new Date();
+
+        // Format date as: YYYY-MM-DD HH:MM+ZZZZ
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const day = String(now.getDate()).padStart(2, '0');
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const tzOffset = -now.getTimezoneOffset();
+        const tzHours = String(Math.floor(Math.abs(tzOffset) / 60)).padStart(2, '0');
+        const tzMinutes = String(Math.abs(tzOffset) % 60).padStart(2, '0');
+        const tzSign = tzOffset >= 0 ? '+' : '-';
+
+        const revisionDate = `${year}-${month}-${day} ${hours}:${minutes}${tzSign}${tzHours}${tzMinutes}`;
+
+        // Update PO-Revision-Date in the file
+        const updatedContent = poContent.replace(
+            /"PO-Revision-Date:.*?\\n"/,
+            `"PO-Revision-Date: ${revisionDate}\\n"`
+        );
+
+        if (updatedContent !== poContent) {
+            fs.writeFileSync(poFile, updatedContent);
+            console.log(chalk.blue('ℹ'), 'Updated PO-Revision-Date:', chalk.cyan(poFile));
+            return true;
+        }
+
+        return false;
+    } catch (err) {
+        console.log(chalk.yellow('⚠'), 'Could not update revision date:', err.message);
+        return false;
+    }
+}
 
 /**
  * Convert PO file to MO (binary format)
@@ -213,12 +290,21 @@ async function build() {
 
     console.log(chalk.blue('ℹ'), `Found ${poFiles.length} PO file(s)\n`);
 
+    // Track updated files
+    const updatedFiles = [];
+
     // Process each PO file
     for (const poFile of poFiles) {
         const dir = path.dirname(poFile);
         const basename = path.basename(poFile, '.po');
 
         try {
+            // Update PO-Revision-Date if translations changed
+            const wasUpdated = await updateRevisionDate(poFile);
+            if (wasUpdated) {
+                updatedFiles.push(poFile);
+            }
+
             const poContent = fs.readFileSync(poFile);
 
             // Generate MO file
@@ -314,6 +400,15 @@ async function build() {
         } catch (err) {
             console.log(chalk.red('✗'), 'Error processing:', poFile, err.message);
         }
+    }
+
+    // Display summary of updated translations
+    if (updatedFiles.length > 0) {
+        console.log(chalk.blue.bold('\n📝 Updated translations:\n'));
+        updatedFiles.forEach(file => {
+            console.log(chalk.cyan('  • '), file);
+        });
+        console.log(chalk.blue(`\n   Total: ${updatedFiles.length} file(s) updated`));
     }
 
     console.log(chalk.green.bold('\n✅ Build complete!\n'));
