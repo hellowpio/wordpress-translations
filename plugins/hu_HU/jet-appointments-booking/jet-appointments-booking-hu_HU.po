@@ -1,13 +1,13 @@
-# Hungarian translation for JetEngine - Custom visibility conditions.
+# Hungarian translation for Jet Appointments Booking.
 # Copyright (C) 2025 Crocoblock
 # This file is distributed under the GPL license.
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: JetEngine - Custom visibility conditions 1.1.0\n"
+"Project-Id-Version: Jet Appointments Booking 2.2.5\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
-"POT-Creation-Date: 2025-10-19T18:09:54+00:00\n"
-"PO-Revision-Date: 2025-10-19 20:09\n"
+"POT-Creation-Date: 2025-10-19T20:48:28+00:00\n"
+"PO-Revision-Date: 2025-10-19 22:48\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -16,20 +16,3421 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: sinann-po-translator\n"
-"X-Plugin-Name: JetEngine - Custom visibility conditions\n"
-"X-Plugin-Version: 1.1.0\n"
+"X-Plugin-Name: Jet Appointments Booking\n"
+"X-Plugin-Version: 2.2.5\n"
 
 #. Plugin Name of the plugin
-#: jet-engine-custom-visibility-conditions.php
-msgid "JetEngine - Custom visibility conditions"
-msgstr "JetEngine - Egyéni láthatósági feltételek"
+#: jet-appointments-booking.php
+msgid "Jet Appointments Booking"
+msgstr "Jet Appointments Booking"
+
+#. Plugin URI of the plugin
+#: jet-appointments-booking.php
+msgid "https://crocoblock.com/plugins/jetappointment/"
+msgstr "https://crocoblock.com/plugins/jetappointment/"
+
+#. Description of the plugin
+#: jet-appointments-booking.php
+msgid "A must-have solution to create forms for booking the appointments."
+msgstr "Elengedhetetlen megoldás időpontfoglaló űrlapok létrehozásához."
 
 #. Author of the plugin
-#: jet-engine-custom-visibility-conditions.php
+#: jet-appointments-booking.php
 msgid "Crocoblock"
 msgstr "Crocoblock"
 
 #. Author URI of the plugin
-#: jet-engine-custom-visibility-conditions.php
+#: jet-appointments-booking.php
 msgid "https://crocoblock.com/"
 msgstr "https://crocoblock.com/"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:87
+#: includes/admin/settings.php:208
+msgid "Slot"
+msgstr "Idősáv"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:91
+msgid "Hour"
+msgstr "Óra"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:95
+msgid "Minute"
+msgstr "Perc"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:157
+msgid "Slot Duration"
+msgstr "Idősáv időtartama"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:163
+msgid "Buffer Before Slot"
+msgstr "Pufferidő az idősáv előtt"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:169
+msgid "Buffer After Slot"
+msgstr "Pufferidő az idősáv után"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:364
+msgid "Access denied"
+msgstr "Hozzáférés megtagadva"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:383
+msgid "Empty data or post ID not found!"
+msgstr "Üres adatok vagy a bejegyzésazonosító nem található!"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:406
+msgid "Failed to save data!"
+msgstr "Nem sikerült menteni az adatokat!"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:411
+#: includes/admin/settings.php:433
+msgid "Settings saved!"
+msgstr "Beállítások mentve!"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:480
+#: includes/admin/settings/pages/working-hours.php:43
+msgid "Limited range from current date"
+msgstr "Korlátozott dátumtartomány az aktuális dátumtól"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:481
+#: includes/admin/settings/pages/working-hours.php:44
+msgid "Any date in the future"
+msgstr "Bármely jövőbeli dátum"
+
+#: includes/admin/cpt-meta-box/providers-meta.php:46
+msgid "Inherit Service Price"
+msgstr "Szolgáltatás árának öröklése"
+
+#: includes/admin/cpt-meta-box/providers-meta.php:98
+#: includes/admin/cpt-meta-box/services-meta.php:70
+msgid "Appointment Settings"
+msgstr "Időpontbeállítások"
+
+#: includes/admin/cpt-meta-box/providers-meta.php:107
+#: includes/admin/cpt-meta-box/services-meta.php:79
+#: templates/admin/jet-apb-settings/custom-day-schedule.php:3
+msgid "Custom Schedule"
+msgstr "Egyéni ütemezés"
+
+#: includes/admin/dashboard.php:163 includes/admin/dashboard.php:164
+#: templates/admin/jet-apb-appointments/appointments-timeline.php:53
+msgid "Services"
+msgstr "Szolgáltatások"
+
+#: includes/admin/dashboard.php:179 includes/admin/dashboard.php:180
+msgid "Providers"
+msgstr "Szolgáltatók"
+
+#: includes/admin/dashboard.php:193 includes/admin/dashboard.php:194
+msgid "Settings"
+msgstr "Beállítások"
+
+#: includes/admin/dashboard.php:208 includes/admin/dashboard.php:209
+msgid "Set Up"
+msgstr "Beállítás"
+
+#: includes/admin/pages/appointments.php:28
+#: templates/admin/jet-apb-appointments/appointments.php:3
+msgid "Appointments"
+msgstr "Időpontok"
+
+#: includes/admin/pages/appointments.php:104
+#: templates/admin/jet-apb-appointments/appointments-filter.php:169
+msgid "ID"
+msgstr "ID"
+
+#: includes/admin/pages/appointments.php:105 includes/listings.php:215
+msgid "User ID"
+msgstr "Felhasználó ID"
+
+#: includes/admin/pages/appointments.php:106
+msgid "Parent ID"
+msgstr "Szülő ID"
+
+#: includes/admin/pages/appointments.php:107
+msgid "User e-mail"
+msgstr "Felhasználó e-mail-címe"
+
+#: includes/admin/pages/appointments.php:108
+msgid "User Name"
+msgstr "Felhasználónév"
+
+#: includes/admin/pages/appointments.php:109
+#: includes/admin/pages/appointments.php:146
+#: includes/insert-appointment.php:220 includes/insert-appointment.php:244
+msgid "Provider"
+msgstr "Szolgáltató"
+
+#: includes/admin/pages/appointments.php:110
+#: includes/admin/pages/appointments.php:140
+#: includes/insert-appointment.php:215 includes/insert-appointment.php:242
+#: includes/wc-order-details-builder.php:349
+msgid "Service"
+msgstr "Szolgáltatás"
+
+#: includes/admin/pages/appointments.php:111
+#: includes/admin/pages/appointments.php:158
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:148
+#: includes/listings.php:237 includes/wc-integration.php:510
+#: includes/wc-order-details-builder.php:353
+#: templates/admin/common/wc-details-builder.php:26
+#: templates/admin/jet-apb-appointments/appointments-timeline.php:5
+#: assets/gutenberg/src/actions.v2/InsertAppointment/EditWCDetailModalItem.jsx:29
+#: assets/js/jfb/builder.actions.v2.js:69
+msgid "Date"
+msgstr "Dátum"
+
+#: includes/admin/pages/appointments.php:112
+#: templates/admin/jet-apb-settings/settings-working-hours.php:565
+msgid "End Date"
+msgstr "Befejezés dátuma"
+
+#: includes/admin/pages/appointments.php:113
+#: templates/admin/jet-apb-appointments/popup.php:123
+msgid "Start Time"
+msgstr "Kezdési idő"
+
+#: includes/admin/pages/appointments.php:114 includes/wc-integration.php:520
+#: templates/admin/jet-apb-appointments/popup.php:139
+msgid "End Time"
+msgstr "Befejezési idő"
+
+#: includes/admin/pages/appointments.php:115
+#: includes/admin/pages/appointments.php:152 includes/listings.php:227
+msgid "Status"
+msgstr "Állapot"
+
+#: includes/admin/pages/appointments.php:116
+msgid "Related Order"
+msgstr "Kapcsolódó rendelés"
+
+#: includes/admin/pages/appointments.php:117
+msgid "Phone"
+msgstr "Telefonszám"
+
+#: includes/admin/pages/appointments.php:118
+msgid "Comments"
+msgstr "Megjegyzések"
+
+#: includes/admin/pages/appointments.php:119
+msgid "Actions"
+msgstr "Műveletek"
+
+#: includes/admin/pages/appointments.php:120
+msgid "Appointment List"
+msgstr "Időpontlista"
+
+#: includes/admin/pages/appointments.php:159
+#: includes/admin/pages/appointments.php:166
+#: templates/admin/jet-apb-appointments/appointments-filter.php:91
+#: templates/admin/jet-apb-settings/settings-tools.php:12
+msgid "Clear"
+msgstr "Törlés"
+
+#: includes/admin/pages/appointments.php:165
+msgid "Search"
+msgstr "Keresés"
+
+#: includes/admin/settings.php:197
+#: templates/admin/jet-apb-settings/settings-labels.php:19
+msgid "Monday"
+msgstr "Hétfő"
+
+#: includes/admin/settings.php:198
+#: templates/admin/jet-apb-settings/settings-labels.php:27
+msgid "Tuesday"
+msgstr "Kedd"
+
+#: includes/admin/settings.php:199
+#: templates/admin/jet-apb-settings/settings-labels.php:35
+msgid "Wednesday"
+msgstr "Szerda"
+
+#: includes/admin/settings.php:200
+#: templates/admin/jet-apb-settings/settings-labels.php:43
+msgid "Thursday"
+msgstr "Csütörtök"
+
+#: includes/admin/settings.php:201
+#: templates/admin/jet-apb-settings/settings-labels.php:51
+msgid "Friday"
+msgstr "Péntek"
+
+#: includes/admin/settings.php:202
+#: templates/admin/jet-apb-settings/settings-labels.php:59
+msgid "Saturday"
+msgstr "Szombat"
+
+#: includes/admin/settings.php:203
+#: templates/admin/jet-apb-settings/settings-labels.php:11
+msgid "Sunday"
+msgstr "Vasárnap"
+
+#: includes/admin/settings.php:212
+msgid "Time Picker"
+msgstr "Időválasztó"
+
+#: includes/admin/settings.php:216
+msgid "Recurring"
+msgstr "Ismétlődő"
+
+#: includes/admin/settings.php:222 includes/time-recurring.php:67
+msgid "Day"
+msgstr "Nap"
+
+#: includes/admin/settings.php:226 includes/time-recurring.php:68
+msgid "Week"
+msgstr "Hét"
+
+#: includes/admin/settings.php:230 includes/time-recurring.php:69
+msgid "Month"
+msgstr "Hónap"
+
+#: includes/admin/settings.php:234 includes/time-recurring.php:70
+msgid "Year"
+msgstr "Év"
+
+#: includes/admin/settings/pages/appointment-settings-base.php:86
+#: includes/form-fields/provider-field-template-trait.php:66
+#: templates/admin/form/edit-fields.php:119
+#: templates/admin/form/edit-fields.php:143
+#: assets/js/admin/appointments.js:780 assets/js/admin/appointments.js:1426
+#: assets/js/admin/appointments.js:2178
+msgid "Select..."
+msgstr "Válasszon..."
+
+#: includes/admin/settings/pages/integrations.php:29
+msgid "Integrations"
+msgstr "Integrációk"
+
+#: includes/admin/settings/pages/workflows.php:28
+msgid "Workflows"
+msgstr "Munkafolyamatok"
+
+#: includes/admin/settings/pages/workflows.php:50
+msgid "Select trigger event..."
+msgstr "Válasszon kiváltó eseményt..."
+
+#: includes/admin/settings/pages/workflows.php:51
+msgid "Select action to run..."
+msgstr "Válasszon végrehajtandó műveletet..."
+
+#: includes/admin/settings/pages/workflows.php:98
+msgid "Immediately"
+msgstr "Azonnal"
+
+#: includes/admin/settings/pages/workflows.php:102
+msgid "Scheduled before appointment"
+msgstr "Időpont előttre ütemezve"
+
+#: includes/db-upgrader.php:39
+msgid "Start Update"
+msgstr "Indítsa el a frissítést"
+
+#: includes/db-upgrader.php:40
+msgid "Data Update"
+msgstr "Adatfrissítés"
+
+#: includes/db-upgrader.php:42
+#, php-format
+msgid ""
+"Module DB Updater init error in %s - version and slug is required arguments"
+msgstr ""
+"Module DB Updater inicializálási hiba a %s-ben - a version és a slug "
+"kötelező argumentumok"
+
+#: includes/db-upgrader.php:43
+msgid "We need to update your database to the latest version."
+msgstr "Frissítenünk kell az adatbázisát a legújabb verzióra."
+
+#: includes/db-upgrader.php:44
+msgid "DB Update complete, thank you for updating to the latest version!"
+msgstr ""
+"Az adatbázis-frissítés befejeződött, köszönjük, hogy frissített a legújabb "
+"verzióra!"
+
+#: includes/elementor-integration/manager.php:23
+msgid "Jet Appointments Booking: add booking to Google calendar"
+msgstr "Jet Appointments Booking: foglalás hozzáadása a Google Naptárhoz"
+
+#: includes/export.php:24
+msgid "You don`t have access to this URL"
+msgstr "Nincs hozzáférése ehhez az URL-hez"
+
+#: includes/export.php:24 includes/export.php:28 includes/export.php:67
+#: includes/google-calendar.php:162 includes/google-calendar.php:169
+#: includes/google-calendar.php:175 includes/google-calendar.php:181
+msgid "Error"
+msgstr "Hiba"
+
+#: includes/export.php:28
+msgid "Link is expired. Please reload appointments page and try again."
+msgstr ""
+"A hivatkozás lejárt. Kérjük, töltse újra az időpontok oldalát, és próbálja "
+"meg újra."
+
+#: includes/export.php:67
+msgid "Incorrect request data"
+msgstr "Helytelen kérési adatok"
+
+#: includes/form-widget.php:31
+msgid "Appointment Calendar"
+msgstr "Időpont-naptár"
+
+#: includes/form-widget.php:40
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:68
+msgid "Calendar Width"
+msgstr "Naptár szélessége"
+
+#: includes/form-widget.php:58 includes/form-widget.php:405
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:97
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:422
+msgid "Padding"
+msgstr "Belső margó"
+
+#: includes/form-widget.php:70 includes/form-widget.php:418
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:107
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:433
+msgid "Margin"
+msgstr "Külső margó"
+
+#: includes/form-widget.php:90
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:119
+msgid "Header"
+msgstr "Fejléc"
+
+#: includes/form-widget.php:98
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:127
+msgid "Header Background Color"
+msgstr "Fejléc háttérszíne"
+
+#: includes/form-widget.php:109
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:137
+msgid "Header Text Color"
+msgstr "Fejléc szövegszíne"
+
+#: includes/form-widget.php:128
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:158
+msgid "Arrows default color"
+msgstr "Nyilak alapértelmezett színe"
+
+#: includes/form-widget.php:139
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:167
+msgid "Arrows hover color"
+msgstr "Nyilak rámutatáskor színe"
+
+#: includes/form-widget.php:150
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:178
+msgid "Weekdays/Names"
+msgstr "Hét napjai/Nevek"
+
+#: includes/form-widget.php:167 includes/form-widget.php:223
+#: includes/form-widget.php:334 includes/form-widget.php:365
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:196
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:253
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:362
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:389
+msgid "Color"
+msgstr "Szín"
+
+#: includes/form-widget.php:178 includes/form-widget.php:268
+#: includes/form-widget.php:345 includes/form-widget.php:376
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:206
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:295
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:372
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:398
+msgid "Background Color"
+msgstr "Háttérszín"
+
+#: includes/form-widget.php:189 includes/form-widget.php:279
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:215
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:304
+msgid "Vertical Gap"
+msgstr "Függőleges távolság"
+
+#: includes/form-widget.php:206
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:236
+msgid "Weekdays/Dates"
+msgstr "Hét napjai/Dátumok"
+
+#: includes/form-widget.php:235
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:264
+msgid "Hover Color"
+msgstr "Rámutatáskori szín"
+
+#: includes/form-widget.php:246
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:274
+msgid "Active Color"
+msgstr "Aktív szín"
+
+#: includes/form-widget.php:257
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:284
+msgid "Today Color"
+msgstr "Mai nap színe"
+
+#: includes/form-widget.php:296
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:325
+msgid "Slots"
+msgstr "Idősávok"
+
+#: includes/form-widget.php:305
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:333
+msgid "Container Padding"
+msgstr "Konténer belső margója"
+
+#: includes/form-widget.php:327
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:355
+msgid "Normal"
+msgstr "Normál"
+
+#: includes/form-widget.php:358
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:382
+#: templates/admin/jet-apb-settings/settings-workflows.php:4
+msgid "Active"
+msgstr "Aktív"
+
+#: includes/form-widget.php:387
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:408
+msgid "Border Color"
+msgstr "Szegély színe"
+
+#: includes/form-widget.php:431
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:443
+msgid "Border"
+msgstr "Szegély"
+
+#: includes/form-widget.php:440
+msgid "Border Radius"
+msgstr "Szegély lekerekítése"
+
+#: includes/form-widget.php:452
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:454
+msgid "Slots Close Button Color"
+msgstr "Idősávok Bezárás gombjának színe"
+
+#: includes/form-widget.php:463
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:464
+msgid "Slots Close Button Hover Color"
+msgstr "Idősávok Bezárás gombjának rámutatáskori színe"
+
+#: includes/form-widget.php:474
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:473
+msgid "Close Button Size"
+msgstr "Bezárógomb mérete"
+
+#: includes/form-widget.php:495
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:498
+msgid "Close Button Vertical Position"
+msgstr "Bezárógomb függőleges pozíciója"
+
+#: includes/form-widget.php:516
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:523
+msgid "Close Button Horizontal Position"
+msgstr "Bezárógomb vízszintes pozíciója"
+
+#: includes/form.php:142 includes/form.php:157
+msgid "Appointment Macros:"
+msgstr "Időpont makrók:"
+
+#: includes/form.php:145
+msgid ""
+"The macro returns the appointment price. This macro works with any "
+"appointment settings, multi-bookings, recurring bookings and more."
+msgstr ""
+"A makró az időpont árát adja vissza. Ez a makró bármilyen "
+"időpontbeállítással működik, beleértve a többes foglalást, az ismétlődő "
+"foglalásokat és egyebeket."
+
+#: includes/form.php:160
+msgid "Name of the appointment service."
+msgstr "Az időponthoz tartozó szolgáltatás neve."
+
+#: includes/form.php:163
+msgid "Name of the appointment provider."
+msgstr "Az időpont szolgáltatójának neve."
+
+#: includes/form.php:166
+msgid "Link of the appointment service."
+msgstr "Az időponthoz tartozó szolgáltatás hivatkozása."
+
+#: includes/form.php:169
+msgid "Link of the appointment provider."
+msgstr "Az időpont szolgáltatójának hivatkozása."
+
+#: includes/form.php:172
+#, php-format
+msgid ""
+"Displays the date and time the appointment started. You can set the format "
+"for the date. %1$sRead more%2$s about the time format. For example: "
+"%3$s%%appointment_start|format_date(F j, Y g:i)%%%4$s"
+msgstr ""
+"Megjeleníti az időpont kezdési dátumát és idejét. Beállíthatja a dátum "
+"formátumát. %1$sTovábbi információ az időformátumról%2$s. Példa: "
+"%3$s%%appointment_start|format_date(F j, Y g:i)%%%4$s"
+
+#: includes/form.php:175
+msgid ""
+"Displays the date and time the appointment end. Also accepts date format."
+msgstr ""
+"Megjeleníti az időpont befejezésének dátumát és idejét. A dátum formátumát "
+"is elfogadja."
+
+#: includes/form.php:178
+msgid ""
+"Displays the time of the appointment in the user timezone. If timezones "
+"management are enabled."
+msgstr ""
+"Megjeleníti az időpont idejét a felhasználó időzónájában. Ha az "
+"időzónakezelés engedélyezve van."
+
+#: includes/form.php:181
+msgid ""
+"Displays the date of the appointment in the user timezone. If timezones "
+"management are enabled."
+msgstr ""
+"Megjeleníti az időpont dátumát a felhasználó időzónájában. Ha az "
+"időzónakezelés engedélyezve van."
+
+#: includes/form.php:184
+msgid "Displays the user`s timezone. If timezones management are enabled."
+msgstr ""
+"Megjeleníti a felhasználó időzónáját. Ha az időzónakezelés engedélyezve van."
+
+#: includes/form.php:188
+msgid "Displays the individual price of the appointment booked."
+msgstr "Megjeleníti a lefoglalt időpont egyedi árát."
+
+#: includes/form.php:193
+msgid ""
+"The macro displays a list of booked appointments if multi-booking is enabled"
+" in the settings. Other macros can be used within this macro."
+msgstr ""
+"A makró a lefoglalt időpontok listáját jeleníti meg, ha a beállításokban "
+"engedélyezve van a többes foglalás. Más makrók is használhatók ezen makrón "
+"belül."
+
+#: includes/form.php:344 includes/listings.php:117
+msgid "Appointment date"
+msgstr "Időpont dátuma"
+
+#: includes/form.php:345
+msgid "Appointment provider"
+msgstr "Időpont szolgáltatója"
+
+#: includes/form.php:474
+msgid "Sun"
+msgstr "Vas"
+
+#: includes/form.php:475
+msgid "Mon"
+msgstr "Hét"
+
+#: includes/form.php:476
+msgid "Tue"
+msgstr "Ked"
+
+#: includes/form.php:477
+msgid "Wed"
+msgstr "Sze"
+
+#: includes/form.php:478
+msgid "Thu"
+msgstr "Csü"
+
+#: includes/form.php:479
+msgid "Fri"
+msgstr "Pén"
+
+#: includes/form.php:480
+msgid "Sat"
+msgstr "Szo"
+
+#: includes/form.php:484
+#: templates/admin/jet-apb-settings/settings-labels.php:67
+msgid "January"
+msgstr "január"
+
+#: includes/form.php:485
+#: templates/admin/jet-apb-settings/settings-labels.php:75
+msgid "February"
+msgstr "február"
+
+#: includes/form.php:486
+#: templates/admin/jet-apb-settings/settings-labels.php:83
+msgid "March"
+msgstr "március"
+
+#: includes/form.php:487
+#: templates/admin/jet-apb-settings/settings-labels.php:91
+msgid "April"
+msgstr "április"
+
+#: includes/form.php:488
+#: templates/admin/jet-apb-settings/settings-labels.php:99
+msgid "May"
+msgstr "május"
+
+#: includes/form.php:489
+#: templates/admin/jet-apb-settings/settings-labels.php:107
+msgid "June"
+msgstr "június"
+
+#: includes/form.php:490
+#: templates/admin/jet-apb-settings/settings-labels.php:115
+msgid "July"
+msgstr "július"
+
+#: includes/form.php:491
+#: templates/admin/jet-apb-settings/settings-labels.php:123
+msgid "August"
+msgstr "augusztus"
+
+#: includes/form.php:492
+#: templates/admin/jet-apb-settings/settings-labels.php:131
+msgid "September"
+msgstr "szeptember"
+
+#: includes/form.php:493
+#: templates/admin/jet-apb-settings/settings-labels.php:139
+msgid "October"
+msgstr "október"
+
+#: includes/form.php:494
+#: templates/admin/jet-apb-settings/settings-labels.php:147
+msgid "November"
+msgstr "november"
+
+#: includes/form.php:495
+#: templates/admin/jet-apb-settings/settings-labels.php:155
+msgid "December"
+msgstr "december"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:70
+#: assets/gutenberg/src/actions.v2/InsertAppointment/index.js:7
+#: assets/js/jfb/builder.actions.v2.js:99
+msgid "Insert appointment"
+msgstr "Időpont beszúrása"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:140
+#: templates/admin/common/wc-details-builder.php:24
+#: assets/gutenberg/src/actions.v2/InsertAppointment/EditWCDetailModalItem.jsx:21
+#: assets/js/jfb/builder.actions.v2.js:69
+msgid "Service name"
+msgstr "Szolgáltatás neve"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:144
+#: templates/admin/common/wc-details-builder.php:25
+#: assets/gutenberg/src/actions.v2/InsertAppointment/EditWCDetailModalItem.jsx:25
+#: assets/js/jfb/builder.actions.v2.js:69
+msgid "Provider name"
+msgstr "Szolgáltató neve"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:152
+#: templates/admin/common/wc-details-builder.php:27
+#: assets/gutenberg/src/actions.v2/InsertAppointment/EditWCDetailModalItem.jsx:33
+#: assets/js/jfb/builder.actions.v2.js:69
+msgid "Time slot start"
+msgstr "Idősáv kezdete"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:156
+#: templates/admin/common/wc-details-builder.php:28
+#: assets/gutenberg/src/actions.v2/InsertAppointment/EditWCDetailModalItem.jsx:37
+#: assets/js/jfb/builder.actions.v2.js:69
+msgid "Time slot end"
+msgstr "Idősáv vége"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:160
+#: templates/admin/common/wc-details-builder.php:29
+#: assets/gutenberg/src/actions.v2/InsertAppointment/EditWCDetailModalItem.jsx:41
+#: assets/js/jfb/builder.actions.v2.js:69
+msgid "Full time slot"
+msgstr "Teljes idősáv"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:164
+#: templates/admin/common/wc-details-builder.php:30
+#: assets/gutenberg/src/actions.v2/InsertAppointment/EditWCDetailModalItem.jsx:45
+#: assets/js/jfb/builder.actions.v2.js:69
+msgid "Full date and time"
+msgstr "Teljes dátum és idő"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:168
+#: templates/admin/common/wc-details-builder.php:31
+#: assets/gutenberg/src/actions.v2/InsertAppointment/EditWCDetailModalItem.jsx:49
+#: assets/js/jfb/builder.actions.v2.js:69
+msgid "Form field"
+msgstr "Űrlapmező"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:172
+#: templates/admin/common/wc-details-builder.php:32
+#: assets/gutenberg/src/actions.v2/InsertAppointment/EditWCDetailModalItem.jsx:53
+#: assets/js/jfb/builder.actions.v2.js:69
+msgid "Add to Google calendar link"
+msgstr "Hozzáadás a Google Naptárhoz hivatkozás"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:183
+#: assets/gutenberg/src/actions.v2/InsertAppointment/Edit.jsx:40
+#: assets/js/jfb/builder.actions.v2.js:59
+msgid "Service ID field"
+msgstr "Szolgáltatás ID mező"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:184
+#: assets/gutenberg/src/actions.v2/InsertAppointment/Edit.jsx:64
+#: assets/js/jfb/builder.actions.v2.js:59
+msgid "Manual input Service ID"
+msgstr "Szolgáltatás ID kézi megadása"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:185
+#: assets/gutenberg/src/actions.v2/InsertAppointment/Edit.jsx:81
+#: assets/js/jfb/builder.actions.v2.js:59
+msgid "Provider ID field"
+msgstr "Szolgáltató ID mező"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:186
+#: assets/gutenberg/src/actions.v2/InsertAppointment/Edit.jsx:106
+#: assets/js/jfb/builder.actions.v2.js:59
+msgid "Manual input Provider ID"
+msgstr "Szolgáltató ID kézi megadása"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:187
+#: assets/gutenberg/src/actions.v2/InsertAppointment/Edit.jsx:122
+#: assets/js/jfb/builder.actions.v2.js:59
+msgid "Appointment date field"
+msgstr "Időpont dátummező"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:188
+#: assets/gutenberg/src/actions.v2/InsertAppointment/Edit.jsx:141
+#: assets/js/jfb/builder.actions.v2.js:59
+msgid "User e-mail field"
+msgstr "Felhasználói e-mail mező"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:189
+#: assets/gutenberg/src/actions.v2/InsertAppointment/Edit.jsx:160
+#: assets/js/jfb/builder.actions.v2.js:59
+msgid "User name field"
+msgstr "Felhasználói név mező"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:190
+msgid "Fields Map"
+msgstr "Mezők megfeleltetése"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:191
+#: assets/gutenberg/src/actions.v2/InsertAppointment/Edit.jsx:187
+#: assets/js/jfb/builder.actions.v2.js:59
+msgid "WooCommerce Price field"
+msgstr "WooCommerce ármező"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:192
+#: assets/gutenberg/src/actions.v2/InsertAppointment/Edit.jsx:207
+#: assets/js/jfb/builder.actions.v2.js:59
+msgid "WooCommerce order details"
+msgstr "WooCommerce rendelés részletei"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:193
+#: assets/gutenberg/src/actions.v2/InsertAppointment/WCFieldsMapRow.jsx:30
+#: assets/js/jfb/builder.actions.v2.js:89
+msgid "WooCommerce checkout fields map"
+msgstr "WooCommerce pénztármezők megfeleltetése"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:194
+msgid "DB columns map:"
+msgstr "DB oszlopok megfeleltetése:"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:195
+#: templates/admin/common/wc-details-builder.php:21
+#: assets/gutenberg/src/actions.v2/InsertAppointment/EditWCDetailModalItem.jsx:73
+#: assets/js/jfb/builder.actions.v2.js:69
+msgid "Type"
+msgstr "Típus"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:196
+#: templates/admin/common/wc-details-builder.php:36
+#: assets/gutenberg/src/actions.v2/InsertAppointment/EditWCDetailModalItem.jsx:80
+#: assets/js/jfb/builder.actions.v2.js:69
+msgid "Label"
+msgstr "Címke"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:197
+#: templates/admin/common/wc-details-builder.php:40
+#: assets/gutenberg/src/actions.v2/InsertAppointment/EditWCDetailModalItem.jsx:89
+#: assets/js/jfb/builder.actions.v2.js:69
+msgid "Date format"
+msgstr "Dátumformátum"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:198
+#: templates/admin/common/wc-details-builder.php:50
+#: assets/gutenberg/src/actions.v2/InsertAppointment/EditWCDetailModalItem.jsx:112
+#: assets/js/jfb/builder.actions.v2.js:69
+msgid "Time format"
+msgstr "Időformátum"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:199
+#: templates/admin/common/wc-details-builder.php:73
+#: assets/gutenberg/src/actions.v2/InsertAppointment/EditWCDetailModalItem.jsx:132
+#: assets/js/jfb/builder.actions.v2.js:69
+msgid "Select form field"
+msgstr "Válassza ki az űrlapmezőt"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:200
+#: templates/admin/common/wc-details-builder.php:80
+#: assets/gutenberg/src/actions.v2/InsertAppointment/EditWCDetailModalItem.jsx:141
+#: assets/js/jfb/builder.actions.v2.js:69
+msgid "Link text"
+msgstr "Hivatkozás szövege"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:206
+#: assets/gutenberg/src/actions.v2/InsertAppointment/Edit.jsx:191
+#: assets/js/jfb/builder.actions.v2.js:59
+msgid ""
+"Select field to get total price from. If not selectedprice will be get from "
+"post meta value."
+msgstr ""
+"Válassza ki azt a mezőt, ahonnan az összár származik. Ha nincs kiválasztva, "
+"az ár a post meta value-ból lesz véve."
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:210
+#: templates/admin/form/notification-fields.php:105
+msgid ""
+"Set up booking-related info you want to add to the WooCommerce orders and "
+"e-mails"
+msgstr ""
+"Állítsa be a foglalással kapcsolatos információkat, amelyeket hozzá kíván "
+"adni a WooCommerce rendelésekhez és e-mailekhez"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:214
+msgid ""
+"Connect WooCommerce checkout fields to appropriate form fields.\n"
+"\t\t\t\tThis allows you to pre-fill WooCommerce checkout fields after redirect to checkout."
+msgstr ""
+"Kösse össze a WooCommerce pénztármezőket a megfelelő űrlapmezőkkel.\n"
+"\t\t\t\tEz lehetővé teszi a WooCommerce pénztármezők előzetes kitöltését a pénztárra irányítás után."
+
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:61
+#: assets/js/admin/appointments.js:124
+msgid "Calendar"
+msgstr "Naptár"
+
+#: includes/google-calendar.php:162 includes/google-calendar.php:169
+msgid "Appointment ID not found in the request"
+msgstr "Az időpont ID nem található a kérésben"
+
+#: includes/google-calendar.php:175
+msgid "Appointment not found in the database"
+msgstr "Az időpont nem található az adatbázisban"
+
+#: includes/google-calendar.php:181
+msgid "Can`t build add to calendar URL"
+msgstr "Nem hozható létre az add to calendar URL"
+
+#: includes/google-calendar.php:218
+#, php-format
+msgid "Your appointment at \"%1$s\" with %2$s - %3$s "
+msgstr "Az Ön időpontja a(z) \"%1$s\" helyen, %2$s - %3$s "
+
+#: includes/insert-appointment.php:74
+msgid ""
+" info is missing in the form request. Please check your Appointment action "
+"settings according to the documentation."
+msgstr ""
+" Hiányzik az információ az űrlapkérésben. Kérjük, ellenőrizze az Appointment"
+" művelet beállításait a dokumentációnak megfelelően."
+
+#: includes/insert-appointment.php:78 assets/js/admin/appointments.js:2166
+#, php-format, js-format
+msgid "Sorry. You have not selected enough slots, minimum quantity: %s"
+msgstr ""
+"Sajnáljuk. Nem választott ki elegendő idősávot, minimális mennyiség: %s"
+
+#: includes/insert-appointment.php:89
+msgid "The entered email adderess is incorrect."
+msgstr "A megadott e-mail cím helytelen."
+
+#: includes/insert-appointment.php:97
+msgid "Guest"
+msgstr "Vendég"
+
+#: includes/insert-appointment.php:168
+msgid "Selected time is not allowed to book"
+msgstr "A kiválasztott időpont nem foglalható"
+
+#: includes/insert-appointment.php:174
+#: includes/rest-api/endpoint-add-appointment.php:86
+msgid "Appointment time already taken"
+msgstr "Az időpont már foglalt"
+
+#: includes/insert-appointment.php:214
+msgid "Appointment Date"
+msgstr "Időpont dátuma"
+
+#: includes/insert-appointment.php:216
+msgid "Email"
+msgstr "E-mail"
+
+#: includes/insert-appointment.php:230 includes/listings.php:552
+#: includes/wc-integration.php:677
+msgid "Appointment"
+msgstr "Időpont"
+
+#: includes/integrations/google-calendar/integration.php:87
+msgid "Google Calendar"
+msgstr "Google Calendar"
+
+#: includes/integrations/google-calendar/integration.php:92
+#, php-format
+msgid ""
+"Allow to set up 2-way sync with Google Calendar globally, per service or per"
+" provider. <a href=\"%s\">Full guide</a>"
+msgstr ""
+"Lehetővé teszi a kétirányú szinkronizáció beállítását a Google Calendar "
+"szolgáltatással globálisan, szolgáltatásonként vagy szolgáltatónként. <a "
+"href=\"%s\">Teljes útmutató</a>"
+
+#: includes/integrations/google-calendar/rest-api/google-auth.php:51
+msgid "Please provide Client ID and Client Secret"
+msgstr "Kérjük, adja meg a Client ID-t és a Client Secretet"
+
+#: includes/integrations/google-calendar/rest-api/google-auth.php:72
+msgid "Google Calendar disconnected"
+msgstr "Google Calendar leválasztva"
+
+#: includes/integrations/google-calendar/rest-api/google-calendars-list.php:45
+msgid "Google Calendar API client not initialized"
+msgstr "Google Calendar API kliens nincs inicializálva"
+
+#: includes/integrations/google-calendar/rest-api/google-calendars-list.php:55
+msgid "No calendars found"
+msgstr "Nem találhatók naptárak"
+
+#: includes/integrations/google-calendar/rest-api/google-calendars-meta.php:42
+msgid "Post ID or meta value is missing"
+msgstr "Hiányzik a Post ID vagy a meta value"
+
+#: includes/integrations/google-calendar/rest-api/google-calendars-meta.php:50
+msgid "Meta value updated successfully"
+msgstr "Meta value sikeresen frissítve"
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:5
+msgid "Connect Google Account"
+msgstr "Google-fiók csatlakoztatása"
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:14
+msgid "Connect"
+msgstr "Csatlakoztatás"
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:21
+msgid "Select Calendar to sync events with"
+msgstr "Válassza ki a naptárt, amellyel az eseményeket szinkronizálja"
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:22
+msgid ""
+"The Calendar to put events into and get busy slots from (if this option is "
+"enabled)"
+msgstr ""
+"Az a naptár, amelybe az eseményeket elhelyezi, és amelyből a foglalt "
+"idősávokat lekéri (ha ez az opció engedélyezve van)"
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:33
+msgid "Disconnect"
+msgstr "Leválasztás"
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:37
+msgid "Create Meet"
+msgstr "Meet létrehozása"
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:38
+msgid "Add Google Meet link for created calendar event"
+msgstr "Google Meet hivatkozás hozzáadása a létrehozott naptáreseményhez"
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:45
+msgid "Sync events from Google Calendar"
+msgstr "Események szinkronizálása a Google Calendarból"
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:46
+msgid "Sync your Google Calendar events to exclude reserved slots"
+msgstr ""
+"Szinkronizálja a Google Calendar eseményeit a foglalt idősávok kizárásához"
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:53
+msgid "Calendar synchronization interval"
+msgstr "Naptárszinkronizálás időköze"
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:54
+msgid "Choose the interval for calendar synchronization"
+msgstr "Válassza ki a naptárszinkronizálás időközét"
+
+#: includes/integrations/google-calendar/templates/data-component.php:3
+msgid ""
+"Google integration requires a page reload to get the latest data from your "
+"website. Please wait a moment..."
+msgstr ""
+"A Google-integráció oldalfrissítést igényel, hogy a legfrissebb adatokat "
+"lekérje a webhelyéről. Kérjük, várjon egy pillanatot..."
+
+#: includes/integrations/google-calendar/templates/data-component.php:24
+msgid "Redirect URL"
+msgstr "Átirányítási URL"
+
+#: includes/integrations/google-calendar/templates/data-component.php:32
+msgid "Use global Calendar connection"
+msgstr "Globális Naptár-kapcsolat használata"
+
+#: includes/integrations/google-calendar/templates/data-component.php:33
+msgid ""
+"Enable this toggle to use a single Google Calendar account for all "
+"providers/services"
+msgstr ""
+"Engedélyezze ezt a kapcsolót, hogy egyetlen Google Naptár-fiókot használjon "
+"minden szolgáltató/szolgáltatás esetén"
+
+#: includes/integrations/google-calendar/templates/data-component.php:51
+#: includes/integrations/google-calendar/templates/meta-box.php:47
+msgid ""
+"Please note: This calendar is already being used in another post. This may "
+"cause unexpected behavior"
+msgstr ""
+"Kérjük, vegye figyelembe: Ezt a naptárt már egy másik bejegyzés használja. "
+"Ez váratlan viselkedést okozhat"
+
+#: includes/integrations/zoom/actions/create-meeting-action.php:22
+msgid "Agenda"
+msgstr "Napirend"
+
+#: includes/integrations/zoom/actions/create-meeting-action.php:23
+msgid "The meeting`s agenda. Support appointment macros"
+msgstr "A megbeszélés napirendje. Támogatja az időpont-makrókat"
+
+#: includes/integrations/zoom/actions/create-meeting-action.php:32
+msgid "Password Length"
+msgstr "Jelszó hossza"
+
+#: includes/integrations/zoom/actions/create-meeting-action.php:33
+msgid ""
+"The length of the meeting password. By default is 8. Password itself will be"
+" generated automatically and stored in Appointment Meta Data"
+msgstr ""
+"A megbeszélés jelszavának hossza. Alapértelmezés szerint 8. A jelszó "
+"automatikusan generálódik és az Appointment Meta Data-ban lesz tárolva"
+
+#: includes/integrations/zoom/integration.php:86
+msgid "Zoom"
+msgstr "Zoom"
+
+#: includes/integrations/zoom/integration.php:90
+msgid "Create Zoom meeting and attach it to appointment"
+msgstr "Hozzon létre Zoom meetinget, és csatolja az időponthoz"
+
+#: includes/integrations/zoom/integration.php:141
+msgid "Zoom Start Meeting URL"
+msgstr "Zoom meeting indítási URL"
+
+#: includes/integrations/zoom/integration.php:148
+msgid "Zoom Join Meeting URL"
+msgstr "Zoom meeting csatlakozási URL"
+
+#: includes/integrations/zoom/integration.php:155
+#: includes/integrations/zoom/macros.php:32
+msgid "Zoom Meeting Password"
+msgstr "Zoom meeting jelszó"
+
+#: includes/integrations/zoom/macros.php:22
+msgid "Zoom Meeting Start URL (for admin)"
+msgstr "Zoom meeting indítási URL (admin számára)"
+
+#: includes/integrations/zoom/macros.php:27
+msgid "Zoom Meeting Join URL (for user)"
+msgstr "Zoom meeting csatlakozási URL (felhasználó számára)"
+
+#: includes/integrations/zoom/templates/data-component.php:5
+msgid "Note!"
+msgstr "Megjegyzés!"
+
+#: includes/integrations/zoom/templates/data-component.php:6
+msgid ""
+"You didn`t set your website timezone settings. To create Zoom Meetings with "
+"correct date/time, please set your timezone"
+msgstr ""
+"Nem állította be webhelye időzóna-beállításait. A Zoom meetingek helyes "
+"dátumával/időpontjával történő létrehozásához kérjük, állítsa be az "
+"időzónáját"
+
+#: includes/integrations/zoom/templates/data-component.php:6
+msgid "here"
+msgstr "itt"
+
+#: includes/integrations/zoom/templates/data-component.php:33
+msgid "Authenticate"
+msgstr "Hitelesítse"
+
+#: includes/integrations/zoom/templates/data-component.php:34
+msgid "Get an access token by given credentials"
+msgstr "Szerezzen hozzáférési tokent a megadott hitelesítő adatokkal"
+
+#: includes/integrations/zoom/templates/data-component.php:43
+msgid "Auth"
+msgstr "Hitelesítés"
+
+#: includes/integrations/zoom/templates/data-component.php:55
+msgid "Where to get these credentials?"
+msgstr "Hol szerezheti meg ezeket a hitelesítő adatokat?"
+
+#: includes/integrations/zoom/templates/data-component.php:56
+msgid ""
+"To get Zoom API credentials you need to create App at Zoom Developer portal."
+" Here you can find detailed instructions"
+msgstr ""
+"A Zoom API-hitelesítő adatok megszerzéséhez létre kell hoznia egy appot a "
+"Zoom fejlesztői portálján. Itt részletes útmutatót talál"
+
+#: includes/integrations/zoom/templates/data-component.php:56
+msgid "Create a Server-to-Server OAuth app"
+msgstr "Hozzon létre egy Server-to-Server OAuth appot"
+
+#: includes/integrations/zoom/templates/data-component.php:60
+msgid "Share the same meeting for grouped appointments"
+msgstr "Ugyanazon meeting megosztása a csoportosított időpontokhoz"
+
+#: includes/integrations/zoom/templates/data-component.php:61
+msgid "Create same zoom link for the same slot"
+msgstr "Ugyanazon idősávhoz ugyanazon Zoom hivatkozás létrehozása"
+
+#: includes/integrations/zoom/templates/data-component.php:68
+msgid "Delete meeting on appointment  cancel"
+msgstr "Törölje a meetinget az időpont  lemondásakor"
+
+#: includes/integrations/zoom/templates/data-component.php:69
+msgid ""
+"Delete previously created meeting if appropriate appointment status was "
+"changed to Cancelled, Refunded or Failed"
+msgstr ""
+"Törölje a korábban létrehozott meetinget, ha a megfelelő időpont státusza "
+"Lemondottra, Visszatérítettre vagy Sikertelenre változott"
+
+#: includes/listings.php:188
+msgid "Any status"
+msgstr "Bármely státusz"
+
+#: includes/listings.php:193
+msgid "Appointments Query"
+msgstr "Időpontok lekérdezése"
+
+#: includes/listings.php:200
+msgid "User"
+msgstr "Felhasználó"
+
+#: includes/listings.php:204
+#: templates/admin/jet-apb-appointments/appointments-filter.php:10
+msgid "All"
+msgstr "Összes"
+
+#: includes/listings.php:205
+msgid "Current User"
+msgstr "Aktuális felhasználó"
+
+#: includes/listings.php:206
+msgid "Specific User ID"
+msgstr "Konkrét felhasználói ID"
+
+#: includes/listings.php:207
+msgid "Queried User"
+msgstr "Lekérdezett felhasználó"
+
+#: includes/listings.php:241
+msgid "Any"
+msgstr "Bármely"
+
+#: includes/listings.php:242
+msgid "Future appointments"
+msgstr "Jövőbeli időpontok"
+
+#: includes/listings.php:243
+msgid "Past appointments"
+msgstr "Múltbeli időpontok"
+
+#: includes/listings.php:244
+msgid "After date"
+msgstr "Dátum után"
+
+#: includes/listings.php:245
+msgid "Up to date"
+msgstr "Dátumig"
+
+#: includes/listings.php:253
+msgid "Custom date"
+msgstr "Egyéni dátum"
+
+#: includes/listings.php:530
+msgid "User Appointments"
+msgstr "Felhasználói időpontok"
+
+#: includes/macros.php:26
+msgid "Custom DB Column Value"
+msgstr "Egyéni DB oszlopérték"
+
+#: includes/macros.php:58 includes/macros.php:66
+msgid "Appointments List Start"
+msgstr "Időpontlista kezdete"
+
+#: includes/macros.php:62 includes/macros.php:70
+msgid "Appointments List End"
+msgstr "Időpontlista vége"
+
+#: includes/macros.php:74
+msgid "Appointments Group Count"
+msgstr "Időpontcsoport száma"
+
+#: includes/macros.php:78
+msgid "Service Title"
+msgstr "Szolgáltatás címe"
+
+#: includes/macros.php:82
+msgid "Service Link"
+msgstr "Szolgáltatás hivatkozása"
+
+#: includes/macros.php:86
+msgid "Service Meta Field"
+msgstr "Szolgáltatás metamezője"
+
+#: includes/macros.php:97
+msgid "Provider Title"
+msgstr "Szolgáltató neve"
+
+#: includes/macros.php:101
+msgid "Provider Link"
+msgstr "Szolgáltató hivatkozása"
+
+#: includes/macros.php:105
+msgid "Provider Meta Field"
+msgstr "Szolgáltató meta mező"
+
+#: includes/macros.php:116
+msgid "Appointment ID"
+msgstr "Időpont azonosító"
+
+#: includes/macros.php:120
+msgid "Appointment Price"
+msgstr "Időpont ára"
+
+#: includes/macros.php:124
+msgid "Appointment User Email"
+msgstr "Időpont felhasználójának e-mail-címe"
+
+#: includes/macros.php:128
+msgid "Appointment Start Date/Time"
+msgstr "Időpont kezdési dátuma/ideje"
+
+#: includes/macros.php:139
+msgid "Appointment End Date/Time"
+msgstr "Időpont befejezési dátuma/ideje"
+
+#: includes/macros.php:150
+msgid "Appointment Meta"
+msgstr "Időpont meta"
+
+#: includes/macros.php:161
+msgid "Appointment Time in Timezone of the User"
+msgstr "Időpont ideje a felhasználó időzónájában"
+
+#: includes/macros.php:165
+msgid "Appointment Date in Timezone of the User"
+msgstr "Időpont dátuma a felhasználó időzónájában"
+
+#: includes/macros.php:169
+msgid "Timezone selected by the User"
+msgstr "A felhasználó által kiválasztott időzóna"
+
+#: includes/plugin.php:81
+msgid ""
+"<b>WARNING!</b> <b>JetAppointmentsBooking</b> plugin requires "
+"<b>JetEngine</b> plugin to work properly!"
+msgstr ""
+"<b>FIGYELEM!</b> A <b>JetAppointmentsBooking</b> bővítményhez a "
+"<b>JetEngine</b> bővítmény szükséges a megfelelő működéshez!"
+
+#: includes/public-actions/actions/cancel.php:38
+msgid ""
+"Appointments Group cancelled! If you cancelled it by mistake, you need to "
+"book this appointment again."
+msgstr ""
+"Időpontcsoport törölve! Ha véletlenül törölte, újra kell foglalnia ezt az "
+"időpontcsoportot."
+
+#: includes/public-actions/actions/cancel.php:46
+msgid ""
+"Appointment cancelled! If you cancelled it by mistake, you need to book this"
+" appointment again."
+msgstr ""
+"Időpont törölve! Ha véletlenül törölte, újra kell foglalnia ezt az "
+"időpontot."
+
+#: includes/public-actions/actions/cancel.php:71
+msgid "Cancel Appointment URL"
+msgstr "Időpont lemondásának URL-je"
+
+#: includes/public-actions/actions/cancel.php:84
+msgid "Cancel URL"
+msgstr "Lemondási URL"
+
+#: includes/public-actions/actions/confirm.php:56
+msgid "Appointments Group confirmed!"
+msgstr "Időpontcsoport megerősítve!"
+
+#: includes/public-actions/actions/confirm.php:64
+msgid "Appointment confirmed!"
+msgstr "Időpont megerősítve!"
+
+#: includes/public-actions/actions/confirm.php:78
+msgid "Confirm Appointment URL"
+msgstr "Időpont megerősítésének URL-je"
+
+#: includes/public-actions/actions/confirm.php:121
+msgid "Confirm URL"
+msgstr "Megerősítési URL"
+
+#: includes/public-actions/manager.php:63
+msgid "Token"
+msgstr "Token"
+
+#: includes/public-actions/manager.php:186
+msgid "Token is invalid or was already used."
+msgstr "A token érvénytelen, vagy már fel lett használva."
+
+#: includes/rest-api/endpoint-add-appointment.php:35
+msgid "The appointment could not be added."
+msgstr "Az időpontot nem sikerült hozzáadni."
+
+#: includes/rest-api/endpoint-add-appointment.php:102
+#, php-format
+msgid "Success! New appointments group ID:%s has been added"
+msgstr "Siker! Új időpontcsoport ID:%s hozzáadva"
+
+#: includes/rest-api/endpoint-add-appointment.php:104
+#, php-format
+msgid "Success! New appointment ID:%s has been added"
+msgstr "Siker! Új időpont ID:%s hozzáadva"
+
+#: includes/rest-api/endpoint-appointment-meta.php:65
+msgid "User Local Date"
+msgstr "Felhasználó helyi dátuma"
+
+#: includes/rest-api/endpoint-appointment-meta.php:69
+msgid "User Local Time"
+msgstr "Felhasználó helyi ideje"
+
+#: includes/rest-api/endpoint-appointment-meta.php:73
+msgid "User Timezone"
+msgstr "Felhasználó időzónája"
+
+#: includes/rest-api/endpoint-update-appointment.php:54
+msgid "No data to update"
+msgstr "Nincs frissítendő adat"
+
+#: includes/set-up.php:281
+msgid "Booking Form"
+msgstr "Foglalási űrlap"
+
+#: includes/set-up.php:288
+msgid "Single Service Booking Form"
+msgstr "Egy szolgáltatás foglalási űrlapja"
+
+#: includes/set-up.php:302
+msgid "Static Page Booking Form"
+msgstr "Statikus oldal foglalási űrlapja"
+
+#: includes/statuses.php:16
+msgctxt "Order status"
+msgid "Pending payment"
+msgstr "Fizetésre vár"
+
+#: includes/statuses.php:17
+msgctxt "Order status"
+msgid "Processing"
+msgstr "Feldolgozás alatt"
+
+#: includes/statuses.php:18
+msgctxt "Order status"
+msgid "On hold"
+msgstr "Függőben"
+
+#: includes/statuses.php:19
+msgctxt "Order status"
+msgid "Completed"
+msgstr "Teljesítve"
+
+#: includes/statuses.php:20
+msgctxt "Order status"
+msgid "Cancelled"
+msgstr "Törölve"
+
+#: includes/statuses.php:21
+msgctxt "Order status"
+msgid "Refunded"
+msgstr "Visszatérítve"
+
+#: includes/statuses.php:22
+msgctxt "Order status"
+msgid "Failed"
+msgstr "Sikertelen"
+
+#: includes/time-range.php:135
+#: templates/admin/jet-apb-appointments/popup.php:110
+msgid "Work time:"
+msgstr "Munkaidő:"
+
+#: includes/time-range.php:143
+msgid "Already booked:"
+msgstr "Már foglalt:"
+
+#: includes/time-range.php:152
+#: templates/admin/jet-apb-appointments/popup.php:118
+msgid "Start:"
+msgstr "Kezdés:"
+
+#: includes/time-range.php:153
+msgid "Set start time"
+msgstr "Kezdési idő beállítása"
+
+#: includes/time-range.php:163
+#: templates/admin/jet-apb-appointments/popup.php:130
+msgid "End:"
+msgstr "Befejezés:"
+
+#: includes/time-range.php:164
+msgid "Set end time"
+msgstr "Befejezési idő beállítása"
+
+#: includes/time-recurring.php:89
+msgid "Mo"
+msgstr "H"
+
+#: includes/time-recurring.php:90
+msgid "Tu"
+msgstr "K"
+
+#: includes/time-recurring.php:91
+msgid "We"
+msgstr "Sze"
+
+#: includes/time-recurring.php:92
+msgid "Th"
+msgstr "Cs"
+
+#: includes/time-recurring.php:93
+msgid "Fr"
+msgstr "P"
+
+#: includes/time-recurring.php:94
+msgid "Sa"
+msgstr "Szo"
+
+#: includes/time-recurring.php:95
+msgid "Su"
+msgstr "V"
+
+#: includes/time-recurring.php:136
+msgid "Repeat this appointment"
+msgstr "Ismételje meg ezt az időpontot"
+
+#: includes/time-recurring.php:195
+#: templates/admin/jet-apb-appointments/popup.php:208
+msgid "On:"
+msgstr "Ekkor:"
+
+#: includes/time-recurring.php:220
+#: templates/admin/jet-apb-appointments/popup.php:180
+msgid "Repeat Every:"
+msgstr "Ismétlés minden:"
+
+#: includes/time-recurring.php:236
+msgid "Appointment Count:"
+msgstr "Időpontok száma:"
+
+#: includes/time-recurring.php:255
+msgid "Slot Capacity Count:"
+msgstr "Idősáv kapacitása:"
+
+#: includes/time-types.php:53
+msgid "No available slots"
+msgstr "Nincs elérhető idősáv"
+
+#: includes/updater/changelog.php:129
+#, php-format
+msgid "More information about %s"
+msgstr "További információ: %s"
+
+#: includes/updater/changelog.php:131
+msgid "View details"
+msgstr "Részletek megtekintése"
+
+#: includes/wc-integration.php:160
+#, php-format
+msgid "Appointment #%d update."
+msgstr "Időpont #%d frissítése."
+
+#: includes/wc-integration.php:382
+msgid "Appointments Date"
+msgstr "Időpontok dátuma"
+
+#: includes/wc-integration.php:386
+msgid "Appointments Start Time"
+msgstr "Időpontok kezdési ideje"
+
+#: includes/wc-integration.php:390
+msgid "Appointments End Time"
+msgstr "Időpontok befejezési ideje"
+
+#: includes/wc-integration.php:492 includes/wc-order-details-builder.php:85
+msgid "Appointment Information"
+msgstr "Időpont információi"
+
+#: includes/wc-integration.php:493 includes/wc-order-details-builder.php:86
+#, php-format
+msgid "#%1$s"
+msgstr "#%1$s"
+
+#: includes/wc-integration.php:515
+msgid "Time"
+msgstr "Idő"
+
+#: includes/wc-order-details-builder.php:230
+msgid "Add"
+msgstr "Hozzáadás"
+
+#: includes/wc-order-details-builder.php:308
+msgid "Link is expired"
+msgstr "A hivatkozás lejárt"
+
+#: includes/wc-order-details-builder.php:315
+msgid "You don`t have access to this post"
+msgstr "Nincs jogosultsága ehhez a bejegyzéshez"
+
+#: includes/wc-order-details-builder.php:379
+#: templates/admin/jet-apb-settings/custom-day-schedule.php:46
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:10
+#: templates/admin/jet-apb-settings/settings-working-hours.php:299
+#: templates/admin/jet-apb-settings/settings-working-hours.php:386
+#: templates/admin/jet-apb-settings/settings-working-hours.php:465
+msgid "Are you sure?"
+msgstr "Biztos benne?"
+
+#: includes/workflows/actions/send-email.php:21
+msgid "Email to"
+msgstr "Címzett e-mail-cím"
+
+#: includes/workflows/actions/send-email.php:22
+msgid "Address to send email to. Support appointment macros"
+msgstr ""
+"Az az e-mail-cím, ahová az e-mailt elküldi. Támogatja az időpont makrókat"
+
+#: includes/workflows/actions/send-email.php:31
+msgid "Email subject"
+msgstr "E-mail tárgya"
+
+#: includes/workflows/actions/send-email.php:32
+msgid "Subject of email to sent. Support appointment macros"
+msgstr "A küldendő e-mail tárgya. Támogatja az időpont makrókat"
+
+#: includes/workflows/actions/send-email.php:41
+msgid "Sent from email"
+msgstr "Feladó e-mail-címe"
+
+#: includes/workflows/actions/send-email.php:42
+msgid "Email address to set as `From address`. Support appointment macros"
+msgstr ""
+"Az e-mail-cím, amelyet `From address`-ként beállít. Támogatja az időpont "
+"makrókat"
+
+#: includes/workflows/actions/send-email.php:51
+msgid "Sent from name"
+msgstr "Feladó neve"
+
+#: includes/workflows/actions/send-email.php:52
+msgid "Name to set as `From name`. Support appointment macros"
+msgstr ""
+"A név, amelyet `From name`-ként beállít. Támogatja az időpont makrókat"
+
+#: includes/workflows/actions/send-email.php:61
+msgid "Email message"
+msgstr "E-mail üzenet"
+
+#: includes/workflows/actions/send-email.php:62
+msgid "Content of email to sent. Support appointment macros"
+msgstr "A küldendő e-mail tartalma. Támogatja az időpont makrókat"
+
+#: includes/workflows/actions/webhook.php:19
+msgid "Webhook URL"
+msgstr "Webhook URL"
+
+#: includes/workflows/actions/webhook.php:20
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:77
+msgid "Name of the action to visually identify it in the list"
+msgstr "A művelet neve a listában történő vizuális azonosításhoz"
+
+#: includes/workflows/events/appointment-created.php:20
+msgid "Appointment Created"
+msgstr "Időpont létrehozva"
+
+#: includes/workflows/events/appointment-status-changed.php:23
+msgid "New Status"
+msgstr "Új állapot"
+
+#: includes/workflows/events/appointment-status-changed.php:24
+msgid "Trigger event if appointment status changed to selected status"
+msgstr ""
+"Esemény indítása, ha az időpont állapota a kiválasztott állapotra változik"
+
+#: includes/workflows/events/appointment-status-changed.php:52
+msgid "Appointment Status Changed"
+msgstr "Időpont állapota megváltozott"
+
+#: includes/workflows/events/appointments-group-created.php:20
+msgid "Appointments Group Created (Multi Booking)"
+msgstr "Időpontcsoport létrehozva (többszörös foglalás)"
+
+#: templates/admin/common/appointments-range.php:2
+msgid "When users can book appointments"
+msgstr "Mikor foglalhatnak a felhasználók időpontot"
+
+#: templates/admin/common/appointments-range.php:3
+msgid "Set range of dates when you accept new appointments"
+msgstr "Adja meg azt a dátumtartományt, amikor új időpontokat fogad"
+
+#: templates/admin/common/go-to-setup.php:4
+msgid "Start with some basic settings before using"
+msgstr "Kezdésként végezzen el néhány alapvető beállítást"
+
+#: templates/admin/common/go-to-setup.php:11
+msgid "Go to setup"
+msgstr "Ugrás a beállításokhoz"
+
+#: templates/admin/common/wc-details-builder.php:7
+msgid "Set up WooCommerce order details"
+msgstr "Állítsa be a WooCommerce rendelés részleteit"
+
+#: templates/admin/common/wc-details-builder.php:23
+msgid "Select type..."
+msgstr "Válasszon típust..."
+
+#: templates/admin/common/wc-details-builder.php:45
+#: templates/admin/common/wc-details-builder.php:55
+#: templates/admin/common/wc-details-builder.php:68
+#: assets/gutenberg/src/actions.v2/InsertAppointment/EditWCDetailModalItem.jsx:60
+#: assets/js/jfb/builder.actions.v2.js:69
+msgid "Formatting docs"
+msgstr "Formázási dokumentáció"
+
+#: templates/admin/common/wc-details-builder.php:60
+msgid "Date/Time format"
+msgstr "Dátum/idő formátum"
+
+#: templates/admin/common/wc-details-builder.php:75
+msgid "Select field..."
+msgstr "Válasszon mezőt..."
+
+#: templates/admin/common/wc-details-builder.php:86
+msgid "Add new item"
+msgstr "Új elem hozzáadása"
+
+#: templates/admin/common/wc-details-builder.php:90
+#: templates/admin/jet-apb-appointments/popup.php:289
+#: templates/admin/jet-apb-settings/settings-working-hours.php:490
+#: templates/admin/jet-apb-settings/settings-working-hours.php:530
+msgid "Save"
+msgstr "Mentés"
+
+#: templates/admin/common/wc-details-builder.php:91
+msgid "Saving..."
+msgstr "Mentés..."
+
+#: templates/admin/common/wc-details-builder.php:93
+#: templates/admin/jet-apb-appointments/popup.php:279
+#: templates/admin/jet-apb-appointments/popup.php:298
+#: templates/admin/jet-apb-appointments/popup.php:308
+#: templates/admin/jet-apb-settings/settings-working-hours.php:491
+#: templates/admin/jet-apb-settings/settings-working-hours.php:531
+msgid "Cancel"
+msgstr "Mégse"
+
+#: templates/admin/custom-schedule-meta-box.php:3
+msgid "Use Custom Schedule"
+msgstr "Egyéni ütemezés használata"
+
+#: templates/admin/custom-schedule-meta-box.php:4
+msgid "You can use a custom schedule for services or providers."
+msgstr "Használhat egyéni ütemezést szolgáltatásokhoz vagy szolgáltatókhoz."
+
+#: templates/admin/form/edit-fields.php:13
+#: templates/admin/form/edit-fields.php:83
+#: assets/gutenberg/src/blocks/source.js:21
+#: assets/js/jfb/builder.blocks.js:129
+msgid "Get Service ID From:"
+msgstr "Szolgáltatás ID lekérése innen:"
+
+#: templates/admin/form/edit-fields.php:17
+#: templates/admin/form/edit-fields.php:49
+#: templates/admin/form/edit-fields.php:87
+msgid "Not Selected"
+msgstr "Nincs kiválasztva"
+
+#: templates/admin/form/edit-fields.php:18
+#: templates/admin/form/edit-fields.php:50
+#: templates/admin/form/edit-fields.php:88
+#: assets/gutenberg/src/blocks/source.js:7 assets/js/jfb/builder.blocks.js:129
+msgid "Current Post ID"
+msgstr "Aktuális bejegyzés ID"
+
+#: templates/admin/form/edit-fields.php:19
+#: templates/admin/form/edit-fields.php:51
+#: templates/admin/form/edit-fields.php:89
+#: assets/gutenberg/src/blocks/source.js:11
+#: assets/js/jfb/builder.blocks.js:129
+msgid "Form Field"
+msgstr "Űrlapmező"
+
+#: templates/admin/form/edit-fields.php:20
+#: templates/admin/form/edit-fields.php:52
+#: templates/admin/form/edit-fields.php:90
+#: templates/admin/form/notification-fields.php:14
+#: templates/admin/form/notification-fields.php:27
+#: assets/gutenberg/src/actions.v2/InsertAppointment/Edit.jsx:50
+#: assets/gutenberg/src/actions.v2/InsertAppointment/Edit.jsx:91
+#: assets/gutenberg/src/blocks/source.js:15
+#: assets/js/jfb/builder.actions.v2.js:59 assets/js/jfb/builder.blocks.js:129
+msgid "Manual Input"
+msgstr "Kézi bevitel"
+
+#: templates/admin/form/edit-fields.php:26
+#: templates/admin/form/edit-fields.php:96
+msgid "Select Service Field <i>(for <b>Form Field</b> option)</i>:"
+msgstr ""
+"Válassza ki a szolgáltatás mezőjét <i>(a <b>Űrlapmező</b> opcióhoz)</i>:"
+
+#: templates/admin/form/edit-fields.php:36
+#: templates/admin/form/edit-fields.php:106
+msgid "Set Service ID <i>(for <b>Manual Input</b> option)</i>:"
+msgstr ""
+"Állítsa be a szolgáltatás ID-t <i>(a <b>Kézi bevitel</b> opcióhoz)</i>:"
+
+#: templates/admin/form/edit-fields.php:45
+#: assets/gutenberg/src/blocks/appointment-date/source.js:6
+#: assets/js/jfb/builder.blocks.js:69
+msgid "Get Provider ID From:"
+msgstr "Szolgáltató ID lekérése innen:"
+
+#: templates/admin/form/edit-fields.php:58
+msgid "Select Provider Field <i>(for <b>Form Field</b> option)</i>:"
+msgstr ""
+"Válassza ki a szolgáltató mezőjét <i>(a <b>Űrlapmező</b> opcióhoz)</i>:"
+
+#: templates/admin/form/edit-fields.php:68
+msgid "Set Provider ID <i>(for <b>Manual Input</b> option)</i>:"
+msgstr ""
+"Állítsa be a szolgáltató ID-t <i>(a <b>Kézi bevitel</b> opcióhoz)</i>:"
+
+#: templates/admin/form/edit-fields.php:115
+#: assets/gutenberg/src/blocks/appointment-provider/source.js:6
+#: assets/js/jfb/builder.blocks.js:109
+msgid "Use Custom Template For Items:"
+msgstr "Egyéni sablon használata az elemekhez:"
+
+#: templates/admin/form/edit-fields.php:120
+#: templates/admin/form/edit-fields.php:144
+#: templates/admin/jet-apb-settings/custom-day-schedule.php:58
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:14
+#: templates/admin/jet-apb-settings/settings-working-hours.php:311
+#: templates/admin/jet-apb-settings/settings-working-hours.php:398
+#: templates/admin/jet-apb-settings/settings-working-hours.php:477
+msgid "No"
+msgstr "Nem"
+
+#: templates/admin/form/edit-fields.php:121
+#: templates/admin/form/edit-fields.php:145
+#: templates/admin/jet-apb-settings/custom-day-schedule.php:51
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:12
+#: templates/admin/jet-apb-settings/settings-working-hours.php:304
+#: templates/admin/jet-apb-settings/settings-working-hours.php:391
+#: templates/admin/jet-apb-settings/settings-working-hours.php:470
+msgid "Yes"
+msgstr "Igen"
+
+#: templates/admin/form/edit-fields.php:127
+#: assets/gutenberg/src/blocks/appointment-provider/source.js:7
+#: assets/js/jfb/builder.blocks.js:109
+msgid "Custom Template ID:"
+msgstr "Egyéni sablon ID:"
+
+#: templates/admin/form/edit-fields.php:139
+#: assets/gutenberg/src/blocks/appointment-provider/source.js:8
+#: assets/js/jfb/builder.blocks.js:109
+msgid "Switch Page on Change:"
+msgstr "Oldalváltás módosításkor:"
+
+#: templates/admin/form/notification-fields.php:8
+msgid "Service ID field:"
+msgstr "Szolgáltatás ID mező:"
+
+#: templates/admin/form/notification-fields.php:21
+msgid "Provider ID field:"
+msgstr "Szolgáltató ID mező:"
+
+#: templates/admin/form/notification-fields.php:34
+msgid "Appointment date field:"
+msgstr "Időpont dátum mező:"
+
+#: templates/admin/form/notification-fields.php:45
+msgid "User e-mail field:"
+msgstr "Felhasználó e-mail mező:"
+
+#: templates/admin/form/notification-fields.php:56
+msgid "User name field:"
+msgstr "Felhasználónév mező:"
+
+#: templates/admin/form/notification-fields.php:62
+msgid "Use current user name / \"Guest\" for not logged-in users"
+msgstr ""
+"Használja az aktuális felhasználó nevét / \"Vendég\" a nem bejelentkezett "
+"felhasználók esetén"
+
+#: templates/admin/form/notification-fields.php:72
+msgid " field:"
+msgstr " mező:"
+
+#: templates/admin/form/notification-fields.php:88
+msgid "WooCommerce Price field:"
+msgstr "WooCommerce ár mező:"
+
+#: templates/admin/form/notification-fields.php:90
+msgid ""
+"Select field to get total price from. If not selected price will be get from"
+" post meta value."
+msgstr ""
+"Válassza ki azt a mezőt, amelyből a teljes ár kerül kiolvasásra. Ha nincs "
+"kiválasztva, az ár a bejegyzés meta értékéből kerül kiolvasásra."
+
+#: templates/admin/form/notification-fields.php:103
+msgid "WooCommerce order details:"
+msgstr "WooCommerce rendelési adatok:"
+
+#: templates/admin/form/notification-fields.php:109
+#: assets/gutenberg/src/actions.v2/InsertAppointment/Edit.jsx:218
+#: assets/js/jfb/builder.actions.v2.js:59
+msgid "Set up"
+msgstr "Beállítás"
+
+#: templates/admin/form/notification-fields.php:115
+msgid "WooCommerce checkout fields map:"
+msgstr "WooCommerce pénztár mezők leképezése:"
+
+#: templates/admin/form/notification-fields.php:117
+msgid ""
+"Connect WooCommerce checkout fields to appropriate form fields. This allows "
+"you to pre-fill WooCommerce checkout fields after redirect to checkout."
+msgstr ""
+"Kösse össze a WooCommerce pénztár mezőit a megfelelő űrlapmezőkkel. Ez "
+"lehetővé teszi a WooCommerce pénztár mezőinek előzetes kitöltését a "
+"pénztárra irányítás után."
+
+#: templates/admin/jet-apb-appointments/add-new-appointment.php:6
+#: templates/admin/jet-apb-appointments/popup.php:270
+msgid "Add New"
+msgstr "Új hozzáadása"
+
+#: templates/admin/jet-apb-appointments/appointments-calendar.php:27
+msgid "more"
+msgstr "továbbiak"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:17
+msgid "Upcoming"
+msgstr "Közelgő"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:24
+msgid "Past"
+msgstr "Múltbeli"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:57
+msgid "Filters"
+msgstr "Szűrők"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:67
+msgid "Export"
+msgstr "Exportálás"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:84
+#: templates/admin/jet-apb-appointments/popup.php:85
+msgid "dd/mm/yyyy"
+msgstr "dd/mm/yyyy"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:111
+msgid "Clear Filters"
+msgstr "Szűrők törlése"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:127
+msgid "Appointments to export"
+msgstr "Exportálandó időpontok"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:128
+msgid "Select what appointments to export - all or currently filtered"
+msgstr ""
+"Válassza ki, mely időpontokat exportálja - mindet vagy csak a jelenleg "
+"szűrteket"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:132
+msgid "All appointments"
+msgstr "Minden időpont"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:136
+msgid "Filtered appointments"
+msgstr "Szűrt időpontok"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:145
+msgid "Export format"
+msgstr "Export formátum"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:146
+msgid "Select format of exported data"
+msgstr "Válassza ki az exportált adatok formátumát"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:150
+msgid "CSV"
+msgstr "CSV"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:154
+msgid "iCal"
+msgstr "iCal"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:163
+msgid "Service and Provider returns"
+msgstr "Szolgáltatás és szolgáltató visszaadott értékei"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:164
+msgid "What information should be returned in service and provider columns"
+msgstr ""
+"Milyen információ jelenjen meg a szolgáltatás és szolgáltató oszlopokban"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:173
+msgid "Title"
+msgstr "Cím"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:182
+msgid "Slot date format"
+msgstr "Idősáv dátumformátuma"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:183
+#: templates/admin/jet-apb-appointments/appointments-filter.php:192
+msgid "Documentation on date and time formatting"
+msgstr "Dátum- és időformázási dokumentáció"
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:191
+msgid "Slot time format"
+msgstr "Idősáv időformátuma"
+
+#: templates/admin/jet-apb-appointments/appointments-list.php:49
+msgid "Delete group"
+msgstr "Csoport törlése"
+
+#: templates/admin/jet-apb-appointments/appointments-list.php:58
+msgid "Group"
+msgstr "Csoport"
+
+#: templates/admin/jet-apb-appointments/appointments-list.php:58
+msgid "appointments"
+msgstr "időpontok"
+
+#: templates/admin/jet-apb-appointments/appointments-timeline.php:17
+#: templates/admin/jet-apb-settings/custom-day-schedule.php:18
+#: templates/admin/jet-apb-settings/settings-working-hours.php:501
+msgid "From"
+msgstr "Ettől"
+
+#: templates/admin/jet-apb-appointments/appointments-timeline.php:24
+#: templates/admin/jet-apb-settings/custom-day-schedule.php:28
+#: templates/admin/jet-apb-settings/settings-working-hours.php:515
+msgid "To"
+msgstr "Eddig"
+
+#: templates/admin/jet-apb-appointments/appointments-timeline.php:30
+msgid "Time Interval"
+msgstr "Időintervallum"
+
+#: templates/admin/jet-apb-appointments/appointments.php:12
+msgid "Appointments is loading..."
+msgstr "Időpontok betöltése..."
+
+#: templates/admin/jet-apb-appointments/appointments.php:17
+msgid "No appointments found."
+msgstr "Nem találhatók időpontok."
+
+#: templates/admin/jet-apb-appointments/config.php:20
+msgid "General settings"
+msgstr "Általános beállítások"
+
+#: templates/admin/jet-apb-appointments/config.php:27
+msgid "Group items by days"
+msgstr "Elemek csoportosítása napok szerint"
+
+#: templates/admin/jet-apb-appointments/config.php:35
+msgid "Group items by parents"
+msgstr "Elemek csoportosítása szülők szerint"
+
+#: templates/admin/jet-apb-appointments/config.php:40
+msgid "Date Format"
+msgstr "Dátumformátum"
+
+#: templates/admin/jet-apb-appointments/config.php:50
+msgid "Allowed format options"
+msgstr "Engedélyezett formátumopciók"
+
+#: templates/admin/jet-apb-appointments/config.php:56
+msgid "Filter Visibility"
+msgstr "Szűrő láthatósága"
+
+#: templates/admin/jet-apb-appointments/pagination.php:17
+msgid "Results per page"
+msgstr "Eredmények oldalanként"
+
+#: templates/admin/jet-apb-appointments/popup.php:11
+msgid "Are you sure? Deleted appointment can't be restored."
+msgstr "Biztos benne? A törölt időpont nem állítható vissza."
+
+#: templates/admin/jet-apb-appointments/popup.php:14
+msgid ""
+"Do you want to delete ALL ITEMS IN THE GROUP? Deleted appointments can't be "
+"restored."
+msgstr ""
+"Törli a CSOPORT ÖSSZES ELEMÉT? A törölt időpontok nem állíthatók vissza."
+
+#: templates/admin/jet-apb-appointments/popup.php:17
+msgid "Edit Appointment:"
+msgstr "Időpont szerkesztése:"
+
+#: templates/admin/jet-apb-appointments/popup.php:20
+msgid "Add New Appointment:"
+msgstr "Új időpont hozzáadása:"
+
+#: templates/admin/jet-apb-appointments/popup.php:23
+msgid "Appointment Details:"
+msgstr "Időpont részletei:"
+
+#: templates/admin/jet-apb-appointments/popup.php:114
+msgid "Busy time:"
+msgstr "Foglalt idő:"
+
+#: templates/admin/jet-apb-appointments/popup.php:178
+#: templates/public/appointment-calendar.php:12
+msgid "Repeat appointment:"
+msgstr "Időpont ismétlése:"
+
+#: templates/admin/jet-apb-appointments/popup.php:191
+msgid "Count:"
+msgstr "Darabszám:"
+
+#: templates/admin/jet-apb-appointments/popup.php:224
+#: templates/public/appointment-calendar.php:19
+msgid "Appointment details:"
+msgstr "Időpont részletei:"
+
+#: templates/admin/jet-apb-appointments/popup.php:228
+msgid "No appointments selected :("
+msgstr "Nincs kiválasztott időpont :("
+
+#: templates/admin/jet-apb-appointments/popup.php:253
+msgid "Meta Data:"
+msgstr "Metaadatok:"
+
+#: templates/admin/jet-apb-appointments/popup.php:319
+#: templates/admin/jet-apb-appointments/popup.php:344
+msgid "Delete"
+msgstr "Törlés"
+
+#: templates/admin/jet-apb-appointments/popup.php:332
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: templates/admin/jet-apb-settings/set-up.php:5
+msgid "Step 1 of 4. Connect post types"
+msgstr "1. lépés a 4-ből. Bejegyzéstípusok összekapcsolása"
+
+#: templates/admin/jet-apb-settings/set-up.php:9
+#, php-format
+msgid ""
+"To start you need to create a post type for appointment services (and "
+"providers if you need it). If you have already created the required post "
+"types, please select it from the list below. If no - please go to <a "
+"href=\"%1$s\">Post Types</a> page and create it."
+msgstr ""
+"Kezdésként létre kell hoznia egy bejegyzéstípust az időpontszolgáltatásokhoz"
+" (és szükség esetén a szolgáltatókhoz). Ha már létrehozta a szükséges "
+"bejegyzéstípusokat, kérjük, válassza ki az alábbi listából. Ha nem, kérjük, "
+"lépjen a <a href=\"%1$s\">Bejegyzéstípusok</a> oldalra, és hozza létre."
+
+#: templates/admin/jet-apb-settings/set-up.php:12
+#: templates/admin/jet-apb-settings/settings-general.php:3
+msgid "Services post type"
+msgstr "Szolgáltatások bejegyzéstípus"
+
+#: templates/admin/jet-apb-settings/set-up.php:13
+#: templates/admin/jet-apb-settings/set-up.php:148
+#: templates/admin/jet-apb-settings/settings-general.php:4
+msgid "Select post type to fill services from"
+msgstr "Válassza ki a szolgáltatások forrásául szolgáló bejegyzéstípust"
+
+#: templates/admin/jet-apb-settings/set-up.php:20
+msgid "Add providers"
+msgstr "Szolgáltatók hozzáadása"
+
+#: templates/admin/jet-apb-settings/set-up.php:21
+msgid "Check this if you want to manage services providers"
+msgstr "Jelölje be ezt, ha a szolgáltatók kezelését szeretné"
+
+#: templates/admin/jet-apb-settings/set-up.php:26
+#: templates/admin/jet-apb-settings/settings-general.php:12
+msgid "Provider post type"
+msgstr "Szolgáltatók bejegyzéstípus"
+
+#: templates/admin/jet-apb-settings/set-up.php:27
+#: templates/admin/jet-apb-settings/settings-general.php:13
+msgid "Select post type to fill providers from"
+msgstr "Válassza ki a szolgáltatók forrásául szolgáló bejegyzéstípust"
+
+#: templates/admin/jet-apb-settings/set-up.php:44
+msgid "Step 2 of 4. Setup DB tables"
+msgstr "2. lépés a 4-ből. DB táblák beállítása"
+
+#: templates/admin/jet-apb-settings/set-up.php:50
+msgid "Required columns"
+msgstr "Szükséges oszlopok"
+
+#: templates/admin/jet-apb-settings/set-up.php:53
+msgid "Minimum set of required DB columns"
+msgstr "Minimálisan szükséges DB-oszlopok"
+
+#: templates/admin/jet-apb-settings/set-up.php:67
+#: templates/admin/jet-apb-settings/settings-tools.php:24
+msgid "New DB Column"
+msgstr "Új DB-oszlop"
+
+#: templates/admin/jet-apb-settings/set-up.php:83
+#: templates/admin/jet-apb-settings/settings-tools.php:40
+msgid "Column name"
+msgstr "Oszlop neve"
+
+#: templates/admin/jet-apb-settings/set-up.php:84
+#: templates/admin/jet-apb-settings/settings-tools.php:41
+msgid "Name for additional DB column"
+msgstr "További DB-oszlop neve"
+
+#: templates/admin/jet-apb-settings/set-up.php:98
+msgid "Step 3 of 4. Setup working hours and days off"
+msgstr "3. lépés a 4-ből. Munkaidő és szabadnapok beállítása"
+
+#: templates/admin/jet-apb-settings/set-up.php:110
+msgid "Step 4 of 4. Setup additional options"
+msgstr "4. lépés a 4-ből. További beállítások megadása"
+
+#: templates/admin/jet-apb-settings/set-up.php:114
+#: templates/admin/jet-apb-settings/set-up.php:175
+#: templates/admin/jet-apb-settings/settings-general.php:50
+#: templates/admin/jet-apb-settings/settings-general.php:66
+msgid "WooCommerce Integration"
+msgstr "WooCommerce-integráció"
+
+#: templates/admin/jet-apb-settings/set-up.php:115
+#: templates/admin/jet-apb-settings/settings-general.php:51
+#: templates/admin/jet-apb-settings/settings-general.php:67
+msgid "Check this to connect appointments with WooCommerce checkout"
+msgstr ""
+"Jelölje be ezt az időpontok WooCommerce pénztárral való összekapcsolásához"
+
+#: templates/admin/jet-apb-settings/set-up.php:122
+#: templates/admin/jet-apb-settings/settings-general.php:57
+msgid "Two-way WC orders synch"
+msgstr "Kétirányú WC-rendelések szinkronizálása"
+
+#: templates/admin/jet-apb-settings/set-up.php:123
+msgid ""
+"If you enable this option, WC order status will be updated on appointment "
+"status change (by if you update WC order status, appointment status will be "
+"also updated, but not vice versa)"
+msgstr ""
+"Ha engedélyezi ezt az opciót, a WC rendelés állapota frissül az időpont "
+"státuszának változásakor (ha frissíti a WC rendelés állapotát, az időpont "
+"státusza is frissül, de nem fordítva)"
+
+#: templates/admin/jet-apb-settings/set-up.php:129
+msgid "Create a Single Service Booking Form"
+msgstr "Hozzon létre egy szolgáltatáshoz tartozó foglalási űrlapot"
+
+#: templates/admin/jet-apb-settings/set-up.php:130
+msgid ""
+"Create a booking form for a single service page (without services select "
+"field). JetFormBuilder plugin or JetEngine forms module should be enabled"
+msgstr ""
+"Hozzon létre foglalási űrlapot egyetlen szolgáltatás oldalához "
+"(szolgáltatásválasztó mező nélkül). A JetFormBuilder pluginnek vagy a "
+"JetEngine forms module-nak engedélyezve kell lennie"
+
+#: templates/admin/jet-apb-settings/set-up.php:137
+msgid "Create Sample Page Booking Form"
+msgstr "Hozzon létre mintaoldal foglalási űrlapot"
+
+#: templates/admin/jet-apb-settings/set-up.php:138
+msgid ""
+"Create booking form for any static page (with services select field). "
+"JetFormBuilder plugin or JetEngine forms module should be enabled"
+msgstr ""
+"Hozzon létre foglalási űrlapot bármely statikus oldalhoz "
+"(szolgáltatásválasztó mezővel). A JetFormBuilder plugin vagy a JetEngine "
+"forms module legyen engedélyezve"
+
+#: templates/admin/jet-apb-settings/set-up.php:147
+msgid "Сreate a form in"
+msgstr "Сkészítsen űrlapot itt"
+
+#: templates/admin/jet-apb-settings/set-up.php:159
+msgid "Congratulations! You're all set!"
+msgstr "Gratulálunk! Minden be van állítva!"
+
+#: templates/admin/jet-apb-settings/set-up.php:164
+msgid "Post Types"
+msgstr "Bejegyzéstípusok"
+
+#: templates/admin/jet-apb-settings/set-up.php:167
+msgid "Manage Services"
+msgstr "Szolgáltatások kezelése"
+
+#: templates/admin/jet-apb-settings/set-up.php:170
+msgid "Manage Providers"
+msgstr "Szolgáltatók kezelése"
+
+#: templates/admin/jet-apb-settings/set-up.php:178
+#: templates/admin/jet-apb-settings/settings-general.php:27
+msgid "Enabled"
+msgstr "Engedélyezve"
+
+#: templates/admin/jet-apb-settings/set-up.php:181
+#: templates/admin/jet-apb-settings/settings-general.php:31
+msgid "Disabled"
+msgstr "Letiltva"
+
+#: templates/admin/jet-apb-settings/set-up.php:184
+msgid "Related product"
+msgstr "Kapcsolódó termék"
+
+#: templates/admin/jet-apb-settings/set-up.php:189
+msgid "Created Forms"
+msgstr "Létrehozott űrlapok"
+
+#: templates/admin/jet-apb-settings/set-up.php:196
+msgid ""
+"<b>Note:</b> If you added additional DB columns, you need to add "
+"corresponding fields to the forms and notification settings."
+msgstr ""
+"<b>Megjegyzés:</b> Ha további DB oszlopokat adott hozzá, a megfelelő mezőket"
+" hozzá kell adnia az űrlapokhoz és az értesítési beállításokhoz."
+
+#: templates/admin/jet-apb-settings/set-up.php:201
+msgid ""
+"To make all settings safe, you can disable Set Up Wizard in plugin settings "
+"(<b>Advanced</b> tab)"
+msgstr ""
+"A beállítások biztonsága érdekében letilthatja a Set Up Wizardot a plugin "
+"beállításainál (<b>Advanced</b> fül)"
+
+#: templates/admin/jet-apb-settings/set-up.php:209
+msgid "Go to plugin settings"
+msgstr "Ugrás a plugin beállításaihoz"
+
+#: templates/admin/jet-apb-settings/set-up.php:223
+msgid "Prev"
+msgstr "Előző"
+
+#: templates/admin/jet-apb-settings/set-up.php:232
+msgid "Finish"
+msgstr "Befejezés"
+
+#: templates/admin/jet-apb-settings/set-up.php:235
+msgid "Next"
+msgstr "Következő"
+
+#: templates/admin/jet-apb-settings/set-up.php:243
+msgid "Plugin is already set up."
+msgstr "A plugin már be van állítva."
+
+#: templates/admin/jet-apb-settings/set-up.php:244
+msgid ""
+"If you want to reset current plugin data and set it again press the button "
+"below"
+msgstr ""
+"Ha vissza szeretné állítani a jelenlegi plugin adatait, és újra beállítani, "
+"nyomja meg az alábbi gombot"
+
+#: templates/admin/jet-apb-settings/set-up.php:250
+msgid "Reset"
+msgstr "Visszaállítás"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:3
+msgid "Availability check by"
+msgstr "Elérhetőség ellenőrzése ez alapján"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:4
+msgid ""
+"Select type of slots availability check - through all services or "
+"independent by each service"
+msgstr ""
+"Válassza ki az idősávok elérhetőségének ellenőrzési típusát – minden "
+"szolgáltatáson keresztül vagy szolgáltatásonként függetlenül"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:21
+msgid "How to process 'on-hold' appointments"
+msgstr "Hogyan kezelje az 'on-hold' időpontokat"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:22
+msgid ""
+"Select the way how 'on-hold' appointments slots will be handled in the "
+"calendar. 'on-hold' appointments used when you integrate appointments with "
+"some payment system from JetFormBuilder or WooCommerce"
+msgstr ""
+"Válassza ki, hogyan legyenek kezelve az 'on-hold' időpontok idősávjai a "
+"naptárban. Az 'on-hold' időpontok akkor használatosak, amikor az időpontokat"
+" a JetFormBuilder vagy a WooCommerce valamely fizetési rendszerével "
+"integrálja."
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:39
+msgid "Automatically switch appointments status"
+msgstr "Időpontok állapotának automatikus váltása"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:40
+msgid ""
+"Check this to automatically change status for 'pending' or 'on hold' "
+"appointments to 'failed' after selected period of time. This is may be "
+"useful if you want automatically make available not confirmed slots."
+msgstr ""
+"Jelölje be ezt, hogy a 'pending' vagy 'on hold' időpontok állapota a "
+"kiválasztott időszak után automatikusan 'failed'-re váltson. Ez hasznos "
+"lehet, ha automatikusan elérhetővé szeretné tenni a nem megerősített "
+"idősávokat."
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:46
+msgid "Switch interval"
+msgstr "Váltási időköz"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:47
+msgid "Select switching appointments time interval"
+msgstr "Válassza ki az időpontok állapotváltásának időközét"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:56
+msgid "Switch from"
+msgstr "Váltás erről"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:57
+msgid "Find appointments with this status"
+msgstr "Keresse meg az ezzel az állapottal rendelkező időpontokat"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:80
+msgid "Switch to"
+msgstr "Váltás erre"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:81
+msgid "Switch status to this"
+msgstr "Állapot váltása erre"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:100
+msgid "Generate Confirmation URLs"
+msgstr "Megerősítő URL-ek generálása"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:101
+msgid ""
+"Generate for each appointments unique URLs to confirm or decline "
+"appointment. URLs are stored in the Appointment meta data and can be used "
+"inside emails or webhooks."
+msgstr ""
+"Hozzon létre minden egyes időponthoz egyedi URL-eket az időpont "
+"megerősítéséhez vagy elutasításához. Az URL-ek az időpont metaadataiban "
+"tárolódnak, és e-mailekben vagy webhookokban használhatók."
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:108
+msgid "Generate Same Confirmation URLs for appointments in group"
+msgstr "Azonos megerősítő URL-ek generálása a csoportban lévő időpontokhoz"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:109
+msgid ""
+"For all appointments in the group, the confirmation and cancellation links "
+"will be the same."
+msgstr ""
+"A csoport összes időpontjához a megerősítési és lemondási hivatkozások "
+"azonosak lesznek."
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:114
+msgid "Unique link for each appointment"
+msgstr "Egyedi hivatkozás minden időponthoz"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:118
+msgid "One link for group"
+msgstr "Egy hivatkozás a csoporthoz"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:128
+msgid "Confirm Page Shows"
+msgstr "Megerősítő oldal megjelenítése"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:129
+msgid ""
+"How to present information on the Confirmation page - with plain text "
+"message or custom template"
+msgstr ""
+"Hogyan jelenjen meg az információ a megerősítő oldalon – egyszerű szöveges "
+"üzenettel vagy egyéni sablonnal"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:134
+#: templates/admin/jet-apb-settings/settings-advanced.php:216
+msgid "Text Message"
+msgstr "Szöveges üzenet"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:138
+#: templates/admin/jet-apb-settings/settings-advanced.php:220
+msgid "Custom Template"
+msgstr "Egyéni sablon"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:148
+msgid "Appointment confirmation deadline"
+msgstr "Időpont-megerősítés határideje"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:149
+msgid ""
+"Specify a confirmation time limit before the start of appointment. Once this"
+" deadline passes, confirmation URL will no longer be accepted."
+msgstr ""
+"Adja meg a megerősítés időkorlátját az időpont kezdete előtt. A határidő "
+"lejárta után a megerősítő URL már nem lesz elfogadva."
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:166
+#: templates/admin/jet-apb-settings/settings-advanced.php:248
+msgid "Minute(s)"
+msgstr "Perc"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:170
+#: templates/admin/jet-apb-settings/settings-advanced.php:252
+msgid "Hour(s)"
+msgstr "Óra"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:174
+#: templates/admin/jet-apb-settings/settings-advanced.php:256
+msgid "Day(s)"
+msgstr "Nap(ok)"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:178
+#: templates/admin/jet-apb-settings/settings-advanced.php:260
+msgid "Week(s)"
+msgstr "Hét(ek)"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:190
+msgid "Confirmed Message"
+msgstr "Megerősítési üzenet"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:191
+msgid "Message to show on appointment confirmation"
+msgstr "Üzenet, amely az időpont megerősítésekor jelenjen meg"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:199
+msgid "Confirm Page Template"
+msgstr "Megerősítő oldal sablonja"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:200
+msgid ""
+"Select template to use as confiramtion page. This template will replace "
+"whole page content."
+msgstr ""
+"Válassza ki a sablont megerősítő oldalnak. Ez a sablon a teljes oldal "
+"tartalmát lecseréli."
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:210
+msgid "Cancellation Page Shows"
+msgstr "Lemondási oldal megjelenítése"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:211
+msgid ""
+"How to present information on the Cancellation page - with plain text "
+"message or custom template"
+msgstr ""
+"Hogyan jelenjen meg az információ a Lemondási oldalon - egyszerű szöveges "
+"üzenettel vagy egyéni sablonnal"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:230
+msgid "Appointment cancellation deadline"
+msgstr "Időpont lemondási határideje"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:231
+msgid ""
+"Specify a cancellation time limit before the start of appointment. Once this"
+" deadline passes, cancellation URL will no longer be accepted."
+msgstr ""
+"Adja meg az időpont kezdete előtti lemondási időkorlátot. A határidő lejárta"
+" után a lemondási URL már nem kerül elfogadásra."
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:272
+msgid "Cancelled Message"
+msgstr "Lemondási üzenet"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:273
+msgid "Message to show on appointment cancel"
+msgstr "Üzenet, amely az időpont lemondásakor jelenjen meg"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:281
+msgid "Cancellation Page Template"
+msgstr "Lemondási oldal sablonja"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:282
+msgid ""
+"Select template to use as cancellation page. This template will replace "
+"whole page content."
+msgstr ""
+"Válassza ki a lemondási oldalhoz használni kívánt sablont. Ez a sablon a "
+"teljes oldal tartalmát lecseréli."
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:291
+msgid "Hide Set Up Wizard"
+msgstr "Beállítási varázsló elrejtése"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:292
+msgid "Check this to hide Set Up page to avoid unnecessary plugin resets"
+msgstr ""
+"Jelölje be ezt a Beállítási oldal elrejtéséhez, hogy elkerülje a felesleges "
+"bővítmény-visszaállításokat"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:298
+msgid "Access Capability"
+msgstr "Hozzáférési jogosultság"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:299
+msgid ""
+"The string to change access capability to appointments admin page and "
+"appointments actions."
+msgstr ""
+"A karakterlánc, amellyel módosíthatja az időpontok admin oldalához és az "
+"időpontok műveleteihez tartozó hozzáférési jogosultságot."
+
+#: templates/admin/jet-apb-settings/settings-general.php:22
+msgid "Service Slot Duplicating Across Providers"
+msgstr "Szolgáltatási idősávok duplikálása a szolgáltatók között"
+
+#: templates/admin/jet-apb-settings/settings-general.php:43
+msgid ""
+"Please note:\n"
+"\t\tYou have providers with custom schedules, so slot sharing is always enabled. If you want to disable slot sharing, please disable the custom schedule for all providers."
+msgstr ""
+"Kérjük, vegye figyelembe:\n"
+"\t\tVannak egyéni beosztással rendelkező szolgáltatói, ezért az idősáv-megosztás mindig engedélyezett. Ha le szeretné tiltani az idősáv-megosztást, kérjük, tiltsa le az egyéni beosztást minden szolgáltatónál."
+
+#: templates/admin/jet-apb-settings/settings-general.php:58
+msgid ""
+"If you enable this option, WC order status will be updated on appointment "
+"status change (by default, if you update an appointment status, related "
+"Order will remain the same)"
+msgstr ""
+"Ha engedélyezi ezt az opciót, a WC rendelés állapota frissül az időpont "
+"állapotának változásakor (alapértelmezés szerint, ha frissíti egy időpont "
+"állapotát, a kapcsolódó Rendelés változatlan marad)"
+
+#: templates/admin/jet-apb-settings/settings-general.php:70
+msgid "Please install and activate <b>WooCommerce</b> plugin"
+msgstr "Kérjük, telepítse és aktiválja a <b>WooCommerce</b> bővítményt"
+
+#: templates/admin/jet-apb-settings/settings-general.php:75
+msgid "Manage Capacity"
+msgstr "Kapacitás kezelése"
+
+#: templates/admin/jet-apb-settings/settings-general.php:76
+msgid "Allow to manage services capacity"
+msgstr "Lehetővé teszi a szolgáltatások kapacitásának kezelését"
+
+#: templates/admin/jet-apb-settings/settings-general.php:82
+msgid "Show Capacity Counter"
+msgstr "Kapacitásszámláló megjelenítése"
+
+#: templates/admin/jet-apb-settings/settings-general.php:83
+msgid "Show service capacity count in slots"
+msgstr "Jelenítse meg a szolgáltatás kapacitását az idősávokban"
+
+#: templates/admin/jet-apb-settings/settings-general.php:90
+msgid "User Can Manage Booked Capacity"
+msgstr "A felhasználó kezelheti a lefoglalt kapacitást"
+
+#: templates/admin/jet-apb-settings/settings-general.php:91
+msgid "Allow user to change count of booked items for the selected slot"
+msgstr ""
+"Engedélyezze a felhasználónak, hogy módosítsa a kiválasztott idősávhoz "
+"tartozó foglalt tételek számát"
+
+#: templates/admin/jet-apb-settings/settings-general.php:100
+msgid ""
+"Please note:\n"
+"\t\tYou have the \"Service Slot Duplicating Across Providers\" option disabled. This means the service capacity will define the total number of slots that can be booked across all providers, not the number of slots per provider."
+msgstr ""
+"Kérjük, vegye figyelembe:\n"
+"\t\tA \"Service Slot Duplicating Across Providers\" opció ki van kapcsolva. Ez azt jelenti, hogy a szolgáltatás kapacitása az összes szolgáltatóra együtt határozza meg a lefoglalható idősávok teljes számát, nem pedig a szolgáltatónkénti idősávok számát."
+
+#: templates/admin/jet-apb-settings/settings-labels.php:3
+msgid "Use custom labels"
+msgstr "Egyéni címkék használata"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:4
+msgid "Check this change default weekdays and month labels"
+msgstr ""
+"Jelölje be az alapértelmezett hét napjai és hónapok címkéinek módosításához"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:12
+msgid "By default: Sun"
+msgstr "Alapértelmezett: Vas"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:20
+msgid "By default: Mon"
+msgstr "Alapértelmezett: Hét"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:28
+msgid "By default: Tue"
+msgstr "Alapértelmezett: Ked"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:36
+msgid "By default: Wed"
+msgstr "Alapértelmezett: Sze"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:44
+msgid "By default: Thu"
+msgstr "Alapértelmezett: Csü"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:52
+msgid "By default: Fri"
+msgstr "Alapértelmezett: Pén"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:60
+msgid "By default: Sat"
+msgstr "Alapértelmezett: Szo"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:68
+msgid "By default: January"
+msgstr "Alapértelmezett: Január"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:76
+msgid "By default: February"
+msgstr "Alapértelmezett: Február"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:84
+msgid "By default: March"
+msgstr "Alapértelmezett: Március"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:92
+msgid "By default: April"
+msgstr "Alapértelmezett: Április"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:100
+msgid "By default: May"
+msgstr "Alapértelmezett: Május"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:108
+msgid "By default: June"
+msgstr "Alapértelmezett: Június"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:116
+msgid "By default: July"
+msgstr "Alapértelmezett: Július"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:124
+msgid "By default: August"
+msgstr "Alapértelmezett: Augusztus"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:132
+msgid "By default: September"
+msgstr "Alapértelmezett: Szeptember"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:140
+msgid "By default: October"
+msgstr "Alapértelmezett: Október"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:148
+msgid "By default: November"
+msgstr "Alapértelmezett: November"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:156
+msgid "By default: December"
+msgstr "Alapértelmezett: December"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:163
+msgid "Form Error: Appointment time already taken"
+msgstr "Űrlaphiba: Az időpont már foglalt"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:164
+msgid "By default: Appointment time already taken"
+msgstr "Alapértelmezés szerint: Az időpont már foglalt"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:171
+msgid "Form Error: Selected time is not allowed to book"
+msgstr "Űrlaphiba: A kiválasztott időpont nem foglalható"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:172
+msgid "By default: Selected time is not allowed to book"
+msgstr "Alapértelmezés szerint: A kiválasztott időpont nem foglalható"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:179
+msgid "Form Error: You have not selected enough slots"
+msgstr "Űrlaphiba: Nem választott ki elegendő idősávot"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:180
+#, php-format
+msgid ""
+"By default: Sorry. You have not selected enough slots, minimum quantity: %s"
+msgstr ""
+"Alapértelmezés szerint: Elnézést. Nem választott ki elegendő idősávot, "
+"minimális mennyiség: %s"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:187
+msgid "Appointment details label"
+msgstr "Időpont részletei címke"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:188
+msgid "By default: Appointment details"
+msgstr "Alapértelmezés szerint: Időpont részletei"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:195
+msgid "Recurring Appointment Count label"
+msgstr "Ismétlődő időpontok száma címke"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:196
+msgid "By default: Appointment Count"
+msgstr "Alapértelmezés szerint: Időpontok száma"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:203
+msgid "Recurring Slot Capacity Count label"
+msgstr "Ismétlődő idősáv kapacitása címke"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:204
+msgid "By default: Slot Capacity Count"
+msgstr "Alapértelmezés szerint: Idősáv kapacitása"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:211
+msgid "Invalid Confirmation or Cancellation Token label"
+msgstr "Érvénytelen megerősítő vagy lemondási token címke"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:212
+msgid "By default: Token is invalid or was already used."
+msgstr ""
+"Alapértelmezés szerint: A token érvénytelen vagy már fel lett használva."
+
+#: templates/admin/jet-apb-settings/settings-layout.php:4
+#: templates/admin/jet-apb-settings/settings-layout.php:57
+msgid "Calendar layout"
+msgstr "Naptár elrendezése"
+
+#: templates/admin/jet-apb-settings/settings-layout.php:5
+#: templates/admin/jet-apb-settings/settings-layout.php:58
+msgid "Select layout of calendar for the front-end form"
+msgstr "Válassza ki a naptár elrendezését a front-end űrlaphoz"
+
+#: templates/admin/jet-apb-settings/settings-layout.php:22
+msgid "Scroll to Appointment details after select slot"
+msgstr "Görgetés az időpont részleteihez idősáv kiválasztása után"
+
+#: templates/admin/jet-apb-settings/settings-layout.php:23
+msgid ""
+"Automatically scrolls page to Appointment details section after selecting "
+"slot in the calendar."
+msgstr ""
+"Automatikusan az oldal az időpont részletei szakaszhoz görget, miután "
+"kiválaszt egy idősávot a naptárban."
+
+#: templates/admin/jet-apb-settings/settings-layout.php:29
+#: templates/admin/jet-apb-settings/settings-layout.php:67
+msgid "Show timezones picker in calendar"
+msgstr "Időzóna-választó megjelenítése a naptárban"
+
+#: templates/admin/jet-apb-settings/settings-layout.php:30
+#: templates/admin/jet-apb-settings/settings-layout.php:68
+msgid ""
+"Show timezones picker in appointment calendar. Allows users to show slots in"
+" selected timezone time."
+msgstr ""
+"Időzóna-választó megjelenítése az időpont-naptárban. Lehetővé teszi a "
+"felhasználóknak, hogy az idősávokat a kiválasztott időzóna szerint "
+"jelenítsék meg."
+
+#: templates/admin/jet-apb-settings/settings-layout.php:37
+msgid "Use custom timezones for the calendar"
+msgstr "Egyéni időzónák használata a naptárban"
+
+#: templates/admin/jet-apb-settings/settings-layout.php:38
+msgid ""
+"Allows to select a static timezone for the calendar. All slots will be "
+"generated according to this timezone. This only affects how times are "
+"displayed on the frontend."
+msgstr ""
+"Lehetővé teszi statikus időzóna kiválasztását a naptár számára. Minden "
+"idősáv ehhez az időzónához igazodva lesz generálva. Ez csak az időpontok "
+"frontend oldali megjelenítését érinti."
+
+#: templates/admin/jet-apb-settings/settings-layout.php:45
+msgid "Calendar slots timezone"
+msgstr "Naptár idősávjainak időzónája"
+
+#: templates/admin/jet-apb-settings/settings-layout.php:46
+msgid ""
+"Set the timezone for the calendar on the frontend. All slots will be "
+"generated according to this timezone. This only affects how times are "
+"displayed on the frontend — in the admin panel, all times remain stored in "
+"UTC+0."
+msgstr ""
+"Állítsa be a naptár időzónáját a frontenden. Minden idősáv ehhez az "
+"időzónához igazodva lesz generálva. Ez csak az időpontok frontend oldali "
+"megjelenítését érinti — az admin panelen minden időpont UTC+0-ban kerül "
+"tárolásra."
+
+#: templates/admin/jet-apb-settings/settings-layout.php:62
+#: templates/admin/jet-apb-settings/settings-layout.php:72
+msgid "Available only for "
+msgstr "Csak a következők számára elérhető "
+
+#: templates/admin/jet-apb-settings/settings-tools.php:4
+msgid "Clear excluded dates cache"
+msgstr "Kihagyott dátumok gyorsítótárának törlése"
+
+#: templates/admin/jet-apb-settings/settings-tools.php:5
+msgid "Remove all dates from excluded dates table"
+msgstr "Az összes dátum eltávolítása a kihagyott dátumok táblából"
+
+#: templates/admin/jet-apb-settings/settings-tools.php:50
+msgid "Warning:"
+msgstr "Figyelem:"
+
+#: templates/admin/jet-apb-settings/settings-tools.php:50
+msgid ""
+"If you change or remove any columns, all data stored in this columns will be"
+" lost!"
+msgstr ""
+"Ha bármely oszlopot módosít vagy eltávolít, az ezekben az oszlopokban tárolt"
+" összes adat elvész!"
+
+#: templates/admin/jet-apb-settings/settings-tools.php:60
+msgid "Save and update appointments table"
+msgstr "Időpontok tábla mentése és frissítése"
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:19
+msgid "Event"
+msgstr "Esemény"
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:20
+msgid "Select event to trigger a workflow item"
+msgstr "Válassza ki az eseményt, amely egy munkafolyamat-elemet kivált"
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:29
+msgid "Start"
+msgstr "Kezdés"
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:30
+msgid "Select when start to run current workflow"
+msgstr "Válassza ki, mikor induljon a jelenlegi munkafolyamat"
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:39
+msgid "Days before"
+msgstr "Napokkal előtte"
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:40
+msgid "Run this item in selected number of days before appointment date."
+msgstr ""
+"Futtassa ezt az elemet a kiválasztott számú nappal az időpont dátuma előtt."
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:50
+msgid "Prevent execution on Appointments group creation"
+msgstr "Végrehajtás megakadályozása időpontcsoport létrehozásakor"
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:51
+msgid ""
+"Prevent the \"Appointment Created\" action from running when the appointment"
+" is part of a group"
+msgstr ""
+"Megakadályozza az \"Appointment Created\" művelet futását, amikor az időpont"
+" egy csoport része"
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:59
+msgid "+ New Action"
+msgstr "+ Új művelet"
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:76
+msgid "Action name"
+msgstr "Művelet neve"
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:84
+msgid "Action"
+msgstr "Művelet"
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:85
+msgid "Select action to run"
+msgstr "Válassza ki a futtatandó műveletet"
+
+#: templates/admin/jet-apb-settings/settings-workflows.php:5
+msgid "Enable/disable current workflow"
+msgstr "Jelenlegi munkafolyamat engedélyezése/letiltása"
+
+#: templates/admin/jet-apb-settings/settings-workflows.php:22
+msgid "New Workflow Item"
+msgstr "Új munkafolyamat-elem"
+
+#: templates/admin/jet-apb-settings/settings-workflows.php:27
+msgid "Please note!"
+msgstr "Kérjük, vegye figyelembe!"
+
+#: templates/admin/jet-apb-settings/settings-workflows.php:28
+msgid ""
+"New Workflow Item will affect only appointments created <b>after</b> adding "
+"this Item."
+msgstr ""
+"Az új munkafolyamat-elem csak azokra az időpontokra lesz hatással, amelyeket"
+" ennek az elemnek a hozzáadása <b>után</b> hoznak létre."
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:3
+msgid "Booking Schedule"
+msgstr "Foglalási ütemezés"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:7
+msgid "Time Format"
+msgstr "Időformátum"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:8
+msgid "Select time format for available slots list"
+msgstr "Válassza ki az elérhető idősávok listájának időformátumát"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:17
+msgid "Schedule Type"
+msgstr "Ütemezés típusa"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:20
+msgid "Choose one of these options for creating an appointment schedule."
+msgstr ""
+"Válasszon ezek közül az opciók közül, hogy időpontütemezést hozzon létre."
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:21
+msgid "Time slots - Set the fixed duration for appointments"
+msgstr "Idősávok - Állítsa be az időpontok rögzített időtartamát"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:22
+msgid "Time picker - Let the end-user specify the time of their appointment"
+msgstr ""
+"Időválasztó - Engedje meg a végfelhasználónak, hogy megadja időpontjának "
+"idejét"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:23
+msgid ""
+"Recurring appointments - Let the end-user book regular appointments (uses "
+"time slots)"
+msgstr ""
+"Ismétlődő időpontok - Engedje meg a végfelhasználónak, hogy rendszeres "
+"időpontokat foglaljon (idősávokat használ)"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:33
+msgid "Book every:"
+msgstr "Foglaljon minden:"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:34
+msgid ""
+"Set the recurrence period to let the end-user book regular appointments"
+msgstr ""
+"Állítsa be az ismétlődés időszakát, hogy a végfelhasználó rendszeres "
+"időpontokat foglalhasson"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:46
+msgid "Repeat Count"
+msgstr "Ismétlések száma"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:47
+msgid "Define min and max recurring appointments the end-user can book"
+msgstr ""
+"Határozza meg a végfelhasználó által foglalható ismétlődő időpontok "
+"minimumát és maximumát"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:50
+#: templates/admin/jet-apb-settings/settings-working-hours.php:134
+#: templates/admin/jet-apb-settings/settings-working-hours.php:230
+msgid "Min"
+msgstr "Minimum"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:61
+#: templates/admin/jet-apb-settings/settings-working-hours.php:145
+#: templates/admin/jet-apb-settings/settings-working-hours.php:241
+msgid "Max"
+msgstr "Maximum"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:76
+#: templates/admin/jet-apb-settings/settings-working-hours.php:113
+#: templates/admin/jet-apb-settings/settings-working-hours.php:129
+msgid "Duration"
+msgstr "Időtartam"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:77
+msgid "Select the default duration for each service and provider time"
+msgstr ""
+"Válassza ki az alapértelmezett időtartamot minden szolgáltatáshoz és "
+"szolgáltatói időhöz"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:91
+msgid "Several days"
+msgstr "Több nap"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:92
+msgid ""
+"The appointment time can include several days. For example, the start 10:00 "
+"- 02/05/21 end of 20:00 - 05/06/21."
+msgstr ""
+"Az időpont időtartama több napot is magában foglalhat. Például: kezdete "
+"10:00 - 02/05/21, vége 20:00 - 05/06/21."
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:101
+msgid "Only start time"
+msgstr "Csak kezdési idő"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:102
+msgid ""
+"The end-user will only be able to choose the start of the appointment, the "
+"duration will be set automatically"
+msgstr ""
+"A végfelhasználó csak az időpont kezdetét tudja kiválasztani, az időtartam "
+"automatikusan kerül beállításra"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:114
+msgid "Set the min and max duration for the appointments"
+msgstr "Állítsa be az időpontok minimális és maximális időtartamát"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:130
+msgid "Select the min and max duration for each service and provider time"
+msgstr ""
+"Válassza ki az egyes szolgáltatások és szolgáltatói idők minimális és "
+"maximális időtartamát"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:158
+msgid "Duration Step"
+msgstr "Időtartam lépésköze"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:159
+msgid "Set the duration step in time picker."
+msgstr "Állítsa be az időválasztóban az időtartam lépésközét."
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:173
+msgid "Buffer Time Before"
+msgstr "Pufferidő előtte"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:186
+msgid "Buffer Time After"
+msgstr "Pufferidő utána"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:199
+msgid "Locked Time Before"
+msgstr "Zárolt idő előtte"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:200
+msgid "The appointment cannot be made if there is less than this time left."
+msgstr "Az időpont nem foglalható, ha ennél kevesebb idő maradt."
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:213
+msgid "Multi Booking"
+msgstr "Többszörös foglalás"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:214
+msgid ""
+"The client can book several appointments at different times and different "
+"days."
+msgstr ""
+"Az ügyfél több időpontot is foglalhat különböző időpontokban és különböző "
+"napokon."
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:227
+msgid "Slot Count"
+msgstr "Idősávok száma"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:262
+#: templates/admin/jet-apb-settings/settings-working-hours.php:496
+msgid "Work Hours"
+msgstr "Munkaidő"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:273
+msgid "+ Add"
+msgstr "+ Hozzáadás"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:324
+msgid "Days Off"
+msgstr "Szabadnapok"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:335
+msgid "Allow rewrite for service/provider"
+msgstr "Felülírás engedélyezése szolgáltatás/szolgáltató számára"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:339
+msgid "Force global days off"
+msgstr "Globális szabadnapok érvényesítése"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:347
+msgid "Days off inherited from the global settings."
+msgstr "A szabadnapok a globális beállításokból öröklődnek."
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:352
+msgid "Set the days that will be the weekend or holidays."
+msgstr ""
+"Állítsa be azokat a napokat, amelyek hétvégének vagy ünnepnapnak minősülnek."
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:358
+#: templates/admin/jet-apb-settings/settings-working-hours.php:439
+msgid "Add Days"
+msgstr "Napok hozzáadása"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:410
+msgid "Working Days"
+msgstr "Munkanapok"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:420
+msgid "Override all schedule with new days"
+msgstr "Az összes ütemezés felülírása új napokkal"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:424
+msgid "Override only days added below"
+msgstr "Csak az alább hozzáadott napok felülírása"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:431
+msgid ""
+"Add dates when your availability is different from your regular weekly "
+"hours."
+msgstr ""
+"Adjon hozzá dátumokat, amikor az elérhetősége eltér a szokásos heti "
+"munkaidejétől."
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:432
+msgid "Set available days to book."
+msgstr "Állítsa be a foglalható napokat."
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:502
+msgid "Starts from time"
+msgstr "Kezdési idő"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:516
+msgid "Work to time"
+msgstr "Munkaidő vége"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:536
+msgid "Select Days"
+msgstr "Napok kiválasztása"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:539
+msgid "Days Label"
+msgstr "Napok címkéje"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:540
+msgid "Name of the current day (eg. name of the holiday)"
+msgstr "Az aktuális nap megnevezése (pl. az ünnep neve)"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:549
+msgid "Start Date *"
+msgstr "Kezdés dátuma *"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:550
+msgid "Pick a start day"
+msgstr "Válasszon kezdő napot"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:555
+#: templates/admin/jet-apb-settings/settings-working-hours.php:571
+msgid "Select Date"
+msgstr "Dátum kiválasztása"
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:566
+msgid "Pick a end day"
+msgstr "Válasszon befejező napot"
+
+#: templates/admin/order/details.php:7
+#: templates/public/email-order-details-html.php:7
+#: templates/public/email-order-details-plain.php:6
+#: templates/public/order-details.php:6
+msgid "Appointment Details"
+msgstr "Időpont részletei"
+
+#: templates/admin/settings-meta-box.php:4
+msgid "Capacity"
+msgstr "Kapacitás"
+
+#: templates/admin/settings-meta-box.php:5
+msgid "Name: _app_capacity."
+msgstr "Név: _app_capacity."
+
+#: templates/admin/settings-meta-box.php:16
+msgid "Price per"
+msgstr "Ár egységenként"
+
+#: templates/admin/settings-meta-box.php:25
+msgid "Price per slot"
+msgstr "Ár idősávonként"
+
+#: templates/admin/settings-meta-box.php:26
+msgid "Price for the entire slot time"
+msgstr "Ár az egész idősávra"
+
+#: templates/admin/settings-meta-box.php:38
+msgid "Price per hour"
+msgstr "Ár óránként"
+
+#: templates/admin/settings-meta-box.php:39
+msgid ""
+"Price for one hour. The price will be rounded up if a new hour has started. "
+"For example at 1:15, the price will be calculated as 2 hours"
+msgstr ""
+"Ár egy órára. Az árat felfelé kerekítjük, ha új óra kezdődött. Például "
+"1:15-kor az ár 2 óraként kerül kiszámításra"
+
+#: templates/admin/settings-meta-box.php:51
+msgid "Price per minute"
+msgstr "Ár percenként"
+
+#: templates/admin/settings-meta-box.php:52
+msgid "Price for one minute."
+msgstr "Ár egy percre."
+
+#: templates/public/appointment-calendar.php:24
+msgid "Please, select the service first."
+msgstr "Kérjük, először válassza ki a szolgáltatást."
+
+#: templates/public/appointment-calendar.php:25
+msgid "Please, select the provider first."
+msgstr "Kérjük, először válassza ki a szolgáltatót."
+
+#: templates/public/appointment-calendar.php:26
+msgid "Please set service field for current calendar"
+msgstr "Kérjük, állítsa be a szolgáltatás mezőt az aktuális naptárhoz"
+
+#: templates/public/appointment-calendar.php:27
+msgid "Sorry. You have the max number of appointments."
+msgstr "Sajnáljuk. Elérte a foglalások maximális számát."
+
+#: assets/gutenberg/src/actions.v2/InsertAppointment/DBColumnsMapRow.jsx:29
+#: assets/js/jfb/builder.actions.v2.js:49
+msgid "DB columns map"
+msgstr "DB oszlopok leképezése"
+
+#: assets/gutenberg/src/actions.v2/InsertAppointment/Edit.jsx:225
+#: assets/js/jfb/builder.actions.v2.js:59
+msgid ""
+"Set up booking-related info you want to add to the WooCommerce orders and "
+"e-mails."
+msgstr ""
+"Állítsa be azokat a foglalással kapcsolatos információkat, amelyeket hozzá "
+"kíván adni a WooCommerce rendelésekhez és e-mailekhez."
+
+#: assets/gutenberg/src/blocks/appointment-date/source.js:7
+#: assets/js/jfb/builder.blocks.js:69
+msgid "Select Provider Field:"
+msgstr "Válassza ki a szolgáltató mezőt:"
+
+#: assets/gutenberg/src/blocks/appointment-date/source.js:8
+#: assets/js/jfb/builder.blocks.js:69
+msgid "Set Provider ID:"
+msgstr "Állítsa be a szolgáltató azonosítóját:"
+
+#: assets/gutenberg/src/blocks/appointment-date/source.js:9
+#: assets/js/jfb/builder.blocks.js:69
+msgid "Auto-Select Single Slot"
+msgstr "Egyetlen idősáv automatikus kiválasztása"
+
+#: assets/gutenberg/src/blocks/appointment-date/source.js:14
+#: assets/js/jfb/builder.blocks.js:69
+msgid "Skip the slot selection step when only one time slot is available."
+msgstr ""
+"Hagyja ki az idősáv kiválasztásának lépését, ha csak egy idősáv érhető el."
+
+#: assets/gutenberg/src/blocks/source.js:22
+#: assets/js/jfb/builder.blocks.js:129
+msgid "Select Service Field:"
+msgstr "Válassza ki a szolgáltatás mezőt:"
+
+#: assets/gutenberg/src/blocks/source.js:23
+#: assets/js/jfb/builder.blocks.js:129
+msgid "Set Service ID:"
+msgstr "Állítsa be a szolgáltatás azonosítóját:"
+
+#: assets/js/admin/appointments.js:120
+msgid "List"
+msgstr "Lista"
+
+#: assets/js/admin/appointments.js:128
+msgid "Timeline"
+msgstr "Idővonal"
+
+#: assets/js/admin/appointments.js:350 assets/js/admin/settings.js:505
+msgid "Done!"
+msgstr "Kész!"
+
+#: assets/js/admin/appointments.js:1166
+msgid "15 minutes"
+msgstr "15 perc"
+
+#: assets/js/admin/appointments.js:1170
+msgid "30 minutes"
+msgstr "30 perc"
+
+#: assets/js/admin/appointments.js:1174
+msgid "1 hours"
+msgstr "1 óra"
+
+#: assets/js/admin/appointments.js:1856
+msgid "Sorry. This appointment has already been added!"
+msgstr "Sajnáljuk. Ezt az időpontot már hozzáadták!"
+
+#: assets/js/admin/appointments.js:1862
+msgid "Sorry. You have the max number of appointments!"
+msgstr "Sajnáljuk. Elérte a foglalások maximális számát!"
+
+#: assets/js/admin/appointments.js:2095
+msgid "No service assigned!"
+msgstr "Nincs szolgáltatás hozzárendelve!"
+
+#: assets/js/admin/appointments.js:2104
+msgid "No provider assigned!"
+msgstr "Nincs szolgáltató hozzárendelve!"
+
+#: assets/js/admin/appointments.js:2150
+#, js-format
+msgid "Empty fields: %s"
+msgstr "Üres mezők: %s"
+
+#: assets/js/admin/settings.js:63
+msgid "The slot duration cannot be less than one minute!"
+msgstr "Az idősáv hossza nem lehet kevesebb egy percnél!"
+
+#: assets/js/admin/settings.js:104
+msgid "Date is not correct"
+msgstr "A dátum nem helyes"
+
+#: assets/js/admin/settings.js:239
+msgid "Time is not correct"
+msgstr "Az idő nem helyes"
+
+#: assets/js/admin/settings.js:363
+msgid ""
+"Users can book the same time slot for the service with multiple providers."
+msgstr ""
+"A felhasználók ugyanazt az idősávot a szolgáltatásra több szolgáltatóval is "
+"lefoglalhatják."
+
+#: assets/js/admin/settings.js:365
+msgid ""
+"Users can book the same time slot for the service with only one provider. "
+"The slot will be unavailable for others once booked."
+msgstr ""
+"A felhasználók ugyanazt az idősávot a szolgáltatásra csak egy szolgáltatóval"
+" foglalhatják le. Az idősáv a foglalás után mások számára elérhetetlenné "
+"válik."
+
+#: assets/js/admin/settings.js:536 assets/js/admin/settings.js:782
+msgid ""
+"You cannot use the \"-\" or \"space\" character in the table name, it was "
+"automatically changed to the \"_\" character!"
+msgstr ""
+"Nem használhat \"-\" vagy \"space\" karaktert a táblanévben, automatikusan "
+"\"_\" karakterre lett cserélve!"
+
+#: assets/js/admin/settings.js:546
+msgid "This column already exists in the table!"
+msgstr "Ez az oszlop már létezik a táblában!"
+
+#: assets/js/admin/settings.js:556
+msgid ""
+"Are you sure? If you change or remove any columns, all data stored in this "
+"columns will be lost!"
+msgstr ""
+"Biztos benne? Ha bármely oszlopot módosít vagy eltávolít, az ezekben az "
+"oszlopokban tárolt minden adat el fog veszni!"

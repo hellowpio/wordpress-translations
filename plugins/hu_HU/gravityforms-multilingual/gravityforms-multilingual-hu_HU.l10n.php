@@ -14,7 +14,7 @@ return [
 	'x-plugin-name' => 'Gravity Forms Multilingual',
 	'x-plugin-version' => '1.8.3',
 	'messages' => [
-		'Gravity Forms Multilingual' => 'Gravity Forms többnyelvű',
+		'Gravity Forms Multilingual' => 'Gravity Forms többnyelvű támogatás',
 		'https://wpml.org/documentation/related-projects/gravity-forms-multilingual/?utm_source=plugin&utm_medium=gui&utm_campaign=gfml' => 'https://wpml.org/documentation/related-projects/gravity-forms-multilingual/?utm_source=plugin&utm_medium=gui&utm_campaign=gfml',
 		'Add multilingual support for Gravity Forms' => 'Többnyelvű támogatás hozzáadása a Gravity Forms-hoz',
 		'OnTheGoSystems' => 'OnTheGoSystems',

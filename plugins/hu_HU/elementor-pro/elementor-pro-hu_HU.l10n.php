@@ -1359,7 +1359,7 @@ return [
 		'On Hover Out' => 'Egér elvitelekor',
 		'Reverse' => 'Fordított',
 		'Pause' => 'Szünet',
-		'Hover Area' => 'Rámutatási terület',
+		'Hover Area' => 'Hover terület',
 		'Column' => 'Oszlop',
 		'Section' => 'Szakasz',
 		'Play Speed' => 'Lejátszási sebesség',
