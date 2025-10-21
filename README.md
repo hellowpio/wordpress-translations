@@ -203,3 +203,4 @@ A fordítások a megfelelő WordPress bővítmények és témák licencei alatt 
 ## Kapcsolat
 
 Ha kérdésed van, nyiss egy issue-t ebben a repository-ban.
+
