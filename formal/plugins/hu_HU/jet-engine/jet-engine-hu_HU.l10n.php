@@ -2,7 +2,7 @@
 return [
 	'project-id-version' => 'JetEngine 3.7.7',
 	'report-msgid-bugs-to' => 'support@hellowp.io',
-	'po-revision-date' => '2025-10-19 22:48',
+	'po-revision-date' => '2025-10-21 10:10+0200',
 	'last-translator' => 'HelloWP <translate@hellowp.io>',
 	'language-team' => 'HelloWP <translate@hellowp.io>',
 	'language' => 'hu',

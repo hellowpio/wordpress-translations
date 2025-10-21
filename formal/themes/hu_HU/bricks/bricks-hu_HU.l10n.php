@@ -2,7 +2,7 @@
 return [
 	'project-id-version' => 'Bricks 2.1.2',
 	'report-msgid-bugs-to' => 'support@hellowp.io',
-	'po-revision-date' => '2025-10-21 09:52+0200',
+	'po-revision-date' => '2025-10-21 10:09+0200',
 	'last-translator' => 'HelloWP <translate@hellowp.io>',
 	'language-team' => 'HelloWP <translate@hellowp.io>',
 	'language' => 'hu',

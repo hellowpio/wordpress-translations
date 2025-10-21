@@ -2,7 +2,7 @@
 return [
 	'project-id-version' => 'All-in-One WP Migration Dropbox Extension 3.93',
 	'report-msgid-bugs-to' => 'support@hellowp.io',
-	'po-revision-date' => '2025-10-19 08:38',
+	'po-revision-date' => '2025-10-21 10:10+0200',
 	'last-translator' => 'HelloWP <translate@hellowp.io>',
 	'language-team' => 'HelloWP <translate@hellowp.io>',
 	'language' => 'hu',

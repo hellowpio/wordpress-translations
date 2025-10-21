@@ -205,12 +205,18 @@ Ha szeretnél hozzájárulni új fordításokkal vagy javításokkal:
 4. **A `.po` fájl fejlécébe add meg a következő kötelező metaadatokat:**
    ```
    "X-Plugin-Name: Advanced Custom Fields Multilingual\n"
+   "X-Plugin-Tone: formal\n"
    "X-Plugin-Version: 2.1.5\n"
    ```
    - `X-Plugin-Name`: A bővítmény/téma teljes neve (angolul)
+   - `X-Plugin-Tone`: A fordítás hangvétele (`formal` = magázódó, `informal` = tegező)
    - `X-Plugin-Version`: A verzió száma, amiről a fordítás készült
 
    Ezek a metaadatok bekerülnek a generált `.l10n.php` fájlba és segítenek a verziókövetésben.
+
+   **Fontos**: Az `X-Plugin-Tone` értékének meg kell egyeznie a könyvtárstruktúrával:
+   - `formal/` mappában lévő fájloknak: `X-Plugin-Tone: formal`
+   - `informal/` mappában lévő fájloknak: `X-Plugin-Tone: informal`
 5. Commit-old a változtatásokat (`git commit -m 'Új fordítás hozzáadása'`)
 6. Push-old a branch-et (`git push origin uj-forditas`)
 7. Nyiss egy Pull Request-et

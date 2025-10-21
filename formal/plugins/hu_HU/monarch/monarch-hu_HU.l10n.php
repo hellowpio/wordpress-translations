@@ -2,7 +2,7 @@
 return [
 	'project-id-version' => 'Monarch Plugin 1.4.14',
 	'report-msgid-bugs-to' => 'support@hellowp.io',
-	'po-revision-date' => '2025-10-19 10:31',
+	'po-revision-date' => '2025-10-21 10:10+0200',
 	'last-translator' => 'HelloWP <translate@hellowp.io>',
 	'language-team' => 'HelloWP <translate@hellowp.io>',
 	'language' => 'hu',

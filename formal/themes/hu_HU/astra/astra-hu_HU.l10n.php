@@ -1,7 +1,7 @@
 <?php
 return [
 	'project-id-version' => 'Themes - Astra',
-	'po-revision-date' => '2025-10-21 09:52+0200',
+	'po-revision-date' => '2025-10-21 10:09+0200',
 	'language' => 'hu',
 	'mime-version' => '1.0',
 	'content-type' => 'text/plain; charset=utf-8',

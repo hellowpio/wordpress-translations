@@ -157,7 +157,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Check X-Plugin-Name and X-Plugin-Version headers
+      - name: Check X-Plugin-Name, X-Plugin-Version and X-Plugin-Tone headers
         run: |
           echo "🔍 Checking PO files for required metadata headers..."
 
@@ -177,9 +177,16 @@ jobs:
               exit 1
             fi
 
+            # Check for X-Plugin-Tone header
+            if ! grep -q '^"X-Plugin-Tone:' "$file"; then
+              echo "❌ Missing X-Plugin-Tone header in: $file"
+              exit 1
+            fi
+
             # Check that headers are not empty
             plugin_name=$(grep '^"X-Plugin-Name:' "$file" | head -1 | sed 's/"X-Plugin-Name: *//' | sed 's/\\n"$//')
             plugin_version=$(grep '^"X-Plugin-Version:' "$file" | head -1 | sed 's/"X-Plugin-Version: *//' | sed 's/\\n"$//')
+            plugin_tone=$(grep '^"X-Plugin-Tone:' "$file" | head -1 | sed 's/"X-Plugin-Tone: *//' | sed 's/\\n"$//')
 
             if [ -z "$plugin_name" ]; then
               echo "❌ Empty X-Plugin-Name value in: $file"
@@ -191,7 +198,23 @@ jobs:
               exit 1
             fi
 
-            echo "✓ Valid metadata: $plugin_name v$plugin_version"
+            if [ -z "$plugin_tone" ]; then
+              echo "❌ Empty X-Plugin-Tone value in: $file"
+              exit 1
+            fi
+
+            # Validate tone matches directory structure
+            if [[ "$file" == formal/* ]] && [ "$plugin_tone" != "formal" ]; then
+              echo "❌ X-Plugin-Tone should be 'formal' in: $file (found: $plugin_tone)"
+              exit 1
+            fi
+
+            if [[ "$file" == informal/* ]] && [ "$plugin_tone" != "informal" ]; then
+              echo "❌ X-Plugin-Tone should be 'informal' in: $file (found: $plugin_tone)"
+              exit 1
+            fi
+
+            echo "✓ Valid metadata: $plugin_name v$plugin_version ($plugin_tone)"
           done
 
           echo "✅ All PO files have required metadata headers!"

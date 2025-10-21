@@ -2,7 +2,7 @@
 return [
 	'project-id-version' => 'WooCommerce Subscriptions 8.0.0',
 	'report-msgid-bugs-to' => 'support@hellowp.io',
-	'po-revision-date' => '2025-10-19 22:50',
+	'po-revision-date' => '2025-10-21 10:10+0200',
 	'last-translator' => 'HelloWP <translate@hellowp.io>',
 	'language-team' => 'HelloWP <translate@hellowp.io>',
 	'language' => 'hu',

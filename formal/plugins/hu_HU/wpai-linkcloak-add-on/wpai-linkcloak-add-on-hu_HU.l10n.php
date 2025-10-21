@@ -2,7 +2,7 @@
 return [
 	'project-id-version' => 'WP All Import - Link Cloaking Add-on 1.1.5',
 	'report-msgid-bugs-to' => 'support@hellowp.io',
-	'po-revision-date' => '2025-10-19 20:09',
+	'po-revision-date' => '2025-10-21 10:09+0200',
 	'last-translator' => 'HelloWP <translate@hellowp.io>',
 	'language-team' => 'HelloWP <translate@hellowp.io>',
 	'language' => 'hu',

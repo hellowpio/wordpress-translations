@@ -2,7 +2,7 @@
 return [
 	'project-id-version' => 'WPML CMS Navigation 1.5.6',
 	'report-msgid-bugs-to' => 'support@hellowp.io',
-	'po-revision-date' => '2025-10-19 22:51',
+	'po-revision-date' => '2025-10-21 10:09+0200',
 	'last-translator' => 'HelloWP <translate@hellowp.io>',
 	'language-team' => 'HelloWP <translate@hellowp.io>',
 	'language' => 'hu',
