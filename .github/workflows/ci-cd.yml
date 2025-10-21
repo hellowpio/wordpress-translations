@@ -1,0 +1,331 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'plugins/**'
+      - 'themes/**'
+  workflow_dispatch:
+
+jobs:
+  php-syntax:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php-version: ['8.0', '8.1', '8.2', '8.3']
+    name: PHP ${{ matrix.php-version }} Syntax Check
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          coverage: none
+
+      - name: Check PHP syntax
+        run: |
+          echo "🔍 Checking PHP syntax for all .php files..."
+          find . -name "*.php" -not -path "./node_modules/*" -not -path "./vendor/*" | while read file; do
+            echo "Checking: $file"
+            php -l "$file"
+            if [ $? -ne 0 ]; then
+              echo "❌ Syntax error in: $file"
+              exit 1
+            fi
+          done
+          echo "✅ All PHP files passed syntax check!"
+
+      - name: Validate L10N.php files structure
+        if: matrix.php-version == '8.3'
+        run: |
+          echo "🔍 Validating L10N.php file structure..."
+          find . -name "*.l10n.php" -not -path "./node_modules/*" | while read file; do
+            echo "Validating: $file"
+
+            # Check if file returns an array
+            php -r "
+              \$result = include '$file';
+              if (!is_array(\$result)) {
+                echo 'Error: File must return an array\n';
+                exit(1);
+              }
+              echo 'Valid array structure\n';
+            "
+
+            if [ $? -ne 0 ]; then
+              echo "❌ Invalid structure in: $file"
+              exit 1
+            fi
+          done
+          echo "✅ All L10N.php files have valid structure!"
+
+  json-lint:
+    runs-on: ubuntu-latest
+    name: JSON Lint Check
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check JSON syntax
+        run: |
+          echo "🔍 Checking JSON syntax for all translation .json files..."
+
+          # Find all JSON files except package.json and package-lock.json
+          find . -name "*.json" \
+            -not -path "./node_modules/*" \
+            -not -path "./vendor/*" \
+            -not -name "package.json" \
+            -not -name "package-lock.json" | while read file; do
+
+            echo "Checking: $file"
+
+            # Use Node.js to validate JSON syntax
+            node -e "
+              const fs = require('fs');
+              try {
+                const content = fs.readFileSync('$file', 'utf8');
+                JSON.parse(content);
+                console.log('✓ Valid JSON');
+              } catch (error) {
+                console.error('✗ JSON parsing error:', error.message);
+                process.exit(1);
+              }
+            "
+
+            if [ $? -ne 0 ]; then
+              echo "❌ Lint error in: $file"
+              exit 1
+            fi
+          done
+
+          echo "✅ All JSON files passed lint check!"
+
+      - name: Validate translation JSON structure
+        run: |
+          echo "🔍 Validating translation JSON structure..."
+
+          # Find all translation JSON files (in plugins/themes directories)
+          find plugins themes -name "*.json" 2>/dev/null | while read file; do
+            echo "Validating structure: $file"
+
+            # Check if JSON has expected translation structure
+            node -e "
+              const fs = require('fs');
+              try {
+                const content = fs.readFileSync('$file', 'utf8');
+                const data = JSON.parse(content);
+
+                // Translation JSON files should be objects with string values
+                if (typeof data !== 'object' || data === null) {
+                  console.error('✗ Translation file must be a JSON object');
+                  process.exit(1);
+                }
+
+                // Check if it has the expected structure (domain, locale_data, etc.)
+                // Translation files typically have these keys or are flat key-value pairs
+                console.log('✓ Valid translation structure');
+              } catch (error) {
+                console.error('✗ Structure validation error:', error.message);
+                process.exit(1);
+              }
+            "
+
+            if [ $? -ne 0 ]; then
+              echo "❌ Invalid structure in: $file"
+              exit 1
+            fi
+          done
+
+          echo "✅ All translation JSON files have valid structure!"
+
+  po-metadata:
+    runs-on: ubuntu-latest
+    name: PO Metadata Check
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check X-Plugin-Name and X-Plugin-Version headers
+        run: |
+          echo "🔍 Checking PO files for required metadata headers..."
+
+          # Find all .po files in plugins and themes directories
+          find plugins themes -name "*.po" 2>/dev/null | while read file; do
+            echo "Checking: $file"
+
+            # Check for X-Plugin-Name header
+            if ! grep -q '^"X-Plugin-Name:' "$file"; then
+              echo "❌ Missing X-Plugin-Name header in: $file"
+              exit 1
+            fi
+
+            # Check for X-Plugin-Version header
+            if ! grep -q '^"X-Plugin-Version:' "$file"; then
+              echo "❌ Missing X-Plugin-Version header in: $file"
+              exit 1
+            fi
+
+            # Check that headers are not empty
+            plugin_name=$(grep '^"X-Plugin-Name:' "$file" | head -1 | sed 's/"X-Plugin-Name: *//' | sed 's/\\n"$//')
+            plugin_version=$(grep '^"X-Plugin-Version:' "$file" | head -1 | sed 's/"X-Plugin-Version: *//' | sed 's/\\n"$//')
+
+            if [ -z "$plugin_name" ]; then
+              echo "❌ Empty X-Plugin-Name value in: $file"
+              exit 1
+            fi
+
+            if [ -z "$plugin_version" ]; then
+              echo "❌ Empty X-Plugin-Version value in: $file"
+              exit 1
+            fi
+
+            echo "✓ Valid metadata: $plugin_name v$plugin_version"
+          done
+
+          echo "✅ All PO files have required metadata headers!"
+
+      - name: Validate metadata format
+        run: |
+          echo "🔍 Validating metadata format..."
+
+          find plugins themes -name "*.po" 2>/dev/null | while read file; do
+            # Check that X-Plugin-Version is a valid version format (e.g., 1.0.0, 2.1.3, etc.)
+            version=$(grep '^"X-Plugin-Version:' "$file" | head -1 | sed 's/"X-Plugin-Version: *//' | sed 's/\\n"$//')
+
+            # Basic version format validation (numbers and dots)
+            if ! echo "$version" | grep -qE '^[0-9]+(\.[0-9]+)*$'; then
+              echo "⚠️  Warning: Unusual version format in $file: $version"
+              # Don't fail on this, just warn
+            fi
+          done
+
+          echo "✅ Metadata format validation complete!"
+
+  create-release:
+    runs-on: ubuntu-latest
+    needs: [php-syntax, json-lint, po-metadata]
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate version and release info
+        id: version
+        run: |
+          # Generate date-based version
+          DATE_VERSION=$(date +'%Y.%m.%d')
+
+          # Count commits today to handle multiple releases per day
+          COMMITS_TODAY=$(git log --since="today 00:00:00" --oneline | wc -l)
+
+          if [ "$COMMITS_TODAY" -gt 1 ]; then
+            VERSION="${DATE_VERSION}-${COMMITS_TODAY}"
+          else
+            VERSION="${DATE_VERSION}"
+          fi
+
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+          echo "tag=v${VERSION}" >> $GITHUB_OUTPUT
+
+          # Count statistics for release notes
+          PLUGIN_COUNT=$(find plugins/hu_HU -mindepth 1 -maxdepth 1 -type d | wc -l)
+          THEME_COUNT=$(find themes/hu_HU -mindepth 1 -maxdepth 1 -type d | wc -l)
+          TOTAL_COUNT=$((PLUGIN_COUNT + THEME_COUNT))
+
+          echo "plugins=${PLUGIN_COUNT}" >> $GITHUB_OUTPUT
+          echo "themes=${THEME_COUNT}" >> $GITHUB_OUTPUT
+          echo "total=${TOTAL_COUNT}" >> $GITHUB_OUTPUT
+
+      - name: Run translation statistics
+        id: stats
+        run: |
+          # Install Python if needed and run stats
+          if [ -f "scripts/count-translation-stats.py" ]; then
+            STATS_OUTPUT=$(python3 scripts/count-translation-stats.py 2>&1)
+
+            # Extract key metrics
+            ENTRIES=$(echo "$STATS_OUTPUT" | grep "Total translation entries:" | grep -oE '[0-9,]+' | head -1 | tr -d ',')
+            ENGLISH_CHARS=$(echo "$STATS_OUTPUT" | grep "English (msgid):" | grep -oE '[0-9,]+' | tr -d ',')
+            HUNGARIAN_CHARS=$(echo "$STATS_OUTPUT" | grep "Hungarian (msgstr):" | grep -oE '[0-9,]+' | tr -d ',')
+
+            echo "entries=${ENTRIES:-0}" >> $GITHUB_OUTPUT
+            echo "english_chars=${ENGLISH_CHARS:-0}" >> $GITHUB_OUTPUT
+            echo "hungarian_chars=${HUNGARIAN_CHARS:-0}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create release notes
+        id: notes
+        run: |
+          RELEASE_DATE=$(date +'%Y-%m-%d %H:%M:%S UTC')
+
+          cat > release_notes.md << EOF
+          ## 📦 WordPress Hungarian Translations Release
+
+          **Release Date:** ${RELEASE_DATE}
+
+          ### 📊 Statistics
+
+          - **Total Products:** ${{ steps.version.outputs.total }}
+            - 🔌 Plugins: ${{ steps.version.outputs.plugins }}
+            - 🎨 Themes: ${{ steps.version.outputs.themes }}
+
+          - **Translation Entries:** ${{ steps.stats.outputs.entries }}
+          - **English Characters:** ${{ steps.stats.outputs.english_chars }}
+          - **Hungarian Characters:** ${{ steps.stats.outputs.hungarian_chars }}
+
+          ### 📝 Recent Changes
+
+          EOF
+
+          # Add last 10 commits
+          git log -10 --pretty=format:"- %s (%h)" >> release_notes.md
+
+          echo "" >> release_notes.md
+          echo "" >> release_notes.md
+          echo "### 📥 Installation" >> release_notes.md
+          echo "" >> release_notes.md
+          echo "Download the source code and extract the translation files to your WordPress installation:" >> release_notes.md
+          echo "- Plugins: \`wp-content/languages/plugins/\`" >> release_notes.md
+          echo "- Themes: \`wp-content/languages/themes/\`" >> release_notes.md
+
+      - name: Check if tag exists
+        id: check_tag
+        run: |
+          if git rev-parse "${{ steps.version.outputs.tag }}" >/dev/null 2>&1; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Release
+        if: steps.check_tag.outputs.exists == 'false'
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.version.outputs.tag }}
+          name: Release ${{ steps.version.outputs.version }}
+          bodyFile: release_notes.md
+          draft: false
+          prerelease: false
+          generateReleaseNotes: false
+          makeLatest: true
+
+      - name: Skip release (tag exists)
+        if: steps.check_tag.outputs.exists == 'true'
+        run: |
+          echo "⏭️ Tag ${{ steps.version.outputs.tag }} already exists, skipping release creation"
