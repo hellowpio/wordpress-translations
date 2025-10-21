@@ -278,8 +278,8 @@ async function generateJsonTranslations(poFile) {
 async function build() {
     console.log(chalk.blue.bold('\n🔨 Building translation files...\n'));
 
-    // Find all PO files
-    const poFiles = await glob('**/*.po', {
+    // Find all PO files in formal and informal directories
+    const poFiles = await glob('{formal,informal}/**/*.po', {
         ignore: ['node_modules/**', '.git/**']
     });
 
@@ -420,7 +420,7 @@ async function build() {
  */
 function watch() {
     console.log(chalk.blue.bold('\n👀 Watching for changes...\n'));
-    return gulp.watch(['plugins/**/*.po', 'themes/**/*.po'], build);
+    return gulp.watch(['formal/**/*.po', 'informal/**/*.po'], build);
 }
 
 export { build, watch };

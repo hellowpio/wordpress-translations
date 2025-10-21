@@ -4,35 +4,51 @@ Ez a repository WordPress bővítmények és témák fordításait tartalmazza k
 
 ## Mappastruktúra
 
-A fordítások a következő struktúrában vannak rendszerezve:
+A fordítások formális (magázódó) és informális (tegező) változatokban érhetők el:
 
 ```
 wordpress-translations/
-├── plugins/
-│   └── hu_HU/
-│       ├── elementor-pro/
-│       ├── woocommerce/
-│       └── ...
-└── themes/
-    └── hu_HU/
-        ├── astra/
-        ├── generatepress/
-        └── ...
+├── formal/              # Magázódó fordítások (Ön, Önnek, stb.)
+│   ├── plugins/
+│   │   └── hu_HU/
+│   │       ├── elementor-pro/
+│   │       ├── woocommerce/
+│   │       └── ...
+│   └── themes/
+│       └── hu_HU/
+│           ├── astra/
+│           ├── generatepress/
+│           └── ...
+└── informal/            # Tegező fordítások (te, neked, stb.)
+    ├── plugins/
+    │   └── hu_HU/
+    │       └── ...
+    └── themes/
+        └── hu_HU/
+            └── ...
 ```
+
+**Melyiket válaszd?**
+- **formal**: Hivatalos, professzionális, üzleti weboldalaknál (pl. webshop, vállalati oldal)
+- **informal**: Barátságos, közvetlen stílusú oldalaknál (pl. blog, közösségi oldal)
 
 ## Használat
 
 ### Bővítmények fordításai
 
-A bővítmények fordításai a `plugins/{nyelv_KÓD}/{bővítmény-neve}/` mappában találhatók.
+A bővítmények fordításai a `{formal|informal}/plugins/{nyelv_KÓD}/{bővítmény-neve}/` mappában találhatók.
 
-Példa: `plugins/hu_HU/elementor-pro/`
+Példák:
+- Magázódó: `formal/plugins/hu_HU/elementor-pro/`
+- Tegező: `informal/plugins/hu_HU/elementor-pro/`
 
 ### Témák fordításai
 
-A témák fordításai a `themes/{nyelv_KÓD}/{téma-neve}/` mappában találhatók.
+A témák fordításai a `{formal|informal}/themes/{nyelv_KÓD}/{téma-neve}/` mappában találhatók.
 
-Példa: `themes/hu_HU/astra/`
+Példák:
+- Magázódó: `formal/themes/hu_HU/astra/`
+- Tegező: `informal/themes/hu_HU/astra/`
 
 ## Nyelvi kódok
 
@@ -88,17 +104,18 @@ A WordPress fordítási rendszere több fájlformátumot használ különböző 
 
 ### 1. módszer: Manuális telepítés
 
-1. Navigálj a megfelelő mappába (plugins vagy themes)
-2. Válaszd ki a nyelvi kódot (pl. `hu_HU`)
-3. Keresd meg a bővítmény/téma nevét
-4. Másold a `.po` fájlt a WordPress telepítésed megfelelő könyvtárába:
+1. Válaszd ki a megfelelő stílust (`formal` vagy `informal`)
+2. Navigálj a megfelelő mappába (plugins vagy themes)
+3. Válaszd ki a nyelvi kódot (pl. `hu_HU`)
+4. Keresd meg a bővítmény/téma nevét
+5. Másold a `.po` fájlt a WordPress telepítésed megfelelő könyvtárába:
    - Bővítmények: `wp-content/languages/plugins/`
    - Témák: `wp-content/languages/themes/`
 
 ### 2. módszer: Loco Translate bővítménnyel
 
 1. Telepítsd és aktiváld a [Loco Translate](https://wordpress.org/plugins/loco-translate/) bővítményt
-2. Töltsd le a `.po` fájlt ebből a repository-ból
+2. Töltsd le a `.po` fájlt a megfelelő mappából (`formal` vagy `informal`)
 3. Másold a `.po` fájlt a megfelelő WordPress languages mappába:
    - Bővítmények: `wp-content/languages/plugins/`
    - Témák: `wp-content/languages/themes/`
@@ -109,6 +126,8 @@ A WordPress fordítási rendszere több fájlformátumot használ különböző 
 8. A Loco automatikusan generálja a `.mo` és `.l10n.php` fájlokat
 
 **Tipp:** A Loco Translate segítségével szerkesztheted is a fordításokat közvetlenül a WordPress admin felületen.
+
+**Fontos:** Ha később át szeretnél váltani formal és informal között, egyszerűen cseréld le a `.po` fájlt a másik változatra és mentsd el újra.
 
 ## POT fájl generálása (fejlesztőknek)
 

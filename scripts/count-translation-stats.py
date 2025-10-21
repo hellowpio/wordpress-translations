@@ -30,7 +30,7 @@ def count_translation_stats():
 
     print("🔍 Scanning all PO files for character count...\n")
 
-    po_files = glob.glob('plugins/**/*.po', recursive=True) + glob.glob('themes/**/*.po', recursive=True)
+    po_files = glob.glob('formal/**/*.po', recursive=True) + glob.glob('informal/**/*.po', recursive=True)
 
     for po_file in po_files:
         try:
