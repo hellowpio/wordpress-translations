@@ -69,10 +69,12 @@ jobs:
       - name: Create release notes
         id: notes
         run: |
-          cat > release_notes.md << 'EOF'
+          RELEASE_DATE=$(date +'%Y-%m-%d %H:%M:%S UTC')
+
+          cat > release_notes.md << EOF
           ## 📦 WordPress Hungarian Translations Release
 
-          **Release Date:** $(date +'%Y-%m-%d %H:%M:%S UTC')
+          **Release Date:** ${RELEASE_DATE}
 
           ### 📊 Statistics
 
