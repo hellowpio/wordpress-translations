@@ -273,6 +273,65 @@ async function generateJsonTranslations(poFile) {
 }
 
 /**
+ * Calculate hash of translation content (excluding metadata that changes frequently)
+ * @param {object} po - Parsed PO object
+ * @returns {string} - Hash of translation content
+ */
+function getTranslationHash(po) {
+    const translations = po.translations[''] || {};
+
+    // Create a deterministic string of translations only (no metadata)
+    const translationPairs = [];
+    for (const [msgid, data] of Object.entries(translations)) {
+        if (msgid === '') continue; // Skip header
+        const msgstr = data.msgstr[0];
+        if (!msgstr) continue;
+        translationPairs.push(`${msgid}::${msgstr}`);
+    }
+
+    // Sort to ensure consistent hash
+    translationPairs.sort();
+    const content = translationPairs.join('|');
+
+    // Create hash
+    return crypto.createHash('md5').update(content).digest('hex');
+}
+
+/**
+ * Check if PO file translations changed (ignoring metadata)
+ * @param {string} poFile - Path to PO file
+ * @param {string} hashFile - Path to hash cache file
+ * @returns {boolean} - True if translations changed
+ */
+function hasTranslationsChanged(poFile, hashFile) {
+    try {
+        const poContent = fs.readFileSync(poFile);
+        const po = gettextParser.po.parse(poContent);
+        const currentHash = getTranslationHash(po);
+
+        // Check if hash file exists
+        if (!fs.existsSync(hashFile)) {
+            // No hash file, consider it changed
+            fs.writeFileSync(hashFile, currentHash);
+            return true;
+        }
+
+        const previousHash = fs.readFileSync(hashFile, 'utf-8').trim();
+
+        if (currentHash !== previousHash) {
+            // Hash changed, update it
+            fs.writeFileSync(hashFile, currentHash);
+            return true;
+        }
+
+        return false;
+    } catch (err) {
+        // On error, assume changed
+        return true;
+    }
+}
+
+/**
  * Build task: Generate MO, L10N.php, and JSON files from all PO files
  */
 async function build() {
@@ -290,15 +349,26 @@ async function build() {
 
     console.log(chalk.blue('ℹ'), `Found ${poFiles.length} PO file(s)\n`);
 
-    // Track updated files
+    // Track updated and skipped files
     const updatedFiles = [];
+    const skippedFiles = [];
 
     // Process each PO file
     for (const poFile of poFiles) {
         const dir = path.dirname(poFile);
         const basename = path.basename(poFile, '.po');
+        const hashFile = path.join(dir, `.${basename}.hash`);
 
         try {
+            // Check if translations actually changed
+            const translationsChanged = hasTranslationsChanged(poFile, hashFile);
+
+            if (!translationsChanged) {
+                skippedFiles.push(poFile);
+                console.log(chalk.gray('⊘'), 'Skipped (no changes):', chalk.gray(poFile));
+                continue;
+            }
+
             // Update PO-Revision-Date if translations changed
             const wasUpdated = await updateRevisionDate(poFile);
             if (wasUpdated) {
@@ -402,16 +472,26 @@ async function build() {
         }
     }
 
-    // Display summary of updated translations
+    // Display summary
+    console.log(chalk.blue.bold('\n📊 Build Summary:\n'));
+
     if (updatedFiles.length > 0) {
-        console.log(chalk.blue.bold('\n📝 Updated translations:\n'));
-        updatedFiles.forEach(file => {
-            console.log(chalk.cyan('  • '), file);
-        });
-        console.log(chalk.blue(`\n   Total: ${updatedFiles.length} file(s) updated`));
+        console.log(chalk.green('  ✓'), `Generated: ${updatedFiles.length} file(s)`);
     }
 
-    console.log(chalk.green.bold('\n✅ Build complete!\n'));
+    if (skippedFiles.length > 0) {
+        console.log(chalk.gray('  ⊘'), `Skipped (unchanged): ${skippedFiles.length} file(s)`);
+    }
+
+    const processedCount = updatedFiles.length + skippedFiles.length;
+    console.log(chalk.blue('\n  Total processed:'), processedCount, 'file(s)');
+
+    if (updatedFiles.length > 0) {
+        console.log(chalk.green.bold('\n✅ Build complete!\n'));
+    } else {
+        console.log(chalk.gray.bold('\n✅ Build complete (no changes detected)\n'));
+    }
+
     return Promise.resolve();
 }
 

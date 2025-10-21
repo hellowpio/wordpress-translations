@@ -2,7 +2,7 @@
 return [
 	'project-id-version' => 'AutomatorWP Pro 4.7.4',
 	'report-msgid-bugs-to' => 'support@hellowp.io',
-	'po-revision-date' => '2025-10-21 10:10+0200',
+	'po-revision-date' => '2025-10-21 10:19+0200',
 	'last-translator' => 'HelloWP <translate@hellowp.io>',
 	'language-team' => 'HelloWP <translate@hellowp.io>',
 	'language' => 'hu',
