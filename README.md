@@ -225,6 +225,23 @@ Ha szeretnél hozzájárulni új fordításokkal vagy javításokkal:
 
 A fordítások a megfelelő WordPress bővítmények és témák licencei alatt állnak.
 
+## Statisztikák
+
+Érdekes adatok a fordítási projektünkről:
+
+📊 **Összesítés:**
+- **Fordítási fájlok száma**: 396 db
+- **Fordítási bejegyzések**: 182,860 db
+- **Lefordított bejegyzések**: 182,854 db (100.0% lefedettség)
+
+📝 **Karakterszám:**
+- **Angol (eredeti)**: 6,053,274 karakter
+- **Magyar (fordítás)**: 6,996,279 karakter
+
+📈 **Különbség:**
+- A magyar fordítások **+943,005 karakterrel** (15.58%-kal) hosszabbak az angol eredetinél
+- Ez a magyar nyelv természetes jellemzője - általában hosszabb szószerkezetek szükségesek ugyanazon jelentés kifejezéséhez
+
 ## Kapcsolat
 
 Ha kérdésed van, nyiss egy issue-t ebben a repository-ban.
