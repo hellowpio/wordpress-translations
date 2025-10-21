@@ -1,0 +1,126 @@
+name: Create Automatic Release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'plugins/**'
+      - 'themes/**'
+  workflow_dispatch:
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate version and release info
+        id: version
+        run: |
+          # Generate date-based version
+          DATE_VERSION=$(date +'%Y.%m.%d')
+
+          # Count commits today to handle multiple releases per day
+          COMMITS_TODAY=$(git log --since="today 00:00:00" --oneline | wc -l)
+
+          if [ "$COMMITS_TODAY" -gt 1 ]; then
+            VERSION="${DATE_VERSION}-${COMMITS_TODAY}"
+          else
+            VERSION="${DATE_VERSION}"
+          fi
+
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+          echo "tag=v${VERSION}" >> $GITHUB_OUTPUT
+
+          # Count statistics for release notes
+          PLUGIN_COUNT=$(find plugins/hu_HU -mindepth 1 -maxdepth 1 -type d | wc -l)
+          THEME_COUNT=$(find themes/hu_HU -mindepth 1 -maxdepth 1 -type d | wc -l)
+          TOTAL_COUNT=$((PLUGIN_COUNT + THEME_COUNT))
+
+          echo "plugins=${PLUGIN_COUNT}" >> $GITHUB_OUTPUT
+          echo "themes=${THEME_COUNT}" >> $GITHUB_OUTPUT
+          echo "total=${TOTAL_COUNT}" >> $GITHUB_OUTPUT
+
+      - name: Run translation statistics
+        id: stats
+        run: |
+          # Install Python if needed and run stats
+          if [ -f "scripts/count-translation-stats.py" ]; then
+            STATS_OUTPUT=$(python3 scripts/count-translation-stats.py 2>&1)
+
+            # Extract key metrics
+            ENTRIES=$(echo "$STATS_OUTPUT" | grep "Total translation entries:" | grep -oE '[0-9,]+' | head -1 | tr -d ',')
+            ENGLISH_CHARS=$(echo "$STATS_OUTPUT" | grep "English (msgid):" | grep -oE '[0-9,]+' | tr -d ',')
+            HUNGARIAN_CHARS=$(echo "$STATS_OUTPUT" | grep "Hungarian (msgstr):" | grep -oE '[0-9,]+' | tr -d ',')
+
+            echo "entries=${ENTRIES:-0}" >> $GITHUB_OUTPUT
+            echo "english_chars=${ENGLISH_CHARS:-0}" >> $GITHUB_OUTPUT
+            echo "hungarian_chars=${HUNGARIAN_CHARS:-0}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create release notes
+        id: notes
+        run: |
+          cat > release_notes.md << 'EOF'
+          ## 📦 WordPress Hungarian Translations Release
+
+          **Release Date:** $(date +'%Y-%m-%d %H:%M:%S UTC')
+
+          ### 📊 Statistics
+
+          - **Total Products:** ${{ steps.version.outputs.total }}
+            - 🔌 Plugins: ${{ steps.version.outputs.plugins }}
+            - 🎨 Themes: ${{ steps.version.outputs.themes }}
+
+          - **Translation Entries:** ${{ steps.stats.outputs.entries }}
+          - **English Characters:** ${{ steps.stats.outputs.english_chars }}
+          - **Hungarian Characters:** ${{ steps.stats.outputs.hungarian_chars }}
+
+          ### 📝 Recent Changes
+
+          EOF
+
+          # Add last 10 commits
+          git log -10 --pretty=format:"- %s (%h)" >> release_notes.md
+
+          echo "" >> release_notes.md
+          echo "" >> release_notes.md
+          echo "### 📥 Installation" >> release_notes.md
+          echo "" >> release_notes.md
+          echo "Download the source code and extract the translation files to your WordPress installation:" >> release_notes.md
+          echo "- Plugins: \`wp-content/languages/plugins/\`" >> release_notes.md
+          echo "- Themes: \`wp-content/languages/themes/\`" >> release_notes.md
+
+      - name: Check if tag exists
+        id: check_tag
+        run: |
+          if git rev-parse "${{ steps.version.outputs.tag }}" >/dev/null 2>&1; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Release
+        if: steps.check_tag.outputs.exists == 'false'
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.version.outputs.tag }}
+          name: Release ${{ steps.version.outputs.version }}
+          bodyFile: release_notes.md
+          draft: false
+          prerelease: false
+          generateReleaseNotes: false
+          makeLatest: true
+
+      - name: Skip release (tag exists)
+        if: steps.check_tag.outputs.exists == 'true'
+        run: |
+          echo "⏭️ Tag ${{ steps.version.outputs.tag }} already exists, skipping release creation"
