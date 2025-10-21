@@ -1,0 +1,78 @@
+name: PO Metadata Check
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.po'
+  pull_request:
+    paths:
+      - '**/*.po'
+  workflow_dispatch:
+
+jobs:
+  metadata-check:
+    runs-on: ubuntu-latest
+
+    name: Check PO File Metadata
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check X-Plugin-Name and X-Plugin-Version headers
+        run: |
+          echo "🔍 Checking PO files for required metadata headers..."
+
+          # Find all .po files in plugins and themes directories
+          find plugins themes -name "*.po" 2>/dev/null | while read file; do
+            echo "Checking: $file"
+
+            # Check for X-Plugin-Name header
+            if ! grep -q '^"X-Plugin-Name:' "$file"; then
+              echo "❌ Missing X-Plugin-Name header in: $file"
+              exit 1
+            fi
+
+            # Check for X-Plugin-Version header
+            if ! grep -q '^"X-Plugin-Version:' "$file"; then
+              echo "❌ Missing X-Plugin-Version header in: $file"
+              exit 1
+            fi
+
+            # Check that headers are not empty
+            plugin_name=$(grep '^"X-Plugin-Name:' "$file" | head -1 | sed 's/"X-Plugin-Name: *//' | sed 's/\\n"$//')
+            plugin_version=$(grep '^"X-Plugin-Version:' "$file" | head -1 | sed 's/"X-Plugin-Version: *//' | sed 's/\\n"$//')
+
+            if [ -z "$plugin_name" ]; then
+              echo "❌ Empty X-Plugin-Name value in: $file"
+              exit 1
+            fi
+
+            if [ -z "$plugin_version" ]; then
+              echo "❌ Empty X-Plugin-Version value in: $file"
+              exit 1
+            fi
+
+            echo "✓ Valid metadata: $plugin_name v$plugin_version"
+          done
+
+          echo "✅ All PO files have required metadata headers!"
+
+      - name: Validate metadata format
+        run: |
+          echo "🔍 Validating metadata format..."
+
+          find plugins themes -name "*.po" 2>/dev/null | while read file; do
+            # Check that X-Plugin-Version is a valid version format (e.g., 1.0.0, 2.1.3, etc.)
+            version=$(grep '^"X-Plugin-Version:' "$file" | head -1 | sed 's/"X-Plugin-Version: *//' | sed 's/\\n"$//')
+
+            # Basic version format validation (numbers and dots)
+            if ! echo "$version" | grep -qE '^[0-9]+(\.[0-9]+)*$'; then
+              echo "⚠️  Warning: Unusual version format in $file: $version"
+              # Don't fail on this, just warn
+            fi
+          done
+
+          echo "✅ Metadata format validation complete!"
