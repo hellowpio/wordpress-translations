@@ -410,6 +410,7 @@ async function build() {
     // Track updated and skipped files
     const updatedFiles = [];
     const skippedFiles = [];
+    const missingMetadata = [];
 
     // Process each PO file
     for (const poFile of poFiles) {
@@ -440,6 +441,19 @@ async function build() {
 
             // Generate MO file
             const po = gettextParser.po.parse(poContent);
+            const headers = po.headers || {};
+
+            // Check for required metadata
+            const requiredMeta = ['X-Plugin-Name', 'X-Plugin-Tone', 'X-Plugin-Version'];
+            const missing = requiredMeta.filter(meta => !headers[meta]);
+
+            if (missing.length > 0) {
+                missingMetadata.push({
+                    file: poFile,
+                    missing: missing
+                });
+            }
+
             const mo = gettextParser.mo.compile(po);
             const moPath = path.join(dir, `${basename}.mo`);
             fs.writeFileSync(moPath, mo);
@@ -447,7 +461,6 @@ async function build() {
 
             // Generate L10N.php file (WordPress 6.5+ format)
             const translations = po.translations[''] || {};
-            const headers = po.headers || {};
 
             // Build messages array
             const messages = {};
@@ -546,6 +559,16 @@ async function build() {
 
     const processedCount = updatedFiles.length + skippedFiles.length;
     console.log(chalk.blue('\n  Total processed:'), processedCount, 'file(s)');
+
+    // Display missing metadata warnings
+    if (missingMetadata.length > 0) {
+        console.log(chalk.yellow.bold('\n⚠️  Missing Required Metadata:\n'));
+        for (const item of missingMetadata) {
+            console.log(chalk.yellow('  ⚠'), chalk.cyan(item.file));
+            console.log(chalk.yellow('     Missing:'), item.missing.join(', '));
+        }
+        console.log(chalk.yellow('\n  Total files with missing metadata:'), missingMetadata.length);
+    }
 
     if (updatedFiles.length > 0) {
         console.log(chalk.green.bold('\n✅ Build complete!\n'));
