@@ -1,6 +1,6 @@
 # WordPress Fordítások Gyűjteménye
 
-Ez a repository WordPress bővítmények és témák fordításait tartalmazza különböző nyelveken.
+Ez a repository WordPress bővítmények és témák fordításait tartalmazza különböző nyelveken. Jelenleg **391 bővítmény** és **5 téma** magyar fordítása érhető el.
 
 ## Mappastruktúra
 
@@ -231,15 +231,15 @@ A fordítások a megfelelő WordPress bővítmények és témák licencei alatt 
 
 📊 **Összesítés:**
 - **Fordítási fájlok száma**: 396 db
-- **Fordítási bejegyzések**: 182,860 db
-- **Lefordított bejegyzések**: 182,854 db (100.0% lefedettség)
+- **Fordítási bejegyzések**: 176 347 db
+- **Lefordított bejegyzések**: 175 612 db (99.6% lefedettség)
 
 📝 **Karakterszám:**
-- **Angol (eredeti)**: 6,053,274 karakter
-- **Magyar (fordítás)**: 6,996,279 karakter
+- **Angol (eredeti)**: 5 789 027 karakter
+- **Magyar (fordítás)**: 6 699 608 karakter
 
 📈 **Különbség:**
-- A magyar fordítások **+943,005 karakterrel** (15.58%-kal) hosszabbak az angol eredetinél
+- A magyar fordítások **+910 581 karakterrel** (15.73%-kal) hosszabbak az angol eredetinél
 - Ez a magyar nyelv természetes jellemzője - általában hosszabb szószerkezetek szükségesek ugyanazon jelentés kifejezéséhez
 
 ## Kapcsolat

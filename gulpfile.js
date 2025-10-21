@@ -570,6 +570,9 @@ async function build() {
         console.log(chalk.yellow('\n  Total files with missing metadata:'), missingMetadata.length);
     }
 
+    // Update README.md statistics
+    await updateReadmeStats(poFiles);
+
     if (updatedFiles.length > 0) {
         console.log(chalk.green.bold('\n✅ Build complete!\n'));
     } else {
@@ -577,6 +580,95 @@ async function build() {
     }
 
     return Promise.resolve();
+}
+
+/**
+ * Update README.md with current translation statistics
+ * @param {Array} poFiles - Array of PO file paths
+ */
+async function updateReadmeStats(poFiles) {
+    try {
+        console.log(chalk.blue('\n📊 Updating README.md statistics...\n'));
+
+        // Count plugins and themes
+        const pluginFiles = poFiles.filter(f => f.includes('/plugins/'));
+        const themeFiles = poFiles.filter(f => f.includes('/themes/'));
+
+        // Get unique plugin/theme names
+        const plugins = new Set();
+        const themes = new Set();
+
+        for (const file of pluginFiles) {
+            const match = file.match(/\/plugins\/[^/]+\/([^/]+)\//);
+            if (match) plugins.add(match[1]);
+        }
+
+        for (const file of themeFiles) {
+            const match = file.match(/\/themes\/[^/]+\/([^/]+)\//);
+            if (match) themes.add(match[1]);
+        }
+
+        // Calculate translation statistics
+        let totalEntries = 0;
+        let translatedEntries = 0;
+        let englishChars = 0;
+        let hungarianChars = 0;
+
+        for (const poFile of poFiles) {
+            const poContent = fs.readFileSync(poFile, 'utf-8');
+            const po = gettextParser.po.parse(poContent);
+            const translations = po.translations[''] || {};
+
+            for (const [msgid, data] of Object.entries(translations)) {
+                if (msgid === '') continue;
+                totalEntries++;
+
+                const msgstr = data.msgstr[0];
+                if (msgstr) {
+                    translatedEntries++;
+                    englishChars += msgid.length;
+                    hungarianChars += msgstr.length;
+                }
+            }
+        }
+
+        const coverage = ((translatedEntries / totalEntries) * 100).toFixed(1);
+        const charDiff = hungarianChars - englishChars;
+        const charDiffPercent = ((charDiff / englishChars) * 100).toFixed(2);
+
+        // Read README.md
+        const readmePath = path.join(process.cwd(), 'README.md');
+        let readme = fs.readFileSync(readmePath, 'utf-8');
+
+        // Update introduction line
+        const introPattern = /Ez a repository WordPress bővítmények és témák fordításait tartalmazza különböző nyelveken\./;
+        const newIntro = `Ez a repository WordPress bővítmények és témák fordításait tartalmazza különböző nyelveken. Jelenleg **${plugins.size} bővítmény** és **${themes.size} téma** magyar fordítása érhető el.`;
+        readme = readme.replace(introPattern, newIntro);
+
+        // Update statistics section
+        const statsPattern = /📊 \*\*Összesítés:\*\*\n- \*\*Fordítási fájlok száma\*\*:.*?\n- \*\*Fordítási bejegyzések\*\*:.*?\n- \*\*Lefordított bejegyzések\*\*:.*?\n\n📝 \*\*Karakterszám:\*\*\n- \*\*Angol \(eredeti\)\*\*:.*?\n- \*\*Magyar \(fordítás\)\*\*:.*?\n\n📈 \*\*Különbség:\*\*\n- A magyar fordítások \*\*\+.*? karakterrel\*\* \(.*?%-kal\) hosszabbak az angol eredetinél/s;
+
+        const newStats = `📊 **Összesítés:**
+- **Fordítási fájlok száma**: ${poFiles.length} db
+- **Fordítási bejegyzések**: ${totalEntries.toLocaleString('hu-HU')} db
+- **Lefordított bejegyzések**: ${translatedEntries.toLocaleString('hu-HU')} db (${coverage}% lefedettség)
+
+📝 **Karakterszám:**
+- **Angol (eredeti)**: ${englishChars.toLocaleString('hu-HU')} karakter
+- **Magyar (fordítás)**: ${hungarianChars.toLocaleString('hu-HU')} karakter
+
+📈 **Különbség:**
+- A magyar fordítások **+${charDiff.toLocaleString('hu-HU')} karakterrel** (${charDiffPercent}%-kal) hosszabbak az angol eredetinél`;
+
+        readme = readme.replace(statsPattern, newStats);
+
+        // Write back to README.md
+        fs.writeFileSync(readmePath, readme);
+
+        console.log(chalk.green('  ✓'), `Updated README.md (${plugins.size} plugins, ${themes.size} themes)`);
+    } catch (err) {
+        console.log(chalk.yellow('  ⚠'), 'Could not update README.md:', err.message);
+    }
 }
 
 /**
