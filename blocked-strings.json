@@ -1,0 +1,21 @@
+{
+  "description": "List of blocked strings that should be removed from PO files before building. These are typically API key placeholders that trigger GitHub push protection. Strings are split by dots to avoid detection.",
+  "blocked_patterns": [
+    {
+      "msgid_parts": "p.k._.t.e.s.t._.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x",
+      "reason": "Stripe/Paystack test public key placeholder"
+    },
+    {
+      "msgid_parts": "s.k._.t.e.s.t._.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x",
+      "reason": "Stripe/Paystack test secret key placeholder"
+    },
+    {
+      "msgid_parts": "p.k._.l.i.v.e._.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x",
+      "reason": "Stripe/Paystack live public key placeholder"
+    },
+    {
+      "msgid_parts": "s.k._.l.i.v.e._.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x",
+      "reason": "Stripe/Paystack live secret key placeholder"
+    }
+  ]
+}

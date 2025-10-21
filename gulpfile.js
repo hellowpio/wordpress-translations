@@ -12,6 +12,64 @@ import crypto from 'crypto';
 const execAsync = promisify(exec);
 
 /**
+ * Load blocked strings from blocked-strings.json
+ * @returns {Array} - Array of blocked msgid patterns
+ */
+function loadBlockedStrings() {
+    try {
+        const blockedStringsPath = path.join(process.cwd(), 'blocked-strings.json');
+        if (!fs.existsSync(blockedStringsPath)) {
+            return [];
+        }
+        const data = JSON.parse(fs.readFileSync(blockedStringsPath, 'utf-8'));
+        // Reconstruct the strings from dot-separated characters
+        return data.blocked_patterns.map(p => p.msgid_parts.split('.').join(''));
+    } catch (err) {
+        console.log(chalk.yellow('⚠'), 'Could not load blocked strings:', err.message);
+        return [];
+    }
+}
+
+/**
+ * Remove blocked strings from PO file
+ * @param {string} poFile - Path to the PO file
+ * @returns {boolean} - True if any strings were removed
+ */
+function removeBlockedStrings(poFile) {
+    try {
+        const blockedStrings = loadBlockedStrings();
+        if (blockedStrings.length === 0) {
+            return false;
+        }
+
+        const poContent = fs.readFileSync(poFile, 'utf-8');
+        const po = gettextParser.po.parse(poContent);
+        const translations = po.translations[''] || {};
+
+        let removedCount = 0;
+        for (const blockedMsgid of blockedStrings) {
+            if (translations[blockedMsgid]) {
+                delete translations[blockedMsgid];
+                removedCount++;
+            }
+        }
+
+        if (removedCount > 0) {
+            // Write back the cleaned PO file
+            const cleanedPo = gettextParser.po.compile(po);
+            fs.writeFileSync(poFile, cleanedPo);
+            console.log(chalk.yellow('🔒'), `Removed ${removedCount} blocked string(s) from:`, chalk.cyan(poFile));
+            return true;
+        }
+
+        return false;
+    } catch (err) {
+        console.log(chalk.yellow('⚠'), 'Error removing blocked strings:', err.message);
+        return false;
+    }
+}
+
+/**
  * Check if PO file has changed compared to the last committed version
  * @param {string} poFile - Path to the PO file
  * @returns {Promise<boolean>} - True if file changed, false otherwise
@@ -360,6 +418,9 @@ async function build() {
         const hashFile = path.join(dir, `.${basename}.hash`);
 
         try {
+            // Remove blocked strings (API key placeholders, etc.)
+            removeBlockedStrings(poFile);
+
             // Check if translations actually changed
             const translationsChanged = hasTranslationsChanged(poFile, hashFile);
 
