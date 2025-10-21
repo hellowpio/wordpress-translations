@@ -1,7 +1,7 @@
 <?php
 return [
 	'project-id-version' => 'Elementor Pro',
-	'po-revision-date' => '2025-10-21 10:19+0200',
+	'po-revision-date' => '2025-10-21 10:46+0200',
 	'language-team' => 'MagyarX-Generator: sinann-po-translator',
 	'language' => 'hu',
 	'mime-version' => '1.0',
@@ -531,7 +531,7 @@ return [
 		'Custom Field' => 'Egyéni mező',
 		'Custom field deleted.' => 'Egyéni mező törölve.',
 		'Custom field updated.' => 'Egyéni mező frissítve.',
-		'Custom Fonts' => 'Egyedi Betűtípusok',
+		'Custom Fonts' => 'Egyedi betűtípusok',
 		'Custom Fonts allows you to add your self-hosted fonts and use them on your Elementor projects to create a unique brand language.' => 'Az Egyéni betűtípusok lehetővé teszik, hogy hozzáadja a saját tárhelyen tárolt betűtípusait, és azokat Elementor-projektjeiben használja, hogy egyedi márkanyelvet hozzon létre.',
 		'Custom Format' => 'Egyéni formátum',
 		'Custom Height' => 'Egyéni magasság',
