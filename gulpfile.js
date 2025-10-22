@@ -640,9 +640,9 @@ async function updateReadmeStats(poFiles) {
         const readmePath = path.join(process.cwd(), 'README.md');
         let readme = fs.readFileSync(readmePath, 'utf-8');
 
-        // Update introduction line
-        const introPattern = /Ez a repository WordPress bővítmények és témák fordításait tartalmazza különböző nyelveken\..*?(?=\n\n## Mappastruktúra)/s;
-        const newIntro = `Ez a repository WordPress bővítmények és témák fordításait tartalmazza különböző nyelveken. Jelenleg **${plugins.size} bővítmény** és **${themes.size} téma** magyar fordítása érhető el.`;
+        // Update introduction line (only the first sentence, preserve everything after)
+        const introPattern = /(Ez a repository WordPress bővítmények és témák fordításait tartalmazza különböző nyelveken\.) Jelenleg \*\*\d+ bővítmény\*\* és \*\*\d+ téma\*\* magyar fordítása érhető el\./;
+        const newIntro = `$1 Jelenleg **${plugins.size} bővítmény** és **${themes.size} téma** magyar fordítása érhető el.`;
         readme = readme.replace(introPattern, newIntro);
 
         // Update statistics section
