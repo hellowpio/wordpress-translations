@@ -221,6 +221,14 @@ Ha szeretnél hozzájárulni új fordításokkal vagy javításokkal:
 6. Push-old a branch-et (`git push origin uj-forditas`)
 7. Nyiss egy Pull Request-et
 
+## Fordítási Szótár
+
+A konzisztens terminológia biztosítása érdekében fenntartunk egy fordítási szótárt a gyakori kifejezésekhez.
+
+📖 **[translation-glossary.json](translation-glossary.json)** - Kidolgozás alatt
+
+Ha új kifejezést szeretnél hozzáadni vagy javaslatod van, nyiss egy issue-t vagy Pull Request-et!
+
 ## Licenc
 
 A fordítások a megfelelő WordPress bővítmények és témák licencei alatt állnak.
@@ -236,10 +244,10 @@ A fordítások a megfelelő WordPress bővítmények és témák licencei alatt 
 
 📝 **Karakterszám:**
 - **Angol (eredeti)**: 6 081 166 karakter
-- **Magyar (fordítás)**: 7 037 792 karakter
+- **Magyar (fordítás)**: 7 037 492 karakter
 
 📈 **Különbség:**
-- A magyar fordítások **+956 626 karakterrel** (15.73%-kal) hosszabbak az angol eredetinél
+- A magyar fordítások **+956 326 karakterrel** (15.73%-kal) hosszabbak az angol eredetinél
 - Ez a magyar nyelv természetes jellemzője - általában hosszabb szószerkezetek szükségesek ugyanazon jelentés kifejezéséhez
 
 ## Kapcsolat

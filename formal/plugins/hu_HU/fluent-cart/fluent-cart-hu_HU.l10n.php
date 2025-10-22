@@ -2,7 +2,8 @@
 return [
 	'project-id-version' => 'FluentCart 1.2.2',
 	'report-msgid-bugs-to' => 'support@hellowp.io',
-	'po-revision-date' => '2025-10-21 12:45+0200',
+	'pot-creation-date' => '2025-10-20T14:02:04+00:00',
+	'po-revision-date' => '2025-10-22 07:20+0200',
 	'last-translator' => 'HelloWP <translate@hellowp.io>',
 	'language-team' => 'HelloWP <translate@hellowp.io>',
 	'language' => 'hu',
@@ -5293,7 +5294,7 @@ return [
 		'Shown on VAT invoice' => 'Megjelenik az áfás számlán',
 		'Signups' => 'Regisztrációk',
 		'Single charge for the entire order.' => 'Egyszeri díj a teljes rendelésre.',
-		'Single product & Order Setup' => 'Egyetlen termék & rendelés beállítása',
+		'Single product & Order Setup' => 'Termékoldal & rendelés beállítás',
 		'Size' => 'Méret',
 		'Skip All' => 'Összes kihagyása',
 		'Skip inventory' => 'Készlet kihagyása',

@@ -1,10 +1,10 @@
 <?php
 return [
 	'project-id-version' => 'Themes - Astra',
-	'po-revision-date' => '2025-10-21 10:09+0200',
+	'po-revision-date' => '2025-10-22 07:20+0200',
 	'language' => 'hu',
 	'mime-version' => '1.0',
-	'content-type' => 'text/plain; charset=utf-8',
+	'content-type' => 'text/plain; charset=UTF-8',
 	'content-transfer-encoding' => '8bit',
 	'plural-forms' => 'nplurals=2; plural=n != 1;',
 	'x-generator' => 'sinann-po-translator',
@@ -3031,8 +3031,8 @@ return [
 		'Product Structure' => 'Termék szerkezete',
 		'Archive Columns' => 'Archívum oszlopai',
 		'Product Archive' => 'Termék archívum',
-		'This sidebar will be used on EDD Single Product page.' => 'Ez az oldalsáv az EDD Egyetlen Termék oldalon jelenik meg.',
-		'EDD Single Product Sidebar' => 'EDD Egyetlen Termék oldalsáv',
+		'This sidebar will be used on EDD Single Product page.' => 'Ez az oldalsáv az EDD termékoldalon jelenik meg.',
+		'EDD Single Product Sidebar' => 'EDD termékoldal oldalsáv',
 		'Easy Digital Downloads Sidebar' => 'Easy Digital Downloads oldalsáv',
 		'View Details' => 'Részletek megtekintése',
 		'Easy Digital Downloads' => 'Easy Digital Downloads',
