@@ -244,10 +244,10 @@ A fordítások a megfelelő WordPress bővítmények és témák licencei alatt 
 
 📝 **Karakterszám:**
 - **Angol (eredeti)**: 6 081 166 karakter
-- **Magyar (fordítás)**: 7 037 492 karakter
+- **Magyar (fordítás)**: 7 037 451 karakter
 
 📈 **Különbség:**
-- A magyar fordítások **+956 326 karakterrel** (15.73%-kal) hosszabbak az angol eredetinél
+- A magyar fordítások **+956 285 karakterrel** (15.73%-kal) hosszabbak az angol eredetinél
 - Ez a magyar nyelv természetes jellemzője - általában hosszabb szószerkezetek szükségesek ugyanazon jelentés kifejezéséhez
 
 ## Kapcsolat
