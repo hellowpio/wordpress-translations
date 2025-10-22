@@ -2,6 +2,22 @@
 
 Ez a repository WordPress bővítmények és témák fordításait tartalmazza különböző nyelveken. Jelenleg **393 bővítmény** és **9 téma** magyar fordítása érhető el.
 
+---
+
+## ⚠️ Fontos információ a fordításokról
+
+> **Tudjuk, hogy bizonyos sablonok és bővítmények esetében előfordulhatnak angol mondatok és kifejezések, annak ellenére is, hogy a fordításokat 100%-ra elkészítettük.** Ennek fejlesztési okai vannak - sajnos nem minden fejlesztőcsapat kezeli körültekintően a fordítási rendszert.
+
+### 🐛 Hibát találtál? Jelezd nekünk!
+
+Minden visszajelzésnek örülünk! Az új fordításkezelő rendszer gyors fordítás-frissítést tesz lehetővé - akár tömegesen is tudunk javítani hibákat néhány percen belül.
+
+**➡️ [Fordítási hiba bejelentése](https://forms.gle/txaarRuogaEVfFRq9)**
+
+Köszönjük az együttműködést! 🙏
+
+---
+
 ## Mappastruktúra
 
 A fordítások formális (magázódó) és informális (tegező) változatokban érhetők el:
