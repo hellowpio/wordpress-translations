@@ -4,8 +4,8 @@
 Lépések:
   1. a `blocked-strings.json` mintáinak (API-kulcs-minták) eltávolítása a forrás .po-ból
      (a GitHub push protection miatt; csak akkor írja a fájlt, ha talált ilyet)
-  2. a .po másolása a dist/<tone>/<plugins|themes>/<locale>/ alá
-  3. `wp i18n make-mo`, `wp i18n make-php`, `wp i18n make-json --no-purge` ugyanott
+  2. `wp i18n make-mo`, `wp i18n make-php`, `wp i18n make-json --no-purge`; a .po és a termékek
+     csomagonként a dist/<tone>/<plugins|themes>/<locale>/<mappa>/ alá kerülnek
   4. dist/stats.json (összesítés és csomagonkénti adatok) és dist/manifest.json
      (csomagonként a generált fájlok — a scripts/package.py ebből csomagol)
 
@@ -169,7 +169,11 @@ def main(argv):
     if os.path.isdir(out):
         shutil.rmtree(out)
     packages, skipped = [], []
-    groups = collections.defaultdict(list)
+    # A WP-CLI nem rekurzív, csomagonként hívni pedig lassú: a .po-kat kötegekbe gyűjtjük (egy
+    # kötegben minden fájlnév egyszer szerepel — pl. a complianz-gdpr és a complianz-gdpr-premium
+    # ugyanazt a complianz-gdpr-hu_HU.po nevet használja), kötegenként egyszer fut a három parancs,
+    # utána a termékek a csomag saját mappájába kerülnek: dist/<tone>/<plugins|themes>/<locale>/<mappa>/.
+    batches = []
     for f in files:
         d = describe(f)
         if not d:
@@ -180,48 +184,60 @@ def main(argv):
             print('{} tiltott szöveg eltávolítva: {}'.format(n, os.path.relpath(f, ROOT)))
         if revision_date and update_revision_date(f):
             print('PO-Revision-Date frissítve: {}'.format(os.path.relpath(f, ROOT)))
-        tone, typ, locale, folder = d
-        target = os.path.join(out, tone, typ, locale)
-        os.makedirs(target, exist_ok=True)
-        shutil.copy2(f, target)
-        groups[target].append((f, d))
+        name = os.path.basename(f)
+        batch = next((b for b in batches if name not in b), None)
+        if batch is None:
+            batch = {}
+            batches.append(batch)
+        batch[name] = (f, d)
 
-    # 3. WP-CLI: mappánként egy hívás parancsonként (a mappában az összes .po)
-    for target in sorted(groups):
-        rel = os.path.relpath(target, out)
-        for cmd in (['i18n', 'make-mo', target], ['i18n', 'make-php', target],
-                    ['i18n', 'make-json', target, '--no-purge']):
+    # 3. WP-CLI, kötegenként egy hívás parancsonként
+    stage_root = os.path.join(out, '.stage')
+    done = []
+    for i, batch in enumerate(batches, 1):
+        stage = os.path.join(stage_root, str(i))
+        os.makedirs(stage)
+        for name, (f, _) in batch.items():
+            shutil.copy2(f, os.path.join(stage, name))
+        for cmd in (['i18n', 'make-mo', stage], ['i18n', 'make-php', stage],
+                    ['i18n', 'make-json', stage, '--no-purge']):
             run_wp(cmd)
-        print('{}: {} .po kész'.format(rel, len(groups[target])))
+        produced = os.listdir(stage)
+        for name, (f, d) in sorted(batch.items()):
+            base = name[:-3]
+            mine = sorted(p for p in produced
+                          if p in (base + '.po', base + '.mo', base + '.l10n.php')
+                          or (JSON_NAME.match(p) and JSON_NAME.match(p).group(1) == base))
+            target = os.path.join(out, *d)
+            os.makedirs(target)
+            for p in mine:
+                shutil.move(os.path.join(stage, p), os.path.join(target, p))
+            done.append((f, d, target, mine))
+        print('{}. köteg: {} .po kész'.format(i, len(batch)))
+    shutil.rmtree(stage_root, ignore_errors=True)
 
     # 4. csomagonkénti fájllista és statisztika
     totals = collections.Counter()
     per_tone = collections.defaultdict(collections.Counter)
     manifest = []
-    for target in sorted(groups):
-        produced = os.listdir(target)
-        for f, (tone, typ, locale, folder) in sorted(groups[target]):
-            base = os.path.basename(f)[:-3]
-            mine = sorted(p for p in produced
-                          if p in (base + '.po', base + '.mo', base + '.l10n.php')
-                          or (JSON_NAME.match(p) and JSON_NAME.match(p).group(1) == base))
-            po = polib.pofile(f, wrapwidth=0)
-            entries, translated, en_chars, hu_chars = po_stats(po)
-            meta = po.metadata
-            pkg = {
-                'tone': tone, 'type': typ[:-1], 'locale': locale, 'slug': folder,
-                'name': meta.get('X-Plugin-Name', ''), 'version': meta.get('X-Plugin-Version', ''),
-                'po_revision_date': meta.get('PO-Revision-Date', ''),
-                'entries': entries, 'translated': translated,
-                'coverage': round(translated / entries * 100, 1) if entries else 0.0,
-            }
-            packages.append(pkg)
-            manifest.append(dict(pkg, dir=os.path.relpath(target, out), files=mine))
-            for k, v in (('files', 1), ('entries', entries), ('translated', translated),
-                         ('english_chars', en_chars), ('hungarian_chars', hu_chars)):
-                totals[k] += v
-                per_tone[tone][k] += v
-            totals[typ] += 1
+    for f, (tone, typ, locale, folder), target, mine in sorted(done):
+        po = polib.pofile(f, wrapwidth=0)
+        entries, translated, en_chars, hu_chars = po_stats(po)
+        meta = po.metadata
+        pkg = {
+            'tone': tone, 'type': typ[:-1], 'locale': locale, 'slug': folder,
+            'name': meta.get('X-Plugin-Name', ''), 'version': meta.get('X-Plugin-Version', ''),
+            'po_revision_date': meta.get('PO-Revision-Date', ''),
+            'entries': entries, 'translated': translated,
+            'coverage': round(translated / entries * 100, 1) if entries else 0.0,
+        }
+        packages.append(pkg)
+        manifest.append(dict(pkg, dir=os.path.relpath(target, out), files=mine))
+        for k, v in (('files', 1), ('entries', entries), ('translated', translated),
+                     ('english_chars', en_chars), ('hungarian_chars', hu_chars)):
+            totals[k] += v
+            per_tone[tone][k] += v
+        totals[typ] += 1
 
     def summary(c):
         return {'files': c['files'], 'entries': c['entries'], 'translated': c['translated'],

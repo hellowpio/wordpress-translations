@@ -1,0 +1,101 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'formal/**'
+      - 'informal/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    name: Build és GitHub Release
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          coverage: none
+
+      - name: WP-CLI, gettext, polib
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq gettext
+          python3 -m pip install --quiet polib
+          curl -sSfL -o "$RUNNER_TEMP/wp-cli.phar" \
+            https://github.com/wp-cli/wp-cli/releases/download/v2.12.0/wp-cli-2.12.0.phar
+          echo "WP=php $RUNNER_TEMP/wp-cli.phar" >> "$GITHUB_ENV"
+
+      - name: Ellenőrzés (a változott .po fájlok)
+        env:
+          BEFORE: ${{ github.event.before }}
+        run: |
+          if [ -n "$BEFORE" ] && [ "$BEFORE" != "0000000000000000000000000000000000000000" ]; then
+            python3 scripts/check_po.py --changed-since "$BEFORE"
+          else
+            python3 scripts/check_po.py --changed-since HEAD~1
+          fi
+
+      - name: Tag (dátum alapján)
+        id: tag
+        run: |
+          VERSION=$(date -u +'%Y.%m.%d')
+          N=1
+          TAG="v${VERSION}"
+          while git rev-parse -q --verify "refs/tags/${TAG}" >/dev/null; do
+            N=$((N + 1))
+            TAG="v${VERSION}-${N}"
+          done
+          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+
+      - name: Build
+        run: python3 scripts/build.py
+
+      - name: Csomagok és translations-*.json
+        run: |
+          python3 scripts/package.py \
+            --base-url "https://github.com/${{ github.repository }}/releases/download/${{ steps.tag.outputs.tag }}"
+
+      - name: Release-jegyzet
+        run: |
+          python3 - <<'PY' > release_notes.md
+          import json
+          s = json.load(open('dist/stats.json', encoding='utf-8'))
+          print('Bővítmények: {plugins}, sablonok: {themes}, .po fájlok: {files}.'.format(**s))
+          print('Bejegyzések: {entries}, lefordítva: {translated} ({coverage}%).'.format(**s))
+          print()
+          print('Csomagonként egy zip (`<mappa>-<locale>-<tone>.zip`): .po, .mo, .l10n.php, .json —')
+          print('a `wp-content/languages/plugins/` vagy `wp-content/languages/themes/` mappába.')
+          print('A `translations-formal.json` és a `translations-informal.json` a WordPress fordítás-API')
+          print('szerkezetében sorolja fel a csomagokat; a `stats.json` a részletes statisztika.')
+          print()
+          print('Változások:')
+          PY
+          git log -10 --pretty=format:"- %s (%h)" >> release_notes.md
+
+      - name: GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          gh release create "$TAG" dist/release/* \
+            --target "$GITHUB_SHA" \
+            --title "Release ${TAG#v}" \
+            --notes-file release_notes.md \
+            --latest
