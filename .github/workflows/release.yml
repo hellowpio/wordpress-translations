@@ -65,7 +65,7 @@ jobs:
           echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
 
       - name: Build
-        run: python3 scripts/build.py
+        run: python3 scripts/build.py --dist
 
       - name: Csomagok és translations-*.json
         run: |

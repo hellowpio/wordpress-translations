@@ -1,18 +1,26 @@
 #!/usr/bin/env python3
-"""A fordítások buildje: .po → .mo, .l10n.php, .json a dist/ alá, plusz dist/stats.json.
+r"""A fordítások buildje: .po → .mo és .json a .po mellé (alapból), vagy release-csomag a dist/ alá.
 
-Lépések:
-  1. a `blocked-strings.json` mintáinak (API-kulcs-minták) eltávolítása a forrás .po-ból
-     (a GitHub push protection miatt; csak akkor írja a fájlt, ha talált ilyet)
-  2. `wp i18n make-mo`, `wp i18n make-php`, `wp i18n make-json --no-purge`; a .po és a termékek
-     csomagonként a dist/<tone>/<plugins|themes>/<locale>/<mappa>/ alá kerülnek
-  4. dist/stats.json (összesítés és csomagonkénti adatok) és dist/manifest.json
-     (csomagonként a generált fájlok — a scripts/package.py ebből csomagol)
+Alapmód (helyben): a .po mappájába `<mappa>-<locale>.mo` és `<mappa>-<locale>-<md5>.json`
+(`wp i18n make-mo`, `wp i18n make-json --no-purge`). Ezeket a fájlokat a main ágról tölti le az
+lw-translate bővítmény, ezért a gitben vannak; a fájlnév-szabály kötelező:
+`^<mappa>-<locale>(\.mo|\.po|-[0-9a-f]{32}\.json)$`. A termékek neve a .po nevét követi; ha a
+.po neve nem illik a szabályra, a build figyelmeztet (a scripts/check_po.py hibát ad). A csomag
+korábbi, most nem generált `<po-név>-<md5>.json` fájljait a build törli. A .l10n.php-t helyben
+nem készíti (az lw-translate a .mo-ból maga generálja, és nincs a gitben).
+
+--dist mód (a release-hez): a .po és a .mo, .l10n.php, .json csomagonként a
+dist/<tone>/<plugins|themes>/<locale>/<mappa>/ alá, plusz dist/stats.json (összesítés és
+csomagonkénti adatok) és dist/manifest.json (a scripts/package.py ebből csomagol).
+
+Mindkét módban előtte: a `blocked-strings.json` mintáinak (API-kulcs-minták) eltávolítása a forrás
+.po-ból (a GitHub push protection miatt; csak akkor írja a fájlt, ha talált ilyet).
 
 Használat:
-  scripts/build.py                     minden .po
+  scripts/build.py                     minden .po, helyben
   scripts/build.py <mappa|fájl.po>…    csak a megadott csomagok (mappanév, pl. acf, vagy .po útvonal)
-  --out <mappa>                        kimenet (alapból: dist)
+  --dist                               a dist/ alá (release-csomag), a .po melletti fájlokhoz nem nyúl
+  --out <mappa>                        a --dist kimenete (alapból: dist; magában is --dist módot jelent)
   --revision-date                      a forrásban a HEAD-hez képest változott .po-k PO-Revision-Date
                                        fejlécét a mostani időre állítja (commit előtt, helyben)
 
@@ -28,6 +36,7 @@ import shlex
 import shutil
 import subprocess
 import sys
+import tempfile
 
 try:
     import polib
@@ -145,14 +154,80 @@ def run_wp(args):
     return r.stdout.strip()
 
 
+HEADER_START = re.compile(r'^msgid ""\r?\nmsgstr ""\r?\n', re.M)
+REVISION = re.compile(r'^"PO-Revision-Date: *(.*?)\\n"', re.M)
+
+
+def stage_po(src, dst):
+    """A .po másolata a WP-CLI-nek. Ha nincs POT-Creation-Date fejléc, a WP-CLI a futás idejét
+    írná a .mo-ba (minden buildnél más blob SHA → az lw-translate újra letöltené): ilyenkor a
+    másolatba a PO-Revision-Date értéke kerül. A forrás .po-hoz nem nyúl."""
+    with open(src, encoding='utf-8') as fh:
+        raw = fh.read()
+    if '"POT-Creation-Date:' not in raw:
+        rev, start = REVISION.search(raw), HEADER_START.search(raw)
+        if rev and start:
+            raw = raw[:start.end()] + '"POT-Creation-Date: {}\\n"\n'.format(rev.group(1)) + raw[start.end():]
+    with open(dst, 'w', encoding='utf-8') as fh:
+        fh.write(raw)
+
+
+def rule_name(d):
+    """A fájlnév-szabály szerinti alapnév: <mappa>-<locale> (az lw-translate ezt keresi)."""
+    return '{}-{}'.format(d[3], d[2])
+
+
+def build_in_place(batches, skipped):
+    """.mo és .json a .po mellé; a csomag régi, most nem generált .json fájljait törli."""
+    mo = js = removed = 0
+    bad_names = []
+    with tempfile.TemporaryDirectory(prefix='wpt-build-') as tmp:
+        for i, batch in enumerate(batches, 1):
+            stage = os.path.join(tmp, str(i))
+            os.makedirs(stage)
+            for name, (f, _) in batch.items():
+                stage_po(f, os.path.join(stage, name))
+            run_wp(['i18n', 'make-mo', stage])
+            run_wp(['i18n', 'make-json', stage, '--no-purge'])
+            produced = os.listdir(stage)
+            for name, (f, d) in sorted(batch.items()):
+                base = name[:-3]
+                if base != rule_name(d):
+                    bad_names.append(os.path.relpath(f, ROOT))
+                target = os.path.dirname(f)
+                new_json = sorted(p for p in produced
+                                  if JSON_NAME.match(p) and JSON_NAME.match(p).group(1) == base)
+                for old in os.listdir(target):
+                    m = JSON_NAME.match(old)
+                    if m and m.group(1) == base and old not in new_json:
+                        os.remove(os.path.join(target, old))
+                        removed += 1
+                if base + '.mo' in produced:
+                    shutil.move(os.path.join(stage, base + '.mo'), os.path.join(target, base + '.mo'))
+                    mo += 1
+                for p in new_json:
+                    shutil.move(os.path.join(stage, p), os.path.join(target, p))
+                js += len(new_json)
+            print('{}. köteg: {} .po kész'.format(i, len(batch)))
+    for s in skipped:
+        print('kihagyva (nem <tone>/<plugins|themes>/<locale>/<mappa>/ alatt): ' + s)
+    for b in bad_names:
+        print('figyelmeztetés: a .po neve nem <mappa>-<locale>.po (a termékek is a .po nevét kapják): ' + b)
+    print('Kész (helyben): {} .mo, {} .json, {} elavult .json törölve.'.format(mo, js, removed))
+    return 0
+
+
 def main(argv):
     args = list(argv)
     out = os.path.join(ROOT, 'dist')
-    revision_date, wanted = False, []
+    revision_date, dist_mode, wanted = False, False, []
     while args:
         a = args.pop(0)
         if a == '--out':
             out = os.path.abspath(args.pop(0))
+            dist_mode = True
+        elif a == '--dist':
+            dist_mode = True
         elif a == '--revision-date':
             revision_date = True
         elif a in ('-h', '--help'):
@@ -170,7 +245,7 @@ def main(argv):
             sys.exit('Nincs ilyen csomag: ' + ' '.join(wanted))
 
     blocked = load_blocked()
-    if os.path.isdir(out):
+    if dist_mode and os.path.isdir(out):
         shutil.rmtree(out)
     packages, skipped = [], []
     # A WP-CLI nem rekurzív, csomagonként hívni pedig lassú: a .po-kat kötegekbe gyűjtjük (egy
@@ -195,6 +270,9 @@ def main(argv):
             batches.append(batch)
         batch[name] = (f, d)
 
+    if not dist_mode:
+        return build_in_place(batches, skipped)
+
     # 3. WP-CLI, kötegenként egy hívás parancsonként
     stage_root = os.path.join(out, '.stage')
     done = []
@@ -202,7 +280,7 @@ def main(argv):
         stage = os.path.join(stage_root, str(i))
         os.makedirs(stage)
         for name, (f, _) in batch.items():
-            shutil.copy2(f, os.path.join(stage, name))
+            stage_po(f, os.path.join(stage, name))
         for cmd in (['i18n', 'make-mo', stage], ['i18n', 'make-php', stage],
                     ['i18n', 'make-json', stage, '--no-purge']):
             run_wp(cmd)
@@ -216,6 +294,7 @@ def main(argv):
             os.makedirs(target)
             for p in mine:
                 shutil.move(os.path.join(stage, p), os.path.join(target, p))
+            shutil.copy2(f, os.path.join(target, name))  # a csomagba az eredeti .po kerül
             done.append((f, d, target, mine))
         print('{}. köteg: {} .po kész'.format(i, len(batch)))
     shutil.rmtree(stage_root, ignore_errors=True)
