@@ -33,12 +33,16 @@ nem használ, a `.l10n.php`-t a `.mo`-ból maga készíti. Ezért:
 
 - a `.mo` és a fordítási `.json` a `.po` mellett a repóban marad (a `.l10n.php` nincs a gitben);
 - az útvonal `<tone>/<plugins|themes>/<locale>/<mappa>/`, a fájlnév-szabály **kötelező**:
-  `^<mappa>-<locale>(\.mo|\.po|-[0-9a-f]{32}\.json)$`, például
+  `^<név>-<locale>(\.mo|\.po|-[0-9a-f]{32}\.json)$`, például
   `formal/plugins/hu_HU/acf/acf-hu_HU.mo`;
-- a `<mappa>` a bővítmény vagy sablon **telepítési könyvtárneve** (`wp-content/plugins/<mappa>/`, `wp-content/themes/<mappa>/`), nem a text
-  domain — a kettő eltérhet tőle.
+- a `<mappa>` a bővítmény vagy sablon **telepítési könyvtárneve** (`wp-content/plugins/<mappa>/`, `wp-content/themes/<mappa>/`);
+- a `<név>` a bővítmény **text domainje** (a `.po` `X-Domain` fejléce): a WordPress a `<text domain>-<locale>.mo`
+  fájlt tölti be. Ahol a text domain megegyezik a mappával (a legtöbb csomag), a kettő ugyanaz; ahol eltér, a fájl
+  a text domain nevét viseli, például
+  `formal/plugins/hu_HU/complianz-gdpr-premium/complianz-gdpr-hu_HU.mo`.
 
-A CI hibát ad, ha egy fájlnév nem illik a szabályra, vagy ha a `.po` mellől hiányzik a `<mappa>-<locale>.mo`.
+A CI hibát ad, ha egy fájlnév nem illik a szabályra (az előtag nem a mappa és nem a `.po` `X-Domain`-je), ha a
+`.po` mellől hiányzik az azonos nevű `.mo`, vagy ha egy `.mo`/`.json` mellett nincs azonos nevű `.po`.
 
 ## Letöltés és telepítés kézzel (bővítmény nélkül)
 
@@ -69,13 +73,13 @@ WordPress fordítási rendszerén keresztül írja ki. Ezt is érdemes jelezni.
 
 ```
 formal/                    magázó fordítások
-  plugins/<locale>/<mappa>/<mappa>-<locale>.po
-  themes/<locale>/<mappa>/<mappa>-<locale>.po
+  plugins/<locale>/<mappa>/<text domain>-<locale>.po
+  themes/<locale>/<mappa>/<text domain>-<locale>.po
 informal/                  tegező fordítások, ugyanígy
 ```
 
-A `<mappa>` a bővítmény vagy sablon telepítési könyvtárneve (nem a text domain), a `<locale>` a nyelvi kód
-(pl. `hu_HU`). A fájlnév-szabály fent: [Az lw-translate és a fájlnév-szabály](#az-lw-translate-és-a-fájlnév-szabály).
+A `<mappa>` a bővítmény vagy sablon telepítési könyvtárneve, a fájlnév eleje a text domain (a legtöbbször a
+kettő ugyanaz), a `<locale>` a nyelvi kód (pl. `hu_HU`). A fájlnév-szabály fent: [Az lw-translate és a fájlnév-szabály](#az-lw-translate-és-a-fájlnév-szabály).
 
 | Fájl | Mire való | WordPress |
 |---|---|---|
@@ -125,7 +129,7 @@ rögzített szótári kifejezés a msgid-ben szerepel, de a magyar alakja nincs 
 
 A `build.py` a `blocked-strings.json` mintáit (API-kulcs-helyőrzők, amelyeken a GitHub push protection
 fennakad) kiveszi a `.po`-ból, majd a WP-CLI `wp i18n make-mo` és `make-json --no-purge` parancsával a `.po`
-mappájába írja a `<mappa>-<locale>.mo` és `<mappa>-<locale>-<md5>.json` fájlokat; a csomag korábbi, már nem
+mappájába írja a `.po` nevével azonos `<név>-<locale>.mo` és `<név>-<locale>-<md5>.json` fájlokat; a csomag korábbi, már nem
 generált `.json` fájljait törli. A `--dist` kapcsolóval a `dist/` alá dolgozik (`make-php` is), a forrásmappához nem
 nyúl; ebből csomagol a `package.py`. A `--revision-date` kapcsoló a módosított `.po` fájlok `PO-Revision-Date`
 fejlécét a mostani időre állítja; commit előtt érdemes futtatni, mert a `translations-*.json` `updated` mezője

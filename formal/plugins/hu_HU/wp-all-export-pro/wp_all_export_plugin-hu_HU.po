@@ -1,0 +1,3149 @@
+# Hungarian translation for WP All Export Pro.
+# Copyright (C) 2025 Soflyy
+# This file is distributed under the GPL license.
+# Translator Team <hello@hellowp.io>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP All Export Pro 2.0.2\n"
+"Report-Msgid-Bugs-To: support@hellowp.io\n"
+"POT-Creation-Date: 2025-10-19T20:50:57+00:00\n"
+"PO-Revision-Date: 2026-10-31 22:15+0100\n"
+"Last-Translator: HelloWP <translate@hellowp.io>\n"
+"Language-Team: HelloWP <translate@hellowp.io>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: wp_all_export_plugin\n"
+"X-Generator: sinann-po-translator\n"
+"X-Plugin-Name: WP All Export Pro\n"
+"X-Plugin-Tone: formal\n"
+"X-Plugin-Version: 2.0.2\n"
+
+#. Plugin Name of the plugin
+#: wp-all-export-pro.php
+msgid "WP All Export Pro"
+msgstr "WP All Export Pro"
+
+#. Plugin URI of the plugin
+#: wp-all-export-pro.php
+msgid "http://www.wpallimport.com/export/"
+msgstr "http://www.wpallimport.com/export/"
+
+#. Description of the plugin
+#: wp-all-export-pro.php
+msgid ""
+"Export any post type to a CSV or XML file. Edit the exported data, and then "
+"re-import it later using WP All Import."
+msgstr ""
+"Exportáljon bármilyen bejegyzéstípust CSV vagy XML fájlba. Szerkessze az "
+"exportált adatokat, majd importálja vissza később a WP All Importtal."
+
+#. Author of the plugin
+#: wp-all-export-pro.php
+msgid "Soflyy"
+msgstr "Soflyy"
+
+#: actions/admin_menu.php:13 actions/admin_menu.php:16
+#: actions/admin_menu.php:17 actions/admin_menu.php:18
+#: actions/admin_menu.php:19 actions/admin_menu.php:23
+#: views/admin/settings/_tab_licenses.php:77
+msgid "WP All Export"
+msgstr "WP All Export"
+
+#: actions/admin_menu.php:13 actions/admin_menu.php:23
+msgid "All Export"
+msgstr "All Export"
+
+#: actions/admin_menu.php:16
+msgid "Export to XML"
+msgstr "Exportálás XML-be"
+
+#: actions/admin_menu.php:16 views/admin/export/index.php:17
+msgid "New Export"
+msgstr "Új exportálás"
+
+#: actions/admin_menu.php:17 views/admin/manage/index.php:46
+#: views/admin/manage/update.php:109
+msgid "Manage Exports"
+msgstr "Exportálások kezelése"
+
+#: actions/admin_menu.php:18 views/admin/export/process.php:110
+#: views/admin/manage/index.php:212 views/admin/settings/index.php:37
+msgid "Settings"
+msgstr "Beállítások"
+
+#: actions/admin_menu.php:19
+msgid "Partner Discounts"
+msgstr "Partnerkedvezmények"
+
+#: actions/init.php:31 actions/init.php:37
+msgid "Error. Incorrect API key, check the WP All Export Pro settings page."
+msgstr "Hiba. Hibás API-kulcs, ellenőrizze a WP All Export Pro beállítási oldalát."
+
+#: actions/wp_ajax_dismiss_export_warnings.php:6
+#: actions/wp_ajax_dismiss_export_warnings.php:10
+#: actions/wp_ajax_dismiss_review_modal.php:6
+#: actions/wp_ajax_dismiss_review_modal.php:10
+#: actions/wp_ajax_dismiss_warnings.php:6
+#: actions/wp_ajax_dismiss_warnings.php:10
+#: actions/wp_ajax_generate_zapier_api_key.php:6
+#: actions/wp_ajax_generate_zapier_api_key.php:10
+#: actions/wp_ajax_get_xml_spec.php:6 actions/wp_ajax_get_xml_spec.php:10
+#: actions/wp_ajax_save_functions.php:6 actions/wp_ajax_save_functions.php:10
+#: actions/wp_ajax_save_scheduling.php:13
+#: actions/wp_ajax_save_scheduling.php:17
+#: actions/wp_ajax_scheduling_dialog_content.php:7
+#: actions/wp_ajax_scheduling_dialog_content.php:11
+#: actions/wp_ajax_scheduling_subscribe_dialog_content.php:7
+#: actions/wp_ajax_scheduling_subscribe_dialog_content.php:11
+#: actions/wp_ajax_send_feedback.php:6 actions/wp_ajax_send_feedback.php:10
+#: actions/wp_ajax_wpae_available_rules.php:6
+#: actions/wp_ajax_wpae_available_rules.php:10
+#: actions/wp_ajax_wpae_filtering.php:6 actions/wp_ajax_wpae_filtering.php:10
+#: actions/wp_ajax_wpae_filtering_count.php:6
+#: actions/wp_ajax_wpae_filtering_count.php:10
+#: actions/wp_ajax_wpae_generate_token.php:7
+#: actions/wp_ajax_wpae_generate_token.php:11
+#: actions/wp_ajax_wpae_preview.php:9 actions/wp_ajax_wpae_preview.php:13
+#: actions/wp_ajax_wpae_realtime_export_status.php:7
+#: actions/wp_ajax_wpae_realtime_export_status.php:11
+#: actions/wp_ajax_wpae_remove_token.php:7
+#: actions/wp_ajax_wpae_remove_token.php:11
+#: actions/wp_ajax_wpae_settings_check_license.php:6
+#: actions/wp_ajax_wpae_settings_check_license.php:10
+#: actions/wp_ajax_wpallexport.php:9 actions/wp_ajax_wpallexport.php:13
+#: controllers/admin/manage.php:409 controllers/admin/manage.php:446
+#: controllers/admin/manage.php:481 controllers/admin/manage.php:532
+#: controllers/admin/manage.php:591 wpae_api.php:7 wpae_api.php:11
+msgid "Security check"
+msgstr "Biztonsági ellenőrzés"
+
+#: actions/wp_ajax_get_xml_spec.php:34
+msgid "Specification not found."
+msgstr "A specifikáció nem található."
+
+#: actions/wp_ajax_save_functions.php:56
+msgid "PHP code must be wrapped in \"&lt;?php\" and \"?&gt;\""
+msgstr "A PHP-kódot „&lt;?php” és „?&gt;” közé kell tenni"
+
+#: actions/wp_ajax_save_functions.php:68
+msgid "File has been successfully updated."
+msgstr "A fájl sikeresen frissítve."
+
+#: actions/wp_ajax_wpae_available_rules.php:34
+#: views/admin/export/blocks/filters.php:26
+msgid "Select Rule"
+msgstr "Szabály kiválasztása"
+
+#: actions/wp_ajax_wpae_available_rules.php:40
+#: views/admin/export/blocks/filters.php:62
+#: views/admin/export/blocks/filters.php:76
+msgid "In"
+msgstr "Benne van"
+
+#: actions/wp_ajax_wpae_available_rules.php:41
+#: views/admin/export/blocks/filters.php:63
+#: views/admin/export/blocks/filters.php:77
+msgid "Not In"
+msgstr "Nincs benne"
+
+#: actions/wp_ajax_wpae_available_rules.php:49
+#: actions/wp_ajax_wpae_available_rules.php:74
+#: actions/wp_ajax_wpae_available_rules.php:85
+#: actions/wp_ajax_wpae_available_rules.php:98
+#: views/admin/export/blocks/filters.php:52
+#: views/admin/export/blocks/filters.php:66
+msgid "equals"
+msgstr "egyenlő"
+
+#: actions/wp_ajax_wpae_available_rules.php:50
+#: actions/wp_ajax_wpae_available_rules.php:75
+#: actions/wp_ajax_wpae_available_rules.php:86
+#: actions/wp_ajax_wpae_available_rules.php:99
+#: views/admin/export/blocks/filters.php:53
+#: views/admin/export/blocks/filters.php:67
+msgid "doesn't equal"
+msgstr "nem egyenlő"
+
+#: actions/wp_ajax_wpae_available_rules.php:51
+#: views/admin/export/blocks/filters.php:68
+msgid "newer than"
+msgstr "újabb, mint"
+
+#: actions/wp_ajax_wpae_available_rules.php:52
+#: views/admin/export/blocks/filters.php:69
+msgid "equal to or newer than"
+msgstr "egyenlő vagy újabb, mint"
+
+#: actions/wp_ajax_wpae_available_rules.php:53
+#: views/admin/export/blocks/filters.php:70
+msgid "older than"
+msgstr "régebbi, mint"
+
+#: actions/wp_ajax_wpae_available_rules.php:54
+#: views/admin/export/blocks/filters.php:71
+msgid "equal to or older than"
+msgstr "egyenlő vagy régebbi, mint"
+
+#: actions/wp_ajax_wpae_available_rules.php:56
+#: actions/wp_ajax_wpae_available_rules.php:65
+#: actions/wp_ajax_wpae_available_rules.php:76
+#: actions/wp_ajax_wpae_available_rules.php:105
+#: views/admin/export/blocks/filters.php:58
+#: views/admin/export/blocks/filters.php:72
+msgid "contains"
+msgstr "tartalmazza"
+
+#: actions/wp_ajax_wpae_available_rules.php:57
+#: actions/wp_ajax_wpae_available_rules.php:66
+#: actions/wp_ajax_wpae_available_rules.php:77
+#: actions/wp_ajax_wpae_available_rules.php:106
+#: views/admin/export/blocks/filters.php:59
+#: views/admin/export/blocks/filters.php:73
+msgid "doesn't contain"
+msgstr "nem tartalmazza"
+
+#: actions/wp_ajax_wpae_available_rules.php:58
+#: actions/wp_ajax_wpae_available_rules.php:78
+#: actions/wp_ajax_wpae_available_rules.php:91
+#: actions/wp_ajax_wpae_available_rules.php:107
+#: views/admin/export/blocks/filters.php:60
+#: views/admin/export/blocks/filters.php:74
+msgid "is empty"
+msgstr "üres"
+
+#: actions/wp_ajax_wpae_available_rules.php:59
+#: actions/wp_ajax_wpae_available_rules.php:79
+#: actions/wp_ajax_wpae_available_rules.php:92
+#: actions/wp_ajax_wpae_available_rules.php:108
+#: views/admin/export/blocks/filters.php:61
+#: views/admin/export/blocks/filters.php:75
+msgid "is not empty"
+msgstr "nem üres"
+
+#: actions/wp_ajax_wpae_available_rules.php:87
+#: actions/wp_ajax_wpae_available_rules.php:100
+#: views/admin/export/blocks/filters.php:54
+msgid "greater than"
+msgstr "nagyobb, mint"
+
+#: actions/wp_ajax_wpae_available_rules.php:88
+#: actions/wp_ajax_wpae_available_rules.php:101
+#: views/admin/export/blocks/filters.php:55
+msgid "equal to or greater than"
+msgstr "egyenlő vagy nagyobb, mint"
+
+#: actions/wp_ajax_wpae_available_rules.php:89
+#: actions/wp_ajax_wpae_available_rules.php:102
+#: views/admin/export/blocks/filters.php:56
+msgid "less than"
+msgstr "kisebb, mint"
+
+#: actions/wp_ajax_wpae_available_rules.php:90
+#: actions/wp_ajax_wpae_available_rules.php:103
+#: views/admin/export/blocks/filters.php:57
+msgid "equal to or less than"
+msgstr "egyenlő vagy kisebb, mint"
+
+#: actions/wp_ajax_wpae_available_rules.php:110
+msgid "is in list (comma separated)"
+msgstr "szerepel a listában (vesszővel elválasztva)"
+
+#: actions/wp_ajax_wpae_available_rules.php:111
+msgid "is not in list (comma separated)"
+msgstr "nem szerepel a listában (vesszővel elválasztva)"
+
+#: actions/wp_ajax_wpae_filtering.php:50
+msgid "Add Filtering Options"
+msgstr "Szűrési opciók hozzáadása"
+
+#: actions/wp_ajax_wpae_filtering.php:77
+msgid "The WooCoommerce Export Add-On Pro is Required to Migrate Orders."
+msgstr "A rendelések migrálásához szükséges a WooCommerce Export Add-On Pro."
+
+#: actions/wp_ajax_wpae_filtering.php:78 actions/wp_ajax_wpae_filtering.php:83
+msgid "Purchase the WooCommerce Export Add-On Pro"
+msgstr "A WooCommerce Export Add-On Pro megvásárlása"
+
+#: actions/wp_ajax_wpae_filtering.php:82
+msgid "The WooCoommerce Export Add-On Pro is Required to Migrate Products."
+msgstr "A termékek migrálásához szükséges a WooCommerce Export Add-On Pro."
+
+#: actions/wp_ajax_wpae_filtering.php:87
+#, php-format
+msgid "Migrate %s"
+msgstr "A(z) %s áttelepítése"
+
+#: actions/wp_ajax_wpae_filtering.php:91 actions/wp_ajax_wpae_filtering.php:98
+msgid "Customize Export File"
+msgstr "Exportfájl testreszabása"
+
+#: actions/wp_ajax_wpae_filtering_count.php:396
+msgid "Unable to Export"
+msgstr "Az exportálás nem lehetséges"
+
+#: actions/wp_ajax_wpae_filtering_count.php:397
+msgid "Exporting taxonomies requires WordPress 4.6 or greater"
+msgstr "Taxonómiák exportálásához WordPress 4.6-os vagy újabb verzió szükséges"
+
+#: actions/wp_ajax_wpae_filtering_count.php:548
+#: actions/wp_ajax_wpae_filtering_count.php:557
+#: actions/wp_ajax_wpae_filtering_count.php:582
+msgid "Your export is ready to run."
+msgstr "Az exportálás készen áll a futtatásra."
+
+#: actions/wp_ajax_wpae_filtering_count.php:549
+#: actions/wp_ajax_wpae_filtering_count.php:583
+#, php-format
+msgid "WP All Export will export the most recent %s."
+msgstr "A WP All Export a legutóbbi %s elemet fogja exportálni."
+
+#: actions/wp_ajax_wpae_filtering_count.php:558
+#, php-format
+msgid "WP All Export will export %d %s."
+msgstr "A WP All Export %d %s elemet fog exportálni."
+
+#: actions/wp_ajax_wpae_filtering_count.php:561
+#: actions/wp_ajax_wpae_filtering_count.php:564
+#: actions/wp_ajax_wpae_filtering_count.php:567
+#: actions/wp_ajax_wpae_filtering_count.php:594
+#: actions/wp_ajax_wpae_filtering_count.php:597
+#: actions/wp_ajax_wpae_filtering_count.php:600
+msgid "Nothing to export."
+msgstr "Nincs exportálandó adat."
+
+#: actions/wp_ajax_wpae_filtering_count.php:562
+#: actions/wp_ajax_wpae_filtering_count.php:595
+#, php-format
+msgid "All %s have already been exported."
+msgstr "Már az összes %s exportálva lett."
+
+#: actions/wp_ajax_wpae_filtering_count.php:565
+#: actions/wp_ajax_wpae_filtering_count.php:598
+#: actions/wp_ajax_wpae_filtering_count.php:620
+#, php-format
+msgid "No matching %s found for selected filter rules."
+msgstr "A kiválasztott szűrési szabályoknak megfelelő %s nem található."
+
+#: actions/wp_ajax_wpae_filtering_count.php:568
+#: actions/wp_ajax_wpae_filtering_count.php:601
+#: actions/wp_ajax_wpae_filtering_count.php:622
+#, php-format
+msgid "There aren't any %s to export."
+msgstr "Nincs exportálható %s."
+
+#: actions/wp_ajax_wpae_filtering_count.php:591
+msgid "Drag &amp; drop data to include in the export file."
+msgstr "Húzza ide az exportfájlba felvenni kívánt adatokat."
+
+#: actions/wp_ajax_wpae_filtering_count.php:618
+msgid "Continue to configure and run your export."
+msgstr "Folytassa az exportálás beállítását és futtatását."
+
+#: actions/wp_ajax_wpae_preview.php:61 controllers/admin/export.php:275
+msgid "XML template is empty."
+msgstr "Az XML-sablon üres."
+
+#: actions/wp_ajax_wpae_preview.php:497
+msgid "Data not found."
+msgstr "Az adatok nem találhatók."
+
+#: actions/wp_ajax_wpae_preview.php:506
+msgid "This format is not supported."
+msgstr "Ez a formátum nem támogatott."
+
+#: actions/wp_ajax_wpae_send_to_codebox.php:5
+msgid "Security check failed."
+msgstr "A biztonsági ellenőrzés nem sikerült."
+
+#: actions/wp_ajax_wpae_send_to_codebox.php:9
+msgid "Permission denied."
+msgstr "Hozzáférés megtagadva."
+
+#: actions/wp_ajax_wpae_send_to_codebox.php:18
+msgid "Successfully reverted to functions file."
+msgstr "Sikeresen visszaállítva a functions fájlra."
+
+#: actions/wp_ajax_wpae_send_to_codebox.php:24
+msgid "No code provided."
+msgstr "Nincs megadva kód."
+
+#: actions/wp_ajax_wpae_send_to_codebox.php:36
+msgid "CodeBox is already in use."
+msgstr "A CodeBox már használatban van."
+
+#: actions/wp_ajax_wpae_send_to_codebox.php:46
+msgid "Code successfully sent to CodeBox."
+msgstr "A kód sikeresen elküldve a CodeBoxnak."
+
+#: actions/wp_ajax_wpae_send_to_codebox.php:48
+msgid "Failed to send code to CodeBox."
+msgstr "Nem sikerült elküldeni a kódot a CodeBoxnak."
+
+#: actions/wp_ajax_wpae_settings_check_license.php:42
+#: actions/wp_ajax_wpae_settings_check_license.php:158
+#: views/admin/settings/_tab_licenses.php:54
+#: views/admin/settings/_tab_licenses.php:131
+#: views/admin/settings/_tab_licenses.php:139
+#: views/admin/settings/_tab_licenses.php:145
+msgid "Not activated"
+msgstr "Nincs aktiválva"
+
+#: actions/wp_ajax_wpae_settings_check_license.php:90
+msgid "This site uses the license saved on the main site of this network."
+msgstr "Ez a webhely a hálózat fő webhelyén mentett licencet használja."
+
+#: actions/wp_ajax_wpae_settings_check_license.php:118
+#: actions/wp_ajax_wpae_settings_check_license.php:170
+#: controllers/admin/settings.php:253
+msgid "Not active on this site"
+msgstr "Ezen a webhelyen nem aktív"
+
+#: actions/wp_ajax_wpae_settings_check_license.php:119
+#: controllers/admin/settings.php:254
+msgid ""
+"Couldn't reach the licensing server, so this key couldn't be re-checked. "
+"This site stays unlicensed until it can be."
+msgstr ""
+"Nem sikerült elérni a licenckiszolgálót, ezért ezt a kulcsot nem lehetett "
+"újra ellenőrizni. A webhely addig licenc nélkül marad, amíg az ellenőrzésre "
+"nincs lehetőség."
+
+#: actions/wp_ajax_wpae_settings_check_license.php:128
+#: actions/wp_ajax_wpae_settings_check_license.php:136
+#: controllers/admin/settings.php:250
+msgid "Status unavailable"
+msgstr "Az állapot nem érhető el"
+
+#: actions/wp_ajax_wpae_settings_check_license.php:129
+msgid ""
+"Couldn't reach the licensing server, so this key couldn't be re-checked. "
+"Your license is unchanged by that; see the notice above for where it stands."
+msgstr ""
+"Nem sikerült elérni a licenckiszolgálót, ezért ezt a kulcsot nem lehetett "
+"újra ellenőrizni. Ez nem módosítja a licencét; az állapotáról a fenti "
+"értesítésben tájékozódhat."
+
+#: actions/wp_ajax_wpae_settings_check_license.php:137
+#: controllers/admin/settings.php:251
+msgid ""
+"Couldn't reach the licensing server. Your license is unaffected. Retry when "
+"you have a connection."
+msgstr ""
+"Nem sikerült elérni a licenckiszolgálót. Ez nincs hatással a licencére. "
+"Próbálja újra, amikor van internetkapcsolata."
+
+#: actions/wp_ajax_wpae_settings_check_license.php:154
+#: views/admin/settings/_tab_licenses.php:141
+msgid "Active"
+msgstr "Aktív"
+
+#: actions/wp_ajax_wpae_settings_check_license.php:155
+#: views/admin/settings/_tab_licenses.php:128
+msgid "Expired"
+msgstr "Lejárt"
+
+#: actions/wp_ajax_wpae_settings_check_license.php:155
+#: views/admin/settings/_tab_licenses.php:128
+#, php-format
+msgid ""
+"This license has expired. Renew it in the <a href=\"%s\" "
+"target=\"_blank\">customer portal</a>."
+msgstr ""
+"Ez a licenc lejárt. Újítsa meg a <a href=\"%s\" target=\"_blank\">vásárlói "
+"portálon</a>."
+
+#: actions/wp_ajax_wpae_settings_check_license.php:156
+#: views/admin/settings/_tab_licenses.php:129
+msgid "Not recognized"
+msgstr "Nem ismert"
+
+#: actions/wp_ajax_wpae_settings_check_license.php:156
+#: views/admin/settings/_tab_licenses.php:129
+#, php-format
+msgid ""
+"This key was not recognized. Check for a typo, or copy it again from the <a "
+"href=\"%s\" target=\"_blank\">customer portal</a>."
+msgstr ""
+"A rendszer nem ismerte fel ezt a kulcsot. Ellenőrizze, hogy nincs-e benne "
+"elgépelés, vagy másolja ki újra a <a href=\"%s\" target=\"_blank\">vásárlói "
+"portálról</a>."
+
+#: actions/wp_ajax_wpae_settings_check_license.php:157
+#: views/admin/settings/_tab_licenses.php:130
+msgid "Disabled"
+msgstr "Kikapcsolva"
+
+#: actions/wp_ajax_wpae_settings_check_license.php:157
+#: views/admin/settings/_tab_licenses.php:130
+#, php-format
+msgid ""
+"This license has been disabled. Contact support via the <a href=\"%s\" "
+"target=\"_blank\">customer portal</a>."
+msgstr ""
+"Ezt a licencet kikapcsolták. Lépjen kapcsolatba a támogatással a <a "
+"href=\"%s\" target=\"_blank\">vásárlói portálon</a> keresztül."
+
+#: actions/wp_ajax_wpae_settings_check_license.php:158
+#: views/admin/settings/_tab_licenses.php:131
+msgid ""
+"The key is valid but has not been activated on this site yet. Choose "
+"Activate to finish."
+msgstr ""
+"A kulcs érvényes, de ezen a webhelyen még nincs bekapcsolva. A befejezéshez "
+"válassza a bekapcsolás lehetőséget."
+
+#: actions/wp_ajax_wpae_settings_check_license.php:159
+#: views/admin/settings/_tab_licenses.php:132
+msgid "Not activated on this site"
+msgstr "Ezen a webhelyen nincs bekapcsolva"
+
+#: actions/wp_ajax_wpae_settings_check_license.php:159
+#: views/admin/settings/_tab_licenses.php:132
+msgid ""
+"This key is valid but has not been activated for this domain. Choose "
+"Activate to finish."
+msgstr ""
+"A kulcs érvényes, de ehhez a domainhez még nincs bekapcsolva. A befejezéshez"
+" válassza a bekapcsolás lehetőséget."
+
+#: actions/wp_ajax_wpae_settings_check_license.php:160
+#: views/admin/settings/_tab_licenses.php:133
+msgid "Wrong product"
+msgstr "Nem megfelelő termék"
+
+#: actions/wp_ajax_wpae_settings_check_license.php:160
+msgid ""
+"This key belongs to a different product. Check that you pasted the WP All "
+"Export key."
+msgstr "Ez a kulcs egy másik termékhez tartozik. Ellenőrizze, hogy a WP All Export kulcsát illesztette-e be."
+
+#: actions/wp_ajax_wpae_settings_check_license.php:161
+#: views/admin/settings/_tab_licenses.php:134
+msgid "Site limit reached"
+msgstr "Elérte a webhelykorlátot"
+
+#: actions/wp_ajax_wpae_settings_check_license.php:161
+#: views/admin/settings/_tab_licenses.php:134
+#, php-format
+msgid ""
+"This license has reached its site limit. Deactivate a site you no longer use"
+" in the <a href=\"%s\" target=\"_blank\">customer portal</a>."
+msgstr ""
+"Ez a licenc elérte a webhelykorlátot. Kapcsoljon ki egy olyan webhelyet, "
+"amelyet már nem használ a <a href=\"%s\" target=\"_blank\">vásárlói "
+"portálon</a>."
+
+#: actions/wp_ajax_wpae_settings_check_license.php:171
+#, php-format
+msgid ""
+"The key itself checks out, but this site is not licensed to run WP All "
+"Export. Check the license in the <a href=\"%s\" target=\"_blank\">customer "
+"portal</a>."
+msgstr "A kulcs érvényes, de ezen a webhelyen nincs licenc a WP All Export használatához. Ellenőrizze a licencet a <a href=\"%s\" target=\"_blank\">vásárlói portálon</a>."
+
+#: actions/wp_ajax_wpae_settings_check_license.php:185
+#: views/admin/settings/_tab_licenses.php:147
+msgid "Not active"
+msgstr "Nem aktív"
+
+#: actions/wp_ajax_wpae_settings_check_license.php:186
+#: views/admin/settings/_tab_licenses.php:147
+#, php-format
+msgid ""
+"The licensing server reported a problem with this key. Check it in the <a "
+"href=\"%s\" target=\"_blank\">customer portal</a>."
+msgstr ""
+"A licenckiszolgáló problémát jelzett ezzel a kulccsal kapcsolatban. "
+"Ellenőrizze a <a href=\"%s\" target=\"_blank\">vásárlói portálon</a>."
+
+#: actions/wp_ajax_wpallexport.php:30
+msgid "Export is not defined."
+msgstr "Az exportálás nincs meghatározva."
+
+#: actions/wp_loaded.php:438
+#: src/App/UnsecuredController/SchedulingController.php:216
+#: src/Pro/Filtering/FilteringFactory.php:33
+#: src/Pro/Filtering/FilteringFactory.php:45
+#: src/Pro/Filtering/FilteringFactory.php:53 wp-all-export-pro.php:662
+msgid ""
+"The User Export Add-On Pro is required to run this export. If you already "
+"own it, you can download the add-on here: <a "
+"href=\"https://www.wpallimport.com/portal/downloads\" "
+"target=\"_blank\">https://www.wpallimport.com/portal/downloads</a>"
+msgstr "Az exportálás futtatásához szükséges a User Export Add-On Pro. Ha már rendelkezik vele, innen töltheti le a kiegészítőt: <a href=\"https://www.wpallimport.com/portal/downloads\" target=\"_blank\">https://www.wpallimport.com/portal/downloads</a>"
+
+#: actions/wp_loaded.php:447
+msgid ""
+"The WooCommerce Export Add-On Pro is required to run this expor t. If you "
+"already own it, you can download the add-on here: <a "
+"href=\"https://www.wpallimport.com/portal/downloads\" "
+"target=\"_blank\">https://www.wpallimport.com/portal/downloads</a>"
+msgstr "Az exportálás futtatásához szükséges a WooCommerce Export Add-On Pro. Ha már rendelkezik vele, innen töltheti le a kiegészítőt: <a href=\"https://www.wpallimport.com/portal/downloads\" target=\"_blank\">https://www.wpallimport.com/portal/downloads</a>"
+
+#: actions/wp_loaded.php:455 actions/wp_loaded.php:461
+#: src/App/UnsecuredController/SchedulingController.php:232
+#: src/App/UnsecuredController/SchedulingController.php:242
+#: src/Pro/Filtering/FilteringFactory.php:58
+#: src/Pro/Filtering/FilteringFactory.php:62
+#: src/Pro/Filtering/FilteringFactory.php:69 wp-all-export-pro.php:642
+#: wp-all-export-pro.php:644 wp-all-export-pro.php:646
+#: wp-all-export-pro.php:653 wp-all-export-pro.php:694
+#: wp-all-export-pro.php:698
+msgid ""
+"The WooCommerce Export Add-On Pro is required to run this export. If you "
+"already own it, you can download the add-on here: <a "
+"href=\"https://www.wpallimport.com/portal/downloads\" "
+"target=\"_blank\">https://www.wpallimport.com/portal/downloads</a>"
+msgstr "Az exportálás futtatásához szükséges a WooCommerce Export Add-On Pro. Ha már rendelkezik vele, innen töltheti le a kiegészítőt: <a href=\"https://www.wpallimport.com/portal/downloads\" target=\"_blank\">https://www.wpallimport.com/portal/downloads</a>"
+
+#: actions/wp_loaded.php:466
+#: src/App/UnsecuredController/SchedulingController.php:236
+#: src/Pro/Filtering/FilteringFactory.php:37 wp-all-export-pro.php:702
+msgid ""
+"The ACF Export Add-On Pro is required to run this export. If you already own"
+" it, you can download the add-on here: <a "
+"href=\"https://www.wpallimport.com/portal/downloads\" "
+"target=\"_blank\">https://www.wpallimport.com/portal/downloads</a>"
+msgstr "Az ACF Export Add-On Pro szükséges az exportálás futtatásához. Ha már megvásárolta, innen töltheti le a kiegészítőt: <a href=\"https://www.wpallimport.com/portal/downloads\" target=\"_blank\">https://www.wpallimport.com/portal/downloads</a>"
+
+#: actions/wp_loaded.php:488
+#, php-format
+msgid "Export #%s canceled."
+msgstr "Exportálás megszakítva: #%s."
+
+#: actions/wp_loaded.php:498 actions/wp_loaded.php:563
+#: src/App/Service/ScheduledExport.php:19
+#: src/App/Service/ScheduledExport.php:71
+#, php-format
+msgid "Export #%s is currently in manually process. Request skipped."
+msgstr "A #%s azonosítójú exportálás jelenleg kézi feldolgozás alatt áll. A kérés kihagyva."
+
+#: actions/wp_loaded.php:507 src/App/Service/ScheduledExport.php:43
+#, php-format
+msgid "#%s Cron job triggered."
+msgstr "#%s Cron-feladat elindítva."
+
+#: actions/wp_loaded.php:514 src/App/Service/ScheduledExport.php:25
+#, php-format
+msgid "Export #%s currently in process. Request skipped."
+msgstr "A #%s azonosítójú exportálás jelenleg folyamatban van. A kérés kihagyva."
+
+#: actions/wp_loaded.php:521
+#, php-format
+msgid "Export #%s already triggered. Request skipped."
+msgstr "A #%s azonosítójú exportálás már elindult. A kérés kihagyva."
+
+#: actions/wp_loaded.php:555 src/App/Service/ScheduledExport.php:65
+#, php-format
+msgid "Export #%s is not triggered. Request skipped."
+msgstr "A #%s azonosítójú exportálás nem indult el. A kérés kihagyva."
+
+#: actions/wp_loaded.php:579 src/App/Service/ScheduledExport.php:112
+#, php-format
+msgid "Export #%s complete"
+msgstr "A #%s azonosítójú exportálás befejeződött"
+
+#: actions/wp_loaded.php:586 src/App/Service/ScheduledExport.php:117
+#, php-format
+msgid "Records Processed %s."
+msgstr "Feldolgozott rekordok: %s."
+
+#: actions/wp_loaded.php:595 src/App/Service/ScheduledExport.php:124
+#, php-format
+msgid "Export #%s already processing. Request skipped."
+msgstr "A #%s azonosítójú exportálás már feldolgozás alatt áll. A kérés kihagyva."
+
+#: actions/wp_loaded.php:720
+msgid "File doesn't exist"
+msgstr "A fájl nem létezik"
+
+#: actions/wp_loaded.php:729
+msgid "Export hash is not valid."
+msgstr "Az exportálási hash nem érvényes."
+
+#: addon-api/classes/updater.php:32
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" "
+"class=\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
+msgstr "Elérhető egy új verzió ebből: %1$s. <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">%3$s verzió részleteinek megtekintése</a>."
+
+#: addon-api/classes/updater.php:41
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" "
+"class=\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a "
+"href=\"%4$s\">update now</a>."
+msgstr "Elérhető egy új verzió ebből: %1$s. <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">%3$s verzió részleteinek megtekintése</a> vagy <a href=\"%4$s\">frissítés most</a>."
+
+#: classes/updater.php:44
+#, php-format
+msgid ""
+"A new version of WP All Export Pro is available. <strong>A valid license is "
+"required to use WP All Export Pro and to receive updates.</strong> Enter or "
+"check your license key on the <a href=\"%1$s\">Settings</a> page."
+msgstr "A WP All Export Pro új verziója elérhető. <strong>A WP All Export Pro használatához és a frissítések fogadásához érvényes licenc szükséges.</strong> Adja meg vagy ellenőrizze a licenckulcsát a <a href=\"%1$s\">Beállítások</a> oldalon."
+
+#: classes/updater.php:49
+#, php-format
+msgid ""
+"If you don't have a license key, please see the <a href=\"%1$s\" "
+"target=\"_blank\">details & pricing</a> page. If you do have a license key, "
+"you can access it at the <a href=\"%2$s\" target=\"_blank\">customer "
+"portal</a>."
+msgstr "Ha nincs licenckulcsa, tekintse meg a <a href=\"%1$s\" target=\"_blank\">részletek és árak</a> oldalt. Ha van licenckulcsa, a <a href=\"%2$s\" target=\"_blank\">vásárlói portálon</a> érheti el."
+
+#: classes/updater.php:64
+#, php-format
+msgid ""
+"There is a new version of WP All Export Pro available. <a target=\"_blank\" "
+"class=\"thickbox\" href=\"%1$s\">View version %2$s details</a> or <a "
+"href=\"%3$s\" class=\"update-link\">update now</a>."
+msgstr "A WP All Export Pro új verziója elérhető. <a target=\"_blank\" class=\"thickbox\" href=\"%1$s\">Verziórészletek megtekintése: %2$s</a> vagy <a href=\"%3$s\" class=\"update-link\">frissítés most</a>."
+
+#: classes/updater.php:99
+#, php-format
+msgid ""
+"WP All Export Pro %1$s requires PHP %2$s or greater, you are using PHP %3$s."
+" Please contact your host and tell them to update your server to at least "
+"PHP %2$s."
+msgstr "A WP All Export Pro %1$s verziójához PHP %2$s vagy újabb verzió szükséges, Ön azonban PHP %3$s verziót használ. Kérjük, vegye fel a kapcsolatot a tárhelyszolgáltatójával, és kérje meg, hogy frissítse a szervert legalább PHP %2$s verzióra."
+
+#: controllers/admin/export.php:131
+msgid ""
+"Required PHP components are missing.<br/><br/>WP All Export requires "
+"XMLReader, and XMLWriter PHP modules to be installed.<br/>These are standard"
+" features of PHP, and are necessary for WP All Export to write the files you"
+" are trying to export.<br/>Please contact your web hosting provider and ask "
+"them to install and activate the DOMDocument, XMLReader, and XMLWriter PHP "
+"modules."
+msgstr "Hiányoznak a szükséges PHP-összetevők.<br/><br/>A WP All Export működéséhez telepíteni kell az XMLReader és az XMLWriter PHP-modulokat.<br/>Ezek a PHP alapfunkciói közé tartoznak, és szükségesek az exportálni kívánt fájlok létrehozásához.<br/>Kérjük, vegye fel a kapcsolatot a tárhelyszolgáltatójával, és kérje meg, hogy telepítse és kapcsolja be a DOMDocument, XMLReader és XMLWriter PHP-modulokat."
+
+#: controllers/admin/export.php:221
+#: src/App/Controller/ExportController.php:138
+#, php-format
+msgid ""
+"You've reached your max_input_vars limit of %d. Please contact your web host"
+" to increase it."
+msgstr "Elérte a max_input_vars értékének korlátját (%d). Kérjük, vegye fel a kapcsolatot a tárhelyszolgáltatójával a korlát növelése érdekében."
+
+#: controllers/admin/export.php:249
+msgid "You haven't selected any columns for export."
+msgstr "Nem választott ki exportálandó oszlopokat."
+
+#: controllers/admin/export.php:253
+msgid "CSV delimiter must be specified."
+msgstr "Meg kell adni a CSV-elválasztó karaktert."
+
+#: controllers/admin/export.php:259
+msgid "Main XML Tag is required."
+msgstr "A fő XML-címke megadása kötelező."
+
+#: controllers/admin/export.php:264
+msgid "Single Record XML Tag is required."
+msgstr "Az egyedi rekord XML-címkéjének megadása kötelező."
+
+#: controllers/admin/export.php:268
+msgid "Main XML Tag equals to Single Record XML Tag."
+msgstr "A fő XML-címke megegyezik az egyedi rekord XML-címkéjével."
+
+#: controllers/admin/export.php:328 controllers/admin/export.php:494
+#: controllers/admin/manage.php:306
+msgid "Options updated"
+msgstr "Az opciók frissítve"
+
+#: controllers/admin/manage.php:342
+msgid "Export deleted"
+msgstr "Exportálás törölve"
+
+#: controllers/admin/manage.php:381
+#, php-format
+msgid "%d %s deleted"
+msgstr "%d %s törölve"
+
+#: controllers/admin/manage.php:381 controllers/admin/manage.php:395
+msgid "export"
+msgid_plural "exports"
+msgstr[0] "exportálás"
+msgstr[1] "exportálás"
+
+#: controllers/admin/manage.php:395
+#, php-format
+msgid "Client mode enabled for %d %s"
+msgstr "A kliensmód bekapcsolva %d %s esetén"
+
+#: controllers/admin/manage.php:465
+msgid ""
+"The exported bundle is missing and can't be downloaded. Please re-run your "
+"export to re-generate it."
+msgstr "Az exportált csomag hiányzik, ezért nem tölthető le. Kérjük, futtassa újra az exportálást a csomag újbóli létrehozásához."
+
+#: controllers/admin/manage.php:469
+msgid "This export doesn't exist."
+msgstr "Ez az exportálás nem létezik."
+
+#: controllers/admin/manage.php:571
+msgid "File format not supported"
+msgstr "A fájlformátum nem támogatott"
+
+#: controllers/admin/manage.php:576 controllers/admin/manage.php:580
+msgid ""
+"The exported file is missing and can't be downloaded. Please re-run your "
+"export to re-generate it."
+msgstr "Az exportált fájl hiányzik, ezért nem tölthető le. Kérjük, futtassa újra az exportálást a fájl újbóli létrehozásához."
+
+#: controllers/admin/settings.php:36
+msgid "Licenses"
+msgstr "Licencek"
+
+#: controllers/admin/settings.php:37
+msgid "Cron"
+msgstr "Cron"
+
+#: controllers/admin/settings.php:38
+msgid "Files"
+msgstr "Fájlok"
+
+#: controllers/admin/settings.php:39
+msgid "Zapier"
+msgstr "Zapier"
+
+#: controllers/admin/settings.php:40
+msgid "Templates"
+msgstr "Sablonok"
+
+#: controllers/admin/settings.php:41
+msgid "Functions"
+msgstr "Funkciók"
+
+#: controllers/admin/settings.php:42
+#: views/admin/settings/_tab_client_mode.php:5
+msgid "Client Mode"
+msgstr "Kliensmód"
+
+#: controllers/admin/settings.php:43 views/admin/export/index.php:20
+#: views/admin/export/options.php:28 views/admin/export/process.php:24
+#: views/admin/export/template.php:29 views/admin/manage/update.php:29
+#: views/admin/settings/index.php:40
+msgid "Support"
+msgstr "Támogatás"
+
+#: controllers/admin/settings.php:243
+msgid "Saving…"
+msgstr "Mentés…"
+
+#: controllers/admin/settings.php:244
+msgid "You have unsaved changes that will be lost."
+msgstr "A nem mentett módosítások elvesznek."
+
+#: controllers/admin/settings.php:245
+msgid "Copied"
+msgstr "Másolva"
+
+#: controllers/admin/settings.php:246
+msgid "Press Ctrl+C"
+msgstr "Nyomja meg a Ctrl+C billentyűkombinációt"
+
+#: controllers/admin/settings.php:247
+msgid "Confirm"
+msgstr "Megerősítés"
+
+#: controllers/admin/settings.php:248
+msgid "Are you sure?"
+msgstr "Biztos benne?"
+
+#: controllers/admin/settings.php:249
+#: views/admin/export/template/add_new_field.php:412
+#: views/admin/manage/index.php:569
+msgid "Cancel"
+msgstr "Mégsem"
+
+#: controllers/admin/settings.php:255
+msgid ""
+"Generate a new secret key? Every cron job you have already set up will stop "
+"working until you update it with the new URLs."
+msgstr ""
+"Létrehoz egy új titkos kulcsot? A már beállított cron-feladatok mindegyike "
+"leáll, amíg nem frissíti őket az új URL-ekkel."
+
+#: controllers/admin/settings.php:256 views/admin/settings/_tab_zapier.php:25
+msgid "Generate new key"
+msgstr "Új kulcs létrehozása"
+
+#: controllers/admin/settings.php:257
+msgid ""
+"Generate a new API key? Every Zap that uses the current key will stop "
+"working until you update it."
+msgstr "Létrehoz egy új API-kulcsot? Az aktuális kulcsot használó összes Zap leáll, amíg nem frissíti a kulcsot."
+
+#: controllers/admin/settings.php:459 controllers/admin/settings.php:626
+msgid "License activated."
+msgstr "Licenc aktiválva."
+
+#: controllers/admin/settings.php:493 controllers/admin/settings.php:503
+msgid "License removed"
+msgstr "Licenc eltávolítva"
+
+#: controllers/admin/settings.php:524
+msgid "Unknown File extension. Only txt files are permitted"
+msgstr "Ismeretlen fájlkiterjesztés. Csak txt-fájlok engedélyezettek"
+
+#: controllers/admin/settings.php:533
+msgid "The template is invalid. Options are missing."
+msgstr "A sablonminta hibás. Hiányoznak az opciók."
+
+#: controllers/admin/settings.php:536
+msgid ""
+"The template you've uploaded is intended to be used with WP All Import "
+"plugin."
+msgstr "A feltöltött sablonminta a WP All Import bővítménnyel való használatra készült."
+
+#: controllers/admin/settings.php:543
+#, php-format
+msgid "%d template imported"
+msgid_plural "%d templates imported"
+msgstr[0] "%d sablonminta importálva"
+msgstr[1] "%d sablonminta importálva"
+
+#: controllers/admin/settings.php:547
+msgid "Wrong imported data format"
+msgstr "Helytelen az importált adatok formátuma"
+
+#: controllers/admin/settings.php:548
+msgid "File is empty or doesn't exests"
+msgstr "A fájl üres vagy nem létezik"
+
+#: controllers/admin/settings.php:550
+msgid "Undefined entry!"
+msgstr "Nem definiált bejegyzés!"
+
+#: controllers/admin/settings.php:551
+msgid "Please select file."
+msgstr "Kérjük, válasszon fájlt."
+
+#: controllers/admin/settings.php:556
+msgid "Templates must be selected"
+msgstr "Sablonokat ki kell választani"
+
+#: controllers/admin/settings.php:565
+#, php-format
+msgid "%d template deleted"
+msgid_plural "%d templates deleted"
+msgstr[0] "%d sablonminta törölve"
+msgstr[1] "%d sablonminta törölve"
+
+#: controllers/admin/settings.php:659
+msgid ""
+"Secret key must contain at least one letter, number, dot, dash, or "
+"underscore."
+msgstr ""
+"A titkos kulcsnak legalább egy betűt, számot, pontot, kötőjelet vagy "
+"aláhúzásjelet kell tartalmaznia."
+
+#: controllers/admin/settings.php:661
+#, php-format
+msgid ""
+"Secret key can only contain letters, numbers, dots, dashes, and underscores."
+" Try %s."
+msgstr ""
+"A titkos kulcs csak betűket, számokat, pontokat, kötőjeleket és "
+"aláhúzásjeleket tartalmazhat. Próbálja meg ezt: %s."
+
+#: controllers/admin/settings.php:686 controllers/admin/settings.php:752
+msgid "Settings saved"
+msgstr "Beállítások mentve"
+
+#: filters/wpallexport_custom_types.php:13
+msgid "WooCommerce Products"
+msgstr "WooCommerce-termékek"
+
+#: filters/wpallexport_custom_types.php:14
+msgid "WooCommerce Orders"
+msgstr "WooCommerce-rendelések"
+
+#: filters/wpallexport_custom_types.php:15
+msgid "WooCommerce Coupons"
+msgstr "WooCommerce-kuponok"
+
+#: filters/wpallexport_custom_types.php:32
+msgid "WooCommerce Customers"
+msgstr "WooCommerce-vásárlók"
+
+#: filters/wpallexport_custom_types.php:38
+msgid "WooCommerce Guest Customers"
+msgstr "WooCommerce-vendégvásárlók"
+
+#: helpers/wp_all_export_get_cpt_name.php:10 views/admin/export/index.php:84
+msgid "Users"
+msgstr "Felhasználók"
+
+#: helpers/wp_all_export_get_cpt_name.php:10
+msgid "User"
+msgstr "Felhasználó"
+
+#: helpers/wp_all_export_get_cpt_name.php:14
+msgid "Customers"
+msgstr "Vásárlók"
+
+#: helpers/wp_all_export_get_cpt_name.php:14
+msgid "Customer"
+msgstr "Vásárló"
+
+#: helpers/wp_all_export_get_cpt_name.php:18
+msgid "Guest Customers"
+msgstr "Vendégvásárlók"
+
+#: helpers/wp_all_export_get_cpt_name.php:18
+msgid "Guest Customer"
+msgstr "Vendégvásárló"
+
+#: helpers/wp_all_export_get_cpt_name.php:22 views/admin/export/index.php:80
+msgid "Comments"
+msgstr "Hozzászólás"
+
+#: helpers/wp_all_export_get_cpt_name.php:22
+msgid "Comment"
+msgstr "Hozzászólás"
+
+#: helpers/wp_all_export_get_cpt_name.php:26
+msgid "Reviews"
+msgstr "Vélemények"
+
+#: helpers/wp_all_export_get_cpt_name.php:26
+msgid "Review"
+msgstr "Értékelés"
+
+#: helpers/wp_all_export_get_cpt_name.php:35
+msgid "Taxonomy Terms"
+msgstr "Taxonómiai kifejezések"
+
+#: helpers/wp_all_export_get_cpt_name.php:35
+msgid "Taxonomy Term"
+msgstr "Osztályozási kifejezés"
+
+#: helpers/wp_all_export_get_cpt_name.php:39
+msgid "Entries"
+msgstr "Bejegyzések"
+
+#: helpers/wp_all_export_get_cpt_name.php:39
+msgid "Entry"
+msgstr "Bejegyzés"
+
+#: helpers/wp_all_export_get_cpt_name.php:58
+msgid "Records"
+msgstr "Rekordok"
+
+#: helpers/wp_all_export_get_cpt_name.php:58
+msgid "Record"
+msgstr "Felvétel"
+
+#: helpers/wp_all_export_snippet_error_message.php:6
+msgid "There was a problem parsing the custom XML template"
+msgstr "Hiba történt az egyéni XML-sablon feldolgozásakor"
+
+#: libraries/XmlExportComment.php:199
+msgid "Author Info"
+msgstr "Szerző adatai"
+
+#: libraries/XmlExportComment.php:202
+msgid "Parent"
+msgstr "Szülő"
+
+#: libraries/XmlExportComment.php:205
+msgid "Comment Data"
+msgstr "Hozzászólás adatai"
+
+#: libraries/XmlExportComment.php:207 libraries/XmlExportEngine.php:365
+msgid "Other"
+msgstr "Egyéb"
+
+#: libraries/XmlExportEngine.php:245
+msgid "Standard"
+msgstr "Alapértelmezett"
+
+#: libraries/XmlExportEngine.php:249
+msgid "Media"
+msgstr "Média"
+
+#: libraries/XmlExportEngine.php:253
+msgid "Images"
+msgstr "Képek"
+
+#: libraries/XmlExportEngine.php:309
+msgid "Attachments"
+msgstr "Mellékletek"
+
+#: libraries/XmlExportEngine.php:357 views/admin/export/index.php:76
+msgid "Taxonomies"
+msgstr "Taxonómiák"
+
+#: libraries/XmlExportEngine.php:361
+msgid "Custom Fields"
+msgstr "Egyéni mezők"
+
+#: libraries/XmlExportEngine.php:372
+msgid "Author"
+msgstr "Szerző"
+
+#: libraries/XmlExportEngine.php:950
+msgid "All"
+msgstr "Összes"
+
+#: libraries/XmlExportEngine.php:1150
+msgid "User Role"
+msgstr "Felhasználói szerepkör"
+
+#: libraries/XmlExportEngine.php:1370
+msgid "SQL Query"
+msgstr "SQL-lekérdezés"
+
+#: libraries/XmlExportEngine.php:1406
+msgid "Missing custom XML template header."
+msgstr "Hiányzik az egyéni XML-sablon fejléce."
+
+#: libraries/XmlExportEngine.php:1410
+msgid "Missing custom XML template post loop."
+msgstr "Hiányzik az egyéni XML-sablon bejegyzésciklusa."
+
+#: libraries/XmlExportEngine.php:1414
+msgid "Missing custom XML template footer."
+msgstr "Hiányzik az egyéni XML-sablon lábléce."
+
+#: libraries/XmlExportTaxonomy.php:136
+msgid "Term Meta"
+msgstr "Kifejezés metaadatai"
+
+#. translators: 1: export ID, 2: the template error
+#: models/export/record.php:50
+#, php-format
+msgid "Export #%1$s stopped: %2$s"
+msgstr "A #%1$s azonosítójú exportálás leállt: %2$s"
+
+#: models/export/record.php:839
+msgid ""
+"The other two files in this zip are the export file containing all of your data and the import template for WP All Import. \n"
+"\n"
+"To import this data, create a new import with WP All Import and upload this zip file."
+msgstr ""
+"Ennek a ZIP-fájlnak a másik két fájlja az összes adatát tartalmazó exportfájl és a WP All Importhoz tartozó importálási sablon.\n"
+"\n"
+"Az adatok importálásához hozzon létre egy új importot a WP All Import segítségével, és töltse fel ezt a ZIP-fájlt."
+
+#: src/App/Gate/Messages.php:104
+#, php-format
+msgid ""
+"<strong>WP All Export Pro requires a license key.</strong> Exports will not "
+"run until a license key is entered on the <a href=\"%1$s\">Settings</a> "
+"page. No key? See <a href=\"%2$s\" target=\"_blank\">details &amp; "
+"pricing</a>. Already a customer? Get your key from the <a href=\"%3$s\" "
+"target=\"_blank\">customer portal</a>."
+msgstr "<strong>A WP All Export Pro használatához licenckulcs szükséges.</strong> Az exportálások addig nem futnak, amíg meg nem ad egy licenckulcsot a <a href=\"%1$s\">Beállítások</a> oldalon. Nincs kulcsa? Tekintse meg a <a href=\"%2$s\" target=\"_blank\">részleteket és az árakat</a>. Már vásárló? A kulcsot a <a href=\"%3$s\" target=\"_blank\">vásárlói portálon</a> találja."
+
+#: src/App/Gate/Messages.php:125
+#, php-format
+msgid ""
+"<strong>The license key entered for WP All Export Pro is not valid.</strong>"
+" Exports will not run until a valid key is saved on the <a "
+"href=\"%1$s\">Settings</a> page. Your key is in the <a href=\"%2$s\" "
+"target=\"_blank\">customer portal</a>."
+msgstr "<strong>A WP All Export Pro bővítményhez megadott licenckulcs nem érvényes.</strong> Az exportálások addig nem futnak, amíg el nem ment egy érvényes kulcsot a <a href=\"%1$s\">Beállítások</a> oldalon. A kulcsát a <a href=\"%2$s\" target=\"_blank\">vásárlói portálon</a> találja."
+
+#: src/App/Gate/Messages.php:139
+#, php-format
+msgid ""
+"<strong>Your WP All Export Pro license has expired.</strong> Exports will "
+"not run until it is renewed. Renew in the <a href=\"%1$s\" "
+"target=\"_blank\">customer portal</a>, then save your key again on the <a "
+"href=\"%2$s\">Settings</a> page (or wait up to a day)."
+msgstr "<strong>A WP All Export Pro licenc lejárt.</strong> Az exportálások addig nem futnak, amíg meg nem újítja. Újítsa meg a licencet a <a href=\"%1$s\" target=\"_blank\">vásárlói portálon</a>, majd mentse el újra a kulcsát a <a href=\"%2$s\">Beállítások</a> oldalon (vagy várjon akár egy napot)."
+
+#: src/App/Gate/Messages.php:153
+#, php-format
+msgid ""
+"<strong>Your WP All Export Pro license has reached its site limit.</strong> "
+"Exports will not run on this site until a site is freed up. Manage your "
+"sites in the <a href=\"%s\" target=\"_blank\">customer portal</a>."
+msgstr "<strong>A WP All Export Pro licenc elérte a webhelykorlátot.</strong> Az exportálások ezen a webhelyen addig nem futnak, amíg fel nem szabadít egy webhelyet. Kezelje webhelyeit a <a href=\"%s\" target=\"_blank\">vásárlói portálon</a>."
+
+#: src/App/Gate/Messages.php:166
+#, php-format
+msgid ""
+"<strong>WP All Export Pro could not verify your license key.</strong> The "
+"licensing server has not confirmed it in 30 days. Check the key on the <a "
+"href=\"%s\">Settings</a> page and save it again."
+msgstr "<strong>A WP All Export Pro nem tudta ellenőrizni a licenckulcsot.</strong> A licencelési kiszolgáló 30 napja nem erősítette meg a kulcsot. Ellenőrizze a kulcsot a <a href=\"%s\">Beállítások</a> oldalon, és mentse el újra."
+
+#. translators: %1$s: date the license grace period ends. %2$s: customer
+#. portal URL. %3$s: URL of the plugin's Settings page.
+#: src/App/Gate/Messages.php:187
+#, php-format
+msgid ""
+"<strong>Your WP All Export Pro license has expired.</strong> Exports will "
+"stop working on %1$s. Renew in the <a href=\"%2$s\" "
+"target=\"_blank\">customer portal</a>, then save your key again on the <a "
+"href=\"%3$s\">Settings</a> page."
+msgstr "<strong>A WP All Export Pro licenc lejárt.</strong> Az exportálások %1$s dátumán leállnak. Újítsa meg a licencet a <a href=\"%2$s\" target=\"_blank\">vásárlói portálon</a>, majd mentse el újra a kulcsát a <a href=\"%3$s\">Beállítások</a> oldalon."
+
+#. translators: %1$s: date the license grace period ends. %2$s: URL of the
+#. plugin's Settings page.
+#: src/App/Gate/Messages.php:199
+#, php-format
+msgid ""
+"<strong>WP All Export Pro could not verify your license key yet.</strong> "
+"Exports keep working until %1$s while we retry daily. If this persists, save"
+" your key again on the <a href=\"%2$s\">Settings</a> page."
+msgstr "<strong>A WP All Export Pro még nem tudta ellenőrizni a licenckulcsot.</strong> Az exportálások %1$s dátumáig tovább futnak, miközben naponta újra próbálkozunk. Ha a probléma továbbra is fennáll, mentse el újra a kulcsát a <a href=\"%2$s\">Beállítások</a> oldalon."
+
+#. translators: %1$s: date the license grace period ends. %2$s: URL of the
+#. plugin's Settings page. %3$s: customer portal URL.
+#: src/App/Gate/Messages.php:210
+#, php-format
+msgid ""
+"<strong>Your WP All Export Pro license is no longer valid.</strong> Exports "
+"will stop working on %1$s. Check the key on the <a "
+"href=\"%2$s\">Settings</a> page or get it from the <a href=\"%3$s\" "
+"target=\"_blank\">customer portal</a>."
+msgstr "<strong>A WP All Export Pro licenc már nem érvényes.</strong> Az exportálások %1$s dátumán leállnak. Ellenőrizze a kulcsot a <a href=\"%2$s\">Beállítások</a> oldalon, vagy kérje le a <a href=\"%3$s\" target=\"_blank\">vásárlói portálról</a>."
+
+#: src/App/Gate/Messages.php:234
+#, php-format
+msgid ""
+"<strong>Your WP All Export Pro license is no longer valid.</strong> Exports "
+"will stop working. Check the key on the <a href=\"%1$s\">Settings</a> page "
+"or get it from the <a href=\"%2$s\" target=\"_blank\">customer portal</a>."
+msgstr "<strong>A WP All Export Pro licenc már nem érvényes.</strong> Az exportálások leállnak. Ellenőrizze a kulcsot a <a href=\"%1$s\">Beállítások</a> oldalon, vagy kérje le a <a href=\"%2$s\" target=\"_blank\">vásárlói portálról</a>."
+
+#: src/App/Gate/Messages.php:254
+msgid "If you cannot open Settings, ask a site administrator."
+msgstr ""
+"Ha nem tudja megnyitni a beállításokat, kérje egy webhely-adminisztrátor "
+"segítségét."
+
+#: src/App/Gate/Messages.php:263
+msgid ""
+"That page isn't available until WP All Export Pro is licensed. Enter your "
+"license key below and you'll be able to open it again."
+msgstr "Ez az oldal addig nem érhető el, amíg nincs licencelve a WP All Export Pro. Adja meg alább a licenckulcsát, és újra megnyithatja az oldalt."
+
+#: src/App/Gate/Messages.php:298
+msgid "Exports will stop working when the grace period ends."
+msgstr "Az exportálások a türelmi időszak végén leállnak."
+
+#. translators: %s: date the license grace period ends.
+#: src/App/Gate/Messages.php:302
+#, php-format
+msgid "Exports will stop working on %s."
+msgstr "Az exportálások leállásának dátuma: %s."
+
+#: src/App/Gate/Messages.php:311
+msgid "Exports aren't running on this site."
+msgstr "Az exportálások nem futnak ezen a webhelyen."
+
+#: src/App/Gate/Messages.php:320
+msgid ""
+"The rest of this page is hidden until a valid license key is entered. Your "
+"exports, templates and settings have not been changed and nothing has been "
+"deleted."
+msgstr "Az oldal további része rejtett marad, amíg meg nem ad egy érvényes licenckulcsot. Az exportálások, a sablonminták és a beállítások nem változtak, és semmi sem lett törölve."
+
+#: src/App/Gate/Messages.php:364
+msgid ""
+"<strong>WP All Export Pro isn't licensed on this site.</strong><br>Exports "
+"can't be run until a site administrator enters a license key. Please contact"
+" whoever manages this site; they'll be able to sort it out from the WP All "
+"Export settings."
+msgstr "<strong>A WP All Export Pro nincs licencelve ezen a webhelyen.</strong><br>Az exportálások addig nem futtathatók, amíg egy webhely-adminisztrátor meg nem ad egy licenckulcsot. Kérjük, forduljon ahhoz, aki kezeli ezt a webhelyet; a WP All Export beállításainál meg tudja oldani a problémát."
+
+#: src/App/Gate/Messages.php:373
+msgid "License required"
+msgstr "Licenc szükséges"
+
+#: src/App/Gate/Messages.php:379
+msgid "Export skipped: WP All Export Pro isn't licensed on this site."
+msgstr "Az exportálás kimaradt: a WP All Export Pro nincs licencelve ezen a webhelyen."
+
+#: src/App/Gate/Messages.php:396
+msgid ""
+"This export stopped part-way, so the file it had started writing is "
+"incomplete. Nothing was deleted. Once the license is valid, run the export "
+"again to get a complete file."
+msgstr "Ez az exportálás félbeszakadt, ezért a fájl, amelynek írását megkezdte, hiányos. Semmi sem lett törölve. Ha a licenc érvényes, futtassa újra az exportálást a teljes fájl létrehozásához."
+
+#: src/App/Gate/Messages.php:405
+msgid "Export stopped, license required"
+msgstr "Az exportálás leállt, licenc szükséges"
+
+#: src/App/Gate/Surfaces.php:181
+msgid "WP All Export: license gate"
+msgstr "WP All Export: licencfeltétel"
+
+#: src/App/UnsecuredController/SchedulingController.php:48
+msgid ""
+"This export is configured to run as records are created and cannot be run "
+"via this method."
+msgstr "Ez az exportálás úgy van beállítva, hogy a rekordok létrehozásakor fusson, ezért ezzel a módszerrel nem futtatható."
+
+#: src/App/UnsecuredController/SchedulingController.php:102
+msgid ""
+"his export is configured to run as records are created and cannot be run via"
+" this method."
+msgstr "Ez az exportálás úgy van beállítva, hogy a rekordok létrehozásakor fusson, ezért ezzel a módszerrel nem futtatható."
+
+#: src/App/UnsecuredController/SchedulingController.php:220
+msgid ""
+"The Gravity Forms Export Add-On Pro is required to run this export. If you "
+"already own it, you can download the add-on here: <a "
+"href=\"https://www.wpallimport.com/portal/downloads\" "
+"target=\"_blank\">https://www.wpallimport.com/portal/downloads</a>"
+msgstr "Az exportálás futtatásához szükség van a Gravity Forms Export Add-On Pro bővítményre. Ha már megvásárolta, innen töltheti le a kiegészítőt: <a href=\"https://www.wpallimport.com/portal/downloads\" target=\"_blank\">https://www.wpallimport.com/portal/downloads</a>"
+
+#: src/Pro/Filtering/FilteringFactory.php:83
+#: src/Pro/Filtering/FilteringFactory.php:91
+msgid ""
+"The WooCommerce add-on is required. If you already own it, you can download "
+"the add-on here: <a href=\"https://www.wpallimport.com/portal/downloads\" "
+"target=\"_blank\">https://www.wpallimport.com/portal/downloads</a>"
+msgstr "A WooCommerce-kiegészítő szükséges. Ha már megvásárolta, innen töltheti le a kiegészítőt: <a href=\"https://www.wpallimport.com/portal/downloads\" target=\"_blank\">https://www.wpallimport.com/portal/downloads</a>"
+
+#: src/Pro/Filtering/FilteringFactory.php:114
+msgid "Filtering Options"
+msgstr "Szűrési beállítások"
+
+#: src/Scheduling/views/ManualScheduling.php:14
+msgid "Manual Scheduling"
+msgstr "Kézi ütemezés"
+
+#: src/Scheduling/views/ManualScheduling.php:16
+msgid "Run this export using cron jobs."
+msgstr "Futtassa ezt az exportálást cron-feladatokkal."
+
+#: src/Scheduling/views/ManualScheduling.php:19
+msgid "Trigger URL"
+msgstr "Indítási URL"
+
+#: src/Scheduling/views/SaveSchedulingButton.php:12
+msgid "Save & Run Export"
+msgstr "Exportálás mentése és futtatása"
+
+#: src/Scheduling/views/SaveSchedulingButton.php:14
+#: views/admin/export/options.php:9 views/admin/manage/update.php:9
+#: views/admin/manage/update.php:113
+msgid "Save Export Configuration"
+msgstr "Exportálási beállítások mentése"
+
+#: src/Scheduling/views/SchedulingSubscribeUI.php:31
+msgid "How does it work?"
+msgstr "Hogyan működik?"
+
+#: src/Scheduling/views/SchedulingSubscribeUI.php:34
+msgid ""
+"When you set an export to run on a schedule, our servers will contact your "
+"site to make sure that your export starts when you want it to. Our servers "
+"will check back every minute to make sure that the export is still running, "
+"and will continue doing so until it finishes."
+msgstr "Amikor beállít egy exportálást időzítés szerinti futtatásra, a kiszolgálóink kapcsolatba lépnek a webhelyével, hogy az exportálás a kívánt időpontban induljon el. Kiszolgálóink percenként ellenőrzik, hogy az exportálás még fut-e, és ezt a befejezéséig folytatják."
+
+#: src/Scheduling/views/SchedulingSubscribeUI.php:37
+msgid "Why does it cost money?"
+msgstr "Miért kerül pénzbe?"
+
+#: src/Scheduling/views/SchedulingSubscribeUI.php:40
+msgid ""
+"Your data is very important to us. We have a very resilient, scalable "
+"cluster of servers powering Automatic Scheduling. Our highly qualified team "
+"is on call 24hrs a day, 7 days a week to make sure your exports run when you"
+" need them to run."
+msgstr "Az adatai nagyon fontosak számunkra. Az automatikus időzítést egy rendkívül megbízható, skálázható kiszolgálófürt biztosítja. Magasan képzett csapatunk a nap 24 órájában, a hét minden napján készenlétben áll, hogy az exportálások akkor fussanak, amikor Önnek szüksége van rájuk."
+
+#: src/Scheduling/views/SchedulingSubscribeUI.php:43
+msgid "What do I get?"
+msgstr "Mit kapok?"
+
+#: src/Scheduling/views/SchedulingSubscribeUI.php:46
+msgid ""
+"You'll receive a license key for Automatic Scheduling that you can use in WP"
+" All Import and WP All Export. You can set up as many imports and exports as"
+" you like on unlimited sites."
+msgstr ""
+"Az automatikus időzítéshez licenckulcsot kap, amelyet a WP All Import és a "
+"WP All Export bővítményben használhat. Korlátlan számú importálást és "
+"exportálást állíthat be korlátlan számú webhelyen."
+
+#: src/Scheduling/views/SchedulingSubscribeUI.php:49
+msgid "What information is shared with Soflyy?"
+msgstr "Milyen információkat osztunk meg a Soflyy-val?"
+
+#: src/Scheduling/views/SchedulingSubscribeUI.php:52
+msgid ""
+"When you set an export to run on a schedule, WP All Export will open an "
+"encrypted connection to our servers and send your license key, your site "
+"URL, the ID of the export you want to run, the export security key, and the "
+"times that you want the export to run."
+msgstr "Amikor beállít egy exportálást időzítés szerinti futtatásra, a WP All Export titkosított kapcsolatot létesít a kiszolgálóinkkal, és elküldi a licenckulcsát, a webhely URL-címét, a futtatni kívánt exportálás ID-ját, az exportálás biztonsági kulcsát, valamint az exportálás futtatásának kívánt időpontjait."
+
+#: src/Scheduling/views/SchedulingSubscribeUI.php:66
+msgid "Enter your license"
+msgstr "Adja meg a licenckulcsát"
+
+#: src/Scheduling/views/SchedulingSubscribeUI.php:69
+msgid "Find your license"
+msgstr "Licenckulcs keresése"
+
+#: src/Scheduling/views/SchedulingUI.php:23
+#: views/admin/settings/_tab_licenses.php:171
+msgid "Automatic Scheduling"
+msgstr "Automatic Scheduling"
+
+#. translators: 1: Export ID
+#: src/Scheduling/views/SchedulingUI.php:35
+#, php-format
+msgid "Run export ID %d on a schedule."
+msgstr "Az exportálás (ID: %d) időzítés szerinti futtatása."
+
+#: src/Scheduling/views/SchedulingUI.php:47
+msgid "Every week on..."
+msgstr "Minden héten..."
+
+#: src/Scheduling/views/SchedulingUI.php:57
+#: src/Scheduling/views/SchedulingUI.php:80
+msgid "Mon"
+msgstr "H"
+
+#: src/Scheduling/views/SchedulingUI.php:58
+#: src/Scheduling/views/SchedulingUI.php:81
+msgid "Tue"
+msgstr "K"
+
+#: src/Scheduling/views/SchedulingUI.php:59
+#: src/Scheduling/views/SchedulingUI.php:82
+msgid "Wed"
+msgstr "Sze"
+
+#: src/Scheduling/views/SchedulingUI.php:60
+#: src/Scheduling/views/SchedulingUI.php:83
+msgid "Thu"
+msgstr "Cs"
+
+#: src/Scheduling/views/SchedulingUI.php:61
+#: src/Scheduling/views/SchedulingUI.php:84
+msgid "Fri"
+msgstr "P"
+
+#: src/Scheduling/views/SchedulingUI.php:62
+#: src/Scheduling/views/SchedulingUI.php:85
+msgid "Sat"
+msgstr "Szo"
+
+#: src/Scheduling/views/SchedulingUI.php:63
+#: src/Scheduling/views/SchedulingUI.php:86
+msgid "Sun"
+msgstr "V"
+
+#: src/Scheduling/views/SchedulingUI.php:70
+msgid "Every month on the first..."
+msgstr "Minden hónap elsején..."
+
+#: src/Scheduling/views/SchedulingUI.php:92
+msgid "What times do you want this export to run?"
+msgstr "Mikor szeretné futtatni ezt az exportálást?"
+
+#: views/admin/export/blocks/filters.php:9
+msgid "Element"
+msgstr "Elem"
+
+#: views/admin/export/blocks/filters.php:10
+msgid "Rule"
+msgstr "Szabály"
+
+#: views/admin/export/blocks/filters.php:11
+msgid "Value"
+msgstr "Érték"
+
+#: views/admin/export/blocks/filters.php:17
+msgid "Select Element"
+msgstr "Elem kiválasztása"
+
+#: views/admin/export/blocks/filters.php:33
+msgid "Add Rule"
+msgstr "Szabály hozzáadása"
+
+#: views/admin/export/blocks/filters.php:45
+msgid ""
+"Date filters use natural language.<br>For example, to return records created"
+" in the last week: <i>date ▸ newer than ▸ last week</i>.<br>For all records "
+"created in 2016: <i>date ▸ older than ▸ 1/1/2017</i> AND <i>date ▸ newer "
+"than ▸ 12/31/2015</i>"
+msgstr "A dátumszűrők természetes nyelvet használnak.<br>Például az elmúlt héten létrehozott rekordok megjelenítéséhez: <i>dátum ▸ újabb, mint ▸ múlt hét</i>.<br>A 2016-ban létrehozott összes rekord megjelenítéséhez: <i>dátum ▸ régebbi, mint ▸ 1/1/2017</i> ÉS <i>dátum ▸ újabb, mint ▸ 12/31/2015</i>"
+
+#: views/admin/export/blocks/filters.php:46
+msgid ""
+"No filtering options. Add filtering options to only export records matching "
+"some specified criteria."
+msgstr "Nincsenek szűrési beállítások. Adjon hozzá szűrési beállításokat, hogy csak a megadott feltételeknek megfelelő rekordokat exportálja."
+
+#: views/admin/export/index.php:20 views/admin/export/options.php:28
+#: views/admin/export/process.php:26 views/admin/export/template.php:32
+#: views/admin/manage/update.php:29 views/admin/settings/index.php:41
+#: views/admin/settings/_tab_support.php:10
+msgid "Documentation"
+msgstr "Dokumentáció"
+
+#: views/admin/export/index.php:37
+msgid "First, choose what to export."
+msgstr "Először válassza ki, mit szeretne exportálni."
+
+#: views/admin/export/index.php:40
+msgid "Specific Post Type"
+msgstr "Meghatározott bejegyzéstípus"
+
+#: views/admin/export/index.php:44
+msgid "WP_Query Results"
+msgstr "WP_Query eredményei"
+
+#: views/admin/export/index.php:105
+msgid "WooCommerce Reviews"
+msgstr "WooCommerce értékelések"
+
+#: views/admin/export/index.php:113
+msgid "Choose a post type..."
+msgstr "Válasszon bejegyzéstípust..."
+
+#: views/admin/export/index.php:165
+msgid "Hover over each entry to view the taxonomy slug."
+msgstr "Mutasson rá az egyes bejegyzésekre a taxonómia slugjának megtekintéséhez."
+
+#: views/admin/export/index.php:167
+msgid "Select taxonomy"
+msgstr "Válasszon osztályozást (taxonomy)"
+
+#: views/admin/export/index.php:186
+msgid "Post Type Query"
+msgstr "Bejegyzéstípus-lekérdezés"
+
+#: views/admin/export/index.php:187
+msgid "User Query"
+msgstr "Felhasználói lekérdezés"
+
+#: views/admin/export/index.php:192
+msgid "Comment Query"
+msgstr "Hozzászólás-lekérdezés"
+
+#: views/admin/export/index.php:206
+msgid "The User Export Add-On Pro is required to Export Users"
+msgstr "A felhasználók exportálásához a User Export Add-On Pro szükséges"
+
+#: views/admin/export/index.php:209 views/admin/export/index.php:216
+msgid "Click here to purchase the User Export Add-On"
+msgstr "Kattintson ide a User Export Add-On kiegészítő megvásárlásához"
+
+#: views/admin/export/index.php:214
+msgid "The User Export Add-On Pro is required to Export WooCommerce Customers"
+msgstr "A WooCommerce-vásárlók exportálásához a User Export Add-On Pro szükséges"
+
+#: views/admin/export/index.php:221
+msgid "The Product Export Add-On is required to Export WooCommerce Products"
+msgstr "A WooCommerce-termékek exportálásához a Product Export Add-On szükséges"
+
+#: views/admin/export/index.php:225
+msgid "Click here to download the Product Export Add-On"
+msgstr "Kattintson ide a Product Export Add-On letöltéséhez"
+
+#: views/admin/export/index.php:230
+msgid "The Order Export Add-On is required to Export WooCommerce Orders"
+msgstr "A WooCommerce-rendelések exportálásához az Order Export Add-On szükséges"
+
+#: views/admin/export/index.php:235
+msgid "Click here to download the Order Export Add-On"
+msgstr "Kattintson ide az Order Export Add-On letöltéséhez"
+
+#: views/admin/export/index.php:241
+msgid ""
+"The WooCommerce Export Add-On Pro is required to Export WooCommerce Coupons"
+msgstr "A WooCommerce-kuponok exportálásához a WooCommerce Export Add-On Pro szükséges"
+
+#: views/admin/export/index.php:244 views/admin/export/index.php:253
+#: views/admin/export/template.php:640
+msgid "Click here to purchase the WooCommerce Export Add-On"
+msgstr "Kattintson ide a WooCommerce Export Add-On megvásárlásához"
+
+#: views/admin/export/index.php:250
+msgid ""
+"The WooCommerce Export Add-On Pro is required to Export WooCommerce Reviews"
+msgstr "A WooCommerce-értékelések exportálásához a WooCommerce Export Add-On Pro szükséges"
+
+#: views/admin/export/index.php:288 views/admin/export/options.php:173
+#: views/admin/export/process.php:133 views/admin/export/template.php:663
+#: views/admin/manage/index.php:635 views/admin/manage/scheduling.php:62
+#: views/admin/manage/templates.php:14 views/admin/manage/update.php:121
+#: views/admin/settings/index.php:100
+msgid "Created by"
+msgstr "Létrehozó"
+
+#: views/admin/export/options.php:8 views/admin/export/options.php:73
+#: views/admin/manage/update.php:8 views/admin/manage/update.php:60
+#: views/admin/manage/update.php:115
+msgid "Confirm & Run Export"
+msgstr "Exportálás megerősítése és indítása"
+
+#: views/admin/export/options.php:25
+msgid "Export Settings"
+msgstr "Beállítások exportálása"
+
+#: views/admin/export/options.php:123 views/admin/manage/index.php:315
+msgid "Scheduling Options"
+msgstr "Ütemezési beállítások"
+
+#: views/admin/export/options.php:165 views/admin/export/template.php:655
+msgid "Back"
+msgstr "Vissza"
+
+#: views/admin/export/options.php:168 views/admin/export/template.php:652
+msgid "Back to Manage Exports"
+msgstr "Vissza az exportálások kezeléséhez"
+
+#: views/admin/export/options/settings.php:9
+#: views/admin/export/template.php:233 views/admin/export/template.php:303
+#: views/admin/export/template.php:524
+msgid "Advanced Options"
+msgstr "Haladó opciók"
+
+#: views/admin/export/options/settings.php:19
+msgid "In each iteration, process"
+msgstr "Minden iterációban dolgozzon fel"
+
+#: views/admin/export/options/settings.php:21
+#: views/admin/export/options/settings.php:114
+#: views/admin/export/options/settings.php:126
+msgid "records"
+msgstr "rekord"
+
+#: views/admin/export/options/settings.php:25
+msgid ""
+"WP All Export must be able to process this many records in less than your "
+"server's timeout settings. If your export fails before completion, to "
+"troubleshoot you should lower this number."
+msgstr "A WP All Exportnak ennyi rekordot a kiszolgáló időkorlátján belül kell feldolgoznia. Ha az exportálás a befejezés előtt meghiúsul, a hiba elhárításához csökkentse ezt a számot."
+
+#: views/admin/export/options/settings.php:72
+msgid "Export each "
+msgstr "Minden "
+
+#: views/admin/export/options/settings.php:78
+msgid "This feature is not available for GMC exports."
+msgstr "Ez a funkció GMC-exportálásokhoz nem érhető el."
+
+#: views/admin/export/options/settings.php:82
+msgid ""
+"This feature is not available for customer exports. A Users export with user"
+" role filter should be used instead."
+msgstr "Ez a funkció vásárlók exportálásához nem érhető el. Ehelyett használjon felhasználói szerepkör szerinti szűrővel beállított felhasználóexportálást."
+
+#: views/admin/export/options/settings.php:114
+#, php-format
+msgid "Only export %s once"
+msgstr "%s exportálása csak egyszer"
+
+#: views/admin/export/options/settings.php:117
+msgid ""
+"If re-run, this export will only include records that have not been "
+"previously exported."
+msgstr "Újrafuttatás esetén ez az exportálás csak a korábban még nem exportált rekordokat tartalmazza."
+
+#: views/admin/export/options/settings.php:126
+#, php-format
+msgid "Only export %s that have been modified since last export"
+msgstr "Csak az utolsó exportálás óta módosult %s elemek exportálása"
+
+#: views/admin/export/options/settings.php:131
+msgid "This feature is not available for user exports."
+msgstr "Ez a funkció felhasználók exportálásához nem érhető el."
+
+#: views/admin/export/options/settings.php:133
+msgid "This feature is not available for taxonomies exports."
+msgstr "Ez a funkció osztályozások exportálásához nem érhető el."
+
+#: views/admin/export/options/settings.php:135
+msgid "This feature is not available for customer exports."
+msgstr "Ez a funkció vásárlók exportálásához nem érhető el."
+
+#: views/admin/export/options/settings.php:137
+msgid "This feature is not available for guest customer exports."
+msgstr "Ez a funkció vendégvásárlók exportálásához nem érhető el."
+
+#: views/admin/export/options/settings.php:139
+msgid ""
+"If re-run, this export will only include records that have been modified "
+"since last export run."
+msgstr "Újrafuttatás esetén ez az exportálás csak az utolsó exportálás óta módosult rekordokat tartalmazza."
+
+#: views/admin/export/options/settings.php:153
+msgid "Only export customers who have made a purchase"
+msgstr "Csak a vásárlást végrehajtó vásárlók exportálása"
+
+#: views/admin/export/options/settings.php:156
+msgid ""
+"If enabled, only customers who have actually made purchases will be "
+"exported."
+msgstr "Bekapcsolás esetén csak a ténylegesen vásárlást végrehajtó vásárlók kerülnek exportálásra."
+
+#: views/admin/export/options/settings.php:165
+msgid "Include BOM to enable non-ASCII characters in Excel"
+msgstr "BOM hozzáadása a nem ASCII karakterek Excelben való megjelenítéséhez"
+
+#: views/admin/export/options/settings.php:168
+msgid ""
+"The BOM will help some programs like Microsoft Excel read your export file "
+"if it contains non-ASCII characters. These can include curly quotation marks"
+" or non-English characters such as umlauts."
+msgstr "A BOM segít egyes programoknak, például a Microsoft Excelnek beolvasni az exportfájlt, ha az nem ASCII karaktereket tartalmaz. Ilyenek lehetnek például az ívelt idézőjelek vagy a nem angol karakterek, például az umlautok."
+
+#: views/admin/export/options/settings.php:176
+msgid "Create a new file each time export is run"
+msgstr "Új fájl létrehozása minden exportáláskor"
+
+#: views/admin/export/options/settings.php:179
+msgid ""
+"If disabled, the export file will be overwritten every time this export run."
+msgstr "Ha ki van kapcsolva, az exportfájl minden futtatáskor felül lesz írva."
+
+#: views/admin/export/options/settings.php:188
+msgid "Do not generate an export file if there are no records to export"
+msgstr "Exportfájl létrehozásának mellőzése, ha nincs exportálandó rekord"
+
+#: views/admin/export/options/settings.php:191
+msgid "If there are no records, an empty export file won't be generated."
+msgstr "Ha nincsenek rekordok, nem jön létre üres exportfájl."
+
+#: views/admin/export/options/settings.php:201
+msgid "Split large exports into multiple files"
+msgstr "A nagy exportálások felosztása több fájlra"
+
+#: views/admin/export/options/settings.php:204
+msgid "Limit export to"
+msgstr "Exportálás korlátozása"
+
+#: views/admin/export/options/settings.php:207
+msgid "records per file"
+msgstr "rekord fájlonként"
+
+#: views/admin/export/options/settings.php:222
+msgid "Allow non-admins to run this export in Client Mode"
+msgstr "Nem admin felhasználók számára az exportálás futtatásának engedélyezése ügyfélmódban"
+
+#: views/admin/export/options/settings.php:239
+msgid "Export Name:"
+msgstr "Exportálás neve:"
+
+#: views/admin/export/process.php:20
+msgid "Confirm & Run"
+msgstr "Megerősítés és futtatás"
+
+#: views/admin/export/process.php:35
+msgid "Export <span id=\"status\">in Progress...</span>"
+msgstr "Exportálás <span id=\"status\">folyamatban...</span>"
+
+#: views/admin/export/process.php:36
+msgid ""
+"Exporting may take some time. Please do not close your browser or refresh "
+"the page until the process is complete."
+msgstr "Az exportálás eltarthat egy ideig. Kérjük, ne zárja be a böngészőt, és ne frissítse az oldalt, amíg a folyamat be nem fejeződik."
+
+#: views/admin/export/process.php:44
+msgid "Time Elapsed"
+msgstr "Eltelt idő"
+
+#: views/admin/export/process.php:46 views/admin/export/process.php:83
+msgid "Exported"
+msgstr "Exportálva"
+
+#: views/admin/export/process.php:82
+#, php-format
+msgid "Export %ss"
+msgstr "%s exportálása"
+
+#: views/admin/export/process.php:96
+msgid "Your server terminated the export process"
+msgstr "A kiszolgáló leállította az exportálási folyamatot"
+
+#: views/admin/export/process.php:97
+msgid ""
+"Ask your host to check your server's error log. They will be able to "
+"determine why your server is terminating the export process."
+msgstr "Kérje meg a tárhelyszolgáltatót, hogy ellenőrizze a kiszolgáló hibanaplóját. Meg tudják állapítani, miért állítja le a kiszolgáló az exportálási folyamatot."
+
+#: views/admin/export/process.php:117
+msgid "The export stopped because of an error in the custom XML template"
+msgstr "Az exportálás az egyéni XML-sablon hibája miatt leállt"
+
+#: views/admin/export/process.php:121 views/admin/manage/index.php:211
+#: views/admin/manage/update.php:107
+msgid "Edit Template"
+msgstr "Sablon szerkesztése"
+
+#: views/admin/export/process.php:275
+msgid "stopped"
+msgstr "leállítva"
+
+#: views/admin/export/process.php:287
+msgid "Error"
+msgstr "Hiba"
+
+#: views/admin/export/success_page.php:55
+msgid "WP All Export successfully exported your data!"
+msgstr "A WP All Export sikeresen exportálta az adatait!"
+
+#: views/admin/export/success_page.php:89
+#: views/admin/export/success_page.php:242
+#: views/admin/export/success_page.php:267
+msgid "Download"
+msgstr "Letöltés"
+
+#: views/admin/export/success_page.php:94
+msgid "Scheduling"
+msgstr "Ütemezés"
+
+#: views/admin/export/success_page.php:98
+msgid "External Apps"
+msgstr "Külső alkalmazások"
+
+#: views/admin/export/success_page.php:101
+msgid "Export, Edit, Import"
+msgstr "Exportálás, szerkesztés, importálás"
+
+#: views/admin/export/success_page.php:105
+msgid "What's Next"
+msgstr "Mi következik"
+
+#: views/admin/export/success_page.php:111
+msgid "Click to Download"
+msgstr "Kattintson a letöltéshez"
+
+#: views/admin/export/success_page.php:117
+#: views/admin/export/success_page_realtime.php:71
+#: views/admin/manage/index.php:245
+#, php-format
+msgid "Split %ss"
+msgstr "Felosztott %s"
+
+#: views/admin/export/success_page.php:121 views/admin/manage/index.php:221
+#: views/admin/manage/index.php:238
+msgid "Bundle"
+msgstr "Csomag"
+
+#: views/admin/export/success_page.php:128
+msgid ""
+"The bundle contains your exported data and a settings file for WP All "
+"Import."
+msgstr "A csomag tartalmazza az exportált adatokat és a WP All Import beállításfájlját."
+
+#: views/admin/export/success_page.php:130
+msgid ""
+"Upload the Bundle to WP All Import on another site to quickly import this "
+"data."
+msgstr "Töltse fel a csomagot a WP All Import bővítménybe egy másik webhelyen az adatok gyors importálásához."
+
+#: views/admin/export/success_page.php:136
+msgid "Secure URL"
+msgstr "Biztonságos URL"
+
+#: views/admin/export/success_page.php:165
+msgid ""
+"This URL will always provide the export file from this export, even if the "
+"file name changes."
+msgstr "Ez az URL mindig az exportfájlt biztosítja ehhez az exportáláshoz, még akkor is, ha a fájlnév megváltozik."
+
+#: views/admin/export/success_page.php:212
+msgid "Save Scheduling Options"
+msgstr "Ütemezési opciók mentése"
+
+#: views/admin/export/success_page.php:220
+msgid "Automatically send your data to over 500 apps with Zapier."
+msgstr "Küldje el automatikusan adatait több mint 500 alkalmazásba a Zapier segítségével."
+
+#: views/admin/export/success_page.php:223
+msgid "Click here to read more about WP All Export's Zapier Integration."
+msgstr "Kattintson ide, és olvasson bővebben a WP All Export Zapier-integrációjáról."
+
+#: views/admin/export/success_page.php:226
+msgid "Play video: Zapier integration"
+msgstr "Videó lejátszása: Zapier-integráció"
+
+#: views/admin/export/success_page.php:236
+#: views/admin/export/success_page.php:261
+msgid "After you've downloaded your data, edit it however you like."
+msgstr "Az adatok letöltése után tetszés szerint szerkesztheti őket."
+
+#: views/admin/export/success_page.php:238
+#: views/admin/export/success_page.php:263
+msgid ""
+"Then, click below to import the data with WP All Import without having to "
+"set anything up."
+msgstr "Ezután kattintson alább az adatok WP All Import segítségével történő importálásához, anélkül, hogy bármit be kellene állítania."
+
+#: views/admin/export/success_page.php:245
+#: views/admin/export/success_page.php:270 views/admin/manage/index.php:336
+msgid "Import with WP All Import"
+msgstr "Importálás a WP All Import segítségével"
+
+#: views/admin/export/success_page.php:248
+#: views/admin/export/success_page.php:273
+msgid ""
+"You can also start the import by clicking 'Import with WP All Import' on the"
+" Manage Exports page."
+msgstr "Az importálást úgy is elindíthatja, hogy az Exportálások kezelése oldalon az „Importálás a WP All Import segítségével” lehetőségre kattint."
+
+#: views/admin/export/success_page.php:293
+#: views/admin/export/success_page.php:299
+msgid "Download "
+msgstr "Letöltés "
+
+#: views/admin/export/template.php:25
+msgid "Drag & Drop"
+msgstr "Húzás és ejtés"
+
+#: views/admin/export/template.php:169
+msgid ""
+"Drag & drop data from \"Available Data\" on the right to include it in the "
+"export or click \"Add Field To Export\" below."
+msgstr "Húzza át a jobb oldali „Elérhető adatok” részből az adatokat az exportálásba, vagy kattintson alább a „Mező hozzáadása az exportáláshoz” gombra."
+
+#: views/admin/export/template.php:196
+#, php-format
+msgid ""
+"Warning: without %s you won't be able to re-import this data back to this "
+"site using WP All Import."
+msgstr "Figyelem: %s nélkül nem tudja újraimportálni ezeket az adatokat erre a webhelyre a WP All Import segítségével."
+
+#: views/admin/export/template.php:213
+msgid "Add Field"
+msgstr "Mező hozzáadása"
+
+#: views/admin/export/template.php:215
+msgid "Add All"
+msgstr "Összes hozzáadása"
+
+#: views/admin/export/template.php:217
+msgid "Clear All"
+msgstr "Összes törlése"
+
+#: views/admin/export/template.php:223 views/admin/export/template.php:515
+#: views/admin/export/template/add_new_field.php:414
+msgid "Preview"
+msgstr "Előnézet"
+
+#: views/admin/export/template.php:240
+msgid "Root XML Element"
+msgstr "XML-gyökérelem"
+
+#: views/admin/export/template.php:249
+#, php-format
+msgid "Single %s XML Element"
+msgstr "Egyetlen %s XML-elem"
+
+#: views/admin/export/template.php:266 views/admin/export/template.php:347
+#: views/admin/export/template.php:534
+msgid ""
+"You will not be able to reimport data to the product variations, and you "
+"will not be able to import these products to another site."
+msgstr "Nem tudja majd újraimportálni az adatokat a termékváltozatokba, és ezeket a termékeket másik webhelyre sem tudja importálni."
+
+#: views/admin/export/template.php:269 views/admin/export/template.php:350
+#: views/admin/export/template.php:537
+msgid ""
+"You will not be able to reimport data to the parent products, and you will "
+"not be able to import these products to another site."
+msgstr "Nem tudja majd újraimportálni az adatokat a szülőtermékekbe, és ezeket a termékeket másik webhelyre sem tudja importálni."
+
+#: views/admin/export/template.php:273
+#, php-format
+msgid ""
+"There are certain characters that cannot be included in an XML file unless "
+"they are wrapped in CDATA tags.<br/>Read more about CDATA tags: <a "
+"target='_blank' style='font-size: 12px;' href='%s'>%s</a>."
+msgstr "Bizonyos karakterek nem szerepelhetnek XML-fájlban, hacsak nincsenek CDATA-címkék közé zárva.<br/>Bővebben a CDATA-címkékről: <a target='_blank' style='font-size: 12px;' href='%s'>%s</a>."
+
+#: views/admin/export/template.php:276 views/admin/export/template.php:548
+msgid ""
+"Automatically wrap data in CDATA tags when it contains illegal characters"
+msgstr "Adatok automatikus CDATA-címkék közé zárása, ha tiltott karaktereket tartalmaznak"
+
+#: views/admin/export/template.php:280 views/admin/export/template.php:556
+msgid "Always wrap data in CDATA tags"
+msgstr "Adatok CDATA-címkék közé zárása minden esetben"
+
+#: views/admin/export/template.php:284 views/admin/export/template.php:564
+msgid "Never wrap data in CDATA tags"
+msgstr "Adatok CDATA-címkék közé zárásának mellőzése minden esetben"
+
+#: views/admin/export/template.php:286 views/admin/export/template.php:567
+msgid "Warning: This may result in an invalid XML file"
+msgstr "Figyelem: Ez hibás XML-fájlt eredményezhet"
+
+#: views/admin/export/template.php:310
+msgid "Separator:"
+msgstr "Elválasztó:"
+
+#: views/admin/export/template.php:315
+msgid "CSV Format"
+msgstr "CSV-formátum"
+
+#: views/admin/export/template.php:318
+msgid "Standard (RFC 4180)"
+msgstr "Szabványos (RFC 4180)"
+
+#: views/admin/export/template.php:322
+msgid "Backslash-escaped (compatible with older WP All Import)"
+msgstr "Backslash karakterrel escape-elt (kompatibilis a WP All Import korábbi verzióival)"
+
+#: views/admin/export/template.php:324
+msgid ""
+"Standard CSV opens correctly in Excel, Google Sheets and current WP All "
+"Import. Backslash-escaped matches files from earlier versions of WP All "
+"Export."
+msgstr "A szabványos CSV megfelelően nyílik meg az Excelben, a Google Táblázatokban és a WP All Import aktuális verziójában. A backslash karakterrel escape-elt formátum a WP All Export korábbi verzióival létrehozott fájloknak felel meg."
+
+#: views/admin/export/template.php:329
+msgid "CSV Header Row"
+msgstr "CSV-fejlécsor"
+
+#: views/admin/export/template.php:333
+msgid "Include header row and column titles in export"
+msgstr "Fejlécsor és oszlopcímek szerepeltetése az exportálásban"
+
+#: views/admin/export/template.php:357
+msgid "Display each product in its own row"
+msgstr "Minden termék megjelenítése külön sorban"
+
+#: views/admin/export/template.php:359
+msgid ""
+"If an order contains multiple products, each product will have its own row. "
+"If disabled, each product will have its own column."
+msgstr "Ha egy rendelés több terméket tartalmaz, minden termék külön sorban jelenik meg. Ha ez a beállítás ki van kapcsolva, minden termék külön oszlopban jelenik meg."
+
+#: views/admin/export/template.php:364
+#: views/admin/export/template/advanced_field_options.php:28
+msgid "Fill in empty columns"
+msgstr "Üres oszlopok kitöltése"
+
+#: views/admin/export/template.php:367
+msgid ""
+"If enabled, each order item will appear as its own row with all order info "
+"filled in for every column. If disabled, order info will only display on one"
+" row with only the order item info displaying in additional rows."
+msgstr "Ha ez a beállítás be van kapcsolva, minden rendelési tétel külön sorban jelenik meg, és minden oszlopban szerepelnek a rendelés adatai. Ha ki van kapcsolva, a rendelési adatok csak egy sorban jelennek meg, a további sorokban pedig csak a rendelési tétel adatai szerepelnek."
+
+#: views/admin/export/template.php:381
+msgid "Remove empty columns from export file"
+msgstr "Üres oszlopok eltávolítása az exportfájlból"
+
+#: views/admin/export/template.php:385
+msgid ""
+"When enabled, any column without data for at least one row will be removed "
+"from the generated export file."
+msgstr "Bekapcsolás esetén minden olyan oszlop eltávolításra kerül a létrehozott exportfájlból, amelynek egyetlen sorában sem szerepel adat."
+
+#: views/admin/export/template.php:401
+msgid "WPML"
+msgstr "WPML"
+
+#: views/admin/export/template.php:411
+msgid "Language"
+msgstr "Nyelv"
+
+#: views/admin/export/template.php:431
+msgid "Export Type"
+msgstr "Exportálás típusa"
+
+#: views/admin/export/template.php:436
+msgid "Choose your export type"
+msgstr "Válassza ki az exportálás típusát"
+
+#: views/admin/export/template.php:438
+msgid "Spreadsheet"
+msgstr "Táblázat"
+
+#: views/admin/export/template.php:442
+msgid "Feed"
+msgstr "Adatfolyam"
+
+#: views/admin/export/template.php:456
+msgid "CSV File"
+msgstr "CSV-fájl"
+
+#: views/admin/export/template.php:457
+msgid "Excel File (XLS)"
+msgstr "Excel-fájl (XLS)"
+
+#: views/admin/export/template.php:458
+msgid "Excel File (XLSX)"
+msgstr "Excel-fájl (XLSX)"
+
+#: views/admin/export/template.php:467
+msgid "Simple XML Feed"
+msgstr "Egyszerű XML-adatfolyam"
+
+#: views/admin/export/template.php:468
+msgid "Custom XML Feed"
+msgstr "Egyéni XML-adatfolyam"
+
+#: views/admin/export/template.php:472
+msgid "Google Merchant Center Product Feed"
+msgstr "Google Merchant Center termékfeed"
+
+#: views/admin/export/template.php:498
+msgid "XML Editor"
+msgstr "XML-szerkesztő"
+
+#: views/admin/export/template.php:510
+msgid "Help"
+msgstr "Súgó"
+
+#: views/admin/export/template.php:541
+#, php-format
+msgid ""
+"There are certain characters that cannot be included in an XML file unless "
+"they are wrapped in CDATA tags.<br/>Read more about CDATA tags: <a "
+"target='_blank' href='%s' style='font-size: 12px;'>%s</a>."
+msgstr "Bizonyos karakterek csak CDATA-címkék közé helyezve szerepelhetnek XML-fájlban.<br/>Bővebben a CDATA-címkékről: <a target='_blank' href='%s' style='font-size: 12px;'>%s</a>."
+
+#: views/admin/export/template.php:596
+#: views/admin/export/template/functions_editor.php:31
+#: views/admin/settings/_tab_functions.php:9
+msgid "Function Editor"
+msgstr "Függvényszerkesztő"
+
+#: views/admin/export/template.php:615
+msgid "Save settings as a template"
+msgstr "Beállítások mentése sablonként"
+
+#: views/admin/export/template.php:618
+msgid "Template name..."
+msgstr "Sablon neve..."
+
+#: views/admin/export/template.php:623
+msgid "Load Template..."
+msgstr "Sablon betöltése..."
+
+#: views/admin/export/template.php:639
+msgid ""
+"The WooCommerce Export Add-On Pro Is Required to Export to Google Merchant "
+"Center."
+msgstr "A Google Merchant Centerbe történő exportáláshoz szükség van a WooCommerce Export Add-On Pro bővítményre."
+
+#: views/admin/export/template.php:673
+#: views/admin/export/template/add_new_field.php:402
+msgid "Available Data"
+msgstr "Elérhető adatok"
+
+#: views/admin/export/template.php:697
+msgid "Add Field To Export"
+msgstr "Mező hozzáadása az exportáláshoz"
+
+#: views/admin/export/template.php:698 views/admin/export/template.php:708
+msgid "Edit Export Field"
+msgstr "Exportmező szerkesztése"
+
+#: views/admin/export/template.php:707
+msgid "Custom XML Feeds"
+msgstr "Egyéni XML-feedek"
+
+#: views/admin/export/template/add_new_field.php:369
+msgid "Column name"
+msgstr "Oszlop neve"
+
+#: views/admin/export/template/add_new_field.php:370
+msgid "Element name"
+msgstr "Elem neve"
+
+#: views/admin/export/template/add_new_field.php:377
+msgid "Select a field to export"
+msgstr "Válassza ki az exportálandó mezőt"
+
+#: views/admin/export/template/add_new_field.php:389
+msgid "Custom export field"
+msgstr "Egyéni exportmező"
+
+#: views/admin/export/template/add_new_field.php:392
+msgid ""
+"You can drag and drop fields from Available Data, add static text, and use "
+"PHP functions"
+msgstr "Az elérhető adatok közül húzással helyezhet mezőket ide, statikus szöveget adhat hozzá, és PHP-függvényeket használhat"
+
+#: views/admin/export/template/add_new_field.php:416
+#: views/admin/manage/index.php:99 views/admin/manage/index.php:250
+#: views/admin/manage/index.php:620
+msgid "Delete"
+msgstr "Törlés"
+
+#: views/admin/export/template/add_new_field.php:418
+msgid "Save"
+msgstr "Mentés"
+
+#: views/admin/export/template/advanced_field_options.php:12
+msgid ""
+"%%ID%% will be replaced with the ID of the post being exported, example: "
+"SELECT meta_value FROM wp_postmeta WHERE post_id=%%ID%% AND "
+"meta_key='your_meta_key';"
+msgstr "A %%ID%% helyére az éppen exportált bejegyzés ID-ja kerül. Példa: SELECT meta_value FROM wp_postmeta WHERE post_id=%%ID%% AND meta_key='your_meta_key';"
+
+#: views/admin/export/template/advanced_field_options.php:21
+msgid "Display each repeater row in its own csv line"
+msgstr "Minden ismétlődő mező sorának megjelenítése külön CSV-sorban"
+
+#: views/admin/export/template/advanced_field_options.php:31
+msgid ""
+"If enabled, each repeater row will appear as its own csv line with all post "
+"info filled in for every column."
+msgstr "Ha bekapcsolja, minden ismétlődő mező sora külön CSV-sorban jelenik meg, és minden oszlop tartalmazza a bejegyzés adatait."
+
+#: views/admin/export/template/advanced_field_options.php:41
+msgid "Export images from Gallery shortcodes in post content"
+msgstr "Képek exportálása a bejegyzés tartalmában található galéria-shortcode-okból"
+
+#: views/admin/export/template/advanced_field_options.php:50
+msgid "Export featured image"
+msgstr "Kiemelt kép exportálása"
+
+#: views/admin/export/template/advanced_field_options.php:57
+msgid "Export attached images"
+msgstr "Csatolt képek exportálása"
+
+#: views/admin/export/template/advanced_field_options.php:59
+msgid "Separator"
+msgstr "Elválasztó"
+
+#: views/admin/export/template/advanced_field_options.php:67
+msgid "UNIX timestamp - PHP time()"
+msgstr "UNIX-időbélyeg – PHP time()"
+
+#: views/admin/export/template/advanced_field_options.php:68
+msgid "ISO 8601 - PHP date('c')"
+msgstr "ISO 8601 – PHP date('c')"
+
+#: views/admin/export/template/advanced_field_options.php:69
+msgid "Natural Language PHP date()"
+msgstr "Természetes nyelvű dátum – PHP date()"
+
+#: views/admin/export/template/advanced_field_options.php:73
+#: views/admin/export/template/advanced_field_options.php:90
+msgid "date() Format"
+msgstr "date() formátuma"
+
+#: views/admin/export/template/advanced_field_options.php:79
+msgid "Timezone"
+msgstr "Időzóna"
+
+#: views/admin/export/template/advanced_field_options.php:81
+msgid "UTC"
+msgstr "UTC"
+
+#: views/admin/export/template/advanced_field_options.php:82
+#, php-format
+msgid "Site timezone (%s)"
+msgstr "A webhely időzónája (%s)"
+
+#: views/admin/export/template/advanced_field_options.php:98
+#: views/admin/export/template/advanced_field_options.php:110
+#: views/admin/export/template/advanced_field_options.php:123
+msgid "Value Format"
+msgstr "Értékformátum"
+
+#: views/admin/export/template/advanced_field_options.php:100
+msgid "Media URL"
+msgstr "Média URL"
+
+#: views/admin/export/template/advanced_field_options.php:101
+msgid "Media ID"
+msgstr "Média ID"
+
+#: views/admin/export/template/advanced_field_options.php:102
+msgid "File Name"
+msgstr "Fájlnév"
+
+#: views/admin/export/template/advanced_field_options.php:112
+msgid "Post ID"
+msgstr "Bejegyzés ID-ja"
+
+#: views/admin/export/template/advanced_field_options.php:113
+msgid "Post Permalink"
+msgstr "Bejegyzés közvetlen hivatkozása"
+
+#: views/admin/export/template/advanced_field_options.php:114
+msgid "Post Title"
+msgstr "Bejegyzés címe"
+
+#: views/admin/export/template/advanced_field_options.php:115
+msgid "Post Slug"
+msgstr "Bejegyzés slugja"
+
+#: views/admin/export/template/advanced_field_options.php:125
+msgid "User ID"
+msgstr "Felhasználói azonosító (ID)"
+
+#: views/admin/export/template/advanced_field_options.php:126
+msgid "User Email"
+msgstr "Felhasználói e-mail cím"
+
+#: views/admin/export/template/advanced_field_options.php:127
+msgid "User Login"
+msgstr "Felhasználói belépés"
+
+#: views/admin/export/template/advanced_field_options.php:134
+#: views/admin/export/template/custom_xml_help.php:63
+msgid "Product SKU"
+msgstr "Termék SKU"
+
+#: views/admin/export/template/advanced_field_options.php:135
+msgid "Product ID"
+msgstr "Termék ID"
+
+#: views/admin/export/template/advanced_field_options.php:136
+msgid "Product Name"
+msgstr "Terméknév"
+
+#: views/admin/export/template/advanced_field_options.php:144
+msgid "Export the value returned by a PHP function"
+msgstr "A PHP-függvény által visszaadott érték exportálása"
+
+#: views/admin/export/template/advanced_field_options.php:147
+msgid ""
+"The value of the field chosen for export will be passed to the PHP function."
+msgstr "Az exportáláshoz kiválasztott mező értéke át lesz adva a PHP-függvénynek."
+
+#: views/admin/export/template/custom_xml_help.php:8
+msgid ""
+"The custom XML editor makes it easy to create an XML file with the exact "
+"structure you need. The syntax is simple and straightforward, yet powerful "
+"enough to allow you to pass your data through custom PHP functions."
+msgstr "Az egyéni XML-szerkesztővel egyszerűen létrehozhatja a szükséges pontos szerkezetű XML-fájlt. A szintaxis egyszerű és egyértelmű, mégis elég rugalmas ahhoz, hogy az adatokat egyéni PHP-függvényekkel dolgozza fel."
+
+#: views/admin/export/template/custom_xml_help.php:10
+msgid "Custom XML Editor"
+msgstr "Egyéni XML-szerkesztő"
+
+#: views/admin/export/template/custom_xml_help.php:13
+msgid ""
+"The custom XML editor is a template for your custom XML feed. Everything "
+"between the <span class=\"wp_all_export_code\"><span "
+"class=\"wp_all_export_code_comment\">&lt;!-- BEGIN LOOP --&gt;</span> and "
+"<span class=\"wp_all_export_code_comment\">&lt;!-- END LOOP "
+"--&gt;</span></span> tags will be repeated for each exported post."
+msgstr "Az egyéni XML-szerkesztő az egyéni XML-feed sablonja. Minden, a <span class=\"wp_all_export_code\"><span class=\"wp_all_export_code_comment\">&lt;!-- BEGIN LOOP --&gt;</span> és <span class=\"wp_all_export_code_comment\">&lt;!-- END LOOP --&gt;</span></span> címkék közötti tartalom minden exportált bejegyzésnél ismétlődik."
+
+#: views/admin/export/template/custom_xml_help.php:14
+msgid ""
+"You can drag and drop elements from Available Data on the right into the "
+"editor on the left. You can also manually enter data into the export "
+"template."
+msgstr "A jobb oldali elérhető adatok közül elemeket húzhat át a bal oldali szerkesztőbe. Az exportálási sablonban kézzel is megadhat adatokat."
+
+#: views/admin/export/template/custom_xml_help.php:15
+msgid ""
+"For example, to add the post title to your export, you can either drag the "
+"title element into the editor, or you can manually edit the export template "
+"in editor to add it like this: <span class=\"wp_all_export_code\"><span "
+"class=\"wp_all_export_code_tag\">&lt;my_custom_title&gt;<span "
+"class=\"wp_all_export_code_text\">{Title}</span>&lt;/my_custom_title&gt;</span></span>"
+msgstr "Ha például a bejegyzés címét szeretné hozzáadni az exportáláshoz, húzza át a címelemet a szerkesztőbe, vagy kézzel szerkessze a sablont a szerkesztőben, például így: <span class=\"wp_all_export_code\"><span class=\"wp_all_export_code_tag\">&lt;my_custom_title&gt;<span class=\"wp_all_export_code_text\">{Title}</span>&lt;/my_custom_title&gt;</span></span>"
+
+#: views/admin/export/template/custom_xml_help.php:18
+msgid "PHP Functions"
+msgstr "PHP-függvények"
+
+#: views/admin/export/template/custom_xml_help.php:21
+msgid ""
+"To add a custom PHP function to your XML template wrap it in brackets: <span"
+" class=\"wp_all_export_code\"><span "
+"class=\"wp_all_export_code_text\">[my_function({Content})]"
+msgstr "Ha egyéni PHP-függvényt szeretne hozzáadni az XML-sablonhoz, tegye szögletes zárójelek közé: <span class=\"wp_all_export_code\"><span class=\"wp_all_export_code_text\">[my_function({Content})]"
+
+#: views/admin/export/template/custom_xml_help.php:22
+msgid ""
+"You can also use native PHP functions: <span "
+"class=\"wp_all_export_code\"><span "
+"class=\"wp_all_export_code_text\">[str_replace(\",\",\"\",{Price})]"
+msgstr "Beépített PHP-függvényeket is használhat: <span class=\"wp_all_export_code\"><span class=\"wp_all_export_code_text\">[str_replace(\",\",\"\",{Price})]"
+
+#: views/admin/export/template/custom_xml_help.php:23
+msgid ""
+"Whatever your function returns will appear in your exported XML file. You "
+"can pass as many elements as you like to your function so that they can be "
+"combined and processed in any way."
+msgstr "A PHP-függvény által visszaadott érték jelenik meg az exportált XML-fájlban. Tetszőleges számú elemet adhat át a függvénynek, hogy azokat bármilyen módon összekapcsolja és feldolgozza."
+
+#: views/admin/export/template/custom_xml_help.php:26
+msgid "Repeating Fields and Arrays"
+msgstr "Ismétlődő mezők és tömbök"
+
+#: views/admin/export/template/custom_xml_help.php:29
+msgid ""
+"Some fields, like images, have multiple values per post. WP All Export turns"
+" these fields into indexed arrays. Whenever WP All Export encounters an "
+"indexed array in an XML element it will repeat that element once for every "
+"value in the array."
+msgstr "Egyes mezők, például a képek, több értékkel rendelkeznek bejegyzésenként. A WP All Export ezeket a mezőket indexelt tömbökké alakítja. Ha a WP All Export indexelt tömböt talál egy XML-elemben, az elemet a tömb minden értékéhez egyszer megismétli."
+
+#: views/admin/export/template/custom_xml_help.php:30
+msgid ""
+"For example, let's assume a post as two images attached to it - image1.jpg "
+"and image2.jpg - and we want to have one XML element for every image URL. "
+"Here's what our XML template will look like:"
+msgstr "Tegyük fel például, hogy egy bejegyzéshez két kép van csatolva – image1.jpg és image2.jpg –, és minden kép URL-jéhez egy XML-elemet szeretnénk létrehozni. Így néz ki az XML-sablon:"
+
+#: views/admin/export/template/custom_xml_help.php:38
+msgid "And here's how our exported XML file will look:"
+msgstr "Az exportált XML-fájl pedig így fog kinézni:"
+
+#: views/admin/export/template/custom_xml_help.php:46
+msgid ""
+"WP All Export will do this with all indexed arrays that it comes across. So "
+"if you have a function that returns an indexed array, that XML element will "
+"be repeated for each value. Likewise, you can take a field like {Image URL} "
+"and turn it into a string, like this:"
+msgstr "A WP All Export ezt minden indexelt tömbbel elvégzi. Ha tehát egy függvény indexelt tömböt ad vissza, az XML-elem minden értékhez megismétlődik. Hasonlóképpen egy olyan mezőt, mint a {Image URL}, szöveggé alakíthat, például így:"
+
+#: views/admin/export/template/custom_xml_help.php:50
+msgid "And you'll just get one XML element with all of the values, like this:"
+msgstr "Így egyetlen XML-elemet kap, benne az összes értékkel:"
+
+#: views/admin/export/template/custom_xml_help.php:56
+msgid "Example Template"
+msgstr "Példasablon"
+
+#: views/admin/export/template/custom_xml_help.php:60
+msgid ""
+"Let's say we want to make an XML feed of our WooCommerce products with these"
+" requirements:"
+msgstr "Tegyük fel, hogy az alábbi követelményeknek megfelelő XML-hírcsatornát szeretnénk készíteni a WooCommerce-termékeinkből:"
+
+#: views/admin/export/template/custom_xml_help.php:62
+msgid ""
+"Site name below the header, before the <span "
+"class=\"wp_all_export_code\"><span "
+"class=\"wp_all_export_code_tag\">&lt;products&gt;</span></span> element"
+msgstr "A webhely neve a fejléc alatt, a <span class=\"wp_all_export_code\"><span class=\"wp_all_export_code_tag\">&lt;products&gt;</span></span> elem előtt"
+
+#: views/admin/export/template/custom_xml_help.php:64
+msgid "Product Title"
+msgstr "Termék címe"
+
+#: views/admin/export/template/custom_xml_help.php:65
+msgid "Product Price (processed via a PHP function so that they end in .99)"
+msgstr "A termék ára egy PHP-függvényen keresztül feldolgozva, hogy az értékek .99-re végződjenek"
+
+#: views/admin/export/template/custom_xml_help.php:66
+msgid ""
+"Product image URLs wrapped in an <span class=\"wp_all_export_code\"><span "
+"class=\"wp_all_export_code_tag\">&lt;images&gt;</span></span> element"
+msgstr "A termékképek URL-jei egy <span class=\"wp_all_export_code\"><span class=\"wp_all_export_code_tag\">&lt;images&gt;</span></span> elembe foglalva"
+
+#: views/admin/export/template/custom_xml_help.php:68
+msgid "Here's what our XML template will look like in the editor:"
+msgstr "Így fog kinézni az XML-sablon a szerkesztőben:"
+
+#: views/admin/export/template/custom_xml_help.php:86
+msgid "Then in the Function Editor we'd define my_price_function() like so:"
+msgstr "A függvényszerkesztőben ezután így definiálnánk a my_price_function() függvényt:"
+
+#: views/admin/export/template/custom_xml_help.php:94
+msgid ""
+"If we had two products, each with two images, here's what our XML file would"
+" look like:"
+msgstr "Ha két termékünk lenne, mindegyikhez két képpel, így nézne ki az XML-fájl:"
+
+#: views/admin/export/template/functions_editor.php:31
+#, php-format
+msgid ""
+"Add functions here for use during your export. You can access this file at "
+"%s"
+msgstr ""
+"Adjon hozzá itt függvényeket, amelyeket az exportálás során használhat. A "
+"fájl itt érhető el: %s"
+
+#: views/admin/export/variation_options.php:12
+msgid "Product Variations"
+msgstr "Termékváltozatok"
+
+#: views/admin/export/variation_options.php:15
+msgid ""
+"WooCommerce stores each product variation as a separate product in the "
+"database, along with a parent product to tie all of the variations "
+"together.<br/><br/>If the product title is 'T-Shirt', then the parent "
+"product will be titled 'T-Shirt', and in the database each size/color "
+"combination will be a separate product with a title like 'Variation #23 of "
+"T-Shirt'."
+msgstr "A WooCommerce minden termékváltozatot külön termékként tárol az adatbázisban, valamint egy szülőterméket is létrehoz a változatok összekapcsolásához.<br/><br/>Ha a termék címe „T-Shirt”, akkor a szülőtermék címe is „T-Shirt” lesz, az adatbázisban pedig minden méret- és színkombináció külön termékként szerepel, például „Variation #23 of T-Shirt” címmel."
+
+#: views/admin/export/variation_options.php:24
+msgid "Export product variations and their parent products"
+msgstr "Termékváltozatok és szülőtermékeik exportálása"
+
+#: views/admin/export/variation_options.php:36
+#: views/admin/export/variation_options.php:68
+msgid "Product variations use the parent product title"
+msgstr "A termékváltozatok a szülőtermék címét használják"
+
+#: views/admin/export/variation_options.php:47
+#: views/admin/export/variation_options.php:80
+msgid "Product variations use the default variation product title"
+msgstr "A termékváltozatok a saját alapértelmezett címüket használják"
+
+#: views/admin/export/variation_options.php:57
+msgid "Only export product variations"
+msgstr "Csak a termékváltozatok exportálása"
+
+#: views/admin/export/variation_options.php:93
+msgid "Only export parent products"
+msgstr "Csak a szülőtermékek exportálása"
+
+#: views/admin/manage/google_merchants_info.php:7
+msgid "Import Into Google Merchants Center"
+msgstr "Importálás a Google Merchant Centerbe"
+
+#: views/admin/manage/google_merchants_info.php:11
+msgid ""
+"Now that your export has been set up, you need to create a feed in Google "
+"Merchants Center and give it the URL of your export file from WP All Export."
+msgstr "Most, hogy beállította az exportálást, hozzon létre egy hírcsatornát a Google Merchant Centerben, és adja meg benne a WP All Export exportfájljának URL-jét."
+
+#: views/admin/manage/index.php:58 views/admin/manage/index.php:61
+msgid "Search Exports"
+msgstr "Exportálások keresése"
+
+#: views/admin/manage/index.php:68
+msgid "ID"
+msgstr "Azonosító"
+
+#: views/admin/manage/index.php:69
+msgid "Name"
+msgstr "Név"
+
+#: views/admin/manage/index.php:71
+msgid "Query"
+msgstr "Lekérdezés"
+
+#: views/admin/manage/index.php:73
+msgid "Summary"
+msgstr "Összefoglaló"
+
+#: views/admin/manage/index.php:75
+msgid "Info & Options"
+msgstr "Információk és beállítások"
+
+#: views/admin/manage/index.php:98 views/admin/manage/index.php:618
+msgid "Bulk actions"
+msgstr "Tömeges műveletek"
+
+#: views/admin/manage/index.php:100 views/admin/manage/index.php:621
+msgid "Toggle Client Mode"
+msgstr "Ügyfélmód váltása"
+
+#: views/admin/manage/index.php:102 views/admin/manage/index.php:627
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#: views/admin/manage/index.php:110
+#, php-format
+msgid "Displaying %s&#8211;%s of %s"
+msgstr "Megjelenítés: %s&#8211;%s / %s"
+
+#: views/admin/manage/index.php:159
+msgid "No previous exports found."
+msgstr "Nem találhatók előző exportálások."
+
+#: views/admin/manage/index.php:321
+msgid "Google Merchant Center Info"
+msgstr "Google Merchant Center-adatok"
+
+#: views/admin/manage/index.php:343 views/admin/manage/templates.php:7
+msgid "Download Import Templates"
+msgstr "Importálási sablonok letöltése"
+
+#: views/admin/manage/index.php:470
+msgid "triggered with cron"
+msgstr "cron által indítva"
+
+#: views/admin/manage/index.php:477 views/admin/manage/index.php:492
+#: views/admin/manage/index.php:505
+#, php-format
+msgid "last activity %s ago"
+msgstr "Legutóbbi történés: %s ezelőtt"
+
+#: views/admin/manage/index.php:483
+msgid "currently processing with cron"
+msgstr "Jelenleg a cron végzi a feldolgozást"
+
+#: views/admin/manage/index.php:498
+msgid "Export currently in progress"
+msgstr "Az exportálás folyamatban van"
+
+#: views/admin/manage/index.php:514 views/admin/manage/index.php:518
+#, php-format
+msgid "Export Attempt at %s"
+msgstr "Exportálási kísérlet: %s"
+
+#: views/admin/manage/index.php:520
+msgid "Export canceled"
+msgstr "Exportálás megszakítva"
+
+#: views/admin/manage/index.php:522
+#, php-format
+msgid "Last run: %s"
+msgstr "Utolsó futtatás: %s"
+
+#: views/admin/manage/index.php:522
+msgid "never"
+msgstr "soha"
+
+#: views/admin/manage/index.php:526
+#, php-format
+msgid "%d Records Exported since"
+msgstr "%d rekord exportálva ettől"
+
+#: views/admin/manage/index.php:532
+#, php-format
+msgid "%d Records Exported"
+msgstr "%d rekord exportálva"
+
+#: views/admin/manage/index.php:540
+#, php-format
+msgid "Format: %s"
+msgstr "Formátum: %s"
+
+#: views/admin/manage/index.php:546
+msgid "settings edited since last run"
+msgstr "beállítások módosítva az utolsó futás óta"
+
+#: views/admin/manage/index.php:561
+msgid "Run Export"
+msgstr "Exportálás indítása"
+
+#: views/admin/manage/index.php:565
+msgid "Cancel Cron"
+msgstr "Cron leállítása"
+
+#: views/admin/manage/index.php:576
+msgid "Disable Export"
+msgstr "Exportálás kikapcsolása"
+
+#: views/admin/manage/index.php:581
+msgid "Enable Export"
+msgstr "Exportálás bekapcsolása"
+
+#: views/admin/manage/index.php:623
+msgid "Restore"
+msgstr "Visszaállítás"
+
+#: views/admin/manage/index.php:624
+msgid "Delete Permanently"
+msgstr "Végleges törlés"
+
+#: views/admin/manage/scheduling.php:7
+msgid "Cron Scheduling"
+msgstr "Cron-ütemezés"
+
+#: views/admin/manage/scheduling.php:11
+msgid ""
+"To schedule an export, you must create two cron jobs in your web hosting "
+"control panel. One cron job will be used to run the Trigger script, the "
+"other to run the Execution script."
+msgstr "Az exportálás időzítéséhez két cronfeladatot kell létrehoznia a webtárhely vezérlőpultján. Az egyik cronfeladat az indító parancsfájl, a másik a végrehajtó parancsfájl futtatására szolgál."
+
+#: views/admin/manage/scheduling.php:15
+msgid "Trigger Script URL"
+msgstr "Indító parancsfájl URL-je"
+
+#: views/admin/manage/scheduling.php:16
+msgid ""
+"Run the trigger script when you want to update your export. Once per 24 "
+"hours is recommended."
+msgstr "Futtassa az indító parancsfájlt, amikor frissíteni szeretné az exportálást. Javasoljuk, hogy 24 óránként egyszer futtassa."
+
+#: views/admin/manage/scheduling.php:19
+msgid "Execution Script URL"
+msgstr "Végrehajtó parancsfájl URL-je"
+
+#: views/admin/manage/scheduling.php:20
+msgid ""
+"Run the execution script frequently. Once per two minutes is recommended."
+msgstr "Futtassa gyakran a végrehajtó parancsfájlt. Javasoljuk, hogy kétpercenként futtassa."
+
+#: views/admin/manage/scheduling.php:22
+msgid "Export File URL"
+msgstr "Exportfájl URL-je"
+
+#: views/admin/manage/scheduling.php:25
+msgid "Export Bundle URL"
+msgstr "Exportcsomag URL-je"
+
+#: views/admin/manage/scheduling.php:30
+msgid "Trigger Script"
+msgstr "Indító szkript"
+
+#: views/admin/manage/scheduling.php:32
+msgid "Every time you want to schedule the export, run the trigger script."
+msgstr "Minden alkalommal futtassa az indító parancsfájlt, amikor időzíteni szeretné az exportálást."
+
+#: views/admin/manage/scheduling.php:34
+msgid ""
+"To schedule the export to run once every 24 hours, run the trigger script "
+"every 24 hours. Most hosts require you to use “wget” to access a URL. Ask "
+"your host for details."
+msgstr "Ha azt szeretné, hogy az exportálás 24 óránként egyszer fusson, futtassa az indító parancsfájlt 24 óránként. A legtöbb tárhelyszolgáltatónál a „wget” használatával kell elérni egy URL-t. További részletekért kérdezze meg a tárhelyszolgáltatóját."
+
+#: views/admin/manage/scheduling.php:36 views/admin/manage/scheduling.php:48
+msgid "Example:"
+msgstr "Példa:"
+
+#: views/admin/manage/scheduling.php:40
+msgid "Execution Script"
+msgstr "Végrehajtó szkript"
+
+#: views/admin/manage/scheduling.php:42
+msgid ""
+"The Execution script actually executes the export, once it has been "
+"triggered with the Trigger script."
+msgstr "A végrehajtó parancsfájl hajtja végre az exportálást, miután az indító parancsfájl elindította."
+
+#: views/admin/manage/scheduling.php:44
+msgid ""
+"It processes in iteration (only exporting a few records each time it runs) "
+"to optimize server load. It is recommended you run the execution script "
+"every 2 minutes."
+msgstr "Az exportálás több menetben zajlik, és minden futtatáskor csak néhány rekordot exportál, így csökkenti a szerver terhelését. Javasoljuk, hogy kétpercenként futtassa a végrehajtó parancsfájlt."
+
+#: views/admin/manage/scheduling.php:46
+msgid ""
+"It also operates this way in case of unexpected crashes by your web host. If"
+" it crashes before the export is finished, the next run of the cron job two "
+"minutes later will continue it where it left off, ensuring reliability."
+msgstr "Ez a működés a tárhelyszolgáltató váratlan leállásai esetén is hasznos. Ha az exportálás befejezése előtt leállás történik, a cronfeladat két perccel későbbi futtatása onnan folytatja az exportálást, ahol az abbamaradt, így biztosítva a megbízható működést."
+
+#: views/admin/manage/scheduling.php:52
+msgid "Notes"
+msgstr "Jegyzetek"
+
+#: views/admin/manage/scheduling.php:55
+msgid ""
+"Your web host may require you to use a command other than wget, although "
+"wget is most common. In this case, you must asking your web hosting provider"
+" for help."
+msgstr ""
+"Előfordulhat, hogy a tárhelyszolgáltató a wget-től eltérő parancs "
+"használatát írja elő, bár a wget a leggyakoribb. Ebben az esetben kérjen "
+"segítséget a tárhelyszolgáltatótól."
+
+#: views/admin/manage/templates.php:8
+msgid ""
+"Download your import templates and use them to import your exported file to "
+"a separate WordPress/WP All Import installation."
+msgstr "Töltse le az importálási sablonmintákat, és használja őket az exportált fájl külön WordPress-/WP All Import-telepítésbe történő importálásához."
+
+#: views/admin/manage/templates.php:9
+msgid ""
+"Install these import templates in your separate WP All Import installation "
+"from the <i>All Import › Settings</i> page by clicking the \"Import "
+"Templates\" button."
+msgstr "Telepítse ezeket az importálási sablonmintákat a különálló WP All Import-telepítésébe az <i>All Import › Beállítások</i> oldalon, az „Importálási sablonminták” gombra kattintva."
+
+#: views/admin/manage/update.php:26
+msgid "Export to XML / CSV"
+msgstr "Exportálás XML / CSV formátumba"
+
+#: views/admin/settings/index.php:45
+msgid "Settings sections"
+msgstr "Beállítási szakaszok"
+
+#: views/admin/settings/index.php:83
+msgid "Nothing to show here"
+msgstr "Itt nincs megjeleníthető tartalom"
+
+#: views/admin/settings/index.php:84
+msgid "This tab was added by an add-on that is no longer rendering it."
+msgstr ""
+"Ezt a fület egy olyan kiegészítő adta hozzá, amely már nem jeleníti meg."
+
+#: views/admin/settings/_fields.php:139 views/admin/settings/_fields.php:196
+#: views/admin/settings/_fields.php:217 views/admin/settings/_tab_cron.php:23
+#: views/admin/settings/_tab_support.php:22
+#: views/admin/settings/_tab_zapier.php:24
+msgid "Copy"
+msgstr "Másolás"
+
+#: views/admin/settings/_save_actions.php:6
+msgid "Save changes"
+msgstr "Módosítások mentése"
+
+#: views/admin/settings/_tab_client_mode.php:6
+msgid "Roles with access can run the exports you allow, and nothing else."
+msgstr "A hozzáféréssel rendelkező szerepkörök futtathatják az Ön által engedélyezett exportálásokat, és semmi mást."
+
+#: views/admin/settings/_tab_client_mode.php:13
+#: views/admin/settings/_tab_client_mode.php:31
+msgid "Roles with access"
+msgstr "Hozzáféréssel rendelkező szerepkörök"
+
+#: views/admin/settings/_tab_cron.php:12
+msgid "Access"
+msgstr "Hozzáférés"
+
+#: views/admin/settings/_tab_cron.php:23
+msgid "secret key"
+msgstr "titkos kulcs"
+
+#: views/admin/settings/_tab_cron.php:25
+msgid "Regenerate secret key"
+msgstr "Titkos kulcs újragenerálása"
+
+#: views/admin/settings/_tab_cron.php:25
+msgid "Regenerate"
+msgstr "Újragenerálás"
+
+#: views/admin/settings/_tab_cron.php:31
+msgid "Secret key"
+msgstr "Titkos kulcs"
+
+#. translators: %s: link to the Manage Exports screen.
+#: views/admin/settings/_tab_cron.php:36
+#, php-format
+msgid ""
+"Authenticates the cron URLs. Each export has its own pair. Open its "
+"scheduling dialog on <a href=\"%s\">Manage Exports</a> to copy them. "
+"Changing this key invalidates every cron job you have already set up."
+msgstr "Hitelesíti a cron URL-eket. Minden exportáláshoz saját URL-pár tartozik. Nyissa meg az exportálás ütemezési ablakát az <a href=\"%s\">Exportálások kezelése</a> oldalon, és másolja ki az URL-eket. A kulcs módosítása érvényteleníti az összes korábban beállított cronfeladatot."
+
+#: views/admin/settings/_tab_files.php:12
+msgid "Storage"
+msgstr "Tárolás"
+
+#: views/admin/settings/_tab_files.php:16
+msgid "Secure mode"
+msgstr "Biztonságos mód"
+
+#: views/admin/settings/_tab_files.php:17
+msgid "Randomize folder names"
+msgstr "Mappanevek véletlenszerűvé tétele"
+
+#: views/admin/settings/_tab_files.php:19
+#, php-format
+msgid ""
+"If enabled, exported files and temporary files will be saved in a folder "
+"with a randomized name in <code>%s</code>. If disabled, exported files will "
+"be saved in the Media Library."
+msgstr "Bekapcsolt állapotban az exportált és ideiglenes fájlok véletlenszerű nevű mappába kerülnek a <code>%s</code> helyen. Kikapcsolt állapotban az exportált fájlok a Médiatárba kerülnek."
+
+#: views/admin/settings/_tab_licenses.php:9
+msgid "License keys"
+msgstr "Licenckulcsok"
+
+#: views/admin/settings/_tab_licenses.php:10
+msgid "Keys are stored on this site and never shown again once saved."
+msgstr ""
+"A kulcsok ezen a webhelyen tárolódnak, és mentés után többé nem jelennek "
+"meg."
+
+#: views/admin/settings/_tab_licenses.php:34
+#: views/admin/settings/_tab_licenses.php:112
+msgid "Paste your license key"
+msgstr "Illessze be a licenckulcsát"
+
+#: views/admin/settings/_tab_licenses.php:40
+#: views/admin/settings/_tab_licenses.php:118
+msgid "A license key is saved. Type a new key to replace it."
+msgstr "A licenckulcs mentve van. Új kulcs megadásával lecserélheti."
+
+#: views/admin/settings/_tab_licenses.php:41
+#: views/admin/settings/_tab_licenses.php:119
+#, php-format
+msgid "A license key ending %s is saved. Type a new key to replace it."
+msgstr ""
+"A %s végződésű licenckulcs mentve van. A lecseréléséhez adjon meg egy új "
+"kulcsot."
+
+#: views/admin/settings/_tab_licenses.php:42
+#: views/admin/settings/_tab_licenses.php:120
+msgid "No license key saved."
+msgstr "Nincs mentett licenckulcs."
+
+#: views/admin/settings/_tab_licenses.php:47
+msgid "WP All Export license status:"
+msgstr "A WP All Export-licenc állapota:"
+
+#: views/admin/settings/_tab_licenses.php:52
+msgid "Checking…"
+msgstr "Ellenőrzés…"
+
+#: views/admin/settings/_tab_licenses.php:63
+msgid "Activate WP All Export license"
+msgstr "WP All Export-licenc bekapcsolása"
+
+#: views/admin/settings/_tab_licenses.php:66
+#: views/admin/settings/_tab_licenses.php:160
+msgid "Activate"
+msgstr "Bekapcsolás"
+
+#: views/admin/settings/_tab_licenses.php:69
+msgid "Remove WP All Export license"
+msgstr "WP All Export-licenc eltávolítása"
+
+#: views/admin/settings/_tab_licenses.php:70
+msgid ""
+"Remove this license key? No export will run, and plugin updates will stop, "
+"until a valid key is entered again. Your exports, settings and data are "
+"kept."
+msgstr "Eltávolítja ezt a licenckulcsot? Amíg ismét meg nem ad egy érvényes kulcsot, nem futnak exportálások, és a bővítmény frissítései is leállnak. Az exportálások, a beállítások és az adatok megmaradnak."
+
+#: views/admin/settings/_tab_licenses.php:71
+#: views/admin/settings/_tab_licenses.php:165
+msgid "Remove license"
+msgstr "Licenc eltávolítása"
+
+#: views/admin/settings/_tab_licenses.php:71
+#: views/admin/settings/_tab_licenses.php:165
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: views/admin/settings/_tab_licenses.php:82
+#, php-format
+msgid ""
+"A valid license key is required to use WP All Export Pro and to access "
+"plugin updates. You can use your license key on an unlimited number of "
+"websites. Do not distribute your license key to 3rd parties. You can get "
+"your license key in the <a href=\"%s\" target=\"_blank\">customer "
+"portal</a>."
+msgstr "A WP All Export Pro használatához és a bővítmény frissítéseinek eléréséhez érvényes licenckulcs szükséges. A licenckulcs korlátlan számú honlapon használható. Ne adja ki a licenckulcsot harmadik félnek. A licenckulcsot a <a href=\"%s\" target=\"_blank\">vásárlói portálon</a> találja."
+
+#: views/admin/settings/_tab_licenses.php:133
+msgid ""
+"This key belongs to a different product. Check that you pasted the Automatic"
+" Scheduling key."
+msgstr "Ez a kulcs egy másik termékhez tartozik. Ellenőrizze, hogy az Automatic Scheduling kulcsát illesztette-e be."
+
+#: views/admin/settings/_tab_licenses.php:145
+msgid "This key has not been checked yet. Choose Activate to finish."
+msgstr "Ezt a kulcsot még nem ellenőriztük. A befejezéshez válassza a Bekapcsolás lehetőséget."
+
+#: views/admin/settings/_tab_licenses.php:151
+msgid "Automatic Scheduling license status:"
+msgstr "Az Automatic Scheduling licencének állapota:"
+
+#: views/admin/settings/_tab_licenses.php:157
+msgid "Activate Automatic Scheduling license"
+msgstr "Automatic Scheduling-licenc bekapcsolása"
+
+#: views/admin/settings/_tab_licenses.php:163
+msgid "Remove Automatic Scheduling license"
+msgstr "Automatic Scheduling-licenc eltávolítása"
+
+#: views/admin/settings/_tab_licenses.php:164
+msgid ""
+"Remove this license key? Automatic Scheduling will stop running your exports"
+" until a valid key is entered again."
+msgstr "Eltávolítja ezt a licenckulcsot? Az Automatic Scheduling leállítja az exportálások futtatását, amíg ismét meg nem ad egy érvényes kulcsot."
+
+#: views/admin/settings/_tab_licenses.php:176
+#, php-format
+msgid ""
+"Required to run exports on a schedule without setting up your own cron jobs."
+" <a href=\"%1$s\" target=\"_blank\">Get your key</a>, or <a href=\"%2$s\" "
+"class=\"scheduling-subscribe-link\">subscribe</a>."
+msgstr "Az exportálások saját cronfeladatok beállítása nélküli, időzített futtatásához szükséges. <a href=\"%1$s\" target=\"_blank\">Szerezze be a kulcsot</a>, vagy <a href=\"%2$s\" class=\"scheduling-subscribe-link\">fizessen elő</a>."
+
+#: views/admin/settings/_tab_support.php:4
+msgid "Get help"
+msgstr "Segítség kérése"
+
+#: views/admin/settings/_tab_support.php:5
+msgid ""
+"Support answers faster when a system report is attached. It saves a round "
+"trip asking for your versions and limits."
+msgstr ""
+"A támogatási csapat gyorsabban válaszol, ha rendszerjelentést is mellékel. "
+"Így nem kell külön levelezési körben rákérdezni az Ön verzióira és "
+"korlátaira."
+
+#: views/admin/settings/_tab_support.php:9
+msgid "Contact support"
+msgstr "Kapcsolatfelvétel a támogatással"
+
+#: views/admin/settings/_tab_support.php:13
+msgid "System report"
+msgstr "Rendszerjelentés"
+
+#: views/admin/settings/_tab_support.php:22
+msgid "system report"
+msgstr "Rendszerjelentés"
+
+#: views/admin/settings/_tab_support.php:29
+msgid "Environment"
+msgstr "Környezet"
+
+#: views/admin/settings/_tab_support.php:32
+msgid ""
+"Versions, server limits, and active plugins. No license keys, secret keys, "
+"site URLs, or export data. Your theme and plugin list are included, which on"
+" a client site may identify the build."
+msgstr "Verziók, szerverkorlátozások és aktív bővítmények. Nincsenek licenckulcsok, titkos kulcsok, webhely-URL-ek vagy exportálási adatok. A használt sablon és a bővítmények listája szerepel az adatok között, ami egy ügyfél webhelyén felfedheti az összeállítás részleteit."
+
+#: views/admin/settings/_tab_templates.php:8
+#: views/admin/settings/_tab_templates.php:16
+msgid "Saved templates"
+msgstr "Mentett sablonminták"
+
+#: views/admin/settings/_tab_templates.php:9
+msgid ""
+"A template is a saved export configuration. Export one to reuse it on "
+"another site, or to keep a copy before you change an export."
+msgstr "A sablonminta egy mentett exportálási konfiguráció. Exportálja, ha egy másik webhelyen szeretné újra felhasználni, vagy ha másolatot szeretne készíteni, mielőtt módosít egy exportálást."
+
+#: views/admin/settings/_tab_templates.php:29
+msgid "Export selected"
+msgstr "Kijelöltek exportálása"
+
+#: views/admin/settings/_tab_templates.php:31
+msgid ""
+"Delete the selected templates? This cannot be undone. Exports already "
+"created from them are not affected."
+msgstr "Törli a kiválasztott sablonmintákat? Ez a művelet nem vonható vissza. A belőlük már létrehozott exportálásokat nem érinti."
+
+#: views/admin/settings/_tab_templates.php:32
+msgid "Delete templates"
+msgstr "Sablonok törlése"
+
+#: views/admin/settings/_tab_templates.php:32
+msgid "Delete selected"
+msgstr "Kijelöltek törlése"
+
+#: views/admin/settings/_tab_templates.php:36
+msgid "No saved templates yet"
+msgstr "Még nincsenek mentett sablonminták"
+
+#: views/admin/settings/_tab_templates.php:37
+msgid ""
+"When you save an export as a template, it appears here, ready to export to "
+"another site."
+msgstr "Amikor exportálást ment sablonmintaként, az itt jelenik meg, és készen áll arra, hogy egy másik webhelyre exportálja."
+
+#: views/admin/settings/_tab_templates.php:41
+msgid "Import from a file"
+msgstr "Importálás fájlból"
+
+#: views/admin/settings/_tab_templates.php:49
+msgid "Import templates"
+msgstr "Sablonminták importálása"
+
+#: views/admin/settings/_tab_templates.php:55
+msgid "Template file"
+msgstr "Sablonfájl"
+
+#: views/admin/settings/_tab_templates.php:58
+msgid ""
+"Accepts a .txt file exported from WP All Export. Files exported from WP All "
+"Import won't work here."
+msgstr "A WP All Exportból exportált .txt fájl fogadható el. A WP All Importból exportált fájlok itt nem használhatók."
+
+#: views/admin/settings/_tab_zapier.php:8
+msgid "Zapier integration"
+msgstr "Zapier-integráció"
+
+#: views/admin/settings/_tab_zapier.php:10
+#, php-format
+msgid ""
+"Zapier acts as a middle man between WP All Export and hundreds of other "
+"popular apps. To get started go to Zapier.com, create an account, and make a"
+" new Zap. Read more: <a target=\"_blank\" href=\"%1$s\">%1$s</a>"
+msgstr "A Zapier közvetítőként működik a WP All Export és több száz népszerű alkalmazás között. A kezdéshez látogasson el a Zapier.com oldalra, hozzon létre egy fiókot, majd készítsen egy új Zapet. Bővebben: <a target=\"_blank\" href=\"%1$s\">%1$s</a>"
+
+#: views/admin/settings/_tab_zapier.php:24
+#: views/admin/settings/_tab_zapier.php:31
+msgid "API key"
+msgstr "API-kulcs"
+
+#: views/admin/settings/_tab_zapier.php:34
+msgid ""
+"Changing the key will require you to update your existing Zaps on Zapier."
+msgstr "A kulcs módosítása után frissítenie kell a Zapierben meglévő Zapjeit."
+
+#: views/admin/shared/function_editor.php:19
+msgid "Save Functions"
+msgstr "Függvények mentése"
+
+#: views/admin/shared/function_editor.php:20
+msgid "Send to CodeBox"
+msgstr "Küldés a CodeBoxnak"
+
+#: views/admin/shared/function_editor.php:56
+msgid "Revert to Functions File"
+msgstr "Visszaállítás a függvényfájlra"
+
+#: views/admin/shared/function_editor.php:58
+msgid ""
+"WPCodeBox is not active. Click 'Revert to Functions File' to attempt to "
+"restore the previous functions file. Alternatively, activate WPCodeBox for "
+"continued use."
+msgstr "A WPCodeBox nem aktív. Kattintson a „Visszaállítás a függvényfájlra” gombra az előző függvényfájl visszaállításának megkísérléséhez. Alternatívaként aktiválja a WPCodeBoxot a további használathoz."
+
+#: views/admin/shared/function_editor.php:60
+msgid ""
+"Click 'Revert to Functions File' to stop using WPCodeBox and restore your "
+"local functions file."
+msgstr ""
+"Kattintson a „Visszatérés a Functions fájlhoz” lehetőségre, ha nem szeretné "
+"tovább használni a WPCodeBoxot, és vissza szeretné állítani a helyi "
+"functions fájlt."
+
+#: wp-all-export-pro.php:35
+msgid ""
+"Please de-activate and remove the free version of the WP All Export before "
+"activating the paid version."
+msgstr "Kérjük, kapcsolja ki és távolítsa el a WP All Export ingyenes verzióját, mielőtt bekapcsolja a fizetős verziót."
+
+#: wp-all-export-pro.php:498 wp-all-export-pro.php:502
+#, php-format
+msgid "Uploads folder %s must be writable"
+msgstr "A feltöltési mappának (%s) írhatónak kell lennie"
+
+#: wp-all-export-pro.php:506
+msgid ""
+"<strong style=\"font-size:16px\">WP All Export Pro requires the User Export "
+"Add-On Pro</strong><p>Your User and Customer exports will not be able to run"
+" until you install the User Export Add-On Pro for WP All Export Pro. That "
+"add-on has been added to all customer accounts which had a WP All Export "
+"license before this requirement, free of charge.</p>"
+msgstr "<strong style=\"font-size:16px\">A WP All Export Pro használatához szükséges a User Export Add-On Pro</strong><p>A felhasználói és vásárlói exportálások addig nem futtathatók, amíg nem telepíti a User Export Add-On Pro bővítményt a WP All Export Pro bővítményhez. Ezt a kiegészítőt díjmentesen hozzáadtuk minden olyan vásárlói fiókhoz, amely a követelmény bevezetése előtt rendelkezett WP All Export-licenccel.</p>"
+
+#: wp-all-export-pro.php:507 wp-all-export-pro.php:510
+#: wp-all-export-pro.php:515 wp-all-export-pro.php:520
+msgid "Download Add-On"
+msgstr "Kiegészítő letöltése"
+
+#: wp-all-export-pro.php:509
+msgid ""
+"<strong style=\"font-size:16px\">WP All Export Pro requires the User Export "
+"Add-On Pro for Customer exports</strong><p>Your WooCommerce Customer exports"
+" will not be able to run until you install the User Export Add-On Pro for WP"
+" All Export Pro. That add-on has been added to all customer accounts which "
+"had a WP All Export license before this requirement, free of charge.</p>"
+msgstr "<strong style=\"font-size:16px\">A WP All Export Pro vásárlói exportálásaihoz szükséges a User Export Add-On Pro</strong><p>A WooCommerce-vásárlói exportálások addig nem futtathatók, amíg nem telepíti a User Export Add-On Pro bővítményt a WP All Export Pro bővítményhez. Ezt a kiegészítőt díjmentesen hozzáadtuk minden olyan vásárlói fiókhoz, amely a követelmény bevezetése előtt rendelkezett WP All Export-licenccel.</p>"
+
+#: wp-all-export-pro.php:514
+msgid ""
+"<strong style=\"font-size:16px\">WP All Export Pro requires the WooCommerce "
+"Export Add-On Pro</strong><p>Your Products, Orders, Reviews and Coupons "
+"exports will not be able to run until you install the WooCommerce Export "
+"Add-On Pro for WP All Export Pro. That add-on has been added to all customer"
+" accounts which had a WP All Export license before this requirement, free of"
+" charge.</p>"
+msgstr "<strong style=\"font-size:16px\">A WP All Export Pro használatához szükséges a WooCommerce Export Add-On Pro</strong><p>A termékek, rendelések, értékelések és kuponok exportálásai addig nem futtathatók, amíg nem telepíti a WooCommerce Export Add-On Pro bővítményt a WP All Export Pro bővítményhez. Ezt a kiegészítőt díjmentesen hozzáadtuk minden olyan vásárlói fiókhoz, amely a követelmény bevezetése előtt rendelkezett WP All Export-licenccel.</p>"
+
+#: wp-all-export-pro.php:519
+msgid ""
+"<strong style=\"font-size:16px\">WP All Export Pro requires the ACF Export "
+"Add-On Pro</strong><p>Exports that contain ACF fields will not be able to "
+"run until you install the ACF Export Add-On Pro for WP All Export Pro. That "
+"add-on has been added to all customer accounts which had a WP All Export "
+"license before this requirement, free of charge.</p>"
+msgstr "<strong style=\"font-size:16px\">A WP All Export Pro használatához szükséges az ACF Export Add-On Pro</strong><p>Az ACF-mezőket tartalmazó exportálások addig nem futtathatók, amíg nem telepíti az ACF Export Add-On Pro bővítményt a WP All Export Pro bővítményhez. Ezt a kiegészítőt díjmentesen hozzáadtuk minden olyan vásárlói fiókhoz, amely a követelmény bevezetése előtt rendelkezett WP All Export-licenccel.</p>"

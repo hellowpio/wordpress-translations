@@ -9,9 +9,10 @@ Hibák (kilépési kód 1):
              vagy a Tone nem egyezik a mappával (formal / informal)
   fajlnev    az lw-translate fájlnév-szabálya sérül: a csomag mappája
              <tone>/<plugins|themes>/<locale>/<mappa>/, benne csak
-             ^<mappa>-<locale>(\.mo|\.po|-[0-9a-f]{32}\.json)$ (és a gitben nem szereplő
-             <mappa>-<locale>.l10n.php, .gitkeep); a .po mellől nem hiányozhat a
-             <mappa>-<locale>.mo; .mo vagy .json nem lehet .po nélkül
+             ^<név>-<locale>(\.mo|\.po|-[0-9a-f]{32}\.json)$ (és a gitben nem szereplő
+             <név>-<locale>.l10n.php, .gitkeep), ahol a <név> a <mappa> vagy a .po
+             `X-Domain` fejléce (a text domain, ezt tölti be a WordPress); a .po mellől
+             nem hiányozhat az azonos nevű .mo; .mo vagy .json nem lehet azonos nevű .po nélkül
 
 Figyelmeztetés (nem hiba):
   szotar     egy `translation-glossary.json` tétel (csak a "forras": "kezi" tételek)
@@ -219,10 +220,24 @@ KINDS = ('plugins', 'themes')
 IGNORED_NAMES = ('.gitkeep', '.DS_Store')
 
 
+DOMAIN_HEADER = re.compile(r'^"X-Domain:\s*([^"\\]*?)\s*\\n"', re.M)
+
+
+def po_domain(path):
+    """A .po `X-Domain` fejléce (a text domain), vagy None."""
+    try:
+        with open(path, encoding='utf-8', errors='replace') as fh:
+            m = DOMAIN_HEADER.search(fh.read(8192))
+    except OSError:
+        return None
+    return m.group(1) if m and m.group(1) else None
+
+
 def check_names(directory):
     """Az lw-translate fájlnév-szabálya egy mappára. A mappa a csomagmappa
     (<tone>/<plugins|themes>/<locale>/<mappa>), vagy bármely más mappa a formal/ és informal/
-    alatt: ott a .gitkeep-en kívül nem lehet fájl. Visszaad: [(fájl relatív útja, üzenet)]."""
+    alatt: ott a .gitkeep-en kívül nem lehet fájl. A fájlnév előtagja a <mappa>, vagy a .po
+    X-Domain fejléce (a text domain). Visszaad: [(fájl relatív útja, üzenet)]."""
     errors = []
     rel = os.path.relpath(directory, ROOT)
     parts = rel.split(os.sep)
@@ -238,19 +253,32 @@ def check_names(directory):
             errors.append((os.path.join(rel, n), 'a fájl nem <tone>/<plugins|themes>/<locale>/<mappa>/ alatt van'))
         return errors
     folder, locale = parts[3], parts[2]
-    base = re.escape('{}-{}'.format(folder, locale))
-    rule = re.compile(r'^' + base + r'(\.mo|\.po|-[0-9a-f]{32}\.json)$')
-    local_only = re.compile(r'^' + base + r'\.l10n\.php$')  # a gitben nincs, helyben megmaradhat
-    expected = '{}-{}'.format(folder, locale)
+    suffix = re.compile(r'^(.+)-' + re.escape(locale) + r'(\.mo|\.po|-[0-9a-f]{32}\.json|\.l10n\.php)$')
+    # a .po-k előtagja: a mappa, vagy a saját X-Domain fejléce
+    po_bases = set()
     for n in names:
-        if not rule.match(n) and not local_only.match(n):
+        m = suffix.match(n)
+        if not m or m.group(2) != '.po':
+            continue
+        base, domain = m.group(1), po_domain(os.path.join(directory, n))
+        if base == folder or base == domain:
+            po_bases.add(base)
+        else:
+            errors.append((os.path.join(rel, n), 'a .po neve nem {0}-{1}.po és nem <X-Domain>-{1}.po '
+                           '(X-Domain: {2})'.format(folder, locale, domain or 'nincs')))
+    allowed = sorted({folder} | po_bases)
+    for n in names:
+        m = suffix.match(n)
+        if not m or m.group(1) not in allowed:
             errors.append((os.path.join(rel, n), 'a fájlnév nem illik a szabályra: '
-                           '^{0}(\\.mo|\\.po|-[0-9a-f]{{32}}\\.json)$'.format(expected)))
-    pos = [n for n in names if n.endswith('.po')]
-    if pos and expected + '.mo' not in names:
-        errors.append((os.path.join(rel, pos[0]), 'hiányzik a .po mellől: {}.mo (scripts/build.py)'.format(expected)))
-    if not pos and any(n.endswith(('.mo', '.json')) for n in names):
-        errors.append((os.path.join(rel, names[0]), 'a mappában nincs .po, de van .mo vagy .json'))
+                           '^({0})-{1}(\\.mo|\\.po|-[0-9a-f]{{32}}\\.json)$'.format(
+                               '|'.join(re.escape(a) for a in allowed), locale)))
+        elif m.group(2) != '.po' and m.group(1) not in po_bases:
+            errors.append((os.path.join(rel, n), 'nincs mellette azonos nevű .po: {}-{}.po'.format(m.group(1), locale)))
+    for base in sorted(po_bases):
+        if '{}-{}.mo'.format(base, locale) not in names:
+            errors.append((os.path.join(rel, '{}-{}.po'.format(base, locale)),
+                           'hiányzik a .po mellől: {}-{}.mo (scripts/build.py)'.format(base, locale)))
     return errors
 
 

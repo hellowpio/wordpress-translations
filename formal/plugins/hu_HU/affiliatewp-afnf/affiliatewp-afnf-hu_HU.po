@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the AffiliateWP - Affiliate Forms For Ninja Forms plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: AffiliateWP - Affiliate Forms For Ninja Forms 1.2.2\n"
+"Project-Id-Version: AffiliateWP - Affiliate Forms For Ninja Forms 1.2.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/affiliatewp-affiliate-forms-ninja-forms\n"
 "POT-Creation-Date: 2026-10-31T07:12:43+00:00\n"
-"PO-Revision-Date: 2026-10-31 19:26+0100\n"
+"PO-Revision-Date: 2026-10-31 22:15+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hu_HU\n"
@@ -17,371 +17,457 @@ msgstr ""
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Plugin-Name: AffiliateWP - Affiliate Forms For Ninja Forms\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.2.2\n"
+"X-Plugin-Version: 1.2.3\n"
 
-#. Plugin Name of the plugin
-#: affiliatewp-affiliate-forms-ninja-forms.php
-msgid "AffiliateWP - Affiliate Forms For Ninja Forms"
-msgstr "AffiliateWP - Affiliate Forms For Ninja Forms"
-
-#. Plugin URI of the plugin
-#: affiliatewp-affiliate-forms-ninja-forms.php
-msgid "https://affiliatewp.com/addons/affiliate-forms-for-ninja-forms/"
-msgstr "https://affiliatewp.com/addons/affiliate-forms-for-ninja-forms/"
-
-#. Description of the plugin
-#: affiliatewp-affiliate-forms-ninja-forms.php
-msgid "Create an affiliate registration form using Ninja Forms"
-msgstr "Partnerregisztrációs űrlap létrehozása a Ninja Forms használatával"
-
-#. Author of the plugin
-#: affiliatewp-affiliate-forms-ninja-forms.php
-#: includes/class-affiliatewp-affiliate-forms-ninja-forms.php:293
-msgid "AffiliateWP"
-msgstr "AffiliateWP"
-
-#. Author URI of the plugin
-#: affiliatewp-affiliate-forms-ninja-forms.php
-msgid "https://affiliatewp.com"
-msgstr "https://affiliatewp.com"
-
-#: affiliatewp-affiliate-forms-ninja-forms.php:198
-msgid "AffiliateWP - Affiliate Forms for Ninja Forms Requirements"
-msgstr "AffiliateWP - Affiliate Forms for Ninja Forms – követelmények"
-
-#: deprecated/admin.php:55 deprecated/admin.php:83 includes/admin.php:38
+#: ../deprecated/admin.php:55 ../deprecated/admin.php:83
+#: ../includes/admin.php:66 ../includes/admin.php:106
 msgid "View Submission"
 msgstr "Beküldés megtekintése"
 
-#: deprecated/admin.php:86
+#: ../deprecated/admin.php:86 ../includes/admin.php:111
 msgid ""
 "This links to the information the affiliate submitted when they registered."
-msgstr "Ez a hivatkozás a partner által a regisztrációkor megadott adatokra mutat."
+msgstr ""
+"Ez a hivatkozás a partner által a regisztrációkor megadott adatokra mutat."
 
-#: deprecated/admin.php:126 deprecated/admin.php:137
+#: ../deprecated/admin.php:126 ../deprecated/admin.php:137
 msgid "Use this form for affiliate registration"
 msgstr "Az űrlap használata partnerregisztrációhoz"
 
-#: deprecated/admin.php:127
+#: ../deprecated/admin.php:127
 #, php-format
 msgid "Form %s is the affiliate registration form."
 msgstr "A(z) %s jelű űrlap a partnerregisztrációs űrlap."
 
-#: deprecated/class-register.php:58 deprecated/class-register.php:86
+#: ../deprecated/class-register.php:58 ../deprecated/class-register.php:86
 msgid "This form requires an Email field"
 msgstr "Ehhez az űrlaphoz e-mail cím mező szükséges"
 
-#: deprecated/class-register.php:130
+#: ../deprecated/class-register.php:130
 msgid "This is a required field"
 msgstr "Ez egy kötelező mező"
 
-#: deprecated/class-register.php:135
+#: ../deprecated/class-register.php:135
 msgid "This email address is already in use"
 msgstr "Ez az e-mail cím már használatban van"
 
-#: deprecated/class-register.php:140
+#: ../deprecated/class-register.php:140
 msgid "This username is already in use"
 msgstr "Ez a felhasználónév már használatban van"
 
-#: deprecated/email-tags.php:63 includes/email-tags.php:43
+#: ../deprecated/email-tags.php:63 ../includes/email-tags.php:43
 msgid "Create AffiliateWP email tag"
 msgstr "AffiliateWP e-mail címke létrehozása"
 
-#: deprecated/fields.php:26
+#: ../deprecated/emails.php:35
+msgid "Your login details"
+msgstr "Az Ön belépési adatai"
+
+#: ../deprecated/emails.php:40
+#, php-format
+msgid "Hi %s!"
+msgstr "Üdvözöljük, %s!"
+
+#: ../deprecated/emails.php:41
+#, php-format
+msgid "Your username is: %s"
+msgstr "Felhasználóneve: %s"
+
+#: ../deprecated/emails.php:42
+#, php-format
+msgid "Your password is: %s"
+msgstr "Az Ön jelszava: %s"
+
+#: ../deprecated/emails.php:43
+#, php-format
+msgid "Log into your affiliate area at %s"
+msgstr "Lépjen be partneri felületére itt: %s"
+
+#: ../deprecated/fields.php:26
 msgid "AffiliateWP Fields"
 msgstr "AffiliateWP-mezők"
 
-#: deprecated/fields/payment-email.php:13
-#: includes/fields/class-payment-email.php:26
+#: ../deprecated/fields/payment-email.php:13
+#: ../includes/fields/class-payment-email.php:26
 msgid "Payment Email"
 msgstr "Fizetési e-mail cím"
 
-#: deprecated/fields/payment-email.php:54
+#: ../deprecated/fields/payment-email.php:54
 msgid "Please enter a valid payment email"
 msgstr "Kérjük, adjon meg érvényes fizetési e-mail címet"
 
-#: deprecated/fields/promotion-method.php:13
+#: ../deprecated/fields/promotion-method.php:13
 msgid "Promo Method"
 msgstr "Promóciós módszer"
 
-#: deprecated/fields/promotion-method.php:14
-#: includes/fields/class-promotion-method.php:38
+#: ../deprecated/fields/promotion-method.php:14
+#: ../includes/fields/class-promotion-method.php:38
 msgid "Promotion Method"
 msgstr "Promóciós módszer"
 
-#: deprecated/fields/username.php:13 includes/class-register.php:159
-#: includes/fields/class-affiliate-username.php:23
+#: ../deprecated/fields/username.php:13 ../includes/class-register.php:159
+#: ../includes/fields/class-affiliate-username.php:23
 msgid "Username"
 msgstr "Felhasználónév"
 
-#: deprecated/fields/website-url.php:13
-#: includes/fields/class-website-url.php:29
+#: ../deprecated/fields/website-url.php:13
+#: ../includes/fields/class-website-url.php:29
 msgid "Website URL"
 msgstr "Honlap URL"
 
-#: deprecated/fields/website-url.php:51
+#: ../deprecated/fields/website-url.php:51
 msgid "Please enter a valid website URL"
 msgstr "Kérjük, adjon meg egy érvényes honlap-URL-t"
 
-#: deprecated/load-deprecated.php:110 deprecated/load-deprecated.php:122
-#: includes/class-affiliatewp-affiliate-forms-ninja-forms.php:126
-#: includes/class-affiliatewp-affiliate-forms-ninja-forms.php:138
+#: ../deprecated/load-deprecated.php:110 ../deprecated/load-deprecated.php:122
+#: ../includes/class-affiliatewp-affiliate-forms-ninja-forms.php:116
+#: ../includes/class-affiliatewp-affiliate-forms-ninja-forms.php:128
 msgid "Cheatin&#8217; huh?"
 msgstr "Ez nem megengedett."
 
-#: deprecated/load-deprecated.php:292
-#: includes/class-affiliatewp-affiliate-forms-ninja-forms.php:313
+#: ../deprecated/load-deprecated.php:292
+#: ../includes/class-affiliatewp-affiliate-forms-ninja-forms.php:303
 msgid "Get more add-ons for AffiliateWP"
 msgstr "További AffiliateWP-kiegészítők beszerzése"
 
-#: deprecated/load-deprecated.php:292
-#: includes/class-affiliatewp-affiliate-forms-ninja-forms.php:313
+#: ../deprecated/load-deprecated.php:292
+#: ../includes/class-affiliatewp-affiliate-forms-ninja-forms.php:303
 msgid "Get add-ons"
 msgstr "Kiegészítők beszerzése"
 
-#: includes/admin.php:34
-msgid "Ninja Forms Submission"
-msgstr "Ninja Forms-beküldés"
-
-#: includes/admin.php:39
-msgid "The complete submission submitted during affiliate registration."
-msgstr "A partnerregisztráció során beküldött teljes űrlap."
-
-#: includes/admin.php:61
+#: ../includes/admin.php:132
 msgid "Ninja Forms"
 msgstr "Ninja Forms"
 
-#: includes/admin.php:80
+#: ../includes/admin.php:151
 msgid "Select affiliate registration form"
 msgstr "Partnerregisztrációs űrlap kiválasztása"
 
-#: includes/admin.php:81
+#: ../includes/admin.php:152
 msgid ""
 "Select the Ninja Forms registration form to use for affiliate registration."
-msgstr "Válassza ki a partnerregisztrációhoz használni kívánt Ninja Forms-regisztrációs űrlapot."
+msgstr ""
+"Válassza ki a partnerregisztrációhoz használni kívánt Ninja Forms-"
+"regisztrációs űrlapot."
 
-#: includes/class-activation-ninja-forms.php:47
+#: ../includes/class-activation-ninja-forms.php:47
+#: ../includes/lib/affwp/class-affiliatewp-activation.php:81
 msgid "This plugin"
 msgstr "Ez a bővítmény"
 
-#: includes/class-activation-ninja-forms.php:83
+#: ../includes/class-activation-ninja-forms.php:83
+#: ../includes/lib/affwp/class-affiliatewp-activation.php:115
 #, php-format
-msgid "%1$s requires %2$s. Please activate it to continue."
-msgstr "A(z) %1$s működéséhez szükség van a(z) %2$s bővítményre. Kérjük, kapcsolja be a folytatáshoz."
+msgid "%s requires %s. Please activate it to continue."
+msgstr "A(z) %s használatához szükséges a(z) %s. Kérjük, a folytatáshoz kapcsolja be."
 
-#: includes/class-activation-ninja-forms.php:85
+#: ../includes/class-activation-ninja-forms.php:86
+#: ../includes/lib/affwp/class-affiliatewp-activation.php:118
 #, php-format
-msgid "%1$s requires %2$s. Please install it to continue."
-msgstr "A(z) %1$s működéséhez szükség van a(z) %2$s bővítményre. Kérjük, telepítse a folytatáshoz."
+msgid "%s requires %s. Please install it to continue."
+msgstr "A(z) %s használatához szükséges a(z) %s. Kérjük, a folytatáshoz telepítse."
 
-#: includes/class-affiliatewp-affiliate-forms-ninja-forms.php:337
+#: ../includes/class-affiliatewp-affiliate-forms-ninja-forms.php:283
+msgid "AffiliateWP"
+msgstr "AffiliateWP"
+
+#: ../includes/class-affiliatewp-affiliate-forms-ninja-forms.php:327
 msgid "Affiliate Area URL"
 msgstr "Partnerterület URL-je"
 
-#: includes/class-affiliatewp-affiliate-forms-ninja-forms.php:423
+#: ../includes/class-affiliatewp-affiliate-forms-ninja-forms.php:413
 msgid "Affiliate registration requires a valid email address"
 msgstr "A partnerregisztrációhoz érvényes e-mail cím szükséges"
 
-#: includes/class-affiliatewp-affiliate-forms-ninja-forms.php:424
+#: ../includes/class-affiliatewp-affiliate-forms-ninja-forms.php:414
 msgid "Email address already in use. Please choose a different email address"
-msgstr "Az e-mail cím már használatban van. Kérjük, válasszon másik e-mail címet"
+msgstr ""
+"Az e-mail cím már használatban van. Kérjük, válasszon másik e-mail címet"
 
-#: includes/class-affiliatewp-affiliate-forms-ninja-forms.php:425
+#: ../includes/class-affiliatewp-affiliate-forms-ninja-forms.php:415
 msgid "Affiliate registration requires a valid username"
 msgstr "A partnerregisztrációhoz érvényes felhasználónév szükséges"
 
-#: includes/class-affiliatewp-affiliate-forms-ninja-forms.php:426
+#: ../includes/class-affiliatewp-affiliate-forms-ninja-forms.php:416
 msgid ""
 "Affiliate registration forms requires a valid email field. It is also "
 "recommended to add a username field. Return to the form and add the missing "
 "required field, or contact the site administrator."
-msgstr "A partnerregisztrációs űrlaphoz érvényes e-mail cím mező szükséges. Javasoljuk továbbá egy felhasználónévmező hozzáadását. Térjen vissza az űrlaphoz, és adja hozzá a hiányzó kötelező mezőt, vagy forduljon a webhely adminisztrátorához."
+msgstr ""
+"A partnerregisztrációs űrlaphoz érvényes e-mail cím mező szükséges. "
+"Javasoljuk továbbá egy felhasználónévmező hozzáadását. Térjen vissza az "
+"űrlaphoz, és adja hozzá a hiányzó kötelező mezőt, vagy forduljon a webhely "
+"adminisztrátorához."
 
-#: includes/class-affiliatewp-affiliate-forms-ninja-forms.php:427
+#: ../includes/class-affiliatewp-affiliate-forms-ninja-forms.php:417
 msgid ""
 "Affiliate registration forms require a valid email field. Return to the form"
 " and add the missing email field, or contact the site administrator."
-msgstr "A partnerregisztrációs űrlaphoz érvényes e-mail cím mező szükséges. Térjen vissza az űrlaphoz, és adja hozzá a hiányzó e-mail cím mezőt, vagy forduljon a webhely adminisztrátorához."
+msgstr ""
+"A partnerregisztrációs űrlaphoz érvényes e-mail cím mező szükséges. Térjen "
+"vissza az űrlaphoz, és adja hozzá a hiányzó e-mail cím mezőt, vagy forduljon"
+" a webhely adminisztrátorához."
 
-#: includes/class-affiliatewp-affiliate-forms-ninja-forms.php:428
+#: ../includes/class-affiliatewp-affiliate-forms-ninja-forms.php:418
 msgid ""
 "Affiliate registration forms require a valid username field. Please enter "
 "your desired username."
-msgstr "A partnerregisztrációs űrlaphoz érvényes felhasználónévmező szükséges. Kérjük, adja meg a kívánt felhasználónevet."
+msgstr ""
+"A partnerregisztrációs űrlaphoz érvényes felhasználónévmező szükséges. "
+"Kérjük, adja meg a kívánt felhasználónevet."
 
-#: includes/class-affiliatewp-affiliate-forms-ninja-forms.php:429
+#: ../includes/class-affiliatewp-affiliate-forms-ninja-forms.php:419
 msgid "Please provide an email address."
 msgstr "Kérjük, adjon meg egy e-mail címet."
 
-#. translators: %d - field ID.
-#: includes/class-affiliatewp-affiliate-forms-ninja-forms.php:551
-#, php-format
-msgid "Field ID #%d"
-msgstr "Mezőazonosító #%d"
-
-#: includes/class-register.php:103
+#: ../includes/class-register.php:103
 msgid "Affiliate Registration"
 msgstr "Partnerregisztráció"
 
-#: includes/class-register.php:133
+#: ../includes/class-register.php:133
 #, php-format
 msgid ""
 "An affiliate registration form is already in use. This can be changed on the"
 " <a href=\"%1$s\" alt=\"%2$s\">AffiliateWP add-on settings screen.</a>."
-msgstr "Már használatban van egy partnerregisztrációs űrlap. Ez az <a href=\"%1$s\" alt=\"%2$s\">AffiliateWP kiegészítő beállításainak oldalán</a> módosítható."
+msgstr ""
+"Már használatban van egy partnerregisztrációs űrlap. Ez az <a href=\"%1$s\" "
+"alt=\"%2$s\">AffiliateWP kiegészítő beállításainak oldalán</a> módosítható."
 
-#: includes/class-register.php:135
-msgid "An affiliate registration form is already in use."
-msgstr "Már használatban van egy partnerregisztrációs űrlap."
-
-#: includes/class-register.php:150
+#: ../includes/class-register.php:150
 msgid "Automatically log in the affiliate after registration?"
 msgstr "Automatikus bejelentkezés a partner számára regisztráció után?"
 
-#: includes/class-register.php:172
+#: ../includes/class-register.php:172
 msgid "First name"
 msgstr "Keresztnév"
 
-#: includes/class-register.php:184
+#: ../includes/class-register.php:184
 msgid "Last name"
 msgstr "Vezetéknév"
 
-#: includes/class-register.php:196
+#: ../includes/class-register.php:196
 msgid "Email Address"
 msgstr "E-mail cím"
 
-#: includes/class-register.php:199
+#: ../includes/class-register.php:199
 msgid ""
 "Specify a field to use that will be the primary account email address that "
 "your affiliates will use for their account. This email will also receive "
 "affiliate notifications, if enabled."
-msgstr "Adja meg azt a mezőt, amely a partnerek fiókjának elsődleges e-mail címét tartalmazza. Ez az e-mail cím kapja meg a partnerértesítéseket is, ha azok be vannak kapcsolva."
+msgstr ""
+"Adja meg azt a mezőt, amely a partnerek fiókjának elsődleges e-mail címét "
+"tartalmazza. Ez az e-mail cím kapja meg a partnerértesítéseket is, ha azok "
+"be vannak kapcsolva."
 
-#: includes/class-register.php:208
+#: ../includes/class-register.php:208
 msgid "Payment Email Address"
 msgstr "Fizetési e-mail-cím"
 
-#: includes/class-register.php:211
+#: ../includes/class-register.php:211
 msgid ""
 "Specify a field to use as the payment email address for your affiliates. "
 "This email address will be used to process AffiliateWP affiliate payouts."
-msgstr "Adja meg azt a mezőt, amely a partnerek fizetési e-mail címét tartalmazza. Ezt az e-mail címet használja a rendszer az AffiliateWP partnerkifizetéseinek feldolgozásához."
+msgstr ""
+"Adja meg azt a mezőt, amely a partnerek fizetési e-mail címét tartalmazza. "
+"Ezt az e-mail címet használja a rendszer az AffiliateWP "
+"partnerkifizetéseinek feldolgozásához."
 
-#: includes/class-register.php:221
+#: ../includes/class-register.php:221
 msgid "Password"
 msgstr "Jelszó"
 
-#: includes/class-register.php:224
+#: ../includes/class-register.php:224
 msgid ""
 "Specify a field to use as the password that your affiliates will use to log "
 "in to their affiliate account. The affiliate password field can be found in "
 "the AffiliateWP section of the Form Fields tab."
-msgstr "Adja meg azt a mezőt, amelyben a partnerek a partnerfiókjukba való bejelentkezéshez szükséges jelszót adják meg. A partner jelszómezője az űrlapmezők fülén, az AffiliateWP szakaszban található."
+msgstr ""
+"Adja meg azt a mezőt, amelyben a partnerek a partnerfiókjukba való "
+"bejelentkezéshez szükséges jelszót adják meg. A partner jelszómezője az "
+"űrlapmezők fülén, az AffiliateWP szakaszban található."
 
-#: includes/class-register.php:233
+#: ../includes/class-register.php:233
 msgid "Promotion method"
 msgstr "Promóciós módszer"
 
-#: includes/class-register.php:236
+#: ../includes/class-register.php:236
 msgid ""
 "Specify a field to use as the promotion method. The promotion method field "
 "can be found in the AffiliateWP section of the Form Fields tab."
-msgstr "Adja meg azt a mezőt, amelyet promóciós módszerként kell használni. A promóciós módszer mezője az űrlapmezők fülén, az AffiliateWP szakaszban található."
+msgstr ""
+"Adja meg azt a mezőt, amelyet promóciós módszerként kell használni. A "
+"promóciós módszer mezője az űrlapmezők fülén, az AffiliateWP szakaszban "
+"található."
 
-#: includes/class-register.php:247
+#: ../includes/class-register.php:247
 msgid "Affiliate website url"
 msgstr "Partner honlapjának URL-je"
 
-#: includes/class-register.php:250
+#: ../includes/class-register.php:250
 msgid ""
 "Specify a field to use for the affiliate website url. The affiliate website "
 "url field can be found in the AffiliateWP section of the Form Fields tab."
-msgstr "Adja meg a partner honlapjának URL-jéhez használandó mezőt. A partner honlapjának URL-mezője az űrlapmezők fülén, az AffiliateWP szakaszban található."
+msgstr ""
+"Adja meg a partner honlapjának URL-jéhez használandó mezőt. A partner "
+"honlapjának URL-mezője az űrlapmezők fülén, az AffiliateWP szakaszban "
+"található."
 
-#: includes/class-register.php:268
+#: ../includes/class-register.php:268
 msgid "An affiliate registration form is already in use"
 msgstr "Már használatban van egy partnerregisztrációs űrlap"
 
-#: includes/class-register.php:272
+#: ../includes/class-register.php:272
 msgid ""
 "An affiliate registration form is already in use on this site. Only one "
 "affiliate registration form can be used at a time."
-msgstr "Ezen a webhelyen már használatban van egy partnerregisztrációs űrlap. Egyszerre csak egy partnerregisztrációs űrlap használható."
+msgstr ""
+"Ezen a webhelyen már használatban van egy partnerregisztrációs űrlap. "
+"Egyszerre csak egy partnerregisztrációs űrlap használható."
 
-#: includes/class-register.php:335
+#: ../includes/class-register.php:335
 msgid "A username, account email or payment email field must be included."
-msgstr "A felhasználónévmezőnek, a fiókhoz tartozó e-mail-cím mezőnek vagy a fizetési e-mail-cím mezőnek szerepelnie kell az űrlapon."
+msgstr ""
+"A felhasználónévmezőnek, a fiókhoz tartozó e-mail-cím mezőnek vagy a "
+"fizetési e-mail-cím mezőnek szerepelnie kell az űrlapon."
 
-#: includes/class-register.php:336
+#: ../includes/class-register.php:336
 msgid ""
 "The email address entered is already in use. Please select an alternate "
 "email address"
-msgstr "A megadott e-mail cím már használatban van. Kérjük, válasszon másik e-mail címet"
+msgstr ""
+"A megadott e-mail cím már használatban van. Kérjük, válasszon másik e-mail "
+"címet"
 
-#: includes/class-register.php:337
+#: ../includes/class-register.php:337
 msgid ""
 "The username entered is already in use by an affiliate. Please select an "
 "alternate username"
-msgstr "A megadott felhasználónevet már használja egy partner. Kérjük, válasszon másik felhasználónevet"
+msgstr ""
+"A megadott felhasználónevet már használja egy partner. Kérjük, válasszon "
+"másik felhasználónevet"
 
-#: includes/class-register.php:338
+#: ../includes/class-register.php:338
 msgid "An affiliate registration form must contain a valid email field."
-msgstr "A partnerregisztrációs űrlapnak érvényes e-mail-cím mezőt kell tartalmaznia."
+msgstr ""
+"A partnerregisztrációs űrlapnak érvényes e-mail-cím mezőt kell tartalmaznia."
 
-#: includes/class-register.php:339
+#: ../includes/class-register.php:339
 msgid ""
 "A WP Error object occurred; likely the result of an invalid or missing user "
 "ID."
-msgstr "WP Error objektum keletkezett; valószínűleg hibás vagy hiányzó felhasználói azonosító (ID) miatt."
+msgstr ""
+"WP Error objektum keletkezett; valószínűleg hibás vagy hiányzó felhasználói "
+"azonosító (ID) miatt."
 
-#: includes/class-register.php:340
+#: ../includes/class-register.php:340
 msgid "The user ID integer is empty."
 msgstr "A felhasználói azonosító (ID) egész szám értéke üres."
 
-#: includes/class-register.php:720
+#: ../includes/class-register.php:720
 msgid "The user account could not be created."
 msgstr "A felhasználói fiókot nem sikerült létrehozni."
 
-#: includes/email-tags.php:47
+#: ../includes/email-tags.php:47
 msgid "Allow this field to be used as an email tag in AffiliateWP emails."
-msgstr "Engedélyezze, hogy ezt a mezőt e-mail címkeként használja az AffiliateWP e-mailjeiben."
+msgstr ""
+"Engedélyezze, hogy ezt a mezőt e-mail címkeként használja az AffiliateWP "
+"e-mailjeiben."
 
-#: includes/fields/class-affiliate-username.php:68 includes/functions.php:667
+#: ../includes/fields/class-affiliate-username.php:68
+#: ../includes/functions.php:667
 msgid ""
 "You are already logged in and the submitted username does not match your "
 "account."
-msgstr "Már be van jelentkezve, és a megadott felhasználónév nem egyezik a fiókjában szereplővel."
+msgstr ""
+"Már be van jelentkezve, és a megadott felhasználónév nem egyezik a fiókjában"
+" szereplővel."
 
-#: includes/fields/class-affiliate-username.php:73 includes/functions.php:674
+#: ../includes/fields/class-affiliate-username.php:73
+#: ../includes/functions.php:674
 msgid ""
 "The submitted username is already registered. Log in or choose a different "
 "username."
-msgstr "A megadott felhasználónév már regisztrálva van. Jelentkezzen be, vagy válasszon másik felhasználónevet."
+msgstr ""
+"A megadott felhasználónév már regisztrálva van. Jelentkezzen be, vagy "
+"válasszon másik felhasználónevet."
 
-#: includes/fields/class-affiliate-username.php:78 includes/functions.php:671
+#: ../includes/fields/class-affiliate-username.php:78
+#: ../includes/functions.php:671
 msgid ""
 "An affiliate account already exists for this username. Log in or choose a "
 "different username."
-msgstr "Már létezik partnerfiók ezzel a felhasználónévvel. Jelentkezzen be, vagy válasszon másik felhasználónevet."
+msgstr ""
+"Már létezik partnerfiók ezzel a felhasználónévvel. Jelentkezzen be, vagy "
+"válasszon másik felhasználónevet."
 
-#: includes/fields/class-payment-email.php:78 includes/functions.php:606
+#: ../includes/fields/class-payment-email.php:78 ../includes/functions.php:606
 msgid ""
 "You are already logged in and the submitted email does not match your "
 "account."
-msgstr "Már be van jelentkezve, és a megadott e-mail cím nem egyezik a fiókjában szereplővel."
+msgstr ""
+"Már be van jelentkezve, és a megadott e-mail cím nem egyezik a fiókjában "
+"szereplővel."
 
-#: includes/fields/class-payment-email.php:83 includes/functions.php:612
+#: ../includes/fields/class-payment-email.php:83 ../includes/functions.php:612
 msgid ""
 "The submitted email is already registered. Log in or choose a different "
 "email."
-msgstr "A megadott e-mail cím már regisztrálva van. Jelentkezzen be, vagy válasszon másik e-mail címet."
+msgstr ""
+"A megadott e-mail cím már regisztrálva van. Jelentkezzen be, vagy válasszon "
+"másik e-mail címet."
 
-#: includes/fields/class-payment-email.php:88 includes/functions.php:610
+#: ../includes/fields/class-payment-email.php:88 ../includes/functions.php:610
 msgid ""
 "An affiliate account already exists for this email. Log in or choose a "
 "different email."
-msgstr "Már létezik partnerfiók ezzel az e-mail címmel. Jelentkezzen be, vagy válasszon másik e-mail címet."
+msgstr ""
+"Már létezik partnerfiók ezzel az e-mail címmel. Jelentkezzen be, vagy "
+"válasszon másik e-mail címet."
 
-#: includes/functions.php:725
+#: ../includes/fields/class-promotion-method.php:44
+msgid "List the ways you'll be promoting."
+msgstr "Sorolja fel, milyen módokon fogja népszerűsíteni."
+
+#: ../includes/functions.php:725
 msgid "Please enter a valid email address!"
 msgstr "Kérjük, adjon meg egy érvényes e-mail címet!"
+
+#~ msgid "AffiliateWP - Affiliate Forms For Ninja Forms"
+#~ msgstr "AffiliateWP - Affiliate Forms For Ninja Forms"
+
+#~ msgid "https://affiliatewp.com/addons/affiliate-forms-for-ninja-forms/"
+#~ msgstr "https://affiliatewp.com/addons/affiliate-forms-for-ninja-forms/"
+
+#~ msgid "Create an affiliate registration form using Ninja Forms"
+#~ msgstr "Partnerregisztrációs űrlap létrehozása a Ninja Forms használatával"
+
+#~ msgid "https://affiliatewp.com"
+#~ msgstr "https://affiliatewp.com"
+
+#~ msgid "AffiliateWP - Affiliate Forms for Ninja Forms Requirements"
+#~ msgstr "AffiliateWP - Affiliate Forms for Ninja Forms – követelmények"
+
+#~ msgid "Ninja Forms Submission"
+#~ msgstr "Ninja Forms-beküldés"
+
+#~ msgid "The complete submission submitted during affiliate registration."
+#~ msgstr "A partnerregisztráció során beküldött teljes űrlap."
+
+#, php-format
+#~ msgid "%1$s requires %2$s. Please activate it to continue."
+#~ msgstr ""
+#~ "A(z) %1$s működéséhez szükség van a(z) %2$s bővítményre. Kérjük, kapcsolja "
+#~ "be a folytatáshoz."
+
+#, php-format
+#~ msgid "%1$s requires %2$s. Please install it to continue."
+#~ msgstr ""
+#~ "A(z) %1$s működéséhez szükség van a(z) %2$s bővítményre. Kérjük, telepítse a"
+#~ " folytatáshoz."
+
+#, php-format
+#~ msgid "Field ID #%d"
+#~ msgstr "Mezőazonosító #%d"
+
+#~ msgid "An affiliate registration form is already in use."
+#~ msgstr "Már használatban van egy partnerregisztrációs űrlap."

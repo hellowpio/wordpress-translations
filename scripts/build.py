@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 r"""A fordítások buildje: .po → .mo és .json a .po mellé (alapból), vagy release-csomag a dist/ alá.
 
-Alapmód (helyben): a .po mappájába `<mappa>-<locale>.mo` és `<mappa>-<locale>-<md5>.json`
+Alapmód (helyben): a .po mappájába `<név>-<locale>.mo` és `<név>-<locale>-<md5>.json`
 (`wp i18n make-mo`, `wp i18n make-json --no-purge`). Ezeket a fájlokat a main ágról tölti le az
 lw-translate bővítmény, ezért a gitben vannak; a fájlnév-szabály kötelező:
-`^<mappa>-<locale>(\.mo|\.po|-[0-9a-f]{32}\.json)$`. A termékek neve a .po nevét követi; ha a
-.po neve nem illik a szabályra, a build figyelmeztet (a scripts/check_po.py hibát ad). A csomag
-korábbi, most nem generált `<po-név>-<md5>.json` fájljait a build törli. A .l10n.php-t helyben
-nem készíti (az lw-translate a .mo-ból maga generálja, és nincs a gitben).
+`^<név>-<locale>(\.mo|\.po|-[0-9a-f]{32}\.json)$`, ahol a <név> a <mappa> vagy a .po `X-Domain`
+fejléce (a text domain). A termékek neve a .po nevét követi; ha a .po neve nem illik a szabályra, a
+build figyelmeztet (a scripts/check_po.py hibát ad). A csomag korábbi, most nem generált `<po-név>-<md5>.json`
+fájljait a build törli. A .l10n.php-t helyben nem készíti (az lw-translate a .mo-ból maga generálja, és nincs a gitben).
 
 --dist mód (a release-hez): a .po és a .mo, .l10n.php, .json csomagonként a
 dist/<tone>/<plugins|themes>/<locale>/<mappa>/ alá, plusz dist/stats.json (összesítés és
@@ -172,9 +172,18 @@ def stage_po(src, dst):
         fh.write(raw)
 
 
-def rule_name(d):
-    """A fájlnév-szabály szerinti alapnév: <mappa>-<locale> (az lw-translate ezt keresi)."""
-    return '{}-{}'.format(d[3], d[2])
+DOMAIN_HEADER = re.compile(r'^"X-Domain:\s*([^"\\]*?)\s*\\n"', re.M)
+
+
+def rule_names(f, d):
+    """A fájlnév-szabály szerinti alapnevek: <mappa>-<locale>, vagy <X-Domain>-<locale> (a .po text
+    domainje: ezt tölti be a WordPress; az lw-translate mindkettőt telepíti)."""
+    with open(f, encoding='utf-8', errors='replace') as fh:
+        m = DOMAIN_HEADER.search(fh.read(8192))
+    names = {'{}-{}'.format(d[3], d[2])}
+    if m and m.group(1):
+        names.add('{}-{}'.format(m.group(1), d[2]))
+    return names
 
 
 def build_in_place(batches, skipped):
@@ -192,7 +201,7 @@ def build_in_place(batches, skipped):
             produced = os.listdir(stage)
             for name, (f, d) in sorted(batch.items()):
                 base = name[:-3]
-                if base != rule_name(d):
+                if base not in rule_names(f, d):
                     bad_names.append(os.path.relpath(f, ROOT))
                 target = os.path.dirname(f)
                 new_json = sorted(p for p in produced
@@ -212,7 +221,8 @@ def build_in_place(batches, skipped):
     for s in skipped:
         print('kihagyva (nem <tone>/<plugins|themes>/<locale>/<mappa>/ alatt): ' + s)
     for b in bad_names:
-        print('figyelmeztetés: a .po neve nem <mappa>-<locale>.po (a termékek is a .po nevét kapják): ' + b)
+        print('figyelmeztetés: a .po neve nem <mappa>-<locale>.po és nem <X-Domain>-<locale>.po '
+              '(a termékek is a .po nevét kapják): ' + b)
     print('Kész (helyben): {} .mo, {} .json, {} elavult .json törölve.'.format(mo, js, removed))
     return 0
 
