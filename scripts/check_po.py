@@ -272,6 +272,10 @@ def all_po_files():
 
 def changed_dirs(ref):
     """A <ref> óta változott (törölt fájlt is beleértve) mappák a formal/ és informal/ alatt."""
+    if subprocess.run(['git', 'cat-file', '-e', ref + '^{commit}'], cwd=ROOT, capture_output=True).returncode:
+        # force-push után a push előtti commit már nincs meg: az utolsó commithoz mérünk
+        print('figyelmeztetés: {} nem található, a HEAD~1 óta változott mappákat nézem'.format(ref))
+        ref = 'HEAD~1'
     r = subprocess.run(['git', 'diff', '--name-status', '--diff-filter=ACMRD', ref, '--', 'formal', 'informal'],
                        cwd=ROOT, capture_output=True, text=True, check=True)
     utak = []
