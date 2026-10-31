@@ -16,7 +16,7 @@ on:
 jobs:
   po-ellenorzes:
     runs-on: ubuntu-latest
-    name: .po-ellenőrzés (msgfmt -c, helyőrzők, fejlécek)
+    name: .po-ellenőrzés (msgfmt -c, helyőrzők, fejlécek, fájlnevek, .mo a .po mellett)
 
     steps:
       - name: Checkout
@@ -36,7 +36,7 @@ jobs:
           BASE_REF: ${{ github.base_ref }}
           BEFORE: ${{ github.event.before }}
         run: |
-          # A meglévő hibák miatt csak a változott .po fájlok blokkolnak; kézi indításnál minden fájl.
+          # A meglévő hibák miatt csak a változott csomagmappák blokkolnak; kézi indításnál minden fájl.
           if [ "$EVENT" = "workflow_dispatch" ]; then
             python3 scripts/check_po.py --all
           elif [ "$EVENT" = "pull_request" ]; then

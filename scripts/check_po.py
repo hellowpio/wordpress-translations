@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""A .po fájlok ellenőrzése: msgfmt -c, helyőrzők, kötelező fejlécek, szótár.
+r"""A .po fájlok ellenőrzése: msgfmt -c, helyőrzők, kötelező fejlécek, fájlnevek, szótár.
 
 Hibák (kilépési kód 1):
   msgfmt     a `msgfmt -c` hibái
@@ -7,6 +7,11 @@ Hibák (kilépési kód 1):
              {név}; HTML-címkék) — a sorrend számít, ha nincs pozíció (%1$s)
   fejlec     hiányzik vagy üres az X-Plugin-Name / X-Plugin-Version / X-Plugin-Tone,
              vagy a Tone nem egyezik a mappával (formal / informal)
+  fajlnev    az lw-translate fájlnév-szabálya sérül: a csomag mappája
+             <tone>/<plugins|themes>/<locale>/<mappa>/, benne csak
+             ^<mappa>-<locale>(\.mo|\.po|-[0-9a-f]{32}\.json)$ (és a gitben nem szereplő
+             <mappa>-<locale>.l10n.php, .gitkeep); a .po mellől nem hiányozhat a
+             <mappa>-<locale>.mo; .mo vagy .json nem lehet .po nélkül
 
 Figyelmeztetés (nem hiba):
   szotar     egy `translation-glossary.json` tétel (csak a "forras": "kezi" tételek)
@@ -16,7 +21,8 @@ Figyelmeztetés (nem hiba):
 Használat:
   scripts/check_po.py <fájl.po>…              a megadott fájlok
   scripts/check_po.py --all                   minden .po a formal/ és informal/ alatt
-  scripts/check_po.py --changed-since <ref>   a <ref> óta változott .po fájlok (git diff)
+  scripts/check_po.py --changed-since <ref>   a <ref> óta változott csomagmappák (git diff; egy
+                                              .mo vagy .json változása is a csomag ellenőrzését jelenti)
   --glossary <fájl>                           más szótárfájl (alapból: translation-glossary.json)
   --no-warnings                               a szótár-figyelmeztetések kihagyása
   --summary                                   csak az összesítés, soronkénti lista nélkül
@@ -182,6 +188,53 @@ def check_file(path, glossary, warnings=True):
     return errors, warns
 
 
+KINDS = ('plugins', 'themes')
+IGNORED_NAMES = ('.gitkeep', '.DS_Store')
+
+
+def check_names(directory):
+    """Az lw-translate fájlnév-szabálya egy mappára. A mappa a csomagmappa
+    (<tone>/<plugins|themes>/<locale>/<mappa>), vagy bármely más mappa a formal/ és informal/
+    alatt: ott a .gitkeep-en kívül nem lehet fájl. Visszaad: [(fájl relatív útja, üzenet)]."""
+    errors = []
+    rel = os.path.relpath(directory, ROOT)
+    parts = rel.split(os.sep)
+    try:
+        names = sorted(n for n in os.listdir(directory)
+                       if os.path.isfile(os.path.join(directory, n)) and n not in IGNORED_NAMES)
+    except FileNotFoundError:
+        return errors
+    if not names:
+        return errors
+    if len(parts) != 4 or parts[0] not in TONES or parts[1] not in KINDS:
+        for n in names:
+            errors.append((os.path.join(rel, n), 'a fájl nem <tone>/<plugins|themes>/<locale>/<mappa>/ alatt van'))
+        return errors
+    folder, locale = parts[3], parts[2]
+    base = re.escape('{}-{}'.format(folder, locale))
+    rule = re.compile(r'^' + base + r'(\.mo|\.po|-[0-9a-f]{32}\.json)$')
+    local_only = re.compile(r'^' + base + r'\.l10n\.php$')  # a gitben nincs, helyben megmaradhat
+    expected = '{}-{}'.format(folder, locale)
+    for n in names:
+        if not rule.match(n) and not local_only.match(n):
+            errors.append((os.path.join(rel, n), 'a fájlnév nem illik a szabályra: '
+                           '^{0}(\\.mo|\\.po|-[0-9a-f]{{32}}\\.json)$'.format(expected)))
+    pos = [n for n in names if n.endswith('.po')]
+    if pos and expected + '.mo' not in names:
+        errors.append((os.path.join(rel, pos[0]), 'hiányzik a .po mellől: {}.mo (scripts/build.py)'.format(expected)))
+    if not pos and any(n.endswith(('.mo', '.json')) for n in names):
+        errors.append((os.path.join(rel, names[0]), 'a mappában nincs .po, de van .mo vagy .json'))
+    return errors
+
+
+def all_dirs():
+    out = []
+    for tone in TONES:
+        for dirpath, _, _ in os.walk(os.path.join(ROOT, tone)):
+            out.append(dirpath)
+    return sorted(out)
+
+
 def all_po_files():
     out = []
     for tone in TONES:
@@ -190,22 +243,34 @@ def all_po_files():
     return sorted(out)
 
 
-def changed_po_files(ref):
-    r = subprocess.run(['git', 'diff', '--name-only', '--diff-filter=ACMR', ref, '--', 'formal', 'informal'],
+def changed_dirs(ref):
+    """A <ref> óta változott (törölt fájlt is beleértve) mappák a formal/ és informal/ alatt."""
+    r = subprocess.run(['git', 'diff', '--name-only', '--diff-filter=ACMRD', ref, '--', 'formal', 'informal'],
                        cwd=ROOT, capture_output=True, text=True, check=True)
-    return [os.path.join(ROOT, f) for f in r.stdout.split() if f.endswith('.po')]
+    return sorted({os.path.dirname(os.path.join(ROOT, f)) for f in r.stdout.split()})
+
+
+def po_files_in(directory):
+    try:
+        return [os.path.join(directory, n) for n in sorted(os.listdir(directory)) if n.endswith('.po')]
+    except FileNotFoundError:
+        return []
 
 
 def main(argv):
     args = list(argv)
     glossary_path = os.path.join(ROOT, 'translation-glossary.json')
-    warnings, summary_only, files = True, False, []
+    warnings, summary_only, files, dirs = True, False, [], []
     while args:
         a = args.pop(0)
         if a == '--all':
             files += all_po_files()
+            dirs += all_dirs()
         elif a == '--changed-since':
-            files += changed_po_files(args.pop(0))
+            changed = changed_dirs(args.pop(0))
+            dirs += changed
+            for d in changed:
+                files += po_files_in(d)
         elif a == '--glossary':
             glossary_path = args.pop(0)
         elif a == '--no-warnings':
@@ -218,7 +283,9 @@ def main(argv):
         else:
             files.append(os.path.abspath(a))
     files = sorted(set(files))
-    if not files:
+    dirs = sorted(set(dirs) | {os.path.dirname(f) for f in files})
+    name_errors = [e for d in dirs for e in check_names(d)]
+    if not files and not name_errors:
         print('Nincs ellenőrizendő .po fájl.')
         return 0
     if not shutil.which('msgfmt'):
@@ -244,9 +311,17 @@ def main(argv):
             if not summary_only:
                 print('{}:{}: figyelmeztetés [{}] {}'.format(rel, line, typ, msg))
 
+    name_files = {f for f, _ in name_errors}
+    for f, msg in name_errors:
+        n_err['fajlnev'] += 1
+        if not summary_only:
+            print('{}: HIBA [fajlnev] {}'.format(f, msg))
+    bad_files['fajlnev'] = len(name_files)
+
     total = sum(n_err.values())
-    print('\nEllenőrizve: {} fájl. Hiba: {} ({} fájlban), figyelmeztetés: {}.'.format(len(files), total, n_bad, n_warn))
-    for typ in ('msgfmt', 'helyorzo', 'fejlec'):
+    print('\nEllenőrizve: {} .po fájl, {} mappa. Hiba: {} ({} .po fájlban, {} fájlnév-hiba), figyelmeztetés: {}.'.format(
+        len(files), len(dirs), total, n_bad, n_err['fajlnev'], n_warn))
+    for typ in ('msgfmt', 'helyorzo', 'fejlec', 'fajlnev'):
         if n_err[typ]:
             print('  {:<9} {:>6} hiba {:>4} fájlban'.format(typ, n_err[typ], bad_files[typ]))
     return 1 if total else 0
