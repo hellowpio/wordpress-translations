@@ -1,10 +1,27 @@
 # WordPress-fordítások
 
 WordPress-bővítmények és -sablonok fordításai, elsősorban magyarul (`hu_HU`), magázó (`formal`) és tegező
-(`informal`) változatban. A forrás a `.po` fájl; a WordPress által betöltött `.mo`, `.l10n.php` és `.json`
-fájlok minden változás után automatikusan elkészülnek, és a [Releases](https://github.com/hellowpio/wordpress-translations/releases) oldalról tölthetők le.
+(`informal`) változatban. A forrás a `.po` fájl; mellette a gitben van a belőle generált `.mo` és a
+JavaScript-fordítások `.json` fájljai is. A [Releases](https://github.com/hellowpio/wordpress-translations/releases)
+oldalon ugyanezek csomagonként zipben is letölthetők.
 
-## Letöltés és telepítés
+## Az lw-translate és a fájlnév-szabály
+
+Az lw-translate bővítmény ezt a repót élesben olvassa: a GitHub Trees API-ból (`git/trees/main?recursive=1`) listázza
+a fájlokat, és a `raw.githubusercontent.com/hellowpio/wordpress-translations/main/<útvonal>` címről **közvetlenül a
+main ág `.mo`, `.po` és `.json` fájljait** tölti le; hogy egy fájl frissült-e, a git blob SHA dönti el. Release-t
+nem használ, a `.l10n.php`-t a `.mo`-ból maga készíti. Ezért:
+
+- a `.mo` és a fordítási `.json` a `.po` mellett a repóban marad (a `.l10n.php` nincs a gitben);
+- az útvonal `<tone>/<plugins|themes>/<locale>/<mappa>/`, a fájlnév-szabály **kötelező**:
+  `^<mappa>-<locale>(\.mo|\.po|-[0-9a-f]{32}\.json)$`, például
+  `formal/plugins/hu_HU/acf/acf-hu_HU.mo`;
+- a `<mappa>` a bővítmény vagy sablon **telepítési könyvtárneve** (`wp-content/plugins/<mappa>/`, `wp-content/themes/<mappa>/`), nem a text
+  domain — a kettő eltérhet tőle.
+
+A CI hibát ad, ha egy fájlnév nem illik a szabályra, vagy ha a `.po` mellől hiányzik a `<mappa>-<locale>.mo`.
+
+## Letöltés és telepítés kézzel
 
 A [legutóbbi release](https://github.com/hellowpio/wordpress-translations/releases/latest) csomagonként egy zipet tartalmaz:
 `<mappa>-<locale>-<tone>.zip`, például `woocommerce-subscriptions-hu_HU-formal.zip`. A zipben a `.po`, `.mo`,
@@ -44,7 +61,8 @@ formal/                    magázó fordítások
 informal/                  tegező fordítások, ugyanígy
 ```
 
-A `<mappa>` a bővítmény vagy sablon text domainje, a `<locale>` a nyelvi kód (pl. `hu_HU`).
+A `<mappa>` a bővítmény vagy sablon telepítési könyvtárneve (nem a text domain), a `<locale>` a nyelvi kód
+(pl. `hu_HU`). A fájlnév-szabály fent: [Az lw-translate és a fájlnév-szabály](#az-lw-translate-és-a-fájlnév-szabály).
 
 | Fájl | Mire való | WordPress |
 |---|---|---|
@@ -53,12 +71,13 @@ A `<mappa>` a bővítmény vagy sablon text domainje, a `<locale>` a nyelvi kód
 | `.l10n.php` | PHP-tömb a PHP-szövegekhez, gyorsabban töltődik a `.mo`-nál | 6.5+ |
 | `-<hash>.json` | a JavaScript-szövegek (blokkszerkesztő, React-felületek) fordítása | 5.0+ |
 
-A generált fájlok (`.mo`, `.l10n.php`, `.json`) nincsenek a gitben, csak a release-ben.
+A `.mo` és a `.json` a gitben is megvan (az lw-translate onnan tölti le), a `.l10n.php` csak a release-zipben.
 
 ## Közreműködés
 
 1. Forkold a repót, és hozz létre egy ágat.
-2. Csak a `.po` fájlt módosítsd vagy add hozzá.
+2. A `.po` fájlt módosítsd vagy add hozzá, utána futtasd a `scripts/build.py <mappa>` parancsot, és a
+   `.po` mellé generált `.mo` és `.json` fájlokat is commitold (kézzel ezeket ne szerkeszd).
 3. A `.po` fejlécében kötelező:
    ```
    "X-Plugin-Name: Advanced Custom Fields Multilingual\n"
@@ -78,29 +97,33 @@ Kell hozzá: Python 3 és a `polib` csomag (`pip install polib`), a gettext `msg
 WP-CLI és PHP.
 
 ```bash
-python3 scripts/check_po.py <fájl.po>…        # msgfmt -c, helyőrzők, fejlécek, szótár-figyelmeztetés
-python3 scripts/check_po.py --all             # minden .po
+python3 scripts/check_po.py <fájl.po>…        # msgfmt -c, helyőrzők, fejlécek, fájlnevek, szótár-figyelmeztetés
+python3 scripts/check_po.py --all             # minden .po és minden mappa
 python3 scripts/check_po.py --changed-since main
-python3 scripts/build.py [<mappa>…]           # .mo, .l10n.php, .json és stats.json a dist/ alá
+python3 scripts/build.py [<mappa>…]           # .mo és .json a .po mellé (alapértelmezés)
+python3 scripts/build.py --dist [<mappa>…]    # .po, .mo, .l10n.php, .json és stats.json a dist/ alá (release)
 python3 scripts/package.py --base-url <URL>   # zipek és translations-*.json a dist/release/ alá
 ```
 
 A `check_po.py` hibának veszi a `msgfmt -c` hibáit, a msgid és a msgstr eltérő helyőrzőit (`%s`, `%1$s`, `%d`,
-`{név}`, HTML-címkék) és a hiányzó vagy a mappával ellentétes fejlécet. Figyelmeztet, ha egy kézzel
+`{név}`, HTML-címkék), a hiányzó vagy a mappával ellentétes fejlécet, a fájlnév-szabályba nem illő fájlt és a
+`.po` mellől hiányzó `.mo`-t. Figyelmeztet, ha egy kézzel
 rögzített szótári kifejezés a msgid-ben szerepel, de a magyar alakja nincs a fordításban.
 
 A `build.py` a `blocked-strings.json` mintáit (API-kulcs-helyőrzők, amelyeken a GitHub push protection
-fennakad) kiveszi a `.po`-ból, majd a WP-CLI `wp i18n make-mo`, `make-php` és `make-json --no-purge`
-parancsával készíti el a fájlokat. A `--revision-date` kapcsoló a módosított `.po` fájlok `PO-Revision-Date`
+fennakad) kiveszi a `.po`-ból, majd a WP-CLI `wp i18n make-mo` és `make-json --no-purge` parancsával a `.po`
+mappájába írja a `<mappa>-<locale>.mo` és `<mappa>-<locale>-<md5>.json` fájlokat; a csomag korábbi, már nem
+generált `.json` fájljait törli. A `--dist` kapcsolóval a `dist/` alá dolgozik (`make-php` is), a forrásmappához nem
+nyúl; ebből csomagol a `package.py`. A `--revision-date` kapcsoló a módosított `.po` fájlok `PO-Revision-Date`
 fejlécét a mostani időre állítja; commit előtt érdemes futtatni, mert a `translations-*.json` `updated` mezője
 ebből jön.
 
 ## Automatizálás (GitHub Actions)
 
-- **CI** (`ci-cd.yml`): pull requestnél és pushnál a `check_po.py` a változott `.po` fájlokon. A repóban
-  lévő régebbi hibák nem blokkolnak, csak a módosított fájlok hibái.
-- **Release** (`release.yml`): a main ágra pusholt fordítás-változás után build, csomagolás és GitHub
-  Release dátum-alapú taggel (`v2026.10.31`, ugyanazon a napon `v2026.10.31-2`).
+- **CI** (`ci-cd.yml`): pull requestnél és pushnál a `check_po.py` a változott csomagmappákon (`.po`, `.mo`,
+  `.json`, fájlnevek). A repóban lévő régebbi hibák nem blokkolnak, csak a módosított csomagok hibái.
+- **Release** (`release.yml`, kiegészítő terjesztés): a main ágra pusholt fordítás-változás után
+  `build.py --dist`, csomagolás és GitHub Release dátum-alapú taggel (`v2026.10.31`, ugyanazon a napon `v2026.10.31-2`).
 - **Verzió-figyelés** (`verziok.yml`): hetente összeveti a fordítások verzióját a HelloPack legújabb
   verzióival, és az eredményt az „Elavult fordítások” issue-ba írja.
 - **Dependabot**: a workflow-k GitHub Actions-verziói.
