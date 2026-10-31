@@ -1,0 +1,950 @@
+# Copyright (C) 2026 Backcourt Development
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Name Your Price 3.8.3\n"
+"Report-Msgid-Bugs-To: support@backcourt.io\n"
+"POT-Creation-Date: 2026-10-08 15:33:05+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: grunt-wp-i18n 1.0.4\n"
+"X-Plugin-Name: WooCommerce Name Your Price\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 3.8.3\n"
+"X-Domain: wc_name_your_price\n"
+
+#: includes/admin/class-wc-name-your-price-admin.php:107
+#: includes/class-wc-name-your-price.php:427
+msgid "Go to the settings page"
+msgstr "Lépj a beállítások oldalára"
+
+#: includes/admin/class-wc-name-your-price-admin.php:107
+#: includes/class-wc-name-your-price.php:427
+msgid "Settings"
+msgstr "Beállítások"
+
+#: includes/admin/class-wc-name-your-price-admin.php:154
+msgid "Enter a value"
+msgstr "Adj meg egy értéket"
+
+#: includes/admin/class-wc-name-your-price-admin.php:155
+msgid "Enter a value (fixed or %)"
+msgstr "Adj meg egy értéket (rögzített összeg vagy %)"
+
+#: includes/admin/class-wc-name-your-price-admin.php:185
+#: includes/admin/class-wc-name-your-price-admin.php:188
+#: includes/admin/class-wc-name-your-price-admin.php:264
+#: includes/admin/class-wc-name-your-price-admin.php:395
+#: includes/admin/class-wc-nyp-admin-settings.php:33
+#: includes/admin/class-wc-settings-nyp.php:25
+#: includes/admin/import/class-wc-nyp-product-import.php:51
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:100
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:387
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:508
+#: includes/admin/views/html-admin-page-status-report.php:20
+msgid "Name Your Price"
+msgstr "Egyéni ár megadása"
+
+#: includes/admin/class-wc-name-your-price-admin.php:190
+msgid ""
+"In the \"Product Meta\" metabox, check the Name Your Price checkbox to allow"
+" your customers to enter their own price."
+msgstr "A „Product Meta” metaboxban jelöld be a Name Your Price jelölőnégyzetet, hogy lehetővé tedd a vásárlóid számára a saját ár megadását."
+
+#: includes/admin/class-wc-name-your-price-admin.php:192
+msgid ""
+"As of Name Your Price version 2.0, this ability is available for \"Simple\","
+" \"Subscription\", \"Bundled\", \"Variable\" and \"Variable Subscriptions\" "
+"Products."
+msgstr "A Name Your Price 2.0-s verziójától ez a lehetőség elérhető a „Simple”, „Subscription”, „Bundled”, „Variable” és „Variable Subscriptions” termékeknél."
+
+#: includes/admin/class-wc-name-your-price-admin.php:194
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:167
+#: includes/api/class-wc-nyp-rest-api.php:60
+#: includes/compatibility/modules/class-wc-nyp-aelia-compatibility.php:247
+msgid "Suggested Price"
+msgstr "Javasolt ár"
+
+#: includes/admin/class-wc-name-your-price-admin.php:196
+msgid ""
+"This is the price you'd like to suggest to your customers.  The Name Your "
+"Price input will be prefilled with this value.  To not suggest a price at "
+"all, you may leave this field blank."
+msgstr "Ez az az ár, amelyet vásárlóidnak javasolni kívánsz. A Name Your Price beviteli mező előre ki lesz töltve ezzel az értékkel. Ha egyáltalán nem kívánsz árat javasolni, hagyd üresen ezt a mezőt."
+
+#: includes/admin/class-wc-name-your-price-admin.php:198
+msgid "This value must be a positive number."
+msgstr "Ennek az értéknek pozitív számnak kell lennie."
+
+#: includes/admin/class-wc-name-your-price-admin.php:200
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:205
+#: includes/api/class-wc-nyp-rest-api.php:65
+#: includes/compatibility/modules/class-wc-nyp-aelia-compatibility.php:262
+msgid "Minimum Price"
+msgstr "Minimális ár"
+
+#: includes/admin/class-wc-name-your-price-admin.php:202
+msgid ""
+"This is the lowest price you are willing to accept for this product.  To not"
+" enforce a minimum (ie: to accept any price, including zero), you may leave "
+"this field blank."
+msgstr "Ez a legalacsonyabb ár, amelyet még elfogadsz ezért a termékért. Ha nem szeretnél minimális árat előírni (vagyis bármilyen árat, akár nullát is elfogadsz), hagyd üresen ezt a mezőt."
+
+#: includes/admin/class-wc-name-your-price-admin.php:204
+msgid ""
+"This value must be a positive number that is less than or equal to the set "
+"suggested price."
+msgstr "Ennek az értéknek pozitív számnak kell lennie, amely kisebb vagy egyenlő a beállított javasolt árnál."
+
+#: includes/admin/class-wc-name-your-price-admin.php:206
+msgid "Subscriptions"
+msgstr "Előfizetések"
+
+#: includes/admin/class-wc-name-your-price-admin.php:208
+msgid ""
+"If you have a name your price subscription product, the subscription time "
+"period fields are still needed, but the price will be disabled in lieu of "
+"the Name Your Price suggested and minimum prices."
+msgstr "Ha van ármegadásos előfizetéses terméked, az előfizetés időszakára vonatkozó mezőkre továbbra is szükség van, de az ármező le lesz tiltva, és helyette a Name Your Price javasolt és minimális árai lesznek érvényesek."
+
+#: includes/admin/class-wc-name-your-price-admin.php:210
+msgid ""
+"As of Name Your Price version 2.0, you can now allow variable billing "
+"periods."
+msgstr "A Name Your Price 2.0-s verziójától változó számlázási időszakokat is engedélyezhetsz."
+
+#: includes/admin/class-wc-name-your-price-admin.php:401
+msgid "Suggested"
+msgstr "Javasolt"
+
+#: includes/admin/class-wc-name-your-price-admin.php:403
+#: includes/admin/export/class-wc-nyp-product-export.php:52
+#: includes/admin/import/class-wc-nyp-product-import.php:55
+#: includes/admin/import/class-wc-nyp-product-import.php:76
+msgid "Suggested price"
+msgstr "Javasolt ár"
+
+#: includes/admin/class-wc-name-your-price-admin.php:408
+msgid "Minimum"
+msgstr "Minimum"
+
+#: includes/admin/class-wc-name-your-price-admin.php:410
+#: includes/admin/export/class-wc-nyp-product-export.php:53
+#: includes/admin/import/class-wc-nyp-product-import.php:56
+#: includes/admin/import/class-wc-nyp-product-import.php:77
+msgid "Minimum price"
+msgstr "Minimális ár"
+
+#: includes/admin/class-wc-name-your-price-admin.php:416
+msgid "Hide minimum price?"
+msgstr "Minimális ár elrejtése?"
+
+#: includes/admin/class-wc-name-your-price-admin.php:420
+msgid "Maximum"
+msgstr "Maximum"
+
+#: includes/admin/class-wc-name-your-price-admin.php:422
+#: includes/admin/export/class-wc-nyp-product-export.php:54
+#: includes/admin/import/class-wc-nyp-product-import.php:57
+#: includes/admin/import/class-wc-nyp-product-import.php:78
+msgid "Maximum price"
+msgstr "Maximális ár"
+
+#: includes/admin/class-wc-nyp-admin-notices.php:72
+#: includes/admin/class-wc-nyp-admin-notices.php:273
+msgid "Action failed. Please refresh the page and retry."
+msgstr "A művelet nem sikerült. Kérlek, frissítsd az oldalt, majd próbáld újra."
+
+#: includes/admin/class-wc-nyp-admin-notices.php:76
+msgid "You do not have permission to dismiss this notice."
+msgstr "Nincs jogosultságod ennek az értesítésnek a bezárásához."
+
+#: includes/admin/class-wc-nyp-admin-notices.php:241
+msgid "run the update process manually"
+msgstr "a frissítési folyamat manuális futtatása"
+
+#. Translators: %s 'run the update process manually' prompt for updating
+#. manually.
+#: includes/admin/class-wc-nyp-admin-notices.php:243
+msgid "&hellip;Taking a while? You may need to %s."
+msgstr "&hellip;Sokáig tart? Szükség lehet a %s."
+
+#: includes/admin/class-wc-nyp-admin-notices.php:246
+msgid "WooCommerce Name Your Price Data Update"
+msgstr "WooCommerce Name Your Price adatfrissítés"
+
+#: includes/admin/class-wc-nyp-admin-notices.php:246
+msgid "Your database is being updated in the background."
+msgstr "Az adatbázisod a háttérben frissül."
+
+#: includes/admin/class-wc-nyp-admin-notices.php:251
+msgid "WooCommerce Name Your Price data update complete."
+msgstr "A WooCommerce Name Your Price adatainak frissítése befejeződött."
+
+#: includes/admin/class-wc-nyp-admin-notices.php:277
+msgid "You do not have perission to dismiss this notice."
+msgstr "Nincs jogosultságod ennek az értesítésnek a bezárásához."
+
+#: includes/admin/class-wc-nyp-admin-settings.php:67
+msgid "Text strings"
+msgstr "Szövegek"
+
+#: includes/admin/class-wc-nyp-admin-settings.php:69
+#: includes/admin/class-wc-settings-nyp.php:46
+msgid "Modify the text strings used by the Name Your Own Price extension."
+msgstr "Módosítsd a Name Your Price-kiterjesztésben használt szövegeket."
+
+#: includes/admin/class-wc-nyp-admin-settings.php:74
+#: includes/admin/class-wc-settings-nyp.php:51
+msgid "Suggested Price Text"
+msgstr "Javasolt ár szövege"
+
+#: includes/admin/class-wc-nyp-admin-settings.php:75
+msgid ""
+"This is the text to display before the suggested price. You can use the "
+"placeholder %PRICE% to display the suggested price."
+msgstr "Ez a javasolt ár előtt megjelenítendő szöveg. A javasolt ár megjelenítéséhez használhatod a %PRICE% helytartót."
+
+#: includes/admin/class-wc-nyp-admin-settings.php:84
+#: includes/admin/class-wc-settings-nyp.php:61
+msgid "Minimum Price Text"
+msgstr "Minimális ár szövege"
+
+#: includes/admin/class-wc-nyp-admin-settings.php:85
+msgid ""
+"This is the text to display before the minimum accepted price. You can use "
+"the placeholder %PRICE% to display the minimum price."
+msgstr "Ez a minimálisan elfogadott ár előtt megjelenítendő szöveg. A minimális ár megjelenítéséhez használhatod a %PRICE% helytartót."
+
+#: includes/admin/class-wc-nyp-admin-settings.php:94
+#: includes/admin/class-wc-settings-nyp.php:71
+msgid "Name Your Price Text"
+msgstr "Az ár megadásának szövege"
+
+#: includes/admin/class-wc-nyp-admin-settings.php:95
+#: includes/admin/class-wc-settings-nyp.php:72
+msgid "This is the text that appears above the Name Your Price input field."
+msgstr "Ez a szöveg a Name Your Price-beviteli mező felett jelenik meg."
+
+#: includes/admin/class-wc-nyp-admin-settings.php:99
+#: includes/admin/class-wc-settings-nyp.php:76
+#: includes/class-wc-name-your-price-helpers.php:501
+msgid "Name your price"
+msgstr "Add meg az árat"
+
+#: includes/admin/class-wc-nyp-admin-settings.php:104
+#: includes/admin/class-wc-settings-nyp.php:81
+msgid "Add to Cart Button Text for Shop"
+msgstr "Kosárba gomb szövege a boltban"
+
+#: includes/admin/class-wc-nyp-admin-settings.php:105
+#: includes/admin/class-wc-settings-nyp.php:82
+msgid ""
+"This is the text that appears on the Add to Cart buttons on the Shop Pages."
+msgstr "Ez a szöveg jelenik meg a „kosárba teszem” gombokon a bolt oldalain."
+
+#: includes/admin/class-wc-nyp-admin-settings.php:109
+#: includes/admin/class-wc-nyp-admin-settings.php:110
+#: includes/class-wc-name-your-price-display.php:557
+#: includes/class-wc-name-your-price-display.php:562
+msgid "Choose price"
+msgstr "Ár kiválasztása"
+
+#: includes/admin/class-wc-nyp-admin-settings.php:115
+#: includes/admin/class-wc-settings-nyp.php:91
+msgid "Add to Cart Button Text for Single Product"
+msgstr "Kosárba gomb szövege a termékoldalon"
+
+#: includes/admin/class-wc-nyp-admin-settings.php:116
+#: includes/admin/class-wc-settings-nyp.php:92
+msgid ""
+"This is the text that appears on the Add to Cart buttons on the Single "
+"Product Pages. Leave blank to inherit the default add to cart text."
+msgstr "Ez a szöveg jelenik meg a „kosárba teszem” gombokon a termékoldalakon. Hagyd üresen az alapértelmezett „kosárba teszem” szöveg örökléséhez."
+
+#: includes/admin/class-wc-nyp-admin-settings.php:130
+msgid "Styles"
+msgstr "Stílusok"
+
+#: includes/admin/class-wc-nyp-admin-settings.php:136
+msgid "Disable stylesheet"
+msgstr "Stíluslap letiltása"
+
+#: includes/admin/class-wc-nyp-admin-settings.php:137
+msgid "Do not load the Name Your Price stylesheet."
+msgstr "Ne töltsd be a Name Your Price-stíluslapját."
+
+#: includes/admin/class-wc-nyp-admin-settings.php:144
+msgid "Hide quantity input"
+msgstr "Mennyiségmező elrejtése"
+
+#: includes/admin/class-wc-nyp-admin-settings.php:146
+msgid "Hide the quantity input for Name Your Price products."
+msgstr "Rejtsd el a mennyiségmezőt a Name Your Price-termékeknél."
+
+#: includes/admin/class-wc-nyp-admin-settings.php:157
+msgid "Advanced Options"
+msgstr "Speciális beállítások"
+
+#: includes/admin/class-wc-nyp-admin-settings.php:163
+msgid "Enable edit in cart"
+msgstr "Szerkesztés engedélyezése a kosárban"
+
+#: includes/admin/class-wc-nyp-admin-settings.php:165
+msgid "Allow for editing price from cart."
+msgstr "Engedélyezd az ár szerkesztését a kosárból."
+
+#: includes/admin/class-wc-nyp-admin-settings.php:171
+msgid "Enable strict sold-individually"
+msgstr "Az egyenkénti értékesítés szigorú szabályainak bekapcsolása"
+
+#: includes/admin/class-wc-nyp-admin-settings.php:173
+msgid "Enforce stricter sold individually rules on Name Your Price products."
+msgstr "Szigorúbb egyenkénti értékesítési szabályok érvényesítése a Name Your Price-termékeknél."
+
+#: includes/admin/class-wc-nyp-admin-system-status.php:76
+msgid "Learn how to update"
+msgstr "Tudd meg, hogyan frissíthetsz"
+
+#: includes/admin/class-wc-settings-nyp.php:44
+msgid "Name Your Price Setup"
+msgstr "Name Your Price beállítása"
+
+#: includes/admin/class-wc-settings-nyp.php:52
+msgid "This is the text to display before the suggested price."
+msgstr "Ez a javasolt ár előtt megjelenítendő szöveg."
+
+#: includes/admin/class-wc-settings-nyp.php:56
+msgid "Suggested price:"
+msgstr "Javasolt ár:"
+
+#: includes/admin/class-wc-settings-nyp.php:62
+msgid "This is the text to display before the minimum accepted price."
+msgstr "Ez a minimálisan elfogadott ár előtt megjelenítendő szöveg."
+
+#: includes/admin/class-wc-settings-nyp.php:66
+msgid "Minimum price:"
+msgstr "Minimális ár:"
+
+#: includes/admin/class-wc-settings-nyp.php:86
+msgid "Set price"
+msgstr "Ár beállítása"
+
+#: includes/admin/class-wc-settings-nyp.php:106
+msgid "Name Your Price Style"
+msgstr "Name Your Price-stílus"
+
+#: includes/admin/class-wc-settings-nyp.php:113
+msgid "Disable Name Your Price Stylesheet"
+msgstr "Name Your Price stíluslap letiltása"
+
+#: includes/admin/export/class-wc-nyp-product-export.php:50
+#: includes/admin/import/class-wc-nyp-product-import.php:53
+#: includes/admin/import/class-wc-nyp-product-import.php:74
+msgid "Is NYP?"
+msgstr "NYP?"
+
+#: includes/admin/export/class-wc-nyp-product-export.php:51
+#: includes/admin/import/class-wc-nyp-product-import.php:54
+#: includes/admin/import/class-wc-nyp-product-import.php:75
+msgid "Has NYP?"
+msgstr "Van NYP?"
+
+#: includes/admin/export/class-wc-nyp-product-export.php:55
+msgid "Hide NYP min?"
+msgstr "NYP-minimum elrejtése?"
+
+#: includes/admin/export/class-wc-nyp-product-export.php:56
+#: includes/admin/import/class-wc-nyp-product-import.php:59
+msgid "Hide NYP variable price?"
+msgstr "Az NYP változó árának elrejtése?"
+
+#: includes/admin/import/class-wc-nyp-product-import.php:58
+#: includes/admin/import/class-wc-nyp-product-import.php:79
+msgid "Hide min?"
+msgstr "Minimum elrejtése?"
+
+#: includes/admin/import/class-wc-nyp-product-import.php:80
+msgid "Hide variable price?"
+msgstr "Változó ár elrejtése?"
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:101
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:387
+#: includes/api/class-wc-nyp-rest-api.php:55
+#: includes/api/class-wc-nyp-store-api.php:165
+msgid "Customers are allowed to determine their own price."
+msgstr "A vásárlók meghatározhatják a saját árukat."
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:144
+msgid "Variable Billing Period"
+msgstr "Változó számlázási időszak"
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:145
+msgid "Allow the customer to set the billing period."
+msgstr "Engedélyezd a vásárlónak a számlázási időszak beállítását."
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:169
+#: includes/compatibility/modules/class-wc-nyp-aelia-compatibility.php:249
+msgid ""
+"Price to replace the default price string.  Leave blank to not suggest a "
+"price."
+msgstr "Az alapértelmezett ár szövegét helyettesítő ár.  Hagyd üresen, ha nem szeretnél árat javasolni."
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:181
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:218
+msgid "per"
+msgstr "enként"
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:207
+#: includes/compatibility/modules/class-wc-nyp-aelia-compatibility.php:264
+msgid ""
+"Lowest acceptable price for product. Leave blank to not enforce a minimum. "
+"Must be less than or equal to the set suggested price."
+msgstr "A termék legalacsonyabb elfogadható ára. Hagyd üresen, ha nem szeretnél minimumot érvényesíteni. A beállított javasolt árnál kisebbnek vagy azzal egyenlőnek kell lennie."
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:229
+msgid "Hide Minimum Price"
+msgstr "Minimális ár elrejtése"
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:231
+msgid "Option to not show the minimum price on the front end."
+msgstr "Lehetőség arra, hogy a minimális ár ne jelenjen meg a webhely nyilvános felületén."
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:254
+#: includes/api/class-wc-nyp-rest-api.php:70
+#: includes/compatibility/modules/class-wc-nyp-aelia-compatibility.php:277
+msgid "Maximum Price"
+msgstr "Maximális ár"
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:256
+#: includes/compatibility/modules/class-wc-nyp-aelia-compatibility.php:279
+msgid ""
+"Highest acceptable price for product. Leave blank to not enforce a maximum."
+msgstr "A termék legmagasabb elfogadható ára. Hagyd üresen, ha nem szeretnél maximumot érvényesíteni."
+
+#. Translators: %d variation ID.
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:318
+#: includes/api/class-wc-nyp-rest-api.php:154
+msgid ""
+"The suggested price must be higher than the minimum for Name Your Price "
+"products. Please review your prices."
+msgstr "A Name Your Price-termékeknél a javasolt árnak magasabbnak kell lennie a minimumnál. Nézd át az árakat."
+
+#. Translators: %d variation ID.
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:329
+#: includes/api/class-wc-nyp-rest-api.php:195
+msgid ""
+"The maximum price must be higher than the minimum for Name Your Price "
+"products. Please review your prices."
+msgstr "A Name Your Price-termékeknél a maximális árnak magasabbnak kell lennie a minimumnál. Nézd át az árakat."
+
+#. Translators: %d variation ID.
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:477
+msgid ""
+"The suggested price must be higher than the minimum for Name Your Price "
+"products. Please review your prices for variation #%d."
+msgstr "A Name Your Price-termékeknél a javasolt árnak magasabbnak kell lennie a minimumnál. Nézd át a #%d. számú variáció árait."
+
+#. Translators: %d variation ID.
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:484
+msgid ""
+"The maximum price must be higher than the minimum for Name Your Price "
+"products. Please review your prices for variation #%d."
+msgstr "A Name Your Price-termékeknél a maximális árnak magasabbnak kell lennie a minimumnál. Nézd át a #%d. számú variáció árait."
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:509
+msgid "Toggle &quot;Name Your Price&quot;"
+msgstr "A „Name Your Price” be-/kikapcsolása"
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:510
+msgid "Set suggested prices"
+msgstr "Javasolt árak beállítása"
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:511
+msgid "Increase suggested prices (fixed amount or %)"
+msgstr "Javasolt árak növelése (rögzített összeggel vagy %-kal)"
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:512
+msgid "Decrease suggested prices (fixed amount or %)"
+msgstr "Javasolt árak csökkentése (rögzített összeggel vagy %-kal)"
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:513
+msgid "Set minimum prices"
+msgstr "Minimális árak beállítása"
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:514
+msgid "Increase minimum prices (fixed amount or %)"
+msgstr "Minimális árak növelése (fix összeggel vagy %-kal)"
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:515
+msgid "Decrease minimum prices (fixed amount or %)"
+msgstr "Minimális árak csökkentése (fix összeggel vagy %-kal)"
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:516
+msgid "Toggle &quot;hide minimum price&quot;"
+msgstr "A „minimális ár elrejtése” be-/kikapcsolása"
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:517
+msgid "Set maximum prices"
+msgstr "Maximális árak beállítása"
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:518
+msgid "Increase maximum prices (fixed amount or %)"
+msgstr "Maximális árak növelése (fix összeggel vagy %-kal)"
+
+#: includes/admin/meta-boxes/class-wc-nyp-meta-box-product-data.php:519
+msgid "Decrease maximum prices (fixed amount or %)"
+msgstr "Maximális árak csökkentése (fix összeggel vagy %-kal)"
+
+#: includes/admin/notes/class-wc-nyp-notes-get-support.php:60
+msgid ""
+"It looks like you haven't created a Name Your Price product yet. Please let "
+"us know if there is anything we can assist you with."
+msgstr "Úgy tűnik, még nem hoztál létre Name Your Price terméket. Kérlek, jelezd, ha bármiben segíthetünk."
+
+#: includes/admin/notes/class-wc-nyp-notes-get-support.php:77
+msgid "Need help with Name Your Price?"
+msgstr "Segítségre van szükséged a Name Your Price-szal kapcsolatban?"
+
+#: includes/admin/notes/class-wc-nyp-notes-get-support.php:83
+msgid "Ask a question"
+msgstr "Kérdés feltevése"
+
+#: includes/admin/notes/class-wc-nyp-notes-help-improve.php:60
+msgid ""
+"We'd love your input to shape the future of Name Your Price. Would you tell "
+"us a little about yourself? Feel free to share any feedback or ideas that "
+"you have."
+msgstr "Szívesen vennénk a véleményedet, hogy formálhassuk a Name Your Price jövőjét. Elmondanál magadról néhány dolgot? Bátran oszd meg visszajelzéseidet vagy ötleteidet."
+
+#: includes/admin/notes/class-wc-nyp-notes-help-improve.php:70
+msgid "Help improve Name Your Price"
+msgstr "Segítség a Name Your Price továbbfejlesztéséhez"
+
+#: includes/admin/notes/class-wc-nyp-notes-help-improve.php:77
+msgid "Share feedback"
+msgstr "Visszajelzés megosztása"
+
+#: includes/admin/notes/class-wc-nyp-notes-run-db-update.php:125
+msgid "Update Database"
+msgstr "Adatbázis frissítése"
+
+#: includes/admin/notes/class-wc-nyp-notes-run-db-update.php:134
+msgid "Learn more about updates"
+msgstr "További tudnivalók a frissítésekről"
+
+#: includes/admin/notes/class-wc-nyp-notes-run-db-update.php:152
+msgid "WooCommerce Name Your Price database update required"
+msgstr "A WooCommerce Name Your Price adatbázis-frissítése kötelező"
+
+#: includes/admin/notes/class-wc-nyp-notes-run-db-update.php:154
+msgid ""
+"WooCommerce Name Your Price has been updated! To keep things running "
+"smoothly, we have to update your database to the newest version."
+msgstr "A WooCommerce Name Your Price frissült! A zavartalan működés érdekében frissítenünk kell az adatbázisodat a legújabb verzióra."
+
+#: includes/admin/notes/class-wc-nyp-notes-run-db-update.php:155
+msgid ""
+"The database update process runs in the background and may take a little "
+"while, so please be patient."
+msgstr "Az adatbázis-frissítés a háttérben fut, és eltarthat egy ideig, ezért kérlek, légy türelemmel."
+
+#: includes/admin/notes/class-wc-nyp-notes-run-db-update.php:189
+msgid "You can manually run queued updates here."
+msgstr "Itt kézzel is elindíthatod a várakozó frissítéseket."
+
+#: includes/admin/notes/class-wc-nyp-notes-run-db-update.php:189
+msgid "View progress →"
+msgstr "Előrehaladás megtekintése →"
+
+#: includes/admin/notes/class-wc-nyp-notes-run-db-update.php:192
+msgid "WooCommerce Name Your Price database update in progress"
+msgstr "WooCommerce Name Your Price adatbázis-frissítés folyamatban"
+
+#: includes/admin/notes/class-wc-nyp-notes-run-db-update.php:193
+msgid ""
+"The database is updating in the background. The database update process may "
+"take a little while, so please be patient."
+msgstr "Az adatbázis frissítése a háttérben zajlik. Az adatbázis-frissítési folyamat eltarthat egy ideig, ezért kérlek, légy türelemmel."
+
+#: includes/admin/notes/class-wc-nyp-notes-run-db-update.php:229
+msgid "Thanks!"
+msgstr "Köszönjük!"
+
+#: includes/admin/notes/class-wc-nyp-notes-run-db-update.php:245
+msgid "WooCommerce Name Your Price database update done"
+msgstr "A WooCommerce Name Your Price adatbázis-frissítése kész"
+
+#: includes/admin/notes/class-wc-nyp-notes-run-db-update.php:246
+msgid ""
+"Database update complete. Thank you for updating to the latest version!"
+msgstr "Az adatbázis frissítése befejeződött. Köszönjük, hogy frissítettél a legújabb verzióra!"
+
+#. translators: %1$s is the file version, %2$s is the core version.
+#: includes/admin/views/html-admin-page-status-report.php:87
+msgid "version %1$s is out of date. The core version is %2$s"
+msgstr "A(z) %1$s verzió elavult. Az alapverzió: %2$s"
+
+#: includes/api/class-wc-nyp-rest-api.php:75
+msgid "Hide Minimum Price on frontend."
+msgstr "A minimális ár elrejtése az előoldalon."
+
+#: includes/api/class-wc-nyp-store-api.php:171
+msgid "Hide minimum price."
+msgstr "Minimális ár elrejtése."
+
+#: includes/api/class-wc-nyp-store-api.php:177
+msgid ""
+"Name your price custom price data provided using the smallest unit of the "
+"currency entered price"
+msgstr "A Name Your Price egyéni áradata a megadott ár pénznemének legkisebb egységében megadva"
+
+#: includes/api/class-wc-nyp-store-api.php:183
+msgid "Suggested price for product."
+msgstr "Termék javasolt ára."
+
+#: includes/api/class-wc-nyp-store-api.php:189
+msgid "Lowest acceptable price for product."
+msgstr "Termék legalacsonyabb elfogadható ára."
+
+#: includes/api/class-wc-nyp-store-api.php:195
+msgid "Highest acceptable price for product."
+msgstr "Termék legmagasabb elfogadható ára."
+
+#: includes/api/class-wc-nyp-store-api.php:251
+msgid ""
+"Name your price custom price data provided using the smallest unit of the "
+"currency entered price."
+msgstr "A Name Your Price egyéni áradatai a megadott ár pénznemének legkisebb egységében vannak megadva."
+
+#. translators: %1$s is the product title. %2$s is the reason it cannot be
+#. purchased.
+#: includes/api/class-wc-nyp-store-api.php:401
+#: includes/class-wc-name-your-price-cart.php:430
+msgid "&quot;%1$s&quot; cannot be purchased. %2$s"
+msgstr "„%1$s” nem vásárolható meg. %2$s"
+
+#: includes/class-wc-name-your-price-cart.php:65
+#: includes/class-wc-name-your-price-display.php:49
+#: includes/class-wc-name-your-price-order.php:48
+#: includes/class-wc-name-your-price.php:78
+#: includes/compatibility/class-wc-name-your-price-compatibility.php:61
+msgid "Cloning this object is forbidden."
+msgstr "Tilos ennek az objektumnak a klónozása."
+
+#: includes/class-wc-name-your-price-cart.php:74
+#: includes/class-wc-name-your-price-display.php:58
+#: includes/class-wc-name-your-price-order.php:57
+#: includes/class-wc-name-your-price.php:87
+#: includes/compatibility/class-wc-name-your-price-compatibility.php:70
+msgid "Unserializing instances of this class is forbidden."
+msgstr "Az osztály példányainak deszerializálása tilos."
+
+#: includes/class-wc-name-your-price-cart.php:160
+msgid "Cart updated."
+msgstr "A kosár frissítve."
+
+#. translators: %1$s is the product title. %2$s is the reason it cannot be
+#. added to the cart.
+#: includes/class-wc-name-your-price-cart.php:339
+msgid "&quot;%1$s&quot; could not be added to the cart. %2$s"
+msgstr "„%1$s” kosárba helyezése nem sikerült. %2$s"
+
+#: includes/class-wc-name-your-price-cart.php:480
+#: includes/class-wc-name-your-price-helpers.php:1112
+msgid "This is not a valid product."
+msgstr "Ez nem érvényes termék."
+
+#: includes/class-wc-name-your-price-cart.php:499
+msgid "Please enter a valid, positive number."
+msgstr "Kérlek, adj meg érvényes, pozitív számot."
+
+#: includes/class-wc-name-your-price-cart.php:531
+#: includes/class-wc-name-your-price-cart.php:544
+#: includes/class-wc-name-your-price-helpers.php:1056
+#: includes/class-wc-name-your-price-helpers.php:1117
+msgid "Please enter a higher amount."
+msgstr "Adj meg magasabb összeget."
+
+#. translators: %s is the minimum price.
+#: includes/class-wc-name-your-price-cart.php:534
+#: includes/class-wc-name-your-price-cart.php:547
+msgid "Please enter at least %s."
+msgstr "Kérlek, legalább ekkora összeget adj meg: %s."
+
+#. translators: %s is the maximum price.
+#: includes/class-wc-name-your-price-cart.php:556
+msgid "Please enter less than or equal to %s."
+msgstr "Kérlek, legfeljebb ekkora összeget adj meg: %s."
+
+#: includes/class-wc-name-your-price-display.php:142
+msgid "%price / %period"
+msgstr "%price / %period"
+
+#: includes/class-wc-name-your-price-display.php:462
+#: includes/compatibility/modules/class-wc-nyp-apfs-compatibility.php:64
+msgid "Update Cart"
+msgstr "Kosár frissítése"
+
+#. Translators: %1$s is minimum price html. %2$s subscription terms.
+#: includes/class-wc-name-your-price-display.php:485
+#: includes/class-wc-name-your-price-helpers.php:904
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
+
+#. Translators: %1$s is null string because minimum price is displayed
+#. elsewhere. %2$s is minimum billing period.
+#: includes/class-wc-name-your-price-helpers.php:954
+msgid "%1$s every %2$s"
+msgstr "%1$s minden %2$s"
+
+#. Translators: %s is minimum billing period.
+#: includes/class-wc-name-your-price-helpers.php:957
+msgid "Due every %s"
+msgstr "Esedékes minden %s"
+
+#: includes/class-wc-name-your-price-helpers.php:967
+msgid "Due"
+msgstr "Esedékes"
+
+#: includes/class-wc-name-your-price-helpers.php:1055
+#: includes/class-wc-name-your-price-helpers.php:1116
+msgid "Please enter at least %%MINIMUM%%."
+msgstr "Adj meg legalább %%MINIMUM%% értéket."
+
+#: includes/class-wc-name-your-price-helpers.php:1057
+#: includes/class-wc-name-your-price-helpers.php:1119
+msgid "Please enter less than or equal to %%MAXIMUM%%."
+msgstr "Adj meg legfeljebb %%MAXIMUM%% értéket."
+
+#: includes/class-wc-name-your-price-helpers.php:1058
+#: includes/class-wc-name-your-price-helpers.php:1120
+msgid "Please enter an amount."
+msgstr "Adj meg egy összeget."
+
+#: includes/class-wc-name-your-price-helpers.php:1113
+msgid ""
+"&quot;%%TITLE%%&quot; could not be added to the cart. Please enter a valid, "
+"positive number."
+msgstr "Nem sikerült „%%TITLE%%” terméket a kosárba helyezni. Adj meg egy érvényes, pozitív számot."
+
+#: includes/class-wc-name-your-price-helpers.php:1114
+msgid ""
+"&quot;%%TITLE%%&quot; could not be added to the cart. Please enter at least "
+"%%MINIMUM%%."
+msgstr "Nem sikerült „%%TITLE%%” terméket a kosárba helyezni. Adj meg legalább %%MINIMUM%% értéket."
+
+#: includes/class-wc-name-your-price-helpers.php:1115
+msgid ""
+"&quot;%%TITLE%%&quot; could not be added to the cart. Please enter a higher "
+"amount."
+msgstr "Nem sikerült „%%TITLE%%” terméket a kosárba helyezni. Adj meg nagyobb összeget."
+
+#: includes/class-wc-name-your-price-helpers.php:1118
+msgid ""
+"&quot;%%TITLE%%&quot; could not be added to the cart. Please enter less than"
+" or equal to %%MAXIMUM%%."
+msgstr "Nem sikerült „%%TITLE%%” terméket a kosárba helyezni. Adj meg legfeljebb %%MAXIMUM%% értéket."
+
+#: includes/class-wc-name-your-price-helpers.php:1121
+msgid ""
+"&quot;%%TITLE%%&quot; cannot be purchased. Please enter at least "
+"%%MINIMUM%%."
+msgstr "„%%TITLE%%” nem vásárolható meg. Adj meg legalább %%MINIMUM%% értéket."
+
+#: includes/class-wc-name-your-price-helpers.php:1122
+msgid ""
+"&quot;%%TITLE%%&quot; cannot be purchased. Please enter less than or equal "
+"to %%MAXIMUM%%."
+msgstr "„%%TITLE%%” nem vásárolható meg. Adj meg legfeljebb %%MAXIMUM%% értéket."
+
+#. Translators: %s minimum required WooCommerce version number.
+#: includes/class-wc-name-your-price.php:379
+msgid ""
+"WooCommerce Name Your Price requires at least WooCommerce %s in order to "
+"function. Please activate or upgrade WooCommerce."
+msgstr "A WooCommerce Name Your Price működéséhez legalább %s verziójú WooCommerce szükséges. Kérlek, kapcsold be vagy frissítsd a WooCommerce-et."
+
+#. Translators: %1$s opening <a> tag for link. %2$s closing </a> tag. %3$s
+#. minimum required WooCommerce version number.
+#: includes/class-wc-name-your-price.php:396
+#: woocommerce-name-your-price.php:53
+msgid ""
+"<strong>WooCommerce Name Your Price is inactive.</strong> The "
+"%1$sWooCommerce plugin%2$s must be active and at least version %3$s for Name"
+" Your Price to function. Please upgrade or activate WooCommerce."
+msgstr "<strong>A WooCommerce Name Your Price inaktív.</strong> A Name Your Price csak akkor működik, ha a %1$sWooCommerce bővítmény%2$s aktív, és legalább %3$s verziójú. Kérlek, frissítsd vagy kapcsold be a WooCommerce-et."
+
+#. Translators: %1$s link to documentation. %2$s minimum required PHP version
+#. number.
+#: includes/class-wc-name-your-price.php:405
+#: woocommerce-name-your-price.php:67
+msgid ""
+"WooCommerce Name Your Price requires at least PHP <strong>%1$s</strong>. "
+"Learn <a href=\"%2$s\">how to update PHP</a>."
+msgstr "A WooCommerce Name Your Price legalább <strong>%1$s</strong> verziójú PHP-t igényel. Tudd meg, <a href=\"%2$s\">hogyan frissítheted a PHP-t</a>."
+
+#: includes/compatibility/class-wc-name-your-price-compatibility.php:130
+msgid ""
+"The <strong>WC Name Your Price + Aelia Currency Converter Bridge</strong> "
+"mini-extension is now part of <strong>WooCommerce Name Your Price</strong>. "
+"Please deactivate and remove the <strong>WC Name Your Price + Aelia Currency"
+" Converter Bridge</strong> plugin."
+msgstr "A <strong>WC Name Your Price + Aelia Currency Converter Bridge</strong> mini-bővítmény mostantól a <strong>WooCommerce Name Your Price</strong> része. Kérlek, kapcsold ki és távolítsd el a <strong>WC Name Your Price + Aelia Currency Converter Bridge</strong> bővítményt."
+
+#: includes/compatibility/modules/class-wc-nyp-aelia-compatibility.php:230
+msgid "Price in specific currencies"
+msgstr "Ár meghatározott pénznemekben"
+
+#: includes/compatibility/modules/class-wc-nyp-aelia-compatibility.php:246
+#: includes/compatibility/modules/class-wc-nyp-aelia-compatibility.php:261
+#: includes/compatibility/modules/class-wc-nyp-aelia-compatibility.php:276
+msgid "Auto"
+msgstr "Automatikus"
+
+#: includes/compatibility/modules/class-wc-nyp-gift-cards-compatibility.php:38
+msgid "Gift Cards Integration"
+msgstr "Ajándékkártya-integráció"
+
+#: includes/compatibility/modules/class-wc-nyp-gift-cards-compatibility.php:39
+msgid "Move price input before gift card form"
+msgstr "Ármező áthelyezése az ajándékkártya-űrlap elé"
+
+#: includes/compatibility/modules/class-wc-nyp-subscriptions-compatibility.php:57
+msgid "Change Name Your Price subscription amount"
+msgstr "A Name Your Price előfizetés összegének módosítása"
+
+#: includes/compatibility/modules/class-wc-nyp-subscriptions-compatibility.php:72
+msgid "Name Your Price Switch Button Text"
+msgstr "Name Your Price váltógomb szövege"
+
+#: includes/compatibility/modules/class-wc-nyp-subscriptions-compatibility.php:73
+msgid ""
+"Customize the text displayed on the button next to the Name Your Price "
+"product subscription on the subscriber's account page."
+msgstr "Testreszabhatod a Name Your Price termékelőfizetés melletti gombon megjelenő szöveget az előfizető fiókoldalán."
+
+#: includes/compatibility/modules/class-wc-nyp-subscriptions-compatibility.php:77
+#: includes/compatibility/modules/class-wc-nyp-subscriptions-compatibility.php:297
+msgid "Change price"
+msgstr "Ár módosítása"
+
+#: includes/compatibility/modules/class-wc-nyp-subscriptions-compatibility.php:224
+msgid ""
+"Please modify the price or billing period so that it is not the same as your"
+" existing subscription."
+msgstr "Módosítsd az árat vagy a számlázási időszakot úgy, hogy ne egyezzen meg a meglévő előfizetéseddel."
+
+#: includes/compatibility/modules/class-wc-nyp-subscriptions-compatibility.php:229
+msgid ""
+"Please modify the price so that it is not the same as your existing "
+"subscription."
+msgstr "Módosítsd az árat úgy, hogy ne egyezzen meg a meglévő előfizetéseddel."
+
+#: includes/compatibility/modules/class-wc-nyp-subscriptions-compatibility.php:262
+msgid "You are only allowed to change this subscription's price."
+msgstr "Csak ennek az előfizetésnek az árát módosíthatod."
+
+#: includes/compatibility/modules/class-wc-nyp-subscriptions-compatibility.php:269
+msgid "You do not have permission to modify the price of this subscription."
+msgstr "Nincs jogosultságod ennek az előfizetésnek az árát módosítani."
+
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce Name Your Price"
+msgstr "WooCommerce Name Your Price"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.woocommerce.com/products/name-your-price/"
+msgstr "http://www.woocommerce.com/products/name-your-price/"
+
+#. Description of the plugin/theme
+msgid ""
+"WooCommerce Name Your Price allows customers to set their own price for "
+"products or donations."
+msgstr "A WooCommerce Name Your Price lehetővé teszi, hogy a vásárlók maguk határozzák meg a termékek vagy adományok árát."
+
+#. Author of the plugin/theme
+msgid "Backcourt Development"
+msgstr "Backcourt Development"
+
+#. Author URI of the plugin/theme
+msgid "http://www.backcourt.io"
+msgstr "http://www.backcourt.io"
+
+#: includes/admin/class-wc-nyp-admin-settings.php:79
+#: includes/class-wc-name-your-price-helpers.php:444
+msgctxt "Name your price default suggested text"
+msgid "Suggested price: %PRICE%"
+msgstr "Javasolt ár: %PRICE%"
+
+#: includes/admin/class-wc-nyp-admin-settings.php:89
+msgctxt "Name your price default suggested text"
+msgid "Minimum price: %PRICE%"
+msgstr "Minimális ár: %PRICE%"
+
+#: includes/admin/class-wc-nyp-admin-system-status.php:53
+msgctxt "label for the system staus page"
+msgid "Version"
+msgstr "Verzió"
+
+#: includes/admin/class-wc-nyp-admin-system-status.php:57
+msgctxt "label for the system staus page"
+msgid "Database Version"
+msgstr "Adatbázis-verzió"
+
+#: includes/admin/class-wc-nyp-admin-system-status.php:65
+msgctxt "label for the system status page"
+msgid "Template Overrides"
+msgstr "Sablonfelülírások"
+
+#: includes/admin/class-wc-nyp-admin-system-status.php:73
+msgctxt "label for the system status page"
+msgid "Outdated Templates"
+msgstr "Elavult sablonok"
+
+#: includes/api/class-wc-nyp-store-api.php:441
+#: includes/class-wc-name-your-price-display.php:842
+msgctxt "edit in cart link text"
+msgid "Edit price"
+msgstr "Ár szerkesztése"
+
+#. Translators: %1$s Original cart price string. %2$s URL for edit price link.
+#. %3$s text for edit price link.
+#: includes/class-wc-name-your-price-display.php:845
+msgctxt "edit in cart text"
+msgid ""
+"%1$s<br/><a class=\"edit_price_in_cart_text edit_in_cart_text\" "
+"href=\"%2$s\"><small>%3$s</small></a>"
+msgstr "%1$s<br/><a class=\"edit_price_in_cart_text edit_in_cart_text\" href=\"%2$s\"><small>%3$s</small></a>"
+
+#: includes/class-wc-name-your-price-helpers.php:405
+msgctxt "Name your price default minimum text"
+msgid "Minimum price: %PRICE%"
+msgstr "Minimális ár: %PRICE%"
+
+#. Translators: %1$s is the label text and %2$s is the currency symbol.
+#: includes/class-wc-name-your-price-helpers.php:500
+msgctxt "Name your price input label"
+msgid "%1$s <span class=\"woocommerce-Price-currencySymbol\">( %2$s )</span>"
+msgstr "%1$s <span class=\"woocommerce-Price-currencySymbol\">( %2$s )</span>"
+
+#. translators: %s: billing-period phrase rendered by All Products, e.g.
+#. "every
+#. month"
+#: includes/compatibility/modules/class-wc-nyp-apfs-compatibility.php:98
+#: includes/compatibility/modules/class-wc-nyp-apfs-compatibility.php:100
+msgctxt "NYP + All Products subscribe option"
+msgid "Subscribe %s"
+msgstr "Előfizetés %s"
+
+#. translators: %s: price + billing period, e.g. "$6.00 / month"
+#: includes/compatibility/modules/class-wc-nyp-apfs-compatibility.php:133
+msgctxt "NYP + All Products subscribe option"
+msgid "Subscribe for %s"
+msgstr "Előfizetés a következő áron: %s"
