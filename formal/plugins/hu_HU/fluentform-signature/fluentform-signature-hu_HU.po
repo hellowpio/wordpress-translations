@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: Fluent Forms Signature Addon 4.3.11\n"
+"Project-Id-Version: Fluent Forms Signature Addon 4.4.1\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:48:00+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,12 +18,12 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: Fluent Forms Signature Addon\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 4.3.11\n"
+"X-Plugin-Version: 4.4.1\n"
 
 #. Plugin Name of the plugin
 #: fluentform-signature.php
 msgid "Fluent Forms Signature Addon"
-msgstr "Fluent Forms Aláírás kiegészítő"
+msgstr "Fluent Forms aláírási kiegészítő"
 
 #. Plugin URI of the plugin
 #: fluentform-signature.php
@@ -36,9 +36,7 @@ msgstr ""
 msgid ""
 "The signature field for Fluent Forms, the most advanced drag and drop form "
 "builder plugin for WordPress."
-msgstr ""
-"A Fluent Forms aláírásmezője, a WordPress legfejlettebb fogd és vidd "
-"űrlapkészítő bővítménye."
+msgstr "A Fluent Forms – a WordPress legfejlettebb fogd és vidd űrlapkészítő bővítménye – aláírásmezője."
 
 #. Author of the plugin
 #: fluentform-signature.php
@@ -47,22 +45,74 @@ msgstr "WPFluentForm"
 
 #. Author URI of the plugin
 #: fluentform-signature.php
-msgid "https://wpfluentform.com"
-msgstr "https://wpfluentform.com"
+msgid "https://fluentforms.com"
+msgstr "https://fluentforms.com"
 
-#: src/libs/ff_plugin_updater/ff-signature-update.php:42
-msgid "Signature Add On"
-msgstr "Aláírás kiegészítő"
+#: src/Component.php:24 src/Component.php:33
+msgid "Signature"
+msgstr "Aláírás"
 
-#: src/libs/ff_plugin_updater/ff-signature-update.php:44
-msgid "Signature Add-On"
-msgstr "Aláírás kiegészítő"
+#: src/Component.php:32
+msgid "Sign Here"
+msgstr "Itt írja alá"
+
+#: src/Component.php:37
+msgid "This field is required"
+msgstr "Ez a mező kötelező"
+
+#: src/Component.php:100
+msgid "Pad Background Color"
+msgstr "Aláírófelület háttérszíne"
+
+#: src/Component.php:101
+msgid "The Background color of the signature pad"
+msgstr "Az aláírómező háttérszíne"
+
+#: src/Component.php:105
+msgid "Border Color"
+msgstr "Szegély színe"
+
+#: src/Component.php:106
+msgid "The Border color of the signature pad"
+msgstr "Az aláírómező szegélyének színe"
+
+#: src/Component.php:110
+msgid "Pen Color"
+msgstr "Toll színe"
+
+#: src/Component.php:111
+msgid "The Pen color of the signature pad"
+msgstr "Az aláírómező tollának színe"
+
+#: src/Component.php:116
+msgid "Pen Size"
+msgstr "Tollméret"
+
+#: src/Component.php:117
+msgid "Size of your Pen"
+msgstr "A toll mérete"
+
+#: src/Component.php:121
+msgid "Sign Instruction"
+msgstr "Aláírási útmutató"
+
+#: src/Component.php:122
+msgid "Write Label that will show under the signature pad"
+msgstr "Adja meg az aláírómező alatt megjelenő címkét"
+
+#: src/Component.php:127
+msgid "Pad Height"
+msgstr "Az aláírómező magassága"
+
+#: src/Component.php:128
+msgid "Height of the signature pad"
+msgstr "Az aláírómező magassága"
 
 #: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:69
 #: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:104
 #, php-format
 msgid "The %s license needs to be activated. %sActivate Now%s"
-msgstr "A %s licencet aktiválni kell. %sAktiválja most%s"
+msgstr "Aktiválni kell a következő licencet: %s. %sAktiválás most%s"
 
 #: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:170
 msgid "License Key"
@@ -71,9 +121,7 @@ msgstr "Licenckulcs"
 #: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:171
 #, php-format
 msgid "Thank you for purchasing %s!  Please enter your license key below."
-msgstr ""
-"Köszönjük, hogy megvásárolta a(z) %s-t!  Kérjük, adja meg alább a "
-"licenckulcsát."
+msgstr "Köszönjük a %s megvásárlását!  Kérjük, adja meg alább a licenckulcsát."
 
 #: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:214
 #, php-format
@@ -85,6 +133,12 @@ msgstr ""
 msgid "Sorry! You do not have permission to activate this license."
 msgstr "Sajnáljuk! Nincs jogosultsága ennek a licencnek az aktiválásához."
 
+#: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:299
+msgid ""
+"Error when contacting with license server. Please check that your server "
+"have curl installed"
+msgstr "Hiba történt a licencszerverrel való kapcsolatfelvételkor. Kérjük, ellenőrizze, hogy a szerverén telepítve van-e a curl"
+
 #: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:358
 msgid "Sorry! You do not have permission to deactivate this license."
 msgstr "Sajnáljuk! Nincs jogosultsága ennek a licencnek a deaktiválásához."
@@ -93,9 +147,7 @@ msgstr "Sajnáljuk! Nincs jogosultsága ennek a licencnek a deaktiválásához."
 msgid ""
 "There was an error deactivating the license, please try again or contact "
 "support."
-msgstr ""
-"Hiba történt a licenc deaktiválásakor, próbálja meg újra, vagy lépjen "
-"kapcsolatba a támogatással."
+msgstr "Hiba történt a licenc deaktiválásakor, próbálja meg újra, vagy lépjen kapcsolatba a támogatással."
 
 #: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:411
 msgid "License deactivated"
@@ -103,6 +155,65 @@ msgstr "Licenc deaktiválva"
 
 #: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:420
 msgid "Unable to deactivate license, please try again or contact support."
-msgstr ""
-"A licencet nem sikerült deaktiválni, próbálja meg újra, vagy lépjen "
-"kapcsolatba a támogatással."
+msgstr "A licencet nem sikerült deaktiválni, próbálja meg újra, vagy lépjen kapcsolatba a támogatással."
+
+#: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:502
+msgid ""
+"There was an error activating the license, please verify your license is "
+"correct and try again or contact support."
+msgstr "Hiba történt a licenc aktiválásakor. Kérjük, ellenőrizze, hogy a licenc érvényes-e, majd próbálja újra, vagy forduljon a támogatáshoz."
+
+#: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:506
+#, php-format
+msgid ""
+"Your license has been expired at %s Please <a target=\"_blank\" "
+"href=\"%s\">click here</a> to renew your license"
+msgstr "A licence %s dátummal lejárt. Kérjük, <a target=\"_blank\" href=\"%s\">kattintson ide</a> a licenc megújításához"
+
+#: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:508
+#, php-format
+msgid ""
+"No Activation Site left: You have activated all the sites that your license "
+"offer. Please go to wpmanageninja.com account and review your sites. You may"
+" deactivate your unused sites from wpmanageninja account, or you can "
+"purchase another license. <a target=\"_blank\" href=\"%s\">Click Here to "
+"purchase another license</a>"
+msgstr "Nincs több aktiválható webhely: Ön már bekapcsolta az összes olyan webhelyet, amelyet a licence lehetővé tesz. Kérjük, lépjen be a wpmanageninja.com-fiókjába, és tekintse át webhelyeit. A nem használt webhelyeket kikapcsolhatja a wpmanageninja.com-fiókjában, vagy vásárolhat egy másik licencet. <a target=\"_blank\" href=\"%s\">Kattintson ide egy másik licenc vásárlásához</a>"
+
+#: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:510
+msgid ""
+"The given license key is not valid. Please verify that your license is "
+"correct. You may login to wpmanageninja.com account and get your valid "
+"license key for your purchase."
+msgstr "A megadott licenckulcs érvénytelen. Kérjük, ellenőrizze, hogy helyes-e a licenc. Beléphet a wpmanageninja.com-fiókjába, ahol megtalálja a vásárláshoz tartozó érvényes licenckulcsot."
+
+#: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:591
+#, php-format
+msgid ""
+"<p>Your %s license has been <b>expired at %s</b>, Please <a "
+"href=\"%s\"><b>Click Here to Renew Your License</b></a></p>"
+msgstr "<p>Az Ön %s licence <b>%s dátummal lejárt</b>. Kérjük, <a href=\"%s\"><b>kattintson ide a licenc megújításához</b></a></p>"
+
+#: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:620
+#, php-format
+msgid "<p>Your license was expired at <b>%s</b></p>"
+msgstr "<p>Az Ön licence <b>%s</b> dátummal lejárt</p>"
+
+#: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:621
+#: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:629
+msgid "Click here to renew your license"
+msgstr "Kattintson ide a licenc megújításához"
+
+#: src/libs/ff_plugin_updater/updater/FluentFormSignatureAddOnChecker.php:628
+#, php-format
+msgid "<p>Your license will be expired in %s days</p>"
+msgstr "<p>Az Ön licence %s nap múlva lejár</p>"
+
+#~ msgid "https://wpfluentform.com"
+#~ msgstr "https://wpfluentform.com"
+
+#~ msgid "Signature Add On"
+#~ msgstr "Aláírás kiegészítő"
+
+#~ msgid "Signature Add-On"
+#~ msgstr "Aláírás kiegészítő"

@@ -1,0 +1,899 @@
+# Copyright (C) 2026 OnTheGoSystems
+# This file is distributed under the same license as the WPML Export and Import plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPML Export and Import 5.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpml-import\n"
+"POT-Creation-Date: 2026-10-19T11:55:18+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: wpml-import\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: WPML Export and Import\n"
+"X-Plugin-Tone: formal\n"
+"X-Plugin-Version: 5.2.0\n"
+
+#. Plugin Name of the plugin
+#: plugin.php classes/Integrations/Base/Notice.php:148
+#: classes/UI/AdminPageHooks.php:72
+msgid "WPML Export and Import"
+msgstr "WPML Export and Import"
+
+#. Plugin URI of the plugin
+#: plugin.php
+msgid ""
+"https://wpml.org/documentation/wpml-core-and-add-on-plugins/wpml-export-and-"
+"import/"
+msgstr "https://wpml.org/documentation/wpml-core-and-add-on-plugins/wpml-export-and-import/"
+
+#. Description of the plugin
+#: plugin.php
+msgid "A multipurpose plugin to export and import multilingual content."
+msgstr "Több célra használható bővítmény többnyelvű tartalom exportálásához és importálásához."
+
+#. Author of the plugin
+#: plugin.php
+msgid "OnTheGoSystems"
+msgstr "OnTheGoSystems"
+
+#. Author URI of the plugin
+#: plugin.php
+msgid "http://www.onthegosystems.com"
+msgstr "http://www.onthegosystems.com"
+
+#. translators: Text of the page returned when the import trigger is called
+#. the old way, with the key in the address.
+#: classes/API/Hooks.php:45
+msgid ""
+"The import trigger no longer accepts the key in the URL. Send it in a POST "
+"body."
+msgstr "Az importálás indítása már nem fogadja el a kulcsot az URL-ben. Küldje el a POST törzsében."
+
+#. translators: Title of the page returned when the import trigger is called
+#. the old way, with the key in the address. It is the name of HTTP status
+#. 405.
+#: classes/API/Hooks.php:47
+msgid "Method Not Allowed"
+msgstr "Nem engedélyezett metódus"
+
+#. translators: Text and title of the page returned when the import trigger is
+#. called with a wrong or missing key. It is the name of HTTP status 401.
+#: classes/API/Hooks.php:61 classes/API/Hooks.php:62
+msgid "Unauthorized"
+msgstr "Jogosulatlan"
+
+#. translators: Text of the page returned when the import trigger runs and
+#. there is nothing left to import.
+#: classes/API/Hooks.php:70
+msgid "No items to process"
+msgstr "Nincs feldolgozandó tétel"
+
+#. translators: Title of the page returned when the import trigger runs and
+#. there is nothing left to import. It is the name of HTTP status 204.
+#: classes/API/Hooks.php:72
+msgid "No Content"
+msgstr "Nincs tartalom"
+
+#. translators: Text of the page returned when the import trigger runs while
+#. another import process is running.
+#: classes/API/Hooks.php:81
+msgid "Another import process is running"
+msgstr "Egy másik importálási folyamat fut"
+
+#. translators: Title of the page returned when the import trigger runs while
+#. another import process is running. It is the name of HTTP status 409.
+#: classes/API/Hooks.php:83
+msgid "Conflict"
+msgstr "Ütközés"
+
+#. translators: Text of the page returned when the import trigger has finished
+#. running.
+#: classes/API/Hooks.php:90
+msgid "Import process completed"
+msgstr "Az importálási folyamat befejeződött"
+
+#. translators: Title of the page returned when the import trigger has
+#. finished running. It is the name of HTTP status 200.
+#: classes/API/Hooks.php:92
+msgid "Success"
+msgstr "Siker"
+
+#. translators: Text of the page returned when the import trigger stopped on
+#. an error.
+#: classes/API/Hooks.php:103
+msgid "Import process failed"
+msgstr "Az importálási folyamat sikertelen"
+
+#. translators: Title of the page returned when the import trigger stopped on
+#. an error. It is the name of HTTP status 500.
+#: classes/API/Hooks.php:105
+msgid "Internal Server Error"
+msgstr "Belső szerverhiba"
+
+#: classes/CLI/Commands.php:19
+msgid ""
+"Another import process is running. Wait until it ends, then run this command"
+" again."
+msgstr "Egy másik importálási folyamat fut. Várja meg a befejeződését, majd futtassa újra ezt a parancsot."
+
+#. translators: Warning printed by the WP-CLI import command for an item it
+#. did not assign to a language. %1$s: the name of the import step, for
+#. example "Setting Posts’ Language". %2$d: the ID of the item. %3$s: the
+#. reason, for example: the language code "xx" is not an active language on
+#. this site.
+#: classes/CLI/Commands.php:73
+#, php-format
+msgid "%1$s: item %2$d was not assigned to a language: %3$s."
+msgstr "%1$s: a(z) %2$d. tételhez nem lett nyelv rendelve: %3$s."
+
+#. translators: Warning printed by the WP-CLI import command when a step could
+#. not finish. %1$s: the name of the import step, for example "Updating Final
+#. Post Status". %2$d: the number of items that were left unprocessed.
+#: classes/CLI/Commands.php:99
+#, php-format
+msgid "%1$s: %2$d item could not be processed and was skipped."
+msgid_plural "%1$s: %2$d items could not be processed and were skipped."
+msgstr[0] "%1$s: a(z) %2$d tételt nem sikerült feldolgozni, ezért kihagytuk."
+msgstr[1] "%1$s: a(z) %2$d tételt nem sikerült feldolgozni, ezért kihagytuk."
+
+#. translators: Part of a warning printed by the WP-CLI import command. %s:
+#. the language code an imported item carries, for example "fr".
+#: classes/Commands/Base/SetEntitiesLanguage.php:175
+#, php-format
+msgid "its translation group already has an item in \"%s\""
+msgstr "a fordítási csoportjában már van egy tétel a(z) „%s” nyelven"
+
+#. translators: Part of a warning printed by the WP-CLI import command. %s:
+#. the language code an imported item carries, for example "de".
+#: classes/Commands/Base/SetEntitiesLanguage.php:178
+#, php-format
+msgid ""
+"its translation group already has an original, so the item in \"%s\" cannot "
+"be a second one"
+msgstr "a fordítási csoportjában már van egy eredeti, ezért a(z) „%s” nyelvű tétel nem lehet egy második eredeti"
+
+#. translators: Part of a warning printed by the WP-CLI import command. %s:
+#. the language code an imported item carries, for example "xx".
+#: classes/Commands/Base/SetEntitiesLanguage.php:181
+#, php-format
+msgid "the language code \"%s\" is not an active language on this site"
+msgstr "a(z) „%s” nyelvkód nem aktív nyelv ezen a webhelyen"
+
+#. translators: Part of a warning printed by the WP-CLI import command. %s:
+#. the source language code an imported item carries, for example "xx".
+#: classes/Commands/Base/SetEntitiesLanguage.php:184
+#, php-format
+msgid "the source language code \"%s\" is not an active language on this site"
+msgstr "a(z) „%s” forrásnyelvi kód nem aktív nyelv ezen a webhelyen"
+
+#. translators: Part of a warning printed by the WP-CLI import command. %s:
+#. the language code an imported item carries, for example "EN".
+#: classes/Commands/Base/SetEntitiesLanguage.php:187
+#, php-format
+msgid "the language code \"%s\" is the language of its own source"
+msgstr "a(z) „%s” nyelvkód megegyezik a saját forrásának nyelvével"
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/CleanupPostFields.php:12
+msgid "Cleaning Up Post Data"
+msgstr "Bejegyzésadatok tisztítása"
+
+#: classes/Commands/CleanupPostFields.php:19
+msgid "Removing temporary and import-related post meta data."
+msgstr "Ideiglenes és importáláshoz kapcsolódó bejegyzés-metaadatok eltávolítása."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/CleanupTermFields.php:12
+msgid "Cleaning Up Term Data"
+msgstr "Kifejezésadatok tisztítása"
+
+#: classes/Commands/CleanupTermFields.php:19
+msgid "Removing temporary and import-related term meta data."
+msgstr "Ideiglenes és importáláshoz kapcsolódó kifejezés-metaadatok eltávolítása."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/ConnectPostImageAttachments.php:39
+msgid "Connecting Post Image Attachments"
+msgstr "Bejegyzésképek csatolmányainak összekapcsolása"
+
+#: classes/Commands/ConnectPostImageAttachments.php:46
+msgid ""
+"Updating thumbnail and gallery attachment IDs on translated posts, products,"
+" and CPTs to point to their translated equivalents."
+msgstr "A lefordított bejegyzések, termékek és egyéni bejegyzéstípusok bélyegképeihez és galériáihoz tartozó csatolmányok ID-jeinek frissítése, hogy a lefordított megfelelőikre mutassanak."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/ConnectTermTranslationsByPostsWithOnlyOneAssignment.php:45
+msgid "Connecting Inline Term Translations"
+msgstr "Beágyazott kifejezésfordítások összekapcsolása"
+
+#: classes/Commands/ConnectTermTranslationsByPostsWithOnlyOneAssignment.php:52
+msgid ""
+"Scanning posts with a single taxonomy term in order to identify and connect "
+"the terms assigned to these posts with their translations."
+msgstr "Az egyetlen osztályozási (taxonomy) kifejezést tartalmazó bejegyzések átvizsgálása, hogy azonosítsa és összekapcsolja a hozzájuk rendelt kifejezéseket azok fordításaival."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/DeleteOriginalsOfDuplicatedTerms.php:30
+msgid "Deleting Obsolete Original Terms"
+msgstr "Elavult eredeti kifejezések törlése"
+
+#: classes/Commands/DeleteOriginalsOfDuplicatedTerms.php:37
+msgid ""
+"Removing original terms that are no longer needed after creating duplicates "
+"for same-named terms. Ensuring no posts are linked to these original terms."
+msgstr "Az azonos nevű kifejezések másolatainak létrehozása után már szükségtelen eredeti kifejezések eltávolítása. Annak biztosítása, hogy egyetlen bejegyzés se kapcsolódjon ezekhez az eredeti kifejezésekhez."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/DuplicateTermsAssignedToPostsInDifferentLanguage.php:63
+msgid "Duplicating Terms with Shared Names Across Languages"
+msgstr "Azonos nevű kifejezések másolása különböző nyelveken"
+
+#: classes/Commands/DuplicateTermsAssignedToPostsInDifferentLanguage.php:70
+msgid ""
+"Creating duplicates in the correct language for terms that share the same "
+"name across languages, but belong to posts in different languages."
+msgstr "Másolatok létrehozása a megfelelő nyelven azokhoz a kifejezésekhez, amelyek neve azonos a különböző nyelveken, de eltérő nyelvű bejegyzésekhez tartoznak."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/FixImportedPostSlugs.php:30
+msgid "Fixing Imported Post Slugs"
+msgstr "Importált bejegyzések slugjainak javítása"
+
+#: classes/Commands/FixImportedPostSlugs.php:34
+msgid ""
+"Regenerating translated post slugs to prevent conflicts with the originals."
+msgstr "A lefordított bejegyzések slugjainak újragenerálása az eredetikkel való ütközés megelőzéséhez."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/FlushTranslationsCache.php:11
+msgid "Clearing Translations Cache"
+msgstr "Fordítási gyorsítótár törlése"
+
+#. translators: Description of the "Clearing Translations Cache" import step,
+#. shown under the step name; "it" is the cache.
+#: classes/Commands/FlushTranslationsCache.php:16
+msgid "Invalidating the persistent cache so it can be regenerated."
+msgstr "A tartós gyorsítótár érvénytelenítése, hogy újra létre lehessen hozni."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/MarkAncestorsForParentLanguageFix.php:42
+msgid "Marking Parent Terms for Connection"
+msgstr "Szülő kifejezések megjelölése összekapcsoláshoz"
+
+#. translators: Description of the "Marking Parent Terms for Connection"
+#. import step, shown under the step name; "their" refers to the parent terms.
+#: classes/Commands/MarkAncestorsForParentLanguageFix.php:50
+msgid ""
+"Collecting parent terms to connect their translations in the next step."
+msgstr "A következő lépésben összekapcsolandó szülő kifejezések összegyűjtése."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/ReassignPostsToTranslatedTerms.php:40
+msgid "Connecting Posts with Correct Term Translations"
+msgstr "Bejegyzések összekapcsolása a megfelelő kifejezésfordításokkal"
+
+#: classes/Commands/ReassignPostsToTranslatedTerms.php:47
+msgid ""
+"Ensuring posts are connected to terms in the correct language, especially if"
+" you have the same term names across languages."
+msgstr "Annak biztosítása, hogy a bejegyzések a megfelelő nyelvű kifejezésekhez kapcsolódjanak, különösen akkor, ha a kifejezések neve azonos a különböző nyelveken."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/RegisterImportedTranslations.php:46
+msgid "Registering Imported Translations"
+msgstr "Importált fordítások regisztrálása"
+
+#: classes/Commands/RegisterImportedTranslations.php:53
+msgid ""
+"Marking the imported translations as complete, so that WPML knows when the "
+"original changes."
+msgstr "Az importált fordítások befejezettként való megjelölése, hogy a WPML értesüljön az eredeti módosításáról."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/SendPostsToAutomaticTranslation.php:44
+msgid "Sending Posts for Automatic Translation"
+msgstr "Bejegyzések küldése automatikus fordításra"
+
+#: classes/Commands/SendPostsToAutomaticTranslation.php:51
+msgid ""
+"Creating automatic translation jobs for posts flagged for auto-translation "
+"in the exported data."
+msgstr "Automatikus fordítási feladatok létrehozása az exportált adatokban automatikus fordításra megjelölt bejegyzésekhez."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/SetAttachmentsLanguage.php:34
+msgid "Setting Attachments' Language"
+msgstr "Csatolmányok nyelvének beállítása"
+
+#: classes/Commands/SetAttachmentsLanguage.php:41
+msgid "Assigning a language to imported attachments."
+msgstr "Nyelv hozzárendelése az importált csatolmányokhoz."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/SetFinalPostsStatus.php:39
+msgid "Updating Final Post Status"
+msgstr "Végleges bejegyzésállapot beállítása"
+
+#: classes/Commands/SetFinalPostsStatus.php:46
+msgid ""
+"Setting the post status based on the "
+"\"_wpml_import_after_process_post_status\" field from the import file (if "
+"provided)."
+msgstr "A bejegyzés állapotának beállítása az importfájl „_wpml_import_after_process_post_status” mezője alapján (ha meg van adva)."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/SetInlineTermsLanguage.php:45
+msgid "Identifying Inline Term Languages"
+msgstr "Beágyazott kifejezések nyelvének azonosítása"
+
+#: classes/Commands/SetInlineTermsLanguage.php:52
+msgid ""
+"Identifying and setting the language of terms created during post imports."
+msgstr "A bejegyzések importálása során létrehozott kifejezések nyelvének azonosítása és beállítása."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/SetPostsLanguage.php:17
+msgid "Setting Posts’ Language"
+msgstr "Bejegyzések nyelvének beállítása"
+
+#: classes/Commands/SetPostsLanguage.php:24
+msgid "Connecting posts to the default language and translations."
+msgstr "Bejegyzések összekapcsolása az alapértelmezett nyelvvel és a fordításokkal."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/SetTermsLanguage.php:18
+msgid "Setting Terms’ Language"
+msgstr "A kifejezések nyelvének beállítása"
+
+#: classes/Commands/SetTermsLanguage.php:25
+msgid ""
+"Connecting taxonomy terms to the default (original) language and "
+"translations."
+msgstr "Osztályozási (taxonomy) kifejezések összekapcsolása az alapértelmezett (eredeti) nyelvvel és a fordításokkal."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Commands/SetUnassignedParentTermsLanguage.php:39
+msgid "Setting Parent Terms' Language"
+msgstr "A szülő kifejezések nyelvének beállítása"
+
+#: classes/Commands/SetUnassignedParentTermsLanguage.php:46
+msgid ""
+"Assigning language to parent taxonomy terms that don't have one, based on "
+"the language assigned to their children."
+msgstr "Nyelv hozzárendelése azokhoz a szülő osztályozási (taxonomy) kifejezésekhez, amelyekhez még nincs nyelv rendelve, a gyermekeikhez rendelt nyelv alapján."
+
+#. translators: Notice shown on the WordPress export screen. %s: a link to the
+#. WPML Export and Import documentation, with the plugin name as its text.
+#: classes/Integrations/Base/Notice.php:83
+#, php-format
+msgid ""
+"Migrating your multilingual site? Remember to also install %s on your new "
+"site before importing your content so we can restore all the translations."
+msgstr "Többnyelvű webhelyét költözteti? Ne felejtse el telepíteni a(z) %s bővítményt az új webhelyére a tartalom importálása előtt, hogy visszaállíthassuk az összes fordítást."
+
+#. translators: Notice shown on the WooCommerce product export screen when
+#. WooCommerce Multilingual is not installed. %1$s: a link to the WooCommerce
+#. Multilingual documentation, %2$s: a link to the WPML Export and Import
+#. documentation. Each link reads as the plugin's name.
+#: classes/Integrations/Base/Notice.php:95
+#, php-format
+msgid ""
+"Migrating your multilingual shop? With %1$s and %2$s you can transfer your "
+"translated content to a new site, including cross-sells, up-sells, and "
+"product attributes."
+msgstr "Többnyelvű webáruházát költözteti? A(z) %1$s és a(z) %2$s segítségével áthelyezheti a lefordított tartalmakat egy új webhelyre, beleértve a keresztértékesítéseket, a felülértékesítéseket és a termékattribútumokat is."
+
+#. translators: Notice shown on the WooCommerce product export screen when
+#. WooCommerce Multilingual is installed. %1$s: a link to the WooCommerce
+#. Multilingual documentation, %2$s: a link to the WPML Export and Import
+#. documentation. Each link reads as the plugin's name.
+#: classes/Integrations/Base/Notice.php:102
+#, php-format
+msgid ""
+"Migrating your multilingual shop? Remember to install %1$s and %2$s on your "
+"new site before importing your content so we can restore all the "
+"translations."
+msgstr "Többnyelvű webáruházát költözteti? Ne felejtse el telepíteni a(z) %1$s és a(z) %2$s bővítményeket az új webhelyére a tartalom importálása előtt, hogy visszaállíthassuk az összes fordítást."
+
+#. translators: Notice shown on the WordPress import screen. %s: a link to the
+#. WPML Export and Import documentation, with the plugin name as its text.
+#: classes/Integrations/Base/Notice.php:114
+#, php-format
+msgid ""
+"Looking to import your multilingual content? Remember to install %s in your "
+"original site before exporting its content so we can import all the "
+"translations here."
+msgstr "Többnyelvű tartalmat szeretne importálni? Ne felejtse el telepíteni a(z) %s bővítményt az eredeti webhelyére a tartalom exportálása előtt, hogy itt importálhassuk az összes fordítást."
+
+#. translators: First line of the notice shown on the WooCommerce product
+#. import screen when WooCommerce Multilingual is not installed; a second line
+#. follows it. %1$s: a link to the WooCommerce Multilingual documentation,
+#. with the plugin name as its text.
+#: classes/Integrations/Base/Notice.php:126
+#, php-format
+msgid ""
+"Looking to import your multilingual content? Install %1$s on this site."
+msgstr "Többnyelvű tartalmat szeretne importálni? Telepítse a(z) %1$s bővítményt ezen a webhelyen."
+
+#. translators: Second line of the notice shown on the WooCommerce product
+#. import screen when WooCommerce Multilingual is not installed; the numbering
+#. continues from the first line. %2$s: a link to the WooCommerce Multilingual
+#. documentation, %3$s: a link to the WPML Export and Import documentation.
+#. Each link reads as the plugin's name.
+#: classes/Integrations/Base/Notice.php:129
+#, php-format
+msgid ""
+"Remember to also enable %2$s and %3$s in your original shop before exporting"
+" its content so we can import all the translations here."
+msgstr "Ne felejtse el bekapcsolni a(z) %2$s és a(z) %3$s bővítményeket az eredeti webáruházában a tartalom exportálása előtt, hogy itt importálhassuk az összes fordítást."
+
+#. translators: Notice shown on the WooCommerce product import screen when
+#. WooCommerce Multilingual is installed. %1$s: a link to the WooCommerce
+#. Multilingual documentation, %2$s: a link to the WPML Export and Import
+#. documentation. Each link reads as the plugin's name.
+#: classes/Integrations/Base/Notice.php:137
+#, php-format
+msgid ""
+"Looking to import your multilingual content? Remember to enable %1$s and "
+"%2$s in your original shop before exporting its content so we can import all"
+" the translations here."
+msgstr "Többnyelvű tartalmat szeretne importálni? Ne felejtse el bekapcsolni a(z) %1$s és a(z) %2$s bővítményeket az eredeti webáruházában a tartalom exportálása előtt, hogy itt importálhassuk az összes fordítást."
+
+#. translators: Name of the WooCommerce Multilingual plugin, used as the text
+#. and the tooltip of a link to its documentation. Keep the product name in
+#. English.
+#: classes/Integrations/Base/Notice.php:160
+msgid "WooCommerce Multilingual"
+msgstr "WooCommerce Multilingual"
+
+#: classes/Integrations/Base/Notice.php:178
+msgid "Switch to all languages"
+msgstr "Váltás az összes nyelvre"
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Integrations/WooCommerce/Commands/ConnectAttributesUsedInProductVariations.php:42
+msgid "Linking Product Attribute Translations"
+msgstr "Termékattribútum-fordítások összekapcsolása"
+
+#. translators: Description of the "Linking Product Attribute Translations"
+#. import step, shown under the step name; "their" refers to the product
+#. attributes.
+#: classes/Integrations/WooCommerce/Commands/ConnectAttributesUsedInProductVariations.php:50
+msgid ""
+"Connecting product attributes to their translations based on associated "
+"product variations."
+msgstr "Termékattribútumok összekapcsolása a fordításaikkal a hozzájuk tartozó termékváltozatok alapján."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Integrations/WooCommerce/Commands/ConnectRelatedProducts.php:59
+msgid "Updating Related Products On Translations"
+msgstr "Kapcsolódó termékek frissítése a fordításokban"
+
+#: classes/Integrations/WooCommerce/Commands/ConnectRelatedProducts.php:66
+msgid ""
+"Setting up-sells, cross-sells and grouped products references in the right "
+"language."
+msgstr "A felülértékesítési, keresztértékesítési és csoportosított termékek hivatkozásainak beállítása a megfelelő nyelven."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Integrations/WooCommerce/Commands/ProcessLocalAttributeLabels.php:29
+msgid "Importing Custom Attribute Labels"
+msgstr "Egyéni attribútumcímkék importálása"
+
+#: classes/Integrations/WooCommerce/Commands/ProcessLocalAttributeLabels.php:36
+msgid ""
+"Importing labels for product-specific (custom) attributes from the exported "
+"data."
+msgstr "Termékspecifikus (egyéni) attribútumok címkéinek importálása az exportált adatokból."
+
+#: classes/Integrations/WooCommerce/ExportNotice.php:40
+msgid "You are about to export all your products in all languages at once."
+msgstr "Most készül az összes termékét minden nyelven egyszerre exportálni."
+
+#. translators: Line of the notice shown on the WooCommerce product export
+#. screen. %1$s: a link to the WooCommerce Multilingual documentation, %2$s: a
+#. link to the WPML Export and Import documentation. Each link reads as the
+#. plugin's name.
+#: classes/Integrations/WooCommerce/ExportNotice.php:44
+#: classes/Integrations/WooCommerce/ExportNotice.php:51
+#, php-format
+msgid ""
+"Remember to install %1$s and %2$s on your new site before importing your "
+"content so we can restore all the translations."
+msgstr "Ne felejtse el telepíteni a(z) %1$s és a(z) %2$s bővítményeket az új webhelyére a tartalom importálása előtt, hogy visszaállíthassuk az összes fordítást."
+
+#. translators: Line of the notice shown on the WooCommerce product export
+#. screen. %s: the name of the language the products will be exported in,
+#. shown in bold.
+#: classes/Integrations/WooCommerce/ExportNotice.php:58
+#, php-format
+msgid "You are about to export your products in %s."
+msgstr "Most készül a termékeit %s nyelven exportálni."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Integrations/WooCommerce/WCML/Commands/ConnectAttributeTermsByPosition.php:41
+msgid "Connecting Product Attribute Translations"
+msgstr "Termékattribútum-fordítások összekapcsolása"
+
+#: classes/Integrations/WooCommerce/WCML/Commands/ConnectAttributeTermsByPosition.php:45
+msgid ""
+"Connecting the attribute terms of translated products with the attribute "
+"terms of their original products."
+msgstr "A lefordított termékek attribútumkifejezéseinek összekapcsolása az eredeti termékeik attribútumkifejezéseivel."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Integrations/WooCommerce/WCML/Commands/RegisterAttributesAsTranslatableTaxonomies.php:31
+msgid "Registering Product Attributes"
+msgstr "Termékattribútumok regisztrálása"
+
+#: classes/Integrations/WooCommerce/WCML/Commands/RegisterAttributesAsTranslatableTaxonomies.php:38
+msgid ""
+"Identifying and registering attributes created during product imports for "
+"translation."
+msgstr "A termékimportálás során létrehozott attribútumok azonosítása és fordíthatóként való regisztrálása."
+
+#. translators: Name of a step in the list of steps WPML Export and Import
+#. runs, shown on its screen and by its WP-CLI command. A noun phrase naming
+#. what the step does, not an instruction to the user.
+#: classes/Integrations/WooCommerce/WCML/Commands/SetAttributesLanguage.php:45
+msgid "Identifying Product Attribute Languages"
+msgstr "Termékattribútumok nyelvének azonosítása"
+
+#: classes/Integrations/WooCommerce/WCML/Commands/SetAttributesLanguage.php:52
+msgid ""
+"Identifying and setting the language of attributes created during product "
+"imports."
+msgstr "A termékimportálás során létrehozott attribútumok nyelvének azonosítása és beállítása."
+
+#. translators: Item in the WPML menu in the WordPress admin, opening the
+#. export and import screen. A noun phrase naming the screen, not an
+#. instruction.
+#: classes/UI/AdminPageHooks.php:49
+msgid "Export and Import"
+msgstr "Exportálás és importálás"
+
+#. translators: Option in the list of ways to create the content to import, on
+#. the WPML Export and Import screen. The user speaks in the first person. %s:
+#. the name of the tool, for example "WordPress" or "WooCommerce".
+#: classes/UI/AdminPageHooks.php:151
+#, php-format
+msgid "I’m using the built-in %s export/import tool"
+msgstr "A beépített %s exportáló/importáló eszközt használom"
+
+#. translators: Option in the list of ways to create the content to import, on
+#. the WPML Export and Import screen. The user speaks in the first person. %s:
+#. the name of the plugin, for example "WP Import Export".
+#: classes/UI/AdminPageHooks.php:156
+#, php-format
+msgid "I’m using %s plugin"
+msgstr "A(z) %s bővítményt használom"
+
+#. translators: Sentence in step 1 on the WPML Export and Import screen. %s:
+#. the name of the WPML Export and Import plugin.
+#: classes/UI/AdminPageHooks.php:161
+#, php-format
+msgid "%s sets the language of each item and connects its translations."
+msgstr "A(z) %s beállítja az egyes tételek nyelvét, és összekapcsolja a fordításaikat."
+
+#. translators: Sentence in step 1 on the WPML Export and Import screen, after
+#. the sentence that says what the plugin does.
+#: classes/UI/AdminPageHooks.php:163
+msgid ""
+"It does not change parent pages, menus, sticky posts, or the links and image"
+" IDs inside the content."
+msgstr "Nem módosítja a szülőoldalakat, a menüket, a kiemelt bejegyzéseket, illetve a tartalomban szereplő hivatkozásokat és képazonosítókat."
+
+#. translators: Sentence in step 1 on the WPML Export and Import screen. Verb,
+#. imperative.
+#: classes/UI/AdminPageHooks.php:165
+msgid "Check these after the import."
+msgstr "Ellenőrizze ezeket az importálás után."
+
+#. translators: Progress shown next to an import step on the WPML Export and
+#. Import screen. %1$d: the number of items already processed, %2$d: the total
+#. number of items. Keep the parentheses.
+#: classes/UI/AdminPageHooks.php:169
+#, php-format
+msgid "(%1$d/%2$d items)"
+msgstr "(%1$d/%2$d tétel)"
+
+#. translators: Shown next to an import step that left items behind, on the
+#. WPML Export and Import screen. %d: the number of items that were skipped.
+#: classes/UI/AdminPageHooks.php:171
+#, php-format
+msgid "%d skipped"
+msgstr "%d kihagyva"
+
+#. translators: Shown instead of a count next to an import step that has
+#. nothing to process, on the WPML Export and Import screen. Keep the
+#. parentheses.
+#: classes/UI/AdminPageHooks.php:173
+msgid "(no items)"
+msgstr "(nincs tétel)"
+
+#. translators: Shown next to an import step while it counts how much there is
+#. to process, on the WPML Export and Import screen.
+#: classes/UI/AdminPageHooks.php:175
+msgid "Counting items..."
+msgstr "Tételek számlálása..."
+
+#: classes/UI/AdminPageHooks.php:177
+msgid ""
+"First, tell us how you’re going to create the content that you’ll be "
+"importing:"
+msgstr "Először mondja el, hogyan fogja létrehozni az importálandó tartalmat:"
+
+#. translators: Button label that moves to the next question on the WPML
+#. Export and Import screen. Verb, imperative.
+#: classes/UI/AdminPageHooks.php:179
+msgid "Continue"
+msgstr "Folytatás"
+
+#. translators: Option in the list of ways to create the content to import, on
+#. the WPML Export and Import screen. The user speaks in the first person.
+#. %1$s and %2$s: the names of the two plugins used together.
+#: classes/UI/AdminPageHooks.php:184
+#, php-format
+msgid "I’m using %1$s and %2$s plugins"
+msgstr "A(z) %1$s és a(z) %2$s bővítményeket használom"
+
+#. translators: Option in the list of ways to create the content to import, on
+#. the WPML Export and Import screen. The user speaks in the first person.
+#: classes/UI/AdminPageHooks.php:187
+msgid "I’m using a different method to export from this site"
+msgstr "Más módszerrel exportálok erről a webhelyről"
+
+#. translators: Option answering where the content to import comes from, on
+#. the WPML Export and Import screen. The user speaks in the first person.
+#: classes/UI/AdminPageHooks.php:190
+msgid "I’m exporting the content from this site"
+msgstr "Erről a webhelyről exportálom a tartalmat"
+
+#: classes/UI/AdminPageHooks.php:191
+msgid "I’m exporting the content from a different website or system"
+msgstr "Egy másik webhelyről vagy rendszerből exportálom a tartalmat"
+
+#: classes/UI/AdminPageHooks.php:192
+msgid "Before importing, add language columns to your content"
+msgstr "Importálás előtt adjon nyelvi oszlopokat a tartalomhoz"
+
+#: classes/UI/AdminPageHooks.php:193
+msgid ""
+"Make sure that your import file includes the following columns (custom "
+"fields) with language information:"
+msgstr "Győződjön meg róla, hogy az importfájl tartalmazza a következő, nyelvi információkat tartalmazó oszlopokat (egyéni mezőket):"
+
+#. translators: Item in the list of columns the import file must have, on the
+#. WPML Export and Import screen. %s: the name of the column, shown in bold.
+#: classes/UI/AdminPageHooks.php:196
+#, php-format
+msgid ""
+"%s: A value that’s the same for all the translations of each item. In "
+"e-commerce sites this will often be the SKU."
+msgstr "%s: Olyan érték, amely az egyes tételek összes fordításánál azonos. Az e-kereskedelmi webhelyeken ez gyakran az SKU."
+
+#. translators: Item in the list of columns the import file must have, on the
+#. WPML Export and Import screen. %s: the name of the column, shown in bold.
+#: classes/UI/AdminPageHooks.php:198
+#, php-format
+msgid "%s: The language code for each item."
+msgstr "%s: Az egyes tételek nyelvi kódja."
+
+#. translators: Sentence introducing the list of optional import file columns,
+#. on the WPML Export and Import screen.
+#: classes/UI/AdminPageHooks.php:202
+msgid "And, you can include these two columns if needed:"
+msgstr "Szükség esetén ezt a két oszlopot is megadhatja:"
+
+#. translators: Item in the list of columns the import file can also have, on
+#. the WPML Export and Import screen. %s: the name of the column, shown in
+#. bold.
+#: classes/UI/AdminPageHooks.php:205
+#, php-format
+msgid ""
+"%s: If this item is a translation, set this column to the code of the source"
+" language. If it’s not a translation, keep it empty."
+msgstr "%s: Ha ez a tétel fordítás, állítsa be ebben az oszlopban a forrásnyelv kódját. Ha nem fordítás, hagyja üresen."
+
+#. translators: Item in the list of columns the import file can also have, on
+#. the WPML Export and Import screen. %s: the name of the column, shown in
+#. bold.
+#: classes/UI/AdminPageHooks.php:207
+#, php-format
+msgid ""
+"%s: Set to “publish”, “draft”, “pending” or “private” to determine the "
+"publishing status of the post after adjusting languages. Usually, this value"
+" will be “publish”."
+msgstr "%s: Állítsa „publish”, „draft”, „pending” vagy „private” értékre annak meghatározásához, hogy milyen közzétételi állapotú legyen a bejegyzés a nyelvek beállítása után. Ez az érték általában „publish”."
+
+#. translators: Sentence introducing an example import file, on the WPML
+#. Export and Import screen. %s: the site's languages, as a comma-separated
+#. list.
+#: classes/UI/AdminPageHooks.php:211
+#, php-format
+msgid ""
+"Here is an example of importing two items, into your site’s languages (%s):"
+msgstr "Íme egy példa két tétel importálására a webhely nyelveire (%s):"
+
+#: classes/UI/AdminPageHooks.php:213
+msgid ""
+"Once you’ve added language columns to your multilingual content file, import"
+" it to your site using whatever import plugin you prefer."
+msgstr "Miután nyelvi oszlopokat adott hozzá a többnyelvű tartalmat tartalmazó fájlhoz, importálja azt a webhelyére az Ön által választott importálási bővítménnyel."
+
+#. translators: Sentence in step 2 on the WPML Export and Import screen, for
+#. content added by code (a custom script or an importer started from PHP or
+#. WP-CLI) instead of an import plugin.
+#: classes/UI/AdminPageHooks.php:216
+msgid ""
+"Do you add the content with your own code instead of an import plugin? Then "
+"create new content as drafts yourself."
+msgstr "A tartalmat importálási bővítmény helyett saját kóddal adja hozzá? Akkor saját maga hozza létre az új tartalmat vázlatként."
+
+#. translators: Sentence in step 2 on the WPML Export and Import screen, after
+#. the advice to create new content as drafts. %s: the name of the WPML Export
+#. and Import plugin.
+#: classes/UI/AdminPageHooks.php:218
+#, php-format
+msgid "%s does this for you only with the import plugins it supports."
+msgstr "A %s ezt csak az általa támogatott importálási bővítményekkel végzi el Ön helyett."
+
+#: classes/UI/AdminPageHooks.php:220
+msgid "Before importing, your content needs language information"
+msgstr "Importálás előtt a tartalomnak nyelvi információkat kell tartalmaznia"
+
+#. translators: Heading of step 1 on the WPML Export and Import screen. %s:
+#. the name of the WPML Export and Import plugin.
+#: classes/UI/AdminPageHooks.php:222
+#, php-format
+msgid "%s will add the necessary language information to your export."
+msgstr "A %s hozzáadja a szükséges nyelvi információkat az exporthoz."
+
+#: classes/UI/AdminPageHooks.php:223
+msgid ""
+"Import your multilingual content file into the site using whatever import "
+"plugin you prefer."
+msgstr "Importálja a többnyelvű tartalmat tartalmazó fájlt a webhelyére az Ön által választott importálási bővítménnyel."
+
+#. translators: Heading of step 2 on the WPML Export and Import screen. Verb,
+#. imperative.
+#: classes/UI/AdminPageHooks.php:225
+msgid "Use your favorite import plugin"
+msgstr "Használja kedvenc importálási bővítményét"
+
+#: classes/UI/AdminPageHooks.php:226
+msgid ""
+"After you import the content, it will still not show the correct language "
+"information. So, we recommend that you import new content as Drafts. If "
+"you’re importing updates, you can keep already-published content as "
+"published."
+msgstr "A tartalom importálása után a nyelvi információk még nem lesznek helyesek. Ezért azt javasoljuk, hogy az új tartalmat vázlatként importálja. Frissítések importálásakor a már közzétett tartalmat közzétettként hagyhatja."
+
+#. translators: Title of step 3 on the WPML Export and Import screen. %s: the
+#. name of the WPML Export and Import plugin.
+#: classes/UI/AdminPageHooks.php:228
+#, php-format
+msgid "Return here, to %s, to set languages and connect translations"
+msgstr "Térjen vissza ide, a %s oldalra, a nyelvek beállításához és a fordítások összekapcsolásához"
+
+#. translators: Text of step 3 on the WPML Export and Import screen. %s: the
+#. name of the WPML Export and Import plugin.
+#: classes/UI/AdminPageHooks.php:230
+#, php-format
+msgid ""
+"When you visit this page after you’ve imported content with language "
+"information, you’ll be able to run %s to apply languages and connect "
+"translations."
+msgstr "Ha a nyelvi információkat tartalmazó tartalom importálása után felkeresi ezt az oldalt, futtathatja a %s műveletet a nyelvek alkalmazásához és a fordítások összekapcsolásához."
+
+#. translators: Last line of step 3 on the WPML Export and Import screen.
+#. %1$s: opening link tag, %2$s: the name of the WPML Export and Import
+#. plugin, %3$s: closing link tag.
+#: classes/UI/AdminPageHooks.php:234
+#, php-format
+msgid ""
+"Already imported and still seeing this screen? %1$sTroubleshooting %2$s%3$s."
+msgstr "Már importált, de még mindig ezt a képernyőt látja? %1$sHibaelhárítás %2$s%3$s."
+
+#: classes/UI/AdminPageHooks.php:241
+msgid "How to Export and Import Content in Multiple Languages"
+msgstr "Tartalom exportálása és importálása több nyelven"
+
+#. translators: Title of the WPML Export and Import screen once content has
+#. been imported. %s: the name of the WPML Export and Import plugin.
+#: classes/UI/AdminPageHooks.php:243
+#, php-format
+msgid "%s is ready to update your imported content"
+msgstr "A %s készen áll az importált tartalom frissítésére"
+
+#. translators: Text on the WPML Export and Import screen, above the list of
+#. import steps. %1$d: the number of imported terms, %2$d: the number of
+#. imported posts.
+#: classes/UI/AdminPageHooks.php:246
+#, php-format
+msgid ""
+"Good job. We see %1$d terms and %2$d posts that are imported and need "
+"language information."
+msgstr "Szép munka! %1$d importált kifejezést és %2$d bejegyzést látunk, amelyekhez nyelvi információkat kell megadni."
+
+#. translators: Text on the WPML Export and Import screen, above the list of
+#. import steps. %d: the number of imported terms.
+#: classes/UI/AdminPageHooks.php:249
+#, php-format
+msgid ""
+"Good job. We see %d terms that are imported and need language information."
+msgstr "Szép munka! %d importált kifejezést látunk, amelyekhez nyelvi információkat kell megadni."
+
+#. translators: Text on the WPML Export and Import screen, above the list of
+#. import steps. %d: the number of imported posts.
+#: classes/UI/AdminPageHooks.php:251
+#, php-format
+msgid ""
+"Good job. We see %d posts that are imported and need language information."
+msgstr "Szép munka! %d importált bejegyzést látunk, amelyekhez nyelvi információkat kell megadni."
+
+#. translators: Button label on the WPML Export and Import screen that starts
+#. the import steps. Verb, imperative; "WPML Import" is the name of the
+#. plugin.
+#: classes/UI/AdminPageHooks.php:254
+msgid "Run WPML Import"
+msgstr "WPML Import futtatása"
+
+#. translators: Heading shown on the WPML Export and Import screen once every
+#. import step has finished. A noun phrase, not an instruction.
+#: classes/UI/AdminPageHooks.php:256
+msgid "Multilingual Import Complete"
+msgstr "A többnyelvű importálás befejeződött"

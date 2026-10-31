@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: Buy Again for WooCommerce 5.3.0\n"
+"Project-Id-Version: Buy Again for WooCommerce 6.7.0\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19 07:57+0200\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,31 +18,162 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: Buy Again for WooCommerce\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 5.3.0\n"
+"X-Plugin-Version: 6.7.0\n"
 
-#: inc/admin/menu/wp-list-table/class-bya-product-details-list-table.php:177
+#. Plugin Name of the plugin
+#: buy-again-for-woocommerce.php
+msgid "Buy Again for WooCommerce"
+msgstr "Újravásárlás a WooCommerce-hez"
+
+#. Description of the plugin
+#: buy-again-for-woocommerce.php
+msgid ""
+"Your customers can quickly purchase the products which they had purchased "
+"earlier in your site."
+msgstr "Vásárlói gyorsan újra megvásárolhatják azokat a termékeket, amelyeket korábban már megvásároltak a webhelyén."
+
+#. Author of the plugin
+#: buy-again-for-woocommerce.php
+msgid "Flintop"
+msgstr "Flintop"
+
+#. Author URI of the plugin
+#: buy-again-for-woocommerce.php
+msgid "https://woo.com/vendor/flintop/"
+msgstr "https://woo.com/vendor/flintop/"
+
+#: inc/abstracts/class-bya-abstract-email.php:211
+msgid "Enable/Disable"
+msgstr "Engedélyezés/Letiltás"
+
+#: inc/abstracts/class-bya-abstract-email.php:213
+msgid "Enable this email notification"
+msgstr "Ezen e-mail értesítés engedélyezése"
+
+#: inc/abstracts/class-bya-abstract-email.php:219
+msgid "Recipient(s)"
+msgstr "Címzett(ek)"
+
+#. translators: 1: admin email
+#: inc/abstracts/class-bya-abstract-email.php:222
 #, php-format
-msgid "#%s Product was deleted"
-msgstr "A #%s termék törölve lett"
+msgid "Enter recipients (comma separated) for this email. Defaults to %1$s."
+msgstr ""
+"Adja meg az e-mail címzettjeit (vesszővel elválasztva). Alapértelmezés: "
+"%1$s."
 
-#: inc/admin/menu/class-bya-admin-list-table-email-log.php:240
+#: inc/abstracts/class-bya-abstract-email.php:230
+msgid "Email Subject"
+msgstr "E-mail tárgya"
+
+#. translators: 1: email subject
+#. translators: 1: email heading
+#: inc/abstracts/class-bya-abstract-email.php:233
+#: inc/abstracts/class-bya-abstract-email.php:242
 #, php-format
-msgid "%1$s Email: %2$s"
-msgstr "%1$s E-mail: %2$s"
+msgid "Defaults to <code>%1$s</code>"
+msgstr "Alapértelmezett érték: <code>%1$s</code>"
 
-#: inc/admin/menu/class-bya-admin-list-table-email-log.php:230
+#: inc/abstracts/class-bya-abstract-email.php:239
+msgid "Email Heading"
+msgstr "E-mail-címsor"
+
+#: inc/abstracts/class-bya-abstract-email.php:249
+msgid "Send Email to Admin"
+msgstr "E-mail küldése az adminisztrátornak"
+
+#: inc/abstracts/class-bya-settings-page.php:221
+msgid "Your settings have been saved"
+msgstr "A beállítások elmentve"
+
+#: inc/abstracts/class-bya-settings-page.php:247
+msgid "Your settings have been reset"
+msgstr "A beállítások alaphelyzetbe álltak"
+
+#: inc/admin/class-bya-admin-ajax.php:77
+msgid "No Products found"
+msgstr "Nem található termék"
+
+#: inc/admin/class-bya-admin-ajax.php:136
+msgid "No Users found"
+msgstr "Nem található felhasználó"
+
+#: inc/admin/class-bya-admin-ajax.php:180
+#: inc/admin/class-bya-admin-ajax.php:633
+#: inc/admin/class-bya-admin-ajax.php:674
+msgid "Invalid Request"
+msgstr "Érvénytelen kérés"
+
+#: inc/admin/class-bya-admin-ajax.php:268
+#: inc/admin/class-bya-admin-ajax.php:404
+#: inc/admin/class-bya-admin-ajax.php:500
+msgid "This action is currently unavailable."
+msgstr "Ez a művelet jelenleg nem érhető el."
+
+#: inc/admin/class-bya-admin-ajax.php:274
+#: inc/admin/class-bya-admin-ajax.php:410
+#: inc/admin/class-bya-admin-ajax.php:506
+#: inc/frontend/class-bya-frontend-assets.php:93
+msgid "Please select at least one product."
+msgstr "Kérjük, válasszon ki legalább egy terméket."
+
+#: inc/admin/class-bya-admin-ajax.php:292
+#: inc/admin/class-bya-admin-ajax.php:428
+#: inc/admin/class-bya-admin-ajax.php:524
+#: inc/admin/class-bya-admin-ajax.php:1549
+msgid "Invalid product."
+msgstr "Érvénytelen termék."
+
+#: inc/admin/class-bya-admin-ajax.php:323
+#: inc/admin/class-bya-admin-ajax.php:341
+#: inc/admin/class-bya-admin-ajax.php:554
+#: inc/admin/class-bya-admin-ajax.php:593
+msgid "This product could not be added to your cart."
+msgstr "Ezt a terméket nem sikerült a kosárba tenni."
+
+#. translators: %d: number of products that could not be added to the cart
+#. translators: %d: number of products that could not be added to favourites
+#: inc/admin/class-bya-admin-ajax.php:361
+#: inc/admin/class-bya-admin-ajax.php:460
 #, php-format
-msgid "%1$s Name: %2$s"
-msgstr "%1$s Név: %2$s"
+msgid "%d product could not be added."
+msgid_plural "%d products could not be added."
+msgstr[0] "%d terméket nem sikerült hozzáadni."
+msgstr[1] "%d terméket nem sikerült hozzáadni."
 
-#: inc/admin/menu/class-bya-admin-list-table-email-log.php:366
+#: inc/admin/class-bya-admin-ajax.php:366
+#: inc/admin/class-bya-admin-ajax.php:570
+msgid "None of the selected products could be added to your cart."
+msgstr "A kiválasztott termékek közül egyet sem sikerült a kosárba tenni."
+
+#: inc/admin/class-bya-admin-ajax.php:400
+#: inc/admin/class-bya-admin-ajax.php:1539
+msgid "You must be logged in to manage favourites."
+msgstr "A kedvencek kezeléséhez be kell jelentkeznie."
+
+#. translators: %d: number of products added to favourites
+#: inc/admin/class-bya-admin-ajax.php:452
 #, php-format
-msgid "%d Email Log deleted."
-msgid_plural "%d Email Log permanently deleted."
-msgstr[0] ""
-msgstr[1] ""
+msgid "%d product was added to your favourites."
+msgid_plural "%d products were added to your favourites."
+msgstr[0] "%d termék hozzáadva a kedvencekhez."
+msgstr[1] "%d termék hozzáadva a kedvencekhez."
 
-#: inc/frontend/class-bya-cart-handler.php:317
+#: inc/admin/class-bya-admin-ajax.php:465
+msgid "None of the selected products could be added to your favourites."
+msgstr "A kiválasztott termékek közül egyet sem sikerült a kedvencekhez adni."
+
+#: inc/admin/class-bya-admin-ajax.php:724
+#: inc/admin/class-bya-admin-ajax.php:730
+msgid "Invalid Order."
+msgstr "Hibás rendelés."
+
+#: inc/admin/class-bya-admin-ajax.php:736
+msgid "You do not have permission to access this order."
+msgstr "Ön nem rendelkezik jogosultsággal a rendelés megtekintéséhez."
+
+#. translators: %d item count
+#: inc/admin/class-bya-admin-ajax.php:853
 #, php-format
 msgid ""
 "%d item from your previous order is currently unavailable and could not be "
@@ -50,1168 +181,447 @@ msgid ""
 msgid_plural ""
 "%d items from your previous order are currently unavailable and could not be"
 " added to your cart."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Az előző rendeléséből %d tétel jelenleg nem érhető el, ezért nem lehetett a kosarába tenni."
+msgstr[1] "Az előző rendeléséből %d tétel jelenleg nem érhető el, ezért nem lehetett a kosarába tenni."
 
-#: inc/admin/menu/class-bya-admin-list-table-email-log.php:260
+#: inc/admin/class-bya-admin-ajax.php:866
+msgid "The cart has been filled with the items from your previous order."
+msgstr "A kosár az előző rendelés tételeivel lett feltöltve."
+
+#: inc/admin/class-bya-admin-ajax.php:889
+#: inc/admin/class-bya-admin-ajax.php:931
+#: inc/admin/class-bya-admin-ajax.php:989
+#: inc/admin/class-bya-admin-ajax.php:1170
+msgid "Please enter an email id"
+msgstr "Kérjük, adjon meg egy e-mail-címet"
+
+#: inc/admin/class-bya-admin-ajax.php:895
+#: inc/admin/class-bya-admin-ajax.php:937
+#: inc/admin/class-bya-admin-ajax.php:995
+msgid "Please enter a valid email"
+msgstr "Kérjük, adjon meg érvényes e-mail-címet"
+
+#: inc/admin/class-bya-admin-ajax.php:913
+msgid "Email Sent Successfully."
+msgstr "E-mail sikeresen elküldve."
+
+#: inc/admin/class-bya-admin-ajax.php:949
+msgid "No Data Found for this Email ID"
+msgstr "Ehhez az e-mail-címhez tartozó ID-hoz nem található adat"
+
+#: inc/admin/class-bya-admin-ajax.php:971
+msgid "OTP sent! Please check your email."
+msgstr "Az egyszer használatos jelszót elküldtük! Kérjük, ellenőrizze az e-mailjeit."
+
+#: inc/admin/class-bya-admin-ajax.php:1001
+msgid "OTP expired or not found. Please request a new one."
+msgstr "Az egyszer használatos jelszó lejárt vagy nem található. Kérjük, kérjen újat."
+
+#: inc/admin/class-bya-admin-ajax.php:1008
+msgid "Too many failed attempts. Please request a new OTP."
+msgstr "Túl sok sikertelen próbálkozás. Kérjük, kérjen új egyszer használatos jelszót."
+
+#: inc/admin/class-bya-admin-ajax.php:1012
+msgid "Please enter OTP"
+msgstr "Kérjük, adja meg az egyszer használatos jelszót"
+
+#: inc/admin/class-bya-admin-ajax.php:1020
+msgid "Invalid OTP. Please request a new one."
+msgstr "Hibás egyszer használatos jelszó. Kérjük, kérjen újat."
+
+#: inc/admin/class-bya-admin-ajax.php:1049
+#: inc/frontend/class-bya-frontend-assets.php:158
+msgid "Something went wrong. Please try again later."
+msgstr "Valami hiba történt. Kérjük, próbálja meg később újra."
+
+#: inc/admin/class-bya-admin-ajax.php:1057
+msgid "OTP verified successfully."
+msgstr "Az egyszer használatos jelszó ellenőrzése sikeres."
+
+#: inc/admin/class-bya-admin-ajax.php:1074
+#: inc/admin/class-bya-admin-ajax.php:1211
+#: inc/admin/class-bya-admin-ajax.php:1285
+#: inc/admin/class-bya-admin-ajax.php:1340
+#: inc/admin/class-bya-admin-ajax.php:1468
+#: inc/admin/class-bya-admin-ajax.php:1577
+msgid "Unauthorized."
+msgstr "Nincs jogosultsága."
+
+#: inc/admin/class-bya-admin-ajax.php:1082
+#: inc/admin/class-bya-admin-ajax.php:1088
+#: inc/data-stores/class-bya-customer-data-store-cpt.php:128
+msgid "Invalid Customer."
+msgstr "Érvénytelen vásárló."
+
+#: inc/admin/class-bya-admin-ajax.php:1102
+#: inc/admin/menu/views/html-customer-details.php:27
+msgid "Subscribed"
+msgstr "Feliratkozott"
+
+#: inc/admin/class-bya-admin-ajax.php:1103
+#: inc/admin/menu/views/html-customer-details.php:27
+msgid "Unsubscribed"
+msgstr "Leiratkozott"
+
+#: inc/admin/class-bya-admin-ajax.php:1105
+msgid "This customer will receive Buy Again reminder emails."
+msgstr "Ez a vásárló megkapja a Buy Again emlékeztető e-mailjeit."
+
+#: inc/admin/class-bya-admin-ajax.php:1106
+msgid "This customer will no longer receive Buy Again reminder emails."
+msgstr "Ez a vásárló többé nem kapja meg a Buy Again emlékeztető e-mailjeit."
+
+#: inc/admin/class-bya-admin-ajax.php:1131
+#: inc/class-bya-email-subscription.php:193
+#: inc/class-bya-email-subscription.php:530
+msgid "Please enter a valid email address."
+msgstr "Kérjük, adjon meg érvényes e-mail-címet."
+
+#: inc/admin/class-bya-admin-ajax.php:1138
+#: inc/class-bya-email-subscription.php:539
+msgid ""
+"To start receiving these emails again, please use the link from one of our "
+"emails or log in to your account."
+msgstr "Ha ismét szeretné megkapni ezeket az e-maileket, kérjük, használja valamelyik e-mailünkben található linket, vagy jelentkezzen be a fiókjába."
+
+#: inc/admin/class-bya-admin-ajax.php:1219
+#: inc/admin/class-bya-admin-ajax.php:1293
+#: inc/admin/class-bya-admin-ajax.php:1348
+#: inc/admin/class-bya-admin-ajax.php:1585
+msgid "Invalid Customer id"
+msgstr "Hibás vásárlói ID"
+
+#: inc/admin/class-bya-admin-ajax.php:1225
+#: inc/admin/class-bya-admin-ajax.php:1299
+#: inc/admin/class-bya-admin-ajax.php:1354
+#: inc/admin/class-bya-admin-ajax.php:1591
+msgid "Invalid Customer Object"
+msgstr "Hibás vásárlói objektum"
+
+#: inc/admin/class-bya-admin-assets.php:152
+#: inc/admin/menu/tabs/advanced.php:294
+msgid "Import"
+msgstr "Importálás"
+
+#: inc/admin/class-bya-admin-assets.php:153
+#: inc/admin/menu/tabs/advanced.php:315
+msgid "Verify Database"
+msgstr "Adatbázis ellenőrzése"
+
+#: inc/admin/class-bya-admin-assets.php:154
+msgid "Processing..."
+msgstr "Feldolgozás..."
+
+#: inc/admin/class-bya-admin-assets.php:155
+msgid "An error occurred. Please try again."
+msgstr "Hiba történt. Kérjük, próbálja újra."
+
+#: inc/admin/class-bya-admin-assets.php:166
+msgid "Buy Again Analytics"
+msgstr "Újravásárlási analitika"
+
+#: inc/admin/class-bya-admin-assets.php:168
+msgid "Customer"
+msgstr "Vásárló"
+
+#: inc/admin/class-bya-admin-assets.php:169
+#: inc/admin/menu/views/html-report.php:102
+msgid "Revenue"
+msgstr "Bevétel"
+
+#: inc/admin/class-bya-admin-assets.php:170 inc/bya-common-functions.php:1868
+msgid "Order"
+msgstr "Sorrend"
+
+#: inc/admin/class-bya-admin-assets.php:171
+#: inc/admin/menu/views/html-report.php:99
+msgid "Product"
+msgstr "Termék"
+
+#: inc/admin/class-bya-admin-assets.php:172
+#: inc/admin/menu/views/html-report.php:101
+msgid "Quantity"
+msgstr "Mennyiség"
+
+#: inc/admin/class-bya-admin-customer.php:65
+#: inc/admin/menu/wp-list-table/class-bya-customer-list-table.php:300
+#: inc/class-bya-emails.php:240
+msgid "Guest"
+msgstr "Vendég"
+
+#: inc/admin/menu/class-bya-email-log-list-table.php:60
+#: inc/bya-common-functions.php:1834
+msgid "Username"
+msgstr "Felhasználónév"
+
+#: inc/admin/menu/class-bya-email-log-list-table.php:61
+msgid "Email ID"
+msgstr "E-mail azonosító"
+
+#: inc/admin/menu/class-bya-email-log-list-table.php:62
+msgid "Email Type"
+msgstr "E-mail típusa"
+
+#: inc/admin/menu/class-bya-email-log-list-table.php:63
+msgid "Date & Time"
+msgstr "Dátum és idő"
+
+#: inc/admin/menu/class-bya-email-log-list-table.php:64
+#: inc/admin/menu/class-bya-email-log-list-table.php:237
+#: inc/admin/menu/class-bya-email-log-list-table.php:384
+msgid "Sent"
+msgstr "Elküldve"
+
+#: inc/admin/menu/class-bya-email-log-list-table.php:84
+msgid "Search by name or email"
+msgstr "Keresés név vagy e-mail-cím alapján"
+
+#: inc/admin/menu/class-bya-email-log-list-table.php:135
+#: inc/bya-common-functions.php:1411
+msgid "All"
+msgstr "Összes"
+
+#: inc/admin/menu/class-bya-email-log-list-table.php:226
+msgid "Filter by email type"
+msgstr "Szűrés e-mail-típus szerint"
+
+#: inc/admin/menu/class-bya-email-log-list-table.php:228
+msgid "All email types"
+msgstr "Összes e-mail-típus"
+
+#: inc/admin/menu/class-bya-email-log-list-table.php:234
+msgid "Filter by delivery status"
+msgstr "Szűrés kézbesítési állapot szerint"
+
+#: inc/admin/menu/class-bya-email-log-list-table.php:236
+msgid "All statuses"
+msgstr "Összes állapot"
+
+#: inc/admin/menu/class-bya-email-log-list-table.php:238
+#: inc/admin/menu/class-bya-email-log-list-table.php:384
+msgid "Failed"
+msgstr "Sikertelen"
+
+#: inc/admin/menu/class-bya-menu-management.php:122
+#: inc/emails/class-bya-email-buy-again-reminder.php:49
+#: inc/frontend/class-bya-my-account-handler.php:107
+#: inc/frontend/class-bya-my-account-handler.php:199
+#: inc/shortcodes/class-bya-shortcode-buy-again-carousel.php:133
+#: inc/widgets/class-bya-widget-buy-again-table.php:93
+#: templates/buy-again-carousel.php:20
+msgid "Buy Again"
+msgstr "Újravásárlás"
+
+#: inc/admin/menu/class-bya-menu-management.php:124
+#: inc/admin/menu/views/html-customer.php:18
+#: inc/class-bya-register-post-types.php:73
+#: inc/class-bya-register-post-types.php:74
+msgid "Purchase History"
+msgstr "Vásárlási előzmények"
+
+#: inc/admin/menu/class-bya-menu-management.php:125
+#: inc/class-bya-register-post-types.php:109
+#: inc/class-bya-register-post-types.php:110
+#: inc/class-bya-register-post-types.php:111
+msgid "Email Log"
+msgstr "E-mail-napló"
+
+#: inc/admin/menu/class-bya-menu-management.php:126
+msgid "Reports"
+msgstr "Jelentések"
+
+#: inc/admin/menu/class-bya-menu-management.php:129
+#: inc/class-bya-install.php:403
+msgid "Settings"
+msgstr "Beállítások"
+
+#: inc/admin/menu/class-bya-menu-management.php:227
+msgid "Customers Who Bought Again"
+msgstr "Akik ismét vásároltak"
+
+#. translators: %s: all time customer count
+#: inc/admin/menu/class-bya-menu-management.php:231
 #, php-format
-msgctxt "%s = human-readable time difference"
-msgid "%s ago"
-msgstr "%s ezelőtt"
+msgid "%s all time"
+msgstr "Összesen %s"
 
-#: inc/bya-common-functions.php:1189
-#: inc/bya-common-functions.php:1225
-#, php-format
-msgid "%s not found in database"
-msgstr "%s nem található az adatbázisban"
+#: inc/admin/menu/class-bya-menu-management.php:235
+msgid "Purchased Order Count"
+msgstr "Vásárlások száma"
 
-#: inc/class-bya-emails.php:129
-#, php-format
-msgid "<b>%1$s</b> email has been sent to %2$s."
-msgstr "<b>%1$s</b> e-mail elküldve %2$s részére."
+#: inc/admin/menu/class-bya-menu-management.php:241
+msgid "Purchased Product Count"
+msgstr "Megvásárolt termékek száma"
 
-#: inc/bya-common-functions.php:547
-msgid "Action"
-msgstr "Művelet"
+#: inc/admin/menu/class-bya-menu-management.php:247
+msgid "Purchased Product Quantity"
+msgstr "Megvásárolt termékek mennyisége"
 
-#: inc/admin/menu/tabs/general.php:273
-msgid "Action Column"
-msgstr "Művelet oszlop"
+#: inc/admin/menu/class-bya-menu-management.php:253
+msgid "Total Amount"
+msgstr "Teljes összeg"
 
-#: inc/admin/menu/tabs/localization.php:127
-msgid "Action Column Label"
-msgstr "Művelet oszlop felirata"
+#: inc/admin/menu/class-bya-menu-management.php:259
+msgid "Average Buy Again Order Value"
+msgstr "Az újravásárlási rendelések átlagos értéke"
 
-#: inc/bya-layout-functions.php:208
-msgid "Activate"
-msgstr "Aktiválás"
+#: inc/admin/menu/class-bya-settings.php:67
+#: inc/admin/menu/class-bya-settings.php:85
+msgid "Permission denied."
+msgstr "Hozzáférés megtagadva."
 
-#: inc/admin/menu/tabs/localization.php:134
-msgid "Add to Cart Button Label"
-msgstr "Kosárba gomb felirata"
+#: inc/admin/menu/class-bya-settings.php:73
+#: inc/admin/menu/class-bya-settings.php:124
+msgid "Database update added in scheduler"
+msgstr "Adatbázis-frissítés felvéve az ütemezőbe"
 
-#: templates/display-input-fields.php:95
-msgid "Add to cart"
-msgstr "Kosárba"
+#: inc/admin/menu/class-bya-settings.php:91
+#: inc/admin/menu/class-bya-settings.php:135
+msgid "Database verified successfully"
+msgstr "Adatbázis sikeresen ellenőrizve"
+
+#: inc/admin/menu/class-bya-settings.php:93
+msgid "Database verification failed. Some tables are missing."
+msgstr "Az adatbázis ellenőrzése sikertelen. Néhány tábla hiányzik."
+
+#: inc/admin/menu/class-bya-settings.php:525
+msgid "Choose Image"
+msgstr "Kép kiválasztása"
 
 #: inc/admin/menu/tabs/advanced.php:26
 msgid "Advanced"
 msgstr "Speciális"
 
-#: inc/bya-common-functions.php:1031
-msgid "All"
-msgstr "Összes"
-
-#: inc/admin/menu/tabs/advanced.php:77
-msgid "All Product(s)"
-msgstr "Összes termék"
-
-#: inc/admin/menu/tabs/advanced.php:130
-msgid "All User(s)"
-msgstr "Összes felhasználó"
-
-#: inc/admin/menu/class-bya-admin-list-table-email-log.php:115
-msgid "All Vendor(s)"
-msgstr "Összes eladó"
-
-#: inc/admin/menu/tabs/general.php:202
-msgid "Allow Users to Search by Product Category"
-msgstr "Engedélyezze, hogy a felhasználók termékkategória szerint keressenek"
-
-#: inc/admin/menu/tabs/general.php:195
-msgid "Allow Users to Search by Products"
-msgstr "Engedélyezze, hogy a felhasználók termékek szerint keressenek"
-
-#: inc/admin/menu/class-bya-buy-again-list-table.php:54
-msgid "Amount Spent Using Buy Again"
-msgstr "Újravásárlás használatával elköltött összeg"
-
-#: templates/myaccount-buy-again-table.php:59
-#: templates/buy-again-cart.php:45
-msgid "Awaiting product image"
-msgstr "Termékképre vár"
-
-#: inc/admin/menu/tabs/advanced.php:190
-msgid "Based on Last order"
-msgstr "Az utolsó rendelés alapján"
-
-#: inc/admin/menu/tabs/advanced.php:191
-msgid "Based on Product Name"
-msgstr "A terméknév alapján"
-
-#: inc/frontend/class-bya-my-account-handler.php:66
-#: inc/frontend/class-bya-my-account-handler.php:157
-#: inc/emails/class-bya-email-buy-again-reminder.php:42
-#: inc/widgets/class-bya-widget-buy-again.php:25
-#: inc/widgets/class-bya-widget-buy-again.php:29
-#: inc/widgets/class-bya-widget-buy-again.php:64
-#: inc/widgets/class-bya-widget-buy-again-link.php:29
-#: inc/widgets/class-bya-widget-buy-again-link.php:64
-#: inc/admin/menu/class-bya-menu-management.php:109
-msgid "Buy Again"
-msgstr "Újravásárlás"
-
-#: inc/class-bya-pages.php:50
-msgctxt "Page title"
-msgid "Buy Again"
-msgstr "Újravásárlás"
-
-#: inc/emails/class-bya-email-buy-again-reminder.php:28
-msgid "Buy Again Email Reminder"
-msgstr "Újravásárlási e-mailes emlékeztető"
-
-#: inc/admin/menu/tabs/general.php:151
-#: inc/admin/menu/tabs/general.php:164
-msgid "Buy Again Menu"
-msgstr "Újravásárlás menü"
-
-#: inc/admin/menu/tabs/localization.php:57
-msgid "Buy Again My Account Page Label"
-msgstr "Újravásárlás Fiókom oldal felirat"
-
-#: inc/class-bya-pages.php:120
-#: inc/admin/menu/tabs/localization.php:53
-msgid "Buy Again Page"
-msgstr "Újravásárlás oldal"
-
-#: inc/class-bya-register-post-status.php:64
-#: inc/widgets/class-bya-widget-buy-again-link.php:25
-#: inc/widgets/class-bya-widget-buy-again-link.php:75
-msgid "Buy Again Products"
-msgstr "Újravásárolható termékek"
-
-#: inc/class-bya-register-post-types.php:70
-msgid "Buy Again Purchase History"
-msgstr "Újravásárlási előzmények"
-
-#: inc/admin/menu/tabs/general.php:131
-msgid "Buy Again Table"
-msgstr "Újravásárlási táblázat"
-
-#: inc/admin/menu/tabs/advanced.php:183
-msgid "Buy Again Table Settings"
-msgstr "Újravásárlási táblázat beállításai"
-
-#: inc/admin/menu/tabs/general.php:329
-msgid "Buy Again Tag Customization"
-msgstr "Újravásárlási címke testreszabása"
-
-#: inc/admin/menu/tabs/advanced.php:125
-msgid "Buy Again can be accessed by"
-msgstr "Az Újravásárlás a következők számára érhető el"
-
-#: inc/privacy/class-bya-privacy.php:41
-msgid "Buy Again for WooCommerce"
-msgstr "Újravásárlás a WooCommerce-hez"
-
-#: inc/class-bya-install.php:105
-#, php-format
-msgid ""
-"Buy Again plugin will not work properly some of Tables are missing in the "
-"database %s. Please verify the database."
-msgstr ""
-"Az Újravásárlás bővítmény nem fog megfelelően működni, mivel néhány tábla "
-"hiányzik a(z) %s adatbázisból. Kérjük, ellenőrizze az adatbázist."
-
-#: inc/admin/menu/tabs/advanced.php:187
-msgid "Buy Again table Sort By"
-msgstr "Újravásárlási táblázat rendezése"
-
-#: inc/admin/menu/tabs/advanced.php:72
-msgid "Buy Again will be Displayed for"
-msgstr "Az Újravásárlás a következők számára lesz megjelenítve"
-
-#: templates/display-input-fields.php:21
-msgid "Buy Now"
-msgstr "Vásárlás most"
-
-#: inc/admin/menu/tabs/localization.php:140
-msgid "Buy Now Button Label"
-msgstr "Vásárlás most gomb felirata"
-
-#: inc/emails/class-bya-email-buy-again-reminder.php:29
-msgid ""
-"Buy again email reminder will be sent to the users based on their past(Last)"
-" purchases(For every last purchase they will receive the email)"
-msgstr ""
-"Az újravásárlási e-mailes emlékeztető a felhasználók korábbi (utolsó) "
-"vásárlásai alapján kerül kiküldésre (minden utolsó vásárlásuk után megkapják"
-" az e-mailt)"
-
-#: inc/admin/menu/tabs/general.php:299
-msgid "Cart Page"
-msgstr "Kosár oldal"
-
-#: inc/admin/menu/tabs/localization.php:158
-msgid "Choose Category label"
-msgstr "Kategória kiválasztása felirat"
-
-#: inc/admin/menu/class-bya-settings.php:487
-msgid "Choose Image"
-msgstr "Kép kiválasztása"
-
-#: templates/pagination.php:21
-msgid "Current Page"
-msgstr "Aktuális oldal"
-
-#: inc/bya-common-functions.php:1036
-msgid "Custom"
-msgstr "Egyéni"
-
-#: inc/admin/menu/tabs/advanced.php:239
-msgid "Custom CSS"
-msgstr "Egyéni CSS"
-
-#: inc/admin/menu/tabs/advanced.php:235
-msgid "Custom CSS Settings"
-msgstr "Egyéni CSS-beállítások"
-
-#: inc/admin/menu/views/html-tag-image-options.php:31
-msgid "Custom Style"
-msgstr "Egyéni stílus"
-
-#: inc/admin/menu/tabs/advanced.php:201
-msgid "Customize"
-msgstr "Testreszabás"
-
-#: inc/admin/menu/class-bya-settings.php:86
-msgid "Database update added in scheduler"
-msgstr "Adatbázis-frissítés felvéve az ütemezőbe"
-
-#: inc/admin/menu/class-bya-settings.php:97
-msgid "Database verified successfully"
-msgstr "Adatbázis sikeresen ellenőrizve"
-
-#: inc/admin/menu/class-bya-email-log-list-table.php:56
-#: inc/admin/menu/wp-list-table/class-bya-order-details-list-table.php:144
-msgid "Date"
-msgstr "Dátum"
-
-#: inc/bya-layout-functions.php:405
-msgid "Days"
-msgstr "Napok"
-
-#: inc/bya-layout-functions.php:211
-msgid "Deactivate"
-msgstr "Deaktiválás"
-
-#: inc/admin/menu/tabs/advanced.php:200
-msgid "Default"
-msgstr "Alapértelmezett"
-
-#: inc/admin/menu/tabs/general.php:181
-msgid "Default Only One Quantity"
-msgstr "Alapértelmezetten csak egy mennyiséget"
-
-#: inc/abstracts/class-bya-abstract-email.php:211
-#: inc/abstracts/class-bya-abstract-email.php:220
-#, php-format
-msgid "Defaults to <code>%1$s</code>"
-msgstr "Alapértelmezett érték: <code>%1$s</code>"
-
-#: inc/admin/menu/class-bya-admin-list-table-email-log.php:151
-msgid "Delete"
-msgstr "Törlés"
-
-#: inc/bya-layout-functions.php:214
-msgid "Delete Permanently"
-msgstr "Végleges törlés"
-
-#: inc/admin/menu/views/html-shortcodes-info.php:23
-msgid "Description"
-msgstr "Leírás"
-
-#: inc/admin/menu/tabs/general.php:280
-msgid "Display Add to Cart Button"
-msgstr "Kosárba gomb megjelenítése"
-
-#: inc/admin/menu/tabs/general.php:143
-msgid "Display Add to Cart Button on"
-msgstr "Kosárba gomb megjelenítése ezen"
-
-#: inc/admin/menu/tabs/general.php:169
-msgid "Display Buy Again Button in Orders Page on My Account Page"
-msgstr "Vásárolja meg újra gomb megjelenítése a Saját fiók Rendelések oldalán"
-
-#: inc/admin/menu/tabs/general.php:156
-msgid "Display Buy Again Button on"
-msgstr "Vásárolja meg újra gomb megjelenítése ezen"
-
-#: inc/admin/menu/tabs/general.php:303
-msgid "Display Buy Again Products in Cart Page"
-msgstr "Újravásárolható termékek megjelenítése a Kosár oldalon"
-
-#: inc/admin/menu/tabs/general.php:209
-msgid "Display Filter By date"
-msgstr "Dátum szerinti szűrő megjelenítése"
-
-#: inc/admin/menu/tabs/general.php:244
-msgid "Display Last purchased order column in Buy Again Table"
-msgstr "A legutóbbi rendelés oszlop megjelenítése az Újravásárlás táblázatban"
-
-#: inc/admin/menu/tabs/general.php:88
-msgid "Display Previously Purchased Notice on Single Product Page"
-msgstr "Korábban megvásárolt értesítés megjelenítése a termékoldalon"
-
-#: inc/admin/menu/tabs/general.php:237
-msgid "Display Previously purchased quantity count & order count Column"
-msgstr ""
-"A korábban megvásárolt mennyiség és a rendelésszám oszlopának megjelenítése"
-
-#: inc/admin/menu/tabs/general.php:216
-msgid "Display Product Thumbnail in Buy Again Table"
-msgstr "Termék bélyegképének megjelenítése az Újravásárlás táblázatban"
-
-#: inc/admin/menu/tabs/general.php:223
-msgid "Display Product Title Column"
-msgstr "Termékcím oszlop megjelenítése"
-
-#: inc/admin/menu/tabs/general.php:40
-msgid "Display Settings"
-msgstr "Megjelenítési beállítások"
-
-#: inc/admin/menu/tabs/general.php:258
-msgid "Display Stock Count in Buy Again Table"
-msgstr "Készletdarabszám megjelenítése az Újravásárlás táblázatban"
-
-#: inc/admin/menu/tabs/general.php:333
-msgid "Display Tag for Buy Again Products in Shop/Category Pages "
-msgstr ""
-"Címke megjelenítése az újravásárolható termékekhez a Bolt/Kategória "
-"oldalakon "
-
-#: inc/admin/menu/tabs/general.php:339
-msgid "Display Tag for Buy Again Products in Single Product Page"
-msgstr "Címke megjelenítése az újravásárolható termékekhez a Termékoldalon"
-
-#: inc/widgets/class-bya-widget-buy-again-link.php:23
-msgid "Display the customer buy again list link."
-msgstr "Az ügyfél újravásárlási lista hivatkozásának megjelenítése."
-
-#: inc/widgets/class-bya-widget-buy-again.php:23
-msgid "Display the customer buy again list."
-msgstr "Az ügyfél újravásárlási listájának megjelenítése."
-
-#: inc/admin/menu/tabs/shortcodes.php:66
-msgid "Displays Buy Again Table"
-msgstr "Újravásárlás táblázat megjelenítése"
-
-#: inc/bya-layout-functions.php:205
-msgid "Edit"
-msgstr "Szerkesztés"
-
-#: inc/admin/menu/tabs/email.php:131
-msgid "Edit Email Template"
-msgstr "E-mail sablon szerkesztése"
-
-#: inc/admin/menu/tabs/email.php:30
-msgid "Email"
-msgstr "E-mail"
-
-#: inc/admin/menu/tabs/email.php:84
-msgid "Email Cron Job Running Time"
-msgstr "E-mail Cron feladat futási ideje"
-
-#: inc/abstracts/class-bya-abstract-email.php:217
-msgid "Email Heading"
-msgstr "E-mail fejléc"
-
-#: inc/admin/menu/class-bya-email-log-list-table.php:54
-msgid "Email ID"
-msgstr "E-mail azonosító"
-
-#: inc/class-bya-register-post-types.php:107
-#: inc/class-bya-register-post-types.php:108
-#: inc/class-bya-register-post-types.php:109
-msgid "Email Log"
-msgstr "E-mail napló"
-
-#: inc/admin/menu/tabs/email.php:63
-msgid "Email Notification Settings"
-msgstr "E-mail értesítési beállítások"
-
-#: inc/admin/class-bya-admin-ajax.php:307
-msgid "Email Sent Successfully."
-msgstr "E-mail sikeresen elküldve."
-
-#: inc/abstracts/class-bya-abstract-email.php:208
-msgid "Email Subject"
-msgstr "E-mail tárgya"
-
-#: inc/admin/menu/class-bya-email-log-list-table.php:55
-msgid "Email Type"
-msgstr "E-mail típusa"
-
-#: inc/admin/menu/tabs/email.php:77
-msgid "Email will be sent based on the above assigned day(s) value"
-msgstr "Az e-mail a fent megadott nap(ok) alapján kerül elküldésre"
-
-#: inc/admin/menu/tabs/general.php:62
-msgid "Enable Buy Again"
-msgstr "Újravásárlás engedélyezése"
-
-#: inc/admin/menu/tabs/email.php:67
-msgid "Enable Buy Again Email"
-msgstr "Újravásárlási e-mail engedélyezése"
-
-#: inc/admin/menu/tabs/general.php:187
-msgid "Enable Product Filter option"
-msgstr "Termékszűrő opció engedélyezése"
-
-#: inc/abstracts/class-bya-abstract-email.php:191
-msgid "Enable this email notification"
-msgstr "Ezen e-mail értesítés engedélyezése"
-
-#: inc/admin/menu/tabs/email.php:71
-msgid ""
-"Enable to send reminder email of buy-again products to the users. Email "
-"reminder will be sent to the users based on their past(Last) purchases(For "
-"every last purchase they will receive the email)"
-msgstr ""
-"Emlékeztető e-mail küldésének engedélyezése a felhasználóknak az "
-"újravásárolható termékekről. A felhasználók a korábbi (utolsó) vásárlásaik "
-"alapján kapnak emlékeztetőt (minden egyes utolsó vásárlásukhoz megkapják az "
-"e-mailt)"
-
-#: inc/abstracts/class-bya-abstract-email.php:189
-msgid "Enable/Disable"
-msgstr "Engedélyezés/Letiltás"
-
-#: inc/admin/menu/tabs/email.php:103
-msgid "Enter Email Id"
-msgstr "Adja meg az e-mail-címet"
-
-#: inc/abstracts/class-bya-abstract-email.php:200
-#, php-format
-msgid "Enter recipients (comma separated) for this email. Defaults to %1$s."
-msgstr ""
-"Adja meg az e-mail címzettjeit (vesszővel elválasztva). Alapértelmezés: "
-"%1$s."
-
-#: inc/admin/menu/tabs/advanced.php:117
-msgid "Exclude Categories"
-msgstr "Kategóriák kizárása"
-
-#: inc/admin/menu/tabs/advanced.php:81
-msgid "Exclude Category"
-msgstr "Kategória kizárása"
-
-#: inc/admin/menu/tabs/advanced.php:79
-#: inc/admin/menu/tabs/advanced.php:97
-msgid "Exclude Product(s)"
-msgstr "Termékek kizárása"
-
-#: inc/admin/menu/tabs/advanced.php:168
-msgid "Exclude User Role"
-msgstr "Felhasználói szerepkör kizárása"
-
-#: inc/admin/menu/tabs/advanced.php:134
-msgid "Exclude User Role(s)"
-msgstr "Felhasználói szerepkör(ök) kizárása"
-
-#: inc/admin/menu/tabs/advanced.php:132
-#: inc/admin/menu/tabs/advanced.php:149
-msgid "Exclude User(s)"
-msgstr "Felhasználó(k) kizárása"
-
-#: inc/class-bya-emails.php:153
-#, php-format
-msgid "Failed to sent <b>%1$s</b> email to %2$s."
-msgstr "Nem sikerült a(z) <b>%1$s</b> e-mailt elküldeni %2$s részére."
-
-#: inc/admin/menu/tabs/localization.php:146
-msgid "Filter Button Label"
-msgstr "Szűrő gomb felirata"
-
-#: inc/admin/menu/tabs/localization.php:152
-msgid "Filter By label"
-msgstr "Szűrés szerint felirat"
-
-#: inc/privacy/class-bya-privacy.php:63
-msgid "First Name, Last Name, Username and Email ID"
-msgstr "Keresztnév, vezetéknév, felhasználónév és e-mail-cím"
-
-#: templates/buy-again-filters.php:106
-msgid "From: "
-msgstr "Feladó: "
-
-#: inc/admin/menu/tabs/general.php:26
-msgid "General"
-msgstr "Általános"
-
-#: inc/admin/menu/tabs/general.php:39
-#: inc/admin/menu/tabs/general.php:58
-msgid "General Settings"
-msgstr "Általános beállítások"
-
-#: inc/admin/menu/tabs/general.php:94
-msgid "Hide"
-msgstr "Elrejtés"
-
-#: inc/admin/menu/tabs/general.php:286
-msgid "Hide Out of Stock Product(s)"
-msgstr "Nincs készleten lévő termékek elrejtése"
-
-#: inc/admin/menu/tabs/general.php:318
-msgid "Hide Quantity Field in Order details page"
-msgstr "Mennyiség mező elrejtése a rendelés részletei oldalon"
-
-#: inc/widgets/class-bya-widget-buy-again.php:35
-#: inc/widgets/class-bya-widget-buy-again-link.php:35
-msgid "Hide if buy again list is empty"
-msgstr "Elrejtés, ha az újravásárlási lista üres"
-
-#: inc/admin/menu/tabs/general.php:291
-msgid "Hide out-of-stock products form the Buy Again table"
-msgstr "Nincs készleten lévő termékek elrejtése az újravásárlási táblázatból"
-
-#: inc/bya-layout-functions.php:404
-msgid "Hours"
-msgstr "Óra"
-
-#: inc/admin/menu/class-bya-admin-list-table-email-log.php:150
-#: inc/admin/menu/class-bya-buy-again-list-table.php:171
-#: inc/admin/menu/wp-list-table/class-bya-product-details-list-table.php:183
-#, php-format
-msgid "ID: %s"
-msgstr "Azonosító: %s"
-
-#: inc/admin/menu/tabs/advanced.php:286
-msgid "Import"
-msgstr "Importálás"
-
-#: inc/admin/menu/tabs/advanced.php:282
-msgid "Import Purchase History of Customers (Background Process)"
-msgstr "Vásárlók vásárlási előzményeinek importálása (háttérfolyamat)"
-
-#: inc/admin/menu/tabs/advanced.php:109
-msgid "Include Categories"
-msgstr "Kategóriák bevonása"
-
-#: inc/admin/menu/tabs/advanced.php:80
-msgid "Include Category"
-msgstr "Kategória bevonása"
-
-#: inc/admin/menu/tabs/advanced.php:78
-#: inc/admin/menu/tabs/advanced.php:85
-msgid "Include Product(s)"
-msgstr "Termékek bevonása"
-
-#: inc/admin/menu/tabs/advanced.php:160
-msgid "Include User Role"
-msgstr "Felhasználói szerepkör bevonása"
-
-#: inc/admin/menu/tabs/advanced.php:133
-msgid "Include User Role(s)"
-msgstr "Felhasználói szerepkör(ök) bevonása"
-
-#: inc/admin/menu/tabs/advanced.php:131
-#: inc/admin/menu/tabs/advanced.php:138
-msgid "Include User(s)"
-msgstr "Felhasználó(k) bevonása"
-
-#: inc/data-stores/class-bya-customer-data-store-cpt.php:125
-msgid "Invalid Customer."
-msgstr "Érvénytelen vásárló."
-
-#: inc/data-stores/class-bya-email-log-data-store-cpt.php:119
-msgid "Invalid Email Log"
-msgstr "Érvénytelen e-mail-napló"
-
-#: inc/data-stores/class-bya-product-data-store-cpt.php:134
-msgid "Invalid Product."
-msgstr "Érvénytelen termék."
-
-#: inc/admin/class-bya-admin-ajax.php:161
-#: inc/admin/class-bya-admin-ajax.php:216
-#: inc/admin/class-bya-admin-ajax.php:246
-msgid "Invalid Request"
-msgstr "Érvénytelen kérés"
-
-#: inc/bya-common-functions.php:1034
-msgid "Last 3 Months"
-msgstr "Elmúlt 3 hónap"
-
-#: inc/bya-common-functions.php:1032
-msgid "Last 30 Days"
-msgstr "Elmúlt 30 nap"
-
-#: inc/bya-common-functions.php:1035
-msgid "Last 6 Months"
-msgstr "Elmúlt 6 hónap"
-
-#: inc/bya-common-functions.php:1033
-msgid "Last 60 Days"
-msgstr "Elmúlt 60 nap"
-
-#: inc/admin/menu/tabs/localization.php:99
-msgid "Last purchased order column label"
-msgstr "Legutóbb vásárolt rendelés oszlop felirata"
-
-#: inc/frontend/class-bya-frontend-assets.php:99
-msgctxt "enhanced select"
-msgid "Loading more results&hellip;"
-msgstr "További találatok betöltése&hellip;"
-
-#: inc/admin/menu/tabs/localization.php:26
-msgid "Localization"
-msgstr "Lokalizáció"
-
-#: inc/admin/menu/class-bya-admin-list-table-email-log.php:264
-msgid "M j, Y"
-msgstr "M j, Y"
-
-#: inc/admin/menu/tabs/email.php:135
-msgid "Manage"
-msgstr "Kezelés"
-
-#: inc/admin/menu/tabs/general.php:84
-msgid "Messages"
-msgstr "Üzenetek"
-
-#: inc/bya-layout-functions.php:403
-msgid "Minutes"
-msgstr "Perc"
-
-#: inc/bya-common-functions.php:971
-msgid "Most Recent"
-msgstr "Legutóbbi"
-
-#: inc/admin/menu/tabs/advanced.php:222
-msgid "My Account Page Menu Slug"
-msgstr "Fiókom oldal menü slug"
-
-#: inc/bya-common-functions.php:972
-msgid "Name Ascending"
-msgstr "Név szerint növekvő"
-
-#: inc/bya-common-functions.php:973
-msgid "Name Descending"
-msgstr "Név szerint csökkenő"
-
-#: inc/frontend/class-bya-my-account-handler.php:174
-msgid "No Product Found"
-msgstr "Nem található termék"
-
-#: templates/myaccount-buy-again.php:67
-msgid "No Product(s) Found"
-msgstr "Nem található termék"
-
-#: inc/admin/class-bya-admin-ajax.php:58
-msgid "No Products found"
-msgstr "Nem található termék"
-
-#: inc/admin/class-bya-admin-ajax.php:117
-msgid "No Users found"
-msgstr "Nem található felhasználó"
-
-#: inc/frontend/class-bya-frontend-assets.php:92
-msgctxt "enhanced select"
-msgid "No matches found"
-msgstr "Nincs találat"
-
-#: inc/admin/menu/wp-list-table/class-bya-product-details-list-table.php:130
-msgid "No.Of Orders"
-msgstr "Rendelések száma"
-
-#: inc/admin/menu/tabs/general.php:135
-msgid "Number of Products to Display Per Page in Buy Again Table"
-msgstr "A Vedd meg újra táblázatban oldalanként megjelenítendő termékek száma"
-
-#: inc/admin/menu/wp-list-table/class-bya-order-details-list-table.php:195
-#, php-format
-msgid "Order #%s"
-msgstr "Rendelés #%s"
-
-#: inc/admin/menu/class-bya-menu-management.php:115
-#: inc/admin/menu/tabs/general.php:107
-#: inc/admin/menu/tabs/general.php:150
-#: inc/admin/menu/tabs/general.php:163
-#: inc/admin/menu/tabs/general.php:314
-msgid "Order Details"
-msgstr "Rendelés részletei"
-
-#: inc/admin/menu/tabs/general.php:104
-msgid "Order Details Link Caption "
-msgstr "Rendelés részletei hivatkozás felirata "
-
-#: inc/admin/menu/wp-list-table/class-bya-order-details-list-table.php:141
-msgid "Order ID"
-msgstr "Rendelésazonosító"
-
-#: inc/admin/menu/tabs/general.php:68
-msgid "Order Status for Purchasing Products through Buy Again"
-msgstr "Rendelésállapot a Vedd meg újra funkción keresztüli vásárláshoz"
-
-#: inc/frontend/class-bya-product-notice-handler.php:54
-msgid "Order_details"
-msgstr "Order_details"
-
-#: inc/admin/menu/class-bya-buy-again-list-table.php:52
-msgid "Orders Placed using Buy Again"
-msgstr "A Vedd meg újra használatával leadott rendelések"
-
-#: templates/display-input-fields.php:81
-msgid "Out of Stock"
-msgstr "Nincs készleten"
-
-#: inc/admin/menu/views/html-shortcodes-info.php:22
-msgid "Parameter Support"
-msgstr "Paramétertámogatás"
-
-#: templates/emails/customer-buy-again-reminder.php:34
-#, php-format
-msgid ""
-"Please <a href=\"%1$s\" target=\"_blank\">click here</a> to grab your "
-"products again."
-msgstr ""
-"Kérjük, <a href=\"%1$s\" target=\"_blank\">kattintson ide</a>, hogy újra "
-"megvásárolja a termékeit."
-
-#: inc/frontend/class-bya-frontend-assets.php:96
-msgctxt "enhanced select"
-msgid "Please delete %qty% characters"
-msgstr "Kérjük, töröljön %qty% karaktert"
-
-#: inc/frontend/class-bya-frontend-assets.php:95
-msgctxt "enhanced select"
-msgid "Please delete 1 character"
-msgstr "Kérjük, töröljön 1 karaktert"
-
-#: inc/frontend/class-bya-frontend-assets.php:94
-msgctxt "enhanced select"
-msgid "Please enter %qty% or more characters"
-msgstr "Kérjük, adjon meg legalább %qty% karaktert"
-
-#: inc/frontend/class-bya-frontend-assets.php:93
-msgctxt "enhanced select"
-msgid "Please enter 1 or more characters"
-msgstr "Kérjük, adjon meg legalább 1 karaktert"
-
-#: inc/admin/class-bya-admin-ajax.php:289
-msgid "Please enter a valid email"
-msgstr "Kérjük, adjon meg érvényes e-mail-címet"
-
-#: inc/admin/class-bya-admin-ajax.php:283
-msgid "Please enter an email id"
-msgstr "Kérjük, adjon meg egy e-mail-címet"
-
-#: inc/frontend/class-bya-frontend-assets.php:76
-msgid ""
-"Please select a valid value. The two nearest valid values are {from_qty} and"
-" {to_qty}."
-msgstr ""
-"Kérjük, érvényes értéket válasszon. A két legközelebbi érvényes érték: "
-"{from_qty} és {to_qty}."
-
-#: inc/admin/menu/tabs/general.php:73
-msgid ""
-"Please select the order status to display buy again in user(s) order details"
-" & buy again products menu on frontend"
-msgstr ""
-"Kérjük, válassza ki a rendelésállapotot, hogy a Vedd meg újra megjelenjen a "
-"felhasználó(k) rendelés részletei között és a frontenden a Vedd meg újra "
-"termékek menüben"
-
-#: inc/frontend/class-bya-frontend-assets.php:74
-msgid "Please select the value that is not less than {min_qty}."
-msgstr "Kérjük, válasszon olyan értéket, amely nem kisebb, mint {min_qty}."
-
-#: inc/frontend/class-bya-frontend-assets.php:75
-msgid "Please select the value that is not more than  {max_qty}."
-msgstr "Kérjük, válasszon olyan értéket, amely nem nagyobb, mint {max_qty}."
-
-#: inc/admin/menu/tabs/general.php:98
-msgid "Previously Purchased Message"
-msgstr "Korábbi vásárlás üzenete"
-
-#: inc/admin/menu/tabs/localization.php:92
-msgid "Previously purchased quantity count & order count"
-msgstr "Korábban vásárolt mennyiség és rendelések száma"
-
-#: inc/admin/menu/tabs/localization.php:85
-msgid "Previously purchased quantity count & order count label"
-msgstr "Korábban vásárolt mennyiség és rendelések száma címke"
-
-#: inc/frontend/class-bya-product-notice-handler.php:55
-msgid "Previously you have puchased this product [order_details]"
-msgstr "Korábban már megvásárolta ezt a terméket [order_details]"
-
-#: inc/admin/menu/tabs/general.php:230
-msgid "Product Description"
-msgstr "Termékleírás"
-
-#: inc/admin/menu/class-bya-menu-management.php:112
-msgid "Product Details"
-msgstr "Termék részletei"
-
-#: inc/bya-common-functions.php:515
-#: inc/admin/menu/tabs/advanced.php:197
-msgid "Product Image"
-msgstr "Termékkép"
-
-#: inc/bya-common-functions.php:519
-#: inc/admin/menu/wp-list-table/class-bya-product-details-list-table.php:129
-msgid "Product Name"
-msgstr "Terméknév"
-
-#: inc/admin/menu/views/html-view-order-details.php:19
-#, php-format
-msgid "Product Name : %s "
-msgstr "Terméknév : %s "
-
-#: inc/bya-common-functions.php:527
-#: inc/bya-common-functions.php:539
-#: inc/admin/menu/wp-list-table/class-bya-order-details-list-table.php:142
-msgid "Product Price"
-msgstr "Termék ára"
-
-#: inc/admin/menu/tabs/general.php:251
-msgid "Product Price Column"
-msgstr "Termékár oszlop"
-
-#: inc/admin/menu/tabs/localization.php:113
-msgid "Product Price Column Label"
-msgstr "Termékár oszlop címke"
-
-#: inc/bya-common-functions.php:543
-msgid "Product Quantity"
-msgstr "Termékmennyiség"
-
-#: inc/admin/menu/tabs/general.php:266
-msgid "Product Quantity Column"
-msgstr "Termékmennyiség oszlop"
-
-#: inc/admin/menu/tabs/localization.php:120
-msgid "Product Quantity Column Label"
-msgstr "Termékmennyiség oszlop címke"
-
-#: inc/admin/menu/tabs/localization.php:71
-msgid "Product Thumbnail Column Label"
-msgstr "Termék bélyegkép oszlop címke"
-
-#: inc/admin/menu/tabs/localization.php:78
-msgid "Product Title Column Label"
-msgstr "Termékcím oszlop címke"
-
-#: inc/bya-common-functions.php:595
-msgid "Product not found"
-msgstr "Termék nem található"
-
-#: inc/admin/menu/views/html-view-product-details.php:17
-msgid "Products Details"
-msgstr "Termékek részletei"
-
-#: inc/admin/menu/class-bya-buy-again-list-table.php:53
-msgid "Products Purchased using Buy Again"
-msgstr "A Vedd meg újra használatával vásárolt termékek"
-
-#: inc/class-bya-register-post-types.php:71
-#: inc/class-bya-register-post-types.php:72
-msgid "Purchase History"
-msgstr "Vásárlási előzmények"
-
-#: templates/quantity-input.php:40
-msgid "Qty"
-msgstr "Menny."
-
-#: inc/admin/menu/wp-list-table/class-bya-order-details-list-table.php:143
-msgid "Quantity"
-msgstr "Mennyiség"
-
-#: inc/admin/menu/tabs/general.php:176
-msgid "Quantity Control for Buy Again on Orders Page"
-msgstr "Mennyiség vezérlése a Vedd meg újra funkcióhoz a Rendelések oldalon"
-
-#: inc/abstracts/class-bya-abstract-email.php:197
-msgid "Recipient(s)"
-msgstr "Címzett(ek)"
-
-#: inc/admin/menu/views/html-settings-buttons.php:20
-msgid "Reset"
-msgstr "Visszaállítás"
-
-#: inc/admin/menu/tabs/advanced.php:68
+#: inc/admin/menu/tabs/advanced.php:76
 msgid "Restriction Settings"
 msgstr "Korlátozási beállítások"
 
-#: inc/admin/menu/tabs/general.php:180
-msgid "Same Quantity Based on Previous Purchase"
-msgstr "Azonos mennyiség a korábbi vásárlás alapján"
+#: inc/admin/menu/tabs/advanced.php:80
+msgid "Buy Again will be Displayed for"
+msgstr "Az Újravásárlás az alábbiak esetében jelenik meg"
 
-#: inc/admin/menu/views/html-settings-buttons.php:10
-msgid "Save changes"
-msgstr "Módosítások mentése"
+#: inc/admin/menu/tabs/advanced.php:85
+msgid "All Product(s)"
+msgstr "Összes termék"
 
-#: inc/admin/menu/tabs/localization.php:164
-msgid "Search Button Label"
-msgstr "Keresés gomb felirata"
+#: inc/admin/menu/tabs/advanced.php:86 inc/admin/menu/tabs/advanced.php:93
+msgid "Include Product(s)"
+msgstr "Termékek bevonása"
 
-#: inc/class-bya-register-post-types.php:110
-msgid "Search Email"
-msgstr "E-mail-cím keresése"
+#: inc/admin/menu/tabs/advanced.php:87 inc/admin/menu/tabs/advanced.php:105
+msgid "Exclude Product(s)"
+msgstr "Termékek kizárása"
 
-#: inc/admin/menu/tabs/localization.php:64
-msgid "Search Field Label"
-msgstr "Keresőmező felirata"
+#: inc/admin/menu/tabs/advanced.php:88
+msgid "Include Category"
+msgstr "Kategória bevonása"
 
-#: inc/class-bya-register-post-types.php:73
-msgid "Search User"
-msgstr "Felhasználó keresése"
+#: inc/admin/menu/tabs/advanced.php:89
+msgid "Exclude Category"
+msgstr "Kategória kizárása"
 
-#: inc/frontend/class-bya-frontend-assets.php:100
-msgctxt "enhanced select"
-msgid "Searching&hellip;"
-msgstr "Keresés&hellip;"
-
-#: inc/bya-layout-functions.php:402
-msgid "Seconds"
-msgstr "Másodperc"
-
-#: inc/admin/menu/tabs/advanced.php:90
-#: inc/admin/menu/tabs/advanced.php:102
+#: inc/admin/menu/tabs/advanced.php:98 inc/admin/menu/tabs/advanced.php:110
 msgid "Select a Product"
 msgstr "Válasszon egy terméket"
 
-#: inc/admin/menu/tabs/advanced.php:144
-#: inc/admin/menu/tabs/advanced.php:155
+#: inc/admin/menu/tabs/advanced.php:117
+msgid "Include Categories"
+msgstr "Kategóriák bevonása"
+
+#: inc/admin/menu/tabs/advanced.php:125
+msgid "Exclude Categories"
+msgstr "Kategóriák kizárása"
+
+#: inc/admin/menu/tabs/advanced.php:133
+msgid "Buy Again can be Accessed by"
+msgstr "Ki férhet hozzá a Buy Again funkcióhoz"
+
+#: inc/admin/menu/tabs/advanced.php:138
+msgid "All User(s)"
+msgstr "Minden felhasználó"
+
+#: inc/admin/menu/tabs/advanced.php:139 inc/admin/menu/tabs/advanced.php:146
+msgid "Include User(s)"
+msgstr "Felhasználók bevonása"
+
+#: inc/admin/menu/tabs/advanced.php:140 inc/admin/menu/tabs/advanced.php:157
+msgid "Exclude User(s)"
+msgstr "Felhasználók kizárása"
+
+#: inc/admin/menu/tabs/advanced.php:141
+msgid "Include User Role(s)"
+msgstr "Felhasználói szerepkörök bevonása"
+
+#: inc/admin/menu/tabs/advanced.php:142
+msgid "Exclude User Role(s)"
+msgstr "Felhasználói szerepkörök kizárása"
+
+#: inc/admin/menu/tabs/advanced.php:152 inc/admin/menu/tabs/advanced.php:163
 msgid "Select a user"
 msgstr "Válasszon egy felhasználót"
 
-#: inc/admin/menu/tabs/general.php:148
-msgid "Select the page(s) to display Add to Cart Button"
-msgstr "Válassza ki az oldal(ak)at, ahol a Kosárba gomb megjelenjen"
+#: inc/admin/menu/tabs/advanced.php:168
+msgid "Include User Role"
+msgstr "Felhasználói szerepkör bevonása"
 
-#: inc/admin/menu/tabs/general.php:161
-msgid "Select the page(s) to display Buy Again Button"
-msgstr "Válassza ki az oldal(ak)at, ahol az újravásárlási gomb megjelenjen"
+#: inc/admin/menu/tabs/advanced.php:176
+msgid "Exclude User Role"
+msgstr "Felhasználói szerepkör kizárása"
 
-#: inc/admin/menu/tabs/email.php:74
-msgid "Send Buy Again Reminder Email After X Day(s) of User's Last Purchase"
-msgstr ""
-"Újravásárlási emlékeztető e-mail küldése a felhasználó utolsó vásárlása után"
-" X nappal"
+#: inc/admin/menu/tabs/advanced.php:191
+msgid "Buy Again Table Settings"
+msgstr "Újravásárlási táblázat beállításai"
 
-#: inc/abstracts/class-bya-abstract-email.php:227
-msgid "Send Email to Admin"
-msgstr "E-mail küldése az adminisztrátornak"
+#: inc/admin/menu/tabs/advanced.php:195
+msgid "Buy Again Table Sort By"
+msgstr "A Buy Again táblázat rendezési szempontja"
 
-#: inc/admin/menu/tabs/email.php:106
-msgid "Send Test Email"
-msgstr "Teszt e-mail küldése"
+#: inc/admin/menu/tabs/advanced.php:198
+msgid "Based on Last order"
+msgstr "Az utolsó rendelés alapján"
 
-#: inc/class-bya-install.php:292
-#: inc/admin/menu/class-bya-menu-management.php:118
-msgid "Settings"
-msgstr "Beállítások"
+#: inc/admin/menu/tabs/advanced.php:199
+msgid "Based on Product Name"
+msgstr "A terméknév alapján"
 
-#: inc/admin/menu/views/html-shortcodes-info.php:21
-msgid "Shortcode"
-msgstr "Rövidkód"
+#: inc/admin/menu/tabs/advanced.php:205 inc/bya-common-functions.php:916
+#: inc/bya-common-functions.php:1678
+msgid "Product Image"
+msgstr "Termékkép"
 
-#: inc/admin/menu/tabs/shortcodes.php:26
-#: inc/admin/menu/tabs/shortcodes.php:43
-msgid "Shortcodes"
-msgstr "Rövidkódok"
+#: inc/admin/menu/tabs/advanced.php:208
+msgid "Default"
+msgstr "Alapértelmezett"
 
-#: inc/admin/menu/tabs/general.php:93
-msgid "Show"
-msgstr "Megjelenítés"
+#: inc/admin/menu/tabs/advanced.php:209
+msgid "Customize"
+msgstr "Testreszabás"
 
-#: inc/admin/menu/tabs/advanced.php:218
+#: inc/admin/menu/tabs/advanced.php:226
 msgid "Slug Settings"
 msgstr "Slug beállításai"
 
-#: templates/buy-again-filters.php:48
-msgid "Sort by: "
-msgstr "Rendezés: "
+#: inc/admin/menu/tabs/advanced.php:230
+msgid "My Account Page Menu Slug"
+msgstr "Fiókom oldal menüjének slugja"
 
-#: inc/admin/menu/tabs/localization.php:106
-msgid "Stock Count Column Label"
-msgstr "Készletdarabszám oszlop felirata"
+#: inc/admin/menu/tabs/advanced.php:243
+msgid "Custom CSS Settings"
+msgstr "Egyéni CSS-beállítások"
 
-#: inc/admin/menu/tabs/general.php:263
-msgid ""
-"Stock Count display for each product in Buy Again table.  Note, stock count "
-"display only if you are enabled Manage stock for the  product."
-msgstr ""
-"Készletdarabszám megjelenítése az újravásárlási táblázatban minden "
-"terméknél.  Megjegyzés: a készletdarabszám csak akkor jelenik meg, ha a  "
-"terméknél engedélyezte a Készlet kezelése opciót."
+#: inc/admin/menu/tabs/advanced.php:247
+msgid "Custom CSS"
+msgstr "Egyéni CSS"
 
-#: inc/admin/menu/views/html-tag-image-options.php:20
-msgid "Style 1"
-msgstr "Stílus 1"
-
-#: inc/admin/menu/views/html-tag-image-options.php:25
-msgid "Style 2"
-msgstr "Stílus 2"
-
-#: inc/admin/menu/tabs/general.php:345
-msgid "Tag Label"
-msgstr "Címke felirata"
-
-#: inc/admin/menu/tabs/general.php:384
-msgid "Tag Position"
-msgstr "Címke pozíciója"
-
-#: inc/admin/menu/views/html-tag-image-options.php:15
-msgid "Tag Style"
-msgstr "Címke stílusa"
-
-#: inc/admin/menu/tabs/general.php:370
-msgid "Tag Text Color"
-msgstr "Címke szövegszíne"
-
-#: inc/admin/menu/tabs/general.php:356
-msgid "Tag background Color 1"
-msgstr "Címke háttérszíne 1"
-
-#: inc/admin/menu/tabs/general.php:363
-msgid "Tag background Color 2"
-msgstr "Címke háttérszíne 2"
-
-#: inc/admin/menu/tabs/email.php:99
-msgid "Test Buy Again Email"
-msgstr "Teszt újravásárlási e-mail"
-
-#: templates/emails/customer-buy-again-reminder.php:38
-msgid "Thanks"
-msgstr "Köszönjük"
-
-#: inc/frontend/class-bya-cart-handler.php:329
-msgid "The cart has been filled with the items from your previous order."
-msgstr "A kosár az előző rendelés tételeivel lett feltöltve."
-
-#: inc/privacy/class-bya-privacy.php:59
-msgid ""
-"This includes the basics of what personal data your store may collect, store"
-" & share. Depending on what settings are enabled furthermore which "
-"additional plugins used, the specific information shared by your store will "
-"vary."
-msgstr ""
-"Ez tartalmazza annak alapjait, hogy az áruház milyen személyes adatokat "
-"gyűjthet, tárolhat és oszthat meg. Attól függően, hogy mely beállítások "
-"engedélyezettek, illetve milyen további bővítményeket használ, az áruház "
-"által megosztott konkrét információk eltérhetnek."
-
-#: inc/privacy/class-bya-privacy.php:61
-msgid ""
-"This plugin allows your customers to quickly purchase the products which "
-"they had purchased earlier in your site."
-msgstr ""
-"Ez a bővítmény lehetővé teszi a vásárlók számára, hogy gyorsan újra "
-"megvásárolják azokat a termékeket, amelyeket korábban már megvettek az "
-"oldalon."
-
-#: templates/display-input-fields.php:69
-msgid "This product is currently unavailable"
-msgstr "Ez a termék jelenleg nem elérhető"
-
-#: templates/display-input-fields.php:75
-msgid "This variation is currently unavailable"
-msgstr "Ez a variáció jelenleg nem elérhető"
-
-#: inc/widgets/class-bya-widget-buy-again.php:30
-#: inc/widgets/class-bya-widget-buy-again-link.php:30
-msgid "Title"
-msgstr "Cím"
-
-#: templates/buy-again-filters.php:125
-msgid "To: "
-msgstr "Címzett: "
-
-#: inc/admin/menu/tabs/general.php:388
-msgid "Top Left"
-msgstr "Bal felső"
-
-#: inc/admin/menu/tabs/general.php:389
-msgid "Top Right"
-msgstr "Jobb felső"
-
-#: inc/admin/menu/wp-list-table/class-bya-product-details-list-table.php:132
-msgid "Total Amount Spent for this Product through Buy Again"
-msgstr "A termékre az újravásárláson keresztül költött teljes összeg"
-
-#: templates/buy-again-filters.php:43
-#, php-format
-msgid "Total Product(s): %s"
-msgstr "Összes termék: %s"
-
-#: inc/admin/menu/wp-list-table/class-bya-product-details-list-table.php:131
-msgid "Total Quantity Purchased"
-msgstr "Összes vásárolt mennyiség"
-
-#: inc/admin/menu/tabs/advanced.php:252
+#: inc/admin/menu/tabs/advanced.php:260
 msgid "Troubleshoot Settings"
 msgstr "Hibaelhárítási beállítások"
 
-#: inc/admin/menu/tabs/general.php:377
-msgid "Upload Image"
-msgstr "Kép feltöltése"
+#: inc/admin/menu/tabs/advanced.php:290
+msgid "Import Purchase History of Customers (Background Process)"
+msgstr "Vásárlók vásárlási előzményeinek importálása (háttérfolyamat)"
 
-#: inc/admin/menu/class-bya-buy-again-list-table.php:51
-#: inc/admin/menu/class-bya-email-log-list-table.php:53
-msgid "Username"
-msgstr "Felhasználónév"
-
-#: inc/admin/menu/views/html-view-order-details.php:17
-#, php-format
-msgid "Username : %s "
-msgstr "Felhasználónév : %s "
-
-#: inc/admin/menu/views/html-view-product-details.php:17
-#, php-format
-msgid "Username: %s"
-msgstr "Felhasználónév: %s"
-
-#: inc/admin/menu/tabs/advanced.php:302
-msgid "Verify Base Database Tables"
-msgstr "Alap adatbázistáblák ellenőrzése"
-
-#: inc/admin/menu/tabs/advanced.php:305
-msgid "Verify Database"
-msgstr "Adatbázis ellenőrzése"
-
-#: inc/admin/menu/tabs/advanced.php:306
-msgid "Verify if all base database tables are present."
-msgstr "Ellenőrizze, hogy az összes alap adatbázistábla megvan-e."
-
-#: inc/class-bya-install.php:223
-msgid "Verifying database... One or more tables are still missing: "
-msgstr "Adatbázis ellenőrzése... Egy vagy több tábla még hiányzik: "
-
-#: inc/admin/menu/class-bya-buy-again-list-table.php:172
-#: inc/admin/menu/wp-list-table/class-bya-product-details-list-table.php:194
-msgid "View More"
-msgstr "Továbbiak megtekintése"
-
-#: inc/privacy/class-bya-privacy.php:66
-msgid ""
-"We record the First Name, Last Name, Username and email ids of the logged-in"
-" users to identify the users who have purchased products using the Buy Now "
-"and Add to Cart buttons provided by the plugin."
-msgstr ""
-"Rögzítjük a bejelentkezett felhasználók keresztnevét, vezetéknevét, "
-"felhasználónevét és e-mail-címeit, hogy azonosítsuk azokat a felhasználókat,"
-" akik a bővítmény által biztosított „Vásárlás most” és „Kosárba” gombokkal "
-"vásároltak."
-
-#: inc/privacy/class-bya-privacy.php:62
-msgid "What We Collect and Store?"
-msgstr "Mit gyűjtünk és tárolunk?"
-
-#: inc/privacy/class-bya-privacy.php:60
-msgid "What the Plugin Does?"
-msgstr "Mit csinál a bővítmény?"
-
-#: inc/admin/menu/tabs/general.php:192
-msgid "When enabled, Buy Again button will display for each order(s)."
-msgstr ""
-"Engedélyezés esetén a „Vásárolja meg újra” gomb minden rendelésnél "
-"megjelenik."
-
-#: inc/admin/menu/tabs/advanced.php:287
+#: inc/admin/menu/tabs/advanced.php:297
 msgid ""
 "When you install the plugin, it will automatically update the purchase "
 "history of existing customers for backward compatibility. If, for any "
@@ -1224,56 +634,2255 @@ msgstr ""
 "előzményeinek importálása” lehetőséggel manuálisan is elindíthatja ezt a "
 "folyamatot."
 
-#: inc/admin/menu/tabs/advanced.php:328
+#: inc/admin/menu/tabs/advanced.php:312
+msgid "Verify Base Database Tables"
+msgstr "Alapvető adatbázistáblák ellenőrzése"
+
+#: inc/admin/menu/tabs/advanced.php:317
+msgid "Verify if all base database tables are present."
+msgstr "Ellenőrizze, hogy az összes alapvető adatbázistábla megvan-e."
+
+#: inc/admin/menu/tabs/advanced.php:339
 msgid "Width X Height (Values in Pixel)"
-msgstr "Szélesség X magasság (értékek pixelben)"
+msgstr "Szélesség × magasság (értékek képpontban)"
 
-#: inc/admin/menu/tabs/email.php:136
-msgid "You can edit buy again email content at the WooCommerce email template"
+#: inc/admin/menu/tabs/email.php:30
+msgid "Email"
+msgstr "E-mail"
+
+#: inc/admin/menu/tabs/email.php:64
+msgid "Email Notification Settings"
+msgstr "E-mail értesítési beállítások"
+
+#: inc/admin/menu/tabs/email.php:68
+msgid "Enable Buy Again Email"
+msgstr "Újravásárlási e-mail engedélyezése"
+
+#: inc/admin/menu/tabs/email.php:72
+msgid ""
+"Enable to send reminder email of buy-again products to the users. Email "
+"reminder will be sent to the users based on their past(Last) purchases(For "
+"every last purchase they will receive the email)"
+msgstr "Kapcsolja be az emlékeztető e-mail küldését a felhasználóknak az újravásárolható termékekről. Az e-mailt a felhasználók korábbi (utolsó) vásárlásai alapján küldi a rendszer (minden egyes utolsó vásárlás után kapnak e-mailt)"
+
+#: inc/admin/menu/tabs/email.php:75
+msgid "Send Buy Again Reminder Email After X Day(s) of User's Last Purchase"
 msgstr ""
-"A WooCommerce e-mail sablonban szerkesztheti a „Vásárolja meg újra” e-mail "
-"tartalmát"
+"Újravásárlási emlékeztető e-mail küldése a felhasználó utolsó vásárlása után"
+" X nappal"
 
-#: inc/frontend/class-bya-frontend-assets.php:98
-msgctxt "enhanced select"
-msgid "You can only select %qty% items"
-msgstr "Csak %qty% elemet választhat ki"
+#: inc/admin/menu/tabs/email.php:78
+msgid "Email will be sent based on the above assigned day(s) value"
+msgstr "Az e-mail a fent megadott nap(ok) alapján kerül elküldésre"
 
-#: inc/frontend/class-bya-frontend-assets.php:97
-msgctxt "enhanced select"
-msgid "You can only select 1 item"
-msgstr "Csak 1 elemet választhat ki"
+#: inc/admin/menu/tabs/email.php:85
+msgid "Email Cron Job Running Time"
+msgstr "E-mailes cronfeladat futási ideje"
 
-#: inc/admin/menu/tabs/general.php:101
+#: inc/admin/menu/tabs/email.php:100
+msgid "Test Buy Again Email"
+msgstr "Újravásárlási e-mail tesztelése"
+
+#: inc/admin/menu/tabs/email.php:104
+msgid "Enter Email ID"
+msgstr "Adja meg az e-mail-cím ID-ját"
+
+#: inc/admin/menu/tabs/email.php:107
+msgid "Send Test Email"
+msgstr "Teszt-e-mail küldése"
+
+#: inc/admin/menu/tabs/email.php:122
+msgid "Buy Again Reminder Email Subscription Settings"
+msgstr "Buy Again emlékeztető e-mailek előfizetési beállításai"
+
+#: inc/admin/menu/tabs/email.php:126
+msgid ""
+"Allow users to manage Buy Again reminder email subscriptions "
+"(Subscribe/Unsubscribe) "
+msgstr "Engedélyezze a felhasználóknak a Buy Again emlékeztető e-mailekre való előfizetés és leiratkozás kezelését"
+
+#: inc/admin/menu/tabs/email.php:130
+msgid ""
+"Allow users to subscribe to or unsubscribe from Buy Again reminder emails."
+msgstr "Engedélyezze a felhasználóknak a Buy Again emlékeztető e-mailekre való feliratkozást vagy az azokról való leiratkozást."
+
+#: inc/admin/menu/tabs/email.php:133
+msgid "Buy Again Reminder Email Preferences (Subscribe/Unsubscribe) Page"
+msgstr "Buy Again emlékeztető e-mail-beállítások oldala (feliratkozás/leiratkozás)"
+
+#: inc/admin/menu/tabs/email.php:152
+msgid ""
+"Set a dedicated page for customers to manage their Buy Again reminder email "
+"preferences (Subscribe/Unsubscribe). This page is available to both guests "
+"and registered users. It must contain the [bya_email_preferences] shortcode."
+msgstr "Állítson be egy külön oldalt, ahol a vásárlók kezelhetik a Buy Again emlékeztető e-mail-beállításaikat (feliratkozás/leiratkozás). Ez az oldal a vendégek és a regisztrált felhasználók számára is elérhető. Tartalmaznia kell a [bya_email_preferences] shortcode-ot."
+
+#: inc/admin/menu/tabs/email.php:160
+msgid ""
+"Show Reminder Email Subscription Management (Subscribe/Unsubscribe) on the "
+"Buy Again Table"
+msgstr "Emlékeztető e-mail-előfizetés kezelésének megjelenítése (feliratkozás/leiratkozás) a Buy Again táblázatban"
+
+#: inc/admin/menu/tabs/email.php:165
+msgid ""
+"Display Buy Again reminder email preferences (Subscribe/Unsubscribe) on the "
+"Buy Again Table."
+msgstr "A Buy Again emlékeztető e-mail-beállításainak megjelenítése (feliratkozás/leiratkozás) a Buy Again táblázatban."
+
+#: inc/admin/menu/tabs/email.php:168
+msgid "Show Unsubscribe Link in Reminder Emails"
+msgstr "Leiratkozási link megjelenítése az emlékeztető e-mailekben"
+
+#: inc/admin/menu/tabs/email.php:173
+msgid ""
+"Display an unsubscribe link in Buy Again reminder emails, allowing users to "
+"unsubscribe and redirecting them to the Buy Again Reminder Email Preferences"
+" (Subscribe/Unsubscribe) page."
+msgstr "Leiratkozási link megjelenítése a Buy Again emlékeztető e-mailekben, amely lehetővé teszi a felhasználóknak a leiratkozást, majd átirányítja őket a Buy Again emlékeztető e-mail-beállítások oldalára (feliratkozás/leiratkozás)."
+
+#. translators: 1: shortcode
+#: inc/admin/menu/tabs/email.php:201
+#, php-format
+msgid ""
+"No page is selected. Customers cannot manage their preferences until you "
+"choose a page containing the %1$s shortcode."
+msgstr "Nincs kiválasztva oldal. A vásárlók nem kezelhetik a beállításaikat, amíg ki nem választ egy, a(z) %1$s shortcode-ot tartalmazó oldalt."
+
+#: inc/admin/menu/tabs/email.php:207
+msgid "View Page"
+msgstr "Oldal megtekintése"
+
+#: inc/admin/menu/tabs/email.php:208
+msgid "Edit Page"
+msgstr "Oldal szerkesztése"
+
+#. translators: 1: page title, 2: shortcode
+#: inc/admin/menu/tabs/email.php:215
+#, php-format
+msgid ""
+"%1$s does not contain the %2$s shortcode, so the preferences form will not "
+"appear on it."
+msgstr "A(z) %1$s nem tartalmazza a(z) %2$s shortcode-ot, ezért a beállítási űrlap nem jelenik meg rajta."
+
+#: inc/admin/menu/tabs/email.php:223
+msgid "This page renders the preferences form."
+msgstr "Ez az oldal megjeleníti a beállítási űrlapot."
+
+#: inc/admin/menu/tabs/email.php:271
+msgid "Edit Email Template"
+msgstr "E-mail-sablon szerkesztése"
+
+#: inc/admin/menu/tabs/email.php:275
+msgid "Manage"
+msgstr "Kezelés"
+
+#: inc/admin/menu/tabs/email.php:276
+msgid "You can edit buy again email content at the WooCommerce email template"
+msgstr "A WooCommerce e-mail-sablonban szerkesztheti a Buy Again e-mail tartalmát"
+
+#: inc/admin/menu/tabs/general.php:26
+msgid "General"
+msgstr "Általános"
+
+#: inc/admin/menu/tabs/general.php:48 inc/admin/menu/tabs/general.php:67
+msgid "General Settings"
+msgstr "Általános beállítások"
+
+#: inc/admin/menu/tabs/general.php:49
+msgid "Display Settings"
+msgstr "Megjelenítési beállítások"
+
+#: inc/admin/menu/tabs/general.php:71
+msgid "Enable Buy Again"
+msgstr "Újravásárlás engedélyezése"
+
+#: inc/admin/menu/tabs/general.php:77
+msgid "Enable Buy Again for Guest Users"
+msgstr "Buy Again engedélyezése vendégfelhasználók számára"
+
+#: inc/admin/menu/tabs/general.php:81
+msgid ""
+"Allows guest users to view their buy again products (Previously purchased "
+"products) by verifying their email address via OTP."
+msgstr "Lehetővé teszi a vendégfelhasználóknak, hogy e-mail-címük egyszer használatos jelszóval történő ellenőrzésével megtekintsék Buy Again termékeiket (korábban megvásárolt termékeiket)."
+
+#: inc/admin/menu/tabs/general.php:84
+msgid "Order Status for Purchasing Products through Buy Again"
+msgstr "A megrendelés állapota az újravásárlással megvásárolt termékek esetében"
+
+#: inc/admin/menu/tabs/general.php:89
+msgid ""
+"Please select the order status to display buy again in user(s) order details"
+" & buy again products menu on frontend"
+msgstr "Válassza ki a megrendelés állapotát, amelynél az újravásárlás megjelenjen a felhasználók megrendelési részletei között, valamint a weboldal újravásárolható termékeket tartalmazó menüjében"
+
+#: inc/admin/menu/tabs/general.php:94
+msgid "Enable Buy Again Product Quantity Memory"
+msgstr "Az újravásárláskor használt termékmennyiség megjegyzésének bekapcsolása"
+
+#: inc/admin/menu/tabs/general.php:98
+msgid ""
+"This option automatically sets the default quantity based on the user's last"
+" purchased product. The quantity will be updated on both the Single Product "
+"page and in the Buy Again table."
+msgstr "Ez a beállítás automatikusan az adott felhasználó legutóbbi vásárlásakor megadott mennyiséget állítja be alapértelmezettként. A mennyiség a termékoldalon és a Buy Again táblázatban is frissül."
+
+#: inc/admin/menu/tabs/general.php:107
+msgid "Bulk Actions in Buy Again Page"
+msgstr "Tömeges műveletek a Buy Again oldalon"
+
+#: inc/admin/menu/tabs/general.php:111
+msgid "Enable Bulk Actions"
+msgstr "Tömeges műveletek engedélyezése"
+
+#: inc/admin/menu/tabs/general.php:115
+msgid ""
+"Allow customers to select multiple products in the Buy Again table and add "
+"them to the cart, buy them now, or add them to their favorites with a single"
+" click."
+msgstr "Lehetővé teszi a vásárlók számára, hogy több terméket válasszanak ki a Buy Again táblázatban, majd egyetlen kattintással a kosárba tegyék, azonnal megvásárolják vagy a kedvenceikhez adják őket."
+
+#: inc/admin/menu/tabs/general.php:125
+msgid "Messages"
+msgstr "Üzenetek"
+
+#: inc/admin/menu/tabs/general.php:129
+msgid "Display Previously Purchased Notice on Single Product Page"
+msgstr "Korábbi vásárlásról szóló értesítés megjelenítése a termékoldalon"
+
+#: inc/admin/menu/tabs/general.php:134
+msgid "Show"
+msgstr "Megjelenítés"
+
+#: inc/admin/menu/tabs/general.php:135
+msgid "Hide"
+msgstr "Elrejtés"
+
+#: inc/admin/menu/tabs/general.php:139
+msgid "Previously Purchased Message"
+msgstr "Korábbi vásárlásról szóló üzenet"
+
+#: inc/admin/menu/tabs/general.php:142
 msgid "You have previously purchased this product [order_details]"
 msgstr "Ezt a terméket korábban már megvásárolta [order_details]"
 
-#: templates/emails/customer-buy-again-reminder.php:19
-msgid "Your recently bought products are waiting for the re-order."
-msgstr "A nemrég vásárolt termékei újrarendelésre várnak."
+#: inc/admin/menu/tabs/general.php:145
+msgid "Order Details Link Caption "
+msgstr "A megrendelés részleteire mutató link felirata"
 
-#: inc/abstracts/class-bya-settings-page.php:247
-msgid "Your settings have been reset"
-msgstr "A beállítások visszaállítva"
+#: inc/admin/menu/tabs/general.php:148 inc/admin/menu/tabs/general.php:203
+#: inc/admin/menu/tabs/general.php:217 inc/admin/menu/tabs/general.php:443
+msgid "Order Details"
+msgstr "Rendelés részletei"
 
-#: inc/abstracts/class-bya-settings-page.php:221
-msgid "Your settings have been saved"
-msgstr "A beállítások elmentve"
+#: inc/admin/menu/tabs/general.php:172 inc/class-bya-pages.php:173
+#: inc/class-bya-pages.php:416
+#: inc/widgets/class-bya-widget-buy-again-table.php:36
+#: inc/widgets/class-bya-widget-buy-again-table.php:135
+msgid "Buy Again Table"
+msgstr "Újravásárlási táblázat"
 
-#: inc/class-bya-pages.php:49
+#: inc/admin/menu/tabs/general.php:176
+msgid "Buy Again Table Display Type"
+msgstr "A Buy Again táblázat megjelenítési típusa"
+
+#: inc/admin/menu/tabs/general.php:180
+msgid "Modern Display"
+msgstr "Modern megjelenítés"
+
+#: inc/admin/menu/tabs/general.php:181
+msgid "Classic Display"
+msgstr "Klasszikus megjelenítés"
+
+#: inc/admin/menu/tabs/general.php:184
+msgid ""
+"Modern Display: The new Buy Again table design. Classic Display: The "
+"existing default Buy Again table design."
+msgstr "Modern megjelenítés: az új Buy Again táblázat kialakítása. Klasszikus megjelenítés: a Buy Again táblázat meglévő alapértelmezett kialakítása."
+
+#: inc/admin/menu/tabs/general.php:188
+msgid "Number of Products to Display Per Page in Buy Again Table"
+msgstr "Az újravásárlási táblázatban oldalanként megjelenítendő termékek száma"
+
+#: inc/admin/menu/tabs/general.php:196
+msgid "Display Add to Cart Button on"
+msgstr "Kosárba gomb megjelenítése ezen"
+
+#: inc/admin/menu/tabs/general.php:201
+msgid "Select the page(s) to display Add to Cart Button"
+msgstr "Válassza ki az oldal(ak)at, ahol a Kosárba gomb megjelenjen"
+
+#: inc/admin/menu/tabs/general.php:204 inc/admin/menu/tabs/general.php:218
+msgid "Buy Again Menu"
+msgstr "Újravásárlási menü"
+
+#: inc/admin/menu/tabs/general.php:210
+msgid "Display Buy Again Button on"
+msgstr "Újravásárlási gomb megjelenítése ezen"
+
+#: inc/admin/menu/tabs/general.php:215
+msgid "Select the page(s) to display Buy Again Button"
+msgstr "Válassza ki az oldal(ak)at, ahol az újravásárlási gomb megjelenjen"
+
+#: inc/admin/menu/tabs/general.php:223
+msgid "Display Buy Again Button in Orders Page on My Account Page"
+msgstr "Az újravásárlási gomb megjelenítése a Saját fiók Rendelések oldalán"
+
+#: inc/admin/menu/tabs/general.php:230
+msgid "Quantity Control for Buy Again on Orders Page"
+msgstr "Mennyiségszabályozás újravásárláskor a Rendelések oldalon"
+
+#: inc/admin/menu/tabs/general.php:234
+msgid "Same Quantity Based on Previous Purchase"
+msgstr "Azonos mennyiség a korábbi vásárlás alapján"
+
+#: inc/admin/menu/tabs/general.php:235
+msgid "Default Only One Quantity"
+msgstr "Alapértelmezetten csak egy mennyiséget"
+
+#: inc/admin/menu/tabs/general.php:241
+msgid "Hide Out of Stock Product(s)"
+msgstr "Elfogyott termékek elrejtése"
+
+#: inc/admin/menu/tabs/general.php:246
+msgid "Hide out-of-stock products form the Buy Again table"
+msgstr "Az elfogyott termékek elrejtése az újravásárlási táblázatból"
+
+#: inc/admin/menu/tabs/general.php:255
+msgid "Buy Again Table Columns"
+msgstr "A Buy Again táblázat oszlopai"
+
+#: inc/admin/menu/tabs/general.php:259
+msgid "Display Product Thumbnail in Buy Again Table"
+msgstr "Termék bélyegképének megjelenítése az újravásárlási táblázatban"
+
+#: inc/admin/menu/tabs/general.php:266
+msgid "Display Product Title Column"
+msgstr "Termékcím oszlop megjelenítése"
+
+#: inc/admin/menu/tabs/general.php:273
+msgid "Product Description"
+msgstr "Termékleírás"
+
+#: inc/admin/menu/tabs/general.php:280
+msgid "Display Previously Purchased Quantity Count & Order Count Column"
+msgstr "A korábban vásárolt mennyiséget és a rendelések számát megjelenítő oszlop megjelenítése"
+
+#: inc/admin/menu/tabs/general.php:287
+msgid "Display Last Purchased Order Column on Buy Again Table"
+msgstr "A termék legutóbbi vásárlásához tartozó megrendelést megjelenítő oszlop megjelenítése az újravásárlási táblázatban"
+
+#: inc/admin/menu/tabs/general.php:294
+msgid "Product Price Column"
+msgstr "Termékár oszlop"
+
+#: inc/admin/menu/tabs/general.php:301
+msgid "Display Stock Count in Buy Again Table"
+msgstr "Készletdarabszám megjelenítése az újravásárlási táblázatban"
+
+#: inc/admin/menu/tabs/general.php:306
+msgid ""
+"Stock Count display for each product on Buy Again table. Note: Stock count "
+"will be displayed only if you have enabled Manage stock for the product."
+msgstr "A készlet mennyiségének megjelenítése a Buy Again táblázatban minden terméknél. Megjegyzés: a készlet mennyisége csak akkor jelenik meg, ha bekapcsolta a termék készletkezelését."
+
+#: inc/admin/menu/tabs/general.php:309
+msgid "Product Quantity Column"
+msgstr "Termékmennyiség oszlop"
+
+#: inc/admin/menu/tabs/general.php:316
+msgid "Action Column"
+msgstr "Művelet oszlop"
+
+#: inc/admin/menu/tabs/general.php:323
+msgid "Enable Favourite Products"
+msgstr "Kedvenc termékek bekapcsolása"
+
+#: inc/admin/menu/tabs/general.php:328
+msgid ""
+"Allow customers to mark products as favourites and display them under the "
+"\"Favourite Products\" filter."
+msgstr "Lehetővé teszi a vásárlók számára, hogy kedvencként jelöljék meg a termékeket, és megjelenítsék őket a „Kedvenc termékek” szűrőben."
+
+#: inc/admin/menu/tabs/general.php:331
+msgid "Display Add to Cart Button"
+msgstr "Kosárba gomb megjelenítése"
+
+#: inc/admin/menu/tabs/general.php:348
+msgid "Filter Options in Buy Again Table"
+msgstr "Szűrési opciók a Buy Again táblázatban"
+
+#: inc/admin/menu/tabs/general.php:352
+msgid "Enable Product Filter Options"
+msgstr "Termékszűrési opciók bekapcsolása"
+
+#: inc/admin/menu/tabs/general.php:357 inc/admin/menu/tabs/general.php:365
+msgid ""
+"Allow customers to filter their previously purchased products using various "
+"filter options."
+msgstr "Lehetővé teszi a vásárlók számára, hogy különböző szűrési opciókkal szűrjék a korábban vásárolt termékeiket."
+
+#: inc/admin/menu/tabs/general.php:360
+msgid "Enable Product Filter By Dropdown"
+msgstr "Termékszűrő legördülő menüjének bekapcsolása"
+
+#: inc/admin/menu/tabs/general.php:372
+msgid "Default Filter"
+msgstr "Alapértelmezett szűrő"
+
+#: inc/admin/menu/tabs/general.php:380
+msgid "Enable Sort By Dropdown"
+msgstr "Rendezési legördülő menü bekapcsolása"
+
+#: inc/admin/menu/tabs/general.php:385
+msgid ""
+"Show the \"Sort By\" dropdown in the Buy Again filter bar, allowing "
+"customers to sort products by Most Recent, Ascending, and Descending order."
+msgstr "Megjeleníti a „Rendezés” legördülő menüt a Buy Again szűrősávban, így a vásárlók a legújabb, növekvő vagy csökkenő sorrend szerint rendezhetik a termékeket."
+
+#: inc/admin/menu/tabs/general.php:388
+msgid "Enable Search"
+msgstr "Keresés bekapcsolása"
+
+#: inc/admin/menu/tabs/general.php:393
+msgid ""
+"Enable product search within the Advanced Filter section of the Buy Again "
+"table."
+msgstr "Termékkeresés bekapcsolása a Buy Again táblázat haladó szűrési szakaszában."
+
+#: inc/admin/menu/tabs/general.php:396
+msgid "Allow Users to Search by Product Category"
+msgstr "Termékkategória szerinti keresés engedélyezése a felhasználóknak"
+
+#: inc/admin/menu/tabs/general.php:401
+msgid ""
+"Allow customers to search and filter Buy Again products by product category "
+"within the Advanced Filter section of the Buy Again table."
+msgstr "Lehetővé teszi a vásárlók számára, hogy a Buy Again táblázat haladó szűrési szakaszában termékkategória szerint keressenek a Buy Again termékek között, és szűrjék azokat."
+
+#: inc/admin/menu/tabs/general.php:404
+msgid "Display Filter By date"
+msgstr "Dátum szerinti szűrő megjelenítése"
+
+#: inc/admin/menu/tabs/general.php:409
+msgid ""
+"Allow customers to filter Buy Again products based on their purchase date "
+"using predefined ranges (e.g., Last 30 Days, Last 60 Days) or a custom date "
+"range within the Advanced Filter section."
+msgstr "Lehetővé teszi a vásárlók számára, hogy a vásárlás dátuma alapján szűrjék a Buy Again termékeket a haladó szűrési szakaszban, előre meghatározott időszakok (pl. az elmúlt 30 vagy 60 nap) vagy egyéni dátumtartomány megadásával."
+
+#: inc/admin/menu/tabs/general.php:412
+msgid "Filter Position"
+msgstr "A szűrő pozíciója"
+
+#: inc/admin/menu/tabs/general.php:418
+msgid "Top (Before Product List)"
+msgstr "Fent (a terméklista előtt)"
+
+#: inc/admin/menu/tabs/general.php:419
+msgid "Bottom (After Product List)"
+msgstr "Lent (a terméklista után)"
+
+#: inc/admin/menu/tabs/general.php:428
+msgid "Cart Page"
+msgstr "Kosároldal"
+
+#: inc/admin/menu/tabs/general.php:432
+msgid "Display Buy Again Products in Cart Page"
+msgstr "Újravásárolható termékek megjelenítése a kosároldalon"
+
+#: inc/admin/menu/tabs/general.php:447
+msgid "Hide Quantity Field in Order details page"
+msgstr "A mennyiségmező elrejtése a rendelés részleteit tartalmazó oldalon"
+
+#: inc/admin/menu/tabs/general.php:458
+msgid "Buy Again Tag Customization"
+msgstr "Újravásárlási címke testreszabása"
+
+#: inc/admin/menu/tabs/general.php:462
+msgid "Display Tag for Buy Again Products in Shop/Category Pages "
+msgstr "Címke megjelenítése az újravásárolható termékeknél a bolt- és kategóriaoldalakon "
+
+#: inc/admin/menu/tabs/general.php:468
+msgid "Display Tag for Buy Again Products in Single Product Page"
+msgstr "Címke megjelenítése az újravásárolható termékeknél a termékoldalon"
+
+#: inc/admin/menu/tabs/general.php:474
+msgid "Tag Label"
+msgstr "Címke felirata"
+
+#: inc/admin/menu/tabs/general.php:485
+msgid "Tag background Color 1"
+msgstr "Címke háttérszíne 1"
+
+#: inc/admin/menu/tabs/general.php:492
+msgid "Tag background Color 2"
+msgstr "Címke háttérszíne 2"
+
+#: inc/admin/menu/tabs/general.php:499
+msgid "Tag Text Color"
+msgstr "Címke szövegszíne"
+
+#: inc/admin/menu/tabs/general.php:506
+msgid "Upload Image"
+msgstr "Kép feltöltése"
+
+#: inc/admin/menu/tabs/general.php:513
+msgid "Tag Position"
+msgstr "Címke pozíciója"
+
+#: inc/admin/menu/tabs/general.php:517
+msgid "Top Left"
+msgstr "Bal felső"
+
+#: inc/admin/menu/tabs/general.php:518
+msgid "Top Right"
+msgstr "Jobb felső"
+
+#: inc/admin/menu/tabs/general.php:543
+msgid "Filter Types"
+msgstr "Szűrőtípusok"
+
+#: inc/admin/menu/tabs/general.php:552 inc/admin/menu/tabs/general.php:653
+msgid "Drag to reorder"
+msgstr "A sorrend módosításához húzza át"
+
+#: inc/admin/menu/tabs/general.php:568
+msgid "Drag to reorder. Check to enable each filter option on the frontend."
+msgstr "Húzással rendezze át az elemeket. Jelölje be az egyes szűrési lehetőségeket a webhely felületén való bekapcsolásukhoz."
+
+#: inc/admin/menu/tabs/general.php:642
+msgid "Reorder Table Columns by Drag and Drop"
+msgstr "A táblázat oszlopainak átrendezése húzással"
+
+#. translators: %s: column label
+#: inc/admin/menu/tabs/general.php:656
+#, php-format
+msgid "Move %s up"
+msgstr "%s mozgatása felfelé"
+
+#. translators: %s: column label
+#: inc/admin/menu/tabs/general.php:658
+#, php-format
+msgid "Move %s down"
+msgstr "%s mozgatása lefelé"
+
+#: inc/admin/menu/tabs/general.php:664
+msgid ""
+"Drag and drop the columns to change their display order in the Buy Again "
+"table."
+msgstr "A Buy Again táblázat oszlopainak megjelenítési sorrendjének módosításához húzza át az oszlopokat."
+
+#: inc/admin/menu/tabs/localization.php:26
+msgid "Localization"
+msgstr "Lokalizáció"
+
+#: inc/admin/menu/tabs/localization.php:53 inc/class-bya-pages.php:131
+msgid "Buy Again Page"
+msgstr "Újravásárlási oldal"
+
+#: inc/admin/menu/tabs/localization.php:57
+msgid "Buy Again My Account Page Label"
+msgstr "Az „Újravásárlás” címkéje a Fiókom oldalon"
+
+#: inc/admin/menu/tabs/localization.php:64
+msgid "Search Field Label"
+msgstr "Keresőmező felirata"
+
+#: inc/admin/menu/tabs/localization.php:71
+msgid "Product Thumbnail Column Label"
+msgstr "A termék bélyegképét tartalmazó oszlop címkéje"
+
+#: inc/admin/menu/tabs/localization.php:78
+msgid "Product Title Column Label"
+msgstr "A termék címét tartalmazó oszlop címkéje"
+
+#: inc/admin/menu/tabs/localization.php:85
+msgid "Previously Purchased Quantity Count & Order Count Label"
+msgstr "A korábban vásárolt mennyiség és a rendelések számának címkéje"
+
+#: inc/admin/menu/tabs/localization.php:92
+msgid "Previously Purchased Quantity Count & Order Count"
+msgstr "A korábban vásárolt mennyiség és a rendelések száma"
+
+#: inc/admin/menu/tabs/localization.php:99
+msgid "Last Purchased Order Column Label"
+msgstr "Az utolsó vásárlás rendelését megjelenítő oszlop címkéje"
+
+#: inc/admin/menu/tabs/localization.php:106
+msgid "Stock Count Column Label"
+msgstr "A készlet darabszámát megjelenítő oszlop felirata"
+
+#: inc/admin/menu/tabs/localization.php:113
+msgid "Product Price Column Label"
+msgstr "A termék árát tartalmazó oszlop címkéje"
+
+#: inc/admin/menu/tabs/localization.php:120
+msgid "Product Quantity Column Label"
+msgstr "A termék mennyiségét tartalmazó oszlop címkéje"
+
+#: inc/admin/menu/tabs/localization.php:127
+msgid "Action Column Label"
+msgstr "A művelet oszlopának felirata"
+
+#: inc/admin/menu/tabs/localization.php:134
+msgid "Favourite Product Column Label"
+msgstr "A kedvenc termék oszlopának címkéje"
+
+#: inc/admin/menu/tabs/localization.php:141
+msgid "Add to Cart Button Label"
+msgstr "Kosárba gomb felirata"
+
+#: inc/admin/menu/tabs/localization.php:147
+msgid "Buy Now Button Label"
+msgstr "Az „Azonnali vásárlás” gomb felirata"
+
+#: inc/admin/menu/tabs/localization.php:153
+msgid "Bulk Actions Apply Button Label"
+msgstr "A tömeges műveletek alkalmazására szolgáló gomb felirata"
+
+#: inc/admin/menu/tabs/localization.php:159
+msgid "Filter Button Label"
+msgstr "A szűrőgomb felirata"
+
+#: inc/admin/menu/tabs/localization.php:165
+msgid "Filter By label"
+msgstr "Szűrés szerint felirat"
+
+#: inc/admin/menu/tabs/localization.php:171
+msgid "Choose Category label"
+msgstr "Kategória kiválasztása felirat"
+
+#: inc/admin/menu/tabs/localization.php:177
+msgid "Search Button Label"
+msgstr "Keresés gomb felirata"
+
+#: inc/admin/menu/tabs/localization.php:191
+#: inc/class-bya-email-subscription.php:582
+#: inc/class-bya-email-subscription.php:698 inc/class-bya-shortcodes.php:130
+msgid "Buy Again Reminder Email Preferences (Subscribe/Unsubscribe)"
+msgstr "Buy Again emlékeztető e-mail-beállítások (előfizetés/leiratkozás)"
+
+#: inc/admin/menu/tabs/localization.php:192
+msgid ""
+"Labels used by the preferences form, shown in the popup and on the Email "
+"Preferences page."
+msgstr "A beállítási űrlap címkéi, amelyek az előugró ablakban és az e-mail-beállítások oldalán jelennek meg."
+
+#: inc/admin/menu/tabs/localization.php:196
+msgid "Form Title"
+msgstr "Űrlap címe"
+
+#: inc/admin/menu/tabs/localization.php:200
+msgid "Heading of the preferences form."
+msgstr "A beállítási űrlap címsora."
+
+#: inc/admin/menu/tabs/localization.php:204
+msgid "Form Description"
+msgstr "Űrlap leírása"
+
+#: inc/admin/menu/tabs/localization.php:208
+msgid "Supporting line below the form heading."
+msgstr "Az űrlap címsora alatt megjelenő kiegészítő szöveg."
+
+#: inc/admin/menu/tabs/localization.php:212
+msgid "Email Address Text"
+msgstr "E-mail-cím szövege"
+
+#: inc/admin/menu/tabs/localization.php:216
+msgid "Badge shown beside the detected email address."
+msgstr "A felismert e-mail-cím mellett megjelenő jelvény."
+
+#: inc/admin/menu/tabs/localization.php:220
+msgid "Reminder Email Title"
+msgstr "Emlékeztető e-mail címe"
+
+#: inc/admin/menu/tabs/localization.php:224
+msgid "Name of the email type the customer is subscribing to."
+msgstr "Annak az e-mail-típusnak a neve, amelyre a vásárló előfizet."
+
+#: inc/admin/menu/tabs/localization.php:228
+msgid "Reminder Email Description"
+msgstr "Emlékeztető e-mail leírása"
+
+#: inc/admin/menu/tabs/localization.php:232
+msgid "Explains what the emails contain."
+msgstr "Ismerteti, hogy mit tartalmaznak az e-mailek."
+
+#: inc/admin/menu/tabs/localization.php:236
+msgid "Subscription Option"
+msgstr "Előfizetési opció"
+
+#: inc/admin/menu/tabs/localization.php:240
+msgid "Accessible label of the subscription toggle, read by screen readers."
+msgstr "Az előfizetési kapcsoló akadálymentes címkéje, amelyet a képernyőolvasók olvasnak fel."
+
+#: inc/admin/menu/tabs/localization.php:244
+msgid "Unsubscribed Message"
+msgstr "Leiratkozási üzenet"
+
+#: inc/admin/menu/tabs/localization.php:248
+msgid "Status shown while the customer is unsubscribed."
+msgstr "A leiratkozott vásárlónak megjelenő állapotüzenet."
+
+#: inc/admin/menu/tabs/localization.php:252
+msgid "Subscribed Message"
+msgstr "Előfizetési üzenet"
+
+#: inc/admin/menu/tabs/localization.php:256
+msgid "Status shown while the customer is subscribed."
+msgstr "Az előfizetés fennállása alatt megjelenő állapotüzenet."
+
+#: inc/admin/menu/tabs/localization.php:260
+msgid "Save Button Text"
+msgstr "Mentés gomb szövege"
+
+#: inc/admin/menu/tabs/localization.php:264
+msgid "Label of the button that saves the preference."
+msgstr "A beállítást mentő gomb címkéje."
+
+#: inc/admin/menu/tabs/localization.php:268
+msgid "Success Message"
+msgstr "Sikerüzenet"
+
+#: inc/admin/menu/tabs/localization.php:272
+msgid "Confirmation shown under the save button."
+msgstr "A mentés gomb alatt megjelenő megerősítés."
+
+#: inc/admin/menu/tabs/localization.php:284
+msgid "Email Preferences (Subscribe/Unsubscribe) – Buy Again Table"
+msgstr "E-mail-beállítások (előfizetés/leiratkozás) – Buy Again táblázat"
+
+#: inc/admin/menu/tabs/localization.php:288
+msgid "Email Unsubscribed Message"
+msgstr "E-mailes leiratkozási üzenet"
+
+#: inc/admin/menu/tabs/localization.php:292
+msgid ""
+"Shown in the Buy Again table banner, and in the reminder email footer, when "
+"the customer has unsubscribed."
+msgstr "A Buy Again táblázat fejlécsávjában és az emlékeztető e-mail láblécében jelenik meg, ha a vásárló leiratkozott."
+
+#: inc/admin/menu/tabs/localization.php:296
+msgid "Email Preferences Description"
+msgstr "E-mail-beállítások leírása"
+
+#: inc/admin/menu/tabs/localization.php:300
+msgid ""
+"Shown in the Buy Again table banner, and in the reminder email footer, when "
+"the customer is subscribed."
+msgstr "A Buy Again táblázat fejlécsávjában és az emlékeztető e-mail láblécében jelenik meg, ha a vásárló előfizetett."
+
+#: inc/admin/menu/tabs/localization.php:304
+msgid "Manage Email Preferences Link"
+msgstr "E-mail-beállítások kezelésére szolgáló link"
+
+#: inc/admin/menu/tabs/localization.php:308
+msgid "Label of the button that opens the email preferences popup."
+msgstr "Az e-mail-beállítások felugró ablakát megnyitó gomb címkéje."
+
+#: inc/admin/menu/tabs/localization.php:312
+msgid "Manage Email Preferences Link (Alternative)"
+msgstr "E-mail-beállítások kezelésére szolgáló link (alternatív)"
+
+#: inc/admin/menu/tabs/localization.php:316
+msgid ""
+"The linked text in the reminder email that opens the Email Preferences page."
+msgstr "Az emlékeztető e-mailben található, az e-mail-beállítások oldalát megnyitó link szövege."
+
+#: inc/admin/menu/tabs/shortcodes.php:26 inc/admin/menu/tabs/shortcodes.php:43
+#: inc/admin/menu/views/html-shortcodes-info.php:355
+#: inc/admin/menu/views/html-shortcodes-info.php:356
+msgid "Shortcodes"
+msgstr "Shortcode-ok"
+
+#: inc/admin/menu/tabs/shortcodes.php:66
+msgid ""
+"Displays the Buy Again product table for the current customer. Shows all "
+"products previously ordered, with optional filtering, sorting, and column "
+"controls. Can be placed on any page or post."
+msgstr "Megjeleníti az aktuális vásárló Buy Again terméktáblázatát. Az összes korábban megrendelt terméket mutatja, opcionális szűréssel, rendezéssel és oszlopbeállításokkal. Bármely oldalra vagy bejegyzésbe elhelyezhető."
+
+#: inc/admin/menu/tabs/shortcodes.php:70
+#: inc/admin/menu/tabs/shortcodes.php:144
+msgid "Any positive integer, or -1 for all"
+msgstr "Bármely pozitív egész szám, vagy -1 az összeshez"
+
+#: inc/admin/menu/tabs/shortcodes.php:72
+msgid ""
+"Maximum number of products to display. Limits the DB query result. Use -1 to"
+" show all products."
+msgstr "A megjelenítendő termékek maximális száma. Korlátozza az adatbázis-lekérdezés eredményét. Az összes termék megjelenítéséhez használja a -1 értéket."
+
+#: inc/admin/menu/tabs/shortcodes.php:76
+#: inc/admin/menu/tabs/shortcodes.php:150
+msgid "Comma-separated product category slugs"
+msgstr "Vesszővel elválasztott termékkategória-slugok"
+
+#: inc/admin/menu/tabs/shortcodes.php:77
+#: inc/admin/menu/tabs/shortcodes.php:151
+msgid "(all categories)"
+msgstr "(összes kategória)"
+
+#: inc/admin/menu/tabs/shortcodes.php:78
+msgid ""
+"Restricts the table to products belonging to the specified categories. Use "
+"the category slug (from Products → Categories). Multiple slugs are comma-"
+"separated."
+msgstr "A táblázat csak a megadott kategóriákhoz tartozó termékeket jeleníti meg. Használja a kategória slugját (a termékek → kategóriák menüpontból). Több slug vesszővel elválasztva adható meg."
+
+#: inc/admin/menu/tabs/shortcodes.php:83
+#: inc/admin/menu/tabs/shortcodes.php:157
+msgid "Site setting (General → Sort)"
+msgstr "Webhelybeállítás (általános → rendezés)"
+
+#: inc/admin/menu/tabs/shortcodes.php:84
+msgid ""
+"Default sort field. \"recent\" sorts by last order date (newest first). "
+"\"title\" sorts alphabetically by product name. The customer can still "
+"change sorting using the filter bar unless show_filters=\"no\"."
+msgstr "Alapértelmezett rendezési mező. A „recent” az utolsó rendelés dátuma szerint rendez (a legújabbal kezdve). A „title” ábécésorrendben, a termék neve szerint rendez. A vásárló a szűrősávban továbbra is módosíthatja a rendezést, kivéve ha a show_filters=\"no\" beállítás érvényes."
+
+#: inc/admin/menu/tabs/shortcodes.php:90
+msgid ""
+"Default sort direction. \"asc\" = ascending (A–Z, oldest first). \"desc\" = "
+"descending (Z–A, newest first). Overrideable by the customer via the filter "
+"bar."
+msgstr "Alapértelmezett rendezési irány. Az „asc” = növekvő (A–Z, legrégebbi elöl). A „desc” = csökkenő (Z–A, legújabb elöl). A vásárló a szűrősávban felülbírálhatja."
+
+#: inc/admin/menu/tabs/shortcodes.php:96
+msgid ""
+"Whether to display the filter/search bar above the table. Set to \"no\" for "
+"a clean embedded view without filter controls, such as on a landing page or "
+"email-linked page."
+msgstr "Megjelenjen-e a táblázat feletti szűrő-/keresősáv. Állítsa „no” értékre, ha letisztult, szűrővezérlők nélküli beágyazott nézetet szeretne, például egy céloldalon vagy e-mailből megnyitott oldalon."
+
+#: inc/admin/menu/tabs/shortcodes.php:100
+msgid ""
+"Comma-separated column slugs to hide: image, name, description, order_count,"
+" order_id, stock, price, quantity, action"
+msgstr "Vesszővel elválasztott, elrejtendő oszlop-slugok: image, name, description, order_count, order_id, stock, price, quantity, action"
+
+#: inc/admin/menu/tabs/shortcodes.php:101
+msgid "(all enabled columns shown)"
+msgstr "(az összes bekapcsolt oszlop megjelenik)"
+
+#: inc/admin/menu/tabs/shortcodes.php:102
+msgid ""
+"Hides specific columns from the table output for this shortcode instance "
+"only. Does not affect the global column visibility settings. Useful when "
+"embedding a simplified table on a page."
+msgstr "Csak ennél a shortcode-példánynál rejt el megadott oszlopokat a táblázatban. A globális oszlopláthatósági beállításokat nem módosítja. Hasznos, ha egy egyszerűsített táblázatot ágyaz be egy oldalra."
+
+#: inc/admin/menu/tabs/shortcodes.php:108
+msgid ""
+"Displays the full Buy Again table with all default settings — all products, "
+"all columns, filter bar visible."
+msgstr "Az összes alapértelmezett beállítással jeleníti meg a teljes Buy Again táblázatot – az összes termékkel és oszloppal, valamint látható szűrősávval."
+
+#: inc/admin/menu/tabs/shortcodes.php:112
+msgid "Shows only the 5 most recently ordered products."
+msgstr "Csak az 5 legutóbb megrendelt terméket jeleníti meg."
+
+#: inc/admin/menu/tabs/shortcodes.php:116
+msgid ""
+"Shows only products in the \"coffee\" or \"tea\" categories. Uses category "
+"slugs."
+msgstr "Csak a „coffee” vagy „tea” kategóriába tartozó termékeket jeleníti meg. Kategória-slugokat használ."
+
+#: inc/admin/menu/tabs/shortcodes.php:120
+msgid "Displays products sorted alphabetically A–Z by product name."
+msgstr "Ábécésorrendben, A–Z szerint jeleníti meg a termékeket a nevük alapján."
+
+#: inc/admin/menu/tabs/shortcodes.php:124
+msgid ""
+"Hides the filter bar. Ideal for embedding on a landing page or in an email-"
+"linked page where filter controls are unnecessary."
+msgstr "Elrejti a szűrősávot. Ideális céloldalra vagy e-mailben hivatkozott oldalra történő beágyazáshoz, ahol nincs szükség szűrővezérlőkre."
+
+#: inc/admin/menu/tabs/shortcodes.php:128
+msgid ""
+"Hides the Order Count, Order ID, and Stock columns from this instance of the"
+" table."
+msgstr "Elrejti a rendelési darabszám, a Rendelés ID és a készlet oszlopait a táblázat ezen példányában."
+
+#: inc/admin/menu/tabs/shortcodes.php:132
+msgid ""
+"Targeted embed: shows up to 3 coffee products, no filter bar, and a "
+"simplified column set. Suitable for a coffee product landing page."
+msgstr "Célzott beágyazás: legfeljebb 3 kávéterméket jelenít meg szűrősáv nélkül, egyszerűsített oszlopkészlettel. Kávétermékek céloldalához megfelelő."
+
+#: inc/admin/menu/tabs/shortcodes.php:140
+msgid ""
+"Displays the Buy Again product carousel for the current customer. Products "
+"are shown as an Owl Carousel slider. Can be placed on any page, post, or "
+"sidebar area. Also available as a Gutenberg block and classic widget."
+msgstr "Megjeleníti az aktuális vásárlónak szóló Buy Again-termékeket tartalmazó carouselt. A termékek Owl Carousel diavetítésként jelennek meg. Bármely oldalra, bejegyzésbe vagy oldalsávba elhelyezhető. Gutenberg-blokk és klasszikus widget formájában is elérhető."
+
+#: inc/admin/menu/tabs/shortcodes.php:146
+msgid ""
+"Maximum number of products to load into the carousel. Use -1 to load all "
+"previously ordered products."
+msgstr "A carouselbe betöltendő termékek maximális száma. Az összes korábban megrendelt termék betöltéséhez használja a -1 értéket."
+
+#: inc/admin/menu/tabs/shortcodes.php:152
+msgid ""
+"Restricts the carousel to products in the specified categories. Use the "
+"category slug from Products → Categories. Multiple slugs are comma-"
+"separated."
+msgstr "A carousel csak a megadott kategóriákba tartozó termékeket jeleníti meg. Használja a kategória slugját a termékek → kategóriák menüpontból. Több slug vesszővel elválasztva adható meg."
+
+#: inc/admin/menu/tabs/shortcodes.php:158
+msgid ""
+"\"recent\" sorts by last order date (newest first). \"title\" sorts "
+"alphabetically by product name."
+msgstr "A „recent” az utolsó rendelés dátuma szerint rendez (a legújabbal kezdve). A „title” ábécésorrendben, a termék neve szerint rendez."
+
+#: inc/admin/menu/tabs/shortcodes.php:164
+msgid "Sort direction. \"asc\" = ascending. \"desc\" = descending."
+msgstr "Rendezési irány. Az „asc” = növekvő. A „desc” = csökkenő."
+
+#: inc/admin/menu/tabs/shortcodes.php:168
+msgid "Any text string"
+msgstr "Bármilyen szöveg"
+
+#: inc/admin/menu/tabs/shortcodes.php:169
+msgid "Site default Buy Again label (Localization settings)"
+msgstr "A webhely alapértelmezett Buy Again címkéje (honosítási beállítások)"
+
+#: inc/admin/menu/tabs/shortcodes.php:170
+msgid ""
+"Heading text displayed above the carousel. Leave empty to use the global "
+"label set in Localization settings."
+msgstr "A carousel felett megjelenő címsor szövege. Hagyja üresen, ha a honosítási beállításokban megadott globális címkét szeretné használni."
+
+#: inc/admin/menu/tabs/shortcodes.php:176
+msgid ""
+"Whether to show the carousel heading. Set to \"no\" to render the carousel "
+"without a title."
+msgstr "Megjelenjen-e a carousel címsora. Állítsa „no” értékre, ha cím nélküli carouselt szeretne."
+
+#: inc/admin/menu/tabs/shortcodes.php:180
+msgid "Any positive integer"
+msgstr "Bármely pozitív egész szám"
+
+#: inc/admin/menu/tabs/shortcodes.php:182
+msgid ""
+"Number of product cards visible per row at desktop width (≥1000 px). At "
+"tablet (600–999 px) a maximum of 2 items are shown; at mobile (< 600 px) "
+"always 1."
+msgstr "Az asztali nézetben (≥1000 px) soronként látható termékkártyák száma. Táblagépen (600–999 px) legfeljebb 2 termékkártya jelenik meg; mobilon (< 600 px) mindig 1."
+
+#: inc/admin/menu/tabs/shortcodes.php:188
+msgid ""
+"When set to \"yes\", the entire carousel (including the wrapper div) is not "
+"rendered if the customer has no matching products. Useful for sidebars where"
+" an empty carousel heading would look out of place."
+msgstr "Ha „yes” értékre van állítva, a teljes carousel (beleértve a tároló div elemet is) nem jelenik meg, ha a vásárlónak nincsenek megfelelő termékei. Hasznos oldalsávoknál, ahol egy üres carousel-címsor nem illene a megjelenésbe."
+
+#: inc/admin/menu/tabs/shortcodes.php:194
+msgid "Displays the full carousel with all default settings."
+msgstr "Az összes alapértelmezett beállítással jeleníti meg a teljes carouselt."
+
+#: inc/admin/menu/tabs/shortcodes.php:198
+msgid "Shows 3 product cards per row on desktop."
+msgstr "Soronként 3 termékkártyát jelenít meg asztali nézetben."
+
+#: inc/admin/menu/tabs/shortcodes.php:202
+msgid "Shows up to 8 previously ordered hoodies."
+msgstr "Legfeljebb 8 korábban megrendelt kapucnis pulóvert jelenít meg."
+
+#: inc/admin/menu/tabs/shortcodes.php:206
+msgid "Custom heading \"Order Again\", products sorted A–Z by name."
+msgstr "Egyéni „Újrarendelés” címsor, a termékek név szerinti A–Z rendezésével."
+
+#: inc/admin/menu/tabs/shortcodes.php:210
+msgid ""
+"No heading; the entire carousel is hidden if the customer has no products. "
+"Ideal for sidebar widgets."
+msgstr "Nincs címsor; a teljes carousel rejtve marad, ha a vásárlónak nincsenek termékei. Ideális oldalsávi widgetekhez."
+
+#: inc/admin/menu/tabs/shortcodes.php:214
+msgid ""
+"Targeted embed for a coffee/tea landing page — up to 12 products, 4 per row,"
+" hidden if empty."
+msgstr "Kávé- vagy tea-témájú céloldalra szánt beágyazás — legfeljebb 12 termék, soronként 4; üres esetén rejtve."
+
+#: inc/admin/menu/tabs/shortcodes.php:221
+msgid ""
+"This shortcode only works when \"Allow users to manage Buy Again reminder "
+"email subscriptions (subscribe/unsubscribe)\" is enabled."
+msgstr "Ez a shortcode csak akkor működik, ha az „A felhasználók kezelhetik a Buy Again emlékeztető e-mailes előfizetéseiket (előfizetés/leiratkozás)” beállítás be van kapcsolva."
+
+#: inc/admin/menu/tabs/shortcodes.php:222
+msgid ""
+"Displays the email preferences form, allowing guests and registered "
+"customers to subscribe to or unsubscribe from Buy Again reminder emails. "
+"This shortcode is automatically added to the Email Preferences page created "
+"by the plugin. The page can be configured under: Buy Again Reminder Email "
+"Subscription Settings."
+msgstr "Megjeleníti az e-mail-beállítások űrlapot, amelyen a vendégek és a regisztrált vásárlók előfizethetnek a Buy Again emlékeztető e-mailjeire, illetve lemondhatják az előfizetésüket. Ezt a shortcode-ot a bővítmény automatikusan hozzáadja az e-mail-beállítások oldalhoz. Az oldal a következő helyen állítható be: Buy Again Reminder Email Subscription Settings."
+
+#: inc/admin/menu/tabs/shortcodes.php:226
+#: inc/admin/menu/tabs/shortcodes.php:232
+msgid "Any text"
+msgstr "Bármilyen szöveg"
+
+#: inc/admin/menu/tabs/shortcodes.php:227
+msgid "Email preferences (Localization setting)"
+msgstr "E-mail-beállítások (honosítási beállítás)"
+
+#: inc/admin/menu/tabs/shortcodes.php:228
+msgid "Sets the heading displayed at the top of the form."
+msgstr "Beállítja az űrlap tetején megjelenő címsort."
+
+#: inc/admin/menu/tabs/shortcodes.php:233
+msgid "Manage the emails you receive from our store. (Localization setting)"
+msgstr "Kezelje az üzletünktől kapott e-maileket. (honosítási beállítás)"
+
+#: inc/admin/menu/tabs/shortcodes.php:234
+msgid "Sets the description displayed below the heading."
+msgstr "Beállítja a címsor alatt megjelenő leírást."
+
+#: inc/admin/menu/tabs/shortcodes.php:240
+msgid "Displays the form using the labels configured under Localization."
+msgstr "A honosítás alatt beállított címkékkel jeleníti meg az űrlapot."
+
+#: inc/admin/menu/tabs/shortcodes.php:244
+msgid "Displays the form with a custom title and description."
+msgstr "Egyéni címmel és leírással jeleníti meg az űrlapot."
+
+#: inc/admin/menu/views/html-customer-details.php:15
+#: inc/admin/menu/wp-list-table/class-bya-customer-list-table.php:304
+#: templates/myaccount-buy-again.php:113
+msgid "User Avatar"
+msgstr "Felhasználói avatar"
+
+#: inc/admin/menu/views/html-customer-details.php:25
+msgid "Buy Again reminder emails"
+msgstr "Buy Again emlékeztető e-mailek"
+
+#: inc/admin/menu/views/html-customer-details.php:34
+msgid "Receive Buy Again reminder emails"
+msgstr "Buy Again emlékeztető e-mailek fogadása"
+
+#: inc/admin/menu/views/html-customer-details.php:44
+msgid "Total Orders Placed"
+msgstr "Összes leadott rendelés"
+
+#: inc/admin/menu/views/html-customer-details.php:49
+msgid "Total Products Bought"
+msgstr "Megvásárolt termékek száma"
+
+#: inc/admin/menu/views/html-customer-details.php:54
+msgid "Total Spent Using Buy Again"
+msgstr "A Buy Again használatával elköltött összeg"
+
+#: inc/admin/menu/views/html-customer-details.php:62
+msgid "Purchased Buy Again Products"
+msgstr "Megvásárolt Buy Again-termékek"
+
+#: inc/admin/menu/views/html-customer-details.php:65
+msgid "Search Products"
+msgstr "Termékek keresése"
+
+#: inc/admin/menu/views/html-customer-details.php:67
+#: inc/admin/menu/views/html-customer-details.php:104
+msgid "Search"
+msgstr "Keresés"
+
+#: inc/admin/menu/views/html-customer-details.php:99
+msgid "Buy Again Orders"
+msgstr "Buy Again-rendelések"
+
+#: inc/admin/menu/views/html-customer-details.php:102
+msgid "Search Orders"
+msgstr "Rendelések keresése"
+
+#. translators: %s: search keywords
+#: inc/admin/menu/views/html-customer.php:25
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Keresési eredmények erre: „%s”"
+
+#: inc/admin/menu/views/html-customer.php:31
+msgid "Search Customer"
+msgstr "Vásárló keresése"
+
+#: inc/admin/menu/views/html-report.php:25
+msgid "Buy Again Report"
+msgstr "Buy Again-jelentés"
+
+#: inc/admin/menu/views/html-report.php:29
+msgid "Performance of the products your customers bought again."
+msgstr "A vásárlók által ismét megvásárolt termékek teljesítménye."
+
+#: inc/admin/menu/views/html-report.php:35
+msgid "Date range"
+msgstr "Dátumtartomány"
+
+#: inc/admin/menu/views/html-report.php:42
+#: templates/buy-again-bulk-actions.php:15
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#: inc/admin/menu/views/html-report.php:54
+msgid "Customer Overview"
+msgstr "Vásárlói áttekintés"
+
+#: inc/admin/menu/views/html-report.php:63
+msgid "No Buy Again activity in this period"
+msgstr "Ebben az időszakban nem történt Buy Again-aktivitás"
+
+#: inc/admin/menu/views/html-report.php:64
+msgid ""
+"Once customers reorder products from their Buy Again list, their orders and "
+"revenue will appear here. Try a wider date range."
+msgstr "Amint a vásárlók újrarendelik a Buy Again-listájukon szereplő termékeket, rendeléseik és bevételük itt jelennek meg. Próbáljon meg tágabb dátumtartományt választani."
+
+#: inc/admin/menu/views/html-report.php:93
+msgid "Top Buy Again Products"
+msgstr "Legnépszerűbb Buy Again-termékek"
+
+#: inc/admin/menu/views/html-report.php:100
+msgid "Orders"
+msgstr "Rendelések"
+
+#: inc/admin/menu/views/html-report.php:127
+msgid "No products were bought again in this period."
+msgstr "Ebben az időszakban egyetlen terméket sem vásároltak meg újra."
+
+#: inc/admin/menu/views/html-report.php:132
+msgid "Reminder Email Performance"
+msgstr "Emlékeztető e-mailek teljesítménye"
+
+#: inc/admin/menu/views/html-report.php:136
+msgid "Reminder Emails Sent"
+msgstr "Elküldött emlékeztető e-mailek"
+
+#: inc/admin/menu/views/html-report.php:140
+msgid "Failed to Send"
+msgstr "Sikertelen küldés"
+
+#: inc/admin/menu/views/html-report.php:144
+msgid "Reminded customers who then placed a Buy Again order."
+msgstr "Emlékeztetőt kapott vásárlók, akik ezt követően Buy Again-rendelést adtak le."
+
+#: inc/admin/menu/views/html-report.php:144
+msgid "Reminder Email Conversions"
+msgstr "Emlékeztető e-mailek konverziói"
+
+#: inc/admin/menu/views/html-report.php:148
+msgid "Currently Unsubscribed"
+msgstr "Jelenleg leiratkozott"
+
+#: inc/admin/menu/views/html-report.php:154
+msgid "View the email log"
+msgstr "E-mail-napló megtekintése"
+
+#: inc/admin/menu/views/html-settings-buttons.php:10
+msgid "Save changes"
+msgstr "Módosítások mentése"
+
+#: inc/admin/menu/views/html-settings-buttons.php:20
+msgid "Reset"
+msgstr "Visszaállítás"
+
+#: inc/admin/menu/views/html-shortcodes-info.php:383
+msgid "Shortcode"
+msgstr "Rövidkód"
+
+#: inc/admin/menu/views/html-shortcodes-info.php:389
+msgid "Note:"
+msgstr "Megjegyzés:"
+
+#: inc/admin/menu/views/html-shortcodes-info.php:395
+msgid "Attributes"
+msgstr "Attribútumok"
+
+#: inc/admin/menu/views/html-shortcodes-info.php:412
+msgid "Usage Examples"
+msgstr "Használati példák"
+
+#: inc/admin/menu/views/html-tag-image-options.php:15
+msgid "Tag Style"
+msgstr "Címke stílusa"
+
+#: inc/admin/menu/views/html-tag-image-options.php:20
+msgid "Style 1"
+msgstr "Stílus 1"
+
+#: inc/admin/menu/views/html-tag-image-options.php:25
+msgid "Style 2"
+msgstr "Stílus 2"
+
+#: inc/admin/menu/views/html-tag-image-options.php:31
+msgid "Custom Style"
+msgstr "Egyéni stílus"
+
+#. translators: %s: User name
+#: inc/admin/menu/views/html-view-order-details.php:17
+#, php-format
+msgid "Username : %s "
+msgstr "Felhasználónév: %s "
+
+#. translators: %s: Product name
+#: inc/admin/menu/views/html-view-order-details.php:19
+#, php-format
+msgid "Product Name : %s "
+msgstr "Terméknév: %s "
+
+#. translators: %s: User name
+#: inc/admin/menu/views/html-view-product-details.php:17
+#, php-format
+msgid "Username: %s"
+msgstr "Felhasználónév: %s"
+
+#. translators: %s: User name
+#: inc/admin/menu/views/html-view-product-details.php:17
+msgid "Products Details"
+msgstr "Termékek részletei"
+
+#: inc/admin/menu/wp-list-table/class-bya-customer-list-table.php:202
+msgid "Delete"
+msgstr "Törlés"
+
+#: inc/admin/menu/wp-list-table/class-bya-customer-list-table.php:297
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#. translators: %s: Customer ID
+#: inc/admin/menu/wp-list-table/class-bya-customer-list-table.php:316
+#, php-format
+msgid "ID: %s"
+msgstr "Azonosító: %s"
+
+#: inc/admin/menu/wp-list-table/class-bya-customer-list-table.php:317
+msgid "View More"
+msgstr "Továbbiak megtekintése"
+
+#: inc/bya-common-functions.php:685
+msgid "This variation is currently unavailable"
+msgstr "Ez a variáció jelenleg nem elérhető"
+
+#: inc/bya-common-functions.php:687
+msgid "Out of Stock"
+msgstr "Nincs készleten"
+
+#: inc/bya-common-functions.php:689 templates/display-input-fields.php:20
+msgid "This product is currently unavailable"
+msgstr "Ez a termék jelenleg nem elérhető"
+
+#: inc/bya-common-functions.php:920 inc/bya-common-functions.php:1682
+msgid "Product Name"
+msgstr "Terméknév"
+
+#: inc/bya-common-functions.php:928
+msgid "Purchased quantity & order count"
+msgstr "Vásárolt mennyiség és rendelések száma"
+
+#: inc/bya-common-functions.php:940 inc/bya-common-functions.php:1690
+msgid "Product Price"
+msgstr "Termék ára"
+
+#: inc/bya-common-functions.php:944 inc/bya-common-functions.php:1686
+msgid "Product Quantity"
+msgstr "Termékmennyiség"
+
+#: inc/bya-common-functions.php:948
+msgid "Action"
+msgstr "Művelet"
+
+#: inc/bya-common-functions.php:1351
+msgid "Most Recent"
+msgstr "Legutóbbi"
+
+#: inc/bya-common-functions.php:1352
+msgid "Name Ascending"
+msgstr "Név szerint növekvő"
+
+#: inc/bya-common-functions.php:1353
+msgid "Name Descending"
+msgstr "Név szerint csökkenő"
+
+#: inc/bya-common-functions.php:1412
+msgid "Last 30 Days"
+msgstr "Elmúlt 30 nap"
+
+#: inc/bya-common-functions.php:1413
+msgid "Last 60 Days"
+msgstr "Elmúlt 60 nap"
+
+#: inc/bya-common-functions.php:1414 inc/bya-common-functions.php:2415
+msgid "Last 3 Months"
+msgstr "Elmúlt 3 hónap"
+
+#: inc/bya-common-functions.php:1415 inc/bya-common-functions.php:2416
+msgid "Last 6 Months"
+msgstr "Elmúlt 6 hónap"
+
+#: inc/bya-common-functions.php:1416
+msgid "Custom"
+msgstr "Egyéni"
+
+#. translators: %s Database Table Name
+#: inc/bya-common-functions.php:1580 inc/bya-common-functions.php:1607
+#, php-format
+msgid "%s not found in database"
+msgstr "%s nem található az adatbázisban"
+
+#: inc/bya-common-functions.php:1835
+msgid "Orders Placed"
+msgstr "Leadott rendelések"
+
+#: inc/bya-common-functions.php:1836
+msgid "Products Purchased"
+msgstr "Megvásárolt termékek"
+
+#: inc/bya-common-functions.php:1837
+msgid "Amount Spent"
+msgstr "Elköltött összeg"
+
+#: inc/bya-common-functions.php:1838
+msgid "Last Order Date"
+msgstr "Utolsó rendelés dátuma"
+
+#: inc/bya-common-functions.php:1852
+msgid "Image"
+msgstr "Kép"
+
+#: inc/bya-common-functions.php:1853
+msgid "Name"
+msgstr "Név"
+
+#: inc/bya-common-functions.php:1854
+msgid "Purchased Details"
+msgstr "Vásárlás részletei"
+
+#: inc/bya-common-functions.php:1869
+msgid "Date"
+msgstr "Dátum"
+
+#: inc/bya-common-functions.php:1870
+msgid "Status"
+msgstr "Állapot"
+
+#: inc/bya-common-functions.php:1871
+msgid "Total"
+msgstr "Összeg"
+
+#: inc/bya-common-functions.php:1901
+msgid "Product Deleted"
+msgstr "Termék törölve"
+
+#: inc/bya-common-functions.php:1973
+msgid "No Orders Found"
+msgstr "Nem található rendelés"
+
+#: inc/bya-common-functions.php:2014
+msgid "No Products Found"
+msgstr "Nem található termék"
+
+#: inc/bya-common-functions.php:2027
+msgid "Awaiting product image"
+msgstr "Termékkép feltöltésére vár"
+
+#. translators: %1$s: Strong Start %2$s: Store Name
+#: inc/bya-common-functions.php:2032
+msgid "Quantity:"
+msgstr "Mennyiség:"
+
+#: inc/bya-common-functions.php:2033
+msgid "Amount Spent:"
+msgstr "Elköltött összeg:"
+
+#: inc/bya-common-functions.php:2034
+msgid "Order Count:"
+msgstr "Rendelések száma:"
+
+#. translators: 1: range start date, 2: range end date
+#: inc/bya-common-functions.php:2207
+#, php-format
+msgid "%1$s to %2$s"
+msgstr "%1$s és %2$s között"
+
+#: inc/bya-common-functions.php:2411
+msgid "All Time"
+msgstr "Mindenkori"
+
+#: inc/bya-common-functions.php:2412
+msgid "This Year"
+msgstr "Ebben az évben"
+
+#: inc/bya-common-functions.php:2413
+msgid "This Month"
+msgstr "Ebben a hónapban"
+
+#: inc/bya-common-functions.php:2414
+msgid "Last Month"
+msgstr "Múlt hónapban"
+
+#: inc/bya-common-functions.php:2417
+msgid "Last Year"
+msgstr "Múlt évben"
+
+#: inc/bya-common-functions.php:2635
+msgid "All Products"
+msgstr "Összes termék"
+
+#: inc/bya-common-functions.php:2636
+msgid "In Stock Products"
+msgstr "Készleten lévő termékek"
+
+#: inc/bya-common-functions.php:2637
+msgid "Out of Stock Products"
+msgstr "Elfogyott termékek"
+
+#: inc/bya-common-functions.php:2638
+msgid "Low Stock Products"
+msgstr "Alacsony készletű termékek"
+
+#: inc/bya-common-functions.php:2639
+msgid "Most Purchased Products"
+msgstr "Legtöbbet vásárolt termékek"
+
+#: inc/bya-common-functions.php:2640
+msgid "Recently Purchased Products"
+msgstr "Legutóbb vásárolt termékek"
+
+#: inc/bya-common-functions.php:2641
+msgid "Frequently Purchased Products"
+msgstr "Gyakran vásárolt termékek"
+
+#: inc/bya-common-functions.php:2642
+msgid "Favourite Products"
+msgstr "Kedvenc termékek"
+
+#: inc/bya-common-functions.php:2656
+msgid "Display all previously purchased products."
+msgstr "Az összes korábban vásárolt termék megjelenítése."
+
+#: inc/bya-common-functions.php:2657
+msgid "Display only products that are currently in stock."
+msgstr "Csak a jelenleg készleten lévő termékek megjelenítése."
+
+#: inc/bya-common-functions.php:2658
+msgid "Display only products that are currently out of stock."
+msgstr "Csak a jelenleg elfogyott termékek megjelenítése."
+
+#: inc/bya-common-functions.php:2659
+msgid "Display products with limited stock availability."
+msgstr "Korlátozott készletű termékek megjelenítése."
+
+#: inc/bya-common-functions.php:2660
+msgid "Display products purchased in the highest quantities by the customer."
+msgstr "A vásárló által a legnagyobb mennyiségben vásárolt termékek megjelenítése."
+
+#: inc/bya-common-functions.php:2661
+msgid "Display products based on the most recent purchase date."
+msgstr "Termékek megjelenítése a legutóbbi vásárlás dátuma alapján."
+
+#: inc/bya-common-functions.php:2662
+msgid ""
+"Display products that have been purchased repeatedly across multiple orders."
+msgstr "Több rendelés során ismételten megvásárolt termékek megjelenítése."
+
+#: inc/bya-common-functions.php:2663
+msgid "Display products marked as favourites by the customer."
+msgstr "A vásárló által kedvencként megjelölt termékek megjelenítése."
+
+#. translators: %d: Week Count.
+#: inc/bya-common-functions.php:2792
+#, php-format
+msgid "Week %d"
+msgstr "%d. hét"
+
+#: inc/bya-layout-functions.php:205
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: inc/bya-layout-functions.php:208
+msgid "Activate"
+msgstr "Aktiválás"
+
+#: inc/bya-layout-functions.php:211
+msgid "Deactivate"
+msgstr "Deaktiválás"
+
+#: inc/bya-layout-functions.php:214
+msgid "Delete Permanently"
+msgstr "Végleges törlés"
+
+#: inc/bya-layout-functions.php:402
+msgid "Seconds"
+msgstr "Másodperc"
+
+#: inc/bya-layout-functions.php:403
+msgid "Minutes"
+msgstr "Perc"
+
+#: inc/bya-layout-functions.php:404
+msgid "Hours"
+msgstr "Óra"
+
+#: inc/bya-layout-functions.php:405
+msgid "Days"
+msgstr "Napok"
+
+#: inc/class-bya-email-subscription.php:201
+msgid ""
+"We could not find any Buy Again emails for this address. Please make sure "
+"you entered the email address you used to place your order."
+msgstr "Nem találtunk Buy Again e-maileket ehhez a címhez. Kérjük, ellenőrizze, hogy a rendelés leadásakor használt e-mail címet adta-e meg."
+
+#: inc/class-bya-email-subscription.php:259
+msgid ""
+"You are currently subscribed. You will receive Buy Again reminder emails."
+msgstr "Jelenleg fel van iratkozva a Buy Again emlékeztető e-mailekre. Meg fogja kapni ezeket az e-maileket."
+
+#: inc/class-bya-email-subscription.php:262
+msgid ""
+"You are currently unsubscribed. You will no longer receive Buy Again "
+"reminder emails."
+msgstr "Jelenleg leiratkozott a Buy Again emlékeztető e-mailekről. A továbbiakban nem fogja megkapni ezeket az e-maileket."
+
+#: inc/class-bya-email-subscription.php:272
+msgid "Your preferences have been saved successfully."
+msgstr "Beállításait sikeresen mentettük."
+
+#: inc/class-bya-email-subscription.php:583 inc/class-bya-shortcodes.php:131
+msgid "Manage the emails you receive from our store."
+msgstr "Kezelje az áruházunktól kapott e-maileket."
+
+#: inc/class-bya-email-subscription.php:649
+msgid "Manage Email Preferences"
+msgstr "E-mail-beállítások kezelése"
+
+#: inc/class-bya-email-subscription.php:670
+msgid ""
+"Manage your Buy Again reminder email preferences (Subscribe/Unsubscribe):"
+msgstr "A Buy Again emlékeztető e-mailekre vonatkozó beállítások kezelése (előfizetés/leiratkozás):"
+
+#: inc/class-bya-email-subscription.php:673
+msgid "You are currently unsubscribed from Buy Again reminder emails."
+msgstr "Jelenleg leiratkozott a Buy Again emlékeztető e-mailekről."
+
+#: inc/class-bya-email-subscription.php:795
+msgid "Manage your email preferences"
+msgstr "E-mail-beállítások kezelése"
+
+#. translators: 1: email name 2: email recipients
+#: inc/class-bya-emails.php:170
+#, php-format
+msgid "Failed to sent %1$s email to %2$s."
+msgstr "Nem sikerült elküldeni a(z) %1$s e-mailt a(z) %2$s címre."
+
+#: inc/class-bya-emails.php:189
+msgid "Buy Again Reminder"
+msgstr "Buy Again emlékeztető"
+
+#: inc/class-bya-emails.php:190
+msgid "Buy Again Test Email"
+msgstr "Buy Again teszt-e-mail"
+
+#: inc/class-bya-emails.php:191
+msgid "Guest Buy Again OTP"
+msgstr "Vendég Buy Again egyszer használatos jelszava"
+
+#: inc/class-bya-emails.php:206
+msgid "Other"
+msgstr "Egyéb"
+
+#. translators: 1: email name 2: email recipients
+#: inc/class-bya-emails.php:257
+#, php-format
+msgid "<b>%1$s</b> email has been sent to %2$s."
+msgstr "A(z) <b>%1$s</b> e-mailt elküldtük %2$s címére."
+
+#. translators: 1: email name 2: email recipients
+#: inc/class-bya-emails.php:259
+#, php-format
+msgid "<b>%1$s</b> email failed to send to %2$s."
+msgstr "A(z) <b>%1$s</b> e-mailt nem sikerült elküldeni a(z) %2$s címre."
+
+#. translators: %s: Table Name
+#: inc/class-bya-install.php:215
+#, php-format
+msgid ""
+"Buy Again plugin will not work properly some of Tables are missing in the "
+"database %s. Please verify the database."
+msgstr ""
+"Az Újravásárlás bővítmény nem fog megfelelően működni, mivel néhány tábla "
+"hiányzik a(z) %s adatbázisból. Kérjük, ellenőrizze az adatbázist."
+
+#: inc/class-bya-install.php:334
+msgid "Verifying database... One or more tables are still missing: "
+msgstr "Adatbázis ellenőrzése... Egy vagy több tábla még hiányzik: "
+
+#: inc/class-bya-pages.php:54
 msgctxt "Page slug"
 msgid "bya-buy-again"
 msgstr "bya-buy-again"
 
-#: templates/pagination.php:26
+#: inc/class-bya-pages.php:55
+msgctxt "Page title"
+msgid "Buy Again"
+msgstr "Újravásárlás"
+
+#: inc/class-bya-pages.php:60
+msgctxt "Page slug"
+msgid "bya-email-preferences"
+msgstr "bya-email-preferences"
+
+#: inc/class-bya-pages.php:61
+msgctxt "Page title"
+msgid "Buy Again Email Preferences"
+msgstr "Buy Again e-mail-beállítások"
+
+#: inc/class-bya-pages.php:135
+msgid "Buy Again Email Preferences Page"
+msgstr "Buy Again e-mail-beállítások oldala"
+
+#: inc/class-bya-pages.php:157 inc/class-bya-pages.php:413
+#: inc/widgets/class-bya-widget-buy-again-carousel.php:36
+#: inc/widgets/class-bya-widget-buy-again-carousel.php:84
+#: inc/widgets/class-bya-widget-buy-again-carousel.php:126
+msgid "Buy Again Carousel"
+msgstr "Buy Again carousel"
+
+#: inc/class-bya-pages.php:158 inc/class-bya-pages.php:414
+msgid "Displays previous purchases for the logged-in user in a carousel."
+msgstr "A bejelentkezett felhasználó korábbi vásárlásainak megjelenítése carouselben."
+
+#: inc/class-bya-pages.php:174 inc/class-bya-pages.php:417
+msgid "Displays previous purchases for the logged-in user in a table."
+msgstr "A bejelentkezett felhasználó korábbi vásárlásainak megjelenítése táblázatban."
+
+#: inc/class-bya-pages.php:415
+msgid "Loading Buy Again carousel…"
+msgstr "Buy Again carousel betöltése…"
+
+#: inc/class-bya-pages.php:418
+msgid "Loading Buy Again table…"
+msgstr "Buy Again táblázat betöltése…"
+
+#: inc/class-bya-register-post-status.php:64
+msgid "Buy Again Products"
+msgstr "Újravásárolható termékek"
+
+#: inc/class-bya-register-post-types.php:72
+msgid "Buy Again Purchase History"
+msgstr "Újravásárlási előzmények"
+
+#: inc/class-bya-register-post-types.php:75
+msgid "Search User"
+msgstr "Felhasználó keresése"
+
+#: inc/class-bya-register-post-types.php:112
+msgid "Search Email"
+msgstr "E-mail-cím keresése"
+
+#: inc/data-stores/class-bya-email-log-data-store-cpt.php:121
+msgid "Invalid Email Log"
+msgstr "Érvénytelen e-mail-napló"
+
+#: inc/data-stores/class-bya-product-data-store-cpt.php:135
+msgid "Invalid Product."
+msgstr "Érvénytelen termék."
+
+#: inc/emails/class-bya-email-buy-again-otp.php:28
+msgid "Buy Again Email OTP"
+msgstr "Buy Again e-mailes egyszer használatos jelszó"
+
+#: inc/emails/class-bya-email-buy-again-otp.php:29
+msgid ""
+"This email sends a One-Time Password (OTP) when a customer clicks the Buy "
+"Again form to access their previously purchased products."
+msgstr "Ez az e-mail egyszer használatos jelszót (OTP) küld, amikor a vásárló a Buy Again űrlapra kattint, hogy hozzáférjen a korábban megvásárolt termékeihez."
+
+#: inc/emails/class-bya-email-buy-again-otp.php:32
+msgid ""
+"{site_title} - Your One-Time Password (OTP) to View Your Buy Again List"
+msgstr "{site_title} – egyszer használatos jelszava (OTP) a Buy Again-lista megtekintéséhez"
+
+#: inc/emails/class-bya-email-buy-again-otp.php:33
+msgid "Buy Again OTP Verification"
+msgstr "Buy Again egyszer használatos jelszavának ellenőrzése"
+
+#: inc/emails/class-bya-email-buy-again-reminder.php:35
+msgid "Buy Again Email Reminder"
+msgstr "Újravásárlási e-mailes emlékeztető"
+
+#: inc/emails/class-bya-email-buy-again-reminder.php:36
+msgid ""
+"Buy again email reminder will be sent to the users based on their past(Last)"
+" purchases(For every last purchase they will receive the email)"
+msgstr "A felhasználók korábbi (utolsó) vásárlásai alapján küldik ki az újravásárlási e-mailes emlékeztetőt (minden utolsó vásárlásuk után megkapják az e-mailt)"
+
+#: inc/emails/class-bya-email-buy-again-reminder.php:48
+msgid "{site_title} - Your Buy Again Products"
+msgstr "{site_title} - Az Ön újra megvásárolható termékei"
+
+#: inc/frontend/class-bya-frontend-assets.php:75
+msgid "view cart"
+msgstr "kosár megtekintése"
+
+#: inc/frontend/class-bya-frontend-assets.php:80
+msgid "Please select the value that is not less than {min_qty}."
+msgstr "Kérjük, válasszon olyan értéket, amely nem kisebb, mint {min_qty}."
+
+#: inc/frontend/class-bya-frontend-assets.php:81
+msgid "Please select the value that is not more than  {max_qty}."
+msgstr "Kérjük, válasszon olyan értéket, amely nem nagyobb, mint {max_qty}."
+
+#: inc/frontend/class-bya-frontend-assets.php:82
+msgid ""
+"Please select a valid value. The two nearest valid values are {from_qty} and"
+" {to_qty}."
+msgstr ""
+"Kérjük, érvényes értéket válasszon. A két legközelebbi érvényes érték: "
+"{from_qty} és {to_qty}."
+
+#: inc/frontend/class-bya-frontend-assets.php:85
+msgid "Please enter an email."
+msgstr "Kérjük, adja meg az e-mail-címét."
+
+#. translators: %s: Product count number.
+#. translators: %s: Product Count
+#: inc/frontend/class-bya-frontend-assets.php:92
+#: templates/buy-again-filters.php:63
+#, php-format
+msgid "Total Product(s): %s"
+msgstr "Összes termék: %s"
+
+#: inc/frontend/class-bya-frontend-assets.php:94
+msgid "Something went wrong. Please try again."
+msgstr "Hiba történt. Kérjük, próbálja meg újra."
+
+#: inc/frontend/class-bya-frontend-assets.php:124
+msgctxt "enhanced select"
+msgid "No matches found"
+msgstr "Nincs találat"
+
+#: inc/frontend/class-bya-frontend-assets.php:125
+msgctxt "enhanced select"
+msgid "Please enter 1 or more characters"
+msgstr "Kérjük, adjon meg legalább 1 karaktert"
+
+#: inc/frontend/class-bya-frontend-assets.php:126
+msgctxt "enhanced select"
+msgid "Please enter %qty% or more characters"
+msgstr "Kérjük, adjon meg legalább %qty% karaktert"
+
+#: inc/frontend/class-bya-frontend-assets.php:127
+msgctxt "enhanced select"
+msgid "Please delete 1 character"
+msgstr "Kérjük, töröljön 1 karaktert"
+
+#: inc/frontend/class-bya-frontend-assets.php:128
+msgctxt "enhanced select"
+msgid "Please delete %qty% characters"
+msgstr "Kérjük, töröljön %qty% karaktert"
+
+#: inc/frontend/class-bya-frontend-assets.php:129
+msgctxt "enhanced select"
+msgid "You can only select 1 item"
+msgstr "Csak 1 elemet választhat ki"
+
+#: inc/frontend/class-bya-frontend-assets.php:130
+msgctxt "enhanced select"
+msgid "You can only select %qty% items"
+msgstr "Csak %qty% elemet választhat ki"
+
+#: inc/frontend/class-bya-frontend-assets.php:131
+msgctxt "enhanced select"
+msgid "Loading more results&hellip;"
+msgstr "További találatok betöltése&hellip;"
+
+#: inc/frontend/class-bya-frontend-assets.php:132
+msgctxt "enhanced select"
+msgid "Searching&hellip;"
+msgstr "Keresés&hellip;"
+
+#: inc/frontend/class-bya-frontend-assets.php:157
+msgid "Please enter your email address."
+msgstr "Kérjük, adja meg az e-mail címét."
+
+#: inc/frontend/class-bya-my-account-handler.php:232
+msgid "No Product Found"
+msgstr "Nem található termék"
+
+#: inc/frontend/class-bya-product-handler.php:186
+msgid "Order_details"
+msgstr "Rendelés részletei"
+
+#: inc/frontend/class-bya-product-handler.php:187
+msgid "Previously you have puchased this product [order_details]"
+msgstr "Korábban már megvásárolta ezt a terméket [order_details]"
+
+#: inc/shortcodes/class-bya-shortcode-buy-again-table.php:104
+msgid "Log in"
+msgstr "Bejelentkezés"
+
+#. translators: %s: login link
+#: inc/shortcodes/class-bya-shortcode-buy-again-table.php:118
+#, php-format
+msgid ""
+"Please enter your email address to view your “Buy Again” products "
+"(previously purchased on this site). If you are already a registered user, "
+"please %s to view your “Buy Again” products."
+msgstr "Kérjük, adja meg az e-mail címét a „Buy Again” termékek megtekintéséhez. Ha már regisztrált felhasználó, kérjük, kattintson a %s linkre a „Buy Again” termékek megtekintéséhez."
+
+#. translators: %s: login link
+#: inc/shortcodes/class-bya-shortcode-buy-again-table.php:138
+#, php-format
+msgid "%s to view your Buy Again list and reorder your previous purchases."
+msgstr "%s a Buy Again-listája megtekintéséhez és korábbi vásárlásai újbóli megrendeléséhez."
+
+#: inc/widgets/class-bya-widget-buy-again-carousel.php:31
+msgid "Display the customer buy again carousel."
+msgstr "A vásárló Buy Again carousel elemének megjelenítése."
+
+#: inc/widgets/class-bya-widget-buy-again-carousel.php:131
+#: inc/widgets/class-bya-widget-buy-again-table.php:140
+msgid "Title"
+msgstr "Cím"
+
+#: inc/widgets/class-bya-widget-buy-again-carousel.php:150
+msgid "Hide if buy again carousel is empty"
+msgstr "Elrejtés, ha a Buy Again carousel üres"
+
+#: inc/widgets/class-bya-widget-buy-again-table.php:31
+msgid "Display the customer buy again list."
+msgstr "Az ügyfél újravásárlási listájának megjelenítése."
+
+#: inc/widgets/class-bya-widget-buy-again-table.php:159
+msgid "Hide if buy again list is empty"
+msgstr "Elrejtés, ha az újravásárlási lista üres"
+
+#: templates/buy-again-bulk-actions.php:21
+#: templates/buy-again-bulk-actions.php:22
+msgid "Bulk Actions"
+msgstr "Tömeges műveletek"
+
+#: templates/buy-again-bulk-actions.php:23
+msgid "Add to Cart"
+msgstr "Kosárba teszem"
+
+#: templates/buy-again-bulk-actions.php:24
+#: templates/display-input-fields.php:29 templates/order-buy-again.php:142
+msgid "Buy Now"
+msgstr "Vásárlás most"
+
+#: templates/buy-again-bulk-actions.php:26
+msgid "Add to Favourite"
+msgstr "Hozzáadás a kedvencekhez"
+
+#: templates/buy-again-bulk-actions.php:33
+msgid "Processing&hellip;"
+msgstr "Feldolgozás alatt&hellip;"
+
+#. translators: %d: number of selected products
+#: templates/buy-again-bulk-actions.php:41
+#, php-format
+msgid "%d products selected"
+msgstr "%d termék kijelölve"
+
+#: templates/buy-again-bulk-actions.php:45
+msgid "Clear selection"
+msgstr "Kijelölés törlése"
+
+#: templates/buy-again-filters.php:75
+msgid "Filter By:"
+msgstr "Szűrés ez alapján:"
+
+#: templates/buy-again-filters.php:98
+msgid "Sort By:"
+msgstr "Rendezés szerint:"
+
+#: templates/buy-again-filters.php:115
+msgid "Filters active"
+msgstr "A szűrők aktívak"
+
+#: templates/buy-again-filters.php:118
+#: templates/myaccount-buy-again-table.php:113
+msgid "Reset filters"
+msgstr "Szűrők visszaállítása"
+
+#: templates/buy-again-filters.php:160
+msgid "Date Range:"
+msgstr "Dátumtartomány:"
+
+#: templates/buy-again-filters.php:169
+msgid "From:"
+msgstr "Ettől:"
+
+#: templates/buy-again-filters.php:187
+msgid "To:"
+msgstr "Eddig:"
+
+#: templates/bya-email-preferences-modal.php:18
+msgid "Close"
+msgstr "Bezárás"
+
+#: templates/bya-email-preferences.php:27
+msgid "Detected from your account"
+msgstr "A fiókjából észlelve"
+
+#: templates/bya-email-preferences.php:43
+msgid "Your email"
+msgstr "Az Ön e-mail címe"
+
+#: templates/bya-email-preferences.php:53
+msgid "Email address"
+msgstr "E-mail cím"
+
+#: templates/bya-email-preferences.php:54
+msgid "you@example.com"
+msgstr "on@example.com"
+
+#: templates/bya-email-preferences.php:67
+msgid "Reminder emails"
+msgstr "Emlékeztető e-mailek"
+
+#: templates/bya-email-preferences.php:72
+msgid "Buy Again Reminder Emails"
+msgstr "Újbóli vásárlásra emlékeztető e-mailek"
+
+#: templates/bya-email-preferences.php:73
+msgid "Receive reminders about products you have previously purchased."
+msgstr "Emlékeztetőket kaphat a korábban megvásárolt termékekről."
+
+#: templates/bya-email-preferences.php:79
+msgid "Receive Buy Again Reminder Emails"
+msgstr "Újbóli vásárlásra emlékeztető e-mailek fogadása"
+
+#: templates/bya-email-preferences.php:87
+msgid "Enter your email address to see your current preference."
+msgstr "Adja meg az e-mail címét az aktuális beállítás megtekintéséhez."
+
+#: templates/bya-email-preferences.php:99
+msgid "Save"
+msgstr "Mentés"
+
+#: templates/bya-email-preferences.php:101
+msgid "You can change this anytime."
+msgstr "Ezt bármikor módosíthatja."
+
+#: templates/bya-email-preferences.php:115
+msgid ""
+"Not logged in? Guests can enter the email address used at checkout to "
+"unsubscribe. Resubscribing requires the link from one of our emails or a "
+"logged-in account, so nobody can sign you up without your consent."
+msgstr "Nincs bejelentkezve? Vendégként megadhatja a fizetéskor használt e-mail címet a leiratkozáshoz. Az újbóli feliratkozáshoz valamelyik e-mailünkben található linkre kell kattintania, vagy be kell jelentkeznie a fiókjába, így senki sem iratkoztathatja fel az Ön hozzájárulása nélkül."
+
+#: templates/bya-guest-form.php:19
+msgid "Enter Your Email ID:"
+msgstr "Adja meg az e-mail-cím ID-ját:"
+
+#: templates/bya-guest-form.php:21
+msgid "Fetch & Send OTP"
+msgstr "Egyszer használatos jelszó lekérése és küldése"
+
+#: templates/bya-guest-form.php:25
+msgid "Enter OTP:"
+msgstr "Adja meg az egyszer használatos jelszót:"
+
+#: templates/bya-guest-form.php:27
+msgid "Verify OTP"
+msgstr "Egyszer használatos jelszó ellenőrzése"
+
+#: templates/bya-guest-form.php:30
+msgid "Resend OTP in:"
+msgstr "Az egyszer használatos jelszó újraküldése ennyi idő múlva:"
+
+#: templates/bya-guest-form.php:32
+msgid "Resend OTP"
+msgstr "Egyszer használatos jelszó újraküldése"
+
+#: templates/display-input-fields.php:85
+msgid "Add to cart"
+msgstr "Kosárba teszem"
+
+#: templates/emails/customer-buy-again-otp.php:21
+msgid "Hi,"
+msgstr "Üdv,"
+
+#: templates/emails/customer-buy-again-otp.php:24
+msgid "We received a request to view your Buy Again product list."
+msgstr "Kérést kaptunk az újbóli vásárláshoz tartozó terméklista megtekintésére."
+
+#: templates/emails/customer-buy-again-otp.php:26
+msgid "Please use the One-Time Password (OTP) below to continue:"
+msgstr "A folytatáshoz használja az alábbi egyszer használatos jelszót:"
+
+#: templates/emails/customer-buy-again-otp.php:34
+msgid "This OTP is valid for a limited time and can be used only once."
+msgstr "Ez az egyszer használatos jelszó korlátozott ideig érvényes, és csak egyszer használható fel."
+
+#: templates/emails/customer-buy-again-otp.php:36
+msgid "For your security, please do not share this code with anyone."
+msgstr "Biztonsága érdekében kérjük, ne ossza meg ezt a kódot senkivel."
+
+#: templates/emails/customer-buy-again-otp.php:40
+msgid "If you did not request this, you can safely ignore this email."
+msgstr "Ha nem Ön kérte ezt, nyugodtan hagyja figyelmen kívül ezt az e-mailt."
+
+#: templates/emails/customer-buy-again-otp.php:43
+#: templates/emails/customer-buy-again-reminder.php:42
+msgid "Thanks"
+msgstr "Köszönjük"
+
+#: templates/emails/customer-buy-again-reminder.php:20
+msgid "Your recently bought products are waiting for the re-order."
+msgstr "A nemrég vásárolt termékei újrarendelésre várnak."
+
+#. translators: %1$s: Shop Name, %2$s: Break %3$s Enquiry Link.
+#: templates/emails/customer-buy-again-reminder.php:38
+#, php-format
+msgid ""
+"Please <a href=\"%1$s\" target=\"_blank\">click here</a> to grab your "
+"products again."
+msgstr ""
+"Kérjük, <a href=\"%1$s\" target=\"_blank\">kattintson ide</a>, hogy újra "
+"megvásárolja a termékeit."
+
+#: templates/myaccount-buy-again-table.php:88
+msgid "No search results."
+msgstr "Nincs keresési találat."
+
+#: templates/myaccount-buy-again-table.php:89
+msgid ""
+"We couldn't find any previously purchased products matching your search. Try"
+" a different term."
+msgstr "Nem találtunk a keresésnek megfelelő, korábban megvásárolt terméket. Próbáljon meg másik kifejezést."
+
+#: templates/myaccount-buy-again-table.php:91
+msgid "No products match these filters."
+msgstr "Egyik termék sem felel meg ezeknek a szűrőknek."
+
+#: templates/myaccount-buy-again-table.php:92
+msgid "Try adjusting or resetting your filters to see more products."
+msgstr "További termékek megtekintéséhez módosítsa vagy állítsa vissza a szűrőket."
+
+#: templates/myaccount-buy-again-table.php:94
+msgid "No products yet."
+msgstr "Még nincsenek termékek."
+
+#: templates/myaccount-buy-again-table.php:95
+msgid ""
+"Products you've previously purchased will show up here so you can quickly "
+"buy them again."
+msgstr "A korábban megvásárolt termékek itt jelennek meg, így gyorsan újra megvásárolhatja őket."
+
+#. translators: %s: product name
+#: templates/myaccount-buy-again-table.php:163
+#, php-format
+msgid "Select %s"
+msgstr "%s kiválasztása"
+
+#: templates/myaccount-buy-again-table.php:167
+msgid "Unavailable"
+msgstr "Nem érhető el"
+
+#: templates/myaccount-buy-again-table.php:338
+#: templates/myaccount-buy-again-table.php:339
+msgid "Remove from Favourites"
+msgstr "Eltávolítás a kedvencek közül"
+
+#: templates/myaccount-buy-again-table.php:338
+#: templates/myaccount-buy-again-table.php:339
+msgid "Add to Favourites"
+msgstr "Hozzáadás a kedvencekhez"
+
+#: templates/myaccount-buy-again.php:116
+msgid "Logout"
+msgstr "Kijelentkezés"
+
+#: templates/myaccount-buy-again.php:137
+msgid "Select All"
+msgstr "Összes kiválasztása"
+
+#. translators: %1$s: Linked order ID anchor tag.
+#: templates/order-buy-again.php:33
+#, php-format
+msgid "Buy Again (Order: #%1$s)"
+msgstr "Újbóli vásárlás (rendelés: #%1$s)"
+
+#: templates/pagination.php:20
+msgid "Current Page"
+msgstr "Aktuális oldal"
+
+#. translators: %s: Total Page count
+#: templates/pagination.php:25
 #, php-format
 msgid "of %s"
 msgstr "a %s közül"
 
-#: inc/frontend/class-bya-frontend-assets.php:69
-msgid "view cart"
-msgstr "kosár megtekintése"
+#: templates/quantity-input.php:41
+msgid "Qty"
+msgstr "Menny."
 
-#: inc/emails/class-bya-email-buy-again-reminder.php:41
-msgid "{site_title} - Your Buy Again Products"
-msgstr "{site_title} - Az Ön újra megvásárolható termékei"
+#, php-format
+#~ msgid "#%s Product was deleted"
+#~ msgstr "A #%s termék törölve lett"
+
+#, php-format
+#~ msgid "%1$s Email: %2$s"
+#~ msgstr "%1$s E-mail: %2$s"
+
+#, php-format
+#~ msgid "%1$s Name: %2$s"
+#~ msgstr "%1$s Név: %2$s"
+
+#, php-format
+#~ msgctxt "%s = human-readable time difference"
+#~ msgid "%s ago"
+#~ msgstr "%s ezelőtt"
+
+#~ msgid "All Vendor(s)"
+#~ msgstr "Összes eladó"
+
+#~ msgid "Allow Users to Search by Products"
+#~ msgstr "Engedélyezze, hogy a felhasználók termékek szerint keressenek"
+
+#~ msgid "Amount Spent Using Buy Again"
+#~ msgstr "Újravásárlás használatával elköltött összeg"
+
+#~ msgid "Buy Again can be accessed by"
+#~ msgstr "Az Újravásárlás a következők számára érhető el"
+
+#~ msgid "Buy Again table Sort By"
+#~ msgstr "Újravásárlási táblázat rendezése"
+
+#~ msgid "Description"
+#~ msgstr "Leírás"
+
+#~ msgid "Display Last purchased order column in Buy Again Table"
+#~ msgstr "A legutóbbi rendelés oszlop megjelenítése az Újravásárlás táblázatban"
+
+#~ msgid "Display Previously purchased quantity count & order count Column"
+#~ msgstr ""
+#~ "A korábban megvásárolt mennyiség és a rendelésszám oszlopának megjelenítése"
+
+#~ msgid "Display the customer buy again list link."
+#~ msgstr "Az ügyfél újravásárlási lista hivatkozásának megjelenítése."
+
+#~ msgid "Displays Buy Again Table"
+#~ msgstr "Újravásárlás táblázat megjelenítése"
+
+#~ msgid "Enable Product Filter option"
+#~ msgstr "Termékszűrő opció engedélyezése"
+
+#~ msgid "Enter Email Id"
+#~ msgstr "Adja meg az e-mail-címet"
+
+#, php-format
+#~ msgid "Failed to sent <b>%1$s</b> email to %2$s."
+#~ msgstr "Nem sikerült a(z) <b>%1$s</b> e-mailt elküldeni %2$s részére."
+
+#~ msgid "First Name, Last Name, Username and Email ID"
+#~ msgstr "Keresztnév, vezetéknév, felhasználónév és e-mail-cím"
+
+#~ msgid "From: "
+#~ msgstr "Feladó: "
+
+#~ msgid "Last purchased order column label"
+#~ msgstr "Legutóbb vásárolt rendelés oszlop felirata"
+
+#~ msgid "M j, Y"
+#~ msgstr "M j, Y"
+
+#~ msgid "No Product(s) Found"
+#~ msgstr "Nem található termék"
+
+#~ msgid "No.Of Orders"
+#~ msgstr "Rendelések száma"
+
+#, php-format
+#~ msgid "Order #%s"
+#~ msgstr "Rendelés #%s"
+
+#~ msgid "Order ID"
+#~ msgstr "Rendelésazonosító"
+
+#~ msgid "Orders Placed using Buy Again"
+#~ msgstr "A Vedd meg újra használatával leadott rendelések"
+
+#~ msgid "Parameter Support"
+#~ msgstr "Paramétertámogatás"
+
+#~ msgid "Previously purchased quantity count & order count"
+#~ msgstr "Korábban vásárolt mennyiség és rendelések száma"
+
+#~ msgid "Previously purchased quantity count & order count label"
+#~ msgstr "Korábban vásárolt mennyiség és rendelések száma címke"
+
+#~ msgid "Product Details"
+#~ msgstr "Termék részletei"
+
+#~ msgid "Product not found"
+#~ msgstr "Termék nem található"
+
+#~ msgid "Products Purchased using Buy Again"
+#~ msgstr "A Vedd meg újra használatával vásárolt termékek"
+
+#~ msgid "Sort by: "
+#~ msgstr "Rendezés: "
+
+#~ msgid ""
+#~ "Stock Count display for each product in Buy Again table.  Note, stock count "
+#~ "display only if you are enabled Manage stock for the  product."
+#~ msgstr ""
+#~ "Készletdarabszám megjelenítése az újravásárlási táblázatban minden "
+#~ "terméknél.  Megjegyzés: a készletdarabszám csak akkor jelenik meg, ha a  "
+#~ "terméknél engedélyezte a Készlet kezelése opciót."
+
+#~ msgid ""
+#~ "This includes the basics of what personal data your store may collect, store"
+#~ " & share. Depending on what settings are enabled furthermore which "
+#~ "additional plugins used, the specific information shared by your store will "
+#~ "vary."
+#~ msgstr ""
+#~ "Ez tartalmazza annak alapjait, hogy az áruház milyen személyes adatokat "
+#~ "gyűjthet, tárolhat és oszthat meg. Attól függően, hogy mely beállítások "
+#~ "engedélyezettek, illetve milyen további bővítményeket használ, az áruház "
+#~ "által megosztott konkrét információk eltérhetnek."
+
+#~ msgid ""
+#~ "This plugin allows your customers to quickly purchase the products which "
+#~ "they had purchased earlier in your site."
+#~ msgstr ""
+#~ "Ez a bővítmény lehetővé teszi a vásárlók számára, hogy gyorsan újra "
+#~ "megvásárolják azokat a termékeket, amelyeket korábban már megvettek az "
+#~ "oldalon."
+
+#~ msgid "To: "
+#~ msgstr "Címzett: "
+
+#~ msgid "Total Amount Spent for this Product through Buy Again"
+#~ msgstr "A termékre az újravásárláson keresztül költött teljes összeg"
+
+#~ msgid "Total Quantity Purchased"
+#~ msgstr "Összes vásárolt mennyiség"
+
+#~ msgid ""
+#~ "We record the First Name, Last Name, Username and email ids of the logged-in"
+#~ " users to identify the users who have purchased products using the Buy Now "
+#~ "and Add to Cart buttons provided by the plugin."
+#~ msgstr ""
+#~ "Rögzítjük a bejelentkezett felhasználók keresztnevét, vezetéknevét, "
+#~ "felhasználónevét és e-mail-címeit, hogy azonosítsuk azokat a felhasználókat,"
+#~ " akik a bővítmény által biztosított „Vásárlás most” és „Kosárba” gombokkal "
+#~ "vásároltak."
+
+#~ msgid "What We Collect and Store?"
+#~ msgstr "Mit gyűjtünk és tárolunk?"
+
+#~ msgid "What the Plugin Does?"
+#~ msgstr "Mit csinál a bővítmény?"
+
+#~ msgid "When enabled, Buy Again button will display for each order(s)."
+#~ msgstr ""
+#~ "Engedélyezés esetén a „Vásárolja meg újra” gomb minden rendelésnél "
+#~ "megjelenik."

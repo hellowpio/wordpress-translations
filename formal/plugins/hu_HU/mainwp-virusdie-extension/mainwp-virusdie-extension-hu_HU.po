@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: MainWP Virusdie Extension 5.0.1\n"
+"Project-Id-Version: MainWP Virusdie Extension 5.2\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T19:14:00+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: MainWP Virusdie Extension\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 5.0.1\n"
+"X-Plugin-Version: 5.2\n"
 
 #. Plugin Name of the plugin
 #: mainwp-virusdie-extension.php
@@ -37,228 +37,333 @@ msgid ""
 "MainWP Virusdie Extension uses Virusdie, a powerful, user-friendly, and "
 "professional-grade antivirus for your websites. It helps you monitor all "
 "your sites directly from your MainWP Dashboard."
-msgstr ""
-"A MainWP Virusdie bővítmény a Virusdie-t használja, egy hatékony, "
-"felhasználóbarát, professzionális szintű vírusirtót a webhelyek számára. "
-"Segítségével közvetlenül a MainWP vezérlőpultról felügyelheti az összes "
-"webhelyét."
+msgstr "A MainWP Virusdie bővítmény a Virusdie nevű, hatékony, felhasználóbarát és professzionális színvonalú vírusirtót használja honlapjai védelmére. Segítségével közvetlenül a MainWP vezérlőpultjáról felügyelheti az összes webhelyét."
 
 #. Author of the plugin
 #: mainwp-virusdie-extension.php
 msgid "MainWP"
 msgstr "MainWP"
 
-#: class/class-mainwp-virusdie-extension.php:112
-#: class/class-mainwp-virusdie-rest-api.php:301
-#: class/class-mainwp-virusdie-wp-cli-command.php:78
-#: class/class-mainwp-virusdie-wp-cli-command.php:154
-#: class/class-mainwp-virusdie.php:1052
+#: class/class-mainwp-virusdie-abilities.php:41
+msgid "MainWP Virusdie"
+msgstr "MainWP Virusdie"
+
+#: class/class-mainwp-virusdie-abilities.php:42
+msgid "Read Virusdie state stored on this MainWP Dashboard."
+msgstr "A MainWP vezérlőpulton tárolt Virusdie-állapot beolvasása."
+
+#: class/class-mainwp-virusdie-abilities.php:53
+msgid "List Virusdie Sites"
+msgstr "Virusdie-webhelyek listázása"
+
+#: class/class-mainwp-virusdie-abilities.php:53
+msgid ""
+"List accessible MainWP sites and their stored Virusdie state without "
+"contacting Virusdie."
+msgstr "A hozzáférhető MainWP-webhelyek és a tárolt Virusdie-állapotuk listázása a Virusdie megkeresése nélkül."
+
+#: class/class-mainwp-virusdie-abilities.php:54
+msgid "Get Virusdie Site"
+msgstr "Virusdie-webhely lekérése"
+
+#: class/class-mainwp-virusdie-abilities.php:54
+msgid ""
+"Read one accessible site’s stored Virusdie connection, settings and last "
+"scan."
+msgstr "Egy hozzáférhető webhely tárolt Virusdie-kapcsolatának, beállításainak és utolsó vizsgálatának beolvasása."
+
+#: class/class-mainwp-virusdie-abilities.php:55
+msgid "List Virusdie Reports"
+msgstr "Virusdie-jelentések listázása"
+
+#: class/class-mainwp-virusdie-abilities.php:55
+msgid ""
+"List stored scan summaries for one accessible site without starting a scan."
+msgstr "Egy hozzáférhető webhely tárolt vizsgálati összefoglalóinak listázása vizsgálat indítása nélkül."
+
+#: class/class-mainwp-virusdie-abilities.php:56
+msgid "Get Virusdie Report"
+msgstr "Virusdie-jelentés lekérése"
+
+#: class/class-mainwp-virusdie-abilities.php:56
+msgid ""
+"Read one stored scan summary for an accessible site. File details are not "
+"stored by this add-on."
+msgstr "Egy hozzáférhető webhely tárolt vizsgálati összefoglalójának lekérése. A fájl részleteit ez a kiegészítő nem tárolja."
+
+#: class/class-mainwp-virusdie-abilities.php:310
+msgid "You do not have permission to access this site."
+msgstr "Nincs jogosultsága a webhely eléréséhez."
+
+#: class/class-mainwp-virusdie-abilities.php:400
+msgid "You do not have permission to read Virusdie state."
+msgstr "Nincs jogosultsága a Virusdie állapotának megtekintéséhez."
+
+#: class/class-mainwp-virusdie-abilities.php:409
+msgid "The requested site or stored report was not found."
+msgstr "A kért webhely vagy tárolt jelentés nem található."
+
+#: class/class-mainwp-virusdie-api.php:358
+msgid "Unable to initialize the Virusdie connection."
+msgstr "Nem sikerült inicializálni a Virusdie-kapcsolatot."
+
+#: class/class-mainwp-virusdie-api.php:425
+#: class/class-mainwp-virusdie-api.php:433
+msgid "The Virusdie request failed."
+msgstr "A Virusdie-kérés sikertelen volt."
+
+#: class/class-mainwp-virusdie-extension.php:79
+#: class/class-mainwp-virusdie.php:662
+msgid "Virusdie"
+msgstr "Virusdie"
+
+#: class/class-mainwp-virusdie-extension.php:115
+#: class/class-mainwp-virusdie-rest-api.php:283
+#: class/class-mainwp-virusdie-wp-cli-command.php:159
+#: class/class-mainwp-virusdie.php:1150
 msgid "Site not found."
 msgstr "A webhely nem található."
 
-#: class/class-mainwp-virusdie-reports-data.php:293
-#: class/class-mainwp-virusdie.php:1284
+#: class/class-mainwp-virusdie-reports-data.php:278
+#: class/class-mainwp-virusdie.php:1385
 msgid "Checked bytes"
 msgstr "Ellenőrzött bájtok"
 
-#: class/class-mainwp-virusdie-reports-data.php:294
-#: class/class-mainwp-virusdie.php:1288
+#: class/class-mainwp-virusdie-reports-data.php:279
+#: class/class-mainwp-virusdie.php:1389
 msgid "Detected files"
 msgstr "Észlelt fájlok"
 
-#: class/class-mainwp-virusdie-reports-data.php:295
-#: class/class-mainwp-virusdie.php:1292
+#: class/class-mainwp-virusdie-reports-data.php:280
+#: class/class-mainwp-virusdie.php:1393
 msgid "Incurable files"
 msgstr "Nem tisztítható fájlok"
 
-#: class/class-mainwp-virusdie-reports-data.php:296
-#: class/class-mainwp-virusdie.php:1296
+#: class/class-mainwp-virusdie-reports-data.php:281
+#: class/class-mainwp-virusdie.php:1397
 msgid "Vulnerabilities"
 msgstr "Sérülékenységek"
 
-#: class/class-mainwp-virusdie-reports-data.php:297
-#: class/class-mainwp-virusdie.php:1300
+#: class/class-mainwp-virusdie-reports-data.php:282
+#: class/class-mainwp-virusdie.php:1401
 msgid "Checked dirs"
 msgstr "Ellenőrzött könyvtárak"
 
-#: class/class-mainwp-virusdie-reports-data.php:298
-#: class/class-mainwp-virusdie.php:1304
+#: class/class-mainwp-virusdie-reports-data.php:283
+#: class/class-mainwp-virusdie.php:1405
 msgid "Checked files"
 msgstr "Ellenőrzött fájlok"
 
-#: class/class-mainwp-virusdie-reports-data.php:299
-#: class/class-mainwp-virusdie.php:1308
+#: class/class-mainwp-virusdie-reports-data.php:284
+#: class/class-mainwp-virusdie.php:1409
 msgid "Treated files"
 msgstr "Kezelt fájlok"
 
-#: class/class-mainwp-virusdie-reports-data.php:300
-#: class/class-mainwp-virusdie.php:1312
+#: class/class-mainwp-virusdie-reports-data.php:285
+#: class/class-mainwp-virusdie.php:1413
 msgid "Deleted files"
 msgstr "Törölt fájlok"
 
-#: class/class-mainwp-virusdie-rest-api.php:240
-#: class/class-mainwp-virusdie-wp-cli-command.php:96
-msgid "Scan started."
-msgstr "A vizsgálat elindult."
+#: class/class-mainwp-virusdie-rest-api.php:138
+msgid ""
+"Incorrect or missing consumer key and/or secret. If the issue persists "
+"please reset your authentication details from the MainWP > Settings > REST "
+"API page, on your MainWP Dashboard site."
+msgstr "Hibás vagy hiányzó fogyasztói kulcs és/vagy titkos kulcs. Ha a probléma továbbra is fennáll, állítsa alaphelyzetbe a hitelesítési adatait a MainWP vezérlőpult webhelyén, a MainWP > beállítások > REST API oldalon."
 
-#: class/class-mainwp-virusdie-rest-api.php:245
-#: class/class-mainwp-virusdie-rest-api.php:312
-#: class/class-mainwp-virusdie-wp-cli-command.php:84
-#: class/class-mainwp-virusdie-wp-cli-command.php:161
+#: class/class-mainwp-virusdie-rest-api.php:155
+msgid "Required parameter is missing."
+msgstr "Hiányzik egy kötelező paraméter."
+
+#: class/class-mainwp-virusdie-rest-api.php:172
+msgid "Required parameter data is is not valid."
+msgstr "A kötelező adatparaméter nem érvényes."
+
+#: class/class-mainwp-virusdie-rest-api.php:189
+msgid "Process ran."
+msgstr "A folyamat lefutott."
+
+#: class/class-mainwp-virusdie-rest-api.php:222
+#: class/class-mainwp-virusdie-rest-api.php:287
+#: class/class-mainwp-virusdie-wp-cli-command.php:164
 msgid "Site not found in the Virusdie account."
 msgstr "A webhely nem található a Virusdie-fiókban."
 
-#: class/class-mainwp-virusdie-rest-api.php:309
+#: class/class-mainwp-virusdie-rest-api.php:232
+msgid "Unable to start the scan."
+msgstr "Nem sikerült elindítani a vizsgálatot."
+
+#: class/class-mainwp-virusdie-rest-api.php:237
+#: class/class-mainwp-virusdie-wp-cli-command.php:79
+msgid "Scan started."
+msgstr "A vizsgálat elindult."
+
+#: class/class-mainwp-virusdie-rest-api.php:265
 msgid "Report not found."
 msgstr "A jelentés nem található."
 
-#: class/class-mainwp-virusdie-wp-cli-command.php:60
-#: class/class-mainwp-virusdie-wp-cli-command.php:136
-msgid "Site ID should not be empty."
-msgstr "A webhelyazonosító nem lehet üres."
+#: class/class-mainwp-virusdie-rest-api.php:301
+#: class/class-mainwp-virusdie-wp-cli-command.php:64
+#: class/class-mainwp-virusdie.php:1444
+msgid "Unable to verify Virusdie scan availability. Please try again later."
+msgstr "Nem sikerült ellenőrizni, hogy elérhető-e a Virusdie-vizsgálat. Kérjük, próbálja újra később."
 
-#: class/class-mainwp-virusdie-wp-cli-command.php:103
+#: class/class-mainwp-virusdie-rest-api.php:304
+#: class/class-mainwp-virusdie-wp-cli-command.php:68
+#: class/class-mainwp-virusdie.php:1447
+msgid "On-demand scanning requires a paid Virusdie plan."
+msgstr "Az igény szerinti vizsgálathoz fizetős Virusdie-csomag szükséges."
+
+#: class/class-mainwp-virusdie-wp-cli-command.php:86
 msgid "Error retrieving the scan report"
 msgstr "Hiba a vizsgálati jelentés lekérésekor"
 
-#: class/class-mainwp-virusdie-wp-cli-command.php:170
+#: class/class-mainwp-virusdie-wp-cli-command.php:125
 msgid "Infected files: "
 msgstr "Fertőzött fájlok: "
 
-#: class/class-mainwp-virusdie-wp-cli-command.php:171
+#: class/class-mainwp-virusdie-wp-cli-command.php:126
 msgid "Incurable files: "
 msgstr "Nem tisztítható fájlok: "
 
-#: class/class-mainwp-virusdie-wp-cli-command.php:172
+#: class/class-mainwp-virusdie-wp-cli-command.php:127
 msgid "Vulnerabilities: "
 msgstr "Sérülékenységek: "
 
-#: class/class-mainwp-virusdie-wp-cli-command.php:173
+#: class/class-mainwp-virusdie-wp-cli-command.php:128
 msgid "Checked dirs: "
 msgstr "Ellenőrzött könyvtárak: "
 
-#: class/class-mainwp-virusdie-wp-cli-command.php:174
+#: class/class-mainwp-virusdie-wp-cli-command.php:129
 msgid "Checked files: "
 msgstr "Ellenőrzött fájlok: "
 
-#: class/class-mainwp-virusdie-wp-cli-command.php:175
+#: class/class-mainwp-virusdie-wp-cli-command.php:130
 msgid "Suspicious files: "
 msgstr "Gyanús fájlok: "
 
-#: class/class-mainwp-virusdie-wp-cli-command.php:176
+#: class/class-mainwp-virusdie-wp-cli-command.php:131
 msgid "Treated files: "
 msgstr "Kezelt fájlok: "
 
-#: class/class-mainwp-virusdie-wp-cli-command.php:177
+#: class/class-mainwp-virusdie-wp-cli-command.php:132
 msgid "Deleted files: "
 msgstr "Törölt fájlok: "
 
-#: class/class-mainwp-virusdie-wp-cli-command.php:179
+#: class/class-mainwp-virusdie-wp-cli-command.php:138
 msgid "Scan report not found."
 msgstr "A vizsgálati jelentés nem található."
 
-#: class/class-mainwp-virusdie.php:306
+#: class/class-mainwp-virusdie-wp-cli-command.php:150
+msgid "Site ID should not be empty."
+msgstr "A webhelyazonosító nem lehet üres."
+
+#: class/class-mainwp-virusdie.php:373
 msgid "Virusdie Dashboard"
 msgstr "Virusdie vezérlőpult"
 
-#: class/class-mainwp-virusdie.php:307
+#: class/class-mainwp-virusdie.php:374
 msgid "Settings"
 msgstr "Beállítások"
 
-#: class/class-mainwp-virusdie.php:373
+#: class/class-mainwp-virusdie.php:479
 msgid "Site"
 msgstr "Webhely"
 
-#: class/class-mainwp-virusdie.php:375
-msgid "URL"
-msgstr "URL"
-
-#: class/class-mainwp-virusdie.php:376
+#: class/class-mainwp-virusdie.php:480
 msgid "Checked"
 msgstr "Ellenőrizve"
 
-#: class/class-mainwp-virusdie.php:377
+#: class/class-mainwp-virusdie.php:481
 msgid "Malicious"
 msgstr "Kártékony"
 
-#: class/class-mainwp-virusdie.php:378
+#: class/class-mainwp-virusdie.php:482
 msgid "Suspicious"
 msgstr "Gyanús"
 
-#: class/class-mainwp-virusdie.php:379
+#: class/class-mainwp-virusdie.php:483
 msgid "Scanned at"
 msgstr "Vizsgálat időpontja"
 
-#: class/class-mainwp-virusdie.php:381
+#: class/class-mainwp-virusdie.php:485
 msgid "Firewall "
 msgstr "Tűzfal "
 
-#: class/class-mainwp-virusdie.php:382
+#: class/class-mainwp-virusdie.php:486
 msgid "AutoCleanup"
 msgstr "AutoCleanup"
 
-#: class/class-mainwp-virusdie.php:450 class/class-mainwp-virusdie.php:941
+#: class/class-mainwp-virusdie.php:513
+msgid "Jump to the child site WP Admin"
+msgstr "Ugrás a gyermekwebhely WP Admin felületére"
+
+#: class/class-mainwp-virusdie.php:515
+msgid "Open the child site overview"
+msgstr "A gyermekwebhely áttekintésének megnyitása"
+
+#: class/class-mainwp-virusdie.php:547 class/class-mainwp-virusdie.php:1038
 msgid "Not scanned yet."
 msgstr "Még nem lett vizsgálva."
 
-#: class/class-mainwp-virusdie.php:455 class/class-mainwp-virusdie.php:456
+#: class/class-mainwp-virusdie.php:552 class/class-mainwp-virusdie.php:553
 msgid "Enabled"
 msgstr "Engedélyezve"
 
-#: class/class-mainwp-virusdie.php:455 class/class-mainwp-virusdie.php:456
+#: class/class-mainwp-virusdie.php:552 class/class-mainwp-virusdie.php:553
 msgid "Disabled"
 msgstr "Letiltva"
 
-#: class/class-mainwp-virusdie.php:460
+#: class/class-mainwp-virusdie.php:560
 msgid "See more options"
 msgstr "További beállítások"
 
-#: class/class-mainwp-virusdie.php:464 class/class-mainwp-virusdie.php:973
+#: class/class-mainwp-virusdie.php:564 class/class-mainwp-virusdie.php:1071
 msgid "CLEAN UP"
 msgstr "TISZTÍTÁS"
 
-#: class/class-mainwp-virusdie.php:466
+#: class/class-mainwp-virusdie.php:567
 msgid "Scan Site"
 msgstr "Webhely vizsgálata"
 
-#: class/class-mainwp-virusdie.php:467
+#: class/class-mainwp-virusdie.php:569
 msgid "Site Reports"
 msgstr "Webhelyjelentések"
 
-#: class/class-mainwp-virusdie.php:471
+#: class/class-mainwp-virusdie.php:573
 msgid "Disable AutoCleanup"
 msgstr "AutoCleanup letiltása"
 
-#: class/class-mainwp-virusdie.php:471
+#: class/class-mainwp-virusdie.php:573
 msgid "Enable AutoCleanup"
 msgstr "AutoCleanup engedélyezése"
 
-#: class/class-mainwp-virusdie.php:472
+#: class/class-mainwp-virusdie.php:574
 msgid "Disable Firewall"
 msgstr "Tűzfal letiltása"
 
-#: class/class-mainwp-virusdie.php:472
+#: class/class-mainwp-virusdie.php:574
 msgid "Enable Firewall"
 msgstr "Tűzfal engedélyezése"
 
-#: class/class-mainwp-virusdie.php:476
+#: class/class-mainwp-virusdie.php:578
 msgid "Remove from Virusdie account"
 msgstr "Eltávolítás a Virusdie-fiókból"
 
-#: class/class-mainwp-virusdie.php:476
+#: class/class-mainwp-virusdie.php:578
 msgid "Remove Site"
 msgstr "Webhely eltávolítása"
 
-#: class/class-mainwp-virusdie.php:478
+#: class/class-mainwp-virusdie.php:580
 msgid "Add To Virusdie"
 msgstr "Hozzáadás a Virusdie-hez"
 
-#: class/class-mainwp-virusdie.php:489 class/class-mainwp-virusdie.php:493
-#: class/class-mainwp-virusdie.php:1278
+#: class/class-mainwp-virusdie.php:591 class/class-mainwp-virusdie.php:595
+#: class/class-mainwp-virusdie.php:1379
 msgid "Sign up for Virusdie"
-msgstr "Regisztráljon a Virusdie-re"
+msgstr "Regisztráció a Virusdie-nél"
 
-#: class/class-mainwp-virusdie.php:497
+#: class/class-mainwp-virusdie.php:599
 msgid ""
 "Sign up for Virusdie to be able to automatically eliminate malicious code. "
 "You'll be able to detect and eliminate viruses on your sites before they can"
@@ -267,57 +372,34 @@ msgid ""
 "exact time of your scans. A file editor with malicious code hight-lighting "
 "and a vulnerability patching manager are also available only with a Premium "
 "license"
-msgstr ""
-"Regisztráljon a Virusdie-re, hogy automatikusan eltávolíthassa a "
-"rosszindulatú kódot. Képes lesz észlelni és eltávolítani a vírusokat a "
-"webhelyein, még mielőtt komoly károkat okoznának. Beállíthat rendszeres "
-"vizsgálatokat: naponta, hetente egyszer vagy havonta egyszer, és megadhatja "
-"a vizsgálatok pontos időpontját. Rosszindulatú kód kiemelésével rendelkező "
-"fájlszerkesztő és sebezhetőség-javítási kezelő is elérhető, kizárólag "
-"Premium licenccel"
+msgstr "Regisztráljon a Virusdie-nél, hogy automatikusan eltávolíthassa a rosszindulatú kódot. Képes lesz észlelni és eltávolítani a vírusokat a webhelyein, mielőtt komoly károkat okoznának. Beállíthat rendszeres vizsgálatokat: naponta, hetente egyszer vagy havonta egyszer, és megadhatja a vizsgálatok pontos időpontját. A rosszindulatú kódot kiemelő fájlszerkesztő és a sérülékenységek javítására szolgáló kezelőeszköz is csak Premium licenccel érhető el"
 
-#: class/class-mainwp-virusdie.php:501
+#: class/class-mainwp-virusdie.php:603
 msgid "Sign Up Now"
-msgstr "Regisztráljon most"
+msgstr "Azonnali regisztráció"
 
-#: class/class-mainwp-virusdie.php:502
+#: class/class-mainwp-virusdie.php:604
 msgid "Learn more"
 msgstr "Tudjon meg többet"
 
-#: class/class-mainwp-virusdie.php:560
-msgid "Virusdie"
-msgstr "Virusdie"
-
-#: class/class-mainwp-virusdie.php:564
+#: class/class-mainwp-virusdie.php:666
 msgid "Scanning..."
 msgstr "Vizsgálat folyamatban..."
 
-#: class/class-mainwp-virusdie.php:569 class/class-mainwp-virusdie.php:583
-#: class/class-mainwp-virusdie.php:1014
+#: class/class-mainwp-virusdie.php:671 class/class-mainwp-virusdie.php:685
+#: class/class-mainwp-virusdie.php:1112
 msgid "Close"
 msgstr "Bezárás"
 
-#: class/class-mainwp-virusdie.php:574
+#: class/class-mainwp-virusdie.php:676
 msgid "Adding Sites to Virusdie"
 msgstr "Webhelyek hozzáadása a Virusdie-hez"
 
-#: class/class-mainwp-virusdie.php:578
+#: class/class-mainwp-virusdie.php:680
 msgid "Running..."
 msgstr "Fut..."
 
-#: class/class-mainwp-virusdie.php:617
-msgid "Signin"
-msgstr "Bejelentkezés"
-
-#: class/class-mainwp-virusdie.php:617
-msgid "Signup"
-msgstr "Regisztráció"
-
-#: class/class-mainwp-virusdie.php:617
-msgid "Save"
-msgstr "Mentés"
-
-#: class/class-mainwp-virusdie.php:626
+#: class/class-mainwp-virusdie.php:724
 msgid ""
 "Due to limitations in Virusdie's API, existing accounts created without "
 "using the MainWP Virusdie Extension do not have the required permissions to "
@@ -327,7 +409,7 @@ msgstr ""
 "létrehozott meglévő fiókok nem rendelkeznek a csatlakoztatott webhelyek "
 "kezeléséhez szükséges jogosultságokkal."
 
-#: class/class-mainwp-virusdie.php:629
+#: class/class-mainwp-virusdie.php:727
 msgid ""
 "Use this extension only if you plan to create a new Virusdie account through"
 " the Sign-Up form below."
@@ -335,36 +417,50 @@ msgstr ""
 "Csak akkor használja ezt a bővítményt, ha az alábbi regisztrációs űrlapon "
 "keresztül új Virusdie-fiókot tervez létrehozni."
 
-#: class/class-mainwp-virusdie.php:631
+#: class/class-mainwp-virusdie.php:730
 msgid "Create a free Virusdie account"
-msgstr "Hozzon létre ingyenes Virusdie-fiókot"
+msgstr "Ingyenes Virusdie-fiók létrehozása"
 
-#: class/class-mainwp-virusdie.php:633 class/class-mainwp-virusdie.php:649
+#: class/class-mainwp-virusdie.php:731
+msgid ""
+"Enter your email address to sign up for a free Virusdie account. After "
+"submitting the form, you'll receive an email from Virusdie with a one-time "
+"password for the next sign-in step."
+msgstr "Adja meg az e-mail-címét egy ingyenes Virusdie-fiók regisztrálásához. Az űrlap elküldése után a Virusdie e-mailben küld Önnek egy egyszer használatos jelszót a következő bejelentkezési lépéshez."
+
+#: class/class-mainwp-virusdie.php:734 class/class-mainwp-virusdie.php:754
 msgid "Email address"
 msgstr "E-mail-cím"
 
-#: class/class-mainwp-virusdie.php:636
+#: class/class-mainwp-virusdie.php:737
 msgid "Enter your email to create a free Virusdie account."
 msgstr "Adja meg e-mail-címét egy ingyenes Virusdie-fiók létrehozásához."
 
-#: class/class-mainwp-virusdie.php:640
+#: class/class-mainwp-virusdie.php:740
 msgid "Sign Up"
 msgstr "Regisztráció"
 
-#: class/class-mainwp-virusdie.php:644
+#: class/class-mainwp-virusdie.php:746
 msgid "Virusdie API Connected successfully."
 msgstr "A Virusdie API sikeresen csatlakoztatva."
 
-#: class/class-mainwp-virusdie.php:647
+#: class/class-mainwp-virusdie.php:750
 msgid "Sign in to your Virusdie account to get API Credentials"
 msgstr ""
 "Jelentkezzen be a Virusdie-fiókjába az API-hitelesítő adatok megszerzéséhez"
 
-#: class/class-mainwp-virusdie.php:655
+#: class/class-mainwp-virusdie.php:751
+msgid ""
+"Enter the email address you used to sign up, along with the one-time "
+"password you received from Virusdie. Once submitted, your Virusdie account "
+"will be connected."
+msgstr "Adja meg a regisztrációhoz használt e-mail-címét és a Virusdie-tól kapott egyszer használatos jelszót. Az adatok elküldése után csatlakozik a Virusdie-fiókja."
+
+#: class/class-mainwp-virusdie.php:760
 msgid "One-time password"
 msgstr "Egyszer használatos jelszó"
 
-#: class/class-mainwp-virusdie.php:658
+#: class/class-mainwp-virusdie.php:763
 msgid ""
 "Check your email to find an email from Virusdie that contains the one-time "
 "password."
@@ -372,19 +468,19 @@ msgstr ""
 "Ellenőrizze az e-mailjét, és keresse a Virusdie levelét, amely tartalmazza "
 "az egyszer használatos jelszót."
 
-#: class/class-mainwp-virusdie.php:665
+#: class/class-mainwp-virusdie.php:766
 msgid "Sign In"
 msgstr "Bejelentkezés"
 
-#: class/class-mainwp-virusdie.php:667 class/class-mainwp-virusdie.php:854
+#: class/class-mainwp-virusdie.php:768 class/class-mainwp-virusdie.php:951
 msgid "Reload Virusdie Data"
 msgstr "Virusdie-adatok újratöltése"
 
-#: class/class-mainwp-virusdie.php:668
-msgid "Sign Out"
-msgstr "Kijelentkezés"
+#: class/class-mainwp-virusdie.php:769
+msgid "Sign Out and Clear Connection Data"
+msgstr "Kijelentkezés és kapcsolati adatok törlése"
 
-#: class/class-mainwp-virusdie.php:689
+#: class/class-mainwp-virusdie.php:793
 msgid ""
 "Account created successfully. Check your email please to get the one time "
 "password."
@@ -392,13 +488,13 @@ msgstr ""
 "A fiók sikeresen létrejött. Kérjük, ellenőrizze az e-mailjét az egyszer "
 "használatos jelszóért."
 
-#: class/class-mainwp-virusdie.php:695
+#: class/class-mainwp-virusdie.php:799
 msgid "Account creation failed. Please try again or contact support."
 msgstr ""
 "A fiók létrehozása nem sikerült. Próbálja meg újra, vagy lépjen kapcsolatba "
 "a támogatással."
 
-#: class/class-mainwp-virusdie.php:701
+#: class/class-mainwp-virusdie.php:805
 msgid ""
 "You are signed in successfully. API credenetials will be loaded "
 "automatically."
@@ -406,136 +502,156 @@ msgstr ""
 "Sikeresen bejelentkezett. Az API-hitelesítő adatok automatikusan "
 "betöltődnek."
 
-#: class/class-mainwp-virusdie.php:707
+#: class/class-mainwp-virusdie.php:811
 msgid "Sign-in failed. Please try again or contact support."
 msgstr ""
 "A bejelentkezés nem sikerült. Próbálja meg újra, vagy lépjen kapcsolatba a "
 "támogatással."
 
-#: class/class-mainwp-virusdie.php:713
+#: class/class-mainwp-virusdie.php:817
 msgid "API connected successfully."
 msgstr "Az API sikeresen csatlakoztatva."
 
-#: class/class-mainwp-virusdie.php:719
+#: class/class-mainwp-virusdie.php:823
 msgid "API could not be connected. Please try again or contact support."
 msgstr ""
 "Az API-t nem sikerült csatlakoztatni. Próbálja meg újra, vagy lépjen "
 "kapcsolatba a támogatással."
 
-#: class/class-mainwp-virusdie.php:725
-msgid "You are signed out successfully."
-msgstr "Sikeresen kijelentkezett."
+#: class/class-mainwp-virusdie.php:829
+msgid "You are signed out and connection data has been cleared."
+msgstr "Ön kijelentkezett, a kapcsolati adatok pedig törölve lettek."
 
-#: class/class-mainwp-virusdie.php:731
-msgid "Sign-out failed. Please try again or contact support."
-msgstr ""
-"A kijelentkezés nem sikerült. Próbálja meg újra, vagy lépjen kapcsolatba a "
-"támogatással."
+#: class/class-mainwp-virusdie.php:835
+msgid ""
+"Connection data was cleared locally, but Virusdie sign-out could not be "
+"confirmed. Please try again or contact support."
+msgstr "A kapcsolati adatok törlése helyben megtörtént, de a Virusdie-kijelentkezést nem sikerült megerősíteni. Kérjük, próbálja újra, vagy lépjen kapcsolatba a támogatással."
 
-#: class/class-mainwp-virusdie.php:737 class/class-mainwp-virusdie.php:746
+#: class/class-mainwp-virusdie.php:841 class/class-mainwp-virusdie.php:850
 msgid "Data updated."
 msgstr "Adatok frissítve."
 
-#: class/class-mainwp-virusdie.php:767
+#: class/class-mainwp-virusdie.php:871
 msgid "No threats were found."
 msgstr "Nem található fenyegetés."
 
-#: class/class-mainwp-virusdie.php:770
+#: class/class-mainwp-virusdie.php:874
 msgid "Sync error."
 msgstr "Szinkronizálási hiba."
 
-#: class/class-mainwp-virusdie.php:773
+#: class/class-mainwp-virusdie.php:877
 msgid "Threats were found."
 msgstr "Fenyegetések találhatók."
 
-#: class/class-mainwp-virusdie.php:852
+#: class/class-mainwp-virusdie.php:949
 msgid "Add All Child Sites to Virusdie"
-msgstr "Összes gyermek webhely hozzáadása a Virusdie-hez"
+msgstr "Összes gyermekwebhely hozzáadása a Virusdie-hez"
 
-#: class/class-mainwp-virusdie.php:859
+#: class/class-mainwp-virusdie.php:956
 msgid "Filter sites: "
 msgstr "Webhelyek szűrése: "
 
-#: class/class-mainwp-virusdie.php:861
+#: class/class-mainwp-virusdie.php:958
 msgid "Select group"
 msgstr "Csoport kiválasztása"
 
-#: class/class-mainwp-virusdie.php:919
+#: class/class-mainwp-virusdie.php:962
+msgid "All groups"
+msgstr "Összes csoport"
+
+#: class/class-mainwp-virusdie.php:1016
 msgid "Site not connected to your Virusdie account."
 msgstr "A webhely nincs csatlakoztatva a Virusdie-fiókjához."
 
-#: class/class-mainwp-virusdie.php:968
+#: class/class-mainwp-virusdie.php:1066
 msgid "Status (last scan):"
 msgstr "Állapot (utolsó vizsgálat):"
 
-#: class/class-mainwp-virusdie.php:969 class/class-mainwp-virusdie.php:991
+#: class/class-mainwp-virusdie.php:1067 class/class-mainwp-virusdie.php:1089
 msgid "Scanned at:"
 msgstr "Vizsgálat ideje:"
 
-#: class/class-mainwp-virusdie.php:981
+#: class/class-mainwp-virusdie.php:1079
 msgid "Reports"
 msgstr "Jelentések"
 
-#: class/class-mainwp-virusdie.php:999
+#: class/class-mainwp-virusdie.php:1090
+msgid "Details"
+msgstr "Részletek"
+
+#: class/class-mainwp-virusdie.php:1097
 msgid "No saved reports."
 msgstr "Nincsenek mentett jelentések."
 
-#: class/class-mainwp-virusdie.php:1005
+#: class/class-mainwp-virusdie.php:1103
 msgid "Virusdie Scan Report"
-msgstr "Virusdie vizsgálati jelentés"
+msgstr "Virusdie-vizsgálati jelentés"
 
-#: class/class-mainwp-virusdie.php:1009
+#: class/class-mainwp-virusdie.php:1107
 msgid "Loading data..."
 msgstr "Adatok betöltése..."
 
-#: class/class-mainwp-virusdie.php:1079
+#: class/class-mainwp-virusdie.php:1177
 msgid "All sites have already been added."
-msgstr "Minden webhely már hozzá lett adva."
+msgstr "Minden webhely már hozzá van adva."
 
-#: class/class-mainwp-virusdie.php:1085
+#: class/class-mainwp-virusdie.php:1186
 msgid ""
 "Sites added successfully. Please wait until your unique sync file gets "
 "uploaded to your child sites."
-msgstr ""
-"A webhelyek sikeresen hozzáadva. Kérjük, várjon, amíg az egyedi szinkronfájl"
-" feltöltődik a gyermek webhelyeire."
+msgstr "A webhelyek sikeresen hozzáadva. Kérjük, várjon, amíg az egyedi szinkronfájl feltöltődik a gyermekwebhelyeire."
 
-#: class/class-mainwp-virusdie.php:1090
+#: class/class-mainwp-virusdie.php:1195
 msgid "Unique sync file could not be uploaded. Please upload it manually."
 msgstr ""
 "Az egyedi szinkronizációs fájlt nem sikerült feltölteni. Kérjük, töltse fel "
 "manuálisan."
 
-#: class/class-mainwp-virusdie.php:1111
+#: class/class-mainwp-virusdie.php:1212
 msgid "Uploading synchronization files"
 msgstr "Szinkronizációs fájlok feltöltése"
 
-#: class/class-mainwp-virusdie.php:1338 class/class-mainwp-virusdie.php:1396
-#: class/class-mainwp-virusdie.php:1446
+#: class/class-mainwp-virusdie.php:1439 class/class-mainwp-virusdie.php:1505
+#: class/class-mainwp-virusdie.php:1555
 msgid "Site not found in Virusdie dashboard."
-msgstr "A webhely nem található a Virusdie irányítópultján."
+msgstr "A webhely nem található a Virusdie vezérlőpultján."
 
-#: class/class-mainwp-virusdie.php:1354
+#: class/class-mainwp-virusdie.php:1463
 msgid "Scan process initiated."
 msgstr "Vizsgálati folyamat elindítva."
 
-#: class/class-mainwp-virusdie.php:1415
+#: class/class-mainwp-virusdie.php:1524
 msgid "Site removed successfully."
 msgstr "A webhely sikeresen eltávolítva."
 
-#: class/class-mainwp-virusdie.php:1453
+#: class/class-mainwp-virusdie.php:1562
 msgid "Invalid option."
 msgstr "Érvénytelen opció."
 
-#: class/class-mainwp-virusdie.php:1473
+#: class/class-mainwp-virusdie.php:1567
+msgid "Invalid option value."
+msgstr "Hibás beállítási érték."
+
+#: class/class-mainwp-virusdie.php:1587
 msgid "Successful."
 msgstr "Sikeres."
 
-#: mainwp-virusdie-extension.php:182
-msgid "Viusdie"
-msgstr "Viusdie"
+#: class/class-mainwp-virusdie.php:1663
+msgid ""
+"If you need help with the Virusdie extension, please review following help "
+"documents"
+msgstr "Ha segítségre van szüksége a Virusdie-kiterjesztéssel kapcsolatban, kérjük, tekintse át az alábbi súgódokumentumokat"
 
-#: mainwp-virusdie-extension.php:242
+#: mainwp-virusdie-extension.php:191
+msgid "Viusdie"
+msgstr "Virusdie"
+
+#: mainwp-virusdie-extension.php:192
+msgid "Viusdie API Response"
+msgstr "Virusdie API-válasz"
+
+#: mainwp-virusdie-extension.php:260
 msgid ""
 "requires <a href=\"https://mainwp.com\" target=\"_blank\">MainWP Dashboard "
 "Plugin</a> to be activated in order to work. Please install and activate <a "
@@ -546,3 +662,26 @@ msgstr ""
 "Dashboard Plugin</a> aktiválása szükséges. Kérjük, először telepítse és "
 "aktiválja a <a href=\"https://mainwp.com\" target=\"_blank\">MainWP "
 "Dashboard Plugin</a>-t."
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Signin"
+#~ msgstr "Bejelentkezés"
+
+#~ msgid "Signup"
+#~ msgstr "Regisztráció"
+
+#~ msgid "Save"
+#~ msgstr "Mentés"
+
+#~ msgid "Sign Out"
+#~ msgstr "Kijelentkezés"
+
+#~ msgid "You are signed out successfully."
+#~ msgstr "Sikeresen kijelentkezett."
+
+#~ msgid "Sign-out failed. Please try again or contact support."
+#~ msgstr ""
+#~ "A kijelentkezés nem sikerült. Próbálja meg újra, vagy lépjen kapcsolatba a "
+#~ "támogatással."

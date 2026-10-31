@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Table Rate Shipping 3.5.8\n"
+"Project-Id-Version: WooCommerce Table Rate Shipping 3.7.4\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T19:14:04+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,38 +18,29 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: WooCommerce Table Rate Shipping\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 3.5.8\n"
+"X-Plugin-Version: 3.7.4\n"
 
-#. Plugin Name of the plugin
-#: woocommerce-table-rate-shipping.php
-msgid "WooCommerce Table Rate Shipping"
-msgstr "WooCommerce Table Rate Shipping"
+#: includes/functions-admin.php:141 includes/functions-admin.php:144
+#: includes/functions-admin.php:147 includes/functions-admin.php:150
+msgid "0"
+msgstr "0"
 
-#. Plugin URI of the plugin
-#: woocommerce-table-rate-shipping.php
-msgid "https://woocommerce.com/products/table-rate-shipping/"
-msgstr "https://woocommerce.com/products/table-rate-shipping/"
+#: includes/class-helpers.php:83
+msgid "Max condition can't be less than Min."
+msgstr "A maximális érték nem lehet kisebb a minimálisnál."
 
-#. Description of the plugin
-#: woocommerce-table-rate-shipping.php
-msgid ""
-"Table rate shipping lets you define rates depending on location vs shipping "
-"class, price, weight, or item count."
-msgstr ""
-"A táblázatos díjszabás lehetővé teszi, hogy díjakat határozzon meg a hely, a"
-" szállítási osztály, az ár, a súly vagy a tételszám alapján."
+#. translators: %d is row ID.
+#: includes/class-helpers.php:121
+msgid "Max value is overlapping with min value from row %d."
+msgstr "A maximális érték átfedésben van a %d. sor minimális értékével."
 
-#. Author of the plugin
-#: woocommerce-table-rate-shipping.php
-msgid "WooCommerce"
-msgstr "WooCommerce"
-
-#. Author URI of the plugin
-#: woocommerce-table-rate-shipping.php
-msgid "https://woocommerce.com/"
-msgstr "https://woocommerce.com/"
+#. translators: %d is row ID.
+#: includes/class-helpers.php:123
+msgid "Min value is overlapping with max value from row %d."
+msgstr "A minimális érték átfedésben van a %d. sor maximális értékével."
 
 #: includes/class-shipping-rates-import-export.php:36
+#: includes/class-shipping-rates-importer.php:50
 msgid "Unauthorized."
 msgstr "Jogosulatlan."
 
@@ -61,92 +52,97 @@ msgstr "Érvénytelen nonce-ellenőrzés."
 msgid "No table rates found for this instance."
 msgstr "Ehhez a példányhoz nem találhatók táblázatos díjak."
 
-#: includes/class-shipping-rates-import-export.php:85
+#: includes/class-shipping-rates-import-export.php:87
 msgid "WooCommerce Table Rates"
 msgstr "WooCommerce táblázatos díjak"
 
-#: includes/class-shipping-rates-import-export.php:86
+#: includes/class-shipping-rates-import-export.php:88
 msgid "Import WooCommerce Table Rates."
 msgstr "WooCommerce táblázatos díjak importálása."
 
-#: includes/class-shipping-rates-import-export.php:98
+#: includes/class-shipping-rates-import-export.php:100
 msgid "Import WooCommerce shipping settings"
 msgstr "WooCommerce szállítási beállítások importálása"
 
-#: includes/class-shipping-rates-importer.php:43
-msgid "The instance ID is required to process the import."
-msgstr "Az importálás feldolgozásához szükség van a példányazonosítóra."
+#: includes/class-shipping-rates-importer.php:42
+msgid "WooCommerce must be active to import table rates."
+msgstr "A táblázatos díjak importálásához a WooCommerce bővítménynek aktívnak kell lennie."
 
-#: includes/class-shipping-rates-importer.php:75
+#: includes/class-shipping-rates-importer.php:57
+msgid "The instance ID is required to process the import."
+msgstr "Az importálás feldolgozásához szükség van a példány ID-jára."
+
+#: includes/class-shipping-rates-importer.php:63
+msgid "The instance ID does not belong to a Table Rate shipping method."
+msgstr "A példány ID-ja nem tartozik a táblázatos díjszabású szállítási módhoz."
+
+#: includes/class-shipping-rates-importer.php:171
 msgid "Cannot read the uploaded file."
 msgstr "Nem lehet beolvasni a feltöltött fájlt."
 
-#: includes/class-shipping-rates-importer.php:83
+#: includes/class-shipping-rates-importer.php:181
 msgid "Error opening the CSV file."
 msgstr "Hiba a CSV-fájl megnyitásakor."
 
-#: includes/class-shipping-rates-importer.php:88
+#: includes/class-shipping-rates-importer.php:190
 msgid "CSV file appears to be empty or invalid."
 msgstr "A CSV-fájl üresnek vagy érvénytelennek tűnik."
 
-#: includes/class-shipping-rates-importer.php:105
+#: includes/class-shipping-rates-importer.php:246
 msgid "No valid table rates found in the CSV file."
 msgstr "A CSV-fájlban nem találhatók érvényes táblázatos díjak."
 
-#: includes/class-shipping-rates-importer.php:123
+#: includes/class-shipping-rates-importer.php:270
 msgid "Shipping table rates imported successfully."
-msgstr "A szállítási táblázatos díjak importálása sikeres."
+msgstr "A táblázatos szállítási díjak importálása sikeres."
 
-#: includes/class-shipping-rates-importer.php:125
+#: includes/class-shipping-rates-importer.php:272
 msgid "Go back to instance settings"
 msgstr "Vissza a példány beállításaihoz"
 
-#: includes/class-shipping-rates-importer.php:139
+#: includes/class-shipping-rates-importer.php:286
 msgid "Import WooCommerce shipping rates from a CSV file."
 msgstr "WooCommerce szállítási díjak importálása CSV-fájlból."
 
-#: includes/class-shipping-rates-importer.php:140
+#: includes/class-shipping-rates-importer.php:287
 msgid "This tool allows you to import WooCommerce Table Rates entries."
-msgstr ""
-"Ez az eszköz lehetővé teszi a WooCommerce táblázatos díj bejegyzéseinek "
-"importálását."
+msgstr "Ez az eszköz lehetővé teszi a WooCommerce táblázatos díjtételeinek importálását."
 
-#: includes/class-shipping-rates-importer.php:147
+#: includes/class-shipping-rates-importer.php:294
 msgid "Choose a CSV file from your computer:"
 msgstr "Válasszon egy CSV-fájlt a számítógépéről:"
 
-#: includes/class-shipping-rates-importer.php:152
+#: includes/class-shipping-rates-importer.php:299
 msgid "Maximum size:"
 msgstr "Maximális méret:"
 
-#: includes/class-shipping-rates-importer.php:157
+#: includes/class-shipping-rates-importer.php:304
 msgid "Override Table Rates entries?"
-msgstr "Felülírja a táblázatos díj bejegyzéseket?"
+msgstr "Felülbírálja a táblázatos díjbejegyzéseket?"
 
-#: includes/class-shipping-rates-importer.php:161
+#: includes/class-shipping-rates-importer.php:308
 msgid "Replace existing Table Rates with imported data."
-msgstr "A meglévő táblázatos díjakat lecseréli az importált adatokkal."
+msgstr "A meglévő táblázatos díjakat lecseréli az importált adatokra."
 
-#: includes/class-shipping-rates-importer.php:169
+#: includes/class-shipping-rates-importer.php:316
 msgid "Continue"
 msgstr "Folytatás"
 
 #: includes/class-store-api-extension.php:94
 msgid "Abort messages from Table Rate Shipping."
-msgstr "Megszakítási üzenetek a Table Rate Shippingtől."
+msgstr "A Table Rate Shipping megszakítási üzenetei."
 
 #: includes/class-store-api-extension.php:100
 msgid "Current package hashes."
-msgstr "Jelenlegi csomag-hash-ek."
+msgstr "Aktuális csomagok hashértékei."
 
-#: includes/class-wc-shipping-table-rate-privacy.php:20
+#: includes/class-wc-shipping-table-rate-privacy.php:24
 #: includes/class-wc-shipping-table-rate.php:120
 msgid "Table rates"
 msgstr "Táblázatos díjak"
 
 #. translators: %s is privacy page link.
-#: includes/class-wc-shipping-table-rate-privacy.php:28
-#, php-format
+#: includes/class-wc-shipping-table-rate-privacy.php:32
 msgid ""
 "By using this extension, you may be storing personal data or sharing data "
 "with an external service. <a href=\"%s\" target=\"_blank\">Learn more about "
@@ -188,32 +184,24 @@ msgstr ""
 msgid ""
 "Multiplies the calculated cost by item quantity and adds any per-item "
 "handling fee."
-msgstr ""
-"A számított költséget megszorozza a tételmennyiséggel, és hozzáad bármilyen "
-"tételenkénti kezelési díjat."
+msgstr "A számított költséget megszorozza a mennyiséggel, és hozzáadja az esetleges tételenkénti kezelési díjat."
 
 #: includes/class-wc-shipping-table-rate.php:240
 msgid "Enforces minimum and maximum cost limits per item if configured."
-msgstr ""
-"Beállítás esetén érvényesíti a minimum- és maximumköltség-határokat "
-"tételenként."
+msgstr "A beállított minimális és maximális költséghatárokat tételenként érvényesíti."
 
 #: includes/class-wc-shipping-table-rate.php:241
 msgid ""
 "Adds order handling fee and applies order-level maximum shipping cost if "
 "needed."
-msgstr ""
-"Hozzáadja a rendelés kezelési díját, és szükség esetén alkalmazza a "
-"rendelési szintű maximális szállítási költséget."
+msgstr "Hozzáadja a rendelésenkénti kezelési díjat, és szükség esetén alkalmazza a rendelési szintű maximális szállítási költséget."
 
 #: includes/class-wc-shipping-table-rate.php:242
 #: includes/class-wc-shipping-table-rate.php:253
 msgid ""
 "Creates a shipping rate option with per-item tax calculation for display at "
 "checkout."
-msgstr ""
-"Létrehoz egy szállítási díj opciót tételenkénti adószámítással a pénztárban "
-"való megjelenítéshez."
+msgstr "Létrehoz egy tételenkénti adószámítást végző szállítási díjopciót, amely a pénztárnál jelenik meg."
 
 #: includes/class-wc-shipping-table-rate.php:246
 msgid "<b>Per Line Item</b>: Calculation Based on Product Lines"
@@ -239,25 +227,19 @@ msgstr ""
 msgid ""
 "Calculates cost by adding flat rate, per-item charge (multiplied by "
 "quantity), weight-based rate, and percentage of line price."
-msgstr ""
-"A költséget az átalánydíj, a tételenkénti díj (a mennyiséggel megszorozva), "
-"a súlyalapú díj és a sor árának százalékának összeadásával számítja."
+msgstr "A költséget az átalánydíj, a mennyiséggel megszorzott tételenkénti díj, a súlyalapú díj és a terméksor árának százalékos értéke összeadásával számítja ki."
 
 #: includes/class-wc-shipping-table-rate.php:251
 msgid ""
 "Adds per-line handling fee and enforces minimum/maximum cost limits for each"
 " line."
-msgstr ""
-"Hozzáad soronkénti kezelési díjat, és érvényesíti az egyes sorokra vonatkozó"
-" minimum-/maximumköltség-határokat."
+msgstr "Hozzáadja a soronkénti kezelési díjat, és minden sorra érvényesíti a minimális és maximális költséghatárokat."
 
 #: includes/class-wc-shipping-table-rate.php:252
 msgid ""
 "Combines all line costs with order handling fee and applies order-level "
 "maximum if configured."
-msgstr ""
-"Az összes sorköltséget összevonja a rendelés kezelési díjával, és beállítás "
-"esetén alkalmazza a rendelési szintű maximumot."
+msgstr "Összeadja a tételsorok költségeit a rendelésenkénti kezelési díjjal, és beállítás esetén alkalmazza a rendelésre vonatkozó maximális költséget."
 
 #: includes/class-wc-shipping-table-rate.php:257
 msgid "<b>Per Shipping Class</b>: Group-Based Calculation"
@@ -267,9 +249,7 @@ msgstr "<b>Szállítási osztályonként</b>: Csoportalapú számítás"
 msgid ""
 "Groups all products by their shipping class, calculating combined totals for"
 " each group."
-msgstr ""
-"Az összes terméket szállítási osztály szerint csoportosítja, és kiszámítja "
-"az egyes csoportok összesített értékeit."
+msgstr "Az összes terméket szállítási osztály szerint csoportosítja, és kiszámítja az egyes csoportok összegét."
 
 #: includes/class-wc-shipping-table-rate.php:260
 msgid ""
@@ -283,33 +263,25 @@ msgstr ""
 msgid ""
 "For each matching rate, calculates cost by adding flat rate, per-item "
 "charges, weight-based rates, and percentage of group price."
-msgstr ""
-"Minden illeszkedő díjnál a költséget az átalánydíj, a tételenkénti díjak, a "
-"súlyalapú díjak és a csoport árának százalékának összeadásával számítja."
+msgstr "Minden egyező díj esetén a költséget az átalánydíj, a tételenkénti és súlyalapú díjak, valamint a csoportár százalékos értékének összeadásával számítja ki."
 
 #: includes/class-wc-shipping-table-rate.php:262
 msgid ""
 "Applies handling fee and enforces minimum/maximum cost limits for each "
 "shipping class group."
-msgstr ""
-"Alkalmaz kezelési díjat, és érvényesíti a minimum-/maximumköltség-határokat "
-"minden szállítási osztály szerinti csoportra."
+msgstr "Minden szállítási osztály szerinti csoportra alkalmazza a kezelési díjat, és érvényesíti a minimális és maximális költséghatárokat."
 
 #: includes/class-wc-shipping-table-rate.php:263
 msgid ""
 "Combines all shipping class costs, adds order handling fee, and applies "
 "order-level maximum if needed."
-msgstr ""
-"Összevonja az összes szállítási osztályköltséget, hozzáadja a rendelés "
-"kezelési díját, és szükség esetén alkalmazza a rendelési szintű maximumot."
+msgstr "Összeadja az egyes szállítási osztályok költségeit, hozzáadja a rendelésenkénti kezelési díjat, és szükség esetén alkalmazza a rendelési szintű maximális költséget."
 
 #: includes/class-wc-shipping-table-rate.php:264
 msgid ""
 "Creates a single shipping rate option with the total cost for display at "
 "checkout."
-msgstr ""
-"Egyetlen szállítási díj opciót hoz létre a teljes költséggel, a pénztárban "
-"való megjelenítéshez."
+msgstr "Létrehoz egyetlen szállítási díjopciót a pénztárnál megjelenítendő teljes összeggel."
 
 #: includes/class-wc-shipping-table-rate.php:268
 msgid "<b>Per Order</b>: Single Calculation for Entire Order"
@@ -331,34 +303,25 @@ msgstr "Meghatározza a rendelés domináns szállítási osztályát."
 msgid ""
 "Queries rates based on total order price, combined weight, and total item "
 "count."
-msgstr ""
-"Lekérdezi a díjakat a teljes rendelési ár, az összevont súly és a teljes "
-"tételszám alapján."
+msgstr "Lekérdezi a díjakat a rendelés teljes ára, az összevont súly és a tételek teljes darabszáma alapján."
 
 #: includes/class-wc-shipping-table-rate.php:273
 msgid ""
 "For each matching rate, calculates cost by adding flat rate, per-item "
 "charges (multiplied by total items), weight-based rates, and percentage of "
 "order price."
-msgstr ""
-"Minden egyező díj esetén a költséget az alapdíj, a tételenkénti díjak (a "
-"teljes tételszámmal szorozva), a súlyalapú díjak és a rendelési ár százaléka"
-" összegzésével számolja."
+msgstr "Minden egyező díj esetén a költséget az átalánydíj, a tételek teljes darabszámával megszorzott tételenkénti díjak, a súlyalapú díjak és a rendelés teljes árának százalékos értéke összeadásával számítja ki."
 
 #: includes/class-wc-shipping-table-rate.php:274
 msgid ""
 "Adds order handling fee and applies minimum/maximum cost limits at the order"
 " level."
-msgstr ""
-"Hozzáadja a rendelési kezelési díjat, és minimum/maximum költséghatárokat "
-"alkalmaz rendelési szinten."
+msgstr "Hozzáadja a rendelésenkénti kezelési díjat, és rendelési szinten alkalmazza a minimális és maximális költséghatárokat."
 
 #: includes/class-wc-shipping-table-rate.php:275
 msgid ""
 "Creates a shipping rate option with the final cost for display at checkout."
-msgstr ""
-"Létrehoz egy szállítási díj opciót a végső költséggel a pénztárban való "
-"megjelenítéshez."
+msgstr "Létrehoz egy szállítási díjopciót a pénztárnál megjelenítendő végső költséggel."
 
 #: includes/class-wc-shipping-table-rate.php:276
 msgid ""
@@ -415,20 +378,17 @@ msgstr "Kezelési díj"
 
 #. translators: %s is amount example.
 #: includes/class-wc-shipping-table-rate.php:377
-#, php-format
 msgid ""
 "Enter an amount, e.g. %s. Leave blank to disable. This cost is applied once "
 "for the order as a whole."
-msgstr ""
-"Adjon meg egy összeget, pl. %s. Hagyja üresen a letiltáshoz. Ez a költség "
-"egyszer kerül alkalmazásra a rendelés egészére."
+msgstr "Adjon meg egy összeget, pl. %s. A kikapcsoláshoz hagyja üresen. Ezt a költséget a teljes rendelésre egyszer alkalmazza a rendszer."
 
 #: includes/class-wc-shipping-table-rate.php:379
 #: includes/class-wc-shipping-table-rate.php:386
 #: includes/class-wc-shipping-table-rate.php:414
 #: includes/class-wc-shipping-table-rate.php:422
 #: includes/class-wc-shipping-table-rate.php:430
-#: includes/functions-admin.php:129
+#: includes/functions-admin.php:130
 msgid "n/a"
 msgstr "n/a"
 
@@ -441,10 +401,7 @@ msgid ""
 "Maximum cost that the customer will pay after all the shipping rules have "
 "been applied. If the shipping cost calculated is bigger than this value, "
 "this cost will be the one shown."
-msgstr ""
-"A maximális költség, amelyet az ügyfél fizet, miután minden szállítási "
-"szabályt alkalmaztunk. Ha a kiszámított szállítási költség nagyobb ennél az "
-"értéknél, akkor ez az összeg kerül megjelenítésre."
+msgstr "A maximális költség, amelyet a vásárló az összes szállítási szabály alkalmazása után fizet. Ha a kiszámított szállítási költség ennél nagyobb, ez a költség jelenik meg."
 
 #: includes/class-wc-shipping-table-rate.php:389
 msgid "Rates"
@@ -478,22 +435,18 @@ msgstr "Számított díjak szállítási osztályonként"
 
 #: includes/class-wc-shipping-table-rate.php:408
 msgid "Handling Fee Per [item]"
-msgstr "Kezelési díj [item] szerint"
+msgstr "Kezelési díj [item]-enként"
 
 #. translators: %1$s is amount example.
 #: includes/class-wc-shipping-table-rate.php:412
-#, php-format
 msgid ""
 "Handling fee. Enter an amount, e.g. %1$s, or a percentage, e.g. 5%%. Leave "
 "blank to disable. Applied based on the \"Calculation Type\" chosen below."
-msgstr ""
-"Kezelési díj. Adjon meg egy összeget, pl. %1$s, vagy egy százalékot, pl. "
-"5%%. Hagyja üresen a letiltáshoz. Az alább választott \"Számítás típusa\" "
-"alapján kerül alkalmazásra."
+msgstr "Kezelési díj. Adjon meg egy összeget, pl. %1$s, vagy egy százalékot, pl. 5%%. Hagyja üresen a díj kikapcsolásához. A díj alkalmazása az alább kiválasztott „Számítás típusa” alapján történik."
 
 #: includes/class-wc-shipping-table-rate.php:417
 msgid "Minimum Cost Per [item]"
-msgstr "Minimális költség [item] szerint"
+msgstr "Minimális költség [item]-enként"
 
 #: includes/class-wc-shipping-table-rate.php:420
 msgid ""
@@ -505,7 +458,7 @@ msgstr ""
 
 #: includes/class-wc-shipping-table-rate.php:425
 msgid "Maximum Cost Per [item]"
-msgstr "Maximális költség [item] szerint"
+msgstr "Maximális költség [item]-enként"
 
 #: includes/class-wc-shipping-table-rate.php:428
 msgid ""
@@ -521,17 +474,13 @@ msgstr "Kedvezmények a Min-Max-ban"
 
 #: includes/class-wc-shipping-table-rate.php:434
 msgid "Use discounted price when comparing Min-Max Price Conditions."
-msgstr ""
-"Használja a kedvezményes árat a Min-Max ár feltételek összehasonlításakor."
+msgstr "Használja a kedvezményes árat a Min-Max árfeltételek összehasonlításakor."
 
 #: includes/class-wc-shipping-table-rate.php:436
 msgid ""
 "When comparing Min-Max Price Condition for rate in Table Rates, set if "
 "discounted or non-discounted price should be used."
-msgstr ""
-"A Táblázatos díjakban szereplő díj Min-Max ár feltételeinek "
-"összehasonlításakor állítsa be, hogy kedvezményes vagy nem kedvezményes árat"
-" kell-e használni."
+msgstr "A táblázatos díjak egyik díjához tartozó Min-Max árfeltétel összehasonlításakor állítsa be, hogy a kedvezményes vagy a kedvezmény nélküli árat kell-e használni."
 
 #: includes/class-wc-shipping-table-rate.php:441
 msgid "Taxes in Min-Max"
@@ -546,10 +495,7 @@ msgstr ""
 msgid ""
 "When comparing Min-Max Price Condition for rate in Table Rates, set if price"
 " with taxes or without taxes should be used."
-msgstr ""
-"A Táblázatos díjakban szereplő díj Min-Max ár feltételeinek "
-"összehasonlításakor állítsa be, hogy adóval növelt vagy adó nélküli árat "
-"kell-e használni."
+msgstr "A táblázatos díjak egyik díjához tartozó Min-Max árfeltétel összehasonlításakor állítsa be, hogy az adóval növelt vagy az adó nélküli árat kell-e használni."
 
 #: includes/class-wc-shipping-table-rate.php:479
 msgid "Table Rates"
@@ -559,61 +505,58 @@ msgstr "Táblázatos díjak"
 msgid "Class Priorities"
 msgstr "Osztályprioritások"
 
-#: includes/class-wc-shipping-table-rate.php:1536
+#. translators: %s: message
+#: includes/class-wc-shipping-table-rate.php:1571
 msgid ""
 "You have overlapping shipping rates defined, which may offer multiple "
 "options for the same criteria at checkout. If this is not your intention "
 "please review and adjust your rates and verify it on the cart/checkout "
 "pages."
-msgstr ""
-"Átfedő szállítási díjakat definiált, amelyek ugyanarra a feltételrendszerre "
-"több opciót is kínálhatnak a pénztárnál. Ha ez nem szándékos, kérjük, "
-"tekintse át és módosítsa a díjait, és ellenőrizze a kosár/pénztár oldalakon."
+msgstr "Átfedő szállítási díjakat állított be, amelyek ugyanazokra a feltételekre több lehetőséget is kínálhatnak a pénztárnál. Ha ez nem szándékos, kérjük, tekintse át és módosítsa a díjait, majd ellenőrizze az eredményt a kosár- és pénztároldalakon."
 
-#: includes/class-wc-table-rate-shipping.php:174
+#: includes/class-wc-table-rate-shipping.php:175
 msgid "View Documentation"
 msgstr "Dokumentáció megtekintése"
 
-#: includes/class-wc-table-rate-shipping.php:174
+#: includes/class-wc-table-rate-shipping.php:175
 msgid "Docs"
 msgstr "Dokumentáció"
 
-#: includes/class-wc-table-rate-shipping.php:183
+#: includes/class-wc-table-rate-shipping.php:184
 msgid "Visit Premium Customer Support Forum"
 msgstr "Látogassa meg a Prémium ügyféltámogatási fórumot"
 
-#: includes/class-wc-table-rate-shipping.php:183
+#: includes/class-wc-table-rate-shipping.php:184
 msgid "Premium Support"
 msgstr "Prémium támogatás"
 
-#: includes/class-wc-table-rate-shipping.php:203
+#: includes/class-wc-table-rate-shipping.php:204
 msgid "Order"
 msgstr "Rendelés"
 
-#: includes/class-wc-table-rate-shipping.php:204
+#: includes/class-wc-table-rate-shipping.php:205
 msgid "Item"
 msgstr "Tétel"
 
-#: includes/class-wc-table-rate-shipping.php:205
-msgid "Line Item"
-msgstr "Sor tétel"
-
 #: includes/class-wc-table-rate-shipping.php:206
-#: includes/functions-admin.php:177
+msgid "Line Item"
+msgstr "Tételsor"
+
+#: includes/class-wc-table-rate-shipping.php:207
+#: includes/functions-admin.php:178
 msgid "Class"
 msgstr "Osztály"
 
-#: includes/class-wc-table-rate-shipping.php:207
+#: includes/class-wc-table-rate-shipping.php:208
 msgid "Delete the selected rates?"
 msgstr "Törli a kijelölt díjakat?"
 
-#: includes/class-wc-table-rate-shipping.php:208
+#: includes/class-wc-table-rate-shipping.php:209
 msgid "Duplicate the selected rates?"
 msgstr "Duplikálja a kijelölt díjakat?"
 
 #. translators: %s: WooCommerce link
-#: includes/class-wc-table-rate-shipping.php:257
-#, php-format
+#: includes/class-wc-table-rate-shipping.php:261
 msgid ""
 "WooCommerce Table Rate Shipping requires %s to be installed and active."
 msgstr ""
@@ -638,11 +581,11 @@ msgstr "Feltétel"
 
 #: includes/functions-admin.php:50
 msgid "Condition vs. destination"
-msgstr "Feltétel vs. célállomás"
+msgstr "Feltétel és célállomás összevetése"
 
 #: includes/functions-admin.php:53
 msgid "Min&ndash;Max"
-msgstr "Min.&ndash;Max."
+msgstr "Min&ndash;Max"
 
 #: includes/functions-admin.php:54
 msgid "Bottom and top range for the selected condition. "
@@ -670,10 +613,7 @@ msgstr "Megszakítás"
 msgid ""
 "Enable this option to disable all rates/this shipping method if this row "
 "matches any item/line/class being quoted."
-msgstr ""
-"Engedélyezze ezt a beállítást, hogy minden díjat/ ezt a szállítási módot "
-"letiltsa, ha ez a sor egyezik bármelyik kalkulált "
-"tétellel/sorral/osztállyal."
+msgstr "A beállítás bekapcsolásával kikapcsolhatja az összes díjat vagy ezt a szállítási módot, ha ez a sor megfelel a díjkalkuláció során figyelembe vett bármely tételnek, tételsornak vagy osztálynak"
 
 #: includes/functions-admin.php:65
 msgid "Cost"
@@ -705,7 +645,7 @@ msgstr "% költség"
 
 #: includes/functions-admin.php:78
 msgid "Percentage of total to charge."
-msgstr "A végösszeg felszámítandó százaléka."
+msgstr "A végösszeg százalékában felszámítandó díj."
 
 #: includes/functions-admin.php:80
 msgid "Label"
@@ -752,47 +692,62 @@ msgid "Weight"
 msgstr "Súly"
 
 #: includes/functions-admin.php:122
+msgid "Volume"
+msgstr "Hangerő"
+
+#: includes/functions-admin.php:123
 msgid "Item count"
 msgstr "Tételek száma"
 
-#: includes/functions-admin.php:124
+#: includes/functions-admin.php:125
 msgid "Item count (same class)"
 msgstr "Tételek száma (azonos osztály)"
 
-#: includes/functions-admin.php:137
+#: includes/functions-admin.php:138
 msgid "Optional abort reason text"
 msgstr "Opcionális megszakítási indok szövege"
 
-#: includes/functions-admin.php:140 includes/functions-admin.php:143
-#: includes/functions-admin.php:146 includes/functions-admin.php:149
-msgid "0"
-msgstr "0"
-
-#: includes/functions-admin.php:170
+#: includes/functions-admin.php:171
 msgid "No shipping classes exist - you can ignore this option :)"
 msgstr ""
 "Nem léteznek szállítási osztályok - ezt az opciót figyelmen kívül hagyhatja "
 ":)"
 
-#: includes/functions-admin.php:178
+#: includes/functions-admin.php:179
 msgid "Priority"
 msgstr "Prioritás"
 
-#: includes/functions-admin.php:186
+#: includes/functions-admin.php:187
 msgid ""
 "When calculating shipping, the cart contents will be <strong>searched for "
 "all shipping classes</strong>. If all product shipping classes are "
 "<strong>identical</strong>, the corresponding class will be "
 "used.<br/><strong>If there are a mix of classes</strong> then the class with"
 " the <strong>lowest number priority</strong> (defined above) will be used."
-msgstr ""
-"Szállítás számításakor a kosár tartalmában <strong>minden szállítási "
-"osztályt megkeresünk</strong>. Ha az összes termék szállítási osztálya "
-"<strong>azonos</strong>, a megfelelő osztály kerül "
-"felhasználásra.<br/><strong>Ha vegyes osztályok vannak</strong>, akkor a "
-"<strong>legalacsonyabb sorszámú prioritással</strong> rendelkező osztály "
-"kerül felhasználásra."
+msgstr "A szállítás kiszámításakor a kosár tartalmát <strong>az összes szállítási osztály szempontjából ellenőrizzük</strong>. Ha az összes termék szállítási osztálya <strong>azonos</strong>, a rendszer a megfelelő osztályt használja.<br/><strong>Ha különböző osztályok keverednek a kosárban</strong>, akkor a <strong>legkisebb prioritási számú</strong> osztályt használja a rendszer."
 
-#: includes/functions-admin.php:194
+#: includes/functions-admin.php:195
 msgid "Default"
 msgstr "Alapértelmezett"
+
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce Table Rate Shipping"
+msgstr "WooCommerce Table Rate Shipping"
+
+#. Plugin URI of the plugin/theme
+msgid "https://woocommerce.com/products/table-rate-shipping/"
+msgstr "https://woocommerce.com/products/table-rate-shipping/"
+
+#. Description of the plugin/theme
+msgid ""
+"Table rate shipping lets you define rates depending on location vs shipping "
+"class, price, weight, or item count."
+msgstr "A táblázatos díjszabás lehetővé teszi, hogy díjakat határozzon meg a hely, a szállítási osztály, az ár, a súly vagy a tételszám alapján."
+
+#. Author of the plugin/theme
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#. Author URI of the plugin/theme
+msgid "https://woocommerce.com/"
+msgstr "https://woocommerce.com/"

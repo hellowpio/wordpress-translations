@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Rocket Integration 5.1.5\n"
+"Project-Id-Version: WP Rocket Integration 5.2\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:49:30+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: WP Rocket Integration\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 5.1.5\n"
+"X-Plugin-Version: 5.2\n"
 
 #. Plugin Name of the plugin
 #: mainwp-rocket-extension.php
@@ -37,112 +37,164 @@ msgid ""
 "WP Rocket Integration combines the power of your MainWP Dashboard with the "
 "popular WP Rocket Plugin. It allows you to mange WP Rocket settings and "
 "quickly Clear and Preload cache on your child sites."
-msgstr ""
-"A WP Rocket integráció egyesíti az Ön MainWP Vezérlőpultjának erejét a "
-"népszerű WP Rocket bővítménnyel. Lehetővé teszi a WP Rocket beállításainak "
-"kezelését, valamint a gyorsítótár gyors törlését és előtöltését az Ön "
-"gyermek webhelyein."
+msgstr "A WP Rocket integráció a MainWP-vezérlőpult és a népszerű WP Rocket bővítmény előnyeit egyesíti. Lehetővé teszi a WP Rocket beállításainak kezelését, valamint a gyorsítótár gyors kiürítését és előtöltését az Ön gyermekwebhelyein."
 
 #. Author of the plugin
 #: mainwp-rocket-extension.php
 msgid "MainWP"
 msgstr "MainWP"
 
+#: class/mainwp-rocket-abilities.class.php:33
+msgid "MainWP WP Rocket"
+msgstr "MainWP WP Rocket"
+
+#: class/mainwp-rocket-abilities.class.php:34
+msgid "Read WP Rocket settings stored on this Dashboard."
+msgstr "A vezérlőpulton tárolt WP Rocket-beállítások olvasása."
+
+#: class/mainwp-rocket-abilities.class.php:90
+msgid "List WP Rocket Sites"
+msgstr "WP Rocket-webhelyek listázása"
+
+#: class/mainwp-rocket-abilities.class.php:90
+msgid "Get WP Rocket Site Settings"
+msgstr "WP Rocket-webhely beállításainak lekérése"
+
+#: class/mainwp-rocket-abilities.class.php:91
+msgid ""
+"List accessible sites with stored WP Rocket rows. Does not sync or contact "
+"child sites."
+msgstr "A tárolt WP Rocket-adatokkal rendelkező, elérhető webhelyek listázása. Nem szinkronizálja és nem lép kapcsolatba a gyermekwebhelyekkel."
+
+#: class/mainwp-rocket-abilities.class.php:91
+msgid ""
+"Read saved WP Rocket feature switches and cache lifespan, selecting a valid "
+"site override or global settings. Does not sync or contact child sites."
+msgstr "A mentett WP Rocket-funkciókapcsolók és a gyorsítótár élettartamának beolvasása, érvényes webhelyspecifikus felülbírálás vagy globális beállítások kiválasztásával. Nem szinkronizálja és nem keresi fel a gyermekwebhelyeket."
+
+#: class/mainwp-rocket-abilities.class.php:161
+msgid "A positive integer site_id is required."
+msgstr "Pozitív egész site_id megadása kötelező."
+
+#: class/mainwp-rocket-abilities.class.php:191
+msgid "Use a positive page and a per_page value from 1 to 100."
+msgstr "Adjon meg pozitív oldalszámot, valamint 1 és 100 közötti per_page értéket."
+
+#: class/mainwp-rocket-abilities.class.php:590
+msgid "You do not have permission to read WP Rocket settings."
+msgstr "Nincs jogosultsága a WP Rocket-beállítások olvasásához."
+
+#: class/mainwp-rocket-abilities.class.php:599
+msgid "Site not found."
+msgstr "A webhely nem található."
+
+#: class/mainwp-rocket-abilities.class.php:608
+msgid "Stored WP Rocket data could not be read."
+msgstr "A WP Rocket tárolt adatait nem sikerült beolvasni."
+
+#: class/mainwp-rocket-based.class.php:563
+msgid "Settings import failed: no file uploaded."
+msgstr "A beállítások importálása sikertelen: nem töltöttek fel fájlt."
+
+#: class/mainwp-rocket-based.class.php:570
+msgid "Settings import failed: incorrect filename."
+msgstr "A beállítások importálása sikertelen: helytelen fájlnév."
+
+#: class/mainwp-rocket-based.class.php:594
+msgid "Settings import failed: incorrect filetype."
+msgstr "A beállítások importálása sikertelen: helytelen fájltípus."
+
+#: class/mainwp-rocket-based.class.php:629
+msgid "Settings import failed: unexpected file content."
+msgstr "A beállítások importálása sikertelen: váratlan fájltartalom."
+
+#: class/mainwp-rocket-based.class.php:683
+msgid "Settings import failed: "
+msgstr "A beállítások importálása sikertelen: "
+
 #: class/mainwp-rocket-plugin.class.php:76
-#: class/mainwp-rocket-plugin.class.php:97
 msgid "Site"
 msgstr "Webhely"
 
-#: class/mainwp-rocket-plugin.class.php:78
-#: class/mainwp-rocket-plugin.class.php:99
-msgid "URL"
-msgstr "URL"
-
-#: class/mainwp-rocket-plugin.class.php:79
-#: class/mainwp-rocket-plugin.class.php:100
+#: class/mainwp-rocket-plugin.class.php:77
 msgid "Version"
 msgstr "Verzió"
 
-#: class/mainwp-rocket-plugin.class.php:80
+#: class/mainwp-rocket-plugin.class.php:78
 msgid "Hidden"
 msgstr "Rejtett"
 
-#: class/mainwp-rocket-plugin.class.php:81
-#: class/mainwp-rocket-plugin.class.php:102
+#: class/mainwp-rocket-plugin.class.php:79
 msgid "Settings"
 msgstr "Beállítások"
 
-#: class/mainwp-rocket-plugin.class.php:90
+#: class/mainwp-rocket-plugin.class.php:88
 msgid "No websites were found with the WP Rocket plugin installed."
 msgstr ""
 "Nem található olyan webhely, amelyen a WP Rocket bővítmény telepítve van."
 
-#: class/mainwp-rocket-plugin.class.php:101
-msgid "Visibility"
-msgstr "Láthatóság"
-
-#: class/mainwp-rocket-plugin.class.php:181
-#: class/mainwp-rocket-plugin.class.php:509
+#: class/mainwp-rocket-plugin.class.php:169
+#: class/mainwp-rocket-plugin.class.php:493
 msgid "Activate Plugin"
 msgstr "Bővítmény aktiválása"
 
-#: class/mainwp-rocket-plugin.class.php:183
+#: class/mainwp-rocket-plugin.class.php:171
 msgid "Clear Cache"
 msgstr "Gyorsítótár törlése"
 
-#: class/mainwp-rocket-plugin.class.php:185
+#: class/mainwp-rocket-plugin.class.php:173
 msgid "Open WP Rocket"
 msgstr "WP Rocket megnyitása"
 
-#: class/mainwp-rocket-plugin.class.php:190
+#: class/mainwp-rocket-plugin.class.php:178
 msgid "Overview"
 msgstr "Áttekintés"
 
-#: class/mainwp-rocket-plugin.class.php:193
+#: class/mainwp-rocket-plugin.class.php:181
 msgid "Edit"
 msgstr "Szerkesztés"
 
-#: class/mainwp-rocket-plugin.class.php:197
+#: class/mainwp-rocket-plugin.class.php:185
 msgid "Unhide Plugin"
 msgstr "Bővítmény megjelenítése"
 
-#: class/mainwp-rocket-plugin.class.php:199
-#: class/mainwp-rocket-plugin.class.php:511
+#: class/mainwp-rocket-plugin.class.php:187
+#: class/mainwp-rocket-plugin.class.php:495
 msgid "Hide Plugin"
 msgstr "Bővítmény elrejtése"
 
-#: class/mainwp-rocket-plugin.class.php:202
-#: class/mainwp-rocket-plugin.class.php:510
+#: class/mainwp-rocket-plugin.class.php:190
+#: class/mainwp-rocket-plugin.class.php:494
 msgid "Update Plugin"
 msgstr "Bővítmény frissítése"
 
-#: class/mainwp-rocket-plugin.class.php:241
+#: class/mainwp-rocket-plugin.class.php:225
 msgid "Yes"
 msgstr "Igen"
 
-#: class/mainwp-rocket-plugin.class.php:241
+#: class/mainwp-rocket-plugin.class.php:225
 msgid "No"
 msgstr "Nem"
 
-#: class/mainwp-rocket-plugin.class.php:244
+#: class/mainwp-rocket-plugin.class.php:228
 msgid "Individual"
 msgstr "Egyéni"
 
-#: class/mainwp-rocket-plugin.class.php:244
+#: class/mainwp-rocket-plugin.class.php:228
 msgid "General"
 msgstr "Általános"
 
-#: class/mainwp-rocket-plugin.class.php:508
+#: class/mainwp-rocket-plugin.class.php:492
 msgid "Bulk Actions"
 msgstr "Csoportos műveletek"
 
-#: class/mainwp-rocket-plugin.class.php:512
+#: class/mainwp-rocket-plugin.class.php:496
 msgid "Unhide plugin"
 msgstr "Bővítmény megjelenítése"
 
-#: class/mainwp-rocket-plugin.class.php:514
+#: class/mainwp-rocket-plugin.class.php:498
 msgid "Apply"
-msgstr "Alkalmaz"
+msgstr "Alkalmazás"
 
 #: class/mainwp-rocket.class.php:289
 msgid "Invalid Site ID. Site does not exist."
@@ -185,7 +237,7 @@ msgstr "Haladó szabályok"
 msgid "Database"
 msgstr "Adatbázis"
 
-#: class/mainwp-rocket.class.php:435 class/mainwp-rocket.class.php:1107
+#: class/mainwp-rocket.class.php:435 class/mainwp-rocket.class.php:1110
 msgid "CDN"
 msgstr "CDN"
 
@@ -193,11 +245,11 @@ msgstr "CDN"
 msgid "Heartbeat"
 msgstr "Heartbeat"
 
-#: class/mainwp-rocket.class.php:443 class/mainwp-rocket.class.php:1249
+#: class/mainwp-rocket.class.php:443 class/mainwp-rocket.class.php:1252
 msgid "Add-ons"
 msgstr "Kiegészítők"
 
-#: class/mainwp-rocket.class.php:447 class/mainwp-rocket.class.php:1358
+#: class/mainwp-rocket.class.php:447 class/mainwp-rocket.class.php:1361
 msgid "Tools"
 msgstr "Eszközök"
 
@@ -221,7 +273,7 @@ msgstr ""
 msgid "Remove all cached files"
 msgstr "Minden gyorsítótárazott fájl eltávolítása"
 
-#: class/mainwp-rocket.class.php:479 class/mainwp-rocket.class.php:2310
+#: class/mainwp-rocket.class.php:479 class/mainwp-rocket.class.php:2335
 msgid "Clear and Preload Cache"
 msgstr "Gyorsítótár törlése és előtöltése"
 
@@ -241,7 +293,7 @@ msgstr "Elsőbbségi elemek törlése"
 msgid "Clear Priority Elements"
 msgstr "Elsőbbségi elemek törlése"
 
-#: class/mainwp-rocket.class.php:515 class/mainwp-rocket.class.php:714
+#: class/mainwp-rocket.class.php:515 class/mainwp-rocket.class.php:717
 msgid "Excluded JavaScript Files"
 msgstr "Kizárt JavaScript-fájlok"
 
@@ -251,7 +303,7 @@ msgstr "Fájloptimalizálás beállításai"
 
 #: class/mainwp-rocket.class.php:523
 msgid "Minify CSS files"
-msgstr "CSS fájlok minifikálása"
+msgstr "CSS-fájlok minifikálása"
 
 #: class/mainwp-rocket.class.php:526
 msgid "Minify CSS removes whitespace and comments to reduce the file size."
@@ -261,241 +313,198 @@ msgstr ""
 
 #: class/mainwp-rocket.class.php:531
 msgid "Excluded CSS files"
-msgstr "Kizárt CSS fájlok"
+msgstr "Kizárt CSS-fájlok"
 
 #: class/mainwp-rocket.class.php:534
 msgid ""
 "Specify URLs of CSS files to be excluded from minification and "
 "concatenation."
-msgstr ""
-"Adja meg azoknak a CSS fájloknak az URL-jeit, amelyeket ki kell zárni a "
-"minifikálásból és az összefűzésből."
+msgstr "Adja meg azoknak a CSS-fájloknak az URL-jeit, amelyeket ki kell zárni a minifikálásból és az összefűzésből."
 
-#: class/mainwp-rocket.class.php:541
+#: class/mainwp-rocket.class.php:543
 msgid "Optimize CSS delivery"
 msgstr "CSS betöltésének optimalizálása"
 
-#: class/mainwp-rocket.class.php:544
+#: class/mainwp-rocket.class.php:546
 msgid ""
 "Optimize CSS delivery eliminates render-blocking CSS on your website for "
 "faster perceived load time."
-msgstr ""
-"A CSS betöltésének optimalizálása megszünteti a megjelenítést blokkoló CSS-t"
-" a webhelyén, így gyorsabbnak érződik a betöltés."
+msgstr "A CSS betöltésének optimalizálása megszünteti a webhelyén a megjelenítést blokkoló CSS-t, így a betöltési idő rövidebbnek tűnik."
 
-#: class/mainwp-rocket.class.php:551
+#: class/mainwp-rocket.class.php:553
 msgid "REMOVE UNUSED CSS"
 msgstr "NEM HASZNÁLT CSS ELTÁVOLÍTÁSA"
 
-#: class/mainwp-rocket.class.php:552
+#: class/mainwp-rocket.class.php:554
 msgid "LOAD CSS ASYNCHRONOUSLY"
 msgstr "CSS ASZINKRON BETÖLTÉSE"
 
-#: class/mainwp-rocket.class.php:556
+#: class/mainwp-rocket.class.php:559
 msgid ""
 "Removes unused CSS per page and helps to reduce page size and HTTP requests."
 " Recommended for best performance. Test thoroughly!"
-msgstr ""
-"Oldalanként eltávolítja a nem használt CSS-t, és segít csökkenteni az oldal "
-"méretét és a HTTP kérések számát. A legjobb teljesítmény érdekében ajánlott."
-" Tesztelje alaposan!"
+msgstr "Oldalanként eltávolítja a nem használt CSS-t, és segít csökkenteni az oldal méretét és a HTTP-kérések számát. A legjobb teljesítmény érdekében ajánlott. Tesztelje alaposan!"
 
-#: class/mainwp-rocket.class.php:558
+#: class/mainwp-rocket.class.php:561
 msgid ""
 "Specify CSS filenames, IDs or classes that should not be removed (one per "
 "line)."
-msgstr ""
-"Adja meg azokat a CSS fájlneveket, ID-ket vagy osztályokat, amelyeket nem "
-"szabad eltávolítani (soronként egyet)."
+msgstr "Adja meg azokat a CSS-fájlneveket, ID-ket vagy osztályokat, amelyeket nem szabad eltávolítani (soronként egyet)."
 
-#: class/mainwp-rocket.class.php:565
+#: class/mainwp-rocket.class.php:568
 msgid "Fallback critical CSS"
 msgstr "Tartalék kritikus CSS"
 
-#: class/mainwp-rocket.class.php:568
+#: class/mainwp-rocket.class.php:571
 msgid "Provides a fallback if auto-generated critical path CSS is incomplete."
-msgstr ""
-"Tartalékot biztosít, ha az automatikusan generált kritikus útvonal CSS "
-"hiányos."
-
-#: class/mainwp-rocket.class.php:578
-msgid "Minify JavaScript files"
-msgstr "JavaScript fájlok minifikálása"
+msgstr "Tartalékot biztosít, ha az automatikusan generált, kritikus útvonalhoz tartozó CSS hiányos."
 
 #: class/mainwp-rocket.class.php:581
+msgid "Minify JavaScript files"
+msgstr "JavaScript-fájlok minifikálása"
+
+#: class/mainwp-rocket.class.php:584
 msgid ""
 "Minify JavaScript removes whitespace and comments to reduce the file size."
-msgstr ""
-"A JavaScript minifikálása eltávolítja a fölösleges szóközöket és "
-"megjegyzéseket, csökkentve a fájlméretet."
-
-#: class/mainwp-rocket.class.php:588
-msgid "Combine JavaScript files (Enable Minify JavaScript files to select)"
-msgstr ""
-"JavaScript fájlok összefűzése (A kiválasztáshoz engedélyezze a JavaScript "
-"fájlok minifikálását)"
+msgstr "A JavaScript-fájlok minifikálása eltávolítja a szóközöket és a megjegyzéseket, így csökkenti a fájlméretet."
 
 #: class/mainwp-rocket.class.php:591
+msgid "Combine JavaScript files (Enable Minify JavaScript files to select)"
+msgstr "JavaScript-fájlok összefűzése (a kiválasztáshoz engedélyezze a JavaScript-fájlok minifikálását)"
+
+#: class/mainwp-rocket.class.php:594
 msgid ""
 "Combine Javascript files combines your site's JS info fewer files, reducing "
 "HTTP requests. Not recommended if your site uses HTTP/2."
-msgstr ""
-"A JavaScript fájlok összefűzése a webhely JS-ét kevesebb fájlba egyesíti, "
-"csökkentve a HTTP kérések számát. Nem ajánlott, ha a webhelye HTTP/2-t "
-"használ."
-
-#: class/mainwp-rocket.class.php:593
-msgid "Excluded Inline JavaScript"
-msgstr "Kizárt inline JavaScript"
+msgstr "A JavaScript-fájlok összefűzése a webhely JavaScript-kódját kevesebb fájlba egyesíti, csökkentve a HTTP-kérések számát. Nem ajánlott, ha a webhelye HTTP/2-t használ."
 
 #: class/mainwp-rocket.class.php:596
+msgid "Excluded Inline JavaScript"
+msgstr "Kizárandó beágyazott JavaScript"
+
+#: class/mainwp-rocket.class.php:599
 msgid ""
 "Specify patterns of inline JavaScript to be excluded from concatenation (one"
 " per line)."
-msgstr ""
-"Adja meg az összefűzésből kizárandó inline JavaScript mintákat (soronként "
-"egyet)."
+msgstr "Adja meg az összefűzésből kizárandó beágyazott JavaScript-kód mintáit (soronként egyet)."
 
-#: class/mainwp-rocket.class.php:601
+#: class/mainwp-rocket.class.php:604
 msgid ""
 "Specify URLs of JavaScript files to be excluded from minification and "
 "concatenation."
-msgstr ""
-"Adja meg azoknak a JavaScript fájloknak az URL-jeit, amelyeket ki kell zárni"
-" a minifikálásból és az összefűzésből."
-
-#: class/mainwp-rocket.class.php:608
-msgid "Load JavaScript deferred"
-msgstr "JavaScript halasztott betöltése"
+msgstr "Adja meg azoknak a JavaScript-fájloknak az URL-jeit, amelyeket ki kell zárni a minifikálásból és az összefűzésből."
 
 #: class/mainwp-rocket.class.php:611
+msgid "Load JavaScript deferred"
+msgstr "JavaScript késleltetett betöltése"
+
+#: class/mainwp-rocket.class.php:614
 msgid ""
 "Load JavaScript deferred eliminates render-blocking JS on your site and can "
 "improve load time."
-msgstr ""
-"A JavaScript halasztott betöltése megszünteti a megjelenítést blokkoló JS-t "
-"a webhelyén, és javíthatja a betöltési időt."
+msgstr "A JavaScript késleltetett betöltése megszünteti a webhelyén a megjelenítést akadályozó JavaScript-kódot, és javíthatja a betöltési időt."
 
-#: class/mainwp-rocket.class.php:618
+#: class/mainwp-rocket.class.php:621
 msgid ""
 "Specify URLs or keywords of JavaScript files to be excluded from defer (one "
 "per line). More info."
-msgstr ""
-"Adja meg azoknak a JavaScript fájloknak az URL-jeit vagy kulcsszavait, "
-"amelyeket ki kell zárni a halasztásból (soronként egyet). További "
-"információ."
-
-#: class/mainwp-rocket.class.php:626
-msgid "Delay JavaScript execution"
-msgstr "JavaScript végrehajtásának késleltetése"
+msgstr "Adja meg azoknak a JavaScript-fájloknak az URL-jeit vagy kulcsszavait, amelyeket ki kell zárni a késleltetésből (soronként egyet). További információ."
 
 #: class/mainwp-rocket.class.php:629
+msgid "Delay JavaScript execution"
+msgstr "JavaScript-végrehajtás késleltetése"
+
+#: class/mainwp-rocket.class.php:632
 msgid ""
 "Improves performance by delaying the loading of JavaScript files until user "
 "interaction (e.g. scroll, click)."
-msgstr ""
-"Javítja a teljesítményt azzal, hogy a JavaScript fájlok betöltését a "
-"felhasználói interakcióig (pl. görgetés, kattintás) késlelteti."
+msgstr "Javítja a teljesítményt azzal, hogy a JavaScript-fájlok betöltését a felhasználói interakcióig (pl. görgetés, kattintás) késlelteti."
 
-#: class/mainwp-rocket.class.php:667
+#: class/mainwp-rocket.class.php:670
 msgid "One-click exclusions"
 msgstr "Egykattintásos kizárások"
 
-#: class/mainwp-rocket.class.php:693
+#: class/mainwp-rocket.class.php:696
 msgid "Plugins"
 msgstr "Bővítmények"
 
-#: class/mainwp-rocket.class.php:693
+#: class/mainwp-rocket.class.php:696
 msgid "Themes"
 msgstr "Sablonok"
 
-#: class/mainwp-rocket.class.php:710
+#: class/mainwp-rocket.class.php:713
 msgid ""
 "When using the Delay JavaScript Execution, you might experience delay "
 "loading elements located in the viewport that need to appear immediately - "
 "e.g. slider, header, menu."
-msgstr ""
-"A JavaScript végrehajtásának késleltetése használatakor előfordulhat, hogy "
-"késve töltődnek be a nézetablakban lévő, azonnal megjelenítendő elemek – pl."
-" slider, fejléc, menü."
+msgstr "A JavaScript-végrehajtás késleltetésekor előfordulhat, hogy késve töltődnek be a nézetablakban lévő, azonnal megjelenítendő elemek, például a diavetítés, a fejléc vagy a menü."
 
-#: class/mainwp-rocket.class.php:711
+#: class/mainwp-rocket.class.php:714
 msgid ""
 "If you need instant visibility, click below on files that should NOT be "
 "delayed. This selection will help users interact with the elements straight "
 "away."
-msgstr ""
-"Ha azonnali láthatóságra van szüksége, kattintson alább azokra a fájlokra, "
-"amelyeket NEM szabad késleltetni. Ez a kiválasztás segít, hogy a "
-"felhasználók azonnal interakcióba léphessenek az elemekkel."
+msgstr "Ha azt szeretné, hogy az elemek azonnal láthatók legyenek, kattintson alább azokra a fájlokra, amelyek betöltését NEM szabad késleltetni. Ez a kijelölés segít abban, hogy a felhasználók azonnal használhassák az elemeket."
 
-#: class/mainwp-rocket.class.php:717
+#: class/mainwp-rocket.class.php:720
 msgid ""
 "Specify URLs or keywords that can identify inline or JavaScript files to be "
 "excluded from delaying execution (one per line)."
-msgstr ""
-"Adja meg azokat az URL-eket vagy kulcsszavakat, amelyek azonosítják a "
-"késleltetésből kizárandó inline vagy JavaScript fájlokat (soronként egyet)."
+msgstr "Adja meg azokat az URL-eket vagy kulcsszavakat, amelyek alapján azonosíthatók a végrehajtás késleltetéséből kizárandó beágyazott JavaScript-kódok vagy JavaScript-fájlok (soronként egyet)."
 
-#: class/mainwp-rocket.class.php:718
+#: class/mainwp-rocket.class.php:721
 msgid ""
 "If you have problems after activating this option, copy and paste the "
 "default exclusions to quickly resolve issues:"
-msgstr ""
-"Ha problémákat tapasztal ezen opció aktiválása után, másolja és illessze be "
-"az alapértelmezett kizárásokat a gyors problémamegoldáshoz:"
-
-#: class/mainwp-rocket.class.php:723
-msgid "Safe Mode for Delay JavaScript Execution"
-msgstr "Biztonságos mód a JavaScript végrehajtásának késleltetéséhez"
+msgstr "Ha problémákat tapasztal ezen opció bekapcsolása után, másolja ki, majd illessze be az alapértelmezett kizárásokat a problémák gyors elhárításához:"
 
 #: class/mainwp-rocket.class.php:726
-msgid "The Safe Mode mode prevents all internal scripts from being delayed."
-msgstr ""
-"A Biztonságos mód megakadályozza, hogy minden belső szkript késleltetve "
-"legyen."
+msgid "Safe Mode for Delay JavaScript Execution"
+msgstr "Biztonságos mód a JavaScript-végrehajtás késleltetéséhez"
 
-#: class/mainwp-rocket.class.php:803
+#: class/mainwp-rocket.class.php:729
+msgid "The Safe Mode mode prevents all internal scripts from being delayed."
+msgstr "A Biztonságos mód megakadályozza az összes belső szkript késleltetését."
+
+#: class/mainwp-rocket.class.php:806
 msgid "Media Settings"
 msgstr "Médiabeállítások"
 
-#: class/mainwp-rocket.class.php:805
+#: class/mainwp-rocket.class.php:808
 msgid "LazyLoad"
 msgstr "LazyLoad"
 
-#: class/mainwp-rocket.class.php:808
+#: class/mainwp-rocket.class.php:811
 msgid "Enable for images"
-msgstr "Engedélyezés képekhez"
+msgstr "Bekapcsolás képek esetén"
 
-#: class/mainwp-rocket.class.php:816
+#: class/mainwp-rocket.class.php:819
 msgid "Enable for CSS background images"
-msgstr "Engedélyezés CSS háttérképekhez"
+msgstr "Bekapcsolás CSS-háttérképek esetén"
 
-#: class/mainwp-rocket.class.php:825
+#: class/mainwp-rocket.class.php:828
 msgid "Enable for iframes and videos"
-msgstr "Engedélyezés iframe-ekhez és videókhoz"
+msgstr "Bekapcsolás iframe-ek és videók esetén"
 
-#: class/mainwp-rocket.class.php:833
+#: class/mainwp-rocket.class.php:836
 msgid "Replace YouTube iframe with preview image"
-msgstr "YouTube iframe cseréje előnézeti képpel"
+msgstr "YouTube-iframe cseréje előnézeti képpel"
 
-#: class/mainwp-rocket.class.php:838
+#: class/mainwp-rocket.class.php:841
 msgid "Excluded images or iframes"
 msgstr "Kizárt képek vagy iframe-ek"
 
-#: class/mainwp-rocket.class.php:841
+#: class/mainwp-rocket.class.php:844
 msgid ""
 "Specify keywords (e.g. image filename, CSS class, domain) from the image or "
 "iframe code to be excluded (one per line)."
-msgstr ""
-"Adja meg a képből vagy az iframe kódból azokat a kulcsszavakat (pl. kép "
-"fájlneve, CSS osztály, domain), amelyeket ki kell zárni (soronként egyet)."
+msgstr "Adja meg a képek vagy iframe-ek kódjában szereplő, kizárandó kulcsszavakat (pl. képfájlnév, CSS-osztály, domain; soronként egyet)."
 
-#: class/mainwp-rocket.class.php:846
+#: class/mainwp-rocket.class.php:849
 msgid "Image dimensions"
 msgstr "Képméretek"
 
-#: class/mainwp-rocket.class.php:849
+#: class/mainwp-rocket.class.php:852
 msgid ""
 "Add missing width and height attributes to images. Helps prevent layout "
 "shifts and improve the reading experience for your visitors."
@@ -504,54 +513,48 @@ msgstr ""
 "megelőzni az elrendezés elmozdulását, és javítja a látogatók olvasási "
 "élményét."
 
-#: class/mainwp-rocket.class.php:854
+#: class/mainwp-rocket.class.php:857
 msgid "Self-host Google Fonts"
 msgstr "Google Fonts saját tárhelyről"
 
-#: class/mainwp-rocket.class.php:857
+#: class/mainwp-rocket.class.php:860
 msgid ""
 "Download and serve fonts directly from your server. Reduces connections to "
 "external servers and minimizes font shifts."
-msgstr ""
-"Töltse le és szolgálja ki a betűkészleteket közvetlenül a saját szerveréről."
-" Csökkenti a külső szerverekhez való kapcsolódásokat, és minimalizálja a "
-"betűkészlet-eltolódásokat."
+msgstr "Töltse le és szolgálja ki a betűkészleteket közvetlenül a saját szerveréről. Ezzel csökken a külső szerverekhez való kapcsolódások száma, és mérséklődnek a betűkészletek okozta elrendezéseltolódások."
 
-#: class/mainwp-rocket.class.php:877
+#: class/mainwp-rocket.class.php:880
 msgid "Preload Settings"
 msgstr "Előtöltési beállítások"
 
-#: class/mainwp-rocket.class.php:879
+#: class/mainwp-rocket.class.php:882
 msgid "Activate preloading"
 msgstr "Előtöltés aktiválása"
 
-#: class/mainwp-rocket.class.php:885
+#: class/mainwp-rocket.class.php:888
 msgid "Exclude URLs"
 msgstr "URL-ek kizárása"
 
-#: class/mainwp-rocket.class.php:890
+#: class/mainwp-rocket.class.php:893
 msgid "Specify URLs to be excluded from the preload feature (one per line)."
 msgstr ""
 "Adja meg az előtöltés funkcióból kizárandó URL-eket (soronként egyet)."
 
-#: class/mainwp-rocket.class.php:895
-msgid "Enable link preloading"
-msgstr "Hivatkozás-előtöltés engedélyezése"
-
 #: class/mainwp-rocket.class.php:898
+msgid "Enable link preloading"
+msgstr "Linkek előtöltésének bekapcsolása"
+
+#: class/mainwp-rocket.class.php:901
 msgid ""
 "Link preloading improves the perceived load time by downloading a page when "
 "a user hovers over the link."
-msgstr ""
-"A hivatkozás előtöltése javítja az észlelt betöltési időt azzal, hogy "
-"letölti az oldalt, amikor a felhasználó a hivatkozás fölé viszi az "
-"egérmutatót."
+msgstr "A linkek előtöltése javítja az érzékelt betöltési időt, mert az oldal letöltése akkor kezdődik, amikor a felhasználó a linkre mutat."
 
-#: class/mainwp-rocket.class.php:903
+#: class/mainwp-rocket.class.php:906
 msgid "Prefetch DNS requests"
 msgstr "DNS-kérések előzetes lekérése"
 
-#: class/mainwp-rocket.class.php:908
+#: class/mainwp-rocket.class.php:911
 msgid ""
 "URLs to prefetch Specify external hosts to be prefetched (no http:, one per "
 "line)"
@@ -559,79 +562,72 @@ msgstr ""
 "Előzetesen lekérendő URL-ek Adja meg az előzetesen lekérendő külső hosztokat"
 " (http: nélkül, soronként egyet)"
 
-#: class/mainwp-rocket.class.php:913
+#: class/mainwp-rocket.class.php:916
 msgid "Fonts to preload"
 msgstr "Előtöltendő betűkészletek"
 
-#: class/mainwp-rocket.class.php:918
+#: class/mainwp-rocket.class.php:921
 msgid ""
 "Specify urls of the font files to be preloaded (one per line). Fonts must be"
 " hosted on your own domain, or the domain you have specified on the CDN tab."
-msgstr ""
-"Adja meg az előtöltendő betűkészlet-fájlok URL-jeit (soronként egyet). A "
-"betűkészleteknek a saját domain alatt, vagy a CDN fülön megadott domain "
-"alatt kell elérhetőnek lenniük."
+msgstr "Adja meg az előtöltendő betűkészlet-fájlok URL-jeit (soronként egyet). A betűkészleteket a saját domainjén vagy a CDN fülön megadott domainen kell tárolni."
 
-#: class/mainwp-rocket.class.php:934
+#: class/mainwp-rocket.class.php:937
 msgid "Advanced Rules Settings"
 msgstr "Speciális szabályok beállításai"
 
-#: class/mainwp-rocket.class.php:936
+#: class/mainwp-rocket.class.php:939
 msgid "Cache lifespan"
 msgstr "Gyorsítótár élettartama"
 
-#: class/mainwp-rocket.class.php:942
+#: class/mainwp-rocket.class.php:945
 msgid "hour(s)"
 msgstr "óra"
 
-#: class/mainwp-rocket.class.php:943
+#: class/mainwp-rocket.class.php:946
 msgid "day(s)"
 msgstr "nap"
 
-#: class/mainwp-rocket.class.php:946
+#: class/mainwp-rocket.class.php:949
 msgid "Specify time after which the global cache is cleared (0 = unlimited)"
 msgstr ""
 "Adja meg az időt, amely után a globális gyorsítótár törlődik (0 = korlátlan)"
 
-#: class/mainwp-rocket.class.php:950
-msgid "Never cache URL(s)"
-msgstr "Soha ne gyorsítótárazza az URL-eket"
-
 #: class/mainwp-rocket.class.php:953
+msgid "Never cache URL(s)"
+msgstr "Gyorsítótárazásból kizárandó URL-ek"
+
+#: class/mainwp-rocket.class.php:956
 msgid ""
 "Specify URLs of pages or posts that should never get cached (one per line)"
 msgstr ""
 "Adja meg azoknak az oldalaknak vagy bejegyzéseknek az URL-jeit, amelyeket "
 "soha nem szabad gyorsítótárazni (soronként egyet)"
 
-#: class/mainwp-rocket.class.php:957
-msgid "Never cache cookies"
-msgstr "Soha ne gyorsítótárazza a sütiket"
-
 #: class/mainwp-rocket.class.php:960
+msgid "Never cache cookies"
+msgstr "Gyorsítótárazásból kizárandó cookie-k"
+
+#: class/mainwp-rocket.class.php:963
 msgid ""
 "Specify the IDs of cookies that, when set in the visitor’s browser, should "
 "prevent a page from getting cached (one per line)"
-msgstr ""
-"Adja meg azoknak a sütiknek az azonosítóit, amelyek a látogató böngészőjében"
-" beállítva megakadályozzák az oldal gyorsítótárazását (soronként egyet)"
-
-#: class/mainwp-rocket.class.php:964
-msgid "Never cache user agent(s)"
-msgstr "Soha ne gyorsítótárazza a felhasználói ügynököket"
+msgstr "Adja meg azoknak a cookie-knak az ID-jeit, amelyek beállítása a látogató böngészőjében megakadályozza az oldal gyorsítótárazását (soronként egyet)"
 
 #: class/mainwp-rocket.class.php:967
+msgid "Never cache user agent(s)"
+msgstr "Gyorsítótárazás mellőzése felhasználói ügynökök esetén"
+
+#: class/mainwp-rocket.class.php:970
 msgid ""
 "Specify user agent strings that should never see cached pages (one per line)"
-msgstr ""
-"Adja meg azokat a felhasználói ügynök karakterláncokat, amelyek soha nem "
-"láthatnak gyorsítótárazott oldalakat (soronként egyet)"
+msgstr "Adja meg azoknak a felhasználói ügynököknek a karakterláncait, amelyeknek soha nem szabad gyorsítótárazott oldalakat megjeleníteniük (soronként egyet)"
 
-#: class/mainwp-rocket.class.php:971
+#: class/mainwp-rocket.class.php:974
 msgid "Always purge URL(s)"
 msgstr "Mindig ürítendő URL-ek"
 
-#: class/mainwp-rocket.class.php:974
+#: class/mainwp-rocket.class.php:977
 msgid ""
 "Specify URLs you always want purged from cache whenever you update any post "
 "or page (one per line)"
@@ -639,160 +635,160 @@ msgstr ""
 "Adja meg azokat az URL-eket, amelyeket bármely bejegyzés vagy oldal "
 "frissítésekor mindig törölni szeretne a gyorsítótárból (soronként egyet)"
 
-#: class/mainwp-rocket.class.php:978
+#: class/mainwp-rocket.class.php:981
 msgid "Cache query string(s)"
 msgstr "Lekérdezési karakterláncok gyorsítótárazása"
 
-#: class/mainwp-rocket.class.php:981
+#: class/mainwp-rocket.class.php:984
 msgid "Specify query strings for caching (one per line)"
 msgstr ""
 "Adja meg a gyorsítótárazandó lekérdezési karakterláncokat (soronként egyet)"
 
-#: class/mainwp-rocket.class.php:998
+#: class/mainwp-rocket.class.php:1001
 msgid "Database Settings"
 msgstr "Adatbázis-beállítások"
 
-#: class/mainwp-rocket.class.php:1000
+#: class/mainwp-rocket.class.php:1003
 msgid "Posts cleanup"
 msgstr "Bejegyzések tisztítása"
 
-#: class/mainwp-rocket.class.php:1003
+#: class/mainwp-rocket.class.php:1006
 msgid "Revisions"
 msgstr "Változatok"
 
-#: class/mainwp-rocket.class.php:1005
+#: class/mainwp-rocket.class.php:1008
 msgid "revisions in your database."
 msgstr "változat az adatbázisában."
 
-#: class/mainwp-rocket.class.php:1014
+#: class/mainwp-rocket.class.php:1017
 msgid "Auto drafts"
-msgstr "Automatikus piszkozatok"
+msgstr "Automatikus vázlatok"
 
-#: class/mainwp-rocket.class.php:1016
+#: class/mainwp-rocket.class.php:1019
 msgid "drafts in your database."
-msgstr "piszkozat az adatbázisában."
+msgstr "vázlat az adatbázisában."
 
-#: class/mainwp-rocket.class.php:1024
+#: class/mainwp-rocket.class.php:1027
 msgid "Trashed posts"
 msgstr "Kukába helyezett bejegyzések"
 
-#: class/mainwp-rocket.class.php:1026
+#: class/mainwp-rocket.class.php:1029
 msgid "trashed posts in your database."
 msgstr "kukába helyezett bejegyzés az adatbázisában."
 
-#: class/mainwp-rocket.class.php:1031
+#: class/mainwp-rocket.class.php:1034
 msgid "Comments cleanup"
 msgstr "Hozzászólások tisztítása"
 
-#: class/mainwp-rocket.class.php:1034
+#: class/mainwp-rocket.class.php:1037
 msgid "Spam comments"
 msgstr "Spam hozzászólások"
 
-#: class/mainwp-rocket.class.php:1036
+#: class/mainwp-rocket.class.php:1039
 msgid "spam comments in your database."
 msgstr "spam hozzászólás az adatbázisában."
 
-#: class/mainwp-rocket.class.php:1044
+#: class/mainwp-rocket.class.php:1047
 msgid "Trashed comments"
 msgstr "Kukába helyezett hozzászólások"
 
-#: class/mainwp-rocket.class.php:1046
+#: class/mainwp-rocket.class.php:1049
 msgid "trashed comments in your database."
 msgstr "kukába helyezett hozzászólás az adatbázisában."
 
-#: class/mainwp-rocket.class.php:1051
+#: class/mainwp-rocket.class.php:1054
 msgid "Transients cleanup"
 msgstr "Tranziens adatok tisztítása"
 
-#: class/mainwp-rocket.class.php:1054
+#: class/mainwp-rocket.class.php:1057
 msgid "All transients"
 msgstr "Összes tranziens"
 
-#: class/mainwp-rocket.class.php:1056
+#: class/mainwp-rocket.class.php:1059
 msgid "transients in your database."
 msgstr "tranziens az adatbázisában."
 
-#: class/mainwp-rocket.class.php:1061
+#: class/mainwp-rocket.class.php:1064
 msgid "Database cleanup"
 msgstr "Adatbázis tisztítása"
 
-#: class/mainwp-rocket.class.php:1064
+#: class/mainwp-rocket.class.php:1067
 msgid "Optimize tables"
 msgstr "Táblák optimalizálása"
 
-#: class/mainwp-rocket.class.php:1066
+#: class/mainwp-rocket.class.php:1069
 msgid "tables to optimize in your database."
 msgstr "optimalizálandó tábla az adatbázisában."
 
-#: class/mainwp-rocket.class.php:1072
+#: class/mainwp-rocket.class.php:1075
 msgid "Automatic cleanup"
 msgstr "Automatikus tisztítás"
 
-#: class/mainwp-rocket.class.php:1075 class/mainwp-rocket.class.php:1079
+#: class/mainwp-rocket.class.php:1078 class/mainwp-rocket.class.php:1082
 msgid "Schedule automatic cleanup"
 msgstr "Automatikus tisztítás ütemezése"
 
-#: class/mainwp-rocket.class.php:1082
+#: class/mainwp-rocket.class.php:1085
 msgid "Daily"
 msgstr "Napi"
 
-#: class/mainwp-rocket.class.php:1083
+#: class/mainwp-rocket.class.php:1086
 msgid "Weekly"
 msgstr "Heti"
 
-#: class/mainwp-rocket.class.php:1084
+#: class/mainwp-rocket.class.php:1087
 msgid "Monthly"
 msgstr "Havi"
 
-#: class/mainwp-rocket.class.php:1086
+#: class/mainwp-rocket.class.php:1089
 msgid "frequency"
 msgstr "gyakoriság"
 
-#: class/mainwp-rocket.class.php:1091
+#: class/mainwp-rocket.class.php:1094
 msgid "Save Changes and Optimize"
 msgstr "Módosítások mentése és optimalizálás"
 
-#: class/mainwp-rocket.class.php:1105
+#: class/mainwp-rocket.class.php:1108
 msgid "CDN Settings"
 msgstr "CDN-beállítások"
 
-#: class/mainwp-rocket.class.php:1110
+#: class/mainwp-rocket.class.php:1113
 msgid "Enable content delivery network"
 msgstr "Tartalomszolgáltató hálózat engedélyezése"
 
-#: class/mainwp-rocket.class.php:1115
+#: class/mainwp-rocket.class.php:1118
 msgid "CDN CNAME"
 msgstr "CDN CNAME"
 
-#: class/mainwp-rocket.class.php:1122 class/mainwp-rocket.class.php:1137
+#: class/mainwp-rocket.class.php:1125 class/mainwp-rocket.class.php:1140
 msgid " reserved for "
 msgstr " fenntartva "
 
-#: class/mainwp-rocket.class.php:1124 class/mainwp-rocket.class.php:1139
+#: class/mainwp-rocket.class.php:1127 class/mainwp-rocket.class.php:1142
 msgid "All files"
 msgstr "Összes fájl"
 
-#: class/mainwp-rocket.class.php:1125 class/mainwp-rocket.class.php:1140
+#: class/mainwp-rocket.class.php:1128 class/mainwp-rocket.class.php:1143
 msgid "Images"
 msgstr "Képek"
 
-#: class/mainwp-rocket.class.php:1126 class/mainwp-rocket.class.php:1141
+#: class/mainwp-rocket.class.php:1129 class/mainwp-rocket.class.php:1144
 msgid "CSS & JavaScript"
 msgstr "CSS és JavaScript"
 
-#: class/mainwp-rocket.class.php:1127 class/mainwp-rocket.class.php:1142
+#: class/mainwp-rocket.class.php:1130 class/mainwp-rocket.class.php:1145
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: class/mainwp-rocket.class.php:1128 class/mainwp-rocket.class.php:1143
+#: class/mainwp-rocket.class.php:1131 class/mainwp-rocket.class.php:1146
 msgid "CSS"
 msgstr "CSS"
 
-#: class/mainwp-rocket.class.php:1167
+#: class/mainwp-rocket.class.php:1170
 msgid "Exclude files from CDN"
 msgstr "Fájlok kizárása a CDN-ből"
 
-#: class/mainwp-rocket.class.php:1170
+#: class/mainwp-rocket.class.php:1173
 msgid ""
 "Specify URL(s) of files that should not get served via CDN. The domain part "
 "of the URL will be stripped automatically. Use (.*) wildcards to exclude all"
@@ -803,137 +799,122 @@ msgstr ""
 "a (.*) helyettesítő karaktereket, hogy kizárja egy meghatározott útvonalon "
 "található adott fájltípus összes fájlját. "
 
-#: class/mainwp-rocket.class.php:1187
+#: class/mainwp-rocket.class.php:1190
 msgid "Do not limit"
-msgstr "Ne korlátozza"
+msgstr "Korlátozás nélkül"
 
-#: class/mainwp-rocket.class.php:1188
+#: class/mainwp-rocket.class.php:1191
 msgid "Reduce activity"
 msgstr "Tevékenység csökkentése"
 
-#: class/mainwp-rocket.class.php:1191
+#: class/mainwp-rocket.class.php:1194
 msgid "Heartbeat Settings"
-msgstr "Heartbeat beállítások"
+msgstr "Heartbeat-beállítások"
 
-#: class/mainwp-rocket.class.php:1193
+#: class/mainwp-rocket.class.php:1196
 msgid "Control heartbeat"
 msgstr "Heartbeat vezérlése"
 
-#: class/mainwp-rocket.class.php:1200
+#: class/mainwp-rocket.class.php:1203
 msgid "Reduce or disable heartbeat activity"
 msgstr "A Heartbeat tevékenységének csökkentése vagy letiltása"
 
-#: class/mainwp-rocket.class.php:1208 class/mainwp-rocket.class.php:1220
-#: class/mainwp-rocket.class.php:1231
+#: class/mainwp-rocket.class.php:1211 class/mainwp-rocket.class.php:1223
+#: class/mainwp-rocket.class.php:1234
 msgid "Disable"
 msgstr "Letiltás"
 
-#: class/mainwp-rocket.class.php:1210
+#: class/mainwp-rocket.class.php:1213
 msgid "Behavior in backend"
 msgstr "Viselkedés az adminfelületen"
 
-#: class/mainwp-rocket.class.php:1222
+#: class/mainwp-rocket.class.php:1225
 msgid "Behavior in post editor"
 msgstr "Viselkedés a bejegyzésszerkesztőben"
 
-#: class/mainwp-rocket.class.php:1233
+#: class/mainwp-rocket.class.php:1236
 msgid "Behavior in frontend"
 msgstr "Viselkedés a frontenden"
 
-#: class/mainwp-rocket.class.php:1251
+#: class/mainwp-rocket.class.php:1254
 msgid "User cache"
 msgstr "Felhasználói gyorsítótár"
 
-#: class/mainwp-rocket.class.php:1254
+#: class/mainwp-rocket.class.php:1257
 msgid ""
 "If you need to create a dedicated set of cache files for each logged-in "
 "WordPress user, you must activate this add-on. User cache is great when you "
 "have user-specific or restricted content on your website."
-msgstr ""
-"Ha minden bejelentkezett WordPress felhasználóhoz külön gyorsítótár-"
-"fájlkészletet kell létrehoznia, aktiválnia kell ezt a kiegészítőt. A "
-"felhasználói gyorsítótár hasznos, ha a webhelyén felhasználóspecifikus vagy "
-"korlátozott tartalom található."
+msgstr "Ha minden bejelentkezett WordPress-felhasználóhoz külön gyorsítótár-fájlkészletet kell létrehoznia, be kell kapcsolnia ezt a kiegészítőt. A felhasználói gyorsítótár hasznos, ha a webhelyén felhasználóspecifikus vagy korlátozott tartalom található."
 
-#: class/mainwp-rocket.class.php:1259
+#: class/mainwp-rocket.class.php:1262
 msgid "Varnish"
 msgstr "Varnish"
 
-#: class/mainwp-rocket.class.php:1262
+#: class/mainwp-rocket.class.php:1265
 msgid ""
 "Varnish cache will be purged each time WP Rocket clears its cache to ensure "
 "content is always up-to-date."
-msgstr ""
-"A Varnish gyorsítótár minden alkalommal ürül, amikor a WP Rocket törli a "
-"gyorsítótárát, hogy a tartalom mindig naprakész legyen."
-
-#: class/mainwp-rocket.class.php:1267
-msgid "WebP compatibility"
-msgstr "WebP kompatibilitás"
+msgstr "A Varnish-gyorsítótár minden alkalommal kiürül, amikor a WP Rocket kiüríti a gyorsítótárát, hogy a tartalom mindig naprakész legyen."
 
 #: class/mainwp-rocket.class.php:1270
+msgid "WebP compatibility"
+msgstr "WebP-kompatibilitás"
+
+#: class/mainwp-rocket.class.php:1273
 msgid ""
 "Improve browser compatibility for WebP images. We have not detected any "
 "compatible WebP plugin! . If you don’t already have WebP images on your site"
 " consider using Imagify or another supported plugin. If you are not using "
 "WebP do not enable this option."
-msgstr ""
-"Javítsa a WebP képek böngészőkompatibilitását. Nem észleltünk kompatibilis "
-"WebP bővítményt! . Ha még nincsenek WebP képek a webhelyén, fontolja meg az "
-"Imagify vagy egy másik támogatott bővítmény használatát. Ha nem használ "
-"WebP-t, ne engedélyezze ezt az opciót."
+msgstr "Javítsa a WebP-képek böngészőkompatibilitását. Nem észleltünk kompatibilis WebP-bővítményt! . Ha még nincsenek WebP-képek a webhelyén, fontolja meg az Imagify vagy egy másik támogatott bővítmény használatát. Ha nem használ WebP-t, ne kapcsolja be ezt az opciót."
 
-#: class/mainwp-rocket.class.php:1274
+#: class/mainwp-rocket.class.php:1277
 msgid "Rocket Add-ons"
-msgstr "Rocket kiegészítők"
+msgstr "Rocket-kiegészítők"
 
-#: class/mainwp-rocket.class.php:1278
+#: class/mainwp-rocket.class.php:1281
 msgid "Cloudflare"
 msgstr "Cloudflare"
 
-#: class/mainwp-rocket.class.php:1281
+#: class/mainwp-rocket.class.php:1284
 msgid ""
 "Provide your account email, global API key, and domain to use options such "
 "as clearing the Cloudflare cache and enabling optimal settings with WP "
 "Rocket."
-msgstr ""
-"Adja meg fiókja e-mail címét, globális API-kulcsát és domainjét, hogy "
-"használhassa az olyan opciókat, mint a Cloudflare gyorsítótárának ürítése és"
-" az optimális beállítások engedélyezése a WP Rockettel."
+msgstr "Adja meg fiókja e-mail címét, globális API-kulcsát és domainjét, hogy használhassa az olyan opciókat, mint a Cloudflare gyorsítótárának ürítése és az optimális beállítások engedélyezése a WP Rockettel."
 
-#: class/mainwp-rocket.class.php:1286
+#: class/mainwp-rocket.class.php:1289
 msgid "Global API key:"
 msgstr "Globális API-kulcs:"
 
-#: class/mainwp-rocket.class.php:1289 class/mainwp-rocket.class.php:1331
+#: class/mainwp-rocket.class.php:1292 class/mainwp-rocket.class.php:1334
 msgid "Find your API key."
 msgstr "Keresse meg az API-kulcsát."
 
-#: class/mainwp-rocket.class.php:1291
+#: class/mainwp-rocket.class.php:1294
 msgid "Account email"
 msgstr "Fiók e-mail címe"
 
-#: class/mainwp-rocket.class.php:1295
+#: class/mainwp-rocket.class.php:1298
 msgid "Zone ID"
 msgstr "Zónaazonosító"
 
-#: class/mainwp-rocket.class.php:1300
+#: class/mainwp-rocket.class.php:1303
 msgid "Development mode"
 msgstr "Fejlesztői mód"
 
-#: class/mainwp-rocket.class.php:1303
+#: class/mainwp-rocket.class.php:1306
 msgid ""
 "Temporarily activate development mode on your website. This setting will "
 "automatically turn off after 3 hours."
-msgstr ""
-"Ideiglenesen aktiválja a fejlesztői módot a webhelyén. Ez a beállítás 3 óra "
-"elteltével automatikusan kikapcsol."
+msgstr "Ideiglenesen aktiválja a fejlesztői módot a webhelyén. Ez a beállítás 3 óra elteltével automatikusan kikapcsol."
 
-#: class/mainwp-rocket.class.php:1306
+#: class/mainwp-rocket.class.php:1309
 msgid "Optimal settings"
 msgstr "Optimális beállítások"
 
-#: class/mainwp-rocket.class.php:1309
+#: class/mainwp-rocket.class.php:1312
 msgid ""
 "Automatically enhances your Cloudflare configuration for speed, performance "
 "grade and compatibility."
@@ -941,37 +922,32 @@ msgstr ""
 "Automatikusan javítja a Cloudflare konfigurációját a sebesség, a "
 "teljesítményminősítés és a kompatibilitás érdekében."
 
-#: class/mainwp-rocket.class.php:1312
+#: class/mainwp-rocket.class.php:1315
 msgid "Relative protocol"
 msgstr "Relatív protokoll"
 
-#: class/mainwp-rocket.class.php:1315
+#: class/mainwp-rocket.class.php:1318
 msgid ""
 "Should only be used with Cloudflare's flexible SSL feature. URLs of static "
 "files (CSS, JS, images) will be rewritten to use // instead of http:// or "
 "https://. "
-msgstr ""
-"Csak a Cloudflare rugalmas SSL funkciójával együtt használja. A statikus "
-"fájlok URL-jei (CSS, JS, képek) átírásra kerülnek, hogy az http:// vagy "
-"https:// helyett //-t használjanak. "
+msgstr "Csak a Cloudflare rugalmas SSL funkciójával együtt használja. A statikus fájlok URL-jei (CSS, JS, képek) átírásra kerülnek, hogy a http:// vagy https:// helyett //-t használjanak. "
 
-#: class/mainwp-rocket.class.php:1320
+#: class/mainwp-rocket.class.php:1323
 msgid "Sucuri"
 msgstr "Sucuri"
 
-#: class/mainwp-rocket.class.php:1323
+#: class/mainwp-rocket.class.php:1326
 msgid ""
 "Provide your API key to clear the Sucuri cache when WP Rocket’s cache is "
 "cleared."
-msgstr ""
-"Adja meg API-kulcsát, hogy a WP Rocket gyorsítótárának törlésekor a Sucuri "
-"gyorsítótára is törlődjön."
+msgstr "Adja meg API-kulcsát, hogy a WP Rocket gyorsítótárának törlésekor a Sucuri gyorsítótára is törlődjön."
 
-#: class/mainwp-rocket.class.php:1328
+#: class/mainwp-rocket.class.php:1331
 msgid "Sucuri credentials:"
 msgstr "Sucuri hitelesítő adatok:"
 
-#: class/mainwp-rocket.class.php:1332
+#: class/mainwp-rocket.class.php:1335
 msgid ""
 "Firewall API key (for plugin), must be in format <code>{32 characters}/{32 "
 "characters}</code>:"
@@ -979,40 +955,38 @@ msgstr ""
 "Tűzfal API-kulcs (bővítményhez), formátuma: <code>{32 characters}/{32 "
 "characters}</code>:"
 
-#: class/mainwp-rocket.class.php:1354
+#: class/mainwp-rocket.class.php:1357
 msgid "Choose a file from your computer"
 msgstr "Válasszon egy fájlt a számítógépéről"
 
-#: class/mainwp-rocket.class.php:1354
+#: class/mainwp-rocket.class.php:1357
 #, php-format
 msgid "maximum size: %s"
 msgstr "maximális méret: %s"
 
-#: class/mainwp-rocket.class.php:1361
+#: class/mainwp-rocket.class.php:1364
 msgid "Export settings"
 msgstr "Beállítások exportálása"
 
-#: class/mainwp-rocket.class.php:1367
+#: class/mainwp-rocket.class.php:1370
 msgid "Import settings"
 msgstr "Beállítások importálása"
 
-#: class/mainwp-rocket.class.php:1380
+#: class/mainwp-rocket.class.php:1383
 msgid "Update inclusion and exclusion lists"
 msgstr "Be- és kizárási listák frissítése"
 
-#: class/mainwp-rocket.class.php:1383
+#: class/mainwp-rocket.class.php:1386
 msgid ""
 "Compatibility lists are downloaded automatically every week. Click the "
 "button if you want to update them manually."
-msgstr ""
-"A kompatibilitási listák hetente automatikusan letöltésre kerülnek. "
-"Kattintson a gombra, ha manuálisan szeretné frissíteni őket."
+msgstr "A kompatibilitási listák hetente automatikusan letöltődnek. Kattintson a gombra, ha manuálisan szeretné frissíteni őket."
 
-#: class/mainwp-rocket.class.php:1398
+#: class/mainwp-rocket.class.php:1401
 msgid "Settings saved successfully!"
 msgstr "A beállítások sikeresen mentve!"
 
-#: class/mainwp-rocket.class.php:1414
+#: class/mainwp-rocket.class.php:1417
 #, php-format
 msgid ""
 "Settings imported and saved successfully! %1$s%2$sSave to Child sites%3$s"
@@ -1020,48 +994,46 @@ msgstr ""
 "A beállítások importálása és mentése sikerült! %1$s%2$sMentés a gyermek "
 "webhelyekre%3$s"
 
-#: class/mainwp-rocket.class.php:1486
+#: class/mainwp-rocket.class.php:1489
 msgid "WP Nonce not verfied."
-msgstr "A WP Nonce nincs ellenőrizve."
+msgstr "A WP Nonce ellenőrzése nem sikerült."
 
-#: class/mainwp-rocket.class.php:1504 class/mainwp-rocket.class.php:2298
+#: class/mainwp-rocket.class.php:1507 class/mainwp-rocket.class.php:2323
 msgid "MainWP Rocket"
 msgstr "MainWP Rocket"
 
-#: class/mainwp-rocket.class.php:1664
+#: class/mainwp-rocket.class.php:1689
 msgid "Save Changes"
 msgstr "Változtatások mentése"
 
-#: class/mainwp-rocket.class.php:1684
+#: class/mainwp-rocket.class.php:1709
 msgid "Site-Specific Settings"
 msgstr "Webhelyspecifikus beállítások"
 
-#: class/mainwp-rocket.class.php:1688
+#: class/mainwp-rocket.class.php:1713
 msgid "Override general settings"
 msgstr "Általános beállítások felülírása"
 
-#: class/mainwp-rocket.class.php:1694
+#: class/mainwp-rocket.class.php:1719
 msgid "Save"
 msgstr "Mentés"
 
-#: class/mainwp-rocket.class.php:1846
+#: class/mainwp-rocket.class.php:1871
 msgid ""
 "WP Rocket plugin not detected on the child sites. Please, install and "
 "activate the plugin first."
-msgstr ""
-"A WP Rocket bővítmény nem észlelhető a gyermek webhelyeken. Kérjük, először "
-"telepítse és aktiválja a bővítményt."
+msgstr "A WP Rocket bővítmény nem észlelhető a gyermek webhelyeken. Kérjük, először telepítse és aktiválja a bővítményt."
 
-#: class/mainwp-rocket.class.php:1908
+#: class/mainwp-rocket.class.php:1933
 msgid "Nonce authentication failed. Please, try again."
 msgstr "A Nonce-hitelesítés sikertelen. Kérjük, próbálja meg újra."
 
-#: class/mainwp-rocket.class.php:1911
+#: class/mainwp-rocket.class.php:1936
 msgid "Site ID not found. Please, try again."
 msgstr "A webhelyazonosító nem található. Kérjük, próbálja meg újra."
 
-#: class/mainwp-rocket.class.php:1921 class/mainwp-rocket.class.php:2078
-#: class/mainwp-rocket.class.php:2086
+#: class/mainwp-rocket.class.php:1946 class/mainwp-rocket.class.php:2103
+#: class/mainwp-rocket.class.php:2111
 msgid ""
 "To manage WP Rocket for the individual site, first enable the \"Overwrite "
 "general settings\" option."
@@ -1069,21 +1041,21 @@ msgstr ""
 "Az adott webhelyen a WP Rocket kezeléséhez először engedélyezze az "
 "\"Általános beállítások felülírása\" opciót."
 
-#: class/mainwp-rocket.class.php:1948
+#: class/mainwp-rocket.class.php:1973
 msgid "Site data not found."
 msgstr "A webhely adatai nem találhatók."
 
-#: class/mainwp-rocket.class.php:2107
+#: class/mainwp-rocket.class.php:2132
 msgid "Invalid individual settings data."
 msgstr "Érvénytelen egyéni beállítási adatok."
 
-#: class/mainwp-rocket.class.php:2107
+#: class/mainwp-rocket.class.php:2132
 msgid "Invalid general settings data."
 msgstr "Érvénytelen általános beállítási adatok."
 
-#: class/mainwp-rocket.class.php:2291
+#: class/mainwp-rocket.class.php:2316
 msgid "Clear & Preload WP Rocket Cache"
-msgstr "WP Rocket gyorsítótárának törlése & előtöltése"
+msgstr "WP Rocket gyorsítótárának kiürítése és előtöltése"
 
 #: mainwp-rocket-extension.php:111
 msgid "WP Rocket"
@@ -1094,7 +1066,10 @@ msgstr "WP Rocket"
 msgid ""
 "MainWP Rocket Add-on requires MainWP Dashboard plugin version %s to be "
 "installed on your dashboard site. Please update MainWP Dashboard plugin!"
-msgstr ""
-"A MainWP Rocket kiegészítő megköveteli, hogy a MainWP Dashboard bővítmény %s"
-" verziója legyen telepítve az Ön irányítópult webhelyén. Kérjük, frissítse a"
-" MainWP Dashboard bővítményt!"
+msgstr "A MainWP Rocket kiegészítő megköveteli, hogy a MainWP Dashboard bővítmény %s verziója telepítve legyen az Ön vezérlőpult-webhelyén. Kérjük, frissítse a MainWP Dashboard bővítményt!"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Visibility"
+#~ msgstr "Láthatóság"

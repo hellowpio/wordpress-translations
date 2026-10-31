@@ -1,0 +1,905 @@
+# Copyright (C) 2026 LearnDash
+# This file is distributed under the same license as the Notes by LearnDash plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Notes by LearnDash 2.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/learndash-notes\n"
+"POT-Creation-Date: 2026-05-01T19:21:04+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: learndash_student_notes\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: Notes by LearnDash\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 2.1.0\n"
+
+#. Plugin Name of the plugin
+#: learndash-student-notes.php src/App/Admin/Translation.php:51
+msgid "Notes by LearnDash"
+msgstr "Notes by LearnDash"
+
+#. Plugin URI of the plugin
+#: learndash-student-notes.php
+msgid "https://www.learndash.com/notes-by-learndash/"
+msgstr "https://www.learndash.com/notes-by-learndash/"
+
+#. Description of the plugin
+#: learndash-student-notes.php
+msgid "Add Learner Notes to Learndash and communicate with your students"
+msgstr "Adj hozzá tanulói jegyzeteket a LearnDashhez, és kommunikálj a tanulóiddal"
+
+#. Author of the plugin
+#: learndash-student-notes.php
+msgid "LearnDash"
+msgstr "LearnDash"
+
+#. Author URI of the plugin
+#: learndash-student-notes.php
+msgid "https://www.learndash.com"
+msgstr "https://www.learndash.com"
+
+#: admin/class-learndash-notes-settings-page.php:33
+msgctxt "Notes Tab Label"
+msgid "Notes"
+msgstr "Megjegyzések"
+
+#: admin/class-learndash-notes-upgrade.php:143
+msgid ""
+"Notes by LearnDash needs to upgrade the database. It is strongly recommended"
+" you backup your database first."
+msgstr "A Notes by LearnDash bővítménynek frissítenie kell az adatbázist. Erősen ajánlott előbb biztonsági másolatot készítened az adatbázisról."
+
+#: admin/class-learndash-notes-upgrade.php:157
+msgctxt "Run database upgrade button text"
+msgid "Upgrade"
+msgstr "Frissítés"
+
+#: admin/class-learndash-notes-upgrade.php:175
+msgid "Notes by LearnDash has successfully upgraded!"
+msgstr "A Notes by LearnDash adatbázis-frissítése sikeres!"
+
+#: admin/sections/class-learndash-notes-settings-section-email.php:60
+msgid "Email"
+msgstr "E-mail-cím"
+
+#: admin/sections/class-learndash-notes-settings-section-email.php:80
+msgid "New Student Note: {student_first_name} {student_last_name}"
+msgstr "Új tanulói jegyzet: {student_first_name} {student_last_name}"
+
+#: admin/sections/class-learndash-notes-settings-section-email.php:81
+msgid ""
+"Hello {instructor_first_name},<br><br>A student has submitted a new note for"
+" your review.<br><br><strong>Student:</strong> {student_first_name} "
+"{student_last_name} ({student_user_name})<br><strong>Course/Lesson:</strong>"
+" {instructor_post_link}<br><br>Please review the note and respond as "
+"needed.<br>"
+msgstr "Üdv, {instructor_first_name},<br><br>Egy tanuló új jegyzetet küldött ellenőrzésre.<br><br><strong>Tanuló:</strong> {student_first_name} {student_last_name} ({student_user_name})<br><strong>Kurzus/lecke:</strong> {instructor_post_link}<br><br>Ellenőrizd a jegyzetet, és szükség esetén válaszolj rá.<br>"
+
+#: admin/sections/class-learndash-notes-settings-section-email.php:82
+msgid "Instructor Response to Your Note"
+msgstr "Az oktató válasza a jegyzetedre"
+
+#: admin/sections/class-learndash-notes-settings-section-email.php:83
+msgid ""
+"Hello {student_first_name},<br><br>Your instructor {instructor_first_name} "
+"{instructor_last_name} has responded to your "
+"note.<br><br><strong>Course/Lesson:</strong> "
+"{student_post_link}<br><br>Please log in to view the full response.<br>"
+msgstr "Üdv, {student_first_name},<br><br>{instructor_first_name} {instructor_last_name} oktatód válaszolt a jegyzetedre.<br><br><strong>Kurzus/lecke:</strong> {student_post_link}<br><br>Jelentkezz be a teljes válasz megtekintéséhez.<br>"
+
+#: admin/sections/class-learndash-notes-settings-section-email.php:107
+msgid "Instructor Email Subject"
+msgstr "Oktatói e-mail tárgya"
+
+#: admin/sections/class-learndash-notes-settings-section-email.php:114
+msgid "Instructor Email Body"
+msgstr "Oktatói e-mail szövege"
+
+#: admin/sections/class-learndash-notes-settings-section-email.php:119
+#: admin/sections/class-learndash-notes-settings-section-email.php:157
+msgid "Available merge codes:"
+msgstr "Elérhető egyesítési kódok:"
+
+#: admin/sections/class-learndash-notes-settings-section-email.php:145
+msgid "Learner Email Subject"
+msgstr "Tanulói e-mail tárgya"
+
+#: admin/sections/class-learndash-notes-settings-section-email.php:152
+msgid "Learner Email Body"
+msgstr "Tanulói e-mail szövege"
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:47
+#: learndash-student-notes.php:258 learndash-student-notes.php:340
+msgid "Settings"
+msgstr "Beállítások"
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:113
+msgid "Editor Toolbar"
+msgstr "Szerkesztő eszköztára"
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:114
+msgid "Display text formatting tools above the New Notes Section text area."
+msgstr "A szövegformázó eszközök megjelenítése az új jegyzetszakasz szövegmezője fölött."
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:123
+msgid "Character Count"
+msgstr "Karakterek száma"
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:124
+msgid ""
+"Display the number of characters (excluding spaces) contained within the New"
+" Notes Section text area."
+msgstr "Az új jegyzetszakasz szövegmezőjében lévő karakterek darabszámának megjelenítése (szóközök nélkül)."
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:133
+#: src/App/Settings/Sections/How_To/Notification_Features.php:113
+msgid "Instructor Notification Emails"
+msgstr "Oktatói értesítő e-mailek"
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:135
+msgid ""
+"Send Email notifications to Instructors when Students select the \"Notify "
+"Instructor\" checkbox during submission. Enabling this setting will add the "
+"\"Notify Instructor\" checkbox to the Student Notes submission form."
+msgstr "E-mail-értesítések küldése az oktatóknak, amikor a tanulók beküldéskor bejelölik az „Oktató értesítése” jelölőnégyzetet. A beállítás bekapcsolásakor az „Oktató értesítése” jelölőnégyzet hozzáadódik a tanulói jegyzetbeküldő űrlaphoz."
+
+#. translators: placeholders: Group label, Anchor Link opening and closing
+#. tags for email settings page.
+#: admin/sections/class-learndash-notes-settings-section-features.php:139
+#, php-format
+msgid ""
+"IMPORTANT: Email settings and %1$s settings are necessary for this feature "
+"to work. %2$sSet up Instructor Notification Emails now.%3$s"
+msgstr "FONTOS: A funkció működéséhez e-mail-beállításokra és a %1$s beállításaira is szükség van. %2$sÁllítsd be most az oktatói értesítő e-maileket.%3$s"
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:153
+#: src/App/Settings/Sections/How_To/Notification_Features.php:99
+msgid "Instructor View Settings"
+msgstr "Oktatói nézet beállításai"
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:156
+msgid "Show All Student Notes to Instructors"
+msgstr "Az összes tanulói jegyzet megjelenítése az oktatóknak"
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:157
+msgid ""
+"The admin view of the Notes pages will display all Student Notes to their "
+"Instructor(s) / Group Leaders."
+msgstr "A jegyzetek oldal adminnézete az összes tanulói jegyzetet megjeleníti az oktató(k)nak és csoportvezető(k)nek."
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:160
+msgid "Hide all Student Notes from Instructors"
+msgstr "Az összes tanulói jegyzet elrejtése az oktatók elől"
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:161
+msgid ""
+"The admin view of the Notes pages will NOT display any Student Notes to "
+"their Instructor(s) / Group Leaders. Any previously sent Notes set to be "
+"visible by the Instructor will still be visible."
+msgstr "A jegyzetek oldal adminnézete egyetlen tanulói jegyzetet sem jelenít meg az oktató(k)nak és csoportvezető(k)nek. A korábban láthatóként beállított jegyzetek továbbra is láthatók maradnak az oktató számára."
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:164
+msgid "Student's choice"
+msgstr "A tanuló választása"
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:166
+msgid ""
+"The admin view of the Notes pages will only display Student Notes to their "
+"Instructor(s) / Group Leaders when a Student selects the \"Notify "
+"Instructor\" checkbox during submission."
+msgstr "A jegyzetek oldal adminnézete csak akkor jeleníti meg a tanulói jegyzeteket az oktató(k)nak és csoportvezető(k)nek, ha a tanuló a beküldéskor bejelöli az „Oktató értesítése” jelölőnégyzetet."
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:168
+msgid ""
+"This setting is only available when \"Instructor Notification Emails\" is "
+"enabled."
+msgstr "Ez a beállítás csak akkor érhető el, ha az „Oktatói értesítő e-mailek” be van kapcsolva."
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:177
+msgid "New Note Section"
+msgstr "Új jegyzetszakasz"
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:179
+msgid "Students can add a new note in this form below the page content."
+msgstr "A tanulók az oldal tartalma alatt található űrlapon új jegyzetet adhatnak hozzá."
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:181
+#: admin/sections/class-learndash-notes-settings-section-features.php:203
+#: admin/sections/class-learndash-notes-settings-section-features.php:225
+#: admin/sections/class-learndash-notes-settings-section-features.php:247
+msgid ""
+"To manually insert the form onto a specific piece of content, use the "
+"following shortcode:"
+msgstr "Ha manuálisan szeretnéd beszúrni az űrlapot egy adott tartalomba, használd a következő shortcode-ot:"
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:192
+msgid ""
+"The New Note Section will display within all of the selected content types "
+"above."
+msgstr "Az új jegyzetszakasz a fent kiválasztott összes tartalomtípusban megjelenik."
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:199
+msgid "New Note Popup"
+msgstr "Új jegyzet felugró ablaka"
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:201
+msgid ""
+"Students can add a new note in this flexible form that “pops” open on page "
+"load."
+msgstr "A tanulók új jegyzetet adhatnak hozzá ebben a rugalmas űrlapban, amely az oldal betöltésekor felugrik."
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:214
+msgid ""
+"The New Note Popup will display within all of the selected content types "
+"above."
+msgstr "Az új jegyzet felugró ablak a fent kiválasztott összes tartalomtípusban megjelenik."
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:221
+#: src/App/Settings/Sections/How_To/Common_Shortcodes.php:98
+msgid "List of Notes"
+msgstr "Jegyzetek listája"
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:223
+msgid ""
+"This list displays the all Student's notes submitted on that post or page."
+msgstr "Ez a lista az adott bejegyzéshez vagy oldalhoz beküldött összes tanulói jegyzetet jeleníti meg."
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:236
+msgid ""
+"The List of Notes will display within all of the selected content types "
+"above."
+msgstr "A jegyzetek listája a fent kiválasztott összes tartalomtípusban megjelenik."
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:243
+msgid "Full List of Notes"
+msgstr "Jegyzetek teljes listája"
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:245
+msgid "This list displays the all the Student's notes."
+msgstr "Ez a lista a tanuló összes jegyzetét jeleníti meg."
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:258
+msgid ""
+"The Full List of Notes will display within all of the selected content types"
+" above."
+msgstr "A jegyzetek teljes listája a fent kiválasztott összes tartalomtípusban megjelenik."
+
+#: admin/sections/class-learndash-notes-settings-section-features.php:277
+msgid "All"
+msgstr "Mind"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:38
+msgid "Labels"
+msgstr "Feliratok"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:72
+msgid "Type note title"
+msgstr "Írd be a jegyzet címét"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:73
+#: src/views/components/form/char-count.php:17
+msgid "Sum of Characters"
+msgstr "Karakterek száma"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:74
+msgid "Notify Instructor"
+msgstr "Oktató értesítése"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:75
+msgid ""
+"Send an email to your Instructor notifying them that you submitted a note."
+msgstr "Küldj e-mailt az oktatódnak, és értesítsd arról, hogy jegyzetet küldtél be."
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:76
+msgid ""
+"Instructors can view your Notes even if you do not choose \"Notify "
+"Instructor.\""
+msgstr "Az oktatók akkor is megtekinthetik a jegyzeteidet, ha nem választod az „Oktató értesítése” lehetőséget."
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:77
+msgid "Instructor was notified"
+msgstr "Az oktató értesítést kapott"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:78
+msgid "Note added successfully"
+msgstr "A jegyzet sikeresen hozzáadva"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:79
+msgid "No Notes Added"
+msgstr "Nincs hozzáadott jegyzet"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:80
+msgid "Added"
+msgstr "Hozzáadva"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:81
+msgid "Submit"
+msgstr "Küldés"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:82
+msgid "My Historical Notes"
+msgstr "Korábbi jegyzeteim"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:83
+#: inc/shortcodes.php:304
+msgid "All My Notes"
+msgstr "Összes jegyzetem"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:84
+msgid "No Notes Added Anywhere"
+msgstr "Sehol sincs hozzáadott jegyzet"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:85
+#: src/views/components/list/item/actions/delete.php:33
+msgid "Delete"
+msgstr "Törlés"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:86
+msgid "Note deleted"
+msgstr "A megjegyzés törölve"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:87
+msgid "Are you sure? This can not be undone."
+msgstr "Biztos vagy benne? Ezt nem lehet visszavonni."
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:88
+#: src/views/components/list/item/actions/download.php:22
+msgid "Download"
+msgstr "Letöltés"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:89
+msgid "Related"
+msgstr "Kapcsolódó"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:90
+msgid "Open"
+msgstr "Megnyitás"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:111
+msgid ""
+"Change the placeholder text in the Note title area in the "
+"[llms_add_new_note] shortcode"
+msgstr "Módosítsd a jegyzet címmezőjében megjelenő helytartó szöveget a [llms_add_new_note] shortcode-ban"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:117
+msgid ""
+"Change the \"Sum of Characters\" text located below the rich text area in "
+"the [llms_add_new_note] shortcode"
+msgstr "Módosítsd a „Karakterek száma” szöveget, amely a [llms_add_new_note] shortcode formázott szövegmezője alatt jelenik meg"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:123
+msgid ""
+"Change the \"Notify Instructor\" text located below the new note editor in "
+"the [llms_add_new_note] shortcode"
+msgstr "Módosítsd az „Oktató értesítése” szöveget, amely az új jegyzet szerkesztőfelülete alatt jelenik meg a [llms_add_new_note] shortcode-ban"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:129
+msgid ""
+"Change the help text next to \"Notify Instructor\" located below the new "
+"note editor"
+msgstr "Módosítsd az „Oktató értesítése” melletti súgószöveget, amely az új jegyzet szerkesztőfelülete alatt jelenik meg"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:135
+msgid ""
+"Change the additional help text that displays next to \"Notify Instructor\" "
+"located below the new note editor if \"Show All Student Notes to "
+"Instructors\" is enabled"
+msgstr "Módosítsd az „Oktató értesítése” melletti kiegészítő súgószöveget, amely akkor jelenik meg az új jegyzet szerkesztőfelülete alatt, ha be van kapcsolva az „Az összes tanulói jegyzet megjelenítése az oktatóknak” beállítás"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:141
+msgid "Change the \"Instructor was notified\" message"
+msgstr "Módosítsd az „Az oktató értesítést kapott” üzenetet"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:147
+msgid ""
+"Change the \"Note Added Successfully\" message text for the "
+"[llms_add_new_note] shortcode"
+msgstr "Módosítsd a „Jegyzet sikeresen hozzáadva” üzenetet a [llms_add_new_note] shortcode-ban"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:153
+msgid ""
+"Change the \"No Notes Added\" message text for the [llms_add_new_note] "
+"shortcode"
+msgstr "Módosítsd a „Nincs hozzáadott jegyzet” üzenetet a [llms_add_new_note] shortcode-ban"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:159
+msgid "Change the \"Added\" text for the [llms_add_new_note] shortcode"
+msgstr "A [llms_add_new_note] shortcode „hozzáadva” szövegének módosítása"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:165
+msgid "Change the \"Save Note\" button text for the [llms_add_new_note] shortcode"
+msgstr "Módosítsd a „Jegyzet mentése” gomb szövegét a [llms_add_new_note] shortcode-ban"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:171
+msgid ""
+"Change the \"My Historical Notes\" text header for the [llms_notes_list] "
+"shortcode"
+msgstr "Módosítsd a „Korábbi jegyzeteim” fejlécet a [llms_notes_list] shortcode-ban"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:177
+msgid ""
+"Change the \"All My Notes\" text header for the [llms_full_notes_list] "
+"shortcode"
+msgstr "A [llms_full_notes_list] shortcode „összes jegyzetem” fejlécszövegének módosítása"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:183
+msgid ""
+"Change the \"No Notes Added Anywhere\" message text for the "
+"[llms_notes_list] and the [llms_full_notes_list] shortcodes"
+msgstr "Módosítsd a „Sehol sincs hozzáadott jegyzet” üzenetet a [llms_notes_list] és a [llms_full_notes_list] shortcode-okban"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:189
+msgid ""
+"Change the \"Delete\" link text for the [llms_notes_list] and the "
+"[llms_full_notes_list] shortcodes"
+msgstr "A [llms_notes_list] és a [llms_full_notes_list] shortcode „törlés” linkjének szövege"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:195
+msgid ""
+"Change the \"Note Deleted\" message text for the [llms_notes_list] and the "
+"[llms_full_notes_list] shortcodes"
+msgstr "Módosítsd a „Jegyzet törölve” üzenetet a [llms_notes_list] és a [llms_full_notes_list] shortcode-okban"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:201
+msgid ""
+"Change the \"Are you sure? This can not be undone.\" message text for the "
+"[llms_notes_list] and the [llms_full_notes_list] shortcodes"
+msgstr "Módosítsd a „Biztos vagy benne? Ezt nem lehet visszavonni.” üzenetet a [llms_notes_list] és a [llms_full_notes_list] shortcode-okban."
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:207
+msgid ""
+"Change the \"Download\" link text for the [llms_notes_list] and the "
+"[llms_full_notes_list] shortcodes"
+msgstr "A [llms_notes_list] és a [llms_full_notes_list] shortcode „letöltés” linkjének szövege"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:213
+msgid ""
+"Change the \"Related\" text for the [llms_notes_list] and the "
+"[llms_full_notes_list] shortcodes"
+msgstr "Módosítsd a „Kapcsolódó” szöveget a [llms_notes_list] és a [llms_full_notes_list] shortcode-okban"
+
+#: admin/sections/class-learndash-notes-settings-section-labels.php:219
+msgid "Change the \"Open\" text for the [llms_full_notes_list] shortcode"
+msgstr "A [llms_full_notes_list] shortcode „megnyitás” szövegének módosítása"
+
+#: admin/sections/class-learndash-notes-settings-section-styling.php:36
+msgid "Styling"
+msgstr "Stílus"
+
+#: admin/sections/class-learndash-notes-settings-section-styling.php:96
+msgid ""
+"Change the Font Awesome floating icon for the [llms_add_new_note] and "
+"[llms_add_new_note_popup] shortcodes"
+msgstr "Módosítsd a Font Awesome lebegő ikont a [llms_add_new_note] és a [llms_add_new_note_popup] shortcode-okban."
+
+#: admin/sections/class-learndash-notes-settings-section-styling.php:102
+msgid "Select a color for the floating Notes icon"
+msgstr "Válassz színt a lebegő jegyzetikonhoz"
+
+#: admin/sections/class-learndash-notes-settings-section-styling.php:108
+msgid "Select a size in px, pt, or em for the floating Notes icon"
+msgstr "Válassz méretet a lebegő jegyzetikonhoz px-ben, pt-ben vagy em-ben"
+
+#: admin/sections/class-learndash-notes-settings-section-styling.php:114
+msgid ""
+"Change the Font Awesome icon in the [llms_full_notes_list] shortcode\n"
+"\t\t\t\t\t"
+msgstr "Módosítsd a Font Awesome ikont a [llms_full_notes_list] shortcode-ban"
+
+#: admin/sections/class-learndash-notes-settings-section-styling.php:124
+msgid "Select a color for the notification icon"
+msgstr "Válassz színt az értesítési ikonhoz"
+
+#: admin/sections/class-learndash-notes-settings-section-styling.php:130
+msgid "Select primary color for the Notes shortcode headers"
+msgstr "Válaszd ki az elsődleges színt a jegyzeteket megjelenítő shortcode-ok fejléceihez"
+
+#: inc/columns-filters.php:43
+msgid "Note Excerpt"
+msgstr "Jegyzetkivonat"
+
+#: inc/columns-filters.php:44
+msgid "Learner Name"
+msgstr "Tanuló neve"
+
+#: inc/columns-filters.php:45
+msgid "Type"
+msgstr "Típus"
+
+#: inc/columns-filters.php:46
+msgid "Title"
+msgstr "Cím"
+
+#: inc/columns-filters.php:47
+msgid "Date"
+msgstr "Dátum"
+
+#: inc/columns-filters.php:48
+msgid "Actions"
+msgstr "Műveletek"
+
+#: inc/columns-filters.php:89
+msgid "Responded"
+msgstr "Válaszolt"
+
+#: inc/columns-filters.php:91
+msgid "Respond"
+msgstr "Válaszolás"
+
+#. translators: %s is the LearnDash custom label for Courses.
+#: inc/columns-filters.php:124
+#, php-format
+msgid "All %s"
+msgstr "Összes %s"
+
+#. translators: placeholders: Lessons label.
+#: inc/columns-filters.php:165
+#, php-format
+msgctxt "All Lessons"
+msgid "All %s"
+msgstr "Összes %s"
+
+#: inc/columns-filters.php:199
+msgid "Filter by date"
+msgstr "Szűrés dátum szerint"
+
+#: inc/columns-filters.php:202
+msgid "All dates"
+msgstr "Összes dátum"
+
+#: inc/functions.php:50 learndash-student-notes.php:248
+#: learndash-student-notes.php:324 learndash-student-notes.php:548
+msgid "Notes"
+msgstr "Megjegyzések"
+
+#: inc/functions.php:51
+msgid "Note"
+msgstr "Megjegyzés"
+
+#: inc/post-meta.php:26
+msgid "Learner's Note"
+msgstr "A tanuló jegyzete"
+
+#: inc/post-meta.php:30
+msgid "Instructor reply"
+msgstr "Oktatói válasz"
+
+#: inc/post-meta.php:69
+msgid "Type:"
+msgstr "Típus:"
+
+#: inc/post-meta.php:87
+msgid "Notify Instructor:"
+msgstr "Oktató értesítése:"
+
+#: inc/post-meta.php:91
+msgid "Yes"
+msgstr "Igen"
+
+#: inc/post-meta.php:93
+msgid "No"
+msgstr "Nem"
+
+#: inc/post-meta.php:98
+msgid "Notify Learner:"
+msgstr "Tanuló értesítése:"
+
+#: inc/post-meta.php:105
+msgid "Instructor Response:"
+msgstr "Oktatói válasz:"
+
+#: inc/shortcodes.php:65 inc/shortcodes.php:121
+#: src/views/notes/add_new_note_form_legacy.php:23
+msgid "Add New Note"
+msgstr "Új jegyzet hozzáadása"
+
+#: inc/shortcodes.php:225
+msgid "Related Notes"
+msgstr "Kapcsolódó jegyzetek"
+
+#: learndash-student-notes.php:82
+msgid "Notes by LearnDash requires the following plugin(s) to be active:"
+msgstr "A Notes by LearnDash használatához a következő bővítményeknek aktívnak kell lenniük:"
+
+#: src/admin-views/copy-text.php:21
+msgid "Copy Code"
+msgstr "Kód másolása"
+
+#: src/admin-views/copy-text.php:25
+msgid "Copied!"
+msgstr "Másolva!"
+
+#. Translators: placeholders: The text to be copied to the clipboard.
+#: src/admin-views/copy-text.php:42
+#, php-format
+msgid "Click to copy \"%s\" to your clipboard."
+msgstr "Kattints a „%s” vágólapra másolásához."
+
+#: src/admin-views/how-to/common-shortcodes/list-of-notes.php:28
+msgid ""
+"This list displays only the Student's notes submitted for that post or page."
+msgstr "Ez a lista csak az adott bejegyzéshez vagy oldalhoz beküldött tanulói jegyzeteket jeleníti meg."
+
+#: src/admin-views/how-to/common-shortcodes/list-of-notes.php:30
+#: src/admin-views/how-to/common-shortcodes/list-of-notes.php:48
+msgid ""
+"Students will also have the ability to download their notes as a Microsoft "
+"Word file or delete their notes from this list."
+msgstr "A tanulók ezen a listán a jegyzeteiket Microsoft Word-fájlként is letölthetik, illetve törölhetik."
+
+#: src/admin-views/how-to/common-shortcodes/list-of-notes.php:46
+msgid ""
+"This list displays all of that Student's notes, even the notes they "
+"submitted on other pages."
+msgstr "Ez a lista a tanuló összes jegyzetét megjeleníti, beleértve a más oldalakon beküldött jegyzeteket is."
+
+#: src/admin-views/how-to/common-shortcodes/new-note.php:28
+msgid ""
+"This shortcode enables a form below the page content for Students to add a "
+"new note."
+msgstr "Ez a shortcode űrlapot jelenít meg az oldal tartalma alatt, ahol a tanulók új jegyzetet adhatnak hozzá."
+
+#. translators: placeholders: HTML tags for viewing the Settings page.
+#: src/admin-views/how-to/common-shortcodes/new-note.php:34
+#: src/admin-views/how-to/common-shortcodes/new-note.php:67
+#, php-format
+msgid ""
+"To adjust the text formatting tools and character counter settings, visit "
+"the %1$sSettings%2$s tab."
+msgstr "A szövegformázó eszközök és a karakterszámláló beállításainak módosításához keresd fel a %1$sBeállítások%2$s fület."
+
+#: src/admin-views/how-to/common-shortcodes/new-note.php:61
+msgid ""
+"This shortcode enables a form that “pops” open on page load provides a form "
+"for Students to add a new note."
+msgstr "Ez a shortcode az oldal betöltésekor felugró ablakban jelenít meg egy űrlapot, amelyen a tanulók új jegyzetet adhatnak hozzá."
+
+#. Translators: placeholders: Course label.
+#: src/admin-views/how-to/getting-started/content.php:18
+#, php-format
+msgid "There are two ways to allow Students to leave notes on %s content:"
+msgstr "Kétféleképpen teheted lehetővé, hogy a tanulók jegyzeteket hagyjanak a %s tartalmaihoz:"
+
+#: src/admin-views/how-to/getting-started/content.php:28
+msgid "Globally"
+msgstr "Globálisan"
+
+#. Translators: placeholders: Opening anchor tag for viewing the Settings
+#. page, closing anchor tag, Courses label, Lessons label, Topics label.
+#: src/admin-views/how-to/getting-started/content.php:36
+#, php-format
+msgid ""
+"From the %1$sSettings%2$s tab, enable notes simultaneously on all instances "
+"of a content type (%3$s, %4$s, %5$s, etc.)."
+msgstr "A %1$sBeállítások%2$s fülön kapcsold be a jegyzeteket egy tartalomtípus összes példányán (%3$s, %4$s, %5$s stb.)."
+
+#. Translators: placeholders: Topics label, topic label.
+#: src/admin-views/how-to/getting-started/content.php:58
+#, php-format
+msgid ""
+"For example, check the %1$s checkbox within the New Note Section to make a "
+"New Note form appear automatically on every %2$s page, allowing Students to "
+"leave notes."
+msgstr "Például jelöld be a %1$s jelölőnégyzetet az Új jegyzet szakaszban, hogy minden %2$s oldalon automatikusan megjelenjen egy új megjegyzés hozzáadására szolgáló űrlap, amelyen a tanulók jegyzeteket hagyhatnak."
+
+#: src/admin-views/how-to/getting-started/content.php:69
+msgid "Individually"
+msgstr "Egyenként"
+
+#: src/admin-views/how-to/getting-started/content.php:73
+msgid ""
+"Use our simple shortcodes to enable leaving notes on specific pieces of "
+"content."
+msgstr "Használd egyszerű shortcode-jainkat, hogy meghatározott tartalmaknál is lehessen jegyzeteket hagyni."
+
+#. Translators: placeholders: Add New Note Shortcode, Course label.
+#: src/admin-views/how-to/getting-started/content.php:81
+#, php-format
+msgid ""
+"For example, copy %1$s and paste it into a %2$s page to add a New Note form "
+"to that page."
+msgstr "Például másold ki a %1$s értéket, és illeszd be egy %2$s oldalra, így új megjegyzés hozzáadására szolgáló űrlapot helyezhetsz el az oldalon."
+
+#. translators: placeholders: A link to the Knowledge Base for the plugin.
+#: src/admin-views/how-to/more-resources/knowledge-base.php:19
+#, php-format
+msgid "For more information on features and settings, please visit: %s"
+msgstr "A funkciókról és a beállításokról további információért látogass el ide: %s"
+
+#: src/admin-views/how-to/more-resources/video-playlist.php:17
+msgid ""
+"Watch this video playlist to understand how it all works and see "
+"demonstrations for each version update."
+msgstr "Nézd meg ezt a videólejátszási listát, hogy megértsd a működését, és megtekintsd az egyes verziófrissítések bemutatóit."
+
+#. translators: placeholders: HTML tags for viewing the Settings page.
+#: src/admin-views/how-to/notification-features/instructor-view-settings.php:19
+#, php-format
+msgid ""
+"Adjust settings for how Instructors view their Student Notes in the admin "
+"view via this feature in the %1$sSettings%2$s tab."
+msgstr "Ezzel a funkcióval a %1$sBeállítások%2$s fülön módosíthatod, hogyan tekinthetik meg az oktatók a tanulók megjegyzéseit az admin nézetben."
+
+#. translators: placeholders: HTML tags for viewing the documentation.
+#: src/admin-views/how-to/notification-features/notification-icon.php:19
+#, php-format
+msgid ""
+"Add a notification icon to the menu bar to notify Students when their "
+"Instructor has responded to their Note via the admin view. %1$sSet up "
+"Notification Icon for Students%2$s."
+msgstr "Adj egy értesítési ikont a menüsávhoz, hogy értesítsd a tanulókat, amikor az oktatójuk válaszolt a megjegyzésükre az admin nézetben. %1$sÁllítsd be a tanulóknak szóló értesítési ikont%2$s."
+
+#. translators: placeholders: HTML tags for viewing the Settings page.
+#: src/admin-views/how-to/notification-features/notify-instructor.php:19
+#, php-format
+msgid ""
+"Send email notifications to Instructors when Students submit Notes with this"
+" feature. Turn on this feature in the %1$sSettings%2$s tab."
+msgstr "Ezzel a funkcióval e-mail értesítéseket küldhetsz az oktatóknak, amikor a tanulók megjegyzéseket küldenek be. Kapcsold be ezt a funkciót a %1$sBeállítások%2$s fülön."
+
+#. translators: placeholders: Group custom label, followed by HTML tags for
+#. viewing the documentation.
+#: src/admin-views/how-to/notification-features/notify-instructor.php:38
+#, php-format
+msgid ""
+"IMPORTANT: Email settings and %1$s settings are necessary for this feature "
+"to work. %2$sSet up Instructor Notification Emails now%3$s."
+msgstr "FONTOS: A funkció működéséhez e-mail-beállításokra és %1$s beállításokra van szükség. %2$sÁllítsd be most az oktatóknak szóló e-mail értesítéseket%3$s."
+
+#: src/App/Settings/Sections/How_To.php:46
+#: src/deprecated/LearnDash_Notes_Settings_Section_General.php:46
+msgid "How To"
+msgstr "Útmutató"
+
+#: src/App/Settings/Sections/How_To/Common_Shortcodes.php:58
+msgid "Common Shortcodes"
+msgstr "Általános shortcode-ok"
+
+#: src/App/Settings/Sections/How_To/Common_Shortcodes.php:84
+msgid "New Note"
+msgstr "Új megjegyzés"
+
+#: src/App/Settings/Sections/How_To/Getting_Started.php:57
+msgid "Getting Started With Notes by LearnDash"
+msgstr "Első lépések a Notes by LearnDash használatával"
+
+#: src/App/Settings/Sections/How_To/More_Resources.php:58
+msgid "More Resources"
+msgstr "További források"
+
+#: src/App/Settings/Sections/How_To/More_Resources.php:83
+msgid "How To: Video Playlist"
+msgstr "Útmutató: videólejátszási lista"
+
+#: src/App/Settings/Sections/How_To/More_Resources.php:97
+msgid "Knowledge Base"
+msgstr "Tudásbázis"
+
+#: src/App/Settings/Sections/How_To/Notification_Features.php:58
+msgid "Notification Features"
+msgstr "Értesítési funkciók"
+
+#: src/App/Settings/Sections/How_To/Notification_Features.php:85
+msgid "Notification Icon for Students"
+msgstr "Értesítési ikon a tanulóknak"
+
+#: src/deprecated/functions.php:36
+msgid ""
+"Unfortunately, it appears that the authentication token you have provided is"
+" invalid. We kindly request that you re-download the package and attempt to "
+"install again. If the issue persists, please do not hesitate to contact our "
+"support team for further assistance."
+msgstr "Úgy tűnik, hogy a megadott hitelesítési token hibás. Töltsd le újra a csomagot, majd próbáld meg ismét telepíteni. Ha a probléma továbbra is fennáll, vedd fel a kapcsolatot támogatási csapatunkkal további segítségért."
+
+#: src/deprecated/LearnDash_Notes_Settings_Section_General.php:72
+msgid "How to use the Learner Notes shortcodes in any posts and pages"
+msgstr "A Learner Notes shortcode-jainak használata bejegyzésekben és oldalakon"
+
+#: src/deprecated/LearnDash_Notes_Settings_Section_General.php:86
+msgid "How to enable the Learner Notes Notification Icon"
+msgstr "A Learner Notes értesítési ikonjának bekapcsolása"
+
+#: src/deprecated/LearnDash_Notes_Settings_Section_General.php:100
+msgid ""
+"Watch this video playlist to understand how it all works and see "
+"demonstrations for each version update"
+msgstr "Nézd meg ezt a videólejátszási listát, hogy megértsd a működését, és megtekintsd az egyes verziófrissítések bemutatóit"
+
+#: src/views/ajax/full-loop.php:81 src/views/ajax/loop.php:75
+#: src/views/components/list/item/actions/mark-read.php:33
+msgid "Mark as read"
+msgstr "Megjelölés olvasottnak"
+
+#: src/views/components/floating-button/index.php:19
+msgid "Open note submission modal"
+msgstr "A megjegyzés beküldésére szolgáló ablak megnyitása"
+
+#. Translators: %s: course label.
+#: src/views/components/form/description.php:28
+#, php-format
+msgid "Take private notes or send a note to the %s administrator."
+msgstr "Írj privát megjegyzéseket, vagy küldj megjegyzést a(z) %s adminisztrátorának."
+
+#: src/views/components/form/editor.php:17
+msgid "Note body editor"
+msgstr "A megjegyzés törzsének szerkesztője"
+
+#: src/views/components/form/index.php:19
+msgid "Add a new note"
+msgstr "Új megjegyzés hozzáadása"
+
+#: src/views/components/form/input-title.php:22
+msgid "Note Title"
+msgstr "Megjegyzés címe"
+
+#: src/views/components/form/submit.php:20
+msgid "Submit note"
+msgstr "Megjegyzés beküldése"
+
+#: src/views/components/icons/bell.php:27
+msgid "Bell icon"
+msgstr "Harang ikon"
+
+#: src/views/components/icons/caret-down.php:27
+msgid "Down caret icon"
+msgstr "Lefelé mutató nyíl ikon"
+
+#: src/views/components/icons/caret-up.php:27
+msgid "Up caret icon"
+msgstr "Felfelé mutató nyíl ikon"
+
+#: src/views/components/icons/check.php:27
+msgid "Check icon"
+msgstr "Pipa ikon"
+
+#: src/views/components/icons/minimize.php:27
+msgid "Minimize icon"
+msgstr "Kicsinyítés ikonja"
+
+#: src/views/components/icons/write.php:27
+msgid "Write icon"
+msgstr "Írás ikonja"
+
+#: src/views/components/list/item/actions/delete.php:27
+msgid "Delete note"
+msgstr "Megjegyzés törlése"
+
+#: src/views/components/list/item/actions/download.php:18
+msgid "Download note"
+msgstr "Megjegyzés letöltése"
+
+#: src/views/components/list/item/actions/mark-read.php:28
+msgid "Mark note as read"
+msgstr "Megjegyzés megjelölése olvasottként"
+
+#. Translators: %1$s is the related post type label. %2$s is the related post
+#. title.
+#: src/views/components/list/item/actions/open-related.php:25
+#, php-format
+msgid "Open %1$s: %2$s"
+msgstr "%1$s megnyitása: %2$s"
+
+#. Translators: %s is the related post title.
+#: src/views/components/list/item/actions/open-related.php:34
+#, php-format
+msgid "Open %s"
+msgstr "%s megnyitása"
+
+#: src/views/components/list/item/response.php:20
+msgid "Note response"
+msgstr "Megjegyzésre adott válasz"
+
+#: src/views/components/modal/header.php:21
+msgid "Close note submission modal"
+msgstr "A megjegyzés beküldésére szolgáló ablak bezárása"
+
+#: src/views/components/panel/unread-icon.php:32
+#: src/views/components/panel/unread-icon.php:38
+msgid "Unread responses"
+msgstr "Olvasatlan válaszok"

@@ -1,0 +1,4111 @@
+# Copyright (C) 2026 Crocoblock
+# This file is distributed under the same license as the JetMessenger plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: JetMessenger 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/jet-messenger\n"
+"POT-Creation-Date: 2026-10-31T07:21:54+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: jet-messenger\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: JetMessenger\n"
+"X-Plugin-Tone: formal\n"
+"X-Plugin-Version: 1.2.0\n"
+
+#. Plugin Name of the plugin
+#: jet-messenger.php includes/privacy/eraser.php:43
+#: includes/privacy/exporter.php:45
+msgid "JetMessenger"
+msgstr "JetMessenger"
+
+#. Description of the plugin
+#: jet-messenger.php
+msgid "Internal messaging system for WordPress websites."
+msgstr "Belső üzenetküldő rendszer WordPress-webhelyekhez."
+
+#. Author of the plugin
+#: jet-messenger.php
+msgid "Crocoblock"
+msgstr "Crocoblock"
+
+#: includes/admin/admin-notifications-page.php:44
+#: includes/admin/admin-notifications-page.php:45
+#: includes/admin/admin-notifications-page.php:110
+#: includes/admin/navigation.php:30 includes/plugin.php:212
+msgid "Admin Notifications"
+msgstr "Admin értesítések"
+
+#: includes/admin/admin-notifications-page.php:112
+msgid "Loading admin notifications…"
+msgstr "Adminértesítések betöltése…"
+
+#: includes/admin/analytics-diagnostics-page.php:52
+#: includes/admin/analytics-diagnostics-page.php:53
+#: includes/admin/analytics-diagnostics-page.php:96
+#: includes/admin/analytics-diagnostics-page.php:122
+msgid "Analytics & Diagnostic"
+msgstr "Analitika és diagnosztika"
+
+#: includes/admin/analytics-diagnostics-page.php:125
+msgid "Loading analytics and diagnostics…"
+msgstr "Analitika és diagnosztika betöltése…"
+
+#: includes/admin/navigation.php:25 includes/plugin.php:207
+#: assets/build/block-editor.js:1
+msgid "Settings"
+msgstr "Beállítások"
+
+#: includes/admin/navigation.php:35 includes/plugin.php:217
+msgid "Analytics and Diagnostics"
+msgstr "Analitika és diagnosztika"
+
+#: includes/admin/navigation.php:52
+msgid "Re-run setup wizard"
+msgstr "Beállításvarázsló újbóli futtatása"
+
+#: includes/admin/navigation.php:53
+msgid "Run setup wizard"
+msgstr "Beállításvarázsló futtatása"
+
+#: includes/admin/observability/analytics-service.php:68
+msgid ""
+"Analytics excludes message bodies, user identities, chat IDs, and context "
+"IDs."
+msgstr "Az analitika nem tartalmazza az üzenetek törzsét, a felhasználók személyazonosságát, a csevegésazonosítókat és a kontextusazonosítókat."
+
+#: includes/admin/observability/analytics-service.php:107
+msgid "Invalid analytics date range."
+msgstr "Hibás analitikai dátumtartomány."
+
+#: includes/admin/observability/analytics-service.php:115
+msgid "Analytics start date must be earlier than or equal to the end date."
+msgstr "Az analitika kezdő dátumának a befejezés dátumánál korábbinak vagy azzal megegyezőnek kell lennie."
+
+#: includes/admin/observability/analytics-service.php:125
+msgid "Analytics range must not exceed 366 days."
+msgstr "Az analitikai időszak legfeljebb 366 nap lehet."
+
+#: includes/admin/observability/analytics-service.php:565
+#: includes/contexts/chat-context-resolver.php:317
+#: includes/contexts/chat-context-resolver.php:346
+#: includes/contexts/core-contexts.php:42
+#: includes/contexts/core-contexts.php:86 includes/contexts/manager.php:466
+#: includes/integrations/jetformbuilder/jetformbuilder.php:100
+#: assets/build/jfb-editor.js:1
+msgid "Direct chat"
+msgstr "Közvetlen csevegés"
+
+#: includes/admin/observability/diagnostic-fix-service.php:61
+msgid "Invalid diagnostic fix request."
+msgstr "Hibás diagnosztikai javítási kérelem."
+
+#: includes/admin/observability/diagnostic-fix-service.php:70
+msgid "This diagnostic check does not support an automated fix."
+msgstr "Ez a diagnosztikai ellenőrzés nem támogatja az automatikus javítást."
+
+#: includes/admin/observability/diagnostic-fix-service.php:79
+msgid "Diagnostic check was not found."
+msgstr "A diagnosztikai ellenőrzés nem található."
+
+#: includes/admin/observability/diagnostic-fix-service.php:88
+msgid "This diagnostic check does not currently need an automated fix."
+msgstr "Ehhez a diagnosztikai ellenőrzéshez jelenleg nincs szükség automatikus javításra."
+
+#: includes/admin/observability/diagnostic-fix-service.php:107
+msgid ""
+"JetMessenger tried to fix this diagnostic check, but the check still needs "
+"attention."
+msgstr "A JetMessenger megpróbálta orvosolni az ellenőrzés által feltárt problémát, de az továbbra is figyelmet igényel."
+
+#: includes/admin/observability/diagnostic-fix-service.php:152
+msgid "JetMessenger refreshed the attachment protection files."
+msgstr "A JetMessenger frissítette a csatolmányok védelmi fájljait."
+
+#: includes/admin/observability/diagnostic-fix-service.php:168
+msgid "JetMessenger could not recreate the SQL rate limiter table."
+msgstr "A JetMessenger nem tudta újra létrehozni az SQL-sebességkorlátozó táblát."
+
+#: includes/admin/observability/diagnostic-fix-service.php:173
+#: includes/admin/observability/diagnostic-fix-service.php:241
+msgid "JetMessenger recreated the SQL rate limiter table."
+msgstr "A JetMessenger újra létrehozta az SQL-sebességkorlátozó táblát."
+
+#: includes/admin/observability/diagnostic-fix-service.php:192
+msgid ""
+"JetMessenger refreshed the attachment protection files, but the current "
+"server still appears to allow direct file access. This often means the "
+"environment ignores .htaccess rules, so server-level blocking is still "
+"required."
+msgstr "A JetMessenger frissítette a csatolmányok védelmi fájljait, de úgy tűnik, hogy a jelenlegi szerver továbbra is engedélyezi a fájlok közvetlen elérését. Ez gyakran azt jelenti, hogy a környezet figyelmen kívül hagyja a .htaccess-szabályokat, ezért a szerver szintjén továbbra is blokkolni kell a hozzáférést."
+
+#: includes/admin/observability/diagnostic-fix-service.php:206
+msgid "Attachment storage has not been initialized yet."
+msgstr "A csatolmányok tárhelye még nincs inicializálva."
+
+#: includes/admin/observability/diagnostic-fix-service.php:214
+msgid "JetMessenger could not create the attachment storage directory."
+msgstr "A JetMessenger nem tudta létrehozni a csatolmányok tárolására szolgáló könyvtárat."
+
+#: includes/admin/observability/diagnostic-fix-service.php:222
+msgid "Attachment storage is not writable."
+msgstr "A csatolmányok tárhelye nem írható."
+
+#: includes/admin/observability/diagnostic-fix-service.php:245
+msgid ""
+"Attachment storage protection files were refreshed and direct access is now "
+"blocked."
+msgstr "A csatolmányok tárhelyének védelmi fájljai frissültek, és a közvetlen hozzáférés mostantól blokkolva van."
+
+#: includes/admin/observability/diagnostic-fix-service.php:248
+msgid "Attachment storage protection files were refreshed."
+msgstr "A csatolmányok tárhelyének védelmi fájljai frissültek."
+
+#: includes/admin/observability/diagnostics-service.php:101
+msgid "A diagnostics check crashed"
+msgstr "Egy diagnosztikai ellenőrzés összeomlott"
+
+#: includes/admin/observability/diagnostics-service.php:102
+msgid ""
+"JetMessenger caught an internal diagnostics error while building the report."
+msgstr "A JetMessenger belső diagnosztikai hibát észlelt a jelentés összeállítása közben."
+
+#: includes/admin/observability/diagnostics-service.php:213
+msgid "Core JetMessenger tables are present"
+msgstr "A JetMessenger alapvető táblái rendelkezésre állnak"
+
+#: includes/admin/observability/diagnostics-service.php:214
+msgid "All required JetMessenger tables exist for the current site."
+msgstr "Az aktuális webhelyhez szükséges összes JetMessenger-tábla létezik."
+
+#: includes/admin/observability/diagnostics-service.php:222
+msgid "Core JetMessenger tables are missing"
+msgstr "Hiányoznak a JetMessenger alapvető táblái"
+
+#: includes/admin/observability/diagnostics-service.php:223
+msgid "One or more required JetMessenger tables are missing."
+msgstr "Egy vagy több kötelező JetMessenger-tábla hiányzik."
+
+#: includes/admin/observability/diagnostics-service.php:246
+msgid "Rate limiter table is present"
+msgstr "A sebességkorlátozó tábla rendelkezésre áll"
+
+#: includes/admin/observability/diagnostics-service.php:247
+msgid "The JetMessenger SQL rate limiter table exists for the current site."
+msgstr "Az aktuális webhelyhez tartozó JetMessenger SQL-sebességkorlátozó tábla létezik."
+
+#: includes/admin/observability/diagnostics-service.php:255
+msgid "Rate limiter table is missing"
+msgstr "Hiányzik a sebességkorlátozó tábla"
+
+#: includes/admin/observability/diagnostics-service.php:256
+msgid ""
+"JetMessenger could not find the SQL rate limiter table for the current site."
+" Rate limiting will fail open until it is repaired."
+msgstr "A JetMessenger nem találta az aktuális webhelyhez tartozó SQL-sebességkorlátozó táblát. A tábla javításáig hiba esetén a rendszer átengedi a kéréseket."
+
+#: includes/admin/observability/diagnostics-service.php:278
+msgid "Direct messaging is enabled, but Chats Page URL is empty."
+msgstr "A közvetlen üzenetküldés be van kapcsolva, de a csevegési oldal URL-je üres."
+
+#. translators: %s: context type
+#: includes/admin/observability/diagnostics-service.php:292
+#, php-format
+msgid "Context \"%s\" uses static page routing, but page URL is empty."
+msgstr "A(z) „%s” kontextus statikus oldal alapú útválasztást használ, de az oldal URL-je üres."
+
+#. translators: %s: context type
+#: includes/admin/observability/diagnostics-service.php:304
+#, php-format
+msgid ""
+"Context \"%s\" is configured for WooCommerce endpoint routing, but "
+"WooCommerce is inactive."
+msgstr "A(z) „%s” kontextus WooCommerce-végpont használatán alapuló útválasztásra van beállítva, de a WooCommerce ki van kapcsolva."
+
+#. translators: %s: context type
+#: includes/admin/observability/diagnostics-service.php:318
+#, php-format
+msgid "Context \"%s\" does not have valid chats page routing configured."
+msgstr "A(z) „%s” kontextushoz nincs érvényes útválasztás beállítva a csevegési oldalra."
+
+#: includes/admin/observability/diagnostics-service.php:328
+msgid "Chats routing is configured"
+msgstr "A csevegések útválasztása be van állítva"
+
+#: includes/admin/observability/diagnostics-service.php:329
+msgid "Enabled contexts have routable chats destinations."
+msgstr "A bekapcsolt kontextusokhoz beállított csevegési céloldalak útválasztással elérhetők."
+
+#: includes/admin/observability/diagnostics-service.php:337
+msgid "Chats routing needs attention"
+msgstr "A csevegések útválasztása figyelmet igényel"
+
+#: includes/admin/observability/diagnostics-service.php:338
+msgid ""
+"One or more enabled contexts do not have a valid chats destination "
+"configured."
+msgstr "Egy vagy több bekapcsolt kontextushoz nincs érvényes csevegési céloldal beállítva."
+
+#: includes/admin/observability/diagnostics-service.php:343
+#: includes/admin/observability/diagnostics-service.php:584
+#: includes/admin/observability/diagnostics-service.php:728
+msgid "Open JetMessenger settings"
+msgstr "JetMessenger-beállítások megnyitása"
+
+#: includes/admin/observability/diagnostics-service.php:372
+msgid "JetMessenger REST namespace is registered"
+msgstr "A JetMessenger REST-névtere regisztrálva van"
+
+#: includes/admin/observability/diagnostics-service.php:373
+msgid ""
+"The JetMessenger REST namespace is available in the current site runtime."
+msgstr "A JetMessenger REST-névtere elérhető az aktuális webhely futási környezetében."
+
+#: includes/admin/observability/diagnostics-service.php:381
+msgid "JetMessenger REST namespace is missing"
+msgstr "A JetMessenger REST-névtere hiányzik"
+
+#: includes/admin/observability/diagnostics-service.php:382
+msgid "The JetMessenger REST namespace was not registered."
+msgstr "A JetMessenger REST-névtere nincs regisztrálva."
+
+#: includes/admin/observability/diagnostics-service.php:399
+msgid "Public health endpoint is reachable"
+msgstr "A nyilvános állapotvégpont elérhető"
+
+#: includes/admin/observability/diagnostics-service.php:400
+msgid "The JetMessenger public health endpoint responded successfully."
+msgstr "A JetMessenger nyilvános állapotvégpontja sikeres választ adott."
+
+#: includes/admin/observability/diagnostics-service.php:408
+msgid "Public health endpoint is not reachable"
+msgstr "A nyilvános állapotvégpont nem érhető el"
+
+#: includes/admin/observability/diagnostics-service.php:409
+msgid ""
+"The JetMessenger public health endpoint did not return a successful "
+"response."
+msgstr "A JetMessenger nyilvános állapotvégpontja nem adott sikeres választ."
+
+#: includes/admin/observability/diagnostics-service.php:436
+msgid "Admin observability routes are reachable"
+msgstr "Az admin megfigyelhetőségi útvonalak elérhetők"
+
+#: includes/admin/observability/diagnostics-service.php:437
+msgid ""
+"JetMessenger admin observability endpoints respond correctly for "
+"administrators."
+msgstr "A JetMessenger admin megfigyelhetőségi végpontjai megfelelően válaszolnak az adminisztrátoroknak."
+
+#: includes/admin/observability/diagnostics-service.php:445
+msgid "Admin observability routes are not reachable"
+msgstr "Az admin megfigyelhetőségi útvonalak nem érhetők el"
+
+#: includes/admin/observability/diagnostics-service.php:446
+msgid ""
+"JetMessenger admin observability endpoints did not return a successful "
+"response."
+msgstr "A JetMessenger admin megfigyelhetőségi végpontjai nem adtak sikeres választ."
+
+#: includes/admin/observability/diagnostics-service.php:470
+msgid "Enabled contexts are registered"
+msgstr "A bekapcsolt kontextusok regisztrálva vannak"
+
+#: includes/admin/observability/diagnostics-service.php:471
+msgid "Every enabled context has a registered context handler."
+msgstr "Minden bekapcsolt kontextushoz tartozik regisztrált kontextuskezelő."
+
+#: includes/admin/observability/diagnostics-service.php:479
+msgid "One or more enabled contexts are missing"
+msgstr "Egy vagy több bekapcsolt kontextus hiányzik"
+
+#: includes/admin/observability/diagnostics-service.php:480
+msgid "An enabled context type does not have a registered handler."
+msgstr "Egy bekapcsolt kontextustípushoz nincs regisztrált kezelő."
+
+#: includes/admin/observability/diagnostics-service.php:507
+msgid "WooCommerce product auto-injected Start Chat button"
+msgstr "Automatikusan beszúrt Csevegés indítása gomb a WooCommerce-termékeknél"
+
+#: includes/admin/observability/diagnostics-service.php:521
+msgid ""
+"Checked Gutenberg content, Elementor data, Bricks data, and WooCommerce "
+"product auto-button settings."
+msgstr "A Gutenberg-tartalom, az Elementor-adatok, a Bricks-adatok és a WooCommerce-termékekhez automatikusan hozzáadott gombok beállításai ellenőrizve."
+
+#: includes/admin/observability/diagnostics-service.php:529
+msgid "No Start Chat surface is required right now"
+msgstr "Jelenleg nincs szükség Csevegés indítása felületre"
+
+#: includes/admin/observability/diagnostics-service.php:530
+msgid ""
+"No enabled context currently requires a discoverable Start Chat entry point."
+msgstr "Jelenleg egyetlen bekapcsolt kontextus sem igényel könnyen megtalálható Csevegés indítása belépési pontot."
+
+#. translators: 1: source key, 2: number of matches
+#: includes/admin/observability/diagnostics-service.php:545
+#: includes/admin/observability/diagnostics-service.php:644
+#, php-format
+msgid "%1$s: %2$d match(es)"
+msgstr "%1$s: %2$d egyezés"
+
+#: includes/admin/observability/diagnostics-service.php:556
+#: includes/admin/observability/diagnostics-service.php:1305
+msgid "Start Chat surfaces are configured"
+msgstr "A Csevegés indítása felületei be vannak állítva"
+
+#: includes/admin/observability/diagnostics-service.php:557
+#: includes/admin/observability/diagnostics-service.php:1323
+msgid ""
+"Enabled contexts have valid chat start flows or compatible Start Chat entry "
+"points."
+msgstr "A bekapcsolt kontextusokhoz érvényes csevegésindítási folyamatok vagy kompatibilis Csevegés indítása belépési pontok tartoznak."
+
+#: includes/admin/observability/diagnostics-service.php:580
+#: includes/admin/observability/diagnostics-service.php:678
+#: includes/admin/observability/diagnostics-service.php:1058
+msgid "Open setup wizard"
+msgstr "Telepítővarázsló megnyitása"
+
+#: includes/admin/observability/diagnostics-service.php:611
+msgid "No My Chats surface is required right now"
+msgstr "Jelenleg nincs szükség Saját csevegéseim felületre"
+
+#: includes/admin/observability/diagnostics-service.php:612
+msgid "No enabled context currently requires a discoverable My Chats surface."
+msgstr "Jelenleg egyetlen bekapcsolt kontextus sem igényel könnyen megtalálható Saját csevegéseim felületet."
+
+#: includes/admin/observability/diagnostics-service.php:630
+msgid "WooCommerce account endpoint My Chats surface"
+msgstr "Saját csevegéseim felület a WooCommerce-fiók végpontján"
+
+#: includes/admin/observability/diagnostics-service.php:656
+msgid "My Chats surfaces are discoverable"
+msgstr "A Saját csevegéseim felületei könnyen megtalálhatók"
+
+#: includes/admin/observability/diagnostics-service.php:657
+msgid ""
+"JetMessenger found at least one My Chats block, widget, element, or runtime "
+"endpoint."
+msgstr "A JetMessenger legalább egy Saját csevegéseim blokkot, widgetet, elemet vagy futásidejű végpontot talált."
+
+#: includes/admin/observability/diagnostics-service.php:673
+msgid "No My Chats surface was found"
+msgstr "Nem található Saját csevegéseim felület"
+
+#: includes/admin/observability/diagnostics-service.php:674
+msgid ""
+"Enabled contexts may need a My Chats block, widget, element, or context-"
+"owned endpoint so users can view conversations."
+msgstr "A bekapcsolt kontextusokhoz szükség lehet Saját csevegéseim blokkra, widgetre, elemre vagy a kontextushoz tartozó végpontra, hogy a felhasználók megtekinthessék a beszélgetéseket."
+
+#: includes/admin/observability/diagnostics-service.php:703
+msgid "WooCommerce endpoint slugs are unique"
+msgstr "A WooCommerce-végpontok slugjai egyediek"
+
+#: includes/admin/observability/diagnostics-service.php:704
+msgid ""
+"Enabled WooCommerce endpoint contexts do not declare duplicate endpoint "
+"slugs."
+msgstr "A WooCommerce-végpontokhoz tartozó bekapcsolt kontextusok nem adnak meg duplikált végpontslugokat"
+
+#. translators: 1: endpoint slug, 2: comma-separated context types
+#: includes/admin/observability/diagnostics-service.php:712
+#, php-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: includes/admin/observability/diagnostics-service.php:722
+msgid "WooCommerce endpoint slugs conflict"
+msgstr "A WooCommerce-végpontok slugjai ütköznek"
+
+#: includes/admin/observability/diagnostics-service.php:723
+msgid ""
+"Multiple enabled contexts use the same WooCommerce account endpoint slug. "
+"JetMessenger will append suffixes at runtime, but explicit unique slugs are "
+"easier to support."
+msgstr "Több bekapcsolt kontextus ugyanazt a WooCommerce-fiókvégpont-slugot használja. A JetMessenger futásidőben utótagokat fűz hozzájuk, de az egyedi slugok megkönnyítik a támogatást."
+
+#: includes/admin/observability/diagnostics-service.php:751
+msgid "Attachment storage has not been initialized yet"
+msgstr "A csatolmányok tárolása még nincs inicializálva"
+
+#: includes/admin/observability/diagnostics-service.php:752
+msgid ""
+"No attachment directory hash exists yet, which is expected when the site has"
+" not stored any chat attachments."
+msgstr "Még nem létezik csatolmánykönyvtár-hash; ez várható, ha a webhelyen még nem tároltak csevegési csatolmányokat."
+
+#: includes/admin/observability/diagnostics-service.php:761
+msgid "Attachment storage is inconsistent"
+msgstr "A csatolmányok tárolása nem konzisztens"
+
+#: includes/admin/observability/diagnostics-service.php:762
+msgid ""
+"Attachment metadata exists, but the hashed attachment directory is not "
+"configured."
+msgstr "Léteznek csatolmány-metaadatok, de nincs beállítva a hash-elt csatolmánykönyvtár."
+
+#: includes/admin/observability/diagnostics-service.php:770
+msgid "Attachment storage is initialized"
+msgstr "A csatolmányok tárolása inicializálva van"
+
+#: includes/admin/observability/diagnostics-service.php:771
+msgid "JetMessenger attachment storage has a configured media directory hash."
+msgstr "A JetMessenger csatolmánytárolójához be van állítva a médiakönyvtár hash-e."
+
+#: includes/admin/observability/diagnostics-service.php:789
+msgid "Attachment directory has not been created yet"
+msgstr "A csatolmánykönyvtár még nincs létrehozva"
+
+#: includes/admin/observability/diagnostics-service.php:790
+#: includes/admin/observability/diagnostics-service.php:838
+#: includes/admin/observability/diagnostics-service.php:946
+msgid "JetMessenger has not created its attachment directory yet."
+msgstr "A JetMessenger még nem hozta létre a csatolmányok könyvtárát."
+
+#: includes/admin/observability/diagnostics-service.php:799
+msgid "Attachment directory is missing"
+msgstr "Hiányzik a csatolmányok könyvtára"
+
+#: includes/admin/observability/diagnostics-service.php:800
+msgid ""
+"JetMessenger has a configured attachment directory hash, but the physical "
+"directory does not exist."
+msgstr "A JetMessenger csatolmánykönyvtárához be van állítva egy hash, de a fizikai könyvtár nem létezik."
+
+#: includes/admin/observability/diagnostics-service.php:809
+msgid "Attachment directory is not writable"
+msgstr "A csatolmányok könyvtára nem írható"
+
+#: includes/admin/observability/diagnostics-service.php:810
+msgid "The JetMessenger attachment directory exists but is not writable."
+msgstr "A JetMessenger csatolmánykönyvtára létezik, de nem írható."
+
+#: includes/admin/observability/diagnostics-service.php:818
+msgid "Attachment directory is writable"
+msgstr "A csatolmányok könyvtára írható"
+
+#: includes/admin/observability/diagnostics-service.php:819
+msgid "JetMessenger can write to its attachment directory."
+msgstr "A JetMessenger tud írni a csatolmányok könyvtárába."
+
+#: includes/admin/observability/diagnostics-service.php:837
+msgid "Attachment protection files are not applicable yet"
+msgstr "A csatolmányvédelmi fájlok egyelőre nem relevánsak"
+
+#: includes/admin/observability/diagnostics-service.php:849
+msgid "Attachment protection files are present"
+msgstr "A csatolmányvédelmi fájlok megvannak"
+
+#: includes/admin/observability/diagnostics-service.php:850
+msgid "JetMessenger attachment protection files were found and look valid."
+msgstr "A JetMessenger csatolmányvédelmi fájljai megvannak, és érvényesnek tűnnek."
+
+#: includes/admin/observability/diagnostics-service.php:858
+msgid "Attachment protection files need attention"
+msgstr "A csatolmányvédelmi fájlok figyelmet igényelnek"
+
+#: includes/admin/observability/diagnostics-service.php:859
+msgid "JetMessenger attachment protection files are missing or incomplete."
+msgstr "A JetMessenger csatolmányvédelmi fájljai hiányoznak vagy hiányosak."
+
+#: includes/admin/observability/diagnostics-service.php:880
+msgid "Private attachment route is registered"
+msgstr "A privát csatolmányok útvonala regisztrálva van"
+
+#: includes/admin/observability/diagnostics-service.php:881
+msgid "JetMessenger private attachment delivery route is available."
+msgstr "A JetMessenger privát csatolmánykézbesítési útvonala elérhető."
+
+#: includes/admin/observability/diagnostics-service.php:889
+msgid "Private attachment route is missing"
+msgstr "Hiányzik a privát csatolmányok útvonala"
+
+#: includes/admin/observability/diagnostics-service.php:890
+msgid "JetMessenger private attachment delivery route was not registered."
+msgstr "A JetMessenger privát csatolmánykézbesítési útvonala nincs regisztrálva."
+
+#: includes/admin/observability/diagnostics-service.php:917
+msgid "Private attachment route is permission guarded"
+msgstr "A privát csatolmányok útvonalát jogosultság-ellenőrzés védi"
+
+#: includes/admin/observability/diagnostics-service.php:918
+msgid ""
+"Unauthenticated attachment delivery requests do not receive successful "
+"responses."
+msgstr "A nem hitelesített csatolmánykézbesítési kérések nem kapnak sikeres választ."
+
+#: includes/admin/observability/diagnostics-service.php:926
+msgid "Private attachment route permissions need attention"
+msgstr "A privát csatolmányok útvonalának jogosultságai figyelmet igényelnek"
+
+#: includes/admin/observability/diagnostics-service.php:927
+msgid ""
+"The private attachment delivery route returned a successful response to an "
+"unauthenticated request."
+msgstr "A privát csatolmánykézbesítési útvonal sikeres választ adott egy nem hitelesített kérésre."
+
+#: includes/admin/observability/diagnostics-service.php:945
+msgid "Attachment direct-file probe is not applicable yet"
+msgstr "A csatolmányok közvetlen fájlelérési tesztje egyelőre nem releváns"
+
+#: includes/admin/observability/diagnostics-service.php:955
+#: includes/admin/observability/diagnostics-service.php:976
+msgid "Attachment direct-file probe could not run"
+msgstr "A csatolmányok közvetlen fájlelérési tesztje nem futtatható"
+
+#: includes/admin/observability/diagnostics-service.php:956
+msgid ""
+"JetMessenger could not run the direct file access probe because the "
+"attachment directory is not writable."
+msgstr "A JetMessenger nem tudta lefuttatni a közvetlen fájlelérési tesztet, mert a csatolmányok könyvtára nem írható."
+
+#: includes/admin/observability/diagnostics-service.php:977
+msgid ""
+"JetMessenger could not create a temporary probe file for the direct access "
+"check."
+msgstr "A JetMessenger nem tudott ideiglenes tesztfájlt létrehozni a közvetlen elérés ellenőrzéséhez."
+
+#: includes/admin/observability/diagnostics-service.php:994
+msgid "Attachment direct-file probe could not be completed"
+msgstr "A csatolmányok közvetlen fájlelérési tesztjét nem sikerült befejezni"
+
+#: includes/admin/observability/diagnostics-service.php:995
+msgid ""
+"JetMessenger could not verify direct attachment URL blocking from this "
+"environment."
+msgstr "A JetMessenger ebből a környezetből nem tudta ellenőrizni, hogy a csatolmányok közvetlen URL-es elérése blokkolva van-e."
+
+#: includes/admin/observability/diagnostics-service.php:1007
+msgid "Attachment files are directly accessible"
+msgstr "A csatolmányfájlok közvetlenül elérhetők"
+
+#: includes/admin/observability/diagnostics-service.php:1008
+msgid ""
+"A direct unauthenticated request to the JetMessenger attachment directory "
+"returned file contents."
+msgstr "A JetMessenger csatolmányok könyvtárához intézett közvetlen, nem hitelesített kérés fájltartalmat adott vissza."
+
+#: includes/admin/observability/diagnostics-service.php:1011
+msgid ""
+"JetMessenger wrote the expected protection files, but the current web server"
+" is still serving files from the attachment directory."
+msgstr "A JetMessenger létrehozta a várt védelmi fájlokat, de az aktuális webszerver továbbra is kiszolgálja a csatolmányok könyvtárában lévő fájlokat."
+
+#: includes/admin/observability/diagnostics-service.php:1012
+msgid ""
+"This commonly happens on local or hosted environments where .htaccess is "
+"ignored, such as Nginx, or when Apache AllowOverride rules are disabled."
+msgstr "Ez gyakran előfordul olyan helyi vagy tárhelyszolgáltatói környezetekben, ahol a .htaccess fájlokat figyelmen kívül hagyják (például Nginx esetén), vagy az Apache AllowOverride szabályai ki vannak kapcsolva."
+
+#: includes/admin/observability/diagnostics-service.php:1013
+msgid ""
+"Use the private attachment delivery route for access and add server-level "
+"direct-access blocking if the environment does not honor .htaccess rules."
+msgstr "A hozzáféréshez használja a privát csatolmánykiszolgálási útvonalat, és állítson be szerveroldali tiltást a közvetlen hozzáférés ellen, ha a környezet nem veszi figyelembe a .htaccess szabályait."
+
+#: includes/admin/observability/diagnostics-service.php:1023
+msgid "Attachment direct file access appears blocked"
+msgstr "Úgy tűnik, a csatolmányfájlok közvetlen elérése blokkolva van"
+
+#: includes/admin/observability/diagnostics-service.php:1024
+msgid ""
+"JetMessenger did not observe successful unauthenticated direct file access "
+"to the attachment directory."
+msgstr "A JetMessenger nem észlelte, hogy hitelesítés nélkül sikerült volna közvetlenül hozzáférni a csatolmánykönyvtár fájljaihoz."
+
+#: includes/admin/observability/diagnostics-service.php:1044
+msgid "Setup wizard has been completed"
+msgstr "A beállítási varázsló befejeződött"
+
+#: includes/admin/observability/diagnostics-service.php:1045
+msgid "JetMessenger setup wizard completion is recorded for this site."
+msgstr "A JetMessenger beállítási varázslójának befejezése rögzítve van ennél a webhelynél."
+
+#: includes/admin/observability/diagnostics-service.php:1053
+msgid "Setup wizard has not been completed"
+msgstr "A beállítási varázsló még nem fejeződött be"
+
+#: includes/admin/observability/diagnostics-service.php:1054
+msgid "JetMessenger setup wizard completion is not recorded for this site."
+msgstr "A JetMessenger beállítási varázslójának befejezése nincs rögzítve ennél a webhelynél."
+
+#: includes/admin/observability/diagnostics-service.php:1140
+msgid "The context-owned Start Chat diagnostics callback failed."
+msgstr "A kontextushoz tartozó Start Chat diagnosztikai visszahívás sikertelen."
+
+#: includes/admin/observability/diagnostics-service.php:1163
+msgid ""
+"A compatible Start Chat block, widget, element, or runtime button was "
+"discovered."
+msgstr "Kompatibilis Start Chat blokkot, widgetet, elemet vagy futásidejű gombot találtunk."
+
+#: includes/admin/observability/diagnostics-service.php:1164
+msgid "Add a compatible Start Chat block, widget, element, or runtime button."
+msgstr "Adjon hozzá kompatibilis Start Chat blokkot, widgetet, elemet vagy futásidejű gombot."
+
+#: includes/admin/observability/diagnostics-service.php:1222
+#: assets/build/analytics-diagnostics.js:1
+msgid "Pass"
+msgstr "Sikeres"
+
+#: includes/admin/observability/diagnostics-service.php:1223
+#: assets/build/analytics-diagnostics.js:1
+msgid "Warn"
+msgstr "Figyelmeztetés"
+
+#: includes/admin/observability/diagnostics-service.php:1224
+#: assets/build/analytics-diagnostics.js:1
+msgid "Fail"
+msgstr "Sikertelen"
+
+#: includes/admin/observability/diagnostics-service.php:1225
+#: assets/build/analytics-diagnostics.js:1
+msgid "Info"
+msgstr "Információ"
+
+#. translators: 1: context label, 2: status, 3: detail
+#: includes/admin/observability/diagnostics-service.php:1245
+#, php-format
+msgid "%4$s %1$s: %2$s - %3$s"
+msgstr "%4$s %1$s: %2$s - %3$s"
+
+#: includes/admin/observability/diagnostics-service.php:1307
+msgid "Some Start Chat surfaces are missing"
+msgstr "Néhány Start Chat-felület hiányzik"
+
+#: includes/admin/observability/diagnostics-service.php:1309
+msgid "No Start Chat surface was found"
+msgstr "Nem található Start Chat-felület"
+
+#: includes/admin/observability/diagnostics-service.php:1325
+msgid ""
+"Some enabled contexts have a valid Start Chat flow, but one or more other "
+"enabled contexts are still missing a compatible surface."
+msgstr "Néhány bekapcsolt kontextusban érvényes Start Chat-folyamat érhető el, de egy vagy több másik bekapcsolt kontextushoz továbbra is hiányzik a kompatibilis felület."
+
+#: includes/admin/observability/diagnostics-service.php:1327
+msgid ""
+"Enabled Start Chat contexts were checked, but no valid Start Chat surface "
+"was found for any of them."
+msgstr "A bekapcsolt Start Chat-kontextusok ellenőrzése megtörtént, de egyikhez sem található érvényes Start Chat-felület."
+
+#: includes/admin/observability/diagnostics-service.php:1638
+#: assets/build/analytics-diagnostics.js:1
+msgid "Fix this"
+msgstr "Javítás"
+
+#: includes/admin/settings-page.php:142 includes/admin/settings-page.php:143
+msgid "Messenger"
+msgstr "Messenger"
+
+#. translators: %s: context type key.
+#: includes/admin/settings-page.php:792
+#, php-format
+msgid "WooCommerce endpoint routing for \"%s\" requires an Endpoint URL Slug."
+msgstr "A(z) „%s” WooCommerce-végpont útválasztásához meg kell adni egy végpont-URL-slugot."
+
+#: includes/admin/settings-page.php:946 includes/admin/settings-page.php:981
+msgid "JetMessenger Settings"
+msgstr "JetMessenger beállításai"
+
+#: includes/admin/settings-page.php:984
+msgid "Loading settings…"
+msgstr "Beállítások betöltése…"
+
+#: includes/admin/settings-page.php:1036
+msgid ""
+"WooCommerce is inactive. Contexts configured to use WooCommerce account "
+"endpoints will not be available until WooCommerce is enabled."
+msgstr "A WooCommerce ki van kapcsolva. A WooCommerce-fiókvégpontok használatára beállított kontextusok a WooCommerce bekapcsolásáig nem lesznek elérhetők."
+
+#: includes/admin/settings-page.php:1073
+msgid ""
+"Multiple contexts are configured with the same WooCommerce account endpoint "
+"slug. JetMessenger will auto-append suffixes to avoid conflicts."
+msgstr "Több kontextus ugyanazt a WooCommerce-fiókvégpont-slugot használja. A JetMessenger az ütközések elkerülése érdekében automatikusan utótagokat fűz a slugokhoz."
+
+#: includes/admin/setup-wizard-page.php:104
+msgid "Setup Wizard"
+msgstr "Telepítővarázsló"
+
+#: includes/admin/setup-wizard-page.php:166
+msgid "You do not have permission to access this page."
+msgstr "Nincs jogosultsága az oldal eléréséhez."
+
+#: includes/admin/setup-wizard-page.php:247
+#: includes/integrations/bricks/elements/my-chats.php:44
+#: includes/integrations/elementor/widgets/my-chats.php:53
+#: includes/translations/registry.php:27
+#: includes/translations/registry.php:422
+msgid "My Chats"
+msgstr "Csevegéseim"
+
+#: includes/admin/setup-wizard-page.php:248
+msgid "Post Chats"
+msgstr "Bejegyzésekhez tartozó csevegések"
+
+#: includes/admin/setup-wizard-page.php:249
+msgid "Product Chats"
+msgstr "Termékcsevegések"
+
+#: includes/admin/setup-wizard-page.php:250
+msgid "Order Chats"
+msgstr "Rendelési csevegések"
+
+#: includes/admin/setup-wizard-page.php:287 assets/build/wizard.js:1
+msgid "JetMessenger Setup Wizard"
+msgstr "JetMessenger beállítási varázslója"
+
+#: includes/assets/manager.php:354
+#: includes/integrations/woo/account-endpoints.php:117
+msgid "Please log in to view your chats."
+msgstr "Kérjük, jelentkezzen be a csevegései megtekintéséhez."
+
+#: includes/assets/manager.php:384
+#: includes/renderers/start-chat-button.php:113
+msgid "Messenger Settings"
+msgstr "Messenger beállításai"
+
+#: includes/assets/manager.php:949
+#: includes/integrations/jetengine/dynamic-visibility/base-condition.php:170
+#: includes/services/user-resolver-controller.php:134
+#: assets/build/block-editor.js:1
+msgid "Select resolver"
+msgstr "Feloldó kiválasztása"
+
+#: includes/contexts/chat-context-resolver.php:108
+#: includes/contexts/chat-context-resolver.php:117
+msgid "Chat not found."
+msgstr "A csevegés nem található."
+
+#: includes/contexts/chat-context-resolver.php:155
+#: includes/contexts/chat-context-resolver.php:182
+msgid "You are not allowed to access this chat context."
+msgstr "Ön nem férhet hozzá ehhez a csevegési kontextushoz."
+
+#: includes/contexts/chat-context-resolver.php:205
+#: includes/rest-api/attachments-controller.php:84
+#: includes/rest-api/notifications-controller.php:143
+#: includes/services/create-chat-service.php:228
+msgid "You must be logged in."
+msgstr "Be kell jelentkeznie."
+
+#: includes/contexts/chat-context-resolver.php:214
+#: includes/contexts/chat-context-resolver.php:223
+msgid "Invalid chat."
+msgstr "Hibás csevegés."
+
+#: includes/contexts/chat-context-resolver.php:232
+msgid "You are not a participant of this chat."
+msgstr "Ön nem résztvevője ennek a csevegésnek."
+
+#: includes/contexts/chat-context-resolver.php:320
+#: includes/contexts/manager.php:469
+#, php-format
+msgid "%1$s #%2$s"
+msgstr "%1$s #%2$s"
+
+#: includes/contexts/chat-context-resolver.php:510
+msgid "You are not allowed to start this contextual chat."
+msgstr "Ön nem indíthat ilyen kontextusú csevegést."
+
+#: includes/contexts/core-contexts.php:60
+#: includes/contexts/core-contexts.php:132
+msgid "Post chats"
+msgstr "Bejegyzésekhez tartozó csevegések"
+
+#: includes/contexts/core-contexts.php:80
+msgid "Direct chats must use ID 0."
+msgstr "A közvetlen csevegésekhez 0-s ID-t kell használni."
+
+#: includes/contexts/core-contexts.php:107
+msgid "Direct chats"
+msgstr "Közvetlen csevegések"
+
+#: includes/contexts/core-contexts.php:111
+msgid ""
+"A generic or direct Start Chat block, widget, or element was discovered."
+msgstr "Általános vagy közvetlen Start Chat-blokkot, widgetet vagy elemet találtunk."
+
+#: includes/contexts/core-contexts.php:112
+msgid "Add a Start Chat block, widget, or element for direct chats."
+msgstr "Adjon hozzá egy Start Chat-blokkot, widgetet vagy elemet a közvetlen csevegésekhez."
+
+#: includes/contexts/core-contexts.php:136
+msgid ""
+"A compatible Start Chat block, widget, or element was discovered for post "
+"chats."
+msgstr "Kompatibilis csevegésindító blokkot, widgetet vagy elemet találtunk a bejegyzésekhez kapcsolódó csevegésekhez."
+
+#: includes/contexts/core-contexts.php:137
+msgid "Add a compatible Start Chat block, widget, or element for post chats."
+msgstr "Adjon hozzá egy kompatibilis csevegésindító blokkot, widgetet vagy elemet a bejegyzésekhez kapcsolódó csevegésekhez."
+
+#: includes/contexts/core-contexts.php:185
+msgid "Invalid post context id."
+msgstr "A bejegyzés kontextusának ID-je hibás."
+
+#: includes/contexts/core-contexts.php:194
+#: includes/contexts/core-contexts.php:228
+msgid "Post not found."
+msgstr "A bejegyzés nem található."
+
+#: includes/contexts/core-contexts.php:200
+#, php-format
+msgid "Post #%d"
+msgstr "Bejegyzés #%d"
+
+#: includes/contexts/core-contexts.php:244
+#: includes/contexts/core-contexts.php:255
+msgid "You are not allowed to access this post."
+msgstr "Nincs jogosultsága a bejegyzés eléréséhez."
+
+#: includes/contexts/manager.php:148 includes/contexts/manager.php:190
+#: includes/contexts/manager.php:232
+msgid "Unknown context type."
+msgstr "Ismeretlen kontextustípus."
+
+#: includes/db/store/services/global-notifications.php:859
+#: includes/rest-api/notifications-v2-controller.php:187
+msgid "Global notifications are temporarily unavailable."
+msgstr "A globális értesítések átmenetileg nem érhetők el."
+
+#: includes/db/store/services/global-notifications.php:875
+msgid "The global notification operation failed."
+msgstr "A globális értesítési művelet sikertelen volt."
+
+#: includes/db/store/services/global-notifications.php:893
+#: includes/rest-api/admin-notifications-controller.php:322
+msgid "Global notification not found."
+msgstr "A globális értesítés nem található."
+
+#: includes/db/store/services/messages.php:75
+msgid "Invalid message cursor."
+msgstr "Hibás üzenetkurzor."
+
+#: includes/integrations/bricks/elements/my-chats.php:54
+#: includes/integrations/bricks/elements/notifications.php:76
+#: includes/integrations/bricks/elements/start-new-chat.php:60
+#: includes/integrations/elementor/widgets/my-chats.php:83
+#: includes/integrations/elementor/widgets/notifications.php:75
+#: assets/build/analytics-diagnostics.js:1 assets/build/block-editor.js:1
+msgid "Context"
+msgstr "Kontextus"
+
+#: includes/integrations/bricks/elements/my-chats.php:59
+#: includes/integrations/elementor/widgets/my-chats.php:114
+msgid "Chats list area"
+msgstr "Csevegéslista területe"
+
+#: includes/integrations/bricks/elements/my-chats.php:64
+#: includes/integrations/elementor/widgets/my-chats.php:254
+msgid "Messages area"
+msgstr "Üzenetek területe"
+
+#: includes/integrations/bricks/elements/my-chats.php:69
+#: includes/integrations/elementor/widgets/my-chats.php:352
+msgid "Message input area"
+msgstr "Üzenetbeviteli terület"
+
+#: includes/integrations/bricks/elements/my-chats.php:83
+#: includes/integrations/elementor/widgets/my-chats.php:90
+#: includes/integrations/jetengine/dynamic-visibility/base-condition.php:124
+#: includes/privacy/exporter.php:117 assets/build/jfb-editor.js:1
+msgid "Context type"
+msgstr "Kontextus típusa"
+
+#: includes/integrations/bricks/elements/my-chats.php:92
+#: includes/integrations/elementor/widgets/my-chats.php:100
+#: assets/build/block-editor.js:1
+msgid "Custom context type"
+msgstr "Egyéni kontextustípus"
+
+#: includes/integrations/bricks/elements/my-chats.php:100
+#: includes/integrations/elementor/widgets/my-chats.php:122
+msgid "Width"
+msgstr "Szélesség"
+
+#: includes/integrations/bricks/elements/my-chats.php:112
+#: includes/integrations/bricks/elements/my-chats.php:234
+#: includes/integrations/bricks/elements/my-chats.php:331
+#: includes/integrations/bricks/elements/start-new-chat.php:223
+#: includes/integrations/bricks/elements/start-new-chat.php:347
+#: includes/integrations/elementor/widgets/my-chats.php:144
+#: includes/integrations/elementor/widgets/my-chats.php:262
+#: includes/integrations/elementor/widgets/my-chats.php:360
+#: includes/integrations/elementor/widgets/start-new-chat.php:313
+#: includes/integrations/elementor/widgets/start-new-chat.php:434
+#: assets/build/block-editor.js:1
+msgid "Background color"
+msgstr "Háttérszín"
+
+#: includes/integrations/bricks/elements/my-chats.php:124
+#: includes/integrations/bricks/elements/my-chats.php:343
+#: includes/integrations/bricks/elements/start-new-chat.php:235
+#: includes/integrations/bricks/elements/start-new-chat.php:359
+#: includes/integrations/elementor/widgets/my-chats.php:155
+#: includes/integrations/elementor/widgets/my-chats.php:371
+#: includes/integrations/elementor/widgets/start-new-chat.php:324
+#: includes/integrations/elementor/widgets/start-new-chat.php:445
+#: assets/build/block-editor.js:1
+msgid "Border color"
+msgstr "Szegély színe"
+
+#: includes/integrations/bricks/elements/my-chats.php:136
+#: includes/integrations/bricks/elements/my-chats.php:367
+#: includes/integrations/bricks/elements/start-new-chat.php:259
+#: includes/integrations/bricks/elements/start-new-chat.php:383
+#: includes/integrations/elementor/widgets/my-chats.php:166
+#: includes/integrations/elementor/widgets/my-chats.php:393
+#: includes/integrations/elementor/widgets/start-new-chat.php:347
+#: includes/integrations/elementor/widgets/start-new-chat.php:468
+#: assets/build/block-editor.js:1
+msgid "Border radius"
+msgstr "Keret lekerekítése"
+
+#: includes/integrations/bricks/elements/my-chats.php:148
+#: includes/integrations/bricks/elements/my-chats.php:246
+#: includes/integrations/bricks/elements/start-new-chat.php:271
+#: includes/integrations/bricks/elements/start-new-chat.php:395
+#: includes/integrations/elementor/widgets/my-chats.php:178
+#: includes/integrations/elementor/widgets/my-chats.php:273
+#: includes/integrations/elementor/widgets/start-new-chat.php:359
+#: includes/integrations/elementor/widgets/start-new-chat.php:480
+#: assets/build/block-editor.js:1
+msgid "Padding"
+msgstr "Padding"
+
+#: includes/integrations/bricks/elements/my-chats.php:160
+#: includes/integrations/elementor/widgets/my-chats.php:190
+msgid "Active item background color"
+msgstr "Aktív tétel háttérszíne"
+
+#: includes/integrations/bricks/elements/my-chats.php:172
+#: includes/integrations/elementor/widgets/my-chats.php:201
+msgid "Hover item background color"
+msgstr "Tétel háttérszíne rámutatáskor"
+
+#: includes/integrations/bricks/elements/my-chats.php:184
+#: includes/integrations/elementor/widgets/my-chats.php:212
+msgid "Hover item text color"
+msgstr "Tétel szövegének színe rámutatáskor"
+
+#: includes/integrations/bricks/elements/my-chats.php:196
+#: includes/integrations/elementor/widgets/my-chats.php:223
+msgid "Hover item border color"
+msgstr "Tétel szegélyének színe rámutatáskor"
+
+#: includes/integrations/bricks/elements/my-chats.php:208
+#: includes/integrations/elementor/widgets/my-chats.php:235
+msgid "Chat title typography"
+msgstr "Csevegéscím tipográfiája"
+
+#: includes/integrations/bricks/elements/my-chats.php:221
+#: includes/integrations/elementor/widgets/my-chats.php:244
+msgid "Chat meta typography"
+msgstr "Csevegés metaadatainak tipográfiája"
+
+#: includes/integrations/bricks/elements/my-chats.php:258
+#: includes/integrations/elementor/widgets/my-chats.php:285
+msgid "Message bubble radius"
+msgstr "Üzenetbuborék saroklekerekítése"
+
+#: includes/integrations/bricks/elements/my-chats.php:270
+#: includes/integrations/elementor/widgets/my-chats.php:297
+msgid "\"Me\" bubble background"
+msgstr "Az „Én” buborék háttere"
+
+#: includes/integrations/bricks/elements/my-chats.php:282
+#: includes/integrations/elementor/widgets/my-chats.php:308
+msgid "\"Me\" bubble text color"
+msgstr "Az „Én” buborék szövegének színe"
+
+#: includes/integrations/bricks/elements/my-chats.php:294
+#: includes/integrations/elementor/widgets/my-chats.php:319
+msgid "\"Other\" bubble background"
+msgstr "A „Másik” buborék háttere"
+
+#: includes/integrations/bricks/elements/my-chats.php:306
+#: includes/integrations/elementor/widgets/my-chats.php:330
+msgid "\"Other\" bubble text color"
+msgstr "A „Másik” buborék szövegének színe"
+
+#: includes/integrations/bricks/elements/my-chats.php:318
+#: includes/integrations/elementor/widgets/my-chats.php:342
+msgid "Message text typography"
+msgstr "Üzenetszöveg tipográfiája"
+
+#: includes/integrations/bricks/elements/my-chats.php:355
+#: includes/integrations/bricks/elements/start-new-chat.php:211
+#: includes/integrations/elementor/widgets/my-chats.php:382
+#: includes/integrations/elementor/widgets/start-new-chat.php:302
+msgid "Text color"
+msgstr "Szöveg színe"
+
+#: includes/integrations/bricks/elements/my-chats.php:379
+#: includes/integrations/elementor/widgets/my-chats.php:405
+#: assets/build/block-editor.js:1
+msgid "Attach button background"
+msgstr "Csatolás gomb háttere"
+
+#: includes/integrations/bricks/elements/my-chats.php:391
+#: includes/integrations/elementor/widgets/my-chats.php:416
+msgid "Attach button text color"
+msgstr "Csatolás gomb szövegének színe"
+
+#: includes/integrations/bricks/elements/my-chats.php:403
+#: includes/integrations/elementor/widgets/my-chats.php:427
+msgid "Attach button border color"
+msgstr "Csatolás gomb szegélyének színe"
+
+#: includes/integrations/bricks/elements/my-chats.php:415
+#: includes/integrations/elementor/widgets/my-chats.php:438
+#: assets/build/block-editor.js:1
+msgid "Attach button border radius"
+msgstr "Csatolás gomb saroklekerekítése"
+
+#: includes/integrations/bricks/elements/my-chats.php:427
+#: includes/integrations/elementor/widgets/my-chats.php:450
+#: assets/build/block-editor.js:1
+msgid "Send button background"
+msgstr "Küldés gomb háttere"
+
+#: includes/integrations/bricks/elements/my-chats.php:439
+#: includes/integrations/elementor/widgets/my-chats.php:461
+msgid "Send button text color"
+msgstr "Küldés gomb szövegének színe"
+
+#: includes/integrations/bricks/elements/my-chats.php:451
+#: includes/integrations/elementor/widgets/my-chats.php:472
+msgid "Send button border color"
+msgstr "Küldés gomb szegélyének színe"
+
+#: includes/integrations/bricks/elements/my-chats.php:463
+#: includes/integrations/elementor/widgets/my-chats.php:483
+#: assets/build/block-editor.js:1
+msgid "Send button border radius"
+msgstr "Küldés gomb saroklekerekítése"
+
+#: includes/integrations/bricks/elements/my-chats.php:475
+#: includes/integrations/elementor/widgets/my-chats.php:496
+msgid "Input text typography"
+msgstr "Beviteli szöveg tipográfiája"
+
+#: includes/integrations/bricks/elements/my-chats.php:530
+#: includes/integrations/elementor/widgets/my-chats.php:661
+#: assets/build/block-editor.js:1
+msgid "All"
+msgstr "Összes"
+
+#: includes/integrations/bricks/elements/my-chats.php:535
+#: includes/integrations/bricks/elements/my-chats.php:557
+#: includes/integrations/elementor/widgets/my-chats.php:687
+#: assets/build/block-editor.js:1
+msgid "Custom context"
+msgstr "Egyéni kontextus"
+
+#: includes/integrations/bricks/elements/notifications.php:47
+#: includes/integrations/bricks/elements/notifications.php:57
+#: includes/integrations/elementor/widgets/notifications.php:38
+#: includes/integrations/elementor/widgets/notifications.php:68
+#: includes/translations/registry.php:430 assets/build/block-editor.js:1
+#: assets/build/settings.js:1
+msgid "Notifications"
+msgstr "Értesítések"
+
+#: includes/integrations/bricks/elements/notifications.php:62
+#: includes/integrations/elementor/widgets/notifications.php:154
+#: assets/build/block-editor.js:1
+msgid "Style"
+msgstr "Stílus"
+
+#: includes/integrations/bricks/elements/notifications.php:85
+#: includes/integrations/elementor/widgets/notifications.php:85
+msgid "Icon"
+msgstr "Ikon"
+
+#: includes/integrations/bricks/elements/notifications.php:92
+#: includes/integrations/elementor/widgets/notifications.php:93
+#: assets/build/block-editor.js:1
+msgid "Dropdown trigger"
+msgstr "Legördülő menü aktiválóeleme"
+
+#: includes/integrations/bricks/elements/notifications.php:95
+#: includes/integrations/elementor/widgets/notifications.php:96
+#: assets/build/block-editor.js:1
+msgid "Click"
+msgstr "Kattintás"
+
+#: includes/integrations/bricks/elements/notifications.php:96
+#: includes/integrations/elementor/widgets/notifications.php:97
+#: assets/build/block-editor.js:1
+msgid "Hover"
+msgstr "Rámutatás"
+
+#: includes/integrations/bricks/elements/notifications.php:97
+#: includes/integrations/elementor/widgets/notifications.php:98
+#: assets/build/block-editor.js:1
+msgid "Both"
+msgstr "Mindkettő"
+
+#: includes/integrations/bricks/elements/notifications.php:105
+#: includes/integrations/elementor/widgets/notifications.php:107
+#: assets/build/block-editor.js:1
+msgid "Dropdown placement"
+msgstr "Legördülő menü elhelyezése"
+
+#: includes/integrations/bricks/elements/notifications.php:108
+#: includes/integrations/elementor/widgets/notifications.php:110
+#: assets/build/block-editor.js:1
+msgid "Bottom left"
+msgstr "Balra lent"
+
+#: includes/integrations/bricks/elements/notifications.php:109
+#: includes/integrations/elementor/widgets/notifications.php:111
+#: assets/build/block-editor.js:1
+msgid "Bottom right"
+msgstr "Jobbra lent"
+
+#: includes/integrations/bricks/elements/notifications.php:110
+#: includes/integrations/elementor/widgets/notifications.php:112
+#: assets/build/block-editor.js:1
+msgid "Bottom center"
+msgstr "Alsó közép"
+
+#: includes/integrations/bricks/elements/notifications.php:118
+#: includes/integrations/elementor/widgets/notifications.php:121
+#: assets/build/block-editor.js:1
+msgid "Max items"
+msgstr "Maximális elemszám"
+
+#: includes/integrations/bricks/elements/notifications.php:132
+#: includes/integrations/bricks/elements/start-new-chat.php:112
+#: includes/integrations/bricks/elements/start-new-chat.php:172
+#: includes/integrations/elementor/widgets/start-new-chat.php:160
+#: includes/integrations/elementor/widgets/start-new-chat.php:248
+msgid "Yes"
+msgstr "Igen"
+
+#: includes/integrations/bricks/elements/notifications.php:133
+#: includes/integrations/bricks/elements/start-new-chat.php:113
+#: includes/integrations/bricks/elements/start-new-chat.php:171
+#: includes/integrations/elementor/widgets/start-new-chat.php:161
+#: includes/integrations/elementor/widgets/start-new-chat.php:249
+msgid "No"
+msgstr "Nem"
+
+#: includes/integrations/bricks/elements/notifications.php:142
+#: includes/integrations/elementor/widgets/notifications.php:144
+#: assets/build/block-editor.js:1
+msgid "Empty state text"
+msgstr "Üres állapot szövege"
+
+#: includes/integrations/bricks/elements/notifications.php:199
+#: includes/integrations/elementor/widgets/notifications.php:238
+#: assets/build/block-editor.js:1
+msgid "Show View all link"
+msgstr "Az összes megtekintése link megjelenítése"
+
+#: includes/integrations/bricks/elements/notifications.php:200
+#: includes/integrations/elementor/widgets/notifications.php:239
+#: assets/build/block-editor.js:1
+msgid "Show Mark as read"
+msgstr "A „Megjelölés olvasottként” mutatása"
+
+#: includes/integrations/bricks/elements/notifications.php:201
+#: includes/integrations/elementor/widgets/notifications.php:240
+#: assets/build/block-editor.js:1
+msgid "Show timestamps"
+msgstr "Időbélyegek megjelenítése"
+
+#: includes/integrations/bricks/elements/notifications.php:202
+#: includes/integrations/elementor/widgets/notifications.php:241
+#: assets/build/block-editor.js:1
+msgid "Only show for logged-in users"
+msgstr "Mutatás csak bejelentkezett felhasználóknak"
+
+#: includes/integrations/bricks/elements/notifications.php:213
+#: includes/integrations/elementor/widgets/notifications.php:252
+#: assets/build/block-editor.js:1
+msgid "Trigger background"
+msgstr "Aktiválóelem háttere"
+
+#: includes/integrations/bricks/elements/notifications.php:214
+#: includes/integrations/elementor/widgets/notifications.php:253
+#: assets/build/block-editor.js:1
+msgid "Trigger background hover"
+msgstr "Aktiválóelem háttere rámutatáskor"
+
+#: includes/integrations/bricks/elements/notifications.php:215
+#: includes/integrations/elementor/widgets/notifications.php:254
+#: assets/build/block-editor.js:1
+msgid "Trigger color"
+msgstr "Aktiválóelem színe"
+
+#: includes/integrations/bricks/elements/notifications.php:216
+#: includes/integrations/elementor/widgets/notifications.php:255
+#: assets/build/block-editor.js:1
+msgid "Trigger color hover"
+msgstr "Aktiválóelem színe rámutatáskor"
+
+#: includes/integrations/bricks/elements/notifications.php:217
+#: includes/integrations/elementor/widgets/notifications.php:256
+#: assets/build/block-editor.js:1
+msgid "Trigger border color"
+msgstr "Aktiválóelem szegélyének színe"
+
+#: includes/integrations/bricks/elements/notifications.php:218
+#: includes/integrations/elementor/widgets/notifications.php:257
+#: assets/build/block-editor.js:1
+msgid "Trigger border color hover"
+msgstr "Aktiválóelem szegélyének színe rámutatáskor"
+
+#: includes/integrations/bricks/elements/notifications.php:219
+#: includes/integrations/elementor/widgets/notifications.php:258
+#: assets/build/block-editor.js:1
+msgid "Badge background"
+msgstr "Jelvény háttere"
+
+#: includes/integrations/bricks/elements/notifications.php:220
+#: includes/integrations/elementor/widgets/notifications.php:259
+#: assets/build/block-editor.js:1
+msgid "Badge color"
+msgstr "Jelvény színe"
+
+#: includes/integrations/bricks/elements/notifications.php:221
+#: includes/integrations/elementor/widgets/notifications.php:260
+#: assets/build/block-editor.js:1
+msgid "Dropdown border and divider color"
+msgstr "Legördülő menü szegélyének és elválasztóvonalának színe"
+
+#: includes/integrations/bricks/elements/notifications.php:222
+#: includes/integrations/elementor/widgets/notifications.php:261
+#: assets/build/block-editor.js:1
+msgid "Dropdown background"
+msgstr "Legördülő menü háttere"
+
+#: includes/integrations/bricks/elements/notifications.php:223
+#: includes/integrations/elementor/widgets/notifications.php:262
+#: assets/build/block-editor.js:1
+msgid "Item title color"
+msgstr "Tétel címének színe"
+
+#: includes/integrations/bricks/elements/notifications.php:224
+#: includes/integrations/elementor/widgets/notifications.php:263
+#: assets/build/block-editor.js:1
+msgid "Item excerpt color"
+msgstr "Tétel kivonatának színe"
+
+#: includes/integrations/bricks/elements/notifications.php:225
+#: includes/integrations/elementor/widgets/notifications.php:264
+#: assets/build/block-editor.js:1
+msgid "Item timestamp color"
+msgstr "Tétel időbélyegének színe"
+
+#: includes/integrations/bricks/elements/notifications.php:226
+#: includes/integrations/elementor/widgets/notifications.php:265
+#: assets/build/block-editor.js:1
+msgid "Item hover background"
+msgstr "Tétel háttere rámutatáskor"
+
+#: includes/integrations/bricks/elements/notifications.php:227
+#: includes/integrations/elementor/widgets/notifications.php:266
+#: assets/build/block-editor.js:1
+msgid "Action color"
+msgstr "Művelet színe"
+
+#: includes/integrations/bricks/elements/notifications.php:228
+#: includes/integrations/elementor/widgets/notifications.php:267
+#: assets/build/block-editor.js:1
+msgid "Action color hover"
+msgstr "Művelet színe rámutatáskor"
+
+#: includes/integrations/bricks/elements/notifications.php:239
+#: includes/integrations/elementor/widgets/notifications.php:278
+#: assets/build/block-editor.js:1
+msgid "Direct"
+msgstr "Közvetlen"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:45
+#: includes/integrations/bricks/elements/start-new-chat.php:55
+#: includes/integrations/elementor/widgets/start-new-chat.php:69
+#: includes/integrations/elementor/widgets/start-new-chat.php:99
+#: assets/build/block-editor.js:1
+msgid "Start New Chat"
+msgstr "Új csevegés indítása"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:65
+#: includes/integrations/elementor/widgets/start-new-chat.php:260
+msgid "Button"
+msgstr "Gomb"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:70
+#: includes/integrations/elementor/widgets/start-new-chat.php:406
+msgid "Notice"
+msgstr "Értesítés"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:84
+#: includes/integrations/elementor/widgets/start-new-chat.php:106
+#: assets/build/block-editor.js:1
+msgid "Label"
+msgstr "Címke"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:86
+#: includes/integrations/elementor/widgets/start-new-chat.php:109
+#: includes/translations/registry.php:261 assets/build/block-editor.js:1
+msgid "Start Chat"
+msgstr "Csevegés indítása"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:92
+#: includes/integrations/elementor/widgets/start-new-chat.php:116
+#: assets/build/block-editor.js:1
+msgid "User ID/Email"
+msgstr "Felhasználói azonosító (ID)/e-mail cím"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:94
+#: includes/integrations/elementor/widgets/start-new-chat.php:119
+#: assets/build/block-editor.js:1
+msgid "Enter a user ID or email address."
+msgstr "Adja meg a felhasználói azonosítót (ID) vagy az e-mail címet."
+
+#: includes/integrations/bricks/elements/start-new-chat.php:100
+#: includes/integrations/elementor/widgets/start-new-chat.php:126
+#: assets/build/block-editor.js:1
+msgid "Resolve user dynamically"
+msgstr "Felhasználó dinamikus feloldása"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:103
+#: includes/integrations/elementor/widgets/start-new-chat.php:130
+#: assets/build/block-editor.js:1
+msgid ""
+"If both User ID/Email and Resolve user dynamically are set, Resolve user "
+"dynamically wins."
+msgstr "Ha a felhasználói azonosító (ID)/e-mail cím és a felhasználó dinamikus feloldása is be van állítva, a dinamikus feloldás élvez elsőbbséget."
+
+#: includes/integrations/bricks/elements/start-new-chat.php:109
+#: includes/integrations/elementor/widgets/start-new-chat.php:158
+#: assets/build/block-editor.js:1
+msgid "Reuse existing chat when context matches"
+msgstr "Meglévő csevegés újrafelhasználása, ha a kontextus megegyezik"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:121
+#: includes/integrations/elementor/widgets/start-new-chat.php:188
+#: assets/build/block-editor.js:1
+msgid "Meta Data"
+msgstr "Metaadatok"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:123
+#: includes/integrations/bricks/elements/start-new-chat.php:146
+msgid "meta_key::meta_value (one per line) or JSON"
+msgstr "meta_key::meta_value (soronként egy) vagy JSON"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:129
+#: includes/integrations/elementor/widgets/start-new-chat.php:137
+#: assets/build/block-editor.js:1
+msgid "Context Type"
+msgstr "Kontextustípus"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:137
+#: includes/integrations/elementor/widgets/start-new-chat.php:148
+#: includes/integrations/jetengine/dynamic-visibility/base-condition.php:131
+#: includes/privacy/exporter.php:121 assets/build/block-editor.js:1
+#: assets/build/jfb-editor.js:1
+msgid "Context ID"
+msgstr "Kontextusazonosító"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:144
+#: includes/integrations/elementor/widgets/start-new-chat.php:216
+#: assets/build/block-editor.js:1
+msgid "Context Meta"
+msgstr "Kontextus metaadatai"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:152
+#: includes/integrations/elementor/widgets/start-new-chat.php:226
+#: assets/build/block-editor.js:1
+msgid "Logged-out link message"
+msgstr "Kijelentkezett látogatóknak szóló, linkként megjelenő üzenet"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:154
+#: includes/translations/registry.php:268
+msgid "Please log in to start a chat."
+msgstr "Kérjük, jelentkezzen be csevegés indításához."
+
+#: includes/integrations/bricks/elements/start-new-chat.php:160
+#: includes/integrations/elementor/widgets/start-new-chat.php:236
+#: assets/build/block-editor.js:1
+msgid "Logged-out link URL"
+msgstr "Kijelentkezetteknek szóló link URL-je"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:162
+msgid "Leave empty to use the default login URL"
+msgstr "Hagyja üresen az alapértelmezett belépési URL használatához"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:168
+#: includes/integrations/elementor/widgets/start-new-chat.php:246
+#: assets/build/block-editor.js:1
+msgid "Open logged-out link in new tab"
+msgstr "Kijelentkezetteknek szóló link megnyitása új fülön"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:180
+#: includes/integrations/elementor/widgets/start-new-chat.php:268
+msgid "Alignment"
+msgstr "Igazítás"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:183
+msgid "Default"
+msgstr "Alapértelmezett"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:184
+#: includes/integrations/elementor/widgets/start-new-chat.php:272
+msgid "Left"
+msgstr "Bal"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:185
+#: includes/integrations/elementor/widgets/start-new-chat.php:276
+msgid "Center"
+msgstr "Közép"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:186
+#: includes/integrations/elementor/widgets/start-new-chat.php:280
+msgid "Right"
+msgstr "Jobb"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:198
+#: includes/integrations/bricks/elements/start-new-chat.php:319
+#: includes/integrations/elementor/widgets/start-new-chat.php:294
+#: includes/integrations/elementor/widgets/start-new-chat.php:415
+msgid "Typography"
+msgstr "Tipográfia"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:247
+#: includes/integrations/bricks/elements/start-new-chat.php:371
+#: includes/integrations/elementor/widgets/start-new-chat.php:335
+#: includes/integrations/elementor/widgets/start-new-chat.php:456
+#: assets/build/block-editor.js:1
+msgid "Border width"
+msgstr "Keretszélesség"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:283
+#: includes/integrations/elementor/widgets/start-new-chat.php:371
+msgid "Text color (hover)"
+msgstr "Szöveg színe (rámutatáskor)"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:295
+#: includes/integrations/elementor/widgets/start-new-chat.php:382
+msgid "Background color (hover)"
+msgstr "Háttérszín (rámutatáskor)"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:307
+#: includes/integrations/elementor/widgets/start-new-chat.php:393
+msgid "Border color (hover)"
+msgstr "Szegély színe (rámutatáskor)"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:332
+#: includes/integrations/elementor/widgets/start-new-chat.php:423
+#: assets/build/block-editor.js:1
+msgid "Linked message color"
+msgstr "Linkként megjelenő üzenet színe"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:407
+#: includes/integrations/elementor/widgets/start-new-chat.php:493
+msgid "Linked message typography"
+msgstr "Linkként megjelenő üzenet tipográfiája"
+
+#: includes/integrations/bricks/elements/start-new-chat.php:420
+#: includes/integrations/elementor/widgets/start-new-chat.php:501
+msgid "Linked message color (hover)"
+msgstr "Linkként megjelenő üzenet színe (rámutatáskor)"
+
+#: includes/integrations/elementor/widgets/start-new-chat.php:141
+#: assets/build/block-editor.js:1
+msgid "Leave empty to auto-detect or fall back to a direct chat."
+msgstr "Hagyja üresen az automatikus felismeréshez vagy a közvetlen csevegés használatához."
+
+#: includes/integrations/elementor/widgets/start-new-chat.php:151
+#: assets/build/block-editor.js:1
+msgid ""
+"Leave empty to auto-detect when the selected context type matches the "
+"current page."
+msgstr "Hagyja üresen az automatikus felismeréshez, ha a kiválasztott kontextustípus megegyezik az aktuális oldallal."
+
+#: includes/integrations/elementor/widgets/start-new-chat.php:171
+#: includes/integrations/elementor/widgets/start-new-chat.php:199
+msgid "Name"
+msgstr "Név"
+
+#: includes/integrations/elementor/widgets/start-new-chat.php:179
+#: includes/integrations/elementor/widgets/start-new-chat.php:207
+#: assets/build/jfb-editor.js:1
+msgid "Value"
+msgstr "Érték"
+
+#: includes/integrations/elementor/widgets/start-new-chat.php:229
+msgid ""
+"Displayed as a link instead of the button for logged-out visitors. Leave "
+"empty to use the default message."
+msgstr "A kijelentkezett látogatóknál gomb helyett linkként jelenik meg. Hagyja üresen az alapértelmezett üzenet használatához."
+
+#: includes/integrations/elementor/widgets/start-new-chat.php:239
+#: assets/build/block-editor.js:1
+msgid "Leave empty to use the default WordPress login URL."
+msgstr "Hagyja üresen az alapértelmezett WordPress-belépési URL használatához."
+
+#: includes/integrations/jetengine/dynamic-visibility/base-condition.php:112
+msgid "Context mode"
+msgstr "Kontextusmód"
+
+#: includes/integrations/jetengine/dynamic-visibility/base-condition.php:117
+msgid "Any context"
+msgstr "Bármilyen kontextus"
+
+#: includes/integrations/jetengine/dynamic-visibility/base-condition.php:118
+msgid "Auto detect"
+msgstr "Automatikus felismerés"
+
+#: includes/integrations/jetengine/dynamic-visibility/base-condition.php:119
+msgid "Current JetEngine object"
+msgstr "Aktuális JetEngine-objektum"
+
+#: includes/integrations/jetengine/dynamic-visibility/base-condition.php:120
+msgid "Manual"
+msgstr "Kézi kifizetés"
+
+#: includes/integrations/jetengine/dynamic-visibility/base-condition.php:140
+msgid "Recipient resolver"
+msgstr "Címzett meghatározása"
+
+#: includes/integrations/jetengine/dynamic-visibility/base-condition.php:159
+msgid "Select context"
+msgstr "Kontextus kiválasztása"
+
+#: includes/integrations/jetengine/dynamic-visibility/can-start-chat.php:41
+msgid "JetMessenger: Can start chat"
+msgstr "JetMessenger: Csevegés indítható"
+
+#: includes/integrations/jetengine/dynamic-visibility/has-chats.php:41
+msgid "JetMessenger: Has chats"
+msgstr "JetMessenger: Vannak csevegései"
+
+#: includes/integrations/jetengine/dynamic-visibility/has-unread-messages.php:41
+msgid "JetMessenger: Has unread messages"
+msgstr "JetMessenger: Vannak olvasatlan üzenetei"
+
+#: includes/integrations/jetengine/user-resolvers/current-object-author.php:33
+msgid "JetEngine: Current Object Author"
+msgstr "JetEngine: Aktuális objektum szerzője"
+
+#: includes/integrations/jetengine/user-resolvers/current-object-id.php:33
+msgid "JetEngine: Current Object ID"
+msgstr "JetEngine: Aktuális objektum ID-ja"
+
+#: includes/integrations/jetengine/user-resolvers/queried-user.php:33
+msgid "JetEngine: Queried User ID"
+msgstr "JetEngine: Lekérdezett felhasználói azonosító (ID)"
+
+#: includes/integrations/jetformbuilder/actions/create-chat-action.php:47
+#: assets/build/jfb-editor.js:1
+msgid "JetMessenger: Create or Reuse Chat"
+msgstr "JetMessenger: Csevegés létrehozása vagy újrafelhasználása"
+
+#: includes/integrations/woo/contexts-registrar.php:72
+#: includes/integrations/woo/contexts-registrar.php:178
+msgid "WooCommerce order chats"
+msgstr "WooCommerce-rendelések csevegései"
+
+#: includes/integrations/woo/contexts-registrar.php:83
+#: includes/integrations/woo/contexts-registrar.php:198
+#: includes/integrations/woo/contexts-registrar.php:209
+msgid "WooCommerce product chats"
+msgstr "WooCommerce-termékek csevegései"
+
+#: includes/integrations/woo/contexts-registrar.php:181
+msgid ""
+"Order chats are created from WooCommerce orders and do not require a generic"
+" Start Chat surface."
+msgstr "A rendelési csevegések WooCommerce-rendelésekből jönnek létre, és nem igényelnek általános csevegésindító felületet."
+
+#: includes/integrations/woo/contexts-registrar.php:201
+msgid "WooCommerce product auto-button is configured."
+msgstr "A WooCommerce-termékek automatikus gombja be van állítva."
+
+#: includes/integrations/woo/contexts-registrar.php:213
+msgid ""
+"A compatible Start Chat block, widget, or element was discovered for product"
+" chats."
+msgstr "A termékekhez tartozó csevegésekhez kompatibilis Csevegés indítása blokk, widget vagy elem található."
+
+#: includes/integrations/woo/contexts-registrar.php:214
+msgid ""
+"Configure the WooCommerce product auto-button or add a compatible Start Chat"
+" block, widget, or element."
+msgstr "Állítsa be a WooCommerce-termékek automatikus gombját, vagy adjon hozzá egy kompatibilis Csevegés indítása blokkot, widgetet vagy elemet."
+
+#: includes/integrations/woo/contexts-registrar.php:277
+msgid "Invalid order context id."
+msgstr "Hibás rendelési kontextus-ID."
+
+#: includes/integrations/woo/contexts-registrar.php:286
+#: includes/integrations/woo/contexts-registrar.php:357
+msgid "Order not found."
+msgstr "A rendelés nem található."
+
+#: includes/integrations/woo/contexts-registrar.php:291
+#, php-format
+msgid "Order #%d"
+msgstr "Rendelés #%d"
+
+#: includes/integrations/woo/contexts-registrar.php:314
+msgid "Invalid product context id."
+msgstr "Hibás termékkontextus-ID."
+
+#: includes/integrations/woo/contexts-registrar.php:323
+#: includes/integrations/woo/contexts-registrar.php:403
+msgid "Product not found."
+msgstr "A termék nem található."
+
+#: includes/integrations/woo/contexts-registrar.php:331
+#, php-format
+msgid "Product #%d"
+msgstr "Termék #%d"
+
+#: includes/integrations/woo/contexts-registrar.php:384
+msgid "You are not allowed to access this order."
+msgstr "Ön nem jogosult hozzáférni ehhez a rendeléshez."
+
+#: includes/integrations/woo/contexts-registrar.php:419
+msgid "You are not allowed to access this product."
+msgstr "Ön nem jogosult hozzáférni ehhez a termékhez."
+
+#: includes/integrations/woo/woo.php:52
+msgid "Add Manually using Widget/Block"
+msgstr "Manuális hozzáadás widget/blokk használatával"
+
+#: includes/media/private-delivery.php:212
+msgid "Attachment delivery failed."
+msgstr "A csatolmány kézbesítése sikertelen."
+
+#: includes/media/storage.php:83
+msgid "Unable to create media directory."
+msgstr "Nem sikerült létrehozni a médiakönyvtárat."
+
+#: includes/media/storage.php:91
+msgid "Media directory is not writable."
+msgstr "A médiakönyvtár nem írható."
+
+#: includes/media/storage.php:110 includes/media/storage.php:134
+msgid "Uploads directory is not available."
+msgstr "A feltöltési könyvtár nem elérhető."
+
+#: includes/media/storage.php:142
+msgid "Media directory hash has not been initialized yet."
+msgstr "A médiakönyvtár kivonata még nincs inicializálva."
+
+#: includes/media/storage.php:195
+msgid "Attachment directory does not exist."
+msgstr "A csatolmánykönyvtár nem létezik."
+
+#: includes/media/storage.php:204
+msgid "Missing .htaccess protection file."
+msgstr "Hiányzik a .htaccess védelmi fájl."
+
+#: includes/media/storage.php:206
+msgid ""
+"The .htaccess protection file does not match the expected direct-access deny"
+" rules."
+msgstr "A .htaccess védelmi fájl nem felel meg az elvárt közvetlen hozzáférést tiltó szabályoknak."
+
+#: includes/media/storage.php:210
+msgid "Missing robots.txt protection file."
+msgstr "Hiányzik a robots.txt védelmi fájl."
+
+#: includes/media/storage.php:212
+msgid "The robots.txt protection file does not match the expected content."
+msgstr "A robots.txt védelmi fájl tartalma nem felel meg az elvártnak."
+
+#: includes/notifications/channels/email-channel.php:50
+msgid "Recipient email is invalid."
+msgstr "A címzett e-mail címe hibás."
+
+#: includes/notifications/channels/email-channel.php:71
+msgid "JetMessenger notification"
+msgstr "JetMessenger-értesítés"
+
+#: includes/notifications/channels/email-channel.php:85
+msgid "Failed to send notification email."
+msgstr "Az értesítő e-mail küldése sikertelen."
+
+#: includes/notifications/channels/email-channel.php:111
+#: includes/privacy/exporter.php:114 includes/translations/registry.php:139
+msgid "User"
+msgstr "Felhasználó"
+
+#: includes/notifications/global-notification-validator.php:147
+#: includes/rest-api/admin-notifications-controller.php:301
+msgid "Invalid global notification data."
+msgstr "Hibás globális értesítési adatok."
+
+#. translators: %s: human readable time difference.
+#: includes/notifications/mixed-unread-query.php:217
+#: includes/notifications/unread-query.php:296
+#, php-format
+msgid "%s ago"
+msgstr "%s ezelőtt"
+
+#: includes/notifications/settings.php:35
+msgid "New message from {{sender_name}}"
+msgstr "Új üzenet feladója: {{sender_name}}"
+
+#: includes/notifications/settings.php:36
+msgid "New message"
+msgstr "Új üzenet"
+
+#: includes/notifications/settings.php:36
+msgid "sent you a message."
+msgstr "üzenetet küldött Önnek."
+
+#: includes/notifications/settings.php:45
+msgid "New chat started on {{site_name}}"
+msgstr "Új csevegés indult itt: {{site_name}}"
+
+#: includes/notifications/settings.php:46
+msgid "started a new chat with you."
+msgstr "új csevegést indított Önnel."
+
+#: includes/privacy/exporter.php:99
+msgid "JetMessenger chats"
+msgstr "JetMessenger-csevegések"
+
+#: includes/privacy/exporter.php:105 includes/privacy/exporter.php:174
+#: includes/privacy/exporter.php:207
+msgid "Chat ID"
+msgstr "Chat ID"
+
+#: includes/privacy/exporter.php:109
+msgid "Participant role"
+msgstr "Résztvevő szerepköre"
+
+#: includes/privacy/exporter.php:113
+msgid "Other participant"
+msgstr "Másik résztvevő"
+
+#: includes/privacy/exporter.php:125 includes/privacy/exporter.php:178
+msgid "Created at"
+msgstr "Létrehozás dátuma"
+
+#: includes/privacy/exporter.php:129
+msgid "Updated at"
+msgstr "Frissítés időpontja"
+
+#: includes/privacy/exporter.php:144
+msgid "JetMessenger contexts"
+msgstr "JetMessenger-kontextusok"
+
+#: includes/privacy/exporter.php:148
+msgid "Context metadata"
+msgstr "Kontextus-metaadatok"
+
+#: includes/privacy/exporter.php:164
+msgid "JetMessenger messages"
+msgstr "JetMessenger-üzenetek"
+
+#: includes/privacy/exporter.php:170 includes/privacy/exporter.php:211
+msgid "Message ID"
+msgstr "Üzenetazonosító"
+
+#: includes/privacy/exporter.php:182 includes/translations/registry.php:97
+#: assets/build/admin-notifications.js:1
+msgid "Message"
+msgstr "Üzenet"
+
+#: includes/privacy/exporter.php:200
+msgid "JetMessenger attachments"
+msgstr "JetMessenger-mellékletek"
+
+#: includes/privacy/exporter.php:215
+msgid "Stored basename"
+msgstr "Tárolt fájlnév"
+
+#: includes/privacy/exporter.php:219
+msgid "Mime type"
+msgstr "MIME-típus"
+
+#: includes/privacy/exporter.php:223
+msgid "File size"
+msgstr "Fájlméret"
+
+#: includes/privacy/exporter.php:227
+msgid "Original name"
+msgstr "Eredeti név"
+
+#: includes/privacy/exporter.php:251
+msgid "Notification ID"
+msgstr "Értesítési ID"
+
+#: includes/privacy/exporter.php:255
+msgid "Read at"
+msgstr "Olvasás időpontja"
+
+#: includes/privacy/exporter.php:262
+msgid "Notification"
+msgstr "Értesítés"
+
+#: includes/privacy/exporter.php:269
+msgid "JetMessenger global notification reads"
+msgstr "JetMessenger globális értesítéseinek olvasási állapotai"
+
+#: includes/privacy/lifecycle-manager.php:59
+msgid "User not found."
+msgstr "A felhasználó nem található."
+
+#: includes/privacy/settings.php:28
+msgid "Message removed by privacy request."
+msgstr "Az üzenetet adatvédelmi kérés alapján eltávolították."
+
+#: includes/renderers/my-chats-preview.php:57
+#: includes/renderers/my-chats-preview.php:67
+#: includes/renderers/my-chats-preview.php:69
+#: includes/renderers/my-chats-preview.php:100
+msgid "Support Team"
+msgstr "Támogatási csapat"
+
+#: includes/renderers/my-chats-preview.php:57
+msgid "2026-05-05 10:32"
+msgstr "2026-05-05 10:32"
+
+#: includes/renderers/my-chats-preview.php:57
+msgid "Priority customer"
+msgstr "Kiemelt vásárló"
+
+#: includes/renderers/my-chats-preview.php:58
+msgid "Jane Doe"
+msgstr "Jane Doe"
+
+#: includes/renderers/my-chats-preview.php:58
+msgid "2026-05-05 09:18"
+msgstr "2026-05-05 09:18"
+
+#: includes/renderers/my-chats-preview.php:58
+msgid "Order #1042"
+msgstr "1042. rendelés"
+
+#: includes/renderers/my-chats-preview.php:59
+msgid "Project Manager"
+msgstr "Projektvezető"
+
+#: includes/renderers/my-chats-preview.php:59
+msgid "2026-05-04 18:07"
+msgstr "2026-05-04 18:07"
+
+#: includes/renderers/my-chats-preview.php:59
+msgid "Website redesign"
+msgstr "Honlap-átalakítás"
+
+#: includes/renderers/my-chats-preview.php:67
+msgid "Hi! I checked your request and prepared an update for review."
+msgstr "Üdvözlöm! Ellenőriztem a kérését, és előkészítettem egy frissítést ellenőrzésre."
+
+#: includes/renderers/my-chats-preview.php:68
+msgid ""
+"Thanks. Please keep the mobile composer visible while the chat is open."
+msgstr "Köszönöm. Kérjük, gondoskodjon róla, hogy a mobilos üzenetíró mező látható maradjon, amíg a csevegés nyitva van."
+
+#: includes/renderers/my-chats-preview.php:69
+msgid "Done. The preview below reflects the final widget structure."
+msgstr "Kész. Az alábbi előnézet a widget végleges felépítését mutatja."
+
+#: includes/renderers/my-chats-preview.php:101
+msgid "support@example.test"
+msgstr "support@example.test"
+
+#: includes/renderers/my-chats-preview.php:102
+msgid "Support specialist"
+msgstr "Támogatási szakember"
+
+#: includes/renderers/my-chats-preview.php:228
+msgid "Unread messages"
+msgstr "Olvasatlan üzenetek"
+
+#: includes/renderers/my-chats-preview.php:231
+msgid "Current chat"
+msgstr "Aktuális csevegés"
+
+#: includes/renderers/notifications-preview.php:172
+msgid "Can you check the latest update?"
+msgstr "Ellenőrizné a legújabb frissítést?"
+
+#: includes/renderers/notifications-preview.php:175
+#, php-format
+msgid "%d min ago"
+msgid_plural "%d min ago"
+msgstr[0] "%d perccel ezelőtt"
+msgstr[1] "%d perccel ezelőtt"
+
+#: includes/renderers/start-chat-resolver.php:55
+#: assets/build/block-editor.js:1
+msgid "Auto detect / Direct chat"
+msgstr "Automatikus felismerés / közvetlen csevegés"
+
+#: includes/renderers/start-chat-resolver.php:149
+msgid "Please set a valid context."
+msgstr "Kérjük, állítson be érvényes kontextust."
+
+#: includes/renderers/start-chat-resolver.php:158
+msgid "Please set a valid recipient or choose a valid dynamic resolver."
+msgstr "Kérjük, állítson be érvényes címzettet, vagy válasszon érvényes dinamikus feloldót."
+
+#: includes/rest-api/admin-documentation-controller.php:85
+msgid "Invalid documentation path."
+msgstr "Hibás dokumentációs útvonal."
+
+#: includes/rest-api/admin-documentation-controller.php:95
+msgid "Documentation file not found."
+msgstr "A dokumentációs fájl nem található."
+
+#: includes/rest-api/admin-documentation-controller.php:105
+msgid "Unable to read the documentation file."
+msgstr "A dokumentációs fájl nem olvasható."
+
+#: includes/rest-api/cookie-nonce.php:34
+msgid "You are not currently logged in."
+msgstr "Jelenleg nincs bejelentkezve."
+
+#: includes/rest-api/cookie-nonce.php:43
+msgid "Cookie check failed."
+msgstr "A cookie-ellenőrzés sikertelen."
+
+#: includes/rest-api/cookie-nonce.php:51
+msgid "Sorry, you are not allowed to do that."
+msgstr "Sajnáljuk, ehhez nincs jogosultsága."
+
+#: includes/rest-api/messages-controller.php:279
+#: includes/rest-api/notifications-controller.php:205
+msgid "Invalid message IDs."
+msgstr "Hibás üzenet-ID-k."
+
+#: includes/rest-api/messages-controller.php:288
+msgid "Too many message IDs."
+msgstr "Túl sok üzenet-ID."
+
+#: includes/rest-api/messages-controller.php:298
+msgid "Failed to mark messages as read."
+msgstr "Nem sikerült olvasottként megjelölni az üzeneteket."
+
+#: includes/rest-api/notifications-controller.php:297
+#: includes/rest-api/notifications-v2-controller.php:346
+#: includes/wizard/manager.php:281 includes/wizard/manager.php:395
+#: includes/wizard/manager.php:498
+msgid "Invalid context."
+msgstr "Hibás kontextus."
+
+#: includes/rest-api/notifications-v2-controller.php:289
+msgid "Invalid notification items."
+msgstr "Hibás értesítési tételek."
+
+#: includes/rest-api/wizard-controller.php:316 includes/wizard/manager.php:366
+msgid "Elementor is not active."
+msgstr "Az Elementor nem aktív."
+
+#: includes/rest-api/wizard-controller.php:326 includes/wizard/manager.php:469
+msgid "Bricks is not active."
+msgstr "A Bricks nem aktív."
+
+#: includes/rest-api/wizard-controller.php:337
+#: includes/rest-api/wizard-controller.php:382 includes/wizard/manager.php:621
+msgid "Invalid builder."
+msgstr "Hibás szerkesztő."
+
+#: includes/rest-api/wizard-controller.php:390
+#: includes/rest-api/wizard-controller.php:398
+msgid "Targets are required."
+msgstr "A célok megadása kötelező."
+
+#: includes/security/rate-limiter.php:156
+msgid "Too many requests. Please wait a moment and try again."
+msgstr "Túl sok kérés érkezett. Kérjük, várjon egy kicsit, majd próbálja újra."
+
+#: includes/services/create-chat-service.php:139
+msgid "Failed to create chat."
+msgstr "Nem sikerült létrehozni a csevegést."
+
+#: includes/services/create-chat-service.php:245
+#: includes/services/recipient-resolver.php:64
+msgid "Recipient not found."
+msgstr "A címzett nem található."
+
+#: includes/services/create-chat-service.php:253
+#: includes/services/recipient-resolver.php:33
+#: includes/services/recipient-resolver.php:56
+msgid "Invalid recipient."
+msgstr "Érvénytelen címzett."
+
+#: includes/services/user-resolvers/current-post-author.php:34
+msgid "Current post author"
+msgstr "Aktuális bejegyzés szerzője"
+
+#: includes/services/user-resolvers/current-product-author.php:34
+msgid "Current Woo product author"
+msgstr "Aktuális WooCommerce-termék szerzője"
+
+#: includes/translations/registry.php:25
+msgid "My Chats title"
+msgstr "Saját csevegések címe"
+
+#: includes/translations/registry.php:26
+msgid "Main heading shown above the chats list in the My Chats app."
+msgstr "A Saját csevegések alkalmazásban a csevegéslista felett megjelenő fő címsor."
+
+#: includes/translations/registry.php:32
+msgid "Loading"
+msgstr "Betöltés"
+
+#: includes/translations/registry.php:33
+msgid "Shown while chats or messages are loading in the My Chats app."
+msgstr "A Saját csevegések alkalmazásban a csevegések vagy üzenetek betöltése közben jelenik meg."
+
+#: includes/translations/registry.php:34
+msgid "Loading…"
+msgstr "Betöltés…"
+
+#: includes/translations/registry.php:39
+msgid "No chats"
+msgstr "Nincsenek csevegések"
+
+#: includes/translations/registry.php:40
+msgid "Shown when the current user has no chats yet."
+msgstr "Akkor jelenik meg, ha az aktuális felhasználónak még nincsenek csevegései."
+
+#: includes/translations/registry.php:41
+msgid "No chats yet."
+msgstr "Még nincsenek csevegések."
+
+#: includes/translations/registry.php:46 includes/translations/registry.php:48
+msgid "Loading more chats"
+msgstr "További csevegések betöltése"
+
+#: includes/translations/registry.php:47
+msgid "Shown while older chats are being appended to the list."
+msgstr "Akkor jelenik meg, amikor régebbi csevegések kerülnek a listába."
+
+#: includes/translations/registry.php:53
+msgid "Select chat prompt"
+msgstr "Csevegés kiválasztására felszólító üzenet"
+
+#: includes/translations/registry.php:54
+msgid "Shown in the empty main pane before a chat is selected."
+msgstr "Az üres főpanelen jelenik meg, mielőtt kiválasztana egy csevegést."
+
+#: includes/translations/registry.php:55
+msgid "Select a chat to view messages."
+msgstr "Válasszon ki egy csevegést az üzenetek megtekintéséhez."
+
+#: includes/translations/registry.php:60
+msgid "Chat fallback title"
+msgstr "Csevegés helyettesítő címe"
+
+#: includes/translations/registry.php:61
+msgid "Used when a chat title cannot be resolved."
+msgstr "Akkor használatos, ha a csevegés címe nem állapítható meg."
+
+#: includes/translations/registry.php:62
+msgid "Chat"
+msgstr "Csevegés"
+
+#: includes/translations/registry.php:67
+msgid "Back button"
+msgstr "Vissza gomb"
+
+#: includes/translations/registry.php:68
+msgid "Mobile back button label inside the My Chats app."
+msgstr "A My Chats alkalmazás mobilnézetében megjelenő vissza gomb címkéje."
+
+#: includes/translations/registry.php:69 assets/build/wizard.js:1
+msgid "Back"
+msgstr "Vissza"
+
+#: includes/translations/registry.php:74 includes/translations/registry.php:76
+msgid "Loading older messages"
+msgstr "Régebbi üzenetek betöltése"
+
+#: includes/translations/registry.php:75
+msgid "Shown while older messages are being loaded."
+msgstr "Akkor jelenik meg, amikor régebbi üzenetek töltődnek be."
+
+#: includes/translations/registry.php:81
+msgid "No messages"
+msgstr "Nincsenek üzenetek"
+
+#: includes/translations/registry.php:82
+msgid "Shown when the selected chat has no messages yet."
+msgstr "Akkor jelenik meg, ha a kiválasztott csevegésben még nincsenek üzenetek."
+
+#: includes/translations/registry.php:83
+msgid "No messages yet."
+msgstr "Még nincsenek üzenetek."
+
+#: includes/translations/registry.php:88 includes/translations/registry.php:90
+msgid "Attach images"
+msgstr "Képek csatolása"
+
+#: includes/translations/registry.php:89
+msgid "Composer attachment button label for screen readers and previews."
+msgstr "Az üzenetszerkesztő csatolmánygombjának címkéje képernyőolvasókhoz és előnézetekhez."
+
+#: includes/translations/registry.php:95
+msgid "Message field label"
+msgstr "Üzenetmező címkéje"
+
+#: includes/translations/registry.php:96
+msgid "Accessible label for the message input field."
+msgstr "Az üzenetbeviteli mező akadálymentes címkéje."
+
+#: includes/translations/registry.php:102
+msgid "Message placeholder"
+msgstr "Üzenetmező helytartója"
+
+#: includes/translations/registry.php:103
+msgid "Placeholder shown in the message input field."
+msgstr "Az üzenetbeviteli mezőben megjelenő helytartó."
+
+#: includes/translations/registry.php:104
+msgid "Write a message…"
+msgstr "Írjon üzenetet…"
+
+#: includes/translations/registry.php:109
+msgid "Send button"
+msgstr "Küldés gomb"
+
+#: includes/translations/registry.php:110
+msgid "Message send button label."
+msgstr "Az üzenetküldő gomb címkéje."
+
+#: includes/translations/registry.php:111
+msgid "Send"
+msgstr "Küldés"
+
+#: includes/translations/registry.php:116
+#: includes/translations/registry.php:118
+msgid "Attachment preview"
+msgstr "Csatolmány előnézete"
+
+#: includes/translations/registry.php:117
+msgid "Fallback alt text for attachment previews before sending."
+msgstr "Tartalék alternatív szöveg a csatolmány előnézetéhez küldés előtt."
+
+#: includes/translations/registry.php:123
+#: includes/translations/registry.php:125
+msgid "Remove attachment"
+msgstr "Csatolmány eltávolítása"
+
+#: includes/translations/registry.php:124
+msgid "Accessible label for removing a staged attachment."
+msgstr "Az előkészített csatolmány eltávolítására szolgáló akadálymentes címke."
+
+#: includes/translations/registry.php:130
+msgid "Current user label"
+msgstr "Az aktuális felhasználó címkéje"
+
+#: includes/translations/registry.php:131
+msgid "Shown as the author label on messages sent by the current user."
+msgstr "Az aktuális felhasználó által küldött üzenetek szerzőjének címkéjeként jelenik meg."
+
+#: includes/translations/registry.php:132
+msgid "Me"
+msgstr "Én"
+
+#: includes/translations/registry.php:137
+msgid "User fallback"
+msgstr "Felhasználói tartalékcímke"
+
+#: includes/translations/registry.php:138
+msgid "Used when another participant name cannot be resolved."
+msgstr "Akkor használatos, ha egy másik résztvevő neve nem állapítható meg."
+
+#: includes/translations/registry.php:144
+#: includes/translations/registry.php:146
+msgid "Open attachment"
+msgstr "Csatolmány megnyitása"
+
+#: includes/translations/registry.php:145
+msgid "Accessible label for opening an attachment viewer."
+msgstr "A csatolmány megtekintőjének megnyitására szolgáló akadálymentes címke."
+
+#: includes/translations/registry.php:151
+#: includes/translations/registry.php:153
+msgid "Attachment unavailable"
+msgstr "A csatolmány nem érhető el"
+
+#: includes/translations/registry.php:152
+msgid "Shown when an attachment preview can no longer be loaded."
+msgstr "Akkor jelenik meg, ha a csatolmány előnézete már nem tölthető be."
+
+#: includes/translations/registry.php:158
+msgid "Attachment fallback label"
+msgstr "Csatolmány tartalékcímkéje"
+
+#: includes/translations/registry.php:159
+msgid "Fallback alt text for an attachment image."
+msgstr "Tartalék alternatív szöveg egy csatolmány képéhez."
+
+#: includes/translations/registry.php:160
+#: includes/translations/registry.php:224
+msgid "Attachment"
+msgstr "Csatolmány"
+
+#: includes/translations/registry.php:165
+#: includes/translations/registry.php:167
+msgid "Close attachment viewer"
+msgstr "Csatolmány-megtekintő bezárása"
+
+#: includes/translations/registry.php:166
+msgid "Accessible label for closing the attachment lightbox."
+msgstr "A csatolmányt megjelenítő felugró ablak bezárására szolgáló akadálymentes címke."
+
+#: includes/translations/registry.php:172
+#: includes/translations/registry.php:174
+msgid "Previous attachment"
+msgstr "Előző csatolmány"
+
+#: includes/translations/registry.php:173
+msgid "Accessible label for the previous attachment button."
+msgstr "Az előző csatolmány gombjának akadálymentes címkéje."
+
+#: includes/translations/registry.php:179
+#: includes/translations/registry.php:181
+msgid "Next attachment"
+msgstr "Következő csatolmány"
+
+#: includes/translations/registry.php:180
+msgid "Accessible label for the next attachment button."
+msgstr "A következő csatolmány gombjának akadálymentes címkéje."
+
+#: includes/translations/registry.php:186
+msgid "Attachments limit notice"
+msgstr "Csatolmányok darabszámkorlátjára vonatkozó értesítés"
+
+#: includes/translations/registry.php:187
+#, php-format
+msgid ""
+"Shown when the maximum number of image attachments is reached. Must contain "
+"%d."
+msgstr "Akkor jelenik meg, ha elérte a képcsatolmányok maximális darabszámát. Tartalmaznia kell a %d helyőrzőt."
+
+#: includes/translations/registry.php:188
+#, php-format
+msgid "You can attach up to %d images."
+msgstr "Legfeljebb %d képet csatolhat."
+
+#: includes/translations/registry.php:194
+msgid "Notifications empty state"
+msgstr "Értesítések üres állapotának szövege"
+
+#: includes/translations/registry.php:195
+msgid "Shown when the notifications dropdown has no unread messages."
+msgstr "Akkor jelenik meg, ha az értesítések legördülő listájában nincsenek olvasatlan üzenetek."
+
+#: includes/translations/registry.php:196
+msgid "No new notifications"
+msgstr "Nincsenek új értesítések"
+
+#: includes/translations/registry.php:201
+msgid "Notifications View all link"
+msgstr "Értesítések – összes megtekintése link"
+
+#: includes/translations/registry.php:202
+msgid "Link label for opening the selected context chats page."
+msgstr "A kiválasztott kontextus csevegéseit tartalmazó oldal megnyitására szolgáló link címkéje."
+
+#: includes/translations/registry.php:203
+msgid "View all"
+msgstr "Összes megtekintése"
+
+#: includes/translations/registry.php:208
+msgid "Notifications mark visible read"
+msgstr "Értesítések – a látható értesítések megjelölése olvasottként"
+
+#: includes/translations/registry.php:209
+msgid "Action label for marking the currently shown notifications as read."
+msgstr "A jelenleg megjelenített értesítések olvasottként való megjelölésére szolgáló művelet címkéje."
+
+#: includes/translations/registry.php:210
+msgid "Mark as read"
+msgstr "Megjelölés olvasottként"
+
+#: includes/translations/registry.php:215
+msgid "Notifications mark single read"
+msgstr "Értesítések – egy elem megjelölése olvasottként"
+
+#: includes/translations/registry.php:216
+msgid "Accessible label for marking one notification row as read."
+msgstr "Egy értesítési sor olvasottként való megjelölésének akadálymentes címkéje."
+
+#: includes/translations/registry.php:217
+msgid "Mark notification as read"
+msgstr "Értesítés megjelölése olvasottként"
+
+#: includes/translations/registry.php:222
+msgid "Notification attachment placeholder"
+msgstr "Értesítési csatolmány helytartója"
+
+#: includes/translations/registry.php:223
+msgid "Excerpt placeholder for attachment-only notification messages."
+msgstr "A kizárólag csatolmányt tartalmazó értesítési üzenetek kivonatához használt helytartó."
+
+#: includes/translations/registry.php:229
+msgid "Notifications unread count"
+msgstr "Olvasatlan értesítések darabszáma"
+
+#: includes/translations/registry.php:230
+#, php-format
+msgid "Accessible unread count label. Must contain %d."
+msgstr "Akadálymentes címke az olvasatlan elemek számához. Tartalmaznia kell a %d helyőrzőt."
+
+#: includes/translations/registry.php:231
+#, php-format
+msgid "%d unread messages"
+msgstr "%d olvasatlan üzenet"
+
+#: includes/translations/registry.php:237
+msgid "Notifications mixed unread count"
+msgstr "Üzenetek és globális értesítések együttes olvasatlan darabszáma"
+
+#: includes/translations/registry.php:238
+#, php-format
+msgid ""
+"Accessible mixed message and global unread count label. Must contain %d."
+msgstr "Az üzenetek és a globális értesítések együttes olvasatlan darabszámának akadálymentes címkéje. Tartalmaznia kell a %d helyőrzőt."
+
+#: includes/translations/registry.php:239
+#, php-format
+msgid "%d unread notifications"
+msgstr "%d olvasatlan értesítés"
+
+#: includes/translations/registry.php:245
+msgid "Global notification external link"
+msgstr "Globális értesítés külső linkje"
+
+#: includes/translations/registry.php:246
+msgid ""
+"Accessible description for a global notification link that opens in a new "
+"tab."
+msgstr "Új fülön megnyíló globális értesítési link akadálymentes leírása."
+
+#: includes/translations/registry.php:247
+msgid "Opens in a new tab"
+msgstr "Új lapon nyílik meg"
+
+#: includes/translations/registry.php:252
+msgid "Global notification read error"
+msgstr "Globális értesítés olvasottként való megjelölésének hibája"
+
+#: includes/translations/registry.php:253
+msgid "Shown when a global notification cannot be marked as read."
+msgstr "Akkor jelenik meg, ha egy globális értesítést nem lehet olvasottként megjelölni."
+
+#: includes/translations/registry.php:254
+msgid "Could not mark notification as read."
+msgstr "Nem sikerült az értesítést olvasottként megjelölni."
+
+#: includes/translations/registry.php:259
+msgid "Start Chat button"
+msgstr "Csevegés indítása gomb"
+
+#: includes/translations/registry.php:260
+msgid ""
+"Fallback label used when a Start Chat surface has no explicit custom label."
+msgstr "Tartalék címke, ha a Csevegés indítása felülethez nincs külön egyéni címke beállítva."
+
+#: includes/translations/registry.php:266
+msgid "Logged-out Start Chat notice"
+msgstr "Kijelentkezett felhasználóknak szóló Csevegés indítása értesítés"
+
+#: includes/translations/registry.php:267
+msgid "Fallback notice shown to logged-out visitors on Start Chat surfaces."
+msgstr "Tartalékértesítés, amely a Csevegés indítása felületeken jelenik meg a kijelentkezett látogatóknak."
+
+#: includes/translations/registry.php:273
+msgid "Woo order button fallback"
+msgstr "Tartalék gombcímke WooCommerce-rendelési felületekhez"
+
+#: includes/translations/registry.php:274
+msgid ""
+"Fallback button label used on WooCommerce order surfaces when no custom "
+"label is set."
+msgstr "Tartalék gombcímke WooCommerce-rendelési felületekhez, ha nincs egyéni címke beállítva."
+
+#: includes/translations/registry.php:275 assets/build/settings.js:1
+msgid "Chat About This Order"
+msgstr "Csevegés erről a rendelésről"
+
+#: includes/translations/registry.php:280
+msgid "Deleted user label"
+msgstr "Törölt felhasználó címkéje"
+
+#: includes/translations/registry.php:281
+msgid "Displayed for the anonymized placeholder user."
+msgstr "Az anonimizált helyettesítő felhasználónál jelenik meg."
+
+#: includes/translations/registry.php:282
+msgid "Deleted user"
+msgstr "Törölt felhasználó"
+
+#: includes/translations/registry.php:287
+msgid "Seller fallback"
+msgstr "Eladó tartalékértéke"
+
+#: includes/translations/registry.php:288
+msgid "Fallback seller token used in WooCommerce order starter messages."
+msgstr "Tartalék eladói érték a WooCommerce-rendelési kezdőüzenetekben."
+
+#: includes/translations/registry.php:289
+msgid "Seller"
+msgstr "Eladó"
+
+#: includes/translations/registry.php:294
+msgid "Customer fallback"
+msgstr "Vásárló tartalékértéke"
+
+#: includes/translations/registry.php:295
+msgid "Fallback customer token used in WooCommerce order starter messages."
+msgstr "Tartalék vásárlói érték a WooCommerce-rendelési kezdőüzenetekben."
+
+#: includes/translations/registry.php:296
+msgid "Customer"
+msgstr "Vásárló"
+
+#: includes/translations/registry.php:301
+msgid "Woo order empty items line"
+msgstr "Üres tételek sora WooCommerce-rendelésnél"
+
+#: includes/translations/registry.php:302
+msgid "Fallback line used when no seller-owned order items are found."
+msgstr "Tartaléksor, ha nem találhatók az eladóhoz tartozó rendelési tételek."
+
+#: includes/translations/registry.php:303
+msgid "- (No items found for this seller)"
+msgstr "- (nem található tétel ennél az eladónál)"
+
+#: includes/translations/registry.php:308
+msgid "Context disabled error"
+msgstr "Kikapcsolt kontextus hibája"
+
+#: includes/translations/registry.php:309
+msgid "Error returned when a disabled chat context is requested."
+msgstr "A rendszer akkor adja vissza ezt a hibát, ha kikapcsolt csevegési kontextust kérnek le."
+
+#: includes/translations/registry.php:310
+msgid "This context is currently disabled."
+msgstr "Ez a kontextus jelenleg ki van kapcsolva."
+
+#: includes/translations/registry.php:315
+msgid "Message required error"
+msgstr "Kötelező üzenet hibája"
+
+#: includes/translations/registry.php:316
+msgid ""
+"Error returned when a message send request has neither text nor attachments."
+msgstr "A rendszer akkor adja vissza ezt a hibát, ha az üzenetküldési kérésben sem szöveg, sem csatolmány nincs."
+
+#: includes/translations/registry.php:317
+msgid "Message text or at least one attachment is required."
+msgstr "Üzenetszöveg vagy legalább egy csatolmány megadása kötelező."
+
+#: includes/translations/registry.php:322
+msgid "Send message failed error"
+msgstr "Sikertelen üzenetküldés hibája"
+
+#: includes/translations/registry.php:323
+msgid "Generic error returned when a message cannot be created."
+msgstr "Általános hiba, ha nem sikerül létrehozni az üzenetet."
+
+#: includes/translations/registry.php:324
+msgid "Failed to send message."
+msgstr "Az üzenet küldése sikertelen."
+
+#: includes/translations/registry.php:329
+msgid "Attachment not found error"
+msgstr "A csatolmány hiánya miatti hiba"
+
+#: includes/translations/registry.php:330
+msgid "Returned when an attachment record or file cannot be resolved."
+msgstr "Akkor jelenik meg, ha egy csatolmány rekordja vagy fájlja nem található."
+
+#: includes/translations/registry.php:331
+msgid "Attachment not found."
+msgstr "A csatolmány nem található."
+
+#: includes/translations/registry.php:336
+msgid "Attachment unavailable error"
+msgstr "A csatolmány elérhetetlensége miatti hiba"
+
+#: includes/translations/registry.php:337
+msgid "Returned when an attachment is not available to the current user."
+msgstr "Akkor jelenik meg, ha a csatolmány nem érhető el az aktuális felhasználó számára."
+
+#: includes/translations/registry.php:338
+msgid "Attachment is not available."
+msgstr "A csatolmány nem érhető el."
+
+#: includes/translations/registry.php:343
+msgid "Invalid message ID error"
+msgstr "Hibás üzenet-ID miatti hiba"
+
+#: includes/translations/registry.php:344
+msgid ""
+"Returned when an attachment operation does not receive a valid message ID."
+msgstr "A rendszer akkor adja vissza, ha egy csatolmány-művelet nem kap érvényes üzenet-ID-t."
+
+#: includes/translations/registry.php:345
+msgid "Invalid message ID."
+msgstr "Hibás üzenet-ID."
+
+#: includes/translations/registry.php:350
+msgid "Missing chat context error"
+msgstr "Hiányzó csevegési kontextus miatti hiba"
+
+#: includes/translations/registry.php:351
+msgid "Returned when attachment persistence has no chat context."
+msgstr "A rendszer ezt adja vissza, ha a csatolmány mentéséhez nem áll rendelkezésre csevegési kontextus."
+
+#: includes/translations/registry.php:352
+msgid "Missing chat context for attachment."
+msgstr "Hiányzó csevegési kontextus a csatolmányhoz."
+
+#: includes/translations/registry.php:357
+msgid "Missing stored filename error"
+msgstr "A tárolt fájlnév hiánya miatti hiba"
+
+#: includes/translations/registry.php:358
+msgid "Returned when an uploaded attachment has no stored filename."
+msgstr "A rendszer ezt adja vissza, ha egy feltöltött csatolmányhoz nem tartozik tárolt fájlnév."
+
+#: includes/translations/registry.php:359
+msgid "Missing stored filename."
+msgstr "Hiányzó tárolt fájlnév."
+
+#: includes/translations/registry.php:364
+msgid "Failed to store attachment metadata error"
+msgstr "A csatolmány metaadatainak mentése sikertelen"
+
+#: includes/translations/registry.php:365
+msgid "Returned when uploaded attachment metadata cannot be saved."
+msgstr "A rendszer ezt adja vissza, ha a feltöltött csatolmány metaadatai nem menthetők."
+
+#: includes/translations/registry.php:366
+msgid "Failed to store attachment metadata."
+msgstr "A csatolmány metaadatainak mentése sikertelen."
+
+#: includes/translations/registry.php:371
+msgid "Failed upload media file error"
+msgstr "A médiafájl feltöltése sikertelen"
+
+#: includes/translations/registry.php:372
+msgid "Returned when WordPress upload handling fails."
+msgstr "A rendszer ezt adja vissza, ha a WordPress feltöltéskezelése sikertelen."
+
+#: includes/translations/registry.php:373
+msgid "Failed to upload media file."
+msgstr "A médiafájl feltöltése sikertelen."
+
+#: includes/translations/registry.php:378
+msgid "Failed to determine filename error"
+msgstr "A fájlnév meghatározása sikertelen"
+
+#: includes/translations/registry.php:379
+msgid "Returned when the stored filename cannot be determined after upload."
+msgstr "A rendszer ezt adja vissza, ha a feltöltés után nem határozható meg a tárolt fájlnév."
+
+#: includes/translations/registry.php:380
+msgid "Failed to determine stored filename."
+msgstr "A tárolt fájlnév meghatározása sikertelen."
+
+#: includes/translations/registry.php:385
+msgid "Upload failed error"
+msgstr "Sikertelen feltöltés miatti hiba"
+
+#: includes/translations/registry.php:386
+msgid "Returned when the uploaded file reports a low-level upload error."
+msgstr "A rendszer ezt adja vissza, ha a feltöltött fájl alacsony szintű feltöltési hibát jelez."
+
+#: includes/translations/registry.php:387
+msgid "Upload failed."
+msgstr "A feltöltés nem sikerült."
+
+#: includes/translations/registry.php:392
+msgid "Uploaded file invalid error"
+msgstr "Érvénytelen feltöltött fájl miatti hiba"
+
+#: includes/translations/registry.php:393
+msgid "Returned when the uploaded file is not recognized as a valid upload."
+msgstr "A rendszer ezt adja vissza, ha a feltöltött fájl nem ismerhető fel érvényes feltöltésként."
+
+#: includes/translations/registry.php:394
+msgid "Uploaded file is invalid."
+msgstr "A feltöltött fájl érvénytelen."
+
+#: includes/translations/registry.php:399
+msgid "Uploaded file too large error"
+msgstr "Túl nagy feltöltött fájl miatti hiba"
+
+#: includes/translations/registry.php:400
+msgid "Returned when an uploaded file exceeds the maximum allowed size."
+msgstr "A rendszer ezt adja vissza, ha egy feltöltött fájl mérete meghaladja a megengedett maximális méretet."
+
+#: includes/translations/registry.php:401
+msgid "Uploaded file exceeds the maximum size."
+msgstr "A feltöltött fájl mérete meghaladja a maximális méretet."
+
+#: includes/translations/registry.php:406
+msgid "Invalid file type error"
+msgstr "Hibás fájltípus miatti hiba"
+
+#: includes/translations/registry.php:407
+msgid "Returned when an uploaded file type is not allowed."
+msgstr "A rendszer ezt adja vissza, ha egy feltöltött fájltípus nem engedélyezett."
+
+#: includes/translations/registry.php:408
+msgid "Invalid file type."
+msgstr "Hibás fájltípus."
+
+#: includes/translations/registry.php:423
+msgid "Runtime labels and messages used by the My Chats interface."
+msgstr "A Saját csevegések felületén használt futásidejű címkék és üzenetek."
+
+#: includes/translations/registry.php:426
+msgid "Start Chat and fallbacks"
+msgstr "Csevegés indítása és tartalék megoldások"
+
+#: includes/translations/registry.php:427
+msgid ""
+"Fallback labels and notices used by Start Chat and WooCommerce runtime "
+"surfaces."
+msgstr "A Csevegés indítása és a WooCommerce futásidejű felületein használt tartalék címkék és értesítések."
+
+#: includes/translations/registry.php:431
+msgid "Runtime labels used by the header notifications element."
+msgstr "A fejléc értesítési eleménél használt futásidejű címkék."
+
+#: includes/translations/registry.php:434
+msgid "Runtime API and media errors"
+msgstr "Futásidejű API- és médiahibák"
+
+#: includes/translations/registry.php:435
+msgid ""
+"User-facing REST and media error messages surfaced by messenger runtime "
+"flows."
+msgstr "A messenger futásidejű folyamatai során megjelenő, felhasználóknak szóló REST- és médiahibaüzenetek."
+
+#: includes/wizard/manager.php:97
+msgid "WooCommerce is not active."
+msgstr "A WooCommerce nincs bekapcsolva."
+
+#. translators: %s: context key.
+#: includes/wizard/manager.php:131
+#, php-format
+msgid "Set an Endpoint URL Slug for the %s context."
+msgstr "Állítson be végpont-URL-slugot a(z) %s kontextushoz."
+
+#: includes/wizard/manager.php:155
+msgid "Choose or create a page for each context using static page routing."
+msgstr "Válasszon ki vagy hozzon létre egy oldalt minden kontextushoz statikus oldalakon alapuló útválasztással."
+
+#: includes/wizard/manager.php:164
+msgid "Unable to resolve the selected page."
+msgstr "Nem sikerült azonosítani a kiválasztott oldalt."
+
+#: includes/wizard/manager.php:287 includes/wizard/manager.php:401
+#: includes/wizard/manager.php:504
+msgid "Invalid target."
+msgstr "Hibás cél."
+
+#: includes/wizard/manager.php:294 includes/wizard/manager.php:408
+#: includes/wizard/manager.php:511
+msgid "Target not found."
+msgstr "A cél nem található."
+
+#: includes/wizard/manager.php:301
+msgid "Invalid template target."
+msgstr "Hibás sablonminta-célpont."
+
+#: includes/wizard/manager.php:306
+msgid "Invalid page target."
+msgstr "Hibás oldalcélpont."
+
+#: includes/wizard/manager.php:312 includes/wizard/manager.php:426
+#: includes/wizard/manager.php:529
+msgid "You do not have permission to edit this target."
+msgstr "Önnek nincs engedélye ennek a célnak a szerkesztésére."
+
+#: includes/wizard/manager.php:321
+msgid "Block already present."
+msgstr "A blokk már szerepel."
+
+#: includes/wizard/manager.php:344
+msgid "Block inserted."
+msgstr "A blokk beszúrva."
+
+#: includes/wizard/manager.php:415
+msgid "Invalid Elementor template."
+msgstr "Hibás Elementor-sablon."
+
+#: includes/wizard/manager.php:420
+msgid "Invalid Elementor page."
+msgstr "Hibás Elementor-oldal."
+
+#: includes/wizard/manager.php:436
+msgid "Widget already present."
+msgstr "A widget már szerepel."
+
+#: includes/wizard/manager.php:447
+msgid "Widget inserted."
+msgstr "A widget beszúrva."
+
+#: includes/wizard/manager.php:518
+msgid "Invalid Bricks template."
+msgstr "Hibás Bricks-sablon."
+
+#: includes/wizard/manager.php:523
+msgid "Invalid Bricks page."
+msgstr "Hibás Bricks-oldal."
+
+#: includes/wizard/manager.php:540
+msgid "Element already present."
+msgstr "Az elem már szerepel."
+
+#: includes/wizard/manager.php:553
+msgid "Unable to update Bricks content."
+msgstr "Nem sikerült frissíteni a Bricks-tartalmat."
+
+#: includes/wizard/manager.php:562
+msgid "Element inserted."
+msgstr "Az elem beillesztve."
+
+#: includes/wizard/manager.php:594
+msgid "Invalid insertion method."
+msgstr "Hibás beillesztési mód."
+
+#: includes/wizard/manager.php:631 assets/build/wizard.js:1
+msgid "Insertion failed."
+msgstr "A beillesztés sikertelen."
+
+#: assets/build/admin-docs.js:1
+msgid "Unable to render this documentation file."
+msgstr "Nem sikerült megjeleníteni ezt a dokumentációs fájlt."
+
+#: assets/build/admin-docs.js:1
+msgid "This documentation link is invalid or outside the bundled docs."
+msgstr "Ez a dokumentációs link hibás, vagy nem része a mellékelt dokumentációnak."
+
+#: assets/build/admin-docs.js:1
+msgid "Unable to load this documentation file. Please try again."
+msgstr "Nem sikerült betölteni ezt a dokumentációs fájlt. Kérjük, próbálja újra."
+
+#: assets/build/admin-docs.js:1
+msgid "Unable to build the documentation request."
+msgstr "Nem sikerült összeállítani a dokumentációs kérést."
+
+#: assets/build/admin-docs.js:1
+msgid "Documentation"
+msgstr "Dokumentáció"
+
+#: assets/build/admin-docs.js:1
+msgid "JetMessenger Documentation"
+msgstr "JetMessenger-dokumentáció"
+
+#: assets/build/admin-docs.js:1
+msgid "Back to main page"
+msgstr "Vissza a főoldalra"
+
+#: assets/build/admin-docs.js:1 assets/build/admin-notifications.js:1
+msgid "Retry"
+msgstr "Újrapróbálás"
+
+#: assets/build/admin-docs.js:1
+msgid "Loading documentation…"
+msgstr "Dokumentáció betöltése…"
+
+#: assets/build/admin-notifications.js:1
+#: assets/build/analytics-diagnostics.js:1 assets/build/settings.js:1
+msgid "Setup wizard"
+msgstr "Beállítási varázsló"
+
+#: assets/build/admin-notifications.js:1
+msgid "Enter a title or a notification URL."
+msgstr "Adjon meg egy címet vagy egy értesítési URL-t."
+
+#: assets/build/admin-notifications.js:1
+msgid "Title must be 200 characters or fewer."
+msgstr "A cím legfeljebb 200 karakter hosszú lehet."
+
+#: assets/build/admin-notifications.js:1
+msgid "Message must be 10,000 characters or fewer."
+msgstr "Az üzenet legfeljebb 10 000 karakter hosszú lehet."
+
+#: assets/build/admin-notifications.js:1
+msgid "Enter a relative URL or an HTTP(S) URL."
+msgstr "Adjon meg relatív URL-t vagy HTTP(S)-URL-t."
+
+#: assets/build/admin-notifications.js:1
+msgid "Select only available roles."
+msgstr "Csak elérhető szerepköröket válasszon ki."
+
+#: assets/build/admin-notifications.js:1
+msgid "Edit admin notification"
+msgstr "Adminértesítés szerkesztése"
+
+#: assets/build/admin-notifications.js:1
+msgid "Create admin notification"
+msgstr "Adminértesítés létrehozása"
+
+#: assets/build/admin-notifications.js:1
+msgid "Title"
+msgstr "Cím"
+
+#: assets/build/admin-notifications.js:1
+msgid "Message (Markdown)"
+msgstr "Üzenet (Markdown)"
+
+#: assets/build/admin-notifications.js:1
+msgid "Allowed roles"
+msgstr "Engedélyezett szerepkörök"
+
+#: assets/build/admin-notifications.js:1
+msgid "No selected roles means all authenticated users."
+msgstr "Ha nincs kiválasztva szerepkör, az összes hitelesített felhasználó megkapja az értesítést."
+
+#: assets/build/admin-notifications.js:1
+msgid "Notification URL"
+msgstr "Értesítési URL"
+
+#: assets/build/admin-notifications.js:1 assets/build/admin-notifications.js:3
+msgid "Cancel"
+msgstr "Mégse"
+
+#: assets/build/admin-notifications.js:1 assets/build/settings.js:2
+msgid "Save changes"
+msgstr "Módosítások mentése"
+
+#: assets/build/admin-notifications.js:1
+msgid "Create"
+msgstr "Létrehozás"
+
+#: assets/build/admin-notifications.js:1
+msgid "Read count"
+msgstr "Olvasások száma"
+
+#: assets/build/admin-notifications.js:1
+msgid "Created"
+msgstr "Létrehozva"
+
+#: assets/build/admin-notifications.js:1
+msgid "Actions"
+msgstr "Műveletek"
+
+#: assets/build/admin-notifications.js:1
+msgid "(opens in a new tab)"
+msgstr "(új lapon nyílik meg)"
+
+#: assets/build/admin-notifications.js:1
+msgid "All authenticated users"
+msgstr "Összes hitelesített felhasználó"
+
+#: assets/build/admin-notifications.js:1
+#: assets/build/analytics-diagnostics.js:1
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: assets/build/admin-notifications.js:1
+msgid "Duplicate"
+msgstr "Duplikálás"
+
+#: assets/build/admin-notifications.js:1 assets/build/admin-notifications.js:3
+msgid "Delete"
+msgstr "Törlés"
+
+#: assets/build/admin-notifications.js:1
+msgid "No admin notifications found."
+msgstr "Nem találhatók adminértesítések."
+
+#: assets/build/admin-notifications.js:1
+msgid "Unable to load admin notifications."
+msgstr "Nem sikerült betölteni az adminértesítéseket."
+
+#: assets/build/admin-notifications.js:1
+msgid "Add notification"
+msgstr "Értesítés hozzáadása"
+
+#: assets/build/admin-notifications.js:1
+msgid "Unable to duplicate the admin notification."
+msgstr "Nem sikerült duplikálni az adminértesítést."
+
+#: assets/build/admin-notifications.js:1
+msgid "Previous"
+msgstr "Előző"
+
+#. translators: 1: current page, 2: total pages.
+#: assets/build/admin-notifications.js:2
+#, js-format
+msgid "Page %1$d of %2$d"
+msgstr "Oldal %1$d / %2$d"
+
+#: assets/build/admin-notifications.js:2 assets/build/wizard.js:1
+msgid "Next"
+msgstr "Tovább"
+
+#: assets/build/admin-notifications.js:2
+msgid "Admin notification updated."
+msgstr "Az adminértesítés frissítve."
+
+#: assets/build/admin-notifications.js:2
+msgid "Admin notification created."
+msgstr "Az adminértesítés létrehozva."
+
+#: assets/build/admin-notifications.js:2
+msgid "Unable to save the admin notification."
+msgstr "Nem sikerült menteni az adminértesítést."
+
+#: assets/build/admin-notifications.js:2
+msgid "Delete admin notification"
+msgstr "Adminértesítés törlése"
+
+#. translators: %s: notification title, URL, or ID.
+#: assets/build/admin-notifications.js:3
+#, js-format
+msgid "Delete “%s”? Its read receipts will also be removed."
+msgstr "Törli ezt az értesítést: „%s”? Az olvasási visszaigazolásai is törlődnek."
+
+#: assets/build/admin-notifications.js:3
+msgid "Admin notification deleted."
+msgstr "Az adminértesítés törölve."
+
+#: assets/build/admin-notifications.js:3
+msgid "Unable to delete the admin notification."
+msgstr "Nem sikerült törölni az adminértesítést."
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Date Range"
+msgstr "Dátumtartomány"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Preset"
+msgstr "Előbeállítás"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Last 7 days"
+msgstr "Elmúlt 7 nap"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Last 30 days"
+msgstr "Elmúlt 30 nap"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Last 90 days"
+msgstr "Elmúlt 90 nap"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Custom"
+msgstr "Egyéni"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "From"
+msgstr "Kezdő dátum"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "To"
+msgstr "Befejezés dátuma"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Refresh analytics"
+msgstr "Analitika frissítése"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Chats created"
+msgstr "Létrehozott csevegések"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Messages sent"
+msgstr "Elküldött üzenetek"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Active chats"
+msgstr "Aktív csevegések"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Attachments sent"
+msgstr "Elküldött mellékletek"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Avg messages per chat"
+msgstr "Átlagos üzenetszám csevegésenként"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Plugin version"
+msgstr "Bővítmény verziója"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Context Breakdown"
+msgstr "Kontextus szerinti bontás"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Chats"
+msgstr "Csevegések"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Messages"
+msgstr "Üzenetek"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Attachments"
+msgstr "Mellékletek"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "No analytics data was found for this range."
+msgstr "Ehhez az időszakhoz nem találhatók analitikai adatok."
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Day by Day"
+msgstr "Napi bontás"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Date"
+msgstr "Dátum"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "No timeline data was found for this range."
+msgstr "Ehhez az időszakhoz nem találhatók idővonal-adatok."
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Overall Status"
+msgstr "Általános állapot"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Healthy"
+msgstr "Megfelelő"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Needs attention"
+msgstr "Figyelmet igényel"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Start Chat discoveries"
+msgstr "Csevegésindítási felfedezések"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Runtime surface"
+msgstr "Futtatókörnyezet felülete"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Unable to copy support snapshot."
+msgstr "Nem sikerült másolni a támogatási pillanatképet."
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Unable to load analytics."
+msgstr "Nem sikerült betölteni az analitikát."
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Unable to load diagnostics."
+msgstr "Nem sikerült betölteni a diagnosztikát."
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Diagnostic fix finished."
+msgstr "A diagnosztikai javítás befejeződött."
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Unable to run diagnostic fix."
+msgstr "Nem sikerült futtatni a diagnosztikai javítást."
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Refresh diagnostics"
+msgstr "Diagnosztika frissítése"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Support snapshot is empty."
+msgstr "A támogatási pillanatkép üres."
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Support snapshot copied."
+msgstr "A támogatási pillanatkép másolása megtörtént."
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Copying…"
+msgstr "Másolás folyamatban…"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Copy support snapshot"
+msgstr "Támogatási pillanatkép másolása"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Analytics"
+msgstr "Analitika"
+
+#: assets/build/analytics-diagnostics.js:1
+msgid "Diagnostic"
+msgstr "Diagnosztika"
+
+#: assets/build/block-editor.js:1
+msgid "Chats List Colors"
+msgstr "Csevegéslista színei"
+
+#: assets/build/block-editor.js:1
+msgid "Chat item hover background"
+msgstr "Csevegéstétel háttere rámutatáskor"
+
+#: assets/build/block-editor.js:1
+msgid "Chat item hover text"
+msgstr "Csevegéstétel szövege rámutatáskor"
+
+#: assets/build/block-editor.js:1
+msgid "Chat item hover border"
+msgstr "Csevegéstétel kerete rámutatáskor"
+
+#: assets/build/block-editor.js:1
+msgid "Message Input Colors"
+msgstr "Üzenetbeviteli mező színei"
+
+#: assets/build/block-editor.js:1
+msgid "Input background"
+msgstr "Beviteli mező háttere"
+
+#: assets/build/block-editor.js:1
+msgid "Input text"
+msgstr "Beviteli szöveg"
+
+#: assets/build/block-editor.js:1
+msgid "Input border"
+msgstr "Beviteli mező szegélye"
+
+#: assets/build/block-editor.js:1
+msgid "Attach button text"
+msgstr "Csatolás gomb szövege"
+
+#: assets/build/block-editor.js:1
+msgid "Attach button border"
+msgstr "Csatolás gomb kerete"
+
+#: assets/build/block-editor.js:1
+msgid "Send button text"
+msgstr "Küldés gomb szövege"
+
+#: assets/build/block-editor.js:1
+msgid "Send button border"
+msgstr "Küldés gomb kerete"
+
+#: assets/build/block-editor.js:1
+msgid "Message Input Shapes"
+msgstr "Üzenetbeviteli mező alakjai"
+
+#: assets/build/block-editor.js:1
+msgid "Input border radius"
+msgstr "Beviteli mező keretsarkainak lekerekítése"
+
+#: assets/build/block-editor.js:1
+msgid "Example: 10px"
+msgstr "Példa: 10px"
+
+#: assets/build/block-editor.js:1
+msgid "Format: meta_field::meta_value (one per line) or provide JSON."
+msgstr "Formátum: meta_field::meta_value (soronként egy), vagy adjon meg JSON-t."
+
+#: assets/build/block-editor.js:1
+msgid "Optional extra data. Use key::value per line or JSON."
+msgstr "Opcionális extra adatok. Soronként kulcs::érték formátumban adja meg, vagy használjon JSON-t."
+
+#: assets/build/block-editor.js:1
+msgid "Logged-out State"
+msgstr "Kijelentkezett állapot"
+
+#: assets/build/block-editor.js:1
+msgid "Leave empty to use the default login prompt message."
+msgstr "Hagyja üresen az alapértelmezett, belépésre felszólító üzenet használatához."
+
+#: assets/build/block-editor.js:1
+msgid "Logged-out Notice Styles"
+msgstr "Kijelentkezett állapot értesítésének stílusai"
+
+#: assets/build/block-editor.js:1
+msgid "CSS color value for the notice background."
+msgstr "CSS-színérték az értesítés hátteréhez."
+
+#: assets/build/block-editor.js:1
+msgid "Example: 1px"
+msgstr "Példa: 1px"
+
+#: assets/build/block-editor.js:1
+msgid "Example: 6px"
+msgstr "Példa: 6px"
+
+#: assets/build/block-editor.js:1
+msgid "Example: 10px 14px"
+msgstr "Példa: 10px 14px"
+
+#: assets/build/block-editor.js:1
+msgid "Linked message hover color"
+msgstr "Hivatkozott üzenet színe rámutatáskor"
+
+#: assets/build/block-editor.js:1
+msgid "Linked message font size"
+msgstr "Hivatkozott üzenet betűmérete"
+
+#: assets/build/block-editor.js:1
+msgid "Example: 16px"
+msgstr "Példa: 16px"
+
+#: assets/build/block-editor.js:1
+msgid "Linked message font weight"
+msgstr "Hivatkozott üzenet betűvastagsága"
+
+#: assets/build/block-editor.js:1
+msgid "Example: 600"
+msgstr "Példa: 600"
+
+#: assets/build/block-editor.js:1
+msgid "A button will be rendered on the front-end."
+msgstr "A webhely felületén egy gomb jelenik meg."
+
+#: assets/build/block-editor.js:1
+msgid ""
+"Logged-out visitors will see the configured linked message instead of the "
+"button."
+msgstr "A kijelentkezett látogatók a gomb helyett a beállított hivatkozott üzenetet látják."
+
+#: assets/build/block-editor.js:1 assets/build/settings.js:1
+msgid "Open color picker"
+msgstr "Színválasztó megnyitása"
+
+#: assets/build/block-editor.js:1 assets/build/settings.js:1
+msgid "Clear"
+msgstr "Törlés"
+
+#: assets/build/block-editor.js:1
+msgid "Custom color value"
+msgstr "Egyéni színérték"
+
+#: assets/build/block-editor.js:1
+msgid "Icon SVG markup"
+msgstr "Ikon SVG-kódja"
+
+#: assets/build/jfb-editor.js:1
+msgid "Key"
+msgstr "Kulcs"
+
+#: assets/build/jfb-editor.js:1
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: assets/build/jfb-editor.js:1
+msgid "Add meta row"
+msgstr "Metaadatsor hozzáadása"
+
+#: assets/build/jfb-editor.js:1
+msgid ""
+"This action requires the form submitter to be logged in. Guest chat creation"
+" is not supported."
+msgstr "Ehhez a művelethez az űrlap beküldőjének be kell jelentkeznie. Vendégként nem hozható létre csevegés."
+
+#: assets/build/jfb-editor.js:1
+msgid "Recipient source"
+msgstr "Címzett forrása"
+
+#: assets/build/jfb-editor.js:1
+msgid "Field / macro value"
+msgstr "Mező / makró értéke"
+
+#: assets/build/jfb-editor.js:1
+msgid "Fixed value"
+msgstr "Rögzített érték"
+
+#: assets/build/jfb-editor.js:1
+msgid "Recipient value"
+msgstr "Címzett értéke"
+
+#: assets/build/jfb-editor.js:1
+msgid ""
+"Accepts a WP user ID, email, JetMessenger public user ID, or JetFormBuilder "
+"macro."
+msgstr "WordPress-felhasználói ID-t, e-mail címet, JetMessenger nyilvános felhasználói ID-t vagy JetFormBuilder-makrót fogad el."
+
+#: assets/build/jfb-editor.js:1
+msgid "Unique chat"
+msgstr "Egyedi csevegés"
+
+#: assets/build/jfb-editor.js:1
+msgid ""
+"Reuse is based on participants plus resolved context hash, not the form "
+"record ID."
+msgstr "A meglévő csevegés újrafelhasználása a résztvevők és a feloldott kontextus hash értéke alapján történik, nem az űrlaprekord ID-ja alapján."
+
+#: assets/build/jfb-editor.js:1
+msgid "Send initial message"
+msgstr "Kezdő üzenet küldése"
+
+#: assets/build/jfb-editor.js:1
+msgid "Initial message"
+msgstr "Kezdő üzenet"
+
+#: assets/build/jfb-editor.js:1
+msgid "Send initial message when reusing existing chat"
+msgstr "Kezdő üzenet küldése meglévő csevegés újrafelhasználásakor"
+
+#: assets/build/jfb-editor.js:1
+msgid "Attach context"
+msgstr "Kontextus csatolása"
+
+#: assets/build/jfb-editor.js:1
+msgid "Context meta"
+msgstr "Kontextus metaadatai"
+
+#: assets/build/jfb-editor.js:1
+msgid "Chat meta"
+msgstr "Csevegés metaadatai"
+
+#: assets/build/settings.js:1 assets/build/wizard.js:1
+msgid "Static Page"
+msgstr "Statikus oldal"
+
+#: assets/build/settings.js:1 assets/build/wizard.js:1
+msgid "WooCommerce My Account Endpoint"
+msgstr "WooCommerce-végpont a Saját fiókhoz"
+
+#: assets/build/settings.js:1 assets/build/wizard.js:1
+msgid "Routing"
+msgstr "Útválasztás"
+
+#: assets/build/settings.js:1
+msgid ""
+"Choose where is the My Chats component will be rendered for this context."
+msgstr "Válassza ki, hol jelenjen meg a Saját csevegések komponens ebben a kontextusban."
+
+#: assets/build/settings.js:1
+msgid "Page URL"
+msgstr "Oldal URL-je"
+
+#: assets/build/settings.js:1
+msgid ""
+"Enter the URL of the page where the My Chats component is added. This is "
+"required for the automatic user redirection after chat is created."
+msgstr "Adja meg annak az oldalnak az URL-jét, amelyen a Saját csevegések komponens szerepel. Erre az URL-re a csevegés létrehozása utáni automatikus átirányításhoz van szükség."
+
+#: assets/build/settings.js:1 assets/build/wizard.js:1
+msgid "Endpoint Label"
+msgstr "Végpont címkéje"
+
+#: assets/build/settings.js:1
+msgid "Enter the label for the WooCommerce endpoint in the Account menu."
+msgstr "Adja meg a WooCommerce-végpont címkéjét a Fiók menüben."
+
+#: assets/build/settings.js:1 assets/build/wizard.js:1
+msgid "Endpoint URL Slug"
+msgstr "Végpont URL-slugja"
+
+#: assets/build/settings.js:1
+msgid ""
+"Enter the WooCommerce endpoint URL slug. This value is required and controls"
+" the My Account endpoint URL."
+msgstr "Adja meg a WooCommerce-végpont URL-slugját. Ez az érték kötelező, és ez határozza meg a Saját fiók végpont URL-jét."
+
+#: assets/build/settings.js:1 assets/build/wizard.js:1
+msgid ""
+"WooCommerce is not active. The endpoint will not be available until "
+"WooCommerce is enabled."
+msgstr "A WooCommerce nem aktív. A végpont csak a WooCommerce bekapcsolása után lesz elérhető."
+
+#: assets/build/settings.js:1
+msgid "Starter message"
+msgstr "Kezdőüzenet"
+
+#: assets/build/settings.js:1
+msgid ""
+"This message is sent automatically when a WooCommerce order creates a chat "
+"between customer and seller. You can use the supported template tokens "
+"below."
+msgstr "Ez az üzenet automatikusan akkor kerül elküldésre, amikor egy WooCommerce-rendelés csevegést hoz létre a vásárló és az eladó között. Használhatja az alábbi támogatott sablontokeneket."
+
+#: assets/build/settings.js:1
+msgid "Supported tokens:"
+msgstr "Támogatott helyőrzők:"
+
+#: assets/build/settings.js:1
+msgid "Add \"Chat About This Order\" button to order details page"
+msgstr "„Csevegés erről a rendelésről” gomb hozzáadása a rendelés részleteit tartalmazó oldalhoz"
+
+#: assets/build/settings.js:1
+msgid "Button position"
+msgstr "Gomb pozíciója"
+
+#: assets/build/settings.js:1
+msgid ""
+"Choose where to render the order chat CTA on the WooCommerce order details "
+"screen."
+msgstr "Válassza ki, hol jelenjen meg a rendeléshez kapcsolódó csevegésindító gomb a WooCommerce rendelés részleteit megjelenítő képernyőn."
+
+#: assets/build/settings.js:1
+msgid "Button label"
+msgstr "Gomb felirata"
+
+#: assets/build/settings.js:1
+msgid "Enter the label for the order chat CTA."
+msgstr "Adja meg a rendeléshez kapcsolódó csevegésindító gomb címkéjét."
+
+#: assets/build/settings.js:1
+msgid ""
+"Choose the position for the Start Product Chat button on the product page. "
+"You can select the appropriate hook for the button placement or skip "
+"automatic insertion and add it manually into the Single Product template."
+msgstr "Válassza ki, hol jelenjen meg a Start Product Chat gomb a termékoldalon. Kiválaszthatja a gomb elhelyezéséhez megfelelő hookot, vagy kihagyhatja az automatikus beszúrást, és kézzel is hozzáadhatja a termékoldal sablonmintájához."
+
+#: assets/build/settings.js:1
+msgid "To add the button manually, use the"
+msgstr "A gomb manuális hozzáadásához használja a következőt"
+
+#: assets/build/settings.js:1
+msgid "widget/block with \"wc_product\" context type."
+msgstr "„wc_product” kontextustípusú widget/blokk."
+
+#: assets/build/settings.js:1
+msgid "Ask about this product"
+msgstr "Kérdezzen erről a termékről"
+
+#: assets/build/settings.js:1
+msgid "Enter the label for the Start Product Chat button."
+msgstr "Adja meg a termékcsevegést indító gomb címkéjét."
+
+#: assets/build/settings.js:1
+msgid "Enable context"
+msgstr "Kontextus bekapcsolása"
+
+#: assets/build/settings.js:1
+msgid "This context requires WooCommerce to be active."
+msgstr "Ehhez a kontextushoz aktív WooCommerce szükséges."
+
+#: assets/build/settings.js:1
+msgid "Post"
+msgstr "Bejegyzés"
+
+#: assets/build/settings.js:1
+msgid ""
+"Allow chats to be connected to WordPress posts and route those chats to a "
+"dedicated My Chats page."
+msgstr "Engedélyezze, hogy a csevegések WordPress-bejegyzésekhez kapcsolódjanak, és irányítsa őket egy külön Saját csevegések oldalra."
+
+#: assets/build/settings.js:1
+msgid "Woo Orders"
+msgstr "WooCommerce-rendelések"
+
+#: assets/build/settings.js:1
+msgid ""
+"Allow to create chats related to WooCommerce orders. Appropriate chat "
+"between customer and seller automatically created after new order added."
+msgstr "Engedélyezze a WooCommerce-rendelésekhez kapcsolódó csevegések létrehozását. Az új rendelés leadásakor automatikusan létrejön a megfelelő csevegés a vásárló és az eladó között."
+
+#: assets/build/settings.js:1
+msgid "Woo Products"
+msgstr "Woo-termékek"
+
+#: assets/build/settings.js:1
+msgid ""
+"Allow to create chats related to WooCommerce products. New chat between "
+"customer and seller can be started through the button on the product page."
+msgstr "Engedélyezze WooCommerce-termékekhez kapcsolódó csevegések létrehozását. A vásárló és az eladó közötti új csevegés a termékoldalon található gombbal indítható."
+
+#: assets/build/settings.js:1
+msgid "Rate Limits"
+msgstr "Kérésszám-korlátok"
+
+#: assets/build/settings.js:1
+msgid "Enable rate limits"
+msgstr "Kérésszám-korlátok bekapcsolása"
+
+#: assets/build/settings.js:1
+msgid "Apply request limits to chat creation and message sending."
+msgstr "Alkalmazzon kérésszám-korlátokat a csevegések létrehozására és az üzenetek küldésére."
+
+#: assets/build/settings.js:1
+msgid "Chats per window"
+msgstr "Csevegések időablakonként"
+
+#: assets/build/settings.js:1
+msgid ""
+"How many chats one user can start within the timeframe set by the next "
+"option."
+msgstr "Hány csevegést indíthat egy felhasználó a következő beállításban megadott időtartam alatt."
+
+#: assets/build/settings.js:1
+msgid "Chat window (sec)"
+msgstr "Csevegési időablak (mp)"
+
+#: assets/build/settings.js:1
+msgid ""
+"Timeframe in seconds used to calculate the chat limit from the previous "
+"option."
+msgstr "Az előző beállítás csevegési korlátjának kiszámításához használt időtartam másodpercben."
+
+#: assets/build/settings.js:1
+msgid "Messages per window"
+msgstr "Üzenetek időablakonként"
+
+#: assets/build/settings.js:1
+msgid ""
+"How many messages one user can send across all chats within the timeframe "
+"set by the next option."
+msgstr "Hány üzenetet küldhet egy felhasználó az összes csevegésben a következő beállításban megadott időtartam alatt."
+
+#: assets/build/settings.js:1
+msgid "Message window (sec)"
+msgstr "Üzenetküldési időablak (mp)"
+
+#: assets/build/settings.js:1
+msgid ""
+"Timeframe in seconds used to calculate the global message limit from the "
+"previous option."
+msgstr "Az előző beállítás globális üzenetkorlátjának kiszámításához használt időtartam másodpercben."
+
+#: assets/build/settings.js:1
+msgid "Burst per chat"
+msgstr "Üzenetküldési korlát csevegésenként"
+
+#: assets/build/settings.js:1
+msgid ""
+"How many messages one user can send in one chat within the timeframe set by "
+"the next option."
+msgstr "Hány üzenetet küldhet egy felhasználó egy csevegésben a következő beállításban megadott időtartam alatt."
+
+#: assets/build/settings.js:1
+msgid "Burst window (sec)"
+msgstr "Üzenetküldési időablak csevegésenként (mp)"
+
+#: assets/build/settings.js:1
+msgid ""
+"Timeframe in seconds used to calculate the per-chat burst limit from the "
+"previous option."
+msgstr "Az előző beállítás csevegésenkénti üzenetküldési korlátjának kiszámításához használt időtartam másodpercben."
+
+#: assets/build/settings.js:1
+msgid "New Message"
+msgstr "Új üzenet"
+
+#: assets/build/settings.js:1
+msgid ""
+"Enabled by default. Sends the other participant an email when a new message "
+"is created."
+msgstr "Alapértelmezés szerint bekapcsolva. E-mailt küld a másik résztvevőnek új üzenet létrehozásakor."
+
+#: assets/build/settings.js:1
+msgid "Chat Created"
+msgstr "Csevegés létrehozva"
+
+#: assets/build/settings.js:1
+msgid "Disabled by default to avoid noisy empty-conversation emails."
+msgstr "Alapértelmezés szerint kikapcsolva, hogy elkerülje az üres beszélgetésekről küldött felesleges e-maileket."
+
+#: assets/build/settings.js:1
+msgid "Enable notifications"
+msgstr "Értesítések engedélyezése"
+
+#: assets/build/settings.js:1
+msgid ""
+"Notification preferences are global and managed here by the site "
+"administrator."
+msgstr "Az értesítési beállítások globálisak, kezelésüket itt végzi a webhely adminisztrátora."
+
+#: assets/build/settings.js:1
+msgid "Enable event"
+msgstr "Esemény bekapcsolása"
+
+#: assets/build/settings.js:1
+msgid "Enable email channel"
+msgstr "E-mail-csatorna bekapcsolása"
+
+#: assets/build/settings.js:1
+msgid "Email subject template"
+msgstr "Az e-mail tárgyának sablonja"
+
+#: assets/build/settings.js:1
+msgid ""
+"Supported tokens: {{site_name}}, {{chat_url}}, {{sender_name}}, "
+"{{recipient_name}}, {{last_message}}, {{context_type}}"
+msgstr "Támogatott helyőrzők: {{site_name}}, {{chat_url}}, {{sender_name}}, {{recipient_name}}, {{last_message}}, {{context_type}}"
+
+#: assets/build/settings.js:1
+msgid "Email body template"
+msgstr "E-mail-törzssablon"
+
+#: assets/build/settings.js:1
+msgid ""
+"Markdown is supported here and rendered into HTML email. Unknown tokens are "
+"removed automatically."
+msgstr "Itt használható a Markdown, amely HTML-e-mailként jelenik meg. Az ismeretlen tokenek automatikusan eltávolításra kerülnek."
+
+#: assets/build/settings.js:1
+msgid "Privacy"
+msgstr "Adatvédelem"
+
+#: assets/build/settings.js:1
+msgid "Enable personal data exporter"
+msgstr "Személyesadat-exportáló bekapcsolása"
+
+#: assets/build/settings.js:1
+msgid "Enable personal data eraser"
+msgstr "Személyesadat-törlő bekapcsolása"
+
+#: assets/build/settings.js:1
+msgid "Redact erased user messages"
+msgstr "Törölt felhasználói üzenetek anonimizálása"
+
+#: assets/build/settings.js:1
+msgid "Erased message placeholder"
+msgstr "Törölt üzenet helytartója"
+
+#: assets/build/settings.js:1
+msgid "Delete erased user attachments"
+msgstr "A törölt felhasználók csatolmányainak törlése"
+
+#: assets/build/settings.js:1
+msgid "Contexts"
+msgstr "Kontextusok"
+
+#: assets/build/settings.js:1
+msgid "No context settings have been registered yet."
+msgstr "Még nincsenek regisztrálva kontextusbeállítások."
+
+#: assets/build/settings.js:1
+msgid "Translation"
+msgstr "Fordítás"
+
+#: assets/build/settings.js:1
+msgid ""
+"Override supported messenger runtime text. Leave a field empty to use the "
+"plugin default."
+msgstr "A támogatott üzenetküldő futásidejű szövegeinek felülbírálása. Hagyja üresen a mezőt a bővítmény alapértelmezett szövegének használatához."
+
+#: assets/build/settings.js:1
+msgid "Default:"
+msgstr "Alapértelmezett:"
+
+#: assets/build/settings.js:1
+msgid "Avatar border color"
+msgstr "Avatár szegélyének színe"
+
+#: assets/build/settings.js:1
+msgid "Appearance"
+msgstr "Megjelenés"
+
+#: assets/build/settings.js:1
+msgid "Chat header"
+msgstr "Csevegés fejléce"
+
+#: assets/build/settings.js:1
+msgid "Show user avatar"
+msgstr "Felhasználói avatar megjelenítése"
+
+#: assets/build/settings.js:1
+msgid "Avatar size"
+msgstr "Avatár mérete"
+
+#: assets/build/settings.js:1
+msgid "Avatar border"
+msgstr "Avatár szegélye"
+
+#: assets/build/settings.js:1
+msgid "Show user email"
+msgstr "Felhasználói e-mail cím megjelenítése"
+
+#: assets/build/settings.js:1
+msgid "Show user role"
+msgstr "Felhasználói szerepkör megjelenítése"
+
+#: assets/build/settings.js:1
+msgid "General Settings"
+msgstr "Általános beállítások"
+
+#: assets/build/settings.js:1
+msgid "Chats Page URL"
+msgstr "Csevegések oldalának URL-je"
+
+#: assets/build/settings.js:1
+msgid ""
+"A global page URL where users can view their chats. This will be used for "
+"redirects to newly created chats."
+msgstr "Egy globális oldal URL-je, ahol a felhasználók megtekinthetik a csevegéseiket. Ezt használja a rendszer az újonnan létrehozott csevegésekre történő átirányításokhoz."
+
+#. translators: %s: context label.
+#: assets/build/settings.js:2
+#, js-format
+msgid "The \"%s\" context requires an Endpoint URL Slug before it can be saved."
+msgstr "A(z) „%s” környezet mentéséhez meg kell adni egy végpont URL-slugot."
+
+#: assets/build/settings.js:2
+msgid "Settings updated."
+msgstr "Beállítások frissítve."
+
+#: assets/build/settings.js:2
+msgid "Unable to save settings. Please try again."
+msgstr "Nem sikerült menteni a beállításokat. Kérjük, próbálja újra."
+
+#: assets/build/settings.js:2
+msgid "Saving…"
+msgstr "Mentés…"
+
+#: assets/build/wizard.js:1
+msgid "Direct messaging"
+msgstr "Közvetlen üzenetküldés"
+
+#: assets/build/wizard.js:1
+msgid "Allow users to send messages directly to each other."
+msgstr "Engedélyezze a felhasználóknak, hogy közvetlenül üzeneteket küldjenek egymásnak."
+
+#: assets/build/wizard.js:1
+msgid "Post messaging"
+msgstr "Bejegyzésekhez kapcsolódó üzenetküldés"
+
+#: assets/build/wizard.js:1
+msgid "Allow users to send messages related to WordPress posts."
+msgstr "Engedélyezze a felhasználóknak, hogy WordPress-bejegyzésekhez kapcsolódó üzeneteket küldjenek."
+
+#: assets/build/wizard.js:1
+msgid "WooCommerce order messaging"
+msgstr "WooCommerce-rendelésekhez kapcsolódó üzenetküldés"
+
+#: assets/build/wizard.js:1
+msgid ""
+"Allow users to send messages related to WooCommerce orders. New chats will "
+"be created for each order automatically."
+msgstr "Engedélyezze a felhasználóknak, hogy WooCommerce-rendelésekhez kapcsolódó üzeneteket küldjenek. A rendszer minden rendeléshez automatikusan új csevegést hoz létre."
+
+#: assets/build/wizard.js:1
+msgid "WooCommerce product messaging"
+msgstr "WooCommerce-termékekhez kapcsolódó üzenetküldés"
+
+#: assets/build/wizard.js:1
+msgid "Allow users to send messages related to WooCommerce products."
+msgstr "Engedélyezze a felhasználóknak, hogy WooCommerce-termékekhez kapcsolódó üzeneteket küldjenek."
+
+#: assets/build/wizard.js:1
+msgid "Elementor"
+msgstr "Elementor"
+
+#: assets/build/wizard.js:1
+msgid "Bricks"
+msgstr "Bricks"
+
+#: assets/build/wizard.js:1
+msgid "Block Editor"
+msgstr "Blokkszerkesztő"
+
+#: assets/build/wizard.js:1
+msgid "My Chats widget"
+msgstr "Saját csevegések widget"
+
+#: assets/build/wizard.js:1
+msgid "My Chats element"
+msgstr "Saját csevegések elem"
+
+#: assets/build/wizard.js:1
+msgid "My Chats block"
+msgstr "Saját csevegések blokk"
+
+#: assets/build/wizard.js:1
+msgid "Start New Chat widget"
+msgstr "Új csevegés indítása widget"
+
+#: assets/build/wizard.js:1
+msgid "Start New Chat element"
+msgstr "Új csevegés indítása elem"
+
+#: assets/build/wizard.js:1
+msgid "Start New Chat block"
+msgstr "Új csevegés indítása blokk"
+
+#: assets/build/wizard.js:1
+msgid "(Untitled)"
+msgstr "(Cím nélkül)"
+
+#: assets/build/wizard.js:1
+msgid "Unable to load pages."
+msgstr "Nem sikerült betölteni az oldalakat."
+
+#: assets/build/wizard.js:1
+msgid "Unable to load templates."
+msgstr "Nem sikerült betölteni a sablonmintákat."
+
+#: assets/build/wizard.js:1
+msgid "My Chats inserted automatically"
+msgstr "A Saját csevegések automatikusan beszúrva"
+
+#: assets/build/wizard.js:1
+msgid "My Chats already present"
+msgstr "A „Saját csevegések” már szerepel"
+
+#: assets/build/wizard.js:1
+msgid ""
+"Rendered through WooCommerce account endpoint routing. Go to WooCommerce "
+"account page to find the My Chats link."
+msgstr "A megjelenítés a WooCommerce-fiók végpont-útválasztásán keresztül történik. A Saját csevegések linket a WooCommerce-fiók oldalán találja."
+
+#: assets/build/wizard.js:1
+msgid "Manual setup required"
+msgstr "Kézi beállítás szükséges"
+
+#: assets/build/wizard.js:1
+msgid "Automatic insertion failed. Add the My Chats component manually."
+msgstr "Az automatikus beszúrás nem sikerült. Adja hozzá kézzel a Saját csevegések összetevőt."
+
+#: assets/build/wizard.js:1
+msgid "Add the My Chats component manually to this page or template."
+msgstr "Adja hozzá manuálisan a My Chats komponenst ehhez az oldalhoz vagy sablonhoz."
+
+#: assets/build/wizard.js:1
+msgid "Unable to save contexts."
+msgstr "Nem sikerült menteni a környezeteket."
+
+#: assets/build/wizard.js:1
+msgid "Select at least one context to continue."
+msgstr "A folytatáshoz válasszon ki legalább egy környezetet."
+
+#: assets/build/wizard.js:1
+msgid ""
+"Choose or create a page for each selected static-page context, and set an "
+"Endpoint URL Slug for each WooCommerce endpoint context."
+msgstr "Minden kiválasztott statikus oldal környezetéhez válasszon ki vagy hozzon létre egy oldalt, minden WooCommerce-végpont környezetéhez pedig állítson be egy végpont URL-slugot."
+
+#: assets/build/wizard.js:1
+msgid "Unable to save page routing."
+msgstr "Nem sikerült menteni az oldal útválasztását."
+
+#: assets/build/wizard.js:1
+msgid "Select a template for each context using template insertion."
+msgstr "Válasszon sablonmintát minden környezethez a sablonminta-beszúrás funkcióval."
+
+#: assets/build/wizard.js:1
+msgid "Unable to finish the wizard."
+msgstr "Nem sikerült befejezni a varázslót."
+
+#: assets/build/wizard.js:1
+msgid "This wizard will help you configure JetMessenger quickly."
+msgstr "Ez a varázsló segít gyorsan beállítani a JetMessengert."
+
+#: assets/build/wizard.js:1
+msgid "Start"
+msgstr "Indítás"
+
+#: assets/build/wizard.js:1
+msgid "Skip"
+msgstr "Kihagyás"
+
+#: assets/build/wizard.js:1
+msgid "Requires WooCommerce."
+msgstr "A WooCommerce szükséges."
+
+#: assets/build/wizard.js:1
+msgid "Select usage contexts"
+msgstr "Használati környezetek kiválasztása"
+
+#: assets/build/wizard.js:1
+msgid "Choose where you want to use the messenger:"
+msgstr "Válassza ki, hol szeretné használni az üzenetküldőt:"
+
+#: assets/build/wizard.js:1
+msgid "Select page"
+msgstr "Válasszon oldalt"
+
+#: assets/build/wizard.js:1
+msgid "New page title"
+msgstr "Új oldal címe"
+
+#: assets/build/wizard.js:1
+msgid ""
+"This value is required and controls the WooCommerce My Account endpoint URL."
+msgstr "Ez az érték kötelező, és a WooCommerce „Saját fiók” végpontjának URL-jét szabályozza."
+
+#: assets/build/wizard.js:1
+msgid "Create new page"
+msgstr "Új oldal létrehozása"
+
+#: assets/build/wizard.js:1
+msgid "Assign chat pages"
+msgstr "Csevegési oldalak hozzárendelése"
+
+#: assets/build/wizard.js:1
+msgid ""
+"Select existing pages or create new ones for static-page contexts. "
+"WooCommerce contexts can also use My Account endpoint routing, matching the "
+"regular settings flow."
+msgstr "Válasszon meglévő oldalakat, vagy hozzon létre újakat a statikus oldalak kontextusaihoz. A WooCommerce-kontextusok a szokásos beállítási folyamathoz igazodva a Saját fiók végpontjának útválasztását is használhatják."
+
+#: assets/build/wizard.js:1
+msgid "Static page URLs will use the selected page permalink, for example:"
+msgstr "A statikus oldalak URL-je a kiválasztott oldal közvetlen hivatkozását használja, például:"
+
+#: assets/build/wizard.js:1
+msgid "Setup Page Builder"
+msgstr "Oldalépítő beállítása"
+
+#: assets/build/wizard.js:1
+msgid "Select the page builder you are currently using:"
+msgstr "Válassza ki az éppen használt oldalépítőt:"
+
+#: assets/build/wizard.js:1
+msgid "Choose how you want to add Chat-related components to the page:"
+msgstr "Válassza ki, hogyan szeretné hozzáadni a csevegéshez kapcsolódó összetevőket az oldalhoz:"
+
+#: assets/build/wizard.js:1
+msgid "Add components for me"
+msgstr "Összetevők hozzáadása helyettem"
+
+#: assets/build/wizard.js:1
+msgid "I will do it manually later"
+msgstr "Később manuálisan végzem el"
+
+#: assets/build/wizard.js:1
+msgid "Auto insertion"
+msgstr "Automatikus beszúrás"
+
+#: assets/build/wizard.js:1
+msgid ""
+"Choose how JetMessenger should be inserted for each selected context. "
+"Contexts using WooCommerce account endpoint routing are handled "
+"automatically and do not need insertion here."
+msgstr "Válassza ki, hogyan kerüljön be a JetMessenger az egyes kiválasztott környezetekbe. A WooCommerce-fiók végpontjának útválasztását használó környezeteket a rendszer automatikusan kezeli, ezért ezeknél nincs szükség beszúrásra."
+
+#: assets/build/wizard.js:1
+msgid ""
+"This context uses WooCommerce account endpoint routing, so the chats UI will"
+" be rendered on the configured WooCommerce account endpoint page."
+msgstr "Ez a kontextus a WooCommerce-fiók végpontjának útválasztását használja, ezért a csevegőfelület a beállított WooCommerce-fiók végpontjának oldalán jelenik meg."
+
+#: assets/build/wizard.js:1
+msgid "Selected page:"
+msgstr "Kiválasztott oldal:"
+
+#: assets/build/wizard.js:1
+msgid "Insert directly into the page content"
+msgstr "Beszúrás közvetlenül az oldal tartalmába"
+
+#: assets/build/wizard.js:1
+msgid "Insert into a template"
+msgstr "Beszúrás sablonba"
+
+#: assets/build/wizard.js:1
+msgid ""
+"Insert the chats UI component directly into the page content, or into the "
+"template, which is used on this page (for example theme builder templates or"
+" JetEngine Profile Builder)."
+msgstr "Szúrja be a csevegési felület komponensét közvetlenül az oldal tartalmába vagy az ezen az oldalon használt sablonba (például a sablonkészítő vagy a JetEngine Profile Builder sablonjaiba)."
+
+#: assets/build/wizard.js:1
+msgid "Select template"
+msgstr "Válasszon sablont"
+
+#: assets/build/wizard.js:1
+msgid "Select a template"
+msgstr "Sablonminta kiválasztása"
+
+#: assets/build/wizard.js:1
+msgid ""
+"Select a template for each context that is configured to use template "
+"insertion."
+msgstr "Válasszon sablonmintát minden olyan kontextushoz, amelynél a sablonminta beszúrása van beállítva."
+
+#: assets/build/wizard.js:1
+msgid "Insert now"
+msgstr "Beszúrás most"
+
+#: assets/build/wizard.js:1
+msgid "View page"
+msgstr "Oldal megtekintése"
+
+#: assets/build/wizard.js:1
+msgid "Edit page"
+msgstr "Oldal szerkesztése"
+
+#: assets/build/wizard.js:1
+msgid "Setup complete"
+msgstr "Beállítás kész"
+
+#: assets/build/wizard.js:1
+msgid "Your JetMessenger contexts and chat surfaces are configured."
+msgstr "A JetMessenger kontextusai és chatfelületei be vannak állítva."
+
+#: assets/build/wizard.js:1
+msgid ""
+"Your JetMessenger contexts are configured, but some chat surfaces still need"
+" manual attention."
+msgstr "A JetMessenger kontextusai be vannak állítva, de néhány chatfelület még manuális beavatkozást igényel."
+
+#: assets/build/wizard.js:1
+msgid "Selected contexts"
+msgstr "Kiválasztott kontextusok"
+
+#: assets/build/wizard.js:1
+msgid "WooCommerce My Account endpoint"
+msgstr "A WooCommerce „Saját fiók” végpontja"
+
+#: assets/build/wizard.js:1
+msgid "Configured page"
+msgstr "Beállított oldal"
+
+#: assets/build/wizard.js:1
+msgid "Manual My Chats setup"
+msgstr "Saját csevegések manuális beállítása"
+
+#: assets/build/wizard.js:1
+msgid "Add the My Chats component manually for the items listed below."
+msgstr "Adja hozzá manuálisan a Saját csevegések összetevőt az alábbi tételekhez."
+
+#: assets/build/wizard.js:1
+msgid "Using"
+msgstr "Használatával"
+
+#: assets/build/wizard.js:1
+msgid "add the"
+msgstr "adja hozzá a"
+
+#: assets/build/wizard.js:1
+msgid "to the target page or template and choose the matching context."
+msgstr "a céloldalra vagy sablonra, majd válassza ki a megfelelő kontextust."
+
+#: assets/build/wizard.js:1
+msgid ""
+"Add the My Chats component to the target page or template and choose the "
+"matching context."
+msgstr "Adja hozzá a My Chats komponenst a céloldalhoz vagy sablonhoz, majd válassza ki a megfelelő kontextust."
+
+#: assets/build/wizard.js:1
+msgid "Allow users to start chats"
+msgstr "Engedélyezze a felhasználóknak, hogy csevegést indítsanak"
+
+#: assets/build/wizard.js:1
+msgid "To let users start new chats, add the"
+msgstr "Ha szeretné lehetővé tenni a felhasználóknak, hogy új csevegéseket indítsanak, adja hozzá a"
+
+#: assets/build/wizard.js:1
+msgid ""
+"to the relevant pages, such as product pages, user profile areas or user "
+"listings."
+msgstr "a megfelelő oldalakhoz, például termékoldalakhoz, felhasználói profilokhoz vagy felhasználói listákhoz."
+
+#: assets/build/wizard.js:1
+msgid "Contexts requires the start chat button setup:"
+msgstr "A kontextusokhoz be kell állítani a csevegésindító gombot:"
+
+#: assets/build/wizard.js:1
+msgid "Next steps"
+msgstr "Következő lépések"
+
+#: assets/build/wizard.js:1
+msgid "Finishing…"
+msgstr "Befejezés…"
+
+#: assets/build/wizard.js:1
+msgid "Finish"
+msgstr "Befejezés"
+
+#: assets/build/wizard.js:1
+msgid "Open documentation"
+msgstr "Dokumentáció megnyitása"

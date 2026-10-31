@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: JetFormBuilder Hierarchical Select 1.0.7\n"
+"Project-Id-Version: JetFormBuilder Hierarchical Select 1.0.10\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:48:46+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,10 +18,11 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: JetFormBuilder Hierarchical Select\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.0.7\n"
+"X-Plugin-Version: 1.0.10\n"
 
 #. Plugin Name of the plugin
 #: jet-form-builder-hierarchical-select.php
+#: jet-form-builder-hierarchical-select.php:106
 msgid "JetFormBuilder Hierarchical Select"
 msgstr "JetFormBuilder Hierarchical Select"
 
@@ -63,7 +64,7 @@ msgstr "Kifejezés slug"
 
 #: includes/BaseHrSelectField.php:316
 msgid "Term Meta"
-msgstr "Kifejezés meta"
+msgstr "Kifejezés metaadatai"
 
 #: includes/BaseHrSelectField.php:329
 msgid "Current Post"
@@ -71,7 +72,7 @@ msgstr "Aktuális bejegyzés"
 
 #: includes/BaseHrSelectField.php:333
 msgid "Queried Post from preset"
-msgstr "Lekérdezett bejegyzés előbeállításból"
+msgstr "Előbeállításból lekérdezett bejegyzés"
 
 #: includes/BaseHrSelectField.php:339
 msgid "Show all children levels"
@@ -79,15 +80,15 @@ msgstr "Összes gyermekszint megjelenítése"
 
 #: includes/BaseHrSelectField.php:343
 msgid "Hide all children levels until parent level selected"
-msgstr "Összes gyermekszint elrejtése a szülő szint kiválasztásáig"
+msgstr "Összes gyermekszint elrejtése a szülőszint kiválasztásáig"
 
 #: includes/BaseHrSelectField.php:347
 msgid "Disable all children levels until parent level selected"
-msgstr "Összes gyermekszint letiltása a szülő szint kiválasztásáig"
+msgstr "Összes gyermekszint kikapcsolása a szülőszint kiválasztásáig"
 
 #: includes/BaseHrSelectField.php:355
 msgid "Taxonomy type"
-msgstr "Taxonómia típusa"
+msgstr "Osztályozás (taxonomy) típusa"
 
 #: includes/BaseHrSelectField.php:356
 msgid "Term value from"
@@ -95,15 +96,15 @@ msgstr "Kifejezés értéke innen"
 
 #: includes/BaseHrSelectField.php:357
 msgid "Term's meta field key/ID"
-msgstr "Kifejezés meta mező kulcsa/ID"
+msgstr "A kifejezés metaadatmezőjének kulcsa/ID-je"
 
 #: includes/BaseHrSelectField.php:358
 msgid "Get calculated value from term meta"
-msgstr "Számított érték lekérése a kifejezés metájából"
+msgstr "Számított érték lekérése a kifejezés metaadataiból"
 
 #: includes/BaseHrSelectField.php:359
 msgid "Term's meta field key/ID for calculated value"
-msgstr "Kifejezés meta mező kulcsa/ID a számított értékhez"
+msgstr "A kifejezés metaadatmezőjének kulcsa/ID-je a számított értékhez"
 
 #: includes/BaseHrSelectField.php:360
 msgid "Edit Levels"
@@ -131,7 +132,7 @@ msgstr "Leírás"
 
 #: includes/BaseHrSelectField.php:366
 msgid "Enable manual input"
-msgstr "Kézi bevitel engedélyezése"
+msgstr "Kézi bevitel bekapcsolása"
 
 #: includes/BaseHrSelectField.php:367
 msgid "Please add at least one level"
@@ -157,9 +158,7 @@ msgstr "Számítások csak numerikus értékek esetén lehetségesek."
 msgid ""
 "Works only if the term from the previous select field doesn't have any child"
 " terms"
-msgstr ""
-"Csak akkor működik, ha az előző Select mezőben kiválasztott kifejezésnek "
-"nincsenek gyermek kifejezései."
+msgstr "Csak akkor működik, ha az előző legördülő mezőben kiválasztott kifejezésnek nincsenek alárendelt kifejezései."
 
 #: includes/JetFormBuilder/Blocks/ManagerBlocks.php:32
 msgid ""
@@ -169,10 +168,14 @@ msgstr ""
 "<b>Figyelmeztetés</b>: A <b>JetFormBuilder Hierarchical Select</b>-hez a "
 "<b>JetFormBuilder</b> frissítése szükséges."
 
-#: jet-form-builder-hierarchical-select.php:37
+#: jet-form-builder-hierarchical-select.php:86
 msgid ""
 "<b>Error:</b> <b>JetFormBuilder Hierarchical Select</b> plugin requires a "
 "PHP version \">= 7.0.0\" to work properly!"
 msgstr ""
 "<b>Hiba:</b> A <b>JetFormBuilder Hierarchical Select</b> bővítmény megfelelő"
 " működéséhez \">= 7.0.0\" PHP-verzió szükséges!"
+
+#: jet-form-builder-hierarchical-select.php:107
+msgid "requires JetFormBuilder plugin to be installed and activated."
+msgstr "A JetFormBuilder bővítmény telepítése és bekapcsolása szükséges."

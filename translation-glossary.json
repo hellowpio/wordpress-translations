@@ -1,27 +1,3567 @@
 {
-  "description": "Magyar fordítási szótár - konzisztens terminológia használatához",
-  "version": "1.0.0",
+  "description": "Magyar fordítási szótár a WordPress-bővítmények és -sablonok egységes terminológiájához. Elsőbbség: a WordPress magyar felülete, a WooCommerce magyar fordítása, a repó többségi fordítása, végül a wordpress.org magyar szótára. A „kezi” forrású tételek tulajdonosi döntések.",
+  "version": "2.0.0",
   "language": "hu_HU",
+  "forrasok": {
+    "wordpress": "WordPress 7.1.4 hu_HU (admin + front)",
+    "woocommerce": "WooCommerce hu_HU, translate.wordpress.org",
+    "repo": "ez a repó, formal/*.po, legalább 70%-os egyezés",
+    "wordpress.org-szotar": "translate.wordpress.org/locale/hu/default/glossary"
+  },
+  "felulvizsgalando": [
+    "activate",
+    "activity",
+    "add",
+    "add-on",
+    "admin",
+    "administrator",
+    "advanced",
+    "alignment",
+    "allow",
+    "american samoa",
+    "antigua and barbuda",
+    "belarus",
+    "border",
+    "bottom",
+    "bulk actions",
+    "button text",
+    "cancel",
+    "cape verde",
+    "categories",
+    "city",
+    "clear",
+    "clone",
+    "content type",
+    "current",
+    "deactivate",
+    "desktop",
+    "disable",
+    "disabled",
+    "display name",
+    "dominica",
+    "email",
+    "email address",
+    "enable",
+    "enabled",
+    "equatorial guinea",
+    "filter",
+    "font family",
+    "full",
+    "hong kong",
+    "inactive",
+    "invalid",
+    "isle of man",
+    "item",
+    "jamaica",
+    "learn more",
+    "link",
+    "log in",
+    "login",
+    "maldives",
+    "menu order",
+    "mozambique",
+    "no results found",
+    "none",
+    "note",
+    "notes",
+    "number",
+    "optional",
+    "options",
+    "order status",
+    "phone",
+    "placeholder",
+    "position",
+    "publish",
+    "qatar",
+    "read more",
+    "reset",
+    "responsive",
+    "schedule",
+    "select",
+    "select all",
+    "show",
+    "site",
+    "sku",
+    "south africa",
+    "submit",
+    "subscribe",
+    "success",
+    "tablet",
+    "taxonomy",
+    "theme",
+    "tokelau",
+    "top",
+    "total",
+    "tuvalu",
+    "user id",
+    "warning",
+    "widget"
+  ],
   "glossary": {
-    "up-sell": {
-      "hu": "felülértékesítés",
-      "context": "E-commerce",
-      "note": "Amikor drágább terméket ajánlunk a vásárlónak"
+    "AI": {
+      "hu": "AI",
+      "forras": "kezi",
+      "szofaj": "noun",
+      "note": "NEM fordítjuk: AI, ragozva AI-t, AI-jal, AI-alapú; soha nem MI"
+    },
+    "activate your license": {
+      "hu": "aktivál",
+      "forras": "kezi",
+      "szofaj": "phrase",
+      "note": "licencnél aktiválás, nem bekapcsolás"
+    },
+    "license activation": {
+      "hu": "aktivál",
+      "forras": "kezi",
+      "szofaj": "phrase",
+      "note": "licencaktiválás, nem bekapcsolás"
+    },
+    "deactivate license": {
+      "hu": "deaktivál",
+      "forras": "kezi",
+      "szofaj": "phrase",
+      "note": "licencnél deaktiválás, nem kikapcsolás"
+    },
+    "license deactivation": {
+      "hu": "deaktivál",
+      "forras": "kezi",
+      "szofaj": "phrase",
+      "note": "licencdeaktiválás, nem kikapcsolás"
+    },
+    "ability": {
+      "hu": "képesség",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "access token": {
+      "hu": "Hozzáférési token",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "action": {
+      "hu": "Művelet",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "actions": {
+      "hu": "Műveletek",
+      "forras": "wordpress"
+    },
+    "activate": {
+      "hu": "Bekapcsolás",
+      "elfogad": [
+        "aktiválás",
+        "aktivál"
+      ],
+      "forras": "wordpress",
+      "szofaj": "verb",
+      "alternativak": [
+        "Aktiválás",
+        "Bekapcsol"
+      ]
+    },
+    "activate license": {
+      "hu": "Licenc aktiválása",
+      "forras": "repo"
+    },
+    "active": {
+      "hu": "Aktív",
+      "forras": "woocommerce"
+    },
+    "activity": {
+      "hu": "Történések",
+      "forras": "wordpress",
+      "szofaj": "noun",
+      "alternativak": [
+        "Tevékenység",
+        "tevékenység"
+      ]
+    },
+    "add": {
+      "hu": "Hozzáad",
+      "elfogad": [
+        "megad",
+        "hozzáadás"
+      ],
+      "forras": "wordpress",
+      "szofaj": "verb",
+      "alternativak": [
+        "Hozzáadás",
+        "hozzáadás"
+      ]
+    },
+    "add new": {
+      "hu": "Új hozzáadása",
+      "forras": "woocommerce",
+      "szofaj": "verb"
+    },
+    "add to cart": {
+      "hu": "Kosárba teszem",
+      "forras": "woocommerce"
+    },
+    "add-on": {
+      "hu": "Kiegészítő",
+      "forras": "repo",
+      "szofaj": "noun",
+      "note": "vagy addon; lásd még plugin",
+      "alternativak": [
+        "bővítmény"
+      ]
+    },
+    "address": {
+      "hu": "Cím",
+      "forras": "repo"
+    },
+    "admin": {
+      "hu": "Admin",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "rendszergazda"
+      ]
+    },
+    "administrator": {
+      "hu": "Adminisztrátor",
+      "forras": "repo",
+      "szofaj": "noun",
+      "alternativak": [
+        "rendszergazda"
+      ]
+    },
+    "advanced": {
+      "hu": "Haladó",
+      "forras": "wordpress",
+      "szofaj": "adjective",
+      "note": "A „haladó” vagy „fejlett” nem igazán szerencsés",
+      "alternativak": [
+        "speciális"
+      ]
+    },
+    "Afghanistan": {
+      "hu": "Afganisztán",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Albania": {
+      "hu": "Albánia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Algeria": {
+      "hu": "Algéria",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "alignment": {
+      "hu": "Illesztés",
+      "forras": "wordpress",
+      "alternativak": [
+        "Igazítás"
+      ]
+    },
+    "all": {
+      "hu": "Összes",
+      "elfogad": [
+        "mind"
+      ],
+      "forras": "wordpress"
+    },
+    "allow": {
+      "hu": "Engedélyez",
+      "forras": "wordpress",
+      "szofaj": "verb",
+      "alternativak": [
+        "Engedélyezés",
+        "engedélyezés"
+      ]
+    },
+    "American Samoa": {
+      "hu": "Amerikai Szamoa",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "Amerkai Szamoa"
+      ]
+    },
+    "amount": {
+      "hu": "Összeg",
+      "forras": "woocommerce"
+    },
+    "and": {
+      "hu": "és",
+      "forras": "woocommerce"
+    },
+    "Andorra": {
+      "hu": "Andorra",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Angola": {
+      "hu": "Angola",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Anguilla": {
+      "hu": "Anguilla",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Antarctica": {
+      "hu": "Antarktisz",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Antigua and Barbuda": {
+      "hu": "Antigua és Barbuda",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "Antigua és Barbuda"
+      ]
+    },
+    "API": {
+      "hu": "API",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "api key": {
+      "hu": "API-kulcs",
+      "forras": "woocommerce"
+    },
+    "appearance": {
+      "hu": "Megjelenés",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "apply": {
+      "hu": "Alkalmaz",
+      "forras": "wordpress"
+    },
+    "archive": {
+      "hu": "Archívum",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "Argentina": {
+      "hu": "Argentína",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Armenia": {
+      "hu": "Örményország",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Aruba": {
+      "hu": "Aruba",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "attachment": {
+      "hu": "csatolmány",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "Australia": {
+      "hu": "Ausztrália",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Austria": {
+      "hu": "Ausztria",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "author": {
+      "hu": "Szerző",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "auto": {
+      "hu": "Automatikus",
+      "forras": "repo"
+    },
+    "available": {
+      "hu": "Elérhető",
+      "forras": "repo",
+      "szofaj": "adjective",
+      "note": "vagy „rendelkezésre álló”"
+    },
+    "Azerbaijan": {
+      "hu": "Azerbajdzsán",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "back": {
+      "hu": "Vissza",
+      "forras": "wordpress"
+    },
+    "background": {
+      "hu": "Háttér",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "background color": {
+      "hu": "Háttérszín",
+      "forras": "wordpress"
+    },
+    "Bahamas": {
+      "hu": "Bahama-szigetek",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Bahrain": {
+      "hu": "Bahrein",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Bangladesh": {
+      "hu": "Banglades",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Barbados": {
+      "hu": "Barbados",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Belarus": {
+      "hu": "Belarusz",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "Fehéroroszország"
+      ]
+    },
+    "Belgium": {
+      "hu": "Belgium",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Belize": {
+      "hu": "Belize",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Benin": {
+      "hu": "Benin",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Bermuda": {
+      "hu": "Bermuda",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Bhutan": {
+      "hu": "Bhután",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "block": {
+      "hu": "Blokk",
+      "forras": "wordpress"
+    },
+    "Bolivia": {
+      "hu": "Bolívia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Bonaire, Saint Eustatius and Saba": {
+      "hu": "Bonaire, Saint Eustatius és Saba",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "border": {
+      "hu": "Keret",
+      "forras": "wordpress",
+      "alternativak": [
+        "Szegély"
+      ]
+    },
+    "border color": {
+      "hu": "Szegély színe",
+      "forras": "wordpress"
+    },
+    "Bosnia and Herzegovina": {
+      "hu": "Bosznia-Hercegovina",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Botswana": {
+      "hu": "Botswana",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "bottom": {
+      "hu": "Lent",
+      "forras": "wordpress",
+      "alternativak": [
+        "Alul"
+      ]
+    },
+    "bottom left": {
+      "hu": "Balra lent",
+      "forras": "wordpress"
+    },
+    "bottom right": {
+      "hu": "Jobbra lent",
+      "forras": "wordpress"
+    },
+    "Bouvet Island": {
+      "hu": "Bouvet-sziget",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Brazil": {
+      "hu": "Brazília",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "breadcrumb": {
+      "hu": "breadcrumb",
+      "forras": "kezi",
+      "szofaj": "noun",
+      "note": "NEM fordítjuk: bevett angol szakszó (nem morzsamenü, nem morzsaútvonal)"
+    },
+    "breadcrumb navigation": {
+      "hu": "breadcrumb-navigáció",
+      "forras": "kezi",
+      "szofaj": "noun",
+      "note": "a breadcrumb szót NEM fordítjuk"
+    },
+    "British Indian Ocean Territory": {
+      "hu": "Brit Indiai-óceáni Terület",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "browse": {
+      "hu": "Böngészés",
+      "forras": "woocommerce",
+      "szofaj": "verb"
+    },
+    "Brunei Darrussalam": {
+      "hu": "Brunei Darrussalam",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "bug": {
+      "hu": "szoftverhiba",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "Bulgaria": {
+      "hu": "Bulgária",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "bulk actions": {
+      "hu": "Tömeges műveletek",
+      "forras": "wordpress",
+      "alternativak": [
+        "Csoportos műveletek"
+      ]
+    },
+    "Burkina Faso": {
+      "hu": "Burkina Faso",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Burundi": {
+      "hu": "Burundi",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "button": {
+      "hu": "Gomb",
+      "forras": "repo"
+    },
+    "button text": {
+      "hu": "Gomb szöveg",
+      "forras": "woocommerce",
+      "alternativak": [
+        "Gomb szövege"
+      ]
+    },
+    "buttons": {
+      "hu": "Gombok",
+      "forras": "repo"
+    },
+    "cache": {
+      "hu": "Gyorsítótár",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "Cambodia": {
+      "hu": "Kambodzsa",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Cameroon": {
+      "hu": "Kamerun",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Canada": {
+      "hu": "Kanada",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "cancel": {
+      "hu": "Mégsem",
+      "forras": "wordpress",
+      "alternativak": [
+        "Mégse"
+      ]
+    },
+    "Cape Verde": {
+      "hu": "Zöld-foki-szigetek",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "Zöld-foki Köztársaság"
+      ]
+    },
+    "carousel": {
+      "hu": "carousel",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "cart": {
+      "hu": "Kosár",
+      "forras": "woocommerce"
+    },
+    "categories": {
+      "hu": "Kategóriák",
+      "forras": "wordpress",
+      "alternativak": [
+        "Kategória"
+      ]
+    },
+    "category": {
+      "hu": "Kategória",
+      "forras": "repo"
+    },
+    "center": {
+      "hu": "Közép",
+      "forras": "wordpress"
+    },
+    "Chad": {
+      "hu": "Csád",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "checkbox": {
+      "hu": "Jelölőnégyzet",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "Chile": {
+      "hu": "Chile",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "China": {
+      "hu": "Kína",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "choose": {
+      "hu": "kiválasztás",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "verb"
+    },
+    "Christmas Island": {
+      "hu": "Karácsony-sziget",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "city": {
+      "hu": "Település",
+      "forras": "wordpress",
+      "alternativak": [
+        "Város"
+      ]
+    },
+    "classic": {
+      "hu": "Klasszikus",
+      "forras": "repo"
+    },
+    "clear": {
+      "hu": "Kiürítés",
+      "forras": "wordpress",
+      "alternativak": [
+        "Törlés"
+      ]
+    },
+    "clone": {
+      "hu": "Klónozás",
+      "forras": "repo",
+      "szofaj": "verb",
+      "note": "Vagy „klónozás”",
+      "alternativak": [
+        "másolat készítése"
+      ]
+    },
+    "close": {
+      "hu": "Bezárás",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "code": {
+      "hu": "Kód",
+      "forras": "wordpress"
+    },
+    "Colombia": {
+      "hu": "Kolumbia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "color": {
+      "hu": "Szín",
+      "forras": "wordpress"
+    },
+    "colors": {
+      "hu": "Színek",
+      "forras": "wordpress"
+    },
+    "column": {
+      "hu": "Oszlop",
+      "forras": "wordpress"
+    },
+    "columns": {
+      "hu": "Oszlopok",
+      "forras": "wordpress"
+    },
+    "comment": {
+      "hu": "Hozzászólás",
+      "forras": "wordpress",
+      "szofaj": "verb",
+      "note": "esetleg hozzászólás írása / megjegyzés írása"
+    },
+    "comments": {
+      "hu": "Hozzászólások",
+      "forras": "wordpress"
+    },
+    "Comoros": {
+      "hu": "Comore-szigetek",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "completed": {
+      "hu": "Befejezve",
+      "forras": "woocommerce"
+    },
+    "confirm": {
+      "hu": "Megerősítés",
+      "forras": "repo"
+    },
+    "container": {
+      "hu": "Konténer",
+      "forras": "repo"
+    },
+    "content": {
+      "hu": "Tartalom",
+      "forras": "wordpress"
+    },
+    "content type": {
+      "hu": "Tartalom típusa",
+      "forras": "woocommerce",
+      "alternativak": [
+        "Tartalomtípus"
+      ]
+    },
+    "continue": {
+      "hu": "Folytatás",
+      "forras": "wordpress"
+    },
+    "control panel": {
+      "hu": "vezérlőpult",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun",
+      "note": "Lásd még: dashboard"
+    },
+    "cookie": {
+      "hu": "cookie",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "copy": {
+      "hu": "Másolás",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "Costa Rica": {
+      "hu": "Costa Rica",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Cote d'Ivoire": {
+      "hu": "Elefántcsontpart",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "country": {
+      "hu": "Ország",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "coupon code": {
+      "hu": "Kuponkód",
+      "forras": "woocommerce"
+    },
+    "create": {
+      "hu": "Létrehozás",
+      "forras": "wordpress"
+    },
+    "created": {
+      "hu": "Létrehozva",
+      "forras": "wordpress"
+    },
+    "Croatia/Hrvatska": {
+      "hu": "Horvátország",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "crocoblock": {
+      "hu": "Crocoblock",
+      "forras": "repo"
+    },
+    "cron": {
+      "hu": "cron",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
     },
     "cross-sell": {
       "hu": "keresztértékesítés",
       "context": "E-commerce",
-      "note": "Amikor kiegészítő termékeket ajánlunk a vásárlónak"
+      "note": "Amikor kiegészítő termékeket ajánlunk a vásárlónak",
+      "forras": "kezi"
+    },
+    "CSS": {
+      "hu": "CSS",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "Cuba": {
+      "hu": "Kuba",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "CuraÇao": {
+      "hu": "CuraÇao",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "currency": {
+      "hu": "Pénznem",
+      "forras": "woocommerce"
+    },
+    "current": {
+      "hu": "Aktuális",
+      "forras": "woocommerce",
+      "szofaj": "adjective",
+      "alternativak": [
+        "jelenlegi"
+      ]
+    },
+    "custom": {
+      "hu": "Egyéni",
+      "elfogad": [
+        "egyedi"
+      ],
+      "forras": "wordpress",
+      "szofaj": "adjective"
+    },
+    "custom fields": {
+      "hu": "Egyéni mezők",
+      "forras": "wordpress"
+    },
+    "customer": {
+      "hu": "Vásárló",
+      "forras": "woocommerce"
+    },
+    "customize": {
+      "hu": "Testreszabás",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "cut": {
+      "hu": "Kivágás",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "Cyprus": {
+      "hu": "Ciprus",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Czechia": {
+      "hu": "Csehország",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun",
+      "note": "2016-04 óta hivatalos rövid név, előtte angolul csak a Czech Republic volt használatos"
+    },
+    "daily": {
+      "hu": "Napi",
+      "forras": "repo"
+    },
+    "dark": {
+      "hu": "Sötét",
+      "forras": "repo"
+    },
+    "dashboard": {
+      "hu": "Vezérlőpult",
+      "forras": "kezi",
+      "szofaj": "noun",
+      "note": "Esetleg vezérlőpult (lásd control panel)"
+    },
+    "dashed": {
+      "hu": "Szaggatott",
+      "forras": "repo"
+    },
+    "data": {
+      "hu": "adatok",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "date": {
+      "hu": "dátum",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "date format": {
+      "hu": "Dátumformátum",
+      "forras": "wordpress"
+    },
+    "day": {
+      "hu": "Nap",
+      "forras": "wordpress"
+    },
+    "days": {
+      "hu": "nap",
+      "forras": "woocommerce"
+    },
+    "deactivate": {
+      "hu": "Kikapcsol",
+      "elfogad": [
+        "deaktivál",
+        "inaktivál"
+      ],
+      "forras": "wordpress",
+      "szofaj": "verb",
+      "alternativak": [
+        "Deaktiválás",
+        "kikapcsolás"
+      ]
+    },
+    "debug": {
+      "hu": "Hibakeresés",
+      "forras": "woocommerce",
+      "szofaj": "verb"
+    },
+    "default": {
+      "hu": "Alapértelmezett",
+      "forras": "wordpress",
+      "szofaj": "adjective"
+    },
+    "delete": {
+      "hu": "Törlés",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "Denmark": {
+      "hu": "Dánia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "description": {
+      "hu": "Leírás",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "desktop": {
+      "hu": "Asztali",
+      "forras": "wordpress",
+      "alternativak": [
+        "Asztali gép"
+      ]
+    },
+    "details": {
+      "hu": "Részletek",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "disable": {
+      "hu": "Kikapcsolás",
+      "elfogad": [
+        "letiltás",
+        "letilt"
+      ],
+      "forras": "wordpress",
+      "szofaj": "verb",
+      "alternativak": [
+        "Letiltás",
+        "letiltás"
+      ]
+    },
+    "disabled": {
+      "hu": "Kikapcsolva",
+      "elfogad": [
+        "letiltva"
+      ],
+      "forras": "wordpress",
+      "alternativak": [
+        "Letiltva"
+      ]
+    },
+    "discount": {
+      "hu": "Kedvezmény",
+      "forras": "woocommerce"
+    },
+    "display name": {
+      "hu": "Megjelenített név",
+      "forras": "wordpress",
+      "alternativak": [
+        "Megjelenítendő név"
+      ]
+    },
+    "Djibouti": {
+      "hu": "Dzsibuti",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "docs": {
+      "hu": "Dokumentáció",
+      "forras": "woocommerce"
+    },
+    "documentation": {
+      "hu": "Dokumentáció",
+      "forras": "wordpress"
+    },
+    "Dominica": {
+      "hu": "Dominika",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "Dominikai Közösség"
+      ]
+    },
+    "done": {
+      "hu": "Kész",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "dotted": {
+      "hu": "Pontozott",
+      "forras": "repo"
+    },
+    "double": {
+      "hu": "Dupla",
+      "forras": "repo"
+    },
+    "download": {
+      "hu": "Letöltés",
+      "forras": "repo"
+    },
+    "draft": {
+      "hu": "Vázlat",
+      "forras": "wordpress"
+    },
+    "drop down": {
+      "hu": "legördülő",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "adjective"
+    },
+    "drop-down menu": {
+      "hu": "legördülő menü",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "duplicate": {
+      "hu": "Duplikálás",
+      "forras": "woocommerce"
+    },
+    "duration": {
+      "hu": "Időtartam",
+      "forras": "repo"
+    },
+    "e-mail": {
+      "hu": "E-mail",
+      "forras": "wordpress",
+      "szofaj": "noun",
+      "note": "Vagy e-mail-cím"
+    },
+    "East Timor": {
+      "hu": "Kelet-Timor",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "Ecuador": {
+      "hu": "Ecuador",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "edit": {
+      "hu": "Szerkesztés",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "editor": {
+      "hu": "Szerkesztő",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "Egypt": {
+      "hu": "Egyiptom",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "El Salvador": {
+      "hu": "Salvador",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "email": {
+      "hu": "E-mail cím",
+      "forras": "wordpress",
+      "szofaj": "noun",
+      "note": "Vagy e-mail-cím",
+      "alternativak": [
+        "E-mail",
+        "e-mail"
+      ]
+    },
+    "email address": {
+      "hu": "E-mail cím",
+      "forras": "woocommerce",
+      "alternativak": [
+        "E-mail-cím"
+      ]
+    },
+    "embed": {
+      "hu": "Beágyazás",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "empty": {
+      "hu": "Üres",
+      "forras": "repo",
+      "szofaj": "adjective"
+    },
+    "enable": {
+      "hu": "Bekapcsolás",
+      "elfogad": [
+        "engedélyez"
+      ],
+      "forras": "wordpress",
+      "szofaj": "verb",
+      "alternativak": [
+        "Engedélyezés",
+        "engedélyezés"
+      ]
+    },
+    "enabled": {
+      "hu": "Bekapcsolva",
+      "elfogad": [
+        "engedélyezve"
+      ],
+      "forras": "wordpress",
+      "alternativak": [
+        "Engedélyezve"
+      ]
+    },
+    "end date": {
+      "hu": "Befejezés dátuma",
+      "forras": "wordpress"
+    },
+    "enter": {
+      "hu": "megadás",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "verb"
+    },
+    "entry": {
+      "hu": "bejegyzés",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "Equatorial Guinea": {
+      "hu": "Egyenlítői-Guinea",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "Egyenlítői Guinea"
+      ]
+    },
+    "Eritrea": {
+      "hu": "Eritrea",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "error": {
+      "hu": "Hiba",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "Estonia": {
+      "hu": "Észtország",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Eswatini": {
+      "hu": "Szváziföld",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "note": "2018-04-19 előtt angolul Swaziland"
+    },
+    "Ethiopia": {
+      "hu": "Etiópia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "example": {
+      "hu": "Példa",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "excerpt": {
+      "hu": "Kivonat",
+      "forras": "wordpress"
+    },
+    "exit": {
+      "hu": "Kilépés",
+      "forras": "repo",
+      "szofaj": "verb"
+    },
+    "expired": {
+      "hu": "Lejárt",
+      "forras": "woocommerce"
+    },
+    "export": {
+      "hu": "Exportálás",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "extension": {
+      "hu": "kiterjesztés",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "facebook": {
+      "hu": "Facebook",
+      "forras": "woocommerce"
+    },
+    "failed": {
+      "hu": "Sikertelen",
+      "forras": "woocommerce"
+    },
+    "feature": {
+      "hu": "Funkció",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "featured image": {
+      "hu": "Kiemelt kép",
+      "forras": "repo"
+    },
+    "field": {
+      "hu": "Mező",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "field type": {
+      "hu": "Mező típusa",
+      "forras": "repo"
+    },
+    "Fiji": {
+      "hu": "Fidzsi-szigetek",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "file": {
+      "hu": "Fájl",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "file manager": {
+      "hu": "fájlkezelő",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "filter": {
+      "hu": "Szűrés",
+      "forras": "wordpress",
+      "szofaj": "noun",
+      "alternativak": [
+        "szűrő"
+      ]
+    },
+    "filters": {
+      "hu": "Szűrők",
+      "forras": "repo"
+    },
+    "Finland": {
+      "hu": "Finnország",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "first name": {
+      "hu": "Keresztnév",
+      "forras": "woocommerce"
+    },
+    "fixed": {
+      "hu": "Rögzített",
+      "forras": "repo"
+    },
+    "font family": {
+      "hu": "Betűcsalád",
+      "forras": "wordpress",
+      "alternativak": [
+        "Betűtípus család"
+      ]
+    },
+    "font size": {
+      "hu": "Betűméret",
+      "forras": "repo"
+    },
+    "footer": {
+      "hu": "Lábléc",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "form": {
+      "hu": "Űrlap",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "France": {
+      "hu": "Franciaország",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "free": {
+      "hu": "Ingyenes",
+      "forras": "woocommerce"
+    },
+    "French Guiana": {
+      "hu": "Francia Guyana",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "French Polynesia": {
+      "hu": "Francia Polinézia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "French Southern Territories": {
+      "hu": "Francia Déli Területek",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "friday": {
+      "hu": "péntek",
+      "forras": "wordpress"
+    },
+    "from name": {
+      "hu": "Feladó neve",
+      "forras": "repo"
+    },
+    "front page": {
+      "hu": "címoldal",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun",
+      "note": "Lásd még: home page"
+    },
+    "full": {
+      "hu": "Teljes",
+      "forras": "repo",
+      "szofaj": "adjective",
+      "alternativak": [
+        "teli"
+      ]
+    },
+    "full width": {
+      "hu": "Teljes szélesség",
+      "forras": "repo"
+    },
+    "Gabon": {
+      "hu": "Gabon",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Gambia": {
+      "hu": "Gambia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "general": {
+      "hu": "Általános",
+      "forras": "wordpress"
+    },
+    "general settings": {
+      "hu": "Általános beállítások",
+      "forras": "wordpress"
+    },
+    "Georgia": {
+      "hu": "Grúzia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Germany": {
+      "hu": "Németország",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Ghana": {
+      "hu": "Ghána",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Gibraltar": {
+      "hu": "Gibraltár",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "gradient": {
+      "hu": "Színátmenet",
+      "forras": "repo"
+    },
+    "Greece": {
+      "hu": "Görögország",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Greenland": {
+      "hu": "Grönland",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Grenada": {
+      "hu": "Grenada",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "grid": {
+      "hu": "Rács",
+      "forras": "repo"
+    },
+    "group": {
+      "hu": "Csoport",
+      "forras": "woocommerce"
+    },
+    "Guadeloupe": {
+      "hu": "Guadeloupe",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Guam": {
+      "hu": "Guam",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Guatemala": {
+      "hu": "Guatemala",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Guernsey": {
+      "hu": "Guernsey",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Guinea": {
+      "hu": "Guinea",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Guinea-Bissau": {
+      "hu": "Bissau-Guinea",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Guyana": {
+      "hu": "Guyana",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Haiti": {
+      "hu": "Haiti",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "header": {
+      "hu": "Fejléc",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "heading": {
+      "hu": "Címsor",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "height": {
+      "hu": "Magasság",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "hidden": {
+      "hu": "Rejtett",
+      "forras": "woocommerce"
+    },
+    "hide": {
+      "hu": "Elrejtés",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "Holy See (City Vatican State)": {
+      "hu": "Szentszék (Vatikánvárosi Állam)",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "home page": {
+      "hu": "Kezdőlap",
+      "forras": "repo",
+      "szofaj": "noun",
+      "note": "Lásd még: front page"
+    },
+    "Honduras": {
+      "hu": "Honduras",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Hong Kong": {
+      "hu": "Hongkong",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "Hong Kong"
+      ]
+    },
+    "hook": {
+      "hu": "hook",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "horizontal": {
+      "hu": "Vízszintes",
+      "forras": "repo"
+    },
+    "hour": {
+      "hu": "Óra",
+      "forras": "wordpress"
+    },
+    "hover": {
+      "hu": "rámutatás",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun",
+      "note": "Az a szöveg vagy szín, amelyik akkor jelenik meg, ha a kurzort egy kis ideig az adott elemen („elem fölött”) tartjuk."
+    },
+    "HTML": {
+      "hu": "HTML",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "Hungary": {
+      "hu": "Magyarország",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Iceland": {
+      "hu": "Izland",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "icon": {
+      "hu": "Ikon",
+      "forras": "wordpress"
+    },
+    "icon color": {
+      "hu": "Ikon színe",
+      "forras": "repo"
+    },
+    "icon size": {
+      "hu": "Ikon mérete",
+      "forras": "repo"
+    },
+    "id": {
+      "hu": "ID",
+      "forras": "woocommerce"
+    },
+    "ID": {
+      "hu": "ID",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "image": {
+      "hu": "Kép",
+      "forras": "wordpress"
+    },
+    "image size": {
+      "hu": "Képméret",
+      "forras": "wordpress"
+    },
+    "images": {
+      "hu": "Képek",
+      "forras": "wordpress"
+    },
+    "import": {
+      "hu": "Importálás",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "inactive": {
+      "hu": "Kikapcsolva",
+      "elfogad": [
+        "inaktív"
+      ],
+      "forras": "wordpress",
+      "alternativak": [
+        "Inaktív",
+        "Tétlen"
+      ]
+    },
+    "India": {
+      "hu": "India",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Indonesia": {
+      "hu": "Indonézia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "insert": {
+      "hu": "Beszúrás",
+      "forras": "repo",
+      "szofaj": "verb"
+    },
+    "install": {
+      "hu": "Telepítés",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "integration": {
+      "hu": "Integráció",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "integrations": {
+      "hu": "Integrációk",
+      "forras": "woocommerce"
+    },
+    "invalid": {
+      "hu": "Hibás",
+      "elfogad": [
+        "érvénytelen"
+      ],
+      "forras": "wordpress",
+      "szofaj": "adjective",
+      "alternativak": [
+        "érvénytelen"
+      ]
+    },
+    "Iran": {
+      "hu": "Irán",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Iraq": {
+      "hu": "Irak",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Ireland": {
+      "hu": "Írország",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Isle of Man": {
+      "hu": "Man",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "Man-sziget"
+      ]
+    },
+    "Israel": {
+      "hu": "Izrael",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Italy": {
+      "hu": "Olaszország",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "item": {
+      "hu": "Tétel",
+      "elfogad": [
+        "elem"
+      ],
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "elem"
+      ]
+    },
+    "items": {
+      "hu": "Tételek",
+      "forras": "woocommerce"
+    },
+    "Jamaica": {
+      "hu": "Jamaica",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "Jamaika"
+      ]
+    },
+    "Japan": {
+      "hu": "Japán",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Jersey": {
+      "hu": "Jersey",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Jordan": {
+      "hu": "Jordánia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "JSON": {
+      "hu": "JSON",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "Kazakhstan": {
+      "hu": "Kazahsztán",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Kenya": {
+      "hu": "Kenya",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "key": {
+      "hu": "Kulcs",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "Kiribati": {
+      "hu": "Kiribati",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Kuwait": {
+      "hu": "Kuvait",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Kyrgyzstan": {
+      "hu": "Kirgizisztán",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "label": {
+      "hu": "Címke",
+      "forras": "repo"
+    },
+    "labels": {
+      "hu": "Címkék",
+      "forras": "repo"
+    },
+    "language": {
+      "hu": "Nyelv",
+      "forras": "wordpress"
+    },
+    "large": {
+      "hu": "Nagy",
+      "forras": "wordpress"
+    },
+    "last name": {
+      "hu": "Vezetéknév",
+      "forras": "woocommerce"
+    },
+    "Latvia": {
+      "hu": "Lettország",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "layout": {
+      "hu": "Elrendezés",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "learn more": {
+      "hu": "További tudnivalók",
+      "forras": "wordpress",
+      "alternativak": [
+        "További információk"
+      ]
+    },
+    "learndash": {
+      "hu": "LearnDash",
+      "forras": "repo"
+    },
+    "Lebanon": {
+      "hu": "Libanon",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "left": {
+      "hu": "Bal",
+      "forras": "wordpress"
+    },
+    "legacy": {
+      "hu": "régi",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "adjective"
+    },
+    "Lesotho": {
+      "hu": "Lesotho",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Liberia": {
+      "hu": "Libéria",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Libyan Arab Jamahiriya": {
+      "hu": "Líbia",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "license": {
+      "hu": "Licenc",
+      "forras": "repo"
+    },
+    "license key": {
+      "hu": "Licenckulcs",
+      "forras": "repo"
+    },
+    "Liechtenstein": {
+      "hu": "Liechtenstein",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "light": {
+      "hu": "Világos",
+      "forras": "repo"
+    },
+    "link": {
+      "hu": "Link",
+      "forras": "wordpress",
+      "alternativak": [
+        "Hivatkozás"
+      ]
+    },
+    "list": {
+      "hu": "Lista",
+      "forras": "woocommerce"
+    },
+    "Lithuania": {
+      "hu": "Litvánia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "load more": {
+      "hu": "Továbbiak betöltése",
+      "forras": "repo"
+    },
+    "loading": {
+      "hu": "Betöltés",
+      "forras": "repo"
+    },
+    "location": {
+      "hu": "Helyszín",
+      "forras": "woocommerce"
+    },
+    "log": {
+      "hu": "Napló",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "log in": {
+      "hu": "Bejelentkezés",
+      "forras": "wordpress",
+      "szofaj": "verb",
+      "alternativak": [
+        "Belépés"
+      ]
+    },
+    "log out": {
+      "hu": "Kijelentkezés",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "login": {
+      "hu": "Belépés",
+      "elfogad": [
+        "bejelentkezés"
+      ],
+      "forras": "woocommerce",
+      "szofaj": "verb",
+      "alternativak": [
+        "Bejelentkezés",
+        "bejelentkezés"
+      ]
+    },
+    "logo": {
+      "hu": "Logó",
+      "forras": "wordpress"
+    },
+    "logout": {
+      "hu": "Kijelentkezés",
+      "forras": "woocommerce",
+      "szofaj": "verb"
+    },
+    "Luxembourg": {
+      "hu": "Luxemburg",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Macau": {
+      "hu": "Makau",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "Madagascar": {
+      "hu": "Madagaszkár",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "mainwp": {
+      "hu": "MainWP",
+      "forras": "repo"
+    },
+    "Malawi": {
+      "hu": "Malawi",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Malaysia": {
+      "hu": "Malajzia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Maldives": {
+      "hu": "Maldiv-szigetek",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "Maldív-szigetek"
+      ]
+    },
+    "Mali": {
+      "hu": "Mali",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Malta": {
+      "hu": "Málta",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "manage": {
+      "hu": "Kezelés",
+      "forras": "woocommerce",
+      "szofaj": "verb"
+    },
+    "manager": {
+      "hu": "kezelő",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "Martinique": {
+      "hu": "Martinique",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Mauritania": {
+      "hu": "Mauritánia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Mauritius": {
+      "hu": "Mauritius",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Mayotte": {
+      "hu": "Mayotte",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "medium": {
+      "hu": "Közepes",
+      "forras": "wordpress"
+    },
+    "menu": {
+      "hu": "Menü",
+      "forras": "wordpress"
+    },
+    "menu order": {
+      "hu": "Menü sorrend",
+      "forras": "wordpress",
+      "alternativak": [
+        "Menüsorrend"
+      ]
+    },
+    "message": {
+      "hu": "Üzenet",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "meta key": {
+      "hu": "Meta kulcs",
+      "forras": "woocommerce"
+    },
+    "Mexico": {
+      "hu": "Mexikó",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Micronesia": {
+      "hu": "Mikronézia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "middle": {
+      "hu": "Középen",
+      "forras": "wordpress"
+    },
+    "migration": {
+      "hu": "áttelepítés",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "minute": {
+      "hu": "Perc",
+      "forras": "wordpress"
+    },
+    "mobile": {
+      "hu": "Mobil",
+      "forras": "wordpress"
+    },
+    "Monaco": {
+      "hu": "Monaco",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "monday": {
+      "hu": "hétfő",
+      "forras": "wordpress"
+    },
+    "Mongolia": {
+      "hu": "Mongólia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "monitor": {
+      "hu": "képernyő",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "Montenegro": {
+      "hu": "Montenegró",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "month": {
+      "hu": "Hónap",
+      "forras": "wordpress"
+    },
+    "monthly": {
+      "hu": "Havi",
+      "forras": "woocommerce"
+    },
+    "Montserrat": {
+      "hu": "Montserrat",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Morocco": {
+      "hu": "Marokkó",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Mozambique": {
+      "hu": "Mozambzik",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "Mozambik"
+      ]
+    },
+    "Myanmar": {
+      "hu": "Mianmar",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "name": {
+      "hu": "Név",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "Namibia": {
+      "hu": "Namíbia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Nauru": {
+      "hu": "Nauru",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "navigation": {
+      "hu": "Navigáció",
+      "forras": "wordpress"
+    },
+    "Nepal": {
+      "hu": "Nepál",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Netherlands": {
+      "hu": "Hollandia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Netherlands Antilles": {
+      "hu": "Holland-Antillák",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "New Caledonia": {
+      "hu": "Új-Kaledónia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "New Zealand": {
+      "hu": "Új-Zéland",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "next": {
+      "hu": "Következő",
+      "forras": "wordpress"
+    },
+    "Nicaragua": {
+      "hu": "Nicaragua",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Niger": {
+      "hu": "Niger",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Nigeria": {
+      "hu": "Nigéria",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Niue": {
+      "hu": "Niue",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "no": {
+      "hu": "Nem",
+      "forras": "wordpress"
+    },
+    "no results found": {
+      "hu": "Nincs ilyen adat",
+      "forras": "wordpress",
+      "alternativak": [
+        "Nincs találat"
+      ]
+    },
+    "none": {
+      "hu": "Semmi",
+      "forras": "wordpress",
+      "alternativak": [
+        "Egyik sem",
+        "Nincs"
+      ]
+    },
+    "Norfolk Island": {
+      "hu": "Norfolk-sziget",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "normal": {
+      "hu": "Normál",
+      "forras": "repo"
+    },
+    "North Korea": {
+      "hu": "Észak-Korea",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "North Macedonia": {
+      "hu": "Észak-Macedónia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Norway": {
+      "hu": "Norvégia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "note": {
+      "hu": "Megjegyzés",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "jegyzet"
+      ]
+    },
+    "notes": {
+      "hu": "Jegyzetek",
+      "forras": "woocommerce",
+      "alternativak": [
+        "Megjegyzések"
+      ]
+    },
+    "number": {
+      "hu": "Darabszám",
+      "forras": "woocommerce",
+      "alternativak": [
+        "Szám"
+      ]
+    },
+    "off": {
+      "hu": "Ki",
+      "forras": "repo"
+    },
+    "ok": {
+      "hu": "OK",
+      "forras": "wordpress"
+    },
+    "Oman": {
+      "hu": "Omán",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "open": {
+      "hu": "megnyitás",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "verb"
+    },
+    "optional": {
+      "hu": "Opcionális",
+      "forras": "wordpress",
+      "szofaj": "adjective",
+      "note": "vagy „választható”",
+      "alternativak": [
+        "nem kötelező"
+      ]
+    },
+    "options": {
+      "hu": "Opciók",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "note": "vagy opciók",
+      "alternativak": [
+        "beállítások"
+      ]
+    },
+    "or": {
+      "hu": "vagy",
+      "forras": "woocommerce"
+    },
+    "order": {
+      "hu": "Sorrend",
+      "forras": "wordpress"
+    },
+    "order by": {
+      "hu": "Sorrend alapja",
+      "forras": "woocommerce"
+    },
+    "order id": {
+      "hu": "Rendelés ID",
+      "forras": "woocommerce"
+    },
+    "order status": {
+      "hu": "Megrendelés állapota",
+      "forras": "woocommerce",
+      "alternativak": [
+        "Rendelés állapota"
+      ]
+    },
+    "other": {
+      "hu": "Egyéb",
+      "forras": "woocommerce"
+    },
+    "out of stock": {
+      "hu": "Elfogyott",
+      "forras": "woocommerce"
+    },
+    "override": {
+      "hu": "felülbírál",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "verb",
+      "note": "Esetleg felülír"
+    },
+    "overview": {
+      "hu": "Áttekintés",
+      "forras": "wordpress"
+    },
+    "padding": {
+      "hu": "padding",
+      "forras": "kezi",
+      "szofaj": "noun",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "page": {
+      "hu": "Oldal",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "pages": {
+      "hu": "Oldalak",
+      "forras": "wordpress"
+    },
+    "pagination": {
+      "hu": "Lapozás",
+      "forras": "wordpress"
+    },
+    "paid": {
+      "hu": "Fizetve",
+      "forras": "woocommerce"
+    },
+    "Pakistan": {
+      "hu": "Pakisztán",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Palau": {
+      "hu": "Palau",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "Palestinian Territories": {
+      "hu": "Palesztin Területek",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "Panama": {
+      "hu": "Panama",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Papua New Guinea": {
+      "hu": "Pápua Új-Guinea",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "paragraph": {
+      "hu": "Bekezdés",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "Paraguay": {
+      "hu": "Paraguay",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "password": {
+      "hu": "Jelszó",
+      "forras": "wordpress"
+    },
+    "paste": {
+      "hu": "Beillesztés",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "pattern": {
+      "hu": "blokkminta",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "payment method": {
+      "hu": "Fizetési mód",
+      "forras": "woocommerce"
+    },
+    "pending": {
+      "hu": "Függőben",
+      "forras": "wordpress"
+    },
+    "percentage": {
+      "hu": "Százalék",
+      "forras": "repo"
+    },
+    "permalink": {
+      "hu": "Közvetlen hivatkozás",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "personal data": {
+      "hu": "Személyes adatok",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "Peru": {
+      "hu": "Peru",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Philippines": {
+      "hu": "Fülöp-szigetek",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "phone": {
+      "hu": "Telefonszám",
+      "forras": "woocommerce",
+      "alternativak": [
+        "Telefon"
+      ]
+    },
+    "Pitcairn Island": {
+      "hu": "Pitcairn-sziget",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "pixel": {
+      "hu": "képpont",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "placeholder": {
+      "hu": "Helytartó",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "Helyőrző",
+        "helyőrző"
+      ]
+    },
+    "plugin": {
+      "hu": "Bővítmény",
+      "forras": "wordpress",
+      "szofaj": "noun",
+      "note": "vagy beépülő modul, lásd: add-on"
+    },
+    "plugin slug": {
+      "hu": "plugin slug",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "Poland": {
+      "hu": "Lengyelország",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Portugal": {
+      "hu": "Portugália",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "position": {
+      "hu": "Pozíció",
+      "forras": "wordpress",
+      "szofaj": "noun",
+      "alternativak": [
+        "helyzet"
+      ]
+    },
+    "post": {
+      "hu": "Bejegyzés",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "post content": {
+      "hu": "Bejegyzés tartalma",
+      "forras": "repo"
+    },
+    "post title": {
+      "hu": "Bejegyzés címe",
+      "forras": "repo"
+    },
+    "post type": {
+      "hu": "Bejegyzéstípus",
+      "forras": "repo"
+    },
+    "poster image": {
+      "hu": "Poszterkép",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "posts": {
+      "hu": "Bejegyzések",
+      "forras": "wordpress"
+    },
+    "preview": {
+      "hu": "Előnézet",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "previous": {
+      "hu": "Előző",
+      "forras": "woocommerce"
+    },
+    "price": {
+      "hu": "Ár",
+      "forras": "woocommerce"
+    },
+    "procedure": {
+      "hu": "eljárás",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "process": {
+      "hu": "folyamat",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "processing": {
+      "hu": "Feldolgozás alatt",
+      "forras": "woocommerce"
+    },
+    "product": {
+      "hu": "Termék",
+      "forras": "repo"
+    },
+    "product categories": {
+      "hu": "Termékkategóriák",
+      "forras": "woocommerce"
+    },
+    "product price": {
+      "hu": "Termék ára",
+      "forras": "woocommerce"
+    },
+    "products": {
+      "hu": "Termékek",
+      "forras": "woocommerce"
+    },
+    "progress bar": {
+      "hu": "Folyamatjelző sáv",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "publish": {
+      "hu": "Közzététel",
+      "forras": "wordpress",
+      "szofaj": "verb",
+      "alternativak": [
+        "közzétesz"
+      ]
+    },
+    "published": {
+      "hu": "Közzétéve",
+      "forras": "wordpress"
+    },
+    "Puerto Rico": {
+      "hu": "Puerto Rico",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Qatar": {
+      "hu": "Katár",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "Katar"
+      ]
+    },
+    "quantity": {
+      "hu": "Mennyiség",
+      "forras": "woocommerce"
+    },
+    "radio": {
+      "hu": "Rádiógomb",
+      "forras": "repo"
+    },
+    "radio button": {
+      "hu": "rádiógomb",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "rating": {
+      "hu": "Értékelés",
+      "forras": "wordpress"
+    },
+    "read more": {
+      "hu": "Bővebben",
+      "forras": "wordpress",
+      "alternativak": [
+        "Tovább olvasom"
+      ]
+    },
+    "release notes": {
+      "hu": "kiadási megjegyzések",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "remove": {
+      "hu": "Eltávolítás",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "repeat": {
+      "hu": "Ismétlés",
+      "forras": "repo"
+    },
+    "reply": {
+      "hu": "Válasz",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "required": {
+      "hu": "Kötelező",
+      "forras": "woocommerce",
+      "szofaj": "adverb"
+    },
+    "reset": {
+      "hu": "Alaphelyzetbe állítás",
+      "forras": "woocommerce",
+      "szofaj": "verb",
+      "alternativak": [
+        "Visszaállítás"
+      ]
+    },
+    "resize": {
+      "hu": "átméretezés",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "verb"
+    },
+    "responsive": {
+      "hu": "Reszponzív",
+      "forras": "repo",
+      "szofaj": "adjective",
+      "alternativak": [
+        "reszponszív"
+      ]
+    },
+    "REST API": {
+      "hu": "REST API",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "result": {
+      "hu": "Eredmény",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "Reunion Island": {
+      "hu": "Réunion",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "revision": {
+      "hu": "Változat",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "right": {
+      "hu": "Jobb",
+      "forras": "wordpress"
+    },
+    "Romania": {
+      "hu": "Románia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "row": {
+      "hu": "Sor",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "Russian Federation": {
+      "hu": "Orosz Föderáció",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "Rwanda": {
+      "hu": "Ruanda",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Saint Barthélemy": {
+      "hu": "Saint Barthélemy",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "Saint Helena": {
+      "hu": "Szent Ilona",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Saint Kitts and Nevis": {
+      "hu": "Saint Kitts és Nevis",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Saint Lucia": {
+      "hu": "Saint Lucia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Saint Martin (Dutch)": {
+      "hu": "Saint Martin (holland)",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "Saint Martin (French)": {
+      "hu": "Saint Martin (francia)",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "Saint Pierre and Miquelon": {
+      "hu": "Saint-Pierre és Miquelon",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Saint Vincent and the Grenadines": {
+      "hu": "Saint Vincent és a Grenadine-szigetek",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "San Marino": {
+      "hu": "San Marino",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "saturday": {
+      "hu": "szombat",
+      "forras": "wordpress"
+    },
+    "Saudi Arabia": {
+      "hu": "Szaúd-Arábia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "save": {
+      "hu": "Mentés",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "save changes": {
+      "hu": "Módosítások mentése",
+      "forras": "wordpress"
+    },
+    "save settings": {
+      "hu": "Beállítások mentése",
+      "forras": "repo"
+    },
+    "schedule": {
+      "hu": "Időzítés",
+      "forras": "woocommerce",
+      "alternativak": [
+        "Ütemezés"
+      ]
+    },
+    "scroll": {
+      "hu": "Görgetés",
+      "forras": "repo",
+      "szofaj": "verb"
+    },
+    "scroll bar": {
+      "hu": "görgetősáv",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "scroll box": {
+      "hu": "görgetődoboz",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "scroll wheel": {
+      "hu": "görgetőkerék",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun",
+      "note": "Az egéren"
+    },
+    "search": {
+      "hu": "Keresés",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "search result": {
+      "hu": "keresési találat",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "secret key": {
+      "hu": "Titkos kulcs",
+      "forras": "repo"
+    },
+    "section": {
+      "hu": "Szakasz",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "select": {
+      "hu": "Kiválasztás",
+      "forras": "wordpress",
+      "szofaj": "verb",
+      "alternativak": [
+        "kijelölés"
+      ]
+    },
+    "select all": {
+      "hu": "Összes kiválasztása",
+      "forras": "wordpress",
+      "alternativak": [
+        "Mindent kijelöl",
+        "Összes kijelölése"
+      ]
+    },
+    "selection": {
+      "hu": "Kijelölés",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "Senegal": {
+      "hu": "Szenegál",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "SEO": {
+      "hu": "SEO",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "Serbia": {
+      "hu": "Szerbia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "set": {
+      "hu": "beállítás",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "verb",
+      "note": "\n"
+    },
+    "settings": {
+      "hu": "Beállítások",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "settings saved": {
+      "hu": "Beállítások elmentve",
+      "forras": "wordpress"
+    },
+    "Seychelles": {
+      "hu": "Seychelle-szigetek",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "share": {
+      "hu": "Megosztás",
+      "forras": "woocommerce",
+      "szofaj": "verb"
+    },
+    "shipping": {
+      "hu": "Szállítás",
+      "forras": "woocommerce"
+    },
+    "shortcode": {
+      "hu": "shortcode",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "show": {
+      "hu": "Mutat",
+      "elfogad": [
+        "megjelenít"
+      ],
+      "forras": "wordpress",
+      "szofaj": "verb",
+      "alternativak": [
+        "Megjelenítés",
+        "megjelenítés"
+      ]
+    },
+    "Sierra Leone": {
+      "hu": "Sierra Leone",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Singapore": {
+      "hu": "Szingapúr",
+      "forras": "woocommerce",
+      "szofaj": "noun"
     },
     "single product": {
       "hu": "termékoldal",
       "context": "WooCommerce",
-      "note": "Egy adott termék részletes oldala (product page)"
+      "note": "Egy adott termék részletes oldala (product page)",
+      "forras": "kezi"
     },
-    "carousel": {
-      "hu": "carousel",
-      "context": "UI/Design",
-      "note": "NEM fordítjuk - nemzetközileg elterjedt kifejezés, mindenki így ismeri"
+    "site": {
+      "hu": "Webhely",
+      "forras": "wordpress",
+      "alternativak": [
+        "Weboldal"
+      ]
+    },
+    "size": {
+      "hu": "Méret",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "sku": {
+      "hu": "Cikkszám",
+      "forras": "woocommerce",
+      "alternativak": [
+        "SKU"
+      ]
+    },
+    "SKU": {
+      "hu": "SKU",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "slider": {
+      "hu": "diavetítés",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun",
+      "note": "Eredetileg a slider inkább csúszkát jelent, és a slideshow lenne a diavetítés, de a WordPressben a slider diavetítést jelent."
+    },
+    "Slovenia": {
+      "hu": "Szlovénia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "slug": {
+      "hu": "slug",
+      "forras": "kezi",
+      "szofaj": "noun",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "SMTP": {
+      "hu": "SMTP",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "snippet": {
+      "hu": "Kódrészlet",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "social media": {
+      "hu": "Közösségi média",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "social website": {
+      "hu": "közösségi oldal",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "solid": {
+      "hu": "Folytonos",
+      "forras": "repo"
+    },
+    "Somalia": {
+      "hu": "Szomália",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "source": {
+      "hu": "Forrás",
+      "forras": "wordpress"
+    },
+    "South Africa": {
+      "hu": "Dél-Afrika",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "Dél-afrikai Köztársaság"
+      ]
+    },
+    "South Georgia": {
+      "hu": "Dél-Georgia",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "South Korea": {
+      "hu": "Dél-Korea",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "South Sudan": {
+      "hu": "Dél-Szudán",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "spacing": {
+      "hu": "Térköz",
+      "forras": "repo"
+    },
+    "Spain": {
+      "hu": "Spanyolország",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Sri Lanka": {
+      "hu": "Srí Lanka",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "start date": {
+      "hu": "Kezdő dátum",
+      "forras": "wordpress"
+    },
+    "status": {
+      "hu": "Állapot",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "step": {
+      "hu": "Lépés",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "style": {
+      "hu": "Stílus",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "subject": {
+      "hu": "Tárgy",
+      "forras": "wordpress"
+    },
+    "submit": {
+      "hu": "Küldés",
+      "elfogad": [
+        "beküldés"
+      ],
+      "forras": "wordpress",
+      "szofaj": "verb",
+      "alternativak": [
+        "elküldés"
+      ]
+    },
+    "subscribe": {
+      "hu": "Előfizetés",
+      "forras": "woocommerce",
+      "szofaj": "verb",
+      "alternativak": [
+        "feliratkozás"
+      ]
+    },
+    "subtotal": {
+      "hu": "Részösszeg",
+      "forras": "woocommerce"
+    },
+    "success": {
+      "hu": "Sikeres",
+      "forras": "woocommerce",
+      "alternativak": [
+        "Siker"
+      ]
+    },
+    "Sudan": {
+      "hu": "Szudán",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "sunday": {
+      "hu": "vasárnap",
+      "forras": "wordpress"
+    },
+    "support": {
+      "hu": "Támogatás",
+      "forras": "wordpress"
+    },
+    "Suriname": {
+      "hu": "Suriname",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Swaziland": {
+      "hu": "Szváziföld",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "Sweden": {
+      "hu": "Svédország",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Switzerland": {
+      "hu": "Svájc",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "São Tomé and Príncipe": {
+      "hu": "São Tomé és Príncipe",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "tab": {
+      "hu": "Fül",
+      "forras": "repo",
+      "szofaj": "noun"
+    },
+    "tablet": {
+      "hu": "Táblagép",
+      "forras": "wordpress",
+      "alternativak": [
+        "Tablet"
+      ]
+    },
+    "tag": {
+      "hu": "Címke",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "tags": {
+      "hu": "Címkék",
+      "forras": "wordpress"
+    },
+    "Taiwan": {
+      "hu": "Tajvan",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Tajikistan": {
+      "hu": "Tádzsikisztán",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Tanzania": {
+      "hu": "Tanzánia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "taxonomy": {
+      "hu": "Osztályozás (taxonomy)",
+      "elfogad": [
+        "taxonómia"
+      ],
+      "forras": "wordpress",
+      "alternativak": [
+        "Taxonómia"
+      ]
+    },
+    "teaser": {
+      "hu": "bevezető",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "template": {
+      "hu": "Sablonminta",
+      "forras": "kezi",
+      "szofaj": "noun",
+      "elfogad": [
+        "sablon"
+      ],
+      "note": "Önállóan: sablonminta; összetételben a sablon is elfogadott (oldalsablon, e-mail-sablon)"
+    },
+    "VAT": {
+      "hu": "áfa",
+      "forras": "kezi",
+      "szofaj": "noun",
+      "elfogad": [
+        "áfá"
+      ],
+      "note": "kisbetűvel, ragozva: áfát, áfával; nem ÁFA"
+    },
+    "term": {
+      "hu": "Kifejezés",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "text": {
+      "hu": "Szöveg",
+      "forras": "wordpress"
+    },
+    "text color": {
+      "hu": "Szöveg színe",
+      "forras": "wordpress"
+    },
+    "Thailand": {
+      "hu": "Thaiföld",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "theme": {
+      "hu": "Sablon",
+      "forras": "wordpress",
+      "szofaj": "noun",
+      "alternativak": [
+        "Téma"
+      ]
+    },
+    "thumbnail": {
+      "hu": "Bélyegkép",
+      "forras": "wordpress"
+    },
+    "thursday": {
+      "hu": "csütörtök",
+      "forras": "wordpress"
+    },
+    "time": {
+      "hu": "Idő",
+      "forras": "wordpress"
+    },
+    "Timor-Leste": {
+      "hu": "Kelet-Timor",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "title": {
+      "hu": "Cím",
+      "forras": "wordpress"
+    },
+    "today": {
+      "hu": "Ma",
+      "forras": "wordpress"
+    },
+    "Togo": {
+      "hu": "Togo",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Tokelau": {
+      "hu": "Tokelau-szigetek",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "Tokelau"
+      ]
+    },
+    "Tonga": {
+      "hu": "Tonga",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "tool": {
+      "hu": "eszköz",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "tools": {
+      "hu": "Eszközök",
+      "forras": "wordpress"
+    },
+    "top": {
+      "hu": "Fent",
+      "forras": "wordpress",
+      "alternativak": [
+        "Felül"
+      ]
+    },
+    "top left": {
+      "hu": "Balra fent",
+      "forras": "wordpress"
+    },
+    "top right": {
+      "hu": "Jobbra fent",
+      "forras": "wordpress"
+    },
+    "total": {
+      "hu": "Összeg",
+      "forras": "woocommerce",
+      "alternativak": [
+        "Összesen"
+      ]
+    },
+    "Trinidad and Tobago": {
+      "hu": "Trinidad és Tobago",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "tuesday": {
+      "hu": "kedd",
+      "forras": "wordpress"
+    },
+    "Tunisia": {
+      "hu": "Tunézia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Turkey": {
+      "hu": "Törökország",
+      "forras": "repo",
+      "szofaj": "noun",
+      "note": "Vö. Türkiye"
+    },
+    "Turkiye": {
+      "hu": "Törökország",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun",
+      "note": "Valójában Türkiye (csak a WordPress nem engedi az ü használatát). 2022 júniusa óta ez az ország hivatalos neve, ezt kell használni az ENSZ-ben és minden más hivatalos, idegen (tehát nem török) nyelvű kommunikációban is."
+    },
+    "Turkmenistan": {
+      "hu": "Türkmenisztán",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Tuvalu": {
+      "hu": "Tuvalue",
+      "forras": "woocommerce",
+      "szofaj": "noun",
+      "alternativak": [
+        "Tuvalu"
+      ]
+    },
+    "type": {
+      "hu": "Típus",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "typography": {
+      "hu": "Tipográfia",
+      "forras": "repo"
+    },
+    "Uganda": {
+      "hu": "Uganda",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Ukraine": {
+      "hu": "Ukrajna",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "unavailable": {
+      "hu": "nem érhető el",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "adjective",
+      "note": "vagy „nem elérhető”, „nem áll rendelkezésre”"
+    },
+    "uninstall": {
+      "hu": "eltávolítás",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "verb"
+    },
+    "United Arab Emirates": {
+      "hu": "Egyesült Arab Emírségek",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "unknown": {
+      "hu": "ismeretlen",
+      "forras": "woocommerce"
+    },
+    "unlimited": {
+      "hu": "Korlátlan",
+      "forras": "woocommerce"
+    },
+    "unpublish": {
+      "hu": "közzététel visszavonása",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "verb"
+    },
+    "unshare": {
+      "hu": "megosztás visszavonása",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "verb"
+    },
+    "up-sell": {
+      "hu": "felülértékesítés",
+      "context": "E-commerce",
+      "note": "Amikor drágább terméket ajánlunk a vásárlónak",
+      "forras": "kezi"
+    },
+    "update": {
+      "hu": "Frissítés",
+      "forras": "wordpress",
+      "szofaj": "verb"
+    },
+    "url": {
+      "hu": "URL",
+      "forras": "wordpress"
+    },
+    "URL": {
+      "hu": "URL",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "Uruguay": {
+      "hu": "Uruguay",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "user": {
+      "hu": "Felhasználó",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "user consent": {
+      "hu": "felhasználói hozzájárulás",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "user id": {
+      "hu": "Felhasználói azonosító (ID)",
+      "forras": "wordpress",
+      "alternativak": [
+        "Felhasználó ID"
+      ]
+    },
+    "user role": {
+      "hu": "Felhasználói szerepkör",
+      "forras": "repo"
+    },
+    "username": {
+      "hu": "Felhasználónév",
+      "forras": "wordpress"
+    },
+    "users": {
+      "hu": "Felhasználók",
+      "forras": "wordpress"
+    },
+    "Uzbekistan": {
+      "hu": "Üzbegisztán",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "valid": {
+      "hu": "Érvényes",
+      "forras": "repo",
+      "szofaj": "adjective"
+    },
+    "validate": {
+      "hu": "érvényesítés",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "verb"
+    },
+    "value": {
+      "hu": "Érték",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "Vanuatu": {
+      "hu": "Vanuatu",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "variable": {
+      "hu": "változó",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "Venezuela": {
+      "hu": "Venezuela",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "version": {
+      "hu": "Verzió",
+      "forras": "wordpress"
+    },
+    "vertical": {
+      "hu": "Függőleges",
+      "forras": "repo"
+    },
+    "video": {
+      "hu": "Videó",
+      "forras": "wordpress"
+    },
+    "Vietnam": {
+      "hu": "Vietnám",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "view": {
+      "hu": "Megtekintés",
+      "forras": "wordpress"
+    },
+    "viewport": {
+      "hu": "nézetablak",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "warning": {
+      "hu": "Figyelem",
+      "forras": "wordpress",
+      "alternativak": [
+        "Figyelmeztetés"
+      ]
+    },
+    "webhook": {
+      "hu": "webhook",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "website": {
+      "hu": "Honlap",
+      "forras": "wordpress"
+    },
+    "wednesday": {
+      "hu": "szerda",
+      "forras": "wordpress"
+    },
+    "weekly": {
+      "hu": "Heti",
+      "forras": "repo"
+    },
+    "Western Sahara": {
+      "hu": "Nyugat-Szahara",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Western Samoa": {
+      "hu": "Nyugat-Szamoa",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "whether": {
+      "hu": "hogy",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "conjunction",
+      "note": "Általában jelölőnégyzet magyarázó szövege\nPl.: Whether a template is custom. - Hogy egy sablon egyéni-e.\n"
+    },
+    "widget": {
+      "hu": "widget",
+      "forras": "kezi",
+      "note": "NEM fordítjuk: bevett angol szakszó"
+    },
+    "width": {
+      "hu": "Szélesség",
+      "forras": "wordpress",
+      "szofaj": "noun"
+    },
+    "window": {
+      "hu": "ablak",
+      "forras": "wordpress.org-szotar",
+      "szofaj": "noun"
+    },
+    "woocommerce": {
+      "hu": "WooCommerce",
+      "forras": "woocommerce"
+    },
+    "year": {
+      "hu": "Év",
+      "forras": "wordpress"
+    },
+    "Yemen": {
+      "hu": "Jemen",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "yes": {
+      "hu": "Igen",
+      "forras": "wordpress"
+    },
+    "Zambia": {
+      "hu": "Zambia",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "Zimbabwe": {
+      "hu": "Zimbabwe",
+      "forras": "woocommerce",
+      "szofaj": "noun"
+    },
+    "zoom": {
+      "hu": "Nagyítás",
+      "forras": "repo"
     }
-  }
+  },
+  "kontextusfuggo": [
+    "checkout"
+  ]
 }

@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: MainWP Matomo Extension 5.1\n"
+"Project-Id-Version: MainWP Matomo Extension 5.2.1\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:49:29+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: MainWP Matomo Extension\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 5.1\n"
+"X-Plugin-Version: 5.2.1\n"
 
 #. Plugin Name of the plugin
 #: mainwp-piwik-extension.php
@@ -37,229 +37,366 @@ msgid ""
 "MainWP Matomo (formerly Piwik) Add-on is an integration for the MainWP "
 "plugin that enables you to monitor detailed statistics about your child "
 "sites traffic. It integrates seamlessly with your Matomo dashboard."
-msgstr ""
-"A MainWP Matomo (korábban Piwik) kiegészítő a MainWP bővítmény integrációja,"
-" amely lehetővé teszi a gyermek webhelyei forgalmának részletes "
-"statisztikáinak figyelését. Zökkenőmentesen illeszkedik a Matomo "
-"vezérlőpultjához."
+msgstr "A MainWP Matomo (korábban Piwik) kiegészítő a MainWP bővítményhez készült integráció, amely lehetővé teszi az Ön alárendelt webhelyei forgalmáról szóló részletes statisztikák nyomon követését. Zökkenőmentesen integrálódik a Matomo vezérlőpultjába."
 
 #. Author of the plugin
 #: mainwp-piwik-extension.php
 msgid "MainWP"
 msgstr "MainWP"
 
-#: class/class-mainwp-piwik-api.php:64 class/class-mainwp-piwik-api.php:70
-msgid "Connection to your Matomo dashboard could not be established"
-msgstr "Nem sikerült kapcsolódni a Matomo vezérlőpulthoz"
-
-#: class/class-mainwp-piwik-api.php:64
-msgid "Error "
-msgstr "Hiba "
-
-#: class/class-mainwp-piwik-api.php:91
-msgid ""
-"Matomo dashboard URL and Auth toke are required. Please enter valid values "
-"and try again."
-msgstr ""
-"A Matomo vezérlőpult URL és az Auth toke megadása kötelező. Kérjük, adjon "
-"meg érvényes értékeket, majd próbálja újra."
-
-#: class/class-mainwp-piwik-api.php:104
-msgid "Undefined error occurred. Please, try again."
-msgstr "Ismeretlen hiba történt. Kérjük, próbálja meg újra."
-
-#: class/class-mainwp-piwik-api.php:111
-msgid "Matomo properties are empty or the authentication info is incorrect."
-msgstr "A Matomo-tulajdonok üresek, vagy a hitelesítési adatok helytelenek."
-
-#: class/class-mainwp-piwik-api.php:152
+#: class/class-mainwp-piwik-api.php:441
 msgid "Incorrect Auth token or site ID."
-msgstr "Helytelen Auth token vagy webhelyazonosító."
+msgstr "Hibás hitelesítési token vagy webhely-ID."
 
-#: class/class-mainwp-piwik-api.php:170
+#: class/class-mainwp-piwik-api.php:467
 msgid "Please review the Matomo settings."
 msgstr "Kérjük, ellenőrizze a Matomo beállításait."
 
-#: class/class-mainwp-piwik-ui.php:154
+#: class/class-mainwp-piwik-api.php:473
+msgid "Matomo returned an invalid response."
+msgstr "A Matomo hibás választ adott."
+
+#: class/class-mainwp-piwik-ui.php:162
 msgid "Device"
 msgstr "Eszköz"
 
-#: class/class-mainwp-piwik-ui.php:155 class/class-mainwp-piwik-ui.php:197
-#: class/class-mainwp-piwik-ui.php:241 class/class-mainwp-piwik-ui.php:283
-#: class/class-mainwp-piwik-ui.php:325 class/class-mainwp-piwik-ui.php:404
+#: class/class-mainwp-piwik-ui.php:163 class/class-mainwp-piwik-ui.php:210
+#: class/class-mainwp-piwik-ui.php:259 class/class-mainwp-piwik-ui.php:306
+#: class/class-mainwp-piwik-ui.php:353 class/class-mainwp-piwik-ui.php:432
 #: class/class-mainwp-piwik-widgets.php:50
 msgid "Visits"
 msgstr "Látogatások"
 
-#: class/class-mainwp-piwik-ui.php:156 class/class-mainwp-piwik-ui.php:198
-#: class/class-mainwp-piwik-ui.php:242 class/class-mainwp-piwik-ui.php:284
-#: class/class-mainwp-piwik-ui.php:326
+#: class/class-mainwp-piwik-ui.php:164 class/class-mainwp-piwik-ui.php:211
+#: class/class-mainwp-piwik-ui.php:260 class/class-mainwp-piwik-ui.php:307
+#: class/class-mainwp-piwik-ui.php:354
 msgid "Actions"
 msgstr "Műveletek"
 
-#: class/class-mainwp-piwik-ui.php:157 class/class-mainwp-piwik-ui.php:199
-#: class/class-mainwp-piwik-ui.php:285 class/class-mainwp-piwik-ui.php:327
+#: class/class-mainwp-piwik-ui.php:165 class/class-mainwp-piwik-ui.php:212
+#: class/class-mainwp-piwik-ui.php:308 class/class-mainwp-piwik-ui.php:355
 msgid "Actions Per Visit"
-msgstr "Művelet/látogatás"
+msgstr "Műveletek látogatásonként"
 
-#: class/class-mainwp-piwik-ui.php:158 class/class-mainwp-piwik-ui.php:200
-#: class/class-mainwp-piwik-ui.php:286 class/class-mainwp-piwik-ui.php:328
+#: class/class-mainwp-piwik-ui.php:166 class/class-mainwp-piwik-ui.php:213
+#: class/class-mainwp-piwik-ui.php:309 class/class-mainwp-piwik-ui.php:356
 msgid "AVG. Time On Website"
 msgstr "Átl. idő a webhelyen"
 
-#: class/class-mainwp-piwik-ui.php:159 class/class-mainwp-piwik-ui.php:201
-#: class/class-mainwp-piwik-ui.php:287 class/class-mainwp-piwik-ui.php:329
+#: class/class-mainwp-piwik-ui.php:167 class/class-mainwp-piwik-ui.php:214
+#: class/class-mainwp-piwik-ui.php:310 class/class-mainwp-piwik-ui.php:357
 msgid "Bounce Count"
 msgstr "Visszafordulások száma"
 
-#: class/class-mainwp-piwik-ui.php:196
+#: class/class-mainwp-piwik-ui.php:209
 msgid "Country"
 msgstr "Ország"
 
-#: class/class-mainwp-piwik-ui.php:239
+#: class/class-mainwp-piwik-ui.php:257
 msgid "Page"
 msgstr "Oldal"
 
-#: class/class-mainwp-piwik-ui.php:240
+#: class/class-mainwp-piwik-ui.php:258
 msgid "View"
 msgstr "Megtekintés"
 
-#: class/class-mainwp-piwik-ui.php:243
+#: class/class-mainwp-piwik-ui.php:261
 msgid "Sum time spent"
 msgstr "Eltöltött idő összege"
 
-#: class/class-mainwp-piwik-ui.php:244
+#: class/class-mainwp-piwik-ui.php:262
 msgid "AVG. Time On Page"
 msgstr "Átl. idő az oldalon"
 
-#: class/class-mainwp-piwik-ui.php:245 class/class-mainwp-piwik-ui.php:407
+#: class/class-mainwp-piwik-ui.php:263 class/class-mainwp-piwik-ui.php:435
 msgid "Bounce Rate"
 msgstr "Visszafordulási arány"
 
-#: class/class-mainwp-piwik-ui.php:282
+#: class/class-mainwp-piwik-ui.php:305
 msgid "Referrer"
 msgstr "Hivatkozó"
 
-#: class/class-mainwp-piwik-ui.php:324
+#: class/class-mainwp-piwik-ui.php:352
 msgid "Keyword"
 msgstr "Kulcsszó"
 
-#: class/class-mainwp-piwik-ui.php:405 class/class-mainwp-piwik-ui.php:679
-#: class/class-mainwp-piwik-widgets.php:51 class/class-mainwp-piwik.php:655
+#: class/class-mainwp-piwik-ui.php:433 class/class-mainwp-piwik-ui.php:696
+#: class/class-mainwp-piwik-widgets.php:51 class/class-mainwp-piwik.php:1504
 msgid "Unique Visitors"
 msgstr "Egyedi látogatók"
 
-#: class/class-mainwp-piwik-ui.php:406
+#: class/class-mainwp-piwik-ui.php:434
 msgid "Actions/Visit"
-msgstr "Művelet/látogatás"
+msgstr "Műveletek látogatásonként"
 
-#: class/class-mainwp-piwik-ui.php:408
+#: class/class-mainwp-piwik-ui.php:436
 msgid "Pageviews"
 msgstr "Oldalmegtekintések"
 
-#: class/class-mainwp-piwik-ui.php:409
+#: class/class-mainwp-piwik-ui.php:437
 msgid "Avg. Time on Site"
 msgstr "Átl. idő a webhelyen"
 
-#: class/class-mainwp-piwik-ui.php:477
+#: class/class-mainwp-piwik-ui.php:505
 msgid "This:"
 msgstr "Aktuális:"
 
-#: class/class-mainwp-piwik-ui.php:480
+#: class/class-mainwp-piwik-ui.php:508
 msgid "Previous:"
 msgstr "Előző:"
 
-#: class/class-mainwp-piwik-ui.php:576
-msgid "Loading"
-msgstr "Betöltés"
-
-#: class/class-mainwp-piwik-ui.php:624
+#: class/class-mainwp-piwik-ui.php:641
 msgid "Last"
 msgstr "Utolsó"
 
-#: class/class-mainwp-piwik-ui.php:624
+#: class/class-mainwp-piwik-ui.php:641
 msgid " Preceding period"
 msgstr " Előző időszak"
 
-#: class/class-mainwp-piwik-ui.php:675 class/class-mainwp-piwik.php:654
+#: class/class-mainwp-piwik-ui.php:692 class/class-mainwp-piwik.php:1503
 msgid "Views"
 msgstr "Megtekintések"
 
-#: class/class-mainwp-piwik-ui.php:676
+#: class/class-mainwp-piwik-ui.php:693
 msgid "Total views in the last "
 msgstr "Összes megtekintés az elmúlt "
 
-#: class/class-mainwp-piwik-ui.php:680
+#: class/class-mainwp-piwik-ui.php:697
 msgid "Unique visitors in the last "
 msgstr "Egyedi látogatók az elmúlt "
 
-#: class/class-mainwp-piwik-ui.php:683 class/class-mainwp-piwik-widgets.php:52
-#: class/class-mainwp-piwik.php:656
+#: class/class-mainwp-piwik-ui.php:700 class/class-mainwp-piwik-widgets.php:52
+#: class/class-mainwp-piwik.php:1505
 msgid "Users"
 msgstr "Felhasználók"
 
-#: class/class-mainwp-piwik-ui.php:684
+#: class/class-mainwp-piwik-ui.php:701
 msgid "Total users in the last "
 msgstr "Összes felhasználó az elmúlt "
 
-#: class/class-mainwp-piwik-ui.php:687 class/class-mainwp-piwik-widgets.php:53
-#: class/class-mainwp-piwik.php:657
+#: class/class-mainwp-piwik-ui.php:704 class/class-mainwp-piwik-widgets.php:53
+#: class/class-mainwp-piwik.php:1506
 msgid "Average Engagement Time"
 msgstr "Átlagos elköteleződési idő"
 
-#: class/class-mainwp-piwik-ui.php:688
+#: class/class-mainwp-piwik-ui.php:705
 msgid "Average engagement time during the last "
 msgstr "Átlagos elköteleződési idő az elmúlt "
 
-#: class/class-mainwp-piwik-ui.php:691 class/class-mainwp-piwik-widgets.php:54
+#: class/class-mainwp-piwik-ui.php:708 class/class-mainwp-piwik-widgets.php:54
 msgid "Summary"
 msgstr "Összegzés"
 
-#: class/class-mainwp-piwik-ui.php:692
+#: class/class-mainwp-piwik-ui.php:709
 msgid "Summary data in the last "
 msgstr "Összegző adatok az elmúlt "
 
-#: class/class-mainwp-piwik-ui.php:695 class/class-mainwp-piwik-widgets.php:56
+#: class/class-mainwp-piwik-ui.php:712 class/class-mainwp-piwik-widgets.php:56
 msgid "Visits by Country"
 msgstr "Látogatások ország szerint"
 
-#: class/class-mainwp-piwik-ui.php:696
+#: class/class-mainwp-piwik-ui.php:713
 msgid "Visits by country counts during the last "
 msgstr "Ország szerinti látogatásszám az elmúlt "
 
-#: class/class-mainwp-piwik-ui.php:699
+#: class/class-mainwp-piwik-ui.php:716
 msgid "Views by Page title"
 msgstr "Megtekintések oldalcím szerint"
 
-#: class/class-mainwp-piwik-ui.php:700
+#: class/class-mainwp-piwik-ui.php:717
 msgid "Views by Page title counts during the "
 msgstr "Oldalcím szerinti megtekintésszám a "
 
-#: class/class-mainwp-piwik-ui.php:703 class/class-mainwp-piwik-widgets.php:58
+#: class/class-mainwp-piwik-ui.php:720 class/class-mainwp-piwik-widgets.php:58
 msgid "Visits by Device"
 msgstr "Látogatások eszköz szerint"
 
-#: class/class-mainwp-piwik-ui.php:704
+#: class/class-mainwp-piwik-ui.php:721
 msgid "Visits by device counts during the last "
 msgstr "Eszköz szerinti látogatásszám az elmúlt "
 
-#: class/class-mainwp-piwik-ui.php:707
+#: class/class-mainwp-piwik-ui.php:724
 msgid "Visits by Referrers"
 msgstr "Látogatások hivatkozók szerint"
 
-#: class/class-mainwp-piwik-ui.php:708
+#: class/class-mainwp-piwik-ui.php:725
 msgid "Visits by Referrers counts during the "
 msgstr "Hivatkozók szerinti látogatásszám a "
 
-#: class/class-mainwp-piwik-ui.php:711
+#: class/class-mainwp-piwik-ui.php:728
 msgid "Visits by Keywords"
 msgstr "Látogatások kulcsszavak szerint"
 
-#: class/class-mainwp-piwik-ui.php:712
+#: class/class-mainwp-piwik-ui.php:729
 msgid "Visits by Keywords counts during the "
 msgstr "Kulcsszavak szerinti látogatásszám a "
 
-#: class/class-mainwp-piwik-utility.php:178
+#: class/class-mainwp-piwik-utility.php:232
+msgid "The Matomo settings could not be read."
+msgstr "A Matomo beállításait nem sikerült beolvasni."
+
+#: class/class-mainwp-piwik-utility.php:233
+msgid ""
+"Saving the Matomo settings failed. Check the Matomo URL and API token, then "
+"click Save Settings to try again."
+msgstr "Nem sikerült menteni a Matomo beállításait. Ellenőrizze a Matomo URL-címét és az API-jogkivonatot, majd kattintson a beállítások mentése gombra az újbóli próbálkozáshoz."
+
+#: class/class-mainwp-piwik-utility.php:234
+msgid ""
+"Another change to the Matomo settings is being saved, so nothing was "
+"changed. Click Save Settings to try again."
+msgstr "A Matomo beállításainak egy másik módosítása mentés alatt áll, ezért semmi sem változott. Kattintson a beállítások mentése gombra az újbóli próbálkozáshoz."
+
+#: class/class-mainwp-piwik-utility.php:235
+msgid ""
+"The saved API token could not be removed, so Matomo is still connected. "
+"Click Save Settings to try again."
+msgstr "A mentett API-jogkivonatot nem sikerült eltávolítani, ezért a Matomo továbbra is csatlakozik. Kattintson a beállítások mentése gombra az újbóli próbálkozáshoz."
+
+#: class/class-mainwp-piwik-utility.php:236
+msgid ""
+"No Matomo connection is saved yet. Enter the Matomo URL and an API token in "
+"the Matomo settings, then click Save Settings."
+msgstr "Még nincs mentett Matomo-kapcsolat. Adja meg a Matomo URL-címét és egy API-jogkivonatot a Matomo beállításaiban, majd kattintson a beállítások mentése gombra."
+
+#: class/class-mainwp-piwik-utility.php:237
+msgid ""
+"The Matomo URL points to a different server or folder, so the saved API "
+"token was not sent to it. Paste the API token into the API token field and "
+"click Save Settings."
+msgstr "A Matomo URL-címe másik szerverre vagy mappára mutat, ezért a mentett API-jogkivonatot nem küldtük el oda. Illessze be az API-jogkivonatot az API-jogkivonat mezőbe, majd kattintson a beállítások mentése gombra."
+
+#: class/class-mainwp-piwik-utility.php:238
+msgid ""
+"The last change to the Matomo connection did not finish saving, so the saved"
+" API token was not sent anywhere. Paste the API token into the API token "
+"field and click Save Settings."
+msgstr "A Matomo-kapcsolat legutóbbi módosításának mentése nem fejeződött be, ezért a mentett API-jogkivonatot nem küldtük el sehova. Illessze be az API-jogkivonatot az API-jogkivonat mezőbe, majd kattintson a beállítások mentése gombra."
+
+#: class/class-mainwp-piwik-utility.php:239
+msgid ""
+"The saved API token could not be read, so nothing was changed. Paste the API"
+" token into the API token field and click Save Settings."
+msgstr "A mentett API-jogkivonatot nem sikerült beolvasni, ezért semmi sem változott. Illessze be az API-jogkivonatot az API-jogkivonat mezőbe, majd kattintson a beállítások mentése gombra."
+
+#: class/class-mainwp-piwik-utility.php:240
+msgid ""
+"An API token was entered without a Matomo URL, so nothing was changed. Enter"
+" the Matomo URL and click Save Settings. To disconnect Matomo, clear the "
+"Matomo URL and leave the API token blank."
+msgstr "Matomo URL-cím nélkül adott meg egy API-jogkivonatot, ezért semmi sem változott. Adja meg a Matomo URL-címét, majd kattintson a beállítások mentése gombra. A Matomo-kapcsolat bontásához ürítse ki a Matomo URL-mezőjét, és hagyja üresen az API-jogkivonatot."
+
+#: class/class-mainwp-piwik-utility.php:241
+msgid ""
+"The API token is too short, so nothing was changed. A Matomo API token has "
+"at least 16 characters, or is the word anonymous for anonymous access. Paste"
+" the full token into the API token field and click Save Settings."
+msgstr "Az API-jogkivonat túl rövid, ezért semmi sem változott. A Matomo API-jogkivonat legalább 16 karakterből áll, anonim hozzáférés esetén pedig az anonymous szó használható. Illessze be a teljes jogkivonatot az API-jogkivonat mezőbe, majd kattintson a beállítások mentése gombra."
+
+#: class/class-mainwp-piwik-utility.php:242
+msgid ""
+"The Matomo URL does not start with https://, and MainWP Matomo only connects"
+" to Matomo over https://. Enter the https:// address of your Matomo in the "
+"Matomo URL field and click Save Settings."
+msgstr "A Matomo URL-címe nem https:// kezdetű, a MainWP Matomo pedig kizárólag https:// használatával csatlakozik a Matomóhoz. Adja meg a Matomo https:// kezdetű címét a Matomo URL-mezőben, majd kattintson a beállítások mentése gombra."
+
+#: class/class-mainwp-piwik-utility.php:243
+msgid ""
+"The Matomo URL has a folder name MainWP Matomo cannot use, so nothing was "
+"changed. Folder names can contain letters a to z, digits, dots, hyphens, "
+"underscores and tildes. A folder name cannot be . or .., cannot be empty "
+"(two slashes in a row), and cannot contain % codes, and index.php is "
+"accepted only at the end of the address. Enter the address you use to open "
+"Matomo, such as https://example.com/matomo/, in the Matomo URL field and "
+"click Save Settings."
+msgstr "A Matomo URL olyan mappanevet tartalmaz, amelyet a MainWP Matomo nem tud használni, ezért semmi sem változott. A mappanevek az a–z betűket, számjegyeket, pontokat, kötőjeleket, aláhúzásjeleket és tilde karaktereket tartalmazhatnak. A mappanév nem lehet . vagy .., nem lehet üres (két egymást követő perjel), és nem tartalmazhat % kódokat; az index.php csak a cím végén fogadható el. Adja meg a Matomo megnyitásához használt címet (például: https://example.com/matomo/) a Matomo URL mezőben, majd kattintson a Beállítások mentése gombra."
+
+#: class/class-mainwp-piwik-utility.php:244
+msgid ""
+"MainWP Matomo cannot use the Matomo URL because its port number is outside 1"
+" to 65535 or the address is longer than 2048 characters, so nothing was "
+"changed. Enter the https:// address of your Matomo in the Matomo URL field "
+"and click Save Settings."
+msgstr "A MainWP Matomo nem tudja használni a Matomo URL-címét, mert a portszám kívül esik az 1–65535 tartományon, vagy a cím hosszabb 2048 karakternél, ezért semmi sem változott. Adja meg a Matomo https:// kezdetű címét a Matomo URL-mezőben, majd kattintson a beállítások mentése gombra."
+
+#: class/class-mainwp-piwik-utility.php:245
+msgid ""
+"The server name in the Matomo URL uses characters MainWP Matomo cannot "
+"connect to, such as an underscore or letters outside a to z, so nothing was "
+"changed. Enter an address made of letters a to z, digits, dots and hyphens "
+"(write an international domain name in its xn-- form) in the Matomo URL "
+"field and click Save Settings."
+msgstr "A Matomo URL-címében szereplő szervernév olyan karaktereket tartalmaz, amelyekkel a MainWP Matomo nem tud csatlakozni, például aláhúzásjelet vagy az a–z tartományon kívüli betűket, ezért semmi sem változott. Adjon meg kizárólag a–z betűkből, számjegyekből, pontokból és kötőjelekből álló címet (a nemzetközi domainnevet xn-- formában adja meg) a Matomo URL-mezőben, majd kattintson a beállítások mentése gombra."
+
+#: class/class-mainwp-piwik-utility.php:246
+msgid ""
+"The Matomo URL points to a private or local network address, and MainWP "
+"Matomo only connects to Matomo at a public address, so nothing was changed. "
+"Enter the public https:// address of your Matomo in the Matomo URL field and"
+" click Save Settings."
+msgstr "A Matomo URL-címe privát vagy helyi hálózati címre mutat, a MainWP Matomo pedig kizárólag nyilvános címen csatlakozik a Matomóhoz, ezért semmi sem változott. Adja meg a Matomo nyilvános, https:// kezdetű címét a Matomo URL-mezőben, majd kattintson a beállítások mentése gombra."
+
+#: class/class-mainwp-piwik-utility.php:247
+msgid ""
+"The connection check failed because the server at the Matomo URL refused the"
+" request before Matomo checked the API token, which usually means a firewall"
+" or security service blocked it, so nothing was changed. Allow requests from"
+" this Dashboard to Matomo, then click Save Settings to try again."
+msgstr "A kapcsolat ellenőrzése sikertelen volt, mert a Matomo URL-címén található szerver még az API-jogkivonat ellenőrzése előtt elutasította a kérést. Ez általában azt jelenti, hogy egy tűzfal vagy biztonsági szolgáltatás blokkolta a kérést, ezért semmi sem változott. Engedélyezze, hogy a kérések erről a vezérlőpultról eljussanak a Matomóhoz, majd kattintson a beállítások mentése gombra az újbóli próbálkozáshoz."
+
+#: class/class-mainwp-piwik-utility.php:248
+msgid ""
+"The Matomo settings were saved, but MainWP could not confirm that the save "
+"finished cleanly, so analytics stay paused until the connection is saved "
+"again. Paste the API token into the API token field and click Save Settings."
+msgstr "A Matomo beállításainak mentése megtörtént, de a MainWP nem tudta megerősíteni, hogy a mentés rendben befejeződött, ezért az analitika szünetel, amíg a kapcsolatot újra nem menti. Illessze be az API-jogkivonatot az API-jogkivonat mezőbe, majd kattintson a beállítások mentése gombra."
+
+#: class/class-mainwp-piwik-utility.php:249
+msgid ""
+"The saved Matomo connection could not be verified, which happens after the "
+"WordPress security keys change, so the saved API token was not sent "
+"anywhere. Paste the API token into the API token field and click Save "
+"Settings."
+msgstr "A mentett Matomo-kapcsolatot nem sikerült ellenőrizni. Ez a WordPress biztonsági kulcsainak módosítása után fordulhat elő, ezért a mentett API-jogkivonatot nem küldtük el sehova. Illessze be az API-jogkivonatot az API-jogkivonat mezőbe, majd kattintson a beállítások mentése gombra."
+
+#: class/class-mainwp-piwik-utility.php:250
+msgid ""
+"The connection check failed because MainWP could not reach Matomo at the "
+"Matomo URL, so nothing was changed. Check that the address is right and that"
+" Matomo answers over https://, then try again."
+msgstr "A kapcsolódás ellenőrzése sikertelen volt, mert a MainWP nem érte el a Matomót a Matomo URL-címén, ezért nem történt változtatás. Ellenőrizze, hogy a cím helyes-e, és hogy a Matomo https:// kapcsolaton keresztül válaszol-e, majd próbálja újra."
+
+#: class/class-mainwp-piwik-utility.php:251
+msgid ""
+"The connection check failed because Matomo refused the API token, so nothing"
+" was changed. Paste a current token from your Matomo account into the API "
+"token field and click Save Settings."
+msgstr "A kapcsolat ellenőrzése sikertelen volt, mert a Matomo elutasította az API-jogkivonatot, ezért semmi sem változott. Illessze be a Matomo-fiókjából származó aktuális jogkivonatot az API-jogkivonat mezőbe, majd kattintson a beállítások mentése gombra."
+
+#: class/class-mainwp-piwik-utility.php:252
+msgid ""
+"Analytics are paused until the Matomo connection is saved again. In the "
+"Matomo settings, enter the https:// address of your Matomo, then click Save "
+"Settings."
+msgstr "Az analitika szünetel, amíg a Matomo-kapcsolatot újra nem menti. Adja meg a Matomo https:// kezdetű címét a Matomo beállításaiban, majd kattintson a beállítások mentése gombra."
+
+#: class/class-mainwp-piwik-utility.php:253
+msgid "You are not allowed to update the Matomo connection."
+msgstr "Nincs jogosultsága a Matomo-kapcsolat frissítéséhez."
+
+#: class/class-mainwp-piwik-utility.php:254
+msgid "The Matomo configuration is being updated. Try again in a moment."
+msgstr "A Matomo konfigurációjának frissítése folyamatban van. Próbálja újra egy kis idő múlva."
+
+#: class/class-mainwp-piwik-utility.php:255
+msgid "Matomo returned no properties, or the API token is wrong."
+msgstr "A Matomo nem adott vissza webhelyeket, vagy az API-jogkivonat hibás."
+
+#: class/class-mainwp-piwik-utility.php:256
+msgid "The Matomo property inventory could not be saved."
+msgstr "Nem sikerült menteni a Matomo webhelylistáját."
+
+#: class/class-mainwp-piwik-utility.php:524
 msgid "Fresh Matomo data loaded successfully!"
 msgstr "A friss Matomo-adatok sikeresen betöltve!"
 
@@ -279,21 +416,23 @@ msgstr "Hivatkozók"
 msgid "Keywords"
 msgstr "Kulcsszavak"
 
-#: class/class-mainwp-piwik-widgets.php:228
+#: class/class-mainwp-piwik-widgets.php:230
 #, php-format
 msgid ""
-"To hide or show a widget, click the Cog (%s) icon and select options from "
-"\"Show widgets\""
-msgstr ""
-"Egy widget elrejtéséhez vagy megjelenítéséhez kattintson a Fogaskerék (%s) "
-"ikonra, és válasszon a \"Widgetek megjelenítése\" lehetőségei közül"
+"Tip: To hide or show a widget, click the Cog (%s) icon and select options "
+"from \"Show widgets\""
+msgstr "Tipp: widget elrejtéséhez vagy megjelenítéséhez kattintson a fogaskerék (%s) ikonra, majd válassza ki a kívánt opciókat a „widgetek megjelenítése” részben"
 
-#: class/class-mainwp-piwik-widgets.php:308
-#: class/class-mainwp-piwik-widgets.php:454
+#: class/class-mainwp-piwik-widgets.php:255
+msgid "Loading..."
+msgstr "Betöltés..."
+
+#: class/class-mainwp-piwik-widgets.php:312
+#: class/class-mainwp-piwik-widgets.php:458
 msgid "Page Settings"
 msgstr "Oldalbeállítások"
 
-#: class/class-mainwp-piwik-widgets.php:334
+#: class/class-mainwp-piwik-widgets.php:338
 msgid ""
 "Returns this page to the state it was in when installed. The feature also "
 "restores any widgets you have moved through the drag and drop feature on the"
@@ -303,165 +442,307 @@ msgstr ""
 "azokat a widgeteket is, amelyeket az oldalon a fogd és vidd funkcióval "
 "áthelyezett."
 
-#: class/class-mainwp-piwik-widgets.php:334
+#: class/class-mainwp-piwik-widgets.php:338
 msgid "Reset Page"
-msgstr "Oldal visszaállítása"
+msgstr "Oldal alaphelyzetbe állítása"
 
-#: class/class-mainwp-piwik-widgets.php:337 class/class-mainwp-piwik.php:362
+#: class/class-mainwp-piwik-widgets.php:341 class/class-mainwp-piwik.php:1112
 msgid "Save Settings"
 msgstr "Beállítások mentése"
 
-#: class/class-mainwp-piwik-widgets.php:405
+#: class/class-mainwp-piwik-widgets.php:409
 msgid "Show widgets"
 msgstr "Widgetek megjelenítése"
 
-#: class/class-mainwp-piwik-widgets.php:406
+#: class/class-mainwp-piwik-widgets.php:410
 msgid "Select widgets that you want to hide in the MainWP Overview page."
 msgstr ""
 "Válassza ki azokat a widgeteket, amelyeket el szeretne rejteni a MainWP "
 "áttekintő oldalon."
 
-#: class/class-mainwp-piwik.php:83
+#: class/class-mainwp-piwik.php:386
 msgid "Matomo (formerly Piwik)"
 msgstr "Matomo (korábban Piwik)"
 
-#: class/class-mainwp-piwik.php:85
+#: class/class-mainwp-piwik.php:388
 msgid "Matomo account property"
-msgstr "Matomo-fiók tulajdon"
+msgstr "Matomo-fiókhoz tartozó webhely"
 
-#: class/class-mainwp-piwik.php:90
+#: class/class-mainwp-piwik.php:393
 msgid "Select property"
-msgstr "Válasszon tulajdont"
+msgstr "Webhely kiválasztása"
 
-#: class/class-mainwp-piwik.php:92
+#: class/class-mainwp-piwik.php:395
 msgid "No properties"
-msgstr "Nincsenek tulajdonok"
+msgstr "Nincsenek webhelyek"
 
-#: class/class-mainwp-piwik.php:272
+#: class/class-mainwp-piwik.php:399
+msgid "Already assigned"
+msgstr "Már hozzárendelve"
+
+#: class/class-mainwp-piwik.php:1012
 msgid "Visitor Data"
 msgstr "Látogatói adatok"
 
-#: class/class-mainwp-piwik.php:273
+#: class/class-mainwp-piwik.php:1013
 msgid "Settings"
 msgstr "Beállítások"
 
-#: class/class-mainwp-piwik.php:303
+#: class/class-mainwp-piwik.php:1022
+msgid "Data fetched successfully."
+msgstr "Az adatok lekérése sikerült."
+
+#: class/class-mainwp-piwik.php:1038
 msgid "Settings saved successfully."
-msgstr "A beállítások sikeresen mentve."
+msgstr "A beállítások sikeresen elmentve."
 
-#: class/class-mainwp-piwik.php:306
-msgid "Connect Matomo (formerly Piwik) Dashboard"
-msgstr "Matomo (korábban Piwik) vezérlőpult csatlakoztatása"
+#: class/class-mainwp-piwik.php:1042
+msgid "Matomo Connection"
+msgstr "Matomo-kapcsolat"
 
-#: class/class-mainwp-piwik.php:308
-msgid "Matomo (formerly Piwik) dashboard URL"
-msgstr "Matomo (korábban Piwik) vezérlőpult URL"
+#: class/class-mainwp-piwik.php:1043
+msgid ""
+"Connect MainWP to your Matomo instance so we can fetch analytics data for "
+"your sites."
+msgstr "Kapcsolja össze a MainWP-t a Matomo-példányával, hogy lekérhessük a webhelyei analitikai adatait."
 
-#: class/class-mainwp-piwik.php:314
-msgid "API authentication token"
-msgstr "API hitelesítési token"
+#: class/class-mainwp-piwik.php:1046
+msgid "Matomo URL"
+msgstr "Matomo URL"
 
-#: class/class-mainwp-piwik.php:319
-msgid "Matomo (formerly Piwik) Extension Settings"
-msgstr "Matomo (korábban Piwik) bővítmény beállításai"
+#: class/class-mainwp-piwik.php:1049
+msgid ""
+"Enter the base URL of your Matomo instance (example: "
+"https://analytics.example.com)."
+msgstr "Adja meg a Matomo-példány alap URL-címét (példa: https://analytics.example.com)."
 
-#: class/class-mainwp-piwik.php:321
-msgid "Connection timeout (in seconds)"
-msgstr "Kapcsolódási időkorlát (másodpercben)"
+#: class/class-mainwp-piwik.php:1053
+msgid "API token"
+msgstr "API-jogkivonat"
 
-#: class/class-mainwp-piwik.php:327
-msgid "Display interval"
-msgstr "Megjelenítési intervallum"
+#: class/class-mainwp-piwik.php:1056
+msgid ""
+"Paste a new Matomo authentication token, or leave this blank to keep the "
+"saved token."
+msgstr "Illesszen be egy új Matomo-hitelesítési jogkivonatot, vagy hagyja üresen ezt a mezőt a mentett jogkivonat megtartásához."
 
-#: class/class-mainwp-piwik.php:330
+#: class/class-mainwp-piwik.php:1060
+msgid "Data & Reporting"
+msgstr "Adatok és jelentések"
+
+#: class/class-mainwp-piwik.php:1061
+msgid ""
+"Control how data is displayed and how often MainWP syncs it from Matomo."
+msgstr "Szabályozza az adatok megjelenítését és azt, hogy a MainWP milyen gyakran szinkronizálja azokat a Matomóból."
+
+#: class/class-mainwp-piwik.php:1064
+msgid "Reporting period"
+msgstr "Jelentési időszak"
+
+#: class/class-mainwp-piwik.php:1067
 msgid "Week"
 msgstr "Hét"
 
-#: class/class-mainwp-piwik.php:331
+#: class/class-mainwp-piwik.php:1068
 msgid "Month"
 msgstr "Hónap"
 
-#: class/class-mainwp-piwik.php:336
-msgid "Data refresh frequency"
-msgstr "Adatfrissítés gyakorisága"
+#. translators: %d: number of days in the custom reporting period.
+#: class/class-mainwp-piwik.php:1071
+#, php-format
+msgid "%d days"
+msgstr "%d nap"
 
-#: class/class-mainwp-piwik.php:339
+#: class/class-mainwp-piwik.php:1077
+msgid "Sync frequency"
+msgstr "Szinkronizálás gyakorisága"
+
+#: class/class-mainwp-piwik.php:1080
 msgid "Every hour"
 msgstr "Óránként"
 
-#: class/class-mainwp-piwik.php:340
+#: class/class-mainwp-piwik.php:1081
 msgid "Every 3 hours"
 msgstr "3 óránként"
 
-#: class/class-mainwp-piwik.php:341
+#: class/class-mainwp-piwik.php:1082
 msgid "Every 9 hours"
 msgstr "9 óránként"
 
-#: class/class-mainwp-piwik.php:342
+#: class/class-mainwp-piwik.php:1083
 msgid "Every 15 hours"
 msgstr "15 óránként"
 
-#: class/class-mainwp-piwik.php:343
+#: class/class-mainwp-piwik.php:1084
 msgid "Every 18 hours"
 msgstr "18 óránként"
 
-#: class/class-mainwp-piwik.php:344
+#: class/class-mainwp-piwik.php:1085
 msgid "Every 24 hours"
 msgstr "24 óránként"
 
-#: class/class-mainwp-piwik.php:349
+#. translators: %d: number of hours between syncs.
+#: class/class-mainwp-piwik.php:1088
+#, php-format
+msgid "Every %d hours"
+msgstr "%d óránként"
+
+#: class/class-mainwp-piwik.php:1094
+msgid "Connection timeout (in seconds)"
+msgstr "Kapcsolódási időkorlát (másodpercben)"
+
+#: class/class-mainwp-piwik.php:1100
+msgid "Site mapping"
+msgstr "Webhely-hozzárendelés"
+
+#: class/class-mainwp-piwik.php:1101
+msgid "Choose how MainWP links your sites to Matomo properties/sites."
+msgstr "Válassza ki, hogyan kapcsolja össze a MainWP a webhelyeit a Matomo webhelyeivel."
+
+#: class/class-mainwp-piwik.php:1104
 msgid "Automatically assign properties to sites"
-msgstr "Tulajdonok automatikus hozzárendelése a webhelyekhez"
+msgstr "Tulajdonságok automatikus hozzárendelése a webhelyekhez"
 
-#: class/class-mainwp-piwik.php:355
-msgid "Verify SSL certificate"
-msgstr "SSL-tanúsítvány ellenőrzése"
-
-#: class/class-mainwp-piwik.php:364
-msgid "Refresh Data"
-msgstr "Adatok frissítése"
-
-#: class/class-mainwp-piwik.php:397 class/class-mainwp-piwik.php:587
-#: mainwp-piwik-extension.php:122 mainwp-piwik-extension.php:159
+#: class/class-mainwp-piwik.php:1147 class/class-mainwp-piwik.php:1419
+#: mainwp-piwik-extension.php:135 mainwp-piwik-extension.php:184
 msgid "Matomo"
 msgstr "Matomo"
 
-#: class/class-mainwp-piwik.php:398
+#: class/class-mainwp-piwik.php:1148
 msgid "See your visitor's search and traffic patterns"
 msgstr "Tekintse meg látogatói keresési és forgalmi mintáit"
 
-#: class/class-mainwp-piwik.php:546
+#: class/class-mainwp-piwik.php:1161
+msgid "Matomo Visitor Data"
+msgstr "Matomo-látogatói adatok"
+
+#: class/class-mainwp-piwik.php:1164
+msgid "Matomo Settings"
+msgstr "Matomo-beállítások"
+
+#: class/class-mainwp-piwik.php:1383
 msgid "This: "
 msgstr "Aktuális: "
 
-#: class/class-mainwp-piwik.php:549
+#: class/class-mainwp-piwik.php:1386
 msgid "Previous: "
 msgstr "Előző: "
 
-#: class/class-mainwp-piwik.php:620
+#. translators: %s: link to the Matomo extension setup documentation.
+#: class/class-mainwp-piwik.php:1474
+msgid "No Matomo data yet"
+msgstr "Még nincsenek Matomo-adatok"
+
+#. translators: %s: link to the Matomo extension setup documentation.
+#: class/class-mainwp-piwik.php:1474
 #, php-format
 msgid ""
-"%sNo Matomo data available.%s Please ensure you have connected your Matomo "
-"account and %sassigned properties%s to your MainWP sites to view analytics "
-"data."
-msgstr ""
-"%sNem érhető el Matomo-adat.%s Kérjük, győződjön meg róla, hogy "
-"csatlakoztatta a Matomo-fiókját, és %shozzárendelte a tulajdonokat%s a "
-"MainWP webhelyeihez az analitikai adatok megtekintéséhez."
+"Connect your Matomo account and assign Matomo properties to your MainWP "
+"sites to start seeing analytics data. %s"
+msgstr "Kapcsolja össze Matomo-fiókját, és rendelje hozzá a Matomo-tulajdonságokat a MainWP-webhelyeihez, hogy megtekinthesse az analitikai adatokat. %s"
 
-#: class/class-mainwp-piwik.php:652
+#. translators: %s: link to the Matomo extension setup documentation.
+#: class/class-mainwp-piwik.php:1474
+msgid "Learn how to set it up."
+msgstr "Tudja meg, hogyan állíthatja be."
+
+#: class/class-mainwp-piwik.php:1501
 msgid "Select Graph"
 msgstr "Válasszon grafikont"
 
-#: class/class-mainwp-piwik.php:666
+#: class/class-mainwp-piwik.php:1512
+msgid "Fetch Latest Data"
+msgstr "Legfrissebb adatok lekérése"
+
+#: class/class-mainwp-piwik.php:1519
 msgid "Select website"
 msgstr "Válasszon webhelyet"
 
-#: class/class-mainwp-piwik.php:668
+#: class/class-mainwp-piwik.php:1521
 msgid "No website"
 msgstr "Nincs webhely"
 
-#: mainwp-piwik-extension.php:170
+#. translators: 1: table name, 2: the columns the duplicate rows share.
+#: mainwp-piwik-extension.php:221
+#, php-format
+msgid ""
+"In the %1$s table, compare the rows that share the same %2$s, keep one row "
+"from each group and delete the others."
+msgstr "A(z) %1$s táblázatban hasonlítsa össze az azonos %2$s értékű sorokat, minden csoportból tartson meg egy sort, a többit pedig törölje."
+
+#: mainwp-piwik-extension.php:223
+msgid "and"
+msgstr "és"
+
+#. translators: %s: number of duplicate row groups.
+#: mainwp-piwik-extension.php:228
+#, php-format
+msgid ""
+"MainWP Matomo could not repair %s group of duplicate rows in its tables, so "
+"analytics stay unavailable until it is fixed manually."
+msgid_plural ""
+"MainWP Matomo could not repair %s groups of duplicate rows in its tables, so"
+" analytics stay unavailable until they are fixed manually."
+msgstr[0] "A MainWP Matomo nem tudta kijavítani a tábláiban található duplikált sorok %s csoportját, ezért az analitika nem érhető el, amíg manuálisan ki nem javítja a hibát."
+msgstr[1] "A MainWP Matomo nem tudta kijavítani a tábláiban található duplikált sorok %s csoportját, ezért az analitika nem érhető el, amíg manuálisan ki nem javítja a hibákat."
+
+#. translators: %s: number of further sites not listed.
+#: mainwp-piwik-extension.php:268
+#, php-format
+msgid "and %s more site"
+msgid_plural "and %s more sites"
+msgstr[0] "és még %s webhely"
+msgstr[1] "és még %s webhely"
+
+#. translators: %s: comma-separated list of site names.
+#: mainwp-piwik-extension.php:272
+#, php-format
+msgid ""
+"The child site settings were saved, but MainWP Matomo did not assign the "
+"requested Matomo property to these sites because another site already uses "
+"it: %s. Each Matomo property can report for one site. The previous Matomo "
+"selection remains unchanged; choose another available property if you want "
+"to change it."
+msgstr "A gyermekwebhelyek beállításait elmentettük, de a MainWP Matomo nem rendelte hozzá a kért Matomo-tulajdonságot ezekhez a webhelyekhez, mert egy másik webhely már használja: %s. Minden Matomo-tulajdonság csak egy webhelyhez rendelhető hozzá. A korábbi Matomo-kijelölés változatlan marad; ha módosítani szeretné, válasszon egy másik elérhető tulajdonságot."
+
+#: mainwp-piwik-extension.php:284
+msgid ""
+"Matomo answered with no sites for the saved API token, so MainWP Matomo kept"
+" the last list of Matomo properties. If the token lost access to your Matomo"
+" sites, paste a current token into the API token field in the Matomo "
+"settings and click Save Settings."
+msgstr "A Matomo nem adott vissza webhelyeket a mentett API-jogkivonathoz, ezért a MainWP Matomo megtartotta a Matomo-tulajdonságok legutóbbi listáját. Ha a jogkivonat már nem biztosít hozzáférést a Matomo-webhelyeihez, illesszen be egy aktuális jogkivonatot az API-jogkivonat mezőbe a Matomo beállításaiban, majd kattintson a beállítások mentése gombra."
+
+#: mainwp-piwik-extension.php:284 mainwp-piwik-extension.php:294
+#: mainwp-piwik-extension.php:307 mainwp-piwik-extension.php:321
+msgid "Open the Matomo settings"
+msgstr "A Matomo beállításainak megnyitása"
+
+#: mainwp-piwik-extension.php:294
+msgid ""
+"MainWP Matomo could not import the saved Matomo site list and site mappings "
+"after the update, so some sites do not report to Matomo yet. In the Matomo "
+"settings, click Save Settings to load the site list from Matomo again."
+msgstr "A MainWP Matomo nem tudta importálni a mentett Matomo-webhelylistát és a webhely-hozzárendeléseket a frissítés után, ezért néhány webhely még nem küld adatokat a Matomónak. Kattintson a Matomo beállításaiban a beállítások mentése gombra a webhelylista újbóli betöltéséhez a Matomóból."
+
+#: mainwp-piwik-extension.php:307
+msgid ""
+"MainWP Matomo paused analytics because the saved Matomo connection could not"
+" be moved to secure storage. In the Matomo settings, enter the https:// "
+"address of your Matomo, then click Save Settings. If Matomo is still on the "
+"same server and in the same folder, leave the API token blank to keep the "
+"saved token."
+msgstr "A MainWP Matomo szüneteltette az analitikát, mert a mentett Matomo-kapcsolatot nem sikerült biztonságos tárhelyre áthelyezni. Adja meg a Matomo https:// kezdetű címét a Matomo beállításaiban, majd kattintson a beállítások mentése gombra. Ha a Matomo továbbra is ugyanazon a szerveren és ugyanabban a mappában van, hagyja üresen az API-jogkivonatot a mentett jogkivonat megtartásához."
+
+#: mainwp-piwik-extension.php:321
+msgid ""
+"MainWP Matomo paused analytics because a change to the Matomo connection did"
+" not finish saving, so the saved API token may not match the saved Matomo "
+"URL. In the Matomo settings, check the Matomo URL, paste the API token into "
+"the API token field, and click Save Settings."
+msgstr "A MainWP Matomo szüneteltette az analitikát, mert a Matomo-kapcsolat módosításának mentése nem fejeződött be, ezért előfordulhat, hogy a mentett API-jogkivonat nem a mentett Matomo URL-címhez tartozik. Ellenőrizze a Matomo URL-címét a Matomo beállításaiban, illessze be az API-jogkivonatot az API-jogkivonat mezőbe, majd kattintson a beállítások mentése gombra."
+
+#: mainwp-piwik-extension.php:327
 #, php-format
 msgid ""
 "requires %1$sMainWP Dashboard Plugin%2$s to be activated in order to work. "
@@ -469,3 +750,67 @@ msgid ""
 msgstr ""
 "a működéshez a %1$sMainWP Dashboard Plugin%2$s aktiválása szükséges. Kérjük,"
 " először telepítse és aktiválja a %3$sMainWP Dashboard Plugin%4$s."
+
+#~ msgid "Connection to your Matomo dashboard could not be established"
+#~ msgstr "Nem sikerült kapcsolódni a Matomo vezérlőpulthoz"
+
+#~ msgid "Error "
+#~ msgstr "Hiba "
+
+#~ msgid ""
+#~ "Matomo dashboard URL and Auth toke are required. Please enter valid values "
+#~ "and try again."
+#~ msgstr ""
+#~ "A Matomo vezérlőpult URL és az Auth toke megadása kötelező. Kérjük, adjon "
+#~ "meg érvényes értékeket, majd próbálja újra."
+
+#~ msgid "Undefined error occurred. Please, try again."
+#~ msgstr "Ismeretlen hiba történt. Kérjük, próbálja meg újra."
+
+#~ msgid "Matomo properties are empty or the authentication info is incorrect."
+#~ msgstr "A Matomo-tulajdonok üresek, vagy a hitelesítési adatok helytelenek."
+
+#~ msgid "Loading"
+#~ msgstr "Betöltés"
+
+#, php-format
+#~ msgid ""
+#~ "To hide or show a widget, click the Cog (%s) icon and select options from "
+#~ "\"Show widgets\""
+#~ msgstr ""
+#~ "Egy widget elrejtéséhez vagy megjelenítéséhez kattintson a Fogaskerék (%s) "
+#~ "ikonra, és válasszon a \"Widgetek megjelenítése\" lehetőségei közül"
+
+#~ msgid "Connect Matomo (formerly Piwik) Dashboard"
+#~ msgstr "Matomo (korábban Piwik) vezérlőpult csatlakoztatása"
+
+#~ msgid "Matomo (formerly Piwik) dashboard URL"
+#~ msgstr "Matomo (korábban Piwik) vezérlőpult URL"
+
+#~ msgid "API authentication token"
+#~ msgstr "API hitelesítési token"
+
+#~ msgid "Matomo (formerly Piwik) Extension Settings"
+#~ msgstr "Matomo (korábban Piwik) bővítmény beállításai"
+
+#~ msgid "Display interval"
+#~ msgstr "Megjelenítési intervallum"
+
+#~ msgid "Data refresh frequency"
+#~ msgstr "Adatfrissítés gyakorisága"
+
+#~ msgid "Verify SSL certificate"
+#~ msgstr "SSL-tanúsítvány ellenőrzése"
+
+#~ msgid "Refresh Data"
+#~ msgstr "Adatok frissítése"
+
+#, php-format
+#~ msgid ""
+#~ "%sNo Matomo data available.%s Please ensure you have connected your Matomo "
+#~ "account and %sassigned properties%s to your MainWP sites to view analytics "
+#~ "data."
+#~ msgstr ""
+#~ "%sNem érhető el Matomo-adat.%s Kérjük, győződjön meg róla, hogy "
+#~ "csatlakoztatta a Matomo-fiókját, és %shozzárendelte a tulajdonokat%s a "
+#~ "MainWP webhelyeihez az analitikai adatok megtekintéséhez."

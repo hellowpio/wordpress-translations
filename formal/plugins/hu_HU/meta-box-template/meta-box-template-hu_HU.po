@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: Meta Box Template 1.2.4\n"
+"Project-Id-Version: MB Template 1.2.5\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T18:09:57+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -16,24 +16,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: sinann-po-translator\n"
-"X-Plugin-Name: Meta Box Template\n"
+"X-Plugin-Name: MB Template\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.2.4\n"
+"X-Plugin-Version: 1.2.5\n"
 
 #. Plugin Name of the plugin
-#: meta-box-template.php src/Settings.php:25
-msgid "Meta Box Template"
-msgstr "Meta Box Template"
+#: meta-box-template.php
+msgid "MB Template"
+msgstr "MB-sablonminta"
 
 #. Plugin URI of the plugin
 #: meta-box-template.php
-msgid "http://metabox.io/plugins/meta-box-template"
-msgstr "http://metabox.io/plugins/meta-box-template"
+msgid "http://metabox.io/plugins/meta-box-template/"
+msgstr "http://metabox.io/plugins/meta-box-template/"
 
 #. Description of the plugin
 #: meta-box-template.php
-msgid "Configure meta boxes easily via YAML templates."
-msgstr "Meta boxok egyszerű beállítása YAML-sablonok segítségével."
+msgid "Configure field groups easily with YAML templates."
+msgstr "Mezőcsoportok egyszerű beállítása YAML-sablonokkal."
 
 #. Author of the plugin
 #: meta-box-template.php
@@ -49,12 +49,9 @@ msgstr "https://metabox.io"
 #: src/Register.php:38
 #, php-format
 msgid ""
-"Your Meta Box Template input or files contain invalid YAML for Meta Box. "
-"Please go to the <a href=\"%s\">plugin settings page</a> and fix it."
-msgstr ""
-"A Meta Box Template bemenete vagy fájljai érvénytelen YAML-t tartalmaznak a "
-"Meta Box számára. Kérjük, lépjen a <a href=\"%s\">bővítmény beállítási "
-"oldalára</a>, és javítsa ki."
+"Your input or files contain invalid YAML for Meta Box. Please go to the <a "
+"href=\"%s\">plugin settings page</a> and fix it."
+msgstr "A bemenet vagy a fájlok hibás YAML-t tartalmaznak a Meta Boxhoz. Kérjük, lépjen a <a href=\"%s\">bővítmény beállítási oldalára</a>, és javítsa ki a hibát."
 
 #: src/Settings.php:18
 msgid "Enter template:"
@@ -64,7 +61,7 @@ msgstr "Adja meg a sablont:"
 msgid "Or specify path to config file(s):"
 msgstr "Vagy adja meg a konfigurációs fájl(ok) elérési útját:"
 
-#: src/Settings.php:26
+#: src/Settings.php:25 src/Settings.php:26
 msgid "Template"
 msgstr "Sablon"
 
@@ -74,10 +71,7 @@ msgstr "Sablon"
 msgid ""
 "SYNTAX ERROR: Your input or files contain invalid YAML for Meta Box. Please "
 "<a href=\"%s\" target=\"_blank\">follow the documentation</a> and try again."
-msgstr ""
-"SZINTAXISHIBA: A bemenet vagy a fájlok érvénytelen YAML-t tartalmaznak a "
-"Meta Box számára. Kérjük, <a href=\"%s\" target=\"_blank\">kövesse a "
-"dokumentációt</a>, és próbálja újra."
+msgstr "SZINTAXISHIBA: A bemenet vagy a fájlok hibás YAML-t tartalmaznak a Meta Boxhoz. Kérjük, <a href=\"%s\" target=\"_blank\">kövesse a dokumentációt</a>, és próbálja újra."
 
 #: src/Settings.php:77
 msgid "Save Changes"
@@ -87,9 +81,7 @@ msgstr "Változások mentése"
 #: src/Settings.php:93
 #, php-format
 msgid "Supports YAML format. See <a href=\"%s\" target=\"_blank\">documentation</a>."
-msgstr ""
-"Támogatja a YAML formátumot. Lásd a <a href=\"%s\" "
-"target=\"_blank\">dokumentációt</a>."
+msgstr "Tekintse meg a <a href=\"%s\" target=\"_blank\">dokumentációt</a>."
 
 #: src/Settings.php:107
 msgid ""
@@ -115,9 +107,7 @@ msgstr "Elérési út a <code>wp-content/plugins</code> könyvtárhoz"
 msgid ""
 "Path to <code>wp-content/themes</code> directory. Same as the <a href=\"%s\""
 " target=\"_blank\">get_theme_root()</a> function."
-msgstr ""
-"Elérési út a <code>wp-content/themes</code> könyvtárhoz. Megegyezik a <a "
-"href=\"%s\" target=\"_blank\">get_theme_root()</a> függvénnyel."
+msgstr "A <code>wp-content/themes</code> könyvtár elérési útja. Megegyezik a <a href=\"%s\" target=\"_blank\">get_theme_root()</a> függvény által visszaadott elérési úttal."
 
 #. Translators: %s - function URL.
 #: src/Settings.php:136
@@ -125,9 +115,7 @@ msgstr ""
 msgid ""
 "Path to current theme directory. Same as the <a href=\"%s\" "
 "target=\"_blank\">get_template_directory()</a> function."
-msgstr ""
-"Elérési út az aktuális téma könyvtárához. Megegyezik a <a href=\"%s\" "
-"target=\"_blank\">get_template_directory()</a> függvénnyel."
+msgstr "Elérési út az aktuális sablon könyvtárához. Megegyezik a <a href=\"%s\" target=\"_blank\">get_template_directory()</a> függvény által visszaadott elérési úttal."
 
 #. Translators: %s - function URL.
 #: src/Settings.php:148
@@ -135,6 +123,22 @@ msgstr ""
 msgid ""
 "Path to current child theme directory. Same as the <a href=\"%s\" "
 "target=\"_blank\">get_stylesheet_directory()</a> function."
-msgstr ""
-"Elérési út az aktuális gyermek téma könyvtárához. Megegyezik a <a "
-"href=\"%s\" target=\"_blank\">get_stylesheet_directory()</a> függvénnyel."
+msgstr "Elérési út az aktuális gyermeksablon könyvtárához. Megegyezik a <a href=\"%s\" target=\"_blank\">get_stylesheet_directory()</a> függvény által visszaadott elérési úttal."
+
+#~ msgid "Meta Box Template"
+#~ msgstr "Meta Box Template"
+
+#~ msgid "http://metabox.io/plugins/meta-box-template"
+#~ msgstr "http://metabox.io/plugins/meta-box-template"
+
+#~ msgid "Configure meta boxes easily via YAML templates."
+#~ msgstr "Meta boxok egyszerű beállítása YAML-sablonok segítségével."
+
+#, php-format
+#~ msgid ""
+#~ "Your Meta Box Template input or files contain invalid YAML for Meta Box. "
+#~ "Please go to the <a href=\"%s\">plugin settings page</a> and fix it."
+#~ msgstr ""
+#~ "A Meta Box Template bemenete vagy fájljai érvénytelen YAML-t tartalmaznak a "
+#~ "Meta Box számára. Kérjük, lépjen a <a href=\"%s\">bővítmény beállítási "
+#~ "oldalára</a>, és javítsa ki."

@@ -1,0 +1,3352 @@
+# Copyright (C) 2026 HelloWP
+# This file is distributed under the same license as the Imagify (HelloPack) plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Imagify (HelloPack) 2.3.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/imagify-hellopack\n"
+"POT-Creation-Date: 2026-10-31T10:19:07+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: imagify\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: Imagify (HelloPack)\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 2.3.4\n"
+
+#. Plugin Name of the plugin
+#: imagify-hellopack.php
+msgid "Imagify (HelloPack)"
+msgstr "Imagify (HelloPack)"
+
+#. Plugin URI of the plugin
+#. translators: Plugin URI of the plugin/theme
+#: imagify-hellopack.php inc/functions/common.php:261
+msgid "https://wordpress.org/plugins/imagify/"
+msgstr "https://wordpress.org/plugins/imagify/"
+
+#. Description of the plugin
+#: imagify-hellopack.php
+msgid ""
+"Dramatically reduce image file sizes without losing quality, make your "
+"website load faster, boost your SEO and save money on your bandwidth using "
+"Imagify, the new most advanced image optimization tool."
+msgstr "Csökkentsd drámaian a képfájlok méretét minőségromlás nélkül, gyorsítsd fel honlapod betöltését, növeld SEO-teljesítményedet, és takaríts meg sávszélesség-költséget az Imagify segítségével, az új, legfejlettebb képoptimalizáló eszközzel."
+
+#. Author of the plugin
+#: imagify-hellopack.php
+msgid "HelloWP"
+msgstr "HelloWP"
+
+#. Author URI of the plugin
+#: imagify-hellopack.php
+msgid "https://hellowp.io"
+msgstr "https://hellowp.io"
+
+#: classes/Abilities/AbstractAbility.php:154
+msgid ""
+"Your Imagify API key is invalid or missing. Update it in the Imagify "
+"settings before retrying."
+msgstr "Az Imagify API-kulcsod hibás vagy hiányzik. Újrapróbálkozás előtt frissítsd az Imagify beállításaiban."
+
+#: classes/Abilities/AbstractAbility.php:168
+msgid ""
+"Your Imagify quota is exhausted. Wait for the next reset date or upgrade "
+"your plan to continue."
+msgstr "Kimerítetted az Imagify-keretedet. Várd meg a keret következő alaphelyzetbe állításának dátumát, vagy válts magasabb csomagra a folytatáshoz."
+
+#. translators: 1: number of units about to be processed, 2: total number of
+#. units, 3: unit label
+#: classes/Abilities/AbstractAbility.php:217
+#, php-format
+msgid ""
+"This action will process %1$d of %2$d %3$s. Add \"confirm\": true to the "
+"same call to proceed."
+msgstr "Ez a művelet a teljes mennyiségből %1$d elemet dolgoz fel (%2$d %3$s). A folytatáshoz add hozzá ezt ugyanahhoz a híváshoz: „confirm”: true."
+
+#. translators: 1: number of units about to be processed, 2: unit label
+#: classes/Abilities/AbstractAbility.php:224
+#, php-format
+msgid ""
+"This action will process %1$d %2$s. Add \"confirm\": true to the same call "
+"to proceed."
+msgstr "Ez a művelet %1$d %2$s elemet dolgoz fel. A folytatáshoz add hozzá ezt ugyanahhoz a híváshoz: „confirm”: true."
+
+#. translators: 1: number of units about to be consumed, 2: total number of
+#. units, 3: unit label
+#: classes/Abilities/AbstractAbility.php:232
+#, php-format
+msgid ""
+"This action will consume Imagify quota: %1$d of %2$d %3$s. Add \"confirm\": "
+"true to the same call to proceed."
+msgstr "Ez a művelet az Imagify-keretből %1$d egységet használ fel; a teljes keret %2$d %3$s. A folytatáshoz add hozzá ezt ugyanahhoz a híváshoz: „confirm”: true."
+
+#. translators: 1: number of units about to be consumed, 2: unit label
+#: classes/Abilities/AbstractAbility.php:239
+#, php-format
+msgid ""
+"This action will consume Imagify quota: %1$d %2$s. Add \"confirm\": true to "
+"the same call to proceed."
+msgstr "Ez a művelet %1$d %2$s egységet használ fel az Imagify-keretedből. A folytatáshoz add hozzá ezt ugyanahhoz a híváshoz: „confirm”: true."
+
+#: classes/Abilities/BulkOptimize.php:70
+msgid "Bulk optimize"
+msgstr "Tömeges optimalizálás"
+
+#: classes/Abilities/BulkOptimize.php:71
+msgid ""
+"Schedule a bulk image optimization run for the WordPress media library or "
+"custom folders."
+msgstr "Tömeges képtömörítési folyamatot ütemez a WordPress médiatárában vagy egyéni mappákban."
+
+#: classes/Abilities/BulkOptimize.php:78
+msgid ""
+"Optimization context: \"wp\" for the WordPress media library or \"custom-"
+"folders\" for custom folder sources."
+msgstr "Optimalizálási környezet: „wp” a WordPress médiatárához vagy „custom-folders” az egyéni mappákhoz."
+
+#: classes/Abilities/BulkOptimize.php:83
+msgid ""
+"Optimization level: 0 (normal), 1 (aggressive), or 2 (ultra). Defaults to "
+"the global Imagify setting."
+msgstr "Optimalizálási szint: 0 (normál), 1 (agresszív) vagy 2 (ultra). Alapértelmezés szerint az Imagify globális beállítását használja."
+
+#: classes/Abilities/BulkOptimize.php:89
+#: classes/Abilities/GenerateMissingNextgen.php:94
+#: classes/Abilities/OptimizeMedia.php:74
+msgid ""
+"Set to true to execute after reviewing the credit-consumption preview "
+"returned by a prior call without this flag."
+msgstr "Állítsd true értékre, ha az előző, ezt a jelzőt nem tartalmazó hívásban visszakapott keretfelhasználási előnézet áttekintése után szeretnéd végrehajtani."
+
+#: classes/Abilities/BulkOptimize.php:100
+msgid ""
+"Result status: \"scheduled\", \"error\", \"confirmation_required\", "
+"\"insufficient_quota\", or \"invalid_api_key\"."
+msgstr "Az eredmény állapota: „scheduled”, „error”, „confirmation_required”, „insufficient_quota” vagy „invalid_api_key”."
+
+#: classes/Abilities/BulkOptimize.php:105
+msgid "The requested optimization context, echoed back."
+msgstr "A visszaadott, kért optimalizálási környezet."
+
+#: classes/Abilities/BulkOptimize.php:109
+#: classes/Abilities/OptimizeMedia.php:101
+#: classes/Abilities/RestoreMedia.php:58
+msgid "Human-readable error message on failure, or null on success."
+msgstr "Közérthető hibaüzenet sikertelenség esetén, siker esetén pedig null."
+
+#: classes/Abilities/BulkOptimize.php:165
+msgid "unoptimized images in custom folders"
+msgstr "optimalizálatlan képek az egyéni mappákban"
+
+#: classes/Abilities/BulkOptimize.php:169
+msgid "unoptimized images in the WordPress media library"
+msgstr "optimalizálatlan képek a WordPress médiatárában"
+
+#: classes/Abilities/GenerateMissingNextgen.php:86
+#: views/part-settings-webp.php:195
+msgid "Generate missing next-gen versions"
+msgstr "Hiányzó új generációs verziók létrehozása"
+
+#: classes/Abilities/GenerateMissingNextgen.php:87
+msgid ""
+"Queues generation of missing next-gen (WebP/AVIF) versions for all optimized"
+" media. Runs asynchronously via Action Scheduler."
+msgstr "Sorba állítja a hiányzó új generációs (WebP/AVIF) verziók létrehozását az összes optimalizált médiatartalomhoz. Az Action Scheduler segítségével aszinkron módon fut."
+
+#: classes/Abilities/GenerateMissingNextgen.php:166
+msgid "optimized images missing a next-gen version"
+msgstr "új generációs verzióval nem rendelkező optimalizált képek"
+
+#: classes/Abilities/GenerateMissingNextgen.php:243
+msgid "Imagify account is over quota or the API key is invalid."
+msgstr "Az Imagify-fiók kerete kimerült, vagy az API-kulcs hibás."
+
+#: classes/Abilities/GenerateMissingNextgen.php:245
+msgid "No backup available; next-gen versions cannot be generated."
+msgstr "Nem áll rendelkezésre biztonsági másolat; nem hozhatók létre új generációs verziók."
+
+#: classes/Abilities/GetAccount.php:50
+msgid "Get Imagify account status"
+msgstr "Imagify-fiók állapotának lekérése"
+
+#: classes/Abilities/GetAccount.php:51
+msgid "Returns account quota, plan details, and API key validity."
+msgstr "Visszaadja a fiók keretét, a csomag részleteit és az API-kulcs érvényességét."
+
+#: classes/Abilities/GetMediaStatus.php:54
+msgid "Get Media Status"
+msgstr "Médiatartalom állapotának lekérése"
+
+#: classes/Abilities/GetMediaStatus.php:55
+msgid ""
+"Retrieve the optimization status and metrics for a WordPress media library "
+"attachment."
+msgstr "Lekéri egy WordPress-médiatári csatolmány optimalizálási állapotát és mutatóit."
+
+#: classes/Abilities/GetMediaStatus.php:62
+msgid ""
+"The WordPress attachment ID. Provide media_filename or media_url instead "
+"when the ID is unknown."
+msgstr "A WordPress-csatolmány ID-je. Ha az ID ismeretlen, helyette add meg a media_filename vagy a media_url értékét."
+
+#: classes/Abilities/GetMediaStatus.php:71
+msgid "Optimization status: \"success\", \"error\", or \"unoptimized\"."
+msgstr "Optimalizálási állapot: „success”, „error” vagy „unoptimized”."
+
+#: classes/Abilities/GetMediaStatus.php:76
+msgid "0 = lossless, 1 = aggressive, 2 = ultra. Null when not optimized."
+msgstr "0 = veszteségmentes, 1 = agresszív, 2 = ultra. Ha nincs optimalizálva, null."
+
+#: classes/Abilities/GetMediaStatus.php:80
+msgid "File size in bytes before optimization."
+msgstr "A fájl optimalizálás előtti mérete bájtban."
+
+#: classes/Abilities/GetMediaStatus.php:84
+msgid "File size in bytes after optimization."
+msgstr "A fájl optimalizálás utáni mérete bájtban."
+
+#: classes/Abilities/GetMediaStatus.php:88
+msgid "True when a WebP version of the full-size image has been generated."
+msgstr "Igaz, ha létrejött a teljes méretű képből egy WebP-verzió."
+
+#: classes/Abilities/GetMediaStatus.php:92
+msgid "True when an AVIF version of the full-size image has been generated."
+msgstr "Igaz, ha létrejött a teljes méretű képből egy AVIF-verzió."
+
+#: classes/Abilities/GetMediaStatus.php:96
+msgid "Human-readable error message when status is \"error\". Null otherwise."
+msgstr "Ember által is érthető hibaüzenet, ha az állapot „error”. Egyébként null."
+
+#: classes/Abilities/GetNextgenCoverage.php:69
+msgid "Get next-gen coverage"
+msgstr "Új generációs verziók lefedettségének lekérése"
+
+#: classes/Abilities/GetNextgenCoverage.php:70
+msgid ""
+"Returns the number of optimized images missing a next-gen version and the "
+"configured next-gen format."
+msgstr "Visszaadja az új generációs verzióval nem rendelkező optimalizált képek darabszámát és a beállított új generációs formátumot."
+
+#: classes/Abilities/GetSettings.php:50
+msgid "Get Imagify settings"
+msgstr "Imagify-beállítások lekérése"
+
+#: classes/Abilities/GetSettings.php:51
+msgid "Returns all Imagify configuration options and their current values."
+msgstr "Visszaadja az összes Imagify-konfigurációs opciót és azok aktuális értékét."
+
+#: classes/Abilities/GetStats.php:44
+msgid "Get Imagify optimization stats"
+msgstr "Imagify optimalizálási statisztikáinak lekérése"
+
+#: classes/Abilities/GetStats.php:45
+msgid "Returns optimization statistics for WP media and custom folders."
+msgstr "Visszaadja a WP-médiatár és az egyéni mappák optimalizálási statisztikáit."
+
+#: classes/Abilities/MediaResolver.php:49
+msgid ""
+"The media file name, for example \"hero-banner.jpg\". Use instead of "
+"media_id when only the file name is known."
+msgstr "A médiafájl neve, például „hero-banner.jpg”. Akkor használd a media_id helyett, ha csak a fájlnév ismert."
+
+#: classes/Abilities/MediaResolver.php:53
+msgid ""
+"The absolute URL of the media. Use instead of media_id when only the URL is "
+"known."
+msgstr "A média abszolút URL-je. Akkor használd a media_id helyett, ha csak az URL ismert."
+
+#: classes/Abilities/MediaResolver.php:82
+msgid ""
+"Provide one of media_id, media_url, or media_filename to identify the media."
+msgstr "Add meg a media_id, a media_url vagy a media_filename egyikét a média azonosításához."
+
+#. translators: %s: media URL provided by the caller.
+#: classes/Abilities/MediaResolver.php:120
+#, php-format
+msgid "No media in the library matches the URL \"%s\"."
+msgstr "A médiatárban nincs olyan média, amelynek URL-je „%s”."
+
+#: classes/Abilities/MediaResolver.php:192
+msgid "The media_filename provided is not a valid file name."
+msgstr "A megadott media_filename nem érvényes fájlnév."
+
+#. translators: %s: media file name provided by the caller.
+#: classes/Abilities/MediaResolver.php:235
+#, php-format
+msgid "No media in the library is named \"%s\"."
+msgstr "A médiatárban nincs „%s” nevű média."
+
+#. translators: 1: media file name provided by the caller, 2: number of
+#. attachments listed.
+#: classes/Abilities/MediaResolver.php:246
+#, php-format
+msgid ""
+"More than %2$d media are named \"%1$s\". Retry with media_id, or with the "
+"full path such as \"2026/08/%1$s\"."
+msgstr "Több mint %2$d média neve „%1$s”. Próbáld újra a media_id megadásával, vagy a teljes elérési úttal, például így: „2026/08/%1$s”."
+
+#. translators: 1: media file name provided by the caller, 2: comma-separated
+#. list of attachment IDs.
+#: classes/Abilities/MediaResolver.php:258
+#, php-format
+msgid ""
+"Several media are named \"%1$s\" (IDs: %2$s). Retry with media_id set to the"
+" one you want."
+msgstr "Több média neve „%1$s” (ID-k: %2$s). Próbáld újra a kívánt media_id megadásával."
+
+#: classes/Abilities/OptimizeMedia.php:53
+msgid ""
+"The WordPress attachment ID to optimize. Provide media_filename or media_url"
+" instead when the ID is unknown."
+msgstr "Az optimalizálandó WordPress-csatolmány ID-je. Ha nem tudod az ID-t, add meg inkább a media_filename vagy a media_url értékét."
+
+#: classes/Abilities/OptimizeMedia.php:60
+msgid "Optimize media"
+msgstr "Média optimalizálása"
+
+#: classes/Abilities/OptimizeMedia.php:61
+msgid "Optimizes a specific media on-demand using Imagify."
+msgstr "Egy adott média igény szerinti optimalizálása az Imagify segítségével."
+
+#: classes/Abilities/OptimizeMedia.php:68
+msgid ""
+"Optimization level: 0 (normal), 1 (aggressive), or 2 (ultra). If omitted, "
+"uses the global setting."
+msgstr "Optimalizálási szint: 0 (normál), 1 (agresszív) vagy 2 (ultra). Ha nincs megadva, a globális beállítást használja."
+
+#: classes/Abilities/OptimizeMedia.php:84
+msgid ""
+"Result status: \"success\", \"error\", \"confirmation_required\", "
+"\"insufficient_quota\", or \"invalid_api_key\"."
+msgstr "Az eredmény állapota: „success”, „error”, „confirmation_required”, „insufficient_quota” vagy „invalid_api_key”."
+
+#: classes/Abilities/OptimizeMedia.php:89
+msgid "Original file size in bytes before optimization, or null on error."
+msgstr "Az eredeti fájl mérete bájtban az optimalizálás előtt, hiba esetén null."
+
+#: classes/Abilities/OptimizeMedia.php:93
+msgid ""
+"Optimized file size in bytes after optimization, or null on error or if not "
+"yet available."
+msgstr "Az optimalizált fájl mérete bájtban az optimalizálás után, hiba esetén vagy ha még nem érhető el, null."
+
+#: classes/Abilities/OptimizeMedia.php:97
+msgid "Percentage savings, or null on error."
+msgstr "A megtakarítás százalékos aránya, hiba esetén null."
+
+#: classes/Abilities/RestoreMedia.php:32
+msgid "Restore media"
+msgstr "Média visszaállítása"
+
+#: classes/Abilities/RestoreMedia.php:33
+msgid ""
+"Restores an optimized media to its original state using the stored backup "
+"file."
+msgstr "Visszaállítja az optimalizált médiafájlt az eredeti állapotába a tárolt biztonságimásolat-fájl segítségével."
+
+#: classes/Abilities/RestoreMedia.php:40
+msgid ""
+"The WordPress attachment ID to restore. Provide media_filename or media_url "
+"instead when the ID is unknown."
+msgstr "A visszaállítandó WordPress-csatolmány ID-je. Ha nem tudod az ID-t, add meg inkább a media_filename vagy a media_url értékét."
+
+#: classes/Abilities/RestoreMedia.php:49
+msgid "Result status: \"success\" or \"error\"."
+msgstr "Az eredmény állapota: „success” vagy „error”."
+
+#: classes/Abilities/RestoreMedia.php:54
+msgid "Restored original file size in bytes, or null on error."
+msgstr "A visszaállított eredeti fájl mérete bájtban, hiba esetén null."
+
+#: classes/Abilities/UpdateSettings.php:50
+msgid "Update Imagify settings"
+msgstr "Imagify beállításainak frissítése"
+
+#: classes/Abilities/UpdateSettings.php:51
+msgid ""
+"Updates one or more Imagify configuration options. Only supplied keys are "
+"changed; others remain unchanged."
+msgstr "Egy vagy több Imagify-konfigurációs opciót frissít. Csak a megadott kulcsok változnak; a többi változatlan marad."
+
+#: classes/Abilities/UpdateSettings.php:69
+msgid ""
+"Imagify API key. Cannot be updated when IMAGIFY_API_KEY constant is defined."
+msgstr "Imagify API-kulcs. Nem frissíthető, ha az IMAGIFY_API_KEY konstans definiálva van."
+
+#: classes/Abilities/UpdateSettings.php:75
+msgid "Optimization aggressiveness: 0 = normal, 1 = aggressive, 2 = ultra."
+msgstr "Optimalizálás erőssége: 0 = normál, 1 = agresszív, 2 = ultra."
+
+#: classes/Abilities/UpdateSettings.php:80
+msgid "Enable lossless compression (0 = off, 1 = on)."
+msgstr "Veszteségmentes tömörítés bekapcsolása (0 = ki, 1 = be)."
+
+#: classes/Abilities/UpdateSettings.php:85
+msgid "Automatically optimize images on upload (0 = off, 1 = on)."
+msgstr "Képek automatikus optimalizálása feltöltéskor (0 = ki, 1 = be)."
+
+#: classes/Abilities/UpdateSettings.php:90
+msgid "Keep a backup of original images (0 = off, 1 = on)."
+msgstr "Biztonsági másolat készítése az eredeti képekről (0 = ki, 1 = be)."
+
+#: classes/Abilities/UpdateSettings.php:95
+msgid "Resize images wider than resize_larger_w (0 = off, 1 = on)."
+msgstr "A resize_larger_w értéknél szélesebb képek átméretezése (0 = ki, 1 = be)."
+
+#: classes/Abilities/UpdateSettings.php:99
+msgid "Maximum image width in pixels when resize_larger is enabled."
+msgstr "A képek maximális szélessége pixelben, ha a resize_larger be van kapcsolva."
+
+#: classes/Abilities/UpdateSettings.php:104
+msgid "Serve next-gen images to supported browsers (0 = off, 1 = on)."
+msgstr "Következő generációs képek megjelenítése az azokat támogató böngészőkben (0 = ki, 1 = be)."
+
+#: classes/Abilities/UpdateSettings.php:109
+msgid "Delivery method for next-gen images: picture element or URL rewrite."
+msgstr "A következő generációs képek megjelenítési módja: picture elem vagy URL-átírás."
+
+#: classes/Abilities/UpdateSettings.php:114
+msgid "Serve WebP images to supported browsers (0 = off, 1 = on)."
+msgstr "WebP-képek megjelenítése az azokat támogató böngészőkben (0 = ki, 1 = be)."
+
+#: classes/Abilities/UpdateSettings.php:119
+msgid "Delivery method for WebP images: picture element or URL rewrite."
+msgstr "A WebP-képek megjelenítési módja: picture elem vagy URL-átírás."
+
+#: classes/Abilities/UpdateSettings.php:123
+msgid "CDN base URL for serving optimized images."
+msgstr "Optimalizált képek kiszolgálására szolgáló CDN-alap-URL."
+
+#: classes/Abilities/UpdateSettings.php:127
+msgid "Image sizes excluded from optimization, keyed by size slug."
+msgstr "Az optimalizálásból kihagyott képméretek, méret-slug szerint megadva."
+
+#: classes/Abilities/UpdateSettings.php:132
+msgid "Show Imagify entry in the WordPress admin bar (0 = off, 1 = on)."
+msgstr "Imagify-menüpont megjelenítése a WordPress adminisztrációs sávjában (0 = ki, 1 = be)."
+
+#: classes/Abilities/UpdateSettings.php:137
+msgid "Show partner links in the Imagify admin area (0 = off, 1 = on)."
+msgstr "Partnerhivatkozások megjelenítése az Imagify adminisztrációs felületén (0 = ki, 1 = be)."
+
+#: classes/Abilities/UpdateSettings.php:142
+msgid "Convert images to AVIF format (0 = off, 1 = on)."
+msgstr "Képek konvertálása AVIF-formátumba (0 = ki, 1 = be)."
+
+#: classes/Abilities/UpdateSettings.php:147
+msgid "Convert images to WebP format (0 = off, 1 = on)."
+msgstr "Képek konvertálása WebP-formátumba (0 = ki, 1 = be)."
+
+#: classes/Abilities/UpdateSettings.php:152
+msgid "Output format for optimized images."
+msgstr "Az optimalizált képek kimeneti formátuma."
+
+#: classes/Abilities/UpdateSettings.php:163
+msgid "Keys whose values changed after the update."
+msgstr "Azok a kulcsok, amelyek értéke megváltozott a frissítés után."
+
+#: classes/Abilities/UpdateSettings.php:167
+msgid "Full post-update settings, excluding api_key and version."
+msgstr "A frissítés utáni teljes beállítások, az api_key és a version kivételével."
+
+#. translators: 1: setting key name, 2: list of allowed values.
+#: classes/Abilities/UpdateSettings.php:205
+#: classes/Abilities/UpdateSettings.php:219
+#: classes/Abilities/UpdateSettings.php:234
+#, php-format
+msgid "Invalid value for \"%1$s\". Expected one of: %2$s."
+msgstr "Érvénytelen érték ehhez: „%1$s”. A megengedett értékek: %2$s."
+
+#. translators: %s: the unknown setting key name.
+#: classes/Abilities/UpdateSettings.php:294
+#: classes/Abilities/UpdateSettings.php:305
+#, php-format
+msgid "\"%s\" is not a valid Imagify setting key."
+msgstr "A(z) „%s” nem érvényes Imagify-beállításkulcs."
+
+#. translators: IMAGIFY_API_KEY is a PHP constant name, do not translate it.
+#: classes/Abilities/UpdateSettings.php:315
+msgid "api_key cannot be updated when IMAGIFY_API_KEY constant is defined."
+msgstr "Az api_key nem frissíthető, ha az IMAGIFY_API_KEY konstans definiálva van."
+
+#: classes/Admin/AdminBar.php:84 classes/Admin/AdminSubscriber.php:74
+#: inc/3rd-party/nextgen-gallery/inc/admin/menu.php:17
+#: inc/3rd-party/nextgen-gallery/inc/admin/menu.php:18
+#: inc/classes/class-imagify-views.php:131
+#: inc/classes/class-imagify-views.php:174
+#: inc/classes/class-imagify-views.php:184
+#: views/part-bulk-optimization-header.php:3
+#: views/part-bulk-optimization-header.php:13
+msgid "Bulk Optimization"
+msgstr "Tömeges optimalizálás"
+
+#: classes/Admin/AdminBar.php:95 classes/Admin/AdminSubscriber.php:55
+msgid "Documentation"
+msgstr "Dokumentáció"
+
+#. translators: %s is WordPress.org.
+#: classes/Admin/AdminBar.php:109
+#, php-format
+msgid "Rate Imagify on %s"
+msgstr "Értékeld az Imagify-t a %s oldalon"
+
+#: classes/Admin/AdminBar.php:138 views/part-settings-custom-folders.php:150
+#: views/part-settings-files-tree-row.php:23
+msgid "Loading..."
+msgstr "Betöltés..."
+
+#: classes/Admin/AdminBar.php:162 views/part-upsell.php:74
+msgid "Upgrade your plan now for more!"
+msgstr "Frissítsd most az előfizetési csomagodat további lehetőségekért!"
+
+#: classes/Admin/AdminBar.php:163 views/part-upsell.php:75
+msgid "From $5.99/month only, keep going with image optimization!"
+msgstr "Már havi $5.99-tól folytathatod a képoptimalizálást!"
+
+#: classes/Admin/AdminBar.php:164
+msgid "Upgrade My Plan"
+msgstr "Előfizetésem frissítése"
+
+#: classes/Admin/AdminBar.php:167
+msgid "Switch to Infinite plan for unlimited optimization:"
+msgstr "Válts az Infinite csomagra a korlátlan optimalizáláshoz:"
+
+#: classes/Admin/AdminBar.php:170
+msgid "For $11.99/month, optimize as many images as you like!"
+msgstr "Havi $11.99-ért annyi képet optimalizálhatsz, amennyit csak szeretnél!"
+
+#: classes/Admin/AdminBar.php:173
+msgid "For $9.99/month, optimize as many images as you like!"
+msgstr "Havi $9.99-ért annyi képet optimalizálhatsz, amennyit csak szeretnél!"
+
+#: classes/Admin/AdminBar.php:177
+msgid "Switch To Infinite Plan"
+msgstr "Váltás az Infinite csomagra"
+
+#: classes/Admin/AdminSubscriber.php:55
+msgid "Upgrade"
+msgstr "Magasabb csomagra váltás"
+
+#: classes/Admin/AdminSubscriber.php:83
+#: inc/classes/class-imagify-views.php:180 views/part-settings-header.php:5
+#: views/part-settings-header.php:14
+msgid "Settings"
+msgstr "Beállítások"
+
+#. translators: %s is a file name.
+#: classes/Avif/RewriteRules/Display.php:115
+#: classes/Webp/RewriteRules/Display.php:122
+#, php-format
+msgid ""
+"If you choose to use rewrite rules, you will have to add the following lines"
+" manually to the %s file:"
+msgstr "Ha az átírási szabályok használatát választod, a következő sorokat manuálisan kell hozzáadnod a %s fájlhoz:"
+
+#. translators: %s is a formatted number, dont use %d.
+#: classes/Bulk/AbstractBulk.php:71 inc/deprecated/deprecated.php:1108
+#, php-format
+msgid "%s Media File Optimized"
+msgid_plural "%s Media Files Optimized"
+msgstr[0] "%s médiafájl optimalizálva"
+msgstr[1] "%s médiafájl optimalizálva"
+
+#. translators: %s is a formatted number, dont use %d.
+#: classes/Bulk/AbstractBulk.php:77 inc/deprecated/deprecated.php:1112
+#, php-format
+msgid "%s Error"
+msgid_plural "%s Errors"
+msgstr[0] "%s hiba"
+msgstr[1] "%s hiba"
+
+#: classes/Bulk/AbstractBulk.php:78 inc/deprecated/deprecated.php:1113
+msgid "View Errors"
+msgstr "Hibák megtekintése"
+
+#: classes/Bulk/AbstractBulk.php:82 inc/deprecated/deprecated.php:1119
+msgid "Optimized Filesize"
+msgstr "Optimalizált fájlméret"
+
+#: classes/Bulk/AbstractBulk.php:86 inc/deprecated/deprecated.php:1125
+msgid "Original Filesize"
+msgstr "Eredeti fájlméret"
+
+#: classes/Bulk/Bulk.php:467
+msgid "The path to the selected files could not be retrieved."
+msgstr "A kijelölt fájlok elérési útját nem sikerült lekérni."
+
+#: classes/Bulk/Bulk.php:769 classes/Bulk/Bulk.php:792
+#: classes/Bulk/Bulk.php:816 inc/classes/class-imagify-admin-ajax-post.php:276
+#: inc/classes/class-imagify-admin-ajax-post.php:309
+#: inc/classes/class-imagify-admin-ajax-post.php:342
+#: inc/classes/class-imagify-admin-ajax-post.php:375
+#: inc/classes/class-imagify-admin-ajax-post.php:408
+#: inc/classes/class-imagify-admin-ajax-post.php:441
+#: inc/classes/class-imagify-admin-ajax-post.php:494
+#: inc/classes/class-imagify-admin-ajax-post.php:524
+#: inc/classes/class-imagify-admin-ajax-post.php:556
+#: inc/classes/class-imagify-admin-ajax-post.php:587
+#: inc/classes/class-imagify-admin-ajax-post.php:706
+#: inc/classes/class-imagify-admin-ajax-post.php:1075
+#: inc/classes/class-imagify-admin-ajax-post.php:1081
+#: inc/classes/class-imagify-admin-ajax-post.php:1089
+#: inc/classes/class-imagify-admin-ajax-post.php:1100
+#: inc/deprecated/classes/class-imagify-admin-ajax-post-deprecated.php:120
+#: inc/deprecated/classes/class-imagify-admin-ajax-post-deprecated.php:195
+#: inc/deprecated/classes/class-imagify-regenerate-thumbnails-deprecated.php:49
+msgid "Invalid request"
+msgstr "Érvénytelen kérés"
+
+#: classes/MCP/AbilitiesSubscriber.php:68 inc/admin/meta-boxes.php:38
+#: inc/admin/meta-boxes.php:68 inc/admin/upload.php:16
+msgid "Imagify"
+msgstr "Imagify"
+
+#: classes/MCP/AbilitiesSubscriber.php:69
+msgid "Image optimization tools for WordPress."
+msgstr "Képoptimalizáló eszközök WordPresshez."
+
+#: classes/MCP/ConfigSubscriber.php:45
+msgid "Image optimization tools for WordPress powered by Imagify."
+msgstr "Az Imagify által működtetett képoptimalizáló eszközök WordPresshez."
+
+#: classes/Media/CustomFolders.php:237 classes/Media/Noop.php:245
+#: classes/Media/WP.php:210
+#: classes/Optimization/Process/AbstractProcess.php:260
+#: classes/Optimization/Process/AbstractProcess.php:310
+#: classes/Optimization/Process/AbstractProcess.php:366
+#: classes/Optimization/Process/AbstractProcess.php:501
+#: classes/Optimization/Process/AbstractProcess.php:907
+#: classes/Optimization/Process/AbstractProcess.php:1436
+#: classes/Optimization/Process/AbstractProcess.php:1757
+#: classes/Optimization/Process/CustomFolders.php:54
+#: classes/Optimization/Process/CustomFolders.php:96
+#: classes/Optimization/Process/Noop.php:153
+#: classes/Optimization/Process/Noop.php:168
+#: classes/Optimization/Process/Noop.php:184
+#: classes/Optimization/Process/Noop.php:198
+#: classes/Optimization/Process/Noop.php:209
+#: classes/Optimization/Process/Noop.php:243
+#: classes/Optimization/Process/Noop.php:283
+#: classes/Optimization/Process/WP.php:76
+#: classes/Optimization/Process/WP.php:164
+#: inc/3rd-party/nextgen-gallery/classes/Media/NGG.php:283
+#: inc/3rd-party/nextgen-gallery/classes/Optimization/Process/NGG.php:41
+#: inc/3rd-party/nextgen-gallery/classes/Optimization/Process/NGG.php:79
+#: inc/classes/class-imagify-admin-ajax-post.php:226
+#: inc/classes/class-imagify-custom-folders.php:297
+#: inc/deprecated/classes/class-imagify-admin-ajax-post-deprecated.php:212
+#: inc/functions/admin-ui.php:506
+msgid "This media is not valid."
+msgstr "Ez a média érvénytelen."
+
+#: classes/Media/Upload/Upload.php:32
+#: inc/classes/class-imagify-files-list-table.php:366
+msgctxt "Media Files"
+msgid "Optimized"
+msgstr "Optimalizálva"
+
+#: classes/Media/Upload/Upload.php:33
+#: inc/classes/class-imagify-files-list-table.php:367
+msgctxt "Media Files"
+msgid "Unoptimized"
+msgstr "Nem optimalizált"
+
+#: classes/Media/Upload/Upload.php:34
+#: inc/classes/class-imagify-files-list-table.php:368
+msgctxt "Media Files"
+msgid "Errors"
+msgstr "Hibák"
+
+#: classes/Media/Upload/Upload.php:42
+msgctxt "Media Files"
+msgid "Missing Next-Gen"
+msgstr "Hiányzó új generációs formátum"
+
+#: classes/Media/Upload/Upload.php:45
+#: inc/classes/class-imagify-files-list-table.php:395
+msgid "Filter by status"
+msgstr "Szűrés állapot szerint"
+
+#: classes/Media/Upload/Upload.php:47
+#: inc/classes/class-imagify-files-list-table.php:365
+msgid "All Media Files"
+msgstr "Összes médiafájl"
+
+#: classes/Optimization/File.php:106 inc/deprecated/deprecated.php:614
+msgid "File path is empty."
+msgstr "Az elérési út üres."
+
+#: classes/Optimization/File.php:110 inc/deprecated/deprecated.php:747
+msgid "Filesystem error."
+msgstr "Fájlrendszer-hiba."
+
+#. translators: %s is a file path.
+#: classes/Optimization/File.php:118
+#: classes/Optimization/Process/AbstractProcess.php:685
+#, php-format
+msgid "The file %s does not seem to exist."
+msgstr "Úgy tűnik, a(z) %s fájl nem létezik."
+
+#. translators: %s is a file path.
+#: classes/Optimization/File.php:129
+#: classes/Optimization/Process/AbstractProcess.php:1547
+#, php-format
+msgid "This does not seem to be a file: %s."
+msgstr "Úgy tűnik, ez nem fájl: %s."
+
+#. translators: %s is a file path.
+#: classes/Optimization/File.php:140
+#: classes/Optimization/Process/AbstractProcess.php:699
+#: classes/Optimization/Process/AbstractProcess.php:1536
+#, php-format
+msgid "The file %s does not seem to be writable."
+msgstr "Úgy tűnik, a(z) %s fájl nem írható."
+
+#. translators: %s is a file path.
+#: classes/Optimization/File.php:153
+#, php-format
+msgid "The folder %s does not seem to be writable."
+msgstr "Úgy tűnik, a(z) %s mappa nem írható."
+
+#: classes/Optimization/File.php:193
+msgid "No threshold provided for resizing."
+msgstr "Nincs megadva küszöbérték az átméretezéshez."
+
+#. translators: %s is a file path.
+#: classes/Optimization/File.php:202 classes/Optimization/File.php:393
+#, php-format
+msgid "The file %s does not seem to be an image, and cannot be resized."
+msgstr "Úgy tűnik, a(z) %s fájl nem kép, és nem méretezhető át."
+
+#: classes/Optimization/File.php:409
+msgid "The thumbnail could not be created."
+msgstr "Nem sikerült létrehozni a bélyegképet."
+
+#: classes/Optimization/File.php:433 classes/Optimization/File.php:688
+msgid "The file could not be moved to its final destination."
+msgstr "A fájlt nem sikerült a végleges helyére áthelyezni."
+
+#: classes/Optimization/File.php:459
+msgid "Error while retrieving the backups directory path."
+msgstr "Nem sikerült lekérni a biztonsági mentések könyvtárának elérési útját."
+
+#: classes/Optimization/File.php:466 inc/deprecated/deprecated.php:760
+msgid "The backup directory is not writable."
+msgstr "A biztonsági mentések könyvtára nem írható."
+
+#: classes/Optimization/File.php:490 classes/Optimization/File.php:509
+#: inc/deprecated/deprecated.php:791
+msgid "The file could not be saved."
+msgstr "A fájlt nem sikerült menteni."
+
+#: classes/Optimization/File.php:561 inc/deprecated/deprecated.php:635
+#: inc/functions/i18n.php:117 inc/functions/i18n.php:267
+msgid "External HTTP requests are blocked."
+msgstr "A külső HTTP-kérések blokkolva vannak."
+
+#: classes/Optimization/File.php:674
+msgid "Could not determine the destination path for the next-gen file."
+msgstr "Nem sikerült meghatározni az új generációs fájl célútvonalát."
+
+#. translators: %1$s is an error message, %2$s is a "More info?" link.
+#: classes/Optimization/File.php:749
+#, php-format
+msgid ""
+"No php extensions are available to edit images on the server. ImageMagick or"
+" GD is required. The internal error is: %1$s. %2$s"
+msgstr "Nincsenek elérhető PHP-kiterjesztések a képek szerveren történő szerkesztéséhez. ImageMagick vagy GD szükséges. A belső hiba: %1$s. %2$s"
+
+#: classes/Optimization/File.php:751 inc/deprecated/deprecated.php:629
+#: inc/functions/i18n.php:115 inc/functions/i18n.php:265
+#: views/page-settings.php:182
+msgid "More info?"
+msgstr "További információ?"
+
+#: classes/Optimization/Process/AbstractProcess.php:266
+#: classes/Optimization/Process/AbstractProcess.php:316
+#: classes/Optimization/Process/AbstractProcess.php:372
+#: classes/Optimization/Process/AbstractProcess.php:913
+#: classes/Optimization/Process/CustomFolders.php:64
+#: classes/Optimization/Process/CustomFolders.php:106
+#: classes/Optimization/Process/WP.php:86
+#: classes/Optimization/Process/WP.php:174
+#: inc/3rd-party/nextgen-gallery/classes/Optimization/Process/NGG.php:47
+#: inc/3rd-party/nextgen-gallery/classes/Optimization/Process/NGG.php:83
+#: inc/functions/admin-ui.php:517
+msgid "This media is not supported."
+msgstr "Ez a média nem támogatott."
+
+#: classes/Optimization/Process/AbstractProcess.php:272
+msgid "This media has already been optimized by Imagify."
+msgstr "Ezt a médiát az Imagify már optimalizálta."
+
+#: classes/Optimization/Process/AbstractProcess.php:281
+msgid "Previous Next-Gen files could not be deleted."
+msgstr "A korábbi Next-Gen fájlokat nem sikerült törölni."
+
+#: classes/Optimization/Process/AbstractProcess.php:322
+msgid "This media has not been processed yet."
+msgstr "Ez a média még nincs feldolgozva."
+
+#: classes/Optimization/Process/AbstractProcess.php:328
+msgid "This media is already optimized with this level."
+msgstr "Ez a média már ezen a szinten van optimalizálva."
+
+#: classes/Optimization/Process/AbstractProcess.php:376
+msgid "No sizes given to be optimized."
+msgstr "Nincsenek megadva optimalizálandó méretek."
+
+#: classes/Optimization/Process/AbstractProcess.php:381
+#: classes/Optimization/Process/AbstractProcess.php:921
+#: classes/Optimization/Process/WP.php:188
+msgid "This media is already being processed."
+msgstr "Ez a média feldolgozás alatt áll."
+
+#. translators: %s is a size name.
+#: classes/Optimization/Process/AbstractProcess.php:522
+#, php-format
+msgid "The size %s is unknown."
+msgstr "A(z) %s méret ismeretlen."
+
+#. translators: %s is a size name.
+#: classes/Optimization/Process/AbstractProcess.php:544
+#, php-format
+msgid "The Next-Gen format for the size %s already exists."
+msgstr "A(z) %s mérethez tartozó Next-Gen formátum már létezik."
+
+#. translators: %s is a size name.
+#: classes/Optimization/Process/AbstractProcess.php:553
+#, php-format
+msgid "The size %s is already optimized by Imagify."
+msgstr "A(z) %s méretet az Imagify már optimalizálta."
+
+#. translators: %s is a size name.
+#: classes/Optimization/Process/AbstractProcess.php:578
+#, php-format
+msgid "Could not create an unoptimized copy of the size %s."
+msgstr "Nem sikerült létrehozni a(z) %s méret nem optimalizált másolatát."
+
+#: classes/Optimization/Process/AbstractProcess.php:604
+#: classes/Optimization/Process/AbstractProcess.php:614
+msgid "This file has an extension that does not match a mime type."
+msgstr "Ennek a fájlnak a kiterjesztése nem felel meg egy MIME-típusnak."
+
+#: classes/Optimization/Process/AbstractProcess.php:609
+msgid "With no extension, this file cannot be optimized."
+msgstr "Kiterjesztés nélkül ez a fájl nem optimalizálható."
+
+#. translators: %s is a file extension.
+#: classes/Optimization/Process/AbstractProcess.php:621
+#, php-format
+msgid "%s cannot be optimized."
+msgstr "A(z) %s nem optimalizálható."
+
+#: classes/Optimization/Process/AbstractProcess.php:643
+msgid "This file is not an image and cannot be converted to Next-Gen format."
+msgstr "Ez a fájl nem kép, és nem alakítható át Next-Gen formátumra."
+
+#. translators: %s is a size name.
+#: classes/Optimization/Process/AbstractProcess.php:676
+#, php-format
+msgid ""
+"The size %s is not authorized to be optimized. Update your Imagify settings "
+"if you want to optimize it."
+msgstr "A(z) %s méret optimalizálása nem engedélyezett. Frissítsd az Imagify beállításait, ha optimalizálni szeretnéd."
+
+#: classes/Optimization/Process/AbstractProcess.php:692
+msgid ""
+"This file is an animated gif: since Imagify does not support animated "
+"WebP/AVIF, WebP/AVIF creation for animated gif is disabled."
+msgstr "Ez a fájl animált GIF: mivel az Imagify nem támogatja az animált WebP/AVIF-et, az animált GIF-ek esetében a WebP/AVIF létrehozása ki van kapcsolva."
+
+#. translators: %s is a size name.
+#: classes/Optimization/Process/AbstractProcess.php:859
+#: classes/Optimization/Process/AbstractProcess.php:888
+#, php-format
+msgid ""
+"The Next-Gen version of the size %s is heavier than its non-next-gen "
+"version."
+msgstr "A(z) %s méret Next-Gen változatának fájlmérete nagyobb, mint a nem Next-Gen változaté."
+
+#: classes/Optimization/Process/AbstractProcess.php:917
+#: classes/Optimization/Process/AbstractProcess.php:1767
+msgid "This media has no backup file."
+msgstr "Ehhez a médiához nem tartozik biztonsági mentési fájl."
+
+#: classes/Optimization/Process/AbstractProcess.php:931
+#: inc/deprecated/classes/class-imagify-ngg-attachment.php:774
+msgid "Image path and backup path are identical."
+msgstr "A kép elérési útja és a biztonsági mentés elérési útja azonos."
+
+#: classes/Optimization/Process/AbstractProcess.php:944
+#: inc/deprecated/classes/class-imagify-ngg-attachment.php:778
+msgid "The image to replace is not writable."
+msgstr "A lecserélendő kép nem írható."
+
+#: classes/Optimization/Process/AbstractProcess.php:968
+msgid "The backup file could not be copied over the optimized one."
+msgstr "A biztonsági mentési fájlt nem sikerült az optimalizált fájlra másolni."
+
+#. translators: %s is an error message.
+#: classes/Optimization/Process/AbstractProcess.php:1280
+#: classes/Optimization/Process/AbstractProcess.php:1306
+#, php-format
+msgid "Resizing failed: %s"
+msgstr "Az átméretezés sikertelen: %s"
+
+#: classes/Optimization/Process/AbstractProcess.php:1281
+msgid "Imagify could not get the image dimensions."
+msgstr "Az Imagify nem tudta lekérni a kép méreteit."
+
+#. translators: %s is an error message.
+#: classes/Optimization/Process/AbstractProcess.php:1322
+#, php-format
+msgid "Backup failed: %s"
+msgstr "A biztonsági mentés sikertelen: %s"
+
+#: classes/Optimization/Process/AbstractProcess.php:1338
+msgid "The image could not be replaced by the resized one."
+msgstr "A képet nem sikerült az átméretezett képpel lecserélni."
+
+#: classes/Optimization/Process/AbstractProcess.php:1442
+#: classes/Optimization/Process/CustomFolders.php:78
+#: classes/Optimization/Process/WP.php:100
+#: inc/3rd-party/nextgen-gallery/classes/Optimization/Process/NGG.php:61
+msgid "This media is not an image."
+msgstr "Ez a média nem kép."
+
+#. translators: %s is a formatted number, don’t use %d.
+#: classes/Optimization/Process/AbstractProcess.php:1472
+#, php-format
+msgid "%s file could not be deleted."
+msgid_plural "%s files could not be deleted."
+msgstr[0] "%s fájl nem törölhető."
+msgstr[1] "%s fájl nem törölhető."
+
+#: classes/Optimization/Process/AbstractProcess.php:1494
+msgid "Path to non-next-gen file not provided."
+msgstr "A nem next-gen fájl elérési útja nincs megadva."
+
+#: classes/Optimization/Process/AbstractProcess.php:1524
+msgid "Could not get the path to the Next-Gen format file."
+msgstr "Nem sikerült lekérni a Next-Gen formátumú fájl elérési útját."
+
+#. translators: %s is a file path.
+#: classes/Optimization/Process/AbstractProcess.php:1560
+#, php-format
+msgid "The file %s could not be deleted."
+msgstr "A(z) %s fájlt nem sikerült törölni."
+
+#: classes/Optimization/Process/AbstractProcess.php:1763
+msgid "This media is not an image and cannot be converted to next-gen format."
+msgstr "Ez a média nem kép, és nem alakítható át next-gen formátumra."
+
+#: classes/Optimization/Process/AbstractProcess.php:1773
+msgid "This media has not been optimized by Imagify yet."
+msgstr "Ezt a médiát az Imagify még nem optimalizálta."
+
+#: classes/Optimization/Process/AbstractProcess.php:1777
+msgid "This media already has next-gen versions."
+msgstr "Ennek a médiának már vannak next-gen verziói."
+
+#: classes/Optimization/Process/AbstractProcess.php:1805
+msgid ""
+"This media does not have files that can be converted to next-gen format."
+msgstr "Ennek a médiának nincsenek olyan fájljai, amelyek next-gen formátumra átalakíthatók."
+
+#: classes/Optimization/Process/CustomFolders.php:60
+#: classes/Optimization/Process/CustomFolders.php:102
+#: classes/Optimization/Process/WP.php:82
+#: classes/Optimization/Process/WP.php:170
+msgid "No media found."
+msgstr "Nem található média."
+
+#: classes/Optimization/Process/CustomFolders.php:70
+#: classes/Optimization/Process/WP.php:92
+#: inc/3rd-party/nextgen-gallery/classes/Optimization/Process/NGG.php:53
+msgid "This media is not optimized yet."
+msgstr "Ez a média még nincs optimalizálva."
+
+#: classes/Optimization/Process/CustomFolders.php:74
+#: classes/Optimization/Process/WP.php:96
+#: inc/3rd-party/nextgen-gallery/classes/Optimization/Process/NGG.php:57
+#: inc/deprecated/classes/class-imagify-attachment.php:585
+msgid "This file has no backup file."
+msgstr "Ehhez a fájlhoz nincs biztonsági másolat."
+
+#: classes/Optimization/Process/CustomFolders.php:109
+#: classes/Optimization/Process/WP.php:180
+#: inc/3rd-party/nextgen-gallery/classes/Optimization/Process/NGG.php:86
+msgid "No thumbnails seem to be missing."
+msgstr "Úgy tűnik, egyetlen bélyegkép sem hiányzik."
+
+#: classes/Optimization/Process/WP.php:198
+msgid "The thumbnails failed to be created."
+msgstr "A bélyegképek létrehozása nem sikerült."
+
+#: classes/Optimization/Process/WP.php:205
+msgid ""
+"The optimization level of this media seems to have disappear from the "
+"database. You should restore this media and then launch a new optimization."
+msgstr "Úgy tűnik, ennek a médiának az optimalizálási szintje eltűnt az adatbázisból. Állítsd vissza ezt a médiát, majd indíts új optimalizálást."
+
+#: classes/Tools/Subscriber.php:61 inc/functions/i18n.php:67
+msgid "Imagify internal state has been reset successfully."
+msgstr "Az Imagify belső állapotának alaphelyzetbe állítása sikeres."
+
+#: classes/Tracking/Notices.php:80
+msgid "Unauthorized."
+msgstr "Nem engedélyezett."
+
+#: classes/Tracking/Notices.php:190
+msgid "None"
+msgstr "Nincs"
+
+#: classes/Tracking/Notices.php:192
+msgid "WebP and AVIF"
+msgstr "WebP és AVIF"
+
+#: classes/Tracking/Notices.php:194 views/part-settings-webp.php:49
+msgid "AVIF"
+msgstr "AVIF"
+
+#: classes/Tracking/Notices.php:196 views/part-settings-webp.php:50
+msgid "WebP"
+msgstr "WebP"
+
+#: classes/Tracking/Notices.php:202
+msgid "N/A"
+msgstr "N/A"
+
+#. translators: %s is a file name.
+#: classes/Webp/Display.php:113
+#, php-format
+msgid ""
+"Imagify does not seem to be able to edit or create a %s file, you will have "
+"to add the following lines manually to it:"
+msgstr "Úgy tűnik, az Imagify nem tud szerkeszteni vagy létrehozni egy %s fájlt, ezért a következő sorokat kézzel kell hozzáadnod:"
+
+#. translators: %s is a file name.
+#: classes/Webp/RewriteRules/Display.php:130
+#, php-format
+msgid ""
+"If you choose to use rewrite rules, the file %s will be created and must be "
+"included into the server’s configuration file (then restart the server)."
+msgstr "Ha úgy döntesz, hogy átírási szabályokat használsz, a %s fájl létrejön, és be kell illeszteni a szerver konfigurációs fájljába (ezután indítsd újra a szervert)."
+
+#. translators: %s is a file name.
+#: classes/WriteFile/AbstractIISDirConfFile.php:105
+#: classes/WriteFile/AbstractWriteDirConfFile.php:174
+#, php-format
+msgid "Edition of the %s file is disabled."
+msgstr "A %s fájl szerkesztése le van tiltva."
+
+#. translators: 1 is a php class name, 2 is a file name.
+#: classes/WriteFile/AbstractIISDirConfFile.php:116
+#, php-format
+msgid ""
+"The class %1$s is not present on your server, a %2$s file cannot be created "
+"nor edited."
+msgstr "Az %1$s osztály nincs jelen a szervereden, a %2$s fájl nem hozható létre és nem is szerkeszthető."
+
+#. translators: %s is a file name.
+#: classes/WriteFile/AbstractIISDirConfFile.php:133
+#: classes/WriteFile/AbstractWriteDirConfFile.php:190
+#, php-format
+msgid "%s’s parent folder is not writable."
+msgstr "A %s szülőmappája nem írható."
+
+#. translators: %s is a file name.
+#: classes/WriteFile/AbstractIISDirConfFile.php:146
+#: classes/WriteFile/AbstractWriteDirConfFile.php:200
+#, php-format
+msgid "The %s file could not be created."
+msgstr "A %s fájlt nem sikerült létrehozni."
+
+#. translators: %s is a file name.
+#: classes/WriteFile/AbstractIISDirConfFile.php:157
+#: classes/WriteFile/AbstractWriteDirConfFile.php:210
+#, php-format
+msgid "The %s file is not writable."
+msgstr "A %s fájl nem írható."
+
+#. translators: %s is a file name.
+#: classes/WriteFile/AbstractIISDirConfFile.php:195
+#: classes/WriteFile/AbstractWriteDirConfFile.php:322
+#, php-format
+msgid "The %s file could not be read."
+msgstr "A %s fájlt nem sikerült beolvasni."
+
+#. translators: %s is a file name.
+#: classes/WriteFile/AbstractWriteDirConfFile.php:67
+#, php-format
+msgid ""
+"Imagify did not add contents to the %s file, as its edition is disabled."
+msgstr "Az Imagify nem adott hozzá tartalmat a %s fájlhoz, mivel annak szerkesztése le van tiltva."
+
+#. translators: 1 is a file name, 2 is an error message.
+#: classes/WriteFile/AbstractWriteDirConfFile.php:77
+#, php-format
+msgid "Imagify could not insert contents into the %1$s file: %2$s"
+msgstr "Az Imagify nem tudott tartalmat beszúrni a %1$s fájlba: %2$s"
+
+#. translators: %s is a file name.
+#: classes/WriteFile/AbstractWriteDirConfFile.php:109
+#, php-format
+msgid ""
+"Imagify did not remove the contents from the %s file, as its edition is "
+"disabled."
+msgstr "Az Imagify nem távolította el a tartalmat a %s fájlból, mivel annak szerkesztése le van tiltva."
+
+#. translators: 1 is a file name, 2 is an error message.
+#: classes/WriteFile/AbstractWriteDirConfFile.php:119
+#, php-format
+msgid "Imagify could not remove contents from the %1$s file: %2$s"
+msgstr "Az Imagify nem tudta eltávolítani a tartalmat a %1$s fájlból: %2$s"
+
+#. translators: %s is a file name.
+#: classes/WriteFile/AbstractWriteDirConfFile.php:355
+#, php-format
+msgid "Could not write into the %s file."
+msgstr "Nem sikerült írni a %s fájlba."
+
+#: inc/3rd-party/amazon-s3-and-cloudfront/classes/CDN/WP/AS3.php:108
+#: inc/3rd-party/amazon-s3-and-cloudfront/classes/CDN/WP/AS3.php:172
+#: inc/3rd-party/amazon-s3-and-cloudfront/classes/CDN/WP/AS3.php:230
+msgid "CDN is not set up."
+msgstr "A CDN nincs beállítva."
+
+#: inc/3rd-party/amazon-s3-and-cloudfront/classes/CDN/WP/AS3.php:115
+#: inc/3rd-party/amazon-s3-and-cloudfront/classes/CDN/WP/AS3.php:179
+msgid "This media could not be found on the CDN."
+msgstr "Ez a média nem található a CDN-en."
+
+#. translators: %s is a list of file paths.
+#: inc/3rd-party/amazon-s3-and-cloudfront/classes/CDN/WP/AS3.php:147
+#, php-format
+msgid "The following file could not be retrieved from the CDN: %s."
+msgid_plural "The following files could not be retrieved from the CDN: %s."
+msgstr[0] "A következő fájl nem tölthető le a CDN-ről: %s."
+msgstr[1] "A következő fájlok nem tölthetők le a CDN-ről: %s."
+
+#: inc/3rd-party/amazon-s3-and-cloudfront/classes/CDN/WP/AS3.php:210
+msgid "File(s) could not be removed from the CDN."
+msgstr "A fájl(oka)t nem sikerült eltávolítani a CDN-ről."
+
+#: inc/3rd-party/nextgen-gallery/classes/Media/NGG.php:288
+msgid "NextGen Gallery storage is not available."
+msgstr "A NextGen Gallery tárhelye nem érhető el."
+
+#: inc/3rd-party/nextgen-gallery/classes/Media/NGG.php:295
+#: inc/deprecated/classes/class-imagify-ngg-attachment.php:764
+msgid "Image not found in NextGen Gallery data."
+msgstr "A kép nem található a NextGen Gallery adatai között."
+
+#: inc/3rd-party/nextgen-gallery/classes/Media/NGG.php:363
+msgid "Related NextGen Gallery data could not be saved."
+msgstr "A kapcsolódó NextGen Gallery adatok mentése nem sikerült."
+
+#: inc/3rd-party/nextgen-gallery/classes/Media/NGG.php:369
+#: inc/deprecated/classes/class-imagify-ngg-attachment.php:945
+msgid "%n thumbnail could not be restored."
+msgid_plural "%n thumbnails could not be restored."
+msgstr[0] "%n bélyegkép nem állítható vissza."
+msgstr[1] "%n bélyegkép nem állítható vissza."
+
+#: inc/3rd-party/nextgen-gallery/inc/admin/bulk.php:82
+msgid "NextGen Galleries"
+msgstr "NextGen galériák"
+
+#. translators: 1 is the opening of a link, 2 is the closing of this link.
+#: inc/3rd-party/nextgen-gallery/inc/admin/bulk.php:84
+#, php-format
+msgid ""
+"You can also re-optimize your images more finely directly in each "
+"%1$sgallery%2$s."
+msgstr "Képeidet közvetlenül minden egyes %1$sgalériában%2$s még finomabban újraoptimalizálhatod."
+
+#: inc/admin/meta-boxes.php:40
+#: inc/classes/class-imagify-files-list-table.php:698
+#: inc/functions/admin-ui.php:529 inc/functions/api.php:254
+msgid "Invalid API key"
+msgstr "Érvénytelen API-kulcs"
+
+#: inc/admin/meta-boxes.php:43
+#: inc/classes/class-imagify-files-list-table.php:699
+#: inc/functions/admin-ui.php:531
+msgid "Check your Settings"
+msgstr "Ellenőrizd a beállításaidat"
+
+#: inc/admin/meta-boxes.php:53
+#: inc/classes/class-imagify-files-list-table.php:708
+#: inc/functions/admin-ui.php:543 views/button/optimize-missing-sizes.php:17
+#: views/button/optimize.php:17 views/button/re-optimize.php:17
+#: views/button/retry-optimize.php:17
+msgid "Optimizing..."
+msgstr "Optimalizálás..."
+
+#: inc/admin/meta-boxes.php:56 inc/functions/admin-ui.php:546
+#: views/button/restore.php:17
+msgid "Restoring..."
+msgstr "Visszaállítás..."
+
+#: inc/admin/meta-boxes.php:59 inc/functions/admin-ui.php:549
+msgid "Processing..."
+msgstr "Feldolgozás alatt..."
+
+#: inc/admin/meta-boxes.php:77 inc/functions/i18n.php:207
+#: inc/functions/i18n.php:223 inc/functions/i18n.php:345
+#: views/button/optimize.php:24
+msgid "Optimize"
+msgstr "Optimalizálás"
+
+#: inc/classes/class-imagify-abstract-cron.php:134
+msgid "Once Weekly"
+msgstr "Hetente egyszer"
+
+#: inc/classes/class-imagify-admin-ajax-post.php:232
+msgid "This media does not have the right optimization status."
+msgstr "Ennek a médiának nincs megfelelő optimalizálási állapota."
+
+#: inc/classes/class-imagify-admin-ajax-post.php:243
+msgid "Previous next-gen files could not be deleted."
+msgstr "Az előző next-gen fájlokat nem sikerült törölni."
+
+#: inc/classes/class-imagify-admin-ajax-post.php:638
+msgid "This folder is not in the database."
+msgstr "Ez a mappa nincs az adatbázisban."
+
+#: inc/classes/class-imagify-admin-ajax-post.php:714
+msgid "This folder doesn't exist."
+msgstr "Ez a mappa nem létezik."
+
+#: inc/classes/class-imagify-admin-ajax-post.php:718
+#: inc/classes/class-imagify-files-scan.php:45
+msgid "This file is not a folder."
+msgstr "Ez a fájl nem mappa."
+
+#: inc/classes/class-imagify-admin-ajax-post.php:724
+#: inc/classes/class-imagify-files-scan.php:49
+msgid "This folder is not allowed."
+msgstr "Ez a mappa nem engedélyezett."
+
+#: inc/classes/class-imagify-admin-ajax-post.php:738
+#: inc/classes/class-imagify-admin-ajax-post.php:741
+#: inc/classes/class-imagify-files-list-table.php:333
+#: inc/classes/class-imagify-files-list-table.php:572
+#: views/part-settings-custom-folders.php:26
+msgid "Site's root"
+msgstr "A webhely gyökérkönyvtára"
+
+#. translators: %s is a formatted number, dont use %d.
+#: inc/classes/class-imagify-admin-ajax-post.php:776
+#, php-format
+msgid "%s Media File"
+msgid_plural "%s Media Files"
+msgstr[0] "%s médiafájl"
+msgstr[1] "%s médiafájl"
+
+#: inc/classes/class-imagify-admin-ajax-post.php:780
+msgid "No optimizable files"
+msgstr "Nincs optimalizálható fájl"
+
+#: inc/classes/class-imagify-admin-ajax-post.php:804
+msgid "Empty email address."
+msgstr "Üres e-mail-cím."
+
+#: inc/classes/class-imagify-admin-ajax-post.php:810
+msgid "Not a valid email address."
+msgstr "Nem érvényes e-mail-cím."
+
+#: inc/classes/class-imagify-admin-ajax-post.php:845
+msgid "Empty API key."
+msgstr "Üres API-kulcs."
+
+#: inc/classes/class-imagify-admin-ajax-post.php:895
+msgid "Wrongly formatted response from our server."
+msgstr "Hibás formátumú válasz érkezett a szerverünktől."
+
+#: inc/classes/class-imagify-admin-ajax-post.php:921
+msgid "Coupon is empty."
+msgstr "A kupon üres."
+
+#: inc/classes/class-imagify-admin-ajax-post.php:1027
+msgid "Couldn't get user data."
+msgstr "Nem sikerült lekérni a felhasználói adatokat."
+
+#: inc/classes/class-imagify-admin-ajax-post.php:1034
+#: views/admin/admin-bar-status.php:41
+msgid "Oops, It's Over!"
+msgstr "Hoppá, véget ért!"
+
+#: inc/classes/class-imagify-admin-ajax-post.php:1036
+#: views/admin/admin-bar-status.php:39
+msgid "Oops, It's almost over!"
+msgstr "Hoppá, majdnem véget ért!"
+
+#: inc/classes/class-imagify-admin-ajax-post.php:1038 views/part-upsell.php:29
+msgid "Unlock Imagify's full potential"
+msgstr "Használd ki az Imagify teljes lehetőségeit"
+
+#: inc/classes/class-imagify-admin-ajax-post.php:1331
+#: inc/functions/i18n.php:119 inc/functions/i18n.php:269
+msgid "Your API key is not valid!"
+msgstr "Az API-kulcsod nem érvényes!"
+
+#: inc/classes/class-imagify-admin-ajax-post.php:1339
+#: inc/functions/i18n.php:120 inc/functions/i18n.php:270
+msgid "You have used all your credits!"
+msgstr "Felhasználtad az összes kreditedet!"
+
+#: inc/classes/class-imagify-custom-folders.php:331
+msgid ""
+"The file was missing or its path could not be retrieved from the database. "
+"The entry has been deleted from the database."
+msgstr "A fájl hiányzott, vagy az útvonala nem volt lekérhető az adatbázisból. A bejegyzés törölve lett az adatbázisból."
+
+#: inc/classes/class-imagify-custom-folders.php:392
+msgid ""
+"The file has been modified or was not optimized: its folder not being "
+"selected in the settings, the entry has been deleted from the database."
+msgstr "A fájl módosult, vagy nem volt optimalizálva: mivel a mappája nincs kiválasztva a beállítások között, a bejegyzés törölve lett az adatbázisból."
+
+#: inc/classes/class-imagify-files-list-table.php:70
+msgid "List View"
+msgstr "Listanézet"
+
+#: inc/classes/class-imagify-files-list-table.php:88
+msgid "Number of files per page"
+msgstr "Fájlok száma oldalanként"
+
+#. translators: 1 is a link tag start, 2 is the link tag end.
+#: inc/classes/class-imagify-files-list-table.php:239
+#, php-format
+msgid "No optimized files. Have you tried the %1$sbulk optimization%2$s yet?"
+msgstr "Nincsenek optimalizált fájlok. Kipróbáltad már a %1$stömeges optimalizálást%2$s?"
+
+#: inc/classes/class-imagify-files-list-table.php:243
+msgid "No unoptimized files, hurray!"
+msgstr "Nincsenek optimalizálatlan fájlok, hurrá!"
+
+#: inc/classes/class-imagify-files-list-table.php:247
+msgid "No errors, hurray!"
+msgstr "Nincsenek hibák, hurrá!"
+
+#. translators: 1 and 2 are link tag starts, 3 is a link tag end.
+#: inc/classes/class-imagify-files-list-table.php:265
+#, php-format
+msgid ""
+"No files yet. Do you want to %1$sscan this folder%3$s for new files or "
+"launch a %2$sbulk optimization%3$s directly?"
+msgstr "Még nincsenek fájlok. Szeretnéd %1$súj fájlok után kutatva átvizsgálni ezt a mappát%3$s, vagy közvetlenül elindítani egy %2$stömeges optimalizálást%3$s?"
+
+#. translators: 1 and 2 are link tag starts, 3 is a link tag end.
+#: inc/classes/class-imagify-files-list-table.php:278
+#, php-format
+msgid ""
+"No files yet. Do you want to %1$sscan your selected folders%3$s for new "
+"files or launch a %2$sbulk optimization%3$s directly?"
+msgstr "Még nincsenek fájlok. Szeretnéd %1$súj fájlok után kutatva átvizsgálni a kiválasztott mappáidat%3$s, vagy közvetlenül elindítani egy %2$stömeges optimalizálást%3$s?"
+
+#. translators: 1 is a link tag start, 2 is the link tag end.
+#: inc/classes/class-imagify-files-list-table.php:289
+msgid ""
+"To see things appear here, you must select folders in the settings page "
+"first :)"
+msgstr "Hogy itt megjelenjenek az elemek, először ki kell választanod mappákat a beállítások oldalon :)"
+
+#: inc/classes/class-imagify-files-list-table.php:384
+msgid "Filter by folder"
+msgstr "Szűrés mappa szerint"
+
+#: inc/classes/class-imagify-files-list-table.php:387
+msgid "All Folders"
+msgstr "Minden mappa"
+
+#: inc/classes/class-imagify-files-list-table.php:404
+msgctxt "verb"
+msgid "Filter"
+msgstr "Szűrés"
+
+#: inc/classes/class-imagify-files-list-table.php:421
+#: views/button/refresh-status.php:25
+msgid "Refresh status"
+msgstr "Állapot frissítése"
+
+#: inc/classes/class-imagify-files-list-table.php:436
+msgid "File"
+msgstr "Fájl"
+
+#: inc/classes/class-imagify-files-list-table.php:437
+msgid "Folder"
+msgstr "Mappa"
+
+#: inc/classes/class-imagify-files-list-table.php:438
+#: views/page-settings.php:114
+msgid "Optimization"
+msgstr "Optimalizálás"
+
+#: inc/classes/class-imagify-files-list-table.php:439
+msgid "Status"
+msgstr "Állapot"
+
+#: inc/classes/class-imagify-files-list-table.php:440
+msgid "Optimization Level"
+msgstr "Optimalizálási szint"
+
+#: inc/classes/class-imagify-files-list-table.php:441
+msgid "Actions"
+msgstr "Műveletek"
+
+#: inc/classes/class-imagify-files-list-table.php:495
+msgctxt "checkbox label"
+msgid "Select file"
+msgstr "Fájl kiválasztása"
+
+#: inc/classes/class-imagify-files-list-table.php:579
+msgid "This folder is not selected for bulk optimization."
+msgstr "Ez a mappa nincs kiválasztva tömeges optimalizálásra."
+
+#: inc/classes/class-imagify-files-list-table.php:596
+#: inc/functions/admin-ui.php:91
+msgid "Original Filesize:"
+msgstr "Eredeti fájlméret:"
+
+#: inc/classes/class-imagify-files-list-table.php:601
+#: inc/functions/admin-ui.php:50
+msgid "New Filesize:"
+msgstr "Új fájlméret:"
+
+#: inc/classes/class-imagify-files-list-table.php:605
+#: inc/functions/admin-ui.php:74 inc/functions/i18n.php:202
+#: views/modal-settings-visual-comparison.php:80
+#: views/modal-settings-visual-comparison.php:100
+#: views/modal-settings-visual-comparison.php:121
+msgid "Original Saving:"
+msgstr "Megtakarítás az eredeti fájlmérethez képest:"
+
+#: inc/classes/class-imagify-files-list-table.php:620
+#: inc/functions/admin-ui.php:97 inc/functions/admin-ui.php:100
+msgid "Yes"
+msgstr "Igen"
+
+#: inc/classes/class-imagify-files-list-table.php:620
+#: inc/functions/admin-ui.php:97
+msgid "No"
+msgstr "Nem"
+
+#: inc/classes/class-imagify-files-list-table.php:623
+#: inc/functions/admin-ui.php:102
+msgid "Next-Gen generated:"
+msgstr "Next-Gen formátumok létrehozva:"
+
+#: inc/classes/class-imagify-files-list-table.php:649
+msgctxt "Media File"
+msgid "Not optimized"
+msgstr "Nincs optimalizálva"
+
+#: inc/classes/class-imagify-files-list-table.php:657
+msgid "No changes found"
+msgstr "Nem találhatók változások"
+
+#: inc/classes/class-imagify-files-list-table.php:660
+msgid "The file has changed"
+msgstr "A fájl megváltozott"
+
+#: inc/classes/class-imagify-files-scan.php:35
+msgid "Invalid folder."
+msgstr "Érvénytelen mappa."
+
+#: inc/classes/class-imagify-files-scan.php:41
+msgid "This folder does not exist."
+msgstr "Ez a mappa nem létezik."
+
+#. translators: %1$s = Plugin name, %2$s = PHP version required.
+#: inc/classes/class-imagify-requirements-check.php:246
+#, php-format
+msgid ""
+"To use this %1$s version, please ask your web host how to upgrade your "
+"server to PHP %2$s or higher."
+msgstr "Ennek a %1$s verziónak a használatához kérlek, kérdezd meg a webtárhely-szolgáltatódat, hogyan frissítheted a szerveredet PHP %2$s vagy újabb verzióra."
+
+#. translators: %1$s = Plugin name, %2$s = WordPress version required.
+#: inc/classes/class-imagify-requirements-check.php:252
+#, php-format
+msgid ""
+"To use this %1$s version, please upgrade WordPress to version %2$s or "
+"higher."
+msgstr "Ennek a %1$s verziónak a használatához kérlek, frissítsd a WordPress-t %2$s vagy újabb verzióra."
+
+#. translators: %1$s = Plugin name, %2$s = Plugin version, $3$s is something
+#. like "PHP 5.4" or "PHP 5.4 and WordPress 4.0".
+#: inc/classes/class-imagify-requirements-check.php:260
+#, php-format
+msgid "To function properly, %1$s %2$s requires at least %3$s."
+msgstr "A(z) %1$s %2$s megfelelő működéséhez legalább %3$s szükséges."
+
+#: inc/classes/class-imagify-requirements-check.php:262
+msgid ""
+"If you are not able to upgrade, you can rollback to the previous version by "
+"using the button below."
+msgstr "Ha nem tudsz frissíteni, az alábbi gombbal visszaállhatsz az előző verzióra."
+
+#. translators: %s = Previous plugin version.
+#: inc/classes/class-imagify-requirements-check.php:264
+#, php-format
+msgid "Re-install version %s"
+msgstr "A(z) %s verzió újratelepítése"
+
+#. translators: %s is the plugin name.
+#: inc/classes/class-imagify-requirements-check.php:318
+#: inc/classes/class-imagify-requirements-check.php:329
+#, php-format
+msgid "%s Update Rollback"
+msgstr "%s frissítés visszaállítása"
+
+#: inc/classes/class-imagify-settings.php:612
+msgid "Select All"
+msgstr "Összes kijelölése"
+
+#: inc/classes/class-imagify-settings.php:620
+msgid "Unselect All"
+msgstr "Összes kijelölésének megszüntetése"
+
+#: inc/classes/class-imagify-views.php:143
+#: inc/classes/class-imagify-views.php:177 views/part-files-list-header.php:5
+msgid "Other Media optimized by Imagify"
+msgstr "Az Imagify által optimalizált egyéb médiafájlok"
+
+#: inc/classes/class-imagify-views.php:143
+#: inc/classes/class-imagify-views.php:177
+msgid "Other Media"
+msgstr "Egyéb médiafájlok"
+
+#: inc/classes/class-imagify-views.php:226
+msgid "Optimize your media files"
+msgstr "Optimalizáld a médiafájljaidat"
+
+#: inc/classes/class-imagify-views.php:276 views/part-settings-library.php:10
+msgid "Media Library"
+msgstr "Médiatár"
+
+#. translators: 1 is the opening of a link, 2 is the closing of this link.
+#: inc/classes/class-imagify-views.php:278
+#, php-format
+msgid ""
+"You can also re-optimize your media files from your %1$sMedia Library%2$s "
+"screen."
+msgstr "Újraoptimalizálhatod a médiafájljaidat a %1$sMédiatár%2$s képernyőjéről is."
+
+#: inc/classes/class-imagify-views.php:290
+msgid "Custom folders"
+msgstr "Egyéni mappák"
+
+#. translators: 1 is the opening of a link, 2 is the closing of this link.
+#: inc/classes/class-imagify-views.php:292
+#, php-format
+msgid ""
+"You can re-optimize your media files more finely directly in the %1$smedia "
+"management%2$s."
+msgstr "Újraoptimalizálhatod médiafájljaidat részletesebben, közvetlenül a %1$smédiakezelés%2$s felületén."
+
+#: inc/classes/class-imagify.php:90
+msgid "API key required."
+msgstr "API-kulcs szükséges."
+
+#: inc/deprecated/classes/class-imagify-admin-ajax-post-deprecated.php:126
+msgid "Invalid file ID"
+msgstr "Hibás fájl-ID"
+
+#: inc/deprecated/classes/class-imagify-admin-ajax-post-deprecated.php:216
+#: inc/deprecated/classes/class-imagify-as3cf-attachment.php:351
+#: inc/deprecated/classes/class-imagify-attachment.php:572
+#: inc/deprecated/classes/class-imagify-attachment.php:691
+#: inc/deprecated/classes/class-imagify-file-attachment.php:619
+#: inc/deprecated/classes/class-imagify-file-attachment.php:696
+msgid "This type of file is not supported."
+msgstr "Ez a fájltípus nem támogatott."
+
+#: inc/deprecated/classes/class-imagify-as3cf-attachment.php:260
+#: inc/deprecated/classes/class-imagify-as3cf-attachment.php:289
+#: inc/deprecated/classes/class-imagify-as3cf-attachment.php:465
+#: inc/deprecated/classes/class-imagify-as3cf-attachment.php:470
+msgid "This size could not be retrieved from Amazon S3."
+msgstr "Ezt a méretet nem sikerült lekérni az Amazon S3-ból."
+
+#: inc/deprecated/classes/class-imagify-as3cf-attachment.php:277
+#: inc/deprecated/classes/class-imagify-attachment.php:488
+#: inc/deprecated/classes/class-imagify-attachment.php:719
+msgid ""
+"This size is not authorized to be optimized. Update your Imagify settings if"
+" you want to optimize it."
+msgstr "Ennek a méretnek az optimalizálása nincs engedélyezve. Módosítsd az Imagify beállításait, ha optimalizálni szeretnéd."
+
+#: inc/deprecated/classes/class-imagify-as3cf-attachment.php:401
+#: inc/deprecated/classes/class-imagify-as3cf-attachment.php:405
+msgid "Files could not be sent to Amazon S3."
+msgstr "A fájlokat nem sikerült elküldeni az Amazon S3-ra."
+
+#: inc/deprecated/classes/class-imagify-as3cf-attachment.php:415
+#: inc/deprecated/classes/class-imagify-as3cf-attachment.php:419
+msgid "The main image could not be retrieved from Amazon S3."
+msgstr "A fő képet nem sikerült lekérni az Amazon S3-ból."
+
+#. translators: %d is a number of thumbnails.
+#: inc/deprecated/classes/class-imagify-attachment.php:611
+#, php-format
+msgid "%d thumbnail failed to be created"
+msgid_plural "%d thumbnails failed to be created"
+msgstr[0] "%d bélyegkép létrehozása nem sikerült"
+msgstr[1] "%d bélyegkép létrehozása nem sikerült"
+
+#: inc/deprecated/classes/class-imagify-file-attachment.php:626
+msgid "This file is already optimized with this level."
+msgstr "Ez a fájl már ezen a szinten van optimalizálva."
+
+#: inc/deprecated/classes/class-imagify-file-attachment.php:703
+msgid "The backup file does not exist."
+msgstr "A biztonsági másolat fájlja nem létezik."
+
+#: inc/deprecated/classes/class-imagify-file-attachment.php:709
+#: inc/deprecated/deprecated.php:740
+msgid "The file path is empty."
+msgstr "A fájl elérési útja üres."
+
+#: inc/deprecated/classes/class-imagify-ngg-attachment.php:753
+msgid "Mime type not supported."
+msgstr "MIME-típus nem támogatott."
+
+#: inc/deprecated/classes/class-imagify-ngg-attachment.php:758
+msgid "Backup image not found."
+msgstr "A kép biztonsági másolata nem található."
+
+#: inc/deprecated/classes/class-imagify-ngg-attachment.php:792
+msgid "Restoration failed."
+msgstr "A visszaállítás sikertelen."
+
+#: inc/deprecated/classes/class-imagify-ngg-attachment.php:939
+msgid "Related data could not be saved."
+msgstr "A kapcsolódó adatokat nem sikerült menteni."
+
+#: inc/deprecated/classes/class-imagify-regenerate-thumbnails-deprecated.php:53
+msgid "No thumbnail sizes selected"
+msgstr "Nincs kiválasztva bélyegképméret."
+
+#: inc/deprecated/deprecated.php:352
+msgid "Notice:"
+msgstr "Figyelem:"
+
+#. translators: 1 is this plugin name, 2 is the required WP version, 3 is the
+#. current WP version.
+#: inc/deprecated/deprecated.php:354
+#, php-format
+msgid ""
+"%1$s requires WordPress %2$s minimum, your website is actually running "
+"version %3$s."
+msgstr "%1$s legalább a WordPress %2$s verziót igényli, a honlapodon jelenleg a %3$s verzió fut."
+
+#: inc/deprecated/deprecated.php:619 inc/functions/api.php:234
+#: inc/functions/i18n.php:111 inc/functions/i18n.php:261
+msgid "cURL is not available on the server."
+msgstr "A cURL nem érhető el a kiszolgálón."
+
+#. translators: %s is a "More info?" link.
+#: inc/deprecated/deprecated.php:628 inc/functions/i18n.php:114
+#: inc/functions/i18n.php:264
+#, php-format
+msgid ""
+"No php extensions are available to edit images on the server. ImageMagick or"
+" GD is required. %s"
+msgstr "A kiszolgálón nem érhetők el PHP-kiterjesztések a képek szerkesztéséhez. ImageMagick vagy GD szükséges. %s"
+
+#: inc/deprecated/deprecated.php:640 inc/functions/i18n.php:118
+#: inc/functions/i18n.php:268
+msgid ""
+"Sorry, our servers are temporarily unavailable. Please, try again in a "
+"couple of minutes."
+msgstr "Sajnáljuk, szervereink átmenetileg nem érhetők el. Kérlek, próbáld meg újra néhány perc múlva."
+
+#. translators: %s is a file path.
+#: inc/deprecated/deprecated.php:646
+#, php-format
+msgid "Could not find %s."
+msgstr "Nem található %s."
+
+#. translators: %s is a file path.
+#: inc/deprecated/deprecated.php:652
+#, php-format
+msgid "%s is not writable."
+msgstr "A(z) %s nem írható."
+
+#: inc/deprecated/deprecated.php:752
+msgid "The file to backup does not exist."
+msgstr "A mentendő fájl nem létezik."
+
+#: inc/deprecated/deprecated.php:768
+msgid "Error while retrieving the uploads directory path."
+msgstr "Hiba az uploads könyvtár elérési útjának lekérése közben."
+
+#: inc/functions/admin-ui.php:54
+msgid "Convert:"
+msgstr "Konvertálás:"
+
+#: inc/functions/admin-ui.php:83
+msgid "Close details"
+msgstr "Részletek bezárása"
+
+#: inc/functions/admin-ui.php:83 inc/functions/admin-ui.php:84
+msgid "View details"
+msgstr "Részletek megtekintése"
+
+#: inc/functions/admin-ui.php:94 views/modal-settings-visual-comparison.php:62
+#: views/modal-settings-visual-comparison.php:72
+#: views/modal-settings-visual-comparison.php:92
+#: views/modal-settings-visual-comparison.php:113
+msgid "Level:"
+msgstr "Szint:"
+
+#: inc/functions/admin-ui.php:100
+msgid "Partially"
+msgstr "Részlegesen"
+
+#: inc/functions/admin-ui.php:117
+msgid "Next-Gen status:"
+msgstr "Következő generációs állapot:"
+
+#: inc/functions/admin-ui.php:123
+msgid "Thumbnails Optimized:"
+msgstr "Optimalizált bélyegképek:"
+
+#: inc/functions/admin-ui.php:124
+msgid "Overall Saving:"
+msgstr "Összesített megtakarítás:"
+
+#: inc/functions/admin-ui.php:510
+msgid "You are not allowed to optimize this file."
+msgstr "Nincs jogosultságod ennek a fájlnak az optimalizálásához."
+
+#: inc/functions/admin-ui.php:522
+msgid "This media lacks the required metadata and cannot be optimized."
+msgstr "Ennek a médiának hiányoznak a szükséges metaadatok, ezért nem optimalizálható."
+
+#. translators: This sentense already exists in WordPress.
+#: inc/functions/admin.php:305
+msgid "Sorry, you are not allowed to do that."
+msgstr "Sajnáljuk, ehhez nincs jogosultságod."
+
+#. translators: This sentense already exists in WordPress.
+#: inc/functions/admin.php:338
+msgid "Go back"
+msgstr "Vissza"
+
+#. translators: %s is the plugin name.
+#: inc/functions/admin.php:343
+#, php-format
+msgid "%s Failure Notice"
+msgstr "%s hibaértesítés"
+
+#: inc/functions/api.php:217
+msgid "Could not initialize a new cURL handle."
+msgstr "Nem sikerült inicializálni egy új cURL-kezelőt."
+
+#. translators: %1$s = opening link tag, %2$s = closing link tag.
+#: inc/functions/api.php:220
+#, php-format
+msgid "An unknown error occurred: %1$sMore info and possible solutions%2$s"
+msgstr "Ismeretlen hiba történt: %1$stovábbi információ és lehetséges megoldások%2$s"
+
+#: inc/functions/api.php:224
+msgid "Your file is too big to be uploaded on our server."
+msgstr "A fájl túl nagy a szerverünkre történő feltöltéshez."
+
+#: inc/functions/api.php:225
+msgid "WebP file is larger than the original image"
+msgstr "A WebP-fájl nagyobb, mint az eredeti kép"
+
+#: inc/functions/api.php:231 inc/functions/api.php:232
+msgid "AVIF file is larger than the original image"
+msgstr "Az AVIF-fájl nagyobb az eredeti képnél"
+
+#: inc/functions/api.php:233
+msgid "Our server returned an invalid response."
+msgstr "A szerverünk hibás választ adott."
+
+#: inc/functions/api.php:236
+msgid "Authentication not provided."
+msgstr "Nincs megadva hitelesítés."
+
+#: inc/functions/api.php:237
+msgid "Cannot create client token."
+msgstr "Nem hozható létre kliens-token."
+
+#: inc/functions/api.php:238
+msgid "Confirm your account to continue optimizing files."
+msgstr "Erősítsd meg a fiókodat a fájlok optimalizálásának folytatásához."
+
+#: inc/functions/api.php:239
+msgid "Coupon does not exist."
+msgstr "A kupon nem létezik."
+
+#: inc/functions/api.php:240
+msgid "Email field should not be empty."
+msgstr "Az e-mail mező nem lehet üres."
+
+#: inc/functions/api.php:241
+msgid "This account already exists."
+msgstr "Ez a fiók már létezik."
+
+#: inc/functions/api.php:242
+msgid "Error uploading to Data Storage."
+msgstr "Hiba a Data Storage-ba történő feltöltés során."
+
+#: inc/functions/api.php:243
+msgid "Unable to connect to Data Storage API to get the token."
+msgstr "Nem lehet csatlakozni a Data Storage API-hoz a token lekéréséhez."
+
+#: inc/functions/api.php:244
+msgid "Unable to connect to Data Storage API."
+msgstr "Nem lehet csatlakozni a Data Storage API-hoz."
+
+#: inc/functions/api.php:245
+msgid "Unable to retrieve the token from Data Storage API."
+msgstr "Nem lehet lekérni a tokent a Data Storage API-ból."
+
+#: inc/functions/api.php:246
+msgid "This email is already registered, you should try another email."
+msgstr "Ez az e-mail-cím már regisztrálva van, próbálj meg egy másik e-mail-címet."
+
+#: inc/functions/api.php:247
+msgid "This user does not exist."
+msgstr "Ez a felhasználó nem létezik."
+
+#: inc/functions/api.php:248
+msgid "Too many requests, please be patient."
+msgstr "Túl sok kérés, kérlek, légy türelemmel."
+
+#: inc/functions/api.php:249
+msgid "Unable to regenerate access token."
+msgstr "Nem lehet újragenerálni a hozzáférési tokent."
+
+#: inc/functions/api.php:250
+msgid "User not valid."
+msgstr "Érvénytelen felhasználó."
+
+#: inc/functions/api.php:251
+msgid ""
+"WELL DONE. This media file is already optimized, no further optimization is "
+"required."
+msgstr "SZÉP MUNKA. Ez a médiafájl már optimalizálva van, további optimalizálásra nincs szükség."
+
+#: inc/functions/api.php:252
+msgid "You are not authorized to perform this action."
+msgstr "Nincs jogosultságod ennek a műveletnek a végrehajtásához."
+
+#: inc/functions/api.php:253
+msgid ""
+"You have consumed all your data. You have to upgrade your account to "
+"continue."
+msgstr "Elhasználtad az összes adatkeretedet. A folytatáshoz magasabb csomagra kell váltanod."
+
+#: inc/functions/api.php:255
+msgid "Invalid or corrupted file."
+msgstr "Érvénytelen vagy sérült fájl."
+
+#. translators: %s is an error message.
+#: inc/functions/api.php:265
+#, php-format
+msgid "An error occurred (%s)."
+msgstr "Hiba történt (%s)."
+
+#. translators: %s is an error message.
+#: inc/functions/api.php:271
+#, php-format
+msgid "Our server returned an error (%s)."
+msgstr "A szerverünk hibát adott vissza (%s)."
+
+#. translators: %s is a formatted number, dont use %d.
+#: inc/functions/api.php:277
+#, php-format
+msgid "Custom One Time plan starts from %s MB."
+msgstr "A Custom One Time csomag %s MB-tól indul."
+
+#. translators: %s is a file extension.
+#: inc/functions/api.php:283
+#, php-format
+msgid "%s is not a valid extension."
+msgstr "A(z) %s nem érvényes kiterjesztés."
+
+#. translators: %s is a float number.
+#: inc/functions/api.php:289
+#, php-format
+msgid "Request was throttled. Expected available in %s second."
+msgid_plural "Request was throttled. Expected available in %s seconds."
+msgstr[0] "A kérést ideiglenesen korlátoztuk. Várhatóan %s másodperc múlva lesz elérhető."
+msgstr[1] "A kérést ideiglenesen korlátoztuk. Várhatóan %s másodperc múlva lesz elérhető."
+
+#: inc/functions/common.php:402 views/button/re-optimize.php:22
+#: views/button/re-optimize.php:23
+msgid "Smart"
+msgstr "Intelligens"
+
+#: inc/functions/common.php:404 views/button/re-optimize.php:21
+msgid "Lossless"
+msgstr "Veszteségmentes"
+
+#. translators: 1: PHP class name, 2: PHP parent class name, 3: version
+#. number, 4: replacement class name.
+#: inc/functions/common.php:512
+#, php-format
+msgid ""
+"The called class %1$s extending %2$s is <strong>deprecated</strong> since "
+"version %3$s! Use %4$s instead."
+msgstr "A meghívott %1$s osztály, amely a(z) %2$s nevű osztályt terjeszti ki, a %3$s verzió óta <strong>elavult</strong>! Helyette ezt használd: %4$s."
+
+#. translators: 1: PHP class name, 2: PHP parent class name, 3: version
+#. number.
+#: inc/functions/common.php:529
+#, php-format
+msgid ""
+"The called class %1$s extending %2$s is <strong>deprecated</strong> since "
+"version %3$s!"
+msgstr "A meghívott %1$s osztály, amely kiterjeszti a(z) %2$s-t, <strong>elavult</strong> a(z) %3$s verzió óta!"
+
+#. translators: 1: PHP class name, 2: version number, 3: replacement class
+#. name.
+#: inc/functions/common.php:549
+#, php-format
+msgid ""
+"The called class %1$s is <strong>deprecated</strong> since version %2$s! Use"
+" %3$s instead."
+msgstr "A meghívott %1$s osztály a(z) %2$s verzió óta <strong>elavult</strong>! Helyette ezt használd: %3$s."
+
+#. translators: 1: PHP class name, 2: version number.
+#: inc/functions/common.php:565
+#, php-format
+msgid ""
+"The called class %1$s is <strong>deprecated</strong> since version %2$s!"
+msgstr "A meghívott %1$s osztály <strong>elavult</strong> a(z) %2$s verzió óta!"
+
+#. translators: Don't use escaped HTML entities here (like &nbsp;).
+#: inc/functions/i18n.php:37
+msgid "Let's get you started!"
+msgstr "Kezdjük el!"
+
+#: inc/functions/i18n.php:38
+msgid "Enter your email to get an API key:"
+msgstr "Add meg az e-mail-címedet az API-kulcs igényléséhez:"
+
+#: inc/functions/i18n.php:39
+msgid "Sign Up"
+msgstr "Regisztráció"
+
+#: inc/functions/i18n.php:40
+msgid "You need to specify an email!"
+msgstr "Meg kell adnod egy e-mail-címet!"
+
+#. translators: Don't use escaped HTML entities here (like &nbsp;).
+#: inc/functions/i18n.php:42 inc/functions/i18n.php:49
+#: inc/functions/i18n.php:73
+msgid "Congratulations!"
+msgstr "Gratulálunk!"
+
+#: inc/functions/i18n.php:43
+msgid ""
+"Your account has been successfully created. Please check your mailbox, you "
+"are going to receive an email with API key."
+msgstr "A fiókod sikeresen létrejött. Nézd meg a postafiókodat, hamarosan e-mailben megkapod az API-kulcsot."
+
+#. translators: Don't use escaped HTML entities here (like &nbsp;).
+#: inc/functions/i18n.php:45
+msgid "Connect to Imagify!"
+msgstr "Csatlakozás az Imagify-hoz!"
+
+#: inc/functions/i18n.php:46
+msgid "Paste your API key below:"
+msgstr "Illeszd be az API-kulcsodat alább:"
+
+#: inc/functions/i18n.php:47
+msgid "Connect me"
+msgstr "Csatlakozás"
+
+#: inc/functions/i18n.php:48
+msgid "You need to specify your API key!"
+msgstr "Meg kell adnod az API-kulcsodat!"
+
+#: inc/functions/i18n.php:50 inc/functions/i18n.php:74
+msgid ""
+"Your API key is valid. You can now configure the Imagify settings to "
+"optimize your images."
+msgstr "Az API-kulcsod érvényes. Most már megadhatod a képeid optimalizálásához szükséges beállításokat az Imagifyban."
+
+#: inc/functions/i18n.php:66
+msgid ""
+"Are you sure you want to reset the Imagify internal state? This will clear "
+"optimization locks and cancel any pending jobs."
+msgstr "Biztosan alaphelyzetbe állítod az Imagify belső állapotát? Ezzel feloldod az optimalizálási zárolásokat, és megszakítod a függőben lévő feladatokat."
+
+#: inc/functions/i18n.php:68
+msgid ""
+"An error occurred while resetting the internal state. Please try again."
+msgstr "Hiba történt a belső állapot alaphelyzetbe állításakor. Próbáld meg újra."
+
+#: inc/functions/i18n.php:71 views/part-settings-account.php:73
+msgid "Your API key is valid."
+msgstr "Az API-kulcsod érvényes."
+
+#: inc/functions/i18n.php:72
+msgid "Check in progress..."
+msgstr "Ellenőrzés folyamatban..."
+
+#: inc/functions/i18n.php:75
+msgid "Don't Need a Parachute?"
+msgstr "Nincs szükséged ejtőernyőre?"
+
+#: inc/functions/i18n.php:76
+msgid ""
+"If you keep this option deactivated, you won't be able to re-optimize your "
+"images to another compression level and restore your original images in case"
+" of need."
+msgstr "Ha ezt az opciót kikapcsolva hagyod, nem tudod majd a képeidet másik tömörítési szinten újraoptimalizálni, és szükség esetén az eredeti képeket visszaállítani."
+
+#: inc/functions/i18n.php:77 views/part-settings-row-custom-folder.php:7
+msgctxt "custom folder"
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: inc/functions/i18n.php:78 inc/functions/i18n.php:81
+msgid "Select Folders"
+msgstr "Mappák kiválasztása"
+
+#: inc/functions/i18n.php:79
+msgid "Select one or several folders to optimize."
+msgstr "Válassz ki egy vagy több mappát az optimalizáláshoz."
+
+#: inc/functions/i18n.php:80
+msgid "Some folders that do not contain any images are hidden."
+msgstr "Egyes, képet nem tartalmazó mappák rejtve vannak."
+
+#: inc/functions/i18n.php:82
+msgid "Choose the folders to optimize"
+msgstr "Optimalizálandó mappák kiválasztása"
+
+#: inc/functions/i18n.php:83 inc/functions/i18n.php:124
+#: inc/functions/i18n.php:259 inc/functions/i18n.php:279
+msgid "Error"
+msgstr "Hiba"
+
+#: inc/functions/i18n.php:84
+msgid "Added! All Good!"
+msgstr "Hozzáadva! Minden rendben!"
+
+#: inc/functions/i18n.php:121 inc/functions/i18n.php:273
+msgid "Hold on!"
+msgstr "Egy pillanat!"
+
+#: inc/functions/i18n.php:122 inc/functions/i18n.php:276
+msgid ""
+"All your optimized images already have a next-gen version. Congratulations!"
+msgstr "Az összes optimalizált képednek már van next-gen verziója. Gratulálunk!"
+
+#: inc/functions/i18n.php:123
+msgid ""
+"Because the selected images did not have a backup copy, Imagify was unable "
+"to create next-gen versions."
+msgstr "Mivel a kiválasztott képekről nem volt biztonsági másolat, az Imagify nem tudott next-gen verziókat létrehozni."
+
+#: inc/functions/i18n.php:125 inc/functions/i18n.php:280
+msgid "The operation failed."
+msgstr "A művelet nem sikerült."
+
+#: inc/functions/i18n.php:126 inc/functions/i18n.php:288
+msgid "Oops, There is something wrong!"
+msgstr "Hoppá, valami hiba történt!"
+
+#: inc/functions/i18n.php:127 inc/functions/i18n.php:289
+msgid ""
+"An unknown error occurred when we tried to get all your unoptimized media "
+"files. Try again and if the issue still persists, please contact us!"
+msgstr "Ismeretlen hiba történt, amikor megpróbáltuk lekérni a nem optimalizált médiafájljaidat. Próbáld meg újra, és ha a probléma továbbra is fennáll, lépj kapcsolatba velünk!"
+
+#: inc/functions/i18n.php:149
+msgid "Error with checking this coupon."
+msgstr "Hiba a kupon ellenőrzésekor."
+
+#. translators: 1 is a percentage, 2 is a coupon code.
+#: inc/functions/i18n.php:152
+#, php-format
+msgctxt "coupon validated"
+msgid "%1$s off with %2$s"
+msgstr "%1$s kedvezmény a(z) %2$s használatával"
+
+#: inc/functions/i18n.php:156
+msgid ""
+"Something went wrong with getting our updated offers. Please retry later."
+msgstr "Hiba történt a frissített ajánlataink lekérésekor. Próbáld meg később újra."
+
+#: inc/functions/i18n.php:157
+msgid "If you have a <strong>coupon code</strong><br> use it here:"
+msgstr "Ha van <strong>kuponkódod</strong><br> itt használhatod fel:"
+
+#: inc/functions/i18n.php:158
+msgid "This coupon is not valid with this plan."
+msgstr "Ez a kupon erre a csomagra nem érvényes."
+
+#: inc/functions/i18n.php:201 views/modal-settings-visual-comparison.php:66
+#: views/modal-settings-visual-comparison.php:76
+#: views/modal-settings-visual-comparison.php:96
+#: views/modal-settings-visual-comparison.php:117
+msgid "File Size:"
+msgstr "Fájlméret:"
+
+#: inc/functions/i18n.php:203 views/modal-payment.php:116
+#: views/modal-settings-infos.php:52
+#: views/modal-settings-visual-comparison.php:135
+#: views/part-settings-analytics.php:45
+msgid "Close"
+msgstr "Bezárás"
+
+#: inc/functions/i18n.php:204
+msgid "Original File"
+msgstr "Eredeti fájl"
+
+#: inc/functions/i18n.php:205
+msgid "Optimized File"
+msgstr "Optimalizált fájl"
+
+#: inc/functions/i18n.php:206 views/button/compare-images.php:12
+msgid "Compare Original VS Optimized"
+msgstr "Az eredeti és az optimalizált összehasonlítása"
+
+#: inc/functions/i18n.php:224
+msgid "Optimize Missing Sizes"
+msgstr "Hiányzó méretek optimalizálása"
+
+#: inc/functions/i18n.php:225 inc/functions/i18n.php:346
+#: views/button/restore.php:25
+msgid "Restore Original"
+msgstr "Eredeti visszaállítása"
+
+#: inc/functions/i18n.php:257
+msgid "Unoptimized"
+msgstr "Nem optimalizált"
+
+#: inc/functions/i18n.php:258
+msgid "Optimized"
+msgstr "Optimalizált"
+
+#: inc/functions/i18n.php:271
+msgid "Please wait..."
+msgstr "Kérlek, várj..."
+
+#: inc/functions/i18n.php:272
+msgid ""
+"We are trying to get your unoptimized media files, it may take time "
+"depending on the number of files."
+msgstr "Megpróbáljuk lekérni a nem optimalizált médiafájljaidat; ez a fájlok számától függően időbe telhet."
+
+#: inc/functions/i18n.php:275
+msgid "All your media files have been optimized by Imagify. Congratulations!"
+msgstr "Minden médiafájlodat optimalizálta az Imagify. Gratulálunk!"
+
+#: inc/functions/i18n.php:278
+msgid "Optimizing"
+msgstr "Optimalizálás folyamatban"
+
+#: inc/functions/i18n.php:281
+msgctxt "adjective"
+msgid "Complete"
+msgstr "Kész"
+
+#: inc/functions/i18n.php:282
+msgctxt "file"
+msgid "Already Optimized"
+msgstr "Már optimalizálva"
+
+#. translators: %s is a number. Don't use %d.
+#: inc/functions/i18n.php:284
+#, php-format
+msgid "%s file(s)"
+msgstr "%s fájl"
+
+#: inc/functions/i18n.php:285
+msgctxt "noun"
+msgid "Notice"
+msgstr "Értesítés"
+
+#. translators: %s is a number. Don't use %d.
+#: inc/functions/i18n.php:287
+#, php-format
+msgid "%s error(s)"
+msgstr "%s hiba"
+
+#: inc/functions/i18n.php:290
+msgid "Waiting other optimizations to finish."
+msgstr "Várakozás a többi optimalizálás befejezésére."
+
+#. translators: %s is a formatted number, dont use %d.
+#: inc/functions/i18n.php:292
+#, php-format
+msgid "%s Media File(s) Optimized"
+msgstr "%s médiafájl optimalizálva"
+
+#. translators: %s is a formatted number, dont use %d.
+#: inc/functions/i18n.php:294
+#, php-format
+msgid "%s Error(s)"
+msgstr "%s hiba"
+
+#: inc/functions/i18n.php:295
+msgid "Information"
+msgstr "Információ"
+
+#: inc/functions/i18n.php:296
+msgid "Start the optimization"
+msgstr "Optimalizálás indítása"
+
+#: inc/functions/i18n.php:297
+msgid "Stop the optimization?"
+msgstr "Leállítod az optimalizálást?"
+
+#: inc/functions/i18n.php:298
+msgid ""
+"Media files still waiting in the queue will not be optimized. The media file"
+" currently being processed cannot be interrupted. You can restart the "
+"optimization at any time."
+msgstr "A sorban várakozó médiafájlok optimalizálása nem történik meg. Az éppen feldolgozás alatt álló médiafájl feldolgozását nem lehet megszakítani. Bármikor újraindíthatod az optimalizálást."
+
+#: inc/functions/i18n.php:299 views/page-bulk.php:146
+msgid "Stop the optimization"
+msgstr "Optimalizálás leállítása"
+
+#: inc/functions/i18n.php:300
+msgid "Continue the optimization"
+msgstr "Optimalizálás folytatása"
+
+#: inc/functions/i18n.php:301
+msgid "Optimization stopped"
+msgstr "Optimalizálás leállítva"
+
+#. translators: %s is a number. Don't use %d.
+#: inc/functions/i18n.php:303
+#, php-format
+msgid "%s media file(s) were removed from the queue."
+msgstr "%s médiafájlt távolítottunk el a sorból."
+
+#: inc/functions/i18n.php:304
+msgid "The optimization was stopped. No media file was left in the queue."
+msgstr "Leállt az optimalizálás. Nem maradt médiafájl a sorban."
+
+#: inc/functions/i18n.php:305
+msgid ""
+"The optimization could not be stopped. Please reload the page and try again."
+msgstr "Az optimalizálást nem sikerült leállítani. Töltsd újra az oldalt, és próbáld meg újra."
+
+#: views/admin/admin-bar-pricing.php:8
+msgid "Upgrade Plan"
+msgstr "Előfizetési csomag bővítése"
+
+#: views/admin/admin-bar-status.php:14
+msgid "Account status"
+msgstr "Fiók állapota"
+
+#: views/admin/admin-bar-status.php:15
+msgid "Your subscription:"
+msgstr "Előfizetésed:"
+
+#. translators: %s = percentage.
+#. translators: %s is a data quota.
+#: views/admin/admin-bar-status.php:25
+#: views/part-bulk-optimization-infos.php:11 views/part-upsell.php:61
+#, php-format
+msgid "You have %s space credit left"
+msgstr "Még %s tárhelykereted van"
+
+#: views/admin/admin-bar-status.php:45 views/notice-footer.php:6
+#: views/notice-welcome-steps.php:10 views/part-upsell.php:98
+msgid "Dismiss this notice"
+msgstr "Értesítés bezárása"
+
+#: views/button/delete-webp.php:17
+msgid "Deleting..."
+msgstr "Törlés..."
+
+#: views/button/delete-webp.php:25
+msgid "Delete Next-Gen images"
+msgstr "Next-Gen képek törlése"
+
+#: views/button/generate-webp.php:17
+msgid "Generating..."
+msgstr "Generálás..."
+
+#: views/button/generate-webp.php:26
+msgid "Generate Next-Gen images versions"
+msgstr "Next-Gen képek verzióinak generálása"
+
+#. translators: 1 is the number of thumbnails to optimize, 2 is the opening of
+#. a HTML tag that will be hidden on small screens, 3 is the closing tag.
+#: views/button/optimize-missing-sizes.php:28
+#, php-format
+msgid "%2$sOptimize %3$s%1$d missing thumbnail"
+msgid_plural "%2$sOptimize %3$s%1$d missing thumbnails"
+msgstr[0] "%2$s%3$s%1$d hiányzó bélyegkép optimalizálása"
+msgstr[1] "%2$s%3$s%1$d hiányzó bélyegkép optimalizálása"
+
+#. translators: %s is an optimization level.
+#: views/button/re-optimize.php:36
+#, php-format
+msgid "Re-Optimize with %s compression"
+msgstr "Újraoptimalizálás %s tömörítéssel"
+
+#: views/button/refresh-status.php:17
+msgid "Refreshing status..."
+msgstr "Állapot frissítése..."
+
+#: views/button/retry-optimize.php:42
+msgid "Try again"
+msgstr "Újrapróbálás"
+
+#: views/input/selector.php:13
+msgid "Current value:"
+msgstr "Jelenlegi érték:"
+
+#: views/modal-payment.php:14
+msgid "Choose the Perfect Plan for Your Needs"
+msgstr "Válaszd ki az igényeidnek leginkább megfelelő csomagot"
+
+#: views/modal-payment.php:18
+msgid ""
+"Pick the plan that fits your image optimization goals and unlock the full "
+"potential of Imagify!"
+msgstr "Válaszd ki a képoptimalizálási céljaidhoz illő csomagot, és használd ki az Imagify teljes lehetőségeit!"
+
+#: views/modal-payment.php:47 views/modal-payment.php:66
+msgid "/month"
+msgstr "/hó"
+
+#. translators: %s is a formatted number (don't use %d).
+#: views/modal-payment.php:53
+#, php-format
+msgid "approx: %s images"
+msgstr "kb.: %s kép"
+
+#: views/modal-payment.php:69 views/part-rocket-ad.php:26
+msgid "We recommend for you"
+msgstr "Neked ajánljuk"
+
+#: views/modal-payment.php:72
+msgid "Unlimited upload size"
+msgstr "Korlátlan feltöltési méret"
+
+#: views/modal-payment.php:74
+msgid "Unlimited websites"
+msgstr "Korlátlan számú webhely"
+
+#: views/modal-payment.php:81
+msgid "Choose plan"
+msgstr "Csomag kiválasztása"
+
+#: views/modal-payment.php:111
+msgid "Thank you for being awesome!"
+msgstr "Köszönjük, nagyszerű vagy!"
+
+#: views/modal-settings-infos.php:8
+msgid "You can choose three levels of compression"
+msgstr "Három tömörítési szint közül választhatsz"
+
+#: views/modal-settings-infos.php:11
+#: views/modal-settings-visual-comparison.php:34
+#: views/modal-settings-visual-comparison.php:43
+#: views/modal-settings-visual-comparison.php:73
+msgid "Normal"
+msgstr "Normál"
+
+#: views/modal-settings-infos.php:13
+msgid ""
+"This mode provides lossless optimization, your images will be optimized "
+"without any visible change."
+msgstr "Ez a mód veszteségmentes optimalizálást végez, így a képeiden nem lesz látható változás."
+
+#: views/modal-settings-infos.php:16
+msgid ""
+"If you want the perfect quality for your images, we recommend you that mode."
+msgstr "Ha tökéletes minőséget szeretnél képeidhez, ezt a módot ajánljuk."
+
+#: views/modal-settings-infos.php:19
+msgid ""
+"Note: the file size reduction will be less, compared to aggressive mode."
+msgstr "Megjegyzés: a fájlméret csökkenése kisebb lesz az agresszív módhoz képest."
+
+#: views/modal-settings-infos.php:24
+#: views/modal-settings-visual-comparison.php:35
+#: views/modal-settings-visual-comparison.php:48
+#: views/modal-settings-visual-comparison.php:93
+msgid "Aggressive"
+msgstr "Agresszív"
+
+#: views/modal-settings-infos.php:26
+msgid ""
+"This mode provides perfect optimization of your images without any "
+"significant quality loss."
+msgstr "Ez a mód képeid tökéletes optimalizálását biztosítja jelentős minőségromlás nélkül."
+
+#: views/modal-settings-infos.php:29
+msgid ""
+"This will provide a drastic savings on the initial weight, with a small "
+"reduction in image quality. Most of the time it's not even noticeable."
+msgstr "Jelentősen csökkenti az eredeti fájlméretet, miközben a képminőség csak kis mértékben romlik. Ez többnyire észrevehetetlen."
+
+#: views/modal-settings-infos.php:32
+msgid ""
+"If you want the maximum weight reduction, we recommend using this mode."
+msgstr "Ha a lehető legnagyobb fájlméret-csökkenést szeretnéd, ezt a módot ajánljuk."
+
+#: views/modal-settings-infos.php:37
+#: views/modal-settings-visual-comparison.php:36
+#: views/modal-settings-visual-comparison.php:53
+#: views/modal-settings-visual-comparison.php:114
+msgid "Ultra"
+msgstr "Ultra"
+
+#: views/modal-settings-infos.php:39
+msgid ""
+"This mode will apply all available optimizations for maximum image "
+"compression."
+msgstr "Ez a mód minden elérhető optimalizálást alkalmaz a maximális képtömörítés érdekében."
+
+#: views/modal-settings-infos.php:42
+msgid ""
+"This will provide a huge savings on the initial weight. Sometimes the image "
+"quality could be degraded a little."
+msgstr "Ez nagymértékben csökkenti az eredeti fájlméretet. A képminőség néha kissé romolhat."
+
+#: views/modal-settings-infos.php:45
+msgid ""
+"If you want the maximum weight reduction, and you agree to lose some quality"
+" on the images we recommend using this mode."
+msgstr "Ha a lehető legnagyobb fájlméret-csökkenést szeretnéd, és nem bánod, hogy a képek minősége valamelyest romlik, ezt a módot ajánljuk."
+
+#: views/modal-settings-partners-infos.php:8
+msgid ""
+"Partner links are links to products we trust which might be displayed in the"
+" Imagify plugin or the plugin modal page.  We may earn an affiliate "
+"commission if you make a purchase via these links."
+msgstr "A partnerlinkek olyan, általunk megbízhatónak tartott termékekre mutató linkek, amelyek az Imagify bővítményben vagy annak felugró ablakában jelenhetnek meg. Ha ezeken a linkeken keresztül vásárolsz, partneri jutalékot kaphatunk."
+
+#. translators: %s is a formatted file size.
+#: views/modal-settings-visual-comparison.php:5
+#, php-format
+msgid "Original photography about %s"
+msgstr "Eredeti, %s témájú fénykép"
+
+#. translators: %s is a formatted file size.
+#: views/modal-settings-visual-comparison.php:8
+#: views/modal-settings-visual-comparison.php:11
+#: views/modal-settings-visual-comparison.php:14
+#, php-format
+msgid "Optimized photography about %s"
+msgstr "Optimalizált, %s témájú fénykép"
+
+#. translators: 1 and 2 are optimization levels: "Original", "Normal",
+#. "Aggressive", or "Ultra".
+#: views/modal-settings-visual-comparison.php:24
+#, php-format
+msgid "I want to compare %1$s and %2$s"
+msgstr "Szeretném egymással összehasonlítani a következőket: %1$s és %2$s"
+
+#: views/modal-settings-visual-comparison.php:33
+#: views/modal-settings-visual-comparison.php:38
+#: views/modal-settings-visual-comparison.php:63
+msgid "Original"
+msgstr "Eredeti"
+
+#: views/notice-analytics-optin.php:19
+msgid ""
+"Would you allow Imagify to collect non-sensitive diagnostic data from this "
+"website?"
+msgstr "Engedélyezed, hogy az Imagify nem érzékeny diagnosztikai adatokat gyűjtsön erről a webhelyről?"
+
+#: views/notice-analytics-optin.php:21
+msgid "This would help us to improve Imagify for you in the future."
+msgstr "Ez segítene nekünk abban, hogy a jövőben még jobbá tegyük számodra az Imagifyt."
+
+#: views/notice-analytics-optin.php:24
+msgid "What info will we collect?"
+msgstr "Milyen információkat gyűjtünk?"
+
+#: views/notice-analytics-optin.php:28
+msgid ""
+"Below is a detailed view of all data Imagify will collect if granted "
+"permission. We never collect your images, their content, or any personal "
+"data — only anonymous performance metrics."
+msgstr "Alább részletesen megtekintheted, milyen adatokat gyűjt az Imagify, ha engedélyt adsz rá. Soha nem gyűjtjük a képeidet, azok tartalmát vagy személyes adataidat – csak névtelen teljesítménymutatókat."
+
+#: views/notice-analytics-optin.php:33
+msgid "Yes, allow"
+msgstr "Igen, engedélyezem"
+
+#: views/notice-analytics-optin.php:34
+msgid "No, thanks"
+msgstr "Nem, köszönöm"
+
+#: views/notice-analytics-thankyou.php:15
+msgid "Thank you!"
+msgstr "Köszönjük!"
+
+#: views/notice-analytics-thankyou.php:16
+msgid "Imagify now collects these metrics from your website:"
+msgstr "Az Imagify mostantól ezeket a mérőszámokat gyűjti a webhelyedről:"
+
+#: views/notice-analytics-thankyou.php:18 views/part-settings-analytics.php:60
+msgid ""
+"We never collect your images, their content, or any personal data — only "
+"anonymous performance metrics."
+msgstr "Soha nem gyűjtjük a képeidet, azok tartalmát vagy személyes adataidat – csak névtelen teljesítménymutatókat."
+
+#. translators: %s is a file path.
+#: views/notice-backup-folder-not-writable.php:15
+#, php-format
+msgid ""
+"The backup folder %s is not writable by the server, original images cannot "
+"be saved!"
+msgstr "A(z) %s biztonsági mentési mappa a szerver számára nem írható, az eredeti képek nem menthetők!"
+
+#. translators: %s is a file path.
+#: views/notice-backup-folder-not-writable.php:18
+#, php-format
+msgid ""
+"The backup folder %s cannot be created. Is its parent directory writable by "
+"the server? Original images cannot be saved!"
+msgstr "A(z) %s biztonsági mentési mappa nem hozható létre. A szerver tud írni a szülőkönyvtárba? Az eredeti képek nem menthetők!"
+
+#: views/notice-bulk-optimization-complete.php:14
+#: views/part-bulk-optimization-success.php:17
+msgid "Well done!"
+msgstr "Szép munka!"
+
+#: views/notice-bulk-optimization-complete.php:15
+msgid "The bulk optimization is now complete."
+msgstr "A tömeges optimalizálás befejeződött."
+
+#: views/notice-grid-view.php:7
+msgid "You're missing out!"
+msgstr "Erről lemaradsz!"
+
+#: views/notice-grid-view.php:11
+msgid "Use the List view to optimize images with Imagify."
+msgstr "Használd a listanézetet a képek optimalizálásához az Imagify segítségével."
+
+#: views/notice-grid-view.php:12
+msgid "Switch to the List View"
+msgstr "Váltás listanézetre"
+
+#: views/notice-http-block-external.php:7
+msgid "The external HTTP requests are blocked!"
+msgstr "A külső HTTP-kérések blokkolva vannak!"
+
+#: views/notice-http-block-external.php:13
+msgid ""
+"You defined the <code>WP_HTTP_BLOCK_EXTERNAL</code> constant in the "
+"<code>wp-config.php</code> to block all external HTTP requests."
+msgstr "A(z) <code>wp-config.php</code> fájlban a(z) <code>WP_HTTP_BLOCK_EXTERNAL</code> konstans értékét úgy adtad meg, hogy minden külső HTTP-kérést blokkoljon."
+
+#: views/notice-http-block-external.php:16
+msgid ""
+"To optimize your images, you have to put the following code in your "
+"<code>wp-config.php</code> file so that it works correctly."
+msgstr "A képeid optimalizálásához helyezd el a következő kódot a <code>wp-config.php</code> fájlban, hogy megfelelően működjön."
+
+#: views/notice-http-block-external.php:17
+msgid "Click on the field and press Ctrl-A to select all."
+msgstr "Kattints a mezőre, majd nyomd meg a Ctrl-A billentyűket az összes kijelöléséhez."
+
+#: views/notice-plugins-to-deactivate.php:13
+msgid ""
+"The following plugin is not compatible with this plugin and may cause "
+"unexpected results:"
+msgid_plural ""
+"The following plugins are not compatible with this plugin and may cause "
+"unexpected results:"
+msgstr[0] "A következő bővítmény nem kompatibilis ezzel a bővítménnyel, és váratlan eredményeket okozhat:"
+msgstr[1] "A következő bővítmények nem kompatibilisek ezzel a bővítménnyel, és váratlan eredményeket okozhatnak:"
+
+#: views/notice-plugins-to-deactivate.php:20
+msgid "Deactivate"
+msgstr "Kikapcsolás"
+
+#. translators: 1 is a "bold" tag start, 2 is the "bold" tag end, 3 is a
+#. formatted number (don't use %3$d).
+#: views/notice-rating.php:15
+#, php-format
+msgid ""
+"%1$sCongratulations%2$s, you have optimized %1$s%3$s images%2$s and improved"
+" your website's speed by reducing your images size."
+msgstr "%1$sGratulálunk%2$s, %1$s%3$s képet%2$s optimalizáltál, és javítottad honlapod sebességét képeid méretének csökkentésével."
+
+#. translators: 1 is a "bold" tag start, 2 is the "bold" tag end + a line
+#. break tag, 3 is a link tag start, 4 is the link tag end.
+#: views/notice-rating.php:26 views/part-settings-header.php:25
+#, php-format
+msgid ""
+"%1$sDo you like this plugin?%2$s Please take a few seconds to %3$srate it on"
+" WordPress.org%4$s!"
+msgstr "%1$sTetszik neked ez a bővítmény?%2$s Szánj néhány másodpercet arra, hogy %3$sértékeld a WordPress.org-on%4$s!"
+
+#: views/notice-welcome-steps.php:8
+msgid "Welcome to Imagify, the best way to easily optimize your images!"
+msgstr "Üdvözlünk az Imagify-ban, ez a képeid egyszerű optimalizálásának legjobb módja!"
+
+#: views/notice-welcome-steps.php:17
+msgid "Create an Account"
+msgstr "Fiók létrehozása"
+
+#: views/notice-welcome-steps.php:18
+msgid ""
+"Don't have an Imagify account yet? Optimize your images by creating an "
+"account in a few seconds!"
+msgstr "Még nincs Imagify-fiókod? Hozz létre egy fiókot néhány másodperc alatt, és optimalizáld képeidet!"
+
+#: views/notice-welcome-steps.php:21
+msgid "Sign up, It's FREE!"
+msgstr "Regisztrálj, ez INGYENES!"
+
+#: views/notice-welcome-steps.php:28
+msgid "Enter your API Key"
+msgstr "Add meg az API-kulcsodat"
+
+#. translators: 1 is a link tag start, 2 is the link tag end.
+#: views/notice-welcome-steps.php:33
+#, php-format
+msgid ""
+"Save your API Key you have received by email or you can get it on your "
+"%1$sImagify account page%2$s."
+msgstr "Mentsd el az e-mailben kapott API-kulcsodat, vagy szerezd meg a %1$sImagify-fiókod oldalán%2$s."
+
+#: views/notice-welcome-steps.php:41
+msgid "I have my API key"
+msgstr "Rendelkezem API-kulccsal"
+
+#: views/notice-welcome-steps.php:48
+msgid "Configure it"
+msgstr "Beállítás"
+
+#: views/notice-welcome-steps.php:49
+msgid ""
+"It’s almost done! You have just to configure your optimization settings."
+msgstr "Majdnem kész! Már csak az optimalizálási beállításokat kell megadnod."
+
+#: views/notice-welcome-steps.php:50
+msgid "Go to Settings"
+msgstr "Ugrás a beállításokra"
+
+#. translators: %s is a percentage, e.g. "20%".
+#: views/notice-wp-rocket.php:17
+#, php-format
+msgid ""
+"Discover the best performance optimization plugin at %s off. Make your site "
+"even faster."
+msgstr "Fedezd fel a legjobb teljesítményoptimalizáló bővítményt %s kedvezménnyel. Tedd még gyorsabbá a webhelyedet."
+
+#: views/notice-wp-rocket.php:21
+msgid "Get WP Rocket Now"
+msgstr "WP Rocket beszerzése most"
+
+#: views/notice-wrong-api-key.php:7 views/part-settings-account.php:81
+msgid "Your API key isn't valid!"
+msgstr "Az API-kulcsod érvénytelen!"
+
+#. translators: 1 and 2 are link tag starts, 3 is a link tag end.
+#: views/notice-wrong-api-key.php:17
+#, php-format
+msgid ""
+"Go to your Imagify account page to get your API Key and specify it on "
+"%1$syour settings%3$s or %2$screate an account for free%3$s if you don't "
+"have one yet."
+msgstr "Látogass el az Imagify fiókoldalára, szerezd meg API-kulcsodat, és add meg azt a %1$sbeállításaidban%3$s, vagy %2$shozz létre ingyenes fiókot%3$s, ha még nincs."
+
+#: views/page-bulk.php:14
+msgid "Overview"
+msgstr "Áttekintés"
+
+#: views/page-bulk.php:19
+msgid "Statistics"
+msgstr "Statisztikák"
+
+#. translators: you can use %s to include a line break.
+#: views/page-bulk.php:28
+#, php-format
+msgid "that's the number of original images%s you optimized with Imagify"
+msgstr "ez az eredeti képek%s száma, amelyeket az Imagify segítségével optimalizáltál"
+
+#: views/page-bulk.php:37
+msgid "Original size"
+msgstr "Eredeti méret"
+
+#: views/page-bulk.php:42
+msgid "Optimized size"
+msgstr "Optimalizált méret"
+
+#. translators: %s is a line break.
+#: views/page-bulk.php:56
+#, php-format
+msgid "that's the size you saved %sby using Imagify"
+msgstr "ez az a méret, amelyet %saz Imagify használatával takarítottál meg"
+
+#. translators: %s is a percentage.
+#: views/page-bulk.php:76
+#, php-format
+msgid "You optimized %s of your website's images"
+msgstr "A webhelyed képeinek optimalizált aránya: %s"
+
+#: views/page-bulk.php:98 views/part-settings-account.php:44
+msgid "Your Account"
+msgstr "Fiókod"
+
+#: views/page-bulk.php:101
+msgid "View your profile"
+msgstr "Profilod megtekintése"
+
+#: views/page-bulk.php:142
+msgid "Imagif’em all"
+msgstr "Összes kép optimalizálása"
+
+#. translators: %s is a file size.
+#: views/page-bulk.php:155
+#, php-format
+msgid ""
+"All images greater than %s (after resizing, if any) will be optimized when "
+"using a paid plan."
+msgstr "Fizetős csomag esetén minden, %s méretet meghaladó kép optimalizálódik (szükség esetén átméretezés után)."
+
+#: views/page-settings.php:54
+msgid "General Settings"
+msgstr "Általános beállítások"
+
+#: views/page-settings.php:61
+msgid "Auto-Optimize images on upload"
+msgstr "Képek automatikus optimalizálása feltöltéskor"
+
+#: views/page-settings.php:62
+msgid "Automatically optimize every image you upload to WordPress."
+msgstr "Optimalizáld automatikusan az összes képet, amelyet feltöltesz a WordPressbe."
+
+#: views/page-settings.php:73
+msgid "Backup original images"
+msgstr "Eredeti képek biztonsági mentése"
+
+#: views/page-settings.php:74
+msgid ""
+"Keep your original images in a separate folder before optimization process."
+msgstr "Tartsd meg eredeti képeidet külön mappában az optimalizálási folyamat előtt."
+
+#. translators: %s is a file path.
+#: views/page-settings.php:84
+#, php-format
+msgid ""
+"The backup folder %s cannot be created or is not writable by the server, "
+"original images cannot be saved!"
+msgstr "A(z) %s biztonsági mentési mappa nem hozható létre, vagy a szerver nem tud írni bele, ezért az eredeti képek nem menthetők!"
+
+#: views/page-settings.php:94
+msgid "Lossless compression"
+msgstr "Veszteségmentes tömörítés"
+
+#: views/page-settings.php:95
+msgid ""
+"By default, Imagify optimizes your images by using a smart compression to "
+"get the best compression rate with an optimal quality."
+msgstr "Alapértelmezés szerint az Imagify intelligens tömörítést használva optimalizálja képeidet, hogy a lehető legjobb tömörítési arányt érje el optimális minőség mellett."
+
+#: views/page-settings.php:95
+msgid ""
+"If you are a photographer or focus on the quality of your images rather than"
+" the performance, you may be interested in this option to make sure not a "
+"single pixel looks different in the optimized image compared with the "
+"original."
+msgstr "Ha fotós vagy, vagy a teljesítmény helyett inkább képeid minőségére összpontosítasz, érdekelhet ez az opció, amellyel biztosíthatod, hogy az optimalizált képen egyetlen képpont se térjen el az eredetitől."
+
+#: views/page-settings.php:127
+msgid "Our Plugins"
+msgstr "Bővítményeink"
+
+#: views/page-settings.php:128
+msgid "Build better, faster, safer"
+msgstr "Építs jobban, gyorsabban, biztonságosabban"
+
+#: views/page-settings.php:131
+msgid ""
+"Beyond Imagify, there's a whole family of plugins designed to help you build"
+" better, faster, and safer websites. Each one is crafted with our unique "
+"blend of expertise, simplicity, and outstanding support. Combine our plugins"
+" below to build incredible WordPress websites!"
+msgstr "Az Imagify-n túl egy egész bővítménycsalád áll rendelkezésedre, amely segít neked jobb, gyorsabb és biztonságosabb webhelyeket építeni. Mindegyik a szaktudásunk, az egyszerűség és a kiemelkedő támogatás egyedi ötvözetével készült. Kombináld az alábbi bővítményeinket, és építs lenyűgöző WordPress webhelyeket!"
+
+#: views/page-settings.php:178
+msgid "Partners"
+msgstr "Partnerek"
+
+#: views/page-settings.php:191
+msgid "Display Partner Links"
+msgstr "Partnerlinkek megjelenítése"
+
+#: views/part-analytics-data-table.php:17
+msgid "WordPress version"
+msgstr "WordPress-verzió"
+
+#: views/part-analytics-data-table.php:18
+msgid "PHP version"
+msgstr "PHP-verzió"
+
+#: views/part-analytics-data-table.php:19
+msgid "Plugin version"
+msgstr "Bővítményverzió"
+
+#: views/part-analytics-data-table.php:20
+msgid "Optimization level"
+msgstr "Optimalizálási szint"
+
+#: views/part-analytics-data-table.php:21
+msgid "Media type"
+msgstr "Média típusa"
+
+#: views/part-analytics-data-table.php:21
+msgid "MIME type of the optimized file (jpeg, png, gif…)"
+msgstr "Az optimalizált fájl MIME-típusa (jpeg, png, gif…)"
+
+#: views/part-analytics-data-table.php:22
+msgid "Savings percentage"
+msgstr "Megtakarítás százalékos aránya"
+
+#: views/part-analytics-data-table.php:22
+msgid "Percentage of file size reduced per optimization"
+msgstr "Az optimalizálás során elért fájlméret-csökkenés százaléka"
+
+#: views/part-analytics-data-table.php:23
+msgid "Next-gen format"
+msgstr "Következő generációs formátum"
+
+#: views/part-analytics-data-table.php:24
+msgid "Trigger"
+msgstr "Eseményindító"
+
+#: views/part-analytics-data-table.php:24
+msgid "How the optimization was started (auto, bulk, manual)"
+msgstr "Hogyan indult el az optimalizálás (automatikusan, csoportosan, manuálisan)"
+
+#: views/part-analytics-data-table.php:25
+msgid "License type"
+msgstr "Licenctípus"
+
+#: views/part-bulk-optimization-infos.php:4
+msgid "Some information to know before launching the optimization."
+msgstr "Néhány tudnivaló az optimalizálás megkezdése előtt."
+
+#: views/part-bulk-optimization-infos.php:28
+msgid ""
+"Please be aware that optimizing a large number of images can take a while "
+"depending on your server and network speed."
+msgstr "Vedd figyelembe, hogy sok kép optimalizálása a szerver és a hálózat sebességétől függően eltarthat egy ideig."
+
+#. translators: %s is a formatted number. Don't use %d.
+#: views/part-bulk-optimization-infos.php:33
+#, php-format
+msgid ""
+"If you have more than %s images, you will need to launch the bulk "
+"optimization several times."
+msgstr "Ha több mint %s képed van, a kötegelt optimalizálást többször is el kell indítanod."
+
+#: views/part-bulk-optimization-infos.php:43
+#: views/part-documentation-link.php:10
+msgid "Need help or have questions?"
+msgstr "Segítségre van szükséged vagy kérdéseid vannak?"
+
+#: views/part-bulk-optimization-infos.php:44
+#: views/part-documentation-link.php:11
+msgid "Check our documentation."
+msgstr "Tekintsd meg a dokumentációnkat."
+
+#: views/part-bulk-optimization-newbie.php:6
+msgid "New Feature!"
+msgstr "Új funkció!"
+
+#: views/part-bulk-optimization-newbie.php:11
+msgid "Optimize the images from your site's folders"
+msgstr "Optimalizáld a webhelyed mappáiban lévő képeket"
+
+#: views/part-bulk-optimization-newbie.php:16
+msgid "Choose your folders to optimize"
+msgstr "Válaszd ki az optimalizálandó mappákat"
+
+#: views/part-bulk-optimization-overquota-alert.php:13
+msgid "Upgrade your account to continue optimizing your images."
+msgstr "Válts magasabb csomagra a képeid optimalizálásának folytatásához."
+
+#: views/part-bulk-optimization-overquota-alert.php:16
+msgid "To continue optimizing your images, you can upgrade your subscription."
+msgstr "A képeid optimalizálásának folytatásához válthatsz magasabb csomagra."
+
+#. translators: %1$s = opening link tag, %2$s = closing link tag.
+#: views/part-bulk-optimization-overquota-alert.php:24
+#, php-format
+msgid ""
+"See %1$sour documentation%2$s on all available options to continue "
+"optimizing images."
+msgstr "A képek optimalizálásának folytatásához elérhető összes opciót megtalálod a %1$sdokumentációnkban%2$s."
+
+#: views/part-bulk-optimization-overquota-alert.php:34
+msgid "See our plans on the Imagify website"
+msgstr "Tekintsd meg csomagjainkat az Imagify webhelyén"
+
+#. translators: %1$s = number of images, %2$s = data size, %3$s = data size.
+#: views/part-bulk-optimization-success.php:22
+#, php-format
+msgid "You optimized %1$s images and saved %2$s out of %3$s"
+msgstr "%1$s kép optimalizálásával %2$s megtakarítást értél el, a kiinduló méret pedig %3$s volt"
+
+#: views/part-bulk-optimization-success.php:32
+msgid "How about spreading the word?"
+msgstr "Megosztanád a hírt?"
+
+#. translators: 1 is a link tag start, 2 is the link tag end.
+#: views/part-bulk-optimization-success.php:37
+#, php-format
+msgid ""
+"Please take a few seconds to leave a review on %1$sWordPress.org%2$s. It "
+"would mean the world to us!"
+msgstr "Szánj néhány másodpercet arra, hogy értékelést írj a %1$sWordPress.org%2$s oldalon. Nagyon sokat jelentene számunkra!"
+
+#: views/part-bulk-optimization-success.php:47
+msgid "Leave a review"
+msgstr "Értékelés írása"
+
+#: views/part-bulk-optimization-table-row-folder-type.php:36
+msgid "Current level:"
+msgstr "Aktuális szint:"
+
+#: views/part-bulk-optimization-table.php:70
+msgid "Group selection"
+msgstr "Csoport kiválasztása"
+
+#: views/part-bulk-optimization-table.php:71
+msgid "Group name"
+msgstr "Csoport neve"
+
+#: views/part-bulk-optimization-table.php:72
+msgid "Number of images optimized"
+msgstr "Optimalizált képek darabszáma"
+
+#: views/part-bulk-optimization-table.php:73
+msgid "Errors"
+msgstr "Hibák"
+
+#: views/part-bulk-optimization-table.php:74
+msgid "Optimized Size"
+msgstr "Optimalizált méret"
+
+#: views/part-bulk-optimization-table.php:75
+msgid "Original Size"
+msgstr "Eredeti méret"
+
+#: views/part-bulk-optimization-table.php:76
+msgid "Level Selection"
+msgstr "Szint kiválasztása"
+
+#. translators: %1$s is a formatted percentage, %2$s is a subscription plan
+#. name.
+#: views/part-discount-banner.php:10
+#, php-format
+msgid "%1$s OFF on %2$s subscriptions"
+msgstr "%1$s kedvezmény a %2$s előfizetésekre"
+
+#. translators: %s is a formatted date.
+#: views/part-discount-banner.php:20
+#, php-format
+msgid "Special Offer<br><strong>Until %s</strong>"
+msgstr "Különleges ajánlat<br><strong>%s-ig</strong>"
+
+#. translators: 1 is a "bold" tag opening, 2 is the "bold" tag closing. Please
+#. use a non-breaking space for WP Rocket.
+#: views/part-rocket-ad.php:34
+#, php-format
+msgid ""
+"WP Rocket is a %1$sspeed optimization plugin for WordPress%2$s helping you "
+"to implement a variety of speed-boosting features to your WordPress site."
+msgstr "A WP Rocket egy %1$sWordPresshez készült sebességoptimalizáló bővítmény%2$s, amely segít különféle teljesítménynövelő funkciók megvalósításában a WordPress-webhelyeden."
+
+#. translators: %s is a percentage.
+#: views/part-rocket-ad.php:42
+#, php-format
+msgid "Get %s OFF Now!"
+msgstr "Kapj most %s kedvezményt!"
+
+#: views/part-rocket-ad.php:48
+msgid "Improve your Google PageSpeed Score."
+msgstr "Javítsd a Google PageSpeed pontszámodat."
+
+#: views/part-rocket-ad.php:49
+msgid "Boost your SEO."
+msgstr "Tedd hatékonyabbá az SEO-dat."
+
+#: views/part-rocket-ad.php:50
+msgid "WooCommerce compatibility."
+msgstr "WooCommerce-kompatibilitás."
+
+#: views/part-rocket-ad.php:51
+msgid "Immediate results."
+msgstr "Azonnali eredmények."
+
+#: views/part-rocket-ad.php:54
+msgid "Remove the ad"
+msgstr "Hirdetés eltávolítása"
+
+#: views/part-settings-account.php:39 views/part-settings-account.php:66
+msgid "API Key"
+msgstr "API-kulcs"
+
+#: views/part-settings-account.php:45
+msgid "Options page isn’t available until you enter your API Key"
+msgstr "A beállítások oldala csak az API-kulcs megadása után érhető el"
+
+#: views/part-settings-account.php:58
+msgid "Don't have an API Key yet?"
+msgstr "Még nincs API-kulcsod?"
+
+#: views/part-settings-account.php:60
+msgid "Create a Free API Key"
+msgstr "Ingyenes API-kulcs létrehozása"
+
+#: views/part-settings-account.php:66
+msgid "Enter Your API Key Below"
+msgstr "Add meg alább az API-kulcsodat"
+
+#: views/part-settings-analytics.php:26 views/part-settings-analytics.php:47
+msgid "Imagify Analytics"
+msgstr "Imagify Analytics"
+
+#. translators: %1$s = opening <button> tag, %2$s = closing </button> tag
+#: views/part-settings-analytics.php:32
+#, php-format
+msgid ""
+"I agree to share anonymous data with the development team to help improve "
+"Imagify. %1$sWhat info will we collect?%2$s"
+msgstr "Hozzájárulok ahhoz, hogy névtelen adatokat osszak meg a fejlesztőcsapattal az Imagify fejlesztésének elősegítése érdekében. %1$sMilyen adatokat gyűjtötök?%2$s"
+
+#. translators: %1$s = <strong>, %2$s = </strong>
+#: views/part-settings-analytics.php:52
+#, php-format
+msgid ""
+"Below is a detailed view of all data Imagify will collect %1$sif granted "
+"permission.%2$s"
+msgstr "Alább részletesen megtekintheted, milyen adatokat gyűjt az Imagify, %1$sha engedélyt adsz rá.%2$s"
+
+#: views/part-settings-analytics.php:65
+msgid "Activate Imagify Analytics"
+msgstr "Imagify Analytics bekapcsolása"
+
+#: views/part-settings-custom-folders.php:71
+msgid "Custom Folders"
+msgstr "Egyéni mappák"
+
+#. translators: %s is a theme name.
+#: views/part-settings-custom-folders.php:84
+#, php-format
+msgid "You’re using %s"
+msgstr "Ezt használod: %s"
+
+#. translators: %s is a theme name.
+#: views/part-settings-custom-folders.php:90
+#, php-format
+msgid "child theme of %s"
+msgstr "%s gyermeksablonja"
+
+#: views/part-settings-custom-folders.php:100
+msgid "Your theme is already in the optimization process. All Good!"
+msgid_plural "Your themes are already in the optimization process. All Good!"
+msgstr[0] "A sablonod már része az optimalizálási folyamatnak. Minden rendben!"
+msgstr[1] "A sablonjaid már részei az optimalizálási folyamatnak. Minden rendben!"
+
+#: views/part-settings-custom-folders.php:106
+msgid ""
+"Only one of your current themes is in the optimization process, would you "
+"like to also optimize the other one?"
+msgstr "A jelenlegi sablonjaid közül csak az egyik van optimalizálás alatt. Szeretnéd a másikat is optimalizálni?"
+
+#. translators: %s is a theme name.
+#: views/part-settings-custom-folders.php:115
+#, php-format
+msgid "Add %s to optimization"
+msgstr "%s hozzáadása az optimalizáláshoz"
+
+#: views/part-settings-custom-folders.php:125
+msgid "Would you like to optimize your theme?"
+msgid_plural "Would you like to optimize your themes?"
+msgstr[0] "Szeretnéd optimalizálni a sablonodat?"
+msgstr[1] "Szeretnéd optimalizálni a sablonjaidat?"
+
+#: views/part-settings-custom-folders.php:132
+msgid "Add the theme to optimization"
+msgid_plural "Add the themes to optimization"
+msgstr[0] "Sablon hozzáadása az optimalizáláshoz"
+msgstr[1] "Sablonok hozzáadása az optimalizáláshoz"
+
+#: views/part-settings-custom-folders.php:142
+msgid "Select folders for optimization."
+msgstr "Válassz mappákat az optimalizáláshoz."
+
+#: views/part-settings-custom-folders.php:148
+msgid "Add folders"
+msgstr "Mappák hozzáadása"
+
+#. translators: 1 and 2 are <strong> opening and closing tags.
+#: views/part-settings-custom-folders.php:174
+#, php-format
+msgid ""
+"%1$sSelecting a folder will also optimize images in sub-folders.%2$s The "
+"only exception is \"Site’s root\": when selected, only images that are "
+"directly at the site’s root will be optimized (sub-folders can be selected "
+"separately)."
+msgstr "%1$sEgy mappa kiválasztásával az almappákban lévő képek is optimalizálva lesznek.%2$s Az egyetlen kivétel a \"Site’s root\": ennek kiválasztásakor csak a közvetlenül a webhely gyökerében lévő képek lesznek optimalizálva (az almappák külön is kiválaszthatók)."
+
+#: views/part-settings-custom-folders.php:180
+msgid ""
+"Folders that are hidden in the folder selector window are excluded and will "
+"not be optimized even if a parent folder is selected."
+msgstr "A mappaválasztó ablakban elrejtett mappák ki vannak zárva, és nem lesznek optimalizálva akkor sem, ha egy szülőmappa van kiválasztva."
+
+#: views/part-settings-custom-folders.php:183
+msgid ""
+"You changed your custom folder settings, don't forget to save your changes!"
+msgstr "Módosítottad az egyéni mappabeállításokat, ne felejtsd el menteni a változtatásokat!"
+
+#. translators: %s is a folder path.
+#: views/part-settings-files-tree-row.php:8
+#: views/part-settings-files-tree-row.php:10
+#, php-format
+msgid "The folder \"%s\" is already selected."
+msgstr "A „%s” mappa már ki van választva."
+
+#. translators: %s is a folder path.
+#: views/part-settings-files-tree-row.php:13
+#, php-format
+msgid "Open/Close the folder \"%s\"."
+msgstr "A „%s” mappa megnyitása/bezárása."
+
+#. translators: %s is a folder path.
+#: views/part-settings-files-tree-row.php:15
+#, php-format
+msgid "Select the folder \"%s\"."
+msgstr "A „%s” mappa kiválasztása."
+
+#: views/part-settings-files-tree-row.php:41
+msgid "Folder Added"
+msgstr "Mappa hozzáadva"
+
+#: views/part-settings-files-tree-row.php:43
+msgctxt "checkbox label"
+msgid "Add Folder"
+msgstr "Mappa hozzáadása"
+
+#: views/part-settings-footer.php:17
+msgid "Save & Go to Bulk Optimizer"
+msgstr "Mentés és továbblépés a Bulk Optimizerhez"
+
+#: views/part-settings-library.php:17
+msgid "Resize larger images"
+msgstr "Nagyobb képek átméretezése"
+
+#. translators: 1 is a text input for a number of pixels (don't use %d).
+#: views/part-settings-library.php:32
+#, php-format
+msgid "to maximum %s pixels width"
+msgstr "legfeljebb %s képpont szélességre"
+
+#. translators: 1 is a number of pixels.
+#: views/part-settings-library.php:44
+#, php-format
+msgid ""
+"This option is recommended to reduce larger images. You can save up to 80%% "
+"after resizing. The new width should not be less than your largest thumbnail"
+" width, which is actually %dpx."
+msgstr "Ez a beállítás ajánlott a nagyobb képek méretének csökkentéséhez. Az átméretezés után akár 80%%-ot is megtakaríthatsz. Az új szélesség nem lehet kisebb a legnagyobb bélyegkép szélességénél, amely jelenleg %d képpont."
+
+#: views/part-settings-library.php:51
+msgid "Resizing is done on upload or during optimization."
+msgstr "Az átméretezés feltöltéskor vagy az optimalizálás során történik."
+
+#: views/part-settings-library.php:53
+msgid "Resizing is done only during optimization."
+msgstr "Az átméretezés csak az optimalizálás során történik."
+
+#: views/part-settings-library.php:63
+msgid "Files optimization"
+msgstr "Fájlok optimalizálása"
+
+#: views/part-settings-library.php:66
+msgid ""
+"You can choose to optimize different image sizes created by WordPress here."
+msgstr "Itt kiválaszthatod, hogy a WordPress által létrehozott különböző képméretek közül melyeket szeretnéd optimalizálni."
+
+#. translators: 1 is a "bold" tag start, 2 is the "bold" tag end.
+#: views/part-settings-library.php:73
+#, php-format
+msgid ""
+"The %1$soriginal size%2$s is %1$sautomatically optimized%2$s by Imagify."
+msgstr "Az %1$seredeti méretet%2$s az Imagify %1$sautomatikusan optimalizálja%2$s."
+
+#: views/part-settings-library.php:80
+msgid ""
+"Remember each additional image size will affect your Imagify monthly usage!"
+msgstr "Ne feledd, hogy minden további képméret befolyásolja az Imagify havi használatodat!"
+
+#: views/part-settings-library.php:91
+msgid "Choose the sizes to optimize"
+msgstr "Optimalizálandó méretek kiválasztása"
+
+#: views/part-settings-tools.php:5
+msgid "Troubleshooting"
+msgstr "Hibaelhárítás"
+
+#: views/part-settings-tools.php:7
+msgid ""
+"If image optimization gets stuck or bulk optimization never completes, use "
+"this button to clear internal optimization locks, running-state transients, "
+"and pending scheduled jobs. Your settings and optimized images will not be "
+"affected."
+msgstr "Ha a képoptimalizálás elakad, vagy a csoportos optimalizálás sosem fejeződik be, ezzel a gombbal feloldhatod a belső optimalizálási zárolásokat, törölheted a futási állapotot jelző átmeneti adatokat, valamint a függőben lévő ütemezett feladatokat. A beállításaid és az optimalizált képeid nem változnak."
+
+#: views/part-settings-tools.php:13
+msgid "Reset Internal State"
+msgstr "Belső állapot alaphelyzetbe állítása"
+
+#. translators: %s is a formatted number (don’t use %d).
+#: views/part-settings-webp-missing-message.php:7
+#, php-format
+msgid ""
+"It seems that you have %s optimized image without Next-Gen versions. You can"
+" generate it here."
+msgid_plural ""
+"It seems that you have %s optimized images without Next-Gen versions. You "
+"can generate them here."
+msgstr[0] "Úgy tűnik, hogy van %s optimalizált képed Next-Gen verziók nélkül. Itt létrehozhatod."
+msgstr[1] "Úgy tűnik, hogy van %s optimalizált képed Next-Gen verziók nélkül. Itt létrehozhatod őket."
+
+#: views/part-settings-webp-missing-message.php:26
+msgid "See the affected images in your Media Library."
+msgstr "Az érintett képeket a médiatárban tekintheted meg."
+
+#: views/part-settings-webp.php:11
+msgid "Next-Gen image format"
+msgstr "Next-Gen képformátum"
+
+#: views/part-settings-webp.php:15
+msgid ""
+"Select WebP for high compatibility, AVIF for superior compression. Please "
+"note that the generation process will start automatically after saving the "
+"settings."
+msgstr "Válaszd a WebP-t a széles körű kompatibilitásért, az AVIF-et pedig a kiváló tömörítésért. Vedd figyelembe, hogy a generálási folyamat a beállítások mentése után automatikusan elindul."
+
+#. translators: %1$s and %2$s are <code> tag opening and closing, %3$s and
+#. %4$s are <a> tag opening and closing.
+#: views/part-settings-webp.php:22
+#, php-format
+msgid ""
+"Next-Gen Images format is currently defined by the "
+"%1$simagify_nextgen_images_format%2$s filter. %3$sRead more%4$s"
+msgstr "A Next-Gen képek formátumát jelenleg a %1$simagify_nextgen_images_format%2$s szűrő határozza meg. %3$sTovábbi információk%4$s"
+
+#: views/part-settings-webp.php:44
+msgid "Next-gen image format"
+msgstr "Next-gen képformátum"
+
+#: views/part-settings-webp.php:48
+msgid "Off"
+msgstr "Ki"
+
+#: views/part-settings-webp.php:65
+msgid "Display images in Next-Gen format on the site"
+msgstr "Képek megjelenítése Next-Gen formátumban a webhelyen"
+
+#: views/part-settings-webp.php:76
+msgid "Use rewrite rules"
+msgstr "Átírási szabályok használata"
+
+#. translators: 1 and 2 are <em> tag opening and closing.
+#: views/part-settings-webp.php:78
+#, php-format
+msgid "Use &lt;picture&gt; tags %1$s(preferred)%2$s"
+msgstr "&lt;picture&gt; címkék használata %1$s(ajánlott)%2$s"
+
+#. translators: 1 is an URL, 2 is a php constant name.
+#: views/part-settings-webp.php:95
+#, php-format
+msgid "Your CDN URL is set to %1$s by the constant %2$s."
+msgstr "A(z) %2$s konstans a CDN URL-t erre az értékre állítja be: %1$s."
+
+#. translators: 1 is an URL, 2 is a plugin name.
+#: views/part-settings-webp.php:102
+#, php-format
+msgid "Your CDN URL is set to %1$s by %2$s."
+msgstr "A(z) %2$s állítja be a CDN URL-t erre az értékre: %1$s."
+
+#. translators: %s is an URL.
+#: views/part-settings-webp.php:109
+#, php-format
+msgid "Your CDN URL is set to %1$s by filter."
+msgstr "Egy szűrő állítja be a CDN URL-t erre az értékre: %1$s."
+
+#: views/part-settings-webp.php:124
+msgid "If you use a CDN, specify the URL:"
+msgstr "Ha CDN-t használsz, add meg az URL-t:"
+
+#: views/part-settings-webp.php:127
+msgid "https://cdn.example.com"
+msgstr "https://cdn.example.com"
+
+#. translators: 1 is a file name, 2 is a <strong> tag opening, 3 is the
+#. <strong> tag closing.
+#: views/part-settings-webp.php:144
+#, php-format
+msgid ""
+"The first option adds rewrite rules to your site’s configuration file (%1$s)"
+" and does not alter your pages code. %2$sThis does not work with CDN "
+"though.%3$s"
+msgstr "Az első opció átírási szabályokat ad a webhelyed konfigurációs fájljához (%1$s), és nem módosítja az oldalaid kódját. %2$sEz azonban CDN-nel nem működik.%3$s"
+
+#. translators: 1 and 2 are HTML tag names, 3 is a <strong> tag opening, 4 is
+#. the <strong> tag closing.
+#: views/part-settings-webp.php:155
+#, php-format
+msgid ""
+"The second option replaces the %1$s tags with %2$s tags. %3$sThis is the "
+"preferred solution but some themes may break%4$s, so make sure to verify "
+"that everything seems fine."
+msgstr "A második opció lecseréli a(z) %1$s címkéket %2$s címkékre. %3$sEz az ajánlott megoldás, de egyes sablonok hibásan működhetnek%4$s, ezért győződj meg róla, hogy minden rendben van."
+
+#: views/part-upsell.php:31
+msgid "Expand your image quota and eliminate upload limits."
+msgstr "Bővítsd a képkvótádat, és szüntesd meg a feltöltési korlátokat."
+
+#: views/part-upsell.php:33
+msgid "Upgrade Now"
+msgstr "Frissítés most"
+
+#: views/part-upsell.php:78
+msgid "Upgrade your plan now to keep optimizing your images."
+msgstr "Frissítsd most az előfizetésedet, hogy továbbra is optimalizálhasd a képeidet."
+
+#: views/part-upsell.php:81
+msgid "For $11.99/month only, choose unlimited image optimization!"
+msgstr "Csak $11.99/hó díjért válaszd a korlátlan képoptimalizálást!"
+
+#: views/part-upsell.php:84
+msgid "For $9.99/month only, choose unlimited image optimization!"
+msgstr "Csak $9.99/hó díjért válaszd a korlátlan képoptimalizálást!"
+
+#: views/part-upsell.php:93
+msgid "Upgrade now"
+msgstr "Frissítés most"

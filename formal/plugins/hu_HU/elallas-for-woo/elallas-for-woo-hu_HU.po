@@ -1,0 +1,2137 @@
+# Copyright (C) 2026 uptools.io
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Elállás for WooCommerce 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/elallas-for-woo\n"
+"POT-Creation-Date: 2026-10-31T07:14:01+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: elallas-for-woo\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: Elállás for WooCommerce\n"
+"X-Plugin-Tone: formal\n"
+"X-Plugin-Version: 1.2.0\n"
+
+#. Plugin Name of the plugin
+#: elallas-for-woo.php
+msgid "Elállás for WooCommerce"
+msgstr "Elállás for WooCommerce"
+
+#. Plugin URI of the plugin
+#: elallas-for-woo.php
+msgid "https://github.com/uptools-io/elallas-for-woo"
+msgstr "https://github.com/uptools-io/elallas-for-woo"
+
+#. Description of the plugin
+#: elallas-for-woo.php
+msgid ""
+"Online withdrawal (elállás) button and case management for WooCommerce — "
+"compliant with Directive (EU) 2023/2673 and 415/2025. (XII. 23.) Korm. "
+"rendelet."
+msgstr "Online elállási gomb és ügykezelés a WooCommerce-hez – megfelel az (EU) 2023/2673 irányelvnek és a 415/2025. (XII. 23.) Korm. rendeletnek."
+
+#. Author of the plugin
+#: elallas-for-woo.php
+msgid "uptools.io"
+msgstr "uptools.io"
+
+#. Author URI of the plugin
+#: elallas-for-woo.php
+msgid "https://uptools.io"
+msgstr "https://uptools.io"
+
+#: elallas-for-woo.php:45
+msgid ""
+"Autoloader not found. Please run \"composer install\" in the plugin "
+"directory, or re-install the plugin from a release ZIP."
+msgstr "Az autoloader nem található. Kérjük, futtassa a „composer install” parancsot a bővítmény könyvtárában, vagy telepítse újra a bővítményt egy kiadási ZIP-fájlból."
+
+#: includes/Admin/AdminMenu.php:42 includes/Admin/AdminMenu.php:43
+#: includes/Admin/AdminMenu.php:101
+msgid "Elállási ügyek"
+msgstr "Elállási ügyek"
+
+#: includes/Admin/AdminMenu.php:51
+msgid "Elállás beállítások"
+msgstr "Elállás beállítások"
+
+#: includes/Admin/AdminMenu.php:52 includes/Admin/Settings/SettingsPage.php:63
+msgid "Elállás – beállítások"
+msgstr "Elállás – beállítások"
+
+#: includes/Admin/AdminMenu.php:60 includes/Admin/Onboarding/Wizard.php:37
+msgid "Elállás beüzemelése"
+msgstr "Elállás beüzemelése"
+
+#: includes/Admin/AdminMenu.php:75 includes/Admin/CaseDetailPage.php:27
+#: includes/Admin/Onboarding/Wizard.php:27
+#: includes/Admin/Settings/SettingsPage.php:55
+msgid "Nincs jogosultságod ehhez az oldalhoz."
+msgstr "Nincs jogosultsága ehhez az oldalhoz."
+
+#: includes/Admin/AdminMenu.php:106
+msgid "Keresés"
+msgstr "Keresés"
+
+#: includes/Admin/CaseActions.php:38 includes/Admin/CaseActions.php:72
+#: includes/Admin/CaseRefundAction.php:46
+msgid "Nincs jogosultságod."
+msgstr "Nincs jogosultsága."
+
+#: includes/Admin/CaseColumns.php:63
+msgid "Vendég"
+msgstr "Vendég"
+
+#: includes/Admin/CaseDetailPage.php:34 includes/Admin/CaseRefundAction.php:53
+msgid "Az ügy nem található."
+msgstr "Az ügy nem található."
+
+#. translators: %s: case number.
+#: includes/Admin/CaseDetailPage.php:46
+#, php-format
+msgid "Elállási ügy: %s"
+msgstr "Elállási ügy: %s"
+
+#: includes/Admin/CaseDetailPage.php:52
+msgid "Vissza a listához"
+msgstr "Vissza a listához"
+
+#: includes/Admin/CaseDetailPage.php:60
+msgid "Az ügy státusza frissítve."
+msgstr "Az ügy státusza frissítve."
+
+#: includes/Admin/CaseDetailSections.php:34
+msgid "Összefoglaló"
+msgstr "Összefoglaló"
+
+#: includes/Admin/CaseDetailSections.php:36
+#: includes/Admin/CasesListTable.php:46
+msgid "Ügyszám"
+msgstr "Ügyszám"
+
+#: includes/Admin/CaseDetailSections.php:37
+#: includes/Admin/CasesListTable.php:47
+#: templates/emails/admin-notification.php:53
+#: templates/emails/plain/admin-notification.php:37
+#: templates/frontend/my-account.php:27
+msgid "Rendelés"
+msgstr "Rendelés"
+
+#: includes/Admin/CaseDetailSections.php:38
+#: includes/Admin/CasesListTable.php:49 templates/frontend/my-account.php:29
+msgid "Státusz"
+msgstr "Státusz"
+
+#: includes/Admin/CaseDetailSections.php:39
+#: includes/Admin/CasesListTable.php:51 includes/Models/CaseStatus.php:55
+msgid "Beérkezett"
+msgstr "Beérkezett"
+
+#: includes/Admin/CaseDetailSections.php:40
+#: includes/Admin/CasesListTable.php:52
+#: includes/Admin/Onboarding/Wizard.php:84
+#: includes/Admin/Settings/TabDeadline.php:34
+msgid "Határidő"
+msgstr "Határidő"
+
+#: includes/Admin/CaseDetailSections.php:46
+msgid "Bankszámlaszám"
+msgstr "Bankszámlaszám"
+
+#: includes/Admin/CaseDetailSections.php:59
+msgid "Vásárlói nyilatkozat és tételek"
+msgstr "Vásárlói nyilatkozat és tételek"
+
+#: includes/Admin/CaseDetailSections.php:62
+msgid "Vásárló megjegyzése:"
+msgstr "Vásárlói megjegyzés:"
+
+#: includes/Admin/CaseDetailSections.php:67
+#: includes/Admin/Settings/TabExceptions.php:141
+#: templates/emails/admin-notification.php:73
+#: templates/emails/customer-confirmation.php:55
+#: templates/frontend/confirm.php:47 templates/frontend/select.php:53
+#: templates/pdf/withdrawal-statement.php:109
+msgid "Termék"
+msgstr "Termék"
+
+#: includes/Admin/CaseDetailSections.php:68
+msgid "SKU"
+msgstr "SKU"
+
+#: includes/Admin/CaseDetailSections.php:69 templates/frontend/select.php:54
+msgid "Rendelt"
+msgstr "Rendelt"
+
+#: includes/Admin/CaseDetailSections.php:70
+msgid "Elállt"
+msgstr "Elállt"
+
+#: includes/Admin/CaseDetailSections.php:71
+#: templates/emails/admin-notification.php:75
+msgid "Jogosultság"
+msgstr "Jogosultság"
+
+#: includes/Admin/CaseDetailSections.php:130
+msgid "Eseménynapló"
+msgstr "Eseménynapló"
+
+#: includes/Admin/CaseDetailSections.php:131
+msgid "Időpont"
+msgstr "Időpont"
+
+#: includes/Admin/CaseDetailSections.php:132
+#: includes/Admin/CasesListTable.php:50
+msgid "Típus"
+msgstr "Típus"
+
+#: includes/Admin/CaseDetailSections.php:133
+msgid "Üzenet"
+msgstr "Üzenet"
+
+#: includes/Admin/CaseDetailSections.php:154
+msgid "Admin döntés"
+msgstr "Adminisztrátori döntés"
+
+#: includes/Admin/CaseDetailSections.php:159
+msgid "Új státusz"
+msgstr "Új státusz"
+
+#: includes/Admin/CaseDetailSections.php:171
+msgid "Üzenet a vásárlónak (opcionális)"
+msgstr "Üzenet a vásárlónak (nem kötelező)"
+
+#: includes/Admin/CaseDetailSections.php:173
+msgid ""
+"Ha kitöltöd, bekerül a vásárlónak küldött státusz e-mailbe (pl. az "
+"elutasítás indoka)."
+msgstr "Ha kitölti, az üzenet bekerül a vásárlónak küldött státusz-e-mailbe (pl. az elutasítás indokaként)."
+
+#: includes/Admin/CaseDetailSections.php:175
+msgid "Státusz mentése"
+msgstr "Státusz mentése"
+
+#: includes/Admin/CaseDetailSections.php:186
+#: includes/Admin/Settings/TabDocuments.php:34
+#: includes/Admin/Settings/TabDocuments.php:56
+msgid "Dokumentumok"
+msgstr "Dokumentumok"
+
+#: includes/Admin/CaseRefundAction.php:68
+msgid "A visszatérítés rögzítve a WooCommerce-rendelésen."
+msgstr "A visszatérítés rögzítve a WooCommerce-rendelésen."
+
+#: includes/Admin/CaseRefundSection.php:35
+msgid "Visszatérítés rögzítése a WooCommerce-ben"
+msgstr "Visszatérítés rögzítése a WooCommerce-ben"
+
+#: includes/Admin/CaseRefundSection.php:41
+msgid "A rendelés nem tölthető be, ezért visszatérítés nem rögzíthető."
+msgstr "A rendelés nem tölthető be, ezért a visszatérítés nem rögzíthető."
+
+#: includes/Admin/CaseRefundSection.php:49
+msgid ""
+"A visszatérítés csak rögzítésre kerül a rendelésen (mint a WooCommerce „Kézi"
+" visszatérítés” gombja); a pénzt a bolt utalja vissza."
+msgstr "A visszatérítés csak a rendelésen kerül rögzítésre (a WooCommerce „Kézi visszatérítés” gombjához hasonlóan); az összeget az üzlet utalja vissza."
+
+#: includes/Admin/CaseRefundSection.php:57
+msgid "Tétel"
+msgstr "Tétel"
+
+#: includes/Admin/CaseRefundSection.php:58
+msgid "Visszatérítendő"
+msgstr "Visszatérítendő"
+
+#: includes/Admin/CaseRefundSection.php:59
+msgid "Készlet"
+msgstr "Készlet"
+
+#: includes/Admin/CaseRefundSection.php:65
+msgid "Összesen (bruttó)"
+msgstr "Összesen (bruttó)"
+
+#: includes/Admin/CaseRefundSection.php:69
+msgid "Ügy lezárása (a vásárló megkapja a szokásos státusz e-mailt)"
+msgstr "Ügy lezárása (a vásárló megkapja a szokásos státusz-e-mailt)"
+
+#: includes/Admin/CaseRefundSection.php:72
+msgid "Visszatérítés rögzítése"
+msgstr "Visszatérítés rögzítése"
+
+#: includes/Admin/CaseRefundSection.php:107
+msgid "Nincs visszatérítendő mennyiség (már visszatérítve)."
+msgstr "Nincs visszatérítendő mennyiség (már visszatérítve)."
+
+#: includes/Admin/CaseRefundSection.php:113
+msgid "nem kezelt készlet"
+msgstr "nem kezelt készlet"
+
+#: includes/Admin/CaseRefundSection.php:114
+msgid "Visszakerül a készletbe"
+msgstr "Visszakerül a készletbe"
+
+#: includes/Admin/CaseRefundSection.php:119
+msgid "Kivételként jelölt termék"
+msgstr "Kivételként jelölt termék"
+
+#: includes/Admin/CaseRefundSection.php:124
+msgid "db"
+msgstr "db"
+
+#: includes/Admin/CaseRefundSection.php:137
+msgid ""
+"Számlázó bővítmény észlelve: a WooCommerce-visszatérítésre a saját "
+"beállításai szerint sztornó vagy helyesbítő számlát állíthat ki."
+msgstr "Számlázó bővítmény észlelve: a WooCommerce-visszatérítéshez a bővítmény a saját beállításai szerint sztornó- vagy helyesbítő számlát állíthat ki."
+
+#: includes/Admin/CasesListTable.php:48
+msgid "Vásárló"
+msgstr "Vásárló"
+
+#: includes/Admin/CasesListTable.php:53
+msgid "Tételek"
+msgstr "Tételek"
+
+#: includes/Admin/CasesListTable.php:54
+msgid "Utolsó esemény"
+msgstr "Utolsó esemény"
+
+#: includes/Admin/CasesListTable.php:106
+msgid "Manuális ellenőrzésre"
+msgstr "Megjelölés manuális ellenőrzésre"
+
+#: includes/Admin/CasesListTable.php:107
+msgid "Elfogadás"
+msgstr "Elfogadás"
+
+#: includes/Admin/CasesListTable.php:108
+msgid "Elutasítás"
+msgstr "Elutasítás"
+
+#: includes/Admin/CasesListTable.php:109
+msgid "Lezárás"
+msgstr "Lezárás"
+
+#: includes/Admin/CasesListTable.php:110
+msgid "Törlés"
+msgstr "Törlés"
+
+#: includes/Admin/CasesListTable.php:127
+msgid "Minden státusz"
+msgstr "Minden státusz"
+
+#: includes/Admin/CasesListTable.php:137
+msgid "Szűrés"
+msgstr "Szűrés"
+
+#: includes/Admin/ComplianceCheck.php:99
+msgid ""
+"2026. szeptember 27-től kötelező a harmonizált szavatossági tájékoztató és "
+"(érintett termékeknél) a GARAN címke. Ellenőrizd a beállításokat."
+msgstr "2026. szeptember 27-től kötelező a harmonizált szavatossági tájékoztató és az érintett termékeknél a GARAN címke. Kérjük, ellenőrizze a beállításokat."
+
+#: includes/Admin/ComplianceCheck.php:100
+msgid ""
+"A harmonizált szavatossági tájékoztató 2026. szeptember 27. óta kötelező."
+msgstr "A harmonizált szavatossági tájékoztató 2026. szeptember 27. óta kötelező."
+
+#: includes/Admin/ComplianceCheck.php:117
+msgid "Jelenleg nem jelenik meg."
+msgstr "Jelenleg nem jelenik meg."
+
+#: includes/Admin/ComplianceCheck.php:119
+msgid "A pénztári megjelenítés ki van kapcsolva."
+msgstr "A pénztári megjelenítés ki van kapcsolva."
+
+#: includes/Admin/ComplianceCheck.php:121
+msgid ""
+"A GARAN címke ki van kapcsolva, pedig az érintett termékeknél a rendelés "
+"gomb előtt kötelező."
+msgstr "A GARAN címke ki van kapcsolva, pedig az érintett termékeknél kötelező megjeleníteni a rendelés gomb előtt."
+
+#: includes/Admin/ComplianceCheck.php:123
+msgid ""
+"Egy bővítmény vagy a téma szűrővel (elallas_garan_checkout_visible) "
+"elrejtheti a rendelés gomb előtti GARAN címkét."
+msgstr "Egy bővítmény vagy a sablon az elallas_garan_checkout_visible szűrővel elrejtheti a rendelés gomb előtt megjelenő GARAN címkét."
+
+#: includes/Admin/ComplianceCheck.php:125
+msgid "A beállítások még nincsenek átnézve."
+msgstr "A beállításokat még nem ellenőrizték."
+
+#: includes/Admin/ComplianceNotice.php:50
+msgid ""
+"A hivatalos GARAN címkefájl sérült vagy módosult; a címke nem jelenik meg. "
+"Telepítsd újra a plugint."
+msgstr "A hivatalos GARAN címkefájl sérült vagy módosult, ezért a címke nem jelenik meg. Kérjük, telepítse újra a bővítményt."
+
+#: includes/Admin/ComplianceNotice.php:54
+msgid ""
+"A GARAN és az értesítés a blokkos pénztárban nem a rendelés gomb előtt "
+"jelenik meg. Lásd a hibaelhárítási útmutatót."
+msgstr "A GARAN címke és az értesítés a blokkos pénztárban nem a rendelés gomb előtt jelenik meg. Tekintse meg a hibaelhárítási útmutatót."
+
+#: includes/Admin/ComplianceNotice.php:67
+#: includes/Admin/ComplianceNotice.php:163 includes/Admin/NoticeManager.php:58
+msgid "Elállás for WooCommerce:"
+msgstr "Elállás for WooCommerce:"
+
+#: includes/Admin/ComplianceNotice.php:71
+msgid "Beállítások megnyitása"
+msgstr "Beállítások megnyitása"
+
+#: includes/Admin/ComplianceNotice.php:72
+msgid "Elrejtés 30 napra"
+msgstr "Elrejtés 30 napra"
+
+#: includes/Admin/ComplianceNotice.php:103
+msgid "Nincs jogosultságod ehhez a művelethez."
+msgstr "Nincs jogosultsága ehhez a művelethez."
+
+#: includes/Admin/ComplianceNotice.php:108
+msgid "Szavatosság"
+msgstr "Szavatosság"
+
+#: includes/Admin/GaranProductFields.php:65
+msgid ""
+"A GARAN modul jelenleg ki van kapcsolva a beállításokban; a címke nem "
+"jelenik meg."
+msgstr "A GARAN modul jelenleg ki van kapcsolva a beállításokban, ezért a címke nem jelenik meg."
+
+#: includes/Admin/GaranProductFields.php:72
+msgid ""
+"Variálható termék: a variációk alapból ezeket az adatokat öröklik. Eltérő "
+"modellazonosítónál vagy jótállásnál a variáció „GARAN címke” beállításában "
+"adj meg saját adatot (vagy kapcsold ki)."
+msgstr "Variálható termék: a variációk alapértelmezés szerint ezeket az adatokat öröklik. Eltérő modellazonosító vagy jótállás esetén adjon meg saját adatokat a variáció „GARAN címke” beállításánál, vagy kapcsolja ki a címkét."
+
+#: includes/Admin/GaranProductFields.php:79
+msgid "Gyártói tartóssági jótállás (GARAN címke)"
+msgstr "Gyártói tartóssági jótállás (GARAN címke)"
+
+#: includes/Admin/GaranProductFields.php:224
+msgid "Előnézet (a mentett adatokkal)"
+msgstr "Előnézet (a mentett adatokkal)"
+
+#: includes/Admin/GaranProductFields.php:227
+msgid ""
+"Fél éves érték: ellenőrizd, hogy a szám nem ér a naptár-ikonhoz (a fél éves "
+"értékek jogi/grafikai megítélése nyitott kérdés)."
+msgstr "Fél éves érték: ellenőrizze, hogy a szám nem ér-e hozzá a naptárikonhoz. A fél éves értékek jogi és grafikai megítélése nyitott kérdés."
+
+#: includes/Admin/GaranProductFields.php:251
+msgid "Időtartam (év)"
+msgstr "Időtartam (év)"
+
+#: includes/Admin/GaranProductFields.php:253
+msgid ""
+"Csak 2 évnél hosszabb, egész év (pl. 3); a rendszer ellenőrzi, hogy a címkén"
+" elfér-e."
+msgstr "Csak 2 évnél hosszabb, egész évet adjon meg (például 3-at); a rendszer ellenőrzi, hogy az érték elfér-e a címkén."
+
+#: includes/Admin/GaranProductFields.php:261
+msgid "Gyártó (Brand/Trademark)"
+msgstr "Gyártó (márka/védjegy)"
+
+#: includes/Admin/GaranProductFields.php:262
+msgid ""
+"A gyártó által megadott név, a gyártó által a címkén használt formában."
+msgstr "A gyártó által megadott név, a gyártó által a címkén használt formában."
+
+#: includes/Admin/GaranProductFields.php:267
+msgid "Modellazonosító"
+msgstr "Modellazonosító"
+
+#: includes/Admin/GaranProductFields.php:281
+msgid "időtartam"
+msgstr "időtartam"
+
+#: includes/Admin/GaranProductFields.php:282
+msgid "gyártó"
+msgstr "gyártó"
+
+#: includes/Admin/GaranProductFields.php:283
+msgid "modellazonosító"
+msgstr "modellazonosító"
+
+#. translators: %s: comma-separated list of the invalid fields.
+#: includes/Admin/GaranProductFields.php:289
+#, php-format
+msgid ""
+"A GARAN címke nem került bekapcsolásra: az időtartam csak 2 évnél hosszabb, "
+"a címkén elférő egész év lehet, a gyártó és a modellazonosító kitöltése "
+"kötelező, és a címke fix mezőszélességén el kell férniük (a betűméret nem "
+"csökkenthető). Hibás vagy túl hosszú: %s."
+msgstr "A GARAN címkét nem sikerült bekapcsolni: az időtartamnak 2 évnél hosszabb, egész számú, a címkén elférő értéknek kell lennie; a gyártó és a modellazonosító megadása kötelező, és mindkettőnek el kell férnie a címke rögzített szélességű mezőjében (a betűméret nem csökkenthető). Hibás vagy túl hosszú érték: %s."
+
+#: includes/Admin/GaranVariationFields.php:60
+#: includes/Admin/Settings/ComplianceGaranSection.php:31
+msgid "GARAN címke"
+msgstr "GARAN címke"
+
+#: includes/Admin/GaranVariationFields.php:65
+msgid "Öröklés a szülőtől"
+msgstr "Öröklés a szülőtől"
+
+#: includes/Admin/GaranVariationFields.php:66
+msgid "Saját adat"
+msgstr "Saját adat"
+
+#: includes/Admin/GaranVariationFields.php:67
+msgid "Nincs GARAN címke"
+msgstr "Nincs GARAN címke"
+
+#. translators: 1: variation id, 2: validation message
+#: includes/Admin/GaranVariationFields.php:120
+#, php-format
+msgid "#%1$d variáció: %2$s A variáció a szülő adatait örökli."
+msgstr "#%1$d. variáció: %2$s A variáció a szülő adatait örökli."
+
+#: includes/Admin/NoticeManager.php:59
+msgid "Még nincs beállítva elállási oldal. Indítsd el a beüzemelést."
+msgstr "Még nincs beállítva elállási oldal. Kérjük, indítsa el a beüzemelést."
+
+#: includes/Admin/NoticeManager.php:61
+msgid "Beüzemelés indítása"
+msgstr "Beüzemelés indítása"
+
+#: includes/Admin/NoticeManager.php:63
+msgid "Elrejtés"
+msgstr "Elrejtés"
+
+#: includes/Admin/Onboarding/PageCreator.php:61
+#: includes/Frontend/MyAccountEndpoint.php:71
+#: includes/Frontend/MyAccountEndpoint.php:76
+msgid "Elállás"
+msgstr "Elállás"
+
+#: includes/Admin/Onboarding/Wizard.php:81
+msgid "Bolt adatai"
+msgstr "Bolt adatai"
+
+#: includes/Admin/Onboarding/Wizard.php:82
+#: includes/Admin/Settings/TabGeneral.php:77
+msgid "Elállási oldal"
+msgstr "Elállási oldal"
+
+#: includes/Admin/Onboarding/Wizard.php:83
+msgid "Megjelenítés"
+msgstr "Megjelenítés"
+
+#: includes/Admin/Onboarding/Wizard.php:85
+msgid "Teszt"
+msgstr "Teszt"
+
+#: includes/Admin/Onboarding/Wizard.php:100
+msgid ""
+"Ellenőrizd a bolt nevét, címét és elérhetőségeit a WooCommerce "
+"beállításokban."
+msgstr "Ellenőrizze a bolt nevét, címét és elérhetőségeit a WooCommerce beállításaiban."
+
+#: includes/Admin/Onboarding/Wizard.php:101
+msgid "WooCommerce beállítások"
+msgstr "WooCommerce beállítások"
+
+#: includes/Admin/Onboarding/Wizard.php:107
+msgid ""
+"Állítsd be, hol jelenjen meg az elállási link (lábléc, fiók, rendelés)."
+msgstr "Állítsa be, hol jelenjen meg az elállási link (láblécben, a fiókban vagy a rendelésnél)."
+
+#: includes/Admin/Onboarding/Wizard.php:108
+msgid "Megjelenítés beállítása"
+msgstr "Megjelenítés beállítása"
+
+#: includes/Admin/Onboarding/Wizard.php:111
+msgid "Add meg az elállási határidőt és annak kezdő időpontját."
+msgstr "Adja meg az elállási határidőt és annak kezdő időpontját."
+
+#: includes/Admin/Onboarding/Wizard.php:112
+msgid "Határidő beállítása"
+msgstr "Határidő beállítása"
+
+#: includes/Admin/Onboarding/Wizard.php:115
+msgid ""
+"Nyisd meg az elállási oldalt, és próbáld ki a folyamatot egy teszt "
+"rendeléssel."
+msgstr "Nyissa meg az elállási oldalt, és próbálja ki a folyamatot egy tesztrendeléssel."
+
+#: includes/Admin/Onboarding/Wizard.php:118
+msgid "Elállási oldal megnyitása"
+msgstr "Elállási oldal megnyitása"
+
+#: includes/Admin/Onboarding/Wizard.php:133
+msgid "Az elállási oldal már létezik."
+msgstr "Az elállási oldal már létezik."
+
+#: includes/Admin/Onboarding/Wizard.php:134
+msgid "Oldal szerkesztése"
+msgstr "Oldal szerkesztése"
+
+#: includes/Admin/Onboarding/Wizard.php:138
+msgid "Létrehozunk egy \"Elállás\" oldalt az [elallas_form] rövidkóddal."
+msgstr "Létrehozunk egy „Elállás” oldalt az [elallas_form] shortcode-dal."
+
+#: includes/Admin/Onboarding/Wizard.php:142
+msgid "Elállási oldal létrehozása"
+msgstr "Elállási oldal létrehozása"
+
+#: includes/Admin/OrderWithdrawalNotice.php:47
+msgid "Elállási igény"
+msgstr "Elállási igény"
+
+#: includes/Admin/OrderWithdrawalNotice.php:60
+msgid "kizárt tételt tartalmaz"
+msgstr "kizárt tételt tartalmaz"
+
+#: includes/Admin/ProductFields.php:45
+msgid "Bontatlan állapot szükséges"
+msgstr "Bontatlan állapot szükséges"
+
+#: includes/Admin/ProductFields.php:46
+msgid "Egyedi / személyre szabott termék"
+msgstr "Egyedi / személyre szabott termék"
+
+#: includes/Admin/ProductFields.php:47
+msgid "Digitális tartalom"
+msgstr "Digitális tartalom"
+
+#: includes/Admin/ProductFields.php:48
+msgid "Szolgáltatás"
+msgstr "Szolgáltatás"
+
+#: includes/Admin/ProductFields.php:49
+msgid "Higiéniai ok"
+msgstr "Higiéniai ok"
+
+#: includes/Admin/ProductFields.php:50
+msgid "Romlandó termék"
+msgstr "Romlandó termék"
+
+#: includes/Admin/ProductFields.php:51
+msgid "Zárt csomagolás felbontva"
+msgstr "Felbontott zárt csomagolás"
+
+#: includes/Admin/ProductFields.php:68 includes/Admin/TermFields.php:88
+#: includes/Admin/TermFields.php:108
+msgid "Elállásból kizárt"
+msgstr "Elállásból kizárt"
+
+#: includes/Admin/ProductFields.php:69
+msgid "A termék nem küldhető be online elállásra."
+msgstr "A termék nem küldhető be online elállási igényként."
+
+#: includes/Admin/ProductFields.php:77
+#: includes/Admin/Settings/TabExceptions.php:142
+#: includes/Admin/Settings/TabExceptions.php:195
+msgid "Kizárás indoka"
+msgstr "Kizárás indoka"
+
+#: includes/Admin/ProductFields.php:78 includes/Admin/TermFields.php:152
+msgid "— Válassz indokot —"
+msgstr "— Válasszon indokot —"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:34
+#: includes/Admin/Settings/TabCompliance.php:93
+#: includes/Admin/Settings/TabGeneral.php:65
+msgid "Bekapcsolás"
+msgstr "Bekapcsolás"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:36
+msgid "GARAN címke megjelenítése"
+msgstr "GARAN címke megjelenítése"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:37
+msgid ""
+"Bekapcsolva a címke a rendelés gomb előtt mindig megjelenik (45/2014. 15. § "
+"(1), kötelező)."
+msgstr "Bekapcsolt állapotban a címke mindig megjelenik a rendelés gomb előtt (45/2014. 15. § (1), kötelező)."
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:41
+#: includes/Admin/Settings/TabCompliance.php:103
+msgid "Termékoldal"
+msgstr "Termékoldal"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:47
+msgid "Beágyazott, kattintásra teljes"
+msgstr "Beágyazott, kattintásra teljes"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:48
+msgid "Teljes címke a kosárgomb alatt"
+msgstr "Teljes címke a kosárgomb alatt"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:49
+msgid "Teljes címke a leírás alatt"
+msgstr "Teljes címke a leírás alatt"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:50
+msgid "Galériában"
+msgstr "A galériában"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:58
+#: includes/Admin/Settings/TabCompliance.php:101
+#: includes/Admin/Settings/TabGeneral.php:94
+msgid "Megjelenítési helyek"
+msgstr "Megjelenítési helyek"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:60
+msgid "Kosároldal, az expressz fizetés és a pénztár gombok előtt"
+msgstr "A kosároldalon az expressz fizetési gombok és a pénztárgombok előtt"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:61
+#: includes/Admin/Settings/TabCompliance.php:107
+msgid "Rendelési e-mail"
+msgstr "Rendelési e-mail"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:62
+msgid "Terméklista (listaoldal)"
+msgstr "Terméklista (listaoldal)"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:63
+msgid ""
+"A címke csak azoknál a termékeknél jelenik meg, ahol a termékszerkesztőben "
+"be van kapcsolva. Ha a termékoldal Elementor Pro vagy testreszabott "
+"blokksablon, helyezd el az [elallas_garan_label] shortcode-ot a kosárgomb "
+"alá."
+msgstr "A címke csak azoknál a termékeknél jelenik meg, amelyeknél ez be van kapcsolva a termékszerkesztőben. Ha a termékoldal Elementor Pro-t vagy testreszabott blokksablont használ, helyezze el az [elallas_garan_label] shortcode-ot a kosárgomb alatt."
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:67
+msgid "Állapot"
+msgstr "Állapot"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:84
+msgid ""
+"E-mail címke képként: elérhető (a kitöltött címke PNG-ként kerül a vevői "
+"e-mailbe, alatta a szöveges tájékoztatás és a linkek)."
+msgstr "E-mail-címke képként: elérhető (a kitöltött címke PNG-képként kerül a vásárlói e-mailbe, alatta szöveges tájékoztatással és linkekkel)."
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:85
+msgid ""
+"E-mail címke képként: nem elérhető (a tárhelyen nincs GD FreeType-támogatás)"
+" – az e-mailben szöveges tájékoztatás megy (évek, gyártó, modell, Your "
+"Europe link, termékoldal-link)."
+msgstr "E-mail-címke képként: nem érhető el (a tárhelyen nincs GD FreeType-támogatás) – az e-mailben szöveges tájékoztatás jelenik meg (évek, gyártó, modell, Your Europe link, termékoldal-link)."
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:89
+msgid "Hivatalos GARAN fájlok sértetlensége:"
+msgstr "A hivatalos GARAN-fájlok sértetlensége:"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:91
+msgid "rendben"
+msgstr "rendben"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:91
+msgid "HIBA – a címke nem jelenik meg, telepítsd újra a plugint"
+msgstr "HIBA – a címke nem jelenik meg, telepítse újra a bővítményt"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:98
+msgid "Blokkos pénztár ellenőrzése"
+msgstr "Blokkos pénztár ellenőrzése"
+
+#: includes/Admin/Settings/ComplianceGaranSection.php:99
+msgid ""
+"(tegyél egy terméket a kosárba; az oldal alján megjelenő sáv jelzi, hogy az "
+"értesítés és a GARAN a rendelés gomb előtt van-e)"
+msgstr "(Tegyen egy terméket a kosárba; az oldal alján megjelenő sáv jelzi, hogy az értesítés és a GARAN a rendelés gomb előtt jelenik-e meg)"
+
+#: includes/Admin/Settings/SettingsPage.php:65
+msgid "Beállítások elmentve."
+msgstr "Beállítások mentve."
+
+#: includes/Admin/Settings/TabCompliance.php:37
+#: includes/Admin/Settings/TabCompliance.php:75
+msgid "Szavatosság és GARAN"
+msgstr "Szavatosság és GARAN"
+
+#: includes/Admin/Settings/TabCompliance.php:80
+msgid "Ismert korlátok ebben a verzióban:"
+msgstr "A verzió ismert korlátai:"
+
+#: includes/Admin/Settings/TabCompliance.php:82
+msgid ""
+"A GARAN címke az e-mailben csak akkor jelenik meg képként, ha a tárhelyen "
+"van GD FreeType-támogatás; enélkül szövegként (évek, gyártó, modell) és "
+"linkként."
+msgstr "A GARAN címke csak akkor jelenik meg képként az e-mailben, ha a tárhely támogatja a GD FreeType-ot; enélkül szövegként (évek, gyártó, modell) és linkként jelenik meg."
+
+#: includes/Admin/Settings/TabCompliance.php:83
+msgid ""
+"A terméklistákon (archívum) megjelenő GARAN címke csak klasszikus témával "
+"működik; blokktémánál a termékoldalon, a kosárban és a pénztárban jelenik "
+"meg."
+msgstr "A terméklistákon (archívumokban) megjelenő GARAN címke csak klasszikus témával működik; blokktéma esetén a termékoldalon, a kosárban és a pénztárban jelenik meg."
+
+#: includes/Admin/Settings/TabCompliance.php:84
+msgid ""
+"A szoftverfrissítési és javíthatósági információt egyelőre a termékleírásban"
+" tüntesd fel."
+msgstr "A szoftverfrissítési és javíthatósági információkat egyelőre a termékleírásban tüntesse fel."
+
+#: includes/Admin/Settings/TabCompliance.php:85
+msgid ""
+"Gutenberg-blokk és Elementor-widget egy későbbi verzióban; addig a Shortcode"
+" blokkal / widgettel helyezd el a shortcode-okat."
+msgstr "Gutenberg-blokk és Elementor-widget egy későbbi verzióban; addig a shortcode-ok elhelyezéséhez használja a shortcode blokkot vagy widgetet."
+
+#: includes/Admin/Settings/TabCompliance.php:86
+msgid ""
+"A blokkos kosár expressz fizetési gombjai előtt a GARAN címke nem jelenik "
+"meg (a klasszikus kosárban igen)."
+msgstr "A blokkos kosárban a GARAN címke nem jelenik meg az expressz fizetési gombok előtt (a klasszikus kosárban igen)."
+
+#: includes/Admin/Settings/TabCompliance.php:90
+msgid "Jogszabályi szavatosság tájékoztató"
+msgstr "Jogszabályi szavatossági tájékoztató"
+
+#: includes/Admin/Settings/TabCompliance.php:94
+msgid "Harmonizált szavatossági értesítés megjelenítése"
+msgstr "Harmonizált szavatossági tájékoztató megjelenítése"
+
+#: includes/Admin/Settings/TabCompliance.php:97
+msgid "Felirat"
+msgstr "Felirat"
+
+#: includes/Admin/Settings/TabCompliance.php:98
+msgid ""
+"A felirat, amelyre kattintva/rámutatva a teljes hivatalos értesítés "
+"megjelenik. Üresen hagyva az alapértelmezett felirat jelenik meg."
+msgstr "Az a felirat, amelyre kattintva vagy rámutatva megjelenik a teljes hivatalos tájékoztató. Ha üresen hagyja, az alapértelmezett felirat jelenik meg."
+
+#: includes/Admin/Settings/TabCompliance.php:104
+msgid "Fejléc"
+msgstr "Fejléc"
+
+#: includes/Admin/Settings/TabCompliance.php:105
+msgid "Lábléc"
+msgstr "Lábléc"
+
+#: includes/Admin/Settings/TabCompliance.php:106
+msgid ""
+"Pénztár (a rendelés gomb előtt: klasszikus, blokkos és „Rendelés kifizetése”"
+" oldal)"
+msgstr "Pénztár (a rendelés gomb előtt: klasszikus és blokkos pénztár, valamint a „Rendelés kifizetése” oldal)"
+
+#: includes/Admin/Settings/TabCompliance.php:108
+msgid ""
+"A fejléc csak a wp_body_open horgonyt támogató témákon jelenik meg. Egyéb "
+"helyre a [elallas_guarantee_notice] shortcode-dal (Shortcode blokk / "
+"Elementor Shortcode widget) teheted. A pénztári megjelenítés a "
+"rendelésnézetre (köszönőoldal, Fiókom) is vonatkozik."
+msgstr "A fejléc csak olyan témákban jelenik meg, amelyek támogatják a wp_body_open horgot. Más helyen a [elallas_guarantee_notice] shortcode-dal helyezheti el (Shortcode blokkban vagy Elementor Shortcode widgetben). A pénztári megjelenítés a rendelésnézetre (köszönőoldal, Fiókom) is vonatkozik."
+
+#: includes/Admin/Settings/TabCompliance.php:112
+msgid "E-mail mód"
+msgstr "E-mail mód"
+
+#: includes/Admin/Settings/TabCompliance.php:118
+msgid "Kép"
+msgstr "Kép"
+
+#: includes/Admin/Settings/TabCompliance.php:119
+msgid "Színes PNG-melléklet"
+msgstr "Színes PNG-melléklet"
+
+#: includes/Admin/Settings/TabCompliance.php:120
+msgid "Mindkettő"
+msgstr "Mindkettő"
+
+#: includes/Admin/Settings/TabCompliance.php:125
+msgid ""
+"A vevői rendelési e-mailekben (feldolgozás alatt, teljesítve, várakozik, "
+"számla). Egyszerű szöveges e-mailhez a hivatalos színes PNG mindig "
+"mellékletként is csatolódik. Az angol nyelvű értesítéshez nincs hivatalos "
+"PNG, ott szöveg és link jelenik meg."
+msgstr "A vásárlóknak küldött rendelési e-mailekben (feldolgozás alatt, teljesítve, várakozik, számla). Egyszerű szöveges e-mail esetén a hivatalos színes PNG mindig mellékletként is csatolódik. Az angol nyelvű tájékoztatóhoz nincs hivatalos PNG; ilyenkor szöveg és link jelenik meg."
+
+#: includes/Admin/Settings/TabCompliance.php:129
+msgid "Szavatossági oldal"
+msgstr "Szavatossági oldal"
+
+#: includes/Admin/Settings/TabCompliance.php:137
+#: includes/Admin/Settings/TabGeneral.php:85
+msgid "— Válassz oldalt —"
+msgstr "— Válasszon oldalt —"
+
+#: includes/Admin/Settings/TabCompliance.php:143
+msgid ""
+"Shortcode: [elallas_guarantee_notice] (kattintásra nyíló) vagy "
+"[elallas_guarantee_notice mode=\"inline\"] (azonnal látható). Kiválasztott "
+"oldal esetén az értesítés alatt „Megnyitás külön oldalon” link jelenik meg."
+msgstr "Shortcode: [elallas_guarantee_notice] (kattintásra nyílik meg), vagy [elallas_guarantee_notice mode=\"inline\"] (azonnal látható). Ha kiválaszt egy oldalt, a tájékoztató alatt megjelenik a „Megnyitás külön oldalon” link."
+
+#: includes/Admin/Settings/TabCompliance.php:150
+#: includes/Admin/Settings/TabGeneral.php:34
+msgid "Általános"
+msgstr "Általános"
+
+#: includes/Admin/Settings/TabCompliance.php:153
+msgid "B2B"
+msgstr "B2B"
+
+#: includes/Admin/Settings/TabCompliance.php:155
+msgid "Elrejtés céges (B2B) rendeléseknél"
+msgstr "Elrejtés céges (B2B) rendelések esetén"
+
+#: includes/Admin/Settings/TabCompliance.php:156
+msgid ""
+"Rendelésnézetben, a Rendelés kifizetése oldalon és e-mailben a számlázási "
+"cégnév/adószám alapján; termékoldalon, kosárban és pénztárban csak az "
+"elallas_compliance_is_b2b szűrővel."
+msgstr "Rendelésnézetben, a Rendelés kifizetése oldalon és e-mailben a számlázási cégnév/adószám alapján; termékoldalon, kosárban és pénztárban csak az elallas_compliance_is_b2b szűrővel"
+
+#: includes/Admin/Settings/TabCompliance.php:160
+msgid "Digitális termékek"
+msgstr "Digitális termékek"
+
+#: includes/Admin/Settings/TabCompliance.php:162
+msgid "Tisztán virtuális (digitális) termékeknél ne jelenjen meg"
+msgstr "Ne jelenjen meg kizárólag virtuális (digitális) termékek esetén"
+
+#: includes/Admin/Settings/TabCompliance.php:163
+msgid ""
+"Virtuálisnak jelölt (nem szállítandó) termékeknél nem jelenik meg; ha "
+"virtuálisként kezelt fizikai árut árulsz, kapcsold ki ezt az opciót."
+msgstr "Virtuálisnak jelölt (nem szállítandó) termékeknél nem jelenik meg. Ha virtuálisként kezelt fizikai árut értékesít, kapcsolja ki ezt a beállítást."
+
+#: includes/Admin/Settings/TabCompliance.php:167
+msgid "Termékinformációk"
+msgstr "Termékinformációk"
+
+#: includes/Admin/Settings/TabCompliance.php:168
+msgid "Opcionális termékinformációk (későbbi verzióban)"
+msgstr "Opcionális termékinformációk (későbbi verzióban)"
+
+#: includes/Admin/Settings/TabCompliance.php:171
+msgid ""
+"Többnyelvű bolt: az értesítés nyelve az oldal nyelvét követi (24 hivatalos "
+"nyelv). Polylang esetén a GARAN termékadatok szinkronizálását a Polylang "
+"(for WooCommerce) beállításaiban kapcsold be."
+msgstr "Többnyelvű áruház esetén a tájékoztató nyelve az oldal nyelvét követi (24 hivatalos nyelv). Polylang használatakor kapcsolja be a GARAN termékadatainak szinkronizálását a Polylang (for WooCommerce) beállításaiban."
+
+#: includes/Admin/Settings/TabCompliance.php:192
+msgid "Oldal létrehozása (/szavatossag/)"
+msgstr "Oldal létrehozása (/szavatossag/)"
+
+#: includes/Admin/Settings/TabCompliance.php:209
+msgid "A szavatossági oldal elkészült."
+msgstr "A szavatossági oldal elkészült."
+
+#: includes/Admin/Settings/TabCompliance.php:211
+msgid "Megtekintés"
+msgstr "Megtekintés"
+
+#: includes/Admin/Settings/TabCompliance.php:214
+msgid "Az oldal létrehozása nem sikerült."
+msgstr "Nem sikerült létrehozni az oldalt."
+
+#: includes/Admin/Settings/TabDeadline.php:57
+msgid "Elállási határidő"
+msgstr "Elállási határidő"
+
+#: includes/Admin/Settings/TabDeadline.php:59
+msgid ""
+"A határidő csak jelzés (flag), soha nem blokkolja automatikusan a beküldést."
+msgstr "A határidő csak tájékoztató jelzés; a beküldést soha nem blokkolja automatikusan."
+
+#: includes/Admin/Settings/TabDeadline.php:63
+msgid "Határidő (nap)"
+msgstr "Határidő (nap)"
+
+#: includes/Admin/Settings/TabDeadline.php:75
+msgid "Határidő kezdete"
+msgstr "A határidő kezdete"
+
+#: includes/Admin/Settings/TabDeadline.php:81
+msgid "Rendelés létrehozása"
+msgstr "A rendelés létrehozása"
+
+#: includes/Admin/Settings/TabDeadline.php:82
+msgid "Rendelés teljesítése"
+msgstr "A rendelés teljesítése"
+
+#: includes/Admin/Settings/TabDeadline.php:83
+msgid "Kézbesítés napja"
+msgstr "A kézbesítés napja"
+
+#: includes/Admin/Settings/TabDeadline.php:84
+msgid "Manuális (ellenőrzést igényel)"
+msgstr "Manuális (ellenőrzést igényel)"
+
+#: includes/Admin/Settings/TabDeadline.php:91
+msgid "Lejárt határidő kezelése"
+msgstr "Lejárt határidő kezelése"
+
+#: includes/Admin/Settings/TabDeadline.php:97
+msgid "Engedélyezés figyelmeztetéssel (ajánlott)"
+msgstr "Engedélyezés figyelmeztetéssel (ajánlott)"
+
+#: includes/Admin/Settings/TabDeadline.php:98
+msgid "Manuális jóváhagyás szükséges"
+msgstr "Manuális jóváhagyás szükséges"
+
+#: includes/Admin/Settings/TabDeadline.php:99
+msgid "Blokkolás (jogi kockázat!)"
+msgstr "Blokkolás (jogi kockázat!)"
+
+#: includes/Admin/Settings/TabDocuments.php:59
+msgid "PDF dokumentum"
+msgstr "PDF-dokumentum"
+
+#: includes/Admin/Settings/TabDocuments.php:60
+msgid "PDF nyilatkozat generálása (tartós adathordozó)"
+msgstr "PDF-nyilatkozat generálása (tartós adathordozó)"
+
+#: includes/Admin/Settings/TabDocuments.php:63
+msgid "Megőrzési idő (nap)"
+msgstr "Megőrzési idő (nap)"
+
+#: includes/Admin/Settings/TabDocuments.php:72
+#: includes/Admin/Settings/TabPrivacy.php:87
+msgid "0 = korlátlan megőrzés."
+msgstr "0 = korlátlan megőrzés."
+
+#: includes/Admin/Settings/TabEmails.php:34
+msgid "E-mailek"
+msgstr "E-mailek"
+
+#: includes/Admin/Settings/TabEmails.php:61
+msgid "E-mail értesítések"
+msgstr "E-mail-értesítések"
+
+#: includes/Admin/Settings/TabEmails.php:64
+msgid "Vásárlói visszaigazolás"
+msgstr "Vásárlói visszaigazolás"
+
+#: includes/Admin/Settings/TabEmails.php:65
+msgid "Visszaigazoló e-mail a vásárlónak (tartós adathordozó)"
+msgstr "Visszaigazoló e-mail a vásárlónak (tartós adathordozó)"
+
+#: includes/Admin/Settings/TabEmails.php:68
+msgid "Admin értesítés"
+msgstr "Adminértesítés"
+
+#: includes/Admin/Settings/TabEmails.php:69
+msgid "Értesítés az adminisztrátornak új elállásról"
+msgstr "Értesítés az adminisztrátornak új elállásról"
+
+#: includes/Admin/Settings/TabEmails.php:72
+msgid "Státusz e-mail"
+msgstr "Státusz-e-mail"
+
+#: includes/Admin/Settings/TabEmails.php:73
+msgid "Vásárló értesítése státuszváltozáskor"
+msgstr "Vásárló értesítése státuszváltozáskor"
+
+#: includes/Admin/Settings/TabEmails.php:76
+msgid "Admin címzett"
+msgstr "Admin címzett"
+
+#: includes/Admin/Settings/TabEmails.php:77
+msgid ""
+"Több címzett is megadható vesszővel, pontosvesszővel vagy szóközzel "
+"elválasztva. Üresen hagyva az oldal adminisztrátori e-mail címe."
+msgstr "Több címzett is megadható vesszővel, pontosvesszővel vagy szóközzel elválasztva. Üresen hagyva az oldal adminisztrátori e-mail-címe."
+
+#: includes/Admin/Settings/TabEmails.php:80
+msgid "Vásárlói e-mail extra szöveg"
+msgstr "Vásárlói e-mail kiegészítő szövege"
+
+#: includes/Admin/Settings/TabEmails.php:81
+msgid ""
+"A visszaigazoló e-mail aljához fűzött szöveg (pl. visszaküldési cím, "
+"ügyfélszolgálat). A tárgyat és a fejlécet a WooCommerce → Beállítások → "
+"E-mailek alatt szabhatod testre, a teljes sablont pedig a témád elallas-for-"
+"woo/emails/ mappájában írhatod felül."
+msgstr "A visszaigazoló e-mail aljához fűzött szöveg (pl. visszaküldési cím, ügyfélszolgálat). A tárgyat és a fejlécet a WooCommerce → Beállítások → E-mailek alatt szabhatja testre, a teljes sablont pedig a témája elallas-for-woo/emails/ mappájában írhatja felül."
+
+#: includes/Admin/Settings/TabEmails.php:84
+msgid "Feladó neve"
+msgstr "Feladó neve"
+
+#: includes/Admin/Settings/TabEmails.php:85
+msgid ""
+"A plugin e-mailjeinek feladó neve. Üresen hagyva a WooCommerce beállítás "
+"érvényes."
+msgstr "A bővítmény e-mailjeinek feladóneve. Üresen hagyva a WooCommerce beállítása érvényes."
+
+#: includes/Admin/Settings/TabEmails.php:88
+msgid "Feladó e-mail címe"
+msgstr "Feladó e-mail-címe"
+
+#: includes/Admin/Settings/TabEmails.php:89
+msgid ""
+"A plugin e-mailjeinek feladó (From) címe. Állítsd egy figyelt postafiókra, "
+"hogy a vásárlói válaszok is megérkezzenek. Üresen hagyva a WooCommerce "
+"alapértelmezett feladó címe."
+msgstr "A bővítmény e-mailjeinek feladó (From) címe. Állítsa be egy figyelt postafiók címét, hogy a vásárlói válaszok is megérkezzenek. Üresen hagyva a WooCommerce alapértelmezett feladó címe."
+
+#: includes/Admin/Settings/TabExceptions.php:39
+msgid "Kivételek"
+msgstr "Kivételek"
+
+#: includes/Admin/Settings/TabExceptions.php:58
+msgid "Elállásból kizárt termékek"
+msgstr "Elállásból kizárt termékek"
+
+#: includes/Admin/Settings/TabExceptions.php:67
+msgid "Termék szinten"
+msgstr "Termékszinten"
+
+#: includes/Admin/Settings/TabExceptions.php:70
+msgid ""
+"Nyisd meg a kívánt terméket, és a \"Termékadatok → Általános\" fülön jelöld "
+"be az \"Elállásból kizárt\" lehetőséget, valamint válaszd ki a kizárás "
+"indokát."
+msgstr "Nyissa meg a kívánt terméket, majd a „Termékadatok → Általános” fülön jelölje be az „Elállásból kizárt” lehetőséget, és válassza ki a kizárás indokát."
+
+#: includes/Admin/Settings/TabExceptions.php:78
+msgid "Termékek megnyitása"
+msgstr "Termékek megnyitása"
+
+#: includes/Admin/Settings/TabExceptions.php:82
+msgid "Kategória vagy címke szinten"
+msgstr "Kategória- vagy címkeszinten"
+
+#: includes/Admin/Settings/TabExceptions.php:85
+msgid ""
+"Nyiss meg egy termékkategóriát vagy -címkét szerkesztésre, és jelöld be az "
+"\"Elállásból kizárt\" lehetőséget az indokkal. Az adott kategóriába/címkébe "
+"tartozó termékek automatikusan \"kizárt\"-ként jelölődnek az elállási "
+"ügyekben. A termék szintű beállítás elsőbbséget élvez. A kizárás jelöl, nem "
+"automatikusan tilt."
+msgstr "Nyisson meg szerkesztésre egy termékkategóriát vagy -címkét, majd jelölje be az „Elállásból kizárt” lehetőséget, és adja meg az indokot. Az adott kategóriába vagy címkébe tartozó termékek az elállási ügyekben automatikusan „kizárt” jelölést kapnak. A termékszintű beállítás elsőbbséget élvez. A kizárás csak jelölést jelent, nem tiltja automatikusan az elállást."
+
+#: includes/Admin/Settings/TabExceptions.php:93
+msgid "Kategóriák megnyitása"
+msgstr "Kategóriák megnyitása"
+
+#: includes/Admin/Settings/TabExceptions.php:96
+msgid "Címkék megnyitása"
+msgstr "Címkék megnyitása"
+
+#: includes/Admin/Settings/TabExceptions.php:133
+msgid "Kizárt termékek (termék szinten)"
+msgstr "Kizárt termékek (termékszinten)"
+
+#: includes/Admin/Settings/TabExceptions.php:136
+msgid "Jelenleg egyetlen termék sincs termék szinten kizárva."
+msgstr "Jelenleg egyetlen termék sincs termékszinten kizárva."
+
+#: includes/Admin/Settings/TabExceptions.php:152
+#: includes/Admin/Settings/TabExceptions.php:204
+msgid "Szerkesztés"
+msgstr "Szerkesztés"
+
+#: includes/Admin/Settings/TabExceptions.php:158
+msgid "Legfeljebb 100 termék jelenik meg."
+msgstr "Legfeljebb 100 termék jelenik meg."
+
+#: includes/Admin/Settings/TabExceptions.php:168
+msgid "Kizárt kategóriák"
+msgstr "Kizárt kategóriák"
+
+#: includes/Admin/Settings/TabExceptions.php:169
+msgid "Kizárt címkék"
+msgstr "Kizárt címkék"
+
+#: includes/Admin/Settings/TabExceptions.php:189
+msgid "Nincs kizárt elem."
+msgstr "Nincs kizárt elem."
+
+#: includes/Admin/Settings/TabExceptions.php:194
+msgid "Név"
+msgstr "Név"
+
+#: includes/Admin/Settings/TabGeneral.php:62
+msgid "Általános beállítások"
+msgstr "Általános beállítások"
+
+#: includes/Admin/Settings/TabGeneral.php:66
+msgid "Online elállási nyilatkozat engedélyezése"
+msgstr "Online elállási nyilatkozat engedélyezése"
+
+#: includes/Admin/Settings/TabGeneral.php:69
+msgid "Gomb felirata"
+msgstr "Gomb felirata"
+
+#: includes/Admin/Settings/TabGeneral.php:73
+msgid "Megerősítés gomb felirata"
+msgstr "Megerősítő gomb felirata"
+
+#: includes/Admin/Settings/TabGeneral.php:90
+msgid "Az az oldal, amely tartalmazza az [elallas_form] rövidkódot."
+msgstr "Az az oldal, amely tartalmazza az [elallas_form] shortcode-ot."
+
+#: includes/Admin/Settings/TabGeneral.php:96
+msgid "Fiók oldalon"
+msgstr "Fiókoldalon"
+
+#: includes/Admin/Settings/TabGeneral.php:97
+msgid "Rendelés részleteinél"
+msgstr "A rendelés részleteinél"
+
+#: includes/Admin/Settings/TabGeneral.php:98
+msgid "Rendelési e-mailben"
+msgstr "Rendelési e-mailben"
+
+#: includes/Admin/Settings/TabGeneral.php:102
+msgid "Debug naplózás"
+msgstr "Hibakeresési naplózás"
+
+#: includes/Admin/Settings/TabGeneral.php:104
+msgid ""
+"Részletes naplózás a WooCommerce → Állapot → Naplók alá (forrás: elallas-"
+"for-woo)"
+msgstr "Részletes naplózás a WooCommerce → Állapot → Naplók menüpont alatt (forrás: elallas-for-woo)"
+
+#: includes/Admin/Settings/TabGeneral.php:105
+msgid ""
+"Hibák és figyelmeztetések bekapcsolás nélkül is naplózódnak. Bekapcsolva a "
+"részletes (info/debug) események is bekerülnek. Nem tartalmaz személyes "
+"adatot."
+msgstr "A hibák és figyelmeztetések a részletes naplózás bekapcsolása nélkül is naplózódnak. Bekapcsolva a részletes (info/hibakeresési) események is bekerülnek a naplóba. Személyes adatot nem tartalmaz."
+
+#: includes/Admin/Settings/TabLegal.php:36
+#: includes/Admin/Settings/TabLegal.php:58
+msgid "Jogi szövegek"
+msgstr "Jogi szövegek"
+
+#: includes/Admin/Settings/TabLegal.php:64
+msgid "Elállási nyilatkozat szövege"
+msgstr "Elállási nyilatkozat szövege"
+
+#: includes/Admin/Settings/TabLegal.php:68
+msgid "Visszaigazolás szövege"
+msgstr "Visszaigazolás szövege"
+
+#: includes/Admin/Settings/TabLegal.php:73
+msgid "Helyettesítők: {submitted_at}, {case_number}."
+msgstr "Helyettesítők: {submitted_at}, {case_number}."
+
+#: includes/Admin/Settings/TabPrivacy.php:34
+msgid "Adatvédelem"
+msgstr "Adatvédelem"
+
+#: includes/Admin/Settings/TabPrivacy.php:58
+msgid "Ne tárolja"
+msgstr "Ne tárolja"
+
+#: includes/Admin/Settings/TabPrivacy.php:59
+msgid "Hash (ajánlott)"
+msgstr "Hash (ajánlott)"
+
+#: includes/Admin/Settings/TabPrivacy.php:60
+msgid "Teljes érték"
+msgstr "Teljes érték"
+
+#: includes/Admin/Settings/TabPrivacy.php:63
+msgid "Adatvédelem és adatmegőrzés"
+msgstr "Adatvédelem és adatmegőrzés"
+
+#: includes/Admin/Settings/TabPrivacy.php:66
+msgid "IP cím tárolása"
+msgstr "IP-cím tárolása"
+
+#: includes/Admin/Settings/TabPrivacy.php:70
+msgid "User agent tárolása"
+msgstr "Felhasználói ügynök tárolása"
+
+#: includes/Admin/Settings/TabPrivacy.php:74
+msgid "E-mail titkosítás"
+msgstr "E-mail-titkosítás"
+
+#: includes/Admin/Settings/TabPrivacy.php:75
+msgid "Vásárlói e-mail cím titkosított tárolása"
+msgstr "A vásárló e-mail-címének titkosított tárolása"
+
+#: includes/Admin/Settings/TabPrivacy.php:78
+msgid "Adatmegőrzés (nap)"
+msgstr "Adatmegőrzés (nap)"
+
+#: includes/Admin/Settings/TabStatuses.php:36
+msgid "Rendelési státuszok"
+msgstr "Rendelési státuszok"
+
+#: includes/Admin/Settings/TabStatuses.php:60
+msgid "Elállásra jogosult rendelési státuszok"
+msgstr "Elállásra jogosult rendelési státuszok"
+
+#: includes/Admin/Settings/TabStatuses.php:62
+msgid "Mely rendelési státuszú rendelésekhez engedélyezett az online elállás."
+msgstr "Az online elállás az itt megadott státuszú rendelések esetén engedélyezett."
+
+#: includes/Admin/Settings/TabStatuses.php:66
+msgid "Jogosult státuszok"
+msgstr "Jogosult státuszok"
+
+#: includes/Admin/Settings/TabStatuses.php:80
+msgid "A WooCommerce nem érhető el a státuszok lekéréséhez."
+msgstr "A WooCommerce nem érhető el a státuszok lekéréséhez."
+
+#: includes/Admin/Settings/TabStatuses.php:85
+msgid "Saját WooCommerce státuszok"
+msgstr "Egyéni WooCommerce-státuszok"
+
+#: includes/Admin/Settings/TabStatuses.php:86
+msgid "Egyedi elállási rendelési státuszok használata"
+msgstr "Egyéni elállási rendelési státuszok használata"
+
+#: includes/Admin/TermFields.php:90
+msgid ""
+"Az ebbe a kategóriába/címkébe tartozó termékek \"kizárt\"-ként jelölődnek az"
+" elállási ügyekben."
+msgstr "Az ebbe a kategóriába vagy címkébe tartozó termékek „kizárt” jelölést kapnak az elállási ügyekben."
+
+#: includes/Admin/TermFields.php:112
+msgid "A kategóriába/címkébe tartozó termékek kizárása az online elállásból"
+msgstr "A kategóriába vagy címkébe tartozó termékek kizárása az online elállásból"
+
+#: includes/Admin/TermFields.php:114
+msgid ""
+"Az érintett tételek \"kizárt\"-ként jelölődnek az elállási ügyekben "
+"(jelölés, nem automatikus tiltás)."
+msgstr "Az érintett tételek „kizárt” jelölést kapnak az elállási ügyekben (ez csak jelölés, nem automatikus tiltás)."
+
+#: includes/Admin/TermFields.php:150
+msgid "Kizárás indoka:"
+msgstr "A kizárás indoka:"
+
+#: includes/Api/CasesController.php:107
+msgid "A státusz nem módosítható (érvénytelen vagy azonos állapot)."
+msgstr "A státusz nem módosítható (érvénytelen vagy azonos állapot)."
+
+#: includes/Api/CasesController.php:130
+msgid "Az elállási ügy nem található."
+msgstr "Az elállási ügy nem található."
+
+#: includes/Api/DocumentController.php:85
+msgid "A dokumentum nem található."
+msgstr "A dokumentum nem található."
+
+#: includes/Compliance/CheckoutSlot.php:216
+msgid ""
+"Elállás: az értesítés és a GARAN a blokkos pénztárban a rendelés gomb előtt "
+"jelenik meg."
+msgstr "Elállás: a blokkos pénztárnál az értesítés és a GARAN a rendelésgomb előtt jelennek meg."
+
+#: includes/Compliance/CheckoutSlot.php:217
+msgid ""
+"Elállás: a rendelés gomb horgonya nem található, tartalék-hely lépett "
+"életbe. Ellenőrizd az elallas_checkout_block_anchors szelektorait."
+msgstr "Elállás: a rendelésgomb horgonya nem található, ezért a rendszer a tartalékpozíciót használja. Kérjük, ellenőrizze az elallas_checkout_block_anchors szelektorait."
+
+#. translators: 1: years, 2: brand, 3: model identifier
+#: includes/Compliance/GaranRenderer.php:45
+#, php-format
+msgid "Gyártói tartóssági jótállás: %1$s év (%2$s, %3$s)"
+msgstr "Gyártói tartóssági jótállás: %1$s év (%2$s, %3$s)"
+
+#. translators: %s: Your Europe URL
+#: includes/Compliance/GaranRenderer.php:287
+#, php-format
+msgid ""
+"Az Európai Unió hivatalos GARAN címkéje a gyártói tartóssági jótállásról. A "
+"QR-kód a %s oldalra mutat."
+msgstr "Az Európai Unió hivatalos GARAN-címkéje a gyártói tartóssági jótállásról. A QR-kód a %s oldalra mutat."
+
+#: includes/Compliance/GaranVariations.php:81
+#: templates/frontend/garan-label.php:38
+msgid "a teljes címke megnyitása"
+msgstr "A teljes címke megnyitása"
+
+#: includes/Compliance/NoticeRenderer.php:92
+msgid "Az Ön jogszabályi szavatossági jogai"
+msgstr "Az Ön jogszabályon alapuló szavatossági jogai"
+
+#: includes/Compliance/NoticeSource.php:115
+msgid "Hivatalos EU-tájékoztató a jogszabályi szavatosságról"
+msgstr "Hivatalos EU-tájékoztató a jogszabályon alapuló szavatosságról"
+
+#: includes/Cron/RetentionCleaner.php:63
+msgid ""
+"Az ügy személyes adatai a megőrzési idő lejárta miatt anonimizálva lettek."
+msgstr "Az ügy személyes adatait a megőrzési idő lejárta miatt anonimizáltuk."
+
+#: includes/Data/DefaultTexts.php:63
+msgid ""
+"A GARAN címke kizárólag a gyártó által vállalt, térítésmentes, az egész "
+"termékre kiterjedő, 2 évnél hosszabb tartóssági jótállás jelölésére "
+"használható. A bolti garancia, a kötelező jótállás (151/2003. Korm. "
+"rendelet) és a fizetős kiterjesztett garancia nem jelölhető vele."
+msgstr "A GARAN-címke kizárólag a gyártó által vállalt, térítésmentes, az egész termékre kiterjedő, 2 évnél hosszabb tartóssági jótállás jelölésére használható. A bolti garancia, a kötelező jótállás (151/2003. Korm. rendelet) és a fizetős kiterjesztett garancia nem jelölhető vele."
+
+#: includes/Data/DefaultTexts.php:72
+msgid ""
+"2026. szeptember 27-től kötelező (45/2014. Korm. rendelet 11. § (1a), 15. § "
+"(1)). A hivatalos értesítés és címke grafikája nem módosítható; a plugin "
+"változatlanul jeleníti meg őket. Az ÁSZF frissítése a bolt feladata, az "
+"értesítés azt nem helyettesíti."
+msgstr "2026. szeptember 27-től kötelező (45/2014. Korm. rendelet 11. § (1a), 15. § (1)). A hivatalos értesítés és címke grafikája nem módosítható; a bővítmény változatlanul jeleníti meg őket. Az ÁSZF frissítése az üzlet feladata, az értesítés ezt nem helyettesíti."
+
+#: includes/Data/DefaultTexts.php:81
+msgid ""
+"A szövegminta nem minősül jogi tanácsadásnak. Használat előtt ellenőriztesd "
+"a webshopodra vonatkozó ÁSZF-fel és jogi szakértővel."
+msgstr "A szövegminta nem minősül jogi tanácsadásnak. Kérjük, használat előtt ellenőriztesse egy jogi szakértővel, hogy a szövegminta megfelel-e a webshopjára vonatkozó ÁSZF-nek."
+
+#: includes/Data/DefaultTexts.php:90
+msgid ""
+"A megadott adatok alapján nem található elállásra alkalmas rendelés, vagy a "
+"rendelés nem jogosult online elállási nyilatkozat beküldésére."
+msgstr "A megadott adatok alapján nem található elállásra alkalmas rendelés, vagy a rendelés nem jogosult online elállási nyilatkozat beküldésére."
+
+#: includes/Data/DefaultTexts.php:99
+msgid ""
+"A rendszer számítása szerint az elállási nyilatkozat a beállított határidőn "
+"túl érkezett. Kérjük, manuálisan ellenőrizze a teljesítés, átadás vagy "
+"kézbesítés időpontját, valamint az ÁSZF és a vonatkozó jogszabályok alapján "
+"alkalmazandó szabályokat."
+msgstr "A rendszer számítása szerint az elállási nyilatkozat a beállított határidőn túl érkezett. Kérjük, manuálisan ellenőrizze a teljesítés, átadás vagy kézbesítés időpontját, valamint az ÁSZF és a vonatkozó jogszabályok alapján alkalmazandó szabályokat."
+
+#: includes/Data/DefaultTexts.php:108
+msgid ""
+"A kivétel beállítása jogi kockázatot hordozhat. Ellenőriztesd az ÁSZF-fel és"
+" jogásszal."
+msgstr "A kivétel beállítása jogi kockázatot hordozhat. Kérjük, ellenőriztesse az ÁSZF-fel és jogásszal."
+
+#: includes/Domain/B2BDetector.php:51
+msgid "Adószám mező kitöltve"
+msgstr "Az adószám mező ki van töltve"
+
+#: includes/Domain/B2BDetector.php:55
+msgid "Cégnév megadva"
+msgstr "Cégnév megadva"
+
+#: includes/Domain/B2BDetector.php:58
+msgid "Nincs B2B jelző"
+msgstr "Nincs B2B-jelző"
+
+#: includes/Domain/CaseService.php:75
+msgid "Elállási nyilatkozat beérkezett."
+msgstr "Az elállási nyilatkozat beérkezett."
+
+#: includes/Domain/CaseService.php:123
+msgid "A fogyasztó megerősítette a nyilatkozatot."
+msgstr "A fogyasztó megerősítette a nyilatkozatot."
+
+#. translators: 1: old status label, 2: new status label.
+#: includes/Domain/CaseService.php:168
+#, php-format
+msgid "Státusz módosítva: %1$s → %2$s"
+msgstr "Státusz módosítva: %1$s → %2$s"
+
+#. translators: %s: admin note sent to the customer.
+#: includes/Domain/CaseService.php:175
+#, php-format
+msgid "Üzenet a vásárlónak: %s"
+msgstr "Üzenet a vásárlónak: %s"
+
+#: includes/Domain/CaseService.php:224
+msgid "Elállási nyilatkozat érkezett (Elállás for WooCommerce)."
+msgstr "Elállási nyilatkozat érkezett (Elállás for WooCommerce)."
+
+#: includes/Domain/EligibilityChecker.php:38
+msgid "Az e-mail cím nem egyezik a rendeléssel."
+msgstr "Az e-mail-cím nem egyezik a rendelésben megadottal."
+
+#: includes/Domain/EligibilityChecker.php:42
+msgid "A rendelés státusza nem alkalmas elállásra."
+msgstr "A rendelés státusza nem alkalmas elállásra."
+
+#: includes/Domain/EligibilityChecker.php:46
+msgid "A rendeléshez már tartozik folyamatban lévő elállási ügy."
+msgstr "A rendeléshez már tartozik folyamatban lévő elállási ügy."
+
+#: includes/Domain/EligibilityChecker.php:51
+msgid "A rendelés másik fiókhoz tartozik."
+msgstr "A rendelés másik fiókhoz tartozik."
+
+#: includes/Domain/EligibilityChecker.php:56
+msgid "Az elállási határidő lejárt."
+msgstr "Az elállási határidő lejárt."
+
+#: includes/Emails/AdminNotification.php:27
+msgid "Új elállási nyilatkozat (admin)"
+msgstr "Új elállási nyilatkozat (admin)"
+
+#: includes/Emails/AdminNotification.php:28
+msgid "Értesítés a kereskedő felé, ha új elállási nyilatkozat érkezik."
+msgstr "Értesítés a kereskedőnek új elállási nyilatkozat érkezésekor."
+
+#: includes/Emails/AdminNotification.php:59
+msgid "Új elállási nyilatkozat érkezett – #{order_number}"
+msgstr "Új elállási nyilatkozat érkezett – #{order_number}"
+
+#: includes/Emails/AdminNotification.php:68
+#: templates/frontend/my-account.php:56
+msgid "Új elállási nyilatkozat"
+msgstr "Új elállási nyilatkozat"
+
+#: includes/Emails/CustomerConfirmation.php:30
+msgid "Elállás visszaigazolása (vevő)"
+msgstr "Elállás visszaigazolása (vevő)"
+
+#: includes/Emails/CustomerConfirmation.php:31
+msgid ""
+"Tartós adathordozón küldött visszaigazolás a vevőnek az elállási nyilatkozat"
+" rögzítéséről."
+msgstr "Tartós adathordozón küldött visszaigazolás a vevőnek az elállási nyilatkozat rögzítéséről."
+
+#: includes/Emails/CustomerConfirmation.php:51
+msgid "Elállási nyilatkozatának visszaigazolása – #{order_number}"
+msgstr "Elállási nyilatkozatának visszaigazolása – #{order_number}"
+
+#: includes/Emails/CustomerConfirmation.php:60
+msgid "Elállási nyilatkozatának visszaigazolása"
+msgstr "Elállási nyilatkozatának visszaigazolása"
+
+#: includes/Emails/StatusUpdate.php:35
+msgid "Elállási ügy státusz frissítés (vevő)"
+msgstr "Elállási ügy állapotfrissítése (vevő)"
+
+#: includes/Emails/StatusUpdate.php:36
+msgid "Értesítés a vevőnek, ha elállási ügyének státusza megváltozik."
+msgstr "Értesítés a vevőnek, ha megváltozik elállási ügyének állapota."
+
+#: includes/Emails/StatusUpdate.php:56
+msgid "Elállási ügyének státusza frissült – #{case_number}"
+msgstr "Elállási ügyének állapota frissült – #{case_number}"
+
+#: includes/Emails/StatusUpdate.php:65
+msgid "Elállási ügyének státusza frissült"
+msgstr "Elállási ügyének állapota frissült"
+
+#: includes/Frontend/FormHandler.php:36
+msgid "A munkamenet lejárt. Kérjük, próbálja újra."
+msgstr "A munkamenet lejárt. Kérjük, próbálja meg újra."
+
+#: includes/Frontend/Shortcodes.php:59
+msgid "Elállás a szerződéstől"
+msgstr "Elállás a szerződéstől"
+
+#: includes/Frontend/StepProcessor.php:82
+msgid "Kérjük, válasszon legalább egy terméket."
+msgstr "Kérjük, válasszon legalább egy terméket."
+
+#: includes/Frontend/StepProcessor.php:115
+msgid "A folytatáshoz minden nyilatkozatot el kell fogadnia."
+msgstr "A folytatáshoz minden nyilatkozatot el kell fogadnia."
+
+#: includes/Frontend/WithdrawalForm.php:28
+msgid "Az online elállási funkció jelenleg nem érhető el."
+msgstr "Az online elállási funkció jelenleg nem érhető el."
+
+#: includes/Integrations/ElallasElementorWidget.php:37
+#: blocks/withdrawal-form/editor.js:31
+msgid "Elállási űrlap"
+msgstr "Elállási űrlap"
+
+#: includes/Integrations/Invoicing.php:48
+msgid ""
+"Elállási kérelem érkezett. Számlázó bővítmény észlelve: a sztornó/módosító "
+"számlát manuálisan kell kezelni, automatikus sztornó nem történik."
+msgstr "Elállási kérelem érkezett. Számlázó bővítmény észlelve: a sztornó- vagy módosító számlát manuálisan kell kezelni, automatikus sztornó nem történik."
+
+#: includes/Integrations/Invoicing.php:52
+msgid ""
+"Elállási kérelem érkezett. Kérjük, a számla kezelését (sztornó/módosítás) "
+"végezze el manuálisan."
+msgstr "Elállási kérelem érkezett. Kérjük, kezelje manuálisan a számlát (sztornó vagy módosítás)."
+
+#: includes/Models/CaseItem.php:137
+msgid "Jogosult"
+msgstr "Jogosult"
+
+#: includes/Models/CaseItem.php:138
+msgid "Kizárt – ellenőrizendő"
+msgstr "Kizárt – ellenőrizendő"
+
+#: includes/Models/CaseItem.php:167
+msgid "Mintatermék"
+msgstr "Mintatermék"
+
+#: includes/Models/CaseStatus.php:56
+msgid "Automatikusan visszaigazolva"
+msgstr "Automatikusan visszaigazolva"
+
+#: includes/Models/CaseStatus.php:57
+msgid "Manuális ellenőrzés alatt"
+msgstr "Manuális ellenőrzés alatt"
+
+#: includes/Models/CaseStatus.php:58
+msgid "Elfogadva"
+msgstr "Elfogadva"
+
+#: includes/Models/CaseStatus.php:59
+msgid "Elutasítva"
+msgstr "Elutasítva"
+
+#: includes/Models/CaseStatus.php:60
+msgid "Visszaküldésre vár"
+msgstr "Visszaküldésre vár"
+
+#: includes/Models/CaseStatus.php:61
+msgid "Áru beérkezett"
+msgstr "Az áru beérkezett"
+
+#: includes/Models/CaseStatus.php:62
+msgid "Visszatérítés folyamatban"
+msgstr "Visszatérítés folyamatban"
+
+#: includes/Models/CaseStatus.php:63
+msgid "Lezárva"
+msgstr "Lezárva"
+
+#: includes/Models/CaseStatus.php:64
+msgid "Törölve / hibás beküldés"
+msgstr "Törölve / hibás beküldés"
+
+#: includes/Models/DeadlineStatus.php:28
+msgid "Határidőn belül"
+msgstr "Határidőn belül"
+
+#: includes/Models/DeadlineStatus.php:29
+msgid "Határidőn túl – manuális ellenőrzést igényel"
+msgstr "Határidőn túl – manuális ellenőrzést igényel"
+
+#: includes/Models/DeadlineStatus.php:30
+msgid "Nem megállapítható – manuális ellenőrzést igényel"
+msgstr "Nem állapítható meg – manuális ellenőrzést igényel"
+
+#: includes/Pdf/DocumentService.php:178
+#: templates/pdf/withdrawal-statement.php:43
+#: templates/pdf/withdrawal-statement.php:61
+msgid "Elállási nyilatkozat"
+msgstr "Elállási nyilatkozat"
+
+#: includes/Pdf/DownloadHandler.php:117
+msgid "A dokumentum nem érhető el."
+msgstr "A dokumentum nem érhető el."
+
+#: includes/Pdf/DownloadHandler.php:118
+msgid "Hozzáférés megtagadva"
+msgstr "Hozzáférés megtagadva"
+
+#: includes/Plugin.php:180
+msgid "Beállítások"
+msgstr "Beállítások"
+
+#: includes/Plugin.php:193
+msgid "WooCommerce must be installed and active for this plugin to work."
+msgstr "A bővítmény működéséhez telepíteni és aktiválni kell a WooCommerce bővítményt."
+
+#: includes/Security/Honeypot.php:49
+msgid "Leave this field empty"
+msgstr "Hagyja üresen ezt a mezőt"
+
+#: includes/SiteManager/CaseAbilities.php:56
+msgid "List Withdrawal Cases"
+msgstr "Elállási ügyek listázása"
+
+#: includes/SiteManager/CaseAbilities.php:57
+msgid "List elállás cases, optionally filtered by status and paged."
+msgstr "Elállási ügyek listázása, igény szerint állapot szerinti szűréssel és oldalakra bontva."
+
+#: includes/SiteManager/CaseAbilities.php:81
+msgid "Get Withdrawal Case"
+msgstr "Elállási ügy lekérése"
+
+#: includes/SiteManager/CaseAbilities.php:82
+msgid "Get a case with its items and audit events."
+msgstr "Ügy lekérése a tételeivel és az ellenőrzési eseményekkel együtt."
+
+#: includes/SiteManager/CaseAbilities.php:97
+msgid "Update Case Status"
+msgstr "Ügy állapotának frissítése"
+
+#: includes/SiteManager/CaseAbilities.php:98
+msgid "Change the status of a withdrawal case."
+msgstr "Elállási ügy állapotának módosítása."
+
+#: includes/SiteManager/CaseAbilities.php:114
+msgid "Get Case Audit Log"
+msgstr "Ügy ellenőrzési naplójának lekérése"
+
+#: includes/SiteManager/CaseAbilities.php:115
+msgid "Get the audit event log for a withdrawal case."
+msgstr "Elállási ügy ellenőrzési eseményeit rögzítő napló lekérése."
+
+#: includes/SiteManager/CaseService.php:61
+msgid "Case not found."
+msgstr "Az ügy nem található."
+
+#: includes/SiteManager/CaseService.php:83
+msgid "Invalid status value."
+msgstr "Hibás állapotérték."
+
+#: includes/SiteManager/CaseService.php:89
+msgid "Could not update the case status."
+msgstr "Nem sikerült frissíteni az ügy állapotát."
+
+#: includes/SiteManager/CaseService.php:94
+msgid "Case status updated."
+msgstr "Az ügy állapota frissült."
+
+#: includes/SiteManager/Integration.php:55
+msgid "Elállás (Withdrawal)"
+msgstr "Elállás"
+
+#: includes/SiteManager/Integration.php:56
+msgid "WooCommerce withdrawal/elállás case management abilities."
+msgstr "WooCommerce-elállási ügyek kezelésére szolgáló képességek."
+
+#: includes/Woo/OrderStatusManager.php:64
+msgid "Elállás kérve"
+msgstr "Elállás kérve"
+
+#: includes/Woo/OrderStatusManager.php:65
+msgid "Elállás – ellenőrzés alatt"
+msgstr "Elállás – ellenőrzés alatt"
+
+#: includes/Woo/OrderStatusManager.php:66
+msgid "Elállás elfogadva"
+msgstr "Elállás elfogadva"
+
+#: includes/Woo/OrderStatusManager.php:67
+msgid "Elállás lezárva"
+msgstr "Elállás lezárva"
+
+#: includes/Woo/OrderStatusManager.php:166
+msgid "Elállási ügy státusz-szinkron."
+msgstr "Elállási ügy állapotának szinkronizálása."
+
+#: includes/Woo/RefundCreator.php:38
+msgid "Ehhez az ügyhöz most nem rögzíthető visszatérítés."
+msgstr "Ehhez az ügyhöz most nem rögzíthető visszatérítés."
+
+#: includes/Woo/RefundCreator.php:45
+msgid ""
+"Nincs visszatérítendő összeg: minden tétel 0, vagy már vissza lett térítve."
+msgstr "Nincs visszatérítendő összeg: minden tétel értéke 0, vagy már visszatérítették."
+
+#. translators: %s: case number.
+#: includes/Woo/RefundCreator.php:52
+#, php-format
+msgid "Elállás: %s"
+msgstr "Elállás: %s"
+
+#. translators: 1: refund amount, 2: refund ID.
+#: includes/Woo/RefundCreator.php:122
+#, php-format
+msgid "Visszatérítés rögzítve a WooCommerce-ben: %1$s (#%2$d)."
+msgstr "Visszatérítés rögzítve a WooCommerce-ben: %1$s (#%2$d)."
+
+#: templates/emails/admin-notification.php:27
+#: templates/emails/plain/admin-notification.php:24
+msgid "Új elállási nyilatkozat érkezett az alábbi rendeléshez."
+msgstr "Új elállási nyilatkozat érkezett az alábbi rendeléshez."
+
+#: templates/emails/admin-notification.php:32
+msgid ""
+"⚠ Figyelem: a nyilatkozat elállásból kizártként megjelölt terméke(ke)t "
+"tartalmaz. Kérjük, fokozott figyelemmel ellenőrizze a rendelést."
+msgstr "⚠ Figyelem: a nyilatkozat olyan termékeket is tartalmaz, amelyek elállásból kizártként vannak megjelölve. Kérjük, fokozott figyelemmel ellenőrizze a rendelést."
+
+#: templates/emails/admin-notification.php:49
+#: templates/emails/customer-confirmation.php:37
+#: templates/emails/plain/admin-notification.php:36
+#: templates/emails/plain/customer-confirmation.php:25
+#: templates/emails/plain/status-update.php:30
+#: templates/emails/status-update.php:39 templates/frontend/my-account.php:26
+#: templates/pdf/withdrawal-statement.php:70
+msgid "Ügyazonosító"
+msgstr "Ügyazonosító"
+
+#: templates/emails/admin-notification.php:59
+#: templates/emails/customer-confirmation.php:41
+#: templates/emails/plain/admin-notification.php:39
+#: templates/emails/plain/customer-confirmation.php:26
+#: templates/pdf/withdrawal-statement.php:74
+msgid "Beérkezés időpontja"
+msgstr "Beérkezés időpontja"
+
+#: templates/emails/admin-notification.php:63
+#: templates/emails/plain/admin-notification.php:40
+msgid "Határidő státusza"
+msgstr "Határidő állapota"
+
+#: templates/emails/admin-notification.php:69
+#: templates/emails/customer-confirmation.php:51
+#: templates/emails/plain/admin-notification.php:43
+#: templates/emails/plain/customer-confirmation.php:30
+msgid "Az elállással érintett termékek"
+msgstr "Az elállással érintett termékek"
+
+#: templates/emails/admin-notification.php:74
+#: templates/emails/customer-confirmation.php:56
+#: templates/frontend/confirm.php:48
+#: templates/pdf/withdrawal-statement.php:111
+msgid "Mennyiség"
+msgstr "Mennyiség"
+
+#: templates/emails/admin-notification.php:98
+#: templates/emails/plain/admin-notification.php:53
+msgid "Ügy megnyitása az adminban"
+msgstr "Ügy megnyitása az adminfelületen"
+
+#: templates/emails/customer-confirmation.php:22
+#: templates/emails/plain/customer-confirmation.php:21
+#: templates/emails/plain/status-update.php:21
+#: templates/emails/status-update.php:25
+msgid "Tisztelt Vásárlónk!"
+msgstr "Tisztelt Vásárlónk!"
+
+#. translators: 1: case number, 2: order number
+#: templates/emails/customer-confirmation.php:28
+#, php-format
+msgid ""
+"Megerősítjük, hogy elállási nyilatkozatát tartós adathordozón rögzítettük. "
+"Ügyazonosító: %1$s, rendelés: #%2$s."
+msgstr "Megerősítjük, hogy elállási nyilatkozatát tartós adathordozón rögzítettük. Ügyazonosító: %1$s, rendelés: #%2$s."
+
+#: templates/emails/customer-confirmation.php:45
+#: templates/emails/plain/customer-confirmation.php:27
+#: templates/pdf/withdrawal-statement.php:90
+msgid "Rendelésszám"
+msgstr "Rendelésszám"
+
+#. translators: %s: shop name
+#: templates/emails/customer-confirmation.php:74
+#: templates/emails/plain/customer-confirmation.php:41
+#, php-format
+msgid "A nyilatkozatot a következő kereskedő felé tette meg: %s."
+msgstr "A nyilatkozatot a következő kereskedőnek küldte el: %s."
+
+#: templates/emails/customer-confirmation.php:80
+#: templates/emails/plain/customer-confirmation.php:46
+msgid ""
+"Az elállás feldolgozásáról és a visszatérítésről a kereskedő külön értesíti "
+"Önt. A vételárat legkésőbb az elállás kézhezvételétől számított 14 napon "
+"belül visszatérítjük."
+msgstr "A kereskedő külön értesíti Önt az elállás feldolgozásáról és a visszatérítésről. A vételárat legkésőbb az elállási nyilatkozat kézhezvételétől számított 14 napon belül visszatérítjük."
+
+#: templates/emails/customer-confirmation.php:82
+#: templates/emails/plain/customer-confirmation.php:48
+msgid ""
+"Kérjük, őrizze meg ezt az e-mailt, amely az elállás visszaigazolásaként "
+"szolgál."
+msgstr "Kérjük, őrizze meg ezt az e-mailt, amely az elállás visszaigazolásaként szolgál."
+
+#: templates/emails/garan-item.php:27
+msgid "A hivatalos címke a termékoldalon"
+msgstr "A hivatalos címke a termékoldalon"
+
+#: templates/emails/guarantee-notice.php:34
+msgid "Teljes méretben"
+msgstr "Teljes méretben"
+
+#: templates/emails/guarantee-notice.php:38
+#: templates/emails/plain/guarantee-notice.php:29
+msgid "A tájékoztatót mellékletben csatoltuk."
+msgstr "A tájékoztatót mellékletként csatoltuk."
+
+#: templates/emails/plain/admin-notification.php:28
+msgid ""
+"FIGYELEM: a nyilatkozat elállásból kizártként megjelölt terméke(ke)t "
+"tartalmaz. Kérjük, fokozott figyelemmel ellenőrizze a rendelést."
+msgstr "FIGYELEM: a nyilatkozat olyan termékeket tartalmaz, amelyek elállásból kizártként vannak megjelölve. Kérjük, fokozott figyelemmel ellenőrizze a rendelést."
+
+#: templates/emails/plain/admin-notification.php:38
+msgid "Rendelés szerkesztése"
+msgstr "Rendelés szerkesztése"
+
+#: templates/emails/plain/customer-confirmation.php:23
+msgid ""
+"Megerősítjük, hogy elállási nyilatkozatát tartós adathordozón rögzítettük."
+msgstr "Megerősítjük, hogy elállási nyilatkozatát tartós adathordozón rögzítettük."
+
+#: templates/emails/plain/garan-item.php:21
+msgid "A hivatalos címke a termékoldalon:"
+msgstr "A hivatalos címke a termékoldalon:"
+
+#. translators: %s: URL of the official notice image.
+#: templates/emails/plain/guarantee-notice.php:25
+#, php-format
+msgid "Teljes méretben: %s"
+msgstr "Teljes méretben: %s"
+
+#. translators: %s: case number
+#: templates/emails/plain/status-update.php:25
+#: templates/emails/status-update.php:31
+#, php-format
+msgid ""
+"Tájékoztatjuk, hogy %s azonosítójú elállási ügyének állapota megváltozott."
+msgstr "Tájékoztatjuk, hogy a %s azonosítójú elállási ügyének állapota megváltozott."
+
+#: templates/emails/plain/status-update.php:31
+#: templates/emails/status-update.php:43
+msgid "Jelenlegi státusz"
+msgstr "Jelenlegi állapot"
+
+#: templates/emails/plain/status-update.php:35
+#: templates/emails/status-update.php:49
+msgid "A kereskedő üzenete"
+msgstr "A kereskedő üzenete"
+
+#: templates/emails/plain/status-update.php:38
+#: templates/emails/status-update.php:55
+msgid ""
+"Ha kérdése van az elállási ügyével kapcsolatban, kérjük, válaszoljon erre az"
+" e-mailre, vagy vegye fel a kapcsolatot ügyfélszolgálatunkkal. A vételárat "
+"legkésőbb az elállás kézhezvételétől számított 14 napon belül "
+"visszatérítjük."
+msgstr "Ha kérdése van az elállási ügyével kapcsolatban, kérjük, válaszoljon erre az e-mailre, vagy vegye fel a kapcsolatot ügyfélszolgálatunkkal. A vételárat legkésőbb az elállási nyilatkozat kézhezvételétől számított 14 napon belül visszatérítjük."
+
+#: templates/frontend/checkout-garan-list.php:21
+msgid "A következő termékekre a gyártó tartóssági jótállást vállal:"
+msgstr "A következő termékekre a gyártó tartóssági jótállást vállal:"
+
+#: templates/frontend/confirm.php:31
+msgid "Elállás megerősítése"
+msgstr "Elállás megerősítése"
+
+#: templates/frontend/confirm.php:33
+msgid "Elállási nyilatkozat megerősítése"
+msgstr "Elállási nyilatkozat megerősítése"
+
+#: templates/frontend/confirm.php:35
+msgid ""
+"Ön az alábbi rendelésre vonatkozóan elállási nyilatkozatot kíván tenni."
+msgstr "Ön az alábbi rendelésre vonatkozóan kíván elállási nyilatkozatot tenni."
+
+#: templates/frontend/confirm.php:38 templates/frontend/select.php:29
+msgid "Rendelés:"
+msgstr "Rendelés:"
+
+#: templates/frontend/confirm.php:39
+msgid "Típus:"
+msgstr "Típus:"
+
+#: templates/frontend/confirm.php:40
+msgid "Teljes elállás"
+msgstr "Teljes elállás"
+
+#: templates/frontend/confirm.php:40
+msgid "Részleges elállás"
+msgstr "Részleges elállás"
+
+#: templates/frontend/confirm.php:80
+msgid "Bankszámlaszám / IBAN (opcionális)"
+msgstr "Bankszámlaszám / IBAN (nem kötelező)"
+
+#: templates/frontend/confirm.php:82
+msgid "Ha megadod, erre a számlaszámra utaljuk vissza az összeget."
+msgstr "Ha megadja, erre a számlaszámra utaljuk vissza az összeget."
+
+#: templates/frontend/confirm.php:86
+msgid "Megjegyzés (opcionális)"
+msgstr "Megjegyzés (opcionális)"
+
+#: templates/frontend/confirm.php:91
+msgid "Kijelentem, hogy a megadott adatok valósak."
+msgstr "Kijelentem, hogy a megadott adatok valósak."
+
+#: templates/frontend/confirm.php:94
+msgid ""
+"Tudomásul veszem, hogy a nyilatkozat beküldésével elállási igényt jelentek "
+"be."
+msgstr "Tudomásul veszem, hogy a nyilatkozat beküldésével elállási igényt jelentek be."
+
+#: templates/frontend/confirm.php:97
+msgid ""
+"Elfogadom, hogy a webshop a nyilatkozat feldolgozásához kezelje az itt "
+"megadott adatokat."
+msgstr "Elfogadom, hogy a webshop a nyilatkozat feldolgozásához kezelje az itt megadott adatokat."
+
+#: templates/frontend/denied.php:27
+msgid "Új keresés"
+msgstr "Új keresés"
+
+#: templates/frontend/garan-label.php:60
+#: templates/frontend/guarantee-notice.php:38
+#: templates/frontend/guarantee-notice.php:42
+msgid "(új lapon nyílik)"
+msgstr "(új lapon nyílik meg)"
+
+#: templates/frontend/guarantee-notice.php:45
+msgid "Megnyitás külön oldalon"
+msgstr "Megnyitás külön oldalon"
+
+#: templates/frontend/identify.php:28
+msgid "Online elállási nyilatkozat"
+msgstr "Online elállási nyilatkozat"
+
+#: templates/frontend/identify.php:29
+msgid ""
+"Az alábbi űrlapon online bejelentheti elállási szándékát egy korábbi "
+"rendeléssel kapcsolatban. A rendelés azonosításához adja meg a rendelési "
+"számát és a rendeléshez tartozó e-mail címet."
+msgstr "Az alábbi űrlapon online bejelentheti elállási szándékát egy korábbi rendelésével kapcsolatban. A rendelés azonosításához adja meg a rendelési számát és a rendeléshez tartozó e-mail-címet."
+
+#: templates/frontend/identify.php:45
+msgid "Válassz a rendeléseid közül"
+msgstr "Válasszon a rendelései közül"
+
+#: templates/frontend/identify.php:47
+msgid "— Válassz a rendeléseid közül —"
+msgstr "— Válasszon a rendelései közül —"
+
+#: templates/frontend/identify.php:58
+msgid "Rendelési szám"
+msgstr "Rendelési szám"
+
+#: templates/frontend/identify.php:61
+msgid ""
+"Ha vendégként, a fiókod e-mail címétől eltérő címmel adtad le a rendelést, "
+"ide kézzel is beírhatod a rendelési számot."
+msgstr "Ha vendégként, a fiókjához tartozó e-mail-címtől eltérő címmel adta le a rendelést, ide kézzel is beírhatja a rendelési számot."
+
+#: templates/frontend/identify.php:66
+#: templates/pdf/withdrawal-statement.php:86
+msgid "E-mail cím"
+msgstr "E-mail-cím"
+
+#: templates/frontend/identify.php:71
+msgid "Rendelés keresése"
+msgstr "Rendelés keresése"
+
+#: templates/frontend/my-account.php:18
+msgid "Elállási ügyeim"
+msgstr "Elállási ügyeim"
+
+#: templates/frontend/my-account.php:21
+msgid "Még nincs rögzített elállási ügye."
+msgstr "Még nincs rögzített elállási ügye."
+
+#: templates/frontend/my-account.php:28
+msgid "Beküldve"
+msgstr "Beküldve"
+
+#: templates/frontend/my-account.php:30
+msgid "Dokumentum"
+msgstr "Dokumentum"
+
+#: templates/frontend/my-account.php:42
+msgid "Elállási nyilatkozat (PDF)"
+msgstr "Elállási nyilatkozat (PDF)"
+
+#: templates/frontend/select.php:26
+msgid "Elállással érintett termékek kiválasztása"
+msgstr "Elállással érintett termékek kiválasztása"
+
+#: templates/frontend/select.php:30
+msgid "Rendelés dátuma:"
+msgstr "Rendelés dátuma:"
+
+#: templates/frontend/select.php:31
+msgid "Fizetési mód:"
+msgstr "Fizetési mód:"
+
+#: templates/frontend/select.php:32
+msgid "Határidő státusz:"
+msgstr "Határidő státusza:"
+
+#: templates/frontend/select.php:48
+msgid ""
+"Teljes elálláshoz hagyja minden terméknél a teljes mennyiséget. Részleges "
+"elálláshoz csökkentse a mennyiséget, a kihagyott termékeknél állítsa 0-ra."
+msgstr "Teljes elálláshoz hagyja minden terméknél a teljes mennyiséget. Részleges elálláshoz csökkentse a mennyiséget, a kihagyott termékeknél pedig állítsa 0-ra."
+
+#: templates/frontend/select.php:55
+msgid "Elállás mennyiség"
+msgstr "Elállási mennyiség"
+
+#: templates/frontend/select.php:84
+msgid "Tovább a megerősítéshez"
+msgstr "Tovább a megerősítéshez"
+
+#: templates/frontend/success.php:20
+msgid "Elállási nyilatkozatát rögzítettük"
+msgstr "Elállási nyilatkozatát rögzítettük"
+
+#: templates/frontend/success.php:22
+msgid ""
+"Köszönjük. Elállási nyilatkozatát rendszerünk rögzítette, és a "
+"visszaigazolást elküldtük a megadott e-mail címre (tartós adathordozó)."
+msgstr "Köszönjük. Elállási nyilatkozatát rendszerünk rögzítette, és a visszaigazolást elküldtük a megadott e-mail címre (tartós adathordozó)."
+
+#: templates/frontend/success.php:25
+msgid "Ügyazonosító:"
+msgstr "Ügyazonosító:"
+
+#: templates/frontend/success.php:26
+msgid "Beérkezés időpontja:"
+msgstr "Beérkezés időpontja:"
+
+#: templates/frontend/success.php:29
+msgid "A nyilatkozat feldolgozásáról a kereskedő külön értesíti Önt."
+msgstr "A nyilatkozat feldolgozásáról a kereskedő külön értesíti Önt."
+
+#: templates/pdf/withdrawal-statement.php:67
+msgid "Ügy adatai"
+msgstr "Ügy adatai"
+
+#: templates/pdf/withdrawal-statement.php:79
+msgid "Fogyasztó és rendelés"
+msgstr "Fogyasztó és rendelés"
+
+#: templates/pdf/withdrawal-statement.php:82
+msgid "Fogyasztó neve"
+msgstr "Fogyasztó neve"
+
+#: templates/pdf/withdrawal-statement.php:94
+msgid "Rendelés dátuma"
+msgstr "Rendelés dátuma"
+
+#: templates/pdf/withdrawal-statement.php:99
+msgid "Visszatérítési bankszámla"
+msgstr "Visszatérítési bankszámla"
+
+#: templates/pdf/withdrawal-statement.php:105
+msgid "Érintett termékek"
+msgstr "Érintett termékek"
+
+#: templates/pdf/withdrawal-statement.php:110
+msgid "Cikkszám"
+msgstr "Cikkszám"
+
+#: templates/pdf/withdrawal-statement.php:117
+msgid "Nincs megadott tétel."
+msgstr "Nincs megadott tétel."
+
+#: templates/pdf/withdrawal-statement.php:131
+msgid "Nyilatkozat"
+msgstr "Nyilatkozat"
+
+#: templates/pdf/withdrawal-statement.php:138
+msgid "Ügy azonosító (belső):"
+msgstr "Ügyazonosító (belső):"
+
+#: templates/pdf/withdrawal-statement.php:142
+msgid "Dokumentum lenyomata (SHA-256):"
+msgstr "Dokumentumlenyomat (SHA-256):"
+
+#: templates/pdf/withdrawal-statement.php:146
+msgid "Dokumentum generálva:"
+msgstr "Dokumentum generálva:"
+
+#: blocks/withdrawal-form/editor.js:33
+msgid "Az elállási nyilatkozat űrlap a webhely látogatói oldalán jelenik meg."
+msgstr "Az elállási nyilatkozat űrlap a honlap látogatói oldalán jelenik meg."
+
+#: blocks/withdrawal-form/block.json
+msgctxt "block title"
+msgid "Elállási űrlap"
+msgstr "Elállási űrlap"
+
+#: blocks/withdrawal-form/block.json
+msgctxt "block description"
+msgid "Online elállási nyilatkozat űrlap megjelenítése a látogatók számára."
+msgstr "Online elállási nyilatkozat űrlap megjelenítése a látogatók számára."

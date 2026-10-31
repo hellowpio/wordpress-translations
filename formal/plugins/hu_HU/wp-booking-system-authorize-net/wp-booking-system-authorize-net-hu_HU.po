@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: WP Booking System - Authorize.Net Add-on 1.0.6\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:50:59+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -34,7 +34,7 @@ msgstr "https://www.wpbookingsystem.com/"
 #. Description of the plugin
 #: index.php
 msgid "Accept credit card payments through Authorize.Net"
-msgstr "Fogadjon hitelkártyás fizetéseket az Authorize.Net-en keresztül"
+msgstr "Fogadjon el hitelkártyás fizetéseket az Authorize.Net-en keresztül"
 
 #. Author of the plugin
 #: index.php
@@ -59,7 +59,7 @@ msgstr "Küldés"
 
 #: includes/base/admin/settings/functions.php:53
 msgid "Cardholder Name Label"
-msgstr "Kártyabirtokos neve felirata"
+msgstr "A kártyabirtokos nevének címkéje"
 
 #: includes/base/admin/settings/functions.php:54
 msgid "The label for the Cardholder's Name in the payment form."
@@ -67,7 +67,7 @@ msgstr "A kártyabirtokos nevének felirata a fizetési űrlapon."
 
 #: includes/base/admin/settings/functions.php:58
 msgid "Card Details Label"
-msgstr "Kártyaadatok felirata"
+msgstr "A kártyaadatok címkéje"
 
 #: includes/base/admin/settings/functions.php:59
 msgid "The label for the Card Details in the payment form."
@@ -79,11 +79,11 @@ msgstr "Kötelező fizetési mező"
 
 #: includes/base/admin/settings/functions.php:64
 msgid "The error message when a payment form field is empty."
-msgstr "A hibaüzenet, amikor egy fizetési űrlapmező üres."
+msgstr "A hibaüzenet, amely akkor jelenik meg, ha a fizetési űrlap egyik mezője üres."
 
 #: includes/base/admin/settings/functions.php:68
 msgid "Payment Submit Button Label"
-msgstr "Fizetés elküldése gomb felirata"
+msgstr "A fizetés elküldésére szolgáló gomb címkéje"
 
 #: includes/base/admin/settings/functions.php:69
 msgid "The button label when submitting a payment form."
@@ -126,9 +126,7 @@ msgstr "Számlatétel neve"
 msgid ""
 "The name of the product that appears on the Authorize.Net invoice. Eg. "
 "\"Booking at Anne's house.\""
-msgstr ""
-"A termék neve, amely az Authorize.Net számlán megjelenik. Pl. \"Foglalás "
-"Anna házában.\""
+msgstr "A termék neve, amely az Authorize.Net számlán megjelenik. Pl. „Foglalás Anna házában.”"
 
 #: includes/base/admin/settings/views/view-payment-settings-authorize-net.php:131
 msgid "API Credentials"
@@ -140,12 +138,7 @@ msgid ""
 "href=\"https://www.wpbookingsystem.com/documentation/authorize-net-"
 "integration/\">check out our guide</a> which offers step by step "
 "instructions."
-msgstr ""
-"Ha segítségre van szüksége az API kulcsok beszerzéséhez, <a "
-"target=\"_blank\" "
-"href=\"https://www.wpbookingsystem.com/documentation/authorize-net-"
-"integration/\">tekintse meg az útmutatónkat</a>, amely lépésről lépésre "
-"bemutatja a teendőket."
+msgstr "Ha segítségre van szüksége az API-kulcsok beszerzéséhez, <a target=\"_blank\" href=\"https://www.wpbookingsystem.com/documentation/authorize-net-integration/\">tekintse meg az útmutatónkat</a>, amely lépésről lépésre bemutatja a teendőket."
 
 #: includes/base/admin/settings/views/view-payment-settings-authorize-net.php:141
 msgid "Enable Sandbox"
@@ -155,13 +148,11 @@ msgstr "Sandbox engedélyezése"
 msgid ""
 "We recommend enabling sandbox mode and testing the payment integration "
 "before going live."
-msgstr ""
-"Javasoljuk a sandbox mód engedélyezését és a fizetési integráció tesztelését"
-" az élesítés előtt."
+msgstr "Javasoljuk a sandbox mód engedélyezését és a fizetési integráció tesztelését az élesítés előtt."
 
 #: includes/base/admin/settings/views/view-payment-settings-authorize-net.php:156
 msgid "Sandbox API Login ID"
-msgstr "Sandbox API bejelentkezési azonosító"
+msgstr "Tesztkörnyezeti API-belépési ID"
 
 #: includes/base/admin/settings/views/view-payment-settings-authorize-net.php:167
 msgid "Sandbox Transaction Key"
@@ -173,7 +164,7 @@ msgstr "Sandbox klienskulcs"
 
 #: includes/base/admin/settings/views/view-payment-settings-authorize-net.php:189
 msgid "Production API Login ID"
-msgstr "Éles API bejelentkezési azonosító"
+msgstr "Éles API-belépési ID"
 
 #: includes/base/admin/settings/views/view-payment-settings-authorize-net.php:200
 msgid "Production Transaction Key"
@@ -189,7 +180,7 @@ msgstr "Valami hiba történt. Kérjük, frissítse az oldalt, és próbálja ú
 
 #: includes/base/functions-actions-authorize-net.php:90
 msgid "The minimum payable amount is 0.01$"
-msgstr "A fizetendő minimális összeg 0.01$"
+msgstr "A fizetendő minimális összeg 0,01 $"
 
 #: includes/base/functions-actions-authorize-net.php:99
 msgid "This currency is not supported by Authorize.Net"
@@ -199,14 +190,11 @@ msgstr "Ezt a pénznemet az Authorize.Net nem támogatja"
 msgid ""
 "Authorize.Net Test mode is enabled. To make a test payment, use the 4111 "
 "1111 1111 1111 credit card with any future expiration date and any CVV code."
-msgstr ""
-"Az Authorize.Net tesztmód engedélyezve van. Tesztfizetéshez használja a 4111"
-" 1111 1111 1111 hitelkártyaszámot bármely jövőbeli lejárati dátummal és "
-"bármilyen CVV-kóddal."
+msgstr "Az Authorize.Net tesztmódja be van kapcsolva. Tesztfizetéshez használja a 4111 1111 1111 1111-es hitelkártyaszámot, tetszőleges jövőbeli lejárati dátummal és CVV-kóddal."
 
 #: includes/base/functions-part-payments.php:38
 msgid "Authorize.Net Test mode is enabled."
-msgstr "Az Authorize.Net tesztmód engedélyezve van."
+msgstr "Az Authorize.Net tesztmódja be van kapcsolva."
 
 #: includes/base/functions-refunds.php:40
 msgid "Deposit"
@@ -224,6 +212,4 @@ msgstr "Fizessen hitelkártyával az Authorize.Net-en keresztül."
 msgid ""
 "The <strong>Authorize.Net</strong> Add-on requires WP Booking System version"
 " "
-msgstr ""
-"A(z) <strong>Authorize.Net</strong> kiegészítő a WP Booking System verzióját"
-" igényli "
+msgstr "Az <strong>Authorize.Net</strong> kiegészítő a WP Booking System verzióját igényli "

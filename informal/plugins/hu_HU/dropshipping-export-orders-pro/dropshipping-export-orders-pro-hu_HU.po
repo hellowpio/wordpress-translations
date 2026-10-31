@@ -1,0 +1,1348 @@
+# Copyright (C) 2026 WP Desk
+# This file is distributed under the same license as the Dropshipping Export Orders PRO plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Dropshipping Export Orders PRO 1.1.9\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dropshipping-export-orders-pro\n"
+"POT-Creation-Date: 2026-07-06T13:54:31+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: dropshipping-export-orders-pro\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: Dropshipping Export Orders PRO\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 1.1.9\n"
+
+#. Plugin Name of the plugin
+#: dropshipping-export-orders-pro.php:3
+msgid "Dropshipping Export Orders PRO"
+msgstr "Dropshipping Export Orders PRO"
+
+#. Plugin URI of the plugin
+#: dropshipping-export-orders-pro.php:4
+msgid "https://wpdesk.link/export-orders"
+msgstr "https://wpdesk.link/export-orders"
+
+#. Description of the plugin
+#: dropshipping-export-orders-pro.php:5
+msgid ""
+"Export WooCommerce orders to a CSV, XML or JSON file. Use orders field "
+"mapping, advanced settings, conditional logic, and custom schedule for "
+"automatic exports."
+msgstr "WooCommerce-rendelések exportálása CSV-, XML- vagy JSON-fájlba. Használd a rendelések mezőinek hozzárendelését, a haladó beállításokat, a feltételes logikát és az automatikus exportálás egyéni időzítését."
+
+#. Author of the plugin
+#: dropshipping-export-orders-pro.php:8
+msgid "WP Desk"
+msgstr "WP Desk"
+
+#. Author URI of the plugin
+#: dropshipping-export-orders-pro.php:9
+msgid "https://www.wpdesk.net/"
+msgstr "https://www.wpdesk.net/"
+
+#: src/Plugin/Core/Action/Ajax/StopExportAjaxAction.php:67
+msgid "Import stopped."
+msgstr "Az importálás leállt."
+
+#: src/Plugin/Core/Action/Cron/ExportCronAction.php:47
+msgid "Every minute"
+msgstr "Percenként"
+
+#: src/Plugin/Core/Action/Loader/Plugin/PluginLinksLoaderAction.php:51
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:188
+msgid "Settings"
+msgstr "Beállítások"
+
+#: src/Plugin/Core/Action/Loader/Plugin/PluginLinksLoaderAction.php:52
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:184
+msgid "Docs"
+msgstr "Dokumentáció"
+
+#: src/Plugin/Core/Action/Loader/PostType/ExportPostTypeLoaderAction.php:40
+msgid "Manage Dropshipping Xml."
+msgstr "Dropshipping XML kezelése."
+
+#: src/Plugin/Core/Action/Process/ExportManagerCloneProcessAction.php:114
+msgid "copy"
+msgstr "másolat"
+
+#: src/Plugin/Core/Action/Process/ExportProcessAction.php:122
+msgid "Error: uid is empty"
+msgstr "Hiba: az uid üres"
+
+#: src/Plugin/Core/Action/Process/ExportProcessAction.php:174
+#: src/Plugin/Core/Action/Process/ExportProcessAction.php:261
+msgid "Waiting, another process is exporting now."
+msgstr "Várakozás: egy másik folyamat éppen exportál."
+
+#: src/Plugin/Core/Action/Process/ExportProcessAction.php:180
+msgid "Initialize export"
+msgstr "Exportálás inicializálása"
+
+#: src/Plugin/Core/Action/Process/ExportProcessAction.php:184
+msgid "Initializing is finished"
+msgstr "Az inicializálás befejeződött"
+
+#: src/Plugin/Core/Action/Process/ExportProcessAction.php:189
+msgid "Export in progress"
+msgstr "Exportálás folyamatban"
+
+#: src/Plugin/Core/Action/Process/ExportProcessAction.php:235
+msgid "Export is finished"
+msgstr "Az exportálás befejeződött"
+
+#: src/Plugin/Core/Action/Process/ExportProcessAction.php:255
+msgid "Starting new export for uid: "
+msgstr "Új exportálás indítása ehhez az uid-hez: "
+
+#: src/Plugin/Core/Action/View/ExportLogicViewAction.php:79
+#: src/Plugin/Core/Template/Export/ExportLogic.php:41
+#: src/Plugin/Core/Template/HeaderSteps.php:33
+msgid "Conditional Logic"
+msgstr "Feltételes logika"
+
+#: src/Plugin/Core/Action/View/ExportManagerViewAction.php:78
+msgid "elements"
+msgstr "elem"
+
+#: src/Plugin/Core/Action/View/ExportManagerViewAction.php:78
+msgid "element"
+msgstr "elem"
+
+#: src/Plugin/Core/Action/View/ExportManagerViewAction.php:82
+#: src/Plugin/Core/Config/MenuConfig.php:58
+msgid "Export Manager"
+msgstr "Exportkezelő"
+
+#: src/Plugin/Core/Action/View/ExportManagerViewAction.php:84
+msgid "create new"
+msgstr "Új létrehozása"
+
+#: src/Plugin/Core/Action/View/ExportMapperViewAction.php:86
+msgid "Order mapper"
+msgstr "Rendelési mezők hozzárendelése"
+
+#: src/Plugin/Core/Action/View/ExportOptionsViewAction.php:77
+msgid "Export options"
+msgstr "Exportálási beállítások"
+
+#: src/Plugin/Core/Action/View/ExportStatusViewAction.php:71
+#: src/Plugin/Core/Action/View/ExportTypeViewAction.php:79
+msgid "Export"
+msgstr "Exportálás"
+
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/ContainsCondition.php:37
+msgid "Contains"
+msgstr "Tartalmaz"
+
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/EmptyCondition.php:28
+msgid "is empty"
+msgstr "üres"
+
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/EqualCondition.php:37
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/EqualInCondition.php:37
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/EqualMetaCondition.php:36
+msgid "is equal"
+msgstr "egyenlő"
+
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/FromDateCondition.php:41
+msgid "from date"
+msgstr "dátumtól"
+
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/HigherCondition.php:42
+msgid "is higher than"
+msgstr "nagyobb, mint"
+
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/IsInCategoryCondition.php:36
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/IsInStatusCondition.php:37
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/IsInTagCondition.php:36
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/IsTypeCondition.php:37
+msgid "is"
+msgstr "egyenlő"
+
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/IsNotInCategoryCondition.php:36
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/IsNotInTagCondition.php:36
+msgid "is not in"
+msgstr "nem szerepel"
+
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/LowerCondition.php:42
+msgid "is lower than"
+msgstr "kisebb, mint"
+
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/NotContainsCondition.php:36
+msgid "Not contains"
+msgstr "nem tartalmazza"
+
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/NotEmptyCondition.php:28
+msgid "is not empty"
+msgstr "nem üres"
+
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/NotEqualCondition.php:36
+msgid "is not equal"
+msgstr "nem egyenlő"
+
+#: src/Plugin/Core/ConditionalLogic/Conditions/Condition/ToDateCondition.php:41
+msgid "to date"
+msgstr "dátumig"
+
+#: src/Plugin/Core/ConditionalLogic/Fields/Field/OrderBillingEmailField.php:39
+#: src/Plugin/Core/OrderFields/Fields/BillingEmailField.php:24
+msgid "Billing email"
+msgstr "Számlázási e-mail cím"
+
+#: src/Plugin/Core/ConditionalLogic/Fields/Field/OrderCurrencyField.php:42
+msgid "Order currency"
+msgstr "Megrendelés pénzneme"
+
+#: src/Plugin/Core/ConditionalLogic/Fields/Field/OrderDateCreatedField.php:44
+msgid "Order created date"
+msgstr "Megrendelés létrehozásának dátuma"
+
+#: src/Plugin/Core/ConditionalLogic/Fields/Field/OrderMetaField.php:42
+msgid "Order meta"
+msgstr "Rendelés metaadatai"
+
+#: src/Plugin/Core/ConditionalLogic/Fields/Field/OrderProductCategoryField.php:38
+msgid "Order product category"
+msgstr "Megrendelés termékkategóriája"
+
+#: src/Plugin/Core/ConditionalLogic/Fields/Field/OrderProductNameField.php:38
+msgid "Order product name"
+msgstr "Megrendelés termékének neve"
+
+#: src/Plugin/Core/ConditionalLogic/Fields/Field/OrderProductSkuField.php:40
+msgid "Order product SKU"
+msgstr "Rendelési termék SKU"
+
+#: src/Plugin/Core/ConditionalLogic/Fields/Field/OrderProductTagField.php:38
+msgid "Order product tag"
+msgstr "Megrendelés termékének címkéje"
+
+#: src/Plugin/Core/ConditionalLogic/Fields/Field/OrderStatusField.php:42
+#: src/Plugin/Core/OrderFields/Fields/OrderStatusField.php:24
+msgid "Order status"
+msgstr "Megrendelés állapota"
+
+#: src/Plugin/Core/ConditionalLogic/Fields/Field/OrderTotalAmountField.php:44
+msgid "Order total amount"
+msgstr "Megrendelés végösszege"
+
+#: src/Plugin/Core/ConditionalLogic/Fields/Field/OrderTypeField.php:38
+msgid "Order type"
+msgstr "Megrendelés típusa"
+
+#: src/Plugin/Core/Config/MenuConfig.php:63
+msgid "Export orders"
+msgstr "Megrendelések exportálása"
+
+#: src/Plugin/Core/Email/ExportEmail.php:36
+msgid "Dropshipping export orders"
+msgstr "Dropshipping-megrendelések exportálása"
+
+#: src/Plugin/Core/Email/ExportEmail.php:37
+msgid "Email with orders."
+msgstr "Megrendeléseket tartalmazó e-mail."
+
+#: src/Plugin/Core/Email/ExportEmail.php:38
+msgid "Exported order items"
+msgstr "Exportált megrendelési tételek"
+
+#: src/Plugin/Core/Email/ExportEmail.php:39
+msgid "The exported orders are attached"
+msgstr "Az exportált megrendelések csatolva vannak"
+
+#: src/Plugin/Core/Email/ExportEmail.php:40
+msgid "[{site_title}]"
+msgstr "[{site_title}]"
+
+#: src/Plugin/Core/Form/Fields/Component/ConditionalLogicComponent.php:69
+msgid "Export order item if"
+msgstr "Megrendelési tétel exportálása, ha"
+
+#: src/Plugin/Core/Form/Fields/Component/ConditionalLogicComponent.php:75
+msgid "value"
+msgstr "érték"
+
+#: src/Plugin/Core/Form/Fields/Component/ConditionalLogicComponent.php:84
+#: src/Plugin/Core/Form/Fields/Component/ConditionalLogicComponent.php:89
+#: src/Plugin/Core/Form/Fields/Component/ConditionalLogicComponent.php:104
+#: src/Plugin/Core/Form/Fields/Component/ConditionalLogicComponent.php:109
+msgid "String or value"
+msgstr "Szöveg vagy érték"
+
+#: src/Plugin/Core/Form/Fields/Component/ConditionalLogicComponent.php:94
+#: src/Plugin/Core/Form/Fields/Component/ConditionalLogicComponent.php:99
+msgid "Numeric value"
+msgstr "Numerikus érték"
+
+#: src/Plugin/Core/Form/Fields/Component/ConditionalLogicComponent.php:114
+#: src/Plugin/Core/Form/Fields/Component/ConditionalLogicComponent.php:119
+msgid "Select date"
+msgstr "Dátum kiválasztása"
+
+#: src/Plugin/Core/Form/Fields/ExportFileTypeFormFields.php:41
+msgid "CSV"
+msgstr "CSV"
+
+#: src/Plugin/Core/Form/Fields/ExportFileTypeFormFields.php:48
+msgid "XML"
+msgstr "XML"
+
+#: src/Plugin/Core/Form/Fields/ExportFileTypeFormFields.php:55
+msgid "JSON"
+msgstr "JSON"
+
+#: src/Plugin/Core/Form/Fields/ExportFileTypeFormFields.php:58
+#: src/Plugin/Core/Form/Fields/ExportLogicFormFields.php:50
+#: src/Plugin/Core/Form/Fields/ExportMapperFormFields.php:97
+msgid "Go to the next step &rarr;"
+msgstr "Tovább a következő lépésre &rarr;"
+
+#: src/Plugin/Core/Form/Fields/ExportLogicFormFields.php:45
+msgid "Logical conditions"
+msgstr "Logikai feltételek"
+
+#: src/Plugin/Core/Form/Fields/ExportManagerFormFields.php:39
+#: src/Plugin/Core/Form/Fields/ExportManagerFormFields.php:49
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#: src/Plugin/Core/Form/Fields/ExportManagerFormFields.php:59
+msgid "Bulk"
+msgstr "Csoportos"
+
+#: src/Plugin/Core/Form/Fields/ExportManagerFormFields.php:60
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: src/Plugin/Core/Form/Fields/ExportManagerFormFields.php:66
+msgid "Import manager"
+msgstr "Importkezelő"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:87
+msgid "Export Name"
+msgstr "Export neve"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:93
+#: src/Plugin/Core/Form/Fields/SettingsFormFields.php:31
+#: src/Plugin/Core/Form/Fields/SettingsFormFields.php:49
+msgid "Products in one batch"
+msgstr "Termékek egy kötegben"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:99
+msgid "Separator"
+msgstr "Elválasztó"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:105
+#: src/Plugin/Core/Template/Export/ExportManager.php:126
+#: src/Plugin/Core/Template/Export/ExportManager.php:327
+msgid "Cron schedule"
+msgstr "Cron-időzítés"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:108
+msgid "Select the days of the week for the export to run automatically."
+msgstr "Válaszd ki a hét azon napjait, amikor az exportálás automatikusan fusson."
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:115
+msgid "Select hours for the export to run automatically."
+msgstr "Válaszd ki az órákat, amikor az exportálás automatikusan fusson."
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:123
+msgid "Export to your server's FTP"
+msgstr "Exportálás a szervered FTP-jére"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:126
+msgid "FTP path"
+msgstr "FTP-útvonal"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:127
+msgid "Enter the file location."
+msgstr "Add meg a fájl helyét."
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:133
+msgid "Change order status"
+msgstr "Megrendelés állapotának módosítása"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:134
+msgid "Check to change automatically order status after export."
+msgstr "Jelöld be, ha azt szeretnéd, hogy az exportálás után automatikusan megváltozzon a megrendelés állapota."
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:136
+msgid "Select order status"
+msgstr "Megrendelés állapotának kiválasztása"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:144
+msgid "Send by email"
+msgstr "Küldés e-mailben"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:145
+msgid "Check to send exported file to email."
+msgstr "Jelöld be, ha e-mailben szeretnéd elküldeni az exportált fájlt."
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:148
+msgid "E-mail recipients"
+msgstr "E-mail-címzettek"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:152
+msgid "E-mail title"
+msgstr "E-mail tárgya"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:156
+msgid "E-mail content"
+msgstr "E-mail tartalma"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:160
+msgid "Start Export &rarr;"
+msgstr "Exportálás indítása &rarr;"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:174
+#, php-format
+msgid "File export %s"
+msgstr "Fájl exportálása %s"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:194
+msgid "Monday"
+msgstr "Hétfő"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:195
+msgid "Tuesday"
+msgstr "Kedd"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:196
+msgid "Wednesday"
+msgstr "Szerda"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:197
+msgid "Thursday"
+msgstr "Csütörtök"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:198
+msgid "Friday"
+msgstr "Péntek"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:199
+msgid "Saturday"
+msgstr "Szombat"
+
+#: src/Plugin/Core/Form/Fields/ExportOptionsFormFields.php:200
+msgid "Sunday"
+msgstr "Vasárnap"
+
+#: src/Plugin/Core/Form/Fields/SettingsFormFields.php:32
+msgid ""
+"Number of products imported in batch. Read more about this settings in the "
+"<a href=\"https://wpdesk.link/dropshipping-settings\" target=\"_blank\" "
+">docs</a>"
+msgstr "Kötegenként importált termékek darabszáma. Erről a beállításról bővebben a <a href=\"https://wpdesk.link/dropshipping-settings\" target=\"_blank\" >dokumentációban</a> olvashatsz"
+
+#: src/Plugin/Core/Form/Fields/SettingsFormFields.php:39
+msgid "Save settings"
+msgstr "Beállítások mentése"
+
+#: src/Plugin/Core/OrderFields/Fields/BillingAddress2Field.php:23
+msgid "Billing address 2"
+msgstr "Számlázási cím 2"
+
+#: src/Plugin/Core/OrderFields/Fields/BillingAdress1Field.php:25
+msgid "Billing address 1"
+msgstr "Számlázási cím 1"
+
+#: src/Plugin/Core/OrderFields/Fields/BillingCityField.php:24
+msgid "Billing City"
+msgstr "Számlázási település"
+
+#: src/Plugin/Core/OrderFields/Fields/BillingCompanyField.php:24
+msgid "Billing company"
+msgstr "Számlázási cégnév"
+
+#: src/Plugin/Core/OrderFields/Fields/BillingCountryField.php:24
+msgid "Billing Country"
+msgstr "Számlázási ország"
+
+#: src/Plugin/Core/OrderFields/Fields/BillingFirstNameField.php:25
+msgid "Billing first name"
+msgstr "Számlázási keresztnév"
+
+#: src/Plugin/Core/OrderFields/Fields/BillingLastNameField.php:24
+msgid "Billing last name"
+msgstr "Számlázási vezetéknév"
+
+#: src/Plugin/Core/OrderFields/Fields/BillingPhoneField.php:24
+msgid "Billing phone"
+msgstr "Számlázási telefonszám"
+
+#: src/Plugin/Core/OrderFields/Fields/BillingPostcodeField.php:25
+msgid "Billing postcode"
+msgstr "Számlázási irányítószám"
+
+#: src/Plugin/Core/OrderFields/Fields/BillingStateField.php:24
+msgid "Billing state"
+msgstr "Számlázási állam"
+
+#: src/Plugin/Core/OrderFields/Fields/FsDPDTrackingField.php:28
+msgid "DPD tracking number"
+msgstr "DPD-csomagkövetési szám"
+
+#: src/Plugin/Core/OrderFields/Fields/FsDPDTrackingUrlField.php:28
+msgid "DPD tracking url"
+msgstr "DPD-csomagkövetési URL"
+
+#: src/Plugin/Core/OrderFields/Fields/FsInPostTrackingField.php:28
+msgid "InPost tracking number"
+msgstr "InPost-csomagkövetési szám"
+
+#: src/Plugin/Core/OrderFields/Fields/FsInPostTrackingUrlField.php:27
+msgid "InPost tracking url"
+msgstr "InPost-csomagkövetési URL"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderCustomerNoteField.php:24
+msgid "Order customer note"
+msgstr "Vásárlói megjegyzés a rendeléshez"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderDateCompletedField.php:24
+msgid "Order date completed"
+msgstr "Rendelés befejezésének dátuma"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderDateCreatedField.php:26
+msgid "Order date created"
+msgstr "Rendelés létrehozásának dátuma"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderDateModifiedField.php:24
+msgid "Order date modified"
+msgstr "Rendelés módosításának dátuma"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderDatePaidField.php:24
+msgid "Order date paid"
+msgstr "Rendelés fizetésének dátuma"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderIdField.php:24
+msgid "Order ID"
+msgstr "Rendelés ID"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderItemCouponDiscountField.php:25
+msgid "Coupon discount"
+msgstr "Kuponkedvezmény"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderItemCouponDiscountTaxField.php:25
+msgid "Coupon discount tax"
+msgstr "Kuponkedvezmény adója"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderItemIdField.php:24
+msgid "Order item ID"
+msgstr "Rendelési tétel ID-ja"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderItemNameField.php:24
+msgid "Order item name"
+msgstr "Rendelési tétel neve"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderItemQtyField.php:25
+msgid "Order item quantity"
+msgstr "Rendelési tétel mennyisége"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderItemSubtotalField.php:25
+msgid "Order item subtotal"
+msgstr "Rendelési tétel részösszege"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderItemSubtotalTaxField.php:26
+msgid "Order item subtotal tax"
+msgstr "Rendelési tétel részösszegének adója"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderItemTaxClassField.php:25
+msgid "Order item tax class"
+msgstr "Rendelési tétel adóosztálya"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderItemTaxStatusField.php:25
+msgid "Order item tax status"
+msgstr "Rendelési tétel adózási státusza"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderItemTotalField.php:25
+msgid "Order item price total"
+msgstr "Rendelési tétel teljes ára"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderItemTotalTaxField.php:25
+msgid "Order item price total tax"
+msgstr "Rendelési tétel teljes árának adója"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderItemTypeField.php:25
+msgid "Order item type"
+msgstr "Rendelési tétel típusa"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderNumberField.php:24
+msgid "Order number"
+msgstr "Rendelésszám"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderSubtotalField.php:24
+msgid "Order subtotal"
+msgstr "Rendelés részösszege"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderTotalField.php:26
+msgid "Order total"
+msgstr "Rendelés végösszege"
+
+#: src/Plugin/Core/OrderFields/Fields/OrderTotalTaxField.php:24
+msgid "Order total tax"
+msgstr "Rendelés adóösszege"
+
+#: src/Plugin/Core/OrderFields/Fields/PaymentMethodField.php:23
+msgid "Payment method"
+msgstr "Fizetési mód"
+
+#: src/Plugin/Core/OrderFields/Fields/ShippingAddress2Field.php:23
+msgid "Shipping address 2"
+msgstr "Szállítási cím 2"
+
+#: src/Plugin/Core/OrderFields/Fields/ShippingAdress1Field.php:25
+msgid "Shipping address 1"
+msgstr "Szállítási cím 1"
+
+#: src/Plugin/Core/OrderFields/Fields/ShippingCityField.php:24
+msgid "Shipping City"
+msgstr "Szállítási település"
+
+#: src/Plugin/Core/OrderFields/Fields/ShippingCompanyField.php:24
+msgid "Shipping company"
+msgstr "Szállítási cégnév"
+
+#: src/Plugin/Core/OrderFields/Fields/ShippingCountryField.php:24
+msgid "Shipping Country"
+msgstr "Szállítási ország"
+
+#: src/Plugin/Core/OrderFields/Fields/ShippingFirstNameField.php:25
+msgid "Shipping first name"
+msgstr "Szállítási keresztnév"
+
+#: src/Plugin/Core/OrderFields/Fields/ShippingLastNameField.php:24
+msgid "Shipping last name"
+msgstr "Szállítási vezetéknév"
+
+#: src/Plugin/Core/OrderFields/Fields/ShippingPhoneField.php:24
+msgid "Shipping phone"
+msgstr "Szállítási telefonszám"
+
+#: src/Plugin/Core/OrderFields/Fields/ShippingPostcodeField.php:25
+msgid "Shipping postcode"
+msgstr "Szállítási irányítószám"
+
+#: src/Plugin/Core/OrderFields/Fields/ShippingStateField.php:24
+msgid "Shipping state"
+msgstr "Szállítási megye"
+
+#: src/Plugin/Core/Service/Exporter/ExporterService.php:138
+msgid "Order item"
+msgstr "Rendelési tétel"
+
+#: src/Plugin/Core/Template/Export/ExportLogic.php:26
+#: src/Plugin/Core/Template/Export/ExportMapper.php:29
+#: src/Plugin/Core/Template/Export/ExportType.php:28
+#: src/Plugin/Core/Template/Export/Options.php:27
+#, php-format
+msgid "Step %s"
+msgstr "Lépés: %s"
+
+#: src/Plugin/Core/Template/Export/ExportLogic.php:45
+msgid "Determine the conditions that must be met to export the file."
+msgstr "Add meg azokat a feltételeket, amelyeknek teljesülniük kell a fájl exportálásához."
+
+#: src/Plugin/Core/Template/Export/ExportLogic.php:46
+#: src/Plugin/Core/Template/Export/ExportManager.php:101
+#: src/Plugin/Core/Template/Export/ExportMapper.php:63
+#: src/Plugin/Core/Template/Export/Options.php:47
+#, php-format
+msgid ""
+"Read more in the <a class=\"deo-docs-url\" href=\"%s\" "
+"target=\"_blank\">plugin documentation &rarr;</a>"
+msgstr "Bővebben a <a class=\"deo-docs-url\" href=\"%s\" target=\"_blank\">bővítmény dokumentációjában &rarr;</a>"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:38
+msgid "Synchronization active"
+msgstr "A szinkronizálás aktív"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:42
+msgid "Synchronization stopped"
+msgstr "A szinkronizálás leállítva"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:46
+msgid "Synchronization error"
+msgstr "Szinkronizálási hiba"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:51
+msgid "Synchronization in progress"
+msgstr "A szinkronizálás folyamatban"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:62
+msgid "Activate synchronization"
+msgstr "Szinkronizálás bekapcsolása"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:73
+msgid "Stop synchronization"
+msgstr "Szinkronizálás leállítása"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:102
+#, php-format
+msgid ""
+"Have you encountered any problems with the export, or you want to know more?"
+" <a class=\"deo-docs-url\" href=\"%s\" target=\"_blank\">Visit FAQ "
+"&rarr;</a>."
+msgstr "Problémába ütköztél exportálás közben, vagy többet szeretnél tudni? <a class=\"deo-docs-url\" href=\"%s\" target=\"_blank\">Nézd meg a GYIK-et &rarr;</a>."
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:119
+#: src/Plugin/Core/Template/Export/ExportManager.php:320
+msgid "Select all"
+msgstr "Összes kiválasztása"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:123
+#: src/Plugin/Core/Template/Export/ExportManager.php:324
+msgid "Export name"
+msgstr "Export neve"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:129
+#: src/Plugin/Core/Template/Export/ExportManager.php:330
+msgid "Actions"
+msgstr "Műveletek"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:132
+#: src/Plugin/Core/Template/Export/ExportManager.php:333
+msgid "Status"
+msgstr "Állapot"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:135
+#: src/Plugin/Core/Template/Export/ExportManager.php:336
+msgid "Export statistics"
+msgstr "Exportálási statisztikák"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:138
+#: src/Plugin/Core/Template/Export/ExportManager.php:339
+msgid "Email"
+msgstr "E-mail-cím"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:141
+#: src/Plugin/Core/Template/Export/ExportManager.php:342
+msgid "Created"
+msgstr "Létrehozva"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:153
+#, php-format
+msgid ""
+"Exports list is empty, <a href=\"%s\" target=\"_self\">please create your "
+"first export.</a>"
+msgstr "Az exportálások listája üres, <a href=\"%s\" target=\"_self\">hozd létre az első exportálásodat.</a>"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:188
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:203
+msgid "Edit logical conditions"
+msgstr "Logikai feltételek szerkesztése"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:218
+msgid "Edit mapper"
+msgstr "Mezőleképezés szerkesztése"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:233
+msgid "Edit options"
+msgstr "Opciók szerkesztése"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:248
+msgid "Clone"
+msgstr "Klónozás"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:259
+msgid "File url"
+msgstr "Fájl URL-je"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:275
+msgid "Delete"
+msgstr "Törlés"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:286
+msgid "Export now"
+msgstr "Exportálás most"
+
+#: src/Plugin/Core/Template/Export/ExportManager.php:306
+#: src/Plugin/Core/Template/Export/ExportStatus.php:41
+msgid "Exported"
+msgstr "Exportálva"
+
+#: src/Plugin/Core/Template/Export/ExportMapper.php:43
+#: src/Plugin/Core/Template/HeaderSteps.php:43
+msgid "Export Mapper"
+msgstr "Exportleképező"
+
+#: src/Plugin/Core/Template/Export/ExportMapper.php:51
+msgid ""
+"Select parameters for order export. Choose the selection that suits you best"
+" or skip it."
+msgstr "Válaszd ki a rendelésexportálás paramétereit. Válaszd ki a számodra legmegfelelőbb kijelölést, vagy hagyd ki ezt a lépést."
+
+#: src/Plugin/Core/Template/Export/ExportMapper.php:90
+msgid "Order fields"
+msgstr "Rendelési mezők"
+
+#: src/Plugin/Core/Template/Export/ExportMapper.php:94
+#, php-format
+msgid ""
+"Read more about this functionality in the <a class=\"docs-url\" href=\"%s\" "
+"target=\"_blank\">documentation</a>."
+msgstr "Bővebben erről a funkcióról a <a class=\"docs-url\" href=\"%s\" target=\"_blank\">dokumentációban</a>."
+
+#: src/Plugin/Core/Template/Export/ExportStatus.php:25
+msgid "Please wait, export in progress"
+msgstr "Kérlek, várj, az exportálás folyamatban van"
+
+#: src/Plugin/Core/Template/Export/ExportStatus.php:30
+msgid ""
+"If you close your browser, the cron scheduler will complete the export "
+"process (it will take longer)."
+msgstr "Ha bezárod a böngészőt, a cron ütemező befejezi az exportálási folyamatot (ez tovább tart)."
+
+#: src/Plugin/Core/Template/Export/ExportStatus.php:38
+msgid "Time elapsed"
+msgstr "Eltelt idő"
+
+#: src/Plugin/Core/Template/Export/ExportStatus.php:42
+msgid "of"
+msgstr "/"
+
+#: src/Plugin/Core/Template/Export/ExportStatus.php:47
+msgid "Start export"
+msgstr "Export indítása"
+
+#: src/Plugin/Core/Template/Export/ExportStatus.php:48
+msgid "Stop export"
+msgstr "Export leállítása"
+
+#: src/Plugin/Core/Template/Export/ExportStatus.php:57
+#, php-format
+msgid ""
+"Have you encountered any problems with the export, or do you want to know "
+"more? <a class=\"deo-docs-url\" href=\"%s\" target=\"_blank\">Visit FAQ "
+"&rarr;</a>"
+msgstr "Problémába ütköztél az exportálás során, vagy többet szeretnél tudni? <a class=\"deo-docs-url\" href=\"%s\" target=\"_blank\">GYIK megtekintése &rarr;</a>"
+
+#: src/Plugin/Core/Template/Export/ExportStatus.php:69
+msgid "Export log"
+msgstr "Exportálási napló"
+
+#: src/Plugin/Core/Template/Export/ExportStatus.php:84
+msgid "Go to the export manager"
+msgstr "Ugrás az exportkezelőhöz"
+
+#: src/Plugin/Core/Template/Export/ExportStatus.php:85
+msgid "Go to your File"
+msgstr "Ugrás a fájlhoz"
+
+#: src/Plugin/Core/Template/Export/ExportType.php:44
+#: src/Plugin/Core/Template/HeaderSteps.php:23
+msgid "Basic settings"
+msgstr "Alapbeállítások"
+
+#: src/Plugin/Core/Template/Export/ExportType.php:48
+msgid ""
+"Select parameters for order export. Choose the selection that suits you best"
+" or skip it. You will always be able to return to this step."
+msgstr "Válaszd ki a rendelésexportálás paramétereit. Válaszd ki a számodra legmegfelelőbb kijelölést, vagy hagyd ki ezt a lépést. Bármikor visszatérhetsz ehhez a lépéshez."
+
+#: src/Plugin/Core/Template/Export/ExportType.php:49
+#, php-format
+msgid ""
+"Read more in the <a class=\"deo-docs-url\" href=\"%s\" "
+"target=\"_blank\">plugin documentation &rarr;</a>."
+msgstr "Bővebben a <a class=\"deo-docs-url\" href=\"%s\" target=\"_blank\">bővítmény dokumentációjában &rarr;</a>."
+
+#: src/Plugin/Core/Template/Export/ExportType.php:65
+msgid "Exported file type"
+msgstr "Exportált fájl típusa"
+
+#: src/Plugin/Core/Template/Export/ExportType.php:68
+msgid "The wholesaler is to receive orders from the store via:"
+msgstr "A nagykereskedő az alábbi módon kapja meg az áruházból érkező rendeléseket:"
+
+#: src/Plugin/Core/Template/Export/Options.php:41
+#: src/Plugin/Core/Template/HeaderSteps.php:53
+msgid "Export Options"
+msgstr "Exportálási opciók"
+
+#: src/Plugin/Core/Template/Export/Options.php:46
+msgid "Complete the orders export settings."
+msgstr "Fejezd be a rendelések exportálásának beállítását."
+
+#: src/Plugin/Core/Template/Export/Options.php:72
+msgid "Files location"
+msgstr "Fájlok helye"
+
+#: src/Plugin/Core/Template/FormFields/order-fields-component.php:20
+msgid "WooCommerce Name"
+msgstr "WooCommerce neve"
+
+#: src/Plugin/Core/Template/FormFields/order-fields-component.php:21
+msgid "Field Name"
+msgstr "Mező neve"
+
+#: src/Plugin/Core/Template/Marketing/marketing-page.php:30
+msgid "Get support"
+msgstr "Támogatás kérése"
+
+#: src/Plugin/Core/Template/Marketing/marketing-page.php:31
+msgid "Share idea"
+msgstr "Ötlet megosztása"
+
+#: src/Plugin/Core/Template/Settings/Settings.php:13
+msgid "Products"
+msgstr "Termékek"
+
+#: src/Plugin/Core/Template/Steps.php:19
+msgid "Save and go back"
+msgstr "Mentés és visszalépés"
+
+#: src/Plugin/Core/Template/Steps.php:23
+msgid "&larr; Go to the previous step"
+msgstr "&larr; Ugrás az előző lépésre"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:206
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on PHP versions older than %s. Please"
+" contact your host and ask them to upgrade."
+msgstr "A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi PHP-verzióval. Kérd meg a tárhelyszolgáltatódat a frissítésre."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:209
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WordPress versions older than %s. "
+"Please update WordPress."
+msgstr "A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi WordPress-verzióval. Frissítsd a WordPress-t."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:212
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WooCommerce versions older than "
+"%s. Please update WooCommerce."
+msgstr "A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi WooCommerce-verzióval. Frissítsd a WooCommerce-t."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:215
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without OpenSSL module version at "
+"least %s. Please update OpenSSL module."
+msgstr "A(z) &#8222;%s&#8221; bővítmény futtatásához legalább %s verziójú OpenSSL-modul szükséges. Frissítsd az OpenSSL-modult."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:310
+#, php-format
+msgid ""
+"The &#8220;%1$s&#8221; plugin requires at least %2$s version of %3$s to work"
+" correctly. Please update it to its latest release."
+msgstr "A(z) &#8222;%1$s&#8221; bővítmény megfelelő működéséhez legalább a(z) %3$s %2$s verziója szükséges. Frissítsd a legújabb verzióra."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:416
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s active. Please install and"
+" activate %s plugin."
+msgstr "A(z) &#8222;%s&#8221; bővítmény futtatásához aktív %s szükséges. Telepítsd és kapcsold be a(z) %s bővítményt."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:468
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin requires free %s plugin. <a href=\"%s\">Install "
+"%s</a>"
+msgstr "A(z) &#8222;%s&#8221; bővítményhez az ingyenes %s bővítmény szükséges. <a href=\"%s\">A(z) %s telepítése</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:474
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin requires activating %s plugin. <a "
+"href=\"%s\">Activate %s</a>"
+msgstr "A(z) &#8222;%s&#8221; bővítményhez be kell kapcsolnod a(z) %s bővítményt. <a href=\"%s\">A(z) %s bekapcsolása</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:516
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP module installed. "
+"Please contact your host and ask them to install %s."
+msgstr ""
+"A(z) &#8220;%s&#8221; bővítmény futtatásához telepíteni kell a(z) %s PHP-"
+"modult. Kérd meg a tárhelyszolgáltatódat a(z) %s telepítésére."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:541
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP setting set to %s. "
+"Please contact your host and ask them to set %s."
+msgstr "A(z) &#8220;%s&#8221; bővítmény futtatásához a(z) %s PHP-beállítás értéke legyen %s. Kérd meg a tárhelyszolgáltatódat, hogy állítsa be a(z) %s értékét."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker_With_Update_Disable.php:29
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin is temporarily disabled since the required %s "
+"plugin is being upgraded."
+msgstr ""
+"A(z) &#8220;%s&#8221; bővítmény átmenetileg ki van kapcsolva, mert a "
+"szükséges %s bővítmény frissítése folyamatban van."
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:181
+msgid "Support"
+msgstr "Támogatás"
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/input-image.php:46
+msgid "Set image"
+msgstr "Kép beállítása"
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/input-image.php:57
+msgid "Remove image"
+msgstr "Kép eltávolítása"
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/input-image.php:82
+msgid "Select or Upload Media"
+msgstr "Média kiválasztása vagy feltöltése"
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/input-image.php:86
+msgid "Use this media"
+msgstr "Média használata"
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/product-select.php:22
+msgid "Search for a product&hellip;"
+msgstr "Termék keresése&hellip;"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Disabled"
+msgstr "Letiltva"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Emergency"
+msgstr "Vészhelyzet"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Alert"
+msgstr "Riasztás"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Critical"
+msgstr "Kritikus"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Error"
+msgstr "Hiba"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Warning"
+msgstr "Figyelem"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Notice"
+msgstr "Értesítés"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Info"
+msgstr "Információ"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Debug"
+msgstr "Hibakeresés"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:23
+#, php-format
+msgid ""
+"Can not enable WP Desk Debug log! Cannot create directory %s or this "
+"directory is not writeable!"
+msgstr ""
+"Nem sikerült bekapcsolni a WP Desk hibakeresési naplóját! Nem lehet "
+"létrehozni a(z) %s könyvtárat, vagy a könyvtár nem írható!"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:36
+#, php-format
+msgid "Can not enable WP Desk Debug log! Cannot create file %s!"
+msgstr ""
+"Nem sikerült bekapcsolni a WP Desk hibakeresési naplóját! Nem lehet "
+"létrehozni a(z) %s fájlt!"
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/NoticeReminder.php:53
+#, php-format
+msgid ""
+"You're using an outdated version of the following plugin: %s This may cause "
+"serious compatibility issues with WooCommerce. Update it immediately to "
+"avoid potential disruptions."
+msgid_plural ""
+"You're using outdated versions of the following plugins: %s This may cause "
+"serious compatibility issues with WooCommerce. Update them immediately to "
+"avoid potential disruptions."
+msgstr[0] "A következő bővítmény elavult verzióját használod: %s. Ez komoly kompatibilitási problémákat okozhat a WooCommerce-szel. A lehetséges fennakadások elkerülése érdekében azonnal frissítsd."
+msgstr[1] "A következő bővítmények elavult verzióit használod: %s. Ezek komoly kompatibilitási problémákat okozhatnak a WooCommerce-szel. A lehetséges fennakadások elkerülése érdekében azonnal frissítsd őket."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/NoticeReminder.php:60
+#, php-format
+msgid ""
+"You're using an older version of the following plugin: %s This version "
+"hasn't been tested with the latest WooCommerce versions. Please update it to"
+" the latest version to ensure smooth compatibility."
+msgid_plural ""
+"You're using older versions of the following plugins: %s These versions "
+"haven't been tested with the latest WooCommerce versions. Please update them"
+" to the latest version to ensure smooth compatibility."
+msgstr[0] "A következő bővítmény régebbi verzióját használod: %s. Ezt a verziót nem tesztelték a WooCommerce legújabb verzióival. A zökkenőmentes kompatibilitás érdekében frissítsd a legújabb verzióra."
+msgstr[1] "A következő bővítmények régebbi verzióit használod: %s. Ezeket a verziókat nem tesztelték a WooCommerce legújabb verzióival. A zökkenőmentes kompatibilitás érdekében frissítsd őket a legújabb verzióra."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/ReminderData.php:71
+#, php-format
+msgid ""
+"You're using an outdated version of %1$s plugin, which may cause serious "
+"compatibility issues with WooCommerce. %2$sUpdate immediately%3$s to avoid "
+"potential disruptions."
+msgstr ""
+"A(z) %1$s bővítmény elavult verzióját használod, ami súlyos kompatibilitási "
+"problémákat okozhat a WooCommerce-szel. A lehetséges fennakadások elkerülése"
+" érdekében %2$sfrissítsd azonnal%3$s."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/ReminderData.php:75
+#, php-format
+msgid ""
+"You're using an older version of %1$s plugin that hasn't been tested with "
+"the latest WooCommerce versions. Please %2$supdate to the latest version%3$s"
+" to ensure smooth compatibility."
+msgstr ""
+"A(z) %1$s bővítmény régebbi verzióját használod, amelyet nem teszteltek a "
+"WooCommerce legújabb verzióival. A zökkenőmentes kompatibilitás érdekében "
+"%2$sfrissíts a legújabb verzióra%3$s."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/SiteHealthReminder.php:39
+msgid "You should update plugin"
+msgstr "A bővítmény frissítése ajánlott"
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/SiteHealthReminder.php:39
+msgid "Compatibility"
+msgstr "Kompatibilitás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginExternalBlocking.php:32
+#, php-format
+msgid ""
+"<b>Warning!</b> You're blocking external requests which means you won't be "
+"able to get %1$s updates. Please add %2$s to %3$s."
+msgstr ""
+"<b>figyelem!</b> Külső kéréseket tiltasz le, ezért nem fogsz tudni "
+"%1$s-frissítéseket kapni. Add hozzá a %2$s értéket a %3$s-hoz."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:83
+#, php-format
+msgid ""
+"Error while connecting to remote server %s. Please contact your hosting "
+"provider or try again later. Errors:  "
+msgstr ""
+"Hiba történt a(z) %s távoli szerverhez való csatlakozáskor. Lépj kapcsolatba"
+" a tárhelyszolgáltatóddal, vagy próbáld újra később. Hibák:  "
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:172
+msgid "License server is currently unavailable. Please, try again later."
+msgstr "A licencszerver jelenleg nem érhető el. Próbáld újra később."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:174
+#, php-format
+msgid ""
+"Error while connecting to remote server %1$s. Please contact with your "
+"hosting provider. Cannot parse response. Response code: %2$s Message: %3$s"
+msgstr ""
+"Hiba történt a távoli %1$s szerverhez való csatlakozáskor. Vedd fel a "
+"kapcsolatot a tárhelyszolgáltatóddal. Nem sikerült értelmezni a választ. "
+"Válaszkód: %2$s üzenet: %3$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:177
+#, php-format
+msgid ""
+"Error while connecting to remote server %1$s. Please contact with your "
+"hosting provider. Cannot parse response: %2$s"
+msgstr ""
+"Hiba történt a(z) %1$s távoli szerverhez való csatlakozáskor. Lépj "
+"kapcsolatba a tárhelyszolgáltatóddal. A válasz nem dolgozható fel: %2$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/templates/impossible-to-upgrade.php:12
+#, php-format
+msgid ""
+"This version of %1$s plugin cannot be automatically upgraded. Download the "
+"plugin from %2$syour account%3$s to receive automatic updates in future."
+msgstr ""
+"A(z) %1$s bővítmény ezen verziója nem frissíthető automatikusan. A jövőbeli "
+"automatikus frissítésekhez töltsd le a bővítményt a %2$sfiókodból%3$s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/class-wpdesk-tracker.php:164
+msgid "Submit &amp; Deactivate"
+msgstr "Küldés és kikapcsolás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/OptOut.php:42
+#, php-format
+msgid ""
+"You successfully opted out of collecting usage data by %1$s. If you change "
+"your mind, you can always opt in later in the plugin's quick links."
+msgstr ""
+"Sikeresen leiratkoztál a használati adatok gyűjtéséről ezzel: %1$s. Ha "
+"meggondolod magad, később bármikor feliratkozhatsz a bővítmény "
+"gyorshivatkozásain keresztül."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/PluginActionLinks.php:70
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:41
+msgid "Enable usage tracking"
+msgstr "Használatkövetés bekapcsolása"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/PluginActionLinks.php:75
+msgid "Disable usage tracking"
+msgstr "Használatkövetés kikapcsolása"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:23
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:15
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:19
+#, php-format
+msgid "Hey %s,"
+msgstr "Szia %s,"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:26
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:18
+msgid ""
+"Please help us improve our plugins! If you opt-in, we will collect some non-"
+"sensitive data and usage information anonymously. If you skip this, that's "
+"okay! All plugins will work just fine."
+msgstr ""
+"Segíts nekünk jobbá tenni a bővítményeinket! Ha engedélyezed az "
+"adatgyűjtést, névtelenül gyűjtünk néhány nem érzékeny adatot és használati "
+"információt. Ha kihagyod ezt, az is rendben van! Minden bővítményünk így is "
+"megfelelően működik."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:35
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:27
+msgid "Allow & Continue &rarr;"
+msgstr "Engedélyezés és folytatás &rarr;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:40
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:32
+msgid "Skip"
+msgstr "Kihagyás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:47
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:39
+msgid "What permissions are being granted?"
+msgstr "Milyen engedélyeket adsz meg?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:56
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:48
+msgid "Your Site Overview"
+msgstr "A webhelyed áttekintése"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:59
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:51
+msgid "WP version, PHP info"
+msgstr "WP-verzió, PHP-adatok"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:67
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:59
+msgid "Plugin Usage"
+msgstr "Bővítményhasználat"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:70
+#, php-format
+msgid "Current settings and usage information of %1$s plugins"
+msgstr "A(z) %1$s bővítményeinek aktuális beállításai és használati adatai"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:78
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:70
+msgid "Your Store Overview"
+msgstr "Az áruházad áttekintése"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:81
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:73
+msgid "Anonymized and non-sensitive store usage information"
+msgstr "Anonimizált, nem érzékeny áruházi használati adatok"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:91
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:83
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:27
+msgid "Find out more &raquo;"
+msgstr "Tudj meg többet &raquo;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:62
+msgid "Current settings and usage information of WP Desk plugins"
+msgstr "A WP Desk bővítményeinek aktuális beállításai és használati adatai"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:11
+#, php-format
+msgid "You are deactivating %s plugin."
+msgstr "Kikapcsolod a(z) %s bővítményt."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:19
+msgid ""
+" If you have a moment, please let us know why you are deactivating plugin "
+"(anonymous feedback):"
+msgstr ""
+"Ha van egy perced, mondd el, miért kapcsolod ki a bővítményt (névtelen "
+"visszajelzés):"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:28
+msgid "The plugin suddenly stopped working"
+msgstr "A bővítmény váratlanul leállt"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:38
+msgid "The plugin broke my site"
+msgstr "A bővítmény tönkretette a webhelyemet"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:48
+msgid "I found a better plugin"
+msgstr "Találtam egy jobb bővítményt"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:53
+msgid "What's the plugin's name?"
+msgstr "Mi a bővítmény neve?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:63
+msgid "I only needed the plugin for a short period"
+msgstr "Csak rövid ideig volt szükségem a bővítményre"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:73
+msgid "I no longer need the plugin"
+msgstr "Többé nincs szükségem erre a bővítményre"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:83
+msgid "It's a temporary deactivation. I'm just debugging an issue."
+msgstr "Ez csak ideiglenes kikapcsolás. Épp egy probléma elhárításán dolgozom."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:93
+msgid "Other"
+msgstr "Egyéb"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:98
+msgid "Kindly tell us the reason so we can improve"
+msgstr "Mondd el az okát, hogy továbbfejleszthessük"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:107
+msgid "Cancel"
+msgstr "Mégse"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:110
+msgid "Skip &amp; Deactivate"
+msgstr "Kihagyás és kikapcsolás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:22
+msgid ""
+"We need your help to improve <strong>WP Desk plugins</strong>, so they are "
+"more useful for you and the rest of <strong>30,000+ users</strong>. By "
+"collecting data on how you use our plugins, you will help us a lot. We will "
+"not collect any sensitive data, so you can feel safe."
+msgstr ""
+"Segíts nekünk továbbfejleszteni a <strong>WP Desk bővítményeket</strong>, "
+"hogy hasznosabbak legyenek neked és a többi <strong>30 000+ "
+"felhasználónak</strong>. Ha adatokat gyűjtünk arról, hogyan használod a "
+"bővítményeinket, azzal sokat segítesz nekünk. Nem gyűjtünk érzékeny "
+"adatokat, ezért nyugodt lehetsz."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-opt-out-notice.php:11
+msgid ""
+"You successfully opted out of collecting usage data by WP Desk. If you "
+"change your mind, you can always opt in later in the plugin's quick links."
+msgstr ""
+"Sikeresen letiltottad a WP Desk használati adatainak gyűjtését. Ha "
+"meggondolod magad, később bármikor engedélyezheted a bővítmény "
+"gyorshivatkozásainál."

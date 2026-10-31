@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: Ninja Forms - File Uploads 3.3.23\n"
+"Project-Id-Version: Ninja Forms - File Uploads 3.3.36\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:49:36+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: Ninja Forms - File Uploads\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 3.3.23\n"
+"X-Plugin-Version: 3.3.36\n"
 
 #. Plugin Name of the plugin
 #: file-uploads.php
@@ -33,7 +33,7 @@ msgstr "https://ninjaforms.com/extensions/file-uploads/"
 #. Description of the plugin
 #: file-uploads.php
 msgid "File Uploads add-on for Ninja Forms."
-msgstr "Fájlfeltöltések kiegészítő a Ninja Forms-hoz."
+msgstr "Fájlfeltöltési kiegészítő a Ninja Forms-hoz."
 
 #. Author of the plugin
 #: file-uploads.php
@@ -47,11 +47,11 @@ msgstr "http://ninjaforms.com"
 
 #: includes/admin/controllers/custompaths.php:18
 msgid "Puts in the title of the file without any spaces"
-msgstr "Beilleszti a fájl nevét szóközök nélkül"
+msgstr "Beilleszti a fájl címét szóközök nélkül"
 
 #: includes/admin/controllers/custompaths.php:19
 msgid "Puts in the title of the current form without any spaces"
-msgstr "Beilleszti az aktuális űrlap nevét szóközök nélkül"
+msgstr "Beilleszti az aktuális űrlap címét szóközök nélkül"
 
 #: includes/admin/controllers/custompaths.php:20
 msgid "Puts in the date in yyyy-mm-dd (1998-05-23) format"
@@ -75,8 +75,7 @@ msgstr "Beilleszti a felhasználó felhasználónevét, ha be van jelentkezve"
 
 #: includes/admin/controllers/custompaths.php:25
 msgid "Puts in the user's user ID if they are logged in"
-msgstr ""
-"Beilleszti a felhasználó felhasználói azonosítóját, ha be van jelentkezve"
+msgstr "Beilleszti a felhasználói azonosítót (ID), ha a felhasználó be van jelentkezve"
 
 #: includes/admin/controllers/custompaths.php:26
 msgid "Puts in the user's display name if they are logged in"
@@ -92,91 +91,109 @@ msgstr "Beilleszti a felhasználó vezetéknevét, ha be van jelentkezve"
 
 #: includes/admin/controllers/custompaths.php:29
 msgid "Puts in a random 5 character string"
-msgstr "Beilleszt egy véletlenszerű, 5 karakteres karakterláncot"
+msgstr "Beilleszt egy véletlenszerű, 5 karakterből álló karakterláncot"
 
-#: includes/admin/menus/uploads.php:16
-#: includes/integrations/ninjaforms/fileuploadmergetags.php:15
+#: includes/admin/menus/uploads.php:33
 #: includes/templates/admin-menu-uploads.php:3
 msgid "File Uploads"
 msgstr "Fájlfeltöltések"
 
-#: includes/admin/menus/uploads.php:71
+#: includes/admin/menus/uploads.php:89
 msgid "Browse Uploads"
 msgstr "Feltöltések böngészése"
 
-#: includes/admin/menus/uploads.php:72
+#: includes/admin/menus/uploads.php:90
 #: includes/templates/admin-menu-uploads-settings.php:16
 msgid "Upload Settings"
 msgstr "Feltöltési beállítások"
 
-#: includes/admin/menus/uploads.php:112
+#: includes/admin/menus/uploads.php:165
 msgid "Save"
 msgstr "Mentés"
 
-#: includes/admin/uploadstable.php:15
-msgid "Upload"
-msgstr "Feltöltés"
-
-#: includes/admin/uploadstable.php:17
-msgid "Uploads"
-msgstr "Feltöltések"
-
-#: includes/admin/uploadstable.php:25
+#: includes/admin/uploadstable.php:66
 msgid "No uploads found."
 msgstr "Nem található feltöltés."
 
-#: includes/admin/uploadstable.php:69
+#: includes/admin/uploadstable.php:110
 msgid "File Name"
 msgstr "Fájlnév"
 
-#: includes/admin/uploadstable.php:70
+#: includes/admin/uploadstable.php:111
 msgid "Original File name"
 msgstr "Eredeti fájlnév"
 
-#: includes/admin/uploadstable.php:71
+#: includes/admin/uploadstable.php:112
 msgid "Created"
 msgstr "Létrehozva"
 
-#: includes/admin/uploadstable.php:72
+#: includes/admin/uploadstable.php:113
 msgid "Form Name"
 msgstr "Űrlap neve"
 
-#: includes/admin/uploadstable.php:73
+#: includes/admin/uploadstable.php:114
 msgid "User Name"
-msgstr "Felhasználónév"
+msgstr "Felhasználó neve"
 
-#: includes/admin/uploadstable.php:74
+#: includes/admin/uploadstable.php:115
 msgid "File Location"
 msgstr "Fájl helye"
 
-#: includes/admin/uploadstable.php:165
+#: includes/admin/uploadstable.php:222
 msgid "Guest"
 msgstr "Vendég"
 
-#: includes/admin/uploadstable.php:213
+#: includes/admin/uploadstable.php:276
 msgid "View this file"
 msgstr "Fájl megtekintése"
 
-#: includes/admin/uploadstable.php:213 includes/fields/upload.php:310
+#: includes/admin/uploadstable.php:276 includes/fields/upload.php:545
 msgid "View"
 msgstr "Megtekintés"
 
-#: includes/admin/uploadstable.php:218
+#: includes/admin/uploadstable.php:281
 msgid "View submission"
 msgstr "Beküldés megtekintése"
 
-#: includes/admin/uploadstable.php:218
+#: includes/admin/uploadstable.php:281
 msgid "View Submission"
 msgstr "Beküldés megtekintése"
 
-#: includes/admin/uploadstable.php:226
+#: includes/admin/uploadstable.php:289
 msgid "Delete this file"
 msgstr "Fájl törlése"
 
-#: includes/admin/uploadstable.php:226 includes/admin/uploadstable.php:280
-#: includes/display/render.php:76
+#: includes/admin/uploadstable.php:289 includes/admin/uploadstable.php:390
+#: includes/display/render.php:78
 msgid "Delete"
 msgstr "Törlés"
+
+#. translators: %1$s: where the file is now. %2$s: the external service it
+#. never reached.
+#: includes/admin/uploadstable.php:302
+#, php-format
+msgid "%1$s (upload to %2$s failed)"
+msgstr "%1$s (a(z) %2$s címre történő feltöltés sikertelen volt)"
+
+#. translators: %1$s: the external service. %2$s: the folder the file was
+#. written to.
+#: includes/admin/uploadstable.php:314
+#, php-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: includes/admin/uploadstable.php:489
+#, php-format
+msgid "%s upload deleted"
+msgid_plural "%s uploads deleted"
+msgstr[0] "%s feltöltés törölve"
+msgstr[1] "%s feltöltés törölve"
+
+#: includes/admin/uploadstable.php:501
+msgid "There was a problem deleting the upload"
+msgid_plural "There was a problem deleting the uploads"
+msgstr[0] "Hiba történt a feltöltés törlésekor"
+msgstr[1] "Hiba történt a feltöltések törlésekor"
 
 #: includes/ajax/controllers/uploads.php:122
 msgid "No field ID supplied"
@@ -184,47 +201,55 @@ msgstr "Nincs mezőazonosító megadva"
 
 #: includes/ajax/controllers/uploads.php:128
 msgid "Nonce error"
-msgstr "Nonce hiba"
+msgstr "Nonce-hiba"
 
 #: includes/ajax/controllers/uploads.php:135
 msgid "No form ID supplied"
 msgstr "Nincs űrlapazonosító megadva"
 
-#: includes/ajax/controllers/uploads.php:285
+#: includes/ajax/controllers/uploads.php:309
+#: includes/ajax/controllers/uploads.php:502
+#: includes/ajax/controllers/uploads.php:950
+#, php-format
+msgid "File extension of %s not allowed"
+msgstr "A(z) %s fájlkiterjesztése nem engedélyezett"
+
+#: includes/ajax/controllers/uploads.php:344
+msgid "Unable to assemble the uploaded file. Please try uploading it again."
+msgstr "A feltöltött fájl nem állítható össze. Kérjük, próbálja meg újra feltölteni."
+
+#: includes/ajax/controllers/uploads.php:365
 msgid "Unable to move uploaded temp file"
 msgstr "Nem sikerült áthelyezni a feltöltött ideiglenes fájlt"
 
-#: includes/ajax/controllers/uploads.php:320
-#, php-format
-msgid "File exceeds maximum file size. File must be under: %sMB."
+#: includes/ajax/controllers/uploads.php:434 includes/display/render.php:76
+msgid "File exceeds maximum file size. File must be under %nMB."
 msgstr ""
-"A fájl meghaladja a maximális méretet. A fájl mérete legfeljebb %sMB lehet."
+"A fájl meghaladja a maximális méretet. A fájl mérete legfeljebb %nMB lehet."
 
-#: includes/ajax/controllers/uploads.php:340
+#: includes/ajax/controllers/uploads.php:468
 #, php-format
 msgid "File size under minimum size. File must be %sMB or greater."
 msgstr ""
 "A fájl mérete a minimális méret alatt van. A fájl méretének legalább %sMB-"
 "nek kell lennie."
 
-#: includes/ajax/controllers/uploads.php:357 includes/fields/upload.php:103
-#: includes/fields/upload.php:109 includes/fields/upload.php:169
-#: includes/fields/upload.php:175
+#: includes/ajax/controllers/uploads.php:485 includes/fields/upload.php:215
+#: includes/fields/upload.php:221 includes/fields/upload.php:281
+#: includes/fields/upload.php:287
 msgid "File extension not allowed"
 msgstr "A fájlkiterjesztés nem engedélyezett"
 
-#: includes/ajax/controllers/uploads.php:374
-#: includes/ajax/controllers/uploads.php:629
-#, php-format
-msgid "File extension of %s not allowed"
-msgstr "A(z) %s fájlkiterjesztés nem engedélyezett"
+#: includes/ajax/controllers/uploads.php:579
+msgid "File content does not match the file extension."
+msgstr "A fájl tartalma nem egyezik a fájlkiterjesztéssel."
 
-#: includes/ajax/controllers/uploads.php:669
+#: includes/ajax/controllers/uploads.php:990
 msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini"
 msgstr ""
 "A feltöltött fájl meghaladja a php.ini upload_max_filesize beállítását"
 
-#: includes/ajax/controllers/uploads.php:672
+#: includes/ajax/controllers/uploads.php:993
 msgid ""
 "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
 "the HTML form"
@@ -232,27 +257,27 @@ msgstr ""
 "A feltöltött fájl meghaladja a HTML űrlapban megadott MAX_FILE_SIZE "
 "beállítást"
 
-#: includes/ajax/controllers/uploads.php:675
+#: includes/ajax/controllers/uploads.php:996
 msgid "The uploaded file was only partially uploaded"
 msgstr "A feltöltött fájl csak részben lett feltöltve"
 
-#: includes/ajax/controllers/uploads.php:678
+#: includes/ajax/controllers/uploads.php:999
 msgid "No file was uploaded"
 msgstr "Nem lett fájl feltöltve"
 
-#: includes/ajax/controllers/uploads.php:681
+#: includes/ajax/controllers/uploads.php:1002
 msgid "Missing a temporary folder"
 msgstr "Hiányzik az ideiglenes mappa"
 
-#: includes/ajax/controllers/uploads.php:684
+#: includes/ajax/controllers/uploads.php:1005
 msgid "Failed to write file to disk"
 msgstr "Nem sikerült a fájlt lemezre írni"
 
-#: includes/ajax/controllers/uploads.php:687
+#: includes/ajax/controllers/uploads.php:1008
 msgid "File upload stopped by extension"
 msgstr "A fájlfeltöltést egy kiterjesztés megállította"
 
-#: includes/ajax/controllers/uploads.php:691
+#: includes/ajax/controllers/uploads.php:1012
 msgid "Unknown upload error"
 msgstr "Ismeretlen feltöltési hiba"
 
@@ -260,98 +285,9 @@ msgstr "Ismeretlen feltöltési hiba"
 msgid "Request made to delete all plugin log entries"
 msgstr "Kérés érkezett az összes bővítmény naplóbejegyzésének törlésére"
 
-#: includes/config/field-settings.php:10
-msgid "Save to Server"
-msgstr "Mentés a szerverre"
-
-#: includes/config/field-settings.php:13
-msgid "Save the file to the server."
-msgstr "A fájl mentése a szerverre."
-
-#: includes/config/field-settings.php:19
-msgid "Rename Uploaded File"
-msgstr "Feltöltött fájl átnevezése"
-
-#: includes/config/field-settings.php:22
-msgid ""
-"Advanced renaming options. You can also create directories using \"/\". If "
-"you do not want to rename the files, leave this box blank"
-msgstr ""
-"Speciális átnevezési beállítások. Könyvtárakat is létrehozhat a \"/\" "
-"használatával. Ha nem szeretné átnevezni a fájlokat, hagyja ezt a mezőt "
-"üresen"
-
-#: includes/config/field-settings.php:29
-msgid "Save to Media Library"
-msgstr "Mentés a Médiatárba"
-
-#: includes/config/field-settings.php:32
-msgid "Save to Media Library."
-msgstr "Mentés a Médiatárba."
-
-#: includes/config/field-settings.php:40
-msgid "File Limit"
-msgstr "Fájlkorlát"
-
-#: includes/config/field-settings.php:44
-msgid "How many files can be uploaded?"
-msgstr "Hány fájl tölthető fel?"
-
-#: includes/config/field-settings.php:49
-msgid "Allowed File Types"
-msgstr "Engedélyezett fájltípusok"
-
-#: includes/config/field-settings.php:50
-msgid ""
-"Comma Separated List of allowed file types. Leaving the option empty will "
-"restore the default list. (i.e. jpg, gif, png, pdf) This is not fool-proof "
-"and can be tricked, please remember that there is always a danger in "
-"allowing users to upload files."
-msgstr ""
-"Vesszővel elválasztott lista az engedélyezett fájltípusokról. Az opció "
-"üresen hagyása visszaállítja az alapértelmezett listát. (pl. jpg, gif, png, "
-"pdf) Ez nem teljesen bombabiztos és megkerülhető; kérjük, ne feledje, hogy a"
-" felhasználói fájlfeltöltések engedélyezése mindig kockázattal jár."
-
-#: includes/config/field-settings.php:57
-msgid "Maximum File Size (MB)"
-msgstr "Maximális fájlméret (MB)"
-
-#: includes/config/field-settings.php:61
-msgid "Maximum size of a file that can be uploaded."
-msgstr "A feltölthető fájl maximális mérete."
-
-#: includes/config/field-settings.php:66
-msgid "Minimum File Size (MB)"
-msgstr "Minimális fájlméret (MB)"
-
-#: includes/config/field-settings.php:70
-msgid "Minimum size of a file that can be uploaded."
-msgstr "A feltölthető fájl minimális mérete."
-
-#: includes/config/field-settings.php:75 includes/fields/upload.php:352
-msgid "Select Files"
-msgstr "Fájlok kiválasztása"
-
-#: includes/config/field-settings.php:76
-msgid "Select Files Button Text"
-msgstr "Fájlok kiválasztása gomb szövege"
-
-#: includes/config/field-settings.php:79
-msgid "Change the button text for selecting files."
-msgstr "A fájlok kiválasztására szolgáló gomb szövegének módosítása."
-
-#: includes/config/field-settings.php:84 includes/fields/upload.php:353
-msgid "Cancel"
-msgstr "Mégse"
-
-#: includes/config/field-settings.php:85
-msgid "Cancel File Upload Button Text"
-msgstr "Fájlfeltöltés megszakítása gomb szövege"
-
-#: includes/config/field-settings.php:88
-msgid "Change the button text for cancelling uploads."
-msgstr "A feltöltések megszakítására szolgáló gomb szövegének módosítása."
+#: includes/Common/Routes/DebugLog.php:96
+msgid "Sorry, you are not allowed to access debug logs."
+msgstr "Sajnáljuk, Ön nem férhet hozzá a hibakeresési naplókhoz."
 
 #: includes/config/layout-styles.php:5
 msgid "Progress Bar"
@@ -367,7 +303,7 @@ msgstr "Fájllista"
 
 #: includes/config/layout-styles.php:32
 msgid "File Delete Link"
-msgstr "Fájltörlés hivatkozás"
+msgstr "Fájltörlési link"
 
 #: includes/config/layout-styles.php:41
 msgid "File Upload Cancel Button"
@@ -390,46 +326,6 @@ msgstr ""
 "csak a webhely bejelentkezett felhasználói számára érhetők el. Engedélyezze "
 "ezt, hogy nyilvánosan megtekinthetők legyenek."
 
-#: includes/config/settings-upload.php:9
-msgid ""
-"If you want to create dynamic directories, you can use various shortcodes:"
-msgstr ""
-"Ha dinamikus könyvtárakat szeretne létrehozni, különféle rövidkódokat "
-"használhat:"
-
-#: includes/config/settings-upload.php:16
-#, php-format
-msgid ""
-"For Example: <code>/%formtitle%/%month%/%year%/</code> would be "
-"<code>/MyFormTitle/04/2012/</code>"
-msgstr ""
-"Például: <code>/%formtitle%/%month%/%year%/</code> ezt eredményezi: "
-"<code>/MyFormTitle/04/2012/</code>"
-
-#: includes/config/settings-upload.php:25
-msgid "Max File Size (in MB)"
-msgstr "Maximális fájlméret (MB-ban)"
-
-#: includes/config/settings-upload.php:26
-msgid ""
-"This limit can be overridden in the settings for a File Upload field. Very "
-"large uploads are possible, but we recommend setting a sensible limit."
-msgstr ""
-"Ez a korlát felülírható a Fájlfeltöltés mező beállításaiban. Nagyon nagy "
-"feltöltések is lehetségesek, de javasoljuk ésszerű korlát beállítását."
-
-#: includes/config/settings-upload.php:33
-msgid "File upload error message"
-msgstr "Fájlfeltöltési hibaüzenet"
-
-#: includes/config/settings-upload.php:40
-msgid "Custom Directory"
-msgstr "Egyéni könyvtár"
-
-#: includes/config/settings-upload.php:47
-msgid "Full Directory"
-msgstr "Teljes könyvtárútvonal"
-
 #: includes/config/styles-field-settings.php:6
 msgid "Progress Bar Styles"
 msgstr "Folyamatjelző sáv stílusai"
@@ -444,46 +340,166 @@ msgstr "Feltöltött fájlok listájának stílusai"
 
 #: includes/config/styles-field-settings.php:29
 msgid "Uploaded File Delete Link Styles"
-msgstr "Feltöltött fájl törlése hivatkozás stílusai"
+msgstr "A feltöltött fájl törlésére szolgáló link stílusai"
+
+#: includes/config/translated-field-settings.php:10
+msgid "Save to Server"
+msgstr "Mentés a szerverre"
+
+#: includes/config/translated-field-settings.php:13
+msgid "Save the file to the server."
+msgstr "A fájl mentése a szerverre."
+
+#: includes/config/translated-field-settings.php:19
+msgid "Rename Uploaded File"
+msgstr "Feltöltött fájl átnevezése"
+
+#: includes/config/translated-field-settings.php:22
+msgid ""
+"Advanced renaming options. You can also create directories using \"/\". If "
+"you do not want to rename the files, leave this box blank"
+msgstr "Haladó átnevezési opciók. Könyvtárakat is létrehozhat a „/” használatával. Ha nem szeretné átnevezni a fájlokat, hagyja ezt a mezőt üresen"
+
+#: includes/config/translated-field-settings.php:29
+msgid "Save to Media Library"
+msgstr "Mentés a Médiatárba"
+
+#: includes/config/translated-field-settings.php:32
+msgid "Save to Media Library."
+msgstr "Mentés a Médiatárba."
+
+#: includes/config/translated-field-settings.php:40
+msgid "File Limit"
+msgstr "Fájlkorlát"
+
+#: includes/config/translated-field-settings.php:44
+msgid "How many files can be uploaded?"
+msgstr "Hány fájl tölthető fel?"
+
+#: includes/config/translated-field-settings.php:49
+msgid "Allowed File Types"
+msgstr "Engedélyezett fájltípusok"
+
+#: includes/config/translated-field-settings.php:50
+msgid ""
+"Comma Separated List of allowed file types. Leaving the option empty will "
+"restore the default list. (i.e. jpg, gif, png, pdf) This is not fool-proof "
+"and can be tricked, please remember that there is always a danger in "
+"allowing users to upload files."
+msgstr ""
+"Vesszővel elválasztott lista az engedélyezett fájltípusokról. Az opció "
+"üresen hagyása visszaállítja az alapértelmezett listát. (pl. jpg, gif, png, "
+"pdf) Ez nem teljesen bombabiztos és megkerülhető; kérjük, ne feledje, hogy a"
+" felhasználói fájlfeltöltések engedélyezése mindig kockázattal jár."
+
+#: includes/config/translated-field-settings.php:57
+msgid "Maximum File Size (MB)"
+msgstr "Maximális fájlméret (MB)"
+
+#: includes/config/translated-field-settings.php:61
+msgid "Maximum size of a file that can be uploaded."
+msgstr "A feltölthető fájl maximális mérete."
+
+#: includes/config/translated-field-settings.php:66
+msgid "Minimum File Size (MB)"
+msgstr "Minimális fájlméret (MB)"
+
+#: includes/config/translated-field-settings.php:70
+msgid "Minimum size of a file that can be uploaded."
+msgstr "A feltölthető fájl minimális mérete."
+
+#: includes/config/translated-field-settings.php:75
+#: includes/fields/upload.php:587
+msgid "Select Files"
+msgstr "Fájlok kiválasztása"
+
+#: includes/config/translated-field-settings.php:76
+msgid "Select Files Button Text"
+msgstr "Fájlok kiválasztása gomb szövege"
+
+#: includes/config/translated-field-settings.php:79
+msgid "Change the button text for selecting files."
+msgstr "A fájlok kiválasztására szolgáló gomb szövegének módosítása."
+
+#: includes/config/translated-field-settings.php:84
+#: includes/fields/upload.php:588
+msgid "Cancel"
+msgstr "Mégse"
+
+#: includes/config/translated-field-settings.php:85
+msgid "Cancel File Upload Button Text"
+msgstr "Fájlfeltöltés megszakítása gomb szövege"
+
+#: includes/config/translated-field-settings.php:88
+msgid "Change the button text for cancelling uploads."
+msgstr "A feltöltések megszakítására szolgáló gomb szövegének módosítása."
+
+#: includes/config/translated-settings-upload.php:22
+msgid "Max File Size (in MB)"
+msgstr "Maximális fájlméret (MB-ban)"
+
+#: includes/config/translated-settings-upload.php:23
+msgid ""
+"This limit can be overridden in the settings for a File Upload field. Very "
+"large uploads are possible, but we recommend setting a sensible limit."
+msgstr "Ez a korlát felülírható a fájlfeltöltő mező beállításaiban. Nagyon nagy fájlok feltöltése is lehetséges, de ésszerű korlát beállítását javasoljuk."
+
+#: includes/config/translated-settings-upload.php:30
+msgid "File upload error message"
+msgstr "Fájlfeltöltési hibaüzenet"
+
+#: includes/config/translated-settings-upload.php:37
+msgid "Custom Directory"
+msgstr "Egyéni könyvtár"
+
+#: includes/config/translated-settings-upload.php:44
+msgid "Full Directory"
+msgstr "Teljes könyvtárútvonal"
 
 #: includes/display/render.php:70
 msgid "Max %n files are allowed"
 msgstr "Legfeljebb %n fájl engedélyezett"
 
 #: includes/display/render.php:71
-msgid "Nonce error, upload failed"
-msgstr "Nonce hiba, a feltöltés sikertelen"
+msgid ""
+"This field accepts a maximum of %n files. The extra files were not added."
+msgstr "Ez a mező legfeljebb %n fájlt fogad el. A további fájlokat nem adta hozzá a rendszer."
 
 #: includes/display/render.php:72
-msgid "Nonce regeneration error, upload failed"
-msgstr "Nonce újragenerálási hiba, a feltöltés sikertelen"
+msgid "This field accepts only 1 file. The extra files were not added."
+msgstr "Ez a mező csak 1 fájlt fogad el. A további fájlokat nem adta hozzá a rendszer."
 
 #: includes/display/render.php:73
+msgid "Nonce error, upload failed"
+msgstr "Nonce-hiba, a feltöltés sikertelen"
+
+#: includes/display/render.php:74
+msgid "Nonce regeneration error, upload failed"
+msgstr "Hiba a nonce újragenerálásakor, a feltöltés sikertelen"
+
+#: includes/display/render.php:75
 msgid "Upload error, upload failed"
 msgstr "Feltöltési hiba, a feltöltés sikertelen"
 
-#: includes/display/render.php:74
-msgid "File exceeds maximum file size. File must be under %nMB."
-msgstr ""
-"A fájl meghaladja a maximális méretet. A fájl mérete legfeljebb %nMB lehet."
-
-#: includes/display/render.php:75
+#: includes/display/render.php:77
 msgid ""
 "File does not meet minimum file size. File must be %nMB or greater in size."
-msgstr ""
-"A fájl nem éri el a minimális méretet. A fájl méretének legalább %nMB-nek "
-"kell lennie."
+msgstr "A fájl nem éri el a minimális méretet. A fájl méretének legalább %n MB-ot kell elérnie."
 
-#: includes/external/abstracts/backgroundupload.php:79
+#: includes/display/render.php:79
+msgid "Please wait for your file to finish uploading."
+msgstr "Kérjük, várja meg, amíg a fájl feltöltése befejeződik."
+
+#: includes/external/abstracts/backgroundupload.php:81
 #, php-format
 msgid "Ninja Forms File Upload: %s Upload. File does not exist %s"
 msgstr "Ninja Forms fájlfeltöltés: %s feltöltés. A fájl nem létezik %s"
 
-#: includes/external/abstracts/oauthservice.php:73
+#: includes/external/abstracts/oauthservice.php:84
 msgid "Disconnect"
 msgstr "Leválasztás"
 
-#: includes/external/abstracts/oauthservice.php:78
+#: includes/external/abstracts/oauthservice.php:89
 msgid "Connect"
 msgstr "Csatlakozás"
 
@@ -491,47 +507,46 @@ msgstr "Csatlakozás"
 msgid "External File Upload"
 msgstr "Külső fájlfeltöltés"
 
-#: includes/external/action.php:66 includes/external/sotaction.php:122
+#: includes/external/action.php:70 includes/external/sotaction.php:131
+#: includes/fields/upload.php:632
 #: includes/integrations/ninjaforms/attachments.php:44
 msgid "Field"
 msgstr "Mező"
 
-#: includes/external/action.php:78 includes/external/sotaction.php:134
+#: includes/external/action.php:82 includes/external/sotaction.php:143
 msgid "Background Upload"
 msgstr "Háttérfeltöltés"
 
-#: includes/external/loader.php:237
+#. translators: 1: external service name, 2: date the connection was lost.
+#: includes/external/disconnections.php:185
+#, php-format
+msgid ""
+"Ninja Forms File Uploads lost its connection to %1$s on %2$s. Files "
+"submitted through your forms are no longer being sent there."
+msgstr "A Ninja Forms File Uploads elveszítette a kapcsolatot a(z) %1$s szolgáltatással (%2$s). Az űrlapokon keresztül beküldött fájlok többé nem kerülnek oda továbbításra."
+
+#: includes/external/disconnections.php:195
+msgid "Reconnect it under External Settings"
+msgstr "Csatlakoztassa újra a Külső beállításoknál"
+
+#: includes/external/disconnections.php:201
+msgid "Dismiss"
+msgstr "Bezárás"
+
+#: includes/external/loader.php:242
 #: includes/templates/admin-menu-uploads-external.php:19
 msgid "External Settings"
 msgstr "Külső beállítások"
 
-#: includes/external/loader.php:278
+#: includes/external/loader.php:283
 #, php-format
 msgid "%s requires %s"
-msgstr "%s megköveteli %s"
+msgstr "%s működéséhez %s szükséges"
 
-#: includes/external/loader.php:293
+#: includes/external/loader.php:298
 #, php-format
 msgid "%s Settings"
 msgstr "%s beállításai"
-
-#: includes/external/services/dropbox/config.php:6
-msgid "Connect to Dropbox"
-msgstr "Csatlakozás a Dropboxhoz"
-
-#: includes/external/services/dropbox/config.php:13
-#: includes/external/services/googledrive/config.php:13
-#: includes/external/services/s3/config.php:26
-msgid "File Path"
-msgstr "Fájl elérési útja"
-
-#: includes/external/services/dropbox/config.php:14
-msgid ""
-"Custom directory for the files to be uploaded to in your Dropbox /Apps/Ninja"
-" Forms Uploads/ folder"
-msgstr ""
-"Egyéni könyvtár a Dropbox /Apps/Ninja Forms Uploads/ mappájába feltöltendő "
-"fájlok számára"
 
 #: includes/external/services/dropbox/service.php:147
 msgid "log out"
@@ -540,63 +555,104 @@ msgstr "kijelentkezés"
 #: includes/external/services/dropbox/service.php:148
 #, php-format
 msgid "To connect with a different account, first %s of Dropbox"
-msgstr "Másik fiók csatlakoztatásához először %s a Dropboxból"
+msgstr "Másik fiók csatlakoztatásához először kattintson a Dropboxból való %s lehetőségre"
 
-#: includes/external/services/googledrive/config.php:6
+#: includes/external/services/dropbox/translated-config.php:6
+msgid "Connect to Dropbox"
+msgstr "Csatlakozás a Dropboxhoz"
+
+#: includes/external/services/dropbox/translated-config.php:13
+#: includes/external/services/googledrive/translated-config.php:13
+#: includes/external/services/s3/translated-config.php:26
+msgid "File Path"
+msgstr "Fájl elérési útja"
+
+#: includes/external/services/dropbox/translated-config.php:14
+msgid ""
+"Custom directory for the files to be uploaded to in your Dropbox /Apps/Ninja"
+" Forms Uploads/ folder"
+msgstr ""
+"Egyéni könyvtár a Dropbox /Apps/Ninja Forms Uploads/ mappájába feltöltendő "
+"fájlok számára"
+
+#: includes/external/services/googledrive/service.php:249
+msgid ""
+"the site is no longer authorised to use this Google Drive account, so "
+"reconnect it under Ninja Forms > File Uploads"
+msgstr "A webhely már nem jogosult ennek a Google Drive-fióknak a használatára, ezért csatlakoztassa újra a Ninja Forms > File Uploads menüpontban"
+
+#. translators: %s: the reason Google Drive gave for refusing the upload.
+#: includes/external/services/googledrive/service.php:346
+#, php-format
+msgid "Ninja Forms File Uploads could not send the file to Google Drive: %s"
+msgstr "A Ninja Forms File Uploads nem tudta elküldeni a fájlt a Google Drive-ra: %s"
+
+#: includes/external/services/googledrive/translated-config.php:6
 msgid "Connect to Google Drive"
 msgstr "Csatlakozás a Google Drive-hoz"
 
-#: includes/external/services/googledrive/config.php:14
-msgid "Custom directory for the files to be uploaded to in Google Drive"
-msgstr "Egyéni könyvtár a Google Drive-ba feltöltendő fájlok számára"
-
-#: includes/external/services/s3/config.php:8
-msgid "Access Key"
-msgstr "Hozzáférési kulcs"
-
-#: includes/external/services/s3/config.php:14
-msgid "Secret Key"
-msgstr "Titkos kulcs"
-
-#: includes/external/services/s3/config.php:20
-msgid "Bucket Name"
-msgstr "Bucket neve"
-
-#: includes/external/services/s3/config.php:27
+#: includes/external/services/googledrive/translated-config.php:14
 msgid ""
-"The default file path in the bucket where the file will be uploaded to."
-msgstr ""
-"Alapértelmezett fájl elérési út a bucketben, ahová a fájl feltöltésre kerül."
+"Folder in Google Drive for the files to be uploaded to. Ninja Forms creates "
+"this folder itself and can only use folders it created, so a folder of the "
+"same name that you made by hand in Google Drive will not be used."
+msgstr "A Google Drive azon mappája, ahová a fájlok feltöltése történik. A Ninja Forms maga hozza létre ezt a mappát, és csak az általa létrehozott mappákat tudja használni. Ezért a Google Drive-ban kézzel létrehozott, azonos nevű mappát nem használja."
 
-#: includes/external/services/s3/service.php:180
+#: includes/external/services/s3/backgroundupload.php:163
+#, php-format
+msgid "Ninja Forms File Upload: Amazon S3 upload failed: %s"
+msgstr "Ninja Forms File Upload: az Amazon S3-feltöltés sikertelen volt: %s"
+
+#: includes/external/services/s3/backgroundupload.php:209
+#, php-format
+msgid ""
+"Ninja Forms File Upload: could not abort the Amazon S3 multipart upload: %s"
+msgstr "Ninja Forms File Upload: nem sikerült megszakítani az Amazon S3 többrészes feltöltését: %s"
+
+#: includes/external/services/s3/service.php:187
 #, php-format
 msgid "There was an error attempting to get the region of the bucket %s: %s"
 msgstr "Hiba történt a %s bucket régiójának lekérdezésekor: %s"
 
-#: includes/fields/upload.php:89
+#: includes/external/services/s3/service.php:255
+#, php-format
+msgid "Unable to read the file to upload to Amazon S3: %s"
+msgstr "Nem sikerült beolvasni az Amazon S3-ra feltöltendő fájlt: %s"
+
+#: includes/external/services/s3/translated-config.php:8
+msgid "Access Key"
+msgstr "Hozzáférési kulcs"
+
+#: includes/external/services/s3/translated-config.php:14
+msgid "Secret Key"
+msgstr "Titkos kulcs"
+
+#: includes/external/services/s3/translated-config.php:20
+msgid "Bucket Name"
+msgstr "Tároló neve"
+
+#: includes/external/services/s3/translated-config.php:27
+msgid ""
+"The default file path in the bucket where the file will be uploaded to."
+msgstr "A bucketben használt alapértelmezett fájlútvonal, ahová a fájl feltöltődik."
+
+#: includes/fields/upload.php:200
 msgid "Temp file does not exist"
 msgstr "Az ideiglenes fájl nem létezik"
 
-#: includes/fields/upload.php:186
+#: includes/fields/upload.php:298
 msgid "File upload error"
 msgstr "Fájlfeltöltési hiba"
 
-#: includes/fields/upload.php:302
-#: includes/integrations/ninjaforms/submissions.php:71
+#: includes/fields/upload.php:537
+#: includes/integrations/ninjaforms/submissions.php:110
 msgid "File removed"
 msgstr "Fájl eltávolítva"
 
+#: includes/fields/upload.php:631
 #: includes/integrations/ninjaforms/attachments.php:36
 msgid "Attach File Uploads"
 msgstr "Fájlfeltöltések csatolása"
-
-#: includes/integrations/ninjaforms/fileuploadmergetags.php:21
-msgid "Filename"
-msgstr "Fájlnév"
-
-#: includes/integrations/ninjaforms/fileuploadmergetags.php:27
-msgid "File Extension"
-msgstr "Fájlkiterjesztés"
 
 #: includes/integrations/ninjaforms/templates.php:26
 msgid "File Upload"
@@ -625,7 +681,7 @@ msgstr "Feltöltések keresése"
 #: includes/templates/admin-menu-uploads-external.php:5
 #: includes/templates/admin-menu-uploads-settings.php:5
 msgid "Fix it."
-msgstr "Javítsa meg."
+msgstr "Javítsa ki."
 
 #: includes/templates/admin-menu-uploads-external.php:31
 #, php-format
@@ -647,3 +703,45 @@ msgstr "Záró dátum"
 #: includes/templates/admin-menu-uploads-filter.php:15
 msgid "Filter"
 msgstr "Szűrő"
+
+#: includes/WPOAuth2/WPOAuth2.php:177
+msgid "The token service refused the stored refresh token."
+msgstr "A tokenszolgáltatás elutasította a tárolt frissítési tokent."
+
+#: includes/WPOAuth2/WPOAuth2.php:184
+msgid "The token service did not return a token."
+msgstr "A tokenszolgáltatás nem adott vissza tokent."
+
+#~ msgid "Upload"
+#~ msgstr "Feltöltés"
+
+#~ msgid "Uploads"
+#~ msgstr "Feltöltések"
+
+#, php-format
+#~ msgid "File exceeds maximum file size. File must be under: %sMB."
+#~ msgstr ""
+#~ "A fájl meghaladja a maximális méretet. A fájl mérete legfeljebb %sMB lehet."
+
+#~ msgid ""
+#~ "If you want to create dynamic directories, you can use various shortcodes:"
+#~ msgstr ""
+#~ "Ha dinamikus könyvtárakat szeretne létrehozni, különféle rövidkódokat "
+#~ "használhat:"
+
+#, php-format
+#~ msgid ""
+#~ "For Example: <code>/%formtitle%/%month%/%year%/</code> would be "
+#~ "<code>/MyFormTitle/04/2012/</code>"
+#~ msgstr ""
+#~ "Például: <code>/%formtitle%/%month%/%year%/</code> ezt eredményezi: "
+#~ "<code>/MyFormTitle/04/2012/</code>"
+
+#~ msgid "Custom directory for the files to be uploaded to in Google Drive"
+#~ msgstr "Egyéni könyvtár a Google Drive-ba feltöltendő fájlok számára"
+
+#~ msgid "Filename"
+#~ msgstr "Fájlnév"
+
+#~ msgid "File Extension"
+#~ msgstr "Fájlkiterjesztés"

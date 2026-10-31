@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Booking System - SMS Notifications 1.0.7\n"
+"Project-Id-Version: WP Booking System - SMS Notifications 1.0.8\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:51:01+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,218 +18,78 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: WP Booking System - SMS Notifications\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.0.7\n"
+"X-Plugin-Version: 1.0.8\n"
 
-#. Plugin Name of the plugin
-#: index.php
-msgid "WP Booking System - SMS Notifications"
-msgstr "WP Booking System - SMS-értesítések"
+#: index.php:131
+msgid "\">update</a> to the latest version."
+msgstr "\">frissítse</a> a legújabb verzióra."
 
-#. Plugin URI of the plugin
-#. Author URI of the plugin
-#: index.php
-msgid "https://www.wpbookingsystem.com/"
-msgstr "https://www.wpbookingsystem.com/"
+#: includes/base/admin/settings/views/view-settings-tab-sms.php:32
+msgid "Account SID"
+msgstr "Account SID"
 
-#. Description of the plugin
-#: index.php
-msgid "Send SMS notifications to your customers."
-msgstr "Küldjön SMS-értesítéseket ügyfeleinek."
+#: includes/base/admin/form/functions.php:60
+#: includes/base/admin/form/views/view-edit-form-tab-sms-admin-notification.php:3
+msgid "Admin Notification"
+msgstr "Adminisztrátori értesítés"
 
-#. Author of the plugin
-#: index.php
-msgid "Veribo, Roland Murg"
-msgstr "Veribo, Roland Murg"
+#: includes/base/admin/settings/views/view-settings-tab-sms.php:62
+msgid "Alphanumeric Sender ID"
+msgstr "Alfanumerikus küldőazonosító"
 
-#: includes/base/admin/booking/functions-sms-logs.php:35
-msgid "SMS Logs"
-msgstr "SMS-naplók"
+#: includes/base/admin/tools/views/view-regenerate-crons.php:16
+msgid "Are you sure you want to proceed?"
+msgstr "Biztosan folytatja?"
 
-#: includes/base/admin/booking/views/view-modal-sms-logs.php:5
-msgid "Send Date"
-msgstr "Küldés dátuma"
+#: includes/base/admin/settings/views/view-settings-tab-sms.php:42
+msgid "Auth Token"
+msgstr "Auth Token"
 
-#: includes/base/admin/booking/views/view-modal-sms-logs.php:6
-msgid "SMS Type"
-msgstr "SMS típusa"
+#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:49
+msgid "days after the booking ends"
+msgstr "nappal a foglalás vége után"
 
-#: includes/base/admin/booking/views/view-modal-sms-logs.php:7
-msgid "Recepient"
-msgstr "Címzett"
+#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:49
+#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:49
+msgid "days before the booking starts"
+msgstr "nappal a foglalás kezdete előtt"
 
-#: includes/base/admin/booking/views/view-modal-sms-logs.php:8
-#: includes/base/admin/form/views/view-edit-form-tab-sms-admin-notification.php:59
-#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:79
-#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:76
-#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:75
-#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:64
-msgid "Message"
-msgstr "Üzenet"
+#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:36
+#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:36
+#: includes/base/admin/form/views/view-edit-form-tab-sms-admin-notification.php:27
+#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:36
+#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:36
+msgid "Dynamic Tags"
+msgstr "Dinamikus címkék"
 
-#: includes/base/admin/booking/views/view-modal-sms-logs.php:9
-msgid "Status"
-msgstr "Állapot"
+#: includes/base/admin/settings/views/view-settings-tab-sms.php:6
+msgid "Enable"
+msgstr "Bekapcsolás"
 
-#: includes/base/admin/booking/views/view-modal-sms-logs.php:22
-msgid "Sent"
-msgstr "Elküldve"
+#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:19
+#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:19
+#: includes/base/admin/form/views/view-edit-form-tab-sms-admin-notification.php:10
+#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:19
+#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:19
+msgid "Enable Notification"
+msgstr "Értesítés bekapcsolása"
 
 #: includes/base/admin/booking/views/view-modal-sms-logs.php:22
 msgid "Error"
 msgstr "Hiba"
 
-#: includes/base/admin/booking/views/view-modal-sms-logs.php:28
-msgid "No SMS messages sent yet."
-msgstr "Még nem lett SMS-üzenet elküldve."
-
-#: includes/base/admin/form/functions.php:26
-#: includes/base/admin/settings/views/view-settings-tab-sms.php:3
-msgid "SMS Notifications"
-msgstr "SMS-értesítések"
-
-#: includes/base/admin/form/functions.php:60
-#: includes/base/admin/form/views/view-edit-form-tab-sms-admin-notification.php:12
-msgid "Admin Notification"
-msgstr "Adminisztrátori értesítés"
-
-#: includes/base/admin/form/functions.php:61
-#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:23
-msgid "User Notification"
-msgstr "Felhasználói értesítés"
-
 #: includes/base/admin/form/functions.php:62
-#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:24
 msgid "Final Payment Reminder Notification"
 msgstr "Végső fizetési emlékeztető értesítés"
 
-#: includes/base/admin/form/functions.php:63
-#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:15
-msgid "Reminder Notification"
-msgstr "Emlékeztető értesítés"
-
 #: includes/base/admin/form/functions.php:64
-#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:17
 msgid "Follow Up Notification"
-msgstr "Utókövető értesítés"
+msgstr "Utánkövető értesítés"
 
-#: includes/base/admin/form/views/view-edit-form-tab-sms-admin-notification.php:5
-#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:6
-#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:6
-#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:5
-#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:5
-msgid "Dynamic Tags"
-msgstr "Dinamikus címkék"
-
-#: includes/base/admin/form/views/view-edit-form-tab-sms-admin-notification.php:6
-#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:7
-#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:7
-#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:6
-#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:6
-msgid ""
-"You can use these dynamic tags in any of the fields. They will be replaced "
-"with the values submitted in the form."
-msgstr ""
-"Ezeket a dinamikus címkéket bármely mezőben használhatja. Az űrlapon "
-"megadott értékekkel kerülnek helyettesítésre."
-
-#: includes/base/admin/form/views/view-edit-form-tab-sms-admin-notification.php:17
-msgid "Enable Admin Notification"
-msgstr "Adminisztrátori értesítés engedélyezése"
-
-#: includes/base/admin/form/views/view-edit-form-tab-sms-admin-notification.php:28
-msgid ""
-"Send an SMS to yourself (the website administrator) whenever a booking is "
-"made."
-msgstr ""
-"Küldjön SMS-t saját magának (a webhely adminisztrátorának) minden "
-"foglaláskor."
-
-#: includes/base/admin/form/views/view-edit-form-tab-sms-admin-notification.php:35
-#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:64
-#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:61
-#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:60
-#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:49
-msgid "Send To"
-msgstr "Küldés ide"
-
-#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:22
-#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:19
-#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:20
-#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:18
-msgid ""
-"You must add a Phone field to the form in order to configure SMS "
-"notifications."
-msgstr ""
-"Az SMS-értesítések beállításához fel kell vennie egy Telefonszám mezőt az "
-"űrlapra."
-
-#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:31
-msgid "Enable Follow Up Notification"
-msgstr "Utókövető értesítés engedélyezése"
-
-#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:42
-msgid "Send a follow up SMS to the person who made the booking."
-msgstr "Küldjön utókövető SMS-t a foglalást leadó személynek."
-
-#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:52
-#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:48
-#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:48
-msgid "When to send"
-msgstr "Mikor küldje"
-
-#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:57
-msgid "days after the booking ends"
-msgstr "nappal a foglalás vége után"
-
-#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:29
-msgid "Enable Payment Reminder Notification"
-msgstr "Fizetési emlékeztető értesítés engedélyezése"
-
-#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:40
-msgid "Send a final payment reminder SMS to the person who made the booking."
-msgstr ""
-"Küldjön végső fizetési emlékeztető SMS-t a foglalást leadó személynek."
-
-#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:53
-#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:53
-msgid "days before the booking starts"
-msgstr "nappal a foglalás kezdete előtt"
-
-#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:28
-msgid "Enable Reminder Notification"
-msgstr "Emlékeztető értesítés engedélyezése"
-
-#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:39
-msgid "Send a reminder SMS to the person who made the booking."
-msgstr "Küldjön emlékeztető SMS-t a foglalást leadó személynek."
-
-#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:28
-msgid "Enable User Notification"
-msgstr "Felhasználói értesítés engedélyezése"
-
-#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:39
-msgid "Send a confirmation SMS to the person who made the booking."
-msgstr "Küldjön visszaigazoló SMS-t a foglalást leadó személynek."
-
-#: includes/base/admin/settings/functions.php:72
-msgid "Please enter your phone number"
-msgstr "Kérjük, adja meg telefonszámát"
-
-#: includes/base/admin/settings/functions.php:81
-msgid "Please enter your Twilio API credentials."
-msgstr "Kérjük, adja meg Twilio API hitelesítő adatait."
-
-#: includes/base/admin/settings/functions.php:88
-msgid "SMS Message sent."
-msgstr "SMS-üzenet elküldve."
-
-#: includes/base/admin/settings/views/view-settings-tab-sms.php:8
-msgid "Enable SMS Notifications"
-msgstr "SMS-értesítések engedélyezése"
-
-#: includes/base/admin/settings/views/view-settings-tab-sms.php:24
-msgid "Twilio API Credentials"
-msgstr "Twilio API hitelesítő adatok"
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.wpbookingsystem.com/"
+msgstr "https://www.wpbookingsystem.com/"
 
 #: includes/base/admin/settings/views/view-settings-tab-sms.php:27
 msgid ""
@@ -243,56 +103,134 @@ msgstr ""
 "notifications/\">tekintse meg az útmutatónkat</a>, amely lépésről lépésre "
 "ismerteti a teendőket."
 
-#: includes/base/admin/settings/views/view-settings-tab-sms.php:32
-msgid "Account SID"
-msgstr "Account SID"
+#: includes/base/admin/settings/views/view-settings-tab-sms.php:7
+msgid ""
+"Make the Phone form field a stylised input with a dropdown for selecting the"
+" country code, phone number formatting and live validation."
+msgstr ""
+"A Telefon űrlapmezőt alakítsa stilizált beviteli mezővé, országkód-választó "
+"legördülővel, telefonszám-formázással és valós idejű ellenőrzéssel."
 
-#: includes/base/admin/settings/views/view-settings-tab-sms.php:42
-msgid "Auth Token"
-msgstr "Auth Token"
+#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:71
+#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:60
+#: includes/base/admin/form/views/view-edit-form-tab-sms-admin-notification.php:58
+#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:70
+#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:70
+#: includes/base/admin/booking/views/view-modal-sms-logs.php:8
+msgid "Message"
+msgstr "Üzenet"
 
-#: includes/base/admin/settings/views/view-settings-tab-sms.php:52
-msgid "Invalid API Credentials."
-msgstr "Érvénytelen API hitelesítő adatok."
+#: includes/base/admin/booking/views/view-modal-sms-logs.php:28
+msgid "No SMS messages sent yet."
+msgstr "Még nem küldtek SMS-üzenetet."
 
-#: includes/base/admin/settings/views/view-settings-tab-sms.php:58
-msgid "Twilio Phone Number"
-msgstr "Twilio telefonszám"
-
-#: includes/base/admin/settings/views/view-settings-tab-sms.php:68
-msgid "Alphanumeric Sender ID"
-msgstr "Alfanumerikus küldőazonosító"
-
-#: includes/base/admin/settings/views/view-settings-tab-sms.php:76
+#: includes/base/admin/settings/views/view-settings-tab-sms.php:63
 msgid ""
 "Optional. Replace your phone number with a custom string. Must be no longer "
 "than 11 characters, and can only contain letters and numbers. "
-msgstr ""
-"Nem kötelező. Cserélje le telefonszámát egy egyedi karaktersorozatra. "
-"Legfeljebb 11 karakter lehet, és csak betűket és számokat tartalmazhat. "
+msgstr "Opcionális. Cserélje le telefonszámát egy egyéni karaktersorozatra. Legfeljebb 11 karakter lehet, és csak betűket és számokat tartalmazhat. "
 
-#: includes/base/admin/settings/views/view-settings-tab-sms.php:83
-msgid "Send a test SMS"
-msgstr "Teszt SMS küldése"
+#: includes/base/admin/settings/functions.php:75
+msgid "Please enter your phone number"
+msgstr "Kérjük, adja meg telefonszámát"
 
-#: includes/base/admin/settings/views/view-settings-tab-sms.php:87
-msgid "Your phone number"
-msgstr "Az Ön telefonszáma"
+#: includes/base/admin/settings/functions.php:84
+msgid "Please enter your Twilio API credentials."
+msgstr "Kérjük, adja meg Twilio API hitelesítő adatait."
 
-#: includes/base/admin/settings/views/view-settings-tab-sms.php:92
-msgid "Send"
-msgstr "Küldés"
+#: includes/base/admin/booking/views/view-modal-sms-logs.php:7
+msgid "Recepient"
+msgstr "Címzett"
 
-#: includes/base/admin/settings/views/view-settings-tab-sms.php:108
+#: includes/base/admin/tools/views/view-regenerate-crons.php:16
+msgid "Regenerate SMS Notifications Cron Jobs"
+msgstr "SMS-értesítések cron-feladatainak újragenerálása"
+
+#: includes/base/admin/tools/views/view-regenerate-crons.php:8
+msgid "Regenerate SMS Reminder & Follow Up cron jobs"
+msgstr "SMS-emlékeztetők és utánkövetések cron-feladatainak újragenerálása"
+
+#: includes/base/admin/form/functions.php:63
+msgid "Reminder Notification"
+msgstr "Emlékeztető értesítés"
+
+#: includes/base/admin/settings/views/view-settings-tab-sms.php:98
 msgid "Save Settings"
 msgstr "Beállítások mentése"
 
-#: includes/base/admin/tools/views/view-regenerate-crons.php:10
-#: includes/base/admin/tools/views/view-regenerate-crons.php:18
-msgid "Regenerate SMS Notification Cron Jobs"
-msgstr "SMS-értesítések cron-feladatainak újragenerálása"
+#: includes/base/admin/settings/views/view-settings-tab-sms.php:86
+msgid "Send"
+msgstr "Küldés"
 
-#: includes/base/admin/tools/views/view-regenerate-crons.php:14
+#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:20
+msgid "Send a confirmation SMS to the person who made the booking."
+msgstr "Küldjön visszaigazoló SMS-t a foglalást leadó személynek."
+
+#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:20
+msgid "Send a final payment reminder SMS to the person who made the booking."
+msgstr ""
+"Küldjön végső fizetési emlékeztető SMS-t a foglalást leadó személynek."
+
+#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:20
+msgid "Send a follow up SMS to the person who made the booking."
+msgstr "Küldjön utánkövető SMS-t a foglalást leadó személynek."
+
+#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:20
+msgid "Send a reminder SMS to the person who made the booking."
+msgstr "Küldjön emlékeztető SMS-t a foglalást leadó személynek."
+
+#: includes/base/admin/settings/views/view-settings-tab-sms.php:73
+msgid "Send a test SMS"
+msgstr "Teszt-SMS küldése"
+
+#: includes/base/admin/form/views/view-edit-form-tab-sms-admin-notification.php:11
+msgid ""
+"Send an SMS to yourself (the website administrator) whenever a booking is "
+"made."
+msgstr "Küldjön SMS-t saját magának (a webhely adminisztrátorának) minden foglaláskor."
+
+#: includes/base/admin/booking/views/view-modal-sms-logs.php:5
+msgid "Send Date"
+msgstr "Küldés dátuma"
+
+#. Description of the plugin
+msgid "Send SMS notifications to your customers."
+msgstr "Küldjön SMS-értesítéseket ügyfeleinek."
+
+#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:56
+#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:45
+#: includes/base/admin/form/views/view-edit-form-tab-sms-admin-notification.php:36
+#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:55
+#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:55
+msgid "Send To"
+msgstr "Címzett"
+
+#: includes/base/admin/booking/views/view-modal-sms-logs.php:22
+msgid "Sent"
+msgstr "Elküldve"
+
+#: includes/base/admin/booking/functions-sms-logs.php:35
+msgid "SMS Logs"
+msgstr "SMS-naplók"
+
+#: includes/base/admin/settings/functions.php:91
+msgid "SMS Message sent."
+msgstr "SMS-üzenet elküldve."
+
+#: includes/base/admin/form/functions.php:26
+#: includes/base/admin/settings/views/view-settings-tab-sms.php:1
+msgid "SMS Notifications"
+msgstr "SMS-értesítések"
+
+#: includes/base/admin/booking/views/view-modal-sms-logs.php:6
+msgid "SMS Type"
+msgstr "SMS típusa"
+
+#: includes/base/admin/booking/views/view-modal-sms-logs.php:9
+msgid "Status"
+msgstr "Állapot"
+
+#: includes/base/admin/tools/views/view-regenerate-crons.php:12
 msgid ""
 "This will remove all existing cron jobs and rebuild them based on current "
 "form settings."
@@ -300,14 +238,95 @@ msgstr ""
 "Ez eltávolítja az összes meglévő cron-feladatot, és az aktuális "
 "űrlapbeállítások alapján újra létrehozza őket."
 
-#: includes/base/admin/tools/views/view-regenerate-crons.php:18
-msgid "Are you sure you want to proceed?"
-msgstr "Biztosan folytatja?"
+#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:75
+#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:64
+#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:74
+#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:74
+msgid "Translations"
+msgstr "Fordítások"
 
-#: index.php:132
+#: includes/base/admin/settings/views/view-settings-tab-sms.php:22
+msgid "Twilio API Credentials"
+msgstr "Twilio API hitelesítő adatok"
+
+#: includes/base/admin/settings/views/view-settings-tab-sms.php:52
+msgid "Twilio Phone Number"
+msgstr "Twilio telefonszáma"
+
+#: includes/base/admin/form/functions.php:61
+#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:12
+#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:12
+#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:12
+#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:12
+msgid "User Notification"
+msgstr "Felhasználói értesítés"
+
+#. Author of the plugin
+msgid "Veribo, Roland Murg"
+msgstr "Veribo, Roland Murg"
+
+#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:45
+#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:45
+#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:45
+msgid "When to send"
+msgstr "Küldés ideje"
+
+#. Name of the plugin
+msgid "WP Booking System - SMS Notifications"
+msgstr "WP Booking System - SMS-értesítések"
+
+#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:37
+#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:37
+#: includes/base/admin/form/views/view-edit-form-tab-sms-admin-notification.php:28
+#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:37
+#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:37
 msgid ""
-"The <strong>SMS Notifications</strong> Add-on requires WP Booking System "
-"version "
+"You can use these dynamic tags in any of the fields. They will be replaced "
+"with the values submitted in the form."
+msgstr "Ezeket a dinamikus címkéket bármely mezőben használhatja. Az űrlapon megadott értékekre cserélődnek."
+
+#: includes/base/admin/form/views/view-edit-form-tab-sms-payment-notification.php:6
+#: includes/base/admin/form/views/view-edit-form-tab-sms-user-notification.php:6
+#: includes/base/admin/form/views/view-edit-form-tab-sms-follow-up-notification.php:6
+#: includes/base/admin/form/views/view-edit-form-tab-sms-reminder-notification.php:6
+msgid ""
+"You must add a Phone field to the form in order to configure SMS "
+"notifications."
 msgstr ""
-"Az <strong>SMS-értesítések</strong> kiegészítő a WP Booking System következő"
-" verzióját igényli "
+"Az SMS-értesítések beállításához fel kell vennie egy Telefonszám mezőt az "
+"űrlapra."
+
+#: includes/base/admin/settings/views/view-settings-tab-sms.php:81
+msgid "Your phone number"
+msgstr "Az Ön telefonszáma"
+
+#~ msgid "Enable Admin Notification"
+#~ msgstr "Adminisztrátori értesítés engedélyezése"
+
+#~ msgid "Enable Follow Up Notification"
+#~ msgstr "Utókövető értesítés engedélyezése"
+
+#~ msgid "Enable Payment Reminder Notification"
+#~ msgstr "Fizetési emlékeztető értesítés engedélyezése"
+
+#~ msgid "Enable Reminder Notification"
+#~ msgstr "Emlékeztető értesítés engedélyezése"
+
+#~ msgid "Enable User Notification"
+#~ msgstr "Felhasználói értesítés engedélyezése"
+
+#~ msgid "Enable SMS Notifications"
+#~ msgstr "SMS-értesítések engedélyezése"
+
+#~ msgid "Invalid API Credentials."
+#~ msgstr "Érvénytelen API hitelesítő adatok."
+
+#~ msgid "Regenerate SMS Notification Cron Jobs"
+#~ msgstr "SMS-értesítések cron-feladatainak újragenerálása"
+
+#~ msgid ""
+#~ "The <strong>SMS Notifications</strong> Add-on requires WP Booking System "
+#~ "version "
+#~ msgstr ""
+#~ "Az <strong>SMS-értesítések</strong> kiegészítő a WP Booking System következő"
+#~ " verzióját igényli "

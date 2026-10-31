@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: JetFormBuilder PDF Attachment 1.0.3\n"
+"Project-Id-Version: JetFormBuilder PDF Attachment 1.0.4\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:48:47+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,12 +18,12 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: JetFormBuilder PDF Attachment\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.0.3\n"
+"X-Plugin-Version: 1.0.4\n"
 
 #. Plugin Name of the plugin
 #: jet-form-builder-pdf.php
 msgid "JetFormBuilder PDF Attachment"
-msgstr "JetFormBuilder PDF melléklet"
+msgstr "JetFormBuilder PDF-csatolmány"
 
 #. Plugin URI of the plugin
 #: jet-form-builder-pdf.php
@@ -35,9 +35,7 @@ msgstr "https://jetformbuilder.com/"
 msgid ""
 "A form addon to convert user-submitted data from a WordPress form to PDF "
 "attachments."
-msgstr ""
-"Űrlapkiegészítő, amely a WordPress-űrlapon beküldött adatokat PDF-"
-"mellékletekké alakítja."
+msgstr "Űrlapkiegészítő, amely a WordPress-űrlapon beküldött adatokat PDF-mellékletekké alakítja."
 
 #. Author of the plugin
 #: jet-form-builder-pdf.php
@@ -65,7 +63,7 @@ msgstr "Megtekintés"
 msgid "Generated PDF"
 msgstr "Generált PDF"
 
-#: modules/GenerateFileAction/Includes/Action.php:26
+#: modules/GenerateFileAction/Includes/Action.php:27
 #: modules/GenerateFileAction/assets/build/editor.js:1
 msgid "Generate PDF"
 msgstr "PDF generálása"
@@ -78,11 +76,15 @@ msgstr "Hiba a fájl létrehozásakor"
 msgid "Error creating attachment"
 msgstr "Hiba a melléklet létrehozásakor"
 
+#: modules/GenerateFileAction/Includes/AttachmentAccess.php:115
+msgid "Invalid post ID."
+msgstr "Hibás bejegyzés-ID."
+
 #: modules/RestAPI/Endpoints/DeleteAttachment.php:54
 msgid "This attachment has been deleted."
 msgid_plural "These attachments have been deleted."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Ezt a csatolmányt törölték."
+msgstr[1] "Ezeket a csatolmányokat törölték."
 
 #: modules/RestAPI/Endpoints/FetchAttachments.php:47
 msgid "Attachments not found"
@@ -165,7 +167,7 @@ msgstr "Nem, maradjon a jelenleg kiválasztott űrlap"
 
 #: modules/FormConnector/assets/build/editor.js:1
 msgid "Would you like to not sync template with the specific form?"
-msgstr "Nem szeretné szinkronizálni a sablont az adott űrlappal?"
+msgstr "Nem szeretné a sablonmintát szinkronizálni az adott űrlappal?"
 
 #: modules/FormConnector/assets/build/editor.js:1
 msgid "JetFormBuilder Form"
@@ -180,9 +182,8 @@ msgid "Select PDF template"
 msgstr "PDF-sablon kiválasztása"
 
 #: modules/GenerateFileAction/assets/build/editor.js:1
-#, js-format
 msgid "Sample template [%s]"
-msgstr "Minta sablon [%s]"
+msgstr "Mintasablon [%s]"
 
 #: modules/GenerateFileAction/assets/build/editor.js:1
 msgid "Edit template"
@@ -201,12 +202,9 @@ msgid ""
 "Enter only file name without extension. If empty, the name of the template "
 "will be substituted, and it is also available under the macro "
 "%_template_name%."
-msgstr ""
-"Csak a kiterjesztés nélküli fájlnevet adja meg. Ha üres, a sablon neve lesz "
-"behelyettesítve, és elérhető a %_template_name% makró alatt is."
+msgstr "Csak a kiterjesztés nélküli fájlnevet adja meg. Ha üresen hagyja, a sablonminta neve kerül a helyére, és a %_template_name% makróval is elérhető."
 
 #: modules/GenerateFileAction/assets/build/editor.js:1
-#, js-format
 msgid "A computed field from the <b>Generate PDF (%s)</b> action."
 msgstr "Számított mező a <b>PDF generálása (%s)</b> műveletből."
 
@@ -228,7 +226,7 @@ msgstr "Ugrás a művelethez"
 
 #: modules/GenerateFileAction/assets/build/editor.js:1
 msgid "This will add a new Send Email action with an attached pdf file"
-msgstr "Ez egy új Send Email műveletet ad hozzá csatolt PDF-fájllal"
+msgstr "Ez egy új Send Email műveletet ad hozzá, amelyhez egy PDF-fájl van csatolva"
 
 #: modules/GenerateFileAction/assets/build/editor.js:1
 msgid "Confirm"
@@ -251,8 +249,10 @@ msgid "Save generated PDF"
 msgstr "Generált PDF mentése"
 
 #: modules/GenerateFileAction/assets/build/editor.js:1
-msgid "Then you can easily find it in related Form Record"
-msgstr "Így könnyen megtalálja a kapcsolódó űrlaprekordban"
+msgid ""
+"Saved PDFs can be found in the related Form Record. Anyone with a unique PDF"
+" link can open it, so share links only with intended recipients."
+msgstr "Az elmentett PDF-fájlok a kapcsolódó űrlaprekordban találhatók. Bárki megnyithatja a PDF-et, ha rendelkezik az egyedi PDF-linkkel, ezért a linkeket csak azokkal ossza meg, akiknek szánja."
 
 #: modules/Templates/assets/build/editor.js:214
 msgid "(no field)"
@@ -264,7 +264,7 @@ msgstr "(nincs érték)"
 
 #: modules/Templates/assets/build/editor.js:214
 msgid "Operator"
-msgstr "Operátor"
+msgstr "Adatfeldolgozó"
 
 #: modules/Templates/assets/build/editor.js:214
 msgid "Field"
@@ -336,9 +336,7 @@ msgstr "Kezdő érték"
 
 #: modules/Templates/assets/build/editor.js:214
 msgid "Field value should more than \"Value before\" and less than \"Value after\""
-msgstr ""
-"A mező értékének nagyobbnak kell lennie a \"Kezdő értéknél\", és kisebbnek a"
-" \"Záró értéknél\""
+msgstr "A mező értékének nagyobbnak kell lennie a „Kezdő érték”-nél, és kisebbnek a „Záró érték”-nél"
 
 #: modules/Templates/assets/build/editor.js:214
 msgid "Value after"
@@ -350,9 +348,7 @@ msgstr "Nincs a tartományban"
 
 #: modules/Templates/assets/build/editor.js:214
 msgid "Field value should less than \"Value before\" or more than \"Value after\""
-msgstr ""
-"A mező értékének kisebbnek kell lennie a \"Kezdő értéknél\", vagy nagyobbnak"
-" a \"Záró értéknél\""
+msgstr "A mező értékének kisebbnek kell lennie a „Kezdő érték”-nél, vagy nagyobbnak a „Záró érték”-nél"
 
 #: modules/Templates/assets/build/editor.js:214
 msgid "In the list"
@@ -417,3 +413,6 @@ msgstr "Sor beszúrása JetFormBuilder-makrókkal"
 #: modules/Templates/assets/build/editor.js:214
 msgid "Set dynamic image from the JetFormBuilder fields"
 msgstr "Dinamikus kép beállítása a JetFormBuilder mezői alapján"
+
+#~ msgid "Then you can easily find it in related Form Record"
+#~ msgstr "Így könnyen megtalálja a kapcsolódó űrlaprekordban"

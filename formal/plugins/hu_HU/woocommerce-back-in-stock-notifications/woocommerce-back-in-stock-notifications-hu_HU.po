@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Back In Stock Notifications 3.3.2\n"
+"Project-Id-Version: WooCommerce Back In Stock Notifications 3.3.5\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:50:38+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: WooCommerce Back In Stock Notifications\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 3.3.2\n"
+"X-Plugin-Version: 3.3.5\n"
 
 #. Plugin Name of the plugin
 #: woocommerce-back-in-stock-notifications.php
@@ -33,7 +33,7 @@ msgstr "https://woocommerce.com/products/back-in-stock-notifications/"
 #. Description of the plugin
 #: woocommerce-back-in-stock-notifications.php
 msgid "Notify your customers when their favorite products are back in stock."
-msgstr "Értesítse ügyfeleit, amikor kedvenc termékeik újra raktáron vannak."
+msgstr "Értesítse vásárlóit, amikor kedvenc termékeik ismét készleten vannak."
 
 #. Author of the plugin
 #: woocommerce-back-in-stock-notifications.php
@@ -57,52 +57,60 @@ msgstr "Feliratkozások"
 msgid "Insufficient privileges to export notifications."
 msgstr "Nincs elegendő jogosultsága az értesítések exportálásához."
 
-#: includes/admin/class-wc-bis-admin-menus.php:100
-#: includes/admin/class-wc-bis-admin-menus.php:267
+#: includes/admin/class-wc-bis-admin-menus.php:104
+#: includes/admin/class-wc-bis-admin-menus.php:271
 #: includes/admin/settings/class-wc-bis-admin-settings.php:30
-#: includes/class-wc-bis-account.php:955
-#: includes/class-wc-bis-account.php:1017
+#: includes/class-wc-bis-account.php:961
+#: includes/class-wc-bis-account.php:1023
 msgid "Stock Notifications"
 msgstr "Készletértesítések"
 
-#: includes/admin/class-wc-bis-admin-menus.php:115
-#: includes/admin/class-wc-bis-admin-menus.php:193
+#: includes/admin/class-wc-bis-admin-menus.php:119
+#: includes/admin/class-wc-bis-admin-menus.php:197
 #: includes/admin/views/html-admin-dashboard.php:17
 msgid "Dashboard"
 msgstr "Vezérlőpult"
 
-#: includes/admin/class-wc-bis-admin-menus.php:130
+#: includes/admin/class-wc-bis-admin-menus.php:134
 msgid "Add Notification"
 msgstr "Értesítés hozzáadása"
 
-#: includes/admin/class-wc-bis-admin-menus.php:147
+#: includes/admin/class-wc-bis-admin-menus.php:151
 #: includes/admin/views/html-admin-notification-edit.php:18
 msgid "Edit Notification"
 msgstr "Értesítés szerkesztése"
 
-#: includes/admin/class-wc-bis-admin-menus.php:164
-#: includes/admin/class-wc-bis-admin-menus.php:203
-#: includes/admin/class-wc-bis-admin-menus.php:284
-#: includes/admin/class-wc-bis-admin-menus.php:285
+#: includes/admin/class-wc-bis-admin-menus.php:168
+#: includes/admin/class-wc-bis-admin-menus.php:207
+#: includes/admin/class-wc-bis-admin-menus.php:288
+#: includes/admin/class-wc-bis-admin-menus.php:289
 #: includes/admin/views/html-admin-activity.php:16
 #: includes/admin/views/html-admin-notification-edit.php:244
 msgid "Activity"
 msgstr "Tevékenység"
 
-#: includes/admin/class-wc-bis-admin-menus.php:198
-#: includes/admin/class-wc-bis-admin-menus.php:275
-#: includes/admin/class-wc-bis-admin-menus.php:276
+#: includes/admin/class-wc-bis-admin-menus.php:202
+#: includes/admin/class-wc-bis-admin-menus.php:279
+#: includes/admin/class-wc-bis-admin-menus.php:280
 #: includes/admin/views/html-admin-dashboard.php:23
 #: includes/admin/views/html-admin-notifications.php:17
 msgid "Notifications"
 msgstr "Értesítések"
 
-#: includes/admin/class-wc-bis-admin-menus.php:266
+#: includes/admin/class-wc-bis-admin-menus.php:270
 msgid "Stock Notifications Dashboard"
 msgstr "Készletértesítések vezérlőpultja"
 
+#: includes/admin/class-wc-bis-admin-menus.php:368
+msgid "Notifications per page"
+msgstr "Értesítések oldalanként"
+
+#: includes/admin/class-wc-bis-admin-menus.php:387
+msgid "Activity entries per page"
+msgstr "Történések oldalanként"
+
 #. translators: Update promt
-#: includes/admin/class-wc-bis-admin-notices.php:361
+#: includes/admin/class-wc-bis-admin-notices.php:363
 #, php-format
 msgid ""
 "<strong>WooCommerce Back In Stock Notifications</strong> is updating your "
@@ -111,7 +119,7 @@ msgstr ""
 "<strong>WooCommerce Back In Stock Notifications</strong> frissíti az "
 "adatbázisát.%s"
 
-#: includes/admin/class-wc-bis-admin-notices.php:366
+#: includes/admin/class-wc-bis-admin-notices.php:368
 msgid ""
 "<strong>WooCommerce Back In Stock Notifications</strong> has been updated! "
 "To keep things running smoothly, your database needs to be updated, as well."
@@ -121,17 +129,15 @@ msgstr ""
 "frissíteni kell."
 
 #. translators: updating resource URL
-#: includes/admin/class-wc-bis-admin-notices.php:368
+#: includes/admin/class-wc-bis-admin-notices.php:370
 #, php-format
 msgid ""
 "Before you proceed, please take a few minutes to <a href=\"%s\" "
 "target=\"_blank\">learn more</a> about best practices when updating."
-msgstr ""
-"Mielőtt folytatná, kérjük, szánjon néhány percet, hogy <a href=\"%s\" "
-"target=\"_blank\">tudjon meg többet</a> a frissítés legjobb gyakorlatairól."
+msgstr "Mielőtt folytatná, kérjük, szánjon néhány percet a frissítéskor követendő bevált gyakorlatokról szóló <a href=\"%s\" target=\"_blank\">további tudnivalók</a> elolvasására."
 
 #. translators: Update promt
-#: includes/admin/class-wc-bis-admin-notices.php:374
+#: includes/admin/class-wc-bis-admin-notices.php:376
 #, php-format
 msgid ""
 "<strong>WooCommerce Back In Stock Notifications</strong> has not finished "
@@ -140,7 +146,7 @@ msgstr ""
 "<strong>WooCommerce Back In Stock Notifications</strong> még nem fejezte be "
 "az adatbázisa frissítését.%s"
 
-#: includes/admin/class-wc-bis-admin-notices.php:384
+#: includes/admin/class-wc-bis-admin-notices.php:386
 msgid ""
 "<strong>WooCommerce Back In Stock Notifications</strong> has finished "
 "updating your database. Thank you for updating to the latest version!"
@@ -148,16 +154,16 @@ msgstr ""
 "<strong>WooCommerce Back In Stock Notifications</strong> befejezte az "
 "adatbázisa frissítését. Köszönjük, hogy a legújabb verzióra frissített!"
 
-#: includes/admin/class-wc-bis-admin-notices.php:402
+#: includes/admin/class-wc-bis-admin-notices.php:404
 msgid "Update database"
 msgstr "Adatbázis frissítése"
 
-#: includes/admin/class-wc-bis-admin-notices.php:420
+#: includes/admin/class-wc-bis-admin-notices.php:422
 msgid "run it manually"
 msgstr "futtassa kézzel"
 
 #. translators: %s: Fallback link
-#: includes/admin/class-wc-bis-admin-notices.php:422
+#: includes/admin/class-wc-bis-admin-notices.php:424
 #, php-format
 msgid ""
 " The process seems to be taking a little longer than usual. Let's try to %s."
@@ -165,12 +171,12 @@ msgstr ""
 " Úgy tűnik, a folyamat a szokásosnál egy kicsit tovább tart. Próbáljuk meg "
 "%s."
 
-#: includes/admin/class-wc-bis-admin-notices.php:436
+#: includes/admin/class-wc-bis-admin-notices.php:438
 msgid "get in touch with us"
 msgstr "lépjen kapcsolatba velünk"
 
 #. translators: %s: support link
-#: includes/admin/class-wc-bis-admin-notices.php:438
+#: includes/admin/class-wc-bis-admin-notices.php:440
 #, php-format
 msgid ""
 " If this message persists, please restore your database from a backup, or "
@@ -180,7 +186,7 @@ msgstr ""
 "adatbázisát egy biztonsági mentésből, vagy %s."
 
 #. translators: onboarding url
-#: includes/admin/class-wc-bis-admin-notices.php:466
+#: includes/admin/class-wc-bis-admin-notices.php:468
 #, php-format
 msgid ""
 "Thank you for installing <strong>WooCommerce Back In Stock "
@@ -192,47 +198,34 @@ msgstr ""
 "href=\"%s\">beállításai áttekintésére</a>, és többé nem zavarjuk &ndash; "
 "soha!"
 
-#: includes/admin/class-wc-bis-admin-notices.php:541
+#: includes/admin/class-wc-bis-admin-notices.php:546
 msgid "Loopback test passed!"
 msgstr "A loopback teszt sikeres!"
 
-#: includes/admin/class-wc-bis-admin-notices.php:543
+#: includes/admin/class-wc-bis-admin-notices.php:548
 msgid "Loopback test failed!"
 msgstr "A loopback teszt sikertelen!"
 
-#: includes/admin/class-wc-bis-admin-notices.php:569
+#: includes/admin/class-wc-bis-admin-notices.php:573
 msgid ""
 "Back In Stock Notifications ran a quick check-up on your site, and found "
 "that loopback requests might be failing to complete. Loopback requests are "
 "used by WooCommerce to run scheduled events, such as database upgrades. To "
 "keep your site in top shape, please ask the host or administrator of your "
 "server to look into this for you."
-msgstr ""
-"A Back In Stock Notifications gyors ellenőrzést futtatott a webhelyén, és "
-"azt találta, hogy a loopback kérések előfordulhat, hogy nem futnak le "
-"teljesen. A WooCommerce a loopback kéréseket ütemezett események "
-"futtatásához használja, például adatbázis-frissítésekhez. Annak érdekében, "
-"hogy a webhelye a lehető legjobb állapotban maradjon, kérje meg a "
-"tárhelyszolgáltatóját vagy a kiszolgáló rendszergazdáját, hogy vizsgálja meg"
-" ezt az ügyet."
+msgstr "A Back In Stock Notifications gyors ellenőrzést végzett a webhelyén, és megállapította, hogy a loopback-kérések nem mindig teljesülnek. A WooCommerce a loopback-kéréseket ütemezett események, például adatbázis-frissítések futtatására használja. Ahhoz, hogy webhelye a lehető legjobb állapotban maradjon, kérje meg a tárhelyszolgáltatóját vagy a kiszolgáló adminisztrátorát, hogy vizsgálja meg a problémát."
 
-#: includes/admin/class-wc-bis-admin-notices.php:570
+#: includes/admin/class-wc-bis-admin-notices.php:574
 msgid "Repeat test"
 msgstr "Teszt megismétlése"
 
-#: includes/admin/class-wc-bis-admin-notices.php:611
+#: includes/admin/class-wc-bis-admin-notices.php:614
 msgid ""
 "Back In Stock Notifications ran a quick check-up on your site, and found "
 "that the task scheduler built into WooCommerce might be failing to process "
 "notifications deliveries in time. To keep your site in top shape, please ask"
 " the host or administrator of your server to look into this for you."
-msgstr ""
-"A Back In Stock Notifications gyors ellenőrzést futtatott a webhelyén, és "
-"azt találta, hogy a WooCommerce-be épített feladatütemező előfordulhat, hogy"
-" nem tudja időben feldolgozni az értesítések kézbesítéseit. Annak érdekében,"
-" hogy a webhelye a lehető legjobb állapotban maradjon, kérje meg a "
-"tárhelyszolgáltatóját vagy a kiszolgáló rendszergazdáját, hogy vizsgálja meg"
-" ezt az ügyet."
+msgstr "A Back In Stock Notifications gyors ellenőrzést végzett a webhelyén, és megállapította, hogy a WooCommerce-be épített feladatütemező esetleg nem dolgozza fel időben az értesítések kézbesítését. Ahhoz, hogy webhelye a lehető legjobb állapotban maradjon, kérje meg a tárhelyszolgáltatóját vagy a kiszolgáló adminisztrátorát, hogy vizsgálja meg a problémát."
 
 #: includes/admin/class-wc-bis-admin-notifications-page.php:97
 #: includes/admin/class-wc-bis-admin-notifications-page.php:155
@@ -243,7 +236,7 @@ msgstr "Értesítés frissítve."
 #: includes/admin/class-wc-bis-admin-notifications-page.php:119
 #, php-format
 msgid "Notification sent to \"%s\"."
-msgstr "Értesítés elküldve ide: \"%s\"."
+msgstr "Értesítés elküldve ide: „%s”."
 
 #: includes/admin/class-wc-bis-admin-notifications-page.php:121
 msgid ""
@@ -257,7 +250,7 @@ msgstr ""
 #: includes/admin/class-wc-bis-admin-notifications-page.php:148
 #, php-format
 msgid "Verification e-mail sent to \"%s\"."
-msgstr "Megerősítő e-mail elküldve ide: \"%s\"."
+msgstr "Megerősítő e-mail elküldve ide: „%s”."
 
 #. translators: %s duplicate notification edit url
 #: includes/admin/class-wc-bis-admin-notifications-page.php:232
@@ -265,9 +258,7 @@ msgstr "Megerősítő e-mail elküldve ide: \"%s\"."
 msgid ""
 "A <a href=\"%s\">notification</a> for the same product and customer already "
 "exists in your database."
-msgstr ""
-"Ugyanazon termékhez és ügyfélhez tartozó <a href=\"%s\">értesítés</a> már "
-"létezik az adatbázisában."
+msgstr "Ugyanahhoz a termékhez és vásárlóhoz tartozó <a href=\"%s\">értesítés</a> már létezik az adatbázisában."
 
 #: includes/admin/class-wc-bis-admin-notifications-page.php:246
 msgid "Notification created."
@@ -281,7 +272,7 @@ msgstr "Értesítés törölve."
 msgid "Notification not found."
 msgstr "Értesítés nem található."
 
-#: includes/admin/class-wc-bis-admin.php:159
+#: includes/admin/class-wc-bis-admin.php:162
 msgid ""
 "The installed version of <strong>Back In Stock</strong> is not compatible "
 "with the <code>selectSW</code> library found on your system. Please update "
@@ -291,47 +282,43 @@ msgstr ""
 "rendszerén található <code>selectSW</code> könyvtárral. Kérjük, frissítse a "
 "Back In Stock bővítményt a legújabb verzióra."
 
-#: includes/admin/class-wc-bis-admin.php:202
+#: includes/admin/class-wc-bis-admin.php:205
 msgid ""
 "WooCommerce Back In Stock Notifications stores the following information "
 "when customers sign up to receive back-in-stock notifications:"
-msgstr ""
-"A WooCommerce Back In Stock Notifications a következő információkat tárolja,"
-" amikor az ügyfelek feliratkoznak a készletértesítések fogadására:"
+msgstr "A WooCommerce Back In Stock Notifications a következő információkat tárolja, amikor a vásárlók feliratkoznak a készletértesítések fogadására:"
 
-#: includes/admin/class-wc-bis-admin.php:205
+#: includes/admin/class-wc-bis-admin.php:208
 msgid "Customer e-mail."
-msgstr "Ügyfél e-mail-címe."
+msgstr "Vásárló e-mail-címe."
 
-#: includes/admin/class-wc-bis-admin.php:206
+#: includes/admin/class-wc-bis-admin.php:209
 msgid "Sign-up date."
 msgstr "Feliratkozás dátuma."
 
-#: includes/admin/class-wc-bis-admin.php:207
+#: includes/admin/class-wc-bis-admin.php:210
 msgid "Notification date."
 msgstr "Értesítés dátuma."
 
-#: includes/admin/class-wc-bis-admin.php:210
+#: includes/admin/class-wc-bis-admin.php:213
 msgid ""
 "This information can be used to personally identify customers, and is stored"
 " in the database indefinitely."
-msgstr ""
-"Ezek az információk alkalmasak az ügyfelek személyes azonosítására, és az "
-"adatbázisban határozatlan ideig kerülnek tárolásra."
+msgstr "Ezek az információk alkalmasak a vásárlók személyes azonosítására, és határozatlan ideig tárolódnak az adatbázisban."
 
-#: includes/admin/class-wc-bis-admin.php:246
+#: includes/admin/class-wc-bis-admin.php:249
 msgid "Delete this notification permanently?"
 msgstr "Véglegesen törli ezt az értesítést?"
 
-#: includes/admin/class-wc-bis-admin.php:247
+#: includes/admin/class-wc-bis-admin.php:250
 msgid "Delete the selected notifications permanently?"
 msgstr "Véglegesen törli a kijelölt értesítéseket?"
 
-#: includes/admin/class-wc-bis-admin.php:252
+#: includes/admin/class-wc-bis-admin.php:255
 msgid "Export Notifications"
 msgstr "Értesítések exportálása"
 
-#: includes/admin/class-wc-bis-admin.php:255
+#: includes/admin/class-wc-bis-admin.php:258
 #: includes/admin/views/html-admin-dashboard.php:98
 #: includes/admin/views/html-admin-dashboard.php:138
 #: includes/admin/views/html-admin-dashboard.php:185
@@ -339,44 +326,38 @@ msgid "No data recorded."
 msgstr "Nincs rögzített adat."
 
 #. translators: notifications count, date
-#: includes/admin/class-wc-bis-admin.php:257
+#: includes/admin/class-wc-bis-admin.php:260
 #, php-format
 msgid "%notifications% signed up on %date%"
 msgstr "%notifications% feliratkozott ekkor: %date%"
 
 #. translators: notifications count, date
-#: includes/admin/class-wc-bis-admin.php:259
+#: includes/admin/class-wc-bis-admin.php:262
 #, php-format
 msgid "%notifications% sent on %date%"
 msgstr "%notifications% elküldve ekkor: %date%"
 
-#: includes/admin/class-wc-bis-admin.php:341
-#: includes/class-wc-bis-account.php:984
+#: includes/admin/class-wc-bis-admin.php:345
+#: includes/class-wc-bis-account.php:990
 msgid "Stock notifications"
 msgstr "Készletértesítések"
 
-#: includes/admin/class-wc-bis-admin.php:351
+#: includes/admin/class-wc-bis-admin.php:355
 msgid "Let customers sign up to be notified when this product is restocked"
-msgstr ""
-"Engedje meg, hogy a vásárlók feliratkozzanak értesítésre, ha ez a termék "
-"újra készleten lesz."
+msgstr "Engedélyezze a vásárlóknak, hogy feliratkozzanak értesítésre, ha ez a termék ismét készleten lesz."
 
 #. translators: Settings page for Back in Stock Notifications
-#: includes/admin/class-wc-bis-admin.php:364
+#: includes/admin/class-wc-bis-admin.php:368
 #, php-format
 msgid ""
 "Sign-ups for stock notifications are disabled for all products in the store."
 " To control sign-ups for this product, first enable the global <a "
 "href=\"%s\">\"Allow sign-ups\"</a> option."
-msgstr ""
-"A készletértesítésekre történő feliratkozás az áruház összes termékénél le "
-"van tiltva. Ennek a terméknek a feliratkozásait csak akkor tudja kezelni, ha"
-" először engedélyezi a globális <a href=\\\"%s\\\">\\\"Feliratkozások "
-"engedélyezése\\\"</a> opciót."
+msgstr "A készletértesítésekre való feliratkozás az áruház összes termékénél ki van kapcsolva. A termékre történő feliratkozásokat csak akkor kezelheti, ha előbb engedélyezi a globális <a href=\"%s\">„Feliratkozások engedélyezése”</a> beállítást."
 
 #. translators: placeholder %1$s: the number of active back in stock
 #. notifications, placeholder %2$s: the deactivation URL.
-#: includes/admin/class-wc-bis-admin.php:458
+#: includes/admin/class-wc-bis-admin.php:462
 #, php-format
 msgid ""
 "This product is not published. However, %1$s customer has signed up to be "
@@ -390,12 +371,12 @@ msgid_plural ""
 "restock this product in the future, click <a href=\"%2$s\" "
 "class=\"js_wc_bis_notice_confirm_deactivate\"> to deactivate those "
 "notifications.</a>."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Ez a termék nincs közzétéve. Ennek ellenére %1$s vásárló feliratkozott arra, hogy értesítést kapjon, amikor a termék ismét készleten lesz. Ha a jövőben nem tervezi közzétenni vagy újra készletezni ezt a terméket, kattintson <a href=\"%2$s\" class=\"js_wc_bis_notice_confirm_deactivate\">ide</a> az értesítés kikapcsolásához."
+msgstr[1] "Ez a termék nincs közzétéve. Ennek ellenére %1$s vásárló feliratkozott arra, hogy értesítést kapjon, amikor a termék ismét készleten lesz. Ha a jövőben nem tervezi közzétenni vagy újra készletezni ezt a terméket, kattintson <a href=\"%2$s\" class=\"js_wc_bis_notice_confirm_deactivate\">az értesítések kikapcsolásához</a>."
 
 #. translators: %1$s the number of active back in stock notifications, %2$s
 #. the deactivation URL.
-#: includes/admin/class-wc-bis-admin.php:474
+#: includes/admin/class-wc-bis-admin.php:478
 #, php-format
 msgid ""
 "Stock notifications for this product are currently disabled under "
@@ -409,22 +390,28 @@ msgid_plural ""
 "%1$s notifications are scheduled to be sent when this product is restocked. "
 "To deactivate them, click <a href=\"%2$s\" "
 "class=\"js_wc_bis_notice_confirm_deactivate\">here</a>."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "A termék készletértesítései jelenleg ki vannak kapcsolva a <strong>Termékadatok > Készlet > Készletértesítések</strong> résznél. Ennek ellenére a termék készletre kerülésekor %1$s értesítés elküldése van ütemezve. A kikapcsolásához kattintson <a href=\"%2$s\" class=\"js_wc_bis_notice_confirm_deactivate\">ide</a>."
+msgstr[1] "A termék készletértesítései jelenleg ki vannak kapcsolva a <strong>Termékadatok > Készlet > Készletértesítések</strong> résznél. Ennek ellenére a termék készletre kerülésekor %1$s értesítés elküldése van ütemezve. A kikapcsolásukhoz kattintson <a href=\"%2$s\" class=\"js_wc_bis_notice_confirm_deactivate\">ide</a>."
 
-#: includes/admin/class-wc-bis-admin.php:487
+#: includes/admin/class-wc-bis-admin.php:491
 msgid "This action cannot be undone. Continue?"
 msgstr "Ez a művelet nem vonható vissza. Folytatja?"
 
 #. translators: placeholder 1 is the number of deactivated notifications.
 #. translators: %1$s: the number of deactivated notifications.
-#: includes/admin/class-wc-bis-admin.php:522
+#: includes/admin/class-wc-bis-admin.php:526
 #: includes/rest-api/class-wc-bis-rest-api-back-in-stock-controller.php:101
 #, php-format
 msgid "%1$s notification deactivated."
 msgid_plural "%1$s notifications deactivated."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s értesítés kikapcsolva."
+msgstr[1] "%1$s értesítés kikapcsolva."
+
+#. translators: %s: guest customer email
+#: includes/admin/class-wc-bis-admin.php:633
+#, php-format
+msgid "%s (guest)"
+msgstr "%s (vendég)"
 
 #: includes/admin/export/class-wc-bis-notification-csv-exporter.php:98
 #: templates/myaccount/back-in-stock.php:33
@@ -556,51 +543,51 @@ msgstr "Termék"
 #: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:321
 msgctxt "column_name"
 msgid "Signed Up"
-msgstr "Feliratkozott"
+msgstr "Feliratkozás"
 
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:324
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:355
 msgid "Activity Log"
 msgstr "Tevékenységnapló"
 
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:327
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:358
 msgid "No activity recorded just yet."
 msgstr "Egyelőre nincs rögzített tevékenység."
 
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:335
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:366
 msgid "No activity recorded"
 msgstr "Nincs rögzített tevékenység"
 
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:388
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:718
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:419
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:724
 msgid "Filter"
 msgstr "Szűrés"
 
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:424
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:460
 msgid "All customers"
 msgstr "Összes vásárló"
 
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:440
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:476
 msgid "Filter by type"
 msgstr "Szűrés típus szerint"
 
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:442
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:478
 msgid "All types"
 msgstr "Összes típus"
 
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:474
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:825
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:510
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:831
 msgid "Filter by date"
 msgstr "Szűrés dátum szerint"
 
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:476
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:827
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:512
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:833
 msgid "All dates"
 msgstr "Összes dátum"
 
 #. translators: 1: month 2: year
 #. translators: %1$s: month %2$s: year
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:491
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:842
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-activity.php:527
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:848
 #, php-format
 msgid "%1$s %2$d"
 msgstr "%1$s %2$d"
@@ -652,7 +639,7 @@ msgstr "Aktív"
 
 #: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:272
 msgid "Unpublished"
-msgstr "Nem közzétett"
+msgstr "Nincs közzétéve"
 
 #: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:290
 msgid "&mdash;"
@@ -661,7 +648,7 @@ msgstr "&mdash;"
 #: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:316
 msgctxt "column_name"
 msgid "ID"
-msgstr "ID"
+msgstr "Azonosító"
 
 #: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:317
 msgctxt "column_name"
@@ -681,7 +668,7 @@ msgstr "SKU"
 #: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:322
 msgctxt "column_name"
 msgid "Waiting"
-msgstr "Várakozó"
+msgstr "Várakozás"
 
 #: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:352
 msgid "Activate"
@@ -698,69 +685,69 @@ msgstr "Deaktiválás"
 msgid "Delete permanently"
 msgstr "Végleges törlés"
 
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:389
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:405
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:390
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:406
 msgid "Notifications updated."
 msgstr "Értesítések frissítve."
 
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:413
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:414
 msgid "Notifications deleted."
 msgstr "Értesítések törölve."
 
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:450
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:452
 msgid "Queued notifications aborted."
 msgstr "Sorba állított értesítések megszakítva."
 
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:588
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:594
 msgid "No Notifications found"
 msgstr "Nem található értesítés"
 
 #. translators: %s: Notifications count
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:606
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:612
 #, php-format
 msgctxt "notifications_status"
 msgid "All <span class=\"count\">(%s)</span>"
 msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Összes <span class=\"count\">(%s)</span>"
+msgstr[1] "Összes <span class=\"count\">(%s)</span>"
 
 #. translators: %s: Notifications count
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:623
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:629
 #, php-format
 msgctxt "notifications_status"
 msgid "Queued <span class=\"count\">(%s)</span>"
 msgid_plural "Queued <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Sorban álló <span class=\"count\">(%s)</span>"
+msgstr[1] "Sorban álló <span class=\"count\">(%s)</span>"
 
 #. translators: %s: Notifications count
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:640
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:646
 #, php-format
 msgctxt "notifications_status"
 msgid "Active <span class=\"count\">(%s)</span>"
 msgid_plural "Active <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Aktív <span class=\"count\">(%s)</span>"
+msgstr[1] "Aktív <span class=\"count\">(%s)</span>"
 
 #. translators: %s: Notifications count
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:656
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:662
 #, php-format
 msgctxt "notifications_status"
 msgid "Inactive <span class=\"count\">(%s)</span>"
 msgid_plural "Inactive <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Kikapcsolva <span class=\"count\">(%s)</span>"
+msgstr[1] "Kikapcsolva <span class=\"count\">(%s)</span>"
 
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:721
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:727
 msgid "Abort Queued"
 msgstr "Sorban állók megszakítása"
 
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:766
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:772
 #: includes/admin/views/html-admin-notification-create.php:139
 msgid "Select product&hellip;"
 msgstr "Válasszon terméket&hellip;"
 
-#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:800
+#: includes/admin/list-tables/class-wc-bis-admin-list-table-notifications.php:806
 msgid "Select customer&hellip;"
 msgstr "Válasszon vásárlót&hellip;"
 
@@ -776,21 +763,17 @@ msgstr "Feliratkozások engedélyezése"
 msgid ""
 "Let customers sign up to be notified when products in your store are "
 "restocked."
-msgstr ""
-"Lehetővé teszi, hogy a vásárlók feliratkozzanak értesítésre, amikor az "
-"áruházában lévő termékeket újrakészletezik."
+msgstr "Lehetővé teszi, hogy a vásárlók feliratkozzanak, és értesítést kapjanak, amikor az áruházában kapható termékek ismét készleten lesznek."
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:68
 msgid "Require double opt-in to sign up"
-msgstr "Kettős megerősítés (double opt-in) megkövetelése a feliratkozáshoz"
+msgstr "Dupla megerősítés megkövetelése a feliratkozáshoz"
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:69
 msgid ""
 "To complete the sign-up process, customers must follow a verification link "
 "sent to their e-mail after submitting the sign-up form."
-msgstr ""
-"A feliratkozási folyamat befejezéséhez a vásárlóknak a feliratkozási űrlap "
-"beküldése után az e-mailben küldött megerősítő hivatkozást kell követniük."
+msgstr "A feliratkozási folyamat befejezéséhez a vásárlóknak a feliratkozási űrlap elküldése után az e-mail-címükre küldött ellenőrző linkre kell kattintaniuk."
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:76
 msgid "Delete unverified notification sign-ups after (in days)"
@@ -810,7 +793,7 @@ msgstr ""
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:85
 msgid "Require account to sign up"
-msgstr "Fiók megkövetelése a feliratkozáshoz"
+msgstr "Felhasználói fiók szükséges a feliratkozáshoz"
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:86
 msgid "Customers must be logged in to sign up for stock notifications."
@@ -822,9 +805,7 @@ msgstr ""
 msgid ""
 "When enabled, guests will be redirected to a login page to complete the "
 "sign-up process."
-msgstr ""
-"Engedélyezés esetén a vendég felhasználók átirányításra kerülnek egy "
-"bejelentkezési oldalra a feliratkozási folyamat befejezéséhez."
+msgstr "Ha be van kapcsolva, a rendszer a feliratkozási folyamat befejezéséhez egy belépési oldalra irányítja át a vendégfelhasználókat."
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:94
 msgid "Create account on sign-up"
@@ -832,9 +813,7 @@ msgstr "Fiók létrehozása feliratkozáskor"
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:95
 msgid "Create an account when guests sign up for stock notifications."
-msgstr ""
-"Vendég felhasználók számára fiók létrehozása, amikor készletértesítésre "
-"feliratkoznak."
+msgstr "Fiók létrehozása, amikor a vendégek feliratkoznak a készletértesítésekre."
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:103
 msgid "Minimum stock quantity"
@@ -843,9 +822,7 @@ msgstr "Minimális készletmennyiség"
 #: includes/admin/settings/class-wc-bis-admin-settings.php:104
 msgid ""
 "Stock quantity required to trigger stock notifications when restocking."
-msgstr ""
-"Az a készletmennyiség, amely újrakészletezéskor aktiválja a "
-"készletértesítéseket."
+msgstr "Az újrakészletezéskor a készletértesítések kiváltásához szükséges készletmennyiség."
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:120
 msgid "Product Page"
@@ -859,9 +836,7 @@ msgstr "Hozzájárulási jelölőnégyzet megjelenítése"
 msgid ""
 "Enable this option if you would like guests to provide explicit consent in "
 "order to sign up."
-msgstr ""
-"Engedélyezze ezt az opciót, ha azt szeretné, hogy a vendégek kifejezett "
-"hozzájárulást adjanak a feliratkozáshoz."
+msgstr "Kapcsolja be ezt a beállítást, ha azt szeretné, hogy a vendégek kifejezett hozzájárulást adjanak a feliratkozáshoz."
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:135
 msgid "Opt-in checkbox text"
@@ -879,9 +854,7 @@ msgstr "Tudassa a látogatókkal, hány vásárló iratkozott már fel."
 msgid ""
 "Note: If page caching is enabled on your site, the displayed count may not "
 "be accurate at all times."
-msgstr ""
-"Megjegyzés: Ha a webhelyén az oldal gyorsítótárazása engedélyezve van, a "
-"megjelenített szám nem minden esetben pontos."
+msgstr "Megjegyzés: Ha a webhelyén be van kapcsolva az oldal gyorsítótárazása, a megjelenített darabszám nem minden esetben pontos."
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:156
 msgid "Signed-up customers text"
@@ -897,9 +870,7 @@ msgid ""
 "Text to use when multiple customers have signed up for stock notifications. "
 "<code>{customers_count}</code> will be substituted by the number of signed-"
 "up customers."
-msgstr ""
-"Szöveg, amikor több vásárló iratkozott fel készletértesítésre. A "
-"<code>{customers_count}</code> helyére a feliratkozott vásárlók száma kerül."
+msgstr "Akkor használandó szöveg, ha több vásárló iratkozott fel készletértesítésre. A <code>{customers_count}</code> helyére a feliratkozott vásárlók száma kerül."
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:178
 msgid "Sign-up form text"
@@ -925,12 +896,11 @@ msgstr ""
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:200
 msgid "Text substituted into <code>{manage_account_link}</code> above."
-msgstr ""
-"A fenti <code>{manage_account_link}</code> helyére behelyettesített szöveg."
+msgstr "A fenti <code>{manage_account_link}</code> helyére kerülő szöveg."
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:204
 msgid "Sign-up form button text"
-msgstr "Regisztrációs űrlap gombjának felirata"
+msgstr "Feliratkozási űrlap gombjának szövege"
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:217
 msgid "Catalog"
@@ -938,7 +908,7 @@ msgstr "Katalógus"
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:223
 msgid "Display sign-up prompt in catalog"
-msgstr "Regisztrációs felhívás megjelenítése a katalógusban"
+msgstr "Feliratkozási felhívás megjelenítése a katalógusban"
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:224
 msgid ""
@@ -950,7 +920,7 @@ msgstr ""
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:231
 msgid "Catalog sign-up prompt text"
-msgstr "Katalógus regisztrációs felhívásának szövege"
+msgstr "Katalógusbeli feliratkozási felhívás szövege"
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:235
 msgid ""
@@ -965,11 +935,11 @@ msgstr ""
 #: includes/admin/settings/class-wc-bis-admin-settings.php:245
 #: includes/admin/settings/class-wc-bis-admin-settings.php:265
 msgid "Text substituted into <code>{prompt_link}</code> above."
-msgstr "A fenti <code>{prompt_link}</code> helyére behelyettesített szöveg."
+msgstr "A fenti <code>{prompt_link}</code> helyére kerülő szöveg."
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:251
 msgid "Catalog sign-up prompt text &mdash; already signed up"
-msgstr "Katalógus regisztrációs felhívás szövege &mdash; már feliratkozott"
+msgstr "Katalógusbeli feliratkozási felhívás szövege &mdash; már feliratkozott"
 
 #: includes/admin/settings/class-wc-bis-admin-settings.php:255
 msgid ""
@@ -1005,10 +975,7 @@ msgid ""
 "WooCommerce is currently <a href=\"%s\">configured</a> to hide out-of-stock "
 "products from your catalog. Customers will not be able sign up for back-in-"
 "stock notifications while this option is enabled."
-msgstr ""
-"A WooCommerce jelenleg úgy van <a href=\"%s\">beállítva</a>, hogy elrejtse a"
-" készlethiányos termékeket az Ön katalógusából. A vásárlók nem tudnak "
-"feliratkozni a készletértesítésekre, amíg ez az opció engedélyezve van."
+msgstr "A WooCommerce jelenleg úgy van <a href=\"%s\">beállítva</a>, hogy elrejtse a készlethiányos termékeket az Ön katalógusából. A vásárlók nem tudnak feliratkozni a készletértesítésekre, amíg ez a beállítás be van kapcsolva."
 
 #: includes/admin/status/views/html-admin-page-status-report.php:17
 msgid "Back In Stock Notifications"
@@ -1048,7 +1015,7 @@ msgstr "A loopback teszt sikertelen."
 
 #: includes/admin/views/html-admin-activity.php:22
 msgid "Search activity"
-msgstr "Keresési tevékenység"
+msgstr "Történések keresése"
 
 #: includes/admin/views/html-admin-dashboard.php:27
 msgid "Sent last month"
@@ -1109,8 +1076,7 @@ msgstr "Legtöbb feliratkozás"
 
 #: includes/admin/views/html-admin-modal-notifications-export.php:19
 msgid "Generate and download a CSV file with notification sign-up data."
-msgstr ""
-"CSV-fájl létrehozása és letöltése az értesítési feliratkozások adataival."
+msgstr "CSV-fájl létrehozása és letöltése az értesítésekre való feliratkozások adataival."
 
 #: includes/admin/views/html-admin-modal-notifications-export.php:26
 msgid "Options"
@@ -1252,9 +1218,7 @@ msgstr "Értesítések keresése"
 msgid ""
 "No customers have signed up to receive back-in-stock notifications from you "
 "just yet."
-msgstr ""
-"Még egyetlen vásárló sem iratkozott fel Önnél a készletre visszaérkezésről "
-"szóló értesítésekre."
+msgstr "Még egyetlen vásárló sem iratkozott fel Önnél arra, hogy értesítést kapjon, amikor egy termék ismét készleten lesz."
 
 #: includes/admin/views/html-admin-notifications.php:43
 msgid "Learn more"
@@ -1274,9 +1238,9 @@ msgstr ", vagy hozzon létre most új fiókot."
 #: includes/class-wc-bis-account.php:267
 #, php-format
 msgid "Please log in to complete the sign-up process%s."
-msgstr "Kérjük, jelentkezzen be a feliratkozási folyamat befejezéséhez%s."
+msgstr "Kérjük, a feliratkozási folyamat befejezéséhez végezze el a bejelentkezést%s."
 
-#: includes/class-wc-bis-account.php:307 includes/class-wc-bis-product.php:218
+#: includes/class-wc-bis-account.php:307 includes/class-wc-bis-product.php:245
 msgid "Sign up failed. Please try again."
 msgstr "A feliratkozás nem sikerült. Kérjük, próbálja meg újra."
 
@@ -1286,7 +1250,7 @@ msgstr "Már csatlakozott ehhez a várólistához."
 
 #: includes/class-wc-bis-account.php:358 includes/class-wc-bis-account.php:412
 #: includes/class-wc-bis-account.php:453 includes/class-wc-bis-account.php:662
-#: includes/class-wc-bis-account.php:789
+#: includes/class-wc-bis-account.php:795
 msgid "Manage notifications"
 msgstr "Értesítések kezelése"
 
@@ -1294,31 +1258,24 @@ msgstr "Értesítések kezelése"
 msgid ""
 "Thanks for signing up! An account has been created for you. Please complete "
 "the sign-up process by following the verification link sent to your e-mail."
-msgstr ""
-"Köszönjük a feliratkozását! Létrehoztunk egy fiókot az Ön számára. Kérjük, "
-"fejezze be a feliratkozási folyamatot az e-mailben elküldött megerősítő "
-"hivatkozás követésével."
+msgstr "Köszönjük, hogy feliratkozott! Létrehoztunk egy fiókot az Ön számára. Kérjük, a feliratkozás befejezéséhez kattintson az e-mailben kapott megerősítő linkre."
 
 #: includes/class-wc-bis-account.php:380 includes/class-wc-bis-account.php:471
 msgid ""
 "Thanks for signing up! Please complete the sign-up process by following the "
 "verification link sent to your e-mail."
-msgstr ""
-"Köszönjük a feliratkozását! Kérjük, fejezze be a feliratkozási folyamatot az"
-" e-mailben elküldött megerősítő hivatkozás követésével."
+msgstr "Köszönjük, hogy feliratkozott! Kérjük, a feliratkozás befejezéséhez kattintson az e-mailben kapott megerősítő linkre."
 
 #: includes/class-wc-bis-account.php:386
 msgid ""
 "You have already joined this waitlist. Please complete the sign-up process "
 "by following the verification link sent to your e-mail."
-msgstr ""
-"Már csatlakozott ehhez a várólistához. Kérjük, fejezze be a feliratkozási "
-"folyamatot az e-mailben elküldött megerősítő hivatkozás követésével."
+msgstr "Már csatlakozott ehhez a várólistához. Kérjük, a feliratkozás befejezéséhez kattintson az e-mailben kapott megerősítő linkre."
 
 #: includes/class-wc-bis-account.php:390
 #: templates/myaccount/back-in-stock.php:89
 msgid "Resend verification"
-msgstr "Megerősítő e-mail újraküldése"
+msgstr "Megerősítés újraküldése"
 
 #. translators: Product name
 #: includes/class-wc-bis-account.php:403 includes/class-wc-bis-account.php:443
@@ -1327,10 +1284,7 @@ msgid ""
 "You have successfully signed up and will be notified when \"%s\" is back in "
 "stock! Note that a new account has been created for you; please check your "
 "e-mail for details."
-msgstr ""
-"Sikeresen feliratkozott, és értesítést kap, amikor \"%s\" újra raktáron "
-"lesz! Felhívjuk figyelmét, hogy új fiókot hoztunk létre az Ön számára; "
-"kérjük, ellenőrizze az e-mailjét a részletekért."
+msgstr "Sikeresen feliratkozott, és értesítést kap, amikor „%s” újra raktáron lesz! Felhívjuk figyelmét, hogy új fiókot hoztunk létre az Ön számára; kérjük, ellenőrizze az e-mailjét a részletekért."
 
 #. translators: Product name
 #: includes/class-wc-bis-account.php:406 includes/class-wc-bis-account.php:446
@@ -1338,22 +1292,18 @@ msgstr ""
 msgid ""
 "You have successfully signed up! You will be notified when \"%s\" is back in"
 " stock."
-msgstr ""
-"Sikeresen feliratkozott! Értesítést kap, amikor \"%s\" újra raktáron lesz."
+msgstr "Sikeresen feliratkozott! Értesítést kap, amikor „%s” újra raktáron lesz."
 
 #: includes/class-wc-bis-account.php:469
 msgid ""
 "Thanks for signing up! A new account has been created for you. Please "
 "complete the sign-up process by following the verification link sent to your"
 " e-mail."
-msgstr ""
-"Köszönjük a feliratkozását! Új fiókot hoztunk létre az Ön számára. Kérjük, "
-"fejezze be a feliratkozási folyamatot az e-mailben elküldött megerősítő "
-"hivatkozás követésével."
+msgstr "Köszönjük, hogy feliratkozott! Új fiókot hoztunk létre az Ön számára. Kérjük, a feliratkozás befejezéséhez kattintson az e-mailben kapott megerősítő linkre."
 
 #: includes/class-wc-bis-account.php:499 includes/class-wc-bis-account.php:546
-#: includes/class-wc-bis-account.php:560 includes/class-wc-bis-account.php:852
-#: includes/class-wc-bis-account.php:905
+#: includes/class-wc-bis-account.php:560 includes/class-wc-bis-account.php:858
+#: includes/class-wc-bis-account.php:911
 msgid ""
 "We were unable to process your request. Please try again later, or get in "
 "touch with us for assistance."
@@ -1365,8 +1315,8 @@ msgstr ""
 msgid "We were unable to process your request. Notification not found."
 msgstr "Kérését nem tudtuk feldolgozni. Az értesítés nem található."
 
-#: includes/class-wc-bis-account.php:513 includes/class-wc-bis-account.php:865
-#: includes/class-wc-bis-account.php:918
+#: includes/class-wc-bis-account.php:513 includes/class-wc-bis-account.php:871
+#: includes/class-wc-bis-account.php:924
 msgid ""
 "We were unable to authorize your request. Please try again later, or get in "
 "touch with us for assistance."
@@ -1376,7 +1326,7 @@ msgstr ""
 
 #: includes/class-wc-bis-account.php:527
 msgid "Notification reactivated."
-msgstr "Értesítés újra aktiválva."
+msgstr "Értesítés újraaktiválva."
 
 #: includes/class-wc-bis-account.php:573
 msgid "Notification deactivated."
@@ -1387,8 +1337,8 @@ msgid "Undo"
 msgstr "Visszavonás"
 
 #: includes/class-wc-bis-account.php:618 includes/class-wc-bis-account.php:631
-#: includes/class-wc-bis-account.php:728 includes/class-wc-bis-account.php:859
-#: includes/class-wc-bis-account.php:912
+#: includes/class-wc-bis-account.php:734 includes/class-wc-bis-account.php:865
+#: includes/class-wc-bis-account.php:918
 msgid "Invalid link."
 msgstr "Érvénytelen hivatkozás."
 
@@ -1396,7 +1346,7 @@ msgstr "Érvénytelen hivatkozás."
 msgid "The verification link you followed has expired."
 msgstr "A megnyitott megerősítő hivatkozás lejárt."
 
-#: includes/class-wc-bis-account.php:638 includes/class-wc-bis-account.php:735
+#: includes/class-wc-bis-account.php:638 includes/class-wc-bis-account.php:741
 msgid "Invalid product."
 msgstr "Érvénytelen termék."
 
@@ -1404,43 +1354,38 @@ msgstr "Érvénytelen termék."
 #: includes/class-wc-bis-account.php:656
 #, php-format
 msgid "Successfully verified stock notifications for \"%s\"."
-msgstr ""
-"Sikeresen megerősítette a(z) \"%s\" termékre vonatkozó készletértesítéseket."
+msgstr "Sikeresen megerősítette a(z) „%s” termékre vonatkozó készletértesítéseket."
 
 #. translators: %2$s product name, %1$s user email
-#: includes/class-wc-bis-account.php:783
+#: includes/class-wc-bis-account.php:789
 #, php-format
 msgid ""
 "Successfully unsubscribed %1$s. You will not receive a notification when "
 "\"%2$s\" becomes available."
-msgstr ""
-"Sikeresen leiratkozott: %1$s. Nem fog értesítést kapni, amikor \"%2$s\" "
-"elérhetővé válik."
+msgstr "Sikeresen leiratkozott: %1$s. Nem fog értesítést kapni, amikor „%2$s” elérhetővé válik."
 
-#: includes/class-wc-bis-account.php:801
+#: includes/class-wc-bis-account.php:807
 msgid "Please log in to manage your notifications."
-msgstr "Kérjük, jelentkezzen be az értesítései kezeléséhez."
+msgstr "Kérjük, végezze el a bejelentkezést az értesítések kezeléséhez."
 
 #. translators: %s user email
-#: includes/class-wc-bis-account.php:823
+#: includes/class-wc-bis-account.php:829
 #, php-format
 msgid "Successfully unsubscribed %s from all stock notifications."
-msgstr "Sikeresen leiratkoztatta %s-t minden készletértesítésről."
+msgstr "Sikeresen megszüntettük a(z) %s feliratkozását az összes készletértesítésre."
 
 #. translators: %s user email
-#: includes/class-wc-bis-account.php:877
+#: includes/class-wc-bis-account.php:883
 #, php-format
 msgid "Verification e-mail sent to \"%s\". Please check your inbox!"
-msgstr ""
-"Megerősítő e-mail elküldve a(z) \"%s\" címre. Kérjük, ellenőrizze a "
-"postafiókját!"
+msgstr "Megerősítő e-mail elküldve a(z) „%s” címre. Kérjük, ellenőrizze a postafiókját!"
 
 #. translators: %s user email
-#: includes/class-wc-bis-account.php:928
+#: includes/class-wc-bis-account.php:934
 msgid "Pending notification cancelled."
 msgstr "Függőben lévő értesítés törölve."
 
-#: includes/class-wc-bis-account.php:985
+#: includes/class-wc-bis-account.php:991
 msgid "Endpoint for the \"My account &rarr; Stock Notifications\" page."
 msgstr "Végpont a \"Saját fiók &rarr; Készletértesítések\" oldalhoz."
 
@@ -1456,30 +1401,30 @@ msgstr "Támogatás"
 msgid ""
 "Sign-up failed. If this issue persists, please refresh the page and try "
 "again."
-msgstr ""
-"A feliratkozás nem sikerült. Ha a probléma továbbra is fennáll, kérjük, "
-"frissítse az oldalt, és próbálja meg újra."
+msgstr "A feliratkozás nem sikerült. Ha a probléma továbbra is fennáll, kérjük, frissítse az oldalt, és próbálja meg újra."
 
 #: includes/class-wc-bis-product.php:66
 msgid "Sign-up failed. Invalid product properties."
-msgstr "A feliratkozás nem sikerült. Érvénytelen terméktulajdonságok."
+msgstr "A feliratkozás sikertelen. Hibás terméktulajdonságok."
 
 #: includes/class-wc-bis-product.php:71
 msgid ""
 "Sign-up failed. Stock notifications for this product have been disabled."
-msgstr ""
-"A feliratkozás nem sikerült. Ennél a terméknél a készletértesítések le "
-"vannak tiltva."
+msgstr "A feliratkozás sikertelen. Ennél a terméknél a készletértesítések ki vannak kapcsolva."
 
 #: includes/class-wc-bis-product.php:86
 msgid "Sign-up failed. Invalid variation properties."
-msgstr "A feliratkozás nem sikerült. Érvénytelen variációs tulajdonságok."
+msgstr "A feliratkozás sikertelen. Hibás variációs tulajdonságok."
 
-#: includes/class-wc-bis-product.php:174
+#: includes/class-wc-bis-product.php:152
+msgid "Good news, this product is already back in stock!"
+msgstr "Jó hír, ez a termék már ismét készleten van!"
+
+#: includes/class-wc-bis-product.php:201
 msgid "Invalid e-mail."
 msgstr "Érvénytelen e-mail-cím."
 
-#: includes/class-wc-bis-product.php:180
+#: includes/class-wc-bis-product.php:207
 msgid ""
 "To proceed, please consent to the creation of a new account with your "
 "e-mail."
@@ -1487,14 +1432,14 @@ msgstr ""
 "A folytatáshoz kérjük, járuljon hozzá egy új fiók létrehozásához az e-mail-"
 "címével."
 
-#: includes/class-wc-bis-product.php:666
+#: includes/class-wc-bis-product.php:693
 msgid "Session expired. Please reload the page and try again."
 msgstr ""
 "A munkamenet lejárt. Kérjük, töltse be újra az oldalt, és próbálja meg "
 "ismét."
 
 #. translators: 1: Sign-up form button text
-#: includes/class-wc-bis-product.php:695
+#: includes/class-wc-bis-product.php:722
 #, php-format
 msgid ""
 "To join the waitlist, please choose product options and click the \"%1$s\" "
@@ -1504,34 +1449,28 @@ msgstr ""
 "kattintson a \"%1$s\" gombra."
 
 #. translators: 1: Sign-up form button text
-#: includes/class-wc-bis-product.php:701
+#: includes/class-wc-bis-product.php:728
 #, php-format
 msgid ""
 "To join the waitlist, please click the <a "
 "href=\"#wc_bis_product_form\">\"%1$s\"</a> button."
-msgstr ""
-"A várólistához való csatlakozáshoz kérjük, kattintson a <a "
-"href=\"#wc_bis_product_form\">\"%1$s\"</a> gombra."
+msgstr "A várólistához való csatlakozáshoz kérjük, kattintson a <a href=\"#wc_bis_product_form\">„%1$s”</a> gombra."
 
 #. translators: 1: Sign-up form button text
-#: includes/class-wc-bis-product.php:709
+#: includes/class-wc-bis-product.php:736
 #, php-format
 msgid ""
 "To join the waitlist, please: (1) Choose product options. (2) Enter your "
 "e-mail. (3) Click the \"%1$s\" button."
-msgstr ""
-"A várólistához való csatlakozáshoz kérjük: (1) Válassza ki a termék opcióit."
-" (2) Adja meg e-mail-címét. (3) Kattintson a \"%1$s\" gombra."
+msgstr "A várólistához való csatlakozáshoz kérjük: (1) Válassza ki a termék opcióit. (2) Adja meg e-mail-címét. (3) Kattintson a „%1$s” gombra."
 
 #. translators: 1: Sign-up form button text
-#: includes/class-wc-bis-product.php:715
+#: includes/class-wc-bis-product.php:742
 #, php-format
 msgid ""
 "To join the waitlist, please <a href=\"#wc_bis_email\">enter your e-mail</a>"
 " and click the \"%1$s\" button."
-msgstr ""
-"A várólistához való csatlakozáshoz kérjük, <a href=\"#wc_bis_email\">adja "
-"meg e-mail-címét</a>, majd kattintson a \"%1$s\" gombra."
+msgstr "A várólistához való csatlakozáshoz kérjük, <a href=\"#wc_bis_email\">adja meg e-mail-címét</a>, majd kattintson a „%1$s” gombra."
 
 #. translators: $d number of notifications
 #: includes/class-wc-bis-sync-tasks.php:95
@@ -1542,17 +1481,17 @@ msgid ""
 msgid_plural ""
 "%d identical back-in-stock notifications were sent to the same customers "
 "recently. This time, we skipped them to prevent spamming."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Nemrég már küldtünk %d azonos, készletre érkezésről szóló értesítést ugyanannak a vásárlónak. Ezúttal kihagytuk az értesítést a levélszemét elkerülése érdekében."
+msgstr[1] "Nemrég már küldtünk %d azonos, készletre érkezésről szóló értesítést ugyanazoknak a vásárlóknak. Ezúttal kihagytuk az értesítéseket a levélszemét elkerülése érdekében."
 
 #: includes/class-wc-bis-sync-tasks.php:109
 #: includes/class-wc-bis-sync-tasks.php:117
 msgid "Send anyway"
-msgstr "Mégis küldés"
+msgstr "Küldés mindenképpen"
 
 #: includes/class-wc-bis-sync-tasks.php:175
 msgid "View queue"
-msgstr "Küldési sor megtekintése"
+msgstr "Várólista megtekintése"
 
 #. translators: notifications count
 #: includes/class-wc-bis-sync-tasks.php:182
@@ -1563,8 +1502,8 @@ msgid ""
 msgid_plural ""
 "%2$d back-in-stock notifications are now <a href=\"%1$s\">queued for "
 "delivery</a> in the next few minutes."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%2$d készletre érkezésről szóló értesítés most <a href=\"%1$s\">kézbesítési sorba került</a>, és a következő néhány percben elküldjük."
+msgstr[1] "%2$d készletre érkezésről szóló értesítés most <a href=\"%1$s\">kézbesítési sorba került</a>, és a következő néhány percben elküldjük."
 
 #: includes/compatibility/class-wc-bis-compatibility.php:166
 msgid "Product Bundles"
@@ -1592,7 +1531,7 @@ msgstr ""
 #: includes/compatibility/modules/class-wc-bis-pre-orders-compatibility.php:51
 msgctxt "Pre-Order Email notification"
 msgid "\"{product_name}\" is now available for pre-order!"
-msgstr "\"{product_name}\" most előrendelhető!"
+msgstr "„{product_name}” most előrendelhető!"
 
 #: includes/compatibility/modules/class-wc-bis-pre-orders-compatibility.php:69
 msgctxt "Pre-Order Email notification"
@@ -1602,21 +1541,19 @@ msgstr "Most előrendelhető!"
 #: includes/compatibility/modules/class-wc-bis-pre-orders-compatibility.php:89
 msgctxt "Pre-Order Email notification"
 msgid "Great news: You can now pre-order \"{product_name}\"!"
-msgstr "Jó hír: Most előrendelheti a(z) \"{product_name}\" terméket!"
+msgstr "Jó hír: Most előrendelheti a(z) „{product_name}” terméket!"
 
 #: includes/compatibility/modules/class-wc-bis-pre-orders-compatibility.php:91
 msgctxt "Pre-Order Email notification"
 msgid ""
 "Thanks for joining the waitlist! You will hear from us again when "
 "\"{product_name}\" is available."
-msgstr ""
-"Köszönjük, hogy csatlakozott a várólistához! Ismét jelentkezünk, amikor a "
-"\"{product_name}\" elérhetővé válik."
+msgstr "Köszönjük, hogy csatlakozott a várólistához! Ismét jelentkezünk, amikor a „{product_name}” elérhetővé válik."
 
 #: includes/compatibility/modules/class-wc-bis-pre-orders-compatibility.php:107
 msgctxt "Pre-Order Email notification"
 msgid "Pre-Order Now"
-msgstr "Rendelje elő most"
+msgstr "Előrendelés most"
 
 #: includes/db/class-wc-bis-activity-db.php:25
 #: includes/db/class-wc-bis-activity-db.php:32
@@ -1630,7 +1567,7 @@ msgstr "Hiba!"
 
 #: includes/db/class-wc-bis-activity-db.php:291
 msgid "Missing activity attributes."
-msgstr "Hiányzó tevékenységattribútumok."
+msgstr "Hiányoznak a történések attribútumai."
 
 #: includes/db/class-wc-bis-activity-db.php:353
 msgid "Invalid activity type."
@@ -1640,7 +1577,7 @@ msgstr "Érvénytelen tevékenységtípus."
 #: includes/db/class-wc-bis-notifications-db.php:480
 #, php-format
 msgid "Invalid e-mail: %s."
-msgstr "Érvénytelen e-mail-cím: %s."
+msgstr "Hibás e-mail: %s."
 
 #: includes/db/class-wc-bis-notifications-db.php:487
 msgid "Product is empty."
@@ -1652,7 +1589,7 @@ msgstr "A vásárló nincs megadva."
 
 #: includes/emails/class-wc-bis-email-notification-confirm.php:32
 msgid "Back in stock sign-up confirmation"
-msgstr "Újra készleten feliratkozás visszaigazolása"
+msgstr "Készletértesítőre való feliratkozás megerősítése"
 
 #: includes/emails/class-wc-bis-email-notification-confirm.php:33
 msgid ""
@@ -1663,7 +1600,7 @@ msgstr ""
 
 #: includes/emails/class-wc-bis-email-notification-confirm.php:103
 msgid "You have joined the \"{product_name}\" waitlist."
-msgstr "Csatlakozott a \"{product_name}\" várólistájához."
+msgstr "Csatlakozott a „{product_name}” várólistájához."
 
 #: includes/emails/class-wc-bis-email-notification-confirm.php:112
 msgid "Sign-up successful"
@@ -1673,9 +1610,7 @@ msgstr "Sikeres feliratkozás"
 msgid ""
 "Thanks for joining the waitlist! You will hear from us again when "
 "\"{product_name}\" is back in stock."
-msgstr ""
-"Köszönjük, hogy csatlakozott a várólistához! Ismét jelentkezünk, amikor a "
-"\"{product_name}\" újra készleten lesz."
+msgstr "Köszönjük, hogy csatlakozott a várólistához! Ismét jelentkezünk, amikor a „{product_name}” újra készleten lesz."
 
 #: includes/emails/class-wc-bis-email-notification-confirm.php:265
 #: includes/emails/class-wc-bis-email-notification-received.php:395
@@ -1691,7 +1626,7 @@ msgstr "Szöveg, amely a fő e-mail fejléc alatt jelenik meg."
 
 #: includes/emails/class-wc-bis-email-notification-received.php:33
 msgid "Back in stock notification"
-msgstr "Újra készleten értesítés"
+msgstr "Értesítés az újbóli készletre kerülésről"
 
 #: includes/emails/class-wc-bis-email-notification-received.php:34
 msgid "Email sent to signed-up customers when a product is back in stock."
@@ -1700,7 +1635,7 @@ msgstr ""
 
 #: includes/emails/class-wc-bis-email-notification-received.php:244
 msgid "\"{product_name}\" is back in stock!"
-msgstr "\"{product_name}\" újra készleten van!"
+msgstr "„{product_name}” újra készleten van!"
 
 #: includes/emails/class-wc-bis-email-notification-received.php:253
 msgid "It's back in stock!"
@@ -1708,11 +1643,11 @@ msgstr "Újra készleten van!"
 
 #: includes/emails/class-wc-bis-email-notification-received.php:262
 msgid "Great news: \"{product_name}\" is now available for purchase."
-msgstr "Jó hír: A \"{product_name}\" most megvásárolható."
+msgstr "Jó hír: „{product_name}” most már megvásárolható."
 
 #: includes/emails/class-wc-bis-email-notification-verify.php:32
 msgid "Back in stock sign-up verification"
-msgstr "Újra készleten feliratkozás megerősítése"
+msgstr "Készletértesítőre való feliratkozás megerősítése"
 
 #: includes/emails/class-wc-bis-email-notification-verify.php:33
 msgid ""
@@ -1724,7 +1659,7 @@ msgstr ""
 
 #: includes/emails/class-wc-bis-email-notification-verify.php:109
 msgid "Join the \"{product_name}\" waitlist."
-msgstr "Csatlakozzon a \"{product_name}\" várólistájához."
+msgstr "Csatlakozzon a „{product_name}” várólistájához."
 
 #: includes/emails/class-wc-bis-email-notification-verify.php:118
 msgid "Confirm sign-up"
@@ -1734,9 +1669,7 @@ msgstr "Feliratkozás megerősítése"
 msgid ""
 "Please follow the link below to complete the sign-up process and join the "
 "\"{product_name}\" waitlist."
-msgstr ""
-"Kérjük, kövesse az alábbi hivatkozást a feliratkozási folyamat befejezéséhez"
-" és a \"{product_name}\" várólistájához való csatlakozáshoz."
+msgstr "Kérjük, kövesse az alábbi linket a feliratkozási folyamat befejezéséhez és a „{product_name}” várólistájához való csatlakozáshoz."
 
 #: includes/rest-api/class-wc-bis-rest-api-back-in-stock-controller.php:96
 msgid "No notifications found to deactivate."
@@ -1798,7 +1731,7 @@ msgstr "Megerősítés elküldve"
 
 #: includes/wc-bis-functions.php:47
 msgid "Verification cancelled"
-msgstr "Megerősítés visszavonva"
+msgstr "Megerősítés megszakítva"
 
 #: includes/wc-bis-functions.php:48
 msgid "Verified and activated"
@@ -1808,19 +1741,19 @@ msgstr "Megerősítve és aktiválva"
 #: includes/wc-bis-template-functions.php:88
 #, php-format
 msgid "Created \"%2$s\" notification (#%1$d)"
-msgstr "Létrehozva \"%2$s\" értesítés (#%1$d)"
+msgstr "A „%2$s” értesítés létrehozva (#%1$d)"
 
 #. translators: %1$s: notification id
 #: includes/wc-bis-template-functions.php:91
 #, php-format
 msgid "Created #%1$s notification"
-msgstr "Létrehozva #%1$s értesítés"
+msgstr "A #%1$s azonosítójú értesítés létrehozva"
 
 #. translators: %1$s: notification id, %2$s: product name
 #: includes/wc-bis-template-functions.php:98
 #, php-format
 msgid "Delivered \"%2$s\" notification (#%1$d)"
-msgstr "Kézbesítve \"%2$s\" értesítés (#%1$d)"
+msgstr "A „%2$s” értesítés kézbesítve (#%1$d)"
 
 #. translators: %d: notification id
 #: includes/wc-bis-template-functions.php:101
@@ -1832,7 +1765,7 @@ msgstr "Értesítés kézbesítve (#%d)"
 #: includes/wc-bis-template-functions.php:107
 #, php-format
 msgid "Reactivated \"%2$s\" notification (#%1$d)"
-msgstr "Újraaktiválva \"%2$s\" értesítés (#%1$d)"
+msgstr "A „%2$s” értesítés újraaktiválva (#%1$d)"
 
 #. translators: %d: notification id
 #: includes/wc-bis-template-functions.php:110
@@ -1844,7 +1777,7 @@ msgstr "Értesítés újraaktiválva (#%d)"
 #: includes/wc-bis-template-functions.php:116
 #, php-format
 msgid "Deactivated \"%2$s\" notification (#%1$d)"
-msgstr "Deaktiválva \"%2$s\" értesítés (#%1$d)"
+msgstr "A „%2$s” értesítés kikapcsolva (#%1$d)"
 
 #. translators: %d: notification id
 #: includes/wc-bis-template-functions.php:119
@@ -1860,13 +1793,11 @@ msgstr "Szeretne értesítést kapni, amikor ez a termék újra készleten van?"
 msgid ""
 "You have already joined the waitlist! Click {manage_account_link} to manage "
 "your notifications."
-msgstr ""
-"Már csatlakozott a várólistához! Kattintson {manage_account_link}, hogy "
-"kezelje az értesítéseit."
+msgstr "Már csatlakozott a várólistához! Az értesítések kezeléséhez kattintson a következő linkre: {manage_account_link}."
 
 #: includes/wc-bis-template-functions.php:156
 msgid "Notify me"
-msgstr "Kérek értesítést"
+msgstr "Értesítés kérése"
 
 #: includes/wc-bis-template-functions.php:168
 msgid "here"
@@ -1874,25 +1805,21 @@ msgstr "ide"
 
 #: includes/wc-bis-template-functions.php:178
 msgid "Use this e-mail address to send me availability alerts and updates."
-msgstr ""
-"Ezt az e-mail-címet használja elérhetőségi értesítések és frissítések "
-"küldéséhez."
+msgstr "Használja ezt az e-mail-címet, hogy készletértesítéseket és frissítéseket küldjünk Önnek."
 
 #: includes/wc-bis-template-functions.php:188
 msgid "{customers_count} customers have joined the waitlist."
-msgstr "{customers_count} ügyfél csatlakozott a várólistához."
+msgstr "{customers_count} vásárló csatlakozott a várólistához."
 
 #: includes/wc-bis-template-functions.php:195
 msgid "1 customer has joined the waitlist."
-msgstr "1 ügyfél csatlakozott a várólistához."
+msgstr "1 vásárló csatlakozott a várólistához."
 
 #: includes/wc-bis-template-functions.php:209
 msgid ""
 "Out of stock. {prompt_link} to be notified when this product becomes "
 "available."
-msgstr ""
-"Nincs készleten. {prompt_link}, hogy értesítést kapjon, amikor ez a termék "
-"elérhetővé válik."
+msgstr "Nincs készleten. {prompt_link}, hogy értesítést kapjon, amikor ez a termék elérhetővé válik."
 
 #: includes/wc-bis-template-functions.php:223
 msgid "Join the waitlist"
@@ -1902,9 +1829,7 @@ msgstr "Csatlakozzon a várólistához"
 msgid ""
 "Out of stock. {prompt_link} and will be notified when this product becomes "
 "available."
-msgstr ""
-"Nincs készleten. {prompt_link}, és értesítést kap, amikor ez a termék "
-"elérhetővé válik."
+msgstr "Nincs készleten. {prompt_link}, és értesítést kap, amikor ez a termék elérhetővé válik."
 
 #: includes/wc-bis-template-functions.php:251
 msgid "You have joined the waitlist"
@@ -1948,7 +1873,7 @@ msgstr "Nem Ön volt? %s a leiratkozáshoz."
 #: templates/emails/html-back-in-stock-notification-received.php:88
 msgctxt "Email notification"
 msgid "Shop Now"
-msgstr "Vásároljon most"
+msgstr "Vásárlás most"
 
 #. translators: %1$s placeholder is the unsubscribe link, %2$s placeholder is
 #. the Unsubscribe text link.
@@ -1961,7 +1886,7 @@ msgstr "kattintson ide"
 #: templates/emails/html-back-in-stock-notification-received.php:101
 #, php-format
 msgid "To manage your notifications, %s to log in to your account."
-msgstr "Értesítései kezeléséhez %s a fiókjába való bejelentkezéshez."
+msgstr "Értesítései kezeléséhez %s, majd jelentkezzen be a fiókjába."
 
 #. translators: %1$s placeholder is the unsubscribe link, %2$s placeholder is
 #. the Unsubscribe text link.

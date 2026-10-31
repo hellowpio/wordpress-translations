@@ -1,0 +1,2609 @@
+# Copyright (C) 2026 WPManageNinja LLC
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: FluentCommunity Pro 2.12.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/fluent-community-pro\n"
+"POT-Creation-Date: 2026-10-16T13:32:12+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: fluent-community-pro\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: FluentCommunity Pro\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 2.12.0\n"
+
+#. Plugin Name of the plugin
+#: fluent-community-pro.php
+msgid "FluentCommunity Pro"
+msgstr "FluentCommunity Pro"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: fluent-community-pro.php
+msgid "https://fluentcommunity.co"
+msgstr "https://fluentcommunity.co"
+
+#. Description of the plugin
+#: fluent-community-pro.php
+msgid "The Pro version of FluentCommunity Plugin"
+msgstr "A FluentCommunity bővítmény Pro verziója"
+
+#. Author of the plugin
+#: fluent-community-pro.php
+msgid "WPManageNinja LLC"
+msgstr "WPManageNinja LLC"
+
+#: app/Hooks/Handlers/CoreDepenedencyHandler.php:12
+#: app/Hooks/Handlers/CoreDepenedencyHandler.php:13
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:49
+msgid "FluentCommunity"
+msgstr "FluentCommunity"
+
+#: app/Hooks/Handlers/CoreDepenedencyHandler.php:28
+msgid "You do not have permission to install plugins."
+msgstr "Nincs jogosultságod bővítmények telepítéséhez."
+
+#: app/Hooks/Handlers/CoreDepenedencyHandler.php:34
+msgid "Invalid nonce"
+msgstr "Érvénytelen nonce"
+
+#: app/Hooks/Handlers/CoreDepenedencyHandler.php:38
+msgid "Already installed"
+msgstr "Már telepítve"
+
+#: app/Hooks/Handlers/CoreDepenedencyHandler.php:47
+msgid "Installed"
+msgstr "Telepítve"
+
+#: app/Hooks/Handlers/CoreDepenedencyHandler.php:95
+msgid "Invalid plugin or file mods are disabled."
+msgstr "A bővítmény hibás, vagy a fájlmódosítások ki vannak kapcsolva."
+
+#: app/Hooks/Handlers/CourseEmailNotificationHandler.php:82
+msgid "Schedule date is required to enable notification."
+msgstr "Az értesítés bekapcsolásához kötelező megadni az időzítés dátumát."
+
+#: app/Hooks/Handlers/FollowHandler.php:101
+msgid "Following"
+msgstr "Követések"
+
+#. translators: %1$s is the follower name
+#: app/Hooks/Handlers/FollowHandler.php:146
+#, php-format
+msgid "%1$s followed you"
+msgstr "%1$s elkezdett követni téged"
+
+#. translators: for send email to all followers: %1$s is the feed title, %2$s
+#. is the author name and %3$s space name
+#: app/Hooks/Handlers/FollowHandler.php:248
+#, php-format
+msgid "%1$s - %2$s [%3$s]"
+msgstr "%1$s - %2$s [%3$s]"
+
+#: app/Hooks/Handlers/ModerationHandler.php:99
+msgid "Your post has been sent for review as per community guidelines."
+msgstr "A bejegyzésedet a közösségi irányelveknek megfelelően ellenőrzésre küldtük."
+
+#: app/Hooks/Handlers/ModerationHandler.php:102
+msgid "Your post contains a restricted word and has been sent for review."
+msgstr "A bejegyzésed korlátozott szót tartalmaz, ezért ellenőrzésre küldtük."
+
+#: app/Hooks/Handlers/ModerationHandler.php:103
+msgid ""
+"Your first post requires approval from a moderator before it becomes "
+"visible."
+msgstr "Az első bejegyzésedet moderátornak kell jóváhagynia, mielőtt láthatóvá válik."
+
+#: app/Hooks/Handlers/ModerationHandler.php:105
+msgid "Your post has been sent for review as per space guidelines."
+msgstr "A bejegyzésedet a tér irányelveinek megfelelően ellenőrzésre küldtük."
+
+#: app/Hooks/Handlers/ModerationHandler.php:168
+msgid "Your comment contains a restricted word and has been sent for review."
+msgstr "A hozzászólásod korlátozott szót tartalmaz, ezért ellenőrzésre küldtük."
+
+#: app/Hooks/Handlers/ModerationHandler.php:169
+msgid ""
+"Your first comment requires approval from a moderator before it becomes "
+"visible."
+msgstr "Az első hozzászólásodat moderátornak kell jóváhagynia, mielőtt láthatóvá válik."
+
+#: app/Hooks/Handlers/ModerationHandler.php:170
+msgid "Your comment has been sent for review as per community guidelines."
+msgstr "A hozzászólásodat a közösségi irányelveknek megfelelően ellenőrzésre küldtük."
+
+#. translators: %1$s is the comment title
+#: app/Hooks/Handlers/ModerationHandler.php:297
+#, php-format
+msgid "A comment has been automatically flagged for review: %1$s"
+msgstr "Egy hozzászólást automatikusan megjelöltek felülvizsgálatra: %1$s"
+
+#. translators: %s is the number of other people
+#: app/Hooks/Handlers/ModerationHandler.php:314
+#: app/Hooks/Handlers/ModerationHandler.php:384
+#, php-format
+msgid " and %s other people"
+msgstr " és további %s személy"
+
+#. translators: %1$s is the user name, %2$s is the comment title
+#: app/Hooks/Handlers/ModerationHandler.php:321
+#, php-format
+msgid "%1$s flagged a comment for your review: %2$s"
+msgstr "%1$s megjelölt egy hozzászólást, hogy felülvizsgáld: %2$s"
+
+#. translators: %1$s is the feed title
+#: app/Hooks/Handlers/ModerationHandler.php:368
+#, php-format
+msgid "A post has been automatically flagged for review: %1$s"
+msgstr "Egy bejegyzést automatikusan megjelöltek felülvizsgálatra: %1$s"
+
+#. translators: %1$s is the user name, %2$s is the feed title
+#: app/Hooks/Handlers/ModerationHandler.php:391
+#, php-format
+msgid "%1$s flagged a post %2$s for your review"
+msgstr "%1$s megjelölt egy bejegyzést, hogy felülvizsgáld: %2$s"
+
+#. translators: %1$s is the user name, %2$s is the feed title  and %3$s space
+#. title
+#: app/Hooks/Handlers/ModerationHandler.php:399
+#, php-format
+msgid "%1$s flagged a post %2$s for your review in %3$s"
+msgstr "%1$s megjelölt egy bejegyzést, hogy felülvizsgáld: %2$s (itt: %3$s)"
+
+#. translators: %s is the comment excerpt (max 30 chars)
+#: app/Hooks/Handlers/ModerationHandler.php:600
+#, php-format
+msgid "Comment flagged for review: %s"
+msgstr "Felülvizsgálatra megjelölt hozzászólás: %s"
+
+#: app/Hooks/Handlers/ModerationHandler.php:604
+msgid "Review the comment"
+msgstr "Hozzászólás felülvizsgálata"
+
+#. translators: %s is the post excerpt (max 30 chars)
+#: app/Hooks/Handlers/ModerationHandler.php:659
+#, php-format
+msgid "Post flagged for review: %s"
+msgstr "Felülvizsgálatra megjelölt bejegyzés: %s"
+
+#: app/Hooks/Handlers/ModerationHandler.php:663
+msgid "Review the post"
+msgstr "Bejegyzés felülvizsgálata"
+
+#: app/Hooks/Handlers/ModerationHandler.php:737
+msgid "Open moderation reports"
+msgstr "Moderálási jelentések megnyitása"
+
+#: app/Hooks/Handlers/ModerationHandler.php:738
+#: app/Services/Insights/Cards/Moderation/TopReportedCard.php:33
+msgid "Reports"
+msgstr "Jelentések"
+
+#: app/Hooks/Handlers/ModerationHandler.php:740
+msgid "Flagged or pending"
+msgstr "Megjelölve vagy függőben"
+
+#: app/Hooks/Handlers/PostVisibilityHandler.php:41
+msgid ""
+"Your post has been published as unlisted. Only people with the link can see "
+"it."
+msgstr "A bejegyzésed nem listázottként lett közzétéve. Csak azok láthatják, akiknek megvan a link."
+
+#: app/Hooks/Handlers/ProActionHanders.php:69
+msgid "Welcome Banner"
+msgstr "Üdvözlő banner"
+
+#: app/Hooks/Handlers/SchedulePostHandler.php:37
+msgid "The scheduled date and time could not be read. Please pick them again."
+msgstr "Nem sikerült beolvasni az időzítés dátumát és időpontját. Válaszd ki újra."
+
+#: app/Hooks/Handlers/SchedulePostHandler.php:44
+#: app/Http/Controllers/SchedulePostsController.php:136
+msgid "Scheduled time must be at least 30 minutes from now."
+msgstr "Az ütemezett időpontnak legalább 30 perccel későbbinek kell lennie a mostaninál."
+
+#: app/Hooks/Handlers/ShortCodeHandler.php:92
+msgid "Total Spaces"
+msgstr "Terek összesen"
+
+#: app/Hooks/Handlers/ShortCodeHandler.php:96
+msgid "Total Community Users"
+msgstr "Közösségi felhasználók összesen"
+
+#: app/Hooks/Handlers/ShortCodeHandler.php:100
+msgid "Total Posts"
+msgstr "Összes bejegyzés"
+
+#: app/Hooks/Handlers/ShortCodeHandler.php:104
+msgid "Total Comments"
+msgstr "Összes hozzászólás"
+
+#: app/Hooks/Handlers/ShortCodeHandler.php:108
+msgid "Total Likes"
+msgstr "Összes kedvelés"
+
+#: app/Http/Controllers/BulkMembersController.php:19
+#: app/Http/Controllers/BulkMembersController.php:57
+#: app/Http/Controllers/BulkMembersController.php:97
+#: app/Http/Controllers/BulkMembersController.php:111
+#: app/Http/Controllers/BulkMembersController.php:124
+#: app/Http/Controllers/BulkMembersController.php:140
+msgid "Permission denied"
+msgstr "Hozzáférés megtagadva"
+
+#: app/Http/Controllers/BulkMembersController.php:25
+#: app/Http/Controllers/BulkMembersController.php:67
+msgid "Too many user_ids in one request. Maximum 500 per chunk."
+msgstr "Túl sok user_ids szerepel egy kérésben. Egy kötegben legfeljebb 500 lehet."
+
+#: app/Http/Controllers/BulkMembersController.php:128
+#: app/Http/Controllers/BulkMembersController.php:144
+msgid "FluentCRM is not active"
+msgstr "A FluentCRM nincs bekapcsolva"
+
+#: app/Http/Controllers/BulkMembersController.php:159
+msgid "Invalid CRM tag"
+msgstr "Hibás CRM-címke"
+
+#: app/Http/Controllers/FollowController.php:19
+#: app/Http/Controllers/FollowController.php:62
+#: app/Http/Controllers/FollowController.php:135
+#: app/Http/Controllers/FollowController.php:191
+#: app/Http/Controllers/FollowController.php:383
+msgid "Profile not found"
+msgstr "A profil nem található"
+
+#: app/Http/Controllers/FollowController.php:28
+msgid "You cannot follow yourself."
+msgstr "Nem követheted saját magadat."
+
+#: app/Http/Controllers/FollowController.php:38
+msgid "You are already following or blocked this user."
+msgstr "Már követed ezt a felhasználót, vagy letiltottad."
+
+#: app/Http/Controllers/FollowController.php:52
+#: app/Http/Controllers/FollowController.php:110
+msgid "You followed this user successfully"
+msgstr "Sikeresen követni kezdted ezt a felhasználót"
+
+#: app/Http/Controllers/FollowController.php:72
+#: app/Http/Controllers/FollowController.php:393
+msgid "You are not currently following this user."
+msgstr "Jelenleg nem követed ezt a felhasználót."
+
+#: app/Http/Controllers/FollowController.php:83
+#: app/Http/Controllers/FollowController.php:112
+msgid "You unfollowed this user successfully"
+msgstr "Sikeresen leállítottad ennek a felhasználónak a követését"
+
+#: app/Http/Controllers/FollowController.php:96
+msgid "You cannot follow/unfollow yourself."
+msgstr "Saját magadat nem követheted, és a követést sem szüntetheted meg."
+
+#: app/Http/Controllers/FollowController.php:106
+msgid "You cannot follow/unfollow a blocked user"
+msgstr "Egy letiltott felhasználót nem követhetsz, és a követését sem szüntetheted meg"
+
+#: app/Http/Controllers/FollowController.php:141
+msgid "You cannot block yourself."
+msgstr "Nem tilthatod le saját magadat."
+
+#: app/Http/Controllers/FollowController.php:147
+msgid "Sorry, You cannot block a moderator."
+msgstr "Sajnáljuk, moderátort nem tilthatsz le."
+
+#: app/Http/Controllers/FollowController.php:153
+msgid "Sorry, You cannot block a user as you are a moderator."
+msgstr "Sajnáljuk, moderátorként nem tilthatsz le felhasználót."
+
+#: app/Http/Controllers/FollowController.php:181
+msgid "You blocked this user successfully"
+msgstr "Sikeresen letiltottad ezt a felhasználót"
+
+#: app/Http/Controllers/FollowController.php:201
+msgid "You are not currently blocking this user."
+msgstr "Jelenleg nincs letiltva ez a felhasználó."
+
+#: app/Http/Controllers/FollowController.php:212
+msgid "You unblocked this user successfully"
+msgstr "Sikeresen feloldottad ennek a felhasználónak a tiltását"
+
+#: app/Http/Controllers/FollowController.php:222
+#: app/Http/Controllers/FollowController.php:289
+#: app/Http/Controllers/FollowController.php:356
+msgid "This profile is not active"
+msgstr "Ez a profil nem aktív"
+
+#: app/Http/Controllers/FollowController.php:229
+msgid "You don't have permission to view the followers of this profile"
+msgstr "Nincs jogosultságod megtekinteni ennek a profilnak a követőit"
+
+#: app/Http/Controllers/FollowController.php:296
+msgid "You don't have permission to view the followings of this profile"
+msgstr "Nincs jogosultságod megtekinteni, hogy ez a profil kiket követ"
+
+#: app/Http/Controllers/FollowController.php:362
+msgid "You do not have permission to view this list."
+msgstr "Nincs jogosultságod megtekinteni ezt a listát."
+
+#: app/Http/Controllers/FollowController.php:402
+msgid "Notification has been updated successfully"
+msgstr "Az értesítés frissítése sikeres"
+
+#. translators: %s: human readable time difference, e.g. "2 mins"
+#. translators: %s: human readable time difference, e.g. "3 weeks"
+#: app/Http/Controllers/LicenseController.php:72
+#: app/Modules/SeoSiteMap/AbstractPortalPreRenderer.php:534
+#, php-format
+msgid "%s ago"
+msgstr "%s ezelőtt"
+
+#: app/Http/Controllers/LicenseController.php:147
+msgid "Your license key has been successfully updated"
+msgstr "A licenckulcsod sikeresen frissítve lett"
+
+#: app/Http/Controllers/LicenseController.php:166
+msgid "Your license key has been successfully deactivated"
+msgstr "A licenckulcsod kikapcsolása sikerült."
+
+#: app/Http/Controllers/ModerationController.php:99
+msgid "The content you are trying to report could not be found."
+msgstr "A jelenteni kívánt tartalom nem található."
+
+#: app/Http/Controllers/ModerationController.php:115
+msgid "This comment does not belong to the reported post."
+msgstr "Ez a hozzászólás nem ahhoz a bejegyzéshez tartozik, amelyet jelentettek."
+
+#: app/Http/Controllers/ModerationController.php:123
+msgid "You cannot report this content posted by a moderator."
+msgstr "Nem jelentheted ezt a moderátor által közzétett tartalmat."
+
+#: app/Http/Controllers/ModerationController.php:140
+msgid "You have already reported this content."
+msgstr "Ezt a tartalmat már jelentetted."
+
+#: app/Http/Controllers/ModerationController.php:173
+msgid ""
+"Your report has been successfully submitted. A moderator will review as soon"
+" as possible."
+msgstr "A jelentésedet sikeresen elküldtük. Egy moderátor a lehető leghamarabb felülvizsgálja."
+
+#: app/Http/Controllers/ModerationController.php:194
+#: app/Modules/Quiz/Http/Controllers/QuizController.php:218
+msgid "Invalid status value."
+msgstr "Hibás állapotérték."
+
+#: app/Http/Controllers/ModerationController.php:284
+msgid "The comment has been unpublished and is no longer visible to others."
+msgstr "A hozzászólás közzétételét visszavonták, ezért mások már nem láthatják."
+
+#: app/Http/Controllers/ModerationController.php:285
+msgid "The post has been unpublished and is no longer visible to others."
+msgstr "A bejegyzés közzétételét visszavonták, ezért mások már nem láthatják."
+
+#: app/Http/Controllers/ModerationController.php:288
+msgid ""
+"The report was dismissed. The comment is published and visible to the "
+"community."
+msgstr "A jelentést elutasították. A hozzászólást közzétették, és a közösség számára is látható."
+
+#: app/Http/Controllers/ModerationController.php:289
+msgid ""
+"The report was dismissed. The post is published and visible to the "
+"community."
+msgstr "A jelentést elutasították. A bejegyzést közzétették, és a közösség számára is látható."
+
+#: app/Http/Controllers/ModerationController.php:308
+msgid "Report deleted successfully"
+msgstr "A jelentést sikeresen töröltük"
+
+#: app/Http/Controllers/ModerationController.php:330
+msgid "Moderation config saved successfully"
+msgstr "A moderálási konfigurációt sikeresen mentettük"
+
+#: app/Http/Controllers/ProAdminController.php:80
+msgid "The selected user could not be found."
+msgstr "A kiválasztott felhasználó nem található."
+
+#: app/Http/Controllers/ProAdminController.php:95
+msgid "Manager has been updated successfully"
+msgstr "A menedzsert sikeresen frissítettük"
+
+#: app/Http/Controllers/ProAdminController.php:111
+msgid "Manager has been added successfully"
+msgstr "A kezelő hozzáadása sikeres"
+
+#: app/Http/Controllers/ProAdminController.php:121
+#: app/Modules/Webhooks/WebhookModule.php:63
+msgid "User not found"
+msgstr "Felhasználó nem található"
+
+#: app/Http/Controllers/ProAdminController.php:125
+msgid "User is not a manager"
+msgstr "A felhasználó nem kezelő"
+
+#: app/Http/Controllers/ProAdminController.php:136
+msgid "Manager has been removed successfully"
+msgstr "A kezelő eltávolítása sikeres"
+
+#: app/Http/Controllers/ProAdminController.php:210
+msgid "Topic not found"
+msgstr "A téma nem található"
+
+#: app/Http/Controllers/ProAdminController.php:230
+msgid "Slug already exist. Please use a different slug."
+msgstr "A slug már létezik. Kérlek, használj másik slugot."
+
+#: app/Http/Controllers/ProAdminController.php:278
+msgid "Topic has been saved successfully"
+msgstr "A témát sikeresen elmentettük"
+
+#: app/Http/Controllers/ProAdminController.php:289
+msgid "No topics to reorder"
+msgstr "Nincs átrendezhető téma"
+
+#: app/Http/Controllers/ProAdminController.php:298
+msgid "Invalid reorder request. Please refresh and try again."
+msgstr "Hibás átrendezési kérés. Frissítsd az oldalt, majd próbáld újra."
+
+#: app/Http/Controllers/ProAdminController.php:324
+msgid "Topics reordered successfully"
+msgstr "A témák átrendezése sikeres"
+
+#: app/Http/Controllers/ProAdminController.php:353
+msgid "Snippets settings have been saved successfully."
+msgstr "A kódrészletek beállításait sikeresen elmentettük."
+
+#: app/Http/Controllers/ProAdminController.php:370
+msgid "Topic has been deleted successfully"
+msgstr "A témát sikeresen töröltük"
+
+#: app/Http/Controllers/ProAdminController.php:388
+msgid "Topics configuration has been updated successfully"
+msgstr "A témák konfigurációját sikeresen frissítettük"
+
+#: app/Http/Controllers/ProAdminController.php:402
+msgid "Invalid color schema selected"
+msgstr "Hibás színsémát választottak ki"
+
+#: app/Http/Controllers/ProAdminController.php:434
+msgid "Color configuration has been updated successfully"
+msgstr "A színkonfigurációt sikeresen frissítettük"
+
+#: app/Http/Controllers/ProAdminController.php:455
+msgid "Auth settings have been updated successfully"
+msgstr "A hitelesítési beállításokat sikeresen frissítettük"
+
+#: app/Http/Controllers/ProAdminController.php:473
+#: app/Http/Controllers/ProAdminController.php:498
+msgid "Lockscreen settings have been updated successfully."
+msgstr "A zárképernyő beállításait sikeresen frissítettük."
+
+#: app/Http/Controllers/ProAdminController.php:485
+msgid "You do not have permission to manage this space."
+msgstr "Nincs jogosultságod kezelni ezt a közösségi teret."
+
+#: app/Http/Controllers/ProAdminController.php:538
+msgid "Welcome banner settings have been updated successfully."
+msgstr "Az üdvözlő banner beállításainak frissítése sikeres."
+
+#: app/Http/Controllers/ProAdminController.php:568
+#: app/Http/Controllers/ProAdminController.php:599
+msgid "CRM Tagging settings have been updated successfully"
+msgstr "A CRM-címkézés beállításait sikeresen frissítettük"
+
+#: app/Http/Controllers/ProAdminController.php:670
+msgid "Webhook not found."
+msgstr "A webhook nem található."
+
+#: app/Http/Controllers/ProAdminController.php:685
+msgid "Webhook has been saved successfully"
+msgstr "A webhookot sikeresen elmentettük"
+
+#: app/Http/Controllers/ProAdminController.php:695
+#: app/Modules/Webhooks/WebhookModule.php:43
+msgid "Webhook not found"
+msgstr "A webhook nem található"
+
+#: app/Http/Controllers/ProAdminController.php:703
+msgid "Webhook has been deleted successfully"
+msgstr "A webhookot sikeresen töröltük"
+
+#: app/Http/Controllers/ProAdminController.php:711
+msgid "Please update Fluent Messaging plugin to latest version"
+msgstr "Kérlek, frissítsd a Fluent Messaging bővítményt a legújabb verzióra"
+
+#: app/Http/Controllers/ProAdminController.php:738
+msgid "Messaging settings have been updated successfully"
+msgstr "Az üzenetküldési beállításokat sikeresen frissítettük"
+
+#: app/Http/Controllers/ProAdminController.php:761
+msgid "Title is required"
+msgstr "A cím megadása kötelező"
+
+#: app/Http/Controllers/ProAdminController.php:762
+msgid "Please select Space Group"
+msgstr "Kérlek, válassz tércsoportot"
+
+#: app/Http/Controllers/ProAdminController.php:763
+msgid "Please select privacy"
+msgstr "Kérlek, válassz adatvédelmi beállítást"
+
+#: app/Http/Controllers/ProAdminController.php:764
+msgid "Permalink is required"
+msgstr "A közvetlen hivatkozás megadása kötelező"
+
+#: app/Http/Controllers/ProAdminController.php:765
+msgid "Please provide a valid URL"
+msgstr "Kérlek, adj meg érvényes URL-t"
+
+#: app/Http/Controllers/ProAdminController.php:766
+#: app/Http/Controllers/ProAdminController.php:799
+msgid "Please select at least one membership for members only link"
+msgstr "Kérlek, válassz legalább egy tagságot a csak tagok számára elérhető linkhez"
+
+#: app/Http/Controllers/ProAdminController.php:851
+msgid "The link has been saved successfully"
+msgstr "A hivatkozás sikeresen mentve"
+
+#: app/Http/Controllers/ProAdminController.php:866
+msgid "The link has been deleted successfully"
+msgstr "A hivatkozás sikeresen törölve"
+
+#: app/Http/Controllers/ProAdminController.php:883
+msgid "Followers settings have been updated successfully"
+msgstr "A követők beállításainak frissítése sikeres"
+
+#: app/Http/Controllers/ProAdminController.php:926
+msgid "Custom profile fields have been saved successfully"
+msgstr "Az egyéni profilmezők mentése sikeres"
+
+#: app/Http/Controllers/SchedulePostsController.php:34
+#: app/Http/Controllers/SchedulePostsController.php:63
+#: app/Http/Controllers/SchedulePostsController.php:115
+msgid "You do not have permission to perform this action"
+msgstr "Nincs jogosultságod a művelet végrehajtásához"
+
+#: app/Http/Controllers/SchedulePostsController.php:69
+#: app/Http/Controllers/SchedulePostsController.php:85
+#: app/Http/Controllers/SchedulePostsController.php:121
+msgid "This is not scheduled post"
+msgstr "Ez nem ütemezett bejegyzés"
+
+#: app/Http/Controllers/SchedulePostsController.php:101
+msgid "Post has been published"
+msgstr "A bejegyzés közzétéve"
+
+#: app/Http/Controllers/SchedulePostsController.php:128
+msgid "Scheduled time is required"
+msgstr "Az ütemezett idő megadása kötelező"
+
+#. translators: %s is the scheduled time
+#: app/Http/Controllers/SchedulePostsController.php:151
+#, php-format
+msgid "Post has been rescheduled at %s"
+msgstr "A bejegyzés át lett ütemezve ekkor: %s"
+
+#: app/Modules/CloudStorage/BunnyCDN/BunnyCdnDriver.php:54
+msgid "Error uploading file to BunnyCDN"
+msgstr "Hiba történt a fájl BunnyCDN-re való feltöltésekor"
+
+#: app/Modules/CloudStorage/CloudStorageModule.php:62
+msgid ""
+"The file is stored with a different storage provider or bucket than the one "
+"configured now."
+msgstr "A fájl egy másik tárhelyszolgáltatónál vagy tárolóban van, mint amelyik jelenleg be van állítva."
+
+#: app/Modules/CloudStorage/S3/CloudFlareDriver.php:38
+#: app/Modules/CloudStorage/S3/S3Driver.php:29
+msgid "File not found"
+msgstr "A fájl nem található"
+
+#: app/Modules/CloudStorage/S3/CloudFlareDriver.php:52
+msgid "Error uploading file to S3"
+msgstr "Hiba történt a fájl S3-ra való feltöltésekor"
+
+#: app/Modules/CloudStorage/S3/CloudFlareDriver.php:70
+msgid "Public URL not set"
+msgstr "A nyilvános URL nincs beállítva"
+
+#: app/Modules/CloudStorage/S3/CloudFlareDriver.php:106
+msgid "Unknown error occurred when deleting from R2"
+msgstr "Ismeretlen hiba történt az R2-ről való törléskor"
+
+#: app/Modules/CloudStorage/S3/S3Driver.php:44
+msgid "Unknown error occurred when uploading to s3"
+msgstr "Ismeretlen hiba történt az S3-ra való feltöltéskor"
+
+#: app/Modules/CloudStorage/S3/S3Driver.php:102
+msgid "Unknown error occurred when deleting from s3"
+msgstr "Ismeretlen hiba történt az S3-ról való törléskor"
+
+#: app/Modules/DocumentLibrary/DocumentModule.php:59
+msgid "Documents"
+msgstr "Dokumentumok"
+
+#: app/Modules/DocumentLibrary/DocumentModule.php:74
+#: app/Modules/DocumentLibrary/DocumentModule.php:85
+msgid "No documents found to save. Please try again"
+msgstr "Nem található menthető dokumentum. Kérlek, próbáld újra"
+
+#: app/Modules/DocumentLibrary/DocumentModule.php:95
+msgid "Invalid documents found to save. Please try again"
+msgstr "A mentésre váró dokumentumok között érvénytelenek is vannak. Kérlek, próbáld újra"
+
+#: app/Modules/DocumentLibrary/DocumentModule.php:137
+msgid "Document uploaded successfully"
+msgstr "A dokumentum feltöltése sikeres"
+
+#: app/Modules/DocumentLibrary/DocumentModule.php:230
+#: app/Modules/DocumentLibrary/DocumentModule.php:285
+msgid "Document not found"
+msgstr "A dokumentum nem található"
+
+#: app/Modules/DocumentLibrary/DocumentModule.php:231
+#: app/Modules/DocumentLibrary/DocumentModule.php:286
+msgid "The document you are trying to download is not found. Please try again"
+msgstr "A letölteni kívánt dokumentum nem található. Kérlek, próbáld újra"
+
+#: app/Modules/DocumentLibrary/DocumentModule.php:238
+msgid "You do not have permission to view this document"
+msgstr "Nincs jogosultságod a dokumentum megtekintéséhez"
+
+#: app/Modules/DocumentLibrary/DocumentModule.php:245
+msgid "Please login to view this document."
+msgstr "Kérlek, jelentkezz be a dokumentum megtekintéséhez."
+
+#: app/Modules/DocumentLibrary/DocumentModule.php:246
+msgid "Please login."
+msgstr "Kérlek, jelentkezz be."
+
+#: app/Modules/DocumentLibrary/DocumentModule.php:250
+msgid "Permission Denied"
+msgstr "Hozzáférés megtagadva"
+
+#: app/Modules/DocumentLibrary/Http/DocumentController.php:23
+msgid "You do not have permission to view documents in this space."
+msgstr "Nincs jogosultságod dokumentumok megtekintéséhez ebben a közösségi térben."
+
+#: app/Modules/DocumentLibrary/Http/DocumentController.php:71
+#: app/Modules/DocumentLibrary/Http/DocumentController.php:112
+msgid "Error while uploading the media"
+msgstr "Hiba történt a média feltöltése közben"
+
+#: app/Modules/DocumentLibrary/Http/DocumentController.php:93
+msgid "You do not have permission to upload documents to this lesson."
+msgstr "Nincs jogosultságod dokumentumok feltöltéséhez ehhez a leckéhez."
+
+#: app/Modules/DocumentLibrary/Http/DocumentController.php:148
+msgid "Document title is required"
+msgstr "A dokumentum címe kötelező"
+
+#: app/Modules/DocumentLibrary/Http/DocumentController.php:183
+msgid "Document updated successfully"
+msgstr "A dokumentum sikeresen frissítve"
+
+#: app/Modules/DocumentLibrary/Http/DocumentController.php:229
+msgid "Selected document has been deleted"
+msgstr "A kiválasztott dokumentum törölve"
+
+#: app/Modules/DocumentLibrary/Http/DocumentController.php:275
+msgid "Invalid document source"
+msgstr "Érvénytelen dokumentumforrás"
+
+#: app/Modules/DocumentLibrary/Http/DocumentController.php:285
+#: app/Modules/DocumentLibrary/Http/DocumentController.php:298
+#: app/Modules/DocumentLibrary/Http/DocumentController.php:308
+msgid "You do not have permission to edit this document"
+msgstr "Nincs jogosultságod a dokumentum szerkesztéséhez"
+
+#: app/Modules/Giphy/Http/Controllers/GiphyController.php:20
+msgid ""
+"Giphy API key is not set or invalid. Please set a valid API key in the giphy"
+" module."
+msgstr "A Giphy API-kulcs nincs beállítva, vagy érvénytelen. Kérlek, állíts be érvényes API-kulcsot a Giphy modulban."
+
+#: app/Modules/Giphy/Services/GiphyService.php:46
+msgid "Error loading GIFs: "
+msgstr "Hiba történt a GIF-ek betöltésekor: "
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:79
+msgid "Name"
+msgstr "Név"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:81
+msgid "Your Feed Name"
+msgstr "A feed neve"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:86
+msgid "Select Spaces or Courses to Enroll"
+msgstr "Válassz közösségi tereket vagy tanfolyamokat a beiratkozáshoz"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:87
+msgid "Choose options"
+msgstr "Válassz opciókat"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:96
+msgid "Map Fields"
+msgstr "Mezők hozzárendelése"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:97
+msgid ""
+"Associate your user fields to the appropriate Paymattic fields by selecting "
+"the appropriate form field from the list."
+msgstr "Társítsd a felhasználói mezőidet a megfelelő Paymattic-mezőkhöz a listából kiválasztott megfelelő űrlapmezővel."
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:99
+msgid "User Profile Field"
+msgstr "Felhasználói profilmező"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:100
+msgid "Form Field"
+msgstr "Űrlapmező"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:105
+msgid "For new users"
+msgstr "Új felhasználók számára"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:106
+msgid "For New Users - Data mapping"
+msgstr "Új felhasználók számára – adatok hozzárendelése"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:106
+msgid ""
+"These settings will apply only if the provided email address is not a "
+"registered WordPress user"
+msgstr "Ezek a beállítások csak akkor érvényesek, ha a megadott e-mail-címhez nem tartozik regisztrált WordPress-felhasználó"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:113
+msgid "Full Name (Only for new users)"
+msgstr "Teljes név (csak új felhasználóknál)"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:119
+msgid "Password (Only for new users)"
+msgstr "Jelszó (csak új felhasználóknál)"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:120
+msgid "Keep empty to auto generated password"
+msgstr "Hagyd üresen a jelszó automatikus létrehozásához"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:134
+msgid "Auto Login & Password Reset Email (For New Users Only)"
+msgstr "Automatikus bejelentkezés és jelszó-visszaállító e-mail (csak új felhasználóknak)"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:135
+msgid "Allow the user login automatically after Form submission"
+msgstr "Engedélyezd, hogy a felhasználó automatikusan bejelentkezzen az űrlap beküldése után"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:141
+msgid "Send default WordPress welcome email to user after registration"
+msgstr "Regisztráció után küldd el a WordPress alapértelmezett üdvözlő e-mailjét a felhasználónak"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:147
+msgid "Join/Enroll space/course on payment success only"
+msgstr "Csatlakozás a közösségi térhez/tanfolyamhoz csak sikeres fizetés esetén"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:153
+msgid "Remove from space/course if payment refunded"
+msgstr "Eltávolítás a közösségi térből/tanfolyamról a fizetés visszatérítése esetén"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:159
+msgid "Remove from space/course if subscription canceled"
+msgstr "Eltávolítás a közösségi térből/tanfolyamról az előfizetés lemondásakor"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:172
+msgid "Conditional Logics"
+msgstr "Feltételes logikák"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:173
+msgid "Allow this integration conditionally based on your submission values"
+msgstr "Engedélyezd ezt az integrációt feltételesen a beküldésed értékei alapján"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:196
+msgid "Course"
+msgstr "Tanfolyam"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:196
+#: app/Services/Insights/Cards/Content/TopPostsCard.php:34
+#: app/Services/Insights/Cards/Content/UnansweredCard.php:37
+#: app/Services/Integrations/FluentCRM/RemoveFromSpaceAction.php:44
+msgid "Space"
+msgstr "Térköz"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:207
+msgid "Email Address"
+msgstr "E-mail cím"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:222
+#, php-format
+msgid "%s Integration"
+msgstr "%s integráció"
+
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:247
+#: app/Modules/Integrations/Paymattic/Bootstrap.php:258
+msgid "No Course/Space selected"
+msgstr "Nincs kiválasztva tanfolyam/közösségi tér"
+
+#: app/Modules/Integrations/Paymattic/RemoveFromSpaceAction.php:146
+msgid "Remove from space/spaces skipped because user/space could not be found"
+msgstr "A közösségi térből/közösségi terekből való eltávolítás kimaradt, mert a felhasználó vagy a közösségi tér nem található"
+
+#: app/Modules/LeaderBoard/Http/Controllers/LeaderBoardController.php:20
+msgid "You don't have permission to view the leaderboard members"
+msgstr "Nincs jogosultságod a ranglista tagjainak megtekintéséhez"
+
+#: app/Modules/LeaderBoard/Http/Controllers/LeaderBoardController.php:93
+msgid "Last 7 days"
+msgstr "Elmúlt 7 nap"
+
+#: app/Modules/LeaderBoard/Http/Controllers/LeaderBoardController.php:98
+msgid "Last 30 days"
+msgstr "Elmúlt 30 nap"
+
+#: app/Modules/LeaderBoard/Http/Controllers/LeaderBoardController.php:103
+msgid "All time"
+msgstr "Teljes időszak"
+
+#: app/Modules/LeaderBoard/Http/Controllers/LeaderBoardController.php:195
+msgid "Leaderboard configuration has been updated."
+msgstr "A ranglista konfigurációja frissült."
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:213
+msgid "Space Initiate"
+msgstr "Közösségi tér újonca"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:214
+msgid "Taking the first steps into our vibrant world"
+msgstr "Első lépések a pezsgő világunkban"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:221
+msgid "Space Pathfinder"
+msgstr "Közösségi tér úttörője"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:222
+msgid "Uncovering the secrets of community mastery"
+msgstr "A közösségi élet mesteri szintre emelésének titkai"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:229
+msgid "Space Enthusiast"
+msgstr "Közösségi tér rajongója"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:230
+msgid "Igniting passion and fostering connections"
+msgstr "Szenvedély ébresztése és kapcsolatok építése"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:237
+msgid "Space Contributor"
+msgstr "Közösségi tér közreműködője"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:238
+msgid "Weaving the fabric of shared knowledge"
+msgstr "A közös tudás szövetének alakítása"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:245
+msgid "Space Advocate"
+msgstr "Közösségi tér szószólója"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:246
+msgid "Championing the cause with unwavering spirit"
+msgstr "Az ügy képviselete rendíthetetlen lelkesedéssel"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:253
+msgid "Space Virtuoso"
+msgstr "Közösségi tér virtuóza"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:254
+msgid "Exemplifying mastery and skill"
+msgstr "A hozzáértés és a jártasság példája"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:261
+msgid "Space Sage"
+msgstr "Közösségi tér bölcse"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:262
+msgid "Imparting wisdom and guiding the way"
+msgstr "Bölcsesség átadása és útmutatás"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:269
+msgid "Space Hero"
+msgstr "Közösségi tér hőse"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:270
+msgid "Leading with bold innovation and vision"
+msgstr "Vezetés merész újításokkal és jövőképpel"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:277
+msgid "Space Legend"
+msgstr "Közösségi tér legendája"
+
+#: app/Modules/LeaderBoard/Services/LeaderBoardHelper.php:278
+msgid "Eternally inspiring excellence and unity"
+msgstr "A kiválóság és az egység örökös ösztönzése"
+
+#: app/Modules/LeaderBoard/UserLevelUpgradedTrigger.php:24
+#: app/Services/Integrations/FluentCRM/AddBadgeAction.php:25
+#: app/Services/Integrations/FluentCRM/AddOrRemoveVerificationAction.php:24
+#: app/Services/Integrations/FluentCRM/AddToCourseAction.php:25
+#: app/Services/Integrations/FluentCRM/AddToSpaceAction.php:25
+#: app/Services/Integrations/FluentCRM/CourseLeaveTrigger.php:24
+#: app/Services/Integrations/FluentCRM/RemoveBadgeAction.php:23
+#: app/Services/Integrations/FluentCRM/RemoveFromCourseAction.php:23
+#: app/Services/Integrations/FluentCRM/RemoveFromSpaceAction.php:23
+#: app/Services/Integrations/FluentCRM/SpaceLeaveTrigger.php:24
+#: app/Services/Integrations/FluentCRM/SpaceMembershipStatusChangeAction.php:21
+msgid "Community"
+msgstr "Közösség"
+
+#: app/Modules/LeaderBoard/UserLevelUpgradedTrigger.php:25
+#: app/Modules/LeaderBoard/UserLevelUpgradedTrigger.php:35
+msgid "User Level (Leaderboard) Upgraded"
+msgstr "Felhasználói szintlépés (ranglista)"
+
+#: app/Modules/LeaderBoard/UserLevelUpgradedTrigger.php:26
+#: app/Modules/LeaderBoard/UserLevelUpgradedTrigger.php:36
+msgid ""
+"This Funnel will be initiated when a user upgraded to a level in the "
+"leaderboard"
+msgstr "Ez a tölcsér akkor indul el, amikor egy felhasználó szintet lép a ranglistán"
+
+#: app/Modules/LeaderBoard/UserLevelUpgradedTrigger.php:42
+#: app/Services/Integrations/FluentCRM/CourseLeaveTrigger.php:42
+#: app/Services/Integrations/FluentCRM/SpaceLeaveTrigger.php:42
+msgid "Subscription Status"
+msgstr "Előfizetés állapota"
+
+#: app/Modules/LeaderBoard/UserLevelUpgradedTrigger.php:43
+#: app/Services/Integrations/FluentCRM/CourseLeaveTrigger.php:43
+#: app/Services/Integrations/FluentCRM/SpaceLeaveTrigger.php:43
+msgid "Select Status"
+msgstr "Állapot kiválasztása"
+
+#: app/Modules/LeaderBoard/UserLevelUpgradedTrigger.php:47
+#: app/Services/Integrations/FluentCRM/SpaceLeaveTrigger.php:47
+msgid "An Automated double-optin email will be sent for new subscribers"
+msgstr "Az új feliratkozóknak automatikus, dupla megerősítést kérő e-mailt küldünk"
+
+#: app/Modules/LeaderBoard/UserLevelUpgradedTrigger.php:81
+#: app/Services/Integrations/FluentCRM/CourseLeaveTrigger.php:72
+#: app/Services/Integrations/FluentCRM/SpaceLeaveTrigger.php:72
+msgid "If Contact Already Exist?"
+msgstr "Ha a kapcsolat már létezik?"
+
+#: app/Modules/LeaderBoard/UserLevelUpgradedTrigger.php:82
+#: app/Services/Integrations/FluentCRM/CourseLeaveTrigger.php:73
+#: app/Services/Integrations/FluentCRM/SpaceLeaveTrigger.php:73
+msgid ""
+"Please specify what will happen if the subscriber already exists in the "
+"database"
+msgstr "Kérlek, add meg, mi történjen, ha a feliratkozó már szerepel az adatbázisban"
+
+#: app/Modules/LeaderBoard/UserLevelUpgradedTrigger.php:88
+msgid "Targeted Levels"
+msgstr "Célzott szintek"
+
+#: app/Modules/LeaderBoard/UserLevelUpgradedTrigger.php:89
+msgid "Select for which levels the automation will run for"
+msgstr "Válaszd ki, mely szinteken fusson az automatizálás"
+
+#: app/Modules/LeaderBoard/UserLevelUpgradedTrigger.php:90
+msgid "Select Level"
+msgstr "Válassz szintet"
+
+#: app/Modules/LeaderBoard/UserLevelUpgradedTrigger.php:92
+msgid "Leave blank to run for any level upgrade"
+msgstr "Hagyd üresen, hogy bármely szintlépésre fusson"
+
+#: app/Modules/LeaderBoard/UserLevelUpgradedTrigger.php:97
+#: app/Services/Integrations/FluentCRM/CourseLeaveTrigger.php:88
+msgid ""
+"Restart the automation multiple times for a contact for this event. (Only "
+"enable this if you want to restart the automation for the same contact)"
+msgstr "Ennél az eseménynél többször is indítsd újra az automatizálást ugyanannál a kapcsolatnál. (Csak akkor kapcsold be, ha ugyanannál a kapcsolatnál újra szeretnéd indítani az automatizálást)"
+
+#: app/Modules/LeaderBoard/UserLevelUpgradedTrigger.php:98
+#: app/Services/Integrations/FluentCRM/CourseLeaveTrigger.php:89
+#: app/Services/Integrations/FluentCRM/SpaceLeaveTrigger.php:89
+msgid ""
+"If you enable this, it will restart the automation for a contact even if "
+"they are already in the automation. Otherwise, it will skip if the contact "
+"already exists."
+msgstr "Ha bekapcsolod ezt a beállítást, a rendszer akkor is újraindítja az automatizálást az adott kapcsolatnál, ha az már részt vesz benne. Ellenkező esetben kihagyja az adott kapcsolatot, ha az már szerepel az automatizálásban."
+
+#: app/Modules/MediaGallery/Http/MediaGalleryController.php:19
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:22
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:99
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:137
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:245
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:279
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:344
+msgid "Space not found"
+msgstr "A közösségi tér nem található"
+
+#: app/Modules/MediaGallery/Http/MediaGalleryController.php:27
+msgid "You do not have permission to view this gallery"
+msgstr "Nincs jogosultságod a galéria megtekintéséhez"
+
+#: app/Modules/MediaGallery/MediaGalleryModule.php:34
+msgid "Media"
+msgstr "Média"
+
+#. translators: %d is the maximum number of characters.
+#: app/Modules/Pwa/Http/Controllers/PwaController.php:36
+#, php-format
+msgid "App Name should not exceed %d characters."
+msgstr "Az alkalmazás neve legfeljebb %d karakter lehet."
+
+#. translators: %d is the maximum number of characters.
+#: app/Modules/Pwa/Http/Controllers/PwaController.php:46
+#, php-format
+msgid "Short Name should not exceed %d characters."
+msgstr "A rövid név legfeljebb %d karakter lehet."
+
+#: app/Modules/Pwa/Http/Controllers/PwaController.php:56
+msgid "Unsupported app icon source."
+msgstr "Az alkalmazásikon forrása nem támogatott."
+
+#: app/Modules/Pwa/Http/Controllers/PwaController.php:64
+msgid "Unsupported install button position."
+msgstr "A telepítési gomb pozíciója nem támogatott."
+
+#: app/Modules/Pwa/Http/Controllers/PwaController.php:105
+msgid "An app icon is required when a custom icon is selected."
+msgstr "Egyéni ikon választásakor meg kell adnod egy alkalmazásikont."
+
+#: app/Modules/Pwa/Http/Controllers/PwaController.php:124
+msgid "PWA settings have been saved."
+msgstr "A PWA beállításai mentve."
+
+#. translators: %1$d is the uploaded width in pixels, %2$d the height.
+#: app/Modules/Pwa/Http/Controllers/PwaController.php:145
+#, php-format
+msgid "The app icon must be square. This one is %1$dx%2$d pixels."
+msgstr "Az alkalmazás ikonjának négyzet alakúnak kell lennie. Ez %1$dx%2$d képpont méretű."
+
+#. translators: %1$d is the required minimum in pixels, %2$d the uploaded
+#. width, %3$d the uploaded height.
+#: app/Modules/Pwa/Http/Controllers/PwaController.php:154
+#, php-format
+msgid ""
+"The app icon must be at least %1$dx%1$d pixels. This one is %2$dx%3$d "
+"pixels."
+msgstr "Az alkalmazás ikonjának legalább %1$dx%1$d képpont méretűnek kell lennie. Ez %2$dx%3$d képpont méretű."
+
+#: app/Modules/Pwa/PwaHelper.php:243
+msgid "Install App"
+msgstr "Alkalmazás telepítése"
+
+#: app/Modules/Pwa/PwaModule.php:193
+msgid "Close"
+msgstr "Bezárás"
+
+#: app/Modules/Pwa/PwaModule.php:194
+msgid "Install the app"
+msgstr "Az alkalmazás telepítése"
+
+#: app/Modules/Pwa/PwaModule.php:207
+msgid "Share"
+msgstr "Megosztás"
+
+#: app/Modules/Pwa/PwaModule.php:208
+msgid "Menu"
+msgstr "Menü"
+
+#: app/Modules/Pwa/PwaModule.php:209
+msgid "Add to Home Screen"
+msgstr "Hozzáadás a kezdőképernyőhöz"
+
+#. translators: %s is the app icon image.
+#: app/Modules/Pwa/PwaModule.php:218
+#, php-format
+msgid "Look for the %s icon on your home screen"
+msgstr "Keresd a %s ikont a kezdőképernyődön"
+
+#. translators: %s is the browser menu icon.
+#: app/Modules/Pwa/PwaModule.php:225
+#, php-format
+msgid "Open the browser <strong>menu</strong> %s"
+msgstr "Nyisd meg a böngésző <strong>menüjét</strong> %s"
+
+#. translators: %s is the "Add to Home Screen" menu item.
+#: app/Modules/Pwa/PwaModule.php:230
+#, php-format
+msgid "Tap <strong>Install</strong> or %s"
+msgstr "Kattints a <strong>telepítés</strong> lehetőségre vagy %s"
+
+#. translators: %s is the browser Share icon.
+#: app/Modules/Pwa/PwaModule.php:238
+#, php-format
+msgid "Press %s in the browser menu"
+msgstr "Nyomd meg a %s gombot a böngésző menüjében"
+
+#. translators: %s is the "Add to Home Screen" menu item.
+#: app/Modules/Pwa/PwaModule.php:243
+#, php-format
+msgid "Scroll down and tap %s"
+msgstr "Görgess le, majd koppints erre: %s"
+
+#: app/Modules/Pwa/PwaModule.php:287
+msgid "Hide Install App"
+msgstr "Alkalmazástelepítés elrejtése"
+
+#: app/Modules/Quiz/Http/Controllers/QuizController.php:25
+msgid "You must be enrolled in this course to view the quiz result."
+msgstr "A kvízeredmény megtekintéséhez be kell iratkoznod erre a kurzusra."
+
+#: app/Modules/Quiz/Http/Controllers/QuizController.php:90
+msgid "You must be enrolled in this course to submit the quiz."
+msgstr "A kvíz beküldéséhez be kell iratkoznod erre a kurzusra."
+
+#: app/Modules/Quiz/Http/Controllers/QuizController.php:96
+msgid "This quiz is not published yet"
+msgstr "Ez a kvíz még nincs közzétéve"
+
+#: app/Modules/Quiz/Http/Controllers/QuizController.php:112
+msgid "Invalid answer submitted."
+msgstr "Hibás válasz beküldve."
+
+#: app/Modules/Quiz/Http/Controllers/QuizController.php:128
+#, php-format
+msgid "Answer exceeds the %d character limit"
+msgstr "A válasz meghaladja a %d karakteres korlátot"
+
+#: app/Modules/Quiz/Http/Controllers/QuizController.php:158
+msgid "This quiz has no enabled questions yet."
+msgstr "Ennek a kvíznek még nincs bekapcsolt kérdése."
+
+#: app/Modules/Quiz/Http/Controllers/QuizController.php:204
+msgid "Quiz has been submitted successfully"
+msgstr "A kvíz sikeresen beküldve"
+
+#: app/Modules/Quiz/Http/Controllers/QuizController.php:229
+msgid "Quiz result updated successfully"
+msgstr "A kvíz eredménye sikeresen frissítve"
+
+#: app/Modules/Quiz/QuizHelper.php:17
+msgid "Single Choice"
+msgstr "Egyválasztós"
+
+#: app/Modules/Quiz/QuizHelper.php:18
+msgid "One correct option"
+msgstr "Egy helyes válaszlehetőség"
+
+#: app/Modules/Quiz/QuizHelper.php:22
+msgid "Multiple Choice"
+msgstr "Többválasztós"
+
+#: app/Modules/Quiz/QuizHelper.php:23
+msgid "Several correct options"
+msgstr "Több helyes válaszlehetőség"
+
+#: app/Modules/Quiz/QuizHelper.php:27
+msgid "True / False"
+msgstr "Igaz / Hamis"
+
+#: app/Modules/Quiz/QuizHelper.php:28
+msgid "Judge a statement"
+msgstr "Egy állítás eldöntése"
+
+#: app/Modules/Quiz/QuizHelper.php:32
+msgid "Written Answer"
+msgstr "Szöveges válasz"
+
+#: app/Modules/Quiz/QuizHelper.php:33
+msgid "Open or exact-match text"
+msgstr "Szabad vagy pontos egyezésű szöveg"
+
+#: app/Modules/Quiz/QuizHelper.php:37
+msgid "Fill in the Blank"
+msgstr "Hiányos szöveg"
+
+#: app/Modules/Quiz/QuizHelper.php:38
+msgid "Complete the sentence"
+msgstr "Egészítsd ki a mondatot"
+
+#: app/Modules/Quiz/QuizHelper.php:42
+msgid "Ordering"
+msgstr "Rendezés"
+
+#: app/Modules/Quiz/QuizHelper.php:43
+msgid "Put items in sequence"
+msgstr "Tedd sorrendbe a tételeket"
+
+#: app/Modules/Quiz/QuizHelper.php:47
+msgid "Matching"
+msgstr "Párosítás"
+
+#: app/Modules/Quiz/QuizHelper.php:48
+msgid "Pair prompts with answers"
+msgstr "Párosítsd a kérdéseket a válaszokkal"
+
+#: app/Modules/Quiz/QuizHelper.php:52
+msgid "Image Matching"
+msgstr "Képes párosítás"
+
+#: app/Modules/Quiz/QuizHelper.php:53
+msgid "Pair images with labels"
+msgstr "Párosítsd a képeket a címkékkel"
+
+#: app/Modules/SeoSiteMap/AbstractPortalPreRenderer.php:160
+msgid "Space menu"
+msgstr "Közösségi tér menüje"
+
+#: app/Modules/SeoSiteMap/AbstractPortalPreRenderer.php:163
+#: app/Services/Insights/Cards/Content/TopicsCard.php:39
+#: app/Services/Insights/Cards/Content/TypesCard.php:36
+#: app/Services/Insights/Cards/Members/TopContributorsCard.php:33
+#: app/Services/Insights/Cards/Spaces/ComparisonCard.php:45
+msgid "Posts"
+msgstr "Bejegyzések"
+
+#: app/Modules/SeoSiteMap/AbstractPortalPreRenderer.php:200
+msgid "Space Links"
+msgstr "Közösségi tér linkjei"
+
+#. translators: %s is the number of likes
+#: app/Modules/SeoSiteMap/AbstractPortalPreRenderer.php:393
+#, php-format
+msgid "%s like"
+msgid_plural "%s likes"
+msgstr[0] "%s kedvelés"
+msgstr[1] "%s kedvelés"
+
+#. translators: %s is the number of comments
+#: app/Modules/SeoSiteMap/AbstractPortalPreRenderer.php:407
+#, php-format
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] "%s hozzászólás"
+msgstr[1] "%s hozzászólás"
+
+#: app/Modules/SeoSiteMap/AbstractPortalPreRenderer.php:510
+msgid "Someone"
+msgstr "Valaki"
+
+#: app/Modules/SeoSiteMap/CoursePaywalls.php:138
+msgid "day"
+msgstr "nap"
+
+#: app/Modules/SeoSiteMap/CoursePaywalls.php:139
+msgid "week"
+msgstr "hét"
+
+#: app/Modules/SeoSiteMap/CoursePaywalls.php:140
+msgid "month"
+msgstr "hónap"
+
+#: app/Modules/SeoSiteMap/CoursePaywalls.php:141
+msgid "quarter"
+msgstr "negyedév"
+
+#: app/Modules/SeoSiteMap/CoursePaywalls.php:142
+msgid "half year"
+msgstr "félév"
+
+#: app/Modules/SeoSiteMap/CoursePaywalls.php:143
+msgid "year"
+msgstr "év"
+
+#: app/Modules/SeoSiteMap/CoursePreRenderer.php:152
+msgid "Breadcrumb"
+msgstr "Breadcrumb"
+
+#: app/Modules/SeoSiteMap/CoursePreRenderer.php:154
+msgid "Courses"
+msgstr "Kurzusok"
+
+#. translators: %s is the number of topics
+#: app/Modules/SeoSiteMap/CoursePreRenderer.php:190
+#, php-format
+msgid "%s Topic"
+msgid_plural "%s Topics"
+msgstr[0] "%s téma"
+msgstr[1] "%s téma"
+
+#. translators: %s is the number of lessons
+#: app/Modules/SeoSiteMap/CoursePreRenderer.php:195
+#, php-format
+msgid "%s Lesson"
+msgid_plural "%s Lessons"
+msgstr[0] "%s lecke"
+msgstr[1] "%s lecke"
+
+#: app/Modules/SeoSiteMap/CoursePreRenderer.php:236
+msgid "Course Contents"
+msgstr "Kurzus tartalma"
+
+#. translators: %s is the number of lessons in the section
+#: app/Modules/SeoSiteMap/CoursePreRenderer.php:252
+#, php-format
+msgid "%s lesson"
+msgid_plural "%s lessons"
+msgstr[0] "%s lecke"
+msgstr[1] "%s lecke"
+
+#: app/Modules/SeoSiteMap/CoursePreRenderer.php:292
+msgid "This is a private course"
+msgstr "Ez egy privát kurzus"
+
+#: app/Modules/SeoSiteMap/CoursePreRenderer.php:296
+msgid "Purchase access below or log in if you are already a member."
+msgstr "Vásárold meg alább a hozzáférést, vagy jelentkezz be, ha már tag vagy."
+
+#: app/Modules/SeoSiteMap/CoursePreRenderer.php:298
+msgid "Members have to be invited to this course."
+msgstr "A tagokat meg kell hívni a kurzusra."
+
+#: app/Modules/SeoSiteMap/SpacePreRenderer.php:103
+msgid "Posts pagination"
+msgstr "Bejegyzések lapozása"
+
+#: app/Modules/SeoSiteMap/SpacePreRenderer.php:105
+msgid "Newer posts"
+msgstr "Újabb bejegyzések"
+
+#: app/Modules/SeoSiteMap/SpacePreRenderer.php:108
+msgid "Older posts"
+msgstr "Régebbi bejegyzések"
+
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:53
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:63
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:74
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:145
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:253
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:287
+msgid "Page not found"
+msgstr "Az oldal nem található"
+
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:107
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:161
+msgid "Page title is required"
+msgstr "Az oldal címe kötelező"
+
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:126
+msgid "Page has been created"
+msgstr "Az oldal létrehozva"
+
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:221
+msgid "Nothing to update"
+msgstr "Nincs mit frissíteni"
+
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:234
+msgid "Page has been updated"
+msgstr "Az oldal frissítve"
+
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:262
+msgid "Page has been deleted"
+msgstr "Az oldal törölve"
+
+#. translators: %s is the title of the page being copied
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:297
+#, php-format
+msgid "%s (Copy)"
+msgstr "%s (másolat)"
+
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:316
+msgid "Page has been duplicated"
+msgstr "Az oldal másolata elkészült"
+
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:353
+msgid "No pages provided to sort"
+msgstr "Nincsenek rendezendő oldalak"
+
+#: app/Modules/SpacePages/Http/Controllers/SpacePageController.php:377
+msgid "Pages have been sorted"
+msgstr "Az oldalak rendezve"
+
+#: app/Modules/SpacePages/Services/SpacePageHelper.php:279
+msgid "You do not have access to view this page."
+msgstr "Nincs hozzáférésed ennek az oldalnak a megtekintéséhez."
+
+#: app/Modules/SpacePages/Services/SpacePageHelper.php:326
+msgid "Unified"
+msgstr "Egységes"
+
+#: app/Modules/SpacePages/Services/SpacePageHelper.php:327
+msgid "One surface filling the whole area, read like a course lesson. No box."
+msgstr "Egyetlen felület tölti ki a teljes területet, és úgy olvasható, mint egy kurzuslecke. Nincs doboz."
+
+#: app/Modules/SpacePages/Services/SpacePageHelper.php:330
+msgid "Standard"
+msgstr "Normál"
+
+#: app/Modules/SpacePages/Services/SpacePageHelper.php:331
+msgid ""
+"A card across the full width of the space, like the Members and Documents "
+"tabs."
+msgstr "Egy teljes szélességű kártya a közösségi térben, hasonlóan a Tagok és a Dokumentumok laphoz."
+
+#: app/Modules/SpacePages/Services/SpacePageHelper.php:334
+msgid "Classic"
+msgstr "Klasszikus"
+
+#: app/Modules/SpacePages/Services/SpacePageHelper.php:335
+msgid ""
+"Reads like a normal post: a card the width of a feed post, with the space "
+"sidebar beside it."
+msgstr "Úgy olvasható, mint egy normál bejegyzés: egy hírfolyam-bejegyzés szélességű kártya, mellette a közösségi tér oldalsávjával."
+
+#: app/Modules/SpacePages/Services/SpacePageHelper.php:338
+msgid "Full Width"
+msgstr "Teljes szélesség"
+
+#: app/Modules/SpacePages/Services/SpacePageHelper.php:339
+msgid "No card. Full width blocks design the page edge to edge."
+msgstr "Nincs kártya. A teljes szélességű blokkok szegélytől szegélyig alakítják ki az oldalt."
+
+#: app/Modules/SpacePages/SpacePagesModule.php:105
+msgid "Space Page"
+msgstr "Közösségi tér oldala"
+
+#: app/Modules/UserBadge/Controllers/UserBadgeController.php:36
+msgid "Title is required for all the badges"
+msgstr "Minden jelvényhez kötelező a cím"
+
+#: app/Modules/UserBadge/Controllers/UserBadgeController.php:64
+msgid "Badges saved successfully"
+msgstr "Jelvények sikeresen mentve"
+
+#: app/Modules/Webhooks/WebhookModule.php:35
+msgid "Too many requests."
+msgstr "Túl sok kérés."
+
+#: app/Modules/Webhooks/WebhookModule.php:53
+msgid "Email is required"
+msgstr "Az e-mail cím megadása kötelező"
+
+#: app/Modules/Webhooks/WebhookModule.php:109
+msgid "Webhook has been successfully executed"
+msgstr "A webhook végrehajtása sikeres"
+
+#: app/Services/BulkMemberHelper.php:26 app/Services/BulkMemberHelper.php:100
+#: app/Services/BulkMemberHelper.php:332
+#, php-format
+msgid "%d added successfully."
+msgstr "%d sikeresen hozzáadva."
+
+#: app/Services/BulkMemberHelper.php:154
+#, php-format
+msgid "%d student(s) added successfully."
+msgstr "%d tanuló sikeresen hozzáadva."
+
+#: app/Services/BulkMemberHelper.php:208
+#, php-format
+msgid "%d member(s) added successfully."
+msgstr "%d tag sikeresen hozzáadva."
+
+#: app/Services/BulkMemberHelper.php:331
+#, php-format
+msgid ""
+"%d added successfully. New user accounts were not created because you do not"
+" have permission to create users."
+msgstr "%d sikeresen hozzáadva. Nem jöttek létre új felhasználói fiókok, mert nincs jogosultságod felhasználók létrehozásához."
+
+#: app/Services/Insights/Cards/Content/BookmarksCard.php:24
+msgid "Most bookmarked"
+msgstr "Legtöbb könyvjelzőt kapott"
+
+#: app/Services/Insights/Cards/Content/BookmarksCard.php:29
+msgid ""
+"Posts bookmarked most often during the range. Metric: content.bookmarks."
+msgstr "Az időszakban leggyakrabban könyvjelzők közé mentett bejegyzések. Metrika: content.bookmarks."
+
+#: app/Services/Insights/Cards/Content/BookmarksCard.php:35
+#: app/Services/Insights/Cards/Content/TopPostsCard.php:33
+#: app/Services/Insights/Cards/Content/UnansweredCard.php:36
+msgid "Post Title"
+msgstr "Bejegyzés címe"
+
+#: app/Services/Insights/Cards/Content/BookmarksCard.php:36
+msgid "Bookmarks"
+msgstr "Könyvjelzők"
+
+#: app/Services/Insights/Cards/Content/HashtagsCard.php:15
+msgid "Hashtags"
+msgstr "Hashtagek"
+
+#: app/Services/Insights/Cards/Content/HashtagsCard.php:20
+msgid ""
+"Posts created in the range per hashtag. Metric: content.topics (hashtags)."
+msgstr "Az időszak alatt létrehozott bejegyzések hashtagenként. Metrika: content.topics (hashtagek)."
+
+#: app/Services/Insights/Cards/Content/TopicsCard.php:27
+msgid "Topics"
+msgstr "Témák"
+
+#: app/Services/Insights/Cards/Content/TopicsCard.php:32
+msgid ""
+"Posts created in the range per topic. A post with two topics counts once for"
+" each. Metric: content.topics."
+msgstr "Az időszakban létrehozott bejegyzések témánként. Ha egy bejegyzés két témához tartozik, mindkét témánál egyszer számít. Metrika: content.topics."
+
+#: app/Services/Insights/Cards/Content/TopicsCard.php:38
+msgid "Hashtag"
+msgstr "Hashtag"
+
+#: app/Services/Insights/Cards/Content/TopicsCard.php:38
+msgid "Topic"
+msgstr "Téma"
+
+#: app/Services/Insights/Cards/Content/TopPostsCard.php:22
+msgid "Popular Posts"
+msgstr "Népszerű bejegyzések"
+
+#: app/Services/Insights/Cards/Content/TopPostsCard.php:27
+msgid ""
+"Posts created in the range, ranked by the comments and reactions they got in"
+" the range. Metric: content.top_posts."
+msgstr "Az időszak alatt létrehozott, az időszakban kapott hozzászólások és reakciók alapján rangsorolt bejegyzések. Metrika: content.top_posts."
+
+#: app/Services/Insights/Cards/Content/TopPostsCard.php:35
+#: app/Services/Insights/Cards/Content/UnansweredCard.php:38
+msgid "Author"
+msgstr "Szerző"
+
+#: app/Services/Insights/Cards/Content/TopPostsCard.php:36
+#: app/Services/Insights/Cards/Members/TopContributorsCard.php:34
+#: app/Services/Insights/Cards/Spaces/ComparisonCard.php:46
+msgid "Comments"
+msgstr "Hozzászólások"
+
+#: app/Services/Insights/Cards/Content/TopPostsCard.php:37
+msgid "Reactions"
+msgstr "Reakciók"
+
+#: app/Services/Insights/Cards/Content/TypesCard.php:24
+msgid "Content types"
+msgstr "Tartalomtípusok"
+
+#: app/Services/Insights/Cards/Content/TypesCard.php:29
+msgid ""
+"Posts created in the range by kind (text, survey, document, video and so "
+"on). Metric: content.types."
+msgstr "Az időszak alatt létrehozott bejegyzések típus szerint (szöveg, felmérés, dokumentum, videó stb.). Metrika: content.types."
+
+#: app/Services/Insights/Cards/Content/TypesCard.php:35
+msgid "Type"
+msgstr "Típus"
+
+#: app/Services/Insights/Cards/Content/UnansweredCard.php:23
+msgid "Unanswered posts"
+msgstr "Megválaszolatlan bejegyzések"
+
+#: app/Services/Insights/Cards/Content/UnansweredCard.php:28
+msgid ""
+"Posts from the last 30 days that nobody but the author has replied to after "
+"24 hours, newest first. Not limited to the selected range. Metric: "
+"response.unanswered."
+msgstr "Az elmúlt 30 nap bejegyzései, amelyekre 24 óra elteltével a szerzőn kívül senki sem válaszolt, a legújabbal kezdve. Nem korlátozódik a kiválasztott időszakra. Metrika: response.unanswered."
+
+#: app/Services/Insights/Cards/Content/UnansweredCard.php:39
+msgid "Posted"
+msgstr "Közzétéve"
+
+#: app/Services/Insights/Cards/Courses/LessonFunnelCard.php:24
+msgid "Lesson funnel"
+msgstr "Leckék teljesítési tölcsére"
+
+#: app/Services/Insights/Cards/Courses/LessonFunnelCard.php:29
+msgid ""
+"For the selected course (or the one with most students), the share of active"
+" students who completed each published lesson, in curriculum order. Metric: "
+"course.lesson_funnel."
+msgstr "A kiválasztott kurzus (vagy a legtöbb tanulóval rendelkező kurzus) aktív tanulóinak aránya, akik befejezték az egyes közzétett leckéket, a tananyagban meghatározott sorrendben. Metrika: course.lesson_funnel."
+
+#. translators: 1: course title, 2: number of students
+#: app/Services/Insights/Cards/Courses/LessonFunnelCard.php:41
+#, php-format
+msgid "%1$s · %2$d active students"
+msgstr "%1$s · %2$d aktív tanuló"
+
+#: app/Services/Insights/Cards/Courses/StudentsCard.php:22
+msgid "Students"
+msgstr "Tanulók"
+
+#: app/Services/Insights/Cards/Courses/StudentsCard.php:27
+msgid ""
+"Active students of the selected course (or the one with most students): the "
+"100 most recent enrollments, with progress as the course pages show it, the "
+"enrollment date and the completion date."
+msgstr "A kiválasztott kurzus (vagy a legtöbb tanulóval rendelkező kurzus) aktív tanulói: a 100 legutóbbi beiratkozás, a kurzusoldalakon látható előrehaladással, a beiratkozás dátumával és a befejezés dátumával."
+
+#: app/Services/Insights/Cards/Courses/StudentsCard.php:36
+msgid "Progress"
+msgstr "Előrehaladás"
+
+#: app/Services/Insights/Cards/Courses/StudentsCard.php:37
+msgid "Enrolled"
+msgstr "Beiratkozás"
+
+#: app/Services/Insights/Cards/Courses/StudentsCard.php:38
+msgid "Completed"
+msgstr "Befejezve"
+
+#: app/Services/Insights/Cards/Engagement/ActiveMembersCard.php:26
+msgid "Daily, weekly and monthly active members"
+msgstr "Napi, heti és havi aktív tagok"
+
+#: app/Services/Insights/Cards/Engagement/ActiveMembersCard.php:31
+msgid ""
+"Members active on the day, in the 7 days and in the 30 days ending on each "
+"date (rolling windows, not calendar weeks). For weeks and months the value "
+"at the end of the period is shown. Metrics: members.dau, members.wau, "
+"members.mau."
+msgstr "Az adott napon, az azt megelőző 7 napban és az azt megelőző 30 napban aktív tagok az egyes dátumokon (gördülő időszakok, nem naptári hetek). A hetek és hónapok esetében az időszak végi érték jelenik meg. Metrikák: members.dau, members.wau, members.mau."
+
+#: app/Services/Insights/Cards/Engagement/ActiveMembersCard.php:43
+msgid "Daily active"
+msgstr "Napi aktív"
+
+#: app/Services/Insights/Cards/Engagement/ActiveMembersCard.php:44
+msgid "Weekly active"
+msgstr "Heti aktív"
+
+#: app/Services/Insights/Cards/Engagement/ActiveMembersCard.php:45
+msgid "Monthly active"
+msgstr "Havi aktív"
+
+#: app/Services/Insights/Cards/Engagement/HeatmapCard.php:25
+msgid "When members are active"
+msgstr "Mikor aktívak a tagok"
+
+#: app/Services/Insights/Cards/Engagement/HeatmapCard.php:30
+msgid ""
+"Posts, comments, reactions and chat messages by weekday and hour, in the "
+"site timezone. Sign-ups and space creation are not counted. Metric: "
+"timing.heatmap."
+msgstr "Bejegyzések, hozzászólások, reakciók és csevegőüzenetek a hét napja és az óra szerint, a webhely időzónájában. A regisztrációk és a közösségi tér létrehozása nem számít bele. Metrika: timing.heatmap."
+
+#: app/Services/Insights/Cards/Engagement/ParticipationCard.php:26
+msgid "Participation tiers"
+msgstr "Részvételi szintek"
+
+#: app/Services/Insights/Cards/Engagement/ParticipationCard.php:31
+msgid ""
+"Members at the end of the range by how many posts and comments they wrote in"
+" it. Most communities follow a 90-9-1 shape: most members read without "
+"posting. Metric: participation.tiers."
+msgstr "A tagok száma az időszak végén aszerint, hogy hány bejegyzést és hozzászólást írtak az időszak alatt. A legtöbb közösségben a 90–9–1 arány jellemző: a legtöbb tag bejegyzés írása nélkül olvas. Metrika: participation.tiers."
+
+#: app/Services/Insights/Cards/Engagement/ParticipationCard.php:38
+msgid "No posts or comments"
+msgstr "Nincs bejegyzés vagy hozzászólás"
+
+#: app/Services/Insights/Cards/Engagement/ParticipationCard.php:39
+msgid "1 to 2"
+msgstr "1–2"
+
+#: app/Services/Insights/Cards/Engagement/ParticipationCard.php:40
+msgid "3 to 10"
+msgstr "3–10"
+
+#: app/Services/Insights/Cards/Engagement/ParticipationCard.php:41
+msgid "11 to 50"
+msgstr "11–50"
+
+#: app/Services/Insights/Cards/Engagement/ParticipationCard.php:42
+msgid "More than 50"
+msgstr "Több mint 50"
+
+#: app/Services/Insights/Cards/Engagement/ReplyTimesCard.php:26
+msgid "Time to first reply"
+msgstr "Az első válaszig eltelt idő"
+
+#: app/Services/Insights/Cards/Engagement/ReplyTimesCard.php:31
+msgid ""
+"Posts created in the range by how long they waited for a reply from someone "
+"else. Metric: response.buckets."
+msgstr "Az időszak alatt létrehozott bejegyzések aszerint, hogy mennyi ideig vártak valaki más válaszára. Metrika: response.buckets."
+
+#: app/Services/Insights/Cards/Engagement/ReplyTimesCard.php:38
+msgid "Under 1 hour"
+msgstr "1 órán belül"
+
+#: app/Services/Insights/Cards/Engagement/ReplyTimesCard.php:39
+msgid "1 to 4 hours"
+msgstr "1–4 óra"
+
+#: app/Services/Insights/Cards/Engagement/ReplyTimesCard.php:40
+msgid "4 to 24 hours"
+msgstr "4–24 óra"
+
+#: app/Services/Insights/Cards/Engagement/ReplyTimesCard.php:41
+msgid "1 to 3 days"
+msgstr "1–3 nap"
+
+#: app/Services/Insights/Cards/Engagement/ReplyTimesCard.php:42
+msgid "Over 3 days"
+msgstr "Több mint 3 nap"
+
+#: app/Services/Insights/Cards/Engagement/ReplyTimesCard.php:43
+msgid "No reply yet"
+msgstr "Még nincs válasz"
+
+#: app/Services/Insights/Cards/Engagement/ResponsivenessCard.php:24
+msgid "Stickiness and responsiveness"
+msgstr "Aktivitási arány és válaszkészség"
+
+#: app/Services/Insights/Cards/Engagement/ResponsivenessCard.php:29
+msgid ""
+"Stickiness is the average daily actives divided by monthly actives (10-25% "
+"is typical). Replies are the first comment by someone other than the author;"
+" posts younger than 24 hours are not judged yet. Metrics: "
+"members.stickiness, response.reply_rate, response.first_reply_median, "
+"response.within_24h."
+msgstr "Az aktivitási arány a napi aktív felhasználók átlagos számának és a havi aktív felhasználók számának hányadosa (a 10–25% jellemző). A válaszok az első, nem a szerzőtől érkező hozzászólást jelentik; a 24 óránál frissebb bejegyzések értékelése még nem történt meg. Mutatók: members.stickiness, response.reply_rate, response.first_reply_median, response.within_24h."
+
+#: app/Services/Insights/Cards/Engagement/ResponsivenessCard.php:40
+msgid "Stickiness"
+msgstr "Aktivitási arány"
+
+#: app/Services/Insights/Cards/Engagement/ResponsivenessCard.php:41
+#: app/Services/Insights/Cards/Spaces/ComparisonCard.php:49
+msgid "Posts answered"
+msgstr "Megválaszolt bejegyzések"
+
+#: app/Services/Insights/Cards/Engagement/ResponsivenessCard.php:42
+msgid "Median time to first reply"
+msgstr "Az első válaszig eltelt idő mediánja"
+
+#: app/Services/Insights/Cards/Engagement/ResponsivenessCard.php:43
+msgid "Answered within 24 hours"
+msgstr "24 órán belül megválaszolva"
+
+#: app/Services/Insights/Cards/Members/AtRiskCard.php:22
+msgid "At-risk regulars"
+msgstr "Veszélyeztetett törzstagok"
+
+#: app/Services/Insights/Cards/Members/AtRiskCard.php:27
+msgid ""
+"Members with 5 or more posts and comments in the 60 days before the last 30 "
+"days of the range, and no activity at all in those last 30 days. Metric: "
+"members.at_risk."
+msgstr "Azok a tagok, akik a tartomány utolsó 30 napját megelőző 60 napban legalább 5 bejegyzést írtak vagy hozzászólást fűztek hozzájuk, de az utolsó 30 napban egyáltalán nem voltak aktívak. Mutató: members.at_risk."
+
+#: app/Services/Insights/Cards/Members/AtRiskCard.php:35
+msgid "Earlier posts and comments"
+msgstr "Korábbi bejegyzések és hozzászólások"
+
+#: app/Services/Insights/Cards/Members/AtRiskCard.php:36
+msgid "Last contribution"
+msgstr "Utolsó közreműködés"
+
+#: app/Services/Insights/Cards/Members/CohortsCard.php:24
+msgid "Retention cohorts"
+msgstr "Megtartási kohorszok"
+
+#: app/Services/Insights/Cards/Members/CohortsCard.php:29
+msgid ""
+"Members grouped by the month they joined (up to 12 months in the range), and"
+" the share of each group active in each later month: M0 is the joining "
+"month. Active means contributed, or visited once visits are tracked. Metric:"
+" retention.cohorts."
+msgstr "A tagokat a csatlakozásuk hónapja szerint csoportosítja (a tartomány legfeljebb 12 hónapot fed le), és megmutatja az egyes csoportok későbbi hónapokban aktív tagjainak arányát: az M0 a csatlakozás hónapja. Az aktív tag hozzájárult a tartalomhoz, vagy – ha a látogatások követése be van kapcsolva – legalább egyszer meglátogatta az oldalt. Mutató: retention.cohorts."
+
+#: app/Services/Insights/Cards/Members/GrowthCard.php:26
+msgid "Growth"
+msgstr "Növekedés"
+
+#: app/Services/Insights/Cards/Members/GrowthCard.php:31
+msgid ""
+"New members per period, and active members at the end of each period, on "
+"separate scales. Metrics: members.new, members.total."
+msgstr "Az új tagok száma időszakonként, valamint az egyes időszakok végén aktív tagok száma, külön skálán. Mutatók: members.new, members.total."
+
+#: app/Services/Insights/Cards/Members/GrowthCard.php:40
+msgid "New Members"
+msgstr "Új tagok"
+
+#: app/Services/Insights/Cards/Members/GrowthCard.php:41
+msgid "Total Members"
+msgstr "Összes tag"
+
+#: app/Services/Insights/Cards/Members/HealthCard.php:24
+msgid "Activation and member status"
+msgstr "Aktiválás és a tagok állapota"
+
+#: app/Services/Insights/Cards/Members/HealthCard.php:29
+msgid ""
+"Share of new members who posted, commented or reacted within 7 days of "
+"joining (members younger than 7 days are not judged yet), the median time "
+"from joining to a first post, and member status now. Metrics: "
+"activation.first_contrib_7d, activation.time_to_first_post, members.total, "
+"members.pending."
+msgstr "Az új tagok azon aránya, akik a csatlakozásuktól számított 7 napon belül bejegyzést írtak, hozzászólást fűztek hozzá vagy reakciót adtak (a 7 napnál rövidebb ideje regisztrált tagok értékelése még nem történt meg), az első bejegyzésig eltelt idő mediánja, valamint a tagok aktuális állapota. Mutatók: activation.first_contrib_7d, activation.time_to_first_post, members.total, members.pending."
+
+#: app/Services/Insights/Cards/Members/HealthCard.php:42
+msgid "Activated within 7 days"
+msgstr "7 napon belül aktiválva"
+
+#: app/Services/Insights/Cards/Members/HealthCard.php:43
+msgid "Time to first post"
+msgstr "Az első bejegyzésig eltelt idő"
+
+#: app/Services/Insights/Cards/Members/HealthCard.php:44
+msgid "Active members"
+msgstr "Aktív tagok"
+
+#: app/Services/Insights/Cards/Members/HealthCard.php:45
+msgid "Pending Members"
+msgstr "Függőben lévő tagok"
+
+#: app/Services/Insights/Cards/Members/HealthCard.php:46
+msgid "Blocked members"
+msgstr "Letiltott tagok"
+
+#: app/Services/Insights/Cards/Members/TopContributorsCard.php:22
+msgid "Top contributors"
+msgstr "Legaktívabb közreműködők"
+
+#: app/Services/Insights/Cards/Members/TopContributorsCard.php:27
+msgid ""
+"Ranked by 3 x posts + 2 x comments + 1 x reactions given in the range. "
+"Reactions received are shown alongside. Metric: members.top_contributors."
+msgstr "A rangsor a tartományban írt bejegyzések számának háromszorosán, a hozzászólások számának kétszeresén, valamint a küldött reakciók számán alapul. A kapott reakciók is megjelennek. Mutató: members.top_contributors."
+
+#: app/Services/Insights/Cards/Members/TopContributorsCard.php:35
+msgid "Reactions given"
+msgstr "Küldött reakciók"
+
+#: app/Services/Insights/Cards/Members/TopContributorsCard.php:36
+msgid "Reactions received"
+msgstr "Kapott reakciók"
+
+#: app/Services/Insights/Cards/Members/TopContributorsCard.php:37
+msgid "Score"
+msgstr "Pontszám"
+
+#: app/Services/Insights/Cards/Moderation/OutcomeCard.php:26
+msgid "Outcome"
+msgstr "Eredmény"
+
+#: app/Services/Insights/Cards/Moderation/OutcomeCard.php:31
+msgid ""
+"Reports made in the range by their current status. Metric: "
+"mod.reports_received."
+msgstr "A tartományban létrehozott jelentések az aktuális állapotuk szerint. Mutató: mod.reports_received."
+
+#: app/Services/Insights/Cards/Moderation/OutcomeCard.php:38
+msgid "Flagged"
+msgstr "Megjelölve"
+
+#: app/Services/Insights/Cards/Moderation/OutcomeCard.php:39
+msgid "Pending"
+msgstr "Függőben"
+
+#: app/Services/Insights/Cards/Moderation/OutcomeCard.php:40
+msgid "Ignored"
+msgstr "Figyelmen kívül hagyva"
+
+#: app/Services/Insights/Cards/Moderation/OutcomeCard.php:41
+msgid "Restored"
+msgstr "Visszaállítva"
+
+#: app/Services/Insights/Cards/Moderation/OutcomeCard.php:42
+#: app/Services/Insights/Cards/Moderation/ReportsCard.php:42
+msgid "Removed"
+msgstr "Eltávolítva"
+
+#: app/Services/Insights/Cards/Moderation/QueueCard.php:23
+msgid "Is moderation keeping up?"
+msgstr "Tartja a lépést a moderálás?"
+
+#: app/Services/Insights/Cards/Moderation/QueueCard.php:28
+msgid ""
+"Reports still open and content waiting for review right now; for reports "
+"made in the range, the median time to the last action on them and the share "
+"that led to removal. Metrics: mod.open, mod.pending_content, "
+"mod.resolution_median, mod.actioned_rate."
+msgstr "A még nyitott jelentések és az ellenőrzésre váró tartalom aktuális száma; a tartományban létrehozott jelentések utolsó műveletéig eltelt idő mediánja, valamint az eltávolítással végződő jelentések aránya. Mutatók: mod.open, mod.pending_content, mod.resolution_median, mod.actioned_rate."
+
+#: app/Services/Insights/Cards/Moderation/QueueCard.php:39
+msgid "Open reports"
+msgstr "Nyitott jelentések"
+
+#: app/Services/Insights/Cards/Moderation/QueueCard.php:40
+msgid "Waiting for review"
+msgstr "Ellenőrzésre vár"
+
+#: app/Services/Insights/Cards/Moderation/QueueCard.php:41
+msgid "Time to resolve"
+msgstr "Megoldásig eltelt idő"
+
+#: app/Services/Insights/Cards/Moderation/QueueCard.php:42
+msgid "Removed after review"
+msgstr "Ellenőrzés után eltávolítva"
+
+#: app/Services/Insights/Cards/Moderation/ReportsCard.php:27
+msgid "Reports received"
+msgstr "Beérkezett jelentések"
+
+#: app/Services/Insights/Cards/Moderation/ReportsCard.php:32
+msgid ""
+"Reports made in each period, by where they stand now: still open, kept after"
+" review, or removed. Metric: mod.reports_received."
+msgstr "Az egyes időszakokban létrehozott jelentések az aktuális állapotuk szerint: még nyitottak, ellenőrzés után megtartottak vagy eltávolítottak. Mutató: mod.reports_received."
+
+#: app/Services/Insights/Cards/Moderation/ReportsCard.php:40
+msgid "Still open"
+msgstr "Még nyitott"
+
+#: app/Services/Insights/Cards/Moderation/ReportsCard.php:41
+msgid "Kept"
+msgstr "Megtartva"
+
+#: app/Services/Insights/Cards/Moderation/TopReportedCard.php:22
+msgid "Most reported members"
+msgstr "Legtöbbször jelentett tagok"
+
+#: app/Services/Insights/Cards/Moderation/TopReportedCard.php:27
+msgid ""
+"Authors whose posts were reported most in the range. Metric: "
+"mod.top_reported."
+msgstr "Azok a szerzők, akiknek a bejegyzéseit az időszakban a legtöbbször jelentették. Mutató: mod.top_reported."
+
+#: app/Services/Insights/Cards/ProCard.php:65
+msgid "Member"
+msgstr "Tag"
+
+#: app/Services/Insights/Cards/Spaces/ComparisonCard.php:24
+msgid "Space comparison"
+msgstr "Közösségi terek összehasonlítása"
+
+#: app/Services/Insights/Cards/Spaces/ComparisonCard.php:29
+msgid ""
+"Every space: members now, joins and leaves in the range (leaves are known "
+"from the day tracking started), posts and comments, members who took part, "
+"the share of members who took part, the share of posts answered, and the "
+"post trend. Metrics: space.members, space.joins, space.leaves, space.posts, "
+"space.comments, space.contributors, space.contributor_ratio, "
+"space.reply_rate."
+msgstr "Minden közösségi térnél: a tagok aktuális száma, az időszakban csatlakozott és kilépett tagok száma (a kilépések csak a követés elindításának napjától ismertek), a bejegyzések és hozzászólások száma, a részt vevő tagok száma, a részt vevő tagok aránya, a megválaszolt bejegyzések aránya és a bejegyzések alakulása. Mutatók: space.members, space.joins, space.leaves, space.posts, space.comments, space.contributors, space.contributor_ratio, space.reply_rate."
+
+#: app/Services/Insights/Cards/Spaces/ComparisonCard.php:41
+msgid "Space Name"
+msgstr "Tér neve"
+
+#: app/Services/Insights/Cards/Spaces/ComparisonCard.php:42
+msgid "Members"
+msgstr "Tagok"
+
+#: app/Services/Insights/Cards/Spaces/ComparisonCard.php:43
+msgid "Joins"
+msgstr "Csatlakozások"
+
+#: app/Services/Insights/Cards/Spaces/ComparisonCard.php:44
+msgid "Leaves"
+msgstr "Kilépések"
+
+#: app/Services/Insights/Cards/Spaces/ComparisonCard.php:47
+msgid "Contributors"
+msgstr "Közreműködők"
+
+#: app/Services/Insights/Cards/Spaces/ComparisonCard.php:48
+msgid "Took part"
+msgstr "Részvételi arány"
+
+#: app/Services/Insights/Cards/Spaces/ComparisonCard.php:50
+msgid "Trend"
+msgstr "Trend"
+
+#: app/Services/Integrations/FluentCRM/AddBadgeAction.php:26
+msgid "Add Badge To User"
+msgstr "Jelvény hozzáadása a felhasználóhoz"
+
+#: app/Services/Integrations/FluentCRM/AddBadgeAction.php:27
+msgid "Add Badge to user's profile"
+msgstr "Jelvény hozzáadása a felhasználó profiljához"
+
+#: app/Services/Integrations/FluentCRM/AddBadgeAction.php:49
+#: app/Services/Integrations/FluentCRM/AddOrRemoveVerificationAction.php:38
+msgid "Add Badges to user profile"
+msgstr "Jelvények hozzáadása a felhasználó profiljához"
+
+#: app/Services/Integrations/FluentCRM/AddBadgeAction.php:50
+#: app/Services/Integrations/FluentCRM/AddOrRemoveVerificationAction.php:39
+msgid "Add Badges to the user profile"
+msgstr "Jelvények hozzáadása a felhasználó profiljához"
+
+#: app/Services/Integrations/FluentCRM/AddBadgeAction.php:54
+#: app/Services/Integrations/FluentCRM/RemoveBadgeAction.php:50
+msgid "Select Badges"
+msgstr "Jelvények kiválasztása"
+
+#: app/Services/Integrations/FluentCRM/AddBadgeAction.php:60
+msgid "Replace existing badges"
+msgstr "Meglévő jelvények cseréje"
+
+#: app/Services/Integrations/FluentCRM/AddBadgeAction.php:61
+msgid ""
+"If you enable this, existing badges will be replaced from the user profile"
+msgstr "Ha ezt bekapcsolod, a felhasználó profilján lévő meglévő jelvények lecserélődnek"
+
+#: app/Services/Integrations/FluentCRM/AddBadgeAction.php:65
+#: app/Services/Integrations/FluentCRM/AddOrRemoveVerificationAction.php:57
+#: app/Services/Integrations/FluentCRM/AddToCourseAction.php:52
+#: app/Services/Integrations/FluentCRM/AddToSpaceAction.php:69
+msgid ""
+"A new WordPress user will be created if the contact does not have a connect "
+"WP User."
+msgstr "Új WordPress-felhasználó jön létre, ha a névjegyhez nincs csatlakoztatott WP-felhasználó."
+
+#: app/Services/Integrations/FluentCRM/AddBadgeAction.php:70
+#: app/Services/Integrations/FluentCRM/AddOrRemoveVerificationAction.php:62
+#: app/Services/Integrations/FluentCRM/AddToCourseAction.php:57
+#: app/Services/Integrations/FluentCRM/AddToSpaceAction.php:74
+msgid "Send WordPress Welcome Email for new WP Users"
+msgstr "WordPress üdvözlő e-mail küldése új WP-felhasználóknak"
+
+#: app/Services/Integrations/FluentCRM/AddBadgeAction.php:71
+#: app/Services/Integrations/FluentCRM/AddOrRemoveVerificationAction.php:63
+#: app/Services/Integrations/FluentCRM/AddToCourseAction.php:58
+#: app/Services/Integrations/FluentCRM/AddToSpaceAction.php:75
+msgid ""
+"If you enable this, the newly created user will get the welcome email sent "
+"by WordPress with the login info & password reset link"
+msgstr "Ha ezt bekapcsolod, az újonnan létrehozott felhasználó megkapja a WordPress által küldött üdvözlő e-mailt, amely tartalmazza a belépési adatokat és a jelszó-visszaállító linket"
+
+#: app/Services/Integrations/FluentCRM/AddBadgeAction.php:114
+#: app/Services/Integrations/FluentCRM/AddOrRemoveVerificationAction.php:104
+#: app/Services/Integrations/FluentCRM/RemoveBadgeAction.php:76
+msgid "User does not have an XProfile"
+msgstr "A felhasználónak nincs XProfile-ja"
+
+#: app/Services/Integrations/FluentCRM/AddOrRemoveVerificationAction.php:25
+msgid "Add or Remove Verification Sign (Blue Badge) To User"
+msgstr "A felhasználó ellenőrző jelének (kék jelvényének) hozzáadása vagy eltávolítása"
+
+#: app/Services/Integrations/FluentCRM/AddOrRemoveVerificationAction.php:26
+msgid "Add or Remove Verification Sign (Blue Badge) user's profile"
+msgstr "Ellenőrző jel (kék jelvény) hozzáadása a felhasználó profiljához vagy eltávolítása onnan"
+
+#: app/Services/Integrations/FluentCRM/AddOrRemoveVerificationAction.php:43
+msgid "Select Verification Badge"
+msgstr "Ellenőrző jelvény kiválasztása"
+
+#: app/Services/Integrations/FluentCRM/AddOrRemoveVerificationAction.php:47
+msgid "Add Verification Sign (Blue Badge)"
+msgstr "Ellenőrző jel (kék jelvény) hozzáadása"
+
+#: app/Services/Integrations/FluentCRM/AddOrRemoveVerificationAction.php:51
+msgid "Remove Verification Sign (Blue Badge)"
+msgstr "Ellenőrző jel (kék jelvény) eltávolítása"
+
+#: app/Services/Integrations/FluentCRM/AddToCourseAction.php:26
+#: app/Services/Integrations/FluentCRM/AddToCourseAction.php:42
+msgid "Enroll to Courses"
+msgstr "Kurzusokra való beiratkozás"
+
+#: app/Services/Integrations/FluentCRM/AddToCourseAction.php:27
+msgid "Add user to the selected courses"
+msgstr "Add hozzá a felhasználót a kiválasztott kurzusokhoz"
+
+#: app/Services/Integrations/FluentCRM/AddToCourseAction.php:43
+msgid "Add user to the selected Courses"
+msgstr "Add hozzá a felhasználót a kiválasztott kurzusokhoz"
+
+#: app/Services/Integrations/FluentCRM/AddToCourseAction.php:47
+#: app/Services/Integrations/FluentCRM/RemoveFromCourseAction.php:44
+msgid "Select Courses"
+msgstr "Kurzusok kiválasztása"
+
+#: app/Services/Integrations/FluentCRM/AddToCourseAction.php:99
+msgid "Skipped because no course found or the user is already enrolled"
+msgstr "Kihagyva, mert nem található kurzus, vagy a felhasználó már beiratkozott."
+
+#: app/Services/Integrations/FluentCRM/AddToSpaceAction.php:26
+#: app/Services/Integrations/FluentCRM/AddToSpaceAction.php:59
+#: app/Services/Integrations/FluentCRM/SpaceMembershipStatusChangeAction.php:34
+msgid "Add to Space"
+msgstr "Hozzáadás a közösségi térhez"
+
+#: app/Services/Integrations/FluentCRM/AddToSpaceAction.php:27
+msgid "Add user to a space"
+msgstr "Felhasználó hozzáadása egy közösségi térhez"
+
+#: app/Services/Integrations/FluentCRM/AddToSpaceAction.php:60
+msgid "Add user to the selected spaces"
+msgstr "Add hozzá a felhasználót a kiválasztott terekhez"
+
+#: app/Services/Integrations/FluentCRM/AddToSpaceAction.php:64
+#: app/Services/Integrations/FluentCRM/SpaceLeaveTrigger.php:81
+msgid "Select Spaces"
+msgstr "Közösségi terek kiválasztása"
+
+#: app/Services/Integrations/FluentCRM/CommunitySmartCodes.php:179
+msgid "Enrolled Course"
+msgstr "A kurzus, amelyre beiratkozott"
+
+#: app/Services/Integrations/FluentCRM/CommunitySmartCodes.php:188
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:53
+msgid "Space Membership"
+msgstr "Tagság a közösségi térben"
+
+#: app/Services/Integrations/FluentCRM/CommunitySmartCodes.php:200
+msgid "Membership Space Names (Comma Separated)"
+msgstr "A közösségi terek nevei, amelyeknek a felhasználó tagja (vesszővel elválasztva)"
+
+#: app/Services/Integrations/FluentCRM/CommunitySmartCodes.php:201
+msgid "Membership Space Names with links (list)"
+msgstr "A közösségi terek nevei, amelyeknek a felhasználó tagja (linkekkel, listában)"
+
+#: app/Services/Integrations/FluentCRM/CommunitySmartCodes.php:205
+msgid "Enrolled Course Names (Comma Separated)"
+msgstr "A kurzusok nevei, amelyekre a felhasználó beiratkozott (vesszővel elválasztva)"
+
+#: app/Services/Integrations/FluentCRM/CommunitySmartCodes.php:206
+msgid "Enrolled Course Names with links (list)"
+msgstr "A kurzusok nevei, amelyekre a felhasználó beiratkozott (linkekkel, listában)"
+
+#: app/Services/Integrations/FluentCRM/CommunitySmartCodes.php:214
+msgid "Current Course Title"
+msgstr "Jelenlegi kurzus címe"
+
+#: app/Services/Integrations/FluentCRM/CommunitySmartCodes.php:215
+msgid "Current Course Title with Hyperlink"
+msgstr "Jelenlegi kurzus címe hiperhivatkozással"
+
+#: app/Services/Integrations/FluentCRM/CommunitySmartCodes.php:216
+msgid "HTTP Link of the current course"
+msgstr "Az aktuális kurzus HTTP-linkje"
+
+#: app/Services/Integrations/FluentCRM/CommunitySmartCodes.php:220
+msgid "Current Space Title"
+msgstr "Jelenlegi tér címe"
+
+#: app/Services/Integrations/FluentCRM/CommunitySmartCodes.php:221
+msgid "Current Space Title with Hyperlink"
+msgstr "Aktuális közösségi tér címe linkként"
+
+#: app/Services/Integrations/FluentCRM/CommunitySmartCodes.php:222
+msgid "HTTP Link of the current Space"
+msgstr "Az aktuális közösségi tér HTTP-linkje"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:67
+msgid "Course Enrollment"
+msgstr "Kurzusra való beiratkozás"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:148
+msgid "[FluentCommunity] Add to Space"
+msgstr "[FluentCommunity] Add hozzá a térhez"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:150
+msgid "Add to selected Space"
+msgstr "Hozzáadás a kiválasztott térhez"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:153
+msgid "Will apply to the contacts who are already a registered Site User"
+msgstr "Azokra a névjegyekre vonatkozik, akik már regisztrált felhasználók a webhelyen"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:157
+msgid "[FluentCommunity] Remove from a Space"
+msgstr "[FluentCommunity] Távolítsd el egy térből"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:159
+msgid "Remove from selected Space"
+msgstr "Eltávolítás a kiválasztott térből"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:172
+msgid "[FluentCommunity] Add to Course"
+msgstr "[FluentCommunity] Add hozzá a kurzushoz"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:174
+msgid "Add to selected Course"
+msgstr "Hozzáadás a kiválasztott kurzushoz"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:180
+msgid "[FluentCommunity] Remove from Course"
+msgstr "[FluentCommunity] Távolítsd el a kurzusból"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:182
+msgid "Remove from selected Course"
+msgstr "Eltávolítás a kiválasztott kurzusból"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:197
+msgid "[FluentCommunity] Add Badge to Profile"
+msgstr "[FluentCommunity] Jelvény hozzáadása a profilhoz"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:199
+msgid "Add Selected Badges to users"
+msgstr "A kiválasztott jelvények hozzáadása a felhasználókhoz"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:205
+msgid "[FluentCommunity] Remove Badge from Profile"
+msgstr "[FluentCommunity] Jelvény eltávolítása a profilból"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:207
+msgid "Remove Selected Badges from users"
+msgstr "A kiválasztott jelvények eltávolítása a felhasználóktól"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:253
+msgid "Selected registered users have been added to the space successfully"
+msgstr "A kiválasztott regisztrált felhasználókat sikeresen hozzáadtuk a közösségi térhez"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:294
+msgid "The Badge has been added to the selected users"
+msgstr "A kitűző hozzá lett adva a kiválasztott felhasználókhoz"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:337
+msgid "The Badge has been removed from the selected users"
+msgstr "A kitűző el lett távolítva a kiválasztott felhasználóktól"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:373
+msgid "Selected users have been removed from the space successfully"
+msgstr "Sikeresen eltávolítottuk a kiválasztott felhasználókat a közösségi térből"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:401
+msgid "Selected registered users have been added to the course successfully"
+msgstr "A kiválasztott regisztrált felhasználókat sikeresen hozzáadtuk a kurzushoz"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:429
+msgid ""
+"Selected registered users have been removed from the course successfully"
+msgstr "A kiválasztott regisztrált felhasználókat sikeresen eltávolítottuk a kurzusból"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:463
+msgid "CRM Profile"
+msgstr "CRM-profil"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:466
+msgid "View Contact"
+msgstr "Kapcsolat megtekintése"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:478
+msgid "Lifetime Value"
+msgstr "Élettartamérték"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:490
+msgid "Lists"
+msgstr "Listák"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:502
+msgid "Tags"
+msgstr "Címkék"
+
+#: app/Services/Integrations/FluentCRM/ContactAdvancedFilter.php:513
+msgid "Visible for admin only"
+msgstr "Csak az adminisztrátor számára látható"
+
+#: app/Services/Integrations/FluentCRM/CourseLeaveTrigger.php:25
+#: app/Services/Integrations/FluentCRM/CourseLeaveTrigger.php:35
+msgid "Unenrolled from a course"
+msgstr "Leiratkozott egy kurzusról"
+
+#: app/Services/Integrations/FluentCRM/CourseLeaveTrigger.php:26
+#: app/Services/Integrations/FluentCRM/CourseLeaveTrigger.php:36
+msgid "This automation will be initiated when a user unenroll from a course."
+msgstr "Ez az automatizmus akkor indul el, amikor egy felhasználó leiratkozik egy kurzusról."
+
+#: app/Services/Integrations/FluentCRM/CourseLeaveTrigger.php:47
+msgid "An Automated double-opt-in email will be sent for new subscribers"
+msgstr "Automatikus dupla feliratkozás-megerősítő e-mailt küldünk az új feliratkozóknak"
+
+#: app/Services/Integrations/FluentCRM/CourseLeaveTrigger.php:79
+msgid "Targeted Courses"
+msgstr "Célzott kurzusok"
+
+#: app/Services/Integrations/FluentCRM/CourseLeaveTrigger.php:80
+msgid "Select which courses this automation is for."
+msgstr "Válaszd ki, mely kurzusokra vonatkozik ez az automatizmus."
+
+#: app/Services/Integrations/FluentCRM/CourseLeaveTrigger.php:81
+msgid "Select Communities"
+msgstr "Válassz közösségeket"
+
+#: app/Services/Integrations/FluentCRM/CourseLeaveTrigger.php:83
+msgid "Leave blank to run for any courses"
+msgstr "Hagyd üresen, hogy bármely kurzusnál fusson"
+
+#: app/Services/Integrations/FluentCRM/RemoveBadgeAction.php:24
+msgid "Remove Community Badge"
+msgstr "Közösségi jelvény eltávolítása"
+
+#: app/Services/Integrations/FluentCRM/RemoveBadgeAction.php:25
+msgid "Remove Badge from user's profile"
+msgstr "Jelvény eltávolítása a felhasználó profiljából"
+
+#: app/Services/Integrations/FluentCRM/RemoveBadgeAction.php:45
+msgid "Remove Badges from user profile"
+msgstr "Jelvények eltávolítása a felhasználói profilból"
+
+#: app/Services/Integrations/FluentCRM/RemoveBadgeAction.php:46
+msgid "Remove Badges from the user profile"
+msgstr "Jelvények eltávolítása a felhasználói profilból"
+
+#: app/Services/Integrations/FluentCRM/RemoveFromCourseAction.php:24
+msgid "Remove Courses"
+msgstr "Kurzusok eltávolítása"
+
+#: app/Services/Integrations/FluentCRM/RemoveFromCourseAction.php:25
+msgid "Remove user from the selected courses"
+msgstr "Távolítsd el a felhasználót a kiválasztott kurzusokból"
+
+#: app/Services/Integrations/FluentCRM/RemoveFromCourseAction.php:39
+msgid "Remove from Courses"
+msgstr "Eltávolítás kurzusokból"
+
+#: app/Services/Integrations/FluentCRM/RemoveFromCourseAction.php:40
+msgid "Remove user to the selected Courses"
+msgstr "Távolítsd el a felhasználót a kiválasztott kurzusokból"
+
+#: app/Services/Integrations/FluentCRM/RemoveFromCourseAction.php:64
+#: app/Services/Integrations/FluentCRM/RemoveFromSpaceAction.php:68
+#: app/Services/Integrations/FluentCRM/SpaceMembershipStatusChangeAction.php:72
+msgid "Skipped because no user found"
+msgstr "Kihagyva, mert nem található felhasználó"
+
+#: app/Services/Integrations/FluentCRM/RemoveFromCourseAction.php:74
+msgid ""
+"Skipped because no course found or the user does not have the enrollments"
+msgstr "Kihagyva, mert nem található kurzus, vagy a felhasználónak nincs beiratkozása"
+
+#: app/Services/Integrations/FluentCRM/RemoveFromSpaceAction.php:24
+#: app/Services/Integrations/FluentCRM/RemoveFromSpaceAction.php:39
+msgid "Remove from Space"
+msgstr "Eltávolítás egy térből"
+
+#: app/Services/Integrations/FluentCRM/RemoveFromSpaceAction.php:25
+msgid "Remove user from the Space"
+msgstr "Távolítsd el a felhasználót a térből"
+
+#: app/Services/Integrations/FluentCRM/RemoveFromSpaceAction.php:40
+msgid "Remove user from the selected Space"
+msgstr "Távolítsd el a felhasználót a kiválasztott térből"
+
+#: app/Services/Integrations/FluentCRM/RemoveFromSpaceAction.php:49
+msgid ""
+"Only if contact is already a WordPress user and is in the selected space "
+"then this action will run."
+msgstr "Ez a művelet csak akkor fut le, ha a névjegy már WordPress-felhasználó, és a kiválasztott térben van."
+
+#: app/Services/Integrations/FluentCRM/SpaceLeaveTrigger.php:25
+#: app/Services/Integrations/FluentCRM/SpaceLeaveTrigger.php:35
+msgid "Left from a Space"
+msgstr "Kilépett egy térből"
+
+#: app/Services/Integrations/FluentCRM/SpaceLeaveTrigger.php:26
+msgid "This automation will be initiated when a user leaves a Space."
+msgstr "Ez az automatizmus akkor indul el, amikor egy felhasználó kilép egy térből."
+
+#: app/Services/Integrations/FluentCRM/SpaceLeaveTrigger.php:36
+msgid "This automation will be initiated when a user leaves a Space"
+msgstr "Ez az automatizmus akkor indul el, amikor egy felhasználó kilép egy térből"
+
+#: app/Services/Integrations/FluentCRM/SpaceLeaveTrigger.php:79
+msgid "Targeted Spaces"
+msgstr "Célzott terek"
+
+#: app/Services/Integrations/FluentCRM/SpaceLeaveTrigger.php:80
+msgid "Select which spcaes this automation funnel is for."
+msgstr "Válaszd ki, mely terekre vonatkozik ez az automatizálási folyamat"
+
+#: app/Services/Integrations/FluentCRM/SpaceLeaveTrigger.php:83
+msgid "Leave blank to run for any Spaces"
+msgstr "Hagyd üresen, hogy bármely térnél fusson"
+
+#: app/Services/Integrations/FluentCRM/SpaceLeaveTrigger.php:88
+msgid ""
+"Restart automation multiple times for a contact for this event. (Enable only"
+" if you want to restart automation for the same contact.)"
+msgstr "Indítsd újra az automatizmust többször is ennél az eseménynél egy névjegy esetében. (Csak akkor engedélyezd, ha ugyanannál a névjegynél újra szeretnéd indítani az automatizmust.)"
+
+#: app/Services/Integrations/FluentCRM/SpaceMembershipStatusChangeAction.php:22
+msgid "Change Space Membership Status"
+msgstr "Tér tagsági állapotának módosítása"
+
+#: app/Services/Integrations/FluentCRM/SpaceMembershipStatusChangeAction.php:23
+msgid "Activate or Block a user from a Space"
+msgstr "Egy felhasználó tagságának bekapcsolása vagy letiltása egy térben"
+
+#: app/Services/Integrations/FluentCRM/SpaceMembershipStatusChangeAction.php:35
+msgid "Add user to the selected Space"
+msgstr "Felhasználó hozzáadása a kiválasztott térhez"
+
+#: app/Services/Integrations/FluentCRM/SpaceMembershipStatusChangeAction.php:39
+msgid "New Status"
+msgstr "Új állapot"
+
+#: app/Services/Integrations/FluentCRM/SpaceMembershipStatusChangeAction.php:43
+msgid "Active (Can access to the portal)"
+msgstr "Aktív (hozzáfér a portálhoz)"
+
+#: app/Services/Integrations/FluentCRM/SpaceMembershipStatusChangeAction.php:47
+msgid "Pending (Require Admin Approval)"
+msgstr "Függőben (adminisztrátori jóváhagyást igényel)"
+
+#: app/Services/Integrations/FluentCRM/SpaceMembershipStatusChangeAction.php:51
+msgid "Blocked (Can not access to the portal)"
+msgstr "Letiltva (nem fér hozzá a portálhoz)"
+
+#: app/Services/ModerationService.php:129
+msgid "Member is under moderation"
+msgstr "A tag moderálás alatt áll"
+
+#: app/Services/ModerationService.php:143
+#, php-format
+msgid "Word: %s"
+msgstr "Szó: %s"
+
+#: app/Services/ModerationService.php:166
+msgid "Global moderation settings require review"
+msgstr "A globális moderálási beállítások felülvizsgálatot igényelnek"
+
+#: app/Services/ModerationService.php:173
+msgid "Space moderation settings require review"
+msgstr "A tér moderálási beállításai felülvizsgálatot igényelnek"
+
+#: app/Services/ModerationService.php:180
+msgid "First post requires approval"
+msgstr "Az első bejegyzés jóváhagyást igényel"
+
+#: app/Services/ModerationService.php:208
+msgid "First comment requires approval"
+msgstr "Az első hozzászólás jóváhagyást igényel"
+
+#: app/Services/PluginManager/FluentLicensing.php:316
+msgid "license has been"
+msgstr "licenc"
+
+#: app/Services/PluginManager/FluentLicensing.php:316
+msgid "expired at"
+msgstr "lejárt ekkor"
+
+#: app/Services/PluginManager/FluentLicensing.php:317
+msgid "Click Here to Renew Your License"
+msgstr "Kattints ide a licenc megújításához"
+
+#: app/Services/PluginManager/PluginUpdater.php:74
+msgid "Check Update"
+msgstr "Frissítés ellenőrzése"
+
+#: app/Services/PluginManager/PluginUpdater.php:210
+msgid "No data found for this plugin"
+msgstr "Nem találhatók adatok ehhez a bővítményhez"
+
+#: app/Services/PluginManager/UpdateVerifier.php:227
+msgid ""
+"The downloaded update does not match its signature, so it was not installed."
+" Please try again, and contact support if this keeps happening."
+msgstr "A letöltött frissítés nem egyezik az aláírásával, ezért nem lett telepítve. Próbáld újra, és fordulj a támogatáshoz, ha a probléma továbbra is fennáll."
+
+#: app/Services/PluginManager/UpdateVerifier.php:249
+msgid "The update manifest is malformed, so the update was not installed."
+msgstr "A frissítési jegyzék hibás, ezért a frissítés nem lett telepítve."
+
+#: app/Services/PluginManager/UpdateVerifier.php:256
+msgid ""
+"This update is not signed by WPManageNinja, so it was not installed. Please "
+"contact support before installing it by hand."
+msgstr "Ezt a frissítést nem a WPManageNinja írta alá, ezért nem lett telepítve. Mielőtt kézzel telepítenéd, fordulj a támogatáshoz."
+
+#: app/Services/PluginManager/UpdateVerifier.php:262
+msgid ""
+"This update package is for a different plugin, so it was not installed."
+msgstr "Ez a frissítőcsomag egy másik bővítményhez készült, ezért nem lett telepítve."
+
+#: app/Services/PluginManager/UpdateVerifier.php:266
+msgid "The update manifest has no version, so the update was not installed."
+msgstr "A frissítési jegyzékben nincs verzió, ezért a frissítés nem lett telepítve."
+
+#: app/Services/PluginManager/UpdateVerifier.php:279
+msgid ""
+"The offered update is older than the version advertised, so it was not "
+"installed."
+msgstr "A felajánlott frissítés régebbi a meghirdetett verziónál, ezért nem lett telepítve."
+
+#. translators: 1: offered version number, 2: installed version number
+#: app/Services/PluginManager/UpdateVerifier.php:288
+#, php-format
+msgid ""
+"The server offered version %1$s, which is older than the installed %2$s, so "
+"it was not installed."
+msgstr "A szerver a(z) %1$s verziót ajánlotta fel, amely régebbi a telepített %2$s verziónál, ezért nem lett telepítve."
+
+#: app/Services/PluginManager/UpdateVerifier.php:295
+msgid ""
+"The update manifest has no valid checksum, so the update was not installed."
+msgstr "A frissítési jegyzékben nincs érvényes ellenőrzőösszeg, ezért a frissítés nem lett telepítve."
+
+#: app/Services/PluginManager/UpdateVerifier.php:315
+msgid ""
+"This update was served without a signature, so it was not installed. Please "
+"try again later, and contact support if this keeps happening."
+msgstr "Ezt a frissítést aláírás nélkül tették elérhetővé, ezért nem lett telepítve. Próbáld újra később, és fordulj a támogatáshoz, ha a probléma továbbra is fennáll."
+
+#: app/Services/PluginManager/UpdateVerifier.php:321
+msgid ""
+"The update manifest could not be read, so the update was not installed."
+msgstr "A frissítési jegyzék nem olvasható, ezért a frissítés nem lett telepítve."
+
+#: app/Services/ProfileFieldsService.php:25
+msgid "Additional Information"
+msgstr "További információ"
+
+#: app/Services/ProfileFieldsService.php:26
+msgid "Fill in additional information about yourself."
+msgstr "Adj meg magadról további adatokat."
+
+#: app/Services/ProfileFieldsService.php:61
+msgid "Text"
+msgstr "Szöveg"
+
+#: app/Services/ProfileFieldsService.php:62
+msgid "Textarea"
+msgstr "Szövegmező"
+
+#: app/Services/ProfileFieldsService.php:63
+msgid "Number"
+msgstr "Szám"
+
+#: app/Services/ProfileFieldsService.php:64
+msgid "Date"
+msgstr "Dátum"
+
+#: app/Services/ProfileFieldsService.php:65
+msgid "Dropdown"
+msgstr "Legördülő menü"
+
+#: app/Services/ProfileFieldsService.php:66
+msgid "Radio"
+msgstr "Választógomb"
+
+#: app/Services/ProfileFieldsService.php:67
+msgid "URL"
+msgstr "URL"
+
+#: app/Services/ProfileFieldsService.php:68
+msgid "Multi Select"
+msgstr "Többszörös kijelölés"
+
+#: app/Services/ProfileFieldsService.php:167
+#, php-format
+msgid "%s is required"
+msgstr "%s megadása kötelező"
+
+#: app/Services/ProHelper.php:271
+msgid "Section Title"
+msgstr "Szakasz címe"
+
+#: app/Services/ProHelper.php:272
+msgid "Section URL"
+msgstr "Szakasz URL-je"
+
+#: app/Services/ProHelper.php:273
+msgid "Course Title"
+msgstr "Kurzus címe"
+
+#: app/Services/ProHelper.php:274
+msgid "User Name"
+msgstr "Felhasználó neve"
+
+#: app/Services/ProHelper.php:275
+msgid "Site Name"
+msgstr "Webhely neve"
+
+#: app/Services/ProHelper.php:276
+msgid "Site Name with URL"
+msgstr "Webhely neve URL-lel"
+
+#: app/Services/ProHelper.php:283
+msgid "{{section.title}} is now available for you in {{course.title}}"
+msgstr "A {{section.title}} mostantól elérhető számodra a(z) {{course.title}} című kurzusban"
+
+#: app/Services/ProHelper.php:284
+msgid ""
+"Hi {{user.display_name}},\n"
+"\n"
+"{{section.title}} is now available to you in {{course.title}}.\n"
+"To complete this section, please follow this link:\n"
+"{{section.url}},\n"
+"\n"
+"Thanks,\n"
+"{{community.name_with_url}}"
+msgstr "Szia, {{user.display_name}}!\n\nA {{section.title}} mostantól elérhető számodra a(z) {{course.title}} című kurzusban.\nA szakasz befejezéséhez kövesd ezt a linket:\n{{section.url}},\n\nKöszönjük,\n{{community.name_with_url}}"

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Bloom 1.3.12\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19 10:31+0200\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -61,9 +61,7 @@ msgstr "- Nem tudjuk meghatározni a beállítását. %1$s"
 msgid ""
 "<a href=\"%1$s\">Please update WordPress</a>, and then <a "
 "href=\"%2$s\">learn more about updating PHP</a>."
-msgstr ""
-"<a href=\"%1$s\">Kérjük, frissítse a WordPress-t</a>, majd <a "
-"href=\"%2$s\">tudjon meg többet a PHP frissítéséről</a>."
+msgstr "<a href=\"%1$s\">Kérjük, frissítse a WordPress-t</a>, majd <a href=\"%2$s\">további tudnivalók a PHP frissítéséről</a>."
 
 #: core/components/CompatibilityWarning.php:256
 #: core/components/CompatibilityWarning.php:354
@@ -148,11 +146,7 @@ msgid ""
 "<p class=\"et-safe-mode-error\">Plugins cannot be disabled because your "
 "<code>wp-content</code> directory has inconsistent file permissions. <a "
 "href=\"%1$s\" target=\"_blank\">Click here</a> for more information.</p>"
-msgstr ""
-"<p class=\"et-safe-mode-error\">A bővítmények nem tilthatók le, mert a "
-"<code>wp-content</code> könyvtárban nem egységesek a fájljogosultságok. <a "
-"href=\"%1$s\" target=\"_blank\">Kattintson ide</a> további "
-"információért.</p>"
+msgstr "<p class=\"et-safe-mode-error\">A bővítményeket nem lehet kikapcsolni, mert a <code>wp-content</code> könyvtárban nem egységesek a fájljogosultságok. <a href=\"%1$s\" target=\"_blank\">Kattintson ide</a> további információért.</p>"
 
 #: core/components/SupportCenter.php:2843
 msgid ""
@@ -161,13 +155,7 @@ msgid ""
 "can also enable full admin privileges. Remote Access should only be turned "
 "on if requested by the Elegant Themes support team. Remote Access is "
 "automatically disabled after 4 days.</p>"
-msgstr ""
-"<p>A <strong>Távoli hozzáférés</strong> engedélyezése korlátozott "
-"hozzáférést ad az Elegant Themes ügyfélszolgálati csapatának a WordPress "
-"Vezérlőpulthoz. Kérésre teljes adminisztrátori jogosultságokat is "
-"engedélyezhet. A Távoli hozzáférést csak az Elegant Themes "
-"ügyfélszolgálatának kérésére szabad bekapcsolni. A Távoli hozzáférés 4 nap "
-"után automatikusan letiltásra kerül.</p>"
+msgstr "<p>A <strong>Távoli hozzáférés</strong> bekapcsolása korlátozott hozzáférést biztosít az Elegant Themes támogatási csapatának a WordPress vezérlőpultjához. Kérésre teljes adminisztrátori jogosultságokat is bekapcsolhat. A Távoli hozzáférést csak az Elegant Themes támogatási csapatának kérésére kapcsolja be. A Távoli hozzáférés 4 nap után automatikusan kikapcsol.</p>"
 
 #: core/components/SupportCenter.php:3020
 msgid ""
@@ -178,16 +166,7 @@ msgid ""
 "session so your visitors will not be disrupted. Enabling Safe Mode makes it "
 "easy to figure out what is causing problems on your website by identifying "
 "or eliminating third party plugins and code as potential causes.</p>"
-msgstr ""
-"<p>A <strong>Biztonságos mód</strong> engedélyezése ideiglenesen letiltja "
-"azokat a funkciókat és bővítményeket, amelyek problémát okozhatnak az "
-"Elegant Themes termékével. Ez magában foglalja az összes bővítményt, a "
-"gyermek témákat és az integrációs területekhez hozzáadott egyéni kódot. Ezek"
-" az elemek csak az Ön aktuális felhasználói munkamenetére vonatkozóan "
-"kerülnek letiltásra, így a látogatók élményét nem zavarják. A Biztonságos "
-"mód engedélyezése megkönnyíti a problémák okának feltárását a webhelyén "
-"azáltal, hogy azonosítja vagy kizárja a lehetséges okok közül a harmadik "
-"féltől származó bővítményeket és kódot.</p>"
+msgstr "<p>A <strong>Biztonságos mód</strong> bekapcsolása ideiglenesen kikapcsolja azokat a funkciókat és bővítményeket, amelyek problémát okozhatnak az Elegant Themes termékével. Ez magában foglalja az összes bővítményt, a gyermeksablonokat és az integrációs területekhez hozzáadott egyéni kódot. Ezek az elemek csak az Ön aktuális felhasználói munkamenete alatt vannak kikapcsolva, így a látogatók nem tapasztalnak fennakadást. A Biztonságos mód bekapcsolásával könnyen kiderítheti, mi okozza a problémákat a honlapján: lehetséges okként azonosíthatja a harmadik féltől származó bővítményeket és kódot, vagy kizárhatja őket a lehetséges okok közül.</p>"
 
 #: core/components/CompatibilityWarning.php:1630
 #, php-format
@@ -277,7 +256,7 @@ msgstr "API-kulcs"
 
 #: core/components/api/email/ConvertKit.php:149
 msgid "API Secret"
-msgstr "API titkos kulcs"
+msgstr "API-titok"
 
 #: core/components/api/email/ActiveCampaign.php:130
 msgid "API URL"
@@ -341,7 +320,7 @@ msgstr "Aktiválás"
 #, php-format
 msgctxt "theme"
 msgid "Activate %s"
-msgstr "%s aktiválása"
+msgstr "Bekapcsolás: %s"
 
 #: core/components/SupportCenter.php:2916
 msgid "Activate Full Admin Privileges"
@@ -349,7 +328,7 @@ msgstr "Teljes adminisztrátori jogosultságok aktiválása"
 
 #: bloom.php:721
 msgid "Active Optins"
-msgstr "Aktív feliratkozó űrlapok"
+msgstr "Aktív feliratkozási űrlapok"
 
 #: core/components/CompatibilityWarning.php:715
 msgctxt "theme"
@@ -378,7 +357,7 @@ msgstr "Egyéni mezők hozzáadása a Bloom feliratkozó űrlapjaihoz"
 
 #: core/components/SupportCenter.php:1111
 msgid "Adding Email Accounts In Bloom"
-msgstr "E-mail fiókok hozzáadása a Bloomban"
+msgstr "E-mail-fiókok hozzáadása a Bloomhoz"
 
 #: core/components/SupportCenter.php:930
 msgid "Adding Social Networks"
@@ -430,10 +409,7 @@ msgid ""
 "Already have a Divi website hosted somewhere else? All of our hosting "
 "partners provide migration tools or professional assisted migration. It's "
 "easy to switch to Divi Hosting!"
-msgstr ""
-"Már máshol üzemelő Divi webhelye van? Tárhelypartnereink mindegyike biztosít"
-" költöztető eszközöket vagy szakértői segítséggel végzett migrációt. Könnyű "
-"váltani a Divi Hostingra!"
+msgstr "Már máshol üzemelő Divi-honlapja van? Tárhelypartnereink mindegyike biztosít áttelepítési eszközöket vagy szakértői segítséggel végzett áttelepítést. Könnyű váltani a Divi Hostingra!"
 
 #: core/components/api/email/Infusionsoft.php:396
 msgid "Already subscribed"
@@ -525,10 +501,7 @@ msgstr "Automatikus biztonsági mentések"
 msgid ""
 "Automatic staging sites make it easy to develop new designs for your clients"
 " without disrupting visitors. Finish your work and push it live all at once."
-msgstr ""
-"Az automatikus átmeneti (staging) webhelyek megkönnyítik az új dizájnok "
-"fejlesztését ügyfelei számára anélkül, hogy zavarnák a látogatókat. Fejezze "
-"be a munkát, és egyetlen lépésben tegye élessé."
+msgstr "Az automatikus tesztwebhelyek megkönnyítik, hogy a látogatók zavarása nélkül fejlesszen új megjelenéseket ügyfelei számára. Fejezze be a munkát, majd élesítse a webhelyet egyetlen lépésben."
 
 #: dashboard/dashboard.php:1133
 msgid "Automatically check categories created in future"
@@ -541,7 +514,7 @@ msgstr "Háttérszín"
 #: core/components/Portability.php:2222
 #, php-format
 msgid "Backup estimated time remaining: %smin"
-msgstr "Biztonsági mentés becsült hátralévő ideje: %sperc"
+msgstr "Biztonsági mentés becsült hátralévő ideje: %s perc"
 
 #: core/components/SupportCenter.php:3268
 msgid "Blazing Fast Speed"
@@ -549,7 +522,7 @@ msgstr "Villámgyors sebesség"
 
 #: dashboard/includes/options.php:889
 msgid "Blog Page"
-msgstr "Blog oldal"
+msgstr "Blogoldal"
 
 #: bloom.php:245 includes/bloom-widget.php:11
 msgid "Bloom"
@@ -661,7 +634,7 @@ msgstr "Nem lehet aktiválni"
 #, php-format
 msgctxt "theme"
 msgid "Cannot Activate %s"
-msgstr "Nem lehet aktiválni %s"
+msgstr "A(z) %s nem kapcsolható be"
 
 #: core/components/CompatibilityWarning.php:1539
 msgctxt "theme"
@@ -685,7 +658,7 @@ msgstr "Kategóriák"
 
 #: dashboard/includes/options.php:870
 msgid "Center"
-msgstr "Középre"
+msgstr "Közép"
 
 #: core/components/SupportCenter.php:2940
 msgid "Chat With Support"
@@ -693,7 +666,7 @@ msgstr "Csevegés az ügyfélszolgálattal"
 
 #: core/components/Updates.php:670
 msgid "Check Again"
-msgstr "Ellenőrizze újra"
+msgstr "Újraellenőrzés"
 
 #: core/components/api/email/Fields.php:119
 msgid "Checkboxes"
@@ -785,7 +758,7 @@ msgstr "Kompatibilitás a WordPress %s-szel: 100%% (a szerzője szerint)"
 #: core/components/CompatibilityWarning.php:247
 #, php-format
 msgid "Compatibility with WordPress %s: Unknown"
-msgstr "Kompatibilitás a WordPress %s-szel: Ismeretlen"
+msgstr "Kompatibilitás a WordPress %s verzióval: Ismeretlen"
 
 #: core/components/api/email/Fields.php:341
 msgid ""
@@ -821,8 +794,7 @@ msgstr "Közösségi hálózati API-k konfigurálása"
 #: core/components/SupportCenter.php:1535
 #, php-format
 msgid "Congratulations! This meets or exceeds our recommendation of %1$s."
-msgstr ""
-"Gratulálunk! Ez megfelel vagy meghaladja az általunk ajánlott %1$s értéket."
+msgstr "Gratulálunk! Ez eléri vagy meghaladja az általunk ajánlott %1$s értéket."
 
 #: core/components/SupportCenter.php:1626
 msgid ""
@@ -834,19 +806,17 @@ msgstr ""
 
 #: core/components/api/email/SalesForce.php:158
 msgid "Consumer Key"
-msgstr "Consumer Key"
+msgstr "Fogyasztói kulcs"
 
 #: core/components/api/email/SalesForce.php:163
 msgid "Consumer Secret"
-msgstr "Consumer Secret"
+msgstr "Fogyasztói titok"
 
 #: dashboard/includes/options.php:1142
 msgid ""
 "Control what happens when someone successfully subscribes to your mailing "
 "list using this opt-in."
-msgstr ""
-"Szabályozza, mi történjen, amikor valaki ezzel az optinnal sikeresen "
-"feliratkozik a levelezőlistájára."
+msgstr "Szabályozza, mi történjen, amikor valaki ezzel a feliratkozási űrlappal sikeresen feliratkozik a levelezőlistájára."
 
 #: bloom.php:1174 bloom.php:1286 bloom.php:2394
 msgid "Conversion Rate"
@@ -887,7 +857,7 @@ msgstr "Kategória-elrendezések létrehozása"
 #: core/components/CompatibilityWarning.php:766
 #: core/components/CompatibilityWarning.php:1335
 msgid "Current Theme"
-msgstr "Aktuális téma"
+msgstr "Aktuális sablon"
 
 #: dashboard/includes/options.php:656
 msgid "Custom CSS"
@@ -911,7 +881,7 @@ msgstr "Testreszabás"
 #: core/components/CompatibilityWarning.php:1107
 #, php-format
 msgid "Customize theme: %s"
-msgstr "Téma testreszabása: %s"
+msgstr "Sablon testreszabása: %s"
 
 #: core/components/SupportCenter.php:1155
 msgid "Customizing The Monarch Design"
@@ -924,7 +894,7 @@ msgstr "A fejléc és a navigáció testreszabása"
 
 #: core/components/SupportCenter.php:1115
 msgid "Customizing Your Opt-in Designs"
-msgstr "Az opt-in dizájnok testreszabása"
+msgstr "A feliratkozási űrlapok megjelenésének testreszabása"
 
 #: dashboard/includes/options.php:415
 msgid "Dark"
@@ -942,9 +912,7 @@ msgstr "Nap"
 msgid ""
 "Define a unique ID for this field. You should use only English characters "
 "without special characters or spaces."
-msgstr ""
-"Adjon meg egy egyedi azonosítót ehhez a mezőhöz. Csak angol karaktereket "
-"használjon, speciális karakterek és szóközök nélkül."
+msgstr "Adjon meg egy egyedi ID-t ehhez a mezőhöz. Csak angol karaktereket használjon, speciális karakterek és szóközök nélkül."
 
 #: dashboard/includes/options.php:727
 msgid ""
@@ -972,7 +940,7 @@ msgstr ""
 
 #: dashboard/includes/options.php:271
 msgid "Define the animation that is used to load the image"
-msgstr "Adja meg a képet betöltő animációt."
+msgstr "Adja meg a kép betöltésekor használt animációt"
 
 #: dashboard/includes/options.php:691
 msgid "Define the animation that is used, when you load the page."
@@ -982,13 +950,11 @@ msgstr "Adja meg az animációt, amely az oldal betöltésekor használatos."
 msgid ""
 "Define the length of time (in days) that a session lasts for. For example, "
 "if you input 2 a user will only see a popup on your site every two days."
-msgstr ""
-"Adja meg a munkamenet időtartamát (napokban). Például, ha 2-t ad meg, a "
-"felhasználó csak két naponta lát felugró ablakot a webhelyén."
+msgstr "Adja meg a munkamenet időtartamát (napokban). Például, ha 2-t ad meg, a felhasználó csak kétnaponta lát felugró ablakot a webhelyén."
 
 #: dashboard/includes/options.php:1136
 msgid "Define when and where to display this optin on your website."
-msgstr "Adja meg, mikor és hol jelenjen meg ez az opt-in a webhelyén."
+msgstr "Adja meg, mikor és hol jelenjen meg ez a feliratkozási űrlap a webhelyén."
 
 #: core/components/api/email/Fields.php:270
 msgid "Define whether or not the field should be visible."
@@ -996,7 +962,7 @@ msgstr "Adja meg, hogy látható legyen-e a mező."
 
 #: core/components/api/email/Fields.php:258
 msgid "Define whether the field should be required or optional"
-msgstr "Adja meg, hogy a mező kötelező vagy opcionális legyen."
+msgstr "Adja meg, hogy a mező kötelező vagy opcionális legyen"
 
 #: dashboard/includes/options.php:707
 msgid "Delay (in seconds)"
@@ -1009,11 +975,11 @@ msgstr "Törlés"
 
 #: bloom.php:2436 bloom.php:2503
 msgid "Delete Optin"
-msgstr "Opt-in törlése"
+msgstr "Feliratkozási űrlap törlése"
 
 #: bloom.php:2440 bloom.php:2509
 msgid "Delete this optin?"
-msgstr "Törli ezt az opt-int?"
+msgstr "Törli ezt a feliratkozási űrlapot?"
 
 #: dashboard/includes/options.php:14
 msgid "Design"
@@ -1021,17 +987,17 @@ msgstr "Dizájn"
 
 #: dashboard/includes/options.php:1128
 msgid "Design your optin form"
-msgstr "Tervezze meg az opt-in űrlapját"
+msgstr "Tervezze meg a feliratkozási űrlapját"
 
 #: core/components/lib/WPHttp.php:209
 msgid ""
 "Destination directory for file streaming does not exist or is not writable."
-msgstr "A fájlok streamelésének célkönyvtára nem létezik vagy nem írható."
+msgstr "A fájlok továbbítására szolgáló célkönyvtár nem létezik vagy nem írható."
 
 #: core/components/CompatibilityWarning.php:1105
 #, php-format
 msgid "Details for theme: %s"
-msgstr "Téma részletei: %s"
+msgstr "Sablon részletei: %s"
 
 #: core/components/SupportCenter.php:2896
 #: core/components/SupportCenter.php:2919
@@ -1049,7 +1015,7 @@ msgstr "Bezárás"
 
 #: dashboard/includes/options.php:304
 msgid "Display Name Field"
-msgstr "Név mező megjelenítése"
+msgstr "Megjelenített név mező"
 
 #: dashboard/includes/options.php:774
 msgid "Display Once Per Session"
@@ -1061,11 +1027,11 @@ msgstr "Megjelenítési beállítások"
 
 #: dashboard/includes/options.php:880
 msgid "Display on"
-msgstr "Megjelenítés ezen"
+msgstr "Megjelenítés"
 
 #: dashboard/includes/options.php:769
 msgid "Display on \"Thank you\" page of WooCommerce after purchase"
-msgstr "Megjelenítés a WooCommerce \"Thank you\" oldalán vásárlás után"
+msgstr "Megjelenítés a WooCommerce „Köszönjük” oldalán vásárlás után"
 
 #: dashboard/includes/options.php:919
 msgid "Display on these categories"
@@ -1093,10 +1059,7 @@ msgid ""
 "Divi Hosting is powered by fast networks, modern hosting infrastructures and"
 " the latest server software. Plus you will enjoy automatic caching and a "
 "free CDN."
-msgstr ""
-"A Divi Hostingot gyors hálózatok, modern tárhelyinfrastruktúrák és a "
-"legújabb szerverszoftverek hajtják. Emellett automatikus gyorsítótárazást és"
-" ingyenes CDN-t élvezhet."
+msgstr "A Divi Hosting gyors hálózatokra, modern tárhely-infrastruktúrákra és a legújabb szerver-szoftverekre támaszkodik. Emellett automatikus gyorsítótárazást és ingyenes CDN-t is igénybe vehet."
 
 #: core/components/SupportCenter.php:1285
 msgid "Divi Support Center :: WordPress debug log cannot be found."
@@ -1122,7 +1085,7 @@ msgstr "Divi Támogatási központ :: A WordPress debug.log nincs beállítva."
 
 #: core/components/SupportCenter.php:1749
 msgid "Divi Support Center Page"
-msgstr "Divi Támogatási központ oldal"
+msgstr "Divi támogatási központ oldala"
 
 #: core/components/SupportCenter.php:3264
 msgid "Divi-Optimized Servers"
@@ -1158,11 +1121,11 @@ msgstr "HIBA: Érvénytelen argumentumok."
 
 #: core/components/SupportCenter.php:2607
 msgid "ET Safe Mode has been activated."
-msgstr "Az ET Safe Mode aktiválva lett."
+msgstr "Az ET Safe Mode aktiválva."
 
 #: core/components/SupportCenter.php:2611
 msgid "ET Safe Mode has been deactivated."
-msgstr "Az ET Safe Mode deaktiválva lett."
+msgstr "Az ET Safe Mode deaktiválva."
 
 #: core/components/SupportCenter.php:2515
 msgid "ET Support User role has been activated."
@@ -1174,15 +1137,15 @@ msgstr "Az ET Support User szerepkör deaktiválva lett."
 
 #: core/components/SupportCenter.php:2526
 msgid "ET Support User role has been elevated."
-msgstr "Az ET Support User szerepkör magasabb szintre emelve lett."
+msgstr "Az ET Support User felhasználói szerepkör jogosultsági szintje megemelkedett."
 
 #: core/components/SupportCenter.php:3280
 msgid "Easy Site Migration"
-msgstr "Egyszerű webhely-migráció"
+msgstr "Egyszerű webhely-áttelepítés"
 
 #: core/components/SupportCenter.php:3284
 msgid "Easy Staging Sites"
-msgstr "Egyszerű átmeneti webhelyek"
+msgstr "Egyszerű tesztwebhelyek"
 
 #: dashboard/includes/options.php:27 dashboard/includes/options.php:1177
 msgid "Edit Account"
@@ -1198,20 +1161,20 @@ msgstr "Fiók szerkesztése"
 
 #: core/components/SupportCenter.php:2244
 msgid "Elegant Themes API Error: "
-msgstr "Elegant Themes API hiba: "
+msgstr "Elegant Themes API-hiba: "
 
 #: core/components/SupportCenter.php:2216
 msgid "Elegant Themes API Error: HTTP error in API response"
-msgstr "Elegant Themes API hiba: HTTP hiba az API-válaszban"
+msgstr "Elegant Themes API-hiba: HTTP-hiba az API-válaszban"
 
 #: core/components/SupportCenter.php:2259
 msgid "Elegant Themes API Error: Incorrect Token. Please, try again."
-msgstr "Elegant Themes API hiba: Hibás token. Kérjük, próbálja meg újra."
+msgstr "Elegant Themes API-hiba: Hibás token. Kérjük, próbálja meg újra."
 
 #: core/components/SupportCenter.php:2283
 msgid ""
 "Elegant Themes API Error: The API responded, but the response was empty."
-msgstr "Elegant Themes API hiba: Az API válaszolt, de a válasz üres volt."
+msgstr "Elegant Themes API-hiba: Az API válaszolt, de a válasz üres volt."
 
 #: core/components/SupportCenter.php:2270
 msgid "Elegant Themes API Error: The API response was missing required data."
@@ -1219,7 +1182,7 @@ msgstr "Elegant Themes API hiba: Az API-válaszból hiányoztak kötelező adato
 
 #: core/components/SupportCenter.php:2227
 msgid "Elegant Themes API Error: WordPress Error in API response"
-msgstr "Elegant Themes API hiba: WordPress-hiba az API-válaszban"
+msgstr "Elegant Themes API-hiba: WordPress-hiba az API-válaszban"
 
 #: bloom.php:851
 msgid "Elegant Themes API Key"
@@ -1243,7 +1206,7 @@ msgstr "E-mail mező"
 
 #: dashboard/includes/options.php:393
 msgid "Email Fullwidth"
-msgstr "Teljes szélességű e-mail"
+msgstr "Teljes szélességű e-mail mező"
 
 #: dashboard/includes/options.php:384
 msgid "Email Text"
@@ -1251,7 +1214,7 @@ msgstr "E-mail szöveg"
 
 #: core/components/api/email/FluentCRM.php:331
 msgid "Email Validation has been failed."
-msgstr "Az e-mail validálása sikertelen volt."
+msgstr "Az e-mail cím ellenőrzése sikertelen volt."
 
 #: core/components/api/email/Fields.php:310
 msgid "Enable"
@@ -1268,9 +1231,7 @@ msgstr "Frissítések engedélyezése"
 
 #: core/components/api/email/Fields.php:41
 msgid "Enable this option to use custom fields in your opt-in form."
-msgstr ""
-"Engedélyezze ezt a beállítást, hogy egyéni mezőket használhasson az opt-in "
-"űrlapján."
+msgstr "Kapcsolja be ezt a beállítást, hogy egyéni mezőket használhasson a feliratkozási űrlapján."
 
 #: core/components/SupportCenter.php:2895
 #: core/components/SupportCenter.php:2918
@@ -1310,10 +1271,7 @@ msgstr "Adja meg itt a %1$s értékét."
 msgid ""
 "Every website needs backups! Each of our hosting partners provide automatic "
 "daily backups. If disaster strikes, these hosting companies have your back."
-msgstr ""
-"Minden webhelynek szüksége van biztonsági mentésekre! Tárhelypartnereink "
-"mindegyike automatikus, napi biztonsági mentést biztosít. Ha baj történik, "
-"ezek a tárhelyszolgáltatók gondoskodnak Önről."
+msgstr "Minden webhelynek szüksége van biztonsági mentésekre! Tárhelypartnereink mindegyike automatikus, napi biztonsági mentést biztosít. Ha baj történik, ezek a tárhelyszolgáltatók az Ön segítségére lesznek."
 
 #: dashboard/includes/options.php:887
 msgid "Everything"
@@ -1344,7 +1302,7 @@ msgstr "Előbeállítások exportálása statikus stílusokként"
 #: core/components/Portability.php:2221
 #, php-format
 msgid "Export estimated time remaining: %smin"
-msgstr "Export becsült hátralévő ideje: %sperc"
+msgstr "Exportálás – becsült hátralévő idő: %s perc"
 
 #: dashboard/dashboard.php:1481
 msgid ""
@@ -1393,7 +1351,7 @@ msgstr "A FluentCRM bővítmény nincs telepítve vagy nincs aktiválva."
 
 #: dashboard/includes/options.php:860
 msgid "Fly-In Orientation"
-msgstr "Berepülés tájolása"
+msgstr "Berepülés iránya"
 
 #: core/components/Updates.php:106
 msgid ""
@@ -1486,7 +1444,7 @@ msgstr "Rövidkód létrehozása"
 
 #: core/components/SupportCenter.php:3257
 msgid "Get Recommended Divi Hosting"
-msgstr "Szerezze be az ajánlott Divi-tárhelyet"
+msgstr "Ajánlott Divi-tárhely beszerzése"
 
 #: core/components/SupportCenter.php:995
 msgid "Getting Started With Extra"
@@ -1576,19 +1534,19 @@ msgstr "A Divi Builder frissítése"
 
 #: core/components/SupportCenter.php:1035
 msgid "How To Update The Divi Theme"
-msgstr "A Divi téma frissítése"
+msgstr "A Divi sablon frissítése"
 
 #: core/components/SupportCenter.php:1011
 msgid "How To Update The Extra Theme"
-msgstr "Az Extra téma frissítése"
+msgstr "Az Extra sablon frissítése"
 
 #: core/components/SupportCenter.php:1107
 msgid "How To Update Your Bloom Plugin"
-msgstr "A Bloom bővítményének frissítése"
+msgstr "A Bloom bővítmény frissítése"
 
 #: core/components/SupportCenter.php:1143
 msgid "How To Update Your Monarch WordPress Plugin"
-msgstr "A Monarch WordPress-bővítményének frissítése"
+msgstr "A Monarch WordPress-bővítmény frissítése"
 
 #: core/components/SupportCenter.php:1127
 msgid "How To Use Triggers In Bloom"
@@ -1600,12 +1558,11 @@ msgstr "Azonosító"
 
 #: dashboard/includes/options.php:158
 msgid "ID of the Confirmation Message which will be sent to subscribers"
-msgstr ""
-"A megerősítő üzenet azonosítója, amely elküldésre kerül a feliratkozóknak"
+msgstr "A feliratkozóknak küldendő megerősítő üzenet ID-ja"
 
 #: dashboard/includes/options.php:725
 msgid "Idle Timeout ( in seconds )"
-msgstr "Tétlenségi időkorlát ( másodpercben )"
+msgstr "Tétlenségi időkorlát (másodpercben)"
 
 #: core/components/api/email/Fields.php:134
 msgid ""
@@ -1637,7 +1594,7 @@ msgstr "Kép a szöveg bal oldalán"
 
 #: dashboard/includes/options.php:256
 msgid "Image Load-In Animation"
-msgstr "Kép betöltéskori animációja"
+msgstr "Kép betöltési animációja"
 
 #: dashboard/includes/options.php:207 dashboard/includes/options.php:223
 msgid "Image Orientation"
@@ -1681,15 +1638,13 @@ msgstr "Előbeállítások importálása"
 #: core/components/Portability.php:2220
 #, php-format
 msgid "Import estimated time remaining: %smin"
-msgstr "Becsült hátralévő importálási idő: %sperc"
+msgstr "Becsült hátralévő importálási idő: %s perc"
 
 #: dashboard/dashboard.php:1499
 msgid ""
 "Import the plugin settings from a .json file. This file can be obtained by "
 "exporting the settings on another site using the form above."
-msgstr ""
-"Importálja a bővítmény beállításait egy .json fájlból. Ezt a fájlt a fenti "
-"űrlappal exportálva szerezheti be egy másik webhelyről."
+msgstr "Importálja a bővítmény beállításait egy .json fájlból. Ezt a fájlt úgy szerezheti be, hogy egy másik webhelyen a fenti űrlappal exportálja a beállításokat."
 
 #: dashboard/includes/options.php:1147
 msgid "Import/Export"
@@ -1713,9 +1668,7 @@ msgstr ""
 msgid ""
 "Importing a previously-exported %s file will overwrite all current data. "
 "Please proceed with caution!"
-msgstr ""
-"A korábban exportált %s fájl importálása felülír minden jelenlegi adatot. "
-"Kérjük, járjon el körültekintően!"
+msgstr "A korábban exportált %s fájl importálása felülír minden jelenlegi adatot. Kérjük, járjon el körültekintően!"
 
 #: bloom.php:1284 bloom.php:2392
 msgid "Impressions"
@@ -1723,7 +1676,7 @@ msgstr "Megjelenések"
 
 #: bloom.php:2554
 msgid "Inactive Optins"
-msgstr "Inaktív opt-in űrlapok"
+msgstr "Kikapcsolt feliratkozási űrlapok"
 
 #: dashboard/includes/options.php:133
 msgid "Include IP Address"
@@ -1732,17 +1685,15 @@ msgstr "IP-cím hozzáadása"
 #: dashboard/includes/options.php:137
 msgid ""
 "Include the subscriber's ip address in the data sent to your email provider."
-msgstr ""
-"Tartalmazza a feliratkozó IP-címét az e-mail szolgáltatónak küldött "
-"adatokban."
+msgstr "Vegye fel a feliratkozó IP-címét az e-mail-szolgáltatónak küldött adatok közé."
 
 #: dashboard/includes/options.php:535
 msgid "Inline Form Fields"
-msgstr "Beágyazott űrlapmezők"
+msgstr "Soron belüli űrlapmezők"
 
 #: bloom.php:625
 msgid "Inline Opt-In"
-msgstr "Beágyazott opt-in"
+msgstr "Soron belüli feliratkozás"
 
 #: core/components/api/email/Fields.php:116
 msgid "Input Field"
@@ -1774,7 +1725,7 @@ msgstr "Telepítés &amp; előnézet"
 #: core/components/CompatibilityWarning.php:1111
 #, php-format
 msgid "Install and preview theme: %s"
-msgstr "Téma telepítése és előnézete: %s"
+msgstr "Sablon telepítése és előnézete: %s"
 
 #: core/components/CompatibilityWarning.php:1288
 #: core/components/CompatibilityWarning.php:1300
@@ -1792,7 +1743,7 @@ msgstr "Belépő animáció"
 
 #: core/components/Portability.php:2217
 msgid "Invalid File format. You should be uploading a JSON file."
-msgstr "Érvénytelen fájlformátum. JSON fájlt kell feltöltenie."
+msgstr "Hibás fájlformátum. JSON-fájlt kell feltöltenie."
 
 #: core/components/api/ElegantThemes.php:116
 msgid "Invalid Username and/or API Key provided."
@@ -1829,12 +1780,7 @@ msgid ""
 " and API Key below. Your username is the same username you use when logging "
 "into your Elegant Themes account, and your API Key can be found by logging "
 "into your account and navigating to the Account > API Key page."
-msgstr ""
-"Fontos a bővítmények naprakészen tartása. A Bloom %1$s műveletéhez először "
-"hitelesítenie kell Elegant Themes fiókját az alábbi felhasználónév és API "
-"Key megadásával. A felhasználónév megegyezik azzal, amelyet az Elegant "
-"Themes fiókba történő bejelentkezéshez használ, az API Key pedig a fiókba "
-"belépve az Account > API Key oldalon található."
+msgstr "Fontos naprakészen tartani a bővítményeket. A Bloom %1$s műveletéhez először hitelesítenie kell az Elegant Themes-fiókját az alábbi felhasználónév és API-kulcs megadásával. A felhasználóneve megegyezik azzal a névvel, amellyel bejelentkezik az Elegant Themes-fiókjába; az API-kulcsot pedig a fiókjába bejelentkezve, a Fiók > API-kulcs oldalon találja."
 
 #: bloom.php:1022
 msgid "Last 12 month"
@@ -1854,11 +1800,11 @@ msgstr "Vezetéknév teljes szélességben"
 
 #: dashboard/includes/options.php:364
 msgid "Last Name Text"
-msgstr "Vezetéknév szöveg"
+msgstr "Vezetéknév szövege"
 
 #: core/components/SupportCenter.php:3260
 msgid "Learn About Divi Hosting"
-msgstr "Tudjon meg többet a Divi Hostingról"
+msgstr "További tudnivalók a Divi Hostingról"
 
 #: core/components/VersionRollback.php:270
 msgid "Learn more here."
@@ -1866,7 +1812,7 @@ msgstr "További információ itt."
 
 #: core/components/SupportCenter.php:1526
 msgid "Learn more."
-msgstr "Tudjon meg többet."
+msgstr "További tudnivalók."
 
 #: core/components/api/email/Fields.php:200
 #: core/components/api/email/Fields.php:217
@@ -1907,7 +1853,7 @@ msgstr "Hivatkozás szövege"
 
 #: dashboard/dashboard.php:189 core/components/api/email/Fields.php:75
 msgid "Link URL"
-msgstr "Hivatkozás URL"
+msgstr "Link URL-je"
 
 #: core/components/CompatibilityWarning.php:733
 #: core/components/CompatibilityWarning.php:740
@@ -1931,7 +1877,7 @@ msgstr "Betöltési beállítások"
 
 #: bloom.php:626
 msgid "Locked Content Opt-In"
-msgstr "Zárolt tartalom feliratkozás"
+msgstr "Feliratkozás zárolt tartalomért"
 
 #: core/components/SupportCenter.php:1764
 #: core/components/SupportCenter.php:3100
@@ -1962,17 +1908,15 @@ msgstr "Aktiválás"
 
 #: core/components/api/email/Fields.php:280
 msgid "Make Fullwidth"
-msgstr "Teljes szélességűvé tétel"
+msgstr "Teljes szélességűre állítás"
 
 #: bloom.php:2501
 msgid "Make Inactive"
-msgstr "Inaktiválás"
+msgstr "Kikapcsolás"
 
 #: core/components/VersionRollback.php:537
 msgid "Make sure you have a full site backup before proceeding."
-msgstr ""
-"A folytatás előtt győződjön meg róla, hogy rendelkezik teljes "
-"webhelymentéssel."
+msgstr "A folytatás előtt győződjön meg arról, hogy rendelkezik a webhely teljes biztonsági mentésével."
 
 #: core/components/SupportCenter.php:1411
 #, php-format
@@ -1982,12 +1926,7 @@ msgid ""
 "layouts and files into the builder. You can adjust your max execution time "
 "within your <a href=\"%1$s\">php.ini file</a>, or by contacting your host "
 "for assistance."
-msgstr ""
-"A Max Execution Time befolyásolja, hogy egy oldal mennyi ideig tölthet be, "
-"mielőtt időtúllépés történik. Ha a korlát túl alacsony, előfordulhat, hogy "
-"nem tud nagy elrendezéseket és fájlokat importálni az építőbe. A maximális "
-"végrehajtási időt a <a href=\"%1$s\">php.ini fájlban</a> állíthatja be, vagy"
-" kérjen segítséget a tárhelyszolgáltatójától."
+msgstr "A Max Execution Time befolyásolja, hogy egy oldal mennyi ideig tölthet be, mielőtt időtúllépés történik. Ha a korlát túl alacsony, előfordulhat, hogy nem tud nagy elrendezéseket és fájlokat importálni az oldalszerkesztőbe. A maximális végrehajtási időt a <a href=\"%1$s\">php.ini fájlban</a> állíthatja be, vagy kérjen segítséget a tárhelyszolgáltatójától."
 
 #: core/components/api/email/Fields.php:216
 msgid "Maximum Length"
@@ -2029,7 +1968,7 @@ msgstr "Listáim"
 
 #: bloom.php:1283
 msgid "My Optins"
-msgstr "Feliratkozásaim"
+msgstr "Feliratkozási űrlapjaim"
 
 #: dashboard/includes/options.php:78 dashboard/includes/options.php:79
 msgid "MyNewOptin"
@@ -2042,11 +1981,11 @@ msgstr "Név"
 
 #: dashboard/includes/options.php:314
 msgid "Name Field(s)"
-msgstr "Név mező(k)"
+msgstr "Névmező(k)"
 
 #: dashboard/includes/options.php:354
 msgid "Name Fullwidth"
-msgstr "Név teljes szélességben"
+msgstr "Teljes szélességű névmező"
 
 #: dashboard/includes/options.php:332 dashboard/includes/options.php:344
 msgid "Name Text"
@@ -2054,7 +1993,7 @@ msgstr "Név szövege"
 
 #: dashboard/includes/options.php:1123
 msgid "Name your optin and configure your form integration."
-msgstr "Nevezze el az optint, és konfigurálja az űrlap-integrációját."
+msgstr "Nevezze el a feliratkozási űrlapot, és állítsa be az űrlap-integrációt."
 
 #: bloom.php:2035
 msgid "New Account Setup"
@@ -2096,7 +2035,7 @@ msgstr "Következő: Testreszabás"
 
 #: bloom.php:480
 msgid "Next: Design Your Optin"
-msgstr "Következő: Tervezze meg az optint"
+msgstr "Következő: Feliratkozási űrlap megtervezése"
 
 #: bloom.php:487
 msgid "Next: Display Settings"
@@ -2137,7 +2076,7 @@ msgstr "Nincs névmező"
 
 #: bloom.php:4954
 msgid "No Widget optins created yet"
-msgstr "Még nincsenek Widget optinok létrehozva"
+msgstr "Még nem jöttek létre widgetes feliratkozási űrlapok"
 
 #: bloom.php:2298
 msgid "No lists available"
@@ -2158,7 +2097,7 @@ msgstr "Üzenet nem jelenik meg, ha üresen hagyja"
 
 #: bloom.php:608 bloom.php:614
 msgid "No optins available"
-msgstr "Nincsenek elérhető optinok"
+msgstr "Nincsenek elérhető feliratkozási űrlapok"
 
 #: dashboard/dashboard.php:450
 msgid "No results found"
@@ -2170,7 +2109,7 @@ msgstr "Cím nem jelenik meg, ha üresen hagyja"
 
 #: bloom.php:2268
 msgid "Not Authorized"
-msgstr "Nem engedélyezett"
+msgstr "Nincs jogosultsága"
 
 #: dashboard/dashboard.php:1246
 msgid "Note:"
@@ -2178,7 +2117,7 @@ msgstr "Megjegyzés:"
 
 #: core/components/api/email/Fields.php:240
 msgid "Numbers Only (0-9)"
-msgstr "Csak számok (0-9)"
+msgstr "Csak számjegyek (0-9)"
 
 #: dashboard/dashboard.php:338
 msgid "Ok"
@@ -2214,35 +2153,35 @@ msgstr "Opt-in"
 
 #: dashboard/includes/options.php:10
 msgid "Optin Configuration"
-msgstr "Optin konfiguráció"
+msgstr "Feliratkozási űrlap beállításai"
 
 #: bloom.php:246 dashboard/includes/options.php:26
 msgid "Optin Forms"
-msgstr "Optin űrlapok"
+msgstr "Feliratkozási űrlapok"
 
 #: bloom.php:2391
 msgid "Optin Name"
-msgstr "Optin neve"
+msgstr "Feliratkozási űrlap neve"
 
 #: dashboard/includes/options.php:1157
 msgid "Optin Stats"
-msgstr "Optin statisztikák"
+msgstr "Feliratkozási statisztikák"
 
 #: dashboard/includes/options.php:444
 msgid "Optin Styling"
-msgstr "Optin stílusozás"
+msgstr "Feliratkozási űrlap megjelenése"
 
 #: dashboard/includes/options.php:184
 msgid "Optin message"
-msgstr "Optin üzenet"
+msgstr "Feliratkozási üzenet"
 
 #: bloom.php:2779 dashboard/includes/options.php:71
 msgid "Optin name"
-msgstr "Optin neve"
+msgstr "Feliratkozási űrlap neve"
 
 #: dashboard/includes/options.php:165
 msgid "Optin title"
-msgstr "Optin címe"
+msgstr "Feliratkozási űrlap címe"
 
 #: dashboard/dashboard.php:192 core/components/api/email/Fields.php:79
 msgid "Option Link"
@@ -2256,7 +2195,7 @@ msgstr "Beállítások"
 
 #: dashboard/dashboard.php:1634
 msgid "Options imported successfully."
-msgstr "A beállítások sikeresen importálva."
+msgstr "Az opciók importálása sikeres."
 
 #: core/components/api/email/SalesForce.php:170
 msgid "Organization ID"
@@ -2288,11 +2227,11 @@ msgstr "Enként"
 
 #: dashboard/includes/options.php:757
 msgid "Percentage Down The Page"
-msgstr "Az oldalon lefelé mért százalék"
+msgstr "Az oldalon történő lefelé görgetés százaléka"
 
 #: core/components/api/email/FluentCRM.php:155
 msgid "Phone"
-msgstr "Telefon"
+msgstr "Telefonszám"
 
 #: core/components/api/email/Fields.php:303
 msgid "Pick a color to fill the module's input fields."
@@ -2304,25 +2243,21 @@ msgstr "Adja meg az ElegantThemes.com felhasználónevét."
 
 #: dashboard/dashboard.php:1620
 msgid "Please provide valid .json file"
-msgstr "Kérjük, adjon meg érvényes .json fájlt"
+msgstr "Kérjük, adjon meg egy érvényes .json-fájlt"
 
 #: dashboard/dashboard.php:1615
 msgid "Please select .json file for import"
-msgstr "Kérjük, válasszon .json fájlt az importáláshoz"
+msgstr "Kérjük, válasszon ki egy .json-fájlt az importáláshoz"
 
 #: core/components/Portability.php:2219
 msgid ""
 "Please select at least one item to export or disable the \"Only export "
 "selected items\" option"
-msgstr ""
-"Kérjük, válasszon ki legalább egy elemet az exportáláshoz, vagy tiltsa le az"
-" \"Only export selected items\" beállítást"
+msgstr "Kérjük, válasszon ki legalább egy tételt az exportáláshoz, vagy kapcsolja ki a „Csak a kijelölt tételek exportálása” opciót"
 
 #: dashboard/dashboard.php:685
 msgid "Please select social networks in \"Social Sharing / Networks\" settings"
-msgstr ""
-"Kérjük, válassza ki a közösségi hálózatokat a \"Social Sharing / Networks\" "
-"beállításokban"
+msgstr "Kérjük, válassza ki a közösségi hálózatokat a „Közösségi megosztás / Hálózatok” beállításokban"
 
 #: core/components/Portability.php:2247
 msgid "Portability"
@@ -2339,15 +2274,7 @@ msgid ""
 "adjust your max post size within your <a href=\"%1$s\" "
 "target=\"_blank\">php.ini file</a>, or by contacting your host for "
 "assistance."
-msgstr ""
-"A Post Max Size korlátozza, mekkora lehet egy oldal vagy fájl a webhelyén. "
-"Ha az oldala nagyobb a PHP-ben beállított határnál, nem fog betöltődni. A "
-"méret a Divi Builder használatakor igen nagyra nőhet, ezért fontos ennek a "
-"korlátnak a növelése. Ez a fájlok feltöltésére/letöltésére is hatással van, "
-"ami megakadályozhatja, hogy nagy elrendezések importálhatók legyenek a "
-"builderbe. A maximális POST-méretet a <a href=\"%1$s\" "
-"target=\"_blank\">php.ini fájlban</a> állíthatja be, vagy kérjen segítséget "
-"a tárhelyszolgáltatójától."
+msgstr "A Post Max Size korlátozza, mekkora lehet egy oldal vagy fájl a honlapján. Ha az oldala nagyobb a PHP-ben beállított határértéknél, nem fog betöltődni. A bejegyzések mérete a Divi Builder használatakor igen nagyra nőhet, ezért fontos növelni ezt a korlátot. Ez a fájlok feltöltési és letöltési méretére is hatással van, ami megakadályozhatja a nagy elrendezések szerkesztőbe való importálását. A maximális bejegyzésméretet a <a href=\"%1$s\" target=\"_blank\">php.ini fájlban</a> állíthatja be, vagy segítséget kérhet a tárhelyszolgáltatójától."
 
 #: core/components/api/email/FluentCRM.php:131
 msgid "Postal Code"
@@ -2428,15 +2355,13 @@ msgstr ""
 
 #: core/components/SupportCenter.php:2898
 msgid "Remote Access will be automatically disabled in: "
-msgstr "A távoli hozzáférés automatikusan letiltásra kerül ennyi idő múlva: "
+msgstr "A távoli hozzáférés automatikusan kikapcsol ennyi idő múlva: "
 
 #: core/components/SupportCenter.php:3261
 msgid ""
 "Remove This Recommendation On All Of Your Websites And Your Client's "
 "Websites Forever"
-msgstr ""
-"Távolítsa el véglegesen ezt az ajánlást az összes saját és ügyfelei "
-"webhelyeiről"
+msgstr "Távolítsa el véglegesen ezt az ajánlást az összes saját honlapjáról és ügyfele honlapjairól"
 
 #: bloom.php:2258
 msgid "Remove account"
@@ -2524,9 +2449,7 @@ msgstr "Titkos kulcs (v3)"
 
 #: core/components/VersionRollback.php:221
 msgid "Security check failed. Please refresh and try again."
-msgstr ""
-"A biztonsági ellenőrzés nem sikerült. Kérjük, frissítsen, és próbálja meg "
-"újra."
+msgstr "A biztonsági ellenőrzés nem sikerült. Kérjük, frissítsen, és próbálja meg újra."
 
 #: core/components/CompatibilityWarning.php:475
 #: core/components/CompatibilityWarning.php:526
@@ -2569,10 +2492,7 @@ msgid ""
 "Select a previously-exported Divi Builder Layouts file to begin importing "
 "items. Large collections of image-heavy exports may take several minutes to "
 "upload."
-msgstr ""
-"Válasszon egy korábban exportált Divi Builder Layouts fájlt az elemek "
-"importálásának megkezdéséhez. A képekben bővelkedő, nagy méretű exportok "
-"feltöltése akár több percet is igénybe vehet."
+msgstr "Válasszon egy korábban exportált Divi Builder Layouts fájlt az elemek importálásának megkezdéséhez. A képekben bővelkedő, nagy méretű exportok feltöltése akár több percet is igénybe vehet."
 
 #: bloom.php:4941
 msgid "Select optin"
@@ -2597,11 +2517,11 @@ msgstr ""
 
 #: core/components/SupportCenter.php:1047
 msgid "Setting Up The Divi Theme Options"
-msgstr "A Divi Theme Options beállítása"
+msgstr "A Divi sablon opcióinak beállítása"
 
 #: core/components/SupportCenter.php:999
 msgid "Setting Up The Extra Theme Options"
-msgstr "Az Extra Theme Options beállítása"
+msgstr "Az Extra sablon opcióinak beállítása"
 
 #: bloom.php:274
 msgid "Settings"
@@ -2634,12 +2554,12 @@ msgstr "Teljes jelentés megjelenítése"
 #: core/components/CompatibilityWarning.php:752
 #: core/components/CompatibilityWarning.php:1321
 msgid "Show next theme"
-msgstr "Következő téma megjelenítése"
+msgstr "Következő sablon megjelenítése"
 
 #: core/components/CompatibilityWarning.php:751
 #: core/components/CompatibilityWarning.php:1320
 msgid "Show previous theme"
-msgstr "Előző téma megjelenítése"
+msgstr "Előző sablon megjelenítése"
 
 #: dashboard/includes/options.php:319
 msgid "Single Name Field"
@@ -2737,9 +2657,7 @@ msgstr "A támogatási fiók nem létezik."
 
 #: core/components/SupportCenter.php:2342
 msgid "Support account hasn't been removed. Try to regenerate token again."
-msgstr ""
-"A támogatási fiók nem lett eltávolítva. Próbálja meg ismét újragenerálni a "
-"tokent."
+msgstr "A támogatási fiók nem lett eltávolítva. Próbálja meg újragenerálni a tokent."
 
 #: dashboard/includes/options.php:268 dashboard/includes/options.php:688
 msgid "Swing"
@@ -2778,7 +2696,7 @@ msgstr "Textarea"
 
 #: core/components/SupportCenter.php:1119
 msgid "The Different Bloom Opt-in Types"
-msgstr "A Bloom különböző opt-in típusai"
+msgstr "A Bloom különböző feliratkozási típusai"
 
 #: core/components/SupportCenter.php:902
 msgid "The Divi Library"
@@ -2790,11 +2708,7 @@ msgid ""
 "username to receive product updates. If you forgot your username you can <a "
 "href=\"https://www.elegantthemes.com/members-area/retrieve-username/\" "
 "target=\"_blank\">request it here</a>."
-msgstr ""
-"A megadott Elegant Themes felhasználónév érvénytelen. Adjon meg egy érvényes"
-" felhasználónevet a termékfrissítések fogadásához. Ha elfelejtette a "
-"felhasználónevét, <a href=\"https://www.elegantthemes.com/members-"
-"area/retrieve-username/\" target=\"_blank\">itt kérheti le</a>."
+msgstr "A megadott Elegant Themes felhasználónév érvénytelen. Adjon meg egy érvényes felhasználónevet a termékfrissítések fogadásához. Ha elfelejtette a felhasználónevét, <a href=\"https://www.elegantthemes.com/members-area/retrieve-username/\" target=\"_blank\">itt kérheti le</a>."
 
 #: core/components/SupportCenter.php:1003
 msgid "The Extra Category Builder"
@@ -2816,8 +2730,7 @@ msgstr ""
 
 #: core/components/SupportCenter.php:3052
 msgid "The following plugins will be temporarily disabled for you only:"
-msgstr ""
-"A következő bővítmények ideiglenesen csak az Ön számára lesznek letiltva:"
+msgstr "A következő bővítmények ideiglenesen csak az Ön számára lesznek letiltva:"
 
 #: core/components/VersionRollback.php:481
 #: core/components/api/ElegantThemes.php:212
@@ -2829,7 +2742,7 @@ msgstr ""
 #: core/components/CompatibilityWarning.php:704
 #: core/components/CompatibilityWarning.php:1128
 msgid "Theme Details"
-msgstr "Téma részletei"
+msgstr "Sablon részletei"
 
 #: core/components/CompatibilityWarning.php:1063
 #, php-format
@@ -2837,10 +2750,7 @@ msgid ""
 "There is a new version of %1$s available, but it doesn&#8217;t work with "
 "your version of PHP. <a href=\"%2$s\" %3$s>View version %4$s details</a> or "
 "<a href=\"%5$s\">learn more about updating PHP</a>. %6$s"
-msgstr ""
-"Elérhető a(z) %1$s új verziója, de nem működik az Ön PHP-verziójával. <a "
-"href=\"%2$s\" %3$s>Nézze meg a(z) %4$s verzió részleteit</a>, vagy <a "
-"href=\"%5$s\">tudjon meg többet a PHP frissítéséről</a>. %6$s"
+msgstr "Elérhető a(z) %1$s új verziója, de nem működik az Ön PHP-verziójával. <a href=\"%2$s\" %3$s>A(z) %4$s verzió részleteinek megtekintése</a>, vagy <a href=\"%5$s\">további tudnivalók a PHP frissítéséről</a>. %6$s"
 
 #: core/components/CompatibilityWarning.php:632
 #: core/components/CompatibilityWarning.php:895
@@ -2884,7 +2794,7 @@ msgstr ""
 
 #: dashboard/includes/options.php:842
 msgid "This action displays a success message."
-msgstr "Ez a művelet sikerüzenetet jelenít meg."
+msgstr "Ez a művelet sikeres üzenetet jelenít meg."
 
 #: dashboard/includes/options.php:850
 msgid "This action redirects the subscriber to a URL of your choosing."
@@ -2894,7 +2804,7 @@ msgstr ""
 #: core/components/SupportCenter.php:1508
 #, php-format
 msgid "This fails to meet our minimum required value of %1$s. "
-msgstr "Ez nem felel meg a minimálisan megkövetelt %1$s értéknek. "
+msgstr "Ez nem felel meg a kötelező minimális értéknek (%1$s). "
 
 #: core/components/Portability.php:2216
 msgid ""
@@ -2902,11 +2812,7 @@ msgid ""
 "disabled in your php.ini. It may also be caused by post_max_size or/and "
 "upload_max_filesize being smaller than file selected. Please increase it or "
 "transfer more substantial data at the time."
-msgstr ""
-"Ez a fájl nem importálható. Ennek oka lehet, hogy a php.ini-ben le van "
-"tiltva a file_uploads. Okozhatja az is, hogy a post_max_size és/vagy az "
-"upload_max_filesize kisebb, mint a kiválasztott fájl mérete. Kérjük, növelje"
-" ezt, vagy egy időben továbbítson nagyobb mennyiségű adatot."
+msgstr "Ez a fájl nem importálható. Ennek oka lehet, hogy a php.ini-ben ki van kapcsolva a file_uploads. Okozhatja az is, hogy a post_max_size és/vagy az upload_max_filesize kisebb, mint a kiválasztott fájl mérete. Kérjük, növelje a korlátot, vagy egyszerre nagyobb mennyiségű adatot továbbítson."
 
 #: core/components/Portability.php:2218
 msgid "This file should not be imported in this context."
@@ -2916,7 +2822,7 @@ msgstr "Ezt a fájlt ebben a környezetben nem szabad importálni."
 #: core/components/CompatibilityWarning.php:1449
 #, php-format
 msgid "This is a child theme of %s."
-msgstr "Ez a(z) %s gyermek témája."
+msgstr "Ez a(z) %s gyermeksablonja."
 
 #: core/components/data/init.php:329
 msgid "This is not a valid excuse to not escape the passed value."
@@ -2931,7 +2837,7 @@ msgstr ""
 #: core/components/SupportCenter.php:1514
 #, php-format
 msgid "This meets our minimum required value of %1$s. "
-msgstr "Ez megfelel a minimálisan megkövetelt %1$s értéknek. "
+msgstr "Ez megfelel a kötelező minimális értéknek (%1$s). "
 
 #: core/wp_functions.php:247
 #, php-format
@@ -2939,10 +2845,7 @@ msgid ""
 "This resource is provided by your web host, and is specific to your site. "
 "For more information, <a href=\"%s\" target=\"_blank\">see the official "
 "WordPress documentation</a>."
-msgstr ""
-"Ezt az erőforrást a tárhelyszolgáltató biztosítja, és az Ön webhelyére "
-"jellemző. További információért <a href=\"%s\" target=\"_blank\">lásd a "
-"hivatalos WordPress dokumentációt</a>."
+msgstr "Ezt az erőforrást a tárhelyszolgáltató biztosítja, és az Ön webhelyére jellemző. További információért <a href=\"%s\" target=\"_blank\">tekintse meg a hivatalos WordPress-dokumentációt</a>."
 
 #: core/components/SupportCenter.php:1435
 #, php-format
@@ -2952,12 +2855,7 @@ msgid ""
 "allowed to load. You can adjust your max input time within your <a "
 "href=\"%1$s\" target=\"_blank\">php.ini file</a>, or by contacting your host"
 " for assistance."
-msgstr ""
-"Ez állítja be másodpercben azt a maximális időt, ameddig egy szkript "
-"feldolgozhatja a bemeneti adatokat. Ha a korlát túl alacsony, a Divi Builder"
-" időtúllépés miatt leállhat, mielőtt betöltődhetne. A maximális inputidőt a "
-"<a href=\"%1$s\" target=\"_blank\">php.ini fájlban</a> módosíthatja, vagy "
-"vegye fel a kapcsolatot a tárhelyszolgáltatójával segítségért."
+msgstr "Ez állítja be másodpercben azt a maximális időt, ameddig egy szkript feldolgozhatja a bemeneti adatokat. Ha a korlát túl alacsony, a Divi Builder időtúllépés miatt leállhat, mielőtt betöltődhetne. A maximális bemeneti időt a <a href=\"%1$s\" target=\"_blank\">php.ini fájlban</a> módosíthatja, vagy vegye fel a kapcsolatot a tárhelyszolgáltatójával segítségért."
 
 #: core/components/SupportCenter.php:1447
 #, php-format
@@ -2994,21 +2892,21 @@ msgstr ""
 #: core/components/CompatibilityWarning.php:1265
 #: core/components/CompatibilityWarning.php:1497
 msgid "This theme doesn&#8217;t work with your version of PHP."
-msgstr "Ez a téma nem működik az Ön PHP-verziójával."
+msgstr "Ez a sablon nem működik az Ön PHP-verziójával."
 
 #: core/components/CompatibilityWarning.php:679
 #: core/components/CompatibilityWarning.php:811
 #: core/components/CompatibilityWarning.php:1254
 #: core/components/CompatibilityWarning.php:1486
 msgid "This theme doesn&#8217;t work with your version of WordPress."
-msgstr "Ez a téma nem működik az Ön WordPress-verziójával."
+msgstr "Ez a sablon nem működik az Ön WordPress-verziójával."
 
 #: core/components/CompatibilityWarning.php:653
 #: core/components/CompatibilityWarning.php:785
 #: core/components/CompatibilityWarning.php:1228
 #: core/components/CompatibilityWarning.php:1460
 msgid "This theme doesn&#8217;t work with your versions of WordPress and PHP."
-msgstr "Ez a téma nem működik az Ön WordPress- és PHP-verzióival."
+msgstr "Ez a sablon nem működik az Ön WordPress- és PHP-verzióival."
 
 #: core/components/CompatibilityWarning.php:253
 #: core/components/CompatibilityWarning.php:374
@@ -3046,31 +2944,31 @@ msgstr "Felső szegély"
 
 #: dashboard/includes/options.php:741
 msgid "Trigger After Commenting"
-msgstr "Kiváltás hozzászólás után"
+msgstr "Aktiválás hozzászólás után"
 
 #: dashboard/includes/options.php:716
 msgid "Trigger After Inactivity"
-msgstr "Kiváltás inaktivitás után"
+msgstr "Aktiválás inaktivitás után"
 
 #: dashboard/includes/options.php:766
 msgid "Trigger After Purchasing"
-msgstr "Kiváltás vásárlás után"
+msgstr "Aktiválás vásárlás után"
 
 #: dashboard/includes/options.php:748
 msgid "Trigger After Scrolling"
-msgstr "Kiváltás görgetés után"
+msgstr "Aktiválás görgetés után"
 
 #: dashboard/includes/options.php:698
 msgid "Trigger After Time Delay"
-msgstr "Kiváltás késleltetés után"
+msgstr "Aktiválás egy bizonyos idő elteltével"
 
 #: dashboard/includes/options.php:734
 msgid "Trigger At The Bottom of Post"
-msgstr "Kiváltás a bejegyzés alján"
+msgstr "Aktiválás a bejegyzés alján"
 
 #: dashboard/includes/options.php:792
 msgid "Trigger On Click"
-msgstr "Kiváltás kattintásra"
+msgstr "Aktiválás kattintásra"
 
 #: core/components/api/email/Fields.php:110
 msgid "Type"
@@ -3121,10 +3019,7 @@ msgid ""
 "Upgrade your hosting to the most reliable, Divi-compatible hosting. Enjoy "
 "perfectly configured hosting environments pre-installed with the tools you "
 "need to be successful with Divi."
-msgstr ""
-"Frissítsd a tárhelyedet a legmegbízhatóbb, Divi-kompatibilis megoldásra. "
-"Élvezd a tökéletesen beállított tárhelykörnyezeteket, amelyek előre "
-"telepítve tartalmazzák a Divivel való sikerhez szükséges eszközöket."
+msgstr "Váltson a legmegbízhatóbb, Divi-kompatibilis tárhelyszolgáltatásra. Élvezze a tökéletesen beállított tárhelykörnyezeteket, amelyekben előre telepítve megtalálhatók a Divi sikeres használatához szükséges eszközök."
 
 #: core/components/SupportCenter.php:1423
 #, php-format
@@ -3134,12 +3029,7 @@ msgid ""
 "import large collections of layouts into the Divi Library. You can adjust "
 "your max file size within your <a href=\"%1$s\" target=\"_blank\">php.ini "
 "file</a>, or by contacting your host for assistance."
-msgstr ""
-"Az Upload Max File Size határozza meg a maximális fájlméretet, amelyet "
-"feltölthetsz a szerveredre. Ha a korlát túl alacsony, előfordulhat, hogy nem"
-" tudsz nagyobb elrendezés-gyűjteményeket importálni a Divi Könyvtárba. A "
-"maximális fájlméretet a <a href=\"%1$s\" target=\"_blank\">php.ini "
-"fájlban</a> módosíthatod, vagy kérj segítséget a tárhelyszolgáltatódtól."
+msgstr "Az Upload Max File Size beállítás határozza meg a szerverre feltölthető fájlok maximális méretét. Ha a korlát túl alacsony, előfordulhat, hogy nem tud nagy elrendezésgyűjteményeket importálni a Divi Könyvtárba. A maximális fájlméretet a <a href=\"%1$s\" target=\"_blank\">php.ini fájlban</a> módosíthatja, vagy segítségért forduljon a tárhelyszolgáltatójához."
 
 #: dashboard/includes/options.php:249
 msgid "Upload an Image"
@@ -3164,7 +3054,7 @@ msgstr "Felhasználónév"
 
 #: core/components/SupportCenter.php:1167
 msgid "Using Popup & Flyin Triggers"
-msgstr "Felugró és becsúszó kiváltók használata"
+msgstr "A felugró ablakok és becsúszó panelek aktiválási feltételeinek használata"
 
 #: core/components/SupportCenter.php:881 core/components/SupportCenter.php:898
 msgid "Using Premade Layout Packs"
@@ -3209,7 +3099,7 @@ msgstr "%s verzió részleteinek megtekintése."
 
 #: core/components/SupportCenter.php:1159
 msgid "Viewing Your Social Stats"
-msgstr "Közösségi statisztikáid megtekintése"
+msgstr "Az Ön közösségi statisztikáinak megtekintése"
 
 #: dashboard/dashboard.php:199
 msgid "Visual"
@@ -3225,10 +3115,7 @@ msgid ""
 "We recommend that the wp-content directory on your server be writable by "
 "WordPress in order to ensure the full functionality of Divi Builder themes "
 "and plugins."
-msgstr ""
-"Javasoljuk, hogy a szervereden a wp-content könyvtár írható legyen a "
-"WordPress számára, hogy a Divi Builder témák és bővítmények teljes "
-"funkcionalitása biztosított legyen."
+msgstr "Javasoljuk, hogy a szerverén a wp-content könyvtár írható legyen a WordPress számára, a Divi Builder-sablonok és bővítmények teljes működésének biztosítása érdekében."
 
 #: core/components/SupportCenter.php:1375
 msgid ""
@@ -3267,43 +3154,33 @@ msgstr "Igen"
 msgid ""
 "You Have Not Added An Email List. Before your opt-in can be activated, you "
 "must first add an account and select an email list."
-msgstr ""
-"Nem adtál hozzá e-mail listát. Az opt-in aktiválása előtt először adj hozzá "
-"egy fiókot, és válassz egy e-mail listát."
+msgstr "Nem adott hozzá e-mail-listát. Az opt-in aktiválása előtt először adjon hozzá egy fiókot, és válasszon ki egy e-mail-listát."
 
 #: bloom.php:2610
 msgid ""
 "You Have Not Added An Email List. Before your opt-in can be activated, you "
 "must first add an account and select an email list. You can save and exit, "
 "but the opt-in will remain inactive until an account is added."
-msgstr ""
-"Nem adtál hozzá e-mail listát. Az opt-in aktiválása előtt először adj hozzá "
-"egy fiókot, és válassz egy e-mail listát. Menthetsz és kiléphetsz, de az "
-"opt-in inaktív marad, amíg nem adsz hozzá fiókot."
+msgstr "Nem adott hozzá e-mail-listát. Az opt-in aktiválása előtt először adjon hozzá egy fiókot, és válasszon ki egy e-mail-listát. Menthet és kiléphet, de az opt-in kikapcsolva marad, amíg nem ad hozzá fiókot."
 
 #: core/components/api/email/Fields.php:234
 msgid ""
 "You can validate certain types of information by disallowing certain "
 "symbols. Symbols added here will prevent the form from being submitted if "
 "added by the user."
-msgstr ""
-"Bizonyos típusú adatokat érvényesíthetsz bizonyos szimbólumok tiltásával. Az"
-" itt megadott szimbólumok megakadályozzák az űrlap elküldését, ha a "
-"felhasználó ezeket beírja."
+msgstr "Bizonyos típusú adatokat úgy érvényesíthet, hogy bizonyos szimbólumok használatát letiltja. Az itt megadott szimbólumok megakadályozzák az űrlap elküldését, ha a felhasználó beírja őket."
 
 #: bloom.php:2037
 msgid "You can view and re-authorize this account’s settings below"
-msgstr ""
-"Az alábbiakban megtekintheted és újraengedélyezheted ennek a fióknak a "
-"beállításait"
+msgstr "Az alábbiakban megtekintheti és újraengedélyezheti ennek a fióknak a beállításait"
 
 #: core/components/VersionRollback.php:228
 msgid "You don't have sufficient permissions to access this page."
-msgstr "Nincs elegendő jogosultságod az oldal eléréséhez."
+msgstr "Nincs elegendő jogosultsága az oldal eléréséhez."
 
 #: bloom.php:4273 dashboard/includes/options.php:646
 msgid "You have Successfully Subscribed!"
-msgstr "Sikeresen feliratkoztál!"
+msgstr "Sikeresen feliratkozott!"
 
 #: dashboard/dashboard.php:193
 msgid ""
@@ -3318,31 +3195,26 @@ msgstr ""
 #: core/components/api/email/MailChimp.php:338
 msgid ""
 "You have signed up to a lot of lists very recently, please try again later"
-msgstr ""
-"Nemrégiben több listára is feliratkoztál, kérjük, próbáld meg később újra"
+msgstr "Rövid időn belül sok listára iratkozott fel, kérjük, próbálja meg később újra"
 
 #: core/components/CompatibilityWarning.php:486
 #: core/components/CompatibilityWarning.php:537
 #, php-format
 msgid "You have version %1$s installed. Update to %2$s."
-msgstr "%1$s verzió van telepítve. Frissíts %2$s verzióra."
+msgstr "%1$s verzió van telepítve. Frissítsen a %2$s verzióra."
 
 #: core/components/Portability.php:2215
 msgid ""
 "You reached your server memory limit. Please try increasing your PHP memory "
 "limit."
-msgstr ""
-"Elérted a szerver memóriakorlátját. Próbáld meg növelni a PHP "
-"memórialimitet."
+msgstr "Elérte a szerver memóriakorlátját. Próbálja meg növelni a PHP memórialimitet."
 
 #: core/components/VersionRollback.php:520
 #, php-format
 msgid ""
 "You'll be rolled back to <strong>Version %1$s</strong> from the current "
 "<strong>Version %2$s</strong>."
-msgstr ""
-"Vissza leszel állítva a jelenlegi <strong>%2$s verzióról</strong> a "
-"<strong>%1$s verzióra</strong>."
+msgstr "A jelenlegi <strong>%2$s verzióról</strong> a <strong>%1$s verzióra</strong> lesz visszaállítva."
 
 #: core/components/VersionRollback.php:236
 #: core/components/VersionRollback.php:572
@@ -3350,9 +3222,7 @@ msgstr ""
 msgid ""
 "You're currently rolled back to <strong>Version %1$s</strong> from "
 "<strong>Version %2$s</strong>."
-msgstr ""
-"Jelenleg a <strong>%1$s verzióra</strong> vagy visszaállítva a <strong>%2$s "
-"verzióról</strong>."
+msgstr "Jelenleg a <strong>%1$s verzióra</strong> van visszaállítva a <strong>%2$s verzióról</strong>."
 
 #: core/components/Updates.php:630
 msgid ""
@@ -3361,12 +3231,7 @@ msgid ""
 " your account</a> to regain access to product updates and support. To ensure"
 " compatibility and security, it is important to always keep your themes and "
 "plugins updated."
-msgstr ""
-"Lejárt az Elegant Themes előfizetésed. <a "
-"href=\"https://www.elegantthemes.com/members-area/\" "
-"target=\"_blank\">Újítsd meg a fiókodat</a>, hogy ismét hozzáférj a "
-"termékfrissítésekhez és a támogatáshoz. A kompatibilitás és a biztonság "
-"érdekében fontos, hogy a témákat és bővítményeket mindig naprakészen tartsd."
+msgstr "Lejárt az Elegant Themes-előfizetése. A termékfrissítésekhez és a támogatáshoz való hozzáférés visszaszerzéséhez <a href=\"https://www.elegantthemes.com/members-area/\" target=\"_blank\">újítsa meg a fiókját</a>. A kompatibilitás és a biztonság érdekében fontos, hogy mindig naprakészen tartsa a sablonokat és bővítményeket."
 
 #: dashboard/includes/options.php:265 dashboard/includes/options.php:685
 msgid "Zoom In"
@@ -3390,7 +3255,7 @@ msgstr "frissítések engedélyezése"
 
 #: bloom.php:768
 msgid "fly in"
-msgstr "berepülés"
+msgstr "becsúszó ablak"
 
 #: core/wp_functions.php:181
 msgctxt "localized PHP upgrade information page"
@@ -3411,7 +3276,7 @@ msgstr "Bloom Opt-In beszúrása"
 
 #: dashboard/includes/options.php:662
 msgid "insert your custom CSS code"
-msgstr "saját egyéni CSS-kód beillesztése"
+msgstr "Illessze be az egyéni CSS-kódját"
 
 #: bloom.php:771
 msgid "locked content"

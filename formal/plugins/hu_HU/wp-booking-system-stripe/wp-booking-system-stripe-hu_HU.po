@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Booking System - Stripe Add-on 1.0.26.3\n"
+"Project-Id-Version: WP Booking System - Stripe Add-on 1.0.29\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:51:01+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:09+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: WP Booking System - Stripe Add-on\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.0.26.3\n"
+"X-Plugin-Version: 1.0.29\n"
 
 #. Plugin Name of the plugin
 #: index.php
@@ -34,9 +34,7 @@ msgstr "https://www.wpbookingsystem.com/"
 #. Description of the plugin
 #: index.php
 msgid "Allow customers to pay with their credit cards through Stripe."
-msgstr ""
-"Lehetővé teszi az ügyfelek számára, hogy hitelkártyával fizessenek a Stripe-"
-"on keresztül."
+msgstr "Engedélyezze a vásárlóknak, hogy hitelkártyával fizessenek a Stripe-on keresztül."
 
 #. Author of the plugin
 #: index.php
@@ -62,7 +60,7 @@ msgstr "Rendelés állapota"
 
 #: includes/base/admin/booking/functions.php:47
 msgid "Payment Gateway"
-msgstr "Fizetési átjáró"
+msgstr "Fizetési mód"
 
 #: includes/base/admin/booking/functions.php:48
 msgid "Date"
@@ -70,7 +68,7 @@ msgstr "Dátum"
 
 #: includes/base/admin/booking/functions.php:49
 msgid "ID"
-msgstr "ID"
+msgstr "Azonosító"
 
 #: includes/base/admin/booking/functions.php:53
 msgid "Error"
@@ -109,15 +107,15 @@ msgstr ""
 
 #: includes/base/admin/form/views/view-edit-form-tab-payment-options-stripe.php:33
 msgid "Stripe API Credentials"
-msgstr "Stripe API hitelesítő adatok"
+msgstr "Stripe API-hitelesítő adatok"
 
 #: includes/base/admin/form/views/view-edit-form-tab-payment-options-stripe.php:38
-#: includes/base/admin/settings/views/view-payment-settings-stripe.php:202
+#: includes/base/admin/settings/views/view-payment-settings-stripe.php:219
 msgid "Enable Test Mode"
 msgstr "Teszt üzemmód engedélyezése"
 
 #: includes/base/admin/form/views/view-edit-form-tab-payment-options-stripe.php:49
-#: includes/base/admin/settings/views/view-payment-settings-stripe.php:214
+#: includes/base/admin/settings/views/view-payment-settings-stripe.php:231
 msgid ""
 "We recommend enabling test mode and testing the payment integration before "
 "going live."
@@ -126,22 +124,22 @@ msgstr ""
 "tesztelését az élesítés előtt."
 
 #: includes/base/admin/form/views/view-edit-form-tab-payment-options-stripe.php:55
-#: includes/base/admin/settings/views/view-payment-settings-stripe.php:220
+#: includes/base/admin/settings/views/view-payment-settings-stripe.php:237
 msgid "Test Publishable Key"
 msgstr "Teszt nyilvános kulcs"
 
 #: includes/base/admin/form/views/view-edit-form-tab-payment-options-stripe.php:66
-#: includes/base/admin/settings/views/view-payment-settings-stripe.php:231
+#: includes/base/admin/settings/views/view-payment-settings-stripe.php:248
 msgid "Test Secret Key"
 msgstr "Teszt titkos kulcs"
 
 #: includes/base/admin/form/views/view-edit-form-tab-payment-options-stripe.php:77
-#: includes/base/admin/settings/views/view-payment-settings-stripe.php:242
+#: includes/base/admin/settings/views/view-payment-settings-stripe.php:259
 msgid "Live Publishable Key"
 msgstr "Éles nyilvános kulcs"
 
 #: includes/base/admin/form/views/view-edit-form-tab-payment-options-stripe.php:88
-#: includes/base/admin/settings/views/view-payment-settings-stripe.php:253
+#: includes/base/admin/settings/views/view-payment-settings-stripe.php:270
 msgid "Live Secret Key"
 msgstr "Éles titkos kulcs"
 
@@ -151,9 +149,7 @@ msgstr "Stripe"
 
 #: includes/base/admin/settings/views/view-payment-settings-stripe.php:13
 msgid "Give the customer the option to pay with a credit card using Stripe."
-msgstr ""
-"Tegye lehetővé az ügyfél számára, hogy hitelkártyával fizessen a Stripe-on "
-"keresztül."
+msgstr "Tegye lehetővé az ügyfél számára, hogy hitelkártyával fizessen a Stripe-on keresztül."
 
 #: includes/base/admin/settings/views/view-payment-settings-stripe.php:19
 msgid "Enable Stripe"
@@ -179,7 +175,7 @@ msgstr "Számlatétel neve"
 msgid ""
 "The name of the product that appears on the Stripe invoice. Eg. \"Booking at"
 " Anne's house.\""
-msgstr "A Stripe-számlán megjelenő terméknév. Pl.: \"Foglalás Anne házában.\""
+msgstr "A Stripe-számlán megjelenő terméknév. Pl.: „Foglalás Anne házában.”"
 
 #: includes/base/admin/settings/views/view-payment-settings-stripe.php:135
 msgid "Delayed payment capture"
@@ -198,34 +194,39 @@ msgstr ""
 "elfogadja a foglalást. A foglalás 7 nap utáni elfogadása sikertelen fizetést"
 " eredményez."
 
-#: includes/base/admin/settings/views/view-payment-settings-stripe.php:155
+#: includes/base/admin/settings/views/view-payment-settings-stripe.php:152
+msgid "Save Card for future usage"
+msgstr "Kártya mentése későbbi használatra"
+
+#: includes/base/admin/settings/views/view-payment-settings-stripe.php:163
+msgid ""
+"If enabled, the customer's credit card will be saved in your Stripe "
+"Dashboard for later usage."
+msgstr "Bekapcsolt állapotban a Stripe vezérlőpultja elmenti a vásárló bankkártyáját későbbi használatra."
+
+#: includes/base/admin/settings/views/view-payment-settings-stripe.php:172
 msgid ""
 "The following payment methods do not support the \"delayed capture\" option:"
 " "
-msgstr ""
-"A következő fizetési módok nem támogatják a \"késleltetett véglegesítés\" "
-"opciót: "
+msgstr "A következő fizetési módok nem támogatják a „késleltetett véglegesítés” opciót: "
 
-#: includes/base/admin/settings/views/view-payment-settings-stripe.php:163
+#: includes/base/admin/settings/views/view-payment-settings-stripe.php:180
 msgid "Enabled Payment Methods"
 msgstr "Engedélyezett fizetési módok"
 
-#: includes/base/admin/settings/views/view-payment-settings-stripe.php:184
+#: includes/base/admin/settings/views/view-payment-settings-stripe.php:201
 #, php-format
 msgid ""
 "Enable additional payment methods via Stripe. Card payments are enabled by "
 "default. For more information about supported payment methods by location, "
 "%sclick here%s."
-msgstr ""
-"További fizetési módok engedélyezése a Stripe-on keresztül. A kártyás "
-"fizetés alapértelmezetten engedélyezett. A hely szerint támogatott fizetési "
-"módokról további információért, %skattintson ide%s."
+msgstr "További fizetési módok bekapcsolása a Stripe-on keresztül. A kártyás fizetés alapértelmezés szerint be van kapcsolva. A különböző helyszíneken támogatott fizetési módokról további információért %skattintson ide%s."
 
-#: includes/base/admin/settings/views/view-payment-settings-stripe.php:192
+#: includes/base/admin/settings/views/view-payment-settings-stripe.php:209
 msgid "API Credentials"
 msgstr "API hitelesítő adatok"
 
-#: includes/base/admin/settings/views/view-payment-settings-stripe.php:196
+#: includes/base/admin/settings/views/view-payment-settings-stripe.php:213
 msgid ""
 "If you need help getting your API Keys, <a target=\"_blank\" "
 "href=\"https://www.wpbookingsystem.com/documentation/stripe-"
@@ -238,12 +239,12 @@ msgstr ""
 "integration/\">tekintse meg az útmutatónkat</a>, amely lépésről lépésre "
 "nyújt útmutatást."
 
-#: includes/base/class-payment-gateway-stripe.php:77
+#: includes/base/class-payment-gateway-stripe.php:80
 msgid "Please add your API keys in the plugin's Settings Page."
 msgstr "Kérjük, adja meg az API-kulcsokat a bővítmény Beállítások oldalán."
 
-#: includes/base/class-payment-gateway-stripe.php:612
-#: includes/base/class-payment-gateway-stripe.php:624
+#: includes/base/class-payment-gateway-stripe.php:640
+#: includes/base/class-payment-gateway-stripe.php:652
 msgid "Payment failed: "
 msgstr "Fizetés sikertelen: "
 
@@ -261,7 +262,4 @@ msgstr "Végső fizetés"
 msgid ""
 "Stripe Test mode is enabled. To make a test payment, use the 4242 4242 4242 "
 "4242 credit card number, with any future expiration date and any CVV code."
-msgstr ""
-"A Stripe teszt mód engedélyezve van. Tesztfizetéshez használja a 4242 4242 "
-"4242 4242 hitelkártyaszámot, bármely jövőbeli lejárati dátummal és "
-"tetszőleges CVV-kóddal."
+msgstr "A Stripe tesztmódja be van kapcsolva. Tesztfizetéshez használja a 4242 4242 4242 4242-es hitelkártyaszámot, bármilyen jövőbeli lejárati dátummal és tetszőleges CVV-kóddal."

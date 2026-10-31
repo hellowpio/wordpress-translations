@@ -1,0 +1,434 @@
+# Copyright (C) 2026 Gravity Forms
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gravity Forms PayPal Standard Add-On 3.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gravityformspaypal\n"
+"POT-Creation-Date: 2026-10-31T07:19:24+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: gravityformspaypal\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: Gravity Forms PayPal Standard Add-On\n"
+"X-Plugin-Tone: formal\n"
+"X-Plugin-Version: 3.5\n"
+
+#. Plugin Name of the plugin
+#: paypal.php
+msgid "Gravity Forms PayPal Standard Add-On"
+msgstr "Gravity Forms PayPal Standard kiegészítő"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: paypal.php
+msgid "https://gravityforms.com"
+msgstr "https://gravityforms.com"
+
+#. Description of the plugin
+#: paypal.php
+msgid ""
+"Integrates Gravity Forms with PayPal Payments Standard, enabling end users "
+"to purchase goods and services through Gravity Forms."
+msgstr "A Gravity Forms és a PayPal Payments Standard integrációja, amely lehetővé teszi a végfelhasználók számára, hogy a Gravity Forms segítségével termékeket és szolgáltatásokat vásároljanak."
+
+#. Author of the plugin
+#: paypal.php
+msgid "Gravity Forms"
+msgstr "Gravity Forms"
+
+#: class-gf-paypal.php:121
+msgid ""
+"Gravity Forms requires IPN to be enabled on your PayPal account. Follow the "
+"following steps to confirm IPN is enabled."
+msgstr "A Gravity Forms megköveteli, hogy a PayPal-fiókjában be legyen kapcsolva az IPN. Kövesse az alábbi lépéseket annak megerősítéséhez, hogy az IPN be van kapcsolva."
+
+#: class-gf-paypal.php:124
+#, php-format
+msgid "Navigate to your PayPal %sIPN Settings page.%s"
+msgstr "Lépjen a PayPal %sIPN-beállítások oldalára.%s"
+
+#: class-gf-paypal.php:125
+msgid ""
+"If IPN is already enabled, you will see your current IPN settings along with"
+" a button to turn off IPN. If that is the case, just check the confirmation "
+"box below and you are ready to go!"
+msgstr "Ha az IPN már be van kapcsolva, az aktuális IPN-beállítások mellett megjelenik egy gomb az IPN kikapcsolásához. Ebben az esetben csak jelölje be az alábbi megerősítő négyzetet, és máris készen áll!"
+
+#: class-gf-paypal.php:126
+msgid "If IPN is not enabled, click the 'Choose IPN Settings' button."
+msgstr "Ha az IPN nincs bekapcsolva, kattintson az „IPN-beállítások kiválasztása” gombra."
+
+#: class-gf-paypal.php:127
+#, php-format
+msgid ""
+"Click the box to enable IPN and enter the following Notification URL: %s"
+msgstr "Jelölje be a négyzetet az IPN bekapcsolásához, majd adja meg a következő értesítési URL-t: %s"
+
+#: class-gf-paypal.php:138
+msgid "PayPal IPN Setting"
+msgstr "PayPal IPN-beállítás"
+
+#: class-gf-paypal.php:140
+msgid "Confirm that you have configured your PayPal account to enable IPN"
+msgstr "Erősítse meg, hogy beállította PayPal-fiókját az IPN bekapcsolásához"
+
+#: class-gf-paypal.php:150
+#, php-format
+msgid "To get started, please configure your %sPayPal Settings%s!"
+msgstr "Kezdésként kérjük, állítsa be a %sPayPal-beállításokat%s!"
+
+#: class-gf-paypal.php:163
+msgid "PayPal Email Address "
+msgstr "PayPal e-mail cím"
+
+#: class-gf-paypal.php:167
+msgid "PayPal Email Address"
+msgstr "PayPal e-mail cím"
+
+#: class-gf-paypal.php:167
+msgid "Enter the PayPal email address where payment should be received."
+msgstr "Adja meg azt a PayPal e-mail címet, amelyre a fizetéseket fogadni szeretné."
+
+#: class-gf-paypal.php:171 class-gf-paypal.php:181
+msgid "Mode"
+msgstr "Mód"
+
+#: class-gf-paypal.php:174
+msgid "Production"
+msgstr "Éles"
+
+#: class-gf-paypal.php:175
+msgid "Test"
+msgstr "Teszt"
+
+#: class-gf-paypal.php:181
+msgid ""
+"Select Production to receive live payments. Select Test for testing purposes"
+" when using the PayPal development sandbox."
+msgstr "Válassza az Éles lehetőséget az éles fizetések fogadásához. Teszteléshez válassza a Teszt lehetőséget a PayPal fejlesztői tesztkörnyezetének használatakor."
+
+#: class-gf-paypal.php:200
+msgid "Donations"
+msgstr "Adományok"
+
+#: class-gf-paypal.php:210 class-gf-paypal.php:214
+msgid "Image URL"
+msgstr "Kép URL-je"
+
+#: class-gf-paypal.php:214
+msgid ""
+"This option allows you to enter the URL of the 150x50-pixel image displayed "
+"as your logo in the upper left corner of the PayPal checkout pages. Default "
+"is your business name, if you have a PayPal Business account or your email "
+"address, if you have PayPal Premier or Personal account."
+msgstr "Ezzel az opcióval megadhatja annak a 150x50 képpontos képnek az URL-jét, amely logóként jelenik meg a PayPal fizetési oldalainak bal felső sarkában. Alapértelmezés szerint PayPal Business-fiók esetén a vállalkozás neve, PayPal Premier- vagy személyes fiók esetén pedig az e-mail címe jelenik meg."
+
+#: class-gf-paypal.php:218 class-gf-paypal.php:222
+msgid "Cancel URL"
+msgstr "Átirányítási URL megszakított fizetés esetén"
+
+#: class-gf-paypal.php:222
+msgid ""
+"Enter the URL the user should be sent to should they cancel before "
+"completing their PayPal payment."
+msgstr "Adja meg azt az URL-t, amelyre a felhasználót át kell irányítani, ha a PayPal-fizetés befejezése előtt megszakítja a folyamatot."
+
+#: class-gf-paypal.php:226 class-gf-paypal.php:228
+msgid "Options"
+msgstr "Opciók"
+
+#: class-gf-paypal.php:228
+msgid "Turn on or off the available PayPal checkout options."
+msgstr "Kapcsolja be vagy ki az elérhető PayPal-fizetési lehetőségeket."
+
+#: class-gf-paypal.php:231
+msgid "Do not prompt buyer to include a shipping address."
+msgstr "Ne kérje a vásárlótól szállítási cím megadását."
+
+#: class-gf-paypal.php:235
+msgid "Do not prompt buyer to include a note with payment."
+msgstr "Ne kérje a vásárlótól, hogy megjegyzést fűzzön a fizetéshez."
+
+#: class-gf-paypal.php:245 class-gf-paypal.php:247
+msgid "Notifications"
+msgstr "Értesítések"
+
+#: class-gf-paypal.php:247
+msgid ""
+"Enable this option if you would like to only send out this form's "
+"notifications for the 'Form is submitted' event after payment has been "
+"received. Leaving this option disabled will send these notifications "
+"immediately after the form is submitted. Notifications which are configured "
+"for other events will not be affected by this option."
+msgstr "Kapcsolja be ezt az opciót, ha azt szeretné, hogy az űrlap értesítései csak a „Beküldött űrlap” eseményhez kerüljenek elküldésre a fizetés beérkezése után. Ha kikapcsolva hagyja ezt az opciót, az értesítések közvetlenül az űrlap beküldése után kerülnek elküldésre. Ez az opció nincs hatással a más eseményekhez beállított értesítésekre."
+
+#: class-gf-paypal.php:256 class-gf-paypal.php:258
+msgid "Posts"
+msgstr "Bejegyzések"
+
+#: class-gf-paypal.php:258
+msgid ""
+"Enable this option if you would like to only create the post after payment "
+"has been received."
+msgstr "Kapcsolja be ezt az opciót, ha azt szeretné, hogy a bejegyzés csak a fizetés beérkezése után jöjjön létre."
+
+#: class-gf-paypal.php:260
+msgid "Create post only when payment is received."
+msgstr "Bejegyzés létrehozása csak a fizetés beérkezésekor."
+
+#: class-gf-paypal.php:266
+msgid "Change post status when subscription is canceled."
+msgstr "Módosítsa a bejegyzés állapotát az előfizetés lemondásakor."
+
+#: class-gf-paypal.php:301
+msgid "Last Name"
+msgstr "Vezetéknév"
+
+#: class-gf-paypal.php:304
+msgid "First Name"
+msgstr "Keresztnév"
+
+#: class-gf-paypal.php:315 class-gf-paypal.php:318
+msgid "Trial Period"
+msgstr "Próbaidőszak"
+
+#: class-gf-paypal.php:318
+msgid "Select the trial period length."
+msgstr "Válassza ki a próbaidőszak hosszát."
+
+#: class-gf-paypal.php:326 class-gf-paypal.php:330
+msgid "Recurring Retry"
+msgstr "Ismétlődő fizetés újrapróbálása"
+
+#: class-gf-paypal.php:329
+msgid "Try to bill again after failed attempt."
+msgstr "Sikertelen próbálkozás után próbálja meg újra levonni az összeget."
+
+#: class-gf-paypal.php:330
+msgid "Turn on or off whether to try to bill again after failed attempt."
+msgstr "Kapcsolja be vagy ki annak beállítását, hogy sikertelen próbálkozás után újra megpróbálja-e levonni az összeget."
+
+#: class-gf-paypal.php:348
+msgid "day(s)"
+msgstr "nap"
+
+#: class-gf-paypal.php:349
+msgid "week(s)"
+msgstr "hét"
+
+#: class-gf-paypal.php:350
+msgid "month(s)"
+msgstr "hónap"
+
+#: class-gf-paypal.php:351
+msgid "year(s)"
+msgstr "év"
+
+#: class-gf-paypal.php:358
+msgid "PayPal Field"
+msgstr "PayPal-mező"
+
+#: class-gf-paypal.php:446
+msgid ""
+"Send notifications for the 'Form is submitted' event only when payment is "
+"received."
+msgstr "Csak a fizetés beérkezésekor küldjön értesítéseket a „Beküldött űrlap” eseményről."
+
+#: class-gf-paypal.php:529
+msgid "Mark Post as Draft"
+msgstr "Bejegyzés megjelölése vázlatként"
+
+#: class-gf-paypal.php:530
+msgid "Delete Post"
+msgstr "Bejegyzés törlése"
+
+#: class-gf-paypal.php:1339
+#, php-format
+msgid ""
+"Payment amount (%s) does not match subscription amount. Subscription will "
+"not be activated. Transaction ID: %s"
+msgstr "A fizetési összeg (%s) nem egyezik az előfizetés összegével. Az előfizetés nem lesz aktiválva. Tranzakció ID: %s"
+
+#: class-gf-paypal.php:1405
+#, php-format
+msgid ""
+"Payment amount (%s) does not match product price. Entry will not be marked "
+"as Approved. Transaction ID: %s"
+msgstr "A fizetési összeg (%s) nem egyezik a termék árával. A bejegyzés állapota nem lesz „Jóváhagyva”. Tranzakció ID: %s"
+
+#: class-gf-paypal.php:1418
+#, php-format
+msgid "Payment has been reversed. Transaction ID: %s. Reason: %s"
+msgstr "A fizetést visszavonták. Tranzakció ID: %s. Indok: %s"
+
+#: class-gf-paypal.php:1426
+#, php-format
+msgid ""
+"Payment reversal has been canceled and the funds have been transferred to "
+"your account. Transaction ID: %s"
+msgstr "A fizetés visszavonását visszavonták, és az összeget átutalták a fiókjába. Tranzakció ID: %s"
+
+#: class-gf-paypal.php:1439
+#, php-format
+msgid "Payment is pending. Amount: %s. Transaction ID: %s. Reason: %s"
+msgstr "A fizetés függőben van. Összeg: %s. Tranzakció ID: %s. Indok: %s"
+
+#: class-gf-paypal.php:1588
+msgid "Reversal of an adjustment"
+msgstr "Egy kiigazítás visszafordítása"
+
+#: class-gf-paypal.php:1590
+msgid ""
+"A reversal has occurred on this transaction due to a complaint about the "
+"transaction from your customer."
+msgstr "A vásárló tranzakcióval kapcsolatos panasza miatt a tranzakciót visszafordították."
+
+#: class-gf-paypal.php:1593
+msgid ""
+"A reversal has occurred on this transaction due to a chargeback by your "
+"customer."
+msgstr "A vásárló által kezdeményezett visszaterhelés miatt a tranzakciót visszafordították."
+
+#: class-gf-paypal.php:1596
+msgid "Reimbursement for a chargeback."
+msgstr "Visszafizetés egy visszaterhelés miatt."
+
+#: class-gf-paypal.php:1599
+msgid "Settlement of a chargeback."
+msgstr "Visszaterhelés elszámolása."
+
+#: class-gf-paypal.php:1602
+msgid ""
+"A reversal has occurred on this transaction due to your customer triggering "
+"a money-back guarantee."
+msgstr "A vásárló pénz-visszafizetési garanciát érvényesített, ezért a tranzakciót visszafordították."
+
+#: class-gf-paypal.php:1605
+msgid "Non-specified reason."
+msgstr "Nincs megadva indok."
+
+#: class-gf-paypal.php:1608
+msgid ""
+"A reversal has occurred on this transaction because you have given the "
+"customer a refund."
+msgstr "A tranzakciót azért fordították vissza, mert visszatérítést adott a vásárlónak."
+
+#: class-gf-paypal.php:1611 class-gf-paypal.php:1673 class-gf-paypal.php:1676
+msgid ""
+"Reason has not been specified. For more information, contact PayPal Customer"
+" Service."
+msgstr "Az indok nincs megadva. További információért forduljon a PayPal ügyfélszolgálatához."
+
+#: class-gf-paypal.php:1643
+msgid ""
+"The payment is pending because your customer did not include a confirmed "
+"shipping address and your Payment Receiving Preferences are set to allow you"
+" to manually accept or deny each of these payments. To change your "
+"preference, go to the Preferences section of your Profile."
+msgstr "A fizetés függőben van, mert a vásárló nem adott meg megerősített szállítási címet, és a fizetés fogadására vonatkozó beállításai szerint Ön manuálisan fogadhatja el vagy utasíthatja el ezeket a fizetéseket. A beállítás módosításához nyissa meg a profilja beállítási szakaszát."
+
+#: class-gf-paypal.php:1646
+msgid ""
+"You set the payment action to Authorization and have not yet captured funds."
+msgstr "A fizetési műveletet engedélyezésre állította, és még nem vonta le az összeget."
+
+#: class-gf-paypal.php:1649
+msgid ""
+"The payment is pending because it was made by an eCheck that has not yet "
+"cleared."
+msgstr "A fizetés azért van függőben, mert egy még nem jóváírt e-csekkel történt."
+
+#: class-gf-paypal.php:1652
+msgid ""
+"The payment is pending because you hold a non-U.S. account and do not have a"
+" withdrawal mechanism. You must manually accept or deny this payment from "
+"your Account Overview."
+msgstr "A fizetés azért van függőben, mert nem egyesült államokbeli fiókja van, és nem rendelkezik pénzfelvételi lehetőséggel. Ezt a fizetést kézzel kell elfogadnia vagy elutasítania a fiók áttekintésében."
+
+#: class-gf-paypal.php:1655
+msgid ""
+"You do not have a balance in the currency sent, and you do not have your "
+"Payment Receiving Preferences set to automatically convert and accept this "
+"payment. You must manually accept or deny this payment."
+msgstr "Nincs egyenlege a küldött pénznemben, és a fizetésfogadási beállításai nem teszik lehetővé a fizetés automatikus átváltását és elfogadását. Ezt a fizetést kézzel kell elfogadnia vagy elutasítania."
+
+#: class-gf-paypal.php:1658
+msgid "You set the payment action to Order and have not yet captured funds."
+msgstr "A fizetési műveletet megrendelésre állította, és még nem vonta le az összeget."
+
+#: class-gf-paypal.php:1661
+msgid "The payment is pending while it is being reviewed by PayPal for risk."
+msgstr "A fizetés függőben van, amíg a PayPal kockázati szempontból ellenőrzi."
+
+#: class-gf-paypal.php:1664
+msgid ""
+"The payment is pending because it was made to an email address that is not "
+"yet registered or confirmed."
+msgstr "A fizetés azért van függőben, mert olyan e-mail címre érkezett, amely még nincs regisztrálva vagy megerősítve."
+
+#: class-gf-paypal.php:1667
+msgid ""
+"The payment is pending because it was made via credit card and you must "
+"upgrade your account to Business or Premier status in order to receive the "
+"funds. Upgrade can also mean that you have reached the monthly limit for "
+"transactions on your account."
+msgstr "A fizetés azért van függőben, mert hitelkártyával történt, és az összeg fogadásához Business vagy Premier fiókra kell váltania. A fiók frissítésére azért is szükség lehet, mert elérte a fiókjához tartozó havi tranzakciós limitet."
+
+#: class-gf-paypal.php:1670
+msgid ""
+"The payment is pending because you are not yet verified. You must verify "
+"your account before you can accept this payment."
+msgstr "A fizetés azért van függőben, mert még nincs hitelesítve. A fizetés elfogadásához hitelesítenie kell a fiókját."
+
+#: class-gf-paypal.php:1711
+msgid "Payment Completed"
+msgstr "Fizetés befejezve"
+
+#: class-gf-paypal.php:1712
+msgid "Payment Refunded"
+msgstr "Visszatérített fizetés"
+
+#: class-gf-paypal.php:1713
+msgid "Payment Failed"
+msgstr "Sikertelen fizetés"
+
+#: class-gf-paypal.php:1714
+msgid "Payment Pending"
+msgstr "Függőben lévő fizetés"
+
+#: class-gf-paypal.php:1715
+msgid "Authorization Voided"
+msgstr "Engedélyezés visszavonva"
+
+#: class-gf-paypal.php:1716
+msgid "Subscription Created"
+msgstr "Előfizetés létrehozva"
+
+#: class-gf-paypal.php:1717
+msgid "Subscription Canceled"
+msgstr "Előfizetés lemondva"
+
+#: class-gf-paypal.php:1718
+msgid "Subscription Expired"
+msgstr "Lejárt előfizetés"
+
+#: class-gf-paypal.php:1719
+msgid "Subscription Payment Added"
+msgstr "Előfizetéses fizetés hozzáadva"
+
+#: class-gf-paypal.php:1720
+msgid "Subscription Payment Failed"
+msgstr "Az előfizetés fizetése sikertelen"
+
+#: class-gf-paypal.php:1841
+#, php-format
+msgid ""
+"Payment information was manually updated. Status: %s. Amount: %s. "
+"Transaction ID: %s. Date: %s"
+msgstr "A fizetési adatokat kézzel frissítették. Állapot: %s. Összeg: %s. Tranzakció-ID: %s. Dátum: %s"

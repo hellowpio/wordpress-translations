@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: MainWP WooCommerce Status Extension 5.0.4\n"
+"Project-Id-Version: MainWP WooCommerce Status Extension 5.2\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T19:14:01+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: MainWP WooCommerce Status Extension\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 5.0.4\n"
+"X-Plugin-Version: 5.2\n"
 
 #. Plugin Name of the plugin
 #: mainwp-woocommerce-status-extension.php
@@ -36,96 +36,150 @@ msgstr "https://mainwp.com"
 msgid ""
 "MainWP WooCommerce Status provides you a quick overview of your WooCommerce "
 "stores in your network. Requires MainWP Dashboard plugin."
-msgstr ""
-"A MainWP WooCommerce Status gyors áttekintést nyújt a hálózatában lévő "
-"WooCommerce áruházakról. A MainWP Dashboard bővítményt igényli."
+msgstr "A MainWP WooCommerce Status gyors áttekintést nyújt a hálózatában lévő WooCommerce áruházakról. A MainWP vezérlőpult-bővítményre van szükség."
 
 #. Author of the plugin
 #: mainwp-woocommerce-status-extension.php
 msgid "MainWP"
 msgstr "MainWP"
 
-#: class/mainwp-woocommerce-status.class.php:159
+#: class/mainwp-woocommerce-status-abilities.class.php:33
+msgid "MainWP WooCommerce Status"
+msgstr "MainWP WooCommerce állapot"
+
+#: class/mainwp-woocommerce-status-abilities.class.php:34
+msgid ""
+"Read the last stored WooCommerce store status without contacting child "
+"sites."
+msgstr "Az utoljára tárolt WooCommerce-áruház állapotának beolvasása az alárendelt webhelyek elérése nélkül."
+
+#: class/mainwp-woocommerce-status-abilities.class.php:46
+msgid "List WooCommerce Stores"
+msgstr "WooCommerce-áruházak listázása"
+
+#: class/mainwp-woocommerce-status-abilities.class.php:46
+msgid "Get WooCommerce Store Status"
+msgstr "WooCommerce-áruház állapotának lekérése"
+
+#: class/mainwp-woocommerce-status-abilities.class.php:47
+msgid ""
+"List accessible child sites with stored WooCommerce status, including "
+"inactive stores. Reads stored data only; does not sync or refresh."
+msgstr "Az elérhető, tárolt WooCommerce-állapottal rendelkező alárendelt webhelyek listázása, beleértve a kikapcsolt áruházakat is. Csak a tárolt adatokat olvassa be; nem végez szinkronizálást vagy frissítést."
+
+#: class/mainwp-woocommerce-status-abilities.class.php:47
+msgid ""
+"Read one accessible store’s last stored sales, order counts, stock counts "
+"and top seller. Weekly sales appear only when stored. Does not sync or "
+"refresh."
+msgstr "Egy elérhető áruház utoljára tárolt értékesítési adatainak, rendelési darabszámának, készletdarabszámának és legkelendőbb termékének beolvasása. A heti értékesítés csak akkor jelenik meg, ha tárolva van. Nem végez szinkronizálást vagy frissítést."
+
+#: class/mainwp-woocommerce-status-abilities.class.php:94
+#: class/mainwp-woocommerce-status-abilities.class.php:101
+#: class/mainwp-woocommerce-status-abilities.class.php:104
+#: class/mainwp-woocommerce-status-abilities.class.php:107
+#: class/mainwp-woocommerce-status-abilities.class.php:110
+msgid "You do not have permission to access this ability."
+msgstr "Nincs jogosultsága ennek a képességnek az eléréséhez."
+
+#: class/mainwp-woocommerce-status-abilities.class.php:138
+msgid "You do not have permission to access this site."
+msgstr "Nincs jogosultsága a webhely eléréséhez."
+
+#. translators: %d: Dashboard site ID.
+#: class/mainwp-woocommerce-status-abilities.class.php:185
+#, php-format
+msgid "No site found with ID %d."
+msgstr "Nem található webhely ezzel az ID-val: %d."
+
+#: class/mainwp-woocommerce-status.class.php:365
 msgid "Woocommerce Status (All Stores)"
-msgstr "Woocommerce Státusz (Összes áruház)"
+msgstr "WooCommerce-állapot (összes áruház)"
 
-#: class/mainwp-woocommerce-status.class.php:162
+#: class/mainwp-woocommerce-status.class.php:368
 msgid "Woocommerce Status"
-msgstr "Woocommerce Státusz"
+msgstr "WooCommerce-állapot"
 
-#: class/mainwp-woocommerce-status.class.php:201
+#: class/mainwp-woocommerce-status.class.php:409
 msgid "Site"
 msgstr "Webhely"
 
-#: class/mainwp-woocommerce-status.class.php:203
-msgid "URL"
-msgstr "URL"
+#: class/mainwp-woocommerce-status.class.php:411
+msgid "Sales Last 7 Days"
+msgstr "Értékesítés az elmúlt 7 napban"
 
-#: class/mainwp-woocommerce-status.class.php:204
+#: class/mainwp-woocommerce-status.class.php:413
 msgid "Sales This Month"
 msgstr "Eladások ebben a hónapban"
 
-#: class/mainwp-woocommerce-status.class.php:205
-msgid "Top Seller"
-msgstr "Legkelendőbb"
+#: class/mainwp-woocommerce-status.class.php:414
+#: class/mainwp-woocommerce-status.class.php:747
+msgid "Top Seller This Month"
+msgstr "A hónap legkelendőbb terméke"
 
-#: class/mainwp-woocommerce-status.class.php:206
+#: class/mainwp-woocommerce-status.class.php:415
 msgid "Awaiting Processing"
 msgstr "Feldolgozásra vár"
 
-#: class/mainwp-woocommerce-status.class.php:207
+#: class/mainwp-woocommerce-status.class.php:416
 msgid "On Hold"
 msgstr "Várakozik"
 
-#: class/mainwp-woocommerce-status.class.php:208
+#: class/mainwp-woocommerce-status.class.php:417
 msgid "Low in Stock"
 msgstr "Alacsony készlet"
 
-#: class/mainwp-woocommerce-status.class.php:209
+#: class/mainwp-woocommerce-status.class.php:418
 msgid "Out of Stock"
 msgstr "Nincs készleten"
 
-#: class/mainwp-woocommerce-status.class.php:217
+#: class/mainwp-woocommerce-status.class.php:426
 msgid "WooCommerce plugin not found on any of the child sites."
 msgstr "A WooCommerce bővítmény a gyermek webhelyek egyikén sem található."
 
-#: class/mainwp-woocommerce-status.class.php:358
-#: class/mainwp-woocommerce-status.class.php:365
-#: class/mainwp-woocommerce-status.class.php:371
-#: class/mainwp-woocommerce-status.class.php:378
-msgid "Orders"
-msgstr "Rendelések"
-
-#: class/mainwp-woocommerce-status.class.php:363
-#: class/mainwp-woocommerce-status.class.php:376
+#: class/mainwp-woocommerce-status.class.php:560
+#: class/mainwp-woocommerce-status.class.php:561
 msgid "Order"
 msgstr "Rendelés"
 
-#: class/mainwp-woocommerce-status.class.php:384
-#: class/mainwp-woocommerce-status.class.php:391
-#: class/mainwp-woocommerce-status.class.php:397
-#: class/mainwp-woocommerce-status.class.php:404
-msgid "Products"
-msgstr "Termékek"
+#: class/mainwp-woocommerce-status.class.php:560
+#: class/mainwp-woocommerce-status.class.php:561
+msgid "Orders"
+msgstr "Rendelések"
 
-#: class/mainwp-woocommerce-status.class.php:389
-#: class/mainwp-woocommerce-status.class.php:402
+#: class/mainwp-woocommerce-status.class.php:562
+#: class/mainwp-woocommerce-status.class.php:563
 msgid "Product"
 msgstr "Termék"
 
-#: class/mainwp-woocommerce-status.class.php:444
+#: class/mainwp-woocommerce-status.class.php:562
+#: class/mainwp-woocommerce-status.class.php:563
+msgid "Products"
+msgstr "Termékek"
+
+#: class/mainwp-woocommerce-status.class.php:607
 #: mainwp-woocommerce-status-extension.php:184
 msgid "WooCommerce Status"
-msgstr "WooCommerce Státusz"
+msgstr "WooCommerce-állapot"
 
-#: class/mainwp-woocommerce-status.class.php:445
+#: class/mainwp-woocommerce-status.class.php:608
 msgid "See the WooCommerce stats"
 msgstr "Tekintse meg a WooCommerce statisztikákat"
 
-#: class/mainwp-woocommerce-status.class.php:468
+#: class/mainwp-woocommerce-status.class.php:631
 msgid "No data available!"
-msgstr "Nem áll rendelkezésre adat!"
+msgstr "Nem állnak rendelkezésre adatok!"
 
-#: class/mainwp-woocommerce-status.class.php:469
+#: class/mainwp-woocommerce-status.class.php:632
 msgid "WooCommerce plugin not detected on the child site."
 msgstr "A WooCommerce bővítmény nem észlelhető a gyermek webhelyen."
+
+#: class/mainwp-woocommerce-status.class.php:774
+msgid "Top Sellers This Month"
+msgstr "A hónap legkelendőbb termékei"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Top Seller"
+#~ msgstr "Legkelendőbb"

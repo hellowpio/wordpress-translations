@@ -1,0 +1,799 @@
+# Copyright (C) 2026 MetaBox.io
+# This file is distributed under the GPL2+.
+msgid ""
+msgstr ""
+"Project-Id-Version: MB Frontend Submission 4.6.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mb-frontend-submission\n"
+"POT-Creation-Date: 2026-10-31T10:20:12+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: mb-frontend-submission\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: MB Frontend Submission\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 4.6.1\n"
+
+#. Plugin Name of the plugin
+#: mb-frontend-submission.php
+msgid "MB Frontend Submission"
+msgstr "MB Frontend Submission"
+
+#. Plugin URI of the plugin
+#: mb-frontend-submission.php
+msgid "https://metabox.io/plugins/mb-frontend-submission"
+msgstr "https://metabox.io/plugins/mb-frontend-submission"
+
+#. Description of the plugin
+#: mb-frontend-submission.php
+msgid "Submit posts and custom fields in the frontend."
+msgstr "Bejegyzések és egyéni mezők beküldése a frontend felületen."
+
+#. Author of the plugin
+#: mb-frontend-submission.php
+msgid "MetaBox.io"
+msgstr "MetaBox.io"
+
+#. Author URI of the plugin
+#: mb-frontend-submission.php
+msgid "https://metabox.io"
+msgstr "https://metabox.io"
+
+#: src/Blocks/DataTrait.php:16 src/Integrations/Bricks/SubmissionForm.php:74
+#: src/Integrations/Bricks/UserDashboard.php:43
+#: src/Integrations/Elementor/SubmissionForm.php:59
+#: src/Integrations/Elementor/UserDashboard.php:61
+msgid "Post"
+msgstr "Bejegyzés"
+
+#: src/Blocks/DataTrait.php:17 src/Integrations/Bricks/SubmissionForm.php:75
+#: src/Integrations/Bricks/UserDashboard.php:44
+#: src/Integrations/Elementor/SubmissionForm.php:60
+#: src/Integrations/Elementor/UserDashboard.php:62
+msgid "Custom Model"
+msgstr "Egyéni modell"
+
+#: src/Dashboard/Delete.php:74 src/Dashboard/Delete.php:82
+msgid "Failed to delete the record."
+msgstr "Nem sikerült törölni a rekordot."
+
+#: src/Dashboard/Renderer.php:17
+msgid "Please login to view the dashboard."
+msgstr "Kérlek, jelentkezz be a vezérlőpult megtekintéséhez."
+
+#. Translators: %d - page ID.
+#: src/Dashboard/Renderer.php:24
+#, php-format
+msgid "Something is wrong with the edit page with ID #%d. Please check again"
+msgstr "Valami nincs rendben a(z) #%d ID-jű szerkesztési oldallal. Ellenőrizd újra"
+
+#: src/Dashboard/Renderer.php:32 src/Integrations/Bricks/UserDashboard.php:162
+#: src/Integrations/Elementor/UserDashboard.php:214
+msgid "Add New"
+msgstr "Új hozzáadása"
+
+#: src/Dashboard/Renderer.php:44 src/FormFactory.php:60
+#: src/Integrations/Bricks/SubmissionForm.php:120
+#: src/Integrations/Bricks/SubmissionForm.php:138
+#: src/Integrations/Bricks/SubmissionForm.php:265
+#: src/Integrations/Bricks/UserDashboard.php:89
+#: src/Integrations/Bricks/UserDashboard.php:118
+#: src/Integrations/Elementor/SubmissionForm.php:43
+#: src/Integrations/Elementor/SubmissionForm.php:100
+#: src/Integrations/Elementor/UserDashboard.php:128
+#: src/Integrations/Elementor/UserDashboard.php:159
+#: blocks/submission-form/build/index.js:1
+msgid "Title"
+msgstr "Cím"
+
+#: src/Dashboard/Renderer.php:45
+#: src/Integrations/Bricks/SubmissionForm.php:123
+#: src/Integrations/Bricks/SubmissionForm.php:159
+#: src/Integrations/Bricks/SubmissionForm.php:268
+#: src/Integrations/Bricks/UserDashboard.php:90
+#: src/Integrations/Bricks/UserDashboard.php:126
+#: src/Integrations/Elementor/SubmissionForm.php:104
+#: src/Integrations/Elementor/UserDashboard.php:129
+#: src/Integrations/Elementor/UserDashboard.php:169
+#: blocks/submission-form/build/index.js:1
+msgid "Date"
+msgstr "Dátum"
+
+#: src/Dashboard/Renderer.php:46 src/Integrations/Bricks/UserDashboard.php:91
+#: src/Integrations/Bricks/UserDashboard.php:134
+#: src/Integrations/Elementor/UserDashboard.php:130
+#: src/Integrations/Elementor/UserDashboard.php:179
+msgid "Status"
+msgstr "Állapot"
+
+#: src/Dashboard/Renderer.php:47 src/Integrations/Bricks/UserDashboard.php:142
+#: src/Integrations/Elementor/UserDashboard.php:189
+msgid "Actions"
+msgstr "Műveletek"
+
+#: src/Dashboard/Renderer.php:80
+msgid "Model name is required"
+msgstr "A modell neve kötelező"
+
+#. Translators: %s - model name.
+#: src/Dashboard/Renderer.php:85 src/Dashboard/Renderer.php:92
+#, php-format
+msgid "Model %s not found"
+msgstr "A(z) %s modell nem található"
+
+#. Translators: %s - user display name.
+#: src/Dashboard/Renderer.php:154 src/Dashboard/Renderer.php:165
+#, php-format
+msgid "Howdie, %s!"
+msgstr "Üdv, %s!"
+
+#. Translators: %1$d - number of posts, %2$s - post label name.
+#: src/Dashboard/Renderer.php:156 src/Dashboard/Renderer.php:167
+#, php-format
+msgid "You have %1$d %2$s."
+msgstr "A nálad lévő %2$s száma: %1$d."
+
+#: src/Dashboard/Renderer.php:228 src/Dashboard/Renderer.php:315
+#: src/Integrations/Bricks/SubmissionForm.php:43
+#: src/Integrations/Bricks/UserDashboard.php:152
+#: src/Integrations/Elementor/UserDashboard.php:201
+#: blocks/user-dashboard/build/index.js:1
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: src/Dashboard/Renderer.php:354
+msgid "&laquo; Previous"
+msgstr "&laquo; Előző"
+
+#: src/Dashboard/Renderer.php:355
+msgid "Next &raquo;"
+msgstr "Következő &raquo;"
+
+#: src/Dashboard/Renderer.php:370
+msgid "Are you sure to delete this record?"
+msgstr "Biztosan törlöd ezt a rekordot?"
+
+#: src/Form.php:49 src/Form.php:193
+msgid "You are not allowed to edit this post."
+msgstr "Nincs jogosultságod a bejegyzés szerkesztéséhez."
+
+#: src/Form.php:205
+msgid "Invalid form submission"
+msgstr "Érvénytelen űrlapbeküldés"
+
+#: src/Form.php:242
+msgid "You are not allowed to delete this post."
+msgstr "Nincs jogosultságod ennek a bejegyzésnek a törléséhez."
+
+#: src/Form.php:279
+msgid "Clear"
+msgstr "Törlés"
+
+#: src/Form.php:280
+msgid "Clear color"
+msgstr "Szín törlése"
+
+#: src/Form.php:281
+msgid "Default"
+msgstr "Alapértelmezett"
+
+#: src/Form.php:282
+msgid "Select default color"
+msgstr "Alapértelmezett szín kiválasztása"
+
+#: src/Form.php:283
+msgid "Select Color"
+msgstr "Szín kiválasztása"
+
+#: src/Form.php:284
+msgid "Color value"
+msgstr "Szín értéke"
+
+#: src/Form.php:305
+msgid "Are you sure to delete this post?"
+msgstr "Biztosan törlöd ezt a bejegyzést?"
+
+#: src/Form.php:323
+msgid "Please complete the captcha."
+msgstr "Töltsd ki a captchát."
+
+#: src/Form.php:324
+msgid "Error trying to execute grecaptcha."
+msgstr "Hiba a grecaptcha futtatásakor."
+
+#: src/FormFactory.php:67 src/Integrations/Bricks/SubmissionForm.php:173
+#: src/Integrations/Bricks/SubmissionForm.php:270
+msgid "Submit"
+msgstr "Küldés"
+
+#: src/FormFactory.php:68 src/Integrations/Bricks/SubmissionForm.php:180
+#: src/Integrations/Bricks/SubmissionForm.php:271
+msgid "Add new"
+msgstr "Új hozzáadása"
+
+#: src/FormFactory.php:69 src/Integrations/Bricks/SubmissionForm.php:187
+#: src/Integrations/Bricks/SubmissionForm.php:272
+msgid "Delete"
+msgstr "Törlés"
+
+#: src/FormFactory.php:70 src/Integrations/Bricks/SubmissionForm.php:274
+#: src/Integrations/Elementor/SubmissionForm.php:127
+msgid "Your post has been successfully submitted. Thank you."
+msgstr "A bejegyzésed sikeresen beküldve. Köszönjük."
+
+#: src/FormFactory.php:71 src/Integrations/Bricks/SubmissionForm.php:275
+msgid "Your post has been successfully deleted."
+msgstr "A bejegyzésed sikeresen törölve."
+
+#: src/Integrations/Bricks/SubmissionForm.php:14
+#: src/Integrations/Elementor/SubmissionForm.php:15
+msgid "Submission Form"
+msgstr "Beküldési űrlap"
+
+#: src/Integrations/Bricks/SubmissionForm.php:20
+msgid "ID"
+msgstr "ID"
+
+#: src/Integrations/Bricks/SubmissionForm.php:23
+msgid ""
+"Field group ID(s). If multiple field groups, enter their IDs separated by "
+"commas."
+msgstr "Mezőcsoport-ID(k). Ha több mezőcsoport van, add meg az ID-ket vesszővel elválasztva."
+
+#: src/Integrations/Bricks/SubmissionForm.php:28
+msgid "Enable Ajax submission"
+msgstr "Ajax-beküldés engedélyezése"
+
+#: src/Integrations/Bricks/SubmissionForm.php:35
+#: blocks/submission-form/build/index.js:1
+msgid "Allow scroll"
+msgstr "Görgetés engedélyezése"
+
+#: src/Integrations/Bricks/SubmissionForm.php:38
+msgid "Enable scroll to message after ajax submission."
+msgstr "Az Ajax-beküldés után kapcsold be az üzenethez való görgetést."
+
+#: src/Integrations/Bricks/SubmissionForm.php:46
+msgid ""
+"Allow users to edit the post after submitting. If enabled then ajax "
+"attribute will be disabled."
+msgstr "Engedélyezd a felhasználóknak, hogy a beküldés után szerkeszthessék a bejegyzést. Ha be van kapcsolva, az Ajax-attribútum ki lesz kapcsolva."
+
+#: src/Integrations/Bricks/SubmissionForm.php:51
+msgid "Allow delete"
+msgstr "Törlés engedélyezése"
+
+#: src/Integrations/Bricks/SubmissionForm.php:54
+msgid "Allow users to delete the submitted post."
+msgstr "Engedélyezd a felhasználóknak a beküldött bejegyzés törlését."
+
+#: src/Integrations/Bricks/SubmissionForm.php:59
+#: blocks/submission-form/build/index.js:1
+msgid "Force delete"
+msgstr "Végleges törlés"
+
+#: src/Integrations/Bricks/SubmissionForm.php:62
+msgid ""
+"Whether to delete the submitted post permanently or temporarily (move to "
+"Trash)."
+msgstr "Hogy a beküldött bejegyzést véglegesen vagy ideiglenesen töröld (Lomtárba helyezés)."
+
+#: src/Integrations/Bricks/SubmissionForm.php:67
+msgid "Show add more"
+msgstr "Továbbiak hozzáadásának megjelenítése"
+
+#: src/Integrations/Bricks/SubmissionForm.php:70
+msgid "Show add new button after submit."
+msgstr "Új hozzáadása gomb megjelenítése beküldés után."
+
+#: src/Integrations/Bricks/SubmissionForm.php:80
+#: src/Integrations/Bricks/UserDashboard.php:48
+#: src/Integrations/Elementor/SubmissionForm.php:67
+#: src/Integrations/Elementor/UserDashboard.php:69
+#: blocks/submission-form/build/index.js:1
+#: blocks/user-dashboard/build/index.js:1
+msgid "Object type"
+msgstr "Objektum típusa"
+
+#: src/Integrations/Bricks/SubmissionForm.php:84
+msgid "Object type to submit."
+msgstr "Beküldendő objektumtípus."
+
+#: src/Integrations/Bricks/SubmissionForm.php:89
+#: src/Integrations/Elementor/SubmissionForm.php:77
+#: blocks/submission-form/build/index.js:1
+msgid "Object ID"
+msgstr "Objektum ID"
+
+#: src/Integrations/Bricks/SubmissionForm.php:92
+msgid ""
+"The object ID. Used when you want to update an existing object. If you want "
+"to pass the ID of the current post, set it to \"current\"."
+msgstr "Az objektum ID-je. Akkor használd, ha egy meglévő objektumot szeretnél frissíteni. Ha az aktuális bejegyzés ID-ját szeretnéd átadni, állítsd „current” értékre."
+
+#: src/Integrations/Bricks/SubmissionForm.php:98
+#: src/Integrations/Bricks/UserDashboard.php:74
+#: src/Integrations/Elementor/SubmissionForm.php:87
+#: src/Integrations/Elementor/UserDashboard.php:108
+#: blocks/submission-form/build/index.js:1
+#: blocks/user-dashboard/build/index.js:1
+msgid "Post type"
+msgstr "Bejegyzéstípus"
+
+#: src/Integrations/Bricks/SubmissionForm.php:102
+msgid ""
+"The submitted post type. Default is the first post type defined in the meta "
+"box. If meta box is made for multiple post types, you should set this "
+"attribute to the correct one."
+msgstr "A beküldött bejegyzéstípus. Alapértelmezés szerint a meta boxban elsőként meghatározott bejegyzéstípus az alapértelmezett. Ha a meta box több bejegyzéstípushoz készült, állítsd ezt az attribútumot a megfelelő értékre."
+
+#: src/Integrations/Bricks/SubmissionForm.php:108
+#: src/Integrations/Elementor/SubmissionForm.php:116
+#: blocks/submission-form/build/index.js:1
+msgid "Post status"
+msgstr "Bejegyzés állapota"
+
+#: src/Integrations/Bricks/SubmissionForm.php:112
+msgid "The status for submitted posts."
+msgstr "A beküldött bejegyzések állapota."
+
+#: src/Integrations/Bricks/SubmissionForm.php:117
+msgid "Post Fields"
+msgstr "Bejegyzés mezői"
+
+#: src/Integrations/Bricks/SubmissionForm.php:121
+#: src/Integrations/Bricks/SubmissionForm.php:145
+#: src/Integrations/Bricks/SubmissionForm.php:266
+#: src/Integrations/Elementor/SubmissionForm.php:34
+#: src/Integrations/Elementor/SubmissionForm.php:101
+#: src/Integrations/Elementor/UserDashboard.php:35
+#: blocks/submission-form/build/index.js:1
+msgid "Content"
+msgstr "Tartalom"
+
+#: src/Integrations/Bricks/SubmissionForm.php:122
+#: src/Integrations/Bricks/SubmissionForm.php:152
+#: src/Integrations/Bricks/SubmissionForm.php:267
+#: src/Integrations/Elementor/SubmissionForm.php:102
+#: blocks/submission-form/build/index.js:1
+msgid "Excerpt"
+msgstr "Kivonat"
+
+#: src/Integrations/Bricks/SubmissionForm.php:124
+#: src/Integrations/Bricks/SubmissionForm.php:166
+#: src/Integrations/Bricks/SubmissionForm.php:269
+#: src/Integrations/Elementor/SubmissionForm.php:103
+#: blocks/submission-form/build/index.js:1
+msgid "Thumbnail"
+msgstr "Bélyegkép"
+
+#: src/Integrations/Bricks/SubmissionForm.php:131
+#: blocks/submission-form/build/index.js:1
+msgid "List of post fields you want to show in the frontend."
+msgstr "Azoknak a bejegyzésmezőknek a listája, amelyeket a frontenden meg szeretnél jeleníteni."
+
+#: src/Integrations/Bricks/SubmissionForm.php:136
+msgid "Title field label"
+msgstr "Címmező címkéje"
+
+#: src/Integrations/Bricks/SubmissionForm.php:143
+msgid "Content field label"
+msgstr "Tartalommező címkéje"
+
+#: src/Integrations/Bricks/SubmissionForm.php:150
+msgid "Excerpt field label"
+msgstr "Kivonatmező címkéje"
+
+#: src/Integrations/Bricks/SubmissionForm.php:157
+msgid "Date field label"
+msgstr "Dátummező címkéje"
+
+#: src/Integrations/Bricks/SubmissionForm.php:164
+msgid "Thumbnail field label"
+msgstr "Bélyegképmező címkéje"
+
+#: src/Integrations/Bricks/SubmissionForm.php:171
+#: blocks/submission-form/build/index.js:1
+msgid "Submit button text"
+msgstr "Küldés gomb szövege"
+
+#: src/Integrations/Bricks/SubmissionForm.php:178
+#: blocks/submission-form/build/index.js:1
+msgid "Add new button text"
+msgstr "Új hozzáadása gomb szövege"
+
+#: src/Integrations/Bricks/SubmissionForm.php:185
+#: blocks/submission-form/build/index.js:1
+msgid "Delete button text"
+msgstr "Törlés gomb szövege"
+
+#: src/Integrations/Bricks/SubmissionForm.php:192
+#: blocks/submission-form/build/index.js:1
+msgid "Custom redirect URL"
+msgstr "Egyéni átirányítási URL"
+
+#: src/Integrations/Bricks/SubmissionForm.php:199
+#: blocks/submission-form/build/index.js:1
+msgid "Confirmation text"
+msgstr "Megerősítő szöveg"
+
+#: src/Integrations/Bricks/SubmissionForm.php:202
+#: src/Integrations/Elementor/SubmissionForm.php:129
+#: blocks/submission-form/build/index.js:1
+msgid ""
+"The text for the confirmation message when the form is successfully "
+"submitted."
+msgstr "Az űrlap sikeres beküldésekor megjelenő megerősítő üzenet szövege."
+
+#: src/Integrations/Bricks/SubmissionForm.php:207
+#: blocks/submission-form/build/index.js:1
+msgid "Delete confirmation text"
+msgstr "Törlést megerősítő szöveg"
+
+#: src/Integrations/Bricks/SubmissionForm.php:210
+msgid "The text for the confirmation message when the post is deleted."
+msgstr "A megerősítő üzenet szövege a bejegyzés törlésekor."
+
+#: src/Integrations/Bricks/SubmissionForm.php:215
+#: src/Integrations/Elementor/SubmissionForm.php:149
+#: blocks/submission-form/build/index.js:1
+msgid "Captcha provider"
+msgstr "CAPTCHA-szolgáltató"
+
+#: src/Integrations/Bricks/SubmissionForm.php:218
+#: src/Integrations/Elementor/SubmissionForm.php:151
+#: blocks/submission-form/build/index.js:1
+msgid "Google reCaptcha (v3)"
+msgstr "Google reCaptcha (v3)"
+
+#: src/Integrations/Bricks/SubmissionForm.php:219
+#: src/Integrations/Elementor/SubmissionForm.php:152
+#: blocks/submission-form/build/index.js:1
+msgid "Cloudflare Turnstile"
+msgstr "Cloudflare Turnstile"
+
+#: src/Integrations/Bricks/SubmissionForm.php:226
+#: src/Integrations/Elementor/SubmissionForm.php:165
+msgid "Captcha key"
+msgstr "CAPTCHA-kulcs"
+
+#: src/Integrations/Bricks/SubmissionForm.php:229
+msgid "Site key for Google reCaptcha v3 or Cloudflare Turnstile."
+msgstr "Webhelykulcs a Google reCAPTCHA v3-hoz vagy a Cloudflare Turnstile-höz."
+
+#: src/Integrations/Bricks/SubmissionForm.php:234
+#: src/Integrations/Elementor/SubmissionForm.php:177
+msgid "Captcha secret"
+msgstr "CAPTCHA-titok"
+
+#: src/Integrations/Bricks/SubmissionForm.php:237
+msgid "Secret key for Google reCaptcha v3 or Cloudflare Turnstile."
+msgstr "Titkos kulcs a Google reCAPTCHA v3-hoz vagy a Cloudflare Turnstile-höz."
+
+#: src/Integrations/Bricks/UserDashboard.php:14
+#: src/Integrations/Elementor/UserDashboard.php:16
+msgid "User Dashboard"
+msgstr "Felhasználói vezérlőpult"
+
+#: src/Integrations/Bricks/UserDashboard.php:27
+msgid "Edit Page"
+msgstr "Oldal szerkesztése"
+
+#: src/Integrations/Bricks/UserDashboard.php:31
+#: src/Integrations/Elementor/UserDashboard.php:54
+msgid "Choose a page where users can submit posts."
+msgstr "Válassz ki egy oldalt, ahol a felhasználók bejegyzéseket küldhetnek be."
+
+#: src/Integrations/Bricks/UserDashboard.php:36
+#: src/Integrations/Elementor/SubmissionForm.php:52
+#: src/Integrations/Elementor/UserDashboard.php:97
+msgid "Field group ID(s)"
+msgstr "Mezőcsoport ID(k)"
+
+#: src/Integrations/Bricks/UserDashboard.php:39
+#: src/Integrations/Elementor/UserDashboard.php:99
+msgid ""
+"Overwrite field group ID(s) from the edit page. If multiple field groups, "
+"enter their IDs separated by commas."
+msgstr "A szerkesztő oldalon megadott mezőcsoport ID(k) felülírása. Több mezőcsoport esetén add meg az ID-ket vesszővel elválasztva."
+
+#: src/Integrations/Bricks/UserDashboard.php:52
+msgid "Object type of the submissions."
+msgstr "A beküldések objektumtípusa."
+
+#: src/Integrations/Bricks/UserDashboard.php:56
+#: src/Integrations/Elementor/UserDashboard.php:77
+msgid "Select"
+msgstr "Kiválasztás"
+
+#: src/Integrations/Bricks/UserDashboard.php:63
+#: src/Integrations/Elementor/UserDashboard.php:86
+#: blocks/user-dashboard/build/index.js:1
+msgid "Model name"
+msgstr "Modell neve"
+
+#: src/Integrations/Bricks/UserDashboard.php:67
+#: src/Integrations/Elementor/UserDashboard.php:89
+msgid "Select related model for the submissions."
+msgstr "Válaszd ki a beküldésekhez kapcsolódó modellt."
+
+#: src/Integrations/Bricks/UserDashboard.php:78
+#: src/Integrations/Elementor/UserDashboard.php:111
+#: blocks/user-dashboard/build/index.js:1
+msgid "Overwrite the submitted post type from the edit page."
+msgstr "A beküldött bejegyzéstípus felülírása a szerkesztő oldalról."
+
+#: src/Integrations/Bricks/UserDashboard.php:83
+#: src/Integrations/Elementor/UserDashboard.php:119
+#: blocks/user-dashboard/build/index.js:1
+msgid "Show welcome message"
+msgstr "Üdvözlő üzenet megjelenítése"
+
+#: src/Integrations/Bricks/UserDashboard.php:102
+#: src/Integrations/Elementor/UserDashboard.php:146
+#: blocks/user-dashboard/build/index.js:1
+msgid "Columns"
+msgstr "Oszlopok"
+
+#: src/Integrations/Bricks/UserDashboard.php:111
+#: src/Integrations/Elementor/UserDashboard.php:150
+msgid "List of columns to be displayed in the dashboard."
+msgstr "A vezérlőpulton megjelenítendő oszlopok listája."
+
+#: src/Integrations/Bricks/UserDashboard.php:116
+#: src/Integrations/Elementor/UserDashboard.php:157
+msgid "Title Column Label"
+msgstr "Cím oszlop címkéje"
+
+#: src/Integrations/Bricks/UserDashboard.php:119
+#: src/Integrations/Elementor/UserDashboard.php:160
+msgid "The label for the title column."
+msgstr "A cím oszlop címkéje."
+
+#: src/Integrations/Bricks/UserDashboard.php:124
+#: src/Integrations/Elementor/UserDashboard.php:167
+msgid "Date Column Label"
+msgstr "Dátum oszlop címkéje"
+
+#: src/Integrations/Bricks/UserDashboard.php:127
+#: src/Integrations/Elementor/UserDashboard.php:170
+msgid "The label for the date column."
+msgstr "A dátum oszlop címkéje."
+
+#: src/Integrations/Bricks/UserDashboard.php:132
+#: src/Integrations/Elementor/UserDashboard.php:177
+msgid "Status Column Label"
+msgstr "Állapot oszlop címkéje"
+
+#: src/Integrations/Bricks/UserDashboard.php:135
+#: src/Integrations/Elementor/UserDashboard.php:180
+msgid "The label for the status column."
+msgstr "Az állapot oszlop címkéje."
+
+#: src/Integrations/Bricks/UserDashboard.php:140
+#: src/Integrations/Elementor/UserDashboard.php:187
+msgid "Actions Column Label"
+msgstr "Műveletek oszlop címkéje"
+
+#: src/Integrations/Bricks/UserDashboard.php:143
+#: src/Integrations/Elementor/UserDashboard.php:190
+#: src/Integrations/Elementor/UserDashboard.php:213
+msgid "The label for the actions column."
+msgstr "A műveletek oszlop címkéje."
+
+#: src/Integrations/Bricks/UserDashboard.php:148
+#: src/Integrations/Elementor/UserDashboard.php:198
+msgid "Post Action Link"
+msgstr "Bejegyzéshez tartozó műveleti link"
+
+#: src/Integrations/Bricks/UserDashboard.php:151
+#: src/Integrations/Elementor/UserDashboard.php:200
+#: blocks/user-dashboard/build/index.js:1
+msgid "View"
+msgstr "Megtekintés"
+
+#: src/Integrations/Bricks/UserDashboard.php:155
+#: src/Integrations/Elementor/UserDashboard.php:204
+#: blocks/user-dashboard/build/index.js:1
+msgid "The link action when clicking post titles."
+msgstr "A bejegyzés címére kattintáskor használt linkművelet."
+
+#: src/Integrations/Bricks/UserDashboard.php:160
+#: src/Integrations/Elementor/UserDashboard.php:211
+msgid "Add New Button Text"
+msgstr "Új hozzáadása gomb szövege"
+
+#: src/Integrations/Elementor/SubmissionForm.php:44
+msgid "Enter the form title"
+msgstr "Add meg az űrlap címét"
+
+#: src/Integrations/Elementor/SubmissionForm.php:54
+msgid "If multiple field groups, enter their IDs separated by commas."
+msgstr "Ha több mezőcsoport van, add meg az ID-ket vesszővel elválasztva"
+
+#: src/Integrations/Elementor/SubmissionForm.php:97
+#: blocks/submission-form/build/index.js:1
+msgid "Post fields"
+msgstr "A bejegyzés mezői"
+
+#: src/Integrations/Elementor/SubmissionForm.php:106
+msgid "Choose post fields to show on the form"
+msgstr "Válaszd ki az űrlapon megjelenítendő bejegyzésmezőket"
+
+#: src/Integrations/Elementor/SubmissionForm.php:125
+msgid "Confirmation message"
+msgstr "Megerősítő üzenet"
+
+#: src/Integrations/Elementor/SubmissionForm.php:128
+msgid "Type your description here"
+msgstr "Írd ide a leírást"
+
+#: src/Integrations/Elementor/SubmissionForm.php:137
+msgid "Use Captcha"
+msgstr "CAPTCHA használata"
+
+#: src/Integrations/Elementor/SubmissionForm.php:138
+#: src/Integrations/Elementor/SubmissionForm.php:190
+#: src/Integrations/Elementor/UserDashboard.php:120
+msgid "True"
+msgstr "Igaz"
+
+#: src/Integrations/Elementor/SubmissionForm.php:139
+#: src/Integrations/Elementor/SubmissionForm.php:191
+#: src/Integrations/Elementor/UserDashboard.php:121
+msgid "False"
+msgstr "Hamis"
+
+#: src/Integrations/Elementor/SubmissionForm.php:188
+msgid "Ajax"
+msgstr "Ajax"
+
+#: src/Integrations/Elementor/SubmissionForm.php:200
+msgid "Custom Redirect URL"
+msgstr "Egyéni átirányítási URL"
+
+#: src/Integrations/Elementor/UserDashboard.php:51
+#: blocks/user-dashboard/build/index.js:1
+msgid "Edit page"
+msgstr "Oldal szerkesztése"
+
+#: src/Integrations/Elementor/UserDashboard.php:60
+#: blocks/submission-form/build/index.js:1
+#: blocks/user-dashboard/build/index.js:1
+msgid "-"
+msgstr "-"
+
+#: src/Integrations/Elementor/UserDashboard.php:72
+#: blocks/user-dashboard/build/index.js:1
+msgid "Object type of the submissions"
+msgstr "A beküldések objektumtípusa"
+
+#: src/Post.php:85
+msgid "(No title)"
+msgstr "(Nincs cím)"
+
+#: src/Shortcode.php:112 src/Shortcode.php:124
+msgid "Invalid request. Please try again."
+msgstr "Érvénytelen kérés. Próbáld meg újra."
+
+#: src/Shortcode.php:136 src/Shortcode.php:154
+msgid "Invalid captcha token."
+msgstr "Hibás CAPTCHA-token."
+
+#: src/Shortcode.php:148
+msgid "Captcha verification failed. Please try again."
+msgstr "A CAPTCHA ellenőrzése sikertelen. Próbáld újra."
+
+#: templates/post/content.php:13
+msgid ""
+"This content field will be replaced by a WYSIWYG (visual) editor on the "
+"front end."
+msgstr "Ezt a tartalommezőt a WYSIWYG (vizuális) szerkesztő váltja fel a nyilvános felületen."
+
+#: blocks/submission-form/build/index.js:1
+msgid "Settings"
+msgstr "Beállítások"
+
+#: blocks/submission-form/build/index.js:1
+#: blocks/user-dashboard/build/index.js:1
+msgid "Field group"
+msgstr "Mezőcsoport"
+
+#: blocks/submission-form/build/index.js:1
+msgid "Enable ajax submission"
+msgstr "Ajax-beküldés engedélyezése"
+
+#: blocks/submission-form/build/index.js:1
+msgid "Allow to edit after submitting"
+msgstr "Beküldés utáni szerkesztés engedélyezése"
+
+#: blocks/submission-form/build/index.js:1
+msgid "If enabled, then ajax submission will be disabled."
+msgstr "Ha be van kapcsolva, az Ajax-beküldés kikapcsolt állapotba kerül."
+
+#: blocks/submission-form/build/index.js:1
+msgid "Allow to delete the entry"
+msgstr "A bejegyzés törlésének engedélyezése"
+
+#: blocks/submission-form/build/index.js:1
+msgid "Allow users to delete the submitted entry."
+msgstr "Engedélyezi, hogy a felhasználók töröljék a beküldött bejegyzést."
+
+#: blocks/submission-form/build/index.js:1
+msgid ""
+"Whether to delete the submitted entry permanently or temporarily (move to "
+"Trash)."
+msgstr "A beküldött bejegyzés végleges vagy ideiglenes törlése (Lomtárba helyezés)."
+
+#: blocks/submission-form/build/index.js:1
+msgid "Allow to add more entries"
+msgstr "További bejegyzések hozzáadásának engedélyezése"
+
+#: blocks/submission-form/build/index.js:1
+msgid "The object id, used when you want to update an existing entry."
+msgstr "Az objektum ID-ja, amelyet meglévő bejegyzés frissítésekor használsz."
+
+#: blocks/submission-form/build/index.js:1
+msgid "Appearance"
+msgstr "Megjelenés"
+
+#: blocks/submission-form/build/index.js:1
+msgid "Enable scroll to the message after ajax submission."
+msgstr "Az Ajax-beküldés után az üzenethez történő görgetés bekapcsolása."
+
+#: blocks/submission-form/build/index.js:1
+msgid "The text for the confirmation message when the entry is deleted."
+msgstr "A megerősítő üzenet szövege a bejegyzés törlésekor."
+
+#: blocks/submission-form/build/index.js:1
+msgid "Post fields labels"
+msgstr "Bejegyzésmezők címkéi"
+
+#: blocks/submission-form/build/index.js:1
+msgid "Captcha"
+msgstr "Captcha"
+
+#: blocks/submission-form/build/index.js:1
+msgid "Site key"
+msgstr "Webhelykulcs"
+
+#: blocks/submission-form/build/index.js:1
+msgid "Secret key"
+msgstr "Titkos kulcs"
+
+#: blocks/user-dashboard/build/index.js:1
+msgid "Choose a page where users can edit their submissions."
+msgstr "Válassz egy oldalt, ahol a felhasználók szerkeszthetik a beküldéseiket."
+
+#: blocks/user-dashboard/build/index.js:1
+msgid "Title link"
+msgstr "Cím linkje"
+
+#: blocks/user-dashboard/build/index.js:1
+msgid "Select related model for the submissions"
+msgstr "Válassz kapcsolódó modellt a beküldésekhez"
+
+#: blocks/submission-form/build/block.json
+msgctxt "block title"
+msgid "Submission Form"
+msgstr "Beküldési űrlap"
+
+#: blocks/submission-form/build/block.json
+msgctxt "block description"
+msgid "Submit posts on the front end."
+msgstr "Bejegyzések beküldése a nyilvános felületen."
+
+#: blocks/user-dashboard/build/block.json
+msgctxt "block title"
+msgid "User Dashboard"
+msgstr "Felhasználói vezérlőpult"
+
+#: blocks/user-dashboard/build/block.json
+msgctxt "block description"
+msgid "User dashboard."
+msgstr "Felhasználói vezérlőpult."

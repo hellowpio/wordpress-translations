@@ -1,0 +1,1741 @@
+# Copyright (C) 2026 OnTheGoSystems
+# This file is distributed under the same license as the WPML String Translation plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPML String Translation 5.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpml-string-translation\n"
+"POT-Creation-Date: 2026-10-15T11:52:12+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: wpml-string-translation\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: WPML String Translation\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 5.2.0\n"
+
+#. Plugin Name of the plugin
+#: plugin.php
+msgid "WPML String Translation"
+msgstr "WPML Karakterlánc-fordítás"
+
+#. Plugin URI of the plugin
+#: plugin.php
+msgid ""
+"https://wpml.org/documentation/wpml-core-and-add-on-plugins/string-"
+"translation/"
+msgstr "https://wpml.org/documentation/wpml-core-and-add-on-plugins/string-translation/"
+
+#. Description of the plugin
+#: plugin.php
+msgid ""
+"Adds theme and plugins localization capabilities to WPML | <a "
+"href=\"https://wpml.org/documentation/translating-your-"
+"contents/strings/\">Documentation</a> | <a "
+"href=\"https://wpml.org/version/wpml-string-translation-5-2-0/\">WPML String"
+" Translation 5.2.0 release notes</a>"
+msgstr "Sablonok és bővítmények honosítási lehetőségeinek hozzáadása a WPML-hez | <a href=\"https://wpml.org/documentation/translating-your-contents/strings/\">dokumentáció</a> | <a href=\"https://wpml.org/version/wpml-string-translation-5-2-0/\">WPML String Translation 5.2.0 kiadási megjegyzései</a>"
+
+#. Author of the plugin
+#: plugin.php
+msgid "OnTheGoSystems"
+msgstr "OnTheGoSystems"
+
+#. Author URI of the plugin
+#: plugin.php
+msgid "http://www.onthegosystems.com/"
+msgstr "http://www.onthegosystems.com/"
+
+#. translators: Message on the Theme and plugins localization page after a
+#. scan. %s: the number of translation files found. "Their" refers to those
+#. files. Keep the word "WPML" and both full stops: the page starts the
+#. message at "WPML" and puts the first sentence in bold.
+#: classes/API/rest/mo/Import.php:66
+#, php-format
+msgid ""
+"WPML found %s new or updated .mo files. Their texts were added to the "
+"translations table."
+msgstr "A WPML %s új vagy frissített .mo fájlt talált. A szövegeik hozzáadásra kerültek a fordítások táblájához."
+
+#. translators: Notice on the WPML screens when automatic string registration
+#. is off. %1$s: opening link tag, %2$s: closing link tag; the words between
+#. them become the link.
+#: classes/AutoRegisterStringsNotice.php:28
+#, php-format
+msgid "String auto registration is disabled. %1$sClick here to enable it%2$s"
+msgstr "A szövegek automatikus regisztrációja ki van kapcsolva. %1$sKattints ide a bekapcsolásához%2$s"
+
+#: classes/BackgroundTask/LoadExistingTranslationsTask.php:96
+msgid "Importing existing string translations for the new languages"
+msgstr "Meglévő szövegfordítások importálása az új nyelvekhez"
+
+#: classes/BackgroundTask/UpdateStringsStatusTask.php:48
+msgid "Updating string translation statuses"
+msgstr "Szövegfordítási állapotok frissítése"
+
+#: classes/batch-action/ChangeLanguageOfStringsInDomain.php:47
+#: classes/batch-action/CountStringsInDomain.php:16
+#: classes/batch-action/DeleteStringsInDomain.php:33
+#: classes/batch-action/InitChangeStringLangOfDomain.php:53
+#: classes/strings-cleanup/ajax/InitStringsRemoving.php:52
+#: classes/strings-cleanup/ajax/RemoveStringsFromDomains.php:42
+msgid "Error: please try again"
+msgstr "Hiba: próbáld meg újra"
+
+#. translators: Status value on the String Translation page: every language of
+#. the text has a translation.
+#: classes/class-wpml-st-string-statuses.php:15
+msgid "Translation complete"
+msgstr "Fordítás kész"
+
+#. translators: Status value on the String Translation page: some languages of
+#. the text have a translation and some do not.
+#: classes/class-wpml-st-string-statuses.php:19
+msgid "Partial translation"
+msgstr "Részleges fordítás"
+
+#: classes/class-wpml-st-string-statuses.php:22
+msgid "Translation needs update"
+msgstr "A fordítás frissítést igényel"
+
+#. translators: Status value on the String Translation and Packages pages: the
+#. text has no translation yet.
+#: classes/class-wpml-st-string-statuses.php:26
+#: inc/package-translation/inc/wpml-package-translation-metabox.class.php:414
+#: inc/package-translation/inc/wpml-package-translation-metabox.class.php:452
+msgid "Not translated"
+msgstr "Nincs lefordítva"
+
+#: classes/class-wpml-st-string-statuses.php:29
+#: inc/package-translation/inc/wpml-package-translation-metabox.class.php:399
+#: menu/string-translation.php:193
+msgid "Waiting for translator"
+msgstr "Fordítóra vár"
+
+#. translators: Admin notice shown when WPML String Translation is active but
+#. WPML core is missing. %1$s: the URL of the client's wpml.org account
+#. downloads page, which fills the first link. %2$s: the URL of this site's
+#. Plugins screen, which fills the second link.
+#: classes/class-wpml-st-verify-dependencies.php:63
+#, php-format
+msgid ""
+"WPML String Translation is active, but it needs WPML Multilingual CMS, which"
+" is not installed or not active. String Translation stays off until WPML "
+"runs. Download WPML from <a href=\"%1$s\">your wpml.org account</a> and "
+"activate it on the <a href=\"%2$s\">Plugins screen</a>."
+msgstr "A WPML String Translation aktív, de szüksége van a WPML Multilingual CMS-re, amely nincs telepítve vagy nem aktív. A String Translation kikapcsolva marad, amíg a WPML nem működik. Töltsd le a WPML-t a <a href=\"%1$s\">wpml.org-fiókodból</a>, és kapcsold be a <a href=\"%2$s\">bővítmények oldalán</a>."
+
+#. translators: Admin notice shown when the installed WPML core is older than
+#. WPML String Translation needs. %1$s: String Translation's own version.
+#. %2$s: the minimum WPML version it needs. %3$s: the WPML version this site
+#. runs. %4$s: the URL of this site's Plugins screen, which fills the link.
+#: classes/class-wpml-st-verify-dependencies.php:84
+#, php-format
+msgid ""
+"WPML String Translation %1$s needs WPML Multilingual CMS %2$s or newer. This"
+" site runs WPML %3$s, so String Translation stays off until WPML is updated."
+" Update WPML on the <a href=\"%4$s\">Plugins screen</a>."
+msgstr "A WPML String Translation %1$s a WPML Multilingual CMS %2$s vagy újabb verzióját igényli. Ezen a webhelyen a WPML %3$s fut, ezért a String Translation kikapcsolva marad a WPML frissítéséig. Frissítsd a WPML-t a <a href=\"%4$s\">bővítmények oldalán</a>."
+
+#. translators: Error message shown when the user does not have the rights to
+#. do what they asked for. Past participle used as a state, lower case in the
+#. source.
+#: classes/filters/class-wpml-st-taxonomy-labels-translation.php:318
+#: classes/filters/class-wpml-st-taxonomy-labels-translation.php:376
+#: classes/gettext-hooks/AutoRegisterSettings.php:191
+#: classes/strings-scanning/class-wpml-st-theme-plugin-scan-files-ajax.php:24
+#: classes/strings-scanning/wpml-st-theme-plugin-scan-dir-ajax.php:26
+msgid "not allowed"
+msgstr "nem engedélyezett"
+
+#. translators: Error message shown when a request to the server arrives
+#. without the information it needs.
+#: classes/filters/class-wpml-st-taxonomy-labels-translation.php:389
+msgid "Missing parameters"
+msgstr "Hiányzó paraméterek"
+
+#. translators: Error message on the String Translation page when the security
+#. check of a request fails.
+#: classes/filters/class-wpml-st-taxonomy-labels-translation.php:430
+msgid "Invalid nonce"
+msgstr "Érvénytelen nonce"
+
+#: classes/gettext-hooks/AutoRegisterSettings.php:214
+msgid "Nonce value is invalid"
+msgstr "A nonce értéke érvénytelen"
+
+#. translators: Note on the String Translation page under the automatic string
+#. registration setting. %s: how much time is left, counted down in the page
+#. as hours, minutes and seconds.
+#: classes/gettext-hooks/AutoRegisterSettings.php:222
+#, php-format
+msgid ""
+"Automatic string registration will remain active for <span class='counter-"
+"msg'>%s</span>. Please visit the site's front-end to allow WPML to find "
+"strings for translation."
+msgstr "Az automatikus karakterlánc-regisztráció még ennyi ideig marad aktív: <span class='counter-msg'>%s</span>. Látogasd meg a webhely front-end részét, hogy a WPML megtalálja a lefordítandó karakterláncokat."
+
+#. translators: Note on the String Translation page under the automatic string
+#. registration setting, shown while the setting is off. "It" is that setting.
+#: classes/gettext-hooks/AutoRegisterSettings.php:228
+msgid ""
+"* This feature is only intended for sites that are in development. It will "
+"significantly slow down the site, but help you find strings that WPML cannot"
+" detect in the PHP code."
+msgstr "* Ez a funkció csak fejlesztés alatt álló webhelyekhez készült. Jelentősen lelassítja a webhelyet, de segít megtalálni azokat a karakterláncokat, amelyeket a WPML nem tud észlelni a PHP-kódban."
+
+#: classes/menus/theme-plugin-localization-ui/class-st-theme-plugin-localization-options-ui.php:30
+msgid ""
+"Use theme or plugin text domains when gettext calls do not use a string "
+"literal"
+msgstr "Használd a sablon vagy a bővítmény textdomainjét, ha a GetText-hívások nem sztringliterált használnak."
+
+#: classes/menus/theme-plugin-localization-ui/class-st-theme-plugin-localization-options-ui.php:31
+msgid ""
+"Some themes and plugins don't properly set the textdomain (second argument) "
+"in GetText calls. When you select this option, WPML will assume that the "
+"strings found in GetText calls in the PHP files of the theme and plugin "
+"should have the textdomain with the theme/plugin's name."
+msgstr "Egyes sablonok és bővítmények nem állítják be megfelelően a textdomain értékét (a második argumentumot) a GetText-hívásokban. Ha ezt a beállítást választod, a WPML úgy veszi, hogy a sablon és a bővítmény PHP-fájljaiban található GetText-hívásokban szereplő karakterláncok textdomainje a sablon vagy a bővítmény neve."
+
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-plugin-localization-ui.php:40
+#: classes/menus/theme-plugin-localization-ui/strategy/OtherLocalizationUI.php:40
+msgid "Scan selected plugins for strings"
+msgstr "Karakterláncok keresése a kijelölt bővítményekben"
+
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-plugin-localization-ui.php:41
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-theme-localization-ui.php:40
+#: classes/menus/theme-plugin-localization-ui/strategy/OtherLocalizationUI.php:41
+#: inc/wpml-string-translation.class.php:624
+msgid "Completely translated strings"
+msgstr "Teljesen lefordított karakterláncok"
+
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-plugin-localization-ui.php:42
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-theme-localization-ui.php:41
+#: classes/menus/theme-plugin-localization-ui/strategy/OtherLocalizationUI.php:42
+msgid "Strings in need of translation"
+msgstr "Fordítást igénylő karakterláncok"
+
+#. translators: Name of the group on the Theme and plugins localization page
+#. that holds the plugins. Noun, plural.
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-plugin-localization-ui.php:44
+msgid "Plugins"
+msgstr "Bővítmények"
+
+#. translators: Column heading on the Theme and plugins localization page: the
+#. text domain, the short name a theme or plugin uses for its texts.
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-plugin-localization-ui.php:46
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-theme-localization-ui.php:45
+#: classes/menus/theme-plugin-localization-ui/strategy/OtherLocalizationUI.php:46
+#: inc/wpml-string-translation.class.php:621
+msgid "Textdomain"
+msgstr "Textdomain"
+
+#. translators: Option in the filter on the Theme and plugins localization
+#. page: show every theme or plugin.
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-plugin-localization-ui.php:48
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-theme-localization-ui.php:47
+msgid "All"
+msgstr "Mind"
+
+#. translators: Option in the filter on the Theme and plugins localization
+#. page: show only themes or plugins that are switched on. On the Packages
+#. page it is also the state of a package that is in use. Adjective.
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-plugin-localization-ui.php:50
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-theme-localization-ui.php:49
+#: inc/package-translation/inc/wpml-package-translation.class.php:355
+msgid "Active"
+msgstr "Aktív"
+
+#. translators: Option in the filter on the Theme and plugins localization
+#. page: show only themes or plugins that are switched off. Adjective.
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-plugin-localization-ui.php:52
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-theme-localization-ui.php:51
+msgid "Inactive"
+msgstr "Inaktív"
+
+#. translators: Link on the Theme and plugins localization page that shows the
+#. text domain of each theme or plugin. Verb, imperative, lower case in the
+#. source.
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-plugin-localization-ui.php:54
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-theme-localization-ui.php:53
+#: classes/menus/theme-plugin-localization-ui/strategy/OtherLocalizationUI.php:48
+msgid "show textdomains"
+msgstr "textdomainok megjelenítése"
+
+#. translators: Link on the Theme and plugins localization page that hides the
+#. text domain of each theme or plugin. Verb, imperative, lower case in the
+#. source.
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-plugin-localization-ui.php:56
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-theme-localization-ui.php:55
+#: classes/menus/theme-plugin-localization-ui/strategy/OtherLocalizationUI.php:50
+msgid "hide textdomains"
+msgstr "textdomainok elrejtése"
+
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-plugin-localization-ui.php:57
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-theme-localization-ui.php:61
+#: classes/menus/theme-plugin-localization-ui/strategy/OtherLocalizationUI.php:51
+msgid "Download .po file"
+msgstr "PO-fájl letöltése"
+
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-plugin-localization-ui.php:99
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-theme-localization-ui.php:90
+msgid "Not scanned yet"
+msgstr "Még nincs beolvasva"
+
+#. translators: Tooltip on the icon next to a theme or plugin on the Theme and
+#. plugins localization page: its texts have already been scanned. Past
+#. participle used as a state.
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-plugin-localization-ui.php:106
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-theme-localization-ui.php:97
+msgid "Scanned"
+msgstr "Átvizsgálva"
+
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-plugin-localization-ui.php:112
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-theme-localization-ui.php:103
+#: classes/menus/theme-plugin-localization-ui/strategy/OtherLocalizationUI.php:82
+msgid "Needs re-scanning"
+msgstr "Újra beolvasandó"
+
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-theme-localization-ui.php:39
+msgid "Scan selected themes for strings"
+msgstr "Karakterláncok keresése a kijelölt sablonokban"
+
+#. translators: Name of the group on the Theme and plugins localization page
+#. that holds the themes. Noun, plural.
+#: classes/menus/theme-plugin-localization-ui/strategy/class-wpml-st-theme-localization-ui.php:43
+msgid "Themes"
+msgstr "Sablonok"
+
+#. translators: Name of the group on the Theme and plugins localization page
+#. that holds WordPress itself, as opposed to themes and plugins.
+#: classes/menus/theme-plugin-localization-ui/strategy/OtherLocalizationUI.php:44
+msgid "Core"
+msgstr "Alap"
+
+#: classes/MO/File/FailureHooks.php:87
+msgid ""
+"WPML String Translation is attempting to write .mo files with translations "
+"to folder:"
+msgstr "A WPML String Translation megpróbálja a fordításokat tartalmazó .mo fájlokat a következő mappába írni:"
+
+#: classes/MO/File/FailureHooks.php:93
+msgid ""
+"This folder appears to be not writable. This is blocking translation for "
+"strings from appearing on the site."
+msgstr "Úgy tűnik, ez a mappa nem írható. Ez megakadályozza, hogy a karakterláncok fordításai megjelenjenek a webhelyen."
+
+#. translators: Item in the list of things to check when WPML cannot write the
+#. translation files. "this" is the site the user is working on. %1$s: opening
+#. bold tag, %2$s: closing bold tag.
+#: classes/MO/File/FailureHooks.php:99
+#, php-format
+msgid ""
+"If this is a %1$slocal development site%2$s, make sure that your local "
+"server can write to this folder."
+msgstr "Ha ez egy %1$shelyi fejlesztői webhely%2$s, győződj meg róla, hogy a helyi szerver írni tud ebbe a mappába."
+
+#. translators: Item in the list of things to check when WPML cannot write the
+#. translation files. "it" is the site the user is working on. %1$s: opening
+#. bold tag, %2$s: closing bold tag.
+#: classes/MO/File/FailureHooks.php:105
+#, php-format
+msgid ""
+"If it's an %1$sonline site%2$s, contact your hosting company and request "
+"that they make that folder writable."
+msgstr "Ha ez egy %1$sonline webhely%2$s, vedd fel a kapcsolatot a tárhelyszolgáltatóddal, és kérd, hogy tegyék írhatóvá ezt a mappát."
+
+#. translators: Item in the list of things to check when WPML cannot write the
+#. translation files. %1$s: a line of PHP code, %2$s: the name of the
+#. WordPress configuration file, %3$s: the name of the folder WPML writes its
+#. files into.
+#: classes/MO/File/FailureHooks.php:111
+#, php-format
+msgid ""
+"If your hosting company cannot make that folder writable, you can point "
+"WordPress at a different one. Add %1$s to your %2$s file, then create that "
+"folder and a %3$s folder inside it."
+msgstr "Ha a tárhelyszolgáltatód nem tudja írhatóvá tenni azt a mappát, a WordPress-t egy másik mappa használatára is beállíthatod. Add hozzá a %1$s sort a %2$s fájlhoz, majd hozd létre azt a mappát, benne pedig egy %3$s mappát."
+
+#. translators: Notice shown while WPML is rebuilding the translation files.
+#. "This" is that rebuilding.
+#: classes/MO/Notice/RegenerationInProgressNotice.php:25
+msgid ""
+"WPML is updating the .mo files with the translation for strings. This will "
+"take a few more moments. During this process, translation for strings is not"
+" displaying on the front-end. You can refresh this page in a minute to see "
+"if it's done."
+msgstr "A WPML most frissíti a .mo fájlokat a szövegek fordításaival. Ez még néhány pillanatot vesz igénybe. A folyamat közben a szövegek fordítása nem jelenik meg a webhely nyilvános felületén. Egy perc múlva frissítheted ezt az oldalt, hogy ellenőrizd, elkészült-e."
+
+#. translators: Line shown under an imported text on the String Translation
+#. page while the user reviews a .po file. %s: the name the text has in that
+#. file.
+#: classes/po-import/class-wpml-po-import-review-table.php:41
+#, php-format
+msgid "Name: %s"
+msgstr "Név: %s"
+
+#: classes/po-import/class-wpml-po-import-strings.php:61
+msgid "File upload error"
+msgstr "Fájlfeltöltési hiba"
+
+#. translators: Error on the String Translation page when the .po file being
+#. imported uses a different source language. %1$s: the language the texts are
+#. already registered in, %2$s: the language the user is importing them as,
+#. %3$s: opening link tag, %4$s: closing link tag.
+#: classes/po-import/class-wpml-po-import-strings.php:135
+#, php-format
+msgid ""
+"You're trying to import strings that are already registered in %1$s. To "
+"import them as %2$s, first %3$schange the source language of existing "
+"strings%4$s using <b>String Translation</b>. Then, try importing them again."
+msgstr "Olyan szövegeket próbálsz importálni, amelyek már regisztrálva vannak a(z) %1$s helyen. Ha azt szeretnéd, hogy importáláskor %2$s legyen a forrásnyelvük, először %3$sváltoztasd meg a meglévő szövegek forrásnyelvét%4$s a <b>String Translation</b> segítségével. Ezután próbáld meg újra importálni őket."
+
+#: classes/privacy/class-wpml-st-privacy-content.php:19
+msgid ""
+"WPML String Translation will send all strings to WPML’s <b>Advanced "
+"Translation Editor</b> and to the translation services which are used."
+msgstr "A WPML String Translation az összes szöveget elküldi a WPML <b>Advanced Translation Editor</b> szerkesztőjének és a használt fordítási szolgáltatásoknak."
+
+#. translators: Notice on the String Translation screen. %1$s: opening link
+#. tag, %2$s: closing link tag; the words between them become a link to the
+#. Translation Dashboard, which is the name of that screen in the WPML menu.
+#: classes/SendStringsForTranslationNotice.php:21
+#, php-format
+msgid ""
+"To translate strings automatically, by your translators or a translation "
+"service, use the %1$sTranslation Dashboard%2$s."
+msgstr "Ha automatikusan, fordítókkal vagy fordítási szolgáltatással szeretnéd lefordítani a szövegeket, használd a %1$sFordítási vezérlőpultot%2$s."
+
+#. translators: Text above the table of slugs on the WPML settings page. %s:
+#. the name of the content type, for example "Posts" or "Products".
+#: classes/slug-translation/wpml-st-element-slug-translation-ui-model.php:55
+#, php-format
+msgid "Set different slugs in different languages for %s."
+msgstr "Állíts be különböző slugokat különböző nyelveken ehhez: %s."
+
+#: classes/slug-translation/wpml-st-element-slug-translation-ui-model.php:56
+msgid "Not marked as 'complete'. Press 'Save' to enable."
+msgstr "Nincs „kész”-ként megjelölve. Az engedélyezéshez nyomd meg a „mentés” gombot."
+
+#. translators: Marks the row of the original language in the table of slugs
+#. on the WPML settings page.
+#: classes/slug-translation/wpml-st-element-slug-translation-ui-model.php:58
+msgid "(original)"
+msgstr "(eredeti)"
+
+#. translators: Warning above the table of slugs on the WPML settings page.
+#. %s: the name of the content type, for example "Posts" or "Products".
+#: classes/slug-translation/wpml-st-element-slug-translation-ui-model.php:69
+#, php-format
+msgid ""
+"%s slugs are set to be translated, but they are missing their translation"
+msgstr "%s slugok fordításra vannak állítva, de hiányzik a fordításuk"
+
+#. translators: Error shown on the WPML settings page after saving slug
+#. translations. %1$s: the content type, for example "product". %2$s: the
+#. language code that was refused, for example "hi".
+#: classes/slug-translation/wpml-st-slug-translation-ui-save.php:196
+#, php-format
+msgid ""
+"The original language of the \"%1$s\" slug was not changed: \"%2$s\" is not "
+"one of this site's languages."
+msgstr "A(z) „%1$s” slug eredeti nyelve nem változott meg: a „%2$s” nem tartozik ennek a webhelynek a nyelvei közé."
+
+#: classes/string-tracking/class-wpml-st-string-positions-in-source.php:52
+msgid "No records found"
+msgstr "Nem találhatók rekordok"
+
+#: classes/string-translation-ui/class-wpml-change-string-domain-language-dialog.php:29
+msgid "Language of domains"
+msgstr "Domainek nyelve"
+
+#. translators: Button label that saves the settings on the String Translation
+#. page and in its dialogs. Verb, imperative.
+#: classes/string-translation-ui/class-wpml-change-string-domain-language-dialog.php:32
+#: inc/wpml-string-translation.class.php:559 menu/string-translation.php:357
+#: menu/string-translation.php:1028 menu/string-translation.php:1125
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#. translators: Button label that closes a dialog or leaves a form on the
+#. String Translation page without saving. Verb, imperative, not the noun "a
+#. cancellation".
+#: classes/string-translation-ui/class-wpml-change-string-domain-language-dialog.php:34
+#: menu/string-translation.php:168 menu/string-translation.php:358
+msgid "Cancel"
+msgstr "Mégse"
+
+#. translators: Label of the dropdown in the "Language of domains" dialog on
+#. the String Translation page, above the list of domains.
+#: classes/string-translation-ui/class-wpml-change-string-domain-language-dialog.php:40
+msgid "Select for which domain to set the language: "
+msgstr "Válaszd ki, melyik domainhez állítod be a nyelvet: "
+
+#. translators: First option in a dropdown, shown until the user picks
+#. something. The dashes are decoration and can be dropped if they read badly.
+#: classes/string-translation-ui/class-wpml-change-string-domain-language-dialog.php:46
+msgid "-- Please select --"
+msgstr "-- Válassz --"
+
+#: classes/string-translation-ui/class-wpml-change-string-domain-language-dialog.php:79
+msgid "This domain currently has the following strings:"
+msgstr "Ehhez a domainhez jelenleg a következő karakterláncok tartoznak:"
+
+#: classes/string-translation-ui/class-wpml-change-string-domain-language-dialog.php:86
+msgid "Current source language"
+msgstr "Aktuális forrásnyelv"
+
+#: classes/string-translation-ui/class-wpml-change-string-domain-language-dialog.php:87
+msgid "Number of strings"
+msgstr "Karakterláncok darabszáma"
+
+#. translators: Label of the language dropdown in the "Language of domains"
+#. dialog on the String Translation page.
+#: classes/string-translation-ui/class-wpml-change-string-domain-language-dialog.php:98
+msgid "Set the source language of these strings to:"
+msgstr "Ezeknek a karakterláncoknak a forrásnyelve legyen:"
+
+#: classes/string-translation-ui/class-wpml-change-string-domain-language-dialog.php:122
+msgid ""
+"Use this language as the default language for new strings in this domain"
+msgstr "Használd ezt a nyelvet alapértelmezettként az új karakterláncokhoz ebben a domainben"
+
+#: classes/string-translation-ui/class-wpml-change-string-language-select.php:39
+msgid "Change the language of selected strings"
+msgstr "A kijelölt karakterláncok nyelvének módosítása"
+
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:63
+msgid "No strings found"
+msgstr "Nem találhatók karakterláncok"
+
+#. translators: Shown over the list of texts on the String Translation page
+#. while a bulk action runs, above a percentage.
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:79
+msgid "Processing"
+msgstr "Feldolgozás"
+
+#. translators: Column heading in the table of texts on the String Translation
+#. page, and the label of the same value in the preview dialog: the domain is
+#. the theme, plugin or area a text comes from. Noun.
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:158
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:288
+msgid "Domain"
+msgstr "Domain"
+
+#. translators: Column heading in the table of texts on the String Translation
+#. page: the context the text is used in. Noun.
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:160
+msgid "Context"
+msgstr "Kontextus"
+
+#. translators: Column heading in the tables of texts, of packages and of
+#. themes and plugins: the name of the item in the row. Noun, not the verb "to
+#. name".
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:163
+#: inc/package-translation/inc/wpml-package-translation-html-packages.class.php:108
+#: inc/wpml-string-translation.class.php:617
+msgid "Name"
+msgstr "Név"
+
+#. translators: Column heading in the table of texts on the String Translation
+#. page: where on the site the text was seen. Noun.
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:166
+msgid "Usage"
+msgstr "Használat"
+
+#. translators: Column heading in the tables of texts on the String
+#. Translation page, and the label of the same value in the preview dialog:
+#. the text itself. Noun.
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:168
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:289
+#: menu/string-translation.php:150 menu/string-translation.php:156
+msgid "String"
+msgstr "Karakterlánc"
+
+#. translators: Message above the table on the String Translation page when
+#. every text on the page is picked. %d: how many texts that is; keep it as a
+#. word of its own with a space on each side, because the page swaps it for
+#. the count.
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:183
+#, php-format
+msgid "All %d strings on this page are selected."
+msgstr "Az összes, ezen az oldalon található %d karakterlánc ki van jelölve."
+
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:184
+msgid "Select all strings that match this search"
+msgstr "A keresésnek megfelelő összes karakterlánc kijelölése"
+
+#. translators: Message above the table on the String Translation page when
+#. every text of every page is picked. %d: how many texts that is; keep it as
+#. a word of its own with a space on each side, because the page swaps it for
+#. the count.
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:186
+#, php-format
+msgid "All %d strings from all pages are selected."
+msgstr "Az összes oldal összes %d karakterlánca ki van jelölve."
+
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:187
+msgid "Unselect all strings that match this search"
+msgstr "A keresésnek megfelelő összes karakterlánc kijelölésének megszüntetése"
+
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:292
+msgid "Preview string on site"
+msgstr "Karakterlánc előnézete a webhelyen"
+
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:293
+msgid ""
+"This preview shows where the selected string appears on your site’s front-"
+"end."
+msgstr "Ez az előnézet megmutatja, hol jelenik meg a kiválasztott karakterlánc a webhelyed nyilvános felületén."
+
+#. translators: Label read out to screen readers for the frame that shows the
+#. front end of the site inside the string preview dialog.
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:294
+msgid "Frontend preview"
+msgstr "A webhely nyilvános felületének előnézete"
+
+#: classes/string-translation-ui/class-wpml-string-translation-table.php:297
+msgid "Preview where this string appears on your site"
+msgstr "Előnézet: hol jelenik meg ez a karakterlánc a webhelyen"
+
+#: classes/strings-scanning/class-wpml-themes-and-plugins-settings.php:40
+msgid "Dismiss all notices"
+msgstr "Összes értesítés elutasítása"
+
+#: classes/strings-scanning/class-wpml-themes-and-plugins-settings.php:41
+msgid "Also prevent similar messages in the future?"
+msgstr "Azt is szeretnéd megakadályozni, hogy a jövőben hasonló üzenetek jelenjenek meg?"
+
+#: classes/strings-scanning/class-wpml-themes-and-plugins-settings.php:42
+msgid "No - keep showing these message"
+msgstr "Nem – ezeknek az üzeneteknek a további megjelenítése"
+
+#: classes/strings-scanning/class-wpml-themes-and-plugins-settings.php:43
+msgid "Yes - disable these notifications completely"
+msgstr "Igen – az értesítések teljes kikapcsolása"
+
+#: classes/strings-scanning/JS/SettingsHooks.php:95
+msgid "Detect strings in JavaScript files"
+msgstr "Karakterláncok észlelése JavaScript-fájlokban"
+
+#. translators: Description under the setting that turns on scanning of
+#. JavaScript files, on the WPML settings page. %1$s: opening link tag, %2$s:
+#. closing link tag; the words between them become a link to the Admin Text
+#. Translation page.
+#: classes/strings-scanning/JS/SettingsHooks.php:101
+#, php-format
+msgid ""
+"When enabled, WPML tracks JavaScript files loaded on your site's pages. "
+"Texts (strings) from these files will be included when you scan a theme or "
+"plugin in %1$sAdmin Texts Translation%2$s."
+msgstr "Bekapcsolva a WPML nyomon követi a webhelyed oldalain betöltött JavaScript-fájlokat. Ezekből a fájlokból származó szövegek a sablon vagy bővítmény vizsgálatakor a %1$sAdmin Texts Translation%2$s funkcióban is megjelennek."
+
+#. translators: Warning under the setting that turns on scanning of JavaScript
+#. files, on the WPML settings page. %1$s: opening bold tag, %2$s: closing
+#. bold tag, around the word "Note:".
+#: classes/strings-scanning/JS/SettingsHooks.php:121
+#, php-format
+msgid ""
+"%1$sNote:%2$s This feature may affect site performance. We recommend "
+"disabling it after scanning is complete."
+msgstr "%1$sMegjegyzés:%2$s Ez a funkció hatással lehet a webhely teljesítményére. Javasoljuk, hogy a vizsgálat befejezése után kapcsold ki."
+
+#. translators: Name of the String Translation page in the WPML menu, the
+#. heading of that page, and the title of its section on the WPML settings
+#. page.
+#: classes/strings-scanning/JS/SettingsHooks.php:151
+#: inc/wpml-string-translation.class.php:503
+#: inc/wpml-string-translation.class.php:505
+msgid "String Translation"
+msgstr "Karakterlánc-fordítás"
+
+#. translators: Notice shown while scanning of JavaScript files is switched
+#. on. %1$s: opening link tag, %2$s: closing link tag; the words between them
+#. become a link to the WPML settings page.
+#: classes/strings-scanning/JS/SettingsHooks.php:160
+#, php-format
+msgid ""
+"JavaScript file scanning is active and may affect performance. %1$sDisable "
+"this feature%2$s in WPML Settings once your texts (strings) are registered."
+msgstr "A JavaScript-fájlok vizsgálata aktív, és hatással lehet a teljesítményre. Miután a szövegeket regisztráltad, %1$skapcsold ki ezt a funkciót%2$s a WPML beállításaiban."
+
+#. translators: Notice on the Theme and plugins localization page after a scan
+#. found nothing. %1$s: opening link tag, %2$s: closing link tag; the words
+#. between them become a link to the WPML settings page.
+#: classes/strings-scanning/JS/SettingsHooks.php:167
+#, php-format
+msgid ""
+"Missing texts (strings) after scanning? %1$sEnable Scan strings in "
+"JavaScript files%2$s in WPML Settings, visit the page containing the string,"
+" then scan again."
+msgstr "Hiányzó szövegek (karakterláncok) a vizsgálat után? %1$sEngedélyezd a JavaScript-fájlokban lévő karakterláncok vizsgálatát%2$s a WPML beállításaiban, nyisd meg a karakterláncot tartalmazó oldalt, majd futtasd újra a vizsgálatot."
+
+#: classes/strings-scanning/wpml-st-theme-plugin-scan-dir-ajax.php:54
+msgid "Files already scanned."
+msgstr "A fájlok vizsgálata már megtörtént."
+
+#. translators: Value in the WPML support information table: the PHP extension
+#. is available. Past participle used as a state.
+#: classes/support/class-wpml-st-support-info-filter.php:27
+msgid "Loaded"
+msgstr "Betöltve"
+
+#. translators: Value in the WPML support information table: the PHP extension
+#. is not available. Past participle used as a state.
+#: classes/support/class-wpml-st-support-info-filter.php:29
+msgid "Not loaded"
+msgstr "Nincs betöltve"
+
+#: classes/support/class-wpml-st-support-info-filter.php:31
+msgid "Multibyte String extension"
+msgstr "Multibyte String-kiterjesztés"
+
+#: classes/support/class-wpml-st-support-info-filter.php:35
+msgid "Multibyte String extension is required for WPML String Translation."
+msgstr "A WPML Karakterlánc-fordítás működéséhez szükség van a Multibyte String-kiterjesztésre."
+
+#. translators: In the notice shown when WPML cannot import .mo files because
+#. the String Translation table needs a repair; "the table" is that String
+#. Translation table.
+#: classes/translations-file-scan/wpml-st-translations-file-scan-ui-block.php:96
+msgid "WPML can repair the table in one click."
+msgstr "A WPML egy kattintással kijavíthatja a táblát."
+
+#. translators: Last line of the notice shown when WPML cannot import .mo
+#. files because the String Translation table needs a repair. %s: the address
+#. of the repair on WPML → Support, which fills the link. "Repair the strings
+#. table" is the label of the button there.
+#: classes/translations-file-scan/wpml-st-translations-file-scan-ui-block.php:100
+#, php-format
+msgid ""
+"Go to <a href=\"%s\">WPML → Support → Database & strings maintenance</a> and"
+" click <b>Repair the strings table</b>."
+msgstr "Nyisd meg a <a href=\"%s\">WPML → támogatás → adatbázis- és karakterlánc-karbantartás</a> oldalt, majd kattints a <b>Karakterlánctábla javítása</b> gombra."
+
+#: classes/translations-file-scan/wpml-st-translations-file-scan-ui-block.php:108
+msgctxt "MO Import blocked short 1/3"
+msgid ""
+"WPML cannot replace .mo files because of technical problems in the <b>String"
+" Translation</b> table."
+msgstr "A WPML nem tudja lecserélni a .mo fájlokat a <b>Karakterlánc-fordítás</b> tábláját érintő technikai problémák miatt."
+
+#: classes/translations-file-scan/wpml-st-translations-file-scan-ui-block.php:119
+msgctxt "MO Import blocked short 2/3"
+msgid "WPML support team knows how to fix it."
+msgstr "A WPML támogatási csapata tudja, hogyan lehet ezt kijavítani."
+
+#. translators: Last line of the notice shown when WPML cannot read the
+#. translation files. %s: the address of the WPML support forum, which fills
+#. the link.
+#: classes/translations-file-scan/wpml-st-translations-file-scan-ui-block.php:127
+#, php-format
+msgctxt "MO Import blocked short 3/3"
+msgid ""
+"Please add a message in the relevant <a href=\"%s\" target=\"_blank\" "
+">support thread</a> and we'll fix it for you."
+msgstr "Írj üzenetet a megfelelő <a href=\"%s\" target=\"_blank\" >támogatási témában</a>, és megoldjuk neked."
+
+#: classes/translations-file-scan/wpml-st-translations-file-scan-ui-block.php:139
+msgctxt "MO Import blocked 1/4"
+msgid ""
+"There is a problem with the <b>String Translation</b> table in your site."
+msgstr "Probléma van a webhelyed <b>Karakterlánc-fordítás</b> táblájával."
+
+#: classes/translations-file-scan/wpml-st-translations-file-scan-ui-block.php:145
+msgctxt "MO Import blocked 2/4"
+msgid ""
+"This problem is not causing a problem running the site right now, but can "
+"become a critical issue in the future."
+msgstr "Ez a probléma jelenleg nem okoz gondot a webhely működésében, de a jövőben kritikus lehet."
+
+#: classes/translations-file-scan/wpml-st-translations-file-scan-ui-block.php:157
+msgctxt "MO Import blocked 3/4"
+msgid "WPML support team knows how to fix it."
+msgstr "A WPML támogatási csapata tudja, hogyan lehet ezt kijavítani."
+
+#. translators: Last line of the notice shown when WPML cannot read the
+#. translation files. %s: the address of the WPML support forum, which fills
+#. the link.
+#: classes/translations-file-scan/wpml-st-translations-file-scan-ui-block.php:165
+#, php-format
+msgctxt "MO Import blocked 4/4"
+msgid ""
+"Please add a message in the relevant <a href=\"%s\" "
+"target=\"_blank\">support thread</a> and we'll fix it for you."
+msgstr "Írj üzenetet a megfelelő <a href=\"%s\" target=\"_blank\">támogatási témában</a>, és megoldjuk neked."
+
+#: classes/upgrade/class-wpml-st-upgrade-migrate-originals.php:43
+msgid ""
+"WPML needs to update the database. This update will help improve WPML's "
+"performance when fetching translated strings."
+msgstr "A WPML-nek frissítenie kell az adatbázist. Ez a frissítés javítja a WPML teljesítményét a lefordított karakterláncok lekérésekor."
+
+#. translators: Button label in the notice that asks the user to let WPML
+#. update its database tables. Verb, imperative.
+#: classes/upgrade/class-wpml-st-upgrade-migrate-originals.php:45
+msgid "Update Now"
+msgstr "Frissítés most"
+
+#: classes/upgrade/class-wpml-st-upgrade-migrate-originals.php:51
+msgid "The database has been updated."
+msgstr "Az adatbázis frissítve."
+
+#. translators: Button label that closes a notice or a dialog on the String
+#. Translation page. Verb, imperative, not the adjective "near".
+#: classes/upgrade/class-wpml-st-upgrade-migrate-originals.php:53
+#: menu/string-translation.php:1143
+msgid "Close"
+msgstr "Bezárás"
+
+#. translators: %d is the number of database-update steps still pending; WPML
+#. runs one per admin page-load.
+#: classes/upgrade/Deferred/DeferredUpgradeNotice.php:22
+#, php-format
+msgid ""
+"WPML is finalizing the database update — it completes automatically as you "
+"use the admin (%d step left)."
+msgid_plural ""
+"WPML is finalizing the database update — it completes automatically as you "
+"use the admin (%d steps left)."
+msgstr[0] "A WPML befejezi az adatbázis frissítését — ez automatikusan megtörténik az adminfelület használata közben (%d lépés van hátra)."
+msgstr[1] "A WPML befejezi az adatbázis frissítését — ez automatikusan megtörténik az adminfelület használata közben (%d lépés van hátra)."
+
+#. translators: Notice shown when WPML finds a problem in its database tables.
+#. %1$s: opening link tag, %2$s: closing link tag; the words between them
+#. become a link to WPML support.
+#: classes/upgrade/repair-schema/wpml-st-repair-strings-schema.php:92
+#, php-format
+msgid ""
+"We have detected a problem with some tables in the database. Please contact "
+"%1$sWPML support%2$s to get this fixed."
+msgstr "Problémát észleltünk az adatbázis néhány táblájával. Vedd fel a kapcsolatot a %1$sWPML támogatással%2$s a javításhoz."
+
+#: inc/functions.php:1300
+msgid "Translations for strings updated"
+msgstr "Karakterláncok fordításai frissítve"
+
+#: inc/gettext/wpml-po-import.class.php:99
+msgid "No string found"
+msgstr "Nem található karakterlánc"
+
+#. translators: Message on the Theme and plugins localization page after a
+#. successful scan. %s: the number of texts found. Keep the word "WPML" and
+#. the colon: the page puts the part before the colon in bold and starts the
+#. message at "WPML".
+#: inc/gettext/wpml-string-scanner.class.php:115
+#, php-format
+msgid "Scan successful: WPML found %s strings."
+msgstr "A vizsgálat sikeres: a WPML %s karakterláncot talált."
+
+#: inc/gettext/wpml-string-scanner.class.php:116
+msgid "The following files were processed:"
+msgstr "A következő fájlok kerültek feldolgozásra:"
+
+#. translators: Line added under the scan result when strings were left out
+#. because their text domain belongs to another plugin or theme. %1$s: how
+#. many strings, %2$s: the text domains, comma separated.
+#: inc/gettext/wpml-string-scanner.class.php:118
+#, php-format
+msgid ""
+"Skipped %1$s strings that belong to other text domains (%2$s) - they already"
+" have their own translations."
+msgstr "Kihagyva: %1$s karakterlánc, amelyek más szövegtartományhoz (%2$s) tartoznak – ezeknek már van saját fordításuk."
+
+#. translators: Second sentence added after "Scan successful: WPML found 42
+#. strings." on the Theme and plugins localization page, and only when texts
+#. were found. "They" are those texts. Keep the space at the start.
+#: inc/gettext/wpml-string-scanner.class.php:128
+msgid " They were added to the translations table."
+msgstr " Hozzá lettek adva a fordítási táblához."
+
+#. translators: Line in the progress log on the Theme and plugins localization
+#. page. %s: the path of the file being scanned.
+#: inc/gettext/wpml-theme-string-scanner.class.php:83
+#, php-format
+msgid "Scanning file: %s"
+msgstr "Fájl vizsgálata: %s"
+
+#: inc/package-translation/inc/wpml-package-translation-helper.class.php:774
+msgid ""
+"Some of the strings selected belong to packages. You can only change the "
+"language of these strings if all strings in the packages are selected."
+msgstr "A kiválasztott karakterláncok egy része csomagokhoz tartozik. Ezeknek a karakterláncoknak a nyelvét csak akkor módosíthatod, ha a csomagok összes karakterláncát kiválasztod."
+
+#. translators: Heading at the top of the Packages page.
+#: inc/package-translation/inc/wpml-package-translation-html-packages.class.php:36
+msgid "Package Management"
+msgstr "Csomagkezelés"
+
+#: inc/package-translation/inc/wpml-package-translation-html-packages.class.php:37
+#: inc/package-translation/inc/wpml-package-translation-html-packages.class.php:38
+msgid "Display packages for this kind:"
+msgstr "Csomagok megjelenítése ehhez a típushoz:"
+
+#: inc/package-translation/inc/wpml-package-translation-html-packages.class.php:66
+msgid "Delete Selected Packages"
+msgstr "Kijelölt csomagok törlése"
+
+#. translators: Question in the confirmation box on the Packages page when
+#. packages are about to be deleted. "Their" refers to those packages. Keep
+#. the line break marked \n.
+#: inc/package-translation/inc/wpml-package-translation-html-packages.class.php:70
+msgid ""
+"Are you sure you want to delete these packages?\n"
+"Their strings and translations will be deleted too."
+msgstr "Biztosan törlöd ezeket a csomagokat?\nKarakterláncaik és fordításaik is törlődnek."
+
+#. translators: Label read out to screen readers for the checkbox in the table
+#. heading on the Packages page that picks every row. Verb, imperative.
+#: inc/package-translation/inc/wpml-package-translation-html-packages.class.php:101
+msgid "Select All"
+msgstr "Összes kijelölése"
+
+#. translators: Column heading on the Packages page: what sort of package the
+#. row holds. Noun, not the adjective meaning "nice".
+#: inc/package-translation/inc/wpml-package-translation-html-packages.class.php:106
+msgid "Kind"
+msgstr "Típus"
+
+#. translators: Column heading on the Packages page: further details about the
+#. package. Noun.
+#: inc/package-translation/inc/wpml-package-translation-html-packages.class.php:110
+msgid "Info"
+msgstr "Információ"
+
+#. translators: Part of the summary shown for each package on the Packages
+#. page. %s: the number of texts in the package.
+#: inc/package-translation/inc/wpml-package-translation-html-packages.class.php:117
+#, php-format
+msgid "Contains %s strings"
+msgstr "%s karakterláncot tartalmaz"
+
+#: inc/package-translation/inc/wpml-package-translation-html-packages.class.php:119
+msgid "(Translation is in progress)"
+msgstr "(A fordítás folyamatban van)"
+
+#. translators: Part of the summary shown for each package on the Packages
+#. page. %s: the name of the language the package was written in.
+#: inc/package-translation/inc/wpml-package-translation-html-packages.class.php:123
+#, php-format
+msgid "Default package language: %s"
+msgstr "A csomag alapértelmezett nyelve: %s"
+
+#: inc/package-translation/inc/wpml-package-translation-html-packages.class.php:134
+msgid "No packages found"
+msgstr "Nem találhatók csomagok"
+
+#. translators: Title of the WPML box on the editing screen of an item whose
+#. texts WPML translates as a package.
+#: inc/package-translation/inc/wpml-package-translation-metabox.class.php:77
+msgid "WPML Translation"
+msgstr "WPML-fordítás"
+
+#: inc/package-translation/inc/wpml-package-translation-metabox.class.php:79
+msgid "Send to translation"
+msgstr "Küldés fordításra"
+
+#. translators: Link in the WPML box on the editing screen that opens the
+#. String Translation page for this item. Verb, imperative.
+#: inc/package-translation/inc/wpml-package-translation-metabox.class.php:82
+msgid "Translate strings"
+msgstr "Karakterláncok fordítása"
+
+#. translators: Label above the per-language translation states in the WPML
+#. box on the editing screen.
+#: inc/package-translation/inc/wpml-package-translation-metabox.class.php:87
+msgid "Translation status:"
+msgstr "Fordítás állapota:"
+
+#. translators: Line in the WPML box on the editing screen. %1$s: what sort of
+#. item it is, for example "widget" or "form". %2$s: a dropdown for picking
+#. the language it was written in.
+#: inc/package-translation/inc/wpml-package-translation-metabox.class.php:90
+#, php-format
+msgid "Language of this %1$s is %2$s"
+msgstr "A(z) %1$s nyelve: %2$s"
+
+#: inc/package-translation/inc/wpml-package-translation-metabox.class.php:93
+msgid "There is nothing to translate."
+msgstr "Nincs fordítandó tartalom."
+
+#. translators: Status value in the WPML box on the editing screen: the
+#. translation has been started but is not finished.
+#: inc/package-translation/inc/wpml-package-translation-metabox.class.php:403
+msgid "In progress"
+msgstr "Folyamatban"
+
+#. translators: Status value in the WPML box on the editing screen: the
+#. translation is finished. Adjective, not an instruction to complete
+#. something.
+#: inc/package-translation/inc/wpml-package-translation-metabox.class.php:410
+msgid "Complete"
+msgstr "Kész"
+
+#. translators: Status value in the WPML box on the editing screen: the
+#. original changed, so the translation has to be brought up to date.
+#: inc/package-translation/inc/wpml-package-translation-metabox.class.php:423
+msgid "Needs update"
+msgstr "Frissítést igényel"
+
+#. translators: Name of the Packages page in the WPML menu, and the heading of
+#. that page. Noun, plural.
+#: inc/package-translation/inc/wpml-package-translation-ui.class.php:69
+#: inc/package-translation/inc/wpml-package-translation-ui.class.php:71
+msgid "Packages"
+msgstr "Csomagok"
+
+#. translators: Shown on the Theme and plugins localization page in place of a
+#. text domain when the theme or plugin declares none.
+#: inc/wpml-localization.class.php:225
+msgid "No TextDomain"
+msgstr "Nincs szövegtartomány"
+
+#. translators: Tooltip on the link in the row of a theme or plugin on the
+#. Theme and plugins localization page. %s: the name of the text domain.
+#: inc/wpml-localization.class.php:271
+#, php-format
+msgid "Translate strings in %s"
+msgstr "A(z) %s karakterláncainak fordítása"
+
+#. translators: Tooltip on the link in the row of a theme or plugin on the
+#. Theme and plugins localization page. %s: the name of the text domain.
+#: inc/wpml-localization.class.php:273
+#, php-format
+msgid "All strings in %s"
+msgstr "A(z) %s összes karakterlánca"
+
+#. translators: Shown when changing the language of the selected strings
+#. failed and the server gave no reason of its own.
+#: inc/wpml-string-translation.class.php:218
+msgid ""
+"The language of these strings could not be changed. Please reload the page "
+"and try again."
+msgstr "Ezeknek a szövegeknek a nyelvét nem sikerült megváltoztatni. Töltsd újra az oldalt, majd próbáld újra."
+
+#. translators: Shown on the String Translation screen when a bulk change of
+#. the target language is chosen with no strings selected.
+#: inc/wpml-string-translation.class.php:220
+#: inc/wpml-string-translation.class.php:1390
+msgid "Select the strings you want to change first."
+msgstr "Először válaszd ki a módosítani kívánt szövegeket."
+
+#. translators: Shown when changing the language of a domain's strings failed
+#. and the server gave no reason of its own.
+#: inc/wpml-string-translation.class.php:244
+msgid ""
+"The language of this domain could not be changed. Please reload the page and"
+" try again."
+msgstr "Ennek a szövegtartománynak a nyelvét nem sikerült megváltoztatni. Töltsd újra az oldalt, majd próbáld újra."
+
+#. translators: Alert on the String Translation screen when a bulk action on a
+#. whole domain (delete, change language) could not finish.
+#: inc/wpml-string-translation.class.php:405
+msgid "The action stopped before it finished. Try again to finish it."
+msgstr "A művelet a befejezés előtt leállt. Próbáld újra befejezni."
+
+#. translators: Alert on the String Translation screen when the first request
+#. of a bulk action on a whole domain (the count of the strings to change) got
+#. no answer from the server, so nothing was changed.
+#: inc/wpml-string-translation.class.php:407
+msgid "The action did not start because the server did not answer. Try again."
+msgstr "A művelet nem indult el, mert a szerver nem válaszolt. Próbáld újra."
+
+#: inc/wpml-string-translation.class.php:547
+msgid "Show page builder packages"
+msgstr "Oldalépítő csomagok megjelenítése"
+
+#. translators: Link next to WPML String Translation on the WordPress plugins
+#. screen: it opens the settings page. Verb, imperative.
+#: inc/wpml-string-translation.class.php:570
+msgid "Configure"
+msgstr "Beállítás"
+
+#: inc/wpml-string-translation.class.php:600
+msgid "Not seeing an admin text you need?"
+msgstr "Nem találod a szükséges adminfelületi szöveget?"
+
+#: inc/wpml-string-translation.class.php:601
+msgid "Scan themes, plugins, and WordPress to register more admin texts."
+msgstr "Vizsgáld meg a sablonokat, bővítményeket és a WordPress-t további adminfelületi szövegek regisztrálásához."
+
+#. translators: Column heading on the Theme and plugins localization page: how
+#. far the texts of that theme or plugin are translated. Noun.
+#: inc/wpml-string-translation.class.php:619
+msgid "Status"
+msgstr "Állapot"
+
+#. translators: Column heading on the Theme and plugins localization page: the
+#. buttons for that theme or plugin. Noun.
+#: inc/wpml-string-translation.class.php:623
+msgid "Action"
+msgstr "Művelet"
+
+#: inc/wpml-string-translation.class.php:625
+msgid "Strings that need translation"
+msgstr "Fordítandó karakterláncok"
+
+#. translators: Sentence above the scan button on the Admin Texts page,
+#. explaining the "only this component's own text domains" choice.
+#: inc/wpml-string-translation.class.php:651
+msgid ""
+"The scan registers the strings it finds. With this on, strings that belong "
+"to other plugins' or themes' text domains (for example a child theme's "
+"WooCommerce templates) are skipped - they already have their own "
+"translations."
+msgstr "A vizsgálat regisztrálja a megtalált szövegeket. Ha ez be van kapcsolva, a más bővítmények vagy sablonok szövegtartományaihoz tartozó szövegek (például egy gyermeksablon WooCommerce-sablonjai) kimaradnak – ezeknek már van saját fordításuk."
+
+#. translators: Label of the per-scan checkbox on the Admin Texts page.
+#. "component" is the theme or plugin being scanned.
+#: inc/wpml-string-translation.class.php:656
+msgid "Register only this component's own text domains"
+msgstr "Csak ennek az összetevőnek a saját szövegtartományainak regisztrálása"
+
+#: inc/wpml-string-translation.class.php:659
+msgid "Scan selected components for strings"
+msgstr "Karakterláncok keresése a kijelölt összetevőkben"
+
+#. translators: Joins the last two names in a list of plugins, as in "Contact
+#. Form 7 and Yoast SEO". %1$s: the names before the last one, already joined
+#. by commas, %2$s: the last name.
+#: inc/wpml-string-translation.class.php:710
+#, php-format
+msgid "%1$s and %2$s"
+msgstr "%1$s és %2$s"
+
+#. translators: Notice shown when WPML cannot find the translation files of
+#. some plugins. %s: the name of the plugin, or the names of all of them,
+#. joined into a list.
+#: inc/wpml-string-translation.class.php:715
+#, php-format
+msgid ""
+"WPML could not detect the translation files (.mo) for %s. To fix this, visit"
+" your site's frontend in a secondary language."
+msgstr "A WPML nem találta a(z) %s fordítási fájljait (.mo). A javításhoz nyisd meg a webhelyed felületét egy másodlagos nyelven."
+
+#. translators: Tooltip on the link in the notice that lists plugins whose
+#. translation files are missing. "This" is following that link and opening
+#. the site in another language.
+#: inc/wpml-string-translation.class.php:752
+msgid ""
+"This will load the translation files and WPML will be able to scan them."
+msgstr "Ez betölti a fordítási fájlokat, így a WPML át tudja vizsgálni őket."
+
+#: inc/wpml-string-translation.class.php:773
+msgid ""
+"Scan the selected components to make new texts available for translation."
+msgstr "Vizsgáld meg a kijelölt összetevőket, hogy az új szövegek elérhetővé váljanak fordításra."
+
+#: inc/wpml-string-translation.class.php:777
+msgid "Updated or new translation files detected"
+msgstr "Új vagy frissített fordítási fájlok találhatók"
+
+#: inc/wpml-string-translation.class.php:778
+msgid ""
+"WPML has found new or updated translation (.mo) files and needs to scan them"
+" to find translatable strings."
+msgstr "A WPML új vagy frissített fordítási fájlokat (.mo) talált, és át kell vizsgálnia őket, hogy megtalálja a fordítható karakterláncokat."
+
+#: inc/wpml-string-translation.class.php:779
+msgid "Select affected components"
+msgstr "Érintett összetevők kiválasztása"
+
+#: menu/string-translation-translate-options.php:2
+msgid "Admin Texts Translation"
+msgstr "Adminfelületi szövegek fordítása"
+
+#: menu/string-translation-translate-options.php:14
+msgid "Return to <b>String Translation</b>"
+msgstr "Vissza a <b>String Translation</b> oldalra"
+
+#. translators: Heading at the top of the page that lists texts WPML no longer
+#. uses.
+#: menu/string-translation.php:94
+msgid "String Troubleshooting"
+msgstr "Szövegek hibaelhárítása"
+
+#. translators: Heading at the top of the String Translation page.
+#: menu/string-translation.php:96
+msgid "String translation"
+msgstr "Szövegfordítás"
+
+#. translators: Note under the heading of the String Troubleshooting page.
+#. "This" is the table below it.
+#: menu/string-translation.php:108
+msgid ""
+"This is the list of strings that are not used or they are linked to wrong "
+"translation data."
+msgstr "Ez azoknak a karakterláncoknak a listája, amelyek nincsenek használatban, vagy hibás fordítási adatokhoz kapcsolódnak."
+
+#. translators: Note shown while the user reviews the texts of a .po file
+#. before adding them. "These" are the texts in the table below. %1$s: opening
+#. link tag, %2$s: closing link tag, around the words that link to the buttons
+#. lower down the page.
+#: menu/string-translation.php:116
+#, php-format
+msgid ""
+"These are the strings that we found in your .po file. Please carefully "
+"review them. Then, click on the 'add' or 'cancel' buttons at the %1$sbottom "
+"of this screen%2$s. You can exclude individual strings by clearing the check"
+" boxes next to them."
+msgstr "Ezek azok a karakterláncok, amelyeket a .po fájlodban találtunk. Nézd át őket figyelmesen. Ezután kattints a 'hozzáad' vagy 'mégsem' gombokra a képernyő %1$salján%2$s. Egyes karakterláncokat kizárhatsz a mellettük lévő jelölőnégyzetek törlésével."
+
+#: menu/string-translation.php:170
+msgid "Add selected strings"
+msgstr "Kijelölt karakterláncok hozzáadása"
+
+#. translators: Label read out to screen readers for the dropdown on the
+#. String Translation page that filters the texts by their translation state.
+#. Noun, not the verb.
+#: menu/string-translation.php:177
+msgid "Display:"
+msgstr "Megjelenítés:"
+
+#. translators: Option in the state filter on the String Translation page:
+#. show texts whatever their state.
+#: menu/string-translation.php:189
+msgid "All strings"
+msgstr "Összes karakterlánc"
+
+#. translators: Option in the state filter on the String Translation page:
+#. show only texts that still have to be translated.
+#: menu/string-translation.php:192
+msgid "Translation needed"
+msgstr "Fordítás szükséges"
+
+#. translators: Option in the state filter on the String Translation page:
+#. show only texts translated into some languages but not all.
+#: menu/string-translation.php:195
+msgid "Partial Translation"
+msgstr "Részleges fordítás"
+
+#: menu/string-translation.php:196
+msgid "Auto-registered, translation needed"
+msgstr "Automatikusan regisztrálva, fordítás szükséges"
+
+#. translators: Label read out to screen readers for the search field on the
+#. String Translation page. It is not shown on screen.
+#: menu/string-translation.php:202
+msgid "Search for:"
+msgstr "Keresés:"
+
+#. translators: Placeholder text inside the search field on the String
+#. Translation page. Noun, the word shown in an empty search box.
+#: menu/string-translation.php:204
+msgid "Search"
+msgstr "Keresés"
+
+#. translators: Label of the checkbox next to the search field on the String
+#. Translation page: find only texts that read exactly like the search words.
+#: menu/string-translation.php:220
+msgid "Exact match"
+msgstr "Pontos egyezés"
+
+#: menu/string-translation.php:234
+msgid ""
+"Search in both the original language and in translations. Searching in "
+"translations may take a bit of time."
+msgstr "Keresés az eredeti nyelven és a fordításokban is. A fordításokban való keresés eltarthat egy ideig."
+
+#. translators: Label of the checkbox next to the search field on the String
+#. Translation page: search the translations as well as the originals.
+#: menu/string-translation.php:236
+msgid "Include translations"
+msgstr "Fordítások bevonása"
+
+#. translators: Label read out to screen readers for the dropdown on the
+#. String Translation page that filters the texts by domain.
+#: menu/string-translation.php:243
+msgid "In domain:"
+msgstr "Szövegtartományban:"
+
+#. translators: Option in the domain filter on the String Translation page:
+#. show texts from every domain.
+#: menu/string-translation.php:248
+msgid "All domains"
+msgstr "Összes szövegtartomány"
+
+#. translators: Button label next to the search field on the String
+#. Translation page: it applies the filters above. Verb, imperative.
+#: menu/string-translation.php:266
+msgid "Filter"
+msgstr "Szűrés"
+
+#. translators: Line read out to screen readers under the search field on the
+#. String Translation page. %s: the words the user searched for, in italics.
+#: menu/string-translation.php:269
+#, php-format
+msgid "Showing only strings that contain %s"
+msgstr "Csak a(z) %s elemet tartalmazó sztringek megjelenítése"
+
+#. translators: Button label on the String Translation page that clears the
+#. search and the filters. The "x" at the start is a decorative cross; keep it
+#. in front of the words.
+#: menu/string-translation.php:271
+msgid "x &nbsp;Clear filters"
+msgstr "x &nbsp;szűrők kiürítése"
+
+#: menu/string-translation.php:282
+msgid ""
+"Can't find the strings you're looking to translate? Add more strings for "
+"translation."
+msgstr "Nem találod a fordítani kívánt sztringeket? Adj hozzá további sztringeket fordításra."
+
+#: menu/string-translation.php:284 menu/string-translation.php:631
+#: menu/string-translation.php:708 menu/string-translation.php:729
+#: menu/string-translation.php:903 menu/string-translation.php:921
+#: menu/string-translation.php:967 menu/string-translation.php:1058
+msgid "Click to toggle"
+msgstr "Kattints a váltáshoz"
+
+#. translators: Link on the String Translation page that opens a panel with
+#. more information. Verb phrase, imperative, lower case in the source.
+#: menu/string-translation.php:286
+msgid "more details"
+msgstr "további részletek"
+
+#: menu/string-translation.php:324
+msgid "Strings in the theme and plugins"
+msgstr "Sztringek a sablonban és a bővítményekben"
+
+#: menu/string-translation.php:327
+msgid "Strings in JavaScript files"
+msgstr "JavaScript-fájlokban lévő szövegek"
+
+#: menu/string-translation.php:333
+msgid ""
+"Translate front-end texts you can customize from the WordPress admin like "
+"footer text, copyright notices, plugin options and settings, time format, "
+"widget texts, and more."
+msgstr "Fordítsd le azokat a front-end szövegeket, amelyeket a WordPress adminfelületén testre szabhatsz, például a láblécben megjelenő szöveget, a szerzői jogi közleményeket, a bővítmények opcióit és beállításait, az időformátumot, a widgetek szövegeit és egyebeket."
+
+#: menu/string-translation.php:334
+msgid "Translating Strings From Admin and Settings"
+msgstr "Sztringek fordítása az adminfelületről és a beállításokból"
+
+#: menu/string-translation.php:338
+msgid "Translate texts in admin screens"
+msgstr "Szövegek fordítása az adminfelületeken"
+
+#: menu/string-translation.php:345 menu/string-translation.php:350
+#: menu/string-translation.php:356
+msgid "Translate User Meta Information"
+msgstr "Felhasználói metaadatok fordítása"
+
+#: menu/string-translation.php:346
+msgid "Making User Meta Information Translatable"
+msgstr "A felhasználói metaadatok fordíthatóvá tétele"
+
+#. translators: Message shown in the user meta dialog on the String
+#. Translation page once the settings have been saved.
+#: menu/string-translation.php:359
+msgid "Data saved"
+msgstr "Adatok elmentve"
+
+#: menu/string-translation.php:363
+msgid ""
+"WPML allows you to translate user information like the name, nickname, "
+"biography, and more."
+msgstr "A WPML lehetővé teszi a felhasználói információk fordítását, például a nevet, becenevet, életrajzot és egyebeket."
+
+#: menu/string-translation.php:366
+msgid ""
+"Select the user roles whose information you want to make translatable and "
+"then use the <b>String Translation</b> page to translate it."
+msgstr "Válaszd ki azokat a felhasználói szerepköröket, amelyek adatait fordíthatóvá szeretnéd tenni, majd fordítsd le az adatokat a <b>String Translation</b> oldalon."
+
+#. translators: Last line of the user meta dialog on the String Translation
+#. page. %1$s: opening link tag, %2$s: closing link tag; the words between
+#. them become the link.
+#: menu/string-translation.php:371
+#, php-format
+msgid "Learn more about %1$stranslating user meta information.%2$s"
+msgstr "Tudj meg többet a %1$sfelhasználói metaadatok fordításáról.%2$s"
+
+#. translators: Label of the checkbox on the String Translation page that
+#. picks every row of the list below it. Verb phrase, imperative.
+#: menu/string-translation.php:398
+msgid "Select all"
+msgstr "Összes kiválasztása"
+
+#: menu/string-translation.php:435
+msgid "Languages of domains"
+msgstr "Domainek nyelvei"
+
+#. translators: Link at the top of the table on the String Translation page
+#. that goes back to a paged list. %d: how many texts each page holds.
+#: menu/string-translation.php:489
+#, php-format
+msgid "Display %d results per page"
+msgstr "Oldalanként %d találat megjelenítése"
+
+#. translators: Pager text above the table on the String Translation page, as
+#. in "Displaying 1-20 of 340". %1$s: the first text shown, %2$s: the last
+#. text shown, %3$s: how many texts there are altogether.
+#: menu/string-translation.php:519
+#, php-format
+msgid "Displaying %1$s&#8211;%2$s of %3$s"
+msgstr "Megjelenítés: %1$s&#8211;%2$s / %3$s"
+
+#: menu/string-translation.php:533
+msgid "Strings per page:"
+msgstr "Sztringek oldalanként:"
+
+#: menu/string-translation.php:557
+msgid "Display all results"
+msgstr "Összes találat megjelenítése"
+
+#: menu/string-translation.php:575
+msgid ""
+"You have selected strings belonging to a package. Please select all strings "
+"from the affected package or unselect these strings."
+msgstr "Egy csomaghoz tartozó sztringeket jelöltél ki. Jelöld ki az érintett csomag összes sztringjét, vagy szüntesd meg ezek kijelölését."
+
+#. translators: Question in the confirmation box on the String Translation
+#. page when texts are about to be deleted. "Their" refers to those texts.
+#. Keep the line break marked \n.
+#: menu/string-translation.php:577
+msgid ""
+"Are you sure you want to delete these strings?\n"
+"Their translations will be deleted too."
+msgstr "Biztosan törlöd ezeket a sztringeket?\\nA fordításaik is törlődnek."
+
+#. translators: Question in the confirmation box on the String Translation
+#. page when texts are about to be deleted. "Their" refers to those texts.
+#. Keep the line break marked \n.
+#: menu/string-translation.php:578
+msgid "WPML could not delete the strings"
+msgstr "A WPML nem tudta törölni a sztringeket"
+
+#: menu/string-translation.php:581
+msgid "Delete selected strings"
+msgstr "Kijelölt sztringek törlése"
+
+#. translators: Heading of the section on the String Translation page that
+#. holds the import, export and settings boxes. Noun, plural.
+#: menu/string-translation.php:606
+msgid "Utilities"
+msgstr "Segédprogramok"
+
+#: menu/string-translation.php:619
+msgid "Auto register untranslated strings"
+msgstr "Lefordítatlan sztringek automatikus regisztrálása"
+
+#. translators: Note next to a switched-off feature on the String Translation
+#. page. %1$s: opening tag, %2$s: closing tag, around the words that can be
+#. clicked.
+#: menu/string-translation.php:625
+#, php-format
+msgid "This feature is disabled. %1$sClick here to enable it.%2$s"
+msgstr "Ez a funkció le van tiltva. %1$sKattints ide a bekapcsolásához.%2$s"
+
+#: menu/string-translation.php:638
+msgid ""
+"WPML can detect untranslated strings and automatically register them for "
+"translation. WPML will register any untranslated strings encountered while "
+"browsing the site."
+msgstr "A WPML képes észlelni a lefordítatlan sztringeket, és automatikusan regisztrálja őket fordításra. A WPML regisztrál minden lefordítatlan sztringet, amellyel a webhely böngészése közben találkozik."
+
+#. translators: Label of the radio button on the String Translation page:
+#. register only the texts an administrator runs into while signed in.
+#: menu/string-translation.php:647
+msgid "Untranslated strings that I encounter while logged in"
+msgstr "Lefordítatlan sztringek, amelyekkel bejelentkezve találkozom"
+
+#. translators: Badge next to the option WPML advises on the String
+#. Translation page. Past participle used as a label, lower case in the
+#. source.
+#: menu/string-translation.php:649
+msgid "recommended"
+msgstr "ajánlott"
+
+#: menu/string-translation.php:659
+msgid ""
+"Untranslated strings that all logged in, logged out users, and site visitors"
+" encounter"
+msgstr "Lefordítatlan sztringek, amelyekkel minden bejelentkezett és kijelentkezett felhasználó, valamint a webhely látogatói találkoznak"
+
+#: menu/string-translation.php:669
+msgid "Disable auto register of untranslated strings"
+msgstr "Lefordítatlan sztringek automatikus regisztrálásának letiltása"
+
+#. translators: Button label that saves the string registration settings on
+#. the String Translation page. Verb, imperative.
+#: menu/string-translation.php:677
+msgid "Save settings"
+msgstr "Beállítások mentése"
+
+#: menu/string-translation.php:693
+msgid "Also register strings from the website's back-end"
+msgstr "A webhely háttérrendszeréből származó szövegek regisztrálása is"
+
+#: menu/string-translation.php:706
+msgid ""
+"Translate strings automatically, with your translators or a translation "
+"service"
+msgstr "Sztringek fordítása automatikusan, saját fordítókkal vagy fordítószolgáltatással"
+
+#. translators: Line in the box on the String Translation page about sending
+#. texts to translation. %1$s: opening link tag, %2$s: closing link tag; the
+#. words between them become the link.
+#: menu/string-translation.php:716
+#, php-format
+msgid ""
+"Use WPML's %1$sTranslation Dashboard%2$s to send strings to translation."
+msgstr "Használd a WPML %1$sFordítási vezérlőpultját%2$s a karakterláncok fordításra küldéséhez."
+
+#: menu/string-translation.php:727
+msgid "Import / export .po"
+msgstr ".po importálása / exportálása"
+
+#. translators: Heading of the box on the String Translation page for loading
+#. texts from a .po file. Noun, the act of bringing texts in.
+#: menu/string-translation.php:737
+msgid "Import"
+msgstr "Importálás"
+
+#. translators: Label of the file field in the import box on the String
+#. Translation page: the .po file to load.
+#: menu/string-translation.php:749
+msgid ".po file :"
+msgstr ".po-fájl:"
+
+#: menu/string-translation.php:757
+msgid "Select the original language of strings to import"
+msgstr "Válaszd ki az importálandó sztringek eredeti nyelvét"
+
+#. translators: Name of the English language, offered as the source language
+#. when texts are loaded from a .po file.
+#: menu/string-translation.php:772
+msgid "English"
+msgstr "angol"
+
+#: menu/string-translation.php:787
+msgid "Also create translations according to the .po file"
+msgstr "Fordítások létrehozása a .po fájl szerint is"
+
+#. translators: Label above the domain dropdown in the import box on the
+#. String Translation page: it says which theme, plugin or area the texts
+#. belong to.
+#: menu/string-translation.php:801
+msgid "Select what the strings are for:"
+msgstr "Válaszd ki, mire szolgálnak a sztringek:"
+
+#. translators: Button label in the import box on the String Translation page
+#. that opens a field for typing a new domain name. Adjective used on its own.
+#: menu/string-translation.php:819
+msgid "New"
+msgstr "Új"
+
+#. translators: Button label in the import box on the String Translation page
+#. that opens a field for typing a new domain name. Adjective used on its own.
+#: menu/string-translation.php:820
+msgid "Select from existing"
+msgstr "Kiválasztás a meglévők közül"
+
+#. translators: Button label that sends the form in the import and export
+#. boxes on the String Translation page. Verb, imperative.
+#: menu/string-translation.php:827 menu/string-translation.php:887
+msgid "Submit"
+msgstr "Küldés"
+
+#. translators: Button label that sends the form in the import and export
+#. boxes on the String Translation page. Verb, imperative.
+#: menu/string-translation.php:828
+msgid "Please enter a domain!"
+msgstr "Adj meg egy domaint!"
+
+#: menu/string-translation.php:829
+msgid "Please select the .po file to upload!"
+msgstr "Válaszd ki a feltöltendő .po fájlt!"
+
+#: menu/string-translation.php:837
+msgid "Export strings into .po/.pot file"
+msgstr "Sztringek exportálása .po/.pot fájlba"
+
+#: menu/string-translation.php:842
+msgid "PO export may be glitchy. We are working to fix it."
+msgstr "A PO export hibásan működhet. Dolgozunk a javításán."
+
+#. translators: Label above the domain dropdown in the export box on the
+#. String Translation page.
+#: menu/string-translation.php:850
+msgid "Select domain:"
+msgstr "Domain kiválasztása:"
+
+#: menu/string-translation.php:865
+msgid "Also include translations"
+msgstr "A fordítások bevonása is"
+
+#: menu/string-translation.php:901
+msgid "Remove strings by domain"
+msgstr "Sztringek eltávolítása domain szerint"
+
+#: menu/string-translation.php:919
+msgid "Set the original language of themes and plugins"
+msgstr "A sablonok és bővítmények eredeti nyelvének beállítása"
+
+#: menu/string-translation.php:928
+msgid ""
+"By default WPML assumes that strings in themes and plugins are in English. "
+"If you're using a theme or plugin that has strings in other languages you "
+"can set the language of text-domains."
+msgstr "Alapértelmezés szerint a WPML feltételezi, hogy a sablonok és bővítmények sztringjei angol nyelvűek. Ha olyan sablont vagy bővítményt használsz, amelynek sztringjei más nyelvűek, beállíthatod a szövegdomainek nyelvét."
+
+#: menu/string-translation.php:935
+msgid "Set the language of text-domains"
+msgstr "A szövegdomainek nyelvének beállítása"
+
+#: menu/string-translation.php:949
+msgid "Not seeing strings that you are looking for?"
+msgstr "Nem látod a keresett sztringeket?"
+
+#. translators: Note in the box on the String Translation page about texts the
+#. user cannot find. %1$s: opening link tag, %2$s: closing link tag, around
+#. the name of the Admin Text Translation page.
+#: menu/string-translation.php:954
+#, php-format
+msgid ""
+"You can add to the String Translations table texts that appear in the admin "
+"screens of the theme and plugins. To do this, go to %1$sAdmin Texts "
+"Translation%2$s"
+msgstr "Hozzáadhatsz a Sztringfordítások táblázatához olyan szövegeket, amelyek a sablon és a bővítmények adminfelületein jelennek meg. Ehhez lépj a %1$sAdmin szövegek fordítása%2$s oldalra"
+
+#: menu/string-translation.php:965
+msgid "Translate User properties"
+msgstr "Felhasználói tulajdonságok fordítása"
+
+#. translators: Shown in place of the list of user roles on the String
+#. Translation page when no role is picked. Lower case in the source because
+#. it sits inside a sentence.
+#: menu/string-translation.php:994
+msgid "none"
+msgstr "nincs"
+
+#. translators: Line on the String Translation page above the list of user
+#. roles. %s: the roles already picked, or the word for "none".
+#: menu/string-translation.php:1000
+#, php-format
+msgid "Choose the user roles you would like to make translatable: %s"
+msgstr "Válaszd ki azokat a felhasználói szerepköröket, amelyeket fordíthatóvá szeretnél tenni: %s"
+
+#. translators: Button label that saves the settings on the String Translation
+#. page and in its dialogs. Verb, imperative.
+#: menu/string-translation.php:1027 menu/string-translation.php:1029
+msgid "Edit user roles"
+msgstr "Felhasználói szerepkörök szerkesztése"
+
+#: menu/string-translation.php:1043
+msgid "Translating User Meta Information With WPML"
+msgstr "Felhasználói metaadatok fordítása a WPML-lel"
+
+#: menu/string-translation.php:1056 menu/string-translation.php:1100
+msgid "Track where strings appear on the site"
+msgstr "A sztringek megjelenési helyének követése a webhelyen"
+
+#. translators: Note under the string tracking setting on the String
+#. Translation page. "It" is that setting. Keep the line breaks.
+#: menu/string-translation.php:1068
+msgid ""
+"This feature helps you find where the text (strings) appears on your site, so you can translate it more easily. \n"
+"\t\t\t\t\t\t\t\t\t\t\tIt may slow down your site while it's running, so it's best to use it only during development. \n"
+"\t\t\t\t\t\t\t\t\t\t\tRemember to turn it off when your site goes live to keep things running smoothly."
+msgstr "Ez a funkció segít megtalálni, hol jelenik meg a szöveg (sztring) a webhelyeden, így könnyebben lefordíthatod. \\n\t\t\t\t\t\t\t\t\t\t\tA futása közben lelassíthatja a webhelyedet, ezért a legjobb, ha csak fejlesztés alatt használod. \\n\t\t\t\t\t\t\t\t\t\t\tNe felejtsd el kikapcsolni, amikor a webhelyed élesbe kerül, hogy minden zökkenőmentesen működjön."
+
+#: menu/string-translation.php:1087
+msgid "Learn more about finding strings"
+msgstr "További információ a sztringek megtalálásáról"
+
+#: menu/string-translation.php:1107
+msgid "Highlight color for strings"
+msgstr "Kiemelési szín a sztringekhez"
+
+#: menu/string-translation.php:1141
+msgid "String Tracking Enabled"
+msgstr "Sztringkövetés engedélyezve"
+
+#. translators: Button label that closes the string tracking dialog on the
+#. String Translation page. Short for "all right".
+#: menu/string-translation.php:1142
+msgid "OK"
+msgstr "OK"
+
+#: menu/string-translation.php:1146
+msgid ""
+"WPML will now track where your site's text (strings) appears as you browse "
+"both the admin and front-end."
+msgstr "A WPML mostantól követi, hol jelennek meg a webhelyed szövegei (sztringjei), miközben az adminfelületen és a nyilvános felületen böngészel."
+
+#: menu/string-translation.php:1153
+msgid ""
+"Be sure to turn off this feature before your site goes live to avoid "
+"performance issues."
+msgstr "Ügyelj rá, hogy kapcsold ki ezt a funkciót, mielőtt a webhelyed élesbe kerül, a teljesítményproblémák elkerülése érdekében."
+
+#. translators: Heading of the slug translation section on the WPML settings
+#. page.
+#: menu/_slug-translation-options.php:7
+msgid "Slug translations"
+msgstr "Slugfordítások"
+
+#: menu/_slug-translation-options.php:17
+msgid ""
+"Translate base slugs of custom post types and taxonomies (via WPML -> "
+"Taxonomy translation)."
+msgstr "Egyéni bejegyzéstípusok és osztályozások alap slugjainak fordítása (WPML -> Osztályozások fordítása)."
+
+#. translators: Button label that saves the slug translation settings. Verb,
+#. imperative.
+#: menu/_slug-translation-options.php:23
+msgid "Save"
+msgstr "Mentés"
+
+#. translators: Name shown on the String Translation page for the WordPress
+#. area that holds widgets which are not in any sidebar.
+#: StringTranslation/Infrastructure/StringPackage/Repository/WidgetPackageRepository.php:50
+msgid "Inactive Widgets"
+msgstr "Inaktív widgetek"
+
+#. translators: Name of a group of widget texts on the Packages page. %s: the
+#. names of the sidebars the widgets sit in, separated by commas.
+#: StringTranslation/Infrastructure/StringPackage/Repository/WidgetPackageRepository.php:59
+#, php-format
+msgid "Widgets - %s"
+msgstr "Widgetek – %s"
+
+#: StringTranslation/Infrastructure/WordPress/HookHandler/PendingStringsQueueWorkerAssetsAction.php:77
+msgid "Registering new strings found on your site…"
+msgstr "Új, a webhelyeden talált szövegek regisztrálása…"
+
+#: StringTranslation/Infrastructure/WordPress/HookHandler/PendingStringsQueueWorkerAssetsAction.php:78
+msgid "New strings were registered."
+msgstr "Az új szövegek regisztrálása megtörtént."
+
+#: StringTranslation/Infrastructure/WordPress/HookHandler/PendingStringsQueueWorkerAssetsAction.php:79
+msgid "Refresh the page to see them"
+msgstr "Frissítsd az oldalt, hogy lásd őket"
+
+#: StringTranslation/Infrastructure/WordPress/HookHandler/PendingStringsQueueWorkerAssetsAction.php:80
+msgid ""
+"String registration is paused: there is not enough PHP memory to continue. "
+"Increase the memory limit or retry."
+msgstr "A szövegek regisztrálása szünetel: nincs elég PHP-memória a folytatáshoz. Növeld a memóriakorlátot, vagy próbáld újra."
+
+#: StringTranslation/Infrastructure/WordPress/HookHandler/PendingStringsQueueWorkerAssetsAction.php:81
+msgid "String registration is paused after many background requests."
+msgstr "A szövegek regisztrálása sok háttérkérés után szünetel."
+
+#: StringTranslation/Infrastructure/WordPress/HookHandler/PendingStringsQueueWorkerAssetsAction.php:82
+msgid "String registration was interrupted by a server error."
+msgstr "A szövegek regisztrálását egy szerverhiba megszakította."
+
+#. translators: Button label in the string registration notice: it starts the
+#. interrupted registration again. Verb, imperative.
+#: StringTranslation/Infrastructure/WordPress/HookHandler/PendingStringsQueueWorkerAssetsAction.php:84
+msgid "Retry"
+msgstr "Újrapróbálás"

@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: Customize My Account Page For Woocommerce 2.0.1\n"
+"Project-Id-Version: Customize My Account Page For Woocommerce 2.1.0\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:46:21+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,12 +18,12 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: Customize My Account Page For Woocommerce\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 2.0.1\n"
+"X-Plugin-Version: 2.1.0\n"
 
 #. Plugin Name of the plugin
 #: customize-my-account-page-for-woocommerce.php
 msgid "Customize My Account Page For Woocommerce"
-msgstr "A Fiókom oldal testreszabása a Woocommerce-hez"
+msgstr "A Fiókom oldal testreszabása a WooCommerce-hez"
 
 #. Plugin URI of the plugin
 #: customize-my-account-page-for-woocommerce.php
@@ -37,9 +37,7 @@ msgstr ""
 msgid ""
 "Allows you to register custom WooCommerce tabs on my-account page and "
 "customize the design."
-msgstr ""
-"Lehetővé teszi egyéni WooCommerce lapok regisztrálását a my-account oldalon,"
-" és a megjelenés testreszabását."
+msgstr "Engedélyezi az egyéni WooCommerce-fülek regisztrálását a my-account oldalon, és a megjelenés testreszabását."
 
 #. Author of the plugin
 #: customize-my-account-page-for-woocommerce.php
@@ -51,7 +49,7 @@ msgstr "ThemeGrill"
 msgid "https://themegrill.com"
 msgstr "https://themegrill.com"
 
-#: customize-my-account-page-for-woocommerce.php:34
+#: customize-my-account-page-for-woocommerce.php:36
 msgid "Dismiss this notice."
 msgstr "Értesítés elvetése."
 
@@ -59,11 +57,13 @@ msgstr "Értesítés elvetése."
 msgid "Dashboard"
 msgstr "Vezérlőpult"
 
-#: includes/AccountMenu.php:125
+#: includes/AccountMenu.php:125 templates/admin/js/banner.php:347
+#: templates/admin/tab-content/banner-settings.php:357
 msgid "Orders"
 msgstr "Rendelések"
 
-#: includes/AccountMenu.php:126
+#: includes/AccountMenu.php:126 templates/admin/js/banner.php:348
+#: templates/admin/tab-content/banner-settings.php:358
 msgid "Downloads"
 msgstr "Letöltések"
 
@@ -95,61 +95,75 @@ msgstr "Előfizetések"
 msgid "Team"
 msgstr "Csapat"
 
-#: includes/Ajax.php:117 includes/Ajax.php:323
+#: includes/Ajax.php:120 includes/Ajax.php:330
 msgid "User is not logged in"
 msgstr "A felhasználó nincs bejelentkezve"
 
-#: includes/Ajax.php:124 includes/Ajax.php:330
+#: includes/Ajax.php:127 includes/Ajax.php:337
 msgid "Nonce is required"
-msgstr "Nonce szükséges"
+msgstr "A nonce megadása kötelező"
 
-#: includes/Ajax.php:132 includes/Ajax.php:339
+#: includes/Ajax.php:135 includes/Ajax.php:346
 msgid "Invalid nonce"
 msgstr "Érvénytelen nonce"
 
-#: includes/Ajax.php:142
+#: includes/Ajax.php:145
 msgid "File is required"
-msgstr "Fájl szükséges"
+msgstr "A fájl megadása kötelező"
 
-#: includes/Ajax.php:180
+#: includes/Ajax.php:183
 msgid "Temporary file is not readable"
 msgstr "Az ideiglenes fájl nem olvasható"
 
-#: includes/Ajax.php:190
+#: includes/Ajax.php:193
 msgid "Invalid image type. Only JPG and PNG are allowed."
-msgstr "Érvénytelen képtípus. Csak JPG és PNG engedélyezett."
+msgstr "Hibás képtípus. Csak JPG- és PNG-formátum engedélyezett."
 
-#: includes/Ajax.php:196
+#: includes/Ajax.php:199
 msgid "Could not read file contents"
 msgstr "Nem sikerült beolvasni a fájl tartalmát"
 
-#: includes/Ajax.php:205
+#: includes/Ajax.php:208
 msgid "The image appears to be corrupted"
 msgstr "Úgy tűnik, a kép sérült"
 
-#: includes/Ajax.php:225
+#: includes/Ajax.php:228
 msgid "Image contains suspicious content"
 msgstr "A kép gyanús tartalmat tartalmaz"
 
-#: includes/Ajax.php:236
+#: includes/Ajax.php:239
 msgid "Suspicious image metadata"
-msgstr "Gyanús kép metaadatok"
+msgstr "A kép metaadatai gyanúsak"
 
-#: includes/Ajax.php:268
+#: includes/Ajax.php:271
 msgid "Something went wrong, try again"
 msgstr "Valami hiba történt, próbálja meg újra"
 
-#: includes/Ajax.php:305
+#: includes/Ajax.php:312
 msgid "Uploaded successfully"
 msgstr "Sikeresen feltöltve"
 
-#: includes/Ajax.php:350
-msgid "File deleted successfully"
-msgstr "A fájl sikeresen törölve"
+#: includes/Ajax.php:359
+msgid "You are not allowed to delete this attachment."
+msgstr "Önnek nincs jogosultsága a csatolmány törlésére."
 
-#: includes/Ajax.php:354
-msgid "Missing the attchment id."
-msgstr "Hiányzik a csatolmány azonosítója."
+#: includes/Ajax.php:368
+msgid "File deleted successfully."
+msgstr "A fájl sikeresen törölve."
+
+#: includes/Ajax.php:372
+msgid "Missing the attachment id."
+msgstr "Hiányzik a csatolmány ID-ja."
+
+#: includes/Ajax.php:406 includes/Ajax.php:484 includes/ImportExport.php:175
+#: includes/ImportExport.php:239
+msgid "You do not have permission to perform this action."
+msgstr "Nincs jogosultsága ennek a műveletnek a végrehajtásához."
+
+#: includes/Ajax.php:593
+msgid ""
+"The URL does not point to a supported image (JPG, PNG, GIF, WEBP or BMP)."
+msgstr "Az URL nem támogatott képfájlra mutat (JPG, PNG, GIF, WEBP vagy BMP)."
 
 #: includes/Customizer/Config/Avatar.php:80
 msgid "Profile Settings"
@@ -161,11 +175,11 @@ msgstr "Profilkép helyőrző"
 
 #: includes/Customizer/Config/Avatar.php:117
 msgid "Profile Picture Size Limit"
-msgstr "Profilkép méretkorlát"
+msgstr "Profilkép méretkorlátja"
 
 #: includes/Customizer/Config/Avatar.php:118
 msgid "Maximum file size(KB) for uploaded images"
-msgstr "Feltöltött képek maximális fájlmérete(KB)"
+msgstr "Feltöltött képek maximális fájlmérete (KB)"
 
 #: includes/Customizer/Config/Avatar.php:137
 msgid "Profile Picture Style"
@@ -185,11 +199,11 @@ msgstr "Elrendezés és megjelenés"
 
 #: includes/Customizer/Config/Layout.php:118
 msgid "Vertical Left"
-msgstr "Függőleges bal"
+msgstr "Bal oldali függőleges elrendezés"
 
 #: includes/Customizer/Config/Layout.php:124
 msgid "Vertical Right"
-msgstr "Függőleges jobb"
+msgstr "Jobb oldali függőleges elrendezés"
 
 #: includes/Customizer/Config/Layout.php:130
 msgid "Horizontal"
@@ -208,7 +222,7 @@ msgid "Classic"
 msgstr "Klasszikus"
 
 #: includes/Customizer/Config/Layout.php:151
-#: includes/Functions/CoreFunctions.php:1783
+#: includes/Functions/CoreFunctions.php:1827
 msgid "Legacy"
 msgstr "Örökölt"
 
@@ -234,27 +248,27 @@ msgstr "Válassza ki az avatár elrendezését"
 
 #: includes/Customizer/Config/Legacy/LegacyAvatar.php:47
 msgid "Avatar left aligned"
-msgstr "Avatar balra igazítva"
+msgstr "Balra igazított avatár"
 
 #: includes/Customizer/Config/Legacy/LegacyAvatar.php:53
 msgid "Avatar right aligned"
-msgstr "Avatar jobbra igazítva"
+msgstr "Jobbra igazított avatár"
 
 #: includes/Customizer/Config/Legacy/LegacyAvatar.php:59
 msgid "Avatar center aligned"
-msgstr "Avatar középre igazítva"
+msgstr "Középre igazított avatár"
 
 #: includes/Customizer/Config/Legacy/LegacyAvatar.php:65
 msgid "Avatar vertical aligned"
-msgstr "Avatar függőlegesen igazítva"
+msgstr "Függőlegesen igazított avatár"
 
 #: includes/Customizer/Config/Legacy/LegacyAvatar.php:81
 msgid "Avatar Username"
-msgstr "Avatar felhasználónév"
+msgstr "Avatár felhasználóneve"
 
 #: includes/Customizer/Config/Legacy/LegacyAvatar.php:82
 msgid "Enable and disble to hide the username"
-msgstr "Engedélyezze vagy tiltsa le a felhasználónév elrejtéséhez"
+msgstr "A felhasználónév elrejtéséhez kapcsolja be vagy ki ezt a beállítást"
 
 #: includes/Customizer/Config/Legacy/LegacyButton.php:26
 #: includes/Customizer/Config/Legacy/LegacyButton.php:262
@@ -311,6 +325,8 @@ msgstr "Válassza ki a szegély stílusát"
 #: includes/Customizer/Config/Legacy/LegacyNavigation.php:88
 #: includes/Customizer/Config/Legacy/LegacyNavigation.php:198
 #: includes/Customizer/Config/Legacy/LegacyNavigation.php:328
+#: templates/admin/js/banner.php:391
+#: templates/admin/tab-content/banner-settings.php:401
 msgid "None"
 msgstr "Nincs"
 
@@ -392,7 +408,7 @@ msgstr "Süllyesztett"
 #: includes/Customizer/Config/Legacy/LegacyNavigation.php:206
 #: includes/Customizer/Config/Legacy/LegacyNavigation.php:336
 msgid "Outset"
-msgstr "Kiemelt"
+msgstr "Kidomborodó"
 
 #: includes/Customizer/Config/Legacy/LegacyButton.php:105
 #: includes/Customizer/Config/Legacy/LegacyButton.php:197
@@ -431,11 +447,11 @@ msgstr "Szegélyvastagság leírása"
 #: includes/Customizer/Config/Legacy/LegacyButton.php:170
 #: includes/Customizer/Config/Legacy/LegacyNavigation.php:154
 msgid "Hover State"
-msgstr "Hover állapot"
+msgstr "Rámutatás állapota"
 
 #: includes/Customizer/Config/Legacy/LegacyButton.php:184
 msgid "Choose background border style"
-msgstr "Válassza ki a háttér szegély stílusát"
+msgstr "Válassza ki a háttér keretének stílusát"
 
 #: includes/Customizer/Config/Legacy/LegacyButton.php:215
 #: includes/Customizer/Config/Legacy/LegacyInputField.php:203
@@ -448,20 +464,20 @@ msgstr "Állítsa be a szegély vastagságát"
 #: includes/Customizer/Config/Legacy/LegacyInputField.php:55
 #: includes/Customizer/Config/Legacy/LegacyInputField.php:109
 #: includes/Customizer/Config/Legacy/LegacyNavigation.php:433
-#: includes/Customizer/Config/Spacing.php:153
-#: includes/Customizer/Config/Spacing.php:196
-#: includes/Customizer/Config/Spacing.php:276
+#: includes/Customizer/Config/Spacing.php:151
+#: includes/Customizer/Config/Spacing.php:194
+#: includes/Customizer/Config/Spacing.php:273
 msgid "Padding"
-msgstr "Belső margó"
+msgstr "Padding"
 
 #: includes/Customizer/Config/Legacy/LegacyButton.php:280
 msgid "Set Padding"
-msgstr "Állítsa be a belső margót"
+msgstr "Állítsa be a paddinget"
 
 #: includes/Customizer/Config/Legacy/LegacyButton.php:308
 #: includes/Customizer/Config/Legacy/LegacyContent.php:62
-#: includes/Customizer/Config/Spacing.php:126
-#: includes/Customizer/Config/Spacing.php:226
+#: includes/Customizer/Config/Spacing.php:125
+#: includes/Customizer/Config/Spacing.php:224
 msgid "Margin"
 msgstr "Külső margó"
 
@@ -479,7 +495,7 @@ msgstr "Állítsa be a tartalom margóját"
 
 #: includes/Customizer/Config/Legacy/LegacyContent.php:92
 msgid "Set Content Padding"
-msgstr "Állítsa be a tartalom belső margóját"
+msgstr "Állítsa be a tartalom paddingját"
 
 #: includes/Customizer/Config/Legacy/LegacyInputField.php:26
 msgid "Input Field"
@@ -488,7 +504,7 @@ msgstr "Beviteli mező"
 #: includes/Customizer/Config/Legacy/LegacyInputField.php:56
 #: includes/Customizer/Config/Legacy/LegacyInputField.php:110
 msgid "Set padding"
-msgstr "Állítsa be a belső margót"
+msgstr "Állítsa be a paddinget"
 
 #: includes/Customizer/Config/Legacy/LegacyInputField.php:172
 msgid "Choose background border"
@@ -530,23 +546,23 @@ msgstr "Aktív állapot"
 
 #: includes/Customizer/Config/Legacy/LegacyNavigation.php:84
 msgid "Select active background border style"
-msgstr "Válassza ki az aktív háttér szegély stílusát"
+msgstr "Az aktív háttér keretstílusának kiválasztása"
 
 #: includes/Customizer/Config/Legacy/LegacyNavigation.php:115
 msgid "Set tab active border width"
-msgstr "Állítsa be a fül aktív szegélyének vastagságát"
+msgstr "Az aktív fül keretszélességének beállítása"
 
 #: includes/Customizer/Config/Legacy/LegacyNavigation.php:194
 msgid "Select hover background border style"
-msgstr "Válassza ki a rámutatáskor megjelenő háttér szegélyének stílusát"
+msgstr "Válassza ki a háttér keretének stílusát rámutatáskor"
 
 #: includes/Customizer/Config/Legacy/LegacyNavigation.php:225
 msgid "Set tab hover border width"
-msgstr "Állítsa be a fül rámutatáskor látható szegélyvastagságát"
+msgstr "Állítsa be a fül keretének vastagságát rámutatáskor"
 
 #: includes/Customizer/Config/Legacy/LegacyNavigation.php:324
 msgid "Select tab background border"
-msgstr "Válassza ki a fül háttér szegélyét"
+msgstr "Válassza ki a fül háttérkeretét"
 
 #: includes/Customizer/Config/Legacy/LegacyNavigation.php:355
 msgid "Set tab border width"
@@ -554,11 +570,11 @@ msgstr "Állítsa be a fül szegélyvastagságát"
 
 #: includes/Customizer/Config/Legacy/LegacyNavigation.php:434
 msgid "Set navigation item padding."
-msgstr "Állítsa be a navigációs elemek belső margóját."
+msgstr "Állítsa be a navigációs tétel paddingértékét."
 
 #: includes/Customizer/Config/Legacy/LegacyWrapper.php:26
 msgid "Wrapper"
-msgstr "Burkoló"
+msgstr "Burkolóelem"
 
 #: includes/Customizer/Config/Legacy/LegacyWrapper.php:39
 msgid "Font Family"
@@ -566,7 +582,7 @@ msgstr "Betűcsalád"
 
 #: includes/Customizer/Config/Legacy/LegacyWrapper.php:40
 msgid "Select a desire Google font."
-msgstr "Válasszon egy kívánt Google-betűtípust."
+msgstr "Válassza ki a kívánt Google-betűtípust."
 
 #: includes/Customizer/Config/Legacy/LegacyWrapper.php:46
 msgctxt "enhanced select"
@@ -575,7 +591,7 @@ msgstr "Válasszon betűcsaládot&hellip;"
 
 #: includes/Customizer/Config/Legacy/LegacyWrapper.php:77
 msgid "Customize the font size."
-msgstr "Testreszabhatja a betűméretet."
+msgstr "Szabja testre a betűméretet."
 
 #: includes/Customizer/Config/Navigation.php:72
 msgid "Navigation Menu"
@@ -627,22 +643,22 @@ msgstr "Térköz"
 
 #: includes/Customizer/Config/Spacing.php:108
 msgid "Page Container"
-msgstr "Oldal konténer"
+msgstr "Oldalkonténer"
 
-#: includes/Customizer/Config/Spacing.php:176
+#: includes/Customizer/Config/Spacing.php:174
 msgid "Menu Container"
-msgstr "Menü konténer"
+msgstr "Menükonténer"
 
-#: includes/Customizer/Config/Spacing.php:249
+#: includes/Customizer/Config/Spacing.php:247
 msgid "Profile Picture"
 msgstr "Profilkép"
 
-#: includes/Customizer/Config/Spacing.php:277
+#: includes/Customizer/Config/Spacing.php:274
 msgid "Set Avatar Padding"
-msgstr "Állítsa be az avatar belső margóját"
+msgstr "Avatar padding beállítása"
 
 #: includes/Customizer/Config/Template.php:71
-#: includes/Customizer/Customizer.php:229
+#: includes/Customizer/Customizer.php:258
 msgid "Default Template"
 msgstr "Alapértelmezett sablon"
 
@@ -650,18 +666,13 @@ msgstr "Alapértelmezett sablon"
 msgid ""
 "Looking for a template? You can browse our templates, import and preview "
 "templates, then activate them right here."
-msgstr ""
-"Sablont keres? Böngészheti sablonjainkat, importálhatja és előnézheti őket, "
-"majd közvetlenül itt aktiválhatja."
+msgstr "Sablonmintát keres? Böngészheti sablonmintáinkat, importálhatja és előnézheti őket, majd közvetlenül itt bekapcsolhatja."
 
 #: includes/Customizer/Config/Template.php:73
 msgid ""
 "While previewing a new template, you can continue to tailor things like form"
 " styles and custom css, and explore template-specific options."
-msgstr ""
-"Egy új sablon előnézete közben továbbra is alakíthatja például az "
-"űrlapstílusokat és az egyéni CSS-t, valamint felfedezheti a sablonra "
-"jellemző beállításokat."
+msgstr "Egy új sablonminta előnézete közben továbbra is alakíthatja például az űrlapstílusokat és az egyéni CSS-t, valamint felfedezheti a sablonspecifikus opciókat."
 
 #: includes/Customizer/Controls/Dimension.php:226
 msgid "Desktop"
@@ -683,45 +694,42 @@ msgstr "Felül"
 msgid "Bottom"
 msgstr "Alul"
 
-#: includes/Customizer/Customizer.php:162
+#: includes/Customizer/Customizer.php:191
 msgid "My Account Page"
-msgstr "Saját fiók oldal"
+msgstr "Saját fiókoldal"
 
-#: includes/Customizer/Customizer.php:163
+#: includes/Customizer/Customizer.php:192
 msgid ""
 "WooCommerce Customizer &ndash; Allows you to preview changes and customize "
 "MyAccount page."
-msgstr ""
-"WooCommerce testreszabó &ndash; Lehetővé teszi a módosítások előnézetét és a"
-" Saját fiók oldal testreszabását."
+msgstr "WooCommerce testreszabó &ndash; Lehetővé teszi a módosítások előnézetét és a Saját fiókoldal testreszabását."
 
-#: includes/Customizer/Customizer.php:166
-#: includes/WoocommerceCustomizer.php:608
+#: includes/Customizer/Customizer.php:195
+#: includes/WoocommerceCustomizer.php:694
 msgid "Reset"
 msgstr "Visszaállítás"
 
-#: includes/Customizer/Customizer.php:168
+#: includes/Customizer/Customizer.php:197
 msgid "Warning! this will remove all my-account page customizations."
-msgstr ""
-"Figyelem! Ez eltávolít minden my-account oldalon végzett testreszabást."
+msgstr "Figyelem! Ez eltávolítja a Saját fiókoldal összes testreszabását."
 
-#: includes/Customizer/Customizer.php:230
+#: includes/Customizer/Customizer.php:259
 msgid "Classic Layout"
 msgstr "Klasszikus elrendezés"
 
-#: includes/Customizer/Customizer.php:425
+#: includes/Customizer/Customizer.php:454
 msgid "Invalid filesystem credentials"
 msgstr "Érvénytelen fájlrendszer-hitelesítő adatok"
 
-#: includes/Customizer/Customizer.php:476
+#: includes/Customizer/Customizer.php:551
 msgid "ScssPhp: Unable to compile content"
 msgstr "ScssPhp: Nem sikerült lefordítani a tartalmat"
 
-#: includes/Customizer/Customizer.php:492
+#: includes/Customizer/Customizer.php:567
 msgid "Save"
 msgstr "Mentés"
 
-#: includes/Customizer/Customizer.php:495
+#: includes/Customizer/Customizer.php:570
 msgid "Saved"
 msgstr "Elmentve"
 
@@ -733,7 +741,7 @@ msgstr "Aktív sablon"
 #: includes/Customizer/Section.php:45
 #: includes/Customizer/Sections/Template.php:45
 msgid "Change template"
-msgstr "Sablon módosítása"
+msgstr "Sablonminta váltása"
 
 #: includes/Customizer/Section.php:45
 #: includes/Customizer/Sections/Template.php:45
@@ -749,7 +757,7 @@ msgstr "Vissza"
 #: includes/Customizer/Section.php:56
 #: includes/Customizer/Sections/Template.php:56
 msgid "You are browsing"
-msgstr "Jelenleg böngészi"
+msgstr "Böngészés:"
 
 #: includes/Customizer/Section.php:58
 #: includes/Customizer/Sections/Template.php:58
@@ -762,7 +770,7 @@ msgid "Help"
 msgstr "Súgó"
 
 #. translators: The upload_max_filesize directive in php.ini
-#: includes/Functions/CoreFunctions.php:370
+#: includes/Functions/CoreFunctions.php:414
 #, php-format
 msgid ""
 "The uploaded file exceeds the upload_max_filesize (%s) directive in php.ini."
@@ -770,7 +778,7 @@ msgstr ""
 "A feltöltött fájl meghaladja a php.ini-ben megadott upload_max_filesize (%s)"
 " direktíva értékét."
 
-#: includes/Functions/CoreFunctions.php:373
+#: includes/Functions/CoreFunctions.php:417
 msgid ""
 "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
 "the HTML form."
@@ -778,56 +786,56 @@ msgstr ""
 "A feltöltött fájl meghaladja a HTML űrlapban szereplő MAX_FILE_SIZE "
 "direktívában meghatározott értéket."
 
-#: includes/Functions/CoreFunctions.php:374
+#: includes/Functions/CoreFunctions.php:418
 msgid "The uploaded file was only partially uploaded."
 msgstr "A feltöltött fájl csak részben töltődött fel."
 
-#: includes/Functions/CoreFunctions.php:375
+#: includes/Functions/CoreFunctions.php:419
 msgid "No file was uploaded."
 msgstr "Nem történt fájlfeltöltés."
 
-#: includes/Functions/CoreFunctions.php:376
+#: includes/Functions/CoreFunctions.php:420
 msgid "Missing a temporary folder."
 msgstr "Hiányzik az ideiglenes mappa."
 
-#: includes/Functions/CoreFunctions.php:377
+#: includes/Functions/CoreFunctions.php:421
 msgid "Failed to write file to disk."
 msgstr "Nem sikerült fájlt írni a lemezre."
 
-#: includes/Functions/CoreFunctions.php:378
+#: includes/Functions/CoreFunctions.php:422
 msgid "File upload stopped by extension."
 msgstr "A fájl feltöltését a kiterjesztés megállította."
 
-#: includes/Functions/CoreFunctions.php:1267
-#: includes/Functions/CoreFunctions.php:1268
+#: includes/Functions/CoreFunctions.php:1311
+#: includes/Functions/CoreFunctions.php:1312
 msgid "Click to edit this element."
 msgstr "Kattintson az elem szerkesztéséhez."
 
-#: includes/Functions/CoreFunctions.php:1482
-#: includes/Functions/CoreFunctions.php:1556
-#: includes/Functions/CoreFunctions.php:1650
+#: includes/Functions/CoreFunctions.php:1526
+#: includes/Functions/CoreFunctions.php:1600
+#: includes/Functions/CoreFunctions.php:1694
 msgid "Brick Red"
 msgstr "Téglavörös"
 
-#: includes/Functions/CoreFunctions.php:1500
-#: includes/Functions/CoreFunctions.php:1579
-#: includes/Functions/CoreFunctions.php:1674
+#: includes/Functions/CoreFunctions.php:1544
+#: includes/Functions/CoreFunctions.php:1623
+#: includes/Functions/CoreFunctions.php:1718
 msgid "Forest Green"
 msgstr "Erdőzöld"
 
-#: includes/Functions/CoreFunctions.php:1518
-#: includes/Functions/CoreFunctions.php:1602
-#: includes/Functions/CoreFunctions.php:1698
+#: includes/Functions/CoreFunctions.php:1562
+#: includes/Functions/CoreFunctions.php:1646
+#: includes/Functions/CoreFunctions.php:1742
 msgid "Royal Blue"
 msgstr "Királykék"
 
-#: includes/Functions/CoreFunctions.php:1536
-#: includes/Functions/CoreFunctions.php:1625
-#: includes/Functions/CoreFunctions.php:1722
+#: includes/Functions/CoreFunctions.php:1580
+#: includes/Functions/CoreFunctions.php:1669
+#: includes/Functions/CoreFunctions.php:1766
 msgid "Sunset Orange"
-msgstr "Naplemente narancs"
+msgstr "Naplemente-narancs"
 
-#: includes/Functions/CoreFunctions.php:1910
+#: includes/Functions/CoreFunctions.php:1954
 msgid "Default Avatar"
 msgstr "Alapértelmezett avatar"
 
@@ -847,273 +855,374 @@ msgstr "Hónap(ok)"
 msgid "Year(s)"
 msgstr "Év(ek)"
 
-#: includes/Notice.php:81
-msgid "Dismiss"
-msgstr "Bezárás"
+#: includes/ImportExport.php:84 includes/ImportExport.php:101
+#: includes/ImportExport.php:102
+msgid "Import / Export"
+msgstr "Importálás / Exportálás"
 
-#: includes/Settings.php:57 includes/Settings.php:549
+#: includes/ImportExport.php:147 includes/Settings.php:57
+#: includes/Settings.php:689
 msgid "Endpoints"
 msgstr "Végpontok"
 
-#: includes/Settings.php:58 includes/Settings.php:558
+#: includes/ImportExport.php:148 includes/Settings.php:58
+#: includes/Settings.php:698
+msgid "Banners"
+msgstr "Bannerek"
+
+#: includes/ImportExport.php:149 includes/Settings.php:59
+#: includes/Settings.php:707
 msgid "Customizer"
 msgstr "Testreszabó"
 
-#: includes/Settings.php:59 includes/Settings.php:566
-#: includes/WoocommerceCustomizer.php:271
+#: includes/ImportExport.php:150 includes/Settings.php:60
+#: includes/Settings.php:715 includes/WoocommerceCustomizer.php:286
 #: templates/admin/dialogs/restore-defaults.php:29
 msgid "Settings"
 msgstr "Beállítások"
 
-#: includes/Settings.php:153
+#: includes/ImportExport.php:187
+msgid "Please select at least one section to export."
+msgstr "Kérjük, válasszon ki legalább egy szakaszt az exportáláshoz."
+
+#: includes/ImportExport.php:215
+msgid "Could not generate the export file. Please try again."
+msgstr "Nem sikerült létrehozni az exportfájlt. Kérjük, próbálja újra."
+
+#: includes/ImportExport.php:248
+msgid "Please choose a configuration file to import."
+msgstr "Kérjük, válasszon ki egy konfigurációs fájlt az importáláshoz."
+
+#: includes/ImportExport.php:254
+msgid "The file could not be uploaded. Please try again."
+msgstr "Nem sikerült feltölteni a fájlt. Kérjük, próbálja újra."
+
+#: includes/ImportExport.php:259
+msgid "Invalid file type. Please upload a valid .json configuration file."
+msgstr "Hibás fájltípus. Kérjük, töltsön fel egy érvényes .json konfigurációs fájlt."
+
+#: includes/ImportExport.php:264
+msgid "The configuration file is empty or unreadable."
+msgstr "A konfigurációs fájl üres vagy nem olvasható."
+
+#: includes/ImportExport.php:269
+msgid "The configuration file is not valid JSON."
+msgstr "A konfigurációs fájl nem érvényes JSON."
+
+#: includes/ImportExport.php:298
+msgid "The configuration file did not contain any importable data."
+msgstr "A konfigurációs fájl nem tartalmazott importálható adatokat."
+
+#. translators: %s: comma separated list of imported sections (e.g. Endpoints,
+#. Customizer, Settings).
+#: includes/ImportExport.php:322
+#, php-format
+msgid "Configuration imported successfully: %s."
+msgstr "A konfiguráció importálása sikeres: %s."
+
+#: includes/ImportExport.php:338
+msgid "This does not look like a valid My Account configuration file."
+msgstr "Ez nem tűnik érvényes Fiókom konfigurációs fájlnak."
+
+#: includes/ImportExport.php:346
+msgid ""
+"This configuration file was not exported from Customize My Account Page for "
+"WooCommerce."
+msgstr "Ezt a konfigurációs fájlt nem a Customize My Account Page for WooCommerce bővítményből exportálták."
+
+#. translators: 1: file schema version, 2: current plugin version.
+#: includes/ImportExport.php:360
+#, php-format
+msgid ""
+"This configuration file (schema %1$s) was created by a newer version of the "
+"plugin and is not compatible with the installed version (%2$s). Please "
+"update the plugin and try again."
+msgstr "Ezt a konfigurációs fájlt (séma: %1$s) a bővítmény újabb verziója hozta létre, ezért az nem kompatibilis a telepített verzióval (%2$s). Kérjük, frissítse a bővítményt, majd próbálja újra."
+
+#: includes/Notice.php:81
+msgid "Dismiss"
+msgstr "Bezárás"
+
+#: includes/Settings.php:155
 msgid "Customization reset successfully."
-msgstr "A testreszabás sikeresen visszaállítva."
+msgstr "A testreszabás alaphelyzetbe állítása sikerült."
 
-#: includes/Settings.php:231
+#: includes/Settings.php:241
 msgid "Settings reset successfully."
-msgstr "A beállítások sikeresen visszaállítva."
+msgstr "A beállítások alaphelyzetbe állítása sikerült."
 
-#: includes/Settings.php:272
+#: includes/Settings.php:282
 msgid "Settings saved successfully"
 msgstr "A beállítások sikeresen mentve"
 
-#: includes/Settings.php:299 includes/Settings.php:879
+#: includes/Settings.php:309 includes/Settings.php:1039
 msgid "Nonce is required."
-msgstr "Nonce megadása szükséges."
+msgstr "A nonce megadása kötelező."
 
-#: includes/Settings.php:310 includes/Settings.php:890
+#: includes/Settings.php:320 includes/Settings.php:1050
 msgid "Invalid nonce."
 msgstr "Érvénytelen nonce."
 
-#: includes/Settings.php:335
+#: includes/Settings.php:345
 msgid "Endpoints reset successfully."
-msgstr "A végpontok sikeresen visszaállítva."
+msgstr "A végpontok alaphelyzetbe állítása sikerült."
 
-#: includes/Settings.php:369 includes/WoocommerceCustomizer.php:345
+#: includes/Settings.php:384 includes/WoocommerceCustomizer.php:388
 msgid ""
 "Invalid URL. Must be a full URL (https://...) or a hash link (#section)."
-msgstr ""
-"Érvénytelen URL. Teljes URL-nek (https://...) vagy hash hivatkozásnak "
-"(#section) kell lennie."
+msgstr "Érvénytelen URL. Teljes URL-nek (https://...) vagy hash hivatkozásnak (#section) kell lennie."
 
-#: includes/Settings.php:516
+#: includes/Settings.php:538
 msgid "Endpoints saved successfully"
 msgstr "A végpontok sikeresen mentve"
 
-#: includes/Settings.php:537 includes/Settings.php:548
-#: includes/Settings.php:557 includes/Settings.php:565
+#: includes/Settings.php:623
+msgid "Banners saved successfully"
+msgstr "A bannerek mentése sikeres"
+
+#: includes/Settings.php:677 includes/Settings.php:688
+#: includes/Settings.php:697 includes/Settings.php:706
+#: includes/Settings.php:714
 msgid "Customize My Account Page For WooCommerce"
 msgstr "A WooCommerce Fiókom oldalának testreszabása"
 
-#: includes/Settings.php:538
+#: includes/Settings.php:678
 msgid "Customize My Account"
 msgstr "Fiókom testreszabása"
 
-#: includes/Settings.php:900
+#: includes/Settings.php:1060
 msgid "Debug settings reset successfully."
-msgstr "A hibakeresési beállítások sikeresen visszaállítva."
+msgstr "A hibakeresési beállítások alaphelyzetbe állítása sikerült."
 
-#: includes/Settings.php:928
+#: includes/Settings.php:1088
 msgid "Debug settings saved successfully"
 msgstr "A hibakeresési beállítások sikeresen mentve"
 
-#: includes/SmartTags.php:47
+#: includes/SmartTags.php:48
 msgid "Add Smart Tags"
 msgstr "Intelligens címkék hozzáadása"
 
-#: includes/SmartTags.php:188
+#: includes/SmartTags.php:189
 msgid "You have not set up this type of address yet."
 msgstr "Még nem állított be ilyen típusú címet."
 
-#: includes/SmartTags.php:248
+#: includes/SmartTags.php:260
 msgid "User ID"
-msgstr "Felhasználói azonosító"
+msgstr "Felhasználói azonosító (ID)"
 
-#: includes/SmartTags.php:249
+#: includes/SmartTags.php:261
 msgid "User Name"
-msgstr "Felhasználónév"
+msgstr "Felhasználó neve"
 
-#: includes/SmartTags.php:250
+#: includes/SmartTags.php:262
 msgid "User Email"
 msgstr "Felhasználó e-mail-címe"
 
-#: includes/SmartTags.php:251
+#: includes/SmartTags.php:263
 msgid "First Name"
 msgstr "Keresztnév"
 
-#: includes/SmartTags.php:252
+#: includes/SmartTags.php:264
 msgid "Last Name"
 msgstr "Vezetéknév"
 
-#: includes/SmartTags.php:253
+#: includes/SmartTags.php:265
 msgid "User Display Name"
 msgstr "Felhasználó megjelenített neve"
 
-#: includes/SmartTags.php:254
+#: includes/SmartTags.php:266
 msgid "User IP Address"
 msgstr "Felhasználó IP-címe"
 
-#: includes/SmartTags.php:255
+#: includes/SmartTags.php:267
 msgid "Site Name"
 msgstr "Webhely neve"
 
-#: includes/SmartTags.php:256
+#: includes/SmartTags.php:268
 msgid "Site URL "
 msgstr "Webhely URL-je "
 
-#: includes/SmartTags.php:257
+#: includes/SmartTags.php:269
 msgid "Page URL"
 msgstr "Oldal URL-je"
 
-#: includes/SmartTags.php:258
+#: includes/SmartTags.php:270
 msgid "Current Date"
 msgstr "Aktuális dátum"
 
-#: includes/SmartTags.php:259
+#: includes/SmartTags.php:271
 msgid "Current Time"
 msgstr "Aktuális idő"
 
-#: includes/SmartTags.php:260
+#: includes/SmartTags.php:272
 msgid "Billing address"
 msgstr "Számlázási cím"
 
-#: includes/SmartTags.php:261
+#: includes/SmartTags.php:273
 msgid "Billing Company"
 msgstr "Számlázási cég"
 
-#: includes/SmartTags.php:262
+#: includes/SmartTags.php:274
 msgid "Shipping address"
 msgstr "Szállítási cím"
 
-#: includes/SmartTags.php:263
+#: includes/SmartTags.php:275
 msgid "Shipping Company"
 msgstr "Szállítási cég"
 
-#: includes/WoocommerceCustomizer.php:346
+#: includes/SmartTags.php:303 templates/admin/tab-content/banners.php:108
+#: templates/admin/tab-content/banners.php:182
+msgid "Add Banner"
+msgstr "Banner hozzáadása"
+
+#: includes/WoocommerceCustomizer.php:389
 msgid "Smart Tags"
 msgstr "Intelligens címkék"
 
-#: includes/WoocommerceCustomizer.php:347
+#: includes/WoocommerceCustomizer.php:390
 msgid "Search Tags..."
 msgstr "Címkék keresése..."
 
-#: includes/WoocommerceCustomizer.php:602
+#: includes/WoocommerceCustomizer.php:398
+msgid "Insert Banner"
+msgstr "Banner beszúrása"
+
+#: includes/WoocommerceCustomizer.php:399
+msgid "No banners found. Create banners in the Banners tab first."
+msgstr "Nem található banner. Először hozzon létre bannereket a Bannerek fülön."
+
+#: includes/WoocommerceCustomizer.php:400
+#: templates/admin/endpoint-dialog.php:31
+msgid "It will be permanently deleted and cannot be recovered. Are you sure?"
+msgstr "Véglegesen törlődik, és nem állítható vissza. Biztos benne?"
+
+#. translators: %s: comma-separated endpoint names
+#: includes/WoocommerceCustomizer.php:402
+#, php-format
+msgid ""
+"This banner is still assigned to: %s. Deleting it will remove those "
+"assignments. Are you sure?"
+msgstr "Ez a banner továbbra is hozzá van rendelve a következőkhöz: %s. A törlése eltávolítja ezeket a hozzárendeléseket. Biztosan törli?"
+
+#: includes/WoocommerceCustomizer.php:688
 msgid "Enable"
 msgstr "Engedélyezés"
 
-#: includes/WoocommerceCustomizer.php:603
+#: includes/WoocommerceCustomizer.php:689
 msgid "Remove"
 msgstr "Eltávolítás"
 
-#: includes/WoocommerceCustomizer.php:604
+#: includes/WoocommerceCustomizer.php:690
 msgid "Select an icon"
 msgstr "Válasszon ikont"
 
-#: includes/WoocommerceCustomizer.php:605
+#: includes/WoocommerceCustomizer.php:691
 msgid "Select user roles"
 msgstr "Válasszon felhasználói szerepköröket"
 
-#: includes/WoocommerceCustomizer.php:606
+#: includes/WoocommerceCustomizer.php:692
 #: dist/admin-customizer-color-palette.js:1
 msgid "Cancel"
 msgstr "Mégse"
 
-#: includes/WoocommerceCustomizer.php:607
+#: includes/WoocommerceCustomizer.php:693
 msgid "Delete"
 msgstr "Törlés"
 
-#: includes/WoocommerceCustomizer.php:609
+#: includes/WoocommerceCustomizer.php:695
 #: dist/admin-customizer-color-palette.js:1
 msgid "Add"
 msgstr "Hozzáadás"
 
-#: includes/WoocommerceCustomizer.php:610
+#: includes/WoocommerceCustomizer.php:696
 msgid "Not available "
 msgstr "Nem elérhető "
 
-#: includes/WoocommerceCustomizer.php:611
+#: includes/WoocommerceCustomizer.php:697
 msgid "Available "
 msgstr "Elérhető "
 
-#: includes/WoocommerceCustomizer.php:612
+#: includes/WoocommerceCustomizer.php:698
 msgid "Slug cannot be empty "
-msgstr "A Slug nem lehet üres "
+msgstr "A slug nem lehet üres "
 
-#: includes/WoocommerceCustomizer.php:613
+#: includes/WoocommerceCustomizer.php:699
 msgid "Settings "
 msgstr "Beállítások "
 
-#: includes/WoocommerceCustomizer.php:614
+#: includes/WoocommerceCustomizer.php:700
 msgid "Design Customization "
 msgstr "Dizájn testreszabása "
 
-#: includes/WoocommerceCustomizer.php:615
+#: includes/WoocommerceCustomizer.php:701
 msgid ""
 "Restore the general settings and remove the added endpoints, group and "
 "links."
-msgstr ""
-"Az általános beállítások visszaállítása és a hozzáadott végpontok, csoport "
-"és hivatkozások eltávolítása."
+msgstr "Az általános beállítások visszaállítása és a hozzáadott végpontok, a csoport és a linkek eltávolítása."
 
-#: includes/WoocommerceCustomizer.php:616
+#: includes/WoocommerceCustomizer.php:702
 msgid "Remove all the design customization."
 msgstr "Minden dizájn-testreszabás eltávolítása."
 
-#: includes/WoocommerceCustomizer.php:617
+#: includes/WoocommerceCustomizer.php:703
 msgid "Invalid slug. "
 msgstr "Érvénytelen slug. "
 
-#: includes/WoocommerceCustomizer.php:618
+#: includes/WoocommerceCustomizer.php:704
 msgid "Label cannot be empty."
 msgstr "A címke nem lehet üres."
 
-#: includes/WoocommerceCustomizer.php:619
+#: includes/WoocommerceCustomizer.php:705
 msgid "Could Not Save Changes."
 msgstr "A módosításokat nem sikerült menteni."
 
-#: includes/WoocommerceCustomizer.php:620
+#: includes/WoocommerceCustomizer.php:706
 msgid "Please resolve the following errors and try again."
-msgstr "Kérjük, oldja meg az alábbi hibákat, majd próbálja újra."
+msgstr "Kérjük, javítsa ki az alábbi hibákat, majd próbálja újra."
 
-#: includes/WoocommerceCustomizer.php:621
+#: includes/WoocommerceCustomizer.php:707
 msgid "ok"
-msgstr "ok"
+msgstr "OK"
 
-#: includes/WoocommerceCustomizer.php:622
+#: includes/WoocommerceCustomizer.php:708
 msgid ""
 "Slug can only contains alphabets,numbers, underscore(_) and dash(-) "
 "characters."
-msgstr ""
-"A slug csak betűket,számokat, aláhúzás(_)- és kötőjel(-) karaktereket "
-"tartalmazhat."
+msgstr "A slug csak betűket, számokat, aláhúzásjelet (_) és kötőjelet (-) tartalmazhat."
 
-#: includes/WoocommerceCustomizer.php:623
+#: includes/WoocommerceCustomizer.php:709
 msgid "Slug must begin and end with alphabets and numbers."
-msgstr "A slugnak betűvel vagy számmal kell kezdődnie és végződnie."
+msgstr "A slug első és utolsó karakterének betűnek vagy számnak kell lennie."
 
-#: includes/WoocommerceCustomizer.php:624
+#: includes/WoocommerceCustomizer.php:710
 msgid "Slug must be 3 characters in length."
 msgstr "A slugnak 3 karakter hosszúnak kell lennie."
 
-#: includes/WoocommerceCustomizer.php:625 templates/admin/customization.php:43
+#: includes/WoocommerceCustomizer.php:711 templates/admin/customization.php:54
 msgid "Save Changes"
 msgstr "Módosítások mentése"
 
-#: includes/WoocommerceCustomizer.php:626
+#: includes/WoocommerceCustomizer.php:712
 msgid "Discard"
 msgstr "Elvetés"
 
-#: includes/WoocommerceCustomizer.php:761
+#: includes/WoocommerceCustomizer.php:713
+msgid "Error"
+msgstr "Hiba"
+
+#: includes/WoocommerceCustomizer.php:714
+msgid "Please enter a valid image URL."
+msgstr "Kérjük, adjon meg egy érvényes kép-URL-t."
+
+#: includes/WoocommerceCustomizer.php:849
 msgid ""
 "WooCommerce is required for this plugin to work. Please, activate "
 "WooCommerce first."
-msgstr ""
-"A bővítmény működéséhez szükséges a WooCommerce. Kérjük, először aktiválja a"
-" WooCommerce-t."
+msgstr "A bővítmény működéséhez szükség van a WooCommerce-re. Kérjük, először kapcsolja be a WooCommerce-t."
 
-#: templates/admin/customization.php:49
+#: templates/admin/customization.php:60
 msgid "Restore Defaults"
-msgstr "Alapbeállítások visszaállítása"
+msgstr "Alapértelmezett beállítások visszaállítása"
 
 #: templates/admin/dialogs/restore-defaults.php:13
 msgid "Confirm Restore"
@@ -1123,11 +1232,11 @@ msgstr "Visszaállítás megerősítése"
 msgid ""
 "All changes will be reverted to default, and custom endpoints will be "
 "deleted."
-msgstr ""
-"Minden módosítás visszaáll az alapértelmezettre, és az egyéni végpontok "
-"törlődnek."
+msgstr "Minden módosítás visszaáll az alapértelmezett állapotra, és az egyéni végpontok törlődnek."
 
 #: templates/admin/dialogs/restore-defaults.php:23
+#: templates/admin/js/banner.php:392
+#: templates/admin/tab-content/banner-settings.php:402
 msgid "Endpoint"
 msgstr "Végpont"
 
@@ -1139,6 +1248,10 @@ msgstr "Dizájn testreszabása"
 msgid "Name"
 msgstr "Név"
 
+#: templates/admin/endpoint-dialog.php:28
+msgid "Confirm Delete"
+msgstr "Törlés megerősítése"
+
 #: templates/admin/endpoints/endpoint.php:58
 #: templates/admin/js/endpoint.php:34
 msgid "Endpoint Label"
@@ -1147,7 +1260,7 @@ msgstr "Végpont címkéje"
 #: templates/admin/endpoints/endpoint.php:59
 #: templates/admin/js/endpoint.php:35
 msgid "The display name shown for this tab in the My Account menu."
-msgstr "A Fiókom menüben e fül megjelenő neve."
+msgstr "A fül megjelenített neve a Fiókom menüben."
 
 #: templates/admin/endpoints/endpoint.php:75
 msgid "Slug"
@@ -1176,79 +1289,158 @@ msgstr ""
 #: templates/admin/endpoints/group.php:81
 #: templates/admin/endpoints/group.php:95
 #: templates/admin/endpoints/link.php:94
-#: templates/admin/endpoints/link.php:111 templates/admin/js/endpoint.php:91
+#: templates/admin/endpoints/link.php:111 templates/admin/js/banner.php:164
+#: templates/admin/js/banner.php:172 templates/admin/js/endpoint.php:91
 #: templates/admin/js/endpoint.php:105 templates/admin/js/group.php:76
 #: templates/admin/js/group.php:90 templates/admin/js/link.php:90
 #: templates/admin/js/link.php:104
+#: templates/admin/tab-content/banner-settings.php:155
+#: templates/admin/tab-content/banner-settings.php:163
 msgid "Choose Icon"
 msgstr "Ikon választása"
 
-#: templates/admin/endpoints/endpoint.php:191
-#: templates/admin/endpoints/group.php:149
-#: templates/admin/endpoints/link.php:165 templates/admin/js/endpoint.php:156
+#: templates/admin/endpoints/endpoint.php:172
+#: templates/admin/endpoints/group.php:111
+#: templates/admin/endpoints/link.php:127 templates/admin/js/banner.php:108
+#: templates/admin/js/banner.php:200
+#: templates/admin/tab-content/banner-settings.php:106
+#: templates/admin/tab-content/banner-settings.php:209
+msgid "Paste image URL"
+msgstr "Kép URL-jének beillesztése"
+
+#: templates/admin/endpoints/endpoint.php:173
+#: templates/admin/endpoints/group.php:112
+#: templates/admin/endpoints/link.php:128 templates/admin/js/banner.php:109
+#: templates/admin/js/banner.php:201
+#: templates/admin/tab-content/banner-settings.php:107
+#: templates/admin/tab-content/banner-settings.php:210
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#: templates/admin/endpoints/endpoint.php:222
+#: templates/admin/endpoints/group.php:161
+#: templates/admin/endpoints/link.php:177 templates/admin/js/endpoint.php:156
 #: templates/admin/js/group.php:141 templates/admin/js/link.php:155
 msgid "CSS Class"
 msgstr "CSS-osztály"
 
-#: templates/admin/endpoints/endpoint.php:192
-#: templates/admin/endpoints/group.php:150
-#: templates/admin/endpoints/link.php:166 templates/admin/js/endpoint.php:157
+#: templates/admin/endpoints/endpoint.php:223
+#: templates/admin/endpoints/group.php:162
+#: templates/admin/endpoints/link.php:178 templates/admin/js/endpoint.php:157
 #: templates/admin/js/group.php:142 templates/admin/js/link.php:156
 msgid "Add additional CSS classes for advanced styling."
-msgstr "Adjon meg további CSS-osztályokat haladó stílusozáshoz."
+msgstr "Adjon hozzá további CSS-osztályokat a haladó stílusbeállításokhoz."
 
-#: templates/admin/endpoints/endpoint.php:207
-#: templates/admin/endpoints/group.php:165
-#: templates/admin/endpoints/link.php:181 templates/admin/js/endpoint.php:172
+#: templates/admin/endpoints/endpoint.php:238
+#: templates/admin/endpoints/group.php:177
+#: templates/admin/endpoints/link.php:193 templates/admin/js/endpoint.php:172
 #: templates/admin/js/group.php:157 templates/admin/js/link.php:170
 msgid "User Roles"
 msgstr "Felhasználói szerepkörök"
 
-#: templates/admin/endpoints/endpoint.php:208
+#: templates/admin/endpoints/endpoint.php:239
 #: templates/admin/js/endpoint.php:173
 msgid ""
 "Choose which types of users (e.g., customers, shop managers, or "
 "administrators) can view this tab."
-msgstr ""
-"Válassza ki, mely felhasználótípusok (pl. vásárlók, boltmenedzserek vagy "
-"adminisztrátorok) láthatják ezt a fület."
+msgstr "Válassza ki, mely felhasználótípusok (pl. vásárlók, boltvezetők vagy adminisztrátorok) láthatják ezt a fület."
 
-#: templates/admin/endpoints/endpoint.php:223
+#: templates/admin/endpoints/endpoint.php:254
 msgid "Custom Content"
 msgstr "Egyéni tartalom"
 
-#: templates/admin/endpoints/endpoint.php:224
+#: templates/admin/endpoints/endpoint.php:255
 #: templates/admin/js/endpoint.php:188
 msgid ""
 "Add content to show on this tab on My Account page. Supports text, "
 "shortcodes, media, and HTML."
-msgstr ""
-"Adjon meg tartalmat, amely a Fiókom oldalon ezen a fülön jelenik meg. "
-"Támogatja a szöveget, shortcode-okat, médiát és HTML-t."
+msgstr "Adjon hozzá tartalmat, amely a Fiókom oldalon ezen a fülön jelenik meg. A szöveg, a shortcode-ok, a média és a HTML használatát is támogatja."
 
-#: templates/admin/endpoints/endpoint.php:254
+#: templates/admin/endpoints/endpoint.php:285
 #: templates/admin/js/endpoint.php:202
 msgid "Custom Content Position"
 msgstr "Egyéni tartalom pozíciója"
 
-#: templates/admin/endpoints/endpoint.php:255
+#: templates/admin/endpoints/endpoint.php:286
 #: templates/admin/js/endpoint.php:203
 msgid "Choose the location where custom content should appear."
 msgstr "Válassza ki, hol jelenjen meg az egyéni tartalom."
 
-#: templates/admin/endpoints/endpoint.php:261
+#: templates/admin/endpoints/endpoint.php:292
 #: templates/admin/js/endpoint.php:209
 msgid "Before default content"
 msgstr "Alapértelmezett tartalom előtt"
 
-#: templates/admin/endpoints/endpoint.php:262
+#: templates/admin/endpoints/endpoint.php:293
 msgid "Override default content"
 msgstr "Alapértelmezett tartalom felülírása"
 
-#: templates/admin/endpoints/endpoint.php:263
+#: templates/admin/endpoints/endpoint.php:294
 #: templates/admin/js/endpoint.php:210
 msgid "After default content"
 msgstr "Alapértelmezett tartalom után"
+
+#: templates/admin/endpoints/endpoint.php:323
+#: templates/admin/js/endpoint.php:233
+msgid "Widget banner"
+msgstr "Widgetbanner"
+
+#: templates/admin/endpoints/endpoint.php:324
+#: templates/admin/js/endpoint.php:234
+msgid ""
+"Choose a Widget-type banner from the Banners tab, then set whether it "
+"appears above or below this endpoint’s content."
+msgstr "Válasszon ki egy widget típusú bannert a Bannerek fülön, majd állítsa be, hogy a végpont tartalma felett vagy alatt jelenjen-e meg."
+
+#: templates/admin/endpoints/endpoint.php:340
+#: templates/admin/js/endpoint.php:250
+msgid "No widget banners yet."
+msgstr "Még nincsenek widgetbannerek."
+
+#: templates/admin/endpoints/endpoint.php:341
+#: templates/admin/endpoints/endpoint.php:374
+#: templates/admin/js/endpoint.php:251 templates/admin/js/endpoint.php:282
+msgid "Create one in Banners"
+msgstr "Hozzon létre egyet a Bannerek fülön."
+
+#: templates/admin/endpoints/endpoint.php:344
+#: templates/admin/js/endpoint.php:254
+msgid "Select widget banner"
+msgstr "Widgetbanner kiválasztása"
+
+#: templates/admin/endpoints/endpoint.php:346
+#: templates/admin/endpoints/endpoint.php:379
+#: templates/admin/js/endpoint.php:256 templates/admin/js/endpoint.php:287
+msgid "Above content"
+msgstr "Tartalom felett"
+
+#: templates/admin/endpoints/endpoint.php:347
+#: templates/admin/endpoints/endpoint.php:380
+#: templates/admin/js/endpoint.php:257 templates/admin/js/endpoint.php:288
+msgid "Below content"
+msgstr "Tartalom alatt"
+
+#: templates/admin/endpoints/endpoint.php:356
+#: templates/admin/js/endpoint.php:264
+msgid "Image banner"
+msgstr "Képbanner"
+
+#: templates/admin/endpoints/endpoint.php:357
+#: templates/admin/js/endpoint.php:265
+msgid ""
+"Choose an Image-type banner from the Banners tab, then set whether it "
+"appears above or below this endpoint’s content."
+msgstr "Válasszon ki egy képtípusú bannert a Bannerek fülön, majd állítsa be, hogy a végpont tartalma fölött vagy alatt jelenjen-e meg."
+
+#: templates/admin/endpoints/endpoint.php:373
+#: templates/admin/js/endpoint.php:281
+msgid "No image banners yet."
+msgstr "Még nincsenek képbannerek."
+
+#: templates/admin/endpoints/endpoint.php:377
+#: templates/admin/js/endpoint.php:285
+msgid "Select image banner"
+msgstr "Képbanner kiválasztása"
 
 #: templates/admin/endpoints/group.php:35 templates/admin/js/group.php:36
 msgid "Group Label"
@@ -1256,7 +1448,7 @@ msgstr "Csoport címkéje"
 
 #: templates/admin/endpoints/group.php:36 templates/admin/js/group.php:37
 msgid "The display name shown for this group in the My Account menu."
-msgstr "A Fiókom menüben ennél a csoportnál megjelenő név."
+msgstr "A csoport megjelenített neve a Fiókom menüben."
 
 #: templates/admin/endpoints/group.php:52 templates/admin/js/group.php:52
 msgid "Group Icon"
@@ -1269,7 +1461,7 @@ msgstr ""
 "Válasszon vagy töltsön fel egy ikont, amely a Fiókom oldalon ennél a "
 "csoportnál jelenik meg."
 
-#: templates/admin/endpoints/group.php:166 templates/admin/js/group.php:158
+#: templates/admin/endpoints/group.php:178 templates/admin/js/group.php:158
 msgid ""
 "Choose which types of users (e.g., customers, shop managers, or "
 "administrators) can view this group."
@@ -1291,7 +1483,7 @@ msgstr "Hivatkozás címkéje"
 
 #: templates/admin/endpoints/link.php:52 templates/admin/js/link.php:51
 msgid "The display name shown for this link in the My Account menu."
-msgstr "A Fiókom menüben ennél a hivatkozásnál megjelenő név."
+msgstr "A link megjelenített neve a Fiókom menüben."
 
 #: templates/admin/endpoints/link.php:68 templates/admin/js/link.php:66
 msgid "Link Icon"
@@ -1300,25 +1492,207 @@ msgstr "Hivatkozás ikonja"
 #: templates/admin/endpoints/link.php:95 templates/admin/js/link.php:67
 msgid ""
 "Choose or upload an icon to display for this link on the My Account page."
-msgstr ""
-"Válasszon vagy töltsön fel egy ikont, amely a Fiókom oldalon ennél a "
-"hivatkozásnál jelenik meg."
+msgstr "Válasszon vagy töltsön fel egy ikont, amely a Fiókom oldalon ennél a hivatkozásnál jelenik meg."
 
-#: templates/admin/endpoints/link.php:182 templates/admin/js/link.php:171
+#: templates/admin/endpoints/link.php:194 templates/admin/js/link.php:171
 msgid ""
 "Choose which types of users (e.g., customers, shop managers, or "
 "administrators) can view this link."
-msgstr ""
-"Válassza ki, mely felhasználótípusok (pl. vásárlók, boltvezetők vagy "
-"adminisztrátorok) láthatják ezt a hivatkozást."
+msgstr "Válassza ki, mely felhasználótípusok (pl. vásárlók, üzletkezelők vagy adminisztrátorok) láthatják ezt a linket."
 
-#: templates/admin/endpoints/link.php:197 templates/admin/js/link.php:185
+#: templates/admin/endpoints/link.php:209 templates/admin/js/link.php:185
 msgid "Open Link In a New Tab?"
-msgstr "Megnyitás új fülön?"
+msgstr "Link megnyitása új fülön?"
 
-#: templates/admin/endpoints/link.php:198
+#: templates/admin/endpoints/link.php:210
 msgid "Allow link to open in a new tab."
 msgstr "Engedélyezze a hivatkozás új fülön való megnyitását."
+
+#: templates/admin/js/banner.php:56
+#: templates/admin/tab-content/banner-settings.php:34
+msgid "Banner Name"
+msgstr "Banner neve"
+
+#: templates/admin/js/banner.php:71
+#: templates/admin/tab-content/banner-settings.php:51
+msgid "Banner Type"
+msgstr "Banner típusa"
+
+#: templates/admin/js/banner.php:72
+#: templates/admin/tab-content/banner-settings.php:52
+msgid "Select whether to display the banner as a widget or an image."
+msgstr "Válassza ki, hogy a banner widgetként vagy képként jelenjen-e meg."
+
+#: templates/admin/js/banner.php:77
+#: templates/admin/tab-content/banner-settings.php:57
+msgid "Widget"
+msgstr "Widget"
+
+#: templates/admin/js/banner.php:78
+#: templates/admin/tab-content/banner-settings.php:58
+msgid "Image"
+msgstr "Kép"
+
+#: templates/admin/js/banner.php:86
+#: templates/admin/tab-content/banner-settings.php:66
+msgid ""
+"Assign this banner to a tab from the Endpoints tab using its Image banner "
+"option."
+msgstr "Rendelje ezt a bannert egy fülhöz a végpontok fülön található képbanner-beállítással."
+
+#: templates/admin/js/banner.php:93
+#: templates/admin/tab-content/banner-settings.php:73
+msgid "Banner Image"
+msgstr "Banner képe"
+
+#: templates/admin/js/banner.php:119 templates/admin/js/banner.php:211
+#: templates/admin/tab-content/banner-settings.php:114
+#: templates/admin/tab-content/banner-settings.php:217
+msgid "Drag and Drop here"
+msgstr "Húzza ide, majd ejtse le"
+
+#: templates/admin/js/banner.php:120 templates/admin/js/banner.php:212
+#: templates/admin/tab-content/banner-settings.php:115
+#: templates/admin/tab-content/banner-settings.php:218
+msgid "or"
+msgstr "vagy"
+
+#: templates/admin/js/banner.php:121 templates/admin/js/banner.php:213
+#: templates/admin/tab-content/banner-settings.php:116
+#: templates/admin/tab-content/banner-settings.php:219
+msgid "Upload a file"
+msgstr "Fájl feltöltése"
+
+#: templates/admin/js/banner.php:151
+#: templates/admin/tab-content/banner-settings.php:142
+msgid ""
+"Assign this banner to a tab from the Endpoints tab using its Widget banner "
+"option."
+msgstr "Rendelje ezt a bannert egy fülhöz a végpontok fülön található widgetbanner-beállítással."
+
+#: templates/admin/js/banner.php:158
+#: templates/admin/tab-content/banner-settings.php:149
+msgid "Banner Icon"
+msgstr "Banner ikonja"
+
+#: templates/admin/js/banner.php:165 templates/admin/js/banner.php:185
+#: templates/admin/tab-content/banner-settings.php:156
+#: templates/admin/tab-content/banner-settings.php:176
+msgid "Upload Icon"
+msgstr "Feltöltés ikon"
+
+#: templates/admin/js/banner.php:239
+#: templates/admin/tab-content/banner-settings.php:241
+msgid "Icon Width (px)"
+msgstr "Ikon szélessége (px)"
+
+#: templates/admin/js/banner.php:252
+#: templates/admin/tab-content/banner-settings.php:254
+msgid "Widget Width (px)"
+msgstr "Widget szélessége (px)"
+
+#: templates/admin/js/banner.php:265
+#: templates/admin/tab-content/banner-settings.php:267
+msgid "Widget Text"
+msgstr "Widget szövege"
+
+#: templates/admin/js/banner.php:278
+#: templates/admin/tab-content/banner-settings.php:280
+msgid "Banner Colors"
+msgstr "Banner színei"
+
+#: templates/admin/js/banner.php:286 templates/admin/js/banner.php:372
+#: templates/admin/tab-content/banner-settings.php:296
+#: templates/admin/tab-content/banner-settings.php:382
+msgid "TEXT"
+msgstr "Szöveg"
+
+#: templates/admin/js/banner.php:290
+#: templates/admin/tab-content/banner-settings.php:300
+msgid "TEXT HOVER"
+msgstr "Szöveg rámutatáskor"
+
+#: templates/admin/js/banner.php:294 templates/admin/js/banner.php:368
+#: templates/admin/tab-content/banner-settings.php:304
+#: templates/admin/tab-content/banner-settings.php:378
+msgid "BACKGROUND"
+msgstr "Háttér"
+
+#: templates/admin/js/banner.php:298
+#: templates/admin/tab-content/banner-settings.php:308
+msgid "BACKGROUND HOVER"
+msgstr "Háttér rámutatáskor"
+
+#: templates/admin/js/banner.php:302
+#: templates/admin/tab-content/banner-settings.php:312
+msgid "BORDERS"
+msgstr "Szegélyek"
+
+#: templates/admin/js/banner.php:306
+#: templates/admin/tab-content/banner-settings.php:316
+msgid "BORDERS HOVER"
+msgstr "Szegélyek rámutatáskor"
+
+#: templates/admin/js/banner.php:316
+#: templates/admin/tab-content/banner-settings.php:326
+msgid "Show Badge with Dynamic Count of Items"
+msgstr "Jelvény mutatása a tételek dinamikus számával"
+
+#: templates/admin/js/banner.php:335
+#: templates/admin/tab-content/banner-settings.php:345
+msgid "Show Count Of"
+msgstr "Megjelenített tételek száma"
+
+#: templates/admin/js/banner.php:342
+#: templates/admin/tab-content/banner-settings.php:352
+msgid "Select"
+msgstr "Kiválasztás"
+
+#: templates/admin/js/banner.php:360
+#: templates/admin/tab-content/banner-settings.php:370
+msgid "Badge Colors"
+msgstr "Jelvény színei"
+
+#: templates/admin/js/banner.php:385
+#: templates/admin/tab-content/banner-settings.php:395
+msgid "Banner Links"
+msgstr "Bannerhivatkozások"
+
+#: templates/admin/js/banner.php:393 templates/admin/js/banner.php:419
+#: templates/admin/tab-content/banner-settings.php:403
+#: templates/admin/tab-content/banner-settings.php:429
+msgid "External URL"
+msgstr "Külső URL"
+
+#: templates/admin/js/banner.php:400
+#: templates/admin/tab-content/banner-settings.php:410
+msgid "Banner Links To"
+msgstr "A banner hivatkozásának célja"
+
+#: templates/admin/js/banner.php:407
+#: templates/admin/tab-content/banner-settings.php:417
+msgid "Select Endpoint"
+msgstr "Végpont kiválasztása"
+
+#: templates/admin/js/banner.php:432
+#: templates/admin/tab-content/banner-settings.php:442
+msgid "Show Banner To"
+msgstr "Banner megjelenítése a következő felhasználóknak"
+
+#: templates/admin/js/banner.php:439
+#: templates/admin/tab-content/banner-settings.php:449
+msgid "All users"
+msgstr "Összes felhasználó"
+
+#: templates/admin/js/banner.php:440
+#: templates/admin/tab-content/banner-settings.php:450
+msgid "Only users with a specific role"
+msgstr "Csak meghatározott szerepkörrel rendelkező felhasználók"
+
+#: templates/admin/js/banner.php:448
+#: templates/admin/tab-content/banner-settings.php:458
+msgid "Select Roles"
+msgstr "Szerepkörök kiválasztása"
 
 #: templates/admin/js/endpoint.php:50
 msgid "slug"
@@ -1328,15 +1702,21 @@ msgstr "slug"
 msgid "Endpoint Custom Content"
 msgstr "Végpont egyedi tartalma"
 
+#: templates/admin/tab-content/banners.php:178
+msgid "No banners yet"
+msgstr "Még nincsenek bannerek"
+
+#: templates/admin/tab-content/banners.php:179
+msgid "Create a banner to show a widget or image on your My Account Page."
+msgstr "Hozzon létre bannert widget vagy kép megjelenítéséhez a Saját fiók oldalán."
+
 #: templates/admin/tab-content/debug.php:19
 msgid "Enable Debug"
 msgstr "Hibakeresés engedélyezése"
 
 #: templates/admin/tab-content/debug.php:21
 msgid "Enabling this option will load unminified JS scripts and CSS styles."
-msgstr ""
-"Ennek az opciónak az engedélyezése nem tömörített JS szkripteket és CSS "
-"stílusokat tölt be."
+msgstr "Az opció bekapcsolásakor nem tömörített JS-szkriptek és CSS-stílusok töltődnek be."
 
 #: templates/admin/tab-content/debug.php:35
 msgid "Enable debug mode."
@@ -1350,10 +1730,7 @@ msgstr "Frontend könyvtárak"
 msgid ""
 "You can enable/disable javascript libraries which are loaded in WooCommerce "
 "MyAccount Page to resolve library conflict with other plugins."
-msgstr ""
-"Engedélyezheti vagy letilthatja azokat a JavaScript-könyvtárakat, amelyek a "
-"WooCommerce Fiókom oldalon töltődnek be, hogy feloldja a más bővítményekkel "
-"való könyvtárütközést."
+msgstr "A más bővítményekkel való könyvtárütközések megoldásához bekapcsolhatja vagy kikapcsolhatja a WooCommerce Saját fiók oldalán betöltődő JavaScript-könyvtárakat."
 
 #: templates/admin/tab-content/debug.php:50
 msgid "Dropzone"
@@ -1373,70 +1750,60 @@ msgstr "JS"
 msgid "jQuery Scroll Tabs"
 msgstr "jQuery Scroll Tabs"
 
-#: templates/admin/tab-content/endpoints.php:32 templates/admin/tabs.php:52
+#: templates/admin/tab-content/endpoints.php:33 templates/admin/tabs.php:52
 msgid "Add Tab"
 msgstr "Fül hozzáadása"
 
-#: templates/admin/tab-content/endpoints.php:60
-msgid "Confirm Delete"
-msgstr "Törlés megerősítése"
-
-#: templates/admin/tab-content/endpoints.php:63
-msgid "It will be permanently deleted and cannot be recovered. Are you sure?"
-msgstr "Véglegesen törlődik, és nem állítható vissza. Biztos benne?"
-
-#: templates/admin/tab-content/endpoints.php:68
+#: templates/admin/tab-content/endpoints.php:62
 msgid "Do you want to continue?"
 msgstr "Szeretné folytatni?"
 
-#: templates/admin/tab-content/endpoints.php:71
+#: templates/admin/tab-content/endpoints.php:65
 msgid "Unsaved changes will be permanently lost. Discard anyway."
-msgstr "A nem mentett változtatások véglegesen elvesznek. Mégis elveti."
+msgstr "A nem mentett változtatások véglegesen elvesznek. Ennek ellenére is vesse el."
 
-#: templates/admin/tab-content/endpoints.php:76
+#: templates/admin/tab-content/endpoints.php:70
 msgid "Select Your Tab Type"
 msgstr "Válassza ki a fül típusát"
 
-#: templates/admin/tab-content/endpoints.php:82 templates/admin/tabs.php:36
+#: templates/admin/tab-content/endpoints.php:76 templates/admin/tabs.php:36
 msgid "Add endpoint"
 msgstr "Végpont hozzáadása"
 
-#: templates/admin/tab-content/endpoints.php:83 templates/admin/tabs.php:37
+#: templates/admin/tab-content/endpoints.php:77 templates/admin/tabs.php:37
 msgid "Add group"
 msgstr "Csoport hozzáadása"
 
-#: templates/admin/tab-content/endpoints.php:84 templates/admin/tabs.php:38
+#: templates/admin/tab-content/endpoints.php:78 templates/admin/tabs.php:38
 msgid "Add link"
 msgstr "Hivatkozás hozzáadása"
 
-#: templates/admin/tab-content/settings.php:19
+#: templates/admin/tab-content/settings.php:20
 msgid "Default Endpoint"
 msgstr "Alapértelmezett végpont"
 
-#: templates/admin/tab-content/settings.php:20
+#: templates/admin/tab-content/settings.php:21
 msgid ""
 "Select which tab users will see first when they visit their account page."
 msgstr ""
 "Válassza ki, melyik fület látják először a felhasználók, amikor felkeresik a"
 " fiókoldalukat."
 
-#: templates/admin/tab-content/settings.php:43
+#: templates/admin/tab-content/settings.php:44
 msgid "Account Profile Picture"
 msgstr "Fiók profilképe"
 
-#: templates/admin/tab-content/settings.php:44
+#: templates/admin/tab-content/settings.php:45
 msgid ""
 "Allow customers to upload a profile picture on their WooCommerce account "
 "page."
-msgstr ""
-"Engedélyezze, hogy a vásárlók profilképet töltsenek fel a WooCommerce "
-"fiókoldalukon."
-
-#: templates/admin/tab-content/settings.php:61
-msgid "AJAX Account Navigation"
-msgstr "AJAX fióknavigáció"
+msgstr "Engedélyezze, hogy a vásárlók profilképet töltsenek fel a WooCommerce-fiókoldalukon."
 
 #: templates/admin/tab-content/settings.php:62
+msgid "AJAX Account Navigation"
+msgstr "AJAX-fióknavigáció"
+
+#: templates/admin/tab-content/settings.php:63
 msgid ""
 "Load account page tabs without full page reload for smoother navigation "
 "experience."
@@ -1444,45 +1811,115 @@ msgstr ""
 "A fiókoldal füleinek betöltése teljes oldalfrissítés nélkül a gördülékenyebb"
 " navigáció érdekében."
 
-#: templates/admin/tab-content/settings.php:82
+#: templates/admin/tab-content/settings.php:83
 msgid "Load Unminified Assets"
 msgstr "Nem tömörített erőforrások betöltése"
 
-#: templates/admin/tab-content/settings.php:83
+#: templates/admin/tab-content/settings.php:84
 msgid ""
 "Load uncompressed CSS and JS files to help with debugging and development."
-msgstr ""
-"Tömörítetlen CSS és JS fájlok betöltése a hibakeresés és a fejlesztés "
-"támogatására."
+msgstr "Tömörítetlen CSS- és JS-fájlok betöltése a hibakeresés és a fejlesztés támogatására."
 
-#: templates/admin/tab-content/settings.php:99
+#: templates/admin/tab-content/settings.php:100
 msgid "Account Page Libraries"
 msgstr "Fiókoldal könyvtárai"
 
-#: templates/admin/tab-content/settings.php:100
+#: templates/admin/tab-content/settings.php:101
 msgid ""
 "Control which CSS and JS libraries are loaded on the WooCommerce account "
 "page. Uncheck to test for theme or plugin conflicts."
-msgstr ""
-"Szabályozza, mely CSS és JS könyvtárak töltődnek be a WooCommerce "
-"fiókoldalon. Törölje a jelölést a téma- vagy bővítményütközések "
-"teszteléséhez."
+msgstr "Szabályozza, hogy mely CSS- és JS-könyvtárak töltődjenek be a WooCommerce-fiókoldalon. Törölje a jelölést a sablon- vagy bővítményütközések teszteléséhez."
 
-#: templates/admin/tab-content/settings.php:106
+#: templates/admin/tab-content/settings.php:107
 msgid "Dropzone - CSS"
 msgstr "Dropzone - CSS"
 
-#: templates/admin/tab-content/settings.php:113
+#: templates/admin/tab-content/settings.php:114
 msgid "Dropzone - JS"
 msgstr "Dropzone - JS"
 
-#: templates/admin/tab-content/settings.php:119
+#: templates/admin/tab-content/settings.php:120
 msgid "jQuery Scroll Tabs - CSS"
 msgstr "jQuery Scroll Tabs - CSS"
 
-#: templates/admin/tab-content/settings.php:126
+#: templates/admin/tab-content/settings.php:127
 msgid "jQuery Scroll Tabs - JS"
 msgstr "jQuery Scroll Tabs - JS"
+
+#: templates/admin/tab-content/tools.php:26
+msgid "Export Configuration"
+msgstr "Konfiguráció exportálása"
+
+#. translators: 1: Endpoints, 2: Banners, 3: Customizer, 4: Settings.
+#: templates/admin/tab-content/tools.php:31
+#, php-format
+msgid ""
+"Download your %1$s, %2$s, %3$s and %4$s as a JSON file. Use it to replicate "
+"this My Account setup on another site or to keep a backup."
+msgstr "Töltse le a(z) %1$s, %2$s, %3$s és %4$s elemeket JSON-fájlként. Ezzel egy másik webhelyen is megismételheti ezt a beállítást a Saját fiók oldalán, vagy biztonsági másolatot készíthet róla."
+
+#: templates/admin/tab-content/tools.php:42
+msgid "Choose what to export"
+msgstr "Exportálandók kiválasztása"
+
+#: templates/admin/tab-content/tools.php:43
+msgid "Select the sections you want to include in the export file."
+msgstr "Válassza ki az exportfájlba felvenni kívánt szakaszokat."
+
+#: templates/admin/tab-content/tools.php:65
+msgid "Select at least one section to export."
+msgstr "Válasszon ki legalább egy szakaszt az exportáláshoz."
+
+#: templates/admin/tab-content/tools.php:68
+msgid "Export"
+msgstr "Exportálás"
+
+#: templates/admin/tab-content/tools.php:81
+msgid "Import Configuration"
+msgstr "Konfiguráció importálása"
+
+#: templates/admin/tab-content/tools.php:85
+msgid "Notice:"
+msgstr "Figyelem:"
+
+#: templates/admin/tab-content/tools.php:86
+msgid ""
+"Importing will overwrite the sections included in the file. Consider "
+"exporting your current configuration first as a backup."
+msgstr "Az importálás felülírja a fájlban szereplő szakaszokat. Fontolja meg az aktuális konfiguráció exportálását biztonsági másolatként."
+
+#. translators: 1: Endpoints, 2: Banners, 3: Customizer, 4: Settings.
+#: templates/admin/tab-content/tools.php:94
+#, php-format
+msgid ""
+"Upload a configuration file exported from this plugin. The imported %1$s, "
+"%2$s, %3$s and %4$s will replace your current configuration."
+msgstr "Töltsön fel egy ebből a bővítményből exportált konfigurációs fájlt. Az importált %1$s, %2$s, %3$s és %4$s lecserélik az aktuális konfigurációt."
+
+#: templates/admin/tab-content/tools.php:105
+msgid "Configuration file"
+msgstr "Konfigurációs fájl"
+
+#: templates/admin/tab-content/tools.php:106
+msgid "Upload a .json file previously exported from Customize My Account."
+msgstr "Töltsön fel egy korábban a Customize My Account bővítményből exportált .json fájlt."
+
+#: templates/admin/tab-content/tools.php:111
+msgid "Choose file"
+msgstr "Fájl kiválasztása"
+
+#: templates/admin/tab-content/tools.php:120
+#: templates/admin/tab-content/tools.php:121
+msgid "No file chosen"
+msgstr "Nincs kiválasztott fájl"
+
+#: templates/admin/tab-content/tools.php:131
+msgid "Choose a configuration file to import."
+msgstr "Válassza ki az importálni kívánt konfigurációs fájlt."
+
+#: templates/admin/tab-content/tools.php:134
+msgid "Import"
+msgstr "Importálás"
 
 #: templates/frontend/user-avatar.php:15
 #, php-format
@@ -1492,6 +1929,35 @@ msgstr "A feltöltés sikertelen. A maximálisan engedélyezett méret: %s MB."
 #: templates/frontend/user-avatar.php:77
 msgid "Logout"
 msgstr "Kijelentkezés"
+
+#: assets/js/admin/banner-color-picker/Picker.jsx:91
+#: dist/admin-banner-color-picker.js:1
+#: dist/admin-customizer-color-palette.js:1
+msgid "HEX"
+msgstr "HEX"
+
+#: assets/js/admin/banner-color-picker/Picker.jsx:97
+#: dist/admin-banner-color-picker.js:1
+#: dist/admin-customizer-color-palette.js:1
+msgid "RGB"
+msgstr "RGB"
+
+#: assets/js/admin/banner-color-picker/Picker.jsx:103
+#: dist/admin-banner-color-picker.js:1
+#: dist/admin-customizer-color-palette.js:1
+msgid "HSL"
+msgstr "HSL"
+
+#: assets/js/admin/banner-color-picker/Picker.jsx:109
+#: dist/admin-banner-color-picker.js:1
+#: dist/admin-customizer-color-palette.js:1
+msgid "RGBA"
+msgstr "RGBA"
+
+#: assets/js/admin/banner-color-picker/Picker.jsx:121
+#: dist/admin-banner-color-picker.js:1
+msgid "Copy"
+msgstr "Másolás"
 
 #: dist/admin-customizer-color-palette.js:1
 msgid "Palette Title"
@@ -1522,28 +1988,8 @@ msgid "Color"
 msgstr "Szín"
 
 #: dist/admin-customizer-color-palette.js:1
-msgid "HEX"
-msgstr "HEX"
-
-#: dist/admin-customizer-color-palette.js:1
-msgid "RGB"
-msgstr "RGB"
-
-#: dist/admin-customizer-color-palette.js:1
-msgid "HSL"
-msgstr "HSL"
-
-#: dist/admin-customizer-color-palette.js:1
-msgid "RGBA"
-msgstr "RGBA"
-
-#: dist/admin-customizer-color-palette.js:1
 msgid "Reset this palette to default values?"
 msgstr "Visszaállítja ezt a palettát az alapértelmezett értékekre?"
-
-#: dist/admin-customizer-color-palette.js:1
-msgid "Reset this color group to default values?"
-msgstr "Visszaállítja ezt a színcsoportot az alapértelmezett értékekre?"
 
 #: dist/admin-customizer-color-palette.js:1
 msgid "Reset this group"
@@ -1551,4 +1997,13 @@ msgstr "Csoport visszaállítása"
 
 #: dist/admin-customizer-color-palette.js:1
 msgid "Reset all to Default"
-msgstr "Összes visszaállítása alapértelmezettre"
+msgstr "Összes érték alaphelyzetbe állítása"
+
+#~ msgid "File deleted successfully"
+#~ msgstr "A fájl sikeresen törölve"
+
+#~ msgid "Missing the attchment id."
+#~ msgstr "Hiányzik a csatolmány azonosítója."
+
+#~ msgid "Reset this color group to default values?"
+#~ msgstr "Visszaállítja ezt a színcsoportot az alapértelmezett értékekre?"

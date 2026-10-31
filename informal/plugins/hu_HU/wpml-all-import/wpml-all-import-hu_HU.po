@@ -1,0 +1,190 @@
+# Copyright (C) 2026 OnTheGoSystems
+# This file is distributed under the same license as the WPML All Import plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPML All Import 5.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpml-all-import\n"
+"POT-Creation-Date: 2026-10-19T11:55:18+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: wpml-all-import\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: WPML All Import\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 5.2.0\n"
+
+#. Plugin Name of the plugin
+#: wpml-all-import.php
+msgid "WPML All Import"
+msgstr "WPML All Import"
+
+#. Plugin URI of the plugin
+#: wpml-all-import.php
+msgid ""
+"https://wpml.org/documentation/translating-your-contents/multilingual-"
+"content-import/"
+msgstr "https://wpml.org/documentation/translating-your-contents/multilingual-content-import/"
+
+#. Description of the plugin
+#: wpml-all-import.php
+msgid ""
+"Adds compatibility between WP All Import and WPML | <a "
+"href=\"https://wpml.org/documentation/translating-your-"
+"contents/multilingual-content-"
+"import/?utm_source=plugin&utm_medium=gui&utm_campaign=wpmlai\">Documentation</a>"
+msgstr "Kompatibilitást biztosít a WP All Import és a WPML között | <a href=\"https://wpml.org/documentation/translating-your-contents/multilingual-content-import/?utm_source=plugin&utm_medium=gui&utm_campaign=wpmlai\">dokumentáció</a>"
+
+#. Author of the plugin
+#: wpml-all-import.php
+msgid "OnTheGoSystems"
+msgstr "OnTheGoSystems"
+
+#. Author URI of the plugin
+#: wpml-all-import.php
+msgid "http://www.onthegosystems.com/"
+msgstr "http://www.onthegosystems.com/"
+
+#. translators: Line in the WP All Import log, written when the add-on does
+#. not turn an existing record into a translation because that record is in
+#. another language. %1$s is the language code of the import. %2$s is the
+#. title of the record. %3$s is the language code of the record WP All Import
+#. found.
+#: classes/RapidAddon/Import.php:89
+#, php-format
+msgid ""
+"- Skipped the `%1$s` translation of `%2$s`: the record WP All Import found "
+"for it is in `%3$s`, so it was left in that language"
+msgstr "- A(z) `%2$s` `%1$s` fordítása kimaradt: a WP All Import által talált rekord a(z) `%3$s` nyelven van, ezért ezen a nyelven maradt"
+
+#. translators: Line in the WP All Import log, written when the add-on
+#. connects an imported record to its original as a translation. %1$s is the
+#. language code of the import. %2$s is the title of the record.
+#: classes/RapidAddon/Import.php:102
+#, php-format
+msgid "- Created `%1$s` translation for `%2$s`"
+msgstr "- A `%2$s` fordítása létrehozva: `%1$s`"
+
+#. translators: Note on the WPML step of the WP All Import wizard, shown when
+#. the site has no import yet. %s is the flag and the English name of the
+#. site's default language.
+#: classes/RapidAddon/UI.php:40
+#, php-format
+msgid ""
+"This is your first import. Default language will be choosen automatically ( "
+"%s )."
+msgstr "Ez az első importálásod. Az alapértelmezett nyelv automatikusan lesz kiválasztva ( %s )."
+
+#. translators: Label of the radio group on the WPML step of the WP All Import
+#. wizard. It sets the language of the records this import creates.
+#: classes/RapidAddon/UI.php:50
+msgid "Content Language"
+msgstr "Tartalom nyelve"
+
+#. translators: Title of the options section on the WPML step of the WP All
+#. Import wizard, where the user connects this import to an import in the main
+#. language.
+#: classes/RapidAddon/UI.php:59
+msgid "Automatic Record Matching to Translate"
+msgstr "Automatikus rekordegyeztetés fordításhoz"
+
+#. translators: Label of the radio group that chooses how the add-on matches
+#. an imported record with its original.
+#: classes/RapidAddon/UI.php:64
+msgid "Records matching logic"
+msgstr "Rekordegyeztetési logika"
+
+#. translators: Choice in the records-matching radio group. The import creates
+#. originals, not translations. %1$s and %3$s are the opening and closing HTML
+#. bold tags. %2$s is the English name of the site's default language.
+#: classes/RapidAddon/UI.php:69
+#, php-format
+msgid "%1$sImport data in main language (%2$s)%3$s"
+msgstr "%1$sAdatok importálása a fő nyelven (%2$s)%3$s"
+
+#. translators: Choice in the records-matching radio group. The import creates
+#. translations of the records of another import.
+#: classes/RapidAddon/UI.php:76
+msgid "Define parent import"
+msgstr "Szülőimport megadása"
+
+#. translators: Label of the radio group that selects the import whose records
+#. this import translates.
+#: classes/RapidAddon/UI.php:80
+msgid "Import to translate"
+msgstr "Importálás fordításhoz"
+
+#. translators: Label of the text field that holds the unique identifier of
+#. the parent import.
+#: classes/RapidAddon/UI.php:87
+msgid "Unique Identifier chosen during the parent import"
+msgstr "A szülőimport során választott egyedi azonosító"
+
+#. translators: Help text under the unique-identifier field on the WPML step
+#. of the WP All Import wizard.
+#: classes/RapidAddon/UI.php:91
+msgid ""
+"To inform WPML that this new post is translation of another post put the "
+"same unique identifier like you did for post in main language."
+msgstr "Ahhoz, hogy a WPML tudja, ez az új bejegyzés egy másik bejegyzés fordítása, add meg ugyanazt az egyedi azonosítót, amelyet a fő nyelvű bejegyzésnél használtál."
+
+#. translators: Note on the WPML step of the WP All Import wizard, shown when
+#. WPML has no active language yet. The quoted text is the name of this add-on
+#. and stays in English.
+#: classes/RapidAddon/UI.php:105
+msgid ""
+"Please set up site languages before using 'WP All Import - WPML add-on.'"
+msgstr "Állítsd be a webhely nyelveit a „WP All Import - WPML add-on” használata előtt."
+
+#. translators: Marker shown in brackets after the name of the site's default
+#. language, in the language list of the WPML step of the WP All Import
+#. wizard.
+#: classes/RapidAddon/UI.php:136
+msgid "default"
+msgstr "alapértelmezett"
+
+#. translators: Name of a missing plugin in the admin notice that lists what
+#. WPML All Import needs. "WP All Import" is a product name and stays in
+#. English. %1$s is a link with the text "Pro". %2$s is a link with the text
+#. "Free".
+#: wpml-all-import.php:79
+#, php-format
+msgid "WP All Import (%1$s or %2$s)"
+msgstr "WP All Import (%1$s vagy %2$s)"
+
+#. translators: Text of the link to the paid version of WP All Import, inside
+#. the name of the missing plugin.
+#: wpml-all-import.php:81
+msgid "Pro"
+msgstr "Pro"
+
+#. translators: Text of the link to the free version of WP All Import, inside
+#. the name of the missing plugin.
+#: wpml-all-import.php:83
+msgid "Free"
+msgstr "Ingyenes"
+
+#. translators: Name of a missing plugin in the admin notice that lists what
+#. WPML All Import needs. It is a product name and stays in English.
+#: wpml-all-import.php:89
+msgid "WPML Multilingual CMS"
+msgstr "WPML többnyelvű CMS"
+
+#. translators: Admin notice shown when a plugin that WPML All Import needs is
+#. not active. %s is the list of the missing plugin names, for example "WP All
+#. Import (Pro or Free) and WPML Multilingual CMS".
+#: wpml-all-import.php:98
+#, php-format
+msgid ""
+"WPML All Import needs %s. Activate it to import content in more than one "
+"language."
+msgid_plural ""
+"WPML All Import needs %s. Activate them to import content in more than one "
+"language."
+msgstr[0] "A WPML All Import használatához %s szükséges. Kapcsold be, hogy több nyelven is importálhass tartalmat."
+msgstr[1] "A WPML All Import használatához %s szükséges. Kapcsold be őket, hogy több nyelven is importálhass tartalmat."

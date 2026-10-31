@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: LearnDash LMS - Integrity 1.2.1\n"
+"Project-Id-Version: LearnDash LMS - Integrity 1.2.3\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T19:13:59+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: LearnDash LMS - Integrity\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.2.1\n"
+"X-Plugin-Version: 1.2.3\n"
 
 #. Plugin Name of the plugin
 #: learndash-integrity.php src/App/Admin/Translation.php:51
@@ -44,7 +44,7 @@ msgstr "LearnDash"
 #: includes/admin/class-settings-page.php:28
 #: includes/admin/class-settings-section.php:38
 msgid "Integrity Settings"
-msgstr "Integritás beállításai"
+msgstr "Integritási beállítások"
 
 #: includes/admin/class-settings-page.php:29
 msgid "Integrity"
@@ -65,19 +65,17 @@ msgstr "Egyidejű bejelentkezés megakadályozása"
 
 #: includes/admin/class-settings-section.php:107
 msgid "Enable concurrent logins per user."
-msgstr "Engedélyezze a felhasználónkénti egyidejű bejelentkezéseket."
+msgstr "Kapcsolja be a felhasználónkénti egyidejű bejelentkezést."
 
 #: includes/admin/class-settings-section.php:118
 msgid "Exclude User Role(s)"
-msgstr "Felhasználói szerepkör(ök) kizárása"
+msgstr "Felhasználói szerepkörök kizárása"
 
 #: includes/admin/class-settings-section.php:119
 msgid ""
 "Choose one or more user roles to exclude from the prevent concurrent login "
 "feature."
-msgstr ""
-"Válasszon ki egy vagy több felhasználói szerepkört, amelyeket ki szeretne "
-"zárni az egyidejű bejelentkezés megakadályozása funkcióból."
+msgstr "Válasszon ki egy vagy több felhasználói szerepkört, amelyeket ki szeretne zárni az egyidejű bejelentkezést megakadályozó funkcióból."
 
 #: includes/admin/class-settings-section.php:127
 msgid "Prevent Content Copy"
@@ -97,10 +95,7 @@ msgid ""
 "reCaptcha safeguards your website from fraud and abuse while providing a "
 "smooth user experience. Enable only one version of reCaptcha at a time. <a "
 "target=\"_blank\" href=\"%s\">Set it up at here.</a>"
-msgstr ""
-"A reCaptcha megóvja webhelyét a csalástól és a visszaélésektől, miközben "
-"zökkenőmentes felhasználói élményt biztosít. Egyszerre csak egy reCaptcha-"
-"verziót engedélyezzen. <a target=\"_blank\" href=\"%s\">Állítsa be itt.</a>"
+msgstr "A reCaptcha megóvja webhelyét a csalástól és a visszaélésektől, miközben zökkenőmentes felhasználói élményt biztosít. Egyszerre csak egy reCaptcha-verziót engedélyezzen. <a target=\"_blank\" href=\"%s\">Állítsa be itt.</a>"
 
 #: includes/admin/class-settings-section.php:157
 msgid "reCaptcha v3 (Invisible)"
@@ -152,7 +147,7 @@ msgstr "Regisztráció"
 
 #: includes/class-prevent-concurrent-login.php:63
 msgid "Your account has exceeded the maximum concurrent logins."
-msgstr "Fiókja túllépte a maximális egyidejű bejelentkezések számát."
+msgstr "A fiókjával egyidejűleg végrehajtott bejelentkezések száma meghaladta a megengedett maximumot."
 
 #: includes/class-prevent-concurrent-login.php:189
 msgid "Bypass Concurrent Login Lockout ( LearnDash Integrity )"
@@ -163,42 +158,40 @@ msgstr ""
 msgid ""
 "Prevent this user from being locked out when attempting to log into "
 "concurrent sessions."
-msgstr ""
-"Megakadályozza, hogy ez a felhasználó ki legyen zárva, amikor egyidejű "
-"munkamenetekbe próbál bejelentkezni."
+msgstr "Megakadályozza, hogy a rendszer kizárja ezt a felhasználót, amikor egyidejűleg több munkamenetbe próbál bejelentkezni."
 
-#: includes/class-recaptcha.php:278 includes/class-recaptcha.php:368
-#: includes/class-recaptcha.php:373
+#: includes/class-recaptcha.php:375 includes/class-recaptcha.php:466
 msgid "<strong>Error:</strong> Please complete the captcha"
 msgstr "<strong>Hiba:</strong> Kérjük, töltse ki a captcha-t"
 
-#: includes/class-recaptcha.php:285 includes/class-recaptcha.php:332
-#: includes/class-recaptcha.php:337
+#: includes/class-recaptcha.php:382 includes/class-recaptcha.php:429
+#: includes/class-recaptcha.php:434
 msgid "Invalid captcha."
 msgstr "Érvénytelen captcha."
 
-#: includes/class-recaptcha.php:380 includes/class-recaptcha.php:385
+#: includes/class-recaptcha.php:473
 msgid "<strong>Error:</strong> Invalid captcha."
 msgstr "<strong>Hiba:</strong> Érvénytelen captcha."
 
-#: includes/class-recaptcha.php:404
+#: includes/class-recaptcha.php:491
 msgid "Please complete the captcha"
-msgstr "Kérjük, töltse ki a captcha-t"
+msgstr "Kérjük, oldja meg a CAPTCHA-t"
 
-#: learndash-integrity.php:51
+#: includes/class-recaptcha.php:557
+msgid "Please complete the captcha to log in."
+msgstr "Kérjük, a bejelentkezéshez oldja meg a CAPTCHA-t."
+
+#: learndash-integrity.php:50
 msgid "LearnDash LMS"
 msgstr "LearnDash LMS"
 
-#: learndash-integrity.php:60
+#: learndash-integrity.php:59
 msgid ""
 "LearnDash LMS - Integrity requires the following plugin(s) to be active:"
-msgstr ""
-"LearnDash LMS - Integrity a következő bővítmény(ek) aktív állapotát igényli:"
+msgstr "LearnDash LMS - Integrity működéséhez a következő bővítmény(ek)nek aktívnak kell lenniük:"
 
 #: src/deprecated/LearnDash_Integrity.php:112
 msgid ""
 "LearnDash LMS - Integrity Add-on requires the following plugin(s) to be "
 "active:"
-msgstr ""
-"LearnDash LMS - Integrity Add-on a következő bővítmény(ek) aktív állapotát "
-"igényli:"
+msgstr "LearnDash LMS - Integrity kiegészítő működéséhez a következő bővítmény(ek)nek aktívnak kell lenniük:"

@@ -145,6 +145,28 @@ def run_msgfmt(path):
     return errs or ['msgfmt kilépési kód {}'.format(r.returncode)]
 
 
+PRINTF_ARG = re.compile(r'%(?:(\d+)\$)?[-+ #0]*\d*(?:\.\d+)?[bcdeEfFgGosuxX]')
+SINGULAR_ONLY = re.compile(r"as in 'msgstr\[0\]', doesn't exist in 'msgid_plural'")
+
+
+def singular_only_arg(po, err):
+    """Igaz, ha a hiba csak az, hogy a msgstr[0] az egyes számú msgid helyőrzőjét használja, a többes számú pedig
+    másikat (pl. "an %1$s" / "%2$s"): a forrás így tervezte, a fordítás helyes, futáskor nem okoz hibát."""
+    typ, line, msg = err
+    if typ != 'msgfmt' or not SINGULAR_ONLY.search(msg):
+        return False
+    entry = None
+    for e in po:
+        if e.linenum <= line:
+            entry = e
+        else:
+            break
+    if entry is None or not entry.msgid_plural:
+        return False
+    args = lambda s: {m.group(1) or str(i) for i, m in enumerate(PRINTF_ARG.finditer(s or ''), 1)}
+    return args(entry.msgstr_plural.get(0)) <= args(entry.msgid)
+
+
 def check_file(path, glossary, warnings=True):
     errors, warns = [], []  # (típus, sor, üzenet)
     for e in run_msgfmt(path):
@@ -156,6 +178,11 @@ def check_file(path, glossary, warnings=True):
     except Exception as ex:  # a msgfmt már jelezte; a polib nem tud tovább menni
         errors.append(('msgfmt', 0, 'a fájl nem olvasható: {}'.format(ex)))
         return errors, warns
+    errors = [e for e in errors if not singular_only_arg(po, e)]
+    # ha a végzetes msgfmt-hibák mind ilyenek voltak, a fejléc-figyelmeztetések sem hibák (a msgfmt csak a
+    # nem nulla kilépési kód miatt írta ki őket)
+    if not any(t == 'msgfmt' and not m.startswith('warning:') for t, _, m in errors):
+        errors = [e for e in errors if not (e[0] == 'msgfmt' and e[2].startswith('warning:'))]
 
     meta = po.metadata
     for h in REQUIRED_HEADERS:

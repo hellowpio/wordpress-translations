@@ -1,0 +1,1172 @@
+# Copyright (C) 2026 WooCommerce
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Deposits 2.4.8\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/target-repo\n"
+"POT-Creation-Date: 2026-09-22T11:40:54+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: woocommerce-deposits\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: WooCommerce Deposits\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 2.4.8\n"
+
+#. Plugin Name of the plugin
+#: woocommerce-deposits.php:3
+msgid "WooCommerce Deposits"
+msgstr "WooCommerce Deposits"
+
+#. Plugin URI of the plugin
+#: woocommerce-deposits.php:5
+msgid "https://woocommerce.com/products/woocommerce-deposits/"
+msgstr "https://woocommerce.com/products/woocommerce-deposits/"
+
+#. Description of the plugin
+#: woocommerce-deposits.php:6
+msgid ""
+"Mark items as deposit items which customers can then place deposits on, "
+"rather than paying in full."
+msgstr "Jelöld meg a tételeket előlegfizetéses tételként, hogy a vásárlók a teljes összeg helyett előleget fizethessenek."
+
+#. Author of the plugin
+#: woocommerce-deposits.php:8
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#. Author URI of the plugin
+#: woocommerce-deposits.php:9
+msgid "https://woocommerce.com"
+msgstr "https://woocommerce.com"
+
+#: includes/api/class-wc-deposits-store-api.php:142
+msgid "True if the cart contains an item with deposit."
+msgstr "Igaz, ha a kosár előlegfizetéses tételt tartalmaz."
+
+#: includes/api/class-wc-deposits-store-api.php:148
+msgid "Amount to be paid in the future, after the deposit is paid."
+msgstr "Az előleg megfizetése után később fizetendő összeg."
+
+#: includes/api/class-wc-deposits-store-api.php:154
+#: includes/api/class-wc-deposits-store-api.php:160
+msgid "Future discounts, if a coupon is used."
+msgstr "Jövőbeli kedvezmények, ha kupont használsz."
+
+#: includes/api/class-wc-deposits-store-api.php:364
+msgid "True if the cart item will be purchased with a deposit."
+msgstr "Igaz, ha a kosártételt előleggel vásárolják meg."
+
+#: includes/api/class-wc-deposits-store-api.php:370
+msgid "True if the cart item will be purchased with a payment plan."
+msgstr "Igaz, ha a kosártételt fizetési tervvel vásárolják meg."
+
+#: includes/api/class-wc-deposits-store-api.php:376
+msgid "Payment schedule for the associated plan."
+msgstr "A kapcsolódó terv fizetési ütemezése."
+
+#: includes/api/class-wc-deposits-store-api.php:384
+msgid "Schedule ID."
+msgstr "Időzítés ID."
+
+#: includes/api/class-wc-deposits-store-api.php:390
+msgid "Schedule index - if 0, then it is a deposit."
+msgstr "Ütemezési index - ha 0, akkor előleg."
+
+#: includes/api/class-wc-deposits-store-api.php:396
+msgid "Plan ID."
+msgstr "Terv ID."
+
+#: includes/api/class-wc-deposits-store-api.php:402
+msgid "Amount."
+msgstr "Összeg."
+
+#: includes/api/class-wc-deposits-store-api.php:408
+msgid "Interval amount (number of days, weeks, months, years)."
+msgstr "Időköz értéke (napok, hetek, hónapok, évek száma)."
+
+#: includes/api/class-wc-deposits-store-api.php:414
+msgid "Interval unit - if 0, then it is a deposit."
+msgstr "Időköz egysége - ha 0, akkor előleg."
+
+#: includes/api/class-wc-deposits-store-api.php:462
+msgid "Payable In Total"
+msgstr "Összesen fizetendő"
+
+#: includes/blocks/class-wc-deposits-blocks-integration.php:50
+#: includes/blocks/class-wc-deposits-blocks-integration.php:57
+msgid "Oops!"
+msgstr "Hoppá!"
+
+#: includes/class-wc-deposits-cart-manager.php:562
+msgid "Please select a valid payment plan"
+msgstr "Válassz érvényes fizetési tervet"
+
+#. translators: %s: product name
+#: includes/class-wc-deposits-cart-manager.php:578
+#, php-format
+msgid "You cannot add another \"%s\" to your cart."
+msgstr "Nem tehetsz még egy „%s” tételt a kosaradba."
+
+#: includes/class-wc-deposits-cart-manager.php:581
+msgid "View cart"
+msgstr "Kosár megtekintése"
+
+#: includes/class-wc-deposits-cart-manager.php:1176
+#: includes/class-wc-deposits-plans-admin.php:180
+#: includes/class-wc-deposits-settings.php:174
+#: includes/list-tables/class-wc-deposits-plans-table.php:29
+#: includes/views/html-deposit-data.php:223
+#: includes/views/html-payment-plan-form.php:17
+msgid "Payment Plan"
+msgstr "Fizetési terv"
+
+#. translators: item subtotal
+#. translators: full amount payable
+#: includes/class-wc-deposits-cart-manager.php:1300
+#: includes/class-wc-deposits-order-manager.php:1147
+#, php-format
+msgid "%s payable in total"
+msgstr "%s összesen fizetendő"
+
+#. translators: %s: country name
+#: includes/class-wc-deposits-cart-manager.php:1366
+#, php-format
+msgid "estimated for %s"
+msgstr "becsült érték %s esetén"
+
+#. translators: %s: tax information
+#: includes/class-wc-deposits-cart-manager.php:1368
+#, php-format
+msgid "(includes %s)"
+msgstr "(beleértve: %s)"
+
+#: includes/class-wc-deposits-cart-manager.php:1489
+#: includes/class-wc-deposits-order-manager.php:1012 build/blocks.js:1
+msgid "(includes tax)"
+msgstr "(áfát tartalmaz)"
+
+#: includes/class-wc-deposits-cart-manager.php:1489
+#: includes/class-wc-deposits-order-manager.php:1012 build/blocks.js:1
+msgid "(excludes tax)"
+msgstr "(áfát nem tartalmaz)"
+
+#: includes/class-wc-deposits-cart-manager.php:1516
+#: includes/class-wc-deposits-cart-manager.php:1517 build/blocks.js:1
+msgid "Due today"
+msgstr "Ma esedékes"
+
+#: includes/class-wc-deposits-cart-manager.php:1523
+#: includes/class-wc-deposits-cart-manager.php:1524
+#: includes/class-wc-deposits-order-manager.php:1017
+msgid "Discount Applied Toward Future Payments"
+msgstr "Jövőbeli fizetésekre alkalmazott kedvezmény"
+
+#: includes/class-wc-deposits-cart-manager.php:1530
+#: includes/class-wc-deposits-cart-manager.php:1531
+#: includes/class-wc-deposits-order-manager.php:1034
+#: includes/class-wc-deposits-order-manager.php:1039
+msgid "Future Payments"
+msgstr "Jövőbeli fizetések"
+
+#: includes/class-wc-deposits-cart-manager.php:1694
+msgid "Select options"
+msgstr "Opciók kiválasztása"
+
+#: includes/class-wc-deposits-my-account.php:107
+#: includes/class-wc-deposits-my-account.php:123
+#: includes/class-wc-deposits-my-account.php:167
+msgid "Scheduled Orders"
+msgstr "Ütemezett rendelések"
+
+#: includes/class-wc-deposits-my-account.php:241
+#: includes/class-wc-deposits-order-manager.php:665
+msgid "View Original Order"
+msgstr "Eredeti rendelés megtekintése"
+
+#: includes/class-wc-deposits-my-account.php:284
+msgid "Scheduled orders for order"
+msgstr "Ütemezett rendelések ehhez a rendeléshez"
+
+#: includes/class-wc-deposits-notifications-manager.php:95
+msgid "Customer Notifications"
+msgstr "Ügyfélértesítések"
+
+#. translators: Link to WC Settings > Email.
+#: includes/class-wc-deposits-notifications-manager.php:100
+#, php-format
+msgid ""
+"Send emails to customers to advise them of an upcoming payment for their "
+"payment plan. To customize the template, visit the <a href=\"%s\">Email "
+"settings</a>."
+msgstr "Küldj e-mailt a vásárlóknak, hogy tájékoztasd őket a fizetési tervük közelgő befizetéséről. A sablonminta testreszabásához keresd fel az <a href=\"%s\">e-mail-beállításokat</a>."
+
+#: includes/class-wc-deposits-notifications-manager.php:106
+msgid "Email Reminders"
+msgstr "E-mailes emlékeztetők"
+
+#: includes/class-wc-deposits-notifications-manager.php:107
+msgid "Send email reminders to customers for upcoming payment plan invoices."
+msgstr "Küldj e-mailes emlékeztetőket a vásárlóknak a fizetési terv közelgő számláiról."
+
+#: includes/class-wc-deposits-notifications-manager.php:115
+msgid "Reminder Timing"
+msgstr "Emlékeztető időzítése"
+
+#: includes/class-wc-deposits-notifications-manager.php:116
+msgid "How long before the event should the notification be sent."
+msgstr "Mennyi idővel az esemény előtt küldjük ki az értesítést."
+
+#: includes/class-wc-deposits-order-manager.php:207
+#: includes/class-wc-deposits-order-manager.php:249
+msgctxt "Order status"
+msgid "Partially Paid"
+msgstr "Részben fizetve"
+
+#. translators: count label
+#: includes/class-wc-deposits-order-manager.php:213
+#, php-format
+msgid "Partially Paid <span class=\"count\">(%s)</span>"
+msgid_plural "Partially Paid <span class=\"count\">(%s)</span>"
+msgstr[0] "Részben fizetve <span class=\"count\">(%s)</span>"
+msgstr[1] "Részben fizetve <span class=\"count\">(%s)</span>"
+
+#: includes/class-wc-deposits-order-manager.php:219
+#: includes/class-wc-deposits-order-manager.php:250
+msgctxt "Order status"
+msgid "Scheduled"
+msgstr "Ütemezett"
+
+#. translators: count label
+#: includes/class-wc-deposits-order-manager.php:225
+#, php-format
+msgid "Scheduled <span class=\"count\">(%s)</span>"
+msgid_plural "Scheduled <span class=\"count\">(%s)</span>"
+msgstr[0] "Ütemezve <span class=\"count\">(%s)</span>"
+msgstr[1] "Ütemezve <span class=\"count\">(%s)</span>"
+
+#: includes/class-wc-deposits-order-manager.php:231
+#: includes/class-wc-deposits-order-manager.php:251
+msgctxt "Order status"
+msgid "Pending Deposit Payment"
+msgstr "Függőben lévő előlegfizetés"
+
+#. translators: count label
+#: includes/class-wc-deposits-order-manager.php:237
+#, php-format
+msgid "Pending Deposit Payment <span class=\"count\">(%s)</span>"
+msgid_plural "Pending Deposits Payment <span class=\"count\">(%s)</span>"
+msgstr[0] "Függőben lévő előlegfizetés <span class=\"count\">(%s)</span>"
+msgstr[1] "Függőben lévő előlegfizetések <span class=\"count\">(%s)</span>"
+
+#: includes/class-wc-deposits-order-manager.php:375
+msgid "All deposit items fully paid"
+msgstr "Minden előleges tétel teljesen kifizetve"
+
+#. translators: error message
+#: includes/class-wc-deposits-order-manager.php:439
+#, php-format
+msgid "Error: Unable to create follow up payment (%s)"
+msgstr "Hiba: Nem sikerült létrehozni a következő fizetést (%s)"
+
+#. translators: Payment number for product's title
+#: includes/class-wc-deposits-order-manager.php:498
+#, php-format
+msgid "Payment #%1$d for %2$s"
+msgstr "Fizetés #%1$d - %2$s"
+
+#: includes/class-wc-deposits-order-manager.php:535
+msgid "Full Amount"
+msgstr "Teljes összeg"
+
+#: includes/class-wc-deposits-order-manager.php:538
+msgid "Full Amount (excl. tax)"
+msgstr "Teljes összeg (áfa nélkül)"
+
+#: includes/class-wc-deposits-order-manager.php:541
+msgid "Deferred Discount"
+msgstr "Halasztott kedvezmény"
+
+#: includes/class-wc-deposits-order-manager.php:544
+msgid "Deferred Discount (excl. tax)"
+msgstr "Halasztott kedvezmény (áfa nélkül)"
+
+#: includes/class-wc-deposits-order-manager.php:547
+msgid "Deposit Amount (excl. tax)"
+msgstr "Előleg összege (áfa nélkül)"
+
+#: includes/class-wc-deposits-order-manager.php:587
+#: includes/class-wc-deposits-order-manager.php:912
+msgid "Deposit"
+msgstr "Előleg"
+
+#: includes/class-wc-deposits-order-manager.php:619
+msgid "View Scheduled Payments"
+msgstr "Ütemezett fizetések megtekintése"
+
+#: includes/class-wc-deposits-order-manager.php:636
+msgid "View All Orders"
+msgstr "Összes rendelés megtekintése"
+
+#. translators: remaining balance order ID
+#: includes/class-wc-deposits-order-manager.php:648
+#: includes/class-wc-deposits-order-manager.php:937
+#, php-format
+msgid "Remainder - Invoice #%1$s"
+msgstr "Fennmaradó összeg - Számla #%1$s"
+
+#. translators: offline paid amount
+#: includes/class-wc-deposits-order-manager.php:651
+#, php-format
+msgid "The remaining balance of %s (plus tax) for this item was paid offline."
+msgstr "A tétel %s összegű fennmaradó egyenlegét (plusz áfa) offline fizették ki."
+
+#: includes/class-wc-deposits-order-manager.php:652
+msgid "Unmark as Paid"
+msgstr "Fizetettként megjelölés visszavonása"
+
+#: includes/class-wc-deposits-order-manager.php:656
+msgid "Invoice Remaining Balance"
+msgstr "Fennmaradó egyenleg számlázása"
+
+#: includes/class-wc-deposits-order-manager.php:657
+msgid "Mark Paid (offline)"
+msgstr "Fizetettként megjelölés (offline)"
+
+#: includes/class-wc-deposits-order-manager.php:729
+#: includes/class-wc-deposits-order-manager.php:731
+#: includes/class-wc-deposits-order-manager.php:733
+msgid "Unmarked as paid."
+msgstr "A fizetettként való megjelölést visszavonták."
+
+#: includes/class-wc-deposits-order-manager.php:742
+msgid "Order completed with Mark Paid (offline)."
+msgstr "A rendelés a „Fizetettként megjelölés (offline)” művelettel fejeződött be."
+
+#. translators: paid offline amount
+#: includes/class-wc-deposits-order-manager.php:940
+#, php-format
+msgid "The remaining balance of %s for this item was paid offline."
+msgstr "A tétel %s összegű fennmaradó egyenlegét offline fizették ki."
+
+#: includes/class-wc-deposits-order-manager.php:1049
+msgid "Total due today:"
+msgstr "Ma esedékes összeg:"
+
+#. translators: year
+#: includes/class-wc-deposits-plan.php:182
+#, php-format
+msgid "%s year"
+msgid_plural "%s years"
+msgstr[0] "%s év"
+msgstr[1] "%s év"
+
+#. translators: month
+#: includes/class-wc-deposits-plan.php:186
+#, php-format
+msgid "%s month"
+msgid_plural "%s months"
+msgstr[0] "%s hónap"
+msgstr[1] "%s hónap"
+
+#. translators: day
+#: includes/class-wc-deposits-plan.php:190
+#, php-format
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s nap"
+msgstr[1] "%s nap"
+
+#. translators: 1: The full amount to be paid. 2: The period of the payment
+#. plan.
+#: includes/class-wc-deposits-plan.php:195
+#, php-format
+msgid "%1$s payable over %2$s"
+msgstr "%1$s %2$s alatt fizetendő"
+
+#. translators: amount
+#: includes/class-wc-deposits-plan.php:198
+#, php-format
+msgid "%1$s total payable"
+msgstr "Összesen fizetendő: %1$s"
+
+#: includes/class-wc-deposits-plans-admin.php:52
+msgid ""
+"Are you sure you want to delete this plan? This action cannot be undone."
+msgstr "Biztosan törlöd ezt a tervet? Ez a művelet nem vonható vissza."
+
+#: includes/class-wc-deposits-plans-admin.php:62
+#: includes/list-tables/class-wc-deposits-plans-table.php:30
+#: includes/views/html-payment-plans.php:14
+msgid "Payment Plans"
+msgstr "Fizetési tervek"
+
+#: includes/class-wc-deposits-plans-admin.php:90
+msgid "Plan saved successfully"
+msgstr "A terv sikeresen mentve"
+
+#: includes/class-wc-deposits-plans-admin.php:98
+msgid "Plan deleted successfully"
+msgstr "Csomag sikeresen törölve"
+
+#: includes/class-wc-deposits-plans-admin.php:141
+msgid "Please enter a valid amount"
+msgstr "Adj meg érvényes összeget"
+
+#: includes/class-wc-deposits-plans-admin.php:164
+msgid "Unable to save payment plan - please try again"
+msgstr "Nem sikerült menteni a fizetési tervet - próbáld újra"
+
+#: includes/class-wc-deposits-plans-admin.php:210
+msgid "Unable to save payment plan"
+msgstr "Nem sikerült menteni a fizetési tervet"
+
+#: includes/class-wc-deposits-product-manager.php:120
+#: includes/class-wc-deposits-settings.php:172
+#: includes/views/html-deposit-data.php:221
+msgid "Percentage"
+msgstr "Százalék"
+
+#: includes/class-wc-deposits-product-manager.php:123
+msgid "Fixed"
+msgstr "Rögzített"
+
+#: includes/class-wc-deposits-product-manager.php:126
+#: templates/deposit-form.php:47
+msgid "Payment plan"
+msgstr "Fizetési terv"
+
+#: includes/class-wc-deposits-product-manager.php:129
+msgid "None"
+msgstr "Nincs"
+
+#: includes/class-wc-deposits-product-manager.php:144
+#: includes/class-wc-deposits-product-manager.php:150
+msgid "Yes"
+msgstr "Igen"
+
+#: includes/class-wc-deposits-product-manager.php:145
+#: includes/views/html-deposit-data.php:181
+msgid "Optional"
+msgstr "Opcionális"
+
+#: includes/class-wc-deposits-product-manager.php:147
+msgid "Pay deposit"
+msgstr "Előleg fizetése"
+
+#: includes/class-wc-deposits-product-manager.php:148
+msgid "Pay in full"
+msgstr "Teljes összeg fizetése"
+
+#: includes/class-wc-deposits-product-manager.php:151
+#: includes/views/html-deposit-data.php:182
+msgid "Required"
+msgstr "Kötelező"
+
+#: includes/class-wc-deposits-product-manager.php:152
+#: includes/class-wc-deposits-product-manager.php:155
+#: includes/class-wc-deposits-product-manager.php:156
+#: includes/class-wc-deposits-product-manager.php:157
+msgid "Not applicable"
+msgstr "Nem alkalmazható"
+
+#: includes/class-wc-deposits-product-manager.php:154
+msgid "No"
+msgstr "Nem"
+
+#: includes/class-wc-deposits-product-manager.php:188
+msgid "Plan:"
+msgstr "Csomag:"
+
+#: includes/class-wc-deposits-product-manager.php:211
+msgid "Inherit storewide settings"
+msgstr "Áruházszintű beállítások öröklése"
+
+#: includes/class-wc-deposits-product-manager.php:215
+msgid "Inherit product settings"
+msgstr "Termékbeállítások öröklése"
+
+#: includes/class-wc-deposits-product-manager.php:221
+msgid "yes, optional"
+msgstr "igen, választható"
+
+#: includes/class-wc-deposits-product-manager.php:225
+msgid "yes, required"
+msgstr "igen, kötelező"
+
+#: includes/class-wc-deposits-product-manager.php:229
+msgid "no"
+msgstr "nem"
+
+#: includes/class-wc-deposits-product-manager.php:235
+msgid "percent"
+msgstr "százalék"
+
+#: includes/class-wc-deposits-product-manager.php:239
+msgid "fixed amount"
+msgstr "fix összeg"
+
+#: includes/class-wc-deposits-product-manager.php:243
+msgid "payment plan"
+msgstr "fizetési terv"
+
+#: includes/class-wc-deposits-product-manager.php:247
+msgid "none"
+msgstr "nincs"
+
+#: includes/class-wc-deposits-product-manager.php:253
+msgid "pay deposit"
+msgstr "előleg fizetése"
+
+#: includes/class-wc-deposits-product-manager.php:257
+msgid "pay in full"
+msgstr "teljes összeg fizetése"
+
+#: includes/class-wc-deposits-product-manager.php:298
+msgid "person"
+msgstr "fő"
+
+#: includes/class-wc-deposits-product-manager.php:300
+msgid "item"
+msgstr "tétel"
+
+#. translators: %s is the deposit amount to be paid
+#: includes/class-wc-deposits-product-manager.php:308
+#, php-format
+msgid "Pay a %s deposit"
+msgstr "Fizess %s előleget"
+
+#. translators: percent per item/person
+#: includes/class-wc-deposits-product-manager.php:311
+#, php-format
+msgid "Pay a %1$s deposit per %2$s"
+msgstr "Fizess %1$s előleget minden egyes %2$s után"
+
+#. translators: %s is the deposit amount to be paid
+#: includes/class-wc-deposits-product-manager.php:315
+#: includes/class-wc-deposits-product-manager.php:340
+#, php-format
+msgid "Pay a deposit of %s"
+msgstr "Fizess %s összegű előleget"
+
+#. translators: amount per item/person
+#: includes/class-wc-deposits-product-manager.php:318
+#, php-format
+msgid "Pay a deposit of %1$s per %2$s"
+msgstr "Fizess %1$s összegű előleget minden egyes %2$s után"
+
+#. translators: %s is the deposit amount to be paid
+#: includes/class-wc-deposits-product-manager.php:343
+#, php-format
+msgid "Pay a %s deposit per item"
+msgstr "Fizess %s előleget termékenként"
+
+#: includes/class-wc-deposits-scheduled-order-manager.php:75
+msgid ""
+"Error: Unable to schedule orders for product with payment plan. Reason: "
+"Already fully paid."
+msgstr "Hiba: Nem lehet ütemezni a rendeléseket fizetési tervvel rendelkező termékhez. Ok: Már teljesen ki van fizetve."
+
+#: includes/class-wc-deposits-scheduled-order-manager.php:143
+msgid "Scheduled order ready for payment."
+msgstr "Az ütemezett rendelés készen áll a fizetésre."
+
+#: includes/class-wc-deposits-settings.php:66
+#: includes/views/html-deposits-tab.php:13
+msgid "Deposits"
+msgstr "Befizetések"
+
+#: includes/class-wc-deposits-settings.php:125
+msgid "Storewide Deposits Configuration"
+msgstr "Áruházszintű előlegbeállítások"
+
+#: includes/class-wc-deposits-settings.php:127
+msgid ""
+"Set default deposit options for all products across your store. You can edit"
+" specific product or variation deposit settings to override these global "
+"settings. To do this, navigate to <strong>Products > Edit a specific product"
+" > Deposits</strong>, or for variable products, go to <strong>Products > "
+"Edit a specific product > Deposits / Variations</strong>."
+msgstr "Állítsd be az alapértelmezett előlegopciókat az áruházad összes termékére. Egyedi termékek vagy változatok előlegbeállításainak szerkesztésével felülírhatod ezeket a globális beállításokat. Ehhez navigálj ide: <strong>termékek > egy adott termék szerkesztése > előlegek</strong>, változó termékeknél pedig ide: <strong>termékek > egy adott termék szerkesztése > előlegek / változatok</strong>."
+
+#: includes/class-wc-deposits-settings.php:132
+msgid "Default Enable Deposits"
+msgstr "Előlegek alapértelmezett bekapcsolása"
+
+#: includes/class-wc-deposits-settings.php:135
+msgid ""
+"Controls whether deposits are enabled by default for products without "
+"specific deposit settings. When <strong>Disabled</strong>, customers must "
+"pay in full, the default WooCommerce payment process. When "
+"<strong>Optional</strong>, customers can choose to pay a deposit or the full"
+" amount. When <strong>Required</strong>, only deposits are allowed."
+msgstr "Ez határozza meg, hogy az előlegek alapértelmezés szerint be vannak-e kapcsolva az olyan termékeknél, amelyeknél nincs egyedi előlegbeállítás. Ha a beállítás <strong>ki van kapcsolva</strong>, a vásárlóknak a teljes összeget kell fizetniük, a WooCommerce alapértelmezett fizetési folyamatát követve. Ha <strong>opcionális</strong>, a vásárlók választhatnak az előleg és a teljes összeg kifizetése között. Ha <strong>kötelező</strong>, csak előleg fizethető."
+
+#: includes/class-wc-deposits-settings.php:140
+msgid "No - Deposits are Disabled"
+msgstr "Nem - az előlegek ki vannak kapcsolva"
+
+#: includes/class-wc-deposits-settings.php:141
+msgid "Yes - Deposits are Optional"
+msgstr "Igen - az előlegek opcionálisak"
+
+#: includes/class-wc-deposits-settings.php:142
+msgid "Yes - Deposits are Required"
+msgstr "Igen - az előlegek kötelezőek"
+
+#: includes/class-wc-deposits-settings.php:144
+#: includes/views/html-deposit-data.php:75
+#: includes/views/html-deposit-data.php:186
+msgid ""
+"Determines whether a deposit is <b>Optional</b> (customers can choose to pay"
+" through a deposit or pay in full), <b>Required</b> (customers must pay "
+"using a deposit, paying the full amount isn't allowed) or <b>Disabled</b> "
+"(deposits are not allowed)."
+msgstr "Meghatározza, hogy az előleg <b>opcionális</b> (a vásárlók választhatnak, hogy előleggel vagy a teljes összeggel fizetnek), <b>kötelező</b> (a vásárlóknak előleggel kell fizetniük, a teljes összeg kifizetése nem engedélyezett) vagy <b>kikapcsolva</b> (előleg nem fizethető)."
+
+#: includes/class-wc-deposits-settings.php:148
+msgid "Default Payment Option"
+msgstr "Alapértelmezett fizetési opció"
+
+#: includes/class-wc-deposits-settings.php:151
+msgid ""
+"The payment method which appears pre-selected at the product page, when "
+"paying using deposits is marked as optional."
+msgstr "Az a fizetési mód, amely előre kiválasztva jelenik meg a termékoldalon, amikor az előlegfizetés opcionálisként van beállítva."
+
+#: includes/class-wc-deposits-settings.php:153
+#: includes/views/html-deposit-data.php:80
+msgid ""
+"Controls the default payment selection that appears pre-selected at the "
+"product page, when paying using deposits is marked as <b>Optional</b>. This "
+"option is ignored if the deposit requirement is set to <b>Required</b>."
+msgstr "Ez szabályozza, hogy melyik alapértelmezett fizetési mód jelenjen meg előre kiválasztva a termékoldalon, ha az előlegfizetés <b>opcionális</b>. Ez az opció nem érvényes, ha az előlegfizetés <b>kötelező</b>."
+
+#: includes/class-wc-deposits-settings.php:157
+#: includes/views/html-deposit-data.php:203 templates/deposit-form.php:49
+msgid "Pay Deposit"
+msgstr "Előleg fizetése"
+
+#: includes/class-wc-deposits-settings.php:158
+#: includes/views/html-deposit-data.php:204 templates/deposit-form.php:57
+msgid "Pay in Full"
+msgstr "Teljes összeg fizetése"
+
+#: includes/class-wc-deposits-settings.php:163
+msgid "Deposit Calculation Method"
+msgstr "Előlegszámítási módja"
+
+#: includes/class-wc-deposits-settings.php:166
+#: includes/views/html-deposit-data.php:88
+msgid ""
+"Choose how the deposit is calculated - e.g., a fixed amount, a percentage of"
+" the product price, or a payment plan."
+msgstr "Válaszd ki, hogyan számítsák ki az előleget – például rögzített összegként, a termék árának százalékaként vagy fizetési terv alapján."
+
+#: includes/class-wc-deposits-settings.php:168
+msgid ""
+"Specify whether the deposit is a percentage of the product price, a fixed "
+"amount, or part of a payment plan. This setting determines how the deposit "
+"amount will be calculated for all products using the global settings."
+msgstr "Add meg, hogy az előleg a termék árának százaléka, rögzített összeg vagy egy fizetési terv része legyen-e. Ez a beállítás meghatározza, hogyan számítják ki az előleg összegét minden olyan termék esetében, amely a globális beállításokat használja."
+
+#: includes/class-wc-deposits-settings.php:173
+#: includes/views/html-deposit-data.php:222
+msgid "Fixed Amount"
+msgstr "Fix összeg"
+
+#: includes/class-wc-deposits-settings.php:179
+msgid "Default Deposit Amount"
+msgstr "Alapértelmezett előlegösszeg"
+
+#: includes/class-wc-deposits-settings.php:181
+msgid ""
+"Enter the percentage or fixed amount to be used as the default deposit. "
+"Absolute value only, do not include currency or percent symbols."
+msgstr "Add meg az alapértelmezett előlegként használandó százalékot vagy rögzített összeget. Csak abszolút érték, ne használj pénznem- vagy százalékjeleket."
+
+#: includes/class-wc-deposits-settings.php:183
+msgid ""
+"The amount customers need to pay as a deposit. For percentage, enter a "
+"number between 1-100. For fixed amount, enter the specific amount in your "
+"store's currency."
+msgstr "Az az összeg, amelyet a vásárlóknak előlegként kell fizetniük. Százalék esetén adj meg 1-100 közötti számot. Rögzített összeg esetén add meg az összeget az áruház pénznemében."
+
+#: includes/class-wc-deposits-settings.php:185
+msgid "Enter amount"
+msgstr "Add meg az összeget"
+
+#: includes/class-wc-deposits-settings.php:191
+msgid "Default Payment Plan"
+msgstr "Alapértelmezett fizetési terv"
+
+#: includes/class-wc-deposits-settings.php:195
+msgid ""
+"Select the default payment plans to use when the Deposit Calculation Method "
+"is set to Payment Plan."
+msgstr "Válaszd ki az alapértelmezett fizetési terveket, ha az előlegszámítási mód Fizetési tervre van állítva."
+
+#: includes/class-wc-deposits-settings.php:197
+msgid ""
+"These payment plans will be available as options when customers are making a"
+" deposit payment. Only shown when Payment Plan is selected as the "
+"calculation method."
+msgstr "Ezek a fizetési tervek opcióként lesznek elérhetők, amikor a vásárlók előleget fizetnek. Csak akkor jelennek meg, ha számítási módként a fizetési terv van kiválasztva."
+
+#: includes/class-wc-deposits-settings.php:207
+msgid "Disable Payment Gateways"
+msgstr "Fizetési átjárók kikapcsolása"
+
+#: includes/class-wc-deposits-settings.php:211
+msgid ""
+"Select payment gateways that should be disabled when accepting deposits."
+msgstr "Válaszd ki azokat a fizetési átjárókat, amelyeket előleg elfogadásakor ki kell kapcsolni."
+
+#: includes/class-wc-deposits-settings.php:213
+msgid ""
+"Selected payment gateways will not be available as payment options when a "
+"customer is making a deposit payment. This helps ensure compatibility with "
+"payment methods that may not support partial payments."
+msgstr "A kiválasztott fizetési átjárók nem lesznek elérhetők fizetési opcióként, amikor a vásárló előleget fizet. Ez segít biztosítani a kompatibilitást azokkal a fizetési módokkal, amelyek nem támogatják a részleges fizetéseket."
+
+#: includes/class-wc-deposits-settings.php:220
+msgid "Order Again Behavior"
+msgstr "Újrarendelés működése"
+
+#: includes/class-wc-deposits-settings.php:221
+msgid "Use original order's deposit settings on a reorder."
+msgstr "Használd az eredeti rendelés előlegbeállításait újrarendeléskor."
+
+#: includes/class-wc-deposits-settings.php:222
+msgid ""
+"With this enabled, if a customer places a reorder, the same deposit settings"
+" as the original order will automatically be applied."
+msgstr "Ennek engedélyezése esetén, ha a vásárló újrarendel, automatikusan az eredeti rendelésével megegyező előlegbeállítások lesznek érvényesek."
+
+#: includes/class-wc-deposits-settings.php:223
+msgid ""
+"When a customer uses the \"Order Again\" feature, enabling this option will "
+"preserve the deposit settings from their original order, maintaining "
+"consistency in how they pay for the same items."
+msgstr "Amikor a vásárló az „Újrarendelés” funkciót használja, ennek az opciónak az engedélyezése megőrzi az eredeti rendelés előlegbeállításait, így következetes marad a fizetés módja ugyanazon tételek esetén."
+
+#: includes/class-wc-deposits.php:81
+msgid "Deposits have been activated!"
+msgstr "Az előlegfizetés aktiválva!"
+
+#. translators: %s: Deposits settings page link
+#: includes/class-wc-deposits.php:83
+#, php-format
+msgid ""
+"Add or edit a product to manage deposits in the Product Data section for "
+"individual products or go to the <a href=\"%s\" target=\"_blank\">Deposits "
+"setting page</a> to manage them storewide."
+msgstr "Adj hozzá vagy szerkessz egy terméket az egyes termékek előlegeinek kezeléséhez a termékadatok szakaszban, vagy menj az <a href=\"%s\" target=\"_blank\">előlegbeállítások oldalára</a> az áruház egészére kiterjedő kezeléshez."
+
+#: includes/class-wc-deposits.php:188
+msgid "Docs"
+msgstr "Dokumentáció"
+
+#: includes/class-wc-deposits.php:189
+msgid "Premium Support"
+msgstr "Prémium támogatás"
+
+#: includes/emails/class-wc-deposits-email-customer-reminder-notification.php:34
+msgid "Customer Notification: Payment Plan Reminder Notification"
+msgstr "Vásárlói értesítés: emlékeztető a fizetési tervre"
+
+#: includes/emails/class-wc-deposits-email-customer-reminder-notification.php:35
+msgid ""
+"Customer reminder notification emails are sent to customers to remind them "
+"of an upcoming payment."
+msgstr "A vásárlóknak küldött emlékeztető e-mailek a közelgő fizetésre hívják fel a figyelmet."
+
+#: includes/emails/class-wc-deposits-email-customer-reminder-notification.php:38
+msgid "Upcoming Payment Reminder"
+msgstr "Emlékeztető a közelgő fizetésről"
+
+#. translators: 1: Site title, 2: Time until invoice will be sent.
+#: includes/emails/class-wc-deposits-email-customer-reminder-notification.php:41
+#, php-format
+msgid "[%1$s]: Your payment is due in %2$s."
+msgstr "[%1$s]: %2$s múlva esedékes a fizetésed."
+
+#: includes/emails/class-wc-deposits-email-customer-reminder-notification.php:82
+msgid "Payment #2 for Dummy Product"
+msgstr "Fizetés a 2. részletre – teszttermék"
+
+#: includes/emails/class-wc-deposits-email-customer-reminder-notification.php:145
+msgid "3 days"
+msgstr "3 nap"
+
+#. translators: 1: Notification type, 2: customer's email.
+#: includes/emails/class-wc-deposits-email-customer-reminder-notification.php:182
+#, php-format
+msgid "%1$s was successfully sent to %2$s."
+msgstr "%1$s sikeresen elküldve ide: %2$s."
+
+#. translators: 1: Notification type, 2: customer's email.
+#: includes/emails/class-wc-deposits-email-customer-reminder-notification.php:187
+#, php-format
+msgid "Attempt to send %1$s to %2$s failed."
+msgstr "%1$s küldése ide: %2$s sikertelen."
+
+#: includes/list-tables/class-wc-deposits-plans-table.php:48
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: includes/list-tables/class-wc-deposits-plans-table.php:48
+msgid "Delete"
+msgstr "Törlés"
+
+#: includes/list-tables/class-wc-deposits-plans-table.php:81
+msgid "Name"
+msgstr "Név"
+
+#: includes/list-tables/class-wc-deposits-plans-table.php:82
+msgid "Description"
+msgstr "Leírás"
+
+#: includes/list-tables/class-wc-deposits-plans-table.php:83
+msgid "Schedule"
+msgstr "Ütemezés"
+
+#: includes/views/html-deposit-data.php:53
+msgid ""
+"Deposit settings will be inherited from the parent product if not customized"
+" for the variation."
+msgstr "Ha nincs testreszabva a változathoz, az előlegbeállítások a szülő terméktől öröklődnek."
+
+#: includes/views/html-deposit-data.php:54
+msgid ""
+"The parent product deposit settings apply to all variations unless "
+"customized below."
+msgstr "A szülő termék előlegbeállításai minden változatra érvényesek, kivéve, ha alább egyéni beállításokat adsz meg."
+
+#: includes/views/html-deposit-data.php:60
+msgid "Storewide Deposit Settings"
+msgstr "Áruházszintű előlegbeállítások"
+
+#: includes/views/html-deposit-data.php:61
+msgid "These settings apply to all products unless customized below."
+msgstr "Ezek a beállítások minden termékre érvényesek, kivéve, ha alább egyéni beállításokat adsz meg."
+
+#: includes/views/html-deposit-data.php:62
+msgid ""
+"Configure the default deposit settings that apply to your entire store."
+msgstr "Állítsd be az egész áruházra érvényes alapértelmezett előlegbeállításokat."
+
+#: includes/views/html-deposit-data.php:62
+msgid "Manage Storewide Deposit Settings"
+msgstr "Áruházszintű előlegbeállítások kezelése"
+
+#. translators: Yes/No
+#: includes/views/html-deposit-data.php:69
+#, php-format
+msgid "<b>Deposits Enabled:</b> %1$s"
+msgstr "<b>Előlegek engedélyezve:</b> %1$s"
+
+#: includes/views/html-deposit-data.php:70
+msgid ""
+"Controls whether deposits are allowed or not. If disabled, customers must "
+"pay in full, i.e., the default payment option for WooCommerce."
+msgstr "Szabályozza, hogy az előlegek engedélyezettek-e. Ha ki vannak kapcsolva, a vásárlóknak a WooCommerce alapértelmezett fizetési opciója szerint, vagyis a teljes összeget kell fizetniük."
+
+#. translators: Optional/Required/Disabled
+#: includes/views/html-deposit-data.php:74
+#, php-format
+msgid "<b>Deposit Requirement:</b> %1$s"
+msgstr "<b>Előlegkövetelmény:</b> %1$s"
+
+#. translators: Deposit/Full
+#: includes/views/html-deposit-data.php:79
+#, php-format
+msgid "<b>Default Payment Option:</b> %1$s"
+msgstr "<b>alapértelmezett fizetési opció:</b> %1$s"
+
+#. translators: Percentage/Fixed Amount/Payment Plan OR Not Applicable
+#: includes/views/html-deposit-data.php:85
+#, php-format
+msgid "<b>Deposit Type:</b> %s"
+msgstr "<b>Előleg típusa:</b> %s"
+
+#: includes/views/html-deposit-data.php:149
+msgid "Enable custom deposit settings for this variation"
+msgstr "Egyéni előlegbeállítások engedélyezése ehhez a változathoz"
+
+#: includes/views/html-deposit-data.php:150
+msgid ""
+"Allows additional deposit settings for this variation, overriding parent "
+"product settings. If unchecked, parent product deposit settings remain in "
+"effect."
+msgstr "További előlegbeállításokat tesz lehetővé ehhez a változathoz, felülírva a szülő termék beállításait. Ha nincs bejelölve, a szülő termék előlegbeállításai maradnak érvényben."
+
+#: includes/views/html-deposit-data.php:152
+msgid "Enable custom deposit settings for this product"
+msgstr "Egyéni előlegbeállítások engedélyezése ehhez a termékhez"
+
+#: includes/views/html-deposit-data.php:153
+msgid ""
+"Allows additional deposit settings for this product, overriding storewide "
+"global settings. If unchecked, storewide global settings remain in effect."
+msgstr "További előlegbeállításokat tesz lehetővé ehhez a termékhez, felülírva az áruházszintű globális beállításokat. Ha nincs bejelölve, az áruházszintű globális beállítások maradnak érvényben."
+
+#: includes/views/html-deposit-data.php:177
+msgid "Deposit Setting"
+msgstr "Előlegbeállítás"
+
+#: includes/views/html-deposit-data.php:180
+msgid "Disabled"
+msgstr "Letiltva"
+
+#: includes/views/html-deposit-data.php:199
+msgid "Default Option"
+msgstr "Alapértelmezett opció"
+
+#: includes/views/html-deposit-data.php:201
+msgid ""
+"The payment method which appears pre-selected at the product page, when "
+"paying using deposits is optional. This option is ignored if the deposit "
+"requirement is set to <b>Required</b>."
+msgstr "Az a fizetési mód, amely előre kiválasztva jelenik meg a termékoldalon, ha az előleges fizetés opcionális. Ezt az opciót figyelmen kívül hagyjuk, ha az előlegkövetelmény <b>kötelező</b>."
+
+#: includes/views/html-deposit-data.php:217
+msgid "Deposit Type"
+msgstr "Előleg típusa"
+
+#: includes/views/html-deposit-data.php:219
+msgid "Choose how customers can pay for this product with deposits."
+msgstr "Válaszd ki, hogyan fizethetnek a vásárlók előleggel ezért a termékért."
+
+#: includes/views/html-deposit-data.php:236
+msgid "Booking Persons"
+msgstr "Foglalást végző személyek"
+
+#: includes/views/html-deposit-data.php:237
+msgid "Multiply fixed deposits by the number of persons booking"
+msgstr "A rögzített előleget szorozd meg a foglalást végző személyek számával"
+
+#: includes/views/html-deposit-data.php:248
+msgid "Deposit Amount"
+msgstr "Előleg összege"
+
+#: includes/views/html-deposit-data.php:250
+msgid "Enter the deposit amount. Do not include currency or percent symbols."
+msgstr "Add meg az előleg összegét. Ne használj pénznem- vagy százalékjeleket."
+
+#: includes/views/html-deposit-data.php:268
+msgid "Available Payment Plans"
+msgstr "Elérhető fizetési tervek"
+
+#: includes/views/html-deposit-data.php:273
+msgid "You have not created any payment plans."
+msgstr "Még nem hoztál létre fizetési tervet."
+
+#: includes/views/html-deposit-data.php:274
+msgid "Create a Payment Plan"
+msgstr "Fizetési terv létrehozása"
+
+#: includes/views/html-deposit-data.php:278
+msgid "Select payment plans"
+msgstr "Fizetési tervek kiválasztása"
+
+#: includes/views/html-deposit-data.php:284
+msgid "Choose which payment plans customers can use for this product."
+msgstr "Válaszd ki, mely fizetési terveket használhatják a vásárlók ehhez a termékhez."
+
+#. translators: default payment plan
+#: includes/views/html-deposit-data.php:295
+#: includes/views/html-deposit-data.php:298
+#, php-format
+msgid "\"%s\" will be used if no payment plan is selected."
+msgstr "Ha nincs kiválasztva fizetési terv, a „%s” lesz használatban."
+
+#: includes/views/html-edit-payment-plan.php:14
+msgid "Edit Payment Plan"
+msgstr "Fizetési terv szerkesztése"
+
+#: includes/views/html-payment-plan-form.php:16
+msgid "Plan Name"
+msgstr "Terv neve"
+
+#: includes/views/html-payment-plan-form.php:20
+msgid "Plan Description"
+msgstr "Terv leírása"
+
+#: includes/views/html-payment-plan-form.php:21
+msgid "Describe this plan to the customer"
+msgstr "Írd le ezt a tervet a vásárlónak"
+
+#: includes/views/html-payment-plan-form.php:26
+#: includes/views/html-payment-plan-form.php:50
+#: includes/views/html-payment-plan-form.php:75
+msgid "Days"
+msgstr "nap"
+
+#: includes/views/html-payment-plan-form.php:27
+#: includes/views/html-payment-plan-form.php:76
+msgid "Weeks"
+msgstr "Hetek"
+
+#: includes/views/html-payment-plan-form.php:28
+#: includes/views/html-payment-plan-form.php:50
+#: includes/views/html-payment-plan-form.php:77
+msgid "Months"
+msgstr "Hónapok"
+
+#: includes/views/html-payment-plan-form.php:29
+#: includes/views/html-payment-plan-form.php:50
+#: includes/views/html-payment-plan-form.php:78
+msgid "Years"
+msgstr "Év"
+
+#: includes/views/html-payment-plan-form.php:35
+#: includes/views/html-payment-plan-form.php:72
+msgid "After"
+msgstr "Utána"
+
+#: includes/views/html-payment-plan-form.php:41
+msgid "Payment Schedule"
+msgstr "Fizetési ütemezés"
+
+#: includes/views/html-payment-plan-form.php:44
+msgid "Payment Amount"
+msgstr "Fizetési összeg"
+
+#: includes/views/html-payment-plan-form.php:44
+msgid "This is the amount (in percent) based on the full product price."
+msgstr "Ez az összeg (százalékban) a teljes termékár alapján."
+
+#: includes/views/html-payment-plan-form.php:45
+msgid "Interval"
+msgstr "Időköz"
+
+#: includes/views/html-payment-plan-form.php:45
+msgid "This is the interval between each payment."
+msgstr "Ez az egyes fizetések közötti időköz."
+
+#: includes/views/html-payment-plan-form.php:49
+msgid "Total:"
+msgstr "Összesen:"
+
+#: includes/views/html-payment-plan-form.php:50
+msgid "Total Duration:"
+msgstr "Teljes időtartam:"
+
+#: includes/views/html-payment-plan-form.php:67
+msgid "Immediately"
+msgstr "Azonnal"
+
+#: includes/views/html-payment-plan-form.php:91
+msgid "Save Payment Plan"
+msgstr "Fizetési terv mentése"
+
+#: includes/views/html-payment-plans.php:18
+msgid "Existing Payment Plans"
+msgstr "Meglévő fizetési tervek"
+
+#: includes/views/html-payment-plans.php:24
+msgid "Add Payment Plan"
+msgstr "Fizetési terv hozzáadása"
+
+#: templates/deposit-form.php:32
+msgid "Choose your payment option"
+msgstr "Fizetési lehetőség kiválasztása"
+
+#: templates/deposit-form.php:66
+msgid "Choose your payment plan"
+msgstr "Fizetési terv kiválasztása"
+
+#. translators: %s: Customer first name
+#: templates/emails/customer-reminder-notification.php:25
+#: templates/emails/plain/customer-reminder-notification.php:18
+#, php-format
+msgid "Hi %s."
+msgstr "Kedves %s."
+
+#. translators: %1$s: human readable time difference (eg 3 days, 1 day), %2$s:
+#. date in local format.
+#: templates/emails/customer-reminder-notification.php:38
+#: templates/emails/plain/customer-reminder-notification.php:35
+#, php-format
+msgid "Your payment is due in %1$s — that’s <strong>%2$s</strong>."
+msgstr "%1$s múlva esedékes a fizetésed – ez <strong>%2$s</strong>."
+
+#: templates/emails/customer-reminder-notification.php:53
+#: templates/emails/plain/customer-reminder-notification.php:46
+msgid "This payment will not be processed automatically."
+msgstr "Ez a fizetés nem kerül automatikus feldolgozásra."
+
+#. translators: %1$s Order pay link
+#: templates/emails/customer-reminder-notification.php:63
+#: templates/emails/plain/customer-reminder-notification.php:51
+#, php-format
+msgid ""
+"Your order details are below, with a link to make a payment when you’re "
+"ready: %1$s"
+msgstr "Alább találod a rendelésed részleteit és a fizetési linket, amelyet akkor használhatsz, amikor készen állsz: %1$s"
+
+#: templates/emails/customer-reminder-notification.php:70
+msgid "Pay for this order"
+msgstr "Rendelés kifizetése"
+
+#: templates/scheduled-orders.php:33
+msgctxt "hash before order number"
+msgid "#"
+msgstr "#"
+
+#. translators: 1: formatted order total 2: total order items
+#: templates/scheduled-orders.php:45
+#, php-format
+msgid "%1$s for %2$s item"
+msgid_plural "%1$s for %2$s items"
+msgstr[0] "%1$s %2$s tételért"
+msgstr[1] "%1$s %2$s tételért"
+
+#: templates/scheduled-orders.php:71
+msgid "Previous"
+msgstr "Előző"
+
+#: templates/scheduled-orders.php:75
+msgid "Next"
+msgstr "Következő"
+
+#. translators: %s: WooCommerce link
+#: woocommerce-deposits.php:74
+#, php-format
+msgid "WooCommerce Deposits requires %s to be installed and active."
+msgstr "A WooCommerce Deposits megköveteli, hogy a(z) %s telepítve és aktív legyen."
+
+#: build/blocks.js:1
+msgid "Future payments"
+msgstr "Jövőbeni fizetések"
+
+#: build/blocks.js:1
+msgid "Discount"
+msgstr "Kedvezmény"
+
+#: build/blocks.js:1
+msgid "Applied toward future payments"
+msgstr "Jövőbeni fizetésekbe beszámítva"
+
+#. translators: %s is the deposit amount to pay immediately (ie: $10).
+#: build/blocks.js:2
+#, js-format
+msgid "Due today %s"
+msgstr "Ma esedékes %s"
+
+#. translators: %s is the deposit amount to pay immediately (ie: $10).
+#: build/blocks.js:3
+#, js-format
+msgid "%s due today"
+msgstr "%s ma esedékes"
+
+#: build/blocks.js:3
+msgid "Deposit due today for <quantity/> <productName/>: <price/>"
+msgstr "A <quantity/> <productName/> termékhez ma esedékes előleg: <price/>"

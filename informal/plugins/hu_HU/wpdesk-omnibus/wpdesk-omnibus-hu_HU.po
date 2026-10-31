@@ -1,0 +1,791 @@
+# Copyright (C) 2026 WP Desk
+# This file is distributed under the same license as the Omnibus for WooCommerce plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Omnibus for WooCommerce 2.2.27\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-desk-omnibus\n"
+"POT-Creation-Date: 2026-10-19T13:39:47+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: wpdesk-omnibus\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: Omnibus for WooCommerce\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 2.2.27\n"
+
+#. Plugin Name of the plugin
+#: wpdesk-omnibus.php:3
+msgid "Omnibus for WooCommerce"
+msgstr "Omnibus for WooCommerce"
+
+#. Plugin URI of the plugin
+#: wpdesk-omnibus.php:4
+msgid "https://www.wpdesk.pl/sk/wp-desk-omnibus-plugin/"
+msgstr "https://www.wpdesk.pl/sk/wp-desk-omnibus-plugin/"
+
+#. Description of the plugin
+#: wpdesk-omnibus.php:5
+msgid ""
+"100% compliance with the EU Omnibus directive. Automatically displays the "
+"lowest product price from the last 30 days."
+msgstr "100%-os megfelelés az EU Omnibus irányelvének. Automatikusan megjeleníti az elmúlt 30 nap legalacsonyabb termékárát."
+
+#. Author of the plugin
+#: wpdesk-omnibus.php:8
+msgid "WP Desk"
+msgstr "WP Desk"
+
+#. Author URI of the plugin
+#: wpdesk-omnibus.php:9
+msgid "https://www.wpdesk.pl/sk/wp-desk-omnibus-author/"
+msgstr "https://www.wpdesk.pl/sk/wp-desk-omnibus-author/"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:49
+msgid "General Omnibus settings"
+msgstr "Általános Omnibus-beállítások"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:53
+msgid "Date interval"
+msgstr "Dátumintervallum"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:54
+msgid "Decide how many days to look back, when searching for lowest price"
+msgstr "Döntsd el, hány napra visszamenőleg keresse a rendszer a legalacsonyabb árat"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:64
+msgid "Method of finding the lowest price"
+msgstr "A legalacsonyabb ár keresésének módja"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:65
+msgid "Choose how to seek for product's lowest price."
+msgstr "Válaszd ki, hogyan keresse meg a rendszer a termék legalacsonyabb árát."
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:69
+msgid "Find the lowest price for product since current date"
+msgstr "A termék legalacsonyabb árának keresése az aktuális dátumtól kezdve"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:70
+msgid "Find the lowest price since product's last promotion date"
+msgstr "A termék legalacsonyabb árának keresése az utolsó akció dátumától kezdve"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:76
+msgid "Current price is the lowest"
+msgstr "Az aktuális ár a legalacsonyabb"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:77
+msgid ""
+"Choose how to behave, when current product's price is the lowest, e.g. you "
+"didn't change price longer than lookup period or you just start to use "
+"Omnibus."
+msgstr "Válaszd ki, mi történjen, ha az aktuális termékár a legalacsonyabb, például mert az árat a keresési időszaknál hosszabb ideje nem módosítottad, vagy épp most kezded használni az Omnibus bővítményt."
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:81
+msgid "Display message as usual"
+msgstr "Az üzenet megjelenítése a megszokott módon"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:82
+msgid "Don't display any message"
+msgstr "Üzenet megjelenítésének kikapcsolása"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:88
+msgid "Display the lowest price only for promotional products"
+msgstr "A legalacsonyabb ár megjelenítése csak akciós termékeknél"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:89
+msgid ""
+"When displaying a message about the lowest price for a product, show it only"
+" for a product which is currently on promotion."
+msgstr "A termék legalacsonyabb áráról szóló üzenetet csak az éppen akciós termékeknél jelenítsd meg."
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:96
+msgid "Method of displaying message for product variations"
+msgstr "A termékváltozatokhoz tartozó üzenet megjelenítésének módja"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:97
+msgid ""
+"Decide whether you want to show a cumulative value for your products' "
+"variants or each of them should be treated separately."
+msgstr "Döntsd el, hogy a rendszer a termékváltozatok összesített értékét jelenítse-e meg, vagy külön-külön kezelje őket."
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:101
+msgid "Display each product variant separately"
+msgstr "Minden termékváltozat külön megjelenítése"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:102
+msgid "Show one, the lowest price from across all product's variants"
+msgstr "Egy ár megjelenítése: a termékváltozatok közül a legalacsonyabb"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:108
+msgid "Use sale prices"
+msgstr "Akciós árak használata"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:109
+msgid "Include sale prices when counting the lowest price."
+msgstr "A legalacsonyabb ár kiszámításakor az akciós árakat is vedd figyelembe."
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:116
+msgid "The lowest price message"
+msgstr "A legalacsonyabb árról szóló üzenet"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:122
+#: src/WPDesk/Omnibus/Core/PriceMessage/Formatter/RichMessageFormatter.php:65
+msgid "The lowest price ({date}): {price}"
+msgstr "A legalacsonyabb ár ({date}): {price}"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:124
+#, php-format
+msgid ""
+"Available tags:</br><code>{date}</code>: the lowest price date formatted as "
+"<em>%s</em></br><code>{price}</code>: the lowest price "
+"value</br><code>{days}</code>: the value of date interval option"
+msgstr "Elérhető címkék:</br><code>{date}</code>: a legalacsonyabb ár dátuma, formázva: <em>%s</em></br><code>{price}</code>: a legalacsonyabb ár értéke</br><code>{days}</code>: a dátumintervallum beállítás értéke"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:127
+msgid "Customize the message displaying the lowest price."
+msgstr "A legalacsonyabb árat megjelenítő üzenet testreszabása."
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:136
+msgid "Omnibus message placement settings"
+msgstr "Az Omnibus-üzenet elhelyezésének beállításai"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:137
+msgid ""
+"Choose, where to place the message. You can pick one of standard WooCommerce"
+" hooks or add here your own custom hook which will be used to display "
+"message.</br>Use the shortcodes <code>[omnibus_price]</code> and "
+"<code>[omnibus_price_message]</code> to display the price thru text "
+"editors.</br>If you'd like to display the price of a variable product by the"
+" shortcode add the variant ID to it. Example: <code>[omnibus_price "
+"ID=\"111\"]</code>"
+msgstr "Válaszd ki, hová kerüljön az üzenet. Választhatsz a szabványos WooCommerce-hookok közül, vagy megadhatod a saját egyéni hookodat, amelyet a rendszer az üzenet megjelenítésére használ.</br>Az ár szövegszerkesztőkben való megjelenítéséhez használd a <code>[omnibus_price]</code> és a <code>[omnibus_price_message]</code> shortcode-okat.</br>Ha változó termék árát szeretnéd shortcode-dal megjeleníteni, add meg a változat ID-jét is. Példa: <code>[omnibus_price ID=\"111\"]</code>"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:141
+msgid "Display message on product page"
+msgstr "Üzenet megjelenítése a termékoldalon"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:153
+msgid "Display message on archive page (shop page, category, tag, attributes)"
+msgstr "Üzenet megjelenítése az archívumoldalon (üzletoldal, kategória, címke, attribútumok)"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:164
+msgid "Display message on cart page"
+msgstr "Üzenet megjelenítése a kosároldalon"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:219
+msgid "Before short description"
+msgstr "A rövid leírás előtt"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:220
+msgid "After short description"
+msgstr "A rövid leírás után"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:221
+msgid "Before add to cart quantity"
+msgstr "A kosárba tétel mennyiségének megadása előtt"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:222
+msgid "After add to cart quantity"
+msgstr "A kosárba tétel mennyiségének megadása után"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:223
+msgid "Before add to cart button"
+msgstr "A kosárba tétel gomb előtt"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:224
+msgid "After add to cart button"
+msgstr "A kosárba tétel gomb után"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:225
+msgid "Before product's meta data"
+msgstr "A termék metaadatainak megjelenése előtt"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:226
+msgid "After product's meta data"
+msgstr "A termék metaadatainak megjelenése után"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:227
+msgid "Before product container"
+msgstr "A termékkonténer előtt"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:228
+msgid "After product container"
+msgstr "A termékkonténer után"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:240
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:257
+msgid "Do not display"
+msgstr "Ne jelenjen meg"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:241
+msgid "Before product"
+msgstr "Termék előtt"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:242
+msgid "Before product title"
+msgstr "Termék címe előtt"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:243
+msgid "Product title"
+msgstr "Termék címe"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:244
+msgid "After product title"
+msgstr "Termék címe után"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:245
+msgid "After product"
+msgstr "Termék után"
+
+#: src/WPDesk/Omnibus/Core/Admin/PluginOptions.php:258
+msgid "After product name"
+msgstr "A termék neve után"
+
+#: src/WPDesk/Omnibus/Core/Admin/PriceTableMetabox.php:62
+msgid "Omnibus Price History"
+msgstr "Omnibus ár-előzmények"
+
+#: src/WPDesk/Omnibus/Core/Admin/RepairTools.php:22
+msgid "Historical prices validation"
+msgstr "Korábbi árak érvényesítése"
+
+#: src/WPDesk/Omnibus/Core/Admin/RepairTools.php:23
+msgid ""
+"This tool will scan your saved prices and automatically update any records "
+"that may need correction."
+msgstr "Ez az eszköz átvizsgálja a mentett árakat, és automatikusan frissíti a javításra szoruló rekordokat."
+
+#: src/WPDesk/Omnibus/Core/Admin/RepairTools.php:25
+msgid "Validate prices"
+msgstr "Árak érvényesítése"
+
+#: src/WPDesk/Omnibus/Core/Admin/RepairTools.php:32
+msgid "Validating prices in background..."
+msgstr "Árak érvényesítése a háttérben..."
+
+#: templates/admin/price_table.php:61
+msgid ""
+"Prices table is limited to 20 entries. The lowest price – according to "
+"current plugin's configuration – is emphasized."
+msgstr "Az ártáblázat legfeljebb 20 bejegyzést tartalmaz. A bővítmény aktuális beállításai szerint a legalacsonyabb ár kiemelve jelenik meg."
+
+#: templates/admin/price_table.php:71 templates/admin/price_table.php:88
+msgid "Product"
+msgstr "Termék"
+
+#: templates/admin/price_table.php:97
+msgid "Price"
+msgstr "Ár"
+
+#: templates/admin/price_table.php:108
+msgid "Currency"
+msgstr "Pénznem"
+
+#: templates/admin/price_table.php:126
+msgid "Valid from"
+msgstr "Érvényesség kezdete"
+
+#: templates/admin/price_table.php:137
+msgid "Valid to"
+msgstr "Érvényes eddig"
+
+#: templates/admin/price_table.php:149
+msgid "Price Type"
+msgstr "Ártípus"
+
+#: templates/admin/price_table.php:153 templates/admin/price_table_body.php:25
+msgid "Regular"
+msgstr "Normál"
+
+#: templates/admin/price_table.php:158 templates/admin/price_table_body.php:24
+msgid "Reduced"
+msgstr "Csökkentett"
+
+#: templates/admin/status_page.php:9
+msgid "Omnibus Price Records"
+msgstr "Omnibus árrekordok"
+
+#: templates/admin/status_page.php:15
+msgid "Total price records"
+msgstr "Árrekordok összesen"
+
+#: templates/admin/status_page.php:16
+msgid "The total number of historical price records in the database"
+msgstr "Az adatbázisban szereplő korábbi árrekordok teljes darabszáma"
+
+#: templates/admin/status_page.php:20
+msgid "Products with price records"
+msgstr "Árrekordokkal rendelkező termékek"
+
+#: templates/admin/status_page.php:21
+msgid "Number of unique products that have historical price records"
+msgstr "A korábbi árrekordokkal rendelkező egyedi termékek száma"
+
+#: templates/admin/status_page.php:25
+msgid "Records without end date"
+msgstr "Befejezés dátuma nélküli rekordok"
+
+#: templates/admin/status_page.php:26
+msgid "Number of price records without an end date (changed field)"
+msgstr "Befejezés dátuma nélküli árrekordok száma (módosított mező)"
+
+#: templates/admin/status_page.php:38
+msgid "Products with multiple active prices"
+msgstr "Több aktív árral rendelkező termékek"
+
+#: templates/admin/status_page.php:39
+msgid ""
+"Number of products that have more than 1 active price record (may indicate "
+"saving issues)"
+msgstr "Azon termékek száma, amelyeknek több mint 1 aktív árrekordjuk van (ez mentési problémákra utalhat)"
+
+#: templates/admin/_filter.php:38
+msgctxt "Clear filters in table view"
+msgid "Clear"
+msgstr "Szűrők kiürítése"
+
+#: templates/admin/_filter.php:41
+msgctxt "Apply filters in table view"
+msgid "Apply"
+msgstr "Szűrők alkalmazása"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:206
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on PHP versions older than %s. Please"
+" contact your host and ask them to upgrade."
+msgstr "A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi PHP-verzióval. Kérd meg a tárhelyszolgáltatódat a frissítésre."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:209
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WordPress versions older than %s. "
+"Please update WordPress."
+msgstr "A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi WordPress-verzióval. Frissítsd a WordPress-t."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:212
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WooCommerce versions older than "
+"%s. Please update WooCommerce."
+msgstr "A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi WooCommerce-verzióval. Frissítsd a WooCommerce-t."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:215
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without OpenSSL module version at "
+"least %s. Please update OpenSSL module."
+msgstr "A(z) &#8222;%s&#8221; bővítmény futtatásához legalább %s verziójú OpenSSL-modul szükséges. Frissítsd az OpenSSL-modult."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:310
+#, php-format
+msgid ""
+"The &#8220;%1$s&#8221; plugin requires at least %2$s version of %3$s to work"
+" correctly. Please update it to its latest release."
+msgstr "A(z) &#8222;%1$s&#8221; bővítmény megfelelő működéséhez legalább a(z) %3$s %2$s verziója szükséges. Frissítsd a legújabb verzióra."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:416
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s active. Please install and"
+" activate %s plugin."
+msgstr "A(z) &#8222;%s&#8221; bővítmény futtatásához aktív %s szükséges. Telepítsd és kapcsold be a(z) %s bővítményt."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:468
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin requires free %s plugin. <a href=\"%s\">Install "
+"%s</a>"
+msgstr "A(z) &#8222;%s&#8221; bővítményhez az ingyenes %s bővítmény szükséges. <a href=\"%s\">A(z) %s telepítése</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:474
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin requires activating %s plugin. <a "
+"href=\"%s\">Activate %s</a>"
+msgstr "A(z) &#8222;%s&#8221; bővítményhez be kell kapcsolnod a(z) %s bővítményt. <a href=\"%s\">A(z) %s bekapcsolása</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:516
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP module installed. "
+"Please contact your host and ask them to install %s."
+msgstr ""
+"A(z) &#8220;%s&#8221; bővítmény futtatásához telepíteni kell a(z) %s PHP-"
+"modult. Kérd meg a tárhelyszolgáltatódat a(z) %s telepítésére."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:541
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP setting set to %s. "
+"Please contact your host and ask them to set %s."
+msgstr "A(z) &#8220;%s&#8221; bővítmény futtatásához a(z) %s PHP-beállítás értéke legyen %s. Kérd meg a tárhelyszolgáltatódat, hogy állítsa be a(z) %s értékét."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker_With_Update_Disable.php:29
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin is temporarily disabled since the required %s "
+"plugin is being upgraded."
+msgstr ""
+"A(z) &#8220;%s&#8221; bővítmény átmenetileg ki van kapcsolva, mert a "
+"szükséges %s bővítmény frissítése folyamatban van."
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:181
+msgid "Support"
+msgstr "Támogatás"
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:184
+msgid "Docs"
+msgstr "Dokumentáció"
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:188
+msgid "Settings"
+msgstr "Beállítások"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Disabled"
+msgstr "Letiltva"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Emergency"
+msgstr "Vészhelyzet"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Alert"
+msgstr "Riasztás"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Critical"
+msgstr "Kritikus"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Error"
+msgstr "Hiba"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Warning"
+msgstr "Figyelem"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Notice"
+msgstr "Értesítés"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Info"
+msgstr "Információ"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Debug"
+msgstr "Hibakeresés"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:23
+#, php-format
+msgid ""
+"Can not enable WP Desk Debug log! Cannot create directory %s or this "
+"directory is not writeable!"
+msgstr ""
+"Nem sikerült bekapcsolni a WP Desk hibakeresési naplóját! Nem lehet "
+"létrehozni a(z) %s könyvtárat, vagy a könyvtár nem írható!"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:36
+#, php-format
+msgid "Can not enable WP Desk Debug log! Cannot create file %s!"
+msgstr ""
+"Nem sikerült bekapcsolni a WP Desk hibakeresési naplóját! Nem lehet "
+"létrehozni a(z) %s fájlt!"
+
+#: vendor_prefixed/wpdesk/wp-plugin-flow-common/src/php52-functions.php:13
+msgid ""
+"<p><strong style=\"color: red;\">PHP version is older than 5.3 so no WP Desk"
+" plugins will work. Please contact your host and ask them to upgrade. "
+"</strong></p>"
+msgstr "<p><strong style=\"color: red;\">A PHP-verzió régebbi az 5.3-asnál, ezért egyetlen WP Desk-bővítmény sem fog működni. Vedd fel a kapcsolatot a tárhelyszolgáltatóddal, és kérd meg a frissítésre. </strong></p>"
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/NoticeReminder.php:48
+#, php-format
+msgid ""
+"You're using an outdated version of the following plugin: %s This may cause "
+"serious compatibility issues with WooCommerce. Update it immediately to "
+"avoid potential disruptions."
+msgid_plural ""
+"You're using outdated versions of the following plugins: %s This may cause "
+"serious compatibility issues with WooCommerce. Update them immediately to "
+"avoid potential disruptions."
+msgstr[0] "A következő bővítmény elavult verzióját használod: %s. Ez komoly kompatibilitási problémákat okozhat a WooCommerce-szel. A lehetséges fennakadások elkerülése érdekében azonnal frissítsd."
+msgstr[1] "A következő bővítmények elavult verzióit használod: %s. Ezek komoly kompatibilitási problémákat okozhatnak a WooCommerce-szel. A lehetséges fennakadások elkerülése érdekében azonnal frissítsd őket."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/NoticeReminder.php:55
+#, php-format
+msgid ""
+"You're using an older version of the following plugin: %s This version "
+"hasn't been tested with the latest WooCommerce versions. Please update it to"
+" the latest version to ensure smooth compatibility."
+msgid_plural ""
+"You're using older versions of the following plugins: %s These versions "
+"haven't been tested with the latest WooCommerce versions. Please update them"
+" to the latest version to ensure smooth compatibility."
+msgstr[0] "A következő bővítmény régebbi verzióját használod: %s. Ezt a verziót nem tesztelték a WooCommerce legújabb verzióival. A zökkenőmentes kompatibilitás érdekében frissítsd a legújabb verzióra."
+msgstr[1] "A következő bővítmények régebbi verzióit használod: %s. Ezeket a verziókat nem tesztelték a WooCommerce legújabb verzióival. A zökkenőmentes kompatibilitás érdekében frissítsd őket a legújabb verzióra."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/ReminderData.php:71
+#, php-format
+msgid ""
+"You're using an outdated version of %1$s plugin, which may cause serious "
+"compatibility issues with WooCommerce. %2$sUpdate immediately%3$s to avoid "
+"potential disruptions."
+msgstr ""
+"A(z) %1$s bővítmény elavult verzióját használod, ami súlyos kompatibilitási "
+"problémákat okozhat a WooCommerce-szel. A lehetséges fennakadások elkerülése"
+" érdekében %2$sfrissítsd azonnal%3$s."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/ReminderData.php:75
+#, php-format
+msgid ""
+"You're using an older version of %1$s plugin that hasn't been tested with "
+"the latest WooCommerce versions. Please %2$supdate to the latest version%3$s"
+" to ensure smooth compatibility."
+msgstr ""
+"A(z) %1$s bővítmény régebbi verzióját használod, amelyet nem teszteltek a "
+"WooCommerce legújabb verzióival. A zökkenőmentes kompatibilitás érdekében "
+"%2$sfrissíts a legújabb verzióra%3$s."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/SiteHealthReminder.php:31
+msgid "You should update plugin"
+msgstr "A bővítmény frissítése ajánlott"
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/SiteHealthReminder.php:31
+msgid "Compatibility"
+msgstr "Kompatibilitás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginExternalBlocking.php:32
+#, php-format
+msgid ""
+"<b>Warning!</b> You're blocking external requests which means you won't be "
+"able to get %1$s updates. Please add %2$s to %3$s."
+msgstr ""
+"<b>figyelem!</b> Külső kéréseket tiltasz le, ezért nem fogsz tudni "
+"%1$s-frissítéseket kapni. Add hozzá a %2$s értéket a %3$s-hoz."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:83
+#, php-format
+msgid ""
+"Error while connecting to remote server %s. Please contact your hosting "
+"provider or try again later. Errors:  "
+msgstr ""
+"Hiba történt a(z) %s távoli szerverhez való csatlakozáskor. Lépj kapcsolatba"
+" a tárhelyszolgáltatóddal, vagy próbáld újra később. Hibák:  "
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:172
+msgid "License server is currently unavailable. Please, try again later."
+msgstr "A licencszerver jelenleg nem érhető el. Próbáld újra később."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:174
+#, php-format
+msgid ""
+"Error while connecting to remote server %1$s. Please contact with your "
+"hosting provider. Cannot parse response. Response code: %2$s Message: %3$s"
+msgstr ""
+"Hiba történt a távoli %1$s szerverhez való csatlakozáskor. Vedd fel a "
+"kapcsolatot a tárhelyszolgáltatóddal. Nem sikerült értelmezni a választ. "
+"Válaszkód: %2$s üzenet: %3$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:177
+#, php-format
+msgid ""
+"Error while connecting to remote server %1$s. Please contact with your "
+"hosting provider. Cannot parse response: %2$s"
+msgstr ""
+"Hiba történt a(z) %1$s távoli szerverhez való csatlakozáskor. Lépj "
+"kapcsolatba a tárhelyszolgáltatóddal. A válasz nem dolgozható fel: %2$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/templates/impossible-to-upgrade.php:12
+#, php-format
+msgid ""
+"This version of %1$s plugin cannot be automatically upgraded. Download the "
+"plugin from %2$syour account%3$s to receive automatic updates in future."
+msgstr ""
+"A(z) %1$s bővítmény ezen verziója nem frissíthető automatikusan. A jövőbeli "
+"automatikus frissítésekhez töltsd le a bővítményt a %2$sfiókodból%3$s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/class-wpdesk-tracker.php:194
+msgid "Submit &amp; Deactivate"
+msgstr "Küldés és kikapcsolás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/OptOut.php:41
+#, php-format
+msgid ""
+"You successfully opted out of collecting usage data by %1$s. If you change "
+"your mind, you can always opt in later in the plugin's quick links."
+msgstr ""
+"Sikeresen leiratkoztál a használati adatok gyűjtéséről ezzel: %1$s. Ha "
+"meggondolod magad, később bármikor feliratkozhatsz a bővítmény "
+"gyorshivatkozásain keresztül."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/PluginActionLinks.php:69
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:43
+msgid "Enable usage tracking"
+msgstr "Használatkövetés bekapcsolása"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/PluginActionLinks.php:74
+msgid "Disable usage tracking"
+msgstr "Használatkövetés kikapcsolása"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:23
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:19
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:21
+#, php-format
+msgid "Hey %s,"
+msgstr "Szia %s,"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:26
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:22
+msgid ""
+"Please help us improve our plugins! If you opt-in, we will collect some non-"
+"sensitive data and usage information anonymously. If you skip this, that's "
+"okay! All plugins will work just fine."
+msgstr ""
+"Segíts nekünk jobbá tenni a bővítményeinket! Ha engedélyezed az "
+"adatgyűjtést, névtelenül gyűjtünk néhány nem érzékeny adatot és használati "
+"információt. Ha kihagyod ezt, az is rendben van! Minden bővítményünk így is "
+"megfelelően működik."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:35
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:31
+msgid "Allow & Continue &rarr;"
+msgstr "Engedélyezés és folytatás &rarr;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:40
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:36
+msgid "Skip"
+msgstr "Kihagyás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:47
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:43
+msgid "What permissions are being granted?"
+msgstr "Milyen engedélyeket adsz meg?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:56
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:52
+msgid "Your Site Overview"
+msgstr "A webhelyed áttekintése"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:59
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:55
+msgid "WP version, PHP info"
+msgstr "WP-verzió, PHP-adatok"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:67
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:63
+msgid "Plugin Usage"
+msgstr "Bővítményhasználat"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:70
+#, php-format
+msgid "Current settings and usage information of %1$s plugins"
+msgstr "A(z) %1$s bővítményeinek aktuális beállításai és használati adatai"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:78
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:74
+msgid "Your Store Overview"
+msgstr "Az áruházad áttekintése"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:81
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:77
+msgid "Anonymized and non-sensitive store usage information"
+msgstr "Anonimizált, nem érzékeny áruházi használati adatok"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:91
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:87
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:29
+msgid "Find out more &raquo;"
+msgstr "Tudj meg többet &raquo;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:66
+msgid "Current settings and usage information of WP Desk plugins"
+msgstr "A WP Desk bővítményeinek aktuális beállításai és használati adatai"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:12
+#, php-format
+msgid "You are deactivating %s plugin."
+msgstr "Kikapcsolod a(z) %s bővítményt."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:20
+msgid ""
+" If you have a moment, please let us know why you are deactivating plugin "
+"(anonymous feedback):"
+msgstr ""
+"Ha van egy perced, mondd el, miért kapcsolod ki a bővítményt (névtelen "
+"visszajelzés):"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:29
+msgid "The plugin suddenly stopped working"
+msgstr "A bővítmény váratlanul leállt"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:39
+msgid "The plugin broke my site"
+msgstr "A bővítmény tönkretette a webhelyemet"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:49
+msgid "I found a better plugin"
+msgstr "Találtam egy jobb bővítményt"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:54
+msgid "What's the plugin's name?"
+msgstr "Mi a bővítmény neve?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:64
+msgid "I only needed the plugin for a short period"
+msgstr "Csak rövid ideig volt szükségem a bővítményre"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:74
+msgid "I no longer need the plugin"
+msgstr "Többé nincs szükségem erre a bővítményre"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:84
+msgid "It's a temporary deactivation. I'm just debugging an issue."
+msgstr "Ez csak ideiglenes kikapcsolás. Épp egy probléma elhárításán dolgozom."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:94
+msgid "Other"
+msgstr "Egyéb"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:99
+msgid "Kindly tell us the reason so we can improve"
+msgstr "Mondd el az okát, hogy továbbfejleszthessük"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:108
+msgid "Cancel"
+msgstr "Mégse"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:111
+msgid "Skip &amp; Deactivate"
+msgstr "Kihagyás és kikapcsolás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:24
+msgid ""
+"We need your help to improve <strong>WP Desk plugins</strong>, so they are "
+"more useful for you and the rest of <strong>30,000+ users</strong>. By "
+"collecting data on how you use our plugins, you will help us a lot. We will "
+"not collect any sensitive data, so you can feel safe."
+msgstr ""
+"Segíts nekünk továbbfejleszteni a <strong>WP Desk bővítményeket</strong>, "
+"hogy hasznosabbak legyenek neked és a többi <strong>30 000+ "
+"felhasználónak</strong>. Ha adatokat gyűjtünk arról, hogyan használod a "
+"bővítményeinket, azzal sokat segítesz nekünk. Nem gyűjtünk érzékeny "
+"adatokat, ezért nyugodt lehetsz."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-opt-out-notice.php:11
+msgid ""
+"You successfully opted out of collecting usage data by WP Desk. If you "
+"change your mind, you can always opt in later in the plugin's quick links."
+msgstr ""
+"Sikeresen letiltottad a WP Desk használati adatainak gyűjtését. Ha "
+"meggondolod magad, később bármikor engedélyezheted a bővítmény "
+"gyorshivatkozásainál."

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: WP Grid Builder - Caching 1.2.1\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T19:14:05+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:09+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -55,7 +55,7 @@ msgstr "Gridbuilder ᵂᴾ"
 
 #: includes/class-menu.php:91
 msgid "Clear cache (all)"
-msgstr "Gyorsítótár törlése (összes)"
+msgstr "Teljes gyorsítótár kiürítése"
 
 #: includes/class-menu.php:111
 msgid "Clear cache (this page)"
@@ -67,7 +67,7 @@ msgstr "Nincs elegendő jogosultsága a művelet befejezéséhez."
 
 #: includes/class-rest.php:104
 msgid "Cache cleared."
-msgstr "Gyorsítótár törölve."
+msgstr "Gyorsítótár kiürítve."
 
 #: includes/class-settings.php:137 includes/class-settings.php:158
 #: includes/class-settings.php:159
@@ -83,12 +83,12 @@ msgstr "Kezelje a rácsok és a facetták gyorsítótárazását."
 #, php-format
 msgid "Cache table: &#126;%1$d row (&#126;%2$.2fMB)"
 msgid_plural "Cache table: &#126;%1$d rows (&#126;%2$.2fMB)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Gyorsítótár-tábla: &#126;%1$d sor (&#126;%2$.2f MB)"
+msgstr[1] "Gyorsítótár-tábla: &#126;%1$d sor (&#126;%2$.2f MB)"
 
 #: includes/class-settings.php:274
 msgid "Cache cleared!"
-msgstr "Gyorsítótár törölve!"
+msgstr "A gyorsítótár kiürítve!"
 
 #: includes/controls.php:19 includes/fields.php:76
 msgid "Caching Rules"
@@ -96,7 +96,7 @@ msgstr "Gyorsítótárazási szabályok"
 
 #: includes/controls.php:20
 msgid "Include and exclude content from cache."
-msgstr "Tartalmak bevonása és kizárása a gyorsítótárból."
+msgstr "Tartalmak bevonása a gyorsítótárba és kizárása onnan."
 
 #: includes/controls.php:24 includes/fields.php:81
 msgid "Exclude Grids"
@@ -154,7 +154,7 @@ msgstr "A gyorsítótár automatikus ürítése tartalom frissítésekor."
 
 #: includes/controls.php:84 includes/fields.php:66
 msgid "Admin Bar"
-msgstr "Admin sáv"
+msgstr "Admin eszköztár"
 
 #: includes/controls.php:85
 msgid "Display a quick-action menu in the admin bar."
@@ -165,10 +165,7 @@ msgid ""
 "<strong>If you change cache lifespan</strong>, please clear the cache to "
 "prevent any issue. Otherwise, several cache versions from different "
 "lifespans can be mixed."
-msgstr ""
-"<strong>Ha módosítja a gyorsítótár élettartamát</strong>, a problémák "
-"elkerülése érdekében törölje a gyorsítótárat. Ellenkező esetben különböző "
-"élettartamú gyorsítótár-verziók keveredhetnek."
+msgstr "<strong>Ha módosítja a gyorsítótár élettartamát</strong>, a problémák elkerülése érdekében törölje a gyorsítótárat. Ellenkező esetben különböző élettartamú gyorsítótár-verziók keveredhetnek."
 
 #: includes/fields.php:61
 msgid "Cache Menu"
@@ -176,8 +173,7 @@ msgstr "Gyorsítótár menü"
 
 #: includes/fields.php:67
 msgid "Display a menu of quick actions in the admin bar to clear cache."
-msgstr ""
-"Gyorsműveleti menü megjelenítése az admin sávban a gyorsítótár törléséhez."
+msgstr "Gyorsműveleti menü megjelenítése az admin sávban a gyorsítótár törléséhez."
 
 #: includes/fields.php:107
 msgid "Cache Behaviour"
@@ -187,17 +183,13 @@ msgstr "Gyorsítótár működése"
 msgid ""
 "Purge cache automatically when updating your posts, taxonomy terms, users "
 "and any related data."
-msgstr ""
-"A gyorsítótár automatikus ürítése a bejegyzések, taxonómiák kifejezései, "
-"felhasználók és minden kapcsolódó adat frissítésekor."
+msgstr "A gyorsítótár automatikus ürítése a bejegyzések, az osztályozási kifejezések, a felhasználók és minden kapcsolódó adat frissítésekor."
 
 #: includes/fields.php:120
 msgid ""
 "The whole cache will be automatically cleared according to the time period "
 "you specified."
-msgstr ""
-"A teljes gyorsítótár automatikusan törlésre kerül az Ön által megadott "
-"időközönként."
+msgstr "A teljes gyorsítótár automatikusan kiürül az Ön által megadott időközönként."
 
 #: includes/fields.php:146
 msgid "Cache Content"
@@ -224,10 +216,7 @@ msgid ""
 "<strong>If you change cache lifespan</strong>, please clear the cache to "
 "prevent any issue.<br>Otherwise, several cache versions from different "
 "lifespans can be mixed."
-msgstr ""
-"<strong>Ha módosítja a gyorsítótár élettartamát</strong>, a problémák "
-"elkerülése érdekében törölje a gyorsítótárat.<br>Ellenkező esetben különböző"
-" élettartamú gyorsítótár-verziók keveredhetnek."
+msgstr "<strong>Ha módosítja a gyorsítótár élettartamát</strong>, a problémák elkerülése érdekében ürítse ki a gyorsítótárat.<br>Ellenkező esetben különböző élettartamú gyorsítótár-verziók keveredhetnek."
 
 #: assets/js/admin.js:10
 msgid "Clearing..."
@@ -237,5 +226,5 @@ msgstr "Törlés..."
 #, js-format
 msgid "Clear Cache (%d row)"
 msgid_plural "Clear Cache (%d rows)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Gyorsítótár kiürítése (%d sor)"
+msgstr[1] "Gyorsítótár kiürítése (%d sor)"

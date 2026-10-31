@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: JetReviews For Elementor 3.0.0.1\n"
+"Project-Id-Version: JetReviews For Elementor 3.1.3\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:48:54+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: JetReviews For Elementor\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 3.0.0.1\n"
+"X-Plugin-Version: 3.1.3\n"
 
 #. Plugin Name of the plugin
 #: jet-reviews.php
@@ -50,22 +50,23 @@ msgstr "https://crocoblock.com/"
 #: includes/compatibility/plugins/jet-engine/listings/manager.php:161
 #: includes/compatibility/plugins/jet-engine/listings/manager.php:319
 #: includes/components/blocks/manager.php:51
+#: includes/components/bricks/manager.php:66
 #: includes/components/elementor/dynamic-tags/module.php:24
 #: includes/components/elementor/manager.php:111
 #: includes/components/settings/manager.php:133 includes/meta.php:58
-#: templates/admin/pages/dashboard/main.php:7
+#: templates/admin/pages/dashboard/main.php:9
 msgid "JetReviews"
 msgstr "JetReviews"
 
-#: includes/admin.php:186 includes/tools.php:79 includes/tools.php:135
+#: includes/admin.php:189 includes/tools.php:80 includes/tools.php:136
 msgid "All"
 msgstr "Összes"
 
-#: includes/admin.php:196
+#: includes/admin.php:199
 msgid "Approved"
 msgstr "Jóváhagyva"
 
-#: includes/admin.php:207
+#: includes/admin.php:210
 msgid "Not Approved"
 msgstr "Nincs jóváhagyva"
 
@@ -91,35 +92,39 @@ msgstr "Siker. A vélemény eltávolítva"
 
 #: includes/ajax-handlers.php:49
 msgid "Demo Mode is active. Only logged users can leave review."
-msgstr ""
-"A demó mód aktív. Csak a bejelentkezett felhasználók hagyhatnak véleményt."
+msgstr "A demó mód aktív. Csak a bejelentkezett felhasználók írhatnak véleményt."
 
-#: includes/assets.php:188
+#: includes/assets.php:189
+#: includes/components/bricks/elements/reviews-listing.php:542
 #: includes/components/elementor/widgets/jet-reviews-advanced.php:466
-#: includes/components/reviews/render/review-listing-render.php:55
-#: includes/components/reviews/rest-api/submit-review.php:285
+#: includes/components/reviews/render/review-listing-render.php:56
+#: includes/components/reviews/rest-api/submit-review.php:322
 #: includes/components/user/conditions/already-reviewed.php:27
 msgid "*Already reviewed"
 msgstr "*Már írt véleményt"
 
-#: includes/assets.php:189
+#: includes/assets.php:190
+#: includes/components/bricks/elements/reviews-listing.php:548
 #: includes/components/elementor/widgets/jet-reviews-advanced.php:477
-#: includes/components/reviews/render/review-listing-render.php:56
-#: includes/components/reviews/rest-api/submit-review.php:239
+#: includes/components/reviews/render/review-listing-render.php:57
+#: includes/components/reviews/rest-api/submit-review.php:275
 #: includes/components/user/conditions/moderator-check.php:27
 msgid "*Your review must be approved by the moderator"
 msgstr "*Az Ön véleményét a moderátornak jóvá kell hagynia"
 
-#: includes/assets.php:190
+#: includes/assets.php:191
+#: includes/components/bricks/elements/reviews-listing.php:554
 #: includes/components/elementor/widgets/jet-reviews-advanced.php:497
-#: includes/components/reviews/render/review-listing-render.php:57
+#: includes/components/reviews/render/review-listing-render.php:58
 msgid "*This field is required or not valid"
 msgstr "*Ez a mező kötelező vagy nem érvényes"
 
-#: includes/assets.php:191
-#: includes/components/reviews/render/review-listing-render.php:58
+#: includes/assets.php:192
+#: includes/components/bricks/elements/reviews-listing.php:560
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:508
+#: includes/components/reviews/render/review-listing-render.php:59
 msgid "*Captcha validation failed"
-msgstr "*A Captcha ellenőrzés nem sikerült"
+msgstr "*A CAPTCHA-ellenőrzés sikertelen"
 
 #: includes/compatibility/plugins/jet-engine/dynamic-tags/review-author-avatar.php:17
 msgid "Review Author Avatar"
@@ -127,15 +132,16 @@ msgstr "Vélemény szerzőjének avatárja"
 
 #: includes/compatibility/plugins/jet-engine/dynamic-tags/review-average-rating.php:15
 #: includes/compatibility/plugins/jet-engine/dynamic-tags/review-data-rating.php:15
+#: includes/components/bricks/dynamic-tags/review-average-rating.php:26
 msgid "Review Average Rating"
-msgstr "Átlagos értékelés"
+msgstr "Vélemények átlagos értékelése"
 
 #: includes/compatibility/plugins/jet-engine/dynamic-tags/review-average-rating.php:34
 #: includes/compatibility/plugins/jet-engine/dynamic-tags/review-data-rating.php:34
 #: includes/compatibility/plugins/jet-engine/dynamic-tags/review-property.php:36
 #: includes/components/elementor/dynamic-tags/average-rating.php:44
 #: includes/components/elementor/dynamic-tags/reviews-info.php:33
-#: templates/admin/pages/reviews/type-page.php:339
+#: templates/admin/pages/reviews/type-page.php:419
 msgid "Type"
 msgstr "Típus"
 
@@ -152,8 +158,9 @@ msgid "Ratio"
 msgstr "Arány"
 
 #: includes/compatibility/plugins/jet-engine/dynamic-tags/review-property.php:15
+#: includes/components/bricks/dynamic-tags/review-property.php:26
 msgid "Review Property"
-msgstr "Vélemény tulajdonság"
+msgstr "Vélemény tulajdonsága"
 
 #: includes/compatibility/plugins/jet-engine/dynamic-tags/review-property.php:40
 #: includes/compatibility/plugins/jet-engine/listings/manager.php:163
@@ -172,50 +179,55 @@ msgstr "Értékelt objektum típusa"
 
 #: includes/compatibility/plugins/jet-engine/dynamic-tags/review-property.php:43
 #: includes/compatibility/plugins/jet-engine/listings/manager.php:166
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1541
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1847
-#: includes/components/elementor/widgets/jet-reviews.php:1399
-#: includes/tools.php:342 templates/admin/pages/comments/list-page.php:94
-#: templates/admin/pages/reviews/list-page.php:110
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1660
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1986
+#: includes/components/elementor/widgets/jet-reviews.php:1403
+#: includes/tools.php:420 templates/admin/pages/comments/list-page.php:96
+#: templates/admin/pages/reviews/list-page.php:112
 msgid "Author"
 msgstr "Szerző"
 
 #: includes/compatibility/plugins/jet-engine/dynamic-tags/review-property.php:44
 #: includes/compatibility/plugins/jet-engine/listings/manager.php:168
-#: includes/components/elementor/widgets/jet-reviews.php:1612
-#: includes/tools.php:345 templates/admin/pages/comments/list-page.php:97
-#: templates/admin/pages/reviews/list-page.php:114
+#: includes/components/elementor/widgets/jet-reviews.php:1616
+#: includes/tools.php:423 templates/admin/pages/comments/list-page.php:99
+#: templates/admin/pages/reviews/list-page.php:116
 msgid "Date"
 msgstr "Dátum"
 
 #: includes/compatibility/plugins/jet-engine/dynamic-tags/review-property.php:45
 #: includes/compatibility/plugins/jet-engine/listings/manager.php:169
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1629
-#: includes/components/elementor/widgets/jet-reviews.php:312
-#: includes/components/elementor/widgets/jet-reviews.php:710
-#: includes/components/elementor/widgets/jet-reviews.php:1094
-#: includes/meta.php:68 includes/tools.php:343
-#: templates/admin/pages/reviews/list-page.php:236
-#: templates/jet-reviews/global/form.php:44
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1748
+#: includes/components/elementor/widgets/jet-reviews.php:316
+#: includes/components/elementor/widgets/jet-reviews.php:714
+#: includes/components/elementor/widgets/jet-reviews.php:1098
+#: includes/meta.php:68 includes/tools.php:421
+#: templates/admin/pages/reviews/list-page.php:243
+#: templates/jet-reviews/global/form.php:48
 msgid "Title"
 msgstr "Cím"
 
 #: includes/compatibility/plugins/jet-engine/dynamic-tags/review-property.php:46
 #: includes/compatibility/plugins/jet-engine/listings/manager.php:170
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1681
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1935
-#: includes/components/elementor/widgets/jet-reviews.php:81
-#: templates/admin/pages/reviews/list-page.php:111
-#: templates/admin/pages/reviews/list-page.php:247
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1800
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2074
+#: includes/components/elementor/widgets/jet-reviews.php:85
+#: templates/admin/pages/reviews/list-page.php:113
+#: templates/admin/pages/reviews/list-page.php:254
 msgid "Content"
 msgstr "Tartalom"
 
 #: includes/compatibility/plugins/jet-engine/dynamic-tags/review-property.php:49
 #: includes/compatibility/plugins/jet-engine/listings/manager.php:173
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:674
-#: templates/admin/pages/dashboard/main.php:47
-#: templates/admin/pages/dashboard/main.php:83
-#: templates/admin/pages/reviews/list-page.php:112
+#: includes/components/bricks/elements/reviews-listing.php:590
+#: includes/components/bricks/elements/reviews-listing.php:591
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:558
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:725
+#: includes/components/reviews/render/review-listing-render.php:45
+#: includes/db/manager.php:432 includes/tools.php:1355
+#: templates/admin/pages/dashboard/main.php:49
+#: templates/admin/pages/dashboard/main.php:85
+#: templates/admin/pages/reviews/list-page.php:114
 msgid "Rating"
 msgstr "Értékelés"
 
@@ -227,56 +239,57 @@ msgstr "Kedvelések"
 #: includes/compatibility/plugins/jet-engine/dynamic-tags/review-property.php:51
 #: includes/compatibility/plugins/jet-engine/listings/manager.php:175
 msgid "Dislikes"
-msgstr "Nem tetszések"
+msgstr "Negatív értékelések"
 
 #: includes/compatibility/plugins/jet-engine/listings/manager.php:167
 msgid "Author Name"
 msgstr "Szerző neve"
 
-#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:8
+#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:9
 msgid "Jet Reviews Query"
 msgstr "Jet Reviews lekérdezés"
 
-#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:12
+#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:13
+#: includes/components/bricks/elements/reviews-listing.php:180
 #: includes/components/elementor/dynamic-tags/average-rating.php:34
 #: includes/components/elementor/widgets/jet-reviews-advanced.php:72
-#: templates/admin/pages/reviews/list-page.php:113
-#: templates/admin/pages/reviews/type-page.php:40
-#: templates/admin/pages/reviews/types-page.php:28
-#: templates/admin/vue-templates/export-reviews-form.php:11
+#: templates/admin/pages/reviews/list-page.php:115
+#: templates/admin/pages/reviews/type-page.php:43
+#: templates/admin/pages/reviews/types-page.php:30
+#: templates/admin/vue-templates/export-reviews-form.php:13
 msgid "Source"
 msgstr "Forrás"
 
-#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:13
+#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:14
 msgid "Select review source"
 msgstr "Válassza ki a vélemény forrását"
 
-#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:20
-#: templates/admin/pages/reviews/type-page.php:50
-#: templates/admin/pages/reviews/types-page.php:29
-#: templates/admin/vue-templates/export-reviews-form.php:20
+#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:21
+#: templates/admin/pages/reviews/type-page.php:53
+#: templates/admin/pages/reviews/types-page.php:31
+#: templates/admin/vue-templates/export-reviews-form.php:22
 msgid "Source Type"
 msgstr "Forrástípus"
 
-#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:21
+#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:22
 msgid "Select review source type"
 msgstr "Válassza ki a vélemény forrásának típusát"
 
-#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:28
-msgid "Source ID"
-msgstr "Forrásazonosító"
-
 #: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:29
+msgid "Source ID"
+msgstr "Forrás-ID"
+
+#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:30
 msgid "Get reviews by source ID. Leave empty to detect automatically"
 msgstr ""
 "Vélemények lekérése forrásazonosító alapján. Hagyja üresen az automatikus "
 "felismeréshez"
 
-#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:36
-msgid "Number"
-msgstr "Darabszám"
-
 #: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:37
+msgid "Number"
+msgstr "Szám"
+
+#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:38
 msgid ""
 "Number of items to show in the listing grid or per page if JetSmartFilters "
 "pagination is used. Query Count dynamic tag will show total number of items "
@@ -286,11 +299,11 @@ msgstr ""
 "JetSmartFilters lapozás van használatban. A Query Count dinamikus címke a "
 "jelenlegi lekérdezésnek megfelelő elemek teljes számát mutatja"
 
-#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:44
+#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:45
 msgid "Offset"
 msgstr "Eltolás"
 
-#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:45
+#: includes/compatibility/plugins/jet-engine/templates/admin/query-editor.php:46
 msgid ""
 "Number of items to skip. <b>Note:</b> This option doesn`t work without "
 "<b>Number</b>. If you need unlimited query results with offset, please set "
@@ -308,19 +321,17 @@ msgstr "WooCommerce"
 msgid "Select products"
 msgstr "Válasszon termékeket"
 
-#: includes/compatibility/plugins/woocommerce/templates/admin-templates/woocommerce.php:6
+#: includes/compatibility/plugins/woocommerce/templates/admin-templates/woocommerce.php:7
 msgid "Import products reviews"
 msgstr "Termékek véleményeinek importálása"
 
-#: includes/compatibility/plugins/woocommerce/templates/admin-templates/woocommerce.php:7
+#: includes/compatibility/plugins/woocommerce/templates/admin-templates/woocommerce.php:8
 msgid "Import product native reviews and comments to create JetReviews items"
-msgstr ""
-"A termék natív véleményeinek és hozzászólásainak importálása JetReviews "
-"elemek létrehozásához"
+msgstr "A termék natív véleményeinek és hozzászólásainak importálása JetReviews-tételek létrehozásához"
 
-#: includes/compatibility/plugins/woocommerce/templates/admin-templates/woocommerce.php:28
-#: templates/admin/pages/reviews/list-page.php:23
-#: templates/admin/vue-templates/import-reviews-form.php:86
+#: includes/compatibility/plugins/woocommerce/templates/admin-templates/woocommerce.php:31
+#: templates/admin/pages/reviews/list-page.php:25
+#: templates/admin/vue-templates/import-reviews-form.php:88
 msgid "Import"
 msgstr "Importálás"
 
@@ -340,29 +351,551 @@ msgstr "Boltvezető"
 msgid "Shop owner"
 msgstr "Bolttulajdonos"
 
+#: includes/components/bricks/dynamic-tags/average-rating.php:26
+#: includes/components/elementor/dynamic-tags/average-rating.php:15
+msgid "Average Rating"
+msgstr "Átlagos értékelés"
+
+#: includes/components/bricks/dynamic-tags/average-rating.php:53
+#: includes/components/elementor/dynamic-tags/average-rating.php:90
+#: includes/components/reviews/render/review-listing-render.php:123
+msgid "Any Sources not found"
+msgstr "Nem található egyetlen forrás sem"
+
+#: includes/components/bricks/dynamic-tags/reviews-info.php:26
+#: includes/components/elementor/dynamic-tags/reviews-info.php:15
+msgid "Reviews Info"
+msgstr "Vélemények információi"
+
+#: includes/components/bricks/dynamic-tags/reviews-info.php:56
+#: includes/components/elementor/dynamic-tags/reviews-info.php:110
+msgid "1 Review"
+msgid_plural "%s Reviews"
+msgstr[0] "1 vélemény"
+msgstr[1] "%s vélemény"
+
+#: includes/components/bricks/elements/reviews-listing.php:29
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:29
+msgid "Reviews Listing"
+msgstr "Vélemények listája"
+
+#: includes/components/bricks/elements/reviews-listing.php:39
+msgid "reviews"
+msgstr "vélemények"
+
+#: includes/components/bricks/elements/reviews-listing.php:40
+msgid "rating"
+msgstr "értékelés"
+
+#: includes/components/bricks/elements/reviews-listing.php:41
+msgid "comments"
+msgstr "hozzászólások"
+
+#: includes/components/bricks/elements/reviews-listing.php:42
+msgid "jetreviews"
+msgstr "jetreviews"
+
+#: includes/components/bricks/elements/reviews-listing.php:53
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:65
+#: includes/components/settings/manager.php:105
+#: includes/components/settings/manager.php:106
+msgid "Settings"
+msgstr "Beállítások"
+
+#: includes/components/bricks/elements/reviews-listing.php:58
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:194
+msgid "Icons"
+msgstr "Ikonok"
+
+#: includes/components/bricks/elements/reviews-listing.php:63
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:414
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1526
+#: includes/components/elementor/widgets/jet-reviews.php:648
+msgid "Header"
+msgstr "Fejléc"
+
+#: includes/components/bricks/elements/reviews-listing.php:68
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:484
+#: includes/components/elementor/widgets/jet-reviews.php:1006
+msgid "Review Form"
+msgstr "Űrlap áttekintése"
+
+#: includes/components/bricks/elements/reviews-listing.php:73
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:615
+msgid "Comment Form"
+msgstr "Hozzászólási űrlap"
+
+#: includes/components/bricks/elements/reviews-listing.php:78
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:684
+msgid "Reply Form"
+msgstr "Válaszűrlap"
+
+#: includes/components/bricks/elements/reviews-listing.php:159
+msgid "JetReviews renderer is not available."
+msgstr "A JetReviews megjelenítője nem érhető el."
+
+#: includes/components/bricks/elements/reviews-listing.php:185
+#: includes/components/bricks/elements/reviews-listing.php:446
+#: includes/components/reviews/sources/post.php:24
+msgid "Post"
+msgstr "Bejegyzés"
+
+#: includes/components/bricks/elements/reviews-listing.php:192
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:82
+msgid "Rating Layout"
+msgstr "Értékelés elrendezése"
+
+#: includes/components/bricks/elements/reviews-listing.php:195
+#: includes/components/bricks/elements/reviews-listing.php:210
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:86
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:100
+#: includes/components/elementor/widgets/jet-reviews.php:331
+#: includes/components/elementor/widgets/jet-reviews.php:387
+#: includes/components/elementor/widgets/jet-reviews.php:530
+msgid "Stars"
+msgstr "Csillagok"
+
+#: includes/components/bricks/elements/reviews-listing.php:196
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:87
+#: includes/components/elementor/widgets/jet-reviews.php:333
+#: includes/components/elementor/widgets/jet-reviews.php:389
+#: includes/components/elementor/widgets/jet-reviews.php:532
+msgid "Points"
+msgstr "Pontok"
+
+#: includes/components/bricks/elements/reviews-listing.php:206
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:95
+msgid "Rating Input Type"
+msgstr "Értékelésbevitel típusa"
+
+#: includes/components/bricks/elements/reviews-listing.php:209
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:99
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1494
+#: includes/components/elementor/widgets/jet-reviews.php:1170
+msgid "Slider"
+msgstr "Csúszka"
+
+#: includes/components/bricks/elements/reviews-listing.php:220
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:108
+msgid "Review Rating Type"
+msgstr "Vélemény értékelésének típusa"
+
+#: includes/components/bricks/elements/reviews-listing.php:223
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:112
+msgid "Average"
+msgstr "Átlag"
+
+#: includes/components/bricks/elements/reviews-listing.php:224
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:113
+#: templates/admin/pages/dashboard/main.php:94
+msgid "Details"
+msgstr "Részletek"
+
+#: includes/components/bricks/elements/reviews-listing.php:234
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:121
+msgid "Reviews Per Page"
+msgstr "Vélemények száma oldalanként"
+
+#: includes/components/bricks/elements/reviews-listing.php:242
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:132
+msgid "Show Review Author Avatar"
+msgstr "A vélemény szerzője avatarjának megjelenítése"
+
+#: includes/components/bricks/elements/reviews-listing.php:243
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:144
+msgid "Show Review Title"
+msgstr "Vélemény címének megjelenítése"
+
+#: includes/components/bricks/elements/reviews-listing.php:244
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:156
+msgid "Show Review Title Field"
+msgstr "Vélemény címmezőjének megjelenítése"
+
+#: includes/components/bricks/elements/reviews-listing.php:245
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:168
+msgid "Show Review Content Field"
+msgstr "Vélemény tartalommezőjének megjelenítése"
+
+#: includes/components/bricks/elements/reviews-listing.php:246
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:180
+msgid "Show Comment Author Avatar"
+msgstr "A hozzászólás szerzője avatarjának megjelenítése"
+
+#: includes/components/bricks/elements/reviews-listing.php:461
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:201
+msgid "Empty Star Icon"
+msgstr "Üres csillag ikon"
+
+#: includes/components/bricks/elements/reviews-listing.php:465
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:219
+msgid "Filled Star Icon"
+msgstr "Kitöltött csillag ikon"
+
+#: includes/components/bricks/elements/reviews-listing.php:469
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:237
+msgid "New Review Button Icon"
+msgstr "Új vélemény gombjának ikonja"
+
+#: includes/components/bricks/elements/reviews-listing.php:473
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:252
+msgid "Show Comments Button Icon"
+msgstr "Hozzászólásokat mutató gomb ikonja"
+
+#: includes/components/bricks/elements/reviews-listing.php:477
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:267
+msgid "New Comment Button Icon"
+msgstr "Új hozzászólás gombjának ikonja"
+
+#: includes/components/bricks/elements/reviews-listing.php:481
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:300
+msgid "Empty Like Icon"
+msgstr "Üres tetszik ikon"
+
+#: includes/components/bricks/elements/reviews-listing.php:485
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:315
+msgid "Filled Like Icon"
+msgstr "Kitöltött tetszik ikon"
+
+#: includes/components/bricks/elements/reviews-listing.php:489
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:330
+msgid "Empty Dislike Icon"
+msgstr "Üres nem tetszik ikon"
+
+#: includes/components/bricks/elements/reviews-listing.php:493
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:345
+msgid "Filled Dislike Icon"
+msgstr "Kitöltött nem tetszik ikon"
+
+#: includes/components/bricks/elements/reviews-listing.php:497
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:360
+msgid "Reply Button Icon"
+msgstr "Válaszgomb ikonja"
+
+#: includes/components/bricks/elements/reviews-listing.php:501
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:375
+msgid "Prev Icon"
+msgstr "Előző ikon"
+
+#: includes/components/bricks/elements/reviews-listing.php:505
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:390
+msgid "Next Icon"
+msgstr "Következő ikon"
+
+#: includes/components/bricks/elements/reviews-listing.php:520
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:422
+msgid "No Reviews Message"
+msgstr "Vélemények hiányakor megjelenő üzenet"
+
+#: includes/components/bricks/elements/reviews-listing.php:521
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:425
+#: includes/components/reviews/render/review-listing-render.php:36
+#: templates/admin/pages/comments/list-page.php:78
+#: templates/admin/pages/reviews/list-page.php:94
+msgid "No reviews found"
+msgstr "Nem található vélemény"
+
+#: includes/components/bricks/elements/reviews-listing.php:525
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:432
+msgid "Singular Review Count Label"
+msgstr "Egy véleményhez tartozó címke"
+
+#: includes/components/bricks/elements/reviews-listing.php:526
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:435
+#: includes/components/elementor/widgets/jet-reviews.php:574
+#: includes/components/reviews/render/review-listing-render.php:37
+msgid "Review"
+msgstr "Értékelés"
+
+#: includes/components/bricks/elements/reviews-listing.php:530
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:442
+msgid "Plural Review Count Label"
+msgstr "Több véleményhez tartozó címke"
+
+#: includes/components/bricks/elements/reviews-listing.php:531
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:445
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1651
+#: includes/components/reviews/render/review-listing-render.php:38
+#: templates/admin/pages/dashboard/main.php:16
+#: templates/admin/pages/dashboard/main.php:45
+#: templates/admin/pages/dashboard/main.php:78
+msgid "Reviews"
+msgstr "Értékelések"
+
+#: includes/components/bricks/elements/reviews-listing.php:535
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:452
+msgid "New Review Button"
+msgstr "Új vélemény gomb"
+
+#: includes/components/bricks/elements/reviews-listing.php:536
+#: includes/components/bricks/elements/reviews-listing.php:537
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:455
+#: includes/components/reviews/render/review-listing-render.php:40
+msgid "Write a review"
+msgstr "Értékelés írása"
+
+#: includes/components/bricks/elements/reviews-listing.php:541
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:462
+msgid "Already Reviewed Message"
+msgstr "Üzenet azoknak, akik már írtak véleményt"
+
+#: includes/components/bricks/elements/reviews-listing.php:547
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:473
+msgid "Moderator Check Message"
+msgstr "Moderátori ellenőrzésről szóló üzenet"
+
+#: includes/components/bricks/elements/reviews-listing.php:553
+msgid "Not Valid Message"
+msgstr "Érvénytelen érték esetén megjelenő üzenet"
+
+#: includes/components/bricks/elements/reviews-listing.php:559
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:504
+msgid "Captcha Validation Failed Message"
+msgstr "Sikertelen CAPTCHA-ellenőrzés esetén megjelenő üzenet"
+
+#: includes/components/bricks/elements/reviews-listing.php:565
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:515
+msgid "Author Name Placeholder"
+msgstr "A szerző nevének helytartója"
+
+#: includes/components/bricks/elements/reviews-listing.php:566
+#: includes/components/bricks/elements/reviews-listing.php:567
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:518
+#: includes/components/reviews/render/review-listing-render.php:41
+msgid "Your Name"
+msgstr "Az Ön neve"
+
+#: includes/components/bricks/elements/reviews-listing.php:571
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:525
+msgid "Author Mail Placeholder"
+msgstr "A szerző e-mail-címének helytartója"
+
+#: includes/components/bricks/elements/reviews-listing.php:572
+#: includes/components/bricks/elements/reviews-listing.php:573
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:528
+#: includes/components/reviews/render/review-listing-render.php:42
+msgid "Your Mail"
+msgstr "Az Ön e-mail-címe"
+
+#: includes/components/bricks/elements/reviews-listing.php:577
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:535
+msgid "Review Content Placeholder"
+msgstr "A vélemény tartalmának helytartója"
+
+#: includes/components/bricks/elements/reviews-listing.php:578
+#: includes/components/bricks/elements/reviews-listing.php:579
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:538
+#: includes/components/reviews/render/review-listing-render.php:43
+msgid "Your review"
+msgstr "Az Ön értékelése"
+
+#: includes/components/bricks/elements/reviews-listing.php:583
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:545
+msgid "Review Title Placeholder"
+msgstr "A vélemény címének helytartója"
+
+#: includes/components/bricks/elements/reviews-listing.php:584
+#: includes/components/bricks/elements/reviews-listing.php:585
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:548
+#: includes/components/reviews/render/review-listing-render.php:44
+msgid "Title of your review"
+msgstr "Az Ön véleményének címe"
+
+#: includes/components/bricks/elements/reviews-listing.php:589
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:555
+msgid "Rating Label"
+msgstr "Értékelés címkéje"
+
+#: includes/components/bricks/elements/reviews-listing.php:595
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:565
+msgid "Submit Review Button"
+msgstr "Vélemény küldése gomb"
+
+#: includes/components/bricks/elements/reviews-listing.php:596
+#: includes/components/bricks/elements/reviews-listing.php:597
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:568
+#: includes/components/reviews/render/review-listing-render.php:46
+msgid "Submit a review"
+msgstr "Vélemény küldése"
+
+#: includes/components/bricks/elements/reviews-listing.php:601
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:575
+msgid "Cancel Button"
+msgstr "Mégse gomb"
+
+#: includes/components/bricks/elements/reviews-listing.php:602
+#: includes/components/bricks/elements/reviews-listing.php:603
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:578
+#: includes/components/reviews/render/review-listing-render.php:39
+#: templates/admin/pages/reviews/types-page.php:78
+#: templates/admin/vue-templates/export-reviews-form.php:38
+#: templates/admin/vue-templates/import-reviews-form.php:62
+msgid "Cancel"
+msgstr "Mégse"
+
+#: includes/components/bricks/elements/reviews-listing.php:607
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:585
+msgid "Upload Control Label"
+msgstr "Feltöltési mező címkéje"
+
+#: includes/components/bricks/elements/reviews-listing.php:608
+#: includes/components/bricks/elements/reviews-listing.php:609
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:588
+#: includes/components/reviews/render/review-listing-render.php:61
+msgid "Upload your file here, or"
+msgstr "Töltse fel ide a fájlt, vagy"
+
+#: includes/components/bricks/elements/reviews-listing.php:613
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:595
+msgid "Upload Button Label"
+msgstr "Feltöltés gombjának címkéje"
+
+#: includes/components/bricks/elements/reviews-listing.php:614
+#: includes/components/bricks/elements/reviews-listing.php:615
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:598
+#: includes/components/reviews/render/review-listing-render.php:60
+#: includes/components/reviews/render/review-listing-render.php:63
+msgid "Choose File"
+msgstr "Fájl kiválasztása"
+
+#: includes/components/bricks/elements/reviews-listing.php:619
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:605
+msgid "Max File Size Label"
+msgstr "Maximális fájlméret címkéje"
+
+#: includes/components/bricks/elements/reviews-listing.php:620
+#: includes/components/bricks/elements/reviews-listing.php:621
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:608
+#: includes/components/reviews/render/review-listing-render.php:62
+#: includes/components/reviews/render/review-listing-render.php:64
+msgid "Maximum size"
+msgstr "Maximális méret"
+
+#: includes/components/bricks/elements/reviews-listing.php:625
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:624
+msgid "New Comment Button"
+msgstr "Új hozzászólás gomb"
+
+#: includes/components/bricks/elements/reviews-listing.php:626
+#: includes/components/bricks/elements/reviews-listing.php:627
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:627
+#: includes/components/reviews/render/review-listing-render.php:47
+msgid "Leave a comment"
+msgstr "Hagyjon hozzászólást"
+
+#: includes/components/bricks/elements/reviews-listing.php:631
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:634
+msgid "Comments Placeholder"
+msgstr "Hozzászólások helyőrző"
+
+#: includes/components/bricks/elements/reviews-listing.php:632
+#: includes/components/bricks/elements/reviews-listing.php:633
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:637
+#: includes/components/reviews/render/review-listing-render.php:51
+msgid "Leave your comments"
+msgstr "Írja meg a hozzászólásait"
+
+#: includes/components/bricks/elements/reviews-listing.php:637
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:644
+msgid "Show Comments Button"
+msgstr "Hozzászólásokat megjelenítő gomb"
+
+#: includes/components/bricks/elements/reviews-listing.php:638
+#: includes/components/bricks/elements/reviews-listing.php:639
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:647
+#: includes/components/reviews/render/review-listing-render.php:48
+msgid "Show Comments"
+msgstr "Hozzászólások megjelenítése"
+
+#: includes/components/bricks/elements/reviews-listing.php:643
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:654
+msgid "Hide Comments Button"
+msgstr "Hozzászólások elrejtése gomb"
+
+#: includes/components/bricks/elements/reviews-listing.php:644
+#: includes/components/bricks/elements/reviews-listing.php:645
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:657
+#: includes/components/reviews/render/review-listing-render.php:49
+msgid "Hide Comments"
+msgstr "Hozzászólások elrejtése"
+
+#: includes/components/bricks/elements/reviews-listing.php:649
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:664
+msgid "Comments Title"
+msgstr "Hozzászólások címe"
+
+#: includes/components/bricks/elements/reviews-listing.php:650
+#: includes/components/bricks/elements/reviews-listing.php:651
 #: includes/components/comments/admin-pages/list-page.php:77
 #: includes/components/comments/admin-pages/list-page.php:78
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:616
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1787
-#: includes/components/reviews/render/review-listing-render.php:49
-#: templates/admin/pages/dashboard/main.php:27
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:667
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1926
+#: includes/components/reviews/render/review-listing-render.php:50
+#: templates/admin/pages/dashboard/main.php:29
 msgid "Comments"
 msgstr "Hozzászólások"
+
+#: includes/components/bricks/elements/reviews-listing.php:655
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:674
+msgid "Submit Comment Button"
+msgstr "Hozzászólás beküldése gomb"
+
+#: includes/components/bricks/elements/reviews-listing.php:656
+#: includes/components/bricks/elements/reviews-listing.php:657
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:677
+#: includes/components/reviews/render/review-listing-render.php:52
+msgid "Submit Comment"
+msgstr "Hozzászólás beküldése"
+
+#: includes/components/bricks/elements/reviews-listing.php:661
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:693
+msgid "Reply Comment Button"
+msgstr "Hozzászólás megválaszolása gomb"
+
+#: includes/components/bricks/elements/reviews-listing.php:662
+#: includes/components/bricks/elements/reviews-listing.php:663
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:696
+#: includes/components/reviews/render/review-listing-render.php:53
+msgid "Reply"
+msgstr "Válasz"
+
+#: includes/components/bricks/elements/reviews-listing.php:667
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:703
+msgid "Reply Placeholder"
+msgstr "Válasz helyőrző"
+
+#: includes/components/bricks/elements/reviews-listing.php:668
+#: includes/components/bricks/elements/reviews-listing.php:669
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:706
+#: includes/components/reviews/render/review-listing-render.php:54
+msgid "Leave you reply"
+msgstr "Hagyja meg válaszát"
+
+#: includes/components/bricks/elements/reviews-listing.php:673
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:713
+msgid "Submit Reply Button"
+msgstr "Válasz beküldése gomb"
+
+#: includes/components/bricks/elements/reviews-listing.php:674
+#: includes/components/bricks/elements/reviews-listing.php:675
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:716
+#: includes/components/reviews/render/review-listing-render.php:55
+msgid "Submit a reply"
+msgstr "Válasz elküldése"
 
 #: includes/components/comments/rest-api/delete-comment.php:74
 #: includes/components/comments/rest-api/delete-comment.php:84
 #: includes/components/comments/rest-api/get-admin-comments-list.php:78
 #: includes/components/comments/rest-api/submit-review-comment.php:120
-#: includes/components/comments/rest-api/submit-review-comment.php:180
+#: includes/components/comments/rest-api/submit-review-comment.php:181
 #: includes/components/comments/rest-api/toggle-comment-approve.php:84
-#: includes/components/reviews/rest-api/add-review-type.php:109
+#: includes/components/reviews/rest-api/add-review-type.php:148
 #: includes/components/reviews/rest-api/delete-review-media.php:74
 #: includes/components/reviews/rest-api/delete-review.php:74
 #: includes/components/reviews/rest-api/get-admin-reviews-list.php:68
 #: includes/components/reviews/rest-api/get-admin-reviews-list.php:85
 #: includes/components/reviews/rest-api/get-public-reviews-list.php:90
 #: includes/components/reviews/rest-api/get-types-list.php:65
-#: includes/components/reviews/rest-api/import-reviews.php:68
+#: includes/components/reviews/rest-api/import-reviews.php:70
 #: includes/components/reviews/rest-api/toggle-review-approve.php:87
 msgid "Error"
 msgstr "Hiba"
@@ -380,39 +913,26 @@ msgstr "A hozzászólás törölve lett"
 msgid "Success"
 msgstr "Siker"
 
-#: includes/components/comments/rest-api/submit-review-comment.php:131
-#: includes/components/reviews/rest-api/submit-review.php:143
+#: includes/components/comments/rest-api/submit-review-comment.php:132
+#: includes/components/reviews/rest-api/submit-review.php:153
 msgid "Captcha validation failed"
 msgstr "A Captcha ellenőrzése sikertelen"
 
-#: includes/components/comments/rest-api/submit-review-comment.php:187
+#: includes/components/comments/rest-api/submit-review-comment.php:188
 msgid "*Your comment must be approved by the moderator"
 msgstr "*A hozzászólását a moderátornak jóvá kell hagynia"
 
-#: includes/components/comments/rest-api/submit-review-comment.php:226
+#: includes/components/comments/rest-api/submit-review-comment.php:227
 msgid "New Comment has been saved"
 msgstr "Az új hozzászólás el lett mentve"
 
 #: includes/components/comments/rest-api/update-comment.php:72
 msgid "Comment Update Error"
-msgstr "Hozzászólás frissítési hiba"
+msgstr "Hiba a hozzászólás frissítésekor"
 
 #: includes/components/comments/rest-api/update-comment.php:78
 msgid "Comment have been updated"
 msgstr "A hozzászólás frissítve lett"
-
-#: includes/components/elementor/dynamic-tags/average-rating.php:15
-msgid "Average Rating"
-msgstr "Átlagos értékelés"
-
-#: includes/components/elementor/dynamic-tags/average-rating.php:90
-#: includes/components/reviews/render/review-listing-render.php:112
-msgid "Any Sources not found"
-msgstr "Nem található egyetlen forrás sem"
-
-#: includes/components/elementor/dynamic-tags/reviews-info.php:15
-msgid "Reviews Info"
-msgstr "Vélemények információi"
 
 #: includes/components/elementor/dynamic-tags/reviews-info.php:37
 msgid "Reviews Count"
@@ -421,12 +941,6 @@ msgstr "Vélemények száma"
 #: includes/components/elementor/dynamic-tags/reviews-info.php:38
 msgid "Reviews Count Label"
 msgstr "Vélemények számának címkéje"
-
-#: includes/components/elementor/dynamic-tags/reviews-info.php:73
-msgid "1 Review"
-msgid_plural "%s Reviews"
-msgstr[0] ""
-msgstr[1] ""
 
 #: includes/components/elementor/manager.php:189
 msgid "JetReviews requires Elementor to be activated."
@@ -440,73 +954,13 @@ msgstr "Elementor aktiválása most"
 msgid "Install Elementor Now"
 msgstr "Elementor telepítése most"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:29
-msgid "Reviews Listing"
-msgstr "Vélemények listája"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:65
-#: includes/components/settings/manager.php:105
-#: includes/components/settings/manager.php:106
-msgid "Settings"
-msgstr "Beállítások"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:82
-msgid "Rating Layout"
-msgstr "Értékelés elrendezése"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:86
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:100
-#: includes/components/elementor/widgets/jet-reviews.php:327
-#: includes/components/elementor/widgets/jet-reviews.php:383
-#: includes/components/elementor/widgets/jet-reviews.php:526
-msgid "Stars"
-msgstr "Csillagok"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:87
-#: includes/components/elementor/widgets/jet-reviews.php:329
-#: includes/components/elementor/widgets/jet-reviews.php:385
-#: includes/components/elementor/widgets/jet-reviews.php:528
-msgid "Points"
-msgstr "Pontok"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:95
-msgid "Rating Input Type"
-msgstr "Értékelés beviteli típusa"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:99
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1421
-#: includes/components/elementor/widgets/jet-reviews.php:1166
-msgid "Slider"
-msgstr "Csúszka"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:108
-msgid "Review Rating Type"
-msgstr "Vélemény értékelésének típusa"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:112
-msgid "Average"
-msgstr "Átlag"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:113
-#: templates/admin/pages/dashboard/main.php:92
-msgid "Details"
-msgstr "Részletek"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:121
-msgid "Reviews Per Page"
-msgstr "Vélemények száma oldalanként"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:132
-msgid "Show Review Author Avatar"
-msgstr "A vélemény szerzőjének avatarjának megjelenítése"
-
 #: includes/components/elementor/widgets/jet-reviews-advanced.php:134
 #: includes/components/elementor/widgets/jet-reviews-advanced.php:146
 #: includes/components/elementor/widgets/jet-reviews-advanced.php:158
 #: includes/components/elementor/widgets/jet-reviews-advanced.php:170
 #: includes/components/elementor/widgets/jet-reviews-advanced.php:182
-#: includes/components/elementor/widgets/jet-reviews.php:113
-#: includes/components/elementor/widgets/jet-reviews.php:223
+#: includes/components/elementor/widgets/jet-reviews.php:117
+#: includes/components/elementor/widgets/jet-reviews.php:227
 msgid "Yes"
 msgstr "Igen"
 
@@ -515,1088 +969,926 @@ msgstr "Igen"
 #: includes/components/elementor/widgets/jet-reviews-advanced.php:159
 #: includes/components/elementor/widgets/jet-reviews-advanced.php:171
 #: includes/components/elementor/widgets/jet-reviews-advanced.php:183
-#: includes/components/elementor/widgets/jet-reviews.php:114
-#: includes/components/elementor/widgets/jet-reviews.php:224
+#: includes/components/elementor/widgets/jet-reviews.php:118
+#: includes/components/elementor/widgets/jet-reviews.php:228
 msgid "No"
 msgstr "Nem"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:144
-msgid "Show Review Title"
-msgstr "Vélemény címének megjelenítése"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:156
-msgid "Show Review Title Field"
-msgstr "Vélemény címmezőjének megjelenítése"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:168
-msgid "Show Review Content Field"
-msgstr "Vélemény tartalommezőjének megjelenítése"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:180
-msgid "Show Comment Author Avatar"
-msgstr "Hozzászólás szerzőjének avatarjának megjelenítése"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:194
-msgid "Icons"
-msgstr "Ikonok"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:201
-msgid "Empty Star Icon"
-msgstr "Üres csillag ikon"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:219
-msgid "Filled Star Icon"
-msgstr "Kitöltött csillag ikon"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:237
-msgid "New Review Button Icon"
-msgstr "Új vélemény gomb ikonja"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:252
-msgid "Show Comments Button Icon"
-msgstr "Hozzászólások megjelenítése gomb ikonja"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:267
-msgid "New Comment Button Icon"
-msgstr "Új hozzászólás gomb ikonja"
 
 #: includes/components/elementor/widgets/jet-reviews-advanced.php:282
 msgid "Pinned Icon"
 msgstr "Kitűzött ikon"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:300
-msgid "Empty Like Icon"
-msgstr "Üres tetszik ikon"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:315
-msgid "Filled Like Icon"
-msgstr "Kitöltött tetszik ikon"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:330
-msgid "Empty Dislike Icon"
-msgstr "Üres nem tetszik ikon"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:345
-msgid "Filled Dislike Icon"
-msgstr "Kitöltött nem tetszik ikon"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:360
-msgid "Reply Button Icon"
-msgstr "Válasz gomb ikon"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:375
-msgid "Prev Icon"
-msgstr "Előző ikon"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:390
-msgid "Next Icon"
-msgstr "Következő ikon"
-
 #: includes/components/elementor/widgets/jet-reviews-advanced.php:407
 msgid "Labels"
-msgstr "Címkék"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:414
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1453
-#: includes/components/elementor/widgets/jet-reviews.php:644
-msgid "Header"
-msgstr "Fejléc"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:422
-msgid "No Reviews Message"
-msgstr "Nincs értékelés üzenet"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:425
-#: includes/components/reviews/render/review-listing-render.php:36
-#: templates/admin/pages/comments/list-page.php:76
-#: templates/admin/pages/reviews/list-page.php:92
-msgid "No reviews found"
-msgstr "Nem található értékelés"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:432
-msgid "Singular Review Count Label"
-msgstr "Egyes számú értékelésszám címke"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:435
-#: includes/components/elementor/widgets/jet-reviews.php:570
-#: includes/components/reviews/render/review-listing-render.php:37
-msgid "Review"
-msgstr "Értékelés"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:442
-msgid "Plural Review Count Label"
-msgstr "Többes számú értékelésszám címke"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:445
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1532
-#: includes/components/reviews/render/review-listing-render.php:38
-#: templates/admin/pages/dashboard/main.php:14
-#: templates/admin/pages/dashboard/main.php:43
-#: templates/admin/pages/dashboard/main.php:76
-msgid "Reviews"
-msgstr "Értékelések"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:452
-msgid "New Review Button"
-msgstr "Új értékelés gomb"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:455
-#: includes/components/reviews/render/review-listing-render.php:40
-msgid "Write a review"
-msgstr "Írjon értékelést"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:462
-msgid "Already Reviewed Message"
-msgstr "Már értékelt üzenet"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:473
-msgid "Moderator Check Message"
-msgstr "Moderátori ellenőrzés üzenet"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:484
-#: includes/components/elementor/widgets/jet-reviews.php:1002
-msgid "Review Form"
-msgstr "Értékelési űrlap"
+msgstr "Feliratok"
 
 #: includes/components/elementor/widgets/jet-reviews-advanced.php:493
 msgid "Not Valid Valid Message"
 msgstr "Érvénytelen üzenet"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:504
-msgid "Author Name Placeholder"
-msgstr "Szerző neve helyőrző"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:507
-#: includes/components/reviews/render/review-listing-render.php:41
-msgid "Your Name"
-msgstr "Az Ön neve"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:514
-msgid "Author Mail Placeholder"
-msgstr "Szerző e-mail-címe helyőrző"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:517
-#: includes/components/reviews/render/review-listing-render.php:42
-msgid "Your Mail"
-msgstr "Az Ön e-mail-címe"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:524
-msgid "Review Content Placeholder"
-msgstr "Értékelés tartalma helyőrző"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:527
-#: includes/components/reviews/render/review-listing-render.php:43
-msgid "Your review"
-msgstr "Az Ön értékelése"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:534
-msgid "Review Title Placeholder"
-msgstr "Értékelés címe helyőrző"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:537
-#: includes/components/reviews/render/review-listing-render.php:44
-msgid "Title of your review"
-msgstr "Értékelésének címe"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:544
-msgid "Submit Review Button"
-msgstr "Értékelés beküldése gomb"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:547
-#: includes/components/reviews/render/review-listing-render.php:45
-msgid "Submit a review"
-msgstr "Értékelés beküldése"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:554
-msgid "Cancel Button"
-msgstr "Mégse gomb"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:557
-#: includes/components/reviews/render/review-listing-render.php:39
-#: templates/admin/pages/reviews/types-page.php:76
-#: templates/admin/vue-templates/export-reviews-form.php:36
-#: templates/admin/vue-templates/import-reviews-form.php:60
-msgid "Cancel"
-msgstr "Mégse"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:564
-msgid "Comment Form"
-msgstr "Hozzászólás űrlap"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:573
-msgid "New Comment Button"
-msgstr "Új hozzászólás gomb"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:576
-#: includes/components/reviews/render/review-listing-render.php:46
-msgid "Leave a comment"
-msgstr "Hagyjon hozzászólást"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:583
-msgid "Comments Placeholder"
-msgstr "Hozzászólások helyőrző"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:586
-#: includes/components/reviews/render/review-listing-render.php:50
-msgid "Leave your comments"
-msgstr "Írja meg a hozzászólását"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:593
-msgid "Show Comments Button"
-msgstr "Hozzászólások megjelenítése gomb"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:596
-#: includes/components/reviews/render/review-listing-render.php:47
-msgid "Show Comments"
-msgstr "Hozzászólások megjelenítése"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:603
-msgid "Hide Comments Button"
-msgstr "Hozzászólások elrejtése gomb"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:606
-#: includes/components/reviews/render/review-listing-render.php:48
-msgid "Hide Comments"
-msgstr "Hozzászólások elrejtése"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:613
-msgid "Comments Title"
-msgstr "Hozzászólások címe"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:623
-msgid "Submit Comment Button"
-msgstr "Hozzászólás beküldése gomb"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:626
-#: includes/components/reviews/render/review-listing-render.php:51
-msgid "Submit Comment"
-msgstr "Hozzászólás beküldése"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:633
-msgid "Reply Form"
-msgstr "Válasz űrlap"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:642
-msgid "Reply Comment Button"
-msgstr "Hozzászólásra válasz gomb"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:645
-#: includes/components/reviews/render/review-listing-render.php:52
-msgid "Reply"
-msgstr "Válasz"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:652
-msgid "Reply Placeholder"
-msgstr "Válasz helyőrző"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:655
-#: includes/components/reviews/render/review-listing-render.php:53
-msgid "Leave you reply"
-msgstr "Hagyja meg válaszát"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:662
-msgid "Submit Reply Button"
-msgstr "Válasz beküldése gomb"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:665
-#: includes/components/reviews/render/review-listing-render.php:54
-msgid "Submit a reply"
-msgstr "Válasz elküldése"
-
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:683
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:734
 msgid "Star Size"
 msgstr "Csillag mérete"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:704
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:755
 msgid "Star Gap"
 msgstr "Csillagok közötti távolság"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:724
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:775
 msgid "Bar Height"
 msgstr "Sáv magassága"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:744
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:795
 msgid "Empty Color"
 msgstr "Üres állapot színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:757
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:808
 msgid "Very Low Color"
 msgstr "Nagyon alacsony érték színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:770
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:821
 msgid "Low Color"
 msgstr "Alacsony érték színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:783
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:834
 msgid "Medium Color"
 msgstr "Közepes érték színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:796
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:847
 msgid "High Color"
 msgstr "Magas érték színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:809
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:860
 msgid "Very High Color"
 msgstr "Nagyon magas érték színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:822
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:913
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1015
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:873
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:964
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1066
 msgid "Label Color"
 msgstr "Címke színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:836
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:886
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:988
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:887
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:937
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1039
 msgid "Label Typography"
 msgstr "Címke tipográfiája"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:850
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:901
 msgid "Buttons"
 msgstr "Gombok"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:861
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:912
 msgid "Primary"
 msgstr "Elsődleges"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:868
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:970
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1103
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:919
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1021
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1154
 msgid "Icon Size"
 msgstr "Ikon mérete"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:898
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1000
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1121
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:949
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1051
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1172
 msgid "Icon Color"
 msgstr "Ikon színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:928
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1030
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1388
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1501
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:2075
-#: includes/components/elementor/widgets/jet-reviews.php:613
-#: includes/components/elementor/widgets/jet-reviews.php:689
-#: includes/components/elementor/widgets/jet-reviews.php:941
-#: includes/components/elementor/widgets/jet-reviews.php:1222
-#: includes/components/elementor/widgets/jet-reviews.php:1511
-#: includes/components/elementor/widgets/jet-reviews.php:1667
-#: includes/components/elementor/widgets/jet-reviews.php:1805
-#: includes/components/elementor/widgets/jet-reviews.php:1950
-#: includes/components/elementor/widgets/jet-reviews.php:2160
-#: includes/components/elementor/widgets/jet-reviews.php:2321
-#: includes/components/elementor/widgets/jet-reviews.php:2466
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:979
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1081
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1439
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1620
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2214
+#: includes/components/elementor/widgets/jet-reviews.php:617
+#: includes/components/elementor/widgets/jet-reviews.php:693
+#: includes/components/elementor/widgets/jet-reviews.php:945
+#: includes/components/elementor/widgets/jet-reviews.php:1226
+#: includes/components/elementor/widgets/jet-reviews.php:1515
+#: includes/components/elementor/widgets/jet-reviews.php:1671
+#: includes/components/elementor/widgets/jet-reviews.php:1809
+#: includes/components/elementor/widgets/jet-reviews.php:1954
+#: includes/components/elementor/widgets/jet-reviews.php:2164
+#: includes/components/elementor/widgets/jet-reviews.php:2325
+#: includes/components/elementor/widgets/jet-reviews.php:2470
 msgid "Border"
 msgstr "Szegély"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:937
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1039
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1397
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1510
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:2084
-#: includes/components/elementor/widgets/jet-reviews.php:622
-#: includes/components/elementor/widgets/jet-reviews.php:698
-#: includes/components/elementor/widgets/jet-reviews.php:987
-#: includes/components/elementor/widgets/jet-reviews.php:1050
-#: includes/components/elementor/widgets/jet-reviews.php:1231
-#: includes/components/elementor/widgets/jet-reviews.php:1520
-#: includes/components/elementor/widgets/jet-reviews.php:1676
-#: includes/components/elementor/widgets/jet-reviews.php:1814
-#: includes/components/elementor/widgets/jet-reviews.php:1996
-#: includes/components/elementor/widgets/jet-reviews.php:2169
-#: includes/components/elementor/widgets/jet-reviews.php:2330
-#: includes/components/elementor/widgets/jet-reviews.php:2512
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:988
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1090
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1448
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1629
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2223
+#: includes/components/elementor/widgets/jet-reviews.php:626
+#: includes/components/elementor/widgets/jet-reviews.php:702
+#: includes/components/elementor/widgets/jet-reviews.php:991
+#: includes/components/elementor/widgets/jet-reviews.php:1054
+#: includes/components/elementor/widgets/jet-reviews.php:1235
+#: includes/components/elementor/widgets/jet-reviews.php:1524
+#: includes/components/elementor/widgets/jet-reviews.php:1680
+#: includes/components/elementor/widgets/jet-reviews.php:1818
+#: includes/components/elementor/widgets/jet-reviews.php:2000
+#: includes/components/elementor/widgets/jet-reviews.php:2173
+#: includes/components/elementor/widgets/jet-reviews.php:2334
+#: includes/components/elementor/widgets/jet-reviews.php:2516
 msgid "Border Radius"
 msgstr "Sarkok lekerekítése"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:949
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1051
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1409
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1488
-#: includes/components/elementor/widgets/jet-reviews.php:600
-#: includes/components/elementor/widgets/jet-reviews.php:664
-#: includes/components/elementor/widgets/jet-reviews.php:963
-#: includes/components/elementor/widgets/jet-reviews.php:1070
-#: includes/components/elementor/widgets/jet-reviews.php:1243
-#: includes/components/elementor/widgets/jet-reviews.php:1780
-#: includes/components/elementor/widgets/jet-reviews.php:1972
-#: includes/components/elementor/widgets/jet-reviews.php:2135
-#: includes/components/elementor/widgets/jet-reviews.php:2296
-#: includes/components/elementor/widgets/jet-reviews.php:2488
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1000
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1102
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1460
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1607
+#: includes/components/elementor/widgets/jet-reviews.php:604
+#: includes/components/elementor/widgets/jet-reviews.php:668
+#: includes/components/elementor/widgets/jet-reviews.php:967
+#: includes/components/elementor/widgets/jet-reviews.php:1074
+#: includes/components/elementor/widgets/jet-reviews.php:1247
+#: includes/components/elementor/widgets/jet-reviews.php:1784
+#: includes/components/elementor/widgets/jet-reviews.php:1976
+#: includes/components/elementor/widgets/jet-reviews.php:2139
+#: includes/components/elementor/widgets/jet-reviews.php:2300
+#: includes/components/elementor/widgets/jet-reviews.php:2492
 msgid "Padding"
-msgstr "Belső margó"
+msgstr "Padding"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:963
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1014
 msgid "Secondary"
 msgstr "Másodlagos"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1069
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1120
 msgid "Pagination"
 msgstr "Lapozás"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1078
-#: includes/components/elementor/widgets/jet-reviews.php:744
-#: includes/components/elementor/widgets/jet-reviews.php:2108
-#: includes/components/elementor/widgets/jet-reviews.php:2273
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1129
+#: includes/components/elementor/widgets/jet-reviews.php:748
+#: includes/components/elementor/widgets/jet-reviews.php:2112
+#: includes/components/elementor/widgets/jet-reviews.php:2277
 msgid "Alignment"
 msgstr "Igazítás"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1082
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1090
-#: includes/components/elementor/widgets/jet-reviews.php:398
-#: includes/components/elementor/widgets/jet-reviews.php:445
-#: includes/components/elementor/widgets/jet-reviews.php:446
-#: includes/components/elementor/widgets/jet-reviews.php:749
-#: includes/components/elementor/widgets/jet-reviews.php:2113
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1133
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1141
+#: includes/components/elementor/widgets/jet-reviews.php:402
+#: includes/components/elementor/widgets/jet-reviews.php:449
+#: includes/components/elementor/widgets/jet-reviews.php:450
+#: includes/components/elementor/widgets/jet-reviews.php:753
+#: includes/components/elementor/widgets/jet-reviews.php:2117
 msgid "Left"
 msgstr "Balra"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1082
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1090
-#: includes/components/elementor/widgets/jet-reviews.php:397
-#: includes/components/elementor/widgets/jet-reviews.php:445
-#: includes/components/elementor/widgets/jet-reviews.php:446
-#: includes/components/elementor/widgets/jet-reviews.php:757
-#: includes/components/elementor/widgets/jet-reviews.php:2121
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1133
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1141
+#: includes/components/elementor/widgets/jet-reviews.php:401
+#: includes/components/elementor/widgets/jet-reviews.php:449
+#: includes/components/elementor/widgets/jet-reviews.php:450
+#: includes/components/elementor/widgets/jet-reviews.php:761
+#: includes/components/elementor/widgets/jet-reviews.php:2125
 msgid "Right"
 msgstr "Jobbra"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1086
-#: includes/components/elementor/widgets/jet-reviews.php:753
-#: includes/components/elementor/widgets/jet-reviews.php:2117
-#: includes/components/elementor/widgets/jet-reviews.php:2282
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1137
+#: includes/components/elementor/widgets/jet-reviews.php:757
+#: includes/components/elementor/widgets/jet-reviews.php:2121
+#: includes/components/elementor/widgets/jet-reviews.php:2286
 msgid "Center"
-msgstr "Középre"
+msgstr "Közép"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1136
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1187
 msgid "Typography"
 msgstr "Tipográfia"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1148
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1199
 msgid "Item Size"
 msgstr "Elem mérete"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1165
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1216
 msgid "Item Space"
 msgstr "Elemek közötti térköz"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1184
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1235
 msgid "Item Border"
 msgstr "Elem szegélye"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1194
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1245
 msgid "Item Border Radius"
 msgstr "Elem sarkainak lekerekítése"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1208
-#: includes/components/elementor/widgets/jet-reviews.php:1274
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1259
+#: includes/components/elementor/widgets/jet-reviews.php:1278
 msgid "Normal"
 msgstr "Normál"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1215
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1260
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1305
-#: includes/components/elementor/widgets/jet-reviews.php:1281
-#: includes/components/elementor/widgets/jet-reviews.php:1313
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1266
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1311
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1356
+#: includes/components/elementor/widgets/jet-reviews.php:1285
+#: includes/components/elementor/widgets/jet-reviews.php:1317
 msgid "Text Color"
 msgstr "Szöveg színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1229
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1274
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1319
-#: includes/components/elementor/widgets/jet-reviews.php:653
-#: includes/components/elementor/widgets/jet-reviews.php:1293
-#: includes/components/elementor/widgets/jet-reviews.php:1324
-#: includes/components/elementor/widgets/jet-reviews.php:1769
-#: includes/components/elementor/widgets/jet-reviews.php:2097
-#: includes/components/elementor/widgets/jet-reviews.php:2261
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1280
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1325
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1370
+#: includes/components/elementor/widgets/jet-reviews.php:657
+#: includes/components/elementor/widgets/jet-reviews.php:1297
+#: includes/components/elementor/widgets/jet-reviews.php:1328
+#: includes/components/elementor/widgets/jet-reviews.php:1773
+#: includes/components/elementor/widgets/jet-reviews.php:2101
+#: includes/components/elementor/widgets/jet-reviews.php:2265
 msgid "Background Color"
 msgstr "Háttér színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1240
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1285
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1330
-#: includes/components/elementor/widgets/jet-reviews.php:1335
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1291
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1336
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1381
+#: includes/components/elementor/widgets/jet-reviews.php:1339
 msgid "Border Color"
 msgstr "Szegély színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1253
-#: includes/components/elementor/widgets/jet-reviews.php:1306
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1304
+#: includes/components/elementor/widgets/jet-reviews.php:1310
 msgid "Hover"
 msgstr "Mutatáskor"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1298
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1349
 msgid "Active"
 msgstr "Aktív"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1347
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1398
 msgid "Forms"
 msgstr "Űrlapok"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1356
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1407
 msgid "Inputs"
 msgstr "Beviteli mezők"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1364
-#: includes/components/elementor/widgets/jet-reviews.php:719
-#: includes/components/elementor/widgets/jet-reviews.php:791
-#: includes/components/elementor/widgets/jet-reviews.php:1103
-#: includes/components/elementor/widgets/jet-reviews.php:1137
-#: includes/components/elementor/widgets/jet-reviews.php:1199
-#: includes/components/elementor/widgets/jet-reviews.php:1553
-#: includes/components/elementor/widgets/jet-reviews.php:1587
-#: includes/components/elementor/widgets/jet-reviews.php:1621
-#: includes/components/elementor/widgets/jet-reviews.php:1709
-#: includes/components/elementor/widgets/jet-reviews.php:1743
-#: includes/components/elementor/widgets/jet-reviews.php:2029
-#: includes/components/elementor/widgets/jet-reviews.php:2063
-#: includes/components/elementor/widgets/jet-reviews.php:2201
-#: includes/components/elementor/widgets/jet-reviews.php:2235
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1415
+#: includes/components/elementor/widgets/jet-reviews.php:723
+#: includes/components/elementor/widgets/jet-reviews.php:795
+#: includes/components/elementor/widgets/jet-reviews.php:1107
+#: includes/components/elementor/widgets/jet-reviews.php:1141
+#: includes/components/elementor/widgets/jet-reviews.php:1203
+#: includes/components/elementor/widgets/jet-reviews.php:1557
+#: includes/components/elementor/widgets/jet-reviews.php:1591
+#: includes/components/elementor/widgets/jet-reviews.php:1625
+#: includes/components/elementor/widgets/jet-reviews.php:1713
+#: includes/components/elementor/widgets/jet-reviews.php:1747
+#: includes/components/elementor/widgets/jet-reviews.php:2033
+#: includes/components/elementor/widgets/jet-reviews.php:2067
+#: includes/components/elementor/widgets/jet-reviews.php:2205
+#: includes/components/elementor/widgets/jet-reviews.php:2239
 msgid "Color"
 msgstr "Szín"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1433
-#: includes/components/elementor/widgets/jet-reviews.php:1175
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1472
+msgid "Inputs Background"
+msgstr "Mezők háttere"
+
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1483
+msgid "Field Labels Color"
+msgstr "Mezőcímkék színe"
+
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1506
+#: includes/components/elementor/widgets/jet-reviews.php:1179
 msgid "Slider Color"
 msgstr "Csúszka színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1462
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1655
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1821
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1535
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1774
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1960
 msgid "Title Color"
 msgstr "Cím színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1476
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1669
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1835
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1549
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1788
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1974
 msgid "Title Typography"
 msgstr "Cím tipográfiája"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1549
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1855
-#: includes/components/elementor/widgets/jet-reviews.php:1488
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1561
+msgid "Review Message"
+msgstr "Értékelési üzenet"
+
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1570
+msgid "Message Spacing"
+msgstr "Üzenet térköze"
+
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1587
+msgid "Message Color"
+msgstr "Üzenet színe"
+
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1598
+msgid "Message Typography"
+msgstr "Üzenet tipográfiája"
+
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1668
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1994
+#: includes/components/elementor/widgets/jet-reviews.php:1492
 msgid "Avatar Size"
 msgstr "Avatar mérete"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1566
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1872
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1685
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2011
 msgid "Avatar Spacing"
 msgstr "Avatar térköze"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1583
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1889
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1702
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2028
 msgid "Author Name Color"
 msgstr "Szerző nevének színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1597
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1903
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1716
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2042
 msgid "Author Name Typography"
 msgstr "Szerző nevének tipográfiája"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1606
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1912
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1725
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2051
 msgid "Publish Time Color"
 msgstr "Közzététel idejének színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1620
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1926
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1739
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2065
 msgid "Publish Time Typography"
 msgstr "Közzététel idejének tipográfiája"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1638
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1757
 msgid "Spacing"
 msgstr "Térköz"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1690
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1944
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1809
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2083
 msgid "Content Color"
 msgstr "Tartalom színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1704
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1958
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1823
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2097
 msgid "Content Typography"
 msgstr "Tartalom tipográfia"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1716
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1835
+msgid "Additional Answers"
+msgstr "További válaszok"
+
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1844
+msgid "Answer Label Color"
+msgstr "Válaszcímke színe"
+
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1855
 msgid "Review Item"
 msgstr "Értékelési elem"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1725
-#: includes/components/elementor/widgets/jet-reviews.php:579
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1864
+#: includes/components/elementor/widgets/jet-reviews.php:583
 msgid "Review Gap"
-msgstr "Értékelési elemköz"
+msgstr "Értékelési tételek közötti térköz"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1742
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1881
 msgid "Review Padding"
-msgstr "Értékelési belső margó"
+msgstr "Értékelés paddingje"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1755
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1894
 msgid "Review Border"
 msgstr "Értékelési keret"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1764
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1903
 msgid "Review Border Radius"
-msgstr "Értékelési sarokkerekítés"
+msgstr "Értékelési keret lekerekítése"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1776
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1915
 msgid "Review Box Shadow"
-msgstr "Értékelési dobozárnyék"
+msgstr "Értékelési doboz árnyéka"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1796
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1935
 msgid "General"
 msgstr "Általános"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1804
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:1943
 msgid "Title Spacing"
 msgstr "Cím térköze"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1970
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2109
 msgid "Comment Item"
-msgstr "Hozzászólás elem"
+msgstr "Hozzászóláselem"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1979
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2118
 msgid "Comment Gap"
-msgstr "Hozzászólás elemköz"
+msgstr "Hozzászóláselemek közötti térköz"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:1996
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2135
 msgid "Reply Gap"
-msgstr "Válasz elemköz"
+msgstr "Válaszok közötti térköz"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:2015
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2154
 msgid "Misc"
 msgstr "Egyéb"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:2024
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2163
 msgid "Verify Label"
 msgstr "Hitelesítési címke"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:2032
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2171
 msgid "Verify Label Color"
 msgstr "Hitelesítési címke színe"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:2047
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2186
 msgid "Verify Icon Size"
 msgstr "Hitelesítési ikon mérete"
 
-#: includes/components/elementor/widgets/jet-reviews-advanced.php:2065
+#: includes/components/elementor/widgets/jet-reviews-advanced.php:2204
 msgid "Verify Label Typography"
-msgstr "Hitelesítési címke tipográfia"
+msgstr "Hitelesítési címke tipográfiája"
 
 #: includes/components/elementor/widgets/jet-reviews.php:33
 msgid "Static Review"
 msgstr "Statikus értékelés"
 
-#: includes/components/elementor/widgets/jet-reviews.php:89
+#: includes/components/elementor/widgets/jet-reviews.php:93
 msgid "Content Source"
 msgstr "Tartalom forrása"
 
-#: includes/components/elementor/widgets/jet-reviews.php:98
+#: includes/components/elementor/widgets/jet-reviews.php:102
 msgid "Get Data From Post"
 msgstr "Adatok lekérése bejegyzésből"
 
-#: includes/components/elementor/widgets/jet-reviews.php:99
+#: includes/components/elementor/widgets/jet-reviews.php:103
 msgid ""
 "Enter post ID to get data from or leave empy to get data from current post"
-msgstr ""
-"Adja meg a bejegyzés azonosítóját az adatok lekéréséhez, vagy hagyja üresen "
-"az aktuális bejegyzés adataihoz"
+msgstr "Adja meg annak a bejegyzésnek az ID-jét, amelyből adatokat szeretne lekérni, vagy hagyja üresen, ha az aktuális bejegyzésből szeretné lekérni az adatokat"
 
-#: includes/components/elementor/widgets/jet-reviews.php:111
+#: includes/components/elementor/widgets/jet-reviews.php:115
 msgid "Show Review Author"
 msgstr "Értékelés szerzőjének megjelenítése"
 
-#: includes/components/elementor/widgets/jet-reviews.php:125
-#: includes/components/elementor/widgets/jet-reviews.php:1128
-#: includes/components/elementor/widgets/jet-reviews.php:1700
-#: includes/meta.php:81 templates/admin/pages/reviews/type-page.php:108
+#: includes/components/elementor/widgets/jet-reviews.php:129
+#: includes/components/elementor/widgets/jet-reviews.php:1132
+#: includes/components/elementor/widgets/jet-reviews.php:1704
+#: includes/meta.php:81 templates/admin/pages/reviews/type-page.php:122
 msgid "Label"
 msgstr "Címke"
 
-#: includes/components/elementor/widgets/jet-reviews.php:133
+#: includes/components/elementor/widgets/jet-reviews.php:137
 #: includes/meta.php:87
 msgid "Field Value"
 msgstr "Mező értéke"
 
-#: includes/components/elementor/widgets/jet-reviews.php:145
+#: includes/components/elementor/widgets/jet-reviews.php:149
 msgid "Field Max"
 msgstr "Mező maximuma"
 
-#: includes/components/elementor/widgets/jet-reviews.php:161
+#: includes/components/elementor/widgets/jet-reviews.php:165
 msgid "Design"
 msgstr "Megjelenés"
 
-#: includes/components/elementor/widgets/jet-reviews.php:176
-#: includes/components/elementor/widgets/jet-reviews.php:2020
+#: includes/components/elementor/widgets/jet-reviews.php:180
+#: includes/components/elementor/widgets/jet-reviews.php:2024
 #: includes/meta.php:102
 msgid "Summary Title"
 msgstr "Összegzés címe"
 
-#: includes/components/elementor/widgets/jet-reviews.php:177
+#: includes/components/elementor/widgets/jet-reviews.php:181
 msgid "Review Summary Title"
 msgstr "Értékelési összegzés címe"
 
-#: includes/components/elementor/widgets/jet-reviews.php:188
+#: includes/components/elementor/widgets/jet-reviews.php:192
 #: includes/meta.php:106
 msgid "Summary Text"
 msgstr "Összegzés szövege"
 
-#: includes/components/elementor/widgets/jet-reviews.php:190
+#: includes/components/elementor/widgets/jet-reviews.php:194
 msgid "Review Summary Description"
 msgstr "Értékelési összegzés leírása"
 
-#: includes/components/elementor/widgets/jet-reviews.php:200
+#: includes/components/elementor/widgets/jet-reviews.php:204
 #: includes/meta.php:111
 msgid "Summary Legend"
 msgstr "Összegzés jelmagyarázata"
 
-#: includes/components/elementor/widgets/jet-reviews.php:202
+#: includes/components/elementor/widgets/jet-reviews.php:206
 msgid "Nice!"
 msgstr "Remek!"
 
-#: includes/components/elementor/widgets/jet-reviews.php:214
+#: includes/components/elementor/widgets/jet-reviews.php:218
 msgid "Structured Data"
 msgstr "Strukturált adatok"
 
-#: includes/components/elementor/widgets/jet-reviews.php:221
+#: includes/components/elementor/widgets/jet-reviews.php:225
 msgid "Add Structured Data to review box"
-msgstr "Strukturált adatok hozzáadása az értékelő dobozhoz"
+msgstr "Strukturált adatok hozzáadása az értékelési dobozhoz"
 
-#: includes/components/elementor/widgets/jet-reviews.php:233
+#: includes/components/elementor/widgets/jet-reviews.php:237
 msgid "Review Item Name"
 msgstr "Értékelési elem neve"
 
-#: includes/components/elementor/widgets/jet-reviews.php:246
+#: includes/components/elementor/widgets/jet-reviews.php:250
 msgid "Review Item Image"
 msgstr "Értékelési elem képe"
 
-#: includes/components/elementor/widgets/jet-reviews.php:261
+#: includes/components/elementor/widgets/jet-reviews.php:265
 msgid "Review Item Description"
 msgstr "Értékelési elem leírása"
 
-#: includes/components/elementor/widgets/jet-reviews.php:276
+#: includes/components/elementor/widgets/jet-reviews.php:280
 msgid "Review Date"
 msgstr "Értékelés dátuma"
 
-#: includes/components/elementor/widgets/jet-reviews.php:290
+#: includes/components/elementor/widgets/jet-reviews.php:294
 #: includes/meta.php:142 includes/meta.php:143
 msgid "Review Author Name"
 msgstr "Értékelés szerzőjének neve"
 
-#: includes/components/elementor/widgets/jet-reviews.php:305
+#: includes/components/elementor/widgets/jet-reviews.php:309
 msgid "Header Settings"
 msgstr "Fejléc beállításai"
 
-#: includes/components/elementor/widgets/jet-reviews.php:323
+#: includes/components/elementor/widgets/jet-reviews.php:327
 msgid "Average Layout"
 msgstr "Átlag elrendezése"
 
-#: includes/components/elementor/widgets/jet-reviews.php:328
-#: includes/components/elementor/widgets/jet-reviews.php:384
-#: includes/components/elementor/widgets/jet-reviews.php:527
+#: includes/components/elementor/widgets/jet-reviews.php:332
+#: includes/components/elementor/widgets/jet-reviews.php:388
+#: includes/components/elementor/widgets/jet-reviews.php:531
 msgid "Percentage"
 msgstr "Százalék"
 
-#: includes/components/elementor/widgets/jet-reviews.php:337
-#: includes/components/elementor/widgets/jet-reviews.php:409
-#: includes/components/elementor/widgets/jet-reviews.php:536
+#: includes/components/elementor/widgets/jet-reviews.php:341
+#: includes/components/elementor/widgets/jet-reviews.php:413
+#: includes/components/elementor/widgets/jet-reviews.php:540
 msgid "Progressbar"
 msgstr "Folyamatjelző sáv"
 
-#: includes/components/elementor/widgets/jet-reviews.php:339
-#: includes/components/elementor/widgets/jet-reviews.php:411
-#: includes/components/elementor/widgets/jet-reviews.php:538
+#: includes/components/elementor/widgets/jet-reviews.php:343
+#: includes/components/elementor/widgets/jet-reviews.php:415
+#: includes/components/elementor/widgets/jet-reviews.php:542
 msgid "Show"
 msgstr "Megjelenítés"
 
-#: includes/components/elementor/widgets/jet-reviews.php:340
-#: includes/components/elementor/widgets/jet-reviews.php:412
-#: includes/components/elementor/widgets/jet-reviews.php:539
+#: includes/components/elementor/widgets/jet-reviews.php:344
+#: includes/components/elementor/widgets/jet-reviews.php:416
+#: includes/components/elementor/widgets/jet-reviews.php:543
 msgid "Hide"
 msgstr "Elrejtés"
-
-#: includes/components/elementor/widgets/jet-reviews.php:352
-#: includes/components/elementor/widgets/jet-reviews.php:424
-#: includes/components/elementor/widgets/jet-reviews.php:551
-msgid "Values Position"
-msgstr "Értékek pozíciója"
 
 #: includes/components/elementor/widgets/jet-reviews.php:356
 #: includes/components/elementor/widgets/jet-reviews.php:428
 #: includes/components/elementor/widgets/jet-reviews.php:555
+msgid "Values Position"
+msgstr "Értékek pozíciója"
+
+#: includes/components/elementor/widgets/jet-reviews.php:360
+#: includes/components/elementor/widgets/jet-reviews.php:432
+#: includes/components/elementor/widgets/jet-reviews.php:559
 msgid "Above Progressbar"
 msgstr "Folyamatjelző sáv felett"
 
-#: includes/components/elementor/widgets/jet-reviews.php:357
-#: includes/components/elementor/widgets/jet-reviews.php:429
-#: includes/components/elementor/widgets/jet-reviews.php:556
+#: includes/components/elementor/widgets/jet-reviews.php:361
+#: includes/components/elementor/widgets/jet-reviews.php:433
+#: includes/components/elementor/widgets/jet-reviews.php:560
 msgid "Inside Progressbar"
 msgstr "Folyamatjelző sávban"
 
-#: includes/components/elementor/widgets/jet-reviews.php:372
+#: includes/components/elementor/widgets/jet-reviews.php:376
 msgid "Fields Settings"
 msgstr "Mezők beállításai"
 
-#: includes/components/elementor/widgets/jet-reviews.php:379
+#: includes/components/elementor/widgets/jet-reviews.php:383
 msgid "Layout"
 msgstr "Elrendezés"
 
-#: includes/components/elementor/widgets/jet-reviews.php:393
+#: includes/components/elementor/widgets/jet-reviews.php:397
 msgid "Stars Position"
 msgstr "Csillagok pozíciója"
 
-#: includes/components/elementor/widgets/jet-reviews.php:441
+#: includes/components/elementor/widgets/jet-reviews.php:445
 msgid "Values Alignment"
 msgstr "Értékek igazítása"
 
-#: includes/components/elementor/widgets/jet-reviews.php:461
+#: includes/components/elementor/widgets/jet-reviews.php:465
 msgid "Label Suffix"
 msgstr "Címke utótagja"
 
-#: includes/components/elementor/widgets/jet-reviews.php:474
+#: includes/components/elementor/widgets/jet-reviews.php:478
 msgid "Summary Settings"
 msgstr "Összegzés beállításai"
 
-#: includes/components/elementor/widgets/jet-reviews.php:481
+#: includes/components/elementor/widgets/jet-reviews.php:485
 msgid "Summary Results Block Position"
 msgstr "Összegzés eredményblokkjának pozíciója"
 
-#: includes/components/elementor/widgets/jet-reviews.php:486
-#: includes/components/elementor/widgets/jet-reviews.php:488
+#: includes/components/elementor/widgets/jet-reviews.php:490
+#: includes/components/elementor/widgets/jet-reviews.php:492
 msgid "At right side of summary box"
 msgstr "Az összegző doboz jobb oldalán"
 
-#: includes/components/elementor/widgets/jet-reviews.php:486
-#: includes/components/elementor/widgets/jet-reviews.php:488
+#: includes/components/elementor/widgets/jet-reviews.php:490
+#: includes/components/elementor/widgets/jet-reviews.php:492
 msgid "At left side of summary box"
 msgstr "Az összegző doboz bal oldalán"
 
-#: includes/components/elementor/widgets/jet-reviews.php:487
+#: includes/components/elementor/widgets/jet-reviews.php:491
 msgid "At bottom of summary box"
 msgstr "Az összegző doboz alján"
 
-#: includes/components/elementor/widgets/jet-reviews.php:489
+#: includes/components/elementor/widgets/jet-reviews.php:493
 msgid "At top of summary box"
 msgstr "Az összegző doboz tetején"
 
-#: includes/components/elementor/widgets/jet-reviews.php:497
+#: includes/components/elementor/widgets/jet-reviews.php:501
 msgid "Results Block Width"
 msgstr "Eredményblokk szélessége"
 
-#: includes/components/elementor/widgets/jet-reviews.php:522
+#: includes/components/elementor/widgets/jet-reviews.php:526
 msgid "Summary Average Layout"
 msgstr "Összegzés átlagának elrendezése"
 
-#: includes/components/elementor/widgets/jet-reviews.php:676
-#: includes/components/elementor/widgets/jet-reviews.php:975
-#: includes/components/elementor/widgets/jet-reviews.php:1082
-#: includes/components/elementor/widgets/jet-reviews.php:1532
-#: includes/components/elementor/widgets/jet-reviews.php:1792
-#: includes/components/elementor/widgets/jet-reviews.php:1984
-#: includes/components/elementor/widgets/jet-reviews.php:2147
-#: includes/components/elementor/widgets/jet-reviews.php:2308
-#: includes/components/elementor/widgets/jet-reviews.php:2500
+#: includes/components/elementor/widgets/jet-reviews.php:680
+#: includes/components/elementor/widgets/jet-reviews.php:979
+#: includes/components/elementor/widgets/jet-reviews.php:1086
+#: includes/components/elementor/widgets/jet-reviews.php:1536
+#: includes/components/elementor/widgets/jet-reviews.php:1796
+#: includes/components/elementor/widgets/jet-reviews.php:1988
+#: includes/components/elementor/widgets/jet-reviews.php:2151
+#: includes/components/elementor/widgets/jet-reviews.php:2312
+#: includes/components/elementor/widgets/jet-reviews.php:2504
 msgid "Margin"
 msgstr "Margó"
 
-#: includes/components/elementor/widgets/jet-reviews.php:773
+#: includes/components/elementor/widgets/jet-reviews.php:777
 msgid "Total Average"
 msgstr "Összesített átlag"
 
-#: includes/components/elementor/widgets/jet-reviews.php:782
-#: includes/components/elementor/widgets/jet-reviews.php:1734
-#: includes/components/elementor/widgets/jet-reviews.php:2226
+#: includes/components/elementor/widgets/jet-reviews.php:786
+#: includes/components/elementor/widgets/jet-reviews.php:1738
+#: includes/components/elementor/widgets/jet-reviews.php:2230
 #: includes/meta.php:88
 msgid "Value"
 msgstr "Érték"
 
-#: includes/components/elementor/widgets/jet-reviews.php:817
-#: includes/components/elementor/widgets/jet-reviews.php:1826
-#: includes/components/elementor/widgets/jet-reviews.php:2342
+#: includes/components/elementor/widgets/jet-reviews.php:821
+#: includes/components/elementor/widgets/jet-reviews.php:1830
+#: includes/components/elementor/widgets/jet-reviews.php:2346
 msgid "Stars Rating"
 msgstr "Csillagos értékelés"
 
-#: includes/components/elementor/widgets/jet-reviews.php:826
-#: includes/components/elementor/widgets/jet-reviews.php:1835
-#: includes/components/elementor/widgets/jet-reviews.php:2351
+#: includes/components/elementor/widgets/jet-reviews.php:830
+#: includes/components/elementor/widgets/jet-reviews.php:1839
+#: includes/components/elementor/widgets/jet-reviews.php:2355
 msgid "Stars Size"
 msgstr "Csillagok mérete"
 
-#: includes/components/elementor/widgets/jet-reviews.php:847
-#: includes/components/elementor/widgets/jet-reviews.php:1856
-#: includes/components/elementor/widgets/jet-reviews.php:2372
+#: includes/components/elementor/widgets/jet-reviews.php:851
+#: includes/components/elementor/widgets/jet-reviews.php:1860
+#: includes/components/elementor/widgets/jet-reviews.php:2376
 msgid "Empty Stars Color"
 msgstr "Üres csillagok színe"
 
-#: includes/components/elementor/widgets/jet-reviews.php:861
-#: includes/components/elementor/widgets/jet-reviews.php:1870
-#: includes/components/elementor/widgets/jet-reviews.php:2386
+#: includes/components/elementor/widgets/jet-reviews.php:865
+#: includes/components/elementor/widgets/jet-reviews.php:1874
+#: includes/components/elementor/widgets/jet-reviews.php:2390
 msgid "Filled Stars Color"
 msgstr "Kitöltött csillagok színe"
 
-#: includes/components/elementor/widgets/jet-reviews.php:875
-#: includes/components/elementor/widgets/jet-reviews.php:1884
-#: includes/components/elementor/widgets/jet-reviews.php:2400
+#: includes/components/elementor/widgets/jet-reviews.php:879
+#: includes/components/elementor/widgets/jet-reviews.php:1888
+#: includes/components/elementor/widgets/jet-reviews.php:2404
 msgid "Stars Gap"
 msgstr "Csillagok közötti térköz"
 
-#: includes/components/elementor/widgets/jet-reviews.php:896
-#: includes/components/elementor/widgets/jet-reviews.php:1905
-#: includes/components/elementor/widgets/jet-reviews.php:2421
+#: includes/components/elementor/widgets/jet-reviews.php:900
+#: includes/components/elementor/widgets/jet-reviews.php:1909
+#: includes/components/elementor/widgets/jet-reviews.php:2425
 msgid "Progress Styles"
 msgstr "Folyamatjelző stílusai"
 
-#: includes/components/elementor/widgets/jet-reviews.php:905
-#: includes/components/elementor/widgets/jet-reviews.php:1914
-#: includes/components/elementor/widgets/jet-reviews.php:2430
+#: includes/components/elementor/widgets/jet-reviews.php:909
+#: includes/components/elementor/widgets/jet-reviews.php:1918
+#: includes/components/elementor/widgets/jet-reviews.php:2434
 msgid "Progress Height"
 msgstr "Folyamatjelző magassága"
 
-#: includes/components/elementor/widgets/jet-reviews.php:926
-#: includes/components/elementor/widgets/jet-reviews.php:1935
-#: includes/components/elementor/widgets/jet-reviews.php:2451
+#: includes/components/elementor/widgets/jet-reviews.php:930
+#: includes/components/elementor/widgets/jet-reviews.php:1939
+#: includes/components/elementor/widgets/jet-reviews.php:2455
 msgid "Progress Canvas Color"
 msgstr "Folyamatjelző háttérszíne"
 
-#: includes/components/elementor/widgets/jet-reviews.php:949
-#: includes/components/elementor/widgets/jet-reviews.php:1958
-#: includes/components/elementor/widgets/jet-reviews.php:2474
+#: includes/components/elementor/widgets/jet-reviews.php:953
+#: includes/components/elementor/widgets/jet-reviews.php:1962
+#: includes/components/elementor/widgets/jet-reviews.php:2478
 msgid "Progress Bar Color"
 msgstr "Folyamatjelző sáv színe"
 
-#: includes/components/elementor/widgets/jet-reviews.php:1011
-#: includes/components/elementor/widgets/jet-reviews.php:1408
+#: includes/components/elementor/widgets/jet-reviews.php:1015
+#: includes/components/elementor/widgets/jet-reviews.php:1412
 msgid "Container"
 msgstr "Konténer"
 
-#: includes/components/elementor/widgets/jet-reviews.php:1019
+#: includes/components/elementor/widgets/jet-reviews.php:1023
 msgid "Fields Gap"
 msgstr "Mezők közötti térköz"
 
-#: includes/components/elementor/widgets/jet-reviews.php:1190
+#: includes/components/elementor/widgets/jet-reviews.php:1194
 msgid "Input"
 msgstr "Beviteli mező"
 
-#: includes/components/elementor/widgets/jet-reviews.php:1255
+#: includes/components/elementor/widgets/jet-reviews.php:1259
 msgid "Submit"
 msgstr "Beküldés"
 
-#: includes/components/elementor/widgets/jet-reviews.php:1479
+#: includes/components/elementor/widgets/jet-reviews.php:1483
 msgid "Avatar"
 msgstr "Profilkép"
 
-#: includes/components/elementor/widgets/jet-reviews.php:1544
-#: templates/admin/pages/reviews/type-page.php:20
-#: templates/admin/pages/reviews/types-page.php:27
+#: includes/components/elementor/widgets/jet-reviews.php:1548
+#: templates/admin/pages/reviews/type-page.php:22
+#: templates/admin/pages/reviews/types-page.php:29
 msgid "Name"
 msgstr "Név"
 
-#: includes/components/elementor/widgets/jet-reviews.php:1578
+#: includes/components/elementor/widgets/jet-reviews.php:1582
 msgid "Mail"
 msgstr "E-mail"
 
-#: includes/components/elementor/widgets/jet-reviews.php:1648
-#: templates/admin/pages/reviews/types-page.php:30
+#: includes/components/elementor/widgets/jet-reviews.php:1652
+#: templates/admin/pages/reviews/types-page.php:32
 msgid "Fields"
 msgstr "Mezők"
 
-#: includes/components/elementor/widgets/jet-reviews.php:1657
+#: includes/components/elementor/widgets/jet-reviews.php:1661
 msgid "Fields Box"
 msgstr "Mezők doboza"
 
-#: includes/components/elementor/widgets/jet-reviews.php:1688
+#: includes/components/elementor/widgets/jet-reviews.php:1692
 msgid "Fields Box Padding"
-msgstr "Mezők dobozának belső margója"
+msgstr "Mezők dobozának paddingje"
 
-#: includes/components/elementor/widgets/jet-reviews.php:2011
+#: includes/components/elementor/widgets/jet-reviews.php:2015
 msgid "Summary"
 msgstr "Összegzés"
 
-#: includes/components/elementor/widgets/jet-reviews.php:2054
+#: includes/components/elementor/widgets/jet-reviews.php:2058
 msgid "Summary Content"
 msgstr "Összegzés tartalma"
 
-#: includes/components/elementor/widgets/jet-reviews.php:2088
+#: includes/components/elementor/widgets/jet-reviews.php:2092
 msgid "Summary Box"
 msgstr "Összegző doboz"
 
-#: includes/components/elementor/widgets/jet-reviews.php:2183
+#: includes/components/elementor/widgets/jet-reviews.php:2187
 msgid "Summary Average"
 msgstr "Összegzés átlaga"
 
-#: includes/components/elementor/widgets/jet-reviews.php:2192
-#: templates/jet-reviews/global/form.php:49
+#: includes/components/elementor/widgets/jet-reviews.php:2196
+#: templates/jet-reviews/global/form.php:53
 msgid "Legend"
 msgstr "Jelmagyarázat"
 
-#: includes/components/elementor/widgets/jet-reviews.php:2278
+#: includes/components/elementor/widgets/jet-reviews.php:2282
 msgid "Start"
-msgstr "Kezdet"
+msgstr "Indítás"
 
-#: includes/components/elementor/widgets/jet-reviews.php:2286
+#: includes/components/elementor/widgets/jet-reviews.php:2290
 msgid "End"
 msgstr "Vég"
 
-#: includes/components/elementor/widgets/jet-reviews.php:2569
+#: includes/components/elementor/widgets/jet-reviews.php:2574
 msgid ""
 "Structured data supported only for Post Meta and Manually Input sources"
-msgstr ""
-"Strukturált adatok csak a Post Meta és a Kézi bevitel forrásokhoz "
-"támogatottak"
+msgstr "A strukturált adatok csak a Post Meta és a Kézi bevitel adatforrásai esetén támogatottak"
 
-#: includes/components/elementor/widgets/jet-reviews.php:2697
+#: includes/components/elementor/widgets/jet-reviews.php:2734
 msgid "Any Review Fields Not Found"
 msgstr "Nem találhatók értékelési mezők"
 
-#: includes/components/elementor/widgets/jet-reviews.php:3138
+#: includes/components/elementor/widgets/jet-reviews.php:3177
 msgid "Manually Input"
 msgstr "Kézi bevitel"
 
-#: includes/components/elementor/widgets/jet-reviews.php:3139
+#: includes/components/elementor/widgets/jet-reviews.php:3178
 msgid "Post Meta"
 msgstr "Post Meta"
 
-#: includes/components/elementor/widgets/jet-reviews.php:3144
+#: includes/components/elementor/widgets/jet-reviews.php:3183
 msgid "WP Review Data"
-msgstr "WP Review Data"
+msgstr "WP Review adatai"
+
+#. translators: %d: number of reviews that could not be imported.
+#: includes/components/export-import/manager.php:107
+#, php-format
+msgid "Import failed. %d review couldn't be imported."
+msgid_plural "Import failed. %d reviews couldn't be imported."
+msgstr[0] "Az importálás sikertelen. %d értékelést nem sikerült importálni."
+msgstr[1] "Az importálás sikertelen. %d értékelést nem sikerült importálni."
+
+#: includes/components/export-import/manager.php:114
+msgid "Import completed with issues."
+msgstr "Az importálás problémákkal fejeződött be."
+
+#. translators: %d: number of imported reviews.
+#: includes/components/export-import/manager.php:119
+#: includes/components/export-import/manager.php:163
+#, php-format
+msgid "%d review imported."
+msgid_plural "%d reviews imported."
+msgstr[0] "%d értékelés importálva."
+msgstr[1] "%d értékelés importálva."
+
+#. translators: %d: number of existing reviews skipped during import.
+#: includes/components/export-import/manager.php:127
+#: includes/components/export-import/manager.php:171
+#, php-format
+msgid "%d existing review was skipped."
+msgid_plural "%d existing reviews were skipped."
+msgstr[0] "%d meglévő értékelés kihagyva."
+msgstr[1] "%d meglévő értékelés kihagyva."
+
+#. translators: %d: number of reviews that could not be imported.
+#: includes/components/export-import/manager.php:134
+#, php-format
+msgid "%d review couldn't be imported."
+msgid_plural "%d reviews couldn't be imported."
+msgstr[0] "%d értékelést nem sikerült importálni."
+msgstr[1] "%d értékelést nem sikerült importálni."
 
 #: includes/components/export-import/manager.php:146
+msgid "This review already exists. Nothing was imported."
+msgstr "Ez az értékelés már létezik. Nem történt importálás."
+
+#. translators: %d: number of reviews that already exist.
+#: includes/components/export-import/manager.php:149
+#, php-format
+msgid "All %d reviews already exist. Nothing was imported."
+msgstr "Már mind a %d értékelés létezik. Nem történt importálás."
+
+#: includes/components/export-import/manager.php:183
+msgid "No reviews were imported."
+msgstr "Egyetlen értékelés importálása sem történt meg."
+
+#: includes/components/export-import/manager.php:195
+#: includes/components/export-import/manager.php:374
+#: includes/components/reviews/reaction-identity.php:572
+#: includes/components/reviews/reaction-storage.php:672
 msgid "You don't have permissions to do this"
 msgstr "Nincs jogosultsága ezt megtenni"
 
-#: includes/components/export-import/manager.php:152
+#: includes/components/export-import/manager.php:207
+msgid "Invalid export request"
+msgstr "Hibás exportálási kérés"
+
+#: includes/components/export-import/manager.php:241
+msgid "Export source is missing"
+msgstr "Hiányzik az exportálás forrása"
+
+#: includes/components/export-import/manager.php:249
+#: includes/components/export-import/manager.php:255
+msgid "Export source is invalid"
+msgstr "Az exportálás forrása hibás"
+
+#: includes/components/export-import/manager.php:261
+msgid "Export source type is invalid"
+msgstr "Az exportálás forrástípusa hibás"
+
+#: includes/components/export-import/manager.php:380
+msgid "Invalid import request"
+msgstr "Hibás importálási kérés"
+
+#: includes/components/export-import/manager.php:389
+#: includes/components/export-import/manager.php:399
 msgid "File not passed"
 msgstr "A fájl nincs megadva"
 
-#: includes/components/export-import/manager.php:160
-msgid "Format not allowed"
-msgstr "A formátum nem engedélyezett"
+#: includes/components/export-import/manager.php:411
+msgid "File format not allowed. Please upload a CSV file."
+msgstr "Ez a fájlformátum nem engedélyezett. Kérjük, CSV-fájlt töltsön fel."
 
-#: includes/components/export-import/manager.php:201
+#: includes/components/export-import/manager.php:454
 msgid "No data found in file"
 msgstr "Nem található adat a fájlban"
 
-#: includes/components/reviews/admin-pages/list-page.php:66
-#: includes/components/reviews/admin-pages/list-page.php:67
+#: includes/components/reviews/admin-pages/list-page.php:70
+#: includes/components/reviews/admin-pages/list-page.php:71
 msgid "All Reviews"
 msgstr "Összes értékelés"
+
+#: includes/components/reviews/admin-pages/list-page.php:162
+msgid "The import file could not be processed. Please try again."
+msgstr "Az importálási fájl feldolgozása nem sikerült. Kérjük, próbálja meg újra."
 
 #: includes/components/reviews/admin-pages/type-page.php:39
 #: includes/components/reviews/admin-pages/type-page.php:40
 msgid "Review Type"
 msgstr "Értékeléstípus"
 
-#: includes/components/reviews/admin-pages/type-page.php:97
+#: includes/components/reviews/admin-pages/type-page.php:100
 msgid "Add New Review Type"
 msgstr "Új értékeléstípus hozzáadása"
 
-#: includes/components/reviews/admin-pages/type-page.php:100
+#: includes/components/reviews/admin-pages/type-page.php:103
 msgid "Edit Review Type"
 msgstr "Értékeléstípus szerkesztése"
 
 #: includes/components/reviews/admin-pages/types-page.php:39
 #: includes/components/reviews/admin-pages/types-page.php:40
-#: templates/admin/pages/reviews/types-page.php:7
+#: templates/admin/pages/reviews/types-page.php:9
 msgid "Review Types"
 msgstr "Értékeléstípusok"
 
@@ -1608,23 +1900,145 @@ msgstr "A típus neve nem lehet üres"
 msgid "List of fields cannot be empty"
 msgstr "A mezők listája nem lehet üres"
 
-#: includes/components/reviews/render/review-listing-render.php:59
-msgid "Choose File"
-msgstr "Fájl kiválasztása"
+#: includes/components/reviews/custom-fields.php:154
+msgid "Review fields must be a list of at most 50 fields."
+msgstr "Az értékelési mezők legfeljebb 50 mezőből álló listát alkothatnak."
 
-#: includes/components/reviews/render/review-listing-render.php:60
-msgid "Upload your file here, or"
-msgstr "Töltse fel a fájlját itt, vagy"
+#: includes/components/reviews/custom-fields.php:164
+msgid "Invalid field definition."
+msgstr "Hibás meződefiníció."
 
-#: includes/components/reviews/render/review-listing-render.php:61
-msgid "Maximum size"
-msgstr "Maximális méret"
+#: includes/components/reviews/custom-fields.php:170
+msgid "Create a new field to use a different type."
+msgstr "Másik típus használatához hozzon létre egy új mezőt."
 
-#: includes/components/reviews/render/review-listing-render.php:122
+#: includes/components/reviews/custom-fields.php:180
+msgid "Invalid or duplicate field ID or type."
+msgstr "Hibás vagy duplikált mező-ID vagy -típus."
+
+#: includes/components/reviews/custom-fields.php:184
+msgid "The type of a saved field cannot be changed. Create a new field."
+msgstr "A mentett mező típusa nem módosítható. Hozzon létre egy új mezőt."
+
+#: includes/components/reviews/custom-fields.php:194
+msgid "Field labels must contain at most 250 characters."
+msgstr "A mezőcímkék legfeljebb 250 karakterből állhatnak."
+
+#: includes/components/reviews/custom-fields.php:220
+msgid "Rating step and maximum must be positive numbers."
+msgstr "Az értékelési lépésnek és a maximális értéknek pozitív számoknak kell lenniük."
+
+#: includes/components/reviews/custom-fields.php:229
+msgid "Invalid field visibility."
+msgstr "A mező láthatósági beállítása hibás."
+
+#: includes/components/reviews/custom-fields.php:236
+msgid "Invalid placeholder (maximum 250 characters)."
+msgstr "Hibás helytartó (legfeljebb 250 karakter)."
+
+#: includes/components/reviews/custom-fields.php:244
+msgid "Maximum length must be between 1 and 10000."
+msgstr "A maximális hossz értékének 1 és 10000 között kell lennie."
+
+#: includes/components/reviews/custom-fields.php:253
+msgid "Select requires between 1 and 100 options."
+msgstr "A kiválasztási mezőnek 1–100 opciót kell tartalmaznia."
+
+#: includes/components/reviews/custom-fields.php:261
+msgid "Invalid Select option."
+msgstr "Hibás opció a választómezőben."
+
+#: includes/components/reviews/custom-fields.php:273
+msgid "Invalid or duplicate Select option."
+msgstr "Hibás vagy duplikált opció a választómezőben."
+
+#: includes/components/reviews/custom-fields.php:279
+msgid ""
+"Select option labels cannot be empty. Enter a label or remove the option."
+msgstr "A választómező opcióinak címkéi nem lehetnek üresek. Adjon meg egy címkét, vagy távolítsa el az opciót."
+
+#: includes/components/reviews/custom-fields.php:362
+msgid "Custom fields payload is too large."
+msgstr "Az egyéni mezők adatai túl nagyok."
+
+#: includes/components/reviews/custom-fields.php:376
+msgid "Invalid custom fields payload."
+msgstr "Hibás egyéni mezőadatok."
+
+#: includes/components/reviews/custom-fields.php:390
+msgid "Unknown field or invalid value. The form settings may have changed."
+msgstr "Ismeretlen mező vagy hibás érték. Lehetséges, hogy az űrlap beállításai megváltoztak."
+
+#: includes/components/reviews/custom-fields.php:396
+msgid "Historical answers cannot be edited."
+msgstr "A korábbi válaszok nem szerkeszthetők."
+
+#: includes/components/reviews/custom-fields.php:400
+msgid "The answer exceeds the field length limit."
+msgstr "A válasz meghaladja a mező hosszkorlátját."
+
+#: includes/components/reviews/custom-fields.php:421
+msgid "This Select option is no longer available."
+msgstr "Ez az opció a választómezőben már nem érhető el."
+
+#: includes/components/reviews/custom-fields.php:433
+#, php-format
+msgid "Please complete %s."
+msgstr "Kérjük, töltse ki a következőt: %s."
+
+#: includes/components/reviews/custom-fields.php:483
+msgid "Invalid custom_fields snapshot, version or size."
+msgstr "Az egyéni mezők pillanatképe, verziója vagy mérete hibás."
+
+#: includes/components/reviews/custom-fields.php:501
+msgid "Invalid custom_fields answer."
+msgstr "Hibás egyéni mezőválasz."
+
+#: includes/components/reviews/custom-fields.php:521
+msgid "Invalid custom_fields Select answer."
+msgstr "Hibás válasz az egyéni választómezőben."
+
+#: includes/components/reviews/custom-fields.php:544
+msgid "Rating fields have changed. Please reload the form."
+msgstr "Az értékelési mezők megváltoztak. Kérjük, töltse be újra az űrlapot."
+
+#: includes/components/reviews/custom-fields.php:563
+msgid "Invalid rating value or field."
+msgstr "Hibás értékelési érték vagy mező."
+
+#: includes/components/reviews/reaction-storage.php:637
+msgid "JetReviews could not finish the automatic review reaction migration."
+msgstr "A JetReviews nem tudta befejezni az értékelési reakciók automatikus áttelepítését."
+
+#: includes/components/reviews/reaction-storage.php:638
+msgid ""
+"JetReviews automatic review reaction migration has stopped making progress."
+msgstr "A JetReviews értékelési reakcióinak automatikus áttelepítése nem halad tovább."
+
+#. translators: 1: processed users, 2: migrated reactions, 3: unresolved
+#. entries, 4: failures.
+#: includes/components/reviews/reaction-storage.php:647
+#, php-format
+msgid ""
+" Processed users: %1$d; migrated reactions: %2$d; unresolved entries: %3$d; "
+"failures: %4$d."
+msgstr " Feldolgozott felhasználók: %1$d; áttelepített reakciók: %2$d; feloldatlan bejegyzések: %3$d; hibák: %4$d."
+
+#: includes/components/reviews/reaction-storage.php:660
+msgid ""
+"A legacy MyISAM table was detected. Advisory locks serialize requests, but "
+"full rollback guarantees are unavailable."
+msgstr "Régi MyISAM-tábla található. A tanácsadó zárolások sorba rendezik a kéréseket, de a teljes visszaállítás nem garantálható."
+
+#: includes/components/reviews/reaction-storage.php:662
+msgid "Retry migration"
+msgstr "Áttelepítés újrapróbálása"
+
+#: includes/components/reviews/render/review-listing-render.php:133
 msgid "JetReviews unavailable for jetThemeCore template preview"
 msgstr "A JetReviews nem érhető el a jetThemeCore sablonelőnézethez"
 
-#: includes/components/reviews/render/review-listing-render.php:132
+#: includes/components/reviews/render/review-listing-render.php:145
 #, php-format
 msgid ""
 "Review type for %s source and %s source type not found. Create a new review "
@@ -1634,29 +2048,65 @@ msgstr ""
 "Hozzon létre új értékelést az aktuális forrástípushoz <a href=\"%s\"> Itt "
 "</a>"
 
-#: includes/components/reviews/render/review-listing-render.php:140
+#: includes/components/reviews/render/review-listing-render.php:156
 #, php-format
 msgid "Review type for %s source and %s source type not found"
 msgstr ""
 "Nem található értékeléstípus a(z) %s forráshoz és a(z) %s forrástípushoz"
 
-#: includes/components/reviews/render/review-listing-render.php:182
+#: includes/components/reviews/render/review-listing-render.php:181
+#: templates/jet-reviews/global/form.php:8
+msgid "*You cannot review your own post"
+msgstr "*Saját bejegyzését nem értékelheti"
+
+#: includes/components/reviews/render/review-listing-render.php:220
+msgid "This user can rate reviews"
+msgstr "Ez a felhasználó pontozhatja az értékeléseket"
+
+#: includes/components/reviews/render/review-listing-render.php:373
 msgid "This user can comment reviews"
 msgstr "Ez a felhasználó hozzászólhat az értékelésekhez"
 
-#: includes/components/reviews/render/review-listing-render.php:186
-msgid "This user can rate reviews"
-msgstr "Ez a felhasználó értékeléseket értékelhet"
+#: includes/components/reviews/render/review-listing-render.php:378
+#: includes/components/user/conditions/user-guest.php:27
+msgid "*Guests cannot publish reviews"
+msgstr "*Vendégek nem tehetnek közzé értékeléseket"
 
-#: includes/components/reviews/rest-api/add-review-type.php:89
+#: includes/components/reviews/render/review-listing-render.php:379
+#: includes/components/user/conditions/user-role.php:27
+msgid "*User with this role cannot publish a new review"
+msgstr ""
+"*Ezzel a szerepkörrel rendelkező felhasználó nem tehet közzé új értékelést"
+
+#: includes/components/reviews/rest-api/add-review-type.php:78
+#: includes/components/reviews/rest-api/update-review-type.php:80
+msgid "Review type name cannot be empty"
+msgstr "Az értékeléstípus neve nem lehet üres"
+
+#: includes/components/reviews/rest-api/add-review-type.php:85
+#: includes/components/reviews/rest-api/update-review-type.php:87
+msgid "Review type slug cannot be empty"
+msgstr "Az értékeléstípus slugja nem lehet üres"
+
+#: includes/components/reviews/rest-api/add-review-type.php:92
+msgid "Review type slug contains invalid characters"
+msgstr "Az értékeléstípus slugja hibás karaktereket tartalmaz"
+
+#: includes/components/reviews/rest-api/add-review-type.php:99
 msgid "Type with this slug is already exist"
 msgstr "Ilyen sluggal rendelkező típus már létezik"
 
-#: includes/components/reviews/rest-api/add-review-type.php:98
-msgid "Type with this source type is already exist"
-msgstr "Ilyen forrástípushoz tartozó típus már létezik"
+#: includes/components/reviews/rest-api/add-review-type.php:105
+#: includes/components/reviews/rest-api/add-review-type.php:111
+#: includes/components/reviews/rest-api/update-review-type.php:94
+msgid "Review type source settings are invalid"
+msgstr "Az értékeléstípus forrásbeállításai hibásak"
 
-#: includes/components/reviews/rest-api/add-review-type.php:115
+#: includes/components/reviews/rest-api/add-review-type.php:137
+msgid "Type with this source type is already exist"
+msgstr "Már létezik típus ezzel a forrástípussal"
+
+#: includes/components/reviews/rest-api/add-review-type.php:154
 msgid "New review type has been created"
 msgstr "Új értékeléstípus létrehozva"
 
@@ -1686,27 +2136,35 @@ msgstr "Az értékelés médiái törölve lettek"
 msgid "Review type have been deleted"
 msgstr "Az értékeléstípus törölve lett"
 
-#: includes/components/reviews/rest-api/delete-review.php:88
+#: includes/components/reviews/rest-api/delete-review.php:85
 msgid "The review has not been deleted"
 msgstr "Az értékelés nem lett törölve"
 
-#: includes/components/reviews/rest-api/delete-review.php:106
+#: includes/components/reviews/rest-api/delete-review.php:107
 msgid "The review have been deleted"
 msgstr "Az értékelés törölve lett"
 
-#: includes/components/reviews/rest-api/import-reviews.php:87
+#: includes/components/reviews/rest-api/import-reviews.php:150
 msgid "The reviews have been imported"
 msgstr "Az értékelések importálva lettek"
 
-#: includes/components/reviews/rest-api/submit-review.php:131
+#: includes/components/reviews/rest-api/submit-review.php:141
 msgid "You can't leave a review. Demo mode is active"
 msgstr "Nem írhat értékelést. A demó mód aktív"
 
-#: includes/components/reviews/rest-api/submit-review.php:168
-msgid "User with this mail is already exist"
-msgstr "Ezzel az e-maillel rendelkező felhasználó már létezik"
+#: includes/components/reviews/rest-api/submit-review.php:162
+msgid "The review source is invalid. Please reload the form."
+msgstr "Az értékelés forrása hibás. Kérjük, töltse be újra az űrlapot."
 
-#: includes/components/reviews/rest-api/submit-review.php:210
+#: includes/components/reviews/rest-api/submit-review.php:168
+msgid "The review type is no longer available."
+msgstr "Az értékeléstípus már nem érhető el."
+
+#: includes/components/reviews/rest-api/submit-review.php:199
+msgid "User with this mail is already exist"
+msgstr "Már létezik felhasználó ezzel az e-mail-címmel"
+
+#: includes/components/reviews/rest-api/submit-review.php:245
 msgid "DataBase Error"
 msgstr "Adatbázis-hiba"
 
@@ -1718,27 +2176,31 @@ msgstr "Hiba az értékelés jóváhagyásakor"
 msgid "Success Review Approval"
 msgstr "Az értékelés jóváhagyása sikeres"
 
-#: includes/components/reviews/rest-api/update-review-type.php:89
+#: includes/components/reviews/rest-api/update-review-type.php:127
 #: includes/components/settings/rest-api/save-settings.php:70
 #: includes/rest-api/endpoints/plugin-settings.php:53
 msgid "Server Error"
 msgstr "Szerverhiba"
 
-#: includes/components/reviews/rest-api/update-review-type.php:95
+#: includes/components/reviews/rest-api/update-review-type.php:135
+msgid "Review type was not found"
+msgstr "Az értékeléstípus nem található"
+
+#: includes/components/reviews/rest-api/update-review-type.php:141
+msgid "Review type is already up to date"
+msgstr "Az értékeléstípus már naprakész"
+
+#: includes/components/reviews/rest-api/update-review-type.php:148
 msgid "Review type has been updated"
 msgstr "Az értékeléstípus frissítve lett"
 
-#: includes/components/reviews/rest-api/update-review.php:70
+#: includes/components/reviews/rest-api/update-review.php:72
 msgid "Review Update Error"
 msgstr "Hiba az értékelés frissítésekor"
 
-#: includes/components/reviews/rest-api/update-review.php:76
+#: includes/components/reviews/rest-api/update-review.php:80
 msgid "Review data have been updated"
 msgstr "Az értékelés adatai frissítve lettek"
-
-#: includes/components/reviews/sources/post.php:24
-msgid "Post"
-msgstr "Bejegyzés"
 
 #: includes/components/reviews/sources/user.php:24
 msgid "User"
@@ -1758,7 +2220,7 @@ msgstr "Integrációk"
 
 #: includes/components/settings/admin-pages/post-types-submodule.php:36
 msgid "Post & User Source"
-msgstr "Bejegyzés és felhasználó forrása"
+msgstr "Bejegyzés és felhasználó mint forrás"
 
 #: includes/components/settings/rest-api/save-settings.php:82
 #: includes/rest-api/endpoints/plugin-settings.php:65
@@ -1773,23 +2235,14 @@ msgstr "Metaadat-szinkronizálási hiba"
 msgid "Post metadata have been updated"
 msgstr "A bejegyzés metaadatai frissítve lettek"
 
-#: includes/components/user/conditions/user-guest.php:27
-msgid "*Guests cannot publish reviews"
-msgstr "*Vendégek nem tehetnek közzé értékeléseket"
-
-#: includes/components/user/conditions/user-role.php:27
-msgid "*User with this role cannot publish a new review"
-msgstr ""
-"*Ezzel a szerepkörrel rendelkező felhasználó nem tehet közzé új értékelést"
-
 #: includes/components/user/manager.php:237
 #: includes/components/user/manager.php:262
 msgid "*Publish your review"
 msgstr "*Tegye közzé az értékelését"
 
-#: includes/components/user/manager.php:294
+#: includes/components/user/manager.php:353
 #: includes/components/user/verifications/guest-user.php:41
-#: includes/tools.php:210
+#: includes/tools.php:288
 msgid "Guest"
 msgstr "Vendég"
 
@@ -1799,9 +2252,9 @@ msgstr "Vendég felhasználó"
 
 #: includes/meta.php:67
 msgid "Review Box Title"
-msgstr "Értékelő doboz címe"
+msgstr "Értékelési doboz címe"
 
-#: includes/meta.php:72 templates/admin/pages/reviews/type-page.php:67
+#: includes/meta.php:72 templates/admin/pages/reviews/type-page.php:70
 msgid "Review Fields"
 msgstr "Értékelési mezők"
 
@@ -1817,7 +2270,7 @@ msgstr "Értékelési mező címkéje"
 msgid "Field Max Value"
 msgstr "Mező maximális értéke"
 
-#: includes/meta.php:95 templates/admin/pages/reviews/type-page.php:125
+#: includes/meta.php:95 templates/admin/pages/reviews/type-page.php:205
 msgid "Max Value"
 msgstr "Maximális érték"
 
@@ -1835,7 +2288,7 @@ msgstr "JetReviews strukturált adatok"
 
 #: includes/meta.php:127
 msgid "What was reviewed?"
-msgstr "Mit értékelt?"
+msgstr "Mi volt az értékelés tárgya?"
 
 #: includes/meta.php:128
 msgid "Reviewed Item Name"
@@ -1853,628 +2306,626 @@ msgstr "Néhány szó az értékelt elemről"
 msgid "Reviewd Item Description"
 msgstr "Értékelt elem leírása"
 
-#: includes/tools.php:230
+#: includes/tools.php:308
 msgid " ago"
 msgstr " ezelőtt"
 
-#: includes/tools.php:306
+#: includes/tools.php:384
 msgid "Full"
 msgstr "Teljes"
 
-#: includes/tools.php:340
+#: includes/tools.php:418
 msgid "None"
 msgstr "Nincs"
 
-#: includes/tools.php:341
+#: includes/tools.php:419
 msgid "ID"
-msgstr "ID"
+msgstr "Azonosító"
 
-#: includes/tools.php:344
+#: includes/tools.php:422
 msgid "Name (slug)"
 msgstr "Név (slug)"
 
-#: includes/tools.php:346
+#: includes/tools.php:424
 msgid "Modified"
 msgstr "Módosítva"
 
-#: includes/tools.php:347
+#: includes/tools.php:425
 msgid "Rand"
 msgstr "Véletlen"
 
-#: includes/tools.php:348
+#: includes/tools.php:426
 msgid "Comment Count"
 msgstr "Hozzászólások száma"
 
-#: includes/tools.php:349
+#: includes/tools.php:427
 msgid "Menu Order"
 msgstr "Menüsorrend"
 
-#: includes/tools.php:360
+#: includes/tools.php:438
 msgid "Descending"
 msgstr "Csökkenő"
 
-#: includes/tools.php:361
+#: includes/tools.php:439
 msgid "Ascending"
 msgstr "Növekvő"
 
-#: includes/tools.php:372
+#: includes/tools.php:450
 msgid "Baseline"
 msgstr "Alapvonal"
 
-#: includes/tools.php:373
+#: includes/tools.php:451
 msgid "Top"
 msgstr "Felül"
 
-#: includes/tools.php:374
+#: includes/tools.php:452
 msgid "Middle"
 msgstr "Középen"
 
-#: includes/tools.php:375
+#: includes/tools.php:453
 msgid "Bottom"
 msgstr "Alul"
 
-#: includes/tools.php:376
+#: includes/tools.php:454
 msgid "Sub"
 msgstr "Alsó index"
 
-#: includes/tools.php:377
+#: includes/tools.php:455
 msgid "Super"
 msgstr "Felső index"
 
-#: includes/tools.php:378
+#: includes/tools.php:456
 msgid "Text Top"
 msgstr "Szöveg teteje"
 
-#: includes/tools.php:379
+#: includes/tools.php:457
 msgid "Text Bottom"
 msgstr "Szöveg alja"
 
-#: includes/tools.php:425 includes/tools.php:447
+#: includes/tools.php:503 includes/tools.php:525
 msgid "Angle"
 msgstr "Angle"
 
-#: includes/tools.php:426 includes/tools.php:448
+#: includes/tools.php:504 includes/tools.php:526
 msgid "Chevron"
 msgstr "Chevron"
 
-#: includes/tools.php:427 includes/tools.php:449
+#: includes/tools.php:505 includes/tools.php:527
 msgid "Angle Double"
-msgstr "Angle Double"
+msgstr "Dupla szögjel"
 
-#: includes/tools.php:428 includes/tools.php:450
+#: includes/tools.php:506 includes/tools.php:528
 msgid "Arrow"
 msgstr "Arrow"
 
-#: includes/tools.php:429 includes/tools.php:451
+#: includes/tools.php:507 includes/tools.php:529
 msgid "Caret"
-msgstr "Caret"
+msgstr "Nyílhegy"
 
-#: includes/tools.php:430 includes/tools.php:452
+#: includes/tools.php:508 includes/tools.php:530
 msgid "Long Arrow"
-msgstr "Long Arrow"
+msgstr "Hosszú nyíl"
 
-#: includes/tools.php:431 includes/tools.php:453
+#: includes/tools.php:509 includes/tools.php:531
 msgid "Arrow Circle"
-msgstr "Arrow Circle"
+msgstr "Körbe foglalt nyíl"
 
-#: includes/tools.php:432 includes/tools.php:454
+#: includes/tools.php:510 includes/tools.php:532
 msgid "Chevron Circle"
-msgstr "Chevron Circle"
+msgstr "Körbe foglalt V alakú jel"
 
-#: includes/tools.php:433 includes/tools.php:455
+#: includes/tools.php:511 includes/tools.php:533
 msgid "Caret Square"
-msgstr "Caret Square"
+msgstr "Négyzetbe foglalt nyílhegy"
 
-#: includes/tools.php:543
+#: includes/tools.php:628
 msgid "Jan"
 msgstr "Jan."
 
-#: includes/tools.php:547
+#: includes/tools.php:632
 msgid "Feb"
 msgstr "Febr."
 
-#: includes/tools.php:551
+#: includes/tools.php:636
 msgid "Mar"
 msgstr "Márc."
 
-#: includes/tools.php:555
+#: includes/tools.php:640
 msgid "Apr"
 msgstr "Ápr."
 
-#: includes/tools.php:559
+#: includes/tools.php:644
 msgid "May"
 msgstr "Máj."
 
-#: includes/tools.php:563
+#: includes/tools.php:648
 msgid "Jun"
 msgstr "Jún."
 
-#: includes/tools.php:567
+#: includes/tools.php:652
 msgid "Jul"
 msgstr "Júl."
 
-#: includes/tools.php:571
+#: includes/tools.php:656
 msgid "Aug"
 msgstr "Aug."
 
-#: includes/tools.php:575
+#: includes/tools.php:660
 msgid "Sep"
 msgstr "Szept."
 
-#: includes/tools.php:579
+#: includes/tools.php:664
 msgid "Oct"
 msgstr "Okt"
 
-#: includes/tools.php:583
+#: includes/tools.php:668
 msgid "Nov"
 msgstr "Nov"
 
-#: includes/tools.php:587
+#: includes/tools.php:672
 msgid "Dec"
 msgstr "Dec"
 
-#: includes/tools.php:660
-msgid "Product"
-msgstr "Termék"
-
-#: includes/tools.php:664
-msgid "Place"
-msgstr "Hely"
-
-#: includes/tools.php:668
-msgid "Service"
-msgstr "Szolgáltatás"
-
-#: includes/tools.php:672
-msgid "Organization"
-msgstr "Szervezet"
-
-#: includes/tools.php:676
-msgid "Event"
-msgstr "Esemény"
-
-#: includes/tools.php:680
-msgid "CreativeWork"
-msgstr "CreativeWork"
-
-#: includes/tools.php:692
+#: includes/tools.php:823
 msgid "JPEG"
 msgstr "JPEG"
 
-#: includes/tools.php:696
+#: includes/tools.php:827
 msgid "PNG"
 msgstr "PNG"
 
-#: includes/tools.php:700
+#: includes/tools.php:831
 msgid "GIF"
 msgstr "GIF"
 
-#: includes/tools.php:917 includes/tools.php:1050
+#: includes/tools.php:1184 includes/tools.php:1317
 #, php-format
 msgid "Approve it: %s"
 msgstr "Hagyja jóvá: %s"
 
-#: includes/tools.php:918 includes/tools.php:1053
+#: includes/tools.php:1185 includes/tools.php:1320
 #, php-format
 msgid "Delete it: %s"
 msgstr "Törölje: %s"
 
-#: includes/tools.php:942 includes/tools.php:950 includes/tools.php:1037
+#: includes/tools.php:1209 includes/tools.php:1217 includes/tools.php:1304
 #, php-format
 msgid "A new review for \"%s\" has been submitted"
-msgstr "Új értékelést nyújtottak be a(z) \"%s\" számára"
+msgstr "Új értékelést küldtek be ehhez: „%s”"
 
-#: includes/tools.php:944 includes/tools.php:951 includes/tools.php:1032
-#: includes/tools.php:1038
+#: includes/tools.php:1211 includes/tools.php:1218 includes/tools.php:1299
+#: includes/tools.php:1305
 #, php-format
 msgid "[%1$s] Please check a new review: \"%2$s\""
-msgstr "[%1$s] Kérem, ellenőrizze az új értékelést: \"%2$s\""
+msgstr "[%1$s] Kérem, ellenőrizze az új értékelést: „%2$s”"
 
-#: includes/tools.php:968
+#: includes/tools.php:1235
 #, php-format
 msgid "Total satisfy percent: %1$s"
 msgstr "Összesített elégedettségi arány: %1$s"
 
-#: includes/tools.php:970 includes/tools.php:1044
+#: includes/tools.php:1237 includes/tools.php:1311
 #, php-format
 msgid "Author: %1$s"
 msgstr "Szerző: %1$s"
 
-#: includes/tools.php:971 includes/tools.php:1045
+#: includes/tools.php:1238 includes/tools.php:1312
 #, php-format
 msgid "Email: %1$s"
 msgstr "E-mail: %1$s"
 
-#: includes/tools.php:972 includes/tools.php:1046
+#: includes/tools.php:1239 includes/tools.php:1313
 #, php-format
 msgid "Date: %1$s"
 msgstr "Dátum: %1$s"
 
-#: includes/tools.php:973 includes/tools.php:1047
+#: includes/tools.php:1240 includes/tools.php:1314
 #, php-format
 msgid "Comment: %s"
 msgstr "Hozzászólás: %s"
 
-#: includes/tools.php:1029
+#: includes/tools.php:1296
 #, php-format
 msgid "A new comment for \"%s\" has been submitted"
-msgstr "Új hozzászólást nyújtottak be a(z) \"%s\" számára"
+msgstr "Új hozzászólást küldtek be ehhez: „%s”"
 
-#: templates/admin-templates/advanced.php:6
+#: templates/admin-templates/advanced.php:8
+msgid "Hide review form for post author"
+msgstr "Az értékelési űrlap elrejtése a bejegyzés szerzője elől"
+
+#: templates/admin-templates/advanced.php:9
+msgid "Hide the review form when the current user is the post author."
+msgstr "Az értékelési űrlap elrejtése, ha az aktuális felhasználó a bejegyzés szerzője."
+
+#: templates/admin-templates/advanced.php:19
 msgid "Enable disallowed content checking"
 msgstr "Tiltott tartalom ellenőrzésének engedélyezése"
 
-#: templates/admin-templates/advanced.php:7
+#: templates/admin-templates/advanced.php:20
 msgid "Checking the content of reviews and comments for disallowed words."
-msgstr ""
-"Értékelések és hozzászólások tartalmának ellenőrzése tiltott szavakra."
+msgstr "Tiltott szavak keresése az értékelések és hozzászólások tartalmában."
 
-#: templates/admin-templates/advanced.php:27
+#: templates/admin-templates/advanced.php:40
 msgid "Disallowed words"
 msgstr "Tiltott szavak"
 
-#: templates/admin-templates/advanced.php:28
+#: templates/admin-templates/advanced.php:41
 msgid "Disallowed word 1, Disallowed word 2"
 msgstr "Tiltott szó 1, Tiltott szó 2"
 
-#: templates/admin-templates/advanced.php:29
+#: templates/admin-templates/advanced.php:42
 msgid ""
 "When a reviews contains any of these words in its content, it will be "
 "checked as unapproved automatically. Separate keywords with commas"
-msgstr ""
-"Ha egy értékelés tartalmában bármelyik ilyen szó szerepel, automatikusan nem"
-" jóváhagyottnak lesz megjelölve. Kulcsszavakat vesszővel válassza el"
+msgstr "Ha egy értékelés tartalmában szerepel e szavak bármelyike, a rendszer automatikusan nem jóváhagyottként jelöli meg. A kulcsszavakat vesszővel válassza el"
 
-#: templates/admin-templates/advanced.php:40
+#: templates/admin-templates/advanced.php:53
 msgid "New review notify"
 msgstr "Értesítés új értékelésről"
 
-#: templates/admin-templates/advanced.php:41
+#: templates/admin-templates/advanced.php:54
 msgid "Email admin whenever anyone submit a review"
-msgstr ""
-"E-mail küldése az adminisztrátornak, valahányszor bárki értékelést nyújt be"
+msgstr "E-mail küldése az adminisztrátornak, valahányszor bárki értékelést nyújt be"
 
-#: templates/admin-templates/advanced.php:61
+#: templates/admin-templates/advanced.php:74
 msgid "Review approve needed notify"
 msgstr "Értesítés, ha értékelés jóváhagyása szükséges"
 
-#: templates/admin-templates/advanced.php:62
-#: templates/admin-templates/advanced.php:106
+#: templates/admin-templates/advanced.php:75
+#: templates/admin-templates/advanced.php:119
 msgid "Email admin only when approval is needed"
-msgstr ""
-"E-mail küldése az adminisztrátornak csak akkor, ha jóváhagyás szükséges"
+msgstr "E-mail küldése az adminisztrátornak csak akkor, ha jóváhagyás szükséges"
 
-#: templates/admin-templates/advanced.php:72
+#: templates/admin-templates/advanced.php:85
 msgid "Post author notify"
 msgstr "Bejegyzés szerzőjének értesítése"
 
-#: templates/admin-templates/advanced.php:73
+#: templates/admin-templates/advanced.php:86
 msgid "Email post author whenever anyone submit a review"
 msgstr ""
 "E-mail küldése a bejegyzés szerzőjének, valahányszor bárki értékelést nyújt "
 "be"
 
-#: templates/admin-templates/advanced.php:84
+#: templates/admin-templates/advanced.php:97
 msgid "New comment notify"
 msgstr "Értesítés új hozzászólásról"
 
-#: templates/admin-templates/advanced.php:85
+#: templates/admin-templates/advanced.php:98
 msgid "Email admin whenever anyone submit a comment"
-msgstr ""
-"E-mail küldése az adminisztrátornak, valahányszor bárki hozzászólást nyújt "
-"be"
+msgstr "E-mail küldése az adminisztrátornak, valahányszor bárki hozzászólást nyújt be"
 
-#: templates/admin-templates/advanced.php:105
+#: templates/admin-templates/advanced.php:118
 msgid "Comment approve needed notify"
 msgstr "Értesítés, ha hozzászólás jóváhagyása szükséges"
 
-#: templates/admin-templates/integrations.php:6
+#: templates/admin-templates/integrations.php:8
 msgid "Enable reCAPTCHA v3"
 msgstr "reCAPTCHA v3 engedélyezése"
 
-#: templates/admin-templates/integrations.php:7
+#: templates/admin-templates/integrations.php:9
 msgid "Use reCAPTCHA v3 form verification"
 msgstr "reCAPTCHA v3 űrlapellenőrzés használata"
 
-#: templates/admin-templates/integrations.php:27
+#: templates/admin-templates/integrations.php:29
 msgid "Site Key:"
 msgstr "Webhelykulcs:"
 
-#: templates/admin-templates/integrations.php:28
-#: templates/admin-templates/integrations.php:38
+#: templates/admin-templates/integrations.php:30
+#: templates/admin-templates/integrations.php:40
 msgid "Register reCAPTCHA v3 keys here."
 msgstr "Itt regisztrálhatja a reCAPTCHA v3 kulcsokat."
 
-#: templates/admin-templates/integrations.php:37
+#: templates/admin-templates/integrations.php:39
 msgid "Secret Key:"
 msgstr "Titkos kulcs:"
 
-#: templates/admin-templates/post-types.php:4
+#: templates/admin-templates/post-types.php:6
 msgid ""
 "Your settings have been saved and transferred to the appropriate review "
 "types. "
 msgstr ""
 "A beállításait elmentettük és átvittük a megfelelő értékelési típusokra. "
 
-#: templates/admin-templates/post-types.php:4
+#: templates/admin-templates/post-types.php:6
 msgid "View review types"
 msgstr "Értékelési típusok megtekintése"
 
-#: templates/admin/pages/comments/list-page.php:7
+#: templates/admin/pages/comments/list-page.php:9
 msgid "Comment List"
 msgstr "Hozzászólások listája"
 
-#: templates/admin/pages/comments/list-page.php:12
-#: templates/admin/pages/reviews/list-page.php:29
+#: templates/admin/pages/comments/list-page.php:14
+#: templates/admin/pages/reviews/list-page.php:31
 msgid "Bulk Actions"
 msgstr "Csoportos műveletek"
 
-#: templates/admin/pages/comments/list-page.php:22
-#: templates/admin/pages/reviews/list-page.php:39
+#: templates/admin/pages/comments/list-page.php:24
+#: templates/admin/pages/reviews/list-page.php:41
 msgid "Select action"
-msgstr "Válasszon műveletet"
+msgstr "Művelet kiválasztása"
 
-#: templates/admin/pages/comments/list-page.php:26
-#: templates/admin/pages/comments/list-page.php:137
-#: templates/admin/pages/reviews/list-page.php:43
-#: templates/admin/pages/reviews/list-page.php:185
+#: templates/admin/pages/comments/list-page.php:28
+#: templates/admin/pages/comments/list-page.php:139
+#: templates/admin/pages/reviews/list-page.php:45
+#: templates/admin/pages/reviews/list-page.php:192
 msgid "Unapprove"
 msgstr "Jóváhagyás visszavonása"
 
-#: templates/admin/pages/comments/list-page.php:30
-#: templates/admin/pages/comments/list-page.php:138
-#: templates/admin/pages/reviews/list-page.php:47
-#: templates/admin/pages/reviews/list-page.php:186
+#: templates/admin/pages/comments/list-page.php:32
+#: templates/admin/pages/comments/list-page.php:140
+#: templates/admin/pages/reviews/list-page.php:49
+#: templates/admin/pages/reviews/list-page.php:193
 msgid "Approve"
 msgstr "Jóváhagyás"
 
-#: templates/admin/pages/comments/list-page.php:34
-#: templates/admin/pages/comments/list-page.php:152
-#: templates/admin/pages/reviews/list-page.php:51
-#: templates/admin/pages/reviews/list-page.php:200
-#: templates/admin/pages/reviews/type-page.php:384
-#: templates/admin/pages/reviews/types-page.php:63
-#: templates/admin/pages/reviews/types-page.php:75
+#: templates/admin/pages/comments/list-page.php:36
+#: templates/admin/pages/comments/list-page.php:154
+#: templates/admin/pages/reviews/list-page.php:53
+#: templates/admin/pages/reviews/list-page.php:207
+#: templates/admin/pages/reviews/type-page.php:464
+#: templates/admin/pages/reviews/types-page.php:65
+#: templates/admin/pages/reviews/types-page.php:77
 msgid "Delete"
 msgstr "Törlés"
 
-#: templates/admin/pages/comments/list-page.php:45
-#: templates/admin/pages/reviews/list-page.php:62
+#: templates/admin/pages/comments/list-page.php:47
+#: templates/admin/pages/reviews/list-page.php:64
 msgid "Apply"
-msgstr "Alkalmaz"
+msgstr "Alkalmazás"
 
-#: templates/admin/pages/comments/list-page.php:50
+#: templates/admin/pages/comments/list-page.php:52
 msgid "Search Comments"
 msgstr "Hozzászólások keresése"
 
-#: templates/admin/pages/comments/list-page.php:67
-#: templates/admin/pages/reviews/list-page.php:84
+#: templates/admin/pages/comments/list-page.php:69
+#: templates/admin/pages/reviews/list-page.php:86
 msgid "Search"
 msgstr "Keresés"
 
-#: templates/admin/pages/comments/list-page.php:95
-#: templates/admin/pages/comments/list-page.php:184
+#: templates/admin/pages/comments/list-page.php:97
+#: templates/admin/pages/comments/list-page.php:186
 msgid "Comment"
 msgstr "Hozzászólás"
 
-#: templates/admin/pages/comments/list-page.php:96
+#: templates/admin/pages/comments/list-page.php:98
 msgid "Assigned to"
 msgstr "Hozzárendelve"
 
-#: templates/admin/pages/comments/list-page.php:98
-#: templates/admin/pages/reviews/list-page.php:115
-#: templates/admin/pages/reviews/list-page.php:325
-#: templates/admin/pages/reviews/type-page.php:352
-#: templates/admin/pages/reviews/types-page.php:31
+#: templates/admin/pages/comments/list-page.php:100
+#: templates/admin/pages/reviews/list-page.php:117
+#: templates/admin/pages/reviews/list-page.php:398
+#: templates/admin/pages/reviews/type-page.php:432
+#: templates/admin/pages/reviews/types-page.php:33
 msgid "Actions"
 msgstr "Műveletek"
 
-#: templates/admin/pages/comments/list-page.php:145
-#: templates/admin/pages/reviews/list-page.php:193
-#: templates/admin/pages/reviews/types-page.php:49
+#: templates/admin/pages/comments/list-page.php:147
+#: templates/admin/pages/reviews/list-page.php:200
+#: templates/admin/pages/reviews/types-page.php:51
 msgid "Edit"
 msgstr "Szerkesztés"
 
-#: templates/admin/pages/comments/list-page.php:177
+#: templates/admin/pages/comments/list-page.php:179
 msgid "Edit Comment"
 msgstr "Hozzászólás szerkesztése"
 
-#: templates/admin/pages/dashboard/main.php:11
+#: templates/admin/pages/dashboard/main.php:13
 msgid "General Review Stats"
 msgstr "Általános értékelési statisztikák"
 
-#: templates/admin/pages/dashboard/main.php:18
+#: templates/admin/pages/dashboard/main.php:20
 msgid "Approved Reviews"
 msgstr "Jóváhagyott értékelések"
 
-#: templates/admin/pages/dashboard/main.php:22
+#: templates/admin/pages/dashboard/main.php:24
 msgid "Not Approved Reviews"
 msgstr "Nem jóváhagyott értékelések"
 
-#: templates/admin/pages/dashboard/main.php:31
+#: templates/admin/pages/dashboard/main.php:33
 msgid "Approved Comments"
 msgstr "Jóváhagyott hozzászólások"
 
-#: templates/admin/pages/dashboard/main.php:35
+#: templates/admin/pages/dashboard/main.php:37
 msgid "Not Approved Comments"
 msgstr "Nem jóváhagyott hozzászólások"
 
-#: templates/admin/pages/dashboard/main.php:58
+#: templates/admin/pages/dashboard/main.php:60
 msgid "Review Types Stats"
 msgstr "Értékeléstípusok statisztikái"
 
-#: templates/admin/pages/dashboard/main.php:95
+#: templates/admin/pages/dashboard/main.php:97
 msgid "Reviews:"
 msgstr "Értékelések:"
 
-#: templates/admin/pages/dashboard/main.php:98
+#: templates/admin/pages/dashboard/main.php:100
 msgid "Approved reviews:"
 msgstr "Jóváhagyott értékelések:"
 
-#: templates/admin/pages/dashboard/main.php:101
+#: templates/admin/pages/dashboard/main.php:103
 msgid "Not approved reviews:"
 msgstr "Nem jóváhagyott értékelések:"
 
-#: templates/admin/pages/dashboard/main.php:104
+#: templates/admin/pages/dashboard/main.php:106
 msgid "Review type:"
 msgstr "Értékelés típusa:"
 
-#: templates/admin/pages/dashboard/main.php:107
+#: templates/admin/pages/dashboard/main.php:109
 msgid "Allowed:"
 msgstr "Engedélyezve:"
 
-#: templates/admin/pages/dashboard/main.php:110
+#: templates/admin/pages/dashboard/main.php:112
 msgid "Reviews need approval:"
 msgstr "Értékelések jóváhagyást igényelnek:"
 
-#: templates/admin/pages/dashboard/main.php:113
+#: templates/admin/pages/dashboard/main.php:115
 msgid "Comments allowed:"
 msgstr "Hozzászólások engedélyezve:"
 
-#: templates/admin/pages/dashboard/main.php:116
+#: templates/admin/pages/dashboard/main.php:118
 msgid "Comments need approval:"
 msgstr "Hozzászólások jóváhagyást igényelnek:"
 
-#: templates/admin/pages/dashboard/main.php:119
+#: templates/admin/pages/dashboard/main.php:121
 msgid "Likes/dislikes allowed:"
 msgstr "Tetszik/nem tetszik engedélyezve:"
 
-#: templates/admin/pages/reviews/list-page.php:9
+#: templates/admin/pages/reviews/list-page.php:11
 msgid "Review List"
 msgstr "Értékelések listája"
 
-#: templates/admin/pages/reviews/list-page.php:16
-#: templates/admin/vue-templates/export-reviews-form.php:46
+#: templates/admin/pages/reviews/list-page.php:18
+#: templates/admin/vue-templates/export-reviews-form.php:48
 msgid "Export"
 msgstr "Exportálás"
 
-#: templates/admin/pages/reviews/list-page.php:67
+#: templates/admin/pages/reviews/list-page.php:69
 msgid "Search reviews"
 msgstr "Értékelések keresése"
 
-#: templates/admin/pages/reviews/list-page.php:149
+#: templates/admin/pages/reviews/list-page.php:151
 msgid "Comments: "
 msgstr "Hozzászólások: "
 
-#: templates/admin/pages/reviews/list-page.php:172
-#: templates/admin/pages/reviews/list-page.php:313
+#: templates/admin/pages/reviews/list-page.php:174
+#: templates/admin/pages/reviews/list-page.php:386
 msgid "Source: "
 msgstr "Forrás: "
 
-#: templates/admin/pages/reviews/list-page.php:175
+#: templates/admin/pages/reviews/list-page.php:177
 msgid "Source type: "
 msgstr "Forrás típusa: "
 
-#: templates/admin/pages/reviews/list-page.php:219
+#: templates/admin/pages/reviews/list-page.php:180
+msgid "Post: "
+msgstr "Bejegyzés: "
+
+#: templates/admin/pages/reviews/list-page.php:226
 msgid "Edit Review"
 msgstr "Értékelés szerkesztése"
 
-#: templates/admin/pages/reviews/list-page.php:226
+#: templates/admin/pages/reviews/list-page.php:233
 msgid "Back to list"
 msgstr "Vissza a listához"
 
-#: templates/admin/pages/reviews/list-page.php:232
+#: templates/admin/pages/reviews/list-page.php:239
 msgid "Review Content"
 msgstr "Értékelés tartalma"
 
-#: templates/admin/pages/reviews/list-page.php:237
+#: templates/admin/pages/reviews/list-page.php:244
 msgid "Edit review title"
 msgstr "Értékelés címének szerkesztése"
 
-#: templates/admin/pages/reviews/list-page.php:248
+#: templates/admin/pages/reviews/list-page.php:255
 msgid "Edit review content"
 msgstr "Értékelés tartalmának szerkesztése"
 
-#: templates/admin/pages/reviews/list-page.php:258
+#: templates/admin/pages/reviews/list-page.php:265
 msgid "Rating Fields"
 msgstr "Értékelési mezők"
 
-#: templates/admin/pages/reviews/list-page.php:266
+#: templates/admin/pages/reviews/list-page.php:273
 msgid "Name:"
 msgstr "Név:"
 
-#: templates/admin/pages/reviews/list-page.php:267
-#: templates/admin/pages/reviews/type-page.php:78
+#: templates/admin/pages/reviews/list-page.php:274
+#: templates/admin/pages/reviews/type-page.php:81
 msgid "Step:"
 msgstr "Lépésköz:"
 
-#: templates/admin/pages/reviews/list-page.php:268
+#: templates/admin/pages/reviews/list-page.php:275
 msgid "Max:"
 msgstr "Max.:"
 
-#: templates/admin/pages/reviews/list-page.php:269
+#: templates/admin/pages/reviews/list-page.php:276
 msgid "Value:"
 msgstr "Érték:"
 
-#: templates/admin/pages/reviews/list-page.php:270
+#: templates/admin/pages/reviews/list-page.php:277
 msgid "Rating:"
 msgstr "Értékelés:"
 
-#: templates/admin/pages/reviews/list-page.php:277
+#: templates/admin/pages/reviews/list-page.php:287
+#: templates/admin/pages/reviews/list-page.php:327
+msgid "Additional answer"
+msgstr "További válasz"
+
+#: templates/admin/pages/reviews/list-page.php:289
+#: templates/admin/pages/reviews/type-page.php:136
+msgid "Public"
+msgstr "Nyilvános"
+
+#: templates/admin/pages/reviews/list-page.php:290
+#: templates/admin/pages/reviews/type-page.php:136
+msgid "Admin only"
+msgstr "Csak adminisztrátoroknak"
+
+#: templates/admin/pages/reviews/list-page.php:329
+msgid "Historical answer"
+msgstr "Korábbi válasz"
+
+#: templates/admin/pages/reviews/list-page.php:350
 msgid "Media"
 msgstr "Média"
 
-#: templates/admin/pages/reviews/list-page.php:278
+#: templates/admin/pages/reviews/list-page.php:351
 msgid "Attached media files for review"
 msgstr "Értékeléshez csatolt médiafájlok"
 
-#: templates/admin/pages/reviews/list-page.php:298
+#: templates/admin/pages/reviews/list-page.php:371
 msgid "Review Details"
 msgstr "Értékelés részletei"
 
-#: templates/admin/pages/reviews/list-page.php:304
+#: templates/admin/pages/reviews/list-page.php:377
 msgid "Login: "
 msgstr "Felhasználónév: "
 
-#: templates/admin/pages/reviews/list-page.php:305
+#: templates/admin/pages/reviews/list-page.php:378
 msgid "Mail: "
 msgstr "E-mail: "
 
-#: templates/admin/pages/reviews/list-page.php:310
+#: templates/admin/pages/reviews/list-page.php:383
 msgid "Date: "
 msgstr "Dátum: "
 
-#: templates/admin/pages/reviews/list-page.php:316
+#: templates/admin/pages/reviews/list-page.php:389
 msgid "Source Type: "
 msgstr "Forrás típusa: "
 
-#: templates/admin/pages/reviews/list-page.php:319
+#: templates/admin/pages/reviews/list-page.php:392
 msgid "Assigned to: "
 msgstr "Hozzárendelve: "
 
-#: templates/admin/pages/reviews/list-page.php:322
+#: templates/admin/pages/reviews/list-page.php:395
 msgid "Review Type: "
 msgstr "Értékelés típusa: "
 
-#: templates/admin/pages/reviews/list-page.php:333
+#: templates/admin/pages/reviews/list-page.php:406
 msgid "Save Review Data"
 msgstr "Értékelés adatainak mentése"
 
-#: templates/admin/pages/reviews/type-page.php:21
+#: templates/admin/pages/reviews/type-page.php:23
 msgid "Set unique name for your review type. Eg. `Projects`"
 msgstr "Állítson be egyedi nevet az értékeléstípusához. Pl.: `Projects`"
 
-#: templates/admin/pages/reviews/type-page.php:30
+#: templates/admin/pages/reviews/type-page.php:32
 msgid "Slug"
 msgstr "Slug"
 
-#: templates/admin/pages/reviews/type-page.php:31
+#: templates/admin/pages/reviews/type-page.php:33
 msgid ""
-"Set slug for your review type. Slug should contain only letters, numbers and"
-" `-` or `_` chars"
-msgstr ""
-"Állítsa be értékeléstípusa slugját. A slug csak betűket, számokat és `-` "
-"vagy `_` karaktereket tartalmazhat"
+"Set a permanent slug for your review type. It can contain only letters, "
+"numbers and `-` or `_` chars and cannot be changed after creation."
+msgstr "Állítson be állandó slugot az értékeléstípushoz. Csak betűket, számokat, valamint „-” vagy „_” karaktereket tartalmazhat, és létrehozás után nem módosítható."
 
-#: templates/admin/pages/reviews/type-page.php:41
+#: templates/admin/pages/reviews/type-page.php:44
 msgid "Choose review source"
 msgstr "Válassza ki az értékelés forrását"
 
-#: templates/admin/pages/reviews/type-page.php:51
+#: templates/admin/pages/reviews/type-page.php:54
 msgid "Choose review source type"
-msgstr "Válassza ki az értékelés forrástípusát"
+msgstr "Válassza ki az értékelés forrásának típusát"
 
-#: templates/admin/pages/reviews/type-page.php:68
+#: templates/admin/pages/reviews/type-page.php:71
 msgid ""
 "Leave blank if you want to use the default rating fields or create your own "
 "set of fields to be used for this type of review"
@@ -2483,152 +2934,200 @@ msgstr ""
 "vagy hozzon létre egy saját mezőkészletet, amelyet ennél az "
 "értékeléstípusnál használ"
 
-#: templates/admin/pages/reviews/type-page.php:71
+#: templates/admin/pages/reviews/type-page.php:74
 msgid "Default fields:"
 msgstr "Alapértelmezett mezők:"
 
-#: templates/admin/pages/reviews/type-page.php:75
+#: templates/admin/pages/reviews/type-page.php:78
 msgid "Label:"
 msgstr "Címke:"
 
-#: templates/admin/pages/reviews/type-page.php:81
+#: templates/admin/pages/reviews/type-page.php:84
 msgid "Max value:"
 msgstr "Maximális érték:"
 
-#: templates/admin/pages/reviews/type-page.php:116
+#: templates/admin/pages/reviews/type-page.php:112
+msgid "Field Type"
+msgstr "Mező típusa"
+
+#: templates/admin/pages/reviews/type-page.php:113
+msgid ""
+"Field type cannot be changed after saving. To use another type, create a new"
+" field."
+msgstr "A mező típusa mentés után nem módosítható. Másik típus használatához hozzon létre egy új mezőt."
+
+#: templates/admin/pages/reviews/type-page.php:132
+msgid "Visibility"
+msgstr "Láthatóság"
+
+#: templates/admin/pages/reviews/type-page.php:133
+msgid ""
+"The field appears in the form in both modes. Public shows saved answers in "
+"reviews; Admin only shows them to administrators."
+msgstr "A mező mindkét módban megjelenik az űrlapon. Nyilvános módban a mentett válaszok megjelennek az értékelésekben; adminisztrátori módban pedig csak az adminisztrátorok láthatják őket."
+
+#: templates/admin/pages/reviews/type-page.php:141
+msgid "Placeholder"
+msgstr "Helyőrző"
+
+#: templates/admin/pages/reviews/type-page.php:147
+msgid "Required"
+msgstr "Kötelező"
+
+#: templates/admin/pages/reviews/type-page.php:156
+msgid "Maximum length"
+msgstr "Maximális hossz"
+
+#: templates/admin/pages/reviews/type-page.php:170
+msgid "Option label"
+msgstr "Opció címkéje"
+
+#: templates/admin/pages/reviews/type-page.php:178
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: templates/admin/pages/reviews/type-page.php:181
+msgid "Options"
+msgstr "Opciók"
+
+#: templates/admin/pages/reviews/type-page.php:188
+msgid "Add option"
+msgstr "Válaszlehetőség hozzáadása"
+
+#: templates/admin/pages/reviews/type-page.php:195
 msgid "Step"
 msgstr "Lépésköz"
 
-#: templates/admin/pages/reviews/type-page.php:143
+#: templates/admin/pages/reviews/type-page.php:223
 msgid "Allowed roles"
 msgstr "Engedélyezett szerepkörök"
 
-#: templates/admin/pages/reviews/type-page.php:144
+#: templates/admin/pages/reviews/type-page.php:224
 msgid "User roles that can leave reviews"
 msgstr "Azok a felhasználói szerepkörök, amelyek értékeléseket írhatnak"
 
-#: templates/admin/pages/reviews/type-page.php:155
+#: templates/admin/pages/reviews/type-page.php:235
 msgid "Review author verification"
 msgstr "Értékelés szerzőjének hitelesítése"
 
-#: templates/admin/pages/reviews/type-page.php:156
+#: templates/admin/pages/reviews/type-page.php:236
 msgid "Choose review author verification types"
 msgstr "Válassza ki az értékelés szerzőjének hitelesítési típusait"
 
-#: templates/admin/pages/reviews/type-page.php:167
+#: templates/admin/pages/reviews/type-page.php:247
 msgid "Comment author verification"
 msgstr "Hozzászólás szerzőjének hitelesítése"
 
-#: templates/admin/pages/reviews/type-page.php:168
-#: templates/admin/pages/reviews/type-page.php:236
+#: templates/admin/pages/reviews/type-page.php:248
+#: templates/admin/pages/reviews/type-page.php:316
 msgid "Choose сomment author verification types"
 msgstr "Válassza ki a hozzászólás szerzőjének hitelesítési típusait"
 
-#: templates/admin/pages/reviews/type-page.php:179
+#: templates/admin/pages/reviews/type-page.php:259
 msgid "New review approval"
 msgstr "Új értékelés jóváhagyása"
 
-#: templates/admin/pages/reviews/type-page.php:180
+#: templates/admin/pages/reviews/type-page.php:260
 msgid "Need admin approval for a new review"
 msgstr "Új értékeléshez adminisztrátori jóváhagyás szükséges"
 
-#: templates/admin/pages/reviews/type-page.php:190
+#: templates/admin/pages/reviews/type-page.php:270
 msgid "Allow comments"
 msgstr "Hozzászólások engedélyezése"
 
-#: templates/admin/pages/reviews/type-page.php:191
+#: templates/admin/pages/reviews/type-page.php:271
 msgid "Allow review comments for this type of post"
 msgstr ""
 "Értékelésekhez tartozó hozzászólások engedélyezése ehhez a bejegyzéstípushoz"
 
-#: templates/admin/pages/reviews/type-page.php:201
+#: templates/admin/pages/reviews/type-page.php:281
 msgid "New review comments need approval"
 msgstr "Az új értékelési hozzászólásokhoz jóváhagyás szükséges"
 
-#: templates/admin/pages/reviews/type-page.php:202
+#: templates/admin/pages/reviews/type-page.php:282
 msgid "Need admin approval for a new review comment"
 msgstr "Új értékelési hozzászóláshoz adminisztrátori jóváhagyás szükséges"
 
-#: templates/admin/pages/reviews/type-page.php:212
+#: templates/admin/pages/reviews/type-page.php:292
 msgid "Allow review rate actions"
 msgstr "Értékelési műveletek engedélyezése"
 
-#: templates/admin/pages/reviews/type-page.php:213
+#: templates/admin/pages/reviews/type-page.php:293
 msgid "Allow likes/dislikes for review items for this type of post"
 msgstr ""
 "Tetszik/Nem tetszik engedélyezése az értékelési elemekhez ennél a "
 "bejegyzéstípusnál"
 
-#: templates/admin/pages/reviews/type-page.php:223
+#: templates/admin/pages/reviews/type-page.php:303
 msgid "Upload media"
 msgstr "Média feltöltése"
 
-#: templates/admin/pages/reviews/type-page.php:224
+#: templates/admin/pages/reviews/type-page.php:304
 msgid "Allow uploading media files for review"
 msgstr "Médiafájlok feltöltésének engedélyezése az értékeléshez"
 
-#: templates/admin/pages/reviews/type-page.php:235
+#: templates/admin/pages/reviews/type-page.php:315
 msgid "Allowed media"
 msgstr "Engedélyezett médiafájlok"
 
-#: templates/admin/pages/reviews/type-page.php:249
+#: templates/admin/pages/reviews/type-page.php:329
 msgid "Max upload file size(MB)"
-msgstr "Maximális feltöltési fájlméret(MB)"
+msgstr "Maximális feltölthető fájlméret (MB)"
 
-#: templates/admin/pages/reviews/type-page.php:250
+#: templates/admin/pages/reviews/type-page.php:330
 msgid "The maximum file size that can be uploaded for review"
 msgstr "Az értékeléshez feltölthető fájl maximális mérete"
 
-#: templates/admin/pages/reviews/type-page.php:268
+#: templates/admin/pages/reviews/type-page.php:348
 msgid "Use source metadata"
 msgstr "Forrás metaadatainak használata"
 
-#: templates/admin/pages/reviews/type-page.php:269
+#: templates/admin/pages/reviews/type-page.php:349
 msgid "Use source metadata for jet reviews data"
 msgstr "A forrás metaadatainak használata a jet reviews adataihoz"
 
-#: templates/admin/pages/reviews/type-page.php:280
+#: templates/admin/pages/reviews/type-page.php:360
 msgid "Average rating metadata key"
 msgstr "Átlagos értékelés meta kulcsa"
 
-#: templates/admin/pages/reviews/type-page.php:281
+#: templates/admin/pages/reviews/type-page.php:361
 msgid "Define meta key, which will store the average source rating."
 msgstr ""
 "Adja meg azt a meta kulcsot, amely a forrás átlagos értékelését tárolja."
 
-#: templates/admin/pages/reviews/type-page.php:292
+#: templates/admin/pages/reviews/type-page.php:372
 msgid "Post meta ratio bound"
 msgstr "Bejegyzés meta aránykorlát"
 
-#: templates/admin/pages/reviews/type-page.php:293
+#: templates/admin/pages/reviews/type-page.php:373
 msgid "Specify ratio conversion limit for source metadata."
 msgstr "Adja meg a forrás metaadatainak aránykonverziós határértékét."
 
-#: templates/admin/pages/reviews/type-page.php:304
+#: templates/admin/pages/reviews/type-page.php:384
 msgid "Sync average rating"
 msgstr "Átlagos értékelés szinkronizálása"
 
-#: templates/admin/pages/reviews/type-page.php:305
+#: templates/admin/pages/reviews/type-page.php:385
 msgid "Add/Update jet-rating data to source metadata"
-msgstr "jet-rating adatok hozzáadása/frissítése a forrás metaadataiban"
+msgstr "jet-rating-adatok hozzáadása/frissítése a forrás metaadataihoz"
 
-#: templates/admin/pages/reviews/type-page.php:314
+#: templates/admin/pages/reviews/type-page.php:394
 msgid "Sync rating data"
 msgstr "Értékelési adatok szinkronizálása"
 
-#: templates/admin/pages/reviews/type-page.php:327
+#: templates/admin/pages/reviews/type-page.php:407
 msgid "Use Structure Data"
 msgstr "Strukturált adatok használata"
 
-#: templates/admin/pages/reviews/type-page.php:328
+#: templates/admin/pages/reviews/type-page.php:408
 msgid "Rendering structure data in JSON-LD format"
 msgstr "Strukturált adatok renderelése JSON-LD formátumban"
 
-#: templates/admin/pages/reviews/type-page.php:340
+#: templates/admin/pages/reviews/type-page.php:420
 msgid "Choose structure data type"
 msgstr "Válassza ki a strukturált adatok típusát"
 
-#: templates/admin/pages/reviews/type-page.php:354
+#: templates/admin/pages/reviews/type-page.php:434
 msgid ""
 "If you are not sure where to start, please check tutorials list below this "
 "block"
@@ -2636,58 +3135,93 @@ msgstr ""
 "Ha nem biztos benne, hol kezdje, kérjük, tekintse meg az alábbi blokk alatt "
 "található oktatóanyagok listáját"
 
-#: templates/admin/pages/reviews/type-page.php:364
+#: templates/admin/pages/reviews/type-page.php:444
 msgid "Create Review Type"
 msgstr "Értékeléstípus létrehozása"
 
-#: templates/admin/pages/reviews/type-page.php:374
+#: templates/admin/pages/reviews/type-page.php:454
 msgid "Update Review Type"
 msgstr "Értékeléstípus frissítése"
 
-#: templates/admin/pages/reviews/types-page.php:12
+#: templates/admin/pages/reviews/types-page.php:14
 msgid "Add New Type"
 msgstr "Új típus hozzáadása"
 
-#: templates/admin/pages/reviews/types-page.php:19
+#: templates/admin/pages/reviews/types-page.php:21
 msgid "No Types found"
 msgstr "Nem találhatók típusok"
 
-#: templates/admin/pages/reviews/types-page.php:79
+#: templates/admin/pages/reviews/types-page.php:81
 msgid "Please confirm type deletion"
 msgstr "Kérjük, erősítse meg a típus törlését"
 
-#: templates/admin/vue-templates/export-reviews-form.php:5
+#: templates/admin/vue-templates/export-reviews-form.php:7
 msgid "Export Reviews"
 msgstr "Értékelések exportálása"
 
-#: templates/admin/vue-templates/export-reviews-form.php:6
+#: templates/admin/vue-templates/export-reviews-form.php:8
 msgid "Here you can export a reviews."
 msgstr "Itt exportálhat értékeléseket."
 
-#: templates/admin/vue-templates/import-reviews-form.php:5
+#: templates/admin/vue-templates/import-reviews-form.php:7
 msgid "Import Reviews"
 msgstr "Értékelések importálása"
 
-#: templates/admin/vue-templates/import-reviews-form.php:6
-msgid "Here you can import a reviews."
-msgstr "Itt importálhat értékeléseket."
+#: templates/admin/vue-templates/import-reviews-form.php:8
+msgid "Import reviews from a CSV file."
+msgstr "Értékelések importálása CSV-fájlból."
 
-#: templates/admin/vue-templates/import-reviews-form.php:23
+#: templates/admin/vue-templates/import-reviews-form.php:25
 msgid "No Data found"
 msgstr "Nem található adat"
 
-#: templates/admin/vue-templates/import-reviews-form.php:73
+#: templates/admin/vue-templates/import-reviews-form.php:75
 msgid "Parse"
-msgstr "Elemezze"
+msgstr "Feldolgozás"
 
-#: templates/jet-reviews/global/form.php:20
+#: templates/jet-reviews/global/form.php:24
 msgid "Leave a review"
 msgstr "Írjon értékelést"
 
-#: templates/jet-reviews/global/form.php:54
+#: templates/jet-reviews/global/form.php:58
 msgid "Description"
 msgstr "Leírás"
 
-#: templates/jet-reviews/global/form.php:59
+#: templates/jet-reviews/global/form.php:63
 msgid "Submit Review"
-msgstr "Küldje el az értékelést"
+msgstr "Értékelés küldése"
+
+#: templates/public/vue-templates/jet-advanced-reviews-form.php:82
+msgid "Only site administrators can see your answer."
+msgstr "Válaszát csak a webhely adminisztrátorai láthatják."
+
+#~ msgid "Format not allowed"
+#~ msgstr "A formátum nem engedélyezett"
+
+#~ msgid "Product"
+#~ msgstr "Termék"
+
+#~ msgid "Place"
+#~ msgstr "Hely"
+
+#~ msgid "Service"
+#~ msgstr "Szolgáltatás"
+
+#~ msgid "Organization"
+#~ msgstr "Szervezet"
+
+#~ msgid "Event"
+#~ msgstr "Esemény"
+
+#~ msgid "CreativeWork"
+#~ msgstr "CreativeWork"
+
+#~ msgid ""
+#~ "Set slug for your review type. Slug should contain only letters, numbers and"
+#~ " `-` or `_` chars"
+#~ msgstr ""
+#~ "Állítsa be értékeléstípusa slugját. A slug csak betűket, számokat és `-` "
+#~ "vagy `_` karaktereket tartalmazhat"
+
+#~ msgid "Here you can import a reviews."
+#~ msgstr "Itt importálhat értékeléseket."

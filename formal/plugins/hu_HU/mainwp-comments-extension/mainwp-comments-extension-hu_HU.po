@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: MainWP Comments Extension 5.1\n"
+"Project-Id-Version: MainWP Comments Extension 6.0\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T18:09:55+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: MainWP Comments Extension\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 5.1\n"
+"X-Plugin-Version: 6.0\n"
 
 #. Plugin Name of the plugin
 #: mainwp-comments-extension.php
@@ -36,232 +36,426 @@ msgstr "https://mainwp.com"
 msgid ""
 "MainWP Comments Extension is an extension for the MainWP plugin that enables"
 " you to manage comments on your child sites."
-msgstr ""
-"A MainWP Comments Extension a MainWP bővítmény kiegészítője, amely lehetővé "
-"teszi a hozzászólások kezelését a gyermek webhelyein."
+msgstr "A MainWP Comments Extension a MainWP bővítményhez készült kiterjesztés, amely lehetővé teszi a hozzászólások kezelését a gyermekwebhelyein."
 
 #. Author of the plugin
 #: mainwp-comments-extension.php
 msgid "MainWP"
 msgstr "MainWP"
 
-#: class/mainwp-comment.class.php:51
+#: class/mainwp-comment-utility.class.php:216
+msgid "Nothing to show here!"
+msgstr "Itt nincs megjeleníthető tartalom!"
+
+#: class/mainwp-comment-utility.class.php:221
+msgid "Check back later."
+msgstr "Nézzen vissza később."
+
+#: class/mainwp-comment.class.php:90
 msgid "Bulk Actions"
 msgstr "Csoportos műveletek"
 
-#: class/mainwp-comment.class.php:52 class/mainwp-comment.class.php:433
-#: widget/mainwp-recent-comments.widget.php:114
+#: class/mainwp-comment.class.php:91 class/mainwp-comment.class.php:502
+#: widget/mainwp-recent-comments.widget.php:163
 msgid "Unapprove"
 msgstr "Jóváhagyás visszavonása"
 
-#: class/mainwp-comment.class.php:53 class/mainwp-comment.class.php:437
-#: widget/mainwp-recent-comments.widget.php:165
+#: class/mainwp-comment.class.php:92 class/mainwp-comment.class.php:506
+#: widget/mainwp-recent-comments.widget.php:218
 msgid "Approve"
 msgstr "Jóváhagyás"
 
-#: class/mainwp-comment.class.php:54
+#: class/mainwp-comment.class.php:93
 msgid "Mark as Spam"
 msgstr "Megjelölés spamként"
 
-#: class/mainwp-comment.class.php:55 class/mainwp-comment.class.php:448
+#: class/mainwp-comment.class.php:94 class/mainwp-comment.class.php:517
 msgid "Not Spam"
 msgstr "Nem spam"
 
-#: class/mainwp-comment.class.php:56
+#: class/mainwp-comment.class.php:95
 msgid "Move to Trash"
 msgstr "Lomtárba helyezés"
 
-#: class/mainwp-comment.class.php:57 class/mainwp-comment.class.php:447
+#: class/mainwp-comment.class.php:96 class/mainwp-comment.class.php:516
 msgid "Restore"
 msgstr "Visszaállítás"
 
-#: class/mainwp-comment.class.php:58
+#: class/mainwp-comment.class.php:97
 msgid "Delete Permanently"
 msgstr "Végleges törlés"
 
-#: class/mainwp-comment.class.php:60
+#: class/mainwp-comment.class.php:99
 msgid "Apply"
-msgstr "Alkalmaz"
+msgstr "Alkalmazás"
 
-#: class/mainwp-comment.class.php:76
-msgid "Loading Comments..."
-msgstr "Hozzászólások betöltése..."
+#: class/mainwp-comment.class.php:115
+msgid "Loading..."
+msgstr "Betöltés..."
 
-#: class/mainwp-comment.class.php:85 class/mainwp-comment.class.php:264
+#: class/mainwp-comment.class.php:125 class/mainwp-comment.class.php:317
 msgid "Author"
 msgstr "Szerző"
 
-#: class/mainwp-comment.class.php:86 class/mainwp-comment.class.php:265
+#: class/mainwp-comment.class.php:126 class/mainwp-comment.class.php:318
+#: includes/logs/mainwp-network-activity-connector.php:129
+#: includes/logs/mainwp-network-activity-connector.php:138
 msgid "Comment"
 msgstr "Hozzászólás"
 
-#: class/mainwp-comment.class.php:87 class/mainwp-comment.class.php:266
+#: class/mainwp-comment.class.php:127 class/mainwp-comment.class.php:319
 msgid "Status"
 msgstr "Állapot"
 
-#: class/mainwp-comment.class.php:88 class/mainwp-comment.class.php:267
+#: class/mainwp-comment.class.php:128 class/mainwp-comment.class.php:320
 msgid "Site"
 msgstr "Webhely"
 
-#: class/mainwp-comment.class.php:109 class/mainwp-comment.class.php:337
+#: class/mainwp-comment.class.php:148 class/mainwp-comment.class.php:389
 msgid "No comments found"
 msgstr "Nem található hozzászólás"
 
-#: class/mainwp-comment.class.php:133
+#: class/mainwp-comment.class.php:170
+msgid "Find Comments"
+msgstr "Hozzászólások keresése"
+
+#: class/mainwp-comment.class.php:171
+msgid ""
+"Select the Child Sites you want, choose any filters, then click Show "
+"Comments."
+msgstr "Válassza ki a kívánt gyermekwebhelyeket és a szűrőket, majd kattintson a Hozzászólások megjelenítése gombra."
+
+#: class/mainwp-comment.class.php:183
 msgid "Select Sites"
 msgstr "Webhelyek kiválasztása"
 
-#: class/mainwp-comment.class.php:140
+#: class/mainwp-comment.class.php:190
 msgid "Select Status"
 msgstr "Állapot kiválasztása"
 
-#: class/mainwp-comment.class.php:145
+#: class/mainwp-comment.class.php:195
 msgid "All Statuses"
 msgstr "Összes állapot"
 
-#: class/mainwp-comment.class.php:146
-#: widget/mainwp-recent-comments.widget.php:70
-#: widget/mainwp-recent-comments.widget.php:73
+#: class/mainwp-comment.class.php:196
+#: includes/logs/mainwp-network-activity-connector.php:71
+#: widget/mainwp-recent-comments.widget.php:114
+#: widget/mainwp-recent-comments.widget.php:117
 msgid "Approved"
 msgstr "Jóváhagyott"
 
-#: class/mainwp-comment.class.php:147
-#: widget/mainwp-recent-comments.widget.php:74
+#: class/mainwp-comment.class.php:197
+#: widget/mainwp-recent-comments.widget.php:118
 msgid "Pending"
 msgstr "Függőben"
 
-#: class/mainwp-comment.class.php:148 class/mainwp-comment.class.php:442
-#: widget/mainwp-recent-comments.widget.php:117
-#: widget/mainwp-recent-comments.widget.php:168
+#: class/mainwp-comment.class.php:198 class/mainwp-comment.class.php:511
+#: widget/mainwp-recent-comments.widget.php:166
+#: widget/mainwp-recent-comments.widget.php:221
 msgid "Spam"
 msgstr "Spam"
 
-#: class/mainwp-comment.class.php:149 class/mainwp-comment.class.php:443
-#: widget/mainwp-recent-comments.widget.php:116
-#: widget/mainwp-recent-comments.widget.php:167
+#: class/mainwp-comment.class.php:199 class/mainwp-comment.class.php:512
+#: widget/mainwp-recent-comments.widget.php:165
+#: widget/mainwp-recent-comments.widget.php:220
 msgid "Trash"
 msgstr "Lomtár"
 
-#: class/mainwp-comment.class.php:159
+#: class/mainwp-comment.class.php:209
 msgid "Search Options"
 msgstr "Keresési beállítások"
 
-#: class/mainwp-comment.class.php:164
+#: class/mainwp-comment.class.php:214
 msgid "Containing keyword"
 msgstr "Kulcsszót tartalmaz"
 
-#: class/mainwp-comment.class.php:169
+#: class/mainwp-comment.class.php:219
 msgid "Date range"
 msgstr "Dátumtartomány"
 
-#: class/mainwp-comment.class.php:174 class/mainwp-comment.class.php:186
+#: class/mainwp-comment.class.php:224 class/mainwp-comment.class.php:231
 msgid "Date"
 msgstr "Dátum"
 
-#: class/mainwp-comment.class.php:205
+#: class/mainwp-comment.class.php:244
 msgid "Show Comments"
 msgstr "Hozzászólások megjelenítése"
 
-#: class/mainwp-comment.class.php:415
+#: class/mainwp-comment.class.php:484
 msgid "In response to: "
 msgstr "Válasz erre: "
 
-#: class/mainwp-comment.class.php:441
-#: widget/mainwp-recent-comments.widget.php:115
-#: widget/mainwp-recent-comments.widget.php:166
+#: class/mainwp-comment.class.php:510
+#: widget/mainwp-recent-comments.widget.php:164
+#: widget/mainwp-recent-comments.widget.php:219
 msgid "Edit"
 msgstr "Szerkesztés"
 
-#: class/mainwp-comment.class.php:452
+#: class/mainwp-comment.class.php:521
 msgid "Delete permanently"
 msgstr "Végleges törlés"
 
-#: mainwp-comments-extension.php:154
+#: includes/logs/mainwp-network-activity-connector.php:61
+#: includes/logs/mainwp-network-activity-connector.php:88
+#: mainwp-comments-extension.php:305
 msgid "Comments"
 msgstr "Hozzászólások"
 
-#: widget/mainwp-recent-comments.widget.php:64
+#: includes/logs/mainwp-network-activity-connector.php:72
+msgid "Unapproved"
+msgstr "Nem jóváhagyott"
+
+#: includes/logs/mainwp-network-activity-connector.php:73
+msgid "Marked as Spam"
+msgstr "Spamként megjelölve"
+
+#: includes/logs/mainwp-network-activity-connector.php:74
+msgid "Unmarked as Spam"
+msgstr "Spamjelölés eltávolítva"
+
+#: includes/logs/mainwp-network-activity-connector.php:75
+msgid "Restored"
+msgstr "Visszaállítva"
+
+#: includes/logs/mainwp-network-activity-connector.php:76
+msgid "Trashed"
+msgstr "Kukába helyezve"
+
+#: includes/logs/mainwp-network-activity-connector.php:77
+msgid "Deleted Permanently"
+msgstr "Véglegesen törölve"
+
+#. translators: %d: number of comments
+#: includes/logs/mainwp-network-activity-connector.php:122
+#, php-format
+msgid "%d Comment"
+msgid_plural "%d Comments"
+msgstr[0] "%d hozzászólás"
+msgstr[1] "%d hozzászólás"
+
+#. translators: %s: comma-separated list of allowed actions
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:241
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:311
+#, php-format
+msgid "Invalid action. Allowed values: %s."
+msgstr "Érvénytelen művelet. Engedélyezett értékek: %s."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:268
+msgid "Comment action failed. Please try again."
+msgstr "A hozzászóláson végzett művelet sikertelen. Kérjük, próbálja meg újra."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:321
+msgid "No valid comment IDs provided."
+msgstr "Nem adott meg érvényes hozzászólásazonosítót."
+
+#. translators: %1$d: number of comments processed, %2$s: action performed
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:362
+#, php-format
+msgid "%1$d comment(s) %2$s."
+msgstr "%1$d hozzászólás %2$s."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:468
+msgid "No comments found."
+msgstr "Nem található hozzászólás."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:477
+msgid "Comments retrieved successfully."
+msgstr "A hozzászólások lekérése sikerült."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:567
+msgid "Comment approved successfully."
+msgstr "A hozzászólás jóváhagyása sikerült."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:568
+msgid "Comment unapproved successfully."
+msgstr "A hozzászólás jóváhagyásának visszavonása sikerült."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:569
+msgid "Comment marked as spam."
+msgstr "A hozzászólás spamként való megjelölése sikerült."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:570
+msgid "Comment unmarked as spam."
+msgstr "A hozzászólás spamként való megjelölésének visszavonása sikerült."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:571
+msgid "Comment moved to trash."
+msgstr "A hozzászólás kukába helyezése sikerült."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:572
+msgid "Comment restored from trash."
+msgstr "A hozzászólás visszaállítása a kukából sikerült."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:573
+msgid "Comment permanently deleted."
+msgstr "A hozzászólás végleges törlése sikerült."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:575
+msgid "Action performed successfully."
+msgstr "A művelet végrehajtása sikerült."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:590
+msgid "Comma-separated site IDs to filter by."
+msgstr "Vesszővel elválasztott webhelyazonosítók, amelyekre szűrni kíván."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:597
+msgid "Comma-separated group names to filter by."
+msgstr "Vesszővel elválasztott csoportnevek, amelyekre szűrni kíván."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:604
+msgid "Comma-separated client IDs to filter by."
+msgstr "Vesszővel elválasztott ügyfélazonosítók, amelyekre szűrni kíván."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:611
+msgid "Comment status: approved, pending, spam, trash, or all."
+msgstr "A hozzászólás állapota: jóváhagyott, függőben, spam, kuka vagy összes."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:619
+msgid "Keyword to search within comment content."
+msgstr "A hozzászólás tartalmában keresendő kulcsszó."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:625
+msgid "Start date filter (Y-m-d)."
+msgstr "Kezdődátum szerinti szűrés (Y-m-d)."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:631
+msgid "End date filter (Y-m-d)."
+msgstr "Befejezés dátuma szerinti szűrés (Y-m-d)."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:637
+msgid "Maximum number of comments to return per site (default 50)."
+msgstr "Webhelyenként visszaadandó hozzászólások maximális darabszáma (alapértelmezett: 50)."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:656
+msgid "Action to perform on the comment."
+msgstr "A hozzászóláson végrehajtandó művelet."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:673
+msgid "Action to perform on the comments."
+msgstr "A hozzászólásokon végrehajtandó művelet."
+
+#: includes/rest-api/class-mainwp-comments-rest-controller.php:680
+msgid "Comma-separated comment IDs to act on."
+msgstr "Vesszővel elválasztott hozzászólás-ID-k, amelyeken végre kell hajtani a műveletet."
+
+#: mainwp-comments-extension.php:124
+msgid "Check for updates now"
+msgstr "Frissítések keresése most"
+
+#. translators: 1: opening anchor tag, 2: closing anchor tag, 3: opening
+#. anchor tag, 4: closing anchor tag
+#: mainwp-comments-extension.php:461
+#, php-format
+msgid ""
+"MainWP Comments Extension requires %1$sMainWP Dashboard Plugin%2$s to be "
+"activated in order to work. Please install and activate %3$sMainWP Dashboard"
+" Plugin%4$s first."
+msgstr "A MainWP Comments Extension működéséhez be kell kapcsolni a(z) %1$sMainWP vezérlőpult bővítményt%2$s. Kérjük, először telepítse és kapcsolja be a(z) %3$sMainWP vezérlőpult bővítményt%4$s."
+
+#: widget/mainwp-recent-comments.widget.php:108
 msgid "Recent Comments"
 msgstr "Legutóbbi hozzászólások"
 
-#: widget/mainwp-recent-comments.widget.php:65
+#: widget/mainwp-recent-comments.widget.php:109
 msgid "The most recent comments from your websites"
 msgstr "A webhelyeiről származó legutóbbi hozzászólások"
 
-#: widget/mainwp-recent-comments.widget.php:85
-msgid "No approved comments found!"
-msgstr "Nem található jóváhagyott hozzászólás!"
+#: widget/mainwp-recent-comments.widget.php:129
+msgid "No Approved Comments"
+msgstr "Nincsenek jóváhagyott hozzászólások"
 
-#: widget/mainwp-recent-comments.widget.php:118
-#: widget/mainwp-recent-comments.widget.php:169
+#: widget/mainwp-recent-comments.widget.php:130
+msgid "Comments from your child site will appear here once available."
+msgstr "Az alárendelt webhelyéről származó hozzászólások itt jelennek meg, amint elérhetővé válnak."
+
+#: widget/mainwp-recent-comments.widget.php:151
+#: widget/mainwp-recent-comments.widget.php:206
+msgid "on"
+msgstr "dátum:"
+
+#: widget/mainwp-recent-comments.widget.php:167
+#: widget/mainwp-recent-comments.widget.php:222
 msgid "View all"
 msgstr "Összes megtekintése"
 
-#: widget/mainwp-recent-comments.widget.php:136
-msgid "No pending comments found!"
-msgstr "Nem található függőben lévő hozzászólás!"
+#: widget/mainwp-recent-comments.widget.php:184
+msgid "No Pending Comments"
+msgstr "Nincsenek függőben lévő hozzászólások"
 
-#: widget/mainwp-recent-comments.widget.php:214
+#: widget/mainwp-recent-comments.widget.php:185
+msgid "Pending comments from your child site will appear here once available."
+msgstr "Az alárendelt webhelyéről származó, függőben lévő hozzászólások itt jelennek meg, amint elérhetővé válnak."
+
+#: widget/mainwp-recent-comments.widget.php:281
 msgid "The comment has been approved"
-msgstr "A hozzászólás jóvá lett hagyva"
+msgstr "A hozzászólást jóváhagyták."
 
-#: widget/mainwp-recent-comments.widget.php:219
+#: widget/mainwp-recent-comments.widget.php:291
 msgid "The comment has been unapproved"
-msgstr "A hozzászólás jóváhagyása vissza lett vonva"
+msgstr "Visszavonták a hozzászólás jóváhagyását."
 
-#: widget/mainwp-recent-comments.widget.php:224
+#: widget/mainwp-recent-comments.widget.php:301
 msgid "The comment has been marked as spam"
-msgstr "A hozzászólás spamként lett megjelölve"
+msgstr "A hozzászólást spamként jelölték meg."
 
-#: widget/mainwp-recent-comments.widget.php:229
+#: widget/mainwp-recent-comments.widget.php:311
 msgid "The comment is no longer marked as spam"
 msgstr "A hozzászólás már nincs spamként megjelölve"
 
-#: widget/mainwp-recent-comments.widget.php:234
+#: widget/mainwp-recent-comments.widget.php:321
 msgid "The comment has been moved to trash"
-msgstr "A hozzászólás a Lomtárba lett helyezve"
+msgstr "A hozzászólás a Lomtárba került."
 
-#: widget/mainwp-recent-comments.widget.php:239
+#: widget/mainwp-recent-comments.widget.php:331
 msgid "The comment has been restored"
-msgstr "A hozzászólás vissza lett állítva"
+msgstr "Visszaállították a hozzászólást."
 
-#: widget/mainwp-recent-comments.widget.php:244
+#: widget/mainwp-recent-comments.widget.php:341
 msgid "The comment has been permanently deleted"
-msgstr "A hozzászólás véglegesen törölve lett"
+msgstr "A hozzászólást véglegesen törölték."
 
-#: widget/mainwp-recent-comments.widget.php:258
-#: widget/mainwp-recent-comments.widget.php:264
+#: widget/mainwp-recent-comments.widget.php:366
+#: widget/mainwp-recent-comments.widget.php:372
 msgid "Invalid Request."
 msgstr "Érvénytelen kérés."
 
-#: widget/mainwp-recent-comments.widget.php:286
+#: widget/mainwp-recent-comments.widget.php:394
 msgid "Undefined error occurred. Please, try again."
 msgstr "Meghatározatlan hiba történt. Kérjük, próbálja meg újra."
 
-#: widget/mainwp-recent-comments.widget.php:295
+#: widget/mainwp-recent-comments.widget.php:411
 msgid "Comment(s) approved"
 msgstr "Hozzászólás(ok) jóváhagyva"
 
-#: widget/mainwp-recent-comments.widget.php:298
+#: widget/mainwp-recent-comments.widget.php:414
 msgid "Comment(s) unapproved"
 msgstr "Hozzászólás(ok) jóváhagyása visszavonva"
 
-#: widget/mainwp-recent-comments.widget.php:301
+#: widget/mainwp-recent-comments.widget.php:417
 msgid "Comment(s) marked as spam"
 msgstr "Hozzászólás(ok) spamként megjelölve"
 
-#: widget/mainwp-recent-comments.widget.php:304
+#: widget/mainwp-recent-comments.widget.php:420
 msgid "Comment(s) no longer marked as spam"
 msgstr "Hozzászólás(ok) spamként való megjelölése megszüntetve"
 
-#: widget/mainwp-recent-comments.widget.php:307
+#: widget/mainwp-recent-comments.widget.php:423
 msgid "Comment(s) moved to trash"
 msgstr "Hozzászólás(ok) a Lomtárba helyezve"
 
-#: widget/mainwp-recent-comments.widget.php:310
+#: widget/mainwp-recent-comments.widget.php:426
 msgid "Comment(s) restored"
 msgstr "Hozzászólás(ok) visszaállítva"
 
-#: widget/mainwp-recent-comments.widget.php:313
+#: widget/mainwp-recent-comments.widget.php:429
 msgid "Comment(s) permanently deleted"
 msgstr "Hozzászólás(ok) véglegesen törölve"
+
+#~ msgid "Loading Comments..."
+#~ msgstr "Hozzászólások betöltése..."
+
+#~ msgid "No approved comments found!"
+#~ msgstr "Nem található jóváhagyott hozzászólás!"
+
+#~ msgid "No pending comments found!"
+#~ msgstr "Nem található függőben lévő hozzászólás!"

@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: FluentAffiliate Pro 1.1.0\n"
+"Project-Id-Version: FluentAffiliate Pro 1.7.0\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-20T14:02:03+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,18 +18,18 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: FluentAffiliate Pro\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.1.0\n"
+"X-Plugin-Version: 1.7.0\n"
 
 #. Plugin Name of the plugin
-#: fluent-affiliate-pro.php
+#: fluent-affiliate-pro.php app/Hooks/filters.php:17
 msgid "FluentAffiliate Pro"
 msgstr "FluentAffiliate Pro"
 
 #. Plugin URI of the plugin
 #. Author URI of the plugin
 #: fluent-affiliate-pro.php
-msgid "https://fluentaffiliates.com"
-msgstr "https://fluentaffiliates.com"
+msgid "https://fluentaffiliate.com"
+msgstr "https://fluentaffiliate.com"
 
 #. Description of the plugin
 #: fluent-affiliate-pro.php
@@ -46,39 +46,63 @@ msgstr "WPManageNinja LLC"
 msgid "FluentAffiliate"
 msgstr "FluentAffiliate"
 
-#: app/Hooks/Handlers/CoreDepenedencyHandler.php:92
+#: app/Hooks/Handlers/CoreDepenedencyHandler.php:44
+msgid "Invalid nonce"
+msgstr "Érvénytelen nonce"
+
+#: app/Hooks/Handlers/CoreDepenedencyHandler.php:48
+msgid "You do not have permission to install and activate plugins."
+msgstr "Nincs jogosultsága bővítmények telepítésére és bekapcsolására."
+
+#: app/Hooks/Handlers/CoreDepenedencyHandler.php:52
+msgid "Already installed"
+msgstr "Már telepítve"
+
+#: app/Hooks/Handlers/CoreDepenedencyHandler.php:61
+msgid "Installed"
+msgstr "Telepítve"
+
+#: app/Hooks/Handlers/CoreDepenedencyHandler.php:94
 msgid "Invalid plugin or file mods are disabled."
-msgstr "Érvénytelen bővítmény vagy a fájlmódosítások le vannak tiltva."
+msgstr "A bővítmény hibás, vagy a fájlmódosítások ki vannak kapcsolva."
 
 #: app/Hooks/Handlers/MultiDomainTranckerHandler.php:53
 msgid "Invalid site ID or server token."
 msgstr "Érvénytelen webhelyazonosító vagy szerver token."
 
-#: app/Hooks/Handlers/MultiDomainTranckerHandler.php:62
+#: app/Hooks/Handlers/MultiDomainTranckerHandler.php:74
+msgid "Rate limit exceeded."
+msgstr "Túllépte a kérésgyakorisági korlátot."
+
+#: app/Hooks/Handlers/MultiDomainTranckerHandler.php:83
 msgid "aff_id is required."
-msgstr "aff_id kötelező."
+msgstr "Az aff_id megadása kötelező."
 
-#: app/Hooks/Handlers/MultiDomainTranckerHandler.php:71
+#: app/Hooks/Handlers/MultiDomainTranckerHandler.php:92
 msgid "Affiliate not found or inactive."
-msgstr "Partner nem található vagy inaktív."
+msgstr "A partner nem található vagy ki van kapcsolva."
 
-#: app/Http/Controllers/AffiliateGroupController.php:111
+#: app/Hooks/Handlers/SocialMediaShareHandler.php:28
+msgid "Too many platforms provided."
+msgstr "Túl sok platformot adott meg."
+
+#: app/Http/Controllers/AffiliateGroupController.php:112
 msgid "affiliate group successfully created"
 msgstr "partnercsoport sikeresen létrehozva"
 
-#: app/Http/Controllers/AffiliateGroupController.php:144
+#: app/Http/Controllers/AffiliateGroupController.php:145
 msgid "Affiliate group successfully updated"
 msgstr "Partnercsoport sikeresen frissítve"
 
-#: app/Http/Controllers/AffiliateGroupController.php:160
+#: app/Http/Controllers/AffiliateGroupController.php:161
 msgid "affiliate group successfully deleted"
 msgstr "partnercsoport sikeresen törölve"
 
-#: app/Http/Controllers/AffiliateGroupController.php:184
+#: app/Http/Controllers/AffiliateGroupController.php:185
 msgid "Referrals"
 msgstr "Jutalékok"
 
-#: app/Http/Controllers/AffiliateGroupController.php:188
+#: app/Http/Controllers/AffiliateGroupController.php:189
 msgid "Visits"
 msgstr "Látogatások"
 
@@ -108,7 +132,7 @@ msgstr "Érvénytelen token."
 
 #: app/Http/Controllers/DomainController.php:50
 msgid "Invalid site URL."
-msgstr "Érvénytelen webhely URL."
+msgstr "Hibás webhely-URL."
 
 #: app/Http/Controllers/DomainController.php:60
 msgid "This site is already connected."
@@ -120,7 +144,7 @@ msgstr "A csatlakozási konfiguráció létrehozva."
 
 #: app/Http/Controllers/DomainController.php:116
 msgid "Site ID is required."
-msgstr "Site ID kötelező."
+msgstr "A webhely-ID megadása kötelező."
 
 #: app/Http/Controllers/DomainController.php:122
 #: app/Http/Controllers/DomainController.php:149
@@ -133,73 +157,354 @@ msgstr "Webhely sikeresen leválasztva."
 
 #: app/Http/Controllers/DomainController.php:141
 msgid "Site ID and config are required."
-msgstr "Site ID és konfiguráció szükséges."
+msgstr "A webhely-ID és a konfiguráció megadása kötelező."
 
 #: app/Http/Controllers/DomainController.php:166
 msgid "Site config updated successfully."
 msgstr "Webhelykonfiguráció sikeresen frissítve."
 
-#: app/Http/Controllers/ProSettingController.php:39
+#: app/Http/Controllers/LicenseController.php:45
+msgid "Your license key has been successfully updated"
+msgstr "A licenckulcs frissítése sikeres"
+
+#: app/Http/Controllers/LicenseController.php:63
+msgid "Your license key has been successfully deactivated"
+msgstr "A licenckulcs kikapcsolása sikeres"
+
+#. translators: %s: human readable time difference, e.g. "2 mins"
+#: app/Http/Controllers/LicenseController.php:104
+#, php-format
+msgid "%s ago"
+msgstr "%s ezelőtt"
+
+#: app/Http/Controllers/LifetimeCommissionController.php:41
+msgid "already linked"
+msgstr "már összekapcsolva"
+
+#: app/Http/Controllers/LifetimeCommissionController.php:66
+msgid "You cannot link customers to an inactive affiliate."
+msgstr "Nem kapcsolhat vásárlókat kikapcsolt partnerhez."
+
+#: app/Http/Controllers/LifetimeCommissionController.php:79
+msgid "No customer was found for the provided details."
+msgstr "A megadott részletek alapján nem található vásárló."
+
+#: app/Http/Controllers/LifetimeCommissionController.php:85
+msgid "Customer is already linked to this affiliate."
+msgstr "A vásárló már ehhez a partnerhez van kapcsolva."
+
+#: app/Http/Controllers/LifetimeCommissionController.php:96
+msgid "This customer is already linked to another affiliate."
+msgstr "A vásárló már egy másik partnerhez van kapcsolva."
+
+#. translators: %1$s previous affiliate name, %2$s new affiliate name
+#: app/Http/Controllers/LifetimeCommissionController.php:107
+#, php-format
+msgid ""
+"Customer transferred from %1$s to %2$s. Future purchases will be credited to"
+" %2$s."
+msgstr "A vásárló átkerült innen: %1$s ide: %2$s. A jövőbeli vásárlások jóváírása %2$s számára történik."
+
+#: app/Http/Controllers/LifetimeCommissionController.php:119
+msgid "Customer linked to the affiliate successfully"
+msgstr "A vásárló partnerhez kapcsolása sikeres volt"
+
+#: app/Http/Controllers/LifetimeCommissionController.php:143
+msgid "Customer unlinked from the affiliate successfully"
+msgstr "A vásárló partnerhez fűződő kapcsolatának megszüntetése sikeres volt"
+
+#: app/Http/Controllers/PayPalPayoutController.php:23
+msgid "The payout is being sent to PayPal."
+msgstr "A kifizetés küldése folyamatban van a PayPal felé."
+
+#: app/Http/Controllers/PayPalPayoutController.php:34
+#: app/Http/Controllers/PayPalPayoutController.php:58
+#: app/Http/Controllers/PayPalPayoutController.php:82
+#: app/Services/PayPal/PayPalPayouts.php:108
+msgid "This payout is not a PayPal payout."
+msgstr "Ez a kifizetés nem PayPal-kifizetés."
+
+#: app/Http/Controllers/PayPalPayoutController.php:47
+msgid "The payout status is updated from PayPal."
+msgstr "A kifizetés állapota frissítve a PayPal adatai alapján."
+
+#: app/Http/Controllers/PayPalPayoutController.php:71
+msgid ""
+"The payout is marked as not in PayPal. Its payments are failed, so you can "
+"pay them by hand or remove them."
+msgstr "A kifizetés állapota „nincs a PayPalon” értékre van állítva. A kifizetések sikertelenek, ezért kézzel is kifizetheti vagy eltávolíthatja őket."
+
+#: app/Http/Controllers/PayPalPayoutController.php:95
+msgid ""
+"The PayPal batch ID is added, and the payout status is updated from PayPal."
+msgstr "A PayPal-köteg ID-ját hozzáadtuk, a kifizetés állapotát pedig a PayPal adatai alapján frissítettük."
+
+#. translators: %s: PayPal mode, Sandbox or Live
+#: app/Http/Controllers/PayPalSettingsController.php:39
+#, php-format
+msgid "Add both the client ID and the secret for %s."
+msgstr "A(z) %s esetén adja meg mindkét adatot: az ügyfél-ID-t és a titkos kulcsot."
+
+#. translators: 1: PayPal mode, Sandbox or Live, 2: PayPal error message
+#: app/Http/Controllers/PayPalSettingsController.php:47
+#, php-format
+msgid "PayPal refused the %1$s keys: %2$s"
+msgstr "A PayPal elutasította a(z) %1$s kulcsokat: %2$s"
+
+#: app/Http/Controllers/PayPalSettingsController.php:63
+msgid ""
+"Could not remove the old webhook at PayPal. Remove it in your PayPal app."
+msgstr "Nem sikerült eltávolítani a régi webhookot a PayPalnál. Távolítsa el a PayPal alkalmazásban."
+
+#: app/Http/Controllers/PayPalSettingsController.php:80
+msgid "PayPal Payouts settings saved."
+msgstr "A PayPal-kifizetések beállításai elmentve."
+
+#. translators: %s: PayPal mode, Sandbox or Live
+#: app/Http/Controllers/PayPalSettingsController.php:90
+#: app/Http/Controllers/PayPalSettingsController.php:117
+#, php-format
+msgid "Save the %s keys first."
+msgstr "Először mentse el a(z) %s kulcsokat."
+
+#. translators: %s: PayPal error message
+#: app/Http/Controllers/PayPalSettingsController.php:100
+#, php-format
+msgid "PayPal refused the connection: %s"
+msgstr "A PayPal elutasította a kapcsolatot: %s"
+
+#. translators: %s: PayPal mode, Sandbox or Live
+#: app/Http/Controllers/PayPalSettingsController.php:106
+#, php-format
+msgid "Connected to PayPal (%s)."
+msgstr "Kapcsolódva a PayPalhoz (%s)."
+
+#: app/Http/Controllers/PayPalSettingsController.php:126
+msgid "The webhook is registered at PayPal."
+msgstr "A webhook regisztrálva a PayPalnál."
+
+#: app/Http/Controllers/PayPalSettingsController.php:141
+msgid "Could not remove the webhook at PayPal. Remove it in your PayPal app."
+msgstr "Nem sikerült eltávolítani a webhookot a PayPalnál. Távolítsa el a PayPal alkalmazásban."
+
+#: app/Http/Controllers/PayPalSettingsController.php:148
+msgid "The PayPal keys are removed."
+msgstr "A PayPal-kulcsok eltávolítva."
+
+#: app/Http/Controllers/PayPalSettingsController.php:164
+msgid ""
+"Could not register the webhook at PayPal. Payout results will arrive with "
+"the hourly check instead."
+msgstr "Nem sikerült regisztrálni a webhookot a PayPalnál. A kifizetések eredményei ehelyett az óránkénti ellenőrzés során érkeznek meg."
+
+#: app/Http/Controllers/PayPalSettingsController.php:168
+msgid ""
+"The keys changed while the webhook was registered, so the webhook was not "
+"saved. Open the settings again and check the webhook status."
+msgstr "A webhook regisztrálása közben megváltoztak a kulcsok, ezért a webhook nem lett elmentve. Nyissa meg újra a beállításokat, és ellenőrizze a webhook állapotát."
+
+#: app/Http/Controllers/PayPalSettingsController.php:187
+msgid "Live"
+msgstr "Élő"
+
+#: app/Http/Controllers/PayPalSettingsController.php:187
+msgid "Sandbox"
+msgstr "Tesztkörnyezet"
+
+#: app/Http/Controllers/ProSettingController.php:40
 msgid "Registration fields updated successfully"
 msgstr "Regisztrációs mezők sikeresen frissítve"
 
-#: app/Http/Controllers/ProSettingController.php:107
+#: app/Http/Controllers/ProSettingController.php:65
+msgid ""
+"Invalid or unverified reCAPTCHA keys. Validate your keys before saving."
+msgstr "Hibás vagy nem ellenőrzött reCAPTCHA-kulcsok. Mentés előtt érvényesítse a kulcsokat."
+
+#: app/Http/Controllers/ProSettingController.php:72
+msgid "Captcha settings updated successfully"
+msgstr "A CAPTCHA beállításai sikeresen frissítve"
+
+#: app/Http/Controllers/ProSettingController.php:150
 msgid "User not found"
 msgstr "Felhasználó nem található"
 
-#: app/Http/Controllers/ProSettingController.php:113
+#: app/Http/Controllers/ProSettingController.php:156
 msgid "This is an admin user. You can not change permissions"
-msgstr "Ez egy admin felhasználó. Nem módosíthatja a jogosultságokat"
+msgstr "Ez egy adminfelhasználó. Nem módosíthatja a jogosultságokat"
 
-#: app/Http/Controllers/ProSettingController.php:120
+#: app/Http/Controllers/ProSettingController.php:163
 msgid "Invalid permissions"
 msgstr "Érvénytelen jogosultságok"
 
-#: app/Http/Controllers/ProSettingController.php:129
+#: app/Http/Controllers/ProSettingController.php:172
 msgid "Manager Added Successfully"
-msgstr "Menedzser sikeresen hozzáadva"
+msgstr "Kezelő sikeresen hozzáadva"
 
-#: app/Http/Controllers/ProSettingController.php:134
+#: app/Http/Controllers/ProSettingController.php:177
 msgid "Manager Updated Successfully"
-msgstr "Menedzser sikeresen frissítve"
+msgstr "Kezelő sikeresen frissítve"
 
-#: app/Http/Controllers/ProSettingController.php:158
+#: app/Http/Controllers/ProSettingController.php:201
 msgid "Failed to remove manager"
-msgstr "Nem sikerült eltávolítani a menedzsert"
+msgstr "Nem sikerült eltávolítani a kezelőt"
 
-#: app/Http/Controllers/ProSettingController.php:163
+#: app/Http/Controllers/ProSettingController.php:206
 msgid "Manager removed successfully"
-msgstr "Menedzser sikeresen eltávolítva"
+msgstr "Kezelő sikeresen eltávolítva"
 
-#: app/Services/Integrations/Edd/Connector.php:81
-#: app/Services/Integrations/WooCommerce/Connector.php:87
-msgid "Enable Branded Coupon Codes for affiliates"
-msgstr "Márkázott kuponkódok engedélyezése partnereknek"
+#: app/Services/Captcha/CaptchaManager.php:174
+msgid "Unknown captcha provider."
+msgstr "Ismeretlen CAPTCHA-szolgáltató."
+
+#: app/Services/Captcha/RecaptchaProvider.php:25
+msgid "Google reCAPTCHA"
+msgstr "Google reCAPTCHA"
+
+#: app/Services/Captcha/RecaptchaProvider.php:37
+msgid "Security check failed. Please try again."
+msgstr "A biztonsági ellenőrzés sikertelen. Kérjük, próbálja meg újra."
+
+#. translators: %1$s: opening Privacy Policy link tag, %2$s: closing tag,
+#. %3$s: opening Terms of Service link tag, %4$s: closing tag.
+#: app/Services/Captcha/RecaptchaProvider.php:115
+#, php-format
+msgid ""
+"This site is protected by reCAPTCHA and the Google %1$sPrivacy Policy%2$s "
+"and %3$sTerms of Service%4$s apply."
+msgstr "Ezt a webhelyet a reCAPTCHA védi, és a Google %1$sAdatvédelmi irányelvei%2$s, valamint %3$sFelhasználási feltételei%4$s érvényesek."
+
+#: app/Services/Captcha/RecaptchaProvider.php:185
+msgid "Enter a Secret Key first."
+msgstr "Először adja meg a titkos kulcsot."
+
+#: app/Services/Captcha/RecaptchaProvider.php:192
+msgid "Solve the reCAPTCHA challenge to validate your keys."
+msgstr "A kulcsok érvényesítéséhez oldja meg a reCAPTCHA-feladványt."
+
+#: app/Services/Captcha/RecaptchaProvider.php:204
+msgid ""
+"Could not reach Google to validate the keys. Check your connection and try "
+"again."
+msgstr "Nem sikerült elérni a Google-t a kulcsok érvényesítéséhez. Ellenőrizze a kapcsolatot, majd próbálja meg újra."
+
+#: app/Services/Captcha/RecaptchaProvider.php:211
+msgid "Both keys are valid."
+msgstr "Mindkét kulcs érvényes."
+
+#: app/Services/Captcha/RecaptchaProvider.php:221
+msgid "Invalid Secret Key."
+msgstr "Hibás titkos kulcs."
+
+#: app/Services/Captcha/RecaptchaProvider.php:227
+msgid ""
+"The Site Key and Secret Key do not match, or the challenge was invalid. Re-"
+"check both keys and try again."
+msgstr "A webhely kulcsa és a titkos kulcs nem egyezik, vagy a feladvány hibás volt. Ellenőrizze újra mindkét kulcsot, majd próbálja meg újra."
+
+#: app/Services/CustomRegistrationFieldsService.php:24
+msgid "Text"
+msgstr "Szöveg"
+
+#: app/Services/CustomRegistrationFieldsService.php:25
+msgid "Textarea"
+msgstr "Szövegterület"
+
+#: app/Services/CustomRegistrationFieldsService.php:26
+msgid "Number"
+msgstr "Szám"
+
+#: app/Services/CustomRegistrationFieldsService.php:27
+msgid "Date"
+msgstr "Dátum"
+
+#: app/Services/CustomRegistrationFieldsService.php:28
+msgid "Dropdown"
+msgstr "Legördülő lista"
+
+#: app/Services/CustomRegistrationFieldsService.php:29
+msgid "Radio"
+msgstr "Választógomb"
+
+#: app/Services/CustomRegistrationFieldsService.php:30
+msgid "URL"
+msgstr "URL"
+
+#: app/Services/CustomRegistrationFieldsService.php:31
+msgid "Multi Select"
+msgstr "Többszörös kiválasztás"
+
+#: app/Services/CustomRegistrationFieldsService.php:84
+#, php-format
+msgid "%s is required"
+msgstr "%s megadása kötelező"
+
+#. translators: %1$s: field label, %2$d: character limit
+#: app/Services/CustomRegistrationFieldsService.php:92
+#, php-format
+msgid "%1$s must be at most %2$d characters"
+msgstr "%1$s legfeljebb %2$d karakter hosszú lehet"
+
+#: app/Services/Integrations/Edd/Bootstrap.php:64
+#: app/Services/Integrations/WooCommerce/Bootstrap.php:74
+msgid "[FluentAffiliate] Self-referral detected. Referral is not recorded."
+msgstr "[FluentAffiliate] Önmagára irányuló ajánlás észlelve. Az ajánlás nem kerül rögzítésre."
+
+#. translators: %1$s: referral link, %2$s: referral amount, %3$s: affiliate
+#. name, %4$d: affiliate id
+#: app/Services/Integrations/Edd/Bootstrap.php:114
+#: app/Services/Integrations/WooCommerce/Bootstrap.php:123
+#, php-format
+msgid "Referral %1$s for %2$s recorded for %3$s (ID: %4$d)."
+msgstr "A(z) %2$s számára rögzített %1$s ajánlás: %3$s (ID: %4$d)."
 
 #: app/Services/Integrations/Edd/Connector.php:82
+#: app/Services/Integrations/WooCommerce/Connector.php:90
+msgid "Enable Branded Coupon Codes for affiliates"
+msgstr "Márkázott kuponkódok bekapcsolása partnerek számára"
+
+#: app/Services/Integrations/Edd/Connector.php:83
 msgid ""
 "When enabled, you can offer branded coupon codes for affiliates. This allows"
 " them to promote products with unique discount codes. You can find the "
 "option in Discount Codes editor in EDD"
-msgstr ""
-"Engedélyezés esetén márkázott kuponkódokat kínálhat a partnereknek. Ez "
-"lehetővé teszi számukra, hogy egyedi kedvezménykódokkal népszerűsítsék a "
-"termékeket. A beállítás az EDD Discount Codes szerkesztőjében található"
+msgstr "Bekapcsolás esetén márkázott kuponkódokat kínálhat a partnereknek. Ez lehetővé teszi számukra, hogy egyedi kedvezménykódokkal népszerűsítsék a termékeket. A beállítás az EDD kedvezménykód-szerkesztőjében található"
 
-#: app/Services/Integrations/Edd/Connector.php:88
+#: app/Services/Integrations/Edd/Connector.php:89
 msgid "Disable Referrals on Upgrades"
 msgstr "Jutalékok letiltása frissítéseknél"
 
-#: app/Services/Integrations/Edd/Connector.php:89
+#: app/Services/Integrations/Edd/Connector.php:90
 msgid "When enabled, No referrals will be added on purchased upgrades"
-msgstr ""
-"Engedélyezés esetén a megvásárolt frissítésekhez nem kerülnek jutalékok "
-"hozzáadásra"
+msgstr "Bekapcsolás esetén a megvásárolt frissítések után nem jönnek létre ajánlások"
 
-#: app/Services/Integrations/Edd/Connector.php:97
-#: app/Services/Integrations/WooCommerce/Connector.php:96
+#: app/Services/Integrations/Edd/Connector.php:98
+#: app/Services/Integrations/WooCommerce/Connector.php:99
 msgid "Enable custom rate for specific product or categories"
 msgstr "Egyéni jutalékmérték engedélyezése adott termékhez vagy kategóriákhoz"
+
+#: app/Services/Integrations/Edd/Connector.php:102
+#: app/Services/Integrations/SureCart/Connector.php:114
+msgid "Enable Referrals on Subscription Renewals (Coming soon)"
+msgstr "Ajánlások bekapcsolása előfizetés-megújítások esetén (hamarosan)"
+
+#: app/Services/Integrations/Edd/Connector.php:103
+#: app/Services/Integrations/SureCart/Connector.php:115
+msgid ""
+"When enabled, referrals will be created for subscription renewal orders"
+msgstr "Bekapcsolás esetén ajánlások jönnek létre az előfizetés-megújítási rendelésekhez"
+
+#: app/Services/Integrations/Edd/EddCouponAffiliate.php:59
+#: app/Services/Integrations/WooCommerce/CouponMeta.php:60
+msgid "FluentAffiliate Coupon?"
+msgstr "FluentAffiliate kupon?"
+
+#: app/Services/Integrations/Edd/EddCouponAffiliate.php:69
+msgid "Select Affiliate"
+msgstr "Partner kiválasztása"
+
+#: app/Services/Integrations/Edd/EddCouponAffiliate.php:70
+msgid "--"
+msgstr "--"
 
 #: app/Services/Integrations/Edd/EddCouponAffiliate.php:74
 #: app/Services/Integrations/WooCommerce/CouponMeta.php:61
@@ -212,36 +517,62 @@ msgstr ""
 "Valahányszor valaki használja ezt a kupont, a kiválasztott partner kapja a "
 "jutalékot."
 
-#: app/Services/Integrations/Edd/EddCouponAffiliate.php:139
+#. translators: %s is the discount amount
+#: app/Services/Integrations/Edd/EddCouponAffiliate.php:140
 #, php-format
 msgid "%s discount code for your audiences."
 msgstr "%s kedvezménykód a közönsége számára."
 
+#. translators: %1$s is the affiliate name, %2$s is the referral amount with
+#. link
+#: app/Services/Integrations/FluentCart/RecurringReferral.php:126
+#: app/Services/Integrations/WooCommerce/RecurringReferral.php:133
+#, php-format
+msgid "Recurring referral has been created for affiliate: %1$s. Amount: %2$s"
+msgstr "Ismétlődő ajánlás jött létre a partner számára: %1$s. Összeg: %2$s"
+
+#: app/Services/Integrations/FluentCart/RecurringReferral.php:128
+msgid "Fluent Affiliate recurring referral created."
+msgstr "Létrejött a Fluent Affiliate ismétlődő ajánlása."
+
 #: app/Services/Integrations/Give/Connector.php:72
 msgid "GiveWP Forms"
-msgstr "GiveWP Űrlapok"
+msgstr "GiveWP-űrlapok"
 
 #: app/Services/Integrations/Give/Connector.php:73
 msgid "Enable custom rate for specific donation forms"
 msgstr "Egyéni jutalékmérték engedélyezése adott adományozási űrlapokhoz"
 
 #: app/Services/Integrations/LifterLMS/Connector.php:80
+#: app/Services/Integrations/Tutor/Connector.php:81
 msgid "Select Courses"
 msgstr "Kurzusok kiválasztása"
 
 #: app/Services/Integrations/LifterLMS/Connector.php:82
+#: app/Services/Integrations/Tutor/Connector.php:83
 msgid "Enable custom rate for specific courses or Course Categories"
-msgstr ""
-"Egyéni jutalékmérték engedélyezése adott kurzusokhoz vagy "
-"kurzuskategóriákhoz"
+msgstr "Egyéni jutalékmérték engedélyezése adott kurzusokhoz vagy kurzuskategóriákhoz"
 
 #: app/Services/Integrations/MemberPress/Connector.php:81
 #: app/Services/Integrations/PMP/Connector.php:76
 msgid "Enable custom rate for specific membership or categories"
-msgstr ""
-"Egyéni jutalékmérték engedélyezése adott tagságokhoz vagy kategóriákhoz"
+msgstr "Egyéni jutalékmérték engedélyezése adott tagsághoz vagy kategóriákhoz"
 
-#: app/Services/Integrations/SureCart/Connector.php:109
+#. translators: 1: Amount, 2: Affiliate Name, 3: Affiliate ID
+#: app/Services/Integrations/ProfilePress/Bootstrap.php:96
+#, php-format
+msgid "Referral amount %1$s recorded for %2$s (ID: %3$d)."
+msgstr "A(z) %2$s számára rögzített ajánlási összeg: %1$s (ID: %3$d)."
+
+#: app/Services/Integrations/ProfilePress/Connector.php:73
+msgid "Select Plans"
+msgstr "Csomagok kiválasztása"
+
+#: app/Services/Integrations/ProfilePress/Connector.php:75
+msgid "Enable custom rate for specific plans"
+msgstr "Egyéni jutalékráta bekapcsolása adott csomagokhoz"
+
+#: app/Services/Integrations/SureCart/Connector.php:110
 #: app/Services/Integrations/Voxel/Connector.php:73
 msgid "Enable custom rate for specific products"
 msgstr "Egyéni jutalékmérték engedélyezése adott termékekhez"
@@ -250,29 +581,243 @@ msgstr "Egyéni jutalékmérték engedélyezése adott termékekhez"
 msgid "Voxel products"
 msgstr "Voxel termékek"
 
-#: app/Services/Integrations/WooCommerce/Bootstrap.php:241
+#: app/Services/Integrations/WooCommerce/Bootstrap.php:257
 msgid "Affiliate Dashboard"
-msgstr "Partner vezérlőpult"
+msgstr "Partneri vezérlőpult"
 
-#: app/Services/Integrations/WooCommerce/Connector.php:81
+#: app/Services/Integrations/WooCommerce/Connector.php:84
 msgid "Add Affiliate Dashboard in WooCommerce Account Menu"
-msgstr "Partner vezérlőpult hozzáadása a WooCommerce fiókmenühöz"
+msgstr "Partneri vezérlőpult hozzáadása a WooCommerce-fiókmenühöz"
 
-#: app/Services/Integrations/WooCommerce/Connector.php:88
+#: app/Services/Integrations/WooCommerce/Connector.php:91
 msgid ""
 "When enabled, you can offer branded coupon codes for affiliates. This allows"
 " them to promote products with unique discount codes. You can find the "
 "option in Discount Codes editor in WooCommerce"
-msgstr ""
-"Engedélyezés esetén márkázott kuponkódokat kínálhat a partnereknek. Ez "
-"lehetővé teszi számukra, hogy egyedi kedvezménykódokkal népszerűsítsék a "
-"termékeket. A beállítás a WooCommerce Discount Codes szerkesztőjében "
-"található"
+msgstr "Bekapcsolás esetén márkázott kuponkódokat kínálhat a partnereknek. Ez lehetővé teszi számukra, hogy egyedi kedvezménykódokkal népszerűsítsék a termékeket. A beállítás a WooCommerce kedvezménykód-szerkesztőjében található"
+
+#: app/Services/Integrations/WooCommerce/Connector.php:103
+msgid "Enable Referrals on Subscription Renewals"
+msgstr "Ajánlások bekapcsolása előfizetés-megújítások esetén"
+
+#: app/Services/Integrations/WooCommerce/Connector.php:104
+msgid ""
+"When enabled, referrals will be created for subscription renewal orders. "
+"Requires WooCommerce Subscriptions plugin."
+msgstr "Bekapcsolás esetén ajánlások jönnek létre az előfizetés-megújítási rendelésekhez. A WooCommerce Subscriptions bővítmény szükséges hozzá."
+
+#: app/Services/Integrations/WooCommerce/Connector.php:113
+msgid "Enable custom rate for specific products or categories on renewals"
+msgstr "Egyéni jutalékmérték bekapcsolása adott termékekhez vagy kategóriákhoz a megújítások esetén"
 
 #: app/Services/Integrations/WooCommerce/CouponMeta.php:42
 msgid "None"
 msgstr "Nincs"
 
-#: app/Services/Integrations/WooCommerce/CouponMeta.php:60
-msgid "FluentAffiliate Coupon?"
-msgstr "FluentAffiliate kupon?"
+#: app/Services/PayPal/PayPalApi.php:69
+msgid "PayPal did not return an access token."
+msgstr "A PayPal nem adott vissza hozzáférési tokent."
+
+#: app/Services/PayPal/PayPalApi.php:121
+#: app/Services/PayPal/PayPalPayouts.php:122
+msgid "Add the PayPal API keys first."
+msgstr "Először adja meg a PayPal API-kulcsokat."
+
+#. translators: %d: HTTP status code
+#: app/Services/PayPal/PayPalApi.php:283
+#, php-format
+msgid "PayPal returned HTTP %d."
+msgstr "A PayPal %d HTTP-kódot adott vissza."
+
+#: app/Services/PayPal/PayPalPayouts.php:59
+msgid "PayPal Payouts"
+msgstr "PayPal Payouts"
+
+#: app/Services/PayPal/PayPalPayouts.php:113
+msgid "This payout was already sent to PayPal."
+msgstr "Ezt a kifizetést már elküldték a PayPalnak."
+
+#: app/Services/PayPal/PayPalPayouts.php:117
+msgid ""
+"PayPal may already have this payout. Add its PayPal batch ID instead of "
+"sending it again."
+msgstr "Lehetséges, hogy ez a kifizetés már szerepel a PayPalon. Ahelyett, hogy újra elküldené, adja hozzá a PayPal-köteg ID-ját."
+
+#: app/Services/PayPal/PayPalPayouts.php:131
+msgid "This payout has no transactions to send."
+msgstr "Ehhez a kifizetéshez nem tartozik elküldhető tranzakció."
+
+#. translators: %d: maximum number of payments in one PayPal payout
+#: app/Services/PayPal/PayPalPayouts.php:137
+#, php-format
+msgid ""
+"PayPal can send at most %d payments in one payout. Split this payout into "
+"smaller payouts."
+msgstr "A PayPal egy kifizetésben legfeljebb %d fizetést tud elküldeni. Bontsa ezt a kifizetést kisebb kifizetésekre."
+
+#: app/Services/PayPal/PayPalPayouts.php:158
+msgid ""
+"The referrals in this payout use more than one currency. PayPal can send one"
+" currency in one payout."
+msgstr "A kifizetésben szereplő ajánlások több pénznemet használnak. A PayPal egy kifizetésben csak egy pénznemet tud küldeni."
+
+#. translators: %s: currency code, for example USD
+#: app/Services/PayPal/PayPalPayouts.php:164
+#, php-format
+msgid "PayPal does not support the currency %s."
+msgstr "A PayPal nem támogatja ezt a pénznemet: %s."
+
+#: app/Services/PayPal/PayPalPayouts.php:176
+msgid "This payout is already being sent."
+msgstr "Ennek a kifizetésnek az elküldése már folyamatban van."
+
+#: app/Services/PayPal/PayPalPayouts.php:227
+msgid "The affiliate has no valid PayPal email."
+msgstr "A partnernek nincs érvényes PayPal-e-mail címe."
+
+#. translators: %s: site name
+#: app/Services/PayPal/PayPalPayouts.php:240
+#, php-format
+msgid "Affiliate commission from %s"
+msgstr "Partneri jutalék innen: %s"
+
+#: app/Services/PayPal/PayPalPayouts.php:245
+msgid "No transaction in this payout can be sent."
+msgstr "A kifizetés egyetlen tranzakciója sem küldhető el."
+
+#: app/Services/PayPal/PayPalPayouts.php:257
+msgid ""
+"This payout was sent to PayPal more than 29 days ago, so it is not sent "
+"again. Check the payout in your PayPal account. If it is there, add its "
+"batch ID. If it is not there, mark it as not in PayPal."
+msgstr "Ezt a kifizetést több mint 29 napja küldték el a PayPalnak, ezért nem küldjük el újra. Ellenőrizze a kifizetést a PayPal-fiókjában. Ha szerepel ott, adja hozzá a köteg ID-ját. Ha nem szerepel ott, jelölje úgy, hogy nincs a PayPalon."
+
+#. translators: %s: site name
+#: app/Services/PayPal/PayPalPayouts.php:270
+#, php-format
+msgid "You have a payment from %s"
+msgstr "Fizetése érkezett ettől: %s"
+
+#: app/Services/PayPal/PayPalPayouts.php:271
+msgid "You received an affiliate commission payment."
+msgstr "Partneri jutalékfizetést kapott."
+
+#: app/Services/PayPal/PayPalPayouts.php:293
+msgid ""
+"PayPal already has this payout, but its batch ID did not come back. Add the "
+"PayPal batch ID to get the payment status."
+msgstr "Ez a kifizetés már szerepel a PayPalon, de a köteg ID-ja nem érkezett vissza. A fizetési állapot lekéréséhez adja hozzá a PayPal-köteg ID-ját."
+
+#: app/Services/PayPal/PayPalPayouts.php:301
+msgid ""
+"PayPal took the payout, but its batch ID did not come back. Check the payout"
+" in your PayPal account, then add its batch ID."
+msgstr "A PayPal elfogadta a kifizetést, de a köteg ID-ja nem érkezett vissza. Ellenőrizze a kifizetést a PayPal-fiókjában, majd adja hozzá a köteg ID-ját."
+
+#: app/Services/PayPal/PayPalPayouts.php:309
+msgid ""
+"PayPal did not answer, so the payout may be sent. Check the payout in your "
+"PayPal account. If it is there, add its batch ID. If it is not there, send "
+"it again."
+msgstr "A PayPal nem válaszolt, ezért előfordulhat, hogy a kifizetés elküldésre került. Ellenőrizze a kifizetést a PayPal-fiókjában. Ha szerepel ott, adja hozzá a köteg ID-ját. Ha nem szerepel ott, küldje el újra."
+
+#: app/Services/PayPal/PayPalPayouts.php:328
+msgid "Only a payout that PayPal may not have can be marked as not in PayPal."
+msgstr "Csak olyan kifizetés jelölhető meg úgy, hogy nincs a PayPalnál, amelyet a PayPal esetleg nem kapott meg."
+
+#: app/Services/PayPal/PayPalPayouts.php:334
+msgid ""
+"Send the payout again instead. PayPal refuses it if it already has the "
+"payout."
+msgstr "Ehelyett küldje el újra a kifizetést. A PayPal elutasítja, ha már megkapta."
+
+#: app/Services/PayPal/PayPalPayouts.php:343
+msgid "PayPal did not get this payout. An admin checked the PayPal account."
+msgstr "A PayPal nem kapta meg ezt a kifizetést. Egy admin ellenőrizte a PayPal-fiókot."
+
+#: app/Services/PayPal/PayPalPayouts.php:374
+msgid "This payout does not need a PayPal batch ID."
+msgstr "Ehhez a kifizetéshez nincs szükség PayPal-köteg ID-ra."
+
+#: app/Services/PayPal/PayPalPayouts.php:378
+msgid "Enter a valid PayPal batch ID. It has letters and digits only."
+msgstr "Adjon meg érvényes PayPal-köteg ID-t. Csak betűket és számjegyeket tartalmazhat."
+
+#: app/Services/PayPal/PayPalPayouts.php:391
+msgid ""
+"This PayPal batch does not belong to this payout. Check the batch ID in your"
+" PayPal account."
+msgstr "Ez a PayPal-köteg nem ehhez a kifizetéshez tartozik. Ellenőrizze a köteg ID-ját a PayPal-fiókjában."
+
+#: app/Services/PayPal/PayPalPayouts.php:416
+msgid "This payout was not sent to PayPal yet."
+msgstr "Ezt a kifizetést még nem küldték el a PayPalnak."
+
+#: app/Services/PayPal/PayPalPayouts.php:456
+msgid "PayPal denied this payout."
+msgstr "A PayPal elutasította ezt a kifizetést."
+
+#: app/Services/PayPal/PayPalPayouts.php:780
+msgid "PayPal did not return a payout batch."
+msgstr "A PayPal nem küldött vissza kifizetési köteget."
+
+#: app/Services/PayPal/PayPalPayouts.php:786
+msgid ""
+"Payouts is not enabled on this PayPal account. Turn on Payouts in PayPal, "
+"then try again."
+msgstr "A kifizetési funkció nincs bekapcsolva ezen a PayPal-fiókon. Kapcsolja be a kifizetési funkciót a PayPalban, majd próbálja újra."
+
+#: app/Services/PluginManager/FluentLicensing.php:316
+msgid "license has been"
+msgstr "licenc"
+
+#: app/Services/PluginManager/FluentLicensing.php:316
+msgid "expired at"
+msgstr "lejárt ekkor"
+
+#: app/Services/PluginManager/FluentLicensing.php:317
+msgid "Click Here to Renew Your License"
+msgstr "Kattintson ide a licenc megújításához"
+
+#: app/Services/PluginManager/PluginUpdater.php:74
+msgid "Check Update"
+msgstr "Frissítés ellenőrzése"
+
+#: app/Services/PluginManager/PluginUpdater.php:210
+msgid "No data found for this plugin"
+msgstr "Ehhez a bővítményhez nem találhatók adatok"
+
+#: app/Services/SocialMediaShareService.php:16
+msgid "X (Twitter)"
+msgstr "X (Twitter)"
+
+#: app/Services/SocialMediaShareService.php:21
+msgid "Facebook"
+msgstr "Facebook"
+
+#: app/Services/SocialMediaShareService.php:26
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: app/Services/SocialMediaShareService.php:31
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: app/Services/SocialMediaShareService.php:36
+msgid "Email"
+msgstr "E-mail"
+
+#: app/Services/SocialMediaShareService.php:41
+msgid "Reddit"
+msgstr "Reddit"
+
+#: app/Services/SocialMediaShareService.php:46
+msgid "Telegram"
+msgstr "Telegram"
+
+#: app/Services/SocialMediaShareService.php:51
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#~ msgid "https://fluentaffiliates.com"
+#~ msgstr "https://fluentaffiliates.com"

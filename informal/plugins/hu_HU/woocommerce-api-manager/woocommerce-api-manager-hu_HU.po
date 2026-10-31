@@ -1,0 +1,2843 @@
+# Copyright (C) 2026 Kestrel
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: API Manager for WooCommerce 3.9.0\n"
+"Report-Msgid-Bugs-To: https://kestrelwp.com/contact/\n"
+"POT-Creation-Date: 2026-10-29T16:10:24+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: Kestrel <support@kestrelwp.com>\n"
+"Language-Team: Kestrel <support@kestrelwp.com>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Copyright: (C) 2026 Kestrel\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: API Manager for WooCommerce\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 3.9.0\n"
+
+#. Plugin Name of the plugin
+#: woocommerce-api-manager.php:3
+msgid "API Manager for WooCommerce"
+msgstr "API Manager for WooCommerce"
+
+#. Plugin URI of the plugin
+#: woocommerce-api-manager.php:4
+msgid "https://woo.com/products/woocommerce-api-manager/"
+msgstr "https://woo.com/products/woocommerce-api-manager/"
+
+#. Description of the plugin
+#: woocommerce-api-manager.php:5
+msgid ""
+"Sell license keys and subscriptions for software and online services to grow"
+" your digital downloads business."
+msgstr "Értékesíts licenckulcsokat és előfizetéseket szoftverekhez és online szolgáltatásokhoz, hogy bővítsd digitális letöltésekre épülő vállalkozásodat."
+
+#. Author of the plugin
+#: woocommerce-api-manager.php:7
+msgid "Kestrel"
+msgstr "Kestrel"
+
+#. Author URI of the plugin
+#: woocommerce-api-manager.php:8
+msgid "https://kestrelwp.com"
+msgstr "https://kestrelwp.com"
+
+#: legacy/class-wc-api-manager.php:119
+msgid "Cloning is forbidden."
+msgstr "A klónozás tilos."
+
+#: legacy/class-wc-api-manager.php:129
+msgid "Unserializing instances of this class is forbidden."
+msgstr "Az osztály példányainak deszerializálása tilos."
+
+#. translators: %d: interval
+#: legacy/includes/abstracts/wcam-background-process.php:178
+#, php-format
+msgid "Every %d minutes"
+msgstr "Minden %d percben"
+
+#. translators: Context: Tab title for the licensing product data panel in the
+#. product edit screen.
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:37
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:38
+#: legacy/includes/admin/wc-am-settings-admin.php:67
+#: legacy/includes/wc-am-order-admin.php:81 src/Admin/Orders.php:100
+#: src/Admin/Products.php:122 src/Admin/Products.php:281
+#: src/Admin/Products.php:341 src/Admin/Products.php:368
+#: src/Admin/Products/Licensing_Product_Data.php:96
+#: src/Admin/Products/Licensing_Product_Data.php:582
+msgid "Licensing"
+msgstr "Licencelés"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:79
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:82
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:85
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:95
+msgid "n/a"
+msgstr "n/a"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:85
+msgid "View other orders "
+msgstr "Más megrendelések megtekintése "
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:88
+msgid "API Manager subscription"
+msgstr "API Manager előfizetés"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:88
+msgid "WooCommerce Subscriptions"
+msgstr "WooCommerce Subscriptions"
+
+#. translators: Placeholders: %1$s - total activations, %2$s - purchased
+#. activations
+#. translators: Placeholder: %1$s - Total activations, %2$s - Total
+#. activations purchased
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:92
+#: templates/myaccount/api-keys.php:258 templates/myaccount/api-keys.php:261
+#: templates/myaccount/api-keys.php:317 templates/myaccount/api-keys.php:320
+#, php-format
+msgid "%1$s out of %2$s"
+msgstr "%1$s / %2$s"
+
+#. translators: Context: Used as end date for an indefinite subscription
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:100
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:26
+#: legacy/includes/data-stores/wc-am-api-resource-data-store.php:1330
+#: templates/emails/api-keys-order-complete.php:100
+#: templates/emails/api-keys-order-complete.php:107
+#: templates/emails/plain/api-keys-order-complete.php:100
+#: templates/emails/plain/api-keys-order-complete.php:105
+msgid "When cancelled"
+msgstr "Lemondáskor"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:102
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:28
+#: legacy/includes/data-stores/wc-am-api-resource-data-store.php:1307
+#: templates/emails/api-keys-order-complete.php:104
+#: templates/emails/plain/api-keys-order-complete.php:102
+#: templates/myaccount/api-keys.php:338
+msgid "Expired"
+msgstr "Lejárt"
+
+#. translators: Context: Used as end date for an indefinite subscription
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:105
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:31
+#: legacy/includes/data-stores/wc-am-api-resource-data-store.php:1310
+msgid "Never"
+msgstr "Soha"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:112
+msgid "Expires "
+msgstr "Lejár "
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:115
+msgid "None"
+msgstr "Nincs"
+
+#. translators: Placeholder: %s - cancellation date
+#. translators: Placeholder: %s - Expiration date
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:125
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:131
+#: templates/myaccount/api-keys.php:217
+#, php-format
+msgid "Pending cancellation on %s"
+msgstr "Lemondás függőben: %s"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:135
+#: templates/myaccount/api-keys.php:224
+msgid "Lifetime subscription"
+msgstr "Élethosszig tartó előfizetés"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:151
+msgid "Customer"
+msgstr "Vásárló"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:152
+#: templates/emails/api-keys-order-complete.php:65
+#: templates/emails/plain/api-keys-order-complete.php:66
+msgid "Product"
+msgstr "Termék"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:153
+msgid "Order"
+msgstr "Rendelés"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:154
+msgid "Subscription type"
+msgstr "Előfizetés típusa"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:155
+#: templates/emails/api-keys-order-complete.php:71
+#: templates/myaccount/api-keys.php:148
+msgid "Activations"
+msgstr "Aktiválások"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:156
+msgid "Access granted"
+msgstr "Hozzáférés megadva"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:157
+msgid "Access expires"
+msgstr "Hozzáférés lejárata"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:158
+#: legacy/includes/admin/wc-am-admin-system-status.php:422
+msgid "Grace period"
+msgstr "Türelmi idő"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:159
+#: templates/myaccount/api-keys.php:149
+msgid "Next payment"
+msgstr "Következő fizetés"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:325
+msgid "No licenses found."
+msgstr "Nem találhatók licencek."
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:352
+msgid "Search"
+msgstr "Keresés"
+
+#: legacy/includes/admin/menus/wc-am-customers-table-list.php:355
+msgid ""
+"Search by customer name, email, license key, order ID, user ID, or product "
+"ID."
+msgstr "Keresés a vásárló neve, e-mail címe, licenckulcsa, rendelésazonosítója, felhasználói azonosítója (ID) vagy termékazonosítója alapján."
+
+#: legacy/includes/admin/menus/wc-am-menus.php:79
+#: legacy/includes/admin/menus/wc-am-menus.php:80
+#: legacy/includes/admin/wc-am-admin-system-status.php:138 src/Plugin.php:123
+msgid "API Manager"
+msgstr "API Manager"
+
+#: legacy/includes/admin/menus/wc-am-menus.php:91
+#: legacy/includes/admin/menus/wc-am-menus.php:92
+msgid "Licenses"
+msgstr "Licencek"
+
+#: legacy/includes/admin/menus/wc-am-menus.php:101
+msgid "Settings"
+msgstr "Beállítások"
+
+#: legacy/includes/admin/menus/wc-am-menus.php:102
+msgid "Configuration"
+msgstr "Konfiguráció"
+
+#: legacy/includes/admin/menus/wc-am-menus.php:155
+msgid "Number of items per page"
+msgstr "Oldalankénti elemek száma"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-activations.php:29
+msgid "API Key Used"
+msgstr "Használt API-kulcs"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-activations.php:30
+#: templates/myaccount/api-keys.php:144
+msgid "Product ID"
+msgstr "Termék ID"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-activations.php:31
+#: legacy/includes/wc-am-product-tabs.php:176
+#: src/Products/Licensing_Assets/WordPress_Asset_Metadata.php:80
+#: templates/myaccount/api-downloads.php:61
+msgid "Version"
+msgstr "Verzió"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-activations.php:32
+msgid "Time"
+msgstr "Idő"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-activations.php:34
+#: templates/myaccount/api-keys.php:400 templates/myaccount/api-keys.php:452
+msgid "Instance"
+msgstr "Példány"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-activations.php:36
+msgid "Object"
+msgstr "Objektum"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-activations.php:60
+msgid "User license"
+msgstr "Felhasználói licenc"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-activations.php:62
+msgid "Product license"
+msgstr "Terméklicenc"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-activations.php:64
+msgid "Associated license"
+msgstr "Társított licenc"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-activations.php:99
+#: templates/myaccount/api-keys.php:393 templates/myaccount/api-keys.php:445
+msgid "Delete"
+msgstr "Törlés"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-activations.php:119
+#: legacy/includes/wc-am-order-admin.php:342
+#: legacy/includes/wc-am-order-admin.php:410
+msgid "No activations yet."
+msgstr "Még nincsenek aktiválások."
+
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:60
+msgid "Click to toggle"
+msgstr "Kattints a váltáshoz"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:61
+#, php-format
+msgid ""
+"Product ID: %1$s | Product title: %2$s | Activations: %3$s out of %4$s | "
+"Current version: %5$s | Expires: %6$s"
+msgstr "Termék-ID: %1$s | termék címe: %2$s | bekapcsolások: %3$s / %4$s | aktuális verzió: %5$s | lejárat: %6$s"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:71
+msgid "Product license key:"
+msgstr "Terméklicenckulcs:"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:88
+msgid "Activation limit total:"
+msgstr "Teljes aktiválási korlát:"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:90
+msgid "A value less than the current Activation Limit Total is not valid."
+msgstr "Az aktuális teljes aktiválási korlátnál kisebb érték nem érvényes."
+
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:104
+msgid "Current version:"
+msgstr "Jelenlegi verzió:"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:107
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:115
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:123
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:146
+msgid "Required"
+msgstr "Kötelező"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:112
+msgid "Resource title:"
+msgstr "Erőforrás címe:"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:118
+msgid "Product ID:"
+msgstr "Termék-ID:"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:133
+msgid "Expiration:"
+msgstr "Lejárat:"
+
+#: legacy/includes/admin/meta-boxes/html-order-api-resources.php:138
+msgid "A date in the future can be chosen to extend the expiration value."
+msgstr "Kiválasztható egy jövőbeli dátum a lejárat meghosszabbításához."
+
+#: legacy/includes/admin/meta-boxes/html-order-master-api-key.php:28
+#: legacy/includes/wc-am-user.php:446
+msgid "User license key:"
+msgstr "Felhasználói licenckulcs:"
+
+#: legacy/includes/admin/views/html-notice-api-products-update.php:26
+msgid ""
+"A licensing product is being added to the licensing resources database table"
+" in the background. Depending on the amount of orders that include the "
+"licensing products in your store, this may take a while."
+msgstr "A háttérben folyamatban van egy licencelési termék hozzáadása a licencelési erőforrásokat tároló adatbázistáblához. Az áruházadban a licencelési termékeket tartalmazó rendelések számától függően ez eltarthat egy ideig."
+
+#: legacy/includes/admin/views/html-notice-custom.php:26
+msgid "Dismiss"
+msgstr "Bezárás"
+
+#: legacy/includes/admin/wc-am-admin-notices.php:144
+msgid "Action failed. Please refresh the page and retry."
+msgstr "A művelet nem sikerült. Kérlek, frissítsd az oldalt, majd próbáld újra."
+
+#: legacy/includes/admin/wc-am-admin-notices.php:148
+msgid "You don&#8217;t have permission to do this."
+msgstr "Nincs jogosultságod ehhez."
+
+#. translators: Context: "Both" means both per user and per product license
+#. keys are enabled
+#: legacy/includes/admin/wc-am-admin-system-status.php:100
+msgid "Both"
+msgstr "Mindkettő"
+
+#. translators: Context: "Per user" means that license keys are enabled per
+#. user
+#: legacy/includes/admin/wc-am-admin-system-status.php:104
+msgid "Per user"
+msgstr "Felhasználónként"
+
+#. translators: Context: "Per product" means that license keys are enabled for
+#. each product
+#: legacy/includes/admin/wc-am-admin-system-status.php:109
+msgid "Per product"
+msgstr "Termékenként"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:114
+msgid "License key types"
+msgstr "Licenckulcstípusok"
+
+#. translators: Placeholder: %s - plugin name
+#: legacy/includes/admin/wc-am-admin-system-status.php:140
+#, php-format
+msgid "This section shows information about %s."
+msgstr "Ez a szakasz információkat jelenít meg erről: %s."
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:172
+msgid "API & database cache enabled"
+msgstr "API- és adatbázis-gyorsítótár engedélyezve"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:174
+#: legacy/includes/admin/wc-am-admin-system-status.php:192
+#: legacy/includes/admin/wc-am-admin-system-status.php:322
+msgid "Yes"
+msgstr "Igen"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:174
+#: legacy/includes/admin/wc-am-admin-system-status.php:192
+#: legacy/includes/admin/wc-am-admin-system-status.php:322
+msgid "No"
+msgstr "Nem"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:190
+msgid "Homepage cacheable"
+msgstr "Kezdőlap gyorsítótárazható"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:208
+msgid "Live URL"
+msgstr "Éles URL"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:227
+msgid "Plugin version"
+msgstr "Bővítményverzió"
+
+#. translators: Context: whether historical database updates are still
+#. outstanding
+#: legacy/includes/admin/wc-am-admin-system-status.php:253
+msgid "Database updates"
+msgstr "Adatbázis-frissítések"
+
+#. translators: Placeholder: %s - the database version the store last recorded
+#: legacy/includes/admin/wc-am-admin-system-status.php:256
+#, php-format
+msgid "Pending, from version %s."
+msgstr "Függőben, a(z) %s verzió óta."
+
+#. translators: Placeholder: %s - the database version the store last recorded
+#: legacy/includes/admin/wc-am-admin-system-status.php:256
+msgid "Up to date."
+msgstr "Naprakész."
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:280
+msgid "WooCommerce account connected"
+msgstr "WooCommerce-fiók csatlakoztatva"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:303
+msgid "Active product key"
+msgstr "Aktív termékkulcs"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:320
+msgid "Amazon S3 configured"
+msgstr "Amazon S3 konfigurálva"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:340
+#: legacy/includes/admin/wc-am-settings-admin.php:556
+msgid "Amazon S3 region"
+msgstr "Amazon S3 régió"
+
+#. translators: %1$s - <a> tag, %2$s - </a> tag
+#: legacy/includes/admin/wc-am-admin-system-status.php:343
+#, php-format
+msgid "%1$sPick a region.%2$s"
+msgstr "%1$sVálassz régiót.%2$s"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:360
+msgid "API cache expiration"
+msgstr "API-gyorsítótár lejárata"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:362
+msgid " hour"
+msgstr " óra"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:379
+msgid "Database cache expiration"
+msgstr "Adatbázis-gyorsítótár lejárata"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:381
+msgid " hours"
+msgstr " óra"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:398
+msgid " day"
+msgstr " nap"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:398
+msgid " days"
+msgstr " nap"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:401
+msgid "Download URLs expiration"
+msgstr "Letöltési URL-ek lejárata"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:441
+msgid "License key activations"
+msgstr "Licenckulcs-aktiválások"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:460
+msgid "Licensing products"
+msgstr "Licencelési termékek"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:479
+msgid "All licensing resources"
+msgstr "Minden licencelési erőforrás"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:498
+msgid "API Manager subscription resources"
+msgstr "API Manager-előfizetési erőforrások"
+
+#. translators: Context: Grouped products (plural)
+#: legacy/includes/admin/wc-am-admin-system-status.php:500
+#: legacy/includes/admin/wc-am-admin-system-status.php:521
+msgid " - (Grouped "
+msgstr " - (csoportosított "
+
+#. translators: Context: "WooCommerce Subscriptions" plugin (not translatable)
+#: legacy/includes/admin/wc-am-admin-system-status.php:518
+msgid "WooCommerce Subscriptions resources"
+msgstr "WooCommerce Subscriptions-erőforrásai"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:538
+msgid "Associated license keys"
+msgstr "Társított licenckulcsok"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:555
+msgid "Secure download URL hashes"
+msgstr "Biztonságos letöltési URL-hash-ek"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:574
+msgid "Grace periods"
+msgstr "Türelmi idők"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:593
+msgid "Legacy product IDs"
+msgstr "Régi termékazonosítók"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:614
+msgid "Next resources cleanup scheduled"
+msgstr "A következő erőforrás-tisztítás ütemezve"
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:616
+msgid "Not scheduled."
+msgstr "Nincs ütemezve."
+
+#: legacy/includes/admin/wc-am-admin-system-status.php:635
+msgid "Extension template overrides"
+msgstr "Bővítménysablon-felülírások"
+
+#. translators: Placeholders: %1$s is the link to the documentation, %2$s is
+#. the closing tag for the link
+#: legacy/includes/admin/wc-am-admin-system-status.php:645
+#, php-format
+msgid "%1$sLearn how to update%2$s"
+msgstr "%1$sTudd meg, hogyan frissíthetsz%2$s"
+
+#. translators: Placeholders: %1$s is the file version, %2$s is the core
+#. version
+#: legacy/includes/admin/wc-am-admin-system-status.php:693
+#, php-format
+msgid "Version %1$s is out of date. The core version is %2$s"
+msgstr "A(z) %1$s verzió elavult. Az alapverzió: %2$s"
+
+#. translators: Placeholders: %1$s - opening <strong> tag, %2$s - closing
+#. </strong> tag
+#: legacy/includes/admin/wc-am-debug-tools.php:50
+#, php-format
+msgid ""
+"%1$sNote:%2$s Only licensing resources that are missing, but should exist, "
+"will be generated. To rebuild existing licensing resources for a single "
+"order, use the \"Regenerate licensing resources\" action in the order edit "
+"screen."
+msgstr "%1$sMegjegyzés:%2$s Csak azok a hiányzó licencerőforrások jönnek létre, amelyeknek létezniük kellene. Egyetlen megrendelés meglévő licencerőforrásainak újraépítéséhez használd a megrendelés szerkesztési képernyőjén a „Licencerőforrások újragenerálása” műveletet."
+
+#: legacy/includes/admin/wc-am-debug-tools.php:53
+msgid "Licensing resources repair"
+msgstr "Licencelési erőforrások javítása"
+
+#. translators: Context: Button label to regenerate missing licensing
+#. resources data
+#: legacy/includes/admin/wc-am-debug-tools.php:55
+msgid "Regenerate resources"
+msgstr "Erőforrások újragenerálása"
+
+#: legacy/includes/admin/wc-am-debug-tools.php:56
+msgid ""
+"This tool will build licensing resources from order line items that contain "
+"licensing products with a subscription that has not yet expired, and meets "
+"all requirements to be an active licensing resource."
+msgstr "Ez az eszköz olyan rendeléstételekből hoz létre licencelési erőforrásokat, amelyek még le nem járt előfizetéssel rendelkező licencelési termékeket tartalmaznak, és megfelelnek az aktív licencelési erőforrássá válás minden feltételének."
+
+#: legacy/includes/admin/wc-am-debug-tools.php:56
+msgid ""
+"It also removes the extra licensing resource that a subscription renewal "
+"created for a product sold on a subscription plan, unless it has "
+"activations."
+msgstr "Eltávolítja az előfizetéses csomagban értékesített termékhez az előfizetés megújításakor létrejött további licencelési erőforrást is, kivéve, ha vannak hozzá aktiválások."
+
+#. translators: Placeholder: %s - next cleanup date
+#: legacy/includes/admin/wc-am-debug-tools.php:64
+#, php-format
+msgid "This cleanup process will also run automatically next on %s."
+msgstr "Ez a tisztítási folyamat legközelebb automatikusan fut: %s."
+
+#: legacy/includes/admin/wc-am-debug-tools.php:66
+msgid "This cleanup process is not scheduled to automatically run."
+msgstr "Ez a tisztítási folyamat nincs automatikus futtatásra ütemezve."
+
+#: legacy/includes/admin/wc-am-debug-tools.php:70
+#: legacy/includes/admin/wc-am-settings-admin.php:409
+msgid "Licensing resources cleanup"
+msgstr "Licencelési erőforrások tisztítása"
+
+#. translators: Context: Button label to clean up licensing resources data
+#: legacy/includes/admin/wc-am-debug-tools.php:72
+msgid "Cleanup resources"
+msgstr "Erőforrások tisztítása"
+
+#: legacy/includes/admin/wc-am-debug-tools.php:73
+msgid ""
+"This cleanup process will delete any licensing resources that have expired, "
+"or no longer exist as line items on orders or subscriptions. Related license"
+" key activations will also be deleted."
+msgstr "Ez a tisztítási folyamat törli a lejárt licencelési erőforrásokat, valamint azokat, amelyek már nem szerepelnek rendelési vagy előfizetési tételek között. A kapcsolódó licenckulcs-aktiválásokat is törli."
+
+#. translators: Placeholder: %1$s - name of the plugin to import data from,
+#. %2$s - opening <em> tag, %3$s - closing </em> tag
+#: legacy/includes/admin/wc-am-debug-tools.php:80
+#, php-format
+msgid ""
+"This tool automatically imports the %1$s license keys and activations, and "
+"builds order line items into licensing resources. %2$sThe import event will "
+"run only once%3$s."
+msgstr "Ez az eszköz automatikusan importálja a(z) %1$s licenckulcsokat és aktiválásokat, a rendelési tételekből pedig licencelési erőforrásokat hoz létre. %2$sAz importálási esemény csak egyszer fut le%3$s."
+
+#. translators: Placeholder: %1$s - opening <strong> tag, %2$s - closing
+#. </strong> tag
+#: legacy/includes/admin/wc-am-debug-tools.php:85
+#, php-format
+msgid "%1$sNote:%2$s The import event has already run."
+msgstr "%1$sMegjegyzés:%2$s Az importálási esemény már lefutott."
+
+#. translators: Placeholder: %1$s - opening <strong> tag, %2$s - closing
+#. </strong> tag, %3$s - plugin name, %4$s - opening <a> tag, %5$s - closing
+#. </a> tag
+#: legacy/includes/admin/wc-am-debug-tools.php:88
+#, php-format
+msgid ""
+"%1$sNote:%2$s for each product that should be a licensing product, select "
+"the \"Licensing\" checkbox in the product edit screen, set the \"Activation "
+"limit\", and set a \"License expiration\" value if desired. All customer "
+"licensing resources will be updated with the new values. Then, either add "
+"the %3$s to your plugin or theme, or build a new client to connect to the "
+"licensing server according to the %4$sdocumentation%5$s to take advantage of"
+" all the features available."
+msgstr "%1$sMegjegyzés:%2$s Minden olyan terméknél, amelynek licencterméknek kell lennie, jelöld be a „Licencelés” jelölőnégyzetet a termék szerkesztési képernyőjén, állítsd be az „Aktiválási korlát” értékét, és ha szeretnéd, adj meg értéket a „Licenc lejárata” mezőben is. Minden vásárló licencerőforrásai frissülnek az új értékekkel. Ezután add hozzá a %3$s elemet a bővítményedhez vagy a sablonodhoz, vagy hozz létre egy új klienst, amely a %4$sdokumentáció%5$s alapján csatlakozik a licencelési szerverhez, hogy kihasználhasd az összes elérhető funkciót."
+
+#. translators: Placeholder: %s is the name of the plugin to import data from
+#: legacy/includes/admin/wc-am-debug-tools.php:97
+#, php-format
+msgid "Import %s data"
+msgstr "A(z) %s adatainak importálása"
+
+#. translators: Context: Button label (verb) to import plugin data
+#: legacy/includes/admin/wc-am-debug-tools.php:99
+msgid "Import extension data"
+msgstr "Bővítményadatok importálása"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:68
+#: templates/myaccount/related-api-resources.php:63
+msgid "Downloads"
+msgstr "Letöltések"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:69
+#: legacy/includes/admin/wc-am-settings-admin.php:738
+msgid "Debug"
+msgstr "Hibakeresés"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:70
+msgid "Integrations"
+msgstr "Integrációk"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:154
+msgid "Your settings have been saved."
+msgstr "A beállításaidat mentettük."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:162
+msgid "Save changes"
+msgstr "Módosítások mentése"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:280
+msgid ""
+"With \"Product license keys\", each order containing a licensing product "
+"will generate a separate key per product."
+msgstr "\"Product license keys\" esetén minden licencelési terméket tartalmazó rendelés termékenként külön kulcsot generál."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:281
+msgid ""
+"With \"User license keys\", each user having purchased one or more licensing"
+" products will be offered a single key for all products."
+msgstr "\"User license keys\" esetén minden, egy vagy több licencelési terméket vásárolt felhasználó egyetlen kulcsot kap minden termékhez."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:287
+#: legacy/includes/wc-api-manager-query.php:146
+#: legacy/includes/wc-api-manager-query.php:184
+#: legacy/includes/wc-api-manager-query.php:321
+#: templates/myaccount/related-api-resources.php:49
+#: templates/myaccount/related-api-resources.php:72
+msgid "License keys"
+msgstr "Licenckulcsok"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:294
+msgid "Enabled types"
+msgstr "Engedélyezett típusok"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:295
+msgid "The type of license keys that your customers will see and receive."
+msgstr "Az a licenckulcstípus, amelyet a vásárlók látnak és megkapnak."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:301
+msgid "Product license keys"
+msgstr "Termékenkénti licenckulcsok"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:302
+msgid "User license keys"
+msgstr "Felhasználói licenckulcsok"
+
+#. translators: Context: Both license key types are enabled
+#: legacy/includes/admin/wc-am-settings-admin.php:304
+msgid "Both (not recommended)"
+msgstr "Mindkettő (nem ajánlott)"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:328
+msgid "Renewal grace period"
+msgstr "Megújítási türelmi idő"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:329
+msgid ""
+"Time interval before expired licenses and corresponding activations will be "
+"deleted, unless the customer renews their license."
+msgstr "Az az időintervallum, amely a lejárt licencek és a hozzájuk tartozó aktiválások törléséig eltelik, hacsak a vásárló nem újítja meg a licencét."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:330
+msgid "Allows the customer more time to renew their license."
+msgstr "Több időt ad az ügyfélnek a licenc megújítására."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:333
+#: legacy/includes/admin/wc-am-settings-admin.php:345
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:299
+msgid "N/A"
+msgstr "N/A"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:339
+msgid "Manual renewal period"
+msgstr "Kézi megújítási időszak"
+
+#. translators: Placeholder: %1$s - line break, %2$s - line break with small
+#. font, %3$s - line break, %4$s - closing small font tag
+#: legacy/includes/admin/wc-am-settings-admin.php:341
+#, php-format
+msgid ""
+"The time interval between when the manual renewal period begins and before a"
+" renewable API Manager subscription expires, plus the grace period. %1$sThis"
+" is when the \"My Account > License keys > Renew\" button will become "
+"visible. %2$sFor example, if set for 2 months, an annual subscription would "
+"begin its renewal period 2 months before it expires, plus the grace period "
+"after the expiration date. %3$sAutomated renewal reminder emails are sent 30"
+" days and 7 days before the expiration date, and 1 day after the expiration "
+"date if there is a grace period value of 2 days or greater.%4$s"
+msgstr "Az az időtartam, amely a kézi megújítási időszak kezdetétől az API Manager megújítható előfizetésének lejáratáig tart, plusz a türelmi idő. %1$sEkkor válik láthatóvá a \"My Account > License keys > Renew\" gomb. %2$sPéldául ha 2 hónapra van beállítva, egy éves előfizetés megújítási időszaka a lejárat előtt 2 hónappal kezdődik, plusz a türelmi idő a lejárati dátum után. %3$sAutomatikus megújítási emlékeztető e-mailek küldése a lejárat előtt 30 és 7 nappal, valamint a lejárat után 1 nappal történik, ha a türelmi idő legalább 2 nap.%4$s"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:342
+#: legacy/includes/admin/wc-am-settings-admin.php:356
+msgid ""
+"Only applies to API Manager subscriptions, disregard if you are using "
+"WooCommerce Subscriptions."
+msgstr "Csak az API Manager előfizetésekre vonatkozik, hagyd figyelmen kívül, ha WooCommerce Subscriptions-t használsz."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:354
+msgid "Manual renewal discount"
+msgstr "Kézi megújítási kedvezmény"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:355
+msgid ""
+"Discount (percentage amount) applied to manually renewed API Manager "
+"subscriptions."
+msgstr "A kézzel megújított API Manager-előfizetésekre alkalmazott kedvezmény (százalékos összeg)."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:368
+msgid "Ignore test activations"
+msgstr "Tesztaktiválások figyelmen kívül hagyása"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:369
+msgid ""
+"Do not store activation data from staging or local development environments."
+msgstr "Ne tárold az előkészítő vagy helyi fejlesztői környezetekből származó aktiválási adatokat."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:370
+msgid ""
+"When enabled, activation requests from staging sites (e.g., "
+"<code>*.local</code>, <code>*.test</code>) will return success without "
+"counting toward activation limits. Plugin updates will continue to work "
+"normally. This prevents staging sites from consuming live activation slots."
+msgstr "Bekapcsolásakor a tesztwebhelyekről (például <code>*.local</code>, <code>*.test</code>) érkező aktiválási kérések sikeres választ kapnak, de nem számítanak bele az aktiválási korlátba. A bővítményfrissítések továbbra is a megszokott módon működnek. Így a tesztwebhelyek nem használják fel az éles aktiválási helyeket."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:377
+msgid "Activation limit changes"
+msgstr "Aktiválási korlát módosításai"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:378
+msgid ""
+"How a change to a licensing product's activation limit applies to orders "
+"already placed."
+msgstr "A licencelési termék aktiválási korlátjának módosítása hogyan érvényesül a már leadott rendelések esetében."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:379
+msgid ""
+"\"New orders only\" leaves existing customers on their current limit. "
+"\"Increases only\" raises existing limits but never lowers them, since "
+"lowering a limit can remove activations customers are already using."
+msgstr "A „Csak új rendelések” beállítás esetén a meglévő vásárlók aktiválási korlátja nem változik. A „Csak növelés” beállítás növeli a meglévő korlátokat, de nem csökkenti őket, mivel a korlát csökkentése megszüntetheti azokat az aktiválásokat, amelyeket a vásárlók már használnak."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:384
+msgid "Apply to all existing orders (default)"
+msgstr "Alkalmazás az összes meglévő rendelésre (alapértelmezett)"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:385
+msgid "Apply to new orders only"
+msgstr "Alkalmazás csak az új rendelésekre"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:386
+msgid "Apply increases only, never decreases"
+msgstr "Csak növelés alkalmazása, csökkentés nélkül"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:391
+msgid "Display instance IDs"
+msgstr "Példányazonosítók megjelenítése"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:392
+msgid ""
+"Controls the visibility of activation instance IDs in order admin screens "
+"and customer accounts."
+msgstr "Az aktiválási példányazonosítók láthatóságát szabályozza a rendeléseket kezelő adminfelületeken és a vásárlói fiókokban."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:397
+msgid "Do not display (default)"
+msgstr "Ne jelenjen meg (alapértelmezett)"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:398
+msgid "Display in admin only"
+msgstr "Megjelenítés csak az adminfelületen"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:399
+msgid "Display in both admin and customer accounts"
+msgstr "Megjelenítés az adminfelületen és a vásárlói fiókokban"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:416
+msgid "Schedule event"
+msgstr "Esemény ütemezése"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:417
+msgid ""
+"Schedule a weekly cleanup of expired licensing resources and license key "
+"activations."
+msgstr "A lejárt licencelési erőforrások és licenckulcs-aktiválások heti tisztításának ütemezése."
+
+#. translators: Placeholder: %s - formatted date
+#: legacy/includes/admin/wc-am-settings-admin.php:420
+#, php-format
+msgid "The cleanup process will run automatically next on %s."
+msgstr "A tisztítási folyamat legközelebb automatikusan fut: %s."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:421
+msgid "The cleanup process is not scheduled to automatically run."
+msgstr "A tisztítási folyamat nincs automatikus futtatásra ütemezve."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:428
+msgid "Log event"
+msgstr "Esemény naplózása"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:429
+msgid "Log the cleanup event."
+msgstr "A tisztítási esemény naplózása."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:441
+msgid "Licensing server"
+msgstr "Licencszerver"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:448
+msgid "Send resource data"
+msgstr "Erőforrásadatok küldése"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:449
+msgid "Send additional data in licensing server responses."
+msgstr "További adatok küldése a licencszerver válaszaiban."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:450
+msgid ""
+"Sending extended resource data in server responses is not required, and may "
+"slow down response time."
+msgstr "A kiterjesztett erőforrásadatok küldése a szerver válaszaiban nem kötelező, és lassíthatja a válaszidőt."
+
+#. translators: Placeholder: %1$s - opening code tag, %2$s - closing code tag,
+#. %3$s - line break, %4$s - line break with code tag
+#: legacy/includes/admin/wc-am-settings-admin.php:506
+#, php-format
+msgid ""
+"For better security add the following to %1$swp-config.php%2$s, so your AWS "
+"Keys are not stored in the database: %3$s"
+msgstr "A jobb biztonság érdekében add hozzá a következőt a %1$swp-config.php%2$s fájlhoz, hogy az AWS-kulcsok ne az adatbázisban legyenek tárolva: %3$s"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:508
+msgid "Amazon S3"
+msgstr "Amazon S3"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:515
+msgid "AWS access key ID"
+msgstr "AWS-hozzáférési kulcs ID"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:516
+msgid "The Amazon Web Services access key ID."
+msgstr "Az Amazon Web Services hozzáférési kulcsának ID-je."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:523
+msgid "AWS secret access key"
+msgstr "AWS titkos hozzáférési kulcs"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:524
+msgid ""
+"The Amazon Web Services secret access key is securely encrypted in the "
+"database."
+msgstr "Az Amazon Web Services titkos hozzáférési kulcsa az adatbázisban biztonságosan titkosítva van."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:525
+msgid "The Amazon Web Services secret access key."
+msgstr "Az Amazon Web Services titkos hozzáférési kulcsa."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:532
+msgid "Values defined in the wp-config.php file."
+msgstr "A wp-config.php fájlban meghatározott értékek."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:557
+msgid "The Amazon S3 region where files are stored."
+msgstr "Az Amazon S3-régió, ahol a fájlokat tárolják."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:558
+msgid "The region is required."
+msgstr "A régió megadása kötelező."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:572
+msgid "Download links"
+msgstr "Letöltési linkek"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:579
+msgid "URL expire time"
+msgstr "URL-lejárati idő"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:580
+msgid ""
+"Expiration time in days, for Amazon S3 and local server WooCommerce URLs."
+msgstr "Lejárati idő napokban az Amazon S3-on és a helyi szerveren tárolt WooCommerce-URL-ekhez."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:581
+msgid ""
+"Sets the time limit in days before a secure URL will expire. If a download "
+"begins before the expiration time limit is reached, the download will "
+"continue until complete."
+msgstr "Beállítja, hogy hány nap elteltével járjon le a biztonságos URL. Ha a letöltés a lejárati időkorlát elérése előtt elkezdődik, a letöltés a befejezéséig folytatódik."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:597
+msgid "Save to Dropbox app key"
+msgstr "„Save to Dropbox” alkalmazáskulcs"
+
+#. translators: Placeholder: %1$s - opening link tag, %2$s - closing link tag
+#: legacy/includes/admin/wc-am-settings-admin.php:599
+#, php-format
+msgid ""
+"This creates a \"Save to Dropbox\" link in the \"My Account > Licensed "
+"downloads\" screen. %1$sCreate an App Key%2$s."
+msgstr "Ez létrehoz egy \"Save to Dropbox\" linket a \"My Account > Licensed downloads\" képernyőn. %1$sCreate an App Key%2$s."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:626
+msgid "WordPress plugin tabs"
+msgstr "WordPress bővítményfülek"
+
+#. translators: Placeholder: %1$s - opening link tag, %2$s - closing link tag
+#: legacy/includes/admin/wc-am-settings-admin.php:628
+#, php-format
+msgid ""
+"Choose which tabs will display on a WordPress plugin information screen. Can"
+" also be used for non-WordPress software. Changelog is required. "
+"%1$sScreenshot example%2$s."
+msgstr "Válaszd ki, mely fülek jelenjenek meg egy WordPress bővítmény információs képernyőjén. Nem WordPress szoftverhez is használható. A változásnapló kötelező. %1$sPéldaképernyőkép%2$s."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:634
+#: legacy/includes/wc-am-product-tabs.php:67
+#: src/Products/Licensing_Assets/WordPress_Asset_Documents.php:90
+#: src/Products/Licensing_Product_Tab.php:85
+msgid "Description"
+msgstr "Leírás"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:636
+#: legacy/includes/admin/wc-am-settings-admin.php:644
+#: legacy/includes/admin/wc-am-settings-admin.php:652
+#: legacy/includes/admin/wc-am-settings-admin.php:660
+#: legacy/includes/admin/wc-am-settings-admin.php:668
+#: legacy/includes/admin/wc-am-settings-admin.php:675
+msgid "Enable"
+msgstr "Bekapcsolás"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:642
+#: legacy/includes/wc-am-product-tabs.php:79
+#: src/Products/Licensing_Assets/WordPress_Asset_Documents.php:94
+#: src/Products/Licensing_Product_Tab.php:89
+msgid "Installation"
+msgstr "Telepítés"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:650
+#: legacy/includes/wc-am-product-tabs.php:85
+#: src/Products/Licensing_Assets/WordPress_Asset_Documents.php:96
+#: src/Products/Licensing_Product_Tab.php:91
+msgid "FAQ"
+msgstr "GYIK"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:658
+#: legacy/includes/wc-am-product-tabs.php:91
+#: src/Products/Licensing_Assets/WordPress_Asset_Documents.php:98
+#: src/Products/Licensing_Product_Tab.php:93
+msgid "Screenshots"
+msgstr "Képernyőképek"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:666
+#: legacy/includes/wc-am-product-tabs.php:97
+#: src/Products/Licensing_Product_Tab.php:97
+msgid "Other notes"
+msgstr "Egyéb megjegyzések"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:674
+msgid "Add tabs to product pages"
+msgstr "Fülek hozzáadása a termékoldalakhoz"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:676
+msgid ""
+"Add tabs to the product page in the frontend using API Manager product data."
+msgstr "Fülek hozzáadása az előtérben megjelenő termékoldalhoz az API Manager termékadataival."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:688
+msgid "Migrations"
+msgstr "Migrációk"
+
+#. translators: Placeholder: %s - Plugin name
+#: legacy/includes/admin/wc-am-settings-admin.php:696
+#, php-format
+msgid "%s plugin"
+msgstr "%s bővítmény"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:697
+msgid "Migrate"
+msgstr "Migrálás"
+
+#. translators: Placeholder: %1$s - line break, %2$s - line break, %3$s -
+#. opening strong tag, %4$s - closing strong tag, %5$s - opening link tag,
+#. %6$s - closing link tag
+#: legacy/includes/admin/wc-am-settings-admin.php:699
+#, php-format
+msgid ""
+"When this option is selected, API Manager will listen for HTTP(s) API "
+"queries intended for the WooCommerce Software Add-On plugin.%1$sThe "
+"WooCommerce Software Add-On plugin can be deleted after its data has been "
+"imported into WooCommerce API Manager.%2$s%3$sNote:%4$s The import tool will"
+" not run unless this option is selected. Go to %5$sTools%6$s to Import the "
+"WooCommerce Software Add-On data into API Manager."
+msgstr "Ha ezt az opciót választod, az API Manager figyelni fogja a WooCommerce Software Add-On bővítménynek szánt HTTP(s) API-lekérdezéseket.%1$sA WooCommerce Software Add-On bővítmény törölhető, miután az adatait importáltad a WooCommerce API managerbe.%2$s%3$sMegjegyzés:%4$s Az importáló eszköz csak akkor fut, ha ez az opció ki van választva. Lépj az %5$sEszközök%6$s menübe a WooCommerce Software Add-On adatainak API managerbe történő importálásához."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:711
+msgid "API Manager extensions"
+msgstr "API Manager bővítmények"
+
+#. translators: Placeholder: %1$s - opening link tag, %2$s - closing link tag
+#: legacy/includes/admin/wc-am-settings-admin.php:713
+#, php-format
+msgid ""
+"Integrate plugins and themes easily with %1$sAPI Manager for WooCommerce PHP"
+" library for WordPress plugins and themes%2$s."
+msgstr "A bővítményeket és sablonokat egyszerűen integrálhatod a %1$sWordPress-bővítményekhez és -sablonokhoz készült API Manager for WooCommerce PHP-könyvtárral%2$s."
+
+#. translators: Placeholder: %1$s - opening link tag, %2$s - closing link tag
+#: legacy/includes/admin/wc-am-settings-admin.php:741
+#, php-format
+msgid ""
+"%1$sPostman%2$s is recommended for testing requests to the license server."
+msgstr "%1$sPostman%2$s ajánlott a licencszerver felé irányuló kérések teszteléséhez."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:746
+msgid "Server request log"
+msgstr "Szerverkérések naplója"
+
+#. translators: Placeholder: %s - log file
+#: legacy/includes/admin/wc-am-settings-admin.php:748
+#, php-format
+msgid "Log query events to: %s."
+msgstr "Lekérdezési események naplózása ide: %s."
+
+#. translators: Placeholders: %1$s - log file size, %2$s - opening link tag,
+#. %3$s - closing link tag
+#: legacy/includes/admin/wc-am-settings-admin.php:750
+#: legacy/includes/admin/wc-am-settings-admin.php:761
+#: legacy/includes/admin/wc-am-settings-admin.php:772
+#, php-format
+msgid "Log file size: %1$s - %2$sView Log%3$s"
+msgstr "Naplófájl mérete: %1$s - %2$sNapló megtekintése%3$s"
+
+#: legacy/includes/admin/wc-am-settings-admin.php:757
+msgid "Server error log"
+msgstr "Szerverhibák naplója"
+
+#. translators: Placeholder: %s - log file
+#: legacy/includes/admin/wc-am-settings-admin.php:759
+#, php-format
+msgid "Log error events to: %s."
+msgstr "Hibaesemények naplózása ide: %s."
+
+#: legacy/includes/admin/wc-am-settings-admin.php:768
+msgid "Server response log"
+msgstr "Szerverválaszok naplója"
+
+#. translators: Placeholder: %s - log file
+#: legacy/includes/admin/wc-am-settings-admin.php:770
+#, php-format
+msgid "Log response events to: %s."
+msgstr "Válaszesemények naplózása ide: %s."
+
+#: legacy/includes/api/wc-am-api-requests.php:115
+msgid "The source did not send a required IP address."
+msgstr "A forrás nem küldte el a szükséges IP-címet."
+
+#. translators: Context: Request source IP address is not trusted
+#: legacy/includes/api/wc-am-api-requests.php:138
+msgid "The source is not trusted."
+msgstr "A forrás nem megbízható."
+
+#: legacy/includes/api/wc-am-api-requests.php:148
+msgid "No request value received."
+msgstr "Nem érkezett érték a kérésben."
+
+#: legacy/includes/api/wc-am-api-requests.php:268
+msgid "Request value does not exist."
+msgstr "A kérésben szereplő érték nem létezik."
+
+#: legacy/includes/api/wc-am-api-requests.php:284
+msgid "An empty license key was sent."
+msgstr "Üres licenckulcsot küldtek."
+
+#: legacy/includes/api/wc-am-api-requests.php:296
+msgid "A customer account does not exist for this license key."
+msgstr "Ehhez a licenckulcshoz nem tartozik vásárlói fiók."
+
+#: legacy/includes/api/wc-am-api-requests.php:316
+msgid ""
+"A user license key did not exist for this account, but is required, so a "
+"user license key was created. Please try your request again, or contact "
+"support."
+msgstr "Ehhez a fiókhoz nem létezett felhasználói licenckulcs, pedig szükséges, ezért létrehoztunk egy felhasználói licenckulcsot. Próbáld meg újra a kérésedet, vagy lépj kapcsolatba a támogatással."
+
+#: legacy/includes/api/wc-am-api-requests.php:322
+msgid ""
+"The access for this license key has been disabled, or a license key was sent"
+" that does not exist on this store."
+msgstr "A licenckulcshoz tartozó hozzáférés ki van kapcsolva, vagy olyan licenckulcsot küldtek, amely nem létezik ebben az áruházban."
+
+#. translators: Placeholder: %s - comma separated list of missing required
+#. fields
+#: legacy/includes/api/wc-am-api-requests.php:355
+#, php-format
+msgid "The following required query string data is missing: %s"
+msgstr "A következő kötelező lekérdezési paraméter hiányzik: %s"
+
+#. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
+#: legacy/includes/api/wc-am-api-requests.php:377
+#, php-format
+msgid ""
+"No licensing resources exist. Login to %1$sMy Account%2$s to verify there "
+"are activations remaining, and the license key and product ID are correct."
+msgstr "Nincsenek licencelési erőforrások. Jelentkezz be a %1$sFiókom%2$s oldalra, és ellenőrizd, hogy maradtak-e aktiválások, valamint hogy a licenckulcs és a termék-ID helyes-e."
+
+#. translators: Placeholder: %s - error message
+#: legacy/includes/api/wc-am-api-requests.php:387
+#: legacy/includes/api/wc-am-api-requests.php:1670
+#, php-format
+msgid "There was an error getting licensing resources: %s"
+msgstr "Hiba történt a licencelési erőforrások lekérésekor: %s"
+
+#: legacy/includes/api/wc-am-api-requests.php:461
+msgid ""
+"Cannot activate license key. The license key has already been activated with"
+" the same unique instance ID sent with this request."
+msgstr "A licenckulcsot nem sikerült kikapcsolni. A licenckulcsot már aktiválták ugyanazzal az egyedi példány-ID-val, amelyet ezzel a kéréssel küldtek."
+
+#: legacy/includes/api/wc-am-api-requests.php:492
+#: legacy/includes/api/wc-am-api-requests.php:588
+#: legacy/includes/api/wc-am-api-requests.php:685
+#: legacy/includes/api/wc-am-api-requests.php:776
+#, php-format
+msgid "%1$s out of %2$s activations remaining"
+msgstr "Hátralévő aktiválások: %1$s / %2$s"
+
+#: legacy/includes/api/wc-am-api-requests.php:572
+msgid "Cannot activate license key. No licensing resources available."
+msgstr "A licenckulcs nem aktiválható. Nem állnak rendelkezésre licencelési erőforrások."
+
+#. translators: Placeholder: %s - error message
+#: legacy/includes/api/wc-am-api-requests.php:603
+#, php-format
+msgid "There was an error getting licensing resources in activate(): %s"
+msgstr "Hiba történt a licencelési erőforrások lekérésekor az activate() során: %s"
+
+#: legacy/includes/api/wc-am-api-requests.php:760
+msgid "The license key could not be deactivated."
+msgstr "A licenckulcsot nem sikerült kikapcsolni."
+
+#. translators: Placeholder: %s - error message
+#: legacy/includes/api/wc-am-api-requests.php:791
+#, php-format
+msgid "There was an error getting licensing resources in deactivate(): %s"
+msgstr "Hiba történt a licencelési erőforrások lekérésekor a deactivate() során: %s"
+
+#. translators: Placeholder: %s - error message
+#: legacy/includes/api/wc-am-api-requests.php:871
+#, php-format
+msgid "There was an error getting licensing resources in status(): %s"
+msgstr "Hiba történt a licencelési erőforrások lekérésekor a status() során: %s"
+
+#. translators: Placeholder: %s - Product ID
+#: legacy/includes/api/wc-am-api-requests.php:1037
+#: legacy/includes/api/wc-am-api-requests.php:1326
+#, php-format
+msgid "The product ID %s could not be found in this store."
+msgstr "A(z) %s ID-jű termék nem található ebben az áruházban."
+
+#. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
+#: legacy/includes/api/wc-am-api-requests.php:1662
+#, php-format
+msgid ""
+"No licensing resources exist. Login to %1$sMy Account%2$s to verify there "
+"are activations remaining, and the license key is correct."
+msgstr "Nincsenek licencelési erőforrások. Jelentkezz be a %1$sFiókom%2$s oldalra, hogy ellenőrizd, maradtak-e aktiválások, valamint hogy a licenckulcs helyes-e."
+
+#: legacy/includes/api/wc-am-api-requests.php:1734
+msgid "The license key is not active or does not exist."
+msgstr "A licenckulcs nem aktív, vagy nem létezik."
+
+#. translators: Placeholder: %s - error message
+#: legacy/includes/api/wc-am-api-requests.php:1740
+#, php-format
+msgid "There was an error verifying the license key: %s"
+msgstr "Hiba történt a licenckulcs ellenőrzésekor: %s"
+
+#: legacy/includes/data-stores/wc-am-api-activation-data-store.php:933
+#: legacy/includes/data-stores/wc-am-api-activation-data-store.php:967
+msgid "The activation could not be deleted."
+msgstr "Az aktiválást nem sikerült törölni."
+
+#: legacy/includes/data-stores/wc-am-api-resource-data-store.php:1301
+msgid "Renewable until: "
+msgstr "Eddig megújítható: "
+
+#: legacy/includes/data-stores/wc-am-api-resource-data-store.php:1303
+msgid "Lifetime Subscription"
+msgstr "Élethosszig tartó előfizetés"
+
+#: legacy/includes/data-stores/wc-am-api-resource-data-store.php:1325
+msgid "Pending Cancellation on"
+msgstr "A lemondás ekkor függőben van"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:44
+msgid "Expiring subscription"
+msgstr "Lejáró előfizetés"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:45
+msgid ""
+"Expiring API Manager subscription emails are sent when a customer's "
+"subscription will expire soon, and provide a renewal link."
+msgstr "Az API Manager lejáró előfizetésről szóló e-mailek akkor kerülnek kiküldésre, amikor a vásárló előfizetése hamarosan lejár, és megújítási linket tartalmaznak."
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:72
+msgid "Subscription on order #{order_number} is expiring soon on {site_title}"
+msgstr "A #{order_number} számú rendelés előfizetése hamarosan lejár a(z) {site_title} oldalon"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:74
+msgid ""
+"Subscription on order #{order_number} has expired but is renewable on "
+"{site_title}"
+msgstr "A #{order_number} számú rendelés előfizetése lejárt, de megújítható a(z) {site_title} oldalon"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:77
+msgid "Subscription on order #{order_number} has expired on {site_title}"
+msgstr "A #{order_number} számú rendelés előfizetése lejárt a(z) {site_title} oldalon"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:92
+msgid ""
+"Subscription for order #{order_number} is expiring soon on {site_title}"
+msgstr "A #{order_number} számú rendeléshez tartozó előfizetés hamarosan lejár a(z) {site_title} oldalon"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:94
+msgid ""
+"Subscription for order #{order_number} has expired but is renewable on "
+"{site_title}"
+msgstr "A #{order_number} számú rendeléshez tartozó előfizetés lejárt, de megújítható a(z) {site_title} oldalon"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:97
+msgid "Subscription for order #{order_number} has expired on {site_title}"
+msgstr "A #{order_number} számú rendeléshez tartozó előfizetés lejárt a(z) {site_title} oldalon"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:160
+msgid "Thanks for using {site_url}!"
+msgstr "Köszönjük, hogy a {site_url} oldalt használod!"
+
+#. translators: %s: list of placeholders
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:245
+#, php-format
+msgid "Available placeholders: %s"
+msgstr "Elérhető helyőrzők: %s"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:248
+msgid "Subject expiring"
+msgstr "Tárgy – hamarosan lejár"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:256
+msgid "Email heading expiring"
+msgstr "E-mail címsor – hamarosan lejár"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:264
+msgid "Subject still renewable"
+msgstr "Tárgy – még megújítható"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:272
+msgid "Email heading still renewable"
+msgstr "E-mail címsor – még megújítható"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:280
+msgid "Subject expired"
+msgstr "Tárgy – lejárt"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:288
+msgid "Email heading expired"
+msgstr "E-mail címsor – lejárt"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:296
+msgid "Additional content"
+msgstr "További tartalom"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:297
+msgid "Text to appear below the main email content."
+msgstr "A fő e-mail-tartalom alatt megjelenő szöveg."
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:305
+msgid "Email type"
+msgstr "E-mail típusa"
+
+#: legacy/includes/emails/wcam-email-expiring-subscription.php:307
+msgid "Choose which format of email to send."
+msgstr "Válaszd ki a küldendő e-mail formátumát."
+
+#: legacy/includes/wc-am-download-handler.php:73
+#: legacy/includes/wc-am-download-handler.php:121
+msgid "Invalid download link."
+msgstr "Érvénytelen letöltési hivatkozás."
+
+#: legacy/includes/wc-am-download-handler.php:82
+msgid "Access expired."
+msgstr "A hozzáférés lejárt."
+
+#: legacy/includes/wc-am-download-handler.php:87
+msgid "Authentication failed."
+msgstr "Sikertelen hitelesítés."
+
+#: legacy/includes/wc-am-download-handler.php:101
+#: legacy/includes/wc-am-download-handler.php:148
+msgid "No file defined"
+msgstr "Nincs megadva fájl"
+
+#: legacy/includes/wc-am-download-handler.php:168
+msgid "Invalid order."
+msgstr "Érvénytelen rendelés."
+
+#: legacy/includes/wc-am-download-handler.php:182
+msgid "Sorry, you have reached your download limit for this file"
+msgstr "Sajnáljuk, elérted a fájlhoz tartozó letöltési korlátot"
+
+#: legacy/includes/wc-am-download-handler.php:195
+msgid "Sorry, this download has expired"
+msgstr "Sajnáljuk, ez a letöltés lejárt"
+
+#: legacy/includes/wc-am-download-handler.php:421
+msgid "File not found"
+msgstr "A fájl nem található"
+
+#: legacy/includes/wc-am-download-handler.php:613
+#: templates/myaccount/api-downloads.php:335
+#: templates/myaccount/api-keys.php:516
+msgid "Go to shop"
+msgstr "Tovább a boltba"
+
+#: legacy/includes/wc-am-encryption.php:120
+#: legacy/includes/wc-am-encryption.php:140
+#, php-format
+msgid "Encryption failed: %s"
+msgstr "Sikertelen titkosítás: %s"
+
+#. translators: placeholder is human time diff (e.g. "3 weeks")
+#: legacy/includes/wc-am-format.php:66
+#, php-format
+msgid "In %s"
+msgstr "Ezen belül: %s"
+
+#. translators: placeholder is human time diff (e.g. "3 weeks")
+#: legacy/includes/wc-am-format.php:69
+#, php-format
+msgid "%s ago"
+msgstr "%s ezelőtt"
+
+#: legacy/includes/wc-am-order-admin.php:82
+msgid "License activations"
+msgstr "Licencaktiválások"
+
+#: legacy/includes/wc-am-order-admin.php:101
+#: legacy/includes/wc-am-order-admin.php:170
+#: legacy/includes/wc-am-order-admin.php:331
+msgid "Contains no licensing products."
+msgstr "Nem tartalmaz licencelhető termékeket."
+
+#: legacy/includes/wc-am-order-admin.php:304
+#: legacy/includes/wc-am-order-admin.php:306
+#, php-format
+msgid "See Parent Order %1$s%2$s"
+msgstr "Szülő rendelés megtekintése %1$s%2$s"
+
+#: legacy/includes/wc-am-order-admin.php:310
+msgid "No licensing resources for this order."
+msgstr "Ehhez a rendeléshez nem tartoznak licenchez kapcsolódó erőforrások."
+
+#: legacy/includes/wc-am-order-admin.php:354
+msgid "Are you sure you want to delete this activation?"
+msgstr "Biztosan törlöd ezt az aktiválást?"
+
+#: legacy/includes/wc-am-product-tabs.php:61
+#: src/Products/Licensing_Assets/WordPress_Asset_Documents.php:88
+#: src/Products/Licensing_Product_Tab.php:83
+#: templates/myaccount/api-downloads.php:63
+#: templates/myaccount/api-downloads.php:183
+#: templates/myaccount/api-downloads.php:275
+msgid "Documentation"
+msgstr "Dokumentáció"
+
+#: legacy/includes/wc-am-product-tabs.php:73
+#: src/Products/Licensing_Assets/WordPress_Asset_Documents.php:92
+#: src/Products/Licensing_Product_Tab.php:87
+#: templates/myaccount/api-downloads.php:174
+#: templates/myaccount/api-downloads.php:267
+msgid "Changelog"
+msgstr "Változásnapló"
+
+#: legacy/includes/wc-am-product-tabs.php:142
+msgid "Release notes"
+msgstr "Kiadási megjegyzések"
+
+#: legacy/includes/wc-am-product-tabs.php:177
+msgid "Requires WordPress version"
+msgstr "Szükséges WordPress-verzió"
+
+#: legacy/includes/wc-am-product-tabs.php:178
+msgid "WordPress version compatible up to"
+msgstr "WordPress-verzió, ameddig kompatibilis"
+
+#: legacy/includes/wc-am-product-tabs.php:179
+msgid "Requires PHP version"
+msgstr "Szükséges PHP-verzió"
+
+#: legacy/includes/wc-am-product-tabs.php:180
+#: src/Products/Licensing_Assets/WordPress_Asset_Metadata.php:78
+msgid "Last updated"
+msgstr "Utoljára frissítve"
+
+#. translators: Context: Used as a piece of strings like 'Requires WordPress
+#. version: 6.0 or higher' or 'Requires PHP version: 7.4 or higher'
+#: legacy/includes/wc-am-product-tabs.php:193
+msgid "or higher"
+msgstr "vagy újabb"
+
+#: legacy/includes/wc-am-renew-subscription.php:71
+msgid "Nonce security check failed."
+msgstr "A nonce biztonsági ellenőrzése sikertelen."
+
+#: legacy/includes/wc-am-renew-subscription.php:85
+msgid "Invalid Product ID."
+msgstr "Hibás termék-ID."
+
+#: legacy/includes/wc-am-renew-subscription.php:93
+msgid "This product can no longer be purchased."
+msgstr "Ez a termék már nem vásárolható meg."
+
+#: legacy/includes/wc-am-renew-subscription.php:128
+#: legacy/includes/wc-am-renew-subscription.php:152
+msgid "Renewal"
+msgstr "Megújítás"
+
+#: legacy/includes/wc-am-renew-subscription.php:245
+msgid "Expired license"
+msgstr "Lejárt licenc"
+
+#: legacy/includes/wc-am-renew-subscription.php:249
+msgid "New product ID"
+msgstr "Új termék-ID"
+
+#: legacy/includes/wc-am-renew-subscription.php:253
+msgid "New order ID"
+msgstr "Új rendelés-ID"
+
+#: legacy/includes/wc-am-renew-subscription.php:257
+msgid "License renewal"
+msgstr "Licenc megújítása"
+
+#: legacy/includes/wc-am-renew-subscription.php:261
+msgid "Discount applied"
+msgstr "Kedvezmény alkalmazva"
+
+#: legacy/includes/wc-am-user.php:438
+msgid "License key"
+msgstr "Licenckulcs"
+
+#: legacy/includes/wc-am-user.php:444
+msgid "Generate user license key"
+msgstr "Felhasználói licenckulcs generálása"
+
+#: legacy/includes/wc-am-user.php:452
+msgid "Replace user license key"
+msgstr "Felhasználói licenckulcs cseréje"
+
+#: legacy/includes/wc-am-user.php:457
+msgid "Disable user license key"
+msgstr "Felhasználói licenckulcs letiltása"
+
+#: legacy/includes/wc-api-manager-query.php:156
+#: legacy/includes/wc-api-manager-query.php:193
+#: legacy/includes/wc-api-manager-query.php:330
+#: templates/myaccount/related-api-resources.php:86
+msgid "Licensed downloads"
+msgstr "Licencelt letöltések"
+
+#: legacy/includes/wc-api-manager-query.php:322
+msgid "Endpoint for the My Account &rarr; License keys page"
+msgstr "Végpont a My Account &rarr; License keys oldalhoz"
+
+#: legacy/includes/wc-api-manager-query.php:331
+msgid "Endpoint for the My Account &rarr; Licensed downloads page"
+msgstr "Végpont a My Account &rarr; Licensed downloads oldalhoz"
+
+#. translators: %1$s - latest version number, %2$s - opening anchor tag for
+#. GitHub repository link, %3$s - closing anchor tag, %4$s - opening anchor
+#. tag for support link, %5$s - closing anchor tag.
+#: src/Admin.php:91
+#, php-format
+msgid ""
+"The latest version of the Kestrel API Manager Client Library is %1$s. If you"
+" are using API Manager to sell WordPress plugins or themes, we recommend "
+"updating your products that use this library to this version to take "
+"advantage of the latest features and improvements. You can download the "
+"latest version from %2$sthe GitHub repository%3$s. Please %4$sreach out to "
+"our support team%5$s if you have questions or feedback!"
+msgstr "A Kestrel API Manager Client Library legújabb verziója: %1$s. Ha az API Manager használatával WordPress-bővítményeket vagy sablonokat értékesítesz, javasoljuk, hogy frissítsd erre a verzióra az ezt a könyvtárat használó termékeidet, hogy kihasználhasd a legújabb funkciókat és fejlesztéseket. A legújabb verziót a %2$sGitHub-tárolóból%3$s töltheted le. Ha kérdésed vagy visszajelzésed van, %4$slépj kapcsolatba támogatási csapatunkkal%5$s!"
+
+#. translators: %1$s - opening anchor tag for the WooCommerce Accounts &
+#. Privacy settings page, %2$s - closing anchor tag.
+#: src/Admin.php:107
+#, php-format
+msgid ""
+"WooCommerce guest checkout is enabled, but your store sells licensing "
+"products that require a customer account to receive API keys. API Manager "
+"will require account registration at checkout for carts containing any "
+"licensing products. You can keep guest checkout enabled for all other "
+"orders. %1$sReview account settings%2$s."
+msgstr "A WooCommerce-ben be van kapcsolva a vendégként történő vásárlás, de az áruházad olyan termékeket árul, amelyekhez API-kulcsok fogadásához vásárlói fiók szükséges. Az API Manager a pénztárnál kötelezővé teszi a fiók létrehozását, ha a kosár legalább egy licencet biztosító terméket tartalmaz. Minden más rendelésnél bekapcsolva tarthatod a vendégként történő vásárlást. %1$sFiókbeállítások áttekintése%2$s."
+
+#: src/Admin/Orders.php:131
+msgid "Has activations."
+msgstr "Vannak aktiválásai."
+
+#: src/Admin/Orders.php:133
+msgid "No activations."
+msgstr "Nincsenek aktiválások."
+
+#: src/Admin/Orders.php:157
+msgid "All orders"
+msgstr "Összes rendelés"
+
+#: src/Admin/Orders.php:158
+msgid "Has active license"
+msgstr "Van aktív licenc"
+
+#: src/Admin/Orders.php:313
+msgid "Cancel licensing subscription"
+msgid_plural "Cancel licensing subscriptions"
+msgstr[0] "Licencelőfizetés lemondása"
+msgstr[1] "Licencelőfizetések lemondása"
+
+#. translators: Placeholders: %1$s - Subscription ID, %2$s - Refund ID
+#: src/Admin/Orders.php:354
+#, php-format
+msgid ""
+"Subscription #%1$s cancelled as part of the refund (#%2$s) for this order."
+msgstr "A #%1$s előfizetést lemondtuk a rendeléshez tartozó (#%2$s számú) visszatérítés részeként."
+
+#. translators: Placeholders: %1$s - subscription ID, %2$s - error message
+#: src/Admin/Orders.php:363
+#, php-format
+msgid ""
+"Failed to cancel subscription #%1$s following refund request for order: %2$s"
+msgstr "Nem sikerült lemondani a #%1$s előfizetést a(z) %2$s rendelés visszatérítési kérelmét követően."
+
+#: src/Admin/Orders.php:494
+msgid "Regenerate licensing resources"
+msgstr "Licencelési erőforrások újragenerálása"
+
+#: src/Admin/Orders.php:520
+msgid ""
+"Licensing resources were not regenerated because the order has no customer "
+"account."
+msgstr "A licencelési erőforrásokat nem generáltuk újra, mert a rendeléshez nem tartozik vásárlói fiók."
+
+#. translators: %d - number of licensing resources on the order
+#: src/Admin/Orders.php:534
+#, php-format
+msgid ""
+"Licensing resources regenerated via order action. The order has %d licensing"
+" resource."
+msgid_plural ""
+"Licensing resources regenerated via order action. The order has %d licensing"
+" resources."
+msgstr[0] "A rendelési művelettel újrageneráltuk a licencelési erőforrásokat. A rendeléshez %d licencelési erőforrás tartozik."
+msgstr[1] "A rendelési művelettel újrageneráltuk a licencelési erőforrásokat. A rendeléshez %d licencelési erőforrás tartozik."
+
+#. translators: %s - error message
+#: src/Admin/Orders.php:540
+#, php-format
+msgid "Failed to regenerate licensing resources: %s"
+msgstr "Nem sikerült újragenerálni a licencelési erőforrásokat: %s"
+
+#: src/Admin/Products.php:182
+msgid "Restore this item from the Trash"
+msgstr "Elem visszaállítása a Lomtárból"
+
+#: src/Admin/Products.php:184
+msgid "Restore"
+msgstr "Visszaállítás"
+
+#: src/Admin/Products.php:280
+msgid "Filter by licensing"
+msgstr "Szűrés licencelés szerint"
+
+#: src/Admin/Products.php:282
+msgid "Not licensing"
+msgstr "Nem licencet biztosító termék"
+
+#: src/Admin/Products.php:342 src/Admin/Products.php:369
+msgid "Enable this option if this product will provide licensing resources."
+msgstr "Kapcsold be ezt a beállítást, ha ez a termék licencelési erőforrásokat biztosít."
+
+#: src/Admin/Products/Licensing_Product_Data.php:128
+msgid "Licensed asset type"
+msgstr "Licencelt eszköz típusa"
+
+#: src/Admin/Products/Licensing_Product_Data.php:129
+msgid "Select the type of licensed asset this product is for."
+msgstr "Válaszd ki, milyen típusú licencelt eszközhöz tartozik ez a termék."
+
+#: src/Admin/Products/Licensing_Product_Data.php:141
+msgid "Licensed product ID"
+msgstr "Licencelt termék ID"
+
+#. translators: Placeholders: %1$s opening <strong> tag, %2$s closing
+#. </strong> tag.
+#: src/Admin/Products/Licensing_Product_Data.php:143
+#, php-format
+msgid ""
+"Unique ID used to identify the licensed resource. %1$sDo NOT delete this "
+"product or remove this ID from its metadata.%2$s"
+msgstr "A licencelt erőforrás azonosítására használt egyedi ID. %1$sNE töröld ezt a terméket, és NE távolítsd el ezt az ID-t a metaadatai közül.%2$s"
+
+#: src/Admin/Products/Licensing_Product_Data.php:155
+msgid "Allowed activations"
+msgstr "Engedélyezett aktiválások"
+
+#: src/Admin/Products/Licensing_Product_Data.php:156
+msgid ""
+"Select how many times a customer will be able to activate the licensed "
+"asset."
+msgstr "Válaszd ki, hogy a vásárló hányszor aktiválhatja a licencelt eszközt."
+
+#: src/Admin/Products/Licensing_Product_Data.php:164
+msgid "Limited activations (default)"
+msgstr "Korlátozott számú aktiválás (alapértelmezett)"
+
+#: src/Admin/Products/Licensing_Product_Data.php:165
+msgid "Unlimited activations"
+msgstr "Korlátlan aktiválás"
+
+#: src/Admin/Products/Licensing_Product_Data.php:171
+msgid "Activation limit"
+msgstr "Aktiválási korlát"
+
+#: src/Admin/Products/Licensing_Product_Data.php:189
+msgid "License expiration"
+msgstr "Licenc lejárata"
+
+#: src/Admin/Products/Licensing_Product_Data.php:190
+msgid ""
+"Select whether licenses for this asset will expire after a set number of "
+"days."
+msgstr "Válaszd ki, hogy az eszköz licencei lejárjanak-e egy megadott számú nap után."
+
+#: src/Admin/Products/Licensing_Product_Data.php:198
+msgid "Never expire"
+msgstr "Lejárat nélkül"
+
+#: src/Admin/Products/Licensing_Product_Data.php:199
+msgid "Expire after a set number of days"
+msgstr "Lejárat a megadott számú nap elteltével"
+
+#: src/Admin/Products/Licensing_Product_Data.php:205
+msgid "Access length (days)"
+msgstr "Hozzáférés időtartama (nap)"
+
+#. translators: Placeholders: %1$s opening <strong> tag, %2$s closing
+#. </strong> tag.
+#: src/Admin/Products/Licensing_Product_Data.php:208
+#, php-format
+msgid ""
+"Enter the number of days before a license expires. %1$sCaution!%2$s Changing"
+" this value will cause all existing licenses with this product ID to "
+"recalculate using this new value."
+msgstr "Add meg, hány nappal járjon le a licenc. %1$sFigyelem!%2$s Ennek az értéknek a módosításakor a rendszer újraszámítja az adott termék ID-jához tartozó összes meglévő licencet az új értékkel."
+
+#: src/Admin/Products/Licensing_Product_Data.php:222
+msgid "Upgrade notice"
+msgstr "Frissítési értesítés"
+
+#: src/Admin/Products/Licensing_Product_Data.php:223
+msgid "A notice to be displayed when an update is available (optional)."
+msgstr "Értesítés, amely akkor jelenik meg, ha elérhető egy frissítés (opcionális)."
+
+#: src/Admin/Products/Licensing_Product_Data.php:232
+msgid "Licensed asset details"
+msgstr "Licencelt eszköz részletei"
+
+#: src/Admin/Products/Licensing_Product_Data.php:233
+msgid "Configure the basic licensing details for this product variation."
+msgstr "Állítsd be a termékváltozat alapvető licencelési részleteit."
+
+#: src/Admin/Products/Licensing_Product_Data.php:233
+msgid "Configure the basic licensing details for this product."
+msgstr "Állítsd be a termék alapvető licencelési részleteit."
+
+#. translators: Placeholders: "For example: %s" where %s the placeholder is
+#. the example
+#: src/Admin/Products/Licensing_Product_Data.php:265
+#, php-format
+msgid "e.g. %s"
+msgstr "pl. %s"
+
+#: src/Admin/Products/Licensing_Product_Data.php:280
+msgid "Automatic metadata extraction"
+msgstr "Automatikus metaadat-kinyerés"
+
+#: src/Admin/Products/Licensing_Product_Data.php:281
+msgid ""
+"Attempt to read and fill the licensed asset metadata from the associate "
+"downloadable file."
+msgstr "Próbáld meg kiolvasni és kitölteni a licencelt eszköz metaadatait a társított letölthető fájlból."
+
+#: src/Admin/Products/Licensing_Product_Data.php:282
+msgid ""
+"The file must be a valid zip archive and it must contain in its root the "
+"expected file to read metadata from. If multiple archive files are "
+"associated with the same licensed asset, only the first archive will be used"
+" for extraction."
+msgstr "A fájlnak érvényes zip-archívumnak kell lennie, és a gyökérkönyvtárának tartalmaznia kell a metaadatok kiolvasásához szükséges fájlt. Ha több archívumfájl is társítva van ugyanahhoz a licencelt eszközhöz, a kinyeréshez csak az első archívumot használjuk."
+
+#: src/Admin/Products/Licensing_Product_Data.php:290
+msgid "File for metadata extraction"
+msgstr "Fájl a metaadatok kinyeréséhez"
+
+#: src/Admin/Products/Licensing_Product_Data.php:291
+msgid ""
+"By default we will be looking for a readme.txt file, however you can "
+"indicate an alternative file, such as the WordPress plugin main PHP file "
+"from the archive root."
+msgstr "Alapértelmezés szerint egy readme.txt fájlt keresünk, de megadhatsz egy másik fájlt is, például az archívum gyökérkönyvtárában található WordPress-bővítmény fő PHP-fájlját."
+
+#: src/Admin/Products/Licensing_Product_Data.php:306
+msgid "Licensed asset metadata"
+msgstr "Licencelt eszköz metaadatai"
+
+#: src/Admin/Products/Licensing_Product_Data.php:307
+msgid "Configure additional metadata for the licensed asset."
+msgstr "Állítsd be a licencelt eszköz további metaadatait."
+
+#: src/Admin/Products/Licensing_Product_Data.php:353
+msgid "Search and select a page&hellip;"
+msgstr "Oldal keresése és kiválasztása&hellip;"
+
+#: src/Admin/Products/Licensing_Product_Data.php:365
+msgid "Automatic changelog extraction"
+msgstr "Automatikus változásnapló-kinyerés"
+
+#: src/Admin/Products/Licensing_Product_Data.php:366
+msgid ""
+"Attempt to read and replace the changelog page contents from the associate "
+"downloadable file."
+msgstr "Próbáld meg kiolvasni és lecserélni a változásnapló oldalának tartalmát a társított letölthető fájlból."
+
+#. translators: Placeholdes: %s - filename wrapped in <code> tags
+#: src/Admin/Products/Licensing_Product_Data.php:368
+#, php-format
+msgid ""
+"The file must be a valid zip archive and it must contain in its root a %s "
+"file. If multiple archive files are associated with the same licensed asset,"
+" only the first archive will be used for extraction."
+msgstr "A fájlnak érvényes zip-archívumnak kell lennie, és a gyökérkönyvtárának tartalmaznia kell egy %s fájlt. Ha több archívumfájl is társítva van ugyanahhoz a licencelt eszközhöz, a kinyeréshez csak az első archívumot használjuk."
+
+#: src/Admin/Products/Licensing_Product_Data.php:376
+msgid "Use the product gallery for screenshots"
+msgstr "A termékgaléria használata képernyőképekhez"
+
+#: src/Admin/Products/Licensing_Product_Data.php:377
+msgid ""
+"Use this product's gallery images as screenshots instead of a dedicated "
+"screeshot page."
+msgstr "A termék galériájában található képeket használd képernyőképként külön képernyőképoldal helyett."
+
+#: src/Admin/Products/Licensing_Product_Data.php:390
+msgid "Licensed asset documents"
+msgstr "Licencelt eszköz dokumentumai"
+
+#: src/Admin/Products/Licensing_Product_Data.php:391
+msgid "Select pages associated with the licensed asset."
+msgstr "Válaszd ki a licencelt eszközhöz tartozó oldalakat."
+
+#: src/Admin/Products/Licensing_Product_Data.php:429
+#: src/Products/Licensing_Product_Tab.php:95
+msgid "Details"
+msgstr "Részletek"
+
+#: src/Admin/Products/Licensing_Product_Data.php:430
+msgid "Metadata"
+msgstr "Metaadatok"
+
+#: src/Admin/Products/Licensing_Product_Data.php:431
+msgid "Documents"
+msgstr "Dokumentumok"
+
+#: src/Admin/Products/Licensing_Product_Data.php:459
+msgid "Variable product licensing data"
+msgstr "Változó termék licencelési adatai"
+
+#: src/Admin/Products/Licensing_Product_Data.php:460
+msgid ""
+"Licensing data options set for the parent variable product will be "
+"automatically applied to each of its variations, unless the option labeled "
+"\"Override licensing options for this variation.\" is checked in any "
+"individual variation."
+msgstr "A szülő változó termékhez beállított licencelési adatok automatikusan érvényesek lesznek annak minden variációjára, kivéve, ha valamelyik variációnál be van jelölve „A licencelési opciók felülbírálása ennél a variációnál” jelölőnégyzet."
+
+#: src/Admin/Products/Licensing_Product_Data.php:545
+msgid ""
+"After saving the product, the \"Licensing\" product option checkbox CANNOT "
+"be unchecked later. This product will remain a permanent licensing product, "
+"and CANNOT be deleted from the store. This product will be made available as"
+" a licensing resource on existing and future purchases."
+msgstr "A termék mentése után a „Licencelés” termékopció jelölőnégyzetéből később NEM lehet eltávolítani a jelölést. Ez a termék végleges licenctermék marad, és NEM törölhető az áruházból. Meglévő és jövőbeli vásárlások esetén is licencerőforrásként lesz elérhető."
+
+#: src/Admin/Products/Licensing_Product_Data.php:590
+msgid "Override licensing options for this variation."
+msgstr "Licencelési opciók felülbírálása ennél a termékváltozatnál."
+
+#: src/Admin/Products/Licensing_Product_Data.php:591
+msgid ""
+"The licensing options set here will only apply to this variation, bypassing "
+"the parent variable product values."
+msgstr "Az itt beállított licencelési opciók csak erre a termékváltozatra érvényesek, és felülbírálják a szülő változó termék értékeit."
+
+#. translators: Placeholders: %1$s opening <em> tag, %2$s closing </em> tag.
+#: src/Admin/Products/Licensing_Product_Data.php:868
+#, php-format
+msgid ""
+"Limits the number of license key activations for the licensed asset. "
+"%1$sChanges apply to new purchases only; existing licenses keep their "
+"current limit.%2$s"
+msgstr "Korlátozza a licencelt termékhez tartozó licenckulcs-aktiválások darabszámát. %1$sA módosítások csak az új vásárlásokra érvényesek; a meglévő licencek megtartják az aktuális korlátjukat.%2$s"
+
+#. translators: Placeholders: %1$s opening <strong> tag, %2$s closing
+#. </strong> tag.
+#: src/Admin/Products/Licensing_Product_Data.php:873
+#, php-format
+msgid ""
+"Limits the number of license key activations for the licensed asset. "
+"%1$sCaution!%2$s Increasing this value updates existing licenses with this "
+"product ID; lowering it applies to new purchases only."
+msgstr "Korlátozza a licenckulcs-aktiválások darabszámát a licencelt eszköznél. %1$sFigyelem!%2$s Ennek az értéknek a növelése frissíti az adott termék ID-jéhez tartozó meglévő licenceket; a csökkentés csak az új vásárlásokra vonatkozik."
+
+#. translators: Placeholders: %1$s opening <strong> tag, %2$s closing
+#. </strong> tag.
+#: src/Admin/Products/Licensing_Product_Data.php:879
+#, php-format
+msgid ""
+"Limits the number of license key activations for the licensed asset. "
+"%1$sCaution!%2$s Changing this value will cause all existing licenses with "
+"this product ID to match the new value."
+msgstr "Korlátozza a licenckulcs-aktiválások darabszámát a licencelt eszköznél. %1$sFigyelem!%2$s Ennek az értéknek a módosítása az adott termék ID-jéhez tartozó összes meglévő licencet az új értékhez igazítja."
+
+#: src/Lifecycle/Milestones/First_Licensing_Product_Created.php:43
+msgid ""
+"Hooray! You have created and configured your first licensing product with "
+"API Manager!"
+msgstr "Hurrá! Létrehoztad és beállítottad az első licenctermékedet az API Manager használatával!"
+
+#. translators: Placeholders: %1$s - opening anchor tag, %2$s - closing anchor
+#. tag, %3$s - opening anchor tag, %4$s - closing anchor tag
+#: src/Lifecycle/Milestones/First_Licensing_Product_Created.php:57
+#, php-format
+msgid ""
+"Liking the experience so far? Having questions or feedback? %1$sLeave a "
+"review%2$s or %3$sget in touch with us%4$s!"
+msgstr "Hogy tetszik eddig? Kérdésed vagy visszajelzésed van? %1$sÍrj értékelést%2$s, vagy %3$svedd fel velünk a kapcsolatot%4$s!"
+
+#: src/Products/Licensed_Asset.php:118
+msgid "WordPress plugin"
+msgstr "WordPress-bővítmény"
+
+#: src/Products/Licensed_Asset.php:120
+msgid "WordPress theme"
+msgstr "WordPress-sablon"
+
+#: src/Products/Licensed_Asset.php:122
+msgid "WooCommerce extension"
+msgstr "WooCommerce-kiterjesztés"
+
+#: src/Products/Licensed_Asset.php:124
+msgid "WooCommerce theme"
+msgstr "WooCommerce-sablon"
+
+#: src/Products/Licensed_Asset.php:127
+msgid "Software"
+msgstr "Szoftver"
+
+#: src/Products/Licensing_Assets/WooCommerce_Asset_Metadata.php:52
+msgid "WooCommerce version required"
+msgstr "Szükséges WooCommerce-verzió"
+
+#: src/Products/Licensing_Assets/WooCommerce_Asset_Metadata.php:54
+msgid "WooCommerce version tested up to"
+msgstr "Legmagasabb tesztelt WooCommerce-verzió"
+
+#: src/Products/Licensing_Assets/WooCommerce_Asset_Metadata.php:71
+msgid ""
+"The minimum WooCommerce version required for the software to function "
+"properly."
+msgstr "A szoftver megfelelő működéséhez szükséges minimális WooCommerce-verzió."
+
+#: src/Products/Licensing_Assets/WooCommerce_Asset_Metadata.php:73
+msgid "The highest WooCommerce version the software has been tested with."
+msgstr "A legmagasabb WooCommerce-verzió, amellyel a szoftvert tesztelték."
+
+#: src/Products/Licensing_Assets/WordPress_Asset_Documents.php:100
+msgid "Other Notes"
+msgstr "Egyéb megjegyzések"
+
+#: src/Products/Licensing_Assets/WordPress_Asset_Metadata.php:82
+msgid "URL"
+msgstr "URL"
+
+#: src/Products/Licensing_Assets/WordPress_Asset_Metadata.php:84
+msgid "Author"
+msgstr "Szerző"
+
+#: src/Products/Licensing_Assets/WordPress_Asset_Metadata.php:86
+msgid "WordPress version required"
+msgstr "Szükséges WordPress-verzió"
+
+#: src/Products/Licensing_Assets/WordPress_Asset_Metadata.php:88
+msgid "WordPress version tested up to"
+msgstr "Legmagasabb tesztelt WordPress-verzió"
+
+#: src/Products/Licensing_Assets/WordPress_Asset_Metadata.php:90
+msgid "PHP version required"
+msgstr "Szükséges PHP-verzió"
+
+#. translators: Placeholder: %s - date format (e.g. YYYY-MM-DD)
+#: src/Products/Licensing_Assets/WordPress_Asset_Metadata.php:108
+#, php-format
+msgid "The date when the software was last updated in %s format."
+msgstr "A dátum, amikor a szoftvert legutóbb frissítették, %s formátumban."
+
+#: src/Products/Licensing_Assets/WordPress_Asset_Metadata.php:110
+msgid "The current version of the software."
+msgstr "A szoftver aktuális verziója."
+
+#: src/Products/Licensing_Assets/WordPress_Asset_Metadata.php:112
+msgid ""
+"The URL of the software homepage, landing page or main site. When "
+"unspecified, the product page may be used."
+msgstr "A szoftver honlapjának, céloldalának vagy fő webhelyének URL-je. Ha nincs megadva, a termékoldal is használható."
+
+#: src/Products/Licensing_Assets/WordPress_Asset_Metadata.php:114
+msgid "The author or developer of the software."
+msgstr "A szoftver szerzője vagy fejlesztője."
+
+#: src/Products/Licensing_Assets/WordPress_Asset_Metadata.php:116
+msgid ""
+"The minimum WordPress version required for the software to function "
+"properly."
+msgstr "A szoftver megfelelő működéséhez szükséges minimális WordPress-verzió."
+
+#: src/Products/Licensing_Assets/WordPress_Asset_Metadata.php:118
+msgid "The highest WordPress version the software has been tested with."
+msgstr "A legmagasabb WordPress-verzió, amellyel a szoftvert tesztelték."
+
+#: src/Products/Licensing_Assets/WordPress_Asset_Metadata.php:120
+msgid ""
+"The minimum PHP version required for the software to function properly."
+msgstr "A szoftver megfelelő működéséhez szükséges minimális PHP-verzió."
+
+#: src/Products/Licensing_Product_Tab.php:310
+msgid "Latest release notes"
+msgstr "Legutóbbi kiadási megjegyzések"
+
+#: templates/emails/api-keys-order-complete.php:49
+#: templates/emails/plain/api-keys-order-complete.php:49
+msgid "License information"
+msgstr "Licencinformáció"
+
+#: templates/emails/api-keys-order-complete.php:70
+msgid "ID"
+msgstr "ID"
+
+#: templates/emails/api-keys-order-complete.php:72
+msgid "Expires"
+msgstr "Lejár"
+
+#: templates/emails/api-keys-order-complete.php:127
+#: templates/emails/plain/api-keys-order-complete.php:80
+msgid "Product license key(s):"
+msgstr "Terméklicenckulcs(ok):"
+
+#: templates/emails/api-keys-order-complete.php:146
+msgid "Click here to login and download your file(s)"
+msgstr "Kattints ide a bejelentkezéshez és a fájl(ok) letöltéséhez"
+
+#: templates/emails/api-keys-order-complete.php:163
+#: templates/emails/plain/api-keys-order-complete.php:124
+#: templates/myaccount/api-keys.php:65
+msgid "User license key"
+msgstr "Felhasználói licenckulcs"
+
+#: templates/emails/api-keys-order-complete.php:181
+msgid "A user license Key can be used to activate any and all products."
+msgstr "Egy felhasználói licenckulccsal bármelyik termék aktiválható."
+
+#. translators: Placeholder: %s - First name
+#. translators: Placeholder: %s - Customer first name
+#: templates/emails/expiring-subscription.php:48
+#: templates/emails/plain/expiring-subscription.php:40
+#, php-format
+msgid "Hi %s,"
+msgstr "Kedves %s,"
+
+#. translators: Placeholders: %1$s - Opening link <a> tag, %2$s - Closing link
+#. </a> tag
+#: templates/emails/expiring-subscription.php:58
+#, php-format
+msgid "%1$sRenew your license%2$s."
+msgstr "%1$sÚjítsd meg a licencedet%2$s."
+
+#. translators: Placeholder: %s - Expiration date
+#: templates/emails/expiring-subscription.php:75
+#: templates/emails/plain/expiring-subscription.php:59
+#, php-format
+msgid "The license is renewable until: %s"
+msgstr "A licenc megújítható eddig: %s"
+
+#. translators: Placeholder: %s - Discount percentage
+#: templates/emails/expiring-subscription.php:90
+#: templates/emails/plain/expiring-subscription.php:67
+#, php-format
+msgid ""
+"If you renew before your license access expires you will get a %s discount."
+msgstr "Ha a licenchozzáférés lejárta előtt megújítod a licencedet, %s kedvezményt kapsz."
+
+#. translators: Placeholder: %s - Product ID
+#: templates/emails/plain/api-keys-order-complete.php:89
+#, php-format
+msgid "Product ID: %s"
+msgstr "Termék ID: %s"
+
+#. translators: Placeholder: %s - Number of activations purchased
+#: templates/emails/plain/api-keys-order-complete.php:94
+#, php-format
+msgid "Activations: %s"
+msgstr "Aktiválások: %s"
+
+#. translators: Placeholder: %s - Expiry date and time
+#: templates/emails/plain/api-keys-order-complete.php:109
+#, php-format
+msgid "Expires: %s"
+msgstr "Lejár: %s"
+
+#: templates/emails/plain/api-keys-order-complete.php:137
+msgid "A user license key can be used to activate any and all products."
+msgstr "Egy felhasználói licenckulccsal bármelyik termék aktiválható."
+
+#. translators: Placeholder: %s - Download URL
+#: templates/emails/plain/api-keys-order-complete.php:150
+#, php-format
+msgid "Click here to login and download your file(s): %s"
+msgstr "Kattints ide a bejelentkezéshez és a fájl(ok) letöltéséhez: %s"
+
+#. translators: Placeholder: %s - Product title
+#: templates/emails/plain/expiring-subscription.php:51
+#, php-format
+msgid ""
+"A renewal link for your license has been prepared for you on %s. Use this "
+"link to login to your account to renew your license: "
+msgstr "A licenc megújítására szolgáló linket előkészítettük neked a következő helyen: %s. Ezzel a linkkel lépj be a fiókodba a licenc megújításához: "
+
+#: templates/myaccount/api-downloads.php:60
+#: templates/myaccount/api-keys.php:130
+msgid "Product title"
+msgstr "Termék címe"
+
+#: templates/myaccount/api-downloads.php:62
+msgid "Release date"
+msgstr "Kiadás dátuma"
+
+#: templates/myaccount/api-downloads.php:64
+#: templates/myaccount/api-downloads.php:196
+#: templates/myaccount/api-downloads.php:198
+#: templates/myaccount/api-downloads.php:288
+#: templates/myaccount/api-downloads.php:290
+msgid "Download"
+msgstr "Letöltés"
+
+#: templates/myaccount/api-downloads.php:161
+#: templates/myaccount/api-downloads.php:254
+msgid "No date"
+msgstr "Nincs dátum"
+
+#: templates/myaccount/api-downloads.php:200
+#: templates/myaccount/api-downloads.php:209
+#: templates/myaccount/api-downloads.php:292
+#: templates/myaccount/api-downloads.php:301
+msgid "Disabled"
+msgstr "Letiltva"
+
+#: templates/myaccount/api-downloads.php:336
+msgid "No downloads available yet."
+msgstr "Még nem érhetők el letöltések."
+
+#: templates/myaccount/api-downloads.php:346
+#: templates/myaccount/api-keys.php:527
+msgid "This account has been disabled."
+msgstr "Ez a fiók ki van kapcsolva."
+
+#. translators: Context: Refers to the user license key that can be used to
+#. activate any product
+#: templates/myaccount/api-keys.php:68
+msgid "Can be used to activate any product"
+msgstr "Bármely termék aktiválására használható"
+
+#: templates/myaccount/api-keys.php:105
+msgid ""
+"A product license key is used to activate a single product from a single "
+"order."
+msgstr "Egy terméklicenckulcs termék aktiválására szolgál termékoldalon egyetlen rendelésből."
+
+#: templates/myaccount/api-keys.php:139
+msgid "Product license key"
+msgstr "Terméklicenckulcs"
+
+#. translators: Placeholder: %s - Expiration date
+#: templates/myaccount/api-keys.php:221
+#, php-format
+msgid "Renewable until: %s"
+msgstr "Megújítható eddig: %s"
+
+#: templates/myaccount/api-keys.php:270
+msgid "View"
+msgstr "Megtekintés"
+
+#. translators: Placeholder: %s - Percentage discount amount, e.g. "At a 10%
+#. discount"
+#: templates/myaccount/api-keys.php:298
+#, php-format
+msgid "At a %s discount."
+msgstr "%s kedvezménnyel."
+
+#: templates/myaccount/api-keys.php:343 templates/myaccount/api-keys.php:354
+msgid "Renew"
+msgstr "Megújítás"
+
+#: templates/myaccount/api-keys.php:415 templates/myaccount/api-keys.php:421
+#: templates/myaccount/api-keys.php:467 templates/myaccount/api-keys.php:473
+msgid " Activated on "
+msgstr " Bekapcsolás dátuma: "
+
+#: templates/myaccount/api-keys.php:518
+msgid "No licensing products available yet."
+msgstr "Még egyetlen licenctermék sem érhető el."
+
+#: templates/myaccount/related-api-resources.php:32
+msgid "Related licenses"
+msgstr "Kapcsolódó licencek"
+
+#: templates/myaccount/related-api-resources.php:82
+msgid "View license keys"
+msgstr "Licenckulcsok megtekintése"
+
+#: templates/myaccount/related-api-resources.php:96
+msgid "View downloads"
+msgstr "Letöltések megtekintése"
+
+#. translators: Placeholders: %1$s is a list of items, %2$s is the last item
+#: vendor-scoped/kestrelcommerce/fenix/src/Helpers/Arrays.php:687
+#, php-format
+msgid "%1$s or %2$s"
+msgid_plural "%1$s, or %2$s"
+msgstr[0] "%1$s vagy %2$s"
+msgstr[1] "%1$s, vagy %2$s"
+
+#. translators: Placeholders: %1$s is a comma separated list of items, %2$s is
+#. the last item
+#: vendor-scoped/kestrelcommerce/fenix/src/Helpers/Arrays.php:691
+#, php-format
+msgid "%1$s and %2$s"
+msgid_plural "%1$s, and %2$s"
+msgstr[0] "%1$s és %2$s"
+msgstr[1] "%1$s, és %2$s"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Jobs/Background_Processing/Process.php:673
+msgid "Every Minute"
+msgstr "Percenként"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Jobs/Background_Processing/Process.php:675
+#, php-format
+msgid "Every %d Minutes"
+msgstr "%d percenként"
+
+#. translators: Placeholders: %1$s - plugin name, %2$s - opening <a> tag, %3$s
+#. - closing </a> tag, %4$s - heart emoji
+#: vendor-scoped/kestrelcommerce/fenix/src/Marketing/Reviews/Review_Prompt.php:156
+#, php-format
+msgid "Enjoying %1$s? Please %2$sleave us a review%3$s %4$s"
+msgstr "Tetszik a(z) %1$s? %2$sÍrj nekünk értékelést%3$s %4$s"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Marketing/Reviews/Review_Prompt.php:196
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Lifecycle/Newsletter_Signup.php:266
+msgid "Thank you!"
+msgstr "Köszönjük!"
+
+#. translators: Placeholder: %s - User display name
+#: vendor-scoped/kestrelcommerce/fenix/src/Model/User.php:360
+#, php-format
+msgid "%s avatar"
+msgstr "%s avatárja"
+
+#. translators: Placeholders: %1$s - Opening <a> link tag, %2$s - Closing </a>
+#. link tag
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Admin.php:109
+#, php-format
+msgid ""
+"This plugin is localized into multiple languages. While English is our "
+"primary language, our goal is to serve merchants and their customers in "
+"their own native language. If you would like to provide localization "
+"feedback and help us build features that are relevant to you and to "
+"customers located in your region, please %1$sget in touch%2$s."
+msgstr "Ez a bővítmény több nyelven is elérhető. Bár az elsődleges nyelvünk az angol, célunk, hogy a kereskedőket és vásárlóikat az anyanyelvükön szolgáljuk ki. Ha szeretnél visszajelzést adni a fordításról, és segítenél olyan funkciók fejlesztésében, amelyek neked és a régiódban élő vásárlóknak is hasznosak, %1$svedd fel velünk a kapcsolatot%2$s."
+
+#. translators: Context: WordPress admin link to configure the plugin (verb)
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Admin.php:157
+msgid "Configure"
+msgstr "Beállítás"
+
+#. translators: Context: Link to the plugin's documentation ("Docs" =
+#. "Documentation")
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Admin.php:161
+msgid "Docs"
+msgstr "Dokumentáció"
+
+#. translators: Context: Link to reach out to customer support ("Support" =
+#. "Customer support")
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Admin.php:165
+msgid "Support"
+msgstr "Támogatás"
+
+#. translators: Context: Link to review the plugin ("Review" = "Review the
+#. plugin" as in verb action)
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Admin.php:169
+msgid "Review"
+msgstr "Elbírálás"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Admin/Dashboard.php:133
+msgid "Dashboard"
+msgstr "Vezérlőpult"
+
+#. translators: Placeholders: %1$s - Opening anchor tag, %2$s - Closing anchor
+#. tag
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Admin/Dashboard.php:207
+#, php-format
+msgid "You have not completed setup. %1$sClick here to resume%2$s."
+msgstr "Még nem fejezted be a beállítást. %1$sKattints ide a folytatáshoz%2$s."
+
+#. translators: Context: Button label to cancel an action in a modal dialog.
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Admin/Dialogs/Modal_Button.php:257
+msgid "Close"
+msgstr "Bezárás"
+
+#. translators: Context: Button label to cancel an action in a modal dialog.
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Admin/Dialogs/Modal_Button.php:271
+msgid "Cancel"
+msgstr "Mégse"
+
+#. translators: Context: WordPress Abilities API Category that groups
+#. abilities about the plugin itself
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/Abilities/Core/Categories/Plugin_Category.php:29
+msgid "Plugin"
+msgstr "Bővítmény"
+
+#. translators: Context: WordPress Abilities API Category that groups
+#. abilities about the plugin itself
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/Abilities/Core/Categories/Plugin_Category.php:41
+msgid "Abilities that retrieve or modify plugin information and settings."
+msgstr "A bővítmény adatainak és beállításainak lekérésére vagy módosítására szolgáló képességek."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/Abilities/Core/Get_Plugin_Hooks.php:35
+msgid "Plugin hooks"
+msgstr "Bővítmény hookjai"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/Abilities/Core/Get_Plugin_Hooks.php:46
+msgid "Returns the actions and filters documented by the plugin."
+msgstr "A bővítmény dokumentált műveleteit és szűrőit adja vissza."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/Abilities/Core/Get_Plugin_Info.php:33
+msgid "Plugin information"
+msgstr "Bővítményadatok"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/Abilities/Core/Get_Plugin_Info.php:44
+msgid ""
+"Returns information about the plugin: name, version, vendor, textdomain, "
+"locale, useful URLs, etc."
+msgstr "A bővítmény adatait adja vissza: név, verzió, fejlesztő, textdomain, nyelvi beállítás, hasznos URL-ek és más adatok."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/Response_Error.php:96
+msgid "Invalid request."
+msgstr "Érvénytelen kérés."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/Response_Error.php:96
+msgid "Invalid parameter."
+msgstr "Hibás paraméter."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/Response_Error.php:96
+msgid "Unauthorized."
+msgstr "Nem engedélyezett."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/Response_Error.php:96
+msgid "Forbidden."
+msgstr "Tiltott."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/Response_Error.php:96
+msgid "Resource not found."
+msgstr "Az erőforrás nem található."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/Response_Error.php:96
+msgid "Cannot create resource."
+msgstr "Az erőforrás nem hozható létre."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/Response_Error.php:96
+msgid "Cannot read resource."
+msgstr "Az erőforrás nem olvasható be."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/Response_Error.php:96
+msgid "Cannot edit resource."
+msgstr "Az erőforrás nem szerkeszthető."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/Response_Error.php:96
+msgid "Cannot delete resource."
+msgstr "Az erőforrás nem törölhető."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/Response_Error.php:96
+msgid "Internal server error."
+msgstr "Belső szerverhiba."
+
+#. translators: Context: Type of the debug message. E.g. 'warning', 'alert',
+#. 'emergency', etc.
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Logger_Controller.php:56
+msgid "Log level is required."
+msgstr "A naplószint megadása kötelező."
+
+#. translators: Context: Type of the debug message. E.g. 'warning', 'alert',
+#. 'emergency', etc.
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Logger_Controller.php:59
+msgid "Invalid log level."
+msgstr "Hibás naplószint."
+
+#. translators: Context: Text content of the debug message is a required value
+#. when logging an item to the debug log
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Logger_Controller.php:62
+msgid "Log message is required."
+msgstr "A naplóüzenet megadása kötelező."
+
+#. translators: Context: Unique identifier for the log (optional)
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Logger_Controller.php:93
+msgid "The log ID (optional)."
+msgstr "A napló ID-ja (opcionális)."
+
+#. translators: Context: Type of the debug message. E.g. 'warning', 'alert',
+#. 'emergency', etc.
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Logger_Controller.php:99
+msgid "The log level. "
+msgstr "A naplószint. "
+
+#. translators: Context: Debug log message
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Logger_Controller.php:105
+msgid "The log message."
+msgstr "A naplóüzenet."
+
+#. translators: Context: Debug log context, e.g. additional data to be logged
+#. to the debug log
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Logger_Controller.php:110
+msgid "The log context."
+msgstr "A napló kontextusa."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Onboarding_Controller.php:178
+msgid "The onboarding status."
+msgstr "A bevezetési folyamat állapota."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Onboarding_Controller.php:178
+msgid "The current onboarding step."
+msgstr "A bevezetési folyamat aktuális lépése."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Onboarding_Controller.php:178
+msgid "The current onboarding progress."
+msgstr "A bevezetési folyamat aktuális előrehaladása."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Onboarding_Controller.php:178
+msgid "The onboarding persona."
+msgstr "A bevezetési perszóna."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Onboarding_Controller.php:178
+msgid "The onboarded version."
+msgstr "A bevezetéskor használt verzió."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Onboarding_Controller.php:178
+msgid "The last updated date or null if never updated."
+msgstr "Az utolsó frissítés dátuma, vagy null, ha még soha nem frissült."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin/Hooks_Controller.php:34
+msgid "Narrow the response to actions or filters only."
+msgstr "A választ csak műveletekre vagy csak szűrőkre szűkíti."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin/Hooks_Controller.php:79
+msgid "Documented actions exposed by the plugin."
+msgstr "A bővítmény által elérhetővé tett dokumentált műveletek."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin/Hooks_Controller.php:79
+msgid "Documented filters exposed by the plugin."
+msgstr "A bővítmény által elérhetővé tett dokumentált szűrők."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin/Hooks_Controller.php:92
+msgid "The hook identifier."
+msgstr "A hook azonosítója."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin/Hooks_Controller.php:92
+msgid ""
+"Path to the file where the hook is defined, relative to the plugin root."
+msgstr "A fájl elérési útja, amelyben a hook definiálva van, a bővítmény gyökérkönyvtárához képest."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin/Hooks_Controller.php:92
+msgid "Whether the hook is an action or a filter."
+msgstr "Hogy a hook művelet vagy szűrő-e."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin/Hooks_Controller.php:92
+msgid "Number of arguments passed to the hook."
+msgstr "A hooknak átadott argumentumok darabszáma."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin/Hooks_Controller.php:92
+msgid "Alternative names the hook is registered under."
+msgstr "A hook regisztrálásához használt alternatív nevek."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin_Controller.php:74
+msgid "The plugin identifier."
+msgstr "A bővítmény azonosítója."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin_Controller.php:74
+msgid "The plugin name."
+msgstr "A bővítmény neve."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin_Controller.php:74
+msgid "The absolute path to the plugin file."
+msgstr "A bővítményfájl abszolút elérési útja."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin_Controller.php:74
+msgid "The absolute path to the plugin directory."
+msgstr "A bővítménykönyvtár abszolút elérési útja."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin_Controller.php:74
+msgid ""
+"The path relative to the plugins directory in the WordPress installation."
+msgstr "A WordPress-telepítés bővítménykönyvtárához képest megadott elérési út."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin_Controller.php:74
+msgid "The plugin textdomain."
+msgstr "A bővítmény textdomainje."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin_Controller.php:74
+msgid "The URL to the plugin assets."
+msgstr "A bővítmény fájljainak URL-je."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin_Controller.php:74
+msgid "The URL to the plugin root."
+msgstr "A bővítmény gyökérkönyvtárának URL-je."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin_Controller.php:74
+msgid "The URL to the plugin documentation."
+msgstr "A bővítmény dokumentációjának URL-je."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin_Controller.php:74
+msgid "The URL to the plugin feature request form."
+msgstr "A bővítmény funkcióigénylő űrlapjának URL-je."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin_Controller.php:74
+msgid "The URL to the plugin reviews."
+msgstr "A bővítmény értékeléseinek URL-je."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin_Controller.php:74
+msgid "The URL to the plugin sales page."
+msgstr "A bővítmény értékesítési oldalának URL-je."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin_Controller.php:74
+msgid "The URL to the plugin settings."
+msgstr "A bővítmény beállításainak URL-je."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin_Controller.php:74
+msgid "The URL to the plugin support."
+msgstr "A bővítmény támogatási URL-je."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin_Controller.php:74
+msgid "The plugin vendor."
+msgstr "A bővítmény forgalmazója."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Plugin_Controller.php:74
+msgid "The plugin version."
+msgstr "A bővítmény verziója."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Settings_Controller.php:269
+msgid "Setting name."
+msgstr "A beállítás neve."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Settings_Controller.php:269
+msgid "Setting type."
+msgstr "A beállítás típusa."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Settings_Controller.php:269
+msgid "Setting attributes."
+msgstr "A beállítás attribútumai."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Settings_Controller.php:269
+msgid "Whether the setting is required."
+msgstr "Hogy a beállítás kötelező-e."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Settings_Controller.php:269
+msgid "Default setting value."
+msgstr "Alapértelmezett beállítási érték."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Settings_Controller.php:269
+msgid "Setting description."
+msgstr "A beállítás leírása."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Settings_Controller.php:269
+msgid "Setting instructions."
+msgstr "A beállításra vonatkozó utasítások."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Settings_Controller.php:269
+msgid "Setting placeholder."
+msgstr "A beállítás helytartója."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Settings_Controller.php:269
+msgid "Setting title."
+msgstr "A beállítás címe."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Settings_Controller.php:269
+msgid "Setting value."
+msgstr "A beállítás értéke."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Settings_Controller.php:269
+msgid "Formatted setting value."
+msgstr "Formázott beállítási érték."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/API/REST/v1/Settings_Controller.php:269
+msgid "Setting store."
+msgstr "Beállítási adattár."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Lifecycle.php:447
+msgid "Visit dashboard"
+msgstr "Vezérlőpult megtekintése"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Lifecycle.php:450
+msgid "Configure settings"
+msgstr "Beállítások konfigurálása"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Lifecycle.php:453
+msgid "Read documentation"
+msgstr "Dokumentáció elolvasása"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Lifecycle.php:455
+msgid "The plugin has been activated."
+msgstr "A bővítmény aktiválva lett."
+
+#. translators: Placeholder: %s - Plugin name
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Lifecycle/Newsletter_Signup.php:111
+#, php-format
+msgid ""
+"Want to get more out of %s? Join our newsletter for quick tips, features, "
+"and member-only offers."
+msgstr "Szeretnél még többet kihozni ebből: %s? Iratkozz fel hírlevelünkre gyors tippekért, újdonságokért és csak tagoknak szóló ajánlatokért."
+
+#. translators: Placeholder: %1$s - Plugin name, %2$s - Opening HTML anchor
+#. tag, %3$s - Plugin vendor, %4$s - Closing HTML anchor tag
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Lifecycle/Newsletter_Signup.php:118
+#, php-format
+msgid ""
+"Want to get more out of %1$s? Join the %2$s%3$s newsletter%4$s for quick "
+"tips, features, and member-only offers."
+msgstr "Szeretnél még többet kihozni ebből: %1$s? Iratkozz fel a %2$s%3$s hírlevélre%4$s gyors tippekért, újdonságokért és csak tagoknak szóló ajánlatokért."
+
+#. translators: Context: Button label to sign up to newsletter
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Lifecycle/Newsletter_Signup.php:127
+msgid "Sign up"
+msgstr "Regisztráció"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Lifecycle/Newsletter_Signup.php:248
+msgid "Subscribing..."
+msgstr "Feliratkozás folyamatban..."
+
+#. translators: Placeholder: %s - Plugin name
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Lifecycle/Review_Request.php:95
+#, php-format
+msgid ""
+"Enjoying %s? Leaving a quick review helps other merchants find it, and helps"
+" us keep improving it."
+msgstr "Tetszik a(z) %s? Ha írsz róla egy rövid értékelést, más kereskedők is könnyebben megtalálják, mi pedig tovább fejleszthetjük."
+
+#. translators: Context: Button label to leave a plugin review
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Lifecycle/Review_Request.php:100
+msgid "Leave a review"
+msgstr "Értékelés írása"
+
+#. translators: Placeholders: %1$s - opening link tag, %2$s - closing link tag
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Privacy.php:65
+#, php-format
+msgid ""
+"By using this plugin, you may be storing personal data or sharing data with "
+"an external service. %1$sContact the plugin developer for more "
+"information%2$s."
+msgstr "A bővítmény használata során személyes adatokat tárolhatsz vagy adatokat oszthatsz meg egy külső szolgáltatással. %1$sTovábbi információért vedd fel a kapcsolatot a bővítmény fejlesztőjével%2$s."
+
+#. translators: Placeholder: %s - Setting title
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Setting.php:265
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Settings_Group.php:161
+#, php-format
+msgid "\"%s\" is required."
+msgstr "A(z) „%s” kötelező."
+
+#. translators: Placeholder: %s - Invalid value type, e.g. "boolean" or
+#. "object"
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Amount.php:88
+#, php-format
+msgid "Could not validate %s into a valid amount"
+msgstr "Nem sikerült a(z) %s értékét érvényes összegként érvényesíteni"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Amount.php:92
+msgid "The amount cannot be negative"
+msgstr "Az összeg nem lehet negatív"
+
+#. translators: Placeholder: %s - Minimum amount
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Amount.php:97
+#, php-format
+msgid "The amount is below the minimum of %s"
+msgstr "Az összeg nem éri el a(z) %s minimumot"
+
+#. translators: Placeholder: %s - Maximum amount
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Amount.php:101
+#, php-format
+msgid "The amount is above the maximum of %s"
+msgstr "Az összeg meghaladja a(z) %s maximumot"
+
+#. translators: Placeholder: %s - Invalid value type, e.g. "string" or
+#. "object"
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Boolean.php:43
+#, php-format
+msgid "Could not validate %s into a boolean value"
+msgstr "Nem sikerült a(z) %s értékét logikai értékként érvényesíteni."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Credential.php:109
+msgid "OpenSSL is required for credential encryption."
+msgstr "A hitelesítő adatok titkosításához OpenSSL szükséges."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Credential.php:121
+msgid "Could not encrypt credential."
+msgstr "Nem sikerült titkosítani a hitelesítő adatot."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Credential.php:149
+msgid "OpenSSL is required for credential decryption."
+msgstr "A hitelesítő adatok visszafejtéséhez OpenSSL szükséges."
+
+#. translators: Placeholder: %s - Invalid email address
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Email.php:33
+#, php-format
+msgid "\"%s\" is not a valid email address"
+msgstr "A(z) „%s” nem érvényes e-mail cím"
+
+#. translators: Placeholder: %s - Invalid value type, e.g. "string" or
+#. "object"
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/JSON.php:31
+#, php-format
+msgid "Could not validate %s into a JSON value"
+msgstr "Nem sikerült a(z) %s értékét JSON-értékként érvényesíteni"
+
+#. translators: Placeholder: %s - Invalid value type, e.g. "boolean" or
+#. "object"
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Number.php:44
+#, php-format
+msgid "Could not validate %s into a number"
+msgstr "Nem sikerült a(z) %s értékét számként érvényesíteni"
+
+#. translators: Placeholders: %1$s - Numerical value submitted by the user,
+#. %2$s - Minimum amount
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Number.php:49
+#, php-format
+msgid "%1$s is below the minimum allowed of %2$s"
+msgstr "A(z) %1$s kisebb az engedélyezett minimumnál (%2$s)"
+
+#. translators: Placeholders: %1$s - Numerical value submitted by the user,
+#. %2$s - Maximum amount
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Number.php:53
+#, php-format
+msgid "%1$s is above the maximum allowed of %2$s"
+msgstr "A(z) %1$s nagyobb az engedélyezett maximumnál (%2$s)"
+
+#. translators: Placeholder: %s - Numeric value submitted by the user
+#. translators: Placeholder: %s - String of text submitted by the user
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Number.php:57
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Text.php:63
+#, php-format
+msgid "\"%s\" is not among the list of accepted values"
+msgstr "A(z) „%s” nem szerepel az elfogadott értékek listájában"
+
+#. translators: Placeholder: %s - Numeric value submitted by the user
+#. translators: Placeholder: %s - String of text submitted by the user
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Number.php:61
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Text.php:67
+#, php-format
+msgid "\"%s\" does not match the required format"
+msgstr "A(z) „%s” nem felel meg a kötelező formátumnak"
+
+#. translators: Placeholder: %s - Invalid value type, e.g. "boolean" or
+#. "object"
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Text.php:45
+#, php-format
+msgid "Could not validate %s into a string"
+msgstr "Nem sikerült a(z) %s értékét szövegként érvényesíteni"
+
+#. translators: Placeholder: %d - Minimum text length
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Text.php:51
+#, php-format
+msgid "Length is below the minimum of %d"
+msgstr "A hossz kisebb a minimálisnál (%d)"
+
+#. translators: Placeholder: %d - Maximum text length
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Text.php:55
+#, php-format
+msgid "Length is above the maximum of %d"
+msgstr "A hossz nagyobb a maximálisnál (%d)"
+
+#. translators: Placeholder: %s - Invalid URL
+#: vendor-scoped/kestrelcommerce/fenix/src/Plugin/Settings/Types/Url.php:30
+#, php-format
+msgid "\"%s\" is not a valid URL"
+msgstr "A(z) „%s” nem érvényes URL"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/WooCommerce/Admin.php:36
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/WooCommerce/API/Abilities/Get_Plugin_Status_Report.php:36
+msgid "Plugin status report"
+msgstr "Bővítmény állapotjelentése"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/WooCommerce/API/Abilities/Get_Plugin_Status_Report.php:47
+msgid "Returns the plugin's WooCommerce status report."
+msgstr "Visszaadja a bővítmény WooCommerce-állapotjelentését."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/WooCommerce/API/Abilities/Get_Plugin_Status_Report.php:73
+msgid ""
+"The plugin status report ability is available only to WooCommerce "
+"extensions."
+msgstr "A bővítmény állapotjelentésére szolgáló képesség csak WooCommerce-bővítményekhez érhető el."
+
+#: vendor-scoped/kestrelcommerce/fenix/src/WooCommerce/API/Abilities/Get_Plugin_Status_Report.php:76
+msgid "No status report handler is initialized for this plugin."
+msgstr "Ehhez a bővítményhez nincs inicializálva állapotjelentés-kezelő."
+
+#. translators: Placeholder: %s - Plugin name
+#: vendor-scoped/kestrelcommerce/fenix/src/WooCommerce/System_Status_Report.php:155
+#, php-format
+msgid "This section shows troubleshooting information about %s."
+msgstr "Ez a szakasz a(z) %s hibaelhárítási adatait jeleníti meg."
+
+#. translators: Placeholder: %s - error message
+#: vendor-scoped/kestrelcommerce/fenix/src/WooCommerce/Tools.php:129
+#, php-format
+msgid "The tool could not complete: %s"
+msgstr "Az eszköz nem tudta befejezni a műveletet: %s"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/WooCommerce/Tools/Loopback_Connection_Test.php:28
+msgid "Loopback connection test"
+msgstr "Visszacsatolási kapcsolat tesztje"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/WooCommerce/Tools/Loopback_Connection_Test.php:39
+msgid "Test loopback connection"
+msgstr "Visszacsatolási kapcsolat tesztelése"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/WooCommerce/Tools/Loopback_Connection_Test.php:50
+msgid ""
+"Checks whether the server can make HTTP requests to itself, which "
+"WooCommerce and scheduled tasks rely on."
+msgstr "Ellenőrzi, hogy a szerver tud-e HTTP-kéréseket küldeni önmagának, amire a WooCommerce és az ütemezett feladatok támaszkodnak."
+
+#. translators: Placeholder: %s - error message
+#: vendor-scoped/kestrelcommerce/fenix/src/WooCommerce/Tools/Loopback_Connection_Test.php:68
+#, php-format
+msgid "Loopback connections are not working: %s"
+msgstr "A visszacsatolási kapcsolatok nem működnek: %s"
+
+#: vendor-scoped/kestrelcommerce/fenix/src/WooCommerce/Tools/Loopback_Connection_Test.php:72
+msgid "Loopback connections are working as expected."
+msgstr "A visszacsatolási kapcsolatok megfelelően működnek."

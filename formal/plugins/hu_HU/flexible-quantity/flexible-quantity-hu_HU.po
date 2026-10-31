@@ -1,0 +1,1426 @@
+# Copyright (C) 2026 WP Desk
+# This file is distributed under the same license as the Flexible Quantity PRO plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Flexible Quantity PRO 2.4.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flexible-quantity\n"
+"POT-Creation-Date: 2026-10-31T07:18:31+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: flexible-quantity\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: Flexible Quantity PRO\n"
+"X-Plugin-Tone: formal\n"
+"X-Plugin-Version: 2.4.0\n"
+
+#. Plugin Name of the plugin
+#: flexible-quantity.php
+msgid "Flexible Quantity PRO"
+msgstr "Flexible Quantity PRO"
+
+#. Plugin URI of the plugin
+#: flexible-quantity.php
+msgid "https://wpdesk.net/sk/flexible-quantity-plugin"
+msgstr "https://wpdesk.net/sk/flexible-quantity-plugin"
+
+#. Description of the plugin
+#: flexible-quantity.php
+msgid ""
+"Measurement Price & Shipping Calculator for WooCommerce. Add a new unit of "
+"measure for every product you want. Calculate the product price based on "
+"units."
+msgstr "Mérési alapú ár- és szállításiköltség-kalkulátor a WooCommerce-hez. Adjon hozzá új mértékegységet minden kívánt termékhez. Számítsa ki a termék árát a mértékegységek alapján."
+
+#. Author of the plugin
+#: flexible-quantity.php
+msgid "WP Desk"
+msgstr "WP Desk"
+
+#. Author URI of the plugin
+#: flexible-quantity.php
+msgid "https://www.wpdesk.net/sk/flexible-quantity-author"
+msgstr "https://www.wpdesk.net/sk/flexible-quantity-author"
+
+#: src/Plugin.php:177
+msgid "Documentation"
+msgstr "Dokumentáció"
+
+#: src/Plugin.php:178
+msgid "How to use"
+msgstr "Használati útmutató"
+
+#: src/Plugin.php:179
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:181
+msgid "Support"
+msgstr "Támogatás"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Page/ProductPage.php:72
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Cart.php:845
+#, php-format
+msgid "Total %1$s (%2$s)"
+msgstr "Összesen %1$s (%2$s)"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Page/ProductPage.php:72
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Cart.php:845
+#, php-format
+msgid "Total %s"
+msgstr "Összesen %s"
+
+#. translators: Placeholder: %s - format example
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Page/ProductPage.php:85
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/single-product/quantity-calculator.php:61
+#, php-format
+msgid "Please enter the desired amount with this format: %s"
+msgstr "Kérjük, adja meg a kívánt mennyiséget ebben a formátumban: %s"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/PostType/FQTemplateType.php:18
+msgid "Template"
+msgstr "Sablon"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/PostType/FQTemplateType.php:18
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:65
+msgid "Flexible Quantity"
+msgstr "Flexible Quantity"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/PostType/FQTemplateType.php:18
+msgid "Templates"
+msgstr "Sablonok"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/PostType/FQTemplateType.php:18
+msgid "View Templates"
+msgstr "Sablonok megtekintése"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/PostType/FQTemplateType.php:18
+msgid "Add New Template"
+msgstr "Új sablonminta hozzáadása"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/PostType/FQTemplateType.php:18
+msgid "Add New"
+msgstr "Új hozzáadása"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/PostType/FQTemplateType.php:18
+msgid "Edit Template"
+msgstr "Sablonminta szerkesztése"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/PostType/FQTemplateType.php:18
+msgid "Save Template"
+msgstr "Sablonminta mentése"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/PostType/FQTemplateType.php:18
+msgid "Search Template"
+msgstr "Sablon keresése"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/PostType/FQTemplateType.php:18
+msgid "Template not found"
+msgstr "A sablonminta nem található"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/PostType/FQTemplateType.php:18
+msgid "Template not found in trash"
+msgstr "A sablonminta nem található a lomtárban"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/PostType/FQTemplateType.php:18
+msgid "Flexible Quantity Templates"
+msgstr "Flexible Quantity-sablonminták"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Quantity/CartQuantityValidator.php:66
+msgid "Please enter a whole-number quantity for this product."
+msgstr "Kérjük, egész számú mennyiséget adjon meg ehhez a termékhez."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Settings/Ajax/DimensionsAjax.php:49
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Product.php:382
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:43
+msgid "Weight"
+msgstr "Vastagság"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Settings/Ajax/DimensionsAjax.php:49
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Settings.php:733
+msgid "Length"
+msgstr "Hossz"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Settings/Ajax/DimensionsAjax.php:49
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Settings.php:735
+msgid "Width"
+msgstr "Szélesség"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Settings/Ajax/DimensionsAjax.php:49
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Settings.php:737
+msgid "Height"
+msgstr "Magasság"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Settings/Ajax/DimensionsAjax.php:49
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Product.php:320
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Product.php:350
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Product.php:364
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Product.php:368
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:43
+msgid "Volume"
+msgstr "Hangerő"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Settings/Ajax/DimensionsAjax.php:49
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Product.php:386
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:43
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:94
+msgid "Other"
+msgstr "Egyéb"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Settings/CustomUnitsPage.php:53
+msgid "Custom units"
+msgstr "Egyéni mértékegységek"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Settings/SupportPage.php:56
+msgid "Start here"
+msgstr "Kezdje itt"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Settings/TemplateListingPage.php:29
+msgid "Assign to"
+msgstr "Hozzárendelve"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Settings/TemplateListingPage.php:53
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/selection-section.php:43
+msgid "Products"
+msgstr "Termékek"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Settings/TemplateListingPage.php:57
+msgid "Categories"
+msgstr "Kategóriák"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Settings/TemplateListingPage.php:61
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/selection-section.php:53
+msgid "Tags"
+msgstr "Címkék"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Settings/TemplatePageScripts.php:52
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/ProductPage.php:549
+msgid "Only digits allowed."
+msgstr "Csak számjegyek adhatók meg."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Hookable/Settings/TemplatePageScripts.php:55
+msgid "Cannot edit price while a pricing table is active"
+msgstr "Az ár nem szerkeszthető, amíg egy árképzési tábla aktív"
+
+#. translators: Placeholders: %1$s - measurement label, %2$s - input measure
+#. increment value (step amount)
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Services/Validator/IncrementValidator.php:33
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Cart.php:112
+#, php-format
+msgid "%1$s value must be in increments of %2$s."
+msgstr "A(z) %1$s értékének %2$s többszörösének kell lennie."
+
+#. translators: Placeholders: %1$s - measurement label, %2$s - measurement
+#. value (number)
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Services/Validator/InRangeValidator.php:28
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Cart.php:97
+#, php-format
+msgid "%1$s value must be greater than or equal to %2$s."
+msgstr "A(z) %1$s értéke nem lehet kisebb, mint %2$s."
+
+#. translators: Placeholders: %1$s - measurement label, %2$s - measurement
+#. value (number)
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Services/Validator/InRangeValidator.php:36
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Cart.php:101
+#, php-format
+msgid "%1$s value must be less than or equal to %2$s."
+msgstr "A(z) %1$s értéke nem lehet nagyobb, mint %2$s."
+
+#. translators: Placeholders: %s - measurement label
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Services/Validator/PositiveNumberValidator.php:17
+#, php-format
+msgid "%s must be a positive number."
+msgstr "A(z) %s értékének pozitív számnak kell lennie."
+
+#. translators: Placeholders: %s - pricing unit
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Shortcodes/PricingTable.php:74
+#, php-format
+msgid "Range (%s)"
+msgstr "Tartomány (%s)"
+
+#. translators: Placeholders: %s - currency symbol
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/Shortcodes/PricingTable.php:76
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:83
+#, php-format
+msgid "Price (%s)"
+msgstr "Ár (%s)"
+
+#. translators: Placeholders: %s - measurement label
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Cart.php:86
+#, php-format
+msgid "%s missing."
+msgstr "%s hiányzik."
+
+#. translators: %1$s - measurement value and unit.
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Cart.php:127
+#, php-format
+msgid "Product measurement value (%1$s) must be greater than 0."
+msgstr "A termék mérési értékének (%1$s) nagyobbnak kell lennie 0-nál."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Cart.php:132
+#, php-format
+msgid ""
+"Product measurement value (%1$s) must be greater than or equal to %2$s."
+msgstr "A termék mérési értékének (%1$s) nagyobbnak vagy egyenlőnek kell lennie ezzel: %2$s."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Cart.php:138
+#, php-format
+msgid "Product measurement value (%1$s) must be less than or equal to %2$s."
+msgstr "A termék mérési értékének (%1$s) kisebbnek vagy egyenlőnek kell lennie ezzel: %2$s."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Cart.php:143
+#, php-format
+msgid ""
+"The size of the product is %1$s, allowed increment value is %2$s, please "
+"change the size of the product."
+msgstr "A termék mérete %1$s, a megengedett növekmény értéke %2$s. Kérjük, módosítsa a termék méretét."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Cart.php:838
+#, php-format
+msgid "Overage Estimate (%s)"
+msgstr "Ráhagyás becslése (%s)"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Cart.php:847
+#, php-format
+msgid "Overage %1$s (%2$s)"
+msgstr "Ráhagyás %1$s (%2$s)"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Cart.php:847
+#, php-format
+msgid "Overage %s"
+msgstr "Ráhagyás %s"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Cart.php:854
+#, php-format
+msgid "Overage Cost (%s%%)"
+msgstr "Ráhagyás költsége (%s%%)"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Inventory.php:189
+#, php-format
+msgid "Only %1$s %2$s left in stock"
+msgstr "Már csak %1$s %2$s van készleten"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Inventory.php:189
+msgid "In stock"
+msgstr "Raktáron"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Inventory.php:192
+#, php-format
+msgid "%1$s %2$s in stock"
+msgstr "%1$s %2$s van készleten"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Inventory.php:197
+msgid "(backorders allowed)"
+msgstr "(utánrendelés engedélyezett)"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Inventory.php:363
+msgid "Backordered measure"
+msgstr "Utánrendelés alatt álló mérték"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Inventory.php:370
+msgid "Backordered quantity or measure"
+msgstr "Utánrendelés alatt álló mennyiség vagy mérték"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Inventory.php:491
+msgid ""
+"You cannot purchase this product because the stock level is below the "
+"minimum threshold."
+msgstr "Ezt a terméket nem vásárolhatja meg, mert a készletszint a minimális küszöbérték alatt van."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Measurement.php:354
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:95
+msgid "item"
+msgstr "tétel"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Product.php:190
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Product.php:204
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Product.php:208
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Settings.php:739
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:43
+msgid "Area"
+msgstr "Terület"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Product.php:236
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Product.php:240
+msgid "Perimeter"
+msgstr "Kerület"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Product.php:269
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Product.php:273
+msgid "Surface Area"
+msgstr "Felület"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/ProductLoop.php:50
+msgid "Select options"
+msgstr "Kiválasztási opciók"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/ProductPage.php:549
+msgid "Unfortunately we don't have enough"
+msgstr "Sajnos nincs elegendő"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/ProductPage.php:550
+msgid "Please enter a value between {0} and {1} characters long."
+msgstr "Kérjük, {0} és {1} karakter közötti hosszúságú értéket adjon meg."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/ProductPage.php:550
+msgid "Please enter a value between {0} and {1}."
+msgstr "Kérjük, {0} és {1} közötti értéket adjon meg."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/ProductPage.php:550
+msgid "Please enter a value less than or equal to {0}."
+msgstr "Kérjük, legfeljebb {0} értéket adjon meg."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/ProductPage.php:550
+msgid "Please enter a value greater than or equal to {0}."
+msgstr "Kérjük, legalább {0} értéket adjon meg."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/ProductPage.php:550
+msgid "Enter the multiple of the digit {0}."
+msgstr "A {0} számjegy többszörösét adja meg."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/ProductPage.php:550
+msgid "This field is required."
+msgstr "Ez a mező kötelező."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Settings.php:578
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Settings.php:580
+msgid "Free!"
+msgstr "Ingyenes!"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Settings.php:715
+#, php-format
+msgid "per %s"
+msgstr "egységenként (%s)"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Settings.php:734
+msgid "Required Length"
+msgstr "Szükséges hosszúság"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Settings.php:736
+msgid "Required Width"
+msgstr "Szükséges szélesség"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Settings.php:738
+msgid "Required Height"
+msgstr "Szükséges magasság"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Settings.php:740
+msgid "Required Area"
+msgstr "Szükséges terület"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Settings.php:741
+msgid "Required Volume"
+msgstr "Szükséges térfogat"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Settings.php:742
+msgid "Required Weight"
+msgstr "Szükséges tömeg"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Settings.php:743
+msgid "Distance around your room"
+msgstr "Az Ön szobájának kerülete"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:43
+msgid "Dimension"
+msgstr "Méret"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:43
+msgid "Volume (LxWxH)"
+msgstr "Térfogat (LxWxH)"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:43
+msgid "Custom"
+msgstr "Egyéni"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:122
+msgid "g"
+msgstr "g"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:122
+msgid "kg"
+msgstr "kg"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:122
+msgid "t"
+msgstr "t"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:122
+msgid "oz"
+msgstr "oz"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:122
+msgid "lbs"
+msgstr "lbs"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:122
+msgid "tn"
+msgstr "tn"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:132
+msgid "mm"
+msgstr "mm"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:132
+msgid "cm"
+msgstr "cm"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:132
+msgid "m"
+msgstr "m"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:132
+msgid "km"
+msgstr "km"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:132
+msgid "in"
+msgstr "itt"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:132
+msgid "ft"
+msgstr "ft"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:132
+msgid "yd"
+msgstr "yd"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:132
+msgid "mi"
+msgstr "mi"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:142
+msgid "sq mm"
+msgstr "négyzetmilliméter"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:142
+msgid "sq cm"
+msgstr "négyzetcentiméter"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:142
+msgid "sq m"
+msgstr "négyzetméter"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:142
+msgid "ha"
+msgstr "ha"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:142
+msgid "sq km"
+msgstr "négyzetkilométer"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:142
+msgid "sq in"
+msgstr "négyzethüvelyk"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:142
+msgid "sq ft"
+msgstr "négyzetláb"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:142
+msgid "sq yd"
+msgstr "négyzetyard"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:142
+msgid "acs"
+msgstr "acre"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:142
+msgid "sq mi"
+msgstr "négyzetmérföld"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:152
+msgid "ml"
+msgstr "ml"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:152
+msgid "l"
+msgstr "l"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:152
+msgid "cup"
+msgstr "csésze"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:152
+msgid "pt"
+msgstr "pt"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:152
+msgid "qt"
+msgstr "qt"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:152
+msgid "gal"
+msgstr "gal"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:152
+msgid "fl oz"
+msgstr "folyadékuncia"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:156
+msgid "cu cm"
+msgstr "köbcentiméter"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:156
+msgid "cu m"
+msgstr "köbméter"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:156
+msgid "cu in"
+msgstr "köbhüvelyk"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:156
+msgid "cu ft"
+msgstr "köbláb"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/src/WooCommerce/Units.php:156
+msgid "cu yd"
+msgstr "köbyard"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:24
+msgid "Unit Field Label"
+msgstr "Mértékegység mezőcímkéje"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:24
+msgid "Set the field label to be visible on the product page."
+msgstr "Állítsa be, hogy a mező címkéje látható legyen-e a termékoldalon."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:38
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:36
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:56
+msgid "Unit of measure"
+msgstr "Mértékegység"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:42
+msgid "Select the products unit whose quantity you are selling."
+msgstr "Válassza ki az értékesített mennyiség mértékegységét."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:59
+msgid "Price source"
+msgstr "Ár forrása"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:73
+msgid "Product (PRO version only)"
+msgstr "Termék (csak a PRO verzióban)"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:73
+msgid "Product"
+msgstr "Termék"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:85
+msgid "Set product base price."
+msgstr "A termék alapárának beállítása."
+
+#. translators: %s: current currency symbol.
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:92
+#, php-format
+msgid "Sale price (%s)"
+msgstr "Akciós ár (%s)"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:94
+msgid "Set the sale price for the unit of measure."
+msgstr "A mértékegység akciós árának beállítása."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:103
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:66
+msgid "Increment"
+msgstr "Növekmény"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:103
+msgid ""
+"Set the increment value for the quantity at which the price will increase."
+msgstr "Állítsa be azt a növekményt, amellyel a mennyiség növelésekor az ár emelkedik."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:109
+msgid "Minimum quantity"
+msgstr "Minimális mennyiség"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:109
+msgid "Set the minimum quantity range."
+msgstr "Állítsa be a minimális mennyiségtartományt."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:115
+msgid "Maximum quantity"
+msgstr "Maximális mennyiség"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:115
+msgid "Set the maximum quantity range."
+msgstr "Állítsa be a maximális mennyiségtartományt."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:122
+msgid "Advanced settings"
+msgstr "Haladó beállítások"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:131
+msgid "Impact on stock management"
+msgstr "A készletkezelésre gyakorolt hatás"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:139
+msgid "Always decrease by 1"
+msgstr "A készlet mindig 1-gyel történő csökkentése"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:143
+msgid "Example: Ordering 10 kg of product will reduce stock by 1."
+msgstr "Példa: 10 kg termék megrendelése 1-gyel csökkenti a készletet."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:151
+msgid "Decrease by an amount equal to the units purchased"
+msgstr "A készlet csökkentése a vásárolt mennyiséggel megegyező mértékben"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:155
+msgid "Example: Ordering 10 kg of product will reduce stock by 10."
+msgstr "Példa: 10 kg termék megrendelése 10-zel csökkenti a készletet."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:170
+msgid "Purchasing a specific product configuration"
+msgstr "Adott termékkonfiguráció vásárlása"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:178
+msgid "Unlimited"
+msgstr "Korlátlan"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:182
+msgid ""
+"Example: You can add 10 kg of a product to your cart. You can then re-add "
+"the same configured product."
+msgstr "Példa: 10 kg terméket tehet a kosárba. Ezután ismét hozzáadhatja ugyanazt a konfigurált terméket."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:190
+msgid "One-time"
+msgstr "Egyszeri"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/basic-settings/basic-settings.php:194
+msgid ""
+"Example: You can add 10 kg of product to your cart once. You must change the"
+" unit value to something other than 10 kg to be able to add the product to "
+"your cart again."
+msgstr "Példa: 10 kg terméket csak egyszer tehet a kosárba. Ahhoz, hogy ismét a kosárba tehesse a terméket, a mennyiséget 10 kg-tól eltérő értékre kell módosítania."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/custom-units-page.php:27
+msgid "Settings saved"
+msgstr "Beállítások mentve"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/custom-units-page.php:35
+msgid "Flexible Quantity - Custom Units"
+msgstr "Flexible Quantity – egyéni mértékegységek"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/custom-units-page.php:42
+msgid ""
+"Below you can add custom units, which will be added to the list of units."
+msgstr "Alább egyéni mértékegységeket adhat hozzá, amelyek megjelennek a mértékegységek listájában."
+
+#. translators: %1$s and %2$s: anchor opening and closing tags with right
+#. arrow
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/custom-units-page.php:48
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimensions.php:48
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/pricing-table/pricing-table.php:54
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/selection-section.php:21
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/shipping-table/shipping-table.php:50
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/template-section.php:32
+#, php-format
+msgid "Read more in the %1$splugin documentation%2$s"
+msgstr "Bővebben a %1$sbővítmény dokumentációjában%2$s"
+
+#. translators: %1$s and %2$s: anchor opening and closing tags with right
+#. arrow
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/custom-units-page.php:60
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimensions.php:24
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/pricing-table/pricing-table.php:27
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/shipping-table/shipping-table.php:26
+#, php-format
+msgid "This feature is available in the PRO version. %1$sUpgrade to PRO%2$s"
+msgstr "Ez a funkció a PRO verzióban érhető el. %1$sFrissítés PRO verzióra%2$s"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/custom-units-page.php:82
+msgid "Save settings"
+msgstr "Beállítások mentése"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/custom-units/custom-units-row.php:17
+msgid "Product unit name"
+msgstr "Termék mértékegységének neve"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/custom-units/custom-units-row.php:26
+msgid ""
+"The name of the unit will be visible in the list in the product edition, in "
+"the Flexible Quantity tab"
+msgstr "A mértékegység neve a termék szerkesztésekor, a Flexible Quantity fülön látható a listában"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:21
+msgid "Fixed value"
+msgstr "Rögzített érték"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:21
+msgid "User value"
+msgstr "Felhasználói érték"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:30
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:50
+msgid "Field label"
+msgstr "Mezőcímke"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:30
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:50
+msgid "Enter the name for the dimension field label."
+msgstr "Adja meg a dimenziómező címkéjét."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:36
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:56
+msgid "Choose the unit of measure for the dimension."
+msgstr "Válassza ki a dimenzió mértékegységét."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:42
+msgid "Value"
+msgstr "Érték"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:42
+msgid "Select the products size."
+msgstr "Válassza ki a termék méretét."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:66
+msgid "Fill in the increment value for the unit dimension."
+msgstr "Adja meg a dimenzióegység növekményét."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:72
+msgid "Minimum value"
+msgstr "Minimális érték"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:72
+msgid "Set the minimum value for the unit dimension."
+msgstr "Állítsa be a dimenzióegység minimális értékét."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:78
+msgid "Maximum value"
+msgstr "Maximális érték"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimension-row.php:78
+msgid "Set the maximum value for the unit dimension."
+msgstr "Állítsa be a dimenzióegység maximális értékét."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimensions.php:15
+msgid "Unit Dimensions"
+msgstr "Mértékegység-dimenziók"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimensions.php:35
+msgid "Enable Advanced Calculator Settings."
+msgstr "Kapcsolja be a haladó kalkulátorbeállításokat."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/dimensions/dimensions.php:41
+msgid ""
+"Use one of the two options available for each dimension. Set a fixed value "
+"for the dimension, or enable value filling on the product page."
+msgstr "Válassza ki a két elérhető opció egyikét minden dimenzióhoz. Állítson be rögzített értéket a dimenzióhoz, vagy engedélyezze az érték megadását a termékoldalon."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/marketing-page.php:27
+msgid "Get support"
+msgstr "Támogatás kérése"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/marketing-page.php:34
+msgid "Share idea"
+msgstr "Ötlet megosztása"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/marketing-page.php:43
+msgid "Before sending a message please:"
+msgstr "Üzenet küldése előtt kérjük:"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/marketing-page.php:47
+msgid ""
+"Prepare the information about the version of WordPress, WooCommerce, and "
+"Flexible Quantity (preferably your system status from WooCommerce->Status)"
+msgstr "Készítse elő a WordPress, a WooCommerce és a Flexible Quantity verziójára vonatkozó információkat (lehetőleg a WooCommerce->állapot résznél található rendszerállapotot)"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/marketing-page.php:50
+msgid "Describe the issue you have"
+msgstr "Írja le a tapasztalt problémát"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/marketing-page.php:53
+msgid "Attach any log files & printscreens of the issue"
+msgstr "Csatolja a problémához kapcsolódó naplófájlokat és képernyőképeket"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/pricing-table/pricing-table.php:18
+msgid "Pricing table"
+msgstr "Árazási tábla"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/pricing-table/pricing-table.php:38
+msgid "Enable Pricing Table"
+msgstr "Ártáblázat bekapcsolása"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/pricing-table/pricing-table.php:41
+msgid ""
+"The price table cannot be enabled while the \"Select to use product prices\""
+" option is enabled."
+msgstr "Az ártáblázat nem kapcsolható be, amíg be van kapcsolva a „Válassza ki a termékárak használatát” beállítás."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/pricing-table/pricing-table.php:47
+msgid ""
+"The table will allow you to determine the different prices of the unit of "
+"measurement based on its quantity. Set the quantity range, and the regular "
+"and the sale price. The plugin will apply the first met condition from the "
+"table."
+msgstr "A táblázat segítségével a mennyiségtől függően különböző egységárakat határozhat meg. Állítsa be a mennyiségtartományt, valamint a normál és az akciós árat. A bővítmény a táblázatból az első olyan feltételt alkalmazza, amely teljesül."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/pricing-table/pricing-table.php:70
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/shipping-table/shipping-table.php:67
+msgid "From"
+msgstr "Kezdő dátum"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/pricing-table/pricing-table.php:71
+msgid "The minimum quantity to apply the new price for the unit of measure."
+msgstr "Az a minimális mennyiség, amelytől az új mértékegységár alkalmazandó."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/pricing-table/pricing-table.php:74
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/shipping-table/shipping-table.php:71
+msgid "To"
+msgstr "Befejezés dátuma"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/pricing-table/pricing-table.php:75
+msgid "The maximum quantity to apply the new price for the unit of measure."
+msgstr "Az a maximális mennyiség, amelyig az új mértékegységár alkalmazandó."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/pricing-table/pricing-table.php:78
+msgid "Price"
+msgstr "Ár"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/pricing-table/pricing-table.php:82
+msgid "New regular price per unit."
+msgstr "Új normál egységár."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/pricing-table/pricing-table.php:85
+msgid "Sale Price"
+msgstr "Akciós ár"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/pricing-table/pricing-table.php:89
+msgid "New sale price per unit."
+msgstr "Új akciós egységár."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/product/panel.php:12
+msgid "Flexible Quantity - Measurement Calculator"
+msgstr "Flexible Quantity – mérési kalkulátor"
+
+#. translators: %1$s: link to plugin settings page, %2$s: closing link tag.
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/product/panel.php:18
+#, php-format
+msgid ""
+"The Flexible Quantity plugin settings you are looking for can be found "
+"%1$shere →%2$s"
+msgstr "A keresett Flexible Quantity bővítménybeállításokat %1$sitt találja →%2$s"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/product/price-settings.php:17
+msgid "Note:"
+msgstr "Megjegyzés:"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/product/price-settings.php:23
+msgid ""
+"This product is assigned to the unit calculator template. To use the product"
+" prices as the unit prices,"
+msgstr "Ez a termék az egységkalkulátor-sablonhoz van rendelve. Ha a termékárakat egységárként szeretné használni,"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/product/price-settings.php:29
+msgid "upgrade to PRO →"
+msgstr "frissítsen a PRO verzióra →"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/product/price-settings.php:36
+msgid ""
+"This product is assigned to the unit calculator template. To use the product"
+" prices, select \"Product\" as the \"Price source\" in the"
+msgstr "Ez a termék az egységkalkulátor-sablonhoz van rendelve. A termékárak használatához válassza a „termék” lehetőséget az „ár forrása” mezőben a"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/product/price-settings.php:42
+msgid "template settings"
+msgstr "sablonbeállítások"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/product/tab.php:12
+msgctxt "product_menu"
+msgid "Flexible Quantity"
+msgstr "Flexible Quantity"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/selection-section.php:11
+msgid "Template assignment"
+msgstr "Sablon-hozzárendelés"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/selection-section.php:15
+msgid ""
+"Select the product(s), product categories or tags for which you are creating"
+" a template."
+msgstr "Válassza ki azokat a termékeket, termékkategóriákat vagy címkéket, amelyekhez sablont készít."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/selection-section.php:34
+msgid "I am creating template for"
+msgstr "Sablont készítek ehhez:"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/selection-section.php:38
+msgid "Template category"
+msgstr "Sablonkategória"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/selection-section.php:48
+msgid "Products categories"
+msgstr "Termékkategóriák"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/shipping-table/shipping-table.php:17
+msgid "Shipping class table"
+msgstr "Szállítási osztályok táblázata"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/shipping-table/shipping-table.php:37
+msgid "Enable Shipping Class Table"
+msgstr "Szállítási osztályok táblázatának bekapcsolása"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/shipping-table/shipping-table.php:43
+msgid ""
+"The table will allow you to change the shipping class based on the quantity "
+"of the new unit of measure added to the cart. The plugin will apply the "
+"first condition that is met. The table uses WooCommerce shipping classes."
+msgstr "A táblázat lehetővé teszi, hogy az új mértékegység kosárba helyezett mennyisége alapján módosítsa a szállítási osztályt. A bővítmény az első teljesülő feltételt alkalmazza. A táblázat a WooCommerce szállítási osztályait használja."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/shipping-table/shipping-table.php:68
+msgid "The minimum quantity for applying to the new shipping class."
+msgstr "Az új szállítási osztály alkalmazásához szükséges minimális mennyiség."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/shipping-table/shipping-table.php:72
+msgid "The maximum quantity for applying to the new shipping class."
+msgstr "Az új szállítási osztály alkalmazásához szükséges maximális mennyiség."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/shipping-table/shipping-table.php:75
+msgid "Shipping class"
+msgstr "Szállítási osztály"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/shipping-table/shipping-table.php:76
+msgid "New shipping class."
+msgstr "Új szállítási osztály."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/template-section.php:19
+msgid "Basic settings"
+msgstr "Alapbeállítások"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/template-section.php:23
+msgid "Fill in the increment and the price that will increase by reaching it."
+msgstr "Adja meg a lépésközt és az árat, amely az érték elérésekor növekedni fog."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/settings/template-section.php:26
+msgid ""
+"For area units, you can use extended options that will allow you to "
+"calculate prices based on dimensions on the product page."
+msgstr "Területi mértékegységek esetén bővített opciókkal számíthatja ki az árakat a termékoldalon megadott méretek alapján."
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/single-product/price-calculator.php:51
+msgid "Product Price"
+msgstr "Termék ára"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/single-product/quantity-calculator.php:19
+#, php-format
+msgid "Actual %1$s (%2$s)"
+msgstr "Tényleges %1$s (%2$s)"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/single-product/quantity-calculator.php:19
+#, php-format
+msgid "Actual %s"
+msgstr "Tényleges %s"
+
+#. translators: Placeholders: %1$s - measurement label, %2$s - measurement
+#. unit label
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/single-product/quantity-calculator.php:47
+#, php-format
+msgid "%1$s (%2$s)"
+msgstr "%1$s (%2$s)"
+
+#: vendor_prefixed/wpdesk/flexible-quantity-core/templates/single-product/quantity-calculator.php:114
+msgid "Total Price"
+msgstr "Teljes összeg"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:65
+msgid "Grow your business with WP Desk"
+msgstr "Növelje vállalkozását a WP Desk segítségével"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:291
+msgid "Buy now"
+msgstr "Azonnali vásárlás"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:293
+msgid "Learn more"
+msgstr "További tudnivalók"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:296
+msgid "Download"
+msgstr "Letöltés"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:307
+msgid "More info"
+msgstr "További információ"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:206
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on PHP versions older than %s. Please"
+" contact your host and ask them to upgrade."
+msgstr "A „%s” bővítmény nem futtatható a %s verziónál régebbi PHP-verziókon. Kérjük, vegye fel a kapcsolatot a tárhelyszolgáltatójával, és kérje a frissítést."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:209
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WordPress versions older than %s. "
+"Please update WordPress."
+msgstr "A „%s” bővítmény nem futtatható a %s verziónál régebbi WordPress-verziókon. Kérjük, frissítse a WordPress rendszert."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:212
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WooCommerce versions older than "
+"%s. Please update WooCommerce."
+msgstr "A „%s” bővítmény nem futtatható a %s verziónál régebbi WooCommerce-verziókon. Kérjük, frissítse a WooCommerce-t."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:215
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without OpenSSL module version at "
+"least %s. Please update OpenSSL module."
+msgstr "A „%s” bővítmény futtatásához legalább %s verziójú OpenSSL-modul szükséges. Kérjük, frissítse az OpenSSL-modult."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:310
+#, php-format
+msgid ""
+"The &#8220;%1$s&#8221; plugin requires at least %2$s version of %3$s to work"
+" correctly. Please update it to its latest release."
+msgstr "A „%1$s” bővítmény megfelelő működéséhez a(z) %3$s legalább %2$s verziója szükséges. Kérjük, frissítse a legújabb verzióra."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:416
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s active. Please install and"
+" activate %s plugin."
+msgstr "A &#8222;%s&#8221; bővítmény nem futtatható aktív %s nélkül. Kérjük, telepítse és kapcsolja be a(z) %s bővítményt."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:468
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin requires free %s plugin. <a href=\"%s\">Install "
+"%s</a>"
+msgstr "A(z) &#8222;%s&#8221; bővítményhez szükséges az ingyenes %s bővítmény. <a href=\"%s\">A(z) %s bővítmény telepítése</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:474
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin requires activating %s plugin. <a "
+"href=\"%s\">Activate %s</a>"
+msgstr "A(z) &#8222;%s&#8221; bővítmény használatához be kell kapcsolnia a(z) %s bővítményt. <a href=\"%s\">A(z) %s bővítmény bekapcsolása</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:516
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP module installed. "
+"Please contact your host and ask them to install %s."
+msgstr "A &#8222;%s&#8221; bővítmény futtatásához telepíteni kell a %s PHP-modult. Kérjük, vegye fel a kapcsolatot a tárhelyszolgáltatójával, és kérje a %s telepítését."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:541
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP setting set to %s. "
+"Please contact your host and ask them to set %s."
+msgstr "A &#8222;%s&#8221; bővítmény futtatásához a %s PHP-beállítás értékének meg kell egyeznie a következő értékkel: %s. Kérjük, vegye fel a kapcsolatot a tárhelyszolgáltatójával, és kérje a %s beállítását."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker_With_Update_Disable.php:29
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin is temporarily disabled since the required %s "
+"plugin is being upgraded."
+msgstr "A &#8220;%s&#8221; bővítmény átmenetileg kikapcsolva, mert a szükséges %s bővítmény frissítése folyamatban van."
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:184
+msgid "Docs"
+msgstr "Dokumentáció"
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:188
+msgid "Settings"
+msgstr "Beállítások"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Disabled"
+msgstr "Kikapcsolva"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Emergency"
+msgstr "Vészhelyzet"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Alert"
+msgstr "Riasztás"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Critical"
+msgstr "Kritikus"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Error"
+msgstr "Hiba"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Warning"
+msgstr "Figyelem"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Notice"
+msgstr "Értesítés"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Info"
+msgstr "Információ"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Debug"
+msgstr "Hibakeresés"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:23
+#, php-format
+msgid ""
+"Can not enable WP Desk Debug log! Cannot create directory %s or this "
+"directory is not writeable!"
+msgstr "Nem sikerült bekapcsolni a WP Desk Debug naplót! A(z) %s könyvtár nem hozható létre, vagy nem írható!"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:36
+#, php-format
+msgid "Can not enable WP Desk Debug log! Cannot create file %s!"
+msgstr "Nem sikerült bekapcsolni a WP Desk Debug naplót! A(z) %s fájl nem hozható létre!"
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/NoticeReminder.php:53
+#, php-format
+msgid ""
+"You're using an outdated version of the following plugin: %s This may cause "
+"serious compatibility issues with WooCommerce. Update it immediately to "
+"avoid potential disruptions."
+msgid_plural ""
+"You're using outdated versions of the following plugins: %s This may cause "
+"serious compatibility issues with WooCommerce. Update them immediately to "
+"avoid potential disruptions."
+msgstr[0] "Az alábbi bővítmény elavult verzióját használja: %s. Ez súlyos kompatibilitási problémákat okozhat a WooCommerce-szel. A fennakadások elkerülése érdekében azonnal frissítse."
+msgstr[1] "Az alábbi bővítmények elavult verzióit használja: %s. Ezek súlyos kompatibilitási problémákat okozhatnak a WooCommerce-szel. A fennakadások elkerülése érdekében azonnal frissítse őket."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/NoticeReminder.php:60
+#, php-format
+msgid ""
+"You're using an older version of the following plugin: %s This version "
+"hasn't been tested with the latest WooCommerce versions. Please update it to"
+" the latest version to ensure smooth compatibility."
+msgid_plural ""
+"You're using older versions of the following plugins: %s These versions "
+"haven't been tested with the latest WooCommerce versions. Please update them"
+" to the latest version to ensure smooth compatibility."
+msgstr[0] "Az alábbi bővítmény régebbi verzióját használja: %s. Ezt a verziót nem tesztelték a legújabb WooCommerce-verziókkal. Kérjük, frissítse a legújabb verzióra a zavartalan együttműködés érdekében."
+msgstr[1] "Az alábbi bővítmények régebbi verzióit használja: %s. Ezeket a verziókat nem tesztelték a legújabb WooCommerce-verziókkal. Kérjük, frissítse őket a legújabb verzióra a zavartalan együttműködés érdekében."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/ReminderData.php:71
+#, php-format
+msgid ""
+"You're using an outdated version of %1$s plugin, which may cause serious "
+"compatibility issues with WooCommerce. %2$sUpdate immediately%3$s to avoid "
+"potential disruptions."
+msgstr "A(z) %1$s bővítmény elavult verzióját használja, amely súlyos kompatibilitási problémákat okozhat a WooCommerce-szel. A fennakadások elkerülése érdekében végezze el most a %2$sfrissítést%3$s."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/ReminderData.php:75
+#, php-format
+msgid ""
+"You're using an older version of %1$s plugin that hasn't been tested with "
+"the latest WooCommerce versions. Please %2$supdate to the latest version%3$s"
+" to ensure smooth compatibility."
+msgstr "A(z) %1$s bővítmény olyan régebbi verzióját használja, amelyet nem teszteltek a legújabb WooCommerce-verziókkal. Kérjük, a zavartalan együttműködés érdekében végezze el a %2$slegújabb verzióra történő frissítést%3$s."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/SiteHealthReminder.php:39
+msgid "You should update plugin"
+msgstr "Javasolt a bővítmény frissítése"
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/SiteHealthReminder.php:39
+msgid "Compatibility"
+msgstr "Kompatibilitás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginExternalBlocking.php:32
+#, php-format
+msgid ""
+"<b>Warning!</b> You're blocking external requests which means you won't be "
+"able to get %1$s updates. Please add %2$s to %3$s."
+msgstr "<b>Figyelem!</b> A külső kérések le vannak tiltva, ezért nem érhetők el a következő frissítései: %1$s. Kérjük, adja hozzá a következő elemet: %2$s. A cél: %3$s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:83
+#, php-format
+msgid ""
+"Error while connecting to remote server %s. Please contact your hosting "
+"provider or try again later. Errors:  "
+msgstr "Hiba történt a(z) %s távoli kiszolgálóhoz való csatlakozáskor. Kérjük, vegye fel a kapcsolatot a tárhelyszolgáltatójával, vagy próbálja újra később. Hibák:  "
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:172
+msgid "License server is currently unavailable. Please, try again later."
+msgstr "A licencszerver jelenleg nem érhető el. Kérjük, próbálja meg később."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:174
+#, php-format
+msgid ""
+"Error while connecting to remote server %1$s. Please contact with your "
+"hosting provider. Cannot parse response. Response code: %2$s Message: %3$s"
+msgstr "Hiba a távoli szerverhez (%1$s) való csatlakozás közben. Kérjük, lépjen kapcsolatba a tárhelyszolgáltatójával. A válasz nem értelmezhető. Válaszkód: %2$s, üzenet: %3$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:177
+#, php-format
+msgid ""
+"Error while connecting to remote server %1$s. Please contact with your "
+"hosting provider. Cannot parse response: %2$s"
+msgstr "Hiba a(z) %1$s távoli szerverhez való csatlakozáskor. Kérjük, lépjen kapcsolatba a tárhelyszolgáltatójával. A válasz nem értelmezhető: %2$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/templates/impossible-to-upgrade.php:12
+#, php-format
+msgid ""
+"This version of %1$s plugin cannot be automatically upgraded. Download the "
+"plugin from %2$syour account%3$s to receive automatic updates in future."
+msgstr "A(z) %1$s bővítmény ezen verziója nem frissíthető automatikusan. Töltse le a bővítményt a %2$sfiókjából%3$s, hogy a jövőben automatikus frissítéseket kapjon."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/class-wpdesk-tracker.php:194
+msgid "Submit &amp; Deactivate"
+msgstr "Küldés és kikapcsolás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/OptOut.php:42
+#, php-format
+msgid ""
+"You successfully opted out of collecting usage data by %1$s. If you change "
+"your mind, you can always opt in later in the plugin's quick links."
+msgstr "Sikeresen kikapcsolta a használati adatok %1$s általi gyűjtését. Ha meggondolja magát, később bármikor újra bekapcsolhatja a használati adatok gyűjtését a bővítmény gyorshivatkozásain keresztül."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/PluginActionLinks.php:70
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:43
+msgid "Enable usage tracking"
+msgstr "Használatkövetés bekapcsolása"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/PluginActionLinks.php:75
+msgid "Disable usage tracking"
+msgstr "Használatkövetés kikapcsolása"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:23
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:19
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:21
+#, php-format
+msgid "Hey %s,"
+msgstr "Kedves %s,"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:26
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:22
+msgid ""
+"Please help us improve our plugins! If you opt-in, we will collect some non-"
+"sensitive data and usage information anonymously. If you skip this, that's "
+"okay! All plugins will work just fine."
+msgstr "Kérjük, segítsen nekünk bővítményeink fejlesztésében! Ha ehhez hozzájárul, névtelenül gyűjtünk néhány nem érzékeny adatot és használati információt. Ha ezt kihagyja, az is rendben van! Minden bővítmény továbbra is megfelelően fog működni."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:35
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:31
+msgid "Allow & Continue &rarr;"
+msgstr "Engedélyezés és folytatás &rarr;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:40
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:36
+msgid "Skip"
+msgstr "Kihagyás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:47
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:43
+msgid "What permissions are being granted?"
+msgstr "Milyen engedélyeket ad meg?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:56
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:52
+msgid "Your Site Overview"
+msgstr "Webhelyének áttekintése"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:59
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:55
+msgid "WP version, PHP info"
+msgstr "WP-verzió, PHP-információk"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:67
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:63
+msgid "Plugin Usage"
+msgstr "Bővítményhasználat"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:70
+#, php-format
+msgid "Current settings and usage information of %1$s plugins"
+msgstr "A(z) %1$s bővítményeinek aktuális beállításai és használati adatai"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:78
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:74
+msgid "Your Store Overview"
+msgstr "Áruházának áttekintése"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:81
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:77
+msgid "Anonymized and non-sensitive store usage information"
+msgstr "Anonimizált, nem érzékeny adatok az áruház használatáról"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:91
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:87
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:29
+msgid "Find out more &raquo;"
+msgstr "További információk &raquo;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:66
+msgid "Current settings and usage information of WP Desk plugins"
+msgstr "A WP Desk bővítményeinek aktuális beállításai és használati adatai"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:12
+#, php-format
+msgid "You are deactivating %s plugin."
+msgstr "Ön kikapcsolja a(z) %s bővítményt."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:20
+msgid ""
+" If you have a moment, please let us know why you are deactivating plugin "
+"(anonymous feedback):"
+msgstr " Ha van egy perce, kérjük, mondja el, miért kapcsolja ki a bővítményt (névtelen visszajelzés):"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:29
+msgid "The plugin suddenly stopped working"
+msgstr "A bővítmény váratlanul leállt"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:39
+msgid "The plugin broke my site"
+msgstr "A bővítmény tönkretette a webhelyemet"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:49
+msgid "I found a better plugin"
+msgstr "Találtam egy jobb bővítményt"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:54
+msgid "What's the plugin's name?"
+msgstr "Mi a bővítmény neve?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:64
+msgid "I only needed the plugin for a short period"
+msgstr "Csak rövid ideig volt szükségem a bővítményre"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:74
+msgid "I no longer need the plugin"
+msgstr "Többé nincs szükségem erre a bővítményre"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:84
+msgid "It's a temporary deactivation. I'm just debugging an issue."
+msgstr "Ez ideiglenes kikapcsolás. Csak egy probléma okát próbálom kideríteni."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:99
+msgid "Kindly tell us the reason so we can improve"
+msgstr "Kérjük, mondja el az okot, hogy fejlődhessünk"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:108
+msgid "Cancel"
+msgstr "Mégse"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:111
+msgid "Skip &amp; Deactivate"
+msgstr "Kihagyás és kikapcsolás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:24
+msgid ""
+"We need your help to improve <strong>WP Desk plugins</strong>, so they are "
+"more useful for you and the rest of <strong>30,000+ users</strong>. By "
+"collecting data on how you use our plugins, you will help us a lot. We will "
+"not collect any sensitive data, so you can feel safe."
+msgstr "Szükségünk van az Ön segítségére, hogy a <strong>WP Desk bővítményei</strong> hasznosabbak legyenek az Ön és a többi <strong>30 000+ felhasználó</strong> számára. A bővítmények használatáról szóló adatok gyűjtésével nagy segítséget nyújt nekünk. Nem gyűjtünk érzékeny adatokat, így biztonságban érezheti magát."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-opt-out-notice.php:11
+msgid ""
+"You successfully opted out of collecting usage data by WP Desk. If you "
+"change your mind, you can always opt in later in the plugin's quick links."
+msgstr "Sikeresen leiratkozott a WP Desk által végzett használatiadat-gyűjtésről. Ha meggondolja magát, később bármikor feliratkozhat a bővítmény gyorshivatkozásain keresztül."

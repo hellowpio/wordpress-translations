@@ -1,0 +1,715 @@
+# Copyright (C) 2026 MainWP
+# This file is distributed under the same license as the MainWP SSL Monitor Extension plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: MainWP SSL Monitor Extension 5.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mainwp-ssl-monitor-extension\n"
+"POT-Creation-Date: 2026-10-31T10:20:04+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: mainwp-ssl-monitor-extension\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: MainWP SSL Monitor Extension\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 5.4\n"
+
+#. Plugin Name of the plugin
+#: mainwp-ssl-monitor-extension.php
+msgid "MainWP SSL Monitor Extension"
+msgstr "MainWP SSL Monitor Extension"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: mainwp-ssl-monitor-extension.php
+msgid "https://mainwp.com"
+msgstr "https://mainwp.com"
+
+#. Description of the plugin
+#: mainwp-ssl-monitor-extension.php
+msgid ""
+"MainWP SSL Monitor Add-on lets you keep a watchful eye on your SSL "
+"Certificates. It alerts you via email when monitored certificates are "
+"nearing expiration."
+msgstr "A MainWP SSL Monitor kiegészítő lehetővé teszi, hogy szemmel tartsd SSL-tanúsítványaidat. E-mailben értesít, amikor a megfigyelt tanúsítványok hamarosan lejárnak."
+
+#. Author of the plugin
+#: mainwp-ssl-monitor-extension.php
+#: templates/emails/mainwp-ssl-monitor-notification-email.php:70
+msgid "MainWP"
+msgstr "MainWP"
+
+#: class/class-mainwp-ssl-monitor-abilities.php:58
+msgid "MainWP SSL Monitor"
+msgstr "MainWP SSL Monitor"
+
+#: class/class-mainwp-ssl-monitor-abilities.php:59
+msgid "Read stored certificate status and monitoring settings."
+msgstr "Tárolt tanúsítványállapot és felügyeleti beállítások beolvasása."
+
+#: class/class-mainwp-ssl-monitor-abilities.php:99
+msgid "List SSL Monitor Site Statuses"
+msgstr "SSL Monitor-webhelyállapotok listázása"
+
+#: class/class-mainwp-ssl-monitor-abilities.php:100
+msgid ""
+"List accessible monitored HTTPS sites with stored certificates. Days left "
+"are rounded as on the Dashboard; expiring soon uses the effective "
+"notification threshold. No certificate checks run."
+msgstr "Tárolt tanúsítványokkal rendelkező, elérhető, felügyelt HTTPS-webhelyek listázása. A hátralévő napok a vezérlőpulton megjelenő módon vannak kerekítve; a hamarosan lejáró állapot az érvényes értesítési küszöbértéket használja. Tanúsítvány-ellenőrzések nem futnak."
+
+#: class/class-mainwp-ssl-monitor-abilities.php:122
+msgid "Get SSL Monitor Site Status"
+msgstr "SSL Monitor-webhely állapotának lekérése"
+
+#: class/class-mainwp-ssl-monitor-abilities.php:123
+msgid ""
+"Read one accessible site’s stored certificate and automatic check times. "
+"Expiring soon uses its effective notification threshold and rounded days "
+"left. Missing timestamps are null. No certificate checks run."
+msgstr "Egy elérhető webhely tárolt tanúsítványának és automatikus ellenőrzési időpontjainak beolvasása. A hamarosan lejáró állapot a webhelyre érvényes értesítési küszöbértéket és kerekített hátralévő napokat használja. A hiányzó időbélyegek értéke null. Tanúsítvány-ellenőrzések nem futnak."
+
+#: class/class-mainwp-ssl-monitor-abilities.php:130
+msgid "Get SSL Monitor Site Policy"
+msgstr "SSL Monitor-webhely szabályzatának lekérése"
+
+#: class/class-mainwp-ssl-monitor-abilities.php:131
+msgid ""
+"Read one accessible site’s effective monitoring settings and whether they "
+"come from global settings or a site override."
+msgstr "Egy elérhető webhely érvényes felügyeleti beállításainak és azok eredetének (globális beállítások vagy webhelyszintű felülbírálás) beolvasása."
+
+#: class/class-mainwp-ssl-monitor-abilities.php:194
+msgid "You do not have permission to use SSL Monitor."
+msgstr "Nincs jogosultságod az SSL Monitor használatához."
+
+#: class/class-mainwp-ssl-monitor-abilities.php:211
+msgid "A positive integer site_id is required."
+msgstr "A site_id értékének pozitív egész számnak kell lennie."
+
+#: class/class-mainwp-ssl-monitor-abilities.php:331
+#: includes/rest-api/version1/class-mainwp-ssl-monitor-rest-api-v1.php:206
+msgid "Site not found."
+msgstr "A webhely nem található."
+
+#: class/class-mainwp-ssl-monitor-admin.php:156
+msgid "Undefined site id. Please, try again."
+msgstr "Nincs megadva a webhely ID-ja. Próbáld újra."
+
+#: class/class-mainwp-ssl-monitor-admin.php:192
+msgid "Dashboard"
+msgstr "Vezérlőpult"
+
+#: class/class-mainwp-ssl-monitor-admin.php:193
+#: class/class-mainwp-ssl-monitor-admin.php:224
+msgid "Settings"
+msgstr "Beállítások"
+
+#: class/class-mainwp-ssl-monitor-admin.php:223
+#: pages/class-mainwp-ssl-monitor-dashboard.php:168
+msgid "SSL Certificate Info"
+msgstr "SSL-tanúsítvány adatai"
+
+#: class/class-mainwp-ssl-monitor-admin.php:269
+msgid "Review the SSL Certificate info for the child site."
+msgstr "Tekintsd át a gyermek webhely SSL-tanúsítványának adatait."
+
+#: class/class-mainwp-ssl-monitor-admin.php:274
+#: class/class-mainwp-ssl-monitor-admin.php:580
+msgid "This seems to be a HTTP site. SSL Crtificate is not detected."
+msgstr "Úgy tűnik, ez egy HTTP webhely. SSL-tanúsítvány nem észlelhető."
+
+#: class/class-mainwp-ssl-monitor-admin.php:282
+#, php-format
+msgid "SSL Certificate Info (Last check: %s)"
+msgstr "SSL-tanúsítvány adatai (Utolsó ellenőrzés: %s)"
+
+#: class/class-mainwp-ssl-monitor-admin.php:288
+msgid "Name"
+msgstr "Név"
+
+#: class/class-mainwp-ssl-monitor-admin.php:292
+#: class/class-mainwp-ssl-monitor-utility.php:513
+msgid "Issuer"
+msgstr "Kibocsátó"
+
+#: class/class-mainwp-ssl-monitor-admin.php:300
+msgid "Subject"
+msgstr "Tárgy"
+
+#: class/class-mainwp-ssl-monitor-admin.php:310
+#: class/class-mainwp-ssl-monitor-utility.php:511
+msgid "Valid From"
+msgstr "Érvényesség kezdete"
+
+#: class/class-mainwp-ssl-monitor-admin.php:314
+#: class/class-mainwp-ssl-monitor-utility.php:512
+msgid "Valid To"
+msgstr "Érvényesség vége"
+
+#: class/class-mainwp-ssl-monitor-admin.php:318
+msgid "Subject Alternative Name"
+msgstr "Alany alternatív neve"
+
+#: class/class-mainwp-ssl-monitor-admin.php:323
+msgid "Hash"
+msgstr "Hash"
+
+#: class/class-mainwp-ssl-monitor-admin.php:327
+msgid "Version"
+msgstr "Verzió"
+
+#: class/class-mainwp-ssl-monitor-admin.php:331
+msgid "Serial Number"
+msgstr "Sorozatszám"
+
+#: class/class-mainwp-ssl-monitor-admin.php:335
+msgid "Serial Number Hex"
+msgstr "Hexadecimális sorozatszám"
+
+#: class/class-mainwp-ssl-monitor-admin.php:340
+msgid "Signature Type SN"
+msgstr "Aláírás típusa SN"
+
+#: class/class-mainwp-ssl-monitor-admin.php:344
+msgid "Signature Type LN"
+msgstr "Aláírás típusa LN"
+
+#: class/class-mainwp-ssl-monitor-admin.php:348
+msgid "Signature Type NID"
+msgstr "Aláírás típusa NID"
+
+#: class/class-mainwp-ssl-monitor-admin.php:387
+msgid "Monitor SSL Certificates status."
+msgstr "Figyeld az SSL-tanúsítványok állapotát."
+
+#: class/class-mainwp-ssl-monitor-admin.php:403
+msgid "Expiration Date"
+msgstr "Lejárati dátum"
+
+#: class/class-mainwp-ssl-monitor-admin.php:414
+#: class/class-mainwp-ssl-monitor-admin.php:587
+msgid "SSL Monitor Dashboard"
+msgstr "SSL Monitor vezérlőpult"
+
+#: class/class-mainwp-ssl-monitor-admin.php:559
+msgid "SSL Certificate"
+msgstr "SSL-tanúsítvány"
+
+#: class/class-mainwp-ssl-monitor-admin.php:560
+msgid "Exprires in "
+msgstr "Lejár "
+
+#: class/class-mainwp-ssl-monitor-admin.php:560
+msgid " days."
+msgstr " nap."
+
+#: class/class-mainwp-ssl-monitor-admin.php:566
+msgid "- No SSL Certificate info"
+msgstr "- Nincs adat az SSL-tanúsítványról"
+
+#: class/class-mainwp-ssl-monitor-admin.php:567
+msgid "SSL Certificate information is not available."
+msgstr "Az SSL-tanúsítvány adatai nem érhetők el."
+
+#: class/class-mainwp-ssl-monitor-admin.php:579
+msgid "SSL Certificate Not Detected!"
+msgstr "SSL-tanúsítvány nem észlelhető!"
+
+#: class/class-mainwp-ssl-monitor-admin.php:747
+msgid "SSL info not found."
+msgstr "Nem találhatók SSL-adatok."
+
+#: class/class-mainwp-ssl-monitor-admin.php:789
+msgid "Name: "
+msgstr "Név: "
+
+#: class/class-mainwp-ssl-monitor-admin.php:790
+msgid "Issuer Organization: "
+msgstr "Kibocsátó szervezet: "
+
+#: class/class-mainwp-ssl-monitor-admin.php:791
+msgid "Issuer Common Name: "
+msgstr "Kibocsátó közös neve: "
+
+#: class/class-mainwp-ssl-monitor-admin.php:792
+msgid "Issuer Country: "
+msgstr "Kibocsátó ország: "
+
+#: class/class-mainwp-ssl-monitor-admin.php:793
+msgid "Subject (C): "
+msgstr "Tárgy (C): "
+
+#: class/class-mainwp-ssl-monitor-admin.php:794
+msgid "Subject (ST): "
+msgstr "Tárgy (ST): "
+
+#: class/class-mainwp-ssl-monitor-admin.php:795
+msgid "Subject (L): "
+msgstr "Tárgy (L): "
+
+#: class/class-mainwp-ssl-monitor-admin.php:796
+msgid "Subject (O): "
+msgstr "Tárgy (O): "
+
+#: class/class-mainwp-ssl-monitor-admin.php:797
+msgid "Subject (CN): "
+msgstr "Tárgy (CN): "
+
+#: class/class-mainwp-ssl-monitor-admin.php:798
+msgid "Valid From: "
+msgstr "Érvényes ettől: "
+
+#: class/class-mainwp-ssl-monitor-admin.php:799
+msgid "Valid To: "
+msgstr "Érvényes eddig: "
+
+#: class/class-mainwp-ssl-monitor-admin.php:800
+msgid "Subject Alternative Name: "
+msgstr "Tárgy alternatív neve: "
+
+#: class/class-mainwp-ssl-monitor-admin.php:801
+msgid "Hash: "
+msgstr "Hash: "
+
+#: class/class-mainwp-ssl-monitor-admin.php:802
+msgid "Version: "
+msgstr "Verzió: "
+
+#: class/class-mainwp-ssl-monitor-admin.php:803
+msgid "Serial Number: "
+msgstr "Sorozatszám: "
+
+#: class/class-mainwp-ssl-monitor-admin.php:804
+msgid "Serial Number Hex: "
+msgstr "Sorozatszám hexadecimális alakban: "
+
+#: class/class-mainwp-ssl-monitor-admin.php:805
+msgid "Signature Type SN: "
+msgstr "Aláírás típusa SN: "
+
+#: class/class-mainwp-ssl-monitor-admin.php:806
+msgid "Signature Type LN: "
+msgstr "Aláírás típusa LN: "
+
+#: class/class-mainwp-ssl-monitor-admin.php:807
+msgid "Signature Type NID: "
+msgstr "Aláírás típusa NID: "
+
+#: class/class-mainwp-ssl-monitor-admin.php:810
+msgid "SSL data not found."
+msgstr "SSL-adatok nem találhatók."
+
+#: class/class-mainwp-ssl-monitor-ajax.php:98
+#: class/class-mainwp-ssl-monitor-ajax.php:177
+#: class/class-mainwp-ssl-monitor-utility.php:570
+msgid "Invalid request. Please, try again."
+msgstr "Érvénytelen kérés. Kérlek, próbáld újra."
+
+#: class/class-mainwp-ssl-monitor-ajax.php:292
+msgid "Invalid site ID. Please reload and try again."
+msgstr "Hibás webhely-ID. Töltsd újra az oldalt, és próbáld meg újra."
+
+#: class/class-mainwp-ssl-monitor-ajax.php:295
+msgid "HTTP site. SSL Certificate not detected."
+msgstr "HTTP-webhely. SSL-tanúsítvány nem észlelhető."
+
+#: class/class-mainwp-ssl-monitor-ajax.php:388
+#: class/class-mainwp-ssl-monitor-hooks.php:393
+#: pages/class-mainwp-ssl-monitor-dashboard.php:171
+msgid "Not checked"
+msgstr "Nincs ellenőrizve"
+
+#: class/class-mainwp-ssl-monitor-ajax.php:390
+#, php-format
+msgid "Expires in %s day(s)."
+msgstr "Lejár %s nap múlva."
+
+#: class/class-mainwp-ssl-monitor-ajax.php:394
+#: pages/class-mainwp-ssl-monitor-dashboard.php:166
+msgid "Go to the site overview."
+msgstr "Ugrás a webhely áttekintésére."
+
+#: class/class-mainwp-ssl-monitor-hooks.php:274
+msgid "How to use SSL Monitor Add-on"
+msgstr "Az SSL Monitor kiegészítő használata"
+
+#: class/class-mainwp-ssl-monitor-hooks.php:359
+#: class/class-mainwp-ssl-monitor-utility.php:508
+#: mainwp-ssl-monitor-extension.php:178
+msgid "SSL Monitor"
+msgstr "SSL Monitor"
+
+#: class/class-mainwp-ssl-monitor-hooks.php:378
+msgid "SSL Status"
+msgstr "SSL-állapot"
+
+#: class/class-mainwp-ssl-monitor-hooks.php:398
+#: class/class-mainwp-ssl-monitor-hooks.php:599
+msgid "Valid"
+msgstr "Érvényes"
+
+#: class/class-mainwp-ssl-monitor-hooks.php:401
+#: class/class-mainwp-ssl-monitor-hooks.php:602
+msgid "Expired"
+msgstr "Lejárt"
+
+#: class/class-mainwp-ssl-monitor-hooks.php:453
+#: class/class-mainwp-ssl-monitor-hooks.php:496
+msgid "SSL Monitor Notification Email"
+msgstr "SSL Monitor értesítési e-mail"
+
+#: class/class-mainwp-ssl-monitor-hooks.php:552
+msgid "This template has been overridden and can be found in:"
+msgstr "Ezt a sablonmintát felülírták, és itt található:"
+
+#: class/class-mainwp-ssl-monitor-hooks.php:552
+msgid "To overwrite and edit this email template copy:"
+msgstr "Az e-mail-sablon felülírásához és szerkesztéséhez másold le ezt:"
+
+#: class/class-mainwp-ssl-monitor-hooks.php:552
+msgid "to the folder:"
+msgstr "ebbe a mappába:"
+
+#: class/class-mainwp-ssl-monitor-schedule.php:142
+msgid "MainWP SSL Monitor Continue Interval"
+msgstr "MainWP SSL Monitor folytatási intervalluma"
+
+#: class/class-mainwp-ssl-monitor-schedule.php:149
+msgid "Once Every 5 Minutes"
+msgstr "5 percenként egyszer"
+
+#: class/class-mainwp-ssl-monitor-schedule.php:498
+msgid "Start SSL Certificate check"
+msgstr "SSL-tanúsítvány ellenőrzésének indítása"
+
+#: class/class-mainwp-ssl-monitor-schedule.php:500
+msgid "Once a day"
+msgstr "Naponta egyszer"
+
+#: class/class-mainwp-ssl-monitor-utility.php:180
+msgid "year"
+msgstr "év"
+
+#: class/class-mainwp-ssl-monitor-utility.php:181
+msgid "month"
+msgstr "hónap"
+
+#: class/class-mainwp-ssl-monitor-utility.php:182
+msgid "week"
+msgstr "hét"
+
+#: class/class-mainwp-ssl-monitor-utility.php:183
+msgid "day"
+msgstr "nap"
+
+#: class/class-mainwp-ssl-monitor-utility.php:184
+msgid "hour"
+msgstr "óra"
+
+#: class/class-mainwp-ssl-monitor-utility.php:185
+msgid "minute"
+msgstr "perc"
+
+#: class/class-mainwp-ssl-monitor-utility.php:186
+msgid "second"
+msgstr "másodperc"
+
+#: class/class-mainwp-ssl-monitor-utility.php:195
+msgid "s ago"
+msgstr " ezelőtt"
+
+#: class/class-mainwp-ssl-monitor-utility.php:195
+msgid "ago"
+msgstr "ezelőtt"
+
+#: class/class-mainwp-ssl-monitor-utility.php:274
+msgid "Invalid site URL."
+msgstr "Érvénytelen webhely-URL."
+
+#. translators: 1: Host name. 2: Error message.
+#: class/class-mainwp-ssl-monitor-utility.php:294
+#, php-format
+msgid "Unable to connect to %1$s: %2$s"
+msgstr "Nem sikerült csatlakozni ehhez: %1$s: %2$s"
+
+#: class/class-mainwp-ssl-monitor-utility.php:296
+msgid "unknown SSL connection error"
+msgstr "Ismeretlen SSL-kapcsolati hiba"
+
+#: class/class-mainwp-ssl-monitor-utility.php:305
+msgid "Unable to read SSL certificate from the site."
+msgstr "Nem sikerült beolvasni a webhely SSL-tanúsítványát."
+
+#: class/class-mainwp-ssl-monitor-utility.php:310
+msgid "Unable to parse SSL certificate from the site."
+msgstr "Nem sikerült feldolgozni a webhely SSL-tanúsítványát."
+
+#: class/class-mainwp-ssl-monitor-utility.php:314
+msgid "Unable to save SSL certificate information."
+msgstr "Nem sikerült menteni az SSL-tanúsítvány adatait."
+
+#: class/class-mainwp-ssl-monitor-utility.php:317
+msgid " SSL check started."
+msgstr " SSL-ellenőrzés elindítva."
+
+#: class/class-mainwp-ssl-monitor-utility.php:411
+msgid "Once a Day"
+msgstr "Naponta egyszer"
+
+#: class/class-mainwp-ssl-monitor-utility.php:412
+msgid "Once a Week"
+msgstr "Hetente egyszer"
+
+#: class/class-mainwp-ssl-monitor-utility.php:413
+msgid "Twice a Month"
+msgstr "Havonta kétszer"
+
+#: class/class-mainwp-ssl-monitor-utility.php:414
+msgid "Once Monthly"
+msgstr "Havonta egyszer"
+
+#: class/class-mainwp-ssl-monitor-utility.php:509
+msgid "Last Check"
+msgstr "Utolsó ellenőrzés"
+
+#: class/class-mainwp-ssl-monitor-utility.php:510
+msgid "Common Name"
+msgstr "Közös név"
+
+#: class/class-mainwp-ssl-monitor-utility.php:514
+msgid "Expires"
+msgstr "Lejár"
+
+#: class/class-mainwp-ssl-monitor-utility.php:515
+msgid "URL"
+msgstr "URL"
+
+#: class/class-mainwp-ssl-monitor-utility.php:516
+msgid "Site"
+msgstr "Webhely"
+
+#: class/class-mainwp-ssl-monitor-utility.php:517
+msgid "Site Title"
+msgstr "Webhely címe"
+
+#: class/class-mainwp-ssl-monitor-utility.php:518
+#: pages/class-mainwp-ssl-monitor-dashboard.php:80
+msgid "Go to WP Admin"
+msgstr "Ugrás a WP Admin felületre"
+
+#: class/class-mainwp-ssl-monitor-utility.php:519
+msgid "Loading..."
+msgstr "Betöltés..."
+
+#: class/class-mainwp-ssl-monitor-wp-cli-command.php:87
+#: class/class-mainwp-ssl-monitor-wp-cli-command.php:110
+#: class/class-mainwp-ssl-monitor-wp-cli-command.php:198
+#: includes/rest-api/version1/class-mainwp-ssl-monitor-rest-api-v1.php:265
+#: includes/rest-api/version2/class-mainwp-ssl-monitor-rest-controller.php:213
+#: pages/class-mainwp-ssl-monitor-dashboard.php:464
+msgid "Sites not found."
+msgstr "Nem találhatók webhelyek."
+
+#: class/class-mainwp-ssl-monitor-wp-cli-command.php:103
+#: class/class-mainwp-ssl-monitor-wp-cli-command.php:126
+#: includes/rest-api/version1/class-mainwp-ssl-monitor-rest-api-v1.php:220
+#: includes/rest-api/version2/class-mainwp-ssl-monitor-rest-controller.php:193
+msgid "An undefined error occured."
+msgstr "Meghatározatlan hiba történt."
+
+#. translators: add link dashboard plugin.
+#: mainwp-ssl-monitor-extension.php:260
+#, php-format
+msgid ""
+"MainWP SSL Monitor Extension requires %1$sMainWP Dashboard Plugin%2$s to be "
+"activated in order to work. Please install and activate %3$sMainWP Dashboard"
+" Plugin%4$s first."
+msgstr "A MainWP SSL Monitor kiterjesztés működéséhez be kell kapcsolni a %1$sMainWP vezérlőpult-bővítményt%2$s. Először telepítsd és kapcsold be a %3$sMainWP vezérlőpult-bővítményt%4$s."
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:78
+msgid "Bulk actions"
+msgstr "Csoportos műveletek"
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:79
+#: pages/class-mainwp-ssl-monitor-dashboard.php:167
+msgid "Check SSL Certificate"
+msgstr "SSL-tanúsítvány ellenőrzése"
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:81
+msgid "Go to Site"
+msgstr "Ugrás a webhelyre"
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:83
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:86
+msgid "Check SSL Certificate on All Sites"
+msgstr "SSL-tanúsítvány ellenőrzése minden webhelyen"
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:165
+msgid "Jump to the WP Admin."
+msgstr "Ugrás a WP Admin felületre."
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:169
+msgid "Overview"
+msgstr "Áttekintés"
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:170
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:241
+#, php-format
+msgid "%s days"
+msgstr "%s nap"
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:313
+msgid "Actions"
+msgstr "Műveletek"
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:369
+msgid ""
+"Returns this page to the state it was in when installed. The feature also "
+"restores any column you have moved through the drag and drop feature on the "
+"page."
+msgstr "Visszaállítja ezt az oldalt a telepítéskori állapotra. A funkció az oldalon a fogd és vidd funkcióval áthelyezett oszlopokat is visszaállítja."
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:369
+msgid "Reset Page"
+msgstr "Oldal alaphelyzetbe állítása"
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:372
+#: pages/class-mainwp-ssl-monitor-setting.php:186
+msgid "Save Settings"
+msgstr "Beállítások mentése"
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:380
+msgid "Page Settings"
+msgstr "Oldalbeállítások"
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:382
+msgid ""
+"Would you like to turn on home screen previews? This function queries "
+"WordPress.com servers to capture a screenshot of your site the same way "
+"comments shows you preview of URLs."
+msgstr "Bekapcsolod a kezdőképernyő előnézeteit? Ez a funkció a WordPress.com szervereit kérdezi le, hogy képernyőképet készítsen a webhelyedről, ugyanúgy, ahogy a hozzászólások megmutatják az URL-ek előnézetét."
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:385
+msgid "Yes"
+msgstr "Igen"
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:386
+msgid "No"
+msgstr "Nem"
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:438
+msgid "SSL Certificate Check"
+msgstr "SSL-tanúsítvány-ellenőrzés"
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:450
+msgid "Go to the site Overview page."
+msgstr "Ugrás a webhely áttekintési oldalára."
+
+#: pages/class-mainwp-ssl-monitor-dashboard.php:451
+msgid "Pending. Please wait..."
+msgstr "Függőben. Kérlek, várj..."
+
+#: pages/class-mainwp-ssl-monitor-setting.php:102
+msgid "Settings saved successfully."
+msgstr "A beállítások sikeresen elmentve."
+
+#: pages/class-mainwp-ssl-monitor-setting.php:105
+msgid "An error occurred while saving settings. Please try again."
+msgstr "Hiba történt a beállítások mentésekor. Próbáld újra."
+
+#: pages/class-mainwp-ssl-monitor-setting.php:110
+#, php-format
+msgid ""
+"Manage the SSL Monitor settings. For detailed information, review %1$shelp "
+"documentation%2$s."
+msgstr "Kezeld az SSL Monitor beállításait. Részletes információkért tekintsd meg a %1$ssúgódokumentációt%2$s."
+
+#: pages/class-mainwp-ssl-monitor-setting.php:118
+msgid "Individual Site SSL  Monitor Settings"
+msgstr "Webhelyenkénti SSL Monitor-beállítások"
+
+#: pages/class-mainwp-ssl-monitor-setting.php:119
+msgid "Customize SSL monitoring settings on a per-site basis."
+msgstr "Az SSL-figyelés beállításainak testreszabása webhelyenként."
+
+#: pages/class-mainwp-ssl-monitor-setting.php:123
+msgid "Overwrite general settings"
+msgstr "Általános beállítások felülírása"
+
+#: pages/class-mainwp-ssl-monitor-setting.php:124
+msgid "Enable to overwrite the general settings for this child site."
+msgstr "Engedélyezd az általános beállítások felülírását ennél a gyermek webhelynél."
+
+#: pages/class-mainwp-ssl-monitor-setting.php:137
+msgid "SSL Monitor Settings"
+msgstr "SSL Monitor beállításai"
+
+#: pages/class-mainwp-ssl-monitor-setting.php:138
+msgid ""
+"Define when you'll receive email alerts before an SSL certificate expires."
+msgstr "Add meg, hogy mikor kapj e-mailes értesítést az SSL-tanúsítvány lejárta előtt."
+
+#: pages/class-mainwp-ssl-monitor-setting.php:142
+msgid "Notifications threshold (days)"
+msgstr "Értesítési küszöb (nap)"
+
+#: pages/class-mainwp-ssl-monitor-setting.php:143
+msgid ""
+"Set the SSL Certificate expiration threshold for the email notification."
+msgstr "Állítsd be az SSL-tanúsítvány lejárati küszöbét az e-mailes értesítéshez."
+
+#: pages/class-mainwp-ssl-monitor-setting.php:152
+msgid "Automated Checks"
+msgstr "Automatikus ellenőrzések"
+
+#: pages/class-mainwp-ssl-monitor-setting.php:153
+msgid ""
+"Control whether SSL checks run automatically and how frequently they are "
+"performed."
+msgstr "Állítsd be, hogy az SSL-ellenőrzések automatikusan fussanak-e, és milyen gyakran történjenek."
+
+#: pages/class-mainwp-ssl-monitor-setting.php:157
+msgid "Automatically check SSL certificates"
+msgstr "SSL-tanúsítványok automatikus ellenőrzése"
+
+#: pages/class-mainwp-ssl-monitor-setting.php:158
+msgid ""
+"Enable if you want the extension to run SSL certificate checks "
+"automatically."
+msgstr "Engedélyezd, ha azt szeretnéd, hogy a bővítmény automatikusan lefuttassa az SSL-tanúsítványok ellenőrzését."
+
+#: pages/class-mainwp-ssl-monitor-setting.php:163
+msgid "Automated SSL certificate checks frequency"
+msgstr "Automatikus SSL-tanúsítvány-ellenőrzések gyakorisága"
+
+#: pages/class-mainwp-ssl-monitor-setting.php:164
+msgid "Select automated SSL certificate checks frequency."
+msgstr "Válaszd ki az automatikus SSL-tanúsítvány-ellenőrzések gyakoriságát."
+
+#: templates/emails/mainwp-ssl-monitor-notification-email.php:56
+msgid " child site SSL Certificate is about to expire!"
+msgstr " A gyermekwebhely SSL-tanúsítványa hamarosan lejár!"
+
+#: templates/emails/mainwp-ssl-monitor-notification-email.php:61
+msgid "Click here"
+msgstr "Kattints ide"
+
+#: templates/emails/mainwp-ssl-monitor-notification-email.php:61
+msgid "to check your SSL Certificate info."
+msgstr "az SSL-tanúsítvány adatainak ellenőrzéséhez."
+
+#: templates/emails/mainwp-ssl-monitor-notification-email.php:70
+msgid "Powered by "
+msgstr "Működteti "

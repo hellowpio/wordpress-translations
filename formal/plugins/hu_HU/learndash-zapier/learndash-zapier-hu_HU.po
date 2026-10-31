@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: LearnDash LMS - Zapier Integration 2.3.1\n"
+"Project-Id-Version: LearnDash LMS - Zapier Integration 2.3.2\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T18:09:54+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,10 +18,10 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: LearnDash LMS - Zapier Integration\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 2.3.1\n"
+"X-Plugin-Version: 2.3.2\n"
 
 #. Plugin Name of the plugin
-#: learndash_zapier.php
+#: learndash_zapier.php src/App/Admin/Translation.php:51
 msgid "LearnDash LMS - Zapier Integration"
 msgstr "LearnDash LMS - Zapier integráció"
 
@@ -44,15 +44,15 @@ msgid "LearnDash"
 msgstr "LearnDash"
 
 #: includes/admin/class-settings-page.php:13
-#: includes/admin/class-settings-section.php:18
+#: includes/admin/class-settings-section.php:30
 msgid "Settings"
 msgstr "Beállítások"
 
-#: includes/admin/class-settings-section.php:45
+#: includes/admin/class-settings-section.php:57
 msgid "API Key"
 msgstr "API-kulcs"
 
-#: includes/admin/class-settings-section.php:46
+#: includes/admin/class-settings-section.php:58
 msgid ""
 "API key that needs to be entered to your Zapier account authentication "
 "settings when creating a new zap."
@@ -86,11 +86,11 @@ msgstr "A felhasználót nem sikerült létrehozni. Hiba: %s"
 msgid "User account with specified email address does not exist."
 msgstr "A megadott e-mail-címmel nem létezik felhasználói fiók."
 
-#: includes/class-translations-ld-zapier.php:16
+#: includes/class-translations-ld-zapier.php:28
 msgid "LearnDash Samcart"
 msgstr "LearnDash Samcart"
 
-#: learndash_zapier.php:50
+#: includes/deprecated/2.3.2/functions.php:38
 msgid ""
 "LearnDash LMS - Zapier Integration Add-on requires the following plugin(s) "
 "to be active:"
@@ -98,43 +98,49 @@ msgstr ""
 "A LearnDash LMS - Zapier integrációs kiegészítő megköveteli, hogy a "
 "következő bővítmény(ek) aktívak legyenek:"
 
-#: learndash_zapier.php:106
+#: learndash_zapier.php:64
+msgid ""
+"LearnDash LMS - Zapier Integration requires the following plugin(s) to be "
+"active:"
+msgstr "A LearnDash LMS - Zapier integráció működéséhez az alábbi bővítmény(ek)nek aktívnak kell lenniük:"
+
+#: learndash_zapier.php:175
 msgid "Zapier Triggers"
 msgstr "Zapier triggerek"
 
-#: learndash_zapier.php:107
+#: learndash_zapier.php:176
 msgid "Zapier Trigger"
 msgstr "Zapier trigger"
 
-#: learndash_zapier.php:108 learndash_zapier.php:109
+#: learndash_zapier.php:177 learndash_zapier.php:178
 msgid "Add Trigger"
-msgstr "Trigger hozzáadása"
+msgstr "Eseményindító hozzáadása"
 
-#: learndash_zapier.php:110 learndash_zapier.php:111
+#: learndash_zapier.php:179 learndash_zapier.php:180
 msgid "Edit Trigger"
 msgstr "Trigger szerkesztése"
 
-#: learndash_zapier.php:112
+#: learndash_zapier.php:181
 msgid "Trigger"
 msgstr "Trigger"
 
-#: learndash_zapier.php:113 learndash_zapier.php:114
+#: learndash_zapier.php:182 learndash_zapier.php:183
 msgid "View Trigger"
 msgstr "Trigger megtekintése"
 
-#: learndash_zapier.php:115
+#: learndash_zapier.php:184
 msgid "Search Trigger"
 msgstr "Trigger keresése"
 
-#: learndash_zapier.php:116
+#: learndash_zapier.php:185
 msgid "No Trigger found"
 msgstr "Nem található trigger"
 
-#: learndash_zapier.php:117
+#: learndash_zapier.php:186
 msgid "No trigger found in Trash"
 msgstr "A Lomtárban nem található trigger"
 
-#: learndash_zapier.php:159
+#: learndash_zapier.php:232
 msgid ""
 "Triggers on this page are used for legacy webhook integration and not for "
 "LearnDash public Zapier app."
@@ -142,108 +148,104 @@ msgstr ""
 "Az ezen az oldalon található triggerek a régi webhook-integrációhoz "
 "használatosak, és nem a LearnDash nyilvános Zapier alkalmazásához."
 
-#: learndash_zapier.php:175
+#: learndash_zapier.php:249
 msgid "Zapier"
 msgstr "Zapier"
 
-#: learndash_zapier.php:186
+#: learndash_zapier.php:261
 msgid "Example Templates"
 msgstr "Példasablonok"
 
-#: learndash_zapier.php:226 learndash_zapier.php:247 learndash_zapier.php:269
+#: learndash_zapier.php:300 learndash_zapier.php:320 learndash_zapier.php:340
 msgid "Triggers (Webhooks)"
 msgstr "Triggerek (webhookok)"
 
-#: learndash_zapier.php:286
+#: learndash_zapier.php:358
 msgid "Trigger Settings"
 msgstr "Trigger beállításai"
 
-#: learndash_zapier.php:301
+#: learndash_zapier.php:375
 msgid "Trigger Event"
 msgstr "Kiváltó esemény"
 
-#: learndash_zapier.php:304
+#: learndash_zapier.php:378
 msgid "Select"
 msgstr "Válasszon"
 
-#: learndash_zapier.php:305
+#: learndash_zapier.php:379
 msgid "Enrolled into course"
 msgstr "Beiratkozás a kurzusra"
 
-#: learndash_zapier.php:306
+#: learndash_zapier.php:380
 msgid "Course completed"
-msgstr "Kurzus befejezve"
+msgstr "Kurzus teljesítve"
 
-#: learndash_zapier.php:307
+#: learndash_zapier.php:381
 msgid "Lesson completed"
 msgstr "Lecke befejezve"
 
-#: learndash_zapier.php:308
+#: learndash_zapier.php:382
 msgid "Topic completed"
 msgstr "Téma befejezve"
 
-#: learndash_zapier.php:309
+#: learndash_zapier.php:383
 msgid "Quiz passed"
 msgstr "Kvíz sikeresen teljesítve"
 
-#: learndash_zapier.php:310
+#: learndash_zapier.php:384
 msgid "Quiz failed"
-msgstr "Kvíz sikertelen"
+msgstr "Sikertelen kvíz"
 
-#: learndash_zapier.php:311
+#: learndash_zapier.php:385
 msgid "Quiz completed"
 msgstr "Kvíz befejezve"
 
-#: learndash_zapier.php:312
+#: learndash_zapier.php:386
 msgid "Essay Submitted"
 msgstr "Esszé beküldve"
 
-#: learndash_zapier.php:315
+#: learndash_zapier.php:389
 msgid ""
 "A trigger will be sent on the selected event to the URL configured below."
-msgstr ""
-"A kiválasztott esemény bekövetkezésekor egy trigger kerül elküldésre az "
-"alább megadott URL-re."
+msgstr "A kiválasztott esemény bekövetkezésekor egy trigger érkezik az alább megadott URL-re."
 
-#: learndash_zapier.php:322
+#: learndash_zapier.php:396
 #, php-format
 msgid "Trigger %s"
 msgstr "Trigger %s"
 
-#: learndash_zapier.php:328
+#: learndash_zapier.php:402
 #, php-format
 msgid "%s that you want to associate with the trigger."
 msgstr "%s, amelyet a triggerhez társítani szeretne."
 
-#: learndash_zapier.php:334
+#: learndash_zapier.php:408
 msgid "Webhook URL"
 msgstr "Webhook URL"
 
-#: learndash_zapier.php:336
+#: learndash_zapier.php:410
 msgid ""
 "This is the url of your Zapier webhook, provided by Zapier when creating a "
 "new Zap."
-msgstr ""
-"Ez a Zapier webhook url-je, amelyet a Zapier biztosít egy új Zap "
-"létrehozásakor."
+msgstr "Ez a Zapier-webhook URL-je, amelyet a Zapier biztosít egy új Zap létrehozásakor."
 
-#: learndash_zapier.php:691
+#: learndash_zapier.php:771
 msgid "Courses"
 msgstr "Kurzusok"
 
-#: learndash_zapier.php:697
+#: learndash_zapier.php:777
 msgid "Lessons"
 msgstr "Leckék"
 
-#: learndash_zapier.php:703
+#: learndash_zapier.php:783
 msgid "Topics"
 msgstr "Témák"
 
-#: learndash_zapier.php:709
+#: learndash_zapier.php:789
 msgid "Quizzes"
 msgstr "Kvízek"
 
-#: learndash_zapier.php:718
+#: learndash_zapier.php:798
 #, php-format
 msgid "All %s"
 msgstr "Összes %s"

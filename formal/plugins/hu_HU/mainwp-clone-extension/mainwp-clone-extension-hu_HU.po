@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: MainWP Clone Extension 5.0.1\n"
+"Project-Id-Version: MainWP Clone Extension 5.1\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T18:09:55+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: MainWP Clone Extension\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 5.0.1\n"
+"X-Plugin-Version: 5.1\n"
 
 #. Plugin Name of the plugin
 #: mainwp-clone-extension.php
@@ -36,20 +36,188 @@ msgstr "https://mainwp.com"
 msgid ""
 "MainWP Clone Extension is an extension for the MainWP plugin that enables "
 "you to clone your child sites with no technical knowledge required."
-msgstr ""
-"A MainWP Clone Extension a MainWP bővítményhez készült kiegészítő, amely "
-"lehetővé teszi a gyermek webhelyek klónozását technikai ismeretek nélkül."
+msgstr "A MainWP Clone Extension a MainWP bővítményhez készült kiterjesztés, amely lehetővé teszi a gyermekwebhelyek technikai ismeretek nélkül történő klónozását."
 
 #. Author of the plugin
 #: mainwp-clone-extension.php
 msgid "MainWP"
 msgstr "MainWP"
 
-#: class/MainWPCloneSite.class.php:62
+#: class/MainWPCloneAbilities.class.php:49
+msgid "MainWP Clone"
+msgstr "MainWP Clone"
+
+#: class/MainWPCloneAbilities.class.php:50
+msgid "Abilities for reading and managing bounded MainWP Clone policy state."
+msgstr "A korlátozott MainWP Clone-szabályzat állapotának beolvasására és kezelésére szolgáló képességek."
+
+#: class/MainWPCloneAbilities.class.php:67
+msgid "Get MainWP Site Clone Policy Status"
+msgstr "A MainWP-webhely klónozási szabályzata állapotának lekérése"
+
+#: class/MainWPCloneAbilities.class.php:68
+msgid ""
+"Read the current Dashboard-stored Clone policy for one authorized MainWP "
+"site without synchronizing or starting a clone."
+msgstr "Egy engedélyezett MainWP-webhely aktuális, vezérlőpulton tárolt Clone-szabályzatának beolvasása szinkronizálás vagy klónozás indítása nélkül."
+
+#: class/MainWPCloneAbilities.class.php:88
+msgid "Set MainWP Clone Feature Enabled"
+msgstr "A MainWP Clone funkció bekapcsolása"
+
+#: class/MainWPCloneAbilities.class.php:89
+msgid ""
+"Enable or disable Dashboard-stored Clone policy; affected Children receive "
+"it only on a later successful individual sync."
+msgstr "A vezérlőpulton tárolt Clone-szabályzat bekapcsolása vagy kikapcsolása; az érintett gyermekwebhelyek csak egy későbbi, sikeres egyedi szinkronizáláskor kapják meg."
+
+#: class/MainWPCloneAbilities.class.php:101
+msgid "Set MainWP Site Clone Participation"
+msgstr "A MainWP-webhely klónozásban való részvételének beállítása"
+
+#: class/MainWPCloneAbilities.class.php:102
+msgid ""
+"Allow or disallow one authorized site in Dashboard-stored Clone policy "
+"without synchronizing or starting a clone."
+msgstr "Egy engedélyezett webhely részvételének engedélyezése vagy letiltása a vezérlőpulton tárolt Clone-szabályzatban szinkronizálás vagy klónozás indítása nélkül."
+
+#: class/MainWPCloneAbilities.class.php:348
+msgid "You do not have permission to view Clone policy for this site."
+msgstr "Nincs jogosultsága az adott webhely Clone-szabályzatának megtekintéséhez."
+
+#: class/MainWPCloneAbilities.class.php:361
+msgid "You do not have permission to manage this Clone policy."
+msgstr "Nincs jogosultsága ennek a Clone-szabályzatnak a kezeléséhez."
+
+#: class/MainWPCloneAbilities.class.php:374
+msgid "Site whose Dashboard Clone policy will be read."
+msgstr "Az a webhely, amelynek vezérlőpulton tárolt Clone-szabályzatát beolvassa."
+
+#: class/MainWPCloneAbilities.class.php:380
+msgid ""
+"Positive MainWP site ID as an integer or canonical decimal string for GET "
+"transport."
+msgstr "Pozitív MainWP-webhely-ID egész számként vagy kanonikus decimális karakterláncként a GET-átvitelhez."
+
+#: class/MainWPCloneAbilities.class.php:396
+msgid "Dashboard-stored Clone policy for the authorized site."
+msgstr "Az engedélyezett webhely vezérlőpulton tárolt Clone-szabályzata."
+
+#: class/MainWPCloneAbilities.class.php:401
+msgid "Authorized MainWP destination site ID."
+msgstr "Az engedélyezett MainWP-célwebhely ID-ja."
+
+#: class/MainWPCloneAbilities.class.php:406
+msgid "Identifies current Dashboard-stored policy as the source."
+msgstr "Az aktuális, vezérlőpulton tárolt szabályzatot jelöli meg forrásként."
+
+#: class/MainWPCloneAbilities.class.php:410
+msgid "Whether the current Dashboard Clone policy is globally enabled."
+msgstr "Annak jelzése, hogy az aktuális vezérlőpulton tárolt Clone-szabályzat globálisan be van-e kapcsolva."
+
+#: class/MainWPCloneAbilities.class.php:414
+msgid ""
+"Whether the current Dashboard policy excludes this destination from "
+"receiving Clone choices on a future successful sync."
+msgstr "Annak jelzése, hogy az aktuális vezérlőpulton tárolt szabályzat kizárja-e ezt a célwebhelyet abból, hogy egy jövőbeli sikeres szinkronizáláskor Clone-lehetőségeket kapjon."
+
+#: class/MainWPCloneAbilities.class.php:418
+msgid ""
+"Whether Dashboard policy permits this destination to receive Clone choices "
+"on a future successful sync; this is not clone readiness or applied Child "
+"state."
+msgstr "Annak jelzése, hogy a vezérlőpulton tárolt szabályzat engedélyezi-e, hogy ez a célwebhely egy jövőbeli sikeres szinkronizáláskor Clone-lehetőségeket kapjon; ez nem jelenti azt, hogy a klónozásra kész, vagy hogy az állapot érvényesült a gyermekwebhelyen."
+
+#: class/MainWPCloneAbilities.class.php:423
+msgid "Always unknown because this read performs no sync or Child request."
+msgstr "Mindig ismeretlen, mert ez a lekérés nem végez szinkronizálást, és nem küld kérést a gyermekwebhelynek."
+
+#: class/MainWPCloneAbilities.class.php:456
+msgid "New Dashboard-wide Clone enablement policy."
+msgstr "Új, a teljes vezérlőpultra kiterjedő Clone-bekapcsolási szabályzat."
+
+#: class/MainWPCloneAbilities.class.php:460
+msgid "True to enable Clone in Dashboard policy; false to disable it."
+msgstr "Igaz érték a Clone vezérlőpult-szabályzatban történő bekapcsolásához; hamis érték a kikapcsolásához."
+
+#: class/MainWPCloneAbilities.class.php:476
+msgid "Verified persisted Dashboard Clone enablement result."
+msgstr "A mentett Clone-bekapcsolás ellenőrzött eredménye a vezérlőpulton."
+
+#: class/MainWPCloneAbilities.class.php:481
+#: class/MainWPCloneAbilities.class.php:543
+msgid "Whether persisted policy bytes changed."
+msgstr "Megváltoztak-e a mentett szabályzat bájtjai."
+
+#: class/MainWPCloneAbilities.class.php:486
+msgid "Provenance of the returned desired policy."
+msgstr "A visszaadott kívánt szabályzat eredete."
+
+#: class/MainWPCloneAbilities.class.php:490
+msgid "Verified persisted global Clone policy."
+msgstr "Ellenőrzött, mentett globális Clone-szabályzat."
+
+#: class/MainWPCloneAbilities.class.php:495
+msgid "Child application is not performed or read by this Ability."
+msgstr "Ezt a képességet használva a gyermekwebhelyen nem történik alkalmazás vagy lekérés."
+
+#: class/MainWPCloneAbilities.class.php:511
+msgid "One site's desired participation in Dashboard Clone policy."
+msgstr "Egy webhely kívánt részvétele a vezérlőpult Clone-szabályzatában."
+
+#: class/MainWPCloneAbilities.class.php:517
+msgid "Canonical positive MainWP site ID."
+msgstr "Kanonikus, pozitív MainWP-webhely-ID."
+
+#: class/MainWPCloneAbilities.class.php:521
+msgid "True to remove the site from the disallowed set; false to add it."
+msgstr "Igaz érték a webhely eltávolításához a tiltottak listájából; hamis érték a hozzáadásához."
+
+#: class/MainWPCloneAbilities.class.php:536
+msgid "Verified persisted per-site Clone policy result."
+msgstr "A mentett, webhelyenkénti Clone-szabályzat ellenőrzött eredménye."
+
+#: class/MainWPCloneOperations.class.php:254
+msgid "The Clone policy changed concurrently. Retry the request."
+msgstr "A Clone-szabályzat időközben megváltozott. Kérjük, próbálja meg újra a kérést."
+
+#: class/MainWPCloneOperations.class.php:260
+msgid "The Clone policy could not be persisted."
+msgstr "A Clone-szabályzat mentése nem sikerült."
+
+#: class/MainWPCloneOperations.class.php:273
+msgid "A positive integer site ID is required."
+msgstr "Pozitív egész számú webhely-ID megadása kötelező."
+
+#: class/MainWPCloneOperations.class.php:286
+msgid "The enabled field must be a JSON boolean."
+msgstr "Az enabled mező értékének JSON-logikai értéknek kell lennie."
+
+#: class/MainWPCloneOperations.class.php:299
+msgid "A positive site ID and a JSON boolean allowed field are required."
+msgstr "Pozitív webhely-ID és JSON logikai értékű „engedélyezett” mező megadása kötelező."
+
+#: class/MainWPCloneOperations.class.php:312
+msgid "The requested MainWP site was not found."
+msgstr "A kért MainWP-webhely nem található."
+
+#: class/MainWPCloneSite.class.php:144
 msgid "Enable the Clone feature"
 msgstr "A klónozás funkció engedélyezése"
 
-#: class/MainWPCloneSite.class.php:72
+#: class/MainWPCloneSite.class.php:157
+msgid ""
+"The saved Clone site policy is not a site list, so every site below is shown"
+" as allowed. Saving the selection replaces the unreadable policy."
+msgstr "A mentett Clone-webhelyszabályzat nem webhelylista, ezért az alábbi webhelyek mindegyike engedélyezettként jelenik meg. A kijelölés mentése felülírja a nem olvasható szabályzatot."
+
+#: class/MainWPCloneSite.class.php:159
+msgid ""
+"The saved Clone site policy or visible-site list could not be read "
+"completely. Selection controls are disabled until the data is available."
+msgstr "A mentett Clone-webhelyszabályzat vagy a látható webhelyek listája nem olvasható be teljesen. A kijelölési vezérlők mindaddig ki vannak kapcsolva, amíg az adatok elérhetővé nem válnak."
+
+#: class/MainWPCloneSite.class.php:169
 msgid ""
 "Settings saved successfully. Please resync your sites to apply these "
 "changes."
@@ -57,43 +225,49 @@ msgstr ""
 "A beállítások sikeresen mentve. Kérjük, szinkronizálja újra webhelyeit ezen "
 "módosítások alkalmazásához."
 
-#: class/MainWPCloneSite.class.php:81
+#: class/MainWPCloneSite.class.php:176
+msgid "Clone setting could not be saved. Please try again."
+msgstr "A Clone beállítás mentése nem sikerült. Kérjük, próbálja meg újra."
+
+#: class/MainWPCloneSite.class.php:185
 msgid ""
 "Selection updated successfully. Please resync your sites to apply these "
 "changes."
-msgstr ""
-"A kiválasztás sikeresen frissítve. Kérjük, szinkronizálja újra webhelyeit "
-"ezen módosítások alkalmazásához."
+msgstr "A kiválasztás sikeresen frissítve. Kérjük, szinkronizálja újra webhelyeit ezen módosítások alkalmazásához."
 
-#: class/MainWPCloneSite.class.php:91
+#: class/MainWPCloneSite.class.php:192
+msgid "Clone site selection could not be saved. Please try again."
+msgstr "A Clone-webhelyek kijelölésének mentése nem sikerült. Kérjük, próbálja meg újra."
+
+#: class/MainWPCloneSite.class.php:202
 msgid "Site"
 msgstr "Webhely"
 
-#: class/MainWPCloneSite.class.php:92
+#: class/MainWPCloneSite.class.php:203
 msgid "Size (approximate)"
 msgstr "Méret (hozzávetőleges)"
 
-#: class/MainWPCloneSite.class.php:109
+#: class/MainWPCloneSite.class.php:261
 msgid "Jump to the child site WP Admin"
-msgstr "Ugrás a gyermek webhely WP Admin felületére"
+msgstr "Ugrás a gyermekwebhely WP Admin felületére"
 
-#: class/MainWPCloneSite.class.php:111
+#: class/MainWPCloneSite.class.php:263
 msgid "Open the child site overview"
-msgstr "A gyermek webhely áttekintésének megnyitása"
+msgstr "A gyermekwebhely áttekintésének megnyitása"
 
-#: class/MainWPCloneSite.class.php:125
+#: class/MainWPCloneSite.class.php:277
 msgid "Save Selection"
 msgstr "Kiválasztás mentése"
 
-#: class/MainWPCloneSite.class.php:126
+#: class/MainWPCloneSite.class.php:278
 msgid "Allow All"
 msgstr "Összes engedélyezése"
 
-#: class/MainWPCloneSite.class.php:127
+#: class/MainWPCloneSite.class.php:279
 msgid "Disallow All"
 msgstr "Összes letiltása"
 
-#: mainwp-clone-extension.php:155
+#: mainwp-clone-extension.php:164
 #, php-format
 msgid ""
 "requires %1$sMainWP Dashboard Plugin%2$s to be activated in order to work. "

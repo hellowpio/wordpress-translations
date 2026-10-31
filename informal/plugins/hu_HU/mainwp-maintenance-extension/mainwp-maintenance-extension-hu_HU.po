@@ -1,0 +1,885 @@
+# Copyright (C) 2026 MainWP
+# This file is distributed under the same license as the MainWP Maintenance Extension plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: MainWP Maintenance Extension 5.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mainwp-maintenance-extension\n"
+"POT-Creation-Date: 2026-10-31T10:20:02+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: mainwp-maintenance-extension\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: MainWP Maintenance Extension\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 5.3\n"
+
+#. Plugin Name of the plugin
+#: mainwp-maintenance-extension.php
+msgid "MainWP Maintenance Extension"
+msgstr "MainWP Maintenance Extension"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: mainwp-maintenance-extension.php
+msgid "https://mainwp.com"
+msgstr "https://mainwp.com"
+
+#. Description of the plugin
+#: mainwp-maintenance-extension.php
+msgid ""
+"MainWP Maintenance Extension is MainWP Dashboard extension that clears "
+"unwanted entries from your child sites. You can delete post revisions, "
+"delete auto draft pots, delete trash posts, delete spam, pending and trash "
+"comments, delete unused tags and categories and optimize database tables on "
+"selected child sites."
+msgstr "A MainWP karbantartási kiterjesztés a MainWP vezérlőpultjának kiterjesztése, amellyel eltávolíthatod a nem kívánt elemeket az alwebhelyekről. Törölheted a bejegyzések változatait, az automatikus piszkozat-bejegyzéseket, a lomtárban lévő bejegyzéseket, a spamként megjelölt, függőben lévő és lomtárban lévő hozzászólásokat, a nem használt címkéket és kategóriákat, valamint optimalizálhatod az adatbázistáblákat a kiválasztott alwebhelyeken."
+
+#. Author of the plugin
+#: mainwp-maintenance-extension.php
+msgid "MainWP"
+msgstr "MainWP"
+
+#: class/mainwp-maintenance-abilities.class.php:33
+msgid "MainWP Maintenance"
+msgstr "MainWP-karbantartás"
+
+#: class/mainwp-maintenance-abilities.class.php:34
+msgid "Read maintenance schedules stored on this Dashboard."
+msgstr "Az ezen a vezérlőpulton tárolt karbantartási időzítések beolvasása."
+
+#: class/mainwp-maintenance-abilities.class.php:46
+msgid "List Maintenance Schedules"
+msgstr "Karbantartási időzítések listázása"
+
+#: class/mainwp-maintenance-abilities.class.php:46
+msgid "Get Maintenance Schedule"
+msgstr "Karbantartási időzítés lekérése"
+
+#: class/mainwp-maintenance-abilities.class.php:47
+msgid ""
+"List stored maintenance schedules, cleanup tasks, frequency, status and "
+"target counts. Does not run cleanup or contact child sites."
+msgstr "A tárolt karbantartási időzítések, tisztítási feladatok, gyakoriságok, állapotok és célwebhelyek darabszámának listázása. Nem futtat tisztítást és nem lép kapcsolatba az alwebhelyekkel."
+
+#: class/mainwp-maintenance-abilities.class.php:47
+msgid ""
+"Read one stored maintenance schedule with accessible target and failed "
+"sites. Does not run cleanup or contact child sites."
+msgstr "Egy tárolt karbantartási időzítés beolvasása az elérhető célwebhelyekkel és a sikertelen webhelyekkel. Nem futtat tisztítást és nem lép kapcsolatba az alwebhelyekkel."
+
+#: class/mainwp-maintenance-abilities.class.php:140
+msgid "Maintenance schedule not found."
+msgstr "A karbantartási időzítés nem található."
+
+#: class/mainwp-maintenance-abilities.class.php:353
+msgid "You do not have permission to access this ability."
+msgstr "Nincs engedélyed ennek a képességnek az elérésére."
+
+#: class/manage-maintenance.class.php:20
+msgid "Day"
+msgstr "Nap"
+
+#: class/manage-maintenance.class.php:21
+msgid "Week"
+msgstr "Hét"
+
+#: class/manage-maintenance.class.php:22
+msgid "Month"
+msgstr "Hónap"
+
+#: class/manage-maintenance.class.php:23
+msgid "Year"
+msgstr "Év"
+
+#: class/manage-maintenance.class.php:27
+msgid "Delete all post revisions"
+msgstr "Összes bejegyzésváltozat törlése"
+
+#: class/manage-maintenance.class.php:28
+msgid "Delete all auto draft posts"
+msgstr "Összes automatikus piszkozat-bejegyzés törlése"
+
+#: class/manage-maintenance.class.php:29
+msgid "Delete trash posts"
+msgstr "Lomtárban lévő bejegyzések törlése"
+
+#: class/manage-maintenance.class.php:30
+msgid "Delete spam comments"
+msgstr "Spamként megjelölt hozzászólások törlése"
+
+#: class/manage-maintenance.class.php:31
+msgid "Delete pending comments"
+msgstr "Függőben lévő hozzászólások törlése"
+
+#: class/manage-maintenance.class.php:32
+msgid "Delete trash comments"
+msgstr "Lomtárban lévő hozzászólások törlése"
+
+#: class/manage-maintenance.class.php:33
+msgid "Delete tags with 0 posts associated"
+msgstr "0 bejegyzéssel rendelkező címkék törlése"
+
+#: class/manage-maintenance.class.php:34
+msgid "Delete categories with 0 posts associated"
+msgstr "0 bejegyzéssel rendelkező kategóriák törlése"
+
+#: class/manage-maintenance.class.php:35
+msgid "Optimize database tables"
+msgstr "Adatbázistáblák optimalizálása"
+
+#: class/manage-maintenance.class.php:66
+msgid "Content Cleanup"
+msgstr "Tartalom tisztítása"
+
+#: class/manage-maintenance.class.php:67
+msgid "Remove drafts, trash posts, and older revisions to keep content lean."
+msgstr "Távolítsd el a piszkozatokat, a lomtárban lévő bejegyzéseket és a régebbi változatokat, hogy a tartalom ne legyen túlzsúfolt."
+
+#: class/manage-maintenance.class.php:71
+msgid "Comment Cleanup"
+msgstr "Hozzászólások tisztítása"
+
+#: class/manage-maintenance.class.php:72
+msgid "Clear spam, pending, and trash comments to keep moderation tidy."
+msgstr "Töröld a spamként megjelölt, függőben lévő és a lomtárban lévő hozzászólásokat, hogy rendezett maradjon a moderálás."
+
+#: class/manage-maintenance.class.php:76
+msgid "Taxonomy Cleanup"
+msgstr "Osztályozás (taxonomy) tisztítása"
+
+#: class/manage-maintenance.class.php:77
+msgid ""
+"Remove empty tags and categories to declutter filters. Posts will not be "
+"affected."
+msgstr "Távolítsd el az üres címkéket és kategóriákat a szűrők áttekinthetőbbé tételéhez. Ez nem érinti a bejegyzéseket."
+
+#: class/manage-maintenance.class.php:81
+msgid "Database Optimization"
+msgstr "Adatbázis-optimalizálás"
+
+#: class/manage-maintenance.class.php:82
+msgid ""
+"Optimize tables on selected sites. Best used during low-traffic periods."
+msgstr "Optimalizáld a táblákat a kiválasztott webhelyeken. Ezt érdemes alacsony forgalmú időszakban elvégezni."
+
+#: class/manage-maintenance.class.php:91
+msgid ""
+"Choose the cleanup tasks for selected sites. Start with content and "
+"comments; database optimization can be more resource-intensive."
+msgstr "Válaszd ki a kiválasztott webhelyeken végrehajtandó tisztítási feladatokat. Kezdd a tartalommal és a hozzászólásokkal; az adatbázis optimalizálása több erőforrást igényelhet."
+
+#: class/manage-maintenance.class.php:121
+msgid "Except for the last"
+msgstr "Az utolsó kivételével"
+
+#: class/manage-maintenance.class.php:122
+msgid ""
+"Set the number of revisions to keep. Newest revisions will be kept. Set 0 to"
+" delete all."
+msgstr "Állítsd be a megtartandó változatok számát. A legújabb változatok maradnak meg. Állítsd 0-ra az összes törléséhez."
+
+#: class/manage-maintenance.class.php:134
+msgid "Transient Cleanup"
+msgstr "Tranziensek tisztítása"
+
+#: class/manage-maintenance.class.php:135
+msgid "Delete all transients or only expired transients on selected sites."
+msgstr "Töröld az összes tranzienst vagy csak a lejárt tranzienseket a kiválasztott webhelyeken."
+
+#: class/manage-maintenance.class.php:139
+msgid "Delete Transients"
+msgstr "Tranziensek törlése"
+
+#: class/manage-maintenance.class.php:142
+msgid "Don't Delete Transients"
+msgstr "Tranziensek törlésének mellőzése"
+
+#: class/manage-maintenance.class.php:143
+msgid "Expired transients"
+msgstr "Lejárt tranziensek"
+
+#: class/manage-maintenance.class.php:144
+msgid "All Transients"
+msgstr "Összes transient"
+
+#: class/manage-maintenance.class.php:147
+msgid ""
+"Deleting all transients may cause temporary performance issues as data is "
+"regenerated. Some plugins may experience brief issues if they don't properly"
+" check for transient existence."
+msgstr "Az összes transient törlése átmeneti teljesítményproblémákat okozhat, amíg az adatok újragenerálódnak. Egyes bővítményeknél rövid ideig problémák jelentkezhetnek, ha nem ellenőrzik megfelelően a transientek meglétét."
+
+#: class/manage-maintenance.class.php:166
+msgid "Monday"
+msgstr "Hétfő"
+
+#: class/manage-maintenance.class.php:167
+msgid "Tuesday"
+msgstr "Kedd"
+
+#: class/manage-maintenance.class.php:168
+msgid "Wednesday"
+msgstr "Szerda"
+
+#: class/manage-maintenance.class.php:169
+msgid "Thursday"
+msgstr "Csütörtök"
+
+#: class/manage-maintenance.class.php:170
+msgid "Friday"
+msgstr "Péntek"
+
+#: class/manage-maintenance.class.php:171
+msgid "Saturday"
+msgstr "Szombat"
+
+#: class/manage-maintenance.class.php:172
+msgid "Sunday"
+msgstr "Vasárnap"
+
+#: class/manage-maintenance.class.php:200
+msgid "Schedule Options"
+msgstr "Időzítési opciók"
+
+#: class/manage-maintenance.class.php:201
+msgid ""
+"Schedules run in your MainWP dashboard timezone. For weekly, monthly, or "
+"yearly schedules, choose a specific day and time."
+msgstr "Az időzítések a MainWP vezérlőpultjának időzónája szerint futnak. Heti, havi vagy éves időzítés esetén válassz ki egy konkrét napot és időpontot."
+
+#: class/manage-maintenance.class.php:205
+msgid "Schedule title"
+msgstr "Ütemezés címe"
+
+#: class/manage-maintenance.class.php:212
+msgid "Schedule frequency"
+msgstr "Ütemezés gyakorisága"
+
+#: class/manage-maintenance.class.php:213
+msgid "Set how many times you want to run the task."
+msgstr "Állítsd be, hányszor szeretnéd futtatni a feladatot."
+
+#: class/manage-maintenance.class.php:218
+msgid " time(s) per "
+msgstr " alkalommal "
+
+#: class/manage-maintenance.class.php:225
+msgid " Run on "
+msgstr " Futtatás napja "
+
+#: class/manage-maintenance.class.php:244
+msgid "January"
+msgstr "január"
+
+#: class/manage-maintenance.class.php:245
+msgid "February"
+msgstr "február"
+
+#: class/manage-maintenance.class.php:246
+msgid "March"
+msgstr "március"
+
+#: class/manage-maintenance.class.php:247
+msgid "April"
+msgstr "április"
+
+#: class/manage-maintenance.class.php:248
+msgid "May"
+msgstr "május"
+
+#: class/manage-maintenance.class.php:249
+msgid "June"
+msgstr "június"
+
+#: class/manage-maintenance.class.php:250
+msgid "July"
+msgstr "július"
+
+#: class/manage-maintenance.class.php:251
+msgid "August"
+msgstr "augusztus"
+
+#: class/manage-maintenance.class.php:252
+msgid "September"
+msgstr "szeptember"
+
+#: class/manage-maintenance.class.php:253
+msgid "October"
+msgstr "október"
+
+#: class/manage-maintenance.class.php:254
+msgid "November"
+msgstr "november"
+
+#: class/manage-maintenance.class.php:255
+msgid "December"
+msgstr "december"
+
+#: class/manage-maintenance.class.php:291
+msgid " of the Month "
+msgstr " a hónap "
+
+#: class/manage-maintenance.class.php:295
+msgid " at "
+msgstr " ekkor "
+
+#: class/manage-maintenance.class.php:307
+msgid " o'clock "
+msgstr " órakor "
+
+#: class/manage-maintenance.class.php:314
+msgid "Schedule status"
+msgstr "Időzítés állapota"
+
+#: class/manage-maintenance.class.php:315
+msgid ""
+"Paused schedules do not run automatically and do not have a next run until "
+"resumed."
+msgstr "A szüneteltetett időzítések nem futnak automatikusan, és az újbóli aktiválásukig nincs következő futásuk."
+
+#: class/manage-maintenance.class.php:318
+#: class/manage-maintenance.class.php:977
+msgid "Paused"
+msgstr "Szüneteltetve"
+
+#: class/manage-maintenance.class.php:342
+msgid "404 Email Alerts"
+msgstr "404-es e-mail értesítések"
+
+#: class/manage-maintenance.class.php:344
+msgid ""
+"Use a dedicated inbox for alerts. High-traffic sites can generate a large "
+"number of emails."
+msgstr "Használj külön e-mail-címet az értesítésekhez. A nagy forgalmú webhelyek sok e-mailt generálhatnak."
+
+#: class/manage-maintenance.class.php:347
+msgid "Enable 404 email notifications"
+msgstr "404-es e-mail értesítések engedélyezése"
+
+#: class/manage-maintenance.class.php:348
+msgid ""
+"Enable if you want to receive email notification about 404 errors on your "
+"child sites. In some cases, this feature can cause large amount of emails to"
+" be sent from your child sites."
+msgstr "Kapcsold be, ha e-mail-értesítést szeretnél kapni az alárendelt webhelyeken előforduló 404-es hibákról. Bizonyos esetekben ez a funkció nagy mennyiségű e-mail kiküldéséhez vezethet az alárendelt webhelyekről."
+
+#: class/manage-maintenance.class.php:356
+msgid "Notification email address"
+msgstr "Értesítési e-mail-cím"
+
+#: class/manage-maintenance.class.php:357
+msgid "Enter email address where you want to receive notifications."
+msgstr "Add meg azt az e-mail-címet, amelyre az értesítéseket szeretnéd kapni."
+
+#: class/manage-maintenance.class.php:373
+msgid "Incorrect maintenance task ID."
+msgstr "A karbantartási feladat ID-ja hibás."
+
+#: class/manage-maintenance.class.php:400
+msgid "Sidebar Options"
+msgstr "Oldalsáv opciói"
+
+#: class/manage-maintenance.class.php:407
+msgid "Sidebar position"
+msgstr "Oldalsáv pozíciója"
+
+#: class/manage-maintenance.class.php:409
+msgid "Right"
+msgstr "Jobb"
+
+#: class/manage-maintenance.class.php:410
+msgid "Left"
+msgstr "Bal"
+
+#: class/manage-maintenance.class.php:441
+msgid "Select Sites"
+msgstr "Webhelyek kiválasztása"
+
+#: class/manage-maintenance.class.php:524
+#: class/manage-maintenance.class.php:545
+#: class/manage-maintenance.class.php:567
+#: class/manage-maintenance.class.php:636
+msgid "Maintenance"
+msgstr "Karbantartás"
+
+#: class/manage-maintenance.class.php:525
+msgid "Schedules"
+msgstr "Időzítések"
+
+#: class/manage-maintenance.class.php:527
+msgid "Add Schedule"
+msgstr "Időzítés hozzáadása"
+
+#: class/manage-maintenance.class.php:530
+#: class/manage-maintenance.class.php:1210
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: class/manage-maintenance.class.php:546
+msgid ""
+"Clean and optimize your child sites databases. Before doing any maintenance "
+"jobs, we highly recommend creating your child sites databases backup."
+msgstr "Tisztítsd meg és optimalizáld az alárendelt webhelyek adatbázisait. Bármilyen karbantartási feladat elvégzése előtt kifejezetten ajánljuk az alárendelt webhelyek adatbázisainak biztonsági mentését."
+
+#: class/manage-maintenance.class.php:547
+#: class/manage-maintenance.class.php:655
+#: class/manage-maintenance.class.php:695
+#, php-format
+msgid "Please review the %1$shelp document%2$s for detailed information."
+msgstr "A részletes információkért tekintsd meg a %1$ssúgódokumentumot%2$s."
+
+#: class/manage-maintenance.class.php:560
+msgid "Run Maintenance"
+msgstr "Karbantartás futtatása"
+
+#: class/manage-maintenance.class.php:584
+msgid "Schedule a new maintenance task. "
+msgstr "Új karbantartási feladat időzítése."
+
+#: class/manage-maintenance.class.php:585
+#, php-format
+msgid "Please review the %1$shelp document%2$s for detailed information. "
+msgstr "A részletes információkért tekintsd meg a %1$ssúgódokumentumot%2$s. "
+
+#: class/manage-maintenance.class.php:598
+msgid "Schedule Maintenance"
+msgstr "Karbantartás ütemezése"
+
+#: class/manage-maintenance.class.php:615
+msgid "Bulk actions"
+msgstr "Csoportos műveletek"
+
+#: class/manage-maintenance.class.php:616
+#: class/manage-maintenance.class.php:1218
+msgid "Pause"
+msgstr "Szüneteltetés"
+
+#: class/manage-maintenance.class.php:617
+#: class/manage-maintenance.class.php:1214
+msgid "Resume"
+msgstr "Folytatás"
+
+#: class/manage-maintenance.class.php:618
+#: class/manage-maintenance.class.php:1223
+msgid "Delete"
+msgstr "Törlés"
+
+#: class/manage-maintenance.class.php:620
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#: class/manage-maintenance.class.php:623
+#: class/manage-maintenance.class.php:752
+msgid "Create New Schedule"
+msgstr "Új ütemezés létrehozása"
+
+#: class/manage-maintenance.class.php:654
+msgid "Edit scheduled maintanence task. "
+msgstr "Ütemezett karbantartási feladat szerkesztése. "
+
+#: class/manage-maintenance.class.php:668
+msgid "Save Changes"
+msgstr "Módosítások mentése"
+
+#: class/manage-maintenance.class.php:694
+msgid ""
+"Monitor your child sites for 404 errors. It will email you as soon as "
+"somebody hits an un-existing page on your child site. "
+msgstr "Figyeld az alárendelt webhelyeken előforduló 404-es hibákat. Amint valaki nem létező oldalt nyit meg valamelyik alárendelt webhelyen, e-mailt kapsz. "
+
+#: class/manage-maintenance.class.php:707
+msgid "Save Settings"
+msgstr "Beállítások mentése"
+
+#: class/manage-maintenance.class.php:714
+msgid "404 Alerts"
+msgstr "404-es riasztások"
+
+#: class/manage-maintenance.class.php:748
+msgid "No maintenance schedules yet."
+msgstr "Még nincs karbantartási időzítés."
+
+#: class/manage-maintenance.class.php:750
+msgid ""
+"Create a schedule to automate recurring maintenance tasks for your selected "
+"sites."
+msgstr "Hozz létre időzítést, hogy automatizáld a kiválasztott webhelyek ismétlődő karbantartási feladatait."
+
+#: class/manage-maintenance.class.php:766
+msgid "Select all schedules."
+msgstr "Összes időzítés kiválasztása."
+
+#: class/manage-maintenance.class.php:767
+msgid "Select all schedules"
+msgstr "Összes időzítés kiválasztása"
+
+#: class/manage-maintenance.class.php:771
+msgid "Title"
+msgstr "Cím"
+
+#: class/manage-maintenance.class.php:772
+msgid "Status"
+msgstr "Állapot"
+
+#: class/manage-maintenance.class.php:773
+msgid "Target"
+msgstr "Cél"
+
+#: class/manage-maintenance.class.php:774
+msgid "Last Run"
+msgstr "Utolsó futtatás"
+
+#: class/manage-maintenance.class.php:775
+msgid "Next Run"
+msgstr "Következő futtatás"
+
+#: class/manage-maintenance.class.php:789
+msgid "No detailed failed site data is available for this run."
+msgstr "Ehhez a futtatáshoz nem állnak rendelkezésre részletes adatok a sikertelen webhelyekről."
+
+#: class/manage-maintenance.class.php:796
+msgid "Failure Details"
+msgstr "Hiba részletei"
+
+#: class/manage-maintenance.class.php:797
+msgid "Site ID:"
+msgstr "Webhely ID:"
+
+#: class/manage-maintenance.class.php:798
+msgid "Unknown site"
+msgstr "Ismeretlen webhely"
+
+#: class/manage-maintenance.class.php:799
+msgid "No error details were recorded."
+msgstr "Nem rögzítettek hibával kapcsolatos részleteket."
+
+#: class/manage-maintenance.class.php:980
+msgid ""
+"This schedule is disabled and will not run automatically until resumed."
+msgstr "Ez az időzítés ki van kapcsolva, ezért az újbóli aktiválásáig nem fut automatikusan."
+
+#: class/manage-maintenance.class.php:988
+msgid "Running"
+msgstr "Fut"
+
+#: class/manage-maintenance.class.php:991
+msgid "Cleanup is currently in progress."
+msgstr "A tisztítás jelenleg folyamatban van."
+
+#: class/manage-maintenance.class.php:998
+#, php-format
+msgid "Last cleanup attempt failed on %d site."
+msgid_plural "Last cleanup attempt failed on %d sites."
+msgstr[0] "Az utolsó tisztítási kísérlet %d webhelyen sikertelen."
+msgstr[1] "Az utolsó tisztítási kísérlet %d webhelyen sikertelen."
+
+#: class/manage-maintenance.class.php:998
+msgid "Last cleanup attempt failed."
+msgstr "Az utolsó tisztítási kísérlet sikertelen volt."
+
+#: class/manage-maintenance.class.php:999
+msgid "Click to see details."
+msgstr "Kattints a részletek megtekintéséhez."
+
+#: class/manage-maintenance.class.php:1003
+msgid "Failed"
+msgstr "Sikertelen"
+
+#: class/manage-maintenance.class.php:1015
+msgid "Unscheduled"
+msgstr "Nincs időzítve"
+
+#: class/manage-maintenance.class.php:1018
+msgid "No valid next run is currently set."
+msgstr "Jelenleg nincs érvényes következő futás beállítva."
+
+#: class/manage-maintenance.class.php:1027
+msgid "Scheduled"
+msgstr "Ütemezve"
+
+#: class/manage-maintenance.class.php:1030
+msgid "Next run is planned normally."
+msgstr "A következő futás a tervek szerint történik."
+
+#: class/manage-maintenance.class.php:1041
+msgid "Due"
+msgstr "Esedékes"
+
+#: class/manage-maintenance.class.php:1044
+msgid "Waiting for WP-Cron to trigger."
+msgstr "Várakozás a WP-Cron indítására."
+
+#: class/manage-maintenance.class.php:1052
+msgid "Delayed"
+msgstr "Késleltetett"
+
+#: class/manage-maintenance.class.php:1055
+msgid "The scheduled run is overdue."
+msgstr "Az időzített futás késik."
+
+#: class/manage-maintenance.class.php:1062
+msgid "Missed"
+msgstr "Elmaradt"
+
+#: class/manage-maintenance.class.php:1065
+msgid "This task appears to have missed its expected run window."
+msgstr "Úgy tűnik, ez a feladat nem futott le a várt időablakban."
+
+#: class/manage-maintenance.class.php:1182
+#, php-format
+msgid "Select schedule %s"
+msgstr "A(z) %s időzítés kiválasztása"
+
+#: class/manage-maintenance.class.php:1206
+msgid "Run Now"
+msgstr "Futtatás most"
+
+#: class/manage-maintenance.class.php:1252
+msgid "day"
+msgstr "nap"
+
+#: class/manage-maintenance.class.php:1253
+msgid "week"
+msgstr "hét"
+
+#: class/manage-maintenance.class.php:1254
+msgid "month"
+msgstr "hónap"
+
+#: class/manage-maintenance.class.php:1255
+msgid "year"
+msgstr "év"
+
+#: class/manage-maintenance.class.php:1259
+msgid "Not scheduled"
+msgstr "Nincs időzítve"
+
+#. translators: %s: schedule period, for example day, week, month, year.
+#: class/manage-maintenance.class.php:1267
+#, php-format
+msgid "Once per %s"
+msgstr "Időszakonként egyszer (%s)"
+
+#. translators: %s: schedule period, for example day, week, month, year.
+#: class/manage-maintenance.class.php:1275
+#, php-format
+msgid "Twice per %s"
+msgstr "Időszakonként kétszer (%s)"
+
+#. translators: 1: number of occurrences, 2: schedule period, for example day,
+#. week, month, year.
+#: class/manage-maintenance.class.php:1282
+#, php-format
+msgid "%1$d times per %2$s"
+msgstr "Időszakonként %1$d alkalom (%2$s)"
+
+#: class/manage-maintenance.class.php:1456
+msgid "Please enter a title for the maintenance task."
+msgstr "Adj meg egy címet a karbantartási feladatnak."
+
+#: class/manage-maintenance.class.php:1552
+msgid "Undefined error occurred. Please, try again."
+msgstr "Ismeretlen hiba történt. Próbáld újra."
+
+#: class/manage-maintenance.class.php:1562
+msgid "Please enter a valid email address."
+msgstr "Adj meg egy érvényes e-mail-címet."
+
+#: class/manage-maintenance.class.php:1861
+#: mainwp-maintenance-extension.php:447
+#, php-format
+msgid "Maintenance failed for site ID %d."
+msgstr "Sikertelen karbantartás a(z) %d ID-jű webhelyen."
+
+#: class/manage-maintenance.class.php:1972
+#, php-format
+msgid "in %s"
+msgstr "%s múlva"
+
+#: class/manage-maintenance.class.php:1979
+#, php-format
+msgid "%s ago"
+msgstr "%s ezelőtt"
+
+#: mainwp-maintenance-extension.php:104
+msgid "Start maintenance tasks"
+msgstr "Karbantartási feladatok indítása"
+
+#: mainwp-maintenance-extension.php:106
+msgid "Once hourly"
+msgstr "Óránként egyszer"
+
+#: mainwp-maintenance-extension.php:111
+msgid "Continue maintenance tasks"
+msgstr "Karbantartási feladatok folytatása"
+
+#: mainwp-maintenance-extension.php:113
+msgid "Once every minute"
+msgstr "Percenként egyszer"
+
+#: mainwp-maintenance-extension.php:646
+msgid ""
+"requires <a href=\"https://mainwp.com/\" target=\"_blank\">MainWP Dashboard "
+"Plugin</a> to be activated in order to work. Please install and activate <a "
+"href=\"https://mainwp.com/\" target=\"_blank\">MainWP Dashboard Plugin</a> "
+"first."
+msgstr "működéséhez be kell kapcsolnod a <a href=\"https://mainwp.com/\" target=\"_blank\">MainWP vezérlőpult-bővítményt</a>. Kérlek, először telepítsd és kapcsold be a <a href=\"https://mainwp.com/\" target=\"_blank\">MainWP vezérlőpult-bővítményt</a>."
+
+#: js/admin.js:2
+msgid ""
+"Deleting all transients may cause temporary performance issues as data is "
+"regenerated. Some plugins may experience brief issues if they don't properly"
+" check for transient existence. Please confirm that you want to proceed."
+msgstr "Az összes transient törlése átmeneti teljesítményproblémákat okozhat, amíg az adatok újragenerálódnak. Egyes bővítményeknél rövid ideig problémák jelentkezhetnek, ha nem ellenőrzik megfelelően a transientek meglétét. Erősítsd meg, hogy folytatni szeretnéd."
+
+#: js/admin.js:188 js/admin.js:1265
+msgid "Removing the task. Please wait..."
+msgstr "Feladat eltávolítása. Kérlek, várj..."
+
+#: js/admin.js:189
+msgid "removed successfully."
+msgstr "sikeresen eltávolítva."
+
+#: js/admin.js:190
+msgid "could not be removed. Please try again."
+msgstr "nem sikerült eltávolítani. Próbáld újra."
+
+#: js/admin.js:191
+msgid "schedule(s) removed successfully."
+msgstr "Az időzítések eltávolítása sikerült."
+
+#: js/admin.js:192
+msgid "schedule(s) could not be removed. Please try again."
+msgstr "Nem sikerült eltávolítani az időzítéseket. Próbáld újra."
+
+#: js/admin.js:193
+msgid "Are you sure you want to delete the selected maintenance schedules?"
+msgstr "Biztosan törölni szeretnéd a kiválasztott karbantartási időzítéseket?"
+
+#: js/admin.js:200 js/admin.js:1305
+msgid "Pausing the maintenance task. Please wait..."
+msgstr "A karbantartási feladat szüneteltetése folyamatban. Kérlek, várj..."
+
+#: js/admin.js:201
+msgid "paused successfully."
+msgstr "Sikeresen szüneteltetve."
+
+#: js/admin.js:202
+msgid "could not be paused. Please try again."
+msgstr "Nem sikerült szüneteltetni. Próbáld újra."
+
+#: js/admin.js:203
+msgid "schedule(s) paused successfully."
+msgstr "Az időzítések szüneteltetése sikerült."
+
+#: js/admin.js:204
+msgid "schedule(s) could not be paused. Please try again."
+msgstr "Nem sikerült szüneteltetni az időzítéseket. Próbáld újra."
+
+#: js/admin.js:211 js/admin.js:1305
+msgid "Resuming the maintenance task. Please wait..."
+msgstr "A karbantartási feladat folytatása folyamatban. Kérlek, várj..."
+
+#: js/admin.js:212
+msgid "resumed successfully."
+msgstr "Sikeresen folytatva."
+
+#: js/admin.js:213
+msgid "could not be resumed. Please try again."
+msgstr "Nem sikerült folytatni. Próbáld újra."
+
+#: js/admin.js:214
+msgid "schedule(s) resumed successfully."
+msgstr "Az időzítések folytatása sikerült."
+
+#: js/admin.js:215
+msgid "schedule(s) could not be resumed. Please try again."
+msgstr "Nem sikerült folytatni az időzítéseket. Próbáld újra."
+
+#: js/admin.js:235 js/admin.js:422
+msgid "Please select a bulk action."
+msgstr "Válassz egy csoportos műveletet."
+
+#: js/admin.js:250 js/admin.js:417
+msgid "Please select at least one maintenance schedule."
+msgstr "Válassz legalább egy karbantartási időzítést."
+
+#: js/admin.js:487 js/admin.js:494 js/admin.js:501 js/admin.js:952
+#: js/admin.js:960 js/admin.js:968 js/admin.js:1193 js/admin.js:1201
+#: js/admin.js:1209
+msgid "Please select at least one website, tag, or client."
+msgstr "Válassz legalább egy webhelyet, címkét vagy ügyfelet."
+
+#: js/admin.js:508 js/admin.js:938 js/admin.js:1179
+msgid "Please select at least one maintenance option."
+msgstr "Válassz legalább egy karbantartási lehetőséget."
+
+#: js/admin.js:522 js/admin.js:978 js/admin.js:1373
+msgid ""
+"Attention! Before running a maintenance process, it is highly recommended to"
+" make a database backup. In rare cases, database optimization function can "
+"cause issues and crash database. Please confirm that you want to proceed."
+msgstr "Figyelem! Karbantartási folyamat futtatása előtt erősen ajánlott biztonsági mentést készíteni az adatbázisról. Ritka esetekben az adatbázis-optimalizálás problémákat okozhat, és összeomlaszthatja az adatbázist. Erősítsd meg, hogy folytatni szeretnéd."
+
+#: js/admin.js:546
+msgid "Initiating the mainenance job. Please wait..."
+msgstr "A karbantartási feladat indítása folyamatban. Kérlek, várj..."
+
+#: js/admin.js:777
+msgid ""
+"The maintenance task could not be marked as completed. Please try again."
+msgstr "Nem sikerült befejezettként megjelölni a karbantartási feladatot. Próbáld újra."
+
+#: js/admin.js:918 js/admin.js:1150
+msgid "Completed"
+msgstr "Befejezve"
+
+#: js/admin.js:932
+msgid "Please enter a title."
+msgstr "Adj meg egy címet."
+
+#: js/admin.js:988
+msgid "Adding the maintenance task..."
+msgstr "A karbantartási feladat hozzáadása folyamatban..."
+
+#: js/admin.js:1173
+msgid "Please enter a valid title for your maintenance task"
+msgstr "Adj meg érvényes címet a karbantartási feladathoz"
+
+#: js/admin.js:1222
+msgid "Updating the maintenance task. Please wait..."
+msgstr "A karbantartási feladat frissítése folyamatban. Kérlek, várj..."
+
+#: js/admin.js:1261
+msgid "Are you sure you want to delete this maintenance task?"
+msgstr "Biztosan törölni szeretnéd ezt a karbantartási feladatot?"
+
+#: js/admin.js:1277
+msgid "Scheduled task removed."
+msgstr "Az időzített feladat eltávolítva."
+
+#: js/admin.js:1279
+msgid "Scheduled task could not be removed. Please try again."
+msgstr "Nem sikerült eltávolítani az időzített feladatot. Próbáld újra."
+
+#: js/admin.js:1306
+msgid "Scheduled task paused."
+msgstr "Az időzített feladat szüneteltetve."
+
+#: js/admin.js:1306
+msgid "Scheduled task resumed."
+msgstr "Az időzített feladat folytatva."
+
+#: js/admin.js:1307
+msgid "Scheduled task could not be updated. Please try again."
+msgstr "Nem sikerült frissíteni az időzített feladatot. Próbáld újra."
+
+#: js/admin.js:1343
+msgid "Preparing the maintenance task. Please wait..."
+msgstr "A karbantartási feladat előkészítése folyamatban. Kérlek, várj..."

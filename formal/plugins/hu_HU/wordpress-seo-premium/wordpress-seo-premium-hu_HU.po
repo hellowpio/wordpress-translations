@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: Yoast SEO Premium 25.6\n"
+"Project-Id-Version: Yoast SEO Premium 28.8\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:50:56+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: Yoast SEO Premium\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 25.6\n"
+"X-Plugin-Version: 28.8\n"
 
 #. Plugin Name of the plugin
 #: wp-seo-premium.php
@@ -49,39 +49,39 @@ msgstr "Yoast csapat"
 msgid "https://yoa.st/team-yoast-premium"
 msgstr "https://yoa.st/team-yoast-premium"
 
-#: classes/export/export-keywords-csv.php:69
+#: classes/export/export-keywords-csv.php:70
 msgid "title"
 msgstr "cím"
 
-#: classes/export/export-keywords-csv.php:70
-msgid "url"
-msgstr "url"
-
 #: classes/export/export-keywords-csv.php:71
+msgid "url"
+msgstr "URL"
+
+#: classes/export/export-keywords-csv.php:72
 msgid "readability score"
 msgstr "olvashatósági pontszám"
 
-#: classes/export/export-keywords-csv.php:72
+#: classes/export/export-keywords-csv.php:73
 msgid "keyphrase"
 msgstr "kulcskifejezés"
 
-#: classes/export/export-keywords-csv.php:73
+#: classes/export/export-keywords-csv.php:74
 msgid "keyphrase score"
 msgstr "kulcskifejezés pontszáma"
 
-#: classes/export/export-keywords-csv.php:74
-msgid "seo title"
-msgstr "SEO cím"
-
 #: classes/export/export-keywords-csv.php:75
+msgid "seo title"
+msgstr "SEO-cím"
+
+#: classes/export/export-keywords-csv.php:76
 msgid "meta description"
 msgstr "metaleírás"
 
-#: classes/export/export-keywords-csv.php:78
-msgid "ID"
-msgstr "ID"
-
 #: classes/export/export-keywords-csv.php:79
+msgid "ID"
+msgstr "Azonosító"
+
+#: classes/export/export-keywords-csv.php:80
 msgctxt "post_type of a post or the taxonomy of a term"
 msgid "type"
 msgstr "típus"
@@ -90,7 +90,7 @@ msgstr "típus"
 #: classes/metabox-link-suggestions.php:103
 #, php-format
 msgid "%s internal linking"
-msgstr "%s belső hivatkozás"
+msgstr "%s belső linkelés"
 
 #. translators: %1$s: Yoast SEO Premium, %2$s: List with actions, %3$s: <a
 #. href=''>, %4$s: </a>, %5$s: Slug to post
@@ -114,19 +114,17 @@ msgstr ""
 "%1$s észlelte, hogy visszaállított egy bejegyzést (%4$s) a kukából, amelyhez"
 " átirányítás készült. %2$sKattintson ide az átirányítás eltávolításához%3$s"
 
-#. translators: %1$s: Yoast SEO Premium, %2$s and %3$s expand to a link to the
-#. admin page.
-#: classes/post-watcher.php:480
+#. translators: %s expands to Yoast SEO Premium.
+#: classes/post-watcher.php:481 classes/term-watcher.php:296
 #, php-format
 msgid ""
-"%1$s created a %2$sredirect%3$s from the old post URL to the new post URL."
-msgstr ""
-"%1$s %2$sátirányítást%3$s hozott létre a régi bejegyzés URL-jéről az új "
-"bejegyzés URL-jére."
+"A redirect from the old URL to the new URL was just created. You can manage "
+"this redirect in %s."
+msgstr "Átirányítás jött létre a régi URL-ről az új URL-re. Ezt az átirányítást a következő helyen kezelheti: %s."
 
 #. translators: %1$s: Yoast SEO Premium, %2$s: List with actions, %3$s: <a
 #. href='{post_with_explaination.}'>, %4$s: </a>, %5%s: The removed url.
-#: classes/post-watcher.php:493
+#: classes/post-watcher.php:494
 #, php-format
 msgid ""
 "%1$s detected that you deleted a post (%5$s). You can either: %2$s Don't "
@@ -156,10 +154,7 @@ msgstr ""
 msgid ""
 "No redirects have been imported. Probably they already exist as a redirect. "
 "Go to the %1$sredirects overview%2$s to see the existing redirects."
-msgstr ""
-"Nem lett importálva átirányítás. Valószínűleg már léteznek átirányításként. "
-"Lépjen a %1$sátirányítások áttekintésére%2$s a meglévő átirányítások "
-"megtekintéséhez."
+msgstr "Egyetlen átirányítás sem lett importálva. Valószínűleg ezek már mind szerepelnek az átirányítások között. Lépjen a %1$sátirányítások áttekintésére%2$s a meglévő átirányítások megtekintéséhez."
 
 #. translators: 1: amount of imported redirects, 2: total amount of redirects,
 #. 3: link to redirects overview, 4: closing link tag
@@ -171,24 +166,20 @@ msgid ""
 msgid_plural ""
 "Imported %1$s/%2$s redirects successfully. Go to the %3$sredirects "
 "overview%4$s to see the imported redirects."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s/%2$s átirányítás importálása sikeres volt. Az importált átirányítás megtekintéséhez keresse fel az %3$sátirányítások áttekintését%4$s."
+msgstr[1] "%1$s/%2$s átirányítás importálása sikeres volt. Az importált átirányítások megtekintéséhez keresse fel az %3$sátirányítások áttekintését%4$s."
 
 #: classes/premium-import-manager.php:238
 msgid ""
 "Redirect import failed: the Redirection plugin is not installed or "
 "activated."
-msgstr ""
-"Az átirányítások importálása nem sikerült: a Redirection bővítmény nincs "
-"telepítve vagy nincs aktiválva."
+msgstr "Az átirányítások importálása nem sikerült: a Redirection bővítmény nincs telepítve vagy nincs aktiválva."
 
 #: classes/premium-import-manager.php:248
 msgid ""
 "Redirect import failed: the selected redirect plugin is not installed or "
 "activated."
-msgstr ""
-"Az átirányítások importálása nem sikerült: a kiválasztott átirányítási "
-"bővítmény nincs telepítve vagy nincs aktiválva."
+msgstr "Az átirányítások importálása nem sikerült: a kiválasztott átirányítási bővítmény nincs telepítve vagy nincs aktiválva."
 
 #: classes/premium-import-manager.php:266
 msgid "CSV import failed: No file selected."
@@ -227,15 +218,15 @@ msgstr "Egy URL-t nem irányíthat át saját magára."
 
 #: classes/premium-javascript-strings.php:28
 msgid "The old URL field can't be empty."
-msgstr "A régi URL mező nem lehet üres."
+msgstr "A régi URL-mező nem lehet üres."
 
 #: classes/premium-javascript-strings.php:29
 msgid "The Regular Expression field can't be empty."
-msgstr "A reguláris kifejezés mező nem lehet üres."
+msgstr "A reguláris kifejezést tartalmazó mező nem lehet üres."
 
 #: classes/premium-javascript-strings.php:30
 msgid "The new URL field can't be empty."
-msgstr "Az új URL mező nem lehet üres."
+msgstr "Az új URL-mező nem lehet üres."
 
 #: classes/premium-javascript-strings.php:31
 msgid "Error while saving this redirect"
@@ -276,21 +267,23 @@ msgid "The redirect was added successfully."
 msgstr "Az átirányítás sikeresen hozzáadva."
 
 #: classes/premium-javascript-strings.php:47
+#: classes/premium-redirect-service.php:153
 msgid "Redirect updated."
 msgstr "Átirányítás frissítve."
 
 #: classes/premium-javascript-strings.php:48
+#: classes/premium-redirect-service.php:154
 msgid "The redirect was updated successfully."
 msgstr "Az átirányítás sikeresen frissítve."
 
 #: classes/premium-javascript-strings.php:51
-#: classes/premium-redirect-service.php:51
+#: classes/premium-redirect-service.php:86
 #: classes/redirect-undo-endpoint.php:98
 msgid "Redirect deleted."
 msgstr "Átirányítás törölve."
 
 #: classes/premium-javascript-strings.php:52
-#: classes/premium-redirect-service.php:52
+#: classes/premium-redirect-service.php:87
 #: classes/redirect-undo-endpoint.php:99
 msgid "The redirect was deleted successfully."
 msgstr "Az átirányítás sikeresen törölve."
@@ -322,13 +315,13 @@ msgid "You are already editing a redirect, please finish this one first"
 msgstr "Már szerkeszt egy átirányítást, előbb fejezze be ezt"
 
 #: classes/premium-javascript-strings.php:63
-#: classes/redirect/redirect-table.php:436
+#: classes/redirect/redirect-table.php:434
 msgid "Edit"
 msgstr "Szerkesztés"
 
 #: classes/premium-javascript-strings.php:64
-#: classes/redirect/redirect-table.php:318
-#: classes/redirect/redirect-table.php:437
+#: classes/redirect/redirect-table.php:316
+#: classes/redirect/redirect-table.php:435
 msgid "Delete"
 msgstr "Törlés"
 
@@ -339,38 +332,33 @@ msgstr "Kulcskifejezések exportálása"
 
 #. translators: %1$s expands to the link to an article to read more about
 #. orphaned content, %2$s expands to </a>
-#: classes/premium-orphaned-post-filter.php:58
+#: classes/premium-orphaned-post-filter.php:77
 #, php-format
 msgid "%1$sLearn more about orphaned content%2$s."
 msgstr "%1$sTudjon meg többet az árva tartalmakról%2$s."
 
 #. translators: %1$s: plural form of the current post type, %2$s: a Learn more
 #. about link
-#: classes/premium-orphaned-post-filter.php:66
+#: classes/premium-orphaned-post-filter.php:85
 #, php-format
 msgid ""
 "Ask your SEO Manager or Site Administrator to count links in all texts, so "
 "we can identify orphaned %1$s. %2$s"
-msgstr ""
-"Kérje meg SEO menedzserét vagy a webhelyadminisztrátort, hogy számolja meg a"
-" hivatkozásokat minden szövegben, így azonosítani tudjuk az árván maradt "
-"%1$s elemeket. %2$s"
+msgstr "Kérje meg SEO-kezelőjét vagy a webhely-adminisztrátort, hogy számolja meg a hivatkozásokat minden szövegben, így azonosítani tudjuk, mely %1$s maradtak árván. %2$s"
 
 #. translators: %1$s expands to link to the recalculation option, %2$s: anchor
 #. closing, %3$s: plural form of the current post type, %4$s: a Learn more
 #. about link
-#: classes/premium-orphaned-post-filter.php:75
+#: classes/premium-orphaned-post-filter.php:94
 #, php-format
 msgid ""
 "%1$sClick here%2$s to index your links, so we can identify orphaned %3$s. "
 "%4$s"
-msgstr ""
-"%1$sKattintson ide%2$s a hivatkozások indexeléséhez, hogy azonosítani tudjuk"
-" az árván maradt %3$s elemeket. %4$s"
+msgstr "%1$sKattintson ide%2$s a hivatkozások indexeléséhez, hogy azonosítani tudjuk, mely %3$s maradtak árván. %4$s"
 
 #. translators: %1$s: plural form of the current post type, %2$s: a Learn more
 #. about link
-#: classes/premium-orphaned-post-filter.php:85
+#: classes/premium-orphaned-post-filter.php:104
 #, php-format
 msgid ""
 "'Orphaned content' refers to %1$s that have no inbound links, consider "
@@ -379,30 +367,74 @@ msgstr ""
 "Az „árva tartalom” olyan %1$s, amelyekre nem mutat bejövő hivatkozás; "
 "érdemes hivatkozásokat elhelyezni ezekre a %1$s. %2$s"
 
-#: classes/premium-orphaned-post-filter.php:145
+#: classes/premium-orphaned-post-filter.php:163
 msgid "Orphaned content"
 msgstr "Árva tartalom"
+
+#: classes/premium-redirect-endpoint.php:76
+msgid "The format of the redirect to create."
+msgstr "A létrehozandó átirányítás formátuma."
+
+#: classes/premium-redirect-endpoint.php:137
+#: classes/premium-redirect-endpoint.php:201
+msgid "The format of the redirects to retrieve."
+msgstr "A lekérendő átirányítások formátuma."
+
+#: classes/premium-redirect-endpoint.php:245
+msgid "Whether to disable PHP-based redirects and use .htaccess instead."
+msgstr "Annak megadása, hogy kikapcsolja-e a PHP-alapú átirányításokat, és helyettük a .htaccess fájlt használja-e."
+
+#: classes/premium-redirect-endpoint.php:251
+msgid "Whether to write redirects into a separate file instead of .htaccess."
+msgstr "Annak megadása, hogy az átirányításokat külön fájlba írja-e a .htaccess fájl helyett."
 
 #: classes/premium-redirect-export-manager.php:35
 #: classes/views/export-redirects.php:15
 msgid "Export redirects"
 msgstr "Átirányítások exportálása"
 
+#: classes/premium-redirect-service.php:35
+#: classes/premium-redirect-service.php:59
+msgid "Redirect not created."
+msgstr "Az átirányítás nem jött létre."
+
+#: classes/premium-redirect-service.php:50
+msgid "Redirect created."
+msgstr "Az átirányítás létrejött."
+
+#: classes/premium-redirect-service.php:51
+msgid "The redirect was created successfully."
+msgstr "Az átirányítás sikeresen létrejött."
+
 #: classes/premium-redirect-service.php:60
+msgid "Something went wrong when creating this redirect."
+msgstr "Hiba történt az átirányítás létrehozásakor."
+
+#: classes/premium-redirect-service.php:95
+#: classes/premium-redirect-service.php:140
 #: classes/redirect-undo-endpoint.php:87
 #: classes/redirect-undo-endpoint.php:107
 msgid "Redirect not deleted."
 msgstr "Az átirányítás nem lett törölve."
 
-#: classes/premium-redirect-service.php:61
+#: classes/premium-redirect-service.php:96
 #: classes/redirect-undo-endpoint.php:88
 #: classes/redirect-undo-endpoint.php:108
 msgid "Something went wrong when deleting this redirect."
 msgstr "Valami hiba történt ennek az átirányításnak a törlésekor."
 
+#: classes/premium-redirect-service.php:162
+msgid "Redirect not updated."
+msgstr "Az átirányítás nem frissült."
+
+#: classes/premium-redirect-service.php:163
+#: classes/premium-redirect-service.php:330
+msgid "Something went wrong while updating this redirect."
+msgstr "Hiba történt az átirányítás frissítésekor."
+
 #: classes/premium-stale-cornerstone-content-filter.php:51
 msgid "Stale cornerstone content"
-msgstr "Elavult sarokkő tartalom"
+msgstr "Elavult sarokkőtartalom"
 
 #. translators: %1$s expands to dynamic post type label, %2$s expands anchor
 #. to blog post about cornerstone content, %3$s expands to </a>
@@ -412,14 +444,11 @@ msgid ""
 "Stale cornerstone content refers to cornerstone content that hasn’t been "
 "updated in the last 6 months. Make sure to keep these %1$s up-to-date. "
 "%2$sLearn more about cornerstone content%3$s."
-msgstr ""
-"Az elavult sarokkő tartalom olyan sarokkő tartalmat jelent, amelyet az "
-"elmúlt 6 hónapban nem frissítettek. Ügyeljen rá, hogy ezeket a %1$s "
-"naprakészen tartsa. %2$sTudjon meg többet a sarokkő tartalomról%3$s."
+msgstr "Az elavult sarokkőtartalom olyan sarokkőtartalmat jelent, amelyet az elmúlt 6 hónapban nem frissítettek. Ügyeljen arra, hogy a %1$s naprakészek maradjanak. %2$sTudjon meg többet a sarokkőtartalomról%3$s."
 
 #: classes/redirect/exporters/redirect-csv-exporter.php:74
 msgid "Origin"
-msgstr "Forrás"
+msgstr "Kiindulópont"
 
 #: classes/redirect/exporters/redirect-csv-exporter.php:75
 msgid "Target"
@@ -433,10 +462,6 @@ msgstr "Típus"
 msgid "Format"
 msgstr "Formátum"
 
-#: classes/redirect/presenters/redirect-page-presenter.php:69
-msgid "Settings"
-msgstr "Beállítások"
-
 #: classes/redirect/presenters/redirect-table-presenter.php:68
 msgid "Regular Expression"
 msgstr "Reguláris kifejezés"
@@ -445,13 +470,21 @@ msgstr "Reguláris kifejezés"
 msgid "Old URL"
 msgstr "Régi URL"
 
-#: classes/redirect/redirect-ajax.php:67
+#: classes/redirect/redirect-ajax.php:69
 msgid "Unknown error. Failed to create redirect."
 msgstr "Ismeretlen hiba. Nem sikerült létrehozni az átirányítást."
 
-#: classes/redirect/redirect-ajax.php:103
+#: classes/redirect/redirect-ajax.php:106
 msgid "Unknown error. Failed to update redirect."
 msgstr "Ismeretlen hiba. Nem sikerült frissíteni az átirányítást."
+
+#: classes/redirect/redirect-ajax.php:206
+msgid "You don't have permission to add the redirect."
+msgstr "Nincs jogosultsága az átirányítás hozzáadásához."
+
+#: classes/redirect/redirect-ajax.php:226
+msgid "You don't have permission to update the redirect."
+msgstr "Nincs jogosultsága az átirányítás frissítéséhez."
 
 #. translators: %s expands to the file path that we tried to write to
 #: classes/redirect/redirect-file-util.php:46
@@ -465,7 +498,7 @@ msgstr "Nem sikerült létrehozni a(z) %s könyvtárat"
 msgid "We're unable to write data to the file %s"
 msgstr "Nem sikerült adatot írni a(z) %s fájlba"
 
-#: classes/redirect/redirect-formats.php:23 premium.php:338
+#: classes/redirect/redirect-formats.php:23 premium.php:357
 msgid "Redirects"
 msgstr "Átirányítások"
 
@@ -473,35 +506,31 @@ msgstr "Átirányítások"
 msgid "Regex Redirects"
 msgstr "Regex átirányítások"
 
-#: classes/redirect/redirect-page.php:148
-msgid "Redirects per page"
-msgstr "Átirányítások oldalanként"
-
 #. translators: Hidden accessibility text.
-#: classes/redirect/redirect-table.php:111
+#: classes/redirect/redirect-table.php:109
 msgid "Filter by redirect type"
 msgstr "Szűrés átirányítási típus szerint"
 
-#: classes/redirect/redirect-table.php:115
+#: classes/redirect/redirect-table.php:113
 msgid "All redirect types"
 msgstr "Minden átirányítási típus"
 
-#: classes/redirect/redirect-table.php:127
+#: classes/redirect/redirect-table.php:125
 msgid "Filter"
 msgstr "Szűrés"
 
-#: classes/redirect/redirect-table.php:140
+#: classes/redirect/redirect-table.php:138
 #: classes/redirect/views/redirects-form.php:22
 msgctxt "noun"
 msgid "Type"
 msgstr "Típus"
 
-#: classes/redirect/redirect-table.php:142
+#: classes/redirect/redirect-table.php:140
 msgid "New URL"
 msgstr "Új URL"
 
 #. translators: Hidden accessibility text.
-#: classes/redirect/redirect-table.php:250
+#: classes/redirect/redirect-table.php:248
 msgid "Select this redirect"
 msgstr "Válassza ezt az átirányítást"
 
@@ -524,6 +553,27 @@ msgstr "410 Tartalom törölve"
 #: classes/redirect/redirect-types.php:30
 msgid "451 Unavailable For Legal Reasons"
 msgstr "451 Jogi okokból nem érhető el"
+
+#. translators: 1: number of removed redirect entries. 2: link opening tag to
+#. the .htaccess file editor. 3: link closing tag.
+#: classes/redirect/redirect-upgrade.php:157
+#, php-format
+msgid ""
+"Yoast SEO Premium removed %1$d malformed redirect entry during a security "
+"update. Please %2$sinspect your .htaccess%3$s for leftover directives."
+msgid_plural ""
+"Yoast SEO Premium removed %1$d malformed redirect entries during a security "
+"update. Please %2$sinspect your .htaccess%3$s for leftover directives."
+msgstr[0] "A Yoast SEO Premium egy biztonsági frissítés során eltávolított %1$d hibás átirányítási bejegyzést. Kérjük, %2$sellenőrizze a .htaccess fájlt%3$s, hogy maradtak-e benne utasítások."
+msgstr[1] "A Yoast SEO Premium egy biztonsági frissítés során eltávolított %1$d hibás átirányítási bejegyzést. Kérjük, %2$sellenőrizze a .htaccess fájlt%3$s, hogy maradtak-e benne utasítások."
+
+#. translators: %s expands to a truncated form of the redirect origin.
+#: classes/redirect/redirect.php:129
+#, php-format
+msgid ""
+"A redirect was skipped because it contained line breaks or control "
+"characters: %s"
+msgstr "Egy átirányítás kimaradt, mert sortörést vagy vezérlőkaraktert tartalmazott: %s"
 
 #: classes/redirect/validation/redirect-accessible-validation.php:29
 msgid "The URL you entered could not be resolved."
@@ -556,6 +606,10 @@ msgid ""
 msgstr ""
 "A megadott URL a 200(OK)-tól eltérő HTTP-kódot adott vissza. A kapott HTTP-"
 "kód: %1$s."
+
+#: classes/redirect/validation/redirect-control-chars-validation.php:37
+msgid "The redirect URLs may not contain line breaks or control characters."
+msgstr "Az átirányítás URL-jei nem tartalmazhatnak sortörést vagy vezérlőkaraktert."
 
 #: classes/redirect/validation/redirect-endpoint-validation.php:40
 msgid ""
@@ -593,9 +647,19 @@ msgstr ""
 msgid ""
 "You are attempting to redirect to the same URL as the origin. Please choose "
 "a different URL to redirect to."
-msgstr ""
-"Ugyanarra az URL-re próbál átirányítani, mint a forrás. Kérjük, válasszon "
-"egy másik URL-t célként az átirányításhoz."
+msgstr "Az átirányítás cél-URL-je megegyezik a forrás-URL-lel. Kérjük, válasszon másik átirányítási cél-URL-t."
+
+#: classes/redirect/validation/redirect-self-wp-json-redirect-validation.php:28
+msgid ""
+"You cannot create a redirect from the WordPress REST API endpoint (/wp-"
+"json). Please choose a different origin URL."
+msgstr "Nem hozhat létre átirányítást a WordPress REST API végpontjáról (/wp-json). Kérjük, válasszon másik forrás-URL-t."
+
+#: classes/redirect/validation/redirect-self-wp-json-redirect-validation.php:35
+msgid ""
+"You cannot create a redirect to the WordPress REST API endpoint (/wp-json). "
+"Please choose a different URL to redirect to."
+msgstr "Nem hozhat létre átirányítást a WordPress REST API végpontjára (/wp-json). Kérjük, válasszon másik átirányítási cél-URL-t."
 
 #. translators: %1$s expands to the subdirectory WordPress is installed.
 #: classes/redirect/validation/redirect-subdirectory-validation.php:37
@@ -604,14 +668,11 @@ msgid ""
 "Your redirect is missing the subdirectory where WordPress is installed in. "
 "This will result in a redirect that won't work. Make sure the redirect "
 "starts with %1$s"
-msgstr ""
-"Az átirányításból hiányzik az az alkönyvtár, ahová a WordPress telepítve "
-"van. Ez nem működő átirányítást eredményez. Győződjön meg róla, hogy az "
-"átirányítás %1$s-sel kezdődik"
+msgstr "Az átirányításból hiányzik az az alkönyvtár, ahová a WordPress telepítve van. Ez nem működő átirányítást eredményez. Győződjön meg róla, hogy az átirányítás ezzel kezdődik: %1$s"
 
 #: classes/redirect/validation/redirect-uniqueness-validation.php:32
 msgid "The old URL already exists as a redirect."
-msgstr "A régi URL már létezik átirányításként."
+msgstr "A régi URL már szerepel átirányításként."
 
 #. translators: 1: opens a link to a related help center article. 2: closes
 #. the link.
@@ -621,10 +682,7 @@ msgid ""
 "The redirect type is the HTTP response code sent to the browser telling the "
 "browser what type of redirect is served. %1$sLearn more about redirect "
 "types%2$s."
-msgstr ""
-"Az átirányítás típusa az a HTTP válaszkód, amelyet a böngészőnek küldünk, és"
-" amely közli, milyen típusú átirányítást szolgálunk ki. %1$sTudjon meg "
-"többet az átirányítási típusokról%2$s."
+msgstr "Az átirányítás típusa az a HTTP-válaszkód, amelyet a böngészőnek küldünk, és amely közli, milyen típusú átirányítást szolgálunk ki. %1$sTudjon meg többet az átirányítási típusokról%2$s."
 
 #: classes/redirect/views/redirects-form.php:59
 msgid "URL"
@@ -669,9 +727,7 @@ msgstr ""
 msgid ""
 "As you're on Apache, you should add the following include to the website "
 "httpd config file:"
-msgstr ""
-"Mivel Apache-ot használ, adja hozzá a következő include-ot a webhely httpd "
-"konfigurációs fájljához:"
+msgstr "Mivel Apache-ot használ, adja hozzá a következő include-ot a webhely httpd konfigurációs fájljához:"
 
 #. translators: %s: '.htaccess' file name.
 #: classes/redirect/views/redirects-tab-settings.php:37
@@ -706,17 +762,13 @@ msgstr "Átirányítások beállításai"
 msgid ""
 "Since this site is a multisite, web server redirect methods have been "
 "disabled to prevent issues."
-msgstr ""
-"Mivel ez a webhely multisite, a webszerveres átirányítási módszerek le "
-"vannak tiltva a problémák megelőzése érdekében."
+msgstr "Mivel ez egy többwebhelyes telepítés, a webszerveres átirányítási módszereket a problémák megelőzése érdekében letiltottuk."
 
 #: classes/redirect/views/redirects-tab-settings.php:84
 msgid ""
 "Read more about why web server redirect methods have been disabled on a "
 "multisite."
-msgstr ""
-"Olvasson többet arról, miért vannak letiltva a webszerveres átirányítási "
-"módszerek multisite környezetben."
+msgstr "Bővebben arról, miért vannak letiltva a webszerveres átirányítási módszerek többwebhelyes környezetben."
 
 #: classes/redirect/views/redirects-tab-settings.php:101
 msgid "Web server"
@@ -757,29 +809,15 @@ msgid ""
 "%s can generate redirect files that can be included in your website web "
 "server configuration. If you choose this option the PHP redirects will be "
 "disabled. Only check this option if you know what you are doing!"
-msgstr ""
-"A %s képes olyan átirányítási fájlokat generálni, amelyek beilleszthetők a "
-"webhely webszerver-konfigurációjába. Ha ezt az opciót választja, a PHP-"
-"átirányítások le lesznek tiltva. Csak akkor jelölje be ezt az opciót, ha "
-"tudja, mit csinál!"
+msgstr "A %s képes olyan átirányítási fájlokat generálni, amelyek beilleszthetők a webhely webszerver-konfigurációjába. Ha ezt az opciót választja, a PHP-átirányítások le lesznek tiltva. Csak akkor jelölje be ezt az opciót, ha tudja, mit csinál!"
 
 #: classes/redirect/views/redirects-tab-settings.php:122
 msgid "Save Changes"
 msgstr "Változtatások mentése"
 
-#. translators: %1$s: Yoast SEO Premium, %2$s and %3$s expand to a link to the
-#. admin page.
-#: classes/term-watcher.php:292
-#, php-format
-msgid ""
-"%1$s created a %2$sredirect%3$s from the old term URL to the new term URL."
-msgstr ""
-"%1$s létrehozott egy %2$sátirányítást%3$s a régi kifejezés URL-jéről az új "
-"kifejezés URL-jére."
-
 #. translators: %1$s: Yoast SEO Premium, %2$s: List with actions, %3$s: <a
 #. href='{post_with_explaination.}'>, %4$s: </a>, %5%s: The removed url.
-#: classes/term-watcher.php:305
+#: classes/term-watcher.php:309
 #, php-format
 msgid ""
 "%1$s detected that you deleted a term (%5$s). You can either: %2$s Don't "
@@ -794,21 +832,17 @@ msgstr ""
 msgid ""
 "If you need a list of all public posts, terms and related keyphrases, you "
 "can generate a CSV file using the %s button below."
-msgstr ""
-"Ha szüksége van az összes nyilvános bejegyzés, kifejezés és kapcsolódó "
-"kulcskifejezés listájára, az alábbi %s gombbal CSV fájlt készíthet."
+msgstr "Ha szüksége van az összes nyilvános bejegyzés, kifejezés és kapcsolódó kulcskifejezés listájára, az alábbi %s gombbal CSV-fájlt készíthet."
 
 #: classes/views/export-keywords.php:21
 msgid "Export keyphrases to a CSV file"
-msgstr "Kulcskifejezések exportálása CSV fájlba"
+msgstr "Kulcskifejezések exportálása CSV-fájlba"
 
 #: classes/views/export-keywords.php:23
 msgid ""
 "You can add or remove columns to be included in the export using the "
 "checkboxes below."
-msgstr ""
-"Az alábbi jelölőnégyzetekkel hozzáadhat vagy eltávolíthat oszlopokat az "
-"exporthoz."
+msgstr "Az alábbi jelölőnégyzetekkel oszlopokat adhat hozzá az exportáláshoz, illetve távolíthat el onnan."
 
 #: classes/views/export-keywords.php:30
 msgid "Export keyphrase scores"
@@ -850,21 +884,17 @@ msgstr ""
 msgid ""
 "Exporting data can take a long time when there are many posts, pages, public"
 " custom post types or terms."
-msgstr ""
-"Az adatok exportálása sok időt vehet igénybe, ha sok bejegyzés, oldal, "
-"nyilvános egyedi bejegyzéstípus vagy kifejezés van."
+msgstr "Az adatok exportálása sok időt vehet igénybe, ha sok bejegyzés, oldal, nyilvános egyedi bejegyzéstípus vagy kifejezés van."
 
 #: classes/views/export-redirects.php:10
 msgid "Export redirects to a CSV file"
-msgstr "Átirányítások exportálása CSV fájlba"
+msgstr "Átirányítások exportálása CSV-fájlba"
 
 #: classes/views/export-redirects.php:11
 msgid ""
 "If you need to have a list of all redirects, you can generate a CSV file "
 "using the button below."
-msgstr ""
-"Ha szüksége van az összes átirányítás listájára, az alábbi gombbal CSV fájlt"
-" készíthet."
+msgstr "Ha szüksége van az összes átirányítás listájára, az alábbi gombbal CSV-fájlt készíthet."
 
 #: classes/views/export-redirects.php:12
 msgid ""
@@ -912,7 +942,7 @@ msgstr "Importálás innen:"
 
 #: classes/views/import-redirects.php:52
 msgid "Import from a CSV file"
-msgstr "Importálás CSV fájlból"
+msgstr "Importálás CSV-fájlból"
 
 #: classes/views/import-redirects.php:56
 msgid "Choose a CSV file from your computer:"
@@ -920,7 +950,7 @@ msgstr "Válasszon egy CSV fájlt a számítógépéről:"
 
 #: classes/views/import-redirects.php:59
 msgid "Import CSV file"
-msgstr "CSV fájl importálása"
+msgstr "CSV-fájl importálása"
 
 #. translators: Hidden accessibility text.
 #: classes/views/import-redirects.php:75
@@ -941,8 +971,7 @@ msgstr "Mi a következő lépés?"
 
 #: classes/views/thank-you.php:17
 msgid "Rank with articles you want to rank with"
-msgstr ""
-"Érjen jobb helyezést azokkal a cikkekkel, amelyekkel szeretne rangsorolni"
+msgstr "Érjen el jobb helyezést azokkal a cikkekkel, amelyeket előkelő helyre szeretne juttatni"
 
 #. translators: %1$s: <strong>, %2$s: </strong>
 #: classes/views/thank-you.php:24
@@ -984,8 +1013,7 @@ msgstr "Szerezzen még több zöld pontot"
 
 #: classes/views/thank-you.php:61
 msgid "Keep your site well-organised so people won't get lost"
-msgstr ""
-"Tartsa jól rendezett állapotban a webhelyét, hogy az emberek ne vesszenek el"
+msgstr "Tartsa rendezetten a webhelyét, hogy a látogatók ne tévedjenek el"
 
 #. translators: %1$s: Yoast SEO, %2$s: <strong>, %3$s: </strong>
 #: classes/views/thank-you.php:68
@@ -994,14 +1022,11 @@ msgid ""
 "The %1$s %2$sRedirect Manager%3$s automatically prevents visitors from "
 "reaching a dead end whenever you move or delete content. It also makes "
 "managing your existing redirects easy."
-msgstr ""
-"A %1$s %2$sRedirect Manager%3$s automatikusan megakadályozza, hogy a "
-"látogatók zsákutcába jussanak, amikor áthelyez vagy töröl tartalmat. "
-"Emellett megkönnyíti a meglévő átirányítások kezelését."
+msgstr "A %1$s %2$sRedirect Manager%3$s automatikusan megakadályozza, hogy a látogatók zsákutcába jussanak, amikor áthelyez vagy töröl tartalmat. Emellett megkönnyíti a meglévő átirányítások kezelését."
 
 #: classes/views/thank-you.php:79
 msgid "Check out the Redirect Manager"
-msgstr "Nézze meg a Redirect Managert"
+msgstr "Az átirányításkezelő megtekintése"
 
 #: classes/views/thank-you.php:84
 msgid "Master vital SEO skills with our online courses"
@@ -1014,127 +1039,241 @@ msgstr "Sajátítsa el a létfontosságú SEO-készségeket online tanfolyamaink
 msgid ""
 "%1$s grants you direct access to %2$sall premium %3$s academy courses%4$s. "
 "Learn all the ins and outs of holistic SEO from industry experts."
-msgstr ""
-"%1$s közvetlen hozzáférést biztosít a %2$sminden prémium %3$s akadémiai "
-"tanfolyamhoz%4$s. Tanulja meg a holisztikus SEO minden csínját-bínját "
-"iparági szakértőktől."
+msgstr "%1$s közvetlen hozzáférést biztosít az %2$sösszes prémium %3$s akadémiai tanfolyamhoz%4$s. Tanulja meg a holisztikus SEO minden csínját-bínját iparági szakértőktől."
 
 #: classes/views/thank-you.php:104
 msgid "Browse our courses"
-msgstr "Böngéssze tanfolyamainkat"
+msgstr "Tanfolyamaink böngészése"
 
-#: classes/watcher.php:240
+#: classes/watcher.php:234
 msgid "Old URL:"
 msgstr "Régi URL:"
 
-#: classes/watcher.php:242
+#: classes/watcher.php:236
 msgid "New URL:"
 msgstr "Új URL:"
 
-#: classes/watcher.php:247
-msgid "Ok"
-msgstr "OK"
+#: classes/watcher.php:241
+msgid "Got it"
+msgstr "Értem"
 
-#: classes/watcher.php:253
+#: classes/watcher.php:248
+msgid "Manage redirects"
+msgstr "Átirányítások kezelése"
+
+#: classes/watcher.php:249
+msgid "(Opens in a new browser tab)"
+msgstr "(Új böngészőlapon nyílik meg)"
+
+#: classes/watcher.php:256
 msgid "Undo"
 msgstr "Visszavonás"
 
-#: classes/watcher.php:271
+#: classes/watcher.php:274
 msgid "Redirect it to another URL"
 msgstr "Átirányítás egy másik URL-re"
 
-#: classes/watcher.php:272
+#: classes/watcher.php:275
 msgid "Make it serve a 410 Content Deleted header"
 msgstr "Állítsa be, hogy 410 Content Deleted fejlécet adjon vissza"
 
-#: premium.php:277
+#: premium.php:281
 msgid "Create Redirect"
 msgstr "Átirányítás létrehozása"
 
-#: premium.php:312
+#: premium.php:331
 msgid "Learn more about including custom fields in the page analysis"
-msgstr "Tudjon meg többet az egyéni mezők oldalelemzésbe való bevonásáról"
+msgstr "További tudnivalók az egyéni mezők oldalelemzésbe való bevonásáról"
 
-#: premium.php:319
+#: premium.php:338
 msgid "Custom fields to include in page analysis"
 msgstr "Az oldalelemzésbe bevonandó egyéni mezők"
 
-#: premium.php:374
+#: premium.php:393
 msgid "Enabled"
 msgstr "Engedélyezve"
 
+#: src/abilities/user-interface/organization-fields-integration.php:49
+msgid "A description of the organization, of at most 2000 characters."
+msgstr "A szervezet legfeljebb 2000 karakteres leírása."
+
+#: src/abilities/user-interface/organization-fields-integration.php:54
+msgid "The email address of the organization."
+msgstr "A szervezet e-mail-címe."
+
+#: src/abilities/user-interface/organization-fields-integration.php:62
+msgid "The phone number of the organization."
+msgstr "A szervezet telefonszáma."
+
+#: src/abilities/user-interface/organization-fields-integration.php:69
+msgid "The registered legal name of the organization."
+msgstr "A szervezet bejegyzett hivatalos neve."
+
+#: src/abilities/user-interface/organization-fields-integration.php:74
+msgid "The date the organization was founded, in the YYYY-MM-DD format."
+msgstr "A szervezet alapításának dátuma, ÉÉÉÉ-HH-NN formátumban."
+
+#: src/abilities/user-interface/organization-fields-integration.php:80
+msgid ""
+"The number of employees of the organization, either as a number, like "
+"\"25\", or as a range, like \"11-50\"."
+msgstr "A szervezet alkalmazottainak száma számként (például „25”) vagy tartományként (például „11-50”) adható meg."
+
+#: src/abilities/user-interface/organization-fields-integration.php:86
+msgid "The VAT ID of the organization."
+msgstr "A szervezet VAT ID-ja."
+
+#: src/abilities/user-interface/organization-fields-integration.php:94
+msgid "The tax ID of the organization."
+msgstr "A szervezet adó ID-ja."
+
+#: src/abilities/user-interface/organization-fields-integration.php:101
+msgid "The ISO 6523 code of the organization."
+msgstr "A szervezet ISO 6523-kódja."
+
+#: src/abilities/user-interface/organization-fields-integration.php:105
+msgid "The DUNS number of the organization."
+msgstr "A szervezet DUNS-száma."
+
+#: src/abilities/user-interface/organization-fields-integration.php:109
+msgid "The LEI code of the organization."
+msgstr "A szervezet LEI-kódja."
+
+#: src/abilities/user-interface/organization-fields-integration.php:113
+msgid "The NAICS code of the organization."
+msgstr "A szervezet NAICS-kódja."
+
+#: src/abilities/user-interface/organization-fields-integration.php:118
+msgid ""
+"The URL of the Mastodon profile of the organization. Only used when "
+"company_or_person is \"company\". For a person, the Mastodon URL from the "
+"user's profile is used instead."
+msgstr "A szervezet Mastodon-profiljának URL-je. Csak akkor használatos, ha a company_or_person értéke „company”. Személy esetén a felhasználói profil Mastodon-URL-je használatos helyette."
+
+#. translators: 1: the name of a setting, 2: Yoast Local SEO, 3: the kind of
+#. value, like "email address".
+#: src/abilities/user-interface/organization-fields-integration.php:143
+#, php-format
+msgid ""
+"The %1$s setting was not changed, because %2$s is active and provides the "
+"%3$s of the organization."
+msgstr "A(z) %1$s beállítás nem változott, mert a(z) %2$s aktív, és a szervezet %3$s értékét biztosítja."
+
+#. translators: %s expands to the name of a setting.
+#: src/abilities/user-interface/organization-fields-integration.php:164
+#, php-format
+msgid ""
+"The %s setting was not changed, because it is not a valid email address."
+msgstr "A(z) %s beállítás nem változott, mert nem érvényes e-mail-cím"
+
+#. translators: %s expands to the name of a setting.
+#: src/abilities/user-interface/organization-fields-integration.php:193
+#, php-format
+msgid "The %s setting was not changed, because it is not an existing date."
+msgstr "A(z) %s beállítás nem változott, mert nem létező dátum."
+
+#. translators: %s expands to the name of a setting.
+#: src/abilities/user-interface/organization-fields-integration.php:215
+#, php-format
+msgid ""
+"The %s setting was not changed, because the lower bound of the range is "
+"above its upper bound."
+msgstr "A(z) %s beállítás nem változott, mert a tartomány alsó határa nagyobb a felső határánál."
+
+#. translators: 1: Yoast Local SEO, 2: the kind of value, like "email
+#. address".
+#: src/abilities/user-interface/organization-fields-integration.php:236
+#, php-format
+msgid "%1$s is active on this site and provides the %2$s of the organization."
+msgstr "A(z) %1$s aktív ezen a webhelyen, és a szervezet %2$s értékét biztosítja."
+
+#: src/abilities/user-interface/organization-fields-integration.php:252
+msgid "email address"
+msgstr "e-mail-cím"
+
+#: src/abilities/user-interface/organization-fields-integration.php:254
+msgid "phone number"
+msgstr "telefonszám"
+
+#: src/abilities/user-interface/organization-fields-integration.php:256
+msgid "VAT ID"
+msgstr "ÁFA-azonosító"
+
+#: src/abilities/user-interface/organization-fields-integration.php:258
+msgid "tax ID"
+msgstr "adó ID"
+
 #. translators: %1$s: Yoast SEO
-#: src/addon-installer.php:144
+#: src/addon-installer.php:185
 #, php-format
 msgid "Install latest %1$s"
 msgstr "A legújabb %1$s telepítése"
 
 #. translators: %1$s: Yoast SEO, %2$s: The minimum Yoast SEO version required,
 #. %3$s: Yoast SEO Premium.
-#: src/addon-installer.php:152
+#: src/addon-installer.php:193
 #, php-format
 msgid "%1$s %2$s must be installed and activated in order to use %3$s."
 msgstr "A %1$s %2$s telepítése és aktiválása szükséges a %3$s használatához."
 
 #. translators: %1$s: Yoast SEO, %2$s: Link start tag, %3$s: Link end tag.
-#: src/addon-installer.php:197
+#: src/addon-installer.php:238
 #, php-format
 msgid "%2$sNetwork Activate %1$s now%3$s"
-msgstr "%2$s%1$s hálózati aktiválása most%3$s"
+msgstr "%2$sA(z) %1$s hálózati bekapcsolása most%3$s"
 
 #. translators: %1$s: Yoast SEO, %2$s: Link start tag, %3$s: Link end tag.
-#: src/addon-installer.php:202
+#: src/addon-installer.php:243
 #, php-format
 msgid "%2$sActivate %1$s now%3$s"
-msgstr "%2$s%1$s aktiválása most%3$s"
+msgstr "%2$sA(z) %1$s bekapcsolása most%3$s"
 
 #. translators: %1$s: Yoast SEO, %2$s: Link start tag, %3$s: Link end tag.
-#: src/addon-installer.php:209
+#: src/addon-installer.php:250
 #, php-format
 msgid "%2$sUpgrade %1$s now%3$s"
 msgstr "%2$s%1$s frissítése most%3$s"
 
 #. translators: %1$s: Yoast SEO, %2$s: Link start tag, %3$s: Link end tag.
-#: src/addon-installer.php:214
+#: src/addon-installer.php:255
 #, php-format
 msgid "%2$sInstall %1$s now%3$s"
 msgstr "%2$s%1$s telepítése most%3$s"
 
 #. translators: %1$s: Yoast SEO, %2$s: The minimum Yoast SEO version required.
-#: src/addon-installer.php:227
+#: src/addon-installer.php:268
 #, php-format
 msgid "Please contact a network administrator to install %1$s %2$s."
-msgstr ""
-"Kérjük, lépjen kapcsolatba egy hálózati rendszergazdával a %1$s %2$s "
-"telepítéséhez."
+msgstr "Kérjük, lépjen kapcsolatba egy hálózati rendszergazdával a %1$s %2$s telepítéséhez."
 
 #. translators: %1$s: Yoast SEO, %2$s: The minimum Yoast SEO version required.
-#: src/addon-installer.php:231
+#: src/addon-installer.php:272
 #, php-format
 msgid "Please contact an administrator to install %1$s %2$s."
-msgstr ""
-"Kérjük, lépjen kapcsolatba egy rendszergazdával a %1$s %2$s telepítéséhez."
+msgstr "Kérjük, lépjen kapcsolatba egy rendszergazdával a %1$s %2$s telepítéséhez."
 
 #. translators: The text to show when a paragraph break is suggested through
 #. AI Optimize.
-#: src/ai/optimize/suggestions-postprocessor/application/suggestion-processor.php:145
+#: src/ai/optimize/suggestions-postprocessor/application/suggestion-processor.php:141
 msgid "Paragraph break"
-msgstr "Bekezdésváltás"
+msgstr "Bekezdéstörés"
 
-#: src/deprecated/integrations/admin/ai-consent-integration.php:137
-msgid "AI features"
-msgstr "AI funkciók"
+#. translators: %1$s expands to Yoast.
+#: src/ai/summarize/user-interface/ai-summarize-integration.php:149
+#, php-format
+msgid "%1$s AI Blocks"
+msgstr "%1$s AI-blokkok"
 
 #: src/integrations/admin/cornerstone-column-integration.php:136
 #: src/integrations/admin/cornerstone-taxonomy-column-integration.php:108
 msgid "Is this cornerstone content?"
-msgstr "Ez sarokkő tartalom?"
+msgstr "Ez sarokkőtartalom?"
 
 #. translators: Hidden accessibility text.
 #: src/integrations/admin/cornerstone-column-integration.php:138
 #: src/integrations/admin/cornerstone-taxonomy-column-integration.php:110
 msgid "Cornerstone content"
-msgstr "Sarokkő tartalom"
+msgstr "Sarokkőtartalom"
 
 #: src/integrations/admin/extension-importer/content-processor.php:336
 msgid "Table of contents"
@@ -1145,7 +1284,7 @@ msgstr "Tartalomjegyzék"
 #: src/integrations/admin/inclusive-language-taxonomy-column-integration.php:116
 #: src/integrations/admin/inclusive-language-taxonomy-column-integration.php:117
 msgid "Inclusive language score"
-msgstr "Inkluzív nyelvhasználat pontszáma"
+msgstr "Inkluzív nyelvhasználati pontszám"
 
 #. translators: Hidden accessibility text.
 #: src/integrations/admin/inclusive-language-filter-integration.php:60
@@ -1156,7 +1295,7 @@ msgstr "Szűrés inkluzív nyelvhasználati pontszám szerint"
 msgid "All Inclusive Language Scores"
 msgstr "Minden inkluzív nyelvhasználati pontszám"
 
-#: src/integrations/admin/thank-you-page-integration.php:80
+#: src/integrations/admin/thank-you-page-integration.php:84
 msgid "Installation Successful"
 msgstr "Telepítés sikeres"
 
@@ -1166,9 +1305,7 @@ msgstr "Telepítés sikeres"
 msgid ""
 "Please %2$supdate %1$s to the latest version%3$s to ensure you can fully use"
 " all Premium settings and features."
-msgstr ""
-"Kérjük, %2$sfrissítse a(z) %1$s-t a legújabb verzióra%3$s, hogy teljes "
-"mértékben használhassa az összes Premium beállítást és funkciót."
+msgstr "Kérjük, %2$sfrissítsen a(z) %1$s legújabb verziójára%3$s, hogy teljes mértékben használhassa az összes Premium beállítást és funkciót."
 
 #. translators: 1: Yoast SEO Premium
 #: src/integrations/admin/update-premium-notification.php:129
@@ -1234,9 +1371,7 @@ msgstr "Díjak"
 msgid ""
 "Comma separated, e.g. %1$sMost likely to succeed - 1991, Smartest in class -"
 " 1990%2$s"
-msgstr ""
-"Vesszővel elválasztva, pl. %1$sLegvalószínűbb, hogy sikeres lesz - 1991, Az "
-"osztály legokosabbja - 1990%2$s"
+msgstr "Vesszővel elválasztva, pl. %1$sLegnagyobb eséllyel lesz sikeres - 1991, az osztály legokosabbja - 1990%2$s"
 
 #: src/integrations/admin/user-profile-integration.php:105
 msgid "Expertise in"
@@ -1285,7 +1420,7 @@ msgstr "Pl. %1$sAcme inc%2$s"
 
 #: src/integrations/admin/user-profile-integration.php:145
 msgid "Yoast SEO Schema enhancements"
-msgstr "Yoast SEO Schema fejlesztések"
+msgstr "Yoast SEO-sémafejlesztések"
 
 #: src/integrations/admin/user-profile-integration.php:146
 msgid ""
@@ -1300,17 +1435,132 @@ msgstr ""
 #: src/integrations/blocks/estimated-reading-time-block.php:54
 msgid "minute"
 msgid_plural "minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "perc"
+msgstr[1] "perc"
 
-#: src/integrations/frontend-inspector.php:69
+#: src/integrations/frontend-inspector.php:92
 msgid "Front-end SEO inspector"
-msgstr "Front-end SEO ellenőrző"
+msgstr "Webhelyoldali SEO-ellenőrző"
 
 #: src/integrations/third-party/mastodon.php:147
 #: src/user-meta/framework/additional-contactmethods/mastodon.php:28
 msgid "Mastodon profile URL"
 msgstr "Mastodon-profil URL"
+
+#: src/task-list/application/tasks/child-tasks/set-social-sharing-images-child.php:89
+msgid "Open editor"
+msgstr "Szerkesztő megnyitása"
+
+#: src/task-list/application/tasks/child-tasks/set-social-sharing-images-child.php:104
+msgid "(no title)"
+msgstr "(nincs cím)"
+
+#: src/task-list/application/tasks/cornerstone-workout.php:92
+#: src/task-list/application/tasks/orphaned-workout.php:92
+msgid "Start the workout"
+msgstr "A gyakorlat indítása"
+
+#: src/task-list/application/tasks/cornerstone-workout.php:105
+msgid "Do the Cornerstone Approach workout"
+msgstr "A Cornerstone Approach gyakorlat elvégzése"
+
+#: src/task-list/application/tasks/cornerstone-workout.php:106
+msgid ""
+"When important pages aren't well-linked, search engines can't tell they "
+"matter most. Strengthening cornerstone content helps your main topics rank "
+"better."
+msgstr "Ha a fontos oldalakra nem mutatnak megfelelő hivatkozások, a keresőmotorok nem tudják, mely oldalak a legfontosabbak. A sarokkőtartalom megerősítése segít abban, hogy a fő témái jobb helyezést érjenek el."
+
+#: src/task-list/application/tasks/organization-schema.php:103
+msgid "Take me there"
+msgstr "Ugrás oda"
+
+#: src/task-list/application/tasks/organization-schema.php:116
+msgid "Fill in Organization Schema"
+msgstr "A szervezeti séma kitöltése"
+
+#. translators: %1$s and %3$s expands to an opening p tag, %2$s and %4$s
+#. expand to a closing p tag
+#: src/task-list/application/tasks/organization-schema.php:119
+#, php-format
+msgid ""
+"%1$sMissing organization details makes it harder for search engines to "
+"recognize your brand. Completing this helps your business appear correctly "
+"in search results.%2$s%3$sGo to Site representation, open Additional "
+"organization info, and fill in the information.%4$s"
+msgstr "%1$sA szervezet adatainak hiánya megnehezíti a keresőmotorok számára a márka felismerését. Az adatok kitöltésével vállalkozása megfelelően jelenhet meg a keresési találatok között.%2$s%3$sLépjen a webhely megjelenítése részhez, nyissa meg a szervezet további adatait, és töltse ki az adatokat.%4$s"
+
+#: src/task-list/application/tasks/orphaned-workout.php:105
+msgid "Do the Orphaned Content workout"
+msgstr "Az árva tartalmakról szóló gyakorlat elvégzése"
+
+#: src/task-list/application/tasks/orphaned-workout.php:106
+msgid ""
+"Pages without internal links are hard to find by users and search engines. "
+"Linking them up improves discoverability for both users and search engines."
+msgstr "A belső hivatkozások nélküli oldalakat nehezen találják meg a felhasználók és a keresőmotorok. A belső hivatkozások hozzáadása mind a felhasználók, mind a keresőmotorok számára megkönnyíti ezeknek az oldalaknak a megtalálását."
+
+#: src/task-list/application/tasks/set-social-appearance-templates.php:129
+msgid "Set social templates"
+msgstr "Közösségimédia-sablonok beállítása"
+
+#. translators: %1$s expands to the post type label this task is about
+#: src/task-list/application/tasks/set-social-appearance-templates.php:145
+#, php-format
+msgid "Set social media appearance templates: %1$s"
+msgstr "Közösségimédia-megjelenési sablonok beállítása: %1$s"
+
+#. translators: %1$s and %3$s expands to an opening p tag, %2$s and %4$s
+#. expand to a closing p tag
+#: src/task-list/application/tasks/set-social-appearance-templates.php:148
+#, php-format
+msgid ""
+"%1$sUnstyled previews and general descriptions can lower engagement when "
+"shared on social media. Templates keep every post on brand and share-ready "
+"automatically.%2$s%3$sOpen Social settings, choose your content type, and "
+"set a default image, title, and description.%4$s"
+msgstr "%1$sA formázás nélküli előnézetek és az általános leírások csökkenthetik az elköteleződést a közösségi médiában való megosztáskor. A sablonokkal minden bejegyzés automatikusan illeszkedik a márkához, és készen áll a megosztásra.%2$s%3$sNyissa meg a közösségimédia-beállításokat, válassza ki a tartalom típusát, majd állítson be egy alapértelmezett képet, címet és leírást.%4$s"
+
+#. translators: %1$s expands to the post type label this task is about.
+#: src/task-list/application/tasks/set-social-sharing-images.php:105
+#, php-format
+msgid "Set social sharing images in your recent content: %1$s"
+msgstr "Közösségi megosztási képek beállítása a legutóbbi tartalmaknál: %1$s"
+
+#. translators: %1$s and %3$s expands to an opening p tag, %2$s and %4$s
+#. expand to a closing p tag
+#: src/task-list/application/tasks/set-social-sharing-images.php:108
+#, php-format
+msgid ""
+"%1$sUnstyled preview images can lower engagement when shared on social "
+"media. Keep every post on brand. %2$s%3$sOpen the post, go to Yoast SEO "
+"Analysis tab, click on Social, and add a relevant image to your preview.%4$s"
+msgstr "%1$sA formázás nélküli előnézeti képek csökkenthetik az elköteleződést a közösségi médiában való megosztáskor. Gondoskodjon róla, hogy minden bejegyzés illeszkedjen a márkához. %2$s%3$sNyissa meg a bejegyzést, lépjen a Yoast SEO-elemzés fülre, kattintson a Közösségi elemre, és adjon hozzá egy megfelelő képet az előnézethez.%4$s"
+
+#: assets/blocks/ai-blocks/summary/block.json
+msgctxt "block title"
+msgid "Yoast AI Summarize"
+msgstr "Yoast AI Summarize"
+
+#: assets/blocks/ai-blocks/summary/block.json
+msgctxt "block description"
+msgid "Adds a short AI summary of your content."
+msgstr "Rövid AI-összefoglalót ad a tartalomhoz."
+
+#: assets/blocks/ai-blocks/summary/block.json
+msgctxt "block keyword"
+msgid "summary"
+msgstr "összefoglaló"
+
+#: assets/blocks/ai-blocks/summary/block.json
+msgctxt "block keyword"
+msgid "tldr"
+msgstr "tldr"
+
+#: assets/blocks/ai-blocks/summary/block.json
+msgctxt "block keyword"
+msgid "key takeaways"
+msgstr "főbb tanulságok"
 
 #: assets/blocks/dynamic-blocks/estimated-reading-time/block.json
 msgctxt "block title"
@@ -1443,3 +1693,29 @@ msgstr "linkek"
 msgctxt "block keyword"
 msgid "toc"
 msgstr "toc"
+
+#, php-format
+#~ msgid ""
+#~ "%1$s created a %2$sredirect%3$s from the old post URL to the new post URL."
+#~ msgstr ""
+#~ "%1$s %2$sátirányítást%3$s hozott létre a régi bejegyzés URL-jéről az új "
+#~ "bejegyzés URL-jére."
+
+#~ msgid "Settings"
+#~ msgstr "Beállítások"
+
+#~ msgid "Redirects per page"
+#~ msgstr "Átirányítások oldalanként"
+
+#, php-format
+#~ msgid ""
+#~ "%1$s created a %2$sredirect%3$s from the old term URL to the new term URL."
+#~ msgstr ""
+#~ "%1$s létrehozott egy %2$sátirányítást%3$s a régi kifejezés URL-jéről az új "
+#~ "kifejezés URL-jére."
+
+#~ msgid "Ok"
+#~ msgstr "OK"
+
+#~ msgid "AI features"
+#~ msgstr "AI funkciók"

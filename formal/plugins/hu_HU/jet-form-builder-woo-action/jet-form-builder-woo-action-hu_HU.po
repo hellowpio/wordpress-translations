@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: JetFormBuilder WooCommerce Cart & Checkout Action 1.0.8\n"
+"Project-Id-Version: JetFormBuilder WooCommerce Cart & Checkout Action 1.0.10\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:48:49+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,12 +18,12 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: JetFormBuilder WooCommerce Cart & Checkout Action\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.0.8\n"
+"X-Plugin-Version: 1.0.10\n"
 
 #. Plugin Name of the plugin
 #: jet-form-builder-woo-action.php
 msgid "JetFormBuilder WooCommerce Cart & Checkout Action"
-msgstr "JetFormBuilder WooCommerce kosár és pénztár művelet"
+msgstr "JetFormBuilder WooCommerce-kosár- és pénztárművelet"
 
 #. Plugin URI of the plugin
 #: jet-form-builder-woo-action.php
@@ -33,7 +33,7 @@ msgstr "https://jetformbuilder.com/addons/woocommerce-cart-checkout-action/"
 #. Description of the plugin
 #: jet-form-builder-woo-action.php
 msgid "An addon that integrates forms and WooCommerce checkout."
-msgstr "A formákat és a WooCommerce pénztárat integráló bővítmény."
+msgstr "Az űrlapokat és a WooCommerce-pénztárat integráló bővítmény."
 
 #. Author of the plugin
 #: jet-form-builder-woo-action.php
@@ -45,33 +45,52 @@ msgstr "Crocoblock"
 msgid "https://crocoblock.com/"
 msgstr "https://crocoblock.com/"
 
-#: includes/ActionTrait.php:13 includes/JetFormBuilder/Actions/Action.php:25
+#: includes/ActionTrait.php:13 includes/JetFormBuilder/Actions/Action.php:27
 msgid "Add to Cart & Redirect to Checkout"
 msgstr "Kosárba tétel és átirányítás a pénztárhoz"
 
-#: includes/ActionTrait.php:202
+#: includes/ActionTrait.php:236 assets/build/builder.editor.js:1
+msgid ""
+"The custom price is only accepted from secure sources: Hidden fields, manual"
+" Select/Radio/Checkbox fields, or non-dynamic Calculated fields. Any other "
+"source (query parameters, repeaters, etc.) will be ignored, falling back to "
+"the default WooCommerce product price."
+msgstr "Az egyéni árat csak biztonságos forrásokból fogadjuk el: rejtett mezőkből, kézi kiválasztású, rádiógombos vagy jelölőnégyzetes mezőkből, illetve nem dinamikus számított mezőkből. Minden más forrást (lekérdezési paramétereket, ismétlőket stb.) figyelmen kívül hagyunk, és a WooCommerce-termék alapértelmezett árát használjuk."
+
+#: includes/ActionTrait.php:240 assets/build/builder.editor.js:1
+msgid ""
+"Price verification is disabled. The submitted price will be accepted as-is "
+"and can be modified by the user in the browser. Disable this only for user-"
+"defined prices (e.g., donations or tips)."
+msgstr "Az ár ellenőrzése ki van kapcsolva. A beküldött árat változtatás nélkül elfogadjuk, és a felhasználó módosíthatja a böngészőben. Csak felhasználó által megadott árak (például adományok vagy borravalók) esetén kapcsolja ki."
+
+#: includes/ActionTrait.php:258
 msgid "Type"
 msgstr "Típus"
 
-#: includes/ActionTrait.php:203 assets/build/builder.editor.js:1
+#: includes/ActionTrait.php:259 assets/build/builder.editor.js:1
 msgid "Label"
 msgstr "Címke"
 
-#: includes/ActionTrait.php:204
+#: includes/ActionTrait.php:260
 msgid "Date format"
 msgstr "Dátumformátum"
 
-#: includes/ActionTrait.php:205 assets/build/builder.editor.js:1
+#: includes/ActionTrait.php:261 assets/build/builder.editor.js:1
 msgid "Select form field"
 msgstr "Űrlapmező kiválasztása"
 
-#: includes/ActionTrait.php:206
+#: includes/ActionTrait.php:262
 msgid "Link text"
 msgstr "Hivatkozás szövege"
 
-#: includes/ActionTrait.php:207 assets/build/builder.editor.js:1
+#: includes/ActionTrait.php:263 assets/build/builder.editor.js:1
 msgid "Heading for Order Details"
 msgstr "Rendelési adatok címsora"
+
+#: includes/ActionTrait.php:264 assets/build/builder.editor.js:1
+msgid "Secure payment amount"
+msgstr "Biztonságos fizetési összeg"
 
 #: includes/JetEngine/Notifications/Manager.php:41
 msgid ""

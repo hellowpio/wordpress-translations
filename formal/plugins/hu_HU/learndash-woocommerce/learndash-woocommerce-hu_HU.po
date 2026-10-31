@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: LearnDash LMS - WooCommerce Integration 2.0.2\n"
+"Project-Id-Version: LearnDash LMS - WooCommerce Integration 2.0.3\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:49:17+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,12 +18,12 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: LearnDash LMS - WooCommerce Integration\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 2.0.2\n"
+"X-Plugin-Version: 2.0.3\n"
 
 #. Plugin Name of the plugin
 #: learndash_woocommerce.php
 msgid "LearnDash LMS - WooCommerce Integration"
-msgstr "LearnDash LMS - WooCommerce integráció"
+msgstr "LearnDash LMS - WooCommerce-integráció"
 
 #. Plugin URI of the plugin
 #: learndash_woocommerce.php
@@ -56,9 +56,7 @@ msgstr "Percenként egyszer"
 msgid ""
 "LearnDash LMS - WooCommerce Integration Add-on requires the following "
 "plugin(s) to be active:"
-msgstr ""
-"A LearnDash LMS - WooCommerce integrációs kiegészítő a következő "
-"bővítmény(ek) aktív állapotát igényli:"
+msgstr "A LearnDash LMS - WooCommerce-integrációs kiegészítő működéséhez a következő bővítmény(ek)nek aktívnak kell lenniük:"
 
 #. translators: HTML string, Support doc link.
 #: includes/class-learndash-woocommerce.php:385
@@ -104,34 +102,29 @@ msgstr ""
 "háttérben zajlik, és be kell állítani egy cron feladatot. A cron feladat "
 "beállításához kövesse %2$s."
 
-#: includes/class-learndash-woocommerce.php:1358
+#: includes/class-learndash-woocommerce.php:1441
 msgid "WooCommerce subscription settings related to LearnDash."
-msgstr "A LearnDash-hoz kapcsolódó WooCommerce előfizetési beállítások."
+msgstr "A LearnDash-hoz kapcsolódó WooCommerce-előfizetési beállítások."
 
-#: includes/class-learndash-woocommerce.php:1362
+#: includes/class-learndash-woocommerce.php:1445
 msgid "Access Removal on Expiration"
 msgstr "Hozzáférés megvonása lejáratkor"
 
-#: includes/class-learndash-woocommerce.php:1363
+#: includes/class-learndash-woocommerce.php:1446
 msgid "Disable"
 msgstr "Letiltás"
 
-#: includes/class-learndash-woocommerce.php:1364
+#: includes/class-learndash-woocommerce.php:1447
 msgid ""
 "Check the box to disable course access removal on subscription expiration. "
 "By default, course access will be revoked when a subscription expires."
-msgstr ""
-"Jelölje be a jelölőnégyzetet a tanfolyam-hozzáférés megvonásának "
-"letiltásához az előfizetés lejártakor. Alapértelmezés szerint az előfizetés "
-"lejártakor a tanfolyam-hozzáférés visszavonásra kerül."
+msgstr "Jelölje be a jelölőnégyzetet, ha ki szeretné kapcsolni a tanfolyamhoz való hozzáférés megvonását az előfizetés lejártakor. Alapértelmezés szerint az előfizetés lejártakor megszűnik a tanfolyamhoz való hozzáférés."
 
 #: learndash_woocommerce.php:76
 msgid ""
 "LearnDash LMS - WooCommerce add-on requires the following plugin(s) be "
 "active:"
-msgstr ""
-"A LearnDash LMS - WooCommerce kiegészítőhöz a következő bővítmény(ek)nek "
-"aktívnak kell lenniük:"
+msgstr "A LearnDash LMS - WooCommerce kiegészítő működéséhez a következő bővítmény(ek)nek aktívnak kell lenniük:"
 
 #: src/admin-views/notices/warnings/guest-checkout-enabled.php:24
 #: src/App/Admin/Translation.php:51
@@ -146,11 +139,7 @@ msgid ""
 "We've noticed that you have WooCommerce %1$sguest checkout%2$s enabled. "
 "Please note that purchasing a product with an associated LearnDash %3$s or "
 "%4$s still requires an account to ensure successful enrollment."
-msgstr ""
-"Észrevettük, hogy engedélyezve van a WooCommerce %1$svendégként történő "
-"fizetés%2$s. Kérjük, vegye figyelembe, hogy LearnDash %3$s vagy %4$s "
-"társítású termék megvásárlásához a sikeres beiratkozás érdekében továbbra is"
-" fiókra van szükség."
+msgstr "Észrevettük, hogy engedélyezve van a WooCommerce %1$svendégként történő fizetés%2$s. Kérjük, vegye figyelembe, hogy a LearnDash %3$s vagy %4$s valamelyikéhez társított termék megvásárlásához a sikeres beiratkozás érdekében továbbra is fiókra van szükség."
 
 #: src/admin-views/settings/sections/enrollment-status.php:27
 msgid "Order Status"
@@ -209,7 +198,7 @@ msgstr "Beállítások"
 #: src/App/Models/Products/Course.php:68
 #: src/deprecated/WC_Product_Course.php:92
 msgid "Add to cart"
-msgstr "Kosárba"
+msgstr "Kosárba teszem"
 
 #: src/App/Models/Products/Course.php:69
 #: src/deprecated/WC_Product_Course.php:93
@@ -245,32 +234,38 @@ msgstr ""
 
 #: src/App/Modules/Retroactive_Access_Tool/Handler.php:88
 msgid "Another LearnDash retroactive access tool process is already running."
-msgstr ""
-"Már fut egy másik LearnDash visszamenőleges hozzáférési eszköz folyamata."
+msgstr "Már fut a LearnDash visszamenőleges hozzáférési eszközének egy másik folyamata."
 
-#: src/deprecated/Learndash_WooCommerce_Tools.php:74
+#. translators: LearnDash course.
+#: src/App/Modules/Subscription_Access_Expiration/Handler.php:209
+#, php-format
+msgctxt "LearnDash course"
+msgid "The paid-up term ended and %s access was withdrawn."
+msgstr "A fizetett időszak lejárt, és visszavontuk a(z) %s hozzáférést."
+
+#: src/deprecated/Learndash_WooCommerce_Tools.php:75
 msgid "Status"
 msgstr "Állapot"
 
-#: src/deprecated/Learndash_WooCommerce_Tools.php:75
+#: src/deprecated/Learndash_WooCommerce_Tools.php:76
 msgid "Complete"
 msgstr "Befejezve"
 
-#: src/deprecated/Learndash_WooCommerce_Tools.php:76
+#: src/deprecated/Learndash_WooCommerce_Tools.php:77
 msgid "Please keep this page open until the process is complete."
 msgstr ""
 "Kérjük, tartsa nyitva ezt az oldalt, amíg a folyamat be nem fejeződik."
 
-#: src/deprecated/Learndash_WooCommerce_Tools.php:77
-#: src/deprecated/Learndash_WooCommerce_Tools.php:287
+#: src/deprecated/Learndash_WooCommerce_Tools.php:78
+#: src/deprecated/Learndash_WooCommerce_Tools.php:288
 msgid "Check LearnDash course access"
 msgstr "LearnDash tanfolyam-hozzáférés ellenőrzése"
 
-#: src/deprecated/Learndash_WooCommerce_Tools.php:286
+#: src/deprecated/Learndash_WooCommerce_Tools.php:287
 msgid "LearnDash retroactive course access"
 msgstr "LearnDash visszamenőleges tanfolyam-hozzáférés"
 
-#: src/deprecated/Learndash_WooCommerce_Tools.php:288
+#: src/deprecated/Learndash_WooCommerce_Tools.php:289
 msgid ""
 "Check LearnDash course access of WooCommerce integration. Enroll and "
 "unenroll users according to WooCommerce purchase/subscription data."

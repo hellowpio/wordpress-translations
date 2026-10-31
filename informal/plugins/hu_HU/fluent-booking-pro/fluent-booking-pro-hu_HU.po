@@ -1,0 +1,2264 @@
+# Copyright (C) 2026 WPManageNinja LLC
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: FluentBooking Pro 2.5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/fluent-booking-pro\n"
+"POT-Creation-Date: 2026-09-24T11:54:34+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: fluent-booking-pro\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: FluentBooking Pro\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 2.5.0\n"
+
+#. Plugin Name of the plugin
+#: fluent-booking-pro.php
+msgid "FluentBooking Pro"
+msgstr "FluentBooking Pro"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: fluent-booking-pro.php
+msgid "https://fluentbooking.com"
+msgstr "https://fluentbooking.com"
+
+#. Description of the plugin
+#: fluent-booking-pro.php
+msgid "The Pro version of FluentBooking Plugin"
+msgstr "A FluentBooking bővítmény Pro verziója"
+
+#. Author of the plugin
+#: fluent-booking-pro.php
+msgid "WPManageNinja LLC"
+msgstr "WPManageNinja LLC"
+
+#: app/Hooks/Handlers/FrontendRenderer.php:25
+msgid "Frontend Portal"
+msgstr "Frontend portál"
+
+#: app/Hooks/Handlers/FrontendRenderer.php:96
+#: app/Hooks/Handlers/FrontendRenderer.php:131
+msgid "You do not have permission to view the bookings"
+msgstr "Nincs jogosultságod a foglalások megtekintéséhez"
+
+#: app/Hooks/Handlers/FrontendRenderer.php:336
+msgid "Please login to view the bookings"
+msgstr "Kérlek, jelentkezz be a foglalások megtekintéséhez"
+
+#: app/Hooks/Handlers/GlobalPaymentHandler.php:141
+msgid "Please select a valid payment method"
+msgstr "Kérlek, válassz érvényes fizetési módot"
+
+#: app/Hooks/Handlers/RecurringEventHandler.php:65
+msgid "Recurring count field is required"
+msgstr "Az ismétlődések számának mezője kötelező"
+
+#: app/Hooks/Handlers/RecurringEventHandler.php:66
+msgid "Recurring count field must be at least 1"
+msgstr "Az ismétlődések számának legalább 1-nek kell lennie"
+
+#: app/Hooks/Handlers/RecurringEventHandler.php:67
+msgid "Recurring count field must be at most "
+msgstr "Az ismétlődések száma legfeljebb "
+
+#: app/Hooks/Handlers/UploadHandler.php:40
+#: app/Hooks/Handlers/UploadHandler.php:130
+msgid "Too many requests. Please try again in a minute."
+msgstr "Túl sok kérés. Próbáld újra egy perc múlva."
+
+#: app/Hooks/Handlers/UploadHandler.php:47
+msgid "No file received"
+msgstr "Nem érkezett fájl"
+
+#: app/Hooks/Handlers/UploadHandler.php:54
+#: app/Hooks/Handlers/UploadHandler.php:145
+msgid "Invalid request"
+msgstr "Érvénytelen kérés"
+
+#: app/Hooks/Handlers/UploadHandler.php:60
+msgid "Calendar Event not found"
+msgstr "Naptári esemény nem található"
+
+#: app/Hooks/Handlers/UploadHandler.php:75
+msgid "Field not found"
+msgstr "Mező nem található"
+
+#: app/Hooks/Handlers/UploadHandler.php:81
+msgid "No allowed file types configured"
+msgstr "Nincsenek engedélyezett fájltípusok beállítva"
+
+#: app/Hooks/Handlers/UploadHandler.php:99
+msgid "Validation fails for maximum file size"
+msgstr "A maximális fájlméret ellenőrzése sikertelen"
+
+#: app/Hooks/Handlers/UploadHandler.php:100
+msgid "Allowed image types does not match"
+msgstr "Az engedélyezett képtípusok nem egyeznek"
+
+#: app/Hooks/Handlers/UploadHandler.php:153
+msgid "File not found or already deleted"
+msgstr "A fájl nem található, vagy már törölték"
+
+#: app/Hooks/Handlers/UploadHandler.php:162
+msgid "File deleted successfully"
+msgstr "A fájl sikeresen törölve"
+
+#: app/Http/Controllers/BookingNoteController.php:51
+msgid "Note added, but not to the CRM profile."
+msgstr "A megjegyzés hozzáadva, de nem a CRM-profilhoz."
+
+#: app/Http/Controllers/BookingNoteController.php:51
+msgid "Note added"
+msgstr "Megjegyzés hozzáadva"
+
+#: app/Http/Controllers/BookingNoteController.php:79
+msgid "Note updated"
+msgstr "A megjegyzés frissítve"
+
+#: app/Http/Controllers/BookingNoteController.php:101
+msgid "Note deleted"
+msgstr "A megjegyzés törölve"
+
+#: app/Http/Controllers/CalendarController.php:23
+msgid "There should be at least one member"
+msgstr "Legalább egy tagnak kell lennie"
+
+#: app/Http/Controllers/CalendarController.php:34
+msgid "One or more selected team members are not authorized hosts"
+msgstr "A kiválasztott csapattagok közül egy vagy több nem jogosult házigazdaként eljárni"
+
+#: app/Http/Controllers/CalendarController.php:40
+msgid "You are not allowed to assign other users as hosts"
+msgstr "Nem jelölhetsz ki más felhasználókat házigazdának"
+
+#: app/Http/Controllers/CalendarController.php:48
+msgid "The selected organizer must be one of the assigned team members"
+msgstr "A kiválasztott szervezőnek a kijelölt csapattagok egyikének kell lennie"
+
+#: app/Http/Controllers/CalendarController.php:61
+#: app/Http/Controllers/CalendarController.php:177
+#: app/Http/Controllers/CalendarController.php:233
+#: app/Modules/SingleEvent/SingleEventController.php:73
+msgid "Data has been updated"
+msgstr "Az adatok frissítve"
+
+#: app/Http/Controllers/CalendarController.php:107
+msgid "Event slug field is required"
+msgstr "Az esemény slug mezőjének kitöltése kötelező"
+
+#: app/Http/Controllers/CalendarController.php:108
+msgid "Event redirect url field is required"
+msgstr "Az esemény átirányítási URL-mezőjének kitöltése kötelező"
+
+#: app/Http/Controllers/CalendarController.php:109
+msgid "Event query string field is required"
+msgstr "Az esemény lekérdezési karakterláncot tartalmazó mező kitöltése kötelező"
+
+#: app/Http/Controllers/CalendarController.php:110
+msgid "Event multiple booking limit field is required"
+msgstr "Az esemény többszöri foglalási korlátját megadó mező kitöltése kötelező"
+
+#: app/Http/Controllers/CalendarController.php:111
+msgid "Event confirmation type field is required"
+msgstr "Az esemény visszaigazolási típusát megadó mező kitöltése kötelező"
+
+#: app/Http/Controllers/CalendarController.php:112
+msgid "Event confirmation type field is invalid"
+msgstr "Az esemény visszaigazolási típusát megadó mező hibás"
+
+#: app/Http/Controllers/CalendarController.php:125
+msgid "The provided slug is not available. Please choose a different one"
+msgstr "A megadott slug nem elérhető. Kérlek, válassz másikat"
+
+#: app/Http/Controllers/CalendarController.php:197
+msgid "Recurring config enabled field is required"
+msgstr "Az ismétlődési beállítások bekapcsolt állapotát jelző mező kitöltése kötelező"
+
+#: app/Http/Controllers/CalendarController.php:198
+msgid "Recurring config max count field is required"
+msgstr "Az ismétlődési beállítások maximális darabszámát megadó mező kitöltése kötelező"
+
+#: app/Http/Controllers/CalendarController.php:199
+msgid "Recurring config interval field is required"
+msgstr "Az ismétlődési beállítások időközét megadó mező kitöltése kötelező"
+
+#: app/Http/Controllers/CalendarController.php:200
+msgid "Recurring config frequency field is required"
+msgstr "Az ismétlődési beállítások gyakoriságát megadó mező kitöltése kötelező"
+
+#: app/Http/Controllers/CalendarController.php:201
+msgid "Recurring config frequency field is invalid"
+msgstr "Az ismétlődési beállítások gyakoriságát megadó mező hibás"
+
+#: app/Http/Controllers/IntegrationSettingsController.php:22
+#: app/Http/Controllers/IntegrationSettingsController.php:76
+#: app/Http/Controllers/IntegrationSettingsController.php:108
+msgid "Invalid integration"
+msgstr "Hibás integráció"
+
+#: app/Http/Controllers/IntegrationSettingsController.php:51
+msgid "Google Calendar"
+msgstr "Google Naptár"
+
+#: app/Http/Controllers/IntegrationSettingsController.php:84
+msgid "Invalid settings"
+msgstr "Hibás beállítások"
+
+#: app/Http/Controllers/IntegrationSettingsController.php:91
+msgid "Your integration settings have been saved"
+msgstr "Az integráció beállításai mentve"
+
+#: app/Http/Controllers/IntegrationSettingsController.php:115
+msgid "Your integration has been disconnected"
+msgstr "Az integráció leválasztva"
+
+#: app/Http/Controllers/IntegrationSettingsController.php:130
+#: app/Http/Controllers/IntegrationSettingsController.php:267
+#: app/Http/Controllers/ZoomController.php:191
+msgid "You do not have permission to view this calendar's connected accounts"
+msgstr "Nincs jogosultságod megtekinteni a naptárhoz kapcsolt fiókokat"
+
+#: app/Http/Controllers/IntegrationSettingsController.php:153
+#: app/Http/Controllers/IntegrationSettingsController.php:174
+#: app/Http/Controllers/IntegrationSettingsController.php:207
+msgid "Integration not found for this calendar"
+msgstr "Nem található integráció ehhez a naptárhoz"
+
+#: app/Http/Controllers/IntegrationSettingsController.php:162
+#: app/Http/Controllers/IntegrationSettingsController.php:183
+#: app/Http/Controllers/IntegrationSettingsController.php:195
+msgid "Your settings has been updated"
+msgstr "A beállításaid frissítve"
+
+#: app/Http/Controllers/IntegrationSettingsController.php:216
+msgid "Your selected remote calendar has been disconnected"
+msgstr "A kiválasztott távoli naptár leválasztva"
+
+#: app/Http/Controllers/IntegrationSettingsController.php:247
+msgid ""
+"Your credential could not be saved. Please make sure the credential is valid"
+msgstr "A hitelesítő adatot nem sikerült menteni. Kérlek, győződj meg róla, hogy a hitelesítő adat érvényes"
+
+#: app/Http/Controllers/IntegrationSettingsController.php:278
+msgid "Integration Feed Settings could not be found. Driver missing!"
+msgstr "Az integrációs feed beállításai nem találhatók. Hiányzik a driver!"
+
+#: app/Http/Controllers/IntegrationSettingsController.php:293
+msgid "Your selected integration feed has been disconnected"
+msgstr "A kiválasztott integrációs feedet leválasztottuk"
+
+#: app/Http/Controllers/LicenseController.php:46
+msgid "Your license key has been successfully updated"
+msgstr "A licenckulcsod sikeresen frissítve lett"
+
+#: app/Http/Controllers/LicenseController.php:64
+msgid "Your license key has been successfully deactivated"
+msgstr "A licenckulcsod kikapcsolása sikerült."
+
+#. translators: %s: human readable time difference, e.g. "2 mins"
+#: app/Http/Controllers/LicenseController.php:109
+#, php-format
+msgid "%s ago"
+msgstr "%s ezelőtt"
+
+#: app/Http/Controllers/PaymentMethodController.php:42
+msgid "Please connect your Stripe account first."
+msgstr "Kérlek, először csatlakoztasd a Stripe-fiókodat."
+
+#: app/Http/Controllers/PaymentMethodController.php:50
+msgid "Please enter a valid email address"
+msgstr "Adj meg érvényes e-mail-címet"
+
+#: app/Http/Controllers/PaymentMethodController.php:92
+msgid "You are not allowed to disconnect the live payment account"
+msgstr "Nem választhatod le az éles fizetési fiókot"
+
+#: app/Http/Controllers/PaymentMethodController.php:132
+msgid "Calendar not found"
+msgstr "Naptár nem található"
+
+#: app/Http/Controllers/PaymentMethodController.php:157
+msgid "Please select a payment method"
+msgstr "Kérlek, válassz fizetési módot"
+
+#: app/Http/Controllers/PaymentMethodController.php:164
+msgid "Please enable at least one payment method"
+msgstr "Kérlek, kapcsolj be legalább egy fizetési módot"
+
+#: app/Http/Controllers/PaymentMethodController.php:175
+msgid "Please select a product"
+msgstr "Kérlek, válassz terméket"
+
+#: app/Http/Controllers/PaymentMethodController.php:182
+msgid "Product not found. Please select a product"
+msgstr "Termék nem található. Kérlek, válassz terméket"
+
+#: app/Http/Controllers/PaymentMethodController.php:197
+msgid "Settings updated successfully"
+msgstr "A beállítások frissítése sikeres"
+
+#: app/Http/Controllers/PaymentMethodController.php:206
+msgid "WooCommerce is not installed"
+msgstr "A WooCommerce nincs telepítve"
+
+#: app/Http/Controllers/TeamController.php:108
+#: app/Http/Controllers/TeamController.php:161
+msgid "This is an admin user. You can not change permissions"
+msgstr "Ez egy admin felhasználó. Nem módosíthatod a jogosultságokat"
+
+#: app/Http/Controllers/TeamController.php:128
+msgid "Access Permissions has been updated successfully"
+msgstr "A hozzáférési engedélyek frissítése sikerült"
+
+#: app/Http/Controllers/TeamController.php:140
+msgid "New member has been added with the selected access permissions"
+msgstr "A kiválasztott hozzáférési engedélyekkel új tagot adtunk hozzá"
+
+#: app/Http/Controllers/TeamController.php:154
+msgid "Member not found"
+msgstr "A tag nem található"
+
+#: app/Http/Controllers/TeamController.php:171
+msgid "Member has been deleted successful"
+msgstr "A tagot sikeresen töröltük"
+
+#: app/Http/Controllers/TransactionController.php:21
+msgid "No payment order found for this booking"
+msgstr "Nem található fizetési megrendelés ehhez a foglaláshoz"
+
+#: app/Http/Controllers/TransactionController.php:50
+msgid "Transaction updated successfully"
+msgstr "A tranzakció frissítése sikerült"
+
+#: app/Http/Controllers/TransactionController.php:68
+msgid "Payment Successfully Marked as"
+msgstr "A fizetés állapota sikeresen beállítva:"
+
+#: app/Http/Controllers/TransactionController.php:69
+msgid "Payment marked as"
+msgstr "A fizetés állapota"
+
+#: app/Http/Controllers/TransactionController.php:69
+msgid "by"
+msgstr "által"
+
+#: app/Http/Controllers/TwilioController.php:53
+msgid "Notifications has been saved"
+msgstr "Az értesítések mentése sikerült"
+
+#: app/Http/Controllers/TwilioController.php:67
+#: app/Http/Controllers/WebhookController.php:132
+msgid "You do not have access to the source event"
+msgstr "Nincs hozzáférésed a forráseseményhez"
+
+#: app/Http/Controllers/WebhookController.php:63
+msgid "Please provide a valid public http/https webhook URL."
+msgstr "Adj meg egy érvényes, nyilvános HTTP/HTTPS webhook URL-t."
+
+#: app/Http/Controllers/WebhookController.php:80
+msgid "WebHook not found"
+msgstr "A webhook nem található"
+
+#: app/Http/Controllers/WebhookController.php:87
+msgid "WebHook Successfully Updated"
+msgstr "A webhook frissítése sikerült"
+
+#: app/Http/Controllers/WebhookController.php:103
+msgid "WebHook Successfully Created"
+msgstr "A webhook létrehozása sikerült"
+
+#: app/Http/Controllers/WebhookController.php:118
+msgid "Selected Webhook has been deleted"
+msgstr "A kiválasztott webhookot töröltük"
+
+#: app/Http/Controllers/WebhookController.php:143
+msgid "WebHook feeds not found"
+msgstr "Nem találhatók webhook feedek"
+
+#: app/Http/Controllers/WebhookController.php:173
+msgid "No WebHook could be cloned because their URLs are no longer valid"
+msgstr "Nem sikerült webhookot klónozni, mert az URL-ek már nem érvényesek"
+
+#. translators: %1$d: number of cloned webhooks, %2$d: number skipped for an
+#. invalid URL.
+#: app/Http/Controllers/WebhookController.php:180
+#, php-format
+msgid "%1$d WebHook(s) cloned, %2$d skipped for an invalid URL"
+msgstr "Klónozva: %1$d webhook; érvénytelen URL miatt kihagyva: %2$d"
+
+#: app/Http/Controllers/WebhookController.php:185
+msgid "WebHook Successfully Cloned"
+msgstr "A webhook klónozása sikerült"
+
+#: app/Http/Controllers/WebhookController.php:193
+msgid "Booking Confirmed"
+msgstr "Foglalás megerősítve"
+
+#: app/Http/Controllers/WebhookController.php:197
+msgid "Booking Canceled"
+msgstr "Foglalás lemondva"
+
+#: app/Http/Controllers/WebhookController.php:201
+msgid "Booking Completed"
+msgstr "Foglalás befejezve"
+
+#: app/Http/Controllers/WebhookController.php:205
+msgid "Booking Rescheduled"
+msgstr "Foglalás átütemezve"
+
+#: app/Http/Controllers/WebhookController.php:209
+msgid "Booking Rejected"
+msgstr "Foglalás elutasítva"
+
+#: app/Http/Controllers/ZoomController.php:45
+msgid "Deleted user"
+msgstr "Törölt felhasználó"
+
+#: app/Http/Controllers/ZoomController.php:81
+msgid "Zoom credentials already exist for this user"
+msgstr "Ennél a felhasználónál már léteznek Zoom-hitelesítő adatok"
+
+#: app/Http/Controllers/ZoomController.php:121
+msgid "Zoom account email is empty"
+msgstr "A Zoom-fiók e-mail címe üres"
+
+#: app/Http/Controllers/ZoomController.php:131
+msgid "Zoom credentials has been validated and saved securely"
+msgstr "A Zoom-hitelesítő adatokat ellenőriztük és biztonságosan elmentettük"
+
+#: app/Http/Controllers/ZoomController.php:150
+#: app/Http/Controllers/ZoomController.php:167
+msgid "Zoom credentials not found"
+msgstr "A Zoom-hitelesítő adatok nem találhatók"
+
+#: app/Http/Controllers/ZoomController.php:182
+msgid "Zoom credentials has been disconnected & deleted"
+msgstr "A Zoom-hitelesítő adatokat leválasztottuk és töröltük"
+
+#: app/Http/Controllers/ZoomController.php:224
+msgid "You do not have permission to access this user's Zoom credentials"
+msgstr "Nincs jogosultságod hozzáférni ehhez a felhasználóhoz tartozó Zoom-hitelesítő adatokhoz"
+
+#: app/Modules/Coupon/CouponModule.php:57
+#: app/Modules/Coupon/CouponModule.php:97
+msgid "Too many requests. Please try again later."
+msgstr "Túl sok kérés. Kérlek, próbáld meg később újra."
+
+#: app/Modules/Coupon/CouponService.php:28
+msgid "Sorry, the provided coupon is not valid"
+msgstr "Sajnáljuk, a megadott kupon érvénytelen"
+
+#: app/Modules/Coupon/CouponService.php:29
+msgid "Sorry, the provided coupon is expired"
+msgstr "Sajnáljuk, a megadott kupon lejárt"
+
+#: app/Modules/Coupon/CouponService.php:30
+msgid "Sorry, you can not apply this coupon with other coupon code"
+msgstr "Sajnáljuk, ezt a kupont nem lehet más kuponkóddal együtt felhasználni"
+
+#: app/Modules/Coupon/CouponService.php:31
+msgid "Sorry, the provided coupon does not meet the requirements"
+msgstr "Sajnáljuk, a megadott kupon nem felel meg a követelményeknek"
+
+#: app/Modules/Coupon/CouponService.php:32
+msgid "Sorry, the coupon has reached the limit"
+msgstr "Sajnáljuk, a kupon elérte a felhasználási korlátot"
+
+#: app/Modules/Coupon/CouponService.php:97
+msgid "Have a Coupon?"
+msgstr "Van kuponod?"
+
+#: app/Modules/Coupon/CouponService.php:98
+msgid "Apply Here"
+msgstr "Itt váltsd be"
+
+#: app/Modules/Coupon/CouponService.php:99
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#: app/Modules/Coupon/CouponService.php:119
+msgid "Invalid coupon code"
+msgstr "Érvénytelen kuponkód"
+
+#: app/Modules/Coupon/CouponService.php:123
+msgid ""
+"This coupon code has already been applied. Please use a different coupon."
+msgstr "Ezt a kuponkódot már felhasználták. Használj másik kupont."
+
+#: app/Modules/Coupon/Http/Controllers/CouponController.php:67
+#: app/Modules/Coupon/Http/Controllers/CouponController.php:105
+msgid "Coupon code is required"
+msgstr "Kuponkód megadása kötelező"
+
+#: app/Modules/Coupon/Http/Controllers/CouponController.php:68
+#: app/Modules/Coupon/Http/Controllers/CouponController.php:106
+msgid "Same coupon code already exists"
+msgstr "Ugyanilyen kuponkód már létezik"
+
+#: app/Modules/Coupon/Http/Controllers/CouponController.php:83
+msgid "Coupon created successfully"
+msgstr "Kupon sikeresen létrehozva"
+
+#: app/Modules/Coupon/Http/Controllers/CouponController.php:128
+msgid "Coupon updated successfully"
+msgstr "Kupon sikeresen frissítve"
+
+#: app/Modules/Coupon/Http/Controllers/CouponController.php:143
+msgid "Coupon deleted successfully"
+msgstr "Kupon sikeresen törölve"
+
+#: app/Modules/MCP/BookingNoteTools.php:59
+#: app/Modules/MCP/BookingNoteTools.php:107
+msgid "Manage booking note"
+msgstr "Foglalási megjegyzés kezelése"
+
+#: app/Modules/MCP/BookingNoteTools.php:60
+msgid ""
+"Add, edit or delete a host note on a booking. Notes are private to hosts. On"
+" a group event every guest shares one set, stored on the earliest booking in"
+" the group. title is optional; a blank title is stored as \"Note added by\" "
+"the host. Call with dry_run first, then pass the returned confirm_token. "
+"Read notes with get-booking include notes."
+msgstr "Házigazdai megjegyzés hozzáadása, szerkesztése vagy törlése egy foglaláshoz. A jegyzetek csak a házigazdák számára láthatók. Csoportos eseménynél minden vendég ugyanazt a jegyzetkészletet használja, amely a csoport legkorábbi foglalásához van mentve. A cím opcionális; az üres cím „A házigazda által hozzáadott megjegyzés” formában lesz mentve. Először a dry_run paraméterrel hívd meg, majd add meg a visszakapott confirm_token értékét. A jegyzeteket a get-booking include notes használatával olvashatod el."
+
+#: app/Modules/MCP/BookingNoteTools.php:66
+msgid ""
+"The booking to attach the note to. Any guest in a group event addresses the "
+"shared set. Required."
+msgstr "Az a foglalás, amelyhez a megjegyzést csatolod. Csoportos eseménynél bármelyik vendég foglalása a közös megjegyzéskészletre hivatkozik. Kötelező."
+
+#: app/Modules/MCP/BookingNoteTools.php:70
+msgid ""
+"create needs note. update and delete need note_id; update also needs note. "
+"Required."
+msgstr "A create művelethez note szükséges. Az update és delete művelethez note_id szükséges; az update művelethez a note is szükséges. Kötelező."
+
+#: app/Modules/MCP/BookingNoteTools.php:75
+msgid "update and delete only. The note id from get-booking include notes."
+msgstr "Csak az update és delete művelethez. A megjegyzés ID-ja a get-booking include notes válaszból."
+
+#: app/Modules/MCP/BookingNoteTools.php:79
+msgid ""
+"create and update only. Plain text. Line breaks are kept. Maximum 20000 "
+"characters."
+msgstr "Csak a create és update művelethez. Egyszerű szöveg. A sortörések megmaradnak. Legfeljebb 20000 karakter."
+
+#: app/Modules/MCP/BookingNoteTools.php:84
+msgid ""
+"create and update only. Optional single-line title, maximum 192 characters. "
+"Omit it on update to leave the title unchanged. A blank title is stored as "
+"\"Note added by\" the host."
+msgstr "Csak létrehozáskor és frissítéskor. Opcionális, egysoros cím, legfeljebb 192 karakter. Frissítéskor hagyd ki, ha nem szeretnéd módosítani a címet. Az üres cím „A házigazda által hozzáadott megjegyzés” formában lesz mentve."
+
+#: app/Modules/MCP/BookingNoteTools.php:89
+msgid "IANA timezone for the *_local times in the response."
+msgstr "IANA-időzóna a válasz *_local időpontjaihoz."
+
+#: app/Modules/MCP/BookingNoteTools.php:93
+msgid "Preview the change and get a confirm_token without applying it."
+msgstr "A módosítás előnézete és confirm_token lekérése a módosítás végrehajtása nélkül."
+
+#: app/Modules/MCP/BookingNoteTools.php:97
+msgid "The token from the dry run. Required to execute."
+msgstr "A dry run során kapott token. A végrehajtáshoz kötelező."
+
+#: app/Modules/MCP/BookingNoteTools.php:101
+msgid ""
+"Pass a unique key so a retry after a timeout returns the first result "
+"instead of acting twice."
+msgstr "Adj meg egy egyedi kulcsot, hogy időtúllépés utáni újrapróbálkozáskor az első eredmény érkezzen vissza, ne történjen meg kétszer a művelet."
+
+#: app/Modules/MCP/BookingNoteTools.php:127
+msgid "action must be create, update or delete."
+msgstr "Az action értéke create, update vagy delete lehet."
+
+#: app/Modules/MCP/BookingNoteTools.php:133
+msgid "booking_id is required. Call list-bookings to find one."
+msgstr "A booking_id megadása kötelező. Kereséshez hívd meg a list-bookings műveletet."
+
+#: app/Modules/MCP/BookingNoteTools.php:139
+msgid "No booking with that id."
+msgstr "Nincs ilyen ID-jú foglalás."
+
+#: app/Modules/MCP/BookingNoteTools.php:145
+msgid "You do not have permission to change this booking."
+msgstr "Nincs jogosultságod a foglalás módosításához."
+
+#: app/Modules/MCP/PaymentTools.php:61 app/Modules/MCP/PaymentTools.php:108
+msgid "Get payments"
+msgstr "Fizetések lekérése"
+
+#: app/Modules/MCP/PaymentTools.php:62
+msgid ""
+"Booking orders and their transactions. Lists orders with filters, or returns"
+" one order in full with its transactions and the booking it belongs to when "
+"order_id is given. Transactions come back as {items, total} and say so when "
+"an order has more than the 50 they return. Read only — refunds are not "
+"available through MCP."
+msgstr "Foglalásokhoz tartozó megrendelések és tranzakcióik. Szűrőkkel listázhatod a megrendeléseket, vagy az order_id megadásával lekérheted egy megrendelés teljes adatait, a tranzakcióival és a hozzá tartozó foglalással együtt. A tranzakciók {items, total} formában érkeznek, és jelzik, ha a megrendeléshez több mint 50 tranzakció tartozik. Csak olvasásra használható — visszatérítés nem érhető el MCP-n keresztül."
+
+#: app/Modules/MCP/PaymentTools.php:68
+msgid "Return this one order in full instead of the list."
+msgstr "A lista helyett ennek az egy megrendelésnek a teljes adatait add vissza."
+
+#: app/Modules/MCP/PaymentTools.php:72
+msgid "Orders belonging to one booking."
+msgstr "Egy foglaláshoz tartozó megrendelések."
+
+#: app/Modules/MCP/PaymentTools.php:76
+msgid "Filter by order status, e.g. paid, draft, refunded."
+msgstr "Szűrés a megrendelés állapota szerint, például: fizetve, vázlat, visszatérítve."
+
+#: app/Modules/MCP/PaymentTools.php:81
+msgid "e.g. stripe, paypal, offline."
+msgstr "Például: stripe, paypal, offline."
+
+#: app/Modules/MCP/PaymentTools.php:85
+msgid "Orders created on or after this date, Y-m-d."
+msgstr "Az ezen a dátumon vagy később létrehozott megrendelések, Y-m-d formátumban."
+
+#: app/Modules/MCP/PaymentTools.php:89
+msgid "Orders created on or before this date, Y-m-d."
+msgstr "Az ezen a dátumon vagy korábban létrehozott megrendelések, Y-m-d formátumban."
+
+#: app/Modules/MCP/PaymentTools.php:93
+msgid ""
+"IANA timezone for the *_local times in the response. Defaults to the site "
+"timezone."
+msgstr "IANA-időzóna a válasz *_local időpontjaihoz. Alapértelmezés szerint a webhely időzónája."
+
+#. translators: %1$d: default page size, %2$d: maximum page size
+#: app/Modules/MCP/PaymentTools.php:100
+#, php-format
+msgid "Default %1$d, maximum %2$d."
+msgstr "Alapértelmezett: %1$d, maximum: %2$d."
+
+#: app/Modules/MCP/PaymentTools.php:155
+msgid "from and to must be real dates in Y-m-d form."
+msgstr "A from és to értékének valós dátumnak kell lennie, Y-m-d formátumban."
+
+#: app/Modules/MCP/PaymentTools.php:203
+msgid "No order with that id."
+msgstr "Nincs ilyen ID-jú megrendelés."
+
+#: app/Modules/MCP/PaymentTools.php:217
+msgid "You do not have permission to read this order."
+msgstr "Nincs jogosultságod a megrendelés megtekintéséhez."
+
+#. translators: 1: number returned, 2: number that exist
+#: app/Modules/MCP/PaymentTools.php:263
+#, php-format
+msgid ""
+"Showing the oldest %1$d of %2$d transactions. This order's history is longer"
+" than this tool returns; read it in the payment gateway."
+msgstr "A %2$d tranzakció közül a legrégebbi %1$d megjelenítése. A megrendelés előzménye hosszabb annál, mint amit ez az eszköz visszaad; a továbbiakat a fizetési átjáróban tekintheted meg."
+
+#: app/Modules/SingleEvent/SingleEvent.php:41
+msgid "Availability"
+msgstr "Elérhetőség"
+
+#: app/Modules/SingleEvent/SingleEvent.php:119
+msgid "Please add the availability of this event"
+msgstr "Add meg az esemény elérhetőségét"
+
+#: app/Modules/SingleEvent/SingleEvent.php:119
+msgid "click here"
+msgstr "kattints ide"
+
+#: app/Modules/SingleEvent/SingleEventController.php:26
+msgid ""
+"This event has already been booked. You can not change the availability now"
+msgstr "Ezt az eseményt már lefoglalták. Most nem módosíthatod az elérhetőséget"
+
+#: app/Modules/SingleEvent/SingleEventController.php:38
+msgid "Please select at least one time slot"
+msgstr "Válassz legalább egy idősávot"
+
+#: app/Modules/SingleEvent/SingleEventController.php:46
+msgid "Group event can only have one time slot"
+msgstr "A csoporteseménynek csak egy idősávja lehet"
+
+#: app/Services/BookingNoteService.php:64
+msgid "Write a note before saving."
+msgstr "Írj megjegyzést mentés előtt."
+
+#. translators: %s is the maximum number of characters in a booking note
+#: app/Services/BookingNoteService.php:72
+#, php-format
+msgid "A note cannot be longer than %s characters."
+msgstr "A megjegyzés legfeljebb %s karakter hosszú lehet."
+
+#. translators: %s is the maximum number of characters in a booking note title
+#: app/Services/BookingNoteService.php:98
+#, php-format
+msgid "A note title cannot be longer than %s characters."
+msgstr "A megjegyzés címe legfeljebb %s karakter hosszú lehet."
+
+#: app/Services/BookingNoteService.php:190
+#: app/Services/BookingNoteService.php:231
+#: app/Services/BookingNoteService.php:264
+msgid "That note could not be found."
+msgstr "A megjegyzés nem található."
+
+#: app/Services/BookingNoteService.php:302
+msgid "This note could not be added to the CRM profile."
+msgstr "Ezt a megjegyzést nem sikerült hozzáadni a CRM-profilhoz."
+
+#. translators: %1$s is the event name, %2$s is the booking date
+#: app/Services/BookingNoteService.php:314
+#, php-format
+msgid "Booking note: %1$s on %2$s"
+msgstr "Foglalási megjegyzés: %1$s, dátum: %2$s"
+
+#: app/Services/BookingNoteService.php:324
+msgid "View booking"
+msgstr "Foglalás megtekintése"
+
+#. translators: %s is the FluentCRM contact's name
+#: app/Services/BookingNoteService.php:335
+#, php-format
+msgid "Added to %s's FluentCRM profile."
+msgstr "Hozzáadva %s FluentCRM-profiljához."
+
+#: app/Services/BookingNoteService.php:472
+msgid "Note added by host"
+msgstr "A házigazda által hozzáadott megjegyzés"
+
+#. translators: %s is the display name of the host who wrote the note
+#: app/Services/BookingNoteService.php:476
+#, php-format
+msgid "Note added by %s"
+msgstr "A megjegyzést hozzáadta: %s"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:24
+msgid "Apple Calendar"
+msgstr "Apple Calendar"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:57
+msgid "Apple Calendar API Error:"
+msgstr "Apple Calendar API-hiba:"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:57
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:66
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:56
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:62
+msgid "Click Here to Review"
+msgstr "Kattints ide az áttekintéshez"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:70
+msgid ""
+"To use Apple Calendar Integration for your Booking forms, please enable the "
+"integration."
+msgstr "A foglalási űrlapokon az Apple Calendar-integráció használatához kapcsold be az integrációt."
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:70
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:69
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:152
+msgid "Read the documentation"
+msgstr "Olvasd el a dokumentációt"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:75
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:74
+msgid "Status"
+msgstr "Állapot"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:76
+msgid "Enable Apple Calendar Integration"
+msgstr "Apple Calendar-integráció engedélyezése"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:81
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:85
+msgid "1 minute"
+msgstr "1 perc"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:82
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:86
+msgid "5 minutes"
+msgstr "5 perc"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:83
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:87
+msgid "10 minutes"
+msgstr "10 perc"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:84
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:88
+msgid "15 minutes"
+msgstr "15 perc"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:86
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:90
+msgid "Caching Time"
+msgstr "Gyorsítótárazási idő"
+
+#. translators: Explanation for the cache duration setting. %1$s is the
+#. calendar title, %2$s is the calendar title repeated.
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:88
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:92
+#, php-format
+msgid ""
+"Select for how many minutes the %1$s event API call will be cached. "
+"Recommended 5/10 minutes. If you add lots of manual events in %2$s then you "
+"may lower the value"
+msgstr "Válaszd ki, hány percig legyen gyorsítótárazva a %1$s esemény API-hívása. Ajánlott: 5/10 perc. Ha a %2$s használatakor sok kézi eseményt adsz hozzá, csökkentheted az értéket"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:95
+msgid "Enable/Disable Apple Calendar to sync your events"
+msgstr "Apple-naptár engedélyezése/letiltása az eseményeid szinkronizálásához"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:97
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:101
+#: app/Services/Integrations/Twilio/Bootstrap.php:126
+msgid "Save Settings"
+msgstr "Beállítások mentése"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:110
+msgid "Connect to Apple Server"
+msgstr "Csatlakozás az Apple szerverhez"
+
+#. translators: Instruction for connecting to Apple Server. %s is a link to
+#. manage Apple ID
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:112
+#, php-format
+msgid ""
+"To connect to Apple Server, please enter your Apple Email and app specific "
+"password. Generate App Specific Password at %s Your credentials will be "
+"stored as encrypted."
+msgstr "Az Apple szerverhez való csatlakozáshoz add meg az Apple e-mail-címedet és az alkalmazásspecifikus jelszót. Alkalmazásspecifikus jelszót itt hozhatsz létre: %s A hitelesítő adataid titkosítva lesznek tárolva."
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:113
+msgid "Apple ID (Email)"
+msgstr "Apple ID (e-mail cím)"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:114
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:117
+msgid "App Specific Password"
+msgstr "Alkalmazásspecifikus jelszó"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:115
+msgid "Connect with Apple Calendar"
+msgstr "Csatlakozás az Apple-naptárhoz"
+
+#. translators: %s is the name of the calendar title.
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:119
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:122
+#, php-format
+msgid "Configure %s to sync your events"
+msgstr "%s beállítása az eseményeid szinkronizálásához"
+
+#. translators: %s is the name of the calendar title.
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:121
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:124
+#, php-format
+msgid "Connect with %s"
+msgstr "Csatlakozás ehhez: %s"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:154
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:182
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:157
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:265
+msgid "Please remove the connection and reconnect again."
+msgstr "Távolítsd el a kapcsolatot, majd csatlakozz újra."
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:361
+msgid "Apple Calendar event created"
+msgstr "Apple-naptáresemény létrehozva"
+
+#. translators: %s is the event id of apple calendar
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:363
+#, php-format
+msgid "Aplle calendar event has been created. EventID: %s"
+msgstr "Apple-naptáresemény létrehozva. Esemény-ID: %s"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:371
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:416
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:476
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:548
+msgid "Apple Calendar API Error"
+msgstr "Apple-naptár API-hiba"
+
+#. translators: %s is the error message returned by the Apple Calendar API.
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:373
+#, php-format
+msgid "Failed to create event in Apple calendar. API Response: %s"
+msgstr "Nem sikerült eseményt létrehozni az Apple-naptárban. API-válasz: %s"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:408
+msgid "Apple event has been deleted"
+msgstr "Apple-esemény törölve"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:409
+msgid "Apple calendar event has been deleted"
+msgstr "Apple-naptáresemény törölve"
+
+#. translators: %s is the error message returned by the Apple Calendar API.
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:418
+#, php-format
+msgid "Failed to delete event in Apple calendar. API Response: %s"
+msgstr "Nem sikerült törölni az eseményt az Apple-naptárban. API-válasz: %s"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:468
+msgid "Apple event has been updated"
+msgstr "Apple-esemény frissítve"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:469
+msgid "Apple calendar event has been updated"
+msgstr "Apple-naptáresemény frissítve"
+
+#. translators: %s is the error message returned by the Apple Calendar API.
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:478
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:550
+#, php-format
+msgid "Failed to update event in Apple calendar. API Response: %s"
+msgstr "Nem sikerült frissíteni az eseményt az Apple-naptárban. API-válasz: %s"
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:538
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:547
+msgid "This is a group event."
+msgstr "Ez egy csoportos esemény."
+
+#: app/Services/Integrations/Calendars/AppleCalendar/Bootstrap.php:680
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:691
+msgid "Your credential has been saved"
+msgstr "A hitelesítési adatod mentve lett"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:26
+msgid "Google Calendar / Meet"
+msgstr "Google-naptár / Meet"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:66
+msgid "Google Calendar API Error:"
+msgstr "Google-naptár API-hiba:"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:86
+msgid "Connect Google Meet First"
+msgstr "Először csatlakozz a Google Meethez"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:93
+msgid "Choose a Google Calendar to Create Events On"
+msgstr "Válaszd ki a Google-naptárt, amelyben létrehozod az eseményeket"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:99
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:111
+msgid "All Hosts Need to "
+msgstr "Minden házigazdának szüksége van arra, hogy "
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:103
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:115
+msgid "Organizer Needs to "
+msgstr "A szervezőnek szüksége van arra, hogy "
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:111
+msgid "Google Meet"
+msgstr "Google Meet"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:140
+msgid ""
+"Login to your Google account, go to Google Cloud Console, create a project, "
+"complete OAuth Consent screen process, click on Create Credentials, and you "
+"will get your client id and secret key. If you get the ID and Keys for "
+"Google Calendar, Google Meet will be integrated automatically. For full "
+"details read the"
+msgstr "Lépj be a Google-fiókodba, nyisd meg a Google Cloud Console-t, hozz létre egy projektet, fejezd be az OAuth-hozzájárulási képernyő beállítását, kattints a Create Credentials gombra, és megkapod az ügyfélazonosítót és a titkos kulcsot. Ha megszerzed a Google-naptárhoz tartozó ID-t és kulcsokat, a Google Meet automatikusan integrálódik. A teljes részletekért olvasd el a"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:140
+msgid "documentation"
+msgstr "dokumentáció"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:144
+msgid ""
+"Google Calendar/Meet integration is configured by wp-config.php constants. "
+"No action required here"
+msgstr "A Google-naptár/Meet-integráció a wp-config.php fájlban megadott konstansokkal állítható be. Itt nincs teendő"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:150
+msgid "Configure Google Calendar/Meet to sync your events"
+msgstr "A Google-naptár/Meet beállítása az eseményeid szinkronizálásához"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:152
+msgid "Save Google API Configuration"
+msgstr "Google API-konfiguráció mentése"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:332
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:429
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:522
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:601
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:663
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:697
+msgid "Google Calendar API Error"
+msgstr "Google-naptár API-hiba"
+
+#. translators: %s is the error message returned by the Google Calendar API.
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:334
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:524
+#, php-format
+msgid "Failed to connect with google calendar API. API Response: %s"
+msgstr "Nem sikerült csatlakozni a Google-naptár API-hoz. API-válasz: %s"
+
+#. translators: %s is the error message returned by the Google Calendar API.
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:431
+#, php-format
+msgid "Failed to create event in Google calendar. API Response: %s"
+msgstr "Nem sikerült eseményt létrehozni a Google-naptárban. API-válasz: %s"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:457
+msgid "Google Calendar event created"
+msgstr "Google-naptáresemény létrehozva"
+
+#. translators: %s is the error message returned by the Google Calendar API.
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:459
+#, php-format
+msgid "Google calendar event has been created. %s"
+msgstr "Google-naptáresemény létrehozva. %s"
+
+#. translators: %s is the error message returned by the Google Calendar API.
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:459
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:623
+msgid "View on Google Calendar"
+msgstr "Megtekintés a Google-naptárban"
+
+#. translators: %s is the error message returned by the Google Calendar API.
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:603
+#, php-format
+msgid "Failed to update event in Google calendar. API Response: %s"
+msgstr "Nem sikerült frissíteni az eseményt a Google-naptárban. API-válasz: %s"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:621
+msgid "Google Calendar event updated"
+msgstr "Google-naptáresemény frissítve"
+
+#. translators: %s is the error message returned by the Google Calendar API.
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:623
+#, php-format
+msgid "Google calendar event has been updated. %s"
+msgstr "Google-naptáresemény frissítve. %s"
+
+#. translators: %s is the error message returned by the Google Calendar API.
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:665
+#, php-format
+msgid "Failed to add attendee in Google calendar. API Response: %s"
+msgstr "Nem sikerült résztvevőt hozzáadni a Google-naptárhoz. API-válasz: %s"
+
+#. translators: %s is the error message returned by the Google Calendar API.
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:699
+#, php-format
+msgid "Failed to connect with Google calendar API. API Response: %s"
+msgstr "Nem sikerült csatlakozni a Google-naptár API-hoz. API-válasz: %s"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:711
+msgid "Added to Google calendar"
+msgstr "Hozzáadva a Google-naptárhoz"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:712
+msgid "Guest has been added to Google calendar event"
+msgstr "Vendég hozzáadva a Google-naptáreseményhez"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:719
+msgid "Removed from Google calendar"
+msgstr "Eltávolítva a Google-naptárból"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:720
+msgid "Guest has been removed from Google calendar event"
+msgstr "Vendég eltávolítva a Google-naptáreseményből"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:834
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:199
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:227
+msgid "Failed to connect Calendar API"
+msgstr "Nem sikerült csatlakozni a naptár API-jához"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:835
+msgid "Google API Response Error:"
+msgstr "Google API-válaszhiba:"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:837
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:859
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:870
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:202
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:219
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:230
+msgid "Back to Calendars Configuration"
+msgstr "Vissza a naptárbeállításokhoz"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:856
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:216
+msgid "Required scopes missing"
+msgstr "A szükséges hatókörök hiányoznak"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:857
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:217
+msgid ""
+"Looks like you did not allow the required scopes. Please try again with the "
+"following scopes:"
+msgstr "Úgy tűnik, nem engedélyezted a szükséges hatóköröket. Próbáld újra a következő hatókörökkel:"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:867
+msgid "Google API Error"
+msgstr "Google API-hiba"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:868
+msgid "We could not authenticate your account. Please try again later."
+msgstr "Nem sikerült hitelesíteni a fiókodat. Próbáld meg később újra."
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:940
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:892
+msgid "Note: "
+msgstr "Megjegyzés: "
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:969
+msgid "Enable Google Calendar Notification"
+msgstr "Google-naptár-értesítés bekapcsolása"
+
+#: app/Services/Integrations/Calendars/Google/Bootstrap.php:973
+msgid "Guests can see other guests of the slot"
+msgstr "A vendégek láthatják az idősáv többi vendégét"
+
+#: app/Services/Integrations/Calendars/Google/Client.php:271
+msgid "Unexpected error from google api"
+msgstr "A Google API váratlan hibája"
+
+#: app/Services/Integrations/Calendars/Google/GoogleCalendar.php:128
+#: app/Services/Integrations/Calendars/Outlook/OutlookCalendar.php:91
+msgid "Access Token Refreshed"
+msgstr "Hozzáférési token frissítve"
+
+#: app/Services/Integrations/Calendars/Google/GoogleCalendar.php:169
+#: app/Services/Integrations/Calendars/Outlook/OutlookCalendar.php:126
+msgid "start and end data is required"
+msgstr "A kezdő és záró adatok megadása kötelező"
+
+#: app/Services/Integrations/Calendars/Google/GoogleHelper.php:148
+msgid ""
+"Sorry! There has an error when fetching data for google authentication. "
+"Please try again"
+msgstr "Sajnáljuk! Hiba történt a Google-hitelesítéshez szükséges adatok lekérésekor. Próbáld meg újra"
+
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:23
+msgid "Nextcloud Calendar"
+msgstr "Nextcloud-naptár"
+
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:56
+msgid "Nextcloud Calendar API Error:"
+msgstr "Nextcloud-naptár API-hiba:"
+
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:69
+msgid ""
+"To use Nextcloud Calendar Integration for your Booking forms, please enable "
+"the integration."
+msgstr "A Nextcloud-naptár-integráció foglalási űrlapokon való használatához kapcsold be az integrációt."
+
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:75
+msgid "Enable Nextcloud Calendar Integration"
+msgstr "Nextcloud-naptár-integráció bekapcsolása"
+
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:99
+msgid "Enable/Disable Nextcloud Calendar to sync your events"
+msgstr "Nextcloud-naptár engedélyezése/letiltása az eseményeid szinkronizálásához"
+
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:114
+msgid "Connect to Nextcloud Server"
+msgstr "Csatlakozás a Nextcloud-szerverhez"
+
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:115
+msgid ""
+"To connect to Nextcloud Server, please enter your Nextcloud Email/Username "
+"and app specific password. Your credentials will be stored as encrypted."
+msgstr "A Nextcloud-szerverhez való csatlakozáshoz add meg a Nextcloud-felhasználónevedet vagy e-mail-címedet, valamint az alkalmazásspecifikus jelszavadat. A hitelesítő adataid titkosítva lesznek tárolva."
+
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:116
+msgid "Nextcloud ID (Username/ Email)"
+msgstr "Nextcloud ID (felhasználónév/e-mail cím)"
+
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:118
+msgid "Connect with Nextcloud Calendar"
+msgstr "Csatlakozás a Nextcloud-naptárhoz"
+
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:371
+msgid "Nextcloud Calendar event created"
+msgstr "Nextcloud-naptáresemény létrehozva"
+
+#. translators: %s is the error message returned by the Nextcloud Calendar
+#. API.
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:373
+#, php-format
+msgid "Nextcloud calendar event has been created. EventID: %s"
+msgstr "A Nextcloud-naptáresemény létrejött. Eseményazonosító: %s"
+
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:380
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:425
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:485
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:557
+msgid "Nextcloud Calendar API Error"
+msgstr "Nextcloud-naptár API-hiba"
+
+#. translators: %s is the error message returned by the Nextcloud Calendar
+#. API.
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:382
+#, php-format
+msgid "Failed to create event in Nextcloud calendar. API Response: %s"
+msgstr "Nem sikerült eseményt létrehozni a Nextcloud-naptárban. API-válasz: %s"
+
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:417
+msgid "Nextcloud event has been deleted"
+msgstr "A Nextcloud-esemény törölve lett"
+
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:418
+msgid "Nextcloud calendar event has been deleted"
+msgstr "A Nextcloud-naptáresemény törölve lett"
+
+#. translators: %s is the error message returned by the Nextcloud Calendar
+#. API.
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:427
+#, php-format
+msgid "Failed to delete event in Nextcloud calendar. API Response: %s"
+msgstr "Nem sikerült törölni az eseményt a Nextcloud-naptárban. API-válasz: %s"
+
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:477
+msgid "Nextcloud event has been updated"
+msgstr "A Nextcloud-esemény frissítve lett"
+
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:478
+msgid "Nextcloud calendar event has been updated"
+msgstr "A Nextcloud-naptáresemény frissítve lett"
+
+#. translators: %s is the error message returned by the Nextcloud Calendar
+#. API.
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:487
+#: app/Services/Integrations/Calendars/NextCloud/Bootstrap.php:559
+#, php-format
+msgid "Failed to update event in Nextcloud calendar. API Response: %s"
+msgstr "Nem sikerült frissíteni az eseményt a Nextcloud-naptárban. API-válasz: %s"
+
+#: app/Services/Integrations/Calendars/NextCloud/NextCloudHelper.php:48
+msgid "Please provide a valid public http/https Nextcloud CalDav URL."
+msgstr "Adj meg egy érvényes, nyilvános Nextcloud CalDAV-URL-t HTTP- vagy HTTPS-protokollal."
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:25
+msgid "Outlook Calendar / MS Teams"
+msgstr "Outlook-naptár / MS Teams"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:62
+msgid "Outlook Calendar API Error:"
+msgstr "Outlook-naptár API-hiba:"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:82
+msgid "Connect Outlook First"
+msgstr "Először csatlakoztasd az Outlookot"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:89
+msgid "Choose an Outlook Calendar to Create Events On"
+msgstr "Válaszd ki, melyik Outlook-naptárban szeretnéd létrehozni az eseményeket"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:105
+msgid "Enable MS Teams From Outlook Settings"
+msgstr "Kapcsold be az MS Teamst az Outlook beállításaiban"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:123
+msgid "MS Teams"
+msgstr "MS Teams"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:152
+msgid ""
+"Your outlook API configaration is already. You can connect your outlook "
+"calendar from your host settings."
+msgstr "Az Outlook API-konfigurációd már kész. Az Outlook-naptáradat a házigazda beállításainál csatlakoztathatod."
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:157
+msgid "Use Outlook Calendar to sync your Fluent Booking events"
+msgstr "Használd az Outlook-naptárt a Fluent Booking eseményeinek szinkronizálásához"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:159
+msgid "Update Caching Time"
+msgstr "Gyorsítótárazási idő frissítése"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:200
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:228
+msgid "Outlook API Response Error:"
+msgstr "Outlook API-válaszhiba:"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:404
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:492
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:588
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:607
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:696
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:711
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:745
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:766
+msgid "Outlook Calendar API Error"
+msgstr "Outlook-naptár API-hiba"
+
+#. translators: API response message when failed to connect with Outlook
+#. calendar API
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:406
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:590
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:609
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:698
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:713
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:747
+#, php-format
+msgid "Failed to connect with Outlook calendar API. API Response: %s"
+msgstr "Nem sikerült csatlakozni az Outlook-naptár API-jához. API-válasz: %s"
+
+#. translators: API response message when failed to create event in Outlook
+#. calendar
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:494
+#, php-format
+msgid "Failed to create event in Outlook calendar. API Response: %s"
+msgstr "Nem sikerült eseményt létrehozni az Outlook-naptárban. API-válasz: %s"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:518
+msgid "MS Teams link missing"
+msgstr "Hiányzik az MS Teams-link"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:519
+msgid ""
+"The Outlook event was created but Microsoft did not return a Teams join "
+"link. Verify the host account has a Teams/Meetings license and the Outlook "
+"connection has online-meeting permission, then reschedule to retry."
+msgstr "Az Outlook-esemény létrejött, de a Microsoft nem adott vissza Teams-csatlakozási linket. Ellenőrizd, hogy a házigazda fiókjához tartozik-e Teams/Meetings licenc, és az Outlook-kapcsolat rendelkezik-e online értekezletekhez szükséges jogosultsággal, majd próbáld újra az időpont módosításával."
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:530
+msgid "Outlook Calendar event created"
+msgstr "Outlook-naptáresemény létrehozva"
+
+#. translators: Notification message for the creation of an Outlook calendar
+#. event. %s is a link to view the event on Outlook Calendar
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:532
+#, php-format
+msgid "Outlook calendar event has been created. %s"
+msgstr "Az Outlook-naptáresemény létrejött. %s"
+
+#. translators: Notification message for the creation of an Outlook calendar
+#. event. %s is a link to view the event on Outlook Calendar
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:532
+msgid "View on Outlook Calendar"
+msgstr "Megtekintés az Outlook-naptárban"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:621
+msgid "Added to Outlook calendar"
+msgstr "Hozzáadva az Outlook-naptárhoz"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:622
+msgid "Guest has been added to outlook calendar event"
+msgstr "A vendéget hozzáadtuk az Outlook-naptáreseményhez"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:629
+msgid "Removed from Outlook calendar"
+msgstr "Eltávolítva az Outlook-naptárból"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:630
+msgid "Guest has been removed from outlook calendar event"
+msgstr "A vendéget eltávolítottuk az Outlook-naptáreseményből"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:722
+msgid "Outlook Event Updated"
+msgstr "Outlook-esemény frissítve"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:723
+msgid "Event in outlook has been updated with new dates"
+msgstr "Az Outlookban lévő esemény új dátumokkal frissült"
+
+#. translators: API response message when failed to delete event in Outlook
+#. calendar
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:768
+#, php-format
+msgid "Failed to delete event in Outlook calendar. API Response: %s"
+msgstr "Nem sikerült törölni az eseményt az Outlook-naptárból. API-válasz: %s"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:777
+msgid "Outlook event has been deleted"
+msgstr "Az Outlook-esemény törölve lett"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:778
+msgid "Outlook calendar event has been deleted"
+msgstr "Az Outlook-naptáresemény törölve lett"
+
+#: app/Services/Integrations/Calendars/Outlook/Bootstrap.php:919
+msgid "Enable Microsoft Teams (Requires work/school account)"
+msgstr "Microsoft Teams bekapcsolása (munkahelyi vagy iskolai fiók szükséges)"
+
+#: app/Services/Integrations/Calendars/Outlook/Client.php:249
+msgid "Unexpected error from outlook api"
+msgstr "Váratlan hiba az Outlook API-tól"
+
+#: app/Services/Integrations/Calendars/Outlook/OutlookHelper.php:86
+msgid ""
+"Sorry! There has an error when fetching data for outlook authentication. "
+"Please try again"
+msgstr "Sajnáljuk! Hiba történt az Outlook-hitelesítéshez szükséges adatok lekérésekor. Próbáld meg újra"
+
+#: app/Services/Integrations/PaymentMethods/BasePaymentMethod.php:582
+msgid "Payment Marked as paid"
+msgstr "Fizetés fizetettként megjelölve"
+
+#. translators: %1$s: payment method title, %2$s: gateway transaction ID
+#: app/Services/Integrations/PaymentMethods/BasePaymentMethod.php:586
+#, php-format
+msgid "Transaction marked as paid and %1$s Transaction ID: %2$s "
+msgstr "A tranzakció fizetettként lett megjelölve, és %1$s tranzakció ID: %2$s"
+
+#: app/Services/Integrations/PaymentMethods/BasePaymentMethod.php:593
+msgid "Payment Successfully Completed"
+msgstr "A fizetés sikeresen megtörtént"
+
+#. translators: %s: payment method title
+#: app/Services/Integrations/PaymentMethods/BasePaymentMethod.php:605
+#, php-format
+msgid "%s Payment Pending"
+msgstr "%s fizetés függőben"
+
+#. translators: %s: payment method title
+#: app/Services/Integrations/PaymentMethods/BasePaymentMethod.php:617
+#, php-format
+msgid "%s Payment Failed"
+msgstr "%s fizetés sikertelen"
+
+#: app/Services/Integrations/PaymentMethods/BasePaymentMethod.php:679
+msgid "Payment Refunded Successfully"
+msgstr "Fizetés sikeresen visszatérítve"
+
+#. translators: %1$s: refunded amount with currency sign, %2$s: gateway
+#. transaction ID
+#: app/Services/Integrations/PaymentMethods/BasePaymentMethod.php:681
+#, php-format
+msgid "Amount %1$s refunded successfully. Transaction ID: %2$s "
+msgstr "A sikeresen visszatérített összeg: %1$s. Tranzakció ID: %2$s"
+
+#: app/Services/Integrations/PaymentMethods/BasePaymentMethod.php:722
+msgid "Please activate payment first!"
+msgstr "Előbb kapcsold be a fizetést!"
+
+#: app/Services/Integrations/PaymentMethods/BasePaymentMethod.php:730
+msgid "Pay with:"
+msgstr "Fizetés ezzel:"
+
+#: app/Services/Integrations/PaymentMethods/BasePaymentMethod.php:740
+msgid "Please active at least one payment method!"
+msgstr "Kapcsolj be legalább egy fizetési módot!"
+
+#: app/Services/Integrations/PaymentMethods/Offline/Offline.php:18
+#: app/Services/Integrations/PaymentMethods/Offline/Offline.php:228
+#: app/Services/Integrations/PaymentMethods/Offline/OfflineSettings.php:27
+#: app/Services/Integrations/PaymentMethods/PaymentHelper.php:196
+msgid "Offline Payment"
+msgstr "Offline fizetés"
+
+#: app/Services/Integrations/PaymentMethods/Offline/Offline.php:55
+msgid "Pay with Offline"
+msgstr "Fizetés Offline móddal"
+
+#: app/Services/Integrations/PaymentMethods/Offline/Offline.php:95
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:147
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:361
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:538
+msgid "Order has been placed successfully"
+msgstr "A rendelés sikeresen leadva"
+
+#: app/Services/Integrations/PaymentMethods/Offline/Offline.php:182
+#: app/Services/Integrations/PaymentMethods/PaymentHelper.php:195
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:308
+msgid "Pay with Paypal"
+msgstr "Fizetés PayPal-lal"
+
+#: app/Services/Integrations/PaymentMethods/Offline/Offline.php:188
+msgid "Offline Payments"
+msgstr "Offline fizetések"
+
+#: app/Services/Integrations/PaymentMethods/Offline/Offline.php:189
+msgid ""
+"Configure Offline to accept payments on your booking events and monetize "
+"your time slots"
+msgstr "Állítsd be az Offline fizetési módot, hogy fizetéseket fogadhass a foglalási eseményeidhez, és bevételt szerezhess az idősávjaidból"
+
+#: app/Services/Integrations/PaymentMethods/Offline/Offline.php:192
+msgid "Enable Offline payment for booking payment"
+msgstr "Offline fizetés bekapcsolása a foglalások fizetéséhez"
+
+#: app/Services/Integrations/PaymentMethods/Offline/Offline.php:197
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:323
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:570
+msgid "Payment Label"
+msgstr "Fizetési címke"
+
+#: app/Services/Integrations/PaymentMethods/Offline/Offline.php:199
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:325
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:572
+msgid "This label will be displayed in the booking form"
+msgstr "Ez a címke megjelenik a foglalási űrlapon"
+
+#: app/Services/Integrations/PaymentMethods/PaymentHelper.php:70
+msgid "Total Payment"
+msgstr "Végösszeg"
+
+#: app/Services/Integrations/PaymentMethods/PaymentHelper.php:93
+msgid "Item"
+msgstr "Tétel"
+
+#: app/Services/Integrations/PaymentMethods/PaymentHelper.php:93
+msgid "Price"
+msgstr "Ár"
+
+#: app/Services/Integrations/PaymentMethods/PaymentHelper.php:98
+msgid "Total:"
+msgstr "Összesen:"
+
+#: app/Services/Integrations/PaymentMethods/PaymentHelper.php:138
+msgid "Payment Summary"
+msgstr "Fizetési összegzés"
+
+#: app/Services/Integrations/PaymentMethods/PaymentHelper.php:194
+#: app/Services/Integrations/PaymentMethods/Stripe/StripeSettings.php:49
+msgid "Pay with Card (Stripe)"
+msgstr "Fizetés kártyával (Stripe)"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/API/IPN.php:82
+#: app/Services/Integrations/PaymentMethods/Paypal/API/IPN.php:128
+msgid "Paypal IPN Not Verified"
+msgstr "A PayPal IPN nincs ellenőrizve"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/API/IPN.php:83
+msgid "Payment failed for paypal IPN order hash mismatch"
+msgstr "A PayPal-fizetés sikertelen: az IPN-megrendelés hash-eltérése"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/API/IPN.php:118
+msgid "Paypal IPN Error"
+msgstr "PayPal IPN-hiba"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/API/IPN.php:119
+msgid "Payment failed for paypal IPN error"
+msgstr "A fizetés sikertelen a PayPal IPN hibája miatt"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/API/IPN.php:129
+msgid "Payment failed for paypal IPN verification"
+msgstr "A fizetés sikertelen a PayPal IPN ellenőrzése miatt"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:21
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:444
+msgid "Paypal"
+msgstr "PayPal"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:56
+msgid ""
+"Paypal's payments platform lets you accept credit cards, debit cards, and "
+"popular payment methods around the world—all with a single integration"
+msgstr "A PayPal fizetési platformja lehetővé teszi, hogy világszerte elfogadj hitel- és betéti kártyákat, valamint népszerű fizetési módokat—mindezt egyetlen integrációval"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:78
+msgid "Paypal Email is required to activate Paypal payments"
+msgstr "A PayPal-fizetések bekapcsolásához PayPal-e-mail-cím szükséges"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:79
+msgid "Please enter a valid Paypal Email address"
+msgstr "Adj meg egy érvényes PayPal-e-mail-címet"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:213
+msgid "Payment failed due to invalid receiver email in Paypal IPN"
+msgstr "A fizetés sikertelen, mert a PayPal IPN-ben megadott címzett e-mail-cím hibás"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:234
+msgid "Payment failed due to duplicate transaction id in Paypal IPN"
+msgstr "A fizetés sikertelen, mert duplikált tranzakció-ID szerepel a PayPal IPN-ben"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:260
+msgid "Payment failed due to invalid currency in Paypal IPN"
+msgstr "A fizetés sikertelen a PayPal IPN-ben megadott hibás pénznem miatt"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:268
+msgid "Payment failed due to invalid amount in Paypal IPN"
+msgstr "A PayPal IPN-ben szereplő hibás összeg miatt hiúsult meg a fizetés"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:314
+msgid "Paypal Payments"
+msgstr "PayPal-fizetések"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:315
+msgid ""
+"Configure Paypal to accept payments on your booking events and monetize your"
+" time slots"
+msgstr "Állítsd be a PayPalt, hogy fizetéseket fogadhass el a foglalási eseményeidért, és bevételt szerezhess az idősávjaidból"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:318
+msgid "Enable Paypal payment for booking payment"
+msgstr "PayPal-fizetés bekapcsolása a foglalás kifizetéséhez"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:329
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:576
+msgid "Payment Mode"
+msgstr "Fizetési mód"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:331
+msgid "Sandbox Mode"
+msgstr "Sandbox mód"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:332
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:579
+msgid "Live Mode"
+msgstr "Éles mód"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:338
+msgid "Paypal Email"
+msgstr "PayPal e-mail-cím"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:343
+msgid "Disable Paypal IPN Verification"
+msgstr "PayPal IPN-ellenőrzés kikapcsolása"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:345
+msgid ""
+"Skips the verification postback to PayPal so sandbox notifications can be "
+"tested without a public URL."
+msgstr "Kihagyja a PayPalnak küldött ellenőrző visszahívást, így a sandboxértesítések nyilvános URL nélkül is tesztelhetők."
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:411
+msgid "Payment made via eCheck and will clear automatically in 5-8 days"
+msgstr "Fizetés eCheckkel történt, és automatikusan 5–8 napon belül jóváíródik"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:412
+msgid ""
+"Payment requires a confirmed customer address and must be accepted manually "
+"through PayPal"
+msgstr "A fizetéshez szükség van a vásárló megerősített címére, és a fizetést manuálisan kell elfogadni a PayPalon keresztül"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:413
+msgid ""
+"Payment must be accepted manually through PayPal due to international "
+"account regulations"
+msgstr "A nemzetközi fiókokra vonatkozó előírások miatt a fizetést manuálisan kell elfogadni a PayPalon keresztül"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:414
+msgid ""
+"Payment received in non-shop currency and must be accepted manually through "
+"PayPal"
+msgstr "Az üzlet pénznemétől eltérő pénznemben érkezett a fizetés, ezért manuálisan kell elfogadni a PayPalon keresztül"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:415
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:416
+msgid ""
+"Payment is being reviewed by PayPal staff as high-risk or in possible "
+"violation of government regulations"
+msgstr "A fizetést a PayPal munkatársai felülvizsgálják, mert magas kockázatúnak minősül vagy esetlegesen sérti a kormányzati előírásokat"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:417
+msgid "Payment was sent to non-confirmed or non-registered email address."
+msgstr "A fizetés nem megerősített vagy nem regisztrált e-mail-címre lett elküldve."
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:418
+msgid "PayPal account must be upgraded before this payment can be accepted"
+msgstr "A fizetés elfogadásához előbb magasabb szintre kell emelni a PayPal-fiókot"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:419
+msgid ""
+"PayPal account is not verified. Verify account in order to accept this "
+"payment"
+msgstr "A PayPal-fiók nincs ellenőrizve. Ellenőrizd a fiókot a fizetés elfogadásához"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:420
+msgid ""
+"Payment is pending for unknown reasons. Contact PayPal support for "
+"assistance"
+msgstr "A fizetés ismeretlen okokból függőben van. Segítségért vedd fel a kapcsolatot a PayPal támogatásával"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/Paypal.php:425
+msgid "Payment marked as pending"
+msgstr "Függőben lévőként megjelölt fizetés"
+
+#: app/Services/Integrations/PaymentMethods/Paypal/PaypalSettings.php:32
+msgid "Pay with PayPal"
+msgstr "Fizetés PayPallel"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/API/API.php:31
+msgid "API Error: "
+msgstr "API-hiba: "
+
+#: app/Services/Integrations/PaymentMethods/Stripe/API/API.php:45
+msgid "Unknown Stripe API request error"
+msgstr "Ismeretlen hiba történt a Stripe API-kérés során"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/API/ApiRequest.php:128
+#: app/Services/Integrations/PaymentMethods/Stripe/API/ApiRequest.php:170
+msgid "There was a problem connecting to the Stripe API endpoint."
+msgstr "Probléma merült fel a Stripe API-végponthoz való csatlakozáskor."
+
+#: app/Services/Integrations/PaymentMethods/Stripe/API/ApiRequest.php:140
+msgid "Stripe General Error"
+msgstr "Általános Stripe-hiba"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/ConnectConfig.php:79
+msgid "Invalid Stripe Request. Please configure stripe payment gateway again"
+msgstr "Hibás Stripe-kérés. Állítsd be újra a Stripe-fizetési átjárót"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/ConnectConfig.php:175
+msgid "Stripe mode is not active"
+msgstr "A Stripe mód nem aktív"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/ConnectConfig.php:185
+msgid "Selected Account does not exist"
+msgstr "A kiválasztott fiók nem létezik"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/ConnectConfig.php:212
+msgid "Stripe settings has been disconnected"
+msgstr "A Stripe beállításai le lettek választva"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:22
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:703
+msgid "Stripe"
+msgstr "Stripe"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:77
+msgid ""
+"Stripe's payments platform lets you accept credit cards, debit cards, and "
+"popular payment methods around the world—all with a single integration"
+msgstr "A Stripe fizetési platformjával egyetlen integráción keresztül fogadhatsz el hitel- és betéti kártyákat, valamint világszerte népszerű fizetési módokat"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:129
+msgid "Payment for Order"
+msgstr "Fizetés a rendelésért"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:478
+msgid "Invoice for Order"
+msgstr "Számla a rendeléshez"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:555
+msgid "Pay with Stripe"
+msgstr "Fizetés Stripe-pal"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:561
+msgid "Stripe Payments"
+msgstr "Stripe-fizetések"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:562
+msgid ""
+"Configure stripe to accept payments on your booking events and monetize your"
+" time slots"
+msgstr "Állítsd be a Stripe-ot, hogy fizetéseket fogadhass el a foglalási eseményeidért, és bevételt szerezhess az idősávjaidból"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:565
+msgid "Enable Stripe payment for booking payment"
+msgstr "Stripe-fizetés bekapcsolása a foglalás kifizetéséhez"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:578
+msgid "Test Mode"
+msgstr "Tesztmód"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:594
+msgid "Provider"
+msgstr "Szolgáltató"
+
+#: app/Services/Integrations/PaymentMethods/Stripe/Stripe.php:686
+msgid "Payment Modal is opening, Please complete the payment"
+msgstr "Megnyílik a fizetési ablak, fejezd be a fizetést"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:94
+msgid "SMS Number"
+msgstr "SMS-szám"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:95
+msgid "Enter Twilio Sender SMS Number"
+msgstr "Add meg a Twilio küldő SMS-számát"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:99
+msgid "WhatsApp Number (Optional)"
+msgstr "WhatsApp-szám (opcionális)"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:100
+msgid "Enter Twilio Sender WhatsApp Number"
+msgstr "Add meg a Twilio küldő WhatsApp-számát"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:104
+msgid "Account SID"
+msgstr "Account SID"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:105
+msgid "Enter Twilio Account SID"
+msgstr "Add meg a Twilio Account SID-et"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:109
+msgid "Auth Token"
+msgstr "Auth Token"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:110
+msgid "Enter Twilio API Auth Token"
+msgstr "Add meg a Twilio API Auth Token értékét"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:114
+msgid ""
+"Please read the step-by-step documentation to setup Account SID and Auth "
+"Token and get the Sender Numbers for your app."
+msgstr "Olvasd el a lépésről lépésre szóló dokumentációt az Account SID és az Auth Token beállításához, és szerezd be az alkalmazásodhoz tartozó küldő telefonszámokat."
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:114
+msgid "Go to the documentation article"
+msgstr "Ugrás a dokumentációs cikkhez"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:118
+msgid "Twilio SMS Integration"
+msgstr "Twilio SMS-integráció"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:119
+msgid ""
+"Configure Twilio API to send SMS/WhatsApp notifications on booking events"
+msgstr "Állítsd be a Twilio API-t, hogy SMS-/WhatsApp-értesítéseket küldjön a foglalási eseményekről"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:124
+msgid "Your Twilio API integration is up and running."
+msgstr "A Twilio API-integrációd rendben működik."
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:125
+msgid "Your Twilio API Key is not valid."
+msgstr "A Twilio API-kulcsod érvénytelen."
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:168
+msgid "Twilio API Error"
+msgstr "Twilio API-hiba"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:169
+msgid "Failed to send sms with Twilio API"
+msgstr "Nem sikerült SMS-t küldeni a Twilio API-val"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:282
+#: app/Services/Integrations/Twilio/Bootstrap.php:303
+msgid "SMS Sent Successfully"
+msgstr "SMS sikeresen elküldve"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:284
+msgid "Booking Confirmation SMS has been sent to attendee"
+msgstr "A foglalás visszaigazolásáról szóló SMS elküldve a résztvevőnek"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:305
+msgid "Booking Confirmation SMS has been sent to host"
+msgstr "A foglalás megerősítéséről szóló SMS elküldve a házigazdának"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:343
+#: app/Services/Integrations/Twilio/Bootstrap.php:363
+msgid "Reminder SMS Sent Successfully"
+msgstr "Emlékeztető SMS sikeresen elküldve"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:345
+msgid "Booking Reminder SMS has been sent to attendee"
+msgstr "A foglalási emlékeztető SMS elküldve a résztvevőnek"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:365
+msgid "Booking Reminder SMS has been sent to host"
+msgstr "A foglalási emlékeztető SMS elküldve a házigazdának"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:438
+#: app/Services/Integrations/Twilio/Bootstrap.php:461
+msgid "Cancellation SMS Sent Successfully"
+msgstr "Lemondási SMS sikeresen elküldve"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:440
+msgid "Booking Cancellation SMS has been sent to the Attendee"
+msgstr "A foglalás lemondásáról szóló SMS elküldve a résztvevőnek"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:463
+msgid "Booking Cancellation SMS has been sent to the host"
+msgstr "A foglalás lemondásáról szóló SMS elküldve a házigazdának"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:529
+#: app/Services/Integrations/Twilio/Bootstrap.php:552
+msgid "Rescheduling SMS Sent Successfully"
+msgstr "Átütemezési SMS sikeresen elküldve"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:531
+msgid "Booking Rescheduling SMS has been sent to the Attendee"
+msgstr "A foglalás átütemezéséről szóló SMS elküldve a résztvevőnek"
+
+#: app/Services/Integrations/Twilio/Bootstrap.php:554
+msgid "Booking Rescheduling SMS has been sent to the host"
+msgstr "A foglalás átütemezéséről szóló SMS elküldve a házigazdának"
+
+#: app/Services/Integrations/Twilio/Client.php:68
+#: app/Services/Integrations/ZoomMeeting/Client.php:150
+msgid "Unexpected error from remote api"
+msgstr "Váratlan hiba a távoli API-tól"
+
+#: app/Services/Integrations/Twilio/TwilioHelper.php:127
+msgid "Booking Confirmation SMS to Attendee"
+msgstr "Foglalást visszaigazoló SMS a résztvevőnek"
+
+#: app/Services/Integrations/Twilio/TwilioHelper.php:137
+msgid "Booking Confirmation SMS to Organizer (You)"
+msgstr "Foglalást visszaigazoló SMS a szervezőnek (te)"
+
+#: app/Services/Integrations/Twilio/TwilioHelper.php:147
+msgid "Configure Meeting Reminder to Attendee"
+msgstr "Találkozó-emlékeztető beállítása a résztvevőnek"
+
+#: app/Services/Integrations/Twilio/TwilioHelper.php:163
+msgid "Configure Meeting Reminder to Organizer (You)"
+msgstr "Találkozó-emlékeztető beállítása a szervezőnek (te)"
+
+#: app/Services/Integrations/Twilio/TwilioHelper.php:180
+msgid "Booking Cancelled by Attendee (SMS to Organizer)"
+msgstr "A résztvevő által lemondott foglalás (SMS a szervezőnek)"
+
+#: app/Services/Integrations/Twilio/TwilioHelper.php:190
+msgid "Booking Cancelled by Organizer (SMS to Attendee)"
+msgstr "A szervező által lemondott foglalás (SMS a résztvevőnek)"
+
+#: app/Services/Integrations/Twilio/TwilioHelper.php:200
+msgid "Booking Rescheduled by Attendee (SMS to Organizer)"
+msgstr "A résztvevő által átütemezett foglalás (SMS a szervezőnek)"
+
+#: app/Services/Integrations/Twilio/TwilioHelper.php:210
+msgid "Booking Rescheduled by Organizer (SMS to Attendee)"
+msgstr "A szervező által átütemezett foglalás (SMS a résztvevőnek)"
+
+#: app/Services/Integrations/Twilio/TwilioHelper.php:220
+msgid "Booking Approval Request to Host (SMS to Organizer)"
+msgstr "Foglalás jóváhagyására vonatkozó kérelem a házigazdának (SMS a szervezőnek)"
+
+#: app/Services/Integrations/Twilio/TwilioHelper.php:229
+msgid "Booking Submission Confirmation (SMS to Attendee)"
+msgstr "Foglalás beküldésének visszaigazolása (SMS a résztvevőnek)"
+
+#: app/Services/Integrations/Twilio/TwilioHelper.php:238
+msgid "Booking Declined by Organizer (SMS to Attendee)"
+msgstr "A szervező által elutasított foglalás (SMS a résztvevőnek)"
+
+#: app/Services/Integrations/Webhook/WebhookIntegration.php:162
+#: app/Services/Integrations/Webhook/WebhookIntegration.php:170
+msgid "Failed to send webhook to"
+msgstr "Nem sikerült webhookot küldeni ide"
+
+#: app/Services/Integrations/Webhook/WebhookIntegration.php:168
+msgid "Webhook sent successfully to"
+msgstr "Webhook sikeresen elküldve ide"
+
+#: app/Services/Integrations/Webhook/WebhookIntegration.php:178
+msgid "Webhook sent successfully"
+msgstr "Webhook sikeresen elküldve"
+
+#: app/Services/Integrations/Webhook/WebhookIntegration.php:178
+msgid "Failed to send webhook"
+msgstr "Nem sikerült elküldeni a webhookot"
+
+#: app/Services/Integrations/Woo/Bootstrap.php:67
+msgid "You are redirecting to checkout page to complete the appointment."
+msgstr "A találkozó befejezéséhez a pénztároldalra irányítjuk."
+
+#: app/Services/Integrations/Woo/Bootstrap.php:73
+msgid "Redirect to WooCommerce checkout page"
+msgstr "Átirányítás a WooCommerce-pénztároldalra"
+
+#: app/Services/Integrations/Woo/Bootstrap.php:74
+msgid "User redirected to Woo checkout page to comeplete the order."
+msgstr "A felhasználó átirányítva a Woo-pénztároldalára a rendelés befejezéséhez."
+
+#: app/Services/Integrations/Woo/Bootstrap.php:93
+msgid "Appointment"
+msgstr "Időpont"
+
+#: app/Services/Integrations/Woo/Bootstrap.php:141
+msgid "Booking Details"
+msgstr "Foglalás részletei"
+
+#: app/Services/Integrations/Woo/Bootstrap.php:145
+msgid "Meeting Info:"
+msgstr "Találkozó adatai:"
+
+#: app/Services/Integrations/Woo/Bootstrap.php:148
+msgid "Date & Time:"
+msgstr "Dátum és időpont:"
+
+#: app/Services/Integrations/Woo/Bootstrap.php:152
+msgid "Status:"
+msgstr "Állapot:"
+
+#: app/Services/Integrations/Woo/Bootstrap.php:155
+msgid "View Full Meeting Details"
+msgstr "Teljes találkozó részleteinek megtekintése"
+
+#: app/Services/Integrations/Woo/Bootstrap.php:221
+msgid "Woo: Booking status could not be changed"
+msgstr "Woo: A foglalás állapotát nem sikerült megváltoztatni"
+
+#. translators: Notification message indicating that the booking status could
+#. not be changed because it is in a certain status. %1$s is the current
+#. booking status, %2$s is a link to view the order
+#: app/Services/Integrations/Woo/Bootstrap.php:224
+#, php-format
+msgid ""
+"Booking status could not be changed as it is in %1$s status. %2$sView "
+"Order%3$s"
+msgstr "A foglalás állapota nem módosítható, mivel jelenleg %1$s állapotban van. %2$sRendelés megtekintése%3$s"
+
+#. translators: Notification message for the change of booking status to
+#. scheduled. %1$s is the booking ID, %2$s is the full booking date and time
+#. with timezone, %3$s is a link to view the booking
+#: app/Services/Integrations/Woo/Bootstrap.php:263
+#, php-format
+msgid ""
+"Booking #%1$s status changed to scheduled at %2$s. %3$sView Booking%4$s"
+msgstr "A(z) #%1$s foglalás állapota ütemezettre változott ekkor: %2$s. %3$sFoglalás megtekintése%4$s"
+
+#: app/Services/Integrations/Woo/Bootstrap.php:293
+msgid "Cancelled by WooCommerce Order"
+msgstr "WooCommerce-rendelés miatt lemondva"
+
+#. translators: 1: Booking ID, 2: Opening link tag, 3: Closing link tag
+#: app/Services/Integrations/Woo/Bootstrap.php:298
+#, php-format
+msgid "Booking #%1$s status changed to cancelled. %2$sView Booking%3$s"
+msgstr "A(z) #%1$s foglalás állapota lemondottra változott. %2$sFoglalás megtekintése%3$s"
+
+#: app/Services/Integrations/Woo/Bootstrap.php:308
+msgid "Woo: Booking status changed to cancelled"
+msgstr "Woo: A foglalás állapota lemondottra változott"
+
+#. translators: Notification message for the change of Woocommerce order
+#. status and booking status to cancelled. %1$s is the new order status, %2$s
+#. is a link to view the order
+#: app/Services/Integrations/Woo/Bootstrap.php:311
+#, php-format
+msgid ""
+"Woocommerce order status changed to %1$s and booking status changed to "
+"cancelled. %2$sView Order%3$s"
+msgstr "A WooCommerce-rendelés állapota %1$s értékre változott, és a foglalás állapota lemondottra változott. %2$sRendelés megtekintése%3$s"
+
+#. translators: 1: order number 2: order date 3: order status
+#: app/Services/Integrations/Woo/Bootstrap.php:335
+#, php-format
+msgid "Order #%1$s was placed on %2$s and is currently %3$s."
+msgstr "A(z) #%1$s rendelés %2$s dátummal lett leadva, és jelenleg %3$s."
+
+#: app/Services/Integrations/Woo/Bootstrap.php:345
+msgid "View Order"
+msgstr "Rendelés megtekintése"
+
+#: app/Services/Integrations/Woo/Bootstrap.php:351
+msgid "Order Summary"
+msgstr "Rendelés összegzése"
+
+#: app/Services/Integrations/Woo/Bootstrap.php:426
+msgid "Woo: Booking status changed to scheduled"
+msgstr "Woo: A foglalás állapota ütemezettre változott"
+
+#. translators: Notification message for the change of Woocommerce order
+#. status and booking status to scheduled. %1$s is the new order status, %2$s
+#. is a link to view the order
+#: app/Services/Integrations/Woo/Bootstrap.php:429
+#, php-format
+msgid ""
+"Woocommerce order status changed to %1$s and booking status changed to "
+"scheduled. %2$sView Order%3$s"
+msgstr "A WooCommerce-rendelés állapota %1$s értékre változott, és a foglalás állapota ütemezettre változott. %2$sRendelés megtekintése%3$s"
+
+#: app/Services/Integrations/ZoomMeeting/Bootstrap.php:66
+msgid "Connect Zoom Account First"
+msgstr "Először csatlakoztasd a Zoom-fiókot"
+
+#: app/Services/Integrations/ZoomMeeting/Bootstrap.php:76
+msgid "Zoom Video"
+msgstr "Zoom-videó"
+
+#: app/Services/Integrations/ZoomMeeting/Bootstrap.php:123
+#: app/Services/Integrations/ZoomMeeting/Bootstrap.php:216
+#: app/Services/Integrations/ZoomMeeting/Bootstrap.php:322
+msgid "Zoom API Error"
+msgstr "Zoom API-hiba"
+
+#. translators: Notification message for the failure to create a meeting with
+#. Zoom API. %s is the error message returned by the API
+#: app/Services/Integrations/ZoomMeeting/Bootstrap.php:125
+#, php-format
+msgid "Failed to create meeting with Zoom API. API Response: %1s"
+msgstr "Nem sikerült értekezletet létrehozni a Zoom API-val. API-válasz: %1s"
+
+#: app/Services/Integrations/ZoomMeeting/Bootstrap.php:143
+msgid "Zoom Meeting has been created"
+msgstr "Zoom-értekezlet létrehozva"
+
+#. translators: Notification message for the successful scheduling of a Zoom
+#. meeting. %1$s is a link to start the meeting
+#: app/Services/Integrations/ZoomMeeting/Bootstrap.php:145
+#, php-format
+msgid "Zoom Meeting has been scheduled. %1$s"
+msgstr "Zoom-értekezlet ütemezve. %1$s"
+
+#. translators: Notification message for the successful scheduling of a Zoom
+#. meeting. %1$s is a link to start the meeting
+#: app/Services/Integrations/ZoomMeeting/Bootstrap.php:145
+msgid "Start Meeting URL"
+msgstr "Értekezlet indítására szolgáló URL"
+
+#: app/Services/Integrations/ZoomMeeting/Bootstrap.php:217
+msgid "Failed to delete meeting with Zoom API"
+msgstr "Nem sikerült törölni az értekezletet a Zoom API-val"
+
+#: app/Services/Integrations/ZoomMeeting/Bootstrap.php:226
+#: app/Services/Integrations/ZoomMeeting/Bootstrap.php:227
+msgid "Zoom Meeting has been deleted"
+msgstr "Zoom-értekezlet törölve"
+
+#: app/Services/Integrations/ZoomMeeting/Bootstrap.php:323
+msgid "Failed to update meeting with Zoom API"
+msgstr "Nem sikerült frissíteni az értekezletet a Zoom API-val"
+
+#: app/Services/Integrations/ZoomMeeting/Bootstrap.php:338
+msgid "Zoom Meeting has been updated"
+msgstr "Zoom-értekezlet frissítve"
+
+#: app/Services/Integrations/ZoomMeeting/Bootstrap.php:339
+msgid "Zoom Meeting has been updated with the new data"
+msgstr "Zoom-értekezlet frissítve az új adatokkal"
+
+#: app/Services/Integrations/ZoomMeeting/ZoomHelper.php:49
+msgid "No zoom credentials found"
+msgstr "Nem találhatók Zoom-hitelesítő adatok"
+
+#: app/Services/Integrations/ZoomMeeting/ZoomHelper.php:108
+msgid "Zoom Account ID"
+msgstr "Zoom-fiók ID"
+
+#: app/Services/Integrations/ZoomMeeting/ZoomHelper.php:109
+msgid "Enter Your Account ID"
+msgstr "Add meg a fiók ID-ját"
+
+#: app/Services/Integrations/ZoomMeeting/ZoomHelper.php:113
+msgid "Zoom App Client ID"
+msgstr "Zoom-alkalmazás Client ID"
+
+#: app/Services/Integrations/ZoomMeeting/ZoomHelper.php:114
+msgid "Enter Your App Client ID"
+msgstr "Add meg az alkalmazás Client ID-ját"
+
+#: app/Services/Integrations/ZoomMeeting/ZoomHelper.php:118
+msgid "Zoom App Secret Key"
+msgstr "Zoom-alkalmazás titkos kulcs"
+
+#: app/Services/Integrations/ZoomMeeting/ZoomHelper.php:119
+msgid "Enter Your App Secret Key"
+msgstr "Add meg az alkalmazás titkos kulcsát"
+
+#: app/Services/PluginManager/FluentLicensing.php:322
+msgid "license has been"
+msgstr "licenc"
+
+#: app/Services/PluginManager/FluentLicensing.php:322
+msgid "expired at"
+msgstr "lejárt ekkor"
+
+#: app/Services/PluginManager/FluentLicensing.php:323
+msgid "Click Here to Renew Your License"
+msgstr "Kattints ide a licenc megújításához"
+
+#: app/Services/PluginManager/PluginInstaller.php:96
+msgid "Invalid plugin zip URL."
+msgstr "Hibás a bővítmény ZIP-fájljának URL-je."
+
+#: app/Services/PluginManager/PluginInstaller.php:134
+msgid "Plugin package installation failed."
+msgstr "A bővítménycsomag telepítése sikertelen."
+
+#: app/Services/PluginManager/PluginUpdater.php:74
+msgid "Check Update"
+msgstr "Frissítés ellenőrzése"
+
+#: app/Services/PluginManager/PluginUpdater.php:210
+msgid "No data found for this plugin"
+msgstr "Nem találhatók adatok ehhez a bővítményhez"
+
+#: app/Services/PluginManager/UpdateVerifier.php:166
+msgid ""
+"This build has no release key to check the update against, so it was not "
+"installed. Please contact support."
+msgstr "Ehhez a buildhez nem tartozik frissítés-ellenőrző kulcs, ezért nem lett telepítve. Fordulj a támogatáshoz."
+
+#: app/Services/PluginManager/UpdateVerifier.php:170
+msgid ""
+"This server cannot check update signatures, because "
+"sodium_crypto_sign_verify_detached() is unavailable. Ask your host to enable"
+" it, or install the update by hand."
+msgstr "Ez a szerver nem tudja ellenőrizni a frissítés aláírását, mert a sodium_crypto_sign_verify_detached() nem érhető el. Kérd meg a tárhelyszolgáltatódat, hogy kapcsolja be, vagy telepítsd kézzel a frissítést."
+
+#: app/Services/PluginManager/UpdateVerifier.php:227
+msgid ""
+"The downloaded update does not match its signature, so it was not installed."
+" Please try again, and contact support if this keeps happening."
+msgstr "A letöltött frissítés nem egyezik az aláírásával, ezért nem lett telepítve. Próbáld újra, és fordulj a támogatáshoz, ha a probléma továbbra is fennáll."
+
+#: app/Services/PluginManager/UpdateVerifier.php:249
+msgid "The update manifest is malformed, so the update was not installed."
+msgstr "A frissítési jegyzék hibás, ezért a frissítés nem lett telepítve."
+
+#: app/Services/PluginManager/UpdateVerifier.php:256
+msgid ""
+"This update is not signed by WPManageNinja, so it was not installed. Please "
+"contact support before installing it by hand."
+msgstr "Ezt a frissítést nem a WPManageNinja írta alá, ezért nem lett telepítve. Mielőtt kézzel telepítenéd, fordulj a támogatáshoz."
+
+#: app/Services/PluginManager/UpdateVerifier.php:262
+msgid ""
+"This update package is for a different plugin, so it was not installed."
+msgstr "Ez a frissítőcsomag egy másik bővítményhez készült, ezért nem lett telepítve."
+
+#: app/Services/PluginManager/UpdateVerifier.php:266
+msgid "The update manifest has no version, so the update was not installed."
+msgstr "A frissítési jegyzékben nincs verzió, ezért a frissítés nem lett telepítve."
+
+#: app/Services/PluginManager/UpdateVerifier.php:279
+msgid ""
+"The offered update is older than the version advertised, so it was not "
+"installed."
+msgstr "A felajánlott frissítés régebbi a meghirdetett verziónál, ezért nem lett telepítve."
+
+#. translators: 1: offered version number, 2: installed version number
+#: app/Services/PluginManager/UpdateVerifier.php:288
+#, php-format
+msgid ""
+"The server offered version %1$s, which is older than the installed %2$s, so "
+"it was not installed."
+msgstr "A szerver a(z) %1$s verziót ajánlotta fel, amely régebbi a telepített %2$s verziónál, ezért nem lett telepítve."
+
+#: app/Services/PluginManager/UpdateVerifier.php:295
+msgid ""
+"The update manifest has no valid checksum, so the update was not installed."
+msgstr "A frissítési jegyzékben nincs érvényes ellenőrzőösszeg, ezért a frissítés nem lett telepítve."
+
+#: app/Services/PluginManager/UpdateVerifier.php:315
+msgid ""
+"This update was served without a signature, so it was not installed. Please "
+"try again later, and contact support if this keeps happening."
+msgstr "Ezt a frissítést aláírás nélkül tették elérhetővé, ezért nem lett telepítve. Próbáld újra később, és fordulj a támogatáshoz, ha a probléma továbbra is fennáll."
+
+#: app/Services/PluginManager/UpdateVerifier.php:321
+msgid ""
+"The update manifest could not be read, so the update was not installed."
+msgstr "A frissítési jegyzék nem olvasható, ezért a frissítés nem lett telepítve."
+
+#: app/Services/ReceiptHelper.php:34
+msgid "Invalid submission. No receipt found"
+msgstr "Érvénytelen beküldés. Nem található nyugta"
+
+#: app/Services/ReceiptHelper.php:131
+msgid "Items Details"
+msgstr "Tételek részletei"
+
+#: app/Services/ReceiptHelper.php:156
+msgid "First Name"
+msgstr "Keresztnév"
+
+#: app/Services/ReceiptHelper.php:160
+msgid "Last Name"
+msgstr "Vezetéknév"
+
+#: app/Services/ReceiptHelper.php:164
+msgid "Email"
+msgstr "E-mail-cím"
+
+#: boot/app.php:80
+msgid "FluentBooking base plugin needs to be updated to the latest version."
+msgstr "A FluentBooking alapbővítményt a legújabb verzióra kell frissíteni."
+
+#: boot/app.php:80
+msgid "Click here to update"
+msgstr "Kattints ide a frissítéshez"

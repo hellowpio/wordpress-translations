@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: Slack for WooCommerce 1.7.1\n"
+"Project-Id-Version: Slack for WooCommerce 1.8.0\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T19:14:04+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: Slack for WooCommerce\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.7.1\n"
+"X-Plugin-Version: 1.8.0\n"
 
 #. Plugin Name of the plugin
 #: woocommerce-slack.php
@@ -49,176 +49,206 @@ msgstr "Kestrel"
 msgid "https://kestrelwp.com"
 msgstr "https://kestrelwp.com"
 
-#: includes/class-wcslack-events.php:151
-msgid "New Post:"
+#: includes/class-wcslack-events.php:154
+msgid "New post:"
 msgstr "Új bejegyzés:"
 
-#: includes/class-wcslack-events.php:200
-msgid " by "
-msgstr " írta "
+#. translators: %1$s - Post title, %2$s - Post author (eg. "New post: My first
+#. post by John Doe")
+#: includes/class-wcslack-events.php:206
+#, php-format
+msgid "%1$s by %2$s"
+msgstr "%1$s – készítette: %2$s"
 
-#: includes/class-wcslack-events.php:201
-msgid "View Post"
+#: includes/class-wcslack-events.php:211
+msgid "View post"
 msgstr "Bejegyzés megtekintése"
 
-#: includes/class-wcslack-events.php:224
+#: includes/class-wcslack-events.php:234
 msgid "Post"
 msgstr "Bejegyzés"
 
-#: includes/class-wcslack-events.php:229
+#: includes/class-wcslack-events.php:239
 msgid "Author"
 msgstr "Szerző"
 
-#: includes/class-wcslack-events.php:234
-msgid "Post Content"
+#: includes/class-wcslack-events.php:244
+msgid "Post content"
 msgstr "Bejegyzés tartalma"
 
 #. translators: Placeholder: %s - Order number
-#: includes/class-wcslack-events.php:344
+#: includes/class-wcslack-events.php:366
 #, php-format
-msgid "New Order #%s:"
+msgid "New order #%s:"
 msgstr "Új rendelés #%s:"
 
 #. translators: Placeholder: %s - Order number
-#: includes/class-wcslack-events.php:347
+#: includes/class-wcslack-events.php:369
 #, php-format
-msgid "Order #%s Updated:"
-msgstr "Rendelés #%s frissítve:"
+msgid "Order #%s updated:"
+msgstr "A #%s rendelés frissítve:"
 
-#: includes/class-wcslack-events.php:359 includes/class-wcslack-events.php:579
-msgid " ordered "
-msgstr " megrendelte "
+#. translators: %1$s - Customer name, %2$s - Order items, %3$s - Order total
+#. (eg. "John Doe ordered 1x Product A, 2x Product B for $30.00")
+#. translators: Placeholder: %1s - Customer name, %2$s - Order items, %3$s -
+#. Order total (eg. "John Doe ordered 1x Product A, 2x Product B for $30.00")
+#: includes/class-wcslack-events.php:383 includes/class-wcslack-events.php:618
+#, php-format
+msgid "%1$s ordered %2$s for %3$s"
+msgstr "%1$s %2$s terméket rendelt, összesen %3$s értékben"
 
-#: includes/class-wcslack-events.php:360 includes/class-wcslack-events.php:580
-#: includes/class-wcslack-events.php:744
-msgid " for "
-msgstr " ért "
-
-#: includes/class-wcslack-events.php:361 includes/class-wcslack-events.php:581
-#: includes/class-wcslack-events.php:745
-msgid "View Order"
+#: includes/class-wcslack-events.php:389 includes/class-wcslack-events.php:624
+msgid "View order"
 msgstr "Rendelés megtekintése"
 
-#: includes/class-wcslack-events.php:386 includes/class-wcslack-events.php:606
-#: includes/class-wcslack-events.php:768
+#: includes/class-wcslack-events.php:416 includes/class-wcslack-events.php:651
+#: includes/class-wcslack-events.php:830
 msgid "Order"
 msgstr "Rendelés"
 
-#: includes/class-wcslack-events.php:391 includes/class-wcslack-events.php:611
-msgid "Order Status"
+#: includes/class-wcslack-events.php:421
+msgid "Order status"
 msgstr "Rendelés állapota"
 
-#: includes/class-wcslack-events.php:396 includes/class-wcslack-events.php:616
+#: includes/class-wcslack-events.php:426 includes/class-wcslack-events.php:661
 msgid "Customer"
 msgstr "Vásárló"
 
-#: includes/class-wcslack-events.php:401 includes/class-wcslack-events.php:621
-msgid "Order Items"
+#: includes/class-wcslack-events.php:431
+msgid "Order items"
 msgstr "Rendelési tételek"
 
 #. translators: Placeholder: %s - Order number
-#: includes/class-wcslack-events.php:568
+#: includes/class-wcslack-events.php:605
 #, php-format
-msgid "New Subscription Renewal Order #%s:"
+msgid "New subscription renewal order #%s:"
 msgstr "Új előfizetés-megújítási rendelés #%s:"
 
-#: includes/class-wcslack-events.php:717
+#: includes/class-wcslack-events.php:656
+msgid "Order Status"
+msgstr "Rendelés állapota"
+
+#: includes/class-wcslack-events.php:666
+msgid "Order Items"
+msgstr "Rendelési tételek"
+
+#: includes/class-wcslack-events.php:762
 msgctxt "Refund reason"
 msgid "No reason given"
 msgstr "Nincs megadva indok"
 
 #. translators: Placeholder: %s - Order number
-#: includes/class-wcslack-events.php:732
+#: includes/class-wcslack-events.php:789
 #, php-format
-msgid "Refund for Order #%s:"
+msgid "Refund for order #%s:"
 msgstr "Visszatérítés a #%s számú rendeléshez:"
 
-#: includes/class-wcslack-events.php:773
-msgid "Refund Reason"
-msgstr "Visszatérítés indoka"
+#. translators: Placeholders: %1$s - Refunded items, %2$s - Refund total (eg.
+#. "1x Product A, 2x Product B for $30.00")
+#: includes/class-wcslack-events.php:801
+#, php-format
+msgid "%1$s for %2$s"
+msgstr "%1$s (%2$s esetén)"
 
-#: includes/class-wcslack-events.php:778
-msgid "Refunded Items"
+#: includes/class-wcslack-events.php:806
+msgid "View Order"
+msgstr "Rendelés megtekintése"
+
+#: includes/class-wcslack-events.php:835
+msgid "Refund reason"
+msgstr "Visszatérítés oka"
+
+#: includes/class-wcslack-events.php:840
+msgid "Refunded items"
 msgstr "Visszatérített tételek"
 
-#: includes/class-wcslack-events.php:816
-msgid "Back Order:"
+#: includes/class-wcslack-events.php:878
+msgid "Back order:"
 msgstr "Utánrendelés:"
 
-#: includes/class-wcslack-events.php:820
+#. translators: Placeholders: %1$d - Product ID, %2$s - Product Title
+#: includes/class-wcslack-events.php:884
 #, php-format
 msgid "Product (#%1$d %2$s) is on backorder."
-msgstr "A termék (#%1$d %2$s) utánrendelés alatt áll."
+msgstr "A termék (#%1$d %2$s) utánrendelhető."
 
-#: includes/class-wcslack-events.php:833 includes/class-wcslack-events.php:877
-#: includes/class-wcslack-events.php:921
-msgid "View Product"
+#: includes/class-wcslack-events.php:898 includes/class-wcslack-events.php:948
+#: includes/class-wcslack-events.php:998
+msgid "View product"
 msgstr "Termék megtekintése"
 
-#: includes/class-wcslack-events.php:861
-msgid "Low on Stock:"
+#: includes/class-wcslack-events.php:926
+msgid "Low on stock:"
 msgstr "Alacsony készlet:"
 
-#: includes/class-wcslack-events.php:864
+#. translators: Placeholders: %1$d - Product ID, %2$s - Product Title
+#: includes/class-wcslack-events.php:931
 #, php-format
 msgid "Product (#%1$d %2$s) is low on stock."
 msgstr "A termék (#%1$d %2$s) készlete alacsony."
 
-#: includes/class-wcslack-events.php:905
-msgid "Out of Stock:"
-msgstr "Nincs készleten:"
+#: includes/class-wcslack-events.php:976
+msgid "Out of stock:"
+msgstr "Elfogyott:"
 
-#: includes/class-wcslack-events.php:908
+#. translators: Placeholders: %1$d - Product ID, %2$s - Product Title
+#: includes/class-wcslack-events.php:981
 #, php-format
 msgid "Product (#%1$d %2$s) is out of stock."
 msgstr "A termék (#%1$d %2$s) nincs készleten."
 
-#: includes/class-wcslack-events.php:979
-msgid "New Review:"
+#: includes/class-wcslack-events.php:1056
+msgid "New review:"
 msgstr "Új értékelés:"
 
-#: includes/class-wcslack-events.php:991
-msgid " on "
-msgstr " a(z) "
+#. translators: Placeholders: %1$s - Prefix, %2$s - Reviewer name, %3$s -
+#. Product name, %4$s - Review rating (eg. ":star::star::star::star::star:")
+#: includes/class-wcslack-events.php:1070
+#, php-format
+msgid "%1$s %2$s on %3$s %4$s"
+msgstr "%1$s %2$s ekkor: %3$s %4$s"
 
-#: includes/class-wcslack-events.php:993
-msgid "View Review"
+#: includes/class-wcslack-events.php:1077
+msgid "View review"
 msgstr "Értékelés megtekintése"
 
-#: includes/class-wcslack-events.php:1002
+#: includes/class-wcslack-events.php:1086
 msgid "Reviewer"
 msgstr "Értékelő"
 
-#: includes/class-wcslack-events.php:1007
+#: includes/class-wcslack-events.php:1091
 msgid "Rating"
 msgstr "Értékelés"
 
-#: includes/class-wcslack-events.php:1012
+#: includes/class-wcslack-events.php:1096
 msgid "Product"
 msgstr "Termék"
 
-#: includes/class-wcslack-events.php:1017
+#: includes/class-wcslack-events.php:1101
 msgid "Review"
-msgstr "Vélemény"
+msgstr "Felülvizsgálat"
 
-#: includes/class-wcslack-events.php:1080
-msgid "New Customer:"
+#: includes/class-wcslack-events.php:1164
+msgid "New customer:"
 msgstr "Új vásárló:"
 
-#: includes/class-wcslack-events.php:1098
-msgid " Registered"
-msgstr " Regisztrált"
+#. translators: Placeholders: %1$s - Prefix, %2$s - Customer name (eg. "John
+#. Doe registered")
+#: includes/class-wcslack-events.php:1184
+#, php-format
+msgid "%1$s %2$s registered"
+msgstr "%1$s %2$s regisztrált"
 
-#: includes/class-wcslack-events.php:1099
-msgid "View Customer"
+#: includes/class-wcslack-events.php:1189
+msgid "View customer"
 msgstr "Vásárló megtekintése"
 
-#: includes/class-wcslack-events.php:1220
+#: includes/class-wcslack-events.php:1310
 msgid "Shipping"
 msgstr "Szállítás"
 
-#: includes/class-wcslack-events.php:1245
-msgid "Order Total"
+#: includes/class-wcslack-events.php:1335
+msgid "Order total"
 msgstr "Rendelés végösszege"
 
 #: includes/class-wcslack-privacy.php:11
@@ -249,9 +279,7 @@ msgstr ""
 msgid ""
 "Configure the settings below to send notifications to your Slack channel "
 "based on WooCommerce events."
-msgstr ""
-"Állítsa be az alábbi beállításokat, hogy a WooCommerce-események alapján "
-"értesítéseket küldjön a Slack-csatornájára."
+msgstr "Az alábbi beállításokkal megadhatja, hogy mely WooCommerce-eseményekről küldjön értesítéseket a Slack-csatornájára."
 
 #: includes/class-wcslack-settings-legacy.php:185
 msgid "Which channel or group do you want the notifications to be sent to?"
@@ -260,11 +288,11 @@ msgstr "Melyik csatornára vagy csoportba szeretné küldeni az értesítéseket
 #: includes/class-wcslack-settings-legacy.php:189
 #, php-format
 msgid "If you leave this blank, the default channel %s will be used."
-msgstr "Ha üresen hagyja, az alapértelmezett %s csatorna lesz használva."
+msgstr "Ha üresen hagyja, a rendszer az alapértelmezett %s csatornát használja."
 
 #: includes/class-wcslack-settings-legacy.php:191
 msgid "If you leave this blank, the default channel will be used."
-msgstr "Ha üresen hagyja, az alapértelmezett csatorna lesz használva."
+msgstr "Ha üresen hagyja, a rendszer az alapértelmezett csatornát használja."
 
 #: includes/class-wcslack-settings-legacy.php:196
 msgid "Authentication & Defaults"
@@ -288,32 +316,27 @@ msgid ""
 "Go to your %s and copy the token provided. If there is no token yet, you'll "
 "need to press the \"Create Token\" button in the Authentication section. You"
 " may need to refresh after saving to see your rooms."
-msgstr ""
-"Lépjen a %s oldalra, és másolja ki a megadott tokent. Ha még nincs token, a "
-"Hitelesítés szakaszban meg kell nyomnia a \"Create Token\" gombot. "
-"Előfordulhat, hogy mentés után frissítenie kell, hogy lássa a szobáit."
+msgstr "Lépjen a %s oldalra, és másolja ki a megadott tokent. Ha még nincs token, a Hitelesítés szakaszban meg kell nyomnia a „Create Token” gombot. Előfordulhat, hogy mentés után frissítenie kell, hogy lássa a csatornáit."
 
 #: includes/class-wcslack-settings-legacy.php:204
 msgid "Slack Account's API / Token Settings"
-msgstr "Slack-fiók API / Token beállításai"
+msgstr "Slack-fiók API- és tokenbeállításai"
 
 #: includes/class-wcslack-settings-legacy.php:208
 #: includes/class-wcslack-settings.php:416
-msgid "Default Channel(s)"
-msgstr "Alapértelmezett csatorna(k)"
+msgid "Default channel(s)"
+msgstr "Alapértelmezett csatorna/csatornák"
 
 #: includes/class-wcslack-settings-legacy.php:211
 #: includes/class-wcslack-settings.php:419
 msgid ""
 "Which channel or group do you want the notifications to be sent to by "
 "default?"
-msgstr ""
-"Melyik csatornára vagy csoportra küldje az értesítéseket alapértelmezés "
-"szerint?"
+msgstr "Alapértelmezés szerint melyik csatornára vagy csoportba szeretné küldeni az értesítéseket?"
 
 #: includes/class-wcslack-settings-legacy.php:215
 #: includes/class-wcslack-settings.php:424
-msgid "Default Emoji"
+msgid "Default emoji"
 msgstr "Alapértelmezett emoji"
 
 #: includes/class-wcslack-settings-legacy.php:217
@@ -324,17 +347,6 @@ msgstr "Alapértelmezett emoji"
 #: includes/class-wcslack-settings-legacy.php:418
 #: includes/class-wcslack-settings-legacy.php:451
 #: includes/class-wcslack-settings-legacy.php:492
-#: includes/class-wcslack-settings.php:426
-#: includes/class-wcslack-settings.php:472
-#: includes/class-wcslack-settings.php:520
-#: includes/class-wcslack-settings.php:576
-#: includes/class-wcslack-settings.php:627
-#: includes/class-wcslack-settings.php:680
-#: includes/class-wcslack-settings.php:724
-#: includes/class-wcslack-settings.php:760
-#: includes/class-wcslack-settings.php:797
-#: includes/class-wcslack-settings.php:833
-#: includes/class-wcslack-settings.php:877
 msgid "Emoji Code Here eg. :memo:"
 msgstr "Emoji-kód ide, pl.: :memo:"
 
@@ -347,15 +359,11 @@ msgid ""
 "Enter the code for an emoji you want to include with each message by "
 "default. You can find all codes on a site like %1$s or you can even upload "
 "your own icon as an emoji in %2$s"
-msgstr ""
-"Adja meg annak az emojinak a kódját, amelyet alapértelmezés szerint minden "
-"üzenethez szeretne hozzáadni. Az összes kódot megtalálja például egy olyan "
-"oldalon, mint a %1$s, vagy akár saját ikont is feltölthet emojiként a %2$s "
-"felületén"
+msgstr "Adja meg annak az emojinak a kódját, amelyet alapértelmezés szerint minden üzenethez szeretne hozzáadni. Az összes kódot megtalálja például egy olyan oldalon, mint a %1$s, vagy akár saját ikont is feltölthet emojiként a %2$s felületén"
 
 #: includes/class-wcslack-settings-legacy.php:222
 #: includes/class-wcslack-settings.php:433
-msgid "Sender Name"
+msgid "Sender name"
 msgstr "Feladó neve"
 
 #: includes/class-wcslack-settings-legacy.php:225
@@ -369,11 +377,10 @@ msgstr ""
 
 #: includes/class-wcslack-settings-legacy.php:229
 #: includes/class-wcslack-settings.php:898
-msgid "Debug Mode"
+msgid "Debug mode"
 msgstr "Hibakeresési mód"
 
 #: includes/class-wcslack-settings-legacy.php:231
-#: includes/class-wcslack-settings.php:900
 msgid ""
 "Enable Debug Mode. <br><strong>Note: this may log personal information. We "
 "recommend using this for debugging purposes only and deleting the logs when "
@@ -384,7 +391,6 @@ msgstr ""
 "és a befejezéskor törölje a naplókat.</strong>"
 
 #: includes/class-wcslack-settings-legacy.php:234
-#: includes/class-wcslack-settings.php:903
 msgid ""
 "Enable Logging. Find the logs under WooCommerce > System Status > Logs."
 msgstr ""
@@ -392,7 +398,8 @@ msgstr ""
 "találhatók."
 
 #: includes/class-wcslack-settings-legacy.php:238
-msgid "Notification Events"
+#: includes/class-wcslack-settings.php:443
+msgid "Notification events"
 msgstr "Értesítési események"
 
 #: includes/class-wcslack-settings-legacy.php:240
@@ -403,12 +410,12 @@ msgstr ""
 
 #: includes/class-wcslack-settings-legacy.php:246
 #: includes/class-wcslack-settings.php:451
-msgid "New Post"
+msgid "New post"
 msgstr "Új bejegyzés"
 
 #: includes/class-wcslack-settings-legacy.php:248
 #: includes/class-wcslack-settings.php:453
-msgid "New Post Published"
+msgid "New post published"
 msgstr "Új bejegyzés közzétéve"
 
 #: includes/class-wcslack-settings-legacy.php:251
@@ -449,8 +456,8 @@ msgstr ""
 #: includes/class-wcslack-settings.php:643
 #: includes/class-wcslack-settings.php:687
 #: includes/class-wcslack-settings.php:840
-msgid "Extended Notification"
-msgstr "Kibővített értesítés"
+msgid "Extended notification"
+msgstr "Bővített értesítés"
 
 #: includes/class-wcslack-settings-legacy.php:272
 #: includes/class-wcslack-settings-legacy.php:321
@@ -462,12 +469,15 @@ msgstr "Kibővített értesítés"
 #: includes/class-wcslack-settings.php:690
 #: includes/class-wcslack-settings.php:843
 msgid "Would you like to send extra details with this notification?"
-msgstr "Szeretne extra részleteket is küldeni ezzel az értesítéssel?"
+msgstr "Szeretne további részleteket is küldeni ezzel az értesítéssel?"
 
 #: includes/class-wcslack-settings-legacy.php:287
-#: includes/class-wcslack-settings-legacy.php:289
 #: includes/class-wcslack-settings.php:499
 #: includes/class-wcslack-settings.php:501
+msgid "New order"
+msgstr "Új megrendelés"
+
+#: includes/class-wcslack-settings-legacy.php:289
 msgid "New Order"
 msgstr "Új rendelés"
 
@@ -479,7 +489,7 @@ msgstr "Valahányszor új rendelés érkezik"
 #: includes/class-wcslack-settings-legacy.php:310
 #: includes/class-wcslack-settings.php:528
 #: includes/class-wcslack-settings.php:634
-msgid "Free Orders"
+msgid "Free orders"
 msgstr "Ingyenes rendelések"
 
 #. translators: Placeholder %s - WooCommerce currency symbol
@@ -492,9 +502,12 @@ msgid "Notify when a %s0 order is made?"
 msgstr "Értesítsen, amikor %s0 rendelés érkezik?"
 
 #: includes/class-wcslack-settings-legacy.php:336
-#: includes/class-wcslack-settings-legacy.php:338
 #: includes/class-wcslack-settings.php:705
 #: includes/class-wcslack-settings.php:707
+msgid "Back order"
+msgstr "Utánrendelés"
+
+#: includes/class-wcslack-settings-legacy.php:338
 msgid "Back Order"
 msgstr "Utánrendelés"
 
@@ -504,9 +517,12 @@ msgid "Every time a new back order is made"
 msgstr "Valahányszor új utánrendelés érkezik"
 
 #: includes/class-wcslack-settings-legacy.php:369
-#: includes/class-wcslack-settings-legacy.php:371
 #: includes/class-wcslack-settings.php:741
 #: includes/class-wcslack-settings.php:743
+msgid "Low on stock"
+msgstr "Alacsony készlet"
+
+#: includes/class-wcslack-settings-legacy.php:371
 msgid "Low on Stock"
 msgstr "Alacsony készlet"
 
@@ -520,9 +536,12 @@ msgstr ""
 "készletbeállításokban van meghatározva)"
 
 #: includes/class-wcslack-settings-legacy.php:402
-#: includes/class-wcslack-settings-legacy.php:404
 #: includes/class-wcslack-settings.php:778
 #: includes/class-wcslack-settings.php:780
+msgid "Out of stock"
+msgstr "Elfogyott"
+
+#: includes/class-wcslack-settings-legacy.php:404
 msgid "Out of Stock"
 msgstr "Nincs készleten"
 
@@ -538,7 +557,7 @@ msgstr "Értékelések"
 
 #: includes/class-wcslack-settings-legacy.php:437
 #: includes/class-wcslack-settings.php:816
-msgid "New Review"
+msgid "New review"
 msgstr "Új értékelés"
 
 #: includes/class-wcslack-settings-legacy.php:440
@@ -553,48 +572,46 @@ msgstr "Vásárlók"
 
 #: includes/class-wcslack-settings-legacy.php:478
 #: includes/class-wcslack-settings.php:860
-msgid "New Customer"
+msgid "New customer"
 msgstr "Új vásárló"
 
 #: includes/class-wcslack-settings-legacy.php:481
 #: includes/class-wcslack-settings.php:863
 msgid "Every time a new customer is registered / created"
-msgstr "Valahányszor új vásárló regisztrál vagy létrejön"
+msgstr "Valahányszor új vásárlót regisztrálnak vagy hoznak létre"
 
 #: includes/class-wcslack-settings-legacy.php:568
-#: includes/class-wcslack-settings.php:1169
 msgid "Test Notification: "
 msgstr "Tesztértesítés: "
 
+#. translators: Placeholder: %s - Site name
 #: includes/class-wcslack-settings-legacy.php:569
-#: includes/class-wcslack-settings.php:1170
+#: includes/class-wcslack-settings.php:1172
 #, php-format
 msgid "This is a test notification from %s"
 msgstr "Ez egy tesztértesítés innen: %s"
 
 #: includes/class-wcslack-settings-legacy.php:573
-#: includes/class-wcslack-settings.php:1174
-msgid "Extended Notifications"
-msgstr "Kibővített értesítések"
+#: includes/class-wcslack-settings.php:1176
+msgid "Extended notifications"
+msgstr "Bővített értesítések"
 
 #: includes/class-wcslack-settings-legacy.php:574
-#: includes/class-wcslack-settings.php:1175
+#: includes/class-wcslack-settings.php:1177
 msgid ""
 "Some notifications have the option to turn on extended notifications. They "
 "look this and will often contain extra information about the specific "
 "notification! Neat, huh?"
-msgstr ""
-"Egyes értesítéseknél bekapcsolhatók a kibővített értesítések. Így néznek ki,"
-" és gyakran tartalmaznak extra információkat a konkrét értesítésről! Klassz,"
-" ugye?"
+msgstr "Egyes értesítéseknél bekapcsolhatók a kibővített értesítések. Így néznek ki, és gyakran tartalmaznak extra információkat a konkrét értesítésről! Remek, nem igaz?"
 
 #: includes/class-wcslack-settings-legacy.php:578
-#: includes/class-wcslack-settings.php:1179
-msgid "The Left Colored Bar"
+#: includes/class-wcslack-settings.php:1181
+msgid "The left colored bar"
 msgstr "A bal oldali színes sáv"
 
+#. translators: Placeholder: %s - Documentation link
 #: includes/class-wcslack-settings-legacy.php:579
-#: includes/class-wcslack-settings.php:1180
+#: includes/class-wcslack-settings.php:1183
 #, php-format
 msgid ""
 "It's possible to change the color of that bar on the left (green by "
@@ -603,64 +620,66 @@ msgstr ""
 "Egyszerű szűrővel megváltoztatható a bal oldali sáv színe (alapértelmezés "
 "szerint zöld). További részletekért lásd a %s."
 
+#. translators: Placeholder: %s - Documentation link
 #: includes/class-wcslack-settings-legacy.php:579
-#: includes/class-wcslack-settings.php:1180
+#: includes/class-wcslack-settings.php:1183
 msgid "Slack for WooCommerce Documentation"
 msgstr "Slack for WooCommerce dokumentáció"
 
 #: includes/class-wcslack-settings-legacy.php:583
-#: includes/class-wcslack-settings.php:1184
+#: includes/class-wcslack-settings.php:1187
 msgid "Support"
 msgstr "Támogatás"
 
+#. translators: Placeholder: %s - Support link
 #: includes/class-wcslack-settings-legacy.php:584
-#: includes/class-wcslack-settings.php:1185
+#: includes/class-wcslack-settings.php:1189
 #, php-format
 msgid "If you need help, please don't be afraid to ask %s."
-msgstr "Ha segítségre van szüksége, kérjük, ne féljen kérdezni itt: %s."
+msgstr "Ha segítségre van szüksége, kérjük, forduljon bátran a következőhöz: %s."
 
+#. translators: Placeholder: %s - Support link
 #: includes/class-wcslack-settings-legacy.php:584
-#: includes/class-wcslack-settings.php:1185
+#: includes/class-wcslack-settings.php:1189
 msgid "WooCommerce Support"
 msgstr "WooCommerce támogatás"
 
 #: includes/class-wcslack-settings-legacy.php:588
-#: includes/class-wcslack-settings.php:1189
-msgid "Back to Work!"
+#: includes/class-wcslack-settings.php:1193
+msgid "Back to work!"
 msgstr "Vissza a munkához!"
 
 #: includes/class-wcslack-settings-legacy.php:589
-#: includes/class-wcslack-settings.php:1190
 msgid "Now, get back to work over at"
 msgstr "Most térjen vissza a munkához itt"
 
 #: includes/class-wcslack-settings-legacy.php:619
-#: includes/class-wcslack-settings.php:1220
-msgid "Send Test"
+#: includes/class-wcslack-settings.php:1225
+msgid "Send test"
 msgstr "Teszt küldése"
 
 #: includes/class-wcslack-settings-legacy.php:623
-#: includes/class-wcslack-settings.php:1224
-msgid "Send Test Notification"
+#: includes/class-wcslack-settings.php:1229
+msgid "Send test notification"
 msgstr "Tesztértesítés küldése"
 
 #: includes/class-wcslack-settings-legacy.php:627
-#: includes/class-wcslack-settings.php:1228
+#: includes/class-wcslack-settings.php:1233
 msgid "Save your settings first!"
 msgstr "Először mentse a beállításait!"
 
 #: includes/class-wcslack-settings-legacy.php:646
-#: includes/class-wcslack-settings.php:1244
+#: includes/class-wcslack-settings.php:1249
 msgid "Reload channels"
 msgstr "Csatornák újratöltése"
 
 #: includes/class-wcslack-settings-legacy.php:652
-#: includes/class-wcslack-settings.php:1248
-msgid "Reload Available Channels"
+#: includes/class-wcslack-settings.php:1253
+msgid "Reload available channels"
 msgstr "Elérhető csatornák újratöltése"
 
 #: includes/class-wcslack-settings-legacy.php:656
-#: includes/class-wcslack-settings.php:1252
+#: includes/class-wcslack-settings.php:1257
 msgid ""
 "If you have added a new channel and it's not showing, this will refresh the "
 "list."
@@ -668,11 +687,9 @@ msgstr ""
 "Ha új csatornát adott hozzá, és nem jelenik meg, ezzel frissítheti a listát."
 
 #: includes/class-wcslack-settings-legacy.php:768
-#: includes/class-wcslack-settings.php:1348
+#: includes/class-wcslack-settings.php:1353
 msgid "The API Key is invalid. Please double check it and try again!"
-msgstr ""
-"Az API-kulcs érvénytelen. Kérjük, ellenőrizze még egyszer, majd próbálja "
-"újra!"
+msgstr "Az API-kulcs érvénytelen. Kérjük, ellenőrizze még egyszer, majd próbálja újra!"
 
 #: includes/class-wcslack-settings-legacy.php:788
 msgid ""
@@ -708,19 +725,19 @@ msgstr "Kapcsolat"
 
 #: includes/class-wcslack-settings.php:386
 msgid "Client ID"
-msgstr "Client ID"
+msgstr "Ügyfél-ID"
 
 #: includes/class-wcslack-settings.php:388
 msgid "Enter your Slack client ID."
 msgstr "Adja meg a Slack Client ID-t."
 
 #: includes/class-wcslack-settings.php:394
-msgid "Client Secret"
-msgstr "Client Secret"
+msgid "Client secret"
+msgstr "Ügyféltitok"
 
 #: includes/class-wcslack-settings.php:396
 msgid "Enter your Slack client secret."
-msgstr "Adja meg a Slack Client Secretet."
+msgstr "Adja meg a Slack-ügyféltitkot."
 
 #: includes/class-wcslack-settings.php:402
 msgid "Authorization"
@@ -734,13 +751,23 @@ msgstr "Globális beállítások"
 msgid "These settings will be applicable to all notifications."
 msgstr "Ezek a beállítások minden értesítésre érvényesek lesznek."
 
-#: includes/class-wcslack-settings.php:443
-msgid "Notification events"
-msgstr "Értesítési események"
+#: includes/class-wcslack-settings.php:426
+#: includes/class-wcslack-settings.php:472
+#: includes/class-wcslack-settings.php:520
+#: includes/class-wcslack-settings.php:576
+#: includes/class-wcslack-settings.php:627
+#: includes/class-wcslack-settings.php:680
+#: includes/class-wcslack-settings.php:724
+#: includes/class-wcslack-settings.php:760
+#: includes/class-wcslack-settings.php:797
+#: includes/class-wcslack-settings.php:833
+#: includes/class-wcslack-settings.php:877
+msgid "Emoji code here eg. :memo:"
+msgstr "Emoji-kód, pl. :memo:"
 
 #: includes/class-wcslack-settings.php:557
 #: includes/class-wcslack-settings.php:559
-msgid "Order Update"
+msgid "Order update"
 msgstr "Rendelés frissítése"
 
 #: includes/class-wcslack-settings.php:562
@@ -755,12 +782,12 @@ msgstr ""
 
 #: includes/class-wcslack-settings.php:608
 #: includes/class-wcslack-settings.php:610
-msgid "New Subscription Renewal Order"
-msgstr "Új előfizetés-megújítási rendelés"
+msgid "New subscription renewal order"
+msgstr "Új előfizetés-megújítási megrendelés"
 
 #: includes/class-wcslack-settings.php:613
 msgid "Every time a new subscription renewal order is made"
-msgstr "Valahányszor új előfizetés-megújítási rendelés jön létre"
+msgstr "Valahányszor új rendelés jön létre egy előfizetés megújításakor"
 
 #: includes/class-wcslack-settings.php:661
 #: includes/class-wcslack-settings.php:663
@@ -774,6 +801,19 @@ msgstr "Valahányszor visszatérítés történik"
 #: includes/class-wcslack-settings.php:894
 msgid "Troubleshooting"
 msgstr "Hibaelhárítás"
+
+#: includes/class-wcslack-settings.php:900
+msgid ""
+"Enable debug mode. <br><strong>Note: this may log personal information. We "
+"recommend using this for debugging purposes only and deleting the logs when "
+"finished.</strong>"
+msgstr "Kapcsolja be a hibakeresési módot. <br><strong>Megjegyzés: ez személyes adatokat is naplózhat. Javasoljuk, hogy ezt kizárólag hibakereséshez használja, majd a munka befejezése után törölje a naplókat.</strong>"
+
+#: includes/class-wcslack-settings.php:903
+msgid ""
+"Enable debug logging. Find the logs under WooCommerce > System Status > "
+"Logs."
+msgstr "Kapcsolja be a hibakeresési naplózást. A naplókat a WooCommerce > rendszerállapot > naplók alatt találja."
 
 #: includes/class-wcslack-settings.php:969
 msgid "Please fill out all required fields from above."
@@ -811,13 +851,9 @@ msgid ""
 "To begin syncing with Slack, create a new %1$s. The callback URL to be added"
 " is <strong style=\"background-color:#ddd;\">&nbsp;%2$s&nbsp;</strong>. Full"
 " details are available in the %3$s"
-msgstr ""
-"A Slackkel történő szinkronizálás megkezdéséhez hozzon létre egy új %1$s. A "
-"hozzáadandó callback URL a <strong style=\\\"background-"
-"color:#ddd;\\\">&nbsp;%2$s&nbsp;</strong>. A teljes részletek a %3$s oldalon"
-" érhetők el"
+msgstr "A Slackkel történő szinkronizálás megkezdéséhez hozzon létre egy új %1$s. A hozzáadandó callback URL a <strong style=\"background-color:#ddd;\">&nbsp;%2$s&nbsp;</strong>. A részletek teljes körűen a %3$s oldalon érhetők el"
 
-#. translators: 0: Slack apps URL
+#. translators: Placeholder: %s - Slack apps URL
 #: includes/class-wcslack-settings.php:1004
 #, php-format
 msgid ""
@@ -837,20 +873,17 @@ msgstr "Érvénytelen kérés!"
 
 #: includes/class-wcslack-settings.php:1119
 msgid "Account connected successfully!"
-msgstr "A fiók sikeresen csatlakoztatva!"
+msgstr "A fiók csatlakoztatása sikerült!"
 
 #: includes/class-wcslack-settings.php:1121
 msgid ""
 "Failed to connect to your account, please try again, if the problem "
 "persists, turn on Debug Log option and see what is happening."
-msgstr ""
-"Nem sikerült csatlakozni a fiókhoz. Kérjük, próbálja meg újra; ha a probléma"
-" továbbra is fennáll, kapcsolja be a Debug Log opciót, és nézze meg, mi "
-"történik."
+msgstr "Nem sikerült csatlakozni a fiókhoz. Kérjük, próbálja meg újra; ha a probléma továbbra is fennáll, kapcsolja be a hibakeresési napló opciót, és nézze meg, mi történik."
 
 #: includes/class-wcslack-settings.php:1127
 msgid "Account disconnected successfully!"
-msgstr "A fiók sikeresen leválasztva!"
+msgstr "A fiók leválasztása sikerült!"
 
 #: includes/class-wcslack-settings.php:1129
 msgid ""
@@ -860,6 +893,16 @@ msgstr ""
 "Nem sikerült leválasztani a fiókot. Kérjük, próbálja meg újra; ha a probléma"
 " továbbra is fennáll, kapcsolja be a Debug Log opciót, és nézze meg, mi "
 "történik."
+
+#: includes/class-wcslack-settings.php:1169
+msgid "Test notification: "
+msgstr "Tesztértesítés: "
+
+#. translators: Placeholder: %s - Site name
+#: includes/class-wcslack-settings.php:1195
+#, php-format
+msgid "Now, get back to work over at %s!"
+msgstr "Most térjen vissza a munkához itt: %s!"
 
 #: src/Admin/Admin.php:39
 msgctxt "aria-label: settings link"
@@ -884,7 +927,7 @@ msgstr "Dokumentáció"
 #: src/Admin/Admin.php:72
 msgctxt "aria-label: support link"
 msgid "Open a support ticket at Woo.com"
-msgstr "Támogatási jegy nyitása a Woo.com-on"
+msgstr "Támogatási jegy létrehozása a Woo.com-on"
 
 #: src/Admin/Admin.php:73
 msgctxt "plugin row link"
@@ -900,3 +943,136 @@ msgid ""
 msgstr ""
 "A Slack megköveteli, hogy a WooCommerce telepítve és aktív legyen. Itt "
 "letöltheti: %s."
+
+#~ msgid "New Post:"
+#~ msgstr "Új bejegyzés:"
+
+#~ msgid " by "
+#~ msgstr " írta "
+
+#~ msgid "View Post"
+#~ msgstr "Bejegyzés megtekintése"
+
+#~ msgid "Post Content"
+#~ msgstr "Bejegyzés tartalma"
+
+#, php-format
+#~ msgid "New Order #%s:"
+#~ msgstr "Új rendelés #%s:"
+
+#, php-format
+#~ msgid "Order #%s Updated:"
+#~ msgstr "Rendelés #%s frissítve:"
+
+#~ msgid " ordered "
+#~ msgstr " megrendelte "
+
+#~ msgid " for "
+#~ msgstr " ért "
+
+#, php-format
+#~ msgid "New Subscription Renewal Order #%s:"
+#~ msgstr "Új előfizetés-megújítási rendelés #%s:"
+
+#, php-format
+#~ msgid "Refund for Order #%s:"
+#~ msgstr "Visszatérítés a #%s számú rendeléshez:"
+
+#~ msgid "Refund Reason"
+#~ msgstr "Visszatérítés indoka"
+
+#~ msgid "Refunded Items"
+#~ msgstr "Visszatérített tételek"
+
+#~ msgid "Back Order:"
+#~ msgstr "Utánrendelés:"
+
+#~ msgid "View Product"
+#~ msgstr "Termék megtekintése"
+
+#~ msgid "Low on Stock:"
+#~ msgstr "Alacsony készlet:"
+
+#~ msgid "Out of Stock:"
+#~ msgstr "Nincs készleten:"
+
+#~ msgid "New Review:"
+#~ msgstr "Új értékelés:"
+
+#~ msgid " on "
+#~ msgstr " a(z) "
+
+#~ msgid "View Review"
+#~ msgstr "Értékelés megtekintése"
+
+#~ msgid "New Customer:"
+#~ msgstr "Új vásárló:"
+
+#~ msgid " Registered"
+#~ msgstr " Regisztrált"
+
+#~ msgid "View Customer"
+#~ msgstr "Vásárló megtekintése"
+
+#~ msgid "Order Total"
+#~ msgstr "Rendelés végösszege"
+
+#~ msgid "Default Channel(s)"
+#~ msgstr "Alapértelmezett csatorna(k)"
+
+#~ msgid "Default Emoji"
+#~ msgstr "Alapértelmezett emoji"
+
+#~ msgid "Sender Name"
+#~ msgstr "Feladó neve"
+
+#~ msgid "Debug Mode"
+#~ msgstr "Hibakeresési mód"
+
+#~ msgid "Notification Events"
+#~ msgstr "Értesítési események"
+
+#~ msgid "New Post"
+#~ msgstr "Új bejegyzés"
+
+#~ msgid "New Post Published"
+#~ msgstr "Új bejegyzés közzétéve"
+
+#~ msgid "Extended Notification"
+#~ msgstr "Kibővített értesítés"
+
+#~ msgid "Free Orders"
+#~ msgstr "Ingyenes rendelések"
+
+#~ msgid "New Review"
+#~ msgstr "Új értékelés"
+
+#~ msgid "New Customer"
+#~ msgstr "Új vásárló"
+
+#~ msgid "Extended Notifications"
+#~ msgstr "Kibővített értesítések"
+
+#~ msgid "The Left Colored Bar"
+#~ msgstr "A bal oldali színes sáv"
+
+#~ msgid "Back to Work!"
+#~ msgstr "Vissza a munkához!"
+
+#~ msgid "Send Test"
+#~ msgstr "Teszt küldése"
+
+#~ msgid "Send Test Notification"
+#~ msgstr "Tesztértesítés küldése"
+
+#~ msgid "Reload Available Channels"
+#~ msgstr "Elérhető csatornák újratöltése"
+
+#~ msgid "Client Secret"
+#~ msgstr "Client Secret"
+
+#~ msgid "Order Update"
+#~ msgstr "Rendelés frissítése"
+
+#~ msgid "New Subscription Renewal Order"
+#~ msgstr "Új előfizetés-megújítási rendelés"

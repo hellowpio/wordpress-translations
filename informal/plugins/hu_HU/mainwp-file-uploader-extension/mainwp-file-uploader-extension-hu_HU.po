@@ -1,0 +1,325 @@
+# Copyright (C) 2026 MainWP
+# This file is distributed under the same license as the MainWP File Uploader Extension plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: MainWP File Uploader Extension 5.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mainwp-file-uploader-extension\n"
+"POT-Creation-Date: 2026-10-31T10:19:59+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: mainwp-file-uploader-extension\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: MainWP File Uploader Extension\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 5.1\n"
+
+#. Plugin Name of the plugin
+#: mainwp-file-uploader-extension.php
+msgid "MainWP File Uploader Extension"
+msgstr "MainWP fájlfeltöltő bővítmény"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: mainwp-file-uploader-extension.php
+msgid "https://mainwp.com"
+msgstr "https://mainwp.com"
+
+#. Description of the plugin
+#: mainwp-file-uploader-extension.php
+msgid ""
+"MainWP File Uploader Extension gives you an simple way to upload files to "
+"your child sites."
+msgstr "A MainWP fájlfeltöltő bővítmény egyszerű módot kínál fájlok feltöltésére a gyermekwebhelyeidre."
+
+#. Author of the plugin
+#: mainwp-file-uploader-extension.php
+msgid "MainWP"
+msgstr "MainWP"
+
+#: class/mainwp-uploader-abilities.class.php:46
+msgid "MainWP File Uploader"
+msgstr "MainWP fájlfeltöltő"
+
+#: class/mainwp-uploader-abilities.class.php:47
+msgid ""
+"Abilities for inspecting staged file objects and safely deploying or rolling"
+" them back on authorized MainWP Child sites."
+msgstr "Képességek az előkészített fájlobjektumok vizsgálatához, valamint azok biztonságos telepítéséhez vagy visszaállításához az engedélyezett MainWP gyermekwebhelyeken."
+
+#: class/mainwp-uploader-abilities.class.php:57
+msgid "Get MainWP File Uploader Policy"
+msgstr "MainWP fájlfeltöltő szabályzatának lekérése"
+
+#: class/mainwp-uploader-abilities.class.php:58
+msgid ""
+"Get enforced staging limits and allowed destination classes without exposing"
+" server configuration."
+msgstr "Az alkalmazott előkészítési korlátok és az engedélyezett célosztályok lekérése a szerverkonfiguráció felfedése nélkül."
+
+#: class/mainwp-uploader-abilities.class.php:67
+msgid ""
+"Returns enforced local limits only; it does not inspect staged files or "
+"contact a Child site."
+msgstr "Csak a helyben alkalmazott korlátokat adja vissza; nem vizsgálja meg az előkészített fájlokat, és nem lép kapcsolatba gyermekwebhellyel."
+
+#: class/mainwp-uploader-abilities.class.php:79
+msgid "List MainWP Staged File Objects"
+msgstr "MainWP előkészített fájlobjektumainak listázása"
+
+#: class/mainwp-uploader-abilities.class.php:80
+msgid "List bounded immutable staged objects owned by the current user."
+msgstr "Az aktuális felhasználóhoz tartozó, korlátozott számú, nem módosítható előkészített objektum listázása."
+
+#: class/mainwp-uploader-abilities.class.php:89
+msgid ""
+"Returns owner-scoped immutable staging metadata without resolving or reading"
+" staged files."
+msgstr "A tulajdonoshoz kötött, nem módosítható előkészítési metaadatokat adja vissza az előkészített fájlok feloldása vagy beolvasása nélkül."
+
+#: class/mainwp-uploader-abilities.class.php:101
+msgid "Get MainWP Staged File Object"
+msgstr "MainWP előkészített fájlobjektumának lekérése"
+
+#: class/mainwp-uploader-abilities.class.php:102
+msgid ""
+"Get one owned staged object's immutable metadata, references, and revision."
+msgstr "Egy saját előkészített objektum nem módosítható metaadatainak, hivatkozásainak és változatának lekérése."
+
+#: class/mainwp-uploader-abilities.class.php:111
+msgid ""
+"Returns one owner-scoped object without resolving or reading its private "
+"staged file."
+msgstr "Egy tulajdonoshoz kötött objektumot ad vissza a hozzá tartozó privát előkészített fájl feloldása vagy beolvasása nélkül."
+
+#: class/mainwp-uploader-abilities.class.php:123
+msgid "Delete MainWP Staged File Object"
+msgstr "MainWP előkészített fájlobjektumának törlése"
+
+#: class/mainwp-uploader-abilities.class.php:124
+msgid "Delete a confirmed unreferenced staged object and its private bytes."
+msgstr "Egy megerősített, hivatkozás nélküli előkészített objektum törlése a hozzá tartozó privát bájtokkal együtt."
+
+#: class/mainwp-uploader-abilities.class.php:133
+msgid ""
+"Permanently deletes one unreferenced private staged object after exact "
+"revision confirmation."
+msgstr "Véglegesen töröl egy hivatkozás nélküli privát előkészített objektumot a pontos változat megerősítése után."
+
+#: class/mainwp-uploader-abilities.class.php:145
+msgid "Preview MainWP File Deployment"
+msgstr "MainWP-fájltelepítés előnézete"
+
+#: class/mainwp-uploader-abilities.class.php:146
+msgid ""
+"Preview one staged object at one authorized Child destination and issue a "
+"short-lived state-bound token."
+msgstr "Egy előkészített objektum előnézete egy engedélyezett gyermekwebhely célhelyén, majd rövid élettartamú, állapothoz kötött token kiadása."
+
+#: class/mainwp-uploader-abilities.class.php:155
+msgid ""
+"Performs one exact read-only Child preflight and returns a five-minute "
+"state-bound confirmation token."
+msgstr "Egy pontos, csak olvasásra korlátozott előzetes ellenőrzést végez egy gyermekwebhelyen, és ötperces, állapothoz kötött megerősítő tokent ad vissza."
+
+#: class/mainwp-uploader-abilities.class.php:167
+msgid "Start MainWP File Deployment"
+msgstr "MainWP-fájltelepítés indítása"
+
+#: class/mainwp-uploader-abilities.class.php:168
+msgid ""
+"Request verified deployment of one immutable staged object to one preview-"
+"confirmed Child destination."
+msgstr "Egy nem módosítható előkészített objektum ellenőrzött telepítésének kérése egy előnézettel megerősített gyermekwebhely célhelyére."
+
+#: class/mainwp-uploader-abilities.class.php:177
+msgid ""
+"Confirms one exact preview and queues a durable deployment; it never "
+"dispatches inline."
+msgstr "Megerősít egy konkrét előnézetet, majd tartós telepítési műveletet állít sorba; soha nem indítja el közvetlenül a műveletet."
+
+#: class/mainwp-uploader-abilities.class.php:189
+msgid "Get MainWP File Deployment Status"
+msgstr "MainWP-fájltelepítés állapotának lekérése"
+
+#: class/mainwp-uploader-abilities.class.php:190
+msgid ""
+"Get stable progress and verified result for one owned file deployment or "
+"rollback."
+msgstr "Egy saját fájltelepítés vagy visszaállítás megbízható előrehaladási adatainak és ellenőrzött eredményének lekérése."
+
+#: class/mainwp-uploader-abilities.class.php:199
+msgid ""
+"Returns owner-scoped durable operation state without contacting a Child "
+"site."
+msgstr "A tulajdonoshoz kötött tartós művelet állapotát adja vissza gyermekwebhellyel való kapcsolatfelvétel nélkül."
+
+#: class/mainwp-uploader-abilities.class.php:211
+msgid "Rollback MainWP File Deployment"
+msgstr "MainWP-fájltelepítés visszaállítása"
+
+#: class/mainwp-uploader-abilities.class.php:212
+msgid ""
+"Request restoration of the verified retained backup for one completed file "
+"deployment."
+msgstr "Egy befejezett fájltelepítés ellenőrzött, megőrzött biztonsági mentésének visszaállítását kéri."
+
+#: class/mainwp-uploader-abilities.class.php:221
+msgid ""
+"Queues restoration of one exact retained Child backup after current-digest "
+"confirmation."
+msgstr "Egy pontos, megőrzött gyermekwebhely-biztonsági mentés visszaállításának sorba állítása az aktuális ellenőrzőösszeg megerősítése után."
+
+#: class/mainwp-uploader-abilities.class.php:1414
+msgid "No input; read the enforced File Uploader policy."
+msgstr "Nincs bemenet; olvasd el a File Uploader előírt szabályzatát."
+
+#: class/mainwp-uploader-abilities.class.php:1425
+msgid "Enforced File Uploader staging and deployment limits."
+msgstr "A File Uploader által előírt előkészítési és telepítési korlátok."
+
+#: class/mainwp-uploader-abilities.class.php:1431
+msgid "Maximum accepted bytes for one staged object."
+msgstr "Egy előkészített objektum elfogadható maximális mérete bájtban."
+
+#: class/mainwp-uploader-abilities.class.php:1436
+msgid "Maximum staged objects retained for one owner."
+msgstr "Egy tulajdonoshoz megőrzött előkészített objektumok maximális száma."
+
+#: class/mainwp-uploader-abilities.class.php:1441
+msgid "Maximum staged bytes retained for one owner."
+msgstr "Egy tulajdonoshoz megőrzött előkészített adatok maximális mérete bájtban."
+
+#: class/mainwp-uploader-abilities.class.php:1446
+msgid "Retention period for an unreferenced staged object."
+msgstr "Egy hivatkozás nélküli előkészített objektum megőrzési ideje."
+
+#: class/mainwp-uploader-abilities.class.php:1453
+msgid "Allowed destination classes."
+msgstr "Engedélyezett célkategóriák."
+
+#: class/mainwp-uploader-abilities.class.php:1462
+msgid "Whether code destinations require explicit confirmation."
+msgstr "Hogy a kódot tartalmazó célhelyekhez szükséges-e kifejezett megerősítés."
+
+#: class/mainwp-uploader-abilities.class.php:1467
+msgid "Retention period for verified rollback state."
+msgstr "Az ellenőrzött visszaállítási állapot megőrzési ideje."
+
+#: class/mainwp-uploader-abilities.class.php:2015
+msgid "Optional owner-scoped staged-object filters and keyset cursor."
+msgstr "Opcionális, tulajdonoshoz kötött szűrők az előkészített objektumokhoz, valamint kulcskészlet-alapú lapozókurzor."
+
+#: class/mainwp-uploader-abilities.class.php:2021
+msgid "Optional staged-object state."
+msgstr "Az előkészített objektum opcionális állapota."
+
+#: class/mainwp-uploader-abilities.class.php:2027
+msgid "Nullable creation timestamp from the previous page."
+msgstr "Az előző oldalról származó létrehozási időbélyeg, amelynek értéke null is lehet."
+
+#: class/mainwp-uploader-abilities.class.php:2033
+msgid "Nullable opaque object reference from the previous page."
+msgstr "Az előző oldalról származó, nem értelmezhető objektumhivatkozás, amelynek értéke null is lehet."
+
+#: class/mainwp-uploader-abilities.class.php:2040
+msgid "Maximum staged objects to return."
+msgstr "Visszaadandó előkészített objektumok maximális száma."
+
+#: class/mainwp-uploader-abilities.class.php:2136
+msgid "Nullable keyset cursor for the next page."
+msgstr "A következő oldalhoz tartozó kulcskészlet-alapú lapozókurzor, amelynek értéke null is lehet."
+
+#: class/mainwp-uploader-abilities.class.php:2163
+msgid "Owner-scoped staged objects."
+msgstr "Tulajdonoshoz kötött előkészített objektumok."
+
+#: class/mainwp-uploader-abilities.class.php:2201
+msgid "The File Uploader request could not be completed."
+msgstr "A File Uploader-kérést nem sikerült teljesíteni."
+
+#: class/mainwp-uploader.class.php:540
+msgid "File Upload"
+msgstr "Fájlfeltöltés"
+
+#: class/mainwp-uploader.class.php:557
+msgid "Pending. Please wait."
+msgstr "Függőben. Kérlek, várj."
+
+#: class/mainwp-uploader.class.php:861
+msgid ""
+"This Extension uploads files directly to your server so treat it the same "
+"way you would when uploading a file via FTP."
+msgstr "Ez a bővítmény közvetlenül a szerveredre tölti fel a fájlokat, ezért úgy kezeld, mintha FTP-n keresztül töltenél fel fájlt."
+
+#: class/mainwp-uploader.class.php:863
+msgid ""
+"The Extension will overwrite files of the same name in the same folder."
+msgstr "A bővítmény felülírja az azonos nevű fájlokat ugyanabban a mappában."
+
+#: class/mainwp-uploader.class.php:864
+msgid ""
+"If you upload a corrupt file or a file with an error it could break your "
+"site."
+msgstr "Ha sérült vagy hibás fájlt töltesz fel, az tönkreteheti a webhelyedet."
+
+#: class/mainwp-uploader.class.php:864
+msgid " MainWP is not responsible for files that you upload to your sites."
+msgstr " A MainWP nem vállal felelősséget a webhelyeidre feltöltött fájlokért."
+
+#: class/mainwp-uploader.class.php:865
+#, php-format
+msgid ""
+"For additinal help with the File Uploader extension, please review the "
+"extension %1$shelp documentation%2$s."
+msgstr "A File Uploader-kiterjesztéssel kapcsolatos további segítségért tekintsd át a kiterjesztés %1$ssúgódokumentációját%2$s."
+
+#: class/mainwp-uploader.class.php:872
+#, php-format
+msgid ""
+"By default, the File Uploader Extension does not support all file types. By "
+"using the %1$sMainWP Custom Dashboard Extension%2$s, it is possible to add "
+"support for any file type. Please review the %3$shelp document%4$s for "
+"detailed information."
+msgstr "Alapértelmezés szerint a File Uploader-kiterjesztés nem támogat minden fájltípust. A %1$sMainWP egyéni vezérlőpult-kiterjesztés%2$s használatával bármilyen fájltípus támogatása hozzáadható. Részletes információkért tekintsd át a %3$ssúgódokumentumot%4$s."
+
+#: class/mainwp-uploader.class.php:876
+msgid "Upload file to insert (replace)"
+msgstr "Fájl feltöltése beillesztéshez (csere)"
+
+#: class/mainwp-uploader.class.php:898
+msgid "Remove File"
+msgstr "Fájl eltávolítása"
+
+#: class/mainwp-uploader.class.php:909
+msgid "Enter path to insert (replace)"
+msgstr "Add meg a fájl beszúrásának (vagy cseréjének) elérési útját"
+
+#: class/mainwp-uploader.class.php:910
+msgid "Set where you want to insert the file."
+msgstr "Add meg, hová szeretnéd beilleszteni a fájlt."
+
+#: class/mainwp-uploader.class.php:918
+msgid "/directory/subdirectory/../.."
+msgstr "/directory/subdirectory/../.."
+
+#: class/mainwp-uploader.class.php:930
+msgid "Select Sites"
+msgstr "Webhelyek kiválasztása"
+
+#: class/mainwp-uploader.class.php:935
+msgid "Upload File"
+msgstr "Fájl feltöltése"
+
+#: js/mainwp-uploader.js:61
+msgid "There is no files to upload."
+msgstr "Nincs feltöltendő fájl."
+
+#: js/mainwp-uploader.js:69 js/mainwp-uploader.js:76 js/mainwp-uploader.js:83
+msgid "Please select at least one website, tag or client."
+msgstr "Válassz legalább egy webhelyet, címkét vagy ügyfelet."

@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Conditional Shipping and Payments 3.0.3\n"
+"Project-Id-Version: WooCommerce Conditional Shipping and Payments 3.2.2\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:50:41+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: WooCommerce Conditional Shipping and Payments\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 3.0.3\n"
+"X-Plugin-Version: 3.2.2\n"
 
 #. Plugin Name of the plugin
 #: woocommerce-conditional-shipping-and-payments.php
@@ -53,6 +53,138 @@ msgstr "WooCommerce"
 msgid "https://woocommerce.com/"
 msgstr "https://woocommerce.com/"
 
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:52
+msgid "Get Conditional Shipping and Payments restriction rules"
+msgstr "A Conditional Shipping and Payments korlátozási szabályainak lekérése"
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:53
+msgid ""
+"Retrieve configured Conditional Shipping and Payments rules with curated "
+"targets and condition summaries."
+msgstr "A konfigurált Conditional Shipping and Payments szabályok lekérése válogatott célokkal és feltétel-összefoglalókkal."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:75
+msgid "Sorry, you are not allowed to read these restriction rules."
+msgstr "Sajnáljuk, nincs jogosultsága ezeknek a korlátozási szabályoknak az olvasásához."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:95
+msgid "A product_id is required when scope is product."
+msgstr "Ha a hatókör értéke product, a product_id megadása kötelező."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:103
+msgid "The requested restriction_id is not supported."
+msgstr "A kért restriction_id nem támogatott."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:115
+msgid "The requested product was not found."
+msgstr "A kért termék nem található."
+
+#. translators: %1$s shipping method title, %2$s shipping rate id.
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:329
+#, php-format
+msgid "%1$s (%2$s)"
+msgstr "%1$s (%2$s)"
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:464
+#: includes/abilities/class-wc-csp-list-restriction-types-ability.php:154
+msgid "Conditional Shipping and Payments is not initialized."
+msgstr "A Conditional Shipping and Payments nincs inicializálva."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:503
+msgid "Return global rules, product-level rules, or both."
+msgstr "Globális szabályok, termékszintű szabályok vagy mindkettő visszaadása."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:509
+msgid ""
+"Product ID to read product-level rules for. Required when scope is product."
+msgstr "A termékszintű szabályok lekéréséhez használandó termék ID-je. Kötelező, ha a hatókör értéke product."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:514
+msgid "Restriction family to return rules for."
+msgstr "Az a korlátozási család, amelynek szabályait vissza kell adni."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:519
+msgid "Filter rules by enabled state."
+msgstr "Szabályok szűrése bekapcsolt állapot szerint."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:579
+msgid "Product ID for product-level rules, or 0 for global rules."
+msgstr "Termék-ID a termékszintű szabályokhoz, vagy 0 a globális szabályokhoz."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:588
+msgid "One-based position of this rule within its restriction family."
+msgstr "A szabály 1-től számozott pozíciója a korlátozási családon belül."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:593
+msgid "Human-readable summary of the restricted targets."
+msgstr "A korlátozott célok közérthető összefoglalója."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:620
+msgid ""
+"Condition operator, normalized from stored values such as <, <=, in, or not-"
+"in."
+msgstr "A feltétel operátora, amelyet a tárolt értékek alapján normalizálnak, például: <, <=, in vagy not-in."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:624
+msgid ""
+"Number of configured condition values without exposing the values "
+"themselves."
+msgstr "A beállított feltételértékek darabszáma anélkül, hogy maguk az értékek megjelennének."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:628
+msgid ""
+"Always true when condition values are intentionally omitted from this public"
+" ability output."
+msgstr "Mindig igaz, ha a feltételértékeket szándékosan kihagyják a nyilvános képességkimenetből."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:636
+msgid "Whether restricted options remain visible to shoppers."
+msgstr "Annak jelzése, hogy a korlátozott opciók továbbra is láthatók-e a vásárlók számára."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:640
+msgid ""
+"Whether the storefront displays notices for restricted options that remain "
+"visible."
+msgstr "Annak jelzése, hogy az áruház megjelenít-e értesítéseket a továbbra is látható, korlátozott opciókról."
+
+#: includes/abilities/class-wc-csp-get-restriction-rules-ability.php:644
+msgid "Whether this rule has a custom restriction notice configured."
+msgstr "Annak jelzése, hogy ehhez a szabályhoz be van-e állítva egyéni korlátozási értesítés."
+
+#: includes/abilities/class-wc-csp-list-restriction-types-ability.php:43
+msgid "List Conditional Shipping and Payments restriction types"
+msgstr "A Conditional Shipping and Payments korlátozástípusainak listázása"
+
+#: includes/abilities/class-wc-csp-list-restriction-types-ability.php:44
+msgid ""
+"List the restriction types and condition types supported by Conditional "
+"Shipping and Payments."
+msgstr "A Conditional Shipping and Payments által támogatott korlátozástípusok és feltételtípusok listázása."
+
+#: includes/abilities/class-wc-csp-list-restriction-types-ability.php:193
+msgid ""
+"Return restriction metadata for global rules, product-level rules, or both."
+msgstr "Korlátozási metaadatok visszaadása globális szabályokhoz, termékszintű szabályokhoz vagy mindkettőhöz."
+
+#: includes/abilities/class-wc-csp-list-restriction-types-ability.php:222
+msgid "Checkout/cart validation contexts where this restriction type can run."
+msgstr "Pénztári/kosár-ellenőrzési környezetek, amelyekben ez a korlátozástípus alkalmazható."
+
+#: includes/abilities/class-wc-csp-list-restriction-types-ability.php:230
+msgid ""
+"Primary rule option key that stores IDs affected by this restriction type."
+msgstr "Az elsődleges szabályopció-kulcs, amely az e korlátozástípus által érintett ID-ket tárolja."
+
+#: includes/abilities/class-wc-csp-list-restriction-types-ability.php:234
+msgid ""
+"Rule option keys that can store IDs affected by this restriction type. "
+"Shipping destination rules can use countries and states."
+msgstr "Azok a szabályopció-kulcsok, amelyek az e korlátozástípus által érintett ID-ket tárolhatják. A szállítási célokra vonatkozó szabályok országokat és államokat használhatnak."
+
+#: includes/abilities/class-wc-csp-list-restriction-types-ability.php:239
+msgid "Condition types available for global and product-level rules."
+msgstr "A globális és termékszintű szabályokhoz elérhető feltételtípusok."
+
 #: includes/abstracts/class-wc-csp-abstract-condition.php:189
 #, php-format
 msgctxt "merged item prefix"
@@ -62,13 +194,13 @@ msgstr "%1$s%2$s"
 #: includes/abstracts/class-wc-csp-abstract-condition.php:192
 #, php-format
 msgid "&quot;%s&quot;"
-msgstr "&quot;%s&quot;"
+msgstr "„%s”"
 
 #. translators: Used to stitch together product names
-#. translators: Used to stitch together a resolution meesage based on a
+#. translators: Used to stitch together a resolution message based on a
 #. restriction's active conditions
 #: includes/abstracts/class-wc-csp-abstract-condition.php:201
-#: includes/abstracts/class-wc-csp-abstract-restriction.php:656
+#: includes/abstracts/class-wc-csp-abstract-restriction.php:718
 #, php-format
 msgid "%1$s, %2$s"
 msgstr "%1$s, %2$s"
@@ -83,27 +215,27 @@ msgstr "%1$s vagy %2$s"
 msgid "%1$s and %2$s"
 msgstr "%1$s és %2$s"
 
-#: includes/abstracts/class-wc-csp-abstract-restriction.php:170
-#: includes/admin/class-wc-csp-admin.php:369
-#: includes/class-wc-csp-conditions.php:347
+#: includes/abstracts/class-wc-csp-abstract-restriction.php:182
+#: includes/admin/class-wc-csp-admin.php:385
+#: includes/class-wc-csp-conditions.php:384
 msgid "And"
 msgstr "És"
 
-#: includes/abstracts/class-wc-csp-abstract-restriction.php:205
+#: includes/abstracts/class-wc-csp-abstract-restriction.php:217
 msgid "No restrictions found. Add some now?"
-msgstr "Nem találhatók korlátozások. Hozzáad néhányat most?"
+msgstr "Nem találhatók korlátozások. Szeretne most hozzáadni néhányat?"
 
-#: includes/abstracts/class-wc-csp-abstract-restriction.php:210
-#: includes/admin/settings/class-wc-csp-settings-restrictions.php:331
+#: includes/abstracts/class-wc-csp-abstract-restriction.php:222
+#: includes/admin/settings/class-wc-csp-settings-restrictions.php:334
 msgid "Add Restriction"
 msgstr "Korlátozás hozzáadása"
 
-#: includes/abstracts/class-wc-csp-abstract-restriction.php:264
-#: includes/abstracts/class-wc-csp-abstract-restriction.php:330
+#: includes/abstracts/class-wc-csp-abstract-restriction.php:276
+#: includes/abstracts/class-wc-csp-abstract-restriction.php:342
 msgid "Drag and drop to set order"
-msgstr "Fogja meg és húzza a sorrend beállításához"
+msgstr "A sorrend beállításához húzza az elemeket a kívánt helyre"
 
-#: includes/abstracts/class-wc-csp-abstract-restriction.php:325
+#: includes/abstracts/class-wc-csp-abstract-restriction.php:337
 #, php-format
 msgid ""
 "<span class=\"restriction_title_index_container\">#<span "
@@ -114,20 +246,29 @@ msgstr ""
 "class=\"restriction_title_index\">%1$s</span></span> <span "
 "class=\"restriction_title_inner\">%2$s</span>"
 
-#. translators: Used to stitch together a resolution meesage based on a
+#. translators: Used to stitch together a resolution message based on a
 #. restriction's active conditions - last condition
-#: includes/abstracts/class-wc-csp-abstract-restriction.php:660
+#: includes/abstracts/class-wc-csp-abstract-restriction.php:722
 #, php-format
 msgid "%1$s, or %2$s"
 msgstr "%1$s, vagy %2$s"
 
-#: includes/admin/class-wc-csp-admin-ajax.php:52
-#: includes/admin/class-wc-csp-admin-ajax.php:165
+#: includes/admin/class-wc-csp-admin-ajax.php:54
+#: includes/admin/class-wc-csp-admin-ajax.php:186
+#: includes/admin/class-wc-csp-admin-ajax.php:204
 msgid "Action failed. Please refresh your browser and try again."
 msgstr ""
 "A művelet nem sikerült. Kérjük, frissítse a böngészőt, és próbálja újra."
 
-#: includes/admin/class-wc-csp-admin-ajax.php:93
+#: includes/admin/class-wc-csp-admin-ajax.php:70
+msgid "You do not have permission to edit this product."
+msgstr "Nincs jogosultsága a termék szerkesztéséhez."
+
+#: includes/admin/class-wc-csp-admin-ajax.php:79
+msgid "You do not have permission to edit global restrictions."
+msgstr "Nincs jogosultsága a globális korlátozások szerkesztéséhez."
+
+#: includes/admin/class-wc-csp-admin-ajax.php:113
 msgid ""
 "Restriction data has been changed. Please refresh your browser and try "
 "again."
@@ -135,39 +276,36 @@ msgstr ""
 "A korlátozás adatai megváltoztak. Kérjük, frissítse a böngészőt, és próbálja"
 " újra."
 
-#: includes/admin/class-wc-csp-admin-ajax.php:189
+#: includes/admin/class-wc-csp-admin-ajax.php:222
 msgid ""
 "This restriction is already defined and cannot be added again. Only "
 "restrictions that support multiple rule definitions can be added more than "
 "once."
-msgstr ""
-"Ez a korlátozás már létezik, és nem adható hozzá ismét. Csak a több "
-"szabálydefiníciót támogató korlátozások adhatók hozzá egynél többször."
+msgstr "Ez a korlátozás már meg van adva, ezért nem adható hozzá újra. Egynél többször csak azok a korlátozások adhatók hozzá, amelyek több szabály megadását is támogatják."
 
-#: includes/admin/class-wc-csp-admin-notices.php:302
+#: includes/admin/class-wc-csp-admin-notices.php:350
 msgid "Your database is being updated in the background."
 msgstr "Az adatbázist a háttérben frissítjük."
 
-#: includes/admin/class-wc-csp-admin-notices.php:312
+#: includes/admin/class-wc-csp-admin-notices.php:360
 msgid "Your database needs to be updated to the latest version."
 msgstr "Az adatbázist a legújabb verzióra kell frissíteni."
 
-#: includes/admin/class-wc-csp-admin-notices.php:317
+#: includes/admin/class-wc-csp-admin-notices.php:365
 msgid "Database update incomplete."
-msgstr "Az adatbázis-frissítés nem teljes."
+msgstr "Az adatbázis frissítése nem fejeződött be."
 
-#: includes/admin/class-wc-csp-admin-notices.php:322
+#: includes/admin/class-wc-csp-admin-notices.php:370
 msgid "WooCommerce Conditional Shipping and Payments Data Update"
-msgstr "WooCommerce Conditional Shipping and Payments adatfrissítés"
+msgstr "A WooCommerce Conditional Shipping and Payments adatainak frissítése"
 
-#: includes/admin/class-wc-csp-admin-notices.php:328
+#: includes/admin/class-wc-csp-admin-notices.php:376
 msgid "WooCommerce Conditional Shipping and Payments data update complete."
-msgstr ""
-"A WooCommerce Conditional Shipping and Payments adatfrissítése befejeződött."
+msgstr "A WooCommerce Conditional Shipping and Payments adatainak frissítése befejeződött."
 
 #. translators: %1$s: tax settings URL %2$s: product restrictions URL %3$s:
 #. global restrictions URL
-#: includes/admin/class-wc-csp-admin-notices.php:364
+#: includes/admin/class-wc-csp-admin-notices.php:414
 #, php-format
 msgid ""
 "<strong>Conditional Shipping and Payments</strong> is now evaluating the "
@@ -190,32 +328,28 @@ msgstr ""
 "korlátozások beállításaiban."
 
 #. translators: onboarding url
-#: includes/admin/class-wc-csp-admin-notices.php:403
+#: includes/admin/class-wc-csp-admin-notices.php:454
 #, php-format
 msgid ""
 "Thank you for installing <strong>WooCommerce Conditional Shipping and "
 "Payments</strong>. Ready to get started? <a href=\"%s\">Click here to create"
 " your first shipping or payment option restriction</a>."
-msgstr ""
-"Köszönjük, hogy telepítette a <strong>WooCommerce Conditional Shipping and "
-"Payments</strong> bővítményt. Készen áll a kezdésre? <a "
-"href=\"%s\">Kattintson ide az első szállítási vagy fizetési opció "
-"korlátozásának létrehozásához</a>."
+msgstr "Köszönjük, hogy telepítette a <strong>WooCommerce Conditional Shipping and Payments</strong> bővítményt. Készen áll a kezdésre? <a href=\"%s\">Kattintson ide az első szállítási vagy fizetési opcióra vonatkozó korlátozás létrehozásához</a>."
 
-#: includes/admin/class-wc-csp-admin-notices.php:444
+#: includes/admin/class-wc-csp-admin-notices.php:495
 msgid "run the update process manually"
 msgstr "futtassa kézzel a frissítési folyamatot"
 
-#: includes/admin/class-wc-csp-admin-notices.php:445
+#: includes/admin/class-wc-csp-admin-notices.php:496
 #, php-format
 msgid "&hellip;Taking a while? You may need to %s."
 msgstr "&hellip;Sokáig tart? Lehet, hogy %s."
 
-#: includes/admin/class-wc-csp-admin-notices.php:459
+#: includes/admin/class-wc-csp-admin-notices.php:510
 msgid "get in touch with us"
 msgstr "lépjen kapcsolatba velünk"
 
-#: includes/admin/class-wc-csp-admin-notices.php:460
+#: includes/admin/class-wc-csp-admin-notices.php:511
 #, php-format
 msgid ""
 "If this message persists, please restore your database from a backup, or %s."
@@ -223,7 +357,11 @@ msgstr ""
 "Ha ez az üzenet továbbra is megjelenik, állítsa vissza az adatbázist egy "
 "biztonsági mentésből, vagy %s."
 
-#: includes/admin/class-wc-csp-admin.php:195
+#: includes/admin/class-wc-csp-admin.php:122
+msgid "Settings"
+msgstr "Beállítások"
+
+#: includes/admin/class-wc-csp-admin.php:210
 msgid ""
 "The installed version of <strong>Conditional Shipping and Payments</strong> "
 "is not compatible with the <code>selectSW</code> library found on your "
@@ -235,38 +373,38 @@ msgstr ""
 "Kérjük, frissítse a Conditional Shipping and Payments bővítményt a legújabb "
 "verzióra."
 
-#: includes/admin/class-wc-csp-admin.php:273
+#: includes/admin/class-wc-csp-admin.php:289
 msgid "This rule will be permanently deleted from your system. Are you sure?"
 msgstr "Ez a szabály véglegesen törlődik a rendszerből. Biztos benne?"
 
-#: includes/admin/class-wc-csp-admin.php:287
+#: includes/admin/class-wc-csp-admin.php:303
 msgctxt "attributes_form"
 msgid "Something went wrong. Please refresh your browser and try again."
 msgstr "Valami hiba történt. Kérjük, frissítse a böngészőt, és próbálja újra."
 
-#: includes/admin/class-wc-csp-admin.php:341
+#: includes/admin/class-wc-csp-admin.php:357
 #: includes/admin/settings/class-wc-csp-settings-restrictions.php:29
 #: includes/admin/settings/class-wc-csp-settings-restrictions.php:82
 msgid "Restrictions"
 msgstr "Korlátozások"
 
-#: includes/admin/class-wc-csp-admin.php:377
+#: includes/admin/class-wc-csp-admin.php:393
 msgid "Choose restriction&hellip;"
 msgstr "Válasszon korlátozást&hellip;"
 
-#: includes/admin/class-wc-csp-admin.php:386
+#: includes/admin/class-wc-csp-admin.php:402
 msgid "Add"
 msgstr "Hozzáadás"
 
-#: includes/admin/class-wc-csp-admin.php:412
+#: includes/admin/class-wc-csp-admin.php:428
 msgid "This product does not exclude any shipping or payment options."
 msgstr "Ez a termék nem zár ki semmilyen szállítási vagy fizetési opciót."
 
-#: includes/admin/class-wc-csp-admin.php:539
+#: includes/admin/class-wc-csp-admin.php:582
 msgid "re-enable product-level restrictions"
-msgstr "újra engedélyezi a termékszintű korlátozásokat"
+msgstr "kapcsolja be újra a termékszintű korlátozásokat"
 
-#: includes/admin/class-wc-csp-admin.php:540
+#: includes/admin/class-wc-csp-admin.php:583
 #, php-format
 msgid ""
 "Product restrictions are currently disabled globally. You can still edit, "
@@ -277,7 +415,7 @@ msgstr ""
 "szerkeszthet, létrehozhat és törölhet szabályokat a <strong>Termékadatok > "
 "Korlátozások</strong> alatt &ndash; azonban nem lesz hatásuk, amíg nem %s."
 
-#: includes/admin/class-wc-csp-admin.php:554
+#: includes/admin/class-wc-csp-admin.php:597
 msgid ""
 "Product restrictions for <strong>Shipping Methods</strong> and "
 "<strong>Shipping Destinations</strong> do not work with "
@@ -291,7 +429,7 @@ msgstr ""
 "létrehozhat és szerkeszthet a <strong>Termékadatok > Korlátozások</strong> "
 "alatt &ndash; azonban ennek a terméknek a megvásárlásakor nem lesz hatásuk."
 
-#: includes/admin/class-wc-csp-admin.php:589
+#: includes/admin/class-wc-csp-admin.php:632
 #, php-format
 msgid ""
 "Your store does not have any active <a href=\"%1$s\">Shipping Methods</a>. "
@@ -305,7 +443,7 @@ msgstr ""
 "többet</a> a szállítási zónák és szállítási módok beállításáról az "
 "áruházában."
 
-#: includes/admin/class-wc-csp-admin.php:629
+#: includes/admin/class-wc-csp-admin.php:676
 msgid ""
 "Conditional Shipping and Payments does not collect, store or share any "
 "personal data."
@@ -313,33 +451,28 @@ msgstr ""
 "A Conditional Shipping and Payments nem gyűjt, nem tárol és nem oszt meg "
 "semmilyen személyes adatot."
 
-#: includes/admin/class-wc-csp-admin.php:633
+#: includes/admin/class-wc-csp-admin.php:680
 msgid ""
 "However, WooCommerce collects personal data from customers which can be used"
 " by Conditional Shipping and Payments to conditionally disable specific "
 "shipping and payment options. Please keep in mind that, depending on the "
 "context, limiting the checkout options for specific customer groups may "
 "violate laws in your jurisdiction."
-msgstr ""
-"A WooCommerce azonban gyűjt személyes adatokat az ügyfelektől, amelyeket a "
-"Conditional Shipping and Payments felhasználhat bizonyos szállítási és "
-"fizetési opciók feltételes letiltására. Kérjük, tartsa szem előtt, hogy a "
-"körülményektől függően bizonyos vásárlói csoportok pénztári opcióinak "
-"korlátozása sértheti az Ön joghatóságában érvényes jogszabályokat."
+msgstr "A WooCommerce azonban személyes adatokat gyűjt a vásárlóktól, amelyeket a Conditional Shipping and Payments felhasználhat bizonyos szállítási és fizetési opciók feltételes kikapcsolására. Kérjük, tartsa szem előtt, hogy a körülményektől függően bizonyos vásárlói csoportok pénztári opcióinak korlátozása sértheti az Ön joghatóságában érvényes jogszabályokat."
 
-#: includes/admin/class-wc-csp-admin.php:680
+#: includes/admin/class-wc-csp-admin.php:726
 msgid "Filter by restriction"
 msgstr "Szűrés korlátozás szerint"
 
-#: includes/admin/class-wc-csp-admin.php:797
+#: includes/admin/class-wc-csp-admin.php:843
 msgid "Any restriction"
 msgstr "Bármely korlátozás"
 
-#: includes/admin/class-wc-csp-admin.php:875
+#: includes/admin/class-wc-csp-admin.php:921
 msgid "Documentation"
 msgstr "Dokumentáció"
 
-#: includes/admin/class-wc-csp-admin.php:876
+#: includes/admin/class-wc-csp-admin.php:922
 msgid "Support"
 msgstr "Támogatás"
 
@@ -409,25 +542,18 @@ msgid ""
 "Enable debug mode to display detailed information about your active "
 "restrictions on the Checkout page. Useful for understanding the effect of "
 "your global and product-level rules on your shipping and payment options."
-msgstr ""
-"Engedélyezze a hibakeresési módot, hogy részletes információk jelenjenek meg"
-" az aktív korlátozásokról a Pénztár oldalon. Hasznos a globális és "
-"termékszintű szabályok szállítási és fizetési opciókra gyakorolt hatásának "
-"megértéséhez."
+msgstr "Engedélyezze a hibakeresési módot, hogy részletes információk jelenjenek meg az aktív korlátozásokról a Pénztár oldalon. Hasznos a globális és termékszintű szabályok szállítási és fizetési opciókra gyakorolt hatásának megértéséhez."
 
 #: includes/admin/settings/class-wc-csp-settings-restrictions.php:212
 msgid "re-enable global restrictions"
-msgstr "újra engedélyezi a globális korlátozásokat"
+msgstr "kapcsolja be újra a globális korlátozásokat"
 
 #: includes/admin/settings/class-wc-csp-settings-restrictions.php:213
 #, php-format
 msgid ""
 "Global restrictions are currently disabled. You can still edit, create and "
 "delete rules &ndash; however, they will have no effect until you %s."
-msgstr ""
-"A globális korlátozások jelenleg le vannak tiltva. Továbbra is szerkeszthet,"
-" létrehozhat és törölhet szabályokat &ndash; azonban nem lesz hatásuk, amíg "
-"nem %s."
+msgstr "A globális korlátozások jelenleg le vannak tiltva. Továbbra is szerkeszthet, létrehozhat és törölhet szabályokat &ndash; azonban nem lesz hatásuk, amíg nem %s."
 
 #: includes/admin/settings/class-wc-csp-settings-restrictions.php:235
 msgid ""
@@ -436,71 +562,79 @@ msgstr ""
 "A korlátozási szabály törlése nem sikerült. Kérjük, frissítse az oldalt, és "
 "próbálja újra."
 
-#: includes/admin/settings/class-wc-csp-settings-restrictions.php:249
+#: includes/admin/settings/class-wc-csp-settings-restrictions.php:251
 msgid "Restriction rule deleted successfully."
 msgstr "A korlátozási szabály sikeresen törölve."
 
-#: includes/admin/settings/class-wc-csp-settings-restrictions.php:297
+#: includes/admin/settings/class-wc-csp-settings-restrictions.php:300
 msgid "Restriction Type"
 msgstr "Korlátozás típusa"
 
-#: includes/admin/settings/class-wc-csp-settings-restrictions.php:298
+#: includes/admin/settings/class-wc-csp-settings-restrictions.php:301
 msgid "Active Rules"
 msgstr "Aktív szabályok"
 
-#: includes/admin/settings/class-wc-csp-settings-restrictions.php:299
+#: includes/admin/settings/class-wc-csp-settings-restrictions.php:302
 msgid "Summary"
 msgstr "Összegzés"
 
-#: includes/admin/settings/class-wc-csp-settings-restrictions.php:300
+#: includes/admin/settings/class-wc-csp-settings-restrictions.php:303
 msgid "Actions"
 msgstr "Műveletek"
 
-#: includes/admin/settings/class-wc-csp-settings-restrictions.php:322
+#: includes/admin/settings/class-wc-csp-settings-restrictions.php:325
 msgid "Restrict the payment gateways available at checkout."
 msgstr "Korlátozza a pénztárban elérhető fizetési átjárókat."
 
-#: includes/admin/settings/class-wc-csp-settings-restrictions.php:324
+#: includes/admin/settings/class-wc-csp-settings-restrictions.php:327
 msgid "Restrict the shipping methods available at checkout."
 msgstr "Korlátozza a pénztárban elérhető szállítási módokat."
 
-#: includes/admin/settings/class-wc-csp-settings-restrictions.php:326
+#: includes/admin/settings/class-wc-csp-settings-restrictions.php:329
 msgid "Restrict the shipping countries allowed at checkout."
-msgstr "Korlátozza a pénztárban engedélyezett szállítási országokat."
+msgstr "Korlátozza a pénztárban engedélyezett szállítási országok körét."
 
-#: includes/api/class-wc-csp-store-api.php:254
-msgid "Restrictions related cart data."
-msgstr "Korlátozásokhoz kapcsolódó kosáradatok."
+#: includes/api/class-wc-csp-store-api.php:127
+#: includes/class-wc-csp-restrictions.php:265
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:474
+msgid ""
+"Your order cannot be completed because a shipping or payment restriction "
+"applies."
+msgstr "A rendelés nem fejezhető be, mert szállítási vagy fizetési korlátozás van érvényben."
 
-#: includes/api/class-wc-csp-store-api.php:260
-msgid "Payment gateways restrictions data."
-msgstr "Fizetési átjárók korlátozásainak adatai."
-
-#: includes/api/class-wc-csp-store-api.php:266
+#: includes/api/class-wc-csp-store-api.php:467
 msgid "Whether the payment method is hidden in the checkout."
 msgstr "A fizetési mód rejtve van-e a pénztárban."
 
-#: includes/api/class-wc-csp-store-api.php:272
+#: includes/api/class-wc-csp-store-api.php:473
 msgid "Whether the payment method is excluded in the checkout."
 msgstr "A fizetési mód ki van-e zárva a pénztárban."
 
-#: includes/api/class-wc-csp-store-api.php:278
+#: includes/api/class-wc-csp-store-api.php:479
 msgid "Payment method resolution message, if any."
-msgstr "A fizetési mód üzenete, ha van."
+msgstr "A fizetési mód feloldásáról szóló üzenet, ha van."
 
-#: includes/api/class-wc-csp-store-api.php:291
+#: includes/api/class-wc-csp-store-api.php:489
+msgid "Restrictions related cart data."
+msgstr "Korlátozásokhoz kapcsolódó kosáradatok."
+
+#: includes/api/class-wc-csp-store-api.php:495
+msgid "Payment gateways restrictions data."
+msgstr "Fizetési átjárók korlátozásainak adatai."
+
+#: includes/api/class-wc-csp-store-api.php:507
 msgid "Debugger messages."
 msgstr "Hibakereső üzenetek."
 
-#: includes/api/class-wc-csp-store-api.php:297
+#: includes/api/class-wc-csp-store-api.php:513
 msgid "The debug message for payment methods."
 msgstr "A fizetési módok hibakeresési üzenete."
 
-#: includes/api/class-wc-csp-store-api.php:303
+#: includes/api/class-wc-csp-store-api.php:519
 msgid "The debug message for shipping methods."
 msgstr "A szállítási módok hibakeresési üzenete."
 
-#: includes/api/class-wc-csp-store-api.php:309
+#: includes/api/class-wc-csp-store-api.php:525
 msgid "The debug message for shipping countries."
 msgstr "A szállítási országok hibakeresési üzenete."
 
@@ -509,79 +643,81 @@ msgstr "A szállítási országok hibakeresési üzenete."
 msgid "Foul!"
 msgstr "Szabálytalan!"
 
-#: includes/class-wc-csp-conditions.php:187
-#: includes/class-wc-csp-conditions.php:343
+#: includes/class-wc-csp-conditions.php:196
+#: includes/class-wc-csp-conditions.php:380
 msgid "Remove"
 msgstr "Eltávolítás"
 
-#: includes/class-wc-csp-conditions.php:308
+#: includes/class-wc-csp-conditions.php:345
 msgid "Conditions"
 msgstr "Feltételek"
 
-#: includes/class-wc-csp-conditions.php:359
+#: includes/class-wc-csp-conditions.php:396
 msgid "Add Condition"
 msgstr "Feltétel hozzáadása"
 
-#: includes/class-wc-csp-debugger.php:324
-#: includes/class-wc-csp-debugger.php:380
 #: includes/class-wc-csp-debugger.php:453
+#: includes/class-wc-csp-debugger.php:509
+#: includes/class-wc-csp-debugger.php:582
 msgid "Conditional Shipping and Payments Debug Data"
 msgstr "Conditional Shipping and Payments hibakeresési adatok"
 
-#: includes/class-wc-csp-debugger.php:325
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:35
+#: includes/class-wc-csp-debugger.php:454
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:39
 msgid "Payment Gateways"
 msgstr "Fizetési átjárók"
 
-#: includes/class-wc-csp-debugger.php:349
-#: includes/class-wc-csp-debugger.php:422
-#: includes/class-wc-csp-debugger.php:476
+#: includes/class-wc-csp-debugger.php:478
+#: includes/class-wc-csp-debugger.php:551
+#: includes/class-wc-csp-debugger.php:605
 #, php-format
 msgid "%1$s&nbsp;&nbsp;<small>(%2$s rule active)</small>"
 msgid_plural "%1$s&nbsp;&nbsp;<small>(%2$s rules active)</small>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s&nbsp;&nbsp;<small>(%2$s aktív szabály)</small>"
+msgstr[1] "%1$s&nbsp;&nbsp;<small>(%2$s aktív szabály)</small>"
 
-#: includes/class-wc-csp-debugger.php:381
+#: includes/class-wc-csp-debugger.php:510
 #: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:25
 msgid "Shipping Methods"
 msgstr "Szállítási módok"
 
-#: includes/class-wc-csp-debugger.php:390
+#: includes/class-wc-csp-debugger.php:519
 msgid "No shipping options found."
 msgstr "Nem találhatók szállítási opciók."
 
-#: includes/class-wc-csp-debugger.php:402
-#: includes/class-wc-csp-debugger.php:477
+#: includes/class-wc-csp-debugger.php:531
+#: includes/class-wc-csp-debugger.php:606
 msgid "Package"
 msgstr "Csomag"
 
-#: includes/class-wc-csp-debugger.php:454
+#: includes/class-wc-csp-debugger.php:583
 #: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:25
 msgid "Shipping Destinations"
 msgstr "Szállítási célállomások"
 
-#: includes/class-wc-csp-debugger.php:460
+#: includes/class-wc-csp-debugger.php:589
 msgid "The current destination is not restricted by any rule."
-msgstr "A jelenlegi célállomást nem korlátozza egyetlen szabály sem."
+msgstr "Az aktuális célállomást egyetlen szabály sem korlátozza."
 
-#: includes/class-wc-csp-debugger.php:527
+#. translators: 1: Product or global label. 2: Rule number. 3: Rule URL. 4:
+#. Rule description.
+#: includes/class-wc-csp-debugger.php:686
 #, php-format
 msgctxt "rule name followed by index and url"
 msgid "%1$s #%2$s: <a href=\"%3$s\" target=\"_blank\">%4$s</a>"
 msgstr "%1$s #%2$s: <a href=\"%3$s\" target=\"_blank\">%4$s</a>"
 
-#: includes/class-wc-csp-debugger.php:528
+#: includes/class-wc-csp-debugger.php:687
 msgid "Global"
 msgstr "Globális"
 
-#: includes/compatibility/class-wc-csp-compatibility.php:228
+#: includes/compatibility/class-wc-csp-compatibility.php:225
 msgid "WooCommerce Blocks"
 msgstr "WooCommerce Blocks"
 
 #. translators: %1$s: Plugin name, %2$s: Plugin URL, %3$s: Plugin name full,
 #. %4$s: Plugin version
-#: includes/compatibility/class-wc-csp-compatibility.php:231
+#: includes/compatibility/class-wc-csp-compatibility.php:228
 #, php-format
 msgid ""
 "The installed version of <strong>%1$s</strong> does not support "
@@ -594,17 +730,17 @@ msgstr ""
 "frissítse a <a href=\"%2$s\" target=\"_blank\">%3$s</a> csomagot "
 "<strong>%4$s</strong> vagy újabb verzióra."
 
-#: includes/compatibility/class-wc-csp-compatibility.php:249
-#: includes/compatibility/modules/class-wc-csp-gc-compatibility.php:373
+#: includes/compatibility/class-wc-csp-compatibility.php:246
+#: includes/compatibility/modules/class-wc-csp-gc-compatibility.php:414
 #: includes/conditions/class-wc-csp-condition-gift-cards.php:27
 msgid "Gift Cards"
 msgstr "Ajándékkártyák"
 
-#: includes/compatibility/class-wc-csp-compatibility.php:250
+#: includes/compatibility/class-wc-csp-compatibility.php:247
 msgid "WooCommerce Gift Cards"
 msgstr "WooCommerce Gift Cards"
 
-#: includes/compatibility/class-wc-csp-compatibility.php:252
+#: includes/compatibility/class-wc-csp-compatibility.php:249
 #, php-format
 msgid ""
 "The installed version of <strong>%1$s</strong> is not supported by "
@@ -617,31 +753,27 @@ msgstr ""
 "href=\"%2$s\" target=\"_blank\">%3$s</a> csomagot <strong>%4$s</strong> vagy"
 " újabb verzióra."
 
-#: includes/compatibility/core/class-wc-csp-core-compatibility.php:295
+#: includes/compatibility/core/class-wc-csp-core-compatibility.php:297
 #, php-format
 msgctxt "variation title followed by attributes"
 msgid "%1$s &ndash; %2$s"
 msgstr "%1$s &ndash; %2$s"
 
-#: includes/compatibility/modules/class-wc-csp-gc-compatibility.php:103
+#: includes/compatibility/modules/class-wc-csp-gc-compatibility.php:105
 #, php-format
 msgid ""
 "Failed to save Gift Cards condition in rule #%d. The Gift Cards condition is"
 " not supported by Gift Cards payment gateway."
-msgstr ""
-"Nem sikerült menteni az Ajándékkártyák feltételt a(z) #%d. szabályban. Az "
-"Ajándékkártyák feltételt nem támogatja az Ajándékkártyák fizetési átjáró."
+msgstr "Nem sikerült menteni az Ajándékkártyák feltételt ennél a szabálynál: #%d. Az Ajándékkártyák fizetési átjáró nem támogatja az Ajándékkártyák feltételt."
 
-#: includes/compatibility/modules/class-wc-csp-klc-compatibility.php:82
+#: includes/compatibility/modules/class-wc-csp-klc-compatibility.php:88
 #, php-format
 msgid ""
 "Show Excluded has been disabled in rule %s. The option is not supported by "
 "Klarna Checkout."
-msgstr ""
-"A Kizárt elemek megjelenítése le lett tiltva a(z) %s szabályban. Az opciót a"
-" Klarna Checkout nem támogatja."
+msgstr "A Kizárt elemek megjelenítése opciót kikapcsolták a(z) %s szabályban. Az opciót a Klarna Checkout nem támogatja."
 
-#: includes/compatibility/modules/class-wc-csp-klc-compatibility.php:100
+#: includes/compatibility/modules/class-wc-csp-klc-compatibility.php:106
 #, php-format
 msgid ""
 "Failed to save Billing Country condition in rule %s. The Billing Country "
@@ -650,19 +782,19 @@ msgstr ""
 "Nem sikerült menteni a Számlázási ország feltételt a(z) %s szabályban. A "
 "Számlázási ország feltételt a Klarna Checkout nem támogatja."
 
-#: includes/compatibility/modules/class-wc-csp-klc-compatibility.php:107
+#: includes/compatibility/modules/class-wc-csp-klc-compatibility.php:113
 #, php-format
 msgctxt "items in comma separated list"
 msgid "%1$s, %2$s"
 msgstr "%1$s, %2$s"
 
-#: includes/compatibility/modules/class-wc-csp-klc-compatibility.php:111
+#: includes/compatibility/modules/class-wc-csp-klc-compatibility.php:117
 #, php-format
 msgctxt "last item in comma separated list"
 msgid "%1$s and %2$s"
 msgstr "%1$s és %2$s"
 
-#: includes/compatibility/modules/class-wc-csp-klc-compatibility.php:114
+#: includes/compatibility/modules/class-wc-csp-klc-compatibility.php:120
 #, php-format
 msgid ""
 "Failed to save Billing Country condition in rules %s. The Billing Country "
@@ -671,15 +803,15 @@ msgstr ""
 "Nem sikerült menteni a Számlázási ország feltételt a(z) %s szabályokban. A "
 "Számlázási ország feltételt a Klarna Checkout nem támogatja."
 
-#: includes/compatibility/modules/class-wc-csp-klp-compatibility.php:34
+#: includes/compatibility/modules/class-wc-csp-klp-compatibility.php:73
 msgid "Pay Now"
 msgstr "Fizess most"
 
-#: includes/compatibility/modules/class-wc-csp-klp-compatibility.php:35
+#: includes/compatibility/modules/class-wc-csp-klp-compatibility.php:74
 msgid "Pay Later"
 msgstr "Fizess később"
 
-#: includes/compatibility/modules/class-wc-csp-klp-compatibility.php:36
+#: includes/compatibility/modules/class-wc-csp-klp-compatibility.php:75
 msgid "Slice It"
 msgstr "Részletfizetés"
 
@@ -687,47 +819,47 @@ msgstr "Részletfizetés"
 msgid "Billing Country/State"
 msgstr "Számlázási ország/állam"
 
-#: includes/conditions/class-wc-csp-condition-billing-country-state.php:49
+#: includes/conditions/class-wc-csp-condition-billing-country-state.php:53
 #: includes/conditions/class-wc-csp-condition-shipping-country-state.php:91
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:549
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:594
 msgid "Country"
 msgstr "Ország"
 
-#: includes/conditions/class-wc-csp-condition-billing-country-state.php:55
+#: includes/conditions/class-wc-csp-condition-billing-country-state.php:59
 #, php-format
 msgid "choose a different billing %s"
-msgstr "válassz másik számlázási %s-t"
+msgstr "Válasszon másikat a számlázási %s helyett."
 
-#: includes/conditions/class-wc-csp-condition-billing-country-state.php:250
-#: includes/conditions/class-wc-csp-condition-billing-postcode.php:172
+#: includes/conditions/class-wc-csp-condition-billing-country-state.php:259
+#: includes/conditions/class-wc-csp-condition-billing-postcode.php:173
 #: includes/conditions/class-wc-csp-condition-currency.php:168
 #: includes/conditions/class-wc-csp-condition-customer-role.php:153
-#: includes/conditions/class-wc-csp-condition-package-recurring-package.php:245
+#: includes/conditions/class-wc-csp-condition-package-recurring-package.php:241
 #: includes/conditions/class-wc-csp-condition-shipping-country-state.php:319
-#: includes/conditions/class-wc-csp-condition-shipping-method.php:252
+#: includes/conditions/class-wc-csp-condition-shipping-method.php:255
 #: includes/conditions/class-wc-csp-condition-shipping-postcode.php:204
 msgid "is"
 msgstr "egyenlő"
 
-#: includes/conditions/class-wc-csp-condition-billing-country-state.php:251
-#: includes/conditions/class-wc-csp-condition-billing-postcode.php:173
+#: includes/conditions/class-wc-csp-condition-billing-country-state.php:260
+#: includes/conditions/class-wc-csp-condition-billing-postcode.php:174
 #: includes/conditions/class-wc-csp-condition-currency.php:169
 #: includes/conditions/class-wc-csp-condition-customer-role.php:154
-#: includes/conditions/class-wc-csp-condition-package-recurring-package.php:246
+#: includes/conditions/class-wc-csp-condition-package-recurring-package.php:242
 #: includes/conditions/class-wc-csp-condition-shipping-country-state.php:320
-#: includes/conditions/class-wc-csp-condition-shipping-method.php:253
+#: includes/conditions/class-wc-csp-condition-shipping-method.php:256
 #: includes/conditions/class-wc-csp-condition-shipping-postcode.php:205
 msgid "is not"
 msgstr "nem egyenlő"
 
-#: includes/conditions/class-wc-csp-condition-billing-country-state.php:256
+#: includes/conditions/class-wc-csp-condition-billing-country-state.php:265
 msgid "Select billing countries&hellip;"
-msgstr "Válassz számlázási országokat&hellip;"
+msgstr "Válasszon számlázási országokat&hellip;"
 
-#: includes/conditions/class-wc-csp-condition-billing-country-state.php:280
+#: includes/conditions/class-wc-csp-condition-billing-country-state.php:289
 #: includes/conditions/class-wc-csp-condition-shipping-country-state.php:349
 msgid "Limit restriction to specific states or regions&hellip;"
-msgstr "Korlátozd meghatározott államokra vagy régiókra&hellip;"
+msgstr "Korlátozza a feltételt meghatározott államokra vagy régiókra&hellip;"
 
 #: includes/conditions/class-wc-csp-condition-billing-postcode.php:26
 msgid "Billing Postcode"
@@ -735,22 +867,19 @@ msgstr "Számlázási irányítószám"
 
 #: includes/conditions/class-wc-csp-condition-billing-postcode.php:46
 msgid "choose a valid billing postcode"
-msgstr "válassz érvényes számlázási irányítószámot"
-
-#: includes/conditions/class-wc-csp-condition-billing-postcode.php:178
-#: includes/conditions/class-wc-csp-condition-shipping-postcode.php:210
-msgid "List one postcode per line&hellip;"
-msgstr "Sorolj fel egy irányítószámot soronként&hellip;"
+msgstr "Válasszon érvényes számlázási irányítószámot"
 
 #: includes/conditions/class-wc-csp-condition-billing-postcode.php:179
+#: includes/conditions/class-wc-csp-condition-shipping-postcode.php:210
+msgid "List one postcode per line&hellip;"
+msgstr "Adjon meg soronként egy irányítószámot&hellip;"
+
+#: includes/conditions/class-wc-csp-condition-billing-postcode.php:180
 #: includes/conditions/class-wc-csp-condition-shipping-postcode.php:211
 msgid ""
 "List one postcode per line. Postcodes containing wildcards (e.g. CB23*) and "
 "fully numeric ranges (e.g. <code>90210...99000</code>) are also supported."
-msgstr ""
-"Sorolj fel soronként egy irányítószámot. A helyettesítő karaktereket "
-"tartalmazó irányítószámok (pl. CB23*) és a teljesen numerikus tartományok "
-"(pl. <code>90210...99000</code>) is támogatottak."
+msgstr "Soronként egy irányítószámot adjon meg. A helyettesítő karaktereket tartalmazó irányítószámok (pl. CB23*) és a csak számjegyekből álló tartományok (pl. <code>90210...99000</code>) is támogatottak."
 
 #: includes/conditions/class-wc-csp-condition-cart-attribute.php:26
 #: includes/conditions/class-wc-csp-condition-package-attribute.php:27
@@ -763,8 +892,7 @@ msgstr "Termékattribútum"
 #, php-format
 msgctxt "products with attribute"
 msgid "remove all products with a %2$s of %3$s from your cart"
-msgstr ""
-"távolíts el minden olyan terméket a kosaradból, amelynek %2$s értéke %3$s"
+msgstr "Távolítsa el a kosarából az összes olyan terméket, amelynek %2$s értéke %3$s."
 
 #. translators: %1$s - products, %2$s - attribute label, %3$s - values.
 #: includes/conditions/class-wc-csp-condition-cart-attribute.php:91
@@ -772,7 +900,7 @@ msgstr ""
 #, php-format
 msgctxt "products with attribute"
 msgid "remove %1$s from your cart"
-msgstr "távolítsd el a(z) %1$s elemet a kosaradból"
+msgstr "Távolítsa el a(z) %1$s elemet a kosarából."
 
 #. translators: %1$s - attribute label, %2$s - values.
 #: includes/conditions/class-wc-csp-condition-cart-attribute.php:95
@@ -780,8 +908,7 @@ msgstr "távolítsd el a(z) %1$s elemet a kosaradból"
 #, php-format
 msgctxt "products with attribute"
 msgid "add some products tagged with a %1$s of %2$s to your cart"
-msgstr ""
-"adj hozzá a kosaradhoz néhány olyan terméket, amelyeknél a %1$s értéke %2$s"
+msgstr "Adjon hozzá néhány olyan terméket a kosarához, amelyeknél a %1$s értéke %2$s."
 
 #. translators: %1$s - attribute label, %2$s - values.
 #: includes/conditions/class-wc-csp-condition-cart-attribute.php:98
@@ -790,9 +917,7 @@ msgstr ""
 msgctxt "products with attribute"
 msgid ""
 "make sure that your cart doesn't only contain products with a %1$s of %2$s"
-msgstr ""
-"győződj meg róla, hogy a kosarad ne csak olyan termékeket tartalmazzon, "
-"amelyeknél a %1$s értéke %2$s"
+msgstr "Ügyeljen arra, hogy a kosara ne csak olyan termékeket tartalmazzon, amelyeknél a %1$s értéke %2$s."
 
 #. translators: %1$s - attribute label, %2$s - values.
 #: includes/conditions/class-wc-csp-condition-cart-attribute.php:101
@@ -800,67 +925,65 @@ msgstr ""
 #, php-format
 msgctxt "products with attribute"
 msgid "make sure that your cart contains only products with a %1$s of %2$s"
-msgstr ""
-"győződj meg róla, hogy a kosarad csak olyan termékeket tartalmazzon, "
-"amelyeknél a %1$s értéke %2$s"
+msgstr "Ügyeljen arra, hogy a kosara csak olyan termékeket tartalmazzon, amelyeknél a %1$s értéke %2$s."
 
-#: includes/conditions/class-wc-csp-condition-cart-attribute.php:350
+#: includes/conditions/class-wc-csp-condition-cart-attribute.php:368
 #: includes/conditions/class-wc-csp-condition-cart-backorder.php:184
 #: includes/conditions/class-wc-csp-condition-cart-brand.php:297
-#: includes/conditions/class-wc-csp-condition-cart-category.php:320
+#: includes/conditions/class-wc-csp-condition-cart-category.php:324
 #: includes/conditions/class-wc-csp-condition-cart-item-on-sale.php:185
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:359
-#: includes/conditions/class-wc-csp-condition-cart-shipping-class.php:251
+#: includes/conditions/class-wc-csp-condition-cart-shipping-class.php:256
 #: includes/conditions/class-wc-csp-condition-cart-tag.php:307
 #: includes/conditions/class-wc-csp-condition-gift-card-product.php:185
 msgid "in cart"
 msgstr "a kosárban"
 
-#: includes/conditions/class-wc-csp-condition-cart-attribute.php:352
+#: includes/conditions/class-wc-csp-condition-cart-attribute.php:370
 #: includes/conditions/class-wc-csp-condition-cart-backorder.php:185
 #: includes/conditions/class-wc-csp-condition-cart-brand.php:299
-#: includes/conditions/class-wc-csp-condition-cart-category.php:321
+#: includes/conditions/class-wc-csp-condition-cart-category.php:325
 #: includes/conditions/class-wc-csp-condition-cart-item-on-sale.php:186
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:360
-#: includes/conditions/class-wc-csp-condition-cart-shipping-class.php:252
+#: includes/conditions/class-wc-csp-condition-cart-shipping-class.php:257
 #: includes/conditions/class-wc-csp-condition-cart-tag.php:309
 #: includes/conditions/class-wc-csp-condition-gift-card-product.php:186
 msgid "not in cart"
 msgstr "nincs a kosárban"
 
-#: includes/conditions/class-wc-csp-condition-cart-attribute.php:354
+#: includes/conditions/class-wc-csp-condition-cart-attribute.php:372
 #: includes/conditions/class-wc-csp-condition-cart-backorder.php:186
 #: includes/conditions/class-wc-csp-condition-cart-brand.php:301
-#: includes/conditions/class-wc-csp-condition-cart-category.php:322
+#: includes/conditions/class-wc-csp-condition-cart-category.php:326
 #: includes/conditions/class-wc-csp-condition-cart-item-on-sale.php:187
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:361
-#: includes/conditions/class-wc-csp-condition-cart-shipping-class.php:253
+#: includes/conditions/class-wc-csp-condition-cart-shipping-class.php:258
 #: includes/conditions/class-wc-csp-condition-cart-tag.php:311
 #: includes/conditions/class-wc-csp-condition-gift-card-product.php:187
 msgid "all cart items"
 msgstr "összes kosártétel"
 
-#: includes/conditions/class-wc-csp-condition-cart-attribute.php:356
+#: includes/conditions/class-wc-csp-condition-cart-attribute.php:374
 #: includes/conditions/class-wc-csp-condition-cart-backorder.php:187
 #: includes/conditions/class-wc-csp-condition-cart-brand.php:303
-#: includes/conditions/class-wc-csp-condition-cart-category.php:323
+#: includes/conditions/class-wc-csp-condition-cart-category.php:327
 #: includes/conditions/class-wc-csp-condition-cart-item-on-sale.php:188
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:362
-#: includes/conditions/class-wc-csp-condition-cart-shipping-class.php:254
+#: includes/conditions/class-wc-csp-condition-cart-shipping-class.php:259
 #: includes/conditions/class-wc-csp-condition-cart-tag.php:313
 #: includes/conditions/class-wc-csp-condition-gift-card-product.php:188
 msgid "not all cart items"
 msgstr "nem minden kosártétel"
 
-#: includes/conditions/class-wc-csp-condition-cart-attribute.php:364
-#: includes/conditions/class-wc-csp-condition-package-attribute.php:373
+#: includes/conditions/class-wc-csp-condition-cart-attribute.php:382
+#: includes/conditions/class-wc-csp-condition-package-attribute.php:384
 msgid "Select product attribute&hellip;"
-msgstr "Válassz termékattribútumot&hellip;"
+msgstr "Válasszon termékattribútumot&hellip;"
 
-#: includes/conditions/class-wc-csp-condition-cart-attribute.php:385
-#: includes/conditions/class-wc-csp-condition-package-attribute.php:394
+#: includes/conditions/class-wc-csp-condition-cart-attribute.php:403
+#: includes/conditions/class-wc-csp-condition-package-attribute.php:405
 msgid "Select attribute values&hellip;"
-msgstr "Válassz attribútumértékeket&hellip;"
+msgstr "Válasszon attribútumértékeket&hellip;"
 
 #: includes/conditions/class-wc-csp-condition-cart-backorder.php:27
 #: includes/conditions/class-wc-csp-condition-package-backorder.php:27
@@ -870,25 +993,22 @@ msgstr "Utánrendelés"
 #: includes/conditions/class-wc-csp-condition-cart-backorder.php:50
 #: includes/conditions/class-wc-csp-condition-package-backorder.php:50
 msgid "remove all backordered products from your cart"
-msgstr "távolíts el minden utánrendeléses terméket a kosaradból"
+msgstr "Távolítson el minden utánrendelés alatt álló terméket a kosarából."
 
 #: includes/conditions/class-wc-csp-condition-cart-backorder.php:52
 #: includes/conditions/class-wc-csp-condition-package-backorder.php:57
 msgid "add some backordered products to your cart"
-msgstr "adj hozzá néhány utánrendeléses terméket a kosaradhoz"
+msgstr "Adjon hozzá néhány, utánrendelés alatt álló terméket a kosarához."
 
 #: includes/conditions/class-wc-csp-condition-cart-backorder.php:54
 #: includes/conditions/class-wc-csp-condition-package-backorder.php:64
 msgid "make sure that your cart doesn't contain only products on backorder"
-msgstr ""
-"győződj meg róla, hogy a kosarad ne csak utánrendeléses termékeket "
-"tartalmazzon"
+msgstr "Ügyeljen arra, hogy a kosara ne csak utánrendelés alatt álló termékeket tartalmazzon."
 
 #: includes/conditions/class-wc-csp-condition-cart-backorder.php:56
 #: includes/conditions/class-wc-csp-condition-package-backorder.php:71
 msgid "make sure that your cart contains only products on backorder"
-msgstr ""
-"győződj meg róla, hogy a kosarad csak utánrendeléses termékeket tartalmazzon"
+msgstr "Ügyeljen arra, hogy a kosara csak utánrendelés alatt álló termékeket tartalmazzon."
 
 #: includes/conditions/class-wc-csp-condition-cart-brand.php:27
 #: includes/conditions/class-wc-csp-condition-package-brand.php:27
@@ -901,8 +1021,8 @@ msgstr "Márka"
 msgctxt "products with brands"
 msgid "remove all products with the %2$s brand from your cart"
 msgid_plural "remove all products with the %2$s brands from your cart"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Távolítsa el a kosárból az összes, %2$s márkához tartozó terméket."
+msgstr[1] "Távolítsa el a kosárból az összes, %2$s márkákhoz tartozó terméket."
 
 #. translators: %1$s - products, %2$s - brands.
 #: includes/conditions/class-wc-csp-condition-cart-brand.php:92
@@ -911,8 +1031,8 @@ msgstr[1] ""
 msgctxt "products with brands"
 msgid "remove %1$s from your cart"
 msgid_plural "remove %1$s from your cart"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Távolítsa el a(z) %1$s terméket a kosarából."
+msgstr[1] "Távolítsa el a(z) %1$s terméket a kosarából."
 
 #. translators: %1$s - brands.
 #: includes/conditions/class-wc-csp-condition-cart-brand.php:96
@@ -920,8 +1040,8 @@ msgstr[1] ""
 msgctxt "products with brands"
 msgid "add some products with the %s brand to your cart"
 msgid_plural "add some products with the %s brands to your cart"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "adjon hozzá néhány %s márkához tartozó terméket a kosarához"
+msgstr[1] "adjon hozzá néhány %s márkákhoz tartozó terméket a kosarához"
 
 #. translators: %1$s - brands.
 #: includes/conditions/class-wc-csp-condition-cart-brand.php:99
@@ -932,8 +1052,8 @@ msgid ""
 "make sure that your cart doesn't only contain products with the %s brand"
 msgid_plural ""
 "make sure that your cart doesn't only contain products with the %s brands"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ügyeljen arra, hogy a kosara ne csak %s márkához tartozó termékeket tartalmazzon"
+msgstr[1] "ügyeljen arra, hogy a kosara ne csak %s márkákhoz tartozó termékeket tartalmazzon"
 
 #. translators: %1$s - brands.
 #: includes/conditions/class-wc-csp-condition-cart-brand.php:102
@@ -942,13 +1062,13 @@ msgctxt "products with brands"
 msgid "make sure that your cart contains only products with the %s brand"
 msgid_plural ""
 "make sure that your cart contains only products with the %s brands"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ügyeljen arra, hogy a kosara kizárólag %s márkához tartozó termékeket tartalmazzon"
+msgstr[1] "ügyeljen arra, hogy a kosara kizárólag %s márkákhoz tartozó termékeket tartalmazzon"
 
 #: includes/conditions/class-wc-csp-condition-cart-brand.php:311
 #: includes/conditions/class-wc-csp-condition-package-brand.php:333
 msgid "Select brands&hellip;"
-msgstr "Válassz márkákat&hellip;"
+msgstr "Válasszon márkákat&hellip;"
 
 #: includes/conditions/class-wc-csp-condition-cart-category.php:27
 #: includes/conditions/class-wc-csp-condition-package-category.php:27
@@ -959,39 +1079,39 @@ msgstr "Kategória"
 #: includes/conditions/class-wc-csp-condition-package-category.php:86
 #, php-format
 msgid "remove all products from the %2$s categories from your cart"
-msgstr "távolíts el minden terméket a(z) %2$s kategóriákból a kosaradból"
+msgstr "távolítsa el a kosarából az összes terméket, amely a(z) %2$s kategóriákba tartozik"
 
 #: includes/conditions/class-wc-csp-condition-cart-category.php:87
 #: includes/conditions/class-wc-csp-condition-package-category.php:92
 #, php-format
 msgid "remove all products from the %2$s category from your cart"
-msgstr "távolíts el minden terméket a(z) %2$s kategóriából a kosaradból"
+msgstr "távolítsa el a kosarából az összes terméket, amely a(z) %2$s kategóriába tartozik"
 
 #: includes/conditions/class-wc-csp-condition-cart-category.php:91
 #: includes/conditions/class-wc-csp-condition-package-category.php:99
 #, php-format
 msgctxt "products in categories"
 msgid "remove %1$s from your cart"
-msgstr "távolítsd el a(z) %1$s elemet a kosaradból"
+msgstr "távolítsa el a(z) %1$s tételt a kosarából"
 
 #: includes/conditions/class-wc-csp-condition-cart-category.php:93
 #: includes/conditions/class-wc-csp-condition-package-category.php:105
 #, php-format
 msgctxt "products in category"
 msgid "remove %1$s from your cart"
-msgstr "távolítsd el a(z) %1$s elemet a kosaradból"
+msgstr "távolítsa el a(z) %1$s tételt a kosarából"
 
 #: includes/conditions/class-wc-csp-condition-cart-category.php:98
 #: includes/conditions/class-wc-csp-condition-package-category.php:114
 #, php-format
 msgid "add some products from the %s categories to your cart"
-msgstr "adj hozzá néhány terméket a(z) %s kategóriákból a kosaradhoz"
+msgstr "adjon hozzá néhány terméket a(z) %s kategóriából a kosarához"
 
 #: includes/conditions/class-wc-csp-condition-cart-category.php:100
 #: includes/conditions/class-wc-csp-condition-package-category.php:120
 #, php-format
 msgid "add some products from the %s category to your cart"
-msgstr "adj hozzá néhány terméket a(z) %s kategóriából a kosaradhoz"
+msgstr "adjon hozzá néhány terméket a(z) %s kategóriából a kosarához"
 
 #: includes/conditions/class-wc-csp-condition-cart-category.php:105
 #: includes/conditions/class-wc-csp-condition-package-category.php:129
@@ -999,37 +1119,29 @@ msgstr "adj hozzá néhány terméket a(z) %s kategóriából a kosaradhoz"
 msgid ""
 "make sure that your cart doesn't only contain products from the %s "
 "categories"
-msgstr ""
-"győződj meg róla, hogy a kosarad ne csak a(z) %s kategóriákból származó "
-"termékeket tartalmazzon"
+msgstr "ügyeljen arra, hogy a kosara ne csak a(z) %s kategóriákból származó termékeket tartalmazzon"
 
 #: includes/conditions/class-wc-csp-condition-cart-category.php:107
 #: includes/conditions/class-wc-csp-condition-package-category.php:135
 #, php-format
 msgid ""
 "make sure that your cart doesn't only contain products from the %s category"
-msgstr ""
-"győződj meg róla, hogy a kosarad ne csak a(z) %s kategóriából származó "
-"termékeket tartalmazzon"
+msgstr "ügyeljen arra, hogy a kosara ne csak a(z) %s kategóriából származó termékeket tartalmazzon"
 
 #: includes/conditions/class-wc-csp-condition-cart-category.php:112
 #: includes/conditions/class-wc-csp-condition-package-category.php:144
 #, php-format
 msgid "make sure that your cart contains only products from the %s categories"
-msgstr ""
-"győződj meg róla, hogy a kosarad csak a(z) %s kategóriákból származó "
-"termékeket tartalmazzon"
+msgstr "ügyeljen arra, hogy a kosara csak a(z) %s kategóriákból származó termékeket tartalmazzon"
 
 #: includes/conditions/class-wc-csp-condition-cart-category.php:114
 #: includes/conditions/class-wc-csp-condition-package-category.php:150
 #, php-format
 msgid "make sure that your cart contains only products from the %s category"
-msgstr ""
-"győződj meg róla, hogy a kosarad csak a(z) %s kategóriából származó "
-"termékeket tartalmazzon"
+msgstr "ügyeljen arra, hogy a kosara csak a(z) %s kategóriából származó termékeket tartalmazzon"
 
-#: includes/conditions/class-wc-csp-condition-cart-category.php:328
-#: includes/conditions/class-wc-csp-condition-package-category.php:376
+#: includes/conditions/class-wc-csp-condition-cart-category.php:332
+#: includes/conditions/class-wc-csp-condition-package-category.php:382
 msgid "Select categories&hellip;"
 msgstr "Válassz kategóriákat&hellip;"
 
@@ -1037,90 +1149,88 @@ msgstr "Válassz kategóriákat&hellip;"
 msgid "Cart Item Count"
 msgstr "Kosár tételszáma"
 
-#: includes/conditions/class-wc-csp-condition-cart-item-count.php:50
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:59
+#: includes/conditions/class-wc-csp-condition-cart-item-count.php:55
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:64
 #, php-format
 msgid "make sure that there are no more than %s items in your cart"
-msgstr "győződj meg róla, hogy a kosaradban legfeljebb %s tétel van"
+msgstr "győződjön meg róla, hogy a kosarában legfeljebb %s tétel van"
 
-#: includes/conditions/class-wc-csp-condition-cart-item-count.php:54
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:71
+#: includes/conditions/class-wc-csp-condition-cart-item-count.php:59
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:76
 #, php-format
 msgid "make sure that your cart contains at least %s items"
-msgstr "győződj meg róla, hogy a kosarad legalább %s tételt tartalmaz"
+msgstr "győződjön meg róla, hogy a kosara legalább %s tételt tartalmaz"
 
-#: includes/conditions/class-wc-csp-condition-cart-item-count.php:58
-#: includes/conditions/class-wc-csp-condition-cart-item-count.php:66
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:83
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:116
+#: includes/conditions/class-wc-csp-condition-cart-item-count.php:63
+#: includes/conditions/class-wc-csp-condition-cart-item-count.php:71
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:88
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:121
 #, php-format
 msgid "make sure that your cart contains more than %s items"
-msgstr "győződj meg róla, hogy a kosarad %s tételnél többet tartalmaz"
+msgstr "győződjön meg róla, hogy a kosara %s tételnél többet tartalmaz"
 
-#: includes/conditions/class-wc-csp-condition-cart-item-count.php:62
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:95
+#: includes/conditions/class-wc-csp-condition-cart-item-count.php:67
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:100
 #, php-format
 msgid "make sure that your cart contains less than %s items"
-msgstr "győződj meg róla, hogy a kosarad %s tételnél kevesebbet tartalmaz"
+msgstr "győződjön meg róla, hogy a kosara %s tételnél kevesebbet tartalmaz"
 
-#: includes/conditions/class-wc-csp-condition-cart-item-count.php:68
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:118
+#: includes/conditions/class-wc-csp-condition-cart-item-count.php:73
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:123
 #, php-format
 msgid "make sure that your cart contains either more or fewer than %s items"
-msgstr ""
-"győződj meg róla, hogy a kosaradban vagy több, vagy kevesebb mint %s tétel "
-"van"
+msgstr "győződjön meg róla, hogy nem pontosan %s tétel van a kosarában"
 
-#: includes/conditions/class-wc-csp-condition-cart-item-count.php:159
+#: includes/conditions/class-wc-csp-condition-cart-item-count.php:173
 #: includes/conditions/class-wc-csp-condition-cart-item-quantity.php:159
-#: includes/conditions/class-wc-csp-condition-cart-subtotal.php:159
-#: includes/conditions/class-wc-csp-condition-cart-total.php:152
+#: includes/conditions/class-wc-csp-condition-cart-subtotal.php:164
+#: includes/conditions/class-wc-csp-condition-cart-total.php:157
 #: includes/conditions/class-wc-csp-condition-order-total.php:180
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:272
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:301
 #: includes/conditions/class-wc-csp-condition-package-total.php:183
 #: includes/conditions/class-wc-csp-condition-package-weight.php:201
 #: includes/conditions/class-wc-csp-condition-stock-quantity.php:166
 msgid "<"
 msgstr "<"
 
-#: includes/conditions/class-wc-csp-condition-cart-item-count.php:160
+#: includes/conditions/class-wc-csp-condition-cart-item-count.php:174
 #: includes/conditions/class-wc-csp-condition-cart-item-quantity.php:160
-#: includes/conditions/class-wc-csp-condition-cart-subtotal.php:160
-#: includes/conditions/class-wc-csp-condition-cart-total.php:153
+#: includes/conditions/class-wc-csp-condition-cart-subtotal.php:165
+#: includes/conditions/class-wc-csp-condition-cart-total.php:158
 #: includes/conditions/class-wc-csp-condition-order-total.php:181
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:273
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:302
 #: includes/conditions/class-wc-csp-condition-package-total.php:184
 #: includes/conditions/class-wc-csp-condition-package-weight.php:202
 #: includes/conditions/class-wc-csp-condition-stock-quantity.php:167
 msgid "<="
 msgstr "<="
 
-#: includes/conditions/class-wc-csp-condition-cart-item-count.php:161
+#: includes/conditions/class-wc-csp-condition-cart-item-count.php:175
 #: includes/conditions/class-wc-csp-condition-cart-item-quantity.php:162
-#: includes/conditions/class-wc-csp-condition-cart-subtotal.php:162
-#: includes/conditions/class-wc-csp-condition-cart-total.php:155
+#: includes/conditions/class-wc-csp-condition-cart-subtotal.php:167
+#: includes/conditions/class-wc-csp-condition-cart-total.php:160
 #: includes/conditions/class-wc-csp-condition-order-total.php:183
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:274
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:303
 #: includes/conditions/class-wc-csp-condition-package-total.php:186
 #: includes/conditions/class-wc-csp-condition-package-weight.php:204
 #: includes/conditions/class-wc-csp-condition-stock-quantity.php:169
 msgid ">="
 msgstr ">="
 
-#: includes/conditions/class-wc-csp-condition-cart-item-count.php:162
+#: includes/conditions/class-wc-csp-condition-cart-item-count.php:176
 #: includes/conditions/class-wc-csp-condition-cart-item-quantity.php:161
-#: includes/conditions/class-wc-csp-condition-cart-subtotal.php:161
-#: includes/conditions/class-wc-csp-condition-cart-total.php:154
+#: includes/conditions/class-wc-csp-condition-cart-subtotal.php:166
+#: includes/conditions/class-wc-csp-condition-cart-total.php:159
 #: includes/conditions/class-wc-csp-condition-order-total.php:182
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:275
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:304
 #: includes/conditions/class-wc-csp-condition-package-total.php:185
 #: includes/conditions/class-wc-csp-condition-package-weight.php:203
 #: includes/conditions/class-wc-csp-condition-stock-quantity.php:168
 msgid ">"
 msgstr ">"
 
-#: includes/conditions/class-wc-csp-condition-cart-item-count.php:163
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:276
+#: includes/conditions/class-wc-csp-condition-cart-item-count.php:177
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:305
 #: includes/conditions/class-wc-csp-condition-package-weight.php:205
 msgid "="
 msgstr "="
@@ -1131,20 +1241,19 @@ msgstr "Akciós termék"
 
 #: includes/conditions/class-wc-csp-condition-cart-item-on-sale.php:51
 msgid "remove all on sale products from your cart"
-msgstr "távolíts el minden akciós terméket a kosaradból"
+msgstr "távolítsa el az összes akciós terméket a kosarából"
 
 #: includes/conditions/class-wc-csp-condition-cart-item-on-sale.php:53
 msgid "add some on sale products to your cart"
-msgstr "adj hozzá néhány akciós terméket a kosaradhoz"
+msgstr "adjon hozzá néhány akciós terméket a kosarához"
 
 #: includes/conditions/class-wc-csp-condition-cart-item-on-sale.php:55
 msgid "make sure that your cart doesn't contain only products on sale"
-msgstr ""
-"győződj meg róla, hogy a kosarad ne csak akciós termékeket tartalmazzon"
+msgstr "ügyeljen arra, hogy a kosara ne csak akciós termékeket tartalmazzon"
 
 #: includes/conditions/class-wc-csp-condition-cart-item-on-sale.php:57
 msgid "make sure that your cart contains only products on sale"
-msgstr "győződj meg róla, hogy a kosarad csak akciós termékeket tartalmazzon"
+msgstr "ügyeljen arra, hogy a kosara csak akciós termékeket tartalmazzon"
 
 #: includes/conditions/class-wc-csp-condition-cart-item-quantity.php:27
 msgid "Item Quantity"
@@ -1153,22 +1262,22 @@ msgstr "Tétel mennyisége"
 #: includes/conditions/class-wc-csp-condition-cart-item-quantity.php:53
 #, php-format
 msgid "decrease the quantity of &quot;%1$s&quot; below %2$s"
-msgstr "csökkentsd a(z) &quot;%1$s&quot; mennyiségét %2$s alá"
+msgstr "csökkentse a „%1$s” mennyiségét %2$s alá"
 
 #: includes/conditions/class-wc-csp-condition-cart-item-quantity.php:55
 #, php-format
 msgid "increase the quantity of &quot;%1$s&quot; to %2$s or higher"
-msgstr "növeld a(z) &quot;%1$s&quot; mennyiségét legalább %2$s-re"
+msgstr "növelje a „%1$s” mennyiségét úgy, hogy az legalább %2$s legyen"
 
 #: includes/conditions/class-wc-csp-condition-cart-item-quantity.php:57
 #, php-format
 msgid "decrease the quantity of &quot;%1$s&quot; to %2$s or lower"
-msgstr "csökkentsd a(z) &quot;%1$s&quot; mennyiségét %2$s értékre vagy ez alá"
+msgstr "csökkentse a „%1$s” mennyiségét %2$s értékre vagy ez alá"
 
 #: includes/conditions/class-wc-csp-condition-cart-item-quantity.php:59
 #, php-format
 msgid "increase the quantity of &quot;%1$s&quot; above %2$s"
-msgstr "növeld a(z) &quot;%1$s&quot; mennyiségét %2$s fölé"
+msgstr "növelje a „%1$s” mennyiségét %2$s fölé"
 
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:27
 #: includes/conditions/class-wc-csp-condition-package-recurring-item.php:27
@@ -1177,76 +1286,76 @@ msgstr "Előfizetéses termék"
 
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:59
 msgid "remove all subscription products from your cart"
-msgstr "távolíts el minden előfizetéses terméket a kosaradból"
+msgstr "távolítsa el az összes előfizetéses terméket a kosarából"
 
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:63
 #, php-format
 msgid "remove all %s subscription products from your cart"
-msgstr "távolíts el minden %s előfizetéses terméket a kosaradból"
+msgstr "távolítsa el az összes %s előfizetéses terméket a kosarából"
 
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:76
 msgid "add some subscription products to your cart"
-msgstr "adj hozzá néhány előfizetéses terméket a kosaradhoz"
+msgstr "adjon hozzá néhány előfizetéses terméket a kosarához"
 
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:78
 #, php-format
 msgid "add some %s subscription products to your cart"
-msgstr "adj hozzá néhány %s előfizetéses terméket a kosaradhoz"
+msgstr "adjon hozzá néhány %s előfizetéses terméket a kosarához"
 
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:83
 msgid "make sure that your cart doesn't contain only subscription products"
-msgstr ""
-"győződj meg róla, hogy a kosarad ne csak előfizetéses termékeket "
-"tartalmazzon"
+msgstr "ügyeljen arra, hogy a kosara ne csak előfizetéses termékeket tartalmazzon"
 
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:85
 #, php-format
 msgid "make sure that your cart doesn't contain only %s subscription products"
-msgstr ""
-"győződj meg róla, hogy a kosarad ne csak %s előfizetéses termékeket "
-"tartalmazzon"
+msgstr "ügyeljen arra, hogy a kosara ne csak %s előfizetéses termékeket tartalmazzon"
 
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:90
 msgid "make sure that your cart contains only subscription products"
-msgstr ""
-"győződj meg róla, hogy a kosarad csak előfizetéses termékeket tartalmazzon"
+msgstr "ügyeljen arra, hogy a kosara csak előfizetéses termékeket tartalmazzon"
 
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:92
 #, php-format
 msgid "make sure that your cart contains only %s subscription products"
-msgstr ""
-"győződj meg róla, hogy a kosarad csak %s előfizetéses termékeket "
-"tartalmazzon"
+msgstr "ügyeljen arra, hogy a kosara csak %s előfizetéses termékeket tartalmazzon"
 
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:119
-#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:264
-#: includes/conditions/class-wc-csp-condition-package-recurring-package.php:201
+#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:260
+#: includes/conditions/class-wc-csp-condition-package-recurring-package.php:197
 msgid "daily"
 msgstr "napi"
 
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:120
-#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:265
-#: includes/conditions/class-wc-csp-condition-package-recurring-package.php:202
+#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:261
+#: includes/conditions/class-wc-csp-condition-package-recurring-package.php:198
 msgid "weekly"
 msgstr "heti"
 
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:121
-#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:266
-#: includes/conditions/class-wc-csp-condition-package-recurring-package.php:203
+#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:262
+#: includes/conditions/class-wc-csp-condition-package-recurring-package.php:199
 msgid "monthly"
 msgstr "havi"
 
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:122
-#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:267
-#: includes/conditions/class-wc-csp-condition-package-recurring-package.php:204
+#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:263
+#: includes/conditions/class-wc-csp-condition-package-recurring-package.php:200
 msgid "yearly"
 msgstr "éves"
 
 #: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:367
-#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:316
-#: includes/conditions/class-wc-csp-condition-package-recurring-package.php:251
+#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:312
+#: includes/conditions/class-wc-csp-condition-package-recurring-package.php:247
 msgid "Select billing period&hellip;"
-msgstr "Válassz számlázási időszakot&hellip;"
+msgstr "Válasszon számlázási időszakot&hellip;"
+
+#: includes/conditions/class-wc-csp-condition-cart-recurring-item.php:376
+#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:321
+msgid ""
+"Matches the billing period, regardless of the billing interval. For example,"
+" weekly matches subscriptions billed every week, every 2 weeks, and so on."
+msgstr "A számlázási időszaknak felel meg, a számlázási gyakoriságtól függetlenül. Például a heti beállítás az egyhetente, kéthetente és így tovább számlázott előfizetésekre is illeszkedik."
 
 #: includes/conditions/class-wc-csp-condition-cart-shipping-class.php:27
 #: includes/conditions/class-wc-csp-condition-package-shipping-class.php:27
@@ -1257,24 +1366,23 @@ msgstr "Szállítási osztály"
 #: includes/conditions/class-wc-csp-condition-package-shipping-class.php:56
 #, php-format
 msgid "remove %s from your cart"
-msgstr "távolítsd el a(z) %s elemet a kosaradból"
+msgstr "távolítsa el a(z) %s tételt a kosarából"
 
 #: includes/conditions/class-wc-csp-condition-cart-shipping-class.php:56
 #: includes/conditions/class-wc-csp-condition-cart-shipping-class.php:58
 #: includes/conditions/class-wc-csp-condition-package-shipping-class.php:63
 msgid "add some qualifying products to your cart"
-msgstr "adj hozzá néhány megfelelő terméket a kosaradhoz"
+msgstr "adjon hozzá néhány megfelelő terméket a kosarához"
 
 #: includes/conditions/class-wc-csp-condition-cart-shipping-class.php:60
 #: includes/conditions/class-wc-csp-condition-package-shipping-class.php:70
 msgid "make sure that your cart contains only qualifying products"
-msgstr ""
-"győződj meg róla, hogy a kosarad csak megfelelő termékeket tartalmazzon"
+msgstr "ügyeljen arra, hogy a kosara csak megfelelő termékeket tartalmazzon"
 
-#: includes/conditions/class-wc-csp-condition-cart-shipping-class.php:259
-#: includes/conditions/class-wc-csp-condition-package-shipping-class.php:239
+#: includes/conditions/class-wc-csp-condition-cart-shipping-class.php:264
+#: includes/conditions/class-wc-csp-condition-package-shipping-class.php:244
 msgid "Select shipping classes&hellip;"
-msgstr "Válassz szállítási osztályokat&hellip;"
+msgstr "Válasszon szállítási osztályokat&hellip;"
 
 #: includes/conditions/class-wc-csp-condition-cart-subtotal.php:27
 msgid "Cart Subtotal"
@@ -1283,28 +1391,30 @@ msgstr "Kosár részösszeg"
 #: includes/conditions/class-wc-csp-condition-cart-subtotal.php:49
 #, php-format
 msgid "decrease your cart subtotal below %s"
-msgstr "csökkentsd a kosarad részösszegét %s alá"
+msgstr "csökkentse a kosara részösszegét %s alá"
 
 #: includes/conditions/class-wc-csp-condition-cart-subtotal.php:51
 #: includes/conditions/class-wc-csp-condition-cart-subtotal.php:55
 #, php-format
 msgid "increase your cart subtotal above %s"
-msgstr "növeld a kosarad részösszegét %s fölé"
+msgstr "növelje a kosara részösszegét %s fölé"
 
 #: includes/conditions/class-wc-csp-condition-cart-subtotal.php:53
 #, php-format
 msgid "decrease your cart subtotal to %s or lower"
-msgstr "csökkentsd a kosarad részösszegét %s értékre vagy ez alá"
+msgstr "csökkentse a kosara részösszegét %s értékre vagy ez alá"
 
-#: includes/conditions/class-wc-csp-condition-cart-subtotal.php:148
+#: includes/conditions/class-wc-csp-condition-cart-subtotal.php:153
 msgid " (incl. tax)"
 msgstr " (áfával)"
 
-#: includes/conditions/class-wc-csp-condition-cart-subtotal.php:150
+#: includes/conditions/class-wc-csp-condition-cart-subtotal.php:155
 msgid " (excl. tax)"
-msgstr " (adó nélkül)"
+msgstr " (áfa nélkül)"
 
-#: includes/conditions/class-wc-csp-condition-cart-subtotal.php:168
+#. translators: %s: 'including' or 'excluding', depending on the configured
+#. tax display mode.
+#: includes/conditions/class-wc-csp-condition-cart-subtotal.php:174
 #, php-format
 msgid ""
 "Calculated %s tax, for consistency with how WooCommerce is currently "
@@ -1328,8 +1438,8 @@ msgstr "Címke"
 msgctxt "products with tags"
 msgid "remove all products tagged with the %2$s tag from your cart"
 msgid_plural "remove all products tagged with the %2$s tags from your cart"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "távolítsa el a kosárból az összes, %2$s címkével ellátott terméket"
+msgstr[1] "távolítsa el a kosárból az összes, %2$s címkékkel ellátott terméket"
 
 #. translators: %1$s - products, %2$s - tags.
 #: includes/conditions/class-wc-csp-condition-cart-tag.php:92
@@ -1338,8 +1448,8 @@ msgstr[1] ""
 msgctxt "products with tags"
 msgid "remove %1$s from your cart"
 msgid_plural "remove %1$s from your cart"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "távolítsa el a kosarából a(z) %1$s terméket"
+msgstr[1] "távolítsa el a kosarából a(z) %1$s terméket"
 
 #. translators: %1$s - tags.
 #: includes/conditions/class-wc-csp-condition-cart-tag.php:96
@@ -1347,8 +1457,8 @@ msgstr[1] ""
 msgctxt "products with tags"
 msgid "add some products tagged with the %s tag to your cart"
 msgid_plural "add some products tagged with the %s tags to your cart"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "adjon hozzá néhány, %s címkével ellátott terméket a kosarához"
+msgstr[1] "adjon hozzá néhány, %s címkékkel ellátott terméket a kosarához"
 
 #. translators: %1$s - tags.
 #: includes/conditions/class-wc-csp-condition-cart-tag.php:99
@@ -1360,8 +1470,8 @@ msgid ""
 msgid_plural ""
 "make sure that your cart doesn't only contain products tagged with the %s "
 "tags"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Gondoskodjon arról, hogy a kosár ne csak a(z) %s címkével ellátott termékeket tartalmazza"
+msgstr[1] "Gondoskodjon arról, hogy a kosár ne csak a(z) %s címkékkel ellátott termékeket tartalmazza"
 
 #. translators: %1$s - tags.
 #: includes/conditions/class-wc-csp-condition-cart-tag.php:102
@@ -1370,8 +1480,8 @@ msgctxt "products with tags"
 msgid "make sure that your cart contains only products tagged with the %s tag"
 msgid_plural ""
 "make sure that your cart contains only products tagged with the %s tags"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Gondoskodjon arról, hogy a kosár csak a(z) %s címkével ellátott termékeket tartalmazza"
+msgstr[1] "Gondoskodjon arról, hogy a kosár csak a(z) %s címkékkel ellátott termékeket tartalmazza"
 
 #: includes/conditions/class-wc-csp-condition-cart-tag.php:321
 #: includes/conditions/class-wc-csp-condition-package-tag.php:352
@@ -1385,22 +1495,22 @@ msgstr "Kosár végösszeg"
 #: includes/conditions/class-wc-csp-condition-cart-total.php:49
 #, php-format
 msgid "decrease your cart total below %s"
-msgstr "csökkentsd a kosarad végösszegét %s alá"
+msgstr "Csökkentse a kosár összegét %s alá"
 
 #: includes/conditions/class-wc-csp-condition-cart-total.php:51
 #, php-format
 msgid "increase your cart total to %s or higher"
-msgstr "növeld a kosarad végösszegét %s vagy magasabbra"
+msgstr "Növelje a kosár összegét úgy, hogy az legalább a(z) %s legyen"
 
 #: includes/conditions/class-wc-csp-condition-cart-total.php:53
 #, php-format
 msgid "decrease your cart total to %s or lower"
-msgstr "csökkentsd a kosarad végösszegét %s vagy alacsonyabbra"
+msgstr "Csökkentse a kosár összegét úgy, hogy az legfeljebb %s legyen"
 
 #: includes/conditions/class-wc-csp-condition-cart-total.php:55
 #, php-format
 msgid "increase your cart total above %s"
-msgstr "növeld a kosarad végösszegét %s fölé"
+msgstr "Növelje a kosár összegét úgy, hogy az meghaladja a(z) %s értéket"
 
 #: includes/conditions/class-wc-csp-condition-coupon-code.php:27
 msgid "Coupon Code"
@@ -1408,30 +1518,29 @@ msgstr "Kuponkód"
 
 #: includes/conditions/class-wc-csp-condition-coupon-code.php:52
 msgid "remove all applied coupons"
-msgstr "távolítsd el az összes alkalmazott kupont"
+msgstr "Távolítsa el az összes alkalmazott kupont"
 
 #: includes/conditions/class-wc-csp-condition-coupon-code.php:60
 #, php-format
 msgid "remove coupons %s"
-msgstr "távolítsd el a(z) %s kuponokat"
+msgstr "Távolítsa el a(z) %s kuponokat"
 
 #: includes/conditions/class-wc-csp-condition-coupon-code.php:62
 #, php-format
 msgid "remove coupon %s"
-msgstr "távolítsd el a(z) %s kupont"
+msgstr "Távolítsa el a(z) %s kupont"
 
 #: includes/conditions/class-wc-csp-condition-coupon-code.php:67
 msgid "apply a qualifying coupon"
-msgstr "alkalmazz egy feltételeknek megfelelő kupont"
+msgstr "Alkalmazzon egy feltételeknek megfelelő kupont"
 
 #: includes/conditions/class-wc-csp-condition-coupon-code.php:71
 msgid "remove all free shipping coupons from your cart"
-msgstr ""
-"távolítsd el a kosaradból az összes, ingyenes szállítást biztosító kupont"
+msgstr "Távolítsa el a kosarából az összes ingyenes szállítást biztosító kupont"
 
 #: includes/conditions/class-wc-csp-condition-coupon-code.php:75
 msgid "apply a free shipping coupon"
-msgstr "alkalmazz egy ingyenes szállítást biztosító kupont"
+msgstr "Alkalmazzon egy ingyenes szállítást biztosító kupont"
 
 #: includes/conditions/class-wc-csp-condition-coupon-code.php:265
 #: includes/conditions/class-wc-csp-condition-gift-cards.php:121
@@ -1445,23 +1554,21 @@ msgstr "nincs felhasználva"
 
 #: includes/conditions/class-wc-csp-condition-coupon-code.php:267
 msgid "enables free shipping"
-msgstr "ingyenes szállítást engedélyez"
+msgstr "ingyenes szállítást tesz lehetővé"
 
 #: includes/conditions/class-wc-csp-condition-coupon-code.php:268
 msgid "does not enable free shipping"
-msgstr "nem engedélyez ingyenes szállítást"
+msgstr "nem tesz lehetővé ingyenes szállítást"
 
 #: includes/conditions/class-wc-csp-condition-coupon-code.php:273
 msgid "Enter coupon codes, separated by comma (,)."
-msgstr "Add meg a kuponkódokat, vesszővel (,) elválasztva."
+msgstr "Adja meg a kuponkódokat, vesszővel (,) elválasztva."
 
 #: includes/conditions/class-wc-csp-condition-coupon-code.php:274
 msgid ""
 "Enter coupon codes, separated by comma (,). You may also use wildcards, such"
 " as 'discount*'."
-msgstr ""
-"Add meg a kuponkódokat, vesszővel (,) elválasztva. Helyettesítő karaktereket"
-" is használhatsz, például: 'discount*'."
+msgstr "Adja meg a kuponkódokat, vesszővel (,) elválasztva. Helyettesítő karaktereket is használhat, például: „discount*”."
 
 #: includes/conditions/class-wc-csp-condition-currency.php:27
 msgid "Currency"
@@ -1470,17 +1577,17 @@ msgstr "Pénznem"
 #: includes/conditions/class-wc-csp-condition-currency.php:60
 #, php-format
 msgid "choose a currency other than %s"
-msgstr "válassz %s-től eltérő pénznemet"
+msgstr "Válasszon a(z) %s helyett másik pénznemet"
 
 #: includes/conditions/class-wc-csp-condition-currency.php:62
 #: includes/conditions/class-wc-csp-condition-currency.php:71
 msgid "choose a different currency"
-msgstr "válassz más pénznemet"
+msgstr "Válasszon másik pénznemet"
 
 #: includes/conditions/class-wc-csp-condition-currency.php:69
 #, php-format
 msgid "checkout using %s"
-msgstr "fizess %s pénznemben"
+msgstr "Fizessen %s pénznemben"
 
 #: includes/conditions/class-wc-csp-condition-currency.php:174
 msgid "Select currency&hellip;"
@@ -1488,12 +1595,12 @@ msgstr "Pénznem kiválasztása&hellip;"
 
 #: includes/conditions/class-wc-csp-condition-customer-role.php:27
 msgid "Customer Role"
-msgstr "Felhasználói szerepkör"
+msgstr "Vásárlói szerepkör"
 
 #: includes/conditions/class-wc-csp-condition-customer-role.php:49
 #: includes/conditions/class-wc-csp-condition-customer-role.php:51
 msgid "check out using an account with the required permissions"
-msgstr "fizess ki egy, a szükséges jogosultságokkal rendelkező fiókkal"
+msgstr "Adja le a rendelést olyan fiókkal, amely a szükséges jogosultságokkal rendelkezik"
 
 #: includes/conditions/class-wc-csp-condition-customer-role.php:144
 msgid "Guest"
@@ -1526,25 +1633,23 @@ msgstr "új"
 #: includes/conditions/class-wc-csp-condition-customer.php:71
 #: includes/conditions/class-wc-csp-condition-customer.php:73
 msgid "use an authorized account"
-msgstr "használj jogosult fiókot"
+msgstr "Használjon jogosult fiókot"
 
 #: includes/conditions/class-wc-csp-condition-customer.php:75
 msgid "checkout with an account that you have previously placed orders with"
-msgstr "fizess ki olyan fiókkal, amellyel korábban már adtál le rendeléseket"
+msgstr "Adja le a rendelést olyan fiókkal, amellyel korábban már adott le rendeléseket"
 
 #: includes/conditions/class-wc-csp-condition-customer.php:77
 msgid "checkout with a new customer account"
-msgstr "fizess ki egy új vásárlói fiókkal"
+msgstr "Adja le a rendelést egy új vásárlói fiókkal"
 
-#: includes/conditions/class-wc-csp-condition-customer.php:312
+#: includes/conditions/class-wc-csp-condition-customer.php:343
 msgid ""
 "You can only use an asterisk (*) to match multiple addresses before the "
 "<code>@</code> e-mail separator."
-msgstr ""
-"Csillagot (*) csak a <code>@</code> e-mail elválasztó előtt használhatsz "
-"több cím illesztésére."
+msgstr "Több cím illesztéséhez csak a <code>@</code> e-mail-elválasztó előtt használhat csillagot (*)"
 
-#: includes/conditions/class-wc-csp-condition-customer.php:320
+#: includes/conditions/class-wc-csp-condition-customer.php:351
 #, php-format
 msgid ""
 "Rule <strong>#%1$s</strong>: Invalid e-mail found (%2$s) and removed from "
@@ -1553,7 +1658,7 @@ msgstr ""
 "Szabály <strong>#%1$s</strong>: Érvénytelen e-mail található (%2$s), "
 "eltávolítva a <strong>Vásárló</strong> feltételből. %3$s"
 
-#: includes/conditions/class-wc-csp-condition-customer.php:329
+#: includes/conditions/class-wc-csp-condition-customer.php:360
 #, php-format
 msgid ""
 "Rule <strong>#%1$s</strong>: Invalid e-mails found (%2$s) and removed from "
@@ -1562,96 +1667,87 @@ msgstr ""
 "Szabály <strong>#%1$s</strong>: Érvénytelen e-mailek találhatók (%2$s), "
 "eltávolítva a <strong>Vásárló</strong> feltételből. %3$s"
 
-#: includes/conditions/class-wc-csp-condition-customer.php:415
+#: includes/conditions/class-wc-csp-condition-customer.php:447
 msgid ""
 "Separate e-mail addresses with commas. You can match multiple addresses by "
 "using an asterisk (*) before the <code>@</code> e-mail separator. For "
 "example, <code>*@woocommerce.com</code> will match all woocommerce.com "
 "addresses."
-msgstr ""
-"Az e-mail címeket vesszővel válaszd el. Több cím illesztéséhez csillagot (*)"
-" használhatsz a <code>@</code> e-mail elválasztó előtt. Például a "
-"<code>*@woocommerce.com</code> minden woocommerce.com címet illeszt."
-
-#: includes/conditions/class-wc-csp-condition-date-time.php:29
-msgid "Date/Time"
-msgstr "Dátum/Idő"
+msgstr "Az e-mail-címeket vesszővel válassza el. Több cím illesztéséhez csillagot (*) használhat a <code>@</code> e-mail-elválasztó előtt. Például a <code>*@woocommerce.com</code> minden woocommerce.com-os címre illeszkedik."
 
 #: includes/conditions/class-wc-csp-condition-date-time.php:54
+msgid "Date/Time"
+msgstr "Dátum/idő"
+
+#: includes/conditions/class-wc-csp-condition-date-time.php:79
 msgid "year is"
 msgstr "év megegyezik"
 
-#: includes/conditions/class-wc-csp-condition-date-time.php:60
+#: includes/conditions/class-wc-csp-condition-date-time.php:85
 msgid "year is not"
 msgstr "év nem egyezik"
 
-#: includes/conditions/class-wc-csp-condition-date-time.php:66
+#: includes/conditions/class-wc-csp-condition-date-time.php:91
 msgid "month is"
 msgstr "hónap megegyezik"
 
-#: includes/conditions/class-wc-csp-condition-date-time.php:71
+#: includes/conditions/class-wc-csp-condition-date-time.php:96
 msgid "month is not"
 msgstr "hónap nem egyezik"
 
-#: includes/conditions/class-wc-csp-condition-date-time.php:76
+#: includes/conditions/class-wc-csp-condition-date-time.php:101
 msgid "day in month is"
-msgstr "nap a hónapban megegyezik"
+msgstr "A hónap napja megegyezik"
 
-#: includes/conditions/class-wc-csp-condition-date-time.php:82
+#: includes/conditions/class-wc-csp-condition-date-time.php:107
 msgid "day in month is not"
-msgstr "nap a hónapban nem egyezik"
+msgstr "A hónap napja nem egyezik"
 
-#: includes/conditions/class-wc-csp-condition-date-time.php:88
+#: includes/conditions/class-wc-csp-condition-date-time.php:113
 msgid "day in week is"
 msgstr "a hét napja megegyezik"
 
-#: includes/conditions/class-wc-csp-condition-date-time.php:93
+#: includes/conditions/class-wc-csp-condition-date-time.php:118
 msgid "day in week is not"
 msgstr "a hét napja nem egyezik"
 
-#: includes/conditions/class-wc-csp-condition-date-time.php:98
+#: includes/conditions/class-wc-csp-condition-date-time.php:123
 msgid "hour is"
 msgstr "óra megegyezik"
 
-#: includes/conditions/class-wc-csp-condition-date-time.php:104
+#: includes/conditions/class-wc-csp-condition-date-time.php:129
 msgid "hour is not"
 msgstr "óra nem egyezik"
 
-#: includes/conditions/class-wc-csp-condition-date-time.php:181
+#: includes/conditions/class-wc-csp-condition-date-time.php:229
 msgid "complete your order at a different time/date"
-msgstr "fejezd be a rendelést más időpontban/dátumon"
+msgstr "Fejezze be a rendelését más időpontban/dátumon"
 
-#: includes/conditions/class-wc-csp-condition-date-time.php:271
+#: includes/conditions/class-wc-csp-condition-date-time.php:323
 #, php-format
 msgid ""
 "Rule <strong>#%1$s</strong>: <strong>%2$s</strong> modifier with condition "
 "<strong>%3$s: %4$s</strong> was invalid and removed. Please choose a value "
 "between %5$s."
-msgstr ""
-"Szabály <strong>#%1$s</strong>: A(z) <strong>%2$s</strong> módosító a "
-"következő feltétellel: <strong>%3$s: %4$s</strong> érvénytelen volt és "
-"eltávolításra került. Kérjük, válassz értéket %5$s között."
+msgstr "Szabály <strong>#%1$s</strong>: A(z) <strong>%2$s</strong> módosító a(z) <strong>%3$s: %4$s</strong> feltétellel érvénytelen volt, ezért eltávolítottuk. Kérjük, válasszon értéket %5$s között."
 
-#: includes/conditions/class-wc-csp-condition-date-time.php:361
+#: includes/conditions/class-wc-csp-condition-date-time.php:414
 #, php-format
 msgid "Enter values from %1$s to %2$s, separated by comma&hellip;"
-msgstr "Adj meg értékeket %1$s és %2$s között, vesszővel elválasztva&hellip;"
+msgstr "Adjon meg értékeket %1$s és %2$s között, vesszővel elválasztva&hellip;"
 
-#: includes/conditions/class-wc-csp-condition-date-time.php:367
+#: includes/conditions/class-wc-csp-condition-date-time.php:420
 #, php-format
 msgid ""
 "Enter values from <code>%1$s</code> to <code>%2$s</code>, separated by "
 "comma. Supports dashes for ranges. Example: <code>%3$s</code>."
-msgstr ""
-"Adj meg értékeket <code>%1$s</code> és <code>%2$s</code> között, vesszővel "
-"elválasztva. Tartományokhoz kötőjelet is használhatsz. Példa: "
-"<code>%3$s</code>."
+msgstr "Adjon meg értékeket <code>%1$s</code> és <code>%2$s</code> között, vesszővel elválasztva. Tartományokhoz kötőjelet is használhat. Példa: <code>%3$s</code>."
 
-#: includes/conditions/class-wc-csp-condition-date-time.php:399
+#: includes/conditions/class-wc-csp-condition-date-time.php:457
 msgid "Select months&hellip;"
 msgstr "Hónapok kiválasztása&hellip;"
 
-#: includes/conditions/class-wc-csp-condition-date-time.php:399
+#: includes/conditions/class-wc-csp-condition-date-time.php:457
 msgid "Select days&hellip;"
 msgstr "Napok kiválasztása&hellip;"
 
@@ -1661,31 +1757,27 @@ msgstr "Ajándékkártya-termék"
 
 #: includes/conditions/class-wc-csp-condition-gift-card-product.php:51
 msgid "remove all gift card products from your cart"
-msgstr "távolítsd el a kosaradból az összes ajándékkártya-terméket"
+msgstr "távolítsa el a kosarából az összes ajándékkártya-terméket"
 
 #: includes/conditions/class-wc-csp-condition-gift-card-product.php:53
 msgid "add some gift card products to your cart"
-msgstr "adj a kosaradhoz néhány ajándékkártya-terméket"
+msgstr "adjon hozzá néhány ajándékkártya-terméket a kosarához"
 
 #: includes/conditions/class-wc-csp-condition-gift-card-product.php:55
 msgid "make sure that your cart doesn't contain only gift card products"
-msgstr ""
-"győződj meg róla, hogy a kosarad nem kizárólag ajándékkártya-termékeket "
-"tartalmaz"
+msgstr "győződjön meg róla, hogy a kosara nem kizárólag ajándékkártya-termékeket tartalmaz"
 
 #: includes/conditions/class-wc-csp-condition-gift-card-product.php:57
 msgid "make sure that your cart contains only gift card products"
-msgstr ""
-"győződj meg róla, hogy a kosarad kizárólag ajándékkártya-termékeket "
-"tartalmaz"
+msgstr "győződjön meg róla, hogy a kosara kizárólag ajándékkártya-termékeket tartalmaz"
 
 #: includes/conditions/class-wc-csp-condition-gift-cards.php:50
 msgid "remove all gift cards from your cart"
-msgstr "távolítsd el a kosaradból az összes ajándékkártyát"
+msgstr "távolítsa el a kosarából az összes ajándékkártyát"
 
 #: includes/conditions/class-wc-csp-condition-gift-cards.php:52
 msgid "add some gift cards products to your cart"
-msgstr "adj a kosaradhoz néhány ajándékkártya-terméket"
+msgstr "adjon a kosarához néhány ajándékkártya-terméket"
 
 #: includes/conditions/class-wc-csp-condition-membership-plan.php:27
 msgid "Membership Plan"
@@ -1693,14 +1785,11 @@ msgstr "Tagsági csomag"
 
 #: includes/conditions/class-wc-csp-condition-membership-plan.php:50
 msgid "make sure that your active membership plan(s) qualify"
-msgstr ""
-"győződj meg róla, hogy az aktív tagsági csomagjaid megfelelnek a "
-"feltételeknek"
+msgstr "győződjön meg róla, hogy az aktív tagsági csomagjai megfelelnek a feltételeknek"
 
 #: includes/conditions/class-wc-csp-condition-membership-plan.php:52
 msgid "make sure you have purchased a qualifying membership plan"
-msgstr ""
-"győződj meg róla, hogy vásároltál feltételeknek megfelelő tagsági csomagot"
+msgstr "győződjön meg róla, hogy vásárolt egy feltételeknek megfelelő tagsági csomagot"
 
 #: includes/conditions/class-wc-csp-condition-membership-plan.php:177
 msgid "active exists"
@@ -1708,11 +1797,11 @@ msgstr "van aktív"
 
 #: includes/conditions/class-wc-csp-condition-membership-plan.php:178
 msgid "all inactive"
-msgstr "mind inaktív"
+msgstr "mind ki van kapcsolva"
 
 #: includes/conditions/class-wc-csp-condition-membership-plan.php:179
 msgid "inactive exists"
-msgstr "van inaktív"
+msgstr "van olyan, amelyik ki van kapcsolva"
 
 #: includes/conditions/class-wc-csp-condition-membership-plan.php:180
 msgid "all active"
@@ -1728,7 +1817,7 @@ msgstr "Rendelés állapota"
 
 #: includes/conditions/class-wc-csp-condition-order-status.php:61
 msgid "please contact the site administrator"
-msgstr "kérjük, lépj kapcsolatba a webhely rendszergazdájával"
+msgstr "kérjük, vegye fel a kapcsolatot a webhely adminisztrátorával"
 
 #: includes/conditions/class-wc-csp-condition-order-status.php:179
 msgid "in"
@@ -1756,71 +1845,70 @@ msgstr "Rendelés végösszeg"
 #: includes/conditions/class-wc-csp-condition-order-total.php:49
 #, php-format
 msgid "decrease your order total below %s"
-msgstr "csökkentsd a rendelésed végösszegét %s alá"
+msgstr "csökkentse a rendelés összegét %s alá"
 
 #: includes/conditions/class-wc-csp-condition-order-total.php:51
 #, php-format
 msgid "increase your order total to %s or higher"
-msgstr "növeld a rendelésed végösszegét %s vagy magasabbra"
+msgstr "növelje a rendelés összegét legalább %s értékre"
 
 #: includes/conditions/class-wc-csp-condition-order-total.php:53
 #, php-format
 msgid "decrease your order total to %s or lower"
-msgstr "csökkentsd a rendelésed végösszegét %s vagy alacsonyabbra"
+msgstr "csökkentse a rendelés összegét legfeljebb %s értékre"
 
 #: includes/conditions/class-wc-csp-condition-order-total.php:55
 #, php-format
 msgid "increase your order total above %s"
-msgstr "növeld a rendelésed végösszegét %s fölé"
+msgstr "növelje a rendelés összegét %s fölé"
 
-#: includes/conditions/class-wc-csp-condition-package-attribute.php:359
+#: includes/conditions/class-wc-csp-condition-package-attribute.php:370
 #: includes/conditions/class-wc-csp-condition-package-backorder.php:167
 #: includes/conditions/class-wc-csp-condition-package-brand.php:319
-#: includes/conditions/class-wc-csp-condition-package-category.php:368
-#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:308
-#: includes/conditions/class-wc-csp-condition-package-shipping-class.php:230
+#: includes/conditions/class-wc-csp-condition-package-category.php:374
+#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:304
+#: includes/conditions/class-wc-csp-condition-package-shipping-class.php:235
 #: includes/conditions/class-wc-csp-condition-package-tag.php:338
 msgid "in package"
 msgstr "a csomagban"
 
-#: includes/conditions/class-wc-csp-condition-package-attribute.php:361
+#: includes/conditions/class-wc-csp-condition-package-attribute.php:372
 #: includes/conditions/class-wc-csp-condition-package-backorder.php:168
 #: includes/conditions/class-wc-csp-condition-package-brand.php:321
-#: includes/conditions/class-wc-csp-condition-package-category.php:369
-#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:309
-#: includes/conditions/class-wc-csp-condition-package-shipping-class.php:231
+#: includes/conditions/class-wc-csp-condition-package-category.php:375
+#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:305
+#: includes/conditions/class-wc-csp-condition-package-shipping-class.php:236
 #: includes/conditions/class-wc-csp-condition-package-tag.php:340
 msgid "not in package"
 msgstr "nincs a csomagban"
 
-#: includes/conditions/class-wc-csp-condition-package-attribute.php:363
+#: includes/conditions/class-wc-csp-condition-package-attribute.php:374
 #: includes/conditions/class-wc-csp-condition-package-backorder.php:169
-#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:310
+#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:306
 msgid "all package items"
 msgstr "a csomag összes tétele"
 
-#: includes/conditions/class-wc-csp-condition-package-attribute.php:365
+#: includes/conditions/class-wc-csp-condition-package-attribute.php:376
 #: includes/conditions/class-wc-csp-condition-package-backorder.php:170
-#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:311
+#: includes/conditions/class-wc-csp-condition-package-recurring-item.php:307
 msgid "not all package items"
-msgstr "nem minden csomagtétel"
+msgstr "nem a csomag összes tétele"
 
 #: includes/conditions/class-wc-csp-condition-package-backorder.php:52
 msgid "remove all backordered products from it"
-msgstr "távolíts el belőle minden utánrendeléses terméket"
+msgstr "távolítsa el belőle az összes utánrendeléses terméket"
 
 #: includes/conditions/class-wc-csp-condition-package-backorder.php:59
 msgid "make sure it contains some backordered products"
-msgstr "győződj meg róla, hogy tartalmaz néhány utánrendeléses terméket"
+msgstr "győződjön meg róla, hogy tartalmaz néhány utánrendeléses terméket"
 
 #: includes/conditions/class-wc-csp-condition-package-backorder.php:66
 msgid "make sure it does not contain only products on backorder"
-msgstr ""
-"győződj meg róla, hogy nem kizárólag utánrendeléses termékeket tartalmaz"
+msgstr "győződjön meg róla, hogy nem kizárólag utánrendeléses termékeket tartalmaz"
 
 #: includes/conditions/class-wc-csp-condition-package-backorder.php:73
 msgid "make sure it contains only products on backorder"
-msgstr "győződj meg róla, hogy kizárólag utánrendeléses termékeket tartalmaz"
+msgstr "győződjön meg róla, hogy kizárólag utánrendeléses termékeket tartalmaz"
 
 #. translators: %1$s - products, %2$s - brands.
 #: includes/conditions/class-wc-csp-condition-package-brand.php:90
@@ -1828,8 +1916,8 @@ msgstr "győződj meg róla, hogy kizárólag utánrendeléses termékeket tarta
 msgctxt "products with brands"
 msgid "remove all products with the %2$s brands from your cart"
 msgid_plural "make sure it contains no products with the %2$s brands"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Távolítsa el a kosárból az összes, a(z) %2$s márkákhoz tartozó terméket"
+msgstr[1] "Gondoskodjon arról, hogy ne legyenek benne a(z) %2$s márkákhoz tartozó termékek"
 
 #. translators: %1$s - products, %2$s - brand.
 #: includes/conditions/class-wc-csp-condition-package-brand.php:93
@@ -1837,8 +1925,8 @@ msgstr[1] ""
 msgctxt "products with brand"
 msgid "remove all products with the %2$s brand from your cart"
 msgid_plural "make sure it contains no products with the %2$s brand"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Távolítsa el a kosárból az összes, a(z) %2$s márkához tartozó terméket"
+msgstr[1] "Gondoskodjon arról, hogy ne legyen benne a(z) %2$s márkához tartozó termék"
 
 #. translators: %1$s - products, %2$s - brand.
 #: includes/conditions/class-wc-csp-condition-package-brand.php:100
@@ -1846,8 +1934,8 @@ msgstr[1] ""
 msgctxt "products with brand"
 msgid "remove %1$s from your cart"
 msgid_plural "remove %1$s from it"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Távolítsa el a(z) %1$s terméket a kosárból"
+msgstr[1] "Távolítsa el a(z) %1$s terméket belőle"
 
 #. translators: %1$s - brands.
 #: includes/conditions/class-wc-csp-condition-package-brand.php:105
@@ -1855,8 +1943,8 @@ msgstr[1] ""
 msgctxt "products with brands"
 msgid "add some products with the %s brands to your cart"
 msgid_plural "make sure it contains some products with the %s brands"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Adjon hozzá néhány, a(z) %s márkákhoz tartozó terméket a kosárhoz"
+msgstr[1] "Gondoskodjon arról, hogy legyen benne néhány, a(z) %s márkákhoz tartozó termék"
 
 #. translators: %1$s - brand.
 #: includes/conditions/class-wc-csp-condition-package-brand.php:108
@@ -1864,8 +1952,8 @@ msgstr[1] ""
 msgctxt "products with brand"
 msgid "add some products with the %s brand to your cart"
 msgid_plural "make sure it contains some products with the %s brand"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Adjon hozzá néhány, a(z) %s márkához tartozó terméket a kosárhoz"
+msgstr[1] "Gondoskodjon arról, hogy legyen benne néhány, a(z) %s márkához tartozó termék"
 
 #. translators: %1$s - brands.
 #: includes/conditions/class-wc-csp-condition-package-brand.php:116
@@ -1874,8 +1962,8 @@ msgctxt "products with brand"
 msgid ""
 "make sure that your cart doesn't only contain products with the %s brand"
 msgid_plural "make sure it doesn't only contain products with the %s brand"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Gondoskodjon arról, hogy a kosár ne csak a(z) %s márkához tartozó termékeket tartalmazza"
+msgstr[1] "Gondoskodjon arról, hogy ne csak a(z) %s márkához tartozó termékeket tartalmazza"
 
 #. translators: %1$s - brands.
 #: includes/conditions/class-wc-csp-condition-package-brand.php:121
@@ -1883,8 +1971,8 @@ msgstr[1] ""
 msgctxt "products with brands"
 msgid "make sure that your cart contains only products with the %s brands"
 msgid_plural "make sure it contains only products with the %s brands"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Gondoskodjon arról, hogy a kosár csak a(z) %s márkákhoz tartozó termékeket tartalmazza"
+msgstr[1] "Gondoskodjon arról, hogy csak a(z) %s márkákhoz tartozó termékeket tartalmazza"
 
 #. translators: %1$s - brands.
 #: includes/conditions/class-wc-csp-condition-package-brand.php:124
@@ -1892,36 +1980,32 @@ msgstr[1] ""
 msgctxt "products with brand"
 msgid "make sure that your cart contains only products with the %s brand"
 msgid_plural "make sure it contains only products with the %s brand"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Gondoskodjon arról, hogy a kosár csak a(z) %s márkához tartozó termékeket tartalmazza"
+msgstr[1] "Gondoskodjon arról, hogy csak a(z) %s márkához tartozó terméket tartalmazza"
 
 #: includes/conditions/class-wc-csp-condition-package-brand.php:323
-#: includes/conditions/class-wc-csp-condition-package-category.php:370
-#: includes/conditions/class-wc-csp-condition-package-shipping-class.php:232
+#: includes/conditions/class-wc-csp-condition-package-category.php:376
+#: includes/conditions/class-wc-csp-condition-package-shipping-class.php:237
 #: includes/conditions/class-wc-csp-condition-package-tag.php:342
 msgid "all items in package"
-msgstr "minden tétel a csomagban"
+msgstr "a csomag összes tétele"
 
 #: includes/conditions/class-wc-csp-condition-package-brand.php:325
-#: includes/conditions/class-wc-csp-condition-package-category.php:371
-#: includes/conditions/class-wc-csp-condition-package-shipping-class.php:233
+#: includes/conditions/class-wc-csp-condition-package-category.php:377
+#: includes/conditions/class-wc-csp-condition-package-shipping-class.php:238
 #: includes/conditions/class-wc-csp-condition-package-tag.php:344
 msgid "not all items in package"
-msgstr "nem minden tétel a csomagban"
+msgstr "nem a csomag összes tétele"
 
 #: includes/conditions/class-wc-csp-condition-package-category.php:88
 #, php-format
 msgid "make sure it contains no products from the %2$s categories"
-msgstr ""
-"győződjön meg róla, hogy nem tartalmaz a(z) %2$s kategóriákból származó "
-"termékeket"
+msgstr "győződjön meg róla, hogy nem tartalmaz a(z) %2$s kategóriákba tartozó termékeket"
 
 #: includes/conditions/class-wc-csp-condition-package-category.php:94
 #, php-format
 msgid "make sure it contains no products from the %2$s category"
-msgstr ""
-"győződjön meg róla, hogy nem tartalmaz a(z) %2$s kategóriából származó "
-"termékeket"
+msgstr "győződjön meg róla, hogy nem tartalmaz a(z) %2$s kategóriába tartozó termékeket"
 
 #: includes/conditions/class-wc-csp-condition-package-category.php:101
 #, php-format
@@ -1979,68 +2063,65 @@ msgstr ""
 msgid "Package Item Count"
 msgstr "Csomag tételszáma"
 
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:54
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:59
 #, php-format
 msgid "make sure that there are no shipping packages with more than %s items"
 msgstr ""
 "győződjön meg róla, hogy nincs %s darabnál több tételt tartalmazó szállítási"
 " csomag"
 
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:56
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:61
 #, php-format
 msgid "make sure that there are no more than %s items in it"
 msgstr "győződjön meg róla, hogy nincs benne %s tételnél több"
 
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:66
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:78
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:71
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:83
 #, php-format
 msgid "make sure there are at least %s items in every shipping package"
 msgstr ""
 "győződjön meg róla, hogy minden szállítási csomagban legalább %s tétel van"
 
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:68
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:73
 #, php-format
 msgid "make sure it contains at least %s items"
 msgstr "győződjön meg róla, hogy legalább %s tételt tartalmaz"
 
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:80
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:110
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:85
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:115
 #, php-format
 msgid "make sure it contains more than %s items"
 msgstr "győződjön meg róla, hogy %s tételnél többet tartalmaz"
 
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:90
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:95
 #, php-format
 msgid "make sure that there are less than %s items in every shipping package"
 msgstr ""
 "győződjön meg róla, hogy minden szállítási csomagban kevesebb mint %s tétel "
 "van"
 
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:92
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:97
 #, php-format
 msgid "make sure it contains less than %s items"
 msgstr "győződjön meg róla, hogy kevesebb mint %s tételt tartalmaz"
 
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:104
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:109
 #, php-format
 msgid "make sure that there are more than %s items in every shipping package"
 msgstr ""
 "győződjön meg róla, hogy minden szállítási csomagban több mint %s tétel van"
 
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:106
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:111
 #, php-format
 msgid ""
 "make sure that there are either more or fewer than %s items in every "
 "shipping package"
-msgstr ""
-"győződjön meg róla, hogy minden szállítási csomagban a tételek száma vagy "
-"több, vagy kevesebb mint %s"
+msgstr "győződjön meg róla, hogy minden szállítási csomagban a tételek száma nem egyenlő %s értékével"
 
-#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:112
+#: includes/conditions/class-wc-csp-condition-package-item-quantity.php:117
 #, php-format
 msgid "make sure it contains either more or fewer than %s items"
-msgstr ""
-"győződjön meg róla, hogy vagy több, vagy kevesebb mint %s tételt tartalmaz"
+msgstr "győződjön meg róla, hogy a benne lévő tételek száma nem egyenlő %s értékével"
 
 #: includes/conditions/class-wc-csp-condition-package-recurring-item.php:47
 #: includes/conditions/class-wc-csp-condition-package-recurring-package.php:47
@@ -2135,8 +2216,8 @@ msgstr "győződjön meg róla, hogy kizárólag megfelelő termékeket tartalma
 msgctxt "products with tags"
 msgid "remove all products with the %2$s tags from your cart"
 msgid_plural "make sure it contains no products with the %2$s tags"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Távolítsa el a kosárból az összes, a(z) %2$s címkékkel ellátott terméket"
+msgstr[1] "Gondoskodjon arról, hogy ne legyenek benne a(z) %2$s címkékkel ellátott termékek"
 
 #. translators: %1$s - products, %2$s - tag.
 #: includes/conditions/class-wc-csp-condition-package-tag.php:93
@@ -2144,8 +2225,8 @@ msgstr[1] ""
 msgctxt "products with tag"
 msgid "remove all products with the %2$s tag from your cart"
 msgid_plural "make sure it contains no products with the %2$s tag"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Távolítsa el a kosárból az összes, a(z) %2$s címkével ellátott terméket"
+msgstr[1] "Gondoskodjon arról, hogy ne legyen benne a(z) %2$s címkével ellátott termék"
 
 #. translators: %1$s - products, %2$s - tag.
 #: includes/conditions/class-wc-csp-condition-package-tag.php:100
@@ -2153,8 +2234,8 @@ msgstr[1] ""
 msgctxt "products with tag"
 msgid "remove %1$s from your cart"
 msgid_plural "remove %1$s from it"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Távolítsa el a(z) %1$s terméket a kosárból"
+msgstr[1] "Távolítsa el a(z) %1$s terméket belőle"
 
 #. translators: %1$s - tags.
 #: includes/conditions/class-wc-csp-condition-package-tag.php:105
@@ -2162,8 +2243,8 @@ msgstr[1] ""
 msgctxt "products with tags"
 msgid "add some products with the %s tags to your cart"
 msgid_plural "make sure it contains some products with the %s tags"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Adjon hozzá néhány, a(z) %s címkékkel ellátott terméket a kosárhoz"
+msgstr[1] "Gondoskodjon arról, hogy legyen benne néhány, a(z) %s címkékkel ellátott termék"
 
 #. translators: %1$s - tag.
 #: includes/conditions/class-wc-csp-condition-package-tag.php:108
@@ -2171,8 +2252,8 @@ msgstr[1] ""
 msgctxt "products with tag"
 msgid "add some products with the %s tag to your cart"
 msgid_plural "make sure it contains some products with the %s tag"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Adjon hozzá néhány, a(z) %s címkével ellátott terméket a kosárhoz"
+msgstr[1] "Gondoskodjon arról, hogy legyen benne néhány, a(z) %s címkével ellátott termék"
 
 #. translators: %1$s - tags.
 #: includes/conditions/class-wc-csp-condition-package-tag.php:113
@@ -2180,8 +2261,8 @@ msgstr[1] ""
 msgctxt "products with tags"
 msgid "make sure that your cart doesn't only contain products with the %s tag"
 msgid_plural "make sure it doesn't only contain products with the %s tag"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Gondoskodjon arról, hogy a kosár ne csak a(z) %s címkével ellátott termékeket tartalmazza"
+msgstr[1] "Gondoskodjon arról, hogy ne csak a(z) %s címkével ellátott termékeket tartalmazza"
 
 #. translators: %1$s - tags.
 #: includes/conditions/class-wc-csp-condition-package-tag.php:116
@@ -2189,8 +2270,8 @@ msgstr[1] ""
 msgctxt "products with tag"
 msgid "make sure that your cart doesn't only contain products with the %s tag"
 msgid_plural "make sure it doesn't only contain products with the %s tag"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Gondoskodjon arról, hogy a kosár ne csak a(z) %s címkével ellátott termékeket tartalmazza"
+msgstr[1] "Gondoskodjon arról, hogy ne csak a(z) %s címkével ellátott termékeket tartalmazza"
 
 #. translators: %1$s - tags.
 #: includes/conditions/class-wc-csp-condition-package-tag.php:121
@@ -2198,8 +2279,8 @@ msgstr[1] ""
 msgctxt "products with tags"
 msgid "make sure that your cart contains only products with the %s tags"
 msgid_plural "make sure it contains only products with the %s tags"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Gondoskodjon arról, hogy a kosár csak a(z) %s címkékkel ellátott termékeket tartalmazza"
+msgstr[1] "Gondoskodjon arról, hogy csak a(z) %s címkékkel ellátott termékeket tartalmazza"
 
 #. translators: %1$s - tags.
 #: includes/conditions/class-wc-csp-condition-package-tag.php:124
@@ -2207,8 +2288,8 @@ msgstr[1] ""
 msgctxt "products with tag"
 msgid "make sure that your cart contains only products with the %s tag"
 msgid_plural "make sure it contains only products with the %s tag"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Gondoskodjon arról, hogy a kosár csak a(z) %s címkével ellátott termékeket tartalmazza"
+msgstr[1] "Gondoskodjon arról, hogy csak a(z) %s címkével ellátott terméket tartalmazza"
 
 #: includes/conditions/class-wc-csp-condition-package-total.php:26
 msgid "Package Total"
@@ -2262,12 +2343,12 @@ msgstr "Csomag súlya"
 #: includes/conditions/class-wc-csp-condition-package-weight.php:56
 #, php-format
 msgid "decrease the total weight of your shipment below %s"
-msgstr "csökkentse a küldemény összsúlyát %s alá"
+msgstr "csökkentse a küldemény összsúlyát úgy, hogy az kevesebb legyen, mint %s"
 
 #: includes/conditions/class-wc-csp-condition-package-weight.php:58
 #, php-format
 msgid "decrease its total weight below %s"
-msgstr "csökkentse az összsúlyát %s alá"
+msgstr "csökkentse az összsúlyát úgy, hogy az kevesebb legyen, mint %s"
 
 #: includes/conditions/class-wc-csp-condition-package-weight.php:63
 #, php-format
@@ -2321,7 +2402,7 @@ msgstr "Szállítási ország/állam"
 #: includes/conditions/class-wc-csp-condition-shipping-country-state.php:112
 #, php-format
 msgid "choose a different shipping %s"
-msgstr "válasszon másik szállítási %s-t"
+msgstr "válasszon másik szállítási lehetőséget (%s)"
 
 #: includes/conditions/class-wc-csp-condition-shipping-country-state.php:110
 #, php-format
@@ -2356,7 +2437,7 @@ msgstr "válasszon másik szállítási módot"
 msgid "choose a different shipping method for packages %s"
 msgstr "válasszon másik szállítási módot a(z) %s csomagokhoz"
 
-#: includes/conditions/class-wc-csp-condition-shipping-method.php:258
+#: includes/conditions/class-wc-csp-condition-shipping-method.php:261
 msgid "Select shipping methods&hellip;"
 msgstr "Válasszon szállítási módokat&hellip;"
 
@@ -2372,51 +2453,47 @@ msgstr "válasszon érvényes szállítási irányítószámot"
 msgid "Stock Quantity"
 msgstr "Készlet mennyisége"
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:36
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:40
 msgid "Restrict payment gateways conditionally."
 msgstr "Korlátozza a fizetési átjárókat feltételesen."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:41
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:45
 msgid "Payment Gateway Restrictions"
-msgstr "Fizetési átjáró korlátozások"
+msgstr "Fizetési átjárókra vonatkozó korlátozások"
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:104
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:134
 msgid ""
 "Restrict the payment gateways available on the <strong>Checkout</strong> and"
 " <strong>Order > Pay</strong> pages. To create logical \"OR\" expressions "
 "with Conditions, add multiple Restrictions."
-msgstr ""
-"Korlátozza a <strong>Pénztár</strong> és a <strong>Rendelés > "
-"Fizetés</strong> oldalakon elérhető fizetési átjárókat. Logikai \"VAGY\" "
-"kifejezések létrehozásához a Conditions használatával adjon hozzá több "
-"Restrictions elemet."
+msgstr "Korlátozza a <strong>Pénztár</strong> és a <strong>Rendelés > Fizetés</strong> oldalakon elérhető fizetési átjárókat. Logikai „VAGY” kifejezések létrehozásához a feltételek használatával adjon hozzá több korlátozást."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:153
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:109
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:394
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:183
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:110
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:375
 msgid "Short Description"
 msgstr "Rövid leírás"
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:156
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:112
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:397
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:186
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:113
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:378
 msgid "Optional short description for this rule&hellip;"
 msgstr "Opcionális rövid leírás ehhez a szabályhoz&hellip;"
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:160
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:190
 msgid "Exclude Gateways"
-msgstr "Átjárók kizárása"
+msgstr "Fizetési átjárók kizárása"
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:162
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:192
 msgid "Select Payment Gateways&hellip;"
 msgstr "Válasszon fizetési átjárókat&hellip;"
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:174
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:424
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:208
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:409
 msgid "Show Excluded"
-msgstr "Kizárt megjelenítése"
+msgstr "Kizárt elemek megjelenítése"
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:180
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:214
 msgid ""
 "By default, excluded payment gateways are hidden in the "
 "<strong>Checkout</strong> and <strong>Order > Pay</strong> pages. Select "
@@ -2434,71 +2511,52 @@ msgstr ""
 "rendelést. A <strong>Rendelés > Fizetés</strong> oldalon a kizárt fizetési "
 "átjárók továbbra is rejtve maradnak."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:186
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:169
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:436
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:220
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:170
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:421
 msgid "Custom Notice"
 msgstr "Egyéni üzenet"
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:190
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:224
 msgid ""
 "Defaults to:<br/>&quot;Your order cannot be checked out via "
 "{excluded_gateway}. To complete your order, please choose a different "
 "payment method.&quot;<br/>When conditions are defined, resolution "
 "instructions are added to the default message."
-msgstr ""
-"Alapértelmezett:<br/>&quot;A rendelése nem fizethető ki a(z) "
-"{excluded_gateway} használatával. A rendelés befejezéséhez válasszon másik "
-"fizetési módot.&quot;<br/>Ha feltételek vannak megadva, a rendszer megoldási"
-" útmutatót ad az alapértelmezett üzenethez."
+msgstr "Alapértelmezés szerint:<br/>„A rendelése nem fizethető ki a(z) {excluded_gateway} használatával. A rendelés befejezéséhez válasszon másik fizetési módot.”<br/>Ha feltételek vannak megadva, az alapértelmezett üzenet kiegészül a megoldásra vonatkozó útmutatással."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:192
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:226
 msgid ""
 "Defaults to:<br/>&quot;{product} cannot be checked out via "
 "{excluded_gateway}. To complete your order, please choose a different "
 "payment method, or remove {product} from your cart.&quot;<br/>When "
 "conditions are defined, resolution instructions are added to the default "
 "message."
-msgstr ""
-"Alapértelmezett:<br/>&quot;A(z) {product} nem fizethető ki a(z) "
-"{excluded_gateway} használatával. A rendelés befejezéséhez válasszon másik "
-"fizetési módot, vagy távolítsa el a kosarából a(z) {product} "
-"elemet.&quot;<br/>Ha feltételek vannak megadva, a rendszer megoldási "
-"útmutatót ad az alapértelmezett üzenethez."
+msgstr "Alapértelmezés szerint:<br/>„A(z) {product} nem fizethető ki a(z) {excluded_gateway} használatával. A rendelés befejezéséhez válasszon másik fizetési módot, vagy távolítsa el a(z) {product} elemet a kosarából.”<br/>Ha feltételek vannak megadva, az alapértelmezett üzenet kiegészül a megoldásra vonatkozó útmutatással."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:203
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:237
 msgid ""
 "Custom notice to display when attempting to place an order while this "
 "restriction is active. You may include <code>{excluded_gateway}</code> and "
 "<code>{currency}</code> and have them substituted by the selected payment "
 "gateway title and the selected currency."
-msgstr ""
-"Egyéni üzenet, amely a rendelés leadásának kísérletekor jelenik meg, amikor "
-"ez a korlátozás aktív. Belefoglalhatja a következőket: "
-"<code>{excluded_gateway}</code> és <code>{currency}</code>, amelyeket a "
-"rendszer a kiválasztott fizetési átjáró nevére és a kiválasztott pénznemre "
-"cserél."
+msgstr "Egyéni üzenet, amely a korlátozás aktív állapotában történő rendelésleadási kísérletkor jelenik meg. Az üzenetben használhatja a <code>{excluded_gateway}</code> és a <code>{currency}</code> helyőrzőket; ezeket a rendszer a kiválasztott fizetési átjáró nevére és a kiválasztott pénznemre cseréli."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:205
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:239
 msgid ""
 "Custom notice to display when attempting to place an order while this "
 "restriction is active. You may include <code>{product}</code>, "
 "<code>{excluded_gateway}</code> and <code>{currency}</code> and have them "
 "substituted by the actual product title, the selected payment gateway title "
 "and the selected currency."
-msgstr ""
-"Egyéni üzenet, amely a rendelés leadásának kísérletekor jelenik meg, amikor "
-"ez a korlátozás aktív. Belefoglalhatja a következőket: "
-"<code>{product}</code>, <code>{excluded_gateway}</code> és "
-"<code>{currency}</code>, amelyeket a rendszer a tényleges terméknévre, a "
-"kiválasztott fizetési átjáró nevére és a kiválasztott pénznemre cserél."
+msgstr "Egyéni üzenet, amely a korlátozás aktív állapotában történő rendelésleadási kísérletkor jelenik meg. Az üzenetben használhatja a <code>{product}</code>, a <code>{excluded_gateway}</code> és a <code>{currency}</code> helyőrzőket; ezeket a rendszer a tényleges terméknévre, a kiválasztott fizetési átjáró nevére és a kiválasztott pénznemre cseréli."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:213
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:464
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:247
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:449
 msgid "Show Static Notices"
 msgstr "Statikus értesítések megjelenítése"
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:219
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:253
 msgid ""
 "By default, when <strong>Show Excluded</strong> is enabled, a notice is "
 "displayed when customers attempt to place an order using a restricted "
@@ -2510,25 +2568,20 @@ msgstr ""
 "fizetési móddal próbálnak rendelni. Válassza ezt az opciót, ha statikus "
 "értesítést is szeretne megjeleníteni minden korlátozott fizetési mód alatt."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:298
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:332
 msgid ""
 "Restrict the available payment options when an order contains this product."
-msgstr ""
-"Korlátozza az elérhető fizetési lehetőségeket, ha a rendelés ezt a terméket "
-"tartalmazza."
+msgstr "Korlátozza az elérhető fizetési lehetőségeket, ha a rendelés ezt a terméket tartalmazza."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:352
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:386
 #, php-format
 msgid ""
 "Payment Gateway restriction <strong>#%s</strong> has no effect: Please "
 "choose at least one payment gateway in the <strong>Exclude Gateways</strong>"
 " field."
-msgstr ""
-"A(z) <strong>#%s</strong> fizetési átjáró-korlátozásnak nincs hatása: "
-"Válasszon legalább egy fizetési átjárót a <strong>Kizárt fizetési "
-"átjárók</strong> mezőben."
+msgstr "A(z) <strong>#%s</strong> azonosítójú, fizetési átjárókra vonatkozó korlátozásnak nincs hatása: Válasszon legalább egy fizetési átjárót a <strong>Kizárt fizetési átjárók</strong> mezőben."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:371
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:405
 #, php-format
 msgid ""
 "Rule <strong>#%s</strong> has no effect: Please choose at least one payment "
@@ -2537,88 +2590,90 @@ msgstr ""
 "A(z) <strong>#%s</strong> szabálynak nincs hatása: Válasszon legalább egy "
 "fizetési átjárót a <strong>Kizárt fizetési átjárók</strong> mezőben."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:749
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:768
+msgid "The selected payment method is not available."
+msgstr "A kiválasztott fizetési mód nem érhető el."
+
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:895
+msgid ""
+"The selected payment method is not available for one or more items in this "
+"order."
+msgstr "A kiválasztott fizetési mód a rendelés egy vagy több tételéhez nem érhető el."
+
+#. translators: 1: Payment gateway title, 2: condition resolution, 3: product
+#. title.
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:913
 #, php-format
 msgid ""
 "To choose &quot;%1$s&quot;, please %2$s. Otherwise, please remove "
 "&quot;%3$s&quot; from your cart."
-msgstr ""
-"A(z) &quot;%1$s&quot; választásához kérjük, %2$s. Ellenkező esetben "
-"távolítsa el a &quot;%3$s&quot; terméket a kosarából."
+msgstr "A(z) „%1$s” választásához kérjük, %2$s. Ellenkező esetben távolítsa el a „%3$s” terméket a kosarából."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:751
+#. translators: 1: Payment gateway title, 2: condition resolution, 3: product
+#. title.
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:916
 #, php-format
 msgid ""
 "To purchase &quot;%3$s&quot; via &quot;%1$s&quot;, please %2$s. Otherwise, "
 "choose a different payment method, or remove &quot;%3$s&quot; from your "
 "cart."
-msgstr ""
-"A(z) &quot;%3$s&quot; megvásárlásához &quot;%1$s&quot; útján kérjük, %2$s. "
-"Ellenkező esetben válasszon másik fizetési módot, vagy távolítsa el a "
-"&quot;%3$s&quot; terméket a kosarából."
+msgstr "A(z) „%3$s” megvásárlásához a(z) „%1$s” használatával kérjük, %2$s. Ellenkező esetben válasszon másik fizetési módot, vagy távolítsa el a „%3$s” terméket a kosarából."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:757
+#. translators: %s: Product title.
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:923
 #, php-format
 msgid ""
 "To complete your order, please choose a different payment method, or remove "
 "&quot;%1$s&quot; from your cart."
-msgstr ""
-"A rendelés befejezéséhez válasszon másik fizetési módot, vagy távolítsa el a"
-" &quot;%1$s&quot; terméket a kosarából."
+msgstr "A rendelés befejezéséhez válasszon másik fizetési módot, vagy távolítsa el a „%1$s” terméket a kosarából."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:761
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:927
 #, php-format
 msgctxt "static notice context"
 msgid "&quot;%1$s&quot; cannot be checked out via &quot;%2$s&quot;. %3$s"
-msgstr ""
-"A(z) &quot;%1$s&quot; nem fizethető ki a(z) &quot;%2$s&quot; használatával. "
-"%3$s"
+msgstr "A „%1$s” nem fizethető ki a(z) „%2$s” használatával. %3$s"
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:763
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:929
 #, php-format
 msgctxt "validation notice context"
 msgid "&quot;%1$s&quot; cannot be checked out via &quot;%2$s&quot;. %3$s"
-msgstr ""
-"A(z) &quot;%1$s&quot; nem fizethető ki a(z) &quot;%2$s&quot; használatával. "
-"%3$s"
+msgstr "A „%1$s” nem fizethető ki a(z) „%2$s” használatával. %3$s"
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:783
+#. translators: 1: Payment gateway title, 2: condition resolution.
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:950
 #, php-format
 msgid "To choose &quot;%1$s&quot;, please %2$s."
-msgstr "A(z) &quot;%1$s&quot; választásához kérjük, %2$s."
+msgstr "A(z) „%1$s” választásához kérjük, %2$s."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:785
+#. translators: 1: Payment gateway title, 2: condition resolution.
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:953
 #, php-format
 msgid ""
 "To complete your order via &quot;%1$s&quot;, please %2$s. Otherwise, choose "
 "a different payment method."
-msgstr ""
-"A rendelés &quot;%1$s&quot; használatával történő befejezéséhez kérjük, "
-"%2$s. Ellenkező esetben válasszon másik fizetési módot."
+msgstr "A rendelés „%1$s” használatával történő befejezéséhez kérjük, %2$s. Ellenkező esetben válasszon másik fizetési módot."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:791
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:959
 msgid "To complete your order, please choose a different payment method."
 msgstr "A rendelés befejezéséhez válasszon másik fizetési módot."
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:795
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:963
 #, php-format
 msgid "This order cannot be checked out via &quot;%1$s&quot;. %2$s"
-msgstr ""
-"Ez a rendelés nem fizethető ki a(z) &quot;%1$s&quot; használatával. %2$s"
+msgstr "Ez a rendelés nem fizethető ki a(z) „%1$s” használatával. %2$s"
 
-#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:797
+#: includes/restrictions/class-wc-csp-restrict-payment-gateways.php:965
 #, php-format
 msgid "Your order cannot be checked out via &quot;%1$s&quot;. %2$s"
-msgstr ""
-"A rendelése nem fizethető ki a(z) &quot;%1$s&quot; használatával. %2$s"
+msgstr "A rendelése nem fizethető ki a(z) „%1$s” használatával. %2$s"
 
 #: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:26
 msgid "Restrict shipping destinations conditionally."
-msgstr "Szállítási célok feltételes korlátozása."
+msgstr "Korlátozza feltételesen a szállítási célállomásokat."
 
 #: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:32
 msgid "Shipping Country Restrictions"
-msgstr "Szállítási ország korlátozások"
+msgstr "Szállítási országokra vonatkozó korlátozások"
 
 #: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:66
 msgid ""
@@ -2630,49 +2685,40 @@ msgstr ""
 " és államokat/régiókat. Logikai „VAGY” kifejezések létrehozásához adjon "
 "hozzá több korlátozást."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:116
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:117
 msgid "Exclude Countries"
 msgstr "Kizárt országok"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:118
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:119
 msgid "Select Countries&hellip;"
 msgstr "Válasszon országokat&hellip;"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:132
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:133
 msgid "Exclude States / Regions"
 msgstr "Kizárt államok / régiók"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:135
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:136
 msgid "Select States / Regions&hellip;"
 msgstr "Válasszon államokat / régiókat&hellip;"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:173
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:174
 msgid ""
 "Defaults to:<br/>&quot;Your order cannot be shipped "
 "{to_excluded_destination}. To complete your order, please choose a different"
 " shipping destination.&quot;<br/>When conditions are defined, resolution "
 "instructions are added to the default message."
-msgstr ""
-"Alapértelmezett:<br/>&quot;A rendelése nem szállítható "
-"{to_excluded_destination}. A rendelés befejezéséhez válasszon másik "
-"szállítási célállomást.&quot;<br/>Ha feltételek vannak megadva, a rendszer "
-"megoldási útmutatót ad az alapértelmezett üzenethez."
+msgstr "Alapértelmezés szerint:<br/>„A rendelése nem szállítható {to_excluded_destination}. A rendelés befejezéséhez válasszon másik szállítási célállomást.”<br/>Ha feltételek vannak megadva, az alapértelmezett üzenet kiegészül a megoldáshoz szükséges útmutatással."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:175
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:176
 msgid ""
 "Defaults to:<br/>&quot;Your order cannot be shipped "
 "{to_excluded_destination}. To complete your order, please choose a different"
 " shipping destination, or remove {product} from your cart.&quot;<br/>When "
 "conditions are defined, resolution instructions are added to the default "
 "message."
-msgstr ""
-"Alapértelmezett:<br/>&quot;A rendelése nem szállítható "
-"{to_excluded_destination}. A rendelés befejezéséhez válasszon másik "
-"szállítási célállomást, vagy távolítsa el a {product} terméket a "
-"kosarából.&quot;<br/>Ha feltételek vannak megadva, a rendszer megoldási "
-"útmutatót ad az alapértelmezett üzenethez."
+msgstr "Alapértelmezés szerint:<br/>„A rendelése nem szállítható {to_excluded_destination}. A rendelés befejezéséhez válasszon másik szállítási célállomást, vagy távolítsa el a(z) {product} terméket a kosarából.”<br/>Ha feltételek vannak megadva, az alapértelmezett üzenet kiegészül a megoldáshoz szükséges útmutatással."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:186
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:187
 msgid ""
 "Custom notice to display when attempting to place an order while this "
 "restriction is active. You may include "
@@ -2686,7 +2732,7 @@ msgstr ""
 "helyőrzőket, amelyeket a kiválasztott szállítási ország/állam és a "
 "kiválasztott pénznem helyettesít."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:188
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:189
 msgid ""
 "Custom notice to display when attempting to place an order while this "
 "restriction is active. You may include <code>{product}</code>, "
@@ -2700,7 +2746,7 @@ msgstr ""
 "helyőrzőket, amelyeket a tényleges terméknév, a kizárt ország/állam és a "
 "kiválasztott pénznem helyettesít."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:252
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:253
 msgid ""
 "Restrict the allowed shipping countries and/or states when an order contains"
 " this product."
@@ -2708,7 +2754,7 @@ msgstr ""
 "Korlátozza az engedélyezett szállítási országokat és/vagy államokat, ha a "
 "rendelés ezt a terméket tartalmazza."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:313
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:314
 #, php-format
 msgid ""
 "Shipping Country/State restriction <strong>#%s</strong> has no effect: "
@@ -2719,7 +2765,7 @@ msgstr ""
 "hatása: Válasszon legalább egy országot a <strong>Kizárt országok</strong> "
 "mezőben."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:332
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:333
 #, php-format
 msgid ""
 "Rule <strong>#%s</strong> has no effect: Please choose at least one country "
@@ -2728,90 +2774,81 @@ msgstr ""
 "A(z) <strong>#%s</strong> szabálynak nincs hatása: Válasszon legalább egy "
 "országot a <strong>Kizárt országok</strong> mezőben."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:548
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:593
 #, php-format
 msgctxt "to country destination"
 msgid "%1$s %2$s"
 msgstr "%1$s %2$s"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:554
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:599
 #, php-format
 msgctxt "to state destination"
 msgid "to %s"
-msgstr "a(z) %s címre"
+msgstr "az alábbi helyre: %s"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:574
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:617
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:649
+msgid "To complete this order, please contact us."
+msgstr "A rendelés teljesítéséhez kérjük, vegye fel velünk a kapcsolatot."
+
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:621
 #, php-format
 msgid ""
 "To have &quot;%1$s&quot; shipped %2$s, please %3$s. Otherwise, choose a "
 "different Shipping %4$s, or remove &quot;%1$s&quot; from your cart."
-msgstr ""
-"A(z) &quot;%1$s&quot; kiszállításához %2$s kérjük, %3$s. Ellenkező esetben "
-"válasszon másik Szállítási %4$s-t, vagy távolítsa el a &quot;%1$s&quot; "
-"terméket a kosarából."
+msgstr "Ha azt szeretné, hogy a(z) „%1$s” terméket %2$s szállítsuk, kérjük, %3$s. Ellenkező esetben válasszon másik szállítási lehetőséget (%4$s), vagy távolítsa el a(z) „%1$s” terméket a kosarából."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:576
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:623
 #, php-format
 msgid ""
 "To have &quot;%1$s&quot; shipped %2$s, please %3$s. Otherwise, choose a "
 "different Shipping %4$s, or remove &quot;%1$s&quot; from package #%5$s."
-msgstr ""
-"A(z) &quot;%1$s&quot; kiszállításához %2$s kérjük, %3$s. Ellenkező esetben "
-"válasszon másik Szállítási %4$s-t, vagy távolítsa el a &quot;%1$s&quot; "
-"terméket a(z) #%5$s csomagból."
+msgstr "Ha azt szeretné, hogy a(z) „%1$s” terméket %2$s szállítsuk, kérjük, %3$s. Ellenkező esetben válasszon másik szállítási lehetőséget (%4$s), vagy távolítsa el a(z) „%1$s” terméket a(z) #%5$s csomagból."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:580
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:627
 #, php-format
 msgid ""
 "To complete your order, please choose a different Shipping %1$s, or remove "
 "&quot;%2$s&quot; from your cart."
-msgstr ""
-"A rendelés befejezéséhez válasszon másik Szállítási %1$s-t, vagy távolítsa "
-"el a &quot;%2$s&quot; terméket a kosarából."
+msgstr "A rendelés befejezéséhez válasszon másik szállítási lehetőséget (%1$s), vagy távolítsa el a(z) „%2$s” terméket a kosarából."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:582
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:629
 #, php-format
 msgid ""
 "To complete your order, please choose a different Shipping %1$s, or remove "
 "&quot;%2$s&quot; from package #%3$s."
-msgstr ""
-"A rendelés befejezéséhez válasszon másik Szállítási %1$s-t, vagy távolítsa "
-"el a &quot;%2$s&quot; terméket a(z) #%3$s csomagból."
+msgstr "A rendelés befejezéséhez válasszon másik szállítási lehetőséget (%1$s), vagy távolítsa el a(z) „%2$s” terméket a(z) #%3$s csomagból."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:585
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:632
 #, php-format
 msgid "&quot;%1$s&quot; is not eligible for shipping %2$s. %3$s"
-msgstr "A(z) &quot;%1$s&quot; nem jogosult szállításra %2$s. %3$s"
+msgstr "A(z) „%1$s” termék nem szállítható %2$s. %3$s"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:604
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:653
 #, php-format
 msgid ""
 "To have your order shipped %1$s, please %2$s. Otherwise, choose a different "
 "Shipping %3$s."
-msgstr ""
-"A rendelése kiszállításához %1$s kérjük, %2$s. Ellenkező esetben válasszon "
-"másik Szállítási %3$s-t."
+msgstr "Ha azt szeretné, hogy a rendelését %1$s szállítsuk, kérjük, %2$s. Ellenkező esetben válasszon másik szállítási lehetőséget (%3$s)."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:606
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:655
 #, php-format
 msgid ""
 "To have package #%4$s shipped %1$s, please %2$s. Otherwise, choose a "
 "different Shipping %3$s."
-msgstr ""
-"A(z) #%4$s csomag kiszállításához %1$s kérjük, %2$s. Ellenkező esetben "
-"válasszon másik Szállítási %3$s-t."
+msgstr "Ha azt szeretné, hogy a(z) #%4$s csomagot %1$s szállítsuk, kérjük, %2$s. Ellenkező esetben válasszon másik szállítási lehetőséget (%3$s)."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:610
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:659
 #, php-format
 msgid "To complete your order, please choose a different Shipping %1$s."
-msgstr "A rendelés befejezéséhez válasszon másik Szállítási %1$s-t."
+msgstr "A rendelés befejezéséhez válasszon másik szállítási lehetőséget (%1$s)."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:614
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:663
 #, php-format
 msgid "Your order cannot be shipped %1$s. %2$s"
 msgstr "A rendelése nem szállítható %1$s. %2$s"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:616
+#: includes/restrictions/class-wc-csp-restrict-shipping-countries.php:665
 #, php-format
 msgid "Package #%3$s cannot be shipped %1$s. %2$s"
 msgstr "A(z) #%3$s csomag nem szállítható %1$s. %2$s"
@@ -2822,34 +2859,34 @@ msgstr "Szállítási módok feltételes korlátozása."
 
 #: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:32
 msgid "Shipping Method Restrictions"
-msgstr "Szállítási mód korlátozások"
+msgstr "Szállítási módok korlátozása"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:194
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:200
 #, php-format
 msgid "All &quot;%s&quot; Method Instances"
-msgstr "Az összes &quot;%s&quot; módszerpéldány"
+msgstr "Az összes „%s” módszerpéldány"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:224
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:230
 #, php-format
 msgid "&quot;%1$s&quot; (Instance ID: %2$s)"
-msgstr "&quot;%1$s&quot; (Példányazonosító: %2$s)"
+msgstr "„%1$s” (Példány ID: %2$s)"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:225
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:231
 #, php-format
 msgid "%1$s &ndash; %2$s"
 msgstr "%1$s &ndash; %2$s"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:236
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:242
 msgid "Flat Rates (Legacy)"
-msgstr "Átalánydíjak (Elavult)"
+msgstr "Átalánydíjak (régi)"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:237
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:244
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:271
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:243
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:250
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:277
 msgid " (Legacy)"
-msgstr " (Elavult)"
+msgstr " (régi)"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:321
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:302
 msgid ""
 "Restrict the shipping methods available on the <strong>Cart</strong> and "
 "<strong>Checkout</strong> pages. To create logical \"OR\" expressions with "
@@ -2859,79 +2896,59 @@ msgstr ""
 "elérhető szállítási módokat. Logikai „VAGY” kifejezések létrehozásához adjon"
 " hozzá több korlátozást."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:401
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:382
 msgid "Exclude Methods"
 msgstr "Kizárt módszerek"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:403
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:384
 msgid "Select Shipping Methods&hellip;"
 msgstr "Válasszon szállítási módokat&hellip;"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:413
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:398
 msgid "Exclude Rate IDs"
 msgstr "Kizárt díjazonosítók"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:415
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:400
 msgid "Shipping rate IDs to exclude, separated by &quot;|&quot;&hellip;"
 msgstr ""
 "Kizárandó szállítási díjazonosítók, &quot;|&quot; jellel elválasztva&hellip;"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:418
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:403
 msgid ""
 "Manually enter shipping rate IDs to exclude, separated by \"|\". If a rate "
 "includes the \"|\" character, replace it with \"%|%\". You may also use "
-"wildcards, such as \"FedEx*\". Useful if you are working with shipping "
+"wildcards, such as \"*fedex*\". Useful if you are working with shipping "
 "methods that retrieve real-time rates. <strong>Important</strong>: Real-time"
 " rate IDs may change over time &ndash; use at your own risk!"
-msgstr ""
-"Adja meg kézzel a kizárandó szállítási díjazonosítókat, „|” jellel "
-"elválasztva. Ha egy díj tartalmazza a „|” karaktert, cserélje „%|%”-re. "
-"Használhat helyettesítő karaktereket is, például „FedEx*”. Hasznos, ha valós"
-" idejű díjakat lekérő szállítási módszerekkel dolgozik. "
-"<strong>Fontos</strong>: A valós idejű díjazonosítók idővel változhatnak "
-"&ndash; csak saját felelősségre használja!"
+msgstr "Adja meg kézzel a kizárandó szállítási díjazonosítókat, „|” karakterrel elválasztva. Ha egy díjazonosító tartalmazza a „|” karaktert, cserélje le „%|%” értékre. Helyettesítő karaktereket is használhat, például „*fedex*”. Ez hasznos lehet, ha valós idejű díjakat lekérő szállítási módokat használ. <strong>Fontos</strong>: A valós idejű díjazonosítók idővel változhatnak &ndash; saját felelősségére használja őket!"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:430
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:415
 msgid ""
 "By default, excluded shipping methods are removed from the list of methods "
 "available during checkout. Select this option if you prefer to show excluded"
 " shipping methods in the checkout options and display a restriction notice "
 "when customers attempt to complete an order using an excluded shipping "
 "method."
-msgstr ""
-"Alapértelmezés szerint a kizárt szállítási módok eltávolításra kerülnek a "
-"pénztárnál elérhető lehetőségek közül. Válassza ezt az opciót, ha a kizárt "
-"szállítási módokat is szeretné megjeleníteni a pénztárban, és korlátozási "
-"értesítést kíván megjeleníteni, amikor a vásárlók kizárt szállítási móddal "
-"próbálják befejezni a rendelést."
+msgstr "Alapértelmezés szerint a kizárt szállítási módok nem szerepelnek a pénztárnál elérhető szállítási módok listájában. Válassza ezt az opciót, ha inkább a kizárt szállítási módokat is meg szeretné jeleníteni a pénztárnál elérhető opciók között, és értesítést szeretne megjeleníteni a korlátozásról, amikor a vásárlók kizárt szállítási móddal próbálják befejezni a rendelést."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:440
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:425
 msgid ""
 "Defaults to:<br/>&quot;Your order cannot be shipped via {excluded_method}. "
 "To complete your order, please choose a different shipping "
 "method.&quot;<br/>When conditions are defined, resolution instructions are "
 "added to the default message."
-msgstr ""
-"Alapértelmezett:<br/>&quot;A rendelése nem szállítható a(z) "
-"{excluded_method} használatával. A rendelés befejezéséhez válasszon másik "
-"szállítási módot.&quot;<br/>Ha feltételek vannak megadva, a rendszer "
-"megoldási útmutatót ad az alapértelmezett üzenethez."
+msgstr "Alapértelmezés szerint:<br/>„A rendelése nem szállítható a(z) {excluded_method} használatával. A rendelés befejezéséhez válasszon másik szállítási módot.”<br/>Ha feltételek vannak megadva, az alapértelmezett üzenet kiegészül a megoldáshoz szükséges útmutatással."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:442
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:427
 msgid ""
 "Defaults to:<br/>&quot;{product} is not eligible for shipping via "
 "{excluded_method}. To complete your order, please choose a different "
 "shipping method, or remove {product} from your cart.&quot;<br/>When "
 "conditions are defined, resolution instructions are added to the default "
 "message."
-msgstr ""
-"Alapértelmezett:<br/>&quot;A {product} nem jogosult a(z) {excluded_method} "
-"használatával történő szállításra. A rendelés befejezéséhez válasszon másik "
-"szállítási módot, vagy távolítsa el a {product} terméket a "
-"kosarából.&quot;<br/>Ha feltételek vannak megadva, a rendszer megoldási "
-"útmutatót ad az alapértelmezett üzenethez."
+msgstr "Alapértelmezés szerint:<br/>„A(z) {product} termék nem szállítható a(z) {excluded_method} használatával. A rendelés befejezéséhez válasszon másik szállítási módot, vagy távolítsa el a(z) {product} terméket a kosarából.”<br/>Ha feltételek vannak megadva, az alapértelmezett üzenet kiegészül a megoldáshoz szükséges útmutatással."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:453
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:438
 msgid ""
 "Custom notice to display when attempting to place an order while this "
 "restriction is active. You may include <code>{excluded_method}</code> and "
@@ -2943,7 +2960,7 @@ msgstr ""
 "<code>{currency}</code> helyőrzőket, amelyeket a kiválasztott szállítási mód"
 " neve és a kiválasztott pénznem helyettesít."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:455
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:440
 msgid ""
 "Custom notice to display when attempting to place an order while this "
 "restriction is active. You may include <code>{product}</code>, "
@@ -2957,7 +2974,7 @@ msgstr ""
 "amelyeket a tényleges terméknév, a kiválasztott szállítási mód neve és a "
 "kiválasztott pénznem helyettesít."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:470
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:455
 msgid ""
 "By default, when <strong>Show Excluded</strong> is enabled, a notice is "
 "displayed when customers attempt to place an order using a restricted "
@@ -2971,14 +2988,14 @@ msgstr ""
 "értesítést is szeretne megjeleníteni minden korlátozott szállítási mód alatt"
 " a <strong>Pénztár</strong> oldalon."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:557
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:542
 msgid ""
 "Restrict the available shipping options when an order contains this product."
 msgstr ""
 "Korlátozza az elérhető szállítási lehetőségeket, ha a rendelés ezt a "
 "terméket tartalmazza."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:644
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:629
 #, php-format
 msgid ""
 "Shipping Method restriction <strong>#%s</strong> has no effect: Please add "
@@ -2989,7 +3006,7 @@ msgstr ""
 "hozzá legalább egy szállítási lehetőséget a <strong>Kizárt "
 "módszerek</strong> vagy a <strong>Kizárt díjazonosítók</strong> mezőben."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:663
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:648
 #, php-format
 msgid ""
 "Rule <strong>#%s</strong> has no effect: Please add at least one shipping "
@@ -3000,142 +3017,114 @@ msgstr ""
 "szállítási lehetőséget a <strong>Kizárt módszerek</strong> vagy a "
 "<strong>Kizárt díjazonosítók</strong> mezőben."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:999
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:995
 #, php-format
 msgid ""
 "To choose &quot;%2$s&quot;, please %3$s. Otherwise, please remove "
 "&quot;%1$s&quot; from your cart."
-msgstr ""
-"A(z) &quot;%2$s&quot; választásához kérjük, %3$s. Ellenkező esetben "
-"távolítsa el a &quot;%1$s&quot; terméket a kosarából."
+msgstr "A(z) „%2$s” választásához kérjük, %3$s. Ellenkező esetben távolítsa el a(z) „%1$s” terméket a kosarából."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1001
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:997
 #, php-format
 msgid ""
 "To choose &quot;%2$s&quot;, please %3$s. Otherwise, please remove "
 "&quot;%1$s&quot; from this package."
-msgstr ""
-"A(z) &quot;%2$s&quot; választásához kérjük, %3$s. Ellenkező esetben "
-"távolítsa el a &quot;%1$s&quot; terméket ebből a csomagból."
+msgstr "A(z) „%2$s” választásához kérjük, %3$s. Ellenkező esetben távolítsa el a(z) „%1$s” terméket ebből a csomagból."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1005
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1001
 #, php-format
 msgid ""
 "To have &quot;%1$s&quot; shipped via &quot;%2$s&quot;, please %3$s. "
 "Otherwise, choose a different shipping method, or remove &quot;%1$s&quot; "
 "from your cart."
-msgstr ""
-"A(z) &quot;%1$s&quot; &quot;%2$s&quot; használatával történő kiszállításához"
-" kérjük, %3$s. Ellenkező esetben válasszon másik szállítási módot, vagy "
-"távolítsa el a &quot;%1$s&quot; terméket a kosarából."
+msgstr "A(z) „%1$s” termék „%2$s” szállítási móddal történő kiszállításához kérjük, %3$s. Ellenkező esetben válasszon másik szállítási módot, vagy távolítsa el a(z) „%1$s” terméket a kosarából."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1007
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1003
 #, php-format
 msgid ""
 "To have &quot;%1$s&quot; shipped via &quot;%2$s&quot;, please %3$s. "
 "Otherwise, choose a different shipping method, or remove &quot;%1$s&quot; "
 "from package #%4$s."
-msgstr ""
-"A(z) &quot;%1$s&quot; &quot;%2$s&quot; használatával történő kiszállításához"
-" kérjük, %3$s. Ellenkező esetben válasszon másik szállítási módot, vagy "
-"távolítsa el a &quot;%1$s&quot; terméket a(z) #%4$s csomagból."
+msgstr "A(z) „%1$s” termék „%2$s” szállítási móddal történő kiszállításához kérjük, %3$s. Ellenkező esetben válasszon másik szállítási módot, vagy távolítsa el a(z) „%1$s” terméket a(z) #%4$s csomagból."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1015
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1011
 #, php-format
 msgid ""
 "To complete your order, please choose a different shipping method, or remove"
 " &quot;%1$s&quot; from your cart."
-msgstr ""
-"A rendelés befejezéséhez válasszon másik szállítási módot, vagy távolítsa el"
-" a &quot;%1$s&quot; terméket a kosarából."
+msgstr "A rendelés befejezéséhez válasszon másik szállítási módot, vagy távolítsa el a(z) „%1$s” terméket a kosarából."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1017
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1013
 #, php-format
 msgid ""
 "To complete your order, please choose a different shipping method, or remove"
 " &quot;%1$s&quot; from package #%2$s."
-msgstr ""
-"A rendelés befejezéséhez válasszon másik szállítási módot, vagy távolítsa el"
-" a &quot;%1$s&quot; terméket a(z) #%2$s csomagból."
+msgstr "A rendelés befejezéséhez válasszon másik szállítási módot, vagy távolítsa el a „%1$s” terméket a(z) #%2$s csomagból."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1021
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1017
 #, php-format
 msgctxt "static notice context"
 msgid ""
 "&quot;%1$s&quot; is not eligible for shipping via &quot;%2$s&quot;. %3$s"
-msgstr ""
-"A(z) &quot;%1$s&quot; nem jogosult a(z) &quot;%2$s&quot; használatával "
-"történő szállításra. %3$s"
+msgstr "A(z) „%1$s” nem szállítható a(z) „%2$s” szállítási móddal. %3$s"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1023
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1019
 #, php-format
 msgctxt "validation notice context"
 msgid ""
 "&quot;%1$s&quot; is not eligible for shipping via &quot;%2$s&quot;. %3$s"
-msgstr ""
-"A(z) &quot;%1$s&quot; nem jogosult a(z) &quot;%2$s&quot; használatával "
-"történő szállításra. %3$s"
+msgstr "A(z) „%1$s” nem szállítható a(z) „%2$s” szállítási móddal. %3$s"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1045
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1041
 #, php-format
 msgid "To have this order shipped via &quot;%1$s&quot;, please %2$s."
-msgstr ""
-"Ezen rendelés &quot;%1$s&quot; használatával történő kiszállításához kérjük,"
-" %2$s."
+msgstr "Ha azt szeretné, hogy ezt a rendelést a(z) „%1$s” szállítási móddal szállítsák ki, kérjük, %2$s."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1047
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1043
 #, php-format
 msgid "To have this package shipped via &quot;%1$s&quot;, please %2$s."
-msgstr ""
-"Ezen csomag &quot;%1$s&quot; használatával történő kiszállításához kérjük, "
-"%2$s."
+msgstr "Ha azt szeretné, hogy ezt a csomagot a(z) „%1$s” szállítási móddal szállítsák ki, kérjük, %2$s."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1051
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1047
 #, php-format
 msgid ""
 "To have your order shipped via &quot;%1$s&quot;, please %2$s. Otherwise, "
 "choose a different shipping method."
-msgstr ""
-"A rendelése &quot;%1$s&quot; használatával történő kiszállításához kérjük, "
-"%2$s. Ellenkező esetben válasszon másik szállítási módot."
+msgstr "Ha azt szeretné, hogy a rendelését a(z) „%1$s” szállítási móddal szállítsák ki, kérjük, %2$s. Ellenkező esetben válasszon másik szállítási módot."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1053
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1049
 #, php-format
 msgid ""
 "To have package #%3$s shipped via &quot;%1$s&quot;, please %2$s. Otherwise, "
 "choose a different shipping method."
-msgstr ""
-"A(z) #%3$s csomag &quot;%1$s&quot; használatával történő kiszállításához "
-"kérjük, %2$s. Ellenkező esetben válasszon másik szállítási módot."
+msgstr "Ha azt szeretné, hogy a(z) #%3$s csomagot a(z) „%1$s” szállítási móddal szállítsák ki, kérjük, %2$s. Ellenkező esetben válasszon másik szállítási módot."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1059
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1055
 msgid "To complete your order, please choose a different shipping method."
 msgstr "A rendelés befejezéséhez válasszon másik szállítási módot."
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1064
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1060
 #, php-format
 msgid "This order cannot be shipped via &quot;%1$s&quot;. %2$s"
-msgstr ""
-"Ez a rendelés nem szállítható a(z) &quot;%1$s&quot; használatával. %2$s"
+msgstr "Ez a rendelés nem szállítható a(z) „%1$s” szállítási móddal. %2$s"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1068
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1064
 #, php-format
 msgid "Your order cannot be shipped via &quot;%1$s&quot;. %2$s"
-msgstr "A rendelése nem szállítható a(z) &quot;%1$s&quot; használatával. %2$s"
+msgstr "A rendelése nem szállítható a(z) „%1$s” szállítási móddal. %2$s"
 
-#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1070
+#: includes/restrictions/class-wc-csp-restrict-shipping-methods.php:1066
 #, php-format
 msgid "Package #%3$s cannot be shipped via &quot;%1$s&quot;. %2$s"
-msgstr ""
-"A(z) #%3$s csomag nem szállítható a(z) &quot;%1$s&quot; használatával. %2$s"
+msgstr "A(z) #%3$s csomag nem szállítható a(z) „%1$s” szállítási móddal. %2$s"
 
-#: includes/wc-csp-functions.php:57
+#: includes/wc-csp-functions.php:56
 #, php-format
 msgctxt "term separator"
 msgid "%1$s&nbsp;&gt;&nbsp;%2$s"
 msgstr "%1$s&nbsp;&gt;&nbsp;%2$s"
 
-#: includes/wc-csp-functions.php:79
+#: includes/wc-csp-functions.php:78
 #, php-format
 msgctxt "many terms separator"
 msgid "%1$s&nbsp;&gt;&nbsp;&hellip;&nbsp;&gt;&nbsp;%2$s"
@@ -3147,7 +3136,7 @@ msgid "Cheatin&#8217; huh?"
 msgstr "Csalunk, mi?"
 
 #. translators: %s: WC min version
-#: woocommerce-conditional-shipping-and-payments.php:214
+#: woocommerce-conditional-shipping-and-payments.php:252
 #, php-format
 msgid ""
 "WooCommerce Conditional Shipping and Payments requires at least WooCommerce "
@@ -3156,12 +3145,24 @@ msgstr ""
 "A WooCommerce Conditional Shipping and Payments legalább a WooCommerce "
 "<strong>%s</strong> verzióját igényli."
 
-#: woocommerce-conditional-shipping-and-payments.php:225
+#. translators: %1$s: Version %, %2$s: Update PHP doc URL
+#: woocommerce-conditional-shipping-and-payments.php:266
 #, php-format
 msgid ""
 "WooCommerce Conditional Shipping and Payments requires at least PHP "
 "<strong>%1$s</strong>. Learn <a href=\"%2$s\">how to update PHP</a>."
-msgstr ""
-"A WooCommerce Conditional Shipping and Payments legalább a PHP "
-"<strong>%1$s</strong> verzióját igényli. További információ: <a "
-"href=\"%2$s\">a PHP frissítésének módja</a>."
+msgstr "A WooCommerce Conditional Shipping and Payments legalább a PHP <strong>%1$s</strong> verzióját igényli. Tudja meg, <a href=\"%2$s\">hogyan frissítheti a PHP-t</a>."
+
+#~ msgid ""
+#~ "Manually enter shipping rate IDs to exclude, separated by \"|\". If a rate "
+#~ "includes the \"|\" character, replace it with \"%|%\". You may also use "
+#~ "wildcards, such as \"FedEx*\". Useful if you are working with shipping "
+#~ "methods that retrieve real-time rates. <strong>Important</strong>: Real-time"
+#~ " rate IDs may change over time &ndash; use at your own risk!"
+#~ msgstr ""
+#~ "Adja meg kézzel a kizárandó szállítási díjazonosítókat, „|” jellel "
+#~ "elválasztva. Ha egy díj tartalmazza a „|” karaktert, cserélje „%|%”-re. "
+#~ "Használhat helyettesítő karaktereket is, például „FedEx*”. Hasznos, ha valós"
+#~ " idejű díjakat lekérő szállítási módszerekkel dolgozik. "
+#~ "<strong>Fontos</strong>: A valós idejű díjazonosítók idővel változhatnak "
+#~ "&ndash; csak saját felelősségre használja!"

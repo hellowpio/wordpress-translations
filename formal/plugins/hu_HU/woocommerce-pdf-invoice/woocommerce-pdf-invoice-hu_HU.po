@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce PDF Invoices 5.0.7\n"
+"Project-Id-Version: WooCommerce PDF Invoices 5.1.2\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:50:48+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,270 +18,78 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: WooCommerce PDF Invoices\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 5.0.7\n"
+"X-Plugin-Version: 5.1.2\n"
 
 #. Plugin Name of the plugin
-#: woocommerce-pdf-invoice.php assets/templates/systemstatus.php:9
 msgid "WooCommerce PDF Invoices"
 msgstr "WooCommerce PDF-számlák"
 
 #. Plugin URI of the plugin
-#: woocommerce-pdf-invoice.php
 msgid "https://woocommerce.com/products/pdf-invoices/"
 msgstr "https://woocommerce.com/products/pdf-invoices/"
 
 #. Description of the plugin
-#: woocommerce-pdf-invoice.php
 msgid ""
 "Attach a PDF Invoice to the completed order email and allow invoices to be "
 "downloaded from customer's My Account page."
-msgstr ""
-"Csatoljon egy PDF-számlát a teljesített rendelés e-mailjéhez, és "
-"engedélyezze a számlák letöltését az ügyfél Saját fiók oldaláról."
+msgstr "Csatoljon egy PDF-számlát a teljesített rendelés e-mailjéhez, és engedélyezze a számlák letöltését az ügyfél Saját fiók oldaláról."
 
 #. Author of the plugin
-#: woocommerce-pdf-invoice.php
 msgid "Andrew Benbow"
 msgstr "Andrew Benbow"
 
 #. Author URI of the plugin
-#: woocommerce-pdf-invoice.php
 msgid "http://www.chromeorange.co.uk"
 msgstr "http://www.chromeorange.co.uk"
 
-#: assets/templates/systemstatus.php:10
-msgid "This section shows information about WooCommerce PDF Invoice settings."
-msgstr "Ez a szakasz a WooCommerce PDF-számla beállításainak adatait mutatja."
-
-#: classes/class-pdf-admin-functions.php:124
+#: classes/class-pdf-admin-functions.php:95
 msgid "Update PDF Meta"
 msgstr "PDF metaadatok frissítése"
 
-#: classes/class-pdf-admin-functions.php:141
+#: classes/class-pdf-admin-functions.php:112
 msgid "Create Invoice(s)"
-msgstr "Számla(k) létrehozása"
+msgstr "Számlák létrehozása"
 
-#: classes/class-pdf-admin-functions.php:142
+#: classes/class-pdf-admin-functions.php:113
 msgid "Create and Email Invoice(s)"
-msgstr "Számla(k) létrehozása és e-mailben küldése"
+msgstr "Számlák létrehozása és küldése e-mailben"
 
-#: classes/class-pdf-admin-functions.php:143
+#: classes/class-pdf-admin-functions.php:114
 msgid "Email Invoice(s)"
-msgstr "Számla(k) e-mailben küldése"
+msgstr "Számlák küldése e-mailben"
 
-#: classes/class-pdf-admin-functions.php:144
-msgid "Bulk Export PDFs"
-msgstr "PDF-ek tömeges exportálása"
-
-#: classes/class-pdf-admin-functions.php:161
+#: classes/class-pdf-admin-functions.php:131
 msgid "Delete Invoice(s)"
-msgstr "Számla(k) törlése"
+msgstr "Számlák törlése"
 
-#: classes/class-pdf-admin-functions.php:285 classes/class-pdf-debug.php:203
+#: classes/class-pdf-admin-functions.php:196 classes/class-pdf-debug.php:120
 msgid "Invoice information changed. <br/>Previous details : "
-msgstr "A számlaadatok megváltoztak. <br/>Korábbi adatok : "
+msgstr "A számlaadatok megváltoztak. <br/>Korábbi részletek: "
 
-#: classes/class-pdf-admin-functions.php:460
-#: classes/class-pdf-order-meta-box.php:376
+#: classes/class-pdf-admin-functions.php:361
+#: classes/class-pdf-order-meta-box.php:219
 msgid "Invoice deleted. <br/>Previous details : "
-msgstr "Számla törölve. <br/>Korábbi adatok : "
+msgstr "Számla törölve. <br/>Korábbi részletek: "
 
-#: classes/class-pdf-admin-functions.php:657
-#, php-format
-msgid "%s invoice created."
-msgid_plural "%s invoices created."
-msgstr[0] ""
-msgstr[1] ""
-
-#: classes/class-pdf-admin-functions.php:661
-#, php-format
-msgid "%s order has been queued for invoicing."
-msgid_plural "%s orders have been queued for invoicing."
-msgstr[0] ""
-msgstr[1] ""
-
-#: classes/class-pdf-admin-functions.php:665
-#, php-format
-msgid "%s invoice has been emailed."
-msgid_plural "%s invoices have been emailed."
-msgstr[0] ""
-msgstr[1] ""
-
-#: classes/class-pdf-admin-functions.php:669
-#, php-format
-msgid "%s invoice has been deleted."
-msgid_plural "%s invoices have been deleted."
-msgstr[0] ""
-msgstr[1] ""
-
-#: classes/class-pdf-admin-functions.php:673
-#, php-format
-msgid "%s invoice has been updated."
-msgid_plural "%s invoices have been updated."
-msgstr[0] ""
-msgstr[1] ""
-
-#. translators: %s: orders count
-#: classes/class-pdf-admin-functions.php:694
-#, php-format
-msgid "%s invoice added to zip file."
-msgid_plural "%s invoices added to zip file."
-msgstr[0] ""
-msgstr[1] ""
-
-#. translators: %s: orders count
-#: classes/class-pdf-admin-functions.php:694
-#, php-format
-msgid "Download the zipfile from <a href=\"%1$s/%2$s.zip\">%3$s.zip</a>"
-msgstr "Töltse le a zip fájlt innen: <a href=\"%1$s/%2$s.zip\">%3$s.zip</a>"
-
-#: classes/class-pdf-admin-functions.php:697
-msgid ""
-"Zip file creation failed. Check the log in the WooCommerce System Status "
-"logs tab."
-msgstr ""
-"A zip fájl létrehozása nem sikerült. Ellenőrizze a naplót a WooCommerce "
-"Rendszerállapot naplók fülén."
-
-#: classes/class-pdf-admin-functions.php:876
-#: classes/class-pdf-admin-functions.php:883
-msgid "Attach PDF Invoice to this email"
-msgstr "PDF-számla csatolása ehhez az e-mailhez"
-
-#: classes/class-pdf-admin-functions.php:877
-#: classes/class-pdf-admin-functions.php:884
-msgid "Attach PDF Invoice to this email if an invoice is available?"
-msgstr "PDF-számla csatolása ehhez az e-mailhez, ha elérhető számla?"
-
-#: classes/class-pdf-admin-functions.php:890
-msgid "Choose PDF Invoice tempate for this email."
-msgstr "Válasszon PDF-számla sablont ehhez az e-mailhez."
-
-#: classes/class-pdf-admin-functions.php:891
-msgid ""
-"Set the invoice template to use for the PDF attached to this email. Defaults"
-" to template"
-msgstr ""
-"Állítsa be az ehhez az e-mailhez csatolt PDF-hez használandó számlasablont. "
-"Alapértelmezés: template"
-
-#: classes/class-pdf-admin-functions.php:984
-#: classes/class-pdf-admin-functions.php:992
-#: classes/class-pdf-admin-functions.php:995 classes/class-pdf-debug.php:243
-#: classes/class-pdf-debug.php:251 classes/class-pdf-debug.php:254
-#: classes/class-pdf-functions-class.php:1725
-#: classes/class-pdf-functions-class.php:1727
-msgid "============================================="
-msgstr "============================================="
-
-#: classes/class-pdf-admin-functions.php:986 classes/class-pdf-debug.php:245
-msgid "PDF Invoice Log"
-msgstr "PDF-számla napló"
-
-#: classes/class-pdf-debug.php:48 classes/class-pdf-debug.php:50
+#: classes/class-pdf-debug.php:40
 msgid "Invoice Meta"
-msgstr "Számla metaadatok"
+msgstr "Számla-metaadatok"
 
-#: classes/class-pdf-debug.php:92 classes/class-pdf-debug.php:137
+#: classes/class-pdf-debug.php:65
 msgid ""
 "Please ensure you are aware of any potential legal issues before changing "
 "this information.<br />Changing the \"Invoice Number\" field IS NOT "
 "RECOMMENDED, changing this could cause duplicate invoice numbers."
-msgstr ""
-"Mielőtt módosítja ezeket az információkat, győződjön meg arról, hogy "
-"tisztában van az esetleges jogi következményekkel.<br />A \"Számlaszám\" "
-"mező módosítása NEM AJÁNLOTT, a módosítás duplikált számlaszámokat okozhat."
+msgstr "Mielőtt módosítja ezeket az információkat, győződjön meg arról, hogy tisztában van az esetleges jogi következményekkel.<br />A „Számlaszám” mező módosítása NEM AJÁNLOTT, a módosítás duplikált számlaszámokat okozhat."
 
-#: classes/class-pdf-email-admin-invoice.php:30
-msgid "Admin PDF invoice"
-msgstr "Admin PDF-számla"
+#: classes/class-pdf-debug.php:158 classes/class-pdf-debug.php:166
+#: classes/class-pdf-debug.php:169 classes/class-pdf-export.php:192
+msgid "============================================="
+msgstr "============================================="
 
-#: classes/class-pdf-email-admin-invoice.php:31
-msgid ""
-"This email, if enabled, will send a one time email to the address specified "
-"at the point the invoice is created."
-msgstr ""
-"Ez az e-mail, ha engedélyezve van, egyszeri levelet küld a számla "
-"létrehozásakor megadott címre."
-
-#: classes/class-pdf-email-admin-invoice.php:66
-#: classes/class-pdf-email-customer-invoice.php:60
-msgid "Your invoice for order #{order_number} on {site_title} is attached"
-msgstr ""
-"Csatoltuk a(z) {site_title} oldalon leadott #{order_number} rendelésre "
-"vonatkozó számláját"
-
-#: classes/class-pdf-email-admin-invoice.php:75
-#: classes/class-pdf-email-customer-invoice.php:69
-msgid "Your invoice for order #{order_number} is attached"
-msgstr "Csatoltuk a #{order_number} rendelés számláját"
-
-#: classes/class-pdf-email-admin-invoice.php:104
-#: classes/class-pdf-email-customer-invoice.php:98
-msgid "Thanks for using {site_address}!"
-msgstr "Köszönjük, hogy a {site_address} szolgáltatást használja!"
-
-#. translators: %s: list of placeholders
-#: classes/class-pdf-email-admin-invoice.php:190
-#: classes/class-pdf-email-customer-invoice.php:176
-#, php-format
-msgid "Available placeholders: %s"
-msgstr "Elérhető helyőrzők: %s"
-
-#: classes/class-pdf-email-admin-invoice.php:199
-msgid "Recipient"
-msgstr "Címzett"
-
-#: classes/class-pdf-email-admin-invoice.php:202
-#, php-format
-msgid "Enter recipients (comma separated) for this email. Defaults to %s."
-msgstr ""
-"Adja meg az e-mail címzetteit (vesszővel elválasztva). Alapértelmezés: %s."
-
-#: classes/class-pdf-email-admin-invoice.php:207
-#: classes/class-pdf-email-customer-invoice.php:179
-msgid "Subject"
-msgstr "Tárgy"
-
-#: classes/class-pdf-email-admin-invoice.php:215
-#: classes/class-pdf-email-customer-invoice.php:187
-msgid "Email heading"
-msgstr "E-mail fejléc"
-
-#: classes/class-pdf-email-admin-invoice.php:223
-#: classes/class-pdf-email-customer-invoice.php:195
-msgid "Subject (paid)"
-msgstr "Tárgy (fizetve)"
-
-#: classes/class-pdf-email-admin-invoice.php:231
-#: classes/class-pdf-email-customer-invoice.php:203
-msgid "Email heading (paid)"
-msgstr "E-mail fejléc (fizetve)"
-
-#: classes/class-pdf-email-admin-invoice.php:239
-#: classes/class-pdf-email-customer-invoice.php:211
-msgid "Additional content"
-msgstr "További tartalom"
-
-#: classes/class-pdf-email-admin-invoice.php:240
-#: classes/class-pdf-email-customer-invoice.php:212
-msgid "Text to appear below the main email content."
-msgstr "A fő e-mail tartalom alatt megjelenő szöveg."
-
-#: classes/class-pdf-email-admin-invoice.php:242
-#: classes/class-pdf-email-customer-invoice.php:214
-msgid "N/A"
-msgstr "N/A"
-
-#: classes/class-pdf-email-admin-invoice.php:248
-#: classes/class-pdf-email-customer-invoice.php:220
-msgid "Email type"
-msgstr "E-mail típusa"
-
-#: classes/class-pdf-email-admin-invoice.php:250
-#: classes/class-pdf-email-customer-invoice.php:222
-msgid "Choose which format of email to send."
-msgstr "Válassza ki, milyen formátumú e-mailt küldjön."
+#: classes/class-pdf-debug.php:160 classes/class-pdf-export.php:194
+msgid "PDF Invoice Log"
+msgstr "PDF-számlanapló"
 
 #: classes/class-pdf-email-customer-invoice.php:32
 msgid "Customer PDF invoice"
@@ -289,753 +97,636 @@ msgstr "Vásárlói PDF-számla"
 
 #: classes/class-pdf-email-customer-invoice.php:33
 msgid "Email for customer with order details and PDF invoice attached."
-msgstr ""
-"Ügyfélnek küldött e-mail a rendelés részleteivel és csatolt PDF-számlával."
+msgstr "E-mail a vásárlónak a rendelés részleteivel és csatolt PDF-számlával."
 
-#: classes/class-pdf-functions-class.php:725
+#: classes/class-pdf-email-customer-invoice.php:60
+msgid "Your invoice for order #{order_number} on {site_title} is attached"
+msgstr ""
+"Csatoltuk a(z) {site_title} oldalon leadott #{order_number} rendelésre "
+"vonatkozó számláját"
+
+#: classes/class-pdf-email-customer-invoice.php:69
+msgid "Your invoice for order #{order_number} is attached"
+msgstr "Csatoltuk a #{order_number} rendelés számláját"
+
+#: classes/class-pdf-email-customer-invoice.php:98
+msgid "Thanks for using {site_address}!"
+msgstr "Köszönjük, hogy a {site_address} webhelyet használja!"
+
+#. translators: %s: list of placeholders
+#: classes/class-pdf-email-customer-invoice.php:176
+msgid "Available placeholders: %s"
+msgstr "Elérhető helyőrzők: %s"
+
+#: classes/class-pdf-email-customer-invoice.php:179
+msgid "Subject"
+msgstr "Tárgy"
+
+#: classes/class-pdf-email-customer-invoice.php:187
+msgid "Email heading"
+msgstr "E-mail címsor"
+
+#: classes/class-pdf-email-customer-invoice.php:195
+msgid "Subject (paid)"
+msgstr "Tárgy (fizetve)"
+
+#: classes/class-pdf-email-customer-invoice.php:203
+msgid "Email heading (paid)"
+msgstr "E-mail címsor (fizetve)"
+
+#: classes/class-pdf-email-customer-invoice.php:211
+msgid "Additional content"
+msgstr "További tartalom"
+
+#: classes/class-pdf-email-customer-invoice.php:212
+msgid "Text to appear below the main email content."
+msgstr "A fő e-mail-tartalom alatt megjelenő szöveg."
+
+#: classes/class-pdf-email-customer-invoice.php:214
+msgid "N/A"
+msgstr "N/A"
+
+#: classes/class-pdf-email-customer-invoice.php:220
+msgid "Email type"
+msgstr "E-mail típusa"
+
+#: classes/class-pdf-email-customer-invoice.php:222
+msgid "Choose which format of email to send."
+msgstr "Válassza ki, milyen formátumú e-mailt küldjön."
+
+#: classes/class-pdf-export.php:19
+msgid "ZipArchive exists : "
+msgstr "ZipArchive elérhető: "
+
+#: classes/class-pdf-export.php:20
+msgid "gzcompress exists : "
+msgstr "gzcompress elérhető: "
+
+#: classes/class-pdf-export.php:50
+msgid "redirect_to : "
+msgstr "redirect_to: "
+
+#: classes/class-pdf-export.php:51
+msgid "action : "
+msgstr "művelet: "
+
+#: classes/class-pdf-export.php:52
+msgid "Order IDs : "
+msgstr "Rendelés ID-k: "
+
+#: classes/class-pdf-export.php:76
+msgid "$zip_file : "
+msgstr "$zip_file: "
+
+#: classes/class-pdf-export.php:102
+msgid "Export failed, cannot open : "
+msgstr "Az exportálás sikertelen, nem nyitható meg: "
+
+#. translators: %s: orders count
+#: classes/class-pdf-export.php:161
+msgid "%s invoice added to zip file."
+msgid_plural "%s invoices added to zip file."
+msgstr[0] "%s számla hozzáadva a ZIP-fájlhoz."
+msgstr[1] "%s számla hozzáadva a ZIP-fájlhoz."
+
+#. translators: %s: orders count
+#: classes/class-pdf-export.php:161
+msgid "Download the zipfile from <a href=\"%1$s/%2$s.zip\">%3$s.zip</a>"
+msgstr "Töltse le a ZIP-fájlt innen: <a href=\"%1$s/%2$s.zip\">%3$s.zip</a>"
+
+#: classes/class-pdf-export.php:164
+msgid ""
+"Zip file creation failed. Check the log in the WooCommerce System Status "
+"logs tab."
+msgstr ""
+"A zip fájl létrehozása nem sikerült. Ellenőrizze a naplót a WooCommerce "
+"Rendszerállapot naplók fülén."
+
+#: classes/class-pdf-functions-class.php:472
 msgid "Send PDF"
 msgstr "PDF küldése"
 
-#: classes/class-pdf-functions-class.php:751
+#: classes/class-pdf-functions-class.php:490
 msgid "Download PDF"
 msgstr "PDF letöltése"
 
-#: classes/class-pdf-functions-class.php:766
+#: classes/class-pdf-functions-class.php:504
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Nincs megfelelő jogosultsága az oldal eléréséhez."
 
-#: classes/class-pdf-functions-class.php:767
+#: classes/class-pdf-functions-class.php:505
 msgid "You have taken too long. Please go back and retry."
 msgstr "Túl sok idő telt el. Kérjük, lépjen vissza, és próbálja újra."
 
-#: classes/class-pdf-functions-class.php:803
-#: classes/settings/class-pdf-settings-class.php:57
+#: classes/class-pdf-functions-class.php:536
+#: classes/class-pdf-settings-class.php:44
 msgid "PDF Invoice"
 msgstr "PDF-számla"
 
-#: classes/class-pdf-functions-class.php:1012
-#: classes/class-pdf-functions-class.php:1016
-#: classes/settings/class-pdf-settings-class.php:293
-#: classes/settings/class-pdf-settings-class.php:297
-#, php-format
-msgid "<p class=\"pdf-download\">%s</p>"
-msgstr "<p class=\"pdf-download\">%s</p>"
+#: classes/class-pdf-functions-class.php:660
+msgid "<p class=\"pdf-download\">Download your invoice : "
+msgstr "<p class=\"pdf-download\">Számla letöltése: "
 
-#: classes/class-pdf-order-meta-box.php:42
-#: classes/class-pdf-order-meta-box.php:44
+#: classes/class-pdf-functions-class.php:662
+msgid "</p>"
+msgstr "</p>"
+
+#: classes/class-pdf-help.php:17
+msgid "Create and modify your invoice templates"
+msgstr "Számlasablonok létrehozása és módosítása"
+
+#: classes/class-pdf-help.php:20
+msgid "Installation and Updating"
+msgstr "Telepítés és frissítés"
+
+#: classes/class-pdf-help.php:21
+msgid "Setup and Configuration"
+msgstr "Beállítás és konfiguráció"
+
+#: classes/class-pdf-help.php:23
+msgid "Date Format"
+msgstr "Dátumformátum"
+
+#: classes/class-pdf-help.php:24
+msgid "Testing Invoice Layouts"
+msgstr "Számlaelrendezések tesztelése"
+
+#: classes/class-pdf-help.php:25
+msgid "PDF File Name Parameters"
+msgstr "PDF-fájlnév paraméterei"
+
+#: classes/class-pdf-help.php:26
+msgid "PDF Invoice Number Suffix"
+msgstr "PDF-számlaszám-utótag"
+
+#: classes/class-pdf-help.php:29
+msgid "Create Invoices for Existing Orders"
+msgstr "Számlák létrehozása meglévő rendelésekhez"
+
+#: classes/class-pdf-help.php:30
+msgid "Order Screen"
+msgstr "Rendelési képernyő"
+
+#: classes/class-pdf-help.php:31
+msgid "Usage"
+msgstr "Használat"
+
+#: classes/class-pdf-help.php:32
+msgid "Customization"
+msgstr "Testreszabás"
+
+#: classes/class-pdf-help.php:34
+msgid "Copy the template to your theme"
+msgstr "Másolja a sablonmintát a sablonjába"
+
+#: classes/class-pdf-help.php:35
+msgid "Add new placeholders"
+msgstr "Új helyőrzők hozzáadása"
+
+#: classes/class-pdf-help.php:36
+msgid "Using the included fonts"
+msgstr "A mellékelt betűtípusok használata"
+
+#: classes/class-pdf-help.php:37
+msgid "Using Google Fonts"
+msgstr "Google Fonts használata"
+
+#: classes/class-pdf-help.php:38
+msgid "Using a True Type font"
+msgstr "Egy True Type betűtípus használata"
+
+#: classes/class-pdf-help.php:41
+msgid "Using Hooks and Filters"
+msgstr "Hookok és szűrők használata"
+
+#: classes/class-pdf-help.php:42
+msgid "Translating PDF Invoice"
+msgstr "PDF számla fordítása"
+
+#: classes/class-pdf-help.php:43
+msgid "FAQ"
+msgstr "GYIK"
+
+#: classes/class-pdf-help.php:45
+msgid "Are PDFs stored in a secure way?"
+msgstr "A PDF-ek biztonságos módon vannak tárolva?"
+
+#: classes/class-pdf-help.php:48
+msgid "Bulk Exporting PDFs"
+msgstr "PDF-ek tömeges exportálása"
+
+#: classes/class-pdf-help.php:49
+msgid "Feedback and feature requests"
+msgstr "Visszajelzés és funkciókérések"
+
+#: classes/class-pdf-help.php:50
+msgid "Questions &amp; Support"
+msgstr "Kérdések &amp; támogatás"
+
+#: classes/class-pdf-order-meta-box.php:49
 msgid "Invoice Details"
 msgstr "Számla részletei"
 
-#: classes/class-pdf-order-meta-box.php:87
-#: classes/class-pdf-order-meta-box.php:161
+#: classes/class-pdf-order-meta-box.php:66
 msgid "Invoice Number:"
 msgstr "Számlaszám:"
 
-#: classes/class-pdf-order-meta-box.php:97
-#: classes/class-pdf-order-meta-box.php:171
+#: classes/class-pdf-order-meta-box.php:72
 msgid "Invoice Date:"
 msgstr "Számla dátuma:"
 
-#: classes/class-pdf-order-meta-box.php:109
-#: classes/class-pdf-order-meta-box.php:183
+#: classes/class-pdf-order-meta-box.php:102
 msgid "Download Invoice"
 msgstr "Számla letöltése"
 
-#: classes/class-pdf-order-meta-box.php:113
-#: classes/class-pdf-order-meta-box.php:187
-msgid "Email Invoice"
-msgstr "Számla e-mailben küldése"
-
-#: classes/class-pdf-order-meta-box.php:215
-msgid "Invoice downloaded manually."
-msgstr "Számla manuálisan letöltve."
-
-#: classes/class-pdf-order-meta-box.php:239
-#: classes/class-pdf-order-meta-box.php:320
+#: classes/class-pdf-order-meta-box.php:172
 msgid "Invoice emailed to customer manually."
-msgstr "Számla manuálisan e-mailben elküldve az ügyfélnek."
+msgstr "A számlát manuálisan e-mailben küldték el a vásárlónak."
 
-#: classes/class-pdf-order-meta-box.php:339
+#: classes/class-pdf-order-meta-box.php:191
 msgid "Invoice created manually."
 msgstr "Számla manuálisan létrehozva."
 
-#: classes/class-pdf-order-meta-box.php:421
-msgid "PDF invoice emailed to customer."
-msgstr "PDF-számla e-mailben elküldve az ügyfélnek."
+#: classes/class-pdf-order-meta-box.php:237
+msgid "Order updated and PDF invoice emailed."
+msgstr "A megrendelés frissítve, a PDF-számla e-mailben elküldve."
 
-#: classes/class-pdf-order-meta-box.php:422
-msgid "PDF invoice deleted."
-msgstr "PDF-számla törölve."
-
-#: classes/class-pdf-order-meta-box.php:423
-msgid "PDF invoice created manually."
-msgstr "PDF-számla manuálisan létrehozva."
-
-#: classes/class-pdf-order-meta-box.php:424
-msgid "PDF invoice downloaded."
-msgstr "PDF-számla letöltve."
-
-#: classes/class-pdf-send-pdf-class.php:152
+#: classes/class-pdf-send-pdf-class.php:97
 msgid "here"
 msgstr "itt"
 
-#: classes/class-pdf-send-pdf-class.php:226
+#: classes/class-pdf-send-pdf-class.php:155
 msgid "PDF Invoice Body : "
-msgstr "PDF-számla törzse : "
+msgstr "PDF-számla törzse: "
 
-#: classes/class-pdf-send-pdf-class.php:379
-msgid "PDF Terms Body : "
-msgstr "PDF feltételek szövege : "
-
-#: classes/class-pdf-send-pdf-class.php:1065
-msgid "Registered Name : "
-msgstr "Bejegyzett név : "
-
-#: classes/class-pdf-send-pdf-class.php:1094
-msgid "Registered Office : "
-msgstr "Bejegyzett székhely : "
-
-#: classes/class-pdf-send-pdf-class.php:1123
-msgid "Company Number : "
-msgstr "Cégjegyzékszám : "
-
-#: classes/class-pdf-send-pdf-class.php:1152
-#: classes/class-pdf-send-pdf-class.php:1304
-#: classes/class-pdf-send-pdf-class.php:1306
+#: classes/class-pdf-send-pdf-class.php:897
+#: classes/class-pdf-send-pdf-class.php:899 templates/template.php:94
 msgid "VAT Number : "
-msgstr "ÁFA-szám : "
+msgstr "áfaszám: "
 
-#: classes/class-pdf-send-pdf-class.php:1386
-msgid "Shipment Tracking"
-msgstr "Küldeménykövetés"
-
-#: classes/class-pdf-send-pdf-class.php:1425
-msgid "Shipped Via:"
-msgstr "Fuvarozó:"
-
-#: classes/class-pdf-send-pdf-class.php:1434
-msgid "Tracking ID:"
-msgstr "Követési azonosító:"
-
-#: classes/class-pdf-send-pdf-class.php:1443
-msgid "Shipped On:"
-msgstr "Feladás dátuma:"
-
-#: classes/class-pdf-send-pdf-class.php:1577
-#: classes/class-pdf-send-pdf-class.php:1739
-#: classes/class-pdf-send-pdf-class.php:1969
-#, php-format
-msgid "Booking ID : %d"
-msgstr "Foglalási azonosító : %d"
-
-#: classes/class-pdf-send-pdf-class.php:1578
-#: classes/class-pdf-send-pdf-class.php:1740
-#: classes/class-pdf-send-pdf-class.php:1970
-#, php-format
-msgid "Booking Date : %s"
-msgstr "Foglalás dátuma : %s"
-
-#: classes/class-pdf-send-pdf-class.php:2276
-msgid "Note:"
-msgstr "Megjegyzés:"
-
-#: classes/class-pdf-send-pdf-class.php:2294
-msgid "Subtotal"
-msgstr "Részösszeg"
-
-#: classes/class-pdf-send-pdf-class.php:2312
-msgid "Shipping"
-msgstr "Szállítás"
-
-#: classes/class-pdf-send-pdf-class.php:2370
-msgid "Coupons used"
-msgstr "Felhasznált kuponok"
-
-#: classes/class-pdf-send-pdf-class.php:2391
-msgid "Discount:"
-msgstr "Kedvezmény:"
-
-#: classes/class-pdf-send-pdf-class.php:2429
-msgid "Total Tax"
-msgstr "Adó összesen"
-
-#: classes/class-pdf-send-pdf-class.php:2463
-msgid "Grand Total"
-msgstr "Végösszeg"
-
-#: classes/class-pdf-send-pdf-class.php:2587
-msgid "Invoice"
-msgstr "Számla"
-
-#: classes/class-pdf-send-pdf-class.php:2596
-msgid "Invoice No."
-msgstr "Számlaszám"
-
-#: classes/class-pdf-send-pdf-class.php:2605
-msgid "Order No."
-msgstr "Rendelésszám"
-
-#: classes/class-pdf-send-pdf-class.php:2614
-msgid "Invoice Date"
-msgstr "Számla dátuma"
-
-#: classes/class-pdf-send-pdf-class.php:2623
-msgid "Order Date"
-msgstr "Rendelés dátuma"
-
-#: classes/class-pdf-send-pdf-class.php:2632
-msgid "Supplied By"
-msgstr "Szállító"
-
-#: classes/class-pdf-send-pdf-class.php:2641
-msgid "Billing Details"
-msgstr "Számlázási adatok"
-
-#: classes/class-pdf-send-pdf-class.php:2650
-msgid "Shipping Details"
-msgstr "Szállítási adatok"
-
-#: classes/class-pdf-send-pdf-class.php:2666
-msgid "Payment Method"
-msgstr "Fizetési mód"
-
-#: classes/class-pdf-send-pdf-class.php:2675
-msgid "Shipping Method"
-msgstr "Szállítási mód"
-
-#: classes/class-pdf-send-pdf-class.php:2691
+#: classes/class-pdf-send-pdf-class.php:950
+#: classes/class-pdf-send-pdf-class.php:1977
 msgid "Order Details"
 msgstr "Rendelés részletei"
 
-#: classes/class-pdf-send-pdf-class.php:2700
+#: classes/class-pdf-send-pdf-class.php:952
+#: classes/class-pdf-send-pdf-class.php:1986
 msgid "Qty"
 msgstr "Mennyiség"
 
-#: classes/class-pdf-send-pdf-class.php:2709
+#: classes/class-pdf-send-pdf-class.php:953
+#: classes/class-pdf-send-pdf-class.php:1995
 msgid "Product"
 msgstr "Termék"
 
-#: classes/class-pdf-send-pdf-class.php:2718
-msgid "Price Ex."
-msgstr "Ár (nettó)"
+#: classes/class-pdf-send-pdf-class.php:954
+msgid "Price Ex"
+msgstr "Ár adó nélkül"
 
-#: classes/class-pdf-send-pdf-class.php:2727
+#: classes/class-pdf-send-pdf-class.php:955
+#: classes/class-pdf-send-pdf-class.php:2013
 msgid "Total Ex."
-msgstr "Összesen (nettó)"
+msgstr "Nettó összeg"
 
-#: classes/class-pdf-send-pdf-class.php:2736
+#: classes/class-pdf-send-pdf-class.php:956
+#: classes/class-pdf-send-pdf-class.php:2022
 msgid "Tax"
 msgstr "Adó"
 
-#: classes/class-pdf-send-pdf-class.php:2745
+#: classes/class-pdf-send-pdf-class.php:957
+#: classes/class-pdf-send-pdf-class.php:2031
 msgid "Price Inc"
 msgstr "Ár (bruttó)"
 
-#: classes/class-pdf-send-pdf-class.php:2754
+#: classes/class-pdf-send-pdf-class.php:958
+#: classes/class-pdf-send-pdf-class.php:2040
 msgid "Total Inc"
 msgstr "Összesen (bruttó)"
 
-#: classes/class-pdf-send-pdf-class.php:2773
+#: classes/class-pdf-send-pdf-class.php:1038
+#: classes/class-pdf-send-pdf-class.php:1268 docs/filters.php:386
+msgid "Booking ID : %d"
+msgstr "Foglalási azonosító : %d"
+
+#: classes/class-pdf-send-pdf-class.php:1039
+#: classes/class-pdf-send-pdf-class.php:1269
+msgid "Booking Date : %s"
+msgstr "Foglalás dátuma: %s"
+
+#: classes/class-pdf-send-pdf-class.php:1578
+msgid "Note:"
+msgstr "Megjegyzés:"
+
+#: classes/class-pdf-send-pdf-class.php:1598
+msgid "Subtotal"
+msgstr "Részösszeg"
+
+#: classes/class-pdf-send-pdf-class.php:1618
+msgid "Shipping"
+msgstr "Szállítás"
+
+#: classes/class-pdf-send-pdf-class.php:1654
+msgid "Coupons used"
+msgstr "Felhasznált kuponok"
+
+#: classes/class-pdf-send-pdf-class.php:1678
+msgid "Discount:"
+msgstr "Kedvezmény:"
+
+#: classes/class-pdf-send-pdf-class.php:1724
+msgid "Total Tax"
+msgstr "Adó összesen"
+
+#: classes/class-pdf-send-pdf-class.php:1767
+msgid "Grand Total"
+msgstr "Végösszeg"
+
+#: classes/class-pdf-send-pdf-class.php:1891
+msgid "Invoice No."
+msgstr "Számlaszám"
+
+#: classes/class-pdf-send-pdf-class.php:1900
+msgid "Order No."
+msgstr "Sorrend"
+
+#: classes/class-pdf-send-pdf-class.php:1909
+msgid "Invoice Date"
+msgstr "Számla dátuma"
+
+#: classes/class-pdf-send-pdf-class.php:1918
+msgid "Order Date"
+msgstr "Rendelés dátuma"
+
+#: classes/class-pdf-send-pdf-class.php:1927 templates/template.php:78
+msgid "Billing Details"
+msgstr "Számlázási adatok"
+
+#: classes/class-pdf-send-pdf-class.php:1936 templates/template.php:85
+msgid "Shipping Details"
+msgstr "Szállítási adatok"
+
+#: classes/class-pdf-send-pdf-class.php:1952
+msgid "Payment Method"
+msgstr "Fizetési mód"
+
+#: classes/class-pdf-send-pdf-class.php:1961
+msgid "Shipping Method"
+msgstr "Szállítási mód"
+
+#: classes/class-pdf-send-pdf-class.php:2004
+msgid "Price Ex."
+msgstr "Ár (nettó)"
+
+#: classes/class-pdf-send-pdf-class.php:2059
 msgid "Registered Name "
 msgstr "Bejegyzett név "
 
-#: classes/class-pdf-send-pdf-class.php:2790
+#: classes/class-pdf-send-pdf-class.php:2076
 msgid "Registered Office "
 msgstr "Bejegyzett székhely "
 
-#: classes/class-pdf-send-pdf-class.php:2807
+#: classes/class-pdf-send-pdf-class.php:2093
 msgid "Company Number "
 msgstr "Cégjegyzékszám "
 
-#: classes/class-pdf-send-pdf-class.php:2824
+#: classes/class-pdf-send-pdf-class.php:2110
 msgid "VAT Number "
-msgstr "ÁFA-szám "
+msgstr "áfaszám "
 
-#: classes/class-pdf-send-pdf-class.php:2854
-#: classes/settings/class-pdf-settings-class.php:838
-msgid "PAID IN FULL"
-msgstr "TELJESEN KIFIZETVE"
-
-#: classes/class-pdf-send-pdf-class.php:3061
+#: classes/class-pdf-send-pdf-class.php:2255
 msgid "Test Email with PDF Attachment"
 msgstr "Teszt e-mail PDF-melléklettel"
 
-#: classes/class-pdf-send-pdf-class.php:3062
+#: classes/class-pdf-send-pdf-class.php:2256
 msgid ""
 "A PDF should be attached to this email to confirm that the PDF is being "
 "created and attached correctly"
-msgstr ""
-"Ehhez az e-mailhez PDF-nek kell csatolva lennie, hogy megerősítse, hogy a "
-"PDF megfelelően készül és csatolódik"
+msgstr "Ehhez az e-mailhez PDF-fájlt kell csatolni, hogy ellenőrizhesse, megfelelően készül-e el és csatolódik-e a PDF"
 
-#: classes/class-show-hidden-order-meta.php:31
-msgid "Order Meta"
-msgstr "Rendelés metaadatai"
-
-#: classes/class-show-hidden-order-meta.php:49
-msgid "Key"
-msgstr "Kulcs"
-
-#: classes/class-show-hidden-order-meta.php:50
-msgid "Value"
-msgstr "Érték"
-
-#: classes/helper-functions-class.php:120
-msgid ""
-"Enter your template filename, do not add a file extension, use only letters,"
-" numbers, _ and -"
-msgstr ""
-"Adja meg a sablonfájl nevét; ne adjon hozzá fájlkiterjesztést, csak betűket,"
-" számokat, _ és - jeleket használjon"
-
-#: classes/helper-functions-class.php:127
-msgid "Duplicate the PDF template file"
-msgstr "PDF sablonfájl duplikálása"
-
-#: classes/settings/admin-functions-tab.php:17
-msgid "Send test email with PDF attachment"
-msgstr "Teszt e-mail küldése PDF-melléklettel"
-
-#: classes/settings/admin-functions-tab.php:22
-msgid "Enter email address"
-msgstr "Adja meg az e-mail-címet"
-
-#: classes/settings/admin-functions-tab.php:29
-msgid "Send test email with PDF Attachment"
-msgstr "Teszt e-mail küldése PDF-melléklettel"
-
-#: classes/settings/admin-functions-tab.php:39
-#: classes/settings/admin-functions-tab.php:51
-msgid "Create Invoices For Past Orders"
-msgstr "Számlák létrehozása korábbi rendelésekhez"
-
-#: classes/settings/admin-functions-tab.php:40
-msgid ""
-"This option will create invoices for any orders that are complete and don't "
-"have an invoice number.<br />The process runs in the background in batches "
-"to avoid any server timeouts."
-msgstr ""
-"Ez az opció számlákat hoz létre minden olyan befejezett rendeléshez, "
-"amelynek nincs számlaszáma.<br />A folyamat a háttérben, kötegekben fut, "
-"hogy elkerülje a szerver időtúllépéseket."
-
-#: classes/settings/admin-functions-tab.php:44
-#: classes/settings/admin-functions-tab.php:67
-msgid "Type 'confirm' to create invoices for past orders."
-msgstr ""
-"Írja be, hogy 'confirm', a korábbi rendelésekhez tartozó számlák "
-"létrehozásához."
-
-#: classes/settings/admin-functions-tab.php:62
-#: classes/settings/admin-functions-tab.php:74
-msgid "Create And Email Invoices For Past Orders"
-msgstr "Számlák létrehozása és e-mailben elküldése korábbi rendelésekhez"
-
-#: classes/settings/admin-functions-tab.php:63
-msgid ""
-"This option will create invoices for any orders that are complete and don't "
-"have an invoice number.<br />The invoice will be emailed to the customer. "
-"The process runs in the background in batches to avoid any server "
-"timeouts.<br /><strong>Warning : sending large numbers of emails in short "
-"periods can cause deliverability issues.</strong>"
-msgstr ""
-"Ez az opció számlákat hoz létre minden olyan befejezett rendeléshez, "
-"amelynek nincs számlaszáma.<br />A számlát e-mailben elküldjük az ügyfélnek."
-" A folyamat a háttérben, kötegekben fut, hogy elkerülje a szerver "
-"időtúllépéseket.<br /><strong>Figyelmeztetés: nagy mennyiségű e-mail rövid "
-"időn belüli küldése kézbesítési problémákat okozhat.</strong>"
-
-#: classes/settings/admin-functions-tab.php:85
-msgid "Delete Invoice Information"
-msgstr "Számlainformációk törlése"
-
-#: classes/settings/admin-functions-tab.php:86
-msgid "This is an unrecoverable option, use with caution."
-msgstr "Ez nem visszavonható opció, óvatosan használja."
-
-#: classes/settings/admin-functions-tab.php:87
-msgid ""
-"You can delete the invoice information store in each order.<br /><strong>The"
-" information can only be recovered using a backup of your database. USE WITH"
-" CAUTION!</strong>"
-msgstr ""
-"Törölheti az egyes rendelésekben tárolt számlainformációkat.<br /><strong>Az"
-" információ csak az adatbázis biztonsági mentéséből állítható vissza. "
-"ÓVATOSAN HASZNÁLJA!</strong>"
-
-#: classes/settings/admin-functions-tab.php:91
-msgid ""
-"Type 'confirm' to confirm you understand that this will delete all of the "
-"invoice information stored in each order."
-msgstr ""
-"Írja be, hogy 'confirm', ezzel megerősítve, hogy megértette: ez törli az "
-"egyes rendelésekben tárolt összes számlainformációt."
-
-#: classes/settings/admin-functions-tab.php:98
-msgid "Delete invoice information from orders and reset invoice numbers"
-msgstr ""
-"Számlainformációk törlése a rendelésekből és a számlaszámok visszaállítása"
-
-#: classes/settings/admin-functions-tab.php:109
-msgid "Fix Invoice dates"
-msgstr "Számladátumok javítása"
-
-#: classes/settings/admin-functions-tab.php:110
-msgid ""
-"<strong>This is an unrecoverable option, use with caution.</strong> The "
-"process runs in the background in batches to avoid any server timeouts."
-msgstr ""
-"<strong>Ez nem visszavonható opció, óvatosan használja.</strong> A folyamat "
-"a háttérben, kötegekben fut, hogy elkerülje a szerver időtúllépéseket."
-
-#: classes/settings/admin-functions-tab.php:111
-msgid ""
-"You can update the invoice date and date format using this option.<br "
-"/><strong>This change can only be undone using a backup of your database. "
-"USE WITH CAUTION!</strong>"
-msgstr ""
-"Ezzel az opcióval frissítheti a számla dátumát és dátumformátumát.<br "
-"/><strong>Ezt a módosítást csak az adatbázis biztonsági mentésével lehet "
-"visszavonni. ÓVATOSAN HASZNÁLJA!</strong>"
-
-#: classes/settings/admin-functions-tab.php:115
-msgid ""
-"Type 'confirm' to confirm you understand that this will change correct the "
-"date and date format for ALL invoices, based on the current PDF Invoice date"
-" settings."
-msgstr ""
-"Írja be, hogy 'confirm', ezzel megerősítve, hogy megértette: ez a jelenlegi "
-"PDF számla dátumbeállításai alapján MINDEN számlán módosítja a dátumot és a "
-"dátumformátumot."
-
-#: classes/settings/admin-functions-tab.php:122
-msgid "Fix Invoice Dates"
-msgstr "Számladátumok javítása"
-
-#: classes/settings/class-pdf-settings-class.php:119
+#: classes/class-pdf-settings-class.php:98
 msgid "WooCommerce PDF Invoice"
-msgstr "WooCommerce PDF számla"
+msgstr "WooCommerce PDF-számla"
 
-#: classes/settings/class-pdf-settings-class.php:126
-#, php-format
+#: classes/class-pdf-settings-class.php:105
 msgid ""
 "A required PHP function is not installed, please contact your host and ask "
 "them to install <a href=\"%s\" target=\"_blank\">ICONV</a>"
-msgstr ""
-"Egy szükséges PHP-függvény nincs telepítve, vegye fel a kapcsolatot a "
-"szolgáltatójával, és kérje meg, hogy telepítsék a <a href=\"%s\" "
-"target=\"_blank\">ICONV</a>-ot"
+msgstr "Egy szükséges PHP-függvény nincs telepítve. Vegye fel a kapcsolatot a szolgáltatójával, és kérje meg, hogy telepítse az <a href=\"%s\" target=\"_blank\">ICONV</a>-ot"
 
-#: classes/settings/class-pdf-settings-class.php:139
+#: classes/class-pdf-settings-class.php:118
 msgid "PDF Settings"
 msgstr "PDF beállítások"
 
-#: classes/settings/class-pdf-settings-class.php:140
-msgid "Admin Functions"
-msgstr "Admin funkciók"
+#: classes/class-pdf-settings-class.php:119
+msgid "Debugging Information"
+msgstr "Hibakeresési információk"
 
-#: classes/settings/class-pdf-settings-class.php:141
+#: classes/class-pdf-settings-class.php:120
 msgid "Help and Customisation"
 msgstr "Súgó és testreszabás"
 
-#: classes/settings/class-pdf-settings-class.php:155 html/pdf-layout.php:17
+#: classes/class-pdf-settings-class.php:134
 msgid "Configure the WooCommerce PDF settings here, refer to the <a href=\""
-msgstr "A WooCommerce PDF beállításait itt konfigurálhatja, lásd a <a href=\\\""
+msgstr "Itt állíthatja be a WooCommerce PDF-beállításokat; lásd a <a href=\""
 
-#: classes/settings/class-pdf-settings-class.php:209
-msgid "PDF Debugging"
-msgstr "PDF hibakeresés"
+#: classes/class-pdf-settings-class.php:188
+msgid "Choose which additional emails to attach the PDF to."
+msgstr "Válassza ki, hogy mely további e-mailekhez csatolja a PDF-fájlt."
 
-#: classes/settings/class-pdf-settings-class.php:210
+#: classes/class-pdf-settings-class.php:189
 msgid ""
-"If you have problems with PDFs turn on debugging. DO NOT leave this option "
-"on, the log will get very large very quickly."
-msgstr ""
-"Ha problémái vannak a PDF-ekkel, kapcsolja be a hibakeresést. NE hagyja ezt "
-"az opciót bekapcsolva, a napló nagyon gyorsan nagyon nagyra nő."
+"By default the PDF Invoice extension will only atach to the Completed Order "
+"Email, if you want to attach it to other emails sent by WooCommerce then "
+"make selections here(ctrl-click or cmd-click for multiple selections)"
+msgstr "Alapértelmezés szerint a PDF Invoice bővítmény csak a befejezett megrendelésről szóló e-mailhez csatolja a fájlt. Ha a WooCommerce által küldött más e-mailekhez is szeretné csatolni, itt válassza ki őket (több elem kijelöléséhez kattintás közben tartsa lenyomva a Ctrl vagy a Cmd billentyűt)"
 
-#: classes/settings/class-pdf-settings-class.php:224
-msgid "Choose which PDF Generator to use."
-msgstr "Válassza ki, melyik PDF-generátort szeretné használni."
-
-#: classes/settings/class-pdf-settings-class.php:225
-msgid ""
-"By default the PDF Invoice extension will DOMPDF. DOMPDF does not support "
-"RTL invoices. If you are using RTL in your invoice then switch to MPDF. See "
-"docs for more information."
-msgstr ""
-"Alapértelmezés szerint a PDF Invoice bővítmény a DOMPDF-et használja. A "
-"DOMPDF nem támogatja az RTL számlákat. Ha RTL-t használ a számlán, váltson "
-"MPDF-re. További információ a dokumentációban."
-
-#: classes/settings/class-pdf-settings-class.php:240
+#: classes/class-pdf-settings-class.php:216
 msgid "When to create the invoice"
 msgstr "Mikor készüljön el a számla"
 
-#: classes/settings/class-pdf-settings-class.php:241
+#: classes/class-pdf-settings-class.php:217
 msgid ""
-"Set the point during the transaction when the invoice should be created."
-msgstr "Állítsa be, a tranzakció mely pontján készüljön el a számla."
+"Do you want to create the invoice details when the order is paid for "
+"(processing) or wait until you have shipped (completed), from version 1.2.1 "
+"you can also create an invoice when the order status is On-Hold"
+msgstr "Szeretné létrehozni a számla adatait a megrendelés fizetésekor (feldolgozás alatt), vagy megvárja a kiszállítást (befejezve)? Az 1.2.1-es verziótól kezdve a számla akkor is létrehozható, amikor a megrendelés állapota visszatartva."
 
-#: classes/settings/class-pdf-settings-class.php:256
-msgid "Show \"Download Invoice\" option on the Thank You page?"
-msgstr "Megjelenjen a \\\"Számla letöltése\\\" opció a Köszönjük oldalon?"
+#: classes/class-pdf-settings-class.php:232
+msgid "Show \"Download Invoice\" link on Thank You page?"
+msgstr "Megjelenjen a „Számla letöltése” link a köszönőoldalon?"
 
-#: classes/settings/class-pdf-settings-class.php:257
-msgid "Add an option to download the invoice to the Thank You page"
-msgstr "Adjon lehetőséget a számla letöltésére a Köszönjük oldalon"
-
-#: classes/settings/class-pdf-settings-class.php:272
-msgid "Text for the Thank You page"
-msgstr "Szöveg a Köszönjük oldalhoz"
-
-#: classes/settings/class-pdf-settings-class.php:273
-msgid ""
-"This text is used on the Thank You page to display a link to download the "
-"invoice."
-msgstr ""
-"Ezt a szöveget a Köszönjük oldalon használjuk a számla letöltésére mutató "
-"hivatkozás megjelenítéséhez."
-
-#: classes/settings/class-pdf-settings-class.php:301
-msgid "Use a link or button on the Thank You page?"
-msgstr "Hivatkozás vagy gomb legyen a Köszönjük oldalon?"
-
-#: classes/settings/class-pdf-settings-class.php:302
+#: classes/class-pdf-settings-class.php:233
 msgid ""
 "Add a link to download the invoice to the Thank You for your order page"
-msgstr ""
-"Adjon hivatkozást a számla letöltéséhez a Köszönjük a rendelését oldalra"
+msgstr "Adjon hozzá egy számlaletöltési linket a rendelés köszönőoldalához"
 
-#: classes/settings/class-pdf-settings-class.php:312
-#, php-format
-msgid "Link Format : %s"
-msgstr "Hivatkozás formátuma : %s"
-
-#: classes/settings/class-pdf-settings-class.php:313
-#, php-format
-msgid "Button Format : %s"
-msgstr "Gomb formátuma : %s"
-
-#: classes/settings/class-pdf-settings-class.php:324
+#: classes/class-pdf-settings-class.php:253
 msgid "Attach a PDF Invoice to the email or include a download link?"
-msgstr ""
-"PDF számlát csatoljon az e-mailhez, vagy tartalmazzon letöltési hivatkozást?"
+msgstr "PDF-számla csatolása az e-mailhez vagy letöltési link hozzáadása?"
 
-#: classes/settings/class-pdf-settings-class.php:325
+#: classes/class-pdf-settings-class.php:254
 msgid ""
 "Choose how you want to send the invoice to your customer, PDF attachment, "
 "PDF attachment and download link or just download link"
-msgstr ""
-"Válassza ki, hogyan szeretné elküldeni a számlát az ügyfélnek: PDF-"
-"melléklet, PDF-melléklet és letöltési hivatkozás, vagy csak letöltési "
-"hivatkozás"
+msgstr "Válassza ki, hogyan szeretné elküldeni a számlát a vásárlónak: PDF-mellékletként, PDF-mellékletként és letöltési linkkel, vagy csak letöltési linkkel"
 
-#: classes/settings/class-pdf-settings-class.php:341
+#: classes/class-pdf-settings-class.php:267
+msgid "Download your PDF Invoice [[PDFINVOICEDOWNLOADURL]]"
+msgstr "PDF-számla letöltése [[PDFINVOICEDOWNLOADURL]]"
+
+#: classes/class-pdf-settings-class.php:276
 msgid "Invoice download URL format"
-msgstr "A számla letöltési URL formátuma"
+msgstr "A számlaletöltési URL-formátuma"
 
-#: classes/settings/class-pdf-settings-class.php:342
-msgid "This text is used in emails to display a link to download the invoice."
-msgstr ""
-"Ezt a szöveget az e-mailekben használjuk a számla letöltésére mutató "
-"hivatkozás megjelenítéséhez."
+#: classes/class-pdf-settings-class.php:277
+msgid ""
+"This text is used in emails and the \"thank you\" page to display a link to "
+"download the invoice."
+msgstr "Ez a szöveg az e-mailekben és a köszönőoldalon jelenik meg, és a számla letöltésére szolgáló linket tartalmazza."
 
-#: classes/settings/class-pdf-settings-class.php:352
-#, php-format
-msgid "Current URL Format : %s"
-msgstr "Jelenlegi URL formátum : %s"
+#: classes/class-pdf-settings-class.php:287
+msgid "Current URL Format :"
+msgstr "Aktuális URL-formátum:"
 
-#: classes/settings/class-pdf-settings-class.php:353
-#, php-format
-msgid "Default URL Format : %s"
-msgstr "Alapértelmezett URL formátum : %s"
+#: classes/class-pdf-settings-class.php:288
+msgid "Default URL Format :"
+msgstr "Alapértelmezett URL-formátum:"
 
-#: classes/settings/class-pdf-settings-class.php:363
+#: classes/class-pdf-settings-class.php:297
 msgid "Paper Size"
 msgstr "Papírméret"
 
-#: classes/settings/class-pdf-settings-class.php:364
+#: classes/class-pdf-settings-class.php:298
 msgid ""
 "Set the paper size of your PDF invoice, this is only really used if your "
 "customer prints it out."
-msgstr ""
-"Állítsa be a PDF számla papírméretét, ez csak akkor számít, ha az ügyfél "
-"kinyomtatja."
+msgstr "Állítsa be a PDF-számla papírméretét, ez csak akkor számít, ha a vásárló kinyomtatja."
 
-#: classes/settings/class-pdf-settings-class.php:379
+#: classes/class-pdf-settings-class.php:313
 msgid "Paper Orientation"
 msgstr "Papírtájolás"
 
-#: classes/settings/class-pdf-settings-class.php:380
+#: classes/class-pdf-settings-class.php:314
 msgid ""
 "Set the paper orientation of your PDF invoice, this is only really used if "
 "your customer prints it out."
-msgstr ""
-"Állítsa be a PDF számla papírtájolását, ez csak akkor számít, ha az ügyfél "
-"kinyomtatja."
+msgstr "Állítsa be a PDF-számla papírtájolását, ez csak akkor számít, ha a vásárló kinyomtatja."
 
-#: classes/settings/class-pdf-settings-class.php:394
+#: classes/class-pdf-settings-class.php:328
 msgid "PDF Logo"
-msgstr "PDF logó"
+msgstr "PDF-logó"
 
-#: classes/settings/class-pdf-settings-class.php:395
-#, php-format
+#: classes/class-pdf-settings-class.php:329
 msgid ""
-"Add a logo to your PDF, otherwise it will just use your WordPress title %s. "
-"PNG, JPEG or GIF"
-msgstr ""
-"Adjon logót a PDF-hez, ellenkező esetben a WordPress-címét használja, %s. "
-"PNG, JPEG vagy GIF"
+"Add a logo to your PDF, otherwise it will just use your WordPress title %s"
+msgstr "Adjon hozzá logót a PDF-fájlhoz, különben a WordPress webhelycíme jelenik meg: %s"
 
-#: classes/settings/class-pdf-settings-class.php:403
+#: classes/class-pdf-settings-class.php:337
 msgid "Copy the URL to your logo into here or upload using the button"
 msgstr "Másolja ide a logó URL-jét, vagy töltse fel a gomb használatával"
 
-#: classes/settings/class-pdf-settings-class.php:405
+#: classes/class-pdf-settings-class.php:339
 msgid "Upload Your Logo"
-msgstr "Töltse fel a logóját"
+msgstr "Logó feltöltése"
 
-#: classes/settings/class-pdf-settings-class.php:414
-msgid "Store Logo"
-msgstr "Logó tárolása"
-
-#: classes/settings/class-pdf-settings-class.php:424
-msgid ""
-"Set this to \"Yes\" to store the logo with each invoice. If you change your "
-"logo then invoices created prior to the change will keep the old logo.<br "
-"/>Set this option to \"No\" to always use the newest logo, even on old "
-"invoices."
-msgstr ""
-"Állítsa ezt \\\"Igen\\\"-re a logó minden számlával való tárolásához. Ha "
-"megváltoztatja a logót, a változás előtt létrehozott számlák a régi logót "
-"fogják megőrizni.<br />Állítsa ezt az opciót \\\"Nem\\\"-re, ha mindig a "
-"legújabb logót szeretné használni, még a régi számlákon is."
-
-#: classes/settings/class-pdf-settings-class.php:432
-msgid "Set Resources Folder"
-msgstr "Erőforrásmappa beállítása"
-
-#: classes/settings/class-pdf-settings-class.php:442
-msgid ""
-"If the logo is not showing on the invoice then try changing this option to "
-"Yes before setting the Remote Logo option to yes."
-msgstr ""
-"Ha a logó nem jelenik meg a számlán, próbálja meg ezt az opciót Igenre "
-"állítani, mielőtt a Távoli logó opciót igenre állítaná."
-
-#: classes/settings/class-pdf-settings-class.php:443
-#, php-format
-msgid ""
-"The default resource folder is %s.<br />Set this option to Yes to change the"
-" resource folder to %s"
-msgstr ""
-"Az alapértelmezett erőforrásmappa %s.<br />Állítsa ezt az opciót Igenre az "
-"erőforrásmappa %s-re változtatásához"
-
-#: classes/settings/class-pdf-settings-class.php:451
+#: classes/class-pdf-settings-class.php:349
 msgid "Remote Logo"
 msgstr "Távoli logó"
 
-#: classes/settings/class-pdf-settings-class.php:461
+#: classes/class-pdf-settings-class.php:350
 msgid ""
-"If this is set to Yes, PDF Invoice will access remote sites for images, CSS and font files as required.\n"
+"Allow remote images, if your logo is not hosted on your site then set this "
+"to 'YES'."
+msgstr "Engedélyezze a távoli képeket. Ha a logó nem az Ön webhelyén található, állítsa ezt „IGEN” értékre."
+
+#: classes/class-pdf-settings-class.php:359
+msgid ""
+"If this is set to Yes, PDF Invoice will access remote sites for images and CSS files as required.\n"
 "                                <br /><strong>==== IMPORTANT ====</strong><br />\n"
 "                                Setting this to yes may allow malicious php code in remote html pages to be executed by your server with your account privileges. This setting may increase the risk of system exploit. \n"
 "                                <br /><strong>Do not change this settings without understanding the consequences.</strong></p>"
-msgstr ""
-"Ha ez Igenre van állítva, a PDF számla a szükséges képek, CSS- és betűkészletfájlok eléréséhez távoli oldalakat fog használni.\n"
-"                                <br /><strong>==== FONTOS ====</strong><br />\n"
-"                                Ennek igenre állítása lehetővé teheti, hogy távoli html-oldalak rosszindulatú php kódja az Ön szerverén, az Ön fiókjogosultságaival fusson le. Ez a beállítás növelheti a rendszer kihasználásának kockázatát. \n"
-"                                <br /><strong>Ne módosítsa ezt a beállítást a következmények ismerete nélkül.</strong></p>"
+msgstr "Ha ez „igen” értékre van állítva, a PDF Invoice szükség esetén távoli webhelyekről éri el a képeket és a CSS-fájlokat.\n                                <br /><strong>==== FONTOS ====</strong><br />\n                                Az „igen” érték beállítása lehetővé teheti, hogy a távoli HTML-oldalakban található rosszindulatú PHP-kód az Ön szerverén, az Ön fiókjának jogosultságaival fusson. Ez a beállítás növelheti a rendszer feltörésének kockázatát.\n                                <br /><strong>Ne módosítsa ezt a beállítást a következmények megértése nélkül.</strong></p>"
 
-#: classes/settings/class-pdf-settings-class.php:472
+#: classes/class-pdf-settings-class.php:370
 msgid "Font Subsetting"
 msgstr "Betűkészlet-részhalmazolás"
 
-#: classes/settings/class-pdf-settings-class.php:473
+#: classes/class-pdf-settings-class.php:371
 msgid ""
 "Enable font subsetting, which embeds only used characters into the file, set"
 " this to 'YES' and test to confirm the invoice looks correct."
-msgstr ""
-"Engedélyezze a betűkészlet-részhalmazolást, amely csak a használt "
-"karaktereket ágyazza be a fájlba; állítsa ezt 'IGEN'-re, és tesztelje, hogy "
-"a számla helyesen jelenik-e meg."
+msgstr "Engedélyezze a betűkészlet-részhalmazolást, amely csak a használt karaktereket ágyazza be a fájlba; állítsa ezt „IGEN” értékre, és tesztelje, hogy a számla helyesen jelenik-e meg"
 
-#: classes/settings/class-pdf-settings-class.php:482
+#: classes/class-pdf-settings-class.php:380
 msgid ""
 "Setting this option to yes will significantly reduce the PDF file size. You "
 "should check the invoice to confirm that all characters are displayed "
 "correctly."
-msgstr ""
-"Ennek igenné állítása jelentősen csökkenti a PDF fájlméretét. Ellenőrizze a "
-"számlát, hogy minden karakter megfelelően jelenik-e meg."
+msgstr "Ha ezt a beállítást igenre állítja, jelentősen csökken a PDF-fájl mérete. Ellenőrizze a számlát, hogy minden karakter megfelelően jelenik-e meg."
 
-#: classes/settings/class-pdf-settings-class.php:489
+#: classes/class-pdf-settings-class.php:387
 msgid "Company Name"
 msgstr "Cég neve"
 
-#: classes/settings/class-pdf-settings-class.php:490
+#: classes/class-pdf-settings-class.php:388
 msgid "The name of your company, this shows at the top of the invoice"
 msgstr "A cég neve; a számla tetején jelenik meg"
 
-#: classes/settings/class-pdf-settings-class.php:497
+#: classes/class-pdf-settings-class.php:395
 msgid "Your company name"
 msgstr "A cég neve"
 
-#: classes/settings/class-pdf-settings-class.php:504
+#: classes/class-pdf-settings-class.php:402
 msgid "Company Information"
 msgstr "Céginformációk"
 
-#: classes/settings/class-pdf-settings-class.php:510
+#: classes/class-pdf-settings-class.php:408
 msgid "Your company contact info"
 msgstr "Cége elérhetőségei"
 
-#: classes/settings/class-pdf-settings-class.php:517
+#: classes/class-pdf-settings-class.php:415
 msgid "Registered Name"
 msgstr "Bejegyzett név"
 
-#: classes/settings/class-pdf-settings-class.php:525
+#: classes/class-pdf-settings-class.php:423
 msgid "The legal name of your company"
-msgstr "Cége jogi neve"
+msgstr "Az Ön cégének hivatalos neve"
 
-#: classes/settings/class-pdf-settings-class.php:532
+#: classes/class-pdf-settings-class.php:430
 msgid "Registered Office"
 msgstr "Bejegyzett székhely"
 
-#: classes/settings/class-pdf-settings-class.php:538
+#: classes/class-pdf-settings-class.php:436
 msgid "The legal registered address of your company"
 msgstr "Cége bejegyzett címe"
 
-#: classes/settings/class-pdf-settings-class.php:545
+#: classes/class-pdf-settings-class.php:443
 msgid "Company Number"
 msgstr "Cégjegyzékszám"
 
-#: classes/settings/class-pdf-settings-class.php:553
+#: classes/class-pdf-settings-class.php:451
 msgid "Government issued company ID"
 msgstr "Hatóság által kiadott cégazonosító"
 
-#: classes/settings/class-pdf-settings-class.php:560
+#: classes/class-pdf-settings-class.php:458
 msgid "Tax Number"
 msgstr "Adószám"
 
-#: classes/settings/class-pdf-settings-class.php:561
+#: classes/class-pdf-settings-class.php:459
 msgid ""
 "If your buisness is registered for tax purposes your tax office may have "
 "issued you with a number (in the UK this would be your VAT number)"
-msgstr ""
-"Ha vállalkozása adózási célból regisztrált, az adóhatóság kiadhatott egy "
-"számot (az Egyesült Királyságban ez az Ön ÁFA-száma lenne)"
+msgstr "Ha vállalkozása adózási szempontból regisztrálva van, az adóhatóság kiadhatott Önnek egy számot (az Egyesült Királyságban ez az Ön áfaszáma lenne)"
 
-#: classes/settings/class-pdf-settings-class.php:568
+#: classes/class-pdf-settings-class.php:466
 msgid "Govenment issued tax number if you have one"
 msgstr "Hatóság által kiadott adószám, ha van"
 
-#: classes/settings/class-pdf-settings-class.php:576
+#: classes/class-pdf-settings-class.php:474
 msgid "Use Sequential Invoice Numbering"
-msgstr "Szekvenciális számlaszámozás használata"
+msgstr "Folyamatos számlaszámozás használata"
 
-#: classes/settings/class-pdf-settings-class.php:577
+#: classes/class-pdf-settings-class.php:475
 msgid ""
 "By default WooCommerce uses the post->ID as the order number so there will "
 "be gaps in the order number sequence. By setting this to Yes invoice numbers"
@@ -1045,45 +736,40 @@ msgstr ""
 "számként, így a rendelési számok sorozatában lesznek kihagyott számok. Ennek"
 " Igenre állításával a számlaszámok folyamatosak lesznek."
 
-#: classes/settings/class-pdf-settings-class.php:592
+#: classes/class-pdf-settings-class.php:490
 msgid "Reset Invoice Numbering to 1 at the start of each year"
 msgstr "Számlaszámozás visszaállítása 1-re minden év elején"
 
-#: classes/settings/class-pdf-settings-class.php:593
+#: classes/class-pdf-settings-class.php:491
 msgid "Will reset the invoice number to 1 for the first order of the year."
-msgstr "Az év első rendelésénél 1-re állítja a számlaszámot."
+msgstr "Az év első rendelésénél alaphelyzetbe állítja a számlaszámot 1-re."
 
-#: classes/settings/class-pdf-settings-class.php:601
+#: classes/class-pdf-settings-class.php:499
 msgid ""
 "Use this option with caution, check with your local tax office if you are "
 "not sure if you need to use this.<br /><strong>You should include -{{year}} "
 "in the \"Invoice number suffix\" setting</strong>"
-msgstr ""
-"Ezt az opciót körültekintően használja; egyeztessen a helyi adóhivatallal, "
-"ha nem biztos benne, hogy szüksége van-e rá.<br /><strong>A \\\"Számlaszám "
-"utótagja\\\" beállításban szerepeljen a -{{year}}</strong>"
+msgstr "Ezt az opciót körültekintően használja; egyeztessen a helyi adóhivatallal, ha nem biztos benne, hogy szüksége van-e rá.<br /><strong>A „Számlaszám utótagja” beállításban szerepeljen a -{{year}}</strong>"
 
-#: classes/settings/class-pdf-settings-class.php:608
+#: classes/class-pdf-settings-class.php:506
 msgid "Number of first invoice if not 1"
 msgstr "Az első számla sorszáma, ha nem 1"
 
-#: classes/settings/class-pdf-settings-class.php:609
+#: classes/class-pdf-settings-class.php:507
 msgid ""
 "What number would you like on the first invoice? Once you have issued an "
 "invoice changing this will make no difference"
-msgstr ""
-"Milyen szám szerepeljen az első számlán? Miután kiállított egy számlát, "
-"ennek módosítása már nem változtat semmin."
+msgstr "Milyen szám szerepeljen az első számlán? Miután kiállított egy számlát, ennek módosítása már nem változtat semmin"
 
-#: classes/settings/class-pdf-settings-class.php:616
+#: classes/class-pdf-settings-class.php:514
 msgid "What number would you like on the first invoice?"
-msgstr "Milyen sorszámot szeretne az első számlára?"
+msgstr "Milyen sorszámot szeretne az első számlán?"
 
-#: classes/settings/class-pdf-settings-class.php:623
+#: classes/class-pdf-settings-class.php:521
 msgid "Enter a pattern for the invoice number, EG 000000"
 msgstr "Adja meg a számlaszám mintáját, pl. 000000"
 
-#: classes/settings/class-pdf-settings-class.php:624
+#: classes/class-pdf-settings-class.php:522
 msgid ""
 "Set the length of the number part of your invoice number. EG 000000 would "
 "give an invoice number like ABC-000492"
@@ -1091,108 +777,92 @@ msgstr ""
 "Állítsa be a számlaszám számrészének hosszát. Pl. 000000 esetén a számlaszám"
 " így nézne ki: ABC-000492"
 
-#: classes/settings/class-pdf-settings-class.php:638
+#: classes/class-pdf-settings-class.php:536
 msgid "Invoice number prefix"
-msgstr "Számlaszám előtag"
+msgstr "Számlaszám előtagja"
 
-#: classes/settings/class-pdf-settings-class.php:639
+#: classes/class-pdf-settings-class.php:537
 msgid ""
 "Use this field to add a prefix to your invoice numbers. If you want your "
 "invoice number to look like ABC-123 then add ABC- to this field"
-msgstr ""
-"Ezzel a mezővel előtagot adhat a számlaszámokhoz. Ha azt szeretné, hogy a "
-"számlaszám így nézzen ki: ABC-123, akkor adja hozzá az ABC- előtagot ehhez a"
-" mezőhöz"
+msgstr "Ezzel a mezővel előtagot adhat a számlaszámokhoz. Ha azt szeretné, hogy a számlaszám így nézzen ki: ABC-123, akkor adja hozzá az ABC- előtagot ehhez a mezőhöz"
 
-#: classes/settings/class-pdf-settings-class.php:646
+#: classes/class-pdf-settings-class.php:544
 msgid "Add an invoice number prefix"
-msgstr "Számlaszám előtag hozzáadása"
+msgstr "Előtag hozzáadása a számlaszámhoz"
 
-#: classes/settings/class-pdf-settings-class.php:653
+#: classes/class-pdf-settings-class.php:551
 msgid "Invoice number suffix"
-msgstr "Számlaszám utótag"
+msgstr "Számlaszám utótagja"
 
-#: classes/settings/class-pdf-settings-class.php:654
+#: classes/class-pdf-settings-class.php:552
 msgid ""
 "Use this field to add a prefix to your invoice numbers. If you want your "
 "invoice number to look like 123-ABC then add -ABC to this field"
-msgstr ""
-"Ezzel a mezővel előtagot adhat a számlaszámokhoz. Ha azt szeretné, hogy a "
-"számlaszám így nézzen ki: 123-ABC, akkor írja be az -ABC értéket ebbe a "
-"mezőbe"
+msgstr "Ezzel a mezővel utótagot adhat hozzá a számlaszámokhoz. Ha azt szeretné, hogy a számlaszám így nézzen ki: 123-ABC, akkor írja be az -ABC értéket ebbe a mezőbe"
 
-#: classes/settings/class-pdf-settings-class.php:661
+#: classes/class-pdf-settings-class.php:559
 msgid "Add an invoice number prefix suffix"
-msgstr "Számlaszám előtag utótag hozzáadása"
+msgstr "Utótag hozzáadása a számlaszámhoz"
 
-#: classes/settings/class-pdf-settings-class.php:668
+#: classes/class-pdf-settings-class.php:569
 msgid "The next invoice number will be"
 msgstr "A következő számlaszám ez lesz"
 
-#: classes/settings/class-pdf-settings-class.php:669
+#: classes/class-pdf-settings-class.php:570
 msgid ""
 "Use this field to change the next Invoice Number. You MUST increase this "
 "number, you can not save a smaller number than the current number"
-msgstr ""
-"Ezzel a mezővel módosíthatja a következő számlaszámot. Ezt a számot KÖTELEZŐ"
-" növelni, a jelenleginél kisebb számot nem lehet elmenteni"
+msgstr "Ezzel a mezővel módosíthatja a következő számlaszámot. Ezt a számot KÖTELEZŐ növelni; az aktuálisnál kisebb számot nem lehet menteni"
 
-#: classes/settings/class-pdf-settings-class.php:676
+#: classes/class-pdf-settings-class.php:577
 msgid "Next Invoice Number"
 msgstr "Következő számlaszám"
 
-#: classes/settings/class-pdf-settings-class.php:677
+#: classes/class-pdf-settings-class.php:578
 msgid ""
 "Take care changing this number, you may be breaking your local tax law by "
 "having gaps in your invoice numbers.<br />You can only increase the number, "
 "decreasing it could lead to duplicate invoice numbers. "
-msgstr ""
-"Óvatosan módosítsa ezt a számot, a számlaszámokban keletkező kihagyások "
-"sérthetik a helyi adójogszabályokat.<br />A számot csak növelheti, "
-"csökkentése kettőzött számlaszámokhoz vezethet. "
+msgstr "Óvatosan módosítsa ezt a számot, a számlaszámokban keletkező kihagyások sérthetik a helyi adójogszabályokat.<br />A számot csak növelheti, csökkentése duplikált számlaszámokhoz vezethet. "
 
-#: classes/settings/class-pdf-settings-class.php:678
+#: classes/class-pdf-settings-class.php:579
 msgid ""
 "This option has no affect if you have the 'Reset Invoice Numbering to 1 at "
 "the start of each year' set to YES. "
-msgstr ""
-"Ennek az opciónak nincs hatása, ha a 'Reset Invoice Numbering to 1 at the "
-"start of each year' beállítás IGEN értéken van. "
+msgstr "Ennek az opciónak nincs hatása, ha a „Számlaszámozás alaphelyzetbe állítása 1-re minden év elején” beállítás IGEN értékre van állítva. "
 
-#: classes/settings/class-pdf-settings-class.php:685
+#: classes/class-pdf-settings-class.php:591
 msgid "Invoice file name format"
-msgstr "Számla fájlnév formátuma"
+msgstr "A számlafájl nevének formátuma"
 
-#: classes/settings/class-pdf-settings-class.php:686
+#: classes/class-pdf-settings-class.php:592
 msgid ""
 "Set the file name format for your PDF files. Bear in mind that your customer"
 " should be able to identify your invoice easily. Please review the "
 "documentation for accepted variables. Default is "
 "{{company}}-{{invoicenumber}}"
-msgstr ""
-"Állítsa be a PDF fájlok fájlnév-formátumát. Ne feledje, hogy az ügyfélnek "
-"könnyen azonosítania kell a számlát. Tekintse át a dokumentációt az "
-"elfogadott változókról. Alapértelmezés: {{company}}-{{invoicenumber}}"
+msgstr "Állítsa be a PDF-fájlok nevének formátumát. Ne feledje, hogy a vásárló könnyen fel tudja ismerni a számlát. Tekintse át az elfogadott változókról szóló dokumentációt. Alapértelmezett érték: {{company}}-{{invoicenumber}}"
 
-#: classes/settings/class-pdf-settings-class.php:693
+#: classes/class-pdf-settings-class.php:599
 msgid "Invoice filename layout"
-msgstr "Számla fájlnév elrendezése"
+msgstr "A számlafájlnév elrendezése"
 
-#: classes/settings/class-pdf-settings-class.php:701
+#: classes/class-pdf-settings-class.php:607
 msgid "Which date should the invoice use"
 msgstr "Melyik dátumot használja a számla"
 
-#: classes/settings/class-pdf-settings-class.php:702
+#: classes/class-pdf-settings-class.php:608
 msgid ""
 "Do you want the invoice date to be the date of order or the date the order "
 "is completed."
 msgstr "A számla dátuma legyen a rendelés dátuma vagy a teljesítés dátuma."
 
-#: classes/settings/class-pdf-settings-class.php:716
+#: classes/class-pdf-settings-class.php:627
 msgid "Invoice date format"
 msgstr "Számla dátumformátuma"
 
-#: classes/settings/class-pdf-settings-class.php:717
+#: classes/class-pdf-settings-class.php:628
 msgid ""
 "Set the invoice date format, see the docs for further information and "
 "examples."
@@ -1200,39 +870,40 @@ msgstr ""
 "Állítsa be a számla dátumformátumát, további információkért és példákért "
 "lásd a dokumentációt."
 
-#: classes/settings/class-pdf-settings-class.php:724
+#: classes/class-pdf-settings-class.php:635
 msgid "j F, Y"
 msgstr "j F, Y"
 
-#: classes/settings/class-pdf-settings-class.php:734
-msgid "Override WooCommerce settings and always show totals excluding taxed?"
-msgstr ""
-"Felülírja a WooCommerce-beállításokat, és mindig az adó nélkül számolt "
-"végösszegeket jeleníti meg?"
+#: classes/class-pdf-settings-class.php:645
+msgid "PDF Terms Page"
+msgstr "PDF-es feltételoldal"
 
-#: classes/settings/class-pdf-settings-class.php:735
-msgid "Override WooCommerce \"Display prices during basket and checkout\" setting"
-msgstr ""
-"A WooCommerce „Árak megjelenítése a kosárban és a pénztárnál” beállítás "
-"felülírása"
+#: classes/class-pdf-settings-class.php:646
+msgid ""
+"Set a terms page for your PDF invoices, if you set a terms page then an "
+"additional page will be added to the PDF. This terms pages uses a seperate "
+"template file so you can style the terms seperately"
+msgstr "Állítson be egy feltételeket tartalmazó oldalt a PDF-számlákhoz; ha ilyet állít be, a PDF egy további oldallal egészül ki. Ez az oldal külön sablonfájlt használ, így a feltételek külön stílusban formázhatók"
 
-#: classes/settings/class-pdf-settings-class.php:751
+#: classes/class-pdf-settings-class.php:650
+msgid "Select PDF terms page if required"
+msgstr "Válassza ki a PDF-feltételeket tartalmazó oldalt, ha szükséges"
+
+#: classes/class-pdf-settings-class.php:662
 msgid "PDF Creation Method"
-msgstr "PDF létrehozási mód"
+msgstr "PDF-létrehozási mód"
 
-#: classes/settings/class-pdf-settings-class.php:752
+#: classes/class-pdf-settings-class.php:663
 msgid ""
 "If you have problems with PDFs not creating change this option to 'File "
 "only'"
-msgstr ""
-"Ha gond van a PDF-ek létrehozásával, állítsa ezt az opciót 'Csak fájl' "
-"értékre"
+msgstr "Ha gond van a PDF-ek létrehozásával, állítsa ezt az opciót a „Csak fájl” értékre"
 
-#: classes/settings/class-pdf-settings-class.php:767
+#: classes/class-pdf-settings-class.php:678
 msgid "Disable invoice number caching"
-msgstr "A számlaszám-gyorsítótárazás letiltása"
+msgstr "A számlaszámok gyorsítótárazásának kikapcsolása"
 
-#: classes/settings/class-pdf-settings-class.php:768
+#: classes/class-pdf-settings-class.php:679
 msgid ""
 "Set this to 'No' if you are using a caching plugin and you see any "
 "duplicated invoice numbers"
@@ -1240,354 +911,856 @@ msgstr ""
 "Állítsa 'Nem' értékre, ha gyorsítótár-bővítményt használ, és kettőzött "
 "számlaszámokat lát"
 
-#: classes/settings/class-pdf-settings-class.php:783
-msgid "PDF Currency Font"
-msgstr "PDF pénznem betűtípusa"
+#: classes/class-pdf-settings-class.php:694
+msgid "PDF Debugging"
+msgstr "PDF-hibakeresés"
 
-#: classes/settings/class-pdf-settings-class.php:784
+#: classes/class-pdf-settings-class.php:695
+msgid ""
+"If you have problems with PDFs turn on debugging. DO NOT leave this option "
+"on, the log will get very large very quickly."
+msgstr "Ha problémái vannak a PDF-ekkel, kapcsolja be a hibakeresést. NE hagyja bekapcsolva ezt az opciót, mert a naplófájl mérete rövid idő alatt nagyon nagyra nő."
+
+#: classes/class-pdf-settings-class.php:710
+msgid "PDF Currency Font"
+msgstr "A PDF-ben használt pénznem betűtípusa"
+
+#: classes/class-pdf-settings-class.php:711
 msgid ""
 "If your currency symbol is not showing in the PDF you can chose a differnt "
 "font just for the symbol."
-msgstr ""
-"Ha a pénznem jele nem jelenik meg a PDF-ben, választhat külön betűtípust "
-"csak a szimbólumhoz."
+msgstr "Ha a pénznem jele nem jelenik meg a PDF-ben, választhat egy másik betűtípust, amelyet csak a pénznem jeléhez használ."
 
-#: classes/settings/class-pdf-settings-class.php:799
-msgid "Use RTL layout?"
-msgstr "RTL elrendezést használ?"
-
-#: classes/settings/class-pdf-settings-class.php:800
-msgid "Set this to 'Yes' if you want the PDF in RTL layout"
-msgstr "Állítsa 'Igen' értékre, ha a PDF-et RTL elrendezésben szeretné"
-
-#: classes/settings/class-pdf-settings-class.php:815
-msgid "Show Paid In Full overlay on paid invoices?"
-msgstr "„Paid In Full” felirat megjelenítése a kifizetett számlákon?"
-
-#: classes/settings/class-pdf-settings-class.php:816
-msgid ""
-"Set this to 'Yes' if you want a 'Paid In Full' overlay on paid invoices?"
-msgstr ""
-"Állítsa 'Igen' értékre, ha 'Paid In Full' feliratot szeretne a kifizetett "
-"számlákra?"
-
-#: classes/settings/class-pdf-settings-class.php:830
-msgid "Set text for Paid In Full overlay"
-msgstr "„Paid In Full” felirat szövegének beállítása"
-
-#: classes/settings/class-pdf-settings-class.php:831
-msgid "Leave blank to use translatable \"PAID IN FULL\""
-msgstr "Hagyja üresen a fordítható \"PAID IN FULL\" használatához"
-
-#: classes/settings/class-pdf-settings-class.php:846
-msgid "PDF Terms Page"
-msgstr "PDF feltételek oldala"
-
-#: classes/settings/class-pdf-settings-class.php:847
-msgid ""
-"Set a terms page for your PDF invoices, if you set a terms page then an "
-"additional page will be added to the PDF. This terms pages uses a seperate "
-"template file so you can style the terms seperately"
-msgstr ""
-"Állítson be egy feltételek oldalt a PDF-számlákhoz; ha beállítja, a PDF-hez "
-"egy további oldal kerül hozzáadásra. Ez a feltételek oldal külön sablonfájlt"
-" használ, így a feltételek külön formázhatók"
-
-#: classes/settings/class-pdf-settings-class.php:851
-msgid "Select PDF terms page if required"
-msgstr "Válasszon PDF feltételek oldalt, ha szükséges"
-
-#: classes/settings/class-pdf-settings-class.php:867
+#: classes/class-pdf-settings-class.php:730
 msgid "Save Options"
-msgstr "Beállítások mentése"
+msgstr "Opciók mentése"
 
-#: classes/settings/layout-functions-tab.php:75
-msgid "Columns For Order Details Section."
-msgstr "Oszlopok a rendelés részletei szakaszhoz."
+#: classes/class-pdf-template-editor.php:38
+msgctxt "post type general name"
+msgid "PDF Invoice Templates"
+msgstr "PDF-számlasablonok"
 
-#: classes/settings/layout-functions-tab.php:80
-msgid "Use"
-msgstr "Használat"
+#: classes/class-pdf-template-editor.php:39
+msgctxt "post type singular name"
+msgid "PDF Invoice Template"
+msgstr "PDF-számlasablon"
 
-#: classes/settings/layout-functions-tab.php:81
-msgid "Field"
-msgstr "Mező"
+#: classes/class-pdf-template-editor.php:40
+msgctxt "admin menu"
+msgid "PDF Invoice Templates"
+msgstr "PDF-számlasablonok"
 
-#: classes/settings/layout-functions-tab.php:82
-msgid "Title"
-msgstr "Cím"
+#: classes/class-pdf-template-editor.php:41
+msgctxt "add new on admin bar"
+msgid "PDF Invoice Template"
+msgstr "PDF-számlasablon"
 
-#: classes/settings/layout-functions-tab.php:83
-msgid "Width"
-msgstr "Szélesség"
+#: classes/class-pdf-template-editor.php:42
+msgctxt "template"
+msgid "Add New"
+msgstr "Új hozzáadása"
 
-#: classes/settings/layout-functions-tab.php:84
-msgid "Order"
-msgstr "Sorrend"
+#: classes/class-pdf-template-editor.php:43
+msgid "Add New Template"
+msgstr "Új sablonminta hozzáadása"
 
-#: classes/systemstatus/admin-notices.php:43
-msgid "Please check your PDF invoices."
-msgstr "Kérjük, ellenőrizze a PDF-számláit."
+#: classes/class-pdf-template-editor.php:44
+msgid "New Template"
+msgstr "Új sablon"
 
-#: classes/systemstatus/admin-notices.php:44
+#: classes/class-pdf-template-editor.php:45
+msgid "Edit Template"
+msgstr "Sablonminta szerkesztése"
+
+#: classes/class-pdf-template-editor.php:46
+msgid "View Template"
+msgstr "Sablon megtekintése"
+
+#: classes/class-pdf-template-editor.php:47
+msgid "All Templates"
+msgstr "Összes sablon"
+
+#: classes/class-pdf-template-editor.php:48
+msgid "Search Templates"
+msgstr "Sablonok keresése"
+
+#: classes/class-pdf-template-editor.php:49
+msgid "Parent Templates:"
+msgstr "Szülősablonok:"
+
+#: classes/class-pdf-template-editor.php:50
+msgid "No templates found."
+msgstr "Nem találhatók sablonok."
+
+#: classes/class-pdf-template-editor.php:51
+msgid "No templates found in Trash."
+msgstr "Nem találhatók sablonok a lomtárban."
+
+#: classes/class-pdf-template-editor.php:56
+msgid "Description."
+msgstr "Leírás."
+
+#: classes/class-pdf-template-editor.php:99
+msgid "Default template tags"
+msgstr "Alapértelmezett sabloncímkék"
+
+#: classes/class-pdf-template-editor.php:115
+msgid "[[PDFFONTFAMILY]]"
+msgstr "[[PDFFONTFAMILY]]"
+
+#: classes/class-pdf-template-editor.php:122
+msgid "[[TEXTDIRECTION]]"
+msgstr "[[TEXTDIRECTION]]"
+
+#: classes/class-pdf-template-editor.php:129
+msgid "[[PDFLOGO]]"
+msgstr "[[PDFLOGO]]"
+
+#: classes/class-pdf-template-editor.php:136
+msgid "[[PDFCOMPANYNAME]]"
+msgstr "[[PDFCOMPANYNAME]]"
+
+#: classes/class-pdf-template-editor.php:143
+msgid "[[PDFCOMPANYDETAILS]]"
+msgstr "[[PDFCOMPANYDETAILS]]"
+
+#: classes/class-pdf-template-editor.php:150
+msgid "[[PDFINVOICENUMHEADING]]"
+msgstr "[[PDFINVOICENUMHEADING]]"
+
+#: classes/class-pdf-template-editor.php:157
+msgid "[[PDFINVOICENUM]]"
+msgstr "[[PDFINVOICENUM]]"
+
+#: classes/class-pdf-template-editor.php:164
+msgid "[[PDFORDERENUMHEADING]]"
+msgstr "[[PDFORDERENUMHEADING]]"
+
+#: classes/class-pdf-template-editor.php:171
+msgid "[[PDFORDERENUM]]"
+msgstr "[[PDFORDERENUM]]"
+
+#: classes/class-pdf-template-editor.php:178
+msgid "[[PDFINVOICEDATEHEADING]]"
+msgstr "[[PDFINVOICEDATEHEADING]]"
+
+#: classes/class-pdf-template-editor.php:185
+msgid "[[PDFINVOICEDATE]]"
+msgstr "[[PDFINVOICEDATE]]"
+
+#: classes/class-pdf-template-editor.php:192
+msgid "[[PDFORDERDATEHEADING]]"
+msgstr "[[PDFORDERDATEHEADING]]"
+
+#: classes/class-pdf-template-editor.php:199
+msgid "[[PDFORDERDATE]]"
+msgstr "[[PDFORDERDATE]]"
+
+#: classes/class-pdf-template-editor.php:206
+msgid "[[PDFINVOICE_PAYMETHOD_HEADING]]"
+msgstr "[[PDFINVOICE_PAYMETHOD_HEADING]]"
+
+#: classes/class-pdf-template-editor.php:213
+msgid "[[PDFINVOICEPAYMENTMETHOD]]"
+msgstr "[[PDFINVOICEPAYMENTMETHOD]]"
+
+#: classes/class-pdf-template-editor.php:220
+msgid "[[PDFINVOICE_SHIPMETHOD_HEADING]]"
+msgstr "[[PDFINVOICE_SHIPMETHOD_HEADING]]"
+
+#: classes/class-pdf-template-editor.php:227
+msgid "[[PDFSHIPPINGMETHOD]]"
+msgstr "[[PDFSHIPPINGMETHOD]]"
+
+#: classes/class-pdf-template-editor.php:234
+msgid "[[PDFINVOICE_BILLINGDETAILS_HEADING]]"
+msgstr "[[PDFINVOICE_BILLINGDETAILS_HEADING]]"
+
+#: classes/class-pdf-template-editor.php:241
+msgid "[[PDFBILLINGADDRESS]]"
+msgstr "[[PDFBILLINGADDRESS]]"
+
+#: classes/class-pdf-template-editor.php:248
+msgid "[[PDFBILLINGTEL]]"
+msgstr "[[PDFBILLINGTEL]]"
+
+#: classes/class-pdf-template-editor.php:255
+msgid "[[PDFBILLINGEMAIL]]"
+msgstr "[[PDFBILLINGEMAIL]]"
+
+#: classes/class-pdf-template-editor.php:262
+msgid "[[PDFBILLINGVATNUMBER]]"
+msgstr "[[PDFBILLINGVATNUMBER]]"
+
+#: classes/class-pdf-template-editor.php:269
+msgid "[[PDFINVOICE_SHIPPINGDETAILS_HEADING]]"
+msgstr "[[PDFINVOICE_SHIPPINGDETAILS_HEADING]]"
+
+#: classes/class-pdf-template-editor.php:276
+msgid "[[PDFSHIPPINGADDRESS]]"
+msgstr "[[PDFSHIPPINGADDRESS]]"
+
+#: classes/class-pdf-template-editor.php:283
+msgid "[[PDFINVOICE_REGISTEREDNAME_HEADING]]"
+msgstr "[[PDFINVOICE_REGISTEREDNAME_HEADING]]"
+
+#: classes/class-pdf-template-editor.php:290
+msgid "[[PDFREGISTEREDNAME]]"
+msgstr "[[PDFREGISTEREDNAME]]"
+
+#: classes/class-pdf-template-editor.php:297
+msgid "[[PDFINVOICE_REGISTEREDOFFICE_HEADING]]"
+msgstr "[[PDFINVOICE_REGISTEREDOFFICE_HEADING]]"
+
+#: classes/class-pdf-template-editor.php:304
+msgid "[[PDFREGISTEREDADDRESS]]"
+msgstr "[[PDFREGISTEREDADDRESS]]"
+
+#: classes/class-pdf-template-editor.php:311
+msgid "[[PDFINVOICE_COMPANYNUMBER_HEADING]]"
+msgstr "[[PDFINVOICE_COMPANYNUMBER_HEADING]]"
+
+#: classes/class-pdf-template-editor.php:318
+msgid "[[PDFCOMPANYNUMBER]] "
+msgstr "[[PDFCOMPANYNUMBER]] "
+
+#: classes/class-pdf-template-editor.php:325
+msgid "[[PDFINVOICE_VATNUMBER_HEADING]]"
+msgstr "[[PDFINVOICE_VATNUMBER_HEADING]]"
+
+#: classes/class-pdf-template-editor.php:332
+msgid "[[PDFTAXNUMBER]]"
+msgstr "[[PDFTAXNUMBER]]"
+
+#: classes/class-pdf-template-editor.php:339
+msgid "[[PDFINVOICE_ORDERDETAILS_HEADING]]"
+msgstr "[[PDFINVOICE_ORDERDETAILS_HEADING]]"
+
+#: classes/class-pdf-template-editor.php:346
+msgid "[[PDFINVOICE_QTY_HEADING]]"
+msgstr "[[PDFINVOICE_QTY_HEADING]]"
+
+#: classes/class-pdf-template-editor.php:353
+msgid "[[PDFINVOICE_PRODUCT_HEADING]]"
+msgstr "[[PDFINVOICE_PRODUCT_HEADING]]"
+
+#: classes/class-pdf-template-editor.php:360
+msgid "[[PDFINVOICE_PRICEEX_HEADING]]"
+msgstr "[[PDFINVOICE_PRICEEX_HEADING]]"
+
+#: classes/class-pdf-template-editor.php:367
+msgid "[[PDFINVOICE_TOTALEX_HEADING]]"
+msgstr "[[PDFINVOICE_TOTALEX_HEADING]]"
+
+#: classes/class-pdf-template-editor.php:374
+msgid "[[PDFINVOICE_TAX_HEADING]]"
+msgstr "[[PDFINVOICE_TAX_HEADING]]"
+
+#: classes/class-pdf-template-editor.php:381
+msgid "[[PDFINVOICE_PRICEINC_HEADING]]"
+msgstr "[[PDFINVOICE_PRICEINC_HEADING]]"
+
+#: classes/class-pdf-template-editor.php:388
+msgid "[[PDFINVOICE_TOTALINC_HEADING]]"
+msgstr "[[PDFINVOICE_TOTALINC_HEADING]]"
+
+#: classes/class-pdf-template-editor.php:395
+msgid "[[ORDERINFO]]"
+msgstr "[[ORDERINFO]]"
+
+#: classes/class-pdf-template-editor.php:402
+msgid "[[PDFBARCODES]]"
+msgstr "[[PDFBARCODES]]"
+
+#: classes/class-pdf-template-editor.php:409
+msgid "[[PDFORDERNOTES]]"
+msgstr "[[PDFORDERNOTES]]"
+
+#: classes/class-pdf-template-editor.php:416
+msgid "[[PDFORDERTOTALS]]"
+msgstr "[[PDFORDERTOTALS]]"
+
+#: classes/class-pdf-template-editor.php:427
+msgid "Tag"
+msgstr "Címke"
+
+#: classes/class-pdf-template-editor.php:428
+msgid "Description"
+msgstr "Leírás"
+
+#: classes/class-pdf-template-editor.php:429
+msgid "Default"
+msgstr "Alapértelmezett"
+
+#: classes/class-pdf-template-editor.php:430
+msgid "Filter"
+msgstr "Szűrés"
+
+#: classes/class-pdf-template-editor.php:431
+msgid "Translatable?"
+msgstr "Fordítható?"
+
+#: lib/pdf_debugging.php:119
+msgid "Send test email with PDF attachment"
+msgstr "Teszt e-mail küldése PDF-csatolmánnyal"
+
+#: lib/pdf_debugging.php:124
+msgid "Enter email address"
+msgstr "Adja meg az e-mail-címet"
+
+#: lib/pdf_debugging.php:127
+msgid "Send test email with PDF Attachment"
+msgstr "Teszt e-mail küldése PDF-csatolmánnyal"
+
+#: lib/pdf_debugging.php:133 lib/pdf_debugging.php:141
+msgid "Create Invoices For Past Orders"
+msgstr "Számlák létrehozása korábbi rendelésekhez"
+
+#: lib/pdf_debugging.php:134
 msgid ""
-"The PDF generator has been updated, this update may mean your logo is not "
-"displaying on the PDF invoice."
-msgstr ""
-"A PDF-generátort frissítettük; ez a frissítés azt eredményezheti, hogy a "
-"logója nem jelenik meg a PDF-számlán."
+"This option will create invoices for any orders that are complete and don't "
+"have an invoice number. The process runs in the background and should take "
+"no more than 60 seconds to complete"
+msgstr "Ez a beállítás számlát hoz létre minden olyan teljesített rendeléshez, amelyhez még nem tartozik számlaszám. A folyamat a háttérben fut, és legfeljebb 60 másodpercet vesz igénybe"
 
-#: classes/systemstatus/admin-notices.php:45
-#, php-format
+#: lib/pdf_debugging.php:138
+msgid "Type 'confirm' to create invoices for past orders."
+msgstr "A korábbi rendelésekhez tartozó számlák létrehozásához írja be, hogy „confirm”."
+
+#: lib/pdf_debugging.php:148
+msgid "Delete Invoice Information"
+msgstr "Számlainformációk törlése"
+
+#: lib/pdf_debugging.php:149
+msgid "This is an unrecoverable option, use with caution."
+msgstr "Ez a művelet nem vonható vissza, ezért óvatosan használja."
+
+#: lib/pdf_debugging.php:150
 msgid ""
-"<br /><br />If your logo is missing from the invoice you can set the \"Set "
-"Resources Folder\" option to \"Yes\" in the <a href=\"%s\">PDF Invoices "
-"Settings</a>."
-msgstr ""
-"<br /><br />Ha hiányzik a logó a számláról, a <a href=\"%s\">PDF Invoices "
-"Settings</a> menüben a \"Set Resources Folder\" opciót állítsa \"Yes\" "
-"értékre."
+"You can delete the invoice information store in each order. The information "
+"can only be recovered using a backup of your database. USE WITH CAUTION!\""
+msgstr "Törölheti az egyes rendelésekben tárolt számlaadatokat. Ezek az adatok csak az adatbázis biztonsági mentéséből állíthatók vissza. ÓVATOSAN HASZNÁLJA!"
 
-#: classes/systemstatus/admin-notices.php:46
-#, php-format
+#: lib/pdf_debugging.php:154
 msgid ""
-"<br />More information is available in the <a href=\"%s\">PDF Invoices "
-"Documentation</a>."
+"Type 'confirm' to confirm you understand that this will delete all of the "
+"invoice information stored in each order."
+msgstr "Annak megerősítéséhez, hogy megértette: ez törli az egyes rendelésekben tárolt összes számlainformációt, írja be, hogy „confirm”."
+
+#: lib/pdf_debugging.php:157
+msgid "Delete invoice information from orders and reset invoice numbers"
 msgstr ""
-"<br />További információ a <a href=\"%s\">PDF Invoices Documentation</a> "
-"részben található."
+"Számlainformációk törlése a rendelésekből és a számlaszámok visszaállítása"
 
-#: classes/systemstatus/admin-notices.php:49
-msgid ""
-"<br /><br /><strong>If you have set the Remote Logo option to \"Yes\" to fix"
-" a missing logo then you can revert this option back to \"No\" once the "
-"\"Set Resources Folder\" option is set to \"Yes\"</strong>"
-msgstr ""
-"<br /><br /><strong>Ha a hiányzó logó javításához a Remote Logo opciót "
-"\"Yes\" értékre állította, akkor ezt visszaállíthatja \"No\" értékre, miután"
-" a \"Set Resources Folder\" opció \"Yes\" értékre van állítva</strong>"
+#: templates/template.php:57
+msgid "Invoice No. :"
+msgstr "Számlaszám:"
 
-#: classes/systemstatus/system-status-additions-class.php:47
-msgid ""
-"DOMDocument is required, please contact your host to have it installed."
-msgstr ""
-"A DOMDocument szükséges, kérjük, lépjen kapcsolatba a "
-"tárhelyszolgáltatójával a telepítéshez."
+#: templates/template.php:59
+msgid "Order No. :"
+msgstr "Rendelésszám:"
 
-#: classes/systemstatus/system-status-additions-class.php:54
-msgid "PCRE is required with Unicode support (the \\\"u\\\" modifier)."
-msgstr "PCRE szükséges Unicode támogatással (az \"u\" módosító)."
+#: templates/template.php:63
+msgid "Invoice Date :"
+msgstr "Számla dátuma:"
 
-#: classes/systemstatus/system-status-additions-class.php:61
-msgid "Recommended to compress PDF documents."
-msgstr "Javasolt a PDF-dokumentumok tömörítése."
+#: templates/template.php:65
+msgid "Order Date :"
+msgstr "Rendelés dátuma:"
 
-#: classes/systemstatus/system-status-additions-class.php:68
-msgid "Required for bulk exporting invoices"
-msgstr "Szükséges a számlák tömeges exportálásához"
+#: templates/template.php:70
+msgid "Payment Method :"
+msgstr "Fizetési mód:"
 
-#: classes/systemstatus/system-status-additions-class.php:75
-msgid "ICONV is required, please contact your host to have it installed."
-msgstr ""
-"Az ICONV szükséges, kérjük, lépjen kapcsolatba a tárhelyszolgáltatójával a "
-"telepítéshez."
+#: templates/template.php:72
+msgid "Shipping Method :"
+msgstr "Szállítási mód:"
 
-#: classes/systemstatus/system-status-additions-class.php:82
-msgid "Yes"
-msgstr "Igen"
+#: templates/template.php:93
+msgid "Registered Name : "
+msgstr "Bejegyzett név: "
 
-#: classes/systemstatus/system-status-additions-class.php:82
-msgid ""
-"Multibyte Support is required, please contact your host to have it "
-"installed."
-msgstr ""
-"Multibyte támogatás szükséges, kérjük, lépjen kapcsolatba a "
-"tárhelyszolgáltatójával a telepítéshez."
+#: templates/template.php:93
+msgid "Registered Office : "
+msgstr "Bejegyzett székhely: "
 
-#: classes/systemstatus/system-status-additions-class.php:89
-msgid "Required if you have images in your PDFs"
-msgstr "Szükséges, ha a PDF-ekben képek vannak"
+#: templates/template.php:94
+msgid "Company Number : "
+msgstr "Cégjegyzékszám: "
 
-#: classes/systemstatus/system-status-additions-class.php:96
-msgid "None"
-msgstr "Nincs"
-
-#: classes/systemstatus/system-status-additions-class.php:103
-msgid "No status selected"
-msgstr "Nincs státusz kiválasztva"
-
-#: classes/systemstatus/system-status-additions-class.php:141
-msgid "No."
-msgstr "Nem."
-
-#: html/pdf-help.php:54
-msgid "Your theme folder is not writable."
-msgstr "A témakönyvtár nem írható."
-
-#: html/pdf-help.php:59
-msgid ""
-"The theme editor is disabled on this site. You will not be able to edit your"
-" PDF templates from within WordPress."
-msgstr ""
-"A témaszerkesztő le van tiltva ezen a webhelyen. A PDF-sablonokat nem fogja "
-"tudni szerkeszteni a WordPressen belül."
-
-#: html/pdf-help.php:61
-msgid ""
-"Your user account settings may mean the template editor is disabled. Contact"
-" a site administrator."
-msgstr ""
-"Lehet, hogy a felhasználói fiók beállításai miatt a sablonszerkesztő le van "
-"tiltva. Forduljon a webhely adminisztrátorához."
-
-#: html/pdf-help.php:74
-msgid "Template Name"
-msgstr "Sablon neve"
-
-#: html/pdf-help.php:75
-msgid "In plugin folder?"
-msgstr "A bővítmény mappájában?"
-
-#: html/pdf-help.php:76
-msgid "In theme folder?"
-msgstr "A téma mappájában?"
-
-#: html/pdf-help.php:77
-msgid "Action"
-msgstr "Művelet"
-
-#: html/pdf-help.php:78
-msgid "Duplicate?"
-msgstr "Duplikálás?"
-
-#: html/pdf-help.php:104
-msgid "Customise your template file"
-msgstr "Sablonfájl testreszabása"
-
-#: html/pdf-help.php:104
-msgid "Customise"
-msgstr "Testreszabás"
-
-#: html/pdf-help.php:105
-msgid "Customise your template file using the WordPress theme editor"
-msgstr "Sablonfájlját a WordPress témaszerkesztővel szabhatja testre"
-
-#: html/pdf-help.php:113 html/pdf-help.php:114
-msgid "Copy the template file into your theme folder ready for customising."
-msgstr "Másolja a sablonfájlt a téma mappájába a testreszabáshoz."
-
-#: html/pdf-help.php:113
-msgid "Copy"
-msgstr "Másolás"
-
-#: html/pdf-help.php:133
-msgid "Installation and Updating"
-msgstr "Telepítés és frissítés"
-
-#: html/pdf-help.php:134
-msgid "Setup and Configuration"
-msgstr "Beállítás és konfiguráció"
-
-#: html/pdf-help.php:136
-msgid "Date Format"
-msgstr "Dátumformátum"
-
-#: html/pdf-help.php:137
-msgid "Testing Invoice Layouts"
-msgstr "Számlaelrendezések tesztelése"
-
-#: html/pdf-help.php:138
-msgid "PDF File Name Parameters"
-msgstr "PDF fájlnév paraméterei"
-
-#: html/pdf-help.php:139
-msgid "PDF Invoice Number Suffix"
-msgstr "PDF számlaszám utótag"
-
-#: html/pdf-help.php:142
-msgid "Create Invoices for Existing Orders"
-msgstr "Számlák létrehozása meglévő rendelésekhez"
-
-#: html/pdf-help.php:143
-msgid "Order Screen"
-msgstr "Rendelési képernyő"
-
-#: html/pdf-help.php:144
-msgid "Usage"
-msgstr "Használat"
-
-#: html/pdf-help.php:145
-msgid "Customization"
-msgstr "Testreszabás"
-
-#: html/pdf-help.php:147
-msgid "Copy the template to your theme"
-msgstr "Másolja a sablont a témájába"
-
-#: html/pdf-help.php:148
-msgid "Add new placeholders"
-msgstr "Új helyőrzők hozzáadása"
-
-#: html/pdf-help.php:149
-msgid "Using the included fonts"
-msgstr "A mellékelt betűtípusok használata"
-
-#: html/pdf-help.php:150
-msgid "Using Google Fonts"
-msgstr "Google Fonts használata"
-
-#: html/pdf-help.php:151
-msgid "Using a True Type font"
-msgstr "Egy True Type betűtípus használata"
-
-#: html/pdf-help.php:154
-msgid "Using Hooks and Filters"
-msgstr "Hookok és filterek használata"
-
-#: html/pdf-help.php:155
-msgid "Translating PDF Invoice"
-msgstr "PDF számla fordítása"
-
-#: html/pdf-help.php:156
-msgid "FAQ"
-msgstr "GYIK"
-
-#: html/pdf-help.php:158
-msgid "Are PDFs stored in a secure way?"
-msgstr "A PDF-ek biztonságos módon vannak tárolva?"
-
-#: html/pdf-help.php:161
-msgid "Bulk Exporting PDFs"
-msgstr "PDF-ek tömeges exportálása"
-
-#: html/pdf-help.php:162
-msgid "Feedback and feature requests"
-msgstr "Visszajelzés és funkciókérések"
-
-#: html/pdf-help.php:163
-msgid "Questions &amp; Support"
-msgstr "Kérdések &amp; támogatás"
-
-#: html/pdf-layout.php:27
-msgid "Set the CSS for PDF template."
-msgstr "Állítsa be a PDF-sablon CSS-ét."
-
-#: html/pdf-layout.php:75
-msgid "Save Layout Options"
-msgstr "Elrendezési beállítások mentése"
-
-#: woocommerce-pdf-invoice.php:174
+#: woocommerce-pdf-invoice.php:133
 msgid "Support"
 msgstr "Támogatás"
 
-#: woocommerce-pdf-invoice.php:175
+#: woocommerce-pdf-invoice.php:134
 msgid "Docs"
 msgstr "Dokumentumok"
 
-#: woocommerce-pdf-invoice.php:311
+#: woocommerce-pdf-invoice.php:253
 msgid "Invoice_Number"
 msgstr "Számla_Száma"
 
-#: woocommerce-pdf-invoice.php:312
+#: woocommerce-pdf-invoice.php:254
 msgid "Invoice_Date"
 msgstr "Számla_Dátuma"
+
+#~ msgid "This section shows information about WooCommerce PDF Invoice settings."
+#~ msgstr "Ez a szakasz a WooCommerce PDF-számla beállításainak adatait mutatja."
+
+#~ msgid "Bulk Export PDFs"
+#~ msgstr "PDF-ek tömeges exportálása"
+
+#~ msgid "Attach PDF Invoice to this email"
+#~ msgstr "PDF-számla csatolása ehhez az e-mailhez"
+
+#~ msgid "Attach PDF Invoice to this email if an invoice is available?"
+#~ msgstr "PDF-számla csatolása ehhez az e-mailhez, ha elérhető számla?"
+
+#~ msgid "Choose PDF Invoice tempate for this email."
+#~ msgstr "Válasszon PDF-számla sablont ehhez az e-mailhez."
+
+#~ msgid ""
+#~ "Set the invoice template to use for the PDF attached to this email. Defaults"
+#~ " to template"
+#~ msgstr ""
+#~ "Állítsa be az ehhez az e-mailhez csatolt PDF-hez használandó számlasablont. "
+#~ "Alapértelmezés: template"
+
+#~ msgid "Admin PDF invoice"
+#~ msgstr "Admin PDF-számla"
+
+#~ msgid ""
+#~ "This email, if enabled, will send a one time email to the address specified "
+#~ "at the point the invoice is created."
+#~ msgstr ""
+#~ "Ez az e-mail, ha engedélyezve van, egyszeri levelet küld a számla "
+#~ "létrehozásakor megadott címre."
+
+#~ msgid "Recipient"
+#~ msgstr "Címzett"
+
+#, php-format
+#~ msgid "Enter recipients (comma separated) for this email. Defaults to %s."
+#~ msgstr ""
+#~ "Adja meg az e-mail címzetteit (vesszővel elválasztva). Alapértelmezés: %s."
+
+#, php-format
+#~ msgid "<p class=\"pdf-download\">%s</p>"
+#~ msgstr "<p class=\"pdf-download\">%s</p>"
+
+#~ msgid "Email Invoice"
+#~ msgstr "Számla e-mailben küldése"
+
+#~ msgid "Invoice downloaded manually."
+#~ msgstr "Számla manuálisan letöltve."
+
+#~ msgid "PDF invoice emailed to customer."
+#~ msgstr "PDF-számla e-mailben elküldve az ügyfélnek."
+
+#~ msgid "PDF invoice deleted."
+#~ msgstr "PDF-számla törölve."
+
+#~ msgid "PDF invoice created manually."
+#~ msgstr "PDF-számla manuálisan létrehozva."
+
+#~ msgid "PDF invoice downloaded."
+#~ msgstr "PDF-számla letöltve."
+
+#~ msgid "PDF Terms Body : "
+#~ msgstr "PDF feltételek szövege : "
+
+#~ msgid "Shipment Tracking"
+#~ msgstr "Küldeménykövetés"
+
+#~ msgid "Shipped Via:"
+#~ msgstr "Fuvarozó:"
+
+#~ msgid "Tracking ID:"
+#~ msgstr "Követési azonosító:"
+
+#~ msgid "Shipped On:"
+#~ msgstr "Feladás dátuma:"
+
+#~ msgid "Invoice"
+#~ msgstr "Számla"
+
+#~ msgid "Supplied By"
+#~ msgstr "Szállító"
+
+#~ msgid "PAID IN FULL"
+#~ msgstr "TELJESEN KIFIZETVE"
+
+#~ msgid "Order Meta"
+#~ msgstr "Rendelés metaadatai"
+
+#~ msgid "Key"
+#~ msgstr "Kulcs"
+
+#~ msgid "Value"
+#~ msgstr "Érték"
+
+#~ msgid ""
+#~ "Enter your template filename, do not add a file extension, use only letters,"
+#~ " numbers, _ and -"
+#~ msgstr ""
+#~ "Adja meg a sablonfájl nevét; ne adjon hozzá fájlkiterjesztést, csak betűket,"
+#~ " számokat, _ és - jeleket használjon"
+
+#~ msgid "Duplicate the PDF template file"
+#~ msgstr "PDF sablonfájl duplikálása"
+
+#~ msgid ""
+#~ "This option will create invoices for any orders that are complete and don't "
+#~ "have an invoice number.<br />The process runs in the background in batches "
+#~ "to avoid any server timeouts."
+#~ msgstr ""
+#~ "Ez az opció számlákat hoz létre minden olyan befejezett rendeléshez, "
+#~ "amelynek nincs számlaszáma.<br />A folyamat a háttérben, kötegekben fut, "
+#~ "hogy elkerülje a szerver időtúllépéseket."
+
+#~ msgid "Create And Email Invoices For Past Orders"
+#~ msgstr "Számlák létrehozása és e-mailben elküldése korábbi rendelésekhez"
+
+#~ msgid ""
+#~ "This option will create invoices for any orders that are complete and don't "
+#~ "have an invoice number.<br />The invoice will be emailed to the customer. "
+#~ "The process runs in the background in batches to avoid any server "
+#~ "timeouts.<br /><strong>Warning : sending large numbers of emails in short "
+#~ "periods can cause deliverability issues.</strong>"
+#~ msgstr ""
+#~ "Ez az opció számlákat hoz létre minden olyan befejezett rendeléshez, "
+#~ "amelynek nincs számlaszáma.<br />A számlát e-mailben elküldjük az ügyfélnek."
+#~ " A folyamat a háttérben, kötegekben fut, hogy elkerülje a szerver "
+#~ "időtúllépéseket.<br /><strong>Figyelmeztetés: nagy mennyiségű e-mail rövid "
+#~ "időn belüli küldése kézbesítési problémákat okozhat.</strong>"
+
+#~ msgid ""
+#~ "You can delete the invoice information store in each order.<br /><strong>The"
+#~ " information can only be recovered using a backup of your database. USE WITH"
+#~ " CAUTION!</strong>"
+#~ msgstr ""
+#~ "Törölheti az egyes rendelésekben tárolt számlainformációkat.<br /><strong>Az"
+#~ " információ csak az adatbázis biztonsági mentéséből állítható vissza. "
+#~ "ÓVATOSAN HASZNÁLJA!</strong>"
+
+#~ msgid "Fix Invoice dates"
+#~ msgstr "Számladátumok javítása"
+
+#~ msgid ""
+#~ "<strong>This is an unrecoverable option, use with caution.</strong> The "
+#~ "process runs in the background in batches to avoid any server timeouts."
+#~ msgstr ""
+#~ "<strong>Ez nem visszavonható opció, óvatosan használja.</strong> A folyamat "
+#~ "a háttérben, kötegekben fut, hogy elkerülje a szerver időtúllépéseket."
+
+#~ msgid ""
+#~ "You can update the invoice date and date format using this option.<br "
+#~ "/><strong>This change can only be undone using a backup of your database. "
+#~ "USE WITH CAUTION!</strong>"
+#~ msgstr ""
+#~ "Ezzel az opcióval frissítheti a számla dátumát és dátumformátumát.<br "
+#~ "/><strong>Ezt a módosítást csak az adatbázis biztonsági mentésével lehet "
+#~ "visszavonni. ÓVATOSAN HASZNÁLJA!</strong>"
+
+#~ msgid ""
+#~ "Type 'confirm' to confirm you understand that this will change correct the "
+#~ "date and date format for ALL invoices, based on the current PDF Invoice date"
+#~ " settings."
+#~ msgstr ""
+#~ "Írja be, hogy 'confirm', ezzel megerősítve, hogy megértette: ez a jelenlegi "
+#~ "PDF számla dátumbeállításai alapján MINDEN számlán módosítja a dátumot és a "
+#~ "dátumformátumot."
+
+#~ msgid "Fix Invoice Dates"
+#~ msgstr "Számladátumok javítása"
+
+#~ msgid "Admin Functions"
+#~ msgstr "Admin funkciók"
+
+#~ msgid "Choose which PDF Generator to use."
+#~ msgstr "Válassza ki, melyik PDF-generátort szeretné használni."
+
+#~ msgid ""
+#~ "By default the PDF Invoice extension will DOMPDF. DOMPDF does not support "
+#~ "RTL invoices. If you are using RTL in your invoice then switch to MPDF. See "
+#~ "docs for more information."
+#~ msgstr ""
+#~ "Alapértelmezés szerint a PDF Invoice bővítmény a DOMPDF-et használja. A "
+#~ "DOMPDF nem támogatja az RTL számlákat. Ha RTL-t használ a számlán, váltson "
+#~ "MPDF-re. További információ a dokumentációban."
+
+#~ msgid ""
+#~ "Set the point during the transaction when the invoice should be created."
+#~ msgstr "Állítsa be, a tranzakció mely pontján készüljön el a számla."
+
+#~ msgid "Show \"Download Invoice\" option on the Thank You page?"
+#~ msgstr "Megjelenjen a \\\"Számla letöltése\\\" opció a Köszönjük oldalon?"
+
+#~ msgid "Add an option to download the invoice to the Thank You page"
+#~ msgstr "Adjon lehetőséget a számla letöltésére a Köszönjük oldalon"
+
+#~ msgid "Text for the Thank You page"
+#~ msgstr "Szöveg a Köszönjük oldalhoz"
+
+#~ msgid ""
+#~ "This text is used on the Thank You page to display a link to download the "
+#~ "invoice."
+#~ msgstr ""
+#~ "Ezt a szöveget a Köszönjük oldalon használjuk a számla letöltésére mutató "
+#~ "hivatkozás megjelenítéséhez."
+
+#~ msgid "Use a link or button on the Thank You page?"
+#~ msgstr "Hivatkozás vagy gomb legyen a Köszönjük oldalon?"
+
+#, php-format
+#~ msgid "Link Format : %s"
+#~ msgstr "Hivatkozás formátuma : %s"
+
+#, php-format
+#~ msgid "Button Format : %s"
+#~ msgstr "Gomb formátuma : %s"
+
+#~ msgid "This text is used in emails to display a link to download the invoice."
+#~ msgstr ""
+#~ "Ezt a szöveget az e-mailekben használjuk a számla letöltésére mutató "
+#~ "hivatkozás megjelenítéséhez."
+
+#, php-format
+#~ msgid "Current URL Format : %s"
+#~ msgstr "Jelenlegi URL formátum : %s"
+
+#, php-format
+#~ msgid "Default URL Format : %s"
+#~ msgstr "Alapértelmezett URL formátum : %s"
+
+#, php-format
+#~ msgid ""
+#~ "Add a logo to your PDF, otherwise it will just use your WordPress title %s. "
+#~ "PNG, JPEG or GIF"
+#~ msgstr ""
+#~ "Adjon logót a PDF-hez, ellenkező esetben a WordPress-címét használja, %s. "
+#~ "PNG, JPEG vagy GIF"
+
+#~ msgid "Store Logo"
+#~ msgstr "Logó tárolása"
+
+#~ msgid ""
+#~ "Set this to \"Yes\" to store the logo with each invoice. If you change your "
+#~ "logo then invoices created prior to the change will keep the old logo.<br "
+#~ "/>Set this option to \"No\" to always use the newest logo, even on old "
+#~ "invoices."
+#~ msgstr ""
+#~ "Állítsa ezt \\\"Igen\\\"-re a logó minden számlával való tárolásához. Ha "
+#~ "megváltoztatja a logót, a változás előtt létrehozott számlák a régi logót "
+#~ "fogják megőrizni.<br />Állítsa ezt az opciót \\\"Nem\\\"-re, ha mindig a "
+#~ "legújabb logót szeretné használni, még a régi számlákon is."
+
+#~ msgid "Set Resources Folder"
+#~ msgstr "Erőforrásmappa beállítása"
+
+#~ msgid ""
+#~ "If the logo is not showing on the invoice then try changing this option to "
+#~ "Yes before setting the Remote Logo option to yes."
+#~ msgstr ""
+#~ "Ha a logó nem jelenik meg a számlán, próbálja meg ezt az opciót Igenre "
+#~ "állítani, mielőtt a Távoli logó opciót igenre állítaná."
+
+#, php-format
+#~ msgid ""
+#~ "The default resource folder is %s.<br />Set this option to Yes to change the"
+#~ " resource folder to %s"
+#~ msgstr ""
+#~ "Az alapértelmezett erőforrásmappa %s.<br />Állítsa ezt az opciót Igenre az "
+#~ "erőforrásmappa %s-re változtatásához"
+
+#~ msgid ""
+#~ "If this is set to Yes, PDF Invoice will access remote sites for images, CSS and font files as required.\n"
+#~ "                                <br /><strong>==== IMPORTANT ====</strong><br />\n"
+#~ "                                Setting this to yes may allow malicious php code in remote html pages to be executed by your server with your account privileges. This setting may increase the risk of system exploit. \n"
+#~ "                                <br /><strong>Do not change this settings without understanding the consequences.</strong></p>"
+#~ msgstr ""
+#~ "Ha ez Igenre van állítva, a PDF számla a szükséges képek, CSS- és betűkészletfájlok eléréséhez távoli oldalakat fog használni.\n"
+#~ "                                <br /><strong>==== FONTOS ====</strong><br />\n"
+#~ "                                Ennek igenre állítása lehetővé teheti, hogy távoli html-oldalak rosszindulatú php kódja az Ön szerverén, az Ön fiókjogosultságaival fusson le. Ez a beállítás növelheti a rendszer kihasználásának kockázatát. \n"
+#~ "                                <br /><strong>Ne módosítsa ezt a beállítást a következmények ismerete nélkül.</strong></p>"
+
+#~ msgid "Override WooCommerce settings and always show totals excluding taxed?"
+#~ msgstr ""
+#~ "Felülírja a WooCommerce-beállításokat, és mindig az adó nélkül számolt "
+#~ "végösszegeket jeleníti meg?"
+
+#~ msgid "Override WooCommerce \"Display prices during basket and checkout\" setting"
+#~ msgstr ""
+#~ "A WooCommerce „Árak megjelenítése a kosárban és a pénztárnál” beállítás "
+#~ "felülírása"
+
+#~ msgid "Use RTL layout?"
+#~ msgstr "RTL elrendezést használ?"
+
+#~ msgid "Set this to 'Yes' if you want the PDF in RTL layout"
+#~ msgstr "Állítsa 'Igen' értékre, ha a PDF-et RTL elrendezésben szeretné"
+
+#~ msgid "Show Paid In Full overlay on paid invoices?"
+#~ msgstr "„Paid In Full” felirat megjelenítése a kifizetett számlákon?"
+
+#~ msgid ""
+#~ "Set this to 'Yes' if you want a 'Paid In Full' overlay on paid invoices?"
+#~ msgstr ""
+#~ "Állítsa 'Igen' értékre, ha 'Paid In Full' feliratot szeretne a kifizetett "
+#~ "számlákra?"
+
+#~ msgid "Set text for Paid In Full overlay"
+#~ msgstr "„Paid In Full” felirat szövegének beállítása"
+
+#~ msgid "Leave blank to use translatable \"PAID IN FULL\""
+#~ msgstr "Hagyja üresen a fordítható \"PAID IN FULL\" használatához"
+
+#~ msgid "Columns For Order Details Section."
+#~ msgstr "Oszlopok a rendelés részletei szakaszhoz."
+
+#~ msgid "Use"
+#~ msgstr "Használat"
+
+#~ msgid "Field"
+#~ msgstr "Mező"
+
+#~ msgid "Title"
+#~ msgstr "Cím"
+
+#~ msgid "Width"
+#~ msgstr "Szélesség"
+
+#~ msgid "Order"
+#~ msgstr "Sorrend"
+
+#~ msgid "Please check your PDF invoices."
+#~ msgstr "Kérjük, ellenőrizze a PDF-számláit."
+
+#~ msgid ""
+#~ "The PDF generator has been updated, this update may mean your logo is not "
+#~ "displaying on the PDF invoice."
+#~ msgstr ""
+#~ "A PDF-generátort frissítettük; ez a frissítés azt eredményezheti, hogy a "
+#~ "logója nem jelenik meg a PDF-számlán."
+
+#, php-format
+#~ msgid ""
+#~ "<br /><br />If your logo is missing from the invoice you can set the \"Set "
+#~ "Resources Folder\" option to \"Yes\" in the <a href=\"%s\">PDF Invoices "
+#~ "Settings</a>."
+#~ msgstr ""
+#~ "<br /><br />Ha hiányzik a logó a számláról, a <a href=\"%s\">PDF Invoices "
+#~ "Settings</a> menüben a \"Set Resources Folder\" opciót állítsa \"Yes\" "
+#~ "értékre."
+
+#, php-format
+#~ msgid ""
+#~ "<br />More information is available in the <a href=\"%s\">PDF Invoices "
+#~ "Documentation</a>."
+#~ msgstr ""
+#~ "<br />További információ a <a href=\"%s\">PDF Invoices Documentation</a> "
+#~ "részben található."
+
+#~ msgid ""
+#~ "<br /><br /><strong>If you have set the Remote Logo option to \"Yes\" to fix"
+#~ " a missing logo then you can revert this option back to \"No\" once the "
+#~ "\"Set Resources Folder\" option is set to \"Yes\"</strong>"
+#~ msgstr ""
+#~ "<br /><br /><strong>Ha a hiányzó logó javításához a Remote Logo opciót "
+#~ "\"Yes\" értékre állította, akkor ezt visszaállíthatja \"No\" értékre, miután"
+#~ " a \"Set Resources Folder\" opció \"Yes\" értékre van állítva</strong>"
+
+#~ msgid ""
+#~ "DOMDocument is required, please contact your host to have it installed."
+#~ msgstr ""
+#~ "A DOMDocument szükséges, kérjük, lépjen kapcsolatba a "
+#~ "tárhelyszolgáltatójával a telepítéshez."
+
+#~ msgid "PCRE is required with Unicode support (the \\\"u\\\" modifier)."
+#~ msgstr "PCRE szükséges Unicode támogatással (az \"u\" módosító)."
+
+#~ msgid "Recommended to compress PDF documents."
+#~ msgstr "Javasolt a PDF-dokumentumok tömörítése."
+
+#~ msgid "Required for bulk exporting invoices"
+#~ msgstr "Szükséges a számlák tömeges exportálásához"
+
+#~ msgid "ICONV is required, please contact your host to have it installed."
+#~ msgstr ""
+#~ "Az ICONV szükséges, kérjük, lépjen kapcsolatba a tárhelyszolgáltatójával a "
+#~ "telepítéshez."
+
+#~ msgid "Yes"
+#~ msgstr "Igen"
+
+#~ msgid ""
+#~ "Multibyte Support is required, please contact your host to have it "
+#~ "installed."
+#~ msgstr ""
+#~ "Multibyte támogatás szükséges, kérjük, lépjen kapcsolatba a "
+#~ "tárhelyszolgáltatójával a telepítéshez."
+
+#~ msgid "Required if you have images in your PDFs"
+#~ msgstr "Szükséges, ha a PDF-ekben képek vannak"
+
+#~ msgid "None"
+#~ msgstr "Nincs"
+
+#~ msgid "No status selected"
+#~ msgstr "Nincs státusz kiválasztva"
+
+#~ msgid "No."
+#~ msgstr "Nem."
+
+#~ msgid "Your theme folder is not writable."
+#~ msgstr "A témakönyvtár nem írható."
+
+#~ msgid ""
+#~ "The theme editor is disabled on this site. You will not be able to edit your"
+#~ " PDF templates from within WordPress."
+#~ msgstr ""
+#~ "A témaszerkesztő le van tiltva ezen a webhelyen. A PDF-sablonokat nem fogja "
+#~ "tudni szerkeszteni a WordPressen belül."
+
+#~ msgid ""
+#~ "Your user account settings may mean the template editor is disabled. Contact"
+#~ " a site administrator."
+#~ msgstr ""
+#~ "Lehet, hogy a felhasználói fiók beállításai miatt a sablonszerkesztő le van "
+#~ "tiltva. Forduljon a webhely adminisztrátorához."
+
+#~ msgid "Template Name"
+#~ msgstr "Sablon neve"
+
+#~ msgid "In plugin folder?"
+#~ msgstr "A bővítmény mappájában?"
+
+#~ msgid "In theme folder?"
+#~ msgstr "A téma mappájában?"
+
+#~ msgid "Action"
+#~ msgstr "Művelet"
+
+#~ msgid "Duplicate?"
+#~ msgstr "Duplikálás?"
+
+#~ msgid "Customise your template file"
+#~ msgstr "Sablonfájl testreszabása"
+
+#~ msgid "Customise"
+#~ msgstr "Testreszabás"
+
+#~ msgid "Customise your template file using the WordPress theme editor"
+#~ msgstr "Sablonfájlját a WordPress témaszerkesztővel szabhatja testre"
+
+#~ msgid "Copy the template file into your theme folder ready for customising."
+#~ msgstr "Másolja a sablonfájlt a téma mappájába a testreszabáshoz."
+
+#~ msgid "Copy"
+#~ msgstr "Másolás"
+
+#~ msgid "Set the CSS for PDF template."
+#~ msgstr "Állítsa be a PDF-sablon CSS-ét."
+
+#~ msgid "Save Layout Options"
+#~ msgstr "Elrendezési beállítások mentése"

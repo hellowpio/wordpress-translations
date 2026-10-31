@@ -1,0 +1,774 @@
+# Copyright (C) 2026 WP Desk
+# This file is distributed under the same license as the Flexible Subscriptions Payment Retry plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Flexible Subscriptions Payment Retry 1.0.16\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flexible-subscriptions-payment-retry\n"
+"POT-Creation-Date: 2026-10-31T07:18:34+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: flexible-subscriptions-payment-retry\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: Flexible Subscriptions Payment Retry\n"
+"X-Plugin-Tone: formal\n"
+"X-Plugin-Version: 1.0.16\n"
+
+#. Plugin Name of the plugin
+#. Description of the plugin
+#: flexible-subscriptions-payment-retry.php
+msgid "Flexible Subscriptions Payment Retry"
+msgstr "Flexible Subscriptions Payment Retry"
+
+#. Plugin URI of the plugin
+#: flexible-subscriptions-payment-retry.php
+msgid "https://www.wpdesk.net/sk/flexible-subscriptions-payment-retry-plugin/"
+msgstr "https://www.wpdesk.net/sk/flexible-subscriptions-payment-retry-plugin/"
+
+#. Author of the plugin
+#: flexible-subscriptions-payment-retry.php
+msgid "WP Desk"
+msgstr "WP Desk"
+
+#. Author URI of the plugin
+#: flexible-subscriptions-payment-retry.php
+msgid "https://www.wpdesk.net/sk/flexible-subscriptions-payment-retry-author/"
+msgstr "https://www.wpdesk.net/sk/flexible-subscriptions-payment-retry-author/"
+
+#: src/Emails/AdminPaymentRetry.php:10
+msgid "Flexible Subscriptions: Failed Payment Retry"
+msgstr "Flexible Subscriptions: Sikertelen fizetés újrapróbálása"
+
+#: src/Emails/AdminPaymentRetry.php:11
+msgid ""
+"Payment retry emails are sent to chosen recipient(s) when an attempt to "
+"automatically process a subscription renewal payment has failed and a retry "
+"rule has been applied to retry the payment in the future."
+msgstr "A fizetés újrapróbálásáról szóló e-maileket a kiválasztott címzettek kapják meg, ha az előfizetés megújításához kapcsolódó fizetés automatikus feldolgozása sikertelen, és a fizetés későbbi újrapróbálására szolgáló szabályt alkalmaztak."
+
+#: src/Emails/AdminPaymentRetry.php:28
+msgid ""
+"[{site_title}] Automatic payment failed for {order_number}, retry scheduled "
+"to run {retry_time}"
+msgstr ""
+"[{site_title}] Az automatikus fizetés sikertelen a(z) {order_number} "
+"rendelésnél, újrapróbálás ütemezve ekkorra: {retry_time}"
+
+#: src/Emails/AdminPaymentRetry.php:32
+msgid "Automatic renewal payment failed"
+msgstr "Az automatikus megújítási fizetés sikertelen"
+
+#: src/Emails/CustomerPaymentRetry.php:9
+msgid "Flexible Subscriptions: Customer Payment Retry"
+msgstr "Flexible Subscriptions: Vásárlói fizetés újrapróbálása"
+
+#: src/Emails/CustomerPaymentRetry.php:10
+msgid ""
+"Sent to a customer when an attempt to automatically process a subscription "
+"renewal payment has failed and a retry rule has been applied to retry the "
+"payment in the future. The email contains the renewal order information, "
+"date of the scheduled retry and payment links to allow the customer to pay "
+"for the renewal order manually instead of waiting for the automatic retry."
+msgstr "A vásárló akkor kapja meg ezt az e-mailt, ha az előfizetés megújításához kapcsolódó fizetés automatikus feldolgozása sikertelen volt, és a fizetés későbbi újrapróbálására szolgáló szabályt alkalmaztak. Az e-mail tartalmazza a megújítási rendelés adatait, az újrapróbálás ütemezett dátumát és fizetési linkeket, amelyek segítségével a vásárló manuálisan is kifizetheti a megújítási rendelést, ahelyett, hogy megvárná az automatikus újrapróbálást."
+
+#: src/Emails/CustomerPaymentRetry.php:26
+msgid ""
+"Automatic payment failed for {order_number}, we will retry {retry_time}"
+msgstr "Az automatikus fizetés sikertelen a(z) {order_number} rendelésnél; ekkor próbáljuk meg újra: {retry_time}"
+
+#: src/Emails/CustomerPaymentRetry.php:30
+msgid "Automatic payment failed for order {order_number}"
+msgstr "Az automatikus fizetés sikertelen a(z) {order_number} rendelésnél"
+
+#: src/Finder/TemplateFinder.php:55
+msgctxt "email template name"
+msgid "Default Admin Payment Retry"
+msgstr "Alapértelmezett admin fizetési újrapróbálkozás"
+
+#: src/Finder/TemplateFinder.php:57
+msgctxt "email template name"
+msgid "Default Customer Payment Retry Reminder"
+msgstr "Alapértelmezett vásárlói fizetési újrapróbálkozási emlékeztető"
+
+#: src/HookProvider/Admin/AttemptedRetriesMetaBox.php:69
+msgctxt "meta box title"
+msgid "Attempted retries"
+msgstr "Megkísérelt újrapróbálkozások"
+
+#: src/HookProvider/Admin/PluginLinks.php:30
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:188
+msgid "Settings"
+msgstr "Beállítások"
+
+#: src/HookProvider/Admin/PluginLinks.php:31
+msgid "https://wpdesk.net/sk/flexible-subscriptions-payment-retry-docs-en"
+msgstr "https://wpdesk.net/sk/flexible-subscriptions-payment-retry-docs-en"
+
+#: src/HookProvider/Admin/PluginLinks.php:31
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:184
+msgid "Docs"
+msgstr "Dokumentáció"
+
+#: src/HookProvider/Admin/PluginLinks.php:32
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:181
+msgid "Support"
+msgstr "Támogatás"
+
+#: src/HookProvider/Admin/RetrySettings.php:32
+msgid "Payment Retry"
+msgstr "Fizetés újrapróbálása"
+
+#. translators: %s Flexible Subscriptions version.
+#: src/HookProvider/CheckBasePluginVersion.php:31
+#, php-format
+msgid ""
+"This version of Flexible Subscriptions Payment Retry plugin is not "
+"compatible with Flexible Subscriptions %s. Please upgrade Flexible "
+"Subscriptions Payment Retry to the newest version."
+msgstr "A Flexible Subscriptions Payment Retry bővítmény ezen verziója nem kompatibilis a Flexible Subscriptions %s verziójával. Kérjük, frissítse a Flexible Subscriptions Payment Retry bővítményt a legújabb verzióra."
+
+#: src/Settings/RetrySettingsTab.php:34
+msgid "Enabled"
+msgstr "Bekapcsolva"
+
+#: src/Settings/RetrySettingsTab.php:35
+msgid "Check to enable the payment retries feature."
+msgstr "Jelölje be a fizetési újrapróbálkozási funkció bekapcsolásához."
+
+#: src/Settings/RetrySettingsTab.php:39
+msgid "Enable for manual payments"
+msgstr "Bekapcsolás kézi fizetéseknél"
+
+#: src/Settings/RetrySettingsTab.php:41
+msgid ""
+"Enable the application of the following rules to orders paid manually (BACS,"
+" CoD). The payment will not be collected, but emails will be dispatched "
+"according to configuration."
+msgstr "A következő szabályok alkalmazásának bekapcsolása a kézzel fizetett rendelésekre (BACS, utánvét). A fizetés beszedése nem történik meg, de a rendszer a beállítások szerint e-maileket küld."
+
+#: src/Settings/RetrySettingsTab.php:46
+msgid "On hold"
+msgstr "Visszatartva"
+
+#: src/Settings/RetrySettingsTab.php:47 build/admin.js:1
+msgid "Active"
+msgstr "Aktív"
+
+#: src/Settings/RetrySettingsTab.php:53
+msgid "Set the global subscription status when a subscription expires"
+msgstr "Az előfizetés lejáratakor alkalmazott globális állapot beállítása"
+
+#: src/Settings/RetrySettingsTab.php:59
+msgid "Subscription status when expired"
+msgstr "Az előfizetés állapota lejáratkor"
+
+#: src/Settings/RetrySettingsTab.php:68 build/admin.js:1
+msgid "Payment Retry Rules"
+msgstr "Fizetési újrapróbálkozási szabályok"
+
+#. translators: %1$s %2$s HTML <a> tag
+#: src/Settings/RetrySettingsTab.php:72
+#, php-format
+msgid ""
+"Decide what status you want a subscription that has not been renewed to "
+"have. And in the payment renewal rules, set the status of the subscription "
+"after a failed payment. Note, If the payment is successful, the subscription"
+" will always change the status to active. %1$sFind out more about how the "
+"plugin from its documentation →%2$s"
+msgstr "Döntse el, milyen állapotú legyen a meg nem újított előfizetés. A megújítási fizetésre vonatkozó szabályokban állítsa be az előfizetés állapotát sikertelen fizetés után. Megjegyzés: sikeres fizetés esetén az előfizetés állapota mindig aktív lesz. %1$sTudjon meg többet a bővítményről a dokumentációban →%2$s"
+
+#: src/Settings/RetrySettingsTab.php:79
+msgid "Loading payment retry rules..."
+msgstr "Fizetési újrapróbálkozási szabályok betöltése..."
+
+#: templates/admin/order/metabox/retries.php:80
+msgid "Order Number"
+msgstr "Rendelésszám"
+
+#: templates/admin/order/metabox/retries.php:81
+msgid "Date"
+msgstr "Dátum"
+
+#: templates/admin/order/metabox/retries.php:82
+msgid "Status"
+msgstr "Állapot"
+
+#. translators: placeholder is an order number.
+#: templates/admin/order/metabox/retries.php:93
+#, php-format
+msgctxt "hash before order number"
+msgid "#%s"
+msgstr "#%s"
+
+#. translators: %1$s: an order number, %2$s: the customer's full name, %3$s:
+#. lowercase human time diff in the form returned by
+#. wcs_get_human_time_diff(), e.g. 'in 12 hours'
+#: templates/emails/admin/payment-retry.php:22
+#, php-format
+msgctxt "In customer renewal invoice email"
+msgid "The automatic recurring payment for order #%1$d from %2$s has failed."
+msgstr "A #%1$d számú rendelés (%2$s) automatikus ismétlődő fizetése sikertelen."
+
+#: templates/emails/admin/payment-retry.php:23
+msgid "The renewal order is as follows:"
+msgstr "A megújítási rendelés a következő:"
+
+#. translators: %s: Customer first name
+#: templates/emails/customer/payment-retry.php:19
+#, php-format
+msgid "Hi %s,"
+msgstr "Kedves %s!"
+
+#. translators: %s: lowercase human time diff in the form returned by
+#. wcs_get_human_time_diff(), e.g. 'in 12 hours'
+#: templates/emails/customer/payment-retry.php:21
+msgctxt "In customer renewal invoice email"
+msgid "The automatic payment to renew your subscription has failed."
+msgstr "Az előfizetés megújításához szükséges automatikus fizetés sikertelen."
+
+#. translators: %1$s %2$s: link markup to checkout payment url, note: no full
+#. stop due to url at the end
+#: templates/emails/customer/payment-retry.php:24
+#, php-format
+msgctxt "In customer renewal invoice email"
+msgid ""
+"To reactivate the subscription now, you can also log in and pay for the "
+"renewal from your account page: %1$sPay Now &raquo;%2$s"
+msgstr ""
+"Az előfizetés azonnali újraaktiválásához bejelentkezhet, és a fiókoldalán "
+"kifizetheti a megújítást: %1$sFizetés most »%2$s"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:206
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on PHP versions older than %s. Please"
+" contact your host and ask them to upgrade."
+msgstr "A „%s” bővítmény nem futtatható a %s verziónál régebbi PHP-verziókon. Kérjük, vegye fel a kapcsolatot a tárhelyszolgáltatójával, és kérje a frissítést."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:209
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WordPress versions older than %s. "
+"Please update WordPress."
+msgstr "A „%s” bővítmény nem futtatható a %s verziónál régebbi WordPress-verziókon. Kérjük, frissítse a WordPress rendszert."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:212
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WooCommerce versions older than "
+"%s. Please update WooCommerce."
+msgstr "A „%s” bővítmény nem futtatható a %s verziónál régebbi WooCommerce-verziókon. Kérjük, frissítse a WooCommerce-t."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:215
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without OpenSSL module version at "
+"least %s. Please update OpenSSL module."
+msgstr "A „%s” bővítmény futtatásához legalább %s verziójú OpenSSL-modul szükséges. Kérjük, frissítse az OpenSSL-modult."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:310
+#, php-format
+msgid ""
+"The &#8220;%1$s&#8221; plugin requires at least %2$s version of %3$s to work"
+" correctly. Please update it to its latest release."
+msgstr "A „%1$s” bővítmény megfelelő működéséhez a(z) %3$s legalább %2$s verziója szükséges. Kérjük, frissítse a legújabb verzióra."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:416
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s active. Please install and"
+" activate %s plugin."
+msgstr "A &#8222;%s&#8221; bővítmény nem futtatható aktív %s nélkül. Kérjük, telepítse és kapcsolja be a(z) %s bővítményt."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:468
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin requires free %s plugin. <a href=\"%s\">Install "
+"%s</a>"
+msgstr "A(z) &#8222;%s&#8221; bővítményhez szükséges az ingyenes %s bővítmény. <a href=\"%s\">A(z) %s bővítmény telepítése</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:474
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin requires activating %s plugin. <a "
+"href=\"%s\">Activate %s</a>"
+msgstr "A(z) &#8222;%s&#8221; bővítmény használatához be kell kapcsolnia a(z) %s bővítményt. <a href=\"%s\">A(z) %s bővítmény bekapcsolása</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:516
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP module installed. "
+"Please contact your host and ask them to install %s."
+msgstr "A &#8222;%s&#8221; bővítmény futtatásához telepíteni kell a %s PHP-modult. Kérjük, vegye fel a kapcsolatot a tárhelyszolgáltatójával, és kérje a %s telepítését."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:541
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP setting set to %s. "
+"Please contact your host and ask them to set %s."
+msgstr "A &#8222;%s&#8221; bővítmény futtatásához a %s PHP-beállítás értékének meg kell egyeznie a következő értékkel: %s. Kérjük, vegye fel a kapcsolatot a tárhelyszolgáltatójával, és kérje a %s beállítását."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker_With_Update_Disable.php:29
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin is temporarily disabled since the required %s "
+"plugin is being upgraded."
+msgstr "A &#8220;%s&#8221; bővítmény átmenetileg kikapcsolva, mert a szükséges %s bővítmény frissítése folyamatban van."
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:160
+msgid "day"
+msgstr "nap"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:162
+msgid "week"
+msgstr "hét"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:164
+msgid "month"
+msgstr "hónap"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:166
+msgid "year"
+msgstr "év"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:168
+msgid "hour"
+msgstr "óra"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:170
+msgid "minute"
+msgstr "perc"
+
+#. translators: %d: number of days.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:178
+#, php-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d nap"
+msgstr[1] "%d nap"
+
+#. translators: %d: number of weeks.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:181
+#, php-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] "%d hét"
+msgstr[1] "%d hét"
+
+#. translators: %d: number of months.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:184
+#, php-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d hónap"
+msgstr[1] "%d hónap"
+
+#. translators: %d: number of years.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:187
+#, php-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d év"
+msgstr[1] "%d év"
+
+#. translators: %d: number of hours.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:190
+#, php-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d óra"
+msgstr[1] "%d óra"
+
+#. translators: %d: number of minutes.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:193
+#, php-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d perc"
+msgstr[1] "%d perc"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Disabled"
+msgstr "Kikapcsolva"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Emergency"
+msgstr "Vészhelyzet"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Alert"
+msgstr "Riasztás"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Critical"
+msgstr "Kritikus"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Error"
+msgstr "Hiba"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Warning"
+msgstr "Figyelem"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Notice"
+msgstr "Értesítés"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Info"
+msgstr "Információ"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Debug"
+msgstr "Hibakeresés"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:23
+#, php-format
+msgid ""
+"Can not enable WP Desk Debug log! Cannot create directory %s or this "
+"directory is not writeable!"
+msgstr "Nem sikerült bekapcsolni a WP Desk Debug naplót! A(z) %s könyvtár nem hozható létre, vagy nem írható!"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:36
+#, php-format
+msgid "Can not enable WP Desk Debug log! Cannot create file %s!"
+msgstr "Nem sikerült bekapcsolni a WP Desk Debug naplót! A(z) %s fájl nem hozható létre!"
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/NoticeReminder.php:53
+#, php-format
+msgid ""
+"You're using an outdated version of the following plugin: %s This may cause "
+"serious compatibility issues with WooCommerce. Update it immediately to "
+"avoid potential disruptions."
+msgid_plural ""
+"You're using outdated versions of the following plugins: %s This may cause "
+"serious compatibility issues with WooCommerce. Update them immediately to "
+"avoid potential disruptions."
+msgstr[0] "Az alábbi bővítmény elavult verzióját használja: %s. Ez súlyos kompatibilitási problémákat okozhat a WooCommerce-szel. A fennakadások elkerülése érdekében azonnal frissítse."
+msgstr[1] "Az alábbi bővítmények elavult verzióit használja: %s. Ezek súlyos kompatibilitási problémákat okozhatnak a WooCommerce-szel. A fennakadások elkerülése érdekében azonnal frissítse őket."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/NoticeReminder.php:60
+#, php-format
+msgid ""
+"You're using an older version of the following plugin: %s This version "
+"hasn't been tested with the latest WooCommerce versions. Please update it to"
+" the latest version to ensure smooth compatibility."
+msgid_plural ""
+"You're using older versions of the following plugins: %s These versions "
+"haven't been tested with the latest WooCommerce versions. Please update them"
+" to the latest version to ensure smooth compatibility."
+msgstr[0] "Az alábbi bővítmény régebbi verzióját használja: %s. Ezt a verziót nem tesztelték a legújabb WooCommerce-verziókkal. Kérjük, frissítse a legújabb verzióra a zavartalan együttműködés érdekében."
+msgstr[1] "Az alábbi bővítmények régebbi verzióit használja: %s. Ezeket a verziókat nem tesztelték a legújabb WooCommerce-verziókkal. Kérjük, frissítse őket a legújabb verzióra a zavartalan együttműködés érdekében."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/ReminderData.php:71
+#, php-format
+msgid ""
+"You're using an outdated version of %1$s plugin, which may cause serious "
+"compatibility issues with WooCommerce. %2$sUpdate immediately%3$s to avoid "
+"potential disruptions."
+msgstr "A(z) %1$s bővítmény elavult verzióját használja, amely súlyos kompatibilitási problémákat okozhat a WooCommerce-szel. A fennakadások elkerülése érdekében végezze el most a %2$sfrissítést%3$s."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/ReminderData.php:75
+#, php-format
+msgid ""
+"You're using an older version of %1$s plugin that hasn't been tested with "
+"the latest WooCommerce versions. Please %2$supdate to the latest version%3$s"
+" to ensure smooth compatibility."
+msgstr "A(z) %1$s bővítmény olyan régebbi verzióját használja, amelyet nem teszteltek a legújabb WooCommerce-verziókkal. Kérjük, a zavartalan együttműködés érdekében végezze el a %2$slegújabb verzióra történő frissítést%3$s."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/SiteHealthReminder.php:39
+msgid "You should update plugin"
+msgstr "Javasolt a bővítmény frissítése"
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/SiteHealthReminder.php:39
+msgid "Compatibility"
+msgstr "Kompatibilitás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginExternalBlocking.php:32
+#, php-format
+msgid ""
+"<b>Warning!</b> You're blocking external requests which means you won't be "
+"able to get %1$s updates. Please add %2$s to %3$s."
+msgstr "<b>Figyelem!</b> A külső kérések le vannak tiltva, ezért nem érhetők el a következő frissítései: %1$s. Kérjük, adja hozzá a következő elemet: %2$s. A cél: %3$s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:83
+#, php-format
+msgid ""
+"Error while connecting to remote server %s. Please contact your hosting "
+"provider or try again later. Errors:  "
+msgstr "Hiba történt a(z) %s távoli kiszolgálóhoz való csatlakozáskor. Kérjük, vegye fel a kapcsolatot a tárhelyszolgáltatójával, vagy próbálja újra később. Hibák:  "
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:172
+msgid "License server is currently unavailable. Please, try again later."
+msgstr "A licencszerver jelenleg nem érhető el. Kérjük, próbálja meg később."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:174
+#, php-format
+msgid ""
+"Error while connecting to remote server %1$s. Please contact with your "
+"hosting provider. Cannot parse response. Response code: %2$s Message: %3$s"
+msgstr "Hiba a távoli szerverhez (%1$s) való csatlakozás közben. Kérjük, lépjen kapcsolatba a tárhelyszolgáltatójával. A válasz nem értelmezhető. Válaszkód: %2$s, üzenet: %3$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:177
+#, php-format
+msgid ""
+"Error while connecting to remote server %1$s. Please contact with your "
+"hosting provider. Cannot parse response: %2$s"
+msgstr "Hiba a(z) %1$s távoli szerverhez való csatlakozáskor. Kérjük, lépjen kapcsolatba a tárhelyszolgáltatójával. A válasz nem értelmezhető: %2$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/templates/impossible-to-upgrade.php:12
+#, php-format
+msgid ""
+"This version of %1$s plugin cannot be automatically upgraded. Download the "
+"plugin from %2$syour account%3$s to receive automatic updates in future."
+msgstr "A(z) %1$s bővítmény ezen verziója nem frissíthető automatikusan. Töltse le a bővítményt a %2$sfiókjából%3$s, hogy a jövőben automatikus frissítéseket kapjon."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/class-wpdesk-tracker.php:194
+msgid "Submit &amp; Deactivate"
+msgstr "Küldés és kikapcsolás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/OptOut.php:42
+#, php-format
+msgid ""
+"You successfully opted out of collecting usage data by %1$s. If you change "
+"your mind, you can always opt in later in the plugin's quick links."
+msgstr "Sikeresen kikapcsolta a használati adatok %1$s általi gyűjtését. Ha meggondolja magát, később bármikor újra bekapcsolhatja a használati adatok gyűjtését a bővítmény gyorshivatkozásain keresztül."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/PluginActionLinks.php:70
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:43
+msgid "Enable usage tracking"
+msgstr "Használatkövetés bekapcsolása"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/PluginActionLinks.php:75
+msgid "Disable usage tracking"
+msgstr "Használatkövetés kikapcsolása"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:23
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:19
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:21
+#, php-format
+msgid "Hey %s,"
+msgstr "Kedves %s,"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:26
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:22
+msgid ""
+"Please help us improve our plugins! If you opt-in, we will collect some non-"
+"sensitive data and usage information anonymously. If you skip this, that's "
+"okay! All plugins will work just fine."
+msgstr "Kérjük, segítsen nekünk bővítményeink fejlesztésében! Ha ehhez hozzájárul, névtelenül gyűjtünk néhány nem érzékeny adatot és használati információt. Ha ezt kihagyja, az is rendben van! Minden bővítmény továbbra is megfelelően fog működni."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:35
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:31
+msgid "Allow & Continue &rarr;"
+msgstr "Engedélyezés és folytatás &rarr;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:40
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:36
+msgid "Skip"
+msgstr "Kihagyás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:47
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:43
+msgid "What permissions are being granted?"
+msgstr "Milyen engedélyeket ad meg?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:56
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:52
+msgid "Your Site Overview"
+msgstr "Webhelyének áttekintése"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:59
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:55
+msgid "WP version, PHP info"
+msgstr "WP-verzió, PHP-információk"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:67
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:63
+msgid "Plugin Usage"
+msgstr "Bővítményhasználat"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:70
+#, php-format
+msgid "Current settings and usage information of %1$s plugins"
+msgstr "A(z) %1$s bővítményeinek aktuális beállításai és használati adatai"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:78
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:74
+msgid "Your Store Overview"
+msgstr "Áruházának áttekintése"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:81
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:77
+msgid "Anonymized and non-sensitive store usage information"
+msgstr "Anonimizált, nem érzékeny adatok az áruház használatáról"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:91
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:87
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:29
+msgid "Find out more &raquo;"
+msgstr "További információk &raquo;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:66
+msgid "Current settings and usage information of WP Desk plugins"
+msgstr "A WP Desk bővítményeinek aktuális beállításai és használati adatai"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:12
+#, php-format
+msgid "You are deactivating %s plugin."
+msgstr "Ön kikapcsolja a(z) %s bővítményt."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:20
+msgid ""
+" If you have a moment, please let us know why you are deactivating plugin "
+"(anonymous feedback):"
+msgstr " Ha van egy perce, kérjük, mondja el, miért kapcsolja ki a bővítményt (névtelen visszajelzés):"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:29
+msgid "The plugin suddenly stopped working"
+msgstr "A bővítmény váratlanul leállt"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:39
+msgid "The plugin broke my site"
+msgstr "A bővítmény tönkretette a webhelyemet"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:49
+msgid "I found a better plugin"
+msgstr "Találtam egy jobb bővítményt"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:54
+msgid "What's the plugin's name?"
+msgstr "Mi a bővítmény neve?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:64
+msgid "I only needed the plugin for a short period"
+msgstr "Csak rövid ideig volt szükségem a bővítményre"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:74
+msgid "I no longer need the plugin"
+msgstr "Többé nincs szükségem erre a bővítményre"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:84
+msgid "It's a temporary deactivation. I'm just debugging an issue."
+msgstr "Ez ideiglenes kikapcsolás. Csak egy probléma okát próbálom kideríteni."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:94
+msgid "Other"
+msgstr "Egyéb"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:99
+msgid "Kindly tell us the reason so we can improve"
+msgstr "Kérjük, mondja el az okot, hogy fejlődhessünk"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:108
+msgid "Cancel"
+msgstr "Mégse"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:111
+msgid "Skip &amp; Deactivate"
+msgstr "Kihagyás és kikapcsolás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:24
+msgid ""
+"We need your help to improve <strong>WP Desk plugins</strong>, so they are "
+"more useful for you and the rest of <strong>30,000+ users</strong>. By "
+"collecting data on how you use our plugins, you will help us a lot. We will "
+"not collect any sensitive data, so you can feel safe."
+msgstr "Szükségünk van az Ön segítségére, hogy a <strong>WP Desk bővítményei</strong> hasznosabbak legyenek az Ön és a többi <strong>30 000+ felhasználó</strong> számára. A bővítmények használatáról szóló adatok gyűjtésével nagy segítséget nyújt nekünk. Nem gyűjtünk érzékeny adatokat, így biztonságban érezheti magát."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-opt-out-notice.php:11
+msgid ""
+"You successfully opted out of collecting usage data by WP Desk. If you "
+"change your mind, you can always opt in later in the plugin's quick links."
+msgstr "Sikeresen leiratkozott a WP Desk által végzett használatiadat-gyűjtésről. Ha meggondolja magát, később bármikor feliratkozhat a bővítmény gyorshivatkozásain keresztül."
+
+#: build/admin.js:1
+msgid "Select unit"
+msgstr "Mértékegység kiválasztása"
+
+#: build/admin.js:1
+msgid "Hour"
+msgid_plural "Hours"
+msgstr[0] "Óra"
+msgstr[1] "Órák"
+
+#: build/admin.js:1
+msgid "Day"
+msgid_plural "Days"
+msgstr[0] "Nap"
+msgstr[1] "Nap"
+
+#: build/admin.js:1
+msgid "Select status"
+msgstr "Állapot kiválasztása"
+
+#: build/admin.js:1
+msgid "On Hold"
+msgstr "Felfüggesztve"
+
+#: build/admin.js:1
+msgid "Pending Cancel"
+msgstr "Lemondás függőben"
+
+#: build/admin.js:1
+msgid "Select template"
+msgstr "Válasszon sablont"
+
+#: build/admin.js:1
+msgid "Remove rule"
+msgstr "Szabály eltávolítása"
+
+#: build/admin.js:1
+msgid "Retry payment after:"
+msgstr "Fizetés újrapróbálása ennyi idő után:"
+
+#: build/admin.js:1
+msgid ""
+"Set the time interval after a failed payment before this rule is applied"
+msgstr "Állítsa be, mennyi idő teljen el a sikertelen fizetés után a szabály alkalmazásáig"
+
+#: build/admin.js:1
+msgid "On failure"
+msgstr "Sikertelenség esetén"
+
+#: build/admin.js:1
+msgid "Set subscription status to"
+msgstr "Előfizetés állapotának beállítása erre"
+
+#: build/admin.js:1
+msgid "Set the subscription status when payment fails for this rule"
+msgstr "Állítsa be az előfizetés állapotát, ha ennél a szabálynál a fizetés sikertelen"
+
+#: build/admin.js:1
+msgid "Send email to admin"
+msgstr "E-mail küldése az adminnak"
+
+#: build/admin.js:1
+msgid "Send email to customer"
+msgstr "E-mail küldése a vásárlónak"
+
+#: build/admin.js:1
+msgid "I sell digital products"
+msgstr "Digitális termékeket értékesítek"
+
+#: build/admin.js:1
+msgid "I sell physical products"
+msgstr "Fizikai termékeket értékesítek"
+
+#: build/admin.js:1
+msgid ""
+"Use predefined payment retries process. Note that each rule handles one "
+"payment retry."
+msgstr "Az előre meghatározott fizetési újrapróbálkozási folyamat használata. Vegye figyelembe, hogy minden szabály egy fizetési újrapróbálkozást kezel."
+
+#: build/admin.js:1
+msgid "Add New Rule"
+msgstr "Új szabály hozzáadása"

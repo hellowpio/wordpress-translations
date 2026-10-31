@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: SEOPress 9.2\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:51:08+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:09+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -61,7 +61,7 @@ msgstr "A noindex be van kapcsolva!"
 #: inc/admin/admin-bar/admin-bar.php:95 inc/admin/admin-bar/admin-bar.php:98
 #, php-format
 msgid "SEO for \"%s\""
-msgstr "SEO a(z) \"%s\" számára"
+msgstr "SEO ehhez: „%s”"
 
 #: inc/admin/admin-bar/admin-bar.php:107
 msgid "noindex is off."
@@ -237,7 +237,7 @@ msgstr "Elrejtse az Első lépéseket?"
 
 #: inc/admin/admin-bar/admin-header.php:171
 msgid "Hide SEO Suite?"
-msgstr "Elrejtse a SEO csomagot?"
+msgstr "Elrejtse a SEO-csomagot?"
 
 #: inc/admin/admin-bar/admin-header.php:184
 msgid "Hide Site Overview?"
@@ -257,7 +257,7 @@ msgstr "Elrejtse az Integrációkat?"
 
 #: inc/admin/admin-bar/admin-header.php:227
 msgid "Hide SEO News?"
-msgstr "Elrejtse a SEO híreket?"
+msgstr "Elrejtse a SEO-híreket?"
 
 #. translators: %d number of notifications
 #: inc/admin/admin-bar/admin-header.php:241
@@ -542,7 +542,7 @@ msgstr "Clarity"
 
 #: inc/admin/admin-pages/Analytics.php:25
 msgid "Cookie bar / GDPR / Google Consent"
-msgstr "Sütis sáv / GDPR / Google Consent"
+msgstr "Cookie-sáv / GDPR / Google Consent"
 
 #: inc/admin/admin-pages/Analytics.php:26 inc/admin/sections/Analytics.php:59
 msgid "Custom Tracking"
@@ -663,15 +663,13 @@ msgstr "Bejegyzések és kifejezések metaadatainak importálása innen"
 msgid ""
 "Select an SEO plugin to migrate from (you don't have to enable the selected "
 "one to run the import):"
-msgstr ""
-"Válasszon egy SEO-bővítményt, ahonnan migrálni szeretne (az import "
-"futtatásához nem kell engedélyeznie a kiválasztottat):"
+msgstr "Válassza ki, melyik SEO-bővítményből szeretne adatokat áttelepíteni (az importálás futtatásához nem kell bekapcsolnia a kiválasztott bővítményt):"
 
 #. translators: %s: "SEO plugin name"
 #: inc/admin/admin-pages/Tools.php:208 inc/admin/wizard/admin-wizard.php:609
 #, php-format
 msgid "Select %s for migration"
-msgstr "Válassza a(z) %s-t migráláshoz"
+msgstr "Az áttelepítéshez válassza ki a következőt: %s"
 
 #. translators: %s: "SEO plugin name"
 #: inc/admin/admin-pages/Tools.php:220 inc/admin/wizard/admin-wizard.php:621
@@ -686,7 +684,7 @@ msgstr "Tisztítás"
 
 #: inc/admin/admin-pages/Tools.php:251
 msgid "Clean content scans"
-msgstr "Tartalomelemzések tisztítása"
+msgstr "Tartalomelemzések törlése"
 
 #: inc/admin/admin-pages/Tools.php:254
 msgid ""
@@ -702,31 +700,27 @@ msgstr "Tartalomelemzések törlése"
 
 #: inc/admin/admin-pages/Tools.php:274
 msgid "Reset All Notices From Notifications Center"
-msgstr "Értesítési központ összes értesítésének visszaállítása"
+msgstr "Az értesítési központ összes értesítésének alaphelyzetbe állítása"
 
 #: inc/admin/admin-pages/Tools.php:277
 msgid ""
 "By clicking Reset Notices, all notices in the notifications center will be "
 "set to their initial status."
-msgstr ""
-"Az Értesítések visszaállítása gombra kattintva az értesítési központ összes "
-"értesítése az eredeti állapotába kerül."
+msgstr "Az Értesítések alaphelyzetbe állítása gombra kattintva az értesítési központ összes értesítése az eredeti állapotába kerül."
 
 #: inc/admin/admin-pages/Tools.php:282
 msgid "Reset notices"
-msgstr "Értesítések visszaállítása"
+msgstr "Értesítések alaphelyzetbe állítása"
 
 #: inc/admin/admin-pages/Tools.php:289
 msgid "Reset All Settings"
-msgstr "Összes beállítás visszaállítása"
+msgstr "Összes beállítás alaphelyzetbe állítása"
 
 #: inc/admin/admin-pages/Tools.php:292
 msgid ""
 "<strong>WARNING:</strong> Delete all options related to this plugin in your "
 "database."
-msgstr ""
-"<strong>FIGYELMEZTETÉS:</strong> Törli az adatbázisában a bővítményhez "
-"kapcsolódó összes beállítást."
+msgstr "<strong>FIGYELEM:</strong> Törölje az adatbázisából a bővítményhez kapcsolódó összes opciót."
 
 #: inc/admin/admin-pages/Tools.php:298
 msgid "Reset settings"
@@ -763,7 +757,7 @@ msgstr ""
 #: inc/admin/ajax/ContentAnalysis.php:39
 #: src/Actions/Api/ContentAnalysis.php:93 src/Actions/Api/PagePreview.php:74
 msgid "To get your Google snippet preview, publish your post!"
-msgstr "A Google-kivonat előnézetéhez publikálja a bejegyzését!"
+msgstr "A Google-kódrészlet előnézetének megjelenítéséhez tegye közzé a bejegyzését!"
 
 #: inc/admin/ajax/ContentAnalysis.php:42
 #: src/Actions/Api/ContentAnalysis.php:96 src/Actions/Api/PagePreview.php:77
@@ -810,17 +804,15 @@ msgstr "Egyszerű / alapértelmezett nézet váltása"
 
 #: inc/admin/blocks/features-list.php:25
 msgid "Manage all your titles & metas for post types, taxonomies, archives..."
-msgstr ""
-"Kezelje az összes címét és metaadatait bejegyzéstípusokhoz, taxonómiákhoz, "
-"archívumokhoz..."
+msgstr "Kezelje a bejegyzéstípusokhoz, taxonómiákhoz és archívumokhoz tartozó összes címet és metaadatot..."
 
 #: inc/admin/blocks/features-list.php:31
 msgid "XML & HTML Sitemaps"
-msgstr "XML és HTML oldaltérképek"
+msgstr "XML- és HTML-oldaltérképek"
 
 #: inc/admin/blocks/features-list.php:32
 msgid "Manage your XML - Image - Video - HTML Sitemap."
-msgstr "Kezelje az XML - kép - videó - HTML oldaltérképét."
+msgstr "Kezelje az XML-, kép-, videó- és HTML-oldaltérképeit."
 
 #: inc/admin/blocks/features-list.php:39
 msgid "Open Graph, X Cards, Google Knowledge Graph and more..."
@@ -830,13 +822,11 @@ msgstr "Open Graph, X Cards, Google Knowledge Graph és még sok más..."
 msgid ""
 "Track everything about your visitors with Google Analytics / Matomo / "
 "Microsoft Clarity."
-msgstr ""
-"Kövesse nyomon a látogatókkal kapcsolatos mindent a Google Analytics / "
-"Matomo / Microsoft Clarity segítségével."
+msgstr "Kövesse nyomon a látogatókkal kapcsolatos összes információt a Google Analytics / Matomo / Microsoft Clarity segítségével."
 
 #: inc/admin/blocks/features-list.php:53
 msgid "Ping Google & Bing to quickly index your content."
-msgstr "Pingelje a Google-t és a Binget, hogy gyorsan indexeljék a tartalmát."
+msgstr "Küldjön pinget a Google-nak és a Bingnek, hogy gyorsan indexeljék a tartalmát."
 
 #: inc/admin/blocks/features-list.php:59
 msgid "Image SEO & Advanced settings"
@@ -855,9 +845,7 @@ msgstr "Univerzális SEO metadoboz"
 #: inc/admin/blocks/features-list.php:67
 msgid ""
 "Easily manage your SEO settings from your favorite page builder or editor."
-msgstr ""
-"Egyszerűen kezelje SEO-beállításait a kedvenc oldalépítőjéből vagy "
-"szerkesztőjéből."
+msgstr "Egyszerűen kezelheti SEO-beállításait kedvenc oldalépítőjében vagy szerkesztőjében."
 
 #: inc/admin/blocks/features-list.php:78
 msgid "Import/Export plugin settings from site to site."
@@ -906,9 +894,7 @@ msgstr "Összes integrációnk megtekintése"
 msgid ""
 "You’re using these plugins / themes on your site. We provide advanced "
 "integrations with them to improve your SEO."
-msgstr ""
-"Ezeket a bővítményeket / témákat használja a webhelyén. Fejlett "
-"integrációkat biztosítunk velük, hogy javítsa SEO-ját."
+msgstr "Ezeket a bővítményeket / sablonokat használja a webhelyén. Haladó integrációkat biztosítunk hozzájuk, hogy javítsa SEO-ját."
 
 #: inc/admin/blocks/integrations.php:135 inc/admin/blocks/tasks.php:73
 msgid "Active"
@@ -919,10 +905,7 @@ msgid ""
 "Currently, no specific integration found for your site. Contact us if you "
 "have any doubts about the compatibility between your plugins/themes and our "
 "products."
-msgstr ""
-"Jelenleg nem található konkrét integráció a webhelyéhez. Lépjen kapcsolatba "
-"velünk, ha bármilyen kétsége van a bővítményei/témái és termékeink közötti "
-"kompatibilitással kapcsolatban."
+msgstr "Jelenleg nem található konkrét integráció a webhelyéhez. Lépjen kapcsolatba velünk, ha bármilyen kétsége van a bővítményei/sablonjai és termékeink közötti kompatibilitással kapcsolatban."
 
 #: inc/admin/blocks/integrations.php:158
 msgid "Request an integration - Open in a new tab"
@@ -973,7 +956,7 @@ msgstr "%s bejegyzés bélyegképe"
 #: inc/admin/blocks/news.php:84 inc/admin/blocks/news.php:92
 #, php-format
 msgid "Learn more about %s in a new tab"
-msgstr "További információk a(z) %s témájában új lapon"
+msgstr "További tudnivalók: %s (új lapon)"
 
 #. translators: %s blog post URL
 #: inc/admin/blocks/news.php:93 inc/admin/callbacks/Social.php:682
@@ -1009,8 +992,8 @@ msgid ""
 msgid_plural ""
 "You have %s notifications. We strongly encourage you to resolve these issues"
 " to avoid any SEO damage."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Önnek %s értesítése van. Nyomatékosan javasoljuk, hogy hárítsa el a problémát az SEO-károk elkerülése érdekében."
+msgstr[1] "Önnek %s értesítése van. Nyomatékosan javasoljuk, hogy hárítsa el ezeket a problémákat az SEO-károk elkerülése érdekében."
 
 #: inc/admin/blocks/notifications.php:29
 msgid "See all notifications"
@@ -1024,9 +1007,7 @@ msgstr "SEOPress Suite"
 msgid ""
 "From on-site to off-site SEO, our SEO plugins cover all your needs to rank "
 "higher in search engines."
-msgstr ""
-"Az on-site-tól az off-site SEO-ig SEO-bővítményeink minden igényt lefednek, "
-"hogy magasabb helyezést érjen el a keresőmotorokban."
+msgstr "Akár a webhelyen belüli, akár a webhelyen kívüli SEO-ról van szó, SEO-bővítményeink minden igényét kielégítik, és segítenek jobb helyezést elérni a keresőmotorokban."
 
 #: inc/admin/blocks/tasks.php:76
 msgid "Inactive"
@@ -1042,7 +1023,7 @@ msgstr "Licenc érvénytelen"
 
 #: inc/admin/blocks/tasks.php:97
 msgid "Upgrade"
-msgstr "Frissítés"
+msgstr "Magasabb kategóriára váltás"
 
 #: inc/admin/blocks/tasks.php:104
 msgid "Check license"
@@ -1065,7 +1046,7 @@ msgstr ""
 
 #: inc/admin/callbacks/Advanced.php:40
 msgid "Remove noreferrer link attribute in source code"
-msgstr "Távolítsa el a noreferrer link attribútumot a forráskódból"
+msgstr "Távolítsa el a noreferrer linkattribútumot a forráskódból"
 
 #: inc/admin/callbacks/Advanced.php:44
 msgid "Useful for affiliate links (e.g. Amazon)."
@@ -1124,7 +1105,7 @@ msgstr ""
 
 #: inc/admin/callbacks/Advanced.php:175
 msgid "Remove WordPress meta generator in source code"
-msgstr "Távolítsa el a WordPress meta generator elemet a forráskódból"
+msgstr "Távolítsa el a WordPress meta-generátorát a forráskódból"
 
 #: inc/admin/callbacks/Advanced.php:197
 msgid ""
@@ -1138,52 +1119,42 @@ msgstr ""
 msgid ""
 "Remove comment author URL in comments if the website is filled from profile "
 "page"
-msgstr ""
-"Távolítsa el a hozzászólás szerzőjének URL-jét a hozzászólásokból, ha a "
-"webhely mező a profiloldalról kerül kitöltésre"
+msgstr "Távolítsa el a hozzászólás szerzőjének URL-jét a hozzászólásokból, ha a webhelymezőt a profiloldalról töltik ki"
 
 #: inc/admin/callbacks/Advanced.php:237
 msgid "Remove website field from comment form to reduce spam"
-msgstr ""
-"Távolítsa el a webhely mezőt a hozzászólás űrlapról a spam csökkentése "
-"érdekében"
+msgstr "Távolítsa el a webhelymezőt a hozzászólási űrlapból a spam csökkentése érdekében"
 
 #: inc/admin/callbacks/Advanced.php:257
 msgid "Prevent search engines to follow / index the link to the comments form"
-msgstr ""
-"Akadályozza meg, hogy a keresőmotorok kövessék/indexeljék a hozzászólás "
-"űrlapjára mutató linket"
+msgstr "Akadályozza meg, hogy a keresőmotorok kövessék a hozzászólási űrlapra mutató linket, illetve indexeljék azt"
 
 #: inc/admin/callbacks/Advanced.php:280
 msgid "Remove WordPress shortlink meta tag in source code"
-msgstr "Távolítsa el a WordPress shortlink meta tag elemet a forráskódból"
+msgstr "Távolítsa el a WordPress shortlink-metacímkéjét a forráskódból"
 
 #: inc/admin/callbacks/Advanced.php:302
 msgid "Remove Windows Live Writer meta tag in source code"
-msgstr "Távolítsa el a Windows Live Writer meta tag elemet a forráskódból"
+msgstr "Távolítsa el a Windows Live Writer metacímkéjét a forráskódból"
 
 #: inc/admin/callbacks/Advanced.php:324
 msgid "Remove Really Simple Discovery meta tag in source code"
-msgstr "Távolítsa el a Really Simple Discovery meta tag elemet a forráskódból"
+msgstr "Távolítsa el a Really Simple Discovery metacímkéjét a forráskódból"
 
 #: inc/admin/callbacks/Advanced.php:328
 msgid ""
 "WordPress Site Health feature will return a HTTPS warning if you enable this"
 " option. This is a false positive of course."
-msgstr ""
-"A WordPress Site Health funkció HTTPS-figyelmeztetést jelez, ha engedélyezi "
-"ezt az opciót. Ez természetesen hamis pozitív."
+msgstr "A WordPress Site Health funkció HTTPS-figyelmeztetést jelez, ha bekapcsolja ezt az opciót. Ez természetesen téves riasztás."
 
 #: inc/admin/callbacks/Advanced.php:350
 msgid "Remove oEmbed links in source code"
-msgstr "Távolítsa el az oEmbed hivatkozásokat a forráskódból"
+msgstr "oEmbed linkek eltávolítása a forráskódból"
 
 #: inc/admin/callbacks/Advanced.php:354
 msgid ""
 "This will prevent other blogs to embed one of your posts on their site."
-msgstr ""
-"Ez megakadályozza, hogy más blogok beágyazzák valamelyik bejegyzését a saját"
-" oldalukon"
+msgstr "Ez megakadályozza, hogy más blogok beágyazzák az Ön egyik bejegyzését a saját honlapjukon"
 
 #: inc/admin/callbacks/Advanced.php:378
 msgid "Remove X-Pingback from HTTP headers"
@@ -1191,8 +1162,7 @@ msgstr "Távolítsa el az X-Pingbacket a HTTP-fejlécekből"
 
 #: inc/admin/callbacks/Advanced.php:382
 msgid "This will disable pingbacks/trackbacks and increase security (DDOS)."
-msgstr ""
-"Ez letiltja a pingbackeket/trackbackeket és növeli a biztonságot (DDOS)."
+msgstr "Ez letiltja a pingbackeket/trackbackeket és növeli a biztonságot (DDOS)."
 
 #: inc/admin/callbacks/Advanced.php:404
 msgid "Remove X-Powered-By from HTTP headers"
@@ -1206,9 +1176,7 @@ msgstr ""
 #: inc/admin/callbacks/Advanced.php:430
 msgid ""
 "Remove Emoji scripts in your source code to speed up your site performance"
-msgstr ""
-"Távolítsa el az Emoji szkripteket a forráskódból a webhely teljesítményének "
-"felgyorsításához"
+msgstr "Távolítsa el az emoji-szkripteket a forráskódból, hogy gyorsabban működjön a webhely"
 
 #: inc/admin/callbacks/Advanced.php:434
 msgid "Only older web browsers will not see your emojis."
@@ -1216,99 +1184,88 @@ msgstr "Csak a régebbi webböngészők nem fogják látni az emojikat"
 
 #: inc/admin/callbacks/Advanced.php:447
 msgid "Enter Google meta value site verification"
-msgstr "Adja meg a Google webhely-ellenőrzés meta értékét"
+msgstr "Adja meg a Google-webhely-ellenőrzéshez szükséges metaértéket"
 
 #: inc/admin/callbacks/Advanced.php:447 inc/admin/settings/Advanced.php:172
 msgid "Google site verification"
-msgstr "Google webhely-ellenőrzés"
+msgstr "Google-webhely-ellenőrzés"
 
 #: inc/admin/callbacks/Advanced.php:451
 msgid ""
 "If your site is already verified in <strong>Google Search Console</strong>, "
 "you can leave this field empty."
-msgstr ""
-"Ha webhelye már ellenőrzött a <strong>Google Search Console</strong>-ban, "
-"ezt a mezőt üresen hagyhatja"
+msgstr "Ha webhelye már ellenőrizve van a <strong>Google Search Console</strong>-ban, ezt a mezőt üresen hagyhatja"
 
 #: inc/admin/callbacks/Advanced.php:462
 msgid "Enter Bing meta value site verification"
-msgstr "Adja meg a Bing webhely-ellenőrzés meta értékét"
+msgstr "Adja meg a Bing-webhely-ellenőrzéshez szükséges metaértéket"
 
 #: inc/admin/callbacks/Advanced.php:462 inc/admin/settings/Advanced.php:180
 msgid "Bing site verification"
-msgstr "Bing webhely-ellenőrzés"
+msgstr "Bing-webhely-ellenőrzés"
 
 #: inc/admin/callbacks/Advanced.php:466
 msgid ""
 "If your site is already verified in <strong>Bing Webmaster tools</strong>, "
 "you can leave this field empty."
-msgstr ""
-"Ha webhelye már ellenőrzött a <strong>Bing Webmaster tools</strong>-ban, ezt"
-" a mezőt üresen hagyhatja"
+msgstr "Ha webhelye már ellenőrizve van a <strong>Bing Webmaster tools</strong>-ban, ezt a mezőt üresen hagyhatja"
 
 #: inc/admin/callbacks/Advanced.php:477
 msgid "Enter Pinterest meta value site verification"
-msgstr "Adja meg a Pinterest webhely-ellenőrzés meta értékét"
+msgstr "Adja meg a Pinterest-webhely-ellenőrzéshez szükséges metaértéket"
 
 #: inc/admin/callbacks/Advanced.php:477 inc/admin/settings/Advanced.php:188
 msgid "Pinterest site verification"
-msgstr "Pinterest webhely-ellenőrzés"
+msgstr "Pinterest-webhely-ellenőrzés"
 
 #: inc/admin/callbacks/Advanced.php:487 inc/admin/settings/Advanced.php:196
 msgid "Yandex site verification"
-msgstr "Yandex webhely-ellenőrzés"
+msgstr "Yandex-webhely-ellenőrzés"
 
 #: inc/admin/callbacks/Advanced.php:487
 msgid "Enter Yandex meta value site verification"
-msgstr "Adja meg a Yandex webhely-ellenőrzés meta értékét"
+msgstr "Adja meg a Yandex-webhely-ellenőrzéshez szükséges metaértéket"
 
 #: inc/admin/callbacks/Advanced.php:497 inc/admin/settings/Advanced.php:204
 msgid "Baidu site verification"
-msgstr "Baidu webhely-ellenőrzés"
+msgstr "Baidu-webhely-ellenőrzés"
 
 #: inc/admin/callbacks/Advanced.php:497
 msgid "Enter Baidu meta value site verification"
-msgstr "Adja meg a Baidu webhely-ellenőrzés meta értékét"
+msgstr "Adja meg a Baidu-webhely-ellenőrzéshez szükséges metaértéket"
 
 #: inc/admin/callbacks/Advanced.php:514
 msgid "Remove SEO from Admin Bar in backend and frontend"
-msgstr "Távolítsa el a SEO-t az Admin Barból a backendben és a frontendben"
+msgstr "Távolítsa el a SEO-t az adminisztrációs eszköztárból az adminfelületen és a webhely nyilvános felületén"
 
 #: inc/admin/callbacks/Advanced.php:534
 msgid "Remove the SEO notifications counter in the Admin Bar"
-msgstr "A SEO értesítések számlálójának eltávolítása az Admin Barból"
+msgstr "A SEO-értesítések számlálójának eltávolítása az adminisztrációs eszköztárból"
 
 #: inc/admin/callbacks/Advanced.php:560
 msgid "Disable the universal SEO metabox"
-msgstr "Az univerzális SEO metabox letiltása"
+msgstr "Az univerzális SEO-metadoboz kikapcsolása"
 
 #: inc/admin/callbacks/Advanced.php:564
 msgid ""
 "Uncheck this option to edit your SEO directly from your page builder UI."
-msgstr ""
-"Törölje ennek az opciónak a jelölését, hogy közvetlenül a page builder UI-"
-"járól szerkeszthesse a SEO-t."
+msgstr "Törölje ennek az opciónak a jelölését, hogy közvetlenül az oldalépítő felületéről szerkeszthesse a SEO-t."
 
 #: inc/admin/callbacks/Advanced.php:568
 msgid ""
 "Learn more about how we interface with all page builders to optimize your "
 "productivity"
-msgstr ""
-"Tudjon meg többet arról, hogyan működünk együtt minden page builderrel a "
-"hatékonyság optimalizálása érdekében"
+msgstr "További tudnivalók arról, hogyan működik együtt a bővítmény az összes oldalépítővel a hatékonyság növelése érdekében"
 
 #: inc/admin/callbacks/Advanced.php:595
 msgid "Enable the universal SEO metabox for the Block Editor (Gutenberg)"
-msgstr ""
-"Az univerzális SEO metabox engedélyezése a Block Editor (Gutenberg) számára"
+msgstr "Az univerzális SEO-metadoboz bekapcsolása a blokkszerkesztőben (Gutenberg)"
 
 #: inc/admin/callbacks/Advanced.php:597
 msgid ""
 "Uncheck this option to keep the old SEO metaboxes located below the post "
 "content with the Block Editor."
-msgstr ""
-"Törölje ennek az opciónak a jelölését, hogy a régi SEO metaboxok a bejegyzés"
-" tartalma alatt maradjanak a Block Editor használatakor."
+msgstr "Törölje ennek az opciónak a jelölését, hogy a régi SEO-metadobozok a bejegyzés tartalma alatt maradjanak a blokkszerkesztő használatakor."
 
 #: inc/admin/callbacks/Advanced.php:598
 msgid "The previous option must be unchecked."
@@ -1316,7 +1273,7 @@ msgstr "Az előző opció jelölését törölni kell."
 
 #: inc/admin/callbacks/Advanced.php:618
 msgid "Remove noindex item from Admin Bar in frontend"
-msgstr "A noindex elem eltávolítása az Admin Barból a frontendben"
+msgstr "A noindex tétel eltávolítása az adminisztrációs eszköztárból a webhely nyilvános felületén"
 
 #: inc/admin/callbacks/Advanced.php:636
 msgid "High priority (top)"
@@ -1332,27 +1289,27 @@ msgstr "Alacsony prioritás"
 
 #: inc/admin/callbacks/Advanced.php:667
 msgid "Add title column"
-msgstr "Cím oszlop hozzáadása"
+msgstr "Címoszlop hozzáadása"
 
 #: inc/admin/callbacks/Advanced.php:687
 msgid "Add meta description column"
-msgstr "Meta leírás oszlop hozzáadása"
+msgstr "Metaleírás-oszlop hozzáadása"
 
 #: inc/admin/callbacks/Advanced.php:707
 msgid "Add redirection enable column"
-msgstr "Átirányítás engedélyezése oszlop hozzáadása"
+msgstr "Az átirányítás bekapcsolt állapotát jelző oszlop hozzáadása"
 
 #: inc/admin/callbacks/Advanced.php:727
 msgid "Add redirection URL column"
-msgstr "Átirányítás URL oszlop hozzáadása"
+msgstr "Átirányítási URL-oszlop hozzáadása"
 
 #: inc/admin/callbacks/Advanced.php:747
 msgid "Add canonical URL column"
-msgstr "Kanonikus URL oszlop hozzáadása"
+msgstr "Kanonikus URL-oszlop hozzáadása"
 
 #: inc/admin/callbacks/Advanced.php:767
 msgid "Add target keyword column"
-msgstr "Célkulcsszó oszlop hozzáadása"
+msgstr "Célkulcsszóoszlop hozzáadása"
 
 #: inc/admin/callbacks/Advanced.php:787
 msgid "Display noindex status"
@@ -1372,11 +1329,11 @@ msgstr "Kimenő linkek számának megjelenítése"
 
 #: inc/admin/callbacks/Advanced.php:867
 msgid "Display Content Analysis results column (\"Good\" or \"Should be improved\")"
-msgstr "Tartalomelemzés eredményei oszlop megjelenítése (\"Jó\" vagy \"Javítandó\")"
+msgstr "A tartalomelemzés eredményeit mutató oszlop megjelenítése („Jó” vagy „Javítandó”)"
 
 #: inc/admin/callbacks/Advanced.php:887 inc/admin/settings/Advanced.php:254
 msgid "Remove Content Analysis Metabox"
-msgstr "Tartalomelemzés metabox eltávolítása"
+msgstr "Tartalomelemzési metabox eltávolítása"
 
 #: inc/admin/callbacks/Advanced.php:892
 msgid ""
@@ -1410,7 +1367,7 @@ msgstr "Keresse meg a Measurement ID-t"
 
 #: inc/admin/callbacks/Analytics.php:53
 msgid "After the opening body tag (recommended)"
-msgstr "A body nyitó tagje után (ajánlott)"
+msgstr "A nyitó body-címke után (ajánlott)"
 
 #: inc/admin/callbacks/Analytics.php:58
 msgid "Footer"
@@ -1424,10 +1381,7 @@ msgstr "Head (nem ajánlott)"
 msgid ""
 "Your theme must be compatible with <code>wp_body_open</code> hook introduced"
 " in WordPress 5.2 if \"opening body tag\" option selected."
-msgstr ""
-"A sablonjának kompatibilisnek kell lennie a WordPress 5.2-ben bevezetett "
-"<code>wp_body_open</code> hookkal, ha az \"opening body tag\" opció van "
-"kiválasztva."
+msgstr "A sablonjának kompatibilisnek kell lennie a WordPress 5.2-ben bevezetett <code>wp_body_open</code> hookkal, ha a „nyitó body-címke” opció van kiválasztva."
 
 #: inc/admin/callbacks/Analytics.php:89
 msgid "Request user's consent for analytics tracking (required by GDPR)"
@@ -1438,9 +1392,7 @@ msgstr ""
 #: inc/admin/callbacks/Analytics.php:93
 msgid ""
 "The user must click the <strong>Accept button</strong> to allow tracking."
-msgstr ""
-"A felhasználónak a <strong>Elfogadás gombra</strong> kell kattintania a "
-"követés engedélyezéséhez."
+msgstr "A követés engedélyezéséhez a felhasználónak az <strong>Elfogadás gombra</strong> kell kattintania."
 
 #: inc/admin/callbacks/Analytics.php:98
 msgid "User roles excluded from tracking will not see the consent message."
@@ -1452,9 +1404,7 @@ msgstr ""
 msgid ""
 "If you use a caching plugin, you have to exclude this JS file in your "
 "settings:"
-msgstr ""
-"Ha gyorsítótárazó bővítményt használ, ki kell zárnia ezt a JS fájlt a "
-"beállításokban:"
+msgstr "Ha gyorsítótárazó bővítményt használ, ki kell zárnia ezt a JS-fájlt a beállításokban:"
 
 #: inc/admin/callbacks/Analytics.php:104
 msgid ""
@@ -1483,9 +1433,7 @@ msgstr "Az előző opciót be kell jelölni ennek használatához."
 
 #: inc/admin/callbacks/Analytics.php:148
 msgid "Allow user to change its choice about cookies"
-msgstr ""
-"A felhasználó sütikkel kapcsolatos választásának megváltoztatásának "
-"engedélyezése"
+msgstr "A cookie-kkal kapcsolatos felhasználói választás módosításának engedélyezése"
 
 #: inc/admin/callbacks/Analytics.php:162
 msgid "Enter your message (HTML allowed)"
@@ -1493,9 +1441,7 @@ msgstr "Adja meg az üzenetét (HTML engedélyezett)"
 
 #: inc/admin/callbacks/Analytics.php:162
 msgid "This message will only appear if request user's consent is enabled."
-msgstr ""
-"Ez az üzenet csak akkor jelenik meg, ha a felhasználói hozzájárulás kérése "
-"engedélyezve van."
+msgstr "Ez az üzenet csak akkor jelenik meg, ha a felhasználói hozzájárulás kérése engedélyezve van."
 
 #: inc/admin/callbacks/Analytics.php:165
 msgid "Hook to filter user consent message - new window"
@@ -1503,7 +1449,7 @@ msgstr "Hook a felhasználói hozzájárulási üzenet szűréséhez - új ablak
 
 #: inc/admin/callbacks/Analytics.php:168
 msgid "HTML tags allowed: strong, em, br, a href / target"
-msgstr "Engedélyezett HTML tagek: strong, em, br, a href / target"
+msgstr "Engedélyezett HTML-címkék: strong, em, br, a href / target"
 
 #: inc/admin/callbacks/Analytics.php:171
 msgid ""
@@ -1532,7 +1478,7 @@ msgstr "Módosítsa a Bezárás gomb értékét"
 
 #: inc/admin/callbacks/Analytics.php:202
 msgid "default: Manage cookies"
-msgstr "alapértelmezett: Sütik kezelése"
+msgstr "alapértelmezett: Cookie-k kezelése"
 
 #: inc/admin/callbacks/Analytics.php:202
 msgid "Change the edit button value"
@@ -1568,15 +1514,13 @@ msgstr "Jobb"
 
 #: inc/admin/callbacks/Analytics.php:292
 msgid "Change the cookie bar width"
-msgstr "Módosítsa a sütisáv szélességét"
+msgstr "Módosítsa a cookie-sáv szélességét"
 
 #: inc/admin/callbacks/Analytics.php:296
 msgid ""
 "Default unit is Pixels. Add % just after your custom value to use "
 "percentages (e.g. 80%)."
-msgstr ""
-"Az alapértelmezett mértékegység a pixel. Tegyen % jelet közvetlenül az "
-"egyéni érték után a százalék használatához (pl. 80%)."
+msgstr "Az alapértelmezett mértékegység a képpont. Adjon hozzá egy % jelet közvetlenül az egyéni érték után a százalékos érték megadásához (pl. 80%)."
 
 #: inc/admin/callbacks/Analytics.php:310
 msgid "Backdrop"
@@ -1584,11 +1528,11 @@ msgstr "Háttérréteg"
 
 #: inc/admin/callbacks/Analytics.php:314
 msgid "Customize the cookie bar <strong>backdrop</strong>."
-msgstr "Testreszabhatja a sütisáv <strong>háttérrétegét</strong>."
+msgstr "Testreszabhatja a cookie-sáv <strong>háttérrétegét</strong>."
 
 #: inc/admin/callbacks/Analytics.php:323
 msgid "Display a backdrop with the cookie bar"
-msgstr "Háttérréteg megjelenítése a sütisávval együtt"
+msgstr "Háttérréteg megjelenítése a cookie-sávval együtt"
 
 #: inc/admin/callbacks/Analytics.php:336 inc/admin/callbacks/Analytics.php:358
 #: inc/admin/callbacks/Analytics.php:413 inc/admin/callbacks/Analytics.php:482
@@ -1605,11 +1549,11 @@ msgstr "Fő beállítások"
 
 #: inc/admin/callbacks/Analytics.php:354
 msgid "Customize the general settings of the <strong>cookie bar</strong>."
-msgstr "Testreszabhatja a <strong>sütisáv</strong> általános beállításait."
+msgstr "Testreszabhatja a <strong>cookie-sáv</strong> általános beállításait."
 
 #: inc/admin/callbacks/Analytics.php:363
 msgid "Change the color of the cookie bar background"
-msgstr "Módosítsa a sütisáv háttérszínét"
+msgstr "Módosítsa a cookie-sáv háttérszínét"
 
 #: inc/admin/callbacks/Analytics.php:373 inc/admin/callbacks/Analytics.php:442
 #: inc/admin/callbacks/Analytics.php:512
@@ -1618,7 +1562,7 @@ msgstr "Szöveg színe: "
 
 #: inc/admin/callbacks/Analytics.php:378
 msgid "Change the color of the cookie bar text"
-msgstr "Módosítsa a sütisáv szövegének színét"
+msgstr "Módosítsa a cookie-sáv szövegének színét"
 
 #: inc/admin/callbacks/Analytics.php:388
 msgid "Link color: "
@@ -1626,7 +1570,7 @@ msgstr "Hivatkozás színe: "
 
 #: inc/admin/callbacks/Analytics.php:393
 msgid "Change the color of the cookie bar link"
-msgstr "Módosítsa a sütisáv hivatkozásának színét"
+msgstr "Módosítsa a cookie-sáv linkjének színét"
 
 #: inc/admin/callbacks/Analytics.php:405
 msgid "Primary button"
@@ -1638,7 +1582,7 @@ msgstr "Testreszabhatja az <strong>Elfogadás gombot</strong>."
 
 #: inc/admin/callbacks/Analytics.php:417
 msgid "Change the color of the cookie bar button background"
-msgstr "Módosítsa a sütisáv gomb háttérszínét"
+msgstr "Módosítsa a cookie-sáv gombjának háttérszínét"
 
 #: inc/admin/callbacks/Analytics.php:427 inc/admin/callbacks/Analytics.php:497
 msgid "Background color on hover: "
@@ -1646,11 +1590,11 @@ msgstr "Háttérszín rámutatáskor: "
 
 #: inc/admin/callbacks/Analytics.php:432
 msgid "Change the color of the cookie bar button hover background"
-msgstr "Módosítsa a sütisáv gomb háttérszínét rámutatáskor"
+msgstr "Módosítsa a cookie-sáv gombjának rámutatáskor megjelenő háttérszínét"
 
 #: inc/admin/callbacks/Analytics.php:447
 msgid "Change the color of the cookie bar button"
-msgstr "Módosítsa a sütisáv gomb színét"
+msgstr "Módosítsa a cookie-sáv gombjának színét"
 
 #: inc/admin/callbacks/Analytics.php:457 inc/admin/callbacks/Analytics.php:527
 msgid "Text color on hover: "
@@ -1658,7 +1602,7 @@ msgstr "Szöveg színe rámutatáskor: "
 
 #: inc/admin/callbacks/Analytics.php:462
 msgid "Change the color of the cookie bar button hover"
-msgstr "Módosítsa a sütisáv gomb színét rámutatáskor"
+msgstr "Módosítsa a cookie-sáv gombjának színét rámutatáskor"
 
 #: inc/admin/callbacks/Analytics.php:474
 msgid "Secondary button"
@@ -1670,23 +1614,23 @@ msgstr "Testreszabhatja a <strong>Bezárás gombot</strong>."
 
 #: inc/admin/callbacks/Analytics.php:487
 msgid "Change the color of the cookie bar secondary button background"
-msgstr "Módosítsa a sütisáv másodlagos gombjának háttérszínét"
+msgstr "Módosítsa a cookie-sáv másodlagos gombjának háttérszínét"
 
 #: inc/admin/callbacks/Analytics.php:502
 msgid "Change the color of the cookie bar secondary button"
-msgstr "Módosítsa a sütisáv másodlagos gombjának színét"
+msgstr "Módosítsa a cookie-sáv másodlagos gombjának színét"
 
 #: inc/admin/callbacks/Analytics.php:517
 msgid "Change the color of the cookie bar secondary button hover background"
-msgstr "Módosítsa a sütisáv másodlagos gombjának háttérszínét rámutatáskor"
+msgstr "Módosítsa a cookie-sáv másodlagos gombjának háttérszínét rámutatáskor"
 
 #: inc/admin/callbacks/Analytics.php:532
 msgid "Change the color of the cookie bar secondary button hover"
-msgstr "Módosítsa a sütisáv másodlagos gombjának színét rámutatáskor"
+msgstr "Módosítsa a cookie-sáv másodlagos gombjának színét rámutatáskor"
 
 #: inc/admin/callbacks/Analytics.php:576
 msgid "Enter your Google Ads conversion ID (e.g. AW-123456789)"
-msgstr "Adja meg a Google Ads konverziós azonosítóját (pl. AW-123456789)"
+msgstr "Adja meg a Google Ads konverziós ID-jét (pl. AW-123456789)"
 
 #: inc/admin/callbacks/Analytics.php:576
 msgid "AW-XXXXXXXXX"
@@ -1694,24 +1638,21 @@ msgstr "AW-XXXXXXXXX"
 
 #: inc/admin/callbacks/Analytics.php:580
 msgid "Learn how to find your Google Ads Conversion ID"
-msgstr "Ismerje meg, hogyan találhatja meg Google Ads konverziós azonosítóját"
+msgstr "Ismerje meg, hogyan találhatja meg a Google Ads konverziós ID-jét"
 
 #: inc/admin/callbacks/Analytics.php:593
 msgid ""
 "Paste your tracking code here like Google Tag Manager (head). Do NOT paste "
 "GA4 or Matomo codes here. They are automatically added to your source code."
-msgstr ""
-"Illessze be ide a nyomkövető kódját, például a Google Tag Managerét (head). "
-"NE illesszen be ide GA4 vagy Matomo kódokat. Ezek automatikusan hozzáadódnak"
-" a forráskódjához."
+msgstr "Illessze be ide például a Google Tag Manager (head) nyomkövetőkódját. Ne illesszen be ide GA4- vagy Matomo-kódot. Ezek automatikusan hozzáadódnak a forráskódjához."
 
 #: inc/admin/callbacks/Analytics.php:593
 msgid "Additional tracking code field"
-msgstr "További nyomkövető kód mező"
+msgstr "További nyomkövetőkód-mező"
 
 #: inc/admin/callbacks/Analytics.php:597
 msgid "This code will be added in the head section of your page."
-msgstr "Ez a kód az oldal head szakaszához lesz hozzáadva."
+msgstr "Ez a kód az oldal fejrészébe kerül."
 
 #. translators: %$ name of the user capability "unfiltered_html"
 #: inc/admin/callbacks/Analytics.php:604 inc/admin/callbacks/Analytics.php:627
@@ -1724,24 +1665,21 @@ msgstr ""
 
 #: inc/admin/callbacks/Analytics.php:617
 msgid "Paste your tracking code here like Google Tag Manager (body)"
-msgstr ""
-"Illessze be ide a nyomkövető kódját, például a Google Tag Managerét (body)"
+msgstr "Illessze be ide például a Google Tag Manager (body) nyomkövetőkódját"
 
 #: inc/admin/callbacks/Analytics.php:617
 msgid "Additional tracking code field added to body"
-msgstr "További nyomkövető kód mező a body részhez hozzáadva"
+msgstr "További nyomkövetőkód-mező hozzáadva az oldal törzsrészéhez"
 
 #: inc/admin/callbacks/Analytics.php:619
 msgid "This code will be added just after the opening body tag of your page."
-msgstr "Ez a kód az oldal nyitó body tagje után közvetlenül lesz hozzáadva."
+msgstr "Ez a kód közvetlenül az oldal nyitó body-címkéje után kerül hozzáadásra."
 
 #: inc/admin/callbacks/Analytics.php:621
 msgid ""
 "You don‘t see your code? Make sure to call <code>wp_body_open();</code> just"
 " after the opening body tag in your theme."
-msgstr ""
-"Nem látja a kódját? Győződjön meg róla, hogy a témában a nyitó body tag után"
-" közvetlenül meghívja a <code>wp_body_open();</code> függvényt."
+msgstr "Nem látja a kódját? Győződjön meg róla, hogy a sablonban közvetlenül a nyitó body-címke után meghívja a <code>wp_body_open();</code> függvényt."
 
 #: inc/admin/callbacks/Analytics.php:636
 msgid "Learn how to integrate Google Tag Manager"
@@ -1753,11 +1691,11 @@ msgstr "Illessze be ide a követőkódját (lábléc)"
 
 #: inc/admin/callbacks/Analytics.php:650
 msgid "Additional tracking code field added to footer"
-msgstr "További követőkód mező hozzáadva a lábléchez"
+msgstr "További nyomkövetőkód-mező hozzáadva a lábléchez"
 
 #: inc/admin/callbacks/Analytics.php:654
 msgid "This code will be added just before the closing body tag of your page."
-msgstr "Ez a kód közvetlenül az oldal záró body tagje elé kerül."
+msgstr "Ez a kód közvetlenül az oldal záró body címkéje elé kerül."
 
 #: inc/admin/callbacks/Analytics.php:680 inc/admin/settings/Analytics.php:293
 msgid "Enable external links tracking"
@@ -1773,15 +1711,15 @@ msgstr "pdf|docx|pptx|zip"
 
 #: inc/admin/callbacks/Analytics.php:713 inc/admin/settings/Analytics.php:309
 msgid "Track downloads' clicks"
-msgstr "Letöltések kattintásainak követése"
+msgstr "Letöltésekre történő kattintások követése"
 
 #: inc/admin/callbacks/Analytics.php:717
 msgid "Separate each file type extensions with a pipe \"|\""
-msgstr "Válassza el az egyes fájltípus-kiterjesztéseket egy pipe \"|\" jellel"
+msgstr "Az egyes fájlkiterjesztéseket a „|” jellel válassza el"
 
 #: inc/admin/callbacks/Analytics.php:735
 msgid "Enable affiliate/outbound tracking"
-msgstr "Affiliate/kimenő hivatkozások követésének engedélyezése"
+msgstr "Partneri/kimenő linkek követésének bekapcsolása"
 
 #: inc/admin/callbacks/Analytics.php:749
 msgid "aff|go|out"
@@ -1789,15 +1727,15 @@ msgstr "aff|go|out"
 
 #: inc/admin/callbacks/Analytics.php:749 inc/admin/settings/Analytics.php:325
 msgid "Track affiliate/outbound links"
-msgstr "Affiliate/kimenő hivatkozások követése"
+msgstr "Partneri/kimenő linkek követése"
 
 #: inc/admin/callbacks/Analytics.php:753
 msgid "Separate each keyword with a pipe \"|\""
-msgstr "Válassza el az egyes kulcsszavakat egy pipe \"|\" jellel"
+msgstr "Az egyes kulcsszavakat a „|” jellel válassza el"
 
 #: inc/admin/callbacks/Analytics.php:770
 msgid "Enable tracking of \"tel:\" links"
-msgstr "A \"tel:\" linkek követésének engedélyezése"
+msgstr "A „tel:” linkek követésének bekapcsolása"
 
 #: inc/admin/callbacks/Analytics.php:792 inc/admin/callbacks/Analytics.php:818
 #: inc/admin/callbacks/Analytics.php:845 inc/admin/callbacks/Analytics.php:872
@@ -1838,9 +1776,7 @@ msgstr "Ismerje meg, hogyan telepítheti a Matomo On-Premise-t a szerverére."
 
 #: inc/admin/callbacks/Analytics.php:971
 msgid "Enter \"example\" if you Matomo account URL is \"example.matomo.cloud\""
-msgstr ""
-"Adja meg az \"example\" értéket, ha a Matomo-fiókja URL-je "
-"\"example.matomo.cloud\""
+msgstr "Adja meg az „example” értéket, ha a Matomo-fiók URL-je „example.matomo.cloud”"
 
 #: inc/admin/callbacks/Analytics.php:972
 msgid "Matomo URL (Cloud or Self-hosted)"
@@ -1858,11 +1794,11 @@ msgstr ""
 
 #: inc/admin/callbacks/Analytics.php:987
 msgid "Enter your site ID here"
-msgstr "Itt adja meg a webhelyazonosítóját"
+msgstr "Itt adja meg a webhely ID-jét"
 
 #: inc/admin/callbacks/Analytics.php:988
 msgid "Matomo Site ID"
-msgstr "Matomo webhelyazonosító"
+msgstr "Matomo-webhely ID"
 
 #: inc/admin/callbacks/Analytics.php:993
 msgid ""
@@ -1895,21 +1831,18 @@ msgstr ""
 
 #: inc/admin/callbacks/Analytics.php:1034
 msgid "Prepend the site domain to the page title when tracking"
-msgstr "A webhely domainjének az oldal címének elejére illesztése követéskor"
+msgstr "A webhely domainjének az oldal címe elé illesztése követéskor"
 
 #: inc/admin/callbacks/Analytics.php:1037
 msgid ""
 "If someone visits the 'About' page on blog.example.com it will be recorded "
 "as 'blog / About'. This is the easiest way to get an overview of your "
 "traffic by sub-domain."
-msgstr ""
-"Ha valaki a blog.example.com 'About' oldalát látogatja meg, ez 'blog / "
-"About'-ként kerül rögzítésre. Ez a legegyszerűbb módja annak, hogy "
-"aldomainenként áttekintést kapjon a forgalmáról."
+msgstr "Ha valaki a blog.example.com „About” oldalát látogatja meg, ez „blog / About”-ként kerül rögzítésre. Ez a legegyszerűbb módja annak, hogy aldomainenként áttekintést kapjon a forgalmáról."
 
 #: inc/admin/callbacks/Analytics.php:1055 inc/admin/settings/Analytics.php:466
 msgid "Track users with JavaScript disabled"
-msgstr "Letiltott JavaScripttel rendelkező felhasználók követése"
+msgstr "A JavaScriptet kikapcsoló felhasználók követése"
 
 #: inc/admin/callbacks/Analytics.php:1074 inc/admin/settings/Analytics.php:474
 msgid "Enables cross domain linking"
@@ -1939,14 +1872,11 @@ msgstr ""
 msgid ""
 "Whenever a user clicks on a link to one of your website's alias URLs, it "
 "will append a URL parameter pk_vid forwarding the Visitor ID."
-msgstr ""
-"Valahányszor egy felhasználó a webhelye valamely alias URL-jére mutató "
-"linkre kattint, hozzáfűz egy pk_vid URL-paramétert, amely továbbítja a "
-"látogatóazonosítót."
+msgstr "Valahányszor egy felhasználó a webhelye valamely alias URL-jére mutató linkre kattint, a rendszer egy pk_vid URL-paramétert fűz az URL-hez, amely továbbítja a látogatóazonosítót."
 
 #: inc/admin/callbacks/Analytics.php:1097
 msgid "Enter your domains: seopress.org,sub.seopress.org,sub2.seopress.org"
-msgstr "Adja meg a domaineit: seopress.org,sub.seopress.org,sub2.seopress.org"
+msgstr "Adja meg a domainneveket: seopress.org,sub.seopress.org,sub2.seopress.org"
 
 #: inc/admin/callbacks/Analytics.php:1098
 msgid "Cross domains"
@@ -1959,17 +1889,13 @@ msgstr "Kliensoldali DoNotTrack-észlelés engedélyezése"
 #: inc/admin/callbacks/Analytics.php:1115
 msgid ""
 "Tracking requests will not be sent if visitors do not wish to be tracked."
-msgstr ""
-"A követési kérelmek nem kerülnek elküldésre, ha a látogatók nem kívánják, "
-"hogy kövessék őket."
+msgstr "A követési kérések nem kerülnek elküldésre, ha a látogatók nem kívánják, hogy nyomon kövessék őket."
 
 #: inc/admin/callbacks/Analytics.php:1135
 msgid ""
 "Disables all first party cookies. Existing Matomo cookies for this website "
 "will be deleted on the next page view."
-msgstr ""
-"Letiltja az összes első féltől származó sütit. A webhelyhez tartozó meglévő "
-"Matomo-sütik a következő oldalmegtekintéskor törlődnek."
+msgstr "Letiltja az összes saját cookie-t. A webhely meglévő Matomo-cookie-jai a következő oldalmegtekintéskor törlődnek."
 
 #: inc/admin/callbacks/Analytics.php:1154
 msgid "Enabling Download & Outlink tracking"
@@ -1979,9 +1905,7 @@ msgstr "A letöltések és kimenő hivatkozások követésének engedélyezése"
 msgid ""
 "By default, any file ending with one of these extensions will be considered "
 "a \"download\" in the Matomo interface:"
-msgstr ""
-"Alapértelmezés szerint bármely, az alábbi kiterjesztések egyikére végződő "
-"fájl \"letöltésnek\" minősül a Matomo felületén:"
+msgstr "Alapértelmezés szerint bármely, az alábbi kiterjesztések egyikére végződő fájl „letöltésnek” minősül a Matomo felületén:"
 
 #: inc/admin/callbacks/Analytics.php:1180
 msgid "Disabling all heatmaps and session recordings"
@@ -2001,9 +1925,7 @@ msgstr "Keresse meg a projektazonosítóját"
 
 #: inc/admin/callbacks/ImageSEO.php:16
 msgid "Redirect attachment pages to post parent (or homepage if none)"
-msgstr ""
-"A csatolmányoldalak átirányítása a bejegyzés szülőjére (vagy a kezdőlapra, "
-"ha nincs)"
+msgstr "A csatolmányoldalak átirányítása a szülő bejegyzésre (vagy a kezdőlapra, ha nincs szülő bejegyzés)"
 
 #: inc/admin/callbacks/ImageSEO.php:36 inc/admin/wizard/admin-wizard.php:1394
 msgid ""
@@ -2017,17 +1939,13 @@ msgstr ""
 msgid ""
 "If this option is checked, it will take precedence over the redirection of "
 "attachments to the post's parent."
-msgstr ""
-"Ha ez az opció be van jelölve, elsőbbséget élvez a csatolmányok bejegyzés "
-"szülőjére történő átirányításával szemben."
+msgstr "Ha be van jelölve, ez az opció elsőbbséget élvez a csatolmányok szülő bejegyzésre történő átirányításával szemben."
 
 #: inc/admin/callbacks/ImageSEO.php:60
 msgid ""
 "When upload a media, remove accents, spaces, capital letters... and force "
 "UTF-8 encoding"
-msgstr ""
-"Média feltöltésekor távolítsa el az ékezeteket, szóközöket, nagybetűket... "
-"és kényszerítse az UTF-8 kódolást"
+msgstr "Médiafájl feltöltésekor távolítsa el az ékezeteket, szóközöket, nagybetűket... és kényszerítse ki az UTF-8 kódolást"
 
 #: inc/admin/callbacks/ImageSEO.php:64
 msgid ""
@@ -2092,11 +2010,7 @@ msgid ""
 " library after they are inserted into the content of a post, page, or post "
 "type. By checking this box, this will be done when the page loads on the fly"
 " as long as this option remains active."
-msgstr ""
-"Alapértelmezés szerint a WordPress nem frissíti a médiatárból megadott képek"
-" alt szövegét, miután azokat beillesztették egy bejegyzés, oldal vagy "
-"bejegyzéstípus tartalmába. Ennek a jelölőnégyzetnek a bejelölésével ez "
-"betöltéskor menet közben történik, amíg ez az opció aktív."
+msgstr "Alapértelmezés szerint a WordPress nem frissíti a médiatárban megadott képek alt szövegét, miután azokat beillesztették egy bejegyzés, oldal vagy bejegyzéstípus tartalmába. A jelölőnégyzet bejelölése esetén a WordPress ezt menet közben, az oldal betöltésekor végzi el, amíg ez az opció aktív."
 
 #: inc/admin/callbacks/ImageSEO.php:190
 msgid ""
@@ -2121,16 +2035,11 @@ msgstr "URL-ek frissítése"
 msgid ""
 "Remove URLs (URL must return a 404 or 410 status code or the page contains "
 "<meta name=\"robots\" content=\"noindex\" /> meta tag)"
-msgstr ""
-"URL-ek eltávolítása (az URL-nek 404 vagy 410 állapotkódot kell visszaadnia, "
-"vagy az oldal tartalmaz <meta name=\"robots\" content=\"noindex\" /> meta "
-"taget)"
+msgstr "URL-ek eltávolítása (az URL-nek 404-es vagy 410-es állapotkódot kell visszaadnia, vagy az oldal tartalmazza a <meta name=\"robots\" content=\"noindex\" /> címkét)"
 
 #: inc/admin/callbacks/InstantIndexing.php:95
 msgid "Enter one URL per line to submit them to search engines (max 100 URLs)"
-msgstr ""
-"Adjon meg soronként egy URL-t a keresőmotorokhoz való beküldéshez (max. 100 "
-"URL)"
+msgstr "A keresőmotoroknak történő beküldéshez adjon meg soronként egy URL-t (legfeljebb 100 URL-t)"
 
 #: inc/admin/callbacks/InstantIndexing.php:105
 msgid " / 100 URLs"
@@ -2156,7 +2065,7 @@ msgstr "Legutóbbi indexelési kérelem"
 
 #: inc/admin/callbacks/InstantIndexing.php:134
 msgid "Bing Response"
-msgstr "Bing válasz"
+msgstr "Bing válasza"
 
 #: inc/admin/callbacks/InstantIndexing.php:144
 #: inc/admin/callbacks/InstantIndexing.php:189
@@ -2170,7 +2079,7 @@ msgstr "URL fogadva. Az IndexNow kulcs ellenőrzése folyamatban."
 #: inc/admin/callbacks/InstantIndexing.php:150
 #: inc/functions/options-instant-indexing.php:209
 msgid "Bad request: Invalid format"
-msgstr "Hibás kérés: Érvénytelen formátum"
+msgstr "Hibás kérés: érvénytelen formátum"
 
 #: inc/admin/callbacks/InstantIndexing.php:153
 #: inc/functions/options-instant-indexing.php:225
@@ -2181,9 +2090,7 @@ msgstr "Hiányzik a Bing API-kulcs"
 msgid ""
 "Forbidden: In case of key not valid (e.g. key not found, file found but key "
 "not in the file)"
-msgstr ""
-"Hozzáférés megtagadva: Érvénytelen kulcs esetén (pl. kulcs nem található, a "
-"fájl megtalálható, de a kulcs nincs a fájlban)"
+msgstr "Hozzáférés megtagadva: hibás kulcs esetén (pl. a kulcs nem található, a fájl megtalálható, de a kulcs nincs benne)"
 
 #: inc/admin/callbacks/InstantIndexing.php:159
 msgid ""
@@ -2203,7 +2110,7 @@ msgstr "Valami hiba történt"
 
 #: inc/admin/callbacks/InstantIndexing.php:179
 msgid "Google Response"
-msgstr "Google válasz"
+msgstr "Google válasza"
 
 #: inc/admin/callbacks/InstantIndexing.php:227
 msgid "Latest URLs submitted"
@@ -2263,27 +2170,25 @@ msgstr ""
 
 #: inc/admin/callbacks/Sitemaps.php:20 inc/admin/settings/Sitemaps.php:16
 msgid "Enable XML Sitemap"
-msgstr "XML webhelytérkép engedélyezése"
+msgstr "XML-webhelytérkép engedélyezése"
 
 #: inc/admin/callbacks/Sitemaps.php:21
 msgid "Guide to enable XML Sitemaps - new window"
-msgstr "Útmutató az XML webhelytérképek engedélyezéséhez - új ablak"
+msgstr "Útmutató az XML-webhelytérképek engedélyezéséhez - új ablak"
 
 #: inc/admin/callbacks/Sitemaps.php:45
 msgid ""
 "Enable Image Sitemap (standard images, image galleries, featured image, "
 "WooCommerce product images)"
-msgstr ""
-"Képtérkép engedélyezése (normál képek, képgalériák, kiemelt kép, WooCommerce"
-" termékképek)"
+msgstr "Képtérkép bekapcsolása (normál képek, képgalériák, kiemelt kép, WooCommerce-termékképek)"
 
 #: inc/admin/callbacks/Sitemaps.php:46
 msgid "Guide to enable XML image sitemap - new window"
-msgstr "Útmutató az XML képtérkép engedélyezéséhez - új ablak"
+msgstr "Útmutató az XML-képtérkép engedélyezéséhez - új ablak"
 
 #: inc/admin/callbacks/Sitemaps.php:51
 msgid "Images in XML sitemaps are visible only from the source code."
-msgstr "Az XML webhelytérképekben lévő képek csak a forráskódból láthatók."
+msgstr "Az XML-webhelytérképekben lévő képek csak a forráskódból láthatók."
 
 #: inc/admin/callbacks/Sitemaps.php:72 inc/admin/settings/Sitemaps.php:34
 msgid "Enable Author Sitemap"
@@ -2298,11 +2203,11 @@ msgstr ""
 
 #: inc/admin/callbacks/Sitemaps.php:103 inc/admin/settings/Sitemaps.php:42
 msgid "Enable HTML Sitemap"
-msgstr "HTML webhelytérkép engedélyezése"
+msgstr "HTML-webhelytérkép engedélyezése"
 
 #: inc/admin/callbacks/Sitemaps.php:104 inc/admin/sections/Sitemaps.php:129
 msgid "Guide to enable a HTML Sitemap - new window"
-msgstr "Útmutató egy HTML webhelytérkép engedélyezéséhez - új ablak"
+msgstr "Útmutató egy HTML-webhelytérkép engedélyezéséhez - új ablak"
 
 #: inc/admin/callbacks/Sitemaps.php:151 inc/admin/callbacks/Sitemaps.php:206
 msgid "Include"
@@ -2312,9 +2217,7 @@ msgstr "Belefoglalás"
 msgid ""
 "You should never include <strong>attachment</strong> post type in your "
 "sitemap. Be careful if you checked this."
-msgstr ""
-"Soha ne vegye fel a webhelytérképbe az <strong>attachment</strong> "
-"bejegyzéstípust. Legyen óvatos, ha ezt bejelölte."
+msgstr "Soha ne vegye fel a webhelytérképbe az <strong>attachment</strong> bejegyzéstípust. Legyen óvatos, ha ezt bejelölte."
 
 #: inc/admin/callbacks/Sitemaps.php:224
 msgid "e.g. 2, 28, 68"
@@ -2322,9 +2225,7 @@ msgstr "pl. 2, 28, 68"
 
 #: inc/admin/callbacks/Sitemaps.php:224 inc/admin/settings/Sitemaps.php:90
 msgid "Enter a post, page or custom post type ID(s) to display the sitemap"
-msgstr ""
-"Adja meg egy bejegyzés, oldal vagy egyéni bejegyzéstípus azonosító(ka)t a "
-"webhelytérkép megjelenítéséhez"
+msgstr "Adja meg a webhelytérkép megjelenítéséhez a bejegyzés, oldal vagy egyéni bejegyzéstípus ID-ját vagy ID-it"
 
 #: inc/admin/callbacks/Sitemaps.php:235
 msgid "e.g. 13, 8, 38"
@@ -2332,9 +2233,7 @@ msgstr "pl. 13, 8, 38"
 
 #: inc/admin/callbacks/Sitemaps.php:235 inc/admin/settings/Sitemaps.php:98
 msgid "Exclude some Posts, Pages, Custom Post Types or Terms IDs"
-msgstr ""
-"Néhány bejegyzés, oldal, egyéni bejegyzéstípus vagy kifejezés azonosítóinak "
-"kizárása"
+msgstr "Egyes bejegyzések, oldalak, egyéni bejegyzéstípusok vagy kifejezések ID-jainak kizárása"
 
 #: inc/admin/callbacks/Sitemaps.php:250
 msgid ""
@@ -2365,9 +2264,7 @@ msgstr "Menüsorrend"
 
 #: inc/admin/callbacks/Sitemaps.php:317
 msgid "Disable date after each post, page, post type?"
-msgstr ""
-"Dátum megjelenítésének letiltása minden bejegyzés, oldal és bejegyzéstípus "
-"után?"
+msgstr "Dátum megjelenítésének letiltása minden bejegyzés, oldal és bejegyzéstípus után?"
 
 #: inc/admin/callbacks/Sitemaps.php:338
 msgid "Do not display posts and products by categories / product categories?"
@@ -2377,7 +2274,7 @@ msgstr ""
 
 #: inc/admin/callbacks/Sitemaps.php:359
 msgid "Do not display post type archive links"
-msgstr "Ne jelenítse meg a bejegyzéstípus-archívum hivatkozásait"
+msgstr "Ne jelenítse meg a bejegyzéstípus-archívumokra mutató linkeket"
 
 #. translators: %1$s is_archive, %2$s true
 #: inc/admin/callbacks/Sitemaps.php:366
@@ -2418,11 +2315,11 @@ msgstr "Az Ön neve/szervezete"
 #: inc/admin/callbacks/Social.php:56 inc/admin/settings/Social.php:32
 #: inc/admin/wizard/admin-wizard.php:752
 msgid "Your photo/organization logo"
-msgstr "Az Ön fényképe/szervezet logója"
+msgstr "Az Ön fényképe/szervezetének logója"
 
 #: inc/admin/callbacks/Social.php:57
 msgid "Select your logo"
-msgstr "Válassza ki a logóját"
+msgstr "Logó kiválasztása"
 
 #: inc/admin/callbacks/Social.php:59 inc/admin/callbacks/Social.php:365
 #: inc/admin/callbacks/Social.php:448 inc/admin/callbacks/Social.php:590
@@ -2441,9 +2338,7 @@ msgstr "Eltávolítás"
 msgid ""
 "JPG, PNG, WebP and GIF allowed. The minimum allowed image dimension is 200 x"
 " 200 pixels."
-msgstr ""
-"JPG, PNG, WebP és GIF engedélyezett. A minimálisan megengedett képméret 200 "
-"x 200 képpont."
+msgstr "A JPG-, PNG-, WebP- és GIF-formátumok engedélyezettek. A minimálisan megengedett képméret 200 x 200 képpont."
 
 #: inc/admin/callbacks/Social.php:64 inc/admin/wizard/admin-wizard.php:762
 msgid ""
@@ -2458,9 +2353,7 @@ msgstr ""
 msgid ""
 "At the minimum, you should use images that are 600 x 315 pixels to display "
 "link page posts with larger images."
-msgstr ""
-"Minimumként 600 x 315 képpontos képeket használjon a linkelt oldalak "
-"bejegyzéseinek nagyobb képekkel való megjelenítéséhez."
+msgstr "Legalább 600 x 315 képpontos képeket használjon a linkelt oldalak bejegyzéseinek nagyobb képekkel való megjelenítéséhez."
 
 #: inc/admin/callbacks/Social.php:68 inc/admin/callbacks/Social.php:372
 #: inc/admin/callbacks/Social.php:597
@@ -2527,7 +2420,7 @@ msgstr "Hitelkártya-támogatás"
 
 #: inc/admin/callbacks/Social.php:163
 msgid "Emergency"
-msgstr "Sürgősségi"
+msgstr "Vészhelyzet"
 
 #: inc/admin/callbacks/Social.php:168
 msgid "Baggage tracking"
@@ -2571,7 +2464,7 @@ msgstr "pl. @my_x_account"
 
 #: inc/admin/callbacks/Social.php:257
 msgid "X Page URL"
-msgstr "X oldal URL-je"
+msgstr "X-oldal URL-je"
 
 #: inc/admin/callbacks/Social.php:268 inc/admin/wizard/admin-wizard.php:856
 msgid "e.g. https://pinterest.com/my-page-url/"
@@ -2581,7 +2474,7 @@ msgstr "pl. https://pinterest.com/my-page-url/"
 #: inc/admin/wizard/admin-wizard.php:855
 #: src/Tags/Schema/SocialAccount/Pinterest.php:15
 msgid "Pinterest URL"
-msgstr "Pinterest URL"
+msgstr "Pinterest-URL"
 
 #: inc/admin/callbacks/Social.php:279 inc/admin/wizard/admin-wizard.php:863
 msgid "e.g. https://www.instagram.com/my-page-url/"
@@ -2591,7 +2484,7 @@ msgstr "pl. https://www.instagram.com/my-page-url/"
 #: inc/admin/wizard/admin-wizard.php:862
 #: src/Tags/Schema/SocialAccount/Instagram.php:15
 msgid "Instagram URL"
-msgstr "Instagram URL"
+msgstr "Instagram-URL"
 
 #: inc/admin/callbacks/Social.php:290 inc/admin/wizard/admin-wizard.php:870
 msgid "e.g. https://www.youtube.com/my-channel-url"
@@ -2658,19 +2551,15 @@ msgstr ""
 msgid ""
 "Override every <strong>og:image</strong> tag with this default image (except"
 " if a custom og:image has already been set from the SEO metabox)."
-msgstr ""
-"Minden <strong>og:image</strong> címkét felülír ez az alapértelmezett kép "
-"(kivéve, ha egyéni og:image már be van állítva az SEO metaboxban)."
+msgstr "Minden <strong>og:image</strong> címkét felülír ez az alapértelmezett kép (kivéve, ha egyéni og:image már be van állítva az SEO-metaboxban)."
 
 #: inc/admin/callbacks/Social.php:401
 msgid "Please define a <strong>default OG Image</strong> from the field above"
-msgstr ""
-"Kérjük, adja meg az <strong>alapértelmezett OG képet</strong> a fenti "
-"mezőben"
+msgstr "Kérjük, adja meg az <strong>alapértelmezett OG-képet</strong> a fenti mezőben"
 
 #: inc/admin/callbacks/Social.php:425
 msgid "WooCommerce Shop Page."
-msgstr "WooCommerce boltoldal."
+msgstr "WooCommerce-boltoldal."
 
 #: inc/admin/callbacks/Social.php:460
 msgid "No custom post type to configure."
@@ -2734,7 +2623,7 @@ msgstr "Használja az OG-t, ha nincs X-kártya"
 
 #: inc/admin/callbacks/Social.php:587 inc/admin/settings/Social.php:243
 msgid "Default X Image"
-msgstr "Alapértelmezett X kép"
+msgstr "Alapértelmezett X-kép"
 
 #: inc/admin/callbacks/Social.php:594
 #: inc/admin/metaboxes/admin-metaboxes-form.php:480
@@ -2742,9 +2631,7 @@ msgstr "Alapértelmezett X kép"
 msgid ""
 "Minimum size: 144x144px (300x157px with large card enabled), ideal ratio 1:1"
 " (2:1 with large card), 5Mb max."
-msgstr ""
-"Minimális méret: 144x144px (300x157px, ha a nagy kártya engedélyezve van), "
-"ideális arány 1:1 (2:1 nagy kártyával), max. 5Mb."
+msgstr "Minimális méret: 144x144px (300x157px, ha a nagy kártya engedélyezve van), ideális arány 1:1 (2:1 nagy kártyával), max. 5Mb."
 
 #: inc/admin/callbacks/Social.php:617 seopress.php:314
 msgid "Default"
@@ -2760,15 +2647,11 @@ msgid ""
 "width prominent image alongside a tweet. It is designed to give the reader a"
 " rich photo experience, and clicking on the image brings the user to your "
 "website."
-msgstr ""
-"A <strong>nagy képpel</strong> rendelkező Summary Card egy nagy, teljes "
-"szélességű, hangsúlyos képet jelenít meg a tweet mellett. Úgy tervezték, "
-"hogy gazdag fotóélményt nyújtson az olvasónak, és a képre kattintva a "
-"felhasználó a webhelyére jut."
+msgstr "A <strong>nagy képpel</strong> rendelkező Summary Card egy nagy, teljes szélességű, hangsúlyos képet jelenít meg a tweet mellett. Úgy tervezték, hogy gazdag fotóélményt nyújtson az olvasónak, és a képre kattintva a felhasználó a webhelyére jut."
 
 #: inc/admin/callbacks/Social.php:660
 msgid "Default: \"full\""
-msgstr "Alapértelmezett: \"full\""
+msgstr "Alapértelmezett: „full”"
 
 #: inc/admin/callbacks/Social.php:674
 msgid ""
@@ -2786,7 +2669,7 @@ msgstr "Javítsa bejegyzései megosztását Mastodonon."
 
 #: inc/admin/callbacks/Titles.php:12
 msgid "Enter your separator, e.g. \"-\""
-msgstr "Adja meg az elválasztót, pl. \"-\""
+msgstr "Adja meg az elválasztót, pl. „-”"
 
 #: inc/admin/callbacks/Titles.php:17
 msgid "Use this separator with %%sep%% in your title and meta description."
@@ -2821,11 +2704,7 @@ msgid ""
 "recognized acronym or shorter name for your site), if applicable. Make sure "
 "the name meets the %1$s<a href=\"%2$s\" target=\"_blank\">content "
 "guidelines</a>."
-msgstr ""
-"A webhely alternatív neve (például ha a webhelyének van általánosan ismert "
-"rövidítése vagy rövidebb neve), ha alkalmazható. Győződjön meg róla, hogy a "
-"név megfelel a %1$s<a href=\"%2$s\" target=\"_blank\">tartalmi "
-"irányelveknek</a>."
+msgstr "A honlap alternatív neve (például a webhely közismert betűszava vagy rövidebb neve, ha van ilyen). Győződjön meg róla, hogy a név megfelel a %1$s<a href=\"%2$s\" target=\"_blank\">tartalmi irányelveknek</a>."
 
 #: inc/admin/callbacks/Titles.php:81
 msgid "This is a cool website about Wookiees"
@@ -2841,7 +2720,7 @@ msgstr "Ez egy klassz webhely a Wookiee-król"
 #: src/Services/I18nUniversalMetabox.php:127
 #: src/Services/I18nUniversalMetabox.php:388
 msgid "Meta description"
-msgstr "Meta leírás"
+msgstr "Metaleírás"
 
 #: inc/admin/callbacks/Titles.php:97
 msgid "Looking to edit your blog page?"
@@ -2851,40 +2730,34 @@ msgstr "Szeretné szerkeszteni a blogoldalát?"
 #: inc/admin/callbacks/Titles.php:153 inc/admin/callbacks/Titles.php:168
 msgid ""
 "Click to hide any SEO metaboxes / columns / bulk actions for this post type"
-msgstr ""
-"Kattintson ide az ehhez a bejegyzéstípushoz tartozó SEO metaboxok / oszlopok"
-" / tömeges műveletek elrejtéséhez"
+msgstr "Kattintson ide az ehhez a bejegyzéstípushoz tartozó SEO-metaboxok / oszlopok / tömeges műveletek elrejtéséhez"
 
 #: inc/admin/callbacks/Titles.php:144 inc/admin/callbacks/Titles.php:157
 #: inc/admin/callbacks/Titles.php:172
 msgid ""
 "Click to display any SEO metaboxes / columns / bulk actions for this post "
 "type"
-msgstr ""
-"Kattintson ide az ehhez a bejegyzéstípushoz tartozó SEO metaboxok / oszlopok"
-" / tömeges műveletek megjelenítéséhez"
+msgstr "Kattintson ide az ehhez a bejegyzéstípushoz tartozó SEO-metaboxok / oszlopok / tömeges műveletek megjelenítéséhez"
 
 #: inc/admin/callbacks/Titles.php:190 inc/admin/callbacks/Titles.php:433
 #: inc/admin/callbacks/Titles.php:591 inc/admin/callbacks/Titles.php:830
 #: inc/admin/callbacks/Titles.php:1016 inc/admin/callbacks/Titles.php:1121
 #: inc/admin/callbacks/Titles.php:1221 inc/admin/callbacks/Titles.php:1294
 msgid "Title template"
-msgstr "Cím sablon"
+msgstr "Címsablon"
 
 #: inc/admin/callbacks/Titles.php:251 inc/admin/callbacks/Titles.php:467
 #: inc/admin/callbacks/Titles.php:679 inc/admin/callbacks/Titles.php:897
 #: inc/admin/callbacks/Titles.php:1048 inc/admin/callbacks/Titles.php:1152
 #: inc/admin/callbacks/Titles.php:1253 inc/admin/callbacks/Titles.php:1322
 msgid "Meta description template"
-msgstr "Meta leírás sablon"
+msgstr "Meta leírássablon"
 
 #: inc/admin/callbacks/Titles.php:305
 msgid ""
 "Do not display this single post type in search engine results "
 "<strong>(noindex)</strong>"
-msgstr ""
-"Ne jelenítse meg ezt az egyedi bejegyzéstípust a keresőmotorok találatai "
-"között <strong>(noindex)</strong>"
+msgstr "Ne jelenítse meg ezt az adott bejegyzéstípust a keresőmotorok találatai között <strong>(noindex)</strong>"
 
 #. translators: %s documentation URL
 #: inc/admin/callbacks/Titles.php:315
@@ -2893,27 +2766,19 @@ msgid ""
 "This custom post type is <strong>NOT</strong> excluded from your XML "
 "sitemaps despite the fact that it is set to <strong>NOINDEX</strong>. We "
 "recommend that you <a href=\"%s\">check this out here</a>."
-msgstr ""
-"Ez az egyedi bejegyzéstípus <strong>NINCS</strong> kizárva az XML "
-"webhelytérképeiből annak ellenére, hogy <strong>NOINDEX</strong>-re van "
-"állítva. Javasoljuk, hogy <a href=\"%s\">ellenőrizze ezt itt</a>."
+msgstr "Ez az egyéni bejegyzéstípus <strong>NINCS</strong> kizárva az XML-webhelytérképeiből annak ellenére, hogy <strong>NOINDEX</strong>-re van állítva. Javasoljuk, hogy <a href=\"%s\">nézze meg itt</a>."
 
 #: inc/admin/callbacks/Titles.php:345
 msgid ""
 "Do not follow links for this single post type <strong>(nofollow)</strong>"
-msgstr ""
-"Ne kövesse a hivatkozásokat ennél az egyedi bejegyzéstípusnál "
-"<strong>(nofollow)</strong>"
+msgstr "Ne kövesse az adott bejegyzéstípushoz tartozó linkeket <strong>(nofollow)</strong>"
 
 #: inc/admin/callbacks/Titles.php:371
 msgid ""
 "Display date in Google search results by adding "
 "<code>article:published_time</code> and <code>article:modified_time</code> "
 "meta?"
-msgstr ""
-"Megjeleníti a dátumot a Google találatokban az "
-"<code>article:published_time</code> és <code>article:modified_time</code> "
-"meta hozzáadásával?"
+msgstr "A dátum megjelenítése a Google keresési találataiban az <code>article:published_time</code> és az <code>article:modified_time</code> metaadatok hozzáadásával?"
 
 #: inc/admin/callbacks/Titles.php:375
 msgid ""
@@ -2925,8 +2790,7 @@ msgstr ""
 
 #: inc/admin/callbacks/Titles.php:401
 msgid "Display post thumbnail in Google Custom Search results?"
-msgstr ""
-"Megjeleníti a bejegyzés bélyegképét a Google Custom Search találataiban?"
+msgstr "A bejegyzés bélyegképének megjelenítése a Google Custom Search találataiban?"
 
 #. translators: %s documentation URL
 #: inc/admin/callbacks/Titles.php:407
@@ -2940,29 +2804,23 @@ msgstr ""
 
 #: inc/admin/callbacks/Titles.php:429
 msgid "BuddyPress groups"
-msgstr "BuddyPress csoportok"
+msgstr "BuddyPress-csoportok"
 
 #: inc/admin/callbacks/Titles.php:491
 msgid ""
 "Do not display BuddyPress groups in search engine results "
 "<strong>(noindex)</strong>"
-msgstr ""
-"Ne jelenítse meg a BuddyPress csoportokat a keresőmotorok találatai között "
-"<strong>(noindex)</strong>"
+msgstr "Ne jelenítse meg a BuddyPress-csoportokat a keresőmotorok találatai között <strong>(noindex)</strong>"
 
 #: inc/admin/callbacks/Titles.php:533 inc/admin/callbacks/Titles.php:544
 #: inc/admin/callbacks/Titles.php:549 inc/admin/callbacks/Titles.php:566
 msgid "Click to hide any SEO metaboxes / bulk actions for this taxonomy"
-msgstr ""
-"Kattintson ide az ehhez a taxonómiához tartozó SEO metaboxok / tömeges "
-"műveletek elrejtéséhez"
+msgstr "Kattintson ide az ehhez az osztályozáshoz tartozó SEO-metadobozok / tömeges műveletek elrejtéséhez"
 
 #: inc/admin/callbacks/Titles.php:540 inc/admin/callbacks/Titles.php:553
 #: inc/admin/callbacks/Titles.php:570
 msgid "Click to display any SEO metaboxes / bulk actions for this taxonomy"
-msgstr ""
-"Kattintson ide az ehhez a taxonómiához tartozó SEO metaboxok / tömeges "
-"műveletek megjelenítéséhez"
+msgstr "Kattintson ide az ehhez az osztályozáshoz tartozó SEO-metadobozok / tömeges műveletek megjelenítéséhez"
 
 #: inc/admin/callbacks/Titles.php:637 src/Tags/CategoryTitle.php:15
 msgid "Category Title"
@@ -2993,9 +2851,7 @@ msgstr "Kifejezés leírása"
 msgid ""
 "Do not display this taxonomy archive in search engine results "
 "<strong>(noindex)</strong>"
-msgstr ""
-"Ne jelenítse meg ennek a taxonómia-archívumnak a keresőmotorok találatai "
-"között <strong>(noindex)</strong>"
+msgstr "Ne jelenítse meg ennek az osztályozásnak az archívumát a keresőmotorok találatai között <strong>(noindex)</strong>"
 
 #: inc/admin/callbacks/Titles.php:752 inc/admin/wizard/admin-wizard.php:1313
 msgid ""
@@ -3012,18 +2868,12 @@ msgid ""
 "This custom taxonomy is <strong>NOT</strong> excluded from your XML sitemaps"
 " despite the fact that it is set to <strong>NOINDEX</strong>. We recommend "
 "that you check this out from the <a href=\"%s\">XML sitemap settings</a>."
-msgstr ""
-"Ez az egyedi taxonómia <strong>NINCS</strong> kizárva az XML "
-"webhelytérképeiből annak ellenére, hogy <strong>NOINDEX</strong>-re van "
-"állítva. Javasoljuk, hogy ezt az <a href=\"%s\">XML webhelytérkép "
-"beállításainál</a> ellenőrizze."
+msgstr "Ez az egyéni osztályozás <strong>NINCS</strong> kizárva az XML-webhelytérképekből annak ellenére, hogy <strong>NOINDEX</strong>-re van állítva. Javasoljuk, hogy ezt az <a href=\"%s\">XML-webhelytérkép beállításainál</a> ellenőrizze."
 
 #: inc/admin/callbacks/Titles.php:793
 msgid ""
 "Do not follow links for this taxonomy archive <strong>(nofollow)</strong>"
-msgstr ""
-"Ne kövesse a hivatkozásokat ennél a taxonómia-archívumnál "
-"<strong>(nofollow)</strong>"
+msgstr "Ne kövesse az ehhez az osztályozáshoz tartozó archívum hivatkozásait <strong>(nofollow)</strong>"
 
 #: inc/admin/callbacks/Titles.php:821
 msgid "See archive"
@@ -3044,9 +2894,7 @@ msgstr ""
 #: inc/admin/callbacks/Titles.php:987
 msgid ""
 "Do not follow links for this post type archive <strong>(nofollow)</strong>"
-msgstr ""
-"Ne kövesse a hivatkozásokat ennél a bejegyzéstípus-archívumnál "
-"<strong>(nofollow)</strong>"
+msgstr "Ne kövesse az ehhez a bejegyzéstípushoz tartozó archívum hivatkozásait <strong>(nofollow)</strong>"
 
 #: inc/admin/callbacks/Titles.php:1006 inc/admin/wizard/admin-wizard.php:1173
 msgid "Author archives"
@@ -3082,7 +2930,7 @@ msgstr ""
 
 #: inc/admin/callbacks/Titles.php:1100
 msgid "Disable author archives"
-msgstr "Szerzői archívumok letiltása"
+msgstr "Szerzői archívumok kikapcsolása"
 
 #: inc/admin/callbacks/Titles.php:1112 inc/admin/callbacks/Titles.php:1133
 #: inc/admin/wizard/admin-wizard.php:1132
@@ -3111,7 +2959,7 @@ msgstr ""
 
 #: inc/admin/callbacks/Titles.php:1198
 msgid "Disable date archives"
-msgstr "Dátum szerinti archívumok letiltása"
+msgstr "Dátum szerinti archívumok kikapcsolása"
 
 #: inc/admin/callbacks/Titles.php:1210 inc/admin/wizard/admin-wizard.php:1152
 msgid "Search archives"
@@ -3143,7 +2991,7 @@ msgstr ""
 
 #: inc/admin/callbacks/Titles.php:1290
 msgid "404 archives"
-msgstr "404 archívumok"
+msgstr "404-es archívumok"
 
 #: inc/admin/callbacks/Titles.php:1349 inc/admin/settings/Titles.php:251
 msgid "noindex"
@@ -3153,10 +3001,7 @@ msgstr "noindex"
 msgid ""
 "Do not display all pages of the site in Google search results and do not "
 "display \"Cached\" links in search results."
-msgstr ""
-"Ne jelenítse meg a webhely összes oldalát a Google keresési találatai "
-"között, és ne jelenítse meg a keresési találatokban a \"Cached\" "
-"hivatkozásokat."
+msgstr "Ne jelenítse meg a webhely összes oldalát a Google keresési találatai között, és ne jelenítse meg a keresési találatokban a „Cached” hivatkozásokat."
 
 #. translators: %s documentation URL
 #: inc/admin/callbacks/Titles.php:1359
@@ -3164,9 +3009,7 @@ msgstr ""
 msgid ""
 "Check also the <strong>\"Search engine visibility\"</strong> setting from "
 "the <a href=\"%s\">WordPress Reading page</a>."
-msgstr ""
-"Ellenőrizze a <a href=\"%s\">WordPress Olvasás oldal</a> <strong>\"Search "
-"engine visibility\"</strong> beállítását is."
+msgstr "Ellenőrizze a WordPress <a href=\"%s\">Olvasás</a> oldalán található <strong>„Keresőmotorok láthatósága”</strong> beállítást is."
 
 #: inc/admin/callbacks/Titles.php:1381 inc/admin/settings/Titles.php:259
 msgid "nofollow"
@@ -3197,7 +3040,7 @@ msgstr ""
 
 #: inc/admin/callbacks/Titles.php:1456 inc/admin/settings/Titles.php:283
 msgid "Remove Website schema"
-msgstr "Távolítsa el a Website sémát"
+msgstr "Honlap-séma eltávolítása"
 
 #: inc/admin/callbacks/Titles.php:1460
 msgid ""
@@ -3209,15 +3052,11 @@ msgstr ""
 
 #: inc/admin/callbacks/Titles.php:1481
 msgid "Add rel next/prev link in head of paginated archive pages"
-msgstr ""
-"Adjon hozzá rel next/prev hivatkozást a lapozott archívumoldalak head "
-"részébe"
+msgstr "rel next/prev hivatkozás hozzáadása a lapozott archívumoldalak fejrészéhez"
 
 #: inc/admin/callbacks/Titles.php:1503
 msgid "Add a \"noindex\" meta robots for all paginated archive pages"
-msgstr ""
-"Adjon hozzá \"noindex\" meta robots címkét az összes lapozott "
-"archívumoldalhoz"
+msgstr "„noindex” robots metaelem hozzáadása az összes lapozott archívumoldalhoz"
 
 #: inc/admin/callbacks/Titles.php:1507
 msgid "e.g. https://example.com/category/my-category/page/2/"
@@ -3225,7 +3064,7 @@ msgstr "pl. https://example.com/category/my-category/page/2/"
 
 #: inc/admin/callbacks/Titles.php:1528
 msgid "Add a \"noindex\" meta robots for all attachment pages"
-msgstr "Adjon hozzá \"noindex\" meta robots címkét az összes mellékletoldalhoz"
+msgstr "„noindex” robots metaelem hozzáadása az összes csatolmányoldalhoz"
 
 #: inc/admin/callbacks/Titles.php:1532
 msgid "e.g. https://example.com/my-media-attachment-page"
@@ -3237,8 +3076,7 @@ msgstr "Kezdő útmutatók"
 
 #: inc/admin/docs/DocsLinks.php:27
 msgid "Ready to boost your SEO? Get started in minutes with SEOPress."
-msgstr ""
-"Készen áll a SEO-ja fellendítésére? Kezdje el percek alatt a SEOPresszel."
+msgstr "Készen áll arra, hogy fellendítse az SEO-ját? A SEOPresszel percek alatt belevághat."
 
 #: inc/admin/docs/DocsLinks.php:32
 msgid "Guides"
@@ -3248,9 +3086,7 @@ msgstr "Útmutatók"
 msgid ""
 "Discover the basics of SEO, how to configure our products to get the most "
 "out of them."
-msgstr ""
-"Ismerje meg a SEO alapjait, és hogyan konfigurálhatja termékeinket, hogy a "
-"legtöbbet hozza ki belőlük."
+msgstr "Ismerje meg az SEO alapjait, és azt, hogyan állíthatja be termékeinket, hogy a legtöbbet hozza ki belőlük."
 
 #: inc/admin/docs/DocsLinks.php:38
 msgid "Ebooks"
@@ -3259,9 +3095,7 @@ msgstr "E-könyvek"
 #: inc/admin/docs/DocsLinks.php:39
 msgid ""
 "Free SEO ebooks to improve your rankings, traffic, conversions and sales."
-msgstr ""
-"Ingyenes SEO e-könyvek a helyezések, a forgalom, a konverziók és az "
-"értékesítés javításához."
+msgstr "Ingyenes SEO-e-könyvek a helyezések, a forgalom, a konverziók és az értékesítés javításához."
 
 #: inc/admin/docs/DocsLinks.php:44
 msgid "Developer Docs"
@@ -3269,7 +3103,7 @@ msgstr "Fejlesztői dokumentáció"
 
 #: inc/admin/docs/DocsLinks.php:45
 msgid "Unlock the power of SEOPress with our actions and filters."
-msgstr "Használja ki a SEOPress erejét akcióinkkal és szűrőinkkel."
+msgstr "Használja ki a SEOPress erejét műveleteinkkel és szűrőinkkel."
 
 #: inc/admin/docs/DocsLinks.php:51
 msgid "Activate your SEOPress Insights license"
@@ -3288,15 +3122,15 @@ msgstr ""
 
 #: inc/admin/docs/DocsLinks.php:54
 msgid "Finding SEO keywords for your WordPress site"
-msgstr "SEO kulcsszavak keresése WordPress webhelyéhez"
+msgstr "SEO-kulcsszavak keresése WordPress-webhelyéhez"
 
 #: inc/admin/docs/DocsLinks.php:55
 msgid "Optimize WordPress posts for a keyword"
-msgstr "WordPress bejegyzések optimalizálása egy kulcsszóra"
+msgstr "WordPress-bejegyzések optimalizálása egy kulcsszóra"
 
 #: inc/admin/docs/DocsLinks.php:56
 msgid "Audit the backlinks of your WordPress site (in WordPress)"
-msgstr "Ellenőrizze WordPress webhelye visszamutató linkjeit (WordPressben)"
+msgstr "Ellenőrizze WordPress-webhelye visszamutató linkjeit (WordPressben)"
 
 #: inc/admin/docs/DocsLinks.php:57
 msgid "The importance of backlinks"
@@ -3306,9 +3140,7 @@ msgstr "A visszamutató linkek fontossága"
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:574
 #: src/Services/I18nUniversalMetabox.php:691
 msgid "Enter a few keywords for analysis to help you write optimized content."
-msgstr ""
-"Adjon meg néhány kulcsszót az elemzéshez, hogy segítsünk optimalizált "
-"tartalmat írni."
+msgstr "Adjon meg néhány kulcsszót az elemzéshez, hogy optimalizált tartalmat írhasson."
 
 #. translators: %s degree of severity, eg: low
 #: inc/admin/metaboxes/admin-metaboxes-content-analysis-form.php:23
@@ -3323,9 +3155,7 @@ msgstr "Célkulcsszavak"
 msgid ""
 "Separate target keywords with commas. Do not use spaces after the commas, "
 "unless you want to include them."
-msgstr ""
-"A célkulcsszavakat vesszőkkel válassza el. Ne használjon szóközt a vesszők "
-"után, hacsak nem szeretné azokat is bevenni."
+msgstr "A célkulcsszavakat vesszőkkel válassza el. Ne használjon szóközt a vesszők után, kivéve, ha ezeket is bele szeretné foglalni."
 
 #: inc/admin/metaboxes/admin-metaboxes-content-analysis-form.php:26
 #: src/Services/I18nUniversalMetabox.php:706
@@ -3356,8 +3186,8 @@ msgstr ""
 #, php-format
 msgid "is already used %d time"
 msgid_plural "is already used %d times"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "már %d alkalommal használták"
+msgstr[1] "már %d alkalommal használták"
 
 #: inc/admin/metaboxes/admin-metaboxes-content-analysis-form.php:58
 #: src/Services/I18nUniversalMetabox.php:705
@@ -3368,8 +3198,8 @@ msgstr "(Ezt a kulcsszót használó URL)"
 #: src/Services/I18nUniversalMetabox.php:726
 msgid "The keyword:"
 msgid_plural "These keywords:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "A kulcsszó:"
+msgstr[1] "Ezek a kulcsszavak:"
 
 #: inc/admin/metaboxes/admin-metaboxes-content-analysis-form.php:78
 #: src/Services/I18nUniversalMetabox.php:701
@@ -3450,7 +3280,7 @@ msgstr " / 568 pixel - "
 #: inc/admin/metaboxes/admin-metaboxes-form.php:156
 #: inc/admin/page-builders/elementor/inc/controls/class-text-letter-counter-control.php:63
 msgid " (maximum recommended limit)"
-msgstr " (ajánlott maximális határ)"
+msgstr " (ajánlott felső határ)"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:136
 msgid ""
@@ -3460,13 +3290,7 @@ msgid ""
 "looking for. <br>There's no limit on how long a meta description can be, but"
 " the search result snippets are truncated as needed, typically to fit the "
 "device width."
-msgstr ""
-"A meta description címkének általában rövid, releváns összefoglalóval kell "
-"tájékoztatnia és felkeltenie a felhasználók érdeklődését arról, miről szól "
-"az adott oldal. <br>Olyan, mint egy \"pitch\", amely meggyőzi a "
-"felhasználót, hogy az oldal pontosan az, amit keres. <br>A metaleírás "
-"hosszára nincs korlát, de a keresési találatok kivonatai szükség szerint "
-"csonkítva lesznek, jellemzően az eszköz szélességéhez igazítva."
+msgstr "A metaleírás-címkének általában rövid, releváns összefoglalóval kell tájékoztatnia a felhasználókat arról, hogy miről szól az adott oldal, és fel kell keltenie az érdeklődésüket. <br>Ezek olyanok, mint egy rövid ajánlószöveg, amely meggyőzi a felhasználót arról, hogy az oldal pontosan azt kínálja, amit keres. <br>A metaleírás hosszára nincs korlátozás, de a keresési találatok kódrészletei szükség szerint csonkolódnak, jellemzően az eszköz szélességéhez igazítva."
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:144
 msgid "Enter your meta description"
@@ -3499,10 +3323,7 @@ msgid ""
 "This is what your page will look like in Google search results. You have to "
 "publish your post to get the Google Snippet Preview. Note that Google may "
 "optionally display an image of your article."
-msgstr ""
-"Így fog kinézni az oldal a Google keresési találatokban. A Google Snippet "
-"előnézethez közzé kell tenni a bejegyzést. Megjegyzés: a Google opcionálisan"
-" megjeleníthet egy képet a cikkről."
+msgstr "Így fog kinézni az oldal a Google keresési találataiban. A Google-kódrészlet előnézetéhez közzé kell tenni a bejegyzést. Megjegyzés: a Google adott esetben egy képet is megjeleníthet a cikkről."
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:190
 #: inc/admin/page-builders/elementor/inc/controls/class-social-preview-control.php:85
@@ -3532,54 +3353,44 @@ msgstr ""
 msgid ""
 "Do not display this page in search engine results / XML - HTML sitemaps "
 "<strong>(noindex)</strong>"
-msgstr ""
-"Ne jelenjen meg ez az oldal a keresőmotorok találatai között / XML - HTML "
-"webhelytérképekben <strong>(noindex)</strong>"
+msgstr "Az oldal kizárása a keresőmotorok találatai közül, valamint az XML- és HTML-webhelytérképekből <strong>(noindex)</strong>"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:259
 #: src/Services/I18nUniversalMetabox.php:493
 msgid "\"noindex\" robots meta tag"
-msgstr "\"noindex\" robots meta címke"
+msgstr "„noindex” robots meta címke"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:259
 msgid ""
 "By checking this option, you will add a meta robots tag with the value "
 "\"noindex\". <br>Search engines will not index this URL in the search "
 "results."
-msgstr ""
-"Ennek az opciónak a bejelölésével \"noindex\" értékű meta robots címke kerül"
-" hozzáadásra. <br>A keresőmotorok nem indexelik ezt az URL-t a találatokban."
+msgstr "Ennek az opciónak a bejelölésével „noindex” értékű meta robots címke kerül hozzáadásra. <br>A keresőmotorok nem indexelik ezt az URL-t a keresési találatokban."
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:269
 #: inc/functions/options-advanced-admin.php:611
 msgid "Do not follow links for this page <strong>(nofollow)</strong>"
-msgstr ""
-"Ne kövesse az ezen az oldalon található hivatkozásokat "
-"<strong>(nofollow)</strong>"
+msgstr "Az ezen az oldalon található hivatkozások követésének letiltása <strong>(nofollow)</strong>"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:270
 #: src/Services/I18nUniversalMetabox.php:503
 msgid "\"nofollow\" robots meta tag"
-msgstr "\"nofollow\" robots meta címke"
+msgstr "„nofollow” robots meta címke"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:270
 msgid ""
 "By checking this option, you will add a meta robots tag with the value "
 "\"nofollow\". <br>Search engines will not follow links from this URL."
-msgstr ""
-"Ennek az opciónak a bejelölésével \"nofollow\" értékű meta robots címke "
-"kerül hozzáadásra. <br>A keresőmotorok nem követik az erről az URL-ről "
-"induló hivatkozásokat."
+msgstr "Ennek az opciónak a bejelölésével „nofollow” értékű meta robots címke kerül hozzáadásra. <br>A keresőmotorok nem követik az erről az URL-ről induló hivatkozásokat."
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:279
 msgid "Do not index images for this page <strong>(noimageindex)</strong>"
-msgstr ""
-"Ne indexeljék ennek az oldalnak a képeit <strong>(noimageindex)</strong>"
+msgstr "Az oldal képeinek indexelésének letiltása <strong>(noimageindex)</strong>"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:280
 #: src/Services/I18nUniversalMetabox.php:522
 msgid "\"noimageindex\" robots meta tag"
-msgstr "\"noimageindex\" robots meta címke"
+msgstr "„noimageindex” robots meta címke"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:280
 msgid ""
@@ -3595,23 +3406,19 @@ msgstr ""
 msgid ""
 "Do not display a description in search results for this page "
 "<strong>(nosnippet)</strong>"
-msgstr ""
-"Ne jelenjen meg leírás ennek az oldalnak a keresési találataiban "
-"<strong>(nosnippet)</strong>"
+msgstr "Az oldal keresési találataiban megjelenő leírás letiltása <strong>(nosnippet)</strong>"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:289
 #: src/Services/I18nUniversalMetabox.php:516
 msgid "\"nosnippet\" robots meta tag"
-msgstr "\"nosnippet\" robots meta címke"
+msgstr "„nosnippet” robots meta címke"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:289
 #: src/Services/I18nUniversalMetabox.php:517
 msgid ""
 "By checking this option, you will add a meta robots tag with the value "
 "\"nosnippet\"."
-msgstr ""
-"Ennek az opciónak a bejelölésével \"nosnippet\" értékű meta robots címke "
-"kerül hozzáadásra."
+msgstr "Ennek az opciónak a bejelölésével „nosnippet” értékű meta robots címke kerül hozzáadásra."
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:295
 #: inc/admin/metaboxes/admin-metaboxes-form.php:296
@@ -3655,10 +3462,7 @@ msgstr "Alapértelmezett érték: "
 msgid ""
 "LinkedIn, Instagram, WhatsApp and Pinterest use the same social metadata as "
 "Facebook. X does the same if no X Cards tags are defined below."
-msgstr ""
-"A LinkedIn, az Instagram, a WhatsApp és a Pinterest ugyanazokat a közösségi "
-"metadatokat használja, mint a Facebook. Az X is ezt teszi, ha alább "
-"nincsenek megadva X Cards tagek."
+msgstr "A LinkedIn, az Instagram, a WhatsApp és a Pinterest ugyanazokat a közösségi metaadatokat használják, mint a Facebook. Az X is ezt teszi, ha alább nincsenek megadva X Cards-címkék."
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:333
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:372
@@ -3671,36 +3475,36 @@ msgstr "Kérje meg a Facebookot, hogy frissítse a gyorsítótárát"
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:390
 #: src/Helpers/Metas/SocialSettings.php:19
 msgid "Facebook Title"
-msgstr "Facebook cím"
+msgstr "Facebook-cím"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:341
 #: src/Helpers/Metas/SocialSettings.php:16
 msgid "Enter your Facebook title"
-msgstr "Adja meg a Facebook-címet."
+msgstr "Adja meg a Facebook-címet"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:346
 #: inc/admin/metaboxes/admin-metaboxes-form.php:350
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:401
 #: src/Helpers/Metas/SocialSettings.php:28
 msgid "Facebook description"
-msgstr "Facebook leírás"
+msgstr "Facebook-leírás"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:349
 #: src/Helpers/Metas/SocialSettings.php:25
 msgid "Enter your Facebook description"
-msgstr "Adja meg a Facebook-leírást."
+msgstr "Adja meg a Facebook-leírást"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:354
 #: inc/admin/metaboxes/admin-metaboxes-form.php:359
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:412
 msgid "Facebook Thumbnail"
-msgstr "Facebook bélyegkép"
+msgstr "Facebook-bélyegkép"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:379
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:425
 #: src/Services/I18nUniversalMetabox.php:752
 msgid "Facebook Preview"
-msgstr "Facebook előnézet"
+msgstr "Facebook-előnézet"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:383
 #: src/Services/I18nUniversalMetabox.php:753
@@ -3715,10 +3519,7 @@ msgstr ""
 msgid ""
 "The Social Networks feature is disabled. Still seing informations from the "
 "FB Preview? You probably have social tags added by your theme or a plugin."
-msgstr ""
-"A Közösségi hálózatok funkció le van tiltva. Mégis látható információ az FB "
-"előnézetben? Valószínűleg a témája vagy egy bővítmény adott hozzá közösségi "
-"tageket."
+msgstr "A Közösségi hálózatok funkció ki van kapcsolva. Mégis információkat lát az FB-előnézetben? Valószínűleg a sablonja vagy egy bővítmény adott hozzá közösségi címkéket."
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:392
 #: src/Services/I18nUniversalMetabox.php:765
@@ -3749,7 +3550,7 @@ msgstr "A képarány: "
 #: inc/admin/metaboxes/admin-metaboxes-form.php:405
 #: src/Services/I18nUniversalMetabox.php:758
 msgid "The closer to 1.91 the better."
-msgstr "Minél közelebb van az 1.91-hez, annál jobb."
+msgstr "Minél közelebb van az 1,91-hez, annál jobb."
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:409
 #: inc/admin/metaboxes/admin-metaboxes-form.php:524
@@ -3764,11 +3565,11 @@ msgstr "A fájlméret: "
 #: inc/admin/metaboxes/admin-metaboxes-form.php:414
 #: src/Services/I18nUniversalMetabox.php:760
 msgid "This is superior to 300KB. WhatsApp will not use your image."
-msgstr "Ez 300KB feletti. A WhatsApp nem fogja használni a képet."
+msgstr "Ez meghaladja a 300 kB-ot. A WhatsApp nem fogja használni a képet."
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:427
 msgid "By "
-msgstr "Által "
+msgstr "Szerző: a0"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:458
 #: inc/admin/metaboxes/admin-metaboxes-form.php:462
@@ -3782,7 +3583,7 @@ msgstr "X cím"
 #: inc/admin/metaboxes/admin-metaboxes-form.php:461
 #: src/Helpers/Metas/SocialSettings.php:61
 msgid "Enter your X title"
-msgstr "Adja meg az X-címet."
+msgstr "Adja meg az X-címet"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:466
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:450
@@ -3795,42 +3596,37 @@ msgstr "X leírás"
 #: inc/admin/metaboxes/admin-metaboxes-form.php:469
 #: src/Helpers/Metas/SocialSettings.php:70
 msgid "Enter your X description"
-msgstr "Adja meg az X-leírást."
+msgstr "Adja meg az X-leírást"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:470
 msgid "X description"
-msgstr "X leírás"
+msgstr "X-leírás"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:473
 #: inc/admin/metaboxes/admin-metaboxes-form.php:490
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:461
 #: src/Helpers/Metas/SocialSettings.php:82
 msgid "X Thumbnail"
-msgstr "X bélyegkép"
+msgstr "X-bélyegkép"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:496
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:474
 #: src/Services/I18nUniversalMetabox.php:776
 msgid "X Preview"
-msgstr "X előnézet"
+msgstr "X-előnézet"
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:499
 #: src/Services/I18nUniversalMetabox.php:777
 msgid ""
 "This is what your post will look like in X. You have to publish your post to"
 " get the X Preview."
-msgstr ""
-"Így fog kinézni a bejegyzés az X-en. Az X előnézethez közzé kell tenni a "
-"bejegyzést."
+msgstr "Így fog kinézni a bejegyzés az X-en. Az X-előnézet megjelenítéséhez közzé kell tenni a bejegyzést."
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:502
 msgid ""
 "The Social Networks feature is disabled. Still seing informations from the X"
 " Preview? You probably have social tags added by your theme or a plugin."
-msgstr ""
-"A Közösségi hálózatok funkció le van tiltva. Mégis látható információ az X "
-"előnézetben? Valószínűleg a témája vagy egy bővítmény adott hozzá közösségi "
-"tageket."
+msgstr "A Közösségi hálózatok funkció ki van kapcsolva. Mégis információkat lát az X-előnézetben? Valószínűleg a sablonja vagy egy bővítmény adott hozzá közösségi címkéket."
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:507
 #: src/Services/I18nUniversalMetabox.php:790
@@ -3841,15 +3637,12 @@ msgstr "Az X nem támogatja ezt a fájltípust. Kérjük, válasszon másik kép
 msgid ""
 "Minimum size for X is <strong>144x144px</strong>. Please choose another "
 "image."
-msgstr ""
-"Az X minimális mérete <strong>144x144px</strong>. Kérjük, válasszon másik "
-"képet."
+msgstr "Az X-hez szükséges minimális méret <strong>144x144px</strong>. Kérjük, válasszon másik képet."
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:520
 #: src/Services/I18nUniversalMetabox.php:782
 msgid "The closer to 1 the better (with large card, 2 is better)."
-msgstr ""
-"Minél közelebb van az 1-hez, annál jobb (large card esetén a 2 a jobb)."
+msgstr "Minél közelebb van az 1-hez, annál jobb (nagy kártya esetén a 2 a jobb)."
 
 #: inc/admin/metaboxes/admin-metaboxes-form.php:572
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:512
@@ -3967,9 +3760,7 @@ msgstr ""
 msgid ""
 "Set the category that gets used in the %s permalink and in our breadcrumbs "
 "if you have multiple categories."
-msgstr ""
-"Állítsa be azt a kategóriát, amely a %s permalinkben és a morzsamenünkben "
-"kerül használatra, ha több kategóriája van."
+msgstr "Állítsa be, hogy több kategória esetén melyik kategóriát használja a rendszer a %s közvetlen hivatkozásban és a breadcrumb navigációban."
 
 #: inc/admin/metaboxes/admin-metaboxes.php:53
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:311
@@ -4008,15 +3799,15 @@ msgstr "Globális beállítások"
 
 #: inc/admin/migrate/MigrationTools.php:21
 msgid "Title tags"
-msgstr "Title tagek"
+msgstr "Címcímkék"
 
 #: inc/admin/migrate/MigrationTools.php:23
 msgid "Facebook Open Graph tags (title, description and image thumbnail)"
-msgstr "Facebook Open Graph tagek (cím, leírás és bélyegkép)"
+msgstr "Facebook Open Graph-címkék (cím, leírás és bélyegkép)"
 
 #: inc/admin/migrate/MigrationTools.php:25
 msgid "X tags (title, description and image thumbnail)"
-msgstr "X tagek (cím, leírás és bélyegkép)"
+msgstr "X-címkék (cím, leírás és bélyegkép)"
 
 #: inc/admin/migrate/MigrationTools.php:28
 msgid "Meta Robots (noindex, nofollow...)"
@@ -4037,7 +3828,7 @@ msgstr "Átirányítási URL"
 
 #: inc/admin/migrate/MigrationTools.php:43
 msgid "Breadcrumb Title"
-msgstr "Morzsamenü címe"
+msgstr "Breadcrumb címe"
 
 #. translators: %1$s defaut: SEOPress, %2$s competitor SEO plugin name
 #: inc/admin/migrate/MigrationTools.php:49
@@ -4047,12 +3838,7 @@ msgid ""
 "posts and terms metadata</strong>, plus <strong>global settings</strong> (if"
 " applicable). Some dynamic variables will not be interpreted. We do "
 "<strong>NOT delete any %2$s data</strong>."
-msgstr ""
-"<strong>FIGYELMEZTETÉS:</strong> Az áttelepítés törli/frissíti az összes "
-"<strong>%1$s bejegyzés- és kifejezés-metaadatot</strong>, továbbá (ha "
-"alkalmazható) a <strong>globális beállításokat</strong>. Egyes dinamikus "
-"változók nem kerülnek értelmezésre. <strong>NEM törlünk semmilyen %2$s "
-"adatot</strong>."
+msgstr "<strong>FIGYELMEZTETÉS:</strong> Az áttelepítés törli/frissíti az összes <strong>%1$s bejegyzés- és kifejezés-metaadatot</strong>, továbbá (ha alkalmazható) a <strong>globális beállításokat</strong>. Egyes dinamikus változók nem kerülnek értelmezésre. <strong>NEM törlünk semmilyen %2$s adatot</strong>."
 
 #: inc/admin/migrate/MigrationTools.php:54
 msgid "Migrate now"
@@ -4060,11 +3846,11 @@ msgstr "Áttelepítés most"
 
 #: inc/admin/page-builders/classic/classic-editor.php:19
 msgid "Add <code>rel=\"sponsored\"</code> attribute"
-msgstr "Adja hozzá a <code>rel=\"sponsored\"</code> attribútumot"
+msgstr "A <code>rel=\"sponsored\"</code> attribútum hozzáadása"
 
 #: inc/admin/page-builders/classic/classic-editor.php:20
 msgid "Add <code>rel=\"nofollow\"</code> attribute"
-msgstr "Adja hozzá a <code>rel=\"nofollow\"</code> attribútumot"
+msgstr "A <code>rel=\"nofollow\"</code> attribútum hozzáadása"
 
 #: inc/admin/page-builders/classic/classic-editor.php:21
 msgid "Add <code>rel=\"UGC\"</code> attribute"
@@ -4072,7 +3858,7 @@ msgstr "Adja hozzá a <code>rel=\"UGC\"</code> attribútumot"
 
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:150
 msgid "SEO Title / Description"
-msgstr "SEO cím / leírás"
+msgstr "SEO-cím / leírás"
 
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:178
 msgid "Meta Description"
@@ -4107,11 +3893,11 @@ msgstr ""
 
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:327
 msgid "Custom breadcrumbs"
-msgstr "Egyéni morzsamenü"
+msgstr "Egyéni breadcrumbok"
 
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:328
 msgid "Enter a custom value, useful if your title is too long"
-msgstr "Adjon meg egy egyéni értéket, hasznos, ha a címe túl hosszú"
+msgstr "Adjon meg egy egyéni értéket – ez akkor hasznos, ha a cím túl hosszú"
 
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:352
 msgid "SEO Social"
@@ -4122,18 +3908,15 @@ msgid ""
 "<strong>Did you know?</strong> LinkedIn, Instagram and Pinterest use the "
 "same social metadata as Facebook. X does the same if no X Cards tags are "
 "defined below."
-msgstr ""
-"<strong>Tudta?</strong> A LinkedIn, az Instagram és a Pinterest ugyanazt a "
-"közösségi metaadatot használja, mint a Facebook. Az X is ezt teszi, ha alább"
-" nincsenek megadva X Cards tagek."
+msgstr "<strong>Tudta?</strong> A LinkedIn, az Instagram és a Pinterest ugyanazt a közösségi metaadatot használja, mint a Facebook. Az X is ezt teszi, ha alább nincsenek megadva X Cards-címkék."
 
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:500
 msgid "SEO Redirection"
-msgstr "SEO átirányítás"
+msgstr "SEO-átirányítás"
 
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:562
 msgid "SEO Content Analysis"
-msgstr "SEO tartalomelemzés"
+msgstr "SEO-tartalomelemzés"
 
 #: inc/admin/page-builders/elementor/inc/admin/class-document-settings-section.php:584
 msgid ""
@@ -4162,7 +3945,7 @@ msgstr ""
 #: inc/admin/page-builders/elementor/inc/controls/class-google-suggestions-control.php:51
 #: src/Services/I18nUniversalMetabox.php:720
 msgid "Get suggestions from Google"
-msgstr "Kérjen javaslatokat a Google-tól"
+msgstr "Javaslatok lekérése a Google-tól"
 
 #: inc/admin/page-builders/elementor/inc/controls/class-google-suggestions-control.php:52
 #: src/Services/I18nUniversalMetabox.php:724
@@ -4171,7 +3954,7 @@ msgstr "Javaslatok lekérése!"
 
 #: inc/admin/page-builders/elementor/inc/controls/class-social-preview-control.php:53
 msgid "By"
-msgstr "Szerző:"
+msgstr "Szerint"
 
 #: inc/admin/sections/Advanced.php:15 inc/admin/sections/Advanced.php:31
 msgid "Crawling Optimization"
@@ -4179,7 +3962,7 @@ msgstr "Feltérképezés optimalizálása"
 
 #: inc/admin/sections/Advanced.php:16 inc/admin/sections/Advanced.php:44
 msgid "Search engines validation"
-msgstr "Keresőmotor-ellenőrzés"
+msgstr "Keresőmotoros érvényesítés"
 
 #: inc/admin/sections/Advanced.php:20
 msgid "Advanced SEO options for advanced users."
@@ -4205,7 +3988,7 @@ msgstr "Admin sáv"
 
 #: inc/admin/sections/Advanced.php:64 inc/admin/sections/Advanced.php:162
 msgid "SEO Dashboard"
-msgstr "SEO vezérlőpult"
+msgstr "SEO-vezérlőpult"
 
 #: inc/admin/sections/Advanced.php:65 inc/admin/sections/Advanced.php:132
 msgid "Columns"
@@ -4217,11 +4000,11 @@ msgstr "Szabja testre a bővítményt az igényeinek megfelelően."
 
 #: inc/admin/sections/Advanced.php:85 inc/admin/sections/Advanced.php:96
 msgid "SEO metaboxes"
-msgstr "SEO metaboxok"
+msgstr "SEO-metaboxok"
 
 #: inc/admin/sections/Advanced.php:86 inc/admin/sections/Advanced.php:115
 msgid "SEO settings pages"
-msgstr "SEO beállítási oldalak"
+msgstr "SEO-beállítási oldalak"
 
 #: inc/admin/sections/Advanced.php:90
 msgid "Control access to SEO settings and metaboxes by user roles."
@@ -4232,25 +4015,21 @@ msgstr ""
 #: inc/admin/sections/Advanced.php:101
 msgid ""
 "Check a user role to <strong>PREVENT</strong> it to edit a specific metabox."
-msgstr ""
-"Jelöljön be egy felhasználói szerepkört, hogy "
-"<strong>MEGAKADÁLYOZZA</strong> egy adott metabox szerkesztését."
+msgstr "Jelöljön be egy felhasználói szerepkört, hogy <strong>MEGAKADÁLYOZZA</strong> az adott szerepkörhöz tartozó felhasználókat egy adott metabox szerkesztésében."
 
 #: inc/admin/sections/Advanced.php:120
 msgid ""
 "Check a user role to <strong>ALLOW</strong> it to edit a specific settings "
 "page."
-msgstr ""
-"Jelöljön be egy felhasználói szerepkört, hogy <strong>ENGEDÉLYEZZE</strong> "
-"egy adott beállítási oldal szerkesztését."
+msgstr "Jelöljön be egy felhasználói szerepkört, hogy <strong>ENGEDÉLYEZZE</strong> az adott szerepkörhöz tartozó felhasználóknak egy adott beállítási oldal szerkesztését."
 
 #: inc/admin/sections/Advanced.php:135
 msgid "Customize the SEO columns."
-msgstr "Szabja testre a SEO oszlopokat."
+msgstr "Szabja testre a SEO-oszlopokat."
 
 #: inc/admin/sections/Advanced.php:148
 msgid "Edit your SEO metadata directly from your favorite page builder."
-msgstr "Szerkessze SEO-metaadatait közvetlenül a kedvenc oldalépítőjéből."
+msgstr "Szerkessze SEO-metaadatait közvetlenül a kedvenc oldalkészítőjében."
 
 #: inc/admin/sections/Advanced.php:151 inc/admin/wizard/admin-wizard.php:1529
 msgid "Watch the universal SEO metabox overview video - Open in a new window"
@@ -4260,22 +4039,18 @@ msgstr ""
 
 #: inc/admin/sections/Advanced.php:152 inc/admin/wizard/admin-wizard.php:1530
 msgid "Universal SEO metabox video thumbnail"
-msgstr "Univerzális SEO metabox videó bélyegkép"
+msgstr "Az univerzális SEO-metaboxról szóló videó bélyegképe"
 
 #: inc/admin/sections/Advanced.php:165
 msgid ""
 "Click the dedicated icon from the toolbar to customize the SEO dashboard."
-msgstr ""
-"Kattintson az eszköztár dedikált ikonjára a SEO vezérlőpult "
-"testreszabásához."
+msgstr "Kattintson az eszköztár erre a célra szolgáló ikonjára a SEO-vezérlőpult testreszabásához."
 
 #: inc/admin/sections/Advanced.php:178
 msgid ""
 "The admin bar appears on the top of your pages when logged in to your WP "
 "admin."
-msgstr ""
-"Az admin sáv az oldalak tetején jelenik meg, amikor be van jelentkezve a WP "
-"adminba."
+msgstr "Az admin sáv az oldalak tetején jelenik meg, amikor be van jelentkezve a WP adminfelületre."
 
 #: inc/admin/sections/Analytics.php:16 inc/admin/sections/Analytics.php:83
 msgid "Events"
@@ -4285,19 +4060,15 @@ msgstr "Események"
 msgid ""
 "Link your Google Analytics to your website. The tracking code will be "
 "automatically added to your site."
-msgstr ""
-"Kapcsolja össze a Google Analytics-et a webhelyével. A követőkód "
-"automatikusan hozzáadódik a webhelyéhez."
+msgstr "Kapcsolja össze a Google Analytics szolgáltatást a honlapjával. A követőkód automatikusan hozzáadódik a webhelyéhez."
 
 #: inc/admin/sections/Analytics.php:34
 msgid "Cookie bar / GDPR / Google Consent v2"
-msgstr "Sütisáv / GDPR / Google Consent v2"
+msgstr "Cookie-sáv / GDPR / Google Consent v2"
 
 #: inc/admin/sections/Analytics.php:38
 msgid "Manage user consent for GDPR and customize your cookie bar easily."
-msgstr ""
-"Kezelje a felhasználói hozzájárulásokat a GDPR-hez, és egyszerűen szabja "
-"testre a sütisávot."
+msgstr "Kezelje a GDPR szerinti felhasználói hozzájárulást, és egyszerűen szabja testre a cookie-sávot."
 
 #: inc/admin/sections/Analytics.php:42
 msgid ""
@@ -4310,17 +4081,13 @@ msgstr ""
 msgid ""
 "We automatically manage <strong>Google Consent v2</strong> with GA4 and our "
 "cookie bar."
-msgstr ""
-"Automatikusan kezeljük a <strong>Google Consent v2</strong>-t a GA4-gyel és "
-"a sütisávunkkal."
+msgstr "Automatikusan kezeljük a <strong>Google Consent v2</strong>-t a GA4-gyel és a cookie-sávunkkal."
 
 #: inc/admin/sections/Analytics.php:63
 msgid ""
 "Add your own scripts like GTM by copy and paste the provided code to the "
 "HEAD/BODY or FOOTER."
-msgstr ""
-"Adja hozzá saját szkriptjeit, például a GTM-et, a megadott kódot másolva és "
-"beillesztve a HEAD/BODY vagy a FOOTER részbe."
+msgstr "Adja hozzá saját szkriptjeit, például a GTM-et, a megadott kódot másolva és beillesztve a HEAD/BODY vagy a FOOTER részbe."
 
 #: inc/admin/sections/Analytics.php:68
 msgid ""
@@ -4400,9 +4167,7 @@ msgstr ""
 msgid ""
 "Please note that you also have to setup your custom dimensions in your "
 "Google Analytics account."
-msgstr ""
-"Felhívjuk a figyelmét, hogy a Google Analytics fiókjában az egyéni "
-"dimenziókat is be kell állítania."
+msgstr "Felhívjuk a figyelmét, hogy a Google Analytics-fiókjában az egyéni dimenziókat is be kell állítania."
 
 #: inc/admin/sections/Analytics.php:156 inc/admin/sections/Analytics.php:166
 msgid "Tracking"
@@ -4433,11 +4198,7 @@ msgid ""
 "Use Microsoft Clarity to capture session recordings, get instant heatmaps "
 "and powerful Insights for Free. Know how people interact with your site to "
 "improve user experience and conversions."
-msgstr ""
-"Használja a Microsoft Clarityt munkamenet-felvételek rögzítésére, azonnali "
-"hőtérképekhez és hatékony Insights funkciókhoz ingyen. Ismerje meg, hogyan "
-"lépnek kapcsolatba az emberek a webhelyével, hogy javítsa a felhasználói "
-"élményt és a konverziókat."
+msgstr "A Microsoft Clarity segítségével ingyenesen rögzíthet munkamenet-felvételeket, azonnali hőtérképeket kaphat és mélyreható betekintést nyerhet. Ismerje meg, hogyan használják az emberek a webhelyét, hogy javíthassa a felhasználói élményt és növelhesse a konverziók számát."
 
 #. translators: %s MS Clarity website URL
 #: inc/admin/sections/Analytics.php:194
@@ -4445,18 +4206,13 @@ msgstr ""
 msgid ""
 "Create your first Microsoft Clarity project <a href=\"%s\" "
 "target=\"_blank\">here</a>."
-msgstr ""
-"Hozza létre első Microsoft Clarity projektjét <a href=\"%s\" "
-"target=\"_blank\">itt</a>."
+msgstr "Hozza létre első Microsoft Clarity-projektjét <a href=\"%s\" target=\"_blank\">itt</a>."
 
 #: inc/admin/sections/ImageSEO.php:13
 msgid ""
 "Images can generate a lot of traffic to your site. Make sure to always add "
 "alternative texts, optimize their file size, filename etc."
-msgstr ""
-"A képek rengeteg forgalmat hozhatnak a webhelyére. Ügyeljen rá, hogy mindig "
-"adjon meg alternatív szöveget, optimalizálja a fájlméretüket, fájlnevüket "
-"stb."
+msgstr "A képek rengeteg forgalmat hozhatnak a webhelyére. Ügyeljen rá, hogy mindig adjon meg alternatív szövegeket, optimalizálja a fájlméretüket, fájlnevüket stb."
 
 #: inc/admin/sections/InstantIndexing.php:14
 msgid ""
@@ -4486,12 +4242,11 @@ msgstr ""
 
 #: inc/admin/sections/InstantIndexing.php:25
 msgid "<strong>Enter your URLs</strong> to index to the field below"
-msgstr "<strong>Adja meg az indexelendő URL-eket</strong> az alábbi mezőbe"
+msgstr "<strong>Adja meg az indexelendő URL-eket</strong> az alábbi mezőben"
 
 #: inc/admin/sections/InstantIndexing.php:27
 msgid "Click <strong>Submit URLs to Google & Bing</strong>"
-msgstr ""
-"Kattintson a <strong>URL-ek beküldése a Google & Bing felé</strong> gombra"
+msgstr "Kattintson a <strong>URL-ek beküldése a Google-nek és a Bingnek</strong> gombra"
 
 #. translators: %s Indexing plugin name
 #. translators: %s name of a SEO plugin (e.g. Yoast SEO)
@@ -4506,9 +4261,7 @@ msgstr "Észrevettük, hogy a(z) <strong>%s</strong> bővítményt használja."
 #: inc/admin/sections/InstantIndexing.php:49
 #: src/Services/Admin/Notifications/Notifications.php:376
 msgid "To prevent any conflicts with our Indexing feature, please disable it."
-msgstr ""
-"Az Indexing funkciónkkal való ütközések elkerülése érdekében kérjük, tiltsa "
-"le azt."
+msgstr "Az indexelési funkciónkkal való ütközések elkerülése érdekében kérjük, kapcsolja ki azt."
 
 #: inc/admin/sections/InstantIndexing.php:51
 #: src/Services/Admin/Notifications/Notifications.php:65
@@ -4531,7 +4284,7 @@ msgstr ""
 #: src/Services/Admin/Notifications/Notifications.php:735
 #: src/Services/Admin/Notifications/Notifications.php:758
 msgid "Fix this!"
-msgstr "Javítsa ki!"
+msgstr "Javítás"
 
 #: inc/admin/sections/InstantIndexing.php:66
 msgid "Edit your Instant Indexing settings for Google and Bing."
@@ -4542,13 +4295,11 @@ msgstr ""
 msgid ""
 "Your permalinks are not <strong>SEO Friendly</strong>! Enable <strong>pretty"
 " permalinks</strong> to fix this."
-msgstr ""
-"A közvetlen linkjei nem <strong>SEO-barátok</strong>! Engedélyezze a "
-"<strong>szép közvetlen linkeket</strong> a javításhoz."
+msgstr "A közvetlen hivatkozásai nem <strong>SEO-barátok</strong>! A javításhoz kapcsolja be a <strong>szép közvetlen hivatkozásokat</strong>."
 
 #: inc/admin/sections/Sitemaps.php:21
 msgid "Change this settings"
-msgstr "Módosítsa ezt a beállítást"
+msgstr "Módosítsa ezeket a beállításokat"
 
 #: inc/admin/sections/Sitemaps.php:28
 msgid ""
@@ -4567,16 +4318,11 @@ msgid ""
 "The XML sitemap is an <strong>exploration aid</strong>. Not having a sitemap"
 " will absolutely <strong>NOT prevent engines from indexing your "
 "content</strong>. For this, opt for meta robots."
-msgstr ""
-"Az XML webhelytérkép egy <strong>feltérképezést segítő eszköz</strong>. A "
-"webhelytérkép hiánya semmiképp sem akadályozza meg a keresőket abban, hogy "
-"indexeljék a tartalmát. Ehhez inkább a meta robots beállítást használja."
+msgstr "Az XML-webhelytérkép <strong>a feltérképezést segítő eszköz</strong>. A webhelytérkép hiánya <strong>egyáltalán NEM akadályozza meg, hogy a keresőmotorok indexeljék a tartalmat</strong>. Ehhez használja a meta robots beállítást."
 
 #: inc/admin/sections/Sitemaps.php:35
 msgid "This is the URL of your index sitemaps to submit to search engines:"
-msgstr ""
-"Ez az index webhelytérképek URL-je, amelyet be kell küldeni a "
-"keresőmotoroknak:"
+msgstr "Ez a keresőmotoroknak beküldendő webhelytérkép-index URL-je:"
 
 #: inc/admin/sections/Sitemaps.php:42
 msgid "SiteGround Optimizer user?"
@@ -4585,25 +4331,19 @@ msgstr "SiteGround Optimizer felhasználó?"
 #: inc/admin/sections/Sitemaps.php:43
 msgid ""
 "We automatically sent your XML sitemap URL for the preheat caching feature."
-msgstr ""
-"Automatikusan elküldtük az XML webhelytérkép URL-jét a preheat caching "
-"funkcióhoz."
+msgstr "Automatikusan elküldtük az XML-webhelytérkép URL-jét a gyorsítótár előmelegítésére szolgáló funkcióhoz."
 
 #: inc/admin/sections/Sitemaps.php:49
 msgid ""
 "<strong>Noindex content</strong> will not be displayed in Sitemaps. Same for"
 " custom canonical URLs."
-msgstr ""
-"A <strong>Noindex tartalom</strong> nem jelenik meg a webhelytérképekben. "
-"Ugyanez igaz az egyéni kanonikus URL-ekre is."
+msgstr "A <strong>noindexelt tartalom</strong> nem jelenik meg a webhelytérképekben. Ugyanez igaz az egyéni kanonikus URL-ekre is."
 
 #: inc/admin/sections/Sitemaps.php:52
 msgid ""
 "If you disable globally this feature (using the blue toggle from above), the"
 " <strong>native WordPress XML sitemaps</strong> will be re-activated."
-msgstr ""
-"Ha globálisan letiltja ezt a funkciót (a fenti kék kapcsolóval), a "
-"<strong>natív WordPress XML sitemaps</strong> újra aktiválódik."
+msgstr "Ha globálisan kikapcsolja ezt a funkciót (a fenti kék kapcsolóval), a <strong>natív WordPress XML-webhelytérképek</strong> újra aktiválódnak."
 
 #: inc/admin/sections/Sitemaps.php:58
 msgid "Blank sitemap?"
@@ -4615,21 +4355,17 @@ msgstr "404 hiba?"
 
 #: inc/admin/sections/Sitemaps.php:68
 msgid "HTML error? Exclude XML and XSL from caching plugins!"
-msgstr ""
-"HTML-hiba? Zárja ki az XML-t és az XSL-t a gyorsítótárazó bővítményekből!"
+msgstr "HTML-hiba? Zárja ki az XML- és XSL-fájlokat a gyorsítótárazásból!"
 
 #: inc/admin/sections/Sitemaps.php:72
 msgid "Add your XML sitemaps to Google Search Console (video)"
-msgstr ""
-"Adja hozzá az XML webhelytérképeket a Google Search Console-hoz (videó)"
+msgstr "Adja hozzá az XML-webhelytérképeket a Google Search Console-hoz (videó)"
 
 #: inc/admin/sections/Sitemaps.php:86
 msgid ""
 "Your server uses NGINX. If XML Sitemaps doesn't work properly, you need to "
 "add this rule to your configuration:"
-msgstr ""
-"A szervere NGINX-et használ. Ha az XML Sitemaps nem működik megfelelően, ezt"
-" a szabályt kell hozzáadnia a konfigurációhoz:"
+msgstr "A szervere NGINX-et használ. Ha az XML-webhelytérkép-funkció nem működik megfelelően, ezt a szabályt kell hozzáadnia a konfigurációhoz:"
 
 #: inc/admin/sections/Sitemaps.php:101
 msgid "Contact your webhost for help and send them these rules."
@@ -4639,7 +4375,7 @@ msgstr ""
 
 #: inc/admin/sections/Sitemaps.php:121
 msgid "Create an HTML Sitemap for your visitors and boost your SEO."
-msgstr "Készítsen HTML webhelytérképet a látogatóknak, és javítsa SEO-ját."
+msgstr "Készítsen HTML-webhelytérképet látogatói számára, és javítsa webhelye SEO-teljesítményét."
 
 #: inc/admin/sections/Sitemaps.php:124
 msgid ""
@@ -4651,7 +4387,7 @@ msgstr ""
 
 #: inc/admin/sections/Sitemaps.php:135
 msgid "How to use the HTML Sitemap?"
-msgstr "Hogyan használja a HTML webhelytérképet?"
+msgstr "Hogyan használja a HTML-webhelytérképet?"
 
 #: inc/admin/sections/Sitemaps.php:137
 msgid "Block Editor"
@@ -4670,13 +4406,11 @@ msgstr "Rövidkód"
 #: inc/admin/sections/Sitemaps.php:143
 msgid ""
 "You can also use this shortcode in your content (post, page, post type...):"
-msgstr ""
-"Ezt a rövidkódot is használhatja a tartalomban (bejegyzés, oldal, "
-"bejegyzéstípus...):"
+msgstr "Ezt a shortcode-ot is használhatja a tartalomban (bejegyzés, oldal, bejegyzéstípus...):"
 
 #: inc/admin/sections/Sitemaps.php:146
 msgid "To include specific custom post types, use the CPT attribute:"
-msgstr "Adott egyedi bejegyzéstípusokhoz használja a CPT attribútumot:"
+msgstr "Adott egyéni bejegyzéstípusok felvételéhez használja a CPT-attribútumot:"
 
 #: inc/admin/sections/Sitemaps.php:149
 msgid ""
@@ -4700,13 +4434,11 @@ msgstr "Egyéb"
 #: inc/admin/sections/Sitemaps.php:160
 msgid ""
 "Dynamically display the sitemap by entering an ID to the first field below."
-msgstr ""
-"Dinamikusan jelenítse meg a webhelytérképet az alábbi első mezőbe megadott "
-"azonosítóval."
+msgstr "A webhelytérkép dinamikus megjelenítéséhez adjon meg egy ID-t az alábbi első mezőben."
 
 #: inc/admin/sections/Sitemaps.php:174
 msgid "Include/Exclude Post Types."
-msgstr "Bejegyzéstípusok hozzáadása/kizárása."
+msgstr "Bejegyzéstípusok felvétele/kizárása."
 
 #. translators: %1$s: <code>public => true</code>, %2$s: <code>show_ui =>
 #. true</code>
@@ -4721,7 +4453,7 @@ msgstr ""
 
 #: inc/admin/sections/Sitemaps.php:199
 msgid "Include/Exclude Taxonomies."
-msgstr "Taxonómiák hozzáadása/kizárása."
+msgstr "Taxonómiák felvétele/kizárása."
 
 #. translators: %1$s: <code>public => true</code>, %2$s: <code>show_ui =>
 #. true</code>
@@ -4738,9 +4470,7 @@ msgstr ""
 msgid ""
 "Terms without any associated posts will not be listed in your XML sitemaps "
 "to prevent 404 errors."
-msgstr ""
-"A kapcsolódó bejegyzéssel nem rendelkező kifejezések nem fognak megjelenni "
-"az XML webhelytérképekben a 404 hibák megelőzése érdekében."
+msgstr "A kapcsolódó bejegyzéssel nem rendelkező kifejezések nem fognak megjelenni az XML-webhelytérképekben a 404 hibák megelőzése érdekében."
 
 #: inc/admin/sections/Social.php:15
 msgid ""
@@ -4752,7 +4482,7 @@ msgstr ""
 
 #: inc/admin/sections/Social.php:21
 msgid "Learn more on Google official website."
-msgstr "Tudjon meg többet a Google hivatalos webhelyén."
+msgstr "További tudnivalók a Google hivatalos webhelyén."
 
 #: inc/admin/sections/Social.php:40
 msgid "Link your site with your social accounts."
@@ -4762,9 +4492,7 @@ msgstr "Kapcsolja össze webhelyét a közösségi fiókjaival."
 msgid ""
 "Use markup on your website to add your social profile information to a "
 "Google Knowledge panel."
-msgstr ""
-"Használjon jelölést a webhelyén, hogy hozzáadja a közösségi "
-"profilinformációit a Google tudáspaneljéhez."
+msgstr "Használjon jelölést a webhelyén, hogy hozzáadhassa a közösségi profilja adatait a Google tudáspaneljéhez."
 
 #: inc/admin/sections/Social.php:45
 msgid ""
@@ -4788,11 +4516,7 @@ msgid ""
 "LinkedIn, WhatsApp... when a user shares a link on its own social network. "
 "Increase your click-through rate by providing relevant information such as "
 "an attractive image."
-msgstr ""
-"Open Graph adatok kezelése. Ezeket a meta tageket a Facebook, a Pinterest, a"
-" LinkedIn, a WhatsApp... használja, amikor egy felhasználó megoszt egy "
-"hivatkozást a saját közösségi hálózatán. Növelje az átkattintási arányt "
-"releváns információk, például egy vonzó kép megadásával."
+msgstr "Open Graph-adatok kezelése. Ezeket a metacímkéket a Facebook, a Pinterest, a LinkedIn, a WhatsApp... használják, amikor egy felhasználó linket oszt meg a saját közösségi hálózatán. Növelje az átkattintási arányt releváns információk, például egy vonzó kép megadásával."
 
 #: inc/admin/sections/Social.php:66 inc/admin/sections/Social.php:103
 msgid "Manage Facebook Open Graph and X Cards metas - new window"
@@ -4800,12 +4524,11 @@ msgstr "Facebook Open Graph és X Cards metaadatok kezelése - új ablak"
 
 #: inc/admin/sections/Social.php:71
 msgid "We generate the <strong>og:image</strong> meta in this order:"
-msgstr ""
-"A <strong>og:image</strong> meta címkét ebben a sorrendben generáljuk:"
+msgstr "Az <strong>og:image</strong> metacímkét ebben a sorrendben generáljuk:"
 
 #: inc/admin/sections/Social.php:76 inc/admin/sections/Social.php:146
 msgid "Custom OG Image from SEO metabox"
-msgstr "Egyéni OG-kép az SEO metaboxból"
+msgstr "Egyéni OG-kép az SEO-metadobozból"
 
 #: inc/admin/sections/Social.php:79 inc/admin/sections/Social.php:116
 msgid "Post thumbnail / Product thumbnail (Featured image)"
@@ -4827,7 +4550,7 @@ msgstr "X"
 
 #: inc/admin/sections/Social.php:102
 msgid "Manage your X Cards."
-msgstr "Kezelje az X Cardsot."
+msgstr "Kezelje az X-kártyákat."
 
 #: inc/admin/sections/Social.php:108
 msgid "We generate the <strong>twitter:image</strong> meta in this order:"
@@ -4846,18 +4569,13 @@ msgstr "Globális twitter:image beállítva: SEO > Social > X Cards"
 msgid ""
 "LinkedIn uses the oEmbed JSON link to generate the share of your post, by "
 "retrieving the post title, its content and its featured image."
-msgstr ""
-"A LinkedIn az oEmbed JSON hivatkozást használja a bejegyzés megosztásának "
-"létrehozásához, a bejegyzés címének, tartalmának és kiemelt képének "
-"lekérésével."
+msgstr "A LinkedIn az oEmbed JSON hivatkozást használja a bejegyzés megosztásának létrehozásához, a bejegyzés címének, tartalmának és kiemelt képének lekérésével."
 
 #: inc/admin/sections/Social.php:141
 msgid ""
 "We generate the <strong>thumbnail URL</strong> of the oEmbed JSON feed in "
 "this order:"
-msgstr ""
-"Az oEmbed JSON feed <strong>thumbnail URL</strong> értékét ebben a "
-"sorrendben generáljuk:"
+msgstr "Az oEmbed JSON-feed <strong>bélyegkép-URL</strong>-jét ebben a sorrendben generáljuk:"
 
 #: inc/admin/sections/Social.php:149
 msgid "Post thumbnail / Product category thumbnail (Featured image)"
@@ -4871,9 +4589,7 @@ msgstr "Mastodon"
 msgid ""
 "Title and meta description are used by search engines to generate the "
 "snippet of your site in search results page."
-msgstr ""
-"A keresőmotorok a címet és a meta leírást használják a webhelye kivonatának "
-"létrehozásához a keresési találatok oldalán."
+msgstr "A keresőmotorok a címet és a meta leírást használják a webhelye kivonatának létrehozásához a keresési találatok oldalán."
 
 #: inc/admin/sections/Titles.php:21
 msgid "Customize your title & meta description for homepage."
@@ -4885,9 +4601,7 @@ msgstr "Hibás meta cím / leírás a SERP-ben?"
 
 #: inc/admin/sections/Titles.php:51
 msgid "Customize your titles & metas for Single Custom Post Types."
-msgstr ""
-"Testreszabhatja a címeket és a metaadatokat az egyéni bejegyzéstípusok "
-"egyedi oldalaihoz."
+msgstr "Testreszabhatja az egyéni bejegyzéstípusok bejegyzéseinek címeit és metaadatait."
 
 #: inc/admin/sections/Titles.php:75
 msgid "Customize your metas for all pages."
@@ -4895,7 +4609,7 @@ msgstr "Testreszabhatja a metaadatokat az összes oldalhoz."
 
 #: inc/admin/sections/Titles.php:90
 msgid "Customize your metas for all taxonomies archives."
-msgstr "Testreszabhatja a metaadatokat az összes taxonómia archívumaihoz."
+msgstr "Testreszabhatja az összes osztályozás archívumainak metaadatait."
 
 #: inc/admin/sections/Titles.php:114
 msgid "Customize your metas for all archives."
@@ -4903,7 +4617,7 @@ msgstr "Testreszabhatja a metaadatokat az összes archívumhoz."
 
 #: inc/admin/settings/Advanced.php:25
 msgid "Add WP Editor to taxonomy description textarea"
-msgstr "WP Editor hozzáadása a taxonómia leírásának szövegterületéhez"
+msgstr "WP-szerkesztő hozzáadása az osztályozás leírásának szövegterületéhez"
 
 #: inc/admin/settings/Advanced.php:33
 msgid "Remove /category/ in URL"
@@ -4915,8 +4629,7 @@ msgstr "/product-category/ eltávolítása az URL-ben"
 
 #: inc/admin/settings/Advanced.php:51
 msgid "Remove ?replytocom link to avoid duplicate content"
-msgstr ""
-"?replytocom hivatkozás eltávolítása a duplikált tartalom elkerüléséhez"
+msgstr "?replytocom hivatkozás eltávolítása a duplikált tartalom elkerüléséhez"
 
 #: inc/admin/settings/Advanced.php:59
 msgid "Remove noreferrer link attribute in post content"
@@ -4936,15 +4649,13 @@ msgstr "Szerzői URL eltávolítása"
 
 #: inc/admin/settings/Advanced.php:91
 msgid "Remove website field in comment form"
-msgstr "Weboldal mező eltávolítása a hozzászólás űrlapon"
+msgstr "Honlapmező eltávolítása a hozzászólási űrlapból"
 
 #: inc/admin/settings/Advanced.php:99
 msgid ""
 "Add \"nofollow noopener noreferrer\" rel attributes to the comments form "
 "link"
-msgstr ""
-"„nofollow noopener noreferrer” rel attribútumok hozzáadása a hozzászólás "
-"űrlap hivatkozásához"
+msgstr "„nofollow noopener noreferrer” rel attribútumok hozzáadása a hozzászólási űrlap linkjéhez"
 
 #: inc/admin/settings/Advanced.php:107
 msgid "Remove WordPress shortlink meta tag"
@@ -4972,7 +4683,7 @@ msgstr "WordPress X-Powered-By fejléc eltávolítása"
 
 #: inc/admin/settings/Advanced.php:155
 msgid "Remove Emoji support"
-msgstr "Emoji támogatás eltávolítása"
+msgstr "Emoji-támogatás eltávolítása"
 
 #: inc/admin/settings/Advanced.php:230
 msgid "Disable Universal Metabox"
@@ -5000,7 +4711,7 @@ msgstr "Noindex az admin eszköztárban"
 
 #: inc/admin/settings/Advanced.php:313
 msgid "Show Title tag column in post types"
-msgstr "Title címke oszlop megjelenítése a bejegyzéstípusokban"
+msgstr "Címcímke-oszlop mutatása a bejegyzéstípusokban"
 
 #: inc/admin/settings/Advanced.php:321
 msgid "Show Meta description column in post types"
@@ -5008,7 +4719,7 @@ msgstr "Meta leírás oszlop megjelenítése a bejegyzéstípusokban"
 
 #: inc/admin/settings/Advanced.php:329
 msgid "Show Redirection Enable column in post types"
-msgstr "Átirányítás engedélyezése oszlop megjelenítése a bejegyzéstípusokban"
+msgstr "Az átirányítás bekapcsolt állapotát jelző oszlop mutatása a bejegyzéstípusokban"
 
 #: inc/admin/settings/Advanced.php:337
 msgid "Show Redirect URL column in post types"
@@ -5040,7 +4751,7 @@ msgstr "Kimenő oszlop megjelenítése a bejegyzéstípusokban"
 
 #: inc/admin/settings/Advanced.php:393
 msgid "Show content analysis score column in post types"
-msgstr "Tartalomelemzés pontszám oszlop megjelenítése a bejegyzéstípusokban"
+msgstr "Tartalomelemzési pontszámot mutató oszlop megjelenítése a bejegyzéstípusoknál"
 
 #: inc/admin/settings/Advanced.php:410
 msgid "Block SEO metabox to user roles"
@@ -5060,11 +4771,11 @@ msgstr "Adja meg a mérési azonosítót (GA4)"
 
 #: inc/admin/settings/Analytics.php:32
 msgid "Enable Google Ads"
-msgstr "Google Ads engedélyezése"
+msgstr "Google Ads bekapcsolása"
 
 #: inc/admin/settings/Analytics.php:49
 msgid "Where to load the cookie bar?"
-msgstr "Hol töltődjön be a cookie sáv?"
+msgstr "Hol töltődjön be a cookie-sáv?"
 
 #: inc/admin/settings/Analytics.php:57
 msgid "Analytics tracking opt-in"
@@ -5080,7 +4791,7 @@ msgstr "Hozzájárulási üzenet a felhasználói követéshez"
 
 #: inc/admin/settings/Analytics.php:89
 msgid "Accept button for user tracking"
-msgstr "Elfogadás gomb a felhasználói követéshez"
+msgstr "A felhasználói követést elfogadó gomb"
 
 #: inc/admin/settings/Analytics.php:97
 msgid "Close button"
@@ -5088,15 +4799,15 @@ msgstr "Bezárás gomb"
 
 #: inc/admin/settings/Analytics.php:105
 msgid "Edit cookies button"
-msgstr "Cookie-k szerkesztése gomb"
+msgstr "Cookie-k szerkesztésére szolgáló gomb"
 
 #: inc/admin/settings/Analytics.php:113
 msgid "User consent cookie expiration date"
-msgstr "Felhasználói hozzájárulás cookie lejárati dátuma"
+msgstr "A felhasználói hozzájárulást tároló cookie lejárati dátuma"
 
 #: inc/admin/settings/Analytics.php:121
 msgid "Cookie bar position"
-msgstr "Cookie sáv pozíciója"
+msgstr "Cookie-sáv pozíciója"
 
 #: inc/admin/settings/Analytics.php:129
 msgid "Text alignment"
@@ -5104,7 +4815,7 @@ msgstr "Szöveg igazítása"
 
 #: inc/admin/settings/Analytics.php:137
 msgid "Cookie bar width"
-msgstr "Cookie sáv szélessége"
+msgstr "Cookie-sáv szélessége"
 
 #: inc/admin/settings/Analytics.php:259
 msgid "[HEAD] Add an additional tracking code"
@@ -5120,18 +4831,16 @@ msgstr "[BODY (FOOTER)] További követőkód hozzáadása"
 
 #: inc/admin/settings/Analytics.php:301
 msgid "Enable downloads tracking (e.g. PDF, XLSX, DOCX...)"
-msgstr "Letöltéskövetés engedélyezése (pl. PDF, XLSX, DOCX...)"
+msgstr "Letöltések követésének bekapcsolása (pl. PDF, XLSX, DOCX...)"
 
 #: inc/admin/settings/Analytics.php:317
 msgid ""
 "Enable affiliate/outbound links tracking (e.g. aff, go, out, recommends)"
-msgstr ""
-"Affiliate/kimenő linkek követésének engedélyezése (pl. aff, go, out, "
-"recommends)"
+msgstr "Partnerlinkek/kimenő linkek követésének bekapcsolása (pl. aff, go, out, recommends)"
 
 #: inc/admin/settings/Analytics.php:333
 msgid "Track phone links"
-msgstr "Telefonhivatkozások követése"
+msgstr "Telefonszámokra mutató linkek követése"
 
 #: inc/admin/settings/Analytics.php:351
 msgid "Track Authors"
@@ -5162,7 +4871,7 @@ msgstr ""
 
 #: inc/admin/settings/Analytics.php:426
 msgid "Self hosted Matomo installation"
-msgstr "Önhosztolt Matomo telepítés"
+msgstr "Saját tárhelyen futó Matomo-telepítés"
 
 #: inc/admin/settings/Analytics.php:434
 msgid "Enter your tracking ID"
@@ -5182,11 +4891,11 @@ msgstr "A webhely domainjének előtagként hozzáfűzése"
 
 #: inc/admin/settings/Analytics.php:482
 msgid "Cross domain"
-msgstr "Keresztdomain"
+msgstr "Domainközi"
 
 #: inc/admin/settings/Analytics.php:489
 msgid "Enable DoNotTrack detection"
-msgstr "DoNotTrack észlelés engedélyezése"
+msgstr "DoNotTrack-észlelés bekapcsolása"
 
 #: inc/admin/settings/Analytics.php:497
 msgid "Disable all tracking cookies"
@@ -5202,7 +4911,7 @@ msgstr "Minden hőtérkép és munkamenet-felvétel letiltása"
 
 #: inc/admin/settings/Analytics.php:530
 msgid "Enable Microsoft Clarity"
-msgstr "Microsoft Clarity engedélyezése"
+msgstr "Microsoft Clarity bekapcsolása"
 
 #: inc/admin/settings/Analytics.php:538
 msgid "Enter your Clarity project ID"
@@ -5226,15 +4935,15 @@ msgstr "A kép címének automatikus beállítása"
 
 #: inc/admin/settings/ImageSEO.php:48
 msgid "Automatically set the image Alt text"
-msgstr "A kép Alt szövegének automatikus beállítása"
+msgstr "A kép alternatív szövegének automatikus beállítása"
 
 #: inc/admin/settings/ImageSEO.php:56
 msgid "Automatically set the image Alt text from target keywords"
-msgstr "A kép Alt szövegének automatikus beállítása a célkulcsszavakból"
+msgstr "A kép alternatív szövegének automatikus beállítása a célkulcsszavakból"
 
 #: inc/admin/settings/ImageSEO.php:64 inc/admin/wizard/admin-wizard.php:1407
 msgid "Automatically set alt text on already inserted image"
-msgstr "Az alt szöveg automatikus beállítása a már beszúrt képen"
+msgstr "A már beszúrt kép alternatív szövegének automatikus beállítása"
 
 #: inc/admin/settings/ImageSEO.php:72
 msgid "Automatically set the image Caption"
@@ -5290,15 +4999,15 @@ msgstr "Bejegyzések rendezési szempontja"
 
 #: inc/admin/settings/Sitemaps.php:122
 msgid "Disable the display of the publication date"
-msgstr "A közzététel dátuma megjelenítésének letiltása"
+msgstr "A közzétételi dátum megjelenítésének kikapcsolása"
 
 #: inc/admin/settings/Sitemaps.php:130
 msgid "Disable hierarchy for posts and products"
-msgstr "A hierarchia letiltása bejegyzéseknél és termékeknél"
+msgstr "A bejegyzések és termékek hierarchiájának kikapcsolása"
 
 #: inc/admin/settings/Sitemaps.php:138
 msgid "Disable post type archive links"
-msgstr "Bejegyzéstípus-archívum hivatkozásainak letiltása"
+msgstr "A bejegyzéstípusok archívumaira mutató linkek kikapcsolása"
 
 #: inc/admin/settings/Social.php:16 inc/admin/wizard/admin-wizard.php:719
 msgid "Person or organization"
@@ -5334,16 +5043,15 @@ msgstr "Ezt a képet alkalmazza az összes og:image címkére"
 
 #: inc/admin/settings/Social.php:186
 msgid "Define custom og:image tag for post type archive pages"
-msgstr ""
-"Egyéni og:image címke meghatározása a bejegyzéstípus-archívum oldalakhoz"
+msgstr "Egyéni og:image címke meghatározása a bejegyzéstípusok archívumoldalaihoz"
 
 #: inc/admin/settings/Social.php:194
 msgid "Facebook Link Ownership ID"
-msgstr "Facebook Link Ownership azonosító"
+msgstr "facebook-link tulajdonosi ID"
 
 #: inc/admin/settings/Social.php:202
 msgid "Facebook Admin ID"
-msgstr "Facebook Admin azonosító"
+msgstr "facebook-admin ID"
 
 #: inc/admin/settings/Social.php:210
 msgid "Facebook App ID"
@@ -5355,7 +5063,7 @@ msgstr "Open Graph használata, ha az X Cards nincs kitöltve"
 
 #: inc/admin/settings/Social.php:251
 msgid "Image size for X Summary card"
-msgstr "Képméret az X Summary cardhoz"
+msgstr "X Summary card képmérete"
 
 #: inc/admin/settings/Social.php:268
 msgid "Post thumbnail image size"
@@ -5431,13 +5139,13 @@ msgstr "Lépés kihagyása"
 #: inc/admin/wizard/admin-wizard.php:398
 #, php-format
 msgid "Welcome to %s!"
-msgstr "Üdvözöljük a(z) %s-ben!"
+msgstr "Üdvözöljük a(z) %s webhelyen!"
 
 #. translators: %s default: SEOPress
 #: inc/admin/wizard/admin-wizard.php:405
 #, php-format
 msgid "Configure %s with the best settings for your site"
-msgstr "Állítsa be a(z) %s-t a webhelye számára legjobb beállításokkal"
+msgstr "A(z) %s konfigurálása a webhelyéhez leginkább megfelelő beállításokkal"
 
 #. translators: %s default: SEOPress
 #: inc/admin/wizard/admin-wizard.php:406
@@ -5450,7 +5158,7 @@ msgstr ""
 #: inc/admin/wizard/admin-wizard.php:414
 #: src/Services/Admin/Notifications/Notifications.php:530
 msgid "PHP module \"DOM\" is missing on your server."
-msgstr "A szerverén hiányzik a PHP modul \"DOM\"."
+msgstr "A szerverén hiányzik a PHP modul „DOM”."
 
 #: inc/admin/wizard/admin-wizard.php:415 inc/admin/wizard/admin-wizard.php:422
 #: inc/admin/wizard/admin-wizard.php:429
@@ -5469,16 +5177,16 @@ msgstr ""
 #: inc/admin/wizard/admin-wizard.php:421
 #: src/Services/Admin/Notifications/Notifications.php:549
 msgid "PHP module \"mbstring\" is missing on your server."
-msgstr "A szerverén hiányzik a PHP modul \"mbstring\"."
+msgstr "A szerverén hiányzik a PHP modul „mbstring”."
 
 #: inc/admin/wizard/admin-wizard.php:428
 #: src/Services/Admin/Notifications/Notifications.php:568
 msgid "PHP module \"intl\" is missing on your server."
-msgstr "A szerverén hiányzik a PHP modul \"intl\"."
+msgstr "A szerverén hiányzik a PHP modul „intl”."
 
 #: inc/admin/wizard/admin-wizard.php:440
 msgid "PHP upload max filesize is too low."
-msgstr "A PHP maximális feltöltési fájlméret túl alacsony."
+msgstr "A PHP fájlfeltöltési méretkorlátja túl alacsony."
 
 #. translators: %s: "upload max filesize"
 #. translators: %s: "post max size"
@@ -5493,7 +5201,7 @@ msgstr ""
 
 #: inc/admin/wizard/admin-wizard.php:447
 msgid "PHP post max size is too low."
-msgstr "A PHP maximális POST-méret túl alacsony."
+msgstr "A PHP POST-méretkorlátja túl alacsony."
 
 #: inc/admin/wizard/admin-wizard.php:454
 msgid "PHP memory limit is too low."
@@ -5533,7 +5241,7 @@ msgstr "Migráció"
 #: inc/admin/wizard/admin-wizard.php:492
 #, php-format
 msgid "Migrate your SEO metadata to %s"
-msgstr "Migrálja SEO metaadatait a(z) %s-be"
+msgstr "Migrálja SEO-metaadatait a(z) %s rendszerébe"
 
 #: inc/admin/wizard/admin-wizard.php:494
 msgid ""
@@ -5547,9 +5255,7 @@ msgstr ""
 msgid ""
 "One ore more <strong>SEO plugins</strong> are enabled on your site, please "
 "deactivate them to avoid any conflicts:"
-msgstr ""
-"Egy vagy több <strong>SEO-bővítmény</strong> engedélyezve van a webhelyén, "
-"kérjük, tiltsa le őket az esetleges ütközések elkerülése érdekében:"
+msgstr "A webhelyén egy vagy több <strong>SEO-bővítmény</strong> be van kapcsolva. Kérjük, az esetleges ütközések elkerülése érdekében kapcsolja ki őket:"
 
 #: inc/admin/wizard/admin-wizard.php:642
 msgid "No data to migrate? Click \"Next step\" button!"
@@ -5568,9 +5274,7 @@ msgstr "Mondjon el többet a webhelyéről"
 msgid ""
 "To build title tags and knowledge graph for Google, you need to fill out the"
 " fields below to configure the general settings."
-msgstr ""
-"A Google számára a title tagek és a Knowledge Graph felépítéséhez töltse ki "
-"az alábbi mezőket az általános beállítások konfigurálásához."
+msgstr "Az általános beállításokban töltse ki az alábbi mezőket a Google számára készülő title tagek és a Knowledge Graph létrehozásához."
 
 #: inc/admin/wizard/admin-wizard.php:703
 msgid "e.g. My super website"
@@ -5596,11 +5300,7 @@ msgid ""
 "recognized acronym or shorter name for your site), if applicable. Make sure "
 "the name meets the <a href=\"%s\" target=\"_blank\">content "
 "guidelines</a>.<span class=\"dashicons dashicons-external\"></span>"
-msgstr ""
-"A webhely alternatív neve (például ha a webhelyének van közismert rövidítése"
-" vagy rövidebb neve), ha alkalmazható. Győződjön meg róla, hogy a név "
-"megfelel a <a href=\"%s\" target=\"_blank\">tartalmi irányelveknek</a>.<span"
-" class=\"dashicons dashicons-external\"></span>"
+msgstr "A webhely alternatív neve (például a webhely közismert rövidítése vagy rövidebb neve, ha van ilyen). Győződjön meg róla, hogy a név megfelel a <a href=\"%s\" target=\"_blank\">tartalmi irányelveknek</a>.<span class=\"dashicons dashicons-external\"></span>"
 
 #: inc/admin/wizard/admin-wizard.php:721
 msgid "Choose a knowledge type"
@@ -5612,11 +5312,7 @@ msgid ""
 "associations, organizations), or <strong>\"Personal\"</strong> for a "
 "personal site, to help Google better understand your type of website and "
 "generate a Knowledge Graph panel."
-msgstr ""
-"Válasszon a <strong>\"Organization\"</strong> (vállalatok, egyesületek, "
-"szervezetek) és a személyes oldalhoz tartozó <strong>\"Personal\"</strong> "
-"között, hogy a Google jobban megértse webhelye típusát és Knowledge Graph "
-"panelt generáljon."
+msgstr "Válasszon a <strong>„Organization”</strong> (vállalatok, egyesületek, szervezetek) és a személyes oldalhoz tartozó <strong>„Personal”</strong> között, hogy a Google jobban megértse webhelye típusát és Knowledge Graph-panelt generáljon."
 
 #: inc/admin/wizard/admin-wizard.php:747
 msgid "e.g. My Company Name"
@@ -5674,17 +5370,13 @@ msgstr ""
 msgid ""
 "You can create your own type of content like \"product\" or \"business\": "
 "these are <strong>custom post types</strong>."
-msgstr ""
-"Létrehozhat saját tartalomtípusokat, például \"product\" vagy \"business\": "
-"ezek az <strong>egyedi bejegyzéstípusok</strong>."
+msgstr "Létrehozhat saját tartalomtípusokat, például „termék” vagy „vállalkozás”: ezek az <strong>egyéni bejegyzéstípusok</strong>."
 
 #: inc/admin/wizard/admin-wizard.php:1006
 msgid ""
 "Do not display this single post type in search engine "
 "results <strong>(noindex)</strong>"
-msgstr ""
-"Ne jelenjen meg ez a bejegyzéstípus egyedi oldalként a keresőmotorok "
-"találataiban <strong>(noindex)</strong>"
+msgstr "Ne jelenjenek meg ennek a bejegyzéstípusnak az egyedi bejegyzései a keresőmotorok találatai között <strong>(noindex)</strong>"
 
 #: inc/admin/wizard/admin-wizard.php:1082
 msgid "For which post type archives, should indexing be disabled?"
@@ -5695,10 +5387,7 @@ msgid ""
 "<strong>Archive pages</strong> are automatically generated by WordPress. "
 "They group specific content such as your latest articles, a product category"
 " or your content by author or date."
-msgstr ""
-"<strong>Az archív oldalak</strong> a WordPress által automatikusan generált "
-"oldalak. Meghatározott tartalmakat csoportosítanak, például a legutóbbi "
-"cikkeit, egy termékkategóriát, vagy a tartalmat szerző vagy dátum szerint."
+msgstr "<strong>Az archívumoldalakat</strong> a WordPress automatikusan hozza létre. Meghatározott tartalmakat csoportosítanak, például az Ön legutóbbi cikkeit, egy termékkategóriát vagy az Ön tartalmait szerző vagy dátum szerint."
 
 #: inc/admin/wizard/admin-wizard.php:1087
 msgid "Below the list of your <strong>post type archives</strong>:"
@@ -5748,35 +5437,27 @@ msgstr ""
 
 #: inc/admin/wizard/admin-wizard.php:1279
 msgid "For which taxonomy archives, should indexing be disabled?"
-msgstr "Mely taxonómia archívumoknál kell letiltani az indexelést?"
+msgstr "Mely taxonómiák archívumainál kell letiltani az indexelést?"
 
 #: inc/admin/wizard/admin-wizard.php:1283
 msgid ""
 "<strong>Taxonomies</strong> are the method of classifying content and data "
 "in WordPress. When you use a taxonomy you’re grouping similar things "
 "together. The taxonomy refers to the sum of those groups."
-msgstr ""
-"<strong>A taxonómiák</strong> a tartalom és az adatok osztályozásának módjai"
-" a WordPressben. Amikor taxonómiát használ, hasonló dolgokat csoportosít "
-"össze. A taxonómia ezeknek a csoportoknak az összességére utal."
+msgstr "<strong>Az osztályozások (taxonómiák)</strong> a tartalom és az adatok osztályozásának módjai a WordPressben. Amikor osztályozást használ, hasonló dolgokat csoportosít össze. Az osztályozás ezeknek a csoportoknak az összességére utal."
 
 #: inc/admin/wizard/admin-wizard.php:1284
 msgid ""
 "<strong>Categories</strong> and <strong>Tags</strong> are the default "
 "taxonomies. You can add your own taxonomies like \"product categories\": "
 "these are called <strong>custom taxonomies</strong>."
-msgstr ""
-"<strong>A kategóriák</strong> és <strong>a címkék</strong> az "
-"alapértelmezett taxonómiák. Hozzáadhat saját taxonómiákat, például "
-"\"termékkategóriák\": ezeket <strong>egyedi taxonómiáknak</strong> nevezik."
+msgstr "<strong>A kategóriák</strong> és <strong>a címkék</strong> az alapértelmezett osztályozások (taxonómiák). Hozzáadhat saját osztályozásokat, például „termékkategóriákat”: ezeket <strong>egyéni osztályozásoknak</strong> nevezik."
 
 #: inc/admin/wizard/admin-wizard.php:1307
 msgid ""
 "Do not display this taxonomy archive in search engine "
 "results <strong>(noindex)</strong>"
-msgstr ""
-"Ne jelenjen meg ez a taxonómia archívum a keresőmotorok találatai "
-"között <strong>(noindex)</strong>"
+msgstr "Ne jelenjen meg ennek az osztályozásnak az archívuma a keresőmotorok találatai között <strong>(noindex)</strong>"
 
 #: inc/admin/wizard/admin-wizard.php:1382
 msgid "Almost done!"
@@ -5784,8 +5465,7 @@ msgstr "Majdnem kész!"
 
 #: inc/admin/wizard/admin-wizard.php:1384
 msgid "Final step before being ready to rank on search engines."
-msgstr ""
-"Utolsó lépés, mielőtt készen áll a keresőmotorokban való rangsorolásra."
+msgstr "Utolsó lépés, mielőtt webhelye készen áll a keresőmotorok találatai között való rangsorolásra."
 
 #. translators: %s default: SEOPress
 #: inc/admin/wizard/admin-wizard.php:1398
@@ -5793,10 +5473,7 @@ msgstr ""
 msgid ""
 "By default, %s redirects your Attachment pages to the parent post. Optimize "
 "this by redirecting the user directly to the URL of the media file."
-msgstr ""
-"Alapértelmezés szerint a %s a mellékletoldalakat a szülő bejegyzésre "
-"irányítja. Ezt optimalizálhatja azzal, hogy a felhasználót közvetlenül a "
-"médiafájl URL-jére irányítja."
+msgstr "Alapértelmezés szerint a %s a csatolmányoldalakat a szülő bejegyzésre irányítja. Ezt azzal optimalizálhatja, hogy a felhasználót közvetlenül a médiafájl URL-jére irányítja."
 
 #. translators: %s category base
 #. translators: %s permalink category / product category base
@@ -5804,7 +5481,7 @@ msgstr ""
 #: inc/admin/wizard/admin-wizard.php:1457
 #, php-format
 msgid "Shorten your URLs by removing %s and improve your SEO."
-msgstr "Rövidítse az URL-eket a(z) %s eltávolításával, és javítsa a SEO-ját."
+msgstr "A %s eltávolításával rövidítse le az URL-eket, és javítsa SEO-eredményeit."
 
 #: inc/admin/wizard/admin-wizard.php:1521
 msgid "Improve your workflow with the Universal SEO metabox"
@@ -5812,11 +5489,11 @@ msgstr "Javítsa a munkafolyamatát az Universal SEO metaboxszal"
 
 #: inc/admin/wizard/admin-wizard.php:1524
 msgid "Edit your SEO metadata directly from your page or theme builder."
-msgstr "Szerkessze a SEO metaadatait közvetlenül az oldal- vagy témaépítőből."
+msgstr "Szerkessze SEO-metaadatait közvetlenül az oldal- vagy sablonépítőből."
 
 #: inc/admin/wizard/admin-wizard.php:1541
 msgid "Yes, please enable the universal SEO metabox!"
-msgstr "Igen, kérem, engedélyezze az universal SEO metaboxot!"
+msgstr "Igen, kérem az Universal SEO-metabox bekapcsolását!"
 
 #: inc/admin/wizard/admin-wizard.php:1545
 msgid ""
@@ -5844,59 +5521,47 @@ msgstr ""
 
 #: inc/admin/wizard/admin-wizard.php:1613
 msgid "<strong>IndexNow</strong> is enabled to improve your site indexing."
-msgstr ""
-"<strong>IndexNow</strong> engedélyezve van a webhelye indexelésének "
-"javítására."
+msgstr "<strong>IndexNow</strong> be van kapcsolva a webhelye indexelésének javítása érdekében."
 
 #: inc/admin/wizard/admin-wizard.php:1617
 msgid ""
 "<strong>Open Graph / Twitter card</strong> is enabled to improve your social"
 " media sharing."
-msgstr ""
-"<strong>Open Graph / Twitter card</strong> engedélyezve van a közösségi "
-"média megosztásainak javítására."
+msgstr "<strong>Open Graph / Twitter card</strong> be van kapcsolva a közösségi médiában történő megosztások javítása érdekében."
 
 #: inc/admin/wizard/admin-wizard.php:1621
 msgid ""
 "<strong>Content Analysis</strong> is enabled to help you improve your "
 "content."
-msgstr ""
-"<strong>Content Analysis</strong> engedélyezve van, hogy segítsen javítani a"
-" tartalmát."
+msgstr "<strong>A tartalomelemzés</strong> be van kapcsolva, hogy segítsen javítani a tartalmát."
 
 #: inc/admin/wizard/admin-wizard.php:1625
 msgid ""
 "<strong>XML sitemaps</strong> are enabled to improve Google's crawling of "
 "your site."
-msgstr ""
-"<strong>XML webhelytérképek</strong> engedélyezve vannak, hogy javítsák a "
-"webhelye Google általi feltérképezését."
+msgstr "<strong>XML-webhelytérképek</strong> be vannak kapcsolva, hogy megkönnyítsék a Google számára a webhely feltérképezését."
 
 #: inc/admin/wizard/admin-wizard.php:1629
 msgid ""
 "<strong>Indexing</strong> configured for your post types, taxonomies, "
 "authors, dates, search, 404, etc."
-msgstr ""
-"<strong>Indexelés</strong> beállítva a bejegyzéstípusokra, taxonómiákra, "
-"szerzőkre, dátumokra, keresésre, 404-re stb."
+msgstr "<strong>Indexelés</strong> beállítva a bejegyzéstípusokhoz, osztályozásokhoz, szerzőkhöz, dátumokhoz, kereséshez, 404-hez stb."
 
 #: inc/admin/wizard/admin-wizard.php:1641
 msgid "Create your XML sitemaps"
-msgstr "Hozza létre az XML webhelytérképeit"
+msgstr "XML-webhelytérképek létrehozása"
 
 #: inc/admin/wizard/admin-wizard.php:1643
 msgid "Build custom XML sitemaps to improve Google's crawling of your site."
-msgstr ""
-"Készítsen egyéni XML webhelytérképeket, hogy javítsa a webhelye Google "
-"általi feltérképezését."
+msgstr "Készítsen egyéni XML-webhelytérképeket, hogy a Google könnyebben feltérképezhesse a webhelyét."
 
 #: inc/admin/wizard/admin-wizard.php:1650
 msgid "Configure your XML sitemaps"
-msgstr "Konfigurálja az XML webhelytérképeit"
+msgstr "XML-webhelytérképek beállítása"
 
 #: inc/admin/wizard/admin-wizard.php:1666
 msgid "Subscribe for free"
-msgstr "Iratkozzon fel ingyen"
+msgstr "Ingyenes előfizetés"
 
 #: inc/admin/wizard/admin-wizard.php:1667
 msgid "SEO Success for WordPress with a Two-Hours-a-Week Routine. Free."
@@ -5916,11 +5581,11 @@ msgstr "2. hét: 2 óra SEO-optimalizált tartalom készítésére"
 
 #: inc/admin/wizard/admin-wizard.php:1673
 msgid "Week 3: 2 Hours to do On-Page Optimizations"
-msgstr "3. hét: 2 óra on-page optimalizálások elvégzésére"
+msgstr "3. hét: 2 óra az oldalon belüli optimalizálásra"
 
 #: inc/admin/wizard/admin-wizard.php:1674
 msgid "Week 4: 2 Hours to do Off-Page Optimizations"
-msgstr "4. hét: 2 óra off-page optimalizálások elvégzésére"
+msgstr "4. hét: 2 óra az oldalon kívüli optimalizálásra"
 
 #: inc/admin/wizard/admin-wizard.php:1691
 msgid "Enter your email address"
@@ -5938,14 +5603,11 @@ msgid ""
 "I accept that SEOPress can store and use my email address in order to send "
 "me a newsletter. Read our <a href=\"%s\" target=\"_blank\" title=\"Open in a"
 " new window\">privacy policy</a>."
-msgstr ""
-"Elfogadom, hogy a SEOPress tárolhatja és felhasználhatja az e-mail-címemet "
-"hírlevél küldése céljából. Olvassa el a <a href=\"%s\" target=\"_blank\" "
-"title=\"Open in a new window\">adatvédelmi szabályzatunkat</a>."
+msgstr "Elfogadom, hogy a SEOPress tárolhatja és felhasználhatja az e-mail-címemet hírlevél küldése céljából. Olvassa el az <a href=\"%s\" target=\"_blank\" title=\"Open in a new window\">adatvédelmi szabályzatunkat</a>."
 
 #: inc/admin/wizard/admin-wizard.php:1702
 msgid "Thank you for your subscription!"
-msgstr "Köszönjük a feliratkozását!"
+msgstr "Köszönjük a feliratkozást!"
 
 #: inc/functions/options-advanced-admin.php:183
 msgid "Enable noindex"
@@ -5956,8 +5618,8 @@ msgstr "noindex engedélyezése"
 #, php-format
 msgid "%s post to noindex."
 msgid_plural "%s posts to noindex."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s bejegyzés noindexre állítása."
+msgstr[1] "%s bejegyzés noindexre állítása."
 
 #: inc/functions/options-advanced-admin.php:227
 msgid "Enable index"
@@ -5968,8 +5630,8 @@ msgstr "index engedélyezése"
 #, php-format
 msgid "%s post to index."
 msgid_plural "%s posts to index."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s bejegyzés indexelésre állítása."
+msgstr[1] "%s bejegyzés indexelésre állítása."
 
 #: inc/functions/options-advanced-admin.php:270
 msgid "Enable nofollow"
@@ -5980,8 +5642,8 @@ msgstr "nofollow engedélyezése"
 #, php-format
 msgid "%s post to nofollow."
 msgid_plural "%s posts to nofollow."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s bejegyzés nofollow-ra állítása."
+msgstr[1] "%s bejegyzés nofollow-ra állítása."
 
 #: inc/functions/options-advanced-admin.php:313
 msgid "Enable follow"
@@ -5992,8 +5654,8 @@ msgstr "follow engedélyezése"
 #, php-format
 msgid "%s post to follow."
 msgid_plural "%s posts to follow."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s bejegyzés follow-ra állítása."
+msgstr[1] "%s bejegyzés follow-ra állítása."
 
 #: inc/functions/options-advanced-admin.php:356
 msgid "Enable redirection"
@@ -6004,8 +5666,8 @@ msgstr "Átirányítás engedélyezése"
 #, php-format
 msgid "%s redirection enabled."
 msgid_plural "%s redirections enabled."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s átirányítás bekapcsolva."
+msgstr[1] "%s átirányítás bekapcsolva."
 
 #: inc/functions/options-advanced-admin.php:398
 msgid "Disable redirection"
@@ -6016,8 +5678,8 @@ msgstr "Átirányítás letiltása"
 #, php-format
 msgid "%s redirection disabled."
 msgid_plural "%s redirections disabled."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s átirányítás kikapcsolva."
+msgstr[1] "%s átirányítás kikapcsolva."
 
 #: inc/functions/options-advanced-admin.php:439
 msgid "Add to instant indexing queue"
@@ -6028,8 +5690,8 @@ msgstr "Hozzáadás az azonnali indexelési várólistához"
 #, php-format
 msgid "%s post added to instant indexing queue."
 msgid_plural "%s posts added to instant indexing queue."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s bejegyzés hozzáadva az azonnali indexelési várólistához."
+msgstr[1] "%s bejegyzés hozzáadva az azonnali indexelési várólistához."
 
 #: inc/functions/options-advanced-admin.php:505
 msgid "Generate alt text from filename"
@@ -6040,8 +5702,8 @@ msgstr "Alternatív szöveg létrehozása a fájlnévből"
 #, php-format
 msgid "%s alternative text generated from filename."
 msgid_plural "%s alternative texts generated from filename."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s alternatív szöveg létrehozva a fájlnévből."
+msgstr[1] "%s alternatív szöveg létrehozva a fájlnévből."
 
 #: inc/functions/options-advanced-admin.php:569
 #: src/Actions/Admin/ManageColumn.php:73
@@ -6070,22 +5732,17 @@ msgid ""
 "By visiting our site, you agree to our <a "
 "href=\"[seopress_privacy_page]\">privacy policy</a> regarding cookies, "
 "tracking statistics, etc."
-msgstr ""
-"Webhelyünk meglátogatásával elfogadja a sütikre, követési statisztikákra "
-"stb. vonatkozó <a href=\"[seopress_privacy_page]\">adatvédelmi "
-"szabályzatunkat</a>."
+msgstr "Webhelyünk meglátogatásával elfogadja a cookie-kra, követési statisztikákra stb. vonatkozó <a href=\"[seopress_privacy_page]\">adatvédelmi szabályzatunkat</a>."
 
 #: inc/functions/options-google-analytics.php:71
 msgid ""
 "By visiting our site, you agree to our privacy policy regarding cookies, "
 "tracking statistics, etc."
-msgstr ""
-"Webhelyünk meglátogatásával elfogadja a sütikre, követési statisztikákra "
-"stb. vonatkozó adatvédelmi szabályzatunkat."
+msgstr "Webhelyünk meglátogatásával elfogadja a cookie-kra, követési statisztikákra stb. vonatkozó adatvédelmi szabályzatunkat."
 
 #: inc/functions/options-google-analytics.php:115
 msgid "Manage cookies"
-msgstr "Sütik kezelése"
+msgstr "Cookie-k kezelése"
 
 #: inc/functions/options-google-analytics.php:449
 #: inc/functions/options-matomo.php:103
@@ -6134,7 +5791,7 @@ msgstr "Nincs megadva API-kulcs a beállítások fülön"
 
 #: inc/functions/options-instant-indexing.php:217
 msgid "Bad request: Invalid key format"
-msgstr "Hibás kérés: érvénytelen kulcsformátum"
+msgstr "Hibás kérés: a kulcs formátuma hibás"
 
 #: inc/functions/options-instant-indexing.php:261
 msgid "Google API key is missing"
@@ -6148,13 +5805,13 @@ msgstr "XML webhelytérképek"
 #: inc/functions/sitemap/template-xml-sitemaps-xsl.php:133
 #, php-format
 msgid "This XML Sitemap Index file contains %s sitemaps."
-msgstr "Ez az XML webhelytérkép-index fájl %s webhelytérképet tartalmaz."
+msgstr "Ez az XML-webhelytérkép-indexfájl %s webhelytérképet tartalmaz."
 
 #. translators: %s number of URLs in an xml sitemap
 #: inc/functions/sitemap/template-xml-sitemaps-xsl.php:136
 #, php-format
 msgid "This XML Sitemap contains %s URL(s)."
-msgstr "Ez az XML webhelytérkép %s URL-t tartalmaz."
+msgstr "Ez az XML-webhelytérkép %s URL-t tartalmaz."
 
 #: inc/functions/sitemap/template-xml-sitemaps-xsl.php:143
 msgid "Last update"
@@ -6182,10 +5839,7 @@ msgstr "Egyéni taxonómiák"
 msgid ""
 "Some <strong>%1$s</strong> have no <strong>meta %2$s</strong> set! We "
 "strongly encourage you to add one by filling in the fields below."
-msgstr ""
-"Néhány <strong>%1$s</strong> esetében nincs beállítva <strong>meta "
-"%2$s</strong>! Nyomatékosan javasoljuk, hogy töltse ki az alábbi mezőket, és"
-" adjon meg egyet."
+msgstr "Néhány <strong>%1$s</strong> esetében nincs beállítva <strong>meta %2$s</strong>! Nyomatékosan javasoljuk, hogy az alábbi mezők kitöltésével adjon meg egyet."
 
 #: seopress-functions.php:440 seopress-functions.php:470
 msgid "WARNING"
@@ -6203,9 +5857,7 @@ msgstr ""
 msgid ""
 "URL rewriting is NOT enabled on your site. Select a permalink structure that"
 " is optimized for SEO (NOT Plain)."
-msgstr ""
-"Az URL-átírás NINCS engedélyezve a webhelyén. Válasszon SEO-ra optimalizált "
-"közvetlen hivatkozás struktúrát (NEM az Egyszerűt)."
+msgstr "Az URL-átírás NINCS engedélyezve a webhelyén. Válasszon SEO szempontjából optimalizált közvetlen hivatkozási struktúrát (NEM az Egyszerűt)."
 
 #: seopress.php:272
 msgid "has been successfully updated!"
@@ -6249,7 +5901,7 @@ msgstr "Dokumentáció"
 
 #: seopress.php:571
 msgid "GO PRO!"
-msgstr "VÁLTSON PRO-RA!"
+msgstr "Váltás a Pro verzióra!"
 
 #: src/Actions/Admin/ManageColumn.php:76
 msgid "Meta Desc."
@@ -6319,7 +5971,7 @@ msgstr "Utolsó módosítás dátuma"
 #: src/Helpers/ContentAnalysis.php:28
 #: src/Services/I18nUniversalMetabox.php:314
 msgid "Keywords in permalink"
-msgstr "Kulcsszavak a permalinkben"
+msgstr "Kulcsszavak a közvetlen hivatkozásban"
 
 #: src/Helpers/ContentAnalysis.php:33
 #: src/Services/I18nUniversalMetabox.php:264
@@ -6369,7 +6021,7 @@ msgstr "Font sterling"
 
 #: src/Helpers/Currencies.php:13
 msgid "Euro"
-msgstr "Euró"
+msgstr "euró"
 
 #: src/Helpers/Currencies.php:14
 msgid "Argentina Peso"
@@ -6377,7 +6029,7 @@ msgstr "Argentin peso"
 
 #: src/Helpers/Currencies.php:15
 msgid "Australian Dollar"
-msgstr "Ausztrál dollár"
+msgstr "ausztrál dollár"
 
 #: src/Helpers/Currencies.php:16
 msgid "Brazilian Real"
@@ -6397,11 +6049,11 @@ msgstr "Chilei peso"
 
 #: src/Helpers/Currencies.php:20
 msgid "Czech Koruna"
-msgstr "Cseh korona"
+msgstr "cseh korona"
 
 #: src/Helpers/Currencies.php:21
 msgid "Danish Krone"
-msgstr "Dán korona"
+msgstr "dán korona"
 
 #: src/Helpers/Currencies.php:22
 msgid "Hong Kong Dollar"
@@ -6421,7 +6073,7 @@ msgstr "Izraeli új sékel"
 
 #: src/Helpers/Currencies.php:26
 msgid "Japanese Yen"
-msgstr "Japán jen"
+msgstr "japán jen"
 
 #: src/Helpers/Currencies.php:27
 msgid "Malaysian Ringgit"
@@ -6433,7 +6085,7 @@ msgstr "Mexikói peso"
 
 #: src/Helpers/Currencies.php:29
 msgid "Norwegian Krone"
-msgstr "Norvég korona"
+msgstr "norvég korona"
 
 #: src/Helpers/Currencies.php:30
 msgid "New Zealand Dollar"
@@ -6441,7 +6093,7 @@ msgstr "Új-zélandi dollár"
 
 #: src/Helpers/Currencies.php:31
 msgid "Philippine Peso"
-msgstr "Fülöp-szigeteki peso"
+msgstr "fülöp-szigeteki peso"
 
 #: src/Helpers/Currencies.php:32
 msgid "Polish Zloty"
@@ -6457,7 +6109,7 @@ msgstr "Orosz rubel"
 
 #: src/Helpers/Currencies.php:35
 msgid "Singapore Dollar"
-msgstr "Szingapúri dollár"
+msgstr "szingapúri dollár"
 
 #: src/Helpers/Currencies.php:36
 msgid "Sol"
@@ -6465,15 +6117,15 @@ msgstr "Sol"
 
 #: src/Helpers/Currencies.php:37
 msgid "South African Rand"
-msgstr "Dél-afrikai rand"
+msgstr "dél-afrikai rand"
 
 #: src/Helpers/Currencies.php:38
 msgid "Swedish Krona"
-msgstr "Svéd korona"
+msgstr "svéd korona"
 
 #: src/Helpers/Currencies.php:39
 msgid "Swiss Franc"
-msgstr "Svájci frank"
+msgstr "svájci frank"
 
 #: src/Helpers/Currencies.php:40
 msgid "Taiwan New Dollar"
@@ -6481,7 +6133,7 @@ msgstr "Tajvani új dollár"
 
 #: src/Helpers/Currencies.php:41
 msgid "Thai Baht"
-msgstr "Thai baht"
+msgstr "thai baht"
 
 #: src/Helpers/Currencies.php:42
 msgid "Ukrainian hryvnia"
@@ -6529,13 +6181,11 @@ msgstr "Ne indexelje az ezen az oldalon található képeket (noimageindex)"
 msgid ""
 "Set thee category that gets used in the %s permalink and in our breadcrumbs "
 "if you have multiple categories."
-msgstr ""
-"Állítsa be azt a kategóriát, amely a %s közvetlen hivatkozásban és a "
-"morzsamenüben kerül felhasználásra, ha több kategóriája van."
+msgstr "Állítsa be, hogy több kategória esetén melyik kategóriát használja a rendszer a %s közvetlen hivatkozásban és a breadcrumbban."
 
 #: src/Helpers/Metas/SocialSettings.php:37
 msgid "Facebook thumbnail"
-msgstr "Facebook bélyegkép"
+msgstr "Facebook-bélyegkép"
 
 #: src/Helpers/OpeningHoursHelper.php:12
 msgid "Monday"
@@ -6612,18 +6262,14 @@ msgstr "Éves"
 
 #: src/Services/Admin/Notifications/Notifications.php:33
 msgid "You like SEOPress? Please help us by rating us 5 stars!"
-msgstr ""
-"Tetszik a SEOPress? Kérjük, segítsen, és értékeljen minket 5 csillagra!"
+msgstr "Tetszik a SEOPress? Kérjük, segítsen nekünk, és értékeljen minket 5 csillaggal!"
 
 #: src/Services/Admin/Notifications/Notifications.php:34
 msgid ""
 "Support the development and improvement of the plugin by taking 15 seconds "
 "of your time to leave us a user review on the official WordPress plugins "
 "repository. Thank you!"
-msgstr ""
-"Támogassa a bővítmény fejlesztését és továbbfejlesztését azzal, hogy szán 15"
-" másodpercet arra, hogy felhasználói értékelést ír a hivatalos WordPress "
-"bővítménytárban. Köszönjük!"
+msgstr "Támogassa a bővítmény fejlesztését és továbbfejlesztését azzal, hogy 15 másodpercet szán arra, hogy felhasználói értékelést írjon a hivatalos WordPress-bővítménytárban. Köszönjük!"
 
 #: src/Services/Admin/Notifications/Notifications.php:36
 #: src/Services/Admin/Notifications/Notifications.php:291
@@ -6632,11 +6278,11 @@ msgstr "Információ"
 
 #: src/Services/Admin/Notifications/Notifications.php:40
 msgid "Rate us!"
-msgstr "Értékeljen minket!"
+msgstr "Értékelés írása!"
 
 #: src/Services/Admin/Notifications/Notifications.php:58
 msgid "Bricks theme is not correctly setup for SEO!"
-msgstr "A Bricks téma nincs megfelelően beállítva a SEO-hoz!"
+msgstr "A Bricks-sablon nincs megfelelően beállítva SEO-szempontból!"
 
 #: src/Services/Admin/Notifications/Notifications.php:59
 msgid ""
@@ -6673,7 +6319,7 @@ msgstr "Nagy hatás"
 
 #: src/Services/Admin/Notifications/Notifications.php:81
 msgid "Bricks theme is not correctly setup for social sharing!"
-msgstr "A Bricks téma nincs megfelelően beállítva a közösségi megosztáshoz!"
+msgstr "A Bricks sablon nincs megfelelően beállítva a közösségi megosztáshoz!"
 
 #: src/Services/Admin/Notifications/Notifications.php:82
 msgid ""
@@ -6686,31 +6332,27 @@ msgstr ""
 
 #: src/Services/Admin/Notifications/Notifications.php:119
 msgid "The7 theme is not correctly setup for social sharing!"
-msgstr "A The7 téma nincs megfelelően beállítva a közösségi megosztáshoz!"
+msgstr "A The7 sablon nincs megfelelően beállítva a közösségi megosztáshoz!"
 
 #: src/Services/Admin/Notifications/Notifications.php:120
 msgid ""
 "You must disable \"The7 OpenGraph tags\" option from The7 advanced settings "
 "page to avoid any social sharing issues."
-msgstr ""
-"A közösségi megosztási problémák elkerülése érdekében a The7 speciális "
-"beállítások oldalán tiltsa le a \"The7 OpenGraph tags\" opciót."
+msgstr "A közösségi megosztási problémák elkerülése érdekében kapcsolja ki a „The7 OpenGraph tags” opciót a The7 haladó beállítások oldalán."
 
 #: src/Services/Admin/Notifications/Notifications.php:142
 msgid "Enable our universal SEO metabox for the Block Editor"
-msgstr "Engedélyezze az univerzális SEO metadobozt a Blokkszerkesztőhöz"
+msgstr "Univerzális SEO-metadobozunk bekapcsolása a blokkszerkesztőhöz"
 
 #: src/Services/Admin/Notifications/Notifications.php:143
 msgid ""
 "By default, our new SEO metabox is disabled for Gutenberg. Test it without "
 "further delay!"
-msgstr ""
-"Alapértelmezés szerint az új SEO metadobozunk le van tiltva a Gutenbergben. "
-"Próbálja ki késlekedés nélkül!"
+msgstr "Alapértelmezés szerint az új SEO-metadobozunk ki van kapcsolva a Gutenbergben. Próbálja ki késlekedés nélkül!"
 
 #: src/Services/Admin/Notifications/Notifications.php:149
 msgid "Activate it"
-msgstr "Aktiválja"
+msgstr "Aktiválás"
 
 #: src/Services/Admin/Notifications/Notifications.php:163
 msgid "Configure SEOPress in a few minutes with our installation wizard"
@@ -6718,24 +6360,21 @@ msgstr "Állítsa be a SEOPress-t néhány perc alatt a telepítővarázslónkka
 
 #: src/Services/Admin/Notifications/Notifications.php:164
 msgid "The best way to quickly setup SEOPress on your site."
-msgstr "A legjobb módja, hogy gyorsan beállítsa a SEOPress-t a webhelyén."
+msgstr "A legjobb módja annak, hogy gyorsan beállítsa a SEOPress-t a webhelyén."
 
 #: src/Services/Admin/Notifications/Notifications.php:170
 msgid "Start the wizard"
-msgstr "Indítsa el a varázslót"
+msgstr "Varázsló indítása"
 
 #: src/Services/Admin/Notifications/Notifications.php:186
 msgid "Use Google Analytics with AMP plugin"
-msgstr "Használja a Google Analytics szolgáltatást az AMP bővítménnyel"
+msgstr "A Google Analytics használata az AMP-bővítménnyel"
 
 #: src/Services/Admin/Notifications/Notifications.php:187
 msgid ""
 "Your site is using the AMP official plugin. To track users with Google "
 "Analytics on AMP pages, please go to this settings page."
-msgstr ""
-"Az Ön webhelye az AMP hivatalos bővítményét használja. A felhasználók "
-"követéséhez a Google Analytics-szel az AMP-oldalakon, kérjük, lépjen erre a "
-"beállítási oldalra."
+msgstr "A webhelye a hivatalos AMP-bővítményt használja. Ha az AMP-oldalakon Google Analytics segítségével szeretné követni a felhasználókat, kérjük, nyissa meg ezt a beállítási oldalt."
 
 #: src/Services/Admin/Notifications/Notifications.php:189
 #: src/Services/Admin/Notifications/Notifications.php:213
@@ -6749,9 +6388,7 @@ msgstr "Közepes hatás"
 
 #: src/Services/Admin/Notifications/Notifications.php:210
 msgid "Fix compatibility issues with LiteSpeed caching plugin"
-msgstr ""
-"Javítsa a kompatibilitási problémákat a LiteSpeed gyorsítótárazó "
-"bővítménnyel"
+msgstr "Kompatibilitási problémák megoldása a LiteSpeed gyorsítótárazó bővítménnyel"
 
 #: src/Services/Admin/Notifications/Notifications.php:211
 msgid ""
@@ -6765,32 +6402,25 @@ msgstr ""
 
 #: src/Services/Admin/Notifications/Notifications.php:245
 msgid "We noticed that some SEO DIVI options are enabled!"
-msgstr "Észrevettük, hogy néhány SEO DIVI beállítás engedélyezve van!"
+msgstr "Észrevettük, hogy néhány DIVI SEO-beállítás be van kapcsolva!"
 
 #: src/Services/Admin/Notifications/Notifications.php:246
 msgid ""
 "To avoid any SEO conflicts, please disable every SEO option from "
 "<strong>DIVI theme options page, SEO tab</strong>."
-msgstr ""
-"Az esetleges SEO konfliktusok elkerülése érdekében tiltsa le az összes SEO "
-"beállítást a <strong>DIVI theme options page, SEO tab</strong> oldalon."
+msgstr "Az esetleges SEO-konfliktusok elkerülése érdekében kapcsolja ki az összes SEO-beállítást a <strong>DIVI sablonbeállításainak oldalán, SEO fülön</strong>."
 
 #: src/Services/Admin/Notifications/Notifications.php:267
 msgid ""
 "Your theme doesn't use <strong>add_theme_support('title-tag');</strong>"
-msgstr ""
-"A témája nem használja a <strong>add_theme_support('title-tag');</strong> "
-"függvényt."
+msgstr "A sablonja nem használja a <strong>add_theme_support('title-tag');</strong>"
 
 #: src/Services/Admin/Notifications/Notifications.php:268
 msgid ""
 "This error indicates that your theme uses a deprecated function to generate "
 "the title tag of your pages. SEOPress will not be able to generate your "
 "custom title tags if this error is not fixed."
-msgstr ""
-"Ez a hiba azt jelzi, hogy a témája elavult függvényt használ az oldalak "
-"title tagjének előállításához. Ha ez a hiba nem kerül javításra, a SEOPress "
-"nem fogja tudni létrehozni az egyéni title tageket."
+msgstr "Ez a hiba azt jelzi, hogy a sablonja elavult függvényt használ az oldalai title tagjének előállításához. Ha ezt a hibát nem javítja ki, a SEOPress nem fogja tudni létrehozni az egyéni title tagjeit."
 
 #: src/Services/Admin/Notifications/Notifications.php:288
 msgid "WPML plugin has been detected!"
@@ -6823,9 +6453,7 @@ msgstr ""
 msgid ""
 "Do you want to migrate all your metadata to SEOPress? Do not use multiple "
 "SEO plugins at once to avoid conflicts!"
-msgstr ""
-"Szeretné az összes metaadatát a SEOPress-be migrálni? A konfliktusok "
-"elkerülése érdekében ne használjon egyszerre több SEO bővítményt!"
+msgstr "Szeretné az összes metaadatát a SEOPress-be migrálni? A konfliktusok elkerülése érdekében ne használjon egyszerre több SEO-bővítményt!"
 
 #: src/Services/Admin/Notifications/Notifications.php:353
 msgid "Migrate!"
@@ -6833,44 +6461,39 @@ msgstr "Migrálás!"
 
 #: src/Services/Admin/Notifications/Notifications.php:406
 msgid "Enfold theme is not correctly setup for SEO!"
-msgstr "Az Enfold téma nincs megfelelően beállítva SEO-hoz!"
+msgstr "Az Enfold-sablon nincs megfelelően beállítva SEO-szempontból!"
 
 #: src/Services/Admin/Notifications/Notifications.php:407
 msgid ""
 "You must disable \"Meta tag robots\" option from Enfold settings (SEO "
 "Support tab) to avoid any SEO issues."
-msgstr ""
-"Az esetleges SEO problémák elkerülése érdekében tiltsa le a \"Meta tag "
-"robots\" opciót az Enfold beállításokban (SEO Support fül)."
+msgstr "Az esetleges SEO-problémák elkerülése érdekében kapcsolja ki a „Meta tag robots” opciót az Enfold beállításai között (SEO Support fül)."
 
 #: src/Services/Admin/Notifications/Notifications.php:426
 msgid "Global meta title missing for several custom post types!"
-msgstr "Globális meta cím hiányzik több egyéni bejegyzéstípusnál!"
+msgstr "Több egyéni bejegyzéstípusnál hiányzik a globális metacím!"
 
 #: src/Services/Admin/Notifications/Notifications.php:446
 msgid "Global meta description missing for several custom post types!"
-msgstr "Globális meta leírás hiányzik több egyéni bejegyzéstípusnál!"
+msgstr "Több egyéni bejegyzéstípusnál hiányzik a globális metaleírás!"
 
 #: src/Services/Admin/Notifications/Notifications.php:466
 msgid "Global meta title missing for several taxonomies!"
-msgstr "Globális meta cím hiányzik több taxonómiánál!"
+msgstr "Több taxonómiánál hiányzik a globális metacím!"
 
 #: src/Services/Admin/Notifications/Notifications.php:487
 msgid "Global meta description missing for several taxonomies!"
-msgstr "Globális meta leírás hiányzik több taxonómiánál!"
+msgstr "Több taxonómiánál hiányzik a globális metaleírás!"
 
 #: src/Services/Admin/Notifications/Notifications.php:511
 msgid "Your site doesn't use an SSL certificate!"
-msgstr "A webhelye nem használ SSL tanúsítványt!"
+msgstr "A webhelye nem használ SSL-tanúsítványt!"
 
 #: src/Services/Admin/Notifications/Notifications.php:512
 msgid ""
 "Https is considered by Google as a positive signal for the ranking of your "
 "site. It also reassures your visitors for data security, and improves trust."
-msgstr ""
-"A Https-t a Google pozitív jelzésnek tekinti a webhelye rangsorolásához. "
-"Emellett megnyugtatja a látogatókat az adatok biztonságát illetően, és "
-"növeli a bizalmat."
+msgstr "A HTTPS-t a Google pozitív jelzésnek tekinti a webhelye rangsorolása szempontjából. Emellett az adatok biztonságát illetően is megnyugtatja látogatóit, és növeli a bizalmat."
 
 #: src/Services/Admin/Notifications/Notifications.php:596
 msgid "Your site is not visible to Search Engines!"
@@ -6881,10 +6504,7 @@ msgid ""
 "You have activated the blocking of the indexing of your site. If your site "
 "is under development, this is probably normal. Otherwise, check your "
 "settings."
-msgstr ""
-"Aktiválta webhelye indexelésének blokkolását. Ha a webhely fejlesztés alatt "
-"áll, ez valószínűleg rendben van. Ellenkező esetben ellenőrizze a "
-"beállításokat."
+msgstr "Bekapcsolta webhelye indexelésének blokkolását. Ha webhelye fejlesztés alatt áll, ez valószínűleg normális. Ellenkező esetben ellenőrizze a beállításokat."
 
 #: src/Services/Admin/Notifications/Notifications.php:616
 msgid "Your site title is empty!"
@@ -6895,17 +6515,12 @@ msgid ""
 "Your Site Title is used by WordPress, your theme and your plugins including "
 "SEOPress. It is an essential component in the generation of title tags, but "
 "not only. Enter one!"
-msgstr ""
-"A webhely címét a WordPress, a témája és a bővítményei, köztük a SEOPress is"
-" használják. Alapvető elem a title tagek előállításában, és nem csak abban. "
-"Adjon meg egyet!"
+msgstr "A webhely címét a WordPress, a sablonja és a bővítményei, köztük a SEOPress is használják. Alapvető elem a title címkék előállításában, és nem csak abban. Adjon meg egyet!"
 
 #: src/Services/Admin/Notifications/Notifications.php:636
 msgid ""
 "Your permalinks are not SEO Friendly! Enable pretty permalinks to fix this."
-msgstr ""
-"A közvetlen linkek nem SEO-barátok! Engedélyezze a szép közvetlen linkeket a"
-" javításhoz."
+msgstr "A közvetlen hivatkozásai nem SEO-barátak! Kapcsolja be a beszédes közvetlen hivatkozásokat a probléma megoldásához."
 
 #: src/Services/Admin/Notifications/Notifications.php:637
 #: src/Services/Admin/Notifications/Notifications.php:660
@@ -6927,8 +6542,7 @@ msgstr "Az RSS-csatornája a teljes szöveget jeleníti meg!"
 #: src/Services/Admin/Notifications/Notifications.php:682
 msgid ""
 "You have activated Google Analytics tracking without adding identifiers!"
-msgstr ""
-"Engedélyezte a Google Analytics követést azonosítók hozzáadása nélkül!"
+msgstr "Bekapcsolta a Google Analytics-követést azonosítók hozzáadása nélkül!"
 
 #: src/Services/Admin/Notifications/Notifications.php:683
 msgid ""
@@ -6948,20 +6562,15 @@ msgid ""
 " comments. This can have a disastrous effect by creating a large number of "
 "poor quality pages, and slowing the Google bot unnecessarily, so your "
 "ranking in search results."
-msgstr ""
-"Ennek az opciónak az engedélyezése duplikált tartalmat hoz létre minden "
-"cikkhez az x hozzászóláson túl. Ez katasztrofális hatással lehet, mert nagy "
-"számú gyenge minőségű oldalt hoz létre, és feleslegesen lelassítja a Google "
-"botot, ami rontja a helyezését a keresési eredményekben."
+msgstr "Ennek az opciónak a bekapcsolása minden olyan cikknél duplikált tartalmat hoz létre, amelynél x-nél több hozzászólás van. Ez katasztrofális hatással járhat, mert nagyszámú gyenge minőségű oldalt hoz létre, és feleslegesen lelassítja a Google robotját, így ronthatja a keresési találatok közötti helyezését."
 
 #: src/Services/Admin/Notifications/Notifications.php:712
 msgid "Disable this!"
-msgstr "Tiltsa le ezt!"
+msgstr "Kikapcsolás!"
 
 #: src/Services/Admin/Notifications/Notifications.php:728
 msgid "Display more posts per page on homepage and archives"
-msgstr ""
-"Jelenítsen meg több bejegyzést oldalanként a kezdőlapon és az archívumokban"
+msgstr "Több bejegyzés megjelenítése oldalanként a kezdőlapon és az archívumokban"
 
 #: src/Services/Admin/Notifications/Notifications.php:729
 msgid ""
@@ -6969,26 +6578,18 @@ msgid ""
 "articles, it is recommended displaying more posts per page. This should not "
 "be a problem for your users. Using mobile, we prefer to scroll down rather "
 "than clicking on next page links."
-msgstr ""
-"Hogy csökkentse azoknak az oldalaknak a számát, amelyeket a keresőmotoroknak"
-" fel kell térképezniük az összes cikk megtalálásához, ajánlott több "
-"bejegyzést megjeleníteni oldalanként. Ez a felhasználók számára sem jelent "
-"problémát. Mobilon inkább görgetünk, mint a következő oldalra mutató "
-"hivatkozásokra kattintunk."
+msgstr "Hogy csökkentse azoknak az oldalaknak a számát, amelyeket a keresőmotoroknak fel kell térképezniük az összes cikk megtalálásához, ajánlott több bejegyzést megjeleníteni oldalanként. Ez a felhasználók számára sem jelent problémát. Mobilon inkább görgetünk, mint a következő oldalra mutató hivatkozásokra kattintunk."
 
 #: src/Services/Admin/Notifications/Notifications.php:751
 msgid "You don't have an XML Sitemap!"
-msgstr "Nincs XML webhelytérképe!"
+msgstr "Nincs XML-webhelytérképe!"
 
 #: src/Services/Admin/Notifications/Notifications.php:752
 msgid ""
 "XML Sitemaps are useful to facilitate the crawling of your content by search"
 " engine robots. Indirectly, this can benefit your ranking by reducing the "
 "crawl bugdet."
-msgstr ""
-"Az XML webhelytérképek megkönnyítik a keresőrobotok számára a tartalom "
-"feltérképezését. Közvetve ez javíthatja a helyezését a feltérképezési "
-"költségvetés csökkentésével."
+msgstr "Az XML-webhelytérképek megkönnyítik a keresőrobotok számára a tartalom feltérképezését. Közvetve ez javíthatja a helyezését a feltérképezési keret csökkentésével."
 
 #: src/Services/Admin/Notifications/Notifications.php:773
 msgid "Do you have a Google My Business page? It's free!"
@@ -6999,14 +6600,11 @@ msgid ""
 "Local Business websites should have a My Business page to improve visibility"
 " in search results. Click on the cross on the right to delete this "
 "notification if you are not concerned."
-msgstr ""
-"A helyi vállalkozások webhelyeinek érdemes My Business oldalt létrehozniuk a"
-" keresési eredményekben való láthatóság javításához. Ha nem érinti, "
-"kattintson a jobb oldali X-re az értesítés törléséhez."
+msgstr "A helyi vállalkozások webhelyeinek érdemes My Business oldalt létrehozniuk a keresési találatokban való láthatóság javításához. Ha ez nem érinti Önt, kattintson a jobb oldali X-re az értesítés törléséhez."
 
 #: src/Services/Admin/Notifications/Notifications.php:780
 msgid "Create your page now!"
-msgstr "Hozza létre az oldalát most!"
+msgstr "Oldal létrehozása most!"
 
 #: src/Services/Admin/Notifications/Notifications.php:795
 msgid "Add your site to Google. It's free!"
@@ -7017,22 +6615,19 @@ msgid ""
 "Is your brand new site online? So reference it as quickly as possible on "
 "Google to get your first visitors via Google Search Console. Already the "
 "case? Dismiss this alert."
-msgstr ""
-"Most indult az új webhelye? Regisztrálja minél gyorsabban a Google-ben, hogy"
-" megszerezze első látogatóit a Google Search Console segítségével. Már "
-"megtörtént? Vesse el ezt az értesítést."
+msgstr "Elérhető már az új webhelye? Vegye fel minél hamarabb a Google indexébe a Google Search Console segítségével, hogy megszerezhesse első látogatóit. Már megtette? Zárja be ezt az értesítést."
 
 #: src/Services/Admin/Notifications/Notifications.php:802
 msgid "Add your site to Search Console!"
-msgstr "Adja hozzá webhelyét a Search Console-hoz!"
+msgstr "Webhely hozzáadása a Search Console-hoz!"
 
 #: src/Services/Admin/Notifications/Notifications.php:934
 msgid "Dismiss"
-msgstr "Elvetés"
+msgstr "Bezárás"
 
 #: src/Services/Admin/Notifications/Notifications.php:952
 msgid "Migrate your SEO metadata and redirects from other plugins"
-msgstr "Migrálja SEO metaadatait és átirányításait más bővítményekből"
+msgstr "SEO-metaadatok és átirányítások áttelepítése más bővítményekből"
 
 #: src/Services/ContentAnalysis/GetContent.php:65
 #: src/Services/I18nUniversalMetabox.php:353
@@ -7063,7 +6658,7 @@ msgstr ""
 
 #: src/Services/ContentAnalysis/GetContent.php:99
 msgid "Get SEOPress PRO to add schemas now"
-msgstr "Szerezze be a SEOPress PRO-t, hogy most sémákat adhasson hozzá"
+msgstr "A SEOPress PRO beszerzése a sémák azonnali hozzáadásához"
 
 #: src/Services/ContentAnalysis/GetContent.php:137
 #: src/Services/I18nUniversalMetabox.php:215
@@ -7082,10 +6677,7 @@ msgid ""
 "Search engines love fresh content. Update regularly your articles without "
 "entirely rewriting your content and give them a boost in search rankings. "
 "SEOPress takes care of the technical part."
-msgstr ""
-"A keresőmotorok szeretik a friss tartalmat. Frissítse rendszeresen a cikkeit"
-" anélkül, hogy teljesen újraírná a tartalmat, és adjon nekik lökést a "
-"keresési rangsorban. A technikai részt a SEOPress intézi."
+msgstr "A keresőmotorok szeretik a friss tartalmat. Rendszeresen frissítse a cikkeit anélkül, hogy teljesen újraírná a tartalmat, így javíthatja a keresési helyezésüket. A technikai részt a SEOPress intézi."
 
 #: src/Services/ContentAnalysis/GetContent.php:179
 #: src/Services/I18nUniversalMetabox.php:310
@@ -7097,8 +6689,7 @@ msgstr "Szuper, egyik célkulcsszava szerepel a közvetlen linkjében."
 msgid ""
 "This is your homepage. This check doesn't apply here because there is no "
 "slug."
-msgstr ""
-"Ez a kezdőlapod. Ez az ellenőrzés itt nem alkalmazható, mert nincs slug."
+msgstr "Ez a kezdőlapja. Ez az ellenőrzés itt nem alkalmazható, mert nincs slug."
 
 #: src/Services/ContentAnalysis/GetContent.php:193
 #: src/Services/I18nUniversalMetabox.php:306
@@ -7141,10 +6732,7 @@ msgid ""
 "You should not use more than one H1 heading in your post content. The rule "
 "is simple: only one H1 for each web page. It is better for both SEO and "
 "accessibility. Below, the list:"
-msgstr ""
-"Ne használj egynél több H1 címsort a bejegyzésed tartalmában. A szabály "
-"egyszerű: weboldalanként csak egy H1. Ez jobb SEO és akadálymentesség "
-"szempontjából is. Alább a lista:"
+msgstr "Ne használjon egynél több H1-címsort a bejegyzés tartalmában. A szabály egyszerű: weboldalanként csak egy H1-címsort használjon. Ez a SEO és az akadálymentesség szempontjából is előnyösebb. Alább a lista:"
 
 #: src/Services/ContentAnalysis/GetContent.php:284
 msgid ""
@@ -7185,7 +6773,7 @@ msgstr "Egyik célkulcsszavad sem található a H3 (Címsor 3) címsorban."
 #: src/Services/ContentAnalysis/GetContent.php:420
 #: src/Services/I18nUniversalMetabox.php:109
 msgid "Target keywords were found in the Meta Title."
-msgstr "Célkulcsszavakat találtunk a Meta Title-ben."
+msgstr "Célkulcsszavakat találtunk a meta címben."
 
 #: src/Services/ContentAnalysis/GetContent.php:429
 #: src/Services/I18nUniversalMetabox.php:118
@@ -7195,11 +6783,11 @@ msgstr "Egyik célkulcsszavad sem található a Meta Title-ben."
 #: src/Services/ContentAnalysis/GetContent.php:437
 #: src/Services/I18nUniversalMetabox.php:122
 msgid "Your custom title is too long."
-msgstr "Az egyedi címed túl hosszú."
+msgstr "Az Ön egyéni címe túl hosszú."
 
 #: src/Services/ContentAnalysis/GetContent.php:446
 msgid "The length of your title is correct"
-msgstr "A címed hossza megfelelő"
+msgstr "Az Ön címének hossza megfelelő"
 
 #: src/Services/ContentAnalysis/GetContent.php:451
 #: src/Services/I18nUniversalMetabox.php:105
@@ -7214,7 +6802,7 @@ msgstr ""
 #: src/Services/ContentAnalysis/GetContent.php:492
 #: src/Services/I18nUniversalMetabox.php:132
 msgid "Target keywords were found in the Meta description."
-msgstr "Célkulcsszavakat találtunk a Meta description-ben."
+msgstr "Célkulcsszavakat találtunk a meta leírásban."
 
 #: src/Services/ContentAnalysis/GetContent.php:502
 #: src/Services/I18nUniversalMetabox.php:141
@@ -7224,12 +6812,12 @@ msgstr "Egyik célkulcsszavad sem található a Meta description-ben."
 #: src/Services/ContentAnalysis/GetContent.php:510
 #: src/Services/I18nUniversalMetabox.php:145
 msgid "You custom meta description is too long."
-msgstr "Az egyedi meta description túl hosszú."
+msgstr "Az Ön egyéni meta leírása túl hosszú."
 
 #: src/Services/ContentAnalysis/GetContent.php:519
 #: src/Services/I18nUniversalMetabox.php:149
 msgid "The length of your meta description is correct"
-msgstr "A meta description hossza megfelelő"
+msgstr "A meta leírás hossza megfelelő"
 
 #: src/Services/ContentAnalysis/GetContent.php:524
 #: src/Services/I18nUniversalMetabox.php:128
@@ -7242,13 +6830,13 @@ msgstr ""
 
 #: src/Services/ContentAnalysis/GetContent.php:559
 msgid "Open Graph Title"
-msgstr "Open Graph Title"
+msgstr "Open Graph cím"
 
 #. translators: %d number of OG:TITLE tags
 #: src/Services/ContentAnalysis/GetContent.php:568
 #, php-format
 msgid "We found %d og:title in your content."
-msgstr "A tartalmadban %d og:title található."
+msgstr "Az Ön tartalmában %d og:title található."
 
 #. translators: %d number of OG:TITLE tags
 #: src/Services/ContentAnalysis/GetContent.php:569
@@ -7257,10 +6845,7 @@ msgid ""
 "You should not use more than one og:title in your post content to avoid "
 "conflicts when sharing on social networks. Facebook will take the last "
 "og:title tag from your source code. Below, the list:"
-msgstr ""
-"Ne használj egynél több og:title elemet a bejegyzésed tartalmában, hogy "
-"elkerüld az ütközéseket a közösségi megosztáskor. A Facebook a forráskódból "
-"az utolsó og:title taget veszi figyelembe. Alább a lista:"
+msgstr "Ne használjon egynél több og:title címkét a bejegyzés tartalmában, hogy elkerülje a közösségi hálózatokon történő megosztáskor fellépő ütközéseket. A Facebook a forráskódban szereplő utolsó og:title címkét veszi figyelembe. Alább a lista:"
 
 #: src/Services/ContentAnalysis/GetContent.php:575
 msgid "Your Open Graph Title tag is empty!"
@@ -7268,7 +6853,7 @@ msgstr "Az Open Graph Title tag üres!"
 
 #: src/Services/ContentAnalysis/GetContent.php:580
 msgid "We found an Open Graph Title tag in your source code."
-msgstr "Találtunk Open Graph Title taget a forráskódban."
+msgstr "Találtunk Open Graph-címhez tartozó címkét a forráskódban."
 
 #: src/Services/ContentAnalysis/GetContent.php:598
 msgid "Your Open Graph Title is missing!"
@@ -7276,13 +6861,13 @@ msgstr "Hiányzik az Open Graph Title!"
 
 #: src/Services/ContentAnalysis/GetContent.php:617
 msgid "Open Graph Description"
-msgstr "Open Graph Description"
+msgstr "Open Graph leírás"
 
 #. translators: %d number of OG:DESCRIPTION tags
 #: src/Services/ContentAnalysis/GetContent.php:626
 #, php-format
 msgid "We found %d og:description in your content."
-msgstr "A tartalmadban %d og:description található."
+msgstr "Az Ön tartalmában %d og:description található."
 
 #. translators: %d number of OG:DESCRIPTION tags
 #: src/Services/ContentAnalysis/GetContent.php:627
@@ -7291,10 +6876,7 @@ msgid ""
 "You should not use more than one og:description in your post content to "
 "avoid conflicts when sharing on social networks. Facebook will take the last"
 " og:description tag from your source code. Below, the list:"
-msgstr ""
-"Ne használj egynél több og:description elemet a bejegyzésed tartalmában, "
-"hogy elkerüld az ütközéseket a közösségi megosztáskor. A Facebook a "
-"forráskódból az utolsó og:description taget veszi figyelembe. Alább a lista:"
+msgstr "Ne használjon egynél több og:description címkét a bejegyzés tartalmában, hogy elkerülje a közösségi hálózatokon történő megosztáskor fellépő ütközéseket. A Facebook a forráskódban szereplő utolsó og:description címkét veszi figyelembe. Alább a lista:"
 
 #: src/Services/ContentAnalysis/GetContent.php:633
 msgid "Your Open Graph Description tag is empty!"
@@ -7302,7 +6884,7 @@ msgstr "Az Open Graph Description tag üres!"
 
 #: src/Services/ContentAnalysis/GetContent.php:638
 msgid "We found an Open Graph Description tag in your source code."
-msgstr "Találtunk Open Graph Description taget a forráskódban."
+msgstr "Találtunk Open Graph-leíráshoz tartozó címkét a forráskódban."
 
 #: src/Services/ContentAnalysis/GetContent.php:656
 msgid "Your Open Graph Description is missing!"
@@ -7310,13 +6892,13 @@ msgstr "Hiányzik az Open Graph Description!"
 
 #: src/Services/ContentAnalysis/GetContent.php:676
 msgid "Open Graph Image"
-msgstr "Open Graph Image"
+msgstr "Open Graph kép"
 
 #. translators: %d number of OG:IMAGE tags
 #: src/Services/ContentAnalysis/GetContent.php:684
 #, php-format
 msgid "We found %d og:image in your content."
-msgstr "A tartalmadban %d og:image található."
+msgstr "Az Ön tartalmában %d og:image található."
 
 #: src/Services/ContentAnalysis/GetContent.php:690
 msgid "Your Open Graph Image tag is empty!"
@@ -7334,7 +6916,7 @@ msgstr "Open Graph URL"
 #: src/Services/ContentAnalysis/GetContent.php:728
 #, php-format
 msgid "We found %d og:url in your content."
-msgstr "A tartalmadban %d og:url található."
+msgstr "Az Ön tartalmában %d og:url található."
 
 #. translators: %d number of OG:URL tags
 #: src/Services/ContentAnalysis/GetContent.php:729
@@ -7343,10 +6925,7 @@ msgid ""
 "You should not use more than one og:url in your post content to avoid "
 "conflicts when sharing on social networks. Facebook will take the last "
 "og:url tag from your source code. Below, the list:"
-msgstr ""
-"Ne használj egynél több og:url elemet a bejegyzésed tartalmában, hogy "
-"elkerüld az ütközéseket a közösségi megosztáskor. A Facebook a forráskódból "
-"az utolsó og:url taget veszi figyelembe. Alább a lista:"
+msgstr "Ne használjon egynél több og:url címkét a bejegyzés tartalmában, hogy elkerülje a közösségi hálózatokon történő megosztáskor fellépő ütközéseket. A Facebook a forráskódban szereplő utolsó og:url címkét veszi figyelembe. Alább a lista:"
 
 #: src/Services/ContentAnalysis/GetContent.php:735
 msgid "Your Open Graph URL tag is empty!"
@@ -7354,7 +6933,7 @@ msgstr "Az Open Graph URL tag üres!"
 
 #: src/Services/ContentAnalysis/GetContent.php:740
 msgid "We found an Open Graph URL tag in your source code."
-msgstr "Találtunk Open Graph URL taget a forráskódban."
+msgstr "Találtunk egy Open Graph URL-címkét a forráskódban."
 
 #: src/Services/ContentAnalysis/GetContent.php:758
 msgid "Your Open Graph URL is missing!"
@@ -7362,13 +6941,13 @@ msgstr "Hiányzik az Open Graph URL!"
 
 #: src/Services/ContentAnalysis/GetContent.php:777
 msgid "Open Graph Site Name"
-msgstr "Open Graph Site Name"
+msgstr "Open Graph webhelynév"
 
 #. translators: %d number of OG:SITE_NAME tags
 #: src/Services/ContentAnalysis/GetContent.php:786
 #, php-format
 msgid "We found %d og:site_name in your content."
-msgstr "A tartalmadban %d og:site_name található."
+msgstr "Az Ön tartalmában %d og:site_name található."
 
 #. translators: %d number of OG:SITE_NAME tags
 #: src/Services/ContentAnalysis/GetContent.php:787
@@ -7377,10 +6956,7 @@ msgid ""
 "You should not use more than one og:site_name in your post content to avoid "
 "conflicts when sharing on social networks. Facebook will take the last "
 "og:site_name tag from your source code. Below, the list:"
-msgstr ""
-"Ne használj egynél több og:site_name elemet a bejegyzésed tartalmában, hogy "
-"elkerüld az ütközéseket a közösségi megosztáskor. A Facebook a forráskódból "
-"az utolsó og:site_name taget veszi figyelembe. Alább a lista:"
+msgstr "Ne használjon egynél több og:site_name címkét a bejegyzés tartalmában, hogy elkerülje a közösségi hálózatokon történő megosztáskor fellépő ütközéseket. A Facebook a forráskódban szereplő utolsó og:site_name címkét veszi figyelembe. Alább a lista:"
 
 #: src/Services/ContentAnalysis/GetContent.php:793
 msgid "Your Open Graph Site Name tag is empty!"
@@ -7458,7 +7034,7 @@ msgstr "Hiányzik az X Description!"
 #: src/Services/ContentAnalysis/GetContent.php:952
 #: src/Services/I18nUniversalMetabox.php:40
 msgid "X Image"
-msgstr "X Image"
+msgstr "X kép"
 
 #. translators: %d number of TWITTER:IMAGE tags
 #: src/Services/ContentAnalysis/GetContent.php:960
@@ -7510,9 +7086,7 @@ msgstr ""
 msgid ""
 "<strong>nofollow</strong> is off. Search engines will follow links on this "
 "page."
-msgstr ""
-"<strong>nofollow</strong> ki van kapcsolva. A keresőmotorok követni fogják "
-"az ezen az oldalon lévő hivatkozásokat."
+msgstr "<strong>nofollow</strong> ki van kapcsolva. A keresőmotorok követni fogják az ezen az oldalon lévő hivatkozásokat."
 
 #: src/Services/ContentAnalysis/GetContent.php:1048
 msgid ""
@@ -7544,9 +7118,7 @@ msgstr ""
 msgid ""
 "<strong>nosnippet</strong> is off. Search engines will display a snippet of "
 "this page in search results."
-msgstr ""
-"<strong>nosnippet</strong> ki van kapcsolva. A keresőmotorok megjelenítenek "
-"kivonatot erről az oldalról a találati listában."
+msgstr "<strong>nosnippet</strong> ki van kapcsolva. A keresőmotorok megjelenítik ennek az oldalnak a kódrészletét a keresési találatokban."
 
 #: src/Services/ContentAnalysis/GetContent.php:1066
 #: src/Services/I18nUniversalMetabox.php:156
@@ -7599,9 +7171,7 @@ msgstr ""
 msgid ""
 "We found %d links with nofollow attribute in your page. Do not overuse "
 "nofollow attribute in links. Below, the list:"
-msgstr ""
-"Találtunk %d nofollow attribútummal rendelkező hivatkozást az oldalán. Ne "
-"használja túl a nofollow attribútumot a hivatkozásokban. Alább a lista:"
+msgstr "Találtunk %d nofollow attribútummal rendelkező linket az oldalán. Ne használja túl gyakran a nofollow attribútumot a linkeken. Alább a lista:"
 
 #: src/Services/ContentAnalysis/GetContent.php:1195
 #: src/Services/I18nUniversalMetabox.php:322
@@ -7615,12 +7185,7 @@ msgid ""
 "normal to make links between different websites. However, avoid making links"
 " to low quality sites, SPAM... If you are not sure about the quality of a "
 "site, add the attribute \"nofollow\" to your link."
-msgstr ""
-"Az internet a hiperhivatkozás elvére épül. Ezért teljesen természetes, hogy "
-"különböző webhelyek között hivatkozásokat hozunk létre. Ugyanakkor kerülje "
-"az alacsony minőségű, SPAM oldalokra mutató hivatkozásokat... Ha nem biztos "
-"egy webhely minőségében, adja hozzá a \"nofollow\" attribútumot a "
-"hivatkozáshoz."
+msgstr "Az internet a linkek elvére épül. Ezért teljesen természetes, hogy különböző honlapok között linkeket hozunk létre. Ugyanakkor kerülje az alacsony minőségű, SPAM-oldalakra mutató linkeket... Ha nem biztos egy webhely minőségében, adja hozzá a „nofollow” attribútumot a linkhez."
 
 #. translators: %d number of outbound links
 #. translators: %s number of outbound links
@@ -7664,7 +7229,7 @@ msgstr "Találtunk %s belső hivatkozást erre az oldalra."
 #: src/Services/ContentAnalysis/GetContent.php:1285
 #, php-format
 msgid "edit %s"
-msgstr "szerkesztés %s"
+msgstr "Szerkesztés: %s"
 
 #: src/Services/ContentAnalysis/GetContent.php:1290
 #: src/Services/I18nUniversalMetabox.php:290
@@ -7690,8 +7255,8 @@ msgstr ""
 msgid "We found %s canonical URL in your source code. Below, the list:"
 msgid_plural ""
 "We found %s canonical URLs in your source code. Below, the list:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s kanonikus URL-t találtunk a forráskódban. A lista alább látható:"
+msgstr[1] "%s kanonikus URL-t találtunk a forráskódban. A lista alább látható:"
 
 #: src/Services/ContentAnalysis/GetContent.php:1337
 #: src/Services/I18nUniversalMetabox.php:347
@@ -7745,11 +7310,11 @@ msgstr "Súlyossági fok: %s"
 #: src/Services/HTMLSitemap/HTMLSitemapService.php:161
 #, php-format
 msgid "View all %s"
-msgstr "Mind az %s megtekintése"
+msgstr "Az összes %s megtekintése"
 
 #: src/Services/I18nUniversalMetabox.php:17
 msgid "pixels"
-msgstr "képpont"
+msgstr "képpontok"
 
 #: src/Services/I18nUniversalMetabox.php:18
 msgid "Save"
@@ -7762,7 +7327,7 @@ msgstr "Igen"
 #: src/Services/I18nUniversalMetabox.php:26
 #: src/Services/I18nUniversalMetabox.php:381
 msgid "maximum limit"
-msgstr "maximális korlát"
+msgstr "felső határ"
 
 #: src/Services/I18nUniversalMetabox.php:27
 msgid "Choose an image"
@@ -7888,10 +7453,7 @@ msgstr ""
 msgid ""
 "is on! Google will not index your images on this page (but if someone makes "
 "a direct link to one of your image in this page, it will be indexed)."
-msgstr ""
-"be van kapcsolva! A Google nem indexeli az ezen az oldalon található képeit "
-"(de ha valaki közvetlen hivatkozást hoz létre az oldal egyik képére, azt "
-"indexelni fogja)."
+msgstr "be van kapcsolva! A Google nem indexeli az ezen az oldalon található képeit (de ha valaki közvetlen hivatkozást hoz létre az oldal egyik képére, azt indexelni fogja)."
 
 #: src/Services/I18nUniversalMetabox.php:185
 msgid "is off. Google will index the images on this page."
@@ -7902,17 +7464,13 @@ msgstr ""
 msgid ""
 "is on! Search engines will not display a snippet of this page in search "
 "results."
-msgstr ""
-"be van kapcsolva! A keresőmotorok nem jelenítenek meg kivonatot erről az "
-"oldalról a találati listában."
+msgstr "be van kapcsolva! A keresőmotorok nem jelenítenek meg kódrészletet erről az oldalról a keresési találatokban."
 
 #: src/Services/I18nUniversalMetabox.php:193
 msgid ""
 "is off. Search engines will display a snippet of this page in search "
 "results."
-msgstr ""
-"ki van kapcsolva. A keresőmotorok kivonatot jelenítenek meg erről az "
-"oldalról a találati listában."
+msgstr "ki van kapcsolva. A keresőmotorok kódrészletet jelenítenek meg erről az oldalról a keresési találatokban."
 
 #. translators: %1$s heading name, eg: h2, %2$s heading number, eg: 2
 #: src/Services/I18nUniversalMetabox.php:228
@@ -7968,9 +7526,7 @@ msgstr "Találtunk %s belső hivatkozást az oldalán. Alább a lista:"
 msgid ""
 "We found %s links with nofollow attribute in your page. Do not overuse "
 "nofollow attribute in links. Below, the list:"
-msgstr ""
-"Találtunk %s nofollow attribútumú hivatkozást az oldalán. Ne használja "
-"túlzottan a nofollow attribútumot a hivatkozásokban. Alább a lista:"
+msgstr "Találtunk %s nofollow attribútumú hivatkozást az oldalán. Ne használja túlzottan a nofollow attribútumot a hivatkozásokban. Alább a lista:"
 
 #. translators: %d number of times a canonical tag is found, singular form
 #. only
@@ -7983,7 +7539,7 @@ msgstr "Találtunk %d kanonikus URL-t a forráskódjában. Alább a lista:"
 #: src/Services/I18nUniversalMetabox.php:346
 #, php-format
 msgid "We found %d canonical URLs in your source code. Below, the list:"
-msgstr "Találtunk %d kanonikus URL-eket a forráskódjában. Alább a lista:"
+msgstr "Találtunk %d kanonikus URL-t a forráskódjában. Alább a lista:"
 
 #: src/Services/I18nUniversalMetabox.php:351
 msgid "Structured Data Types (schemas)"
@@ -8037,9 +7593,7 @@ msgstr "Meta cím"
 msgid ""
 "A meta description tag should generally inform and interest users with a "
 "short, relevant summary of what a particular page is about."
-msgstr ""
-"A meta leírás címke általában rövid, releváns összefoglalóval tájékoztatja "
-"és érdekli a felhasználókat arról, miről szól az adott oldal."
+msgstr "A meta leírás címkének általában rövid, releváns összefoglalóval kell tájékoztatnia a felhasználókat az adott oldal tartalmáról, és fel kell keltenie az érdeklődésüket."
 
 #: src/Services/I18nUniversalMetabox.php:390
 msgid ""
@@ -8053,9 +7607,7 @@ msgstr ""
 msgid ""
 "There's no limit on how long a meta description can be, but the search "
 "result snippets are truncated as needed, typically to fit the device width."
-msgstr ""
-"A meta leírás hossza nincs korlátozva, de a találati kivonatok szükség "
-"szerint lerövidülnek, jellemzően az eszköz szélességéhez igazodva."
+msgstr "A meta leírás hossza nincs korlátozva, de a keresési találatokban megjelenő kódrészletek szükség szerint lerövidülnek, jellemzően az eszköz szélességéhez igazodva."
 
 #: src/Services/I18nUniversalMetabox.php:392
 msgid "Enter your description"
@@ -8149,7 +7701,7 @@ msgstr "Kurzus mód"
 
 #: src/Services/I18nUniversalMetabox.php:442
 msgid "Location"
-msgstr "Helyszín"
+msgstr "Hely"
 
 #: src/Services/I18nUniversalMetabox.php:443
 msgid "Duration"
@@ -8201,25 +7753,18 @@ msgstr "Kérdés hozzáadása"
 msgid ""
 "You cannot uncheck a parameter? This is normal, and it's most likely defined"
 " in the <a href='%s'>global settings of the plugin.</a>"
-msgstr ""
-"Nem tudja kikapcsolni valamelyik paramétert? Ez normális, és nagy "
-"valószínűséggel van meghatározva a <a href='%s'>bővítmény globális "
-"beállításaiban.</a>"
+msgstr "Nem tudja törölni a jelölést valamelyik paraméter mellől? Ez normális, a paraméter valószínűleg a <a href='%s'>bővítmény globális beállításaiban van meghatározva.</a>"
 
 #: src/Services/I18nUniversalMetabox.php:489
 msgid ""
 "Do not display this page in search engine results / XML - HTML sitemaps"
-msgstr ""
-"Ne jelenjen meg ez az oldal a keresőmotorok találatai között / XML - HTML "
-"webhelytérképekben"
+msgstr "Az oldal megjelenítésének letiltása a keresőmotorok találatai között / az XML- és HTML-webhelytérképekben"
 
 #: src/Services/I18nUniversalMetabox.php:494
 msgid ""
 "By checking this option, you will add a meta robots tag with the value "
 "\"noindex\"."
-msgstr ""
-"Ennek az opciónak a bejelölésével \"noindex\" értékű meta robots címkét ad "
-"hozzá."
+msgstr "Ennek az opciónak a bejelölésével „noindex” értékű meta robots címkét ad hozzá."
 
 #: src/Services/I18nUniversalMetabox.php:498
 msgid "Search engines will not index this URL in the search results."
@@ -8227,15 +7772,13 @@ msgstr "A keresőmotorok nem indexelik ezt az URL-t a találatok között."
 
 #: src/Services/I18nUniversalMetabox.php:502
 msgid "Do not follow links for this page"
-msgstr "Ne kövesse ennek az oldalnak a hivatkozásait"
+msgstr "Az oldalról induló linkek követésének letiltása"
 
 #: src/Services/I18nUniversalMetabox.php:504
 msgid ""
 "By checking this option, you will add a meta robots tag with the value "
 "\"nofollow\"."
-msgstr ""
-"Ennek az opciónak a bejelölésével \"nofollow\" értékű meta robots címkét ad "
-"hozzá."
+msgstr "Ennek az opciónak a bejelölésével „nofollow” értékű meta robots címkét ad hozzá."
 
 #: src/Services/I18nUniversalMetabox.php:508
 msgid "Search engines will not follow links from this URL."
@@ -8243,27 +7786,23 @@ msgstr "A keresőmotorok nem követik az erről az URL-ről kiinduló linkeket."
 
 #: src/Services/I18nUniversalMetabox.php:512
 msgid "Do not display a description in search results for this page"
-msgstr "Ne jelenítsen meg leírást a keresési találatokban ehhez az oldalhoz"
+msgstr "Az oldal leírásának elrejtése a keresési találatokban"
 
 #: src/Services/I18nUniversalMetabox.php:521
 msgid "Do not index images for this page"
-msgstr "Ne indexelje az ehhez az oldalhoz tartozó képeket"
+msgstr "Az oldal képeinek kizárása az indexelésből"
 
 #: src/Services/I18nUniversalMetabox.php:523
 msgid ""
 "By checking this option, you will add a meta robots tag with the value "
 "\"noimageindex\"."
-msgstr ""
-"Ennek az opciónak a bejelölésével egy \"noimageindex\" értékű meta robots "
-"címkét ad hozzá."
+msgstr "Ennek az opciónak a bejelölésével egy „noimageindex” értékű meta robots címkét ad hozzá."
 
 #: src/Services/I18nUniversalMetabox.php:527
 msgid ""
 "Note that your images can always be indexed if they are linked from other "
 "pages."
-msgstr ""
-"Ne feledje, hogy a képei mindig indexelhetők, ha más oldalakról hivatkoznak "
-"rájuk."
+msgstr "Ne feledje, hogy a képei mindig indexelhetők, ha más oldalak linkjei mutatnak rájuk."
 
 #: src/Services/I18nUniversalMetabox.php:533
 msgid ""
@@ -8411,15 +7950,15 @@ msgstr "Érvénytelen URL."
 
 #: src/Services/I18nUniversalMetabox.php:607
 msgid "Unknown user agent."
-msgstr "Ismeretlen user agent."
+msgstr "Ismeretlen felhasználói ügynök."
 
 #: src/Services/I18nUniversalMetabox.php:608
 msgid "Googlebot desktop"
-msgstr "Googlebot asztali"
+msgstr "Asztali Googlebot"
 
 #: src/Services/I18nUniversalMetabox.php:609
 msgid "Googlebot smartphone"
-msgstr "Googlebot okostelefon"
+msgstr "Okostelefonos Googlebot"
 
 #: src/Services/I18nUniversalMetabox.php:610
 msgid ""
@@ -8442,9 +7981,7 @@ msgstr "Nem áll rendelkezésre adat"
 msgid ""
 "For some reason we couldn't retrieve the page or test its mobile-"
 "friendliness. Please wait a bit and try again."
-msgstr ""
-"Valamilyen okból nem tudtuk lekérni az oldalt vagy tesztelni a "
-"mobilbarátságát. Kérjük, várjon egy kicsit, majd próbálja újra."
+msgstr "Valamilyen okból nem tudtuk lekérni az oldalt, illetve tesztelni, hogy mobilbarát-e. Kérjük, várjon egy kicsit, majd próbálja újra."
 
 #: src/Services/I18nUniversalMetabox.php:620
 msgid "Page is mobile friendly"
@@ -8508,7 +8045,7 @@ msgstr "Engedélyezett az indexelés?"
 
 #: src/Services/I18nUniversalMetabox.php:643
 msgid "User-declared canonical"
-msgstr "Felhasználó által megadott kanonikus"
+msgstr "A felhasználó által megadott kanonikus URL"
 
 #: src/Services/I18nUniversalMetabox.php:644
 msgid "Google-selected canonical"
@@ -8560,7 +8097,7 @@ msgstr ""
 
 #: src/Services/I18nUniversalMetabox.php:672
 msgid "No suggestion of internal links."
-msgstr "Nincs belső hivatkozási javaslat."
+msgstr "Nincs javaslat belső linkekre."
 
 #: src/Services/I18nUniversalMetabox.php:673
 msgid "Link copied in the clipboard"
@@ -8670,11 +8207,7 @@ msgid ""
 " sorting or filtering of list pages do not make the page unique (for "
 "example, sorting by price or filtering by item color). The canonical can be "
 "in a different domain than a duplicate."
-msgstr ""
-"Vegye figyelembe, hogy az oldalaknak nem kell teljesen azonosnak lenniük; a "
-"listázóoldalak rendezésének vagy szűrésének kisebb módosításai nem teszik "
-"egyedivé az oldalt (például ár szerinti rendezés vagy termékszín szerinti "
-"szűrés). A kanonikus lehet a duplikátumtól eltérő domainen is."
+msgstr "Vegye figyelembe, hogy az oldalaknak nem kell teljesen azonosnak lenniük; a listázóoldalak rendezésének vagy szűrésének kisebb módosításai nem teszik egyedivé az oldalt (például ár szerinti rendezés vagy termékszín szerinti szűrés). A kanonikus URL a duplikált oldalétól eltérő domainhez is tartozhat."
 
 #: src/Services/Settings/Roles/SectionPagesSEOPress.php:36
 msgid "Check a user role to authorized it to edit a specific SEO page."
@@ -8840,7 +8373,7 @@ msgstr "Termék ára"
 
 #: src/Tags/WooCommerce/PriceValidDate.php:15
 msgid "Product Date On Sale To"
-msgstr "Termék akció vége dátuma"
+msgstr "A termék akciójának befejező dátuma"
 
 #: src/Tags/WooCommerce/SingleCategory.php:15
 msgid "Product Category"
@@ -8848,7 +8381,7 @@ msgstr "Termékkategória"
 
 #: src/Tags/WooCommerce/SinglePrice.php:15
 msgid "Product Price With Taxes"
-msgstr "Termék ára adókkal"
+msgstr "Termék ára adókkal együtt"
 
 #: src/Tags/WooCommerce/SinglePriceExcludeTax.php:15
 msgid "Product Price Taxes Excluded"
@@ -8923,7 +8456,7 @@ msgstr "UL"
 
 #: public/editor/blocks/faq/index.js:1
 msgid "Title Wrapper"
-msgstr "Cím címkéje"
+msgstr "Címet körülvevő HTML-elem"
 
 #: public/editor/blocks/faq/index.js:1
 msgctxt "H2 title tag"
@@ -8994,7 +8527,7 @@ msgstr "GYIK-séma engedélyezése"
 
 #: public/editor/blocks/faq/index.js:1
 msgid "Enable accordion"
-msgstr "Accordion engedélyezése"
+msgstr "Harmonika bekapcsolása"
 
 #: public/editor/blocks/faq/index.js:1
 msgid "Question..."
@@ -9020,9 +8553,7 @@ msgstr "Megjelenítendő bejegyzéstípusok"
 msgid ""
 "By default, if you have not selected any post types below, we’ll "
 "automatically take the ones set from the Sitemap setting page."
-msgstr ""
-"Alapértelmezés szerint, ha alább nem választ ki bejegyzéstípusokat, "
-"automatikusan a Webhelytérkép beállítások oldalán megadottakat használjuk."
+msgstr "Alapértelmezés szerint, ha alább nem választ ki bejegyzéstípusokat, automatikusan a webhelytérkép beállítási oldalán megadottakat használjuk."
 
 #: public/editor/blocks/sitemap/index.js:1
 msgid "Sitemap"
@@ -9045,10 +8576,7 @@ msgid ""
 "It looks like the Sitemap feature is not enabled from your SEO settings. You"
 " must activate it to use this block. Make sure the HTML sitemap option is "
 "also enabled."
-msgstr ""
-"Úgy tűnik, a webhelytérkép funkció nincs engedélyezve az SEO-beállításokban."
-" A blokk használatához aktiválnia kell. Győződjön meg róla, hogy a HTML "
-"webhelytérkép opció is engedélyezve van."
+msgstr "Úgy tűnik, a webhelytérkép-funkció nincs bekapcsolva az SEO-beállításokban. A blokk használatához be kell kapcsolnia. Győződjön meg róla, hogy a HTML-webhelytérkép lehetőség is be van kapcsolva."
 
 #: public/editor/blocks/sitemap/index.js:1
 msgid "Review settings"

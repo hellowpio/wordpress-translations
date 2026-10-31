@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Grid Builder - Elementor 1.2.2\n"
+"Project-Id-Version: WP Grid Builder - Elementor 1.4.0\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:51:06+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:09+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,33 +18,32 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: WP Grid Builder - Elementor\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.2.2\n"
+"X-Plugin-Version: 1.4.0\n"
 
 #. Plugin Name of the plugin
-#: wp-grid-builder-elementor.php
+#: wp-grid-builder-elementor.php:11
 msgid "WP Grid Builder - Elementor"
 msgstr "WP Grid Builder - Elementor"
 
 #. Plugin URI of the plugin
 #. Author URI of the plugin
-#: wp-grid-builder-elementor.php
+#: wp-grid-builder-elementor.php:12 wp-grid-builder-elementor.php:16
 msgid "https://www.wpgridbuilder.com"
 msgstr "https://www.wpgridbuilder.com"
 
 #. Description of the plugin
-#: wp-grid-builder-elementor.php
+#: wp-grid-builder-elementor.php:13
 msgid "Integrate WP Grid Builder with Elementor plugin."
 msgstr "Integrálja a WP Grid Buildert az Elementor bővítménnyel."
 
 #. Author of the plugin
-#: wp-grid-builder-elementor.php
+#: wp-grid-builder-elementor.php:15
 msgid "Loïc Blascos"
 msgstr "Loïc Blascos"
 
-#: includes/class-editor.php:206 includes/widgets/class-facet.php:224
-#: includes/widgets/class-grid.php:227
+#: includes/class-editor.php:206 includes/widgets/class-grid.php:226
 msgid "Please wait, loading content..."
-msgstr "Kérjük, várjon, tartalom betöltése..."
+msgstr "Kérjük, várjon, amíg betöltődik a tartalom..."
 
 #: includes/class-editor.php:207
 msgid "No content found in facet."
@@ -58,25 +57,26 @@ msgstr "Sablonok"
 msgid "Grids"
 msgstr "Rácsok"
 
-#: includes/class-extend.php:67 includes/controls/pagination.php:23
+#: includes/class-extend.php:69 includes/controls/pagination.php:23
 msgid "Pagination"
 msgstr "Lapozás"
 
 #. translators: %s: Widget ID.
-#: includes/class-extend.php:101
+#: includes/class-extend.php:103
 #, php-format
 msgid "Widget ID: <strong>%s</strong>"
 msgstr "Widget azonosító: <strong>%s</strong>"
 
-#: includes/class-extend.php:111
+#: includes/class-extend.php:113 includes/class-extend.php:243
 msgid "Fading Animation"
 msgstr "Halványítás animáció"
 
-#: includes/class-extend.php:143
+#: includes/class-extend.php:145 includes/class-extend.php:245
 msgid "No Results Message"
-msgstr "Nincs találat üzenet"
+msgstr "Üzenet, ha nincs találat"
 
-#: includes/class-extend.php:145 includes/class-extend.php:146
+#: includes/class-extend.php:147 includes/class-extend.php:148
+#: includes/class-extend.php:172 includes/class-extend.php:246
 msgid "Sorry, no results match your search criteria."
 msgstr "Sajnáljuk, nincs a keresési feltételeknek megfelelő találat."
 
@@ -103,7 +103,7 @@ msgstr "Balra"
 #: includes/controls/range.php:289 includes/controls/result-count.php:53
 #: includes/controls/title.php:47 includes/controls/toggle.php:42
 msgid "Center"
-msgstr "Középre"
+msgstr "Közép"
 
 #: includes/controls/button.php:46 includes/controls/counter.php:40
 #: includes/controls/geolocation.php:163 includes/controls/list.php:75
@@ -209,7 +209,7 @@ msgstr "Doboz árnyék"
 #: includes/controls/select.php:758 includes/controls/selection.php:114
 #: includes/controls/toggle.php:115
 msgid "Hover"
-msgstr "Lebegés"
+msgstr "Rámutatás"
 
 #: includes/controls/button.php:171 includes/controls/button.php:225
 #: includes/controls/checkbox.php:120 includes/controls/checkbox.php:171
@@ -322,7 +322,7 @@ msgstr "Színminta"
 
 #: includes/controls/color.php:33
 msgid "Swatch Size"
-msgstr "Minta mérete"
+msgstr "Színminta mérete"
 
 #: includes/controls/color.php:54
 msgctxt "Color swatch state"
@@ -332,7 +332,7 @@ msgstr "Normál"
 #: includes/controls/color.php:72
 msgctxt "Color swatch state"
 msgid "Hover"
-msgstr "Lebegés"
+msgstr "Rámutatás"
 
 #: includes/controls/color.php:101
 msgctxt "Color swatch state"
@@ -365,10 +365,11 @@ msgid ""
 "The widget ID can be found when editing a widget under WP Grid Builder tab. "
 "It allows to filter a widget that is not present in the editor but on the "
 "frontend."
-msgstr ""
-"A widget ID a WP Grid Builder fül alatt, a widget szerkesztésekor található "
-"meg. Ez lehetővé teszi egy olyan widget szűrését, amely nincs jelen a "
-"szerkesztőben, de a frontenden."
+msgstr "A widget ID a widget szerkesztésekor, a WP Grid Builder fülön található. Ez lehetővé teszi olyan widget szűrését, amely a szerkesztőben nem, a weboldalon viszont megjelenik."
+
+#: includes/controls/facet.php:79
+msgid "Select a style"
+msgstr "Stílus kiválasztása"
 
 #: includes/controls/geolocation.php:22
 msgid "Locate Me Button"
@@ -403,7 +404,7 @@ msgstr "Szín"
 
 #: includes/controls/geolocation.php:140
 msgid "Radius Control"
-msgstr "Sugár vezérlő"
+msgstr "Sugárvezérlő"
 
 #: includes/controls/grid.php:28
 msgid "Select a grid"
@@ -411,7 +412,7 @@ msgstr "Válasszon egy rácsot"
 
 #: includes/controls/grid.php:41
 msgid "Archive Template"
-msgstr "Archívum sablon"
+msgstr "Archívumsablon"
 
 #: includes/controls/grid.php:51
 msgid ""
@@ -535,7 +536,7 @@ msgstr "Pontok"
 
 #: includes/controls/radio.php:22
 msgid "Radio"
-msgstr "Rádiógomb"
+msgstr "Választógomb"
 
 #: includes/controls/radio.php:33
 msgid "Radio Size"
@@ -559,7 +560,7 @@ msgstr "Tartomány"
 
 #: includes/controls/range.php:36
 msgid "Track"
-msgstr "Sáv"
+msgstr "Követés"
 
 #: includes/controls/range.php:43 includes/controls/range.php:112
 #: includes/controls/range.php:208
@@ -621,15 +622,13 @@ msgstr "Elválasztó színe"
 
 #: includes/controls/select.php:432
 msgid "Select Loader"
-msgstr "Betöltő kiválasztása"
+msgstr "Kiválasztómező betöltésjelzője"
 
 #: includes/controls/select.php:444
 msgid ""
 "These settings are only applied for the asynchronous combobox (facet "
 "settings)."
-msgstr ""
-"Ezek a beállítások csak az aszinkron comboboxra vonatkoznak (facet "
-"settings)."
+msgstr "Ezek a beállítások csak az aszinkron kombinált listamezőre (szűrőbeállítások) vonatkoznak."
 
 #: includes/controls/select.php:523
 msgid "Selected Values"
@@ -637,7 +636,7 @@ msgstr "Kiválasztott értékek"
 
 #: includes/controls/select.php:535 includes/controls/select.php:667
 msgid "These settings are only applied for the combobox (facet settings)."
-msgstr "Ezek a beállítások csak a comboboxra vonatkoznak (facet settings)."
+msgstr "Ezek a beállítások csak a kombinált listára vonatkoznak (a szűrő beállításainál)."
 
 #: includes/controls/select.php:552 includes/controls/select.php:605
 msgid "Label Color"
@@ -665,7 +664,7 @@ msgstr "Váltógomb"
 
 #: includes/controls/treeview.php:22
 msgid "Treeview Buttons"
-msgstr "Fastruktúra gombok"
+msgstr "Fanézet gombjai"
 
 #: includes/controls/treeview.php:33
 msgid "Button Size"
@@ -681,19 +680,15 @@ msgstr "Kibontott"
 
 #: includes/widgets/class-facet.php:48
 msgid "Facet"
-msgstr "Facet"
-
-#: includes/widgets/class-facet.php:216
-msgid "Please Select a Facet and a Grid."
-msgstr "Kérjük, válasszon egy Facetet és egy Gridet."
+msgstr "Szűrő"
 
 #: includes/widgets/class-grid.php:48
 msgid "Grid"
 msgstr "Grid"
 
-#: includes/widgets/class-grid.php:220
+#: includes/widgets/class-grid.php:219
 msgid "Please Select a Grid."
-msgstr "Kérjük, válasszon egy Gridet."
+msgstr "Kérjük, válasszon ki egy rácsot."
 
 #: wp-grid-builder-elementor.php:61
 msgid ""
@@ -710,7 +705,7 @@ msgstr ""
 msgid ""
 "<strong>Gridbuilder ᵂᴾ - Elementor</strong> add-on requires at least "
 "<code>Elementor v3.0.0</code>. Please update and activate Elementor."
-msgstr ""
-"<strong>Gridbuilder \\u1d42\\u1d3e - Elementor</strong> kiegészítőhöz "
-"legalább <code>Elementor v3.0.0</code> szükséges. Kérjük, frissítse és "
-"aktiválja az Elementort."
+msgstr "<strong>Gridbuilder ᵂᴾ - Elementor</strong> kiegészítőhöz legalább <code>Elementor v3.0.0</code> szükséges. Kérjük, frissítse az Elementort, és kapcsolja be."
+
+#~ msgid "Please Select a Facet and a Grid."
+#~ msgstr "Kérjük, válasszon egy Facetet és egy Gridet."

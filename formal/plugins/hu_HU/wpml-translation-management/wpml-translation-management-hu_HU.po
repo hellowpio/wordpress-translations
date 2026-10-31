@@ -1,0 +1,4467 @@
+# Copyright (C) 2026 OnTheGoSystems
+# This file is distributed under the same license as the WPML Translation Management plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPML Translation Management 2.10.8\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpml-translation-management\n"
+"POT-Creation-Date: 2026-10-31T11:20:34+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: wpml-translation-management\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: WPML Translation Management\n"
+"X-Plugin-Tone: formal\n"
+"X-Plugin-Version: 2.10.8\n"
+
+#. Plugin Name of the plugin
+#: plugin.php
+msgid "WPML Translation Management"
+msgstr "WPML Translation Management"
+
+#. Plugin URI of the plugin
+#: plugin.php
+msgid "https://wpml.org/"
+msgstr "https://wpml.org/"
+
+#. Description of the plugin
+#: plugin.php
+msgid ""
+"Add a complete translation process for WPML | <a "
+"href=\"https://wpml.org\">Documentation</a> | <a "
+"href=\"https://wpml.org/version/translation-management-2-10-8/\">WPML "
+"Translation Management 2.10.8 release notes</a>"
+msgstr "Teljes fordítási folyamatot ad a WPML-hez | <a href=\"https://wpml.org\">dokumentáció</a> | <a href=\"https://wpml.org/version/translation-management-2-10-8/\">WPML Translation Management 2.10.8 kiadási megjegyzések</a>"
+
+#. Author of the plugin
+#: plugin.php
+msgid "OnTheGoSystems"
+msgstr "OnTheGoSystems"
+
+#. Author URI of the plugin
+#: plugin.php
+msgid "http://www.onthegosystems.com/"
+msgstr "http://www.onthegosystems.com/"
+
+#: classes/admin-bar/Hooks.php:41
+msgid "Edit Translation"
+msgstr "Fordítás szerkesztése"
+
+#: classes/AJAX/class-wpml-tm-ajax.php:21
+msgid "You have attempted to submit data in a not legit way."
+msgstr "Nem megfelelő módon próbált adatokat küldeni."
+
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-columns.php:9
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-columns.php:25
+msgid "ID"
+msgstr "Azonosító"
+
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-columns.php:10
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-columns.php:26
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:231
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:99
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:74
+#: classes/menu/translation-editor/fields/model/class-wpml-editor-ui-field-image.php:15
+#: classes/menu/translation-queue/class-wpml-translations-queue-jobs-model.php:58
+#: classes/translation-jobs/ExtraFieldDataInEditor.php:89
+#: menu/wpml-tm-menus-management.php:601
+msgid "Title"
+msgstr "Cím"
+
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-columns.php:11
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:77
+msgid "Languages"
+msgstr "Nyelvek"
+
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-columns.php:12
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-columns.php:27
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:100
+msgid "Batch name"
+msgstr "Köteg neve"
+
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-columns.php:13
+msgid "Translated by"
+msgstr "Fordító"
+
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-columns.php:14
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-columns.php:29
+msgid "Sent on"
+msgstr "Elküldés dátuma"
+
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-columns.php:15
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-columns.php:30
+#: classes/menu/translation-queue/class-wpml-translations-queue-jobs-model.php:62
+msgid "Deadline"
+msgstr "Határidő"
+
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-columns.php:16
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-columns.php:31
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:76
+msgid "Status"
+msgstr "Állapot"
+
+#. translators: The word "Language" will be used in other strings and wrapped
+#. with HTML tags to make it more prominent
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-columns.php:28
+#: classes/menu/translation-queue/class-wpml-translations-queue-jobs-model.php:60
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:124
+msgid "Language"
+msgstr "Nyelv"
+
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-element-info.php:83
+msgid "String package job"
+msgstr "Szövegcsomag-feladat"
+
+#: classes/API/REST/jobs/class-wpml-tm-rest-jobs-translation-service.php:28
+msgid "Local"
+msgstr "Helyi"
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-api-error.php:11
+#, php-format
+msgid "There was a problem communicating with ATE: %s "
+msgstr "Hiba történt az ATE-vel való kommunikáció során: %s "
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-jobs-actions.php:171
+#, php-format
+msgid "%1$s jobs added to the Advanced Translation Editor."
+msgstr "%1$s feladat hozzáadva a speciális fordításszerkesztőhöz."
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-jobs-actions.php:176
+msgid ""
+"Jobs could not be created in Advanced Translation Editor. Please try again "
+"or contact the WPML support for help."
+msgstr "Nem sikerült feladatokat létrehozni a speciális fordításszerkesztőben. Kérjük, próbálja újra, vagy kérjen segítséget a WPML támogatásától."
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-jobs-actions.php:511
+msgid "Resend that email"
+msgstr "E-mail újbóli elküldése"
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-jobs-actions.php:514
+msgid ""
+"WPML cannot send these documents to translation because the Advanced "
+"Translation Editor is not fully set-up yet."
+msgstr "A WPML nem tudja fordításra küldeni ezeket a dokumentumokat, mert a speciális fordításszerkesztő beállítása még nem fejeződött be."
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-jobs-actions.php:516
+msgid ""
+"Please open the confirmation email that you received and click on the link "
+"inside it to confirm your email."
+msgstr "Kérjük, nyissa meg a kapott megerősítő e-mailt, és kattintson a benne található linkre az e-mail cím megerősítéséhez."
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-jobs-actions.php:525
+msgid "Advanced Translation Editor error:"
+msgstr "A speciális fordításszerkesztő hibája:"
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-jobs-sync-script-loader.php:70
+msgid "Processing translation (could take a few minutes)"
+msgstr "Fordítás feldolgozása (néhány percig is eltarthat)"
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-jobs-sync-script-loader.php:74
+msgid "Processing translation"
+msgstr "Fordítás feldolgozása"
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-translator-message-classic-editor.php:33
+msgid ""
+"This site can use WPML's Advanced Translation Editor, but you did not "
+"receive permission to use it. You are still translating with WPML's classic "
+"translation editor. Please ask your site's Translation Manager to enable the"
+" Advanced Translation Editor for you."
+msgstr "Ez a webhely használhatja a WPML speciális fordításszerkesztőjét, de Ön nem kapott engedélyt a használatára. Továbbra is a WPML klasszikus fordításszerkesztőjével fordít. Kérje meg a webhely fordításkezelőjét, hogy kapcsolja be Önnek a speciális fordításszerkesztőt."
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-translator-message-classic-editor.php:34
+msgid "Learn more about WPML's Advanced Translation Editor"
+msgstr "További tudnivalók a WPML speciális fordításszerkesztőjéről"
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-translator-message-classic-editor.php:35
+msgid "Advanced Translation Editor is disabled."
+msgstr "A speciális fordításszerkesztő ki van kapcsolva."
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-translator-message-classic-editor.php:36
+msgid "More"
+msgstr "Továbbiak"
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-translator-message-classic-editor.php:37
+msgid "Request activation from"
+msgstr "Aktiválás kérése ettől"
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-translator-message-classic-editor.php:59
+msgid "Minimize"
+msgstr "Minimalizálás"
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-translator-message-classic-editor.php:109
+#: classes/menu/translation-roles/class-wpml-translation-roles-ajax-actions.php:96
+#, php-format
+msgid "An email has been sent to %s"
+msgstr "E-mail elküldve – címzett: %s"
+
+#: classes/ATE/Hooks/class-wpml-tm-ate-translator-message-classic-editor.php:114
+#, php-format
+msgid "Sorry, the email could not be sent to %s for an unknown reason."
+msgstr "Sajnáljuk, az e-mailt ismeretlen okból nem sikerült elküldeni. Címzett: %s."
+
+#: classes/ATE/Log/Hooks.php:28 classes/ATE/Log/View.php:34
+msgid "Advanced Translation Editor Error Logs"
+msgstr "A speciális fordításszerkesztő hibanaplói"
+
+#: classes/ATE/Log/View.php:20
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:396
+msgid "Advanced Translation Editor"
+msgstr "Speciális fordításszerkesztő"
+
+#: classes/ATE/Log/View.php:24
+#, php-format
+msgid "Error Logs (%d)"
+msgstr "Hibanaplók (%d)"
+
+#: classes/ATE/Log/View.php:58
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:50
+#: menu/wpml-tm-menus-management.php:639
+msgid "Date"
+msgstr "Dátum"
+
+#: classes/ATE/Log/View.php:61
+msgid "Event"
+msgstr "Esemény"
+
+#: classes/ATE/Log/View.php:64
+#: classes/menu/translation-editor/fields/model/class-wpml-editor-ui-field-image.php:18
+#: classes/menu/translation-services/MainLayoutTemplate.php:72
+msgid "Description"
+msgstr "Leírás"
+
+#: classes/ATE/Log/View.php:67
+msgid "WPML Job ID"
+msgstr "WPML-feladat ID"
+
+#: classes/ATE/Log/View.php:70
+msgid "ATE Job ID"
+msgstr "ATE-feladat ID"
+
+#: classes/ATE/Log/View.php:73
+msgid "Extra data"
+msgstr "További adatok"
+
+#: classes/ATE/Log/View.php:108
+msgid "No entries"
+msgstr "Nincsenek bejegyzések"
+
+#: classes/class-wpml-tm-api.php:27
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:209
+#: classes/wpml-st/class-wpml-remote-string-translation.php:11
+msgid "Not translated"
+msgstr "Nincs lefordítva"
+
+#: classes/class-wpml-tm-api.php:31
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:212
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-status-names.php:10
+msgid "Waiting for translator"
+msgstr "Fordítóra vár"
+
+#: classes/class-wpml-tm-api.php:36
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:215
+msgid "In basket"
+msgstr "Kosárban"
+
+#: classes/class-wpml-tm-api.php:40
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:218
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-status-names.php:11
+msgid "In progress"
+msgstr "Folyamatban"
+
+#: classes/class-wpml-tm-api.php:44
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:231
+#: menu/dashboard/wpml-tm-dashboard-ajax.class.php:39
+msgid "Duplicate"
+msgstr "Duplikálás"
+
+#: classes/class-wpml-tm-api.php:48
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:234
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:457
+msgid "Complete"
+msgstr "Befejezve"
+
+#: classes/class-wpml-tm-api.php:52
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:237
+msgid "needs update"
+msgstr "frissítést igényel"
+
+#: classes/class-wpml-tm-promotions.php:36
+#, php-format
+msgid ""
+"Looks like you are running a multilingual WooCommerce site. To easily "
+"translate WooCommerce products and categories, you should use %s"
+msgstr "Úgy tűnik, hogy Ön többnyelvű WooCommerce-webhelyet használ. A WooCommerce-termékek és -kategóriák egyszerű fordításához ajánlott a következő bővítmény használata: %s"
+
+#: classes/class-wpml-tm-requirements.php:65
+msgid ""
+"WPML Translation Management requires the following PHP extensions and "
+"settings:"
+msgstr "A WPML Translation Management használatához a következő PHP-kiterjesztések és beállítások szükségesek:"
+
+#: classes/class-wpml-tm-requirements.php:98
+msgid "PHP Setting"
+msgstr "PHP-beállítás"
+
+#: classes/class-wpml-tm-requirements.php:105
+msgid "PHP Extension"
+msgstr "PHP-kiterjesztés"
+
+#: classes/class-wpml-tm-requirements.php:129
+msgid "and"
+msgstr "és"
+
+#: classes/class-wpml-tm-requirements.php:136
+#, php-format
+msgid ""
+"WPML Translation Management is enabled but not effective. It requires %s in "
+"order to work."
+msgstr "A WPML Translation Management be van kapcsolva, de nem működik. A működéséhez a(z) %s szükséges."
+
+#: classes/class-wpml-tm-service-activation-ajax.php:92
+msgctxt "Incomplete local jobs after TS activation: [response] 00 Title"
+msgid "Incomplete local translation jobs"
+msgstr "Befejezetlen helyi fordítási feladatok"
+
+#: classes/class-wpml-tm-service-activation-ajax.php:93
+msgctxt "Incomplete local jobs after TS activation: [response] 01 Cancelled"
+msgid "Cancelled local translation jobs:"
+msgstr "Megszakított helyi fordítási feladatok:"
+
+#: classes/class-wpml-tm-service-activation-ajax.php:94
+msgctxt "Incomplete local jobs after TS activation: [response] 02 Open"
+msgid "Open local translation jobs:"
+msgstr "Nyitott helyi fordítási feladatok:"
+
+#: classes/class-wpml-tm-service-activation-ajax.php:95
+msgctxt "Incomplete local jobs after TS activation: [response] 03 Error"
+msgid "Unable to cancel some or all jobs"
+msgstr "Nem sikerült megszakítani a feladatok egy részét vagy akár az összeset"
+
+#: classes/class-wpml-tm-service-activation-ajax.php:96
+msgctxt "Incomplete local jobs after TS activation: [response] 04 Error"
+msgid "Unable to complete the action"
+msgstr "A művelet végrehajtása nem sikerült"
+
+#: classes/class-wpml-tm-service-activation-ajax.php:97
+msgctxt ""
+"Incomplete local jobs after TS activation: [response] 10 Close button"
+msgid "Local translation jobs will be kept and the above notice hidden."
+msgstr "A helyi fordítási feladatok megmaradnak, a fenti értesítés pedig rejtve lesz."
+
+#: classes/class-wpml-tm-service-activation-ajax.php:98
+msgctxt ""
+"Incomplete local jobs after TS activation: [response] 20 Close button"
+msgid "Close"
+msgstr "Bezárás"
+
+#: classes/class-wpml-tm-service-activation-ajax.php:99
+msgctxt "Incomplete local jobs after TS activation: [confirmation] 01 Message"
+msgid "Are you sure you want to do this?"
+msgstr "Biztosan ezt szeretné tenni?"
+
+#: classes/class-wpml-tm-service-activation-ajax.php:100
+msgctxt "Incomplete local jobs after TS activation: [confirmation] 01 Yes"
+msgid "Yes"
+msgstr "Igen"
+
+#: classes/class-wpml-tm-service-activation-ajax.php:101
+msgctxt "Incomplete local jobs after TS activation: [confirmation] 01 No"
+msgid "No"
+msgstr "Nem"
+
+#: classes/class-wpml-tm-translators-dropdown.php:71
+#: classes/class-wpml-tm-translators-dropdown.php:91
+#: classes/class-wpml-tm-translators-dropdown.php:111
+msgid "First available"
+msgstr "Első elérhető"
+
+#: classes/class-wpml-tm-translators-dropdown.php:148
+msgid "Translation Proxy error"
+msgstr "Fordítási proxyhiba"
+
+#: classes/class-wpml-tm-translators-dropdown.php:150
+msgid "Error"
+msgstr "Hiba"
+
+#: classes/class-wpml-tm-translators-dropdown.php:154
+msgid "Translation jobs for:"
+msgstr "Fordítási feladatok ehhez:"
+
+#: classes/class-wpml-tm-troubleshooting-clear-ts-ui.php:9
+msgid "Show other professional translation options"
+msgstr "További professzionális fordítási opciók megjelenítése"
+
+#: classes/class-wpml-tm-troubleshooting-clear-ts-ui.php:10
+msgid "Enable other translation services"
+msgstr "Egyéb fordítási szolgáltatások bekapcsolása"
+
+#: classes/class-wpml-tm-troubleshooting-clear-ts-ui.php:11
+#, php-format
+msgid ""
+"Your site is currently configured to use only %s as its professional "
+"translation service."
+msgstr "Webhelye jelenleg úgy van beállítva, hogy kizárólag a(z) %s szolgáltatást használja professzionális fordítási szolgáltatásként."
+
+#: classes/class-wpml-tm-troubleshooting-clear-ts.php:26
+msgid "Ok!"
+msgstr "OK!"
+
+#: classes/class-wpml-tm-troubleshooting-clear-ts.php:28
+#: classes/troubleshooting/class-wpml-tm-troubleshooting-reset-pro-trans-config.php:122
+msgid "You can't do that!"
+msgstr "Ezt nem teheti meg!"
+
+#: classes/class-wpml-translation-job-factory.php:266
+msgid "The original has been deleted!"
+msgstr "Az eredetit törölték!"
+
+#: classes/class-wpml-translation-job-factory.php:271
+#: classes/emails/wpml-tm-mail-notification.php:433
+msgid "Deleted"
+msgstr "Törölve"
+
+#: classes/class-wpml-translation-job-factory.php:409
+#: classes/emails/report/class-wpml-tm-email-jobs-summary-view.php:55
+#: classes/menu/translation-queue/class-wpml-translations-queue-jobs-model.php:110
+msgid "Strings"
+msgstr "Szövegek"
+
+#: classes/class-wpml-translation-management.php:229
+#: inc/translation-proxy/translationproxy.class.php:169
+#: inc/translation-proxy/translationproxy.class.php:171
+#: inc/translation-proxy/translationproxy.class.php:364
+msgid "Translation Service"
+msgstr "Fordítási szolgáltatás"
+
+#: classes/class-wpml-translation-management.php:237
+#: classes/translation-basket/wpml-tm-translation-basket-dialog-view.php:34
+msgid "Done"
+msgstr "Kész"
+
+#: classes/class-wpml-translation-management.php:238
+#, php-format
+msgid "%s requires additional data"
+msgstr "A(z) %s további adatokat igényel"
+
+#: classes/class-wpml-translation-management.php:239
+#, php-format
+msgid "You can find this at %s site"
+msgstr "Ezt a(z) %s webhelyen találja"
+
+#: classes/class-wpml-translation-management.php:244
+msgid "No matches"
+msgstr "Nincs találat"
+
+#: classes/class-wpml-translation-management.php:245
+msgid "User found"
+msgstr "Felhasználó megtalálva"
+
+#: classes/class-wpml-translation-management.php:321
+#, php-format
+msgid ""
+"WPML Translation Management is enabled but not effective. It requires <a "
+"href=\"%s\">WPML</a> in order to work."
+msgstr "A WPML Translation Management be van kapcsolva, de nem működik. A működéséhez szükség van a <a href=\"%s\">WPML</a> bővítményre."
+
+#: classes/class-wpml-translation-management.php:332
+msgid ""
+"WPML Translation Management is enabled but not effective. Please finish the "
+"installation of WPML first."
+msgstr "A WPML Translation Management be van kapcsolva, de nem működik. Kérjük, először fejezze be a WPML telepítését."
+
+#: classes/class-wpml-translation-management.php:341
+#, php-format
+msgid ""
+"WPML Translation Management is enabled but not effective. It is not "
+"compatible with  <a href=\"%s\">WPML</a> versions prior 2.0.5."
+msgstr "A WPML Translation Management be van kapcsolva, de nem működik. Nem kompatibilis a 2.0.5-nél korábbi <a href=\"%s\">WPML</a>-verziókkal."
+
+#: classes/class-wpml-translation-management.php:351
+msgid "Translation saved."
+msgstr "A fordítás mentve."
+
+#: classes/class-wpml-translation-management.php:357
+msgid "Translation cancelled."
+msgstr "A fordítást megszakították."
+
+#. translators: "Translation Management" will be used in other strings and
+#. wrapped with HTML tags to make it a link to external documentation
+#: classes/class-wpml-translation-management.php:368
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:166
+#: menu/wpml-tm-menus-management.php:63
+msgid "Translation Management"
+msgstr "Fordításkezelés"
+
+#: classes/class-wpml-translation-management.php:408
+#: classes/class-wpml-translation-management.php:409
+msgid "Translations"
+msgstr "Fordítások"
+
+#: classes/class-wpml-translation-management.php:454
+#: menu/wpml-tm-menus-settings.php:81
+msgid "Settings"
+msgstr "Beállítások"
+
+#: classes/class-wpml-translation-management.php:490
+msgid "Configure"
+msgstr "Beállítás"
+
+#: classes/class-wpml-translation-management.php:630
+msgid "Translation Services Tab"
+msgstr "Fordítási szolgáltatások fül"
+
+#: classes/class-wpml-translation-management.php:631
+msgid "Translators Tab"
+msgstr "Fordítók fül"
+
+#. translators: Translation Management wizard - Shown after selecting a
+#. translation service.
+#: classes/class-wpml-translation-management.php:643
+#: classes/menu/translation-services/ActiveServiceTemplate.php:77
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:114
+msgid "Authenticate"
+msgstr "Hitelesítés"
+
+#: classes/class-wpml-translation-management.php:647
+#: classes/menu/translation-services/ActiveServiceTemplate.php:27
+#: classes/wizard/class-wpml-tm-setup-wizard.php:59
+msgid "Deactivate"
+msgstr "Kikapcsolás"
+
+#: classes/class-wpml-translation-management.php:652
+#, php-format
+msgid "One more step before you can use %s"
+msgstr "Még egy lépés, mielőtt használhatja a(z) %s szolgáltatást"
+
+#: classes/class-wpml-translation-management.php:656
+#, php-format
+msgid ""
+"Remember to authenticate this site's connection with %1$s. Before you "
+"authenticate, you cannot send jobs to translation to %1$s."
+msgstr "Ne felejtse el hitelesíteni a webhely és a(z) %1$s közötti kapcsolatot. A hitelesítés előtt nem küldhet fordítási feladatokat a(z) %1$s szolgáltatásnak."
+
+#: classes/class-wpml-translation-management.php:659
+msgid "Complete the authentication"
+msgstr "Hitelesítés befejezése"
+
+#: classes/class-wpml-translation-management.php:665
+msgid "You have selected a translation service which requires translators."
+msgstr "Olyan fordítási szolgáltatást választott, amely fordítókat igényel."
+
+#: classes/class-wpml-translation-management.php:666
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:63
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:93
+msgid "Add a Translator"
+msgstr "Fordító hozzáadása"
+
+#: classes/class-wpml-translation-management.php:669
+#, php-format
+msgid "If you wish to use %1$s, please go to %2$s and use the %3$s button."
+msgstr "Ha használni szeretné a(z) %1$s szolgáltatást, kérjük, lépjen a(z) %2$s oldalra, és kattintson a(z) %3$s gombra."
+
+#: classes/class-wpml-translation-management.php:671
+msgid "There is a problem with your translation service."
+msgstr "Probléma merült fel a fordítási szolgáltatással."
+
+#: classes/class-wpml-translation-management.php:674
+msgid "Please contact your administrator."
+msgstr "Kérjük, forduljon az adminisztrátorhoz."
+
+#: classes/class-wpml-translation-management.php:679
+#, php-format
+msgid ""
+"If you wish to use only local translators, please go to %1$s and use the "
+"%2$s button."
+msgstr "Ha kizárólag helyi fordítókat szeretne használni, kérjük, lépjen a(z) %1$s oldalra, és kattintson a(z) %2$s gombra."
+
+#: classes/class-wpml-translation-management.php:754
+msgid ""
+"WPML can't find the translation service. Please contact WPML Support or your"
+" translation service provider."
+msgstr "A WPML nem találja a fordítási szolgáltatást. Kérjük, forduljon a WPML támogatásához vagy a fordítási szolgáltatóhoz."
+
+#: classes/emails/ATE/class-wpml-tm-ate-request-activation-email.php:22
+#, php-format
+msgid ""
+"The translator %1$s is requesting to use the Advanced Translation Editor on "
+"site %2$s."
+msgstr "A(z) %1$s fordító a(z) %2$s webhelyen szeretné használni a haladó fordításszerkesztőt."
+
+#: classes/emails/ATE/class-wpml-tm-ate-request-activation-email.php:23
+msgid "Advanced Translation Editor settings"
+msgstr "A haladó fordításszerkesztő beállításai"
+
+#: classes/emails/ATE/class-wpml-tm-ate-request-activation-email.php:24
+#: classes/menu/translation-roles/class-wpml-translation-manager-ajax-actions.php:56
+#, php-format
+msgid ""
+"* Remember, your login name for %1$s is %2$s. If you need help with your "
+"password, use the password reset in the login page."
+msgstr "* Ne feledje, hogy a(z) %1$s webhelyen használt belépési neve: %2$s. Ha segítségre van szüksége a jelszavával kapcsolatban, használja a jelszó alaphelyzetbe állítását a belépési oldalon."
+
+#: classes/emails/ATE/class-wpml-tm-ate-request-activation-email.php:29
+#, php-format
+msgid "Request to use WPML's Advanced Translation Editor by %s"
+msgstr "Kérelem a WPML haladó fordításszerkesztőjének használatára a(z) %s felhasználótól"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-daily-summary-report-model.php:9
+#, php-format
+msgid "Translation updates for %1$s for %2$s"
+msgstr "Fordításfrissítések ehhez: %1$s, %2$s időszakra"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-daily-summary-report-model.php:16
+#, php-format
+msgid "Today %1$s had the following %2$s translation updates"
+msgstr "Ma %1$s esetében a következő %2$s fordításfrissítés történt"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:45
+msgid "Jobs that are waiting for translation"
+msgstr "Fordításra váró feladatok"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:46
+msgid "Original Page"
+msgstr "Eredeti oldal"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:47
+msgid "Translation"
+msgstr "Fordítás"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:48
+#: menu/wpml-tm-menus-management.php:826
+msgid "Translator"
+msgstr "Fordító"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:49
+msgid "Updated / Translated"
+msgstr "Frissítve / lefordítva"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:51
+msgid "Your deadline"
+msgstr "Az Ön határideje"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:52
+msgid "Translation languages"
+msgstr "Fordítási nyelvek"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:53
+msgid "Number of pages"
+msgstr "Oldalak darabszáma"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:54
+msgid "Number of strings"
+msgstr "Karakterláncok száma"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:55
+msgid "Number of words"
+msgstr "Szavak száma"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:56
+msgid "Undefined"
+msgstr "Meghatározatlan"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:59
+msgid "Want to improve the quality of your site’s translation?"
+msgstr "Szeretné javítani webhelye fordításának minőségét?"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:63
+msgid "Translation Feedback"
+msgstr "Fordítási visszajelzés"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:64
+#, php-format
+msgid "Allow visitors to tell you about translation issues by enabling %s"
+msgstr "Engedélyezze, hogy a látogatók jelezhessék a fordítási problémákat a(z) %s bekapcsolásával"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:68
+msgid "translation services that are integrated with WPML"
+msgstr "A WPML-lel integrált fordítási szolgáltatások"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report-view.php:69
+#, php-format
+msgid "Try one of the %s"
+msgstr "Próbálja ki a(z) %s egyikét"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-summary-report.php:125
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:103
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:102
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:122
+msgid "to"
+msgstr "-ig"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-weekly-summary-report-model.php:9
+#, php-format
+msgid "Translation updates for %1$s until %2$s"
+msgstr "Fordításfrissítések ehhez: %1$s, %2$s időpontig"
+
+#: classes/emails/notification/summary/class-wpml-tm-jobs-weekly-summary-report-model.php:16
+#, php-format
+msgid "This week %1$s had the following %2$s translation updates"
+msgstr "Ezen a héten %1$s esetében a következő %2$s fordításfrissítés történt"
+
+#. translators: Promote translation services: %s replaced by "professional
+#. translation services integrated with WPML"
+#: classes/emails/notification/wpml-tm-email-notification-view.php:38
+#, php-format
+msgctxt ""
+"Promote translation services: %s replaced by \"professional translation "
+"services integrated with WPML\""
+msgid "Need faster translation work? Try one of the %s."
+msgstr "Gyorsabb fordításra van szüksége? Próbálja ki a(z) %s egyikét."
+
+#. translators: Promote translation services: Promote translation services:
+#. used to build a link to the translation services page
+#: classes/emails/notification/wpml-tm-email-notification-view.php:40
+msgctxt ""
+"Promote translation services: used to build a link to the translation "
+"services page"
+msgid "professional translation services integrated with WPML"
+msgstr "A WPML-lel integrált professzionális fordítási szolgáltatások"
+
+#: classes/emails/notification/wpml-tm-email-notification-view.php:53
+msgid "WPML Notification Settings"
+msgstr "WPML értesítési beállításai"
+
+#: classes/emails/notification/wpml-tm-email-notification-view.php:57
+#, php-format
+msgid ""
+"To stop receiving notifications, log-in to %s and change your preferences."
+msgstr "Az értesítések fogadásának leállításához jelentkezzen be a(z) %s webhelyre, és módosítsa a beállításait."
+
+#. translators: List of translation jobs: %s replaced by "list of translation
+#. jobs"
+#: classes/emails/overdue-report/wpml-tm-overdue-jobs-report.php:101
+#, php-format
+msgctxt "List of translation jobs: %s replaced by \"list of translation jobs\""
+msgid "You can see all the jobs that you sent and their deadlines in the %s."
+msgstr "Az összes elküldött feladatot és azok határidejét a(z) %s oldalon tekintheti meg."
+
+#. translators: List of translation jobs: used to build a link to the
+#. translation jobs page
+#: classes/emails/overdue-report/wpml-tm-overdue-jobs-report.php:103
+msgctxt ""
+"List of translation jobs: used to build a link to the translation jobs page"
+msgid "list of translation jobs"
+msgstr "fordítási feladatok listája"
+
+#: classes/emails/overdue-report/wpml-tm-overdue-jobs-report.php:112
+msgid ""
+"This is a quick reminder about translation jobs that you sent and are behind"
+" schedule."
+msgstr "Rövid emlékeztető azokról az elküldött fordítási feladatokról, amelyek késésben vannak."
+
+#: classes/emails/overdue-report/wpml-tm-overdue-jobs-report.php:113
+msgid "The deadline that you set for the following jobs has passed:"
+msgstr "A következő feladatokhoz megadott határidő lejárt:"
+
+#: classes/emails/overdue-report/wpml-tm-overdue-jobs-report.php:115
+#, php-format
+msgid "deadline: %1$s, late by %2$d days"
+msgstr "határidő: %1$s, késés: %2$d nap"
+
+#: classes/emails/overdue-report/wpml-tm-overdue-jobs-report.php:121
+msgid "Overdue translation jobs report"
+msgstr "Lejárt fordítási feladatok jelentése"
+
+#: classes/emails/report/class-wpml-tm-batch-report-email-builder.php:44
+msgid "You have been assigned to new translation job(s):"
+msgstr "Új fordítási feladatokat osztottak ki Önnek:"
+
+#: classes/emails/report/class-wpml-tm-batch-report-email-builder.php:55
+msgid "There is 1 job, which you can take (not specifically assigned to you):"
+msgstr "Van 1 feladat, amelyet elvállalhat (nincs kifejezetten Önnek kiosztva):"
+
+#: classes/emails/report/class-wpml-tm-batch-report-email-builder.php:56
+#, php-format
+msgid ""
+"There are %s jobs, which you can take (not specifically assigned to you):"
+msgstr "%s feladatot vállalhat el (nincs kifejezetten Önnek kiosztva):"
+
+#: classes/emails/report/class-wpml-tm-batch-report-email-builder.php:90
+msgid "There is 1 job waiting for a translator:"
+msgstr "1 feladat vár fordítóra:"
+
+#: classes/emails/report/class-wpml-tm-batch-report-email-builder.php:91
+#, php-format
+msgid "There are %s jobs waiting for a translator:"
+msgstr "%s feladat vár fordítóra:"
+
+#: classes/emails/report/class-wpml-tm-batch-report-email-builder.php:146
+#, php-format
+msgid "New translation job from %s"
+msgstr "Új fordítási feladat a(z) %s webhelyről"
+
+#: classes/emails/report/class-wpml-tm-batch-report-email-builder.php:153
+#, php-format
+msgid "Job waiting for a translator in %s"
+msgstr "Fordítóra váró feladat a(z) %s webhelyen"
+
+#: classes/emails/report/class-wpml-tm-email-jobs-summary-view.php:56
+msgid "start translating"
+msgstr "Fordítás indítása"
+
+#: classes/emails/report/class-wpml-tm-email-jobs-summary-view.php:57
+msgctxt "Take a translation job waiting for a translator"
+msgid "take it"
+msgstr "Elvállalás"
+
+#: classes/emails/report/class-wpml-tm-email-jobs-summary-view.php:84
+#, php-format
+msgid "Link to original document %d"
+msgstr "Link az eredeti dokumentumhoz %d"
+
+#: classes/emails/report/class-wpml-tm-email-jobs-summary-view.php:102
+#, php-format
+msgid "From %1$s to %2$s:"
+msgstr "%1$s nyelvről %2$s nyelvre:"
+
+#: classes/emails/report/class-wpml-tm-email-jobs-summary-view.php:122
+#, php-format
+msgid ""
+"You are receiving this email because you have a translator \n"
+"\t\t\taccount in %1$s. To stop receiving notifications, \n"
+"\t\t\tlog-in to %2$s and unselect \"Send me a notification email \n"
+"\t\t\twhen there is something new to translate\". Please note that \n"
+"\t\t\tthis will take you out of the translators pool."
+msgstr "Ezt az e-mailt azért kapja, mert fordítói fiókkal rendelkezik a(z) %1$s webhelyen. Az értesítések fogadásának leállításához jelentkezzen be a(z) %2$s webhelyre, és törölje a „Küldjön nekem e-mailes értesítést, ha van új fordítanivaló” beállítás jelölését. Kérjük, vegye figyelembe, hogy ezzel kikerül a fordítók közül."
+
+#: classes/emails/report/class-wpml-tm-email-jobs-summary-view.php:172
+#: classes/wizard/steps/class-wpml-tm-wizard-editor.php:45
+msgid "WPML's Advanced Translation Editor"
+msgstr "A WPML haladó fordításszerkesztője"
+
+#: classes/emails/report/class-wpml-tm-email-jobs-summary-view.php:174
+#, php-format
+msgid "Need help translating? Read how to use %s."
+msgstr "Segítségre van szüksége a fordításhoz? Olvassa el, hogyan használhatja a(z) %s funkciót."
+
+#: classes/emails/wpml-tm-email-view.php:22
+#, php-format
+msgid "Dear %s,"
+msgstr "Kedves %s,"
+
+#: classes/emails/wpml-tm-email-view.php:35
+#, php-format
+msgid "Hi %s,"
+msgstr "Kedves %s!"
+
+#: classes/emails/wpml-tm-email-view.php:52
+#, php-format
+msgid "Generated by WPML plugin, running on %s."
+msgstr "A WPML bővítmény készítette, a(z) %s webhelyen fut."
+
+#: classes/emails/wpml-tm-mail-notification.php:104
+#, php-format
+msgid "You can view your other translation jobs here: %s"
+msgstr "A többi fordítási feladatát itt tekintheti meg: %s"
+
+#: classes/emails/wpml-tm-mail-notification.php:108
+#, php-format
+msgid ""
+"This message was automatically sent by Translation Management running on %1$s. To stop receiving these notifications contact the system administrator at %2$s.\n"
+"\n"
+"This email is not monitored for replies."
+msgstr "Ezt az üzenetet automatikusan küldte a Translation Management a(z) %1$s webhelyen. Ha nem szeretne több ilyen értesítést kapni, vegye fel a kapcsolatot a rendszeradminisztrátorral ezen az e-mail címen: %2$s.\n\nErre az e-mailre küldött válaszokat nem figyeljük."
+
+#: classes/emails/wpml-tm-mail-notification.php:117
+#, php-format
+msgid ""
+"This message was automatically sent by Translation Management running on %1$s. To stop receiving these notifications, go to Notification Settings, or contact the system administrator at %2$s.\n"
+"\n"
+"This email is not monitored for replies."
+msgstr "Ezt az üzenetet automatikusan küldte a Translation Management a(z) %1$s webhelyen. Ha nem szeretne több ilyen értesítést kapni, keresse fel az Értesítési beállítások oldalt, vagy vegye fel a kapcsolatot a rendszeradminisztrátorral ezen az e-mail címen: %2$s.\n\nErre az e-mailre küldött válaszokat nem figyeljük."
+
+#: classes/emails/wpml-tm-mail-notification.php:181
+msgid "View translation jobs"
+msgstr "Fordítási feladatok megtekintése"
+
+#: classes/emails/wpml-tm-mail-notification.php:228
+#, php-format
+msgid "Translator has updated translation job for %s"
+msgstr "A fordító frissítette a(z) %s fordítási feladatot"
+
+#: classes/emails/wpml-tm-mail-notification.php:231
+#, php-format
+msgid ""
+"The translator %1$shas updated the translation job for \"%2$s\" from %3$s to"
+" %4$s."
+msgstr "%1$s frissítette a(z) „%2$s” fordítási feladatot %3$s nyelvről %4$s nyelvre."
+
+#: classes/emails/wpml-tm-mail-notification.php:237
+#, php-format
+msgid "Translator has completed translation job for %s"
+msgstr "A fordító befejezte a(z) %s fordítási feladatot"
+
+#: classes/emails/wpml-tm-mail-notification.php:240
+#, php-format
+msgid ""
+"The translator %1$shas completed the translation job for \"%2$s\" from %3$s "
+"to %4$s."
+msgstr "%1$s befejezte a(z) „%2$s” fordítási feladatot %3$s nyelvről %4$s nyelvre."
+
+#: classes/emails/wpml-tm-mail-notification.php:248
+msgid "Need help with translation?"
+msgstr "Segítségre van szüksége a fordításhoz?"
+
+#: classes/emails/wpml-tm-mail-notification.php:249
+msgid "or"
+msgstr "vagy"
+
+#: classes/emails/wpml-tm-mail-notification.php:251
+msgid "Manage your translators"
+msgstr "Fordítók kezelése"
+
+#: classes/emails/wpml-tm-mail-notification.php:253
+msgid "try a translation service"
+msgstr "Fordítási szolgáltatás kipróbálása"
+
+#: classes/emails/wpml-tm-mail-notification.php:277
+#, php-format
+msgid "Translator job updated for %s"
+msgstr "A fordító feladata frissült a(z) %s dokumentumhoz"
+
+#: classes/emails/wpml-tm-mail-notification.php:278
+#, php-format
+msgid ""
+"A new translation for %1$s from %2$s to %3$s was created on the Translation "
+"Service. It&#8217;s ready to download and will be applied next time the "
+"Translation Service delivers completed translations to your site or when you"
+" manually fetch them."
+msgstr "Új fordítás készült a Translation Service szolgáltatásban a(z) %1$s dokumentumhoz, %2$s nyelvről %3$s nyelvre. A fordítás letölthető, és akkor kerül alkalmazásra, amikor a Translation Service legközelebb befejezett fordításokat küld a webhelyére, vagy amikor Ön manuálisan lekéri azokat."
+
+#: classes/emails/wpml-tm-mail-notification.php:301
+#, php-format
+msgid "Translator job canceled for %s"
+msgstr "A fordító feladata visszavonva a(z) %s dokumentumhoz"
+
+#: classes/emails/wpml-tm-mail-notification.php:302
+#, php-format
+msgid ""
+"The translation for %1$s from %2$s to %3$s was canceled on the Translation "
+"Service. You can send this document to translation again from the "
+"Translation Dashboard."
+msgstr "A(z) %1$s dokumentum %2$s nyelvről %3$s nyelvre történő fordítását visszavonták a Translation Service szolgáltatásban. Ezt a dokumentumot ismét elküldheti fordításra a Fordítási vezérlőpultról."
+
+#: classes/emails/wpml-tm-mail-notification.php:352
+msgid "The translation job was completed on time."
+msgstr "A fordítási feladat határidőre befejeződött."
+
+#: classes/emails/wpml-tm-mail-notification.php:357
+#, php-format
+msgid "This translation job is overdue by %s day."
+msgid_plural "This translation job is overdue by %s days."
+msgstr[0] "A fordítási feladat %s nappal késik."
+msgstr[1] "A fordítási feladat %s nappal késik."
+
+#: classes/emails/wpml-tm-mail-notification.php:393
+#, php-format
+msgid "Removed from translation job on %s"
+msgstr "Eltávolítva a fordítási feladatból ekkor: %s"
+
+#: classes/emails/wpml-tm-mail-notification.php:395
+#, php-format
+msgid "You have been removed from the translation job \"%1$s\" for %2$s to %3$s."
+msgstr "Eltávolították Önt a(z) „%1$s” fordítási feladatból %2$s nyelvről %3$s nyelvre."
+
+#: classes/emails/wpml-tm-mail-notification.php:430
+#, php-format
+msgid "Translator has resigned from job on %s"
+msgstr "A fordító ekkor mondott le a feladatról: %s"
+
+#: classes/emails/wpml-tm-mail-notification.php:435
+#, php-format
+msgid ""
+"Translator %1$s has resigned from the translation job \"%2$s\" for %3$s to "
+"%4$s.%5$sView translation jobs: %6$s"
+msgstr "A %1$s fordító lemondott a(z) „%2$s” fordítási feladatról %3$s nyelvről %4$s nyelvre.%5$sFordítási feladatok megtekintése: %6$s"
+
+#: classes/filters/class-wpml-tm-translation-status-display.php:161
+#, php-format
+msgid ""
+"You can't edit this translation, because this translation to %s is already "
+"in progress."
+msgstr "Nem szerkesztheti ezt a fordítást, mert a(z) %s nyelvre történő fordítás már folyamatban van."
+
+#: classes/filters/class-wpml-tm-translation-status-display.php:169
+msgid ""
+"Cannot edit this item, because it is currently in the translation basket."
+msgstr "Nem szerkesztheti ezt a tételt, mert jelenleg a fordítási kosárban van."
+
+#: classes/filters/class-wpml-tm-translation-status-display.php:175
+#, php-format
+msgid "Edit the %s translation"
+msgstr "A(z) %s fordítás szerkesztése"
+
+#: classes/filters/class-wpml-tm-translation-status-display.php:180
+#, php-format
+msgid "You don't have the rights to translate from %1$s to %2$s"
+msgstr "Nincs jogosultsága a %1$s nyelvről %2$s nyelvre történő fordításhoz"
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:71
+msgid "ICanLocalize migration could not complete"
+msgstr "Az ICanLocalize áttelepítése nem fejeződött be"
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:75
+msgid ""
+"WPML needs to update your connection to ICanLocalize, but could not complete"
+" the change."
+msgstr "A WPML-nek frissítenie kell az ICanLocalize-hoz való kapcsolatát, de a módosítást nem sikerült befejezni."
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:82
+msgid ""
+"Please contact WPML support and give them the following debug information:"
+msgstr "Kérjük, vegye fel a kapcsolatot a WPML támogatásával, és adja meg a következő hibakeresési információkat:"
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:93
+#, php-format
+msgid "Failed step: %s"
+msgstr "Sikertelen lépés: %s"
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:108
+msgid ""
+"Please wait a few minutes and try again to see if there’s a temporary "
+"problem."
+msgstr "Kérjük, várjon néhány percet, majd próbálja újra, hátha átmeneti problémáról van szó."
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:116
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-support.php:77
+msgid "Try again"
+msgstr "Újrapróbálás"
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:136
+msgid "WPML Support"
+msgstr "WPML-támogatás"
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:154
+msgid "Error details"
+msgstr "Hiba részletei"
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:177
+msgid "Ask us"
+msgstr "Kérdésfeltevés"
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:180
+msgid "Start the update"
+msgstr "Frissítés indítása"
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:184
+msgid ""
+"WPML 3.9 changes the way it works with ICanLocalize. This requires WPML to "
+"move to a new interface with ICanLocalize."
+msgstr "A WPML 3.9 megváltoztatja az ICanLocalize szolgáltatással való együttműködés módját. Ehhez a WPML-nek át kell térnie az ICanLocalize új felületére."
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:188
+msgid ""
+"If you are in a production site, you have to run this update before you can "
+"send more content for translation and receive completed translations."
+msgstr "Ha ez éles webhely, a frissítést még azelőtt futtatnia kell, hogy további tartalmat küldene fordításra, és megkapná az elkészült fordításokat."
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:192
+msgid ""
+"If this is not your production site (it's a staging or testing site), please"
+" do not run the update."
+msgstr "Ha ez nem az éles webhelye (hanem egy tesztelési vagy előkészítő webhely), kérjük, ne futtassa a frissítést."
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:196
+msgid ""
+"Running this update on a non-production site will make it impossible to "
+"correctly run it on the production site."
+msgstr "Ha a frissítést nem éles webhelyen futtatja, az éles webhelyen nem fogja tudni megfelelően végrehajtani."
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:201
+#, php-format
+msgid "Not sure? %s."
+msgstr "Bizonytalan? %s."
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:241
+msgid ""
+"WPML updated your connection to ICanLocalize. You can continue sending "
+"content to translation."
+msgstr "A WPML frissítette az ICanLocalize szolgáltatáshoz való kapcsolatát. Folytathatja a tartalom fordításra küldését."
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-notices.php:276
+msgid "This is indeed my production site"
+msgstr "Ez valóban az éles webhelyem"
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-support.php:65
+msgid "Migration to ICL 2.0"
+msgstr "Áttelepítés az ICL 2.0-ra"
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-support.php:67
+msgid "Number of attempts made"
+msgstr "Próbálkozások száma"
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-support.php:69
+msgid "Last attempt was on"
+msgstr "Az utolsó próbálkozás időpontja"
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-support.php:72
+msgid "Last error"
+msgstr "Utolsó hiba"
+
+#: classes/ICL-20-migration/ui/class-wpml-tm-icl20-migration-support.php:91
+msgid "Rollback migration (use at your own risk!)"
+msgstr "Áttelepítés visszaállítása (saját felelősségére!)"
+
+#: classes/jobs/utils/ElementLink.php:28
+msgid "View original"
+msgstr "Eredeti megtekintése"
+
+#: classes/jobs/utils/ElementLink.php:44
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:104
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:114
+msgid "View"
+msgstr "Nézet"
+
+#: classes/menu/ams-ate-console/class-wpml-tm-ams-ate-console-section.php:98
+msgid "Translation Tools"
+msgstr "Fordítási eszközök"
+
+#: classes/menu/class-wpml-tm-scripts-factory.php:108
+#, php-format
+msgid "%d translation job"
+msgstr "%d fordítási feladat"
+
+#: classes/menu/class-wpml-tm-scripts-factory.php:109
+#, php-format
+msgid "%d translation jobs"
+msgstr "%d fordítási feladat"
+
+#: classes/menu/class-wpml-tm-scripts-factory.php:110
+#, php-format
+msgid "%s has been sent to remote translators"
+msgstr "%s elküldve távoli fordítóknak"
+
+#: classes/menu/class-wpml-tm-scripts-factory.php:114
+#, php-format
+msgid "%s have been sent to remote translators"
+msgstr "%s elküldve távoli fordítóknak"
+
+#. translators: "Check status and get translations" will be used in other
+#. strings and wrapped with HTML tags to make it more prominent
+#: classes/menu/class-wpml-tm-scripts-factory.php:119
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:296
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:173
+msgid "Check status and get translations"
+msgstr "Állapot ellenőrzése és fordítások lekérése"
+
+#: classes/menu/class-wpml-tm-scripts-factory.php:120
+msgid "Checking translation jobs status. Please don't close this page!"
+msgstr "A fordítási feladatok állapotának ellenőrzése folyamatban. Kérjük, ne zárja be ezt az oldalt!"
+
+#: classes/menu/class-wpml-tm-scripts-factory.php:124
+#, php-format
+msgid "You are downloading %d jobs"
+msgstr "%d feladat letöltése folyamatban"
+
+#: classes/menu/class-wpml-tm-scripts-factory.php:126
+msgid "Status checked:"
+msgstr "Állapot ellenőrizve:"
+
+#: classes/menu/class-wpml-tm-scripts-factory.php:127
+msgid "Dismiss this notice."
+msgstr "Értesítés bezárása."
+
+#: classes/menu/class-wpml-tm-scripts-factory.php:128
+msgid "none of your translation jobs have been completed"
+msgstr "Egyik fordítási feladat sem fejeződött be"
+
+#: classes/menu/class-wpml-tm-scripts-factory.php:132
+#, php-format
+msgid "%d translation jobs have been finished and applied."
+msgstr "%d fordítási feladat befejeződött és alkalmazásra került."
+
+#: classes/menu/class-wpml-tm-scripts-factory.php:137
+msgid ""
+"A communication error has appeared. Please wait a few minutes and try again."
+msgstr "Kommunikációs hiba történt. Kérjük, várjon néhány percet, majd próbálja újra."
+
+#: classes/menu/class-wpml-tm-scripts-factory.php:142
+#, php-format
+msgid "Last check: %s"
+msgstr "Utolsó ellenőrzés: %s"
+
+#: classes/menu/class-wpml-tm-scripts-factory.php:143
+#: classes/menu/tp-polling/wpml-tm-last-picked-up.php:42
+msgid "never"
+msgstr "soha"
+
+#: classes/menu/custom-xml-config/class-wpml-tm-custom-xml-ajax.php:30
+msgid "The XML is not valid:"
+msgstr "Az XML nem érvényes:"
+
+#: classes/menu/custom-xml-config/class-wpml-tm-custom-xml-ajax.php:33
+msgid "The XML is valid."
+msgstr "Az XML érvényes."
+
+#: classes/menu/custom-xml-config/class-wpml-tm-custom-xml-ajax.php:47
+msgid "The XML has been saved."
+msgstr "Az XML mentése megtörtént."
+
+#: classes/menu/custom-xml-config/class-wpml-tm-custom-xml-ajax.php:49
+msgid "The XML could not be saved."
+msgstr "Az XML mentése nem sikerült."
+
+#: classes/menu/custom-xml-config/class-wpml-tm-custom-xml-ui-hooks.php:25
+msgid "Custom XML Configuration"
+msgstr "Egyéni XML-konfiguráció"
+
+#: classes/menu/custom-xml-config/class-wpml-tm-custom-xml-ui.php:24
+msgid "Custom XML configuration"
+msgstr "Egyéni XML-konfiguráció"
+
+#: classes/menu/custom-xml-config/class-wpml-tm-custom-xml-ui.php:25
+#: classes/menu/custom-xml-config/class-wpml-tm-custom-xml-ui.php:30
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:168
+#: classes/menu/mcsetup/class-wpml-tm-mcs-custom-field-settings-menu.php:139
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:81
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:95
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:119
+#: classes/notices/AteLockNotice.php:60 menu/wpml-tm-menus-settings.php:343
+#: menu/wpml-tm-menus-settings.php:483 menu/wpml-tm-menus-settings.php:580
+#: menu/wpml-tm-menus-settings.php:702 menu/xliff-options.php:78
+msgid "Save"
+msgstr "Mentés"
+
+#: classes/menu/custom-xml-config/class-wpml-tm-custom-xml-ui.php:26
+msgid "Shortcuts"
+msgstr "Billentyűparancsok"
+
+#: classes/menu/custom-xml-config/class-wpml-tm-custom-xml-ui.php:28
+msgid "Fold/Unfold code"
+msgstr "Kód összecsukása/kibontása"
+
+#: classes/menu/custom-xml-config/class-wpml-tm-custom-xml-ui.php:29
+msgid "Autoformat"
+msgstr "Automatikus formázás"
+
+#: classes/menu/custom-xml-config/class-wpml-tm-custom-xml-ui.php:32
+msgid "How to write Language Configuration Files"
+msgstr "Nyelvi konfigurációs fájlok írása"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:41
+msgid "in"
+msgstr "itt"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:100
+msgid "translated to"
+msgstr "Lefordítva erre"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:103
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:101
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:277
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:307
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:751
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:754
+msgid "Any language"
+msgstr "Bármely nyelv"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:120
+#: classes/menu/translation-queue/class-wpml-translations-queue-jobs-model.php:61
+msgid "Translation status"
+msgstr "Fordítási állapot"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:123
+msgid "All translation statuses"
+msgstr "Összes fordítási állapot"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:124
+msgid "Not translated or needs updating"
+msgstr "Nincs lefordítva vagy frissítésre szorul"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:128
+msgid "Needs updating"
+msgstr "Frissítésre szorul"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:129
+msgid "Translation in progress"
+msgstr "Fordítás folyamatban"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:130
+#: classes/wpml-st/class-wpml-remote-string-translation.php:7
+msgid "Translation complete"
+msgstr "Fordítás kész"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:150
+#, php-format
+msgid ""
+"Language filtering has been disabled because you already have items in %s in"
+" the basket."
+msgstr "A nyelv szerinti szűrés ki van kapcsolva, mert már vannak %s nyelvű tételek a kosárban."
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:157
+msgid "To re-enable it, please empty the basket or send it for translation."
+msgstr "Az újbóli bekapcsoláshoz kérjük, ürítse ki a kosarat, vagy küldje el fordításra."
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:171
+msgid "Element type"
+msgstr "Elem típusa"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:172
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:256
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:737
+msgid "All types"
+msgstr "Összes típus"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:210
+msgid "parent"
+msgstr "szülő"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:241
+msgid "Publish status"
+msgstr "Közzétételi állapot"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:242
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:334
+msgid "All statuses"
+msgstr "Összes állapot"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:262
+msgid "Priority"
+msgstr "Prioritás"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:263
+msgid "All Translation Priorities"
+msgstr "Összes fordítási prioritás"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:289
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:104
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:358
+msgid "Filter"
+msgstr "Szűrés"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:291
+msgid "Reset filter"
+msgstr "Szűrés alaphelyzetbe állítása"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-display-filter.php:310
+msgid "1. Select items for translation"
+msgstr "1. Tételek kiválasztása fordításhoz"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:59
+msgid "(missing title)"
+msgstr "(hiányzó cím)"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:103
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:109
+#: classes/menu/translation-queue/class-wpml-translations-queue-jobs-model.php:152
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:458
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:149
+msgid "Edit note for the translators"
+msgstr "Megjegyzés szerkesztése a fordítók számára"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:152
+msgid "Add note for the translators"
+msgstr "Megjegyzés hozzáadása a fordítók számára"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:158
+msgid "Note for the translators"
+msgstr "Megjegyzés a fordítók számára"
+
+#. translators: Translation Management wizard - a generic "Cancel" button
+#. shown when opening a dialog
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:164
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:242
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:279
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:77
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:97
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:120
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:47
+#: classes/post-edit-screen/class-wpml-tm-post-edit-tm-editor-select.php:69
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:92
+#: classes/words-count/hooks/wpml-tm-word-count-admin-hooks.php:43
+#: classes/words-count/report/wpml-tm-word-count-report-view.php:33
+#: inc/translation-jobs/jobs/wpml-translation-job.class.php:365
+msgid "Cancel"
+msgstr "Mégse"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-document-row.php:223
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-status-names.php:13
+#: classes/wpml-st/class-wpml-remote-string-translation.php:15
+msgid "Translation ready to download"
+msgstr "A fordítás letöltésre kész"
+
+#: classes/menu/dashboard/class-wpml-tm-dashboard-pagination.php:55
+#, php-format
+msgid "Displaying %1$s&#8211;%2$s of %3$s"
+msgstr "Megjelenítés: %1$s&#8211;%2$s / %3$s"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:78
+msgid "Bulk actions"
+msgstr "Tömeges műveletek"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:79
+msgid "Cancel jobs"
+msgstr "Feladatok megszakítása"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:80
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:171
+msgid "Get translations"
+msgstr "Fordítások lekérése"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:81
+#: classes/post-edit-screen/class-wpml-tm-post-edit-tm-editor-select.php:70
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:82
+msgid "First page"
+msgstr "Első oldal"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:83
+msgid "Previous page"
+msgstr "Előző oldal"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:84
+msgid "Next page"
+msgstr "Következő oldal"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:85
+msgid "Last page"
+msgstr "Utolsó oldal"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:86
+msgid "Navigation"
+msgstr "Navigáció"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:87
+msgid "0 items"
+msgstr "0 elem"
+
+#. translators: this is shown between two number: processed items and total
+#. number of items to process
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:88
+#: classes/menu/mcsetup/class-wpml-tm-mcs-pagination-render.php:91
+#: classes/notices/translation-jobs-migration/class-wpml-all-translation-jobs-migration-notice.php:17
+#: classes/notices/translation-jobs-migration/class-wpml-translation-jobs-missing-tp-id-migration-notice.php:18
+msgid "of"
+msgstr "/"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:89
+msgid "Select translator"
+msgstr "Fordító kiválasztása"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:90
+msgid "Assign"
+msgstr "Hozzárendelés"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:91
+msgid "External Actions"
+msgstr "Külső műveletek"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:92
+#: menu/wpml-tm-menus-management.php:644
+msgid "Actions"
+msgstr "Műveletek"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:93
+msgid "Actions that will happen on the translation service"
+msgstr "A fordítási szolgáltatáson végrehajtandó műveletek"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:97
+msgid "Select all"
+msgstr "Összes kiválasztása"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:102
+msgid "from"
+msgstr "ettől"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:105
+msgid "Ascending"
+msgstr "Növekvő"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:106
+msgid "Descending"
+msgstr "Csökkenő"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:107
+msgid "Sort"
+msgstr "Rendezés"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:108
+msgid "Direction"
+msgstr "Irány"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:109
+msgid "sort by"
+msgstr "rendezés alapja"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:110
+msgid "then sort by"
+msgstr "majd rendezés alapja"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:111
+msgid "translated by"
+msgstr "fordító szerint"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:112
+msgid "with"
+msgstr "tartalmaz"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:113
+msgid "sent between"
+msgstr "küldés dátuma között"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:114
+msgid "with deadline between"
+msgstr "határidővel, amely ... között van"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:115
+msgid "Reset filters"
+msgstr "Szűrők visszaállítása"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:116
+msgid "Select status"
+msgstr "Állapot kiválasztása"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:119
+msgid "Loading jobs..."
+msgstr "Feladatok betöltése..."
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:120
+msgid "Downloading translations..."
+msgstr "Fordítások letöltése..."
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:121
+msgid "Synchronizing batch..."
+msgstr "Köteg szinkronizálása..."
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:122
+msgid "Canceling jobs..."
+msgstr "Feladatok megszakítása..."
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:123
+msgid "Assigning translator..."
+msgstr "Fordító hozzárendelése..."
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:124
+msgid "Downloading XLIFF file..."
+msgstr "XLIFF-fájl letöltése..."
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:127
+msgid "Translations downloaded"
+msgstr "Fordítások letöltve"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:128
+msgid "Batch synchronization has been sent"
+msgstr "A köteg szinkronizálása elküldve"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:132
+msgid "Jobs canceled"
+msgstr "Feladatok megszakítva"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:133
+msgid "Translator assigned"
+msgstr "Fordító hozzárendelve"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:134
+msgid "XLIFF file downloaded"
+msgstr "XLIFF-fájl letöltve"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:138
+msgid "Check status"
+msgstr "Állapot ellenőrzése"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:139
+msgid "Translation is ready, no need to check its status"
+msgstr "A fordítás elkészült, az állapotát nem kell ellenőrizni"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:140
+msgid "Translation is cancelled, no need to check its status"
+msgstr "A fordítás megszakítva, az állapotát nem kell ellenőrizni"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:141
+msgid "Translation is ready to download, no need to check its status"
+msgstr "A fordítás letöltésre kész, az állapotát nem kell ellenőrizni"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:142
+msgid "Translation has already been synchronized, no need to check its status"
+msgstr "A fordítás már szinkronizálva van, az állapotát nem kell ellenőrizni"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:143
+msgid "This is a local job, no need to check its status"
+msgstr "Ez egy helyi feladat, ezért nem kell ellenőrizni az állapotát"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:147
+msgid "Download the translated XLIFF file"
+msgstr "A lefordított XLIFF-fájl letöltése"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:148
+msgid "This is a local job so it does not have an XLIFF file to download"
+msgstr "Ez egy helyi feladat, ezért nincs letölthető XLIFF-fájlja"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:152
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:176
+msgid "You cannot download the translation as it has not been completed"
+msgstr "A fordítás nem tölthető le, mert még nem készült el"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:156
+msgid ""
+"You cannot download the XLIFF file because TS_NAME has canceled the job"
+msgstr "Az XLIFF-fájl nem tölthető le, mert a TS_NAME megszakította a feladatot"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:163
+msgid "Cancel job"
+msgstr "Feladat megszakítása"
+
+#. translators: "%s" is replaced with the name of the translation service
+#. associated with the job.
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:165
+#, php-format
+msgid "Contact %s for cancellation"
+msgstr "A megszakítással kapcsolatban vegye fel a kapcsolatot a következővel: %s"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:166
+msgid "The job is already finished"
+msgstr "A feladat már befejeződött"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:167
+msgid "The job is already canceled"
+msgstr "A feladat már megszakítva"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:172
+msgid "You cannot download the translation for a local job"
+msgstr "Helyi feladat fordítása nem tölthető le"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:180
+msgid "You have already downloaded this job"
+msgstr "Ezt a feladatot már letöltötte"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-script-data.php:184
+msgid "You cannot download this job because TS_NAME has canceled it"
+msgstr "Ez a feladat nem tölthető le, mert a TS_NAME megszakította"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-status-names.php:9
+msgid "Cancelled"
+msgstr "Lemondva"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-status-names.php:12
+msgid "Needs update"
+msgstr "Frissítést igényel"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-status-names.php:17
+msgid "Completed"
+msgstr "Befejezve"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-translated_by_filters.php:26
+msgid "Anyone"
+msgstr "Bárki"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-translated_by_filters.php:34
+msgid "Any Translation Service"
+msgstr "Bármely fordítási szolgáltatás"
+
+#: classes/menu/jobs-list/class-wpml-tm-jobs-list-translated_by_filters.php:42
+msgid "Any WordPress Translator"
+msgstr "Bármely WordPress-fordító"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-ate-strings.php:36
+msgid "Advanced Translation Editor is not active yet"
+msgstr "A haladó fordításszerkesztő még nincs bekapcsolva"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-ate-strings.php:37
+msgid ""
+"Request activation to receive an email with directions to activate the "
+"service."
+msgstr "Kérje a bekapcsolást, hogy e-mailben megkapja a szolgáltatás bekapcsolására vonatkozó útmutatót."
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-ate-strings.php:42
+msgid "Request activation"
+msgstr "Bekapcsolás kérése"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-ate-strings.php:47
+msgid "Advanced Translation Editor is being activated"
+msgstr "A haladó fordításszerkesztő bekapcsolása folyamatban van"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-ate-strings.php:55
+msgid "Advanced Translation Editor is enabled and active"
+msgstr "A haladó fordításszerkesztő be van kapcsolva és aktív"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-ate-strings.php:58
+#: classes/menu/mcsetup/class-wpml-tm-mcs-ate-strings.php:66
+msgid "Advanced Translation Editor is active"
+msgstr "A haladó fordításszerkesztő aktív"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-ate-strings.php:63
+msgid ""
+"WPML's Advanced Translation Editor is enabled, but not all your translators "
+"can use it."
+msgstr "A WPML haladó fordításszerkesztője be van kapcsolva, de nem minden fordítója használhatja."
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-ate-strings.php:154
+msgid "Synchronize translators and translation managers"
+msgstr "Fordítók és fordításkezelők szinkronizálása"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-ate.php:51
+msgid "WPML support"
+msgstr "WPML támogatás"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-ate.php:59
+#, php-format
+msgid ""
+"Please try again in a few minutes. If the problem persists, please contact "
+"%s."
+msgstr "Kérjük, próbálja meg újra néhány perc múlva. Ha a probléma továbbra is fennáll, lépjen kapcsolatba a következővel: %s."
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-ate.php:82
+msgid ""
+"You can continue the Translation Management configuration later by going to "
+"WPML -> Settings -> How to translate posts and pages."
+msgstr "A fordításkezelés konfigurálását később is folytathatja a WPML -> beállítások -> bejegyzések és oldalak fordításának módja menüpontban."
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-custom-field-settings-menu.php:39
+#: classes/menu/mcsetup/class-wpml-tm-mcs-custom-field-settings-menu.php:208
+msgid "Don't translate"
+msgstr "Fordítás mellőzése"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-custom-field-settings-menu.php:40
+msgid "Copy from original to translation"
+msgstr "Másolás az eredetiből a fordításba"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-custom-field-settings-menu.php:41
+#: classes/menu/mcsetup/class-wpml-tm-mcs-custom-field-settings-menu.php:214
+msgid "Copy once"
+msgstr "Egyszeri másolás"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-custom-field-settings-menu.php:42
+#: classes/menu/mcsetup/class-wpml-tm-mcs-custom-field-settings-menu.php:217
+#: classes/menu/translation-queue/class-wpml-translations-queue-jobs-model.php:154
+#: menu/wpml-tm-menus-management.php:473
+msgid "Translate"
+msgstr "Lefordítás"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-custom-field-settings-menu.php:95
+msgid "Hide system fields"
+msgstr "Rendszermezők elrejtése"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-custom-field-settings-menu.php:96
+msgid "Show system fields"
+msgstr "Rendszermezők mutatása"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-custom-field-settings-menu.php:211
+msgctxt "Verb"
+msgid "Copy"
+msgstr "Másolás"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-pagination-ajax.php:58
+#: classes/menu/translation-services/troubleshooting/RefreshServices.php:67
+msgid "Invalid Request."
+msgstr "Érvénytelen kérés."
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-pagination-render.php:90
+msgid "Displaying"
+msgstr "Megjelenítve"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-pagination-render.php:92
+msgid "Display all results"
+msgstr "Összes találat megjelenítése"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-pagination-render.php:93
+msgid "Display 20 results per page"
+msgstr "20 találat megjelenítése oldalanként"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-pagination-render.php:94
+msgid "Nothing found"
+msgstr "Nem található semmi"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-post-custom-field-settings-menu.php:25
+#: menu/wpml-tm-menus-settings.php:47
+msgid "Custom Fields Translation"
+msgstr "Egyéni mezők fordítása"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-post-custom-field-settings-menu.php:39
+msgid ""
+"No custom fields found. It is possible that they will only show up here "
+"after you add more posts after installing a new plugin."
+msgstr "Nem találhatók egyéni mezők. Előfordulhat, hogy csak akkor jelennek meg itt, ha egy új bővítmény telepítése után további bejegyzéseket ad hozzá."
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-post-custom-field-settings-menu.php:50
+msgid "Custom fields"
+msgstr "Egyéni mezők"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-search-render.php:42
+msgid "Search for"
+msgstr "Keresés"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-term-custom-field-settings-menu.php:25
+#: menu/wpml-tm-menus-settings.php:48
+msgid "Custom Term Meta Translation"
+msgstr "Egyéni kifejezés-metaadatok fordítása"
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-term-custom-field-settings-menu.php:39
+msgid ""
+"No term meta found. It is possible that they will only show up here after "
+"you add/create them."
+msgstr "Nem találhatók kifejezés-metaadatok. Előfordulhat, hogy csak azután jelennek meg itt, hogy hozzáadja vagy létrehozza őket."
+
+#: classes/menu/mcsetup/class-wpml-tm-mcs-term-custom-field-settings-menu.php:50
+msgid "Term Meta"
+msgstr "Kifejezés metaadatai"
+
+#: classes/menu/mcsetup/class-wpml-translate-link-targets-ui.php:28
+msgid "Adjust links in posts so they point to the translated content"
+msgstr "Bejegyzések hivatkozásainak módosítása, hogy a lefordított tartalomra mutassanak"
+
+#: classes/menu/mcsetup/class-wpml-translate-link-targets-ui.php:29
+#, php-format
+msgid ""
+"All posts have been processed. %s links were changed to point to the "
+"translated content."
+msgstr "Az összes bejegyzés feldolgozása megtörtént. %s hivatkozás lett módosítva, hogy a lefordított tartalomra mutasson."
+
+#: classes/menu/mcsetup/class-wpml-translate-link-targets-ui.php:38
+msgid ""
+"Adjust links in posts and strings so they point to the translated content"
+msgstr "Bejegyzések és karakterláncok hivatkozásainak módosítása, hogy a lefordított tartalomra mutassanak"
+
+#: classes/menu/mcsetup/class-wpml-translate-link-targets-ui.php:39
+#, php-format
+msgid ""
+"All posts and strings have been processed. %s links were changed to point to"
+" the translated content."
+msgstr "Az összes bejegyzés és karakterlánc feldolgozása megtörtént. %s hivatkozás lett módosítva, hogy a lefordított tartalomra mutasson."
+
+#: classes/menu/mcsetup/class-wpml-translate-link-targets-ui.php:43
+#, php-format
+msgid "Processing posts... %1$s of %2$s done."
+msgstr "Bejegyzések feldolgozása... Elkészült: %1$s/%2$s"
+
+#: classes/menu/mcsetup/class-wpml-translate-link-targets-ui.php:45
+#, php-format
+msgid "Processing strings... %1$s of %2$s done."
+msgstr "Karakterláncok feldolgozása... Elkészült: %1$s/%2$s"
+
+#: classes/menu/mcsetup/class-wpml-translate-link-targets-ui.php:56
+msgid "Scan now and adjust links"
+msgstr "Vizsgálat indítása és hivatkozások módosítása"
+
+#: classes/menu/translation-basket/class-wpml-tm-translate-independently.php:93
+msgid "Failed to disconnect posts"
+msgstr "A bejegyzések leválasztása sikertelen"
+
+#: classes/menu/translation-basket/class-wpml-tm-translate-independently.php:100
+msgid "No duplicate posts found to disconnect."
+msgstr "Nem találhatók leválasztható duplikált bejegyzések."
+
+#: classes/menu/translation-basket/class-wpml-tm-translate-independently.php:107
+msgid "Successfully disconnected posts"
+msgstr "A bejegyzések leválasztása sikeres"
+
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:75
+#: classes/menu/translation-queue/class-wpml-translations-queue-jobs-model.php:59
+#: classes/words-count/report/wpml-tm-word-count-report-view.php:27
+#: menu/wpml-tm-menus-management.php:606
+msgid "Type"
+msgstr "Típus"
+
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:78
+msgid "Words to translate"
+msgstr "Fordítandó szavak"
+
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:117
+#, php-format
+msgid "%1$s to %2$s"
+msgstr "%1$s és %2$s között"
+
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:125
+#, php-format
+msgid "%1$s to %2$s and %3$s"
+msgstr "%1$s → %2$s és %3$s"
+
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:160
+msgid "Remove from Translation Basket"
+msgstr "Eltávolítás a fordítási kosárból"
+
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:165
+msgid "The basket is empty"
+msgstr "A fordítási kosár üres"
+
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:288
+msgid "Reusable Block"
+msgstr "Újrafelhasználható blokk"
+
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:293
+msgid ""
+"WPML added this item because it's linked to another in the basket. If you "
+"wish, you can manually remove it."
+msgstr "A WPML azért adta hozzá ezt a tételt, mert a kosár egy másik tételéhez kapcsolódik. Ha szeretné, manuálisan eltávolíthatja."
+
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:297
+#, php-format
+msgid "automatically added %s"
+msgstr "automatikusan hozzáadva %s"
+
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:369
+msgid "Clear Basket"
+msgstr "Kosár kiürítése"
+
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:401
+#, php-format
+msgid ""
+"%1$s and the %2$s use a translation memory, which can reduce the number of "
+"words you need to translate."
+msgstr "%1$s és a %2$s fordítási memóriát használnak, amely csökkentheti a lefordítandó szavak számát."
+
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:408
+#, php-format
+msgid ""
+"%s uses a translation memory, which can reduce the number of words you need "
+"to translate."
+msgstr "%s fordítási memóriát használ, amely csökkentheti a lefordítandó szavak számát."
+
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:411
+#, php-format
+msgid ""
+"The %s uses a translation memory, which can reduce the number of words you "
+"need to translate."
+msgstr "A %s fordítási memóriát használ, amely csökkentheti a lefordítandó szavak számát."
+
+#. translators: "%s" is replaced by the name of a translation service.
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:420
+#, php-format
+msgid "%s may produce a different word count"
+msgstr "A(z) %s eltérő szószámot eredményezhet"
+
+#. translators: "%s" is replaced by the the previous string.
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:424
+#, php-format
+msgid "The number of words WPML will send to translation (%s):"
+msgstr "A WPML által fordításra küldendő szavak száma (%s):"
+
+#: classes/menu/translation-basket/sitepress-table-basket.class.php:426
+msgid "The number of words WPML will send to translation:"
+msgstr "A WPML által fordításra küldendő szavak száma:"
+
+#: classes/menu/translation-basket/Strings.php:34
+msgid "Working..."
+msgstr "Folyamatban..."
+
+#: classes/menu/translation-basket/Strings.php:35
+msgid "An error occurred:"
+msgstr "Hiba történt:"
+
+#: classes/menu/translation-basket/Strings.php:36
+msgid "You are not allowed to run this action."
+msgstr "Ön nem jogosult ennek a műveletnek a végrehajtására."
+
+#: classes/menu/translation-basket/Strings.php:40
+msgid "Batch"
+msgstr "Köteg"
+
+#: classes/menu/translation-basket/Strings.php:41
+msgid "No selected translators!"
+msgstr "Nincsenek kiválasztott fordítók!"
+
+#: classes/menu/translation-basket/Strings.php:42
+msgid "Rollback jobs..."
+msgstr "Feladatok visszaállítása..."
+
+#: classes/menu/translation-basket/Strings.php:43
+msgid "Batch rolled back"
+msgstr "A köteg visszaállítva"
+
+#: classes/menu/translation-basket/Strings.php:44
+msgid "Errors:"
+msgstr "Hibák:"
+
+#: classes/menu/translation-basket/Strings.php:46
+msgid "Preparing your content for translation"
+msgstr "A tartalom előkészítése fordításra"
+
+#: classes/menu/translation-basket/Strings.php:47
+msgid "Sending your jobs to translation"
+msgstr "Feladatok küldése fordításra"
+
+#: classes/menu/translation-basket/Strings.php:48
+msgid "Sending your jobs to professional translation"
+msgstr "Feladatok küldése professzionális fordításra"
+
+#: classes/menu/translation-basket/Strings.php:60
+msgctxt "1/2 Confirm to disconnect duplicates"
+msgid "You are about to translate duplicated posts."
+msgstr "Ön duplikált bejegyzések fordítására készül."
+
+#: classes/menu/translation-basket/Strings.php:68
+msgctxt "2/2 Confirm to disconnect duplicates"
+msgid ""
+"These items will be automatically disconnected from originals, so "
+"translation is not lost when you update the originals."
+msgstr "Ezek a tételek automatikusan leválnak az eredetiekről, így az eredetik frissítésekor nem vész el a fordítás."
+
+#: classes/menu/translation-basket/Strings.php:82
+#: classes/menu/translation-services/ActiveServiceTemplate.php:95
+#: menu/wpml-tm-menus-management.php:177
+msgid "Translation Dashboard"
+msgstr "Fordítási vezérlőpult"
+
+#: classes/menu/translation-basket/Strings.php:86
+msgid "WPML->Settings->Translation notifications"
+msgstr "WPML->beállítások->fordítási értesítések"
+
+#: classes/menu/translation-basket/Strings.php:104
+msgid "All done. What happens next?"
+msgstr "Minden kész. Mi történik ezután?"
+
+#: classes/menu/translation-basket/Strings.php:105
+msgid ""
+"WPML sent emails to the translators, telling them about the new work from "
+"you."
+msgstr "A WPML e-maileket küldött a fordítóknak, hogy tájékoztassa őket az Ön által beküldött új munkákról."
+
+#: classes/menu/translation-basket/Strings.php:110
+#, php-format
+msgid ""
+"Your translators should log-in to their accounts in this site and go to "
+"%1$sWPML->Translations%2$s. There, they will see the jobs that are waiting "
+"for them."
+msgstr "A fordítóknak be kell jelentkezniük a fiókjukba ezen a webhelyen, majd a %1$sWPML->Fordítások%2$s oldalra kell lépniük. Ott látni fogják a rájuk váró feladatokat."
+
+#: classes/menu/translation-basket/Strings.php:118
+#, php-format
+msgid ""
+"You can always follow the progress of translation in the %1$s. For a more "
+"detailed view and to cancel jobs, visit the %2$s list."
+msgstr "A fordítás előrehaladását bármikor nyomon követheti a(z) %1$s oldalon. Részletesebb nézetért és a feladatok visszavonásához keresse fel a %2$s listát."
+
+#: classes/menu/translation-basket/Strings.php:126
+#, php-format
+msgid "You can control email notifications to translators and yourself in %s."
+msgstr "A fordítóknak és Önnek küldött e-mailes értesítéseket a(z) %s oldalon szabályozhatja."
+
+#: classes/menu/translation-basket/Strings.php:141
+#: classes/menu/translation-basket/Strings.php:189
+msgid "Ready!"
+msgstr "Kész!"
+
+#. translators: This text is followed by 'Translation Queue'. eg To translate
+#. those jobs, go to the Translation Queue
+#: classes/menu/translation-basket/Strings.php:143
+msgid "To translate those jobs, go to "
+msgstr "Ezeknek a feladatoknak a lefordításához lépjen ide: "
+
+#: classes/menu/translation-basket/Strings.php:145
+msgid "WPML->Translation Queue"
+msgstr "WPML->Fordítási sor"
+
+#: classes/menu/translation-basket/Strings.php:172
+msgid "Want to translate everything automatically?"
+msgstr "Szeretne mindent automatikusan lefordítani?"
+
+#: classes/menu/translation-basket/Strings.php:174
+#, php-format
+msgid "Go to the %s tab for automatic translation and time-saving goodies."
+msgstr "Az automatikus fordításhoz és az időt megtakarító funkciókhoz lépjen a(z) %s fülre."
+
+#: classes/menu/translation-basket/Strings.php:181
+msgid "Don’t offer this again"
+msgstr "Ne ajánlja fel ezt újra"
+
+#: classes/menu/translation-basket/Strings.php:192
+#, php-format
+msgid "You can check the status of these jobs in %s."
+msgstr "Ezeknek a feladatoknak az állapotát a(z) %s oldalon ellenőrizheti."
+
+#: classes/menu/translation-basket/Strings.php:208
+msgid "WPML->Translation Jobs"
+msgstr "WPML->Fordítási feladatok"
+
+#: classes/menu/translation-basket/Strings.php:216
+msgid "WPML->Translation Management->Translation Tools"
+msgstr "WPML->Fordításkezelés->Fordítási eszközök"
+
+#: classes/menu/translation-basket/Strings.php:226
+msgid ""
+"WPML could not send notification emails to the translators, telling them "
+"about the new work from you."
+msgstr "A WPML nem tudott értesítő e-maileket küldeni a fordítóknak az Ön által beküldött új munkákról."
+
+#: classes/menu/translation-basket/wpml-basket-tab-ajax.class.php:89
+#, php-format
+msgid ""
+"You've sent the content for translation to %s. Please continue to their "
+"site, to make sure that the translation starts."
+msgstr "Elküldte a tartalmat fordításra a(z) %s szolgáltatásnak. Kérjük, lépjen tovább a szolgáltatás webhelyére, és ellenőrizze, hogy megkezdődik-e a fordítás."
+
+#: classes/menu/translation-basket/wpml-basket-tab-ajax.class.php:97
+#, php-format
+msgid "Continue to %s"
+msgstr "Folytatás a(z) %s szolgáltatáshoz"
+
+#: classes/menu/translation-basket/wpml-basket-tab-ajax.class.php:102
+#, php-format
+msgid ""
+"You've sent the content for translation to %1$s. Currently, we are "
+"processing it and delivering to %1$s."
+msgstr "Elküldte a tartalmat fordításra a(z) %1$s szolgáltatásnak. Jelenleg feldolgozzuk, és továbbítjuk a(z) %1$s szolgáltatásnak."
+
+#: classes/menu/translation-basket/wpml-basket-tab-ajax.class.php:109
+msgid "Check the batch delivery status"
+msgstr "A kötegelt kézbesítés állapotának ellenőrzése"
+
+#: classes/menu/translation-basket/wpml-basket-tab-ajax.class.php:248
+msgid "No items found in basket"
+msgstr "Nem található tétel a kosárban"
+
+#: classes/menu/translation-basket/wpml-basket-tab-ajax.class.php:262
+#, php-format
+msgid "%s items in basket:"
+msgstr "%s tétel a kosárban:"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor-header.php:15
+#, php-format
+msgid "%1$s translation: %2$s"
+msgstr "%1$s fordítása: %2$s"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor-header.php:17
+#, php-format
+msgid "View %s"
+msgstr "%s megtekintése"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:182
+msgid ""
+"We see you're translating content that contains HTML. Switch to the Advanced"
+" Translation Editor to translate content without the risk of breaking your "
+"HTML code."
+msgstr "Azt látjuk, hogy HTML-t tartalmazó tartalmat fordít. Váltson a haladó fordításszerkesztőre, hogy a HTML-kód megsérülésének kockázata nélkül fordíthassa le a tartalmat."
+
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:184
+msgid "Read more..."
+msgstr "Bővebben..."
+
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:201
+msgid ""
+"This content came from the Block editor and you need to translate it "
+"carefully so that formatting is not broken."
+msgstr "Ez a tartalom a blokkszerkesztőből származik, ezért gondosan kell lefordítania, hogy a formázás ne sérüljön."
+
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:202
+msgid "Learn how to translate content that comes from Block editor"
+msgstr "Ismerje meg, hogyan fordíthatja le a blokkszerkesztőből származó tartalmat"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:222
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:113
+msgid "Copy all fields from original"
+msgstr "Összes mező másolása az eredetiből"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:229
+msgid "Some fields in translation are already filled!"
+msgstr "A fordítás egyes mezői már ki vannak töltve!"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:231
+msgid "You have two ways to copy content from the original language:"
+msgstr "Kétféleképpen másolhat tartalmat az eredeti nyelvből:"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:234
+msgid "copy to empty fields only"
+msgstr "másolás csak az üres mezőkbe"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:235
+msgid "copy and overwrite all fields"
+msgstr "másolás és az összes mező felülírása"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:246
+msgid "Copy to empty fields only"
+msgstr "Másolás csak az üres mezőkbe"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:248
+msgid "Copy & Overwrite all fields"
+msgstr "Másolás és az összes mező felülírása"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:259
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:282
+msgid "Edit independently"
+msgstr "Önálló szerkesztés"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:265
+msgid "This document is a duplicate of:"
+msgstr "Ez a dokumentum a következő dokumentum duplikátuma:"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor-ui.php:273
+#, php-format
+msgid "WPML will no longer synchronize this %s with the original content."
+msgstr "A WPML többé nem fogja szinkronizálni ezt a(z) %s tartalmat az eredetivel."
+
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:55
+msgid "Don't show this again."
+msgstr "Ne jelenjen meg újra."
+
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:59
+msgid ""
+"<p>The administrator has disabled term translation from the translation editor. </p>\n"
+"<p>If your access permissions allow you can change this under \"Translation Management\" - \"Multilingual Content Setup\" - \"Block translating taxonomy terms that already got translated\". </p>\n"
+"<p>Please note that editing terms from the translation editor will affect all posts that have the respective terms associated.</p>"
+msgstr "<p>Az adminisztrátor letiltotta a kifejezések fordítását a fordításszerkesztőben. </p>\n<p>Ha a hozzáférési jogosultságai ezt engedélyezik, módosíthatja ezt a „Fordításkezelés” – „Többnyelvű tartalom beállítása” – „A már lefordított osztályozási kifejezések fordításának blokkolása” beállításnál. </p>\n<p>Kérjük, vegye figyelembe, hogy a kifejezések fordításszerkesztőben történő szerkesztése minden olyan bejegyzést érint, amelyhez az adott kifejezések hozzá vannak rendelve.</p>"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:65
+msgid ""
+"Please be advised that editing this term's translation here will change the "
+"value of the term in general. The changes made here, will not only affect "
+"this post!"
+msgstr "Kérjük, vegye figyelembe, hogy ha itt szerkeszti a kifejezés fordítását, azzal a kifejezés értékét globálisan módosítja. Az itt végrehajtott módosítások nemcsak ezt a bejegyzést érintik!"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:69
+msgid "Terms translation is disabled"
+msgstr "A kifejezések fordítása ki van kapcsolva"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:73
+msgid "You have unsaved work. Are you sure you want to close without saving?"
+msgstr "Vannak még nem mentett módosításai. Biztosan mentés nélkül szeretné bezárni?"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:85
+msgid "Hide completed"
+msgstr "Befejezett elemek elrejtése"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:89
+msgid "Save & Close"
+msgstr "Mentés és bezárás"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:94
+msgid "Saving..."
+msgstr "Mentés..."
+
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:98
+msgid "Translation is complete"
+msgstr "A fordítás befejeződött"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:105
+msgid "Original"
+msgstr "Eredeti"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:109
+msgid "Translation to"
+msgstr "Fordítás ide"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:117
+#: classes/menu/translation-queue/class-wpml-translations-queue-jobs-model.php:164
+msgid "Resign"
+msgstr "Visszalépés"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:121
+#: classes/menu/translation-queue/class-wpml-translations-queue-jobs-model.php:64
+msgid "Are you sure you want to resign from this job?"
+msgstr "Biztosan vissza szeretne lépni ebből a feladatból?"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:126
+msgid "You have unsaved changes!"
+msgstr "Mentetlen módosításai vannak!"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:130
+msgid "Copy from original"
+msgstr "Másolás az eredetiből"
+
+#: classes/menu/translation-editor/class-wpml-translation-editor.php:134
+msgid "Show differences"
+msgstr "Különbségek megjelenítése"
+
+#: classes/menu/translation-editor/fields/model/class-wpml-editor-ui-field-image.php:16
+msgid "Caption"
+msgstr "Felirat"
+
+#: classes/menu/translation-editor/fields/model/class-wpml-editor-ui-field-image.php:17
+msgid "Alt Text"
+msgstr "Alternatív szöveg"
+
+#: classes/menu/translation-notifications/class-wpml-tm-emails-settings.php:38
+msgid "Notification emails to translators"
+msgstr "Értesítő e-mailek a fordítóknak"
+
+#: classes/menu/translation-notifications/class-wpml-tm-emails-settings.php:39
+msgid "Notify translators when new jobs are waiting for them"
+msgstr "Értesítse a fordítókat, ha új feladatok várnak rájuk"
+
+#: classes/menu/translation-notifications/class-wpml-tm-emails-settings.php:40
+msgid "Include XLIFF files in the notification emails"
+msgstr "XLIFF-fájlok csatolása az értesítő e-mailekhez"
+
+#: classes/menu/translation-notifications/class-wpml-tm-emails-settings.php:41
+msgid "Notify translators when they are removed from jobs"
+msgstr "Értesítse a fordítókat, ha eltávolítják őket a feladatokból"
+
+#: classes/menu/translation-notifications/class-wpml-tm-emails-settings.php:42
+msgid "Notification emails to the translation manager"
+msgstr "Értesítő e-mailek a fordításkezelőnek"
+
+#: classes/menu/translation-notifications/class-wpml-tm-emails-settings.php:43
+#, php-format
+msgid "Notify the translation manager when jobs are completed %s"
+msgstr "Értesítse a fordításkezelőt, ha a feladatok befejeződtek: %s"
+
+#: classes/menu/translation-notifications/class-wpml-tm-emails-settings.php:44
+#, php-format
+msgid "Notify the translation manager when jobs are late by %s days"
+msgstr "Értesítse a fordításkezelőt, ha a feladatok %s napot késnek"
+
+#: classes/menu/translation-notifications/class-wpml-tm-emails-settings.php:67
+msgid "immediately"
+msgstr "azonnal"
+
+#: classes/menu/translation-notifications/class-wpml-tm-emails-settings.php:72
+msgid "once a day"
+msgstr "naponta egyszer"
+
+#: classes/menu/translation-notifications/class-wpml-tm-emails-settings.php:77
+msgid "once a week"
+msgstr "hetente egyszer"
+
+#: classes/menu/translation-queue/class-wpml-translations-queue-jobs-model.php:57
+msgid "Job ID"
+msgstr "Feladat-ID"
+
+#: classes/menu/translation-queue/class-wpml-translations-queue-jobs-model.php:63
+msgid "Check all"
+msgstr "Összes kijelölése"
+
+#: classes/menu/translation-queue/class-wpml-translations-queue-jobs-model.php:124
+msgid " - (needs update)"
+msgstr " - (frissítés szükséges)"
+
+#: classes/menu/translation-queue/class-wpml-translations-queue-jobs-model.php:157
+msgid "Take and translate"
+msgstr "Feladat átvétele és fordítása"
+
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:123
+msgid "You've resigned from this job."
+msgstr "Ön visszalépett ebből a feladatból."
+
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:155
+#: inc/translation-jobs/helpers/wpml-save-translation-data-action.class.php:260
+msgid "Translation updated: "
+msgstr "Fordítás frissítve: "
+
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:172
+#: inc/translation-jobs/helpers/wpml-save-translation-data-action.class.php:258
+msgid "Translation added: "
+msgstr "Fordítás hozzáadva: "
+
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:180
+msgid "Translation has been removed by admin"
+msgstr "A fordítást az admin távolította el"
+
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:236
+msgid "Translations queue"
+msgstr "Fordítási sor"
+
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:239
+msgid "No translation languages configured for this user."
+msgstr "Ehhez a felhasználóhoz nincs beállítva fordítási nyelv."
+
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:269
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:101
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:121
+msgid "From"
+msgstr "Kezdő dátum"
+
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:300
+msgid "To"
+msgstr "Befejezés dátuma"
+
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:353
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:758
+msgid "Available to translate"
+msgstr "Fordításra elérhető"
+
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:500
+msgid "No translation jobs found"
+msgstr "Nem található fordítási feladat"
+
+#: classes/menu/translation-queue/class-wpml-translations-queue.php:529
+msgid "Not set"
+msgstr "Nincs beállítva"
+
+#. translators: "Translation Roles" will be used in other strings and wrapped
+#. with HTML tags to make it more prominent
+#: classes/menu/translation-roles/class-wpml-tm-translation-roles-section.php:68
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:152
+msgid "Translation Roles"
+msgstr "Fordítói szerepkörök"
+
+#. translators: "Translators" will be used in other strings and wrapped with
+#. HTML tags to make it more prominent
+#: classes/menu/translation-roles/class-wpml-tm-translation-roles-section.php:69
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:56
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:145
+msgid "Translators"
+msgstr "Fordítók"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:57
+msgid ""
+"WPML’s Translation Editor makes it easy for your own translators to "
+"translate content in your site. You can create accounts for new translators "
+"or use existing WordPress users as your translators."
+msgstr "A WPML fordításszerkesztővel saját fordítói egyszerűen lefordíthatják a webhelye tartalmát. Új fordítói fiókokat hozhat létre, vagy meglévő WordPress-felhasználókat is beállíthat fordítóként."
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:59
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:21
+#: classes/menu/translation-services/MainLayoutTemplate.php:71
+msgid "Name"
+msgstr "Név"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:60
+msgid "Email"
+msgstr "E-mail"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:61
+msgid "Language Pairs"
+msgstr "Nyelvpárok"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:64
+#: classes/notices/wpml-tm-post-edit-notices.php:157
+#: classes/wizard/steps/class-wpml-tm-wizard-editor.php:85
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:48
+msgid "Go back"
+msgstr "Vissza"
+
+#. translators: Translation Management wizard - Move to the next step of the
+#. wizard
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:65
+#: classes/wizard/steps/class-wpml-tm-wizard-editor.php:84
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:63
+msgid "Continue"
+msgstr "Folytatás"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:66
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:27
+msgid "First name:"
+msgstr "Keresztnév:"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:67
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:28
+msgid "Last name:"
+msgstr "Vezetéknév:"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:68
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:29
+msgid "Email:"
+msgstr "E-mail:"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:69
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:30
+msgid "User name:"
+msgstr "Felhasználónév:"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:70
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:31
+msgid "WordPress role:"
+msgstr "WordPress-szerepkör:"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:71
+#: classes/menu/translation-roles/class-wpml-translator-view.php:31
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:72
+#: classes/menu/translation-roles/class-wpml-translator-view.php:32
+msgid "Edit Languages"
+msgstr "Nyelvek szerkesztése"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:73
+msgid "Skip this step - I don't need to add more translators"
+msgstr "Lépés kihagyása – nincs szükségem további fordítók hozzáadására"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:74
+msgid ""
+"Only Translation Managers can add translators to the site. You can assign a "
+"different WordPress user to be the site's Translation Manager or make "
+"yourself a Translation Manager."
+msgstr "Csak a fordításkezelők adhatnak hozzá fordítókat a webhelyhez. Kijelölhet egy másik WordPress-felhasználót a webhely fordításkezelőjének, vagy saját magát is beállíthatja fordításkezelőként."
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:75
+msgid "Yes"
+msgstr "Igen"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:76
+#: classes/menu/translation-roles/class-wpml-translator-view.php:33
+msgid "No"
+msgstr "Nem"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:77
+msgid "You can translate to and from all languages"
+msgstr "Bármelyik nyelvről bármelyik nyelvre fordíthat"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:78
+msgid "Remove me as a translator"
+msgstr "Fordítói szerepköröm eltávolítása"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:94
+msgid "Set language pair(s)"
+msgstr "Nyelvpárok beállítása"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:96
+msgid "Previous"
+msgstr "Előző"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:98
+msgid "Select an existing user and set as Translator"
+msgstr "Meglévő felhasználó kiválasztása és beállítása fordítóként"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:99
+msgid "Create a new user and set as Translator"
+msgstr "Új felhasználó létrehozása és beállítása fordítóként"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:100
+msgid "Set language pair(s) for Translator %USERNAME%"
+msgstr "Adja meg a fordító (%USERNAME%) nyelvpárjait"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:103
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:123
+msgid "--Choose language--"
+msgstr "--Nyelv kiválasztása--"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:104
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:124
+msgid "Add more language pairs for this translator"
+msgstr "További nyelvpárok hozzáadása ehhez a fordítóhoz"
+
+#: classes/menu/translation-roles/class-wpml-tm-translators-view.php:118
+msgid "Edit language pair(s) for translator"
+msgstr "Nyelvpárok szerkesztése a fordító számára"
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-ajax-actions.php:53
+#, php-format
+msgid ""
+"You are the Translation Manager for %s. This role lets you manage everything"
+" related to translation for this site."
+msgstr "Ön a(z) %s fordításkezelője. Ez a szerepkör lehetővé teszi, hogy mindent kezeljen, ami a webhely fordításával kapcsolatos."
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-ajax-actions.php:54
+msgid ""
+"Before you can start sending content to translation, you need to complete a "
+"short setup."
+msgstr "Mielőtt elkezdené a tartalom fordításra küldését, el kell végeznie egy rövid beállítást."
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-ajax-actions.php:55
+msgid "Set-up the translation"
+msgstr "Fordítás beállítása"
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-ajax-actions.php:57
+msgid "At your service"
+msgstr "Az Ön rendelkezésére állunk"
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-ajax-actions.php:59
+#, php-format
+msgid "Administrator for %s"
+msgstr "A(z) %s adminisztrátora"
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-ajax-actions.php:64
+#, php-format
+msgid "You are now the Translation Manager for %s - action needed"
+msgstr "Ön mostantól a(z) %s fordításkezelője – művelet szükséges"
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:20
+msgid "Translation Managers"
+msgstr "Fordításkezelők"
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:22
+#: classes/menu/translation-roles/class-wpml-translator-view.php:30
+msgid "Edit user"
+msgstr "Felhasználó szerkesztése"
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:23
+msgid "Remove Translation Manager"
+msgstr "Fordításkezelő eltávolítása"
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:24
+msgid "This site doesn't yet have a Translation Manager."
+msgstr "Ehhez a webhelyhez még nincs fordításkezelő beállítva."
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:25
+msgid "Search for user"
+msgstr "Felhasználó keresése"
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:26
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:35
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:45
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:46
+msgid "Add a Translation Manager"
+msgstr "Fordításkezelő hozzáadása"
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:32
+msgid "Select an existing WordPress user (needs to be an editor or above)"
+msgstr "Meglévő WordPress-felhasználó kiválasztása (szerkesztő vagy magasabb szerepkör szükséges)"
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:33
+msgid "Create a new user to be the Translation Manager"
+msgstr "Új felhasználó létrehozása fordításkezelőként"
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:34
+msgid "Set a Translation Manager"
+msgstr "Fordításkezelő beállítása"
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:48
+msgid "Select an existing user and set as Translation Manager"
+msgstr "Meglévő felhasználó kiválasztása és beállítása fordításkezelőként"
+
+#: classes/menu/translation-roles/class-wpml-translation-manager-view.php:49
+msgid "Create a new user and set as Translation Manager"
+msgstr "Új felhasználó létrehozása és beállítása fordításkezelőként"
+
+#: classes/menu/translation-roles/class-wpml-translation-roles-ajax-actions.php:47
+#: classes/menu/translation-roles/class-wpml-translation-roles-ajax-actions.php:89
+msgid "Could not find user!"
+msgstr "A felhasználó nem található!"
+
+#: classes/menu/translation-roles/class-wpml-translation-roles-ajax-actions.php:98
+msgid "Failed to send email"
+msgstr "Nem sikerült elküldeni az e-mailt"
+
+#: classes/menu/translation-services/ActivationAjax.php:74
+msgid ""
+"It was not possible to refresh the active translation service information."
+msgstr "Nem sikerült frissíteni az aktív fordítási szolgáltatás adatait."
+
+#: classes/menu/translation-services/ActivationAjax.php:127
+msgid "You are not allowed to perform this action."
+msgstr "Nincs jogosultsága a művelet végrehajtásához."
+
+#: classes/menu/translation-services/ActiveServiceTemplate.php:26
+msgid "Active service:"
+msgstr "Aktív szolgáltatás:"
+
+#: classes/menu/translation-services/ActiveServiceTemplate.php:29
+#, php-format
+msgid "Enter here your %s authentication details"
+msgstr "Adja meg itt a(z) %s hitelesítési adatait"
+
+#: classes/menu/translation-services/ActiveServiceTemplate.php:37
+#, php-format
+msgid "You can find API token at %s site"
+msgstr "Az API-tokent a(z) %s webhelyen találja"
+
+#: classes/menu/translation-services/ActiveServiceTemplate.php:39
+#, php-format
+msgid "%s authentication"
+msgstr "%s hitelesítés"
+
+#: classes/menu/translation-services/ActiveServiceTemplate.php:42
+msgid "Refresh language pairs"
+msgstr "Nyelvpárok frissítése"
+
+#: classes/menu/translation-services/ActiveServiceTemplate.php:43
+msgid "Refresh information"
+msgstr "Információk frissítése"
+
+#: classes/menu/translation-services/ActiveServiceTemplate.php:44
+msgid "documentation"
+msgstr "dokumentáció"
+
+#: classes/menu/translation-services/ActiveServiceTemplate.php:45
+msgid "Refreshing translation service information..."
+msgstr "Fordítási szolgáltatás adatainak frissítése..."
+
+#. translators: sentence 1/3: create account with the translation service
+#. ("%1$s" is the service name)
+#: classes/menu/translation-services/ActiveServiceTemplate.php:60
+#, php-format
+msgid ""
+"To send content for translation to %1$s, you need to have an %1$s account."
+msgstr "Ha tartalmat szeretne küldeni fordításra a(z) %1$s szolgáltatásnak, rendelkeznie kell fiókkal a(z) %1$s szolgáltatásnál."
+
+#. translators: sentence 2/3: create account with the translation service
+#. ("one" is "one account)
+#: classes/menu/translation-services/ActiveServiceTemplate.php:65
+msgid ""
+"If you don't have one, you can create it after clicking the authenticate "
+"button."
+msgstr "Ha még nincs fiókja, a hitelesítés gombra kattintás után létrehozhat egyet."
+
+#. translators: sentence 3/3: create account with the translation service
+#. ("%2$s" is "documentation")
+#: classes/menu/translation-services/ActiveServiceTemplate.php:70
+#, php-format
+msgid "Please, check the %2$s page for more details."
+msgstr "További részletekért tekintse meg a(z) %2$s oldalt."
+
+#: classes/menu/translation-services/ActiveServiceTemplate.php:78
+msgid "De-authorize"
+msgstr "Hitelesítés visszavonása"
+
+#: classes/menu/translation-services/ActiveServiceTemplate.php:79
+msgid "Update credentials"
+msgstr "Hitelesítési adatok frissítése"
+
+#: classes/menu/translation-services/ActiveServiceTemplate.php:99
+#, php-format
+msgid "Success! You can now send content to %s."
+msgstr "Sikeres művelet! Most már küldhet tartalmat a(z) %s szolgáltatásnak."
+
+#: classes/menu/translation-services/ActiveServiceTemplate.php:105
+#, php-format
+msgid "Go to the %s to choose the content and send it to translation."
+msgstr "Lépjen a(z) %s oldalra a tartalom kiválasztásához és fordításra küldéséhez."
+
+#: classes/menu/translation-services/AuthenticationAjax.php:38
+msgid "Service activated."
+msgstr "Szolgáltatás aktiválva."
+
+#: classes/menu/translation-services/AuthenticationAjax.php:39
+#: classes/menu/translation-services/AuthenticationAjax.php:58
+msgid ""
+"The authentication didn't work. Please make sure you entered your details "
+"correctly and try again."
+msgstr ""
+"A hitelesítés nem működött. Kérjük, ellenőrizze, hogy helyesen adta meg az "
+"adatait, és próbálja újra."
+
+#: classes/menu/translation-services/AuthenticationAjax.php:57
+msgid "Service credentials updated."
+msgstr "A szolgáltatás hitelesítési adatai frissültek."
+
+#: classes/menu/translation-services/AuthenticationAjax.php:74
+msgid "Service invalidated."
+msgstr "A szolgáltatás érvénytelenítése megtörtént."
+
+#: classes/menu/translation-services/AuthenticationAjax.php:75
+msgid "Unable to invalidate this service. Please contact WPML support."
+msgstr "Nem sikerült érvényteleníteni ezt a szolgáltatást. Kérjük, forduljon a WPML támogatásához."
+
+#: classes/menu/translation-services/AuthenticationAjax.php:102
+#: classes/translation-proxy/class-wpml-tp-refresh-language-pairs.php:44
+msgid "Invalid Request"
+msgstr "Érvénytelen kérés"
+
+#: classes/menu/translation-services/MainLayoutTemplate.php:48
+msgid ""
+"WPML cannot load the list of translation services. This can be a connection "
+"problem. Please wait a minute and reload this page."
+msgstr "A WPML nem tudja betölteni a fordítási szolgáltatások listáját. Ezt kapcsolódási probléma okozhatja. Kérjük, várjon egy percet, majd töltse be újra ezt az oldalt."
+
+#: classes/menu/translation-services/MainLayoutTemplate.php:52
+#, php-format
+msgid "If the problem continues, please contact %s."
+msgstr "Ha a probléma továbbra is fennáll, kérjük, vegye fel a kapcsolatot a következővel: %s."
+
+#: classes/menu/translation-services/MainLayoutTemplate.php:56
+msgid "Activate"
+msgstr "Bekapcsolás"
+
+#: classes/menu/translation-services/MainLayoutTemplate.php:57
+#: classes/wizard/class-wpml-tm-setup-wizard.php:60
+msgid "Documentation"
+msgstr "Dokumentáció"
+
+#: classes/menu/translation-services/MainLayoutTemplate.php:59
+msgid "Looking for a different translation service?"
+msgstr "Másik fordítási szolgáltatást keres?"
+
+#: classes/menu/translation-services/MainLayoutTemplate.php:64
+msgid "Tell us which one"
+msgstr "Mondja el, melyiket"
+
+#: classes/menu/translation-services/MainLayoutTemplate.php:67
+msgid "Search"
+msgstr "Keresés"
+
+#: classes/menu/translation-services/MainLayoutTemplate.php:68
+msgid "Clear search"
+msgstr "Keresés törlése"
+
+#: classes/menu/translation-services/MainLayoutTemplate.php:73
+msgid "Ranking"
+msgstr "Rangsor"
+
+#: classes/menu/translation-services/NoSiteKeyTemplate.php:23
+msgid "Please register WPML to enable the professional translation option"
+msgstr "Kérjük, regisztrálja a WPML-t a professzionális fordítási lehetőség bekapcsolásához"
+
+#: classes/menu/translation-services/Section.php:93
+msgid "Translation Services"
+msgstr "Fordítási szolgáltatások"
+
+#: classes/menu/translation-services/ServicesRetriever.php:31
+msgid "Other Translation Services"
+msgstr "Egyéb fordítási szolgáltatások"
+
+#: classes/menu/translation-services/ServicesRetriever.php:36
+msgid "Translation Management System"
+msgstr "Fordításkezelő rendszer"
+
+#: classes/menu/translation-services/ServicesRetriever.php:45
+msgid "Partner Translation Services"
+msgstr "Partneri fordítási szolgáltatások"
+
+#: classes/menu/translation-services/ServicesRetriever.php:53
+msgid "Other Partner Translation Services from Around the World"
+msgstr "Egyéb partneri fordítási szolgáltatások a világ minden tájáról"
+
+#: classes/menu/translation-services/troubleshooting/RefreshServices.php:40
+msgid "Refresh Translation Services"
+msgstr "Fordítási szolgáltatások frissítése"
+
+#: classes/menu/translation-services/troubleshooting/RefreshServices.php:50
+msgid "Services Refreshed."
+msgstr "A szolgáltatások frissítése befejeződött."
+
+#: classes/menu/translation-services/troubleshooting/RefreshServices.php:56
+msgid ""
+"WPML cannot load the list of translation services. This can be a connection problem. Please wait a minute and reload this page.\n"
+" If the problem continues, please contact WPML support."
+msgstr "A WPML nem tudja betölteni a fordítási szolgáltatások listáját. Ezt kapcsolódási probléma okozhatja. Kérjük, várjon egy percet, majd töltse be újra ezt az oldalt.\n Ha a probléma továbbra is fennáll, kérjük, forduljon a WPML támogatásához."
+
+#: classes/notices/AteLockNotice.php:56 classes/notices/AteLockNotice.php:69
+msgid "Site Moved or Copied - Action Required"
+msgstr "A webhelyet áthelyezték vagy lemásolták – művelet szükséges"
+
+#: classes/notices/AteLockNotice.php:57
+msgid ""
+"Looks like this site is a copy of a different site, or moved to a different "
+"URL."
+msgstr "Úgy tűnik, hogy ez a webhely egy másik webhely másolata, vagy másik URL-re költöztették."
+
+#: classes/notices/AteLockNotice.php:58
+msgid "I moved the site to this new URL"
+msgstr "A webhelyet erre az új URL-re költöztettem"
+
+#: classes/notices/AteLockNotice.php:59
+msgid "This is a copy of my original site"
+msgstr "Ez az eredeti webhelyem másolata"
+
+#: classes/notices/AteLockNotice.php:61
+msgid "More details"
+msgstr "További részletek"
+
+#: classes/notices/AteLockNotice.php:70
+msgid ""
+"Looks like this site is a copy of a different site, or moved to a different "
+"URL. Please contact your translation manager to update Translation "
+"Management plugin configuration."
+msgstr "Úgy tűnik, hogy ez a webhely egy másik webhely másolata, vagy másik URL-re költöztették. Kérjük, forduljon a fordításkezelőhöz a Translation Management bővítmény beállításainak frissítéséhez."
+
+#: classes/notices/translation-jobs-migration/class-wpml-all-translation-jobs-migration-notice.php:13
+msgid "Problem receiving translation jobs?"
+msgstr "Problémái vannak a fordítási feladatok fogadásával?"
+
+#: classes/notices/translation-jobs-migration/class-wpml-all-translation-jobs-migration-notice.php:14
+msgid ""
+"WPML needs to update its table of translation jobs, so that your site can "
+"continue receiving completed translations. This process will take a few "
+"minutes and does not modify content or translations in your site."
+msgstr "A WPML-nek frissítenie kell a fordítási feladatok tábláját, hogy webhelye továbbra is fogadhassa a befejezett fordításokat. Ez a folyamat néhány percet vesz igénybe, és nem módosítja a webhely tartalmát vagy fordításait."
+
+#: classes/notices/translation-jobs-migration/class-wpml-all-translation-jobs-migration-notice.php:15
+msgid "Start update"
+msgstr "Frissítés indítása"
+
+#: classes/notices/translation-jobs-migration/class-wpml-all-translation-jobs-migration-notice.php:18
+msgid "jobs fixed"
+msgstr "javított feladat"
+
+#: classes/notices/translation-jobs-migration/class-wpml-all-translation-jobs-migration-notice.php:19
+#: classes/notices/translation-jobs-migration/class-wpml-translation-jobs-missing-tp-id-migration-notice.php:20
+msgid ""
+"The communication error with Translation Proxy has appeared. Please try "
+"later."
+msgstr "Kommunikációs hiba történt a Translation Proxy szolgáltatással. Kérjük, próbálja meg később."
+
+#: classes/notices/translation-jobs-migration/class-wpml-tm-translation-jobs-fix-summary-notice.php:7
+#, php-format
+msgid ""
+"WPML completed updating the translations history. Next, please visit the %s "
+"and click on the button to \"Check status and get translations\"."
+msgstr "A WPML befejezte a fordítási előzmények frissítését. Ezután keresse fel a(z) %s oldalt, és kattintson a „Fordítások állapotának ellenőrzése és lekérése” gombra."
+
+#: classes/notices/translation-jobs-migration/class-wpml-translation-jobs-missing-tp-id-migration-notice.php:13
+msgid "WPML Translation Jobs Migration"
+msgstr "WPML fordítási feladatok áttelepítése"
+
+#. translators: the placeholder is replaced with the current version of WPML
+#: classes/notices/translation-jobs-migration/class-wpml-translation-jobs-missing-tp-id-migration-notice.php:15
+#, php-format
+msgid ""
+"WPML found some remote jobs on your site that must be migrated in order to "
+"work with WPML %s. You might not be able to access some of the WPML "
+"administration pages until this migration is fully completed."
+msgstr "A WPML olyan távoli feladatokat talált a webhelyén, amelyeket át kell telepíteni a WPML %s használatához. Előfordulhat, hogy egyes WPML-felügyeleti oldalakhoz nem fér hozzá, amíg az áttelepítés be nem fejeződik."
+
+#: classes/notices/translation-jobs-migration/class-wpml-translation-jobs-missing-tp-id-migration-notice.php:16
+msgid "Run now"
+msgstr "Futtatás most"
+
+#: classes/notices/translation-jobs-migration/class-wpml-translation-jobs-missing-tp-id-migration-notice.php:19
+msgid "jobs migrated"
+msgstr "áttelepített feladat"
+
+#: classes/notices/translation-service-instruction/class-wpml-tm-ts-instructions-notice.php:65
+#, php-format
+msgid "How to work correctly with %s"
+msgstr "A(z) %s megfelelő használata"
+
+#: classes/notices/translation-service-instruction/class-wpml-tm-ts-instructions-notice.php:69
+#, php-format
+msgid ""
+"Congratulations for choosing %s to translate your site's content. To avoid "
+"high costs and wasted time, please watch our short video."
+msgstr "Gratulálunk, hogy a(z) %s szolgáltatást választotta webhelye tartalmának fordításához. A magas költségek és az időveszteség elkerülése érdekében kérjük, tekintse meg rövid videónkat."
+
+#: classes/notices/translation-service-instruction/class-wpml-tm-ts-instructions-notice.php:75
+msgid "Need help? See "
+msgstr "Segítségre van szüksége? Tekintse meg "
+
+#: classes/notices/translation-service-instruction/class-wpml-tm-ts-instructions-notice.php:76
+msgid "how to translate different parts of the site."
+msgstr "hogyan fordíthatja le a webhely különböző részeit."
+
+#: classes/notices/translation-service-instruction/class-wpml-tm-ts-instructions-notice.php:80
+msgid ""
+"This stuff is actually important. Please follow the video to send a test "
+"translation. Then, you can dismiss this message. Thank you!"
+msgstr "Ez valóban fontos. Kérjük, kövesse a videóban bemutatott lépéseket egy tesztfordítás elküldéséhez. Ezután bezárhatja ezt az üzenetet. Köszönjük!"
+
+#: classes/notices/translation-service-instruction/class-wpml-tm-ts-instructions-notice.php:81
+msgid "My test translation went fine."
+msgstr "A tesztfordításom sikeresen elkészült."
+
+#: classes/notices/translation-service-instruction/class-wpml-tm-ts-instructions-notice.php:82
+msgid "Dismiss this message."
+msgstr "Üzenet bezárása."
+
+#: classes/notices/wpml-tm-post-edit-notices.php:111
+#, php-format
+msgid "%sTranslation in progress - wait before editing%s"
+msgstr "%sA fordítás folyamatban van – szerkesztés előtt várjon%s"
+
+#: classes/notices/wpml-tm-post-edit-notices.php:115
+msgid ""
+"This page that you are editing is being translated right now. If you edit "
+"now, some or all of the translation for this page may be missing. It's best "
+"to wait until translation completes, then edit and update the translation."
+msgstr "Az Ön által szerkesztett oldal fordítása jelenleg folyamatban van. Ha most szerkeszti az oldalt, előfordulhat, hogy az oldal fordításának egy része vagy egésze hiányzik majd. Javasoljuk, hogy várja meg a fordítás befejezését, majd szerkessze és frissítse a fordítást."
+
+#: classes/notices/wpml-tm-post-edit-notices.php:116
+msgid "Take me back"
+msgstr "Vissza"
+
+#: classes/notices/wpml-tm-post-edit-notices.php:117
+msgid "I understand - continue editing"
+msgstr "Értem – a szerkesztés folytatása"
+
+#: classes/notices/wpml-tm-post-edit-notices.php:118
+#: classes/notices/wpml-tm-post-edit-notices.php:161
+msgid "Don't show this warning again"
+msgstr "A figyelmeztetés újbóli megjelenítésének mellőzése"
+
+#: classes/notices/wpml-tm-post-edit-notices.php:132
+#, php-format
+msgid ""
+"%sWarning:%s You are trying to edit a translation that is currently in the "
+"process of being added using WPML."
+msgstr "%sFigyelem:%s Olyan fordítást próbál szerkeszteni, amelynek hozzáadása a WPML használatával jelenleg folyamatban van."
+
+#: classes/notices/wpml-tm-post-edit-notices.php:137
+#, php-format
+msgid ""
+"Please refer to the <a href=\"%s\">Translation Management dashboard</a> for "
+"the exact status of this translation."
+msgstr "A fordítás pontos állapotáról a <a href=\"%s\">Fordításkezelés vezérlőpultján</a> tájékozódhat."
+
+#: classes/notices/wpml-tm-post-edit-notices.php:153
+#, php-format
+msgid ""
+"%sWarning:%s You are trying to edit a translation using the standard "
+"WordPress editor but your site is configured to use the WPML Translation "
+"Editor."
+msgstr "%sFigyelem:%s A fordítást a WordPress szokásos szerkesztőjével próbálja szerkeszteni, de a webhelye a WPML fordításszerkesztőjének használatára van beállítva."
+
+#: classes/notices/wpml-tm-post-edit-notices.php:158
+msgid "Edit anyway"
+msgstr "Szerkesztés mindenképpen"
+
+#: classes/notices/wpml-tm-post-edit-notices.php:159
+msgid "Open in Translation Editor"
+msgstr "Megnyitás a fordításszerkesztőben"
+
+#: classes/notices/wpml-tm-post-edit-notices.php:179
+#, php-format
+msgid ""
+"%sWarning:%s You are trying to add a translation using the standard "
+"WordPress editor but your site is configured to use the WPML Translation "
+"Editor."
+msgstr "%sFigyelem:%s A fordítást a WordPress szokásos szerkesztőjével próbálja hozzáadni, de a webhelye a WPML fordításszerkesztőjének használatára van beállítva."
+
+#: classes/notices/wpml-tm-post-edit-notices.php:184
+#, php-format
+msgid ""
+"You should use <a href=\"%s\">Translation management dashboard</a> to send "
+"the original document to translation."
+msgstr "Az eredeti dokumentum fordításra küldéséhez használja a <a href=\"%s\">Fordításkezelés vezérlőpultját</a>."
+
+#: classes/post-edit-screen/class-wpml-tm-post-edit-tm-editor-select.php:53
+msgid "Use WPML's Translation Editor"
+msgstr "A WPML fordításszerkesztőjének használata"
+
+#: classes/post-edit-screen/class-wpml-tm-post-edit-tm-editor-select.php:67
+msgid "Use WPML's Translation Editor to translate:"
+msgstr "A WPML fordításszerkesztőjének használata a következők fordításához:"
+
+#: classes/post-edit-screen/class-wpml-tm-post-edit-tm-editor-select.php:68
+msgid "Use the WordPress Editor to translate:"
+msgstr "A WordPress szerkesztőjének használata a következők fordításához:"
+
+#. translators: %s: Post name singular
+#: classes/post-edit-screen/class-wpml-tm-post-edit-tm-editor-select.php:74
+#, php-format
+msgid "This %s"
+msgstr "Ez a(z) %s"
+
+#. translators: %s: Post name plural
+#: classes/post-edit-screen/class-wpml-tm-post-edit-tm-editor-select.php:79
+#, php-format
+msgid "All %s"
+msgstr "Összes %s"
+
+#: classes/post-edit-screen/class-wpml-tm-post-edit-tm-editor-select.php:82
+msgid "All the site's content"
+msgstr "A webhely összes tartalma"
+
+#: classes/privacy/class-wpml-tm-privacy-content.php:19
+msgid ""
+"WPML Translation Management will send the email address and name of each "
+"manager and assigned translator as well as the content itself to Advanced "
+"Translation Editor and to the translation services which are used."
+msgstr "A WPML Translation Management elküldi az egyes kezelők és hozzárendelt fordítók e-mail címét és nevét, valamint magát a tartalmat a haladó fordításszerkesztőnek és a használt fordítási szolgáltatásoknak."
+
+#: classes/support/class-wpml-tm-support-info-filter.php:23
+msgid "SimpleXML extension"
+msgstr "SimpleXML-kiterjesztés"
+
+#: classes/support/class-wpml-tm-support-info-filter.php:24
+msgid "Loaded"
+msgstr "Betöltve"
+
+#: classes/support/class-wpml-tm-support-info-filter.php:24
+msgid "Not loaded"
+msgstr "Nincs betöltve"
+
+#: classes/support/class-wpml-tm-support-info-filter.php:27
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:787
+msgid ""
+"SimpleXML extension is required for using XLIFF files in WPML Translation "
+"Management."
+msgstr "A WPML Translation Management XLIFF-fájlok használatához a SimpleXML-kiterjesztés szükséges."
+
+#: classes/translation-basket/class-wpml-tm-translation-basket-validation-notice.php:43
+msgid "WPML cannot send some of the content to translation"
+msgstr "A WPML nem tudja elküldeni a tartalom egy részét fordításra"
+
+#: classes/translation-basket/class-wpml-tm-translation-basket-validation-notice.php:44
+msgid ""
+"Some of the content that you selected for translation includes fields that "
+"are encoded. Translators will not be able to work on this kind of content, "
+"so we removed it from the job."
+msgstr "A fordításra kiválasztott tartalom egyes mezői kódoltak. A fordítók nem tudnak ilyen tartalommal dolgozni, ezért eltávolítottuk a feladatból."
+
+#: classes/translation-basket/class-wpml-tm-translation-basket-validation-notice.php:45
+msgid ""
+"To fix this problem, you need to tell WPML how these fields are encoded, so "
+"that WPML can decode them before sending for translation."
+msgstr "A probléma megoldásához adja meg a WPML számára, hogyan vannak kódolva ezek a mezők, hogy a WPML dekódolhassa őket, mielőtt elküldi fordításra."
+
+#: classes/translation-basket/class-wpml-tm-translation-basket-validation-notice.php:46
+msgid "show fields"
+msgstr "Mezők mutatása"
+
+#: classes/translation-basket/class-wpml-translation-basket-validation.php:55
+msgid "There are base64 encoded fields in this document"
+msgstr "A dokumentum base64-kódolású mezőket tartalmaz"
+
+#: classes/translation-basket/wpml-tm-translation-basket-dialog-view.php:32
+msgid "Sending for translation"
+msgstr "Küldés fordításra"
+
+#: classes/translation-basket/wpml-tm-translation-basket-dialog-view.php:33
+msgid "Items sent for translation!"
+msgstr "Tételek fordításra küldve!"
+
+#: classes/translation-dashboard/class-wpml-tm-parent-filter-ajax.php:52
+msgid "None found"
+msgstr "Nem található"
+
+#. translators: The placeholder will be replaced with a number (an ID)
+#: classes/translation-jobs/class-wpml-element-translation-package.php:63
+#, php-format
+msgid "External package ID: %d"
+msgstr "Külső csomag ID: %d"
+
+#: classes/translation-jobs/class-wpml-tm-job-layout.php:111
+msgid "Custom Fields"
+msgstr "Egyéni mezők"
+
+#: classes/translation-jobs/class-wpml-tm-job-layout.php:144
+msgid ""
+"Changes in these translations will affect terms in general! (Not only for "
+"this post)"
+msgstr "A fordítások módosításai általánosságban érintik a kifejezéseket (nem csak ezt a bejegyzést)."
+
+#: classes/translation-jobs/ExtraFieldDataInEditor.php:90
+msgid "Body"
+msgstr "Törzs"
+
+#: classes/translation-jobs/ExtraFieldDataInEditor.php:91
+msgid "Excerpt"
+msgstr "Kivonat"
+
+#: classes/translation-jobs/notices/class-wpml-tm-unsent-jobs-notice-template.php:46
+msgid ""
+"Translations may delay because translators did not receive notifications"
+msgstr "A fordítások késhetnek, mert a fordítók nem kaptak értesítést"
+
+#: classes/translation-jobs/notices/class-wpml-tm-unsent-jobs-notice-template.php:47
+msgid ""
+"You have sent documents to translation. WPML can send notification emails to"
+" assigned translators, but translators for some languages have selected not "
+"to receive this notification."
+msgstr "Dokumentumokat küldött fordításra. A WPML e-mailben értesítheti a hozzárendelt fordítókat, de egyes nyelvek fordítói úgy döntöttek, hogy nem kérnek ilyen értesítéseket."
+
+#: classes/translation-jobs/notices/class-wpml-tm-unsent-jobs-notice-template.php:50
+#, php-format
+msgid ""
+"You should contact your %1$s and ask them to enable the notification emails "
+"which will allow them to see when there is new work waiting for them. To "
+"enable notifications, translators need to log-in to this site, go to their "
+"user profile page and change the related option in the WPML language "
+"settings section."
+msgstr "Vegye fel a kapcsolatot %1$s személlyel, és kérje meg, hogy kapcsolja be az e-mailes értesítéseket, amelyek révén a fordítók értesülhetnek az új, rájuk váró munkákról. Az értesítések bekapcsolásához a fordítóknak be kell jelentkezniük erre a webhelyre, meg kell nyitniuk a felhasználói profiloldalukat, majd módosítaniuk kell a megfelelő beállítást a WPML nyelvi beállítások szakaszában."
+
+#: classes/translation-jobs/notices/class-wpml-tm-unsent-jobs-notice-template.php:67
+#, php-format
+msgid "Job %1$s: %2$s - %3$s"
+msgstr "%1$s. feladat: %2$s – %3$s"
+
+#: classes/translation-jobs/notices/class-wpml-tm-unsent-jobs-notice.php:105
+msgid "Dismiss"
+msgstr "Bezárás"
+
+#: classes/translation-proxy/class-wpml-tp-refresh-language-pairs.php:31
+msgid "Language pairs refreshed"
+msgstr "A nyelvpárok frissítése megtörtént"
+
+#: classes/translation-proxy/class-wpml-tp-refresh-language-pairs.php:37
+msgid "Language pairs not refreshed, please try again"
+msgstr "A nyelvpárok frissítése nem sikerült, kérjük, próbálja újra"
+
+#: classes/translation-proxy/lock/wpml-tp-lock-notice.php:27
+msgid "Some communications with the translation proxy are locked."
+msgstr "A fordítási proxyval folytatott kommunikáció egy része zárolva van."
+
+#: classes/translation-proxy/lock/wpml-tp-lock.php:30
+msgid "The constant WPML_ENVIRONMENT is set to \"Test\"."
+msgstr "A WPML_ENVIRONMENT konstans értéke „Test”."
+
+#: classes/translation-proxy/log/class-wpml-translationproxy-communication-log.php:118
+#, php-format
+msgid ""
+"For retrieving debug information for communication between your%1$s site and"
+" the translation system, use the <a href=\"%2$s\">communication log</a> "
+"page."
+msgstr "Az Ön%1$s webhelye és a fordítási rendszer közötti kommunikáció hibakeresési adatainak lekéréséhez használja a <a href=\"%2$s\">kommunikációs napló</a> oldalt."
+
+#: classes/troubleshooting/class-wpml-tm-troubleshooting-reset-pro-trans-config-ui.php:42
+msgid ""
+"Only select this option if you have no pending jobs or you are sure of what "
+"you are doing."
+msgstr "Csak akkor válassza ezt a beállítást, ha nincsenek függőben lévő feladatai, vagy biztos benne, mit tesz."
+
+#. translators: Reset professional translation state ("%1$s" is the service
+#. name)
+#: classes/troubleshooting/class-wpml-tm-troubleshooting-reset-pro-trans-config-ui.php:46
+#, php-format
+msgid ""
+"If you have sent content to %1$s, you should cancel the projects in %1$s "
+"system. Any work that completes after you do this reset cannot be received "
+"by your site."
+msgstr "Ha tartalmat küldött a(z) %1$s részére, mondja le a projekteket a(z) %1$s rendszerében. A visszaállítás után befejeződő munkákat a webhelye nem tudja fogadni."
+
+#: classes/troubleshooting/class-wpml-tm-troubleshooting-reset-pro-trans-config-ui.php:48
+msgid ""
+"Any work that completes after you do this reset cannot be received by your "
+"site."
+msgstr "A visszaállítás után befejeződő munkákat a webhelye nem tudja fogadni."
+
+#: classes/troubleshooting/class-wpml-tm-troubleshooting-reset-pro-trans-config-ui.php:54
+#: classes/troubleshooting/class-wpml-tm-troubleshooting-reset-pro-trans-config-ui.php:59
+msgid "Reset professional translation state"
+msgstr "A professzionális fordítás állapotának alaphelyzetbe állítása"
+
+#: classes/troubleshooting/class-wpml-tm-troubleshooting-reset-pro-trans-config-ui.php:55
+msgid ""
+"Use this feature when you want to reset your translation process. All your "
+"existing translations will remain unchanged. Any translation work that is "
+"currently in progress will be stopped."
+msgstr "Ezzel a funkcióval visszaállíthatja a fordítási folyamatot. A meglévő fordítások változatlanok maradnak. A jelenleg folyamatban lévő fordítási munkák leállnak."
+
+#. translators: Reset professional translation state ("%1$s" is the service
+#. name)
+#: classes/troubleshooting/class-wpml-tm-troubleshooting-reset-pro-trans-config-ui.php:58
+#, php-format
+msgid "I am about to stop any ongoing work done by %1$s."
+msgstr "Le fogom állítani a(z) %1$s által végzett folyamatban lévő munkát."
+
+#. translators: Reset professional translation state confirmation ("%1$s" is
+#. the service name)
+#: classes/troubleshooting/class-wpml-tm-troubleshooting-reset-pro-trans-config.php:90
+#, php-format
+msgid "Are you sure you want to reset the %1$s translation process?"
+msgstr "Biztosan alaphelyzetbe szeretné állítani a(z) %1$s fordítási folyamatát?"
+
+#. translators: Confirmation that translation process was reset ("%1$s" is the
+#. service name)
+#: classes/troubleshooting/class-wpml-tm-troubleshooting-reset-pro-trans-config.php:194
+#, php-format
+msgid "The translation process with %1$s was reset."
+msgstr "A(z) %1$s szolgáltatással folytatott fordítási folyamat alaphelyzetbe állt."
+
+#. translators: Confirmation that site has been disconnected from translation
+#. service ("%1$s" is the service name)
+#: classes/troubleshooting/class-wpml-tm-troubleshooting-reset-pro-trans-config.php:197
+#, php-format
+msgid ""
+"Your site was successfully disconnected from %1$s. Go to the translators tab"
+" to connect a new %1$s account or use a different translation service."
+msgstr "Webhelyét sikeresen leválasztottuk a(z) %1$s szolgáltatásról. Új %1$s-fiók csatlakoztatásához vagy másik fordítási szolgáltatás használatához lépjen a Fordítók fülre."
+
+#: classes/troubleshooting/class-wpml-tm-troubleshooting-reset-pro-trans-config.php:199
+msgid "PRO translation has been reset."
+msgstr "A PRO-fordítás alaphelyzetbe lett állítva."
+
+#: classes/user/wpml-user-jobs-notification-settings-template.php:43
+msgid "WPML Translator Settings"
+msgstr "WPML fordítói beállításai"
+
+#: classes/user/wpml-user-jobs-notification-settings-template.php:44
+msgid "Notification emails:"
+msgstr "Értesítő e-mailek:"
+
+#: classes/user/wpml-user-jobs-notification-settings-template.php:46
+msgid "Send me a notification email when there is something new to translate"
+msgstr "Kérek értesítő e-mailt, ha új fordítanivaló van"
+
+#. translators: This is the title of the first screen of Translation
+#. Management wizard
+#: classes/wizard/class-wpml-tm-setup-wizard.php:26
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:61
+msgid "Who will translate this site?"
+msgstr "Ki fogja lefordítani ezt a webhelyet?"
+
+#: classes/wizard/class-wpml-tm-setup-wizard.php:30
+#: classes/wizard/steps/class-wpml-tm-wizard-editor.php:38
+msgid "What translation tool do you want to use?"
+msgstr "Milyen fordítóeszközt szeretne használni?"
+
+#: classes/wizard/class-wpml-tm-setup-wizard.php:34
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:43
+msgid "Summary"
+msgstr "Összegzés"
+
+#: classes/wizard/steps/class-wpml-tm-wizard-editor.php:41
+msgid "WPML's Classic Translation Editor"
+msgstr "A WPML klasszikus fordításszerkesztője"
+
+#: classes/wizard/steps/class-wpml-tm-wizard-editor.php:55
+msgid "Support for all content types"
+msgstr "Támogatás minden tartalomtípushoz"
+
+#: classes/wizard/steps/class-wpml-tm-wizard-editor.php:60
+msgid "Spell checker"
+msgstr "Helyesírás-ellenőrző"
+
+#: classes/wizard/steps/class-wpml-tm-wizard-editor.php:65
+msgid "Translation Memory"
+msgstr "Fordítási memória"
+
+#: classes/wizard/steps/class-wpml-tm-wizard-editor.php:70
+msgid "Machine Translation"
+msgstr "Gépi fordítás"
+
+#: classes/wizard/steps/class-wpml-tm-wizard-editor.php:75
+msgid "Translator preview"
+msgstr "Fordítói előnézet"
+
+#: classes/wizard/steps/class-wpml-tm-wizard-editor.php:83
+msgid "Select"
+msgstr "Kiválasztás"
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:44
+msgid "Your translation service"
+msgstr "Az Ön fordítási szolgáltatása"
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:45
+msgid "Your translators"
+msgstr "Az Ön fordítói"
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:46
+msgid ""
+"WPML created the accounts for your translators and sent them instructions."
+msgstr "A WPML létrehozta a fordítói fiókokat, és elküldte nekik az útmutatót."
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:49
+msgid "Done!"
+msgstr "Kész!"
+
+#. translators: The word "plus" will be used in other strings and wrapped with
+#. HTML tags to make it more prominent
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:110
+msgid "plus"
+msgstr "plusz"
+
+#. translators: The word "pencil" will be used in other strings and wrapped
+#. with HTML tags to make it more prominent
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:117
+msgid "pencil"
+msgstr "ceruza"
+
+#. translators: "Getting Started Guide" will be used in other strings and
+#. wrapped with HTML tags to make it a link to external documentation
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:131
+msgid "Getting Started Guide"
+msgstr "Kezdő lépések útmutatója"
+
+#. translators: "WPML > Translation Management" will be used in other strings
+#. and wrapped with HTML tags to make it more prominent
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:138
+msgid "WPML > Translation Management"
+msgstr "WPML > Fordításkezelés"
+
+#. translators: "WPML > Translations" will be used in other strings and
+#. wrapped with HTML tags to make it more prominent
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:159
+msgid "WPML > Translations"
+msgstr "WPML > Fordítások"
+
+#. translators: "successfully using translation services" will be used in
+#. other strings and wrapped with HTML tags to make it a link to external
+#. documentation
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:180
+msgid "successfully using translation services"
+msgstr "fordítási szolgáltatások sikeres használatával"
+
+#. translators: "Translation Basket" will be used in other strings and wrapped
+#. with HTML tags to make it more prominent
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:187
+#: menu/wpml-tm-menus-management.php:745
+msgid "Translation Basket"
+msgstr "Fordítási kosár"
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:207
+#, php-format
+msgid ""
+"You will be the only translator for this site and will be able to translate "
+"any page or post. Use the %1$s or a %2$s icon found on the post listing "
+"pages in the admin or in the %3$s box when editing content."
+msgstr "Ön lesz a webhely egyetlen fordítója, és bármelyik oldalt vagy bejegyzést lefordíthatja. Használja a %1$s vagy a %2$s ikont, amelyet az admin felület bejegyzéslistáin vagy tartalomszerkesztés közben a %3$s mezőben talál."
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:217
+msgid "You selected users of this site to be your translators. You need to:"
+msgstr "Ön a webhely felhasználóit választotta fordítóknak. Ehhez a következőket kell tennie:"
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:223
+msgid ""
+"You selected a translation service to translate your content. You need to:"
+msgstr "Ön fordítási szolgáltatást választott a tartalmak lefordításához. Ehhez a következőket kell tennie:"
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:229
+msgid ""
+"You selected both users of this site and a professional translation service."
+" You need to:"
+msgstr "Ön a webhely felhasználóit és egy professzionális fordítási szolgáltatást is választott. Ehhez a következőket kell tennie:"
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:235
+msgid ""
+"You're all set. The user that you've selected as the site's Translation "
+"Manager will choose who translates, add translator users and send content "
+"for translation."
+msgstr "Minden készen áll. A webhely fordításkezelőjeként kiválasztott felhasználó fogja eldönteni, ki fordítson, új felhasználókat felvenni fordítóként, és elküldeni a tartalmakat fordításra."
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:255
+#, php-format
+msgid ""
+"Read the %1$s to learn about translating images, menus, widgets and more."
+msgstr "Olvassa el a %1$s dokumentációt a képek, menük, widgetek és egyebek fordításáról."
+
+#. translators: %1$s and %2$s will be replaced with "Translation Management"
+#. and "Translation Roles" respectively.
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:262
+#, php-format
+msgid ""
+"To add more users of this site as translators, go to the %1$s page and click"
+" the %2$s tab."
+msgstr "Ha további felhasználókat szeretne fordítóként hozzáadni a webhelyhez, lépjen a %1$s oldalra, és kattintson a %2$s fülre."
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:269
+#, php-format
+msgid ""
+"Visit our documentation to learn more about using %1$s to learn about "
+"translating images, menus, widgets and more."
+msgstr "Tekintse meg dokumentációnkat, ha többet szeretne megtudni a %1$s használatáról, valamint a képek, menük, widgetek és egyebek fordításáról."
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:276
+#, php-format
+msgid "Visit our documentation to learn more about %1$s."
+msgstr "Tekintse meg dokumentációnkat, hogy többet tudjon meg a(z) %1$s témájáról."
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:296
+#, php-format
+msgid ""
+"Use the %1$s page to select content for translation and send it to your "
+"translators."
+msgstr "A %1$s oldalon válassza ki a lefordítandó tartalmat, majd küldje el a fordítóinak."
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:302
+#, php-format
+msgid ""
+"Translators will receive notifications and use the %1$s page to translate "
+"the content that you've sent them."
+msgstr "A fordítók értesítéseket kapnak, és a %1$s oldalon fordítják le az Ön által nekik küldött tartalmat."
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:309
+#, php-format
+msgid ""
+"Use the %1$s page to select content for translation and send it to the "
+"translation service."
+msgstr "A %1$s oldalon válassza ki a lefordítandó tartalmat, majd küldje el a fordítási szolgáltatásnak."
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:315
+#, php-format
+msgid ""
+"Once the translation jobs are completed, you can get them into your site by "
+"using the %1$s button on the %2$s page."
+msgstr "Amint a fordítási feladatok befejeződtek, a %2$s oldalon található %1$s gombbal töltheti be őket a webhelyére."
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:322
+#, php-format
+msgid "In the %1$s page, choose who will translate."
+msgstr "A %1$s oldalon válassza ki, ki fordítson."
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:328
+#, php-format
+msgid ""
+"Your translators will receive notifications and use the %1$s page to "
+"translate the content that you've sent them."
+msgstr "A fordítók értesítéseket kapnak, és a %1$s oldalon fordítják le az Ön által nekik küldött tartalmat."
+
+#: classes/wizard/steps/class-wpml-tm-wizard-summary.php:334
+#, php-format
+msgid ""
+"To collect completed translations from the translation service, go to %1$s "
+"and click on the %2$s button"
+msgstr "A fordítási szolgáltatástól érkező befejezett fordítások átvételéhez lépjen ide: %1$s, majd kattintson a %2$s gombra"
+
+#. translators: Translation Management wizard - When asked who will translate
+#. this site, the user (%s) can chose to be the only translator
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:65
+#, php-format
+msgid "Only myself (%s)"
+msgstr "Csak én (%s)"
+
+#. translators: Translation Management wizard - When asked who will translate
+#. this site, the user can select or create a user to manage the translators
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:67
+msgid ""
+"I want to set a \"Translation Manager\" who will choose the translators for "
+"this site"
+msgstr "Szeretnék kijelölni egy „fordításkezelőt”, aki kiválasztja a webhely fordítóit"
+
+#. translators: Translation Management wizard - When asked who will translate
+#. this site, the user can select or create users as translators
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:69
+msgid "Users of this site"
+msgstr "A webhely felhasználói"
+
+#. translators: Translation Management wizard - When asked who will translate
+#. this site,
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:71
+msgid "A Translation Service"
+msgstr "Egy fordítási szolgáltatás"
+
+#. translators: Translation Management wizard - tooltip text shown near the
+#. "Only myself (%s)" option
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:73
+msgid ""
+"You will be the sole translator for this site. You will be able to translate"
+" any document between any language pair. If you want to do some of the "
+"translations and allow others to translate as well, select the \"Users of "
+"this site\" option instead."
+msgstr "Ön lesz a webhely egyetlen fordítója. Bármilyen nyelvpár között lefordíthat bármilyen dokumentumot. Ha Ön is szeretne fordítani, és másoknak is engedélyezné a fordítást, válassza inkább „A webhely felhasználói” lehetőséget."
+
+#. translators: Translation Management wizard - tooltip text shown near the "I
+#. want to set a "Translation Manager" who ..." option
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:76
+msgid ""
+"You will choose a user of this site and delegate the setup of translators to"
+" him/her. Choose this option when you are building a website for a client, "
+"who will set up translator users or choose a translation service."
+msgstr "Ön kiválasztja a webhely egyik felhasználóját, és rábízza a fordítók beállítását. Akkor válassza ezt a lehetőséget, ha ügyfélnek készít honlapot, aki majd fordítókat állít be, vagy fordítási szolgáltatást választ."
+
+#. translators: Translation Management wizard - the tooltip text shown near
+#. the "I want to set a "Translation Manager" who ..." option, will also
+#. provide a link to an external 'Working with Translation Managers' page (%s)
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:79
+#, php-format
+msgid "Read more on %s"
+msgstr "Bővebben: %s"
+
+#. translators: Translation Management wizard - the tooltip text shown near
+#. the "I want to set a "Translation Manager" who ..." option, will also
+#. provide a link to an external 'Working with Translation Managers' page
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:81
+msgid "Working with Translation Managers"
+msgstr "Munka a fordításkezelőkkel"
+
+#. translators: Translation Management wizard - tooltip text shown near the
+#. "Users of this site" option
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:86
+msgid ""
+"You will choose users of this WordPress site as the translators. You can "
+"also choose yourself. This allows you to set up a team of translators "
+"working in different language pairs."
+msgstr "Ön a WordPress-webhely felhasználói közül választja ki a fordítókat. Saját magát is kiválaszthatja. Így különböző nyelvpárokon dolgozó fordítói csapatot állíthat össze."
+
+#. translators: Translation Management wizard - tooltip text shown near the "A
+#. Translation Service" option
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:88
+msgid ""
+"WPML offers tight integration with over 70 translation services. You will "
+"choose the translation service that you prefer and enjoy a streamlined "
+"process for sending jobs and receiving completed translations."
+msgstr "A WPML több mint 70 fordítási szolgáltatással kínál szoros integrációt. Ön kiválaszthatja az előnyben részesített fordítási szolgáltatást, és egyszerűsített folyamatban küldheti el a feladatokat, illetve fogadhatja a befejezett fordításokat."
+
+#. translators: Translation Management wizard - when selecting the "A
+#. Translation Service" option, a button appears which allows selecting a
+#. translation service
+#. translators: Translation Management wizard - The dialog title for selecting
+#. a translation service
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:90
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:98
+msgid "Choose a Translation Service"
+msgstr "Fordítási szolgáltatás kiválasztása"
+
+#. translators: Translation Management wizard - A short explanation of the
+#. dialog's purpose
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:100
+msgid ""
+"Here is the full list of translation services that are integrated with WPML."
+" With any service that you choose, you enjoy a streamlined process."
+msgstr "Íme a WPML-lel integrált fordítási szolgáltatások teljes listája. Bármelyik szolgáltatást választja, egyszerűsített folyamatban dolgozhat."
+
+#. translators: Translation Management wizard - Shown after selecting a
+#. translation service
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:106
+#, php-format
+msgid "Connect this site to your %s account"
+msgstr "Webhely csatlakoztatása az Ön %s-fiókjához"
+
+#. translators: Translation Management wizard - Shown after selecting a
+#. translation service. "%s" is replaced with the name of the selected
+#. translation service
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:108
+#, php-format
+msgid ""
+"Inside your %1$s account, you will find an \"API token\". This token allows "
+"WPML to connect to your account at %2$s to send and receive jobs."
+msgstr "A(z) %1$s-fiókjában megtalálja az „API-token” nevű tokent. Ez a token lehetővé teszi, hogy a WPML csatlakozzon a(z) %2$s webhelyen található fiókjához a feladatok küldéséhez és fogadásához."
+
+#. translators: Translation Management wizard - Shown after selecting a
+#. translation service. "%s" is replaced with the name of the selected
+#. translation service
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:110
+#, php-format
+msgid "How to find API token in %s"
+msgstr "Így találhatja meg az API-tokent itt: %s"
+
+#. translators: Translation Management wizard - Shown after selecting a
+#. translation service.
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:112
+msgid "Use a different Translation Service"
+msgstr "Másik fordítási szolgáltatás használata"
+
+#. translators: Translation Management wizard - Shown after selecting a
+#. translation service. "%s" is replaced with the name of the selected
+#. translation service
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:116
+#, php-format
+msgid "No account at %s?"
+msgstr "Nincs fiókja a(z) %s webhelyen?"
+
+#. translators: Translation Management wizard - Shown after selecting a
+#. translation service.
+#: classes/wizard/steps/class-wpml-tm-wizard-who-will-translate-step.php:118
+msgid "Create an account in one minute"
+msgstr "Fiók létrehozása egy perc alatt"
+
+#: classes/words-count/class-wpml-tm-string.php:16
+msgid "String"
+msgstr "Karakterlánc"
+
+#: classes/words-count/hooks/wpml-tm-word-count-admin-hooks.php:42
+msgid "Word count estimation"
+msgstr "A szavak számának becslése"
+
+#: classes/words-count/hooks/wpml-tm-word-count-admin-hooks.php:44
+msgid "Initializing..."
+msgstr "Inicializálás..."
+
+#: classes/words-count/hooks/wpml-tm-word-count-admin-hooks.php:45
+msgid "Word count for the entire site"
+msgstr "A teljes webhely szószáma"
+
+#: classes/words-count/report/wpml-tm-word-count-report-view.php:28
+msgid "Items"
+msgstr "Tétel"
+
+#: classes/words-count/report/wpml-tm-word-count-report-view.php:29
+msgid "Words"
+msgstr "Szavak"
+
+#: classes/words-count/report/wpml-tm-word-count-report-view.php:30
+msgid "Count time"
+msgstr "Számolási idő"
+
+#: classes/words-count/report/wpml-tm-word-count-report-view.php:31
+msgid "Total"
+msgstr "Összeg"
+
+#: classes/words-count/report/wpml-tm-word-count-report-view.php:32
+msgid "Recalculate"
+msgstr "Újraszámolás"
+
+#: classes/words-count/report/wpml-tm-word-count-report-view.php:34
+msgid "Needs refresh - Some items of this type are not counted"
+msgstr "Frissítés szükséges – az ilyen típusú tételek közül néhány nincs beleszámítva"
+
+#: classes/words-count/report/wpml-tm-word-count-report-view.php:35
+#, php-format
+msgid "%d minute"
+msgstr "%d perc"
+
+#: classes/words-count/report/wpml-tm-word-count-report-view.php:36
+#, php-format
+msgid "%d minutes"
+msgstr "%d perc"
+
+#: classes/words-count/report/wpml-tm-word-count-report-view.php:37
+msgid ""
+"We detected a possible issue blocking the word count process. Please verify "
+"the following settings:"
+msgstr "Lehetséges problémát észleltünk, amely blokkolja a szószámítási folyamatot. Kérjük, ellenőrizze a következő beállításokat:"
+
+#: classes/words-count/report/wpml-tm-word-count-report-view.php:39
+msgid ""
+"Your site should be publicly accessible or the server should have access to "
+"the site."
+msgstr "A webhelynek nyilvánosan elérhetőnek kell lennie, vagy a szervernek hozzá kell férnie a webhelyhez."
+
+#: classes/words-count/report/wpml-tm-word-count-report-view.php:40
+msgid "The constant DISABLE_WP_CRON should not be set to true."
+msgstr "A DISABLE_WP_CRON konstans értéke nem lehet true."
+
+#: classes/words-count/wpml-tm-package-element.php:54
+msgid "Unknown string Package"
+msgstr "Ismeretlen karakterlánccsomag"
+
+#: classes/wpml-st/class-wpml-remote-string-translation.php:8
+msgid "Partial translation"
+msgstr "Részleges fordítás"
+
+#: classes/wpml-st/class-wpml-remote-string-translation.php:9
+msgid "Translation needs update"
+msgstr "A fordítás frissítést igényel"
+
+#: classes/wpml-st/class-wpml-remote-string-translation.php:12
+msgid "Waiting for translator / In progress"
+msgstr "Várakozás a fordítóra / folyamatban"
+
+#: classes/wpml-st/class-wpml-remote-string-translation.php:14
+msgid "Strings in the basket"
+msgstr "Karakterláncok a kosárban"
+
+#: classes/wpml-st/class-wpml-remote-string-translation.php:80
+msgid "Translate selected strings"
+msgstr "Kiválasztott karakterláncok fordítása"
+
+#: classes/wpml-st/class-wpml-remote-string-translation.php:92
+msgid "All languages"
+msgstr "Minden nyelv"
+
+#: classes/wpml-st/class-wpml-remote-string-translation.php:117
+#: menu/wpml-tm-menus-management.php:525
+#, php-format
+msgid "Flag for %s"
+msgstr "%s zászlója"
+
+#: classes/wpml-st/class-wpml-remote-string-translation.php:135
+#, php-format
+msgid "Estimated cost: %s USD"
+msgstr "Becsült költség: %s USD"
+
+#: classes/wpml-st/class-wpml-remote-string-translation.php:152
+msgid ""
+"One of the selected strings is in a language that is not activate. It can "
+"not be added to the translation basket."
+msgstr "A kiválasztott karakterláncok egyike olyan nyelven van, amely nincs bekapcsolva. Nem adható hozzá a fordítási kosárhoz."
+
+#: classes/wpml-st/class-wpml-remote-string-translation.php:153
+msgid ""
+"Strings in different languages are selected. They can not be added to the "
+"translation basket."
+msgstr "Különböző nyelvű karakterláncokat választott ki. Ezek nem adhatók hozzá a fordítási kosárhoz."
+
+#: classes/wpml-st/class-wpml-remote-string-translation.php:154
+msgid ""
+"You cannot add strings in this language to the basket since it already "
+"contains posts or strings of another source language! Either submit the "
+"current basket or delete the posts of differing language in the current "
+"basket"
+msgstr "Nem adhat hozzá ilyen nyelvű karakterláncokat a kosárhoz, mert az már másik forrásnyelvű bejegyzéseket vagy karakterláncokat tartalmaz! Küldje el az aktuális kosarat, vagy törölje az eltérő nyelvű bejegyzéseket az aktuális kosárból"
+
+#: classes/wpml-st/class-wpml-remote-string-translation.php:155
+msgid "Add to translation basket"
+msgstr "Hozzáadás a fordítási kosárhoz"
+
+#: classes/wpml-st/class-wpml-remote-string-translation.php:176
+msgid "In the translation basket"
+msgstr "A fordítási kosárban"
+
+#: classes/wpml-st/class-wpml-remote-string-translation.php:195
+#, php-format
+msgid "One or more strings sent to %s"
+msgstr "Egy vagy több karakterlánc elküldve a(z) %s részére"
+
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:267
+msgid " - A xliff file is attached."
+msgstr " – XLIFF-fájl van csatolva."
+
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:485
+msgid "You are trying to import an empty file."
+msgstr "Üres fájlt próbál importálni."
+
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:497
+msgid "Incompatible Archive."
+msgstr "Nem kompatibilis archívum."
+
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:504
+msgid "Could not retrieve file from archive."
+msgstr "Nem sikerült lekérni a fájlt az archívumból."
+
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:515
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:542
+msgid "The archive contains one or more empty files."
+msgstr "Az archívum egy vagy több üres fájlt tartalmaz."
+
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:525
+msgid "You are trying to import an incompatible Archive."
+msgstr "Nem kompatibilis archívumot próbál importálni."
+
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:530
+msgid "You are trying to import an empty archive."
+msgstr "Üres archívumot próbál importálni."
+
+#. translators: %s: job id.
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:564
+#, php-format
+msgid "Translation of job %s has been uploaded and completed."
+msgstr "A(z) %s feladat fordítása feltöltésre került, és a feladat befejeződött."
+
+#. translators: %s: XLIFF version.
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:647
+#, php-format
+msgid "Export XLIFF %s"
+msgstr "XLIFF %s exportálása"
+
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:674
+msgid "No translation jobs were selected for export."
+msgstr "Nem választott ki fordítási feladatokat exportálásra."
+
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:732
+msgid "Export all jobs:"
+msgstr "Összes feladat exportálása:"
+
+#. translators: %1: post type, %2: from language, %3: to language, %4: status.
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:762
+#, php-format
+msgid "Export all filtered jobs of %1$s from %2$s to %3$s in %4$s:"
+msgstr "A(z) %1$s összes szűrt feladatának exportálása innen: %2$s ide: %3$s, %4$s formátumban:"
+
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:775
+msgid "Import / Export XLIFF"
+msgstr "XLIFF importálása / exportálása"
+
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:784
+msgid "SimpleXML missing!"
+msgstr "Hiányzik a SimpleXML!"
+
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:788
+msgid "WPML Minimum Requirements"
+msgstr "A WPML minimális követelményei"
+
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:801
+msgid "Export"
+msgstr "Exportálás"
+
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:813
+msgid "Select the xliff file or zip file to upload from your computer:&nbsp;"
+msgstr "Válassza ki a számítógépéről feltöltendő XLIFF- vagy ZIP-fájlt:&nbsp;"
+
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:818
+msgid "Upload"
+msgstr "Feltöltés"
+
+#: classes/xliff/class-wpml-tm-xliff-frontend.php:853
+msgid "Include XLIFF files in notification emails"
+msgstr "XLIFF-fájlok csatolása az értesítő e-mailekhez"
+
+#: classes/xliff/class-wpml-tm-xliff-reader.php:30
+msgid "The xliff file could not be read."
+msgstr "Az XLIFF-fájlt nem sikerült beolvasni."
+
+#: classes/xliff/class-wpml-tm-xliff-shared.php:183
+#, php-format
+msgid "The translation job (%s) doesn't belong to you."
+msgstr "A(z) %s fordítási feladat nem az Öné."
+
+#: classes/xliff/class-wpml-tm-xliff-shared.php:227
+#, php-format
+msgid "\"%s\" is not a valid XLIFF file."
+msgstr "A(z) „%s” nem érvényes XLIFF-fájl."
+
+#: classes/xliff/class-wpml-tm-xliff-shared.php:238
+msgid "The uploaded xliff file does not seem to be properly formed."
+msgstr "Úgy tűnik, hogy a feltöltött XLIFF-fájl formátuma hibás."
+
+#: classes/xliff/class-wpml-tm-xliff-shared.php:241
+msgid "Missing or wrong data:"
+msgstr "Hiányzó vagy hibás adatok:"
+
+#: classes/xliff/class-wpml-tm-xliff-shared.php:259
+msgid "The uploaded xliff file doesn't belong to this system."
+msgstr "A feltöltött XLIFF-fájl nem ehhez a rendszerhez tartozik."
+
+#: inc/translation-jobs/helpers/wpml-save-translation-data-action.class.php:325
+msgid "Translation (incomplete) saved."
+msgstr "Fordítás (nem teljes) mentve."
+
+#: inc/translation-jobs/helpers/wpml-save-translation-data-action.class.php:375
+msgid "Submitted data is not valid."
+msgstr "A beküldött adatok érvénytelenek."
+
+#: inc/translation-jobs/helpers/wpml-save-translation-data-action.class.php:394
+msgid "Job ID is missing"
+msgstr "Hiányzik a feladat ID-je"
+
+#: inc/translation-jobs/helpers/wpml-save-translation-data-action.class.php:397
+msgid "The original post cannot be retrieved"
+msgstr "Az eredeti bejegyzés nem kérhető le"
+
+#: inc/translation-jobs/helpers/wpml-save-translation-data-action.class.php:400
+msgid "The type of the post cannot be retrieved"
+msgstr "A bejegyzés típusa nem kérhető le"
+
+#: inc/translation-jobs/helpers/wpml-save-translation-data-action.class.php:404
+msgid ""
+"This job cannot be edited anymore because a newer job for this element "
+"exists."
+msgstr "Ez a feladat már nem szerkeszthető, mert ehhez az elemhez újabb feladat tartozik."
+
+#: inc/translation-jobs/jobs/wpml-translation-job.class.php:283
+msgid "(inactive and unknown service)"
+msgstr "(kikapcsolt és ismeretlen szolgáltatás)"
+
+#: inc/translation-jobs/jobs/wpml-translation-job.class.php:359
+msgid "Send"
+msgstr "Küldés"
+
+#: inc/translation-proxy/translationproxy-basket.class.php:159
+msgid "The items you have selected are now in the translation basket &ndash;"
+msgstr "A kiválasztott tételek mostantól a fordítási kosárban vannak &ndash;"
+
+#: inc/translation-proxy/translationproxy-basket.class.php:160
+#, php-format
+msgid "<a href=\"%s\">Send to translation &raquo;</a>"
+msgstr "<a href=\"%s\">Küldés fordításra &raquo;</a>"
+
+#: inc/translation-proxy/translationproxy-basket.class.php:375
+#, php-format
+msgid ""
+"Post \"%1$s\" will be ignored for %2$s, because translation is already in "
+"progress."
+msgstr "A(z) „%1$s” bejegyzést figyelmen kívül hagyjuk a(z) %2$s nyelvre történő fordítás során, mert a fordítás már folyamatban van."
+
+#: inc/translation-proxy/translationproxy-basket.class.php:390
+#, php-format
+msgid "Post \"%1$s\" will be ignored for %2$s, because it is an original post."
+msgstr "A(z) „%1$s” bejegyzést figyelmen kívül hagyjuk a(z) %2$s nyelvre történő fordítás során, mert ez egy eredeti bejegyzés."
+
+#: inc/translation-proxy/translationproxy-basket.class.php:449
+#: inc/translation-proxy/translationproxy-basket.class.php:932
+msgid "Please select at least one document to translate."
+msgstr "Válasszon ki legalább egy dokumentumot fordításra."
+
+#: inc/translation-proxy/translationproxy-basket.class.php:459
+#: inc/translation-proxy/translationproxy-basket.class.php:911
+msgid "Please select at least one language to translate into."
+msgstr "Válasszon ki legalább egy célnyelvet."
+
+#: inc/translation-proxy/translationproxy-basket.class.php:473
+msgid ""
+"You cannot add strings  in this language to the basket since it already contains posts or strings of another source language!\n"
+"\t\t\t\t\t\tEither submit the current basket and then add the post or delete the posts of differing language in the current basket"
+msgstr "Nem adhat hozzá ezen a nyelven szövegeket a kosárhoz, mert az már egy másik forrásnyelvű bejegyzéseket vagy szövegeket tartalmaz! Küldje el az aktuális kosarat, majd adja hozzá a bejegyzést, vagy törölje az eltérő nyelvű bejegyzéseket az aktuális kosárból"
+
+#: inc/translation-proxy/translationproxy-basket.class.php:507
+#, php-format
+msgid ""
+"String \"%1$s\" will be ignored for %2$s, because translation is already "
+"waiting for translator."
+msgstr "A(z) „%1$s” szöveget figyelmen kívül hagyjuk a(z) %2$s nyelvre történő fordítás során, mert a fordítása már fordítóra vár."
+
+#: inc/translation-proxy/translationproxy-basket.class.php:818
+msgid "Select additional options"
+msgstr "További opciók kiválasztása"
+
+#: inc/translation-proxy/translationproxy-basket.class.php:818
+msgid "Refresh"
+msgstr "Frissítés"
+
+#: inc/translation-proxy/translationproxy-basket.class.php:895
+msgid ""
+"You cannot add posts in this language to the basket since it already contains posts or strings of another source language!\n"
+"\t\t\t\t\t\tEither submit the current basket and then add the post or delete the posts of differing language in the current basket"
+msgstr "Nem adhat hozzá ezen a nyelven bejegyzéseket a kosárhoz, mert az már egy másik forrásnyelvű bejegyzéseket vagy szövegeket tartalmaz! Küldje el az aktuális kosarat, majd adja hozzá a bejegyzést, vagy törölje az eltérő nyelvű bejegyzéseket az aktuális kosárból"
+
+#: inc/translation-proxy/translationproxy-popup.php:26
+#, php-format
+msgid ""
+"<p>Requested languages are not supported by the translation service (%s). "
+"Please <a%s>contact us</a> for support. </p>"
+msgstr "<p>A fordítási szolgáltatás (%s) nem támogatja a kért nyelveket. Kérjük, <a%s>vegye fel velünk a kapcsolatot</a> támogatásért. </p>"
+
+#: inc/translation-proxy/translationproxy-popup.php:28
+#, php-format
+msgid ""
+"<p>Could not add the requested languages. Please <a%s>contact us</a> for "
+"support. </p><p>Show <a%s>debug information</a>.</p>"
+msgstr "<p>Nem sikerült hozzáadni a kért nyelveket. Támogatásért kérjük, <a%s>lépjen kapcsolatba velünk</a>. </p><p><a%s>Hibakeresési információk megjelenítése</a>.</p>"
+
+#: inc/translation-proxy/translationproxy-project.class.php:288
+#, php-format
+msgid "%s: WPML Translation Jobs"
+msgstr "%s: WPML-fordítási feladatok"
+
+#: inc/translation-proxy/translationproxy.class.php:233
+msgid "Contact"
+msgstr "Contact"
+
+#: inc/translation-proxy/translationproxy.class.php:234
+msgid "Hide this"
+msgstr "Ennek elrejtése"
+
+#: inc/translation-proxy/translationproxy.class.php:239
+msgid "Need translators?"
+msgstr "Fordítókra van szüksége?"
+
+#: inc/translation-proxy/wpml-pro-translation.class.php:87
+msgid "Please activate translation service first."
+msgstr "Kérjük, először kapcsolja be a fordítási szolgáltatást."
+
+#: inc/translation-proxy/wpml-pro-translation.class.php:90
+msgid "Could not update the translation pickup mode."
+msgstr "Nem sikerült frissíteni a fordítás átvételi módját."
+
+#: inc/translation-proxy/wpml-pro-translation.class.php:93
+msgid "Ok"
+msgstr "OK"
+
+#: inc/translation-proxy/wpml-pro-translation.class.php:527
+msgid "Minor edit - don't update translation"
+msgstr "Apró módosítás – ne frissítse a fordítást"
+
+#: inc/translation-proxy/wpml-pro-translation.class.php:541
+msgid "Minor edit"
+msgstr "Apró módosítás"
+
+#: inc/translation-proxy/wpml-pro-translation.class.php:544
+msgid "Don't update translation"
+msgstr "Ne frissítse a fordítást"
+
+#: inc/translation-proxy/wpml-translation-basket.class.php:125
+#, php-format
+msgid "The length of the batch name exceeds the maximum length of %s"
+msgstr "A köteg neve meghaladja a maximális %s karakteres hosszt"
+
+#: inc/translation-proxy/wpml-translation-basket.class.php:132
+msgid ""
+"This batch name already exists and was modified to ensure unique naming"
+msgstr "Ez a kötegnév már létezik, ezért az egyedi név biztosítása érdekében módosítottuk"
+
+#: inc/translation-proxy/wpml-translation-basket.class.php:139
+msgid "The batch name was appended with the source language of its elements."
+msgstr "A köteg nevéhez hozzáadtuk az elemek forrásnyelvét."
+
+#: menu/dashboard/wpml-tm-dashboard-ajax.class.php:34
+#: menu/wpml-tm-menus-management.php:554
+msgid "Add selected content to translation basket"
+msgstr "Kijelölt tartalom hozzáadása a fordítási kosárhoz"
+
+#: menu/dashboard/wpml-tm-dashboard-ajax.class.php:35
+msgid "Add selected content to translation basket / Duplicate"
+msgstr "Kijelölt tartalom hozzáadása a fordítási kosárhoz / duplikálás"
+
+#: menu/dashboard/wpml-tm-dashboard-ajax.class.php:40
+msgid "Choose at least one translation action"
+msgstr "Válasszon ki legalább egy fordítási műveletet"
+
+#: menu/dashboard/wpml-tm-dashboard-ajax.class.php:44
+msgid "Finished Post Duplication"
+msgstr "A bejegyzés duplikálása befejeződött"
+
+#: menu/dashboard/wpml-tm-dashboard-ajax.class.php:50
+msgid "Duplicating"
+msgstr "Duplikálás"
+
+#: menu/dashboard/wpml-tm-dashboard-ajax.class.php:51
+msgid "Post parent"
+msgstr "Szülő bejegyzés"
+
+#: menu/dashboard/wpml-tm-dashboard-ajax.class.php:52
+msgid "Any"
+msgstr "Bármelyik"
+
+#: menu/wpml-tm-menus-management.php:72
+msgid "WPML's Translation Management"
+msgstr "A WPML Translation Management"
+
+#: menu/wpml-tm-menus-management.php:75
+#, php-format
+msgid "Before you can use %s, you need to complete this quick setup."
+msgstr "A(z) %s használata előtt el kell végeznie ezt a gyors beállítást."
+
+#: menu/wpml-tm-menus-management.php:274
+msgid "Published"
+msgstr "Közzétéve"
+
+#: menu/wpml-tm-menus-management.php:275 menu/wpml-tm-menus-settings.php:389
+msgid "Draft"
+msgstr "Vázlat"
+
+#: menu/wpml-tm-menus-management.php:276
+msgid "Pending Review"
+msgstr "Ellenőrzésre vár"
+
+#: menu/wpml-tm-menus-management.php:277
+msgid "Scheduled"
+msgstr "Ütemezett"
+
+#: menu/wpml-tm-menus-management.php:278
+msgid "Private"
+msgstr "Privát"
+
+#: menu/wpml-tm-menus-management.php:338
+#, php-format
+msgid "To see more items, use the filter and narrow down the search. %s"
+msgstr "További tételek megtekintéséhez használja a szűrőt, és szűkítse a keresést. %s"
+
+#: menu/wpml-tm-menus-management.php:339
+msgid "Help"
+msgstr "Súgó"
+
+#: menu/wpml-tm-menus-management.php:358
+msgid "account status"
+msgstr "fiók állapota"
+
+#: menu/wpml-tm-menus-management.php:379
+msgid "2. Select translation options"
+msgstr "2. Fordítási opciók kiválasztása"
+
+#: menu/wpml-tm-menus-management.php:408
+msgid "Word count estimate:"
+msgstr "Becsült szószám:"
+
+#: menu/wpml-tm-menus-management.php:409
+#, php-format
+msgid "%s words"
+msgstr "%s szó"
+
+#: menu/wpml-tm-menus-management.php:411
+#, php-format
+msgid "in %s document(s)"
+msgstr "%s dokumentumban"
+
+#. translators: This text will be used to build a link to the translation
+#. roles page
+#: menu/wpml-tm-menus-management.php:439
+msgid "at least one translator"
+msgstr "legalább egy fordító"
+
+#. translators: This text will be used to build a link to the translation
+#. services page
+#: menu/wpml-tm-menus-management.php:442
+msgid "active and authenticated translation service"
+msgstr "aktív és hitelesített fordítási szolgáltatás"
+
+#. translators: %1$s contains a link to the translation roles page with "at
+#. least one translator" as a text whilst %2$s is a link to the translation
+#. services page with "active and authenticated translation service" as a text
+#: menu/wpml-tm-menus-management.php:445
+#, php-format
+msgid ""
+"To send content to translation first make sure you either have %1$s or an "
+"%2$s."
+msgstr "A tartalom fordításra küldéséhez először győződjön meg arról, hogy rendelkezésére áll %1$s vagy egy %2$s."
+
+#. translators: %s is replaced with the name of the active translation service
+#: menu/wpml-tm-menus-management.php:452
+#, php-format
+msgid ""
+"To send content to translation first make sure \"%s\" is authenticated or "
+"you have at least one translator."
+msgstr "A tartalom fordításra küldéséhez először győződjön meg arról, hogy a(z) „%s” hitelesített, vagy legalább egy fordítóval rendelkezik."
+
+#: menu/wpml-tm-menus-management.php:488
+msgid "All Languages"
+msgstr "Minden nyelv"
+
+#: menu/wpml-tm-menus-management.php:498 menu/wpml-tm-menus-management.php:537
+msgid "Duplicate content"
+msgstr "Tartalom duplikálása"
+
+#: menu/wpml-tm-menus-management.php:507 menu/wpml-tm-menus-management.php:543
+msgid "Do nothing"
+msgstr "Nincs teendő"
+
+#: menu/wpml-tm-menus-management.php:564
+msgid ""
+"Any existing content (translations) will be overwritten when creating "
+"duplicates."
+msgstr "A duplikátumok létrehozásakor a meglévő tartalom (fordítások) felül lesz írva."
+
+#: menu/wpml-tm-menus-management.php:567
+msgid ""
+"When duplicating content, please first duplicate parent pages to maintain "
+"the site's hierarchy."
+msgstr "Tartalom duplikálásakor először a szülőoldalakat duplikálja, hogy megőrizze a webhely hierarchiáját."
+
+#: menu/wpml-tm-menus-management.php:658
+msgid "No documents found"
+msgstr "Nem található dokumentum"
+
+#: menu/wpml-tm-menus-management.php:763
+msgid "1. Review documents for translation"
+msgstr "1. Fordításra szánt dokumentumok áttekintése"
+
+#: menu/wpml-tm-menus-management.php:769
+msgid ""
+"You are about to delete selected items from the basket. Are you sure you "
+"want to do that?"
+msgstr "Biztosan törölni szeretné a kijelölt tételeket a kosárból?"
+
+#: menu/wpml-tm-menus-management.php:802
+#, php-format
+msgid "%1$s|WPML|%2$s"
+msgstr "%1$s|WPML|%2$s"
+
+#: menu/wpml-tm-menus-management.php:815
+msgid ""
+"This deadline is what WPML suggests according to the amount of work that you"
+" already sent to this translator. You can modify this date to set the "
+"deadline manually."
+msgstr "Ez a határidő a WPML javaslata, amely figyelembe veszi a fordítónak már elküldött munka mennyiségét. Ezt a dátumot módosítva manuálisan is beállíthatja a határidőt."
+
+#: menu/wpml-tm-menus-management.php:821
+msgid "2. Set a batch name and deadline"
+msgstr "2. Adja meg a köteg nevét és határidejét"
+
+#: menu/wpml-tm-menus-management.php:822
+msgid "3. Choose translator or Translation Service"
+msgstr "3. Fordító vagy fordítási szolgáltatás kiválasztása"
+
+#: menu/wpml-tm-menus-management.php:823
+msgid "Batch name:"
+msgstr "Köteg neve:"
+
+#: menu/wpml-tm-menus-management.php:824
+msgid ""
+"Give a name to the batch. If omitted, the default name will be applied."
+msgstr "Adjon nevet a kötegnek. Ha nem ad meg nevet, a köteg az alapértelmezett nevet kapja."
+
+#: menu/wpml-tm-menus-management.php:825
+msgid "Language pair"
+msgstr "Nyelvpár"
+
+#: menu/wpml-tm-menus-management.php:827
+msgid ""
+"Did you know that you can also set Translation Services and professional "
+"translators will handle your translation?"
+msgstr "Tudta, hogy fordítási szolgáltatásokat is beállíthat, így professzionális fordítók végzik el a fordítást?"
+
+#: menu/wpml-tm-menus-management.php:828
+msgid "Suggested deadline:"
+msgstr "Javasolt határidő:"
+
+#: menu/wpml-tm-menus-management.php:830
+msgid "Send all items for translation"
+msgstr "Összes tétel elküldése fordításra"
+
+#: menu/wpml-tm-menus-management.php:839
+msgid "Check available Translation Services"
+msgstr "Elérhető fordítási szolgáltatások ellenőrzése"
+
+#: menu/wpml-tm-menus-management.php:880
+msgid "Translation Jobs"
+msgstr "Fordítási feladatok"
+
+#: menu/wpml-tm-menus-management.php:896
+msgid "Communication Log"
+msgstr "Kommunikációs napló"
+
+#: menu/wpml-tm-menus-management.php:926
+msgid ""
+"This is a log of the communication between your site and the translation "
+"system. It doesn't include any private information and allows WPML support "
+"to help with problems related to sending content to translation."
+msgstr "Ez a webhely és a fordítórendszer közötti kommunikáció naplója. Nem tartalmaz bizalmas információkat, és lehetővé teszi a WPML támogatás számára, hogy segítsen a tartalom fordításra küldésével kapcsolatos problémák megoldásában."
+
+#: menu/wpml-tm-menus-management.php:934
+msgid "Clear log"
+msgstr "Napló törlése"
+
+#: menu/wpml-tm-menus-management.php:936
+msgid "The communication log is empty."
+msgstr "A kommunikációs napló üres."
+
+#: menu/wpml-tm-menus-management.php:941
+msgid "Disable logging"
+msgstr "Naplózás kikapcsolása"
+
+#: menu/wpml-tm-menus-management.php:944
+msgid ""
+"Communication logging is currently disabled. To allow WPML support to help "
+"you with issues related to sending content to translation, you need to "
+"enable the communication logging."
+msgstr "A kommunikáció naplózása jelenleg ki van kapcsolva. Ahhoz, hogy a WPML támogatás segítséget nyújthasson a tartalom fordításra küldésével kapcsolatos problémákban, be kell kapcsolnia a kommunikáció naplózását."
+
+#: menu/wpml-tm-menus-management.php:948
+msgid "Enable logging"
+msgstr "Naplózás engedélyezése"
+
+#: menu/wpml-tm-menus-settings.php:27 menu/wpml-tm-menus-settings.php:186
+msgid "How to translate posts and pages"
+msgstr "Bejegyzések és oldalak fordításának módja"
+
+#: menu/wpml-tm-menus-settings.php:30
+msgid "Posts and pages synchronization"
+msgstr "Bejegyzések és oldalak szinkronizálása"
+
+#: menu/wpml-tm-menus-settings.php:31 menu/wpml-tm-menus-settings.php:361
+msgid "Translated documents options"
+msgstr "Lefordított dokumentumok opciói"
+
+#: menu/wpml-tm-menus-settings.php:33
+msgid "Login and registration pages"
+msgstr "Belépési és regisztrációs oldalak"
+
+#: menu/wpml-tm-menus-settings.php:36
+msgid "Custom posts slug translation options"
+msgstr "Egyéni bejegyzések slugjának fordítási opciói"
+
+#: menu/wpml-tm-menus-settings.php:40 menu/wpml-tm-menus-settings.php:513
+msgid "Translation pickup mode"
+msgstr "Fordítások átvételi módja"
+
+#: menu/wpml-tm-menus-settings.php:44 menu/xliff-options.php:24
+msgid "XLIFF file options"
+msgstr "XLIFF-fájl opciói"
+
+#: menu/wpml-tm-menus-settings.php:61
+msgid "Post Types Translation"
+msgstr "Bejegyzéstípusok fordítása"
+
+#: menu/wpml-tm-menus-settings.php:65
+msgid "Taxonomies Translation"
+msgstr "Taxonómiák fordítása"
+
+#: menu/wpml-tm-menus-settings.php:69 menu/wpml-tm-menus-settings.php:611
+msgid "Admin Strings to Translate"
+msgstr "Fordítandó adminisztrációs szövegek"
+
+#: menu/wpml-tm-menus-settings.php:102
+msgid "Multilingual Content Setup"
+msgstr "Többnyelvű tartalom beállítása"
+
+#: menu/wpml-tm-menus-settings.php:113
+msgid "Translation Notifications"
+msgstr "Fordítási értesítések"
+
+#: menu/wpml-tm-menus-settings.php:134
+msgid ""
+"There is new translated content on this site. You can scan posts and strings"
+" to adjust links to point to translated content."
+msgstr "Új lefordított tartalom érhető el ezen a webhelyen. Átvizsgálhatja a bejegyzéseket és a karakterláncokat, hogy a linkek a lefordított tartalomra mutassanak."
+
+#: menu/wpml-tm-menus-settings.php:152
+msgid ""
+"WPML can read a configuration file that tells it what needs translation in "
+"themes and plugins. The file is named wpml-config.xml and it's placed in the"
+" root folder of the plugin or theme."
+msgstr "A WPML be tud olvasni egy konfigurációs fájlt, amely megadja, hogy mit kell lefordítani a sablonokban és a bővítményekben. A fájl neve wpml-config.xml, és a bővítmény vagy a sablon gyökérmappájában található."
+
+#: menu/wpml-tm-menus-settings.php:162
+msgid "Learn more"
+msgstr "További tudnivalók"
+
+#. translators: Heading shown for selecting the editor to use with WPML's
+#. Translation Management when creating new content
+#: menu/wpml-tm-menus-settings.php:203
+msgid "New content"
+msgstr "Új tartalom"
+
+#. translators: Editor to use with WPML's Translation Management when creating
+#. new content
+#: menu/wpml-tm-menus-settings.php:218
+msgid "Use WPML's Advanced Translation Editor"
+msgstr "A WPML haladó fordításszerkesztőjének használata"
+
+#. translators: Editor to use with WPML's Translation Management when creating
+#. new content
+#. translators: Which editor to use when updating content that was created
+#. with WPML's Classic Translation Editor?
+#: menu/wpml-tm-menus-settings.php:232 menu/wpml-tm-menus-settings.php:278
+msgid "Use WPML's Classic Translation Editor"
+msgstr "A WPML klasszikus fordításszerkesztőjének használata"
+
+#. translators: heading shown for selecting the editor to use when updating
+#. content that was created with WPML's Classic Translation Editor
+#: menu/wpml-tm-menus-settings.php:248
+msgid "Content that was created with WPML's Classic Translation Editor"
+msgstr "A WPML klasszikus fordításszerkesztőjével létrehozott tartalom"
+
+#. translators: Which editor to use when updating content that was created
+#. with WPML's Classic Translation Editor?
+#: menu/wpml-tm-menus-settings.php:263
+msgid ""
+"Switch to using the Advanced Translation Editor (old translations may be "
+"unusable)"
+msgstr "Váltás a haladó fordításszerkesztő használatára (a régi fordítások használhatatlanná válhatnak)"
+
+#: menu/wpml-tm-menus-settings.php:294
+msgid "Taxonomies"
+msgstr "Taxonómiák"
+
+#: menu/wpml-tm-menus-settings.php:305
+msgid "Don't include already translated terms in the translation editor"
+msgstr "A már lefordított kifejezések kihagyása a fordításszerkesztőből"
+
+#: menu/wpml-tm-menus-settings.php:312
+msgid "Translators help"
+msgstr "Segítség a fordítóknak"
+
+#: menu/wpml-tm-menus-settings.php:322
+msgid "Show translation instructions in the list of pages"
+msgstr "Fordítási utasítások megjelenítése az oldalak listájában"
+
+#: menu/wpml-tm-menus-settings.php:336
+msgid "Learn more about the different translation options"
+msgstr "További tudnivalók a különböző fordítási opciókról"
+
+#: menu/wpml-tm-menus-settings.php:376
+msgid "Document status"
+msgstr "Dokumentum állapota"
+
+#: menu/wpml-tm-menus-settings.php:403
+msgid "Same as the original document"
+msgstr "Az eredeti dokumentummal megegyező"
+
+#: menu/wpml-tm-menus-settings.php:413
+msgid ""
+"Choose if translations should be published when received. Note: If Publish "
+"is selected, the translation will only be published if the original document"
+" is published when the translation is received."
+msgstr "Adja meg, hogy a fordítások közzé legyenek-e téve a beérkezésükkor. Megjegyzés: ha a közzététel lehetőséget választja, a fordítás csak akkor kerül közzétételre, ha az eredeti dokumentum a fordítás beérkezésekor már közzé van téve."
+
+#: menu/wpml-tm-menus-settings.php:423
+msgid "Page URL"
+msgstr "Oldal URL-je"
+
+#: menu/wpml-tm-menus-settings.php:436
+msgid "Auto-generate from title (default)"
+msgstr "Automatikus létrehozás a címből (alapértelmezett)"
+
+#: menu/wpml-tm-menus-settings.php:452
+msgid ""
+"Translate (this will include the slug in the translation and not create it "
+"automatically from the title)"
+msgstr "Fordítás (a fordítás részeként a slug is le lesz fordítva, és nem jön létre automatikusan a címből)"
+
+#: menu/wpml-tm-menus-settings.php:468
+msgid "Copy from original language if translation language uses encoded URLs"
+msgstr "Másolás az eredeti nyelvből, ha a fordítás nyelve kódolt URL-eket használ"
+
+#: menu/wpml-tm-menus-settings.php:528
+msgid ""
+"How should the site receive completed translations from Translation Service?"
+msgstr "Hogyan kapja meg a webhely a fordítási szolgáltatástól a befejezett fordításokat?"
+
+#: menu/wpml-tm-menus-settings.php:546
+msgid ""
+"Translation Service will deliver translations automatically using XML-RPC"
+msgstr "A fordítási szolgáltatás XML-RPC használatával automatikusan továbbítja a fordításokat"
+
+#: menu/wpml-tm-menus-settings.php:565
+msgid "The site will fetch translations manually"
+msgstr "A webhely manuálisan tölti le a fordításokat"
+
+#: menu/wpml-tm-menus-settings.php:619
+msgid "Admin Strings"
+msgstr "Adminisztrációs szövegek"
+
+#: menu/wpml-tm-menus-settings.php:646
+msgid "Edit translatable strings"
+msgstr "Fordítható szövegek szerkesztése"
+
+#: menu/wpml-tm-menus-settings.php:752
+msgid "Translate Link Targets"
+msgstr "Hivatkozások céljainak fordítása"
+
+#: menu/xliff-management.php:8
+msgid "XLIFF translation"
+msgstr "XLIFF-fordítás"
+
+#: menu/xliff-options.php:10
+msgid "Do nothing - all new line characters will stay untouched."
+msgstr "Ne tegyen semmit – az összes sortörés változatlan marad."
+
+#: menu/xliff-options.php:15
+#, php-format
+msgid ""
+"All new lines should be replaced by HTML element %s. Use this option if "
+"translation tool used by translator does not support new lines characters "
+"(for example Virtaal software)"
+msgstr "Az összes sortörést a %s HTML-elemmel kell helyettesíteni. Ezt az opciót akkor használja, ha a fordító által használt eszköz nem támogatja a sortöréseket (például a Virtaal szoftver)"
+
+#: menu/xliff-options.php:34
+msgid "XLIFF version"
+msgstr "XLIFF-verzió"
+
+#: menu/xliff-options.php:37
+msgid "Choose default format for XLIFF file:"
+msgstr "Válassza ki az XLIFF-fájl alapértelmezett formátumát:"
+
+#: menu/xliff-options.php:40
+msgid "Please choose"
+msgstr "Kérjük, válasszon"
+
+#: menu/xliff-options.php:49
+#, php-format
+msgid "XLIFF %s"
+msgstr "XLIFF %s"
+
+#: menu/xliff-options.php:59
+msgid "New lines character"
+msgstr "Újsorkarakter"
+
+#: menu/xliff-options.php:61
+msgid "How new lines characters in XLIFF files should be handled?"
+msgstr "Hogyan kezelje az XLIFF-fájlok újsorkaraktereit?"

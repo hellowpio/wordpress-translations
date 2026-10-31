@@ -1,0 +1,1492 @@
+# Copyright (C) 2026 AzentLabs
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: AI Product Recommendations 1.4.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ai-product-recommendations\n"
+"POT-Creation-Date: 2026-10-31T07:12:52+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: ai-product-recommendations\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: AI Product Recommendations\n"
+"X-Plugin-Tone: formal\n"
+"X-Plugin-Version: 1.4.0\n"
+
+#. Plugin Name of the plugin
+#: ai-product-recommendations.php includes/api/class-api-admin.php:517
+#: includes/enqueue-scripts.php:443
+#: includes/wp/class-azentai-widget-recommendations.php:29
+msgid "AI Product Recommendations"
+msgstr "AI Product Recommendations"
+
+#. Plugin URI of the plugin
+#: ai-product-recommendations.php
+msgid "https://woocommerce.com/products/ai-product-recommendations/"
+msgstr "https://woocommerce.com/products/ai-product-recommendations/"
+
+#. Description of the plugin
+#: ai-product-recommendations.php
+msgid ""
+"AI Shopping Assistant and intelligent product recommendations powered by "
+"OpenAI. Real-time customer support, personalized experiences, and smart "
+"upsell/cross-sell strategies."
+msgstr "OpenAI-alapú AI-vásárlási asszisztens és intelligens termékajánlások. Valós idejű ügyféltámogatás, személyre szabott élmények, valamint intelligens felülértékesítési és keresztértékesítési stratégiák."
+
+#. Author of the plugin
+#: ai-product-recommendations.php
+msgid "AzentLabs"
+msgstr "AzentLabs"
+
+#. Author URI of the plugin
+#: ai-product-recommendations.php
+msgid "https://woocommerce.com/vendor/azent-labs/"
+msgstr "https://woocommerce.com/vendor/azent-labs/"
+
+#: includes/ai/class-azentai-api.php:44
+msgid "AzentAI is not enabled"
+msgstr "Az AzentAI nincs bekapcsolva"
+
+#: includes/ai/class-azentai-api.php:73
+msgid "User ID is required."
+msgstr "A felhasználói azonosító (ID) megadása kötelező."
+
+#: includes/ai/class-azentai-api.php:82
+msgid ""
+"The AzentAI recommendation service is not configured. Add its API key in wp-"
+"config.php or the server environment."
+msgstr "Az AzentAI-ajánlószolgáltatás nincs beállítva. Adja meg az API-kulcsot a wp-config.php fájlban vagy a kiszolgáló környezetében."
+
+#. translators: %s: error message
+#: includes/ai/class-azentai-api.php:121 includes/ai/class-azentai-api.php:162
+#, php-format
+msgid "API request failed: %s"
+msgstr "Az API-kérés sikertelen: %s"
+
+#. translators: %d: HTTP status code
+#: includes/ai/class-azentai-api.php:136
+#, php-format
+msgid "API returned error code: %d"
+msgstr "Az API hibakódot adott vissza: %d"
+
+#: includes/ai/class-azentai-api.php:150
+msgid "Invalid API response format."
+msgstr "Hibás API-válaszformátum."
+
+#: includes/api/class-api-admin.php:28 includes/api/class-api-frontend.php:62
+#: includes/api/class-api-rest-recommendations.php:1615
+#: includes/api/class-api-rest-recommendations.php:1620
+msgid "Invalid nonce."
+msgstr "Érvénytelen nonce."
+
+#: includes/api/class-api-admin.php:32
+#: includes/api/class-api-rest-recommendations.php:1631
+msgid "Insufficient permissions."
+msgstr "Nincs elegendő jogosultsága."
+
+#: includes/api/class-api-admin.php:202
+msgid "No settings provided."
+msgstr "Nincsenek megadva a beállítások."
+
+#: includes/api/class-api-admin.php:209 includes/api/class-api-admin.php:221
+msgid "Invalid settings key."
+msgstr "Hibás beállítási kulcs."
+
+#: includes/api/class-api-admin.php:244
+msgid "Settings saved successfully."
+msgstr "A beállítások sikeresen elmentve."
+
+#: includes/api/class-api-admin.php:268
+msgid "No type provided."
+msgstr "Nincs megadva típus."
+
+#: includes/api/class-api-admin.php:336
+msgid "Enter an OpenAI API key before checking the connection."
+msgstr "A kapcsolat ellenőrzése előtt adjon meg egy OpenAI API-kulcsot."
+
+#: includes/api/class-api-admin.php:340
+msgid "The API key or model ID is invalid. Check the values and try again."
+msgstr "Az API-kulcs vagy a modellazonosító (ID) hibás. Ellenőrizze az értékeket, majd próbálja újra."
+
+#: includes/api/class-api-admin.php:360
+msgid ""
+"Could not connect to OpenAI. Check the server network and outbound HTTPS "
+"access, then try again."
+msgstr "Nem sikerült csatlakozni az OpenAI-hoz. Ellenőrizze a kiszolgáló hálózati kapcsolatát és a kimenő HTTPS-hozzáférést, majd próbálja újra."
+
+#: includes/api/class-api-admin.php:367
+msgid ""
+"OpenAI returned an unexpected response while checking the model. Please try "
+"again."
+msgstr "Az OpenAI váratlan választ adott a modell ellenőrzésekor. Kérjük, próbálja újra."
+
+#: includes/api/class-api-admin.php:375
+#, php-format
+msgid "Connection successful. The API key is valid and model \"%s\" is available."
+msgstr "A kapcsolat sikeres. Az API-kulcs érvényes, a(z) „%s” modell pedig elérhető."
+
+#: includes/api/class-api-admin.php:383
+msgid ""
+"OpenAI rejected the API key. Check that it is correct, active, and has not "
+"been revoked."
+msgstr "Az OpenAI elutasította az API-kulcsot. Ellenőrizze, hogy helyes és aktív-e, valamint hogy nem vonták-e vissza."
+
+#: includes/api/class-api-admin.php:386
+msgid ""
+"The API key does not have permission to access OpenAI models. Check its "
+"project or organization permissions."
+msgstr "Az API-kulcs nem rendelkezik engedéllyel az OpenAI-modellek eléréséhez. Ellenőrizze a projekt- vagy szervezeti engedélyeket."
+
+#: includes/api/class-api-admin.php:389
+msgid ""
+"The selected model was not found or is not available to this API key. Check "
+"the model ID and project access."
+msgstr "A kiválasztott modell nem található, vagy nem érhető el ezzel az API-kulccsal. Ellenőrizze a modellazonosítót (ID) és a projekthez való hozzáférést."
+
+#: includes/api/class-api-admin.php:392
+msgid ""
+"OpenAI rate-limited this check. Please retry shortly and review your API "
+"usage or billing limits."
+msgstr "Az OpenAI korlátozta az ellenőrzési kérelmek gyakoriságát. Kérjük, próbálja újra rövid idő múlva, és ellenőrizze az API-használati vagy számlázási korlátokat."
+
+#: includes/api/class-api-admin.php:396
+msgid "OpenAI is temporarily unavailable. Please try again later."
+msgstr "Az OpenAI átmenetileg nem érhető el. Kérjük, próbálja újra később."
+
+#. translators: %d: HTTP status returned by OpenAI.
+#: includes/api/class-api-admin.php:399
+#, php-format
+msgid ""
+"OpenAI returned HTTP %d while checking the key and model. Verify the model "
+"ID and API key permissions."
+msgstr "Az OpenAI HTTP %d hibakódot adott vissza a kulcs és a modell ellenőrzésekor. Ellenőrizze a modellazonosítót (ID) és az API-kulcs jogosultságait."
+
+#: includes/api/class-api-admin.php:505
+#: includes/api/class-api-rest-recommendations.php:394
+#: includes/api/class-api-rest-recommendations.php:1337
+#: includes/assistant/class-azentai-assistant-store-profile.php:30
+msgid "AI Shopping Assistant"
+msgstr "AI-vásárlási asszisztens"
+
+#: includes/api/class-api-admin.php:511
+msgid ""
+"Enhance customer support with an AI-powered shopping assistant that provides"
+" instant responses and personalized help.<br><br><strong>Recommended "
+"placements:</strong> Product pages, cart, and checkout pages."
+msgstr "Javítsa az ügyféltámogatást AI-alapú vásárlási asszisztenssel, amely azonnali válaszokat és személyre szabott segítséget nyújt.<br><br><strong>Javasolt elhelyezések:</strong> termékoldalak, kosár- és pénztároldalak."
+
+#: includes/api/class-api-admin.php:523
+msgid ""
+"Showcase smart product recommendations tailored to each customer, helping "
+"them discover items they are more likely to love and "
+"buy.<br><br><strong>Recommended placements:</strong> Single product page, "
+"product lists, related products."
+msgstr "Mutasson minden vásárló igényeire szabott intelligens termékajánlásokat, amelyek segítenek felfedezni azokat a tételeket, amelyeket nagyobb valószínűséggel kedvelnek és vásárolnak meg.<br><br><strong>Javasolt elhelyezések:</strong> termékoldal, terméklisták, kapcsolódó termékek."
+
+#: includes/api/class-api-admin.php:529 includes/enqueue-scripts.php:414
+msgid "AI Personalized Recommendations"
+msgstr "Személyre szabott AI-ajánlások"
+
+#: includes/api/class-api-admin.php:535
+msgid ""
+"Deliver highly personalized product suggestions by analyzing each user's "
+"profile, interests, and shopping behavior for a unique "
+"experience.<br><br><strong>Recommended placements:</strong> Homepage "
+"sections, my account, and cart (to increase relevance before purchase)."
+msgstr "Nyújtson rendkívül személyre szabott termékajánlásokat az egyedi élmény érdekében, az egyes felhasználók profiljának, érdeklődési köreinek és vásárlási szokásainak elemzésével.<br><br><strong>Javasolt elhelyezések:</strong> kezdőlap szakaszai, fiókom oldal és kosár (a vásárlás előtti relevancia növeléséhez)."
+
+#: includes/api/class-api-admin.php:541
+msgid "AI Upcross Recommendations"
+msgstr "AI-alapú felülértékesítési és keresztértékesítési ajánlások"
+
+#: includes/api/class-api-admin.php:547
+msgid ""
+"Boost your sales by automatically suggesting relevant upsell and cross-sell "
+"products at the right moments in the customer "
+"journey.<br><br><strong>Recommended placements:</strong> Single product page"
+" (upsells), cart page (cross-sells / bundles), and checkout (order bumps)."
+msgstr "Növelje eladásait azzal, hogy automatikusan releváns felülértékesítési és keresztértékesítési termékeket ajánl a vásárlói út megfelelő pontjain.<br><br><strong>Javasolt elhelyezések:</strong> termékoldal (felülértékesítés), kosároldal (keresztértékesítés / csomagajánlatok) és pénztár (rendeléshez kapcsolódó ajánlatok)."
+
+#: includes/api/class-api-admin.php:611 includes/api/class-api-admin.php:664
+#: includes/api/class-api-admin.php:718
+msgid "Invalid language or message type."
+msgstr "Hibás nyelv vagy üzenettípus."
+
+#: includes/api/class-api-admin.php:672
+msgid "No messages provided."
+msgstr "Nincs megadva üzenet."
+
+#: includes/api/class-api-admin.php:695
+msgid "Messages saved successfully."
+msgstr "Az üzenetek sikeresen elmentve."
+
+#: includes/api/class-api-admin.php:736
+msgid "Messages reset to defaults."
+msgstr "Az üzenetek visszaállítva az alapértelmezett értékekre."
+
+#: includes/api/class-api-frontend.php:298
+msgid "Failed to get product IDs from AI."
+msgstr "Nem sikerült lekérni a termékazonosítókat az AI-tól."
+
+#: includes/api/class-api-frontend.php:301
+msgid "No recommendations available."
+msgstr "Nem érhetők el ajánlások."
+
+#: includes/api/class-api-frontend.php:309
+msgid "Invalid recommendation type."
+msgstr "Hibás ajánlástípus."
+
+#: includes/api/class-api-frontend.php:316
+msgid "Failed to render product HTML."
+msgstr "Nem sikerült megjeleníteni a termék HTML-kódját."
+
+#: includes/api/class-api-frontend.php:558
+msgid "Invalid event data"
+msgstr "Hibás eseményadatok"
+
+#: includes/api/class-api-frontend.php:570
+msgid "Invalid event type."
+msgstr "Hibás eseménytípus."
+
+#: includes/api/class-api-frontend.php:581
+msgid "Meta data must be an array."
+msgstr "A metaadatoknak tömbnek kell lenniük."
+
+#: includes/api/class-api-frontend.php:630
+msgid "No events provided for batch tracking"
+msgstr "Nincsenek megadva események a kötegelt követéshez"
+
+#: includes/api/class-api-frontend.php:641
+msgid "Batch size too large. Maximum 50 events per request."
+msgstr "A köteg mérete túl nagy. Kérésenként legfeljebb 50 esemény küldhető."
+
+#: includes/api/class-api-rest-recommendations.php:378
+msgid ""
+"Hi! I'm your AI shopping assistant. How can I help you find the perfect "
+"product?"
+msgstr "Üdvözlöm! Én vagyok az Ön AI-vásárlási asszisztense. Miben segíthetek megtalálni a tökéletes terméket?"
+
+#: includes/api/class-api-rest-recommendations.php:395
+msgid "Ask me for recommendations..."
+msgstr "Kérjen tőlem ajánlásokat..."
+
+#: includes/api/class-api-rest-recommendations.php:875
+#: includes/api/class-api-rest-recommendations.php:910
+#: includes/api/class-api-rest-recommendations.php:958
+msgid "Language parameter is required"
+msgstr "A nyelvi paraméter megadása kötelező"
+
+#: includes/api/class-api-rest-recommendations.php:918
+msgid "Keywords object is required"
+msgstr "A kulcsszavakat tartalmazó objektum megadása kötelező"
+
+#: includes/api/class-api-rest-recommendations.php:929
+msgid "Failed to save keywords"
+msgstr "A kulcsszavak mentése sikertelen"
+
+#: includes/api/class-api-rest-recommendations.php:937
+msgid "Keywords saved successfully"
+msgstr "A kulcsszavak mentése sikerült"
+
+#: includes/api/class-api-rest-recommendations.php:969
+msgid "Failed to reset keywords"
+msgstr "A kulcsszavak alaphelyzetbe állítása sikertelen"
+
+#: includes/api/class-api-rest-recommendations.php:980
+msgid "Keywords reset to defaults"
+msgstr "A kulcsszavak visszaálltak az alapértelmezett értékekre"
+
+#: includes/api/class-api-rest-recommendations.php:1000
+msgid "Keywords exported successfully"
+msgstr "A kulcsszavak exportálása sikerült"
+
+#: includes/api/class-api-rest-recommendations.php:1317
+msgid "AI Assistant settings saved successfully"
+msgstr "Az AI-asszisztens beállításainak mentése sikerült"
+
+#: includes/api/class-api-rest-recommendations.php:1343
+msgid "Ask me about products, recommendations, or store info..."
+msgstr "Kérdezzen a termékekről, az ajánlásokról vagy az áruházról..."
+
+#: includes/api/class-api-rest-recommendations.php:1344
+msgid "Hello! I'm your AI shopping assistant. How can I help you today?"
+msgstr "Üdvözlöm! Én vagyok az Ön AI-vásárlási asszisztense. Miben segíthetek ma?"
+
+#: includes/api/class-api-rest-recommendations.php:1413
+#: includes/api/class-api-rest-recommendations.php:1436
+#: includes/api/class-api-rest-recommendations.php:1459
+msgid "Assistant index is unavailable."
+msgstr "Az asszisztens indexe nem érhető el."
+
+#: includes/api/class-api-rest-recommendations.php:1424
+msgid "Assistant product index rebuild has been queued."
+msgstr "Az asszisztens termékindexének újraépítése sorba került."
+
+#: includes/api/class-api-rest-recommendations.php:1447
+msgid "The incomplete product index has been queued to resume."
+msgstr "A hiányos termékindex folytatása sorba került."
+
+#: includes/api/class-api-rest-recommendations.php:1470
+msgid "Failed Assistant index items have been queued for retry."
+msgstr "A sikertelen asszisztensindex-tételek újrapróbálása sorba került."
+
+#: includes/api/class-api-rest-recommendations.php:1488
+msgid "Knowledge Base index is unavailable."
+msgstr "A tudásbázis indexe nem érhető el."
+
+#: includes/api/class-api-rest-recommendations.php:1493
+msgid "Knowledge Base index rebuild has been queued."
+msgstr "A tudásbázis indexének újraépítése sorba került."
+
+#: includes/api/class-api-rest-recommendations.php:1540
+msgid "Invalid REST nonce."
+msgstr "Hibás REST nonce."
+
+#: includes/api/class-api-rest-recommendations.php:1581
+msgid "You are not allowed to view Assistant health."
+msgstr "Önnek nincs jogosultsága az asszisztens állapotának megtekintéséhez."
+
+#. translators: %d: Product ID shown when no product title is available.
+#: includes/assistant/analytics/class-azentai-assistant-analytics-query.php:501
+#, php-format
+msgid "Product #%d"
+msgstr "Termék #%d"
+
+#: includes/assistant/analytics/class-azentai-assistant-analytics.php:664
+#: includes/assistant/analytics/class-azentai-assistant-analytics.php:673
+msgid "AI Shopping Assistant analytics"
+msgstr "AI-vásárlási asszisztens analitikája"
+
+#: includes/assistant/analytics/class-azentai-assistant-analytics.php:690
+msgid "Assistant analytics event"
+msgstr "Asszisztensanalitikai esemény"
+
+#: includes/assistant/analytics/class-azentai-assistant-analytics.php:705
+msgid "Assistant analytics identifiers were anonymized."
+msgstr "Az asszisztensanalitika azonosítói anonimizálva lettek."
+
+#: includes/assistant/class-azentai-assistant-chat-service.php:248
+msgid "AI Assistant is currently disabled."
+msgstr "Az AI-asszisztens jelenleg ki van kapcsolva."
+
+#: includes/assistant/class-azentai-assistant-chat-service.php:258
+msgid "Please log in to use the AI Assistant."
+msgstr "Kérjük, jelentkezzen be az AI-asszisztens használatához."
+
+#: includes/assistant/class-azentai-assistant-chat-service.php:267
+msgid "Message cannot be empty"
+msgstr "Az üzenet nem lehet üres"
+
+#: includes/assistant/class-azentai-assistant-chat-service.php:275
+#: includes/assistant/class-azentai-assistant-usage-guard.php:237
+msgid "Message is too long. Please keep it under 2000 characters."
+msgstr "Az üzenet túl hosszú. Kérjük, 2000 karakternél rövidebb üzenetet adjon meg."
+
+#: includes/assistant/class-azentai-assistant-chat-service.php:295
+#: includes/assistant/class-azentai-assistant-usage-guard.php:405
+#: includes/assistant/class-azentai-assistant-usage-guard.php:821
+#: includes/assistant/class-azentai-assistant-usage-guard.php:859
+#: includes/assistant/class-azentai-assistant-usage-guard.php:887
+#: includes/assistant/class-azentai-assistant-usage-guard.php:1763
+msgid "The assistant is temporarily unavailable. Please try again later."
+msgstr "Az asszisztens átmenetileg nem érhető el. Kérjük, próbálja újra később."
+
+#: includes/assistant/class-azentai-assistant-chat-service.php:1582
+msgid "The Assistant could not complete this request. Please try again."
+msgstr "Az asszisztens nem tudta teljesíteni ezt a kérést. Kérjük, próbálja újra."
+
+#: includes/assistant/class-azentai-assistant-chat-service.php:2720
+msgid "Hello! How can I help you find a product today?"
+msgstr "Üdvözlöm! Miben segíthetek ma a termékkeresésben?"
+
+#: includes/assistant/class-azentai-assistant-chat-service.php:2721
+msgid "You are welcome! Let me know if you need anything else."
+msgstr "Szívesen! Kérem, jelezze, ha még valamire szüksége van."
+
+#: includes/assistant/class-azentai-assistant-chat-service.php:2722
+msgid "Thank you for visiting. See you next time!"
+msgstr "Köszönjük, hogy ellátogatott hozzánk. Viszontlátásra!"
+
+#: includes/assistant/class-azentai-assistant-chat-service.php:2723
+msgid ""
+"Tell me what product, category, price range, or feature you are looking for."
+msgstr "Mondja el, milyen terméket, kategóriát, árkategóriát vagy funkciót keres."
+
+#: includes/assistant/class-azentai-assistant-chat-service.php:2724
+msgid "I did not quite understand that. Could you be more specific?"
+msgstr "Nem egészen értettem. Meg tudná fogalmazni pontosabban?"
+
+#: includes/assistant/class-azentai-assistant-chat-service.php:2725
+msgid "Sorry, I could not find any matching products. Try a different search."
+msgstr "Sajnálom, nem találtam megfelelő termékeket. Próbáljon másképp keresni."
+
+#: includes/assistant/class-azentai-assistant-indexer.php:1002
+msgid ""
+"The product index is already being processed. Wait for the active job to "
+"finish before rebuilding."
+msgstr "A termékindex feldolgozása már folyamatban van. Az újraépítés előtt várja meg az aktív feladat befejezését."
+
+#: includes/assistant/class-azentai-assistant-indexer.php:1050
+msgid "The product index table is unavailable."
+msgstr "A termékindex-tábla nem érhető el."
+
+#: includes/assistant/class-azentai-assistant-indexer.php:1057
+msgid "A product index job is already queued or running."
+msgstr "Egy termékindexelési feladat már sorban áll vagy fut."
+
+#: includes/assistant/class-azentai-assistant-indexer.php:1065
+msgid ""
+"There is no incomplete initial product index to resume. Use Rebuild index to"
+" start a fresh index."
+msgstr "Nincs folytatható, befejezetlen kezdeti termékindex. Új index létrehozásához válassza az Index újraépítése lehetőséget."
+
+#: includes/assistant/class-azentai-assistant-indexer.php:1086
+msgid ""
+"The product index could not be queued. Check that Action Scheduler or WP-"
+"Cron is available, then try again."
+msgstr "A termékindexelési feladatot nem sikerült sorba állítani. Ellenőrizze, hogy az Action Scheduler vagy a WP-Cron elérhető-e, majd próbálja újra."
+
+#: includes/assistant/class-azentai-assistant-indexer.php:1102
+msgid ""
+"A product index job is already queued or running. Wait for it to finish "
+"before retrying failed items."
+msgstr "Egy termékindexelési feladat már sorban áll vagy fut. A sikertelen tételek újrapróbálása előtt várja meg a befejezését."
+
+#: includes/assistant/class-azentai-assistant-query-planner.php:380
+msgid "The query planner returned an unsuccessful HTTP response."
+msgstr "A lekérdezéstervező sikertelen HTTP-választ adott vissza."
+
+#: includes/assistant/class-azentai-assistant-usage-guard.php:229
+msgid "Please simplify your request and try again."
+msgstr "Kérjük, egyszerűsítse a kérését, majd próbálja újra."
+
+#: includes/assistant/class-azentai-assistant-usage-guard.php:234
+msgid "Please enter a valid message."
+msgstr "Kérjük, adjon meg érvényes üzenetet."
+
+#: includes/assistant/class-azentai-assistant-usage-guard.php:241
+#: includes/assistant/class-azentai-assistant-usage-guard.php:245
+msgid "Please shorten the conversation and try again."
+msgstr "Kérjük, rövidítse le a beszélgetést, majd próbálja újra."
+
+#: includes/assistant/class-azentai-assistant-usage-guard.php:250
+#: includes/assistant/class-azentai-assistant-usage-guard.php:253
+#: includes/assistant/class-azentai-assistant-usage-guard.php:258
+#: includes/assistant/class-azentai-assistant-usage-guard.php:265
+#: includes/assistant/class-azentai-assistant-usage-guard.php:273
+#: includes/assistant/class-azentai-assistant-usage-guard.php:277
+#: includes/assistant/class-azentai-assistant-usage-guard.php:284
+#: includes/assistant/class-azentai-assistant-usage-guard.php:289
+#: includes/assistant/class-azentai-assistant-usage-guard.php:293
+msgid "Please refresh the page and try again."
+msgstr "Kérjük, frissítse az oldalt, majd próbálja újra."
+
+#: includes/assistant/class-azentai-assistant-usage-guard.php:312
+msgid "This request is too large. Please shorten your message and try again."
+msgstr "Ez a kérés túl nagy. Kérjük, rövidítse le az üzenetet, majd próbálja újra."
+
+#: includes/assistant/class-azentai-assistant-usage-guard.php:918
+msgid "The assistant is temporarily unavailable."
+msgstr "Az asszisztens átmenetileg nem érhető el."
+
+#: includes/assistant/class-azentai-assistant-usage-guard.php:1734
+msgid "Too many requests. Please wait a moment and try again."
+msgstr "Túl sok kérés érkezett. Kérjük, várjon egy kicsit, majd próbálja újra."
+
+#: includes/assistant/class-azentai-assistant-usage-guard.php:1751
+msgid ""
+"The assistant is temporarily unable to process this request. Please try "
+"again later."
+msgstr "Az asszisztens átmenetileg nem tudja feldolgozni ezt a kérést. Kérjük, próbálja meg később újra."
+
+#: includes/assistant/knowledge/class-azentai-assistant-kb-serializer.php:113
+msgid "Store information"
+msgstr "Üzletinformációk"
+
+#: includes/assistant/size/class-azentai-assistant-size-data-provider.php:70
+msgid "AI Size Advisor"
+msgstr "AI-méretajánló"
+
+#: includes/assistant/size/class-azentai-assistant-size-data-provider.php:124
+msgid ""
+"Optional structured chart. Use explicit units (cm, mm, m, or inches). Leave "
+"empty when the product has no verified size data."
+msgstr "Opcionális strukturált mérettáblázat. Használjon egyértelmű mértékegységeket (cm, mm, m vagy hüvelyk). Hagyja üresen, ha a termék méretadatai nem ellenőrzöttek."
+
+#: includes/assistant/size/class-azentai-assistant-size-data-provider.php:126
+msgid ""
+"The Assistant uses this before descriptions. It does not infer conversions "
+"between brand size systems."
+msgstr "A segéd ezt használja elsőként, a leírások előtt. Nem következtet a különböző márkák méretezési rendszerei közötti átváltásra."
+
+#: includes/assistant/size/class-azentai-assistant-size-data-provider.php:158
+msgid ""
+"AI Size Advisor chart was not saved because the JSON or measurement ranges "
+"are invalid."
+msgstr "Az AI-méretajánló táblázata nem lett mentve, mert a JSON vagy a mérési tartományok hibásak."
+
+#: includes/class-azentai-frontend.php:456
+msgid "Recommendations for you"
+msgstr "Ajánlások Önnek"
+
+#: includes/class-azentai-frontend.php:459
+msgid "Just for you"
+msgstr "Csak Önnek"
+
+#: includes/class-azentai-frontend.php:462
+msgid "You may also like"
+msgstr "Önnek is tetszhet"
+
+#: includes/class-azentai-loader.php:356 includes/enqueue-scripts.php:464
+msgid "Settings"
+msgstr "Beállítások"
+
+#: includes/class-azentai-loader.php:412
+msgid "Documentation"
+msgstr "Dokumentáció"
+
+#: includes/class-azentai-loader.php:413
+msgid "Feature Requests"
+msgstr "Funkciókérések"
+
+#: includes/class-azentai-loader.php:414
+msgid "Support"
+msgstr "Támogatás"
+
+#. translators: %1$s is the Assistant name; %2$s is the store name.
+#: includes/data/localization-messages.php:1268
+#, php-format
+msgid "I’m %1$s, the shopping assistant for %2$s."
+msgstr "%1$s vagyok, %2$s vásárlási segédje."
+
+#. translators: %s is the Assistant name.
+#: includes/data/localization-messages.php:1270
+#, php-format
+msgid "I’m %s, your shopping assistant."
+msgstr "%s vagyok, az Ön vásárlási segédje."
+
+#. translators: %1$s is the Assistant name; %2$s is a comma-separated list of
+#. enabled capabilities.
+#: includes/data/localization-messages.php:1272
+#, php-format
+msgid "%1$s can help you with: %2$s."
+msgstr "%1$s a következőkben segíthet Önnek: %2$s."
+
+#. translators: %s is a comma-separated list of enabled capabilities.
+#: includes/data/localization-messages.php:1274
+#, php-format
+msgid "I can help you with %s."
+msgstr "A következőkben segíthetek Önnek: %s."
+
+#: includes/data/localization-messages.php:1275
+msgid "I’m here to help with your questions."
+msgstr "Kérdései esetén szívesen segítek."
+
+#. translators: %s is the store name.
+#: includes/data/localization-messages.php:1277
+#, php-format
+msgid "This is %s."
+msgstr "Az üzlet neve: %s."
+
+#: includes/data/localization-messages.php:1278
+msgid "You’re chatting with this store’s shopping assistant."
+msgstr "Ön most ennek az üzletnek a vásárlási segédjével beszélget."
+
+#: includes/data/localization-messages.php:1279
+msgid "I can help you explore the products currently available in this store."
+msgstr "Segíthetek felfedezni az üzletben jelenleg elérhető termékeket."
+
+#: includes/data/localization-messages.php:1280
+msgid "find products"
+msgstr "termékek keresése"
+
+#: includes/data/localization-messages.php:1281
+msgid "compare products"
+msgstr "termékek összehasonlítása"
+
+#: includes/data/localization-messages.php:1282
+msgid "get help with products in your current cart"
+msgstr "segítség kérése az aktuális kosárban lévő termékekkel kapcsolatban"
+
+#: includes/data/localization-messages.php:1283
+msgid "get size and fit guidance"
+msgstr "méret- és illeszkedési tanács kérése"
+
+#: includes/data/localization-messages.php:1284
+msgid "get answers from the store’s selected policies and FAQs"
+msgstr "válaszok keresése az üzlet kiválasztott irányelvei és gyakori kérdései között"
+
+#: includes/enqueue-scripts.php:118
+msgid "Related Products"
+msgstr "Kapcsolódó termékek"
+
+#: includes/enqueue-scripts.php:122
+msgid "Frequently Bought Together"
+msgstr "Gyakran együtt vásárolt termékek"
+
+#: includes/enqueue-scripts.php:126
+msgid "Best Sellers"
+msgstr "Legkelendőbbek"
+
+#: includes/enqueue-scripts.php:130
+msgid "All Catalog"
+msgstr "Teljes termékkatalógus"
+
+#: includes/enqueue-scripts.php:134
+msgid "Same Category Products"
+msgstr "Azonos kategóriájú termékek"
+
+#: includes/enqueue-scripts.php:138
+msgid "Same Tag Products"
+msgstr "Azonos címkéjű termékek"
+
+#: includes/enqueue-scripts.php:142
+msgid "Upsell Products"
+msgstr "Felülértékesítési termékek"
+
+#: includes/enqueue-scripts.php:146
+msgid "Cross-sell Products"
+msgstr "Keresztértékesítésre ajánlott termékek"
+
+#: includes/enqueue-scripts.php:150
+msgid "Featured Products"
+msgstr "Kiemelt termékek"
+
+#: includes/enqueue-scripts.php:154
+msgid "Recent Products"
+msgstr "Legújabb termékek"
+
+#: includes/enqueue-scripts.php:160
+msgid "Enable (default)"
+msgstr "Bekapcsolás (alapértelmezett)"
+
+#: includes/enqueue-scripts.php:164 includes/enqueue-scripts.php:463
+msgid "Disabled"
+msgstr "Kikapcsolva"
+
+#: includes/enqueue-scripts.php:170
+msgid "Yes (default)"
+msgstr "Igen (alapértelmezett)"
+
+#: includes/enqueue-scripts.php:174 includes/enqueue-scripts.php:456
+msgid "No"
+msgstr "Nem"
+
+#: includes/enqueue-scripts.php:180
+msgid "No Caching"
+msgstr "Gyorsítótárazás nélkül"
+
+#: includes/enqueue-scripts.php:184
+msgid "5 Minutes"
+msgstr "5 perc"
+
+#: includes/enqueue-scripts.php:188
+msgid "15 Minutes"
+msgstr "15 perc"
+
+#: includes/enqueue-scripts.php:192
+msgid "1 Hours"
+msgstr "1 óra"
+
+#: includes/enqueue-scripts.php:196
+msgid "6 Hours"
+msgstr "6 óra"
+
+#: includes/enqueue-scripts.php:200
+msgid "1 Day"
+msgstr "1 nap"
+
+#: includes/enqueue-scripts.php:204
+msgid "3 Days"
+msgstr "3 nap"
+
+#: includes/enqueue-scripts.php:208
+msgid "7 Days"
+msgstr "7 nap"
+
+#: includes/enqueue-scripts.php:212
+msgid "30 Days"
+msgstr "30 nap"
+
+#: includes/enqueue-scripts.php:218
+msgid "User ID"
+msgstr "Felhasználói azonosító (ID)"
+
+#: includes/enqueue-scripts.php:222
+msgid "User Name"
+msgstr "Felhasználó neve"
+
+#: includes/enqueue-scripts.php:226
+msgid "User Email"
+msgstr "Felhasználó e-mail címe"
+
+#: includes/enqueue-scripts.php:230
+msgid "User Address"
+msgstr "Felhasználó címe"
+
+#: includes/enqueue-scripts.php:234
+msgid "Gender"
+msgstr "Nem"
+
+#: includes/enqueue-scripts.php:238
+msgid "Age"
+msgstr "Életkor"
+
+#: includes/enqueue-scripts.php:242
+msgid "Location"
+msgstr "Hely"
+
+#: includes/enqueue-scripts.php:248
+msgid "Viewed Products"
+msgstr "Megtekintett termékek"
+
+#: includes/enqueue-scripts.php:252
+msgid "Added to Cart"
+msgstr "Kosárba helyezve"
+
+#: includes/enqueue-scripts.php:256
+msgid "Wishlist"
+msgstr "Kívánságlista"
+
+#: includes/enqueue-scripts.php:262
+msgid "Cart Page"
+msgstr "Kosároldal"
+
+#: includes/enqueue-scripts.php:266
+msgid "Checkout Page"
+msgstr "Pénztároldal"
+
+#: includes/enqueue-scripts.php:270
+msgid "My Account"
+msgstr "Fiókom"
+
+#: includes/enqueue-scripts.php:274
+msgid "Single Product"
+msgstr "Termékoldal"
+
+#: includes/enqueue-scripts.php:329
+msgid " AI Product Recommendations"
+msgstr " AI-termékajánlások"
+
+#: includes/enqueue-scripts.php:330
+msgid "Dashboard"
+msgstr "Vezérlőpult"
+
+#: includes/enqueue-scripts.php:331
+msgid "General"
+msgstr "Általános"
+
+#: includes/enqueue-scripts.php:332
+msgid "AI Features"
+msgstr "AI-funkciók"
+
+#: includes/enqueue-scripts.php:333
+msgid "AI Product"
+msgstr "AI-termék"
+
+#: includes/enqueue-scripts.php:334
+msgid "AI Personalized"
+msgstr "Személyre szabás AI-val"
+
+#: includes/enqueue-scripts.php:335
+msgid "AI Cross-sell/Upsell"
+msgstr "AI-alapú keresztértékesítés/felülértékesítés"
+
+#: includes/enqueue-scripts.php:336
+msgid "Select..."
+msgstr "Válasszon..."
+
+#: includes/enqueue-scripts.php:339
+msgid "Overview"
+msgstr "Áttekintés"
+
+#: includes/enqueue-scripts.php:340
+msgid "Total Impressions"
+msgstr "Megjelenítések összesen"
+
+#: includes/enqueue-scripts.php:341
+msgid ""
+"Total number of times recommended products were displayed to users across "
+"your store."
+msgstr "Az ajánlott termékek felhasználók számára történő megjelenítésének teljes száma az üzletben."
+
+#: includes/enqueue-scripts.php:342
+msgid "Total Clicks"
+msgstr "Összes kattintás"
+
+#: includes/enqueue-scripts.php:343
+msgid "Total number of times users clicked on recommended products."
+msgstr "Az ajánlott termékekre történt kattintások teljes száma."
+
+#: includes/enqueue-scripts.php:344
+msgid "Click-Through Rate (CTR)"
+msgstr "Átkattintási arány (CTR)"
+
+#: includes/enqueue-scripts.php:345
+msgid ""
+"Percentage of impressions that resulted in a click (Clicks / Impressions)."
+msgstr "A megjelenítések azon százaléka, amely kattintást eredményezett (kattintások / megjelenítések)."
+
+#: includes/enqueue-scripts.php:346
+msgid "Orders from Recommendations"
+msgstr "Ajánlásokból származó rendelések"
+
+#: includes/enqueue-scripts.php:347
+msgid "Number of orders that included products purchased via recommendations."
+msgstr "Az ajánlások alapján vásárolt termékeket tartalmazó rendelések száma."
+
+#: includes/enqueue-scripts.php:348
+msgid "Recommended Products"
+msgstr "Ajánlott termékek"
+
+#: includes/enqueue-scripts.php:349
+msgid "Select Block Type"
+msgstr "Blokktípus kiválasztása"
+
+#: includes/enqueue-scripts.php:350
+msgid "AI Product Recommendation"
+msgstr "AI-termékajánlás"
+
+#: includes/enqueue-scripts.php:351
+msgid "AI Personalized Recommendation"
+msgstr "Személyre szabott AI-ajánlás"
+
+#: includes/enqueue-scripts.php:352
+msgid "AI Upcross Recommendation"
+msgstr "AI-alapú keresztértékesítési/felülértékesítési ajánlás"
+
+#: includes/enqueue-scripts.php:353
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#: includes/enqueue-scripts.php:354
+msgid "Search"
+msgstr "Keresés"
+
+#: includes/enqueue-scripts.php:355
+msgid "Product Name"
+msgstr "Terméknév"
+
+#: includes/enqueue-scripts.php:356
+msgid "Impressions"
+msgstr "Megjelenítések"
+
+#: includes/enqueue-scripts.php:357
+msgid "Clicks"
+msgstr "Kattintások"
+
+#: includes/enqueue-scripts.php:358
+msgid "Click Rate (%)"
+msgstr "Kattintási arány (%)"
+
+#: includes/enqueue-scripts.php:359
+msgid "Orders"
+msgstr "Rendelések"
+
+#: includes/enqueue-scripts.php:360
+msgid "No data available!"
+msgstr "Nem állnak rendelkezésre adatok!"
+
+#: includes/enqueue-scripts.php:361
+msgid "items"
+msgstr "tételek"
+
+#: includes/enqueue-scripts.php:362
+msgid "Page"
+msgstr "Oldal"
+
+#: includes/enqueue-scripts.php:363
+msgid "of"
+msgstr "/"
+
+#: includes/enqueue-scripts.php:364
+msgid "First Page"
+msgstr "Első oldal"
+
+#: includes/enqueue-scripts.php:365
+msgid "Previous Page"
+msgstr "Előző oldal"
+
+#: includes/enqueue-scripts.php:366
+msgid "Next Page"
+msgstr "Következő oldal"
+
+#: includes/enqueue-scripts.php:367
+msgid "Last Page"
+msgstr "Utolsó oldal"
+
+#: includes/enqueue-scripts.php:370
+msgid "Update"
+msgstr "Frissítés"
+
+#: includes/enqueue-scripts.php:371
+msgid "OpenAI Status"
+msgstr "OpenAI-állapot"
+
+#: includes/enqueue-scripts.php:372
+msgid "Status:"
+msgstr "Állapot:"
+
+#: includes/enqueue-scripts.php:373 includes/enqueue-scripts.php:403
+msgid "Error"
+msgstr "Hiba"
+
+#: includes/enqueue-scripts.php:374
+msgid "OK"
+msgstr "OK"
+
+#: includes/enqueue-scripts.php:375
+msgid "Message:"
+msgstr "Üzenet:"
+
+#: includes/enqueue-scripts.php:376
+msgid "How to Use"
+msgstr "Használat"
+
+#: includes/enqueue-scripts.php:377
+msgid "Welcome!"
+msgstr "Üdvözöljük!"
+
+#: includes/enqueue-scripts.php:378
+msgid ""
+"OpenAI is a leading AI research organization that provides powerful language"
+" models for various applications, including product recommendations. By "
+"connecting directly to OpenAI, you can leverage their advanced AI "
+"capabilities."
+msgstr "Az OpenAI vezető AI-kutató szervezet, amely különféle alkalmazásokhoz, többek között termékajánlásokhoz biztosít nagy teljesítményű nyelvi modelleket. Ha közvetlenül csatlakozik az OpenAI-hoz, kihasználhatja fejlett AI-képességeit."
+
+#: includes/enqueue-scripts.php:379
+msgid ""
+"To get started, please enter your OpenAI API key in the settings below. This"
+" key is required to enable AI-powered features."
+msgstr "A kezdéshez adja meg OpenAI API-kulcsát az alábbi beállításoknál. Ez a kulcs az AI-alapú funkciók bekapcsolásához szükséges."
+
+#: includes/enqueue-scripts.php:380
+msgid "If you don't have an OpenAI account, you can sign up for one at"
+msgstr "Ha még nincs OpenAI-fiókja, itt regisztrálhat egyet"
+
+#: includes/enqueue-scripts.php:381
+msgid "To get your API key, log in to your OpenAI account, go to"
+msgstr "Az API-kulcs beszerzéséhez jelentkezzen be OpenAI-fiókjába, majd nyissa meg ezt"
+
+#: includes/enqueue-scripts.php:382
+msgid "API Keys"
+msgstr "API-kulcsok"
+
+#: includes/enqueue-scripts.php:383
+msgid "and create a new secret key."
+msgstr "és hozzon létre egy új titkos kulcsot."
+
+#: includes/enqueue-scripts.php:384
+msgid "General Settings"
+msgstr "Általános beállítások"
+
+#: includes/enqueue-scripts.php:385
+msgid "Enable/Disable Use AI"
+msgstr "AI használatának be-/kikapcsolása"
+
+#: includes/enqueue-scripts.php:386
+msgid "None"
+msgstr "Nincs"
+
+#: includes/enqueue-scripts.php:387
+msgid "Disable AI recommendations"
+msgstr "AI-ajánlások kikapcsolása"
+
+#: includes/enqueue-scripts.php:388
+msgid "OpenAI"
+msgstr "OpenAI"
+
+#: includes/enqueue-scripts.php:389
+msgid "Connect directly to OpenAI API"
+msgstr "Közvetlen csatlakozás az OpenAI API-hoz"
+
+#: includes/enqueue-scripts.php:390
+msgid ""
+"Enable or disable AI for all features. When disabled, rule-based "
+"recommendations will be used instead."
+msgstr "Kapcsolja be vagy ki az AI-t az összes funkcióhoz. Kikapcsolt állapotban szabályalapú ajánlásokat használ a rendszer."
+
+#: includes/enqueue-scripts.php:391
+msgid "OpenAI API Key"
+msgstr "OpenAI API-kulcs"
+
+#: includes/enqueue-scripts.php:392
+msgid "Enter your OpenAI API key to enable AI-powered features."
+msgstr "Adja meg OpenAI API-kulcsát az AI-alapú funkciók bekapcsolásához."
+
+#: includes/enqueue-scripts.php:393
+msgid "AI Model"
+msgstr "AI-modell"
+
+#: includes/enqueue-scripts.php:394
+msgid "Choose the OpenAI model for generating product recommendations."
+msgstr "Válassza ki az OpenAI-modellt a termékajánlások létrehozásához."
+
+#: includes/enqueue-scripts.php:395
+msgid "Connection Test"
+msgstr "Kapcsolat tesztelése"
+
+#: includes/enqueue-scripts.php:396
+msgid "Check connection"
+msgstr "Kapcsolat ellenőrzése"
+
+#: includes/enqueue-scripts.php:397
+msgid "Checking connection..."
+msgstr "Kapcsolat ellenőrzése…"
+
+#: includes/enqueue-scripts.php:398
+msgid ""
+"Checks the API key and currently selected model without generating a "
+"completion or saving settings."
+msgstr "Ellenőrzi az API-kulcsot és a jelenleg kiválasztott modellt anélkül, hogy tartalmat generálna vagy mentené a beállításokat."
+
+#: includes/enqueue-scripts.php:399
+msgid "Could not check the OpenAI connection. Please try again."
+msgstr "Nem sikerült ellenőrizni az OpenAI-kapcsolatot. Kérjük, próbálja újra."
+
+#: includes/enqueue-scripts.php:400
+msgid "OpenAI API Call Limit"
+msgstr "OpenAI API-hívások korlátja"
+
+#: includes/enqueue-scripts.php:401
+msgid ""
+"Set the maximum number of OpenAI API calls allowed per day to control costs."
+msgstr "Állítsa be a naponta engedélyezett OpenAI API-hívások maximális darabszámát a költségek szabályozásához."
+
+#: includes/enqueue-scripts.php:402
+msgid "Success"
+msgstr "Siker"
+
+#: includes/enqueue-scripts.php:404
+msgid "An error occurred while saving the settings."
+msgstr "Hiba történt a beállítások mentése közben."
+
+#: includes/enqueue-scripts.php:405
+msgid "Error fetching settings:"
+msgstr "Hiba a beállítások lekérésekor:"
+
+#: includes/enqueue-scripts.php:406
+msgid "What is OpenAI?"
+msgstr "Mi az OpenAI?"
+
+#: includes/enqueue-scripts.php:407
+msgid ""
+"AI Personalized Recommendations help you deliver unique product suggestions "
+"for each customer based on their profile, purchase history, browsing "
+"behavior, and preferences."
+msgstr "A személyre szabott AI-ajánlások minden vásárlónak egyedi termékjavaslatokat kínálnak a profilja, vásárlási előzményei, böngészési szokásai és preferenciái alapján."
+
+#: includes/enqueue-scripts.php:410
+msgid "Back to AI Features"
+msgstr "Vissza az AI-funkciókhoz"
+
+#: includes/enqueue-scripts.php:411
+msgid "Save Settings"
+msgstr "Beállítások mentése"
+
+#: includes/enqueue-scripts.php:412
+msgid "Maintenance Mode"
+msgstr "Karbantartási mód"
+
+#: includes/enqueue-scripts.php:413
+msgid ""
+"Configure AI-powered personalized product suggestions tailored to each "
+"customer’s profile, purchase history, browsing behavior, and preferences for"
+" a unique shopping experience."
+msgstr "Állítsa be az egyes vásárlók profiljához, vásárlási előzményeihez, böngészési szokásaihoz és preferenciáihoz igazított, AI-alapú termékjavaslatokat az egyedi vásárlási élményért."
+
+#: includes/enqueue-scripts.php:415
+msgid "Number of Suggestions"
+msgstr "Javaslatok száma"
+
+#: includes/enqueue-scripts.php:416
+msgid ""
+"Set the number of personalized products to recommend for each customer."
+msgstr "Állítsa be az egyes vásárlóknak ajánlandó személyre szabott termékek darabszámát."
+
+#: includes/enqueue-scripts.php:417
+msgid "Recent Activity Tracker"
+msgstr "Legutóbbi tevékenységek követése"
+
+#: includes/enqueue-scripts.php:418
+msgid ""
+"Use recent user actions (views, wishlist, cart) for deeper personalization."
+msgstr "Használja a legutóbbi felhasználói műveleteket (megtekintések, kívánságlista, kosár) a személyre szabás további javításához."
+
+#: includes/enqueue-scripts.php:419
+msgid "User Profile Tracker"
+msgstr "Felhasználói profil követése"
+
+#: includes/enqueue-scripts.php:420
+msgid "Collect and use customer profile data for personalization."
+msgstr "Gyűjtse össze és használja fel a vásárlói profiladatokat a személyre szabáshoz."
+
+#: includes/enqueue-scripts.php:421
+msgid "User Interests"
+msgstr "Felhasználói érdeklődési körök"
+
+#: includes/enqueue-scripts.php:422
+msgid "Include user interests to improve recommendation relevance."
+msgstr "Vegye figyelembe a felhasználó érdeklődési köreit a javaslatok relevanciájának javításához."
+
+#: includes/enqueue-scripts.php:423
+msgid "Exclude Out-of-Stock Products"
+msgstr "Elfogyott termékek kizárása"
+
+#: includes/enqueue-scripts.php:424
+msgid "Do not recommend products that are out of stock."
+msgstr "Ne javasoljon elfogyott termékeket."
+
+#: includes/enqueue-scripts.php:425
+msgid "Recommendation Lifetime"
+msgstr "Javaslatok érvényességi ideje"
+
+#: includes/enqueue-scripts.php:426
+msgid "How long to keep personalized recommendations before updating."
+msgstr "Adja meg, mennyi ideig maradjanak érvényben a személyre szabott javaslatok a frissítésük előtt."
+
+#: includes/enqueue-scripts.php:427
+msgid "Display Settings"
+msgstr "Megjelenítési beállítások"
+
+#: includes/enqueue-scripts.php:428
+msgid "Auto Display on Page"
+msgstr "Automatikus megjelenítés az oldalon"
+
+#: includes/enqueue-scripts.php:429
+msgid "Automatically display personalized recommendations on selected pages."
+msgstr "A személyre szabott javaslatok automatikus megjelenítése a kiválasztott oldalakon."
+
+#: includes/enqueue-scripts.php:430
+msgid "Number of products to display"
+msgstr "Megjelenítendő termékek száma"
+
+#: includes/enqueue-scripts.php:431
+msgid "Enter the number of products to be shown in the device per view."
+msgstr "Adja meg az adott eszközön megtekintésenként megjelenítendő termékek darabszámát."
+
+#: includes/enqueue-scripts.php:432
+msgid "Custom CSS"
+msgstr "Egyéni CSS"
+
+#: includes/enqueue-scripts.php:433
+msgid ""
+"Add your own CSS to customize the appearance of personalized "
+"recommendations."
+msgstr "Adjon hozzá saját CSS-t a személyre szabott termékjavaslatok megjelenésének testreszabásához."
+
+#: includes/enqueue-scripts.php:434
+msgid "Desktop"
+msgstr "Asztali"
+
+#: includes/enqueue-scripts.php:435
+msgid "Tablet"
+msgstr "Tablet"
+
+#: includes/enqueue-scripts.php:436
+msgid "Mobile"
+msgstr "Mobil"
+
+#: includes/enqueue-scripts.php:437
+msgid ""
+"Use the shortcode below to show AI-powered personalized product "
+"recommendations on any page, post, or widget:"
+msgstr "Az alábbi shortcode használatával bármelyik oldalon, bejegyzésben vagy widgetben megjelenítheti az AI-alapú, személyre szabott termékjavaslatokat:"
+
+#: includes/enqueue-scripts.php:438
+msgid ""
+"You can customize the number of products and placement in the display "
+"settings."
+msgstr "A megjelenítési beállításokban testreszabhatja a termékek számát és elhelyezését."
+
+#: includes/enqueue-scripts.php:439
+msgid "Loading..."
+msgstr "Betöltés..."
+
+#: includes/enqueue-scripts.php:442
+msgid ""
+"Configure AI-powered product recommendations to display relevant products to"
+" your customers based on their browsing history, preferences, and past "
+"purchases."
+msgstr "Állítsa be az AI-alapú termékjavaslatokat, hogy a vásárlók böngészési előzményei, preferenciái és korábbi vásárlásai alapján releváns termékeket jelenítsen meg nekik."
+
+#: includes/enqueue-scripts.php:444
+msgid ""
+"Enable to use OpenAI for product recommendations. Disable to use rule-based "
+"recommendations instead."
+msgstr "Kapcsolja be az OpenAI használatát a termékjavaslatokhoz. Kikapcsolt állapotban a rendszer szabályalapú javaslatokat használ."
+
+#: includes/enqueue-scripts.php:445
+msgid "Set the number of products to recommend for each customer."
+msgstr "Állítsa be, hogy hány terméket javasoljon a rendszer az egyes vásárlóknak."
+
+#: includes/enqueue-scripts.php:446
+msgid "Browsing History Tracker"
+msgstr "Böngészési előzmények követése"
+
+#: includes/enqueue-scripts.php:447
+msgid "Products the user has recently viewed."
+msgstr "A felhasználó által nemrég megtekintett termékek."
+
+#: includes/enqueue-scripts.php:448
+msgid "Use Wishlist"
+msgstr "Kívánságlista használata"
+
+#: includes/enqueue-scripts.php:449
+msgid "Include wishlist items to improve recommendation relevance."
+msgstr "Vegye figyelembe a kívánságlistán szereplő tételeket a javaslatok relevanciájának javításához."
+
+#: includes/enqueue-scripts.php:450
+msgid "Use Purchase History"
+msgstr "Vásárlási előzmények használata"
+
+#: includes/enqueue-scripts.php:451
+msgid "Personalize suggestions based on previous purchases."
+msgstr "Személyre szabott javaslatok korábbi vásárlások alapján."
+
+#: includes/enqueue-scripts.php:454
+msgid "AI Recommendations"
+msgstr "AI-alapú javaslatok"
+
+#: includes/enqueue-scripts.php:455
+msgid ""
+"AI Recommendations helps you boost sales and engagement by automatically "
+"suggesting the most relevant products to your customers. Easily track "
+"impressions, clicks, and orders for each recommendation. Use the settings "
+"below to enable or customize AI-powered product suggestions for your store."
+msgstr "Az AI-alapú javaslatok segítenek növelni az értékesítést és az elköteleződést azáltal, hogy automatikusan a legrelevánsabb termékeket ajánlják a vásárlóknak. Könnyedén nyomon követheti az egyes javaslatok megjelenítéseit, kattintásait és a hozzájuk kapcsolódó rendeléseket. Az alábbi beállításokkal bekapcsolhatja vagy testreszabhatja az áruházához készült AI-alapú termékjavaslatokat."
+
+#: includes/enqueue-scripts.php:457
+msgid "Recommendations"
+msgstr "Ajánlások"
+
+#: includes/enqueue-scripts.php:458
+msgid "Use AI"
+msgstr "AI használata"
+
+#: includes/enqueue-scripts.php:459
+msgid "Actions"
+msgstr "Műveletek"
+
+#: includes/enqueue-scripts.php:460
+msgid "No recommendations available"
+msgstr "Nincsenek elérhető javaslatok"
+
+#: includes/enqueue-scripts.php:461
+msgid "Hidden"
+msgstr "Rejtett"
+
+#: includes/enqueue-scripts.php:462
+msgid "Enable"
+msgstr "Bekapcsolás"
+
+#: includes/enqueue-scripts.php:465
+msgid "Error fetching recommended products."
+msgstr "Hiba történt az ajánlott termékek lekérésekor."
+
+#: includes/enqueue-scripts.php:468
+msgid ""
+"Set up AI-powered upsell and cross-sell strategies to increase average order"
+" value by suggesting complementary or higher-value products tailored to each"
+" customer during the shopping journey."
+msgstr "Állítson be AI-alapú felértékesítési és keresztértékesítési stratégiákat az átlagos rendelési érték növeléséhez: a vásárlási folyamat során minden vásárlónak kiegészítő vagy magasabb értékű termékeket javasolhat."
+
+#: includes/enqueue-scripts.php:469
+msgid ""
+"This feature uses AI (powered by OpenAI) to recommend complementary products"
+" (cross-sell) or higher-end alternatives (upsell) when a customer views or "
+"purchases an item. Boost your average order value by showing relevant "
+"suggestions tailored to each shopping journey."
+msgstr "Ez a funkció az OpenAI által működtetett AI segítségével kiegészítő termékeket (keresztértékesítés) vagy magasabb kategóriájú alternatívákat (felértékesítés) javasol, amikor a vásárló megtekint vagy megvásárol egy tételt. Növelje az átlagos rendelési értéket a vásárlási folyamathoz igazított, releváns javaslatok megjelenítésével."
+
+#: includes/enqueue-scripts.php:470
+msgid "Display AI Upsell & Cross-sell Anywhere:"
+msgstr "AI-alapú felértékesítés és keresztértékesítés megjelenítése bárhol:"
+
+#: includes/enqueue-scripts.php:471
+msgid "AI Upsell & Cross-sell"
+msgstr "AI-alapú felértékesítés és keresztértékesítés"
+
+#: includes/enqueue-scripts.php:472
+msgid ""
+"Enable to use OpenAI for upsell and cross-sell. Disable to use rule-based "
+"suggestions instead."
+msgstr "Kapcsolja be az OpenAI használatát a felértékesítéshez és a keresztértékesítéshez. Kikapcsolt állapotban a rendszer szabályalapú javaslatokat használ."
+
+#: includes/enqueue-scripts.php:473
+msgid "Set the number of upsell/cross-sell products to recommend."
+msgstr "Állítsa be, hány felértékesítéshez és keresztértékesítéshez kapcsolódó terméket javasoljon a rendszer."
+
+#: includes/enqueue-scripts.php:474
+msgid "Current Product Tracker"
+msgstr "Aktuális termék követése"
+
+#: includes/enqueue-scripts.php:475
+msgid ""
+"Track the product currently being viewed or purchased for generating "
+"relevant suggestions."
+msgstr "A releváns javaslatok létrehozásához kövesse nyomon az éppen megtekintett vagy megvásárolt terméket."
+
+#: includes/mcp/class-mcp-rate-limiter.php:157
+msgid "Too many requests. Maximum 20 requests per minute."
+msgstr "Túl sok kérés. Percenként legfeljebb 20 kérés engedélyezett."
+
+#: includes/mcp/class-mcp-rate-limiter.php:170
+msgid "Too many requests. Maximum 500 requests per hour."
+msgstr "Túl sok kérés. Óránként legfeljebb 500 kérés engedélyezett."
+
+#: includes/mcp/class-mcp-rate-limiter.php:196
+msgid "Too many requests for your API key. Maximum 30 requests per minute."
+msgstr "Túl sok kérés érkezett az Ön API-kulcsával. Percenként legfeljebb 30 kérés engedélyezett."
+
+#: includes/mcp/class-mcp-rate-limiter.php:209
+msgid "Too many requests for your API key. Maximum 1000 requests per hour."
+msgstr "Túl sok kérés érkezett az Ön API-kulcsával. Óránként legfeljebb 1000 kérés engedélyezett."
+
+#: includes/mcp/class-mcp-rate-limiter.php:231
+msgid "Too many concurrent requests. Maximum 5 requests at a time."
+msgstr "Túl sok párhuzamos kérés. Egyszerre legfeljebb 5 kérés engedélyezett."
+
+#: includes/mcp/class-wc-abilities.php:139
+msgid ""
+"MCP requires HTTPS. Enable with filter: azentai_mcp_allow_insecure_transport"
+msgstr "Az MCP használatához HTTPS szükséges. A következő szűrővel kapcsolhatja be: azentai_mcp_allow_insecure_transport"
+
+#: includes/mcp/class-wc-abilities.php:159
+msgid "X-MCP-API-Key header is required"
+msgstr "Az X-MCP-API-Key fejléc megadása kötelező"
+
+#: includes/mcp/class-wc-abilities.php:167
+msgid "Invalid API key format. Expected: consumer_key:consumer_secret"
+msgstr "Hibás API-kulcsformátum. Elvárt formátum: consumer_key:consumer_secret"
+
+#: includes/mcp/class-wc-abilities.php:199
+msgid "Get Product Recommendations"
+msgstr "Termékjavaslatok lekérése"
+
+#: includes/mcp/class-wc-abilities.php:200
+msgid ""
+"Get AI-powered product recommendations based on type (product, category, "
+"upsell, or personalized)"
+msgstr "AI-alapú termékjavaslatok lekérése típus szerint (termék, kategória, felértékesítés vagy személyre szabott)"
+
+#: includes/mcp/class-wc-abilities.php:214
+msgid "Get Upsell Recommendations"
+msgstr "Felülértékesítési ajánlások lekérése"
+
+#: includes/mcp/class-wc-abilities.php:215
+msgid ""
+"Get upsell and cross-sell product recommendations for multiple products"
+msgstr "Felülértékesítési és keresztértékesítési termékajánlások lekérése több termékhez"
+
+#: includes/mcp/class-wc-abilities.php:229
+msgid "Get Personalized Recommendations"
+msgstr "Személyre szabott ajánlások lekérése"
+
+#: includes/mcp/class-wc-abilities.php:230
+msgid ""
+"Get personalized product recommendations based on user purchase history"
+msgstr "Személyre szabott termékajánlások lekérése a felhasználó vásárlási előzményei alapján"
+
+#: includes/mcp/class-wc-abilities.php:287
+msgid ""
+"Type of recommendations: \"product\" for related products or \"category\" "
+"for bestsellers in a category"
+msgstr "Az ajánlás típusa: „product” a kapcsolódó termékekhez, vagy „category” egy kategória legnépszerűbb termékeihez"
+
+#: includes/mcp/class-wc-abilities.php:291
+msgid "Product ID (required for type=product)"
+msgstr "Termékazonosító (ID) (a type=product értékhez kötelező)"
+
+#: includes/mcp/class-wc-abilities.php:295
+msgid "Category ID (required for type=category)"
+msgstr "Kategóriaazonosító (ID) (a type=category értékhez kötelező)"
+
+#: includes/mcp/class-wc-abilities.php:301
+#: includes/mcp/class-wc-abilities.php:330
+#: includes/mcp/class-wc-abilities.php:354
+msgid "Number of recommendations to return (default: 5)"
+msgstr "Visszaadandó ajánlások darabszáma (alapértelmezett: 5)"
+
+#: includes/mcp/class-wc-abilities.php:305
+msgid "User ID for tracking (optional)"
+msgstr "Felhasználói azonosító (ID) a követéshez (opcionális)"
+
+#: includes/mcp/class-wc-abilities.php:324
+msgid "Array of product IDs to get upsell/cross-sell recommendations for"
+msgstr "A felülértékesítési és keresztértékesítési ajánlások lekéréséhez használt termékazonosítók tömbje"
+
+#: includes/mcp/class-wc-abilities.php:348
+msgid "User ID to get personalized recommendations for"
+msgstr "A személyre szabott ajánlások lekéréséhez használt felhasználói azonosító (ID)"
+
+#: includes/mcp/class-wc-abilities.php:398
+msgid "Array of recommended products"
+msgstr "Ajánlott termékek tömbje"
+
+#: includes/mcp/class-wc-abilities.php:441
+msgid "Recommendation type is required"
+msgstr "Az ajánlás típusa kötelező"
+
+#: includes/mcp/class-wc-abilities.php:455
+msgid "Product ID is required for type=product"
+msgstr "A type=product értékhez termékazonosító (ID) szükséges"
+
+#: includes/mcp/class-wc-abilities.php:466
+msgid "Category ID is required for type=category"
+msgstr "A type=category értékhez kategóriaazonosító (ID) szükséges"
+
+#: includes/mcp/class-wc-abilities.php:473
+msgid "Invalid recommendation type"
+msgstr "Hibás ajánlástípus"
+
+#: includes/mcp/class-wc-abilities.php:503
+msgid "Product IDs are required"
+msgstr "A termékazonosítók megadása kötelező"
+
+#: includes/mcp/class-wc-abilities.php:546
+msgid "User ID is required"
+msgstr "A felhasználói azonosító (ID) megadása kötelező"
+
+#: includes/mcp/class-wc-abilities.php:558
+msgid "User not found"
+msgstr "A felhasználó nem található"
+
+#: includes/models/class-azentai-model-events.php:226
+msgid "(Deleted Product)"
+msgstr "(Törölt termék)"
+
+#: includes/wp/class-azentai-widget-recommendations.php:30
+msgid "Displays AI-powered product recommendations."
+msgstr "Mesterséges intelligenciával működő termékajánlásokat jelenít meg."
+
+#: includes/wp/class-azentai-widget-recommendations.php:55
+msgid "No recommendation type selected."
+msgstr "Nincs kiválasztva ajánlástípus."
+
+#: includes/wp/class-azentai-widget-recommendations.php:72
+msgid "Title:"
+msgstr "Cím:"
+
+#: includes/wp/class-azentai-widget-recommendations.php:80
+msgid "Recommendation type:"
+msgstr "Ajánlás típusa:"
+
+#: includes/wp/class-azentai-widget-recommendations.php:85
+msgid "Product Recommendations"
+msgstr "Termékajánlások"
+
+#: includes/wp/class-azentai-widget-recommendations.php:88
+msgid "Personalized Recommendations"
+msgstr "Személyre szabott ajánlások"
+
+#: includes/wp/class-azentai-widget-recommendations.php:91
+msgid "Upsell/Cross-sell Recommendations"
+msgstr "Felülértékesítési/keresztértékesítési ajánlások"

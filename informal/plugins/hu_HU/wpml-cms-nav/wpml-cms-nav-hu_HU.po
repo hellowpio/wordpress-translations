@@ -1,0 +1,365 @@
+# Copyright (C) 2026 OnTheGoSystems
+# This file is distributed under the same license as the WPML CMS Navigation plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPML CMS Navigation 5.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpml-cms-nav\n"
+"POT-Creation-Date: 2026-10-15T11:52:25+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: wpml-cms-nav\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: WPML CMS Navigation\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 5.2.0\n"
+
+#. Plugin Name of the plugin
+#: plugin.php
+msgid "WPML CMS Navigation"
+msgstr "WPML CMS Navigation"
+
+#. Plugin URI of the plugin
+#: plugin.php
+msgid "https://wpml.org/"
+msgstr "https://wpml.org/"
+
+#. Description of the plugin
+#: plugin.php
+msgid ""
+"Adds CMS navigation elements to sites built with WPML | <a "
+"href=\"https://wpml.org/documentation/support/cms-"
+"navigation/\">Documentation</a> | <a href=\"https://wpml.org/version/wpml-"
+"cms-nav-5-2-0/\">WPML CMS Navigation 5.2.0 release notes</a>"
+msgstr "CMS navigációs elemeket ad a WPML-lel készült webhelyekhez | <a href=\"https://wpml.org/documentation/support/cms-navigation/\">dokumentáció</a> | <a href=\"https://wpml.org/version/wpml-cms-nav-5-2-0/\">WPML CMS Navigation 5.2.0 kiadási megjegyzései</a>"
+
+#. Author of the plugin
+#: plugin.php
+msgid "OnTheGoSystems"
+msgstr "OnTheGoSystems"
+
+#. Author URI of the plugin
+#: plugin.php
+msgid "http://www.onthegosystems.com/"
+msgstr "http://www.onthegosystems.com/"
+
+#. translators: Name and description of the Sidebar Navigation widget, shown
+#. in the WordPress widgets screen.
+#: app/Presentation/Widget/NavigationWidget.php:21
+#: app/Presentation/Widget/NavigationWidget.php:24
+msgid "Sidebar Navigation"
+msgstr "Oldalsávos navigáció"
+
+#. translators: Default title of the menu that lists the blog categories, on
+#. the CMS Navigation page and in the menu itself. Noun.
+#: inc/cms-navigation-schema.php:150 inc/cms-navigation.class.php:781
+#: inc/cms-navigation.class.php:784 menu/navigation.php:71
+msgid "News"
+msgstr "Hírek"
+
+#. translators: Admin notice shown when WPML CMS Navigation is active but WPML
+#. core is missing. %1$s: the URL of the client's wpml.org account downloads
+#. page, which fills the first link. %2$s: the URL of this site's Plugins
+#. screen, which fills the second link.
+#: inc/cms-navigation.class.php:183
+#, php-format
+msgid ""
+"WPML CMS Navigation is active, but it needs WPML Multilingual CMS, which is "
+"not installed or not active. CMS Navigation stays off until WPML runs. "
+"Download WPML from <a href=\"%1$s\">your wpml.org account</a> and activate "
+"it on the <a href=\"%2$s\">Plugins screen</a>."
+msgstr "A WPML CMS Navigation aktív, de szüksége van a WPML Multilingual CMS-re, amely nincs telepítve vagy nem aktív. A CMS Navigation kikapcsolva marad, amíg a WPML el nem indul. Töltsd le a WPML-t a <a href=\"%1$s\">wpml.org-fiókodból</a>, és kapcsold be a <a href=\"%2$s\">bővítmények oldalán</a>."
+
+#. translators: Admin notice shown when the installed WPML core is older than
+#. WPML CMS Navigation needs. %1$s: CMS Navigation's own version. %2$s: the
+#. minimum WPML version it needs. %3$s: the WPML version this site runs. %4$s:
+#. the URL of this site's Plugins screen, which fills the link.
+#: inc/cms-navigation.class.php:204
+#, php-format
+msgid ""
+"WPML CMS Navigation %1$s needs WPML Multilingual CMS %2$s or newer. This "
+"site runs WPML %3$s, so CMS Navigation stays off until WPML is updated. "
+"Update WPML on the <a href=\"%4$s\">Plugins screen</a>."
+msgstr "A WPML CMS Navigation %1$s a WPML Multilingual CMS %2$s vagy újabb verzióját igényli. Ezen a webhelyen a WPML %3$s fut, ezért a CMS Navigation kikapcsolva marad a WPML frissítéséig. Frissítsd a WPML-t a <a href=\"%4$s\">bővítmények oldalán</a>."
+
+#. translators: Breadcrumbs line on the front end of the site, above the list
+#. of posts that carry one tag. %s: the name of the tag, shown between
+#. typographic quotation marks.
+#: inc/cms-navigation.class.php:715
+#, php-format
+msgid "Articles tagged &#8216;%s&#8217;"
+msgstr "„%s” címkével ellátott bejegyzések"
+
+#. translators: Breadcrumbs line on the front end of the site, above the
+#. results of a search. %s: the words the visitor searched for.
+#: inc/cms-navigation.class.php:739
+#, php-format
+msgid "Search for: %s"
+msgstr "Keresés: %s"
+
+#. translators: Title of the box on the post and page editing screens where
+#. the navigation settings of that page are set.
+#: inc/cms-navigation.class.php:1211
+msgid "CMS Navigation"
+msgstr "CMS-navigáció"
+
+#: inc/cms-navigation.class.php:1280
+msgid "Exclude from the top navigation"
+msgstr "Kizárás a felső navigációból"
+
+#: inc/cms-navigation.class.php:1281
+msgid ""
+"Mini home (don't list child pages for this page in the navigation sidebar)"
+msgstr "Mini kezdőlap (ne listázd ennek az oldalnak az aloldalait a navigációs oldalsávban)"
+
+#. translators: Label of the field on the post editing screen that says which
+#. section of the site the page belongs to. Noun.
+#: inc/cms-navigation.class.php:1285
+msgid "Section"
+msgstr "Szakasz"
+
+#. translators: Option in the section dropdown on the post editing screen: the
+#. page belongs to no section.
+#: inc/cms-navigation.class.php:1289
+msgid "--none--"
+msgstr "--nincs--"
+
+#. translators: Link on the post editing screen that opens a field for typing
+#. a new section name. Verb, imperative.
+#: inc/cms-navigation.class.php:1307 inc/cms-navigation.class.php:1332
+msgid "enter new"
+msgstr "új megadása"
+
+#: inc/cms-navigation.class.php:1311
+msgid "Offsite page address"
+msgstr "Külső oldal címe"
+
+#. translators: Link on the post editing screen that closes the field for a
+#. new section name without keeping it. Verb, imperative, lower case in the
+#. source.
+#: inc/cms-navigation.class.php:1337
+msgid "cancel"
+msgstr "mégsem"
+
+#. translators: Link next to WPML CMS Navigation on the WordPress plugins
+#. screen: it opens the settings page. Verb, imperative.
+#: inc/cms-navigation.class.php:1429
+msgid "Configure"
+msgstr "Beállítás"
+
+#: menu/navigation.php:8
+msgid "The cache has been cleared."
+msgstr "A gyorsítótár kiürült."
+
+#: menu/navigation.php:11
+msgid "Setup WPML CMS Navigation"
+msgstr "A WPML CMS Navigation beállítása"
+
+#. translators: Heading of the settings section on the CMS Navigation page,
+#. and the name of that page in the WPML menu. Noun.
+#: menu/navigation.php:14
+msgid "Navigation"
+msgstr "Navigáció"
+
+#: menu/navigation.php:16
+msgid ""
+"Out-of-the-box support for full CMS navigation in your WordPress site "
+"including drop down menus, breadcrumbs trail and sidebar navigation."
+msgstr "Beépített támogatás a WordPress-webhelyed teljes CMS-navigációjához, beleértve a legördülő menüket, a breadcrumb-útvonalakat és az oldalsávos navigációt."
+
+#. translators: Heading above the settings form on the CMS Navigation page.
+#: menu/navigation.php:20
+msgid "Settings"
+msgstr "Beállítások"
+
+#. translators: Label of the setting on the CMS Navigation page that says in
+#. which sequence pages are listed. Noun phrase, not an instruction to order
+#. pages.
+#: menu/navigation.php:27 menu/navigation.php:73
+msgid "Page order"
+msgstr "Oldalsorrend"
+
+#. translators: Option in the page order dropdown on the CMS Navigation page:
+#. the sequence set by hand in each page. Noun phrase.
+#: menu/navigation.php:35
+msgid "Menu order"
+msgstr "Menü sorrend"
+
+#. translators: Option in the page order dropdown on the CMS Navigation page:
+#. pages listed by name from A to Z. Adverb.
+#: menu/navigation.php:41
+msgid "Alphabetically"
+msgstr "Betűrendben"
+
+#. translators: Option in the page order dropdown on the CMS Navigation page:
+#. pages listed by the date they were created. Noun phrase.
+#: menu/navigation.php:47
+msgid "Creation time"
+msgstr "Létrehozás ideje"
+
+#: menu/navigation.php:52
+msgid "Blog posts menu"
+msgstr "Blogbejegyzések menüje"
+
+#: menu/navigation.php:58
+msgid "Show blog posts menu"
+msgstr "Blogbejegyzések menüjének megjelenítése"
+
+#: menu/navigation.php:68
+msgid "Categories menu title"
+msgstr "Kategóriák menüjének címe"
+
+#: menu/navigation.php:77
+msgid "Select what items to display for the blog menu:"
+msgstr "Válaszd ki, milyen elemek jelenjenek meg a blog menüben:"
+
+#. translators: Label of the radio button on the CMS Navigation page: the blog
+#. menu lists the post categories. Noun, plural.
+#: menu/navigation.php:83
+msgid "Categories"
+msgstr "Kategóriák"
+
+#. translators: Label of the radio button on the CMS Navigation page: the blog
+#. menu lists the newest posts. Noun phrase, plural.
+#: menu/navigation.php:89
+msgid "Recent posts"
+msgstr "Legutóbbi bejegyzések"
+
+#. translators: Label of the radio button on the CMS Navigation page: the blog
+#. menu lists nothing.
+#: menu/navigation.php:95
+msgid "Nothing"
+msgstr "Semmi"
+
+#: menu/navigation.php:101
+msgid "Sidebar pages menu"
+msgstr "Oldalak menüje az oldalsávban"
+
+#. translators: Label of the field on the CMS Navigation page that holds the
+#. HTML put before each sidebar heading.
+#: menu/navigation.php:105
+msgid "Heading start"
+msgstr "Címsor kezdete"
+
+#. translators: Label of the field on the CMS Navigation page that holds the
+#. HTML put after each sidebar heading.
+#: menu/navigation.php:108
+msgid "Heading end"
+msgstr "Címsor vége"
+
+#. translators: Label of the field on the CMS Navigation page that holds the
+#. character shown between the steps of a breadcrumbs trail.
+#: menu/navigation.php:116
+msgid "Breadcrumbs separator"
+msgstr "Breadcrumb-elválasztó"
+
+#. translators: Label of the setting on the CMS Navigation page that turns
+#. caching of the navigation on or off. Noun.
+#: menu/navigation.php:126
+msgid "Caching"
+msgstr "Gyorsítótárazás"
+
+#: menu/navigation.php:133
+msgid "Cache navigation elements for super fast performance"
+msgstr "A navigációs elemek gyorsítótárazása a szupergyors teljesítményért"
+
+#: menu/navigation.php:135
+msgid "Clear cache now"
+msgstr "Gyorsítótár törlése most"
+
+#. translators: Button label on the CMS Navigation page that saves the
+#. settings. Verb, imperative.
+#: menu/navigation.php:145
+msgid "Save Changes"
+msgstr "Módosítások mentése"
+
+#: menu/navigation.php:152
+msgid "Instructions for adding the navigation to your theme"
+msgstr "Útmutató a navigáció sablonodhoz való hozzáadásához"
+
+#. translators: Column heading in the table of navigation elements on the CMS
+#. Navigation page: the name of the element.
+#: menu/navigation.php:158
+msgid "Navigation element"
+msgstr "Navigációs elem"
+
+#. translators: Column heading in the table of navigation elements on the CMS
+#. Navigation page: what the element does.
+#: menu/navigation.php:160
+msgid "Description"
+msgstr "Leírás"
+
+#: menu/navigation.php:161
+msgid "HTML to add"
+msgstr "Hozzáadandó HTML"
+
+#: menu/navigation.php:162
+msgid "Where to add"
+msgstr "Hozzáadás helye"
+
+#. translators: Name of a navigation element in the table on the CMS
+#. Navigation page: the menu across the top of the site.
+#: menu/navigation.php:168
+msgid "Top navigation"
+msgstr "Felső navigáció"
+
+#: menu/navigation.php:169
+msgid ""
+"A list of the top level pages with drop down menus for second level menus. "
+"Can optionally contain the post categories"
+msgstr "A legfelső szintű oldalak listája, a második szinthez legördülő menükkel. Opcionálisan tartalmazhatja a bejegyzéskategóriákat"
+
+#. translators: Name of a navigation element in the table on the CMS
+#. Navigation page: the trail of links back to the home page.
+#: menu/navigation.php:175
+msgid "Breadcrumbs trails"
+msgstr "Breadcrumb-útvonalak"
+
+#: menu/navigation.php:176
+msgid "Lists the path back to the home page"
+msgstr "Felsorolja a kezdőlaphoz vezető útvonalat"
+
+#. translators: Cell in the table of navigation elements on the CMS Navigation
+#. page: the theme files where this element can be placed. Each placeholder is
+#. a WordPress theme file name and stays as it is: %1$s, %2$s, %3$s, %4$s,
+#. %5$s and %6$s.
+#: menu/navigation.php:179
+#, php-format
+msgid "%1$s or %2$s, %3$s, %4$s, %5$s and %6$s"
+msgstr "%1$s vagy %2$s, %3$s, %4$s, %5$s és %6$s"
+
+#. translators: Name of a navigation element in the table on the CMS
+#. Navigation page: the menu in the sidebar.
+#: menu/navigation.php:183
+msgid "Sidebar navigation"
+msgstr "Oldalsávos navigáció"
+
+#: menu/navigation.php:184
+msgid "Local navigation tree with page siblings, parent and brothers"
+msgstr "Helyi navigációs fa az oldal testvéroldalaival, szülőjével és gyermekeivel"
+
+#. translators: Note under the table of navigation elements on the CMS
+#. Navigation page. %s: the address of the WordPress widgets screen, put
+#. inside the opening link tag.
+#: menu/navigation.php:191
+#, php-format
+msgid "You can also add the sidebar navigation as a <a%s>widget</a>."
+msgstr "Az oldalsávos navigációt <a%s>widgetként</a> is hozzáadhatod."
+
+#: menu/navigation.php:193
+msgid ""
+"To customize the appearance of the navigation elements, you will need to "
+"override the styling provided in the plugin's CSS file."
+msgstr "A navigációs elemek megjelenésének testreszabásához felül kell írnod a bővítmény CSS-fájljában meghatározott stílusokat."
+
+#. translators: Last line of the CMS Navigation page. %s: a link to the WPML
+#. documentation.
+#: menu/navigation.php:214
+#, php-format
+msgid "Visit %s for full CSS customization information."
+msgstr "Látogass el ide: %s, ahol teljes körű információt találsz a CSS testreszabásáról."

@@ -1,0 +1,798 @@
+# Copyright (C) 2026 WP Desk
+# This file is distributed under the same license as the WooCommerce Print Orders & Address Labels plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Print Orders & Address Labels 1.4.38\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woocommerce-print-orders-address-labels\n"
+"POT-Creation-Date: 2026-10-07T05:03:13+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: woocommerce-print-orders-address-labels\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Plugin-Name: WooCommerce Print Orders & Address Labels\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 1.4.38\n"
+
+#. Plugin Name of the plugin
+#: woocommerce-print-orders-address-labels.php src/Plugin/PrintLabels.php:185
+#: src/Plugin/PrintLabels.php:196
+msgid "WooCommerce Print Orders & Address Labels"
+msgstr "WooCommerce Print Orders & Address Labels"
+
+#. Plugin URI of the plugin
+#: woocommerce-print-orders-address-labels.php
+msgid ""
+"https://www.wpdesk.net/sk/woocommerce-print-orders-address-labels-plugin/"
+msgstr "https://www.wpdesk.net/sk/woocommerce-print-orders-address-labels-plugin/"
+
+#. Description of the plugin
+#: woocommerce-print-orders-address-labels.php
+msgid "Print order details and address labels in bulk."
+msgstr "Megrendelési részletek és címzési címkék tömeges nyomtatása."
+
+#. Author of the plugin
+#: woocommerce-print-orders-address-labels.php
+msgid "WP Desk"
+msgstr "WP Desk"
+
+#. Author URI of the plugin
+#: woocommerce-print-orders-address-labels.php
+msgid ""
+"https://www.wpdesk.net/sk/woocommerce-print-orders-address-labels-author/"
+msgstr "https://www.wpdesk.net/sk/woocommerce-print-orders-address-labels-author/"
+
+#: src/Plugin/PrintLabels.php:130
+msgid "Print address labels"
+msgstr "Címzési címkék nyomtatása"
+
+#: src/Plugin/PrintLabels.php:131
+msgid "Print order packing lists"
+msgstr "Rendelési csomagjegyzékek nyomtatása"
+
+#: src/Plugin/PrintLabels.php:184
+msgid "Unknown nonce!"
+msgstr "Ismeretlen nonce!"
+
+#: src/Plugin/PrintLabels.php:195
+msgid "The order was not found!"
+msgstr "A megrendelés nem található!"
+
+#: src/Plugin/PrintLabels.php:211
+msgid "PDF"
+msgstr "PDF"
+
+#: src/Plugin/Settings.php:30
+msgid "A4"
+msgstr "A4"
+
+#: src/Plugin/Settings.php:34
+msgid "Letter"
+msgstr "Betű"
+
+#: src/Plugin/Settings.php:38 src/Views/settings/submenu_labels.php:205
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:94
+msgid "Other"
+msgstr "Egyéb"
+
+#: src/Plugin/Settings.php:61
+msgid "Print Orders and Labels"
+msgstr "Megrendelések és címkék nyomtatása"
+
+#: src/Plugin/Settings.php:62
+msgid "Printing"
+msgstr "Nyomtatás"
+
+#: src/Plugin/Settings.php:81
+msgid "Company Details"
+msgstr "Cégadatok"
+
+#: src/Plugin/Settings.php:82 src/Views/pdf/address.php:66
+msgid "Address Labels"
+msgstr "Címzési címkék"
+
+#: src/Plugin/Settings.php:83
+msgid "Orders"
+msgstr "Rendelések"
+
+#: src/Views/pdf/packing_list.php:50 src/Views/pdf/packing_list.php:66
+msgid "Order Details"
+msgstr "Rendelés részletei"
+
+#: src/Views/pdf/packing_list.php:67
+msgid "Order:"
+msgstr "Rendelés:"
+
+#: src/Views/pdf/packing_list.php:73
+msgid "Shipping Address"
+msgstr "Szállítási cím"
+
+#: src/Views/pdf/packing_list.php:77
+msgid "Billing Details"
+msgstr "Számlázási adatok"
+
+#: src/Views/pdf/packing_list.php:80
+msgid "VAT Number:"
+msgstr "Áfaazonosító:"
+
+#: src/Views/pdf/packing_list.php:86
+msgid "Phone:"
+msgstr "Telefon:"
+
+#: src/Views/pdf/packing_list.php:88
+msgid "Email:"
+msgstr "E-mail:"
+
+#: src/Views/pdf/packing_list.php:95
+msgid "Product"
+msgstr "Termék"
+
+#: src/Views/pdf/packing_list.php:96
+msgid "SKU"
+msgstr "SKU"
+
+#: src/Views/pdf/packing_list.php:97
+msgid "Quantity"
+msgstr "Mennyiség"
+
+#: src/Views/pdf/packing_list.php:98
+msgid "Net price"
+msgstr "Nettó ár"
+
+#: src/Views/pdf/packing_list.php:99
+msgid "Tax"
+msgstr "Adó"
+
+#: src/Views/pdf/packing_list.php:100
+msgid "Gross Price"
+msgstr "Bruttó ár"
+
+#: src/Views/pdf/packing_list.php:136
+msgid "Shipping:"
+msgstr "Szállítás:"
+
+#: src/Views/pdf/packing_list.php:183
+msgid "Customer notes:"
+msgstr "Vásárlói megjegyzések:"
+
+#: src/Views/settings/submenu_labels.php:17
+msgid "Portrait"
+msgstr "Álló"
+
+#: src/Views/settings/submenu_labels.php:18
+msgid "Landscape"
+msgstr "Fekvő"
+
+#: src/Views/settings/submenu_labels.php:39
+#: src/Views/settings/submenu_orders.php:17
+#: src/Views/settings/submenu_settings.php:17
+msgid "Settings saved."
+msgstr "Beállítások elmentve."
+
+#: src/Views/settings/submenu_labels.php:42
+msgid "Address Labels Settings"
+msgstr "Címzési címkék beállításai"
+
+#: src/Views/settings/submenu_labels.php:48
+msgid "Page setup"
+msgstr "Oldalbeállítás"
+
+#: src/Views/settings/submenu_labels.php:65
+msgid "Paper size"
+msgstr "Papírméret"
+
+#: src/Views/settings/submenu_labels.php:81
+msgid "Columns"
+msgstr "Oszlopok"
+
+#: src/Views/settings/submenu_labels.php:93
+msgid "Rows"
+msgstr "Sorok"
+
+#: src/Views/settings/submenu_labels.php:105
+msgid "Row padding"
+msgstr "Sorok paddingje"
+
+#: src/Views/settings/submenu_labels.php:117
+msgid "Grid border"
+msgstr "Rács kerete"
+
+#: src/Views/settings/submenu_labels.php:127
+msgid "Show border for grid"
+msgstr "A rács keretének megjelenítése"
+
+#: src/Views/settings/submenu_labels.php:133
+msgid "Orientation"
+msgstr "Tájolás"
+
+#: src/Views/settings/submenu_labels.php:147
+msgid "Font size"
+msgstr "Betűméret"
+
+#: src/Views/settings/submenu_labels.php:158
+msgid "The font can adapt to the cell width/height."
+msgstr "A betűméret a cella szélességéhez és magasságához igazítható."
+
+#: src/Views/settings/submenu_labels.php:163
+msgid "Customer Details"
+msgstr "Vásárló adatai"
+
+#: src/Views/settings/submenu_labels.php:172
+msgid "Use billing address if shipping address is not set"
+msgstr "Használd a számlázási címet, ha nincs megadva szállítási cím."
+
+#: src/Views/settings/submenu_labels.php:177
+msgid "Content"
+msgstr "Tartalom"
+
+#: src/Views/settings/submenu_labels.php:197
+msgid "Use the following tags:"
+msgstr "Használd a következő címkéket:"
+
+#: src/Views/settings/submenu_labels.php:203
+msgid "Billing"
+msgstr "Számlázás"
+
+#: src/Views/settings/submenu_labels.php:204
+msgid "Shipping"
+msgstr "Szállítás"
+
+#: src/Views/settings/submenu_labels.php:210
+msgid "Full details"
+msgstr "Teljes részletek"
+
+#: src/Views/settings/submenu_labels.php:217
+msgid "First Name"
+msgstr "Keresztnév"
+
+#: src/Views/settings/submenu_labels.php:224
+msgid "Last Name"
+msgstr "Vezetéknév"
+
+#: src/Views/settings/submenu_labels.php:231
+msgid "Company"
+msgstr "Cég"
+
+#: src/Views/settings/submenu_labels.php:238
+msgid "Address Line 1"
+msgstr "Cím 1. sora"
+
+#: src/Views/settings/submenu_labels.php:245
+msgid "Address Line 2"
+msgstr "Cím 2. sora"
+
+#: src/Views/settings/submenu_labels.php:252
+msgid "City"
+msgstr "Város"
+
+#: src/Views/settings/submenu_labels.php:259
+msgid "Postcode"
+msgstr "Irányítószám"
+
+#: src/Views/settings/submenu_labels.php:266
+msgid "State"
+msgstr "Állam"
+
+#: src/Views/settings/submenu_labels.php:273
+msgid "Country"
+msgstr "Ország"
+
+#: src/Views/settings/submenu_labels.php:280
+msgid "Phone"
+msgstr "Telefonszám"
+
+#: src/Views/settings/submenu_labels.php:287
+msgid "Email"
+msgstr "E-mail-cím"
+
+#: src/Views/settings/submenu_labels.php:294
+msgid "Order amount"
+msgstr "Rendelés összege"
+
+#: src/Views/settings/submenu_labels.php:301
+msgid "Ordered products"
+msgstr "Megrendelt termékek"
+
+#: src/Views/settings/submenu_labels.php:308
+msgid "Shipping cost"
+msgstr "Szállítási költség"
+
+#: src/Views/settings/submenu_labels.php:315
+msgid "Order notes"
+msgstr "Rendelési megjegyzések"
+
+#: src/Views/settings/submenu_labels.php:322
+msgid "Order date"
+msgstr "Rendelés dátuma"
+
+#: src/Views/settings/submenu_labels.php:329
+msgid "Print date"
+msgstr "Nyomtatás dátuma"
+
+#: src/Views/settings/submenu_labels.php:336
+msgid "Order number"
+msgstr "Rendelésszám"
+
+#: src/Views/settings/submenu_labels.php:343
+#: src/Views/settings/submenu_settings.php:26
+msgid "Your company name"
+msgstr "A céged neve"
+
+#: src/Views/settings/submenu_labels.php:350
+#: src/Views/settings/submenu_settings.php:36
+msgid "Your company address"
+msgstr "A céged címe"
+
+#: src/Views/settings/submenu_labels.php:357
+#: src/Views/settings/submenu_settings.php:46
+msgid "Your company VAT number"
+msgstr "A céged adószáma"
+
+#: src/Views/settings/submenu_labels.php:441
+#: src/Views/settings/submenu_orders.php:103
+#: src/Views/settings/submenu_settings.php:57
+msgid "Save Changes"
+msgstr "Módosítások mentése"
+
+#: src/Views/settings/submenu_orders.php:20
+msgid "Orders Settings"
+msgstr "Rendelési beállítások"
+
+#: src/Views/settings/submenu_orders.php:26
+msgid "Do not split orders per page"
+msgstr "Ne tördeld szét a rendeléseket több oldal között"
+
+#: src/Views/settings/submenu_orders.php:37
+msgid "Attach order details to customer emails"
+msgstr "Rendelési adatok csatolása a vásárlóknak küldött e-mailekhez"
+
+#: src/Views/settings/submenu_orders.php:48
+msgid "Add PDF download link do My Account"
+msgstr "PDF-letöltési link hozzáadása a Fiókomhoz"
+
+#: src/Views/settings/submenu_orders.php:59
+msgid "Additional fields"
+msgstr "További mezők"
+
+#: src/Views/settings/submenu_orders.php:65
+msgid "Custom fields"
+msgstr "Egyéni mezők"
+
+#: src/Views/settings/submenu_orders.php:77
+#: src/Views/settings/submenu_orders.php:90
+#: src/Views/settings/submenu_orders.php:109
+msgid "Field label"
+msgstr "Mező címkéje"
+
+#: src/Views/settings/submenu_orders.php:78
+#: src/Views/settings/submenu_orders.php:110
+msgid "meta_name"
+msgstr "meta_name"
+
+#: src/Views/settings/submenu_orders.php:91
+msgid "meta_key"
+msgstr "meta_key"
+
+#: src/Views/settings/submenu_settings.php:20
+msgid "General Settings"
+msgstr "Általános beállítások"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:65
+msgid "Grow your business with WP Desk"
+msgstr "Növeld vállalkozásod a WP Desk segítségével"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:291
+msgid "Buy now"
+msgstr "Azonnali vásárlás"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:293
+msgid "Learn more"
+msgstr "További tudnivalók"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:296
+msgid "Download"
+msgstr "Letöltés"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:307
+msgid "More info"
+msgstr "További információ"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:206
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on PHP versions older than %s. Please"
+" contact your host and ask them to upgrade."
+msgstr "A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi PHP-verzióval. Kérd meg a tárhelyszolgáltatódat a frissítésre."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:209
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WordPress versions older than %s. "
+"Please update WordPress."
+msgstr "A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi WordPress-verzióval. Frissítsd a WordPress-t."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:212
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WooCommerce versions older than "
+"%s. Please update WooCommerce."
+msgstr "A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi WooCommerce-verzióval. Frissítsd a WooCommerce-t."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:215
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without OpenSSL module version at "
+"least %s. Please update OpenSSL module."
+msgstr "A(z) &#8222;%s&#8221; bővítmény futtatásához legalább %s verziójú OpenSSL-modul szükséges. Frissítsd az OpenSSL-modult."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:310
+msgid ""
+"The &#8220;%1$s&#8221; plugin requires at least %2$s version of %3$s to work"
+" correctly. Please update it to its latest release."
+msgstr "A(z) &#8222;%1$s&#8221; bővítmény megfelelő működéséhez legalább a(z) %3$s %2$s verziója szükséges. Frissítsd a legújabb verzióra."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:416
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s active. Please install and"
+" activate %s plugin."
+msgstr "A(z) &#8222;%s&#8221; bővítmény futtatásához aktív %s szükséges. Telepítsd és kapcsold be a(z) %s bővítményt."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:468
+msgid ""
+"The &#8220;%s&#8221; plugin requires free %s plugin. <a href=\"%s\">Install "
+"%s</a>"
+msgstr "A(z) &#8222;%s&#8221; bővítményhez az ingyenes %s bővítmény szükséges. <a href=\"%s\">A(z) %s telepítése</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:474
+msgid ""
+"The &#8220;%s&#8221; plugin requires activating %s plugin. <a "
+"href=\"%s\">Activate %s</a>"
+msgstr "A(z) &#8222;%s&#8221; bővítményhez be kell kapcsolnod a(z) %s bővítményt. <a href=\"%s\">A(z) %s bekapcsolása</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:516
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP module installed. "
+"Please contact your host and ask them to install %s."
+msgstr ""
+"A(z) &#8220;%s&#8221; bővítmény futtatásához telepíteni kell a(z) %s PHP-"
+"modult. Kérd meg a tárhelyszolgáltatódat a(z) %s telepítésére."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:541
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP setting set to %s. "
+"Please contact your host and ask them to set %s."
+msgstr "A(z) &#8220;%s&#8221; bővítmény futtatásához a(z) %s PHP-beállítás értéke legyen %s. Kérd meg a tárhelyszolgáltatódat, hogy állítsa be a(z) %s értékét."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker_With_Update_Disable.php:29
+msgid ""
+"The &#8220;%s&#8221; plugin is temporarily disabled since the required %s "
+"plugin is being upgraded."
+msgstr ""
+"A(z) &#8220;%s&#8221; bővítmény átmenetileg ki van kapcsolva, mert a "
+"szükséges %s bővítmény frissítése folyamatban van."
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:181
+msgid "Support"
+msgstr "Támogatás"
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:184
+msgid "Docs"
+msgstr "Dokumentáció"
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:188
+msgid "Settings"
+msgstr "Beállítások"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Disabled"
+msgstr "Letiltva"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Emergency"
+msgstr "Vészhelyzet"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Alert"
+msgstr "Riasztás"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Critical"
+msgstr "Kritikus"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Error"
+msgstr "Hiba"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Warning"
+msgstr "Figyelem"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Notice"
+msgstr "Értesítés"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Info"
+msgstr "Információ"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Debug"
+msgstr "Hibakeresés"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:23
+msgid ""
+"Can not enable WP Desk Debug log! Cannot create directory %s or this "
+"directory is not writeable!"
+msgstr ""
+"Nem sikerült bekapcsolni a WP Desk hibakeresési naplóját! Nem lehet "
+"létrehozni a(z) %s könyvtárat, vagy a könyvtár nem írható!"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:36
+msgid "Can not enable WP Desk Debug log! Cannot create file %s!"
+msgstr ""
+"Nem sikerült bekapcsolni a WP Desk hibakeresési naplóját! Nem lehet "
+"létrehozni a(z) %s fájlt!"
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/NoticeReminder.php:53
+msgid ""
+"You're using an outdated version of the following plugin: %s This may cause "
+"serious compatibility issues with WooCommerce. Update it immediately to "
+"avoid potential disruptions."
+msgid_plural ""
+"You're using outdated versions of the following plugins: %s This may cause "
+"serious compatibility issues with WooCommerce. Update them immediately to "
+"avoid potential disruptions."
+msgstr[0] "A következő bővítmény elavult verzióját használod: %s. Ez komoly kompatibilitási problémákat okozhat a WooCommerce-szel. A lehetséges fennakadások elkerülése érdekében azonnal frissítsd."
+msgstr[1] "A következő bővítmények elavult verzióit használod: %s. Ezek komoly kompatibilitási problémákat okozhatnak a WooCommerce-szel. A lehetséges fennakadások elkerülése érdekében azonnal frissítsd őket."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/NoticeReminder.php:60
+msgid ""
+"You're using an older version of the following plugin: %s This version "
+"hasn't been tested with the latest WooCommerce versions. Please update it to"
+" the latest version to ensure smooth compatibility."
+msgid_plural ""
+"You're using older versions of the following plugins: %s These versions "
+"haven't been tested with the latest WooCommerce versions. Please update them"
+" to the latest version to ensure smooth compatibility."
+msgstr[0] "A következő bővítmény régebbi verzióját használod: %s. Ezt a verziót nem tesztelték a WooCommerce legújabb verzióival. A zökkenőmentes kompatibilitás érdekében frissítsd a legújabb verzióra."
+msgstr[1] "A következő bővítmények régebbi verzióit használod: %s. Ezeket a verziókat nem tesztelték a WooCommerce legújabb verzióival. A zökkenőmentes kompatibilitás érdekében frissítsd őket a legújabb verzióra."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/ReminderData.php:71
+msgid ""
+"You're using an outdated version of %1$s plugin, which may cause serious "
+"compatibility issues with WooCommerce. %2$sUpdate immediately%3$s to avoid "
+"potential disruptions."
+msgstr ""
+"A(z) %1$s bővítmény elavult verzióját használod, ami súlyos kompatibilitási "
+"problémákat okozhat a WooCommerce-szel. A lehetséges fennakadások elkerülése"
+" érdekében %2$sfrissítsd azonnal%3$s."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/ReminderData.php:75
+msgid ""
+"You're using an older version of %1$s plugin that hasn't been tested with "
+"the latest WooCommerce versions. Please %2$supdate to the latest version%3$s"
+" to ensure smooth compatibility."
+msgstr ""
+"A(z) %1$s bővítmény régebbi verzióját használod, amelyet nem teszteltek a "
+"WooCommerce legújabb verzióival. A zökkenőmentes kompatibilitás érdekében "
+"%2$sfrissíts a legújabb verzióra%3$s."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/SiteHealthReminder.php:39
+msgid "You should update plugin"
+msgstr "A bővítmény frissítése ajánlott"
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/SiteHealthReminder.php:39
+msgid "Compatibility"
+msgstr "Kompatibilitás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginExternalBlocking.php:32
+msgid ""
+"<b>Warning!</b> You're blocking external requests which means you won't be "
+"able to get %1$s updates. Please add %2$s to %3$s."
+msgstr ""
+"<b>figyelem!</b> Külső kéréseket tiltasz le, ezért nem fogsz tudni "
+"%1$s-frissítéseket kapni. Add hozzá a %2$s értéket a %3$s-hoz."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:83
+msgid ""
+"Error while connecting to remote server %s. Please contact your hosting "
+"provider or try again later. Errors:  "
+msgstr ""
+"Hiba történt a(z) %s távoli szerverhez való csatlakozáskor. Lépj kapcsolatba"
+" a tárhelyszolgáltatóddal, vagy próbáld újra később. Hibák:  "
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:172
+msgid "License server is currently unavailable. Please, try again later."
+msgstr "A licencszerver jelenleg nem érhető el. Próbáld újra később."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:174
+msgid ""
+"Error while connecting to remote server %1$s. Please contact with your "
+"hosting provider. Cannot parse response. Response code: %2$s Message: %3$s"
+msgstr ""
+"Hiba történt a távoli %1$s szerverhez való csatlakozáskor. Vedd fel a "
+"kapcsolatot a tárhelyszolgáltatóddal. Nem sikerült értelmezni a választ. "
+"Válaszkód: %2$s üzenet: %3$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:177
+msgid ""
+"Error while connecting to remote server %1$s. Please contact with your "
+"hosting provider. Cannot parse response: %2$s"
+msgstr ""
+"Hiba történt a(z) %1$s távoli szerverhez való csatlakozáskor. Lépj "
+"kapcsolatba a tárhelyszolgáltatóddal. A válasz nem dolgozható fel: %2$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/templates/impossible-to-upgrade.php:12
+msgid ""
+"This version of %1$s plugin cannot be automatically upgraded. Download the "
+"plugin from %2$syour account%3$s to receive automatic updates in future."
+msgstr ""
+"A(z) %1$s bővítmény ezen verziója nem frissíthető automatikusan. A jövőbeli "
+"automatikus frissítésekhez töltsd le a bővítményt a %2$sfiókodból%3$s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/OptOut.php:42
+msgid ""
+"You successfully opted out of collecting usage data by %1$s. If you change "
+"your mind, you can always opt in later in the plugin's quick links."
+msgstr ""
+"Sikeresen leiratkoztál a használati adatok gyűjtéséről ezzel: %1$s. Ha "
+"meggondolod magad, később bármikor feliratkozhatsz a bővítmény "
+"gyorshivatkozásain keresztül."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/PluginActionLinks.php:70
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:43
+msgid "Enable usage tracking"
+msgstr "Használatkövetés bekapcsolása"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/PluginActionLinks.php:75
+msgid "Disable usage tracking"
+msgstr "Használatkövetés kikapcsolása"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:23
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:19
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:21
+msgid "Hey %s,"
+msgstr "Szia %s,"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:26
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:22
+msgid ""
+"Please help us improve our plugins! If you opt-in, we will collect some non-"
+"sensitive data and usage information anonymously. If you skip this, that's "
+"okay! All plugins will work just fine."
+msgstr ""
+"Segíts nekünk jobbá tenni a bővítményeinket! Ha engedélyezed az "
+"adatgyűjtést, névtelenül gyűjtünk néhány nem érzékeny adatot és használati "
+"információt. Ha kihagyod ezt, az is rendben van! Minden bővítményünk így is "
+"megfelelően működik."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:35
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:31
+msgid "Allow & Continue &rarr;"
+msgstr "Engedélyezés és folytatás &rarr;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:40
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:36
+msgid "Skip"
+msgstr "Kihagyás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:47
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:43
+msgid "What permissions are being granted?"
+msgstr "Milyen engedélyeket adsz meg?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:56
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:52
+msgid "Your Site Overview"
+msgstr "A webhelyed áttekintése"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:59
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:55
+msgid "WP version, PHP info"
+msgstr "WP-verzió, PHP-adatok"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:67
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:63
+msgid "Plugin Usage"
+msgstr "Bővítményhasználat"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:70
+msgid "Current settings and usage information of %1$s plugins"
+msgstr "A(z) %1$s bővítményeinek aktuális beállításai és használati adatai"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:78
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:74
+msgid "Your Store Overview"
+msgstr "Az áruházad áttekintése"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:81
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:77
+msgid "Anonymized and non-sensitive store usage information"
+msgstr "Anonimizált, nem érzékeny áruházi használati adatok"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:91
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:87
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:29
+msgid "Find out more &raquo;"
+msgstr "Tudj meg többet &raquo;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:66
+msgid "Current settings and usage information of WP Desk plugins"
+msgstr "A WP Desk bővítményeinek aktuális beállításai és használati adatai"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:12
+msgid "You are deactivating %s plugin."
+msgstr "Kikapcsolod a(z) %s bővítményt."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:20
+msgid ""
+" If you have a moment, please let us know why you are deactivating plugin "
+"(anonymous feedback):"
+msgstr ""
+"Ha van egy perced, mondd el, miért kapcsolod ki a bővítményt (névtelen "
+"visszajelzés):"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:29
+msgid "The plugin suddenly stopped working"
+msgstr "A bővítmény váratlanul leállt"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:39
+msgid "The plugin broke my site"
+msgstr "A bővítmény tönkretette a webhelyemet"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:49
+msgid "I found a better plugin"
+msgstr "Találtam egy jobb bővítményt"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:54
+msgid "What's the plugin's name?"
+msgstr "Mi a bővítmény neve?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:64
+msgid "I only needed the plugin for a short period"
+msgstr "Csak rövid ideig volt szükségem a bővítményre"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:74
+msgid "I no longer need the plugin"
+msgstr "Többé nincs szükségem erre a bővítményre"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:84
+msgid "It's a temporary deactivation. I'm just debugging an issue."
+msgstr "Ez csak ideiglenes kikapcsolás. Épp egy probléma elhárításán dolgozom."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:99
+msgid "Kindly tell us the reason so we can improve"
+msgstr "Mondd el az okát, hogy továbbfejleszthessük"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:108
+msgid "Cancel"
+msgstr "Mégse"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:111
+msgid "Skip &amp; Deactivate"
+msgstr "Kihagyás és kikapcsolás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:24
+msgid ""
+"We need your help to improve <strong>WP Desk plugins</strong>, so they are "
+"more useful for you and the rest of <strong>30,000+ users</strong>. By "
+"collecting data on how you use our plugins, you will help us a lot. We will "
+"not collect any sensitive data, so you can feel safe."
+msgstr ""
+"Segíts nekünk továbbfejleszteni a <strong>WP Desk bővítményeket</strong>, "
+"hogy hasznosabbak legyenek neked és a többi <strong>30 000+ "
+"felhasználónak</strong>. Ha adatokat gyűjtünk arról, hogyan használod a "
+"bővítményeinket, azzal sokat segítesz nekünk. Nem gyűjtünk érzékeny "
+"adatokat, ezért nyugodt lehetsz."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-opt-out-notice.php:11
+msgid ""
+"You successfully opted out of collecting usage data by WP Desk. If you "
+"change your mind, you can always opt in later in the plugin's quick links."
+msgstr ""
+"Sikeresen letiltottad a WP Desk használati adatainak gyűjtését. Ha "
+"meggondolod magad, később bármikor engedélyezheted a bővítmény "
+"gyorshivatkozásainál."

@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Points and Rewards 1.8.18\n"
+"Project-Id-Version: WooCommerce Points and Rewards 1.18.25\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:50:49+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,40 +18,11 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: WooCommerce Points and Rewards\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.8.18\n"
-
-#. Plugin Name of the plugin
-#: woocommerce-points-and-rewards.php
-msgid "WooCommerce Points and Rewards"
-msgstr "WooCommerce Pontok és Jutalmak"
-
-#. Plugin URI of the plugin
-#: woocommerce-points-and-rewards.php
-msgid "https://woocommerce.com/products/woocommerce-points-and-rewards/"
-msgstr "https://woocommerce.com/products/woocommerce-points-and-rewards/"
-
-#. Description of the plugin
-#: woocommerce-points-and-rewards.php
-msgid ""
-"Reward customers for purchases and other actions with points which can be "
-"redeemed for discounts"
-msgstr ""
-"Jutalmazza vásárlóit vásárlásokért és egyéb műveletekért olyan pontokkal, "
-"amelyek kedvezményekre válthatók be"
-
-#. Author of the plugin
-#: woocommerce-points-and-rewards.php
-msgid "WooCommerce"
-msgstr "WooCommerce"
-
-#. Author URI of the plugin
-#: woocommerce-points-and-rewards.php
-msgid "https://woocommerce.com"
-msgstr "https://woocommerce.com"
+"X-Plugin-Version: 1.18.25\n"
 
 #: includes/class-wc-points-rewards-actions.php:64
 msgid "Points earned for account signup"
-msgstr "Pontok fiók létrehozásáért"
+msgstr "Fiók létrehozásáért járó pontok"
 
 #: includes/class-wc-points-rewards-actions.php:65
 msgid ""
@@ -60,40 +31,32 @@ msgstr "Adja meg a pontok számát, amelyet a vásárló fiók létrehozásakor 
 
 #: includes/class-wc-points-rewards-actions.php:76
 msgid "Points earned for writing a review"
-msgstr "Pontok értékelés írásáért"
+msgstr "Értékelés írásáért járó pontok"
 
 #: includes/class-wc-points-rewards-actions.php:77
 msgid ""
 "Enter the amount of points earned when a customer first reviews a product."
-msgstr ""
-"Adja meg a pontok számát, amelyet a vásárló akkor kap, amikor először "
-"értékel terméket."
+msgstr "Adja meg a pontok számát, amelyet a vásárló akkor kap, amikor először értékel egy terméket."
 
 #: includes/class-wc-points-rewards-actions.php:110
-#, php-format
 msgid "%s earned for product review"
 msgstr "%s jár termékértékelésért"
 
 #: includes/class-wc-points-rewards-actions.php:111
-#, php-format
 msgid "%s earned for account signup"
 msgstr "%s jár fiók létrehozásáért"
 
 #: includes/class-wc-points-rewards-actions.php:159
 msgid "ReviewsUtil class not found"
-msgstr "ReviewsUtil osztály nem található"
+msgstr "A ReviewsUtil osztály nem található"
 
 #. translators: %1$s link start, %2$s link end
 #: includes/class-wc-points-rewards-admin.php:119
-#, php-format
 msgid ""
 "WooCommerce Points and Rewards requires coupons to be %1$senabled%2$s in "
 "order to function properly and allow customers to redeem points during "
 "checkout."
-msgstr ""
-"A WooCommerce Pontok és Jutalmak megköveteli, hogy a kuponok "
-"%1$sengedélyezve%2$s legyenek, hogy megfelelően működjön, és lehetővé tegye "
-"a vásárlóknak a pontok beváltását a pénztárnál."
+msgstr "A WooCommerce Pontok és Jutalmak megfelelő működéséhez és ahhoz, hogy a vásárlók pontokat válthassanak be a pénztárnál, a kuponoknak %1$sbekapcsolva%2$s kell lenniük."
 
 #: includes/class-wc-points-rewards-admin.php:165
 #: includes/class-wc-points-rewards-admin.php:166
@@ -121,6 +84,10 @@ msgstr "Beállítások"
 msgid "Manage Customer Points"
 msgstr "Vásárlói pontok kezelése"
 
+#: includes/class-wc-points-rewards-admin.php:397
+msgid "Save Changes"
+msgstr "Módosítások mentése"
+
 #: includes/class-wc-points-rewards-admin.php:455
 msgid ""
 "Are you sure you want to apply points to all previous orders that have not "
@@ -134,128 +101,118 @@ msgstr ""
 "hiba történik, egyszerűen ismét alkalmazza a pontokat a folyamat "
 "folytatásához."
 
-#: includes/class-wc-points-rewards-admin.php:521
+#: includes/class-wc-points-rewards-admin.php:528
 msgid "Points Settings"
 msgstr "Pontbeállítások"
 
-#: includes/class-wc-points-rewards-admin.php:528
+#: includes/class-wc-points-rewards-admin.php:535
 msgid "Earn Points Conversion Rate"
 msgstr "Pontszerzési átváltási arány"
 
-#: includes/class-wc-points-rewards-admin.php:529
+#: includes/class-wc-points-rewards-admin.php:536
 msgid "Set the number of points awarded based on the product price."
 msgstr "Állítsa be a termék ára alapján járó pontok számát."
 
-#: includes/class-wc-points-rewards-admin.php:537
+#: includes/class-wc-points-rewards-admin.php:544
 msgid "Earn Points Rounding Mode"
 msgstr "Pontszerzés kerekítési módja"
 
-#: includes/class-wc-points-rewards-admin.php:538
+#: includes/class-wc-points-rewards-admin.php:545
 msgid "Set how points should be rounded."
 msgstr "Állítsa be, hogyan kell kerekíteni a pontokat."
 
-#: includes/class-wc-points-rewards-admin.php:542
+#: includes/class-wc-points-rewards-admin.php:549
 msgid "Round to nearest integer"
 msgstr "Kerekítés a legközelebbi egészre"
 
-#: includes/class-wc-points-rewards-admin.php:543
+#: includes/class-wc-points-rewards-admin.php:550
 msgid "Always round down"
 msgstr "Mindig lefelé kerekítés"
 
-#: includes/class-wc-points-rewards-admin.php:544
+#: includes/class-wc-points-rewards-admin.php:551
 msgid "Always round up"
 msgstr "Mindig felfelé kerekítés"
 
-#: includes/class-wc-points-rewards-admin.php:551
+#: includes/class-wc-points-rewards-admin.php:558
 msgid "Redemption Conversion Rate"
-msgstr "Beváltási átváltási arány"
+msgstr "Pontbeváltási arány"
 
-#: includes/class-wc-points-rewards-admin.php:552
+#: includes/class-wc-points-rewards-admin.php:559
 msgid "Set the value of points redeemed for a discount."
 msgstr "Állítsa be a kedvezményre beváltott pontok értékét."
 
-#: includes/class-wc-points-rewards-admin.php:560
+#: includes/class-wc-points-rewards-admin.php:567
 msgid "Partial Redemption"
 msgstr "Részleges beváltás"
 
-#: includes/class-wc-points-rewards-admin.php:561
+#: includes/class-wc-points-rewards-admin.php:568
 msgid "Enable partial redemption"
 msgstr "Részleges beváltás engedélyezése"
 
-#: includes/class-wc-points-rewards-admin.php:562
+#: includes/class-wc-points-rewards-admin.php:569
 msgid ""
 "Lets users enter how many points they wish to redeem during cart/checkout."
 msgstr ""
 "Lehetővé teszi, hogy a felhasználók megadják, hány pontot kívánnak beváltani"
 " a kosárban/pénztárnál."
 
-#: includes/class-wc-points-rewards-admin.php:570
+#: includes/class-wc-points-rewards-admin.php:577
 msgid "Minimum Points Discount"
 msgstr "Minimális pontkedvezmény"
 
-#: includes/class-wc-points-rewards-admin.php:571
+#: includes/class-wc-points-rewards-admin.php:578
 msgid ""
 "Set the minimum amount a user's points must add up to in order to redeem "
 "points. Use a fixed monetary amount or leave blank to disable."
-msgstr ""
-"Állítsa be a minimum összeget, amelyet a felhasználó pontjainak el kell "
-"érniük a beváltáshoz. Használjon rögzített pénzösszeget, vagy hagyja üresen "
-"a letiltáshoz."
+msgstr "Állítsa be azt a minimális összeget, amelyet a felhasználó pontjainak el kell érniük a pontok beváltásához. Használjon rögzített pénzösszeget, vagy hagyja üresen a kikapcsoláshoz."
 
-#: includes/class-wc-points-rewards-admin.php:574 build/index.js:1
+#: includes/class-wc-points-rewards-admin.php:581
 msgid "Enter amount"
 msgstr "Adja meg az összeget"
 
-#: includes/class-wc-points-rewards-admin.php:580
+#: includes/class-wc-points-rewards-admin.php:587
 #: includes/class-wc-points-rewards-product-admin.php:226
 #: includes/class-wc-points-rewards-product-admin.php:460
 msgid "Maximum Points Discount"
 msgstr "Maximális pontkedvezmény"
 
-#: includes/class-wc-points-rewards-admin.php:581
+#: includes/class-wc-points-rewards-admin.php:588
 msgid ""
 "Set the maximum product discount allowed for the cart when redeeming points."
 " Use either a fixed monetary amount or a percentage based on the product "
 "price. Leave blank to disable."
-msgstr ""
-"Állítsa be a kosárban pontbeváltáskor engedélyezett legnagyobb "
-"termékkedvezményt. Használjon rögzített pénzösszeget vagy a termék árához "
-"viszonyított százalékot. Letiltáshoz hagyja üresen."
+msgstr "Állítsa be a kosárban pontbeváltáskor engedélyezett legnagyobb termékkedvezményt. Használjon rögzített pénzösszeget vagy a termék árához viszonyított százalékot. Letiltáshoz hagyja üresen."
 
-#: includes/class-wc-points-rewards-admin.php:584
-#: includes/class-wc-points-rewards-admin.php:594
+#: includes/class-wc-points-rewards-admin.php:591
+#: includes/class-wc-points-rewards-admin.php:601
 msgid "Enter amount or percentage value"
 msgstr "Adja meg az összeget vagy a százalékos értéket"
 
-#: includes/class-wc-points-rewards-admin.php:590
+#: includes/class-wc-points-rewards-admin.php:597
 msgid "Maximum Product Points Discount"
 msgstr "Maximális termékenkénti pontkedvezmény"
 
-#: includes/class-wc-points-rewards-admin.php:591
+#: includes/class-wc-points-rewards-admin.php:598
 msgid ""
 "Set the maximum product discount allowed when redeeming points per-product. "
 "Use either a fixed monetary amount or a percentage based on the product "
 "price. Leave blank to disable. This can be overridden at the category and "
 "product level."
-msgstr ""
-"Állítsa be a pontok beváltásakor termékenként engedélyezett legnagyobb "
-"termékkedvezményt. Használjon rögzített pénzösszeget vagy a termék árához "
-"viszonyított százalékot. Letiltáshoz hagyja üresen. Ez felülírható "
-"kategória- és termékszinten."
+msgstr "Állítsa be a pontok beváltásakor termékenként engedélyezett legnagyobb termékkedvezményt. Használjon rögzített pénzösszeget vagy a termék árához viszonyított százalékot. Letiltáshoz hagyja üresen. Ez felülírható kategória- és termékszinten."
 
-#: includes/class-wc-points-rewards-admin.php:600
+#: includes/class-wc-points-rewards-admin.php:607
 msgid "Tax Setting"
 msgstr "Adóbeállítás"
 
-#: includes/class-wc-points-rewards-admin.php:601
+#: includes/class-wc-points-rewards-admin.php:608
 msgid "Whether or not points should apply to prices inclusive of tax."
 msgstr "Meghatározza, hogy a pontok az adóval növelt árakra vonatkozzanak-e."
 
-#: includes/class-wc-points-rewards-admin.php:613
+#: includes/class-wc-points-rewards-admin.php:620
 msgid "Points Label"
 msgstr "Pontok címkéje"
 
-#: includes/class-wc-points-rewards-admin.php:614
+#: includes/class-wc-points-rewards-admin.php:621
 msgid ""
 "This is the label that is seen by shoppers on your store. By default, the "
 "label will be Point / Points. You can customize your own singular and plural"
@@ -265,38 +222,35 @@ msgstr ""
 "szerint a címke: Pont / Pontok. Itt testre szabhatja az egyes és többes "
 "számú címkéket."
 
-#: includes/class-wc-points-rewards-admin.php:616
-#: includes/class-wc-points-rewards-manage-points-list-table.php:40
-#: includes/class-wc-points-rewards-points-log-list-table.php:40
+#: includes/class-wc-points-rewards-admin.php:623
+#: includes/class-wc-points-rewards-manage-points-list-table.php:50
+#: includes/class-wc-points-rewards-points-log-list-table.php:50
 msgid "Point"
 msgstr "Pont"
 
-#: includes/class-wc-points-rewards-admin.php:616
-#: includes/class-wc-points-rewards-admin.php:785
-#: includes/class-wc-points-rewards-admin.php:1174
-#: includes/class-wc-points-rewards-manage-points-list-table.php:41
-#: includes/class-wc-points-rewards-manage-points-list-table.php:76
-#: includes/class-wc-points-rewards-points-log-list-table.php:41
-#: includes/class-wc-points-rewards-points-log-list-table.php:60
+#: includes/class-wc-points-rewards-admin.php:623
+#: includes/class-wc-points-rewards-admin.php:792
+#: includes/class-wc-points-rewards-admin.php:1181
+#: includes/class-wc-points-rewards-manage-points-list-table.php:51
+#: includes/class-wc-points-rewards-manage-points-list-table.php:86
+#: includes/class-wc-points-rewards-points-log-list-table.php:51
+#: includes/class-wc-points-rewards-points-log-list-table.php:70
 msgid "Points"
 msgstr "Pontok"
 
-#: includes/class-wc-points-rewards-admin.php:622
+#: includes/class-wc-points-rewards-admin.php:629
 msgid "Points Expire After"
 msgstr "Pontok lejárati ideje"
 
-#: includes/class-wc-points-rewards-admin.php:623
+#: includes/class-wc-points-rewards-admin.php:630
 msgid "Set the period after which points expire once granted to a user"
-msgstr ""
-"Állítsa be azt az időtartamot, amely után a pontok lejárnak, miután a "
-"felhasználónak jóváírták."
+msgstr "Állítsa be, hogy a felhasználónak jóváírt pontok mennyi idő elteltével járjanak le"
 
-#: includes/class-wc-points-rewards-admin.php:631
+#: includes/class-wc-points-rewards-admin.php:638
 msgid "Product / Cart / Checkout Messages"
 msgstr "Termék / Kosár / Pénztár üzenetek"
 
-#: includes/class-wc-points-rewards-admin.php:632
-#, php-format
+#: includes/class-wc-points-rewards-admin.php:639
 msgid ""
 "Adjust the message by using %1$s{points}%2$s and %1$s{points_label}%2$s to "
 "represent the points earned / available for redemption and the label set for"
@@ -306,49 +260,41 @@ msgstr ""
 "használatával a megszerzett / beváltásra rendelkezésre álló pontok és a "
 "pontokhoz beállított címke megjelenítéséhez."
 
-#: includes/class-wc-points-rewards-admin.php:639
+#: includes/class-wc-points-rewards-admin.php:646
 msgid "Single Product Page Message"
-msgstr "Egyszerű termék oldalának üzenete"
+msgstr "Termékoldali üzenet"
 
-#: includes/class-wc-points-rewards-admin.php:640
+#: includes/class-wc-points-rewards-admin.php:647
 msgid ""
 "Add an optional message to the single product page below the price. "
 "Customize the message using {points} and {points_label}. Limited HTML is "
 "allowed. Leave blank to disable."
-msgstr ""
-"Adjon meg egy opcionális üzenetet az egyszerű termék oldalán, az ár alatt. "
-"Testreszabhatja az üzenetet a(z) {points} és {points_label} használatával. "
-"Korlátozott HTML használata engedélyezett. Letiltáshoz hagyja üresen."
+msgstr "Adjon meg egy opcionális üzenetet a termékoldalon, az ár alatt. Testreszabhatja az üzenetet a(z) {points} és {points_label} használatával. Korlátozott HTML használata engedélyezett. A kikapcsoláshoz hagyja üresen."
 
-#: includes/class-wc-points-rewards-admin.php:643
-#, php-format
+#: includes/class-wc-points-rewards-admin.php:650
 msgid "Purchase this product now and earn %s!"
 msgstr "Vásárolja meg ezt a terméket most, és szerezzen %s!"
 
-#: includes/class-wc-points-rewards-admin.php:649
+#: includes/class-wc-points-rewards-admin.php:656
 msgid "Variable Product Page Message"
-msgstr "Változó termék oldalának üzenete"
+msgstr "Változó termékoldalon megjelenő üzenet"
 
-#: includes/class-wc-points-rewards-admin.php:650
+#: includes/class-wc-points-rewards-admin.php:657
 msgid ""
 "Add an optional message to the variable product page below the price. "
 "Customize the message using {points} and {points_label}. Limited HTML is "
 "allowed. Leave blank to disable."
-msgstr ""
-"Adjon meg egy opcionális üzenetet a változó termék oldalán, az ár alatt. "
-"Testreszabhatja az üzenetet a(z) {points} és {points_label} használatával. "
-"Korlátozott HTML használata engedélyezett. Letiltáshoz hagyja üresen."
+msgstr "Adjon meg egy opcionális üzenetet a változó termék oldalán, az ár alatt. Testreszabhatja az üzenetet a(z) {points} és {points_label} használatával. Korlátozott HTML használata engedélyezett. Letiltáshoz hagyja üresen."
 
-#: includes/class-wc-points-rewards-admin.php:653
-#, php-format
+#: includes/class-wc-points-rewards-admin.php:660
 msgid "Earn up to %s."
-msgstr "Akár %s szerezhet."
+msgstr "Legfeljebb %s szerezhető."
 
-#: includes/class-wc-points-rewards-admin.php:659
+#: includes/class-wc-points-rewards-admin.php:666
 msgid "Earn Points Cart/Checkout Page Message"
 msgstr "Pontszerzés – Kosár/Pénztár oldal üzenete"
 
-#: includes/class-wc-points-rewards-admin.php:660
+#: includes/class-wc-points-rewards-admin.php:667
 msgid ""
 "Displayed on the cart and checkout page when points are earned. Customize "
 "the message using {points} and {points_label}. Limited HTML is allowed."
@@ -357,18 +303,17 @@ msgstr ""
 "Testreszabhatja az üzenetet a(z) {points} és {points_label} használatával. "
 "Korlátozott HTML használata engedélyezett."
 
-#: includes/class-wc-points-rewards-admin.php:663
-#, php-format
+#: includes/class-wc-points-rewards-admin.php:670
 msgid "Complete your order and earn %s for a discount on a future purchase"
 msgstr ""
 "Fejezze be rendelését, és szerezzen %s, amelyeket későbbi vásárláskor "
 "kedvezményre válthat."
 
-#: includes/class-wc-points-rewards-admin.php:669
+#: includes/class-wc-points-rewards-admin.php:676
 msgid "Redeem Points Cart/Checkout Page Message"
 msgstr "Pontbeváltás – Kosár/Pénztár oldal üzenete"
 
-#: includes/class-wc-points-rewards-admin.php:670
+#: includes/class-wc-points-rewards-admin.php:677
 msgid ""
 "Displayed on the cart and checkout page when points are available for "
 "redemption. Customize the message using {points}, {points_value}, and "
@@ -378,16 +323,15 @@ msgstr ""
 "Testreszabhatja az üzenetet a(z) {points}, {points_value} és {points_label} "
 "használatával. Korlátozott HTML használata engedélyezett."
 
-#: includes/class-wc-points-rewards-admin.php:673
-#, php-format
+#: includes/class-wc-points-rewards-admin.php:680
 msgid "Use %s for a %s discount on this order!"
-msgstr "Használja %s a(z) %s kedvezményért ehhez a rendeléshez!"
+msgstr "%s felhasználásával %s kedvezmény jár ehhez a rendeléshez!"
 
-#: includes/class-wc-points-rewards-admin.php:679
+#: includes/class-wc-points-rewards-admin.php:686
 msgid "Thank You / Order Received Page Message"
 msgstr "Köszönjük / Rendelés beérkezett oldal üzenete"
 
-#: includes/class-wc-points-rewards-admin.php:680
+#: includes/class-wc-points-rewards-admin.php:687
 msgid ""
 "Displayed on the thank you / order received page when points were earned. "
 "Customize the message using {points}, {total_points}, {points_label}, and "
@@ -398,16 +342,15 @@ msgstr ""
 "{total_points}, {points_label} és {total_points_label} használatával. "
 "Korlátozott HTML használata engedélyezett."
 
-#: includes/class-wc-points-rewards-admin.php:683
-#, php-format
-msgid "You have earned %s for this order. You have a total of %s."
-msgstr "Ehhez a rendeléshez Ön %s szerzett. Összesen %s áll rendelkezésére."
-
 #: includes/class-wc-points-rewards-admin.php:690
+msgid "You have earned %s for this order. You have a total of %s."
+msgstr "Ehhez a rendeléshez szerzett pontok száma: %s. Az összes pontjának száma: %s."
+
+#: includes/class-wc-points-rewards-admin.php:697
 msgid "Points Earned for Actions"
 msgstr "Műveletekért járó pontok"
 
-#: includes/class-wc-points-rewards-admin.php:691
+#: includes/class-wc-points-rewards-admin.php:698
 msgid ""
 "Customers can also earn points for actions like creating an account or "
 "writing a product review. You can enter the amount of points the customer "
@@ -417,39 +360,37 @@ msgstr ""
 "létrehozása vagy termékértékelés írása. Ebben a szakaszban megadhatja az "
 "egyes műveletekért járó pontok mennyiségét."
 
-#: includes/class-wc-points-rewards-admin.php:700
+#: includes/class-wc-points-rewards-admin.php:707
 msgid "Actions"
 msgstr "Műveletek"
 
-#: includes/class-wc-points-rewards-admin.php:705
+#: includes/class-wc-points-rewards-admin.php:712
 msgid "Apply Points to Previous Orders"
 msgstr "Pontok alkalmazása korábbi rendelésekre"
 
-#: includes/class-wc-points-rewards-admin.php:706
+#: includes/class-wc-points-rewards-admin.php:713
 msgid ""
 "This will apply points to all previous orders (paid or completed) and cannot"
 " be reversed."
-msgstr ""
-"Ez a korábbi (kifizetett vagy teljesített) rendelések mindegyikére alkalmaz "
-"pontokat, és nem visszavonható."
+msgstr "Ez az összes előző (fizetett vagy befejezett) rendelésre alkalmaz pontokat, és nem vonható vissza."
 
-#: includes/class-wc-points-rewards-admin.php:707
+#: includes/class-wc-points-rewards-admin.php:714
 msgid "Apply Points"
 msgstr "Pontok alkalmazása"
 
-#: includes/class-wc-points-rewards-admin.php:717
+#: includes/class-wc-points-rewards-admin.php:724
 msgid "Advanced Settings"
 msgstr "Speciális beállítások"
 
-#: includes/class-wc-points-rewards-admin.php:722
+#: includes/class-wc-points-rewards-admin.php:729
 msgid "Delete plugin data"
 msgstr "Bővítményadatok törlése"
 
-#: includes/class-wc-points-rewards-admin.php:723
+#: includes/class-wc-points-rewards-admin.php:730
 msgid "Delete plugin data when plugin is deleted"
 msgstr "Bővítményadatok törlése a bővítmény eltávolításakor"
 
-#: includes/class-wc-points-rewards-admin.php:724
+#: includes/class-wc-points-rewards-admin.php:731
 msgid ""
 "This includes plugin settings, users' points, points log, point settings for"
 " products, point settings for product categories, and point settings for "
@@ -461,62 +402,53 @@ msgstr ""
 
 #. translators: %1$s, %2$s - open and close strong tag, %3$s, %4$s - open and
 #. close em tag
-#: includes/class-wc-points-rewards-admin.php:987
-#, php-format
+#: includes/class-wc-points-rewards-admin.php:994
 msgid "%1$sOnly apply to points earned since%2$s - %3$sOptional%4$s"
 msgstr ""
 "%1$sCsak az alábbi dátum óta szerzett pontokra alkalmazza%2$s - "
 "%3$sOpcionális%4$s"
 
-#: includes/class-wc-points-rewards-admin.php:988
-#: includes/class-wc-points-rewards-admin.php:1026
-msgctxt "placeholder"
-msgid "YYYY-MM-DD"
-msgstr "YYYY-MM-DD"
-
-#: includes/class-wc-points-rewards-admin.php:989
+#: includes/class-wc-points-rewards-admin.php:996
 msgid "Leave blank to apply to all points"
 msgstr "Hagyja üresen az összes pontra való alkalmazáshoz"
 
 #. translators: %1$s, %2$s - open and close strong tag, %3$s, %4$s - open and
 #. close em tag
-#: includes/class-wc-points-rewards-admin.php:1025
-#, php-format
+#: includes/class-wc-points-rewards-admin.php:1032
 msgid "%1$sSince%2$s - %3$sOptional%4$s: Leave blank to apply to all orders"
 msgstr ""
 "%1$sEttől a dátumtól%2$s - %3$sOpcionális%4$s: Hagyja üresen az összes "
 "rendelésre való alkalmazáshoz"
 
-#: includes/class-wc-points-rewards-admin.php:1107
+#: includes/class-wc-points-rewards-admin.php:1114
 msgid "Database error while applying user points."
 msgstr "Adatbázishiba a felhasználói pontok alkalmazása közben."
 
 #. translators: %s number of orders updated.
-#: includes/class-wc-points-rewards-admin.php:1147
-#, php-format
+#: includes/class-wc-points-rewards-admin.php:1154
 msgid "%s order updated."
 msgid_plural "%s orders updated."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s megrendelés frissítve."
+msgstr[1] "%s megrendelés frissítve."
 
-#: includes/class-wc-points-rewards-admin.php:1177
+#: includes/class-wc-points-rewards-admin.php:1184
 msgid "Earned:"
 msgstr "Szerzett:"
 
-#: includes/class-wc-points-rewards-admin.php:1178
-#: includes/class-wc-points-rewards-admin.php:1182
+#: includes/class-wc-points-rewards-admin.php:1185
+#: includes/class-wc-points-rewards-admin.php:1189
 msgid "None"
 msgstr "Nincs"
 
-#: includes/class-wc-points-rewards-admin.php:1181
+#: includes/class-wc-points-rewards-admin.php:1188
 msgid "Redeemed:"
 msgstr "Beváltva:"
 
-#: includes/class-wc-points-rewards-admin.php:1203
+#: includes/class-wc-points-rewards-admin.php:1210
 msgid "Points Modifier"
 msgstr "Pontmódosító"
 
-#: includes/class-wc-points-rewards-admin.php:1204
+#: includes/class-wc-points-rewards-admin.php:1211
 msgid ""
 "Enter a percentage which modifies how points are earned when this coupon is "
 "applied. For example, enter 200% to double the amount of points typically "
@@ -526,33 +458,33 @@ msgstr ""
 " a kupont alkalmazzák. Például adjon meg 200%-ot, hogy megduplázza a kupon "
 "alkalmazásakor szokásosan járó pontok mennyiségét."
 
-#: includes/class-wc-points-rewards-admin.php:1266
+#: includes/class-wc-points-rewards-admin.php:1273
 msgid "Reset Points and Rewards"
 msgstr "Pontok és jutalmak visszaállítása"
 
-#: includes/class-wc-points-rewards-admin.php:1267
+#: includes/class-wc-points-rewards-admin.php:1274
 msgid "Delete all points and rewards and clear the logs."
-msgstr "Törli az összes pontot és jutalmat, és üríti a naplókat."
+msgstr "Törli az összes pontot és jutalmat, és kiüríti a naplókat."
 
-#: includes/class-wc-points-rewards-admin.php:1270
-#: includes/class-wc-points-rewards-admin.php:1281
+#: includes/class-wc-points-rewards-admin.php:1277
+#: includes/class-wc-points-rewards-admin.php:1288
 msgid "Note:"
 msgstr "Megjegyzés:"
 
-#: includes/class-wc-points-rewards-admin.php:1271
+#: includes/class-wc-points-rewards-admin.php:1278
 msgid "This action will remove all customer points and cannot be undone."
 msgstr ""
 "Ez a művelet eltávolítja az összes vásárlói pontot, és nem vonható vissza."
 
-#: includes/class-wc-points-rewards-admin.php:1277
+#: includes/class-wc-points-rewards-admin.php:1284
 msgid "Remove Points and Rewards Messages Settings"
 msgstr "Pontok és jutalmak üzenetbeállításainak eltávolítása"
 
-#: includes/class-wc-points-rewards-admin.php:1278
+#: includes/class-wc-points-rewards-admin.php:1285
 msgid "Remove all points and rewards messages settings."
 msgstr "Távolítsa el a pontok és jutalmak összes üzenetbeállítását."
 
-#: includes/class-wc-points-rewards-admin.php:1282
+#: includes/class-wc-points-rewards-admin.php:1289
 msgid ""
 "Use this action to remove all custom messages, for instance, after changing "
 "your site language. After completing this action, go to the extension "
@@ -563,11 +495,11 @@ msgstr ""
 "bővítmény beállításaihoz, és állítson be új üzeneteket. Ez a művelet nem "
 "vonható vissza."
 
-#: includes/class-wc-points-rewards-admin.php:1301
+#: includes/class-wc-points-rewards-admin.php:1308
 msgid "All points and rewards successfully deleted"
 msgstr "Az összes pont és jutalom sikeresen törölve"
 
-#: includes/class-wc-points-rewards-admin.php:1318
+#: includes/class-wc-points-rewards-admin.php:1325
 msgid "All points and rewards messages settings successfully deleted"
 msgstr "A pontok és jutalmak üzenetbeállításai sikeresen törölve"
 
@@ -578,67 +510,63 @@ msgstr "Pontbeváltás"
 #. translators: %s is the custom name for points, %d is the minimum number of
 #. points the user must spend
 #: includes/class-wc-points-rewards-cart-checkout.php:291
-#, php-format
 msgid "The minimum number of %s you can redeem is %d."
 msgstr "A beváltható %s minimális mennyisége: %d."
 
-#: includes/class-wc-points-rewards-cart-checkout.php:527 build/index.js:1
+#: includes/class-wc-points-rewards-cart-checkout.php:531
 msgid "Apply Discount"
 msgstr "Kedvezmény alkalmazása"
 
-#: includes/class-wc-points-rewards-cart-checkout.php:780
+#: includes/class-wc-points-rewards-cart-checkout.php:796
 msgid "How many points would you like to apply?"
 msgstr "Hány pontot kíván alkalmazni?"
 
 #: includes/class-wc-points-rewards-discount.php:108
-#: includes/class-wc-points-rewards-legacy-discount.php:133
 msgid "Discount Applied Successfully"
 msgstr "A kedvezmény sikeresen alkalmazva"
 
-#: includes/class-wc-points-rewards-extend-store-endpoint.php:114
+#: includes/class-wc-points-rewards-extend-store-endpoint.php:115
 msgid "Points generated message"
-msgstr "Pontok által létrehozott üzenet"
+msgstr "Pontszerzési üzenet"
 
-#: includes/class-wc-points-rewards-extend-store-endpoint.php:120
+#: includes/class-wc-points-rewards-extend-store-endpoint.php:121
 msgid "Message to user inviting them to redeem points"
 msgstr "Üzenet a felhasználónak, amelyben felkéri a pontok beváltására"
 
-#: includes/class-wc-points-rewards-extend-store-endpoint.php:126
+#: includes/class-wc-points-rewards-extend-store-endpoint.php:127
 msgid "Max number of points able to be redeemed"
 msgstr "Beváltható pontok maximális száma"
 
-#: includes/class-wc-points-rewards-manage-points-list-table.php:58
-#: includes/class-wc-points-rewards-manage-points-list-table.php:77
-#: includes/class-wc-points-rewards-manage-points-list-table.php:159
+#: includes/class-wc-points-rewards-manage-points-list-table.php:68
+#: includes/class-wc-points-rewards-manage-points-list-table.php:87
+#: includes/class-wc-points-rewards-manage-points-list-table.php:169
 msgid "Update"
 msgstr "Frissítés"
 
-#: includes/class-wc-points-rewards-manage-points-list-table.php:75
-#: includes/class-wc-points-rewards-points-log-list-table.php:59
+#: includes/class-wc-points-rewards-manage-points-list-table.php:85
+#: includes/class-wc-points-rewards-points-log-list-table.php:69
 msgid "Customer"
 msgstr "Vásárló"
 
 #. translators: %d: number of customers updated
-#: includes/class-wc-points-rewards-manage-points-list-table.php:239
-#, php-format
+#: includes/class-wc-points-rewards-manage-points-list-table.php:249
 msgid "%s customer updated."
 msgid_plural "%s customers updated."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s vásárló frissítve."
+msgstr[1] "%s vásárló frissítve."
 
 #. translators: %d: number of customers not updated
-#: includes/class-wc-points-rewards-manage-points-list-table.php:243
-#, php-format
+#: includes/class-wc-points-rewards-manage-points-list-table.php:253
 msgid "%s customer could not be updated."
 msgid_plural "%s customers could not be updated."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s vásárlót nem sikerült frissíteni."
+msgstr[1] "%s vásárlót nem sikerült frissíteni."
 
-#: includes/class-wc-points-rewards-manage-points-list-table.php:386
+#: includes/class-wc-points-rewards-manage-points-list-table.php:371
 msgid "No user points found"
 msgstr "Nem találhatók felhasználói pontok"
 
-#: includes/class-wc-points-rewards-manage-points-list-table.php:388
+#: includes/class-wc-points-rewards-manage-points-list-table.php:373
 msgid ""
 "User points will appear here for you to view and manage once you have "
 "customers."
@@ -646,123 +574,110 @@ msgstr ""
 "Amint lesznek vásárlói, a felhasználói pontok itt jelennek meg, hogy "
 "megtekinthesse és kezelhesse őket."
 
-#: includes/class-wc-points-rewards-manage-points-list-table.php:412
-#: includes/class-wc-points-rewards-points-log-list-table.php:272
+#: includes/class-wc-points-rewards-manage-points-list-table.php:397
+#: includes/class-wc-points-rewards-points-log-list-table.php:267
 msgid "Invalid customer"
 msgstr "Érvénytelen vásárló"
 
-#: includes/class-wc-points-rewards-manage-points-list-table.php:419
-#: includes/class-wc-points-rewards-points-log-list-table.php:280
+#: includes/class-wc-points-rewards-manage-points-list-table.php:404
+#: includes/class-wc-points-rewards-points-log-list-table.php:275
 msgid "Show All Customers"
 msgstr "Összes vásárló megjelenítése"
 
-#: includes/class-wc-points-rewards-manage-points-list-table.php:429
-#: includes/class-wc-points-rewards-points-log-list-table.php:305
+#: includes/class-wc-points-rewards-manage-points-list-table.php:414
+#: includes/class-wc-points-rewards-points-log-list-table.php:300
 msgid "Filter"
 msgstr "Szűrés"
 
 #. translators: %1$s - Points Label, %2$s - User's display name.
 #: includes/class-wc-points-rewards-manager.php:85
-#, php-format
 msgid "%1$s adjusted by %2$s"
 msgstr "%1$s módosítva %2$s által"
 
 #: includes/class-wc-points-rewards-manager.php:87
-#, php-format
 msgid "%s earned for purchase"
-msgstr "%s jóváírva vásárlásért"
+msgstr "Vásárlásért szerzett %s"
 
 #: includes/class-wc-points-rewards-manager.php:88
-#, php-format
 msgid "%s adjusted for cancelled order"
 msgstr "%s módosítva a törölt rendelés miatt"
 
 #: includes/class-wc-points-rewards-manager.php:89
-#, php-format
 msgid "%s adjusted for an order refund"
 msgstr "%s módosítva egy rendelés visszatérítése miatt"
 
 #: includes/class-wc-points-rewards-manager.php:90
-#, php-format
 msgid "%s redeemed towards purchase"
-msgstr "%s beváltva vásárlásra"
+msgstr "Vásárlásra beváltott %s"
 
 #: includes/class-wc-points-rewards-manager.php:91
-#, php-format
 msgid "%s expired"
 msgstr "%s lejárt"
 
 #. translators: 1: points 2: points label
-#: includes/class-wc-points-rewards-order.php:120
-#, php-format
+#: includes/class-wc-points-rewards-order.php:121
 msgid "Customer earned %1$d %2$s for purchase."
 msgstr "A vásárlónak %1$d %2$s került jóváírásra a vásárlásért."
 
 #. translators: 1: points earned 2: points label 3: discount amount
-#: includes/class-wc-points-rewards-order.php:271
-#, php-format
+#: includes/class-wc-points-rewards-order.php:272
 msgid "%1$d %2$s redeemed for a %3$s discount."
 msgstr "%1$d %2$s beváltva %3$s kedvezményre."
 
 #. translators: 1: points earned 2: points earned label
-#: includes/class-wc-points-rewards-order.php:333
-#: includes/class-wc-points-rewards-order.php:389
-#, php-format
+#: includes/class-wc-points-rewards-order.php:334
+#: includes/class-wc-points-rewards-order.php:390
 msgid "%1$d %2$s removed."
 msgstr "%1$d %2$s eltávolítva."
 
 #. translators: 1: points redeemed 2: points redeemed label
-#: includes/class-wc-points-rewards-order.php:350
-#, php-format
+#: includes/class-wc-points-rewards-order.php:351
 msgid "%1$d %2$s credited back to customer."
 msgstr "%1$d %2$s visszajóváírva a vásárlónak."
 
-#: includes/class-wc-points-rewards-points-log-list-table.php:61
+#: includes/class-wc-points-rewards-points-log-list-table.php:71
 #: templates/myaccount/my-points.php:26
 msgid "Event"
 msgstr "Esemény"
 
-#: includes/class-wc-points-rewards-points-log-list-table.php:62
+#: includes/class-wc-points-rewards-points-log-list-table.php:72
 #: templates/myaccount/my-points.php:27
 msgid "Date"
 msgstr "Dátum"
 
-#: includes/class-wc-points-rewards-points-log-list-table.php:115
+#: includes/class-wc-points-rewards-points-log-list-table.php:125
 msgid "Unknown"
 msgstr "Ismeretlen"
 
-#: includes/class-wc-points-rewards-points-log-list-table.php:245
+#: includes/class-wc-points-rewards-points-log-list-table.php:240
 msgid "No log entries found"
 msgstr "Nem találhatók naplóbejegyzések"
 
-#: includes/class-wc-points-rewards-points-log-list-table.php:247
+#: includes/class-wc-points-rewards-points-log-list-table.php:242
 msgid "Point log entries will appear here for you to view and manage."
 msgstr ""
 "A pontnapló-bejegyzések itt jelennek meg, hogy megtekinthesse és kezelhesse "
 "őket."
 
-#: includes/class-wc-points-rewards-points-log-list-table.php:290
+#: includes/class-wc-points-rewards-points-log-list-table.php:285
 msgid "Show All Event Types"
 msgstr "Összes eseménytípus megjelenítése"
 
-#: includes/class-wc-points-rewards-points-log-list-table.php:330
+#: includes/class-wc-points-rewards-points-log-list-table.php:325
 msgid "Show all Event Dates"
 msgstr "Összes eseménydátum megjelenítése"
 
 #. translators: %1$s month, %2$d year
-#: includes/class-wc-points-rewards-points-log-list-table.php:345
-#, php-format
+#: includes/class-wc-points-rewards-points-log-list-table.php:340
 msgid "%1$s %2$d"
 msgstr "%1$s %2$d"
 
 #: includes/class-wc-points-rewards-points-log.php:133
-#, php-format
 msgid "%s ago"
 msgstr "%s ezelőtt"
 
 #. translators: %s is the privacy policy URL
 #: includes/class-wc-points-rewards-privacy.php:29
-#, php-format
 msgid ""
 "By using this extension, you may be storing personal data or sharing data "
 "with an external service. <a href=\"%s\" target=\"_blank\">Learn more about "
@@ -950,7 +865,6 @@ msgstr "Kérjük, csak számot vagy százalékot adjon meg."
 
 #. translators: 1: points
 #: includes/class-wc-points-rewards-product.php:192
-#, php-format
 msgid "Earn at least <strong>%d</strong> points by purchasing this product."
 msgstr ""
 "Szerezzen legalább <strong>%d</strong> pontot e termék megvásárlásával."
@@ -963,23 +877,15 @@ msgid ""
 "200%.  This setting modifies the global Points Conversion Rate and overrides"
 " any category value.  Use 0 to assign no points for this product, and empty "
 "to use the global/category settings."
-msgstr ""
-"Ez lehet egy fix pontszám, amelyet e termék megvásárlásáért szerez, vagy egy"
-" százalékos érték, amely az ár alapján oszt pontokat. Például, ha a normál "
-"ráta kétszeresének megfelelő pontokat szeretne jóváírni, adja meg: 200%.  Ez"
-" a beállítás módosítja a globális pontkonverziós arányt és felülír minden "
-"kategóriaértéket.  Használjon 0-t, ha ehhez a termékhez nem szeretne pontot "
-"rendelni, üresen hagyva pedig a globális/kategória beállításokat használja."
+msgstr "Ez lehet egy rögzített pontszám, amelyet e termék megvásárlásáért szerez, vagy egy százalékos érték, amely az ár alapján oszt pontokat. Például, ha a normál ráta kétszeresének megfelelő pontokat szeretne jóváírni, adja meg: 200%.  Ez a beállítás módosítja a globális pontkonverziós arányt és felülír minden kategóriaértéket. 0 megadásával nem rendel pontot ehhez a termékhez, üresen hagyva pedig a globális/kategória beállításokat használja."
 
 #. translators: %s - Points Label
 #: templates/myaccount/my-points.php:17
-#, php-format
 msgid "My %s"
 msgstr "Saját %s"
 
 #. translators: %1$d - Points Balance, %2$s - Points Label
 #: templates/myaccount/my-points.php:20
-#, php-format
 msgid "You have %1$d %2$s"
 msgstr "Önnek %1$d %2$s van"
 
@@ -989,11 +895,67 @@ msgstr "Előző"
 
 #: templates/myaccount/my-points.php:54
 msgid "Next"
-msgstr "Következő"
+msgstr "Tovább"
+
+#: vendor/woocommerce/grow/src/Checks/WCCompatibility.php:105
+msgid "WooCommerce is not installed or activated."
+msgstr "A WooCommerce nincs telepítve vagy bekapcsolva."
+
+#: vendor/woocommerce/grow/src/Checks/WCCompatibility.php:119
+msgid "WooCommerce version not compatible."
+msgstr "A WooCommerce-verzió nem kompatibilis."
+
+#. translators: %1$s - Plugin Name, %2$s - activate WooCommerce link open,
+#. %3$s
+#. - activate WooCommerce link close.
+#: vendor/woocommerce/grow/src/Checks/WCCompatibility.php:262
+msgid ""
+"%1$s requires WooCommerce to be activated. Please %2$sactivate "
+"WooCommerce%3$s."
+msgstr "A(z) %1$s használatához be kell kapcsolni a WooCommerce-t. Kérjük, %2$saktiválja a WooCommerce-t%3$s."
+
+#. translators: %1$s - Plugin Name, %2$s - install WooCommerce link open, %3$s
+#. - install WooCommerce link close.
+#: vendor/woocommerce/grow/src/Checks/WCCompatibility.php:280
+msgid ""
+"%1$s requires WooCommerce to be installed and activated. Please %2$sinstall "
+"WooCommerce%3$s."
+msgstr "A(z) %1$s használatához a WooCommerce-nek telepítve és bekapcsolva kell lennie. Kérjük, %2$stelepítse a WooCommerce-t%3$s."
+
+#. translators: %1$s - Plugin Name, %2$s - minimum WooCommerce version, %3$s -
+#. update WooCommerce link open, %4$s - update WooCommerce link close, %5$s -
+#. download minimum WooCommerce link open, %6$s - download minimum WooCommerce
+#. link close.
+#: vendor/woocommerce/grow/src/Checks/WCCompatibility.php:307
+msgid ""
+"%1$s requires WooCommerce version %2$s or higher. Please %3$supdate "
+"WooCommerce%4$s to the latest version, or %5$sdownload the minimum required "
+"version &raquo;%6$s"
+msgstr "A(z) %1$s használatához legalább %2$s verziójú WooCommerce szükséges. Kérjük, %3$sfrissítse a WooCommerce-t%4$s a legújabb verzióra, vagy %5$stöltse le a szükséges minimális verziót &raquo;%6$s"
+
+#. translators: %1$s - Plugin Name, %2$s - Plugin version, %3$s - WooCommerce
+#. version number
+#: vendor/woocommerce/grow/src/Checks/WCCompatibility.php:333
+msgid "%1$s - version %2$s is untested with WooCommerce %3$s."
+msgstr "A(z) %1$s %2$s verzióját nem tesztelték a(z) %3$s verziójú WooCommerce-szel."
+
+#. translators: Placeholders: %1$s - plugin name, %2$s - WooCommerce version
+#. number, %3$s - opening <a> HTML link tag, %4$s - closing </a> HTML link tag
+#: vendor/woocommerce/grow/src/Checks/WCCompatibility.php:360
+msgid ""
+"Heads up! %1$s will soon discontinue support for WooCommerce %2$s. Please "
+"%3$supdate WooCommerce%4$s to take advantage of the latest updates and "
+"features."
+msgstr "Figyelem! A(z) %1$s hamarosan megszünteti a(z) %2$s WooCommerce-verzió támogatását. Kérjük, %3$sfrissítse a WooCommerce-t%4$s, hogy kihasználhassa a legújabb frissítéseket és funkciókat."
+
+#. translators: %1$s - Plugin Name, %2$s - Plugin version, %3$s - WordPress
+#. version number
+#: vendor/woocommerce/grow/src/Checks/WPCompatibility.php:39
+msgid "%1$s - %2$s is untested with WordPress %3$s."
+msgstr "A(z) %1$s %2$s verzióját nem tesztelték a(z) %3$s WordPress-verzióval."
 
 #. translators: %s property name.
 #: woocommerce-points-and-rewards.php:278
-#, php-format
 msgid ""
 "The %s property is private and should not be accessed outside its class."
 msgstr ""
@@ -1003,16 +965,39 @@ msgstr ""
 msgid "Configure"
 msgstr "Beállítás"
 
-#: build/index.js:1
-msgid "Enter the number you'd like to redeem"
-msgstr "Adja meg a beváltani kívánt mennyiséget"
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce Points and Rewards"
+msgstr "WooCommerce Pontok és Jutalmak"
 
-#: build/index.js:1
-msgid "An unknown error occurred."
-msgstr "Ismeretlen hiba történt."
+#. Plugin URI of the plugin/theme
+msgid "https://woocommerce.com/products/woocommerce-points-and-rewards/"
+msgstr "https://woocommerce.com/products/woocommerce-points-and-rewards/"
 
-#. translators: %s is the custom label for points, e.g. coins, tokens etc.
-#: build/index.js:2
-#, js-format
-msgid "%s redemption"
-msgstr "%s beváltása"
+#. Description of the plugin/theme
+msgid ""
+"Reward customers for purchases and other actions with points which can be "
+"redeemed for discounts"
+msgstr "Jutalmazza vásárlóit vásárlásaikért és egyéb műveleteikért kedvezményekre beváltható pontokkal"
+
+#. Author of the plugin/theme
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#. Author URI of the plugin/theme
+msgid "https://woocommerce.com"
+msgstr "https://woocommerce.com"
+
+#: includes/class-wc-points-rewards-admin.php:995
+#: includes/class-wc-points-rewards-admin.php:1033
+msgctxt "placeholder"
+msgid "YYYY-MM-DD"
+msgstr "YYYY-MM-DD"
+
+#~ msgid "Enter the number you'd like to redeem"
+#~ msgstr "Adja meg a beváltani kívánt mennyiséget"
+
+#~ msgid "An unknown error occurred."
+#~ msgstr "Ismeretlen hiba történt."
+
+#~ msgid "%s redemption"
+#~ msgstr "%s beváltása"

@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Google Analytics Pro 2.2.1\n"
+"Project-Id-Version: WooCommerce Google Analytics Pro 2.2.4\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:50:42+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: WooCommerce Google Analytics Pro\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 2.2.1\n"
+"X-Plugin-Version: 2.2.4\n"
 
 #. Plugin Name of the plugin
 #: woocommerce-google-analytics-pro.php src/Plugin.php:307
@@ -51,11 +51,11 @@ msgstr "http://www.skyverge.com"
 
 #: src/API/Admin_API.php:172
 msgid "A valid parent name is required to list data streams."
-msgstr "Az adatfolyamok listázásához érvényes szülőnév szükséges."
+msgstr "Az adatfolyamok listázásához érvényes nevet kell megadni a szülőerőforráshoz."
 
 #: src/API/Admin_API.php:204
 msgid "A valid parent name is required to create data streams."
-msgstr "Az adatfolyamok létrehozásához érvényes szülőnév szükséges."
+msgstr "Az adatfolyamok létrehozásához érvényes nevet kell megadni a szülőerőforráshoz."
 
 #: src/API/Admin_API.php:235
 msgid "A valid property name is required to get the property."
@@ -63,38 +63,35 @@ msgstr "A tulajdon lekéréséhez érvényes tulajdonnév szükséges."
 
 #: src/API/Admin_API.php:266
 msgid "A valid parent name is required to list measurement protocol secrets."
-msgstr ""
-"A Measurement Protocol titkok listázásához érvényes szülőnév szükséges."
+msgstr "A Measurement Protocol-titkok listázásához érvényes nevet kell megadni a szülőerőforráshoz."
 
 #: src/API/Admin_API.php:298
 msgid ""
 "A valid parent name is required to create measurement protocol secrets."
-msgstr ""
-"Measurement Protocol titkok létrehozásához érvényes szülőnév szükséges."
+msgstr "A Measurement Protocol-titkok létrehozásához érvényes nevet kell megadni a szülőerőforráshoz."
 
 #: src/API/Admin_API.php:330
 msgid "A valid parent name is required to acknowledge user data collection."
-msgstr ""
-"A felhasználói adatok gyűjtésének nyugtázásához érvényes szülőnév szükséges."
+msgstr "A felhasználói adatok gyűjtésének visszaigazolásához érvényes nevet kell megadni a szülőerőforráshoz."
+
+#: src/API/Auth.php:246
+msgid "You do not have permission to connect a Google account to this store."
+msgstr "Nincs engedélye Google-fiók csatlakoztatására ehhez az üzlethez."
 
 #. translators: Placeholders: %s - error message
 #: src/API/Collect_API.php:94 src/API/Measurement_Protocol_API.php:91
 #: src/API/Universal_Analytics/Measurement_Protocol_API.php:160
-#, php-format
 msgid "Error tracking event: %s"
 msgstr "Hiba az eseménykövetésnél: %s"
 
 #: src/API/Universal_Analytics/Management_API.php:165
 msgid ""
 "A valid Google Analytics Account ID ID is required to list user profiles."
-msgstr ""
-"A felhasználói profilok listázásához érvényes Google Analytics fiókazonosító"
-" ID ID szükséges."
+msgstr "A felhasználói profilok listázásához érvényes Google Analytics fiókazonosító ID ID szükséges."
 
 #: src/API/Universal_Analytics/Management_API.php:169
 msgid "A valid Web Property ID is required to list user profiles."
-msgstr ""
-"A felhasználói profilok listázásához érvényes Web Property ID szükséges."
+msgstr "A felhasználói profilok listázásához érvényes Web Property ID szükséges."
 
 #: src/Helpers/Product_Helper.php:200
 msgid "Search"
@@ -114,7 +111,7 @@ msgstr "Archívum"
 
 #: src/Helpers/Product_Helper.php:216
 msgid "Related/Up sell"
-msgstr "Kapcsolódó/Felülértékesítés"
+msgstr "Kapcsolódó/felülértékesítés"
 
 #: src/Helpers/Product_Helper.php:220
 msgid "Cross sell (cart)"
@@ -149,14 +146,10 @@ msgstr "Hibakeresési mód"
 
 #. translators: %1$s - opening <a> tag, %2$s - closing </a> tag
 #: src/Integration.php:296
-#, php-format
 msgid ""
 "Log all API requests, responses, and errors locally, and monitor GA4 events "
 "in %1$sGA4 DebugView%2$s. Only enable this if you experience issues!"
-msgstr ""
-"Naplózza helyben az összes API-kérést, választ és hibát, és figyelje a GA4 "
-"eseményeket a %1$sGA4 DebugView%2$s felületen. Csak akkor engedélyezze, ha "
-"problémákat tapasztal!"
+msgstr "Naplózza helyben az összes API-kérést, választ és hibát, és figyelje a GA4-eseményeket a %1$sGA4 DebugView%2$s felületen. Csak akkor kapcsolja be, ha problémákat tapasztal!"
 
 #: src/Integration.php:305
 msgid "Server-side tracking"
@@ -171,20 +164,13 @@ msgstr ""
 "események követéséhez."
 
 #: src/Integration.php:307
-#, php-format
 msgid ""
 "Google Analytics Pro uses Google's recommended %1$sMeasurement Protocol%2$s "
 "for server-side tracking by default, but we've found that tracking directly "
 "via their Collect API can result in better session attribution for server-"
 "side events. Google does not publicly support the Collect API so its "
 "stability is unknown at this time."
-msgstr ""
-"A Google Analytics Pro alapértelmezés szerint a Google által ajánlott "
-"%1$sMeasurement Protocol%2$s protokollt használja a szerveroldali "
-"követéshez, de tapasztalataink szerint a közvetlen követés a Collect API-n "
-"keresztül jobb munkamenet-hozzárendelést eredményezhet a szerveroldali "
-"eseményeknél. A Google nem támogatja nyilvánosan a Collect API-t, ezért "
-"annak stabilitása jelenleg ismeretlen."
+msgstr "A Google Analytics Pro alapértelmezés szerint a szerveroldali követést a Google által ajánlott %1$sMeasurement Protocol%2$s használatával végzi, de tapasztalataink szerint a Collect API-n keresztüli közvetlen követés jobb munkamenet-hozzárendelést eredményezhet a szerveroldali események esetében. A Google nem támogatja nyilvánosan a Collect API-t, ezért annak stabilitása jelenleg ismeretlen."
 
 #: src/Integration.php:325
 msgid "JavaScript function name"
@@ -192,16 +178,11 @@ msgstr "JavaScript-függvény neve"
 
 #. translators: %1$s - function name, %2$s - function name
 #: src/Integration.php:327
-#, php-format
 msgid ""
 "Set the global tracker function name. %1$s is deprecated and support for it "
 "will be removed in a future version. IMPORTANT: set the function name to "
 "%2$s only after any custom code is updated to use %2$s."
-msgstr ""
-"Állítsa be a globális követőfüggvény nevét. A(z) %1$s elavult, és a "
-"támogatása egy későbbi verzióban el lesz távolítva. FONTOS: a függvény nevét"
-" csak akkor állítsa %2$s értékre, miután minden egyéni kódot frissített, "
-"hogy a %2$s-t használja."
+msgstr "Állítsa be a globális követőfüggvény nevét. A(z) %1$s elavult, és a támogatása egy későbbi verzióban el lesz távolítva. FONTOS: a függvény nevét csak akkor állítsa %2$s értékre, miután minden egyéni kódot frissített úgy, hogy a %2$s nevet használja."
 
 #: src/Integration.php:331
 msgid "(Recommended)"
@@ -217,10 +198,9 @@ msgstr "Hitelesítsen újra a Google-fiókjával"
 
 #: src/Integration.php:377
 msgid "Connect your Google account"
-msgstr "Csatlakoztassa Google-fiókját"
+msgstr "Google-fiók csatlakoztatása"
 
 #: src/Integration.php:383
-#, php-format
 msgid ""
 "%1$s: The currently authenticated Google account does not have any Analytics"
 " accounts set up. Please %2$screate an Analytics account%3$s and reload this"
@@ -232,19 +212,17 @@ msgstr ""
 
 #: src/Integration.php:401 src/Integration.php:416
 msgid "Google Analytics 4 Property"
-msgstr "Google Analytics 4 tulajdon"
+msgstr "Google Analytics 4-tulajdon"
 
 #: src/Integration.php:404
 msgid ""
 "Please re-authenticate & allow edit access to your Google Analytics account "
 "to see GA4 properties"
-msgstr ""
-"Kérjük, hitelesítsen újra, és adjon szerkesztési hozzáférést a Google "
-"Analytics-fiókjához, hogy láthassa a GA4 tulajdonokat"
+msgstr "Kérjük, hitelesítsen újra, és engedélyezzen szerkesztési hozzáférést a Google Analytics-fiókjához, hogy láthassa a GA4-tulajdonokat"
 
 #: src/Integration.php:405 src/Integration.php:424
 msgid "Choose which Google Analytics property you want to track"
-msgstr "Válassza ki, melyik Google Analytics tulajdont szeretné követni"
+msgstr "Válassza ki, melyik Google Analytics-tulajdont szeretné követni"
 
 #: src/Integration.php:422 src/Integration.php:443
 msgid "Select a property&hellip;"
@@ -252,22 +230,18 @@ msgstr "Válasszon tulajdont&hellip;"
 
 #: src/Integration.php:437
 msgid "Universal Analytics Property"
-msgstr "Universal Analytics tulajdon"
+msgstr "Universal Analytics-tulajdon"
 
 #: src/Integration.php:445
 msgid "Choose which Universal Analytics property you want to track."
-msgstr "Válassza ki, melyik Universal Analytics tulajdont szeretné követni."
+msgstr "Válassza ki, melyik Universal Analytics-tulajdont szeretné követni."
 
 #: src/Integration.php:446
-#, php-format
 msgid ""
 "Clear this setting to disconnect Universal Analytics once you have migrated "
 "to GA4. This setting will stop working after %1$sGoogle retires Universal "
 "Analytics%2$s (expected mid-2023)."
-msgstr ""
-"Törölje ezt a beállítást, hogy a GA4-re való átállás után leválassza a "
-"Universal Analyticset. Ez a beállítás megszűnik működni, miután %1$sA Google"
-" kivezeti a Universal Analyticset%2$s (várhatóan 2023 közepén)."
+msgstr "Hagyja üresen ezt a beállítást, hogy a GA4-re való átállás után leválassza a Universal Analytics-szolgáltatást. Ez a beállítás megszűnik működni, miután %1$sa Google kivezeti a Universal Analytics-szolgáltatást%2$s (várhatóan 2023 közepén)."
 
 #: src/Integration.php:455
 msgid ""
@@ -322,14 +296,12 @@ msgstr ""
 
 #: src/Integration.php:532
 msgid "Track Administrators?"
-msgstr "Követi az adminisztrátorokat?"
+msgstr "Adminisztrátorok követése?"
 
 #: src/Integration.php:535
 msgid ""
 "Check to enable tracking when logged in as Administrator or Shop Manager."
-msgstr ""
-"Jelölje be a követés engedélyezéséhez, amikor adminisztrátorként vagy "
-"áruházkezelőként van bejelentkezve."
+msgstr "Jelölje be a négyzetet a követés bekapcsolásához, amikor adminisztrátorként vagy áruházkezelőként van bejelentkezve."
 
 #: src/Integration.php:539
 msgid "Tracking Options"
@@ -337,11 +309,10 @@ msgstr "Követési opciók"
 
 #: src/Integration.php:540
 msgid "Track User ID"
-msgstr "User ID követése"
+msgstr "Felhasználói azonosító (ID) követése"
 
 #. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
 #: src/Integration.php:545
-#, php-format
 msgid "Enable User ID tracking. %1$sRead more about the User ID feature%2$s."
 msgstr ""
 "Engedélyezze a User ID követését. %1$sTudjon meg többet a User ID "
@@ -357,15 +328,11 @@ msgstr "(Csak UA)"
 
 #. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
 #: src/Integration.php:555
-#, php-format
 msgid ""
 "Set the Google Analytics code to support Demographics and Interests Reports "
 "for Remarketing and Advertising. %1$sRead more about Advertising "
 "Features%2$s."
-msgstr ""
-"Állítsa be a Google Analytics kódot a remarketinghez és hirdetéshez "
-"szükséges Demográfiai és érdeklődési jelentések támogatásához. %1$sTudjon "
-"meg többet a hirdetési funkciókról%2$s."
+msgstr "Állítsa be a Google Analytics-kódot úgy, hogy támogassa a remarketinghez és a hirdetéshez kapcsolódó demográfiai és érdeklődési jelentéseket. %1$sTudjon meg többet a hirdetési funkciókról%2$s."
 
 #: src/Integration.php:559
 msgid "Use Enhanced Link Attribution"
@@ -373,14 +340,10 @@ msgstr "Továbbfejlesztett hivatkozás-hozzárendelés használata"
 
 #. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
 #: src/Integration.php:564
-#, php-format
 msgid ""
 "Set the Google Analytics code to support Enhanced Link Attribution. %1$sRead"
 " more about Enhanced Link Attribution%2$s."
-msgstr ""
-"Állítsa be a Google Analytics kódot a továbbfejlesztett hivatkozás-"
-"hozzárendelés támogatásához. %1$sTudjon meg többet a továbbfejlesztett "
-"hivatkozás-hozzárendelésről%2$s."
+msgstr "Állítsa be a Google Analytics-kódot a továbbfejlesztett link-hozzárendelés támogatásához. %1$sTudjon meg többet a továbbfejlesztett link-hozzárendelésről%2$s."
 
 #: src/Integration.php:568
 msgid "Anonymize IP addresses"
@@ -388,14 +351,10 @@ msgstr "IP-címek anonimizálása"
 
 #. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
 #: src/Integration.php:574
-#, php-format
 msgid ""
 "Enabling this option is mandatory in certain countries due to national "
 "privacy laws. %1$sRead more about IP Anonymization%2$s."
-msgstr ""
-"Ennek az opciónak az engedélyezése egyes országokban a nemzeti adatvédelmi "
-"törvények miatt kötelező. %1$sTudjon meg többet az IP-címek "
-"anonimizálásáról%2$s."
+msgstr "Ennek az opciónak az engedélyezése egyes országokban a nemzeti adatvédelmi törvények miatt kötelező. %1$sTudjon meg többet az IP-címek anonimizálásáról%2$s."
 
 #: src/Integration.php:578
 msgid "Google Optimize"
@@ -407,29 +366,24 @@ msgstr "Google Optimize engedélyezése"
 
 #. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
 #: src/Integration.php:583
-#, php-format
 msgid ""
 "Google Optimize will be %1$sretired on September 30, 2023%2$s. Your "
 "experiences can continue to run until that date."
-msgstr ""
-"A Google Optimize %1$s2023. szeptember 30-án kivezetésre kerül%2$s. Az "
-"élményei addig a dátumig tovább futhatnak."
+msgstr "A Google Optimize %1$s2023. szeptember 30-án megszűnik%2$s. A kísérletek addig tovább futhatnak."
 
 #. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
 #: src/Integration.php:583
-#, php-format
 msgid "%1$sRead more about Google Optimize%2$s."
 msgstr "%1$sTudjon meg többet a Google Optimize-ról%2$s."
 
 #: src/Integration.php:587
 msgid "Google Optimize Code"
-msgstr "Google Optimize kód"
+msgstr "Google Optimize-kód"
 
 #. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
 #: src/Integration.php:591
-#, php-format
 msgid "e.g. \"GTM-XXXXXX\". %1$sRead more about this code%2$s"
-msgstr "pl. \"GTM-XXXXXX\". %1$sTudjon meg többet erről a kódról%2$s"
+msgstr "pl. „GTM-XXXXXX”. %1$sTudjon meg többet erről a kódról%2$s"
 
 #: src/Integration.php:596
 msgid "Track product list views (impressions) on:"
@@ -437,20 +391,18 @@ msgstr "Terméklista-megtekintések (megjelenések) követése itt:"
 
 #: src/Integration.php:597
 msgid "Control where product list views are tracked."
-msgstr "Szabályozza, hol legyenek követve a terméklista-megtekintések."
+msgstr "Adja meg, hol kövesse a rendszer a terméklista-megtekintéseket."
 
 #: src/Integration.php:598
 msgid ""
 "If you're running into issues, particularly if you see the \"No HTTP "
 "response detected\" error, try disabling product impressions on archive "
 "pages."
-msgstr ""
-"Ha problémákba ütközik, különösen ha a \"No HTTP response detected\" hibát "
-"látja, próbálja meg letiltani a termékmegjelenítéseket az archív oldalakon."
+msgstr "Ha problémákba ütközik, különösen akkor, ha a „No HTTP response detected” hibát látja, próbálja meg kikapcsolni a termékmegjelenítéseket az archív oldalakon."
 
 #: src/Integration.php:602
 msgid "Single Product Pages"
-msgstr "Egyedi termékoldalak"
+msgstr "Termékoldalak"
 
 #: src/Integration.php:603
 msgid "Archive Pages"
@@ -469,28 +421,19 @@ msgid ""
 "Enable to include tax & shipping fees when tracking cart and order revenue. "
 "This setting does not affect product revenue tracking, which always excludes"
 " these fees."
-msgstr ""
-"Engedélyezze, hogy a kosár- és rendelésbevétel követésekor az adó és a "
-"szállítási díjak is beszámításra kerüljenek. Ez a beállítás nem érinti a "
-"termékbevétel-követést, amely mindig kizárja ezeket a díjakat."
+msgstr "Kapcsolja be, ha azt szeretné, hogy a kosár- és rendelési bevétel követésekor az adó és a szállítási díjak is beleszámítsanak az értékbe. Ez a beállítás nem érinti a termékbevétel követését, amelyből ezek a díjak mindig kimaradnak."
 
 #: src/Integration.php:632
 msgid "Recommended Events"
 msgstr "Javasolt események"
 
 #: src/Integration.php:635
-#, php-format
 msgid ""
 "These events are %1$srecommended by Google%2$s to help you measure features "
 "and behavior as well as generate more useful reports. %3$sCustomizing these "
 "event names is not recommended%4$s, as it will break automated reporting in "
 "Google Analytics. Leave a field blank to disable tracking for the event."
-msgstr ""
-"Ezeket az eseményeket %1$sa Google ajánlja%2$s, hogy segítsék a funkciók és "
-"viselkedések mérését, valamint hasznosabb jelentések készítését. %3$sEzen "
-"eseménynevek testreszabása nem ajánlott%4$s, mivel ez megszakítja az "
-"automatizált jelentéskészítést a Google Analyticsben. Hagyja üresen a mezőt "
-"az esemény követésének letiltásához."
+msgstr "Ezeket az eseményeket %1$sa Google ajánlja%2$s, hogy segítsenek a funkciók és a viselkedés mérésében, valamint hasznosabb jelentések készítésében. %3$sEzen eseménynevek testreszabása nem ajánlott%4$s, mivel ez megzavarja az automatikus jelentéskészítést a Google Analyticsben. Hagyja üresen a mezőt az esemény követésének kikapcsolásához."
 
 #: src/Integration.php:651
 msgid "Custom Events"
@@ -500,21 +443,17 @@ msgstr "Egyéni események"
 msgid ""
 "Customize the event names you wish to track in Google Analytics. Leave a "
 "field blank to disable tracking for the event."
-msgstr ""
-"Testreszabhatja a Google Analyticsben követni kívánt események neveit. "
-"Hagyja üresen a mezőt az esemény követésének letiltásához."
+msgstr "Testreszabhatja a Google Analyticsben követni kívánt események neveit. Hagyja üresen a mezőt az esemény követésének letiltásához."
 
 #: src/Integration.php:662
 msgid "Universal Analytics Events"
-msgstr "Universal Analytics események"
+msgstr "Universal Analytics-események"
 
 #: src/Integration.php:663
 msgid ""
 "Customize the event names you wish to track in Google Universal Analytics. "
 "Leave a field blank to disable tracking for the event."
-msgstr ""
-"Testreszabhatja a Google Universal Analyticsben követni kívánt események "
-"neveit. Hagyja üresen a mezőt az esemény követésének letiltásához."
+msgstr "Testreszabhatja a Google Universal Analyticsben követni kívánt események neveit. Hagyja üresen a mezőt az esemény követésének letiltásához."
 
 #: src/Integration.php:751
 msgid "Checkout Funnel (UA-only)"
@@ -522,13 +461,10 @@ msgstr "Pénztári tölcsér (csak UA)"
 
 #. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
 #: src/Integration.php:753
-#, php-format
 msgid ""
 "Configure your Analytics account to match the checkout funnel steps below to"
 " take advantage of %1$sCheckout Behavior Analysis%2$s."
-msgstr ""
-"Állítsa be az Analytics-fiókját az alábbi pénztári tölcsérlépéseknek "
-"megfelelően, hogy kihasználja a %1$spénztári viselkedés elemzését%2$s."
+msgstr "Állítsa be az Analytics-fiókját az alábbi pénztári folyamat lépéseinek megfelelően, hogy használhassa a %1$spénztári viselkedés elemzését%2$s."
 
 #: src/Integration.php:758
 msgid "Funnel Steps"
@@ -560,15 +496,11 @@ msgstr "Jelenleg letiltva, mert az esemény neve nincs beállítva."
 
 #. translators: Placeholder: %1$s - plugin name, in bold; %2$s - error message
 #: src/Integration.php:1183
-#, php-format
 msgid ""
 "%1$s: Something went wrong when trying to set up API access for the selected"
 " GA4 property - a Google API error occurred: %2$s. Please try again in a few"
 " minutes or try re-authenticating with your Google account."
-msgstr ""
-"%1$s: Hiba történt a kiválasztott GA4 tulajdonhoz tartozó API-hozzáférés "
-"beállításakor - Google API hiba történt: %2$s. Kérjük, próbálja meg néhány "
-"perc múlva újra, vagy hitelesítsen újra a Google-fiókjával."
+msgstr "%1$s: Hiba történt a kiválasztott GA4-tulajdonhoz tartozó API-hozzáférés beállításakor - Google API-hiba történt: %2$s. Kérjük, próbálja meg néhány perc múlva újra, vagy hitelesítsen újra a Google-fiókjával."
 
 #: src/Integrations/Subscriptions/Events/GA4/Activate_Subscription.php:58
 msgid "Activate Subscription"
@@ -577,7 +509,7 @@ msgstr "Előfizetés aktiválása"
 #: src/Integrations/Subscriptions/Events/GA4/Activate_Subscription.php:67
 #: src/Integrations/Subscriptions/Events/Universal_Analytics/Activated_Subscription.php:67
 msgid "Triggered when a customer activates their subscription."
-msgstr "Akkor váltódik ki, amikor az ügyfél aktiválja az előfizetését."
+msgstr "Akkor váltódik ki, amikor a vásárló bekapcsolja az előfizetését."
 
 #: src/Integrations/Subscriptions/Events/GA4/Cancel_Subscription.php:55
 msgid "Cancel Subscription"
@@ -664,7 +596,7 @@ msgstr "Előfizetés előre fizetett időszakának vége"
 
 #: src/Integrations/Subscriptions/Events/Universal_Analytics/Subscription_Expired.php:54
 msgid "Subscription Expired"
-msgstr "Előfizetés lejárt"
+msgstr "Lejárt előfizetés"
 
 #: src/Integrations/Subscriptions/Events/Universal_Analytics/Subscription_Free_Trial_Ended.php:55
 msgid "Subscription Free Trial Ended"
@@ -678,9 +610,7 @@ msgstr "Előfizetés megújítva"
 msgid ""
 "Triggered when a customer is automatically billed for a subscription "
 "renewal."
-msgstr ""
-"Akkor váltódik ki, amikor az ügyfél előfizetés-megújítása automatikusan "
-"kiszámlázásra kerül."
+msgstr "Akkor váltódik ki, amikor a vásárlónak automatikusan kiszámlázzák az előfizetés megújítását."
 
 #: src/Integrations/Subscriptions/Events/Universal_Analytics/Suspended_Subscription.php:57
 msgid "Suspended Subscription"
@@ -706,19 +636,15 @@ msgstr "(Universal Analytics)"
 
 #. translators: Placeholder: %s - WooCommerce Google Analytics Pro (plugin
 #. name)
-#: src/Plugin.php:455
-#, php-format
+#: src/Plugin.php:454
 msgid ""
 "%s: The free WooCommerce Google Analytics integration has been deactivated "
 "and is not needed when the Pro version is active."
-msgstr ""
-"%s: A WooCommerce Google Analytics ingyenes integrációja deaktiválva lett, "
-"és nincs rá szükség, ha a Pro verzió aktív."
+msgstr "%s: A WooCommerce Google Analytics ingyenes integrációja ki van kapcsolva, és nincs rá szükség, ha a Pro verzió aktív."
 
 #. translators: Placeholders: %1$s - <strong> tag, %2$s - </strong> tag, %3$s
 #. - <a> tag, %4$s - </a> tag
-#: src/Plugin.php:487
-#, php-format
+#: src/Plugin.php:486
 msgid ""
 "%1$sNeed help setting up WooCommerce Google Analytics Pro?%2$s Please "
 "%3$sread the documentation%4$s."
@@ -728,8 +654,7 @@ msgstr ""
 
 #. translators: Placeholders: %1$s - <strong> tag, %2$s - </strong> tag, %3$s
 #. - <a> tag, %4$s - </a> tag
-#: src/Plugin.php:499
-#, php-format
+#: src/Plugin.php:498
 msgid ""
 "%1$sWooCommerce Google Analytics Pro is almost ready!%2$s To get started, "
 "please ​%3$sconnect to Google Analytics%4$s."
@@ -738,8 +663,7 @@ msgstr ""
 "​%3$scsatlakozzon a Google Analyticshez%4$s."
 
 #. translators: Placeholders: %1$s - <strong> tag, %2$s - </strong> tag
-#: src/Plugin.php:541
-#, php-format
+#: src/Plugin.php:540
 msgid ""
 "%1$sWooCommerce Google Analytics Pro is now compatible with GA4!%2$s You can"
 " now add GA4 properties for event tracking."
@@ -747,17 +671,14 @@ msgstr ""
 "%1$sA WooCommerce Google Analytics Pro mostantól kompatibilis a "
 "GA4-gyel!%2$s Most már hozzáadhat GA4-tulajdonokat az eseménykövetéshez."
 
-#: src/Plugin.php:570
+#: src/Plugin.php:569
 msgid ""
 "Google is retiring Universal Analytics in July 2023. After that, Universal "
 "Analytics settings will no longer be available, and your store will no "
 "longer track events in Universal Analytics."
-msgstr ""
-"A Google 2023 júliusában kivezeti a Universal Analytics-et. Ezt követően a "
-"Universal Analytics beállítások már nem lesznek elérhetők, és az áruháza "
-"többé nem fog eseményeket követni a Universal Analytics-ben."
+msgstr "A Google 2023 júliusában kivezeti a Universal Analytics-et. Ezt követően a Universal Analytics-beállítások már nem lesznek elérhetők, és az áruháza többé nem fog eseményeket követni a Universal Analytics-ben."
 
-#: src/Plugin.php:593
+#: src/Plugin.php:592
 msgid ""
 "Google is retiring Google Optimize. It will no longer be available after "
 "September 30, 2023."
@@ -767,22 +688,16 @@ msgstr ""
 
 #. translators: %1$s - function name, %2$s, %4$s - opening <a> tag, %3$s, %5$s
 #. - closing </a> tag
-#: src/Plugin.php:617
-#, php-format
+#: src/Plugin.php:616
 msgid ""
 "Please update any custom tracking code & switch the Google Analytics "
 "javascript tracker function name to %1$s in the %2$sGoogle Analytics "
 "settings%3$s. You can %4$slearn more from the plugin documentation%5$s."
-msgstr ""
-"Kérjük, frissítse az egyéni követőkódot & állítsa át a Google Analytics "
-"javascript követőfüggvény nevét %1$s értékre a %2$sGoogle Analytics "
-"beállításokban%3$s. További információkat %4$sa bővítmény "
-"dokumentációjában%5$s talál."
+msgstr "Kérjük, frissítse az egyéni követőkódot, és állítsa át a Google Analytics JavaScript-követőfüggvényének nevét %1$s értékre a %2$sGoogle Analytics-beállításokban%3$s. További információkat %4$sa bővítmény dokumentációjában%5$s talál."
 
 #. translators: Placeholders: %1$s - plugin name, %2$s and %3$s - currency
 #. code, e.g. USD, %4$s - <a> tag, %5$s - </a> tag
 #: src/Properties_Handler.php:114
-#, php-format
 msgid ""
 "%1$s: Your Google Analytics property currency (%2$s) does not match "
 "WooCommerce currency (%3$s). You can change it %4$son your Google Analytics "
@@ -795,72 +710,50 @@ msgstr ""
 #. translators: Placeholders: %1$s - plugin name, %2$s - data stream name %3$s
 #. - <a> tag, %4$s - </a> tag
 #: src/Properties_Handler.php:141
-#, php-format
 msgid ""
 "%1$s: The selected Analytics property is missing a Measurement Protocol API "
 "secret for the %2$s data stream. Please try re-saving settings to "
 "automatically create the secret, or manually create one %3$son your Google "
 "Analytics Data Stream details page%4$s and then re-save settings."
-msgstr ""
-"%1$s: A kiválasztott Analytics-tulajdonból hiányzik egy Measurement Protocol"
-" API secret a(z) %2$s adatfolyamhoz. Kérjük, próbálja meg a beállítások "
-"újbóli mentését a secret automatikus létrehozásához, vagy hozzon létre "
-"manuálisan egyet a %3$sGoogle Analytics Data Stream details page%4$s "
-"felületén, majd mentse újra a beállításokat."
+msgstr "%1$s: A kiválasztott Analytics-tulajdonból hiányzik egy Measurement Protocol API-titok a(z) %2$s adatfolyamhoz. Próbálja meg újra elmenteni a beállításokat, hogy a titok automatikusan létrejöjjön, vagy hozzon létre egyet kézzel a %3$sGoogle Analytics-adatfolyam részleteit tartalmazó oldalon%4$s, majd mentse újra a beállításokat."
 
 #. translators: Placeholders: %1$s - plugin name (bold), %2$s - opening HTML
 #. <a> link tag, %3$s - closing HTML </a> link tag
 #: src/Properties_Handler.php:232
-#, php-format
 msgid ""
 "%1$s: WooCommerce Google Analytics Pro requires Enhanced Ecommerce to be "
 "enabled. Please enable Enhanced Ecommerce on your %2$sGoogle Analytics "
 "View%3$s."
-msgstr ""
-"%1$s: A WooCommerce Google Analytics Pro használatához engedélyezni kell az "
-"Enhanced Ecommerce-t. Kérjük, engedélyezze az Enhanced Ecommerce-t a "
-"%2$sGoogle Analytics nézetén%3$s."
+msgstr "%1$s: A WooCommerce Google Analytics Pro használatához az Enhanced Ecommerce funkciónak bekapcsolva kell lennie. Kérjük, kapcsolja be az Enhanced Ecommerce funkciót a %2$sGoogle Analytics-nézetben%3$s."
 
 #. translators: Placeholders: %1$s - plugin name (bold), %2$s - a list of
 #. links
 #: src/Properties_Handler.php:239
-#, php-format
 msgid ""
 "%1$s: WooCommerce Google Analytics Pro requires Enhanced Ecommerce to be "
 "enabled. Please enable Enhanced Ecommerce on the following Google Analytics "
 "Views: %2$s"
-msgstr ""
-"%1$s: A WooCommerce Google Analytics Pro használatához engedélyezni kell az "
-"Enhanced Ecommerce-t. Kérjük, engedélyezze az Enhanced Ecommerce-t a "
-"következő Google Analytics nézeteken: %2$s"
+msgstr "%1$s: A WooCommerce Google Analytics Pro használatához az Enhanced Ecommerce funkciónak bekapcsolva kell lennie. Kérjük, kapcsolja be az Enhanced Ecommerce funkciót a következő Google Analytics-nézetekben: %2$s"
 
 #. translators: Placeholders: %1$s - plugin name, %2$s and %3$s - currency
 #. code, e.g. USD, %4$s - <a> tag, %5$s - </a> tag
 #: src/Properties_Handler.php:259
-#, php-format
 msgid ""
 "%1$s: Your Google Analytics View currency (%2$s) does not match WooCommerce "
 "currency (%3$s). You can change it %4$son your Google Analytics View%5$s."
-msgstr ""
-"%1$s: A Google Analytics nézet pénzneme (%2$s) nem egyezik a WooCommerce "
-"pénznemével (%3$s). %4$sa Google Analytics nézetén%5$s módosíthatja."
+msgstr "%1$s: A Google Analytics-nézet pénzneme (%2$s) nem egyezik a WooCommerce pénznemével (%3$s). %4$sa Google Analytics-nézetén%5$s módosíthatja."
 
 #. translators: Placeholders: %1$s - plugin name, %2$s - currency code, %3$s -
 #. a list of links
 #: src/Properties_Handler.php:268
-#, php-format
 msgid ""
 "%1$s: Your Google Analytics Views currencies does not match WooCommerce "
 "currency (%2$s). You can change it on the following Google Analytics Views: "
 "%3$s"
-msgstr ""
-"%1$s: A Google Analytics nézetek pénznemei nem egyeznek a WooCommerce "
-"pénznemével (%2$s). A következő Google Analytics nézeteken módosíthatja: "
-"%3$s"
+msgstr "%1$s: A Google Analytics-nézetek pénznemei nem egyeznek a WooCommerce pénznemével (%2$s). A következő Google Analytics-nézeteken módosíthatja: %3$s"
 
 #. translators: Placeholder: %s - plugin name, in bold
 #: src/Properties_Handler.php:571
-#, php-format
 msgid ""
 "%s: The currently authenticated Google account does not have access to any "
 "Analytics accounts. Please re-authenticate with an account that has access "
@@ -872,7 +765,6 @@ msgstr ""
 
 #. translators: Placeholder: %s - plugin name, in bold
 #: src/Properties_Handler.php:583
-#, php-format
 msgid ""
 "%s: Something went wrong with the request to list the Google Analytics "
 "properties for the currently authenticated Google account. Please try again "
@@ -882,31 +774,26 @@ msgstr ""
 "tartozó Google Analytics-tulajdonokat próbálta listázni. Kérjük, próbálja "
 "meg néhány perc múlva újra, vagy hitelesítsen újra a Google-fiókjával."
 
-#: src/Tracking/Duplicate_Tracking_Code_Detector.php:240
+#: src/Tracking/Duplicate_Tracking_Code_Detector.php:242
 msgid "Google Analytics Pro:"
 msgstr "Google Analytics Pro:"
 
-#: src/Tracking/Duplicate_Tracking_Code_Detector.php:241
+#: src/Tracking/Duplicate_Tracking_Code_Detector.php:243
 msgid ""
 "Heads up! We've detected that another plugin is sending duplicated events to"
 " Google Analytics, which can result in duplicated tracking data. Please "
 "disable any other plugins tracking events in Google Analytics while using "
 "Google Analytics Pro."
-msgstr ""
-"Figyelem! Észleltük, hogy egy másik bővítmény duplikált eseményeket küld a "
-"Google Analyticsnek, ami duplikált követési adatokhoz vezethet. Kérjük, "
-"tiltsa le a Google Analyticsben eseményeket követő egyéb bővítményeket a "
-"Google Analytics Pro használata közben."
+msgstr "Figyelem! Észleltük, hogy egy másik bővítmény duplikált eseményeket küld a Google Analyticsnek, ami duplikált követési adatokhoz vezethet. Kérjük, tiltsa le a Google Analyticsben eseményeket követő egyéb bővítményeket a Google Analytics Pro használata közben."
 
 #: src/Tracking/Events/GA4/Add_Payment_Info_Event.php:65
 msgid "Add Payment Info"
-msgstr "Fizetési információ hozzáadása"
+msgstr "Fizetési adatok hozzáadása"
 
 #: src/Tracking/Events/GA4/Add_Payment_Info_Event.php:74
 #: src/Tracking/Events/Universal_Analytics/Selected_Payment_Method_Event.php:60
 msgid "Triggered when a customer selects a payment method at checkout."
-msgstr ""
-"Akkor váltódik ki, amikor az ügyfél fizetési módot választ a pénztárnál."
+msgstr "Akkor váltódik ki, amikor az ügyfél fizetési módot választ a pénztárnál."
 
 #: src/Tracking/Events/GA4/Add_Shipping_Info_Event.php:66
 msgid "Add Shipping Info"
@@ -914,8 +801,7 @@ msgstr "Szállítási információ hozzáadása"
 
 #: src/Tracking/Events/GA4/Add_Shipping_Info_Event.php:75
 msgid "Triggered when a customer selects a shipping method at checkout."
-msgstr ""
-"Akkor váltódik ki, amikor az ügyfél szállítási módot választ a pénztárnál."
+msgstr "Akkor váltódik ki, amikor az ügyfél szállítási módot választ a pénztárnál."
 
 #: src/Tracking/Events/GA4/Add_To_Cart_Event.php:52
 msgid "Add to Cart"
@@ -924,7 +810,7 @@ msgstr "Kosárba helyezés"
 #: src/Tracking/Events/GA4/Add_To_Cart_Event.php:61
 #: src/Tracking/Events/Universal_Analytics/Added_To_Cart_Event.php:57
 msgid "Triggered when a customer adds an item to the cart."
-msgstr "Akkor váltódik ki, amikor az ügyfél egy terméket a kosárba tesz."
+msgstr "Akkor váltódik ki, amikor a vásárló hozzáad egy tételt a kosárhoz."
 
 #: src/Tracking/Events/GA4/Apply_Coupon_Event.php:51
 #: src/Tracking/Events/GA4/Remove_Coupon_Event.php:52
@@ -934,7 +820,7 @@ msgstr "Kupon alkalmazása"
 #: src/Tracking/Events/GA4/Apply_Coupon_Event.php:60
 #: src/Tracking/Events/Universal_Analytics/Applied_Coupon_Event.php:60
 msgid "Triggered when a customer applies a coupon."
-msgstr "Akkor váltódik ki, amikor az ügyfél kupont alkalmaz."
+msgstr "Akkor váltódik ki, amikor a vásárló felhasznál egy kupont."
 
 #: src/Tracking/Events/GA4/Begin_Checkout_Event.php:53
 msgid "Begin Checkout"
@@ -943,7 +829,7 @@ msgstr "Pénztár megkezdése"
 #: src/Tracking/Events/GA4/Begin_Checkout_Event.php:62
 #: src/Tracking/Events/Universal_Analytics/Started_Checkout_Event.php:60
 msgid "Triggered when a customer starts the checkout."
-msgstr "Akkor váltódik ki, amikor az ügyfél megkezdi a pénztár folyamatát."
+msgstr "Akkor váltódik ki, amikor a vásárló megkezdi a pénztárfolyamatot."
 
 #: src/Tracking/Events/GA4/Cancel_Order_Event.php:51
 msgid "Cancel Order"
@@ -952,7 +838,7 @@ msgstr "Rendelés lemondása"
 #: src/Tracking/Events/GA4/Cancel_Order_Event.php:60
 #: src/Tracking/Events/Universal_Analytics/Cancelled_Order_Event.php:59
 msgid "Triggered when a customer cancels an order."
-msgstr "Akkor váltódik ki, amikor az ügyfél lemond egy rendelést."
+msgstr "Akkor váltódik ki, amikor a vásárló lemondja a rendelést."
 
 #: src/Tracking/Events/GA4/Change_Cart_Quantity_Event.php:48
 msgid "Change Cart Quantity"
@@ -981,7 +867,7 @@ msgstr "Hozzászólás"
 #: src/Tracking/Events/GA4/Comment_Event.php:56
 #: src/Tracking/Events/Universal_Analytics/Commented_Event.php:56
 msgid "Triggered when a customer writes a comment."
-msgstr "Akkor váltódik ki, amikor az ügyfél hozzászólást ír."
+msgstr "Akkor aktiválódik, amikor a vásárló hozzászólást ír."
 
 #: src/Tracking/Events/GA4/Estimate_Shipping_Event.php:51
 msgid "Estimate Shipping"
@@ -990,8 +876,7 @@ msgstr "Szállítási költség becslése"
 #: src/Tracking/Events/GA4/Estimate_Shipping_Event.php:60
 #: src/Tracking/Events/Universal_Analytics/Estimated_Shipping_Event.php:59
 msgid "Triggered when a customer estimates shipping."
-msgstr ""
-"Akkor váltódik ki, amikor az ügyfél megbecsüli a szállítási költséget."
+msgstr "Akkor aktiválódik, amikor a vásárló megbecsüli a szállítási költséget."
 
 #: src/Tracking/Events/GA4/Login_Event.php:52
 msgid "Login"
@@ -1000,7 +885,7 @@ msgstr "Bejelentkezés"
 #: src/Tracking/Events/GA4/Login_Event.php:61
 #: src/Tracking/Events/Universal_Analytics/Signed_In_Event.php:58
 msgid "Triggered when a customer signs in."
-msgstr "Akkor váltódik ki, amikor az ügyfél bejelentkezik."
+msgstr "Akkor aktiválódik, amikor a vásárló bejelentkezik."
 
 #: src/Tracking/Events/GA4/Logout_Event.php:50
 msgid "Logout"
@@ -1009,7 +894,7 @@ msgstr "Kijelentkezés"
 #: src/Tracking/Events/GA4/Logout_Event.php:59
 #: src/Tracking/Events/Universal_Analytics/Signed_Out_Event.php:59
 msgid "Triggered when a customer signs out."
-msgstr "Akkor váltódik ki, amikor az ügyfél kijelentkezik."
+msgstr "Akkor aktiválódik, amikor a vásárló kijelentkezik."
 
 #: src/Tracking/Events/GA4/Place_Order_Event.php:50
 msgid "Place Order"
@@ -1018,19 +903,16 @@ msgstr "Rendelés leadása"
 #: src/Tracking/Events/GA4/Place_Order_Event.php:59
 #: src/Tracking/Events/Universal_Analytics/Placed_Order_Event.php:59
 msgid "Triggered when a customer places an order via checkout."
-msgstr ""
-"Akkor váltódik ki, amikor az ügyfél a pénztáron keresztül rendelést ad le."
+msgstr "Akkor aktiválódik, amikor a vásárló a pénztárnál ad le rendelést."
 
 #: src/Tracking/Events/GA4/Provide_Billing_Email_Event.php:52
 msgid "Provide Billing Email"
-msgstr "Számlázási e-mail megadása"
+msgstr "Számlázási e-mail cím megadása"
 
 #: src/Tracking/Events/GA4/Provide_Billing_Email_Event.php:61
 #: src/Tracking/Events/Universal_Analytics/Provided_Billing_Email_Event.php:60
 msgid "Triggered when a customer provides a billing email at checkout."
-msgstr ""
-"Akkor váltódik ki, amikor az ügyfél számlázási e-mail-címet ad meg a "
-"pénztárnál."
+msgstr "Akkor aktiválódik, amikor a vásárló számlázási e-mail-címet ad meg a pénztárnál."
 
 #: src/Tracking/Events/GA4/Purchase_Event.php:58
 msgid "Purchase"
@@ -1039,7 +921,7 @@ msgstr "Vásárlás"
 #: src/Tracking/Events/GA4/Purchase_Event.php:67
 #: src/Tracking/Events/Universal_Analytics/Completed_Purchase_Event.php:58
 msgid "Triggered when a customer completes a purchase."
-msgstr "Akkor váltódik ki, amikor az ügyfél befejez egy vásárlást."
+msgstr "Akkor aktiválódik, amikor a vásárló befejez egy vásárlást."
 
 #: src/Tracking/Events/GA4/Refund_Event.php:56
 msgid "Refund"
@@ -1048,12 +930,12 @@ msgstr "Visszatérítés"
 #: src/Tracking/Events/GA4/Refund_Event.php:65
 #: src/Tracking/Events/Universal_Analytics/Order_Refunded_Event.php:57
 msgid "Triggered when an order is refunded."
-msgstr "Akkor váltódik ki, amikor egy rendelést visszatérítenek."
+msgstr "Akkor aktiválódik, amikor visszatérítenek egy rendelést."
 
 #: src/Tracking/Events/GA4/Remove_Coupon_Event.php:61
 #: src/Tracking/Events/Universal_Analytics/Removed_Coupon_Event.php:60
 msgid "Triggered when a customer removes a coupon."
-msgstr "Akkor váltódik ki, amikor az ügyfél eltávolít egy kupont."
+msgstr "Akkor aktiválódik, amikor a vásárló eltávolít egy kupont."
 
 #: src/Tracking/Events/GA4/Remove_From_Cart_Event.php:54
 msgid "Remove from Cart"
@@ -1062,8 +944,7 @@ msgstr "Eltávolítás a kosárból"
 #: src/Tracking/Events/GA4/Remove_From_Cart_Event.php:63
 #: src/Tracking/Events/Universal_Analytics/Removed_From_Cart_Event.php:59
 msgid "Triggered when a customer removes an item from the cart."
-msgstr ""
-"Akkor váltódik ki, amikor az ügyfél eltávolít egy terméket a kosárból."
+msgstr "Akkor aktiválódik, amikor a vásárló eltávolít egy tételt a kosárból."
 
 #: src/Tracking/Events/GA4/Reorder_Event.php:51
 msgid "Reorder"
@@ -1072,7 +953,7 @@ msgstr "Újrarendelés"
 #: src/Tracking/Events/GA4/Reorder_Event.php:60
 #: src/Tracking/Events/Universal_Analytics/Reordered_Event.php:62
 msgid "Triggered when a customer reorders a previous order."
-msgstr "Akkor váltódik ki, amikor az ügyfél újrarendel egy korábbi rendelést."
+msgstr "Akkor aktiválódik, amikor a vásárló ismét lead egy korábbi rendelést."
 
 #: src/Tracking/Events/GA4/Review_Event.php:47
 msgid "Review"
@@ -1081,20 +962,18 @@ msgstr "Értékelés"
 #: src/Tracking/Events/GA4/Review_Event.php:56
 #: src/Tracking/Events/Universal_Analytics/Wrote_Review_Event.php:56
 msgid "Triggered when a customer writes a review."
-msgstr "Akkor váltódik ki, amikor az ügyfél értékelést ír."
+msgstr "Akkor aktiválódik, amikor a vásárló értékelést ír."
 
 #: src/Tracking/Events/GA4/Select_Item_Event.php:69
 msgid "Select Item"
-msgstr "Termék kiválasztása"
+msgstr "Tétel kiválasztása"
 
 #: src/Tracking/Events/GA4/Select_Item_Event.php:78
 #: src/Tracking/Events/Universal_Analytics/Clicked_Product_Event.php:61
 msgid ""
 "Triggered when a customer clicks a product in listing, such as search "
 "results or related products."
-msgstr ""
-"Akkor váltódik ki, amikor az ügyfél egy listában szereplő termékre kattint, "
-"például a keresési eredményekben vagy a kapcsolódó termékek között."
+msgstr "Akkor aktiválódik, amikor a vásárló egy listában szereplő termékre kattint, például a keresési találatok vagy a kapcsolódó termékek között."
 
 #: src/Tracking/Events/GA4/Sign_Up_Event.php:54
 msgid "Sign Up"
@@ -1103,7 +982,7 @@ msgstr "Regisztráció"
 #: src/Tracking/Events/GA4/Sign_Up_Event.php:63
 #: src/Tracking/Events/Universal_Analytics/Signed_Up_Event.php:59
 msgid "Triggered when a customer registers a new account."
-msgstr "Akkor váltódik ki, amikor az ügyfél új fiókot regisztrál."
+msgstr "Akkor aktiválódik, amikor a vásárló új fiókot hoz létre."
 
 #: src/Tracking/Events/GA4/Start_Payment_Event.php:52
 msgid "Start Payment"
@@ -1114,9 +993,7 @@ msgstr "Fizetés indítása"
 msgid ""
 "Triggered when a customer views the payment page (used with direct post "
 "payment gateways)."
-msgstr ""
-"Akkor váltódik ki, amikor az ügyfél megtekinti a fizetési oldalt (közvetlen "
-"POST alapú fizetési átjáróknál használatos)."
+msgstr "Akkor aktiválódik, amikor a vásárló megtekinti a fizetési oldalt (közvetlen POST-alapú fizetési átjáróknál használatos)."
 
 #: src/Tracking/Events/GA4/Track_Order_Event.php:51
 msgid "Track Order"
@@ -1125,7 +1002,7 @@ msgstr "Rendelés követése"
 #: src/Tracking/Events/GA4/Track_Order_Event.php:60
 #: src/Tracking/Events/Universal_Analytics/Tracked_Order_Event.php:60
 msgid "Triggered when a customer tracks an order."
-msgstr "Akkor váltódik ki, amikor az ügyfél követ egy rendelést."
+msgstr "Akkor aktiválódik, amikor a vásárló nyomon követi a rendelést."
 
 #: src/Tracking/Events/GA4/Update_Address_Event.php:51
 msgid "Update Address"
@@ -1134,7 +1011,7 @@ msgstr "Cím frissítése"
 #: src/Tracking/Events/GA4/Update_Address_Event.php:60
 #: src/Tracking/Events/Universal_Analytics/Updated_Address_Event.php:60
 msgid "Triggered when a customer updates their address."
-msgstr "Akkor váltódik ki, amikor az ügyfél frissíti a címét."
+msgstr "Akkor aktiválódik, amikor a vásárló frissíti a címét."
 
 #: src/Tracking/Events/GA4/View_Account_Event.php:51
 msgid "View Account"
@@ -1143,7 +1020,7 @@ msgstr "Fiók megtekintése"
 #: src/Tracking/Events/GA4/View_Account_Event.php:60
 #: src/Tracking/Events/Universal_Analytics/Viewed_Account_Event.php:60
 msgid "Triggered when a customer views the My Account page."
-msgstr "Akkor váltódik ki, amikor az ügyfél megtekinti a Saját fiók oldalt."
+msgstr "Akkor aktiválódik, amikor a vásárló megtekinti a Saját fiók oldalt."
 
 #: src/Tracking/Events/GA4/View_Cart_Event.php:53
 msgid "View Cart"
@@ -1152,7 +1029,7 @@ msgstr "Kosár megtekintése"
 #: src/Tracking/Events/GA4/View_Cart_Event.php:62
 #: src/Tracking/Events/Universal_Analytics/Viewed_Cart_Event.php:57
 msgid "Triggered when a customer views the cart."
-msgstr "Akkor váltódik ki, amikor az ügyfél megtekinti a kosarat."
+msgstr "Akkor aktiválódik, amikor a vásárló megtekinti a kosarat."
 
 #: src/Tracking/Events/GA4/View_Homepage_Event.php:51
 msgid "View Homepage"
@@ -1161,7 +1038,7 @@ msgstr "Főoldal megtekintése"
 #: src/Tracking/Events/GA4/View_Homepage_Event.php:60
 #: src/Tracking/Events/Universal_Analytics/Viewed_Homepage_Event.php:60
 msgid "Triggered when a customer views the homepage."
-msgstr "Akkor váltódik ki, amikor az ügyfél megtekinti a főoldalt."
+msgstr "Akkor aktiválódik, amikor a vásárló megtekinti a főoldalt."
 
 #: src/Tracking/Events/GA4/View_Item_Event.php:49
 msgid "View Item"
@@ -1170,19 +1047,17 @@ msgstr "Termék megtekintése"
 #: src/Tracking/Events/GA4/View_Item_Event.php:58
 #: src/Tracking/Events/Universal_Analytics/Viewed_Product_Event.php:57
 msgid "Triggered when a customer views a single product."
-msgstr "Akkor váltódik ki, amikor az ügyfél egy terméket tekint meg."
+msgstr "Akkor aktiválódik, amikor a vásárló egy termékoldalt tekint meg."
 
 #: src/Tracking/Events/GA4/View_Item_List_Event.php:73
 msgid "View Item List"
-msgstr "Terméklista megtekintése"
+msgstr "Tétellista megtekintése"
 
 #: src/Tracking/Events/GA4/View_Item_List_Event.php:82
 msgid ""
 "Triggered when a customer views a list of products, for example the shop "
 "page or related products under a single product page."
-msgstr ""
-"Akkor váltódik ki, amikor az ügyfél termékek listáját tekinti meg, például "
-"az áruházoldalt vagy egy termékoldalon a kapcsolódó termékeket."
+msgstr "Akkor aktiválódik, amikor a vásárló termékek listáját tekinti meg, például az áruházoldalt vagy egy termékoldalon a kapcsolódó termékeket."
 
 #: src/Tracking/Events/GA4/View_Order_Event.php:51
 msgid "View Order"
@@ -1191,7 +1066,7 @@ msgstr "Rendelés megtekintése"
 #: src/Tracking/Events/GA4/View_Order_Event.php:60
 #: src/Tracking/Events/Universal_Analytics/Viewed_Order_Event.php:60
 msgid "Triggered when a customer views an order."
-msgstr "Akkor váltódik ki, amikor az ügyfél megtekint egy rendelést."
+msgstr "Akkor aktiválódik, amikor a vásárló megtekint egy rendelést."
 
 #: src/Tracking/Events/GA4/View_Sign_Up_Event.php:48
 msgid "View Sign Up"
@@ -1200,8 +1075,7 @@ msgstr "Regisztráció megtekintése"
 #: src/Tracking/Events/GA4/View_Sign_Up_Event.php:57
 #: src/Tracking/Events/Universal_Analytics/Viewed_Signup_Event.php:57
 msgid "Triggered when a customer views the registration form."
-msgstr ""
-"Akkor váltódik ki, amikor a vásárló megtekinti a regisztrációs űrlapot."
+msgstr "Akkor aktiválódik, amikor a vásárló megtekinti a regisztrációs űrlapot."
 
 #: src/Tracking/Events/Universal_Analytics/Added_To_Cart_Event.php:48
 msgid "Added to Cart"
@@ -1209,31 +1083,31 @@ msgstr "Kosárba helyezve"
 
 #: src/Tracking/Events/Universal_Analytics/Applied_Coupon_Event.php:51
 msgid "Applied Coupon"
-msgstr "Kupon alkalmazva"
+msgstr "Kupon alkalmazása"
 
 #: src/Tracking/Events/Universal_Analytics/Cancelled_Order_Event.php:50
 msgid "Cancelled Order"
-msgstr "Rendelés lemondva"
+msgstr "Rendelés lemondása"
 
 #: src/Tracking/Events/Universal_Analytics/Changed_Cart_Quantity_Event.php:47
 msgid "Changed Cart Quantity"
-msgstr "Kosár mennyisége módosítva"
+msgstr "Kosár mennyiségének módosítása"
 
 #: src/Tracking/Events/Universal_Analytics/Changed_Password_Event.php:51
 msgid "Changed Password"
-msgstr "Jelszó megváltoztatva"
+msgstr "Jelszó megváltoztatása"
 
 #: src/Tracking/Events/Universal_Analytics/Clicked_Product_Event.php:52
 msgid "Clicked Product"
-msgstr "Termékre kattintott"
+msgstr "Termékre kattintás"
 
 #: src/Tracking/Events/Universal_Analytics/Commented_Event.php:47
 msgid "Commented"
-msgstr "Hozzászólott"
+msgstr "Hozzászólás írása"
 
 #: src/Tracking/Events/Universal_Analytics/Completed_Purchase_Event.php:49
 msgid "Completed Purchase"
-msgstr "Vásárlás befejezve"
+msgstr "Vásárlás befejezése"
 
 #: src/Tracking/Events/Universal_Analytics/Estimated_Shipping_Event.php:50
 msgid "Estimated Shipping"
@@ -1241,7 +1115,7 @@ msgstr "Szállítási költség becslése"
 
 #: src/Tracking/Events/Universal_Analytics/Not_Found_Error_Event.php:50
 msgid "404 Error"
-msgstr "404 hiba"
+msgstr "404-es hiba"
 
 #: src/Tracking/Events/Universal_Analytics/Not_Found_Error_Event.php:59
 msgid "Triggered when a 404 (\"Not Found\") error occurs."
@@ -1253,31 +1127,31 @@ msgstr "Rendelés visszatérítve"
 
 #: src/Tracking/Events/Universal_Analytics/Placed_Order_Event.php:50
 msgid "Placed Order"
-msgstr "Rendelés leadva"
+msgstr "Rendelés leadása"
 
 #: src/Tracking/Events/Universal_Analytics/Provided_Billing_Email_Event.php:51
 msgid "Provided Billing Email"
-msgstr "Számlázási e-mail-cím megadva"
+msgstr "Számlázási e-mail-cím megadása"
 
 #: src/Tracking/Events/Universal_Analytics/Removed_Coupon_Event.php:51
 msgid "Removed Coupon"
-msgstr "Kupon eltávolítva"
+msgstr "Kupon eltávolítása"
 
 #: src/Tracking/Events/Universal_Analytics/Removed_From_Cart_Event.php:50
 msgid "Removed from Cart"
-msgstr "Eltávolítva a kosárból"
+msgstr "Eltávolítás a kosárból"
 
 #: src/Tracking/Events/Universal_Analytics/Reordered_Event.php:53
 msgid "Reordered"
-msgstr "Újra megrendelve"
+msgstr "Újrarendelés"
 
 #: src/Tracking/Events/Universal_Analytics/Selected_Payment_Method_Event.php:51
 msgid "Selected Payment Method"
-msgstr "Fizetési mód kiválasztva"
+msgstr "Fizetési mód kiválasztása"
 
 #: src/Tracking/Events/Universal_Analytics/Signed_In_Event.php:49
 msgid "Signed In"
-msgstr "Bejelentkezve"
+msgstr "Bejelentkezés"
 
 #: src/Tracking/Events/Universal_Analytics/Signed_In_Event.php:105
 #: src/Tracking/Events/Universal_Analytics/Started_Checkout_Event.php:99
@@ -1286,15 +1160,15 @@ msgstr "Regisztrált felhasználó"
 
 #: src/Tracking/Events/Universal_Analytics/Signed_Out_Event.php:50
 msgid "Signed Out"
-msgstr "Kijelentkezve"
+msgstr "Kijelentkezés"
 
 #: src/Tracking/Events/Universal_Analytics/Signed_Up_Event.php:50
 msgid "Signed Up"
-msgstr "Regisztrálva"
+msgstr "Regisztráció"
 
 #: src/Tracking/Events/Universal_Analytics/Started_Checkout_Event.php:51
 msgid "Started Checkout"
-msgstr "Pénztár megkezdve"
+msgstr "Pénztár megkezdése"
 
 #: src/Tracking/Events/Universal_Analytics/Started_Checkout_Event.php:99
 msgid "Guest"
@@ -1302,40 +1176,40 @@ msgstr "Vendég"
 
 #: src/Tracking/Events/Universal_Analytics/Started_Payment_Event.php:53
 msgid "Started Payment"
-msgstr "Fizetés megkezdve"
+msgstr "Fizetés megkezdése"
 
 #: src/Tracking/Events/Universal_Analytics/Tracked_Order_Event.php:51
 msgid "Tracked Order"
-msgstr "Rendelés követve"
+msgstr "Rendelés követése"
 
 #: src/Tracking/Events/Universal_Analytics/Updated_Address_Event.php:51
 msgid "Updated Address"
-msgstr "Cím frissítve"
+msgstr "Cím frissítése"
 
 #: src/Tracking/Events/Universal_Analytics/Viewed_Account_Event.php:51
 msgid "Viewed Account"
-msgstr "Fiók megtekintve"
+msgstr "Fiók megtekintése"
 
 #: src/Tracking/Events/Universal_Analytics/Viewed_Cart_Event.php:48
 msgid "Viewed Cart"
-msgstr "Kosár megtekintve"
+msgstr "Kosár megtekintése"
 
 #: src/Tracking/Events/Universal_Analytics/Viewed_Homepage_Event.php:51
 msgid "Viewed Homepage"
-msgstr "Főoldal megtekintve"
+msgstr "Főoldal megtekintése"
 
 #: src/Tracking/Events/Universal_Analytics/Viewed_Order_Event.php:51
 msgid "Viewed Order"
-msgstr "Rendelés megtekintve"
+msgstr "Rendelés megtekintése"
 
 #: src/Tracking/Events/Universal_Analytics/Viewed_Product_Event.php:48
 msgid "Viewed Product"
-msgstr "Termék megtekintve"
+msgstr "Termék megtekintése"
 
 #: src/Tracking/Events/Universal_Analytics/Viewed_Signup_Event.php:48
 msgid "Viewed Signup"
-msgstr "Regisztráció megtekintve"
+msgstr "Regisztráció megtekintése"
 
 #: src/Tracking/Events/Universal_Analytics/Wrote_Review_Event.php:47
 msgid "Wrote Review"
-msgstr "Véleményt írt"
+msgstr "Vélemény írása"

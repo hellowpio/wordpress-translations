@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: MainWP Team Control 5.0.3\n"
+"Project-Id-Version: MainWP Team Control 5.2\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T18:09:55+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,10 +18,10 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: MainWP Team Control\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 5.0.3\n"
+"X-Plugin-Version: 5.2\n"
 
 #. Plugin Name of the plugin
-#: mainwp-team-control.php
+#: mainwp-team-control.php class/mainwp-team-control-abilities.class.php:25
 msgid "MainWP Team Control"
 msgstr "MainWP Team Control"
 
@@ -37,593 +37,1449 @@ msgid ""
 "MainWP Team Control extension allows you to create a custom roles for your "
 "dashboard site users and limiting their access to MainWP features. Requires "
 "MainWP Dashboard plugin."
-msgstr ""
-"A MainWP Team Control kiegészítő lehetővé teszi egyéni szerepkörök "
-"létrehozását a vezérlőpult webhelyének felhasználói számára, és korlátozza a"
-" hozzáférésüket a MainWP funkcióihoz. A MainWP Dashboard bővítmény "
-"szükséges."
+msgstr "A MainWP Team Control kiterjesztés lehetővé teszi egyéni szerepkörök létrehozását a vezérlőpult webhelyének felhasználói számára, és korlátozza a hozzáférésüket a MainWP funkcióihoz. A MainWP vezérlőpult-bővítmény szükséges."
 
 #. Author of the plugin
 #: mainwp-team-control.php
 msgid "MainWP"
 msgstr "MainWP"
 
-#: class/mainwp-team-control-role.class.php:279
-msgid "Role name or role ID is empty."
-msgstr "A szerepkör neve vagy azonosítója üres."
+#: class/mainwp-team-control-abilities.class.php:26
+msgid "Protected role, grant, user, note, and reconciliation operations."
+msgstr "Védett szerepkör-, jogosultság-, felhasználó-, megjegyzés- és egyeztetési műveletek."
 
-#: class/mainwp-team-control-role.class.php:287
+#: class/mainwp-team-control-authority.class.php:20
+msgid "Team Control protected authority is unavailable."
+msgstr "A Team Control védett jogosultsági kezelője nem érhető el."
+
+#: class/mainwp-team-control-authority.class.php:25
+msgid "Team Control protected authority is malformed."
+msgstr "A Team Control védett jogosultsági kezelője hibás formátumú."
+
+#: class/mainwp-team-control-authority.class.php:30
+msgid "Team Control protected authority failed integrity validation."
+msgstr "A Team Control védett jogosultsági kezelőjének integritás-ellenőrzése sikertelen volt."
+
+#: class/mainwp-team-control-authority.class.php:39
+#: class/mainwp-team-control-authority.class.php:43
+msgid "Authentication is required."
+msgstr "Hitelesítés szükséges."
+
+#: class/mainwp-team-control-authority.class.php:51
+msgid "Access denied."
+msgstr "Hozzáférés megtagadva."
+
+#: class/mainwp-team-control-operations.class.php:36
+#: class/mainwp-team-control-operations.class.php:484
+msgid "Team Control storage is not ready."
+msgstr "A Team Control tárolója még nem áll készen."
+
+#: class/mainwp-team-control-operations.class.php:43
+msgid "Input must be an object."
+msgstr "A bemenetnek objektumnak kell lennie."
+
+#: class/mainwp-team-control-operations.class.php:46
+msgid "The input does not match the closed ability contract."
+msgstr "A bemenet nem felel meg a képességekre vonatkozó zárt szerződésnek."
+
+#: class/mainwp-team-control-operations.class.php:67
+msgid "The role reference is invalid."
+msgstr "A szerepkör-hivatkozás hibás."
+
+#: class/mainwp-team-control-operations.class.php:71
+msgid "The user reference is invalid."
+msgstr "A felhasználó-hivatkozás hibás."
+
+#: class/mainwp-team-control-operations.class.php:75
+#: class/mainwp-team-control-operations.class.php:1150
+msgid "Unknown Team Control action."
+msgstr "Ismeretlen Team Control-művelet."
+
+#: class/mainwp-team-control-operations.class.php:140
+#: class/mainwp-team-control-operations.class.php:157
+#: class/mainwp-team-control-operations.class.php:203
+#: class/mainwp-team-control-operations.class.php:228
+#: class/mainwp-team-control-operations.class.php:1718
+#: class/mainwp-team-control.class.php:977
+#: class/mainwp-team-control.class.php:1166
+#: class/mainwp-team-control.class.php:1370
+#: class/mainwp-team-control.class.php:1535
+msgid "Role not found."
+msgstr "Szerepkör nem található."
+
+#: class/mainwp-team-control-operations.class.php:181
+#: class/mainwp-team-control-operations.class.php:283
+#: class/mainwp-team-control-operations.class.php:307
+#: class/mainwp-team-control-operations.class.php:1737
+msgid "User not found."
+msgstr "A felhasználó nem található."
+
+#: class/mainwp-team-control-operations.class.php:240
+msgid "A reassignment is invalid."
+msgstr "Az újbóli hozzárendelés hibás."
+
+#: class/mainwp-team-control-operations.class.php:345
+#: class/mainwp-team-control-operations.class.php:1100
+msgid "The requested user is protected."
+msgstr "A kért felhasználó védett."
+
+#: class/mainwp-team-control-operations.class.php:355
+msgid "The requested user changed or is protected."
+msgstr "A kért felhasználó megváltozott vagy védett."
+
+#: class/mainwp-team-control-operations.class.php:394
+msgid "The role or its assignees changed."
+msgstr "A szerepkör vagy a hozzá rendelt felhasználók megváltoztak."
+
+#: class/mainwp-team-control-operations.class.php:401
+msgid "The complete assignee set changed."
+msgstr "A hozzárendelt felhasználók teljes köre megváltozott."
+
+#: class/mainwp-team-control-operations.class.php:408
+msgid "An assignee is protected or unavailable."
+msgstr "Egy hozzárendelt felhasználó védett vagy nem érhető el."
+
+#: class/mainwp-team-control-operations.class.php:443
+msgid "The target role set is invalid."
+msgstr "A célként megadott szerepkörök halmaza hibás."
+
+#: class/mainwp-team-control-operations.class.php:448
+msgid "A target role is invalid or protected."
+msgstr "Egy célként megadott szerepkör hibás vagy védett."
+
+#: class/mainwp-team-control-operations.class.php:454
+msgid "A target role is unavailable."
+msgstr "Egy célként megadott szerepkör nem érhető el."
+
+#: class/mainwp-team-control-operations.class.php:514
+#: class/mainwp-team-control-operations.class.php:520
+msgid "The legacy mutation outcome could not be proven."
+msgstr "A régi módosítás eredménye nem igazolható."
+
+#: class/mainwp-team-control-operations.class.php:524
+msgid "The legacy mutation committed, but lock release could not be proven."
+msgstr "A régi módosítás végrehajtása megtörtént, de a zárolás feloldása nem igazolható."
+
+#: class/mainwp-team-control-operations.class.php:533
+#: class/mainwp-team-control-operations.class.php:538
+msgid "The capability selection is invalid."
+msgstr "A képesség kijelölése hibás."
+
+#: class/mainwp-team-control-operations.class.php:722
+msgid "The preview token is stale or invalid."
+msgstr "Az előnézeti token elavult vagy hibás."
+
+#: class/mainwp-team-control-operations.class.php:738
+#: class/mainwp-team-control-operations.class.php:802
+msgid "The request reference was already used for another effect."
+msgstr "A kérés hivatkozását már felhasználták egy másik művelethez."
+
+#: class/mainwp-team-control-operations.class.php:747
+msgid "The target changed after preview."
+msgstr "A cél az előnézet megtekintése után megváltozott."
+
+#: class/mainwp-team-control-operations.class.php:775
+#: class/mainwp-team-control-operations.class.php:781
+msgid "The mutation outcome could not be proven."
+msgstr "A módosítás eredménye nem igazolható."
+
+#: class/mainwp-team-control-operations.class.php:785
+msgid "The mutation committed, but lock release could not be proven."
+msgstr "A módosítás végrehajtása megtörtént, de a zárolás feloldása nem igazolható."
+
+#: class/mainwp-team-control-operations.class.php:824
+#: class/mainwp-team-control-operations.class.php:829
+msgid "The mutation input is incomplete or contains unknown fields."
+msgstr "A módosítás bemenete hiányos vagy ismeretlen mezőket tartalmaz."
+
+#: class/mainwp-team-control-operations.class.php:832
+#: class/mainwp-team-control-operations.class.php:838
+msgid "Exactly one of dry_run or confirm must be true."
+msgstr "A dry_run és a confirm közül pontosan az egyiknek kell true értékűnek lennie."
+
+#: class/mainwp-team-control-operations.class.php:841
+msgid "The preview token is invalid."
+msgstr "Az előnézeti token hibás."
+
+#: class/mainwp-team-control-operations.class.php:945
+msgid "Mutation compensation could not be proven."
+msgstr "A módosítás visszaállításának sikeressége nem volt igazolható."
+
+#: class/mainwp-team-control-operations.class.php:1027
+msgid ""
+"Role names and descriptions must be plain text: no HTML, no line breaks and "
+"no repeated spaces."
+msgstr "A szerepkörök neve és leírása csak egyszerű szöveg lehet: HTML-kód, sortörés és ismétlődő szóköz nem szerepelhet bennük."
+
+#: class/mainwp-team-control-operations.class.php:1032
+msgid "The capability catalog changed."
+msgstr "A jogosultságok katalógusa megváltozott."
+
+#: class/mainwp-team-control-operations.class.php:1046
+msgid "The role changed."
+msgstr "A szerepkör megváltozott."
+
+#: class/mainwp-team-control-operations.class.php:1059
+msgid "The complete assignee set was not supplied."
+msgstr "Nem adta meg a teljes hozzárendelt felhasználói listát."
+
+#: class/mainwp-team-control-operations.class.php:1065
+msgid "A reassignment is malformed."
+msgstr "Az újbóli hozzárendelés hibás formátumú."
+
+#: class/mainwp-team-control-operations.class.php:1069
+msgid "An assignee is protected, duplicated, or stale."
+msgstr "Egy hozzárendelt felhasználó védett, többször szerepel vagy elavult."
+
+#: class/mainwp-team-control-operations.class.php:1073
+#: class/mainwp-team-control-operations.class.php:1236
+msgid "A deleted role cannot remain assigned."
+msgstr "Törölt szerepkör nem maradhat hozzárendelve."
+
+#: class/mainwp-team-control-operations.class.php:1104
+msgid "The user changed."
+msgstr "A felhasználó megváltozott."
+
+#: class/mainwp-team-control-operations.class.php:1118
+#: class/mainwp-team-control-operations.class.php:1277
+msgid "The note is too long."
+msgstr "A megjegyzés túl hosszú."
+
+#: class/mainwp-team-control-operations.class.php:1125
+msgid "The delete or reassignment target is protected."
+msgstr "A törlés vagy az újbóli hozzárendelés célpontja védett."
+
+#: class/mainwp-team-control-operations.class.php:1190
+msgid "The role representations disagree."
+msgstr "A szerepkör megjelenítései nem egyeznek."
+
+#: class/mainwp-team-control-operations.class.php:1206
+#: class/mainwp-team-control-operations.class.php:1209
+msgid "Role compensation is incomplete."
+msgstr "A szerepkör visszaállításához szükséges adatok hiányosak."
+
+#: class/mainwp-team-control-operations.class.php:1232
+msgid "An assignee is protected or stale."
+msgstr "Egy hozzárendelt felhasználó védett vagy elavult."
+
+#: class/mainwp-team-control-operations.class.php:1347
+msgid "The WordPress role is missing."
+msgstr "Hiányzik a WordPress-szerepkör."
+
+#: class/mainwp-team-control-operations.class.php:1352
+msgid "The WordPress role representation is not safe to import."
+msgstr "A WordPress-szerepkör megjelenítése nem biztonságos az importáláshoz."
+
+#: class/mainwp-team-control-operations.class.php:1417
+msgid ""
+"This site defines its WordPress roles in code, so Team Control cannot "
+"create, change or delete roles here."
+msgstr "Ez a webhely kódban határozza meg a WordPress-szerepköröket, ezért a Team Control itt nem tud szerepköröket létrehozni, módosítani vagy törölni."
+
+#: class/mainwp-team-control-operations.class.php:1643
+msgid "Grants must be an array."
+msgstr "A jogosultságokat tartalmazó értéknek tömbnek kell lennie."
+
+#: class/mainwp-team-control-operations.class.php:1652
+msgid "A grant is malformed."
+msgstr "Egy jogosultság hibás formátumú."
+
+#: class/mainwp-team-control-operations.class.php:1656
+msgid "A grant is unavailable or duplicated."
+msgstr "Egy jogosultság nem érhető el vagy többször szerepel."
+
+#: class/mainwp-team-control-operations.class.php:1861
+msgid "A role is unavailable."
+msgstr "Egy szerepkör nem érhető el."
+
+#: class/mainwp-team-control-operations.class.php:1999
+#: class/mainwp-team-control-transactions.class.php:55
+#: class/mainwp-team-control-transactions.class.php:69
+#: class/mainwp-team-control-transactions.class.php:74
+#: class/mainwp-team-control-transactions.class.php:87
+#: class/mainwp-team-control-transactions.class.php:92
+#: class/mainwp-team-control-transactions.class.php:146
+#: class/mainwp-team-control-transactions.class.php:150
+#: class/mainwp-team-control-transactions.class.php:157
+msgid "Team Control storage is unavailable."
+msgstr "A Team Control tárhelye nem érhető el."
+
+#: class/mainwp-team-control-role.class.php:386
+msgid "Role name or role ID is empty."
+msgstr "A szerepkör neve vagy ID-ja üres."
+
+#: class/mainwp-team-control-role.class.php:394
 msgid ""
 "Role ID must contain latin characters, digits, hyphens or underscore only! "
 "Special charactes are not allowed."
-msgstr ""
-"A szerepkör azonosítója csak latin betűket, számjegyeket, kötőjelet vagy "
-"aláhúzásjelet tartalmazhat! Különleges karakterek nem engedélyezettek."
+msgstr "A szerepkörhöz tartozó ID csak latin betűket, számjegyeket, kötőjelet vagy aláhúzásjelet tartalmazhat! Különleges karakterek nem engedélyezettek."
 
-#: class/mainwp-team-control-role.class.php:294
+#: class/mainwp-team-control-role.class.php:401
 msgid ""
 "WordPress does not support numeric Role name (ID). Use latin characters."
-msgstr ""
-"A WordPress nem támogatja a numerikus szerepkörnevet (azonosítót). "
-"Használjon latin betűket."
+msgstr "A WordPress nem támogatja a numerikus szerepkörnevet (ID-t). Használjon latin betűket."
 
-#: class/mainwp-team-control-role.class.php:304
+#: class/mainwp-team-control-role.class.php:411
 #, php-format
 msgid "%s role already exists."
 msgstr "A(z) %s szerepkör már létezik."
 
-#: class/mainwp-team-control-role.class.php:313
+#: class/mainwp-team-control-role.class.php:420
 msgid ""
 "Error encountered during the process of new role creation. Please try again."
 msgstr ""
 "Hiba történt az új szerepkör létrehozása során. Kérjük, próbálja meg újra."
 
-#: class/mainwp-team-control-role.class.php:315
+#: class/mainwp-team-control-role.class.php:422
 #, php-format
 msgid "%s role created successfully."
 msgstr "A(z) %s szerepkör sikeresen létrehozva."
 
-#: class/mainwp-team-control-role.class.php:336
+#: class/mainwp-team-control-role.class.php:443
 msgid "Role could not be found."
 msgstr "A szerepkör nem található."
 
-#: class/mainwp-team-control-role.class.php:407
+#: class/mainwp-team-control-role.class.php:518
 msgid "Sites"
 msgstr "Webhelyek"
 
-#: class/mainwp-team-control-role.class.php:409
+#: class/mainwp-team-control-role.class.php:520
 msgid "Add Sites"
 msgstr "Webhelyek hozzáadása"
 
-#: class/mainwp-team-control-role.class.php:410
+#: class/mainwp-team-control-role.class.php:521
 msgid "Manage Site Settings"
 msgstr "Webhelybeállítások kezelése"
 
-#: class/mainwp-team-control-role.class.php:411
+#: class/mainwp-team-control-role.class.php:522
 msgid "Delete Sites"
 msgstr "Webhelyek törlése"
 
-#: class/mainwp-team-control-role.class.php:412
+#: class/mainwp-team-control-role.class.php:523
 msgid "Access Site Overview"
 msgstr "Hozzáférés a webhely áttekintéséhez"
 
-#: class/mainwp-team-control-role.class.php:413
+#: class/mainwp-team-control-role.class.php:524
 msgid "Access WP Admin"
 msgstr "Hozzáférés a WP Adminhoz"
 
-#: class/mainwp-team-control-role.class.php:414
+#: class/mainwp-team-control-role.class.php:525
 msgid "Manage Site Hardening"
-msgstr "Webhely biztonsági megerősítésének kezelése"
+msgstr "Webhelybiztonság megerősítésének kezelése"
 
-#: class/mainwp-team-control-role.class.php:415
+#: class/mainwp-team-control-role.class.php:526
 msgid "Test Connection"
 msgstr "Kapcsolat tesztelése"
 
-#: class/mainwp-team-control-role.class.php:416
+#: class/mainwp-team-control-role.class.php:527
 msgid "Monitor Sites"
 msgstr "Webhelyek figyelése"
 
-#: class/mainwp-team-control-role.class.php:420
-msgid "Clients"
-msgstr "Ügyfelek"
-
-#: class/mainwp-team-control-role.class.php:422
-msgid "Manage Clients"
-msgstr "Ügyfelek kezelése"
-
-#: class/mainwp-team-control-role.class.php:426
-msgid "Backups (Legacy)"
-msgstr "Biztonsági mentések (örökölt)"
-
-#: class/mainwp-team-control-role.class.php:428
-msgid "Execute Backups"
-msgstr "Biztonsági mentések végrehajtása"
-
-#: class/mainwp-team-control-role.class.php:429
-msgid "Restore Backups"
-msgstr "Biztonsági mentések visszaállítása"
-
-#: class/mainwp-team-control-role.class.php:430
-msgid "Download Backups"
-msgstr "Biztonsági mentések letöltése"
-
-#: class/mainwp-team-control-role.class.php:431
-msgid "Add Backup Tasks"
-msgstr "Biztonsági mentési feladatok hozzáadása"
-
-#: class/mainwp-team-control-role.class.php:432
-msgid "Edit Backup Tasks"
-msgstr "Biztonsági mentési feladatok szerkesztése"
-
-#: class/mainwp-team-control-role.class.php:433
-msgid "Delete Backup Tasks"
-msgstr "Biztonsági mentési feladatok törlése"
-
-#: class/mainwp-team-control-role.class.php:434
-msgid "Pause/Resume Backup Tasks"
-msgstr "Biztonsági mentési feladatok szüneteltetése/folytatása"
-
-#: class/mainwp-team-control-role.class.php:435
-msgid "Run Backup Tasks"
-msgstr "Biztonsági mentési feladatok futtatása"
-
-#: class/mainwp-team-control-role.class.php:440
-msgid "Plugins"
-msgstr "Bővítmények"
-
-#: class/mainwp-team-control-role.class.php:442
-msgid "Install Plugins"
-msgstr "Bővítmények telepítése"
-
-#: class/mainwp-team-control-role.class.php:443
-msgid "Delete Plugins"
-msgstr "Bővítmények törlése"
-
-#: class/mainwp-team-control-role.class.php:444
-msgid "Activate/Deactivate Plugins"
-msgstr "Bővítmények aktiválása/deaktiválása"
-
-#: class/mainwp-team-control-role.class.php:449
-msgid "Themes"
-msgstr "Sablonok"
-
-#: class/mainwp-team-control-role.class.php:451
-msgid "Install Themes"
-msgstr "Sablonok telepítése"
-
-#: class/mainwp-team-control-role.class.php:452
-msgid "Delete Themes"
-msgstr "Sablonok törlése"
-
-#: class/mainwp-team-control-role.class.php:453
-msgid "Activate Themes"
-msgstr "Sablonok aktiválása"
-
-#: class/mainwp-team-control-role.class.php:458
-msgid "Updates"
-msgstr "Frissítések"
-
-#: class/mainwp-team-control-role.class.php:460
-msgid "Update WordPress"
-msgstr "WordPress frissítése"
-
-#: class/mainwp-team-control-role.class.php:461
-msgid "Update Plugins"
-msgstr "Bővítmények frissítése"
-
-#: class/mainwp-team-control-role.class.php:462
-msgid "Update Themes"
-msgstr "Sablonok frissítése"
-
-#: class/mainwp-team-control-role.class.php:463
-msgid "Update Translations"
-msgstr "Fordítások frissítése"
-
-#: class/mainwp-team-control-role.class.php:464
-msgid "Ignore/Unignore Updates"
-msgstr "Frissítések mellőzése/Mellőzés visszavonása"
-
-#: class/mainwp-team-control-role.class.php:465
-msgid "Trust/Untrust Updates"
-msgstr "Frissítések megbízhatónak/nem megbízhatónak jelölése"
-
-#: class/mainwp-team-control-role.class.php:470
-msgid "Content"
-msgstr "Tartalom"
-
-#: class/mainwp-team-control-role.class.php:472
-msgid "Manage Posts"
-msgstr "Bejegyzések kezelése"
-
-#: class/mainwp-team-control-role.class.php:473
-msgid "Manage Pages"
-msgstr "Oldalak kezelése"
-
-#: class/mainwp-team-control-role.class.php:474
-msgid "Manage Users"
-msgstr "Felhasználók kezelése"
-
-#: class/mainwp-team-control-role.class.php:475
+#: class/mainwp-team-control-role.class.php:528
 msgid "Manage Tags"
 msgstr "Címkék kezelése"
 
-#: class/mainwp-team-control-role.class.php:476
-#: class/mainwp-team-control-role.class.php:507
-msgid "Manage Add-ons"
-msgstr "Kiegészítők kezelése"
+#: class/mainwp-team-control-role.class.php:532
+msgid "Clients"
+msgstr "Ügyfelek"
 
-#: class/mainwp-team-control-role.class.php:481
+#: class/mainwp-team-control-role.class.php:534
+msgid "Manage Clients"
+msgstr "Ügyfelek kezelése"
+
+#: class/mainwp-team-control-role.class.php:538
+msgid "API Backups"
+msgstr "API-biztonsági mentések"
+
+#: class/mainwp-team-control-role.class.php:540
+msgid "Manage API Backups"
+msgstr "API-mentések kezelése"
+
+#: class/mainwp-team-control-role.class.php:544
+msgid "Backups"
+msgstr "Biztonsági mentések"
+
+#: class/mainwp-team-control-role.class.php:546
+msgid "Execute Backups"
+msgstr "Biztonsági mentések végrehajtása"
+
+#: class/mainwp-team-control-role.class.php:547
+msgid "Restore Backups"
+msgstr "Biztonsági mentések visszaállítása"
+
+#: class/mainwp-team-control-role.class.php:548
+msgid "Download Backups"
+msgstr "Biztonsági mentések letöltése"
+
+#: class/mainwp-team-control-role.class.php:549
+msgid "Add Backup Tasks"
+msgstr "Biztonsági mentési feladatok hozzáadása"
+
+#: class/mainwp-team-control-role.class.php:550
+msgid "Edit Backup Tasks"
+msgstr "Biztonsági mentési feladatok szerkesztése"
+
+#: class/mainwp-team-control-role.class.php:551
+msgid "Delete Backup Tasks"
+msgstr "Biztonsági mentési feladatok törlése"
+
+#: class/mainwp-team-control-role.class.php:552
+msgid "Pause/Resume Backup Tasks"
+msgstr "Biztonsági mentési feladatok szüneteltetése/folytatása"
+
+#: class/mainwp-team-control-role.class.php:553
+msgid "Run Backup Tasks"
+msgstr "Biztonsági mentési feladatok futtatása"
+
+#: class/mainwp-team-control-role.class.php:557
+msgid "Plugins"
+msgstr "Bővítmények"
+
+#: class/mainwp-team-control-role.class.php:559
+msgid "Install Plugins"
+msgstr "Bővítmények telepítése"
+
+#: class/mainwp-team-control-role.class.php:560
+msgid "Delete Plugins"
+msgstr "Bővítmények törlése"
+
+#: class/mainwp-team-control-role.class.php:561
+msgid "Activate/Deactivate Plugins"
+msgstr "Bővítmények aktiválása/deaktiválása"
+
+#: class/mainwp-team-control-role.class.php:565
+msgid "Themes"
+msgstr "Sablonok"
+
+#: class/mainwp-team-control-role.class.php:567
+msgid "Install Themes"
+msgstr "Sablonok telepítése"
+
+#: class/mainwp-team-control-role.class.php:568
+msgid "Delete Themes"
+msgstr "Sablonok törlése"
+
+#: class/mainwp-team-control-role.class.php:569
+msgid "Activate Themes"
+msgstr "Sablonok aktiválása"
+
+#: class/mainwp-team-control-role.class.php:573
+msgid "Updates"
+msgstr "Frissítések"
+
+#: class/mainwp-team-control-role.class.php:575
+msgid "Update WordPress"
+msgstr "WordPress frissítése"
+
+#: class/mainwp-team-control-role.class.php:576
+msgid "Update Plugins"
+msgstr "Bővítmények frissítése"
+
+#: class/mainwp-team-control-role.class.php:577
+msgid "Update Themes"
+msgstr "Sablonok frissítése"
+
+#: class/mainwp-team-control-role.class.php:578
+msgid "Update Translations"
+msgstr "Fordítások frissítése"
+
+#: class/mainwp-team-control-role.class.php:579
+msgid "Ignore/Unignore Updates"
+msgstr "Frissítések mellőzése/Mellőzés visszavonása"
+
+#: class/mainwp-team-control-role.class.php:580
+msgid "Trust/Untrust Updates"
+msgstr "Frissítések megbízhatónak/nem megbízhatónak jelölése"
+
+#: class/mainwp-team-control-role.class.php:584
+msgid "Content"
+msgstr "Tartalom"
+
+#: class/mainwp-team-control-role.class.php:586
+msgid "Manage Posts"
+msgstr "Bejegyzések kezelése"
+
+#: class/mainwp-team-control-role.class.php:587
+msgid "Manage Pages"
+msgstr "Oldalak kezelése"
+
+#: class/mainwp-team-control-role.class.php:588
+msgid "Manage Users"
+msgstr "Felhasználók kezelése"
+
+#: class/mainwp-team-control-role.class.php:592
 msgid "Access"
 msgstr "Hozzáférés"
 
-#: class/mainwp-team-control-role.class.php:483
+#: class/mainwp-team-control-role.class.php:594
 msgid "Access MainWP Settings"
 msgstr "Hozzáférés a MainWP beállításaihoz"
 
-#: class/mainwp-team-control-role.class.php:484
+#: class/mainwp-team-control-role.class.php:595
 msgid "Access Overview"
 msgstr "Hozzáférés az áttekintéshez"
 
-#: class/mainwp-team-control-role.class.php:485
+#: class/mainwp-team-control-role.class.php:596
 msgid "Access System Info"
 msgstr "Hozzáférés a rendszerinformációkhoz"
 
-#: class/mainwp-team-control-role.class.php:489
+#: class/mainwp-team-control-role.class.php:600
 msgid "Cost Tracker"
 msgstr "Költségkövető"
 
-#: class/mainwp-team-control-role.class.php:491
+#: class/mainwp-team-control-role.class.php:602
 msgid "Access Cost Summary"
 msgstr "Hozzáférés a költségösszegzéshez"
 
-#: class/mainwp-team-control-role.class.php:492
+#: class/mainwp-team-control-role.class.php:603
 msgid "Access Manage Costs"
 msgstr "Hozzáférés a költségek kezeléséhez"
 
-#: class/mainwp-team-control-role.class.php:493
+#: class/mainwp-team-control-role.class.php:604
 msgid "Edit Costs"
 msgstr "Költségek szerkesztése"
 
-#: class/mainwp-team-control-role.class.php:494
+#: class/mainwp-team-control-role.class.php:605
 msgid "Add Costs"
 msgstr "Költségek hozzáadása"
 
-#: class/mainwp-team-control-role.class.php:495
+#: class/mainwp-team-control-role.class.php:606
 msgid "Delete Costs"
 msgstr "Költségek törlése"
 
-#: class/mainwp-team-control-role.class.php:496
+#: class/mainwp-team-control-role.class.php:607
 msgid "Manage Cost Tracker Settings"
 msgstr "Költségkövető beállításainak kezelése"
 
-#: class/mainwp-team-control-role.class.php:500
+#: class/mainwp-team-control-role.class.php:611
 msgid "Sites Changes"
 msgstr "Webhelyek változásai"
 
-#: class/mainwp-team-control-role.class.php:502
+#: class/mainwp-team-control-role.class.php:613
 msgid "Manage Insights Actions"
 msgstr "Elemzések műveleteinek kezelése"
 
-#: class/mainwp-team-control-role.class.php:503
+#: class/mainwp-team-control-role.class.php:614
 msgid "Access Insights Dashboard"
-msgstr "Hozzáférés az Elemzések irányítópultjához"
+msgstr "Hozzáférés az Elemzések vezérlőpultjához"
 
-#: class/mainwp-team-control-role.class.php:509
-msgid "Bulk Install and Activate Add-ons"
-msgstr "Kiegészítők tömeges telepítése és aktiválása"
+#: class/mainwp-team-control-role.class.php:618
+#: class/mainwp-team-control-role.class.php:620
+msgid "Manage Add-ons"
+msgstr "Kiegészítők kezelése"
 
-#: class/mainwp-team-control.class.php:51
-msgid "Manage Dashboard Users"
-msgstr "Irányítópult felhasználóinak kezelése"
+#: class/mainwp-team-control-role.class.php:621
+msgid "Install and Activate Add-ons"
+msgstr "Kiegészítők telepítése és bekapcsolása"
 
-#: class/mainwp-team-control.class.php:52
+#: class/mainwp-team-control-role.class.php:628
+msgid "Abilities and MCP"
+msgstr "Képességek és MCP"
+
+#: class/mainwp-team-control-role.class.php:630
+msgid "Use MainWP abilities and MCP"
+msgstr "MainWP-képességek és MCP használata"
+
+#: class/mainwp-team-control-role.class.php:634
+msgid "API Keys"
+msgstr "API-kulcsok"
+
+#: class/mainwp-team-control-role.class.php:636
+msgid "Manage API Keys"
+msgstr "API-kulcsok kezelése"
+
+#: class/mainwp-team-control-role.class.php:637
+msgid "Create API Keys"
+msgstr "API-kulcsok létrehozása"
+
+#: class/mainwp-team-control-role.class.php:638
+msgid "Edit API Keys"
+msgstr "API-kulcsok szerkesztése"
+
+#: class/mainwp-team-control-role.class.php:639
+msgid "Delete API Keys"
+msgstr "API-kulcsok törlése"
+
+#: class/mainwp-team-control-role.class.php:643
+msgid "Application Passwords"
+msgstr "Alkalmazásjelszavak"
+
+#: class/mainwp-team-control-role.class.php:645
+msgid "Manage Application Passwords"
+msgstr "Alkalmazásjelszavak kezelése"
+
+#: class/mainwp-team-control-role.class.php:646
+msgid "See All Application Passwords"
+msgstr "Összes alkalmazásjelszó megtekintése"
+
+#: class/mainwp-team-control-role.class.php:647
+msgid "Create Application Passwords"
+msgstr "Alkalmazásjelszavak létrehozása"
+
+#: class/mainwp-team-control-role.class.php:648
+msgid "Edit Application Passwords"
+msgstr "Alkalmazásjelszavak szerkesztése"
+
+#: class/mainwp-team-control-role.class.php:649
+msgid "Revoke Application Passwords"
+msgstr "Alkalmazásjelszavak visszavonása"
+
+#: class/mainwp-team-control-transactions.class.php:77
+msgid "Team Control configuration is busy."
+msgstr "A Team Control konfigurációja foglalt."
+
+#: class/mainwp-team-control-utility.class.php:36
+msgid "Nothing to show here!"
+msgstr "Itt nincs megjeleníthető tartalom!"
+
+#: class/mainwp-team-control-utility.class.php:41
+msgid "Check back later."
+msgstr "Nézzen vissza később."
+
+#: class/mainwp-team-control.class.php:81
+#: class/mainwp-team-control.class.php:84
+msgid "Team Control is waiting for an owner"
+msgstr "A Team Control tulajdonosra vár"
+
+#: class/mainwp-team-control.class.php:88
+msgid ""
+"Team Control cannot finish its update because none of its registered owners "
+"can act as an owner any more. An owner is an administrator who has no Team "
+"Control role. Until an owner exists, Team Control roles keep working as they"
+" did before the update."
+msgstr "A Team Control nem tudja befejezni a frissítést, mert a regisztrált tulajdonosok közül már egyik sem járhat el tulajdonosként. A tulajdonos olyan adminisztrátor, akihez nincs Team Control-szerepkör rendelve. Amíg nincs tulajdonos, a Team Control-szerepkörök a frissítés előtti módon működnek tovább."
+
+#: class/mainwp-team-control.class.php:90
+msgid ""
+"Team Control cannot finish its update because no administrator on this "
+"Dashboard can be a Team Control owner. An owner is an administrator who has "
+"no Team Control role. Until an owner exists, Team Control roles keep working"
+" as they did before the update."
+msgstr "A Team Control nem tudja befejezni a frissítést, mert ezen a vezérlőpulton egyetlen adminisztrátor sem lehet Team Control-tulajdonos. A tulajdonos olyan adminisztrátor, akihez nincs Team Control-szerepkör rendelve. Amíg nincs tulajdonos, a Team Control-szerepkörök a frissítés előtti módon működnek tovább."
+
+#: class/mainwp-team-control.class.php:95
+msgid ""
+"Remove the Team Control role from a registered owner, then open wp-admin "
+"again. To make another administrator the owner instead, add that account "
+"with WP-CLI:"
+msgstr "Távolítsa el a Team Control-szerepkört egy regisztrált tulajdonostól, majd nyissa meg újra a wp-admin felületet. Ha inkább egy másik adminisztrátort tenne meg tulajdonosnak, adja hozzá azt a fiókot a WP-CLI használatával:"
+
+#: class/mainwp-team-control.class.php:97
+msgid ""
+"Remove the Team Control role from one administrator account, then open wp-"
+"admin again. If this notice is still here, add that account as an owner with"
+" WP-CLI:"
+msgstr "Távolítsa el a Team Control-szerepkört az egyik adminisztrátori fiókból, majd nyissa meg újra a wp-admin felületet. Ha ez az értesítés továbbra is látható, adja hozzá azt a fiókot tulajdonosként a WP-CLI használatával:"
+
+#: class/mainwp-team-control.class.php:99
+msgid ""
+"wp mainwp team-control-owner prepare --action=add --user_id=<user ID> "
+"--user=<administrator login>"
+msgstr "wp mainwp team-control-owner prepare --action=add --user_id=<user ID> --user=<administrator login>"
+
+#: class/mainwp-team-control.class.php:100
+msgid "then"
+msgstr "majd"
+
+#: class/mainwp-team-control.class.php:101
+msgid ""
+"wp mainwp team-control-owner apply --confirmation=<token> "
+"--user=<administrator login>"
+msgstr "wp mainwp team-control-owner apply --confirmation=<token> --user=<administrator login>"
+
+#: class/mainwp-team-control.class.php:126
+msgid "Team Control roles are on hold"
+msgstr "A Team Control-szerepkörök felfüggesztve"
+
+#. translators: %s: comma-separated list of role names.
+#: class/mainwp-team-control.class.php:134
+#, php-format
+msgid "This update put the following Team Control roles on hold: %s."
+msgstr "Ez a frissítés a következő Team Control-szerepköröket függesztette fel: %s."
+
+#. translators: %s: number of quarantined roles not listed above.
+#: class/mainwp-team-control.class.php:142
+#, php-format
+msgid "%s more role is also on hold."
+msgid_plural "%s more roles are also on hold."
+msgstr[0] "További %s szerepkör is felfüggesztve."
+msgstr[1] "További %s szerepkör is felfüggesztve."
+
+#: class/mainwp-team-control.class.php:147
+msgid "A role on hold grants no permissions until you restore or update it."
+msgstr "A felfüggesztett szerepkör nem ad jogosultságokat, amíg vissza nem állítja vagy frissíti."
+
+#: class/mainwp-team-control.class.php:150
+msgid ""
+"The Roles list marks each role on hold and shows what you can do with it. "
+"Where Restore as saved is offered, it brings the role back with its saved "
+"permissions. To change the permissions first, open the role and click Update"
+" Role."
+msgstr "A szerepkörök listája jelzi, mely szerepkörök vannak felfüggesztve, és megmutatja, mit tehet velük. Ha elérhető a „Mentett állapot visszaállítása” lehetőség, az a mentett jogosultságokkal állítja vissza a szerepkört. Ha előbb módosítani szeretné a jogosultságokat, nyissa meg a szerepkört, és kattintson a „Szerepkör frissítése” gombra."
+
+#: class/mainwp-team-control.class.php:151
+#: class/mainwp-team-control.class.php:286
+msgid "Go to Roles and Permissions"
+msgstr "Ugrás a szerepkörökhöz és jogosultságokhoz"
+
+#: class/mainwp-team-control.class.php:152
+#: class/mainwp-team-control.class.php:287
+msgid "Dismiss"
+msgstr "Bezárás"
+
+#: class/mainwp-team-control.class.php:260
+msgid "Team Control roles were updated"
+msgstr "A Team Control-szerepkörök frissítve"
+
+#. translators: %s: comma-separated list of role names.
+#: class/mainwp-team-control.class.php:268
+#, php-format
+msgid ""
+"This update moved the following Team Control roles to the new permission "
+"format: %s."
+msgstr "A frissítés a következő Team Control-szerepköröket helyezte át az új jogosultságformátumba: %s."
+
+#. translators: %s: number of migrated roles not listed above.
+#: class/mainwp-team-control.class.php:276
+#, php-format
+msgid "%s more role was also updated."
+msgid_plural "%s more roles were also updated."
+msgstr[0] "További %s szerepkör is frissült."
+msgstr[1] "További %s szerepkör is frissült."
+
+#: class/mainwp-team-control.class.php:281
+msgid ""
+"Users with these roles keep the MainWP permissions that were saved for them."
+" They no longer have WordPress administrator access."
+msgstr "Az ezekkel a szerepkörökkel rendelkező felhasználók megtartják a számukra mentett MainWP-jogosultságokat. Többé nem rendelkeznek WordPress-adminisztrátori hozzáféréssel."
+
+#: class/mainwp-team-control.class.php:284
+msgid "To check what a role grants, open it in Roles and Permissions."
+msgstr "Ha ellenőrizni szeretné, hogy egy szerepkör milyen jogosultságokat biztosít, nyissa meg a szerepkört a Szerepkörök és jogosultságok oldalon."
+
+#: class/mainwp-team-control.class.php:285
+msgid ""
+"Each role listed here has the Use MainWP abilities and MCP permission, "
+"because its users could call abilities before the update. To remove it, open"
+" the role, untick it and click Update Role."
+msgstr "Az itt felsorolt szerepkörök mindegyikéhez hozzá van rendelve a „MainWP-képességek és MCP használata” jogosultság, mivel a felhasználóik a frissítés előtt képességeket hívhattak meg. A jogosultság eltávolításához nyissa meg a szerepkört, törölje a jelölést, majd kattintson a „Szerepkör frissítése” gombra."
+
+#: class/mainwp-team-control.class.php:352
+msgid "Only a Team Control owner can manage roles and users."
+msgstr "A szerepköröket és a felhasználókat csak a Team Control tulajdonosa kezelheti."
+
+#: class/mainwp-team-control.class.php:366
+msgid ""
+"Only a Team Control owner can manage roles and users. This Dashboard has no "
+"Team Control owner on record."
+msgstr "A szerepköröket és a felhasználókat csak a Team Control tulajdonosa kezelheti. Ehhez a vezérlőpulthoz nincs Team Control-tulajdonos rögzítve."
+
+#. translators: %s: number of other owners.
+#: class/mainwp-team-control.class.php:373
+#, php-format
+msgid "and %s more"
+msgid_plural "and %s more"
+msgstr[0] "és még %s"
+msgstr[1] "és még %s"
+
+#. translators: %s: owner display names.
+#: class/mainwp-team-control.class.php:379
+#, php-format
+msgid "Only a Team Control owner can manage roles and users. Owner: %s."
+msgstr "A szerepeket és a felhasználókat csak a Team Control tulajdonosa kezelheti. Tulajdonos: %s."
+
+#. translators: %s: owner display names.
+#: class/mainwp-team-control.class.php:379
+#, php-format
+msgid "Only a Team Control owner can manage roles and users. Owners: %s."
+msgstr "A szerepeket és a felhasználókat csak a Team Control tulajdonosa kezelheti. Tulajdonosok: %s."
+
+#: class/mainwp-team-control.class.php:416
+msgid "Dashboard Users"
+msgstr "Vezérlőpult-felhasználók"
+
+#: class/mainwp-team-control.class.php:417
 msgid "Roles & Permissions"
 msgstr "Szerepkörök és jogosultságok"
 
-#: class/mainwp-team-control.class.php:68
+#: class/mainwp-team-control.class.php:433
 msgid "Create New Role"
 msgstr "Új szerepkör létrehozása"
 
-#: class/mainwp-team-control.class.php:91
+#: class/mainwp-team-control.class.php:456
 msgid "Bulk actions"
 msgstr "Tömeges műveletek"
 
-#: class/mainwp-team-control.class.php:92
-#: class/mainwp-team-control.class.php:306
+#: class/mainwp-team-control.class.php:457
+#: class/mainwp-team-control.class.php:700
 msgid "Delete"
 msgstr "Törlés"
 
-#: class/mainwp-team-control.class.php:93
-msgid "Apply"
-msgstr "Alkalmaz"
+#: class/mainwp-team-control.class.php:458
+msgid "Change role"
+msgstr "Szerepkör módosítása"
 
-#: class/mainwp-team-control.class.php:97
-#: class/mainwp-team-control.class.php:156
+#: class/mainwp-team-control.class.php:462
 msgid "Select role"
 msgstr "Szerepkör kiválasztása"
 
-#: class/mainwp-team-control.class.php:98
-#: class/mainwp-team-control.class.php:157
-#: class/mainwp-team-control.class.php:1029
+#: class/mainwp-team-control.class.php:463
+#: class/mainwp-team-control.class.php:478
+#: class/mainwp-team-control.class.php:1572
 msgid "Administrator"
 msgstr "Adminisztrátor"
 
-#: class/mainwp-team-control.class.php:99
-#: class/mainwp-team-control.class.php:158
-#: class/mainwp-team-control.class.php:1030
+#: class/mainwp-team-control.class.php:464
+#: class/mainwp-team-control.class.php:479
+#: class/mainwp-team-control.class.php:1573
 msgid "Editor"
 msgstr "Szerkesztő"
 
-#: class/mainwp-team-control.class.php:100
-#: class/mainwp-team-control.class.php:159
-#: class/mainwp-team-control.class.php:1031
+#: class/mainwp-team-control.class.php:465
+#: class/mainwp-team-control.class.php:480
+#: class/mainwp-team-control.class.php:1574
 msgid "Author"
 msgstr "Szerző"
 
-#: class/mainwp-team-control.class.php:101
-#: class/mainwp-team-control.class.php:160
-#: class/mainwp-team-control.class.php:1032
+#: class/mainwp-team-control.class.php:466
+#: class/mainwp-team-control.class.php:481
+#: class/mainwp-team-control.class.php:1575
 msgid "Contributor"
 msgstr "Közreműködő"
 
-#: class/mainwp-team-control.class.php:102
-#: class/mainwp-team-control.class.php:161
-#: class/mainwp-team-control.class.php:1033
+#: class/mainwp-team-control.class.php:467
+#: class/mainwp-team-control.class.php:482
+#: class/mainwp-team-control.class.php:1576
 msgid "Subscriber"
-msgstr "Előfizető"
+msgstr "Feliratkozó"
 
-#: class/mainwp-team-control.class.php:106
-msgid "Change Role"
-msgstr "Szerepkör módosítása"
+#: class/mainwp-team-control.class.php:473
+msgid "Apply"
+msgstr "Alkalmazás"
 
-#: class/mainwp-team-control.class.php:115
-msgid "Loading users"
-msgstr "Felhasználók betöltése"
+#: class/mainwp-team-control.class.php:477
+msgid "All roles"
+msgstr "Összes szerepkör"
 
-#: class/mainwp-team-control.class.php:121
-msgid "Notes"
-msgstr "Jegyzetek"
+#: class/mainwp-team-control.class.php:483
+msgid "No role"
+msgstr "Nincs szerep"
 
-#: class/mainwp-team-control.class.php:126
-msgid "Edit note"
-msgstr "Jegyzet szerkesztése"
+#: class/mainwp-team-control.class.php:488
+msgid "Filter Users"
+msgstr "Felhasználók szűrése"
 
-#: class/mainwp-team-control.class.php:129
-msgid "Allowed HTML tags:"
-msgstr "Engedélyezett HTML-címkék:"
-
-#: class/mainwp-team-control.class.php:139
-msgid "Save note"
-msgstr "Jegyzet mentése"
-
-#: class/mainwp-team-control.class.php:140
-#: class/mainwp-team-control.class.php:304
-msgid "Edit"
-msgstr "Szerkesztés"
-
-#: class/mainwp-team-control.class.php:141
-msgid "Close"
-msgstr "Bezárás"
-
-#: class/mainwp-team-control.class.php:151
-msgid "Search Options"
-msgstr "Keresési beállítások"
-
-#: class/mainwp-team-control.class.php:172
-msgid "Show Users"
-msgstr "Felhasználók megjelenítése"
-
-#: class/mainwp-team-control.class.php:174
+#: class/mainwp-team-control.class.php:489
 msgid "Create New User"
 msgstr "Új felhasználó létrehozása"
 
-#: class/mainwp-team-control.class.php:199
-msgid "No users found for the selected search parameters."
-msgstr "A kiválasztott keresési paraméterekkel nem találhatók felhasználók."
+#: class/mainwp-team-control.class.php:503
+msgid "Loading..."
+msgstr "Betöltés..."
 
-#: class/mainwp-team-control.class.php:268
+#: class/mainwp-team-control.class.php:509
+msgid "Notes"
+msgstr "Jegyzetek"
+
+#: class/mainwp-team-control.class.php:514
+msgid "Edit note"
+msgstr "Jegyzet szerkesztése"
+
+#: class/mainwp-team-control.class.php:517
+msgid ""
+"Notes are saved as plain text, up to 2,000 characters. HTML tags are "
+"removed."
+msgstr "A jegyzeteket legfeljebb 2000 karakteres egyszerű szövegként mentjük. A HTML-címkéket eltávolítjuk."
+
+#: class/mainwp-team-control.class.php:524
+msgid "Save Note"
+msgstr "Jegyzet mentése"
+
+#: class/mainwp-team-control.class.php:525
+msgid "Edit Note"
+msgstr "Jegyzet szerkesztése"
+
+#: class/mainwp-team-control.class.php:593
+msgid "No Dashboard Users Found!"
+msgstr "Nem találhatók felhasználók a vezérlőpulton!"
+
+#: class/mainwp-team-control.class.php:594
+msgid ""
+"Try another role selection or clear the filter to show all dashboard users."
+msgstr "Próbáljon meg másik szerepkört választani, vagy szüntesse meg a szűrést az összes, vezérlőpulton lévő felhasználó megjelenítéséhez."
+
+#: class/mainwp-team-control.class.php:661
 msgid "Username"
 msgstr "Felhasználónév"
 
-#: class/mainwp-team-control.class.php:269
-msgid "Name"
-msgstr "Név"
-
-#: class/mainwp-team-control.class.php:270
-#: class/mainwp-team-control.class.php:409
+#: class/mainwp-team-control.class.php:662
+#: class/mainwp-team-control.class.php:815
 msgid "Role"
 msgstr "Szerepkör"
 
-#: class/mainwp-team-control.class.php:271
-msgid "E-mail"
-msgstr "E-mail"
+#: class/mainwp-team-control.class.php:663
+msgid "User"
+msgstr "Felhasználó"
 
-#: class/mainwp-team-control.class.php:410
-msgid "Role Description"
-msgstr "Szerepkör leírása"
+#: class/mainwp-team-control.class.php:698
+msgid "Edit"
+msgstr "Szerkesztés"
 
-#: class/mainwp-team-control.class.php:428
-msgid "No roles created. Please create roles."
-msgstr "Nincsenek szerepkörök létrehozva. Kérjük, hozzon létre szerepköröket."
+#: class/mainwp-team-control.class.php:816
+msgid "Description"
+msgstr "Leírás"
 
-#: class/mainwp-team-control.class.php:435
-#: class/mainwp-team-control.class.php:450
-msgid "Create Role"
-msgstr "Szerepkör létrehozása"
+#: class/mainwp-team-control.class.php:817
+msgid "Users"
+msgstr "Felhasználók"
 
-#: class/mainwp-team-control.class.php:440
-#: class/mainwp-team-control.class.php:462
-msgid "Enter role name"
-msgstr "Adja meg a szerepkör nevét"
+#: class/mainwp-team-control.class.php:856
+msgid "No Custom Roles Created"
+msgstr "Nincsenek létrehozott egyéni szerepek"
 
-#: class/mainwp-team-control.class.php:444
-#: class/mainwp-team-control.class.php:466
-msgid "Enter role description"
-msgstr "Adja meg a szerepkör leírását"
+#: class/mainwp-team-control.class.php:856
+msgid ""
+"Click the \"Create New Role\" button to create a custom role with custom "
+"permissions."
+msgstr "Egyéni jogosultságokkal rendelkező szerep létrehozásához kattintson az „Új szerep létrehozása” gombra."
 
-#: class/mainwp-team-control.class.php:456
-#: class/mainwp-team-control.class.php:1136
+#: class/mainwp-team-control.class.php:862
+#: class/mainwp-team-control.class.php:1943 js/mainwp-teamcontrol.js:45
 msgid "Edit Role / Manage Permissions"
 msgstr "Szerepkör szerkesztése / Jogosultságok kezelése"
 
-#: class/mainwp-team-control.class.php:459
+#: class/mainwp-team-control.class.php:866
 msgid "Role Info"
 msgstr "Szerepkör adatai"
 
-#: class/mainwp-team-control.class.php:472
+#: class/mainwp-team-control.class.php:867
+msgid ""
+"Define the role's name and add a short description to help you understand "
+"its purpose."
+msgstr "Adja meg a szerep nevét, és írjon hozzá egy rövid leírást, hogy könnyebben megértse a célját."
+
+#: class/mainwp-team-control.class.php:871
+msgid "Enter role name"
+msgstr "Adja meg a szerepkör nevét"
+
+#: class/mainwp-team-control.class.php:871
+msgid "Required"
+msgstr "Kötelező"
+
+#: class/mainwp-team-control.class.php:875
+msgid "Enter role description"
+msgstr "Adja meg a szerepkör leírását"
+
+#: class/mainwp-team-control.class.php:881 js/mainwp-teamcontrol.js:391
 msgid "Loading permissions..."
 msgstr "Jogosultságok betöltése..."
 
-#: class/mainwp-team-control.class.php:476
+#: class/mainwp-team-control.class.php:885 js/mainwp-teamcontrol.js:46
 msgid "Update Role"
 msgstr "Szerepkör frissítése"
 
-#: class/mainwp-team-control.class.php:482
-#: class/mainwp-team-control.class.php:1137
+#: class/mainwp-team-control.class.php:891
+#: class/mainwp-team-control.class.php:1944
 msgid "Delete Role"
 msgstr "Szerepkör törlése"
 
-#: class/mainwp-team-control.class.php:485
+#: class/mainwp-team-control.class.php:894
 msgid "Loading users..."
 msgstr "Felhasználók betöltése..."
 
-#: class/mainwp-team-control.class.php:512
+#: class/mainwp-team-control.class.php:903
+msgid "Restore this role as saved?"
+msgstr "Visszaállítja ezt a szerepet a mentett állapotára?"
+
+#: class/mainwp-team-control.class.php:910
+msgid "Restore Role"
+msgstr "Szerep visszaállítása"
+
+#: class/mainwp-team-control.class.php:911
+msgid "Cancel"
+msgstr "Mégse"
+
+#: class/mainwp-team-control.class.php:962
+#: class/mainwp-team-control.class.php:1193
+#: class/mainwp-team-control.class.php:1366
 msgid "Undefined role ID."
-msgstr "Nem definiált szerepkör-azonosító."
+msgstr "A szerepkör ID-ja nincs definiálva."
 
-#: class/mainwp-team-control.class.php:518
-#: class/mainwp-team-control.class.php:876
-#: class/mainwp-team-control.class.php:992
-msgid "Role not found."
-msgstr "Szerepkör nem található."
+#: class/mainwp-team-control.class.php:971
+msgid "Default permissions could not be built. Reload the page and try again."
+msgstr "Nem sikerült létrehozni az alapértelmezett jogosultságokat. Töltse újra az oldalt, és próbálja meg újra."
 
-#: class/mainwp-team-control.class.php:539
+#: class/mainwp-team-control.class.php:986
+msgid ""
+"The stored permissions for this role could not be read, so the form was not "
+"opened. Reload the page and try again."
+msgstr "A szerephez mentett jogosultságok nem olvashatók, ezért az űrlap nem nyílt meg. Töltse újra az oldalt, és próbálja meg újra."
+
+#: class/mainwp-team-control.class.php:995
+msgid "Permissions could not be loaded. Reload the page and try again."
+msgstr "Nem sikerült betölteni a jogosultságokat. Töltse újra az oldalt, és próbálja meg újra."
+
+#: class/mainwp-team-control.class.php:1020
 msgid "Role Permissions"
 msgstr "Szerepkör jogosultságai"
 
-#: class/mainwp-team-control.class.php:542
-#: class/mainwp-team-control.class.php:572
-#: class/mainwp-team-control.class.php:625
-#: class/mainwp-team-control.class.php:665
-msgid "Select All"
-msgstr "Összes kijelölése"
+#: class/mainwp-team-control.class.php:1021
+msgid ""
+"Control what users with this role can view, manage, or change in your MainWP"
+" Dashboard."
+msgstr "Szabályozza, hogy az ezzel a szereppel rendelkező felhasználók mit tekinthetnek meg, kezelhetnek vagy módosíthatnak a MainWP vezérlőpulton."
 
-#: class/mainwp-team-control.class.php:543
-#: class/mainwp-team-control.class.php:573
-#: class/mainwp-team-control.class.php:626
-#: class/mainwp-team-control.class.php:666
-msgid "Select None"
-msgstr "Kijelölés megszüntetése"
+#: class/mainwp-team-control.class.php:1022
+#: class/mainwp-team-control.class.php:1066
+#: class/mainwp-team-control.class.php:1101
+#: class/mainwp-team-control.class.php:2010
+msgid "Select"
+msgstr "Kiválasztás"
 
-#: class/mainwp-team-control.class.php:564
-#: class/mainwp-team-control.class.php:595
+#: class/mainwp-team-control.class.php:1023
+#: class/mainwp-team-control.class.php:1067
+#: class/mainwp-team-control.class.php:1102
+#: class/mainwp-team-control.class.php:2011
+msgid "All"
+msgstr "Összes"
+
+#: class/mainwp-team-control.class.php:1024
+#: class/mainwp-team-control.class.php:1068
+#: class/mainwp-team-control.class.php:1103
+#: class/mainwp-team-control.class.php:1571
+#: class/mainwp-team-control.class.php:2012
+msgid "None"
+msgstr "Nincs"
+
+#: class/mainwp-team-control.class.php:1057
+#: class/mainwp-team-control.class.php:1092
 msgid "Permissions not defined."
 msgstr "Jogosultságok nincsenek meghatározva."
 
-#: class/mainwp-team-control.class.php:569
-msgid "Allowed Extensions for the Role"
-msgstr "A szerepkör számára engedélyezett kiterjesztések"
+#: class/mainwp-team-control.class.php:1064
+msgid "Allowed Add-ons"
+msgstr "Engedélyezett kiegészítők"
 
-#: class/mainwp-team-control.class.php:622
-msgid "Custom Permissions for the Role"
-msgstr "A szerepkör egyéni jogosultságai"
+#: class/mainwp-team-control.class.php:1065
+msgid ""
+"Choose which MainWP extensions and integrations are available to users with "
+"this role."
+msgstr "Válassza ki, hogy mely MainWP-kiterjesztések és integrációk legyenek elérhetők az ezzel a szereppel rendelkező felhasználók számára."
 
-#: class/mainwp-team-control.class.php:662
-msgid "Allowed Child Sites for the Role"
-msgstr "A szerepkör számára engedélyezett gyermek webhelyek"
+#: class/mainwp-team-control.class.php:1099
+msgid "Allowed Sites"
+msgstr "Engedélyezett webhelyek"
 
-#: class/mainwp-team-control.class.php:670
+#: class/mainwp-team-control.class.php:1100
+msgid ""
+"Select which connected sites users with this role can access and manage in "
+"the MainWP Dashboard."
+msgstr "Válassza ki, hogy az ezzel a szereppel rendelkező felhasználók mely csatlakoztatott webhelyeket érhetik el és kezelhetik a MainWP vezérlőpulton."
+
+#: class/mainwp-team-control.class.php:1109
 msgid "Select by Site"
 msgstr "Kiválasztás webhely szerint"
 
-#: class/mainwp-team-control.class.php:671
+#: class/mainwp-team-control.class.php:1110
 msgid "Select by Tag"
 msgstr "Kiválasztás címke szerint"
 
-#: class/mainwp-team-control.class.php:675
+#: class/mainwp-team-control.class.php:1114
 msgid "Type to filter sites"
 msgstr "Írjon a webhelyek szűréséhez"
 
-#: class/mainwp-team-control.class.php:691
+#: class/mainwp-team-control.class.php:1130
 msgid "No child sites found. You need to connect your websites first."
-msgstr ""
-"Nem találhatók gyermek webhelyek. Először csatlakoztatnia kell a webhelyeit."
+msgstr "Nem találhatók gyermek webhelyek. Először csatlakoztatnia kell a webhelyeit."
 
-#: class/mainwp-team-control.class.php:696
+#: class/mainwp-team-control.class.php:1135
 msgid "Type to filter tags"
 msgstr "Írjon a címkék szűréséhez"
 
-#: class/mainwp-team-control.class.php:712
+#: class/mainwp-team-control.class.php:1151
 msgid "No groups found. You need to create website groups first."
-msgstr ""
-"Nem találhatók csoportok. Először webhelycsoportokat kell létrehoznia."
+msgstr "Nem találhatók csoportok. Először webhelycsoportokat kell létrehoznia."
 
-#: class/mainwp-team-control.class.php:853
-msgid "The role has been deleted successfully."
-msgstr "A szerepkör sikeresen törölve lett."
+#: class/mainwp-team-control.class.php:1167
+msgid "This role is not on hold."
+msgstr "Ez a szerep nincs felfüggesztve."
 
-#: class/mainwp-team-control.class.php:856
+#: class/mainwp-team-control.class.php:1168
+msgid ""
+"A renamed copy cannot be restored. Compare it with the original role, then "
+"delete it."
+msgstr "Az átnevezett másolat nem állítható vissza. Hasonlítsa össze az eredeti szereppel, majd törölje."
+
+#: class/mainwp-team-control.class.php:1169
+msgid "This role has no saved permissions to restore."
+msgstr "Ehhez a szerephez nincsenek mentett jogosultságok, amelyeket vissza lehetne állítani."
+
+#: class/mainwp-team-control.class.php:1181
+msgid "This role cannot be restored."
+msgstr "Ez a szerep nem állítható vissza."
+
+#: class/mainwp-team-control.class.php:1211
+#: class/mainwp-team-control.class.php:1219
+msgid "User reassignment data is incomplete."
+msgstr "A felhasználók átsorolásához szükséges adatok hiányosak."
+
+#: class/mainwp-team-control.class.php:1228
+msgid "User reassignment data is invalid."
+msgstr "A felhasználók átsorolásához szükséges adatok hibásak."
+
+#: class/mainwp-team-control.class.php:1245
+msgid "User reassignment data does not match the current role assignments."
+msgstr "A felhasználók átsorolásához szükséges adatok nem egyeznek az aktuális szerepkiosztásokkal."
+
+#: class/mainwp-team-control.class.php:1255
+msgid "A current role assignment could not be verified."
+msgstr "Nem sikerült ellenőrizni egy aktuális szerepkiosztást."
+
+#: class/mainwp-team-control.class.php:1259
+msgid ""
+"An administrator has this role. Remove the role from that administrator "
+"before you delete it."
+msgstr "Egy adminisztrátor rendelkezik ezzel a szereppel. A szerep törlése előtt távolítsa el ezt a szerepet az adminisztrátor szerepkörei közül."
+
+#: class/mainwp-team-control.class.php:1270
+msgid "A user would be left without a role."
+msgstr "Egy felhasználó szerep nélkül maradna."
+
+#: class/mainwp-team-control.class.php:1292
+msgid "User reassignment failed; the role was not deleted."
+msgstr "A felhasználók átsorolása sikertelen; a szerep nem került törlésre."
+
+#: class/mainwp-team-control.class.php:1293
+msgid ""
+"User reassignment failed and prior assignments could not all be restored."
+msgstr "A felhasználók átsorolása sikertelen, és nem sikerült az összes korábbi hozzárendelést visszaállítani."
+
+#: class/mainwp-team-control.class.php:1305
+msgid "The WordPress role could not be deleted."
+msgstr "Nem sikerült törölni a WordPress-szerepet."
+
+#: class/mainwp-team-control.class.php:1306
+msgid ""
+"The WordPress role could not be deleted and prior assignments could not all "
+"be restored."
+msgstr "Nem sikerült törölni a WordPress-szerepet, és nem sikerült az összes korábbi hozzárendelést visszaállítani."
+
+#: class/mainwp-team-control.class.php:1313
+msgid ""
+"The Team Control role record could not be deleted; prior assignments were "
+"restored."
+msgstr "A Team Control-szerep rekordját nem sikerült törölni; a korábbi hozzárendelések visszaálltak."
+
+#: class/mainwp-team-control.class.php:1315
+msgid ""
+"The Team Control role record could not be deleted and prior assignments "
+"could not all be restored."
+msgstr "A Team Control-szerepkörre vonatkozó rekordot nem sikerült törölni, és nem sikerült az összes korábbi hozzárendelést visszaállítani."
+
+#: class/mainwp-team-control.class.php:1317
+msgid ""
+"The Team Control role record could not be deleted and the WordPress role "
+"could not be restored."
+msgstr "A Team Control-szerepkörre vonatkozó rekordot nem sikerült törölni, és a WordPress-szerepkört nem sikerült visszaállítani."
+
+#: class/mainwp-team-control.class.php:1321
 msgid "Deleting failed. Role could not be found."
 msgstr "A törlés nem sikerült. A szerepkör nem található."
 
-#: class/mainwp-team-control.class.php:878
-#: class/mainwp-team-control.class.php:901
+#: class/mainwp-team-control.class.php:1342
+#: class/mainwp-team-control.class.php:1372
 msgid "Role name is empty. Please enter the role name."
 msgstr "A szerepkör neve üres. Kérjük, adja meg a szerepkör nevét."
 
-#: class/mainwp-team-control.class.php:893
+#: class/mainwp-team-control.class.php:1353
+#: class/mainwp-team-control.class.php:1377
+msgid ""
+"Permissions could not be built, so the role was not saved. Reload the page "
+"and try again."
+msgstr "Nem sikerült létrehozni a jogosultságokat, ezért a szerepkör nem került mentésre. Töltse újra az oldalt, és próbálja meg újra."
+
+#: class/mainwp-team-control.class.php:1393
 msgid "Saved without of changes."
 msgstr "Változtatások nélkül mentve."
 
-#: class/mainwp-team-control.class.php:903
+#: class/mainwp-team-control.class.php:1401
 msgid "Role name already exist. Please use different role name."
 msgstr ""
 "A szerepkör neve már létezik. Kérjük, használjon másik szerepkörnevet."
 
-#: class/mainwp-team-control.class.php:919
+#: class/mainwp-team-control.class.php:1410
+msgid ""
+"Permissions could not be built, so the role was not created. Reload the page"
+" and try again."
+msgstr "Nem sikerült létrehozni a jogosultságokat, ezért a szerepkör nem jött létre. Töltse újra az oldalt, és próbálja meg újra."
+
+#: class/mainwp-team-control.class.php:1427
 msgid "Creating role failed. Please, try again."
 msgstr "A szerepkör létrehozása nem sikerült. Kérjük, próbálja meg újra."
 
-#: class/mainwp-team-control.class.php:1003
+#: class/mainwp-team-control.class.php:1546
 #, php-format
 msgid "There are no users with the \"%s\" role detected."
-msgstr "Nem találhatók \"%s\" szerepkörrel rendelkező felhasználók."
+msgstr "Nem találhatók „%s” szerepkörrel rendelkező felhasználók."
 
-#: class/mainwp-team-control.class.php:1005
+#: class/mainwp-team-control.class.php:1548
 #, php-format
 msgid ""
 "There is %1$d users with the \"%2$s\" role detected. What should we do with "
 "these users?"
-msgstr ""
-"%1$d felhasználó található \"%2$s\" szerepkörrel. Mit tegyünk ezekkel a "
-"felhasználókkal?"
+msgstr "%1$d felhasználó található „%2$s” szerepkörrel. Mit tegyünk ezekkel a felhasználókkal?"
 
-#: class/mainwp-team-control.class.php:1026
+#: class/mainwp-team-control.class.php:1569
 msgid "Set role to "
 msgstr "Szerepkör beállítása "
 
-#: class/mainwp-team-control.class.php:1028
-msgid "None"
-msgstr "Nincs"
-
-#: class/mainwp-team-control.class.php:1056
+#: class/mainwp-team-control.class.php:1599
 msgid "Undefined Role ID."
-msgstr "Nem definiált szerepkör-azonosító."
+msgstr "Nincs meghatározva a szerepkör ID-ja."
 
-#: class/mainwp-team-control.class.php:1076
+#: class/mainwp-team-control.class.php:1624
+#, php-format
+msgid "Role has been changed to %s"
+msgstr "A szerepkör erre módosult: %s"
+
+#: class/mainwp-team-control.class.php:1635
+msgid "Insufficient permissions."
+msgstr "Nincs elegendő jogosultsága."
+
+#: class/mainwp-team-control.class.php:1640
+msgid "Undefined user ID."
+msgstr "A felhasználói azonosító (ID) nincs megadva."
+
+#: class/mainwp-team-control.class.php:1646
 msgid "This user is you, you can not delete or change role yourself."
 msgstr ""
 "Ez a felhasználó Ön; nem törölheti és nem módosíthatja a saját szerepkörét."
 
-#: class/mainwp-team-control.class.php:1108
+#: class/mainwp-team-control.class.php:1651
+msgid "User could not be found."
+msgstr "A felhasználó nem található."
+
+#: class/mainwp-team-control.class.php:1654
+msgid "Protected administrators cannot be changed here."
+msgstr "A védett rendszergazdák itt nem módosíthatók."
+
+#: class/mainwp-team-control.class.php:1673
+msgid "User could not be deleted."
+msgstr "A felhasználót nem sikerült törölni."
+
+#: class/mainwp-team-control.class.php:1678
+msgid "Target role is invalid."
+msgstr "A célként megadott szerepkör hibás."
+
+#: class/mainwp-team-control.class.php:1688
+msgid "User role could not be changed."
+msgstr "A felhasználói szerepkört nem sikerült módosítani."
+
+#: class/mainwp-team-control.class.php:1699
 msgid "Undefined error occurred. Please, try again."
 msgstr "Ismeretlen hiba történt. Kérjük, próbálja meg újra."
 
-#: class/mainwp-team-control.class.php:1130
+#: class/mainwp-team-control.class.php:1874
+msgid ""
+"Team Control did not create this role's WordPress role and cannot change it."
+msgstr "A Team Control nem hozta létre ennek a szerepkörnek a WordPress-szerepkörét, ezért nem módosíthatja azt."
+
+#. translators: %1$s: original role display name; %2$s: this role's slug.
+#: class/mainwp-team-control.class.php:1878
+#, php-format
+msgid "Renamed copy of the role %1$s. Slug: %2$s"
+msgstr "A(z) %1$s szerepkör átnevezett másolata. Slug: %2$s"
+
+#: class/mainwp-team-control.class.php:1883
+msgid ""
+"Grants nothing until it is updated. It has more than 10,000 saved "
+"permissions, more than a role can hold."
+msgstr "Nem ad jogosultságot, amíg nem frissül. Több mint 10 000 mentett jogosultsággal rendelkezik, ennyit egy szerepkör sem tartalmazhat."
+
+#: class/mainwp-team-control.class.php:1885
+msgid "Grants nothing until it is restored or updated."
+msgstr "Nem ad jogosultságot, amíg vissza nem állítja vagy nem frissíti."
+
+#: class/mainwp-team-control.class.php:1885
+msgid "Grants nothing until it is restored."
+msgstr "Nem ad jogosultságot, amíg vissza nem állítja."
+
+#: class/mainwp-team-control.class.php:1887
+#: class/mainwp-team-control.class.php:1901
+msgid "Grants nothing until it is updated."
+msgstr "Nem ad jogosultságot, amíg nem frissíti."
+
+#: class/mainwp-team-control.class.php:1887
+#: class/mainwp-team-control.class.php:1901
+msgid "Grants nothing. Delete it if you no longer use it."
+msgstr "Nem ad jogosultságot. Törölje, ha már nem használja."
+
+#: class/mainwp-team-control.class.php:1890
+#: class/mainwp-team-control.class.php:1903
+msgid ""
+"Its WordPress role still has the capabilities it had before the update."
+msgstr "A WordPress-szerepkör továbbra is rendelkezik azokkal a jogosultságokkal, amelyekkel a frissítés előtt rendelkezett."
+
+#: class/mainwp-team-control.class.php:1892
+msgid "On hold"
+msgstr "Visszatartva"
+
+#: class/mainwp-team-control.class.php:1905
+msgid "Disabled"
+msgstr "Kikapcsolva"
+
+#: class/mainwp-team-control.class.php:1907
 msgid " *** Missed role? ***"
 msgstr " *** Hiányzik a szerepkör? ***"
 
-#: mainwp-team-control.php:168
+#. translators: %1$s: role display name; %2$s: saved permission count.
+#: class/mainwp-team-control.class.php:1929
+#, php-format
+msgid ""
+"%1$s becomes active with the %2$s permission that was saved for it. Users "
+"with this role get that permission back."
+msgid_plural ""
+"%1$s becomes active with the %2$s permissions that were saved for it. Users "
+"with this role get those permissions back."
+msgstr[0] "A(z) %1$s aktívvá válik a számára mentett %2$s jogosultsággal. Az ezzel a szerepkörrel rendelkező felhasználók visszakapják ezt a jogosultságot."
+msgstr[1] "A(z) %1$s aktívvá válik a számára mentett %2$s jogosultságokkal. Az ezzel a szerepkörrel rendelkező felhasználók visszakapják ezeket a jogosultságokat."
+
+#: class/mainwp-team-control.class.php:1934
+msgid ""
+"To let them use MainWP abilities and MCP, open the role afterwards, tick "
+"that permission and click Update Role."
+msgstr "Ha engedélyezni szeretné számukra a MainWP-funkciók és az MCP használatát, nyissa meg utána a szerepkört, jelölje be ezt a jogosultságot, majd kattintson a „Szerepkör frissítése” gombra."
+
+#. translators: %s: saved permissions no longer shown in the form.
+#: class/mainwp-team-control.class.php:1938
+#, php-format
+msgid ""
+"%s saved permission refers to a site, tag or add-on that no longer exists or"
+" is not active. To remove it, restore the role, then open it and click "
+"Update Role."
+msgid_plural ""
+"%s saved permissions refer to sites, tags or add-ons that no longer exist or"
+" are not active. To remove them, restore the role, then open it and click "
+"Update Role."
+msgstr[0] "A(z) %s mentett jogosultság olyan webhelyre, címkére vagy kiegészítőre hivatkozik, amely már nem létezik vagy nem aktív. Az eltávolításhoz állítsa vissza a szerepkört, majd nyissa meg, és kattintson a „Szerepkör frissítése” gombra."
+msgstr[1] "A(z) %s mentett jogosultság olyan webhelyekre, címkékre vagy kiegészítőkre hivatkozik, amelyek már nem léteznek vagy nem aktívak. Az eltávolításukhoz állítsa vissza a szerepkört, majd nyissa meg, és kattintson a „Szerepkör frissítése” gombra."
+
+#: class/mainwp-team-control.class.php:1941
+msgid "Restore as saved"
+msgstr "Visszaállítás mentett állapot szerint"
+
+#: class/mainwp-team-control.class.php:2008
+msgid "API Access"
+msgstr "API-hozzáférés"
+
+#: class/mainwp-team-control.class.php:2009
+msgid ""
+"Control whether users with this role can manage API keys and application "
+"passwords, and whether they can use MainWP abilities and MCP."
+msgstr "Szabályozza, hogy az ezzel a szerepkörrel rendelkező felhasználók kezelhetik-e az API-kulcsokat és az alkalmazásjelszavakat, illetve használhatják-e a MainWP-funkciókat és az MCP-t."
+
+#: class/mainwp-team-control.class.php:2035
+msgid "No REST API permissions found."
+msgstr "Nem találhatók REST API-jogosultságok."
+
+#: class/mainwp-team-control.class.php:2054
+msgid ""
+"This role has more than 10,000 saved permissions, more than a role can hold,"
+" so the update could not move it. Delete it and create roles with fewer "
+"sites and tags."
+msgstr "Ez a szerepkör több mint 10 000 mentett jogosultsággal rendelkezik, ennyit egy szerepkör sem tartalmazhat, ezért nem sikerült áthelyezni a frissítés során. Törölje, és hozzon létre kevesebb webhellyel és címkével rendelkező szerepköröket."
+
+#: class/mainwp-team-control.class.php:2059
+msgid ""
+"This role is disabled and its WordPress role is missing, so it cannot be "
+"saved from this form. Delete this role if you no longer use it."
+msgstr "Ez a szerepkör ki van kapcsolva, és hiányzik a hozzá tartozó WordPress-szerepkör, ezért ebből az űrlapból nem menthető. Törölje ezt a szerepkört, ha már nem használja."
+
+#. translators: %s: display name of the original role.
+#: class/mainwp-team-control.class.php:2065
+#, php-format
+msgid ""
+"This role is on hold. The update found it as a duplicate of the role %s and "
+"renamed it. It has no WordPress role, so it cannot be saved from this form. "
+"Compare the permissions below with the original role, then delete this "
+"duplicate."
+msgstr "Ez a szerepkör felfüggesztett állapotban van. A frissítés során a(z) %s szerepkör másolataként azonosította a rendszer, ezért átnevezte. Nincs hozzá WordPress-szerepkör, így ebből az űrlapból nem menthető. Hasonlítsa össze az alábbi jogosultságokat az eredeti szerepkörével, majd törölje ezt a másolatot."
+
+#: class/mainwp-team-control.class.php:2070
+msgid ""
+"This role is on hold and its WordPress role is missing, so it cannot be "
+"saved from this form. Close this form and click Restore as saved in the "
+"Roles list. That brings the WordPress role back with the saved permissions."
+msgstr "Ez a szerepkör függőben van, és hiányzik a hozzá tartozó WordPress-szerepkör, ezért ebből az űrlapból nem menthető. Zárja be az űrlapot, majd kattintson a Szerepkörök listájában a Mentett állapot visszaállítása lehetőségre. Ezzel visszaállítja a WordPress-szerepkört a mentett jogosultságokkal."
+
+#: class/mainwp-team-control.class.php:2072
+msgid ""
+"This role is on hold and its WordPress role is missing, so it cannot be "
+"saved from this form. Delete this role if you no longer use it."
+msgstr "Ez a szerepkör felfüggesztett állapotban van, és hiányzik a hozzá tartozó WordPress-szerepkör, ezért ebből az űrlapból nem menthető. Törölje ezt a szerepkört, ha már nem használja."
+
+#: class/mainwp-team-control.class.php:2076
+msgid ""
+"This role is disabled and has no saved permissions. Select the permissions "
+"it should grant, then click Update Role. The role becomes active with the "
+"permissions shown."
+msgstr "Ez a szerepkör ki van kapcsolva, és nincsenek mentett jogosultságai. Válassza ki a kiosztandó jogosultságokat, majd kattintson a „Szerepkör frissítése” gombra. A szerepkör a megjelenített jogosultságokkal válik aktívvá."
+
+#: class/mainwp-team-control.class.php:2078
+msgid ""
+"This role is on hold and has no saved permissions, so you need to set it up "
+"again. Select the permissions it should grant, then click Update Role. The "
+"role becomes active with the permissions shown."
+msgstr "Ez a szerepkör felfüggesztett állapotban van, és nincsenek mentett jogosultságai, ezért újra be kell állítania. Válassza ki a kiosztandó jogosultságokat, majd kattintson a „Szerepkör frissítése” gombra. A szerepkör a megjelenített jogosultságokkal válik aktívvá."
+
+#: class/mainwp-team-control.class.php:2081
+msgid ""
+"This role is disabled and grants nothing. The permissions that were saved "
+"for it are selected below. When you click Update Role, the role becomes "
+"active with the permissions shown."
+msgstr "Ez a szerepkör ki van kapcsolva, és nem ad jogosultságot. Az alábbiakban ki vannak választva a számára mentett jogosultságok. Amikor a „Szerepkör frissítése” gombra kattint, a szerepkör a megjelenített jogosultságokkal válik aktívvá."
+
+#: class/mainwp-team-control.class.php:2086
+msgid ""
+"This role is on hold and grants no permissions yet. The permissions that "
+"were saved for it are selected below. When you click Update Role, the role "
+"becomes active with the permissions shown."
+msgstr "Ez a szerepkör felfüggesztett állapotban van, és még nem ad jogosultságot. Az alábbiakban ki vannak választva a számára mentett jogosultságok. Amikor a „Szerepkör frissítése” gombra kattint, a szerepkör a megjelenített jogosultságokkal válik aktívvá."
+
+#: class/mainwp-team-control.class.php:2088
+msgid ""
+"This role is on hold and grants no permissions yet. The saved permissions "
+"that can still be shown are selected below. When you click Update Role, the "
+"role becomes active with the permissions shown."
+msgstr "Ez a szerepkör felfüggesztett állapotban van, és még nem ad jogosultságot. Az alábbiakban ki vannak választva a továbbra is megjeleníthető mentett jogosultságok. Amikor a „Szerepkör frissítése” gombra kattint, a szerepkör a megjelenített jogosultságokkal válik aktívvá."
+
+#. translators: %s: number of stored permissions the form cannot show.
+#: class/mainwp-team-control.class.php:2092
+#, php-format
+msgid ""
+"%s saved permission cannot be shown because the site, tag or add-on it "
+"refers to no longer exists or is not active. Updating the role will remove "
+"it."
+msgid_plural ""
+"%s saved permissions cannot be shown because the sites, tags or add-ons they"
+" refer to no longer exist or are not active. Updating the role will remove "
+"them."
+msgstr[0] "A(z) %s mentett jogosultság nem jeleníthető meg, mert a hivatkozott webhely, címke vagy kiegészítő már nem létezik vagy nem aktív. A szerepkör frissítése eltávolítja ezt a jogosultságot."
+msgstr[1] "A(z) %s mentett jogosultság nem jeleníthető meg, mert a hivatkozott webhelyek, címkék vagy kiegészítők már nem léteznek vagy nem aktívak. A szerepkör frissítése eltávolítja ezeket a jogosultságokat."
+
+#: class/mainwp-team-control.class.php:2180
+msgid "Custom Permissions for the Role"
+msgstr "A szerepkör egyéni jogosultságai"
+
+#: class/mainwp-team-control.class.php:2185
+msgid "Select All"
+msgstr "Összes kiválasztása"
+
+#: class/mainwp-team-control.class.php:2188
+msgid "Select None"
+msgstr "Kijelölés megszüntetése"
+
+#: mainwp-team-control.php:187
 #, php-format
 msgid ""
 "MainWP Team Control requires %1$sMainWP Dashboard plugin%2$s to be activated"
@@ -634,10 +1490,76 @@ msgstr ""
 "bővítményt%2$s. Kérjük, először telepítse és aktiválja a %3$sMainWP "
 "Dashboard bővítményt%4$s."
 
-#: js/mainwp-teamcontrol.js:106
+#: js/mainwp-teamcontrol.js:21
+msgid "Create Role / Manage Permissions"
+msgstr "Szerepkör létrehozása / jogosultságok kezelése"
+
+#: js/mainwp-teamcontrol.js:22
+msgid "Create Role"
+msgstr "Szerepkör létrehozása"
+
+#: js/mainwp-teamcontrol.js:88
 msgid "Role name is required. Please enter the role name."
 msgstr "A szerepkör neve kötelező. Kérjük, adja meg a szerepkör nevét."
 
-#: js/mainwp-teamcontrol.js:296
+#: js/mainwp-teamcontrol.js:339
 msgid "Are you sure?"
 msgstr "Biztos benne?"
+
+#: js/mainwp-teamcontrol.js:571
+msgid "User filter request failed. Please try again."
+msgstr "A felhasználók szűrésére irányuló kérés sikertelen. Kérjük, próbálja újra."
+
+#~ msgid "Backups (Legacy)"
+#~ msgstr "Biztonsági mentések (örökölt)"
+
+#~ msgid "Bulk Install and Activate Add-ons"
+#~ msgstr "Kiegészítők tömeges telepítése és aktiválása"
+
+#~ msgid "Manage Dashboard Users"
+#~ msgstr "Irányítópult felhasználóinak kezelése"
+
+#~ msgid "Change Role"
+#~ msgstr "Szerepkör módosítása"
+
+#~ msgid "Loading users"
+#~ msgstr "Felhasználók betöltése"
+
+#~ msgid "Allowed HTML tags:"
+#~ msgstr "Engedélyezett HTML-címkék:"
+
+#~ msgid "Save note"
+#~ msgstr "Jegyzet mentése"
+
+#~ msgid "Close"
+#~ msgstr "Bezárás"
+
+#~ msgid "Search Options"
+#~ msgstr "Keresési beállítások"
+
+#~ msgid "Show Users"
+#~ msgstr "Felhasználók megjelenítése"
+
+#~ msgid "No users found for the selected search parameters."
+#~ msgstr "A kiválasztott keresési paraméterekkel nem találhatók felhasználók."
+
+#~ msgid "Name"
+#~ msgstr "Név"
+
+#~ msgid "E-mail"
+#~ msgstr "E-mail"
+
+#~ msgid "Role Description"
+#~ msgstr "Szerepkör leírása"
+
+#~ msgid "No roles created. Please create roles."
+#~ msgstr "Nincsenek szerepkörök létrehozva. Kérjük, hozzon létre szerepköröket."
+
+#~ msgid "Allowed Extensions for the Role"
+#~ msgstr "A szerepkör számára engedélyezett kiterjesztések"
+
+#~ msgid "Allowed Child Sites for the Role"
+#~ msgstr "A szerepkör számára engedélyezett gyermek webhelyek"
+
+#~ msgid "The role has been deleted successfully."
+#~ msgstr "A szerepkör sikeresen törölve lett."

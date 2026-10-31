@@ -1,0 +1,1634 @@
+# Copyright (C) 2026 WooCommerce
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Product Add-Ons 8.4.6\n"
+"Report-Msgid-Bugs-To: https://woocommerce.com/my-account/create-a-ticket/\n"
+"POT-Creation-Date: 2026-10-29T08:56:38+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"language-team: LANGUAGE <EMAIL@ADDRESS>\n"
+"X-Domain: woocommerce-product-addons\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: WooCommerce Product Add-Ons\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 8.4.6\n"
+
+#. Plugin Name of the plugin
+#: woocommerce-product-addons.php
+msgid "WooCommerce Product Add-Ons"
+msgstr "WooCommerce Product Add-Ons"
+
+#. Plugin URI of the plugin
+#: woocommerce-product-addons.php
+msgid "https://woocommerce.com/products/product-add-ons/"
+msgstr "https://woocommerce.com/products/product-add-ons/"
+
+#. Description of the plugin
+#: woocommerce-product-addons.php
+msgid ""
+"Add extra options to products which your customers can select from, when "
+"adding to the cart, with an optional fee for each extra option. Add-ons can "
+"be checkboxes, a select box, or custom text input."
+msgstr "Adj hozzá további opciókat a termékekhez, amelyek közül vásárlóid a kosárba helyezéskor választhatnak; minden opcióhoz opcionális díj is megadható. A kiegészítők lehetnek jelölőnégyzetek, legördülő listák vagy egyéni szövegmezők."
+
+#. Author of the plugin
+#: woocommerce-product-addons.php
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#. Author URI of the plugin
+#: woocommerce-product-addons.php
+msgid "https://woocommerce.com"
+msgstr "https://woocommerce.com"
+
+#: includes/admin/class-wc-product-addons-admin-ajax.php:69
+#: includes/admin/class-wc-product-addons-admin-ajax.php:72
+#: includes/admin/views/addons/image.php:25
+#: includes/admin/views/addons/image.php:26
+#: includes/admin/views/addons/image.php:75
+#: includes/admin/views/addons/radiobutton.php:39
+#: includes/admin/views/addons/select.php:29
+#: includes/admin/views/html-addon.php:128 templates/addons/image.php:33
+#: templates/addons/image.php:34 templates/addons/image.php:129
+#: templates/addons/radiobutton.php:45 templates/addons/select.php:41
+msgid "None"
+msgstr "Nincs"
+
+#. translators: %1$s: Addon title, %2$s: Before value, %3$s: After value
+#: includes/admin/class-wc-product-addons-admin-ajax.php:76
+#, php-format
+msgctxt "addon value changed note format"
+msgid "%1$s changed from <em>(%2$s)</em> to <em>(%3$s)</em>"
+msgstr "%1$s a(z) <em>(%2$s)</em> értékről a(z) <em>(%3$s)</em> értékre változott"
+
+#. translators: List of items
+#: includes/admin/class-wc-product-addons-admin-ajax.php:339
+#, php-format
+msgid "Adjusted product addons: %s"
+msgstr "Módosított termékkiegészítők: %s"
+
+#: includes/admin/class-wc-product-addons-admin-ajax.php:559
+msgid "Missing order_id or item_id"
+msgstr "Hiányzó order_id vagy item_id"
+
+#: includes/admin/class-wc-product-addons-admin-ajax.php:566
+msgid "Invalid order"
+msgstr "Érvénytelen rendelés"
+
+#: includes/admin/class-wc-product-addons-admin-ajax.php:575
+msgid "Insufficient permissions"
+msgstr "Nincs elegendő jogosultságod."
+
+#: includes/admin/class-wc-product-addons-admin-ajax.php:585
+msgid "Invalid item"
+msgstr "Érvénytelen tétel"
+
+#: includes/admin/class-wc-product-addons-admin-list-table.php:68
+#: includes/admin/class-wc-product-addons-admin-order.php:109
+#: includes/admin/class-wc-product-addons-admin.php:514
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: includes/admin/class-wc-product-addons-admin-list-table.php:69
+#: includes/admin/class-wc-product-addons-admin-list-table.php:186
+msgid "Delete"
+msgstr "Törlés"
+
+#. translators: %s: Global add-on group name
+#: includes/admin/class-wc-product-addons-admin-list-table.php:78
+#, php-format
+msgid "%s (Edit)"
+msgstr "%s (szerkesztés)"
+
+#. translators: %s: Add-on title
+#: includes/admin/class-wc-product-addons-admin-list-table.php:96
+#, php-format
+msgid "Select %s"
+msgstr "%s kiválasztása"
+
+#: includes/admin/class-wc-product-addons-admin-list-table.php:124
+#: includes/admin/views/html-global-admin-add.php:42
+msgid "All Products"
+msgstr "Összes termék"
+
+#: includes/admin/class-wc-product-addons-admin-list-table.php:126
+msgid "No Products Assigned"
+msgstr "Nincsenek hozzárendelt termékek"
+
+#: includes/admin/class-wc-product-addons-admin-list-table.php:153
+msgctxt "column_name"
+msgid "Name"
+msgstr "Név"
+
+#: includes/admin/class-wc-product-addons-admin-list-table.php:154
+msgctxt "column_name"
+msgid "Display Order"
+msgstr "Megjelenítési sorrend"
+
+#: includes/admin/class-wc-product-addons-admin-list-table.php:155
+msgctxt "column_name"
+msgid "Product Categories"
+msgstr "Termékkategóriák"
+
+#: includes/admin/class-wc-product-addons-admin-list-table.php:156
+msgctxt "column_name"
+msgid "Number of fields"
+msgstr "Mezők száma"
+
+#: includes/admin/class-wc-product-addons-admin-list-table.php:224
+msgid "Add-ons deleted."
+msgstr "Kiegészítők törölve."
+
+#: includes/admin/class-wc-product-addons-admin-list-table.php:226
+msgid "No add-ons were deleted."
+msgstr "Nem töröltünk kiegészítőket."
+
+#: includes/admin/class-wc-product-addons-admin-list-table.php:332
+msgid "No add-ons found"
+msgstr "Nem találhatók kiegészítők"
+
+#: includes/admin/class-wc-product-addons-admin-order.php:107
+#: includes/admin/class-wc-product-addons-admin.php:513
+msgid "Configure"
+msgstr "Beállítás"
+
+#: includes/admin/class-wc-product-addons-admin-order.php:142
+msgid "Done"
+msgstr "Kész"
+
+#: includes/admin/class-wc-product-addons-admin.php:75
+#: includes/admin/class-wc-product-addons-admin.php:76
+#: includes/admin/class-wc-product-addons-admin.php:145
+#: includes/admin/class-wc-product-addons-admin.php:163
+#: includes/admin/class-wc-product-addons-admin.php:817
+msgid "Add-ons"
+msgstr "Kiegészítők"
+
+#: includes/admin/class-wc-product-addons-admin.php:178
+msgid "Show Incomplete subtotal"
+msgstr "Hiányos részösszeg megjelenítése"
+
+#: includes/admin/class-wc-product-addons-admin.php:179
+msgid ""
+"Show running subtotal, even if not all required add-on choices have been "
+"made."
+msgstr "A részösszeg folyamatos mutatása akkor is, ha még nem választották ki az összes kötelező kiegészítőhöz tartozó opciót."
+
+#: includes/admin/class-wc-product-addons-admin.php:355
+msgid ""
+"Could not import add-ons. Please review the import string and try again."
+msgstr "Nem sikerült importálni a kiegészítőket. Ellenőrizd az importálási karakterláncot, és próbáld újra."
+
+#: includes/admin/class-wc-product-addons-admin.php:382
+msgid ""
+"Could not import add-ons, as the import string was created by an older "
+"plugin version. Please export your add-ons again and retry."
+msgstr "Nem sikerült importálni a kiegészítőket, mert az importálási karakterlánc a bővítmény régebbi verziójával készült. Exportáld újra a kiegészítőket, majd próbáld meg ismét."
+
+#: includes/admin/class-wc-product-addons-admin.php:430
+#, php-format
+msgid "%d add-ons were successfully imported."
+msgstr "%d kiegészítő sikeresen importálva."
+
+#: includes/admin/class-wc-product-addons-admin.php:481
+msgid "Please complete all highlighted fields before saving."
+msgstr "Mentés előtt töltsd ki az összes kiemelt mezőt."
+
+#: includes/admin/class-wc-product-addons-admin.php:482
+msgid ""
+"Add-on titles must have maximum 255 characters. Please update the titles of "
+"the highlighted add-ons."
+msgstr "A kiegészítők címei legfeljebb 255 karakteresek lehetnek. Frissítsd a kiemelt kiegészítők címeit."
+
+#: includes/admin/class-wc-product-addons-admin.php:483
+msgid "There must be at least 1 visible option for required add-ons."
+msgstr "A kötelező kiegészítőkhöz legalább 1 látható opciónak kell rendelkezésre állnia."
+
+#: includes/admin/class-wc-product-addons-admin.php:484
+#: includes/admin/views/html-addon.php:298
+msgid "Limit price"
+msgstr "Árkorlát"
+
+#: includes/admin/class-wc-product-addons-admin.php:485
+#: includes/admin/views/html-addon.php:302
+msgid "Limit quantity"
+msgstr "Mennyiségi korlát"
+
+#: includes/admin/class-wc-product-addons-admin.php:486
+#: includes/admin/views/html-addon.php:305
+#: includes/admin/views/html-addon.php:308
+msgid "Limit character length"
+msgstr "Karakterhossz-korlát"
+
+#: includes/admin/class-wc-product-addons-admin.php:487
+#: includes/admin/views/html-addon.php:292
+msgid "Restrictions"
+msgstr "Korlátozások"
+
+#: includes/admin/class-wc-product-addons-admin.php:488
+msgid "Remove this add-on field?"
+msgstr "Eltávolítod ezt a kiegészítő mezőt?"
+
+#: includes/admin/class-wc-product-addons-admin.php:489
+msgid "Delete this option?"
+msgstr "Törlöd ezt az opciót?"
+
+#: includes/admin/class-wc-product-addons-admin.php:490
+msgid "Add Image Swatch"
+msgstr "Képminta hozzáadása"
+
+#: includes/admin/class-wc-product-addons-admin.php:491
+msgid "Add Image"
+msgstr "Kép hozzáadása"
+
+#: includes/admin/class-wc-product-addons-admin.php:492
+msgid "Use this field to paste the add-ons you previously exported."
+msgstr "Használd ezt a mezőt a korábban exportált kiegészítők beillesztéséhez."
+
+#: includes/admin/class-wc-product-addons-admin.php:493
+msgid "One or more add-ons could not be imported. Please try again."
+msgstr "Egy vagy több kiegészítőt nem sikerült importálni. Próbáld újra."
+
+#: includes/admin/class-wc-product-addons-admin.php:494
+msgid "Add-ons successfully copied to your clipboard."
+msgstr "A kiegészítők sikeresen a vágólapra másolva."
+
+#: includes/admin/class-wc-product-addons-admin.php:495
+msgid "The selected add-on groups will be deleted permanently. Are you sure?"
+msgstr "A kiválasztott kiegészítőcsoportok véglegesen törölve lesznek. Biztos vagy benne?"
+
+#: includes/admin/class-wc-product-addons-admin.php:496
+#: includes/admin/views/html-addon.php:237
+msgid "Option title"
+msgstr "Opció címe"
+
+#: includes/admin/class-wc-product-addons-admin.php:497
+msgid "Option title/image"
+msgstr "Opció címe/képe"
+
+#: includes/admin/class-wc-product-addons-admin.php:498
+#: includes/admin/views/html-addon-option.php:64
+msgid "Click to make this option visible"
+msgstr "Kattints ide az opció láthatóvá tételéhez"
+
+#: includes/admin/class-wc-product-addons-admin.php:499
+#: includes/admin/views/html-addon-option.php:64
+msgid "Click to hide this option"
+msgstr "Kattints ide az opció elrejtéséhez"
+
+#: includes/admin/class-wc-product-addons-admin.php:500
+msgid ""
+"Hiding field titles is not accessible for all users. Please choose an "
+"alternate title format if your website requires accessibility compliance."
+msgstr "A mezőcímek elrejtése nem akadálymentes minden felhasználó számára. Válassz másik címformátumot, ha a honlapodnak meg kell felelnie az akadálymentességi követelményeknek."
+
+#: includes/admin/class-wc-product-addons-admin.php:515
+msgid ""
+"Failed to initialize form. If this issue persists, please reload the page "
+"and try again."
+msgstr "Nem sikerült inicializálni az űrlapot. Ha a probléma továbbra is fennáll, frissítsd az oldalt, és próbáld meg újra."
+
+#: includes/admin/class-wc-product-addons-admin.php:516
+msgid ""
+"Failed to validate configuration. If this issue persists, please reload the "
+"page and try again."
+msgstr "Nem sikerült ellenőrizni a konfigurációt. Ha a probléma továbbra is fennáll, frissítsd az oldalt, és próbáld meg újra."
+
+#: includes/admin/class-wc-product-addons-admin.php:517
+#: includes/class-wc-product-addons-display.php:135
+msgid "Please choose an option."
+msgstr "Válassz egy opciót."
+
+#: includes/admin/class-wc-product-addons-admin.php:518
+#: includes/class-wc-product-addons-display.php:136
+msgid "Please enter some text in this field."
+msgstr "Írj be szöveget ebbe a mezőbe."
+
+#: includes/admin/class-wc-product-addons-admin.php:519
+#: includes/class-wc-product-addons-display.php:137
+msgid "Please enter a number in this field."
+msgstr "Adj meg egy számot ebben a mezőben."
+
+#: includes/admin/class-wc-product-addons-admin.php:520
+#: includes/class-wc-product-addons-display.php:138
+msgid "Please upload a file."
+msgstr "Tölts fel egy fájlt."
+
+#: includes/admin/class-wc-product-addons-admin.php:521
+#: includes/class-wc-product-addons-display.php:139
+#: includes/fields/class-wc-product-addons-field-custom.php:115
+msgid "Please enter letters only."
+msgstr "Csak betűket adj meg."
+
+#: includes/admin/class-wc-product-addons-admin.php:522
+#: includes/class-wc-product-addons-display.php:140
+#: includes/fields/class-wc-product-addons-field-custom.php:120
+msgid "Please enter numbers only."
+msgstr "Csak számokat adj meg."
+
+#: includes/admin/class-wc-product-addons-admin.php:523
+#: includes/class-wc-product-addons-display.php:141
+#: includes/fields/class-wc-product-addons-field-custom.php:125
+msgid "Please enter letters and numbers only."
+msgstr "Csak betűket és számokat adj meg."
+
+#: includes/admin/class-wc-product-addons-admin.php:524
+#: includes/class-wc-product-addons-display.php:142
+#: includes/fields/class-wc-product-addons-field-custom.php:130
+msgid "Please enter a valid email address."
+msgstr "Adj meg egy érvényes e-mail-címet."
+
+#. translators: %1$s min number of characters
+#: includes/admin/class-wc-product-addons-admin.php:526
+#: includes/class-wc-product-addons-display.php:144
+#, php-format
+msgid "Please enter at least %1$s characters."
+msgstr "Adj meg legalább %1$s karaktert."
+
+#. translators: %1$s max number of characters
+#: includes/admin/class-wc-product-addons-admin.php:528
+#: includes/class-wc-product-addons-display.php:146
+#, php-format
+msgid "Please enter up to %1$s characters."
+msgstr "Legfeljebb %1$s karaktert adj meg."
+
+#. translators: %1$s min number
+#: includes/admin/class-wc-product-addons-admin.php:530
+#: includes/class-wc-product-addons-display.php:148
+#, php-format
+msgid "Please enter %1$s or more."
+msgstr "Adj meg %1$s vagy többet."
+
+#. translators: %1$s max number
+#: includes/admin/class-wc-product-addons-admin.php:532
+#: includes/class-wc-product-addons-display.php:150
+#, php-format
+msgid "Please enter %1$s or less."
+msgstr "Adj meg %1$s vagy kevesebbet."
+
+#. translators: %1$s decimal separator
+#: includes/admin/class-wc-product-addons-admin.php:534
+#: includes/class-wc-product-addons-display.php:152
+#, php-format
+msgid ""
+"Please enter a price with one monetary decimal point (%1$s) without thousand"
+" separators."
+msgstr "Adj meg egy árat egyetlen tizedesjel (%1$s) használatával, ezres elválasztók nélkül."
+
+#: includes/admin/class-wc-product-addons-admin.php:535
+#: includes/class-wc-product-addons-display.php:153
+msgid "Subtotal"
+msgstr "Részösszeg"
+
+#. translators: %s remaining characters
+#: includes/admin/class-wc-product-addons-admin.php:537
+#: includes/class-wc-product-addons-display.php:155
+#, php-format
+msgid "%s characters remaining"
+msgstr "%s karakter maradt"
+
+#: includes/admin/class-wc-product-addons-admin.php:575
+#: includes/admin/views/html-global-admin.php:15
+msgid "Global Add-ons"
+msgstr "Globális kiegészítők"
+
+#. translators: %1$s max_input_vars size
+#: includes/admin/class-wc-product-addons-admin.php:596
+#: includes/admin/class-wc-product-addons-admin.php:878
+#, php-format
+msgid ""
+"Product Add-Ons has detected that your server may have failed to process and"
+" save some of the data on this page. Please get in touch with your server's "
+"host or administrator and (kindly) ask them to increase the number of "
+"variables that PHP scripts can post and process%1$s."
+msgstr "A Product Add-Ons észlelte, hogy a kiszolgálód esetleg nem tudta feldolgozni és menteni az oldal egyes adatait. Vedd fel a kapcsolatot a szervered tárhelyszolgáltatójával vagy adminisztrátorával, és (udvariasan) kérd meg, hogy növelje a PHP-szkriptek által beküldhető és feldolgozható változók számát%1$s."
+
+#. translators: %1$s max_input_vars size
+#: includes/admin/class-wc-product-addons-admin.php:596
+#: includes/admin/class-wc-product-addons-admin.php:878
+#, php-format
+msgid " (currently %s)"
+msgstr " (jelenleg %s)"
+
+#: includes/admin/class-wc-product-addons-admin.php:607
+msgid "Add-on saved successfully"
+msgstr "A kiegészítő sikeresen mentve"
+
+#: includes/admin/class-wc-product-addons-admin.php:618
+#: includes/admin/class-wc-product-addons-admin.php:635
+msgid "Error: Add-on not found"
+msgstr "Hiba: kiegészítő nem található"
+
+#: includes/admin/class-wc-product-addons-admin.php:650
+#: includes/admin/class-wc-product-addons-admin.php:745
+msgid "Add-ons Group"
+msgstr "Kiegészítőcsoport"
+
+#: includes/admin/class-wc-product-addons-admin.php:672
+msgid "Add-on deleted successfully"
+msgstr "A kiegészítő sikeresen törölve"
+
+#: includes/admin/class-wc-product-addons-admin.php:693
+#: includes/admin/views/html-addon-panel.php:88
+msgid "Checkboxes"
+msgstr "Jelölőnégyzetek"
+
+#: includes/admin/class-wc-product-addons-admin.php:696
+#: includes/admin/views/html-addon.php:251
+#: includes/admin/views/html-addon.php:263
+msgid "Price"
+msgstr "Ár"
+
+#: includes/admin/class-wc-product-addons-admin.php:699
+#: includes/admin/views/html-addon-panel.php:93
+msgid "Quantity"
+msgstr "Mennyiség"
+
+#: includes/admin/class-wc-product-addons-admin.php:702
+#: includes/admin/views/html-addon-panel.php:89
+msgid "Short Text"
+msgstr "Rövid szöveg"
+
+#: includes/admin/class-wc-product-addons-admin.php:705
+#: includes/admin/views/html-addon-panel.php:90
+msgid "Long Text"
+msgstr "Hosszú szöveg"
+
+#: includes/admin/class-wc-product-addons-admin.php:708
+#: includes/admin/views/html-addon-panel.php:91
+msgid "File Upload"
+msgstr "Fájlfeltöltés"
+
+#: includes/admin/class-wc-product-addons-admin.php:711
+#: includes/admin/views/html-addon.php:114
+msgid "Dropdown"
+msgstr "Legördülő menü"
+
+#: includes/admin/class-wc-product-addons-admin.php:714
+#: includes/admin/views/html-addon-panel.php:95
+msgid "Date Picker"
+msgstr "Dátumválasztó"
+
+#: includes/admin/class-wc-product-addons-admin.php:717
+#: includes/admin/views/html-addon-panel.php:94
+#: includes/admin/views/html-addon.php:101
+msgid "Heading"
+msgstr "Címsor"
+
+#: includes/admin/class-wc-product-addons-admin.php:721
+#: includes/admin/views/html-addon-panel.php:87
+msgid "Multiple Choice"
+msgstr "Többválasztós"
+
+#. translators: %1$s: Product name
+#: includes/admin/class-wc-product-addons-admin.php:862
+#, php-format
+msgid ""
+"<strong>%1$s</strong> has at least one add-on whose <strong>Title</strong> "
+"is longer than <strong>255</strong> characters. Please adjust its value and "
+"save your changes."
+msgstr "<strong>%1$s</strong> legalább egy olyan kiegészítőt tartalmaz, amelynek a <strong>címe</strong> hosszabb, mint <strong>255</strong> karakter. Módosítsd az értékét, és mentsd a változtatásokat."
+
+#: includes/admin/class-wc-product-addons-admin.php:1106
+msgid ""
+"Some add-ons could not be saved correctly because their "
+"<strong>Title</strong> was not set. Please review your add-ons configuration"
+" and update this product."
+msgstr "Egyes kiegészítőket nem sikerült megfelelően menteni, mert a <strong>cím</strong> nincs beállítva. Ellenőrizd a kiegészítők beállításait, és frissítsd ezt a terméket."
+
+#: includes/admin/class-wc-product-addons-admin.php:1110
+msgid ""
+"Some add-ons could not be saved correctly because their "
+"<strong>Title</strong> was longer than 255 characters. Please review your "
+"add-ons configuration and update this product."
+msgstr "Egyes kiegészítőket nem sikerült megfelelően menteni, mert a <strong>cím</strong> hosszabb volt 255 karakternél. Ellenőrizd a kiegészítők beállításait, és frissítsd ezt a terméket."
+
+#: includes/admin/class-wc-product-addons-admin.php:1292
+msgid "SKU:"
+msgstr "SKU:"
+
+#. translators: %s ID of variation
+#: includes/admin/class-wc-product-addons-admin.php:1301
+#, php-format
+msgid "%s (No longer exists)"
+msgstr "%s (már nem létezik)"
+
+#: includes/admin/class-wc-product-addons-admin.php:1304
+msgid "Variation ID:"
+msgstr "Variációs ID:"
+
+#: includes/admin/class-wc-product-addons-privacy.php:24
+msgid "Product Add-ons"
+msgstr "Termékkiegészítők"
+
+#. translators: %1$s is the HTML for the opening tag of the link element. %2$s
+#. is the closing tag. The text between will be a hyperlink.
+#: includes/admin/class-wc-product-addons-privacy.php:34
+#, php-format
+msgid ""
+"By using this extension, you may be storing personal data or sharing data "
+"with an external service. %1$sLearn more about how this works, including "
+"what you may want to include in your privacy policy.%2$s"
+msgstr "E bővítmény használatával személyes adatokat tárolhatsz, illetve adatokat oszthatsz meg külső szolgáltatással. %1$sTovábbi tudnivalók arról, hogyan működik ez, többek között arról is, mit érdemes szerepeltetned az adatvédelmi szabályzatodban.%2$s"
+
+#: includes/admin/views/addons/addon-start.php:60
+msgid "Required field"
+msgstr "Kötelező mező"
+
+#: includes/admin/views/addons/datepicker.php:50
+#: templates/addons/datepicker.php:65 templates/addons/file-upload.php:137
+msgid "Clear"
+msgstr "Törlés"
+
+#. translators: %s: field name
+#: includes/admin/views/addons/file_upload.php:32
+#: templates/addons/file-upload.php:85
+#, php-format
+msgid "Choose file for %s"
+msgstr "Válassz fájlt a(z) %s számára"
+
+#. translators: %s comma-separated list of allowed file types.
+#: includes/admin/views/addons/file_upload.php:66
+#: templates/addons/file-upload.php:69
+#, php-format
+msgid "Allowed file types: %s"
+msgstr "Engedélyezett fájltípusok: %s"
+
+#. translators: %s file size.
+#: includes/admin/views/addons/file_upload.php:71
+#: templates/addons/file-upload.php:74
+#, php-format
+msgid "(max file size %s)"
+msgstr "(max fájlméret %s)"
+
+#. translators: %s existing filename.
+#: includes/admin/views/addons/file_upload.php:89
+#: templates/addons/file-upload.php:121
+#, php-format
+msgid "Existing file: %s"
+msgstr "Meglévő fájl: %s"
+
+#: includes/admin/views/addons/image.php:77
+#: includes/admin/views/addons/select.php:31 templates/addons/image.php:131
+#: templates/addons/select.php:43
+msgid "Select an option..."
+msgstr "Válassz egy lehetőséget..."
+
+#: includes/admin/views/html-addon-option.php:42
+#: includes/admin/views/html-addon.php:360
+msgid "Flat Fee"
+msgstr "Fix díj"
+
+#: includes/admin/views/html-addon-option.php:43
+#: includes/admin/views/html-addon.php:361
+msgid "Quantity Based"
+msgstr "Mennyiségalapú"
+
+#: includes/admin/views/html-addon-option.php:44
+#: includes/admin/views/html-addon.php:362
+msgid "Percentage Based"
+msgstr "Százalékalapú"
+
+#: includes/admin/views/html-addon-option.php:54
+msgid "Pre-selected by default"
+msgstr "Alapértelmezetten előre kiválasztva"
+
+#: includes/admin/views/html-addon-option.php:73
+msgid "Visible"
+msgstr "Látható"
+
+#: includes/admin/views/html-addon-option.php:76
+msgid "Delete option"
+msgstr "Opció törlése"
+
+#: includes/admin/views/html-addon-panel.php:22
+msgid "Use Global Add-Ons?"
+msgstr "Globális kiegészítők használata?"
+
+#. translators: %s link to global add-ons tab
+#: includes/admin/views/html-addon-panel.php:24
+#, php-format
+msgid ""
+"Use this option to control if <a href=\"%s\">global add-ons</a> are assigned"
+" to this product."
+msgstr "Ezzel az opcióval szabályozhatod, hogy a <a href=\"%s\">globális kiegészítők</a> hozzá legyenek-e rendelve ehhez a termékhez."
+
+#: includes/admin/views/html-addon-panel.php:31
+msgid "Product Add-Ons"
+msgstr "Termékkiegészítők"
+
+#: includes/admin/views/html-addon-panel.php:34
+msgid "Import"
+msgstr "Importálás"
+
+#: includes/admin/views/html-addon-panel.php:35
+msgid "Export"
+msgstr "Exportálás"
+
+#: includes/admin/views/html-addon-panel.php:36
+msgid "Close all"
+msgstr "Összes bezárása"
+
+#: includes/admin/views/html-addon-panel.php:37
+msgid "Expand all"
+msgstr "Összes kibontása"
+
+#: includes/admin/views/html-addon-panel.php:43
+msgid "Export data"
+msgstr "Adatok exportálása"
+
+#: includes/admin/views/html-addon-panel.php:44
+msgid "Automatic copying is unavailable. Select and copy the export data."
+msgstr "Az automatikus másolás nem érhető el. Jelöld ki és másold ki az exportálási adatokat."
+
+#: includes/admin/views/html-addon-panel.php:67
+msgid "Choose an add-on field to add to this group,"
+msgstr "Válassz egy kiegészítő mezőt, amelyet hozzáadhatsz ehhez a csoporthoz,"
+
+#: includes/admin/views/html-addon-panel.php:71
+msgid "or <a href=\"#\" class=\"wc-pao-import-addons\">click here</a> to import data."
+msgstr "vagy kattints <a href=\"#\" class=\"wc-pao-import-addons\">ide</a> az adatok importálásához."
+
+#: includes/admin/views/html-addon-panel.php:73
+msgid "Use add-ons to add free or paid options to this product."
+msgstr "A kiegészítőkkel ingyenes vagy fizetős opciókat adhatsz ehhez a termékhez."
+
+#: includes/admin/views/html-addon-panel.php:77
+msgid ""
+"Choose a field type to add below, or <a href=\"#\" class=\"wc-pao-import-"
+"addons\">click here</a> to import data."
+msgstr "Válaszd ki alább a hozzáadandó mezőtípust, vagy kattints <a href=\"#\" class=\"wc-pao-import-addons\">ide</a> az adatok importálásához."
+
+#: includes/admin/views/html-addon-panel.php:86
+msgid "Add field&hellip;"
+msgstr "Mező hozzáadása&hellip;"
+
+#: includes/admin/views/html-addon-panel.php:92
+msgid "Customer Defined Price"
+msgstr "Vásárló által megadott ár"
+
+#: includes/admin/views/html-addon.php:34
+msgid "Add-on title is too long. Please use up to 255 characters."
+msgstr "A kiegészítő címe túl hosszú. Kérlek, legfeljebb 255 karaktert használj."
+
+#: includes/admin/views/html-addon.php:72
+msgid "Click to toggle"
+msgstr "Kattints a váltáshoz"
+
+#: includes/admin/views/html-addon.php:86
+msgid "Title"
+msgstr "Cím"
+
+#: includes/admin/views/html-addon.php:95
+msgid "Title format"
+msgstr "Cím formátuma"
+
+#: includes/admin/views/html-addon.php:100
+msgid "Label"
+msgstr "Címke"
+
+#: includes/admin/views/html-addon.php:102
+msgid "Hide"
+msgstr "Elrejtés"
+
+#: includes/admin/views/html-addon.php:110
+msgid "Display as"
+msgstr "Megjelenítés módja"
+
+#: includes/admin/views/html-addon.php:115
+msgid "Radio Buttons"
+msgstr "Rádiógombok"
+
+#: includes/admin/views/html-addon.php:116
+msgid "Images"
+msgstr "Képek"
+
+#: includes/admin/views/html-addon.php:125
+msgid "Default selection"
+msgstr "Alapértelmezett választás"
+
+#: includes/admin/views/html-addon.php:147
+msgid "Restriction"
+msgstr "Korlátozás"
+
+#: includes/admin/views/html-addon.php:151
+msgid "Any Text"
+msgstr "Bármilyen szöveg"
+
+#: includes/admin/views/html-addon.php:152
+msgid "Only Letters"
+msgstr "Csak betűk"
+
+#: includes/admin/views/html-addon.php:153
+msgid "Only Numbers"
+msgstr "Csak számok"
+
+#: includes/admin/views/html-addon.php:154
+msgid "Only Letters and Numbers"
+msgstr "Csak betűk és számok"
+
+#: includes/admin/views/html-addon.php:155
+msgid "Only Email Address"
+msgstr "Csak e-mail cím"
+
+#: includes/admin/views/html-addon.php:167
+msgid "Pre-filled quantity"
+msgstr "Előre kitöltött mennyiség"
+
+#: includes/admin/views/html-addon.php:169
+msgid "Pre-filled price"
+msgstr "Előre kitöltött ár"
+
+#: includes/admin/views/html-addon.php:193
+msgid "Require selection"
+msgstr "Kötelező választás"
+
+#: includes/admin/views/html-addon.php:195
+msgid "Require upload"
+msgstr "Kötelező feltöltés"
+
+#: includes/admin/views/html-addon.php:197
+msgid "Require input"
+msgstr "Kötelező bevitel"
+
+#: includes/admin/views/html-addon.php:206
+msgid "Add description"
+msgstr "Leírás hozzáadása"
+
+#: includes/admin/views/html-addon.php:220
+msgid "Add placeholder"
+msgstr "Helyőrző hozzáadása"
+
+#: includes/admin/views/html-addon.php:242
+msgid "Type"
+msgstr "Típus"
+
+#: includes/admin/views/html-addon.php:243
+#: includes/admin/views/html-addon.php:355
+msgid ""
+"Choose how to calculate the price of this add-on: Apply a flat fee "
+"regardless of quantity, charge per quantity ordered, or charge a percentage "
+"of the total."
+msgstr "Válaszd ki, hogyan számold ennek a kiegészítőnek az árát: alkalmazz fix díjat a mennyiségtől függetlenül, számolj fel díjat a rendelt mennyiség alapján, vagy számolj fel a végösszeg bizonyos százalékát."
+
+#: includes/admin/views/html-addon.php:255
+msgid "Default"
+msgstr "Alapértelmezett"
+
+#: includes/admin/views/html-addon.php:257
+msgid "Choose which options are pre-selected by default."
+msgstr "Válaszd ki, mely opciók legyenek alapértelmezetten előre kiválasztva."
+
+#: includes/admin/views/html-addon.php:283
+msgid "Add Option"
+msgstr "Opció hozzáadása"
+
+#: includes/admin/views/html-addon.php:332
+#: includes/admin/views/html-addon.php:338
+msgid "to"
+msgstr "eddig"
+
+#: includes/admin/views/html-addon.php:333
+#: includes/admin/views/html-addon.php:339
+msgid "unlimited"
+msgstr "korlátlan"
+
+#: includes/admin/views/html-addon.php:354
+msgid "Adjust price"
+msgstr "Ár módosítása"
+
+#: includes/admin/views/html-addon.php:380
+msgid "Limit file types"
+msgstr "Fájltípusok korlátozása"
+
+#: includes/admin/views/html-addon.php:381
+msgid ""
+"Restrict the types of files that can be uploaded. Enter allowed file "
+"extensions separated by commas (e.g., jpg, png, pdf)."
+msgstr "Korlátozd a feltölthető fájlok típusát. Add meg az engedélyezett fájlkiterjesztéseket vesszővel elválasztva (pl. jpg, png, pdf)."
+
+#: includes/admin/views/html-addon.php:390
+msgid "e.g., jpg, png, pdf, doc"
+msgstr "pl. jpg, png, pdf, doc"
+
+#: includes/admin/views/html-global-admin-add.php:6
+msgid "Create add-ons group"
+msgstr "Kiegészítőcsoport létrehozása"
+
+#: includes/admin/views/html-global-admin-add.php:7
+msgid "Publish"
+msgstr "Közzététel"
+
+#: includes/admin/views/html-global-admin-add.php:10
+msgid "Edit Add-on"
+msgstr "Kiegészítő szerkesztése"
+
+#: includes/admin/views/html-global-admin-add.php:11
+msgid "Update"
+msgstr "Frissítés"
+
+#: includes/admin/views/html-global-admin-add.php:18
+msgid ""
+"Create a group of global add-ons to add free or paid options to your "
+"products in bulk. You may optionally limit these add-ons to specific product"
+" categories."
+msgstr "Hozz létre egy globális kiegészítőcsoportot, hogy tömegesen adj ingyenes vagy fizetős opciókat a termékeidhez. Opcionálisan ezeket a kiegészítőket korlátozhatod meghatározott termékkategóriákra."
+
+#: includes/admin/views/html-global-admin-add.php:19
+#, php-format
+msgid ""
+"To <a href=\"%s\" target=\"_blank\">create add-ons for individual "
+"products</a>, navigate to the <strong>Product Data > Add-ons</strong> tab in"
+" the product editor."
+msgstr "Egyes termékekhez tartozó <a href=\"%s\" target=\"_blank\">kiegészítők létrehozásához</a> lépj a termékszerkesztőben a <strong>termékadatok > kiegészítők</strong> fülre."
+
+#: includes/admin/views/html-global-admin-add.php:29
+msgid "Name"
+msgstr "Név"
+
+#: includes/admin/views/html-global-admin-add.php:33
+msgid ""
+"Type a unique name to identify this global add-ons group. This will not be "
+"visible to customers."
+msgstr "Adj meg egy egyedi nevet a globális kiegészítőcsoport azonosításához. Ez nem lesz látható a vásárlók számára."
+
+#: includes/admin/views/html-global-admin-add.php:38
+msgid "Product Categories"
+msgstr "Termékkategóriák"
+
+#: includes/admin/views/html-global-admin-add.php:41
+msgid "Choose categories&hellip;"
+msgstr "Válassz kategóriákat&hellip;"
+
+#: includes/admin/views/html-global-admin-add.php:43
+msgid "Product categories"
+msgstr "Termékkategóriák"
+
+#: includes/admin/views/html-global-admin-add.php:59
+msgid ""
+"Use this option to assign this global add-ons group to specific product "
+"categories."
+msgstr "Ezzel a beállítással ezt a globális kiegészítőcsoportot meghatározott termékkategóriákhoz rendelheted."
+
+#: includes/admin/views/html-global-admin-add.php:64
+msgid "Display Order"
+msgstr "Megjelenítési sorrend"
+
+#: includes/admin/views/html-global-admin-add.php:68
+#, php-format
+msgid ""
+"This number determines the position of this add-ons group relative to other "
+"groups in product pages. Groups with a lower <strong>Display Order</strong> "
+"are displayed higher in the product page. Add-ons <a href=\"%s\" "
+"target=\"_blank\">created for individual products</a> are displayed at order"
+" 10."
+msgstr "Ez a szám meghatározza ennek a kiegészítőcsoportnak a pozícióját a többi csoporthoz képest a termékoldalakon. Az alacsonyabb <strong>Megjelenítési sorrenddel</strong> rendelkező csoportok feljebb jelennek meg a termékoldalon. Az <a href=\"%s\" target=\"_blank\">egyes termékekhez létrehozott</a> kiegészítők 10-es sorrendben jelennek meg."
+
+#: includes/admin/views/html-global-admin.php:15
+msgid "Add new"
+msgstr "Új hozzáadása"
+
+#: includes/admin/views/html-global-admin.php:22
+msgid "Search add-ons"
+msgstr "Kiegészítők keresése"
+
+#: includes/admin/views/html-global-admin.php:33
+msgid ""
+"Use global add-ons to add free or paid options to your products in bulk."
+msgstr "Használj globális kiegészítőket, hogy tömegesen adj ingyenes vagy fizetős opciókat a termékeidhez."
+
+#: includes/admin/views/html-global-admin.php:34
+msgid "Create your first add-on"
+msgstr "Első kiegészítő létrehozása"
+
+#: includes/admin/views/html-global-admin.php:35
+msgid "Learn more about add-ons"
+msgstr "További tudnivalók a kiegészítőkről"
+
+#: includes/api/class-wc-product-addons-store-api.php:104
+msgid "Addons data."
+msgstr "Kiegészítők adatai."
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:124
+msgid "Global group ID"
+msgstr "Globális csoport ID"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:130
+msgid "Name of the global group"
+msgstr "A globális csoport neve"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:139
+msgid "Priority of the group"
+msgstr "A csoport prioritása"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:148
+msgid ""
+"Product categories this group applies to, or an empty array if it applies to"
+" all products"
+msgstr "Azok a termékkategóriák, amelyekre ez a csoport vonatkozik, vagy üres tömb, ha minden termékre vonatkozik"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:162
+msgid "Fields containing the add-ons and their options for the group."
+msgstr "Mezők, amelyek a csoport kiegészítőit és opcióit tartalmazzák."
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:194
+msgid "Unique identifier for the add-on"
+msgstr "A kiegészítő egyedi azonosítója"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:201
+msgid "Name of the product add-on"
+msgstr "A termékkiegészítő neve"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:210
+msgid "Format of the add-on title"
+msgstr "A kiegészítő címének formátuma"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:220
+msgid "Default add-on value"
+msgstr "A kiegészítő alapértelmezett értéke"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:230
+msgid "Status indicating if the add-on description is enabled"
+msgstr "Állapot, amely jelzi, hogy a kiegészítő leírása engedélyezve van-e"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:239
+msgid "Description of the add-on"
+msgstr "A kiegészítő leírása"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:248
+msgid "Status indicating if the add-on placeholder is enabled"
+msgstr "Állapot, amely jelzi, hogy a kiegészítő helytartója be van-e kapcsolva"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:257
+msgid ""
+"Placeholder text for the add-on, applicable for custom_text and "
+"custom_textarea add-on types"
+msgstr "A kiegészítő helyőrző szövege, a custom_text és custom_textarea kiegészítőtípusoknál alkalmazható"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:266
+msgid "Type of the add-on"
+msgstr "A kiegészítő típusa"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:282
+msgid "Display options for multiple_choice type add-ons"
+msgstr "Megjelenítési opciók a multiple_choice típusú kiegészítőkhöz"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:291
+msgid "Position of the add-on in the product"
+msgstr "A kiegészítő pozíciója a terméknél"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:300
+msgid "Status indicating if the add-on is required"
+msgstr "Állapot, amely jelzi, hogy a kiegészítő kötelező-e"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:309
+msgid ""
+"Status indicating if min/max limits for price or text length are enabled"
+msgstr "Állapot, amely jelzi, hogy az árra vagy a szöveghosszra vonatkozó min/max korlátok engedélyezve vannak-e"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:318
+msgid "Input restrictions for custom_text type add-ons"
+msgstr "Beviteli korlátozások a custom_text típusú kiegészítőkhöz"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:334
+msgid "Status indicating if the add-on adjusts the product price"
+msgstr "Állapot, amely jelzi, hogy a kiegészítő módosítja-e a termék árát"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:343
+msgid "Type of price adjustment for the add-on"
+msgstr "A kiegészítő árkorrekciójának típusa"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:352
+msgid "Price of the add-on, if applicable (numeric string)"
+msgstr "A kiegészítő ára, ha van (numerikus karakterlánc)"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:363
+msgid ""
+"Minimum allowed input for custom_text, custom_textarea, custom_price, and "
+"input_multiplier add-ons"
+msgstr "A minimálisan megengedett bevitel a custom_text, custom_textarea, custom_price és input_multiplier kiegészítőkhöz"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:374
+msgid ""
+"Maximum allowed input for custom_text, custom_textarea, custom_price, and "
+"input_multiplier add-ons"
+msgstr "A maximálisan megengedett bevitel a custom_text, custom_textarea, custom_price és input_multiplier kiegészítőkhöz"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:385
+msgid "List of options for multiple_choice and checkbox type add-ons"
+msgstr "Az opciók listája a multiple_choice és checkbox típusú kiegészítőkhöz"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:396
+msgid "Label for the add-on option"
+msgstr "A kiegészítő opciójának címkéje"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:402
+msgid "Price of the add-on option, if applicable (numeric string)"
+msgstr "A kiegészítő opciójának ára, ha van (numerikus karakterlánc)"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:412
+msgid "Type of price adjustment for the add-on option"
+msgstr "A kiegészítő opció árkorrekciójának típusa"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:419
+msgid "Image ID for the add-on option for image display type, or 0"
+msgstr "A képes megjelenítésű kiegészítő opció kép-ID-je vagy 0"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:425
+msgid "Visibility of the add-on option"
+msgstr "A kiegészítő opció láthatósága"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:457
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:538
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:572
+msgid "Invalid add-on ID provided."
+msgstr "Hibás kiegészítő-ID lett megadva."
+
+#: includes/api/v2/class-wc-product-addons-api-v2-controller.php:505
+msgid "Add-on Group's Name parameter is required when creating Add-on Group."
+msgstr "A kiegészítőcsoport létrehozásakor a név paraméter megadása kötelező."
+
+#: includes/api/v2/class-wc-product-addons-api-v2-product-rest-api.php:92
+msgid "Status indicating if the global add-on are excluded from this product"
+msgstr "Állapot, amely jelzi, hogy a globális kiegészítők ki vannak-e zárva ebből a termékből"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-product-rest-api.php:102
+msgid "Add-ons assigned to this product"
+msgstr "Ehhez a termékhez rendelt kiegészítők"
+
+#. translators: %d product id.
+#: includes/api/v2/class-wc-product-addons-api-v2-product-rest-api.php:144
+#, php-format
+msgid "Product with ID \"%d\" not found."
+msgstr "A(z) „%d” ID-jú termék nem található."
+
+#: includes/api/v2/class-wc-product-addons-api-v2-product-rest-api.php:169
+#: includes/class-wc-product-addons-product-add-ons-ability.php:85
+msgid "Product not found."
+msgstr "A termék nem található."
+
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:90
+msgid "Add-on"
+msgstr "Kiegészítő"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:106
+msgid "Global group"
+msgstr "Globális csoport"
+
+#. translators: %s object type.
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:131
+#, php-format
+msgid "Name required when creating %s."
+msgstr "A(z) %s létrehozásakor kötelező a név megadása."
+
+#. translators: %s object type.
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:144
+#, php-format
+msgid "%s name must be a string."
+msgstr "A(z) %s neve csak karakterlánc lehet."
+
+#. translators: %s object type.
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:158
+#, php-format
+msgid "%s name can be maximum 255 characters long."
+msgstr "A(z) %s neve legfeljebb 255 karakter hosszú lehet."
+
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:189
+msgid "Array expected for fields."
+msgstr "A mezőkhöz tömböt kell megadni."
+
+#. translators: %s field name.
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:210
+#, php-format
+msgid "\"%s\" is required"
+msgstr "„%s” kötelező"
+
+#. translators: %s field name.
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:299
+#, php-format
+msgid "Float (or empty string) expected for \"%s\""
+msgstr "A „%s” értékének lebegőpontos számnak (vagy üres karakterláncnak) kell lennie"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:336
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:445
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:707
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:817
+msgid "Type must be defined when creating an Add-on."
+msgstr "Kiegészítő létrehozásakor meg kell adni a típust."
+
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:370
+msgid ""
+"Min/max values can only be defined/set for \"Quantity\", \"Price\", \"Short "
+"Text\" and \"Long Text\" add-on types."
+msgstr "Min/max értékek csak a \"Quantity\", \"Price\", \"Short Text\" és \"Long Text\" kiegészítőtípusokhoz adhatók meg/állíthatók be."
+
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:391
+msgid ""
+"Min/max values must be integers for \"Quantity\", \"Short Text\" and \"Long "
+"Text\" add-on types."
+msgstr "A min/max értékeknek egész számoknak kell lenniük a \"Quantity\", \"Short Text\" és \"Long Text\" kiegészítőtípusoknál."
+
+#. translators: 1: min value, 2: max value.
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:408
+#, php-format
+msgid ""
+"Provided min value (%1$d) must be less than or equal to the max value "
+"(%2$d)."
+msgstr "A megadott minimumérték (%1$d) nem lehet nagyobb a maximumértéknél (%2$d)"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:488
+msgid ""
+"Default values can only be defined/set for \"Multiple Choice\", "
+"\"Checkboxes\", \"Quantity\" and \"Price\" add-on types."
+msgstr "Alapértelmezett értékek csak a \"Multiple Choice\", \"Checkboxes\", \"Quantity\" és \"Price\" kiegészítőtípusokhoz adhatók meg/állíthatók be."
+
+#. translators: 1: default qty.
+#. translators: 1: default price.
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:504
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:561
+#, php-format
+msgid "Provided default quantity (%1$s) is not a numeric string."
+msgstr "A megadott alapértelmezett mennyiség (%1$s) nem numerikus karakterlánc."
+
+#. translators: 1: default qty.
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:515
+#, php-format
+msgid "Provided default quantity (%1$s) is not a positive number."
+msgstr "A megadott alapértelmezett mennyiség (%1$s) nem pozitív szám."
+
+#. translators: 1: default value, 2: min value.
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:535
+#, php-format
+msgid ""
+"Provided default value (%1$d) must be greater than or equal to the min value"
+" (%2$d)."
+msgstr "A megadott alapértelmezett érték (%1$d) nem lehet kisebb a minimumértéknél (%2$d)"
+
+#. translators: 1: default value, 2: max value.
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:548
+#, php-format
+msgid ""
+"Provided default value (%1$d) must be less than or equal to the max value "
+"(%2$d)."
+msgstr "A megadott alapértelmezett érték (%1$d) nem lehet nagyobb a maximumértéknél (%2$d)"
+
+#. translators: 1: default value, 2: min value.
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:581
+#, php-format
+msgid ""
+"Provided default value (%1$g) must be greater than or equal to the min value"
+" (%2$g)."
+msgstr "A megadott alapértelmezett érték (%1$g) nem lehet kisebb a minimumértéknél (%2$g)"
+
+#. translators: 1: default value, 2: max value.
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:594
+#, php-format
+msgid ""
+"Provided default value (%1$g) must be less than or equal to the max value "
+"(%2$g)."
+msgstr "A megadott alapértelmezett érték (%1$g) nem lehet nagyobb a maximumértéknél (%2$g)"
+
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:607
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:640
+msgid "At least one option is required to set a default."
+msgstr "Alapértelmezett érték beállításához legalább egy opció szükséges."
+
+#. translators: 1: default index.
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:616
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:662
+#, php-format
+msgid "Provided default option index (%1$s) does not exist."
+msgstr "A megadott alapértelmezett opcióindex (%1$s) nem létezik."
+
+#. translators: 1: default index, 2: max index.
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:627
+#, php-format
+msgid ""
+"Provided default option index (%1$d) does not exist. The index of the last "
+"option is (%2$d)."
+msgstr "A megadott alapértelmezett opcióindex (%1$d) nem létezik. Az utolsó opció indexe: (%2$d)."
+
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:649
+msgid ""
+"The default value for \"Checkboxes\" add-ons must be a comma separated "
+"string of default option indexes"
+msgstr "A \"Checkboxes\" kiegészítőknél az alapértelmezett értéknek az alapértelmezett opcióindexeket tartalmazó, vesszővel elválasztott karakterláncnak kell lennie"
+
+#. translators: 1: default index, 2: max index.
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:672
+#, php-format
+msgid ""
+"Provided default option index (%1$s) does not exist. The index of the last "
+"option is (%2$d)."
+msgstr "A megadott alapértelmezett opcióindex (%1$s) nem létezik. Az utolsó opció indexe: (%2$d)."
+
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:748
+msgid ""
+"Options can only be defined/set for \"Multiple Choice\" and \"Checkboxes\" "
+"add-on types."
+msgstr "Opciók csak a \"Multiple Choice\" és \"Checkboxes\" kiegészítőtípusokhoz adhatók meg/állíthatók be."
+
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:756
+msgid ""
+"\"Multiple Choice\" and \"Checkboxes\" add-on types require at lease one "
+"option."
+msgstr "A \"Multiple Choice\" és \"Checkboxes\" kiegészítőtípusok legalább egy opciót igényelnek."
+
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:770
+msgid "Each \"option\" must have a \"label\" property defined."
+msgstr "Minden „option” elemhez meg kell adni egy „label” tulajdonságot."
+
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:789
+#: includes/api/v2/class-wc-product-addons-api-v2-validation.php:879
+msgid "In required add-ons, there must be at least one visible option."
+msgstr "Kötelező kiegészítőknél legalább egy látható opciónak lennie kell."
+
+#: includes/class-wc-product-addons-cart.php:458
+msgid "File upload add-ons are not supported by this endpoint."
+msgstr "Ez a végpont nem támogatja a fájlfeltöltési kiegészítőket."
+
+#. translators: %1$s flat fee addon price in order
+#: includes/class-wc-product-addons-cart.php:956
+#, php-format
+msgctxt "flat fee addon price in order"
+msgid " (+ %1$s)"
+msgstr " (+ %1$s)"
+
+#. translators: %1$s addon price in order
+#: includes/class-wc-product-addons-cart.php:959
+#, php-format
+msgctxt "addon price in order"
+msgid " (%1$s)"
+msgstr " (%1$s)"
+
+#. translators: %1$s custom addon price in order
+#: includes/class-wc-product-addons-cart.php:962
+#, php-format
+msgctxt "custom addon price in order"
+msgid "%1$s"
+msgstr "%1$s"
+
+#. translators: %s Product name.
+#: includes/class-wc-product-addons-cart.php:1425
+#, php-format
+msgid ""
+"The add-on price for \"%s\" is invalid. Remove the item and choose a valid "
+"amount before checking out."
+msgstr "A(z) „%s” kiegészítő ára hibás. A fizetés előtt távolítsd el a tételt, és válassz érvényes összeget."
+
+#: includes/class-wc-product-addons-cart.php:1448
+msgid "The add-on price is invalid. Please choose a valid amount."
+msgstr "A kiegészítő ára hibás. Válassz érvényes összeget."
+
+#. translators: %1$s flat fee addon price in cart
+#: includes/class-wc-product-addons-cart.php:1544
+#, php-format
+msgctxt "flat fee addon price in cart"
+msgid " (+ %1$s)"
+msgstr " (+ %1$s)"
+
+#. translators: %1$s custom addon price in cart
+#: includes/class-wc-product-addons-cart.php:1550
+#, php-format
+msgctxt "custom price addon price in cart"
+msgid " (%1$s)"
+msgstr " (%1$s)"
+
+#. translators: %1$s quantity based addon price in cart
+#: includes/class-wc-product-addons-cart.php:1555
+#, php-format
+msgctxt "quantity based addon price in cart"
+msgid " (%1$s)"
+msgstr " (%1$s)"
+
+#. translators: %1$s percentage based addon price in cart
+#: includes/class-wc-product-addons-cart.php:1562
+#, php-format
+msgctxt "percentage based addon price in cart"
+msgid " (%1$s)"
+msgstr " (%1$s)"
+
+#: includes/class-wc-product-addons-compatibility.php:66
+#: includes/class-wc-product-addons-compatibility.php:75
+msgid "Foul!"
+msgstr "Hiba!"
+
+#: includes/class-wc-product-addons-compatibility.php:229
+msgid "Product Bundles"
+msgstr "Product Bundles"
+
+#: includes/class-wc-product-addons-compatibility.php:230
+msgid "WooCommerce Product Bundles"
+msgstr "WooCommerce Product Bundles"
+
+#. translators: %1$s: Extension, %2$s: Extension URL, %3$s: Extension full
+#. name, %4$s: Required version.
+#: includes/class-wc-product-addons-compatibility.php:233
+#: includes/class-wc-product-addons-compatibility.php:251
+#, php-format
+msgid ""
+"The installed version of <strong>%1$s</strong> is not supported by "
+"<strong>Product Add-ons</strong>. Please update <a href=\"%2$s\" "
+"target=\"_blank\">%3$s</a> to version <strong>%4$s</strong> or higher."
+msgstr "A telepített <strong>%1$s</strong> verziót nem támogatja a <strong>Product Add-ons</strong>. Frissítsd a(z) <a href=\"%2$s\" target=\"_blank\">%3$s</a> bővítményt legalább <strong>%4$s</strong> verzióra."
+
+#: includes/class-wc-product-addons-compatibility.php:248
+msgid "Composite Products"
+msgstr "Composite Products"
+
+#: includes/class-wc-product-addons-compatibility.php:249
+msgid "WooCommerce Composite Products"
+msgstr "WooCommerce Composite Products"
+
+#: includes/class-wc-product-addons-compatibility.php:267
+msgid "WooCommerce Blocks"
+msgstr "WooCommerce Blocks"
+
+#. translators: %1$s: Plugin name, %2$s: Plugin URL, %3$s: Plugin name full,
+#. %4$s: Plugin version
+#: includes/class-wc-product-addons-compatibility.php:270
+#, php-format
+msgid ""
+"The installed version of <strong>%1$s</strong> does not support "
+"<strong>Product Add-ons</strong>. Please update <a href=\"%2$s\" "
+"target=\"_blank\">%3$s</a> to version <strong>%4$s</strong> or higher."
+msgstr "A telepített <strong>%1$s</strong> verzió nem támogatja a <strong>Product Add-ons</strong> bővítményt. Frissítsd a <a href=\"%2$s\" target=\"_blank\">%3$s</a> bővítményt legalább <strong>%4$s</strong> verzióra."
+
+#: includes/class-wc-product-addons-display.php:395
+msgid "Select options"
+msgstr "Opciók kiválasztása"
+
+#: includes/class-wc-product-addons-global-add-on-groups-ability.php:49
+msgid "Get global add-on groups"
+msgstr "Globális kiegészítőcsoportok lekérése"
+
+#: includes/class-wc-product-addons-global-add-on-groups-ability.php:50
+msgid ""
+"Retrieve configured global Product Add-Ons groups, optionally by group ID."
+msgstr "A Product Add-Ons globális kiegészítőcsoportjainak lekérése, opcionálisan csoport-ID alapján."
+
+#: includes/class-wc-product-addons-global-add-on-groups-ability.php:87
+#: includes/class-wc-product-addons-global-add-on-groups-ability.php:173
+msgid "Global add-on group not found."
+msgstr "A globális kiegészítőcsoport nem található."
+
+#: includes/class-wc-product-addons-global-add-on-groups-ability.php:216
+msgid ""
+"Optional global add-on group ID. When omitted, groups are returned as a "
+"paged collection."
+msgstr "A globális kiegészítőcsoport opcionális ID-ja. Ha nincs megadva, a csoportok lapozható gyűjteményként jelennek meg."
+
+#: includes/class-wc-product-addons-global-add-on-groups-ability.php:221
+msgid "Result page for collection queries."
+msgstr "Eredményoldal a gyűjtemény lekérdezéseihez."
+
+#: includes/class-wc-product-addons-global-add-on-groups-ability.php:227
+msgid "Maximum number of groups to return for collection queries."
+msgstr "A gyűjtemény lekérdezéseinél visszaadandó csoportok maximális darabszáma."
+
+#: includes/class-wc-product-addons-global-add-on-groups-ability.php:250
+msgid "Global Product Add-Ons groups for the requested page."
+msgstr "A kért oldal globális termékkiegészítő-csoportjai."
+
+#: includes/class-wc-product-addons-global-add-on-groups-ability.php:276
+msgid ""
+"Whether this global add-on group applies to all products instead of only "
+"selected product categories."
+msgstr "Hogy ez a globális kiegészítőcsoport az összes termékre vonatkozik-e, nem csak a kiválasztott termékkategóriákra."
+
+#: includes/class-wc-product-addons-global-add-on-groups-ability.php:280
+msgid ""
+"Product categories this global add-on group is restricted to when it does "
+"not apply to all products."
+msgstr "Azok a termékkategóriák, amelyekre ez a globális kiegészítőcsoport korlátozva van, ha nem vonatkozik az összes termékre."
+
+#: includes/class-wc-product-addons-product-add-ons-ability.php:49
+msgid "Get product add-ons"
+msgstr "Termékkiegészítők lekérése"
+
+#: includes/class-wc-product-addons-product-add-ons-ability.php:50
+msgid ""
+"Retrieve the Product Add-Ons configured for a product, optionally including "
+"inherited and matching global add-ons."
+msgstr "Lekéri egy termékhez beállított termékkiegészítőket, igény szerint a szülőtől örökölt és az illeszkedő globális kiegészítőkkel együtt."
+
+#: includes/class-wc-product-addons-product-add-ons-ability.php:142
+msgid "Product ID to read add-ons for."
+msgstr "Annak a terméknek az ID-ja, amelynek a kiegészítőit le kell kérni."
+
+#: includes/class-wc-product-addons-product-add-ons-ability.php:147
+msgid "Whether matching global add-ons should be included."
+msgstr "Hogy a megfelelő globális kiegészítők is szerepeljenek-e."
+
+#: includes/class-wc-product-addons-product-add-ons-ability.php:152
+msgid "Whether parent product add-ons should be included for variations."
+msgstr "Hogy variációknál a szülőtermék kiegészítői is szerepeljenek-e."
+
+#: includes/class-wc-product-addons-product-add-ons-ability.php:187
+msgid "Add-ons configured for the product."
+msgstr "A termékhez beállított kiegészítők."
+
+#. translators: %1$s key
+#: includes/class-wc-product-addons-tracker.php:479
+#, php-format
+msgid "Invalid key &quot;%1$s&quot; passed to get_reusable_data."
+msgstr "A get_reusable_data függvénynek átadott „%1$s” kulcs hibás."
+
+#. translators: %s Addon name
+#. translators: %s Add-on name
+#: includes/fields/class-wc-product-addons-field-custom.php:34
+#: includes/fields/class-wc-product-addons-field-datepicker.php:73
+#: includes/fields/class-wc-product-addons-field-list.php:22
+#: includes/fields/class-wc-product-addons-field-list.php:50
+#: includes/fields/class-wc-product-addons-field-list.php:64
+#: includes/fields/class-wc-product-addons-field-select.php:43
+#, php-format
+msgid "\"%s\" does not have a valid value."
+msgstr "A(z) „%s” értéke nem érvényes."
+
+#. translators: %s Addon name
+#: includes/fields/class-wc-product-addons-field-custom.php:52
+#: includes/fields/class-wc-product-addons-field-custom.php:168
+#, php-format
+msgid "\"%s\" must be a numeric value."
+msgstr "A(z) „%s” értékének számnak kell lennie."
+
+#. translators: %s Addon name
+#. translators: Add-on name
+#: includes/fields/class-wc-product-addons-field-custom.php:61
+#: includes/fields/class-wc-product-addons-field-custom.php:69
+#: includes/fields/class-wc-product-addons-field-datepicker.php:64
+#: includes/fields/class-wc-product-addons-field-file-upload.php:75
+#: includes/fields/class-wc-product-addons-field-list.php:43
+#: includes/fields/class-wc-product-addons-field-select.php:20
+#, php-format
+msgid "\"%s\" is a required field."
+msgstr "A(z) „%s” kötelező mező."
+
+#. translators: 1 Addon name 2 Minimum amount
+#: includes/fields/class-wc-product-addons-field-custom.php:82
+#, php-format
+msgid "The minimum characters required for \"%1$s\" is %2$s."
+msgstr "A(z) „%1$s” minimális karakterszáma: %2$s."
+
+#. translators: 1 Addon name 2 Maximum amount
+#: includes/fields/class-wc-product-addons-field-custom.php:88
+#, php-format
+msgid "The maximum allowed characters for \"%1$s\" is %2$s."
+msgstr "A(z) „%1$s” megengedett maximális karakterszáma: %2$s."
+
+#. translators: 1 Addon name 2 minimum amount
+#: includes/fields/class-wc-product-addons-field-custom.php:97
+#, php-format
+msgid "The minimum amount required for \"%1$s\" is %2$s."
+msgstr "A(z) „%1$s” minimálisan szükséges összege: %2$s."
+
+#. translators: 1 Addon name 2 Maximum amount
+#: includes/fields/class-wc-product-addons-field-custom.php:103
+#, php-format
+msgid "The maximum allowed amount for \"%1$s\" is %2$s."
+msgstr "A(z) „%1$s” megengedett maximális összege: %2$s."
+
+#. translators: %s Addon name
+#: includes/fields/class-wc-product-addons-field-custom.php:139
+#, php-format
+msgid "Please enter a value greater than or equal to 0 for \"%s\"."
+msgstr "Adj meg 0-nál nagyobb vagy azzal egyenlő értéket a(z) „%s” esetén."
+
+#. translators: %s Addon name
+#: includes/fields/class-wc-product-addons-field-custom.php:148
+#, php-format
+msgid "Please enter a value greater than 0 for \"%s\"."
+msgstr "Adj meg 0-nál nagyobb értéket a(z) „%s” mezőhöz."
+
+#. translators: %s Addon name
+#: includes/fields/class-wc-product-addons-field-custom.php:172
+#, php-format
+msgid "Please enter a valid amount for \"%s\"."
+msgstr "Adj meg érvényes összeget a(z) „%s” esetén."
+
+#: includes/fields/class-wc-product-addons-field-file-upload.php:86
+msgid "Filesize exceeds the limit."
+msgstr "A fájlméret meghaladja a korlátot."
+
+#. translators: %1$s: Addon name, %2$s: Comma-separated list of allowed file
+#. types
+#: includes/fields/class-wc-product-addons-field-file-upload.php:151
+#: includes/fields/class-wc-product-addons-field-file-upload.php:186
+#, php-format
+msgid "\"%1$s\" file type is not allowed. Allowed file types: %2$s"
+msgstr "A(z) „%1$s” fájltípus nem engedélyezett. Engedélyezett fájltípusok: %2$s"
+
+#: includes/fields/class-wc-product-addons-field-file-upload.php:259
+msgid "You have reached the daily file upload limit. Please try again later."
+msgstr "Elérted a napi fájlfeltöltési korlátot. Próbáld újra később."
+
+#: includes/fields/class-wc-product-addons-field-file-upload.php:270
+msgid "The file could not be uploaded securely. Please try again."
+msgstr "A fájlt nem sikerült biztonságosan feltölteni. Próbáld újra."
+
+#: includes/fields/class-wc-product-addons-field-file-upload.php:336
+msgid "The uploaded file is no longer available. Please upload it again."
+msgstr "A feltöltött fájl már nem érhető el. Töltsd fel újra."
+
+#. translators: %s Selected add-on option label
+#. translators: %s Selected add-on option name
+#: includes/fields/class-wc-product-addons-field-list.php:70
+#: includes/fields/class-wc-product-addons-field-select.php:49
+#, php-format
+msgid "\"%s\" is not available for purchase."
+msgstr "„%s” nem vásárolható meg."
+
+#: includes/groups/class-wc-product-addons-groups.php:58
+msgid "Unable to retrieve data. Invalid global add ons group or product ID."
+msgstr "Az adatok nem kérhetők le. Hibás a globális kiegészítőcsoport ID-ja vagy a termék ID-ja."
+
+#: includes/groups/class-wc-product-addons-groups.php:90
+msgid "Unable to delete group. Invalid global add ons group ID."
+msgstr "A csoport nem törölhető. Hibás a globális kiegészítőcsoport ID-ja."
+
+#: includes/groups/class-wc-product-addons-groups.php:101
+msgid "Unable to delete global add ons group."
+msgstr "Nem sikerült törölni a globális kiegészítőcsoportot."
+
+#: templates/addons/addon-start.php:36 templates/addons/addon-start.php:39
+msgid "Required"
+msgstr "Kötelező"
+
+#. translators: %s: field name
+#: templates/addons/file-upload.php:140
+#, php-format
+msgid "Clear %s"
+msgstr "A(z) %s kiürítése"
+
+#. translators: %s WC download URL link.
+#: woocommerce-product-addons.php:42
+#, php-format
+msgid ""
+"Product Add-ons requires WooCommerce to be installed and active. You can "
+"download %s here."
+msgstr "A Product Add-ons használatához a WooCommerce-nek telepítve és aktívnak kell lennie. A(z) %s innen letölthető."
+
+#. translators: %1$s: Required PHP version, %2$s: Update PHP doc URL.
+#: woocommerce-product-addons.php:56
+#, php-format
+msgid ""
+"WooCommerce Product Add-Ons requires at least PHP <strong>%1$s</strong>. "
+"Learn <a href=\"%2$s\">how to update PHP</a>."
+msgstr "A WooCommerce Product Add-Ons legalább PHP <strong>%1$s</strong> verziót igényel. Ismerd meg, <a href=\"%2$s\">hogyan frissítsd a PHP-t</a>."
+
+#. translators: %1$s: Required WC version, %2$s: Call to action.
+#: woocommerce-product-addons.php:74
+#, php-format
+msgid ""
+"WooCommerce Product Add-Ons requires at least WooCommerce version "
+"<strong>%1$s</strong>. %2$s"
+msgstr "A WooCommerce Product Add-Ons legalább a WooCommerce <strong>%1$s</strong> verzióját igényli. %2$s"
+
+#: woocommerce-product-addons.php:76
+msgid "Please install and activate WooCommerce."
+msgstr "Telepítsd és kapcsold be a WooCommerce-t."
+
+#: woocommerce-product-addons.php:78
+msgid "Please update WooCommerce."
+msgstr "Frissítsd a WooCommerce-t."
+
+#: woocommerce-product-addons.php:339
+msgid "Documentation"
+msgstr "Dokumentáció"
+
+#: woocommerce-product-addons.php:340
+msgid "Support"
+msgstr "Támogatás"
+
+#: woocommerce-product-addons.php:357
+msgid "Thank you for installing WooCommerce Product Add-Ons."
+msgstr "Köszönjük, hogy telepítetted a WooCommerce Product Add-Ons-t."
+
+#: woocommerce-product-addons.php:359
+#, php-format
+msgid ""
+"Ready to make your products unique? Use <a href=\"%1$s\" "
+"target=\"_blank\">global add-ons</a> to add free or paid options to multiple"
+" products, or create custom <a href=\"%2$s\" target=\"_blank\">add-ons for "
+"individual products</a>."
+msgstr "Készen állsz arra, hogy egyedivé tedd termékeidet? Használd a <a href=\"%1$s\" target=\"_blank\">globális kiegészítőket</a>, hogy több termékhez ingyenes vagy fizetős opciókat adj, vagy hozz létre egyéni <a href=\"%2$s\" target=\"_blank\">kiegészítőket egyes termékekhez</a>."
+
+#: woocommerce-product-addons.php:363
+msgid "Create a global add-on"
+msgstr "Globális kiegészítő létrehozása"
+
+#: woocommerce-product-addons.php:364
+msgid "or"
+msgstr "VAGY"
+
+#: woocommerce-product-addons.php:365
+msgid "add options to an existing product"
+msgstr "Opciók hozzáadása egy meglévő termékhez"

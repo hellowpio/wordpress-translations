@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: Product Dynamic Pricing and Discounts 1.3.1\n"
+"Project-Id-Version: Product Dynamic Pricing and Discounts 1.4.0\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19 08:18+0200\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,226 +18,254 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: Product Dynamic Pricing and Discounts\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.3.1\n"
+"X-Plugin-Version: 1.4.0\n"
 
-#: admin/metaboxes/product-rule/disc-rpc-messages-settings.php:35
+#. Plugin Name of the plugin
+#: dynamic-pricing-and-discounts.php
+msgid "Product Dynamic Pricing and Discounts"
+msgstr "Product Dynamic Pricing and Discounts"
+
+#. Plugin URI of the plugin
+#: dynamic-pricing-and-discounts.php
 msgid ""
-"\t Use {product_name} for product name , {req_qty} for required quantity to get discount  , {discount} \r\n"
-"\t\t\t\t\t\tfor discount amount , {start_date} for start date of discount rule , {end_date} for ending of discount rule, {gift_product}\r\n"
-"\t\t\t\t\t\tfor gift products in conditional discount and {min_spent_amount} for informing user about min spent amount to get discount \r\n"
-"\t\t\t\t\t\tfrom rule"
-msgstr ""
-"\t Használja a {product_name} jelölőt a terméknévhez , {req_qty} a kedvezményhez szükséges mennyiséghez  , {discount} \r\n"
-"\t\t\t\t\t\ta kedvezmény összegéhez , {start_date} a kedvezményszabály kezdő dátumához , {end_date} a kedvezményszabály befejezéséhez, {gift_product}\r\n"
-"\t\t\t\t\t\ta feltételes kedvezményben szereplő ajándéktermékekhez és a {min_spent_amount} a felhasználó tájékoztatásához a kedvezményhez szükséges minimális költésről \r\n"
-"\t\t\t\t\t\ta szabályból"
+"https://woocommerce.com/products/product-dynamic-pricing-and-discounts/"
+msgstr "https://woocommerce.com/products/product-dynamic-pricing-and-discounts/"
 
-#: admin/class-af-discount-admin.php:120
-#, php-format
-msgid "%1$s restored to revision from %2$s"
-msgstr "%1$s visszaállítva a %2$s szerinti változatra"
+#. Description of the plugin
+#: dynamic-pricing-and-discounts.php
+msgid ""
+"Offer free gifts, adjust product prices, offer cart level discounts based on"
+" order quantity, amount, user roles and more."
+msgstr "Kínáljon ingyenes ajándékokat, módosítsa a termékárakat, és adjon kosárszintű kedvezményeket a rendelt mennyiség, az összeg, a felhasználói szerepkörök és más feltételek alapján."
 
-#: admin/class-af-discount-admin.php:128
-#, php-format
-msgid "%1$s scheduled for: <strong>%2$s</strong>."
-msgstr "%1$s ütemezve ekkorra: <strong>%2$s</strong>."
+#. Author of the plugin
+#: dynamic-pricing-and-discounts.php
+msgid "Addify"
+msgstr "Addify"
 
-#: admin/class-af-discount-admin.php:130
-#, php-format
-msgid "%s draft updated."
-msgstr "%s vázlata frissítve."
+#. Author URI of the plugin
+#: dynamic-pricing-and-discounts.php
+msgid "https://woocommerce.com/vendor/addify/"
+msgstr "https://woocommerce.com/vendor/addify/"
 
-#: admin/class-af-discount-admin.php:122
-#, php-format
-msgid "%s published."
-msgstr "%s közzétéve."
+#: admin/class-af-discount-admin.php:114 admin/class-af-discount-admin.php:166
+msgid "You do not have permission to do this."
+msgstr "Nincs jogosultsága ehhez."
 
-#: admin/class-af-discount-admin.php:145 admin/class-af-discount-admin.php:157
-#, php-format
-msgid "%s rule moved to the Trash."
-msgid_plural "%s rules moved to the Trash."
-msgstr[0] ""
-msgstr[1] ""
+#: admin/class-af-discount-admin.php:118 admin/class-af-discount-admin.php:170
+msgid "Security check failed."
+msgstr "A biztonsági ellenőrzés sikertelen."
 
-#: admin/class-af-discount-admin.php:141 admin/class-af-discount-admin.php:153
-#, php-format
-msgid "%s rule not updated, somebody is editing it."
-msgid_plural "%s rules not updated, somebody is editing them."
-msgstr[0] ""
-msgstr[1] ""
+#: admin/class-af-discount-admin.php:122 admin/class-af-discount-admin.php:174
+msgid "No file uploaded or upload error."
+msgstr "Nem történt fájlfeltöltés, vagy hiba történt a feltöltés során."
 
-#: admin/class-af-discount-admin.php:143 admin/class-af-discount-admin.php:155
-#, php-format
-msgid "%s rule permanently deleted."
-msgid_plural "%s rules permanently deleted."
-msgstr[0] ""
-msgstr[1] ""
+#: admin/class-af-discount-admin.php:134 admin/class-af-discount-admin.php:187
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:462
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:482
+msgid "Invalid file type. Only CSV files are accepted."
+msgstr "Hibás fájltípus. Csak CSV-fájlok fogadhatók el."
 
-#: admin/class-af-discount-admin.php:147 admin/class-af-discount-admin.php:159
-#, php-format
-msgid "%s rule restored from the Trash."
-msgid_plural "%s rules restored from the Trash."
-msgstr[0] ""
-msgstr[1] ""
+#: admin/class-af-discount-admin.php:141 admin/class-af-discount-admin.php:194
+msgid "Could not move uploaded file."
+msgstr "A feltöltött fájl áthelyezése nem sikerült."
 
-#: admin/class-af-discount-admin.php:139 admin/class-af-discount-admin.php:151
-#, php-format
-msgid "%s rule updated."
-msgid_plural "%s rules updated."
-msgstr[0] ""
-msgstr[1] ""
+#: admin/class-af-discount-admin.php:152 admin/class-af-discount-admin.php:205
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:22
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:22
+msgid "Rules imported successfully."
+msgstr "A szabályok importálása sikerült."
 
-#: admin/class-af-discount-admin.php:124
-#, php-format
-msgid "%s saved."
-msgstr "%s mentve."
+#: admin/class-af-discount-admin.php:154 admin/class-af-discount-admin.php:207
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:24
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:24
+msgid "Import failed. Please check your CSV file and try again."
+msgstr "Az importálás nem sikerült. Ellenőrizze a CSV-fájlt, majd próbálja újra."
 
-#: admin/class-af-discount-admin.php:126
-#, php-format
-msgid "%s submitted."
-msgstr "%s beküldve."
+#: admin/class-af-discount-admin.php:218 admin/class-af-discount-admin.php:249
+msgid "The link you followed has expired. Please try again."
+msgstr "A megnyitott link lejárt. Kérjük, próbálja újra."
 
-#: admin/class-af-discount-admin.php:114 admin/class-af-discount-admin.php:118
+#: admin/class-af-discount-admin.php:219 admin/class-af-discount-admin.php:231
+#: admin/class-af-discount-admin.php:250 admin/class-af-discount-admin.php:262
+msgid "Export Error"
+msgstr "Exportálási hiba"
+
+#: admin/class-af-discount-admin.php:230 admin/class-af-discount-admin.php:261
+msgid "You do not have permission to export pricing rules."
+msgstr "Nincs jogosultsága az árazási szabályok exportálásához."
+
+#. translators: %s: custom post update
+#: admin/class-af-discount-admin.php:395 admin/class-af-discount-admin.php:399
 #, php-format
 msgid "%s updated."
 msgstr "%s frissítve."
 
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:120
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:280
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:107
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:293
-msgid "("
-msgstr "("
+#: admin/class-af-discount-admin.php:396
+msgid "Custom field updated."
+msgstr "Egyéni mező frissítve."
 
-#: admin/settings/class-admin-drpc-settings.php:141
-msgid "Above \"Add to Cart \" button"
-msgstr "A \"Kosárba \" gomb felett"
+#: admin/class-af-discount-admin.php:397
+msgid "Custom field deleted."
+msgstr "Egyéni mező törölve."
 
-#: dynamic-pricing-and-discounts.php:251
-msgid "Add Cart Rule"
-msgstr "Kosárszabály hozzáadása"
+#. translators: %s: custom post revision
+#: admin/class-af-discount-admin.php:401
+#, php-format
+msgid "%1$s restored to revision from %2$s"
+msgstr "%1$s visszaállítva a %2$s szerinti változatra"
 
-#: dynamic-pricing-and-discounts.php:250
-msgid "Add New Cart Rule"
-msgstr "Új kosárszabály hozzáadása"
+#. translators: %s: custom post published
+#: admin/class-af-discount-admin.php:403
+#, php-format
+msgid "%s published."
+msgstr "%s közzétéve."
 
-#: dynamic-pricing-and-discounts.php:215
-msgid "Add New Product Rule"
-msgstr "Új termékszabály hozzáadása"
+#. translators: %s: custom post saved
+#: admin/class-af-discount-admin.php:405
+#, php-format
+msgid "%s saved."
+msgstr "%s mentve."
 
-#: dynamic-pricing-and-discounts.php:216
-msgid "Add Product Rule"
-msgstr "Termékszabály hozzáadása"
+#. translators: %s: custom post submitted
+#: admin/class-af-discount-admin.php:407
+#, php-format
+msgid "%s submitted."
+msgstr "%s beküldve."
 
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:87
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:166
-msgid "Adjustment Type"
-msgstr "Kiigazítás típusa"
+#. translators: %s: custom post scheduled update
+#: admin/class-af-discount-admin.php:409
+#, php-format
+msgid "%1$s scheduled for: <strong>%2$s</strong>."
+msgstr "%1$s ütemezve ekkorra: <strong>%2$s</strong>."
 
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:246
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:347
-msgid "Adjustment Type "
-msgstr "Kiigazítás típusa "
+#. translators: %s: custom post scheduled update
+#: admin/class-af-discount-admin.php:409
+msgid "M j, Y @ G:i"
+msgstr "M j, Y @ G:i"
 
-#: admin/class-af-discount-admin.php:249
-msgid "All Cart Rules"
-msgstr "Összes kosárszabály"
+#. translators: %s: custom post draft update
+#: admin/class-af-discount-admin.php:411
+#, php-format
+msgid "%s draft updated."
+msgstr "%s vázlata frissítve."
 
-#: admin/class-af-discount-admin.php:240
-msgid "All Product Rules"
-msgstr "Összes termékszabály"
+#. translators: %s: rules count
+#: admin/class-af-discount-admin.php:420 admin/class-af-discount-admin.php:432
+#, php-format
+msgid "%s rule updated."
+msgid_plural "%s rules updated."
+msgstr[0] "%s szabály frissítve."
+msgstr[1] "%s szabály frissítve."
 
-#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:13
-#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:13
-msgid "All Products"
-msgstr "Összes termék"
+#. translators: %s: rules count
+#: admin/class-af-discount-admin.php:422 admin/class-af-discount-admin.php:434
+#, php-format
+msgid "%s rule not updated, somebody is editing it."
+msgid_plural "%s rules not updated, somebody is editing them."
+msgstr[0] "%s szabály nem frissült, mert valaki szerkeszti."
+msgstr[1] "%s szabály nem frissült, mert valaki szerkeszti őket."
 
-#: admin/class-af-discount-admin.php:637 admin/class-af-discount-admin.php:689
-#: admin/class-af-discount-admin.php:751 admin/class-af-discount-admin.php:846
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:191
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:350
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:169
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:387
-msgid "All User Roles"
-msgstr "Összes felhasználói szerepkör"
+#. translators: %s: rules count
+#: admin/class-af-discount-admin.php:424 admin/class-af-discount-admin.php:436
+#, php-format
+msgid "%s rule permanently deleted."
+msgid_plural "%s rules permanently deleted."
+msgstr[0] "%s szabály véglegesen törölve."
+msgstr[1] "%s szabály véglegesen törölve."
 
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:32
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:34
-msgid "All days"
-msgstr "Minden nap"
+#. translators: %s: rules count
+#: admin/class-af-discount-admin.php:426 admin/class-af-discount-admin.php:438
+#, php-format
+msgid "%s rule moved to the Trash."
+msgid_plural "%s rules moved to the Trash."
+msgstr[0] "%s szabály a lomtárba helyezve."
+msgstr[1] "%s szabály a lomtárba helyezve."
 
-#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:16
-#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:16
-msgid "Amount spent up till now"
-msgstr "Eddig elköltött összeg"
+#. translators: %s: rules count
+#: admin/class-af-discount-admin.php:428 admin/class-af-discount-admin.php:440
+#, php-format
+msgid "%s rule restored from the Trash."
+msgid_plural "%s rules restored from the Trash."
+msgstr[0] "%s szabály visszaállítva a lomtárból."
+msgstr[1] "%s szabály visszaállítva a lomtárból."
 
-#: admin/settings/class-admin-drpc-settings.php:85
-msgid "Apply all rules"
-msgstr "Minden szabály alkalmazása"
-
-#: admin/settings/class-admin-drpc-settings.php:105
-msgid "Apply discount from both rules"
-msgstr "Kedvezmény alkalmazása mindkét szabályból"
-
-#: admin/settings/class-admin-drpc-settings.php:95
-msgid "Apply discount on regular price"
-msgstr "Kedvezmény alkalmazása az alapárra"
-
-#: admin/settings/class-admin-drpc-settings.php:94
-msgid "Apply discount on sale price"
-msgstr "Kedvezmény alkalmazása az akciós árra"
-
-#: admin/settings/class-admin-drpc-settings.php:106
-msgid "Apply discount only from product rule"
-msgstr "Kedvezmény alkalmazása csak a termékszabályból"
-
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:21
-msgid "Apply this rule must"
-msgstr "E szabályt kötelező alkalmazni"
-
-#: admin/settings/class-admin-drpc-settings.php:142
-msgid "Below \"Add to Cart \" button"
-msgstr "A \"Kosárba \" gomb alatt"
-
-#: admin/settings/class-admin-drpc-settings.php:140
-msgid "Below price of product"
-msgstr "A termék ára alatt"
-
-#: admin/settings/class-admin-drpc-settings.php:179
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:229
-msgid "Card"
-msgstr "Kártya"
-
-#: admin/settings/class-admin-drpc-settings.php:385
-msgid "Card Background Color"
-msgstr "Kártya háttérszíne"
-
-#: admin/settings/class-admin-drpc-settings.php:377
-msgid "Card Border Color"
-msgstr "Kártya szegélyszíne"
-
-#: admin/settings/class-admin-drpc-settings.php:393
-msgid "Card Text Color"
-msgstr "Kártya szövegszíne"
-
-#: dynamic-pricing-and-discounts.php:248 dynamic-pricing-and-discounts.php:249
-#: admin/class-af-discount-admin.php:211
+#: admin/class-af-discount-admin.php:485 admin/class-af-discount-admin.php:501
 #: admin/settings/class-admin-drpc-settings.php:40
+#: admin/settings/class-admin-drpc-settings.php:63
+msgid "General Settings"
+msgstr "Általános beállítások"
+
+#: admin/class-af-discount-admin.php:491
+#: admin/settings/class-admin-drpc-settings.php:44
+#: dynamic-pricing-and-discounts.php:264 dynamic-pricing-and-discounts.php:265
 msgid "Cart Discount Rules"
 msgstr "Kosárkedvezmény-szabályok"
 
-#: dynamic-pricing-and-discounts.php:260 admin/class-af-discount-admin.php:260
-#: admin/class-af-discount-admin.php:261
+#: admin/class-af-discount-admin.php:507 admin/class-af-discount-admin.php:549
+#: admin/class-af-discount-admin.php:550
+#: admin/settings/class-admin-drpc-settings.php:43
+#: dynamic-pricing-and-discounts.php:229 dynamic-pricing-and-discounts.php:230
+#: dynamic-pricing-and-discounts.php:241
+msgid "Product Pricing Rules"
+msgstr "Termékárazási szabályok"
+
+#: admin/class-af-discount-admin.php:520
+msgid "All Product Rules"
+msgstr "Összes termékszabály"
+
+#: admin/class-af-discount-admin.php:529
+msgid "All Cart Rules"
+msgstr "Összes kosárszabály"
+
+#: admin/class-af-discount-admin.php:540 admin/class-af-discount-admin.php:541
+#: dynamic-pricing-and-discounts.php:276
 msgid "Cart Discounts Rules"
 msgstr "Kosárkedvezmények szabályai"
 
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:218
-msgid "Check if you want to show pricing template on product page"
-msgstr ""
-"Jelölje be, ha az árképzési sablont szeretné megjeleníteni a termékoldalon"
+#: admin/class-af-discount-admin.php:592 admin/class-af-discount-admin.php:623
+msgid "Select Product and Categories"
+msgstr "Válassza ki a terméket és a kategóriákat"
 
-#: admin/class-af-discount-admin.php:559 admin/class-af-discount-admin.php:803
-#: admin/class-af-discount-admin.php:903 admin/class-af-discount-admin.php:950
+#: admin/class-af-discount-admin.php:598 admin/class-af-discount-admin.php:629
+msgid "Discount Settings"
+msgstr "Kedvezmény beállításai"
+
+#: admin/class-af-discount-admin.php:604 admin/class-af-discount-admin.php:635
+msgid "Discount Adjustments"
+msgstr "Kedvezmény-módosítások"
+
+#: admin/class-af-discount-admin.php:610 admin/class-af-discount-admin.php:641
+msgid "Rule Settings"
+msgstr "Szabálybeállítások"
+
+#: admin/class-af-discount-admin.php:616
+msgid "Message Settings"
+msgstr "Üzenetbeállítások"
+
+#: admin/class-af-discount-admin.php:647
+msgid "Messages Settings"
+msgstr "Üzenetek beállításai"
+
+#: admin/class-af-discount-admin.php:724 admin/class-af-discount-admin.php:754
+msgid "Security Violated !"
+msgstr "A biztonság megsértése!"
+
+#: admin/class-af-discount-admin.php:803 admin/class-af-discount-admin.php:834
+#: admin/class-af-discount-admin.php:873 admin/class-af-discount-admin.php:911
+#: admin/class-af-discount-admin.php:962
+#: admin/class-af-discount-admin.php:1025
+#: admin/class-af-discount-admin.php:1078
+#: admin/class-af-discount-admin.php:1120
+#: admin/class-af-discount-admin.php:1178
+#: admin/class-af-discount-admin.php:1224
+msgid "Sorry, your nonce did not verify."
+msgstr "Sajnáljuk, a nonce ellenőrzése sikertelen."
+
+#: admin/class-af-discount-admin.php:841
+#: admin/class-af-discount-admin.php:1085
+#: admin/class-af-discount-admin.php:1185
+#: admin/class-af-discount-admin.php:1232
 #: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:114
 #: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:190
 #: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:274
@@ -247,95 +275,9 @@ msgstr ""
 msgid "Choose Customer... "
 msgstr "Ügyfél kiválasztása... "
 
-#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:26
-#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:26
-msgid "Choose Products..."
-msgstr "Termékek kiválasztása..."
-
-#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:19
-#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:19
-msgid "Choose a method for minimum amount spent by user to get discount"
-msgstr ""
-"Válassza ki a kedvezményhez szükséges felhasználói minimális költés "
-"meghatározásának módját"
-
-#: admin/settings/class-admin-drpc-settings.php:103
-msgid ""
-"Choose a method when there are both (cart rule and product rule) rules "
-"applies "
-msgstr ""
-"Válassza ki a módszert, amikor mindkét szabály (kosárszabály és "
-"termékszabály) érvényes. "
-
-#: admin/settings/class-admin-drpc-settings.php:389
-msgid "Choose card background color."
-msgstr "Válassza ki a kártya háttérszínét."
-
-#: admin/settings/class-admin-drpc-settings.php:381
-msgid "Choose card border color."
-msgstr "Válassza ki a kártya szegélyszínét."
-
-#: admin/settings/class-admin-drpc-settings.php:397
-msgid "Choose card text color."
-msgstr "Válassza ki a kártya szövegszínét."
-
-#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:64
-msgid "Choose categories for cart rule"
-msgstr "Kategóriák kiválasztása a kosárszabályhoz"
-
-#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:65
-msgid "Choose categories for product rule"
-msgstr "Válassza ki a kategóriákat a termékszabályhoz"
-
-#: admin/settings/class-admin-drpc-settings.php:349
-msgid "Choose list background color."
-msgstr "Válassza ki a lista háttérszínét."
-
-#: admin/settings/class-admin-drpc-settings.php:341
-msgid "Choose list border color."
-msgstr "Válassza ki a lista szegélyszínét."
-
-#: admin/settings/class-admin-drpc-settings.php:357
-msgid "Choose list text color."
-msgstr "Válassza ki a lista szövegszínét."
-
-#: admin/settings/class-admin-drpc-settings.php:138
-msgid "Choose location for pricing template shown on product page "
-msgstr "Válassza ki a termékoldalon megjelenő árazási sablon helyét "
-
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:224
-msgid "Choose pricing template"
-msgstr "Válassza ki az árazási sablont"
-
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:233
-msgid "Choose pricing template for product page"
-msgstr "Válassza ki a termékoldal árazási sablonját"
-
-#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:45
-#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:45
-msgid "Choose product categories"
-msgstr "Válassza ki a termékkategóriákat"
-
-#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:9
-#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:9
-msgid "Choose product selection method"
-msgstr "Válassza ki a termékválasztás módját"
-
-#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:17
-msgid "Choose product selection method for cart rule"
-msgstr "Válassza ki a termékválasztás módját a kosárszabályhoz"
-
-#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:17
-msgid "Choose product selection method for product rule"
-msgstr "Válassza ki a termékválasztás módját a termékszabályhoz"
-
-#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:22
-#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:22
-msgid "Choose products"
-msgstr "Válassza ki a termékeket"
-
-#: admin/class-af-discount-admin.php:563 admin/class-af-discount-admin.php:651
-#: admin/class-af-discount-admin.php:765 admin/class-af-discount-admin.php:806
+#: admin/class-af-discount-admin.php:845 admin/class-af-discount-admin.php:933
+#: admin/class-af-discount-admin.php:1047
+#: admin/class-af-discount-admin.php:1088
 #: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:288
 #: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:364
 #: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:115
@@ -343,252 +285,245 @@ msgstr "Válassza ki a termékeket"
 msgid "Choose products..."
 msgstr "Válassza ki a termékeket..."
 
-#: admin/settings/class-admin-drpc-settings.php:421
-msgid "Choose sale tag background color."
-msgstr "Válassza ki az akciócímke háttérszínét."
+#: admin/class-af-discount-admin.php:919 admin/class-af-discount-admin.php:971
+#: admin/class-af-discount-admin.php:1033
+#: admin/class-af-discount-admin.php:1128
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:191
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:350
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:169
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:387
+msgid "All User Roles"
+msgstr "Összes felhasználói szerepkör"
 
-#: admin/settings/class-admin-drpc-settings.php:429
-msgid "Choose sale tag text color."
-msgstr "Válassza ki az akciócímke szövegszínét."
+#: admin/class-af-discount-admin.php:929 admin/class-af-discount-admin.php:981
+#: admin/class-af-discount-admin.php:1043
+#: admin/class-af-discount-admin.php:1138
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:201
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:360
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:179
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:397
+msgid "Guest"
+msgstr "Vendég"
 
-#: admin/settings/class-admin-drpc-settings.php:365
-msgid "Choose selected List background color."
-msgstr "Válassza ki a kijelölt lista háttérszínét."
+#: admin/class-af-discount-admin.php:986
+#: admin/class-af-discount-admin.php:1236
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:302
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:402
+msgid "Fixed price "
+msgstr "Fix ár "
 
-#: admin/settings/class-admin-drpc-settings.php:373
-msgid "Choose selected List text color."
-msgstr "Válassza ki a kijelölt lista szövegszínét."
+#: admin/class-af-discount-admin.php:987
+#: admin/class-af-discount-admin.php:1143
+#: admin/class-af-discount-admin.php:1189
+#: admin/class-af-discount-admin.php:1237
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:129
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:206
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:303
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:403
+msgid "Fixed increase"
+msgstr "Rögzített összegű növelés"
 
-#: admin/settings/class-admin-drpc-settings.php:405
-msgid "Choose selected card border color."
-msgstr "Válassza ki a kijelölt kártya szegélyszínét."
+#: admin/class-af-discount-admin.php:988
+#: admin/class-af-discount-admin.php:1144
+#: admin/class-af-discount-admin.php:1190
+#: admin/class-af-discount-admin.php:1238
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:130
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:207
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:304
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:404
+msgid "Fixed decrease"
+msgstr "Rögzített összegű csökkentés"
+
+#: admin/class-af-discount-admin.php:989
+#: admin/class-af-discount-admin.php:1145
+#: admin/class-af-discount-admin.php:1191
+#: admin/class-af-discount-admin.php:1239
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:131
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:208
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:305
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:405
+msgid "Percentage increase"
+msgstr "Százalékos növelés"
+
+#: admin/class-af-discount-admin.php:990
+#: admin/class-af-discount-admin.php:1146
+#: admin/class-af-discount-admin.php:1192
+#: admin/class-af-discount-admin.php:1240
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:132
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:209
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:306
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:406
+msgid "Percentage decrease"
+msgstr "Százalékos csökkentés"
+
+#: admin/class-af-discount-admin.php:1032
+#: admin/class-af-discount-admin.php:1127
+msgid "Choose user role... "
+msgstr "Válassza ki a felhasználói szerepkört... "
+
+#: admin/class-af-discount-admin.php:1272
+msgid "Start Date of rule"
+msgstr "A szabály kezdő dátuma"
+
+#: admin/class-af-discount-admin.php:1273
+msgid "End Date of rule"
+msgstr "A szabály befejezésének dátuma"
+
+#: admin/class-af-discount-admin.php:1274
+#: dynamic-pricing-and-discounts.php:243 dynamic-pricing-and-discounts.php:278
+msgid "Rule order"
+msgstr "Szabály sorrendje"
+
+#: admin/class-af-discount-admin.php:1275
+msgid "Rule priority "
+msgstr "Szabály prioritása "
+
+#: admin/class-af-discount-admin.php:1310
+msgid "Must Apply "
+msgstr "Alkalmazása kötelező "
+
+#: admin/class-af-discount-admin.php:1318
+msgid "Follow Sequence "
+msgstr "Sorrend követése "
+
+#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:9
+#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:9
+msgid "Choose product selection method"
+msgstr "Válassza ki a termékválasztás módját"
+
+#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:13
+#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:13
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:91
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:227
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:58
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:90
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:234
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:58
+msgid "All Products"
+msgstr "Összes termék"
+
+#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:14
+#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:14
+msgid "Specific Products"
+msgstr "Konkrét termékek"
+
+#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:17
+msgid "Choose product selection method for cart rule"
+msgstr "Válassza ki a termékválasztás módját a kosárszabályhoz"
+
+#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:22
+#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:22
+msgid "Choose products"
+msgstr "Válassza ki a termékeket"
+
+#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:26
+#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:26
+msgid "Choose Products..."
+msgstr "Termékek kiválasztása..."
 
 #: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:40
 msgid "Choose specific products for cart rule"
 msgstr "Válassza ki a konkrét termékeket a kosárszabályhoz"
 
-#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:40
-msgid "Choose specific products for product rule"
-msgstr "Válassza ki a konkrét termékeket a termékszabályhoz"
+#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:45
+#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:45
+msgid "Choose product categories"
+msgstr "Válassza ki a termékkategóriákat"
 
-#: admin/settings/class-admin-drpc-settings.php:149
-msgid ""
-"Choose style for pricing table shown on product page (Only Applicable for "
-"table)"
-msgstr ""
-"Válassza ki a termékoldalon megjelenő árazási táblázat stílusát (Csak a "
-"táblázatra érvényes)"
+#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:64
+msgid "Choose categories for cart rule"
+msgstr "Kategóriák kiválasztása a kosárszabályhoz"
 
-#: admin/settings/class-admin-drpc-settings.php:316
-msgid "Choose table border color."
-msgstr "Válassza ki a táblázat szegélyszínét."
+#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:69
+#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:70
+msgid "Choose product brands"
+msgstr "Válassza ki a termékmárkákat"
 
-#: admin/settings/class-admin-drpc-settings.php:292
-msgid "Choose table even rows background color."
-msgstr "Válassza ki a táblázat páros sorainak háttérszínét."
-
-#: admin/settings/class-admin-drpc-settings.php:300
-msgid "Choose table even rows text color."
-msgstr "Válassza ki a táblázat páros sorainak szövegszínét."
-
-#: admin/settings/class-admin-drpc-settings.php:260
-msgid "Choose table header background color."
-msgstr "Válassza ki a táblázat fejlécének háttérszínét."
-
-#: admin/settings/class-admin-drpc-settings.php:268
-msgid "Choose table header text color."
-msgstr "Válassza ki a táblázat fejlécének szövegszínét."
-
-#: admin/settings/class-admin-drpc-settings.php:276
-msgid "Choose table odd rows background color."
-msgstr "Válassza ki a táblázat páratlan sorainak háttérszínét."
-
-#: admin/settings/class-admin-drpc-settings.php:284
-msgid "Choose table odd rows text color."
-msgstr "Válassza ki a táblázat páratlan sorainak szövegszínét."
-
-#: admin/settings/class-admin-drpc-settings.php:92
-msgid "Choose the discount setting for sale price product "
-msgstr "Válassza ki az akciós árú termék kedvezmény beállítását "
-
-#: admin/settings/class-admin-drpc-settings.php:80
-msgid "Choose type of rules applied for cart discount rules "
-msgstr "Válassza ki a kosárkedvezmény-szabályok alkalmazási típusát "
-
-#: admin/settings/class-admin-drpc-settings.php:68
-msgid "Choose type of rules applied for product discount rules "
-msgstr "Válassza ki a termékkedvezmény-szabályok alkalmazási típusát "
-
-#: admin/class-af-discount-admin.php:750 admin/class-af-discount-admin.php:845
-msgid "Choose user role... "
-msgstr "Válassza ki a felhasználói szerepkört... "
-
-#: admin/class-af-discount-admin.php:116
-msgid "Custom field deleted."
-msgstr "Egyéni mező törölve."
-
-#: admin/class-af-discount-admin.php:115
-msgid "Custom field updated."
-msgstr "Egyéni mező frissítve."
-
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:79
-msgid "Customer"
-msgstr "Vásárló"
-
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:84
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:244
-msgid "Customers"
-msgstr "Vásárlók"
-
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:243
-msgid "Customers "
-msgstr "Vásárlók "
-
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:28
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:30
-msgid "Days for discount"
-msgstr "Kedvezmény napjai"
-
-#: front/class-af-cart-discount-front.php:729
-#: front/class-af-cart-discount-front.php:739
-#: front/class-af-cart-discount-front.php:751
-#: front/class-af-cart-discount-front.php:1252
-msgid "Discount"
-msgstr "Kedvezmény"
-
-#: admin/class-af-discount-admin.php:322 admin/class-af-discount-admin.php:353
-msgid "Discount Adjustments"
-msgstr "Kedvezmény módosításai"
-
-#: admin/class-af-discount-admin.php:316 admin/class-af-discount-admin.php:347
-msgid "Discount Settings"
-msgstr "Kedvezmény beállításai"
+#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:88
+msgid "Choose brands for cart rule"
+msgstr "Válassza ki a kosárszabályhoz tartozó márkákat"
 
 #: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:64
 #: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:61
 msgid "Discount rule type"
 msgstr "Kedvezményszabály típusa"
 
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:69
-msgid "Dynamic Adjustment Based on Cart Amount"
-msgstr "Dinamikus módosítás a kosár összege alapján"
-
 #: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:68
 msgid "Dynamic Adjustment Based on Cart Quantity"
 msgstr "Dinamikus módosítás a kosár mennyisége alapján"
 
-#: admin/settings/class-admin-drpc-settings.php:24
-msgid "Dynamic Pricing"
-msgstr "Dinamikus árazás"
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:69
+msgid "Dynamic Adjustment Based on Cart Amount"
+msgstr "Dinamikus módosítás a kosár összege alapján"
 
-#: dynamic-pricing-and-discounts.php:226 dynamic-pricing-and-discounts.php:261
-msgid "Dynamic Pricing & Discounts"
-msgstr "Dinamikus árazás és kedvezmények"
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:70
+msgid "Gift a Product based on Quantity"
+msgstr "Mennyiség alapján adott ajándéktermék"
 
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:65
-msgid "Dynamic pricing adjustment"
-msgstr "Dinamikus árazási módosítás"
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:71
+msgid "Gift a Product based on Amount"
+msgstr "Összeg alapján adott ajándéktermék"
 
-#: dynamic-pricing-and-discounts.php:252
-msgid "Edit Cart Rule"
-msgstr "Kosárszabály szerkesztése"
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:73
+msgid "Select a type for products and users for discount in cart"
+msgstr "Válassza ki a kosárban lévő termékekre és felhasználókra vonatkozó kedvezmény típusát"
 
-#: dynamic-pricing-and-discounts.php:217
-msgid "Edit Product Rule"
-msgstr "Termékszabály szerkesztése"
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:84
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:244
+msgid "Customers"
+msgstr "Vásárlók"
 
-#: admin/settings/class-admin-drpc-settings.php:409
-msgid "Enable Sale Tag"
-msgstr "Akciócímke engedélyezése"
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:87
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:166
+msgid "Adjustment Type"
+msgstr "Kiigazítás típusa"
 
-#: admin/settings/class-admin-drpc-settings.php:248
-msgid "Enable Save Column"
-msgstr "Megtakarítás oszlop engedélyezése"
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:90
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:169
+msgid "Value"
+msgstr "Érték"
 
-#: admin/settings/class-admin-drpc-settings.php:304
-msgid "Enable Table Border"
-msgstr "Táblázatszegély engedélyezése"
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:93
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:172
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:253
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:327
+msgid "Min Required"
+msgstr "Szükséges minimum"
 
-#: admin/settings/class-admin-drpc-settings.php:114
-msgid "Enable Tax on Fee (applies tax to fee amount)"
-msgstr "Díj adóztatásának engedélyezése (adót alkalmaz a díj összegére)"
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:96
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:175
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:256
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:330
+msgid "Max Required"
+msgstr "Szükséges maximum"
 
-#: admin/settings/class-admin-drpc-settings.php:194
-msgid "Enable Template Heading"
-msgstr "Sablon fejlécének engedélyezése"
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:163
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:143
+msgid "User Role"
+msgstr "Felhasználói szerepkör"
 
-#: admin/settings/class-admin-drpc-settings.php:215
-msgid "Enable Template Icon"
-msgstr "Sablon ikonjának engedélyezése"
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:247
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:321
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:82
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:146
+msgid "Gift Product"
+msgstr "Ajándéktermék"
 
-#: admin/settings/class-admin-drpc-settings.php:308
-msgid "Enable if do you want to use table border as a separator."
-msgstr ""
-"Engedélyezze, ha a táblázatszegélyt elválasztóként szeretné használni."
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:250
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:324
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:85
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:149
+msgid "Gift Quantity"
+msgstr "Ajándékmennyiség"
 
-#: admin/settings/class-admin-drpc-settings.php:413
-msgid "Enable sale tag for card."
-msgstr "Akció címke engedélyezése a kártyán."
+#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:318
+msgid "User Roles"
+msgstr "Felhasználói szerepkörök"
 
-#: admin/settings/class-admin-drpc-settings.php:252
-msgid "Enable save column in pricing table."
-msgstr "Megtakarítás oszlop engedélyezése az árazási táblázatban."
-
-#: admin/settings/class-admin-drpc-settings.php:197
-msgid "Enable the heading for template."
-msgstr "Sablon fejlécének engedélyezése."
-
-#: admin/settings/class-admin-drpc-settings.php:218
-msgid "Enable the icon for template."
-msgstr "Sablon ikonjának engedélyezése."
-
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:111
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:117
-msgid "End Date OF Rule"
-msgstr "Szabály végdátuma"
-
-#: admin/class-af-discount-admin.php:991
-msgid "End Date of rule"
-msgstr "Szabály végdátuma"
-
-#: admin/settings/class-admin-drpc-settings.php:240
-msgid "Enter Font Family for Template"
-msgstr "Adja meg a sablon betűcsaládját"
-
-#: admin/metaboxes/cart-rule/disc-rpc-messages-settings.php:33
-msgid ""
-"Enter congratulation message which will show to when discount is applied"
-msgstr ""
-"Adja meg a gratuláló üzenetet, amely a kedvezmény alkalmazásakor jelenik meg"
-
-#: admin/metaboxes/product-rule/disc-rpc-messages-settings.php:32
-msgid ""
-"Enter congratulation message which will show to when discount is applied."
-msgstr ""
-"Adja meg a gratuláló üzenetet, amely a kedvezmény alkalmazásakor jelenik "
-"meg."
-
-#: admin/settings/class-admin-drpc-settings.php:324
-msgid ""
-"Enter font size for table header, by default theme values will be inherited."
-msgstr ""
-"Adja meg a táblázat fejléce betűméretét, alapértelmezés szerint a téma "
-"értékei öröklődnek."
-
-#: admin/settings/class-admin-drpc-settings.php:332
-msgid ""
-"Enter font size for table rows, by default theme values will be inherited."
-msgstr ""
-"Adja meg a táblázatsorok betűméretét, alapértelmezés szerint a téma értékei "
-"öröklődnek."
-
-#: admin/settings/class-admin-drpc-settings.php:211
-msgid ""
-"Enter font size for template heading, by default theme values will be "
-"inherited."
-msgstr ""
-"Adja meg a sablon fejlécének betűméretét, alapértelmezés szerint a téma "
-"értékei öröklődnek."
+#: admin/metaboxes/cart-rule/disc-rpc-messages-settings.php:9
+#: admin/metaboxes/product-rule/disc-rpc-messages-settings.php:9
+msgid "Message for before discount applied"
+msgstr "Üzenet a kedvezmény alkalmazása előtt"
 
 #: admin/metaboxes/cart-rule/disc-rpc-messages-settings.php:14
 msgid ""
@@ -598,6 +533,298 @@ msgstr ""
 "Adja meg azt az üzenetet, amely a felhasználót a kedvezmény igénybevételéhez"
 " szükséges hátralévő feltételekről tájékoztatja"
 
+#: admin/metaboxes/cart-rule/disc-rpc-messages-settings.php:18
+msgid ""
+"Use {req_products} for required products, {cart_qty} for current cart quantity / price, \r\n"
+"\t\t\t\t\t{product_names} for product names of selected in cart , {rem_qty} for remaining quantity to get discount \r\n"
+"\t\t\t\t\t, {start_date} for start date of discount rule , {end_date} for ending of discount rule  and {min_spent_amount} \r\n"
+"\t\t\t\t\tfor informing user about min spent amount to get discount from rule"
+msgstr "Használja így: {req_products} a kötelező termékekhez, {cart_qty} az aktuális kosár mennyiségéhez/árához, \r\n\t\t\t\t\t{product_names} a kosárban kiválasztott termékek nevéhez, {rem_qty} a kedvezményhez szükséges hátralévő mennyiséghez, \r\n\t\t\t\t\t{start_date} a kedvezményszabály kezdő dátumához, {end_date} a kedvezményszabály befejezésének dátumához és {min_spent_amount} \r\n\t\t\t\t\ta felhasználó tájékoztatására a szabály szerinti kedvezményhez szükséges minimális költési összegről"
+
+#: admin/metaboxes/cart-rule/disc-rpc-messages-settings.php:28
+#: admin/metaboxes/product-rule/disc-rpc-messages-settings.php:27
+msgid "Message for after discount applied"
+msgstr "Üzenet a kedvezmény alkalmazása után"
+
+#: admin/metaboxes/cart-rule/disc-rpc-messages-settings.php:33
+msgid ""
+"Enter congratulation message which will show to when discount is applied"
+msgstr ""
+"Adja meg a gratuláló üzenetet, amely a kedvezmény alkalmazásakor jelenik meg"
+
+#: admin/metaboxes/cart-rule/disc-rpc-messages-settings.php:37
+msgid ""
+"Use  {cart_qty} for current cart quantity / price, {product_names} for product names of selected in cart , \r\n"
+"\t\t\t\t\t\t{rem_qty} for remaining quantity to get discount,  {start_date} for start date of discount rule , {end_date} for \r\n"
+"\t\t\t\t\t\tending of discount rule, {gift_products} for gift products in conditional discount,  {rec_discount} for the discount\r\n"
+"\t\t\t\t\t\t user have received and {min_spent_amount} for informing  user about min spent amount to get discount from rule"
+msgstr "Használja így: {cart_qty} az aktuális kosár mennyiségéhez/árához, {product_names} a kosárban kiválasztott termékek nevéhez, \r\n\t\t\t\t\t\t{rem_qty} a kedvezményhez szükséges hátralévő mennyiséghez, {start_date} a kedvezményszabály kezdő dátumához, {end_date} a \r\n\t\t\t\t\t\tkedvezményszabály befejezésének dátumához, {gift_products} a feltételes kedvezmény ajándéktermékeihez, {rec_discount} a \r\n\t\t\t\t\t\tfelhasználó által kapott kedvezményhez és {min_spent_amount} a felhasználó tájékoztatására a szabály szerinti kedvezményhez szükséges minimális költési összegről"
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:16
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:16
+msgid "Rule priority"
+msgstr "Szabály prioritása"
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:20
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:20
+msgid "Follow sequence"
+msgstr "Sorrend követése"
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:21
+msgid "This rule must be applied."
+msgstr "Ezt a szabályt kötelező alkalmazni."
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:28
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:30
+msgid "Days for discount"
+msgstr "Kedvezmény napjai"
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:32
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:34
+msgid "All days"
+msgstr "Minden nap"
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:33
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:35
+msgid "Specific days"
+msgstr "Konkrét napok"
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:43
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:47
+msgid "Monday"
+msgstr "Hétfő"
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:51
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:55
+msgid "Tuesday"
+msgstr "Kedd"
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:59
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:63
+msgid "Wednesday"
+msgstr "Szerda"
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:67
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:71
+msgid "Thursday"
+msgstr "Csütörtök"
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:76
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:80
+msgid "Friday"
+msgstr "Péntek"
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:84
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:88
+msgid "Saturday"
+msgstr "Szombat"
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:92
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:96
+msgid "Sunday"
+msgstr "Vasárnap"
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:101
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:107
+msgid "Start date of rule"
+msgstr "Szabály kezdő dátuma"
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:105
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:111
+msgid "Select start Date for discount on products"
+msgstr "Válassza ki a termékekre vonatkozó kedvezmény kezdő dátumát"
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:111
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:117
+msgid "End date of rule"
+msgstr "Szabály befejezésének dátuma"
+
+#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:115
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:121
+msgid "Select end Date for discount on products"
+msgstr "Válassza ki a termékekre vonatkozó kedvezmény befejezési dátumát"
+
+#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:13
+#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:13
+msgid "Minimum spent"
+msgstr "Minimális költési összeg"
+
+#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:17
+#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:17
+msgid "Ignore amount spend by user"
+msgstr "A felhasználó által elköltött összeg figyelmen kívül hagyása"
+
+#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:18
+#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:18
+msgid "Amount spent up till now"
+msgstr "Eddig elköltött összeg"
+
+#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:19
+#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:19
+msgid "Select start and end date"
+msgstr "Válassza ki a kezdő dátumot és a befejezés dátumát"
+
+#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:21
+#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:21
+msgid "Choose a method for minimum amount spent by user to get discount"
+msgstr ""
+"Válassza ki a kedvezményhez szükséges felhasználói minimális költés "
+"meghatározásának módját"
+
+#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:27
+#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:27
+msgid "Minimum spent amount by user"
+msgstr "Felhasználónkénti minimális költési összeg"
+
+#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:31
+#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:31
+msgid "Enter minimum amount spent by user to get discount"
+msgstr "Adja meg a kedvezményhez szükséges, felhasználónkénti minimális költési összeget"
+
+#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:37
+#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:37
+msgid "Minimum spent amount start date"
+msgstr "Minimális költési összeg kezdő dátuma"
+
+#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:41
+#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:41
+msgid "Select start date of minimum amount spent by user to get discount"
+msgstr ""
+"Válassza ki a kedvezményhez szükséges felhasználói minimális költés kezdő "
+"dátumát"
+
+#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:47
+#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:47
+msgid "Minimum spent amount end date"
+msgstr "Minimális költési összeg végdátuma"
+
+#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:51
+#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:51
+msgid "Select end date of minimum amount spent by user to get discount"
+msgstr "Válassza ki a kedvezményhez szükséges, felhasználói minimális költési összeg befejezésének dátumát"
+
+#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:17
+msgid "Choose product selection method for product rule"
+msgstr "Válassza ki a termékválasztás módját a termékszabályhoz"
+
+#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:40
+msgid "Choose specific products for product rule"
+msgstr "Válassza ki a konkrét termékeket a termékszabályhoz"
+
+#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:65
+msgid "Choose categories for product rule"
+msgstr "Válassza ki a kategóriákat a termékszabályhoz"
+
+#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:90
+msgid "Choose brands for product rule"
+msgstr "Válassza ki a márkákat a termékszabályhoz"
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:65
+msgid "Dynamic pricing adjustment"
+msgstr "Dinamikus árkorrekció"
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:66
+msgid "Gift a Product"
+msgstr "Termék ajándékozása"
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:68
+msgid "Select a type for product and users for discount"
+msgstr "Válassza ki a termékekre és a felhasználókra vonatkozó kedvezmény típusát"
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:74
+msgid "Select gift products in table for specific users"
+msgstr ""
+"Válasszon ajándéktermékeket a táblázatban meghatározott felhasználók számára"
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:79
+msgid "Customer"
+msgstr "Vásárló"
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:88
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:152
+msgid "Min (Qty)"
+msgstr "Minimum (menny.)"
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:138
+msgid "Select gift products for user roles"
+msgstr "Válasszon ajándéktermékeket felhasználói szerepkörökhöz"
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:212
+msgid "Show pricing template"
+msgstr "Árazási sablon megjelenítése"
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:218
+msgid "Check if you want to show pricing template on product page"
+msgstr ""
+"Jelölje be, ha az árképzési sablont szeretné megjeleníteni a termékoldalon"
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:224
+msgid "Choose pricing template"
+msgstr "Válassza ki az árazási sablont"
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:228
+#: admin/settings/class-admin-drpc-settings.php:182
+msgid "Table"
+msgstr "Táblázat"
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:229
+#: admin/settings/class-admin-drpc-settings.php:183
+msgid "Card"
+msgstr "Kártya"
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:230
+#: admin/settings/class-admin-drpc-settings.php:184
+msgid "List"
+msgstr "Lista"
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:233
+msgid "Choose pricing template for product page"
+msgstr "Válassza ki a termékoldal árazási sablonját"
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:238
+msgid "Select discounts for specific customers "
+msgstr "Válasszon kedvezményeket meghatározott vásárlók számára "
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:243
+msgid "Customers "
+msgstr "Vásárlók "
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:246
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:347
+msgid "Adjustment Type "
+msgstr "Kiigazítás típusa "
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:249
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:350
+msgid "Value "
+msgstr "Érték "
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:252
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:353
+msgid "Min (Qty) "
+msgstr "Minimum (menny.) "
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:255
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:356
+msgid "Max (Qty) "
+msgstr "Maximum (menny.) "
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:258
+msgid "Replace price"
+msgstr "Ár felülírása"
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:340
+msgid "Select discounts for user roles "
+msgstr "Válasszon kedvezményeket felhasználói szerepkörökhöz "
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:344
+msgid "User Role "
+msgstr "Felhasználói szerepkör "
+
+#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:359
+msgid "Replace Price"
+msgstr "Ár cseréje"
+
 #: admin/metaboxes/product-rule/disc-rpc-messages-settings.php:14
 msgid ""
 "Enter message which will show to inform user about remaining discount "
@@ -606,692 +833,1136 @@ msgstr ""
 "Adja meg azt az üzenetet, amely a felhasználót a kedvezmény igénybevételéhez"
 " szükséges hátralévő feltételekről tájékoztatja. "
 
-#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:29
-#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:29
-msgid "Enter minimum amount spent by user to get discount"
-msgstr "Adja meg a kedvezményhez szükséges minimális költési összeget"
-
-#: admin/settings/class-admin-drpc-settings.php:204
-msgid "Enter template heading text."
-msgstr "Adja meg a sablon fejlécének szövegét."
-
-#: front/class-af-front-ajax-controller.php:25
-#: front/class-af-front-ajax-controller.php:69
-msgid "Failed security check!"
-msgstr "Sikertelen biztonsági ellenőrzés!"
-
-#: front/class-af-cart-discount-front.php:735
-#: front/class-af-cart-discount-front.php:745
-#: front/class-af-cart-discount-front.php:757
-#: front/class-af-cart-discount-front.php:1258
-msgid "Fees"
-msgstr "Díjak"
-
-#: admin/class-af-discount-admin.php:706 admin/class-af-discount-admin.php:862
-#: admin/class-af-discount-admin.php:908 admin/class-af-discount-admin.php:956
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:130
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:207
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:304
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:404
-msgid "Fixed decrease"
-msgstr "Fix csökkentés"
-
-#: admin/class-af-discount-admin.php:705 admin/class-af-discount-admin.php:861
-#: admin/class-af-discount-admin.php:907 admin/class-af-discount-admin.php:955
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:129
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:206
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:303
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:403
-msgid "Fixed increase"
-msgstr "Fix növelés"
-
-#: admin/class-af-discount-admin.php:704 admin/class-af-discount-admin.php:954
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:302
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:402
-msgid "Fixed price "
-msgstr "Fix ár "
-
-#: admin/class-af-discount-admin.php:1036
-msgid "Follow Sequence "
-msgstr "Sorrend követése "
-
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:20
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:20
-msgid "Follow sequence"
-msgstr "Sorrend követése"
-
-#: admin/settings/class-admin-drpc-settings.php:71
-#: admin/settings/class-admin-drpc-settings.php:82
-msgid "Follow the priority sequence"
-msgstr "Prioritási sorrend követése"
-
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:76
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:80
-msgid "Friday"
-msgstr "Péntek"
-
-#: admin/class-af-discount-admin.php:205 admin/class-af-discount-admin.php:221
-#: admin/settings/class-admin-drpc-settings.php:36
-#: admin/settings/class-admin-drpc-settings.php:59
-msgid "General Settings"
-msgstr "Általános beállítások"
-
-#: front/class-af-product-discount-front.php:2014
-#: front/class-af-product-discount-front.php:2026
-#: front/class-af-cart-discount-front.php:1518
-#: front/class-af-cart-discount-front.php:1529
-msgid "Gift "
-msgstr "Ajándék "
-
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:247
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:321
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:82
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:146
-msgid "Gift Product"
-msgstr "Ajándéktermék"
-
-#: admin/settings/class-admin-drpc-settings.php:69
-msgid "Gift Products will be added by sequence of rules "
-msgstr "Az ajándéktermékek a szabályok sorrendjében kerülnek hozzáadásra "
-
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:250
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:324
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:85
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:149
-msgid "Gift Quantity"
-msgstr "Ajándékmennyiség"
-
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:66
-msgid "Gift a Product"
-msgstr "Termék ajándékozása"
-
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:71
-msgid "Gift a Product based on Amount"
-msgstr "Termék ajándékozása összeg alapján"
-
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:70
-msgid "Gift a Product based on Quantity"
-msgstr "Termék ajándékozása mennyiség alapján"
-
-#: admin/class-af-discount-admin.php:647 admin/class-af-discount-admin.php:699
-#: admin/class-af-discount-admin.php:761 admin/class-af-discount-admin.php:856
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:201
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:360
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:179
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:397
-msgid "Guest"
-msgstr "Vendég"
-
-#: admin/settings/class-admin-drpc-settings.php:152
-msgid "Horizontal table"
-msgstr "Vízszintes táblázat"
-
-#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:15
-#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:15
-msgid "Ignore amount spend by user"
-msgstr "A felhasználó által elköltött összeg figyelmen kívül hagyása"
-
-#: admin/settings/class-admin-drpc-settings.php:96
-msgid "Ignore discount"
-msgstr "Kedvezmény figyelmen kívül hagyása"
-
-#: admin/settings/class-admin-drpc-settings.php:111
-msgid "Is taxable"
-msgstr "Adóköteles"
-
-#: admin/settings/class-admin-drpc-settings.php:146
-msgid "Layout of tier table pricing"
-msgstr "Sávos árképzési táblázat elrendezése"
-
-#: admin/settings/class-admin-drpc-settings.php:180
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:230
-msgid "List"
-msgstr "Lista"
-
-#: admin/settings/class-admin-drpc-settings.php:345
-msgid "List Background Color"
-msgstr "Lista háttérszíne"
-
-#: admin/settings/class-admin-drpc-settings.php:337
-msgid "List Border Color"
-msgstr "Lista szegélyszíne"
-
-#: admin/settings/class-admin-drpc-settings.php:353
-msgid "List Text Color"
-msgstr "Lista szövegszíne"
-
-#: admin/settings/class-admin-drpc-settings.php:135
-msgid "Location for tier pricing template"
-msgstr "Sávos árképzési sablon helye"
-
-#: admin/class-af-discount-admin.php:128
-msgid "M j, Y @ G:i"
-msgstr "M j, Y @ G:i"
-
-#: front/class-af-product-discount-front.php:3360
-msgid "Max"
-msgstr "Maximum"
-
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:255
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:356
-msgid "Max (Qty) "
-msgstr "Maximum (menny.) "
-
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:96
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:175
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:256
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:330
-msgid "Max Required"
-msgstr "Szükséges maximum"
-
-#: admin/class-af-discount-admin.php:334
-msgid "Message Settings"
-msgstr "Üzenetbeállítások"
-
-#: admin/metaboxes/cart-rule/disc-rpc-messages-settings.php:28
-#: admin/metaboxes/product-rule/disc-rpc-messages-settings.php:27
-msgid "Message for after discount applied"
-msgstr "Üzenet a kedvezmény alkalmazása után"
-
-#: admin/metaboxes/cart-rule/disc-rpc-messages-settings.php:9
-#: admin/metaboxes/product-rule/disc-rpc-messages-settings.php:9
-msgid "Message for before discount applied"
-msgstr "Üzenet a kedvezmény alkalmazása előtt"
-
-#: admin/class-af-discount-admin.php:365
-msgid "Messages Settings"
-msgstr "Üzenetek beállításai"
-
-#: front/class-af-product-discount-front.php:3359
-msgid "Min"
-msgstr "Minimum"
-
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:88
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:152
-msgid "Min (Qty)"
-msgstr "Minimum (menny.)"
-
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:252
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:353
-msgid "Min (Qty) "
-msgstr "Minimum (menny.) "
-
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:93
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:172
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:253
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:327
-msgid "Min Required"
-msgstr "Szükséges minimum"
-
-#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:11
-#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:11
-msgid "Minimum spent"
-msgstr "Minimális költési összeg"
-
-#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:25
-#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:25
-msgid "Minimum spent amount by user"
-msgstr "Felhasználónkénti minimális költési összeg"
-
-#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:45
-#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:45
-msgid "Minimum spent amount end date"
-msgstr "Minimális költési összeg végdátuma"
-
-#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:35
-#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:35
-msgid "Minimum spent amount start date"
-msgstr "Minimális költési összeg kezdő dátuma"
-
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:43
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:47
-msgid "Monday"
-msgstr "Hétfő"
-
-#: admin/settings/class-admin-drpc-settings.php:100
-msgid "Multi rules selection"
-msgstr "Több szabály kiválasztása"
-
-#: admin/class-af-discount-admin.php:1028
-msgid "Must Apply "
-msgstr "Kötelező alkalmazni "
-
-#: dynamic-pricing-and-discounts.php:253
-msgid "New Cart Rule"
-msgstr "Új kosárszabály"
-
-#: dynamic-pricing-and-discounts.php:218
-msgid "New Product Rule"
-msgstr "Új termékszabály"
-
-#: dynamic-pricing-and-discounts.php:222 dynamic-pricing-and-discounts.php:257
-msgid "No rule found"
-msgstr "Nem található szabály"
-
-#: dynamic-pricing-and-discounts.php:223 dynamic-pricing-and-discounts.php:258
-msgid "No rule found in trash"
-msgstr "A Lomtárban nem található szabály"
-
-#: admin/class-af-discount-admin.php:708 admin/class-af-discount-admin.php:864
-#: admin/class-af-discount-admin.php:910 admin/class-af-discount-admin.php:958
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:132
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:209
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:306
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:406
-msgid "Percentage decrease"
-msgstr "Százalékos csökkentés"
-
-#: admin/class-af-discount-admin.php:707 admin/class-af-discount-admin.php:863
-#: admin/class-af-discount-admin.php:909 admin/class-af-discount-admin.php:957
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:131
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:208
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:305
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:405
-msgid "Percentage increase"
-msgstr "Százalékos növelés"
-
-#: front/class-af-product-discount-front.php:3361
-#: front/class-af-product-discount-front.php:3564
-msgid "Price"
-msgstr "Ár"
-
-#: admin/settings/class-admin-drpc-settings.php:89
-msgid "Price for sale price products"
-msgstr "Akciós árú termékek ára"
-
-#: admin/settings/class-admin-drpc-settings.php:174
-msgid "Pricing Design Template "
-msgstr "Árazási dizájn sablon "
-
-#: admin/settings/class-admin-drpc-settings.php:38
-#: admin/settings/class-admin-drpc-settings.php:164
-msgid "Pricing Template Design"
-msgstr "Árazási sablon dizájnja"
-
-#: admin/settings/class-admin-drpc-settings.php:37
-#: admin/settings/class-admin-drpc-settings.php:128
-msgid "Pricing Template Settings"
-msgstr "Árazási sablon beállításai"
-
-#: admin/settings/class-admin-drpc-settings.php:77
-msgid "Priority of cart rules"
-msgstr "Kosárszabályok prioritása"
-
-#: admin/settings/class-admin-drpc-settings.php:65
-msgid "Priority of product rules"
-msgstr "Termékszabályok prioritása"
-
-#: dynamic-pricing-and-discounts.php:187
-msgid "Product Dynamic Pricing and Discounts is inactive."
-msgstr "A Product Dynamic Pricing and Discounts inaktív."
-
-#: dynamic-pricing-and-discounts.php:213 dynamic-pricing-and-discounts.php:214
-#: dynamic-pricing-and-discounts.php:225 admin/class-af-discount-admin.php:227
-#: admin/class-af-discount-admin.php:269 admin/class-af-discount-admin.php:270
-#: admin/settings/class-admin-drpc-settings.php:39
-msgid "Product Pricing Rules"
-msgstr "Termékárazási szabályok"
-
-#: front/class-af-product-discount-front.php:3526
-msgid "Range (Qty)"
-msgstr "Tartomány (menny.)"
-
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:359
-msgid "Replace Price"
-msgstr "Ár cseréje"
-
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:258
-msgid "Replace price"
-msgstr "Ár cseréje"
-
-#: admin/settings/class-admin-drpc-settings.php:433
-msgid "Reset"
-msgstr "Visszaállítás"
-
-#: admin/class-af-discount-admin.php:328 admin/class-af-discount-admin.php:359
-msgid "Rule Settings"
-msgstr "Szabálybeállítások"
-
-#: dynamic-pricing-and-discounts.php:227 dynamic-pricing-and-discounts.php:262
-#: admin/class-af-discount-admin.php:992
-msgid "Rule order"
-msgstr "Szabály sorrendje"
-
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:16
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:16
-msgid "Rule priority"
-msgstr "Szabály prioritása"
-
-#: admin/class-af-discount-admin.php:993
-msgid "Rule priority "
-msgstr "Szabály prioritása "
-
-#: admin/settings/class-admin-drpc-settings.php:417
-msgid "Sale Tag Background Color"
-msgstr "Akció címke háttérszíne"
-
-#: admin/settings/class-admin-drpc-settings.php:425
-msgid "Sale Tag Text Color"
-msgstr "Akció címke szövegszíne"
-
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:84
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:88
-msgid "Saturday"
-msgstr "Szombat"
-
-#: front/class-af-product-discount-front.php:3362
-#: front/class-af-product-discount-front.php:3588
-msgid "Save"
-msgstr "Mentés"
-
-#: dynamic-pricing-and-discounts.php:255
-msgid "Search Cart Rule"
-msgstr "Kosárszabály keresése"
-
-#: dynamic-pricing-and-discounts.php:220
-msgid "Search Product Rule"
-msgstr "Termékszabály keresése"
-
-#: admin/class-af-discount-admin.php:442 admin/class-af-discount-admin.php:472
-msgid "Security Violated !"
-msgstr "Biztonság megsértve !"
-
-#: admin/class-af-discount-admin.php:310 admin/class-af-discount-admin.php:341
-msgid "Select Product and Categories"
-msgstr "Válassza ki a terméket és a kategóriákat"
-
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:68
-msgid "Select a type for product and users for discount"
-msgstr "Válasszon típust a termékhez és a felhasználókhoz a kedvezményhez"
-
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:73
-msgid "Select a type for products and users for discount in cart"
-msgstr ""
-"Válasszon típust a kosárban lévő termékekhez és felhasználókhoz a "
-"kedvezményhez"
-
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:38
-msgid "Select days setting for this rule "
-msgstr "Válassza ki a napok beállítását ehhez a szabályhoz "
-
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:238
-msgid "Select discounts for specific customers "
-msgstr "Válasszon kedvezményeket meghatározott vásárlók számára "
-
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:340
-msgid "Select discounts for user roles "
-msgstr "Válasszon kedvezményeket felhasználói szerepkörökhöz "
-
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:115
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:121
-msgid "Select end Date for discount on products"
-msgstr "Válassza ki a termékekre vonatkozó kedvezmény befejezési dátumát"
-
-#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:49
-#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:49
-msgid "Select end date of minimum amount spent by user to get discount"
-msgstr ""
-"Válassza ki a kedvezményhez szükséges felhasználói minimális költés "
-"végdátumát"
-
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:138
-msgid "Select gift products for user roles"
-msgstr "Válasszon ajándéktermékeket felhasználói szerepkörökhöz"
-
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:74
-msgid "Select gift products in table for specific users"
-msgstr ""
-"Válasszon ajándéktermékeket a táblázatban meghatározott felhasználók számára"
-
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:24
-msgid "Select priority for this rule "
-msgstr "Válasszon prioritást ehhez a szabályhoz "
-
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:100
-msgid "Select specific days for rule. "
-msgstr "Válasszon konkrét napokat a szabályhoz. "
-
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:105
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:111
-msgid "Select start Date for discount on products"
-msgstr "Válassza ki a termékekre vonatkozó kedvezmény kezdő dátumát"
-
-#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:17
-#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:17
-msgid "Select start and end date"
-msgstr "Válassza ki a kezdő és záró dátumot"
-
-#: admin/metaboxes/cart-rule/discount-rpc-customer-spent.php:39
-#: admin/metaboxes/product-rule/discount-rpc-customer-spent.php:39
-msgid "Select start date of minimum amount spent by user to get discount"
-msgstr ""
-"Válassza ki a kedvezményhez szükséges felhasználói minimális költés kezdő "
-"dátumát"
-
-#: admin/settings/class-admin-drpc-settings.php:401
-msgid "Selected Card Border Color"
-msgstr "Kiválasztott kártya szegélyszíne"
-
-#: admin/settings/class-admin-drpc-settings.php:361
-msgid "Selected List Background Color"
-msgstr "Kiválasztott lista háttérszíne"
-
-#: admin/settings/class-admin-drpc-settings.php:369
-msgid "Selected List Text Color"
-msgstr "Kiválasztott lista szövegszíne"
-
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:212
-msgid "Show Pricing Template"
-msgstr "Árazási sablon megjelenítése"
-
-#: admin/class-af-discount-admin.php:521 admin/class-af-discount-admin.php:552
-#: admin/class-af-discount-admin.php:591 admin/class-af-discount-admin.php:629
-#: admin/class-af-discount-admin.php:680 admin/class-af-discount-admin.php:743
-#: admin/class-af-discount-admin.php:796 admin/class-af-discount-admin.php:838
-#: admin/class-af-discount-admin.php:896 admin/class-af-discount-admin.php:942
-msgid "Sorry, your nonce did not verify."
-msgstr "Sajnáljuk, a nonce ellenőrzése sikertelen."
-
-#: admin/metaboxes/cart-rule/disc-rpc-choose-products.php:14
-#: admin/metaboxes/product-rule/disc-rpc-choose-products.php:14
-msgid "Specific Products"
-msgstr "Konkrét termékek"
-
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:33
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:35
-msgid "Specific days"
-msgstr "Konkrét napok"
-
-#: admin/settings/class-admin-drpc-settings.php:243
-msgid ""
-"Specify the font family for the template text, or leave it blank to use the "
-"website's default font family."
-msgstr ""
-"Adja meg a sablonszöveg betűcsaládját, vagy hagyja üresen a webhely "
-"alapértelmezett betűcsaládjának használatához."
-
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:101
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:107
-msgid "Start Date of Rule"
-msgstr "A szabály kezdő dátuma"
-
-#: admin/class-af-discount-admin.php:990
-msgid "Start Date of rule"
-msgstr "A szabály kezdő dátuma"
-
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:92
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:96
-msgid "Sunday"
-msgstr "Vasárnap"
-
-#: admin/settings/class-admin-drpc-settings.php:178
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:228
-msgid "Table"
-msgstr "Táblázat"
-
-#: admin/settings/class-admin-drpc-settings.php:312
-msgid "Table Border Color"
-msgstr "Táblázat szegélyszíne"
-
-#: admin/settings/class-admin-drpc-settings.php:288
-msgid "Table Even Rows Color"
-msgstr "Táblázat páros sorainak színe"
-
-#: admin/settings/class-admin-drpc-settings.php:296
-msgid "Table Even Rows Text Color"
-msgstr "Táblázat páros sorainak szövegszíne"
-
-#: admin/settings/class-admin-drpc-settings.php:256
-msgid "Table Header Color"
-msgstr "Táblázat fejlécének színe"
-
-#: admin/settings/class-admin-drpc-settings.php:320
-msgid "Table Header Font Size"
-msgstr "Táblázat fejlécének betűmérete"
-
-#: admin/settings/class-admin-drpc-settings.php:264
-msgid "Table Header Text Color"
-msgstr "Táblázat fejlécének szövegszíne"
-
-#: admin/settings/class-admin-drpc-settings.php:272
-msgid "Table Odd Rows Color"
-msgstr "Táblázat páratlan sorainak színe"
-
-#: admin/settings/class-admin-drpc-settings.php:280
-msgid "Table Odd Rows Text Color"
-msgstr "Táblázat páratlan sorainak szövegszíne"
-
-#: admin/settings/class-admin-drpc-settings.php:328
-msgid "Table Rows Font Size"
-msgstr "Táblázat sorainak betűmérete"
-
-#: admin/settings/class-admin-drpc-settings.php:208
-msgid "Template Heading Font Size"
-msgstr "Sablon címsorának betűmérete"
-
-#: admin/settings/class-admin-drpc-settings.php:201
-msgid "Template Heading Text"
-msgstr "Sablon címszövege"
-
-#: admin/settings/class-admin-drpc-settings.php:224
-msgid "Template Icon"
-msgstr "Sablon ikon"
-
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:21
-msgid "This rule must be applied."
-msgstr "Ezt a szabályt kötelező alkalmazni."
-
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:67
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:71
-msgid "Thursday"
-msgstr "Csütörtök"
-
-#: admin/settings/class-admin-drpc-settings.php:436
-msgid "To revert all settings to default."
-msgstr "Az összes beállítás visszaállítása alapértelmezettre."
-
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:51
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:55
-msgid "Tuesday"
-msgstr "Kedd"
-
-#: admin/metaboxes/cart-rule/disc-rpc-messages-settings.php:37
-msgid ""
-"Use  {cart_qty} for current cart quantity / price, {product_names} for product names of selected in cart , \r\n"
-"\t\t\t\t\t\t{rem_qty} for remaining quantity to get discount,  {start_date} for start date of discount rule , {end_date} for \r\n"
-"\t\t\t\t\t\tending of discount rule, {gift_products} for gift products in conditional discount,  {rec_discount} for the discount\r\n"
-"\t\t\t\t\t\t user have received and {min_spent_amount} for informing  user about min spent amount to get discount from rule"
-msgstr ""
-"Use  {cart_qty} a jelenlegi kosár mennyiségéhez / árához, {product_names} a kosárban kiválasztott terméknevekhez , \r\n"
-"\t\t\t\t\t\t{rem_qty} a kedvezményhez szükséges hátralévő mennyiséghez,  {start_date} a kedvezményszabály kezdő dátumához , {end_date} a \r\n"
-"\t\t\t\t\t\tkedvezményszabály befejező dátumához, {gift_products} a feltételes kedvezmény ajándéktermékeihez,  {rec_discount} a felhasználó által kapott kedvezményhez\r\n"
-"\t\t\t\t\t\t és {min_spent_amount} a felhasználó tájékoztatásához  a szabály szerinti kedvezményhez szükséges minimális költésről"
-
-#: admin/settings/class-admin-drpc-settings.php:84
-msgid "Use rule with highest Discount/Fees"
-msgstr "Használja a legmagasabb kedvezménnyel/díjakkal rendelkező szabályt"
-
-#: admin/settings/class-admin-drpc-settings.php:73
-msgid "Use rule with highest price"
-msgstr "Használja a legmagasabb árat eredményező szabályt"
-
-#: admin/settings/class-admin-drpc-settings.php:83
-msgid "Use rule with smaller Discount/Fees"
-msgstr "Használja a kisebb kedvezménnyel/díjakkal rendelkező szabályt"
-
-#: admin/settings/class-admin-drpc-settings.php:72
-msgid "Use rule with smaller price"
-msgstr "Használja a kisebb árat eredményező szabályt"
-
 #: admin/metaboxes/product-rule/disc-rpc-messages-settings.php:17
 msgid ""
 "Use {product_name} for product name , {product_qty} for current product quantity , {rem_qty} for \r\n"
 "\t\t\t\t\t\tremaining quantity to get discount , {discount} for discount amount , {start_date} for start date of discount rule , {end_date} for \r\n"
 "\t\t\t\t\t\tending of discount rule {gift_product} for gift products in conditional discount and {min_spent_amount}\r\n"
 "\t\t\t\t\t\tfor informing user about min spent amount to get discount from rule"
-msgstr ""
-"Use {product_name} a terméknévhez , {product_qty} az aktuális termékmennyiséghez , {rem_qty} a \r\n"
-"\t\t\t\t\t\tkedvezményhez szükséges hátralévő mennyiséghez , {discount} a kedvezmény összegéhez , {start_date} a kedvezményszabály kezdő dátumához , {end_date} a \r\n"
-"\t\t\t\t\t\tkedvezményszabály befejező dátumához {gift_product} a feltételes kedvezmény ajándéktermékeihez és {min_spent_amount}\r\n"
-"\t\t\t\t\t\ta felhasználó tájékoztatásához a szabály szerinti kedvezményhez szükséges minimális költésről"
+msgstr "A {product_name} jelölőt használja a terméknévhez, a {product_qty} jelölőt az aktuális termékmennyiséghez, a {rem_qty} jelölőt a \r\n\t\t\t\t\t\tkedvezményhez szükséges hátralévő mennyiséghez, a {discount} jelölőt a kedvezmény összegéhez, a {start_date} jelölőt a kedvezményszabály kezdő dátumához, az {end_date} jelölőt a \r\n\t\t\t\t\t\tkedvezményszabály befejező dátumához, a {gift_product} jelölőt a feltételes kedvezményben szereplő ajándéktermékekhez, valamint a {min_spent_amount}\r\n\t\t\t\t\t\tjelölőt arra használja, hogy tájékoztassa a felhasználót a szabály szerinti kedvezmény igénybevételéhez szükséges minimális költésről"
 
-#: admin/metaboxes/cart-rule/disc-rpc-messages-settings.php:18
+#: admin/metaboxes/product-rule/disc-rpc-messages-settings.php:32
 msgid ""
-"Use {req_products} for required products, {cart_qty} for current cart quantity / price, \r\n"
-"\t\t\t\t\t{product_names} for product names of selected in cart , {rem_qty} for remaining quantity to get discount \r\n"
-"\t\t\t\t\t, {start_date} for start date of discount rule , {end_date} for ending of discount rule  and {min_spent_amount} \r\n"
-"\t\t\t\t\tfor informing user about min spent amount to get discount from rule"
+"Enter congratulation message which will show to when discount is applied."
 msgstr ""
-"Use {req_products} a szükséges termékekhez, {cart_qty} a jelenlegi kosár mennyiségéhez / árához, \r\n"
-"\t\t\t\t\t{product_names} a kosárban kiválasztott terméknevekhez , {rem_qty} a kedvezményhez szükséges hátralévő mennyiséghez \r\n"
-"\t\t\t\t\t, {start_date} a kedvezményszabály kezdő dátumához , {end_date} a kedvezményszabály befejező dátumához  és {min_spent_amount} \r\n"
-"\t\t\t\t\ta felhasználó tájékoztatásához a szabály szerinti kedvezményhez szükséges minimális költésről"
+"Adja meg a gratuláló üzenetet, amely a kedvezmény alkalmazásakor jelenik "
+"meg."
 
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:163
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:143
-msgid "User Role"
-msgstr "Felhasználói szerepkör"
+#: admin/metaboxes/product-rule/disc-rpc-messages-settings.php:35
+msgid ""
+"\t Use {product_name} for product name , {req_qty} for required quantity to get discount  , {discount} \r\n"
+"\t\t\t\t\t\tfor discount amount , {start_date} for start date of discount rule , {end_date} for ending of discount rule, {gift_product}\r\n"
+"\t\t\t\t\t\tfor gift products in conditional discount and {min_spent_amount} for informing user about min spent amount to get discount \r\n"
+"\t\t\t\t\t\tfrom rule"
+msgstr "\t Használja a {product_name} jelölőt a terméknévhez, a {req_qty} jelölőt a kedvezményhez szükséges mennyiséghez, a {discount} jelölőt \r\n\t\t\t\t\t\ta kedvezmény összegéhez, a {start_date} jelölőt a kedvezményszabály kezdő dátumához, az {end_date} jelölőt a kedvezményszabály befejező dátumához, a {gift_product} jelölőt\r\n\t\t\t\t\t\ta feltételes kedvezményben szereplő ajándéktermékekhez, a {min_spent_amount} jelölőt pedig arra használja, hogy a szabály alapján tájékoztassa a felhasználót a kedvezmény igénybevételéhez szükséges minimális költésről"
 
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:344
-msgid "User Role "
-msgstr "Felhasználói szerepkör "
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:21
+msgid "Apply this rule must"
+msgstr "E szabályt kötelező alkalmazni"
 
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:318
-msgid "User Roles"
-msgstr "Felhasználói szerepkörök"
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:24
+msgid "Select priority for this rule "
+msgstr "Válasszon prioritást ehhez a szabályhoz "
 
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:90
-#: admin/metaboxes/cart-rule/disc-rpc-discount-settings.php:169
-msgid "Value"
-msgstr "Érték"
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:38
+msgid "Select days setting for this rule "
+msgstr "Válassza ki a napok beállítását ehhez a szabályhoz "
 
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:249
-#: admin/metaboxes/product-rule/disc-rpc-discount-settings.php:350
-msgid "Value "
-msgstr "Érték "
+#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:100
+msgid "Select specific days for rule. "
+msgstr "Válasszon konkrét napokat a szabályhoz. "
 
-#: admin/settings/class-admin-drpc-settings.php:151
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:15
+msgid "Import / Export Cart Discount Rules"
+msgstr "Kosárkedvezmény-szabályok importálása / exportálása"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:30
+msgid "Import Discount Rules"
+msgstr "Kedvezményszabályok importálása"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:37
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:36
+msgid "CSV file must be in this format."
+msgstr "A CSV-fájlnak ebben a formátumban kell lennie."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:81
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:80
+msgid "File Format:"
+msgstr "Fájlformátum:"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:82
+msgid ""
+"Your CSV must have the following 24 columns in this exact order. The safest "
+"starting point is to export your existing rules and edit that file."
+msgstr "A CSV-fájlnak pontosan ebben a sorrendben kell tartalmaznia a következő 24 oszlopot. A legbiztonságosabb, ha exportálja a meglévő szabályokat, majd szerkeszti az exportált fájlt."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:89
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:213
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:56
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:88
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:220
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:56
+msgid "ID"
+msgstr "Azonosító"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:90
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:220
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:57
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:89
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:227
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:57
+msgid "Title"
+msgstr "Cím"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:92
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:234
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:59
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:91
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:241
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:59
+msgid "Products"
+msgstr "Termékek"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:93
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:241
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:60
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:92
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:248
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:60
+msgid "Categories"
+msgstr "Kategóriák"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:94
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:248
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:61
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:93
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:255
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:61
+msgid "Brands"
+msgstr "Márkák"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:95
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:255
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:62
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:94
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:262
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:62
+msgid "Rule Status"
+msgstr "Szabály állapota"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:96
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:262
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:63
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:95
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:269
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:63
+msgid "Discount Rule Type"
+msgstr "Kedvezményszabály típusa"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:97
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:269
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:64
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:98
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:290
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:66
+msgid "Dynamic Pricing Adjustment(Customer Rules)"
+msgstr "Dinamikus ármódosítás (vásárlói szabályok)"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:98
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:280
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:65
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:99
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:301
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:67
+msgid "Dynamic Pricing Adjustment(Role Rules)"
+msgstr "Dinamikus ármódosítás (szerepkör-szabályok)"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:99
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:289
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:66
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:100
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:310
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:68
+msgid "Gift a Product(Customer Rules)"
+msgstr "Termék ajándékozása (vásárlói szabályok)"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:100
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:296
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:67
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:101
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:317
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:69
+msgid "Gift a Product(Role Rules)"
+msgstr "Termék ajándékozása (szerepkör-szabályok)"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:101
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:303
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:68
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:102
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:324
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:70
+msgid "Minimum Spent"
+msgstr "Minimális költés"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:102
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:310
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:69
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:103
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:331
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:71
+msgid "Minimum Spent Amount"
+msgstr "Minimális költés összege"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:103
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:317
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:104
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:338
+msgid "Min Spent Start Date"
+msgstr "A minimális költés kezdő dátuma"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:104
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:324
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:105
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:345
+msgid "Min Spent End Date"
+msgstr "A minimális költés befejezésének dátuma"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:105
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:331
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:72
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:106
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:352
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:74
+msgid "Rule Priority"
+msgstr "Szabály prioritása"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:106
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:338
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:73
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:107
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:359
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:75
+msgid "Days for Discount"
+msgstr "Kedvezmény napjai"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:107
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:345
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:74
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:108
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:366
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:76
+msgid "Days of Week"
+msgstr "A hét napjai"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:108
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:352
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:75
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:109
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:373
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:77
+msgid "Rule Start Date"
+msgstr "Szabály kezdő dátuma"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:109
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:359
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:76
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:110
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:380
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:78
+msgid "Rule End Date"
+msgstr "Szabály befejezésének dátuma"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:110
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:366
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:111
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:387
+msgid "Before Discount Msg"
+msgstr "Kedvezmény előtti üzenet"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:111
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:373
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:112
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:394
+msgid "After Discount Msg"
+msgstr "Kedvezmény utáni üzenet"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:112
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:380
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:79
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:113
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:401
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:81
+msgid "Rule Order"
+msgstr "Szabály sorrendje"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:199
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:206
+msgid "Column Reference:"
+msgstr "Oszlopok áttekintése:"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:204
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:211
+msgid "Column"
+msgstr "Oszlop"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:205
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:212
+msgid "Required / Optional"
+msgstr "Kötelező / opcionális"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:206
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:213
+msgid "Accepted Values"
+msgstr "Elfogadott értékek"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:207
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:214
+msgid "Default if Empty"
+msgstr "Alapértelmezett, ha üres"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:208
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:215
+msgid "Notes"
+msgstr "Jegyzetek"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:214
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:221
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:228
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:235
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:242
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:249
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:256
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:263
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:270
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:281
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:290
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:297
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:304
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:311
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:318
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:325
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:332
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:339
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:346
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:353
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:360
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:367
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:374
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:381
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:221
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:228
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:235
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:242
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:249
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:256
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:263
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:270
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:277
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:284
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:291
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:302
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:311
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:318
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:325
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:332
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:339
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:346
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:353
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:360
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:367
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:374
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:381
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:388
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:395
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:402
+msgid "Optional"
+msgstr "Opcionális"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:215
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:382
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:222
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:403
+msgid "Integer"
+msgstr "Egész szám"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:216
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:223
+msgid "— (creates new rule)"
+msgstr "— (új szabály létrehozása)"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:217
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:224
+msgid ""
+"When provided, the existing rule is updated. When empty, a new rule is "
+"created."
+msgstr "Ha meg van adva, a meglévő szabály frissül. Ha üres, új szabály jön létre."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:222
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:368
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:375
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:229
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:389
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:396
+msgid "Any text"
+msgstr "Bármilyen szöveg"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:223
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:230
+msgid "\"Imported Rule\""
+msgstr "„Importált szabály”"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:224
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:231
+msgid "The display name of the rule in the admin."
+msgstr "A szabály adminfelületen megjelenített neve."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:231
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:238
+msgid "If all, Products / Categories / Brands columns are ignored."
+msgstr "Ha az érték „összes”, a termékek, kategóriák és márkák oszlopait figyelmen kívül hagyja a rendszer."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:236
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:243
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:250
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:243
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:250
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:257
+msgid "Comma-separated IDs"
+msgstr "Vesszővel elválasztott ID-k"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:237
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:244
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:251
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:244
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:251
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:258
+msgid "Empty (no filter)"
+msgstr "Üres (nincs szűrés)"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:238
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:245
+msgid "Example: 45,67,89"
+msgstr "Példa: 45,67,89"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:245
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:252
+msgid "Category term IDs, not slugs."
+msgstr "Kategóriakifejezésekhez tartozó ID-k, nem slugok."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:252
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:259
+msgid "Brand term IDs."
+msgstr "Márkakifejezésekhez tartozó ID-k."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:259
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:266
+msgid "Controls whether the rule is active."
+msgstr "Azt határozza meg, hogy a szabály aktív-e."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:266
+msgid ""
+"dynamic_disc_on_qty = Dynamic pricing adjustment(based on quantity). "
+"dynamic_disc_on_amount = Dynamic pricing adjustment(based on amount). "
+"gift_on_qty = Gift a Product(based on quantity). gift_on_price = Gift a "
+"Product(based on amount). Defaults to dynamic_disc_on_qty if empty."
+msgstr "dynamic_disc_on_qty = dinamikus ármódosítás (mennyiség alapján). dynamic_disc_on_amount = dinamikus ármódosítás (összeg alapján). gift_on_qty = termék ajándékozása (mennyiség alapján). gift_on_price = termék ajándékozása (összeg alapján). Ha üres, az alapértelmezett érték: dynamic_disc_on_qty."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:272
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:293
+msgid "Empty (no customer rules)"
+msgstr "Üres (nincsenek vásárlói szabályok)"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:274
+msgid ""
+"Fields separated by | — multiple entries separated by ||. Only used when "
+"Discount Rule Type is dynamic_disc_on_qty or dynamic_disc_on_amount."
+msgstr "A mezőket | választja el — a bejegyzéseket || választja el. Csak akkor használatos, ha a kedvezményszabály típusa dynamic_disc_on_qty vagy dynamic_disc_on_amount."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:275
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:296
+msgid "Type values:"
+msgstr "Típusértékek:"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:283
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:304
+msgid "Empty (no role rules)"
+msgstr "Üres (nincsenek szerepkör-szabályok)"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:285
+msgid ""
+"Same format as Customer Rules. role_id can be a WP role slug, \"all\", or "
+"\"guest\". Only used when Discount Rule Type is dynamic_disc_on_qty or "
+"dynamic_disc_on_amount."
+msgstr "Formátuma megegyezik a vásárlói szabályokéval. A role_id lehet egy WP-szerepkör slugja, „all” vagy „guest”. Csak akkor használatos, ha a kedvezményszabály típusa dynamic_disc_on_qty vagy dynamic_disc_on_amount."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:292
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:313
+msgid "Empty (no customer gift rules)"
+msgstr "Üres (nincsenek vásárlói ajándékszabályok)"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:293
+msgid ""
+"Fields separated by | — multiple entries separated by ||. Only used when "
+"Discount Rule Type is gift_on_qty or gift_on_price."
+msgstr "A mezőket | választja el — a bejegyzéseket || választja el. Csak akkor használatos, ha a kedvezményszabály típusa gift_on_qty vagy gift_on_price."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:299
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:320
+msgid "Empty (no role gift rules)"
+msgstr "Üres (nincsenek szerepkör-alapú ajándékszabályok)"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:300
+msgid ""
+"Same format as Gift (Customer). role_id can be a WP role slug, \"all\", or "
+"\"guest\". Only used when Discount Rule Type is gift_on_qty or "
+"gift_on_price."
+msgstr "Formátuma megegyezik a vásárlói ajándékéval. A role_id lehet egy WP-szerepkör slugja, „all” vagy „guest”. Csak akkor használatos, ha a kedvezményszabály típusa gift_on_qty vagy gift_on_price."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:307
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:328
+msgid "Enables a minimum order total requirement for the discount to apply."
+msgstr "Engedélyezi a kedvezmény alkalmazásához szükséges minimális rendelési összeg megadását."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:312
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:333
+msgid "Numeric"
+msgstr "Numerikus"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:314
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:335
+msgid "Only used when Minimum Spent is yes."
+msgstr "Csak akkor használatos, ha a minimális költés értéke igen."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:320
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:327
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:355
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:362
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:341
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:348
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:376
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:383
+msgid "Empty (no restriction)"
+msgstr "Üres (nincs korlátozás)"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:321
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:342
+msgid "Start date for the minimum spend condition."
+msgstr "A minimális költési feltétel kezdő dátuma."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:328
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:349
+msgid "End date for the minimum spend condition."
+msgstr "A minimális költési feltétel befejezésének dátuma."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:333
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:354
+msgid "follow_seq,must_apply"
+msgstr "follow_seq,must_apply"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:334
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:355
+msgid "follow_seq"
+msgstr "follow_seq"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:335
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:356
+msgid ""
+"follow_seq = Follow Sequence. must_apply = Must apply this rule. Defaults to"
+" follow_seq if empty."
+msgstr "follow_seq = sorrend követése. must_apply = a szabály alkalmazása kötelező. Ha üres, az alapértelmezett érték: follow_seq."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:342
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:363
+msgid "Set to specific to restrict by day of week."
+msgstr "Állítsa be a „specific” értékre a hét napjai szerinti korlátozáshoz."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:348
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:369
+msgid "Empty (all days)"
+msgstr "Üres (minden nap)"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:349
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:370
+msgid "Comma-separated. Only used when Days for Discount is specific."
+msgstr "Vesszővel elválasztva. Csak akkor használatos, ha a kedvezmény napjainak értéke „specific”."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:356
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:377
+msgid "Date from which the rule becomes active."
+msgstr "Az a dátum, amelytől a szabály aktívvá válik."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:363
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:384
+msgid "Date after which the rule stops being active."
+msgstr "Az a dátum, amely után a szabály már nem aktív."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:369
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:376
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:390
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:397
+msgid "Empty (no message)"
+msgstr "Üres (nincs üzenet)"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:370
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:391
+msgid "Shown to the customer before the discount is applied."
+msgstr "A vásárló számára jelenik meg a kedvezmény alkalmazása előtt."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:377
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:398
+msgid "Shown to the customer after the discount is applied."
+msgstr "A vásárló számára jelenik meg a kedvezmény alkalmazása után."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:383
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:404
+msgid "0"
+msgstr "0"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:384
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:405
+msgid "Lower number = evaluated first. Use to control rule stacking order."
+msgstr "Az alacsonyabb sorszámú szabályok kiértékelése történik először. Ezzel szabályozhatja a szabályok alkalmazási sorrendjét."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:391
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:412
+msgid "Cautions:"
+msgstr "Figyelmeztetések:"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:393
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:414
+msgid ""
+"The safest workflow is to export first, edit the resulting CSV, then re-"
+"import."
+msgstr "A legbiztonságosabb módszer, ha először exportálja a fájlt, szerkeszti az így létrejött CSV-fájlt, majd ismét importálja."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:394
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:415
+msgid ""
+"Rows with an ID matching an existing rule will overwrite that rule. Rows "
+"with an empty ID create a new rule."
+msgstr "A meglévő szabály ID-jával megegyező ID-t tartalmazó sorok felülírják az adott szabályt. Az üres ID-t tartalmazó sorok új szabályt hoznak létre."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:395
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:416
+msgid ""
+"Customer Rules, Role Rules all use | between fields and || between entries —"
+" never use commas inside those columns."
+msgstr "A vásárlói szabályok és a szerepkörszabályok mezői között |, a bejegyzések között pedig || szerepeljen – ezekben az oszlopokban soha ne használjon vesszőt."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:396
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:417
+msgid "Do not include empty rows in the CSV."
+msgstr "Ne szerepeltessen üres sorokat a CSV-fájlban."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:397
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:418
+msgid "Only CSV files are accepted."
+msgstr "Csak CSV-fájlok fogadhatók el."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:402
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:423
+msgid "Upload CSV File"
+msgstr "CSV-fájl feltöltése"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:419
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:495
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:510
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:440
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:516
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:531
+msgid "Import CSV"
+msgstr "CSV importálása"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:430
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:450
+msgid "Export Pricing Rules"
+msgstr "Árazási szabályok exportálása"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:433
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:453
+msgid "Click below to export all dynamic pricing rules as a CSV file."
+msgstr "Kattintson alább az összes dinamikus árazási szabály CSV-fájlként történő exportálásához."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:439
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:459
+msgid "Export CSV"
+msgstr "CSV exportálása"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:472
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:492
+msgid "Please select a CSV file to upload."
+msgstr "Kérjük, válassza ki a feltöltendő CSV-fájlt."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:483
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:504
+msgid "Importing..."
+msgstr "Importálás..."
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:485
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:506
+msgid "Uploading and processing, please wait..."
+msgstr "Feltöltés és feldolgozás folyamatban, kérjük, várjon…"
+
+#: admin/rule-import-export/cart-rule/af-cart-rule-import-page.php:512
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:533
+msgid "An unexpected error occurred. Please try again."
+msgstr "Váratlan hiba történt. Kérjük, próbálja újra."
+
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:70
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:72
+msgid "Minimum Spent Amount Start Date"
+msgstr "Minimális költési összeg kezdő dátuma"
+
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:71
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:73
+msgid "Minimum Spent Amount End Date"
+msgstr "Minimális költési összeg befejezésének dátuma"
+
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:77
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:79
+msgid "Message for Before Discount Applied"
+msgstr "Üzenet a kedvezmény alkalmazása előtt"
+
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-export.php:78
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:80
+msgid "Message for After Discount Applied"
+msgstr "Üzenet a kedvezmény alkalmazása után"
+
+#: admin/rule-import-export/cart-rule/class-af-cart-rule-import.php:150
+#: admin/rule-import-export/product-rule/class-af-product-rule-import.php:149
+msgid "Imported Rule"
+msgstr "Importált szabály"
+
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:15
+msgid "Import / Export Pricing Rules"
+msgstr "Árazási szabályok importálása / exportálása"
+
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:29
+msgid "Import Pricing Rules"
+msgstr "Árazási szabályok importálása"
+
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:81
+msgid ""
+"Your CSV must have the following 26 columns in this exact order. The safest "
+"starting point is to export your existing rules and edit that file."
+msgstr "A CSV-fájlnak az alábbi 26 oszlopot kell tartalmaznia, pontosan ebben a sorrendben. A legbiztonságosabb, ha exportálja a meglévő szabályokat, majd szerkeszti az így létrejött fájlt."
+
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:96
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:276
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:64
+msgid "Show Pricing Template"
+msgstr "Árazási sablon megjelenítése"
+
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:97
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:283
+#: admin/rule-import-export/product-rule/class-af-product-rule-export.php:65
+msgid "Pricing Template"
+msgstr "Árazási sablon"
+
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:273
+msgid ""
+"dynamic_price_adj = Dynamic pricing adjustment. conditional = Gift a "
+"Product. Defaults to dynamic_price_adj if empty."
+msgstr "dynamic_price_adj = dinamikus ármódosítás. conditional = termék ajándékozása. Ha üres, az alapértelmezett érték: dynamic_price_adj."
+
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:280
+msgid "Whether to display the pricing table on the product page."
+msgstr "Megjelenjen-e az árazási táblázat a termékoldalon."
+
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:286
+msgid "Empty (plugin default)"
+msgstr "Üres (bővítmény alapértelmezése)"
+
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:287
+msgid "Only used when Show Pricing Template is yes."
+msgstr "Csak akkor használatos, ha az árazási sablon megjelenítése be van kapcsolva."
+
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:295
+msgid ""
+"Fields separated by | — multiple entries separated by ||. Only used when "
+"Discount Rule Type is dynamic_price_adj."
+msgstr "A mezőket | választja el — több bejegyzést || választ el. Csak akkor használatos, ha a kedvezményszabály típusa dynamic_price_adj."
+
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:306
+msgid ""
+"Same format as Customer Rules. role_id can be a WP role slug, \"all\", or "
+"\"guest\". Only used when Discount Rule Type is dynamic_price_adj."
+msgstr "Formátuma megegyezik a vásárlói szabályokéval. A role_id lehet WP-szerepkör slug, „all” vagy „guest”. Csak akkor használatos, ha a kedvezményszabály típusa dynamic_price_adj."
+
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:314
+msgid ""
+"Fields separated by | — multiple entries separated by ||. Only used when "
+"Discount Rule Type is conditional."
+msgstr "A mezők elválasztója |, a több bejegyzésé pedig ||. Csak akkor használatos, ha a kedvezményszabály típusa feltételes."
+
+#: admin/rule-import-export/product-rule/af-product-rule-import-page.php:321
+msgid ""
+"Same format as Gift (Customer). role_id can be a WP role slug, \"all\", or "
+"\"guest\". Only used when Discount Rule Type is conditional."
+msgstr "Formátuma megegyezik az Ajándék (vásárló) formátumával. A role_id értéke egy WP-szerepkör slug, „all” vagy „guest” lehet. Csak akkor használatos, ha a kedvezményszabály típusa feltételes."
+
+#: admin/settings/class-admin-drpc-settings.php:28
+msgid "Dynamic Pricing"
+msgstr "Dinamikus árazás"
+
+#: admin/settings/class-admin-drpc-settings.php:41
+#: admin/settings/class-admin-drpc-settings.php:132
+msgid "Pricing Template Settings"
+msgstr "Árazási sablon beállításai"
+
+#: admin/settings/class-admin-drpc-settings.php:42
+#: admin/settings/class-admin-drpc-settings.php:168
+msgid "Pricing Template Design"
+msgstr "Árazási sablon dizájnja"
+
+#: admin/settings/class-admin-drpc-settings.php:69
+msgid "Priority of product rules"
+msgstr "Termékszabályok prioritása"
+
+#: admin/settings/class-admin-drpc-settings.php:75
+#: admin/settings/class-admin-drpc-settings.php:86
+msgid "Follow the priority sequence"
+msgstr "Prioritási sorrend követése"
+
+#: admin/settings/class-admin-drpc-settings.php:76
+msgid "Use rule with smaller price"
+msgstr "Kisebb árat eredményező szabály használata"
+
+#: admin/settings/class-admin-drpc-settings.php:77
+msgid "Use rule with highest price"
+msgstr "Legmagasabb árat eredményező szabály használata"
+
+#: admin/settings/class-admin-drpc-settings.php:81
+msgid "Priority of cart rules"
+msgstr "Kosárszabályok prioritása"
+
+#: admin/settings/class-admin-drpc-settings.php:87
+msgid "Use rule with smaller Discount/Fees"
+msgstr "Kisebb kedvezményt/díjat alkalmazó szabály használata"
+
+#: admin/settings/class-admin-drpc-settings.php:88
+msgid "Use rule with highest Discount/Fees"
+msgstr "Legnagyobb kedvezményt/díjat alkalmazó szabály használata"
+
+#: admin/settings/class-admin-drpc-settings.php:89
+msgid "Apply all rules"
+msgstr "Minden szabály alkalmazása"
+
+#: admin/settings/class-admin-drpc-settings.php:93
+msgid "Price for sale price products"
+msgstr "Akciós árú termékek ára"
+
+#: admin/settings/class-admin-drpc-settings.php:98
+msgid "Apply discount on sale price"
+msgstr "Kedvezmény alkalmazása az akciós árra"
+
+#: admin/settings/class-admin-drpc-settings.php:99
+msgid "Apply discount on regular price"
+msgstr "Kedvezmény alkalmazása az alapárra"
+
+#: admin/settings/class-admin-drpc-settings.php:100
+msgid "Ignore discount"
+msgstr "Kedvezmény figyelmen kívül hagyása"
+
+#: admin/settings/class-admin-drpc-settings.php:104
+msgid "Multi rules selection"
+msgstr "Több szabály kiválasztása"
+
+#: admin/settings/class-admin-drpc-settings.php:109
+msgid "Apply discount from both rules"
+msgstr "Mindkét szabály kedvezményének alkalmazása"
+
+#: admin/settings/class-admin-drpc-settings.php:110
+msgid "Apply discount only from product rule"
+msgstr "Csak a termékszabály szerinti kedvezmény alkalmazása"
+
+#: admin/settings/class-admin-drpc-settings.php:115
+msgid "Is taxable"
+msgstr "Adóköteles"
+
+#: admin/settings/class-admin-drpc-settings.php:118
+msgid "Enable Tax on Fee (applies tax to fee amount)"
+msgstr "Díj adóztatásának bekapcsolása (adó felszámítása a díj összegére)"
+
+#: admin/settings/class-admin-drpc-settings.php:139
+msgid "Location for tier pricing template"
+msgstr "Sávos árképzési sablon helye"
+
+#: admin/settings/class-admin-drpc-settings.php:144
+msgid "Below price of product"
+msgstr "A termék ára alatt"
+
+#: admin/settings/class-admin-drpc-settings.php:145
+msgid "Above \"Add to Cart \" button"
+msgstr "A \"Kosárba \" gomb felett"
+
+#: admin/settings/class-admin-drpc-settings.php:146
+msgid "Below \"Add to Cart \" button"
+msgstr "A \"Kosárba \" gomb alatt"
+
+#: admin/settings/class-admin-drpc-settings.php:150
+msgid "Layout of tier table pricing"
+msgstr "Sávos árképzési táblázat elrendezése"
+
+#: admin/settings/class-admin-drpc-settings.php:155
 msgid "Vertical table"
 msgstr "Függőleges táblázat"
 
-#: dynamic-pricing-and-discounts.php:254
-msgid "View Cart Rule"
-msgstr "Kosárszabály megtekintése"
+#: admin/settings/class-admin-drpc-settings.php:156
+msgid "Horizontal table"
+msgstr "Vízszintes táblázat"
 
-#: dynamic-pricing-and-discounts.php:219
-msgid "View Product Rule"
-msgstr "Termékszabály megtekintése"
+#: admin/settings/class-admin-drpc-settings.php:178
+msgid "Pricing Design Template "
+msgstr "Árazási dizájn sablon "
 
-#: admin/metaboxes/cart-rule/disc-rpc-rule-settings.php:59
-#: admin/metaboxes/product-rule/disc-rpc-rule-settings.php:63
-msgid "Wednesday"
-msgstr "Szerda"
+#: admin/settings/class-admin-drpc-settings.php:198
+msgid "Enable Template Heading"
+msgstr "Sablon címsorának bekapcsolása"
 
-#: front/class-af-cart-discount-front.php:1530
-msgid "With Cart Products "
-msgstr "A kosárban lévő termékekkel "
+#: admin/settings/class-admin-drpc-settings.php:201
+msgid "Enable the heading for template."
+msgstr "Kapcsolja be a sablon címsorát."
 
-#: dynamic-pricing-and-discounts.php:187
+#: admin/settings/class-admin-drpc-settings.php:205
+msgid "Template Heading Text"
+msgstr "Sablon címsorának szövege"
+
+#: admin/settings/class-admin-drpc-settings.php:208
+msgid "Enter template heading text."
+msgstr "Adja meg a sablon címsorának szövegét."
+
+#: admin/settings/class-admin-drpc-settings.php:212
+msgid "Template Heading Font Size"
+msgstr "Sablon címsorának betűmérete"
+
+#: admin/settings/class-admin-drpc-settings.php:215
+msgid ""
+"Enter font size for template heading, by default theme values will be "
+"inherited."
+msgstr "Adja meg a sablon címsorának betűméretét; alapértelmezés szerint a sablon értékei öröklődnek."
+
+#: admin/settings/class-admin-drpc-settings.php:219
+msgid "Enable Template Icon"
+msgstr "Sablon ikonjának engedélyezése"
+
+#: admin/settings/class-admin-drpc-settings.php:222
+msgid "Enable the icon for template."
+msgstr "Kapcsolja be a sablon ikonját."
+
+#: admin/settings/class-admin-drpc-settings.php:228
+msgid "Template Icon"
+msgstr "Sablon ikon"
+
+#: admin/settings/class-admin-drpc-settings.php:244
+msgid "Enter Font Family for Template"
+msgstr "Adja meg a sablon betűcsaládját"
+
+#: admin/settings/class-admin-drpc-settings.php:247
+msgid ""
+"Specify the font family for the template text, or leave it blank to use the "
+"website's default font family."
+msgstr "Adja meg a sablonszöveg betűcsaládját, vagy hagyja üresen, hogy a honlap alapértelmezett betűcsaládja legyen használatban."
+
+#: admin/settings/class-admin-drpc-settings.php:252
+msgid "Enable Save Column"
+msgstr "Megtakarítási oszlop bekapcsolása"
+
+#: admin/settings/class-admin-drpc-settings.php:256
+msgid "Enable save column in pricing table."
+msgstr "Megtakarítási oszlop bekapcsolása az árazási táblázatban."
+
+#: admin/settings/class-admin-drpc-settings.php:260
+msgid "Table Header Color"
+msgstr "Táblázat fejlécének színe"
+
+#: admin/settings/class-admin-drpc-settings.php:264
+msgid "Choose table header background color."
+msgstr "Válassza ki a táblázat fejlécének háttérszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:268
+msgid "Table Header Text Color"
+msgstr "Táblázat fejlécének szövegszíne"
+
+#: admin/settings/class-admin-drpc-settings.php:272
+msgid "Choose table header text color."
+msgstr "Válassza ki a táblázat fejlécének szövegszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:276
+msgid "Table Odd Rows Color"
+msgstr "Táblázat páratlan sorainak színe"
+
+#: admin/settings/class-admin-drpc-settings.php:280
+msgid "Choose table odd rows background color."
+msgstr "Válassza ki a táblázat páratlan sorainak háttérszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:284
+msgid "Table Odd Rows Text Color"
+msgstr "Táblázat páratlan sorainak szövegszíne"
+
+#: admin/settings/class-admin-drpc-settings.php:288
+msgid "Choose table odd rows text color."
+msgstr "Válassza ki a táblázat páratlan sorainak szövegszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:292
+msgid "Table Even Rows Color"
+msgstr "Táblázat páros sorainak színe"
+
+#: admin/settings/class-admin-drpc-settings.php:296
+msgid "Choose table even rows background color."
+msgstr "Válassza ki a táblázat páros sorainak háttérszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:300
+msgid "Table Even Rows Text Color"
+msgstr "Táblázat páros sorainak szövegszíne"
+
+#: admin/settings/class-admin-drpc-settings.php:304
+msgid "Choose table even rows text color."
+msgstr "Válassza ki a táblázat páros sorainak szövegszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:308
+msgid "Enable Table Border"
+msgstr "Táblázatszegély engedélyezése"
+
+#: admin/settings/class-admin-drpc-settings.php:312
+msgid "Enable if do you want to use table border as a separator."
+msgstr "Kapcsolja be, ha a táblázat keretét elválasztóként szeretné használni."
+
+#: admin/settings/class-admin-drpc-settings.php:316
+msgid "Table Border Color"
+msgstr "Táblázat szegélyszíne"
+
+#: admin/settings/class-admin-drpc-settings.php:320
+msgid "Choose table border color."
+msgstr "Válassza ki a táblázat szegélyszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:324
+msgid "Table Header Font Size"
+msgstr "Táblázat fejlécének betűmérete"
+
+#: admin/settings/class-admin-drpc-settings.php:328
+msgid ""
+"Enter font size for table header, by default theme values will be inherited."
+msgstr "Adja meg a táblázat fejlécének betűméretét; alapértelmezés szerint a sablon értékei öröklődnek."
+
+#: admin/settings/class-admin-drpc-settings.php:332
+msgid "Table Rows Font Size"
+msgstr "Táblázat sorainak betűmérete"
+
+#: admin/settings/class-admin-drpc-settings.php:336
+msgid ""
+"Enter font size for table rows, by default theme values will be inherited."
+msgstr "Adja meg a táblázatsorok betűméretét, alapértelmezés szerint a sablon értékei öröklődnek."
+
+#: admin/settings/class-admin-drpc-settings.php:341
+msgid "List Border Color"
+msgstr "Lista szegélyszíne"
+
+#: admin/settings/class-admin-drpc-settings.php:345
+msgid "Choose list border color."
+msgstr "Válassza ki a lista szegélyszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:349
+msgid "List Background Color"
+msgstr "Lista háttérszíne"
+
+#: admin/settings/class-admin-drpc-settings.php:353
+msgid "Choose list background color."
+msgstr "Válassza ki a lista háttérszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:357
+msgid "List Text Color"
+msgstr "Lista szövegszíne"
+
+#: admin/settings/class-admin-drpc-settings.php:361
+msgid "Choose list text color."
+msgstr "Válassza ki a lista szövegszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:365
+msgid "Selected List Background Color"
+msgstr "Kiválasztott lista háttérszíne"
+
+#: admin/settings/class-admin-drpc-settings.php:369
+msgid "Choose selected List background color."
+msgstr "Válassza ki a kijelölt lista háttérszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:373
+msgid "Selected List Text Color"
+msgstr "Kiválasztott lista szövegszíne"
+
+#: admin/settings/class-admin-drpc-settings.php:377
+msgid "Choose selected List text color."
+msgstr "Válassza ki a kijelölt lista szövegszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:381
+msgid "Card Border Color"
+msgstr "Kártya szegélyszíne"
+
+#: admin/settings/class-admin-drpc-settings.php:385
+msgid "Choose card border color."
+msgstr "Válassza ki a kártya szegélyszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:389
+msgid "Card Background Color"
+msgstr "Kártya háttérszíne"
+
+#: admin/settings/class-admin-drpc-settings.php:393
+msgid "Choose card background color."
+msgstr "Válassza ki a kártya háttérszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:397
+msgid "Card Text Color"
+msgstr "Kártya szövegszíne"
+
+#: admin/settings/class-admin-drpc-settings.php:401
+msgid "Choose card text color."
+msgstr "Válassza ki a kártya szövegszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:405
+msgid "Selected Card Border Color"
+msgstr "Kiválasztott kártya szegélyszíne"
+
+#: admin/settings/class-admin-drpc-settings.php:409
+msgid "Choose selected card border color."
+msgstr "Válassza ki a kijelölt kártya szegélyszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:413
+msgid "Enable Sale Tag"
+msgstr "Akciócímke engedélyezése"
+
+#: admin/settings/class-admin-drpc-settings.php:417
+msgid "Enable sale tag for card."
+msgstr "Akciócímke bekapcsolása a kártyán."
+
+#: admin/settings/class-admin-drpc-settings.php:421
+msgid "Sale Tag Background Color"
+msgstr "Akciócímke háttérszíne"
+
+#: admin/settings/class-admin-drpc-settings.php:425
+msgid "Choose sale tag background color."
+msgstr "Válassza ki az akciócímke háttérszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:429
+msgid "Sale Tag Text Color"
+msgstr "Akciócímke szövegszíne"
+
+#: admin/settings/class-admin-drpc-settings.php:433
+msgid "Choose sale tag text color."
+msgstr "Válassza ki az akciócímke szövegszínét."
+
+#: admin/settings/class-admin-drpc-settings.php:437
+msgid "Reset"
+msgstr "Visszaállítás"
+
+#: admin/settings/class-admin-drpc-settings.php:440
+msgid "To revert all settings to default."
+msgstr "Az összes beállítás visszaállítása alapértelmezettre."
+
+#: dynamic-pricing-and-discounts.php:203
+msgid "Product Dynamic Pricing and Discounts is inactive."
+msgstr "A Product Dynamic Pricing and Discounts ki van kapcsolva."
+
+#: dynamic-pricing-and-discounts.php:203
 msgid ""
 "must be active for this plugin to work. Please install &amp; activate "
 "WooCommerce."
@@ -1299,6 +1970,319 @@ msgstr ""
 "aktívnak kell lennie ahhoz, hogy ez a bővítmény működjön. Kérjük, telepítse "
 "&amp; aktiválja a WooCommerce-t."
 
-#: front/class-af-product-discount-front.php:2027
+#: dynamic-pricing-and-discounts.php:231
+msgid "Add New Product Rule"
+msgstr "Új termékszabály hozzáadása"
+
+#: dynamic-pricing-and-discounts.php:232
+msgid "Add Product Rule"
+msgstr "Termékszabály hozzáadása"
+
+#: dynamic-pricing-and-discounts.php:233
+msgid "Edit Product Rule"
+msgstr "Termékszabály szerkesztése"
+
+#: dynamic-pricing-and-discounts.php:234
+msgid "New Product Rule"
+msgstr "Új termékszabály"
+
+#: dynamic-pricing-and-discounts.php:235
+msgid "View Product Rule"
+msgstr "Termékszabály megtekintése"
+
+#: dynamic-pricing-and-discounts.php:236
+msgid "Search Product Rule"
+msgstr "Termékszabály keresése"
+
+#: dynamic-pricing-and-discounts.php:238 dynamic-pricing-and-discounts.php:273
+msgid "No rule found"
+msgstr "Nem található szabály"
+
+#: dynamic-pricing-and-discounts.php:239 dynamic-pricing-and-discounts.php:274
+msgid "No rule found in trash"
+msgstr "A Lomtárban nem található szabály"
+
+#: dynamic-pricing-and-discounts.php:242 dynamic-pricing-and-discounts.php:277
+msgid "Dynamic Pricing & Discounts"
+msgstr "Dinamikus árazás és kedvezmények"
+
+#: dynamic-pricing-and-discounts.php:266
+msgid "Add New Cart Rule"
+msgstr "Új kosárszabály hozzáadása"
+
+#: dynamic-pricing-and-discounts.php:267
+msgid "Add Cart Rule"
+msgstr "Kosárszabály hozzáadása"
+
+#: dynamic-pricing-and-discounts.php:268
+msgid "Edit Cart Rule"
+msgstr "Kosárszabály szerkesztése"
+
+#: dynamic-pricing-and-discounts.php:269
+msgid "New Cart Rule"
+msgstr "Új kosárszabály"
+
+#: dynamic-pricing-and-discounts.php:270
+msgid "View Cart Rule"
+msgstr "Kosárszabály megtekintése"
+
+#: dynamic-pricing-and-discounts.php:271
+msgid "Search Cart Rule"
+msgstr "Kosárszabály keresése"
+
+#: front/class-af-cart-discount-front.php:770
+#: front/class-af-cart-discount-front.php:780
+#: front/class-af-cart-discount-front.php:792
+#: front/class-af-cart-discount-front.php:1293
+msgid "Discount"
+msgstr "Kedvezmény"
+
+#: front/class-af-cart-discount-front.php:776
+#: front/class-af-cart-discount-front.php:786
+#: front/class-af-cart-discount-front.php:798
+#: front/class-af-cart-discount-front.php:1299
+msgid "Fees"
+msgstr "Díjak"
+
+#: front/class-af-cart-discount-front.php:1559
+#: front/class-af-cart-discount-front.php:1570
+#: front/class-af-product-discount-front.php:2079
+#: front/class-af-product-discount-front.php:2091
+msgid "Gift "
+msgstr "Ajándék "
+
+#: front/class-af-cart-discount-front.php:1571
+msgid "With Cart Products "
+msgstr "A kosárban lévő termékekkel "
+
+#: front/class-af-front-ajax-controller.php:25
+#: front/class-af-front-ajax-controller.php:69
+msgid "Failed security check!"
+msgstr "Sikertelen biztonsági ellenőrzés!"
+
+#: front/class-af-product-discount-front.php:2092
 msgid "with "
-msgstr "-val/-vel "
+msgstr "a következő termékkel: "
+
+#: front/class-af-product-discount-front.php:3424
+msgid "Min"
+msgstr "Minimum"
+
+#: front/class-af-product-discount-front.php:3425
+msgid "Max"
+msgstr "Maximum"
+
+#: front/class-af-product-discount-front.php:3426
+#: front/class-af-product-discount-front.php:3629
+msgid "Price"
+msgstr "Ár"
+
+#: front/class-af-product-discount-front.php:3427
+#: front/class-af-product-discount-front.php:3653
+msgid "Save"
+msgstr "Mentés"
+
+#: front/class-af-product-discount-front.php:3591
+msgid "Range (Qty)"
+msgstr "Tartomány (menny.)"
+
+#: front/class-af-product-discount-front.php:3807
+#: front/class-af-product-discount-front.php:3960
+msgid "No Discount"
+msgstr "Nincs kedvezmény"
+
+#. translators: %s: minimum quantity required for discount
+#: front/class-af-product-discount-front.php:3810
+#: front/class-af-product-discount-front.php:3963
+#, php-format
+msgid "Buy %s or more"
+msgstr "Vásároljon legalább %s darabot"
+
+#. translators: %s: discount_percentage
+#: front/class-af-product-discount-front.php:3814
+#, php-format
+msgid " & save up to %s%%"
+msgstr " és takarítson meg akár %s%%-ot"
+
+#: front/class-af-product-discount-front.php:3826
+#: front/class-af-product-discount-front.php:3973
+msgid "/each"
+msgstr "/darab"
+
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:86
+msgid "Unique identifier for the cart rule."
+msgstr "A kosárszabály egyedi azonosítója."
+
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:122
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:124
+msgid "Sorry, you cannot list resources."
+msgstr "Sajnáljuk, Ön nem listázhat erőforrásokat."
+
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:132
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:150
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:161
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:370
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:417
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:448
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:143
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:188
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:216
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:432
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:487
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:521
+msgid "Invalid rule ID."
+msgstr "Érvénytelen szabály-ID."
+
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:135
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:151
+msgid "Sorry, you cannot view this resource."
+msgstr "Sajnáljuk, nem tekintheti meg ezt az erőforrást."
+
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:142
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:169
+msgid "Sorry, you are not allowed to create resources."
+msgstr "Sajnáljuk, nincs jogosultsága erőforrások létrehozásához."
+
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:153
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:196
+msgid "Sorry, you are not allowed to edit this resource."
+msgstr ""
+"Sajnáljuk, nincs jogosultsága ennek az erőforrásnak a szerkesztéséhez."
+
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:164
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:224
+msgid "Sorry, you are not allowed to delete this resource."
+msgstr "Sajnáljuk, nincs jogosultsága ennek az erőforrásnak a törléséhez."
+
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:385
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:451
+msgid "Cannot create an existing rule."
+msgstr "Már létező szabály nem hozható létre."
+
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:468
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:541
+msgid "The rule cannot be deleted."
+msgstr "A szabály nem törölhető."
+
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:502
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:570
+msgid "Payload must be a JSON object, not an array of objects."
+msgstr "A kérés törzsének JSON-objektumnak kell lennie, nem objektumok tömbjének."
+
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:515
+msgid ""
+"Invalid discount_rule_type. Accepted: dynamic_disc_on_qty, "
+"dynamic_disc_on_amount, gift_on_qty, gift_on_price."
+msgstr "Hibás discount_rule_type. Elfogadott értékek: dynamic_disc_on_qty, dynamic_disc_on_amount, gift_on_qty, gift_on_price."
+
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:526
+msgid "Invalid rule_priority. Accepted: follow_seq, must_apply."
+msgstr "Hibás rule_priority. Elfogadott értékek: follow_seq, must_apply."
+
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:537
+msgid "Invalid days_for_discount. Accepted: all, specific."
+msgstr "Hibás days_for_discount. Elfogadott értékek: all, specific."
+
+#. translators: %s: date field name (e.g. start_date, end_date)
+#. translators: %s: field name
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:549
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:585
+#, php-format
+msgid "Invalid date for %s. Use YYYY-MM-DD."
+msgstr "Hibás dátum ehhez: %s. Használja ezt a formátumot: YYYY-MM-DD."
+
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:575
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:615
+msgid "New Rule"
+msgstr "Új szabály"
+
+#: rest-api/controllers/class-af-disc-cart-rules-rest-controller.php:584
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:626
+msgid "Failed to save rule."
+msgstr "A szabály mentése sikertelen."
+
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:85
+msgid "Unique identifier for the product rule."
+msgstr "A termékszabály egyedi azonosítója."
+
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:1067
+msgid "Unique identifier for the rule."
+msgstr "A szabály egyedi azonosítója."
+
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:1074
+msgid "Rule title."
+msgstr "A szabály címe."
+
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:1080
+msgid "Rule post status."
+msgstr "A szabálybejegyzés állapota."
+
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:1088
+msgid "Menu order / rule stacking order."
+msgstr "Menü sorrendje / a szabályok egymásra épülésének sorrendje."
+
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:1120
+msgid "Whether the rule applies to all products. all or specific."
+msgstr "Annak megadása, hogy a szabály az összes termékre érvényes-e. all vagy specific."
+
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:1127
+msgid "Product IDs the rule applies to."
+msgstr "Azon termékek azonosítói, amelyekre a szabály érvényes."
+
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:1134
+msgid "Category term IDs the rule applies to."
+msgstr "Azon kategóriakifejezések azonosítói, amelyekre a szabály érvényes."
+
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:1141
+msgid "Brand term IDs the rule applies to."
+msgstr "Azon márkakifejezések azonosítói, amelyekre a szabály érvényes."
+
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:1148
+msgid "Type of discount rule. dynamic_price_adj or conditional."
+msgstr "A kedvezményszabály típusa. dynamic_price_adj vagy conditional."
+
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:1155
+msgid "Whether to show the pricing template on the product page."
+msgstr "Annak megadása, hogy megjelenjen-e az árazási sablon a termékoldalon."
+
+#: rest-api/controllers/class-af-disc-product-rules-rest-controller.php:1162
+msgid "Pricing template design. table, card, or list."
+msgstr "Az árazási sablon kialakítása. Táblázat, kártya vagy lista."
+
+#~ msgid "("
+#~ msgstr "("
+
+#~ msgid ""
+#~ "Choose a method when there are both (cart rule and product rule) rules "
+#~ "applies "
+#~ msgstr ""
+#~ "Válassza ki a módszert, amikor mindkét szabály (kosárszabály és "
+#~ "termékszabály) érvényes. "
+
+#~ msgid "Choose location for pricing template shown on product page "
+#~ msgstr "Válassza ki a termékoldalon megjelenő árazási sablon helyét "
+
+#~ msgid ""
+#~ "Choose style for pricing table shown on product page (Only Applicable for "
+#~ "table)"
+#~ msgstr ""
+#~ "Válassza ki a termékoldalon megjelenő árazási táblázat stílusát (Csak a "
+#~ "táblázatra érvényes)"
+
+#~ msgid "Choose the discount setting for sale price product "
+#~ msgstr "Válassza ki az akciós árú termék kedvezmény beállítását "
+
+#~ msgid "Choose type of rules applied for cart discount rules "
+#~ msgstr "Válassza ki a kosárkedvezmény-szabályok alkalmazási típusát "
+
+#~ msgid "Choose type of rules applied for product discount rules "
+#~ msgstr "Válassza ki a termékkedvezmény-szabályok alkalmazási típusát "
+
+#~ msgid "End Date OF Rule"
+#~ msgstr "Szabály végdátuma"
+
+#~ msgid "Gift Products will be added by sequence of rules "
+#~ msgstr "Az ajándéktermékek a szabályok sorrendjében kerülnek hozzáadásra "
+
+#~ msgid "Start Date of Rule"
+#~ msgstr "A szabály kezdő dátuma"

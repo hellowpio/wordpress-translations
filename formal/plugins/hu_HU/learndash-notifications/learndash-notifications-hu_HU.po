@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: LearnDash LMS - Notifications 1.6.6\n"
+"Project-Id-Version: LearnDash LMS - Notifications 1.6.10\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:49:16+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: LearnDash LMS - Notifications\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.6.6\n"
+"X-Plugin-Version: 1.6.10\n"
 
 #. Plugin Name of the plugin
 #: learndash-notifications.php
@@ -47,7 +47,7 @@ msgstr "https://www.learndash.com/"
 
 #: includes/admin/class-ld-translations-notifications.php:26
 msgid "LearnDash Notifications"
-msgstr "LearnDash értesítések"
+msgstr "LearnDash-értesítések"
 
 #: includes/admin/class-settings.php:54 includes/admin/class-settings.php:89
 #: includes/admin/class-settings.php:128 includes/post-type.php:26
@@ -195,24 +195,20 @@ msgstr "Az ütemezett értesítés a következő adatokkal elküldésre került:
 msgid ""
 "Scheduled notification for the timestamp: %1$d with these data: %2$s was "
 "stored in database."
-msgstr ""
-"A(z) %1$d időbélyegű, a következő adatokkal: %2$s rendelkező ütemezett "
-"értesítés eltárolásra került az adatbázisban."
+msgstr "A(z) %1$d időbélyeghez tartozó ütemezett értesítés a következő adatokkal került az adatbázisba: %2$s."
 
 #: includes/logger.php:30
 #, php-format
 msgid ""
 "Scheduled notification with these data: %1$s was updated in database with "
 "these new data: %2$s. %3$d %4$s affected."
-msgstr ""
-"A következő adatokkal rendelkező ütemezett értesítés: %1$s frissítve lett az"
-" adatbázisban ezekkel az új adatokkal: %2$s. %3$d %4$s érintett."
+msgstr "A következő adatokkal rendelkező ütemezett értesítés (%1$s) az új adatokkal frissült az adatbázisban: %2$s. %3$d %4$s érintett."
 
 #: includes/logger.php:30 includes/logger.php:39 includes/logger.php:47
 msgid "row was"
 msgid_plural "rows were"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "sor volt"
+msgstr[1] "sor volt"
 
 #: includes/meta-box.php:17
 msgid "Notification Settings"
@@ -220,11 +216,11 @@ msgstr "Értesítési beállítások"
 
 #: includes/meta-box.php:19
 msgid "Available Shortcodes"
-msgstr "Elérhető rövidkódok"
+msgstr "Elérhető shortcode-ok"
 
 #: includes/meta-box.php:90 includes/meta-box.php:487
 msgid "Click for Help!"
-msgstr "Kattintson a súgóért!"
+msgstr "Kattintson a súgó megnyitásához!"
 
 #: includes/meta-box.php:113
 #, php-format
@@ -248,30 +244,27 @@ msgstr "-- Feltétel kiválasztása --"
 msgid ""
 "Select an email trigger on the notification settings above to see available "
 "shortcodes."
-msgstr ""
-"Válasszon egy e-mail kiváltó eseményt a fenti értesítési beállításoknál az "
-"elérhető rövidkódok megtekintéséhez."
+msgstr "Válasszon egy e-mailt kiváltó eseményt a fenti értesítési beállításoknál az elérhető shortcode-ok megtekintéséhez."
 
 #: includes/meta-box.php:159
 msgid "Here are the available shortcodes for the email trigger selected:"
-msgstr ""
-"Itt vannak a kiválasztott e-mail kiváltó eseményhez elérhető rövidkódok:"
+msgstr "Itt vannak a kiválasztott e-mailt kiváltó eseményhez elérhető shortcode-ok:"
 
 #: includes/meta-box.php:175
 msgid "<em>Cumulative</em> is average for all quizzes of the course."
-msgstr "Az <em>összesített</em> a kurzus összes kvízének átlagát jelenti."
+msgstr "Az <em>összesített</em> érték a kurzus összes kvízének átlaga."
 
 #: includes/meta-box.php:177
 msgid "<em>Aggregate</em> is sum for all quizzes of the course."
-msgstr "Az <em>összegzett</em> a kurzus összes kvízének összegét jelenti."
+msgstr "Az <em>összegzett</em> érték a kurzus összes kvízének összege."
 
 #: includes/meta-box.php:199
 msgid "Email trigger"
-msgstr "E-mail kiváltó esemény"
+msgstr "E-mailt kiváltó esemény"
 
 #: includes/meta-box.php:200
 msgid "When this email will be sent."
-msgstr "Mikor kerül elküldésre ez az e-mail."
+msgstr "Az e-mail elküldésének időpontja."
 
 #: includes/meta-box.php:204
 msgid "-- Select an Email Trigger --"
@@ -284,8 +277,7 @@ msgstr "Előrendelt kurzus kizárása"
 #: includes/meta-box.php:210
 msgid ""
 "Check to exclude pre-ordered course(s) from triggering this notification."
-msgstr ""
-"Jelölje be, hogy az előrendelt kurzus(ok) ne váltsák ki ezt az értesítést."
+msgstr "Jelölje be, ha azt szeretné, hogy az előrendelt kurzusok ne váltsák ki ezt az értesítést."
 
 #: includes/meta-box.php:214
 msgid "Exclude"
@@ -306,7 +298,7 @@ msgstr "Hány nap után?"
 #: includes/meta-box.php:234 includes/meta-box.php:257
 #: includes/meta-box.php:267
 msgid "Setting associated with the email trigger setting above."
-msgstr "A fenti e-mail indító beállításhoz tartozó beállítás."
+msgstr "A fenti, e-mailt kiváltó esemény beállításához kapcsolódó beállítás."
 
 #: includes/meta-box.php:235 includes/meta-box.php:258
 #: includes/meta-box.php:268
@@ -372,9 +364,7 @@ msgstr "Késleltetés egysége"
 msgid ""
 "How long the notification will be delayed for. Specify minutes, hours or "
 "days."
-msgstr ""
-"Meddig legyen az értesítés késleltetve. Adjon meg perceket, órákat vagy "
-"napokat."
+msgstr "Az értesítés késleltetésének időtartama. Adjon meg perceket, órákat vagy napokat."
 
 #: includes/meta-box.php:308
 msgid "Minutes"
@@ -435,10 +425,7 @@ msgid ""
 "Display time when course is completed. <a "
 "href=\"http://php.net/manual/en/function.date.php\" target=\"_blank\">Click "
 "here</a> to see format options."
-msgstr ""
-"A kurzus befejezésének időpontjának megjelenítése. <a "
-"href=\"http://php.net/manual/en/function.date.php\" "
-"target=\"_blank\">Kattintson ide</a> a formátumopciók megtekintéséhez."
+msgstr "A kurzus befejezési időpontjának megjelenítése. <a href=\"http://php.net/manual/en/function.date.php\" target=\"_blank\">Kattintson ide</a> a formátumopciók megtekintéséhez."
 
 #: includes/meta-box.php:687
 msgid "Display average points scored across all quizzes on the course."
@@ -456,9 +443,7 @@ msgstr ""
 #: includes/meta-box.php:690
 msgid ""
 "Display average correct answers percentage across all quizzes on the course."
-msgstr ""
-"A kurzus összes kvízén a helyes válaszok százalékos arányának átlagának "
-"megjelenítése."
+msgstr "A kurzus összes kvízében a helyes válaszok átlagos százalékos arányát jeleníti meg."
 
 #: includes/meta-box.php:691
 msgid "Display average time spent across all quizzes on the course."
@@ -467,16 +452,12 @@ msgstr "A kurzus összes kvízén eltöltött idő átlagának megjelenítése."
 #: includes/meta-box.php:692
 msgid ""
 "Display average correct answer counted across all quizzes on the course."
-msgstr ""
-"A kurzus összes kvízén adott helyes válaszok számának átlagának "
-"megjelenítése."
+msgstr "A kurzus összes kvízében adott helyes válaszok átlagos számát jeleníti meg."
 
 #: includes/meta-box.php:693
 msgid ""
 "Display sum of correct answers percentage across all quizzes on the course."
-msgstr ""
-"A kurzus összes kvízén a helyes válaszok százalékos arányának összegének "
-"megjelenítése."
+msgstr "A kurzus összes kvízében a helyes válaszok százalékos arányainak összegét jeleníti meg."
 
 #: includes/meta-box.php:694
 msgid "Display sum of points scored across all quizzes on the course."
@@ -498,9 +479,7 @@ msgstr "A kurzus összes kvízén eltöltött idő összegének megjelenítése.
 #: includes/meta-box.php:698
 msgid ""
 "Display sum of correct answer counted across all quizzes on the course."
-msgstr ""
-"A kurzus összes kvízén adott helyes válaszok számának összegének "
-"megjelenítése."
+msgstr "A kurzus összes kvízén adott helyes válaszok összesített számának megjelenítése."
 
 #: includes/meta-box.php:702
 msgid "Display lesson title."
@@ -588,7 +567,7 @@ msgstr "A lecke típusát jeleníti meg, amelyhez a feladat tartozik."
 
 #: includes/notification.php:1580
 msgid "Assignment"
-msgstr "Feladat"
+msgstr "Hozzárendelés"
 
 #: includes/notification.php:1583
 msgid "Essay"
@@ -597,7 +576,7 @@ msgstr "Esszé"
 #: includes/notification.php:1596
 #, php-format
 msgid "New comment on %1$s \"%2$s\""
-msgstr "Új hozzászólás ehhez: %1$s \"%2$s\""
+msgstr "Új hozzászólás ehhez: %1$s „%2$s”"
 
 #. translators: 1: comment author, 2: author IP, 3: author domain
 #: includes/notification.php:1598
@@ -629,7 +608,7 @@ msgstr "Közvetlen hivatkozás: %s"
 #: includes/notification.php:1606
 #, php-format
 msgid "%1$s Comment: \"%2$s\""
-msgstr "%1$s hozzászólás: \"%2$s\""
+msgstr "%1$s hozzászólás: „%2$s”"
 
 #: includes/notification.php:1699
 msgid "User enrolls into a group"
@@ -673,7 +652,7 @@ msgstr "A felhasználó befejez egy kvízt"
 
 #: includes/notification.php:1709
 msgid "Essay has just been submitted"
-msgstr "Az esszé éppen most lett beküldve"
+msgstr "Éppen most küldték be az esszét"
 
 #: includes/notification.php:1710
 msgid "Essay question has been put into graded status"
@@ -681,23 +660,23 @@ msgstr "Az esszékérdés értékelt állapotba került"
 
 #: includes/notification.php:1711
 msgid "An assignment is uploaded"
-msgstr "Egy feladat fel lett töltve"
+msgstr "Egy feladatot feltöltöttek"
 
 #: includes/notification.php:1712
 msgid "An assignment is approved"
-msgstr "Egy feladat jóvá lett hagyva"
+msgstr "Egy feladatot jóváhagytak"
 
 #: includes/notification.php:1713
 msgid "User hasn't logged in for \"X\" days"
-msgstr "A felhasználó nem jelentkezett be \"X\" napja"
+msgstr "A felhasználó „X” napja nem jelentkezett be"
 
 #: includes/notification.php:1714
 msgid "\"X\" days before course expires"
-msgstr "\"X\" nappal a kurzus lejárta előtt"
+msgstr "„X” nappal a kurzus lejárta előtt"
 
 #: includes/notification.php:1715
 msgid "\"X\" days after course expires"
-msgstr "\"X\" nappal a kurzus lejárta után"
+msgstr "„X” nappal a kurzus lejárta után"
 
 #: includes/notification.php:1734
 msgid "User has not completed a quiz."
@@ -737,7 +716,7 @@ msgstr "A felhasználó feltöltött egy feladatot."
 
 #: includes/notification.php:1785
 msgid "User's assignment has been approved."
-msgstr "A felhasználó feladata jóvá lett hagyva."
+msgstr "Jóváhagyták a felhasználó feladatát."
 
 #: includes/notification.php:1831
 #, php-format
@@ -842,8 +821,8 @@ msgstr "Bármely %s"
 msgctxt "After mentioning object one by one"
 msgid "%1$s %2$sand %3$d other%4$s"
 msgid_plural "%1$s %2$s and %3$d others%4$s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s %2$sés %3$d további%4$s"
+msgstr[1] "%1$s %2$sés %3$d további%4$s"
 
 #: includes/post-type.php:309
 #, php-format
@@ -859,13 +838,11 @@ msgstr "Válasszon kiváltó eseményt"
 msgid ""
 "Don't want to receive this email anymore? <a href=\"%s\">Click here</a> to "
 "manage your notification email subscriptions."
-msgstr ""
-"Nem szeretné többé megkapni ezt az e-mailt? <a href=\"%s\">Kattintson "
-"ide</a> az értesítési e-mail-feliratkozások kezeléséhez."
+msgstr "Nem szeretné többé megkapni ezt az e-mailt? <a href=\"%s\">Kattintson ide</a> az értesítő e-mailekre való feliratkozásainak kezeléséhez."
 
 #: includes/subscription-manager.php:109 templates/subscription-page.php:103
 msgid "LearnDash Notifications Subscription"
-msgstr "LearnDash értesítési feliratkozás"
+msgstr "Feliratkozás a LearnDash-értesítésekre"
 
 #: includes/tools.php:28
 msgid ""
@@ -882,7 +859,7 @@ msgstr ""
 
 #: src/deprecated/class-logs-page.php:30
 msgid "LearnDash Notifications Logs"
-msgstr "LearnDash értesítési naplók"
+msgstr "LearnDash-értesítési naplók"
 
 #: src/deprecated/LearnDash_Notifications.php:163
 msgid ""
@@ -892,25 +869,20 @@ msgstr ""
 "A LearnDash LMS - Notifications kiegészítő megköveteli, hogy a következő "
 "bővítmények aktívak legyenek:"
 
-#: src/trigger.php:765
+#: src/trigger.php:903
 msgid "Other actions"
 msgstr "Egyéb műveletek"
-
-#: src/trigger/after-course-expire.php:65
-#, php-format
-msgid "The course will be expire at %s"
-msgstr "A kurzus lejár ekkor: %s"
 
 #: src/trigger/before-course-expire.php:65
 #, php-format
 msgid "The course will be expired at %s"
-msgstr "A kurzus lejár ekkor: %s"
+msgstr "A kurzus ekkor jár le: %s"
 
 #. translators: User ID and the last login timestamp.
 #: src/trigger/user-login-track.php:181
 #, php-format
 msgid "User ID :%1$d - Last login: %2$s"
-msgstr "Felhasználó ID :%1$d - Utolsó bejelentkezés: %2$s"
+msgstr "Felhasználói azonosító (ID): %1$d - Utolsó belépés: %2$s"
 
 #: templates/admin/logs-page.php:21
 msgid "Clear all logs"
@@ -937,10 +909,7 @@ msgstr "Még nem észlelve"
 msgid ""
 ", <a href=\"%s\" target=\"_blank\" rel=\"noreferrer\">click here</a> for "
 "cron setup instruction (it may take some times for this value to be updated)"
-msgstr ""
-", <a href=\"%s\" target=\"_blank\" rel=\"noreferrer\">kattintson ide</a> a "
-"cron beállítási útmutatóhoz (ennek az értéknek a frissítése eltarthat egy "
-"ideig)"
+msgstr ", <a href=\"%s\" target=\"_blank\" rel=\"noreferrer\">kattintson ide</a> a cron beállításáról szóló útmutatóért (ennek az értéknek a frissítése eltarthat egy ideig)"
 
 #: templates/admin/status-page.php:27
 msgid "Queued Emails in DB"
@@ -968,7 +937,7 @@ msgstr "Az értesítési beállítások sikeresen mentve."
 
 #: templates/subscription-page.php:114
 msgid "There is something wrong. Please try again later."
-msgstr "Valami hiba történt. Kérjük, próbálja meg később újra."
+msgstr "Valami nincs rendben. Kérjük, próbálja meg később újra."
 
 #: templates/subscription-page.php:135
 msgid "Triggers"
@@ -980,8 +949,12 @@ msgstr "Engedélyezve"
 
 #: templates/subscription-page.php:141
 msgid "Select All"
-msgstr "Összes kijelölése"
+msgstr "Összes kiválasztása"
 
 #: templates/subscription-page.php:162
 msgid "Save Changes"
 msgstr "Változtatások mentése"
+
+#, php-format
+#~ msgid "The course will be expire at %s"
+#~ msgstr "A kurzus lejár ekkor: %s"

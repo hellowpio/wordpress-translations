@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: MainWP Dashboard Lock Extension 5.0.3\n"
+"Project-Id-Version: MainWP Dashboard Lock Extension 5.2\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T19:14:00+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,12 +18,12 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: MainWP Dashboard Lock Extension\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 5.0.3\n"
+"X-Plugin-Version: 5.2\n"
 
 #. Plugin Name of the plugin
 #: mainwp-clean-and-lock-extension.php
 msgid "MainWP Dashboard Lock Extension"
-msgstr "MainWP Vezérlőpult zárolás kiegészítő"
+msgstr "MainWP vezérlőpult-zárolási kiterjesztés"
 
 #. Plugin URI of the plugin
 #. Author URI of the plugin
@@ -48,44 +48,78 @@ msgstr ""
 msgid "MainWP"
 msgstr "MainWP"
 
-#: class/mainwp-clean-and-lock.class.php:391
+#: class/mainwp-clean-and-lock-abilities.class.php:27
+msgid "MainWP Dashboard Lock"
+msgstr "MainWP vezérlőpult-zárolás"
+
+#: class/mainwp-clean-and-lock-abilities.class.php:28
+msgid "Read stored Dashboard Lock settings without inspecting server files."
+msgstr "A tárolt vezérlőpult-zárolási beállítások lekérése a szerverfájlok vizsgálata nélkül."
+
+#: class/mainwp-clean-and-lock-abilities.class.php:39
+msgid "Get Dashboard Lock Status"
+msgstr "A vezérlőpult-zárolás állapotának lekérése"
+
+#: class/mainwp-clean-and-lock-abilities.class.php:39
+msgid "Get Dashboard Lock Configuration"
+msgstr "A vezérlőpult-zárolás konfigurációjának lekérése"
+
+#: class/mainwp-clean-and-lock-abilities.class.php:40
+msgid ""
+"Summarize stored Dashboard Lock settings. This does not check whether locks "
+"are applied."
+msgstr "A tárolt vezérlőpult-zárolási beállítások összefoglalása. Ez nem ellenőrzi, hogy a zárolások érvényben vannak-e."
+
+#: class/mainwp-clean-and-lock-abilities.class.php:40
+msgid ""
+"Read stored redirect and IP settings, with basic-auth credential presence as"
+" booleans only."
+msgstr "A tárolt átirányítási és IP-beállítások beolvasása; a basic-auth hitelesítő adatok meglétét csak logikai érték jelzi."
+
+#: class/mainwp-clean-and-lock-abilities.class.php:67
+msgid "You do not have permission to access this ability."
+msgstr "Nincs jogosultsága ennek a képességnek az eléréséhez."
+
+#: class/mainwp-clean-and-lock.class.php:416
 msgid "Dashboard Lock Extension"
-msgstr "Vezérlőpult zárolás kiegészítő"
+msgstr "Vezérlőpult-zárolási kiterjesztés"
 
-#: class/mainwp-clean-and-lock.class.php:392
-#: class/mainwp-clean-and-lock.class.php:442
+#: class/mainwp-clean-and-lock.class.php:417
+#: class/mainwp-clean-and-lock.class.php:465
 msgid "Frontend Redirect Rules"
-msgstr "Frontend átirányítási szabályok"
+msgstr "Frontend-átirányítási szabályok"
 
-#: class/mainwp-clean-and-lock.class.php:393
-#: class/mainwp-clean-and-lock.class.php:462
+#: class/mainwp-clean-and-lock.class.php:418
+#: class/mainwp-clean-and-lock.class.php:488
 msgid "Dashboard Lock"
 msgstr "Vezérlőpult zárolása"
 
-#: class/mainwp-clean-and-lock.class.php:394
+#: class/mainwp-clean-and-lock.class.php:419
 msgid "Remove Dashboard Locks"
-msgstr "Vezérlőpult zárolásainak eltávolítása"
+msgstr "Vezérlőpult-zárolások eltávolítása"
 
-#: class/mainwp-clean-and-lock.class.php:395
+#: class/mainwp-clean-and-lock.class.php:420
 msgid "HTTP Basic Authentication Not Working"
 msgstr "A HTTP Basic Authentication nem működik"
 
-#: class/mainwp-clean-and-lock.class.php:421
+#: class/mainwp-clean-and-lock.class.php:446
 msgid "Settings saved."
 msgstr "Beállítások elmentve."
 
-#: class/mainwp-clean-and-lock.class.php:445
+#: class/mainwp-clean-and-lock.class.php:466
+msgid ""
+"Redirect frontend traffic to a custom URL while keeping selected pages or "
+"slugs excluded from redirection."
+msgstr "A frontendforgalom átirányítása egyéni URL-re, a kijelölt oldalak vagy slugok kivételével."
+
+#: class/mainwp-clean-and-lock.class.php:470
 msgid ""
 "Redirection is the process of forwarding one URL to a different URL. Use the"
 " frontend redirect rules to redirect anyone who tries to visit your MainWP "
 "Dashboard site URL."
-msgstr ""
-"Az átirányítás annak folyamata, amikor egy URL-t egy másik URL-re "
-"továbbítunk. Használd a frontend átirányítási szabályokat, hogy átirányítsd "
-"mindazokat, akik megpróbálják felkeresni a MainWP Vezérlőpult webhely URL-"
-"jét."
+msgstr "Az átirányítás egy URL másik URL-re történő továbbításának folyamata. A frontend-átirányítási szabályokkal átirányíthatja mindazokat, akik megpróbálják felkeresni a MainWP vezérlőpult webhelyének URL-jét."
 
-#: class/mainwp-clean-and-lock.class.php:446
+#: class/mainwp-clean-and-lock.class.php:471
 msgid ""
 "Optionally, use the Exclude slugs from redirection option to exclude "
 "particular pages from redirection."
@@ -93,104 +127,106 @@ msgstr ""
 "Opcionálisan használd a Slugok kizárása az átirányításból opciót bizonyos "
 "oldalak átirányításból való kizárásához."
 
-#: class/mainwp-clean-and-lock.class.php:451
+#: class/mainwp-clean-and-lock.class.php:476
 msgid "Redirect frontend traffic"
-msgstr "Frontend forgalom átirányítása"
+msgstr "Frontendforgalom átirányítása"
 
-#: class/mainwp-clean-and-lock.class.php:452
+#: class/mainwp-clean-and-lock.class.php:477
 msgid ""
 "Set a redirect URL and all hits on Non-WP-Admin pages will be redirected to "
 "it."
-msgstr ""
-"Állíts be egy átirányítási URL-t, és minden, a Non-WP-Admin oldalakat érő "
-"találat oda lesz átirányítva."
+msgstr "Állítson be egy átirányítási URL-t, és a Non-WP-Admin-oldalakra érkező összes kérés erre az URL-re lesz átirányítva."
 
-#: class/mainwp-clean-and-lock.class.php:457
+#: class/mainwp-clean-and-lock.class.php:482
 msgid "Exclude slugs from redirection"
 msgstr "Slugok kizárása az átirányításból"
 
-#: class/mainwp-clean-and-lock.class.php:458
+#: class/mainwp-clean-and-lock.class.php:483
 msgid "Enter slugs one per line to exclude from the redirection"
-msgstr "Adj meg slugokat soronként az átirányításból való kizáráshoz"
+msgstr "Az átirányításból kizárni kívánt slugokat soronként adja meg."
 
-#: class/mainwp-clean-and-lock.class.php:459
+#: class/mainwp-clean-and-lock.class.php:484
 msgid "One slug per line."
-msgstr "Egy slug soronként."
+msgstr "Soronként egy slug."
 
-#: class/mainwp-clean-and-lock.class.php:465
+#: class/mainwp-clean-and-lock.class.php:489
+msgid ""
+"Restrict access to the login page, WP Admin area, and selected IP addresses."
+msgstr "A belépési oldalhoz és a WP Admin felülethez való hozzáférés korlátozása kijelölt IP-címek alapján."
+
+#: class/mainwp-clean-and-lock.class.php:493
 msgid ""
 "Limit access to WP Admin area and to the WordPress Login page to specific IP"
 " addresses and set HTTP Basic Authentication to block access to the WP Admin"
 " area and/or WordPress Login page."
-msgstr ""
-"Korlátozd a hozzáférést a WP Admin felületéhez és a WordPress bejelentkezési"
-" oldalához meghatározott IP-címekre, és állíts be HTTP Basic "
-"Authentication-t a WP Admin felület és/vagy a WordPress bejelentkezési oldal"
-" elérésének blokkolásához."
+msgstr "A meghatározott IP-címek alapján korlátozza a WP Admin felületéhez és a WordPress belépési oldalához való hozzáférést, és állítsa be a HTTP Basic Authentication használatát a WP Admin felület és/vagy a WordPress belépési oldal elérésének blokkolására."
 
-#: class/mainwp-clean-and-lock.class.php:470
+#: class/mainwp-clean-and-lock.class.php:498
 msgid "Allow login from IP"
 msgstr "Bejelentkezés engedélyezése IP-címről"
 
-#: class/mainwp-clean-and-lock.class.php:471
+#: class/mainwp-clean-and-lock.class.php:499
 msgid "Enter IP Address you want to allow. Enter 1 Address per row."
-msgstr "Add meg az engedélyezni kívánt IP-címet. Soronként 1 címet adj meg."
+msgstr "Adja meg az engedélyezni kívánt IP-címet. Soronként egy címet adjon meg."
 
-#: class/mainwp-clean-and-lock.class.php:473
+#: class/mainwp-clean-and-lock.class.php:501
 msgid "IPv4 Address"
 msgstr "IPv4-cím"
 
-#: class/mainwp-clean-and-lock.class.php:474
+#: class/mainwp-clean-and-lock.class.php:502
 msgid "One IP address per line."
 msgstr "Soronként egy IP-cím."
 
-#: class/mainwp-clean-and-lock.class.php:478
+#: class/mainwp-clean-and-lock.class.php:506
 msgid "IPv6 Address"
 msgstr "IPv6-cím"
 
-#: class/mainwp-clean-and-lock.class.php:479
+#: class/mainwp-clean-and-lock.class.php:507
 msgid "One IPv6 address per line."
 msgstr "Soronként egy IPv6-cím."
 
-#: class/mainwp-clean-and-lock.class.php:482
+#: class/mainwp-clean-and-lock.class.php:510
 msgid "We detect your current IP to be: "
-msgstr "Az aktuális IP-címed: "
+msgstr "Az Ön aktuális IP-címeként ezt észleltük: "
 
-#: class/mainwp-clean-and-lock.class.php:486
+#: class/mainwp-clean-and-lock.class.php:514
 msgid "Admin area lock"
-msgstr "Admin felület zárolása"
+msgstr "Adminfelület zárolása"
 
-#: class/mainwp-clean-and-lock.class.php:488
-#: class/mainwp-clean-and-lock.class.php:497
+#: class/mainwp-clean-and-lock.class.php:516
+#: class/mainwp-clean-and-lock.class.php:529
 msgid "Username"
 msgstr "Felhasználónév"
 
-#: class/mainwp-clean-and-lock.class.php:491
-#: class/mainwp-clean-and-lock.class.php:500
+#: class/mainwp-clean-and-lock.class.php:520
+#: class/mainwp-clean-and-lock.class.php:533
 msgid "Password"
 msgstr "Jelszó"
 
-#: class/mainwp-clean-and-lock.class.php:495
+#: class/mainwp-clean-and-lock.class.php:527
 msgid "Login page lock"
 msgstr "Bejelentkezési oldal zárolása"
 
-#: class/mainwp-clean-and-lock.class.php:506
+#: class/mainwp-clean-and-lock.class.php:541
 msgid "Save Settings"
 msgstr "Beállítások mentése"
 
-#: class/mainwp-clean-and-lock.class.php:508
+#: class/mainwp-clean-and-lock.class.php:543
 msgid ""
 "Click the button to remove Allowed IP Addresses, WP Admin and Login page "
 "locks"
-msgstr ""
-"Kattints a gombra az engedélyezett IP-címek, a WP Admin és a bejelentkezési "
-"oldal zárolásainak eltávolításához"
+msgstr "Kattintson a gombra az engedélyezett IP-címekhez, a WP Admin felülethez és a bejelentkezési oldalhoz tartozó zárolások eltávolításához"
 
-#: class/mainwp-clean-and-lock.class.php:508
+#: class/mainwp-clean-and-lock.class.php:543
 msgid "Remove Locks"
 msgstr "Zárolások eltávolítása"
 
-#: mainwp-clean-and-lock-extension.php:184
+#: class/mainwp-clean-and-lock.class.php:615
+#, php-format
+msgid "%1$sStored %2$s ending with: %3$s %4$s"
+msgstr "%1$sTárolva: %2$s, a végződése: %3$s %4$s"
+
+#: mainwp-clean-and-lock-extension.php:210
 msgid ""
 "requires <a href=\"https://mainwp.com/\" target=\"_blank\" rel=\"noopener "
 "noreferrer\">MainWP Dashboard Plugin</a> to be activated in order to work. "

@@ -1,0 +1,699 @@
+# Copyright (C) 2026 WP Desk
+# This file is distributed under the same license as the Flexible Subscriptions Emails plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Flexible Subscriptions Emails 1.0.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flexible-subscriptions-emails\n"
+"POT-Creation-Date: 2026-10-31T07:18:33+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: flexible-subscriptions-emails\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: Flexible Subscriptions Emails\n"
+"X-Plugin-Tone: formal\n"
+"X-Plugin-Version: 1.0.3\n"
+
+#. Plugin Name of the plugin
+#: flexible-subscriptions-emails.php
+msgid "Flexible Subscriptions Emails"
+msgstr "Flexible Subscriptions Emails"
+
+#. Plugin URI of the plugin
+#: flexible-subscriptions-emails.php
+msgid "https://www.wpdesk.net/products/flexible-subscriptions/"
+msgstr "https://www.wpdesk.net/products/flexible-subscriptions/"
+
+#. Description of the plugin
+#: flexible-subscriptions-emails.php
+msgid ""
+"Adds WooCommerce Subscriptions style transactional emails to Flexible "
+"Subscriptions."
+msgstr "WooCommerce Subscriptions-stílusú tranzakciós e-maileket ad a Flexible Subscriptions bővítményhez."
+
+#. Author of the plugin
+#: flexible-subscriptions-emails.php
+msgid "WP Desk"
+msgstr "WP Desk"
+
+#. Author URI of the plugin
+#: flexible-subscriptions-emails.php
+msgid "https://www.wpdesk.net/"
+msgstr "https://www.wpdesk.net/"
+
+#: src/Email/CancelledSubscriptionEmail.php:19
+msgid "Cancelled Subscription"
+msgstr "Lemondott előfizetés"
+
+#: src/Email/CancelledSubscriptionEmail.php:20
+msgid ""
+"Sent to the store admin when a subscription is cancelled or moved to pending"
+" cancellation."
+msgstr "Az üzlet adminisztrátora akkor kapja meg, ha egy előfizetést lemondanak, vagy lemondásra váró állapotba helyeznek."
+
+#: src/Email/CancelledSubscriptionEmail.php:21
+msgid "Subscription Cancelled"
+msgstr "Előfizetés lemondva"
+
+#: src/Email/CancelledSubscriptionEmail.php:22
+msgid "[{blogname}] Subscription Cancelled"
+msgstr "[{blogname}] előfizetés lemondva"
+
+#: src/Email/CancelledSubscriptionEmail.php:100
+#: src/Email/ExpiredSubscriptionEmail.php:99
+#: src/Email/OnHoldSubscriptionEmail.php:97
+msgctxt "email setting"
+msgid "Enable/Disable"
+msgstr "Bekapcsolás/kikapcsolás"
+
+#: src/Email/CancelledSubscriptionEmail.php:102
+#: src/Email/ExpiredSubscriptionEmail.php:101
+#: src/Email/OnHoldSubscriptionEmail.php:99
+msgid "Enable this email notification"
+msgstr "E-mail-értesítés bekapcsolása"
+
+#: src/Email/CancelledSubscriptionEmail.php:106
+#: src/Email/ExpiredSubscriptionEmail.php:105
+#: src/Email/OnHoldSubscriptionEmail.php:103
+msgctxt "email setting"
+msgid "Recipient(s)"
+msgstr "Címzett(ek)"
+
+#: src/Email/CancelledSubscriptionEmail.php:108
+#: src/Email/ExpiredSubscriptionEmail.php:107
+#: src/Email/OnHoldSubscriptionEmail.php:105
+#, php-format
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Adja meg a címzetteket (vesszővel elválasztva). Alapértelmezés: %s."
+
+#: src/Email/CancelledSubscriptionEmail.php:113
+#: src/Email/ExpiredSubscriptionEmail.php:112
+#: src/Email/OnHoldSubscriptionEmail.php:110
+msgctxt "email setting"
+msgid "Subject"
+msgstr "Tárgy"
+
+#: src/Email/CancelledSubscriptionEmail.php:115
+#: src/Email/ExpiredSubscriptionEmail.php:114
+#: src/Email/OnHoldSubscriptionEmail.php:112
+#, php-format
+msgid "Leave blank to use the default subject: %s."
+msgstr "Hagyja üresen az alapértelmezett tárgy használatához: %s."
+
+#: src/Email/CancelledSubscriptionEmail.php:120
+#: src/Email/ExpiredSubscriptionEmail.php:119
+#: src/Email/OnHoldSubscriptionEmail.php:117
+msgctxt "email setting"
+msgid "Email Heading"
+msgstr "E-mail-címsor"
+
+#: src/Email/CancelledSubscriptionEmail.php:122
+#: src/Email/ExpiredSubscriptionEmail.php:121
+#: src/Email/OnHoldSubscriptionEmail.php:119
+#, php-format
+msgid "Leave blank to use the default heading: %s."
+msgstr "Hagyja üresen az alapértelmezett címsor használatához: %s."
+
+#: src/Email/CancelledSubscriptionEmail.php:127
+#: src/Email/ExpiredSubscriptionEmail.php:126
+#: src/Email/OnHoldSubscriptionEmail.php:124
+msgid "Additional content"
+msgstr "További tartalom"
+
+#: src/Email/CancelledSubscriptionEmail.php:128
+#: src/Email/ExpiredSubscriptionEmail.php:127
+#: src/Email/OnHoldSubscriptionEmail.php:125
+msgid "Text to appear below the main email content."
+msgstr "A fő e-mail-tartalom alatt megjelenő szöveg."
+
+#: src/Email/CancelledSubscriptionEmail.php:130
+#: src/Email/ExpiredSubscriptionEmail.php:129
+#: src/Email/OnHoldSubscriptionEmail.php:127
+msgid "N/A"
+msgstr "N/A"
+
+#: src/Email/CancelledSubscriptionEmail.php:136
+#: src/Email/ExpiredSubscriptionEmail.php:135
+#: src/Email/OnHoldSubscriptionEmail.php:133
+msgctxt "email setting"
+msgid "Email type"
+msgstr "E-mail típusa"
+
+#: src/Email/CancelledSubscriptionEmail.php:138
+#: src/Email/ExpiredSubscriptionEmail.php:137
+#: src/Email/OnHoldSubscriptionEmail.php:135
+msgid "Choose which format of email to send."
+msgstr "Válassza ki, milyen formátumú e-mailt szeretne küldeni."
+
+#: src/Email/CompletedRenewalOrderEmail.php:23
+msgid "Completed Renewal Order"
+msgstr "Teljesített megújítási rendelés"
+
+#: src/Email/CompletedRenewalOrderEmail.php:24
+msgid ""
+"Sent to the customer when a subscription renewal order is marked complete."
+msgstr "A vásárló akkor kapja meg, ha az előfizetés megújításához kapcsolódó rendelést befejezettnek jelölik."
+
+#: src/Email/CompletedRenewalOrderEmail.php:27
+msgid "Your renewal order is complete"
+msgstr "A megújítási rendelése teljesült"
+
+#: src/Email/CompletedRenewalOrderEmail.php:28
+msgid "Your {blogname} renewal order from {order_date} is complete"
+msgstr "A(z) {blogname} {order_date} dátumú megújítási rendelése teljesült"
+
+#: src/Email/CustomerOnHoldRenewalOrderEmail.php:23
+msgid "On-hold Renewal Order"
+msgstr "Függőben lévő megújítási megrendelés"
+
+#: src/Email/CustomerOnHoldRenewalOrderEmail.php:24
+msgid ""
+"Sent to the customer when a renewal order awaits manual payment "
+"confirmation."
+msgstr "A vásárló akkor kapja meg, ha a megújítási rendelés a kézi fizetés visszaigazolására vár."
+
+#: src/Email/CustomerOnHoldRenewalOrderEmail.php:26
+msgid "Your {blogname} renewal order has been received!"
+msgstr "Megkaptuk a(z) {blogname} megújítási rendelését!"
+
+#: src/Email/CustomerOnHoldRenewalOrderEmail.php:27
+msgid "Thank you for your renewal order"
+msgstr "Köszönjük a megújítási megrendelését"
+
+#: src/Email/CustomerRenewalInvoiceEmail.php:23
+msgid "Customer Renewal Invoice"
+msgstr "Vásárlói megújítási számla"
+
+#: src/Email/CustomerRenewalInvoiceEmail.php:24
+msgid ""
+"Sent to a customer when a manual renewal payment is required or when an "
+"automatic renewal fails and needs manual confirmation."
+msgstr "A vásárló akkor kapja meg, ha kézi megújítási fizetés szükséges, vagy ha az automatikus megújítás sikertelen, és kézi visszaigazolásra van szükség."
+
+#: src/Email/CustomerRenewalInvoiceEmail.php:27
+msgid "Invoice for renewal order {order_number} from {order_date}"
+msgstr "Számla a(z) {order_date} dátumú, {order_number} számú megújítási rendeléshez"
+
+#: src/Email/CustomerRenewalInvoiceEmail.php:28
+msgid "Invoice for renewal order {order_number}"
+msgstr "Számla a(z) {order_number} számú megújítási rendeléshez"
+
+#: src/Email/ExpiredSubscriptionEmail.php:19
+msgid "Expired Subscription"
+msgstr "Lejárt előfizetés"
+
+#: src/Email/ExpiredSubscriptionEmail.php:20
+msgid "Sent to the store admin when a subscription expires."
+msgstr "Az üzlet adminisztrátora akkor kapja meg, ha egy előfizetés lejár."
+
+#: src/Email/ExpiredSubscriptionEmail.php:21
+msgid "Subscription Expired"
+msgstr "Lejárt előfizetés"
+
+#: src/Email/ExpiredSubscriptionEmail.php:22
+msgid "[{blogname}] Subscription Expired"
+msgstr "[{blogname}] előfizetés lejárt"
+
+#: src/Email/NewRenewalOrderEmail.php:23
+msgid "New Renewal Order"
+msgstr "Új megújítási megrendelés"
+
+#: src/Email/NewRenewalOrderEmail.php:24
+msgid "Sent to the admin when a subscription renewal payment is processed."
+msgstr "Az adminisztrátor akkor kapja meg, ha az előfizetés megújításának fizetését feldolgozzák."
+
+#: src/Email/NewRenewalOrderEmail.php:25
+msgid "New subscription renewal order"
+msgstr "Új előfizetés-megújítási megrendelés"
+
+#: src/Email/NewRenewalOrderEmail.php:26
+msgid ""
+"[{blogname}] New subscription renewal order ({order_number}) - {order_date}"
+msgstr "[{blogname}] Új előfizetés-megújítási rendelés ({order_number}) – {order_date}"
+
+#: src/Email/OnHoldSubscriptionEmail.php:19
+msgid "Suspended Subscription"
+msgstr "Felfüggesztett előfizetés"
+
+#: src/Email/OnHoldSubscriptionEmail.php:20
+msgid ""
+"Sent to the store admin when a subscription is manually suspended or placed "
+"on hold."
+msgstr "Az üzlet adminisztrátora akkor kapja meg, ha egy előfizetést kézzel felfüggesztenek, vagy függőben lévő állapotba helyeznek."
+
+#: src/Email/OnHoldSubscriptionEmail.php:21
+msgid "Subscription Suspended"
+msgstr "Előfizetés felfüggesztve"
+
+#: src/Email/OnHoldSubscriptionEmail.php:22
+msgid "[{blogname}] Subscription Suspended"
+msgstr "[{blogname}] előfizetés felfüggesztve"
+
+#: src/Email/ProcessingRenewalOrderEmail.php:23
+msgid "Processing Renewal Order"
+msgstr "Feldolgozás alatt álló megújítási rendelés"
+
+#: src/Email/ProcessingRenewalOrderEmail.php:24
+msgid ""
+"Sent to the customer after a subscription renewal payment is completed and "
+"the order is processing."
+msgstr "A vásárló akkor kapja meg, ha az előfizetés megújításának fizetése befejeződött, és a rendelés feldolgozás alatt áll."
+
+#: src/Email/ProcessingRenewalOrderEmail.php:27
+msgid "Thank you for your order"
+msgstr "Köszönjük a megrendelését"
+
+#: src/Email/ProcessingRenewalOrderEmail.php:28
+msgid "Your {blogname} renewal order receipt from {order_date}"
+msgstr ""
+"A(z) {blogname} {order_date} dátumú megújítási rendelésének bizonylata"
+
+#. translators: 1: customer's full name 2: subscription end date
+#: templates/emails/cancelled-subscription.php:29
+#, php-format
+msgid ""
+"A subscription belonging to %1$s is now pending cancellation and will end on"
+" %2$s. Subscription details:"
+msgstr "A(z) %1$s tulajdonában lévő előfizetés lemondásra vár, és %2$s napján ér véget. Az előfizetés részletei:"
+
+#. translators: 1: customer's full name
+#: templates/emails/cancelled-subscription.php:36
+#, php-format
+msgid ""
+"A subscription belonging to %1$s has been cancelled. Subscription details:"
+msgstr "A(z) %1$s tulajdonában lévő előfizetést lemondták. Az előfizetés részletei:"
+
+#: templates/emails/cancelled-subscription.php:47
+#: templates/emails/expired-subscription.php:31
+#: templates/emails/on-hold-subscription.php:29
+msgid "Subscription"
+msgstr "Előfizetés"
+
+#: templates/emails/cancelled-subscription.php:48
+#: templates/emails/expired-subscription.php:32
+#: templates/emails/on-hold-subscription.php:30
+msgid "Price"
+msgstr "Ár"
+
+#: templates/emails/cancelled-subscription.php:49
+#: templates/emails/expired-subscription.php:33
+#: templates/emails/on-hold-subscription.php:31
+msgid "Last Order Date"
+msgstr "Utolsó rendelés dátuma"
+
+#: templates/emails/cancelled-subscription.php:50
+msgid "End of Prepaid Term"
+msgstr "Előre kifizetett időszak vége"
+
+#: templates/emails/expired-subscription.php:25
+#, php-format
+msgid "A subscription belonging to %1$s has expired. Subscription details:"
+msgstr "A(z) %1$s tulajdonában lévő előfizetés lejárt. Az előfizetés részletei:"
+
+#: templates/emails/expired-subscription.php:34
+msgid "End Date"
+msgstr "Befejezés dátuma"
+
+#: templates/emails/on-hold-subscription.php:23
+#, php-format
+msgid ""
+"A subscription belonging to %1$s has been suspended. Subscription details:"
+msgstr "A(z) %1$s tulajdonában lévő előfizetést felfüggesztették. Az előfizetés részletei:"
+
+#: templates/emails/on-hold-subscription.php:32
+msgid "Date Suspended"
+msgstr "Felfüggesztés dátuma"
+
+#. translators: 1: customer's name 2: subscription end date
+#: templates/emails/plain/cancelled-subscription.php:25
+#, php-format
+msgid ""
+"A subscription belonging to %1$s is pending cancellation and will end on "
+"%2$s. Details:"
+msgstr "A(z) %1$s tulajdonában lévő előfizetés lemondásra vár, és %2$s napján ér véget. Részletek:"
+
+#. translators: 1: customer's name
+#: templates/emails/plain/cancelled-subscription.php:32
+#, php-format
+msgid "A subscription belonging to %1$s has been cancelled. Details:"
+msgstr "A(z) %1$s tulajdonában lévő előfizetést lemondták. Részletek:"
+
+#: templates/emails/plain/cancelled-subscription.php:48
+#: templates/emails/plain/cancelled-subscription.php:50
+#: templates/emails/plain/expired-subscription.php:36
+#: templates/emails/plain/expired-subscription.php:38
+#: templates/emails/plain/on-hold-subscription.php:34
+#: templates/emails/plain/on-hold-subscription.php:36
+#, php-format
+msgid "Last Order Date: %s"
+msgstr "Utolsó rendelés dátuma: %s"
+
+#: templates/emails/plain/cancelled-subscription.php:50
+#: templates/emails/plain/cancelled-subscription.php:56
+#: templates/emails/plain/expired-subscription.php:38
+#: templates/emails/plain/expired-subscription.php:44
+#: templates/emails/plain/on-hold-subscription.php:36
+msgid "-"
+msgstr "-"
+
+#: templates/emails/plain/cancelled-subscription.php:54
+#: templates/emails/plain/cancelled-subscription.php:56
+#, php-format
+msgid "End of Prepaid Term: %s"
+msgstr "Előre fizetett időszak vége: %s"
+
+#: templates/emails/plain/cancelled-subscription.php:64
+#: templates/emails/plain/expired-subscription.php:51
+#: templates/emails/plain/on-hold-subscription.php:45
+#, php-format
+msgctxt "plain email link text"
+msgid "View Subscription: %s"
+msgstr "Előfizetés megtekintése: %s"
+
+#. translators: 1: customer's name
+#: templates/emails/plain/expired-subscription.php:22
+#, php-format
+msgid "A subscription belonging to %1$s has expired. Details:"
+msgstr "A(z) %1$s tulajdonában lévő előfizetés lejárt. Részletek:"
+
+#: templates/emails/plain/expired-subscription.php:42
+#: templates/emails/plain/expired-subscription.php:44
+#, php-format
+msgid "End Date: %s"
+msgstr "Befejezés dátuma: %s"
+
+#. translators: 1: customer's name
+#: templates/emails/plain/on-hold-subscription.php:20
+#, php-format
+msgid "A subscription belonging to %1$s has been suspended. Details:"
+msgstr "A(z) %1$s tulajdonában lévő előfizetést felfüggesztették. Részletek:"
+
+#: templates/emails/plain/on-hold-subscription.php:39
+#, php-format
+msgid "Date Suspended: %s"
+msgstr "Felfüggesztés dátuma: %s"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:206
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on PHP versions older than %s. Please"
+" contact your host and ask them to upgrade."
+msgstr "A „%s” bővítmény nem futtatható a %s verziónál régebbi PHP-verziókon. Kérjük, vegye fel a kapcsolatot a tárhelyszolgáltatójával, és kérje a frissítést."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:209
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WordPress versions older than %s. "
+"Please update WordPress."
+msgstr "A „%s” bővítmény nem futtatható a %s verziónál régebbi WordPress-verziókon. Kérjük, frissítse a WordPress rendszert."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:212
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WooCommerce versions older than "
+"%s. Please update WooCommerce."
+msgstr "A „%s” bővítmény nem futtatható a %s verziónál régebbi WooCommerce-verziókon. Kérjük, frissítse a WooCommerce-t."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:215
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without OpenSSL module version at "
+"least %s. Please update OpenSSL module."
+msgstr "A „%s” bővítmény futtatásához legalább %s verziójú OpenSSL-modul szükséges. Kérjük, frissítse az OpenSSL-modult."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:310
+#, php-format
+msgid ""
+"The &#8220;%1$s&#8221; plugin requires at least %2$s version of %3$s to work"
+" correctly. Please update it to its latest release."
+msgstr "A „%1$s” bővítmény megfelelő működéséhez a(z) %3$s legalább %2$s verziója szükséges. Kérjük, frissítse a legújabb verzióra."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:416
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s active. Please install and"
+" activate %s plugin."
+msgstr "A &#8222;%s&#8221; bővítmény nem futtatható aktív %s nélkül. Kérjük, telepítse és kapcsolja be a(z) %s bővítményt."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:468
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin requires free %s plugin. <a href=\"%s\">Install "
+"%s</a>"
+msgstr "A(z) &#8222;%s&#8221; bővítményhez szükséges az ingyenes %s bővítmény. <a href=\"%s\">A(z) %s bővítmény telepítése</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:474
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin requires activating %s plugin. <a "
+"href=\"%s\">Activate %s</a>"
+msgstr "A(z) &#8222;%s&#8221; bővítmény használatához be kell kapcsolnia a(z) %s bővítményt. <a href=\"%s\">A(z) %s bővítmény bekapcsolása</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:516
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP module installed. "
+"Please contact your host and ask them to install %s."
+msgstr "A &#8222;%s&#8221; bővítmény futtatásához telepíteni kell a %s PHP-modult. Kérjük, vegye fel a kapcsolatot a tárhelyszolgáltatójával, és kérje a %s telepítését."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:541
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP setting set to %s. "
+"Please contact your host and ask them to set %s."
+msgstr "A &#8222;%s&#8221; bővítmény futtatásához a %s PHP-beállítás értékének meg kell egyeznie a következő értékkel: %s. Kérjük, vegye fel a kapcsolatot a tárhelyszolgáltatójával, és kérje a %s beállítását."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker_With_Update_Disable.php:29
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin is temporarily disabled since the required %s "
+"plugin is being upgraded."
+msgstr "A &#8220;%s&#8221; bővítmény átmenetileg kikapcsolva, mert a szükséges %s bővítmény frissítése folyamatban van."
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:181
+msgid "Support"
+msgstr "Támogatás"
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:184
+msgid "Docs"
+msgstr "Dokumentáció"
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:188
+msgid "Settings"
+msgstr "Beállítások"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:160
+msgid "day"
+msgstr "nap"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:162
+msgid "week"
+msgstr "hét"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:164
+msgid "month"
+msgstr "hónap"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:166
+msgid "year"
+msgstr "év"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:168
+msgid "hour"
+msgstr "óra"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:170
+msgid "minute"
+msgstr "perc"
+
+#. translators: %d: number of days.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:178
+#, php-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d nap"
+msgstr[1] "%d nap"
+
+#. translators: %d: number of weeks.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:181
+#, php-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] "%d hét"
+msgstr[1] "%d hét"
+
+#. translators: %d: number of months.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:184
+#, php-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d hónap"
+msgstr[1] "%d hónap"
+
+#. translators: %d: number of years.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:187
+#, php-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d év"
+msgstr[1] "%d év"
+
+#. translators: %d: number of hours.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:190
+#, php-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d óra"
+msgstr[1] "%d óra"
+
+#. translators: %d: number of minutes.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:193
+#, php-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d perc"
+msgstr[1] "%d perc"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Disabled"
+msgstr "Kikapcsolva"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Emergency"
+msgstr "Vészhelyzet"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Alert"
+msgstr "Riasztás"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Critical"
+msgstr "Kritikus"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Error"
+msgstr "Hiba"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Warning"
+msgstr "Figyelem"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Notice"
+msgstr "Értesítés"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Info"
+msgstr "Információ"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Debug"
+msgstr "Hibakeresés"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:23
+#, php-format
+msgid ""
+"Can not enable WP Desk Debug log! Cannot create directory %s or this "
+"directory is not writeable!"
+msgstr "Nem sikerült bekapcsolni a WP Desk Debug naplót! A(z) %s könyvtár nem hozható létre, vagy nem írható!"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:36
+#, php-format
+msgid "Can not enable WP Desk Debug log! Cannot create file %s!"
+msgstr "Nem sikerült bekapcsolni a WP Desk Debug naplót! A(z) %s fájl nem hozható létre!"
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/NoticeReminder.php:53
+#, php-format
+msgid ""
+"You're using an outdated version of the following plugin: %s This may cause "
+"serious compatibility issues with WooCommerce. Update it immediately to "
+"avoid potential disruptions."
+msgid_plural ""
+"You're using outdated versions of the following plugins: %s This may cause "
+"serious compatibility issues with WooCommerce. Update them immediately to "
+"avoid potential disruptions."
+msgstr[0] "Az alábbi bővítmény elavult verzióját használja: %s. Ez súlyos kompatibilitási problémákat okozhat a WooCommerce-szel. A fennakadások elkerülése érdekében azonnal frissítse."
+msgstr[1] "Az alábbi bővítmények elavult verzióit használja: %s. Ezek súlyos kompatibilitási problémákat okozhatnak a WooCommerce-szel. A fennakadások elkerülése érdekében azonnal frissítse őket."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/NoticeReminder.php:60
+#, php-format
+msgid ""
+"You're using an older version of the following plugin: %s This version "
+"hasn't been tested with the latest WooCommerce versions. Please update it to"
+" the latest version to ensure smooth compatibility."
+msgid_plural ""
+"You're using older versions of the following plugins: %s These versions "
+"haven't been tested with the latest WooCommerce versions. Please update them"
+" to the latest version to ensure smooth compatibility."
+msgstr[0] "Az alábbi bővítmény régebbi verzióját használja: %s. Ezt a verziót nem tesztelték a legújabb WooCommerce-verziókkal. Kérjük, frissítse a legújabb verzióra a zavartalan együttműködés érdekében."
+msgstr[1] "Az alábbi bővítmények régebbi verzióit használja: %s. Ezeket a verziókat nem tesztelték a legújabb WooCommerce-verziókkal. Kérjük, frissítse őket a legújabb verzióra a zavartalan együttműködés érdekében."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/ReminderData.php:65
+#, php-format
+msgid ""
+"You're using an outdated version of %1$s plugin, which may cause serious "
+"compatibility issues with WooCommerce. %2$sUpdate immediately%3$s to avoid "
+"potential disruptions."
+msgstr "A(z) %1$s bővítmény elavult verzióját használja, amely súlyos kompatibilitási problémákat okozhat a WooCommerce-szel. A fennakadások elkerülése érdekében végezze el most a %2$sfrissítést%3$s."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/ReminderData.php:69
+#, php-format
+msgid ""
+"You're using an older version of %1$s plugin that hasn't been tested with "
+"the latest WooCommerce versions. Please %2$supdate to the latest version%3$s"
+" to ensure smooth compatibility."
+msgstr "A(z) %1$s bővítmény olyan régebbi verzióját használja, amelyet nem teszteltek a legújabb WooCommerce-verziókkal. Kérjük, a zavartalan együttműködés érdekében végezze el a %2$slegújabb verzióra történő frissítést%3$s."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/SiteHealthReminder.php:39
+msgid "You should update plugin"
+msgstr "Javasolt a bővítmény frissítése"
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/SiteHealthReminder.php:39
+msgid "Compatibility"
+msgstr "Kompatibilitás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginExternalBlocking.php:32
+#, php-format
+msgid ""
+"<b>Warning!</b> You're blocking external requests which means you won't be "
+"able to get %1$s updates. Please add %2$s to %3$s."
+msgstr "<b>Figyelem!</b> A külső kérések le vannak tiltva, ezért nem érhetők el a következő frissítései: %1$s. Kérjük, adja hozzá a következő elemet: %2$s. A cél: %3$s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:81
+#, php-format
+msgid ""
+"Error while connecting to remote server %s. Please contact your hosting "
+"provider or try again later. Errors:  "
+msgstr "Hiba történt a(z) %s távoli kiszolgálóhoz való csatlakozáskor. Kérjük, vegye fel a kapcsolatot a tárhelyszolgáltatójával, vagy próbálja újra később. Hibák:  "
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:152
+msgid "License server is currently unavailable. Please, try again later."
+msgstr "A licencszerver jelenleg nem érhető el. Kérjük, próbálja meg később."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:154
+#, php-format
+msgid ""
+"Error while connecting to remote server %1$s. Please contact with your "
+"hosting provider. Cannot parse response. Response code: %2$s Message: %3$s"
+msgstr "Hiba a távoli szerverhez (%1$s) való csatlakozás közben. Kérjük, lépjen kapcsolatba a tárhelyszolgáltatójával. A válasz nem értelmezhető. Válaszkód: %2$s, üzenet: %3$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:157
+#, php-format
+msgid ""
+"Error while connecting to remote server %1$s. Please contact with your "
+"hosting provider. Cannot parse response: %2$s"
+msgstr "Hiba a(z) %1$s távoli szerverhez való csatlakozáskor. Kérjük, lépjen kapcsolatba a tárhelyszolgáltatójával. A válasz nem értelmezhető: %2$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/templates/impossible-to-upgrade.php:12
+#, php-format
+msgid ""
+"This version of %1$s plugin cannot be automatically upgraded. Download the "
+"plugin from %2$syour account%3$s to receive automatic updates in future."
+msgstr "A(z) %1$s bővítmény ezen verziója nem frissíthető automatikusan. Töltse le a bővítményt a %2$sfiókjából%3$s, hogy a jövőben automatikus frissítéseket kapjon."

@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce WishLists 2.3.8\n"
+"Project-Id-Version: WooCommerce WishLists 2.5.1\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:50:56+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,157 +18,360 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: WooCommerce WishLists\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 2.3.8\n"
+"X-Plugin-Version: 2.5.1\n"
 
-#. Plugin Name of the plugin
-#: woocommerce-wishlists.php
-msgid "WooCommerce WishLists"
-msgstr "WooCommerce WishLists"
-
-#. Plugin URI of the plugin
-#: woocommerce-wishlists.php
-msgid "https://woocommerce.com/products/woocommerce-wishlists/"
-msgstr "https://woocommerce.com/products/woocommerce-wishlists/"
-
-#. Description of the plugin
-#: woocommerce-wishlists.php
-msgid ""
-"WooCommerce Wishlists allows you to create public and personal wishlists."
+#: ../../woocommerce-wishlists-api.php:90,
+#: ../../woocommerce-wishlists-api.php:88
+msgid "Unable to send mail.  Please check your values and try again."
 msgstr ""
-"A WooCommerce Wishlists lehetővé teszi nyilvános és személyes kívánságlisták"
-" létrehozását."
+"Nem sikerült elküldeni az e-mailt.  Kérjük, ellenőrizze az adatait, és "
+"próbálja meg újra."
 
-#. Author of the plugin
-#: woocommerce-wishlists.php
-msgid "Element Stark"
-msgstr "Element Stark"
+#: ../../woocommerce-wishlists-api.php:86
+msgid "Your email has been sent"
+msgstr "Elküldtük az e-mailt"
 
-#. Author URI of the plugin
-#: woocommerce-wishlists.php
-msgid "https://www.elementstark.com"
-msgstr "https://www.elementstark.com"
+#: ../../woocommerce-wishlists-api.php:119,
+#: ../../classes/class-wc-wishlists-request-handler.php:371,
+#: ../../classes/class-wc-wishlists-request-handler.php:446,
+#: ../../classes/class-wc-wishlists-request-handler.php:559,
+#: ../../classes/class-wc-wishlists-request-handler.php:599,
+#: ../../classes/class-wc-wishlists-request-handler.php:908
+msgid "You can only update your own lists"
+msgstr "Csak a saját listáit frissítheti"
 
-#: classes/class-wc-wishlist-cloner.php:33
-msgid "Clone this wishlist"
-msgstr "Ennek a kívánságlistának a klónozása"
+#: ../../woocommerce-wishlists-functions.php:44
+msgid "<span class=\"meta-nav\">&larr;</span> Older lists"
+msgstr "<span class=\"meta-nav\">&larr;</span> Régebbi listák"
 
-#: classes/class-wc-wishlist-cloner.php:34
-#: classes/class-wc-wishlist-cloner.php:75
-msgid "Clone"
-msgstr "Klónozás"
+#: ../../woocommerce-wishlists-functions.php:45
+msgid "Newer lists <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Újabb listák <span class=\"meta-nav\">&rarr;</span>"
 
-#: classes/class-wc-wishlists-admin-controller.php:31
-#: classes/class-wc-wishlists-admin-wishlist.php:532
-msgid "Notifications"
-msgstr "Értesítések"
+#: ../../woocommerce-wishlists-functions.php:373
+msgid "Share this list via e-mail "
+msgstr "Ossza meg ezt a listát e-mailben "
 
-#: classes/class-wc-wishlists-admin-settings.php:27
-#: classes/class-wc-wishlists-admin-settings.php:68
-#: classes/class-wc-wishlists-installer.php:23
-#: templates/my-account-lists.php:3 woocommerce-wishlists.php:241
-#: woocommerce-wishlists.php:505
+#: ../../woocommerce-wishlists-functions.php:384
+msgid "Your name:"
+msgstr "Az Ön neve:"
+
+#: ../../woocommerce-wishlists-functions.php:390
+msgid "To:"
+msgstr "Címzett:"
+
+#: ../../woocommerce-wishlists-functions.php:393
+msgid "Type in e-mail addresses: jo@example.com, jan@example.com."
+msgstr "Írjon be e-mail-címeket: jo@example.com, jan@example.com."
+
+#: ../../woocommerce-wishlists-functions.php:396
+msgid "Add a note:"
+msgstr "Megjegyzés hozzáadása:"
+
+#: ../../woocommerce-wishlists-functions.php:414,
+#: ../../woocommerce-wishlists.php:1388,
+#: ../../src/Render/ListRenderer.php:2349
+msgid "Cancel"
+msgstr "Mégse"
+
+#: ../../woocommerce-wishlists-functions.php:416
+msgid "Send email"
+msgstr "E-mail küldése"
+
+#: ../../woocommerce-wishlists.php:32
+msgid "WooCommerce Wishlists requires WooCommerce to be installed and active."
+msgstr "A WooCommerce Wishlists használatához telepíteni kell a WooCommerce-t, és aktívnak kell lennie."
+
+#: ../../woocommerce-wishlists.php:410, ../../woocommerce-wishlists.php:1194,
+#: ../../classes/class-wc-wishlists-admin-settings.php:27,
+#: ../../classes/class-wc-wishlists-installer.php:23,
+#: ../../classes/class-wc-wishlists-settings-page.php:28,
+#: ../../templates/my-account-lists.php:27
 msgid "Wishlists"
 msgstr "Kívánságlisták"
 
-#: classes/class-wc-wishlists-admin-settings.php:99
-#: classes/class-wc-wishlists-admin-settings.php:180
+#: ../../woocommerce-wishlists.php:453, ../../woocommerce-wishlists.php:460
+msgid "Please select a list first"
+msgstr "Kérjük, először válasszon ki egy listát"
+
+#: ../../woocommerce-wishlists.php:673
+msgid "Are you sure?"
+msgstr "Biztos benne?"
+
+#: ../../woocommerce-wishlists.php:674, ../../src/Render/ListRenderer.php:3215
+msgid "How Many Would You Like to Add?"
+msgstr "Hány darabot kíván hozzáadni?"
+
+#: ../../woocommerce-wishlists.php:1195
+msgid "Wishlist"
+msgstr "Kívánságlista"
+
+#: ../../woocommerce-wishlists.php:1196
+msgid "Add Wishlist"
+msgstr "Kívánságlista hozzáadása"
+
+#: ../../woocommerce-wishlists.php:1197
+msgid "Add New Wishlist"
+msgstr "Új kívánságlista hozzáadása"
+
+#: ../../woocommerce-wishlists.php:1199
+msgid "Edit Wishlist"
+msgstr "Kívánságlista szerkesztése"
+
+#: ../../woocommerce-wishlists.php:1200
+msgid "New Wishlist"
+msgstr "Új kívánságlista"
+
+#: ../../woocommerce-wishlists.php:1201, ../../woocommerce-wishlists.php:1202,
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:542
+msgid "View Wishlist"
+msgstr "Kívánságlista megtekintése"
+
+#: ../../woocommerce-wishlists.php:1203
+msgid "Search Wishlists"
+msgstr "Kívánságlisták keresése"
+
+#: ../../woocommerce-wishlists.php:1204
+msgid "No Wishlists found"
+msgstr "Nem található kívánságlista"
+
+#: ../../woocommerce-wishlists.php:1205
+msgid "No Wishlists found in trash"
+msgstr "Nem található kívánságlista a Lomtárban"
+
+#: ../../woocommerce-wishlists.php:1206
+msgid "Parent Wishlists"
+msgstr "Szülő kívánságlisták"
+
+#: ../../woocommerce-wishlists.php:1208
+msgid "This is where customer wishlists are stored."
+msgstr "Itt tároljuk a vásárlók kívánságlistáit."
+
+#: ../../woocommerce-wishlists.php:1346,
+#: ../../classes/class-wc-wishlists-request-handler.php:45,
+#: ../../classes/class-wc-wishlists-request-handler.php:1504,
+#: ../../classes/class-wc-wishlists-request-handler.php:1551,
+#: ../../src/Cart/SavedForLaterSection.php:151,
+#: ../../src/Cart/SaveForLaterStoreApi.php:163,
+#: ../../src/Cart/SaveForLaterStoreApi.php:191,
+#: ../../src/Cart/StoreApiCart.php:261, ../../src/Cart/StoreApiCart.php:282
+msgid "Action failed. Please refresh the page and retry."
+msgstr ""
+"A művelet nem sikerült. Kérjük, frissítse az oldalt, és próbálja meg újra."
+
+#: ../../woocommerce-wishlists.php:1390
+msgid ""
+"You have %s items ready to move to a new list.  <a href=\"%s\">Create a "
+"list</a>"
+msgstr ""
+"Önnek %s tétel áll készen egy új listára való áthelyezésre.  <a "
+"href=\"%s\">Hozzon létre egy listát</a>"
+
+#: ../../woocommerce-wishlists.php:1420,
+#: ../../templates/wishlist-sharing-menu.php:36
+msgid "Check out my wishlist at "
+msgstr "Nézze meg a kívánságlistámat a következő címen "
+
+#: ../../woocommerce-wishlists.php:1421,
+#: ../../templates/wishlist-sharing-menu.php:36
+msgid "Found an interesting list of products at "
+msgstr "Érdekes terméklistát találtam a következő címen "
+
+#: ../../classes/class-wc-wishlist-cloner.php:33
+msgid "Clone this wishlist"
+msgstr "Ennek a kívánságlistának a klónozása"
+
+#: ../../classes/class-wc-wishlist-cloner.php:34,
+#: ../../classes/class-wc-wishlist-cloner.php:87
+msgid "Clone"
+msgstr "Klónozás"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:141
 msgid "Wishlist Options"
-msgstr "Kívánságlista beállítások"
+msgstr "Kívánságlista-beállítások"
 
-#: classes/class-wc-wishlists-admin-settings.php:186
+#: ../../classes/class-wc-wishlists-admin-settings.php:147
 msgid "Allow Guests to Create Lists"
-msgstr "Engedélyezze a vendégeknek a listák létrehozását"
+msgstr "Listák létrehozásának engedélyezése vendégek számára"
 
-#: classes/class-wc-wishlists-admin-settings.php:200
+#: ../../classes/class-wc-wishlists-admin-settings.php:161
 msgid "Automatically Create Lists"
 msgstr "Listák automatikus létrehozása"
 
-#: classes/class-wc-wishlists-admin-settings.php:201
+#: ../../classes/class-wc-wishlists-admin-settings.php:162
 msgid ""
 "<br />If set to automatic, a list with a generic title will be used.  If set"
 " to no, guests and users will be required to fill out a brief form and give "
 "the list a name before it will be created."
-msgstr ""
-"<br />Ha automatikusra van állítva, egy általános című lista lesz használva."
-"  Ha nem-re van állítva, a vendégeknek és felhasználóknak ki kell tölteniük "
-"egy rövid űrlapot, és nevet kell adniuk a listának, mielőtt az létrejön."
+msgstr "<br />Ha automatikusra van állítva, egy általános című lista lesz használatban.  Ha ki van kapcsolva, a vendégeknek és a felhasználóknak ki kell tölteniük egy rövid űrlapot, és nevet kell adniuk a listának, mielőtt az létrejön."
 
-#: classes/class-wc-wishlists-admin-settings.php:210
+#: ../../classes/class-wc-wishlists-admin-settings.php:171
 msgid "Message for Guests"
 msgstr "Üzenet a vendégeknek"
 
-#: classes/class-wc-wishlists-admin-settings.php:211
+#: ../../classes/class-wc-wishlists-admin-settings.php:172
 msgid "Only appears when Allow Guest to Create Lists is false "
-msgstr ""
-"Csak akkor jelenik meg, ha a vendégek számára a listák létrehozásának "
-"engedélyezése hamis "
+msgstr "Csak akkor jelenik meg, ha a vendégeknek nincs engedélyezve a listák létrehozása "
 
-#: classes/class-wc-wishlists-admin-settings.php:215
-#: classes/class-wc-wishlists-admin-settings.php:216
+#: ../../classes/class-wc-wishlists-admin-settings.php:176,
+#: ../../classes/class-wc-wishlists-admin-settings.php:177
 msgid "Please login or register for an account to create a wishlist"
-msgstr ""
-"Kérjük, jelentkezzen be, vagy regisztráljon egy fiókot, hogy kívánságlistát "
-"hozhasson létre"
+msgstr "Kívánságlista létrehozásához kérjük, lépjen be, vagy hozzon létre egy fiókot"
 
-#: classes/class-wc-wishlists-admin-settings.php:219
+#: ../../classes/class-wc-wishlists-admin-settings.php:180
 msgid "Redirect to Wishlist"
 msgstr "Átirányítás a kívánságlistára"
 
-#: classes/class-wc-wishlists-admin-settings.php:228
+#: ../../classes/class-wc-wishlists-admin-settings.php:189
 msgid "Button / Link Type"
 msgstr "Gomb / Hivatkozás típusa"
 
-#: classes/class-wc-wishlists-admin-settings.php:237
+#: ../../classes/class-wc-wishlists-admin-settings.php:198
 msgid "Icon "
 msgstr "Ikon "
 
-#: classes/class-wc-wishlists-admin-settings.php:238
-msgid "Only appears when button/link type is set to link"
-msgstr ""
-"Csak akkor jelenik meg, ha a gomb/hivatkozás típusa hivatkozásra van állítva"
+#: ../../classes/class-wc-wishlists-admin-settings.php:199
+msgid ""
+"Shown on the add-to-wishlist button. It is also how the button reports "
+"state: outlined while the product is on none of the shopper's lists, solid "
+"once it is on one."
+msgstr "A kívánságlistára helyező gombon jelenik meg. A gomb állapotát is jelzi: körvonalas, ha a termék még egyik vásárlói listán sem szerepel, és folytonos, ha már valamelyiken szerepel."
 
-#: classes/class-wc-wishlists-admin-settings.php:250
+#: ../../classes/class-wc-wishlists-admin-settings.php:207
 msgid "Button / Link Text"
 msgstr "Gomb / Hivatkozás szövege"
 
-#: classes/class-wc-wishlists-admin-settings.php:254
-#: classes/class-wc-wishlists-admin-settings.php:255
-#: templates/add-to-wishlist-link.php:24
+#: ../../classes/class-wc-wishlists-admin-settings.php:211,
+#: ../../classes/class-wc-wishlists-admin-settings.php:212
 msgid "Add to wishlist"
 msgstr "Hozzáadás a kívánságlistához"
 
-#: classes/class-wc-wishlists-admin-settings.php:259
+#: ../../classes/class-wc-wishlists-admin-settings.php:216
+msgid "One-click first save"
+msgstr "Első mentés egy kattintással"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:217
+msgid ""
+"When a shopper has no lists yet, save straight to a new list called \"My "
+"List\" instead of opening the picker. Faster, but it names their first list "
+"and chooses who can see it for them."
+msgstr "Ha a vásárlónak még nincs listája, a termék közvetlenül egy új, „Saját listám” nevű listára kerül ahelyett, hogy megnyílna a listaválasztó. Ez gyorsabb, de a rendszer ad nevet a vásárló első listájának, és a láthatóságát is beállítja helyette."
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:225
+msgid "Require a variation"
+msgstr "Variáció megkövetelése"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:226
+msgid ""
+"On a variable product's page, keep the button inactive until the shopper "
+"chooses options, the way Add to Cart waits. Product listings such as the "
+"shop and related products offer no way to choose options, so their buttons "
+"still save the product itself."
+msgstr "Változó termék oldalán tartsa kikapcsolva a gombot, amíg a vásárló ki nem választja az opciókat, ahogy a kosárba helyezés gomb is megvárja ezt. A terméklistákon, például az üzletben és a kapcsolódó termékeknél nincs lehetőség az opciók kiválasztására, ezért az ottani gombok továbbra is magát a terméket mentik."
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:234
+msgid "Saved State Text"
+msgstr "A mentett állapot szövege"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:236
+msgid ""
+"Announced to screen readers when the product is already on one of the "
+"shopper's lists. The button itself keeps the text above in every state."
+msgstr "A képernyőolvasók ezt a szöveget olvassák fel, ha a termék már szerepel a vásárló valamelyik listáján. A gomb minden állapotban a fenti szöveget jeleníti meg."
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:238,
+#: ../../classes/class-wc-wishlists-admin-settings.php:239,
+#: ../../src/Cart/SavedForLaterSection.php:150,
+#: ../../src/Render/ListRenderer.php:3059
+msgid "Saved"
+msgstr "Mentve"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:243
 msgid "Cart Label"
 msgstr "Kosár címke"
 
-#: classes/class-wc-wishlists-admin-settings.php:263
-#: classes/class-wc-wishlists-admin-settings.php:264
+#: ../../classes/class-wc-wishlists-admin-settings.php:247,
+#: ../../classes/class-wc-wishlists-admin-settings.php:248,
+#: ../../classes/class-wc-wishlists-request-handler.php:1318,
+#: ../../src/Cart/StoreApiCart.php:373
 msgid "From Wishlist"
 msgstr "Kívánságlistáról"
 
-#: classes/class-wc-wishlists-admin-settings.php:269
+#: ../../classes/class-wc-wishlists-admin-settings.php:253
+msgid "Product Listing Button"
+msgstr "Terméklista gombja"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:255
+msgid ""
+"The Add to Wishlist button on shop and category pages. Product pages are not"
+" affected by these settings."
+msgstr "A kívánságlistára helyező gomb az üzlet- és kategóriaoldalakon. A termékoldalakat ezek a beállítások nem érintik."
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:259
+msgid "Show in Product Listings"
+msgstr "Megjelenítés a terméklistákban"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:268
+msgid "Show for Variable Products"
+msgstr "Megjelenítés változó termékeknél"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:269
+msgid ""
+"A listing cannot choose a variation, so a variable product saved from a "
+"listing is saved without one, and the shopper is asked to choose options "
+"before it can go to the cart. Set to No to offer variable products only on "
+"their product pages."
+msgstr "A listázásban nem lehet változatot kiválasztani, ezért a listázásból elmentett változó termék változat nélkül kerül mentésre, és a vásárlónak ki kell választania az opciókat, mielőtt a termék a kosárba kerülhet. Állítsa nem értékre, ha a változó termékeket csak a termékoldalaikon szeretné kínálni."
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:277
+msgid "Button Position"
+msgstr "Gomb pozíciója"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:278
+msgid ""
+"Where the button sits on each product tile. \"On the product image\" lays it"
+" over the top-left corner of the image. On a block theme you can also move "
+"it in the Site Editor."
+msgstr "A gomb helye az egyes termékkártyákon. „A termékképen” esetén a kép bal felső sarkára kerül. Blokkos sablon esetén a webhelyszerkesztőben is áthelyezheti."
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:286
+msgid "Show Button Text"
+msgstr "Gomb szövegének megjelenítése"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:287
+msgid "Set to No for an icon-only button. Screen readers still hear the text."
+msgstr "Állítsa nem értékre, ha csak ikont szeretne megjeleníteni a gombon. A képernyőolvasók továbbra is felolvassák a szöveget."
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:295,
+#: ../../classes/class-wc-wishlists-admin-settings.php:551
+msgid "Button Text"
+msgstr "Gomb szöveg"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:296
+msgid "Leave blank to use the Button / Link Text above."
+msgstr "Hagyja üresen, ha a fenti gomb-/hivatkozásszöveget szeretné használni."
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:305
 msgid "Wishlist Processing Options"
-msgstr "Kívánságlista feldolgozási beállítások"
+msgstr "Kívánságlista-feldolgozási beállítások"
 
-#: classes/class-wc-wishlists-admin-settings.php:271
+#: ../../classes/class-wc-wishlists-admin-settings.php:307
 msgid "Choose behaivor after an item has been ordered from a wishlist"
-msgstr ""
-"Válassza ki a viselkedést, miután egy tételt megrendeltek egy "
-"kívánságlistáról"
+msgstr "Válassza ki, mi történjen, miután egy tételt megrendeltek a kívánságlistáról"
 
-#: classes/class-wc-wishlists-admin-settings.php:275
+#: ../../classes/class-wc-wishlists-admin-settings.php:311
 msgid "Automatic Removal "
 msgstr "Automatikus eltávolítás "
 
-#: classes/class-wc-wishlists-admin-settings.php:276
+#: ../../classes/class-wc-wishlists-admin-settings.php:312
 msgid "Automatically remove items from a wishlist?"
 msgstr "Automatikusan eltávolítja a tételeket a kívánságlistáról?"
 
-#: classes/class-wc-wishlists-admin-settings.php:284
+#: ../../classes/class-wc-wishlists-admin-settings.php:320
 msgid "Automatic Removal on Status "
 msgstr "Automatikus eltávolítás állapot alapján "
 
-#: classes/class-wc-wishlists-admin-settings.php:285
+#: ../../classes/class-wc-wishlists-admin-settings.php:321
 msgid ""
 "Choose the status the order must reach for the item to be removed from the "
 "list"
@@ -176,127 +379,121 @@ msgstr ""
 "Válassza ki azt az állapotot, amelyet a rendelésnek el kell érnie ahhoz, "
 "hogy a tétel eltávolításra kerüljön a listáról"
 
-#: classes/class-wc-wishlists-admin-settings.php:293
+#: ../../classes/class-wc-wishlists-admin-settings.php:329
 msgid "Automatic Removal Type "
 msgstr "Automatikus eltávolítás típusa "
 
-#: classes/class-wc-wishlists-admin-settings.php:294
+#: ../../classes/class-wc-wishlists-admin-settings.php:330
 msgid ""
 "If automatically removing items from a list on purchase, should items be "
 "removed only from the customers own list or from any list.  ( Useful if "
 "using lists as a registry )"
-msgstr ""
-"Ha vásárláskor a tételek automatikusan eltávolításra kerülnek a listáról, a "
-"tételeket csak a vásárló saját listájáról vagy bármely listáról kell "
-"eltávolítani?  ( Hasznos, ha a listákat nyilvántartásként használja )"
+msgstr "Ha vásárláskor automatikusan eltávolítja a tételeket a listáról, csak a vásárló saját listájáról vagy bármelyik listáról távolítsa el őket?  (Hasznos, ha a listákat ajándéklistaként használja)"
 
-#: classes/class-wc-wishlists-admin-settings.php:300
+#: ../../classes/class-wc-wishlists-admin-settings.php:336
 msgid "Remove Only From Customers Own List"
 msgstr "Eltávolítás csak a vásárló saját listájáról"
 
-#: classes/class-wc-wishlists-admin-settings.php:301
+#: ../../classes/class-wc-wishlists-admin-settings.php:337
 msgid "Remove From Any List"
 msgstr "Eltávolítás bármely listáról"
 
-#: classes/class-wc-wishlists-admin-settings.php:305
+#: ../../classes/class-wc-wishlists-admin-settings.php:341
 msgid "Show Previous Ordered Total "
-msgstr "Korábban megrendelt összesen megjelenítése "
+msgstr "Korábban megrendelt összmennyiség megjelenítése "
 
-#: classes/class-wc-wishlists-admin-settings.php:306
+#: ../../classes/class-wc-wishlists-admin-settings.php:342
 msgid ""
 "Show previously ordered total for list items on the view a list and edit a "
 "list page."
-msgstr ""
-"A korábban megrendelt összesen megjelenítése a lista megtekintése és a lista"
-" szerkesztése oldalakon a listatételeknél."
+msgstr "A listatételek korábban megrendelt összmennyiségének megjelenítése a lista megtekintésére és szerkesztésére szolgáló oldalakon."
 
-#: classes/class-wc-wishlists-admin-settings.php:311
-#: classes/class-wc-wishlists-admin-wishlist.php:668
-#: templates/create-a-list.php:140 templates/edit-my-list.php:481
+#: ../../classes/class-wc-wishlists-admin-settings.php:347,
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:693,
+#: ../../templates/create-a-list.php:141, ../../templates/edit-my-list.php:613
 msgid "No"
 msgstr "Nem"
 
-#: classes/class-wc-wishlists-admin-settings.php:311
-#: classes/class-wc-wishlists-admin-wishlist.php:661
-#: templates/create-a-list.php:131 templates/edit-my-list.php:471
+#: ../../classes/class-wc-wishlists-admin-settings.php:347,
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:686,
+#: ../../templates/create-a-list.php:132, ../../templates/edit-my-list.php:606
 msgid "Yes"
 msgstr "Igen"
 
-#: classes/class-wc-wishlists-admin-settings.php:314
+#: ../../classes/class-wc-wishlists-admin-settings.php:350
 msgid "Previous Ordered Column Heading"
-msgstr "Korábban megrendelt oszlopfejléc"
+msgstr "Korábban megrendelt összmennyiség oszlopfejléce"
 
-#: classes/class-wc-wishlists-admin-settings.php:318
-#: classes/class-wc-wishlists-admin-settings.php:319
-#: templates/edit-my-list.php:148 templates/edit-my-list.php:271
-#: templates/view-a-list.php:162 templates/view-a-list.php:266
+#: ../../classes/class-wc-wishlists-admin-settings.php:354,
+#: ../../classes/class-wc-wishlists-admin-settings.php:355,
+#: ../../src/Render/ListRenderer.php:593
 msgid "Ordered"
 msgstr "Megrendelve"
 
-#: classes/class-wc-wishlists-admin-settings.php:324
+#: ../../classes/class-wc-wishlists-admin-settings.php:360
 msgid "Wishlist Sharing Options"
-msgstr "Kívánságlista megosztási beállítások"
+msgstr "Kívánságlista-megosztási beállítások"
 
-#: classes/class-wc-wishlists-admin-settings.php:330
+#: ../../classes/class-wc-wishlists-admin-settings.php:366
 msgid "Social Options"
 msgstr "Közösségi beállítások"
 
-#: classes/class-wc-wishlists-admin-settings.php:331
-#: templates/wishlist-sharing-menu.php:56
+#: ../../classes/class-wc-wishlists-admin-settings.php:367,
+#: ../../templates/wishlist-sharing-menu.php:65
 msgid "Facebook"
 msgstr "Facebook"
 
-#: classes/class-wc-wishlists-admin-settings.php:339
-#: templates/wishlist-sharing-menu.php:61
+#: ../../classes/class-wc-wishlists-admin-settings.php:375,
+#: ../../templates/wishlist-sharing-menu.php:70
 msgid "Twitter"
 msgstr "Twitter"
 
-#: classes/class-wc-wishlists-admin-settings.php:347
-#: templates/wishlist-sharing-menu.php:51
+#: ../../classes/class-wc-wishlists-admin-settings.php:383,
+#: ../../templates/wishlist-sharing-menu.php:60
 msgid "Email"
 msgstr "E-mail"
 
-#: classes/class-wc-wishlists-admin-settings.php:355
+#: ../../classes/class-wc-wishlists-admin-settings.php:391
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: classes/class-wc-wishlists-admin-settings.php:364
+#: ../../classes/class-wc-wishlists-admin-settings.php:400
 msgid "Wishlist Style Options"
-msgstr "Kívánságlista stílusbeállítások"
+msgstr "Kívánságlista-stílusbeállítások"
 
-#: classes/class-wc-wishlists-admin-settings.php:370
+#: ../../classes/class-wc-wishlists-admin-settings.php:406
 msgid "Custom Buttons"
 msgstr "Egyéni gombok"
 
-#: classes/class-wc-wishlists-admin-settings.php:371
+#: ../../classes/class-wc-wishlists-admin-settings.php:407
 msgid "Enable Custom Wishlist Button Colors"
 msgstr "Egyéni kívánságlista-gombszínek engedélyezése"
 
-#: classes/class-wc-wishlists-admin-settings.php:378
+#: ../../classes/class-wc-wishlists-admin-settings.php:414
 msgid "Button Color"
 msgstr "Gomb színe"
 
-#: classes/class-wc-wishlists-admin-settings.php:384
+#: ../../classes/class-wc-wishlists-admin-settings.php:420
 msgid "Button Text Color"
 msgstr "Gomb szövegének színe"
 
-#: classes/class-wc-wishlists-admin-settings.php:390
+#: ../../classes/class-wc-wishlists-admin-settings.php:426
 msgid "Custom CSS"
 msgstr "Egyéni CSS"
 
-#: classes/class-wc-wishlists-admin-settings.php:393
+#: ../../classes/class-wc-wishlists-admin-settings.php:429
 msgid "Enter in any custom styles you would like here."
 msgstr "Adja meg itt a kívánt egyéni stílusokat."
 
-#: classes/class-wc-wishlists-admin-settings.php:401
+#: ../../classes/class-wc-wishlists-admin-settings.php:437
 msgid "Wishlist Page Options"
-msgstr "Kívánságlista oldal beállításai"
+msgstr "Kívánságlista-oldal beállításai"
 
-#: classes/class-wc-wishlists-admin-settings.php:407
+#: ../../classes/class-wc-wishlists-admin-settings.php:443
 msgid "My Lists Page"
-msgstr "Saját listák oldal"
+msgstr "Saját listák oldala"
 
-#: classes/class-wc-wishlists-admin-settings.php:408
+#: ../../classes/class-wc-wishlists-admin-settings.php:444
 msgid ""
 "This is where users will view their lists. Page contents: "
 "[wc_wishlists_my_archive]"
@@ -304,13 +501,12 @@ msgstr ""
 "Itt tekintik meg a felhasználók a saját listáikat. Oldal tartalma: "
 "[wc_wishlists_my_archive]"
 
-#: classes/class-wc-wishlists-admin-settings.php:417
-#: classes/class-wc-wishlists-installer.php:25
-#: classes/class-wc-wishlists-messages.php:33
+#: ../../classes/class-wc-wishlists-admin-settings.php:453,
+#: ../../classes/class-wc-wishlists-installer.php:25
 msgid "Create a List"
 msgstr "Lista létrehozása"
 
-#: classes/class-wc-wishlists-admin-settings.php:418
+#: ../../classes/class-wc-wishlists-admin-settings.php:454
 msgid ""
 "This is where users will create new lists. Page contents: "
 "[wc_wishlists_create]"
@@ -318,33 +514,33 @@ msgstr ""
 "Itt hoznak létre a felhasználók új listákat. Oldal tartalma: "
 "[wc_wishlists_create]"
 
-#: classes/class-wc-wishlists-admin-settings.php:427
+#: ../../classes/class-wc-wishlists-admin-settings.php:463
 msgid "Edit a List"
 msgstr "Lista szerkesztése"
 
-#: classes/class-wc-wishlists-admin-settings.php:428
+#: ../../classes/class-wc-wishlists-admin-settings.php:464
 msgid ""
 "This is where users will edit their list. Page contents: [wc_wishlists_edit]"
 msgstr ""
 "Itt szerkesztik a felhasználók a listájukat. Oldal tartalma: "
 "[wc_wishlists_edit]"
 
-#: classes/class-wc-wishlists-admin-settings.php:437
-#: classes/class-wc-wishlists-installer.php:27
+#: ../../classes/class-wc-wishlists-admin-settings.php:473,
+#: ../../classes/class-wc-wishlists-installer.php:27
 msgid "Find a List"
 msgstr "Lista keresése"
 
-#: classes/class-wc-wishlists-admin-settings.php:438
+#: ../../classes/class-wc-wishlists-admin-settings.php:474
 msgid ""
 "This is where you can search for lists. Page contents: [wc_wishlists_search]"
 msgstr "Itt kereshet listákat. Oldal tartalma: [wc_wishlists_search]"
 
-#: classes/class-wc-wishlists-admin-settings.php:447
-#: classes/class-wc-wishlists-installer.php:26
+#: ../../classes/class-wc-wishlists-admin-settings.php:483,
+#: ../../classes/class-wc-wishlists-installer.php:26
 msgid "View a List"
 msgstr "Lista megtekintése"
 
-#: classes/class-wc-wishlists-admin-settings.php:448
+#: ../../classes/class-wc-wishlists-admin-settings.php:484
 msgid ""
 "This is where public and protected lists are viewed. Page contents: "
 "[wc_wishlists_single]"
@@ -352,11 +548,11 @@ msgstr ""
 "Itt tekinthetők meg a nyilvános és védett listák. Oldal tartalma: "
 "[wc_wishlists_single]"
 
-#: classes/class-wc-wishlists-admin-settings.php:458
+#: ../../classes/class-wc-wishlists-admin-settings.php:494
 msgid "Wishlist Notification Options"
 msgstr "Kívánságlista-értesítések beállításai"
 
-#: classes/class-wc-wishlists-admin-settings.php:460
+#: ../../classes/class-wc-wishlists-admin-settings.php:496
 msgid ""
 "Automatically send notifications to wishlist owners when a price reduction "
 "occurs"
@@ -364,186 +560,258 @@ msgstr ""
 "Értesítések automatikus küldése a kívánságlista-tulajdonosoknak árcsökkenés "
 "esetén"
 
-#: classes/class-wc-wishlists-admin-settings.php:464
+#: ../../classes/class-wc-wishlists-admin-settings.php:500
 msgid "Send Notifications"
 msgstr "Értesítések küldése"
 
-#: classes/class-wc-wishlists-admin-settings.php:475
+#: ../../classes/class-wc-wishlists-admin-settings.php:511
 msgid "Add to Cart Options"
-msgstr "Kosárba helyezés beállításai"
+msgstr "Kosárba tétel beállításai"
 
-#: classes/class-wc-wishlists-admin-settings.php:477
+#: ../../classes/class-wc-wishlists-admin-settings.php:513
 msgid "Options for the Add to Cart Buttons on lists"
 msgstr "A listákon lévő Kosárba helyezés gombok beállításai"
 
-#: classes/class-wc-wishlists-admin-settings.php:481
+#: ../../classes/class-wc-wishlists-admin-settings.php:517
 msgid "Prompt for Quantities "
 msgstr "Mennyiség bekérése "
 
-#: classes/class-wc-wishlists-admin-settings.php:482
+#: ../../classes/class-wc-wishlists-admin-settings.php:518
 msgid ""
 "Prompt customers for the quantity to add to the cart when clicking the "
 "button while viewing a list?"
-msgstr ""
-"Kérje be a vásárlóktól a kosárba helyezendő mennyiséget, amikor lista "
-"megtekintésekor a gombra kattintanak?"
+msgstr "Kérje be a vásárlóktól a kosárba tenni kívánt mennyiséget, amikor a lista megtekintése közben a gombra kattintanak?"
 
-#: classes/class-wc-wishlists-admin-settings.php:544
+#: ../../classes/class-wc-wishlists-admin-settings.php:527
+msgid "Save for Later"
+msgstr "Későbbre mentés"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:529
+msgid "Lets a shopper move a cart line to a list, to buy later."
+msgstr "Lehetővé teszi a vásárló számára, hogy a kosár egyik tételét későbbi vásárlás céljából egy listára helyezze át."
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:533
+msgid "Enable Save for Later"
+msgstr "Későbbre mentés bekapcsolása"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:542
+msgid "Behaviour"
+msgstr "Viselkedés"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:543
+msgid ""
+"Move removes the item from the cart line and adds it to the list. Copy adds "
+"it to the list and leaves the cart line as is. Either way, \"Move to cart\" "
+"(bringing a saved item back) always removes the saved row."
+msgstr "Az áthelyezés eltávolítja a tételt a kosársorból, és hozzáadja a listához. A másolás hozzáadja a listához, de változatlanul hagyja a kosársorban. Bármelyik lehetőséget választja, a „visszahelyezés a kosárba” művelet (egy elmentett tétel visszahelyezése) mindig eltávolítja az elmentett sort."
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:555,
+#: ../../classes/class-wc-wishlists-admin-settings.php:556,
+#: ../../src/Cart/CartControl.php:68,
+#: ../../src/Cart/SavedForLaterSection.php:138
+msgid "Save for later"
+msgstr "Későbbre mentés"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:561
+msgid "List items"
+msgstr "Listaelemek"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:563
+msgid "What a shopper can record against each item on a list."
+msgstr "Milyen adatokat rögzíthet a vásárló a lista egyes tételeihez."
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:567
+msgid "Allow notes"
+msgstr "Jegyzetek engedélyezése"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:568
+msgid ""
+"Lets the owner write a short note (up to 200 characters) against each item."
+msgstr "Lehetővé teszi a lista tulajdonosának, hogy minden tételhez rövid, legfeljebb 200 karakteres jegyzetet írjon."
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:576
+msgid "Share notes with"
+msgstr "Jegyzetek megosztása a következőkkel"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:577
+msgid ""
+"Whether people viewing a shared or public list can read the owner's notes."
+msgstr "Annak beállítása, hogy a megosztott vagy nyilvános listát megtekintők elolvashassák-e a tulajdonos jegyzeteit."
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:582
+msgid "Visitors"
+msgstr "Látogatók"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:582
+msgid "No one"
+msgstr "Senki"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:585
+msgid "Allow priority"
+msgstr "Prioritás engedélyezése"
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:586
+msgid ""
+"Lets the owner mark each item Low, Medium or High, and sort a list by it."
+msgstr "Lehetővé teszi a tulajdonosnak, hogy minden tételt alacsony, közepes vagy magas prioritásúként jelöljön meg, és ez alapján rendezze a listát."
+
+#: ../../classes/class-wc-wishlists-admin-settings.php:650
 msgid "Button"
 msgstr "Gomb"
 
-#: classes/class-wc-wishlists-admin-settings.php:544
+#: ../../classes/class-wc-wishlists-admin-settings.php:650
 msgid ""
 "Choose the color for the background of the button when link type is set to "
 "button."
-msgstr ""
-"Válassza ki a gomb háttérszínét, amikor a hivatkozás típusa gombra van "
-"állítva."
+msgstr "Válassza ki a gomb háttérszínét, amikor a link típusa gombként van beállítva."
 
-#: classes/class-wc-wishlists-admin-settings.php:553
+#: ../../classes/class-wc-wishlists-admin-settings.php:659
 msgid "Text"
 msgstr "Szöveg"
 
-#: classes/class-wc-wishlists-admin-settings.php:553
+#: ../../classes/class-wc-wishlists-admin-settings.php:659
 msgid ""
 "Choose the color for the font of the button when link type is set to button."
-msgstr ""
-"Válassza ki a gomb betűszínét, amikor a hivatkozás típusa gombra van "
-"állítva."
+msgstr "Válassza ki a gomb betűszínét, amikor a link típusa gombként van beállítva."
 
-#: classes/class-wc-wishlists-admin-wishlist.php:94
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:94
 msgid "Are you sure you want to remove the selected items?"
-msgstr "Biztos benne, hogy eltávolítja a kijelölt elemeket?"
+msgstr "Biztos benne, hogy el szeretné távolítani a kijelölt tételeket?"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:132
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:132
 msgid "Show All Types"
 msgstr "Összes típus megjelenítése"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:134
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:134
 msgid "Permanent"
 msgstr "Állandó"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:136
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:136
 msgid "Temporary List"
 msgstr "Ideiglenes lista"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:140
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:140
 msgid "Show All Sharing Types"
 msgstr "Összes megosztási típus megjelenítése"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:142
-#: classes/class-wc-wishlists-admin-wishlist.php:576
-#: classes/models/class-wc-wishlists-wishlist.php:79
-#: templates/create-a-list.php:66 templates/edit-my-list.php:406
-#: templates/my-lists.php:71
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:142,
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:601,
+#: ../../templates/create-a-list.php:67, ../../templates/edit-my-list.php:85,
+#: ../../templates/edit-my-list.php:553,
+#: ../../templates/my-lists-cards.php:264,
+#: ../../templates/view-a-list.php:125,
+#: ../../classes/models/class-wc-wishlists-wishlist.php:166,
+#: ../../src/Render/ListRenderer.php:3435
 msgid "Public"
 msgstr "Nyilvános"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:144
-#: classes/class-wc-wishlists-admin-wishlist.php:583
-#: classes/models/class-wc-wishlists-wishlist.php:82
-#: templates/create-a-list.php:74 templates/edit-my-list.php:417
-#: templates/my-lists.php:72
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:144,
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:608,
+#: ../../templates/create-a-list.php:75, ../../templates/edit-my-list.php:88,
+#: ../../templates/edit-my-list.php:561,
+#: ../../templates/my-lists-cards.php:265,
+#: ../../templates/view-a-list.php:128,
+#: ../../classes/models/class-wc-wishlists-wishlist.php:168,
+#: ../../src/Render/ListRenderer.php:3436
 msgid "Shared"
 msgstr "Megosztott"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:146
-#: classes/class-wc-wishlists-admin-wishlist.php:590
-#: classes/models/class-wc-wishlists-wishlist.php:85
-#: templates/create-a-list.php:82 templates/edit-my-list.php:428
-#: templates/my-lists.php:73
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:146,
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:615,
+#: ../../templates/create-a-list.php:83, ../../templates/edit-my-list.php:91,
+#: ../../templates/edit-my-list.php:569,
+#: ../../templates/my-lists-cards.php:266,
+#: ../../templates/view-a-list.php:131,
+#: ../../classes/models/class-wc-wishlists-wishlist.php:170,
+#: ../../src/Render/ListRenderer.php:3437
 msgid "Private"
 msgstr "Privát"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:286
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:290
 msgid "Title"
 msgstr "Cím"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:287
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:291
 msgid "Type"
 msgstr "Típus"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:288
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:292
 msgid "Sharing Status"
 msgstr "Megosztási állapot"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:289
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:293
 msgid "User"
 msgstr "Felhasználó"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:290
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:294
 msgid "Email on List"
-msgstr "E-mail cím a listán"
+msgstr "E-mail-cím a listán"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:291
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:295
 msgid "Name on List"
 msgstr "Név a listán"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:292
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:296
 msgid "Products"
 msgstr "Termékek"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:293
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:297
 msgid "Date"
 msgstr "Dátum"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:511
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:536
 msgid "Items"
-msgstr "Tételek"
+msgstr "Elemek"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:517
-#: woocommerce-wishlists.php:512 woocommerce-wishlists.php:513
-msgid "View Wishlist"
-msgstr "Kívánságlista megtekintése"
-
-#: classes/class-wc-wishlists-admin-wishlist.php:523
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:548
 msgid "Name and Information"
 msgstr "Név és információk"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:528
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:553
 msgid "Sharing"
 msgstr "Megosztás"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:550
-#: templates/create-a-list.php:202 templates/my-lists.php:60
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:557
+msgid "Notifications"
+msgstr "Értesítések"
+
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:575,
+#: ../../templates/create-a-list.php:203,
+#: ../../templates/edit-my-list.php:122,
+#: ../../templates/my-lists-cards.php:288
 msgid "Preview"
 msgstr "Előnézet"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:554
-#: classes/class-wc-wishlists-installer.php:28
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:579,
+#: ../../classes/class-wc-wishlists-installer.php:28
 msgid "Manage List"
 msgstr "Lista kezelése"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:571
-#: templates/create-a-list.php:59 templates/edit-my-list.php:397
-#: templates/my-account-lists.php:9 templates/my-lists.php:36
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:596,
+#: ../../templates/create-a-list.php:60, ../../templates/edit-my-list.php:547
 msgid "Privacy Settings"
 msgstr "Adatvédelmi beállítások"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:577
-#: templates/create-a-list.php:67 templates/edit-my-list.php:407
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:602,
+#: ../../templates/create-a-list.php:68, ../../templates/edit-my-list.php:554
 msgid ""
 "Anyone can search for and see this list. You can also share using a link."
-msgstr ""
-"Bárki rákereshet és megtekintheti ezt a listát. Megoszthatja hivatkozással "
-"is."
+msgstr "Bárki rákereshet erre a listára, és megtekintheti. Linkkel is megoszthatja."
 
-#: classes/class-wc-wishlists-admin-wishlist.php:584
-#: templates/create-a-list.php:75 templates/edit-my-list.php:418
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:609,
+#: ../../templates/create-a-list.php:76, ../../templates/edit-my-list.php:562
 msgid ""
 "Only people with the link can see this list. It will not appear in public "
 "search results."
-msgstr ""
-"Csak a hivatkozással rendelkezők láthatják ezt a listát. Nem jelenik meg a "
-"nyilvános keresési találatok között."
+msgstr "Csak azok láthatják ezt a listát, akik rendelkeznek a linkkel. Nem jelenik meg a nyilvános keresési találatok között."
 
-#: classes/class-wc-wishlists-admin-wishlist.php:591
-#: templates/create-a-list.php:83 templates/edit-my-list.php:429
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:616,
+#: ../../templates/create-a-list.php:84, ../../templates/edit-my-list.php:570
 msgid "Only you can see this list."
 msgstr "Ezt a listát csak Ön láthatja."
 
-#: classes/class-wc-wishlists-admin-wishlist.php:610
-#: templates/create-a-list.php:89 templates/edit-my-list.php:435
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:635,
+#: ../../templates/create-a-list.php:90, ../../templates/edit-my-list.php:574
 msgid ""
 "Enter a name you would like associated with this list.  If your list is "
 "public, users can find it by searching for this name."
@@ -551,178 +819,145 @@ msgstr ""
 "Adjon meg egy nevet, amelyet ehhez a listához szeretne társítani.  Ha a "
 "listája nyilvános, a felhasználók e névre keresve megtalálhatják."
 
-#: classes/class-wc-wishlists-admin-wishlist.php:612
-#: templates/create-a-list.php:91 templates/edit-my-list.php:438
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:637,
+#: ../../templates/create-a-list.php:92, ../../templates/edit-my-list.php:577
 msgid "First Name"
 msgstr "Keresztnév"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:617
-#: templates/create-a-list.php:101 templates/edit-my-list.php:445
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:642,
+#: ../../templates/create-a-list.php:102, ../../templates/edit-my-list.php:584
 msgid "Last Name"
 msgstr "Vezetéknév"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:622
-#: templates/create-a-list.php:114 templates/edit-my-list.php:453
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:647,
+#: ../../templates/create-a-list.php:115, ../../templates/edit-my-list.php:592
 msgid "Email Associated with the List"
 msgstr "A listához társított e-mail-cím"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:631
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:656
 msgid "Attach to a User"
 msgstr "Hozzárendelés felhasználóhoz"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:632
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:657
 msgid "Enter a user ID to assign this list to a specific user."
-msgstr ""
-"Adjon meg egy felhasználói ID-t, hogy ezt a listát egy adott felhasználóhoz "
-"rendelje."
+msgstr "Adjon meg egy felhasználói azonosítót (ID), hogy ezt a listát egy adott felhasználóhoz rendelje."
 
-#: classes/class-wc-wishlists-admin-wishlist.php:636
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:661
 msgid "User ID Associated with the List"
-msgstr "A listához társított felhasználói ID"
+msgstr "A listához társított felhasználói azonosító (ID)"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:656
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:681
 msgid "Notification Settings"
 msgstr "Értesítési beállítások"
 
-#: classes/class-wc-wishlists-admin-wishlist.php:662
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:687
 msgid "Send an email if a price reduction occurs."
 msgstr "Küldjön e-mailt, ha árcsökkenés történik."
 
-#: classes/class-wc-wishlists-admin-wishlist.php:669
+#: ../../classes/class-wc-wishlists-admin-wishlist.php:694
 msgid "Do not send an email if a price reduction occurs."
 msgstr "Ne küldjön e-mailt, ha árcsökkenés történik."
 
-#: classes/class-wc-wishlists-cron.php:162
-#: classes/class-wc-wishlists-cron.php:164
-#, php-format
+#: ../../classes/class-wc-wishlists-cron.php:291,
+#: ../../classes/class-wc-wishlists-cron.php:289
 msgid ""
 "<a href=\"%s\">%s</a> has been reduced in price! Was %s, now available for "
 "%s "
-msgstr "<a href=\"%s\">%s</a> ára csökkent! Korábban %s, most %s "
+msgstr "<a href=\"%s\">%s</a> ára csökkent! Korábbi ár: %s, új ár: %s "
 
-#: classes/class-wc-wishlists-cron.php:238
-#, php-format
+#: ../../classes/class-wc-wishlists-cron.php:365
 msgid "%s"
 msgstr "%s"
 
-#: classes/class-wc-wishlists-cron.php:251
+#: ../../classes/class-wc-wishlists-cron.php:378
 msgid "Price Change Notification"
 msgstr "Árváltozási értesítés"
 
-#: classes/class-wc-wishlists-email-verification.php:39
+#: ../../classes/class-wc-wishlists-email-verification.php:38
 msgid "Your email has been confirmed"
 msgstr "Az Ön e-mail-címét megerősítettük"
 
-#: classes/class-wc-wishlists-mail-email-verification.php:27
+#: ../../classes/class-wc-wishlists-mail-email-verification.php:27
 msgid "Confirm Wishlist Email"
-msgstr "Kívánságlista e-mailjének megerősítése"
+msgstr "A kívánságlistához tartozó e-mail-cím megerősítése"
 
-#: classes/class-wc-wishlists-mail-email-verification.php:28
+#: ../../classes/class-wc-wishlists-mail-email-verification.php:28
 msgid ""
 "Email sent to customers who create a list and need to verify their email "
 "address"
-msgstr ""
-"Azoknak az ügyfeleknek küldött e-mail, akik listát hoznak létre, és "
-"igazolniuk kell az e-mail-címüket"
+msgstr "Azoknak az ügyfeleknek küldött e-mail, akik listát hoznak létre, és igazolniuk kell az e-mail-címüket"
 
-#: classes/class-wc-wishlists-mail-email-verification.php:53
+#: ../../classes/class-wc-wishlists-mail-email-verification.php:53
 msgid "Response Required:  Confirm your email address for your Wish List"
 msgstr ""
 "Válasz szükséges:  Erősítse meg a kívánságlistájához tartozó e-mail-címét"
 
-#: classes/class-wc-wishlists-mail-email-verification.php:63
+#: ../../classes/class-wc-wishlists-mail-email-verification.php:63
 msgid "Verification Required"
 msgstr "Megerősítés szükséges"
 
-#: classes/class-wc-wishlists-mail-share-list.php:28
+#: ../../classes/class-wc-wishlists-mail-share-list.php:28
 msgid "Wishlist Sharing"
 msgstr "Kívánságlista megosztása"
 
-#: classes/class-wc-wishlists-mail-share-list.php:29
+#: ../../classes/class-wc-wishlists-mail-share-list.php:29
 msgid "Email sent to customers when someone shares a list"
-msgstr ""
-"E-mail, amelyet akkor küldünk az ügyfeleknek, amikor valaki megoszt egy "
-"listát"
+msgstr "E-mail, amelyet akkor küldünk az ügyfeleknek, amikor valaki megoszt egy listát"
 
-#: classes/class-wc-wishlists-mail-share-list.php:58
-#, php-format
+#: ../../classes/class-wc-wishlists-mail-share-list.php:58
 msgid "A wishlist has been shared with you from %s"
-msgstr "Egy kívánságlistát megosztottak Önnel %s részéről"
+msgstr "Egy kívánságlistát %s osztott meg Önnel"
 
-#: classes/class-wc-wishlists-mail-share-list.php:68
+#: ../../classes/class-wc-wishlists-mail-share-list.php:68
 msgid "A wishlist has been shared with you"
 msgstr "Egy kívánságlistát megosztottak Önnel"
 
-#: classes/class-wc-wishlists-messages.php:30
-msgid "Error creating list.  Please try again later"
-msgstr ""
-"Hiba történt a lista létrehozásakor.  Kérjük, próbálja meg később újra"
+#: ../../classes/class-wc-wishlists-request-handler.php:38
+msgid "That link has expired. Please reload the cart and try again."
+msgstr "Ez a link lejárt. Kérjük, töltse újra a kosarat, majd próbálja újra."
 
-#: classes/class-wc-wishlists-messages.php:36
-msgid "Create a list to save items for later."
-msgstr "Hozzon létre egy listát, hogy későbbre elmentse a tételeket."
-
-#: classes/class-wc-wishlists-request-handler.php:15
-#: woocommerce-wishlists.php:638
-msgid "Action failed. Please refresh the page and retry."
-msgstr ""
-"A művelet nem sikerült. Kérjük, frissítse az oldalt, és próbálja meg újra."
-
-#: classes/class-wc-wishlists-request-handler.php:132
+#: ../../classes/class-wc-wishlists-request-handler.php:237
 msgid "Please name your list"
 msgstr "Kérjük, nevezze el a listáját"
 
-#: classes/class-wc-wishlists-request-handler.php:179
-#, php-format
-msgid "Wishlist successfully created. %s items moved"
-msgstr "A kívánságlista sikeresen létrehozva. %s tétel áthelyezve"
-
-#: classes/class-wc-wishlists-request-handler.php:181
+#: ../../classes/class-wc-wishlists-request-handler.php:297
 msgid "Wishlist successfully created"
 msgstr "A kívánságlista sikeresen létrehozva"
 
-#: classes/class-wc-wishlists-request-handler.php:202
-#: classes/class-wc-wishlists-request-handler.php:239
-msgid "Invalid wishlist ID"
-msgstr "Érvénytelen kívánságlista ID"
+#: ../../classes/class-wc-wishlists-request-handler.php:295
+msgid "Wishlist successfully created. %s items moved"
+msgstr "A kívánságlista sikeresen létrehozva. %s tétel áthelyezve"
 
-#: classes/class-wc-wishlists-request-handler.php:209
+#: ../../classes/class-wc-wishlists-request-handler.php:320,
+#: ../../classes/class-wc-wishlists-request-handler.php:351
+msgid "Invalid wishlist ID"
+msgstr "A kívánságlista ID-je hibás"
+
+#: ../../classes/class-wc-wishlists-request-handler.php:327
 msgid "Unable to locate wishlist"
 msgstr "A kívánságlista nem található"
 
-#: classes/class-wc-wishlists-request-handler.php:220
+#: ../../classes/class-wc-wishlists-request-handler.php:332
 msgid "You can only manage your own lists"
 msgstr "Csak a saját listáit kezelheti"
 
-#: classes/class-wc-wishlists-request-handler.php:228
+#: ../../classes/class-wc-wishlists-request-handler.php:339
 msgid "Wishlist successfully deleted"
 msgstr "A kívánságlista sikeresen törölve"
 
-#: classes/class-wc-wishlists-request-handler.php:246
+#: ../../classes/class-wc-wishlists-request-handler.php:358
 msgid "Unable to locate wishlist for updating"
-msgstr "A kívánságlista nem található a frissítéshez"
+msgstr "A frissítendő kívánságlista nem található"
 
-#: classes/class-wc-wishlists-request-handler.php:252
+#: ../../classes/class-wc-wishlists-request-handler.php:365
 msgid "Name can not be empty"
 msgstr "A név nem lehet üres"
 
-#: classes/class-wc-wishlists-request-handler.php:263
-#: classes/class-wc-wishlists-request-handler.php:326
-#: classes/class-wc-wishlists-request-handler.php:401
-#: classes/class-wc-wishlists-request-handler.php:444
-#: classes/class-wc-wishlists-request-handler.php:673
-msgid "You can only update your own lists"
-msgstr "Csak a saját listáit frissítheti"
-
-#: classes/class-wc-wishlists-request-handler.php:271
+#: ../../classes/class-wc-wishlists-request-handler.php:384
 msgid "Wishlist successfully updated"
 msgstr "A kívánságlista sikeresen frissítve"
 
-#: classes/class-wc-wishlists-request-handler.php:339
-msgid "Lists successfully updated"
-msgstr "A listák sikeresen frissítve"
-
-#: classes/class-wc-wishlists-request-handler.php:342
+#: ../../classes/class-wc-wishlists-request-handler.php:475
 msgid ""
 "There was an error updating your lists. Please refresh the page and try "
 "again."
@@ -730,671 +965,1384 @@ msgstr ""
 "Hiba történt a listái frissítésekor. Kérjük, frissítse az oldalt, és "
 "próbálja meg újra."
 
-#: classes/class-wc-wishlists-request-handler.php:385
+#: ../../classes/class-wc-wishlists-request-handler.php:472
+msgid "Lists successfully updated"
+msgstr "A listák sikeresen frissítve"
+
+#: ../../classes/class-wc-wishlists-request-handler.php:546
 msgid "Unable to remove item. Please try again"
 msgstr "Nem sikerült eltávolítani a tételt. Kérjük, próbálja meg újra"
 
-#: classes/class-wc-wishlists-request-handler.php:409
-msgid "Item removed from your list"
-msgstr "A tételt eltávolítottuk a listájáról"
-
-#: classes/class-wc-wishlists-request-handler.php:412
+#: ../../classes/class-wc-wishlists-request-handler.php:570
 msgid "Failed to remove item. Please try again"
 msgstr "A tétel eltávolítása nem sikerült. Kérjük, próbálja meg újra"
 
-#: classes/class-wc-wishlists-request-handler.php:426
-#: classes/class-wc-wishlists-request-handler.php:662
+#: ../../classes/class-wc-wishlists-request-handler.php:567
+msgid "Item removed from your list"
+msgstr "A tételt eltávolítottuk a listájáról"
+
+#: ../../classes/class-wc-wishlists-request-handler.php:584,
+#: ../../classes/class-wc-wishlists-request-handler.php:900
 msgid "Unable to edit list. Please try again"
 msgstr "A lista szerkesztése nem lehetséges. Kérjük, próbálja meg újra"
 
-#: classes/class-wc-wishlists-request-handler.php:454
-#: classes/class-wc-wishlists-request-handler.php:693
-#: classes/class-wc-wishlists-request-handler.php:799
+#: ../../classes/class-wc-wishlists-request-handler.php:609,
+#: ../../classes/class-wc-wishlists-request-handler.php:929
 msgid "Please select at least one item before applying an action"
 msgstr "Kérjük, válasszon ki legalább egy tételt a művelet alkalmazása előtt"
 
-#. translators: %s: number of items
-#: classes/class-wc-wishlists-request-handler.php:519
-#, php-format
-msgid "%s items removed from your list"
-msgstr "%s tétel eltávolítva a listájáról"
-
-#: classes/class-wc-wishlists-request-handler.php:525
+#: ../../classes/class-wc-wishlists-request-handler.php:690
 msgid "No items were removed. Please try again"
 msgstr "Nem távolítottunk el egyetlen tételt sem. Kérjük, próbálja meg újra"
 
-#: classes/class-wc-wishlists-request-handler.php:554
-#: classes/class-wc-wishlists-request-handler.php:648
+#: ../../classes/class-wc-wishlists-request-handler.php:684
+msgid "%s items removed from your list"
+msgstr "%s tétel eltávolítva a listájáról"
+
+#: ../../classes/class-wc-wishlists-request-handler.php:719,
+#: ../../classes/class-wc-wishlists-request-handler.php:820
 msgid "No items were moved. Please try again"
 msgstr "Nem helyeztünk át egyetlen tételt sem. Kérjük, próbálja meg újra"
 
-#. translators: %s: number of items
-#: classes/class-wc-wishlists-request-handler.php:582
-#, php-format
-msgid "%s items have been added to the cart"
-msgstr "%s tétel került a kosárba"
-
-#: classes/class-wc-wishlists-request-handler.php:588
+#: ../../classes/class-wc-wishlists-request-handler.php:760
 msgid "No items were added to cart. Please try again"
 msgstr "Nem került tétel a kosárba. Kérjük, próbálja meg újra"
 
-#: classes/class-wc-wishlists-request-handler.php:609
+#. translators: %s: number of items.
+#: ../../classes/class-wc-wishlists-request-handler.php:748,
+#: ../../classes/class-wc-wishlists-request-handler.php:1165
+msgid "%s item has been added to the cart"
+msgid_plural "%s items have been added to the cart"
+msgstr[0] "%s tétel került a kosárba"
+msgstr[1] "%s tétel került a kosárba"
+
+#: ../../classes/class-wc-wishlists-request-handler.php:783,
+#: ../../classes/class-wc-wishlists-request-handler.php:849
 msgid "Invalid destination list"
 msgstr "Érvénytelen céllista"
 
-#: classes/class-wc-wishlists-request-handler.php:620
+#: ../../classes/class-wc-wishlists-request-handler.php:792
 msgid "You can only move items to your own lists"
 msgstr "Csak a saját listáira helyezhet át tételeket"
 
-#. translators: %1$s: number of items, %2$s: destination list title, %3$s:
-#. edit list URL
-#: classes/class-wc-wishlists-request-handler.php:640
-#, php-format
+#: ../../classes/class-wc-wishlists-request-handler.php:812
 msgid "%1$s items successfully moved to %2$s"
-msgstr "%1$s tétel sikeresen át lett helyezve ide: %2$s"
+msgstr "Sikeresen áthelyeztünk %1$s tételt ide: %2$s"
 
-#. translators: %1$s: number of items, %2$s: destination list title, %3$s:
-#. edit list URL
-#: classes/class-wc-wishlists-request-handler.php:640
+#: ../../classes/class-wc-wishlists-request-handler.php:812,
+#: ../../classes/class-wc-wishlists-request-handler.php:878
 msgid "Edit List"
 msgstr "Lista szerkesztése"
 
-#: classes/class-wc-wishlists-request-handler.php:681
+#: ../../classes/class-wc-wishlists-request-handler.php:858
+msgid "You can only copy items to your own lists"
+msgstr "Tételeket csak a saját listáira másolhat"
+
+#: ../../classes/class-wc-wishlists-request-handler.php:886
+msgid "No items were copied. Please try again"
+msgstr "Egyetlen tétel sem lett átmásolva. Kérjük, próbálja újra"
+
+#: ../../classes/class-wc-wishlists-request-handler.php:878
+msgid "%1$s items successfully copied to %2$s"
+msgstr "Sikeresen átmásoltunk %1$s tételt ide: %2$s"
+
+#: ../../classes/class-wc-wishlists-request-handler.php:917
 msgid "No quantity data provided"
 msgstr "Nem adott meg mennyiségi adatot"
 
-#. translators: %s: number of items
-#: classes/class-wc-wishlists-request-handler.php:730
-#, php-format
-msgid "%s items updated"
-msgstr "%s tétel frissítve"
-
-#: classes/class-wc-wishlists-request-handler.php:736
+#: ../../classes/class-wc-wishlists-request-handler.php:973
 msgid "No items were updated. Please check your quantities and try again"
 msgstr ""
 "Nem frissült egyetlen tétel sem. Kérjük, ellenőrizze a mennyiségeket, és "
 "próbálja meg újra"
 
-#: classes/class-wc-wishlists-request-handler.php:797
-#, php-format
-msgid "%s have been added to the cart"
-msgstr "%s hozzá lett adva a kosárhoz"
+#: ../../classes/class-wc-wishlists-request-handler.php:967
+msgid "%s items updated"
+msgstr "%s tétel frissítve"
 
-#: classes/class-wc-wishlists-request-handler.php:868
-#: woocommerce-wishlists-api.php:50 woocommerce-wishlists.php:506
-msgid "Wishlist"
-msgstr "Kívánságlista"
+#. translators: %s: number of items.
+#: ../../classes/class-wc-wishlists-request-handler.php:1180
+msgid ""
+"%s item needs options chosen on its product page and was not added to the "
+"cart."
+msgid_plural ""
+"%s items need options chosen on their product pages and were not added to "
+"the cart."
+msgstr[0] "%s tétel esetében a termékoldalon kell kiválasztani az opciókat, ezért nem került a kosárba."
+msgstr[1] "%s tétel esetében a termékoldalakon kell kiválasztani az opciókat, ezért nem kerültek a kosárba."
 
-#: classes/class-wc-wishlists-request-handler.php:879
+#. translators: %s: number of items.
+#: ../../classes/class-wc-wishlists-request-handler.php:1196
+msgid "%s item is bought from another site and was not added to the cart."
+msgid_plural ""
+"%s items are bought from another site and were not added to the cart."
+msgstr[0] "%s tétel másik webhelyről vásárolható meg, ezért nem került a kosárba."
+msgstr[1] "%s tétel másik webhelyről vásárolható meg, ezért nem kerültek a kosárba."
+
+#. translators: %s: number of items.
+#: ../../classes/class-wc-wishlists-request-handler.php:1212
+msgid "%s item is not available to purchase and was not added to the cart."
+msgid_plural ""
+"%s items are not available to purchase and were not added to the cart."
+msgstr[0] "%s tétel nem vásárolható meg, ezért nem került a kosárba."
+msgstr[1] "%s tétel nem vásárolható meg, ezért nem kerültek a kosárba."
+
+#: ../../classes/class-wc-wishlists-request-handler.php:1329,
+#: ../../src/Cart/StoreApiCart.php:128
 msgid "Unable to add product to the cart. Product no longer exists"
-msgstr "Nem lehet a terméket a kosárhoz adni. A termék már nem létezik"
+msgstr "A terméket nem lehet a kosárba helyezni. A termék már nem létezik"
 
-#: classes/class-wc-wishlists-request-handler.php:885
-#, php-format
+#. translators: %s: product name
+#: ../../classes/class-wc-wishlists-request-handler.php:1337,
+#: ../../src/Cart/StoreApiCart.php:303
 msgid "Purchases are currently disabled for %s"
-msgstr "A vásárlás jelenleg le van tiltva a(z) %s számára"
+msgstr "A(z) %s esetében jelenleg ki van kapcsolva a vásárlás"
 
-#: classes/class-wc-wishlists-request-handler.php:891
-#, php-format
+#. translators: %s: product name
+#: ../../classes/class-wc-wishlists-request-handler.php:1343,
+#: ../../src/Cart/StoreApiCart.php:315
 msgid "Please use the external site to purchase %s"
 msgstr "Kérjük, a(z) %s megvásárlásához használja a külső webhelyet"
 
-#: classes/class-wc-wishlists-request-handler.php:957
-msgid "Product successfully added to your cart."
-msgstr "A termék sikeresen hozzá lett adva a kosarához."
-
-#: classes/class-wc-wishlists-request-handler.php:964
+#: ../../classes/class-wc-wishlists-request-handler.php:1426,
+#: ../../src/Cart/SaveForLater.php:669, ../../src/Cart/StoreApiCart.php:185
 msgid "Unable to add product to the cart. Please try again"
-msgstr "Nem lehet a terméket a kosárhoz adni. Kérjük, próbálja meg újra"
+msgstr "A terméket nem lehet a kosárba helyezni. Kérjük, próbálja meg újra"
 
-#: classes/models/class-wc-wishlists-wishlist-item-collection.php:254
-msgid "List could not be located"
-msgstr "A listát nem sikerült megtalálni"
+#: ../../classes/class-wc-wishlists-request-handler.php:1419
+msgid "Product successfully added to your cart."
+msgstr "A termék sikeresen bekerült a kosarába."
 
-#: classes/models/class-wc-wishlists-wishlist-item-collection.php:281
-msgid "Item has been removed from the list."
-msgstr "A tétel el lett távolítva a listáról."
+#: ../../classes/class-wc-wishlists-request-handler.php:1495
+msgid "Item saved for later."
+msgstr "A tétel későbbre mentve."
 
-#: classes/models/class-wc-wishlists-wishlist.php:181
-#, php-format
-msgid "New List %s"
-msgstr "Új lista %s"
+#: ../../classes/class-wc-wishlists-request-handler.php:1496
+msgid "Item saved for later. It is still in your cart."
+msgstr "A tétel későbbre mentve. Továbbra is a kosárban van"
 
-#: classes/models/class-wc-wishlists-wishlist.php:282
-msgid "Unable to update list"
-msgstr "Nem lehet frissíteni a listát"
+#: ../../classes/class-wc-wishlists-request-handler.php:1534
+msgid "Item moved to your cart."
+msgstr "A tétel a kosárba került."
 
-#: classes/views/admin-notifications.php:2
-msgid "Wishlist Notification Settings"
-msgstr "Kívánságlista értesítési beállításai"
+#: ../../classes/class-wc-wishlists-request-handler.php:1535
+msgid "That item was already in your cart."
+msgstr "Ez a tétel már a kosárban van."
 
-#: templates/add-to-wishlist-link.php:12
-msgid "This item is already in one of your wishlists"
-msgstr "Ez a tétel már szerepel az egyik kívánságlistáján"
+#: ../../classes/class-wc-wishlists-request-handler.php:1545,
+#: ../../src/Cart/SaveForLater.php:338,
+#: ../../src/Rest/ItemsController.php:440,
+#: ../../src/Rest/ItemsController.php:890
+msgid "That item is not on this wishlist."
+msgstr "Ez a tétel nem szerepel ezen a kívánságlistán."
 
-#: templates/add-to-wishlist-modal.php:8
-msgid "Your Public Lists"
-msgstr "Az Ön nyilvános listái"
+#: ../../classes/class-wc-wishlists-request-handler.php:1584,
+#: ../../classes/class-wc-wishlists-request-handler.php:1592
+msgid "That item is not saved for later."
+msgstr "Ez a tétel nincs későbbre mentve."
 
-#: templates/add-to-wishlist-modal.php:18
-msgid "Your Shared Lists"
-msgstr "Az Ön megosztott listái"
+#: ../../classes/class-wc-wishlists-request-handler.php:1600
+msgid "Item removed from your saved items."
+msgstr "A tételt eltávolítottuk a későbbre mentett tételek közül."
 
-#: templates/add-to-wishlist-modal.php:28
-msgid "Your Private Lists"
-msgstr "Az Ön privát listái"
+#: ../../classes/class-wc-wishlists-settings-page.php:106
+msgid "Select a page"
+msgstr "Oldal kiválasztása"
 
-#: templates/add-to-wishlist-modal.php:38
-msgid "Create a new list"
-msgstr "Hozzon létre új listát"
+#: ../../shortcodes/shortcodes-init.php:170,
+#: ../../templates/view-a-list.php:52
+msgid "Unable to locate the requested list"
+msgstr "Nem sikerült megtalálni a kért listát"
 
-#: templates/create-a-list.php:48 templates/edit-my-list.php:385
-msgid "Name your list"
-msgstr "Nevezze el a listáját"
-
-#: templates/create-a-list.php:54 templates/edit-my-list.php:391
-msgid "Describe your list"
-msgstr "Írja le a listáját"
-
-#: templates/create-a-list.php:123 templates/edit-my-list.php:461
-msgid "Email Notifications"
-msgstr "E-mail értesítések"
-
-#: templates/create-a-list.php:132 templates/edit-my-list.php:472
-msgid "Send me an email if a price reduction occurs."
-msgstr "Küldjön e-mailt, ha árcsökkenés történik."
-
-#: templates/create-a-list.php:141 templates/edit-my-list.php:482
-msgid "Do not send me an email if a price reduction occurs."
-msgstr "Ne küldjön e-mailt, ha árcsökkenés történik."
-
-#: templates/create-a-list.php:158
-msgid "Create List"
-msgstr "Lista létrehozása"
-
-#: templates/create-a-list.php:168
+#: ../../templates/create-a-list.php:169
 msgid "Unable to add a new list.  Review your existing lists below."
 msgstr ""
 "Nem lehet új listát hozzáadni.  Tekintse át az alábbi meglévő listáit."
 
-#: templates/create-a-list.php:175 templates/find-a-list.php:34
-#: templates/my-account-lists.php:7 templates/my-lists.php:34
+#: ../../templates/create-a-list.php:176, ../../templates/find-a-list.php:34
 msgid "List Name"
 msgstr "Lista neve"
 
-#: templates/create-a-list.php:176 templates/find-a-list.php:36
-#: templates/my-account-lists.php:8 templates/my-account-lists.php:25
-#: templates/my-lists.php:35 templates/view-a-list.php:111
+#: ../../templates/create-a-list.php:177,
+#: ../../templates/edit-my-list.php:250, ../../templates/find-a-list.php:36,
+#: ../../templates/view-a-list.php:221
 msgid "Date Added"
 msgstr "Hozzáadás dátuma"
 
-#: templates/create-a-list.php:191 templates/my-lists.php:51
+#: ../../templates/create-a-list.php:192,
+#: ../../templates/my-lists-cards.php:273
 msgid "Manage this list"
 msgstr "E lista kezelése"
 
-#: templates/create-a-list.php:196 templates/edit-my-list.php:68
-#: templates/my-lists.php:55
+#: ../../templates/create-a-list.php:197,
+#: ../../templates/edit-my-list.php:152,
+#: ../../src/Render/ListRenderer.php:3426
 msgid "Are you sure you want to delete this list?"
 msgstr "Biztosan törölni kívánja ezt a listát?"
 
-#: templates/create-a-list.php:197 templates/my-lists.php:55
+#: ../../templates/create-a-list.php:198,
+#: ../../templates/my-lists-cards.php:300,
+#: ../../src/Render/SavedForLaterRenderer.php:434,
+#: ../../src/Render/SavedForLaterRenderer.php:542
 msgid "Delete"
 msgstr "Törlés"
 
-#: templates/edit-my-list.php:55
-msgid "Wishlist URL:"
-msgstr "Kívánságlista URL:"
+#: ../../templates/create-a-list.php:49, ../../templates/edit-my-list.php:525,
+#: ../../src/Render/ListRenderer.php:2923
+msgid "Name your list"
+msgstr "Nevezze el a listáját"
 
-#: templates/edit-my-list.php:69
-msgid "Delete list"
+#: ../../templates/create-a-list.php:55, ../../templates/edit-my-list.php:531
+msgid "Describe your list"
+msgstr "Írja le a listáját"
+
+#: ../../templates/create-a-list.php:124, ../../templates/edit-my-list.php:601
+msgid "Email Notifications"
+msgstr "E-mail értesítések"
+
+#: ../../templates/create-a-list.php:133, ../../templates/edit-my-list.php:607
+msgid "Send me an email if a price reduction occurs."
+msgstr "Küldjön e-mailt, ha árcsökkenés történik."
+
+#: ../../templates/create-a-list.php:142, ../../templates/edit-my-list.php:614
+msgid "Do not send me an email if a price reduction occurs."
+msgstr "Ne küldjön e-mailt, ha árcsökkenés történik."
+
+#: ../../templates/create-a-list.php:159
+msgid "Create List"
+msgstr "Lista létrehozása"
+
+#. translators: %s: number of items on the list.
+#: ../../templates/edit-my-list.php:96, ../../templates/view-a-list.php:136
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] "%s tétel"
+msgstr[1] "%s tétel"
+
+#. translators: %s: formatted total price of everything on the list.
+#: ../../templates/edit-my-list.php:102, ../../templates/view-a-list.php:142
+msgid "%s total"
+msgstr "Összesen: %s"
+
+#: ../../templates/edit-my-list.php:138, ../../templates/view-a-list.php:157
+msgid "Share"
+msgstr "Megosztás"
+
+#: ../../templates/edit-my-list.php:142, ../../templates/view-a-list.php:161
+msgid "Wishlist URL"
+msgstr "Kívánságlista URL-je"
+
+#: ../../templates/edit-my-list.php:154, ../../templates/edit-my-list.php:155
+msgid "Delete this list"
 msgstr "Lista törlése"
 
-#: templates/edit-my-list.php:73
-msgid "Preview List"
-msgstr "Lista előnézete"
-
-#: templates/edit-my-list.php:81
+#: ../../templates/edit-my-list.php:182
 msgid "List Items"
 msgstr "Lista tételei"
 
-#: templates/edit-my-list.php:84
+#: ../../templates/edit-my-list.php:186
 msgid "Settings"
 msgstr "Beállítások"
 
-#: templates/edit-my-list.php:107 templates/edit-my-list.php:334
+#: ../../templates/edit-my-list.php:222
+msgid "Select all"
+msgstr "Összes kiválasztása"
+
+#: ../../templates/edit-my-list.php:246
+msgid "Sort"
+msgstr "Rendezés"
+
+#: ../../templates/edit-my-list.php:249, ../../templates/view-a-list.php:220
+msgid "My order"
+msgstr "Saját sorrend"
+
+#: ../../templates/edit-my-list.php:251, ../../templates/find-a-list.php:35,
+#: ../../templates/view-a-list.php:222
+msgid "Name"
+msgstr "Név"
+
+#: ../../templates/edit-my-list.php:252, ../../templates/view-a-list.php:223
+msgid "Price (High to Low)"
+msgstr "Ár (csökkenő sorrendben)"
+
+#: ../../templates/edit-my-list.php:253, ../../templates/view-a-list.php:224
+msgid "Price (Low to High)"
+msgstr "Ár (növekvő sorrendben)"
+
+#: ../../templates/edit-my-list.php:255, ../../templates/view-a-list.php:227,
+#: ../../src/Render/ListRenderer.php:1155,
+#: ../../src/Render/ListRenderer.php:1361,
+#: ../../src/Render/ListRenderer.php:1362
+msgid "Priority"
+msgstr "Prioritás"
+
+#: ../../templates/edit-my-list.php:267, ../../templates/view-a-list.php:259
+msgid "Go"
+msgstr "Ugrás"
+
+#. translators: %d: how many items are on the list.
+#: ../../templates/edit-my-list.php:303, ../../templates/view-a-list.php:271
+msgid "Add %d item to cart"
+msgid_plural "Add all %d to cart"
+msgstr[0] "%d tétel kosárba helyezése"
+msgstr[1] "Mind a %d tétel kosárba helyezése"
+
+#: ../../templates/edit-my-list.php:331
+msgid "Choose \"My order\" to rearrange items."
+msgstr "Válassza a „Saját sorrend” lehetőséget a tételek átrendezéséhez."
+
+#: ../../templates/edit-my-list.php:354, ../../templates/edit-my-list.php:455
+msgid "Bulk action"
+msgstr "Csoportos művelet"
+
+#: ../../templates/edit-my-list.php:356, ../../templates/edit-my-list.php:457,
+#: ../../src/Render/ListRenderer.php:464
 msgid "Actions"
 msgstr "Műveletek"
 
-#: templates/edit-my-list.php:108 templates/edit-my-list.php:335
+#: ../../templates/edit-my-list.php:357, ../../templates/edit-my-list.php:458
 msgid "Update Quantities"
 msgstr "Mennyiségek frissítése"
 
-#: templates/edit-my-list.php:110 templates/edit-my-list.php:290
-#: templates/edit-my-list.php:337 templates/view-a-list.php:274
-#: templates/view-a-list.php:280 templates/view-a-list.php:284
+#: ../../templates/edit-my-list.php:359, ../../templates/edit-my-list.php:460,
+#: ../../src/Render/ListRenderer.php:1976,
+#: ../../src/Render/ListRenderer.php:2026,
+#: ../../src/Render/ListRenderer.php:2073,
+#: ../../src/Render/ListRenderer.php:2508,
+#: ../../src/Render/ListRenderer.php:2509,
+#: ../../src/Render/ListRenderer.php:3259
 msgid "Add to Cart"
 msgstr "Hozzáadás a kosárhoz"
 
-#: templates/edit-my-list.php:111 templates/edit-my-list.php:338
+#: ../../templates/edit-my-list.php:360, ../../templates/edit-my-list.php:461
 msgid "Update Quantities and Add to Cart"
-msgstr "Mennyiségek frissítése és hozzáadás a kosárhoz"
+msgstr "Mennyiségek frissítése és kosárba helyezés"
 
-#: templates/edit-my-list.php:113 templates/edit-my-list.php:340
+#: ../../templates/edit-my-list.php:362, ../../templates/edit-my-list.php:463
 msgid "Remove from List"
 msgstr "Eltávolítás a listáról"
 
-#: templates/edit-my-list.php:115
+#: ../../templates/edit-my-list.php:374
 msgid "Move to another List"
 msgstr "Áthelyezés másik listára"
 
-#: templates/edit-my-list.php:127 templates/edit-my-list.php:353
+#: ../../templates/edit-my-list.php:385, ../../templates/edit-my-list.php:475
 msgid "+ Create A New List"
 msgstr "+ Új lista létrehozása"
 
-#: templates/edit-my-list.php:131 templates/edit-my-list.php:358
+#: ../../templates/edit-my-list.php:400, ../../templates/edit-my-list.php:490
+msgid "Copy to another List"
+msgstr "Másolás másik listába"
+
+#: ../../templates/edit-my-list.php:411, ../../templates/edit-my-list.php:501
 msgid "Apply Action"
 msgstr "Művelet alkalmazása"
 
-#: templates/edit-my-list.php:144 templates/edit-my-list.php:197
-#: templates/my-account-lists.php:18 templates/view-a-list.php:158
-#: templates/view-a-list.php:195
-msgid "Product"
-msgstr "Termék"
+#: ../../templates/edit-my-list.php:420, ../../templates/edit-my-list.php:510
+msgid "Move selected to list…"
+msgstr "Kiválasztottak áthelyezése listába…"
 
-#: templates/edit-my-list.php:145 templates/edit-my-list.php:226
-#: templates/view-a-list.php:159 templates/view-a-list.php:222
-msgid "Price"
-msgstr "Ár"
-
-#: templates/edit-my-list.php:146 templates/view-a-list.php:160
-msgid "Qty"
-msgstr "Menny."
-
-#: templates/edit-my-list.php:178
-msgid "Remove this item from your wishlist"
-msgstr "Távolítsa el ezt az elemet a kívánságlistájáról"
-
-#: templates/edit-my-list.php:179
-msgid "Are you sure you would like to remove this item from your list?"
-msgstr "Biztos benne, hogy el szeretné távolítani ezt az elemet a listájáról?"
-
-#: templates/edit-my-list.php:236 templates/view-a-list.php:231
-msgid "Quantity"
-msgstr "Mennyiség"
-
-#: templates/edit-my-list.php:320 templates/view-a-list.php:308
-msgid "Add All To Cart"
-msgstr "Az összes hozzáadása a kosárhoz"
-
-#: templates/edit-my-list.php:342
+#: ../../templates/edit-my-list.php:464
 msgid "Move to another list"
 msgstr "Áthelyezés másik listára"
 
-#: templates/edit-my-list.php:370
-msgid "You do not have anything in this list."
-msgstr "Ebben a listában nincs semmi."
-
-#: templates/edit-my-list.php:371
-msgid "Go Shopping"
-msgstr "Vásárlás"
-
-#: templates/edit-my-list.php:493 templates/my-lists.php:82
+#: ../../templates/edit-my-list.php:623,
+#: ../../templates/my-lists-cards.php:333
 msgid "Save Changes"
 msgstr "Módosítások mentése"
 
-#: templates/emails/plain/wishlist-email-share-list.php:5
-#: templates/emails/wishlist-email-share-list.php:5
+#: ../../templates/find-a-list.php:21
+msgid "Find Someone's List"
+msgstr "Valaki listájának keresése"
+
+#: ../../templates/find-a-list.php:22
+msgid "Enter name or email"
+msgstr "Adja meg a nevet vagy az e-mail-címet"
+
+#: ../../templates/find-a-list.php:23
+msgid "Search"
+msgstr "Keresés"
+
+#: ../../templates/find-a-list.php:64
+msgid ""
+"We're sorry, we couldn't find a list for that name. Please double check your"
+" entry and try again."
+msgstr "Sajnáljuk, nem találtunk listát ehhez a névhez. Kérjük, ellenőrizze még egyszer a megadott adatot, és próbálja újra."
+
+#: ../../templates/find-a-list.php:65
+msgid "We found 0 matching lists"
+msgstr "0 egyező listát találtunk"
+
+#: ../../templates/find-a-list.php:29
+msgid "We've found %1$s lists matching <strong>%2$s</strong>"
+msgstr ""
+"Találtunk %1$s listát, amely megfelel a következőnek: <strong>%2$s</strong>"
+
+#: ../../templates/find-a-list.php:29
+msgid "<a class=\"wl-clear-results\" href=\"%s\">Clear Results</a>"
+msgstr "<a class=\"wl-clear-results\" href=\"%s\">Találatok törlése</a>"
+
+#: ../../templates/my-lists-cards.php:183
+msgid "From the cart"
+msgstr "A kosárból"
+
+#: ../../templates/my-lists-cards.php:183,
+#: ../../templates/my-lists-cards.php:214
+msgid "Default"
+msgstr "Alapértelmezett"
+
+#: ../../templates/my-lists-cards.php:212
+msgid ""
+"Quick saves go to this list, and it is offered first when you choose a list"
+msgstr "A gyors mentések erre a listára kerülnek, és ezt ajánlja fel elsőként lista kiválasztásakor"
+
+#: ../../templates/my-lists-cards.php:216,
+#: ../../src/Render/ListRenderer.php:2924
+msgid "List name"
+msgstr "Lista neve"
+
+#: ../../templates/my-lists-cards.php:217,
+#: ../../templates/my-lists-cards.php:217
+msgid "Rename list"
+msgstr "Lista átnevezése"
+
+#. translators: %d: number of items on a wishlist.
+#: ../../templates/my-lists-cards.php:232
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d tétel"
+msgstr[1] "%d tétel"
+
+#. translators: %s: the date a wishlist last changed.
+#: ../../templates/my-lists-cards.php:243
+msgid "last changed %s"
+msgstr "Utoljára módosítva: %s"
+
+#: ../../templates/my-lists-cards.php:238
+msgid "added %s"
+msgstr "Hozzáadva: %s"
+
+#: ../../templates/my-lists-cards.php:262
+msgid "Privacy"
+msgstr "Adatvédelem"
+
+#: ../../templates/my-lists.php:34
+msgid "Create a New List"
+msgstr "Új lista létrehozása"
+
+#: ../../templates/my-lists.php:52, ../../src/Render/ListRenderer.php:2806
+msgid "You have not created any lists yet."
+msgstr "Még nem hozott létre egyetlen listát sem."
+
+#: ../../templates/my-lists.php:53
+msgid "Go shopping to create one."
+msgstr "Vásárlással hozhat létre egyet."
+
+#: ../../templates/view-a-list.php:87
+msgid "This is how other people will see your Wish List"
+msgstr "Mások így fogják látni az Ön kívánságlistáját"
+
+#: ../../templates/view-a-list.php:89
+msgid "Return to your view"
+msgstr "Visszatérés a saját nézethez"
+
+#: ../../templates/view-a-list.php:218
+msgid "Sort by:"
+msgstr "Rendezés:"
+
+#: ../../templates/view-a-list.php:236
+msgid "In Category:"
+msgstr "Kategóriában:"
+
+#: ../../templates/view-a-list.php:244
+msgid "All"
+msgstr "Összes"
+
+#: ../../templates/wishlist-sharing-menu.php:57
+msgid "Share with Friends"
+msgstr "Megosztás ismerősökkel"
+
+#: ../../templates/wishlist-sharing-menu.php:75
+msgid "Pin It on Pinterest!"
+msgstr "Rögzítés a Pinteresten!"
+
+#: ../../classes/models/class-wc-wishlists-wishlist-item-collection.php:375
+msgid "List could not be located"
+msgstr "A listát nem sikerült megtalálni"
+
+#: ../../classes/models/class-wc-wishlists-wishlist-item-collection.php:416
+msgid "Item has been removed from the list."
+msgstr "A tételt eltávolították a listáról."
+
+#: ../../classes/models/class-wc-wishlists-wishlist.php:321
+msgid "Your list could not be created. Please try again."
+msgstr "Nem sikerült létrehozni a listáját. Kérjük, próbálja újra."
+
+#: ../../classes/models/class-wc-wishlists-wishlist.php:389
+msgid "Unable to update list"
+msgstr "Nem lehet frissíteni a listát"
+
+#: ../../src/Cart/CoreFeatureNotice.php:44
+msgid ""
+"<strong>Wishlists – Save for Later:</strong> WooCommerce's own experimental "
+"\"Save for later\" feature (WooCommerce → Settings → Advanced → Features) is"
+" turned on for this store, and Wishlists' Save for Later is enabled below. "
+"On the Cart block, logged-in shoppers will see two save controls on every "
+"line, WooCommerce's and Wishlists'. Guests see only Wishlists'. Turn either "
+"feature off if you want one control."
+msgstr "<strong>Wishlists – Mentés későbbre:</strong> A WooCommerce saját kísérleti „Mentés későbbre” funkciója (WooCommerce → Beállítások → Haladó → Funkciók) be van kapcsolva ennél az áruháznál, és a Wishlists „Mentés későbbre” funkciója is be van kapcsolva alább. A Kosár blokkban a bejelentkezett vásárlók minden sornál két mentési vezérlőt látnak: a WooCommerce és a Wishlists vezérlőjét. A vendégek csak a Wishlists vezérlőjét látják. Ha csak egy vezérlőt szeretne, kapcsolja ki valamelyik funkciót."
+
+#: ../../src/Cart/SavedForLaterSection.php:169
+msgid "Saving…"
+msgstr "Mentés…"
+
+#: ../../src/Cart/SaveForLater.php:113
+msgid "This item cannot be saved for later."
+msgstr "Ez a tétel nem menthető későbbre."
+
+#: ../../src/Cart/SaveForLater.php:187,
+#: ../../src/Rest/ItemsController.php:882,
+#: ../../src/Rest/ListsController.php:399
+msgid "You cannot edit this wishlist."
+msgstr "Nem szerkesztheti ezt a kívánságlistát."
+
+#: ../../src/Cart/SaveForLater.php:200
+msgid "Only items saved for later can be moved to your cart this way."
+msgstr "Csak a későbbre mentett tételek helyezhetők át így a kosárba."
+
+#: ../../src/Cart/SaveForLater.php:238
+msgid ""
+"Choose the options for this product on its page before moving it to your "
+"cart."
+msgstr "A kosárba helyezés előtt válassza ki a termék opcióit a termék oldalán."
+
+#: ../../src/Cart/SaveForLater.php:286
+msgid "Saving items for later is not available on this store."
+msgstr "A tételek későbbre mentése nem érhető el ebben az áruházban."
+
+#: ../../src/Cart/SaveForLater.php:327
+msgid "That item is no longer in your cart."
+msgstr "Ez a tétel már nincs a kosárban."
+
+#: ../../src/Cart/SaveForLaterStoreApi.php:268
+msgid ""
+"The row created by a save-for-later request in this same response, or null."
+msgstr "A későbbre mentésre vonatkozó, ugyanebben a válaszban szereplő kérés által létrehozott sor, vagy null."
+
+#: ../../src/Cart/SaveForLaterStoreApi.php:274
+msgid "The saved-for-later list the row was added to."
+msgstr "Az a későbbre mentett tételeket tartalmazó lista, amelyhez a sort hozzáadták."
+
+#: ../../src/Cart/SaveForLaterStoreApi.php:280
+msgid "The saved row, in the shape the wishlist REST API returns."
+msgstr "A mentett sor a kívánságlista REST API-ja által visszaadott formában."
+
+#: ../../src/Cart/SaveForLaterStoreApi.php:286
+msgid ""
+"Whether the cart line was removed - false when the store is configured to "
+"copy."
+msgstr "Hogy eltávolították-e a kosártételt – false, ha az áruház másolásra van beállítva."
+
+#: ../../src/Cart/SaveForLaterStoreApi.php:294
+msgid "The outcome of a move-to-cart request in this same response, or null."
+msgstr "Az ugyanebben a válaszban szereplő kosárba helyezési kérés eredménye, vagy null."
+
+#: ../../src/Cart/SaveForLaterStoreApi.php:300
+msgid ""
+"Whether a cart line was added - false when an identical line was already "
+"there."
+msgstr "Hogy hozzáadtak-e egy kosártételt – false, ha már szerepelt ott egy azonos tétel."
+
+#: ../../src/Cart/SaveForLaterStoreApi.php:306
+msgid "Whether the row left the saved-for-later list."
+msgstr "Hogy a sor kikerült-e a későbbre mentett tételeket tartalmazó listából."
+
+#. translators: %s: product name
+#: ../../src/Cart/StoreApiCart.php:348
+msgid "You cannot add another &quot;%s&quot; to your cart."
+msgstr "Nem adhat hozzá újabb „%s” tételt a kosárhoz."
+
+#: ../../src/Render/Icons.php:57, ../../src/Render/ListRenderer.php:1341,
+#: ../../src/Render/ListRenderer.php:3414
+msgid "None"
+msgstr "Nincs"
+
+#: ../../src/Render/Icons.php:58
+msgid "Heart"
+msgstr "Szív"
+
+#: ../../src/Render/Icons.php:59
+msgid "Bookmark"
+msgstr "Könyvjelző"
+
+#: ../../src/Render/Icons.php:60
+msgid "Star"
+msgstr "Csillag"
+
+#: ../../src/Render/Icons.php:61
+msgid "Gift"
+msgstr "Ajándék"
+
+#: ../../src/Render/ListRenderer.php:471,
+#: ../../src/Render/ListRenderer.php:1373
+msgid "Move to another list…"
+msgstr "Áthelyezés másik listába…"
+
+#: ../../src/Render/ListRenderer.php:476,
+#: ../../src/Render/ListRenderer.php:1390
+msgid "Copy to another list…"
+msgstr "Másolás másik listába…"
+
+#: ../../src/Render/ListRenderer.php:483
+msgid "Remove selected items"
+msgstr "Kiválasztott tételek eltávolítása"
+
+#: ../../src/Render/ListRenderer.php:504
+msgid "Add selected to cart"
+msgstr "Kiválasztott tételek kosárba helyezése"
+
+#: ../../src/Render/ListRenderer.php:535
+msgid "Clear"
+msgstr "Törlés"
+
+#: ../../src/Render/ListRenderer.php:556
+msgid "This list currently contains no items."
+msgstr "Ez a lista jelenleg nem tartalmaz elemeket."
+
+#: ../../src/Render/ListRenderer.php:557
+msgid "Back to find a list"
+msgstr "Vissza a listakereséshez"
+
+#: ../../src/Render/ListRenderer.php:549
+msgid "You do not have anything in this list."
+msgstr "Ebben a listában nincs semmi."
+
+#: ../../src/Render/ListRenderer.php:550
+msgid "Go Shopping"
+msgstr "Vásárlás"
+
+#: ../../src/Render/ListRenderer.php:617
+msgid "Are you sure you would like to remove this item from your list?"
+msgstr "Biztos benne, hogy el szeretné távolítani ezt az elemet a listájáról?"
+
+#. translators: %s: product name.
+#: ../../src/Render/ListRenderer.php:982,
+#: ../../src/Render/ListRenderer.php:3246
+msgid "Move %s up"
+msgstr "%s mozgatása felfelé"
+
+#: ../../src/Render/ListRenderer.php:983,
+#: ../../src/Render/ListRenderer.php:3263
+msgid "Move up"
+msgstr "Feljebb mozgatás"
+
+#. translators: %s: product name.
+#: ../../src/Render/ListRenderer.php:990,
+#: ../../src/Render/ListRenderer.php:3248
+msgid "Move %s down"
+msgstr "%s mozgatása lefelé"
+
+#: ../../src/Render/ListRenderer.php:991,
+#: ../../src/Render/ListRenderer.php:3264
+msgid "Move down"
+msgstr "Lejjebb mozgatás"
+
+#: ../../src/Render/ListRenderer.php:1108,
+#: ../../src/Render/ListRenderer.php:1187,
+#: ../../src/Render/ListRenderer.php:1548,
+#: ../../src/Render/ListRenderer.php:3408
+msgid "Add a note"
+msgstr "Megjegyzés hozzáadása"
+
+#: ../../src/Render/ListRenderer.php:1140
+msgid "No priority"
+msgstr "Nincs prioritás"
+
+#: ../../src/Render/ListRenderer.php:1185
+msgid "Note"
+msgstr "Megjegyzés"
+
+#. translators: %s: product name.
+#: ../../src/Render/ListRenderer.php:1238,
+#: ../../src/Render/ListRenderer.php:3242
+msgid "Select %s"
+msgstr "%s kiválasztása"
+
+#: ../../src/Render/ListRenderer.php:1239,
+#: ../../src/Render/ListRenderer.php:2431,
+#: ../../src/Render/ListRenderer.php:3261
+msgid "Select this item"
+msgstr "Tétel kiválasztása"
+
+#. translators: %s: product name.
+#: ../../src/Render/ListRenderer.php:1260,
+#: ../../src/Render/ListRenderer.php:1421,
+#: ../../src/Render/ListRenderer.php:3240
+msgid "Remove %s from this list"
+msgstr "%s eltávolítása erről a listáról"
+
+#: ../../src/Render/ListRenderer.php:1261,
+#: ../../src/Render/ListRenderer.php:1422,
+#: ../../src/Render/ListRenderer.php:3260
+msgid "Remove this item from your list"
+msgstr "Tétel eltávolítása a listájáról"
+
+#: ../../src/Render/ListRenderer.php:1400
+msgid "Remove from this list"
+msgstr "Eltávolítás erről a listáról"
+
+#. translators: %s: product name.
+#: ../../src/Render/ListRenderer.php:1431,
+#: ../../src/Render/ListRenderer.php:3244
+msgid "Actions for %s"
+msgstr "Műveletek ehhez: %s"
+
+#: ../../src/Render/ListRenderer.php:1432,
+#: ../../src/Render/ListRenderer.php:3262
+msgid "Actions for this item"
+msgstr "A tétel műveletei"
+
+#: ../../src/Render/ListRenderer.php:1546
+msgid "Your note"
+msgstr "Az Ön megjegyzése"
+
+#: ../../src/Render/ListRenderer.php:1549
+msgid "Done"
+msgstr "Kész"
+
+#: ../../src/Render/ListRenderer.php:1668,
+#: ../../src/Render/ListRenderer.php:1682,
+#: ../../src/Render/ListRenderer.php:2458,
+#: ../../src/Render/ListRenderer.php:2451
+msgid "Product"
+msgstr "Termék"
+
+#: ../../src/Render/ListRenderer.php:1704,
+#: ../../src/Render/ListRenderer.php:2466
+msgid "Price"
+msgstr "Ár"
+
+#: ../../src/Render/ListRenderer.php:1780,
+#: ../../src/Render/ListRenderer.php:1813,
+#: ../../src/Render/ListRenderer.php:2477,
+#: ../../src/Render/ListRenderer.php:3258
+msgid "Quantity"
+msgstr "Mennyiség"
+
+#. translators: %s: product name.
+#: ../../src/Render/ListRenderer.php:1812,
+#: ../../src/Render/ListRenderer.php:3236
+msgid "Quantity for %s"
+msgstr "%s mennyisége"
+
+#. translators: %s: product name.
+#: ../../src/Render/ListRenderer.php:1975,
+#: ../../src/Render/ListRenderer.php:3238
+msgid "Add %s to cart"
+msgstr "%s hozzáadása a kosárhoz"
+
+#: ../../src/Render/ListRenderer.php:1966,
+#: ../../src/Render/ListRenderer.php:2511,
+#: ../../src/Render/SavedForLaterRenderer.php:382
+msgid "Choose options"
+msgstr "Opciók kiválasztása"
+
+#: ../../src/Render/ListRenderer.php:2343
+msgid "Keep a copy on the current list"
+msgstr "Másolat megtartása az aktuális listán"
+
+#: ../../src/Render/ListRenderer.php:2344
+msgid "Choose a destination"
+msgstr "Cél kiválasztása"
+
+#: ../../src/Render/ListRenderer.php:2345
+msgid "You have no other lists yet."
+msgstr "Önnek még nincs egyéb listája."
+
+#: ../../src/Render/ListRenderer.php:2346
+msgid "New list name"
+msgstr "Új lista neve"
+
+#: ../../src/Render/ListRenderer.php:2347
+msgid "e.g. Kitchen shortlist"
+msgstr "pl. konyhai szűkített lista"
+
+#: ../../src/Render/ListRenderer.php:2348
+msgid "Private. Created when you confirm."
+msgstr "Privát. A megerősítéskor létrehozva."
+
+#: ../../src/Render/ListRenderer.php:2381
+msgid "Move to list…"
+msgstr "Áthelyezés listába…"
+
+#: ../../src/Render/ListRenderer.php:2770,
+#: ../../src/Render/ListRenderer.php:2927,
+#: ../../src/Render/SavedForLaterRenderer.php:428,
+#: ../../src/Render/SavedForLaterRenderer.php:543
+msgid "Add to list"
+msgstr "Hozzáadás a listához"
+
+#: ../../src/Render/ListRenderer.php:2854
+msgid "Save this configuration"
+msgstr "Konfiguráció mentése"
+
+#: ../../src/Render/ListRenderer.php:2867
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: ../../src/Render/ListRenderer.php:2925
+msgid "Create and add"
+msgstr "Létrehozás és hozzáadás"
+
+#: ../../src/Render/ListRenderer.php:2926
+msgid "Close"
+msgstr "Bezárás"
+
+#: ../../src/Render/ListRenderer.php:2928
+msgid "Your lists"
+msgstr "Az Ön listái"
+
+#: ../../src/Render/ListRenderer.php:2929
+msgid "Create a new list"
+msgstr "Új lista létrehozása"
+
+#: ../../src/Render/ListRenderer.php:2934,
+#: ../../src/Render/ListRenderer.php:3296
+msgid "View List"
+msgstr "Lista megtekintése"
+
+#: ../../src/Render/ListRenderer.php:2965
+msgid "Private - only you can see it"
+msgstr "Privát – csak Ön láthatja"
+
+#: ../../src/Render/ListRenderer.php:2966
+msgid "Shared - anyone with the link can see it"
+msgstr "Megosztott – bárki láthatja, aki rendelkezik a linkkel"
+
+#: ../../src/Render/ListRenderer.php:2967
+msgid "Public - anyone can see it"
+msgstr "Nyilvános – bárki láthatja"
+
+#: ../../src/Render/ListRenderer.php:2973
+msgid "Who can see this list?"
+msgstr "Ki láthatja ezt a listát?"
+
+#: ../../src/Render/ListRenderer.php:3034
+msgid "Add to Wishlist"
+msgstr "Felvétel a kívánságlistára"
+
+#: ../../src/Render/ListRenderer.php:3212
+msgid "My List"
+msgstr "Saját lista"
+
+#. translators: %s: wishlist name.
+#: ../../src/Render/ListRenderer.php:3219
+msgid "Added to %s"
+msgstr "Hozzáadva ide: %s"
+
+#: ../../src/Render/ListRenderer.php:3224
+msgid "Already on %s. Quantity updated."
+msgstr "Már szerepel a(z) %s listán. A mennyiség frissítve."
+
+#: ../../src/Render/ListRenderer.php:3228
+msgid "Save this configuration to %s"
+msgstr "Konfiguráció mentése ide: %s"
+
+#: ../../src/Render/ListRenderer.php:3269
+msgid "Added to cart."
+msgstr "Kosárba helyezve."
+
+#: ../../src/Render/ListRenderer.php:3275
+msgid "Already in your cart."
+msgstr "Már a kosárban van."
+
+#. translators: %s: how many of this product are on the list. Always two or
+#. more.
+#. translators: %s: how many of this product are saved. Always two or more.
+#: ../../src/Render/ListRenderer.php:3284,
+#: ../../src/Render/SavedForLaterRenderer.php:306
+msgid "Qty: %s"
+msgstr "Mennyiség: %s"
+
+#: ../../src/Render/ListRenderer.php:3295
+msgid "View cart"
+msgstr "Kosár megtekintése"
+
+#: ../../src/Render/ListRenderer.php:3297
+msgid "Please name your new list."
+msgstr "Adja meg az új lista nevét."
+
+#: ../../src/Render/ListRenderer.php:3304
+msgid "Moved up"
+msgstr "Feljebb helyezve"
+
+#: ../../src/Render/ListRenderer.php:3305
+msgid "Moved down"
+msgstr "Lejjebb helyezve"
+
+#: ../../src/Render/ListRenderer.php:3306
+msgid "Already first"
+msgstr "Már az első helyen van"
+
+#: ../../src/Render/ListRenderer.php:3307
+msgid "Already last"
+msgstr "Már az utolsó helyen van"
+
+#: ../../src/Render/ListRenderer.php:3310
+msgid "Sorry, that could not be saved. Please try again."
+msgstr "Sajnáljuk, nem sikerült menteni. Kérjük, próbálja újra."
+
+#: ../../src/Render/ListRenderer.php:3326
+msgid "Saved to %d lists"
+msgstr "%d listába mentve"
+
+#: ../../src/Render/ListRenderer.php:3339
+msgid "Move 1 item to a list"
+msgstr "1 tétel áthelyezése egy listába"
+
+#. translators: %d: number of selected wishlist items. Always two or more.
+#: ../../src/Render/ListRenderer.php:3341
+msgid "Move %d items to a list"
+msgstr "%d tétel áthelyezése egy listába"
+
+#: ../../src/Render/ListRenderer.php:3342
+msgid "Copy 1 item to a list"
+msgstr "1 tétel másolása egy listába"
+
+#. translators: %d: number of selected wishlist items. Always two or more.
+#: ../../src/Render/ListRenderer.php:3344
+msgid "Copy %d items to a list"
+msgstr "%d tétel másolása egy listába"
+
+#: ../../src/Render/ListRenderer.php:3348
+msgid "Create list & move 1 item"
+msgstr "Lista létrehozása és 1 tétel áthelyezése"
+
+#. translators: %d: number of selected wishlist items. Always two or more.
+#: ../../src/Render/ListRenderer.php:3350
+msgid "Create list & move %d items"
+msgstr "Lista létrehozása és %d tétel áthelyezése"
+
+#: ../../src/Render/ListRenderer.php:3351
+msgid "Create list & copy 1 item"
+msgstr "Lista létrehozása és 1 tétel másolása"
+
+#. translators: %d: number of selected wishlist items. Always two or more.
+#: ../../src/Render/ListRenderer.php:3353
+msgid "Create list & copy %d items"
+msgstr "Lista létrehozása és %d tétel másolása"
+
+#: ../../src/Render/ListRenderer.php:3357
+msgid "+ Create a new list"
+msgstr "+ Új lista létrehozása"
+
+#: ../../src/Render/ListRenderer.php:3358
+msgid "Choose an existing list"
+msgstr "Meglévő lista kiválasztása"
+
+#. translators: %s: the wishlist the items are being moved from.
+#: ../../src/Render/ListRenderer.php:3361
+msgid "From %s"
+msgstr "Kezdőár: %s"
+
+#: ../../src/Render/ListRenderer.php:3365
+msgid "Moving…"
+msgstr "Áthelyezés…"
+
+#: ../../src/Render/ListRenderer.php:3366
+msgid "Copying…"
+msgstr "Másolás folyamatban…"
+
+#: ../../src/Render/ListRenderer.php:3370
+msgid "Choose a list first."
+msgstr "Először válasszon ki egy listát."
+
+#: ../../src/Render/ListRenderer.php:3372
+msgid "Move 1 item"
+msgstr "1 tétel áthelyezése"
+
+#. translators: %d: number of selected wishlist items. Always two or more.
+#: ../../src/Render/ListRenderer.php:3374
+msgid "Move %d items"
+msgstr "%d tétel áthelyezése"
+
+#: ../../src/Render/ListRenderer.php:3379
+msgid "Copy 1 item"
+msgstr "1 tétel másolása"
+
+#. translators: %d: number of selected wishlist items. Always two or more.
+#: ../../src/Render/ListRenderer.php:3381
+msgid "Copy %d items"
+msgstr "%d tétel másolása"
+
+#. translators: %s: the wishlist the items were moved to.
+#: ../../src/Render/ListRenderer.php:3383
+msgid "Moved to %s"
+msgstr "Áthelyezve ide: %s"
+
+#. translators: %s: the wishlist the items were copied to.
+#: ../../src/Render/ListRenderer.php:3388
+msgid "Copied to %s"
+msgstr "Másolva ide: %s"
+
+#: ../../src/Render/ListRenderer.php:3395
+msgid "Nothing was moved. Those items are no longer on this list."
+msgstr "Nem történt áthelyezés. Ezek a tételek már nem szerepelnek ezen a listán."
+
+#: ../../src/Render/ListRenderer.php:3399
+msgid "Select at least one item first."
+msgstr "Először válasszon ki legalább egy tételt."
+
+#: ../../src/Render/ListRenderer.php:3405
+msgid "1 item selected"
+msgstr "1 tétel kiválasztva"
+
+#. translators: %d: number of ticked rows. Always two or more.
+#: ../../src/Render/ListRenderer.php:3407
+msgid "%d items selected"
+msgstr "%d tétel kiválasztva"
+
+#: ../../src/Render/ListRenderer.php:3409
+msgid "Edit note"
+msgstr "Megjegyzés szerkesztése"
+
+#: ../../src/Render/ListRenderer.php:3419
+msgid "Quantity updated"
+msgstr "A mennyiség frissítve"
+
+#: ../../src/Render/ListRenderer.php:3424
+msgid "Default list updated"
+msgstr "Az alapértelmezett lista frissítve"
+
+#: ../../src/Render/ListRenderer.php:3425
+msgid "List privacy updated"
+msgstr "A lista adatvédelmi beállítása frissítve"
+
+#: ../../src/Render/ListRenderer.php:3427
+msgid "Empty"
+msgstr "Üres"
+
+#: ../../src/Render/ListRenderer.php:3428
+msgid "1 item"
+msgstr "1 tétel"
+
+#. translators: %d: number of items on a wishlist. Always two or more.
+#: ../../src/Render/ListRenderer.php:3430
+msgid "%d items"
+msgstr "%d elem"
+
+#: ../../src/Render/ListRenderer.php:3462
+msgid "Choose product options first"
+msgstr "Először válassza ki a termékopciókat"
+
+#: ../../src/Render/LoopControl.php:139
+msgid "On the product image"
+msgstr "A termékképen"
+
+#: ../../src/Render/LoopControl.php:140
+msgid "Above the Add to Cart button"
+msgstr "A „kosárba teszem” gomb fölött"
+
+#: ../../src/Render/LoopControl.php:141
+msgid "Below the Add to Cart button"
+msgstr "A „kosárba teszem” gomb alatt"
+
+#: ../../src/Render/SavedForLaterRenderer.php:177
+msgid "Manage"
+msgstr "Kezelés"
+
+#: ../../src/Render/SavedForLaterRenderer.php:350
+msgid "Move to cart"
+msgstr "Áthelyezés a kosárba"
+
+#: ../../src/Render/SavedForLaterRenderer.php:458
+msgid "Currently unavailable"
+msgstr "Jelenleg nem érhető el"
+
+#: ../../src/Render/SavedForLaterRenderer.php:465
+msgid "Out of stock"
+msgstr "Elfogyott"
+
+#: ../../src/Render/SavedForLaterRenderer.php:469
+msgid "Purchases disabled"
+msgstr "A vásárlás kikapcsolva"
+
+#: ../../src/Render/SavedForLaterRenderer.php:614,
+#: ../../src/Repository/WishlistRepository.php:241
+msgid "Saved for later"
+msgstr "Későbbre elmentve"
+
+#. translators: %s: creation timestamp
+#: ../../src/Repository/ListCreator.php:90
+msgid "New List %s"
+msgstr "Új lista %s"
+
+#: ../../src/Rest/ItemsController.php:227
+msgid "That product does not exist."
+msgstr "Ez a termék nem létezik."
+
+#: ../../src/Rest/ItemsController.php:238
+msgid "That variation does not belong to that product."
+msgstr "Ez a termékváltozat nem ehhez a termékhez tartozik."
+
+#: ../../src/Rest/ItemsController.php:342,
+#: ../../src/Rest/ListsController.php:240
+msgid "Nothing to update."
+msgstr "Nincs frissítendő adat."
+
+#: ../../src/Rest/ItemsController.php:350
+msgid "Notes are not enabled on this store."
+msgstr "A jegyzetek nincsenek bekapcsolva ebben az áruházban."
+
+#: ../../src/Rest/ItemsController.php:358
+msgid "Priorities are not enabled on this store."
+msgstr "A prioritások nincsenek bekapcsolva ebben az áruházban."
+
+#: ../../src/Rest/ItemsController.php:504
+msgid "Those items are already on that wishlist."
+msgstr "Ezek a tételek már szerepelnek azon a kívánságlistán."
+
+#: ../../src/Rest/ItemsController.php:837
+msgid "Please check the options for this product and try again."
+msgstr "Kérjük, ellenőrizze a termék opcióit, és próbálja meg újra."
+
+#: ../../src/Rest/ItemsController.php:874,
+#: ../../src/Rest/ListsController.php:357
+msgid "Wishlist not found."
+msgstr "A kívánságlista nem található."
+
+#: ../../src/Rest/ListsController.php:365
+msgid "Please enter a name for this wishlist."
+msgstr "Kérjük, adja meg a kívánságlista nevét."
+
+#. translators: %d: maximum number of characters in a list name
+#: ../../src/Rest/ListsController.php:389
+msgid "List names can be at most %d characters long."
+msgstr "A listanevek legfeljebb %d karakter hosszúak lehetnek."
+
+#: ../../src/Rest/ListsController.php:414
+msgid "The wishlist could not be saved."
+msgstr "A kívánságlistát nem sikerült menteni."
+
+#: ../../src/Rest/RequestGuard.php:115
+msgid "Missing nonce."
+msgstr "Hiányzó nonce."
+
+#: ../../src/Rest/RequestGuard.php:123
+msgid "Invalid nonce."
+msgstr "Érvénytelen nonce."
+
+#: ../../src/Rest/RequestGuard.php:166
+msgid "Guests cannot create lists on this store."
+msgstr "A vendégek nem hozhatnak létre listákat ebben az áruházban."
+
+#: ../../src/Rest/RequestGuard.php:174
+msgid "Please log in or register to use wishlists."
+msgstr "Kérjük, jelentkezzen be vagy regisztráljon a kívánságlisták használatához."
+
+#: ../../src/Settings/ItemAnnotations.php:51
+msgid "Low"
+msgstr "Alacsony"
+
+#: ../../src/Settings/ItemAnnotations.php:53
+msgid "Medium"
+msgstr "Közepes"
+
+#: ../../src/Settings/ItemAnnotations.php:55
+msgid "High"
+msgstr "Magas"
+
+#: ../../src/Settings/ItemAnnotations.php:74
+msgctxt "priority chip, short for Medium"
+msgid "Med"
+msgstr "Közepes"
+
+#: ../../templates/emails/wishlist-email-share-list.php:5,
+#: ../../templates/emails/plain/wishlist-email-share-list.php:5
 msgid "Someone"
 msgstr "Valaki"
 
-#: templates/emails/plain/wishlist-email-share-list.php:12
-#: templates/emails/wishlist-email-share-list.php:14
+#: ../../templates/emails/wishlist-email-share-list.php:16,
+#: ../../templates/emails/plain/wishlist-email-share-list.php:14
 msgid "has a wishlist to share on"
-msgstr "kívánságlistája van, amelyet megosztana a következőn"
+msgstr "van egy kívánságlistája, amelyet megoszthat a következőn"
 
-#: templates/emails/plain/wishlist-email-verification.php:7
+#: ../../templates/emails/wishlist-email-share-list.php:40
+msgid "Price:"
+msgstr "Ár:"
+
+#: ../../templates/emails/wishlist-email-share-list.php:41
+msgid "Quantity:"
+msgstr "Mennyiség:"
+
+#: ../../templates/emails/wishlist-email-share-list.php:52
+msgid ""
+"You can view this list by clicking on the link or copy and pasting it into "
+"your browser."
+msgstr "Ezt a listát a linkre kattintva vagy a linket a böngészőjébe másolva és beillesztve tekintheti meg."
+
+#: ../../templates/emails/wishlist-email-share-list.php:54
+msgid "View List:"
+msgstr "Lista megtekintése:"
+
+#: ../../templates/emails/wishlist-email-verification.php:8
 msgid ""
 "We received your request to add your email to your wishlist. Before we begin"
 " using this email address, we want to be certain we have your permission. "
-"Confirm by visiting this link in your browser:"
-msgstr ""
-"Megkaptuk a kérését, hogy hozzáadjuk e-mail-címét a kívánságlistájához. "
-"Mielőtt elkezdenénk használni ezt az e-mail-címet, szeretnénk "
-"megbizonyosodni arról, hogy engedélyt ad rá. Erősítse meg, ha ellátogat a "
-"böngészőjében erre a hivatkozásra:"
+"Confirm by visiting this link in your browser"
+msgstr "Megkaptuk a kérését, hogy hozzáadjuk az e-mail-címét a kívánságlistájához. Mielőtt elkezdenénk használni ezt az e-mail-címet, szeretnénk megbizonyosodni arról, hogy ehhez engedélyt adott. A megerősítéshez nyissa meg ezt a linket a böngészőjében"
 
-#: templates/emails/plain/wishlist-email-verification.php:11
-#: templates/emails/wishlist-email-verification.php:11
+#: ../../templates/emails/wishlist-email-verification.php:11,
+#: ../../templates/emails/plain/wishlist-email-verification.php:11
 msgid "If you did not make this request you can safely ignore this email."
 msgstr ""
 "Ha nem Ön kezdeményezte ezt a kérést, nyugodtan hagyja figyelmen kívül ezt "
 "az e-mailt."
 
-#: templates/emails/wishlist-email-share-list.php:38
-msgid "Price:"
-msgstr "Ár:"
+#: ../../src/Rest/Schema/ItemSchema.php:455
+msgid "Product no longer available"
+msgstr "A termék már nem érhető el"
 
-#: templates/emails/wishlist-email-share-list.php:39
-msgid "Quantity:"
-msgstr "Mennyiség:"
-
-#: templates/emails/wishlist-email-share-list.php:50
-msgid ""
-"You can view this list by clicking on the link or copy and pasting it into "
-"your browser."
-msgstr ""
-"Ezt a listát megtekintheti a hivatkozásra kattintva, vagy kimásolva és "
-"beillesztve azt a böngészőjébe."
-
-#: templates/emails/wishlist-email-share-list.php:52
-msgid "View List:"
-msgstr "Lista megtekintése:"
-
-#: templates/emails/wishlist-email-verification.php:8
+#: ../../templates/emails/plain/wishlist-email-verification.php:7
 msgid ""
 "We received your request to add your email to your wishlist. Before we begin"
 " using this email address, we want to be certain we have your permission. "
-"Confirm by visiting this link in your browser"
-msgstr ""
-"Megkaptuk a kérését, hogy hozzáadjuk e-mail-címét a kívánságlistájához. "
-"Mielőtt elkezdenénk használni ezt az e-mail-címet, szeretnénk "
-"megbizonyosodni arról, hogy engedélyt ad rá. Erősítse meg, ha ellátogat a "
-"böngészőjében erre a hivatkozásra"
+"Confirm by visiting this link in your browser:"
+msgstr "Megkaptuk a kérését, hogy hozzáadjuk az e-mail-címét a kívánságlistájához. Mielőtt elkezdenénk használni ezt az e-mail-címet, szeretnénk megbizonyosodni arról, hogy ehhez engedélyt adott. A megerősítéshez nyissa meg ezt a linket a böngészőjében:"
 
-#: templates/find-a-list.php:21
-msgid "Find Someone's List"
-msgstr "Valaki listájának keresése"
+#~ msgid "WooCommerce WishLists"
+#~ msgstr "WooCommerce WishLists"
 
-#: templates/find-a-list.php:22
-msgid "Enter name or email"
-msgstr "Adja meg a nevet vagy az e-mail-címet"
+#~ msgid "https://woocommerce.com/products/woocommerce-wishlists/"
+#~ msgstr "https://woocommerce.com/products/woocommerce-wishlists/"
 
-#: templates/find-a-list.php:23
-msgid "Search"
-msgstr "Keresés"
+#~ msgid ""
+#~ "WooCommerce Wishlists allows you to create public and personal wishlists."
+#~ msgstr ""
+#~ "A WooCommerce Wishlists lehetővé teszi nyilvános és személyes kívánságlisták"
+#~ " létrehozását."
 
-#: templates/find-a-list.php:29
+#~ msgid "Element Stark"
+#~ msgstr "Element Stark"
+
+#~ msgid "https://www.elementstark.com"
+#~ msgstr "https://www.elementstark.com"
+
+#~ msgid "Only appears when button/link type is set to link"
+#~ msgstr ""
+#~ "Csak akkor jelenik meg, ha a gomb/hivatkozás típusa hivatkozásra van állítva"
+
+#~ msgid "Error creating list.  Please try again later"
+#~ msgstr ""
+#~ "Hiba történt a lista létrehozásakor.  Kérjük, próbálja meg később újra"
+
+#~ msgid "Create a list to save items for later."
+#~ msgstr "Hozzon létre egy listát, hogy későbbre elmentse a tételeket."
+
 #, php-format
-msgid "We've found %1$s lists matching <strong>%2$s</strong>"
-msgstr ""
-"Találtunk %1$s listát, amely megfelel a következőnek: <strong>%2$s</strong>"
+#~ msgid "%s items have been added to the cart"
+#~ msgstr "%s tétel került a kosárba"
 
-#: templates/find-a-list.php:29
 #, php-format
-msgid "<a class=\"wl-clear-results\" href=\"%s\">Clear Results</a>"
-msgstr "<a class=\"wl-clear-results\" href=\"%s\">Találatok törlése</a>"
+#~ msgid "%s have been added to the cart"
+#~ msgstr "%s hozzá lett adva a kosárhoz"
 
-#: templates/find-a-list.php:35
-msgid "Name"
-msgstr "Név"
+#~ msgid "Wishlist Notification Settings"
+#~ msgstr "Kívánságlista értesítési beállításai"
 
-#: templates/find-a-list.php:64
-msgid ""
-"We're sorry, we couldn't find a list for that name. Please double check your"
-" entry and try again."
-msgstr ""
-"Sajnáljuk, nem találtunk listát ehhez a névhez. Kérjük, ellenőrizze még "
-"egyszer a megadott adatát, és próbálja újra."
+#~ msgid "This item is already in one of your wishlists"
+#~ msgstr "Ez a tétel már szerepel az egyik kívánságlistáján"
 
-#: templates/find-a-list.php:65
-msgid "We found 0 matching lists"
-msgstr "0 egyező listát találtunk"
+#~ msgid "Your Public Lists"
+#~ msgstr "Az Ön nyilvános listái"
 
-#: templates/my-account-lists.php:26
-msgid "Privacy"
-msgstr "Adatvédelem"
+#~ msgid "Your Shared Lists"
+#~ msgstr "Az Ön megosztott listái"
 
-#: templates/my-lists.php:14
-msgid "Create a New List"
-msgstr "Új lista létrehozása"
+#~ msgid "Your Private Lists"
+#~ msgstr "Az Ön privát listái"
 
-#: templates/my-lists.php:91
-msgid "You have not created any lists yet."
-msgstr "Még nem hozott létre egyetlen listát sem."
+#~ msgid "Wishlist URL:"
+#~ msgstr "Kívánságlista URL:"
 
-#: templates/my-lists.php:92
-msgid "Go shopping to create one."
-msgstr "Vásárlással hozhat létre egyet."
+#~ msgid "Delete list"
+#~ msgstr "Lista törlése"
 
-#: templates/view-a-list.php:67
-msgid "Unable to locate the requested list"
-msgstr "Nem sikerült megtalálni a kért listát"
+#~ msgid "Preview List"
+#~ msgstr "Lista előnézete"
 
-#: templates/view-a-list.php:79
-msgid "Return to your view"
-msgstr "Térjen vissza a nézetéhez"
+#~ msgid "Qty"
+#~ msgstr "Menny."
 
-#: templates/view-a-list.php:79
-msgid "This is how other people will see your Wish List"
-msgstr "Mások így fogják látni az Ön kívánságlistáját"
+#~ msgid "Remove this item from your wishlist"
+#~ msgstr "Távolítsa el ezt az elemet a kívánságlistájáról"
 
-#: templates/view-a-list.php:104
-msgid "Sort by:"
-msgstr "Rendezés:"
+#~ msgid "Add All To Cart"
+#~ msgstr "Az összes hozzáadása a kosárhoz"
 
-#: templates/view-a-list.php:105
-msgid "In Category:"
-msgstr "Kategóriában:"
+#~ msgid "This list has been automatically created for you."
+#~ msgstr "Ezt a listát automatikusan hoztuk létre Önnek."
 
-#: templates/view-a-list.php:112
-msgid "Price (High to Low)"
-msgstr "Ár (magastól alacsonyig)"
-
-#: templates/view-a-list.php:113
-msgid "Price (Low to High)"
-msgstr "Ár (alacsonytól magasig)"
-
-#: templates/view-a-list.php:123
-msgid "All"
-msgstr "Összes"
-
-#: templates/view-a-list.php:133
-msgid "Go"
-msgstr "Mehet"
-
-#: templates/view-a-list.php:319
-msgid "This list currently contains no items."
-msgstr "Ez a lista jelenleg nem tartalmaz elemeket."
-
-#: templates/view-a-list.php:320
-msgid "Back to find a list"
-msgstr "Vissza a listakereséshez"
-
-#: templates/wishlist-sharing-menu.php:27 woocommerce-wishlists.php:735
-msgid "Check out my wishlist at "
-msgstr "Nézze meg a kívánságlistámat a következő címen "
-
-#: templates/wishlist-sharing-menu.php:27 woocommerce-wishlists.php:736
-msgid "Found an interesting list of products at "
-msgstr "Érdekes terméklistát találtam a következő címen "
-
-#: templates/wishlist-sharing-menu.php:48
-msgid "Share with Friends"
-msgstr "Megosztás ismerősökkel"
-
-#: templates/wishlist-sharing-menu.php:66
-msgid "Pin It on Pinterest!"
-msgstr "Rögzítse a Pinteresten!"
-
-#: woocommerce-wishlists-api.php:57
-msgid "This list has been automatically created for you."
-msgstr "Ezt a listát automatikusan hoztuk létre Önnek."
-
-#: woocommerce-wishlists-api.php:60
 #, php-format
-msgid "A list has been created for you. <a href=\"%s\">Manage list</a> "
-msgstr "Létrehoztunk egy listát az Ön számára. <a href=\"%s\">Lista kezelése</a> "
+#~ msgid "A list has been created for you. <a href=\"%s\">Manage list</a> "
+#~ msgstr "Létrehoztunk egy listát az Ön számára. <a href=\"%s\">Lista kezelése</a> "
 
-#: woocommerce-wishlists-api.php:68
 #, php-format
-msgid ""
-"A temporary list has been created for you. <a href=\"%1$s\">Login</a> or <a "
-"href=\"%2$s\">register for an account</a> to save this list for future use."
-"  You may access this temporary list for up to 30 days or until you clear "
-"your browser history."
-msgstr ""
-"Létrehoztunk egy ideiglenes listát az Ön számára. <a "
-"href=\"%1$s\">Jelentkezzen be</a> vagy <a href=\"%2$s\">regisztráljon egy "
-"fiókot</a>, hogy ezt a listát későbbi használatra elmentse.  Ezt az "
-"ideiglenes listát legfeljebb 30 napig vagy a böngészési előzményeinek "
-"törléséig érheti el."
+#~ msgid ""
+#~ "A temporary list has been created for you. <a href=\"%1$s\">Login</a> or <a "
+#~ "href=\"%2$s\">register for an account</a> to save this list for future use."
+#~ "  You may access this temporary list for up to 30 days or until you clear "
+#~ "your browser history."
+#~ msgstr ""
+#~ "Létrehoztunk egy ideiglenes listát az Ön számára. <a "
+#~ "href=\"%1$s\">Jelentkezzen be</a> vagy <a href=\"%2$s\">regisztráljon egy "
+#~ "fiókot</a>, hogy ezt a listát későbbi használatra elmentse.  Ezt az "
+#~ "ideiglenes listát legfeljebb 30 napig vagy a böngészési előzményeinek "
+#~ "törléséig érheti el."
 
-#: woocommerce-wishlists-api.php:80
-msgid "Unable to locate or create a list for you.  Please try again later"
-msgstr ""
-"Nem sikerült megtalálni vagy létrehozni az Ön számára egy listát.  Kérjük, "
-"próbálja meg később újra"
+#~ msgid "Unable to locate or create a list for you.  Please try again later"
+#~ msgstr ""
+#~ "Nem sikerült megtalálni vagy létrehozni az Ön számára egy listát.  Kérjük, "
+#~ "próbálja meg később újra"
 
-#: woocommerce-wishlists-api.php:161
 #, php-format
-msgid "%s Items ready to move to a new list"
-msgstr "%s elem készen áll új listára való áthelyezésre"
+#~ msgid "%s Items ready to move to a new list"
+#~ msgstr "%s elem készen áll új listára való áthelyezésre"
 
-#: woocommerce-wishlists-api.php:165 woocommerce-wishlists.php:662
-msgid "Cancel"
-msgstr "Mégse"
+#~ msgid ""
+#~ "There was a problem adding this item to your list.  Please review and try "
+#~ "again."
+#~ msgstr ""
+#~ "Hiba történt ennek az elemnek a listájához adásakor.  Kérjük, ellenőrizze, "
+#~ "és próbálja meg újra."
 
-#: woocommerce-wishlists-api.php:253
-msgid ""
-"There was a problem adding this item to your list.  Please review and try "
-"again."
-msgstr ""
-"Hiba történt ennek az elemnek a listájához adásakor.  Kérjük, ellenőrizze, "
-"és próbálja meg újra."
+#~ msgid ""
+#~ "Please choose the quantity of items you wish to add to your list&hellip;"
+#~ msgstr ""
+#~ "Kérjük, válassza ki a listájához hozzáadni kívánt tételek "
+#~ "darabszámát&hellip;"
 
-#: woocommerce-wishlists-api.php:319
-msgid ""
-"Please choose the quantity of items you wish to add to your list&hellip;"
-msgstr ""
-"Kérjük, válassza ki a listájához hozzáadni kívánt tételek "
-"darabszámát&hellip;"
+#~ msgid ""
+#~ "There was a problem adding items to your wishlist.  Please review and try "
+#~ "again.&hellip;"
+#~ msgstr ""
+#~ "Hiba történt a tételek kívánságlistájához adásakor.  Kérjük, ellenőrizze, és"
+#~ " próbálja meg újra.&hellip;"
 
-#: woocommerce-wishlists-api.php:321
-msgid ""
-"There was a problem adding items to your wishlist.  Please review and try "
-"again.&hellip;"
-msgstr ""
-"Hiba történt a tételek kívánságlistájához adásakor.  Kérjük, ellenőrizze, és"
-" próbálja meg újra.&hellip;"
+#~ msgid "Please choose a product to add to your list&hellip;"
+#~ msgstr ""
+#~ "Kérjük, válasszon ki egy terméket, amelyet a listájához kíván "
+#~ "hozzáadni&hellip;"
 
-#: woocommerce-wishlists-api.php:328
-msgid "Please choose a product to add to your list&hellip;"
-msgstr ""
-"Kérjük, válasszon ki egy terméket, amelyet a listájához kíván "
-"hozzáadni&hellip;"
+#~ msgid "Continue Shopping &rarr;"
+#~ msgstr "Vásárlás folytatása &rarr;"
 
-#: woocommerce-wishlists-api.php:338
-msgid "Continue Shopping &rarr;"
-msgstr "Vásárlás folytatása &rarr;"
+#~ msgid "Product successfully added to your wishlist."
+#~ msgstr "A terméket sikeresen hozzáadta a kívánságlistájához."
 
-#: woocommerce-wishlists-api.php:338
-msgid "Product successfully added to your wishlist."
-msgstr "A terméket sikeresen hozzáadta a kívánságlistájához."
-
-#: woocommerce-wishlists-api.php:344
 #, php-format
-msgid "Product successfully added to %s."
-msgstr "A terméket sikeresen hozzáadta a következőhöz: %s."
+#~ msgid "Product successfully added to %s."
+#~ msgstr "A terméket sikeresen hozzáadta a következőhöz: %s."
 
-#: woocommerce-wishlists-api.php:345
-msgid "Manage Wishlist &rarr;"
-msgstr "Kívánságlista kezelése &rarr;"
-
-#: woocommerce-wishlists-api.php:409
-msgid "Your email has been sent"
-msgstr "Az e-mailjét elküldtük"
-
-#: woocommerce-wishlists-api.php:411 woocommerce-wishlists-api.php:413
-msgid "Unable to send mail.  Please check your values and try again."
-msgstr ""
-"Nem sikerült elküldeni az e-mailt.  Kérjük, ellenőrizze az adatait, és "
-"próbálja meg újra."
-
-#: woocommerce-wishlists-functions.php:44
-msgid "<span class=\"meta-nav\">&larr;</span> Older lists"
-msgstr "<span class=\"meta-nav\">&larr;</span> Régebbi listák"
-
-#: woocommerce-wishlists-functions.php:45
-msgid "Newer lists <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Újabb listák <span class=\"meta-nav\">&rarr;</span>"
-
-#: woocommerce-wishlists-functions.php:221
-msgid "Share this list via e-mail "
-msgstr "Ossza meg ezt a listát e-mailben "
-
-#: woocommerce-wishlists-functions.php:226
-msgid "Your name:"
-msgstr "Az Ön neve:"
-
-#: woocommerce-wishlists-functions.php:231
-msgid "To:"
-msgstr "Címzett:"
-
-#: woocommerce-wishlists-functions.php:233
-msgid "Type in e-mail addresses: jo@example.com, jan@example.com."
-msgstr "Írjon be e-mail-címeket: jo@example.com, jan@example.com."
-
-#: woocommerce-wishlists-functions.php:236
-msgid "Add a note:"
-msgstr "Megjegyzés hozzáadása:"
-
-#: woocommerce-wishlists-functions.php:248
-msgid "Send email"
-msgstr "E-mail küldése"
-
-#: woocommerce-wishlists.php:271 woocommerce-wishlists.php:280
-msgid "Please select a list first"
-msgstr "Kérjük, először válasszon ki egy listát"
-
-#: woocommerce-wishlists.php:303
-msgid "Are you sure?"
-msgstr "Biztos benne?"
-
-#: woocommerce-wishlists.php:304
-msgid "How Many Would You Like to Add?"
-msgstr "Hány darabot kíván hozzáadni?"
-
-#: woocommerce-wishlists.php:507
-msgid "Add Wishlist"
-msgstr "Kívánságlista hozzáadása"
-
-#: woocommerce-wishlists.php:508
-msgid "Add New Wishlist"
-msgstr "Új kívánságlista hozzáadása"
-
-#: woocommerce-wishlists.php:510
-msgid "Edit Wishlist"
-msgstr "Kívánságlista szerkesztése"
-
-#: woocommerce-wishlists.php:511
-msgid "New Wishlist"
-msgstr "Új kívánságlista"
-
-#: woocommerce-wishlists.php:514
-msgid "Search Wishlists"
-msgstr "Kívánságlisták keresése"
-
-#: woocommerce-wishlists.php:515
-msgid "No Wishlists found"
-msgstr "Nem található kívánságlista"
-
-#: woocommerce-wishlists.php:516
-msgid "No Wishlists found in trash"
-msgstr "Nem található kívánságlista a Lomtárban"
-
-#: woocommerce-wishlists.php:517
-msgid "Parent Wishlists"
-msgstr "Szülő kívánságlisták"
-
-#: woocommerce-wishlists.php:519
-msgid "This is where customer wishlists are stored."
-msgstr "Itt kerülnek tárolásra a vásárlók kívánságlistái."
-
-#: woocommerce-wishlists.php:664
-#, php-format
-msgid ""
-"You have %s items ready to move to a new list.  <a href=\"%s\">Create a "
-"list</a>"
-msgstr ""
-"Önnek %s tétel áll készen egy új listára való áthelyezésre.  <a "
-"href=\"%s\">Hozzon létre egy listát</a>"
+#~ msgid "Manage Wishlist &rarr;"
+#~ msgstr "Kívánságlista kezelése &rarr;"

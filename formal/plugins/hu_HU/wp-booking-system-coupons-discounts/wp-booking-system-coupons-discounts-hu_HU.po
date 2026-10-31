@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Booking System - Coupons & Discounts Add-on 1.1.10\n"
+"Project-Id-Version: WP Booking System - Coupons & Discounts Add-on 1.1.13\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:51:00+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: WP Booking System - Coupons & Discounts Add-on\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.1.10\n"
+"X-Plugin-Version: 1.1.13\n"
 
 #. Plugin Name of the plugin
 #: index.php
@@ -36,9 +36,7 @@ msgstr "https://www.wpbookingsystem.com/"
 msgid ""
 "Create discounts and coupon codes that are applied to the checkout form "
 "based on specific conditions."
-msgstr ""
-"Hozzon létre kedvezményeket és kuponkódokat, amelyeket meghatározott "
-"feltételek alapján a pénztár űrlapra alkalmaz."
+msgstr "Hozzon létre kedvezményeket és kuponkódokat, amelyeket meghatározott feltételek alapján alkalmaznak a pénztári űrlapon."
 
 #. Author of the plugin
 #: index.php
@@ -53,7 +51,7 @@ msgstr "Név"
 #: includes/base/admin/coupons/class-list-table-coupons.php:89
 #: includes/base/admin/discounts/class-list-table-discounts.php:88
 msgid "ID"
-msgstr "ID"
+msgstr "Azonosító"
 
 #: includes/base/admin/coupons/class-list-table-coupons.php:90
 msgid "Code"
@@ -65,14 +63,14 @@ msgid "Value"
 msgstr "Érték"
 
 #: includes/base/admin/coupons/class-list-table-coupons.php:92
-#: includes/base/admin/coupons/views/view-edit-coupon.php:258
+#: includes/base/admin/coupons/views/view-edit-coupon.php:293
 msgid "Usage Limit"
 msgstr "Felhasználási korlát"
 
 #: includes/base/admin/coupons/class-list-table-coupons.php:93
-#: includes/base/admin/coupons/views/view-edit-coupon.php:344
+#: includes/base/admin/coupons/views/view-edit-coupon.php:379
 #: includes/base/admin/discounts/class-list-table-discounts.php:90
-#: includes/base/admin/discounts/views/view-edit-discount.php:297
+#: includes/base/admin/discounts/views/view-edit-discount.php:407
 msgid "Validity Period"
 msgstr "Érvényességi időszak"
 
@@ -151,20 +149,20 @@ msgstr "A kupon sikeresen frissítve."
 msgid "Please add a name for your new coupon."
 msgstr "Adjon nevet az új kuponnak."
 
-#: includes/base/admin/coupons/functions-actions-coupon.php:45
+#: includes/base/admin/coupons/functions-actions-coupon.php:44
 msgid "Something went wrong. Could not create the coupon. Please try again."
 msgstr ""
 "Valami hiba történt. Nem sikerült létrehozni a kupont. Kérjük, próbálja meg "
 "újra."
 
-#: includes/base/admin/coupons/functions-actions-coupon.php:75
+#: includes/base/admin/coupons/functions-actions-coupon.php:72
 msgid "Something went wrong. Could not update the coupon."
 msgstr "Valami hiba történt. Nem sikerült frissíteni a kupont."
 
-#: includes/base/admin/coupons/functions-actions-coupon.php:305
-#: includes/base/admin/discounts/functions-actions-discount.php:302
+#: includes/base/admin/coupons/functions-actions-coupon.php:302
+#: includes/base/admin/discounts/functions-actions-discount.php:305
 msgid "Duplicate of"
-msgstr "Másolat erről"
+msgstr "Másolat:"
 
 #: includes/base/admin/coupons/functions.php:51
 #: includes/base/admin/coupons/functions.php:52
@@ -183,6 +181,7 @@ msgid "Back to all coupons"
 msgstr "Vissza az összes kuponhoz"
 
 #: includes/base/admin/coupons/views/view-add-coupon.php:48
+#: includes/base/admin/coupons/views/view-edit-coupon.php:129
 msgid "Coupon Name"
 msgstr "Kupon neve"
 
@@ -196,7 +195,7 @@ msgid "Cancel"
 msgstr "Mégse"
 
 #: includes/base/admin/coupons/views/view-edit-coupon.php:59
-#: includes/base/admin/discounts/views/view-edit-discount.php:61
+#: includes/base/admin/discounts/views/view-edit-discount.php:79
 msgid "Translations"
 msgstr "Fordítások"
 
@@ -204,11 +203,17 @@ msgstr "Fordítások"
 msgid "Coupon Code"
 msgstr "Kuponkód"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:129
+#: includes/base/admin/coupons/views/view-edit-coupon.php:137
+msgid ""
+"Optional. The coupon name displayed in the pricing table. If empty, the "
+"coupon title will be used."
+msgstr "Opcionális. A kupon neve jelenik meg az árlistában. Ha üres, a kupon címe jelenik meg."
+
+#: includes/base/admin/coupons/views/view-edit-coupon.php:164
 msgid "Coupon Description"
 msgstr "Kupon leírása"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:137
+#: includes/base/admin/coupons/views/view-edit-coupon.php:172
 msgid ""
 "Optional. A description that will appear in the pricing table, under the "
 "coupon's name."
@@ -216,94 +221,90 @@ msgstr ""
 "Opcionális. Egy leírás, amely az árkalkulációs táblázatban, a kupon neve "
 "alatt jelenik meg."
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:162
+#: includes/base/admin/coupons/views/view-edit-coupon.php:197
 msgid "Coupon Discount Type"
 msgstr "Kuponkedvezmény típusa"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:166
-#: includes/base/admin/discounts/views/view-edit-discount.php:173
+#: includes/base/admin/coupons/views/view-edit-coupon.php:201
+#: includes/base/admin/discounts/views/view-edit-discount.php:226
 msgid "Fixed Amount"
 msgstr "Fix összeg"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:167
-#: includes/base/admin/discounts/views/view-edit-discount.php:174
+#: includes/base/admin/coupons/views/view-edit-coupon.php:202
+#: includes/base/admin/discounts/views/view-edit-discount.php:227
 msgid "Percentage"
 msgstr "Százalék"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:174
+#: includes/base/admin/coupons/views/view-edit-coupon.php:209
 msgid "Coupon Value"
 msgstr "Kupon értéke"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:190
+#: includes/base/admin/coupons/views/view-edit-coupon.php:225
 msgid "Apply Coupon to"
 msgstr "Kupon alkalmazása"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:195
-#: includes/base/admin/discounts/views/view-edit-discount.php:233
+#: includes/base/admin/coupons/views/view-edit-coupon.php:230
+#: includes/base/admin/discounts/views/view-edit-discount.php:286
 msgid "Total Price"
 msgstr "Végösszeg"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:196
-#: includes/base/admin/discounts/views/view-edit-discount.php:234
+#: includes/base/admin/coupons/views/view-edit-coupon.php:231
+#: includes/base/admin/discounts/views/view-edit-discount.php:287
 msgid "Calendar Price Only"
 msgstr "Csak a naptár ára"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:199
-#: includes/base/admin/discounts/views/view-edit-discount.php:238
+#: includes/base/admin/coupons/views/view-edit-coupon.php:234
+#: includes/base/admin/discounts/views/view-edit-discount.php:291
 msgid ""
 "Select how to apply the discount. To all pricing items (calendar price per "
 "day and form product fields) or to calendar price only (calendar price per "
 "day)."
-msgstr ""
-"Válassza ki, hogyan alkalmazza a kedvezményt. Minden árképzési elemre (a "
-"naptár napi ára és az űrlap termékmezői), vagy csak a naptár árára (a naptár"
-" napi ára)."
+msgstr "Válassza ki, hogyan alkalmazza a kedvezményt: minden árazási tételre (a naptár napi árára és az űrlap termékmezőire), vagy csak a naptár árára (a naptár napi árára)."
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:206
+#: includes/base/admin/coupons/views/view-edit-coupon.php:241
+#: includes/base/admin/discounts/views/view-edit-discount.php:489
 msgid "Application Order"
 msgstr "Alkalmazási sorrend"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:211
+#: includes/base/admin/coupons/views/view-edit-coupon.php:246
 msgid "Before Discounts"
 msgstr "Kedvezmények előtt"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:212
+#: includes/base/admin/coupons/views/view-edit-coupon.php:247
 msgid "After Discounts"
 msgstr "Kedvezmények után"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:216
+#: includes/base/admin/coupons/views/view-edit-coupon.php:251
 msgid "Calculate the coupon value before or after applying other discounts."
 msgstr ""
 "Számítsa ki a kupon értékét más kedvezmények alkalmazása előtt vagy után."
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:223
-#: includes/base/admin/discounts/views/view-edit-discount.php:245
+#: includes/base/admin/coupons/views/view-edit-coupon.php:258
+#: includes/base/admin/discounts/views/view-edit-discount.php:298
 msgid "Application"
 msgstr "Alkalmazás"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:228
+#: includes/base/admin/coupons/views/view-edit-coupon.php:263
 msgid "Per Booking - Apply the coupon only once"
 msgstr "Foglalásonként - A kupont csak egyszer alkalmazza"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:229
+#: includes/base/admin/coupons/views/view-edit-coupon.php:264
 msgid "Per Day - Apply the coupon multiplied by the number of days booked"
 msgstr ""
 "Naponként - A kupont a lefoglalt napok számával megszorozva alkalmazza"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:233
+#: includes/base/admin/coupons/views/view-edit-coupon.php:268
 msgid ""
 "Select how to apply the coupon. Once per booking or multiplied by the number"
 " of days booked."
-msgstr ""
-"Válassza ki, hogyan alkalmazza a kupont. Foglalásonként egyszer, vagy a "
-"lefoglalt napok számával megszorozva."
+msgstr "Válassza ki, hogyan alkalmazza a kupont. Foglalásonként egyszer vagy a lefoglalt napok számával megszorozva."
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:240
-#: includes/base/admin/discounts/views/view-edit-discount.php:279
+#: includes/base/admin/coupons/views/view-edit-coupon.php:275
+#: includes/base/admin/discounts/views/view-edit-discount.php:389
 msgid "Calendars"
 msgstr "Naptárak"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:251
+#: includes/base/admin/coupons/views/view-edit-coupon.php:286
 msgid ""
 "Select the calendars the coupon applies to. If no calendars are selected, "
 "the coupon will be applied to all calendars."
@@ -311,63 +312,57 @@ msgstr ""
 "Válassza ki, mely naptárakra vonatkozzon a kupon. Ha nem választ naptárat, a"
 " kupon minden naptárra érvényes lesz."
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:262
+#: includes/base/admin/coupons/views/view-edit-coupon.php:297
 msgid "unlimited"
 msgstr "korlátlan"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:267
+#: includes/base/admin/coupons/views/view-edit-coupon.php:302
 #, php-format
 msgid "used %d times so far (%d usages left)"
 msgstr "eddig %d alkalommal használva (%d felhasználás maradt)"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:272
+#: includes/base/admin/coupons/views/view-edit-coupon.php:307
 msgid "Optional. The number of times the coupon code can be used."
 msgstr "Opcionális. A kuponkód felhasználható alkalmainak száma."
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:279
+#: includes/base/admin/coupons/views/view-edit-coupon.php:314
 msgid "Minimum Stay"
 msgstr "Minimális tartózkodás"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:283
+#: includes/base/admin/coupons/views/view-edit-coupon.php:318
 msgid "no minimum"
 msgstr "nincs minimum"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:284
-#: includes/base/admin/coupons/views/view-edit-coupon.php:300
+#: includes/base/admin/coupons/views/view-edit-coupon.php:319
+#: includes/base/admin/coupons/views/view-edit-coupon.php:335
 msgid "days"
 msgstr "nap"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:288
+#: includes/base/admin/coupons/views/view-edit-coupon.php:323
 msgid ""
 "Optional. The number of days the client has to book for the coupon to be "
 "valid. Nights will be counted if selection style is set to split."
-msgstr ""
-"Opcionális. A napok száma, amelyet az ügyfélnek le kell foglalnia, hogy a "
-"kupon érvényes legyen. Az éjszakák kerülnek számításba, ha a kijelölési "
-"stílus 'split'."
+msgstr "Opcionális. A napok száma, amelyet az ügyfélnek le kell foglalnia, hogy a kupon érvényes legyen. Az éjszakák kerülnek számításba, ha a kijelölési stílus „split”."
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:295
+#: includes/base/admin/coupons/views/view-edit-coupon.php:330
 msgid "Maximum Stay"
 msgstr "Maximális tartózkodás"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:299
+#: includes/base/admin/coupons/views/view-edit-coupon.php:334
 msgid "no maximum"
 msgstr "nincs maximum"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:304
+#: includes/base/admin/coupons/views/view-edit-coupon.php:339
 msgid ""
 "Optional. The maximum number of days the client has to book for the coupon "
 "to be valid. Nights will be counted if selection style is set to split."
-msgstr ""
-"Opcionális. A napok maximális száma, amelyet az ügyfélnek le kell foglalnia,"
-" hogy a kupon érvényes legyen. Az éjszakák kerülnek számításba, ha a "
-"kijelölési stílus 'split'."
+msgstr "Opcionális. A napok maximális száma, amelyet az ügyfélnek le kell foglalnia, hogy a kupon érvényes legyen. Az éjszakák kerülnek számításba, ha a kijelölési stílus „split”."
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:311
+#: includes/base/admin/coupons/views/view-edit-coupon.php:346
 msgid "Applicable Weekdays"
 msgstr "Alkalmazható napok a héten"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:337
+#: includes/base/admin/coupons/views/view-edit-coupon.php:372
 msgid ""
 "Optional. The coupon will be valid only if the booking starts on a certain "
 "weekday."
@@ -375,24 +370,26 @@ msgstr ""
 "Opcionális. A kupon csak akkor érvényes, ha a foglalás a hét meghatározott "
 "napján kezdődik."
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:354
-#: includes/base/admin/coupons/views/view-edit-coupon.php:395
-#: includes/base/admin/discounts/views/view-edit-discount.php:307
+#: includes/base/admin/coupons/views/view-edit-coupon.php:389
+#: includes/base/admin/coupons/views/view-edit-coupon.php:430
+#: includes/base/admin/discounts/views/view-edit-discount.php:417
+#: includes/base/admin/discounts/views/view-edit-discount.php:475
 msgid "from"
 msgstr "ettől"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:355
-#: includes/base/admin/coupons/views/view-edit-coupon.php:398
-#: includes/base/admin/discounts/views/view-edit-discount.php:308
+#: includes/base/admin/coupons/views/view-edit-coupon.php:390
+#: includes/base/admin/coupons/views/view-edit-coupon.php:433
+#: includes/base/admin/discounts/views/view-edit-discount.php:418
+#: includes/base/admin/discounts/views/view-edit-discount.php:478
 msgid "to"
 msgstr "eddig"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:360
-#: includes/base/admin/discounts/views/view-edit-discount.php:313
+#: includes/base/admin/coupons/views/view-edit-coupon.php:395
+#: includes/base/admin/discounts/views/view-edit-discount.php:423
 msgid "Add Period"
 msgstr "Időszak hozzáadása"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:364
+#: includes/base/admin/coupons/views/view-edit-coupon.php:399
 msgid ""
 "Optional. The calendar dates in which the coupon is valid. Use this if you "
 "only want to allow the customer to use the coupon when booking a certain "
@@ -402,32 +399,32 @@ msgstr ""
 "ha csak egy adott hónapban vagy időszakban szeretné engedélyezni a kupon "
 "használatát a foglaláskor."
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:371
-#: includes/base/admin/discounts/views/view-edit-discount.php:324
+#: includes/base/admin/coupons/views/view-edit-coupon.php:406
+#: includes/base/admin/discounts/views/view-edit-discount.php:451
 msgid "Validity Inclusion"
 msgstr "Érvényesség figyelembevétele"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:376
-#: includes/base/admin/discounts/views/view-edit-discount.php:329
+#: includes/base/admin/coupons/views/view-edit-coupon.php:411
+#: includes/base/admin/discounts/views/view-edit-discount.php:456
 msgid "Any Dates"
 msgstr "Bármely dátum"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:377
-#: includes/base/admin/discounts/views/view-edit-discount.php:330
+#: includes/base/admin/coupons/views/view-edit-coupon.php:412
+#: includes/base/admin/discounts/views/view-edit-discount.php:457
 msgid "Start Date only"
 msgstr "Csak a kezdő dátum"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:378
-#: includes/base/admin/discounts/views/view-edit-discount.php:331
+#: includes/base/admin/coupons/views/view-edit-coupon.php:413
+#: includes/base/admin/discounts/views/view-edit-discount.php:458
 msgid "Start Date or End Date"
 msgstr "Kezdő vagy záró dátum"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:379
-#: includes/base/admin/discounts/views/view-edit-discount.php:332
+#: includes/base/admin/coupons/views/view-edit-coupon.php:414
+#: includes/base/admin/discounts/views/view-edit-discount.php:459
 msgid "Start Date and End Date"
 msgstr "Kezdő és záró dátum"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:383
+#: includes/base/admin/coupons/views/view-edit-coupon.php:418
 msgid ""
 "Choose to apply the coupon only if the start date is contained in the "
 "Validity Period, or the entire date selection is contained in the Validity "
@@ -437,11 +434,12 @@ msgstr ""
 "érvényességi időszakba esik, vagy ha a teljes dátumkijelölés az érvényességi"
 " időszakon belül van."
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:390
+#: includes/base/admin/coupons/views/view-edit-coupon.php:425
+#: includes/base/admin/discounts/views/view-edit-discount.php:470
 msgid "Usage Period"
 msgstr "Felhasználási időszak"
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:402
+#: includes/base/admin/coupons/views/view-edit-coupon.php:437
 msgid ""
 "Optional. The dates in which the coupon is valid. Use this if you want to "
 "restrict the coupon to be used only in a certain period, regardless of the "
@@ -451,7 +449,7 @@ msgstr ""
 "kupon használatát egy bizonyos időszakra szeretné korlátozni, függetlenül a "
 "kiválasztott foglalási dátumoktól."
 
-#: includes/base/admin/coupons/views/view-edit-coupon.php:412
+#: includes/base/admin/coupons/views/view-edit-coupon.php:447
 msgid "Save Coupon"
 msgstr "Kupon mentése"
 
@@ -503,13 +501,13 @@ msgstr "A kedvezmény sikeresen frissítve."
 msgid "Please add a name for your new discount."
 msgstr "Adjon nevet az új kedvezményének."
 
-#: includes/base/admin/discounts/functions-actions-discount.php:45
+#: includes/base/admin/discounts/functions-actions-discount.php:44
 msgid "Something went wrong. Could not create the discount. Please try again."
 msgstr ""
 "Valami hiba történt. Nem sikerült létrehozni a kedvezményt. Kérjük, próbálja"
 " újra."
 
-#: includes/base/admin/discounts/functions-actions-discount.php:74
+#: includes/base/admin/discounts/functions-actions-discount.php:71
 msgid "Something went wrong. Could not update the discount."
 msgstr "Valami hiba történt. Nem sikerült frissíteni a kedvezményt."
 
@@ -529,11 +527,11 @@ msgstr "Naptár értéke"
 
 #: includes/base/admin/discounts/functions.php:72
 msgid "Total order value"
-msgstr "Teljes rendelési érték"
+msgstr "Rendelés teljes összege"
 
 #: includes/base/admin/discounts/functions.php:73
 msgid "Booking weekday"
-msgstr "Foglalás hét napja"
+msgstr "A foglalás napja a héten"
 
 #: includes/base/admin/discounts/functions.php:74
 msgid "Booking day"
@@ -544,126 +542,132 @@ msgid "Number of days from current day"
 msgstr "Napok száma a mai naptól"
 
 #: includes/base/admin/discounts/functions.php:76
+msgid "Number of days from the closest booking"
+msgstr "A legközelebbi foglalástól számított napok száma"
+
+#: includes/base/admin/discounts/functions.php:77
 msgid "Price per day"
 msgstr "Napi ár"
 
-#: includes/base/admin/discounts/functions.php:77
+#: includes/base/admin/discounts/functions.php:78
 msgid "Form Field"
 msgstr "Űrlapmező"
 
-#: includes/base/admin/discounts/functions.php:78
+#: includes/base/admin/discounts/functions.php:79
 msgid "Payment Type"
 msgstr "Fizetési típus"
 
-#: includes/base/admin/discounts/functions.php:79
+#: includes/base/admin/discounts/functions.php:80
 msgid "Payment Method"
 msgstr "Fizetési mód"
 
-#: includes/base/admin/discounts/functions.php:80
+#: includes/base/admin/discounts/functions.php:81
 msgid "User"
 msgstr "Felhasználó"
 
-#: includes/base/admin/discounts/functions.php:81
+#: includes/base/admin/discounts/functions.php:82
 msgid "User Role"
 msgstr "Felhasználói szerepkör"
 
-#: includes/base/admin/discounts/functions.php:88
-#: includes/base/admin/discounts/functions.php:104
-#: includes/base/admin/discounts/functions.php:123
-#: includes/base/admin/discounts/functions.php:142
-#: includes/base/admin/discounts/functions.php:207
-#: includes/base/admin/discounts/functions.php:226
-#: includes/base/admin/discounts/functions.php:278
-#: includes/base/admin/discounts/functions.php:289
+#: includes/base/admin/discounts/functions.php:89
+#: includes/base/admin/discounts/functions.php:105
+#: includes/base/admin/discounts/functions.php:124
+#: includes/base/admin/discounts/functions.php:143
+#: includes/base/admin/discounts/functions.php:219
+#: includes/base/admin/discounts/functions.php:238
+#: includes/base/admin/discounts/functions.php:290
+#: includes/base/admin/discounts/functions.php:301
 msgid "is equal to"
 msgstr "egyenlő"
 
-#: includes/base/admin/discounts/functions.php:89
-#: includes/base/admin/discounts/functions.php:108
-#: includes/base/admin/discounts/functions.php:127
-#: includes/base/admin/discounts/functions.php:146
-#: includes/base/admin/discounts/functions.php:211
-#: includes/base/admin/discounts/functions.php:230
-#: includes/base/admin/discounts/functions.php:282
-#: includes/base/admin/discounts/functions.php:293
+#: includes/base/admin/discounts/functions.php:90
+#: includes/base/admin/discounts/functions.php:109
+#: includes/base/admin/discounts/functions.php:128
+#: includes/base/admin/discounts/functions.php:147
+#: includes/base/admin/discounts/functions.php:223
+#: includes/base/admin/discounts/functions.php:242
+#: includes/base/admin/discounts/functions.php:294
+#: includes/base/admin/discounts/functions.php:305
 msgid "is not equal to"
 msgstr "nem egyenlő"
 
-#: includes/base/admin/discounts/functions.php:93
-#: includes/base/admin/discounts/functions.php:112
-#: includes/base/admin/discounts/functions.php:131
-#: includes/base/admin/discounts/functions.php:150
-#: includes/base/admin/discounts/functions.php:215
-#: includes/base/admin/discounts/functions.php:234
+#: includes/base/admin/discounts/functions.php:94
+#: includes/base/admin/discounts/functions.php:113
+#: includes/base/admin/discounts/functions.php:132
+#: includes/base/admin/discounts/functions.php:151
+#: includes/base/admin/discounts/functions.php:170
+#: includes/base/admin/discounts/functions.php:227
+#: includes/base/admin/discounts/functions.php:246
 msgid "is greater than"
 msgstr "nagyobb, mint"
 
-#: includes/base/admin/discounts/functions.php:97
-#: includes/base/admin/discounts/functions.php:116
-#: includes/base/admin/discounts/functions.php:135
-#: includes/base/admin/discounts/functions.php:154
-#: includes/base/admin/discounts/functions.php:219
-#: includes/base/admin/discounts/functions.php:238
+#: includes/base/admin/discounts/functions.php:98
+#: includes/base/admin/discounts/functions.php:117
+#: includes/base/admin/discounts/functions.php:136
+#: includes/base/admin/discounts/functions.php:155
+#: includes/base/admin/discounts/functions.php:174
+#: includes/base/admin/discounts/functions.php:231
+#: includes/base/admin/discounts/functions.php:250
 msgid "is lower than"
 msgstr "kisebb, mint"
 
-#: includes/base/admin/discounts/functions.php:158
+#: includes/base/admin/discounts/functions.php:159
 msgid "contains"
 msgstr "tartalmaz"
 
-#: includes/base/admin/discounts/functions.php:162
+#: includes/base/admin/discounts/functions.php:163
 msgid "does not contain"
 msgstr "nem tartalmaz"
 
-#: includes/base/admin/discounts/functions.php:169
+#: includes/base/admin/discounts/functions.php:181
 msgid "starts on a"
-msgstr "egy adott napon kezdődik"
+msgstr "kezdődik"
 
-#: includes/base/admin/discounts/functions.php:173
+#: includes/base/admin/discounts/functions.php:185
 msgid "does not start on a"
 msgstr "nem egy adott napon kezdődik"
 
-#: includes/base/admin/discounts/functions.php:177
+#: includes/base/admin/discounts/functions.php:189
 msgid "ends on a"
 msgstr "egy adott napon ér véget"
 
-#: includes/base/admin/discounts/functions.php:181
+#: includes/base/admin/discounts/functions.php:193
 msgid "does not end on a"
 msgstr "nem egy adott napon ér véget"
 
-#: includes/base/admin/discounts/functions.php:188
+#: includes/base/admin/discounts/functions.php:200
 msgid "starts on"
 msgstr "ekkor kezdődik"
 
-#: includes/base/admin/discounts/functions.php:192
+#: includes/base/admin/discounts/functions.php:204
 msgid "does not start on"
 msgstr "nem ekkor kezdődik"
 
-#: includes/base/admin/discounts/functions.php:196
+#: includes/base/admin/discounts/functions.php:208
 msgid "ends on"
 msgstr "ekkor ér véget"
 
-#: includes/base/admin/discounts/functions.php:200
+#: includes/base/admin/discounts/functions.php:212
 msgid "does not end on"
 msgstr "nem ekkor ér véget"
 
-#: includes/base/admin/discounts/functions.php:245
+#: includes/base/admin/discounts/functions.php:257
 msgid "is logged in"
 msgstr "be van jelentkezve"
 
-#: includes/base/admin/discounts/functions.php:249
+#: includes/base/admin/discounts/functions.php:261
 msgid "is not logged in"
 msgstr "nincs bejelentkezve"
 
-#: includes/base/admin/discounts/functions.php:256
+#: includes/base/admin/discounts/functions.php:268
 msgid "is full amount"
 msgstr "teljes összeg"
 
-#: includes/base/admin/discounts/functions.php:260
+#: includes/base/admin/discounts/functions.php:272
 msgid "is deposit"
 msgstr "előleg"
 
-#: includes/base/admin/discounts/functions.php:367
+#: includes/base/admin/discounts/functions.php:379
 msgid "and"
 msgstr "és"
 
@@ -678,6 +682,7 @@ msgid "Back to all discounts"
 msgstr "Vissza az összes kedvezményhez"
 
 #: includes/base/admin/discounts/views/view-add-discount.php:48
+#: includes/base/admin/discounts/views/view-edit-discount.php:153
 msgid "Discount Name"
 msgstr "Kedvezmény neve"
 
@@ -685,21 +690,25 @@ msgstr "Kedvezmény neve"
 msgid "Add Discount"
 msgstr "Kedvezmény hozzáadása"
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:110
+#: includes/base/admin/discounts/views/view-edit-discount.php:128
 msgid "One or more validity periods contain invalid or overlapping dates."
-msgstr ""
-"Egy vagy több érvényességi időszak érvénytelen vagy átfedő dátumokat "
-"tartalmaz."
-
-#: includes/base/admin/discounts/views/view-edit-discount.php:117
-msgid "The date \""
-msgstr "A dátum \""
+msgstr "Egy vagy több érvényességi időszak érvénytelen vagy átfedő dátumokat tartalmaz."
 
 #: includes/base/admin/discounts/views/view-edit-discount.php:135
+msgid "The date \""
+msgstr "A dátum „"
+
+#: includes/base/admin/discounts/views/view-edit-discount.php:161
+msgid ""
+"Optional. The discount name displayed in the pricing table. If empty, the "
+"discount title will be used."
+msgstr "Opcionális. A kedvezmény neve jelenik meg az árlistában. Ha üres, a kedvezmény címe jelenik meg."
+
+#: includes/base/admin/discounts/views/view-edit-discount.php:188
 msgid "Discount Description"
 msgstr "Kedvezmény leírása"
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:143
+#: includes/base/admin/discounts/views/view-edit-discount.php:196
 msgid ""
 "Optional. A description that will appear in the pricing table, under the "
 "discount's name."
@@ -707,40 +716,40 @@ msgstr ""
 "Opcionális. Egy leírás, amely az árazási táblázatban, a kedvezmény neve "
 "alatt jelenik meg."
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:169
+#: includes/base/admin/discounts/views/view-edit-discount.php:222
 msgid "Discount Type"
 msgstr "Kedvezmény típusa"
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:181
+#: includes/base/admin/discounts/views/view-edit-discount.php:234
 msgid "Discount Value"
 msgstr "Kedvezmény értéke"
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:194
+#: includes/base/admin/discounts/views/view-edit-discount.php:247
 msgid "Discount Conditions"
 msgstr "Kedvezmény feltételei"
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:207
+#: includes/base/admin/discounts/views/view-edit-discount.php:260
 msgid "or"
 msgstr "vagy"
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:213
+#: includes/base/admin/discounts/views/view-edit-discount.php:266
 msgid "add rule group"
 msgstr "szabálycsoport hozzáadása"
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:228
+#: includes/base/admin/discounts/views/view-edit-discount.php:281
 msgid "Apply Discount to"
 msgstr "Kedvezmény alkalmazása"
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:250
+#: includes/base/admin/discounts/views/view-edit-discount.php:303
 msgid "Per Booking - Apply the discount only once"
 msgstr "Foglalásonként - A kedvezményt csak egyszer alkalmazza"
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:251
+#: includes/base/admin/discounts/views/view-edit-discount.php:304
 msgid "Per Day - Apply the discount multiplied by the number of days booked"
 msgstr ""
 "Naponta - A kedvezményt a lefoglalt napok számával megszorozva alkalmazza"
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:255
+#: includes/base/admin/discounts/views/view-edit-discount.php:308
 msgid ""
 "Select how to apply the discount. Once per booking or multiplied by the "
 "number of days booked."
@@ -748,19 +757,37 @@ msgstr ""
 "Válassza ki, hogyan alkalmazza a kedvezményt. Foglalásonként egyszer, vagy a"
 " lefoglalt napok számával megszorozva."
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:262
+#: includes/base/admin/discounts/views/view-edit-discount.php:315
+msgid "Exclude Weekdays"
+msgstr "Hétköznapok kizárása"
+
+#: includes/base/admin/discounts/views/view-edit-discount.php:340
+msgid "Optional. The discount will not be applied to the selected weekdays."
+msgstr "Opcionális. A kedvezmény nem vonatkozik a kijelölt hétköznapokra."
+
+#: includes/base/admin/discounts/views/view-edit-discount.php:348
+msgid "Multiplication"
+msgstr "Szorzás"
+
+#: includes/base/admin/discounts/views/view-edit-discount.php:365
+msgid ""
+"Multiply the discount by the value of a form field. This will only work when"
+" making bookings using the form that the selected field belongs to."
+msgstr "Szorozza meg a kedvezményt egy űrlapmező értékével. Ez csak akkor működik, ha a foglalás a kijelölt mezőt tartalmazó űrlappal történik."
+
+#: includes/base/admin/discounts/views/view-edit-discount.php:372
 msgid "Visibility"
 msgstr "Láthatóság"
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:267
+#: includes/base/admin/discounts/views/view-edit-discount.php:377
 msgid "Show Discount"
 msgstr "Kedvezmény megjelenítése"
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:268
+#: includes/base/admin/discounts/views/view-edit-discount.php:378
 msgid "Hide Discount, subtract amount from Calendar Price"
 msgstr "Kedvezmény elrejtése, az összeg levonása a naptár árából"
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:272
+#: includes/base/admin/discounts/views/view-edit-discount.php:382
 msgid ""
 "Chose whether to show the discount in the pricing table, or hide the "
 "discount while subtracting the discount value from the Calendar Price (the "
@@ -770,7 +797,7 @@ msgstr ""
 "rejtse el a kedvezményt, miközben a kedvezmény értékét levonja a naptár "
 "árából (a napi vagy éjszakai árból)."
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:290
+#: includes/base/admin/discounts/views/view-edit-discount.php:400
 msgid ""
 "Select the calendars the discount applies to. If no calendars are selected, "
 "the discount will be applied to all calendars."
@@ -778,11 +805,31 @@ msgstr ""
 "Válassza ki, mely naptárakra vonatkozik a kedvezmény. Ha nincs kiválasztva "
 "naptár, a kedvezmény minden naptárra érvényes."
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:317
+#: includes/base/admin/discounts/views/view-edit-discount.php:427
 msgid "Optional. The period in which the discount is valid."
 msgstr "Opcionális. Az az időszak, amelyben a kedvezmény érvényes."
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:336
+#: includes/base/admin/discounts/views/view-edit-discount.php:434
+msgid "Partial Discount Application"
+msgstr "A kedvezmény részleges alkalmazása"
+
+#: includes/base/admin/discounts/views/view-edit-discount.php:439
+msgid ""
+"Yes - Apply discount only for the dates overlapping the Validity Period."
+msgstr "Igen – A kedvezmény alkalmazása csak az érvényességi időszakkal átfedő dátumokra."
+
+#: includes/base/admin/discounts/views/view-edit-discount.php:440
+msgid "No - Apply discount for the entire date selection."
+msgstr "Nem – A kedvezmény alkalmazása a teljes dátumkijelölésre."
+
+#: includes/base/admin/discounts/views/view-edit-discount.php:444
+msgid ""
+"Only works if a Validity Period is set. Changes the way the discount is "
+"applied in case of a partial overlap between the date selection and the "
+"Validity Period."
+msgstr "Csak akkor működik, ha érvényességi időszak van beállítva. Részleges átfedés esetén módosítja a kedvezmény alkalmazását a kijelölt dátumok és az érvényességi időszak között."
+
+#: includes/base/admin/discounts/views/view-edit-discount.php:463
 msgid ""
 "Choose to apply the discount only if the start date is contained in the "
 "Validity Period, or the entire date selection is contained in the Validity "
@@ -792,24 +839,37 @@ msgstr ""
 "dátum az érvényességi időszakon belül van, vagy ha a teljes dátumtartomány "
 "az érvényességi időszakon belül van."
 
-#: includes/base/admin/discounts/views/view-edit-discount.php:346
+#: includes/base/admin/discounts/views/view-edit-discount.php:482
+msgid ""
+"Optional. The dates in which the discount is valid. Use this if you want to "
+"restrict the discount to be applied only in a certain period, regardless of "
+"the booking dates selected."
+msgstr "Opcionális. Azok a dátumok, amikor a kedvezmény érvényes. Ezzel korlátozhatja a kedvezmény alkalmazását egy adott időszakra, a kiválasztott foglalási dátumoktól függetlenül."
+
+#: includes/base/admin/discounts/views/view-edit-discount.php:496
+msgid ""
+"Set an application order when combined with other discounts. Default value "
+"is 0. Lower numbers have higher priority."
+msgstr "Állítsa be az alkalmazási sorrendet, ha a kedvezményt más kedvezményekkel együtt használja. Az alapértelmezett érték 0. Az alacsonyabb számok magasabb prioritást élveznek."
+
+#: includes/base/admin/discounts/views/view-edit-discount.php:506
 msgid "Save Discount"
 msgstr "Kedvezmény mentése"
 
-#: includes/base/coupons/functions-coupons.php:531
-#: includes/base/coupons/functions-coupons.php:553
+#: includes/base/coupons/functions-coupons.php:551
+#: includes/base/coupons/functions-coupons.php:573
 msgid "Apply Code"
 msgstr "Kód alkalmazása"
 
-#: includes/base/coupons/functions-coupons.php:532
+#: includes/base/coupons/functions-coupons.php:552
 msgid "Invalid Coupon Code"
 msgstr "Érvénytelen kuponkód"
 
-#: includes/base/coupons/functions-coupons.php:550
+#: includes/base/coupons/functions-coupons.php:570
 msgid "Coupon Codes"
 msgstr "Kuponkódok"
 
-#: includes/base/coupons/functions-coupons.php:556
+#: includes/base/coupons/functions-coupons.php:576
 msgid "Invalid Code"
 msgstr "Érvénytelen kód"
 
@@ -817,6 +877,4 @@ msgstr "Érvénytelen kód"
 msgid ""
 "The <strong>Coupons & Discounts</strong> Add-on requires WP Booking System "
 "version "
-msgstr ""
-"A <strong>Coupons & Discounts</strong> Add-on a WP Booking System verzióját "
-"igényli "
+msgstr "A <strong>Coupons & Discounts</strong> kiegészítő a WP Booking System verzióját igényli "

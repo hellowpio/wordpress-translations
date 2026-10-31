@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: MainWP Jetpack Protect Extension 5.0.4\n"
+"Project-Id-Version: MainWP Jetpack Protect Extension 5.1\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:49:29+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: MainWP Jetpack Protect Extension\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 5.0.4\n"
+"X-Plugin-Version: 5.1\n"
 
 #. Plugin Name of the plugin
 #: mainwp-jetpack-protect-extension.php
@@ -37,22 +37,61 @@ msgid ""
 "MainWP Jetpack Protect Extension uses the Jetpack Protect plugin to bring "
 "you information about vulnerable plugins and themes on your Child Sites so "
 "you can act accordingly."
-msgstr ""
-"A MainWP Jetpack Protect kiterjesztés a Jetpack Protect bővítményt "
-"használja, hogy információt adjon a gyermek webhelyeken található sérülékeny"
-" bővítményekről és sablonokról, így ennek megfelelően cselekedhet."
+msgstr "A MainWP Jetpack Protect kiterjesztés a Jetpack Protect bővítményt használja, hogy információt adjon a gyermekwebhelyeken található sérülékeny bővítményekről és sablonokról, így ennek megfelelően cselekedhet."
 
 #. Author of the plugin
 #: mainwp-jetpack-protect-extension.php
 msgid "MainWP"
 msgstr "MainWP"
 
+#: class/class-mainwp-jetpack-protect-abilities.php:36
+msgid "MainWP Jetpack Protect"
+msgstr "MainWP Jetpack Protect"
+
+#: class/class-mainwp-jetpack-protect-abilities.php:37
+msgid "Read stored Jetpack Protect flags without updating child sites."
+msgstr "A tárolt Jetpack Protect-jelzők beolvasása a gyermekwebhelyek frissítése nélkül."
+
+#: class/class-mainwp-jetpack-protect-abilities.php:108
+msgid "List Jetpack Protect Sites"
+msgstr "Jetpack Protect-webhelyek listázása"
+
+#: class/class-mainwp-jetpack-protect-abilities.php:108
+msgid "Get Jetpack Protect Site Scan"
+msgstr "Jetpack Protect-webhely vizsgálatának lekérése"
+
+#: class/class-mainwp-jetpack-protect-abilities.php:109
+msgid ""
+"Read stored Jetpack Protect summary flags and counts for accessible sites. "
+"Does not sync or start scans."
+msgstr "A hozzáférhető webhelyek tárolt Jetpack Protect-összefoglaló jelzőinek és számainak beolvasása. Nem végez szinkronizálást és nem indít vizsgálatokat."
+
+#: class/class-mainwp-jetpack-protect-abilities.php:109
+msgid ""
+"Read the latest stored scan with at most 100 vulnerability summaries. "
+"Excludes source URLs, server paths and private account data."
+msgstr "A legutóbbi tárolt vizsgálat beolvasása, legfeljebb 100 sebezhetőségi összefoglalóval. Nem tartalmazza a forrás-URL-eket, a kiszolgáló elérési útvonalait és a fiók privát adatait."
+
+#: class/class-mainwp-jetpack-protect-abilities.php:543
+msgid "Unable to read stored Jetpack Protect results."
+msgstr "Nem sikerült beolvasni a tárolt Jetpack Protect-eredményeket."
+
+#: class/class-mainwp-jetpack-protect-abilities.php:548
+msgid "You do not have permission to access this ability."
+msgstr "Nincs jogosultsága ennek a képességnek az eléréséhez."
+
+#. translators: %d: Dashboard site ID.
+#: class/class-mainwp-jetpack-protect-abilities.php:559
+#, php-format
+msgid "No site found with ID %d."
+msgstr "Nem található webhely ezzel az ID-val: %d."
+
 #: class/class-mainwp-jetpack-protect-overview.php:83
 #: class/class-mainwp-jetpack-protect-overview.php:265
 #: class/class-mainwp-jetpack-protect-overview.php:1088
-#: mainwp-jetpack-protect-extension.php:139
-#: mainwp-jetpack-protect-extension.php:267
-#: mainwp-jetpack-protect-extension.php:284
+#: mainwp-jetpack-protect-extension.php:140
+#: mainwp-jetpack-protect-extension.php:274
+#: mainwp-jetpack-protect-extension.php:291
 msgid "Jetpack Protect"
 msgstr "Jetpack Protect"
 
@@ -130,9 +169,7 @@ msgstr "Jetpack Protect nem észlelhető"
 #: class/class-mainwp-jetpack-protect-overview.php:737
 msgid ""
 "First install and activate the Jetpack Protect plugin on the child site."
-msgstr ""
-"Először telepítse és aktiválja a Jetpack Protect bővítményt a gyermek "
-"webhelyen."
+msgstr "Először telepítse és kapcsolja be a Jetpack Protect bővítményt a gyermekwebhelyen."
 
 #: class/class-mainwp-jetpack-protect-overview.php:445
 #: class/class-mainwp-jetpack-protect-overview.php:723
@@ -151,7 +188,7 @@ msgstr "Sérülékenységek száma."
 
 #: class/class-mainwp-jetpack-protect-overview.php:471
 msgid "Click to see details"
-msgstr "Kattintson a részletekhez"
+msgstr "Kattintson a részletek megtekintéséhez"
 
 #: class/class-mainwp-jetpack-protect-overview.php:474
 #: class/class-mainwp-jetpack-protect-overview.php:490
@@ -165,7 +202,7 @@ msgstr "Kattintson a részletekhez"
 #: class/class-mainwp-jetpack-protect-plugin.php:450
 #: class/class-mainwp-jetpack-protect-plugin.php:464
 msgid "No data available for the site."
-msgstr "Nem érhető el adat a webhelyhez."
+msgstr "A webhely adatai nem érhetők el."
 
 #: class/class-mainwp-jetpack-protect-overview.php:620
 msgid "Jetpack Protect Overview"
@@ -184,27 +221,27 @@ msgstr ""
 #: class/class-mainwp-jetpack-protect-overview.php:847
 #: class/class-mainwp-jetpack-protect.php:513
 msgid "Plugin threat"
-msgstr "Bővítmény fenyegetés"
+msgstr "Bővítményt érintő fenyegetés"
 
 #: class/class-mainwp-jetpack-protect-overview.php:849
 #: class/class-mainwp-jetpack-protect.php:515
 msgid "Theme threat"
-msgstr "Sablon fenyegetés"
+msgstr "Sablont érintő fenyegetés"
 
 #: class/class-mainwp-jetpack-protect-overview.php:851
 #: class/class-mainwp-jetpack-protect.php:517
 msgid "File threat"
-msgstr "Fájl fenyegetés"
+msgstr "Fájlt érintő fenyegetés"
 
 #: class/class-mainwp-jetpack-protect-overview.php:853
 #: class/class-mainwp-jetpack-protect.php:519
 msgid "Database threat"
-msgstr "Adatbázis fenyegetés"
+msgstr "Adatbázist érintő fenyegetés"
 
 #: class/class-mainwp-jetpack-protect-overview.php:855
 #: class/class-mainwp-jetpack-protect.php:521
 msgid "WP Core threat"
-msgstr "WP Core fenyegetés"
+msgstr "WordPress-alaprendszert érintő fenyegetés"
 
 #: class/class-mainwp-jetpack-protect-overview.php:907
 #: class/class-mainwp-jetpack-protect.php:572
@@ -272,10 +309,7 @@ msgid ""
 "Jetpack Protect automatically scans your child sites once per day. This "
 "means that after resolving vulnerability issues, it can take up to 24 hours "
 "before the extension reflects changes."
-msgstr ""
-"A Jetpack Protect naponta egyszer automatikusan átvizsgálja gyermek "
-"webhelyeit. Ez azt jelenti, hogy a sérülékenységek megoldása után akár 24 "
-"órát is igénybe vehet, mire a kiterjesztés tükrözi a változásokat."
+msgstr "A Jetpack Protect naponta egyszer automatikusan átvizsgálja az Ön gyermekwebhelyeit. Ez azt jelenti, hogy a sérülékenységek elhárítása után akár 24 órát is igénybe vehet, mire a változások megjelennek a kiterjesztésben."
 
 #: class/class-mainwp-jetpack-protect-overview.php:1047
 msgid ""
@@ -290,7 +324,7 @@ msgstr ""
 #: class/class-mainwp-jetpack-protect-overview.php:1047
 #: class/class-mainwp-jetpack-protect-plugin.php:760
 msgid "Reset Page"
-msgstr "Oldal visszaállítása"
+msgstr "Oldal alaphelyzetbe állítása"
 
 #: class/class-mainwp-jetpack-protect-overview.php:1050
 #: class/class-mainwp-jetpack-protect-plugin.php:763
@@ -303,7 +337,7 @@ msgstr "Jetpack Protect részletei"
 
 #: class/class-mainwp-jetpack-protect-overview.php:1127
 msgid "Widgets columns"
-msgstr "Widgetek oszlopai"
+msgstr "Widgetek oszlopainak száma"
 
 #: class/class-mainwp-jetpack-protect-overview.php:1131
 msgid "Show widgets in 2 columns"
@@ -334,19 +368,19 @@ msgstr "Webhely"
 #: class/class-mainwp-jetpack-protect-plugin.php:324
 #: class/class-mainwp-jetpack-protect.php:173
 msgid "WordPress core threats"
-msgstr "WordPress alaprendszer fenyegetései"
+msgstr "WordPress-alaprendszert érintő fenyegetések"
 
 #: class/class-mainwp-jetpack-protect-plugin.php:258
 #: class/class-mainwp-jetpack-protect-plugin.php:325
 #: class/class-mainwp-jetpack-protect.php:174
 msgid "Plugins threats"
-msgstr "Bővítmények fenyegetései"
+msgstr "Bővítményeket érintő fenyegetések"
 
 #: class/class-mainwp-jetpack-protect-plugin.php:259
 #: class/class-mainwp-jetpack-protect-plugin.php:326
 #: class/class-mainwp-jetpack-protect.php:175
 msgid "Themes threats"
-msgstr "Sablonok fenyegetései"
+msgstr "Sablonokat érintő fenyegetések"
 
 #: class/class-mainwp-jetpack-protect-plugin.php:301
 #: class/class-mainwp-jetpack-protect-plugin.php:323
@@ -379,25 +413,25 @@ msgstr "Elrejtés"
 #: class/class-mainwp-jetpack-protect-plugin.php:327
 #: class/class-mainwp-jetpack-protect.php:176
 msgid "Files threats"
-msgstr "Fájlok fenyegetései"
+msgstr "Fájlokat érintő fenyegetések"
 
 #: class/class-mainwp-jetpack-protect-plugin.php:328
 #: class/class-mainwp-jetpack-protect.php:177
 msgid "Database threats"
-msgstr "Adatbázis fenyegetései"
+msgstr "Adatbázisokat érintő fenyegetések"
 
 #: class/class-mainwp-jetpack-protect-plugin.php:330
 msgid "Jetpack Connection"
-msgstr "Jetpack kapcsolat"
+msgstr "Jetpack-kapcsolat"
 
 #: class/class-mainwp-jetpack-protect-plugin.php:375
 #: class/class-mainwp-jetpack-protect.php:247
 msgid "Jetpack Scan required."
-msgstr "Jetpack vizsgálat szükséges."
+msgstr "Jetpack Scan szükséges."
 
 #: class/class-mainwp-jetpack-protect-plugin.php:382
 msgid "Click to jump to the site Overview page"
-msgstr "Kattintson a webhely Áttekintés oldalára ugráshoz"
+msgstr "Kattintson a webhely áttekintő oldalára ugráshoz"
 
 #: class/class-mainwp-jetpack-protect-plugin.php:383
 msgid "Jump to the site WP Admin"
@@ -409,25 +443,25 @@ msgstr "Ugrás a webhely kezdőlapjára"
 
 #: class/class-mainwp-jetpack-protect-plugin.php:388
 msgid "Number of WP vulnerabilities. Click to see details."
-msgstr "WP sérülékenységek száma. Kattintson a részletekhez."
+msgstr "WP-sérülékenységek száma. Kattintson a részletek megtekintéséhez."
 
 #: class/class-mainwp-jetpack-protect-plugin.php:399
 #: class/class-mainwp-jetpack-protect-plugin.php:536
 msgid "Number of Plugins vulnerabilities. Click to see details."
-msgstr "Bővítmények sérülékenységeinek száma. Kattintson a részletekhez."
+msgstr "Bővítmények sérülékenységeinek száma. Kattintson a részletek megtekintéséhez."
 
 #: class/class-mainwp-jetpack-protect-plugin.php:410
 #: class/class-mainwp-jetpack-protect-plugin.php:543
 msgid "Number of Themes vulnerabilities. Click to see details."
-msgstr "Sablonok sérülékenységeinek száma. Kattintson a részletekhez."
+msgstr "Sablonok sérülékenységeinek száma. Kattintson a részletek megtekintéséhez."
 
 #: class/class-mainwp-jetpack-protect-plugin.php:424
 msgid "Number of Files vulnerabilities. Click to see details."
-msgstr "Fájlok sérülékenységeinek száma. Kattintson a részletekhez."
+msgstr "Fájlok sérülékenységeinek száma. Kattintson a részletek megtekintéséhez."
 
 #: class/class-mainwp-jetpack-protect-plugin.php:441
 msgid "Number of Database vulnerabilities. Click to see details."
-msgstr "Adatbázis sérülékenységeinek száma. Kattintson a részletekhez."
+msgstr "Adatbázis-sérülékenységek száma. Kattintson a részletek megtekintéséhez."
 
 #: class/class-mainwp-jetpack-protect-plugin.php:471
 msgid "Disconnected"
@@ -481,7 +515,7 @@ msgid "Disconnect Jetpack Protect"
 msgstr "Jetpack Protect leválasztása"
 
 #: class/class-mainwp-jetpack-protect-plugin.php:495
-#: mainwp-jetpack-protect-extension.php:125
+#: mainwp-jetpack-protect-extension.php:126
 msgid "Connect Jetpack Protect"
 msgstr "Jetpack Protect csatlakoztatása"
 
@@ -489,7 +523,7 @@ msgstr "Jetpack Protect csatlakoztatása"
 #: class/class-mainwp-jetpack-protect.php:255
 #: class/class-mainwp-jetpack-protect.php:459
 msgid "Click to jump to the site Jetpack Protect overview page"
-msgstr "Kattintson a webhely Jetpack Protect áttekintés oldalára ugráshoz"
+msgstr "Kattintson a webhely Jetpack Protect áttekintő oldalára ugráshoz"
 
 #: class/class-mainwp-jetpack-protect-plugin.php:525
 msgid "Latest results as of: "
@@ -497,7 +531,7 @@ msgstr "Legutóbbi eredmények időpontja: "
 
 #: class/class-mainwp-jetpack-protect-plugin.php:529
 msgid "Number of WP core vulnerabilities. Click to see details."
-msgstr "WP Core sérülékenységek száma. Kattintson a részletekhez."
+msgstr "A WP-alaprendszer sérülékenységeinek száma. Kattintson a részletek megtekintéséhez."
 
 #: class/class-mainwp-jetpack-protect-plugin.php:582
 msgid "Bulk Actions"
@@ -570,10 +604,7 @@ msgstr "Sérülékenységek"
 msgid ""
 "The Jetpack Protect Vulnerabilities page allows you to see all your websites"
 " where the Jetpack Protect plugin completed at least one scan."
-msgstr ""
-"A Jetpack Protect Sérülékenységek oldal megjeleníti az összes olyan "
-"webhelyét, ahol a Jetpack Protect bővítmény legalább egy vizsgálatot "
-"lefuttatott."
+msgstr "A Jetpack Protect sérülékenységi oldala lehetővé teszi, hogy megtekintse az összes olyan webhelyét, ahol a Jetpack Protect bővítmény legalább egy vizsgálatot befejezett."
 
 #: class/class-mainwp-jetpack-protect.php:158
 msgid ""
@@ -581,11 +612,7 @@ msgid ""
 " section. The newly appeared section will show you the breakdown of all "
 "detected issues. Here, you can also filter vulnerability details by clicking"
 " the number of detected problems in the list of plugins and themes."
-msgstr ""
-"Egy adott webhely részleteinek megtekintéséhez kattintson a webhely sorára a"
-" részletek szakasz váltásához. Az ekkor megjelenő szakasz az összes észlelt "
-"probléma bontását mutatja. Itt a bővítmények és sablonok listájában az "
-"észlelt problémák számára kattintva szűrheti a sérülékenységek részleteit."
+msgstr "Egy adott webhely részleteinek megtekintéséhez kattintson a webhely sorára a részletek szakaszának megjelenítéséhez vagy elrejtéséhez. Az ekkor megjelenő szakasz az összes észlelt probléma bontását mutatja. Itt a bővítmények és sablonok listájában az észlelt problémák darabszámára kattintva szűrheti a sérülékenységek részleteit."
 
 #: class/class-mainwp-jetpack-protect.php:172
 msgid "Last Scan"
@@ -593,12 +620,10 @@ msgstr "Utolsó vizsgálat"
 
 #: class/class-mainwp-jetpack-protect.php:463
 msgid "Jetpack Protect vulnerability data not found for the site."
-msgstr "Nem találhatók Jetpack Protect sebezhetőségi adatok a webhelyhez."
+msgstr "A webhelyhez tartozó Jetpack Protect-sérülékenységi adatok nem találhatók."
 
 #: class/class-mainwp-jetpack-protect.php:464
 msgid ""
 "Install, activate and connect the Jetpack Protect plugin on the child site "
 "to so start scanning it."
-msgstr ""
-"Telepítse, aktiválja és csatlakoztassa a Jetpack Protect bővítményt a "
-"gyermek webhelyen, hogy megkezdje annak vizsgálatát."
+msgstr "Telepítse, kapcsolja be és csatlakoztassa a Jetpack Protect bővítményt a gyermek webhelyen, hogy megkezdhesse a webhely vizsgálatát."

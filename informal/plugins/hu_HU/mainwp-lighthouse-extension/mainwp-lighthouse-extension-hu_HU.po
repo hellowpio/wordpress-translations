@@ -1,0 +1,908 @@
+# Copyright (C) 2026 MainWP
+# This file is distributed under the same license as the MainWP Lighthouse Extension plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: MainWP Lighthouse Extension 5.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mainwp-lighthouse-extension\n"
+"POT-Creation-Date: 2026-10-31T10:20:02+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: mainwp-lighthouse-extension\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: MainWP Lighthouse Extension\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 5.4\n"
+
+#. Plugin Name of the plugin
+#: mainwp-lighthouse-extension.php
+msgid "MainWP Lighthouse Extension"
+msgstr "MainWP Lighthouse Extension"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: mainwp-lighthouse-extension.php
+msgid "https://mainwp.com"
+msgstr "https://mainwp.com"
+
+#. Description of the plugin
+#: mainwp-lighthouse-extension.php
+msgid ""
+"MainWP Lighthouse Add-on is used for measuring the quality of your websites."
+" It uses the Google PageSpeed Insights API to audit performance, "
+"accessibility and search engine optimization of your WordPress sites."
+msgstr "A MainWP Lighthouse-kiegészítő a webhelyeid minőségének mérésére szolgál. A Google PageSpeed Insights API-t használja a WordPress-webhelyeid teljesítményének, akadálymentességének és keresőoptimalizálásának ellenőrzésére."
+
+#. Author of the plugin
+#: mainwp-lighthouse-extension.php
+msgid "MainWP"
+msgstr "MainWP"
+
+#: class/class-mainwp-lighthouse-abilities.php:58
+msgid "MainWP Lighthouse"
+msgstr "MainWP Lighthouse"
+
+#: class/class-mainwp-lighthouse-abilities.php:59
+msgid "Read stored Lighthouse scores and audit status."
+msgstr "A tárolt Lighthouse-pontszámok és az ellenőrzés állapotának beolvasása."
+
+#: class/class-mainwp-lighthouse-abilities.php:147
+msgid "Get Lighthouse Overview"
+msgstr "Lighthouse-áttekintés lekérése"
+
+#: class/class-mainwp-lighthouse-abilities.php:148
+msgid ""
+"Read stored schedule settings, API key presence and the latest audit times "
+"for accessible tracked sites. Cron status describes the current request "
+"context. No audits run."
+msgstr "A tárolt időzítési beállítások, az API-kulcs megléte és a hozzáférhető, követett webhelyek legutóbbi ellenőrzési időpontjainak beolvasása. A cron állapota az aktuális kérés környezetét írja le. Nem futtat ellenőrzéseket."
+
+#: class/class-mainwp-lighthouse-abilities.php:154
+msgid "List Lighthouse Site Results"
+msgstr "Lighthouse-webhelyek eredményeinek listázása"
+
+#: class/class-mainwp-lighthouse-abilities.php:155
+msgid ""
+"Read a page of stored desktop and mobile scores for accessible tracked "
+"sites. Missing scores and audit times are null. No audits run."
+msgstr "A hozzáférhető, követett webhelyek tárolt asztali és mobil pontszámaiból egy oldal beolvasása. A hiányzó pontszámok és ellenőrzési időpontok értéke null. Nem futtat ellenőrzéseket."
+
+#: class/class-mainwp-lighthouse-abilities.php:212
+msgid "You do not have permission to perform this action."
+msgstr "Nincs jogosultságod a művelet végrehajtásához."
+
+#: class/class-mainwp-lighthouse-abilities.php:216
+msgid "You do not have permission to use Lighthouse."
+msgstr "Nincs jogosultságod a Lighthouse használatához."
+
+#: class/class-mainwp-lighthouse-abilities.php:273
+#: includes/rest-api/version1/class-mainwp-lighthouse-rest-api-v1.php:219
+msgid "Site not found."
+msgstr "A webhely nem található."
+
+#: class/class-mainwp-lighthouse-abilities.php:309
+msgid "Use positive integer page, per_page (up to 100) and site_id values."
+msgstr "Adj meg pozitív egész számot a page, per_page (legfeljebb 100) és site_id értékeként."
+
+#: class/class-mainwp-lighthouse-admin.php:194
+#: class/class-mainwp-lighthouse-admin.php:210
+#: class/class-mainwp-lighthouse-admin.php:1105
+#: class/class-mainwp-lighthouse-dashboard.php:498
+msgid "Desktop"
+msgstr "Asztali gép"
+
+#: class/class-mainwp-lighthouse-admin.php:202
+#: class/class-mainwp-lighthouse-admin.php:215
+#: class/class-mainwp-lighthouse-admin.php:1106
+#: class/class-mainwp-lighthouse-dashboard.php:722
+msgid "Mobile"
+msgstr "Mobil"
+
+#: class/class-mainwp-lighthouse-admin.php:317
+msgid "Undefined site id. Please, try again."
+msgstr "Nincs megadva a webhely ID-ja. Próbáld újra."
+
+#: class/class-mainwp-lighthouse-admin.php:432
+#: class/class-mainwp-lighthouse-admin.php:561
+#: class/class-mainwp-lighthouse-admin.php:1800
+#: class/class-mainwp-lighthouse-dashboard.php:362
+#: class/class-mainwp-lighthouse-hooks.php:130
+#: mainwp-lighthouse-extension.php:142
+msgid "Lighthouse"
+msgstr "Lighthouse"
+
+#: class/class-mainwp-lighthouse-admin.php:433
+msgid "See the Lighthouse audit data for the best and worst performing sites."
+msgstr "Nézd meg a legjobban és legrosszabbul teljesítő webhelyek Lighthouse-auditadatait."
+
+#: class/class-mainwp-lighthouse-admin.php:443
+#: class/class-mainwp-lighthouse-admin.php:570
+msgid "No Lighthouse data available yet"
+msgstr "Még nem érhetők el Lighthouse-adatok"
+
+#: class/class-mainwp-lighthouse-admin.php:444
+#: class/class-mainwp-lighthouse-admin.php:571
+msgid ""
+"No Lighthouse data available yet. Run an audit to see performance metrics."
+msgstr "Még nem érhetők el Lighthouse-adatok. Futtass egy auditot a teljesítménymutatók megtekintéséhez."
+
+#: class/class-mainwp-lighthouse-admin.php:452
+#: class/class-mainwp-lighthouse-dashboard.php:1184
+#: class/class-mainwp-lighthouse-dashboard.php:1546
+msgid "Site"
+msgstr "Webhely"
+
+#: class/class-mainwp-lighthouse-admin.php:453
+msgid "Avg. Score"
+msgstr "Átl. pontszám"
+
+#: class/class-mainwp-lighthouse-admin.php:458
+msgid "Top Performing Sites"
+msgstr "Legjobban teljesítő webhelyek"
+
+#: class/class-mainwp-lighthouse-admin.php:470
+msgid "Needs Improvements"
+msgstr "Fejlesztést igénylő webhelyek"
+
+#: class/class-mainwp-lighthouse-admin.php:489
+#: class/class-mainwp-lighthouse-admin.php:688
+msgid "Lighthouse Dashboard"
+msgstr "Lighthouse-vezérlőpult"
+
+#: class/class-mainwp-lighthouse-admin.php:562
+msgid "Performance metrics. "
+msgstr "Teljesítménymutatók. "
+
+#: class/class-mainwp-lighthouse-admin.php:579
+msgid "Desktop Scores as of "
+msgstr "Asztali pontszámok ekkor "
+
+#: class/class-mainwp-lighthouse-admin.php:582
+#: class/class-mainwp-lighthouse-admin.php:627
+#: class/class-mainwp-lighthouse-dashboard.php:1547
+#: class/class-mainwp-lighthouse-utility.php:518
+msgid "Performance"
+msgstr "Teljesítmény"
+
+#: class/class-mainwp-lighthouse-admin.php:592
+#: class/class-mainwp-lighthouse-admin.php:637
+#: class/class-mainwp-lighthouse-dashboard.php:1548
+#: class/class-mainwp-lighthouse-utility.php:519
+msgid "Accessibility"
+msgstr "Akadálymentesség"
+
+#: class/class-mainwp-lighthouse-admin.php:602
+#: class/class-mainwp-lighthouse-admin.php:647
+#: class/class-mainwp-lighthouse-dashboard.php:1549
+#: class/class-mainwp-lighthouse-utility.php:520
+msgid "Best Practices"
+msgstr "Legjobb gyakorlatok"
+
+#: class/class-mainwp-lighthouse-admin.php:612
+#: class/class-mainwp-lighthouse-admin.php:657
+#: class/class-mainwp-lighthouse-utility.php:521
+msgid "SEO"
+msgstr "SEO"
+
+#: class/class-mainwp-lighthouse-admin.php:624
+msgid "Mobile Scores as of "
+msgstr "Mobil pontszámok ekkor "
+
+#: class/class-mainwp-lighthouse-admin.php:685
+msgid "Detailed Report"
+msgstr "Részletes jelentés"
+
+#: class/class-mainwp-lighthouse-admin.php:725
+msgid "Invalid request. Please, try again."
+msgstr "Érvénytelen kérés. Kérlek, próbáld újra."
+
+#: class/class-mainwp-lighthouse-admin.php:964
+#: class/class-mainwp-lighthouse-admin.php:1164
+#, php-format
+msgid ""
+"Manage the Lighthouse settings. For detailed information, review %1$shelp "
+"documentation%2$s."
+msgstr "Kezeld a Lighthouse-beállításait. Részletes információkért nézd át a %1$ssúgódokumentációt%2$s."
+
+#: class/class-mainwp-lighthouse-admin.php:972
+msgid "Individual Site Lighthouse Settings"
+msgstr "Az egyes webhelyek Lighthouse-beállításai"
+
+#: class/class-mainwp-lighthouse-admin.php:973
+msgid ""
+"Allow site-specific Lighthouse settings to override the global defaults."
+msgstr "Engedélyezd, hogy a webhelyspecifikus Lighthouse-beállítások felülbírálják az alapértelmezett globális beállításokat."
+
+#: class/class-mainwp-lighthouse-admin.php:978
+msgid "Overwrite general settings"
+msgstr "Általános beállítások felülírása"
+
+#: class/class-mainwp-lighthouse-admin.php:1107
+msgid "Both"
+msgstr "Mindkettő"
+
+#: class/class-mainwp-lighthouse-admin.php:1113
+msgid "1 Minute"
+msgstr "1 perc"
+
+#: class/class-mainwp-lighthouse-admin.php:1114
+msgid "5 Minutes"
+msgstr "5 perc"
+
+#: class/class-mainwp-lighthouse-admin.php:1115
+msgid "10 Minutes"
+msgstr "10 perc"
+
+#: class/class-mainwp-lighthouse-admin.php:1116
+msgid "15 Minutes"
+msgstr "15 perc"
+
+#: class/class-mainwp-lighthouse-admin.php:1117
+msgid "30 Minutes"
+msgstr "30 perc"
+
+#: class/class-mainwp-lighthouse-admin.php:1121
+msgid "No Limit"
+msgstr "Nincs korlátozás"
+
+#: class/class-mainwp-lighthouse-admin.php:1122
+msgid "60 Seconds"
+msgstr "60 másodperc"
+
+#: class/class-mainwp-lighthouse-admin.php:1123
+msgid "90 Seconds"
+msgstr "90 másodperc"
+
+#: class/class-mainwp-lighthouse-admin.php:1124
+msgid "120 Seconds"
+msgstr "120 másodperc"
+
+#: class/class-mainwp-lighthouse-admin.php:1125
+msgid "150 Seconds"
+msgstr "150 másodperc"
+
+#: class/class-mainwp-lighthouse-admin.php:1126
+msgid "180 Seconds"
+msgstr "180 másodperc"
+
+#: class/class-mainwp-lighthouse-admin.php:1130
+msgid "0 Seconds"
+msgstr "0 másodperc"
+
+#: class/class-mainwp-lighthouse-admin.php:1131
+msgid "1 Seconds"
+msgstr "1 másodperc"
+
+#: class/class-mainwp-lighthouse-admin.php:1132
+msgid "2 Seconds"
+msgstr "2 másodperc"
+
+#: class/class-mainwp-lighthouse-admin.php:1133
+msgid "3 Seconds"
+msgstr "3 másodperc"
+
+#: class/class-mainwp-lighthouse-admin.php:1134
+msgid "4 Seconds"
+msgstr "4 másodperc"
+
+#: class/class-mainwp-lighthouse-admin.php:1135
+msgid "5 Seconds"
+msgstr "5 másodperc"
+
+#: class/class-mainwp-lighthouse-admin.php:1136
+msgid "10 Seconds"
+msgstr "10 másodperc"
+
+#: class/class-mainwp-lighthouse-admin.php:1148
+msgid "Settings saved successfully."
+msgstr "A beállítások sikeresen elmentve."
+
+#: class/class-mainwp-lighthouse-admin.php:1155
+msgid "An error occurred while saving settings. Please try again."
+msgstr "Hiba történt a beállítások mentésekor. Próbáld újra."
+
+#: class/class-mainwp-lighthouse-admin.php:1170
+msgid "Lighthouse Settings"
+msgstr "Lighthouse-beállítások"
+
+#: class/class-mainwp-lighthouse-admin.php:1171
+msgid "Configure how Lighthouse reports are generated and evaluated."
+msgstr "Állítsd be, hogyan készüljenek és legyenek kiértékelve a Lighthouse-jelentések."
+
+#: class/class-mainwp-lighthouse-admin.php:1177
+#, php-format
+msgid ""
+"If you do not have an API key, you can create a new one for free from the "
+"%1$sGoogle Cloud Platform%2$s. Read the %3$shelp documentation%4$s for "
+"additional information about creating an API key."
+msgstr "Ha nincs API-kulcsod, ingyenesen létrehozhatsz egy újat a %1$sGoogle Cloud Platformon%2$s. További információkért az API-kulcs létrehozásáról olvasd el a %3$ssúgódokumentációt%4$s."
+
+#: class/class-mainwp-lighthouse-admin.php:1182
+msgid "Google PageSpeed Insights API key"
+msgstr "Google PageSpeed Insights API-kulcs"
+
+#: class/class-mainwp-lighthouse-admin.php:1183
+msgid "Enter your Google PageSpeed Insigths API Key here."
+msgstr "Add meg itt a Google PageSpeed Insights API-kulcsodat."
+
+#: class/class-mainwp-lighthouse-admin.php:1189
+msgid "Language"
+msgstr "Nyelv"
+
+#: class/class-mainwp-lighthouse-admin.php:1190
+msgid "Select preferred language for the Lighthouse reports."
+msgstr "Válaszd ki a Lighthouse-jelentések kívánt nyelvét."
+
+#: class/class-mainwp-lighthouse-admin.php:1206
+msgid "Strategy"
+msgstr "Stratégia"
+
+#: class/class-mainwp-lighthouse-admin.php:1207
+msgid ""
+"Select if you want to get Desktop, Mobile or both strategy Lighthouse "
+"reports."
+msgstr "Válaszd ki, hogy asztali, mobil vagy mindkét stratégiára vonatkozó Lighthouse-jelentéseket szeretnél."
+
+#: class/class-mainwp-lighthouse-admin.php:1223
+msgid "Notifications threshold"
+msgstr "Értesítési küszöb"
+
+#: class/class-mainwp-lighthouse-admin.php:1224
+msgid "Set the treshold for notifications."
+msgstr "Állítsd be az értesítések küszöbértékét."
+
+#: class/class-mainwp-lighthouse-admin.php:1240
+msgid "Automated Audits"
+msgstr "Automatizált auditok"
+
+#: class/class-mainwp-lighthouse-admin.php:1241
+msgid "Schedule recurring Lighthouse checks for your connected sites."
+msgstr "Időzíts ismétlődő Lighthouse-ellenőrzéseket a csatlakoztatott webhelyeiden."
+
+#: class/class-mainwp-lighthouse-admin.php:1245
+msgid "Automatically audit sites"
+msgstr "Webhelyek automatikus auditálása"
+
+#: class/class-mainwp-lighthouse-admin.php:1246
+msgid "Enable if you want the extension to run audits automatically."
+msgstr "Kapcsold be, ha azt szeretnéd, hogy a bővítmény automatikusan lefuttassa az auditokat."
+
+#: class/class-mainwp-lighthouse-admin.php:1252
+msgid "Automated audit frequency"
+msgstr "Automatizált auditok gyakorisága"
+
+#: class/class-mainwp-lighthouse-admin.php:1253
+msgid "Select automated audits frequency."
+msgstr "Válaszd ki az automatizált auditok gyakoriságát."
+
+#: class/class-mainwp-lighthouse-admin.php:1275
+msgid "Advanced Settings"
+msgstr "Speciális beállítások"
+
+#: class/class-mainwp-lighthouse-admin.php:1276
+msgid "Fine-tune performance limits and request pacing for audits."
+msgstr "Finomhangold az ellenőrzések teljesítménykorlátait és a kérések ütemezését."
+
+#: class/class-mainwp-lighthouse-admin.php:1280
+msgid "Maximum execution time"
+msgstr "Maximális végrehajtási idő"
+
+#: class/class-mainwp-lighthouse-admin.php:1281
+msgid ""
+"The default value of 5 minutes should be fine for most sites. Increasing "
+"this value may help if your Lighthouse reports do not finish completely."
+msgstr "Az alapértelmezett, 5 perces érték a legtöbb webhely esetén megfelelő. Ennek az értéknek a növelése segíthet, ha a Lighthouse-jelentéseid nem futnak le teljesen."
+
+#: class/class-mainwp-lighthouse-admin.php:1297
+msgid "Maximum script run time"
+msgstr "Szkript maximális futási ideje"
+
+#: class/class-mainwp-lighthouse-admin.php:1298
+msgid ""
+"If your scans do not finish completely and changing the Maximum Execution "
+"Time does not help, increase this value until you find the maximum allowed "
+"runtime."
+msgstr "Ha a vizsgálatok nem fejeződnek be teljesen, és a maximális végrehajtási idő módosítása nem segít, növeld ezt az értéket, amíg meg nem találod a megengedett maximális futási időt."
+
+#: class/class-mainwp-lighthouse-admin.php:1314
+msgid "Throttling delay time"
+msgstr "Kérések közötti késleltetés"
+
+#: class/class-mainwp-lighthouse-admin.php:1315
+msgid ""
+"Increasing this value may slow down Lighthouse reporting, but may help "
+"provide more accurate reports on poorly performing web servers."
+msgstr "Ennek az értéknek a növelése lassíthatja a Lighthouse-jelentések készítését, de segíthet pontosabb jelentéseket adni gyengén teljesítő webszerverek esetén."
+
+#: class/class-mainwp-lighthouse-admin.php:1336
+#: class/class-mainwp-lighthouse-dashboard.php:371
+msgid "Save Settings"
+msgstr "Beállítások mentése"
+
+#: class/class-mainwp-lighthouse-admin.php:1357
+#: class/class-mainwp-lighthouse-core.php:345
+msgid "You must enter your Google API key in the extension settings."
+msgstr "Meg kell adnod a Google API-kulcsodat a bővítmény beállításaiban."
+
+#: class/class-mainwp-lighthouse-admin.php:1363
+msgid "The Google Pagespeed API Key you entered appears to be invalid."
+msgstr "A megadott Google Pagespeed API-kulcs érvénytelennek tűnik."
+
+#: class/class-mainwp-lighthouse-admin.php:1369
+msgid ""
+"The \"PageSpeed Insights API\" service is not enabled. To enable it, please "
+"visit the"
+msgstr "A „PageSpeed Insights API” szolgáltatás nincs bekapcsolva. A bekapcsolásához keresd fel a"
+
+#: class/class-mainwp-lighthouse-admin.php:1369
+#: class/class-mainwp-lighthouse-admin.php:1375
+msgid "Google API Console"
+msgstr "Google API Console"
+
+#: class/class-mainwp-lighthouse-admin.php:1375
+msgid ""
+"This referrer or IP address is restricted from using your API Key. To change"
+" your API Key restrictions, please visit the"
+msgstr "Ez a hivatkozó vagy IP-cím nem használhatja az API-kulcsodat. Az API-kulcs korlátozásainak módosításához keresd fel a"
+
+#: class/class-mainwp-lighthouse-admin.php:1381
+msgid ""
+"One or more URLs could not be reached by Lighthouse. Please reload the page "
+"and try again."
+msgstr "A Lighthouse nem érte el egy vagy több URL-t. Töltsd újra az oldalt, és próbáld meg újra."
+
+#: class/class-mainwp-lighthouse-admin.php:1387
+msgid "An error has been encountered while checking one or more URLs."
+msgstr "Hiba történt egy vagy több URL ellenőrzése közben."
+
+#: class/class-mainwp-lighthouse-admin.php:1388
+msgid "Possible causes:"
+msgstr "Lehetséges okok:"
+
+#: class/class-mainwp-lighthouse-admin.php:1390
+msgid ""
+"Daily API limit exceeded. <a href=\"https://code.google.com/apis/console\" "
+"target=\"_blank\">Check API usage</a>."
+msgstr "A napi API-korlát túllépve. <a href=\"https://code.google.com/apis/console\" target=\"_blank\">API-használat ellenőrzése</a>."
+
+#: class/class-mainwp-lighthouse-admin.php:1391
+msgid ""
+"API Key user limit exceeded. <a "
+"href=\"https://code.google.com/apis/console\" target=\"_blank\">Check API "
+"usage</a>."
+msgstr "API-kulcs felhasználói korlátja túllépve. <a href=\"https://code.google.com/apis/console\" target=\"_blank\">API-használat ellenőrzése</a>."
+
+#: class/class-mainwp-lighthouse-admin.php:1392
+msgid "The URL is not publicly accessible or is incorrect."
+msgstr "Az URL nem érhető el nyilvánosan, vagy helytelen."
+
+#: class/class-mainwp-lighthouse-admin.php:1399
+msgid ""
+"The last lighthouse report audit failed to finish successfully. We have "
+"detected that your server may not allow the maximum execution time to be "
+"overridden by this plugin. If you continue to experience problems with "
+"Lighthouse report audits failing to complete, try setting the Maximum script"
+" run time in the Advanced Settings section on the Extension Settings page."
+msgstr "Az utolsó Lighthouse-jelentés ellenőrzése nem fejeződött be sikeresen. Azt észleltük, hogy előfordulhat, hogy a szervered nem engedélyezi, hogy ez a bővítmény felülbírálja a maximális végrehajtási időt. Ha a Lighthouse-jelentések ellenőrzései továbbra sem fejeződnek be, próbáld meg beállítani a szkript maximális futási idejét a kiterjesztés beállításainak oldalán, a haladó beállítások szakaszban."
+
+#: class/class-mainwp-lighthouse-admin.php:1401
+msgid ""
+"The last Lighthouse report audit failed to finish successfully. If you "
+"continue to experience problems with lighthouse report audits failing to "
+"complete, try increasing the Maximum execution time, or setting the Maximum "
+"script run time in the Advanced Settings section on the Extension Settings "
+"page."
+msgstr "Az utolsó Lighthouse-jelentés ellenőrzése nem fejeződött be sikeresen. Ha a Lighthouse-jelentések ellenőrzései továbbra sem fejeződnek be, próbáld meg növelni a maximális végrehajtási időt, vagy beállítani a szkript maximális futási idejét a kiterjesztés beállításainak oldalán, a haladó beállítások szakaszban."
+
+#: class/class-mainwp-lighthouse-admin.php:1411
+msgid ""
+"MainWP Lighthouse settings cannot be changed while Lighthouse audit is in "
+"progress. Please wait until it has finished to make changes."
+msgstr "A MainWP Lighthouse beállításai nem módosíthatók, amíg egy Lighthouse-audit folyamatban van. A módosítások előtt várd meg, amíg befejeződik."
+
+#: class/class-mainwp-lighthouse-admin.php:1478
+msgid "Audit in progress for the site."
+msgstr "A webhely ellenőrzése folyamatban van."
+
+#: class/class-mainwp-lighthouse-admin.php:1605
+msgid "Desktop results: "
+msgstr "Asztali eredmények: "
+
+#: class/class-mainwp-lighthouse-admin.php:1606
+#: class/class-mainwp-lighthouse-admin.php:1619
+msgid "Performance: "
+msgstr "Teljesítmény: "
+
+#: class/class-mainwp-lighthouse-admin.php:1607
+#: class/class-mainwp-lighthouse-admin.php:1620
+msgid "Accessibility: "
+msgstr "Akadálymentesség: "
+
+#: class/class-mainwp-lighthouse-admin.php:1608
+#: class/class-mainwp-lighthouse-admin.php:1621
+msgid "Best practices: "
+msgstr "Bevált gyakorlatok: "
+
+#: class/class-mainwp-lighthouse-admin.php:1609
+#: class/class-mainwp-lighthouse-admin.php:1622
+msgid "Seo: "
+msgstr "SEO: "
+
+#: class/class-mainwp-lighthouse-admin.php:1618
+msgid "Mobile results: "
+msgstr "Mobil eredmények: "
+
+#: class/class-mainwp-lighthouse-admin.php:1630
+#: class/class-mainwp-lighthouse-admin.php:1749
+msgid "Lighthouse report not found."
+msgstr "Nem található Lighthouse-jelentés."
+
+#: class/class-mainwp-lighthouse-admin.php:1789
+msgid ""
+"Audit abort request received. Please allow a moment for the in-progress page"
+" report to complete before the abort request can take effect."
+msgstr "Megkaptuk az ellenőrzés megszakítására vonatkozó kérést. Várj egy kicsit, amíg elkészül a folyamatban lévő oldaljelentés, mert csak utána léphet életbe a megszakítási kérelem."
+
+#: class/class-mainwp-lighthouse-admin.php:1860
+msgid "How to use the Lighthouse Extension"
+msgstr "A Lighthouse-bővítmény használata"
+
+#: class/class-mainwp-lighthouse-admin.php:1861
+msgid "Get the Google PageSpeed Insights API Key"
+msgstr "Szerezd be a Google PageSpeed Insights API-kulcsot"
+
+#: class/class-mainwp-lighthouse-core.php:67
+msgid "Daily"
+msgstr "Napi"
+
+#: class/class-mainwp-lighthouse-core.php:68
+msgid "Weekly"
+msgstr "Heti"
+
+#: class/class-mainwp-lighthouse-core.php:69
+msgid "Twice Monthly"
+msgstr "Havonta kétszer"
+
+#: class/class-mainwp-lighthouse-core.php:70
+msgid "Monthly"
+msgstr "Havi"
+
+#: class/class-mainwp-lighthouse-dashboard.php:74
+msgid "The API is busy checking other pages, please try again later."
+msgstr "Az API éppen más oldalakat ellenőriz, próbáld meg később újra."
+
+#: class/class-mainwp-lighthouse-dashboard.php:86
+msgid "Not found the item!"
+msgstr "Az elem nem található!"
+
+#: class/class-mainwp-lighthouse-dashboard.php:190
+#: class/class-mainwp-lighthouse-dashboard.php:1487
+msgid "Click to select the site."
+msgstr "Kattints a webhely kiválasztásához."
+
+#: class/class-mainwp-lighthouse-dashboard.php:203
+#: class/class-mainwp-lighthouse-dashboard.php:215
+#: class/class-mainwp-lighthouse-dashboard.php:1501
+#: class/class-mainwp-lighthouse-dashboard.php:1513
+#: class/class-mainwp-lighthouse-utility.php:704
+msgid "Not checked"
+msgstr "Nincs ellenőrizve"
+
+#: class/class-mainwp-lighthouse-dashboard.php:226
+#: class/class-mainwp-lighthouse-dashboard.php:1525
+msgid "Audit Site"
+msgstr "Webhely ellenőrzése"
+
+#: class/class-mainwp-lighthouse-dashboard.php:227
+#: class/class-mainwp-lighthouse-dashboard.php:1526
+msgid "Lighthouse Report"
+msgstr "Lighthouse-jelentés"
+
+#: class/class-mainwp-lighthouse-dashboard.php:229
+#: class/class-mainwp-lighthouse-dashboard.php:1528
+msgid "Overview"
+msgstr "Áttekintés"
+
+#: class/class-mainwp-lighthouse-dashboard.php:230
+#: class/class-mainwp-lighthouse-dashboard.php:1529
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: class/class-mainwp-lighthouse-dashboard.php:324
+msgid "Dashboard"
+msgstr "Vezérlőpult"
+
+#: class/class-mainwp-lighthouse-dashboard.php:325
+#: class/class-mainwp-lighthouse-dashboard.php:363
+msgid "Settings"
+msgstr "Beállítások"
+
+#: class/class-mainwp-lighthouse-dashboard.php:490
+msgid "Review the Lighthouse report for the child site."
+msgstr "Tekintsd át a gyermek webhely Lighthouse-jelentését."
+
+#: class/class-mainwp-lighthouse-dashboard.php:491
+msgid "All repot data is generated by the Google PageSpeed Insights API."
+msgstr "Az összes jelentésadatot a Google PageSpeed Insights API állítja elő."
+
+#: class/class-mainwp-lighthouse-dashboard.php:492
+msgid "Click the score circles to toggle between category audits."
+msgstr "Kattints a pontszámkörökre a kategóriaellenőrzések közötti váltáshoz."
+
+#: class/class-mainwp-lighthouse-dashboard.php:501
+#: class/class-mainwp-lighthouse-dashboard.php:725
+msgid "Runtime Settings"
+msgstr "Futásidejű beállítások"
+
+#: class/class-mainwp-lighthouse-dashboard.php:507
+#: class/class-mainwp-lighthouse-dashboard.php:731
+msgid "URL"
+msgstr "URL"
+
+#: class/class-mainwp-lighthouse-dashboard.php:511
+#: class/class-mainwp-lighthouse-dashboard.php:735
+msgid "Fetch Time"
+msgstr "Lekérés ideje"
+
+#: class/class-mainwp-lighthouse-dashboard.php:516
+#: class/class-mainwp-lighthouse-dashboard.php:740
+msgid "User agent (host)"
+msgstr "Felhasználói ügynök (gazdagép)"
+
+#: class/class-mainwp-lighthouse-dashboard.php:520
+#: class/class-mainwp-lighthouse-dashboard.php:744
+msgid "User agent (network)"
+msgstr "Felhasználói ügynök (hálózat)"
+
+#: class/class-mainwp-lighthouse-dashboard.php:524
+#: class/class-mainwp-lighthouse-dashboard.php:748
+msgid "CPU/Memory Power"
+msgstr "CPU- és memóriateljesítmény"
+
+#: class/class-mainwp-lighthouse-dashboard.php:528
+#: class/class-mainwp-lighthouse-dashboard.php:752
+msgid "Generated by"
+msgstr "Generálta"
+
+#: class/class-mainwp-lighthouse-dashboard.php:575
+#: class/class-mainwp-lighthouse-dashboard.php:799
+msgid "Lab Data"
+msgstr "Laboradatok"
+
+#: class/class-mainwp-lighthouse-dashboard.php:606
+#: class/class-mainwp-lighthouse-dashboard.php:830
+msgid "Performance Audits"
+msgstr "Teljesítmény-ellenőrzések"
+
+#: class/class-mainwp-lighthouse-dashboard.php:638
+#: class/class-mainwp-lighthouse-dashboard.php:862
+msgid "Accessibility Audits"
+msgstr "Hozzáférhetőségi ellenőrzések"
+
+#: class/class-mainwp-lighthouse-dashboard.php:665
+#: class/class-mainwp-lighthouse-dashboard.php:889
+msgid "Best Practices Audits"
+msgstr "Bevált gyakorlatok ellenőrzései"
+
+#: class/class-mainwp-lighthouse-dashboard.php:692
+#: class/class-mainwp-lighthouse-dashboard.php:916
+msgid "SEO Audits"
+msgstr "SEO-ellenőrzések"
+
+#: class/class-mainwp-lighthouse-dashboard.php:967
+msgid "Failed audit"
+msgstr "Sikertelen ellenőrzés"
+
+#: class/class-mainwp-lighthouse-dashboard.php:971
+msgid "Passed audit"
+msgstr "Sikeres ellenőrzés"
+
+#: class/class-mainwp-lighthouse-dashboard.php:979
+msgid "Not applicable audit"
+msgstr "Nem alkalmazható ellenőrzés"
+
+#: class/class-mainwp-lighthouse-dashboard.php:983
+msgid "Diagnostics audit"
+msgstr "Diagnosztikai ellenőrzés"
+
+#: class/class-mainwp-lighthouse-dashboard.php:991
+msgid "Items to manually check"
+msgstr "Kézzel ellenőrizendő tételek"
+
+#: class/class-mainwp-lighthouse-dashboard.php:995
+msgid "All audits"
+msgstr "Összes ellenőrzés"
+
+#: class/class-mainwp-lighthouse-dashboard.php:1088
+msgid "Lighthouse Audit"
+msgstr "Lighthouse-ellenőrzés"
+
+#: class/class-mainwp-lighthouse-dashboard.php:1100
+msgid "Go to the site Overview page."
+msgstr "Ugrás a webhely áttekintési oldalára."
+
+#: class/class-mainwp-lighthouse-dashboard.php:1101
+msgid "Pending."
+msgstr "Függőben."
+
+#: class/class-mainwp-lighthouse-dashboard.php:1117
+#: class/class-mainwp-lighthouse-wp-cli-command.php:105
+#: class/class-mainwp-lighthouse-wp-cli-command.php:190
+#: includes/rest-api/version1/class-mainwp-lighthouse-rest-api-v1.php:274
+msgid "Sites not found."
+msgstr "Nem találhatók webhelyek."
+
+#: class/class-mainwp-lighthouse-dashboard.php:1136
+msgid "Bulk actions"
+msgstr "Csoportos műveletek"
+
+#: class/class-mainwp-lighthouse-dashboard.php:1137
+msgid "Run Audit"
+msgstr "Ellenőrzés futtatása"
+
+#: class/class-mainwp-lighthouse-dashboard.php:1138
+msgid "Go to WP Admin"
+msgstr "Ugrás a WP Admin felületre"
+
+#: class/class-mainwp-lighthouse-dashboard.php:1139
+msgid "Go to Site"
+msgstr "Ugrás a webhelyre"
+
+#: class/class-mainwp-lighthouse-dashboard.php:1141
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#: class/class-mainwp-lighthouse-dashboard.php:1150
+#: class/class-mainwp-lighthouse-dashboard.php:1152
+msgid "Audit in progress. Click the button to abort it."
+msgstr "Ellenőrzés folyamatban. Kattints a gombra a megszakításához."
+
+#: class/class-mainwp-lighthouse-dashboard.php:1150
+#: class/class-mainwp-lighthouse-dashboard.php:1152
+msgid "Abort Current Audit"
+msgstr "Jelenlegi ellenőrzés megszakítása"
+
+#: class/class-mainwp-lighthouse-dashboard.php:1155
+msgid "Click to start Lighthouse audit for all sites."
+msgstr "Kattints az összes webhely Lighthouse-ellenőrzésének indításához."
+
+#: class/class-mainwp-lighthouse-dashboard.php:1155
+msgid "Audit All Sites"
+msgstr "Összes webhely ellenőrzése"
+
+#: class/class-mainwp-lighthouse-dashboard.php:1177
+#, php-format
+msgid ""
+"Get reports on the performance of your child sites on both mobile and "
+"desktop devices. For more information, review %1$shelp documentation%2$s."
+msgstr "Kapj jelentéseket alwebhelyeid teljesítményéről mind mobil-, mind asztali eszközökön. További információért tekintsd át a %1$ssúgódokumentációt%2$s."
+
+#: class/class-mainwp-lighthouse-dashboard.php:1550
+msgid "Seo"
+msgstr "SEO"
+
+#: class/class-mainwp-lighthouse-dashboard.php:1551
+#: class/class-mainwp-lighthouse-utility.php:525
+msgid "Last Audit"
+msgstr "Utolsó ellenőrzés"
+
+#: class/class-mainwp-lighthouse-dashboard.php:1552
+msgid "Action"
+msgstr "Művelet"
+
+#: class/class-mainwp-lighthouse-db.php:743
+msgid ""
+"URLs have been scheduled for a recheck. Depending on the number of URLs to "
+"check, this may take a while to complete."
+msgstr "Az URL-ek újbóli ellenőrzése be van időzítve. Az ellenőrizendő URL-ek számától függően ez eltarthat egy ideig."
+
+#: class/class-mainwp-lighthouse-hooks.php:257
+#: class/class-mainwp-lighthouse-hooks.php:301
+msgid "Lighthouse Notification Email"
+msgstr "Lighthouse értesítési e-mail"
+
+#: class/class-mainwp-lighthouse-hooks.php:357
+msgid "This template has been overridden and can be found in:"
+msgstr "Ezt a sablonmintát felülírták, és itt található:"
+
+#: class/class-mainwp-lighthouse-hooks.php:357
+msgid "To override and edit this email template copy:"
+msgstr "Az e-mail-sablon felülbírálásához és szerkesztéséhez másold ide:"
+
+#: class/class-mainwp-lighthouse-hooks.php:357
+msgid "to the folder:"
+msgstr "ebbe a mappába:"
+
+#: class/class-mainwp-lighthouse-schedule.php:81
+msgid "Once a Day"
+msgstr "Naponta egyszer"
+
+#: class/class-mainwp-lighthouse-utility.php:335
+msgid "Item to manually check."
+msgstr "Kézi ellenőrzést igénylő elem."
+
+#: class/class-mainwp-lighthouse-utility.php:337
+msgid "Not applicable audit."
+msgstr "Nem alkalmazható audit."
+
+#: class/class-mainwp-lighthouse-utility.php:339
+msgid "Diagnostics"
+msgstr "Diagnosztika"
+
+#: class/class-mainwp-lighthouse-utility.php:341
+msgid "ERROR"
+msgstr "HIBA"
+
+#: class/class-mainwp-lighthouse-utility.php:344
+#: class/class-mainwp-lighthouse-utility.php:350
+msgid "Passed audit."
+msgstr "Sikeres audit."
+
+#: class/class-mainwp-lighthouse-utility.php:346
+#: class/class-mainwp-lighthouse-utility.php:352
+msgid "Failed audit."
+msgstr "Sikertelen audit."
+
+#: class/class-mainwp-lighthouse-utility.php:355
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: class/class-mainwp-lighthouse-utility.php:522
+msgid "Top 3 Child Sites"
+msgstr "Legjobb 3 alwebhely"
+
+#: class/class-mainwp-lighthouse-utility.php:523
+msgid "Go to the Lighthouse report"
+msgstr "Lépj a Lighthouse jelentéshez"
+
+#: class/class-mainwp-lighthouse-utility.php:524
+msgid "Worst 3 Child Sites"
+msgstr "Legrosszabb 3 alwebhely"
+
+#: class/class-mainwp-lighthouse-utility.php:636
+#: class/class-mainwp-lighthouse-utility.php:638
+#: class/class-mainwp-lighthouse-utility.php:642
+msgid " since "
+msgstr " óta "
+
+#: class/class-mainwp-lighthouse-wp-cli-command.php:116
+#: includes/rest-api/version1/class-mainwp-lighthouse-rest-api-v1.php:223
+#: includes/rest-api/version2/class-mainwp-lighthouse-rest-api-rest-controller.php:206
+msgid "An undefined error occured."
+msgstr "Meghatározatlan hiba történt."
+
+#: includes/rest-api/version1/class-mainwp-lighthouse-rest-api-v1.php:195
+msgid "Starting Lighthouse audits requires a POST request."
+msgstr "A Lighthouse-ellenőrzések indításához POST-kérés szükséges."
+
+#: mainwp-lighthouse-extension.php:224
+#, php-format
+msgid ""
+"requires %1$sMainWP Dashboard Plugin%2$s to be activated in order to work. "
+"Please install and activate %3$sMainWP Dashboard Plugin%4$s first."
+msgstr "A működéshez be kell kapcsolnod a %1$sMainWP vezérlőpult-bővítményt%2$s. Először telepítsd és kapcsold be a %3$sMainWP vezérlőpult-bővítményt%4$s."
+
+#: templates/emails/mainwp-lighthouse-noti-email.php:58
+msgid "automated Lighhouse audit detected score(s) lower than expected."
+msgstr "az automatizált Lighthouse-audit a vártnál alacsonyabb pontszámokat észlelt."
+
+#: templates/emails/mainwp-lighthouse-noti-email.php:65
+msgid "Click here"
+msgstr "Kattints ide"
+
+#: js/mainwp-lighthouse.js:140
+msgid "Updated"
+msgstr "Frissítve"
+
+#: js/mainwp-lighthouse.js:144
+msgid "Update failed"
+msgstr "Frissítés sikertelen"
+
+#: js/mainwp-lighthouse.js:148
+msgid "Undefined error"
+msgstr "Ismeretlen hiba"

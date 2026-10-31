@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: FluentAffiliate 1.1.0\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-20T14:02:03+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -177,7 +177,7 @@ msgstr "Partnercsoportok"
 #: app/Hooks/Handlers/AdminMenuHandler.php:380
 #: app/Services/TransStrings.php:36
 msgid "Affiliate Creatives"
-msgstr "Partner kreatívok"
+msgstr "Partneri kreatívok"
 
 #: app/Hooks/Handlers/AdminMenuHandler.php:389
 #: app/Services/TransStrings.php:228
@@ -253,7 +253,7 @@ msgstr "Összes időszak"
 
 #: app/Hooks/Handlers/EmailNotificationHandler.php:44
 msgid "Your Affiliate Account is Pending Approval"
-msgstr "Az Ön partnerfiókja jóváhagyásra vár"
+msgstr "Az Ön partnerfiókjának jóváhagyása függőben van"
 
 #: app/Hooks/Handlers/EmailNotificationHandler.php:66
 msgid "New Affiliate Account Created"
@@ -265,7 +265,7 @@ msgstr "Az Ön partnerfiókja jóváhagyásra került"
 
 #: app/Hooks/Handlers/EmailNotificationHandler.php:129
 msgid "Your Payout Transaction is Paid"
-msgstr "Az Ön kifizetési tranzakciója kifizetésre került"
+msgstr "Az Ön kifizetési tranzakciója ki van fizetve"
 
 #: app/Hooks/Handlers/EmailNotificationHandler.php:177
 #: app/Services/EmailNotificationSettings.php:85
@@ -292,11 +292,11 @@ msgstr "A kiválasztott csoport nem található "
 
 #: app/Http/Controllers/AffiliateController.php:163
 msgid "Affiliate has been successfully updated"
-msgstr "A partner sikeresen frissítve."
+msgstr "A partner sikeresen frissítve"
 
 #: app/Http/Controllers/AffiliateController.php:176
 msgid "Invalid status provided"
-msgstr "Érvénytelen állapot lett megadva."
+msgstr "Hibás állapotot adtak meg"
 
 #: app/Http/Controllers/AffiliateController.php:182
 msgid "Affiliate status is already set to this value"
@@ -358,7 +358,7 @@ msgstr "Függőben lévő partnerek"
 
 #: app/Http/Controllers/DashboardController.php:83
 msgid "Total Order Value by Referrals"
-msgstr "Ajánlások szerinti összes rendelési érték"
+msgstr "Ajánlásokból származó rendelések összértéke"
 
 #: app/Http/Controllers/IntegrationController.php:54
 msgid "Failed to save settings"
@@ -366,7 +366,7 @@ msgstr "A beállítások mentése sikertelen"
 
 #: app/Http/Controllers/IntegrationController.php:76
 msgid "Integration not found or base plugin is not installed"
-msgstr "Az integráció nem található, vagy az alap bővítmény nincs telepítve"
+msgstr "Az integráció nem található, vagy az alapbővítmény nincs telepítve"
 
 #: app/Http/Controllers/IntegrationController.php:89
 msgid "Integration status updated successfully"
@@ -398,9 +398,7 @@ msgstr "A megadott feltételeknek megfelelő partnerek nem találhatók."
 msgid ""
 "Payout successfully created and marked as processing. Please complete the "
 "transactions now"
-msgstr ""
-"A kifizetés sikeresen létrehozva és feldolgozásra megjelölve. Kérjük, "
-"fejezze be most a tranzakciókat"
+msgstr "A kifizetés sikeresen létrehozva és feldolgozás alatt állóként megjelölve. Kérjük, most fejezze be a tranzakciókat"
 
 #: app/Http/Controllers/PayoutController.php:294
 msgid "Transaction status is already set to this value."
@@ -417,7 +415,7 @@ msgstr ""
 
 #: app/Http/Controllers/PayoutController.php:361
 msgid "All processing transactions have been marked as paid."
-msgstr "Minden feldolgozás alatt álló tranzakció megjelölve fizetettként."
+msgstr "Minden feldolgozás alatt álló tranzakció fizetettként lett megjelölve."
 
 #: app/Http/Controllers/PayoutController.php:393
 #: app/Services/TransStrings.php:475
@@ -435,11 +433,11 @@ msgstr "A partnerfiók nem található"
 
 #: app/Http/Controllers/Portal/PortalController.php:199
 msgid "Payment Email (PayPal)"
-msgstr "Fizetési e-mail (PayPal)"
+msgstr "Fizetési e-mail-cím (PayPal)"
 
 #: app/Http/Controllers/Portal/PortalController.php:200
 msgid "This email will be used to send payouts."
-msgstr "Ez az e-mail-cím a kifizetések küldésére lesz használva."
+msgstr "Ezt az e-mail-címet a kifizetések küldésére fogjuk használni."
 
 #: app/Http/Controllers/Portal/PortalController.php:207
 msgid "Enable Referral Email Notification"
@@ -448,12 +446,12 @@ msgstr "Ajánlási e-mail értesítés engedélyezése"
 #: app/Http/Controllers/Portal/PortalController.php:208
 msgid ""
 "If enabled then you will receive email notification on successful referals"
-msgstr "Ha engedélyezi, sikeres ajánlások esetén e-mail értesítést kap"
+msgstr "Ha be van kapcsolva, sikeres ajánlások esetén e-mail-értesítést kap"
 
 #: app/Http/Controllers/Portal/PortalController.php:242
 #: app/Modules/Auth/AuthHelper.php:428
 msgid "Payment email is required"
-msgstr "A fizetési e-mail megadása kötelező"
+msgstr "A fizetési e-mail-cím megadása kötelező"
 
 #: app/Http/Controllers/Portal/PortalController.php:243
 msgid "Please enter a valid email address"
@@ -461,11 +459,11 @@ msgstr "Kérjük, adjon meg egy érvényes e-mail-címet"
 
 #: app/Http/Controllers/Portal/PortalController.php:244
 msgid "Please select an option for referral email notification"
-msgstr "Kérjük, válasszon egy lehetőséget az ajánlási e-mail értesítéshez"
+msgstr "Kérjük, válasszon egy lehetőséget az ajánlási e-mail-értesítéshez"
 
 #: app/Http/Controllers/Portal/PortalController.php:245
 msgid "Invalid option selected for referral email notification"
-msgstr "Érvénytelen lehetőséget választott az ajánlási e-mail értesítéshez"
+msgstr "Az ajánlási e-mail-értesítéshez kiválasztott lehetőség hibás"
 
 #: app/Http/Controllers/Portal/PortalController.php:257
 msgid "Settings has been updated successfully"
@@ -481,7 +479,7 @@ msgstr "Kézi ajánlás létrehozva"
 
 #: app/Http/Controllers/ReferralController.php:96
 msgid "You cannot update a paid referral."
-msgstr "Nem frissíthet fizetett ajánlást."
+msgstr "Nem frissíthet kifizetett ajánlást."
 
 #: app/Http/Controllers/ReferralController.php:120
 msgid "Referral has been updated"
@@ -545,7 +543,7 @@ msgstr "A feladói e-mail-cím érvénytelen"
 
 #: app/Http/Controllers/SettingController.php:48
 msgid "Reply to email is not valid"
-msgstr "A válaszcím e-mail-címe érvénytelen"
+msgstr "A válaszcím hibás"
 
 #: app/Http/Controllers/SettingController.php:79
 #: app/Http/Controllers/SettingController.php:167
@@ -589,7 +587,7 @@ msgstr ""
 
 #: app/Modules/Auth/AuthHandler.php:53 app/Modules/Auth/AuthHelper.php:425
 msgid "Email is required"
-msgstr "Az e-mail megadása kötelező"
+msgstr "Az e-mail-cím megadása kötelező"
 
 #: app/Modules/Auth/AuthHandler.php:54 app/Modules/Auth/AuthHelper.php:429
 msgid "Password is required"
@@ -605,7 +603,7 @@ msgstr "Kérjük, töltse ki helyesen az összes kötelező mezőt."
 
 #: app/Modules/Auth/AuthHandler.php:144
 msgid "Registration is disabled for this site"
-msgstr "Ezen a webhelyen a regisztráció le van tiltva"
+msgstr "Ezen a webhelyen ki van kapcsolva a regisztráció"
 
 #: app/Modules/Auth/AuthHandler.php:165
 msgid "Username is not valid"
@@ -635,7 +633,7 @@ msgstr "Az ellenőrző kód megadása kötelező"
 
 #: app/Modules/Auth/AuthHandler.php:276
 msgid "Continue to the Affiliate Dashboard"
-msgstr "Tovább a partneri irányítópultra"
+msgstr "Folytatás a partneri vezérlőpultra"
 
 #: app/Modules/Auth/AuthHandler.php:278
 msgid "Welcome back!"
@@ -643,11 +641,11 @@ msgstr "Üdvözöljük újra!"
 
 #: app/Modules/Auth/AuthHandler.php:279
 msgid "You have successfully logged in to the affiliate dashboard"
-msgstr "Sikeresen bejelentkezett a partneri irányítópultba"
+msgstr "Sikeresen bejelentkezett a partneri vezérlőpultba"
 
 #: app/Modules/Auth/AuthHandler.php:303
 msgid "Continue to the Dashboard"
-msgstr "Tovább az irányítópultra"
+msgstr "Folytatás a vezérlőpultra"
 
 #: app/Modules/Auth/AuthHandler.php:305 app/Services/TransStrings.php:96
 msgid "Congratulations!"
@@ -655,7 +653,7 @@ msgstr "Gratulálunk!"
 
 #: app/Modules/Auth/AuthHandler.php:306
 msgid "You have successfully applied for an affiliate account"
-msgstr "Sikeresen jelentkezett partneri fiókra"
+msgstr "Sikeresen igényelt partneri fiókot"
 
 #: app/Modules/Auth/AuthHandler.php:327
 msgid "Registration is disabled"
@@ -679,7 +677,7 @@ msgstr "Bejelentkezés"
 
 #: app/Modules/Auth/AuthHandler.php:410
 msgid "Login to your Affiliate Dashboard"
-msgstr "Jelentkezzen be a partneri irányítópultjába"
+msgstr "Belépés a partneri vezérlőpultra"
 
 #: app/Modules/Auth/AuthHandler.php:411
 msgid "Please enter your email and password to log in."
@@ -691,7 +689,7 @@ msgstr "Nincs még fiókja?"
 
 #: app/Modules/Auth/AuthHandler.php:434
 msgid "Register Now"
-msgstr "Regisztráljon most"
+msgstr "Regisztráció most"
 
 #: app/Modules/Auth/AuthHelper.php:40
 msgid "<strong>Error</strong>: Please enter a username."
@@ -825,13 +823,11 @@ msgstr "Weboldal URL-je"
 msgid ""
 "If you have a website or blog, please provide the URL. This helps us "
 "understand your online presence."
-msgstr ""
-"Ha rendelkezik weboldallal vagy bloggal, kérjük, adja meg az URL-t. Ez segít"
-" megérteni az online jelenlétét."
+msgstr "Ha rendelkezik weboldallal vagy bloggal, kérjük, adja meg az URL-t. Ez segít megérteni az online jelenlétét."
 
 #: app/Modules/Auth/AuthHelper.php:290
 msgid "Your PayPal email address"
-msgstr "Az Ön PayPal e-mail-címe"
+msgstr "Az Ön PayPal-e-mail-címe"
 
 #: app/Modules/Auth/AuthHelper.php:291
 #: app/Modules/Integrations/Paymattic/BootstrapAffiliateRegister.php:100
@@ -840,7 +836,7 @@ msgstr "Fizetési e-mail-cím"
 
 #: app/Modules/Auth/AuthHelper.php:298
 msgid "Enter your PayPal Email Address (so we can pay you)"
-msgstr "Adja meg a PayPal e-mail-címét (hogy fizethessünk Önnek)"
+msgstr "Adja meg a PayPal-e-mail-címét (hogy fizethessünk Önnek)"
 
 #: app/Modules/Auth/AuthHelper.php:423
 msgid "Username is required"
@@ -885,7 +881,7 @@ msgstr "El kell fogadnia a szerződési feltételeket"
 #: app/Modules/Auth/AuthHelper.php:486
 #, php-format
 msgid "Your registration verification code for %s"
-msgstr "Az Ön regisztrációs ellenőrzőkódja a következőhöz: %s"
+msgstr "Az Ön regisztrációs ellenőrzőkódja a(z) %s webhelyhez"
 
 #: app/Modules/Auth/AuthHelper.php:490
 #, php-format
@@ -933,7 +929,7 @@ msgstr "Ezt az e-mailt %1$s küldte. Webhely: %2$s"
 #, php-format
 msgid ""
 "A verification code has been sent to %s. Please provide the code below: "
-msgstr "Ellenőrzőkódot küldtünk ide: %s. Kérjük, adja meg alább a kódot: "
+msgstr "Ellenőrzőkódot küldtünk erre a címre: %s. Kérjük, adja meg alább a kódot: "
 
 #: app/Modules/Auth/AuthHelper.php:528
 msgid "Verification Code"
@@ -996,19 +992,14 @@ msgstr "Partnerfiók jóváhagyva"
 #: app/Modules/FluentCRM/AffiliateApprovedTrigger.php:67
 msgid ""
 "This automation will be initiated when an affiliate status get to approved."
-msgstr ""
-"Ez az automatizmus akkor indul el, amikor egy partner státusza jóváhagyott "
-"lesz."
+msgstr "Ez az automatizmus akkor indul el, amikor egy partner állapota jóváhagyottá válik."
 
 #: app/Modules/FluentCRM/AffiliateApprovedTrigger.php:57
 #: app/Modules/FluentCRM/AffiliateRegisteredAsPendingTrigger.php:57
 msgid ""
 "Restart the Automation Multiple times for a contact for this event. (Only "
 "enable if you want to restart automation for the same contact)"
-msgstr ""
-"Az automatizmus többszöri újraindítása egy névjegyhez ennél az eseménynél. "
-"(Csak akkor engedélyezze, ha ugyanazon névjegyhez újra szeretné indítani az "
-"automatizmust)"
+msgstr "Az automatizmus többszöri újraindítása egy névjegy esetén ennél az eseménynél. (Csak akkor kapcsolja be, ha ugyanannál a névjegynél újra szeretné indítani az automatizmust)"
 
 #: app/Modules/FluentCRM/AffiliateApprovedTrigger.php:58
 #: app/Modules/FluentCRM/AffiliateRegisteredAsPendingTrigger.php:58
@@ -1018,9 +1009,7 @@ msgid ""
 "If you enable, then it will restart the automation for a contact if the "
 "contact already in the automation. Otherwise, It will just skip if already "
 "exist"
-msgstr ""
-"Ha engedélyezi, és a névjegy már szerepel az automatizmusban, akkor az "
-"automatizmus újraindul számára. Egyébként a rendszer kihagyja."
+msgstr "Ha bekapcsolja ezt a beállítást, az automatizmus újraindul az adott névjegynél, ha az már részt vesz benne. Ellenkező esetben a rendszer kihagyja a névjegyet, ha az már szerepel az automatizmusban."
 
 #: app/Modules/FluentCRM/AffiliateApprovedTrigger.php:73
 #: app/Modules/FluentCRM/AffiliateRegisteredAsPendingTrigger.php:73
@@ -1042,8 +1031,7 @@ msgstr "Válasszon állapotot"
 #: app/Modules/FluentCRM/PayoutSentTrigger.php:79
 #: app/Modules/FluentCRM/ReferralCreatedTrigger.php:78
 msgid "An Automated double-optin email will be sent for new subscribers"
-msgstr ""
-"Automatikus double-optin e-mail kerül kiküldésre az új feliratkozóknak"
+msgstr "Az új feliratkozók automatikus, dupla feliratkozás-megerősítő e-mailt kapnak"
 
 #: app/Modules/FluentCRM/AffiliateRegisteredAsPendingTrigger.php:24
 #: app/Modules/FluentCRM/AffiliateRegisteredAsPendingTrigger.php:66
@@ -1055,9 +1043,7 @@ msgstr "Partner regisztrálva: függőben"
 msgid ""
 "This automation will be initiated when an affiliate registers and is set to "
 "pending status."
-msgstr ""
-"Ez az automatizmus akkor indul el, amikor egy partner regisztrál, és a "
-"státusza függőben lévőre kerül."
+msgstr "Ez az automatizmus akkor indul el, amikor egy partner regisztrál, és az állapota függőben lévő állapotba kerül."
 
 #: app/Modules/FluentCRM/CreateAffiliateAction.php:24
 #: app/Modules/FluentCRM/CreateAffiliateAction.php:41
@@ -1078,9 +1064,7 @@ msgstr "Partner státusza"
 msgid ""
 "Select the status for the affiliate account. Please note, WordPress user "
 "account must need to be available for this contact."
-msgstr ""
-"Válassza ki a partnerfiók státuszát. Kérjük, vegye figyelembe, hogy ehhez a "
-"névjegyhez rendelkezésre kell állnia WordPress felhasználói fióknak."
+msgstr "Válassza ki a partnerfiók állapotát. Kérjük, vegye figyelembe, hogy ehhez a névjegyhez egy elérhető WordPress-felhasználói fiók szükséges."
 
 #: app/Modules/FluentCRM/CreateAffiliateAction.php:52
 msgid "Rate Type"
@@ -1144,7 +1128,7 @@ msgstr "Adja meg a partnerfiókhoz tartozó további megjegyzéseket."
 
 #: app/Modules/FluentCRM/CreateAffiliateAction.php:90
 msgid "This note will be added to the affiliate account."
-msgstr "Ez a megjegyzés hozzáadásra kerül a partnerfiókhoz."
+msgstr "Ez a megjegyzés hozzáadódik a partnerfiókhoz."
 
 #: app/Modules/FluentCRM/CreateAffiliateAction.php:101
 msgid "Approved"
@@ -1165,7 +1149,7 @@ msgstr "Partnerfiók létrehozva %1$s felhasználó számára %2$s státusszal"
 
 #: app/Modules/FluentCRM/DeepIntegration.php:78
 msgid "Sync FluentAffiliate Affiliates Now"
-msgstr "FluentAffiliate partnerek szinkronizálása most"
+msgstr "FluentAffiliate-partnerek szinkronizálása most"
 
 #: app/Modules/FluentCRM/DeepIntegration.php:87
 msgid "Affiliates Sync"
@@ -1273,9 +1257,7 @@ msgstr "Partneri kifizetés elküldve"
 msgid ""
 "This automation will be initiated when a payout transaction is marked as "
 "paid to an affiliate."
-msgstr ""
-"Ez az automatizmus akkor indul el, amikor egy kifizetési tranzakciót "
-"kifizetettnek jelölnek egy partner számára."
+msgstr "Ez az automatizmus akkor indul el, amikor egy partnernek szánt kifizetési tranzakciót fizetettnek jelölnek meg."
 
 #: app/Modules/FluentCRM/PayoutSentTrigger.php:58
 #: app/Modules/FluentCRM/ReferralCreatedTrigger.php:57
@@ -1300,7 +1282,7 @@ msgstr ""
 
 #: app/Modules/Integrations/BaseConnectorSettings.php:99
 msgid "Settings saved successfully."
-msgstr "A beállítások sikeresen mentve."
+msgstr "A beállítások sikeresen elmentve."
 
 #: app/Modules/Integrations/FluentBooking/Bootstrap.php:130
 msgid "[FluentAffiliate] Referral Created"
@@ -1317,7 +1299,7 @@ msgstr "Válassza ki a kosárba tenni kívánt partnert"
 #: app/Modules/Integrations/FluentCart/Bootstrap.php:85
 #: app/Services/TransStrings.php:397
 msgid "Select Affiliate"
-msgstr "Válasszon partnert"
+msgstr "Partner kiválasztása"
 
 #: app/Modules/Integrations/FluentCart/Bootstrap.php:185
 #, php-format
@@ -1332,13 +1314,11 @@ msgstr "Fluent Affiliate ajánlás létrehozva."
 msgid ""
 "Connect FluentAffiliate with FluentForms to track form submissions and "
 "payments as referrals"
-msgstr ""
-"Csatlakoztassa a FluentAffiliate-et a FluentForms-szal, hogy az "
-"űrlapbeküldéseket és kifizetéseket ajánlásként kövesse"
+msgstr "Kapcsolja össze a FluentAffiliate-et a FluentForms-szal, hogy az űrlapbeküldéseket és a kifizetéseket ajánlásként kövesse"
 
 #: app/Modules/Integrations/FluentForms/Connector.php:100
 msgid "Select Forms"
-msgstr "Válasszon űrlapokat"
+msgstr "Űrlapok kiválasztása"
 
 #: app/Modules/Integrations/FluentForms/Connector.php:101
 #: app/Modules/Integrations/Paymattic/Connector.php:79
@@ -1363,7 +1343,7 @@ msgstr "Felhasználó típusa"
 
 #: app/Modules/Integrations/FluentForms/FluentFormAffiliateRegistration.php:98
 msgid "Create New WordPress User + Affiliate"
-msgstr "Új WordPress felhasználó + partner létrehozása"
+msgstr "Új WordPress-felhasználó + partner létrehozása"
 
 #: app/Modules/Integrations/FluentForms/FluentFormAffiliateRegistration.php:99
 msgid "Create Affiliate for Existing User (must be logged in)"
@@ -1377,13 +1357,11 @@ msgstr "Feltételes logikák"
 #: app/Modules/Integrations/FluentForms/FluentFormAffiliateRegistration.php:122
 #: app/Modules/Integrations/Paymattic/BootstrapAffiliateRegister.php:117
 msgid "Allow this integration conditionally based on your submission values"
-msgstr ""
-"Engedélyezze ezt az integrációt feltételesen az Ön beküldésének értékei "
-"alapján"
+msgstr "A beküldésben megadott értékek alapján feltételesen engedélyezze ezt az integrációt"
 
 #: app/Modules/Integrations/FluentForms/FluentFormAffiliateRegistration.php:131
 msgid "Enable this integration"
-msgstr "Engedélyezze ezt az integrációt"
+msgstr "Ennek az integrációnak a bekapcsolása"
 
 #: app/Modules/Integrations/FluentForms/FluentFormAffiliateRegistration.php:147
 msgid "Map Fields"
@@ -1393,9 +1371,7 @@ msgstr "Mezők megfeleltetése"
 msgid ""
 "Associate your affiliate fields to the appropriate Fluent Forms fields by "
 "selecting the appropriate form field from the list."
-msgstr ""
-"Társítsa partnermezőit a megfelelő Fluent Forms mezőkhöz a listából "
-"kiválasztva a megfelelő űrlapmezőt."
+msgstr "A listából válassza ki a megfelelő űrlapmezőt, hogy partnermezőit a megfelelő Fluent Forms-mezőkhöz társítsa."
 
 #: app/Modules/Integrations/FluentForms/FluentFormAffiliateRegistration.php:151
 msgid "Affiliate Field"
@@ -1443,11 +1419,11 @@ msgstr ""
 
 #: app/Modules/Integrations/FluentForms/FluentFormAffiliateRegistration.php:307
 msgid "User with this email or username already exists"
-msgstr "Ilyen email-címmel vagy felhasználónévvel már létezik felhasználó"
+msgstr "Már létezik felhasználó ezzel az e-mail címmel vagy felhasználónévvel"
 
 #: app/Modules/Integrations/FluentForms/FluentFormAffiliateRegistration.php:333
 msgid "Affiliate user created successfully. User ID: "
-msgstr "Partner felhasználó sikeresen létrehozva. Felhasználóazonosító: "
+msgstr "Partnerfelhasználó sikeresen létrehozva. Felhasználói azonosító (ID): "
 
 #: app/Modules/Integrations/FluentForms/FluentFormAffiliateRegistration.php:348
 msgid "User must be logged in to create affiliate account"
@@ -1486,7 +1462,7 @@ msgstr "Megjegyzés"
 
 #: app/Modules/Integrations/Paymattic/BootstrapAffiliateRegister.php:86
 msgid "Set the note for the affiliate"
-msgstr "Állítsa be a megjegyzést a partner számára"
+msgstr "Állítsa be a partner megjegyzését"
 
 #: app/Modules/Integrations/Paymattic/BootstrapAffiliateRegister.php:93
 msgid "Merge the payment email field from the form"
@@ -1494,29 +1470,24 @@ msgstr "Társítsa az űrlap fizetési e-mail mezőjét"
 
 #: app/Modules/Integrations/Paymattic/BootstrapAffiliateRegister.php:110
 msgid "Create affiliate program on payment success"
-msgstr "Partneri fiók létrehozása sikeres fizetéskor"
+msgstr "Partnerprogram létrehozása sikeres fizetéskor"
 
 #: app/Modules/Integrations/Paymattic/BootstrapAffiliateRegister.php:134
 msgid ""
 "Map Fields for WP Users (if submitter is logged in, this data will be "
 "ignored)"
-msgstr ""
-"Mezők hozzárendelése WP felhasználókhoz (ha a beküldő be van jelentkezve, "
-"ezek az adatok figyelmen kívül lesznek hagyva)"
+msgstr "Mezők hozzárendelése WP-felhasználókhoz (ha a beküldő be van jelentkezve, ezek az adatok figyelmen kívül lesznek hagyva)"
 
 #: app/Modules/Integrations/Paymattic/BootstrapAffiliateRegister.php:135
 msgid ""
 "A new user will be created if no user is found based on the provided email "
 "address, Associate your user registration fields to the appropriate "
 "Paymattic fields by selecting the appropriate form field from the list."
-msgstr ""
-"Új felhasználó jön létre, ha a megadott e-mail-cím alapján nem található "
-"felhasználó. Társítsa a felhasználó-regisztrációs mezőit a megfelelő "
-"Paymattic mezőkhöz a listából a megfelelő űrlapmező kiválasztásával."
+msgstr "Új felhasználó jön létre, ha a megadott e-mail-cím alapján nem található felhasználó. Társítsa a felhasználói regisztráció mezőit a megfelelő Paymattic-mezőkhöz úgy, hogy kiválasztja a listából a megfelelő űrlapmezőt."
 
 #: app/Modules/Integrations/Paymattic/BootstrapAffiliateRegister.php:137
 msgid "User Registration Field"
-msgstr "Felhasználó-regisztrációs mező"
+msgstr "Felhasználói regisztrációs mező"
 
 #: app/Modules/Integrations/Paymattic/BootstrapAffiliateRegister.php:142
 msgid "User Email Address"
@@ -1552,19 +1523,16 @@ msgstr "[FluentAffiliate] Ehhez a felhasználóhoz már létezik partneri fiók"
 #: app/Modules/Integrations/Paymattic/BootstrapAffiliateRegister.php:232
 #, php-format
 msgid "Affiliate created successfully. Affiliate ID: %d"
-msgstr "Partneri fiók sikeresen létrehozva. Partnerazonosító: %d"
+msgstr "Partner ID: %d"
 
 #: app/Modules/Integrations/Paymattic/BootstrapAffiliateRegister.php:251
 msgid "[FluentAffiliate] Registration skipped because no email is given"
-msgstr ""
-"[FluentAffiliate] A regisztráció kihagyva, mert nem lett megadva e-mail"
+msgstr "[FluentAffiliate] A regisztráció kimaradt, mert nem lett megadva e-mail-cím"
 
 #: app/Modules/Integrations/Paymattic/BootstrapAffiliateRegister.php:261
 msgid ""
 "[FluentAffiliate] Registration skipped because no payment email is given"
-msgstr ""
-"[FluentAffiliate] A regisztráció kihagyva, mert nem lett megadva fizetési "
-"e-mail"
+msgstr "[FluentAffiliate] A regisztráció kimaradt, mert nem lett megadva fizetési e-mail-cím"
 
 #: app/Modules/Integrations/Paymattic/Connector.php:78
 msgid "Paymattic Forms"
@@ -1579,10 +1547,7 @@ msgid ""
 "Thank you for applying our Affiliate Program! Your application is under "
 "review, and we'll notify you once it's approved. Please check back soon or "
 "contact support for assistance."
-msgstr ""
-"Köszönjük, hogy jelentkezett partnerprogramunkba! Jelentkezése elbírálás "
-"alatt áll, és értesítjük, amint jóváhagyásra kerül. Kérjük, térjen vissza "
-"hamarosan, vagy vegye fel a kapcsolatot az ügyfélszolgálattal segítségért."
+msgstr "Köszönjük, hogy jelentkezett partnerprogramunkba! Jelentkezése elbírálás alatt áll, és értesítjük, amint jóváhagyásra kerül. Kérjük, térjen vissza hamarosan, vagy segítségért forduljon a támogatáshoz."
 
 #: app/Modules/Portal/CustomerPortal.php:57
 msgid "Affiliate account is not active"
@@ -1592,9 +1557,7 @@ msgstr "A partneri fiók nem aktív"
 msgid ""
 "Your affiliate registration has been rejected. If you believe this is an "
 "error, please contact support for assistance."
-msgstr ""
-"Partneri regisztrációját elutasítottuk. Ha úgy véli, ez tévedés, kérjük, "
-"lépjen kapcsolatba az ügyfélszolgálattal segítségért."
+msgstr "Partneri regisztrációját elutasítottuk. Ha úgy véli, hogy ez hiba, kérjük, segítségért forduljon a támogatáshoz."
 
 #: app/Services/EmailNotificationSettings.php:27
 msgid "New Affiliate Signup Notification Email"
@@ -1604,13 +1567,11 @@ msgstr "Új partneri regisztrációról szóló értesítő e-mail"
 msgid ""
 "An email will be sent to the admin when someone register as an affiliate. So"
 " admin can review the application and approve the affiliate"
-msgstr ""
-"E-mailt küldünk az adminisztrátornak, amikor valaki partnerként regisztrál, "
-"így felülvizsgálhatja a jelentkezést és jóváhagyhatja a partnert."
+msgstr "E-mailt küldünk az adminnak, amikor valaki partnerként regisztrál, így az admin felülvizsgálhatja a jelentkezést és jóváhagyhatja a partnert."
 
 #: app/Services/EmailNotificationSettings.php:33
 msgid "New Affiliate registered to your site {{site.name}}"
-msgstr "Új partner regisztrált az oldalára: {{site.name}}"
+msgstr "Új partner regisztrált az Ön webhelyén: {{site.name}}"
 
 #: app/Services/EmailNotificationSettings.php:40
 msgid "New Sale Notification Email to Admin"
@@ -1620,9 +1581,7 @@ msgstr "Új értékesítésről szóló értesítő e-mail az adminisztrátornak
 msgid ""
 "An email will be sent to the admin when a new sale is made through the "
 "affiliate program."
-msgstr ""
-"E-mailt küldünk az adminisztrátornak, amikor új értékesítés történik a "
-"partnerprogramon keresztül."
+msgstr "E-mailt küldünk az adminisztrátornak, amikor új értékesítés történik a partnerprogramon keresztül."
 
 #: app/Services/EmailNotificationSettings.php:53
 msgid "Affiliate Application Pending Notification Email"
@@ -1670,8 +1629,7 @@ msgstr "Partneri kifizetésről szóló értesítő e-mail"
 
 #: app/Services/EmailNotificationSettings.php:93
 msgid "An email will be sent to the affiliate when their payout is processed."
-msgstr ""
-"E-mailt küldünk a partnernek, amikor a kifizetését feldolgozásra kerül."
+msgstr "E-mailt küldünk a partnernek, amikor feldolgozzák a kifizetését."
 
 #: app/Services/EmailNotificationSettings.php:98
 msgid "Your Affiliate Payout Has Been Processed - {{site.name}}"
@@ -1683,7 +1641,7 @@ msgstr "Partneri adatok"
 
 #: app/Services/EmailNotificationSettings.php:401
 msgid "Affiliate Profile URL (Admin)"
-msgstr "Partneri profil URL (Admin)"
+msgstr "Partnerprofil-URL (admin)"
 
 #: app/Services/EmailNotificationSettings.php:402
 msgid "Affiliate Link (Primary Domain)"
@@ -1757,7 +1715,7 @@ msgstr "Kifizetés pénzneme"
 
 #: app/Services/EmailNotificationSettings.php:436
 msgid "Referral"
-msgstr "Ajánlás"
+msgstr "Jutalék"
 
 #: app/Services/EmailNotificationSettings.php:438
 msgid "Referral Amount"
@@ -1786,7 +1744,7 @@ msgstr "Webhely címe"
 
 #: app/Services/EmailNotificationSettings.php:450
 msgid "Site tagline"
-msgstr "Webhely leírása"
+msgstr "Webhely jelmondata"
 
 #: app/Services/EmailNotificationSettings.php:451
 msgid "Admin Email"
@@ -1794,11 +1752,11 @@ msgstr "Admin e-mail-cím"
 
 #: app/Services/EmailNotificationSettings.php:452
 msgid "Affiliate Dashboard URL"
-msgstr "Partneri irányítópult URL"
+msgstr "Partneri vezérlőpult URL-je"
 
 #: app/Services/EmailNotificationSettings.php:453
 msgid "Affiliate Admin Dashboard URL"
-msgstr "Partner adminisztrátori irányítópult URL"
+msgstr "Partneri adminisztrátori vezérlőpult URL-je"
 
 #: app/Services/EmailNotificationSettings.php:454
 #: app/Services/TransStrings.php:428
@@ -1987,7 +1945,7 @@ msgstr "Érintett csoportok"
 
 #: app/Services/TransStrings.php:50
 msgid "Apply"
-msgstr "Alkalmaz"
+msgstr "Alkalmazás"
 
 #: app/Services/TransStrings.php:51
 msgid "Approve Affiliate"
@@ -2111,20 +2069,16 @@ msgstr "Alárendelt webhely URL-je"
 msgid ""
 "Choose a previous affiliate plugin to migrate your existing affiliate data "
 "from."
-msgstr ""
-"Válasszon egy korábbi partner bővítményt, amelyből át kívánja migrálni "
-"meglévő partneradatait."
+msgstr "Válasszon ki egy korábbi partnerprogram-bővítményt, amelyből át szeretné költöztetni meglévő partneradatait."
 
 #: app/Services/TransStrings.php:82
 msgid ""
 "Choose the character style for separating thousands in numerical values."
-msgstr "Válassza ki az ezres elválasztó karakterét a számértékekhez."
+msgstr "Válassza ki a számértékek ezres tagolásához használt karaktert."
 
 #: app/Services/TransStrings.php:83
 msgid "Choose the default format for how referral link will be generated."
-msgstr ""
-"Válassza ki az alapértelmezett formátumot az ajánlói hivatkozás "
-"generálásához."
+msgstr "Válassza ki az ajánlói link létrehozásának alapértelmezett formátumát."
 
 #: app/Services/TransStrings.php:84
 msgid "Choose the position of the currency symbol in the amount."
@@ -2156,7 +2110,7 @@ msgstr "Jutalék összege"
 
 #: app/Services/TransStrings.php:92
 msgid "Completed"
-msgstr "Teljesítve"
+msgstr "Befejezve"
 
 #: app/Services/TransStrings.php:93
 msgid "Confirm"
@@ -2180,9 +2134,7 @@ msgstr "Új webhely csatlakoztatása "
 
 #: app/Services/TransStrings.php:99
 msgid "Connect your other sites with this shop to track referrals"
-msgstr ""
-"Csatlakoztassa az Ön többi webhelyét ehhez az áruházhoz az ajánlások "
-"követéséhez."
+msgstr "Csatlakoztassa az Ön többi webhelyét ehhez az áruházhoz az ajánlások követéséhez"
 
 #: app/Services/TransStrings.php:100 app/Services/TransStrings.php:573
 msgid "Converted"
@@ -2262,9 +2214,7 @@ msgstr "Ügyfelek"
 msgid ""
 "Customize the email footer text to include your brand or additional "
 "information."
-msgstr ""
-"Testreszabhatja az e-mail lábléc szövegét, hogy tartalmazza az Ön márkáját "
-"vagy további információkat."
+msgstr "Szabja testre az e-mail-lábléc szövegét, hogy az tartalmazza a márkáját vagy további információkat."
 
 #: app/Services/TransStrings.php:119
 msgid "Customized Body"
@@ -2328,7 +2278,7 @@ msgstr "Leírás"
 
 #: app/Services/TransStrings.php:135
 msgid "Design Your Button"
-msgstr "Tervezze meg a gombját"
+msgstr "Gomb megtervezése"
 
 #: app/Services/TransStrings.php:136
 msgid "Details"
@@ -2336,15 +2286,15 @@ msgstr "Részletek"
 
 #: app/Services/TransStrings.php:137
 msgid "Determine which affiliate receives credit for a referral."
-msgstr "Határozza meg, melyik partner kap jóváírást egy ajánlásért."
+msgstr "Határozza meg, melyik partnerhez legyen hozzárendelve az ajánlás."
 
 #: app/Services/TransStrings.php:138
 msgid "Disable Self Referral."
-msgstr "Saját magának történő ajánlás letiltása."
+msgstr "Önajánlás kikapcsolása."
 
 #: app/Services/TransStrings.php:139
 msgid "Disable powered by FluentAffiliate in the email footer"
-msgstr "A powered by FluentAffiliate jelzés letiltása az e-mail láblécben"
+msgstr "A „Powered by FluentAffiliate” felirat kikapcsolása az e-mail láblécében"
 
 #: app/Services/TransStrings.php:141 app/Services/TransStrings.php:584
 msgid "Draft"
@@ -2352,7 +2302,7 @@ msgstr "Piszkozat"
 
 #: app/Services/TransStrings.php:142
 msgid "E-Mail Settings"
-msgstr "E-mail beállítások"
+msgstr "E-mail-beállítások"
 
 #: app/Services/TransStrings.php:143
 msgid "EU Style"
@@ -2376,15 +2326,15 @@ msgstr "E-mail törzse"
 
 #: app/Services/TransStrings.php:148
 msgid "Email Body Type"
-msgstr "E-mail törzs típusa"
+msgstr "E-mail-törzs típusa"
 
 #: app/Services/TransStrings.php:149
 msgid "Email Footer"
-msgstr "E-mail lábléc"
+msgstr "E-mail-lábléc"
 
 #: app/Services/TransStrings.php:150
 msgid "Email Header Logo"
-msgstr "E-mail fejléc logója"
+msgstr "E-mail-fejléc logója"
 
 #: app/Services/TransStrings.php:151
 msgid "Email Subject"
@@ -2499,11 +2449,11 @@ msgstr "Adja meg a jutalékrátát"
 
 #: app/Services/TransStrings.php:175
 msgid "Enter order ID (optional)"
-msgstr "Adja meg a rendelésazonosítót (nem kötelező)"
+msgstr "Adja meg a Rendelés ID-t (opcionális)"
 
 #: app/Services/TransStrings.php:176
 msgid "Enter the child site's config JSON"
-msgstr "Adja meg a gyermek webhelyének konfigurációs JSON-ját"
+msgstr "Adja meg a gyermekwebhely konfigurációs JSON-ját"
 
 #: app/Services/TransStrings.php:177
 msgid ""
@@ -2588,7 +2538,7 @@ msgstr "Másolás sikertelen: "
 
 #: app/Services/TransStrings.php:196
 msgid "Fetching License Information Please wait"
-msgstr "Licencinformációk lekérése Kérjük, várjon"
+msgstr "Licencinformációk lekérése, kérjük, várjon"
 
 #: app/Services/TransStrings.php:197
 msgid "Field Type"
@@ -2694,7 +2644,7 @@ msgstr "Befejeztem"
 
 #: app/Services/TransStrings.php:222
 msgid "ID"
-msgstr "ID"
+msgstr "Azonosító"
 
 #: app/Services/TransStrings.php:223 app/Services/TransStrings.php:592
 msgid "ID:"
@@ -2730,7 +2680,7 @@ msgstr "Belső leírás"
 
 #: app/Services/TransStrings.php:232
 msgid "Issue New Connect Config"
-msgstr "Új Connect Config kiadása"
+msgstr "Új Connect-konfiguráció kiadása"
 
 #: app/Services/TransStrings.php:233
 msgid "Item ID"
@@ -2738,7 +2688,7 @@ msgstr "Elem ID"
 
 #: app/Services/TransStrings.php:234
 msgid "Joined on:"
-msgstr "Csatlakozott ekkor:"
+msgstr "Csatlakozás dátuma:"
 
 #: app/Services/TransStrings.php:235
 msgid "Label"
@@ -2750,7 +2700,7 @@ msgstr "Címke *"
 
 #: app/Services/TransStrings.php:237
 msgid "Label field is required"
-msgstr "A Címke mező kitöltése kötelező"
+msgstr "A címke mező kitöltése kötelező"
 
 #: app/Services/TransStrings.php:238
 msgid "Last 6 Months"
@@ -2778,7 +2728,7 @@ msgstr "Érdeklődő"
 
 #: app/Services/TransStrings.php:244
 msgid "Lead Optin"
-msgstr "Érdeklődő feliratkozás"
+msgstr "Érdeklődői feliratkozás"
 
 #: app/Services/TransStrings.php:245
 msgid "Learn More"
@@ -2790,7 +2740,7 @@ msgstr "Tudjon meg többet"
 
 #: app/Services/TransStrings.php:247
 msgid "Let's Get Started"
-msgstr "Kezdje el"
+msgstr "Kezdés"
 
 #: app/Services/TransStrings.php:248
 msgid "License Key"
@@ -2819,15 +2769,15 @@ msgstr "Kézi"
 
 #: app/Services/TransStrings.php:255
 msgid "Mark all as Paid"
-msgstr "Jelölje mindet kifizetettnek"
+msgstr "Összes megjelölése kifizetettként"
 
 #: app/Services/TransStrings.php:256
 msgid "Mark as Processing"
-msgstr "Jelölje feldolgozás alattinak"
+msgstr "Megjelölés feldolgozás alattiként"
 
 #: app/Services/TransStrings.php:257
 msgid "Mark as paid"
-msgstr "Jelölje kifizetettnek"
+msgstr "Megjelölés kifizetettként"
 
 #: app/Services/TransStrings.php:258
 msgid "Method"
@@ -2843,7 +2793,7 @@ msgstr "Migrálás"
 
 #: app/Services/TransStrings.php:261
 msgid "Migrated"
-msgstr "Migrálva"
+msgstr "Áttelepítve"
 
 #: app/Services/TransStrings.php:262
 msgid "Migrating Affiliates..."
@@ -2851,7 +2801,7 @@ msgstr "Partnerek migrálása..."
 
 #: app/Services/TransStrings.php:263
 msgid "Migrating Customers..."
-msgstr "Ügyfelek migrálása..."
+msgstr "Vásárlók áttelepítése..."
 
 #: app/Services/TransStrings.php:264
 msgid "Migrating Payouts..."
@@ -2887,7 +2837,7 @@ msgstr "Név"
 
 #: app/Services/TransStrings.php:272
 msgid "Never (Disable Email Digest)"
-msgstr "Soha (E-mail összefoglaló letiltása)"
+msgstr "Soha (e-mailes összefoglaló kikapcsolása)"
 
 #: app/Services/TransStrings.php:273
 msgid "New Affiliate"
@@ -2911,7 +2861,7 @@ msgstr "Tovább (Kifizetés áttekintése)"
 
 #: app/Services/TransStrings.php:279
 msgid "No Data Available"
-msgstr "Nem áll rendelkezésre adat"
+msgstr "Nincs elérhető adat"
 
 #: app/Services/TransStrings.php:280
 msgid "No Data Found"
@@ -2976,9 +2926,7 @@ msgstr "Kifizetett bevétel"
 #: app/Services/TransStrings.php:299
 msgid ""
 "Paste a URL from this website. Affiliate info will be added automatically."
-msgstr ""
-"Illesszen be egy URL-t erről a webhelyről. A partnerinformációk "
-"automatikusan hozzáadódnak."
+msgstr "Illesszen be egy URL-t erről a webhelyről. A partnerinformációk automatikusan hozzáadódnak."
 
 #: app/Services/TransStrings.php:300
 msgid "Pay Affiliates"
@@ -2988,13 +2936,11 @@ msgstr "Partnerek kifizetése"
 msgid ""
 "Pay all or selected affiliates all their unpaid referrals in the specified "
 "timeframe."
-msgstr ""
-"Fizesse ki az összes vagy kiválasztott partnernek az összes ki nem fizetett "
-"ajánlását a megadott időkereten belül."
+msgstr "Fizesse ki az összes partnernek vagy a kiválasztott partnereknek a megadott időszakban keletkezett összes ki nem fizetett ajánlási jutalékot."
 
 #: app/Services/TransStrings.php:303
 msgid "Payment Email:"
-msgstr "Fizetési e-mail:"
+msgstr "Fizetési e-mail cím:"
 
 #: app/Services/TransStrings.php:304
 msgid "Payment email"
@@ -3030,7 +2976,7 @@ msgstr "Százalék (%)"
 
 #: app/Services/TransStrings.php:316
 msgid "Performance Summary Email Digest"
-msgstr "Teljesítmény-összefoglaló e-mail kivonat"
+msgstr "Teljesítmény-összefoglaló e-mail"
 
 #: app/Services/TransStrings.php:318
 msgid "Placeholder"
@@ -3093,7 +3039,7 @@ msgstr ""
 
 #: app/Services/TransStrings.php:329
 msgid "Please select a migrator"
-msgstr "Kérjük, válasszon egy migrátort"
+msgstr "Kérjük, válasszon egy áttelepítőt"
 
 #: app/Services/TransStrings.php:330
 msgid "Please select an option"
@@ -3130,7 +3076,7 @@ msgstr "Pro"
 #: app/Services/TransStrings.php:338 app/Services/TransStrings.php:549
 #: app/Services/TransStrings.php:605
 msgid "Processing"
-msgstr "Feldolgozás"
+msgstr "Feldolgozás alatt"
 
 #: app/Services/TransStrings.php:339
 msgid "Processing transactions, please wait..."
@@ -3144,13 +3090,11 @@ msgstr "Adja meg a nevet"
 msgid ""
 "Provide a brief description to help identify the purpose of this "
 "creative.Ex: Banner for Summer Sale."
-msgstr ""
-"Adjon meg egy rövid leírást, hogy segítsen azonosítani ennek a kreatívnak a "
-"célját.Példa: Banner a nyári akcióhoz."
+msgstr "Adjon meg egy rövid leírást, hogy segítsen azonosítani ennek a kreatívnak a célját. Példa: Banner a nyári akcióhoz."
 
 #: app/Services/TransStrings.php:342
 msgid "Provider ID (Order ID)"
-msgstr "Szolgáltatóazonosító (rendelésazonosító)"
+msgstr "Szolgáltató ID (Rendelés ID)"
 
 #: app/Services/TransStrings.php:343
 msgid "Public"
@@ -3174,7 +3118,7 @@ msgstr "QR-kód színe"
 
 #: app/Services/TransStrings.php:348
 msgid "Rate"
-msgstr "Ráta"
+msgstr "Jutalékmérték"
 
 #: app/Services/TransStrings.php:349
 msgid "Rate type"
@@ -3186,7 +3130,7 @@ msgstr "Ráta:"
 
 #: app/Services/TransStrings.php:351
 msgid "Read Documentation"
-msgstr "Olvassa el a dokumentációt"
+msgstr "Dokumentáció olvasása"
 
 #: app/Services/TransStrings.php:352
 msgid "Ready to connect? Choose your plugin to get started!"
@@ -3230,12 +3174,11 @@ msgstr "Ajánlások záró dátuma"
 
 #: app/Services/TransStrings.php:364
 msgid "Referrals end date. Leave Blank for current date."
-msgstr "Ajánlások záró dátuma. Hagyja üresen az aktuális dátumhoz."
+msgstr "Ajánlások befejezésének dátuma. Hagyja üresen, ha az aktuális dátumot szeretné használni."
 
 #: app/Services/TransStrings.php:365
 msgid "Referrals start date. Leave Blank for calculate from start"
-msgstr ""
-"Ajánlások kezdő dátuma. Hagyja üresen az elejétől történő számításhoz."
+msgstr "Ajánlások kezdő dátuma. Hagyja üresen, ha a kezdetektől szeretné számítani."
 
 #: app/Services/TransStrings.php:366
 #, php-format
@@ -3293,11 +3236,11 @@ msgstr "Állítsa vissza"
 
 #: app/Services/TransStrings.php:381
 msgid "Reset Current Migration"
-msgstr "Állítsa vissza a jelenlegi migrációt"
+msgstr "Aktuális áttelepítés alaphelyzetbe állítása"
 
 #: app/Services/TransStrings.php:382
 msgid "Review Payout"
-msgstr "Tekintse át a kifizetést"
+msgstr "Kifizetés áttekintése"
 
 #: app/Services/TransStrings.php:383
 msgid "Sale"
@@ -3309,7 +3252,7 @@ msgstr "Mentse"
 
 #: app/Services/TransStrings.php:385
 msgid "Save (Pro Required)"
-msgstr "Mentse (Pro szükséges)"
+msgstr "Mentés (Pro szükséges)"
 
 #: app/Services/TransStrings.php:386
 msgid "Save Changes"
@@ -3321,7 +3264,7 @@ msgstr "Mentse a beállításokat"
 
 #: app/Services/TransStrings.php:388
 msgid "Save Settings (Pro Required)"
-msgstr "Mentse a beállításokat (Pro szükséges)"
+msgstr "Beállítások mentése (Pro szükséges)"
 
 #: app/Services/TransStrings.php:389
 msgid "Scheduled"
@@ -3333,15 +3276,15 @@ msgstr "Keressen"
 
 #: app/Services/TransStrings.php:391
 msgid "Search Visit/Refer URL or UTM details"
-msgstr "Keressen Visit/Refer URL vagy UTM részleteket"
+msgstr "Látogatási/hivatkozási URL-ek vagy UTM-részletek keresése"
 
 #: app/Services/TransStrings.php:392
 msgid "Search and Select Affiliate"
-msgstr "Keressen és válassza ki a partnert"
+msgstr "Keresse meg, majd válassza ki a partnert"
 
 #: app/Services/TransStrings.php:393
 msgid "Search and select user"
-msgstr "Keressen és válassza ki a felhasználót"
+msgstr "Keresse meg, majd válassza ki a felhasználót"
 
 #: app/Services/TransStrings.php:394
 msgid "Search by ID, Amount, Date"
@@ -3373,7 +3316,7 @@ msgstr "Válassza ki az alapértelmezett pénznemet"
 
 #: app/Services/TransStrings.php:402
 msgid "Select Email Digest Frequency"
-msgstr "Válassza ki az e-mail összefoglaló gyakoriságát"
+msgstr "Válassza ki az e-mailes összefoglaló gyakoriságát"
 
 #: app/Services/TransStrings.php:403
 msgid "Select Group"
@@ -3385,11 +3328,11 @@ msgstr "Válassza ki a termékeket vagy kategóriákat"
 
 #: app/Services/TransStrings.php:405
 msgid "Select Rate"
-msgstr "Válassza ki a rátát"
+msgstr "Válassza ki a jutalékmértéket"
 
 #: app/Services/TransStrings.php:406
 msgid "Select Rate Type"
-msgstr "Válassza ki a ráta típusát"
+msgstr "Válassza ki a jutaléktípust"
 
 #: app/Services/TransStrings.php:407
 msgid "Select Referral Format"
@@ -3416,9 +3359,7 @@ msgstr ""
 
 #: app/Services/TransStrings.php:413
 msgid "Select specific affiliates to privately share this creative."
-msgstr ""
-"Válasszon ki konkrét partnereket, hogy ezt a kreatívat privát módon megossza"
-" velük."
+msgstr "Válasszon ki konkrét partnereket, hogy ezt a kreatívot privát módon megossza velük."
 
 #: app/Services/TransStrings.php:414
 msgid "Select the affiliate area page for your referral."
@@ -3449,9 +3390,7 @@ msgstr ""
 msgid ""
 "Set the standard commission rate for referrals. This can be a percentage or "
 "a fixed amount."
-msgstr ""
-"Állítsa be az ajánlásokra vonatkozó alap jutalékmértéket. Ez lehet "
-"százalékos vagy fix összeg."
+msgstr "Állítsa be az ajánlásokra vonatkozó alapértelmezett jutalékmértéket. Ez lehet százalékos vagy rögzített összeg."
 
 #: app/Services/TransStrings.php:420
 msgid "Setting successfully saved"
@@ -3463,7 +3402,7 @@ msgstr "Megjelenítés minden partner számára"
 
 #: app/Services/TransStrings.php:423
 msgid "Site Admin"
-msgstr "Webhely adminisztrátor"
+msgstr "Webhely adminja"
 
 #: app/Services/TransStrings.php:424
 msgid "Site Description"
@@ -3491,7 +3430,7 @@ msgstr "Forrás"
 
 #: app/Services/TransStrings.php:432
 msgid "Source ID"
-msgstr "Forrásazonosító"
+msgstr "Forrás-ID"
 
 #: app/Services/TransStrings.php:433
 msgid "Source Order Details"
@@ -3503,7 +3442,7 @@ msgstr "Kezdés dátuma"
 
 #: app/Services/TransStrings.php:435
 msgid "Start Date & Time"
-msgstr "Kezdés dátuma és időpontja"
+msgstr "Kezdő dátum és idő"
 
 #: app/Services/TransStrings.php:436
 msgid "Start Time"
@@ -3570,9 +3509,7 @@ msgstr "Ez a partner még nincs jóváhagyva. Jelenlegi állapot: %s"
 msgid ""
 "This feature is available in FluentAffiliate Pro. Upgrade to unlock advanced"
 " functionality and take your affiliate program to the next level."
-msgstr ""
-"Ez a funkció a FluentAffiliate Pro-ban érhető el. Frissítsen, hogy feloldja "
-"a fejlett funkciókat, és a partnerprogramját a következő szintre emelje."
+msgstr "Ez a funkció a FluentAffiliate Pro-ban érhető el. Frissítsen a haladó funkciók feloldásához, és emelje partnerprogramját a következő szintre."
 
 #: app/Services/TransStrings.php:453
 msgid "This is a system defined field. You can only edit labels"
@@ -3580,25 +3517,19 @@ msgstr "Ez egy rendszer által definiált mező. Csak a címkéket szerkesztheti
 
 #: app/Services/TransStrings.php:454
 msgid "This is used to link the referral to a specific order. ex: 12345"
-msgstr ""
-"Ezt az ajánlás egy konkrét rendeléshez való kapcsolására használjuk. ex: "
-"12345"
+msgstr "Ezzel kapcsolható az ajánlás egy adott rendeléshez. Például: 12345"
 
 #: app/Services/TransStrings.php:455
 msgid ""
 "This is used to provide additional context for the creative. Ex: This is a "
 "banner for the summer sale"
-msgstr ""
-"Ezt a kreatívhez kapcsolódó további kontextus megadására használjuk. Ex: Ez "
-"egy banner a nyári kiárusításhoz"
+msgstr "Ez a kreatívhoz kapcsolódó további információk megadására szolgál. Például: Ez egy banner a nyári akcióhoz"
 
 #: app/Services/TransStrings.php:456
 msgid ""
 "This is used to provide additional context for the referral, such as the "
 "source referral. ex: fluent_cart"
-msgstr ""
-"Ezt az ajánláshoz kapcsolódó további kontextus megadására használjuk, "
-"például a forrásajánlásra. ex: fluent_cart"
+msgstr "Ez az ajánláshoz kapcsolódó további információk megadására szolgál, például az ajánlás forrása. Pl.: fluent_cart"
 
 #: app/Services/TransStrings.php:457
 msgid "This variable will be used in referral links. For example:"
@@ -3678,15 +3609,15 @@ msgstr "US-stílus"
 
 #: app/Services/TransStrings.php:480
 msgid "UTM Campaign"
-msgstr "UTM kampány"
+msgstr "UTM-kampány"
 
 #: app/Services/TransStrings.php:481
 msgid "UTM Medium"
-msgstr "UTM médium"
+msgstr "UTM-médium"
 
 #: app/Services/TransStrings.php:482
 msgid "UTM Source"
-msgstr "UTM forrás"
+msgstr "UTM-forrás"
 
 #: app/Services/TransStrings.php:483
 msgid "Unable to load email settings. Please try again later."
@@ -3725,7 +3656,7 @@ msgstr "Csoport frissítése"
 
 #: app/Services/TransStrings.php:493
 msgid "Update Manager"
-msgstr "Menedzser frissítése"
+msgstr "Frissítéskezelő"
 
 #: app/Services/TransStrings.php:494
 msgid "Update Permission"
@@ -3745,11 +3676,11 @@ msgstr "Töltsön fel egy képet, amely az e-mail fejlécében lesz megjelenítv
 
 #: app/Services/TransStrings.php:498
 msgid "Use"
-msgstr "Használja"
+msgstr "Használat"
 
 #: app/Services/TransStrings.php:499
 msgid "Use comma separated values for multiple email addresses"
-msgstr "Használjon vesszővel elválasztott értékeket több e-mail címhez"
+msgstr "Több e-mail cím megadásához használjon vesszővel elválasztott értékeket"
 
 #: app/Services/TransStrings.php:500
 msgid "Verify License"
@@ -3801,23 +3732,23 @@ msgstr "Év elejétől"
 
 #: app/Services/TransStrings.php:514
 msgid "Yes, Delete"
-msgstr "Igen, törölje"
+msgstr "Igen, törlés"
 
 #: app/Services/TransStrings.php:515
 msgid "Yes, Delete the Affiliate"
-msgstr "Igen, törölje a partnert"
+msgstr "Igen, a partner törlése"
 
 #: app/Services/TransStrings.php:516
 msgid "Yes, Migrate"
-msgstr "Igen, migrálja"
+msgstr "Igen, migrálás"
 
 #: app/Services/TransStrings.php:517
 msgid "Yes, delete it!"
-msgstr "Igen, törölje!"
+msgstr "Igen, törlés!"
 
 #: app/Services/TransStrings.php:518
 msgid "Yes, mark all as paid!"
-msgstr "Igen, jelölje mindet kifizetettnek!"
+msgstr "Igen, mindegyik fizetettként való megjelölése!"
 
 #: app/Services/TransStrings.php:519
 msgid "You cannot edit a paid referral."
@@ -3840,19 +3771,13 @@ msgid ""
 "Create and manage affiliate groups with FluentAffiliate Pro. Organize "
 "affiliates into groups, set group-specific settings, and track performance "
 "across multiple groups."
-msgstr ""
-"Hozzon létre és kezeljen partnercsoportokat a FluentAffiliate Pro-val. "
-"Szervezze a partnereket csoportokba, állítson be csoportspecifikus "
-"beállításokat, és kövesse a teljesítményt több csoport között."
+msgstr "Hozzon létre és kezeljen partnercsoportokat a FluentAffiliate Pro segítségével. Ossza csoportokba a partnereket, adja meg a csoportspecifikus beállításokat, és kövesse nyomon több csoport teljesítményét."
 
 #: app/Services/TransStrings.php:524
 msgid ""
 "Create and manage creatives with FluentAffiliate Pro. Customize the creative"
 " type, image, text, and QR code, and schedule the creative as needed."
-msgstr ""
-"Hozzon létre és kezeljen kreatívokat a FluentAffiliate Pro-val. "
-"Testreszabhatja a kreatív típusát, képét, szövegét és QR-kódját, és szükség "
-"szerint ütemezheti a kreatívot."
+msgstr "Hozzon létre és kezeljen kreatívokat a FluentAffiliate Pro segítségével. Szabja testre a kreatív típusát, képét, szövegét és QR-kódját, és szükség szerint időzítse a kreatívot."
 
 #: app/Services/TransStrings.php:525
 msgid ""
@@ -3866,49 +3791,34 @@ msgstr ""
 msgid ""
 "Select any integrations you would like to enable for your store. You can "
 "update this information at any time through your settings."
-msgstr ""
-"Válassza ki azokat az integrációkat, amelyeket engedélyezni szeretne az "
-"áruházához. Ezt az információt bármikor frissítheti a beállításokban."
+msgstr "Válassza ki azokat az integrációkat, amelyeket be szeretne kapcsolni az áruházában. Ezt az információt bármikor frissítheti a beállításokban."
 
 #: app/Services/TransStrings.php:527
 msgid ""
 "If you have other websites that you want to offer as tracking domain where "
 "your affiliates can share those websites as well then connect those websites"
 " here."
-msgstr ""
-"Ha vannak más webhelyei, amelyeket követési domainként szeretne felkínálni, "
-"ahol partnerei ezeket a webhelyeket is megoszthatják, akkor itt "
-"csatlakoztassa ezeket a webhelyeket."
+msgstr "Ha vannak más webhelyei, amelyeket követési domainként szeretne felkínálni, hogy partnerei ezeket is megoszthassák, csatlakoztassa őket itt."
 
 #: app/Services/TransStrings.php:528
 msgid ""
 "Connect unlimited sites and manage cross-domain affiliate tracking with "
 "FluentAffiliate Pro. Get advanced analytics, priority support, and powerful "
 "multi-domain features."
-msgstr ""
-"Csatlakoztasson korlátlan számú webhelyet, és kezelje a több domainen "
-"átívelő partnerkövetést a FluentAffiliate Pro-val. Kapjon fejlett "
-"analitikát, elsőbbségi támogatást és erőteljes többdomaines funkciókat."
+msgstr "Csatlakoztasson korlátlan számú webhelyet, és kezelje a domainek közötti partnerkövetést a FluentAffiliate Pro segítségével. Kapjon hozzáférést haladó elemzésekhez, elsőbbségi támogatáshoz és sokoldalú, többdomaines funkciókhoz."
 
 #: app/Services/TransStrings.php:530
 msgid ""
 "Customize the registration form fields for new affiliates. You can enable or"
 " hide system fields, set required fields, and adjust the order as needed."
-msgstr ""
-"Testreszabhatja az új partnerek regisztrációs űrlapjának mezőit. "
-"Engedélyezheti vagy elrejtheti a rendszermezőket, beállíthatja a kötelező "
-"mezőket, és szükség szerint módosíthatja a sorrendet."
+msgstr "Testreszabhatja az új partnerek regisztrációs űrlapjának mezőit. Engedélyezheti vagy elrejtheti a rendszermezőket, beállíthatja a kötelező mezőket, és szükség szerint módosíthatja a sorrendet."
 
 #: app/Services/TransStrings.php:531
 msgid ""
 "Customize the registration form fields for new affiliates with "
 "FluentAffiliate Pro. You can enable or hide system fields, set required "
 "fields, and adjust the order as needed."
-msgstr ""
-"Testreszabhatja az új partnerek regisztrációs űrlapjának mezőit a "
-"FluentAffiliate Pro-val. Engedélyezheti vagy elrejtheti a rendszermezőket, "
-"beállíthatja a kötelező mezőket, és szükség szerint módosíthatja a "
-"sorrendet."
+msgstr "Testreszabhatja az új partnerek regisztrációs űrlapjának mezőit a FluentAffiliate Pro segítségével. Bekapcsolhatja vagy elrejtheti a rendszermezőket, beállíthatja a kötelező mezőket, és szükség szerint módosíthatja a sorrendet."
 
 #: app/Services/TransStrings.php:532
 msgid ""
@@ -4002,26 +3912,24 @@ msgstr "A partnerlink sikeresen létrehozva!"
 
 #: app/Services/TransStrings.php:567
 msgid "All of your Referral URL Visits will be shown here"
-msgstr "Itt jelennek meg az ajánlói URL-látogatásai"
+msgstr "Itt jelenik meg az összes ajánlói URL-látogatás."
 
 #: app/Services/TransStrings.php:568
 msgid "All of your creatives will be shown here"
-msgstr "Itt jelennek meg az összes kreatívja"
+msgstr "Itt jelenik meg az összes kreatívja"
 
 #: app/Services/TransStrings.php:569
 msgid "All of your payouts will be shown here"
-msgstr "Itt jelennek meg az összes kifizetése"
+msgstr "Itt jelenik meg az összes kifizetése"
 
 #: app/Services/TransStrings.php:570
 msgid "All of your referrals will be shown here"
-msgstr "Itt jelennek meg az összes ajánlása"
+msgstr "Itt jelenik meg az összes ajánlása"
 
 #: app/Services/TransStrings.php:572
 msgid ""
 "Boost your earnings by sharing these links to our additional product sites."
-msgstr ""
-"Növelje bevételeit, ha megosztja ezeket a linkeket további "
-"termékwebhelyeinkre."
+msgstr "Növelje bevételeit azzal, hogy megosztja a további termékwebhelyeinkre mutató linkeket."
 
 #: app/Services/TransStrings.php:577
 msgid "Copy and paste the following"
@@ -4071,17 +3979,13 @@ msgstr "Utoljára frissítve ekkor"
 msgid ""
 "Paste any URL from our product websites in the field below to generate a "
 "referral link."
-msgstr ""
-"Illesszen be bármely URL-t termékwebhelyeinkről az alábbi mezőbe, hogy "
-"ajánlói hivatkozást hozzon létre."
+msgstr "Illesszen be bármely URL-t termékeink honlapjairól az alábbi mezőbe, hogy ajánlói hivatkozást hozzon létre."
 
 #: app/Services/TransStrings.php:600
 msgid ""
 "Paste any URL from this website in the field below to generate a referral "
 "link."
-msgstr ""
-"Illesszen be bármely URL-t erről a webhelyről az alábbi mezőbe, hogy ajánlói"
-" hivatkozást hozzon létre."
+msgstr "Illesszen be bármely URL-t erről a webhelyről az alábbi mezőbe, hogy ajánlói hivatkozást hozzon létre."
 
 #: app/Services/TransStrings.php:603
 msgid "Please enter a valid URL from the supported sites."
@@ -4097,7 +4001,7 @@ msgstr "Átirányítás...."
 
 #: app/Services/TransStrings.php:610
 msgid "Refer"
-msgstr "Ajánlja"
+msgstr "Hivatkozó"
 
 #: app/Services/TransStrings.php:611
 msgid "Referral URL Visits (Unique)"
@@ -4141,7 +4045,7 @@ msgstr "Az Ön Affiliate hivatkozása"
 
 #: app/Services/TransStrings.php:627
 msgid "Your Affiliate Links"
-msgstr "Az Ön Affiliate hivatkozásai"
+msgstr "Az Ön partneri hivatkozásai"
 
 #: app/Services/TransStrings.php:628
 msgid "Your Branded Coupon Codes"

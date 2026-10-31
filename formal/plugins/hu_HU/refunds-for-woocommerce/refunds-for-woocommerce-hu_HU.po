@@ -1,0 +1,1813 @@
+# Copyright (C) 2026 AspiringPlugins
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ultimate Refunds 2.4.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/refunds-for-woocommerce\n"
+"POT-Creation-Date: 2026-10-31T08:04:33+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: refunds-for-woocommerce\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: Ultimate Refunds\n"
+"X-Plugin-Tone: formal\n"
+"X-Plugin-Version: 2.4.0\n"
+
+#. Plugin Name of the plugin
+#: refunds-for-woocommerce.php
+msgid "Ultimate Refunds"
+msgstr "Ultimate Refunds"
+
+#. Description of the plugin
+#: refunds-for-woocommerce.php
+msgid ""
+"This plugin allows your customers to request refunds for their orders easily"
+" from their account page."
+msgstr "Ez a bővítmény lehetővé teszi vásárlói számára, hogy a fiókoldalukról egyszerűen visszatérítést kérjenek a rendeléseik után."
+
+#. Author of the plugin
+#: refunds-for-woocommerce.php
+msgid "AspiringPlugins"
+msgstr "AspiringPlugins"
+
+#. Author URI of the plugin
+#: refunds-for-woocommerce.php
+msgid "https://woo.com/vendor/aspiringplugins/"
+msgstr "https://woo.com/vendor/aspiringplugins/"
+
+#: includes/abstracts/abstract-asp-rpw-email.php:156
+msgid "Enable/Disable"
+msgstr "Engedélyezés/Letiltás"
+
+#: includes/abstracts/abstract-asp-rpw-email.php:158
+msgid "Enable this email notification"
+msgstr "E-mail-értesítés bekapcsolása"
+
+#: includes/abstracts/abstract-asp-rpw-email.php:166
+msgid "Recipient(s)"
+msgstr "Címzett(ek)"
+
+#. translators: 1: admin email
+#: includes/abstracts/abstract-asp-rpw-email.php:169
+#, php-format
+msgid "Enter recipients (comma separated) for this email. Defaults to %1$s."
+msgstr ""
+"Adja meg az e-mail címzettjeit (vesszővel elválasztva). Alapértelmezés: "
+"%1$s."
+
+#: includes/abstracts/abstract-asp-rpw-email.php:179
+msgid "Email Subject"
+msgstr "E-mail tárgya"
+
+#. translators: 1: email subject
+#. translators: 1: email heading
+#: includes/abstracts/abstract-asp-rpw-email.php:182
+#: includes/abstracts/abstract-asp-rpw-email.php:190
+#, php-format
+msgid "Defaults to <code>%1$s</code>"
+msgstr "Alapértelmezett érték: <code>%1$s</code>"
+
+#: includes/abstracts/abstract-asp-rpw-email.php:187
+msgid "Email Heading"
+msgstr "E-mail címsora"
+
+#: includes/abstracts/abstract-asp-rpw-email.php:199
+msgid "Send Email to Admin"
+msgstr "E-mail küldése az adminisztrátornak"
+
+#: includes/admin/class-asp-rpw-admin-assets.php:56
+msgid "Coupon has been created successfully!!"
+msgstr "A kupon sikeresen létrehozva!"
+
+#: includes/admin/class-asp-rpw-admin-assets.php:57
+msgid "Are you sure you want to proceed?"
+msgstr "Biztosan folytatja?"
+
+#: includes/admin/class-asp-rpw-admin-assets.php:59
+msgid ""
+"Are you sure you wish to delete this note? This action cannot be undone."
+msgstr "Biztosan törölni kívánja ezt a megjegyzést? Ez a művelet nem vonható vissza."
+
+#: includes/admin/class-asp-rpw-admin-assets.php:68
+msgid "The export failed. Please try again."
+msgstr "Az exportálás sikertelen. Kérjük, próbálja újra."
+
+#: includes/admin/class-asp-rpw-admin-exporters.php:41
+#: includes/admin/views/html-admin-page-refund-requests-export.php:22
+msgid "Export Refund Requests"
+msgstr "Visszatérítési kérelmek exportálása"
+
+#: includes/admin/class-asp-rpw-admin-exporters.php:49
+#: includes/admin/class-asp-rpw-admin-exporters.php:65
+#: includes/class-asp-rpw-ajax.php:508
+msgid "You do not have permission to export refund requests."
+msgstr "Nincs jogosultsága a visszatérítési kérelmek exportálásához."
+
+#: includes/admin/class-asp-rpw-admin-exporters.php:72
+#: includes/class-asp-rpw-ajax.php:518
+msgid "The export file was not found. Please run the export again."
+msgstr "Az exportálási fájl nem található. Kérjük, futtassa újra az exportálást."
+
+#: includes/admin/class-asp-rpw-admin-exporters.php:143
+#: includes/admin/views/html-admin-reports.php:50
+msgid "Export CSV"
+msgstr "CSV exportálása"
+
+#: includes/admin/class-asp-rpw-admin-menus.php:53
+msgid "Refunds"
+msgstr "Visszatérítések"
+
+#. translators: %s: order
+#: includes/admin/class-asp-rpw-admin-menus.php:118
+#: includes/class-asp-rpw-account-functions.php:31
+#: includes/class-asp-rpw-post-types.php:31
+#: includes/class-asp-rpw-query.php:227
+msgid "Refund Requests"
+msgstr "Visszatérítési kérelmek"
+
+#: includes/admin/class-asp-rpw-admin-menus.php:122
+#: includes/admin/settings/class-asp-rpw-general.php:24
+#: includes/class-asp-rpw-install.php:123
+msgid "Settings"
+msgstr "Beállítások"
+
+#: includes/admin/class-asp-rpw-admin-menus.php:126
+#: includes/admin/settings/class-asp-rpw-reports.php:24
+msgid "Reports"
+msgstr "Jelentések"
+
+#. Translators: %s order type name.
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:66
+#, php-format
+msgid "%s data"
+msgstr "%s adatai"
+
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:67
+#: includes/class-asp-rpw-account-functions.php:61
+msgid "Actions"
+msgstr "Műveletek"
+
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:68
+#: includes/class-asp-rpw-refund-request-functions.php:23
+msgid "Coupon offered"
+msgstr "Felajánlott kupon"
+
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:71
+msgid "Images uploaded"
+msgstr "Feltöltött képek"
+
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:74
+msgid "Notes"
+msgstr "Jegyzetek"
+
+#. Translators: %s order type name.
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:78
+msgid "Conversation"
+msgstr "Beszélgetés"
+
+#. Translators: %s order type name.
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:82
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-shop-orders.php:55
+msgid "Refund Request"
+msgstr "Visszatérítési kérelem"
+
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:91
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:97
+msgid "No records found."
+msgstr "Nem találhatók rekordok."
+
+#. translators: 1: urls
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:108
+#, php-format
+msgid "This order linked with the refund request(s) %s"
+msgstr "Ez a rendelés a következő visszatérítési kérelem(ek)hez kapcsolódik: %s"
+
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:156
+msgid "Refund Request items are not editable."
+msgstr "A visszatérítési kérelem tételei nem szerkeszthetők."
+
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:262
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:265
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:267
+msgid "Refund request updated."
+msgstr "A visszatérítési kérelem frissítve."
+
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:263
+msgid "Custom field updated."
+msgstr "Egyéni mező frissítve."
+
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:264
+msgid "Custom field deleted."
+msgstr "Egyéni mező törölve."
+
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:266
+msgid "Revision restored."
+msgstr "Változat visszaállítva."
+
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:268
+msgid "Refund request saved."
+msgstr "A visszatérítési kérelem mentve."
+
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:269
+msgid "Refund request submitted."
+msgstr "A visszatérítési kérelem elküldve."
+
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:271
+msgid "Refund request draft updated."
+msgstr "A visszatérítési kérelem vázlata frissítve."
+
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:272
+msgid "Refund request updated and sent."
+msgstr "A visszatérítési kérelem frissítve és elküldve."
+
+#. translators: %s: order count
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:288
+#, php-format
+msgid "%s refund request updated."
+msgid_plural "%s orders updated."
+msgstr[0] "%s visszatérítési kérelem frissítve."
+msgstr[1] "%s rendelés frissítve."
+
+#. translators: %s: order count
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:290
+#, php-format
+msgid "%s refund request not updated, somebody is editing it."
+msgid_plural "%s orders not updated, somebody is editing them."
+msgstr[0] "%s visszatérítési kérelem nem frissült, mert valaki szerkeszti."
+msgstr[1] "%s rendelés nem frissült, mert valaki szerkeszti őket."
+
+#. translators: %s: order count
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:292
+#, php-format
+msgid "%s refund request permanently deleted."
+msgid_plural "%s orders permanently deleted."
+msgstr[0] "%s visszatérítési kérelem véglegesen törölve."
+msgstr[1] "%s rendelés véglegesen törölve."
+
+#. translators: %s: order count
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:294
+#, php-format
+msgid "%s refund request moved to the Trash."
+msgid_plural "%s orders moved to the Trash."
+msgstr[0] "%s visszatérítési kérelem a kukába helyezve."
+msgstr[1] "%s rendelés a kukába helyezve."
+
+#. translators: %s: order count
+#: includes/admin/class-asp-rpw-admin-meta-boxes.php:296
+#, php-format
+msgid "%s refund request restored from the Trash."
+msgid_plural "%s orders restored from the Trash."
+msgstr[0] "%s visszatérítési kérelem visszaállítva a kukából."
+msgstr[1] "%s rendelés visszaállítva a kukából."
+
+#: includes/admin/class-asp-rpw-admin-settings.php:144
+msgid "Your settings have been saved."
+msgstr "A beállításai mentve lettek."
+
+#: includes/admin/class-asp-rpw-admin-settings.php:170
+msgid "Your settings have been reset."
+msgstr "A rendszer alaphelyzetbe állította a beállításokat."
+
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:44
+#: includes/class-asp-rpw-account-functions.php:56
+msgid "Request"
+msgstr "Kérés"
+
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:45
+#: includes/class-asp-rpw-account-functions.php:57
+msgid "Order"
+msgstr "Sorrend"
+
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:46
+#: includes/class-asp-rpw-account-functions.php:58
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:134
+msgid "Date"
+msgstr "Dátum"
+
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:47
+#: includes/admin/views/html-admin-reports-leaderboards.php:86
+#: includes/class-asp-rpw-account-functions.php:59
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:135
+#: templates/myaccount/view-refund-request.php:52
+msgid "Status"
+msgstr "Állapot"
+
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:48
+#: includes/admin/views/html-admin-reports-leaderboards.php:25
+#: includes/admin/views/html-admin-reports-leaderboards.php:42
+#: includes/admin/views/html-admin-reports-leaderboards.php:64
+#: includes/admin/views/html-admin-reports-leaderboards.php:86
+#: includes/class-asp-rpw-account-functions.php:60
+msgid "Amount"
+msgstr "Összeg"
+
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:49
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:136
+#: templates/myaccount/view-refund-request.php:56
+msgid "Type"
+msgstr "Típus"
+
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:50
+#: includes/admin/views/html-admin-reports-leaderboards.php:42
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:137
+#: templates/myaccount/view-refund-request.php:72
+msgid "Reason"
+msgstr "Indok"
+
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:78
+msgid "Delete"
+msgstr "Törlés"
+
+#. translators: %s billing address
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:168
+#, php-format
+msgid "Billing: %s"
+msgstr "Számlázás: %s"
+
+#. translators: placeholder is customer's billing email
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:173
+#, php-format
+msgid "Email: %s"
+msgstr "E-mail: %s"
+
+#. translators: placeholder is customer's billing phone number
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:178
+#, php-format
+msgid "Tel: %s"
+msgstr "Telefon: %s"
+
+#. translators: $1: is opening link, $2: is refund request number, $3: is
+#. closing link tag, $4: is user's name
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:205
+#, php-format
+msgid "%1$s#%2$s%3$s %4$s"
+msgstr "%1$s#%2$s%3$s %4$s"
+
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:209
+msgid "Preview"
+msgstr "Előnézet"
+
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:258
+#: includes/admin/views/html-admin-page-refund-requests-export.php:65
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:283
+#: templates/myaccount/view-refund-request.php:60
+#: templates/refund-request/refund-type.php:23
+#: templates/refund-request/refund-type.php:32
+msgid "Full Refund"
+msgstr "Teljes visszatérítés"
+
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:260
+#: includes/admin/views/html-admin-page-refund-requests-export.php:66
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:283
+#: templates/myaccount/view-refund-request.php:62
+#: templates/refund-request/refund-type.php:19
+#: templates/refund-request/refund-type.php:24
+msgid "Partial Refund"
+msgstr "Részleges visszatérítés"
+
+#. translators: placeholder is refund method
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:278
+#, php-format
+msgid "<b>Reason:</b> %s"
+msgstr "<b>Indok:</b> %s"
+
+#. translators: placeholder is refund reason
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:280
+#, php-format
+msgid "<b>Description:</b> %s"
+msgstr "<b>Leírás:</b> %s"
+
+#. translators: %s: human-readable time difference
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:297
+#: templates/myaccount/refund-requests.php:62
+#, php-format
+msgctxt "%s = human-readable time difference"
+msgid "%s ago"
+msgstr "%s ezelőtt"
+
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:304
+#: templates/myaccount/refund-requests.php:69
+msgid "M j, Y"
+msgstr "Y. F j."
+
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:370
+msgid "All"
+msgstr "Összes"
+
+#. translators: 1: user display name 2: user ID 3: user email
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:454
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:127
+#, php-format
+msgid "%1$s (#%2$s &ndash; %3$s)"
+msgstr "%1$s (#%2$s &ndash; %3$s)"
+
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:458
+msgid "Filter by registered customer"
+msgstr "Szűrés regisztrált vásárló szerint"
+
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-refund-requests.php:463
+msgid "Any payment method"
+msgstr "Bármely fizetési mód"
+
+#: includes/admin/list-tables/class-asp-rpw-admin-list-table-shop-orders.php:99
+msgid "This order linked with the refund request(s) "
+msgstr "Ez a rendelés a következő visszatérítési kérelmekhez kapcsolódik "
+
+#: includes/admin/meta-boxes/class-asp-rpw-meta-box-refund-request-actions.php:33
+msgid "Resend invoice order notification"
+msgstr "Számláról szóló rendelési értesítés újraküldése"
+
+#: includes/admin/meta-boxes/class-asp-rpw-meta-box-refund-request-actions.php:51
+msgid "Delete permanently"
+msgstr "Végleges törlés"
+
+#: includes/admin/meta-boxes/class-asp-rpw-meta-box-refund-request-actions.php:53
+msgid "Move to Trash"
+msgstr "Áthelyezés a lomtárba"
+
+#: includes/admin/meta-boxes/class-asp-rpw-meta-box-refund-request-actions.php:61
+msgid "Create"
+msgstr "Létrehozás"
+
+#: includes/admin/meta-boxes/class-asp-rpw-meta-box-refund-request-actions.php:61
+#: includes/admin/views/html-admin-reports.php:48
+msgid "Update"
+msgstr "Frissítés"
+
+#: includes/admin/meta-boxes/class-asp-rpw-meta-box-refund-request-created-coupon.php:30
+#: includes/admin/meta-boxes/class-asp-rpw-meta-box-refund-request-created-coupon.php:36
+msgid "No data found."
+msgstr "Nem található adat."
+
+#: includes/admin/meta-boxes/class-asp-rpw-meta-box-refund-request-created-coupon.php:42
+#: templates/myaccount/view-refund-request.php:82
+msgid "Coupon Name"
+msgstr "Kupon neve"
+
+#: includes/admin/meta-boxes/class-asp-rpw-meta-box-refund-request-created-coupon.php:46
+#: templates/myaccount/view-refund-request.php:86
+msgid "Coupon Amount"
+msgstr "Kupon összege"
+
+#: includes/admin/meta-boxes/class-asp-rpw-meta-box-refund-request-notes.php:41
+msgid "Add note"
+msgstr "Megjegyzés hozzáadása"
+
+#: includes/admin/meta-boxes/class-asp-rpw-meta-box-refund-request-notes.php:41
+msgid "Add a note for your reference."
+msgstr "Adjon hozzá egy megjegyzést saját használatra."
+
+#: includes/admin/meta-boxes/class-asp-rpw-meta-box-refund-request-notes.php:45
+msgid "Note type"
+msgstr "Megjegyzés típusa"
+
+#: includes/admin/meta-boxes/class-asp-rpw-meta-box-refund-request-notes.php:47
+msgid "Private note"
+msgstr "Privát megjegyzés"
+
+#: includes/admin/meta-boxes/class-asp-rpw-meta-box-refund-request-notes.php:48
+msgid "Note to customer"
+msgstr "Megjegyzés a vásárlónak"
+
+#: includes/admin/meta-boxes/class-asp-rpw-meta-box-refund-request-notes.php:50
+msgid "Add private note"
+msgstr "Privát megjegyzés hozzáadása"
+
+#. translators: 1: refund request number 2: order ID
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:15
+#, php-format
+msgid "Refund Request #%1$s for Order #%2$s details"
+msgstr "Visszatérítési kérelem #%1$s a #%2$s számú rendeléshez – részletek"
+
+#. translators: %s: payment method
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:26
+#, php-format
+msgid "Payment via %s"
+msgstr "Fizetés a(z) %s útján"
+
+#. translators: %s: IP address
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:46
+#, php-format
+msgid "Customer IP: %s"
+msgstr "Vásárló IP-címe: %s"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:55
+#: includes/admin/settings/class-asp-rpw-general.php:47
+msgid "General"
+msgstr "Általános"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:58
+msgid "Date created:"
+msgstr "Létrehozás dátuma:"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:69
+msgid "h"
+msgstr "ó"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:70
+msgid "m"
+msgstr "m"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:85
+msgid "Status:"
+msgstr "Állapot:"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:105
+msgid "Customer:"
+msgstr "Vásárló:"
+
+#. translators: 1: profile url 2: profile
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:114
+msgid "Profile &rarr;"
+msgstr "Profil &rarr;"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:131
+msgid "Guest"
+msgstr "Vendég"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:152
+msgid "Billing"
+msgstr "Számlázás"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:153
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:280
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:155
+msgid "Load billing address"
+msgstr "Számlázási cím betöltése"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:164
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:292
+msgid "Address:"
+msgstr "Cím:"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:164
+msgid "No billing address set."
+msgstr "Nincs megadva számlázási cím."
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:194
+msgid "Customer Provided Note:"
+msgstr "Vásárló által megadott megjegyzés:"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:231
+msgid "Payment method:"
+msgstr "Fizetési mód:"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:233
+msgid "N/A"
+msgstr "N/A"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:247
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:249
+msgid "Other"
+msgstr "Egyéb"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:258
+msgid "Transaction ID"
+msgstr "Tranzakcióazonosító"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:264
+msgid "Customer Provided Note"
+msgstr "Ügyfél által megadott megjegyzés"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:265
+msgid "Customer notes about the refund request"
+msgstr "A vásárló megjegyzései a visszatérítési kérelemhez"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:279
+msgid "Shipping"
+msgstr "Szállítás"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:282
+msgid "Load shipping address"
+msgstr "Szállítási cím betöltése"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:283
+msgid "Copy billing address"
+msgstr "Számlázási cím másolása"
+
+#: includes/admin/meta-boxes/views/html-refund-request-data.php:292
+msgid "No shipping address set."
+msgstr "Nincs megadva szállítási cím."
+
+#: includes/admin/meta-boxes/views/html-uploaded-images.php:28
+msgid "No image(s) found."
+msgstr "Nem található kép."
+
+#: includes/admin/settings/class-asp-rpw-general.php:52
+msgid "Allow Refund Requests"
+msgstr "Visszatérítési kérelmek engedélyezése"
+
+#: includes/admin/settings/class-asp-rpw-general.php:55
+msgid ""
+"When enabled, customers can request refunds from their My Account page."
+msgstr "Bekapcsolás esetén a vásárlók visszatérítést kérhetnek a Fiókom oldalukról."
+
+#: includes/admin/settings/class-asp-rpw-general.php:59
+msgid "Allowed Order Statuses for Refund Request"
+msgstr "A visszatérítési kérelem esetén engedélyezett megrendelések állapotai"
+
+#: includes/admin/settings/class-asp-rpw-general.php:67
+msgid "Refund Request Period in Days"
+msgstr "A visszatérítési kérelem időtartama napokban"
+
+#: includes/admin/settings/class-asp-rpw-general.php:74
+msgid ""
+"Refund request button can be displayed to the customers till the number of "
+"days entered from the order completion date. If no value is entered then the"
+" refund request button will be displayed for older orders too."
+msgstr "A visszatérítési kérelem gomb a rendelés teljesítésének dátumától számított, itt megadott napokig jeleníthető meg a vásárlóknak. Ha nem ad meg értéket, a gomb régebbi rendelések esetén is megjelenik."
+
+#: includes/admin/settings/class-asp-rpw-general.php:81
+msgid "Partial Refunds"
+msgstr "Részleges visszatérítések"
+
+#: includes/admin/settings/class-asp-rpw-general.php:84
+msgid ""
+"Manage how partial refunds are handled for orders and individual items."
+msgstr "A részleges visszatérítések kezelésének beállítása megrendelések és egyes tételek esetén."
+
+#: includes/admin/settings/class-asp-rpw-general.php:87
+msgid "Allow Partial Refunds"
+msgstr "Részleges visszatérítések engedélyezése"
+
+#: includes/admin/settings/class-asp-rpw-general.php:91
+msgid ""
+"When enabled, customers can request refunds for individual products within "
+"an order."
+msgstr "Bekapcsolás esetén a vásárlók egy rendelés egyes termékeire is kérhetnek visszatérítést."
+
+#: includes/admin/settings/class-asp-rpw-general.php:94
+msgid "Allow Refunds with Tax"
+msgstr "Adót is tartalmazó visszatérítések engedélyezése"
+
+#: includes/admin/settings/class-asp-rpw-general.php:98
+msgid ""
+"When enabled, taxes will be included in the refund amount when processing "
+"refunds."
+msgstr "Bekapcsolás esetén az adók összege is beleszámít a visszatérítés összegébe a visszatérítések feldolgozásakor."
+
+#: includes/admin/settings/class-asp-rpw-general.php:105
+msgid "Automatic Refunds"
+msgstr "Automatikus visszatérítések"
+
+#: includes/admin/settings/class-asp-rpw-general.php:108
+msgid ""
+"Manage how refund requests are processed. Enable automatic refunds for "
+"supported gateways or automatically approve requests that require manual "
+"processing."
+msgstr "A visszatérítési kérelmek feldolgozásának beállítása. Kapcsolja be az automatikus visszatérítést a támogatott fizetési módoknál, vagy hagyja automatikusan jóvá a kézi feldolgozást igénylő kérelmeket."
+
+#: includes/admin/settings/class-asp-rpw-general.php:111
+msgid "Allow Automatic Refunds"
+msgstr "Automatikus visszatérítések engedélyezése"
+
+#: includes/admin/settings/class-asp-rpw-general.php:115
+msgid ""
+"When enabled, refund requests will be processed automatically if the "
+"selected payment gateway supports refunds. Approved requests will be "
+"refunded instantly through the payment gateway."
+msgstr "Bekapcsolás esetén a visszatérítési kérelmek automatikusan feldolgozásra kerülnek, ha a kiválasztott fizetési mód támogatja a visszatérítést. A jóváhagyott kérelmek összegét a rendszer azonnal visszatéríti a fizetési módon keresztül."
+
+#: includes/admin/settings/class-asp-rpw-general.php:118
+msgid "Allow Automatic Approval"
+msgstr "Automatikus jóváhagyás engedélyezése"
+
+#: includes/admin/settings/class-asp-rpw-general.php:122
+msgid ""
+"When enabled, refund requests will be automatically approved if the selected"
+" payment gateway does not support refunds. Please note that refunds must be "
+"handled manually outside the system."
+msgstr "Bekapcsolás esetén a visszatérítési kérelmek automatikusan jóváhagyásra kerülnek, ha a kiválasztott fizetési mód nem támogatja a visszatérítést. Kérjük, vegye figyelembe, hogy a visszatérítéseket a rendszeren kívül, kézzel kell intézni."
+
+#: includes/admin/settings/class-asp-rpw-general.php:125
+msgid "Allow Restock Refunded Items"
+msgstr "Visszatérített tételek készletre vételének engedélyezése"
+
+#: includes/admin/settings/class-asp-rpw-general.php:129
+msgid ""
+"When enabled, refunded items will be automatically restocked back into "
+"inventory."
+msgstr "Bekapcsolás esetén a visszatérített tételek automatikusan visszakerülnek a készletbe."
+
+#: includes/admin/settings/class-asp-rpw-general.php:136
+msgid "Offer Coupons"
+msgstr "Kuponok felajánlása"
+
+#: includes/admin/settings/class-asp-rpw-general.php:139
+msgid "Set up coupon-based refunds and customize how coupons are generated."
+msgstr "A kuponalapú visszatérítések beállítása és a kuponok létrehozásának testreszabása."
+
+#: includes/admin/settings/class-asp-rpw-general.php:142
+msgid "Coupon Code Type"
+msgstr "Kuponkód típusa"
+
+#: includes/admin/settings/class-asp-rpw-general.php:147
+msgid "Alphanumeric"
+msgstr "Alfanumerikus"
+
+#: includes/admin/settings/class-asp-rpw-general.php:148
+msgid "Numeric"
+msgstr "Numerikus"
+
+#: includes/admin/settings/class-asp-rpw-general.php:152
+msgid "Coupon Code Length"
+msgstr "Kuponkód hossza"
+
+#: includes/admin/settings/class-asp-rpw-general.php:162
+msgid "Coupon Code Prefix"
+msgstr "Kuponkód előtag"
+
+#: includes/admin/settings/class-asp-rpw-general.php:168
+msgid "Coupon Code Suffix"
+msgstr "Kuponkód utótagja"
+
+#: includes/admin/settings/class-asp-rpw-general.php:174
+msgid "Coupon Expiry in Days"
+msgstr "Kupon érvényessége napokban"
+
+#: includes/admin/settings/class-asp-rpw-general.php:187
+msgid "Request Form"
+msgstr "Kérelmi űrlap"
+
+#: includes/admin/settings/class-asp-rpw-general.php:190
+msgid ""
+"Configure the fields and options shown to customers when submitting a refund"
+" request."
+msgstr "Állítsa be a visszatérítési kérelem benyújtásakor a vásárlóknak megjelenő mezőket és opciókat."
+
+#: includes/admin/settings/class-asp-rpw-general.php:193
+msgid "Show in Popup"
+msgstr "Megjelenítés felugró ablakban"
+
+#: includes/admin/settings/class-asp-rpw-general.php:199
+msgid "Disable Image(s) Upload"
+msgstr "Képfeltöltés kikapcsolása"
+
+#: includes/admin/settings/class-asp-rpw-general.php:205
+msgid "Refund Reasons"
+msgstr "Visszatérítési okok"
+
+#: includes/admin/settings/class-asp-rpw-general.php:211
+msgid "Terms and Conditions"
+msgstr "Általános szerződési feltételek"
+
+#: includes/admin/settings/class-asp-rpw-general.php:217
+msgid "Message"
+msgstr "Üzenet"
+
+#: includes/admin/settings/class-asp-rpw-general.php:227
+msgid "Restrictions"
+msgstr "Korlátozások"
+
+#: includes/admin/settings/class-asp-rpw-general.php:230
+msgid "Define restrictions that apply to refund requests."
+msgstr "Határozza meg a visszatérítési kérelmekre vonatkozó korlátozásokat."
+
+#: includes/admin/settings/class-asp-rpw-general.php:233
+msgid "Minimum Order Amount for Refund Request"
+msgstr "A visszatérítési kérelem minimális rendelési összege"
+
+#: includes/admin/settings/class-asp-rpw-general.php:242
+msgid "Disable User Role(s)"
+msgstr "Felhasználói szerepkörök kikapcsolása"
+
+#: includes/admin/settings/class-asp-rpw-general.php:250
+msgid "Exclude Specific Countries"
+msgstr "Meghatározott országok kizárása"
+
+#: includes/admin/settings/class-asp-rpw-general.php:262
+msgid "Account Page"
+msgstr "Fiókoldal"
+
+#: includes/admin/settings/class-asp-rpw-general.php:265
+msgid ""
+"Manage how refund requests are displayed and handled in the My Account "
+"section."
+msgstr "Állítsa be a visszatérítési kérelmek megjelenítésének és kezelésének módját a Saját fiók szakaszban."
+
+#: includes/admin/settings/class-asp-rpw-general.php:268
+msgid "Refund Requests Endpoint"
+msgstr "Visszatérítési kérelmek végpontja"
+
+#: includes/admin/settings/class-asp-rpw-general.php:274
+msgid "View Refund Request Endpoint"
+msgstr "Visszatérítési kérelem megtekintésének végpontja"
+
+#: includes/admin/settings/class-asp-rpw-general.php:280
+msgid "Enable Conversation"
+msgstr "Beszélgetés bekapcsolása"
+
+#: includes/admin/settings/class-asp-rpw-general.php:290
+msgid "Labels"
+msgstr "Feliratok"
+
+#: includes/admin/settings/class-asp-rpw-general.php:293
+msgid "Manage and customize labels related to refund requests."
+msgstr "Kezelje és szabja testre a visszatérítési kérelmekhez kapcsolódó címkéket."
+
+#: includes/admin/settings/class-asp-rpw-general.php:296
+msgid "New Status"
+msgstr "Új állapot"
+
+#: includes/admin/settings/class-asp-rpw-general.php:302
+msgid "On hold Status"
+msgstr "Függőben lévő állapot"
+
+#: includes/admin/settings/class-asp-rpw-general.php:308
+msgid "Processing Status"
+msgstr "Feldolgozás alatti állapot"
+
+#: includes/admin/settings/class-asp-rpw-general.php:314
+msgid "Approved Status"
+msgstr "Jóváhagyott állapot"
+
+#: includes/admin/settings/class-asp-rpw-general.php:320
+msgid "Rejected Status"
+msgstr "Elutasított állapot"
+
+#: includes/admin/settings/class-asp-rpw-general.php:326
+msgid "Coupon offered Status"
+msgstr "Felajánlott kupon állapota"
+
+#: includes/admin/settings/class-asp-rpw-reports.php:79
+msgid "The report could not be loaded. Please reload the page and try again."
+msgstr "A jelentés nem tölthető be. Kérjük, töltse be újra az oldalt, majd próbálja meg ismét."
+
+#: includes/admin/settings/class-asp-rpw-reports.php:80
+msgid "No data for the selected date range"
+msgstr "Nincs adat a kiválasztott dátumtartományban"
+
+#. translators: %s: number of hours
+#: includes/admin/settings/class-asp-rpw-reports.php:82
+#, php-format
+msgid "%sh"
+msgstr "%s óra"
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:28
+msgid "Export refund requests to a CSV file"
+msgstr "Visszatérítési kérelmek exportálása CSV-fájlba"
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:29
+msgid ""
+"This tool allows you to generate and download a CSV file containing a list "
+"of refund requests."
+msgstr "Ezzel az eszközzel létrehozhat és letölthet egy CSV-fájlt, amely a visszatérítési kérelmek listáját tartalmazza."
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:36
+msgid "Which columns should be exported?"
+msgstr "Mely oszlopokat exportálja?"
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:39
+msgid "Export all columns"
+msgstr "Összes oszlop exportálása"
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:48
+msgid "Which statuses should be exported?"
+msgstr "Mely állapotokat exportálja?"
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:51
+msgid "Export all statuses"
+msgstr "Összes állapot exportálása"
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:60
+msgid "Which refund type should be exported?"
+msgstr "Melyik visszatérítési típust exportálja?"
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:64
+msgid "Export all types"
+msgstr "Összes típus exportálása"
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:72
+msgid "Which dates should be exported?"
+msgstr "Mely dátumokat exportálja?"
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:77
+#: includes/admin/views/html-admin-reports.php:32
+msgid "From"
+msgstr "Kezdő dátum"
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:81
+#: includes/admin/views/html-admin-reports.php:36
+msgid "To"
+msgstr "Befejezés dátuma"
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:85
+msgid "Leave both empty to export requests from all dates."
+msgstr "Ha az összes dátum kérelmeit szeretné exportálni, hagyja üresen mindkét mezőt."
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:90
+msgid "Which customer should be exported?"
+msgstr "Melyik vásárlót exportálja?"
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:93
+msgid "Export all customers"
+msgstr "Összes vásárló exportálása"
+
+#. translators: 1: user display name 2: user ID 3: user email
+#: includes/admin/views/html-admin-page-refund-requests-export.php:96
+#, php-format
+msgid "%1$s (#%2$s – %3$s)"
+msgstr "%1$s (#%2$s – %3$s)"
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:103
+msgid "Which payment method should be exported?"
+msgstr "Melyik fizetési módot exportálja?"
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:107
+msgid "Export all payment methods"
+msgstr "Összes fizetési mód exportálása"
+
+#: includes/admin/views/html-admin-page-refund-requests-export.php:128
+msgid "Generate CSV"
+msgstr "CSV létrehozása"
+
+#. translators: 1: comparison name 2: comparison value
+#: includes/admin/views/html-admin-reports-cards.php:44
+#, php-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: includes/admin/views/html-admin-reports-leaderboards.php:24
+msgid "Top products"
+msgstr "Legnépszerűbb termékek"
+
+#: includes/admin/views/html-admin-reports-leaderboards.php:25
+#: templates/emails/email-order-details.php:36
+#: templates/myaccount/view-refund-request.php:124
+#: templates/refund-request/items.php:18
+msgid "Product"
+msgstr "Termék"
+
+#: includes/admin/views/html-admin-reports-leaderboards.php:25
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:139
+msgid "Items"
+msgstr "Tétel"
+
+#: includes/admin/views/html-admin-reports-leaderboards.php:25
+#: includes/admin/views/html-admin-reports-leaderboards.php:42
+#: includes/admin/views/html-admin-reports-leaderboards.php:64
+#: includes/admin/views/html-admin-reports-leaderboards.php:86
+msgid "Requests"
+msgstr "Kérések"
+
+#: includes/admin/views/html-admin-reports-leaderboards.php:41
+msgid "Top reasons"
+msgstr "Leggyakoribb okok"
+
+#: includes/admin/views/html-admin-reports-leaderboards.php:42
+msgid "Share"
+msgstr "Megosztás"
+
+#: includes/admin/views/html-admin-reports-leaderboards.php:63
+msgid "Top customers"
+msgstr "Vásárlók rangsora"
+
+#: includes/admin/views/html-admin-reports-leaderboards.php:64
+msgid "Customer"
+msgstr "Vásárló"
+
+#: includes/admin/views/html-admin-reports-leaderboards.php:64
+msgid "Email"
+msgstr "E-mail"
+
+#: includes/admin/views/html-admin-reports-leaderboards.php:85
+msgid "Requests by status"
+msgstr "Kérelmek állapot szerint"
+
+#: includes/admin/views/html-admin-reports-leaderboards.php:102
+msgid "No data recorded for the selected time period."
+msgstr "A kiválasztott időszakra vonatkozóan nincs rögzített adat."
+
+#: includes/admin/views/html-admin-reports.php:24
+msgid "Date range"
+msgstr "Dátumtartomány"
+
+#: includes/admin/views/html-admin-reports.php:40
+msgid "Compare to"
+msgstr "Összehasonlítás ezzel"
+
+#. translators: 1: date range name 2: dates 3: comparison name 4: comparison
+#. dates
+#: includes/admin/views/html-admin-reports.php:57
+#, php-format
+msgid "%1$s (%2$s) vs. %3$s (%4$s)"
+msgstr "%1$s (%2$s) – %3$s (%4$s) összehasonlítása"
+
+#: includes/admin/views/html-admin-reports.php:68
+msgid "Performance"
+msgstr "Teljesítmény"
+
+#: includes/admin/views/html-admin-reports.php:84
+msgid "Interval"
+msgstr "Időköz"
+
+#: includes/admin/views/html-admin-reports.php:90
+msgid "Chart type"
+msgstr "Diagramtípus"
+
+#: includes/admin/views/html-admin-reports.php:91
+msgid "Line chart"
+msgstr "Vonaldiagram"
+
+#: includes/admin/views/html-admin-reports.php:92
+msgid "Bar chart"
+msgstr "Oszlopdiagram"
+
+#: includes/admin/views/html-admin-reports.php:101
+msgid "Leaderboards"
+msgstr "Ranglisták"
+
+#: includes/admin/views/html-admin-settings.php:58
+msgid "Save changes"
+msgstr "Módosítások mentése"
+
+#: includes/admin/views/html-admin-settings.php:74
+msgid "Reset"
+msgstr "Visszaállítás"
+
+#. translators: %1$s: note date %2$s: note time
+#: includes/admin/views/html-conversation.php:31
+#: templates/myaccount/customer-conversation-notes.php:24
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s, időpont: %2$s"
+
+#. translators: %s: note author
+#: includes/admin/views/html-conversation.php:37
+#, php-format
+msgid "by %s"
+msgstr "%s által"
+
+#: includes/admin/views/html-conversation.php:40
+msgid "Delete note"
+msgstr "Megjegyzés törlése"
+
+#: includes/admin/views/html-conversation.php:47
+#: templates/myaccount/customer-conversation-notes.php:37
+msgid "There are no conversations yet."
+msgstr "Még nincsenek beszélgetések."
+
+#: includes/admin/views/html-conversation.php:59
+msgid "Add Note"
+msgstr "Megjegyzés hozzáadása"
+
+#: includes/admin/views/html-conversation.php:59
+msgid "Add a note to customer."
+msgstr "Megjegyzés hozzáadása a vásárlónak."
+
+#: includes/admin/views/html-conversation.php:63
+#: templates/myaccount/view-refund-request.php:217
+msgid "Send Message"
+msgstr "Üzenet küldése"
+
+#: includes/admin/views/html-conversation.php:69
+msgid ""
+"Valid refund request statuses to send the note are \"New\",\"On "
+"hold,\"Processing\""
+msgstr "Érvényes visszatérítési kérelemállapotok a megjegyzés küldéséhez: „New”, „On hold”, „Processing”"
+
+#: includes/admin/views/html-conversation.php:69
+msgid ""
+"Sending note to customer is no longer available for this refund request."
+msgstr "A vásárlónak szóló megjegyzés küldése ehhez a visszatérítési kérelemhez már nem érhető el."
+
+#: includes/class-asp-rpw-ajax.php:50 includes/class-asp-rpw-ajax.php:54
+#: includes/class-asp-rpw-ajax.php:60 includes/class-asp-rpw-ajax.php:180
+#: includes/class-asp-rpw-ajax.php:184 includes/class-asp-rpw-ajax.php:190
+#: includes/class-asp-rpw-ajax.php:281 includes/class-asp-rpw-ajax.php:295
+#: includes/class-asp-rpw-ajax.php:323 includes/class-asp-rpw-ajax.php:337
+#: includes/class-asp-rpw-ajax.php:438 includes/class-asp-rpw-ajax.php:479
+#: includes/class-asp-rpw-ajax.php:483
+msgid "Invalid request"
+msgstr "Érvénytelen kérés"
+
+#: includes/class-asp-rpw-ajax.php:66 includes/class-asp-rpw-ajax.php:196
+msgid "Invalid user"
+msgstr "Érvénytelen felhasználó"
+
+#: includes/class-asp-rpw-ajax.php:70 includes/class-asp-rpw-ajax.php:451
+#: includes/class-asp-rpw-template-functions.php:32
+msgid ""
+"Sorry! you are not eligible to request for a refund. Please contact us if "
+"you need assistance."
+msgstr "Sajnáljuk, Ön nem jogosult visszatérítést kérni. Kérjük, forduljon hozzánk, ha segítségre van szüksége."
+
+#: includes/class-asp-rpw-ajax.php:88
+msgid "Request already submitted"
+msgstr "A kérelmet már beküldték"
+
+#: includes/class-asp-rpw-ajax.php:97
+msgid "Invalid order item"
+msgstr "Hibás rendelési tétel"
+
+#: includes/class-asp-rpw-ajax.php:117
+msgid "Order Item \""
+msgstr "Rendelési tétel „"
+
+#: includes/class-asp-rpw-ajax.php:202
+msgid "Invalid order"
+msgstr "Érvénytelen rendelés"
+
+#: includes/class-asp-rpw-ajax.php:207
+msgid "Invalid amount"
+msgstr "Hibás összeg"
+
+#: includes/class-asp-rpw-ajax.php:212
+msgid "Coupon already created for this request"
+msgstr "Ehhez a kérelemhez már létrehoztak kupont"
+
+#: includes/class-asp-rpw-ajax.php:217
+msgid "Couldn't create coupon"
+msgstr "Nem sikerült kupont létrehozni"
+
+#: includes/class-asp-rpw-ajax.php:285 includes/class-asp-rpw-ajax.php:327
+#: includes/class-asp-rpw-ajax.php:442 includes/class-asp-rpw-ajax.php:447
+#: includes/class-asp-rpw-refund-request.php:137
+#: includes/class-asp-rpw-refund-request.php:335
+msgid "Invalid data"
+msgstr "Érvénytelen adat"
+
+#: includes/class-asp-rpw-ajax.php:289 includes/class-asp-rpw-ajax.php:331
+msgid "Please enter some message"
+msgstr "Kérjük, adjon meg egy üzenetet"
+
+#: includes/class-asp-rpw-ajax.php:565
+msgid "You do not have permission to view reports."
+msgstr "Önnek nincs jogosultsága a jelentések megtekintéséhez."
+
+#: includes/class-asp-rpw-ajax.php:575
+msgid "Invalid date range"
+msgstr "Érvénytelen dátumtartomány"
+
+#. translators: 1: email name 2: email recipients
+#: includes/class-asp-rpw-emails.php:126
+#, php-format
+msgid "<code>%1$s</code> - email has been sent to %2$s."
+msgstr "A <code>%1$s</code> e-mailt elküldtük a következő címre: %2$s."
+
+#. translators: 1: email name 2: email recipients
+#: includes/class-asp-rpw-emails.php:138
+#, php-format
+msgid "Failed to sent <code>%1$s</code> - email to %2$s."
+msgstr "Nem sikerült elküldeni a <code>%1$s</code> e-mailt a következő címre: %2$s."
+
+#: includes/class-asp-rpw-post-types.php:32
+msgctxt "asp_refund_request post type singular name"
+msgid "Refund Request"
+msgstr "Visszatérítési kérelem"
+
+#: includes/class-asp-rpw-post-types.php:33
+msgctxt "Admin menu name"
+msgid "Refunds"
+msgstr "Visszatérítések"
+
+#: includes/class-asp-rpw-post-types.php:34
+msgid "Edit Request"
+msgstr "Kérelem szerkesztése"
+
+#: includes/class-asp-rpw-post-types.php:35
+msgid "View Request"
+msgstr "Kérelem megtekintése"
+
+#: includes/class-asp-rpw-post-types.php:36
+msgid "Search Request"
+msgstr "Kérelem keresése"
+
+#: includes/class-asp-rpw-post-types.php:37
+msgid "No Request found."
+msgstr "Nem található kérelem."
+
+#: includes/class-asp-rpw-post-types.php:38
+msgid "No Request found in Trash."
+msgstr "Nem található kérelem a Lomtárban."
+
+#: includes/class-asp-rpw-post-types.php:40
+msgid "This is where store refund request are stored."
+msgstr "Itt tárolódnak az áruház visszatérítési kérelmei."
+
+#: includes/class-asp-rpw-post-types.php:78
+msgid "New Request"
+msgstr "Új kérelem"
+
+#: includes/class-asp-rpw-post-types.php:87
+msgid "On Hold Request"
+msgstr "Függőben lévő kérelem"
+
+#: includes/class-asp-rpw-post-types.php:96
+msgid "Processing Request"
+msgstr "Feldolgozás alatt álló kérelem"
+
+#: includes/class-asp-rpw-post-types.php:105
+msgid "Approved Request"
+msgstr "Jóváhagyott kérelem"
+
+#. translators: %s: order
+#: includes/class-asp-rpw-query.php:227
+#, php-format
+msgid "Request for Order #%s"
+msgstr "Kérelem a(z) #%s rendeléshez"
+
+#. translators: %s: request
+#: includes/class-asp-rpw-query.php:232
+#, php-format
+msgid "Request #%s"
+msgstr "Kérelem #%s"
+
+#: includes/class-asp-rpw-refund-request-functions.php:18
+msgid "New"
+msgstr "Új"
+
+#: includes/class-asp-rpw-refund-request-functions.php:19
+#: includes/class-asp-rpw-refund-request-functions.php:44
+msgid "On hold"
+msgstr "Visszatartva"
+
+#: includes/class-asp-rpw-refund-request-functions.php:20
+#: includes/class-asp-rpw-refund-request-functions.php:45
+msgid "Processing"
+msgstr "Feldolgozás alatt"
+
+#: includes/class-asp-rpw-refund-request-functions.php:21
+#: includes/class-asp-rpw-refund-request-functions.php:46
+msgid "Approved"
+msgstr "Jóváhagyott"
+
+#: includes/class-asp-rpw-refund-request-functions.php:22
+#: includes/class-asp-rpw-refund-request-functions.php:47
+msgid "Rejected"
+msgstr "Elutasítva"
+
+#: includes/class-asp-rpw-refund-request.php:96
+msgid "Coupon"
+msgstr "Kupon"
+
+#: includes/class-asp-rpw-refund-request.php:373
+msgid "Invalid refund amount"
+msgstr "Hibás visszatérítési összeg"
+
+#: includes/class-asp-rpw-refund-request.php:377
+msgid "Error processing refund. Please try again."
+msgstr "Hiba történt a visszatérítés feldolgozásakor. Kérjük, próbálja újra."
+
+#: includes/class-asp-rpw-refund-request.php:459
+msgid "Invalid refund"
+msgstr "Hibás visszatérítés"
+
+#. translators: 1: old refund request status 2: new refund request status
+#: includes/class-asp-rpw-refund-request.php:543
+#, php-format
+msgid "Status changed from %1$s to %2$s."
+msgstr "Állapot %1$s értékről %2$s értékre változott."
+
+#. translators: %s: new refund request status
+#: includes/class-asp-rpw-refund-request.php:560
+#, php-format
+msgid "Status set to %s."
+msgstr "Állapot beállítva: %s."
+
+#: includes/class-asp-rpw-report-functions.php:98
+msgid "Today"
+msgstr "Ma"
+
+#: includes/class-asp-rpw-report-functions.php:99
+msgid "Yesterday"
+msgstr "Tegnap"
+
+#: includes/class-asp-rpw-report-functions.php:100
+msgid "Week to date"
+msgstr "A hét elejétől máig"
+
+#: includes/class-asp-rpw-report-functions.php:101
+msgid "Last week"
+msgstr "Előző hét"
+
+#: includes/class-asp-rpw-report-functions.php:102
+msgid "Month to date"
+msgstr "Hónap elejétől máig"
+
+#: includes/class-asp-rpw-report-functions.php:103
+msgid "Last month"
+msgstr "Előző hónap"
+
+#: includes/class-asp-rpw-report-functions.php:104
+msgid "Quarter to date"
+msgstr "A negyedév elejétől máig"
+
+#: includes/class-asp-rpw-report-functions.php:105
+msgid "Last quarter"
+msgstr "Az elmúlt negyedév"
+
+#: includes/class-asp-rpw-report-functions.php:106
+msgid "Year to date"
+msgstr "E év eddig"
+
+#: includes/class-asp-rpw-report-functions.php:107
+msgid "Last year"
+msgstr "Előző év"
+
+#: includes/class-asp-rpw-report-functions.php:108
+msgid "Custom"
+msgstr "Egyéni"
+
+#: includes/class-asp-rpw-report-functions.php:123
+msgid "Previous period"
+msgstr "Előző időszak"
+
+#: includes/class-asp-rpw-report-functions.php:124
+msgid "Previous year"
+msgstr "Előző év"
+
+#: includes/class-asp-rpw-report-functions.php:349
+msgid "By day"
+msgstr "Naponként"
+
+#: includes/class-asp-rpw-report-functions.php:352
+msgid "By week"
+msgstr "Hetente"
+
+#: includes/class-asp-rpw-report-functions.php:356
+msgid "By month"
+msgstr "Havonta"
+
+#: includes/class-asp-rpw-report-functions.php:360
+msgid "By quarter"
+msgstr "Negyedévente"
+
+#: includes/class-asp-rpw-report-functions.php:364
+msgid "By year"
+msgstr "Évente"
+
+#: includes/class-asp-rpw-report-functions.php:474
+msgid "Not specified"
+msgstr "Nincs megadva"
+
+#: includes/class-asp-rpw-report-functions.php:608
+msgid "Refund requests"
+msgstr "Visszatérítési kérelmek"
+
+#: includes/class-asp-rpw-report-functions.php:614
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:140
+msgid "Requested amount"
+msgstr "Igényelt összeg"
+
+#: includes/class-asp-rpw-report-functions.php:620
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:141
+msgid "Refunded amount"
+msgstr "Visszatérített összeg"
+
+#: includes/class-asp-rpw-report-functions.php:626
+msgid "Store credit issued"
+msgstr "Kiadott áruházi jóváírás"
+
+#: includes/class-asp-rpw-report-functions.php:632
+msgid "Median review time"
+msgstr "Medián felülvizsgálati idő"
+
+#: includes/class-asp-rpw-report-functions.php:638
+msgid "Request rate"
+msgstr "Kérelmek aránya"
+
+#. translators: %s: week start date
+#: includes/class-asp-rpw-report-functions.php:695
+#, php-format
+msgid "Week of %s"
+msgstr "A hét kezdete: %s"
+
+#. translators: 1: quarter number 2: year
+#: includes/class-asp-rpw-report-functions.php:700
+#, php-format
+msgid "Q%1$d %2$s"
+msgstr "%1$d. negyedév, %2$s"
+
+#: includes/class-asp-rpw-template-functions.php:43
+msgid ""
+"Sorry! you are not eligible to view refund requests. Please contact us if "
+"you need assistance."
+msgstr "Sajnáljuk, Ön nem jogosult a visszatérítési kérelmek megtekintésére. Kérjük, forduljon hozzánk, ha segítségre van szüksége."
+
+#: includes/class-asp-rpw-template-functions.php:98
+msgid ""
+"Sorry! you are not eligible to view refund request. Please contact us if you"
+" need assistance."
+msgstr "Sajnáljuk, Ön nem jogosult a visszatérítési kérelem megtekintésére. Kérjük, forduljon hozzánk, ha segítségre van szüksége."
+
+#: includes/class-wc-ultimate-refunds.php:28
+msgid "Cloning is forbidden."
+msgstr "A klónozás tilos."
+
+#: includes/class-wc-ultimate-refunds.php:35
+msgid "Unserializing instances of this class is forbidden."
+msgstr "Az osztály példányainak visszadeszerializálása nem engedélyezett."
+
+#: includes/data-stores/class-asp-rpw-refund-requests-data-store-cpt.php:93
+msgid "Invalid refund request."
+msgstr "Hibás visszatérítési kérelem."
+
+#: includes/emails/class-asp-rpw-admin-new-refund-request.php:30
+msgid "New refund request"
+msgstr "Új visszatérítési kérelem"
+
+#: includes/emails/class-asp-rpw-admin-new-refund-request.php:31
+msgid ""
+"New refund request emails are sent to chosen recipient(s) when the customer "
+"is requested for refund."
+msgstr "Az új visszatérítési kérelmekről szóló e-maileket a kiválasztott címzett(ek) kapják meg, amikor a vásárló visszatérítést kér."
+
+#: includes/emails/class-asp-rpw-admin-new-refund-request.php:36
+msgid "[{site_title}]: New refund request #{refund_request_number}"
+msgstr "[{site_title}]: Új visszatérítési kérelem #{refund_request_number}"
+
+#: includes/emails/class-asp-rpw-admin-new-refund-request.php:37
+msgid "New Refund Request: #{refund_request_number}"
+msgstr "Új visszatérítési kérelem: #{refund_request_number}"
+
+#: includes/emails/class-asp-rpw-customer-approved-refund-request.php:29
+msgid "Refund approved"
+msgstr "Visszatérítés jóváhagyva"
+
+#: includes/emails/class-asp-rpw-customer-approved-refund-request.php:30
+msgid ""
+"Refund approved emails are sent to customers when their refund requests are "
+"marked approved."
+msgstr "A vásárlók e-mailben értesítést kapnak, ha a visszatérítési kérelmüket jóváhagyják."
+
+#: includes/emails/class-asp-rpw-customer-approved-refund-request.php:35
+msgid "[{site_title}]: Your refund request has been approved"
+msgstr "[{site_title}]: Visszatérítési kérelmét jóváhagytuk"
+
+#: includes/emails/class-asp-rpw-customer-approved-refund-request.php:36
+msgid "Your refund request has been approved"
+msgstr "Visszatérítési kérelmét jóváhagytuk"
+
+#: includes/emails/class-asp-rpw-customer-coupon-created-refund-request.php:34
+msgid "Coupon offered for refund"
+msgstr "Visszatérítésként felajánlott kupon"
+
+#: includes/emails/class-asp-rpw-customer-coupon-created-refund-request.php:35
+msgid ""
+"This is a notification sent to customers containing coupon details offered "
+"for refund."
+msgstr "Ez az értesítés a visszatérítésként felajánlott kupon részleteit tartalmazza az ügyfelek számára."
+
+#: includes/emails/class-asp-rpw-customer-coupon-created-refund-request.php:40
+msgid "[{site_title}] - Coupon offered for refund"
+msgstr "[{site_title}] – visszatérítésként felajánlott kupon"
+
+#: includes/emails/class-asp-rpw-customer-coupon-created-refund-request.php:41
+msgid "Coupon offered for you"
+msgstr "Az Önnek felajánlott kupon"
+
+#: includes/emails/class-asp-rpw-customer-new-refund-request.php:29
+msgid "Refund request submitted"
+msgstr "Visszatérítési kérelmét elküldtük"
+
+#: includes/emails/class-asp-rpw-customer-new-refund-request.php:30
+msgid ""
+"This is a notification sent to customers containing refund details after "
+"requested."
+msgstr "Ez az értesítés a visszatérítési kérelem részleteit tartalmazza az ügyfelek számára a kérelem elküldése után."
+
+#: includes/emails/class-asp-rpw-customer-new-refund-request.php:35
+msgid "[{site_title}]: Your refund request has been submitted"
+msgstr "[{site_title}]: Visszatérítési kérelmét elküldtük"
+
+#: includes/emails/class-asp-rpw-customer-new-refund-request.php:36
+msgid "Your refund request has been submitted"
+msgstr "Visszatérítési kérelmét elküldtük"
+
+#: includes/emails/class-asp-rpw-customer-on-hold-refund-request.php:29
+msgid "Refund on-hold"
+msgstr "Visszatérítés felfüggesztve"
+
+#: includes/emails/class-asp-rpw-customer-on-hold-refund-request.php:30
+msgid ""
+"This is a notification sent to customers containing refund details after a "
+"refund request is marked on-hold."
+msgstr "Ez az értesítés a visszatérítési kérelem részleteit tartalmazza az ügyfelek számára, miután a kérelmet felfüggesztették."
+
+#: includes/emails/class-asp-rpw-customer-on-hold-refund-request.php:35
+msgid "[{site_title}]: Your refund request is on hold"
+msgstr "[{site_title}]: Visszatérítési kérelme felfüggesztve"
+
+#: includes/emails/class-asp-rpw-customer-on-hold-refund-request.php:36
+msgid "Your refund request is on hold"
+msgstr "Visszatérítési kérelme felfüggesztve"
+
+#: includes/emails/class-asp-rpw-customer-processing-refund-request.php:29
+msgid "Processing refund"
+msgstr "A visszatérítés feldolgozás alatt"
+
+#: includes/emails/class-asp-rpw-customer-processing-refund-request.php:30
+msgid ""
+"This is a notification sent to customers containing refund details after a "
+"refund request is marked processing."
+msgstr "Ez az értesítés a visszatérítési kérelem részleteit tartalmazza a vásárlók számára, miután a kérelmet feldolgozás alatt állóként jelölték meg."
+
+#: includes/emails/class-asp-rpw-customer-processing-refund-request.php:35
+msgid "[{site_title}]: Processing your refund request"
+msgstr "[{site_title}]: Visszatérítési kérelmének feldolgozása"
+
+#: includes/emails/class-asp-rpw-customer-processing-refund-request.php:36
+msgid "Processing your refund request"
+msgstr "Visszatérítési kérelmének feldolgozása"
+
+#: includes/emails/class-asp-rpw-customer-rejected-refund-request.php:29
+msgid "Refund rejected"
+msgstr "Visszatérítési kérelem elutasítva"
+
+#: includes/emails/class-asp-rpw-customer-rejected-refund-request.php:30
+msgid ""
+"Refund rejected emails are sent to customers when their refund requests are "
+"marked rejected."
+msgstr "Az elutasított visszatérítési kérelmekről értesítő e-maileket küldünk az ügyfeleknek."
+
+#: includes/emails/class-asp-rpw-customer-rejected-refund-request.php:35
+msgid "[{site_title}]: Your refund request has been rejected"
+msgstr "[{site_title}]: Visszatérítési kérelmét elutasítottuk"
+
+#: includes/emails/class-asp-rpw-customer-rejected-refund-request.php:36
+msgid "Your refund request has been rejected"
+msgstr "Visszatérítési kérelmét elutasítottuk"
+
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:132
+msgid "Request ID"
+msgstr "Kérelem ID-ja"
+
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:133
+#: templates/myaccount/view-refund-request.php:48
+msgid "Order ID"
+msgstr "Rendelés ID"
+
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:138
+#: templates/refund-request/reason.php:11
+msgid "Description"
+msgstr "Leírás"
+
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:142
+msgid "Coupon code"
+msgstr "Kuponkód"
+
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:143
+msgid "Coupon amount"
+msgstr "Kupon összege"
+
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:144
+msgid "Currency"
+msgstr "Pénznem"
+
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:145
+msgid "Customer ID"
+msgstr "Vásárlói ID"
+
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:146
+msgid "Customer name"
+msgstr "Vásárló neve"
+
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:147
+msgid "Customer email"
+msgstr "Vásárlói e-mail cím"
+
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:148
+msgid "Payment method"
+msgstr "Fizetési mód"
+
+#: includes/export/class-asp-rpw-refund-requests-csv-exporter.php:149
+msgid "Date reviewed"
+msgstr "Felülvizsgálat dátuma"
+
+#: includes/frontend/class-asp-rpw-frontend-scripts.php:40
+msgid "Refund requested successfully"
+msgstr "Visszatérítési kérelmét sikeresen elküldte"
+
+#: includes/frontend/class-asp-rpw-frontend-scripts.php:41
+msgid "Enable atleast an order item to request a refund!!"
+msgstr "A visszatérítés kéréséhez jelöljön ki legalább egy rendelési tételt!"
+
+#: includes/frontend/class-asp-rpw-frontend-scripts.php:42
+msgid "Please agree to the terms and conditions !!"
+msgstr "Kérjük, fogadja el az általános szerződési feltételeket!"
+
+#: includes/frontend/class-asp-rpw-frontend-scripts.php:43
+msgid "Order item quantity is invalid !!"
+msgstr "A rendelési tétel mennyisége hibás!"
+
+#: includes/frontend/class-asp-rpw-frontend-scripts.php:45
+msgid "No item(s) found"
+msgstr "Nem található tétel"
+
+#: includes/frontend/class-asp-rpw-frontend-scripts.php:46
+msgid "Are you sure you want to request a refund?"
+msgstr "Biztosan visszatérítést szeretne kérni?"
+
+#. translators: %s: Customer billing full name %2s: Edit Post URL %3s: OrderID
+#: templates/emails/admin-new-refund-request.php:27
+#, php-format
+msgid ""
+"You have received the following Refund Request from <b>%1$s</b> for the "
+"Order <a href=\"%2$s\" target=\"_blank\">#%3$s</a>"
+msgstr "Ön visszatérítési kérelmet kapott <b>%1$s</b> vásárlótól a(z) <a href=\"%2$s\" target=\"_blank\">#%3$s</a> számú rendeléshez"
+
+#. translators: %s: Customer first name
+#: templates/emails/customer-approved-refund-request.php:24
+#: templates/emails/customer-coupon-created-refund-request.php:24
+#: templates/emails/customer-new-refund-request.php:24
+#: templates/emails/customer-on-hold-refund-request.php:25
+#: templates/emails/customer-processing-refund-request.php:25
+#: templates/emails/customer-rejected-refund-request.php:25
+#, php-format
+msgid "Hi %s,"
+msgstr "Kedves %s!"
+
+#. translators: %s: URL %1s Order ID
+#: templates/emails/customer-approved-refund-request.php:26
+#, php-format
+msgid ""
+"Just to let you know &mdash; your Refund Request <a href=\"%1$s\" "
+"target=\"_blank\">#%2$s</a> is <b>Approved</b> for the Order <a "
+"href=\"%3$s\" target=\"_blank\">#%4$s</a>. Your refund request details are "
+"as follows:"
+msgstr "Tájékoztatjuk, hogy a(z) <a href=\"%1$s\" target=\"_blank\">#%2$s</a> számú visszatérítési kérelmét a(z) <a href=\"%3$s\" target=\"_blank\">#%4$s</a> számú rendeléshez <b>jóváhagytuk</b>. A visszatérítési kérelem részletei:"
+
+#. translators: 1: URL 2: Order ID
+#: templates/emails/customer-coupon-created-refund-request.php:26
+#, php-format
+msgid ""
+"Just to let you know &mdash; we have offered a coupon for your Refund "
+"Request <a href=\"%1$s\" target=\"_blank\">#%2$s</a> submitted for the Order"
+" <a href=\"%3$s\" target=\"_blank\">#%4$s</a>."
+msgstr "Tájékoztatjuk, hogy kupont ajánlottunk fel a(z) <a href=\"%1$s\" target=\"_blank\">#%2$s</a> számú, a(z) <a href=\"%3$s\" target=\"_blank\">#%4$s</a> számú rendeléshez beküldött visszatérítési kérelméhez."
+
+#: templates/emails/customer-coupon-created-refund-request.php:27
+msgid "Your coupon code: "
+msgstr "Az Ön kuponkódja: "
+
+#: templates/emails/customer-coupon-created-refund-request.php:37
+msgid "Your refund request details are as follows: "
+msgstr "A visszatérítési kérelem részletei: "
+
+#. translators: %s: URL %1s Order ID
+#: templates/emails/customer-new-refund-request.php:26
+#, php-format
+msgid ""
+"Just to let you know &mdash; we have received your Refund Request <a "
+"href=\"%1$s\" target=\"_blank\">#%2$s</a> for the Order <a href=\"%3$s\" "
+"target=\"_blank\">#%4$s</a>. Your refund request details are as follows:"
+msgstr "Tájékoztatjuk, hogy megkaptuk a(z) <a href=\"%1$s\" target=\"_blank\">#%2$s</a> számú visszatérítési kérelmét a(z) <a href=\"%3$s\" target=\"_blank\">#%4$s</a> számú rendeléshez. A visszatérítési kérelem részletei:"
+
+#. translators: %s: URL %1s Order ID
+#: templates/emails/customer-on-hold-refund-request.php:27
+#, php-format
+msgid ""
+"Just to let you know &mdash; your Refund Request <a href=\"%1$s\" "
+"target=\"_blank\">#%2$s</a> is <b>On hold</b> for the Order <a href=\"%3$s\""
+" target=\"_blank\">#%4$s</a>. Your refund request details are as follows:"
+msgstr "Tájékoztatjuk, hogy a(z) <a href=\"%1$s\" target=\"_blank\">#%2$s</a> számú visszatérítési kérelme a(z) <a href=\"%3$s\" target=\"_blank\">#%4$s</a> számú rendeléshez <b>függőben van</b>. A visszatérítési kérelem részletei:"
+
+#. translators: %s: URL %1s Order ID
+#: templates/emails/customer-processing-refund-request.php:27
+#, php-format
+msgid ""
+"Just to let you know &mdash; your Refund Request <a href=\"%1$s\" "
+"target=\"_blank\">#%2$s</a> is <b>Processing</b> for the Order <a "
+"href=\"%3$s\" target=\"_blank\">#%4$s</a>. Your refund request details are "
+"as follows:"
+msgstr "Tájékoztatjuk, hogy a(z) <a href=\"%1$s\" target=\"_blank\">#%2$s</a> számú visszatérítési kérelme a(z) <a href=\"%3$s\" target=\"_blank\">#%4$s</a> számú rendeléshez <b>feldolgozás alatt áll</b>. A visszatérítési kérelem részletei:"
+
+#. translators: %s: URL %1s Order ID
+#: templates/emails/customer-rejected-refund-request.php:27
+#, php-format
+msgid ""
+"Just to let you know &mdash; your Refund Request <a href=\"%1$s\" "
+"target=\"_blank\">#%2$s</a> is <b>Rejected</b> for the Order <a "
+"href=\"%3$s\" target=\"_blank\">#%4$s</a>. Your refund request details are "
+"as follows:"
+msgstr "Tájékoztatjuk, hogy a(z) <a href=\"%1$s\" target=\"_blank\">#%2$s</a> számú visszatérítési kérelmét a(z) <a href=\"%3$s\" target=\"_blank\">#%4$s</a> számú rendeléshez <b>elutasítottuk</b>. A visszatérítési kérelem részletei:"
+
+#. translators: %s: Order ID.
+#: templates/emails/email-order-details.php:28
+#, php-format
+msgid "[Refund Request #%s]"
+msgstr "[Visszatérítési kérelem #%s]"
+
+#: templates/emails/email-order-details.php:37
+#: templates/refund-request/items.php:19
+msgid "Quantity"
+msgstr "Mennyiség"
+
+#: templates/emails/email-order-details.php:38
+msgid "Price"
+msgstr "Ár"
+
+#: templates/emails/email-order-details.php:74
+#: templates/myaccount/view-refund-request.php:175
+msgid "Note:"
+msgstr "Megjegyzés:"
+
+#. translators: %s: note author
+#: templates/myaccount/customer-conversation-notes.php:29
+#, php-format
+msgid "by <b>%s</b>"
+msgstr "írta: <b>%s</b>"
+
+#: templates/myaccount/refund-requests.php:82
+msgid "View"
+msgstr "Nézet"
+
+#: templates/myaccount/refund-requests.php:109
+msgid "Previous"
+msgstr "Előző"
+
+#: templates/myaccount/refund-requests.php:113
+msgid "Next"
+msgstr "Tovább"
+
+#: templates/myaccount/refund-requests.php:120
+msgid "No refund requests has been made yet."
+msgstr "Még nem nyújtott be visszatérítési kérelmet."
+
+#. translators: 1: refund request ID 2: order number 3: date 4. status
+#: templates/myaccount/view-refund-request.php:22
+#, php-format
+msgid ""
+"Refund Request #%1$s for Order #%2$s was initiated on %3$s and is currently "
+"%4$s."
+msgstr "A(z) #%1$s számú visszatérítési kérelmet a(z) #%2$s számú rendeléshez %3$s dátummal indították, jelenlegi állapota: %4$s."
+
+#: templates/myaccount/view-refund-request.php:36
+msgid "Refund details"
+msgstr "Visszatérítés részletei"
+
+#: templates/myaccount/view-refund-request.php:68
+msgid "Method"
+msgstr "Módszer"
+
+#: templates/myaccount/view-refund-request.php:120
+msgid "Refund totals"
+msgstr "Visszatérítési összegek"
+
+#: templates/myaccount/view-refund-request.php:125
+#: templates/refund-request/items.php:20
+msgid "Total"
+msgstr "Összeg"
+
+#: templates/myaccount/view-refund-request.php:202
+msgid "Conversations"
+msgstr "Beszélgetések"
+
+#: templates/myaccount/view-refund-request.php:213
+msgid "Add your note:"
+msgstr "Adja hozzá megjegyzését:"
+
+#: templates/myaccount/view-refund-request.php:214
+msgid "Type your message...."
+msgstr "Írja be üzenetét..."
+
+#: templates/refund-request/image-upload.php:11
+msgid "Upload Image(s)"
+msgstr "Képek feltöltése"
+
+#: templates/refund-request/items.php:16
+msgid "Select Items"
+msgstr "Válassza ki a tételeket"
+
+#: templates/refund-request/items.php:17
+msgid "Image"
+msgstr "Kép"
+
+#: templates/refund-request/items.php:21
+msgid "Refund Quantity"
+msgstr "Visszatérítendő mennyiség"
+
+#: templates/refund-request/items.php:86 templates/refund-request/total.php:11
+msgid "Refund Amount"
+msgstr "Visszatérítés összege"
+
+#: templates/refund-request/methods.php:13
+msgid "Refund Reason"
+msgstr "Visszatérítés indoka"
+
+#: templates/refund-request/reason.php:12
+msgid "Write some reason...."
+msgstr "Írja le az okot..."
+
+#: templates/refund-request/refund-type.php:11
+msgid "Refund Type"
+msgstr "Visszatérítés típusa"
+
+#: templates/refund-request/submit.php:11
+msgid "Submit"
+msgstr "Küldés"
+
+#: templates/request-a-refund-button-popup.php:14
+#: templates/request-a-refund-button.php:12
+msgid "Request a refund"
+msgstr "Visszatérítés igénylése"

@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: MainWP Wordfence Extension 5.1\n"
+"Project-Id-Version: MainWP Wordfence Extension 5.2.2\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:49:32+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: MainWP Wordfence Extension\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 5.1\n"
+"X-Plugin-Version: 5.2.2\n"
 
 #. Plugin Name of the plugin
 #: mainwp-wordfence-extension.php
@@ -38,12 +38,7 @@ msgid ""
 "the popular WordPress Wordfence Plugin. It allows you to manage Wordfence "
 "settings, Monitor Live Traffic and Scan your child sites directly from your "
 "dashboard. Requires MainWP Dashboard plugin."
-msgstr ""
-"A Wordfence-integráció egyesíti az Ön MainWP Vezérlőpultjának erejét a "
-"népszerű WordPress Wordfence bővítménnyel. Lehetővé teszi a Wordfence "
-"beállításainak kezelését, az élő forgalom figyelését és az Ön gyermek "
-"webhelyeinek átvizsgálását közvetlenül a vezérlőpultjáról. A MainWP "
-"Dashboard bővítményt igényli."
+msgstr "A Wordfence-integráció egyesíti az Ön MainWP vezérlőpultjának erejét a népszerű WordPress Wordfence bővítménnyel. Lehetővé teszi a Wordfence beállításainak kezelését, az élő forgalom figyelését és az Ön gyermek webhelyeinek átvizsgálását közvetlenül a vezérlőpultjáról. A MainWP vezérlőpult-bővítményre van szükség."
 
 #. Author of the plugin
 #: mainwp-wordfence-extension.php
@@ -64,7 +59,7 @@ msgstr "pl., 192.168.200.200 - 192.168.200.220 vagy 192.168.200.0/24"
 
 #: class/mainwp-wordfence-blocking.class.php:449
 msgid "Hostname"
-msgstr "Gépnév"
+msgstr "Állomásnév"
 
 #: class/mainwp-wordfence-blocking.class.php:454
 msgid "e.g, *.amazonaws.com or *.linode.com"
@@ -72,7 +67,7 @@ msgstr "pl., *.amazonaws.com vagy *.linode.com"
 
 #: class/mainwp-wordfence-blocking.class.php:460
 msgid "Browser user agent"
-msgstr "Böngésző user agent"
+msgstr "Böngészőazonosító"
 
 #: class/mainwp-wordfence-blocking.class.php:463
 msgid "e.g, *badRobot*, *MSIE*, or *browserSuffix"
@@ -147,7 +142,7 @@ msgid "Allowlisted IP addresses that bypass all rules"
 msgstr "Az összes szabályt megkerülő, engedélyezési listán szereplő IP-címek"
 
 #. translators: %s and %s are HTML tags.
-#: class/mainwp-wordfence-firewall.class.php:95
+#: class/mainwp-wordfence-firewall.class.php:97
 #, php-format
 msgid ""
 "We recommend whitelisting your Dashboard and your IP before making "
@@ -157,7 +152,7 @@ msgstr ""
 "vezérlőpultját és az IP-címét%1$sVezérlőpult IP-címe: %2$sAz Ön IP-címe:%3$s"
 
 #. translators: %s and %s are HTML tags.
-#: class/mainwp-wordfence-firewall.class.php:111
+#: class/mainwp-wordfence-firewall.class.php:113
 #, php-format
 msgid ""
 "Separate multiple IP's with commas. You can specify ranges using the "
@@ -170,58 +165,57 @@ msgstr ""
 "listára veszi a %2$sprivát hálózatokat%3$s, mivel ezek nem irányíthatók a "
 "nyilvános interneten."
 
-#: class/mainwp-wordfence-firewall.class.php:134
+#: class/mainwp-wordfence-firewall.class.php:136
 msgid "Allowlisted services"
 msgstr "Engedélyezési listán szereplő szolgáltatások"
 
-#: class/mainwp-wordfence-firewall.class.php:137
+#: class/mainwp-wordfence-firewall.class.php:139
 msgid "Sucuri"
 msgstr "Sucuri"
 
-#: class/mainwp-wordfence-firewall.class.php:140
+#: class/mainwp-wordfence-firewall.class.php:142
 msgid "Facebook"
 msgstr "Facebook"
 
-#: class/mainwp-wordfence-firewall.class.php:144
+#: class/mainwp-wordfence-firewall.class.php:146
 msgid "Uptime Robot"
 msgstr "Uptime Robot"
 
-#: class/mainwp-wordfence-firewall.class.php:148
+#: class/mainwp-wordfence-firewall.class.php:150
 msgid "StatusCake"
 msgstr "StatusCake"
 
-#: class/mainwp-wordfence-firewall.class.php:151
+#: class/mainwp-wordfence-firewall.class.php:153
 msgid "ManageWP"
 msgstr "ManageWP"
 
-#: class/mainwp-wordfence-firewall.class.php:154
+#: class/mainwp-wordfence-firewall.class.php:156
 msgid "Seznam Search Engine"
 msgstr "Seznam keresőmotor"
 
-#: class/mainwp-wordfence-firewall.class.php:160
+#: class/mainwp-wordfence-firewall.class.php:159
+msgid "Google Search Engine"
+msgstr "Google keresőmotor"
+
+#: class/mainwp-wordfence-firewall.class.php:165
 msgid "Immediately block IP's that access these URLs"
 msgstr "Az ezeket az URL-eket elérő IP-k azonnali blokkolása"
 
-#: class/mainwp-wordfence-firewall.class.php:169
+#: class/mainwp-wordfence-firewall.class.php:174
 msgid ""
 "Separate multiple URL's with commas. If you see an attacker repeatedly "
 "probing your site for a known vulnerability you can use this to immediately "
 "block them. All URL's must start with a '/' without quotes and must be "
 "relative. e.g. /badURLone/, /bannedPage.html, /dont-access/this/URL/"
-msgstr ""
-"Több URL-t vesszővel válasszon el. Ha azt tapasztalja, hogy egy támadó "
-"ismert sebezhetőséget keresve ismételten próbálgatja a webhelyét, ezzel "
-"azonnal blokkolhatja. Minden URL-nek idézőjelek nélkül a '/' jellel kell "
-"kezdődnie, és relatívnak kell lennie. pl. /badURLone/, /bannedPage.html, "
-"/dont-access/this/URL/"
+msgstr "Több URL-t vesszővel válasszon el. Ha azt tapasztalja, hogy egy támadó ismert sebezhetőséget keresve ismételten próbálgatja a webhelyét, ezzel azonnal blokkolhatja. Minden URL-nek idézőjelek nélkül a „/” jellel kell kezdődnie, és relatívnak kell lennie. pl. /badURLone/, /bannedPage.html, /dont-access/this/URL/"
 
-#: class/mainwp-wordfence-firewall.class.php:174
+#: class/mainwp-wordfence-firewall.class.php:179
 msgid "Ignored IP addresses for Wordfence Web Application Firewall alerting"
 msgstr ""
 "A Wordfence webalkalmazás-tűzfal riasztásánál figyelmen kívül hagyandó IP-"
 "címek"
 
-#: class/mainwp-wordfence-firewall.class.php:179
+#: class/mainwp-wordfence-firewall.class.php:184
 msgid ""
 "Ignored IPs must be separated by commas or placed on separate lines. These "
 "addresses will be ignored from any alerts about increased attacks and can be"
@@ -232,172 +226,159 @@ msgstr ""
 "bármely riasztásból, és használhatók például önálló webhelybiztonsági "
 "szkennerek figyelmen kívül hagyására."
 
-#: class/mainwp-wordfence-firewall.class.php:195
+#: class/mainwp-wordfence-firewall.class.php:200
 msgid "Manually Refresh Rules"
 msgstr "Szabályok kézi frissítése"
 
-#: class/mainwp-wordfence-firewall.class.php:261
+#: class/mainwp-wordfence-firewall.class.php:266
 msgid "Save Changes"
 msgstr "Változtatások mentése"
 
-#: class/mainwp-wordfence-firewall.class.php:639
+#: class/mainwp-wordfence-firewall.class.php:644
 msgid "Wordfence Brute Force Protection"
-msgstr "Wordfence bruteforce elleni védelem"
+msgstr "Wordfence jelszótalálgatás elleni védelme"
 
-#: class/mainwp-wordfence-firewall.class.php:643
+#: class/mainwp-wordfence-firewall.class.php:648
 msgid "Enable brute force protection"
-msgstr "Bruteforce-védelem engedélyezése"
+msgstr "Jelszótalálgatás elleni védelem bekapcsolása"
 
-#: class/mainwp-wordfence-firewall.class.php:651
+#: class/mainwp-wordfence-firewall.class.php:656
 msgid "Lock out after how many login failures"
-msgstr "Hány sikertelen bejelentkezés után zárja ki"
+msgstr "Hány sikertelen bejelentkezési kísérlet után történjen kizárás"
 
-#: class/mainwp-wordfence-firewall.class.php:675
+#: class/mainwp-wordfence-firewall.class.php:680
 msgid "Lock out after how many forgot password attempts"
-msgstr "Hány elfelejtett jelszó próbálkozás után zárja ki"
+msgstr "Hány jelszó-visszaállítási kísérlet után történjen kizárás"
 
-#: class/mainwp-wordfence-firewall.class.php:700
+#: class/mainwp-wordfence-firewall.class.php:705
 msgid "Count failures over what time period"
-msgstr "Milyen időtartam alatt számolja a hibákat"
+msgstr "Milyen időtartam alatt számolja a sikertelen próbálkozásokat"
 
-#: class/mainwp-wordfence-firewall.class.php:717
+#: class/mainwp-wordfence-firewall.class.php:722
 msgid "Amount of time a user is locked out"
 msgstr "A felhasználó kizárásának időtartama"
 
-#: class/mainwp-wordfence-firewall.class.php:739
+#: class/mainwp-wordfence-firewall.class.php:744
 msgid "Immediately lock out invalid usernames"
-msgstr "Érvénytelen felhasználónevek azonnali kizárása"
+msgstr "Érvénytelen felhasználónevekkel próbálkozók azonnali kizárása"
 
-#: class/mainwp-wordfence-firewall.class.php:747
+#: class/mainwp-wordfence-firewall.class.php:752
 msgid ""
 "Immediately block the IP of users who try to sign in as these usernames"
 msgstr ""
 "Azoknak a felhasználóknak az IP-címének azonnali blokkolása, akik ezekkel a "
 "felhasználónevekkel próbálnak bejelentkezni"
 
-#: class/mainwp-wordfence-firewall.class.php:755
+#: class/mainwp-wordfence-firewall.class.php:760
 msgid "Prevent the use of passwords leaked in data breaches"
-msgstr ""
-"Akadályozza meg az adatszivárgásokban kiszivárgott jelszavak használatát"
+msgstr "Adatszivárgások során kiszivárgott jelszavak használatának megakadályozása"
 
-#: class/mainwp-wordfence-firewall.class.php:762
+#: class/mainwp-wordfence-firewall.class.php:767
 msgid "For admins only"
 msgstr "Csak adminisztrátorok számára"
 
-#: class/mainwp-wordfence-firewall.class.php:763
-msgid "For all users with \"publish posts\" capability"
-msgstr ""
-"Minden olyan felhasználónak, aki rendelkezik a \"publish posts\" "
-"jogosultsággal"
-
 #: class/mainwp-wordfence-firewall.class.php:768
+msgid "For all users with \"publish posts\" capability"
+msgstr "Minden olyan felhasználó számára, aki rendelkezik a „bejegyzések közzététele” jogosultsággal"
+
+#: class/mainwp-wordfence-firewall.class.php:773
 msgid "Additional Options"
 msgstr "További beállítások"
 
-#: class/mainwp-wordfence-firewall.class.php:771
+#: class/mainwp-wordfence-firewall.class.php:776
 msgid "Enforce strong passwords?"
-msgstr "Erős jelszavak kikényszerítése?"
+msgstr "Erős jelszavak megkövetelése?"
 
-#: class/mainwp-wordfence-firewall.class.php:787
+#: class/mainwp-wordfence-firewall.class.php:792
 msgid "Don't let WordPress reveal valid users in login errors"
-msgstr ""
-"Ne engedje, hogy a WordPress érvényes felhasználókat fedjen fel a "
-"bejelentkezési hibákban"
+msgstr "Ne engedje, hogy a WordPress a bejelentkezési hibaüzenetekben felfedje az érvényes felhasználókat"
 
-#: class/mainwp-wordfence-firewall.class.php:794
+#: class/mainwp-wordfence-firewall.class.php:799
 msgid "Prevent users registering 'admin' username if it doesn't exist"
-msgstr ""
-"Akadályozza meg, hogy a felhasználók 'admin' felhasználónevet "
-"regisztráljanak, ha az nem létezik"
+msgstr "Akadályozza meg, hogy a felhasználók regisztrálják az „admin” felhasználónevet, ha az még nem létezik"
 
-#: class/mainwp-wordfence-firewall.class.php:801
+#: class/mainwp-wordfence-firewall.class.php:806
 msgid ""
 "Prevent discovery of usernames through '/?author=N' scans, the oEmbed API, "
 "and the WordPress REST API"
-msgstr ""
-"Akadályozza meg a felhasználónevek felderítését a '/?author=N' vizsgálatok, "
-"az oEmbed API és a WordPress REST API révén"
+msgstr "Akadályozza meg a felhasználónevek felderítését a „/?author=N” vizsgálatok, az oEmbed API és a WordPress REST API révén"
 
-#: class/mainwp-wordfence-firewall.class.php:808
+#: class/mainwp-wordfence-firewall.class.php:813
 msgid "Disable WordPress application passwords"
 msgstr "WordPress alkalmazásjelszavak letiltása"
 
-#: class/mainwp-wordfence-firewall.class.php:815
+#: class/mainwp-wordfence-firewall.class.php:820
 msgid "Block IPs who send POST requests with blank User-Agent and Referer"
-msgstr ""
-"Blokkolja azokat az IP-címeket, amelyek üres User-Agent és Referer mellett "
-"küldenek POST kéréseket"
+msgstr "Üres User-Agent- és Referer-fejlécet tartalmazó POST-kéréseket küldő IP-címek blokkolása"
 
-#: class/mainwp-wordfence-firewall.class.php:822
+#: class/mainwp-wordfence-firewall.class.php:827
 msgid "Custom text shown on block pages"
 msgstr "Blokkolási oldalakon megjelenő egyéni szöveg"
 
-#: class/mainwp-wordfence-firewall.class.php:828
+#: class/mainwp-wordfence-firewall.class.php:833
 msgid ""
 "HTML tags will be stripped prior to output and line breaks will be converted"
 " into the appropriate tags."
-msgstr ""
-"A HTML tagek a kimenet előtt eltávolításra kerülnek, a sortörések pedig a "
-"megfelelő tagekké lesznek átalakítva."
+msgstr "A kimenet előtt eltávolítjuk a HTML-címkéket, a sortöréseket pedig megfelelő címkékre cseréljük."
 
-#: class/mainwp-wordfence-firewall.class.php:834
+#: class/mainwp-wordfence-firewall.class.php:839
 msgid "Check password strength on profile update"
 msgstr "Jelszóerősség ellenőrzése profil frissítésekor"
 
-#: class/mainwp-wordfence-firewall.class.php:842
+#: class/mainwp-wordfence-firewall.class.php:847
 msgid "Participate in the Real-Time WordPress Security Network"
 msgstr "Részvétel a valós idejű WordPress biztonsági hálózatban"
 
-#: class/mainwp-wordfence-firewall.class.php:863
+#: class/mainwp-wordfence-firewall.class.php:868
 msgid "Wordfence Rate Limiting"
 msgstr "Wordfence kéréskorlátozás"
 
-#: class/mainwp-wordfence-firewall.class.php:866
+#: class/mainwp-wordfence-firewall.class.php:871
 msgid "Enable rate limiting and advanced blocking"
 msgstr "Kéréskorlátozás és fejlett blokkolás engedélyezése"
 
-#: class/mainwp-wordfence-firewall.class.php:873
+#: class/mainwp-wordfence-firewall.class.php:878
 msgid "How should we treat Google's crawlers"
-msgstr "Hogyan kezeljük a Google feltérképezőit"
+msgstr "Hogyan kezeljük a Google robotjait"
 
-#: class/mainwp-wordfence-firewall.class.php:889
+#: class/mainwp-wordfence-firewall.class.php:894
 msgid "If anyone's requests exceed"
 msgstr "Ha bárki kérései meghaladják"
 
-#: class/mainwp-wordfence-firewall.class.php:906
+#: class/mainwp-wordfence-firewall.class.php:911
 msgid "If a crawler's page views exceed"
-msgstr "Ha egy feltérképező oldalmegtekintései meghaladják"
+msgstr "Ha egy feltérképező robot oldalmegtekintéseinek száma meghaladja"
 
-#: class/mainwp-wordfence-firewall.class.php:923
+#: class/mainwp-wordfence-firewall.class.php:928
 msgid "If a crawler's pages not found (404s) exceed"
-msgstr "Ha egy feltérképező nem talált (404) oldalainak száma meghaladja"
+msgstr "Ha a feltérképező robot által nem talált oldalak (404-esek) száma meghaladja"
 
-#: class/mainwp-wordfence-firewall.class.php:940
+#: class/mainwp-wordfence-firewall.class.php:945
 msgid "If a human's page views exceed"
-msgstr "Ha egy ember oldalmegtekintései meghaladják"
+msgstr "Ha egy látogató oldalmegtekintéseinek száma meghaladja"
 
-#: class/mainwp-wordfence-firewall.class.php:957
+#: class/mainwp-wordfence-firewall.class.php:962
 msgid "If a human's pages not found (404s) exceed"
-msgstr "Ha egy ember nem talált (404) oldalainak száma meghaladja"
+msgstr "Ha egy látogató által nem talált oldalak (404-esek) száma meghaladja"
 
-#: class/mainwp-wordfence-firewall.class.php:974
+#: class/mainwp-wordfence-firewall.class.php:979
 msgid "How long is an IP address blocked when it breaks a rule"
 msgstr ""
 "Mennyi ideig kerül blokkolásra egy IP-cím, amikor megszeg egy szabályt"
 
-#: class/mainwp-wordfence-firewall.class.php:994
+#: class/mainwp-wordfence-firewall.class.php:999
 msgid "Allowlisted 404 URLs (one per line)"
 msgstr "Engedélyezési listára helyezett 404 URL-ek (soronként egy)"
 
-#: class/mainwp-wordfence-firewall.class.php:1015
+#: class/mainwp-wordfence-firewall.class.php:1020
 msgid "Wordfence Basic WordPress Protection"
 msgstr "Wordfence alap WordPress-védelem"
 
-#: class/mainwp-wordfence-firewall.class.php:1019
+#: class/mainwp-wordfence-firewall.class.php:1024
 msgid "Web Application Firewall Status"
 msgstr "Webalkalmazás-tűzfal állapota"
 
-#: class/mainwp-wordfence-firewall.class.php:1057
+#: class/mainwp-wordfence-firewall.class.php:1062
 msgid "Automatically enable on"
 msgstr "Automatikus engedélyezés ekkor"
 
@@ -405,14 +386,11 @@ msgstr "Automatikus engedélyezés ekkor"
 msgid ""
 "Clicking on a \"Live Traffic\" link at \"Wordfence Dashboard\" to view Live "
 "Traffic on a site."
-msgstr ""
-"A \"Wordfence Dashboard\" felületen a \"Live Traffic\" hivatkozásra "
-"kattintva megtekintheti egy webhely Live Traffic adatait."
+msgstr "A „Wordfence vezérlőpult” felületén a „Live Traffic” linkre kattintva megtekintheti egy webhely Live Traffic-adatait."
 
 #: class/mainwp-wordfence-live-traffic.class.php:82
-#: class/mainwp-wordfence-plugin.class.php:127
-#: class/mainwp-wordfence.class.php:352 class/mainwp-wordfence.class.php:811
-#: class/mainwp-wordfence.class.php:815
+#: class/mainwp-wordfence-plugin.class.php:128
+#: class/mainwp-wordfence.class.php:877
 msgid "Live Traffic"
 msgstr "Live Traffic"
 
@@ -422,7 +400,7 @@ msgstr "A Wordfence bővítmény nem észlelhető az Ön webhelyein."
 
 #: class/mainwp-wordfence-live-traffic.class.php:113
 msgid "Wordfence Life Traffic Options"
-msgstr "Wordfence Life Traffic beállítások"
+msgstr "Wordfence Live Traffic-opciók"
 
 #: class/mainwp-wordfence-live-traffic.class.php:117
 msgid "Enable live traffic logging"
@@ -444,7 +422,7 @@ msgstr ""
 
 #: class/mainwp-wordfence-live-traffic.class.php:139
 msgid "Always display expanded Live Traffic records"
-msgstr "Mindig kibontva jelenítse meg a Live Traffic rekordokat"
+msgstr "Mindig kibontva jelenítse meg a Live Traffic-rekordokat"
 
 #: class/mainwp-wordfence-live-traffic.class.php:148
 msgid "List of comma separated usernames to ignore"
@@ -461,35 +439,33 @@ msgstr "Figyelmen kívül hagyandó böngésző user-agent"
 
 #: class/mainwp-wordfence-live-traffic.class.php:175
 msgid "Amount of Live Traffic data to store (number of rows)"
-msgstr "Tárolandó Live Traffic adatok mennyisége (sorok száma)"
+msgstr "Tárolandó Live Traffic-adatok mennyisége (sorok száma)"
 
 #: class/mainwp-wordfence-live-traffic.class.php:184
 msgid "Maximum days to keep Live Traffic data (minimum: 1)"
-msgstr ""
-"A Live Traffic adatok megőrzésének maximális időtartama napokban (minimum: "
-"1)"
+msgstr "A Live Traffic-adatok megőrzésének maximális időtartama napokban (minimum: 1)"
 
 #: class/mainwp-wordfence-live-traffic.class.php:193
 msgid "Display top level Live Traffic menu option"
-msgstr "Felső szintű Live Traffic menüopció megjelenítése"
+msgstr "Felső szintű Live Traffic-menüopció megjelenítése"
 
 #: class/mainwp-wordfence-live-traffic.class.php:200
 #: class/mainwp-wordfence-setting.class.php:561
-#: class/mainwp-wordfence.class.php:562
+#: class/mainwp-wordfence.class.php:618
 msgid "Save Settings"
 msgstr "Beállítások mentése"
 
 #: class/mainwp-wordfence-live-traffic.class.php:226
 msgid "Live activity is disabled"
-msgstr "Az élő tevékenység le van tiltva"
+msgstr "Az élő történéseket kikapcsolta"
 
 #: class/mainwp-wordfence-live-traffic.class.php:229
 msgid " by the host"
-msgstr " a kiszolgáló által"
+msgstr " a kiszolgáló"
 
 #: class/mainwp-wordfence-live-traffic.class.php:233
 msgid "Login and firewall activity will still appear below."
-msgstr "A bejelentkezési és tűzfal-tevékenység továbbra is megjelenik alább."
+msgstr "A belépési és tűzfallal kapcsolatos történések továbbra is megjelennek alább."
 
 #: class/mainwp-wordfence-live-traffic.class.php:246
 msgid "Human"
@@ -513,11 +489,9 @@ msgstr "Hely megtekintése"
 
 #: class/mainwp-wordfence-log.class.php:21
 msgid ""
-"Click on a \"Show results\" link at \"Wordfence Dashboard\" to view Scan "
+"Click on a \"Show results\" link at \"Wordfence Overview\" to view Scan "
 "results on a site."
-msgstr ""
-"Kattintson a \"Show results\" hivatkozásra a \"Wordfence Dashboard\" "
-"felületen, hogy megtekinthesse a vizsgálat eredményeit egy webhelyen."
+msgstr "Egy webhely vizsgálati eredményeinek megtekintéséhez kattintson a „Wordfence áttekintése” részen található „Eredmények megjelenítése” linkre."
 
 #: class/mainwp-wordfence-log.class.php:33
 msgid "Status Updates Paused"
@@ -528,87 +502,88 @@ msgid "Click inside window to resume"
 msgstr "Kattintson az ablakon belül a folytatáshoz"
 
 #: class/mainwp-wordfence-log.class.php:42
-#: class/mainwp-wordfence-plugin.class.php:129
-#: class/mainwp-wordfence.class.php:813
+#: class/mainwp-wordfence-plugin.class.php:130
 msgid "Scan Results"
 msgstr "Vizsgálat eredményei"
 
-#: class/mainwp-wordfence-plugin.class.php:34
+#: class/mainwp-wordfence-plugin.class.php:35
 msgid "Status"
 msgstr "Állapot"
 
-#: class/mainwp-wordfence-plugin.class.php:35
+#: class/mainwp-wordfence-plugin.class.php:36
 msgid "Site"
 msgstr "Webhely"
 
-#: class/mainwp-wordfence-plugin.class.php:36
+#: class/mainwp-wordfence-plugin.class.php:37
 msgid "Last Scan"
 msgstr "Utolsó vizsgálat"
 
-#: class/mainwp-wordfence-plugin.class.php:37
+#: class/mainwp-wordfence-plugin.class.php:38
 msgid "Version"
 msgstr "Verzió"
 
-#: class/mainwp-wordfence-plugin.class.php:38
+#: class/mainwp-wordfence-plugin.class.php:39
 msgid "Hidden"
 msgstr "Rejtett"
 
-#: class/mainwp-wordfence-plugin.class.php:89
+#: class/mainwp-wordfence-plugin.class.php:90
 msgid "Jump to the WP Admin."
 msgstr "Ugrás a WP Admin felületre."
 
-#: class/mainwp-wordfence-plugin.class.php:94
+#: class/mainwp-wordfence-plugin.class.php:95
 msgid "Go to the site overview."
 msgstr "Ugrás a webhely áttekintésére."
 
-#: class/mainwp-wordfence-plugin.class.php:102
+#: class/mainwp-wordfence-plugin.class.php:103
 msgid "Go to the website."
 msgstr "Ugrás a weboldalra."
 
-#: class/mainwp-wordfence-plugin.class.php:109
+#: class/mainwp-wordfence-plugin.class.php:110
 msgid "Yes"
 msgstr "Igen"
 
-#: class/mainwp-wordfence-plugin.class.php:109
+#: class/mainwp-wordfence-plugin.class.php:110
 msgid "No"
 msgstr "Nem"
 
-#: class/mainwp-wordfence-plugin.class.php:114
-#: class/mainwp-wordfence.class.php:809
+#: class/mainwp-wordfence-plugin.class.php:115
 msgid "Overview"
 msgstr "Áttekintés"
 
-#: class/mainwp-wordfence-plugin.class.php:115
+#: class/mainwp-wordfence-plugin.class.php:116
 msgid "Edit"
 msgstr "Szerkesztés"
 
-#: class/mainwp-wordfence-plugin.class.php:116
+#: class/mainwp-wordfence-plugin.class.php:117
 msgid "Open Wordfence"
 msgstr "Wordfence megnyitása"
 
-#: class/mainwp-wordfence-plugin.class.php:118
+#: class/mainwp-wordfence-plugin.class.php:119
 msgid "Unhide Plugin"
 msgstr "Bővítmény elrejtésének feloldása"
 
-#: class/mainwp-wordfence-plugin.class.php:120
+#: class/mainwp-wordfence-plugin.class.php:121
 msgid "Hide Plugin"
 msgstr "Bővítmény elrejtése"
 
-#: class/mainwp-wordfence-plugin.class.php:124
+#: class/mainwp-wordfence-plugin.class.php:125
 msgid "Activate Plugin"
 msgstr "Bővítmény aktiválása"
 
-#: class/mainwp-wordfence-plugin.class.php:126
+#: class/mainwp-wordfence-plugin.class.php:127
 msgid "Scan Site"
 msgstr "Webhely vizsgálata"
 
-#: class/mainwp-wordfence-plugin.class.php:128
-#: class/mainwp-wordfence.class.php:499 class/mainwp-wordfence.class.php:812
-#: class/mainwp-wordfence.class.php:814
+#: class/mainwp-wordfence-plugin.class.php:129
+#: class/mainwp-wordfence.class.php:553 class/mainwp-wordfence.class.php:878
 msgid "Blocking"
 msgstr "Blokkolás"
 
-#: class/mainwp-wordfence-plugin.class.php:133
+#: class/mainwp-wordfence-plugin.class.php:131
+msgid "Deactivate Plugin"
+msgstr "Bővítmény kikapcsolása"
+
+#: class/mainwp-wordfence-plugin.class.php:135
 msgid "Update Plugin"
 msgstr "Bővítmény frissítése"
 
@@ -640,12 +615,11 @@ msgstr "Általános beállítások"
 
 #: class/mainwp-wordfence-scan.class.php:93
 msgid "Check if this website is on a domain blacklist"
-msgstr ""
-"Ellenőrizze, hogy ez a webhely szerepel-e a tartományok feketelistáján"
+msgstr "Ellenőrizze, hogy ez a webhely szerepel-e a tartományok feketelistáján"
 
 #: class/mainwp-wordfence-scan.class.php:106
 msgid "Check if this website is being \"Spamvertised\""
-msgstr "Ellenőrizze, hogy ezt a webhelyet \"Spamvertised\" módon terjesztik-e"
+msgstr "Ellenőrizze, hogy spamüzenetekben hirdetik-e ezt a honlapot"
 
 #: class/mainwp-wordfence-scan.class.php:119
 msgid "Check if this website IP is generating spam"
@@ -687,9 +661,7 @@ msgstr ""
 
 #: class/mainwp-wordfence-scan.class.php:185
 msgid "Scan wp-admin and wp-includes for files not bundled with WordPress"
-msgstr ""
-"Ellenőrizze, hogy a wp-admin és a wp-includes könyvtárakban vannak-e a "
-"WordPress-szel nem együtt szállított fájlok"
+msgstr "Ellenőrizze, hogy találhatók-e a WordPress-csomagban nem szereplő fájlok a wp-admin és a wp-includes könyvtárakban"
 
 #: class/mainwp-wordfence-scan.class.php:193
 msgid "Scan for signatures of known malicious files"
@@ -697,31 +669,25 @@ msgstr "Ellenőrizze, hogy vannak-e ismert kártékony fájlok szignatúrái"
 
 #: class/mainwp-wordfence-scan.class.php:201
 msgid "Scan file contents for backdoors, trojans and suspicious code"
-msgstr ""
-"Ellenőrizze a fájlok tartalmát hátsókapuk, trójaiak és gyanús kód után"
+msgstr "Keressen hátsó kapukat, trójai programokat és gyanús kódot a fájlok tartalmában"
 
 #: class/mainwp-wordfence-scan.class.php:209
 msgid "Scan file contents for malicious URLs"
-msgstr "Ellenőrizze a fájlok tartalmát rosszindulatú URL-ek után"
+msgstr "Keressen rosszindulatú URL-eket a fájlok tartalmában"
 
 #: class/mainwp-wordfence-scan.class.php:217
 msgid "Scan posts for known dangerous URLs and suspicious content"
-msgstr ""
-"Ellenőrizze a bejegyzéseket ismert veszélyes URL-ek és gyanús tartalom után"
+msgstr "Keressen ismert veszélyes URL-eket és gyanús tartalmat a bejegyzésekben"
 
 #: class/mainwp-wordfence-scan.class.php:225
 msgid "Scan comments for known dangerous URLs and suspicious content"
-msgstr ""
-"Ellenőrizze a hozzászólásokat ismert veszélyes URL-ek és gyanús tartalom "
-"után"
+msgstr "Keressen ismert veszélyes URL-eket és gyanús tartalmat a hozzászólásokban"
 
 #: class/mainwp-wordfence-scan.class.php:233
 msgid ""
 "Scan WordPress core, plugin, and theme options for known dangerous URLs and "
 "suspicious content"
-msgstr ""
-"Ellenőrizze a WordPress mag-, bővítmény- és sablonbeállításokat ismert "
-"veszélyes URL-ek és gyanús tartalom után"
+msgstr "Keressen ismert veszélyes URL-eket és gyanús tartalmat a WordPress magjának, a bővítményeknek és a sablonoknak az opcióiban"
 
 #: class/mainwp-wordfence-scan.class.php:241
 msgid ""
@@ -733,9 +699,7 @@ msgstr ""
 
 #: class/mainwp-wordfence-scan.class.php:249
 msgid "Scan for suspicious admin users created outside of WordPress"
-msgstr ""
-"Ellenőrizze a WordPressen kívül létrehozott gyanús adminisztrátori "
-"felhasználókat"
+msgstr "Ellenőrizze a WordPressen kívül létrehozott gyanús adminisztrátori felhasználókat"
 
 #: class/mainwp-wordfence-scan.class.php:258
 msgid "Check the strength of passwords"
@@ -746,24 +710,26 @@ msgid "Monitor disk space"
 msgstr "Lemezterület figyelése"
 
 #: class/mainwp-wordfence-scan.class.php:274
+msgid "Monitor Web Application Firewall status"
+msgstr "A webalkalmazás-tűzfal állapotának figyelése"
+
+#: class/mainwp-wordfence-scan.class.php:282
 msgid "Scan files outside your WordPress installation"
 msgstr "Az Ön WordPress-telepítésén kívüli fájlok vizsgálata"
 
-#: class/mainwp-wordfence-scan.class.php:282
+#: class/mainwp-wordfence-scan.class.php:290
 msgid "Scan images, binary, and other files as if they were executable"
-msgstr ""
-"Képek, bináris és egyéb fájlok vizsgálata úgy, mintha végrehajthatók "
-"lennének"
+msgstr "Képek, bináris fájlok és egyéb fájlok vizsgálata úgy, mintha végrehajthatók lennének"
 
-#: class/mainwp-wordfence-scan.class.php:321
+#: class/mainwp-wordfence-scan.class.php:329
 msgid "Wordfence Basic Scan Type Options"
-msgstr "Wordfence alap vizsgálattípus-beállítások"
+msgstr "A Wordfence alapvető vizsgálattípusának opciói"
 
-#: class/mainwp-wordfence-scan.class.php:325
+#: class/mainwp-wordfence-scan.class.php:333
 msgid "Scan type"
 msgstr "Vizsgálat típusa"
 
-#: class/mainwp-wordfence-scan.class.php:333
+#: class/mainwp-wordfence-scan.class.php:341
 msgid ""
 "Limited Scan (For entry-level hosting plans. Provides limited detection "
 "capability with very low resource utilization.)"
@@ -771,15 +737,13 @@ msgstr ""
 "Korlátozott vizsgálat (Belépő szintű tárhelycsomagokhoz. Korlátozott "
 "észlelési képességet biztosít nagyon alacsony erőforrás-használat mellett.)"
 
-#: class/mainwp-wordfence-scan.class.php:341
+#: class/mainwp-wordfence-scan.class.php:349
 msgid ""
 "Standard Scan (Our recommendation for all websites. Provides the best "
 "detection capability in the industry.)"
-msgstr ""
-"Standard vizsgálat (Ajánlásunk minden webhelyhez. Az iparágban a legjobb "
-"észlelési képességet biztosítja.)"
+msgstr "Standard vizsgálat (Ajánlásunk minden webhelyhez. Az iparágban a legjobb észlelési képességet biztosítja.)"
 
-#: class/mainwp-wordfence-scan.class.php:349
+#: class/mainwp-wordfence-scan.class.php:357
 msgid ""
 "High Sensitivity (For site owners who think they may have been hacked. More "
 "thorough but may produce false positives.)"
@@ -787,7 +751,7 @@ msgstr ""
 "Magas érzékenység (Azoknak a webhelytulajdonosoknak, akik úgy gondolják, "
 "hogy feltörhették őket. Alaposabb, de hamis találatokat is eredményezhet.)"
 
-#: class/mainwp-wordfence-scan.class.php:356
+#: class/mainwp-wordfence-scan.class.php:364
 msgid ""
 "Custom Scan (Selected automatically when General Options have been "
 "customized for this website.)"
@@ -795,11 +759,11 @@ msgstr ""
 "Egyéni vizsgálat (Automatikusan kiválasztva, ha az általános beállítások "
 "testre lettek szabva ehhez a webhelyhez.)"
 
-#: class/mainwp-wordfence-scan.class.php:419
+#: class/mainwp-wordfence-scan.class.php:427
 msgid "Performance Options"
 msgstr "Teljesítménybeállítások"
 
-#: class/mainwp-wordfence-scan.class.php:423
+#: class/mainwp-wordfence-scan.class.php:431
 msgid ""
 "Use low resource scanning (reduces server load by lengthening the scan "
 "duration)"
@@ -807,42 +771,50 @@ msgstr ""
 "Alacsony erőforrás-igényű vizsgálat használata (csökkenti a szerverterhelést"
 " a vizsgálat időtartamának meghosszabbításával)"
 
-#: class/mainwp-wordfence-scan.class.php:431
+#: class/mainwp-wordfence-scan.class.php:439
 msgid "Limit the number of issues sent in the scan results email"
 msgstr ""
 "A vizsgálati eredményeket tartalmazó e-mailben elküldött problémák számának "
 "korlátozása"
 
-#: class/mainwp-wordfence-scan.class.php:440
+#: class/mainwp-wordfence-scan.class.php:448
 msgid "Time limit that a scan can run in seconds"
 msgstr "A vizsgálat futási időkorlátja másodpercben"
 
-#: class/mainwp-wordfence-scan.class.php:449
+#: class/mainwp-wordfence-scan.class.php:457
 msgid "How much memory should Wordfence request when scanning"
 msgstr "Mennyi memóriát kérjen a Wordfence vizsgálat közben"
 
-#: class/mainwp-wordfence-scan.class.php:450
+#: class/mainwp-wordfence-scan.class.php:458
 msgid "Memory size in megabytes"
 msgstr "Memóriaméret megabájtban"
 
-#: class/mainwp-wordfence-scan.class.php:459
+#: class/mainwp-wordfence-scan.class.php:467
 msgid "Maximum execution time for each scan stage"
 msgstr "Az egyes vizsgálati szakaszok maximális végrehajtási ideje"
 
-#: class/mainwp-wordfence-scan.class.php:478
+#: class/mainwp-wordfence-scan.class.php:486
 msgid "Advanced Scan Options"
 msgstr "Speciális vizsgálati beállítások"
 
-#: class/mainwp-wordfence-scan.class.php:482
+#: class/mainwp-wordfence-scan.class.php:490
 msgid ""
 "Exclude files from scan that match these wildcard patterns (one per line)"
-msgstr ""
-"A vizsgálatból kizárt fájlok, amelyek megfelelnek ezeknek a helyettesítő "
-"mintáknak (soronként egy)"
+msgstr "Zárja ki a vizsgálatból az ezeknek a helyettesítő mintáknak megfelelő fájlokat (soronként egyet)"
 
-#: class/mainwp-wordfence-scan.class.php:491
+#: class/mainwp-wordfence-scan.class.php:499
 msgid "Additional scan signatures (one per line)"
 msgstr "További vizsgálati szignatúrák (soronként egy)"
+
+#: class/mainwp-wordfence-scan.class.php:507
+msgid "Use only IPv4 to start scans"
+msgstr "Csak IPv4 használata a vizsgálatok indításához"
+
+#: class/mainwp-wordfence-scan.class.php:516
+#: class/mainwp-wordfence-setting.class.php:1079
+msgid "Alert me with scan results of this severity level or greater"
+msgstr ""
+"Értesítsen a vizsgálat eredményeiről ezen vagy ennél súlyosabb szint esetén"
 
 #: class/mainwp-wordfence-setting.class.php:315
 msgid "Premium Key"
@@ -874,7 +846,7 @@ msgstr "Wordfence gyorsítótár-beállítások szinkronizálása"
 
 #: class/mainwp-wordfence-setting.class.php:413
 msgid "Clear Wordfence Cache"
-msgstr "Wordfence gyorsítótár törlése"
+msgstr "A Wordfence gyorsítótárának kiürítése"
 
 #: class/mainwp-wordfence-setting.class.php:415
 msgid "Wordfence Cache Stats Synchronization"
@@ -909,298 +881,308 @@ msgstr "Wordfence licenc"
 msgid "Use premium version"
 msgstr "Prémium verzió használata"
 
-#: class/mainwp-wordfence-setting.class.php:697
+#: class/mainwp-wordfence-setting.class.php:698
 msgid "Show/hide Licenses"
 msgstr "Licencek megjelenítése/elrejtése"
 
-#: class/mainwp-wordfence-setting.class.php:719
+#: class/mainwp-wordfence-setting.class.php:720
 msgid "Load more"
 msgstr "Továbbiak betöltése"
 
-#: class/mainwp-wordfence-setting.class.php:736
+#: class/mainwp-wordfence-setting.class.php:737
+#: class/mainwp-wordfence.class.php:1555
 msgid "No websites were found with the Wordfence plugin installed."
-msgstr ""
-"Nem található olyan webhely, amelyen a Wordfence bővítmény telepítve van."
+msgstr "Nem található olyan webhely, amelyen a Wordfence bővítmény telepítve van."
 
-#: class/mainwp-wordfence-setting.class.php:748
+#: class/mainwp-wordfence-setting.class.php:749
 msgid "Licenses"
 msgstr "Licencek"
 
-#: class/mainwp-wordfence-setting.class.php:751
+#: class/mainwp-wordfence-setting.class.php:752
 msgid "Wordfence API key"
 msgstr "Wordfence API-kulcs"
 
-#: class/mainwp-wordfence-setting.class.php:781
+#: class/mainwp-wordfence-setting.class.php:782
 msgid "Automatic Scans"
 msgstr "Automatikus vizsgálatok"
 
-#: class/mainwp-wordfence-setting.class.php:784
+#: class/mainwp-wordfence-setting.class.php:785
 msgid "Override general settings"
 msgstr "Általános beállítások felülbírálása"
 
-#: class/mainwp-wordfence-setting.class.php:797
+#: class/mainwp-wordfence-setting.class.php:798
 msgid "Scan schedule"
 msgstr "Vizsgálati ütemezés"
 
-#: class/mainwp-wordfence-setting.class.php:826
+#: class/mainwp-wordfence-setting.class.php:827
 msgid "View Customization"
 msgstr "Nézet testreszabása"
 
-#: class/mainwp-wordfence-setting.class.php:828
+#: class/mainwp-wordfence-setting.class.php:829
 msgid "Display \"All Options\" menu item"
-msgstr "\"All Options\" menüpont megjelenítése"
+msgstr "„All Options” menüpont megjelenítése"
 
-#: class/mainwp-wordfence-setting.class.php:835
+#: class/mainwp-wordfence-setting.class.php:836
 msgid "Display \"Blocking\" menu item"
-msgstr "\"Blocking\" menüpont megjelenítése"
+msgstr "„Blocking” menüpont megjelenítése"
 
-#: class/mainwp-wordfence-setting.class.php:842
+#: class/mainwp-wordfence-setting.class.php:843
 msgid "Display \"Live Traffic\" menu item"
-msgstr "\"Live Traffic\" menüpont megjelenítése"
+msgstr "„Live Traffic” menüpont megjelenítése"
 
-#: class/mainwp-wordfence-setting.class.php:872
+#: class/mainwp-wordfence-setting.class.php:851
+msgid "Display \"Audit Log\" menu item"
+msgstr "Az „Auditnapló” menüpont megjelenítése"
+
+#: class/mainwp-wordfence-setting.class.php:881
 msgid "General Wordfence Options"
-msgstr "Általános Wordfence beállítások"
+msgstr "Általános Wordfence-opciók"
 
-#: class/mainwp-wordfence-setting.class.php:876
+#: class/mainwp-wordfence-setting.class.php:885
 msgid "Update Wordfence automatically when a new version is released"
 msgstr "A Wordfence automatikus frissítése új verzió megjelenésekor"
 
-#: class/mainwp-wordfence-setting.class.php:883
+#: class/mainwp-wordfence-setting.class.php:892
 msgid "Where to email alerts"
 msgstr "Hova küldje e-mailben az értesítéseket"
 
-#: class/mainwp-wordfence-setting.class.php:891
+#: class/mainwp-wordfence-setting.class.php:900
 msgid "How does Wordfence get IPs"
 msgstr "Hogyan szerzi be a Wordfence az IP-címeket"
 
-#: class/mainwp-wordfence-setting.class.php:910
+#: class/mainwp-wordfence-setting.class.php:919
 msgid "Trusted proxies"
 msgstr "Megbízható proxyk"
 
-#: class/mainwp-wordfence-setting.class.php:948
+#: class/mainwp-wordfence-setting.class.php:957
+msgid "Trusted Proxy Preset"
+msgstr "Megbízható proxy előbeállítása"
+
+#: class/mainwp-wordfence-setting.class.php:960
+msgid "None"
+msgstr "Nincs"
+
+#: class/mainwp-wordfence-setting.class.php:961
+msgid "Amazon CloudFront"
+msgstr "Amazon CloudFront"
+
+#: class/mainwp-wordfence-setting.class.php:962
+msgid "Ezoic"
+msgstr "Ezoic"
+
+#: class/mainwp-wordfence-setting.class.php:963
+msgid "Quic.cloud"
+msgstr "Quic.cloud"
+
+#: class/mainwp-wordfence-setting.class.php:970
+msgid "Look up visitor IP locations via Wordfence servers"
+msgstr "A látogatók IP-címeihez tartozó helyszínek lekérdezése a Wordfence szerverein keresztül"
+
+#: class/mainwp-wordfence-setting.class.php:978
 msgid "Hide WordPress version"
 msgstr "WordPress-verzió elrejtése"
 
-#: class/mainwp-wordfence-setting.class.php:956
+#: class/mainwp-wordfence-setting.class.php:986
 msgid "Disable code execution for uploads directory"
 msgstr "Kódfuttatás letiltása az uploads könyvtárban"
 
-#: class/mainwp-wordfence-setting.class.php:965
+#: class/mainwp-wordfence-setting.class.php:995
 msgid "Pause live updates when window loses focus"
 msgstr "Élő frissítések szüneteltetése, amikor az ablak fókuszt veszít"
 
-#: class/mainwp-wordfence-setting.class.php:974
+#: class/mainwp-wordfence-setting.class.php:1004
 msgid "Update interval in seconds (2 is default)"
-msgstr "Frissítési időköz másodpercben (2 az alapértelmezett)"
+msgstr "Frissítési időköz másodpercben (az alapértelmezett érték 2)"
 
-#: class/mainwp-wordfence-setting.class.php:983
+#: class/mainwp-wordfence-setting.class.php:1013
 msgid "Bypass the LiteSpeed \"noabort\" check"
-msgstr "A LiteSpeed \"noabort\" ellenőrzés megkerülése"
+msgstr "A LiteSpeed „noabort” ellenőrzés megkerülése"
 
-#: class/mainwp-wordfence-setting.class.php:992
+#: class/mainwp-wordfence-setting.class.php:1022
 msgid "Delete Wordfence tables and data on deactivation?"
 msgstr "Deaktiváláskor törli a Wordfence tábláit és adatait?"
 
-#: class/mainwp-wordfence-setting.class.php:1013
+#: class/mainwp-wordfence-setting.class.php:1043
 msgid "Email Alert Preferences"
 msgstr "E-mailes riasztási beállítások"
 
-#: class/mainwp-wordfence-setting.class.php:1023
+#: class/mainwp-wordfence-setting.class.php:1053
 msgid "Email me when Wordfence is automatically updated"
 msgstr "Küldjön e-mailt, amikor a Wordfence automatikusan frissül"
 
-#: class/mainwp-wordfence-setting.class.php:1031
+#: class/mainwp-wordfence-setting.class.php:1061
 msgid "Email me if Wordfence is deactivated"
-msgstr "Küldjön e-mailt, ha a Wordfence deaktiválva van"
+msgstr "Küldjön e-mailt, ha deaktiválják a Wordfence-et"
 
-#: class/mainwp-wordfence-setting.class.php:1040
+#: class/mainwp-wordfence-setting.class.php:1070
 msgid "Email me if the Wordfence Web Application Firewall is turned off"
 msgstr ""
 "Küldjön e-mailt, ha a Wordfence Web Application Firewall ki van kapcsolva"
 
-#: class/mainwp-wordfence-setting.class.php:1049
-msgid "Alert me with scan results of this severity level or greater"
-msgstr ""
-"Értesítsen a vizsgálat eredményeiről ezen vagy ennél súlyosabb szint esetén"
-
-#: class/mainwp-wordfence-setting.class.php:1067
+#: class/mainwp-wordfence-setting.class.php:1097
 msgid "Alert when an IP address is blocked"
-msgstr "Értesítsen, amikor egy IP-cím letiltásra kerül"
+msgstr "Értesítés IP-cím letiltásakor"
 
-#: class/mainwp-wordfence-setting.class.php:1075
+#: class/mainwp-wordfence-setting.class.php:1105
 msgid "Alert when someone is locked out from login"
-msgstr "Értesítsen, amikor valaki kizárásra kerül a bejelentkezésből"
+msgstr "Értesítés, ha valakit kizárnak a bejelentkezésből"
 
-#: class/mainwp-wordfence-setting.class.php:1084
+#: class/mainwp-wordfence-setting.class.php:1114
 msgid ""
 "Alert when someone is blocked from logging in for using a password found in "
 "a breach"
-msgstr ""
-"Értesítsen, amikor valakit blokkol a rendszer a bejelentkezéstől, mert egy "
-"adatszivárgásban talált jelszót használ"
+msgstr "Értesítés, ha valakit nem engednek bejelentkezni, mert adatszivárgás során kiszivárgott jelszót használ"
 
-#: class/mainwp-wordfence-setting.class.php:1092
+#: class/mainwp-wordfence-setting.class.php:1122
 msgid "Alert when the \"lost password\" form is used for a valid user"
-msgstr ""
-"Értesítsen, amikor a \"lost password\" űrlapot érvényes felhasználó "
-"használja"
+msgstr "Értesítés, ha egy érvényes felhasználó használja az „Elfelejtett jelszó” űrlapot"
 
-#: class/mainwp-wordfence-setting.class.php:1101
+#: class/mainwp-wordfence-setting.class.php:1131
 msgid "Alert me when someone with administrator access signs in"
-msgstr ""
-"Értesítsen, amikor rendszergazdai jogosultsággal rendelkező felhasználó "
-"jelentkezik be"
+msgstr "Értesítés adminisztrátori jogosultsággal rendelkező felhasználó bejelentkezésekor"
 
-#: class/mainwp-wordfence-setting.class.php:1109
+#: class/mainwp-wordfence-setting.class.php:1139
 msgid ""
 "Only alert me when that administrator signs in from a new device or location"
-msgstr ""
-"Csak akkor értesítsen, ha az adott rendszergazda új eszközről vagy helyről "
-"jelentkezik be"
+msgstr "Értesítés csak akkor, ha az adott adminisztrátor új eszközről vagy helyszínről jelentkezik be"
 
-#: class/mainwp-wordfence-setting.class.php:1118
+#: class/mainwp-wordfence-setting.class.php:1148
 msgid "Alert me when a non-admin user signs in"
-msgstr "Értesítsen, amikor egy nem adminisztrátor felhasználó jelentkezik be"
+msgstr "Értesítés, ha egy nem adminisztrátori jogosultságú felhasználó bejelentkezik"
 
-#: class/mainwp-wordfence-setting.class.php:1127
+#: class/mainwp-wordfence-setting.class.php:1157
 msgid "Only alert me when that user signs in from a new device or location"
-msgstr ""
-"Csak akkor értesítsen, ha az adott felhasználó új eszközről vagy helyről "
-"jelentkezik be"
+msgstr "Értesítés csak akkor, ha az adott felhasználó új eszközről vagy helyszínről jelentkezik be"
 
-#: class/mainwp-wordfence-setting.class.php:1136
+#: class/mainwp-wordfence-setting.class.php:1166
 msgid "Alert me when there's a large increase in attacks detected on my site"
-msgstr ""
-"Értesítsen, ha nagymértékű növekedés tapasztalható a webhelyemen észlelt "
-"támadásokban"
+msgstr "Értesítés, ha jelentősen megnő a webhelyemen észlelt támadások száma"
 
-#: class/mainwp-wordfence-setting.class.php:1144
+#: class/mainwp-wordfence-setting.class.php:1174
 msgid "Maximum email alerts to send per hour"
 msgstr "Óránként küldhető e-mailes riasztások maximális száma"
 
-#: class/mainwp-wordfence-setting.class.php:1167
+#: class/mainwp-wordfence-setting.class.php:1197
 msgid "Activity Report"
 msgstr "Tevékenységi jelentés"
 
-#: class/mainwp-wordfence-setting.class.php:1171
+#: class/mainwp-wordfence-setting.class.php:1201
 msgid "Enable email summary"
 msgstr "E-mailes összefoglaló engedélyezése"
 
-#: class/mainwp-wordfence-setting.class.php:1179
+#: class/mainwp-wordfence-setting.class.php:1209
 msgid "Email summary frequency"
 msgstr "E-mailes összefoglaló gyakorisága"
 
-#: class/mainwp-wordfence-setting.class.php:1191
+#: class/mainwp-wordfence-setting.class.php:1221
 msgid "List of directories to exclude from recently modified file list"
 msgstr ""
 "Könyvtárak listája, amelyeket ki kell zárni a nemrég módosított fájlok "
 "listájából"
 
-#: class/mainwp-wordfence-setting.class.php:1201
-msgid "Enable activity report widget on the WordPress dashboard"
-msgstr "Tevékenységi jelentés widget engedélyezése a WordPress vezérlőpulton"
-
 #: class/mainwp-wordfence-setting.class.php:1231
+msgid "Enable activity report widget on the WordPress dashboard"
+msgstr "A történésekről szóló jelentést megjelenítő widget bekapcsolása a WordPress vezérlőpultján"
+
+#: class/mainwp-wordfence-setting.class.php:1261
 msgid "Wordfence Dashboard Notification Options"
 msgstr "Wordfence vezérlőpult értesítési beállításai"
 
-#: class/mainwp-wordfence-setting.class.php:1236
+#: class/mainwp-wordfence-setting.class.php:1266
 msgid "Updates needed (Plugin, Theme, or Core)"
-msgstr "Frissítések szükségesek (bővítmény, sablon vagy mag)"
+msgstr "Frissítések szükségesek (bővítmény, sablon vagy WordPress-alaprendszer)"
 
-#: class/mainwp-wordfence-setting.class.php:1246
+#: class/mainwp-wordfence-setting.class.php:1276
 msgid "Security alerts"
 msgstr "Biztonsági riasztások"
 
-#: class/mainwp-wordfence-setting.class.php:1268
+#: class/mainwp-wordfence-setting.class.php:1298
 msgid "Promotions"
 msgstr "Promóciók"
 
-#: class/mainwp-wordfence-setting.class.php:1290
+#: class/mainwp-wordfence-setting.class.php:1320
 msgid "Blog highlights"
 msgstr "A blog kiemelt tartalmai"
 
-#: class/mainwp-wordfence-setting.class.php:1312
+#: class/mainwp-wordfence-setting.class.php:1342
 msgid "Product updates"
 msgstr "Termékfrissítések"
 
-#: class/mainwp-wordfence-setting.class.php:1326
+#: class/mainwp-wordfence-setting.class.php:1356
 msgid "Scan status"
 msgstr "Vizsgálat állapota"
 
-#: class/mainwp-wordfence-setting.class.php:1358
+#: class/mainwp-wordfence-setting.class.php:1388
 msgid "Comment Spam Filter Options"
-msgstr "Hozzászólás spamszűrő beállításai"
+msgstr "Hozzászólások spamszűrőjének opciói"
 
-#: class/mainwp-wordfence-setting.class.php:1362
+#: class/mainwp-wordfence-setting.class.php:1392
 msgid "Hold anonymous comments using member emails for moderation"
-msgstr ""
-"Tartsa vissza moderálásra az anonim hozzászólásokat, amelyek tagok e-mail-"
-"címét használják"
+msgstr "Tartsa vissza moderálásra azokat az anonim hozzászólásokat, amelyekhez tagi e-mail-címet használnak"
 
-#: class/mainwp-wordfence-setting.class.php:1371
+#: class/mainwp-wordfence-setting.class.php:1401
 msgid "Filter comments for malware and phishing URL's"
-msgstr "Hozzászólások szűrése kártevők és adathalász URL's ellen"
+msgstr "Kártevőket és adathalász URL-eket tartalmazó hozzászólások szűrése"
 
-#: class/mainwp-wordfence-setting.class.php:1381
+#: class/mainwp-wordfence-setting.class.php:1411
 msgid "Advanced comment spam filter"
-msgstr "Speciális hozzászólás spamszűrő"
+msgstr "Haladó spamszűrő hozzászólásokhoz"
 
-#: class/mainwp-wordfence-setting.class.php:1403
+#: class/mainwp-wordfence-setting.class.php:1433
 msgid "Export this site's Wordfence settings for import on another site"
-msgstr ""
-"Exportálja ezen webhely Wordfence beállításait másik webhelyre történő "
-"importáláshoz"
+msgstr "Exportálja ennek a webhelynek a Wordfence-beállításait egy másik webhelyre való importáláshoz"
 
-#: class/mainwp-wordfence-setting.class.php:1413
+#: class/mainwp-wordfence-setting.class.php:1443
 msgid "Import Wordfence settings from another site using a token"
-msgstr ""
-"Wordfence beállítások importálása egy másik webhelyről token használatával"
+msgstr "Wordfence-beállítások importálása token használatával egy másik webhelyről"
 
-#: class/mainwp-wordfence-setting.class.php:1532
-#: class/mainwp-wordfence.class.php:502 class/mainwp-wordfence.class.php:818
+#: class/mainwp-wordfence-setting.class.php:1562
+#: class/mainwp-wordfence.class.php:556 class/mainwp-wordfence.class.php:881
 msgid "Diagnostics"
 msgstr "Diagnosztika"
 
-#: class/mainwp-wordfence-setting.class.php:1543
+#: class/mainwp-wordfence-setting.class.php:1573
 msgid "No websites were found with the Wordfence plugin installed"
 msgstr ""
 "Nem található olyan webhely, amelyen a Wordfence bővítmény telepítve van"
 
-#: class/mainwp-wordfence-setting.class.php:1551
+#: class/mainwp-wordfence-setting.class.php:1581
 msgid "Select child site"
 msgstr "Alwebhely kiválasztása"
 
-#: class/mainwp-wordfence-setting.class.php:1605
+#: class/mainwp-wordfence-setting.class.php:1617
+msgid "Loading..."
+msgstr "Betöltés..."
+
+#: class/mainwp-wordfence-setting.class.php:1635
 msgid "Other Tests"
 msgstr "Egyéb tesztek"
 
-#: class/mainwp-wordfence-setting.class.php:1608
+#: class/mainwp-wordfence-setting.class.php:1638
 msgid "System configuration"
 msgstr "Rendszerkonfiguráció"
 
-#: class/mainwp-wordfence-setting.class.php:1612
+#: class/mainwp-wordfence-setting.class.php:1642
 msgid "Click to See System Configuration"
-msgstr "Kattintson a rendszerkonfiguráció megtekintéséhez"
+msgstr "Rendszerkonfiguráció megtekintése"
 
-#: class/mainwp-wordfence-setting.class.php:1617
+#: class/mainwp-wordfence-setting.class.php:1647
 msgid "Host available memory"
-msgstr "Gazdagép rendelkezésre álló memória"
+msgstr "A gazdagépen elérhető memória"
 
-#: class/mainwp-wordfence-setting.class.php:1621
+#: class/mainwp-wordfence-setting.class.php:1651
 msgid "Click to See host available memory"
-msgstr "Kattintson a gazdagép rendelkezésre álló memóriájának megtekintéséhez"
+msgstr "A gazdagépen elérhető memória megtekintése"
 
-#: class/mainwp-wordfence-setting.class.php:1636
+#: class/mainwp-wordfence-setting.class.php:1666
 msgid "Debugging Options"
 msgstr "Hibakeresési beállítások"
 
-#: class/mainwp-wordfence-setting.class.php:1641
+#: class/mainwp-wordfence-setting.class.php:1671
 msgid "Enable debugging mode (increases database load)"
 msgstr "Hibakeresési mód engedélyezése (növeli az adatbázis terhelését)"
 
-#: class/mainwp-wordfence-setting.class.php:1648
+#: class/mainwp-wordfence-setting.class.php:1678
 msgid ""
 "Start all scans remotely (Try this if your scans aren't starting and your "
 "site is publicly accessible)"
@@ -1208,150 +1190,152 @@ msgstr ""
 "Az összes vizsgálat távoli indítása (Próbálja ki ezt, ha a vizsgálatok nem "
 "indulnak el, és a webhelye nyilvánosan elérhető)"
 
-#: class/mainwp-wordfence-setting.class.php:1656
+#: class/mainwp-wordfence-setting.class.php:1686
 msgid ""
 "Enable SSL Verification (Disable this if you are consistently unable to "
 "connect to the Wordfence servers.)"
-msgstr ""
-"SSL-ellenőrzés engedélyezése (Tiltsa le ezt, ha tartósan nem tud csatlakozni"
-" a Wordfence szervereihez.)"
+msgstr "SSL-ellenőrzés bekapcsolása (Kapcsolja ki ezt, ha tartósan nem tud csatlakozni a Wordfence szervereihez.)"
 
-#: class/mainwp-wordfence-setting.class.php:1664
+#: class/mainwp-wordfence-setting.class.php:1694
 msgid "Disable reading of php://input"
 msgstr "A php://input olvasásának letiltása"
 
-#: class/mainwp-wordfence-setting.class.php:1672
+#: class/mainwp-wordfence-setting.class.php:1702
 msgid "Enable beta threat defense feed"
 msgstr "Béta fenyegetésvédelmi feed engedélyezése"
 
-#: class/mainwp-wordfence-setting.class.php:1681
+#: class/mainwp-wordfence-setting.class.php:1711
 msgid "Enable Wordfence translations"
 msgstr "Wordfence-fordítások engedélyezése"
 
-#: class/mainwp-wordfence.class.php:167
+#: class/mainwp-wordfence.class.php:174
 msgid "Will redirect to your website immediately."
 msgstr "Azonnal átirányít a webhelyére."
 
-#: class/mainwp-wordfence.class.php:178 class/mainwp-wordfence.class.php:320
-#: mainwp-wordfence-extension.php:112 mainwp-wordfence-extension.php:283
+#: class/mainwp-wordfence.class.php:185 class/mainwp-wordfence.class.php:342
+#: mainwp-wordfence-extension.php:117 mainwp-wordfence-extension.php:288
 msgid "Wordfence"
 msgstr "Wordfence"
 
-#: class/mainwp-wordfence.class.php:321
+#: class/mainwp-wordfence.class.php:344
 msgid "The most recent Wordfence information"
 msgstr "A legfrissebb Wordfence-információk"
 
-#: class/mainwp-wordfence.class.php:333
+#: class/mainwp-wordfence.class.php:360
 msgid "Wordfence Not Detected"
-msgstr "Wordfence nem észlelhető"
+msgstr "A Wordfence nem észlelhető"
 
-#: class/mainwp-wordfence.class.php:334
+#: class/mainwp-wordfence.class.php:362
 msgid "First install and activate the Wordfence plugin on the child site."
-msgstr ""
-"Először telepítse és aktiválja a Wordfence-bővítményt a gyermek webhelyen."
+msgstr "Először telepítse és kapcsolja be a Wordfence-bővítményt az alárendelt webhelyen."
 
-#: class/mainwp-wordfence.class.php:344
+#: class/mainwp-wordfence.class.php:384
 msgid "No issues Detected"
 msgstr "Nem észlelhető probléma"
 
-#: class/mainwp-wordfence.class.php:347
+#: class/mainwp-wordfence.class.php:387
 msgid "Issues Detected"
 msgstr "Problémák észlelve"
 
-#: class/mainwp-wordfence.class.php:350 class/mainwp-wordfence.class.php:501
-#: class/mainwp-wordfence.class.php:817
-msgid "Scan"
-msgstr "Vizsgálat"
+#: class/mainwp-wordfence.class.php:401
+msgid "Never"
+msgstr "Soha"
 
-#: class/mainwp-wordfence.class.php:351
-msgid "Results"
-msgstr "Eredmények"
+#. translators: %s: Last scan time
+#: class/mainwp-wordfence.class.php:412
+#, php-format
+msgid "Scanned on %s"
+msgstr "Vizsgálat időpontja: %s"
 
-#: class/mainwp-wordfence.class.php:353
-msgid "Wordfence Dashboard"
-msgstr "Wordfence-irányítópult"
-
-#: class/mainwp-wordfence.class.php:361
-msgid "Scanned on"
-msgstr "Vizsgálat időpontja"
-
-#: class/mainwp-wordfence.class.php:365
+#: class/mainwp-wordfence.class.php:420
 msgid "Firewall Summary - Attacks Blocked"
-msgstr "Tűzfal összegzés - Blokkolt támadások"
+msgstr "Tűzfal-összegzés – blokkolt támadások"
 
-#: class/mainwp-wordfence.class.php:369
+#: class/mainwp-wordfence.class.php:425
 msgid "Today"
 msgstr "Ma"
 
-#: class/mainwp-wordfence.class.php:370
+#: class/mainwp-wordfence.class.php:426
 msgid "Last Week"
 msgstr "Múlt hét"
 
-#: class/mainwp-wordfence.class.php:371
+#: class/mainwp-wordfence.class.php:427
 msgid "Last Month"
 msgstr "Múlt hónap"
 
-#: class/mainwp-wordfence.class.php:407
+#: class/mainwp-wordfence.class.php:462
 msgid "Invalid site ID."
-msgstr "Érvénytelen webhelyazonosító."
+msgstr "Hibás webhely-ID."
 
-#: class/mainwp-wordfence.class.php:423
+#: class/mainwp-wordfence.class.php:477
 msgid "Wordfence plugin not detected on the site."
 msgstr "A Wordfence-bővítmény nem észlelhető a webhelyen."
 
-#: class/mainwp-wordfence.class.php:497
+#: class/mainwp-wordfence.class.php:551
 msgid "Wordfence Options"
 msgstr "Wordfence-beállítások"
 
-#: class/mainwp-wordfence.class.php:498
+#: class/mainwp-wordfence.class.php:552
 msgid "Live traffic"
 msgstr "Valós idejű forgalom"
 
-#: class/mainwp-wordfence.class.php:500 class/mainwp-wordfence.class.php:816
+#: class/mainwp-wordfence.class.php:554 class/mainwp-wordfence.class.php:879
 msgid "Firewall"
 msgstr "Tűzfal"
 
-#: class/mainwp-wordfence.class.php:564
-msgid "Save General Settings to Child site"
-msgstr "Általános beállítások mentése a gyermek webhelyre"
+#: class/mainwp-wordfence.class.php:555 class/mainwp-wordfence.class.php:880
+msgid "Scan"
+msgstr "Vizsgálat"
 
-#: class/mainwp-wordfence.class.php:810
+#: class/mainwp-wordfence.class.php:622
+msgid "Save General Settings to Child site"
+msgstr "Általános beállítások mentése az alárendelt webhelyre"
+
+#: class/mainwp-wordfence.class.php:875
+msgid "Wordfence Overview"
+msgstr "Wordfence áttekintése"
+
+#: class/mainwp-wordfence.class.php:876
 msgid "Options"
 msgstr "Beállítások"
 
-#: class/mainwp-wordfence.class.php:831
+#: class/mainwp-wordfence.class.php:894
 msgid "Bulk Actions"
 msgstr "Csoportos műveletek"
 
-#: class/mainwp-wordfence.class.php:832
+#: class/mainwp-wordfence.class.php:895
 msgid "Activate"
 msgstr "Aktiválás"
 
-#: class/mainwp-wordfence.class.php:833
+#: class/mainwp-wordfence.class.php:896
+msgid "Deactivate"
+msgstr "Kikapcsolás"
+
+#: class/mainwp-wordfence.class.php:897
 msgid "Update"
 msgstr "Frissítés"
 
-#: class/mainwp-wordfence.class.php:834
+#: class/mainwp-wordfence.class.php:899
 msgid "Hide"
 msgstr "Elrejtés"
 
-#: class/mainwp-wordfence.class.php:835
+#: class/mainwp-wordfence.class.php:901
 msgid "Unhide"
 msgstr "Megjelenítés"
 
-#: class/mainwp-wordfence.class.php:842
+#: class/mainwp-wordfence.class.php:911
 msgid "Stop Scan Process"
-msgstr "Vizsgálat leállítása"
+msgstr "Vizsgálati folyamat leállítása"
 
-#: class/mainwp-wordfence.class.php:843
+#: class/mainwp-wordfence.class.php:913
 msgid "Start a Wordfence Scan"
 msgstr "Wordfence-vizsgálat indítása"
 
-#: class/mainwp-wordfence.class.php:843
+#: class/mainwp-wordfence.class.php:913
 msgid "Scan all Child Sites"
-msgstr "Összes gyermek webhely vizsgálata"
+msgstr "Összes alárendelt webhely vizsgálata"
 
-#: class/mainwp-wordfence.class.php:1081
+#: class/mainwp-wordfence.class.php:1154
 msgid ""
 "A live stream of what Wordfence is busy with right now will appear in this "
 "box."
@@ -1359,17 +1343,11 @@ msgstr ""
 "Ebben a mezőben megjelenik egy élő közvetítés arról, hogy mivel foglalkozik "
 "éppen a Wordfence."
 
-#: class/mainwp-wordfence.class.php:1486
-msgid "No websites were found with the iThemes Security plugin installed."
-msgstr ""
-"Nem található olyan webhely, amelyen az iThemes Security bővítmény telepítve"
-" van."
-
-#: mainwp-wordfence-extension.php:274
+#: mainwp-wordfence-extension.php:279
 msgid "Wordfence Status"
 msgstr "Wordfence-állapot"
 
-#: mainwp-wordfence-extension.php:326
+#: mainwp-wordfence-extension.php:343
 msgid ""
 "requires <a href=\"https://mainwp.com/\" target=\"_blank\">MainWP Dashboard "
 "Plugin</a> to be activated in order to work. Please install and activate <a "
@@ -1380,3 +1358,24 @@ msgstr ""
 "Dashboard Plugin</a> aktiválása szükséges. Kérjük, először telepítse és "
 "aktiválja a <a href=\"https://mainwp.com/\" target=\"_blank\">MainWP "
 "Dashboard Plugin</a>-t."
+
+#~ msgid ""
+#~ "Click on a \"Show results\" link at \"Wordfence Dashboard\" to view Scan "
+#~ "results on a site."
+#~ msgstr ""
+#~ "Kattintson a \"Show results\" hivatkozásra a \"Wordfence Dashboard\" "
+#~ "felületen, hogy megtekinthesse a vizsgálat eredményeit egy webhelyen."
+
+#~ msgid "Results"
+#~ msgstr "Eredmények"
+
+#~ msgid "Wordfence Dashboard"
+#~ msgstr "Wordfence-irányítópult"
+
+#~ msgid "Scanned on"
+#~ msgstr "Vizsgálat időpontja"
+
+#~ msgid "No websites were found with the iThemes Security plugin installed."
+#~ msgstr ""
+#~ "Nem található olyan webhely, amelyen az iThemes Security bővítmény telepítve"
+#~ " van."

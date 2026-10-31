@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: MainWP Cache Control Extension 5.0.4\n"
+"Project-Id-Version: MainWP Cache Control Extension 5.3\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T19:14:00+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,12 +18,12 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: MainWP Cache Control Extension\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 5.0.4\n"
+"X-Plugin-Version: 5.3\n"
 
 #. Plugin Name of the plugin
 #: mainwp-cache-control-extension.php
 msgid "MainWP Cache Control Extension"
-msgstr "MainWP Cache Control Extension"
+msgstr "MainWP gyorsítótár-vezérlő kiterjesztés"
 
 #. Plugin URI of the plugin
 #. Author URI of the plugin
@@ -33,215 +33,529 @@ msgstr "https://mainwp.com"
 
 #. Description of the plugin
 #: mainwp-cache-control-extension.php
-#: class/class-mainwp-cache-control-purge-view.php:438
 msgid ""
 "MainWP Cache Control allows you to automatically purge the Cache on your "
 "child sites after performing an update of WP Core, Theme, or a Plugin "
 "through the MainWP Dashboard."
-msgstr ""
-"A MainWP Cache Control lehetővé teszi a gyermek webhelyek gyorsítótárának "
-"automatikus ürítését a WP Core, Theme vagy Plugin frissítése után a MainWP "
-"irányítópulton keresztül."
+msgstr "A MainWP gyorsítótár-vezérlő kiterjesztése lehetővé teszi a gyermek webhelyek gyorsítótárának automatikus ürítését a WordPress magjának, egy sablonnak vagy egy bővítménynek a MainWP vezérlőpulton keresztül végzett frissítése után."
 
 #. Author of the plugin
 #: mainwp-cache-control-extension.php
 msgid "MainWP"
 msgstr "MainWP"
 
-#: class/class-mainwp-cache-control-admin.php:147
-msgid "Cache Control"
-msgstr "Cache Control"
+#: class/class-mainwp-cache-control-abilities.php:51
+#: class/class-mainwp-cache-control-purge-view.php:986
+msgid "MainWP Cache Control"
+msgstr "MainWP gyorsítótár-vezérlés"
 
-#: class/class-mainwp-cache-control-admin.php:182
+#: class/class-mainwp-cache-control-abilities.php:52
+msgid ""
+"Abilities for bounded Cache Control operations on this MainWP Dashboard."
+msgstr "A gyorsítótár-vezérlési műveletek korlátozott körű végrehajtására szolgáló képességek ezen a MainWP vezérlőpulton."
+
+#: class/class-mainwp-cache-control-abilities.php:69
+msgid "Get MainWP Site Cache Control Status"
+msgstr "MainWP-webhely gyorsítótár-vezérlési állapotának lekérése"
+
+#: class/class-mainwp-cache-control-abilities.php:70
+msgid ""
+"Read current Dashboard Cache Control configuration and cached Child "
+"observations for one authorized MainWP site without refreshing or purging "
+"it."
+msgstr "Az aktuális vezérlőpult gyorsítótár-vezérlési beállításainak és egy engedélyezett MainWP-webhely gyorsítótárazott Child-megfigyeléseinek beolvasása frissítés vagy ürítés nélkül."
+
+#: class/class-mainwp-cache-control-abilities.php:90
+msgid "List MainWP Site Cache Control Statuses"
+msgstr "MainWP-webhelyek gyorsítótár-vezérlési állapotainak listázása"
+
+#: class/class-mainwp-cache-control-abilities.php:91
+msgid ""
+"List bounded Dashboard cache policy and cached Child observations for sites "
+"visible to the current principal."
+msgstr "A vezérlőpult korlátozott hatókörű gyorsítótár-házirendjének és az aktuális felhasználó számára látható webhelyek gyorsítótárazott Child-megfigyeléseinek listázása."
+
+#: class/class-mainwp-cache-control-abilities.php:100
+msgid "Get MainWP Global Cache Control Configuration"
+msgstr "A MainWP globális gyorsítótár-vezérlési konfigurációjának lekérése"
+
+#: class/class-mainwp-cache-control-abilities.php:101
+msgid ""
+"Get non-secret global cache policy and bounded Cloudflare credential-"
+"envelope readiness."
+msgstr "A nem titkos globális gyorsítótár-házirend és a korlátozott Cloudflare-hitelesítőadat-csomag állapotának lekérése."
+
+#: class/class-mainwp-cache-control-abilities.php:110
+msgid "Set MainWP Global Cache Control Policy"
+msgstr "A MainWP globális gyorsítótár-vezérlési házirendjének beállítása"
+
+#: class/class-mainwp-cache-control-abilities.php:111
+msgid ""
+"Set the global auto-purge and Cloudflare enablement flags without changing "
+"credentials or synchronizing sites."
+msgstr "A globális automatikus ürítést és a Cloudflare használatát engedélyező jelzők beállítása a hitelesítő adatok módosítása vagy a webhelyek szinkronizálása nélkül."
+
+#: class/class-mainwp-cache-control-abilities.php:120
+msgid "Set MainWP Site Cache Control Policy"
+msgstr "A MainWP-webhely gyorsítótár-vezérlési házirendjének beállítása"
+
+#: class/class-mainwp-cache-control-abilities.php:121
+msgid ""
+"Set one authorized site’s auto-purge and Cloudflare source modes without "
+"changing credentials or synchronizing the Child."
+msgstr "Egy engedélyezett webhely automatikus ürítési és Cloudflare-forrásmódjainak beállítása a hitelesítő adatok módosítása vagy a Child szinkronizálása nélkül."
+
+#: class/class-mainwp-cache-control-abilities.php:130
+msgid "Validate MainWP Site Cloudflare Credentials"
+msgstr "A MainWP-webhely Cloudflare-hitelesítő adatainak érvényesítése"
+
+#: class/class-mainwp-cache-control-abilities.php:131
+msgid ""
+"Validate the effective stored Cloudflare credentials for one authorized site"
+" and return only a bounded classification."
+msgstr "Egy engedélyezett webhelyhez tárolt, ténylegesen használt Cloudflare-hitelesítő adatok érvényesítése, és kizárólag korlátozott besorolás visszaadása."
+
+#: class/class-mainwp-cache-control-abilities.php:140
+msgid "Purge MainWP Site Cache"
+msgstr "MainWP-webhely gyorsítótárának ürítése"
+
+#: class/class-mainwp-cache-control-abilities.php:141
+msgid ""
+"Request a cache purge on one authorized Child and return bounded per-layer "
+"confirmation provenance."
+msgstr "Gyorsítótár-ürítés kérése egy engedélyezett Child webhelyen, majd az egyes rétegekre vonatkozó, korlátozott megerősítési forrásadatok visszaadása."
+
+#: class/class-mainwp-cache-control-abilities.php:152
+msgid "Get MainWP Site Cache Purge Outcome"
+msgstr "A MainWP-webhely gyorsítótár-ürítési eredményének lekérése"
+
+#: class/class-mainwp-cache-control-abilities.php:153
+msgid ""
+"Get the last bounded structured purge outcome cached from one authorized "
+"Child."
+msgstr "Egy engedélyezett Child webhelyről gyorsítótárazott, utolsó korlátozott, strukturált ürítési eredmény lekérése."
+
+#: class/class-mainwp-cache-control-abilities.php:581
+msgid "You do not have permission to view Cache Control status for this site."
+msgstr "Nincs engedélye a webhely gyorsítótár-vezérlési állapotának megtekintésére."
+
+#: class/class-mainwp-cache-control-abilities.php:594
+msgid "You do not have permission to use this Cache Control operation."
+msgstr "Nincs engedélye ezen gyorsítótár-vezérlési művelet használatára."
+
+#: class/class-mainwp-cache-control-abilities.php:612
+msgid ""
+"Positive MainWP site ID as an integer or canonical decimal string for GET "
+"transport."
+msgstr "Pozitív MainWP-webhely-ID egész számként vagy kanonikus decimális karakterláncként a GET-átvitelhez."
+
+#: class/class-mainwp-cache-control-abilities.php:632
+msgid "Authorized MainWP site ID."
+msgstr "Engedélyezett MainWP-webhely-ID."
+
+#: class/class-mainwp-cache-control-abilities.php:637
+msgid ""
+"Always false because this read does not contact the Child or a cache "
+"provider."
+msgstr "Mindig hamis, mert ez a beolvasás nem lép kapcsolatba a Child webhellyel vagy egy gyorsítótár-szolgáltatóval."
+
+#: class/class-mainwp-cache-control-abilities.php:655
+msgid ""
+"Current Dashboard configuration, which may not yet be applied on the Child."
+msgstr "Az aktuális vezérlőpulti konfiguráció, amely még nem feltétlenül van alkalmazva a Child webhelyen."
+
+#: class/class-mainwp-cache-control-abilities.php:660
+msgid "Identifies current Dashboard-local configuration as the source."
+msgstr "Az aktuális, vezérlőpulton tárolt konfigurációt jelöli meg forrásként."
+
+#: class/class-mainwp-cache-control-abilities.php:665
+msgid "Configured auto-purge mode: 0 disabled, 1 enabled, 2 inherit global."
+msgstr "Beállított automatikus ürítési mód: 0 kikapcsolva, 1 bekapcsolva, 2 globális beállítás öröklése."
+
+#: class/class-mainwp-cache-control-abilities.php:669
+msgid ""
+"Effective current Dashboard auto-purge configuration, not confirmed Child "
+"state."
+msgstr "A vezérlőpult aktuális, ténylegesen érvényesülő automatikus ürítési konfigurációja, nem pedig a Child megerősített állapota."
+
+#: class/class-mainwp-cache-control-abilities.php:674
+msgid ""
+"Configured Cloudflare mode: 0 use global, 1 site configuration, 2 disabled."
+msgstr "Beállított Cloudflare-mód: 0 globális beállítás használata, 1 webhelykonfiguráció, 2 kikapcsolva."
+
+#: class/class-mainwp-cache-control-abilities.php:678
+msgid ""
+"Effective current Dashboard Cloudflare configuration, not provider "
+"reachability."
+msgstr "A vezérlőpult aktuális, ténylegesen érvényesülő Cloudflare-konfigurációja, nem pedig a szolgáltató elérhetősége."
+
+#: class/class-mainwp-cache-control-abilities.php:683
+msgid ""
+"Always unknown because this extension has no verified Child configuration "
+"readback."
+msgstr "Mindig ismeretlen, mert ez a kiterjesztés nem rendelkezik a Child konfigurációjának ellenőrzött visszaolvasásával."
+
+#: class/class-mainwp-cache-control-abilities.php:699
+msgid ""
+"Last cached Child observations stored on the Dashboard; not live provider "
+"state."
+msgstr "A vezérlőpulton tárolt, legutóbbi gyorsítótárazott Child-megfigyelések; nem a szolgáltató élő állapota."
+
+#: class/class-mainwp-cache-control-abilities.php:704
+msgid "Identifies cached Child-reported Dashboard state as the source."
+msgstr "A gyorsítótárazott, Child által jelentett vezérlőpulti állapotot jelöli meg forrásként."
+
+#: class/class-mainwp-cache-control-abilities.php:709
+msgid ""
+"Sanitized cache solution last reported by the Child, or an empty string."
+msgstr "A Child által legutóbb jelentett, megtisztított gyorsítótár-megoldás vagy üres karakterlánc."
+
+#: class/class-mainwp-cache-control-abilities.php:714
+msgid "Unix timestamp last reported by the Child, or 0 when unavailable."
+msgstr "A Child által legutóbb jelentett Unix-időbélyeg, vagy 0, ha nem érhető el."
+
+#: class/class-mainwp-cache-control-admin.php:177
+msgid "Cache Control"
+msgstr "Gyorsítótár-vezérlés"
+
+#: class/class-mainwp-cache-control-admin.php:215
 msgid "Undefined site id. Please, try again."
 msgstr "Nem definiált webhely-azonosító. Kérjük, próbálja újra."
 
-#: class/class-mainwp-cache-control-overview.php:51
+#: class/class-mainwp-cache-control-operations.php:1374
+msgid "A positive integer site ID is required."
+msgstr "Pozitív egész számú webhely-ID megadása kötelező."
+
+#: class/class-mainwp-cache-control-operations.php:1387
+msgid "The Cache Control input is invalid."
+msgstr "A gyorsítótár-vezérlési bemenet hibás."
+
+#: class/class-mainwp-cache-control-operations.php:1401
+msgid "The global Cache Control policy could not be saved."
+msgstr "A globális gyorsítótár-vezérlési házirend mentése nem sikerült."
+
+#: class/class-mainwp-cache-control-operations.php:1418
+msgid "The site Cache Control policy could not be saved."
+msgstr "A webhely gyorsítótár-vezérlési házirendjének mentése nem sikerült."
+
+#: class/class-mainwp-cache-control-operations.php:1434
+msgid "Cache Control site statuses could not be read."
+msgstr "A webhelyek gyorsítótár-vezérlési állapotainak beolvasása nem sikerült."
+
+#: class/class-mainwp-cache-control-operations.php:1447
+msgid "Stored Cloudflare credential state could not be read."
+msgstr "A tárolt Cloudflare-hitelesítőadatok állapotának beolvasása nem sikerült."
+
+#: class/class-mainwp-cache-control-operations.php:1460
+msgid "A cache purge is already in progress for this site."
+msgstr "A webhely gyorsítótárának ürítése már folyamatban van."
+
+#: class/class-mainwp-cache-control-operations.php:1473
+msgid "The cache purge result could not be confirmed."
+msgstr "A gyorsítótár-ürítés eredményét nem sikerült megerősíteni."
+
+#: class/class-mainwp-cache-control-operations.php:1486
+msgid "The Child returned an invalid cache purge result."
+msgstr "A Child hibás gyorsítótár-ürítési eredményt adott vissza."
+
+#: class/class-mainwp-cache-control-operations.php:1499
+msgid "The Cache Control Child integration is unavailable."
+msgstr "A gyorsítótár-vezérlési Child-integráció nem érhető el."
+
+#: class/class-mainwp-cache-control-operations.php:1512
+msgid "The requested MainWP site is not available for cache purging."
+msgstr "A kért MainWP-webhely nem érhető el gyorsítótár-ürítéshez."
+
+#: class/class-mainwp-cache-control-operations.php:1525
+msgid "You do not have permission to purge this site cache."
+msgstr "Nincs engedélye a webhely gyorsítótárának ürítésére."
+
+#: class/class-mainwp-cache-control-operations.php:1538
+msgid "The purge completed, but its structured outcome could not be stored."
+msgstr "Az ürítés befejeződött, de a strukturált eredményt nem sikerült tárolni."
+
+#: class/class-mainwp-cache-control-operations.php:1551
+msgid "The requested MainWP site was not found."
+msgstr "A kért MainWP-webhely nem található."
+
+#: class/class-mainwp-cache-control-overview.php:62
 msgid "Settings"
 msgstr "Beállítások"
 
-#: class/class-mainwp-cache-control-overview.php:52
+#: class/class-mainwp-cache-control-overview.php:63
 msgid "Logs"
 msgstr "Naplók"
 
-#: class/class-mainwp-cache-control-purge-view.php:346
+#: class/class-mainwp-cache-control-purge-view.php:319
+#: class/class-mainwp-cache-control-purge-view.php:437
+msgid ""
+"Cache Control policy settings could not be saved. Previous policy values "
+"were restored where possible."
+msgstr "A gyorsítótár-vezérlési házirend beállításainak mentése nem sikerült. A korábbi házirendértékek lehetőség szerint visszaállítva."
+
+#: class/class-mainwp-cache-control-purge-view.php:320
+#: class/class-mainwp-cache-control-purge-view.php:438
+msgid ""
+"Cloudflare credentials could not be saved. The previous stored credential "
+"was preserved."
+msgstr "A Cloudflare hitelesítő adatait nem sikerült menteni. A korábban tárolt hitelesítő adatok megmaradtak."
+
+#: class/class-mainwp-cache-control-purge-view.php:501
 msgid "Never Purged"
 msgstr "Soha nem ürítve"
 
-#: class/class-mainwp-cache-control-purge-view.php:399
+#: class/class-mainwp-cache-control-purge-view.php:544
+#: class/class-mainwp-cache-control-purge-view.php:558
+msgid "Enabled"
+msgstr "Bekapcsolva"
+
+#: class/class-mainwp-cache-control-purge-view.php:544
+#: class/class-mainwp-cache-control-purge-view.php:552
+msgid "Disabled"
+msgstr "Kikapcsolva"
+
+#: class/class-mainwp-cache-control-purge-view.php:555
+msgid "Enabled — check log"
+msgstr "Bekapcsolva — napló megtekintése"
+
+#: class/class-mainwp-cache-control-purge-view.php:567
+msgid "No supported plugin detected"
+msgstr "Nem található támogatott bővítmény"
+
+#: class/class-mainwp-cache-control-purge-view.php:581
 msgid "Jump to the site WP Admin"
 msgstr "Ugrás a webhely WP Admin felületére"
 
-#: class/class-mainwp-cache-control-purge-view.php:401
+#: class/class-mainwp-cache-control-purge-view.php:586
 msgid "Open the site overview"
-msgstr "Nyissa meg a webhely áttekintését"
+msgstr "A webhely áttekintésének megnyitása"
 
-#: class/class-mainwp-cache-control-purge-view.php:430
-#: class/class-mainwp-cache-control-purge-view.php:508
+#: class/class-mainwp-cache-control-purge-view.php:604
+msgid "Never"
+msgstr "Soha"
+
+#: class/class-mainwp-cache-control-purge-view.php:620
+#: class/class-mainwp-cache-control-purge-view.php:771
 msgid "manage dashboard settings"
-msgstr "irányítópult beállításainak kezelése"
+msgstr "vezérlőpult beállításainak kezelése"
 
-#: class/class-mainwp-cache-control-purge-view.php:439
-#, php-format
-msgid "For additional help, review this %1$shelp document%2$s."
-msgstr "További segítségért tekintse át ezt a %1$ssúgódokumentumot%2$s."
+#: class/class-mainwp-cache-control-purge-view.php:631
+msgid "Settings have been saved successfully! Please, sync your sites."
+msgstr "A beállítások mentése sikerült! Kérjük, szinkronizálja a webhelyeit."
 
-#: class/class-mainwp-cache-control-purge-view.php:443
-#: class/class-mainwp-cache-control-purge-view.php:528
-msgid "Settings have been saved successfully!"
-msgstr "A beállítások sikeresen mentve!"
+#: class/class-mainwp-cache-control-purge-view.php:641
+#: class/class-mainwp-cache-control-purge-view.php:807
+msgid "Cloudflare settings reported an error:"
+msgstr "A Cloudflare beállításai hibát jeleztek:"
 
-#: class/class-mainwp-cache-control-purge-view.php:445
-#: class/class-mainwp-cache-control-purge-view.php:531
+#: class/class-mainwp-cache-control-purge-view.php:644
+#: class/class-mainwp-cache-control-purge-view.php:810
+msgid ""
+"Settings have been saved, but the Cloudflare API credentials could not be "
+"verified. Please check your credentials."
+msgstr "A beállítások mentése sikerült, de a Cloudflare API-hitelesítő adatokat nem sikerült ellenőrizni. Kérjük, ellenőrizze a hitelesítő adatait."
+
+#: class/class-mainwp-cache-control-purge-view.php:653
+#: class/class-mainwp-cache-control-purge-view.php:816
 msgid "Cache Control Settings"
 msgstr "Cache Control beállítások"
 
-#: class/class-mainwp-cache-control-purge-view.php:446
+#. translators: 1: opening link tag, 2: closing link tag.
+#: class/class-mainwp-cache-control-purge-view.php:657
 #, php-format
 msgid "See the list of supported %1$scaching systems%2$s."
 msgstr ""
 "Tekintse meg a támogatott %1$sgyorsítótárazási rendszerek%2$s listáját."
 
-#: class/class-mainwp-cache-control-purge-view.php:446
+#: class/class-mainwp-cache-control-purge-view.php:659
 msgid ""
 "You must Sync your MainWP Dashboard with Child Sites after saving these "
 "settings."
-msgstr ""
-"A beállítások mentése után szinkronizálnia kell a MainWP irányítópultot a "
-"gyermek webhelyekkel."
+msgstr "A beállítások mentése után szinkronizálnia kell a MainWP vezérlőpultot a gyermekwebhelyekkel."
 
-#: class/class-mainwp-cache-control-purge-view.php:452
-#: class/class-mainwp-cache-control-purge-view.php:537
+#: class/class-mainwp-cache-control-purge-view.php:663
+#: class/class-mainwp-cache-control-purge-view.php:824
 msgid "Automatically purge cache"
 msgstr "Gyorsítótár automatikus ürítése"
 
-#: class/class-mainwp-cache-control-purge-view.php:453
-#: class/class-mainwp-cache-control-purge-view.php:544
-msgid "Enable to purge all cache after updates."
-msgstr "Engedélyezze az összes gyorsítótár frissítések utáni ürítését."
+#: class/class-mainwp-cache-control-purge-view.php:669
+#: class/class-mainwp-cache-control-purge-view.php:842
+msgid "Purge Cloudflare cache"
+msgstr "Cloudflare gyorsítótárának ürítése"
 
-#: class/class-mainwp-cache-control-purge-view.php:458
-msgid "Use Cloudflare Cache API."
-msgstr "Cloudflare Cache API használata."
+#: class/class-mainwp-cache-control-purge-view.php:675
+msgid "Maximum concurrent requests"
+msgstr "Egyidejű kérések maximális száma"
 
-#: class/class-mainwp-cache-control-purge-view.php:459
-msgid "Enable to use global Cloudflare API."
-msgstr "Engedélyezze a globális Cloudflare API használatát."
+#: class/class-mainwp-cache-control-purge-view.php:682
+msgid ""
+"Maximum number of cache purge requests processed at the same time (1-10)."
+msgstr "Az egyszerre feldolgozott gyorsítótár-ürítési kérések maximális száma (1–10)."
 
-#: class/class-mainwp-cache-control-purge-view.php:464
-#: class/class-mainwp-cache-control-purge-view.php:557
+#: class/class-mainwp-cache-control-purge-view.php:686
+msgid "Delay between requests"
+msgstr "Kérések közötti késleltetés"
+
+#: class/class-mainwp-cache-control-purge-view.php:690
+msgid "seconds"
+msgstr "másodperc"
+
+#: class/class-mainwp-cache-control-purge-view.php:693
+msgid "Wait this many seconds before starting the next cache purge request."
+msgstr "Várjon ennyi másodpercet a következő gyorsítótár-ürítési kérés indítása előtt."
+
+#: class/class-mainwp-cache-control-purge-view.php:697
+#: class/class-mainwp-cache-control-purge-view.php:860
 msgid "Cloudflare API Credentials"
-msgstr "Cloudflare API hitelesítő adatok"
+msgstr "Cloudflare API-hitelesítő adatok"
 
-#: class/class-mainwp-cache-control-purge-view.php:465
+#: class/class-mainwp-cache-control-purge-view.php:699
 msgid "Credentials for global Cloudflare account."
 msgstr "Hitelesítő adatok a globális Cloudflare-fiókhoz."
 
-#: class/class-mainwp-cache-control-purge-view.php:467
-#: class/class-mainwp-cache-control-purge-view.php:562
-msgid "Cloudflare API Email"
-msgstr "Cloudflare API e-mail-cím"
+#: class/class-mainwp-cache-control-purge-view.php:704
+#: class/class-mainwp-cache-control-purge-view.php:867
+msgid "Authentication method"
+msgstr "Hitelesítési módszer"
 
-#: class/class-mainwp-cache-control-purge-view.php:468
-msgid "Enter your Cloudflare API email address."
-msgstr "Adja meg a Cloudflare API e-mail-címét."
+#: class/class-mainwp-cache-control-purge-view.php:709
+#: class/class-mainwp-cache-control-purge-view.php:872
+msgid "Email & API key"
+msgstr "E-mail cím és API-kulcs"
 
-#: class/class-mainwp-cache-control-purge-view.php:474
-#: class/class-mainwp-cache-control-purge-view.php:566
-msgid "Cloudflare API Key"
+#: class/class-mainwp-cache-control-purge-view.php:712
+#: class/class-mainwp-cache-control-purge-view.php:734
+#: class/class-mainwp-cache-control-purge-view.php:875
+#: class/class-mainwp-cache-control-purge-view.php:894
+msgid "API Token"
+msgstr "API-token"
+
+#: class/class-mainwp-cache-control-purge-view.php:719
+msgid "Cloudflare API email"
+msgstr "Cloudflare API e-mail címe"
+
+#: class/class-mainwp-cache-control-purge-view.php:724
+msgid "Cloudflare API key"
 msgstr "Cloudflare API-kulcs"
 
-#: class/class-mainwp-cache-control-purge-view.php:475
-msgid "Enter your Cloudflare API Key."
-msgstr "Adja meg a Cloudflare API-kulcsát."
+#: class/class-mainwp-cache-control-purge-view.php:727
+#: class/class-mainwp-cache-control-purge-view.php:737
+#: class/class-mainwp-cache-control-purge-view.php:890
+#: class/class-mainwp-cache-control-purge-view.php:897
+msgid "Retrieved from the Cloudflare settings."
+msgstr "A Cloudflare beállításaiból lekérve."
 
-#: class/class-mainwp-cache-control-purge-view.php:477
-#: class/class-mainwp-cache-control-purge-view.php:569
-msgid "Retrieved from the backend after logging in"
-msgstr "Bejelentkezés után a backendről lekérhető"
-
-#: class/class-mainwp-cache-control-purge-view.php:482
-#: class/class-mainwp-cache-control-purge-view.php:575
+#: class/class-mainwp-cache-control-purge-view.php:744
+#: class/class-mainwp-cache-control-purge-view.php:905
 msgid "Save Settings"
 msgstr "Beállítások mentése"
 
-#: class/class-mainwp-cache-control-purge-view.php:540
+#: class/class-mainwp-cache-control-purge-view.php:798
+msgid "Settings have been saved successfully! Please, sync your site."
+msgstr "A beállítások mentése sikerült! Kérjük, szinkronizálja a webhelyét."
+
+#: class/class-mainwp-cache-control-purge-view.php:817
+msgid ""
+"See the list of supported caching systems. You must Sync your MainWP "
+"Dashboard with Child Sites after saving these settings."
+msgstr "Tekintse meg a támogatott gyorsítótárazási rendszerek listáját. A beállítások mentése után szinkronizálja a MainWP vezérlőpultot a gyermekwebhelyekkel."
+
+#: class/class-mainwp-cache-control-purge-view.php:828
 msgid "Yes"
 msgstr "Igen"
 
-#: class/class-mainwp-cache-control-purge-view.php:541
+#: class/class-mainwp-cache-control-purge-view.php:831
 msgid "No"
 msgstr "Nem"
 
-#: class/class-mainwp-cache-control-purge-view.php:542
+#: class/class-mainwp-cache-control-purge-view.php:834
+#: class/class-mainwp-cache-control-purge-view.php:846
 msgid "Use global setting"
 msgstr "Globális beállítás használata"
 
-#: class/class-mainwp-cache-control-purge-view.php:550
-msgid "Use Cloudflare Cache API"
-msgstr "Cloudflare Cache API használata"
+#: class/class-mainwp-cache-control-purge-view.php:838
+msgid "Enable to purge all cache after updates."
+msgstr "Engedélyezze az összes gyorsítótár frissítések utáni ürítését."
 
-#: class/class-mainwp-cache-control-purge-view.php:553
-msgid "Enable to override global Cloudflare API Key"
-msgstr "Engedélyezze a globális Cloudflare API-kulcs felülbírálását"
+#: class/class-mainwp-cache-control-purge-view.php:849
+msgid "Yes (use site-specific credentials)"
+msgstr "Igen (webhelyspecifikus hitelesítő adatok használata)"
 
-#: class/class-mainwp-cache-control-purge-view.php:558
-msgid "Credentials for Individual Child Site."
-msgstr "Hitelesítő adatok egyéni gyermek webhelyhez."
+#: class/class-mainwp-cache-control-purge-view.php:852
+msgid "No (disabled for this site)"
+msgstr "Nem (kikapcsolva ennél a webhelynél)"
 
-#: class/class-mainwp-cache-control-purge-view.php:634
+#: class/class-mainwp-cache-control-purge-view.php:862
+msgid "Credentials for this particular Child Site."
+msgstr "Az adott gyermekwebhely hitelesítő adatai."
+
+#: class/class-mainwp-cache-control-purge-view.php:883
+msgid "Cloudflare API Email"
+msgstr "Cloudflare API e-mail-cím"
+
+#: class/class-mainwp-cache-control-purge-view.php:887
+msgid "Cloudflare API Key"
+msgstr "Cloudflare API-kulcs"
+
+#: class/class-mainwp-cache-control-purge-view.php:974
 msgid "Clear Cache"
 msgstr "Gyorsítótár törlése"
 
-#: class/class-mainwp-cache-control-purge-view.php:638
+#: class/class-mainwp-cache-control-purge-view.php:979
 msgid "View Cache Control Logs"
 msgstr "Cache Control naplók megtekintése"
 
-#: class/class-mainwp-cache-control-purge-view.php:645
-msgid "MainWP Cache Control"
-msgstr "MainWP Cache Control"
-
-#: class/class-mainwp-cache-control-purge-view.php:659
+#: class/class-mainwp-cache-control-purge-view.php:1000
 msgid "Purge Cache (Cache Control)"
 msgstr "Gyorsítótár ürítése (Cache Control)"
 
-#: class/class-mainwp-cache-control-purge-view.php:684
-msgid "See the Cache Control feature logs."
-msgstr "Tekintse meg a Cache Control funkció naplóit."
-
-#: class/class-mainwp-cache-control-purge-view.php:690
+#: class/class-mainwp-cache-control-purge-view.php:1025
 msgid "Site"
 msgstr "Webhely"
 
-#: class/class-mainwp-cache-control-purge-view.php:691
+#: class/class-mainwp-cache-control-purge-view.php:1026
 msgid "Status"
 msgstr "Állapot"
 
-#: class/class-mainwp-cache-control-purge-view.php:692
+#: class/class-mainwp-cache-control-purge-view.php:1027
 msgid "Cache Solution"
 msgstr "Gyorsítótár-megoldás"
 
-#: class/class-mainwp-cache-control-purge-view.php:693
-msgid "Last Purged"
-msgstr "Utoljára ürítve"
-
-#: class/class-mainwp-cache-control-purge-view.php:694
+#: class/class-mainwp-cache-control-purge-view.php:1028
 msgid "Cloudflare"
 msgstr "Cloudflare"
 
-#: class/class-mainwp-cache-control-purge-view.php:695
+#: class/class-mainwp-cache-control-purge-view.php:1029
+msgid "Last Purged"
+msgstr "Utoljára ürítve"
+
+#: class/class-mainwp-cache-control-purge-view.php:1030
 msgid "Log"
 msgstr "Napló"
 
-#: class/class-mainwp-cache-control-purge-view.php:787
+#: class/class-mainwp-cache-control-purge-view.php:1077
+msgid "Invalid or inaccessible site. Please, try again."
+msgstr "Hibás vagy nem elérhető webhely. Kérjük, próbálja meg újra."
+
+#: class/class-mainwp-cache-control-purge-view.php:1082
+msgid "The cache purge could not be completed. Please, try again."
+msgstr "Nem sikerült befejezni a gyorsítótár ürítését. Kérjük, próbálja meg újra."
+
+#: class/class-mainwp-cache-control-purge-view.php:1232
 msgid "Nonce authentication failed. Please, try again."
 msgstr "Nonce-hitelesítés sikertelen. Kérjük, próbálja újra."
 
-#: class/class-mainwp-cache-control-purge-view.php:790
-msgid "Site ID not found. Please, try again."
-msgstr "Webhely-azonosító nem található. Kérjük, próbálja újra."
+#: class/class-mainwp-cache-control-purge-view.php:1239
+msgid "You do not have permission to access Cache Control."
+msgstr "Nincs jogosultsága a Cache Control eléréséhez."
 
-#: mainwp-cache-control-extension.php:149
+#: class/class-mainwp-cache-control-utility.php:582
+msgid "Unknown error"
+msgstr "Ismeretlen hiba"
+
+#. translators: The placeholders wrap linked instances of the MainWP Dashboard
+#. plugin name.
+#: mainwp-cache-control-extension.php:226
 #, php-format
 msgid ""
 "requires %1$sMainWP Dashboard Plugin%2$s to be activated in order to work. "
@@ -249,3 +563,40 @@ msgid ""
 msgstr ""
 "működéséhez a %1$sMainWP Dashboard Plugin%2$s aktiválása szükséges. Kérjük, "
 "először telepítse és aktiválja a %3$sMainWP Dashboard Plugin%4$s bővítményt."
+
+#, php-format
+#~ msgid "For additional help, review this %1$shelp document%2$s."
+#~ msgstr "További segítségért tekintse át ezt a %1$ssúgódokumentumot%2$s."
+
+#~ msgid "Settings have been saved successfully!"
+#~ msgstr "A beállítások sikeresen mentve!"
+
+#~ msgid "Use Cloudflare Cache API."
+#~ msgstr "Cloudflare Cache API használata."
+
+#~ msgid "Enable to use global Cloudflare API."
+#~ msgstr "Engedélyezze a globális Cloudflare API használatát."
+
+#~ msgid "Enter your Cloudflare API email address."
+#~ msgstr "Adja meg a Cloudflare API e-mail-címét."
+
+#~ msgid "Enter your Cloudflare API Key."
+#~ msgstr "Adja meg a Cloudflare API-kulcsát."
+
+#~ msgid "Retrieved from the backend after logging in"
+#~ msgstr "Bejelentkezés után a backendről lekérhető"
+
+#~ msgid "Use Cloudflare Cache API"
+#~ msgstr "Cloudflare Cache API használata"
+
+#~ msgid "Enable to override global Cloudflare API Key"
+#~ msgstr "Engedélyezze a globális Cloudflare API-kulcs felülbírálását"
+
+#~ msgid "Credentials for Individual Child Site."
+#~ msgstr "Hitelesítő adatok egyéni gyermek webhelyhez."
+
+#~ msgid "See the Cache Control feature logs."
+#~ msgstr "Tekintse meg a Cache Control funkció naplóit."
+
+#~ msgid "Site ID not found. Please, try again."
+#~ msgstr "Webhely-azonosító nem található. Kérjük, próbálja újra."

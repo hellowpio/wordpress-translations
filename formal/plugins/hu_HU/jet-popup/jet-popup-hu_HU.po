@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: JetPopup 2.0.19\n"
+"Project-Id-Version: JetPopup 2.2.3.4\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:48:51+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,11 +18,11 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: JetPopup\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 2.0.19\n"
+"X-Plugin-Version: 2.2.3.4\n"
 
 #. Plugin Name of the plugin
-#: jet-popup.php includes/elementor/document-types/document.php:29
-#: includes/elementor/extensions.php:100 includes/elementor/manager.php:153
+#: jet-popup.php includes/elementor/document-types/document.php:36
+#: includes/elementor/extensions.php:101 includes/elementor/manager.php:133
 #: includes/post-type.php:186 includes/post-type.php:187
 #: includes/post-type.php:192 includes/settings/manager.php:67
 msgid "JetPopup"
@@ -36,7 +36,7 @@ msgstr "https://crocoblock.com/plugins/jetpopup/"
 #. Description of the plugin
 #: jet-popup.php
 msgid "The advanced plugin for creating popups with Elementor"
-msgstr "A fejlett bővítmény felugró ablakok létrehozásához az Elementorral"
+msgstr "A felugró ablakok Elementorral történő létrehozására szolgáló haladó bővítmény"
 
 #. Author of the plugin
 #: jet-popup.php
@@ -60,21 +60,31 @@ msgstr "Kérem, állítsa be a MailChimp API-kulcsot és a List ID-t"
 msgid "Internal error. Please, try again later"
 msgstr "Belső hiba. Kérem, próbálja meg később újra"
 
-#: includes/ajax-handlers.php:54 includes/settings.php:452
-#: includes/settings.php:529 includes/settings.php:617
+#: includes/ajax-handlers.php:54 includes/settings.php:461
+#: includes/settings.php:538 includes/settings.php:626
 msgid "Server error. Please, try again later"
 msgstr "Szerverhiba. Kérem, próbálja meg később újra"
 
 #: includes/ajax-handlers.php:55
 #, php-format
 msgid "E-mail %s has been subscribed"
-msgstr "A(z) %s e-mail-cím feliratkozott"
+msgstr "A(z) %s e-mail-cím feliratkozása megtörtént"
 
 #: includes/ajax-handlers.php:56
 msgid "No Data Found"
 msgstr "Nem található adat"
 
-#: includes/assets.php:182 includes/block-editor/manager.php:280
+#: includes/assets.php:102 includes/render/manager.php:438
+#: templates/editor.php:60
+msgid "Popup dialog"
+msgstr "Felugró párbeszédpanel"
+
+#: includes/assets.php:103 includes/render/manager.php:279
+#: templates/editor.php:29
+msgid "Close popup"
+msgstr "Felugró ablak bezárása"
+
+#: includes/assets.php:191 includes/block-editor/manager.php:280
 msgid "Import Popup"
 msgstr "Felugró ablak importálása"
 
@@ -84,7 +94,7 @@ msgid "Click Here"
 msgstr "Kattintson ide"
 
 #: includes/block-editor/blocks/action-button.php:107
-#: includes/elementor/addons/jet-action-button-widget.php:101
+#: includes/elementor/addons/jet-action-button-widget.php:104
 #: includes/elementor/addons/jet-popup-mailchimp.php:343
 #: includes/settings/subpage-modules/general.php:36
 msgid "General"
@@ -93,21 +103,21 @@ msgstr "Általános"
 #: includes/block-editor/blocks/action-button.php:112
 #: includes/block-editor/blocks/action-button.php:183
 msgid "Icon Distance"
-msgstr "Ikon távolsága"
+msgstr "Ikontávolság"
 
 #: includes/block-editor/blocks/action-button.php:132
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Horizontal Padding"
-msgstr "Vízszintes belső margó"
+msgstr "Vízszintes padding"
 
 #: includes/block-editor/blocks/action-button.php:151
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Vertical Padding"
-msgstr "Függőleges belső margó"
+msgstr "Függőleges padding"
 
 #: includes/block-editor/blocks/action-button.php:171
-#: includes/elementor/addons/jet-action-button-widget.php:273
-#: includes/elementor/addons/jet-action-button-widget.php:346
+#: includes/elementor/addons/jet-action-button-widget.php:276
+#: includes/elementor/addons/jet-action-button-widget.php:349
 #: includes/elementor/addons/jet-popup-mailchimp.php:439
 #: includes/elementor/addons/jet-popup-mailchimp.php:478
 #: includes/elementor/addons/jet-popup-mailchimp.php:636
@@ -117,7 +127,7 @@ msgstr "Függőleges belső margó"
 #: includes/elementor/addons/jet-popup-mailchimp.php:1031
 #: includes/elementor/addons/jet-popup-mailchimp.php:1180
 #: includes/elementor/addons/jet-popup-mailchimp.php:1222
-#: includes/elementor/document-types/document.php:723
+#: includes/elementor/document-types/document.php:1007
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Border"
 msgstr "Szegély"
@@ -138,30 +148,30 @@ msgid "States"
 msgstr "Állapotok"
 
 #: includes/block-editor/blocks/action-button.php:242
-#: includes/elementor/addons/jet-action-button-widget.php:220
+#: includes/elementor/addons/jet-action-button-widget.php:223
 #: includes/elementor/addons/jet-popup-mailchimp.php:420
 #: includes/elementor/addons/jet-popup-mailchimp.php:604
 #: includes/elementor/addons/jet-popup-mailchimp.php:902
-#: includes/elementor/document-types/document.php:652
-#: includes/elementor/document-types/document.php:785
+#: includes/elementor/document-types/document.php:936
+#: includes/elementor/document-types/document.php:1069
 msgid "Normal"
 msgstr "Normál"
 
 #: includes/block-editor/blocks/action-button.php:285
-#: includes/elementor/addons/jet-action-button-widget.php:293
+#: includes/elementor/addons/jet-action-button-widget.php:296
 #: includes/elementor/addons/jet-popup-mailchimp.php:971
-#: includes/elementor/document-types/document.php:803
-#: includes/elementor/extensions.php:83 includes/elementor/extensions.php:92
-#: includes/utils.php:887
+#: includes/elementor/document-types/document.php:1087
+#: includes/elementor/extensions.php:84 includes/elementor/extensions.php:93
+#: includes/utils.php:888
 msgid "Hover"
 msgstr "Egér fölött"
 
 #: includes/block-editor/manager.php:68 includes/block-editor/manager.php:248
 #: includes/elementor/controls/groups/group-control-box-style.php:210
-#: includes/elementor/document-types/document.php:66
-#: includes/elementor/document-types/document.php:300
-#: includes/elementor/extensions.php:79 includes/elementor/extensions.php:89
-#: includes/utils.php:848 includes/utils.php:884
+#: includes/elementor/document-types/document.php:131
+#: includes/elementor/document-types/document.php:476
+#: includes/elementor/extensions.php:80 includes/elementor/extensions.php:90
+#: includes/utils.php:849 includes/utils.php:885
 msgid "None"
 msgstr "Nincs"
 
@@ -181,19 +191,19 @@ msgstr "Lekérdezés nem található"
 
 #: includes/compatibility/plugins/jet-engine/conditions/custom-query-has-no-items.php:26
 msgid "Query Has No Items"
-msgstr "A lekérdezés nem tartalmaz elemeket"
+msgstr "A lekérdezés nem tartalmaz tételeket"
 
-#: includes/compatibility/plugins/jet-engine/manager.php:28
+#: includes/compatibility/plugins/jet-engine/manager.php:139
 msgid "Jet Engine"
 msgstr "Jet Engine"
 
-#: includes/compatibility/plugins/jet-engine/manager.php:45
+#: includes/compatibility/plugins/jet-engine/manager.php:156
 msgid "Custom Query"
 msgstr "Egyéni lekérdezés"
 
 #: includes/compatibility/plugins/woocommerce/conditions/account-login-page.php:26
 msgid "Account Login Page"
-msgstr "Fiók bejelentkezési oldal"
+msgstr "Fiók belépési oldala"
 
 #: includes/compatibility/plugins/woocommerce/conditions/account-page.php:26
 msgid "Account Page"
@@ -236,7 +246,7 @@ msgstr "Összes"
 
 #: includes/compatibility/plugins/woocommerce/conditions/product-checkout.php:26
 msgid "Product Checkout"
-msgstr "Pénztár"
+msgstr "Termékek pénztároldala"
 
 #: includes/compatibility/plugins/woocommerce/conditions/product-empty-card.php:26
 msgid "Product Empty Cart"
@@ -253,11 +263,11 @@ msgstr "Keresési eredmények"
 
 #: includes/compatibility/plugins/woocommerce/conditions/shop-page.php:26
 msgid "Shop Page"
-msgstr "Bolt oldal"
+msgstr "Webáruházoldal"
 
 #: includes/compatibility/plugins/woocommerce/conditions/singular-product-categories.php:26
 msgid "Product from Category"
-msgstr "Termék kategóriából"
+msgstr "Kategóriából származó termék"
 
 #: includes/compatibility/plugins/woocommerce/conditions/singular-product-categories.php:66
 #: includes/compatibility/plugins/woocommerce/conditions/singular-product-category-child.php:66
@@ -272,7 +282,7 @@ msgstr "Alkategóriákban"
 
 #: includes/compatibility/plugins/woocommerce/conditions/singular-product-tags.php:26
 msgid "Product from Tag"
-msgstr "Termék címke alapján"
+msgstr "Címke szerinti termék"
 
 #: includes/compatibility/plugins/woocommerce/conditions/singular-product-tags.php:66
 #: includes/conditions-manager/conditions/archive-tag.php:66
@@ -291,7 +301,7 @@ msgstr "Válasszon terméket"
 
 #: includes/compatibility/plugins/woocommerce/conditions/thanks-page.php:26
 msgid "Thank You Page"
-msgstr "Köszönő oldal"
+msgstr "Köszönőoldal"
 
 #: includes/compatibility/plugins/woocommerce/manager.php:28
 msgid "WooCommerce"
@@ -311,7 +321,7 @@ msgstr "Mailchimp: Mezőcímke"
 
 #: includes/compatibility/plugins/wpml/mailchimp.php:33
 msgid "Mailchimp: Field Placeholder"
-msgstr "Mailchimp: Mező helyőrző"
+msgstr "Mailchimp: Mező helytartója"
 
 #: includes/compatibility/plugins/wpml/manager.php:98
 msgid "Popup Action Button: Button text"
@@ -319,7 +329,7 @@ msgstr "Felugró műveletgomb: Gomb szövege"
 
 #: includes/compatibility/plugins/wpml/manager.php:103
 msgid "Popup Action Button: Button Link"
-msgstr "Felugró műveletgomb: Gomb hivatkozása"
+msgstr "Felugró műveletgomb: Gomb linkje"
 
 #: includes/compatibility/plugins/wpml/manager.php:116
 msgid "Mailchimp: Redirect Url"
@@ -327,11 +337,11 @@ msgstr "Mailchimp: Átirányítási URL"
 
 #: includes/compatibility/plugins/wpml/manager.php:121
 msgid "Mailchimp: E-Mail Label"
-msgstr "Mailchimp: E-mail címke"
+msgstr "Mailchimp: e-mail-címke"
 
 #: includes/compatibility/plugins/wpml/manager.php:126
 msgid "Mailchimp: E-Mail Placeholder"
-msgstr "Mailchimp: E-mail helyőrző"
+msgstr "Mailchimp: e-mail helytartója"
 
 #: includes/compatibility/plugins/wpml/manager.php:131
 msgid "Mailchimp: Submit Text"
@@ -405,15 +415,15 @@ msgstr "Nincs kiválasztva"
 
 #: includes/conditions-manager/conditions/cpt-archive/cpt-archive-taxonomy.php:26
 msgid "CPT Taxonomy"
-msgstr "CPT taxonómia"
+msgstr "CPT-osztályozás (taxonomy)"
 
 #: includes/conditions-manager/conditions/cpt-archive/cpt-archive-taxonomy.php:59
 msgid "Select Taxonomy"
-msgstr "Válasszon taxonómiát"
+msgstr "Válassza ki az osztályozást"
 
 #: includes/conditions-manager/conditions/cpt-singular/cpt-singular-post-type.php:26
 msgid "CPT Single"
-msgstr "CPT egyedi"
+msgstr "Egyedi CPT-bejegyzés"
 
 #: includes/conditions-manager/conditions/cpt-singular/cpt-singular-post-type.php:84
 msgid "Undefined"
@@ -473,7 +483,7 @@ msgstr "Bejegyzés"
 #: includes/conditions-manager/manager.php:157
 #, php-format
 msgid "%s Single"
-msgstr "%s egyedi"
+msgstr "%s – egyedi bejegyzés"
 
 #: includes/conditions-manager/manager.php:164
 msgid "Select"
@@ -483,12 +493,12 @@ msgstr "Válasszon"
 #: includes/conditions-manager/manager.php:189
 #, php-format
 msgid "All %s Archives"
-msgstr "Összes %s archívum"
+msgstr "A(z) %s összes archívuma"
 
 #: includes/conditions-manager/manager.php:202
 #: includes/conditions-manager/manager.php:225
 msgid "Select taxonomy"
-msgstr "Válasszon taxonómiát"
+msgstr "Válasszon osztályozást (taxonomy)"
 
 #: includes/conditions-manager/manager.php:311
 msgid "Entire"
@@ -534,9 +544,7 @@ msgstr "Adatfrissítés"
 #, php-format
 msgid ""
 "Module DB Updater init error in %s - version and slug is required arguments"
-msgstr ""
-"Module DB Updater inicializálási hiba itt: %s - a version és a slug kötelező"
-" argumentumok"
+msgstr "Hiba a %s modul adatbázis-frissítőjének inicializálásakor: a verzió és a slug kötelező argumentumok"
 
 #: includes/db-upgrader.php:45
 msgid "We need to update your database to the latest version."
@@ -554,8 +562,9 @@ msgstr "Felugró ablak műveleti gomb"
 
 #: includes/elementor/addons/jet-action-button-widget.php:51
 #: includes/elementor/addons/jet-popup-mailchimp.php:85
-#: includes/elementor/document-types/document.php:54 includes/post-type.php:87
-#: includes/settings.php:407 includes/settings.php:408 jet-popup.php:275
+#: includes/elementor/document-types/document.php:119
+#: includes/post-type.php:87 includes/settings.php:416
+#: includes/settings.php:417 jet-popup.php:275
 msgid "Settings"
 msgstr "Beállítások"
 
@@ -565,34 +574,34 @@ msgid "Action Type"
 msgstr "Művelettípus"
 
 #: includes/elementor/addons/jet-action-button-widget.php:62
-#: includes/utils.php:913
+#: includes/utils.php:914
 msgid "Link"
 msgstr "Hivatkozás"
 
 #: includes/elementor/addons/jet-action-button-widget.php:63
-#: includes/utils.php:914
+#: includes/utils.php:915
 msgid "Leave Page"
 msgstr "Oldal elhagyása"
 
 #: includes/elementor/addons/jet-action-button-widget.php:64
-#: includes/utils.php:915
+#: includes/utils.php:916
 msgid "Close Popup"
 msgstr "Felugró ablak bezárása"
 
 #: includes/elementor/addons/jet-action-button-widget.php:65
-#: includes/utils.php:916
+#: includes/utils.php:917
 msgid "Close All Popups"
 msgstr "Minden felugró ablak bezárása"
 
 #: includes/elementor/addons/jet-action-button-widget.php:66
-#: includes/utils.php:917
+#: includes/utils.php:918
 msgid "Close Popup Сonstantly"
-msgstr "Felugró ablak bezárása állandóan"
+msgstr "Felugró ablak folyamatos bezárása"
 
 #: includes/elementor/addons/jet-action-button-widget.php:67
-#: includes/utils.php:918
+#: includes/utils.php:919
 msgid "Close All Popups Сonstantly"
-msgstr "Minden felugró ablak bezárása állandóan"
+msgstr "Minden felugró ablak folyamatos bezárása"
 
 #: includes/elementor/addons/jet-action-button-widget.php:75
 msgid "Button text"
@@ -607,122 +616,128 @@ msgstr "Bővebben"
 msgid "Button Link"
 msgstr "Gomb hivatkozása"
 
-#: includes/elementor/addons/jet-action-button-widget.php:110
+#: includes/elementor/addons/jet-action-button-widget.php:113
 #: includes/elementor/addons/jet-popup-mailchimp.php:308
 #: includes/elementor/addons/jet-popup-mailchimp.php:1067
 #: assets/js/jet-popup-block-editor.js:29
 msgid "Alignment"
 msgstr "Igazítás"
 
-#: includes/elementor/addons/jet-action-button-widget.php:115
+#: includes/elementor/addons/jet-action-button-widget.php:118
 #: includes/elementor/addons/jet-popup-mailchimp.php:313
 #: includes/elementor/addons/jet-popup-mailchimp.php:1072
-#: includes/elementor/document-types/document.php:489
+#: includes/elementor/document-types/document.php:773
 msgid "Left"
 msgstr "Balra"
 
-#: includes/elementor/addons/jet-action-button-widget.php:119
+#: includes/elementor/addons/jet-action-button-widget.php:122
 #: includes/elementor/addons/jet-popup-mailchimp.php:317
 #: includes/elementor/addons/jet-popup-mailchimp.php:1076
-#: includes/elementor/document-types/document.php:493
+#: includes/elementor/document-types/document.php:777
 msgid "Center"
-msgstr "Középre"
+msgstr "Közép"
 
-#: includes/elementor/addons/jet-action-button-widget.php:123
+#: includes/elementor/addons/jet-action-button-widget.php:126
 #: includes/elementor/addons/jet-popup-mailchimp.php:321
 #: includes/elementor/addons/jet-popup-mailchimp.php:1080
-#: includes/elementor/document-types/document.php:497
+#: includes/elementor/document-types/document.php:781
 msgid "Right"
 msgstr "Jobbra"
 
-#: includes/elementor/addons/jet-action-button-widget.php:136
+#: includes/elementor/addons/jet-action-button-widget.php:139
 #: includes/elementor/addons/jet-popup-mailchimp.php:776
 msgid "Add Icon"
 msgstr "Ikon hozzáadása"
 
-#: includes/elementor/addons/jet-action-button-widget.php:138
+#: includes/elementor/addons/jet-action-button-widget.php:141
 #: includes/elementor/addons/jet-popup-mailchimp.php:104
 #: includes/elementor/addons/jet-popup-mailchimp.php:130
 #: includes/elementor/addons/jet-popup-mailchimp.php:190
 #: includes/elementor/addons/jet-popup-mailchimp.php:778
 #: includes/elementor/controls/groups/group-control-box-style.php:256
-#: includes/elementor/document-types/document.php:273
-#: includes/elementor/document-types/document.php:285
-#: includes/elementor/document-types/document.php:324
-#: includes/elementor/document-types/document.php:337
-#: includes/elementor/document-types/document.php:433
-#: includes/elementor/document-types/document.php:753
-#: includes/elementor/document-types/document.php:835
-#: includes/elementor/document-types/document.php:847
-#: includes/post-type.php:459 includes/post-type.php:465
-#: includes/post-type.php:471 includes/post-type.php:477
+#: includes/elementor/document-types/document.php:154
+#: includes/elementor/document-types/document.php:449
+#: includes/elementor/document-types/document.php:461
+#: includes/elementor/document-types/document.php:500
+#: includes/elementor/document-types/document.php:513
+#: includes/elementor/document-types/document.php:533
+#: includes/elementor/document-types/document.php:717
+#: includes/elementor/document-types/document.php:1037
+#: includes/elementor/document-types/document.php:1119
+#: includes/elementor/document-types/document.php:1131
+#: includes/elementor/extensions.php:165 includes/post-type.php:459
+#: includes/post-type.php:465 includes/post-type.php:471
+#: includes/post-type.php:477
 msgid "Yes"
 msgstr "Igen"
 
-#: includes/elementor/addons/jet-action-button-widget.php:139
+#: includes/elementor/addons/jet-action-button-widget.php:142
 #: includes/elementor/addons/jet-popup-mailchimp.php:105
 #: includes/elementor/addons/jet-popup-mailchimp.php:131
 #: includes/elementor/addons/jet-popup-mailchimp.php:191
 #: includes/elementor/addons/jet-popup-mailchimp.php:779
 #: includes/elementor/controls/groups/group-control-box-style.php:257
-#: includes/elementor/document-types/document.php:274
-#: includes/elementor/document-types/document.php:286
-#: includes/elementor/document-types/document.php:325
-#: includes/elementor/document-types/document.php:338
-#: includes/elementor/document-types/document.php:434
-#: includes/elementor/document-types/document.php:754
-#: includes/elementor/document-types/document.php:836
-#: includes/elementor/document-types/document.php:848
-#: includes/post-type.php:459 includes/post-type.php:465
-#: includes/post-type.php:471 includes/post-type.php:477
+#: includes/elementor/document-types/document.php:155
+#: includes/elementor/document-types/document.php:450
+#: includes/elementor/document-types/document.php:462
+#: includes/elementor/document-types/document.php:501
+#: includes/elementor/document-types/document.php:514
+#: includes/elementor/document-types/document.php:534
+#: includes/elementor/document-types/document.php:718
+#: includes/elementor/document-types/document.php:1038
+#: includes/elementor/document-types/document.php:1120
+#: includes/elementor/document-types/document.php:1132
+#: includes/elementor/extensions.php:166 includes/post-type.php:459
+#: includes/post-type.php:465 includes/post-type.php:471
+#: includes/post-type.php:477
 msgid "No"
 msgstr "Nem"
 
-#: includes/elementor/addons/jet-action-button-widget.php:148
+#: includes/elementor/addons/jet-action-button-widget.php:151
 #: includes/elementor/addons/jet-popup-mailchimp.php:789
-#: includes/elementor/document-types/document.php:763
+#: includes/elementor/document-types/document.php:1047
 msgid "Icon"
 msgstr "Ikon"
 
-#: includes/elementor/addons/jet-action-button-widget.php:162
+#: includes/elementor/addons/jet-action-button-widget.php:165
 msgid "Icon Position"
 msgstr "Ikon pozíciója"
 
-#: includes/elementor/addons/jet-action-button-widget.php:165
+#: includes/elementor/addons/jet-action-button-widget.php:168
 msgid "Before Text"
 msgstr "Szöveg előtt"
 
-#: includes/elementor/addons/jet-action-button-widget.php:166
+#: includes/elementor/addons/jet-action-button-widget.php:169
 msgid "After Text"
 msgstr "Szöveg után"
 
-#: includes/elementor/addons/jet-action-button-widget.php:179
+#: includes/elementor/addons/jet-action-button-widget.php:182
 #: includes/elementor/addons/jet-popup-mailchimp.php:838
 msgid "Icon Margin"
 msgstr "Ikon margója"
 
-#: includes/elementor/addons/jet-action-button-widget.php:194
+#: includes/elementor/addons/jet-action-button-widget.php:197
 #: includes/elementor/addons/jet-popup-mailchimp.php:394
 #: includes/elementor/addons/jet-popup-mailchimp.php:570
 #: includes/elementor/addons/jet-popup-mailchimp.php:864
 #: includes/elementor/addons/jet-popup-mailchimp.php:1104
-#: includes/elementor/document-types/document.php:685
+#: includes/elementor/document-types/document.php:969
 msgid "Padding"
-msgstr "Belső margó"
+msgstr "Padding"
 
-#: includes/elementor/addons/jet-action-button-widget.php:206
+#: includes/elementor/addons/jet-action-button-widget.php:209
 #: includes/elementor/addons/jet-popup-mailchimp.php:406
 #: includes/elementor/addons/jet-popup-mailchimp.php:582
 #: includes/elementor/addons/jet-popup-mailchimp.php:888
 #: includes/elementor/addons/jet-popup-mailchimp.php:1128
 #: includes/elementor/controls/groups/group-control-box-style.php:245
-#: includes/elementor/document-types/document.php:709
+#: includes/elementor/document-types/document.php:993
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Border Radius"
 msgstr "Sarokkerekítés"
 
-#: includes/elementor/addons/jet-action-button-widget.php:238
-#: includes/elementor/addons/jet-action-button-widget.php:311
+#: includes/elementor/addons/jet-action-button-widget.php:241
+#: includes/elementor/addons/jet-action-button-widget.php:314
 #: includes/elementor/addons/jet-popup-mailchimp.php:427
 #: includes/elementor/addons/jet-popup-mailchimp.php:466
 #: includes/elementor/addons/jet-popup-mailchimp.php:611
@@ -734,15 +749,15 @@ msgstr "Sarokkerekítés"
 msgid "Background Color"
 msgstr "Háttérszín"
 
-#: includes/elementor/addons/jet-action-button-widget.php:250
-#: includes/elementor/addons/jet-action-button-widget.php:323
-#: includes/elementor/document-types/document.php:793
-#: includes/elementor/document-types/document.php:811
+#: includes/elementor/addons/jet-action-button-widget.php:253
+#: includes/elementor/addons/jet-action-button-widget.php:326
+#: includes/elementor/document-types/document.php:1077
+#: includes/elementor/document-types/document.php:1095
 msgid "Icon Styles"
-msgstr "Ikon stílusai"
+msgstr "Ikonstílusok"
 
-#: includes/elementor/addons/jet-action-button-widget.php:261
-#: includes/elementor/addons/jet-action-button-widget.php:334
+#: includes/elementor/addons/jet-action-button-widget.php:264
+#: includes/elementor/addons/jet-action-button-widget.php:337
 #: includes/elementor/addons/jet-popup-mailchimp.php:622
 #: includes/elementor/addons/jet-popup-mailchimp.php:674
 #: includes/elementor/addons/jet-popup-mailchimp.php:726
@@ -764,11 +779,11 @@ msgstr "Mailchimp"
 #: includes/export-import.php:197 includes/export-import.php:312
 #: includes/export-import.php:321 includes/export-import.php:330
 #: includes/export-import.php:347 includes/export-import.php:405
-#: includes/settings.php:434 includes/settings.php:443
-#: includes/settings.php:451 includes/settings.php:511
-#: includes/settings.php:520 includes/settings.php:528
-#: includes/settings.php:599 includes/settings.php:608
-#: includes/settings.php:616
+#: includes/settings.php:443 includes/settings.php:452
+#: includes/settings.php:460 includes/settings.php:520
+#: includes/settings.php:529 includes/settings.php:537
+#: includes/settings.php:608 includes/settings.php:617
+#: includes/settings.php:625
 msgid "Error"
 msgstr "Hiba"
 
@@ -778,27 +793,25 @@ msgstr "Lista"
 
 #: includes/elementor/addons/jet-popup-mailchimp.php:102
 msgid "Use Redirect Url?"
-msgstr "Használja az átirányítási Url-t?"
+msgstr "Átirányítási URL használata?"
 
 #: includes/elementor/addons/jet-popup-mailchimp.php:114
 msgid "Redirect Url"
-msgstr "Átirányítási Url"
+msgstr "Átirányítási URL"
 
 #: includes/elementor/addons/jet-popup-mailchimp.php:116
 msgid "Enter Redirect Url"
-msgstr "Adja meg az átirányítási Url-t"
+msgstr "Adja meg az átirányítási URL-t"
 
 #: includes/elementor/addons/jet-popup-mailchimp.php:127
 msgid "Close Popup When Success"
-msgstr "Siker esetén zárja be a felugró ablakot"
+msgstr "Felugró ablak bezárása siker esetén"
 
 #: includes/elementor/addons/jet-popup-mailchimp.php:128
 msgid ""
 "if the widget is in a popup, the successful response status will close the "
 "popup."
-msgstr ""
-"ha a widget felugró ablakban van, a sikeres válasz státusza bezárja a "
-"felugró ablakot."
+msgstr "ha a widget felugró ablakban van, a sikeres válasz státusza bezárja a felugró ablakot."
 
 #: includes/elementor/addons/jet-popup-mailchimp.php:142
 #: includes/elementor/addons/jet-popup-mailchimp.php:505
@@ -819,7 +832,7 @@ msgstr "E-mail helyőrző"
 
 #: includes/elementor/addons/jet-popup-mailchimp.php:160
 msgid "Enter E-Mail"
-msgstr "Adja meg az e-mail-címét"
+msgstr "Adja meg az e-mail-címet"
 
 #: includes/elementor/addons/jet-popup-mailchimp.php:167
 msgid "Email Size"
@@ -831,7 +844,7 @@ msgstr "További mezők használata"
 
 #: includes/elementor/addons/jet-popup-mailchimp.php:203
 msgid "Field Merge Tag"
-msgstr "Mező Merge Tag-je"
+msgstr "Mező egyesítési címkéje"
 
 #: includes/elementor/addons/jet-popup-mailchimp.php:212
 #: includes/elementor/addons/jet-popup-mailchimp.php:214
@@ -906,7 +919,7 @@ msgstr "Ikon színe"
 
 #: includes/elementor/addons/jet-popup-mailchimp.php:876
 #: includes/elementor/addons/jet-popup-mailchimp.php:1116
-#: includes/elementor/document-types/document.php:697
+#: includes/elementor/document-types/document.php:981
 msgid "Margin"
 msgstr "Margó"
 
@@ -930,8 +943,8 @@ msgstr "Üzenet"
 #: includes/elementor/addons/jet-popup-mailchimp.php:1150
 #: includes/rest-api/endpoints/get-popup-conditions.php:73
 #: includes/rest-api/endpoints/get-popup-settings.php:74
-#: includes/settings.php:491 includes/settings.php:579
-#: includes/settings.php:659
+#: includes/settings.php:500 includes/settings.php:588
+#: includes/settings.php:668
 msgid "Success"
 msgstr "Siker"
 
@@ -1114,440 +1127,574 @@ msgctxt "Transform Control"
 msgid "Translate Y"
 msgstr "Y irányú eltolás"
 
-#: includes/elementor/document-types/document.php:62
+#: includes/elementor/document-types/document.php:127
 #: templates/vue-templates/admin/popup-library/settings-manager.php:20
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Animation"
 msgstr "Animáció"
 
-#: includes/elementor/document-types/document.php:67 includes/utils.php:780
+#: includes/elementor/document-types/document.php:132 includes/utils.php:780
 msgid "Fade"
 msgstr "Halványítás"
 
-#: includes/elementor/document-types/document.php:68 includes/utils.php:781
+#: includes/elementor/document-types/document.php:133 includes/utils.php:781
 msgid "ZoomIn"
 msgstr "Nagyítás"
 
-#: includes/elementor/document-types/document.php:69 includes/utils.php:782
+#: includes/elementor/document-types/document.php:134 includes/utils.php:782
 msgid "ZoomOut"
 msgstr "Kicsinyítés"
 
-#: includes/elementor/document-types/document.php:70 includes/utils.php:783
+#: includes/elementor/document-types/document.php:135 includes/utils.php:783
 msgid "Rotate"
 msgstr "Forgatás"
 
-#: includes/elementor/document-types/document.php:71 includes/utils.php:784
+#: includes/elementor/document-types/document.php:136 includes/utils.php:784
 msgid "MoveUp"
 msgstr "Felfelé mozgatás"
 
-#: includes/elementor/document-types/document.php:72 includes/utils.php:785
+#: includes/elementor/document-types/document.php:137 includes/utils.php:785
 msgid "Horizontal Flip"
 msgstr "Vízszintes tükrözés"
 
-#: includes/elementor/document-types/document.php:73 includes/utils.php:786
+#: includes/elementor/document-types/document.php:138 includes/utils.php:786
 msgid "Vertical Flip"
 msgstr "Függőleges tükrözés"
 
-#: includes/elementor/document-types/document.php:74 includes/utils.php:787
+#: includes/elementor/document-types/document.php:139 includes/utils.php:787
 msgid "BounceIn"
 msgstr "Beugrás"
 
-#: includes/elementor/document-types/document.php:75 includes/utils.php:788
+#: includes/elementor/document-types/document.php:140 includes/utils.php:788
 msgid "BounceOut"
 msgstr "Kiugrás"
 
-#: includes/elementor/document-types/document.php:76 includes/utils.php:789
+#: includes/elementor/document-types/document.php:141 includes/utils.php:789
 msgid "SlideInUp"
 msgstr "Becsúszás felfelé"
 
-#: includes/elementor/document-types/document.php:77 includes/utils.php:790
+#: includes/elementor/document-types/document.php:142 includes/utils.php:790
 msgid "SlideInRight"
 msgstr "Becsúszás jobbról"
 
-#: includes/elementor/document-types/document.php:78 includes/utils.php:791
+#: includes/elementor/document-types/document.php:143 includes/utils.php:791
 msgid "SlideInDown"
 msgstr "Becsúszás lefelé"
 
-#: includes/elementor/document-types/document.php:79 includes/utils.php:792
+#: includes/elementor/document-types/document.php:144 includes/utils.php:792
 msgid "SlideInLeft"
 msgstr "Becsúszás balról"
 
-#: includes/elementor/document-types/document.php:87
+#: includes/elementor/document-types/document.php:152
+#: templates/vue-templates/admin/popup-library/settings-manager.php:31
+msgid "Use custom animation duration"
+msgstr "Egyéni animáció-időtartam használata"
+
+#: includes/elementor/document-types/document.php:164
+msgid "Animation in duration (ms)"
+msgstr "Beúsztatási animáció időtartama (ms)"
+
+#: includes/elementor/document-types/document.php:180
+msgid "Animation out duration (ms)"
+msgstr "Kiúsztatási animáció időtartama (ms)"
+
+#: includes/elementor/document-types/document.php:196
 #: includes/post-type.php:386
 msgid "Open event"
 msgstr "Megnyitási esemény"
 
-#: includes/elementor/document-types/document.php:91
-#: includes/elementor/document-types/document.php:249 includes/utils.php:124
-#: includes/utils.php:816 includes/utils.php:943
+#: includes/elementor/document-types/document.php:200
+#: includes/elementor/document-types/document.php:414 includes/utils.php:124
+#: includes/utils.php:816 includes/utils.php:944
 msgid "Not Selected"
 msgstr "Nincs kiválasztva"
 
-#: includes/elementor/document-types/document.php:92 includes/utils.php:817
+#: includes/elementor/document-types/document.php:201 includes/utils.php:817
 msgid "On page load(s)"
 msgstr "Oldal betöltésekor"
 
-#: includes/elementor/document-types/document.php:93 includes/utils.php:818
+#: includes/elementor/document-types/document.php:202 includes/utils.php:818
 msgid "Inactivity time after(s)"
-msgstr "Inaktivitás utáni idő(mp)"
+msgstr "Inaktivitás utáni idő (mp)"
 
-#: includes/elementor/document-types/document.php:94 includes/utils.php:819
+#: includes/elementor/document-types/document.php:203 includes/utils.php:819
 msgid "Page Scrolled(%)"
-msgstr "Oldal görgetése(%)"
+msgstr "Oldal görgetése (%)"
 
-#: includes/elementor/document-types/document.php:95 includes/utils.php:820
+#: includes/elementor/document-types/document.php:204 includes/utils.php:820
 msgid "Try exit"
 msgstr "Kilépési szándék"
 
-#: includes/elementor/document-types/document.php:96 includes/utils.php:821
+#: includes/elementor/document-types/document.php:205 includes/utils.php:821
 msgid "On Date"
 msgstr "Megadott napon"
 
-#: includes/elementor/document-types/document.php:97 includes/utils.php:822
+#: includes/elementor/document-types/document.php:206 includes/utils.php:822
 msgid "On Time"
 msgstr "Megadott időpontban"
 
-#: includes/elementor/document-types/document.php:98 includes/utils.php:823
+#: includes/elementor/document-types/document.php:207 includes/utils.php:823
 msgid "On Date and Time"
 msgstr "Megadott dátumon és időpontban"
 
-#: includes/elementor/document-types/document.php:99 includes/utils.php:824
-#: includes/utils.php:886
+#: includes/elementor/document-types/document.php:208
+msgid "Weekly Schedule ( Days & Time )"
+msgstr "Heti időzítés (napok és idő)"
+
+#: includes/elementor/document-types/document.php:209 includes/utils.php:825
+#: includes/utils.php:887
 msgid "Custom Selector Click"
 msgstr "Egyéni szelektorra kattintás"
 
-#: includes/elementor/document-types/document.php:107
+#: includes/elementor/document-types/document.php:217
+#: templates/vue-templates/admin/popup-library/settings-manager.php:136
+msgid "Days of Week"
+msgstr "A hét napjai"
+
+#: includes/elementor/document-types/document.php:221
+msgid "Monday"
+msgstr "Hétfő"
+
+#: includes/elementor/document-types/document.php:222
+msgid "Tuesday"
+msgstr "Kedd"
+
+#: includes/elementor/document-types/document.php:223
+msgid "Wednesday"
+msgstr "Szerda"
+
+#: includes/elementor/document-types/document.php:224
+msgid "Thursday"
+msgstr "Csütörtök"
+
+#: includes/elementor/document-types/document.php:225
+msgid "Friday"
+msgstr "Péntek"
+
+#: includes/elementor/document-types/document.php:226
+msgid "Saturday"
+msgstr "Szombat"
+
+#: includes/elementor/document-types/document.php:227
+msgid "Sunday"
+msgstr "Vasárnap"
+
+#: includes/elementor/document-types/document.php:238
+#: includes/elementor/document-types/document.php:330
+#: includes/post-type.php:419
+#: templates/vue-templates/admin/popup-library/settings-manager.php:166
+#: assets/js/jet-popup-block-editor-plugin.js:19
+msgid "Start Time"
+msgstr "Kezdési időpont"
+
+#: includes/elementor/document-types/document.php:255
+#: includes/elementor/document-types/document.php:347
+#: includes/post-type.php:423
+#: templates/vue-templates/admin/popup-library/settings-manager.php:182
+#: assets/js/jet-popup-block-editor-plugin.js:19
+msgid "End Time"
+msgstr "Befejezési időpont"
+
+#: includes/elementor/document-types/document.php:272
 #: includes/post-type.php:394
 msgid "Open delay"
 msgstr "Megnyitási késleltetés"
 
-#: includes/elementor/document-types/document.php:121
+#: includes/elementor/document-types/document.php:286
 #: includes/post-type.php:400
 msgid "User inactivity time"
 msgstr "Felhasználói inaktivitás ideje"
 
-#: includes/elementor/document-types/document.php:135
+#: includes/elementor/document-types/document.php:300
 #: includes/post-type.php:406
 msgid "Scroll Page Progress(%)"
-msgstr "Oldal görgetési előrehaladása(%)"
+msgstr "Az oldal görgetésének előrehaladása (%)"
 
-#: includes/elementor/document-types/document.php:149
+#: includes/elementor/document-types/document.php:314
 #: includes/post-type.php:413 assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Open Date"
 msgstr "Megnyitás dátuma"
 
-#: includes/elementor/document-types/document.php:158
-#: includes/elementor/document-types/document.php:208
-#: includes/elementor/document-types/document.php:224
+#: includes/elementor/document-types/document.php:323
+#: includes/elementor/document-types/document.php:373
+#: includes/elementor/document-types/document.php:389
 #, php-format
 msgid "Date set according to your timezone: %s."
 msgstr "A dátum az Ön időzónája szerint van beállítva: %s."
 
-#: includes/elementor/document-types/document.php:165
-#: includes/post-type.php:419 assets/js/jet-popup-block-editor-plugin.js:19
-msgid "Start Time"
-msgstr "Kezdési időpont"
-
-#: includes/elementor/document-types/document.php:182
-#: includes/post-type.php:423 assets/js/jet-popup-block-editor-plugin.js:19
-msgid "End Time"
-msgstr "Befejezési időpont"
-
-#: includes/elementor/document-types/document.php:199
+#: includes/elementor/document-types/document.php:364
 msgid "Start Date and Time"
-msgstr "Kezdés dátuma és időpontja"
+msgstr "Kezdő dátum és időpont"
 
-#: includes/elementor/document-types/document.php:215
+#: includes/elementor/document-types/document.php:380
 msgid "End Date and Time"
 msgstr "Befejezés dátuma és időpontja"
 
-#: includes/elementor/document-types/document.php:232
-#: includes/elementor/document-types/document.php:234
-#: includes/elementor/extensions.php:149 includes/elementor/extensions.php:152
+#: includes/elementor/document-types/document.php:397
+#: includes/elementor/document-types/document.php:399
+#: includes/elementor/extensions.php:150 includes/elementor/extensions.php:153
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Custom Selector"
 msgstr "Egyéni szelektor"
 
-#: includes/elementor/document-types/document.php:245
+#: includes/elementor/document-types/document.php:410
 #: includes/post-type.php:446
 msgid "On close event"
 msgstr "Bezárási esemény"
 
-#: includes/elementor/document-types/document.php:250 includes/utils.php:944
+#: includes/elementor/document-types/document.php:415 includes/utils.php:945
 msgid "Scroll to top"
 msgstr "Görgetés a tetejére"
 
-#: includes/elementor/document-types/document.php:251 includes/utils.php:945
+#: includes/elementor/document-types/document.php:416 includes/utils.php:946
 msgid "Scroll to anchor"
 msgstr "Görgetés a horgonyhoz"
 
-#: includes/elementor/document-types/document.php:259
+#: includes/elementor/document-types/document.php:424
 msgid "Anchor ID"
 msgstr "Horgony ID"
 
-#: includes/elementor/document-types/document.php:271
-msgid "Disable Page Scrolling"
-msgstr "Oldal görgetésének letiltása"
+#: includes/elementor/document-types/document.php:436
+msgid "Automatically close after (sec)"
+msgstr "Automatikus bezárás ennyi idő után (mp)"
 
-#: includes/elementor/document-types/document.php:283
+#: includes/elementor/document-types/document.php:447
+msgid "Disable Page Scrolling"
+msgstr "Az oldal görgetésének kikapcsolása"
+
+#: includes/elementor/document-types/document.php:459
 #: includes/post-type.php:475
 msgid "Show once"
 msgstr "Egyszeri megjelenítés"
 
-#: includes/elementor/document-types/document.php:295
+#: includes/elementor/document-types/document.php:471
 msgid "Repeat showing popup in"
-msgstr "Popup ismételt megjelenítése ennyi idő múlva"
+msgstr "Felugró ablak ismételt megjelenítése ennyi idő múlva"
 
-#: includes/elementor/document-types/document.php:296
+#: includes/elementor/document-types/document.php:472
 msgid "Set the timeout caching and a popup will be displayed again"
-msgstr "Állítsa be a gyorsítótár időkorlátját, és a Popup ismét megjelenik"
+msgstr "Állítsa be a gyorsítótár időkorlátját, és a felugró ablak ismét megjelenik"
 
-#: includes/elementor/document-types/document.php:301 includes/utils.php:849
+#: includes/elementor/document-types/document.php:477 includes/utils.php:850
 msgid "Minute"
 msgstr "Perc"
 
-#: includes/elementor/document-types/document.php:302 includes/utils.php:850
+#: includes/elementor/document-types/document.php:478 includes/utils.php:851
 msgid "10 Minutes"
 msgstr "10 perc"
 
-#: includes/elementor/document-types/document.php:303 includes/utils.php:851
+#: includes/elementor/document-types/document.php:479 includes/utils.php:852
 msgid "30 Minutes"
 msgstr "30 perc"
 
-#: includes/elementor/document-types/document.php:304 includes/utils.php:852
+#: includes/elementor/document-types/document.php:480 includes/utils.php:853
 msgid "1 Hour"
 msgstr "1 óra"
 
-#: includes/elementor/document-types/document.php:305 includes/utils.php:853
+#: includes/elementor/document-types/document.php:481 includes/utils.php:854
 msgid "3 Hours"
 msgstr "3 óra"
 
-#: includes/elementor/document-types/document.php:306 includes/utils.php:854
+#: includes/elementor/document-types/document.php:482 includes/utils.php:855
 msgid "6 Hours"
 msgstr "6 óra"
 
-#: includes/elementor/document-types/document.php:307 includes/utils.php:855
+#: includes/elementor/document-types/document.php:483 includes/utils.php:856
 msgid "12 Hours"
 msgstr "12 óra"
 
-#: includes/elementor/document-types/document.php:308 includes/utils.php:856
+#: includes/elementor/document-types/document.php:484 includes/utils.php:857
 msgid "Day"
 msgstr "Nap"
 
-#: includes/elementor/document-types/document.php:309 includes/utils.php:857
+#: includes/elementor/document-types/document.php:485 includes/utils.php:858
 msgid "3 Days"
 msgstr "3 nap"
 
-#: includes/elementor/document-types/document.php:310 includes/utils.php:858
+#: includes/elementor/document-types/document.php:486 includes/utils.php:859
 msgid "Week"
 msgstr "Hét"
 
-#: includes/elementor/document-types/document.php:311 includes/utils.php:859
+#: includes/elementor/document-types/document.php:487 includes/utils.php:860
 msgid "Month"
 msgstr "Hónap"
 
-#: includes/elementor/document-types/document.php:322
+#: includes/elementor/document-types/document.php:498
 #: includes/post-type.php:457
-#: templates/vue-templates/admin/popup-library/settings-manager.php:292
+#: templates/vue-templates/admin/popup-library/settings-manager.php:408
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Loading content with Ajax"
 msgstr "Tartalom betöltése Ajaxszal"
 
-#: includes/elementor/document-types/document.php:334
-#: templates/vue-templates/admin/popup-library/settings-manager.php:302
+#: includes/elementor/document-types/document.php:510
+#: templates/vue-templates/admin/popup-library/settings-manager.php:418
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Force Loading"
 msgstr "Kényszerített betöltés"
 
-#: includes/elementor/document-types/document.php:335
+#: includes/elementor/document-types/document.php:511
 msgid "Force Loading every time you open the popup"
-msgstr "Kényszerített betöltés minden alkalommal, amikor megnyitja a Popupot"
+msgstr "Kényszerített betöltés minden alkalommal, amikor megnyitja a felugró ablakot"
 
-#: includes/elementor/document-types/document.php:350
+#: includes/elementor/document-types/document.php:531
+#: templates/vue-templates/admin/popup-library/settings-manager.php:434
+#: assets/js/jet-popup-block-editor-plugin.js:19
+msgid "Close Popup After Form Submit"
+msgstr "Felugró ablak bezárása az űrlap beküldése után"
+
+#: includes/elementor/document-types/document.php:537
+#: templates/vue-templates/admin/popup-library/settings-manager.php:435
+#: assets/js/jet-popup-block-editor-plugin.js:19
+msgid ""
+"Closes popup after successful submit ( Elementor Forms & JetFormBuilder "
+"supported )."
+msgstr "Sikeres beküldés után bezárja a felugró ablakot (az Elementor Forms és a JetFormBuilder egyaránt támogatott)."
+
+#: includes/elementor/document-types/document.php:544
+#: templates/vue-templates/admin/popup-library/settings-manager.php:444
+#: assets/js/jet-popup-block-editor-plugin.js:19
+msgid "Close Delay ( seconds )"
+msgstr "Bezárás késleltetése (másodperc)"
+
+#: includes/elementor/document-types/document.php:561
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Display Conditions"
 msgstr "Megjelenítési feltételek"
 
-#: includes/elementor/document-types/document.php:351
+#: includes/elementor/document-types/document.php:562
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid ""
 "Set the conditions that determine where your Popup is used throughout your "
 "site."
-msgstr ""
-"Állítsa be azokat a feltételeket, amelyek meghatározzák, hogy a Popup hol "
-"legyen használva a webhelyén."
+msgstr "Állítsa be a feltételeket, amelyek meghatározzák, hogy a felugró ablak hol jelenjen meg a webhelyén."
 
-#: includes/elementor/document-types/document.php:353
+#: includes/elementor/document-types/document.php:564
 #: includes/post-type.php:144
 msgid "Edit"
 msgstr "Szerkesztés"
 
-#: includes/elementor/document-types/document.php:364
+#: includes/elementor/document-types/document.php:576
+msgid "Preview Settings"
+msgstr "Előnézeti beállítások"
+
+#: includes/elementor/document-types/document.php:584
+msgid "Preview Source"
+msgstr "Előnézet forrása"
+
+#: includes/elementor/document-types/document.php:595
+msgid "Preview Post Type"
+msgstr "Előnézeti bejegyzéstípus"
+
+#: includes/elementor/document-types/document.php:609
+msgid "Preview Item"
+msgstr "Előnézeti tétel"
+
+#: includes/elementor/document-types/document.php:625
+msgid "Apply Preview"
+msgstr "Előnézet alkalmazása"
+
+#: includes/elementor/document-types/document.php:628
+msgid "Apply & Preview"
+msgstr "Alkalmazás és előnézet"
+
+#: includes/elementor/document-types/document.php:637
+msgid ""
+"To display the selected preview post correctly in standard Elementor dynamic"
+" widgets, save changes and reload the editor page."
+msgstr "Ha azt szeretné, hogy a kiválasztott előnézeti bejegyzés megfelelően jelenjen meg a szabványos Elementor dinamikus widgetekben, mentse a módosításokat, majd töltse újra a szerkesztő oldalát."
+
+#: includes/elementor/document-types/document.php:648
 msgid "General Styles"
 msgstr "Általános stílusok"
 
-#: includes/elementor/document-types/document.php:372
+#: includes/elementor/document-types/document.php:656
 msgid "Z-Index"
-msgstr "Z-Index"
+msgstr "Z-index"
 
-#: includes/elementor/document-types/document.php:387
+#: includes/elementor/document-types/document.php:671
 msgid "Popup Container"
-msgstr "Popup konténer"
+msgstr "Felugró ablak konténere"
 
-#: includes/elementor/document-types/document.php:395
+#: includes/elementor/document-types/document.php:679
 msgid "Size"
 msgstr "Méret"
 
-#: includes/elementor/document-types/document.php:403
+#: includes/elementor/document-types/document.php:687
 msgid "Width"
 msgstr "Szélesség"
 
-#: includes/elementor/document-types/document.php:431
+#: includes/elementor/document-types/document.php:715
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Custom Height"
 msgstr "Egyéni magasság"
 
-#: includes/elementor/document-types/document.php:443
+#: includes/elementor/document-types/document.php:727
 msgid "Height"
 msgstr "Magasság"
 
-#: includes/elementor/document-types/document.php:474
+#: includes/elementor/document-types/document.php:758
 msgid "Position"
 msgstr "Pozíció"
 
-#: includes/elementor/document-types/document.php:483
+#: includes/elementor/document-types/document.php:767
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Horizontal Position"
 msgstr "Vízszintes pozíció"
 
-#: includes/elementor/document-types/document.php:510
+#: includes/elementor/document-types/document.php:794
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Vertical Position"
 msgstr "Függőleges pozíció"
 
-#: includes/elementor/document-types/document.php:516
-#: includes/elementor/document-types/document.php:543
+#: includes/elementor/document-types/document.php:800
+#: includes/elementor/document-types/document.php:827
 msgid "Top"
 msgstr "Felül"
 
-#: includes/elementor/document-types/document.php:520
-#: includes/elementor/document-types/document.php:547
+#: includes/elementor/document-types/document.php:804
+#: includes/elementor/document-types/document.php:831
 msgid "Middle"
 msgstr "Középen"
 
-#: includes/elementor/document-types/document.php:524
-#: includes/elementor/document-types/document.php:551
+#: includes/elementor/document-types/document.php:808
+#: includes/elementor/document-types/document.php:835
 msgid "Bottom"
 msgstr "Alul"
 
-#: includes/elementor/document-types/document.php:537
+#: includes/elementor/document-types/document.php:821
 msgid "Content Position"
 msgstr "Tartalom pozíciója"
 
-#: includes/elementor/document-types/document.php:564
+#: includes/elementor/document-types/document.php:848
 msgid "Container Background"
 msgstr "Konténer háttere"
 
-#: includes/elementor/document-types/document.php:586
+#: includes/elementor/document-types/document.php:870
 msgid "Container Overlay"
-msgstr "Konténer átfedése"
+msgstr "Konténer fedvénye"
 
-#: includes/elementor/document-types/document.php:614
+#: includes/elementor/document-types/document.php:898
 msgid "Opacity"
 msgstr "Átlátszatlanság"
 
-#: includes/elementor/document-types/document.php:649
+#: includes/elementor/document-types/document.php:933
 msgid "Blend Mode"
 msgstr "Keverési mód"
 
-#: includes/elementor/document-types/document.php:676
+#: includes/elementor/document-types/document.php:960
 msgid "Other Styles"
 msgstr "Egyéb stílusok"
 
-#: includes/elementor/document-types/document.php:743
+#: includes/elementor/document-types/document.php:1027
 msgid "Close Button"
 msgstr "Bezáró gomb"
 
-#: includes/elementor/document-types/document.php:751
-#: templates/vue-templates/admin/popup-library/settings-manager.php:317
+#: includes/elementor/document-types/document.php:1035
+#: templates/vue-templates/admin/popup-library/settings-manager.php:460
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Use Close Button"
 msgstr "Bezáró gomb használata"
 
-#: includes/elementor/document-types/document.php:775
+#: includes/elementor/document-types/document.php:1059
 msgid "Icon Transform"
 msgstr "Ikon átalakítása"
 
-#: includes/elementor/document-types/document.php:825
+#: includes/elementor/document-types/document.php:1109
 msgid "Popup Overlay"
-msgstr "Popup átfedése"
+msgstr "Felugró ablak fedvénye"
 
-#: includes/elementor/document-types/document.php:833
-#: templates/vue-templates/admin/popup-library/settings-manager.php:335
+#: includes/elementor/document-types/document.php:1117
+#: templates/vue-templates/admin/popup-library/settings-manager.php:478
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Use Overlay"
 msgstr "Átfedés használata"
 
-#: includes/elementor/document-types/document.php:845
+#: includes/elementor/document-types/document.php:1129
 msgid "Close On Click"
 msgstr "Bezárás kattintásra"
 
-#: includes/elementor/extensions.php:80
-msgid "Click On Button"
-msgstr "Kattintás gombra"
-
 #: includes/elementor/extensions.php:81
+msgid "Click On Button"
+msgstr "Kattintás a gombra"
+
+#: includes/elementor/extensions.php:82
 msgid "Click On Widget"
-msgstr "Kattintás Widgetre"
+msgstr "Kattintás a widgetre"
 
-#: includes/elementor/extensions.php:82 includes/elementor/extensions.php:91
+#: includes/elementor/extensions.php:83 includes/elementor/extensions.php:92
 msgid "Click On Custom Selector"
-msgstr "Kattintás Custom Selectorra"
+msgstr "Kattintás az egyéni szelektorra"
 
-#: includes/elementor/extensions.php:84
+#: includes/elementor/extensions.php:85
 msgid "Scroll To Widget"
-msgstr "Görgetés a Widgethez"
+msgstr "Görgetés a widgethez"
 
-#: includes/elementor/extensions.php:90
+#: includes/elementor/extensions.php:91
 msgid "Click On Container"
-msgstr "Kattintson a Containerre"
+msgstr "Kattintás a konténerre"
 
-#: includes/elementor/extensions.php:93
+#: includes/elementor/extensions.php:94
 msgid "Scroll To Container"
-msgstr "Görgessen a Containerhez"
+msgstr "Görgetés a konténerhez"
 
-#: includes/elementor/extensions.php:124
+#: includes/elementor/extensions.php:125
 msgid "Attached Popup"
 msgstr "Csatolt felugró ablak"
 
-#: includes/elementor/extensions.php:131 includes/post-type.php:191
+#: includes/elementor/extensions.php:132 includes/post-type.php:191
 msgid "Edit Popup"
-msgstr "Szerkessze a felugró ablakot"
+msgstr "Felugró ablak szerkesztése"
 
-#: includes/elementor/extensions.php:139
+#: includes/elementor/extensions.php:140
 msgid "Trigger Type"
 msgstr "Kiváltó esemény típusa"
 
-#: includes/elementor/extensions.php:215
+#: includes/elementor/extensions.php:163
+msgid "Elementor Loop Dynamic Popup"
+msgstr "Elementor Loop dinamikus felugró ablak"
+
+#: includes/elementor/extensions.php:169
+msgid ""
+"Enable this option for popups opened from Elementor Loop items. Disable "
+"Elementor Cache on this widget to ensure the dynamic popup works properly."
+msgstr "Kapcsolja be ezt a beállítást az Elementor Loop elemeiből megnyitott felugró ablakokhoz. A dinamikus felugró ablak megfelelő működéséhez kapcsolja ki az Elementor gyorsítótárát ennél a widgetnél."
+
+#: includes/elementor/extensions.php:230
 msgid "You Haven’t Created Popup Yet."
 msgstr "Még nem hozott létre felugró ablakot."
 
-#: includes/elementor/finder-categories/finder-category.php:18
-#: includes/elementor/finder-categories/finder-category.php:33
+#: includes/elementor/finder-categories/finder-category.php:22
+#: includes/elementor/finder-categories/finder-category.php:37
 msgid "JetPopup Settings"
 msgstr "JetPopup beállításai"
 
-#: includes/elementor/finder-categories/finder-category.php:38
+#: includes/elementor/finder-categories/finder-category.php:42
 msgid "JetPopup Library"
 msgstr "JetPopup könyvtára"
 
-#: includes/elementor/manager.php:455 includes/post-type.php:498
+#: includes/elementor/manager.php:526 includes/post-type.php:498
 msgid "Elementor"
 msgstr "Elementor"
 
+#: includes/elementor/preview-context.php:43
+msgid "Current Popup"
+msgstr "Aktuális felugró ablak"
+
+#: includes/elementor/preview-context.php:44
+msgid "Current Post"
+msgstr "Aktuális bejegyzés"
+
+#: includes/elementor/preview-context.php:45
+msgid "Manual Selection"
+msgstr "Kézi kiválasztás"
+
+#: includes/elementor/preview-context.php:49
+msgid "Current Product"
+msgstr "Aktuális termék"
+
 #: includes/export-import.php:47
 msgid "Export Popup"
-msgstr "Exportálja a felugró ablakot"
+msgstr "Felugró ablak exportálása"
 
 #: includes/export-import.php:71
 msgid "Acess denied"
@@ -1555,12 +1702,11 @@ msgstr "Hozzáférés megtagadva"
 
 #: includes/export-import.php:78
 msgid "Link is expired. Please reload page and try again."
-msgstr ""
-"A hivatkozás lejárt. Kérjük, töltse újra az oldalt, és próbálja meg újra."
+msgstr "A hivatkozás lejárt. Kérjük, töltse újra az oldalt, és próbálja meg újra."
 
 #: includes/export-import.php:167 includes/export-import.php:311
-#: includes/post-type.php:571 includes/settings.php:444
-#: includes/settings.php:521 includes/settings.php:609
+#: includes/post-type.php:571 includes/settings.php:453
+#: includes/settings.php:530 includes/settings.php:618
 msgid "You don't have permissions to do this"
 msgstr "Nincs jogosultsága ehhez."
 
@@ -1578,7 +1724,7 @@ msgstr "A fájlban nem található adat."
 
 #: includes/export-import.php:196 includes/export-import.php:346
 msgid "Can't create popup. Please try again"
-msgstr "Nem hozható létre felugró ablak. Kérjük, próbálja meg újra."
+msgstr "Nem hozható létre felugró ablak. Kérjük, próbálja meg újra"
 
 #: includes/export-import.php:263
 msgid "Elementor plugin not active."
@@ -1594,7 +1740,7 @@ msgstr "Ne csaljon!"
 
 #: includes/export-import.php:329
 msgid "Api Server Error"
-msgstr "API-szerver hiba"
+msgstr "API-szerverhiba"
 
 #: includes/export-import.php:384 jet-popup.php:259
 msgid "New Popup"
@@ -1602,7 +1748,7 @@ msgstr "Új felugró ablak"
 
 #: includes/export-import.php:404
 msgid "Can't create preset. Please try again"
-msgstr "Nem hozható létre előbeállítás. Kérjük, próbálja meg újra."
+msgstr "Nem hozható létre előbeállítás. Kérjük, próbálja meg újra"
 
 #: includes/export-import.php:542 includes/post-type.php:516
 msgid "Classic"
@@ -1614,7 +1760,7 @@ msgstr "Becsúszás"
 
 #: includes/export-import.php:552 includes/post-type.php:530
 msgid "Bar"
-msgstr "Sáv"
+msgstr "Oszlopdiagram"
 
 #: includes/export-import.php:557 includes/post-type.php:537
 msgid "Bordering"
@@ -1687,7 +1833,7 @@ msgstr "Minden felugró ablak"
 
 #: includes/post-type.php:189 includes/post-type.php:190
 msgid "Create New Popup"
-msgstr "Hozzon létre új felugró ablakot"
+msgstr "Új felugró ablak létrehozása"
 
 #: includes/post-type.php:429 assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Start of Date and Time"
@@ -1707,11 +1853,11 @@ msgstr "Animáció típusa"
 
 #: includes/post-type.php:463
 msgid "Use ajax every time you open the popup"
-msgstr "A felugró ablak minden megnyitásakor használjon ajaxot"
+msgstr "A felugró ablak minden megnyitásakor használjon AJAX-ot"
 
 #: includes/post-type.php:469
 msgid "Disable page scrolling"
-msgstr "Oldal görgetésének letiltása"
+msgstr "Az oldal görgetésének kikapcsolása"
 
 #: includes/post-type.php:496
 msgid "Content type"
@@ -1729,15 +1875,15 @@ msgstr "Érvénytelen típus"
 msgid "Jet Popup"
 msgstr "Jet Popup"
 
-#: includes/post-type.php:662
+#: includes/post-type.php:671
 msgid "Popup has been created"
 msgstr "A felugró ablak létrehozva"
 
-#: includes/post-type.php:669
+#: includes/post-type.php:678
 msgid "Server Error. Please try again later."
 msgstr "Szerverhiba. Kérjük, próbálja meg később újra."
 
-#: includes/post-type.php:757
+#: includes/post-type.php:911
 msgid "Block Editor"
 msgstr "Blokkszerkesztő"
 
@@ -1751,13 +1897,14 @@ msgstr "Az Elementor szerkesztő tartalma nem érhető el a Blokkszerkesztőben"
 
 #: includes/rest-api/endpoints/clear-popup-cache.php:51
 #: includes/rest-api/endpoints/get-elementor-icon-html.php:54
+#: includes/rest-api/endpoints/get-elementor-preview-url.php:37
 #: includes/rest-api/endpoints/get-popup-conditions.php:57
 #: includes/rest-api/endpoints/get-popup-conditions.php:64
 #: includes/rest-api/endpoints/get-popup-settings.php:57
 #: includes/rest-api/endpoints/get-popup-settings.php:64
 #: includes/rest-api/endpoints/save-plugin-settings.php:51
-#: includes/rest-api/endpoints/update-popup-conditions.php:73
 #: includes/rest-api/endpoints/update-popup-conditions.php:80
+#: includes/rest-api/endpoints/update-popup-conditions.php:87
 #: includes/rest-api/endpoints/update-popup-settings.php:60
 #: includes/rest-api/endpoints/update-popup-settings.php:67
 msgid "Server Error"
@@ -1770,53 +1917,73 @@ msgstr "A felugró ablakok gyorsítótára ki lett ürítve"
 
 #: includes/rest-api/endpoints/get-elementor-icon-html.php:68
 msgid "Icon Rendered"
-msgstr "Ikon renderelve"
+msgstr "Ikon megjelenítve"
+
+#: includes/rest-api/endpoints/get-elementor-preview-url.php:51
+msgid "Invalid document ID"
+msgstr "Hibás dokumentum-ID"
+
+#: includes/rest-api/endpoints/get-elementor-preview-url.php:63
+msgid "Preview context is unavailable"
+msgstr "Az előnézeti környezet nem érhető el"
+
+#: includes/rest-api/endpoints/get-elementor-preview-url.php:91
+msgid "Preview URL generated"
+msgstr "Az előnézeti URL létrehozva"
 
 #: includes/rest-api/endpoints/save-plugin-settings.php:54
 #: includes/rest-api/endpoints/update-popup-settings.php:78
 msgid "Settings have been saved"
 msgstr "A beállítások mentve"
 
-#: includes/rest-api/endpoints/update-popup-conditions.php:92
+#: includes/rest-api/endpoints/update-popup-conditions.php:96
+msgid "You do not have permission to edit this popup"
+msgstr "Nincs jogosultsága ennek a felugró ablaknak a szerkesztéséhez"
+
+#: includes/rest-api/endpoints/update-popup-conditions.php:107
 msgid "Conditions have been saved"
 msgstr "A feltételek mentve"
 
-#: includes/settings.php:435 includes/settings.php:512
-#: includes/settings.php:600
+#: includes/settings.php:444 includes/settings.php:521
+#: includes/settings.php:609
 msgid "The page is expired. Please reload it and try again."
 msgstr "Az oldal lejárt. Kérjük, töltse be újra, és próbálja meg ismét."
 
-#: includes/settings.php:476 includes/settings.php:553
-#: includes/settings.php:643
+#: includes/settings.php:485 includes/settings.php:562
+#: includes/settings.php:652
 msgid "MailChimp Error"
-msgstr "MailChimp hiba"
+msgstr "MailChimp-hiba"
 
-#: includes/settings.php:477 includes/settings.php:554
-#: includes/settings.php:644
+#: includes/settings.php:486 includes/settings.php:563
+#: includes/settings.php:653
 msgid "Server error. Please, check your apikey status or format"
-msgstr "Szerverhiba. Kérjük, ellenőrizze az apikey állapotát vagy formátumát"
+msgstr "Szerverhiba. Kérjük, ellenőrizze az API-kulcs állapotát vagy formátumát"
 
-#: includes/settings.php:492
+#: includes/settings.php:501
 msgid "Account Data were received"
 msgstr "A fiókadatok megérkeztek"
 
-#: includes/settings.php:580
+#: includes/settings.php:589
 msgid "Lists were received"
 msgstr "A listák megérkeztek"
 
-#: includes/settings.php:660
+#: includes/settings.php:669
 msgid "Merge Fields were received"
-msgstr "A Merge Fields megérkeztek"
+msgstr "Az összevonási mezők megérkeztek"
 
 #: includes/settings/subpage-modules/integrations.php:36
 msgid "Integrations"
 msgstr "Integrációk"
 
-#: includes/utils.php:885
+#: includes/utils.php:824
+msgid "Weekly Schedule"
+msgstr "Heti időzítés"
+
+#: includes/utils.php:886
 msgid "Click"
 msgstr "Kattintás"
 
-#: includes/utils.php:888
+#: includes/utils.php:889
 msgid "Scroll To Block"
 msgstr "Görgetés a blokkhoz"
 
@@ -1838,11 +2005,11 @@ msgstr "Tagok száma: "
 
 #: templates/vue-templates/admin/mailchimp-list-item.php:11
 msgid "DoubleOptin: "
-msgstr "DoubleOptin: "
+msgstr "Kettős megerősítés: "
 
 #: templates/vue-templates/admin/mailchimp-list-item.php:16
 msgid "Merge Fields: "
-msgstr "Merge Fields: "
+msgstr "Összevonási mezők: "
 
 #: templates/vue-templates/admin/mailchimp-list-item.php:26
 msgid "Sync Fields"
@@ -1878,9 +2045,7 @@ msgstr "Felugró ablak létrehozása"
 
 #: templates/vue-templates/admin/popup-library/create-popup-form.php:8
 msgid "Here you can create a new blank popup or use template preset."
-msgstr ""
-"Itt létrehozhat egy új, üres felugró ablakot, vagy használhat sablon "
-"előbeállítást."
+msgstr "Itt létrehozhat egy új, üres felugró ablakot, vagy használhat egy előre beállított sablont."
 
 #: templates/vue-templates/admin/popup-library/create-popup-form.php:13
 msgid "Content Type"
@@ -1900,7 +2065,7 @@ msgstr "Válasszon előbeállítást (opcionális)"
 
 #: templates/vue-templates/admin/popup-library/create-popup-form.php:59
 #: templates/vue-templates/admin/popup-library/import-popup-form.php:22
-#: templates/vue-templates/admin/popup-library/settings-manager.php:368
+#: templates/vue-templates/admin/popup-library/settings-manager.php:511
 msgid "Cancel"
 msgstr "Mégse"
 
@@ -1937,149 +2102,175 @@ msgstr ""
 msgid "Choose animation effect for popup."
 msgstr "Válasszon animációs effektust a felugró ablakhoz."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:30
+#: templates/vue-templates/admin/popup-library/settings-manager.php:32
+msgid "Enable custom animation timing."
+msgstr "Egyéni animációs időzítés bekapcsolása."
+
+#: templates/vue-templates/admin/popup-library/settings-manager.php:41
+msgid "Animation In Duration (ms)"
+msgstr "Beúszó animáció időtartama (ms)"
+
+#: templates/vue-templates/admin/popup-library/settings-manager.php:42
+msgid "Popup opening animation duration in milliseconds."
+msgstr "A felugró ablak megnyitásakor használt animáció időtartama ezredmásodpercben."
+
+#: templates/vue-templates/admin/popup-library/settings-manager.php:55
+msgid "Animation Out Duration (ms)"
+msgstr "Kiúszó animáció időtartama (ms)"
+
+#: templates/vue-templates/admin/popup-library/settings-manager.php:56
+msgid "Popup closing animation duration in milliseconds."
+msgstr "A felugró ablak bezárásakor használt animáció időtartama ezredmásodpercben."
+
+#: templates/vue-templates/admin/popup-library/settings-manager.php:67
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Open Event"
 msgstr "Megnyitási esemény"
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:31
+#: templates/vue-templates/admin/popup-library/settings-manager.php:68
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Choose popup open event."
 msgstr "Válassza ki a felugró ablak megnyitási eseményét."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:41
+#: templates/vue-templates/admin/popup-library/settings-manager.php:78
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid ""
 "Enter a delay after which the popup will appear after the page is loaded."
-msgstr ""
-"Adja meg az oldal betöltése utáni késleltetést, amely után megjelenik a "
-"felugró ablak."
+msgstr "Adja meg, mennyi idővel az oldal betöltése után jelenjen meg a felugró ablak."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:59
+#: templates/vue-templates/admin/popup-library/settings-manager.php:96
 msgid "enter the time of user inactivity after which the popup will appear."
-msgstr ""
-"Adja meg a felhasználói tétlenség idejét, amely után megjelenik a felugró "
-"ablak."
+msgstr "Adja meg, mennyi ideig kell tétlennek lennie a felhasználónak ahhoz, hogy megjelenjen a felugró ablak."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:77
+#: templates/vue-templates/admin/popup-library/settings-manager.php:114
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid ""
 "Enter the scrolling percentage of the page on which the popup will appear."
-msgstr ""
-"Adja meg az oldalon elért görgetési százalékot, amelynél megjelenik a "
-"felugró ablak."
+msgstr "Adja meg, hogy az oldal görgetésének hány százalékánál jelenjen meg a felugró ablak."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:95
-#: templates/vue-templates/admin/popup-library/settings-manager.php:156
-#: assets/js/jet-popup-block-editor-plugin.js:19
-msgid "Enter the date when the popup will appear."
-msgstr "Adja meg a dátumot, amikor megjelenik a felugró ablak."
+#: templates/vue-templates/admin/popup-library/settings-manager.php:137
+msgid "Choose the days of the week when the popup is allowed to appear."
+msgstr "Válassza ki a hét azon napjait, amikor a felugró ablak megjelenhet."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:110
-#: templates/vue-templates/admin/popup-library/settings-manager.php:125
-#: templates/vue-templates/admin/popup-library/settings-manager.php:171
+#: templates/vue-templates/admin/popup-library/settings-manager.php:167
+#: templates/vue-templates/admin/popup-library/settings-manager.php:213
+#: templates/vue-templates/admin/popup-library/settings-manager.php:228
+#: templates/vue-templates/admin/popup-library/settings-manager.php:274
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Enter the time when the popup will appear."
 msgstr "Adja meg az időpontot, amikor megjelenik a felugró ablak."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:140
+#: templates/vue-templates/admin/popup-library/settings-manager.php:183
+#: templates/vue-templates/admin/popup-library/settings-manager.php:305
+msgid "Enter the time when the popup will disappear."
+msgstr "Adja meg az időpontot, amikor eltűnik a felugró ablak."
+
+#: templates/vue-templates/admin/popup-library/settings-manager.php:198
+#: templates/vue-templates/admin/popup-library/settings-manager.php:259
+#: assets/js/jet-popup-block-editor-plugin.js:19
+msgid "Enter the date when the popup will appear."
+msgstr "Adja meg a dátumot, amikor megjelenik a felugró ablak."
+
+#: templates/vue-templates/admin/popup-library/settings-manager.php:243
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Enter the time when the popup will will disappear."
 msgstr "Adja meg az időpontot, amikor eltűnik a felugró ablak."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:187
+#: templates/vue-templates/admin/popup-library/settings-manager.php:290
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Enter the date when the popup will disappear."
 msgstr "Adja meg a dátumot, amikor eltűnik a felugró ablak."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:202
-msgid "Enter the time when the popup will disappear."
-msgstr "Adja meg az időpontot, amikor eltűnik a felugró ablak."
-
-#: templates/vue-templates/admin/popup-library/settings-manager.php:218
+#: templates/vue-templates/admin/popup-library/settings-manager.php:321
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Set a custom selector on which a popup will appear when clicked."
 msgstr ""
 "Állítson be egy egyéni szelektort, amelyre kattintva megjelenik a felugró "
 "ablak."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:232
+#: templates/vue-templates/admin/popup-library/settings-manager.php:335
 msgid "On Close Event"
-msgstr "Bezárás eseménye"
+msgstr "Bezárási esemény"
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:233
+#: templates/vue-templates/admin/popup-library/settings-manager.php:336
 msgid "Choose event on сlose popup."
-msgstr "Válassza ki a felugró ablak bezárásának eseményét."
+msgstr "Válassza ki, milyen esemény történjen a felugró ablak bezárásakor."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:243
+#: templates/vue-templates/admin/popup-library/settings-manager.php:346
 msgid "Set up anchor ID scrolling to block page."
 msgstr ""
 "Állítsa be a horgonyazonosító szerinti görgetést az oldal blokkolásához."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:257
+#: templates/vue-templates/admin/popup-library/settings-manager.php:360
+msgid "Automatically Close (s)"
+msgstr "Automatikus bezárás (s)"
+
+#: templates/vue-templates/admin/popup-library/settings-manager.php:361
+msgid ""
+"Enter the number of seconds after which the popup will close automatically "
+"after being opened."
+msgstr "Adja meg, hány másodperccel a megnyitás után záródjon be automatikusan a felugró ablak."
+
+#: templates/vue-templates/admin/popup-library/settings-manager.php:373
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Prevent Page Scrolling"
 msgstr "Oldalgörgetés megakadályozása"
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:258
+#: templates/vue-templates/admin/popup-library/settings-manager.php:374
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid ""
 "Enable to block page scrolling. Close popup to continue page scrolling."
-msgstr ""
-"Engedélyezze az oldalgörgetés blokkolását. Zárja be a felugró ablakot az "
-"oldalgörgetés folytatásához."
+msgstr "Kapcsolja be az oldalgörgetés megakadályozását. A görgetés folytatásához zárja be a felugró ablakot."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:267
+#: templates/vue-templates/admin/popup-library/settings-manager.php:383
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Show Once"
-msgstr "Csak egyszer jelenjen meg"
+msgstr "Egyszeri megjelenítés"
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:268
+#: templates/vue-templates/admin/popup-library/settings-manager.php:384
 msgid "When closing the popup, when retriggered, it will not appear again"
-msgstr "Ha bezárja a felugró ablakot, újbóli kiváltáskor nem jelenik meg újra"
+msgstr "A felugró ablak bezárása után újbóli előhíváskor sem jelenik meg újra."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:277
+#: templates/vue-templates/admin/popup-library/settings-manager.php:393
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Repeat Showing Popup In"
 msgstr "A felugró ablak ismételt megjelenítése ennyi idő múlva"
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:278
+#: templates/vue-templates/admin/popup-library/settings-manager.php:394
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Set the timeout caching and a popup will be displayed again."
 msgstr ""
 "Állítsa be a gyorsítótár időkorlátját, és a felugró ablak ismét megjelenik."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:293
+#: templates/vue-templates/admin/popup-library/settings-manager.php:409
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid ""
 "When using ajax, the content of the popup will be loaded after the popup "
 "appears. This allows you to increase the loading speed of the site."
-msgstr ""
-"Ajax használatakor a felugró ablak tartalma a felugró ablak megjelenése után"
-" töltődik be. Ez lehetővé teszi az oldal betöltési sebességének növelését."
+msgstr "Ajax használatakor a felugró ablak tartalma csak a megjelenése után töltődik be. Ez lehetővé teszi a webhely betöltési sebességének növelését."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:303
+#: templates/vue-templates/admin/popup-library/settings-manager.php:419
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Force Loading every time you open the popup."
 msgstr "Kényszerített betöltés a felugró ablak minden megnyitásakor."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:325
+#: templates/vue-templates/admin/popup-library/settings-manager.php:468
 #: assets/js/jet-popup-block-editor-plugin.js:19
 #: assets/js/jet-popup-block-editor.js:29
 msgid "SVG Icon"
 msgstr "SVG ikon"
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:344
+#: templates/vue-templates/admin/popup-library/settings-manager.php:487
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Close On Overlay Click"
-msgstr "Bezárás overlayre kattintva"
+msgstr "Bezárás a háttérre kattintva"
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:345
+#: templates/vue-templates/admin/popup-library/settings-manager.php:488
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Сlose the popup when clicking on the overlay."
-msgstr "Zárja be a felugró ablakot az overlayre kattintva."
+msgstr "Zárja be a felugró ablakot a háttérre kattintva."
 
-#: templates/vue-templates/admin/popup-library/settings-manager.php:379
+#: templates/vue-templates/admin/popup-library/settings-manager.php:522
 msgid "Save Settings"
 msgstr "Beállítások mentése"
 
@@ -2141,9 +2332,7 @@ msgstr "Valóban új felugró ablakot szeretne létrehozni?"
 msgid ""
 "A new preset will be created. You'll be redirected to Editing page. Also the"
 " template will be added to the popups list on \"All Popups\" page."
-msgstr ""
-"Új előbeállítás jön létre. Átirányítjuk a szerkesztési oldalra. A sablon az "
-"\"All Popups\" oldalon a felugró ablakok listájához is hozzáadásra kerül."
+msgstr "Új előbeállítás jön létre. Átirányítjuk a szerkesztési oldalra. A sablonminta az „All Popups” oldalon a felugró ablakok listájához is hozzáadódik."
 
 #: templates/vue-templates/admin/preset-library.php:112
 msgid "You can also install additional plugins needed for this preset."
@@ -2159,9 +2348,7 @@ msgstr "A JetPopup licenc nincs aktiválva"
 
 #: templates/vue-templates/admin/preset-library.php:136
 msgid "Sorry, but you need to activate license to install this popup preset"
-msgstr ""
-"Sajnáljuk, de a felugró ablak előbeállítás telepítéséhez aktiválnia kell a "
-"licencet"
+msgstr "Sajnáljuk, de a felugró ablakhoz készült előbeállítás telepítéséhez aktiválnia kell a licencet."
 
 #: templates/vue-templates/admin/required-plugin.php:18
 msgid "Install Plugin"
@@ -2205,10 +2392,7 @@ msgstr "Gyorsítótár lejárata"
 msgid ""
 "Select a timeout for content caching. Select <b>None</b> for permanent "
 "cache. Changing this option will clear the content cache of all popups"
-msgstr ""
-"Válasszon időkorlátot a tartalom gyorsítótárazásához. A végleges "
-"gyorsítótárhoz válassza a <b>None</b> lehetőséget. Ennek az opciónak a "
-"módosítása törölni fogja az összes felugró ablak tartalom-gyorsítótárát"
+msgstr "Válasszon időkorlátot a tartalom gyorsítótárazásához. Az állandó gyorsítótárazáshoz válassza a <b>None</b> lehetőséget. Ennek a beállításnak a módosítása kiüríti az összes felugró ablak tartalmának gyorsítótárát"
 
 #: templates/vue-templates/admin/settings-templates/general.php:41
 #: templates/vue-templates/admin/settings-templates/general.php:51
@@ -2217,7 +2401,7 @@ msgstr "Gyorsítótár törlése"
 
 #: templates/vue-templates/admin/settings-templates/general.php:42
 msgid "Clear the content cache for all popups"
-msgstr "Törölje az összes felugró ablak tartalom-gyorsítótárát"
+msgstr "Az összes felugró ablak tartalmi gyorsítótárának kiürítése"
 
 #: templates/vue-templates/admin/settings-templates/integrations.php:5
 msgid "Mailchimp API key"
@@ -2245,7 +2429,7 @@ msgstr "Mailchimp-fiók"
 
 #: templates/vue-templates/admin/settings-templates/integrations.php:37
 msgid "Your mailchimp profile short data"
-msgstr "Az Ön mailchimp-profiljának rövid adatai"
+msgstr "Az Ön Mailchimp-profiljának rövid adatai"
 
 #: templates/vue-templates/admin/settings-templates/integrations.php:44
 msgid "Account ID: "
@@ -2287,12 +2471,11 @@ msgstr ""
 
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Page Scroll Progress(%)"
-msgstr "Oldal görgetési előrehaladása (%)"
+msgstr "Az oldal görgetésének előrehaladása (%)"
 
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "When closing the popup, when retriggered, it will not appear again."
-msgstr ""
-"A felugró ablak bezárásakor újbóli kiváltás esetén nem jelenik meg újra."
+msgstr "A felugró ablak bezárása után újbóli aktiválás esetén nem jelenik meg újra."
 
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Edit Conditions"
@@ -2328,11 +2511,11 @@ msgstr "Z-index"
 
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Button X Translate"
-msgstr "Gomb X eltolás"
+msgstr "Gomb X irányú eltolása"
 
 #: assets/js/jet-popup-block-editor-plugin.js:19
 msgid "Button Y Translate"
-msgstr "Gomb Y eltolás"
+msgstr "Gomb Y irányú eltolása"
 
 #: assets/js/jet-popup-block-editor-plugin.js:29
 #: assets/js/jet-popup-block-editor-plugin.js:39

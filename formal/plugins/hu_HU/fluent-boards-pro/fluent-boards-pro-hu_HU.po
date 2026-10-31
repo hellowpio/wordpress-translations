@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: Fluent Boards Pro 1.86\n"
+"Project-Id-Version: Fluent Boards Pro 2.3.0\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:46:37+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: Fluent Boards Pro\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.86\n"
+"X-Plugin-Version: 2.3.0\n"
 
 #. Plugin Name of the plugin
 #: fluent-boards-pro.php
@@ -41,18 +41,116 @@ msgstr "Pro kiegészítő a FluentBoards bővítményhez"
 msgid "WPManageNinja"
 msgstr "WPManageNinja"
 
-#: app/Hooks/Handlers/FrontendRenderer.php:138
-#: app/Hooks/Handlers/SingleBoardShortCodeHandler.php:41
+#: app/Hooks/filters.php:19
+msgid "Make Template"
+msgstr "Sablon készítése"
+
+#: app/Hooks/filters.php:29
+msgid "Convert to Board"
+msgstr "Átalakítás táblává"
+
+#: app/Hooks/Handlers/DataExporter.php:38
+msgid "Board"
+msgstr "Tábla"
+
+#: app/Hooks/Handlers/DataExporter.php:39
+msgid "Task"
+msgstr "Feladat"
+
+#: app/Hooks/Handlers/DataExporter.php:40
+msgid "Member"
+msgstr "Tag"
+
+#: app/Hooks/Handlers/DataExporter.php:41
+msgid "Log Date"
+msgstr "Napló dátuma"
+
+#: app/Hooks/Handlers/DataExporter.php:42
+msgid "Billable Hours"
+msgstr "Számlázható órák"
+
+#: app/Hooks/Handlers/DataExporter.php:43
+msgid "Notes"
+msgstr "Jegyzetek"
+
+#: app/Hooks/Handlers/DataExporter.php:152
+msgid "Use POST to export a board."
+msgstr "POST használatával exportálhat egy táblát."
+
+#: app/Hooks/Handlers/DataExporter.php:158
+msgid "You do not have permission to export this board."
+msgstr "Nincs jogosultsága ennek a táblának az exportálásához."
+
+#: app/Hooks/Handlers/ExternalPages.php:108
+#: app/Hooks/Handlers/ExternalPages.php:114
+msgid "Invalid Attachment Hash"
+msgstr "Hibás csatolmány-hash"
+
+#: app/Hooks/Handlers/ExternalPages.php:121
+msgid "You do not have permission to access this attachment."
+msgstr "Nincs jogosultsága a csatolmány eléréséhez."
+
+#: app/Hooks/Handlers/ExternalPages.php:158
+#: app/Hooks/Handlers/ExternalPages.php:168
+msgid "File could not be found."
+msgstr "A fájl nem található."
+
+#: app/Hooks/Handlers/ExternalPages.php:231
+#: app/Hooks/Handlers/ExternalPages.php:256
+msgid "Failed to fetch remote file"
+msgstr "A távoli fájl lekérése sikertelen"
+
+#: app/Hooks/Handlers/ExternalPages.php:260
+msgid "The remote attachment exceeds the download size limit."
+msgstr "A távoli csatolmány meghaladja a letöltési méretkorlátot."
+
+#: app/Hooks/Handlers/ExternalPages.php:355
+msgid "Unable to prepare attachment response."
+msgstr "Nem sikerült előkészíteni a csatolmányhoz tartozó választ."
+
+#: app/Hooks/Handlers/ExternalPages.php:393
+msgid "Webhook must need to be as POST Method"
+msgstr "A webhooknak POST metódusúnak kell lennie"
+
+#: app/Hooks/Handlers/ExternalPages.php:400
+msgid "Invalid Webhook URL"
+msgstr "Hibás webhook-URL"
+
+#: app/Hooks/Handlers/ExternalPages.php:408
+msgid "Invalid Webhook Hash"
+msgstr "Hibás webhook-hash"
+
+#: app/Hooks/Handlers/ExternalPages.php:417
+msgid "Task Title is required"
+msgstr "A feladat címe kötelező"
+
+#: app/Hooks/Handlers/ExternalPages.php:428
+msgid "Task Creation Failed"
+msgstr "A feladat létrehozása sikertelen"
+
+#: app/Hooks/Handlers/ExternalPages.php:433
+msgid "Task Created Successfully"
+msgstr "A feladat sikeresen létrehozva"
+
+#: app/Hooks/Handlers/ExternalPages.php:530
+msgid "One or more assignees are not members of this board."
+msgstr "Egy vagy több hozzárendelt felhasználó nem tagja ennek a táblának."
+
+#: app/Hooks/Handlers/ExternalPages.php:629
+msgid "Stage or Board Mismatched"
+msgstr "A szakasz vagy a tábla nem egyezik."
+
+#: app/Hooks/Handlers/FrontendRenderer.php:230
 msgid "You do not have permission to view the projects"
 msgstr "Nincs jogosultsága a projektek megtekintéséhez"
 
-#: app/Hooks/Handlers/FrontendRenderer.php:191
+#: app/Hooks/Handlers/FrontendRenderer.php:283
 msgid "Please login to view the project"
 msgstr "Kérjük, jelentkezzen be a projekt megtekintéséhez"
 
-#: app/Hooks/Handlers/FrontendRenderer.php:219
+#: app/Hooks/Handlers/FrontendRenderer.php:311
 msgid "Visit FluentBoards Portal"
-msgstr "Látogassa meg a FluentBoards portált"
+msgstr "FluentBoards-portál felkeresése"
 
 #: app/Hooks/Handlers/InstallationHandler.php:19
 #: app/Hooks/Handlers/InstallationHandler.php:38
@@ -61,67 +159,377 @@ msgstr "Fluent Roadmap"
 
 #: app/Hooks/Handlers/InstallationHandler.php:24
 msgid "Activate Fluent Roadmap"
-msgstr "Aktiválja a Fluent Roadmapot"
+msgstr "Fluent Roadmap bekapcsolása"
 
 #: app/Hooks/Handlers/InstallationHandler.php:24
 msgid "Install Fluent Roadmap"
-msgstr "Telepítse a Fluent Roadmapot"
+msgstr "Fluent Roadmap telepítése"
 
-#: app/Hooks/Handlers/OutWebhookHandler.php:162
-#: app/Hooks/Handlers/OutWebhookHandler.php:165
+#: app/Hooks/Handlers/InstallationHandler.php:25
+msgid ""
+"FluentRoadmap is an add-on for FluentBoards that provides a clear view of "
+"user requests, project progress, and priorities. Share Feature Request "
+"Boards to gather new ideas, discuss, and upvote suggestions."
+msgstr "A FluentRoadmap a FluentBoards kiegészítője, amely áttekinthetően mutatja a felhasználói kéréseket, a projekt előrehaladását és a prioritásokat. Ossza meg a funkcióigény-táblákat, hogy új ötleteket gyűjtsön, megvitassa azokat, és szavazhasson a javaslatokra."
+
+#. translators: %s is the board title; the email shows the inviter's name
+#. before this text
+#: app/Hooks/Handlers/InvitationHandler.php:43
+#, php-format
+msgid "has invited you to join board: %s"
+msgstr "meghívta Önt, hogy csatlakozzon a táblához: %s"
+
+#. translators: %s is the site name
+#: app/Hooks/Handlers/InvitationHandler.php:45
+#, php-format
+msgid "Join the board on %s"
+msgstr "Csatlakozzon a táblához itt: %s"
+
+#: app/Hooks/Handlers/InvitationHandler.php:46
+msgid "Join Board"
+msgstr "Csatlakozás a táblához"
+
+#. translators: %1$s is the inviter's name, %2$s is the board title
+#: app/Hooks/Handlers/InvitationHandler.php:56
+#, php-format
+msgid "%1$s invited you to %2$s"
+msgstr "%1$s meghívta Önt ide: %2$s"
+
+#: app/Hooks/Handlers/InvitationHandler.php:143
+msgid "Error: Invalid user"
+msgstr "Hiba: hibás felhasználó"
+
+#: app/Hooks/Handlers/InvitationHandler.php:174
+msgid "Error: Invalid email address"
+msgstr "Hiba: hibás e-mail cím"
+
+#: app/Hooks/Handlers/InvitationHandler.php:196
+msgid "Unable to add the user to this board."
+msgstr "Nem sikerült hozzáadni a felhasználót ehhez a táblához."
+
+#. translators: %1$s is the creator's name, %2$s is the task title
+#: app/Hooks/Handlers/OutWebhookHandler.php:156
+#: app/Hooks/Handlers/OutWebhookHandler.php:159
+#, php-format
+msgid "'%1$s' has created task '%2$s'"
+msgstr "„%1$s” létrehozta a(z) „%2$s” feladatot"
+
+#. translators: %s is the task title
+#: app/Hooks/Handlers/OutWebhookHandler.php:190
+#: app/Hooks/Handlers/OutWebhookHandler.php:193
+#, php-format
+msgid "Task '%s' has been completed"
+msgstr "A(z) „%s” feladat befejezve"
+
+#: app/Hooks/Handlers/OutWebhookHandler.php:219
+#: app/Hooks/Handlers/OutWebhookHandler.php:223
 msgid "Unknown"
 msgstr "Ismeretlen"
 
-#: app/Http/Controllers/AttachmentController.php:29
+#. translators: %1$s is the task title, %2$s is the previous stage, %3$s is
+#. the new stage
+#: app/Hooks/Handlers/OutWebhookHandler.php:221
+#: app/Hooks/Handlers/OutWebhookHandler.php:225
+#, php-format
+msgid "Task '%1$s' has been moved from '%2$s' to '%3$s'"
+msgstr "A(z) „%1$s” feladat átkerült innen: „%2$s” ide: „%3$s”"
+
+#. translators: %s is the task title
+#: app/Hooks/Handlers/OutWebhookHandler.php:256
+#, php-format
+msgid "Task '%s' dates have been updated"
+msgstr "A(z) „%s” feladat dátumai frissültek"
+
+#. translators: %s is the task title
+#: app/Hooks/Handlers/OutWebhookHandler.php:259
+#, php-format
+msgid "Task '%s' start date has been updated"
+msgstr "A(z) „%s” feladat kezdő dátuma frissült"
+
+#. translators: %s is the task title
+#: app/Hooks/Handlers/OutWebhookHandler.php:262
+#, php-format
+msgid "Task '%s' due date has been updated"
+msgstr "A(z) „%s” feladat esedékességi dátuma frissült"
+
+#. translators: %s is the task title
+#: app/Hooks/Handlers/OutWebhookHandler.php:266
+#, php-format
+msgid "Task '%s' dates have been removed"
+msgstr "A(z) „%s” feladat dátumait eltávolították"
+
+#. translators: %1$s is the task title, %2$s is the previous priority, %3$s is
+#. the new priority
+#: app/Hooks/Handlers/OutWebhookHandler.php:311
+#, php-format
+msgid "Task '%1$s' priority has been changed from '%2$s' to '%3$s'"
+msgstr "A(z) „%1$s” feladat prioritása megváltozott erről: „%2$s” erre: „%3$s”"
+
+#. translators: %s is the task title
+#: app/Hooks/Handlers/OutWebhookHandler.php:354
+#, php-format
+msgid "Label has been added to task '%s'"
+msgstr "Címke került a(z) „%s” feladathoz"
+
+#. translators: %1$s is the label title, %2$s is the task title
+#: app/Hooks/Handlers/OutWebhookHandler.php:357
+#, php-format
+msgid "Label '%1$s' has been added to task '%2$s'"
+msgstr "A(z) „%1$s” címke hozzáadva a(z) „%2$s” feladathoz"
+
+#. translators: %s is the task title
+#: app/Hooks/Handlers/OutWebhookHandler.php:364
+#, php-format
+msgid "Label has been removed from task '%s'"
+msgstr "Címke eltávolítva a(z) „%s” feladatról"
+
+#. translators: %1$s is the label title, %2$s is the task title
+#: app/Hooks/Handlers/OutWebhookHandler.php:367
+#, php-format
+msgid "Label '%1$s' has been removed from task '%2$s'"
+msgstr "A(z) „%1$s” címke eltávolítva a(z) „%2$s” feladatról"
+
+#. translators: %1$s is the stage title, %2$s is the board title
+#: app/Hooks/Handlers/OutWebhookHandler.php:410
+#, php-format
+msgid "Stage '%1$s' has been added to board '%2$s'"
+msgstr "A(z) „%1$s” szakasz hozzáadva a(z) „%2$s” táblához"
+
+#. translators: %1$s is the commenter's name, %2$s is the start of the
+#. comment, %3$s is the task title
+#: app/Hooks/Handlers/OutWebhookHandler.php:441
+#: app/Hooks/Handlers/OutWebhookHandler.php:444
+#, php-format
+msgid "'%1$s' has added comment '%2$s' to task '%3$s'"
+msgstr "„%1$s” hozzászólást fűzött a(z) „%3$s” feladathoz: „%2$s”"
+
+#. translators: %1$s is the assignee's name, %2$s is the task title
+#: app/Hooks/Handlers/OutWebhookHandler.php:469
+#: app/Hooks/Handlers/OutWebhookHandler.php:472
+#, php-format
+msgid "'%1$s' has been assigned to task '%2$s'"
+msgstr "„%1$s” hozzárendelve a(z) „%2$s” feladathoz"
+
+#. translators: %s is the task title
+#: app/Hooks/Handlers/OutWebhookHandler.php:489
+#, php-format
+msgid "Task '%s' has been archived"
+msgstr "A(z) „%s” feladat archiválva"
+
+#. translators: %s is the task title
+#: app/Hooks/Handlers/OutWebhookHandler.php:491
+#, php-format
+msgid "Task '%s' has been restored"
+msgstr "A(z) „%s” feladat visszaállítva"
+
+#: app/Hooks/Handlers/OutWebhookHandler.php:597
+#: app/Hooks/Handlers/OutWebhookHandler.php:650
+msgid "Invalid URL provided."
+msgstr "Hibás URL-t adott meg."
+
+#. translators: %1$s is today's date, %2$d is the number of tasks due today
+#: app/Hooks/Handlers/ProScheduleHandler.php:276
+#, php-format
+msgid "Your tasks for %1$s: %2$d due today"
+msgstr "Feladatai (%1$s): ma %2$d feladat esedékes"
+
+#: app/Hooks/Handlers/ProScheduleHandler.php:277
+msgid "l, M j"
+msgstr "l, M j"
+
+#. translators: %1$s is the subtask title
+#: app/Hooks/Handlers/ProScheduleHandler.php:468
+#, php-format
+msgid "Reminder: Your subtask %1$s is due soon."
+msgstr "Emlékeztető: a(z) „%1$s” alfeladata hamarosan esedékes."
+
+#. translators: %1$s is the task title
+#: app/Hooks/Handlers/ProScheduleHandler.php:479
+#, php-format
+msgid "Reminder: Your task %1$s is due soon."
+msgstr "Emlékeztető: a(z) „%1$s” feladat hamarosan esedékes."
+
+#: app/Hooks/Handlers/ProScheduleHandler.php:554
+msgid "Due in 30 minutes"
+msgstr "30 perc múlva esedékes"
+
+#: app/Hooks/Handlers/ProScheduleHandler.php:555
+msgid "Due in 1 hour"
+msgstr "1 óra múlva esedékes"
+
+#: app/Hooks/Handlers/ProScheduleHandler.php:556
+msgid "Due in 2 hours"
+msgstr "2 óra múlva esedékes"
+
+#: app/Hooks/Handlers/ProScheduleHandler.php:557
+msgid "Due tomorrow"
+msgstr "Holnap esedékes"
+
+#: app/Hooks/Handlers/ProScheduleHandler.php:558
+msgid "Due in 2 days"
+msgstr "2 nap múlva esedékes"
+
+#: app/Hooks/Handlers/ProScheduleHandler.php:559
+msgid "Due next week"
+msgstr "Jövő héten esedékes"
+
+#: app/Hooks/Handlers/ProScheduleHandler.php:562
+msgid "Due soon"
+msgstr "Hamarosan esedékes"
+
+#. translators: %1$s is when the task is due (e.g. "Due in 1 hour"), %2$s is
+#. the task title
+#: app/Hooks/Handlers/ProScheduleHandler.php:565
+#, php-format
+msgid "%1$s: “%2$s”"
+msgstr "%1$s: „%2$s”"
+
+#: app/Http/Controllers/AttachmentController.php:30
 msgid "Task attachment has been deleted"
-msgstr "A feladat melléklete törölve lett"
+msgstr "A feladat csatolmányát törölték"
 
-#: app/Http/Controllers/AttachmentController.php:44
+#: app/Http/Controllers/AttachmentController.php:45
 msgid "Task attachment has been updated"
-msgstr "A feladat melléklete frissítve lett"
+msgstr "A feladat csatolmányát frissítették"
 
-#: app/Http/Controllers/AttachmentController.php:73
+#: app/Http/Controllers/AttachmentController.php:74
 msgid "Attachment has been added to task"
-msgstr "Melléklet lett hozzáadva a feladathoz"
+msgstr "Csatolmányt adtak hozzá a feladathoz"
 
-#: app/Http/Controllers/AttachmentController.php:98
+#: app/Http/Controllers/AttachmentController.php:90
+msgid "File is empty."
+msgstr "A fájl üres."
+
+#: app/Http/Controllers/AttachmentController.php:108
+#: app/Http/Controllers/AttachmentController.php:167
+msgid "File type not supported"
+msgstr "A fájltípus nem támogatott"
+
+#: app/Http/Controllers/AttachmentController.php:119
+#: app/Http/Controllers/AttachmentController.php:208
+#: app/Http/Controllers/AttachmentController.php:230
+#: app/Http/Controllers/AttachmentController.php:236
+#: app/Http/Controllers/AttachmentController.php:244
+#: app/Http/Controllers/AttachmentController.php:257
+#: app/Http/Controllers/AttachmentController.php:269
+msgid "File upload failed."
+msgstr "A fájl feltöltése sikertelen."
+
+#: app/Http/Controllers/AttachmentController.php:123
+#: app/Http/Controllers/AttachmentController.php:311
 msgid "Task attachment has been added"
-msgstr "A feladat melléklete hozzáadva lett"
+msgstr "Hozzáadták a feladat csatolmányát"
+
+#: app/Http/Controllers/AttachmentController.php:147
+#: app/Http/Controllers/AttachmentController.php:172
+msgid "Chunk data is missing."
+msgstr "Hiányoznak az adatblokk adatai."
+
+#: app/Http/Controllers/AttachmentController.php:159
+#: app/Http/Controllers/AttachmentController.php:220
+#: app/Http/Controllers/AttachmentController.php:225
+msgid "Invalid chunk upload request."
+msgstr "Hibás adatblokk-feltöltési kérés."
+
+#: app/Http/Controllers/AttachmentController.php:163
+msgid "File size is too large"
+msgstr "A fájl mérete túl nagy"
+
+#: app/Http/Controllers/AttachmentController.php:177
+msgid "Upload directory information not available."
+msgstr "A feltöltési könyvtár adatai nem érhetők el."
+
+#: app/Http/Controllers/AttachmentController.php:182
+msgid ""
+"Could not create the upload directory. Please check directory permissions."
+msgstr "Nem sikerült létrehozni a feltöltési könyvtárat. Kérjük, ellenőrizze a könyvtár jogosultságait."
+
+#: app/Http/Controllers/AttachmentController.php:286
+msgid "File contents do not match the file extension."
+msgstr "A fájl tartalma nem egyezik a fájlkiterjesztéssel."
+
+#: app/Http/Controllers/BoardShareController.php:39
+msgid "Public access has been enabled"
+msgstr "A nyilvános hozzáférés bekapcsolva"
+
+#: app/Http/Controllers/BoardShareController.php:40
+msgid "Public access has been disabled"
+msgstr "A nyilvános hozzáférés kikapcsolva"
+
+#: app/Http/Controllers/BoardShareController.php:54
+msgid "Public view settings have been updated"
+msgstr "A nyilvános megtekintés beállításai frissültek"
+
+#: app/Http/Controllers/BoardUserController.php:36
+#: app/Http/Controllers/BoardUserController.php:68
+msgid "Invalid user ids. Please select valid users."
+msgstr "Hibás felhasználói azonosítók (ID-k). Kérjük, válasszon érvényes felhasználókat."
 
 #: app/Http/Controllers/BoardUserController.php:58
 msgid "Selected users has been added as admin"
 msgstr "A kiválasztott felhasználók adminisztrátorként lettek hozzáadva"
 
+#: app/Http/Controllers/BoardUserController.php:82
+msgid "You can not remove super admin from admin list."
+msgstr "A szuperadmin nem távolítható el az adminlistáról."
+
+#: app/Http/Controllers/BoardUserController.php:90
+msgid ""
+"Selected user has been deleted from admin access. Please check individual "
+"board accesses."
+msgstr "A kiválasztott felhasználó admin-hozzáférése törölve. Kérjük, ellenőrizze az egyes táblák hozzáféréseit."
+
+#: app/Http/Controllers/BoardUserController.php:100
+msgid "Invalid board ids. Please select valid boards."
+msgstr "Hibás táblaazonosítók (ID-k). Kérjük, válasszon érvényes táblákat."
+
+#: app/Http/Controllers/BoardUserController.php:113
+msgid "Selected user has been added to selected boards"
+msgstr "A kiválasztott felhasználó hozzáadva a kiválasztott táblákhoz"
+
 #: app/Http/Controllers/BoardUserController.php:144
 msgid "Selected users has been added to selected boards"
 msgstr "A kiválasztott felhasználók a kiválasztott táblákhoz lettek hozzáadva"
 
-#: app/Http/Controllers/BoardUserController.php:192
+#: app/Http/Controllers/BoardUserController.php:155
+#: app/Http/Controllers/BoardUserController.php:203
+msgid "You can not sync access for super admin."
+msgstr "Szuperadminisztrátor hozzáférése nem szinkronizálható."
+
+#: app/Http/Controllers/BoardUserController.php:195
 msgid "User roles has been synced successfully."
 msgstr "A felhasználói szerepkörök sikeresen szinkronizálva lettek."
 
-#: app/Http/Controllers/BoardUserController.php:217
+#: app/Http/Controllers/BoardUserController.php:220
 msgid "User has been removed from all boards."
 msgstr "A felhasználó el lett távolítva az összes tábláról."
 
-#: app/Http/Controllers/BoardUserController.php:226
-#: app/Http/Controllers/BoardUserController.php:239
-#: app/Http/Controllers/BoardUserController.php:251
-#: app/Http/Controllers/BoardUserController.php:264
+#: app/Http/Controllers/BoardUserController.php:229
+#: app/Http/Controllers/BoardUserController.php:242
+#: app/Http/Controllers/BoardUserController.php:254
+#: app/Http/Controllers/BoardUserController.php:267
 msgid "Role updated successfully"
 msgstr "A szerepkör sikeresen frissítve"
 
-#: app/Http/Controllers/CsvController.php:182
-msgid "No valid rows found to import. Please check your csv and try again."
-msgstr ""
-"Nem találhatók érvényes sorok az importáláshoz. Kérjük, ellenőrizze a csv "
-"fájlt, és próbálja újra."
+#: app/Http/Controllers/CsvController.php:32
+msgid "The file must be a valid CSV."
+msgstr "A fájlnak érvényes CSV-nek kell lennie."
 
-#: app/Http/Controllers/CsvController.php:187
+#: app/Http/Controllers/CsvController.php:56
+msgid ""
+"Looks like your csv has same name header multiple times. Please fix your csv"
+" first and remove any duplicate header column"
+msgstr "Úgy tűnik, hogy a CSV-fájlban több oszlop fejléce azonos. Kérjük, először javítsa ki a CSV-fájlt, és távolítsa el az ismétlődő fejlécű oszlopokat"
+
+#: app/Http/Controllers/CsvController.php:181
+msgid "No valid rows found to import. Please check your csv and try again."
+msgstr "Nem találhatók érvényes sorok az importáláshoz. Kérjük, ellenőrizze a CSV-fájlt, és próbálja újra."
+
+#: app/Http/Controllers/CsvController.php:186
 msgid "Board has been imported successfully!"
 msgstr "A tábla sikeresen importálva!"
 
-#: app/Http/Controllers/CsvController.php:223
+#: app/Http/Controllers/CsvController.php:222
 msgid "Board has been imported successfully"
 msgstr "A tábla sikeresen importálva"
 
@@ -133,191 +541,1175 @@ msgstr "Ilyen című és típusú egyedi mező már létezik"
 msgid "Custom field has been successfully created"
 msgstr "Az egyedi mező sikeresen létrehozva"
 
-#: app/Http/Controllers/CustomFieldController.php:57
+#: app/Http/Controllers/CustomFieldController.php:58
 msgid "Custom field has been updated successfully"
 msgstr "Az egyedi mező sikeresen frissítve"
 
-#: app/Http/Controllers/CustomFieldController.php:67
+#: app/Http/Controllers/CustomFieldController.php:69
 msgid "Custom field has been deleted successfully"
 msgstr "Az egyedi mező sikeresen törölve"
 
-#: app/Http/Controllers/CustomFieldController.php:109
+#: app/Http/Controllers/CustomFieldController.php:115
 msgid "Custom field position has been updated successfully"
 msgstr "Az egyedi mező pozíciója sikeresen frissítve"
 
-#: app/Http/Controllers/ImportController.php:66
-msgid "Invalid JSON."
-msgstr "Érvénytelen JSON."
+#: app/Http/Controllers/ImportController.php:70
+msgid "API Key and Token are required."
+msgstr "Az API-kulcs és a token megadása kötelező."
 
-#: app/Http/Controllers/ImportController.php:75
-msgid "Processed and Imported successfully"
-msgstr "Feldolgozva és sikeresen importálva"
+#: app/Http/Controllers/ImportController.php:96
+msgid "API Key, Token, and Board ID are required."
+msgstr "Az API-kulcs, a token és a tábla ID-jának megadása kötelező."
 
-#: app/Http/Controllers/LicenseController.php:39
+#: app/Http/Controllers/ImportController.php:112
+msgid "Trello import started."
+msgstr "A Trello importálása elindult."
+
+#: app/Http/Controllers/ImportController.php:123
+#: app/Http/Controllers/ImportController.php:147
+msgid "Import ID is required."
+msgstr "Az importálási ID megadása kötelező."
+
+#: app/Http/Controllers/ImportController.php:186
+msgid "Personal Access Token is required."
+msgstr "A személyes hozzáférési token megadása kötelező."
+
+#: app/Http/Controllers/ImportController.php:210
+msgid "Personal Access Token and Workspace are required."
+msgstr "A személyes hozzáférési token és a munkaterület megadása kötelező."
+
+#: app/Http/Controllers/ImportController.php:236
+msgid "Personal Access Token and Project are required."
+msgstr "A személyes hozzáférési token és a projekt megadása kötelező."
+
+#: app/Http/Controllers/ImportController.php:258
+msgid "Project imported successfully from Asana"
+msgstr "A projekt importálása sikeresen megtörtént az Asanából"
+
+#: app/Http/Controllers/LicenseController.php:62
 msgid "Your license key has been successfully updated"
 msgstr "A licenckulcsa sikeresen frissítve lett"
 
-#: app/Http/Controllers/LicenseController.php:57
+#: app/Http/Controllers/LicenseController.php:80
 msgid "Your license key has been successfully deactivated"
 msgstr "A licenckulcsa sikeresen deaktiválva lett"
 
+#. translators: %s: human readable time difference, e.g. "2 mins"
+#: app/Http/Controllers/LicenseController.php:135
+#, php-format
+msgid "%s ago"
+msgstr "%s ezelőtt"
+
+#: app/Http/Controllers/ProAdminController.php:25
+msgid ""
+"You can not update the storage settings as it is defined in the config file"
+msgstr ""
+"Nem frissítheti a tárhelybeállításokat, mivel a konfigurációs fájlban vannak"
+" meghatározva"
+
+#: app/Http/Controllers/ProAdminController.php:91
+msgid ""
+"Could not connect to the remote storage service. Please check your "
+"credentials"
+msgstr ""
+"Nem sikerült csatlakozni a távoli tárhelyszolgáltatáshoz. Kérjük, "
+"ellenőrizze a hitelesítő adatait"
+
+#: app/Http/Controllers/ProAdminController.php:149
+msgid "Storage settings has been updated successfully"
+msgstr "A tárolási beállítások frissítése sikeresen megtörtént"
+
+#: app/Http/Controllers/ProBoardController.php:38
+msgid "Background image not found."
+msgstr "A háttérkép nem található."
+
+#: app/Http/Controllers/ProBoardController.php:43
+msgid "Board not found."
+msgstr "A tábla nem található."
+
+#: app/Http/Controllers/ProBoardController.php:58
+msgid "Background updated successfully"
+msgstr "A háttér sikeresen frissítve"
+
 #. translators: This placeholder is for the type of board (e.g., "project" or
 #. "task").
-#: app/Http/Controllers/ProBoardController.php:50
+#: app/Http/Controllers/ProBoardController.php:90
 #, php-format
 msgid "%s board has been created"
 msgstr "%s tábla létrehozva"
 
-#: app/Http/Controllers/ProBoardController.php:77
+#: app/Http/Controllers/ProBoardController.php:118
 msgid "You do not have permission to invite users to this board."
 msgstr "Nincs jogosultsága felhasználókat meghívni ehhez a táblához."
 
-#: app/Http/Controllers/ProBoardController.php:87
+#: app/Http/Controllers/ProBoardController.php:129
 msgid "Already a wordpress member"
-msgstr "Már wordpress tag"
+msgstr "Már WordPress-tag"
 
-#: app/Http/Controllers/ProBoardController.php:92
+#: app/Http/Controllers/ProBoardController.php:134
 msgid "Invitation sent successfully!"
 msgstr "Meghívó sikeresen elküldve!"
 
-#: app/Http/Controllers/ProBoardController.php:122
+#: app/Http/Controllers/ProBoardController.php:163
+msgid "Please update Fluent Boards before deleting invitations."
+msgstr "Kérjük, frissítse a Fluent Boards bővítményt a meghívók törlése előtt."
+
+#: app/Http/Controllers/ProBoardController.php:171
+msgid "Invitation not found."
+msgstr "A meghívó nem található."
+
+#: app/Http/Controllers/ProBoardController.php:176
 msgid "Invitation deleted successfully!"
 msgstr "Meghívó sikeresen törölve!"
 
-#: app/Http/Controllers/ProBoardController.php:138
-#: app/Http/Controllers/ProBoardController.php:251
+#: app/Http/Controllers/ProBoardController.php:193
+#: app/Http/Controllers/ProBoardController.php:295
+#: app/Http/Controllers/ProBoardController.php:315
 msgid "Stage updated successfully"
 msgstr "A szakasz sikeresen frissítve"
 
-#: app/Http/Controllers/ProBoardController.php:228
+#: app/Http/Controllers/ProBoardController.php:261
+msgid "Board id is not valid"
+msgstr "A táblaazonosító (ID) érvénytelen"
+
+#: app/Http/Controllers/ProBoardController.php:266
+msgid "Template task not found"
+msgstr "A sablonfeladat nem található"
+
+#: app/Http/Controllers/ProBoardController.php:274
 msgid "Task has been successfully created"
 msgstr "A feladat sikeresen létrehozva"
 
-#: app/Http/Controllers/ProTaskController.php:62
+#: app/Http/Controllers/ProBoardController.php:344
+#: app/Http/Controllers/ProTaskController.php:68
+#: app/Http/Controllers/SubtaskController.php:436
+#: app/Services/ProTaskService.php:72
+msgid "Stage not found"
+msgstr "A szakasz nem található"
+
+#: app/Http/Controllers/ProTaskController.php:48
+msgid "Invalid repeat type"
+msgstr "Hibás ismétlési típus"
+
+#: app/Http/Controllers/ProTaskController.php:52
+msgid "Invalid selected month"
+msgstr "A kiválasztott hónap hibás"
+
+#: app/Http/Controllers/ProTaskController.php:82
 msgid "Repeat task created successfully"
 msgstr "Ismétlődő feladat sikeresen létrehozva"
 
-#: app/Http/Controllers/ProTaskController.php:71
+#: app/Http/Controllers/ProTaskController.php:91
 msgid "Repeat task update successfully"
 msgstr "Az ismétlődő feladat sikeresen frissítve"
 
-#: app/Http/Controllers/ProTaskController.php:107
+#: app/Http/Controllers/ProTaskController.php:128
 msgid "Task repeat stopped successfully"
 msgstr "A feladat ismétlése sikeresen leállítva"
 
-#: app/Http/Controllers/SubtaskController.php:48
+#: app/Http/Controllers/SubtaskController.php:50
+#: app/Modules/MCP/Tools/ProTaskTools.php:47
 msgid "Uncategorized"
 msgstr "Kategorizálatlan"
 
-#: app/Http/Controllers/SubtaskController.php:59
-#: app/Http/Controllers/SubtaskController.php:68
-msgid "Subtask Group 1"
-msgstr "Részfeladat csoport 1"
+#: app/Http/Controllers/SubtaskController.php:61
+#: app/Http/Controllers/SubtaskController.php:70
+#: app/Services/SubtaskService.php:251
+msgid "Untitled Group"
+msgstr "Névtelen csoport"
 
-#: app/Http/Controllers/SubtaskController.php:101
+#: app/Http/Controllers/SubtaskController.php:104
+#: app/Modules/MCP/Tools/ProTaskTools.php:84
 msgid "New Subtask group has been added"
-msgstr "Új részfeladat csoport lett hozzáadva"
+msgstr "Új részfeladatcsoportot adtunk hozzá"
 
-#: app/Http/Controllers/SubtaskController.php:120
+#: app/Http/Controllers/SubtaskController.php:124
 msgid "Subtask group title has been added"
-msgstr "A részfeladat csoport címe hozzáadva lett"
+msgstr "Hozzáadtuk a részfeladatcsoport címét"
 
-#: app/Http/Controllers/SubtaskController.php:135
+#: app/Http/Controllers/SubtaskController.php:140
 msgid "Subtask group has been deleted"
-msgstr "A részfeladat csoport törölve lett"
+msgstr "A részfeladatcsoportot töröltük"
 
-#: app/Http/Controllers/SubtaskController.php:156
+#: app/Http/Controllers/SubtaskController.php:164
+#: app/Modules/MCP/Tools/ProTaskTools.php:118
 msgid "Subtask has been added"
-msgstr "Részfeladat hozzáadva lett"
+msgstr "A részfeladatot hozzáadtuk"
 
-#: app/Http/Controllers/SubtaskController.php:184
+#: app/Http/Controllers/SubtaskController.php:186
+msgid "Subtasks"
+msgstr "Alfeladatok"
+
+#: app/Http/Controllers/SubtaskController.php:197
+msgid "Subtasks have been added"
+msgstr "Az alfeladatok hozzáadása megtörtént"
+
+#: app/Http/Controllers/SubtaskController.php:225
 msgid "Task has been deleted"
-msgstr "A feladat törölve lett"
+msgstr "A feladatot törölték"
 
-#: app/Http/Controllers/SubtaskController.php:231
+#: app/Http/Controllers/SubtaskController.php:275
 msgid "Subtask has been moved"
-msgstr "A részfeladat át lett helyezve"
+msgstr "A részfeladatot áthelyezték"
 
-#: app/Http/Controllers/SubtaskController.php:284
+#: app/Http/Controllers/SubtaskController.php:326
+msgid "Only board members can be assigned to a subtask"
+msgstr "Alfeladathoz csak a tábla tagjai rendelhetők hozzá"
+
+#: app/Http/Controllers/SubtaskController.php:345
 msgid "Task has been converted to subtask"
-msgstr "A feladat részfeladattá lett alakítva"
+msgstr "A feladatot részfeladattá alakították"
 
-#: app/Http/Controllers/SubtaskController.php:299
+#: app/Http/Controllers/SubtaskController.php:360
 msgid "Subtask has been cloned successfully"
-msgstr "A részfeladat sikeresen klónozva lett"
+msgstr "A részfeladat klónozása sikerült"
 
-#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:31
+#: app/Http/Controllers/SubtaskController.php:394
+#: app/Http/Controllers/SubtaskController.php:400
+msgid "Subtask group not found"
+msgstr "Az alfeladatcsoport nem található"
+
+#: app/Http/Controllers/TemplateController.php:147
+msgid "Board created successfully from template"
+msgstr "A tábla sikeresen létrejött a sablonminta alapján"
+
+#: app/Http/Controllers/TemplateController.php:166
+msgid "Template saved to My Templates"
+msgstr "A sablonminta mentve a Saját sablonminták közé"
+
+#: app/Http/Controllers/TemplateController.php:188
+#: app/Modules/MCP/Tools/TemplateTools.php:36
+msgid "You do not have permission to convert this board to a template"
+msgstr "Nincs jogosultsága arra, hogy ezt a táblát sablonná alakítsa"
+
+#: app/Http/Controllers/TemplateController.php:201
+msgid "Board has been converted to a template"
+msgstr "A tábla sablonná alakítása megtörtént"
+
+#: app/Http/Controllers/TemplateController.php:215
+msgid "You do not have permission to convert this template to a board"
+msgstr "Nincs jogosultsága a sablonminta táblává alakításához"
+
+#: app/Http/Controllers/TemplateController.php:224
+msgid "Template has been converted back to a board"
+msgstr "A sablonmintát visszaalakították táblává"
+
+#: app/Http/Controllers/TemplateController.php:243
+msgid "You do not have permission to update this template"
+msgstr "Nincs jogosultsága a sablonminta frissítéséhez"
+
+#: app/Http/Controllers/TemplateController.php:250
+msgid "Template settings updated successfully"
+msgstr "A sablonminta beállításai sikeresen frissültek"
+
+#: app/Http/Controllers/TemplateController.php:266
+msgid "You do not have access to this board"
+msgstr "Ön nem fér hozzá ehhez a táblához"
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:19
+msgid "Make Board Template"
+msgstr "Táblasablon létrehozása"
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:20
+msgid ""
+"Convert an active board in place into a reusable template. Requires board-"
+"manager permission. To build a new template, first create a board and "
+"populate its stages, labels and tasks using the existing tools, then call "
+"this tool. Does not duplicate the board. Repeated calls keep template status"
+" enabled."
+msgstr "Alakítson át egy aktív táblát helyben újrafelhasználható sablonná. Ehhez táblakezelői jogosultság szükséges. Új sablonminta létrehozásához először hozzon létre egy táblát, és a meglévő eszközökkel adjon hozzá szakaszokat, címkéket és feladatokat, majd hívja meg ezt az eszközt. A tábla nem duplikálódik. Ismételt hívások esetén a sablonminta állapota bekapcsolva marad."
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:25
+msgid ""
+"Optional template description. Omit or pass an empty string to preserve the "
+"existing value."
+msgstr "Opcionális sablonleírás. Hagyja ki, vagy adjon meg üres karakterláncot a meglévő érték megőrzéséhez."
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:26
+msgid ""
+"Optional template category. Omit or pass an empty string to preserve the "
+"existing value."
+msgstr "Opcionális sablonkategória. Hagyja ki, vagy adjon meg üres karakterláncot a meglévő érték megőrzéséhez."
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:36
+msgid "Make Task Template"
+msgstr "Feladatsablon létrehozása"
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:37
+msgid ""
+"Save an active top-level task in place as a reusable template. Requires "
+"write access to its board. To build a new template, first create a task and "
+"populate its content and subtasks using the existing tools, then call this "
+"tool. Does not duplicate the task. Repeated calls keep template status "
+"enabled."
+msgstr "Mentse el helyben az aktív, legfelső szintű feladatot újrafelhasználható sablonként. Ehhez írási hozzáférés szükséges a táblához. Új sablonminta létrehozásához először hozzon létre egy feladatot, majd a meglévő eszközökkel adjon hozzá tartalmat és alfeladatokat. A feladat nem duplikálódik. Ismételt hívások esetén a sablonminta állapota bekapcsolva marad."
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:52
+msgid "Get Subtasks"
+msgstr "Alfeladatok lekérése"
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:53
+msgid "List subtask groups and subtasks for a task. Returns assignees inline."
+msgstr "Listázza egy feladat alfeladatcsoportjait és alfeladatait. A hozzárendelt felhasználókat soron belül jeleníti meg."
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:70
+msgid "Create Subtask Group"
+msgstr "Alfeladatcsoport létrehozása"
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:71
+msgid "Create a subtask group for a task."
+msgstr "Hozzon létre alfeladatcsoportot egy feladathoz."
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:88
+msgid "Create Subtask"
+msgstr "Alfeladat létrehozása"
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:89
+msgid "Create a subtask inside an existing subtask group."
+msgstr "Hozzon létre alfeladatot egy meglévő alfeladatcsoportban."
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:108
+msgid "Assign Subtask"
+msgstr "Alfeladat hozzárendelése"
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:109
+msgid ""
+"Add, remove, or sync assignees on a subtask. Newly added user ids must "
+"identify existing WordPress users who are board members or global "
+"administrators. Assignees are also task watchers."
+msgstr "Adjon hozzá, távolítson el vagy szinkronizáljon egy alfeladathoz rendelt felhasználókat. Az újonnan hozzáadott felhasználói azonosítóknak (ID-knek) olyan meglévő WordPress-felhasználókat kell azonosítaniuk, akik a tábla tagjai vagy globális adminisztrátorok. A hozzárendelt felhasználók egyben a feladat figyelői is."
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:128
+msgid "Update Subtask"
+msgstr "Alfeladat frissítése"
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:129
+msgid ""
+"Update subtask fields and optionally move it to another subtask group or "
+"position."
+msgstr "Frissítse az alfeladat mezőit, és igény szerint helyezze át egy másik alfeladatcsoportba vagy pozícióba."
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:152
+msgid "Add Task Assignee"
+msgstr "Feladathoz rendelt felhasználó hozzáadása"
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:153
+msgid ""
+"Add one or more assignees to a task without removing existing assignees. "
+"User ids must identify existing WordPress users who are board members or "
+"global administrators."
+msgstr "Adjon hozzá egy vagy több hozzárendelt felhasználót egy feladathoz a már hozzárendelt felhasználók eltávolítása nélkül. A felhasználói azonosítóknak (ID-knek) olyan meglévő WordPress-felhasználókat kell azonosítaniuk, akik a tábla tagjai vagy globális adminisztrátorok."
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:171
+msgid "Remove Task Assignee"
+msgstr "Feladathoz rendelt felhasználó eltávolítása"
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:172
+msgid "Remove one or more assignees from a task."
+msgstr "Távolítson el egy vagy több hozzárendelt felhasználót egy feladatról."
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:190
+msgid "Delete Subtask"
+msgstr "Alfeladat törlése"
+
+#: app/Modules/MCP/ProAbilitiesRegistrar.php:191
+msgid ""
+"Permanently delete a subtask. Detaches its watchers and group link, and re-"
+"counts the parent task. This cannot be undone."
+msgstr "Alfeladat végleges törlése. Leválasztja róla a figyelőket, megszünteti a csoportkapcsolatot, majd újraszámolja a szülőfeladat részfeladatainak számát. Ez a művelet nem vonható vissza."
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:70
+msgid "Subtasks cannot own subtask groups"
+msgstr "Az alfeladatokhoz nem tartozhatnak alfeladatcsoportok"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:75
+msgid "Subtask group title is required"
+msgstr "Az alfeladatcsoport címe kötelező"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:96
+msgid "Create subtasks from a parent task, not another subtask"
+msgstr "Alfeladatokat szülőfeladatból hozzon létre, ne másik alfeladatból"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:106
+msgid "Subtask title is required"
+msgstr "Az alfeladat címe kötelező"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:131
+msgid "Invalid assignment mode"
+msgstr "Hibás hozzárendelési mód"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:150
+msgid "Subtask assignees have been updated"
+msgstr "Az alfeladat felelősei frissültek"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:183
+msgid "Subtask has been deleted"
+msgstr "Az alfeladat törölve"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:245
+msgid "Subtask has been updated"
+msgstr "Az alfeladat frissült"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:251
+msgid "Task assignees have been added"
+msgstr "A feladat felelősei hozzáadva"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:256
+msgid "Task assignees have been removed"
+msgstr "A feladat felelősei eltávolítva"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:290
+msgid "Provide board_id and task id"
+msgstr "Adja meg a board_id-t és a feladatazonosítót"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:299
+msgid "Task not found on this board"
+msgstr "A feladat nem található ezen a táblán"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:306
+msgid "Provided task is not a subtask"
+msgstr "A megadott feladat nem alfeladat"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:328
+msgid "Provide a valid subtask group id"
+msgstr "Adjon meg egy érvényes alfeladatcsoport-ID-t"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:337
+msgid "Subtask group not found for this task"
+msgstr "Az alfeladatcsoport nem található ennél a feladatnál"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:396
+msgid "Provide user_id or user_ids"
+msgstr "Adja meg a user_id vagy a user_ids értékét"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:401
+msgid "User not found"
+msgstr "A felhasználó nem található"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:428
+msgid "Some users are not members of this board"
+msgstr "Néhány felhasználó nem tagja ennek a táblának"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:475
+msgid "Invalid subtask status"
+msgstr "Hibás alfeladat-állapot"
+
+#: app/Modules/MCP/Tools/ProTaskTools.php:481
+msgid "Invalid subtask priority"
+msgstr "Hibás alfeladat-prioritás"
+
+#: app/Modules/MCP/Tools/TemplateTools.php:71
+msgid "You do not have permission to convert this task to a template"
+msgstr "Nincs jogosultsága arra, hogy ezt a feladatot sablonná alakítsa"
+
+#: app/Modules/MCP/Tools/TemplateTools.php:81
+msgid "Active task not found on this board"
+msgstr "Az aktív feladat nem található ezen a táblán"
+
+#: app/Modules/MCP/Tools/TemplateTools.php:85
+msgid "Subtasks cannot be saved as templates"
+msgstr "Az alfeladatok nem menthetők sablonmintaként"
+
+#: app/Modules/MCP/Tools/TemplateTools.php:110
+msgid "Active board not found"
+msgstr "Az aktív tábla nem található"
+
+#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:35
+#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:54
+#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:97
+#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:155
+msgid "Time tracking is disabled"
+msgstr "Az időkövetés ki van kapcsolva"
+
+#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:43
 msgid "Estimated time has been updated"
 msgstr "A becsült idő frissítve lett"
 
-#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:44
+#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:67
 msgid "Time track not found"
 msgstr "Időkövetés nem található"
 
-#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:52
+#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:75
+msgid "You do not have permission to delete this time track"
+msgstr "Nincs jogosultsága ennek az időkövetésnek a törléséhez"
+
+#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:83
 msgid "Selected time track has been deleted"
 msgstr "A kiválasztott időkövetés törölve lett"
 
-#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:82
+#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:122
 msgid "Please provide valid hours and minutes"
 msgstr "Kérjük, adjon meg érvényes órát és percet"
 
-#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:104
+#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:144
 msgid "You have successfully submitted your working time"
 msgstr "Sikeresen beküldte a munkaidejét"
 
-#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:140
+#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:181
+msgid "You do not have permission to edit this time track"
+msgstr "Nincs jogosultsága ennek az időkövetésnek a szerkesztéséhez"
+
+#: app/Modules/TimeTracking/Controllers/TimeTrackController.php:196
 msgid "Selected Time-track has been updated"
 msgstr "A kiválasztott időkövetés frissítve lett"
 
-#: app/Services/AttachmentService.php:18
+#: app/Services/AsanaImporter.php:112
+msgid "Imported"
+msgstr "Importálva"
+
+#: app/Services/AsanaImporter.php:202
+msgid "Imported from Asana"
+msgstr "Importálva az Asanából"
+
+#: app/Services/AsanaImporter.php:455
+msgid "Project not found or not accessible."
+msgstr "A projekt nem található, vagy nincs hozzáférése."
+
+#: app/Services/AsanaImporter.php:590
+msgid "Invalid Personal Access Token. Please check and try again."
+msgstr "Érvénytelen személyes hozzáférési token. Kérjük, ellenőrizze, és próbálja meg újra."
+
+#: app/Services/AsanaImporter.php:593
+msgid ""
+"No access to this resource. Your token may lack the required permissions."
+msgstr "Nincs hozzáférése ehhez az erőforráshoz. Előfordulhat, hogy a token nem rendelkezik a szükséges jogosultságokkal."
+
+#: app/Services/AsanaImporter.php:596
+msgid "Resource not found on Asana."
+msgstr "Az erőforrás nem található az Asanában."
+
+#: app/Services/AsanaImporter.php:599
+msgid "Asana rate limit hit. Please try again in a minute."
+msgstr "Az Asana API elérte a kérési korlátot. Kérjük, próbálja meg újra egy perc múlva."
+
+#: app/Services/AsanaImporter.php:605
+msgid "Asana API request failed."
+msgstr "Az Asana API-kérés sikertelen."
+
+#: app/Services/AsanaImporter.php:612
+msgid "Asana API request failed after retries."
+msgstr "Az Asana API-kérés az újrapróbálkozások után is sikertelen."
+
+#: app/Services/AttachmentService.php:176
+#: app/Services/AttachmentService.php:201
+msgid "Attachment not found"
+msgstr "A csatolmány nem található"
+
+#: app/Services/AttachmentService.php:227
 msgid "Task doesn't exist"
 msgstr "A feladat nem létezik"
 
-#: app/Services/HelperInstaller.php:81 app/Services/HelperInstaller.php:82
+#: app/Services/CustomFieldService.php:297
+msgid "Custom field not found"
+msgstr "Az egyéni mező nem található"
+
+#: app/Services/DependencyService.php:30
+msgid "A task cannot depend on itself."
+msgstr "Egy feladat nem függhet saját magától."
+
+#: app/Services/DependencyService.php:38
+msgid "One or both tasks were not found in this board."
+msgstr "Az egyik vagy mindkét feladat nem található ezen a táblán."
+
+#: app/Services/DependencyService.php:48
+msgid "This dependency already exists."
+msgstr "Ez a függőség már létezik."
+
+#: app/Services/DependencyService.php:53
+msgid "Cannot create dependency: it would create a circular reference."
+msgstr "A függőség nem hozható létre: körkörös hivatkozást eredményezne."
+
+#: app/Services/DependencyService.php:68
+msgid "Dependency added successfully."
+msgstr "A függőség sikeresen hozzáadva."
+
+#: app/Services/DependencyService.php:104
+msgid "Dependency not found."
+msgstr "A függőség nem található."
+
+#: app/Services/DependencyService.php:119
+msgid "Dependency removed successfully."
+msgstr "A függőség sikeresen eltávolítva."
+
+#: app/Services/Helper.php:31
+msgid ""
+"The recurring task timezone is not supported. Please select the site "
+"timezone or check the site timezone settings."
+msgstr "Az ismétlődő feladat időzónája nem támogatott. Kérjük, válassza ki a webhely időzónáját, vagy ellenőrizze a webhely időzóna-beállításait."
+
+#: app/Services/Helper.php:48 app/Services/Helper.php:78
+msgid "Please provide a valid date."
+msgstr "Kérjük, adjon meg egy érvényes dátumot."
+
+#: app/Services/HelperInstaller.php:24
+msgid "Open WordPress Updates"
+msgstr "WordPress-frissítések megnyitása"
+
+#: app/Services/HelperInstaller.php:50
+msgid ""
+"Attachment uploads require the upload-protection changes in Fluent Boards "
+"(Core). Install the matching Core code alongside Pro, then retry. Contact "
+"your site administrator if you cannot update plugins."
+msgstr "A csatolmányok feltöltéséhez szükség van a Fluent Boards (Core) feltöltésvédelmi módosításaira. Telepítse a Pro verzióval megegyező Core-kódot, majd próbálja újra. Ha nem tudja frissíteni a bővítményeket, forduljon a webhely adminisztrátorához."
+
+#: app/Services/HelperInstaller.php:56
+msgid "You do not have permission to install plugins"
+msgstr "Nincs jogosultsága bővítmények telepítéséhez"
+
+#: app/Services/HelperInstaller.php:61 app/Services/HelperInstaller.php:79
+msgid "The plugins have been installed successfully"
+msgstr "A bővítmények telepítése sikerült"
+
+#: app/Services/HelperInstaller.php:75
+msgid "Sorry, we could not install the required plugin. Please try again."
+msgstr "Sajnáljuk, nem sikerült telepíteni a szükséges bővítményt. Kérjük, próbálja meg újra."
+
+#: app/Services/HelperInstaller.php:99
+msgid ""
+"Thank you for installing Fluent Boards Pro. Please configure Fluent Boards."
+msgstr "Köszönjük, hogy telepítette a Fluent Boards Pro bővítményt. Kérjük, állítsa be a Fluent Boards bővítményt."
+
+#: app/Services/HelperInstaller.php:100
+msgid "Configure Fluent Boards"
+msgstr "Fluent Boards beállítása"
+
+#: app/Services/HelperInstaller.php:116 app/Services/HelperInstaller.php:117
 msgid "Fluent Boards"
 msgstr "Fluent Boards"
 
-#: app/Services/HelperInstaller.php:93
+#: app/Services/HelperInstaller.php:128
 msgid "Install FluentBoards Core Plugin"
-msgstr "Telepítse a FluentBoards Core bővítményt"
+msgstr "FluentBoards Core bővítmény telepítése"
 
-#: app/Services/HelperInstaller.php:95
+#: app/Services/HelperInstaller.php:130
 msgid "Install FluentCRM & Core Plugin"
-msgstr "Telepítse a FluentCRM és a Core bővítményt"
+msgstr "FluentCRM és Core bővítmény telepítése"
 
-#: app/Services/HelperInstaller.php:111
+#: app/Services/HelperInstaller.php:146
 msgid "Welcome to FluentBoards"
 msgstr "Üdvözöljük a FluentBoardsban"
 
-#: app/Services/HelperInstaller.php:112
+#: app/Services/HelperInstaller.php:147
 msgid ""
 "Thank you for installing Fluent Boards Pro Plugin. Fluent Boards require "
 "base plugin & FluentCRM to get you started."
-msgstr ""
-"Köszönjük, hogy telepítette a Fluent Boards Pro bővítményt. A Fluent Boards "
-"használatához az alap bővítmény & a FluentCRM szükséges."
+msgstr "Köszönjük, hogy telepítette a Fluent Boards Pro bővítményt. A Fluent Boards elindításához az alapbővítményre és a FluentCRM-re van szükség."
 
-#: app/Services/PluginManager/LicenseManager.php:42
-msgid "View FluentCRM documentation"
-msgstr "Tekintse meg a FluentCRM dokumentációját"
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:43
+msgid "FluentBoards"
+msgstr "FluentBoards"
 
-#: app/Services/PluginManager/LicenseManager.php:42
-msgid "Docs"
-msgstr "Dokumentáció"
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:44
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:62
+msgid "Create Board from Template"
+msgstr "Tábla létrehozása sablonból"
 
-#: app/Services/PluginManager/LicenseManager.php:43
-msgid "Visit Support"
-msgstr "Támogatás felkeresése"
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:45
+msgid "Create a new board from a user template"
+msgstr "Új tábla létrehozása felhasználói sablonból"
 
-#: app/Services/PluginManager/LicenseManager.php:43
-msgid "Help & Support"
-msgstr "Súgó & Támogatás"
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:63
+msgid "Select a user template to create a new board"
+msgstr "Válasszon ki egy felhasználói sablont új tábla létrehozásához"
 
-#: app/Services/PluginManager/LicenseManager.php:44
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:71
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:72
+msgid "Select Template"
+msgstr "Sablonminta kiválasztása"
+
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:77
+msgid "Board Title"
+msgstr "Tábla címe"
+
+#. translators: %s: Default board title containing a FluentCRM smart code.
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:81
+#, php-format
+msgid ""
+"Defaults to %s. FluentCRM smart codes are supported. The new board ID is "
+"appended to every title."
+msgstr "Alapértelmezés szerint %s. A FluentCRM intelligens kódjai is használhatók. Az új tábla ID-je minden cím végére kerül."
+
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:103
+msgid "Please select a valid user board template."
+msgstr "Kérjük, válasszon ki egy érvényes felhasználói táblasablont."
+
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:140
+msgid "Funnel skipped because no board template was selected."
+msgstr "A tölcsér kimaradt, mert nem választott táblasablont."
+
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:151
+msgid ""
+"Funnel skipped because the selected board template is no longer available."
+msgstr "A tölcsér kimaradt, mert a kiválasztott táblasablon már nem érhető el."
+
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:161
+msgid "Funnel skipped because the CRM contact is unavailable."
+msgstr "A tölcsér kimaradt, mert a CRM-névjegy nem érhető el."
+
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:184
+msgid "New Board"
+msgstr "Új tábla"
+
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:212
+msgid "The created board title could not be updated."
+msgstr "A létrehozott tábla címét nem sikerült frissíteni."
+
+#. translators: %s: FluentCRM contact email smart code.
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:242
+#, php-format
+msgid "New Board - %s"
+msgstr "Új tábla – %s"
+
+#. translators: %s is the error message
+#: app/Services/Integrations/FluentCRM/CreateBoardFromTemplateAction.php:332
+#, php-format
+msgid "Board creation failed: %s"
+msgstr "A tábla létrehozása sikertelen: %s"
+
+#. translators: %1$s is the plugin name, %2$s is the expiry date, %3$s and
+#. %4$s wrap the renewal link
+#: app/Services/PluginManager/FluentLicensing.php:337
+#, php-format
+msgid "Your %1$s license expired on %2$s. Please %3$srenew your license%4$s."
+msgstr "Az Ön %1$s licence lejárt; a lejárat dátuma: %2$s. Kérjük, %3$sújítsa meg a licencét%4$s."
+
+#: app/Services/PluginManager/PluginInstaller.php:96
+msgid "Invalid plugin zip URL."
+msgstr "A bővítmény ZIP-fájljának URL-je hibás."
+
+#: app/Services/PluginManager/PluginInstaller.php:134
+msgid "Plugin package installation failed."
+msgstr "A bővítménycsomag telepítése sikertelen."
+
+#: app/Services/PluginManager/PluginUpdater.php:74
 msgid "Check Update"
 msgstr "Frissítés ellenőrzése"
 
-#: app/Services/PluginManager/LicenseManager.php:341
-msgid "Click Here to purchase another license"
-msgstr "Kattintson ide egy újabb licenc megvásárlásához"
+#: app/Services/PluginManager/PluginUpdater.php:210
+msgid "No data found for this plugin"
+msgstr "Ehhez a bővítményhez nem találhatók adatok"
+
+#: app/Services/ProTaskService.php:416
+msgid ""
+"Cannot convert task to subtask: Task and parent task must be on the same "
+"board"
+msgstr "A feladat nem alakítható részfeladattá: a feladatnak és a szülőfeladatnak ugyanazon a táblán kell szerepelnie"
+
+#: app/Services/RemoteUrlParser.php:69 app/Services/RemoteUrlParser.php:87
+msgid "Invalid URL"
+msgstr "Érvénytelen URL"
+
+#: app/Services/RemoteUrlParser.php:128
+msgid "URL not found. Response returned a non-200 status code for this URL."
+msgstr "Az URL nem található. Az URL-re küldött válasz nem 200-as állapotkódot adott vissza."
+
+#: app/Services/RemoteUrlParser.php:138
+msgid "Unable to retrieve body from response at this URL."
+msgstr "Nem sikerült lekérni a választörzset erről az URL-ről."
+
+#: app/Services/SubtaskService.php:40
+msgid "No subtasks provided."
+msgstr "Nem adott meg részfeladatokat."
+
+#: app/Services/SubtaskService.php:113
+msgid ""
+"A compatible Fluent Boards version is required to delete this subtask group."
+msgstr "A részfeladat-csoport törléséhez kompatibilis Fluent Boards-verzió szükséges."
+
+#: app/Services/SubtaskService.php:133
+msgid "Subtask group could not be deleted."
+msgstr "A részfeladat-csoportot nem sikerült törölni."
+
+#: app/Services/TemplateService.php:94 app/Services/TemplateService.php:144
+msgid "Built-in template catalog is invalid"
+msgstr "A beépített sablonok katalógusa hibás"
+
+#: app/Services/TemplateService.php:181
+msgid "Built-in template could not be downloaded"
+msgstr "A beépített sablont nem sikerült letölteni"
+
+#: app/Services/TemplateService.php:186
+msgid "Built-in template exceeds the size limit"
+msgstr "A beépített sablon mérete meghaladja a méretkorlátot"
+
+#: app/Services/TemplateService.php:191
+msgid "Built-in template JSON is invalid"
+msgstr "A beépített sablon JSON-formátuma hibás"
+
+#: app/Services/TemplateService.php:340 app/Services/TemplateService.php:820
+#: app/Services/TemplateService.php:1409
+msgid "Template not found"
+msgstr "A sablonminta nem található"
+
+#: app/Services/TemplateService.php:348
+msgid "Another template save is in progress. Please try again."
+msgstr "Egy másik sablon mentése folyamatban van. Kérjük, próbálja újra."
+
+#: app/Services/TemplateService.php:366
+msgid "Template could not be saved"
+msgstr "A sablont nem sikerült menteni"
+
+#: app/Services/TemplateService.php:591
+msgid "At least one stage is required"
+msgstr "Legalább egy szakasz megadása kötelező"
+
+#: app/Services/TemplateService.php:1173 app/Services/TemplateService.php:1191
+msgid "Default Subtask Group"
+msgstr "Alapértelmezett részfeladat-csoport"
+
+#: app/Services/TemplateService.php:1328
+msgid "Task copy state could not be prepared"
+msgstr "Nem sikerült előkészíteni a feladat másolási állapotát"
+
+#: app/Services/TemplateService.php:1516
+msgid "Built-in template export is invalid"
+msgstr "A beépített sablon exportja hibás"
+
+#: app/Services/TemplateService.php:1776
+msgid "Task copy state is unavailable"
+msgstr "A feladat másolási állapota nem érhető el"
+
+#: app/Services/TemplateService.php:1930
+msgid "Task copy state could not be updated"
+msgstr "Nem sikerült frissíteni a feladat másolási állapotát"
+
+#: app/Services/TemplateService.php:1936
+msgid "Task copy state could not be cleared"
+msgstr "Nem sikerült törölni a feladat másolási állapotát"
+
+#: app/Services/TemplateService.php:2042
+msgid "Task copy could not be scheduled"
+msgstr "Nem sikerült ütemezni a feladat másolását"
+
+#: app/Services/TrelloImporter.php:113 app/Services/TrelloImporter.php:187
+msgid "Imported Trello Board"
+msgstr "Importált Trello-tábla"
+
+#: app/Services/TrelloImporter.php:144
+msgid "Untitled Trello card"
+msgstr "Névtelen Trello-kártya"
+
+#: app/Services/TrelloImporter.php:205
+msgid "Untitled Trello checklist item"
+msgstr "Névtelen Trello-ellenőrzőlista-tétel"
+
+#: app/Services/TrelloImporter.php:234 app/Services/TrelloImporter.php:240
+msgid "Trello Checklist"
+msgstr "Trello-ellenőrzőlista"
+
+#: app/Services/TrelloImporter.php:280
+msgid "Untitled Trello list"
+msgstr "Névtelen Trello-lista"
+
+#: app/Services/TrelloImporter.php:426
+msgid "Untitled Trello label"
+msgstr "Névtelen Trello-címke"
+
+#: app/Services/TrelloImporter.php:450
+msgid "Trello Custom Field"
+msgstr "Trello egyéni mező"
+
+#: app/Services/TrelloImporter.php:601
+msgid "Trello attachment"
+msgstr "Trello-csatolmány"
+
+#: app/Services/TrelloImporter.php:643
+msgid "Trello user"
+msgstr "Trello-felhasználó"
+
+#: app/Services/TrelloImporter.php:707
+msgid "A Trello member"
+msgstr "Egy Trello-tag"
+
+#. translators: %1$s is the Trello member's name, %2$s is the attachment name
+#: app/Services/TrelloImporter.php:712
+#, php-format
+msgid "%1$s added Trello attachment %2$s"
+msgstr "%1$s hozzáadta a Trello-csatolmányt: %2$s"
+
+#: app/Services/TrelloImporter.php:714 app/Services/TrelloImporter.php:723
+msgid "Untitled attachment"
+msgstr "Névtelen csatolmány"
+
+#. translators: %1$s is the Trello member's name, %2$s is the attachment name
+#: app/Services/TrelloImporter.php:721
+#, php-format
+msgid "%1$s removed Trello attachment %2$s"
+msgstr "%1$s eltávolította a Trello-csatolmányt: %2$s"
+
+#: app/Services/TrelloImporter.php:728
+msgid "a member"
+msgstr "egy tag"
+
+#. translators: %1$s is the Trello member's name, %2$s is the member added
+#: app/Services/TrelloImporter.php:732
+#, php-format
+msgid "%1$s added %2$s to this Trello card"
+msgstr "%1$s hozzáadta ehhez a Trello-kártyához: %2$s"
+
+#. translators: %1$s is the Trello member's name, %2$s is the member removed
+#: app/Services/TrelloImporter.php:734
+#, php-format
+msgid "%1$s removed %2$s from this Trello card"
+msgstr "%1$s eltávolította erről a Trello-kártyáról: %2$s"
+
+#: app/Services/TrelloImporter.php:741
+msgid "a label"
+msgstr "egy címke"
+
+#. translators: %1$s is the Trello member's name, %2$s is the label name
+#: app/Services/TrelloImporter.php:745
+#, php-format
+msgid "%1$s added Trello label %2$s"
+msgstr "%1$s hozzáadta a Trello-címkét: %2$s"
+
+#. translators: %1$s is the Trello member's name, %2$s is the label name
+#: app/Services/TrelloImporter.php:747
+#, php-format
+msgid "%1$s removed Trello label %2$s"
+msgstr "%1$s eltávolította a Trello-címkét: %2$s"
+
+#. translators: %1$s is the Trello member's name, %2$s is the previous list,
+#. %3$s is the new list
+#: app/Services/TrelloImporter.php:767
+#, php-format
+msgid "%1$s moved this Trello card from %2$s to %3$s"
+msgstr "%1$s áthelyezte ezt a Trello-kártyát innen: %2$s, ide: %3$s"
+
+#: app/Services/TrelloImporter.php:769 app/Services/TrelloImporter.php:770
+msgid "another list"
+msgstr "másik lista"
+
+#. translators: %s is the Trello member's name
+#: app/Services/TrelloImporter.php:776
+#, php-format
+msgid "%s changed the Trello due date"
+msgstr "%s módosította a Trello határidejét"
+
+#. translators: %s is the Trello member's name
+#: app/Services/TrelloImporter.php:781
+#, php-format
+msgid "%s renamed this Trello card"
+msgstr "%s átnevezte ezt a Trello-kártyát"
+
+#. translators: %s is the Trello member's name
+#: app/Services/TrelloImporter.php:786
+#, php-format
+msgid "%s changed this Trello card description"
+msgstr "%s módosította ennek a Trello-kártyának a leírását"
+
+#. translators: %s is the Trello member's name
+#: app/Services/TrelloImporter.php:791
+#, php-format
+msgid "%s changed this Trello card archive state"
+msgstr "%s módosította ennek a Trello-kártyának az archiválási állapotát"
+
+#: app/Services/TrelloImporter.php:1008
+msgid "Background imports are not available on this site."
+msgstr "A háttérben végzett importálás nem érhető el ezen a webhelyen."
+
+#: app/Services/TrelloImporter.php:1020
+msgid "Preparing Trello import..."
+msgstr "Trello-importálás előkészítése..."
+
+#: app/Services/TrelloImporter.php:1048
+msgid "Could not schedule the Trello import."
+msgstr "Nem sikerült beállítani a Trello-importálás időzítését."
+
+#: app/Services/TrelloImporter.php:1059
+msgid "Trello import session was not found."
+msgstr "A Trello-importálási munkamenet nem található."
+
+#: app/Services/TrelloImporter.php:1064
+msgid "You do not have access to this Trello import session."
+msgstr "Ön nem fér hozzá ehhez a Trello-importálási munkamenethez."
+
+#: app/Services/TrelloImporter.php:1073
+msgid "The imported board no longer exists."
+msgstr "Az importált tábla már nem létezik."
+
+#: app/Services/TrelloImporter.php:1148 app/Services/TrelloImporter.php:1967
+#: app/Services/TrelloImporter.php:2263
+msgid "The paused Trello import has expired."
+msgstr "A szüneteltetett Trello-importálás lejárt."
+
+#: app/Services/TrelloImporter.php:1162
+msgid ""
+"The Trello import was interrupted. The board may be partially imported. "
+"Restart the import."
+msgstr "A Trello-importálás megszakadt. Előfordulhat, hogy a tábla importálása nem teljes. Indítsa újra az importálást."
+
+#: app/Services/TrelloImporter.php:1187
+msgid "Could not save the Trello import. Please restart the import."
+msgstr "Nem sikerült menteni a Trello-importálást. Kérjük, indítsa újra az importálást."
+
+#: app/Services/TrelloImporter.php:1227
+msgid "The Trello import worker lost its database lock."
+msgstr "A Trello-importálási folyamat elveszítette az adatbázis zárolását."
+
+#: app/Services/TrelloImporter.php:1239
+msgid "Could not schedule Trello import recovery."
+msgstr "Nem sikerült beállítani a Trello-importálás helyreállításának időzítését."
+
+#: app/Services/TrelloImporter.php:1260
+msgid "Fetching Trello board data..."
+msgstr "Trello-tábla adatainak lekérése..."
+
+#: app/Services/TrelloImporter.php:1333
+msgid "Could not save the Trello import batch."
+msgstr "Nem sikerült menteni a Trello-importálási köteget."
+
+#: app/Services/TrelloImporter.php:1341
+msgid "Importing Trello cards..."
+msgstr "Trello-kártyák importálása..."
+
+#: app/Services/TrelloImporter.php:1394
+msgid "The Trello import progress is invalid. Restart the import."
+msgstr "A Trello-importálás előrehaladása hibás. Indítsa újra az importálást."
+
+#: app/Services/TrelloImporter.php:1408 app/Services/TrelloImporter.php:1421
+#: app/Services/TrelloImporter.php:1425
+msgid "The Trello import batch is missing. Restart the import."
+msgstr "Hiányzik a Trello-importálási köteg. Indítsa újra az importálást."
+
+#: app/Services/TrelloImporter.php:1414
+msgid "The Trello import batch is invalid."
+msgstr "A Trello-importálási köteg hibás."
+
+#: app/Services/TrelloImporter.php:1437
+msgid "The Trello import checkpoint is invalid."
+msgstr "A Trello-importálási ellenőrzőpont hibás."
+
+#: app/Services/TrelloImporter.php:1445
+msgid "Trello did not return every requested card. Restart the import."
+msgstr "A Trello nem adta vissza az összes kért kártyát. Indítsa újra az importálást."
+
+#: app/Services/TrelloImporter.php:1466
+msgid "Could not save the Trello card."
+msgstr "Nem sikerült menteni a Trello-kártyát."
+
+#: app/Services/TrelloImporter.php:1472
+msgid "Could not save the Trello card checkpoint."
+msgstr "Nem sikerült menteni a Trello-kártya ellenőrzőpontját."
+
+#. translators: %1$d is the number of cards imported so far, %2$d is the total
+#. number of cards
+#: app/Services/TrelloImporter.php:1494
+#, php-format
+msgid "Imported %1$d of %2$d Trello cards..."
+msgstr "A(z) %2$d Trello-kártyából %1$d importálva..."
+
+#: app/Services/TrelloImporter.php:1586
+msgid "Importing Trello cover images..."
+msgstr "Trello-borítóképek importálása..."
+
+#: app/Services/TrelloImporter.php:1721
+msgid "You do not have access to this Trello import board."
+msgstr "Ön nem fér hozzá ehhez a Trello-importálási táblához."
+
+#: app/Services/TrelloImporter.php:1729
+msgid "API Key and Token are required to retry covers."
+msgstr "A borítóképek újrapróbálásához API-kulcs és token megadása kötelező."
+
+#: app/Services/TrelloImporter.php:1765
+msgid "The Trello import batch could not be read or is incomplete."
+msgstr "A Trello-importálási köteg nem olvasható, vagy hiányos."
+
+#: app/Services/TrelloImporter.php:1789
+msgid "Board imported successfully from Trello"
+msgstr "A tábla importálása sikeresen megtörtént a Trellóból"
+
+#: app/Services/TrelloImporter.php:1946
+msgid "Could not save the Trello import progress."
+msgstr "Nem sikerült menteni a Trello-importálás előrehaladását."
+
+#: app/Services/TrelloImporter.php:2004
+msgid "Could not remove the legacy Trello import folder."
+msgstr "Nem sikerült eltávolítani a régi Trello-importálási mappát."
+
+#: app/Services/TrelloImporter.php:2016
+msgid "Trello import failed."
+msgstr "A Trello-importálás sikertelen."
+
+#: app/Services/TrelloImporter.php:2180
+msgid "Trello resume requires transactional import tables."
+msgstr "A Trello-importálás folytatásához tranzakciókat támogató importálási táblák szükségesek."
+
+#: app/Services/TrelloImporter.php:2184
+msgid "Trello resume requires InnoDB import tables."
+msgstr "A Trello-importálás folytatásához InnoDB-alapú importálási táblák szükségesek."
+
+#: app/Services/TrelloImporter.php:2200
+msgid "Could not start the Trello import transaction."
+msgstr "Nem sikerült elindítani a Trello-importálási tranzakciót."
+
+#: app/Services/TrelloImporter.php:2205
+msgid "Could not confirm the Trello import transaction."
+msgstr "Nem sikerült megerősíteni a Trello-importálási tranzakciót."
+
+#: app/Services/TrelloImporter.php:2229
+msgid "Trello is temporarily unavailable. Retrying the import..."
+msgstr "A Trello átmenetileg nem érhető el. Az importálás újrapróbálása..."
+
+#: app/Services/TrelloImporter.php:2234
+msgid "The Trello import is paused. You can continue within 24 hours."
+msgstr "A Trello-importálás szünetel. 24 órán belül folytathatja."
+
+#: app/Services/TrelloImporter.php:2274
+msgid "Continuing Trello import..."
+msgstr "Trello-importálás folytatása..."
+
+#: app/Services/TrelloImporter.php:2289
+msgid "Invalid API key or token. Please check your credentials."
+msgstr "Hibás API-kulcs vagy token. Kérjük, ellenőrizze a hitelesítő adatait."
+
+#: app/Services/TrelloImporter.php:2290
+msgid "Trello API request failed."
+msgstr "A Trello API-kérés sikertelen."
+
+#: app/Views/register_member_form.php:108
+msgid "Quick Registration Form"
+msgstr "Gyors regisztrációs űrlap"
+
+#: app/Views/register_member_form.php:123
+msgid "First Name"
+msgstr "Keresztnév"
+
+#: app/Views/register_member_form.php:128
+msgid "Last Name"
+msgstr "Vezetéknév"
+
+#: app/Views/register_member_form.php:137
+msgid "Submit"
+msgstr "Küldés"
+
+#: boot/app.php:115
+msgid "View FluentBoards documentation"
+msgstr "A FluentBoards dokumentációjának megtekintése"
+
+#: boot/app.php:115
+msgid "Docs"
+msgstr "Dokumentáció"
+
+#: boot/app.php:116
+msgid "Visit Support"
+msgstr "Támogatás felkeresése"
+
+#: boot/app.php:116
+msgid "Help & Support"
+msgstr "Súgó & Támogatás"
+
+#~ msgid "Invalid JSON."
+#~ msgstr "Érvénytelen JSON."
+
+#~ msgid "Processed and Imported successfully"
+#~ msgstr "Feldolgozva és sikeresen importálva"
+
+#~ msgid "Subtask Group 1"
+#~ msgstr "Részfeladat csoport 1"
+
+#~ msgid "View FluentCRM documentation"
+#~ msgstr "Tekintse meg a FluentCRM dokumentációját"
+
+#~ msgid "Click Here to purchase another license"
+#~ msgstr "Kattintson ide egy újabb licenc megvásárlásához"

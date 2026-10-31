@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce PDF Watermark 1.9.6\n"
+"Project-Id-Version: WooCommerce PDF Watermark 2.1.4\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:50:48+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: WooCommerce PDF Watermark\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.9.6\n"
+"X-Plugin-Version: 2.1.4\n"
 
 #. Plugin Name of the plugin
 #: woocommerce-pdf-watermark.php
@@ -39,7 +39,8 @@ msgstr ""
 "letöltéseire."
 
 #. Author of the plugin
-#: woocommerce-pdf-watermark.php
+#: woocommerce-pdf-watermark.php includes/class-wc-pdf-watermark.php:976
+#: includes/class-wc-settings-pdf-watermark.php:45
 msgid "WooCommerce"
 msgstr "WooCommerce"
 
@@ -49,7 +50,7 @@ msgid "http://www.woocommerce.com/"
 msgstr "http://www.woocommerce.com/"
 
 #: includes/class-wc-pdf-watermark-privacy.php:12
-#: includes/class-wc-pdf-watermark-product-data.php:35
+#: includes/class-wc-pdf-watermark-product-data.php:36
 #: includes/class-wc-settings-pdf-watermark.php:25
 msgid "PDF Watermark"
 msgstr "PDF-vízjel"
@@ -68,336 +69,365 @@ msgstr ""
 "többet arról, hogyan működik ez, beleértve azt is, mit érdemes feltüntetnie "
 "az adatvédelmi szabályzatában.</a>"
 
-#: includes/class-wc-pdf-watermark-product-data.php:55
+#: includes/class-wc-pdf-watermark-product-data.php:56
 msgid "Disable"
 msgstr "Letiltás"
 
-#: includes/class-wc-pdf-watermark-product-data.php:56
+#: includes/class-wc-pdf-watermark-product-data.php:57
 msgid "Disable PDF downloads from this product to be watermarked."
 msgstr "Tiltsa le ennél a terméknél a PDF-letöltések vízjelezését."
 
-#: includes/class-wc-pdf-watermark-product-data.php:65
+#: includes/class-wc-pdf-watermark-product-data.php:66
 msgid "Override"
 msgstr "Felülírás"
 
-#: includes/class-wc-pdf-watermark-product-data.php:66
+#: includes/class-wc-pdf-watermark-product-data.php:67
 msgid "Override the global PDF watermark settings with custom ones."
-msgstr "A globális PDF-vízjel beállítások felülírása egyéni beállításokkal."
+msgstr "A globális PDF-vízjel-beállítások felülbírálása egyéni beállításokkal."
 
-#: includes/class-wc-pdf-watermark-product-data.php:73
-#: includes/class-wc-settings-pdf-watermark.php:54
+#: includes/class-wc-pdf-watermark-product-data.php:74
+#: includes/class-wc-settings-pdf-watermark.php:126
 msgid "Watermark Type"
 msgstr "Vízjel típusa"
 
-#: includes/class-wc-pdf-watermark-product-data.php:75
-#: includes/class-wc-pdf-watermark-product-data.php:168
+#: includes/class-wc-pdf-watermark-product-data.php:76
+#: includes/class-wc-pdf-watermark-product-data.php:190
 msgid ""
 "The type of watermark you would like to apply to the PDF documents, text-"
 "based or image."
-msgstr "A PDF-dokumentumokra alkalmazandó vízjel típusa: szöveges vagy kép."
+msgstr "A PDF-dokumentumokra alkalmazni kívánt vízjel típusa: szöveges vagy képalapú."
 
-#: includes/class-wc-pdf-watermark-product-data.php:77
-#: includes/class-wc-pdf-watermark-product-data.php:170
-#: includes/class-wc-settings-pdf-watermark.php:59
+#: includes/class-wc-pdf-watermark-product-data.php:78
+#: includes/class-wc-pdf-watermark-product-data.php:192
+#: includes/class-wc-settings-pdf-watermark.php:131
 msgid "Image"
 msgstr "Kép"
 
-#: includes/class-wc-pdf-watermark-product-data.php:78
-#: includes/class-wc-pdf-watermark-product-data.php:171
-#: includes/class-wc-settings-pdf-watermark.php:58
+#: includes/class-wc-pdf-watermark-product-data.php:79
+#: includes/class-wc-pdf-watermark-product-data.php:193
+#: includes/class-wc-settings-pdf-watermark.php:130
 msgid "Text"
 msgstr "Szöveg"
 
-#: includes/class-wc-pdf-watermark-product-data.php:86
-#: includes/class-wc-settings-pdf-watermark.php:65
+#: includes/class-wc-pdf-watermark-product-data.php:87
+#: includes/class-wc-settings-pdf-watermark.php:137
 msgid "Watermark Image"
 msgstr "Vízjel képe"
 
-#: includes/class-wc-pdf-watermark-product-data.php:88
-#: includes/class-wc-pdf-watermark-product-data.php:175
+#: includes/class-wc-pdf-watermark-product-data.php:89
+#: includes/class-wc-pdf-watermark-product-data.php:197
 msgid "URL to the image you want to use for the watermark."
 msgstr "A vízjelhez használni kívánt kép URL-je."
 
-#: includes/class-wc-pdf-watermark-product-data.php:95
-#: includes/class-wc-settings-pdf-watermark.php:73
+#: includes/class-wc-pdf-watermark-product-data.php:96
+#: includes/class-wc-settings-pdf-watermark.php:145
 msgid "Watermark Text"
 msgstr "Vízjel szövege"
 
-#: includes/class-wc-pdf-watermark-product-data.php:97
+#: includes/class-wc-pdf-watermark-product-data.php:98
 msgid ""
 "Text you want to use for the watermark. You can use {first_name}, "
 "{last_name}, {email}, {order_number}, {order_date}, {site_name}, {site_url} "
 "tags to insert customer specific data in the watermark."
-msgstr ""
-"A vízjelhez használni kívánt szöveg. A vízjelbe ügyfélspecifikus adatok "
-"beszúrásához használhatja a következő tageket: {first_name}, {last_name}, "
-"{email}, {order_number}, {order_date}, {site_name}, {site_url}."
+msgstr "A vízjelhez használni kívánt szöveg. A vízjelbe a vásárlóra vonatkozó adatok beszúrásához használhatja a következő címkéket: {first_name}, {last_name}, {email}, {order_number}, {order_date}, {site_name}, {site_url}."
 
-#: includes/class-wc-pdf-watermark-product-data.php:158
+#: includes/class-wc-pdf-watermark-product-data.php:105
+#: includes/class-wc-settings-pdf-watermark.php:282
+msgid "Rotation Angle"
+msgstr "Forgatási szög"
+
+#: includes/class-wc-pdf-watermark-product-data.php:107
+#: includes/class-wc-pdf-watermark-product-data.php:205
+msgid ""
+"Rotation angle in degrees (0-360). Leave blank to use global setting. 0 = no"
+" rotation, 45 = diagonal, 90 = vertical."
+msgstr "Forgatási szög fokban (0–360). Hagyja üresen a globális beállítás használatához. 0 = nincs elforgatás, 45 = átlós, 90 = függőleges."
+
+#: includes/class-wc-pdf-watermark-product-data.php:180
 msgid "Disable PDF Watermark:"
 msgstr "PDF-vízjel letiltása:"
 
-#: includes/class-wc-pdf-watermark-product-data.php:158
+#: includes/class-wc-pdf-watermark-product-data.php:180
 msgid "Disable PDF downloads from this variation to be watermarked."
 msgstr "Tiltsa le ennél a variációnál a PDF-letöltések vízjelezését."
 
-#: includes/class-wc-pdf-watermark-product-data.php:164
+#: includes/class-wc-pdf-watermark-product-data.php:186
 msgid "Override PDF Watermark:"
 msgstr "PDF-vízjel felülírása:"
 
-#: includes/class-wc-pdf-watermark-product-data.php:164
+#: includes/class-wc-pdf-watermark-product-data.php:186
 msgid ""
 "Enter the number of days before a download link expires, or leave blank."
-msgstr ""
-"Adja meg, hány nap után járjon le a letöltési hivatkozás, vagy hagyja "
-"üresen."
+msgstr "Adja meg, hány nap után járjon le a letöltési hivatkozás, vagy hagyja üresen."
 
-#: includes/class-wc-pdf-watermark-product-data.php:168
+#: includes/class-wc-pdf-watermark-product-data.php:190
 msgid "Watermark Type:"
 msgstr "Vízjel típusa:"
 
-#: includes/class-wc-pdf-watermark-product-data.php:175
+#: includes/class-wc-pdf-watermark-product-data.php:197
 msgid "Watermark Image:"
 msgstr "Vízjel képe:"
 
-#: includes/class-wc-pdf-watermark-product-data.php:179
+#: includes/class-wc-pdf-watermark-product-data.php:201
 msgid "Watermark Text:"
 msgstr "Vízjel szövege:"
 
-#: includes/class-wc-pdf-watermark-product-data.php:179
+#: includes/class-wc-pdf-watermark-product-data.php:201
 msgid ""
 "Text you want to use for the watermark. You can use {first_name}, "
 "{last_name}, {full_name}, {username}, {email}, {order_number}, {order_date},"
 " {site_name}, {site_url} tags to insert customer specific data in the "
 "watermark."
-msgstr ""
-"A vízjelhez használni kívánt szöveg. A vízjelbe ügyfélspecifikus adatok "
-"beszúrásához használhatja a következő tageket: {first_name}, {last_name}, "
-"{full_name}, {username}, {email}, {order_number}, {order_date}, {site_name},"
-" {site_url}."
+msgstr "A vízjelhez használni kívánt szöveg. A vízjelbe a vásárlóra vonatkozó adatok beszúrásához használhatja a következő címkéket: {first_name}, {last_name}, {full_name}, {username}, {email}, {order_number}, {order_date}, {site_name}, {site_url}."
 
-#: includes/class-wc-pdf-watermark.php:884
+#: includes/class-wc-pdf-watermark-product-data.php:205
+msgid "Rotation Angle:"
+msgstr "Forgatási szög:"
+
+#: includes/class-wc-pdf-watermark.php:317
+#: includes/class-wc-pdf-watermark.php:889
+#: includes/class-wc-pdf-watermarker.php:1441
+#: includes/class-wc-pdf-watermarker.php:1535
+msgid "Invalid download link."
+msgstr "Érvénytelen letöltési hivatkozás."
+
+#: includes/class-wc-pdf-watermark.php:371
+#: includes/class-wc-pdf-watermark.php:1203
+msgid "You have reached the maximum download limit for this file."
+msgstr "Elérte a fájl letöltési korlátját."
+
+#: includes/class-wc-pdf-watermark.php:896
+#: includes/class-wc-pdf-watermarker.php:1542
+msgid "Invalid order."
+msgstr "Érvénytelen rendelés."
+
+#: includes/class-wc-pdf-watermark.php:901
+#: includes/class-wc-pdf-watermarker.php:1547
+msgid "Sorry, you have reached your download limit for this file"
+msgstr "Sajnáljuk, elérte a fájlhoz tartozó letöltési korlátot"
+
+#: includes/class-wc-pdf-watermark.php:905
+#: includes/class-wc-pdf-watermarker.php:1551
+msgid "Sorry, this download has expired"
+msgstr "Sajnáljuk, ez a letöltés lejárt"
+
+#: includes/class-wc-pdf-watermark.php:909
+#: includes/class-wc-pdf-watermarker.php:1555
+msgid "You must be logged in to download files."
+msgstr "A fájlok letöltéséhez be kell jelentkeznie."
+
+#: includes/class-wc-pdf-watermark.php:914
+#: includes/class-wc-pdf-watermarker.php:1560
+msgid "Download error"
+msgstr "Letöltési hiba"
+
+#: includes/class-wc-pdf-watermark.php:1116
 msgid ""
-"The following Downloadable Files are not compatible with PDF Watermarker.  "
+"The following Downloadable Files are not compatible with PDF Watermarker. "
 "You should disable watermarking on this product or choose different files."
-msgstr ""
-"A következő letölthető fájlok nem kompatibilisek a PDF Watermarkerrel.  E "
-"terméknél tiltsa le a vízjelezést, vagy válasszon más fájlokat."
+msgstr "A következő letölthető fájlok nem kompatibilisek a PDF Watermarker bővítménnyel. Kapcsolja ki a vízjelezést ennél a terméknél, vagy válasszon más fájlokat."
 
-#: includes/class-wc-pdf-watermarker.php:83
+#: includes/class-wc-pdf-watermark.php:1179
+msgid "WooCommerce PDF Watermark: "
+msgstr "WooCommerce PDF Watermark: "
+
+#: includes/class-wc-pdf-watermark.php:1182
+msgid ""
+"The watermark text contains Unicode characters, but the selected font does "
+"not support them. Use <strong>DejaVu Sans</strong> or <strong>Arial</strong>"
+" to avoid “?” in the PDF."
+msgstr "A vízjel szövege Unicode-karaktereket tartalmaz, de a kiválasztott betűtípus nem támogatja ezeket. A PDF-ben megjelenő „?” karakterek elkerüléséhez használja a <strong>DejaVu Sans</strong> vagy az <strong>Arial</strong> betűtípust."
+
+#: includes/class-wc-pdf-watermark.php:1295
+#: includes/class-wc-pdf-watermark.php:1318
+msgid "Link Expired"
+msgstr "A link lejárt"
+
+#: includes/class-wc-pdf-watermark.php:1300
+#: includes/class-wc-pdf-watermark.php:1322
+msgid "Limit reached"
+msgstr "Elérte a korlátot"
+
+#: includes/class-wc-pdf-watermarker.php:96
 msgid ""
 "Unable to serve the file at this time.  The file does not support "
 "watermarking."
-msgstr ""
-"A fájl jelenleg nem szolgálható ki.  A fájl nem támogatja a vízjelezést."
+msgstr "A fájl jelenleg nem érhető el. A fájl nem támogatja a vízjelezést."
 
-#: includes/class-wc-pdf-watermarker.php:870
+#: includes/class-wc-pdf-watermarker.php:1226
 msgid ""
 "Error generating PDF, please check error logs. Unable to create output file!"
 msgstr ""
 "Hiba a PDF előállítása során, ellenőrizze a hibanaplókat. Nem sikerült "
 "létrehozni a kimeneti fájlt!"
 
-#: includes/class-wc-settings-pdf-watermark.php:48
+#: includes/class-wc-settings-pdf-watermark.php:120
 msgid "General"
 msgstr "Általános"
 
-#: includes/class-wc-settings-pdf-watermark.php:55
+#: includes/class-wc-settings-pdf-watermark.php:127
 msgid ""
 "The type of watermark you would like to apply to PDF documents, text-based "
 "or image."
-msgstr "A PDF-dokumentumokra alkalmazandó vízjel típusa: szöveges vagy kép."
+msgstr "A PDF-dokumentumokra alkalmazandó vízjel típusa: szöveges vagy képalapú."
 
-#: includes/class-wc-settings-pdf-watermark.php:60
+#: includes/class-wc-settings-pdf-watermark.php:132
 msgid "Both"
 msgstr "Mindkettő"
 
 #. translators: %s: search term
-#: includes/class-wc-settings-pdf-watermark.php:66
+#: includes/class-wc-settings-pdf-watermark.php:138
 #, php-format
 msgid ""
 "The image to apply as a watermark to PDF documents. Upload your image using "
 "the <a href=\"%s\">media uploader</a>. Note: For image watermark on epub "
 "file the reader should have an active internet connection on the device."
-msgstr ""
-"A PDF-dokumentumokra vízjelként alkalmazandó kép. Töltse fel a képét a <a "
-"href=\"%s\">médiafeltöltővel</a>. Megjegyzés: Képes vízjel esetén epub "
-"fájlnál az olvasónak aktív internetkapcsolattal kell rendelkeznie az "
-"eszközön."
+msgstr "A PDF-dokumentumokra vízjelként alkalmazandó kép. Töltse fel a képét a <a href=\"%s\">médiafeltöltővel</a>. Megjegyzés: Képes vízjel esetén EPUB-fájloknál az olvasó eszközének aktív internetkapcsolattal kell rendelkeznie."
 
-#: includes/class-wc-settings-pdf-watermark.php:74
+#: includes/class-wc-settings-pdf-watermark.php:146
 msgid ""
-"The text to use as a watermark on PDF documents. You can use {first_name}, "
-"{last_name}, {username}, {full_name}, {email}, {order_number}, {order_date},"
-" {site_name}, {site_url} tags to insert customer specific data in the "
-"watermark."
-msgstr ""
-"A PDF-dokumentumokon vízjelként használni kívánt szöveg. A vízjelbe "
-"ügyfélspecifikus adatok beszúrásához használhatja a következő tageket: "
-"{first_name}, {last_name}, {username}, {full_name}, {email}, {order_number},"
-" {order_date}, {site_name}, {site_url}."
+"The text to use as a watermark on PDF documents. You can use the following "
+"tags to insert customer specific data in the watermark:"
+msgstr "A PDF-dokumentumokon vízjelként megjelenítendő szöveg. Az alábbi címkékkel vásárlóspecifikus adatokat szúrhat be a vízjelbe:"
 
-#: includes/class-wc-settings-pdf-watermark.php:85
+#: includes/class-wc-settings-pdf-watermark.php:166
 msgid "Styling / Layout"
 msgstr "Stílus / Elrendezés"
 
-#: includes/class-wc-settings-pdf-watermark.php:91
+#: includes/class-wc-settings-pdf-watermark.php:172
 msgid "Font"
 msgstr "Betűtípus"
 
-#: includes/class-wc-settings-pdf-watermark.php:92
+#: includes/class-wc-settings-pdf-watermark.php:173
 msgid ""
-"<b>Note:</b> Both <b>Arial</b> and <b>DejaVu Sans</b> fonts support Greek "
-"characters. If you experience issues with Greek text rendering, please "
-"ensure the correct font is selected."
-msgstr ""
-"<b>Megjegyzés:</b> Az <b>Arial</b> és a <b>DejaVu Sans</b> betűtípus is "
-"támogatja a görög karaktereket. Ha problémát tapasztal a görög szöveg "
-"megjelenítésével, ellenőrizze, hogy a megfelelő betűtípust választotta-e ki."
+"<b>Note:</b> Both <b>Arial</b> and <b>DejaVu Sans</b> fonts supports Unicode"
+" (Cyrillic, Greek, etc.) characters. If you experience issues with Greek "
+"text rendering, please ensure the correct font is selected."
+msgstr "<b>Megjegyzés:</b> Mind az <b>Arial</b>, mind a <b>DejaVu Sans</b> betűtípus támogatja a Unicode-karaktereket (például a cirill és görög karaktereket). Ha problémát tapasztal a görög szöveg megjelenítésével, ellenőrizze, hogy a megfelelő betűtípus van-e kiválasztva."
 
-#: includes/class-wc-settings-pdf-watermark.php:96
-msgid "Times"
-msgstr "Times"
+#: includes/class-wc-settings-pdf-watermark.php:180
+msgid "Upload Custom Font"
+msgstr "Egyéni betűtípus feltöltése"
 
-#: includes/class-wc-settings-pdf-watermark.php:97
-msgid "Helvetica"
-msgstr "Helvetica"
+#: includes/class-wc-settings-pdf-watermark.php:183
+msgid "Upload a .ttf file to support Bulgarian/Unicode."
+msgstr "Töltsön fel egy .ttf fájlt a bolgár nyelv és a Unicode-karakterek támogatásához."
 
-#: includes/class-wc-settings-pdf-watermark.php:98
-msgid "Arial"
-msgstr "Arial"
-
-#: includes/class-wc-settings-pdf-watermark.php:99
-msgid "Courier"
-msgstr "Courier"
-
-#: includes/class-wc-settings-pdf-watermark.php:100
-msgid "Symbol"
-msgstr "Symbol"
-
-#: includes/class-wc-settings-pdf-watermark.php:101
-msgid "ZapfDingbats"
-msgstr "ZapfDingbats"
-
-#: includes/class-wc-settings-pdf-watermark.php:102
-msgid "DejaVu Sans"
-msgstr "DejaVu Sans"
-
-#: includes/class-wc-settings-pdf-watermark.php:108
+#: includes/class-wc-settings-pdf-watermark.php:187
 msgid "Font Size"
 msgstr "Betűméret"
 
-#: includes/class-wc-settings-pdf-watermark.php:116
-#: includes/class-wc-settings-pdf-watermark.php:124
-#: includes/class-wc-settings-pdf-watermark.php:132
+#: includes/class-wc-settings-pdf-watermark.php:195
+#: includes/class-wc-settings-pdf-watermark.php:203
+#: includes/class-wc-settings-pdf-watermark.php:211
 msgid "Font Style"
 msgstr "Betűstílus"
 
-#: includes/class-wc-settings-pdf-watermark.php:119
+#: includes/class-wc-settings-pdf-watermark.php:198
 msgid "Bold"
 msgstr "Félkövér"
 
-#: includes/class-wc-settings-pdf-watermark.php:127
+#: includes/class-wc-settings-pdf-watermark.php:206
 msgid "Italics"
 msgstr "Dőlt"
 
-#: includes/class-wc-settings-pdf-watermark.php:135
+#: includes/class-wc-settings-pdf-watermark.php:214
 msgid "Underline"
 msgstr "Aláhúzott"
 
-#: includes/class-wc-settings-pdf-watermark.php:140
+#: includes/class-wc-settings-pdf-watermark.php:219
 msgid "Font Colour"
 msgstr "Betűszín"
 
-#: includes/class-wc-settings-pdf-watermark.php:147
+#: includes/class-wc-settings-pdf-watermark.php:226
 msgid "Watermark Opacity"
 msgstr "Vízjel átlátszatlansága"
 
-#: includes/class-wc-settings-pdf-watermark.php:149
+#: includes/class-wc-settings-pdf-watermark.php:228
 msgid "0 = fully transparent, 1 = fully opaque."
 msgstr "0 = teljesen átlátszó, 1 = teljesen átlátszatlan."
 
-#: includes/class-wc-settings-pdf-watermark.php:152
+#: includes/class-wc-settings-pdf-watermark.php:231
 msgid "0"
 msgstr "0"
 
-#: includes/class-wc-settings-pdf-watermark.php:153
+#: includes/class-wc-settings-pdf-watermark.php:232
 msgid "0.1"
 msgstr "0.1"
 
-#: includes/class-wc-settings-pdf-watermark.php:154
+#: includes/class-wc-settings-pdf-watermark.php:233
 msgid "0.2"
 msgstr "0.2"
 
-#: includes/class-wc-settings-pdf-watermark.php:155
+#: includes/class-wc-settings-pdf-watermark.php:234
 msgid "0.3"
 msgstr "0.3"
 
-#: includes/class-wc-settings-pdf-watermark.php:156
+#: includes/class-wc-settings-pdf-watermark.php:235
 msgid "0.4"
 msgstr "0.4"
 
-#: includes/class-wc-settings-pdf-watermark.php:157
+#: includes/class-wc-settings-pdf-watermark.php:236
 msgid "0.5"
 msgstr "0.5"
 
-#: includes/class-wc-settings-pdf-watermark.php:158
+#: includes/class-wc-settings-pdf-watermark.php:237
 msgid "0.6"
 msgstr "0.6"
 
-#: includes/class-wc-settings-pdf-watermark.php:159
+#: includes/class-wc-settings-pdf-watermark.php:238
 msgid "0.7"
 msgstr "0.7"
 
-#: includes/class-wc-settings-pdf-watermark.php:160
+#: includes/class-wc-settings-pdf-watermark.php:239
 msgid "0.8"
 msgstr "0.8"
 
-#: includes/class-wc-settings-pdf-watermark.php:161
+#: includes/class-wc-settings-pdf-watermark.php:240
 msgid "0.9"
 msgstr "0.9"
 
-#: includes/class-wc-settings-pdf-watermark.php:162
+#: includes/class-wc-settings-pdf-watermark.php:241
 msgid "1"
 msgstr "1"
 
-#: includes/class-wc-settings-pdf-watermark.php:167
+#: includes/class-wc-settings-pdf-watermark.php:246
 msgid "Horizontal Position"
 msgstr "Vízszintes pozíció"
 
-#: includes/class-wc-settings-pdf-watermark.php:170
+#: includes/class-wc-settings-pdf-watermark.php:249
 msgid "Left"
 msgstr "Bal"
 
-#: includes/class-wc-settings-pdf-watermark.php:171
+#: includes/class-wc-settings-pdf-watermark.php:250
 msgid "Right"
 msgstr "Jobb"
 
-#: includes/class-wc-settings-pdf-watermark.php:172
+#: includes/class-wc-settings-pdf-watermark.php:251
 msgid "Center"
 msgstr "Közép"
 
-#: includes/class-wc-settings-pdf-watermark.php:177
+#: includes/class-wc-settings-pdf-watermark.php:256
 msgid "Vertical Position"
 msgstr "Függőleges pozíció"
 
-#: includes/class-wc-settings-pdf-watermark.php:180
+#: includes/class-wc-settings-pdf-watermark.php:259
 msgid "Top"
 msgstr "Felül"
 
-#: includes/class-wc-settings-pdf-watermark.php:181
+#: includes/class-wc-settings-pdf-watermark.php:260
 msgid "Middle"
 msgstr "Középen"
 
-#: includes/class-wc-settings-pdf-watermark.php:182
+#: includes/class-wc-settings-pdf-watermark.php:261
 msgid "Bottom"
 msgstr "Alul"
 
-#: includes/class-wc-settings-pdf-watermark.php:187
+#: includes/class-wc-settings-pdf-watermark.php:266
 msgid "Horizontal Offset"
 msgstr "Vízszintes eltolás"
 
-#: includes/class-wc-settings-pdf-watermark.php:188
+#: includes/class-wc-settings-pdf-watermark.php:267
 msgid ""
 "A positive/negative offset in pt to horizontally allign the watermark. This "
 "does not apply to epub files."
@@ -405,11 +435,11 @@ msgstr ""
 "Pozitív/negatív eltolás pt-ben a vízjel vízszintes igazításához. Ez nem "
 "vonatkozik az epub fájlokra."
 
-#: includes/class-wc-settings-pdf-watermark.php:195
+#: includes/class-wc-settings-pdf-watermark.php:274
 msgid "Vertical Offset"
 msgstr "Függőleges eltolás"
 
-#: includes/class-wc-settings-pdf-watermark.php:196
+#: includes/class-wc-settings-pdf-watermark.php:275
 msgid ""
 "A positive/negative offset in pt to vertically allign the watermark. This "
 "does not apply to epub files."
@@ -417,45 +447,140 @@ msgstr ""
 "Pozitív/negatív eltolás pt-ben a vízjel függőleges igazításához. Ez nem "
 "vonatkozik az epub fájlokra."
 
-#: includes/class-wc-settings-pdf-watermark.php:203
+#: includes/class-wc-settings-pdf-watermark.php:283
+msgid ""
+"Rotation angle in degrees (0-360). 0 = no rotation, 45 = diagonal, 90 = "
+"vertical. Positive values rotate clockwise."
+msgstr "Forgatási szög fokban (0–360). 0 = nincs elforgatás, 45 = átlós, 90 = függőleges. A pozitív értékek az óramutató járásával megegyező irányba forgatnak."
+
+#: includes/class-wc-settings-pdf-watermark.php:295
+msgid "Text Transform"
+msgstr "Szöveg átalakítása"
+
+#: includes/class-wc-settings-pdf-watermark.php:296
+msgid "Choose how the text should be formatted."
+msgstr "Válassza ki, hogyan legyen formázva a szöveg."
+
+#: includes/class-wc-settings-pdf-watermark.php:300
+msgid "None (As typed)"
+msgstr "Semmi (a beírtak szerint)"
+
+#: includes/class-wc-settings-pdf-watermark.php:301
+msgid "UPPERCASE"
+msgstr "CSUPA NAGYBETŰ"
+
+#: includes/class-wc-settings-pdf-watermark.php:302
+msgid "lowercase"
+msgstr "kisbetűs"
+
+#: includes/class-wc-settings-pdf-watermark.php:303
+msgid "Capitalize Case"
+msgstr "Minden szó kezdőbetűje nagybetűs"
+
+#: includes/class-wc-settings-pdf-watermark.php:310
+msgid "Text Shadow"
+msgstr "Szövegárnyék"
+
+#: includes/class-wc-settings-pdf-watermark.php:312
+msgid "Enable shadow behind watermark text."
+msgstr "A vízjelszöveg mögötti árnyék bekapcsolása."
+
+#: includes/class-wc-settings-pdf-watermark.php:317
+msgid "Shadow Horizontal Offset"
+msgstr "Vízszintes árnyékeltolás"
+
+#: includes/class-wc-settings-pdf-watermark.php:318
+msgid ""
+"Horizontal shadow offset in points (px). Use negative values to move left."
+msgstr "Az árnyék vízszintes eltolása pontban (px). Negatív értékkel balra mozgathatja."
+
+#: includes/class-wc-settings-pdf-watermark.php:326
+msgid "Shadow Vertical Offset"
+msgstr "Függőleges árnyékeltolás"
+
+#: includes/class-wc-settings-pdf-watermark.php:327
+msgid "Vertical shadow offset in points (px). Use negative values to move up."
+msgstr "Az árnyék függőleges eltolása pontban (px). Negatív értékkel felfelé mozgathatja."
+
+#: includes/class-wc-settings-pdf-watermark.php:335
+msgid "Shadow Blur Radius"
+msgstr "Az árnyék elmosásának sugara"
+
+#: includes/class-wc-settings-pdf-watermark.php:336
+msgid "Blur radius for the text shadow. Higher values create a softer shadow."
+msgstr "A szöveg árnyékának elmosási sugara. Nagyobb értékek lágyabb árnyékot eredményeznek."
+
+#: includes/class-wc-settings-pdf-watermark.php:344
+msgid "Shadow Color"
+msgstr "Árnyék színe"
+
+#: includes/class-wc-settings-pdf-watermark.php:353
+msgid "Watermark Border"
+msgstr "Vízjelkeret"
+
+#: includes/class-wc-settings-pdf-watermark.php:355
+msgid "Enable border around the watermark."
+msgstr "Keret bekapcsolása a vízjel körül."
+
+#: includes/class-wc-settings-pdf-watermark.php:360
+msgid "Border Color"
+msgstr "Szegély színe"
+
+#: includes/class-wc-settings-pdf-watermark.php:367
+msgid "Border Width"
+msgstr "Keret szélessége"
+
+#: includes/class-wc-settings-pdf-watermark.php:376
+msgid "Border thickness in points."
+msgstr "A keret vastagsága pontban."
+
+#: includes/class-wc-settings-pdf-watermark.php:380
+msgid "Border Radius"
+msgstr "Keret lekerekítése"
+
+#: includes/class-wc-settings-pdf-watermark.php:389
+msgid "Corner radius for rounded borders."
+msgstr "Lekerekített keretek sarokrádiusza."
+
+#: includes/class-wc-settings-pdf-watermark.php:395
 msgid "Display on pages"
 msgstr "Megjelenítés az oldalakon"
 
-#: includes/class-wc-settings-pdf-watermark.php:206
+#: includes/class-wc-settings-pdf-watermark.php:398
 msgid "All"
 msgstr "Mind"
 
-#: includes/class-wc-settings-pdf-watermark.php:207
+#: includes/class-wc-settings-pdf-watermark.php:399
 msgid "First"
 msgstr "Első"
 
-#: includes/class-wc-settings-pdf-watermark.php:208
+#: includes/class-wc-settings-pdf-watermark.php:400
 msgid "Last"
 msgstr "Utolsó"
 
-#: includes/class-wc-settings-pdf-watermark.php:209
+#: includes/class-wc-settings-pdf-watermark.php:401
 msgid "Alternate pages"
 msgstr "Váltakozó oldalak"
 
-#: includes/class-wc-settings-pdf-watermark.php:210
+#: includes/class-wc-settings-pdf-watermark.php:402
 msgid "Custom"
 msgstr "Egyéni"
 
-#: includes/class-wc-settings-pdf-watermark.php:216
+#: includes/class-wc-settings-pdf-watermark.php:408
 msgid "Include/Exclude Pages"
 msgstr "Oldalak bevonása/kizárása"
 
-#: includes/class-wc-settings-pdf-watermark.php:219
-#: includes/class-wc-settings-pdf-watermark.php:227
+#: includes/class-wc-settings-pdf-watermark.php:411
+#: includes/class-wc-settings-pdf-watermark.php:419
 msgid "Include Specific Pages"
 msgstr "Adott oldalak bevonása"
 
-#: includes/class-wc-settings-pdf-watermark.php:220
-#: includes/class-wc-settings-pdf-watermark.php:235
+#: includes/class-wc-settings-pdf-watermark.php:412
+#: includes/class-wc-settings-pdf-watermark.php:427
 msgid "Exclude Specific Pages"
 msgstr "Adott oldalak kizárása"
 
-#: includes/class-wc-settings-pdf-watermark.php:228
+#: includes/class-wc-settings-pdf-watermark.php:420
 msgid ""
 "Specify the page numbers you want to add watermark in comma separated "
 "fromat. i.e 1,2,3."
@@ -463,7 +588,7 @@ msgstr ""
 "Adja meg azoknak az oldalaknak a sorszámát, amelyekre vízjelet szeretne "
 "tenni, vesszővel elválasztva, azaz 1,2,3."
 
-#: includes/class-wc-settings-pdf-watermark.php:236
+#: includes/class-wc-settings-pdf-watermark.php:428
 msgid ""
 "Specify the page numbers you don't want to add watermark in comma separated "
 "fromat. i.e 1,2,3."
@@ -471,40 +596,40 @@ msgstr ""
 "Adja meg azoknak az oldalaknak a sorszámát, amelyekre nem szeretne vízjelet "
 "tenni, vesszővel elválasztva, azaz 1,2,3."
 
-#: includes/class-wc-settings-pdf-watermark.php:243
+#: includes/class-wc-settings-pdf-watermark.php:435
 msgid "Preview"
 msgstr "Előnézet"
 
-#: includes/class-wc-settings-pdf-watermark.php:244
+#: includes/class-wc-settings-pdf-watermark.php:436
 msgid "Preview PDF Watermark Settings"
-msgstr "PDF-vízjel beállítások előnézete"
+msgstr "A PDF-vízjel beállításainak előnézete"
 
-#: includes/class-wc-settings-pdf-watermark.php:253
+#: includes/class-wc-settings-pdf-watermark.php:445
 msgid "Advanced"
 msgstr "Speciális"
 
-#: includes/class-wc-settings-pdf-watermark.php:260
-#: includes/class-wc-settings-pdf-watermark.php:267
+#: includes/class-wc-settings-pdf-watermark.php:452
+#: includes/class-wc-settings-pdf-watermark.php:459
 msgid "Enable Password Protection"
 msgstr "Jelszóvédelem engedélyezése"
 
-#: includes/class-wc-settings-pdf-watermark.php:262
+#: includes/class-wc-settings-pdf-watermark.php:454
 msgid "Allow password protection."
 msgstr "Jelszóvédelem engedélyezése."
 
-#: includes/class-wc-settings-pdf-watermark.php:270
+#: includes/class-wc-settings-pdf-watermark.php:462
 msgid "Email Id Protection"
 msgstr "E-mail-azonosító védelem"
 
-#: includes/class-wc-settings-pdf-watermark.php:271
+#: includes/class-wc-settings-pdf-watermark.php:463
 msgid "Order Id Protection"
-msgstr "Rendelési azonosító védelem"
+msgstr "Rendelés ID védelme"
 
-#: includes/class-wc-settings-pdf-watermark.php:276
+#: includes/class-wc-settings-pdf-watermark.php:468
 msgid "Enable Copy Protection"
 msgstr "Másolásvédelem engedélyezése"
 
-#: includes/class-wc-settings-pdf-watermark.php:278
+#: includes/class-wc-settings-pdf-watermark.php:470
 msgid ""
 "Do not allow copying or otherwise extracting text and graphics from the PDF "
 "document."
@@ -512,50 +637,131 @@ msgstr ""
 "Ne engedélyezze szöveg és grafika másolását vagy kinyerését a PDF-"
 "dokumentumból."
 
-#: includes/class-wc-settings-pdf-watermark.php:282
+#: includes/class-wc-settings-pdf-watermark.php:474
 msgid "Enable Print Protection"
 msgstr "Nyomtatásvédelem engedélyezése"
 
-#: includes/class-wc-settings-pdf-watermark.php:284
+#: includes/class-wc-settings-pdf-watermark.php:476
 msgid "Do not allow printing of the PDF document."
 msgstr "Ne engedélyezze a PDF-dokumentum nyomtatását."
 
-#: includes/class-wc-settings-pdf-watermark.php:288
+#: includes/class-wc-settings-pdf-watermark.php:480
 msgid "Enable Modification Protection"
 msgstr "Módosításvédelem engedélyezése"
 
-#: includes/class-wc-settings-pdf-watermark.php:290
+#: includes/class-wc-settings-pdf-watermark.php:482
 msgid ""
 "Do not allow modifying of the PDF document, other than annotating if that is"
 " not disabled."
-msgstr ""
-"Ne engedélyezze a PDF-dokumentum módosítását, kivéve a jegyzetelést, ha az "
-"nincs letiltva."
+msgstr "Ne engedélyezze a PDF-dokumentum módosítását, kivéve a jegyzetelést, ha az nincs letiltva."
 
-#: includes/class-wc-settings-pdf-watermark.php:294
+#: includes/class-wc-settings-pdf-watermark.php:486
 msgid "Enable Annotate Protection"
-msgstr "Jegyzetvédelem engedélyezése"
+msgstr "Annotálás elleni védelem bekapcsolása"
 
-#: includes/class-wc-settings-pdf-watermark.php:296
+#: includes/class-wc-settings-pdf-watermark.php:488
 msgid ""
 "Do not allow adding or modifying of text annotations, filling in of "
 "interactive form fields, and, if modify protection is enabled, creating or "
 "modifying of interactive form fields (including signature fields)."
-msgstr ""
-"Ne engedélyezze szöveges megjegyzések hozzáadását vagy módosítását, "
-"interaktív űrlapmezők kitöltését, és ha a módosításvédelem engedélyezve van,"
-" interaktív űrlapmezők (beleértve az aláírásmezőket) létrehozását vagy "
-"módosítását."
+msgstr "Ne engedélyezze szöveges megjegyzések hozzáadását vagy módosítását, interaktív űrlapmezők kitöltését, és ha a módosításvédelem engedélyezve van, interaktív űrlapmezők (beleértve az aláírásmezőket) létrehozását vagy módosítását."
 
-#: includes/class-wc-settings-pdf-watermark.php:300
+#: includes/class-wc-settings-pdf-watermark.php:492
 msgid "Enable EPUB watermarks"
-msgstr "EPUB vízjelek engedélyezése"
+msgstr "EPUB-vízjelek engedélyezése"
 
-#: includes/class-wc-settings-pdf-watermark.php:302
+#: includes/class-wc-settings-pdf-watermark.php:494
 msgid ""
 "When this is disabled, all support of the plugin for the EPUB should be "
 "disabled even the processes thats happening only in the background should "
 "stop working."
-msgstr ""
-"Ha ez le van tiltva, a bővítmény EPUB-támogatásának minden elemét le kell "
-"tiltani; még a csak a háttérben futó folyamatoknak is meg kell állniuk."
+msgstr "Ha ez ki van kapcsolva, a bővítmény EPUB-támogatását teljes egészében ki kell kapcsolni; még a kizárólag a háttérben futó folyamatoknak is le kell állniuk."
+
+#: includes/class-wc-settings-pdf-watermark.php:530
+msgid "No file chosen"
+msgstr "Nincs kiválasztott fájl"
+
+#: includes/class-wc-settings-pdf-watermark.php:566
+msgid "Times"
+msgstr "Times"
+
+#: includes/class-wc-settings-pdf-watermark.php:567
+msgid "Helvetica"
+msgstr "Helvetica"
+
+#: includes/class-wc-settings-pdf-watermark.php:568
+msgid "Arial"
+msgstr "Arial"
+
+#: includes/class-wc-settings-pdf-watermark.php:569
+msgid "Courier"
+msgstr "Courier"
+
+#: includes/class-wc-settings-pdf-watermark.php:570
+msgid "Symbol"
+msgstr "Szimbólum"
+
+#: includes/class-wc-settings-pdf-watermark.php:571
+msgid "ZapfDingbats"
+msgstr "ZapfDingbats"
+
+#: includes/class-wc-settings-pdf-watermark.php:572
+msgid "DejaVu Sans"
+msgstr "DejaVu Sans"
+
+#: includes/class-wc-settings-pdf-watermark.php:578
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: includes/class-wc-settings-pdf-watermark.php:582
+msgid "Roboto"
+msgstr "Roboto"
+
+#: includes/class-wc-settings-pdf-watermark.php:586
+msgid "Nunito"
+msgstr "Nunito"
+
+#: includes/class-wc-settings-pdf-watermark.php:603
+#, php-format
+msgid "%s (Custom)"
+msgstr "%s (egyéni)"
+
+#: includes/class-wc-settings-pdf-watermark.php:622
+msgid "Only .ttf font files are allowed."
+msgstr "Csak .ttf betűkészletfájlok engedélyezettek."
+
+#: includes/class-wc-settings-pdf-watermark.php:640
+msgid "Failed to upload font. Check folder permissions."
+msgstr "A betűkészlet feltöltése sikertelen. Ellenőrizze a mappa jogosultságait."
+
+#: includes/class-wc-settings-pdf-watermark.php:659
+#, php-format
+msgid "Font \"%s\" uploaded successfully."
+msgstr "A(z) „%s” betűkészlet feltöltése sikerült."
+
+#~ msgid ""
+#~ "The following Downloadable Files are not compatible with PDF Watermarker.  "
+#~ "You should disable watermarking on this product or choose different files."
+#~ msgstr ""
+#~ "A következő letölthető fájlok nem kompatibilisek a PDF Watermarkerrel.  E "
+#~ "terméknél tiltsa le a vízjelezést, vagy válasszon más fájlokat."
+
+#~ msgid ""
+#~ "The text to use as a watermark on PDF documents. You can use {first_name}, "
+#~ "{last_name}, {username}, {full_name}, {email}, {order_number}, {order_date},"
+#~ " {site_name}, {site_url} tags to insert customer specific data in the "
+#~ "watermark."
+#~ msgstr ""
+#~ "A PDF-dokumentumokon vízjelként használni kívánt szöveg. A vízjelbe "
+#~ "ügyfélspecifikus adatok beszúrásához használhatja a következő tageket: "
+#~ "{first_name}, {last_name}, {username}, {full_name}, {email}, {order_number},"
+#~ " {order_date}, {site_name}, {site_url}."
+
+#~ msgid ""
+#~ "<b>Note:</b> Both <b>Arial</b> and <b>DejaVu Sans</b> fonts support Greek "
+#~ "characters. If you experience issues with Greek text rendering, please "
+#~ "ensure the correct font is selected."
+#~ msgstr ""
+#~ "<b>Megjegyzés:</b> Az <b>Arial</b> és a <b>DejaVu Sans</b> betűtípus is "
+#~ "támogatja a görög karaktereket. Ha problémát tapasztal a görög szöveg "
+#~ "megjelenítésével, ellenőrizze, hogy a megfelelő betűtípust választotta-e ki."

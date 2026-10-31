@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: JetFormBuilder PayPal Recurring payments 1.1.4\n"
+"Project-Id-Version: JetFormBuilder PayPal Recurring payments 1.1.5\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:48:47+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: JetFormBuilder PayPal Recurring payments\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 1.1.4\n"
+"X-Plugin-Version: 1.1.5\n"
 
 #. Plugin Name of the plugin
 #: jet-form-builder-paypal-subscriptions.php
@@ -71,11 +71,11 @@ msgstr "Előfizetési csomag"
 
 #: includes/ScenarioViews/SubscriptionScenarioView.php:31
 msgid "Copy selected Plan ID"
-msgstr "Kiválasztott csomagazonosító másolása"
+msgstr "A kiválasztott csomag ID-jének másolása"
 
 #: includes/ScenarioViews/SubscriptionScenarioView.php:32
 msgid "Quantity field"
-msgstr "Mennyiség mező"
+msgstr "Mennyiségmező"
 
 #: includes/ScenarioViews/SubscriptionScenarioView.php:33
 msgid "Manual input of quantity"
@@ -95,19 +95,13 @@ msgid ""
 "\t\t\tCancellation can be made on the website through the <b><i>JetFormBuilder > Subscriptions</i></b> page, \n"
 "\t\t\ta single subscription page, and through a personal PayPal business account, namely, \n"
 "\t\t\tits <b><i>Pay & Get Paid > Subscriptions</i></b> section."
-msgstr ""
-"akkor kerül végrehajtásra, amikor egy előfizetés törlésre kerül.\n"
-"\t\t\tA törlés elvégezhető a webhelyen a <b><i>JetFormBuilder > Subscriptions</i></b> oldalon, \n"
-"\t\t\tegy előfizetés oldalán, valamint személyes PayPal üzleti fiókon keresztül, nevezetesen, \n"
-"\t\t\tannak <b><i>Pay & Get Paid > Subscriptions</i></b> részében."
+msgstr "akkor kerül végrehajtásra, amikor lemondanak egy előfizetést.\n\t\t\tA lemondás elvégezhető a webhelyen a <b><i>JetFormBuilder > Subscriptions</i></b> oldalon, \n\t\t\taz adott előfizetés oldalán, valamint személyes PayPal üzleti fiókon keresztül, nevezetesen, \n\t\t\tannak <b><i>Pay & Get Paid > Subscriptions</i></b> részében."
 
 #: includes/Shared/FormEvents/SubscriptionExpiredEvent.php:14
 msgid ""
 "is executed after the subscription expiry and \n"
 "\t\t\tcannot be triggered \"manually.\""
-msgstr ""
-"az előfizetés lejárta után kerül végrehajtásra, és \n"
-"\t\t\tnem váltható ki \"kézzel.\""
+msgstr "az előfizetés lejárta után kerül végrehajtásra, és \n\t\t\tnem váltható ki „kézzel.”"
 
 #: includes/Shared/FormEvents/SubscriptionReactivateEvent.php:14
 msgid ""
@@ -115,11 +109,7 @@ msgid ""
 "\t\t\tReactivation solely applies to the existing subscription and can be \n"
 "\t\t\tcarried out through a personal PayPal business account, \n"
 "\t\t\tnamely, its <b><i>Pay & Get Paid > Subscriptions</i></b> section."
-msgstr ""
-"akkor kerül végrehajtásra, amikor egy előfizetés aktiválásra kerül. \n"
-"\t\t\tA visszaaktiválás kizárólag a meglévő előfizetésre vonatkozik, és \n"
-"\t\t\telvégezhető személyes PayPal üzleti fiókon keresztül, \n"
-"\t\t\tnevezetesen annak <b><i>Pay & Get Paid > Subscriptions</i></b> részében."
+msgstr "akkor kerül végrehajtásra, amikor egy előfizetést aktiválnak. \n\t\t\tAz újbóli aktiválás kizárólag a meglévő előfizetésre vonatkozik, és \n\t\t\telvégezhető személyes PayPal üzleti fiókon keresztül, \n\t\t\tnevezetesen annak <b><i>Pay & Get Paid > Subscriptions</i></b> részében."
 
 #: includes/Shared/FormEvents/SubscriptionSuspendedEvent.php:14
 msgid ""
@@ -127,11 +117,7 @@ msgid ""
 "\t\t\tSuspension can be carried out similarly \n"
 "\t\t\tto the routine described in the \n"
 "\t\t\t<code>GATEWAY.SUBSCRIPTION.CANCEL</code> event."
-msgstr ""
-"akkor kerül végrehajtásra, amikor egy előfizetés leállításra kerül. \n"
-"\t\t\tA felfüggesztés hasonló módon hajtható végre \n"
-"\t\t\ta(z) \n"
-"\t\t\t<code>GATEWAY.SUBSCRIPTION.CANCEL</code> eseményben leírt eljáráshoz."
+msgstr "akkor kerül végrehajtásra, amikor leállítanak egy előfizetést. \n\t\t\tA felfüggesztés hasonló módon hajtható végre \n\t\t\ta \n\t\t\t<code>GATEWAY.SUBSCRIPTION.CANCEL</code> eseményben leírt eljáráshoz."
 
 #: includes/Shared/Pages/Actions/CancelSubscriptionPageAction.php:48
 #: includes/Shared/TableViews/Actions/CancelSubscription.php:24
@@ -186,7 +172,7 @@ msgstr "Előfizetés lemondása"
 
 #: includes/Shared/RestEndpoints/PayPalCancelSubscription.php:34
 msgid "Do not cancel"
-msgstr "Ne mondja le"
+msgstr "Mégsem"
 
 #: includes/Shared/RestEndpoints/PayPalCancelSubscription.php:35
 msgid "Please confirm cancellation"
@@ -205,7 +191,7 @@ msgstr "Kizárja az olyan termékeket, amelyek"
 #: includes/Shared/RestEndpoints/PayPalCancelSubscription.php:38
 #: includes/Shared/RestEndpoints/PayPalSuspendSubscription.php:39
 msgid "Not satisfied with the service"
-msgstr "Nem elégedett a szolgáltatással"
+msgstr "Nem vagyok elégedett a szolgáltatással"
 
 #: includes/Shared/RestEndpoints/PayPalSuspendSubscription.php:34
 msgid "Suspend Subscription"
@@ -213,7 +199,7 @@ msgstr "Előfizetés felfüggesztése"
 
 #: includes/Shared/RestEndpoints/PayPalSuspendSubscription.php:35
 msgid "Do not suspend"
-msgstr "Ne függessze fel"
+msgstr "Felfüggesztés mellőzése"
 
 #: includes/Shared/RestEndpoints/PayPalSuspendSubscription.php:36
 msgid "Please confirm"
@@ -225,7 +211,7 @@ msgstr "Számlázási ciklus"
 
 #: includes/Shared/TableViews/Columns/SubscriberColumn.php:11
 msgid "Subscriber"
-msgstr "Előfizető"
+msgstr "Feliratkozó"
 
 #: includes/Shared/TableViews/Columns/SubscriberColumn.php:24
 msgid "Not attached"
@@ -235,7 +221,7 @@ msgstr "Nincs társítva"
 msgid "Status"
 msgstr "Állapot"
 
-#: jet-form-builder-paypal-subscriptions.php:36
+#: jet-form-builder-paypal-subscriptions.php:37
 msgid ""
 "<b>Error:</b> <b>JetFormBuilder PayPal Recurring payments</b> plugin "
 "requires a PHP version \">= 7.0.0\" to work properly!"

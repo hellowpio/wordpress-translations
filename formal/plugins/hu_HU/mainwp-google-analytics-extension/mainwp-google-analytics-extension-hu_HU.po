@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: MainWP Google Analytics Extension 5.0.1\n"
+"Project-Id-Version: MainWP Google Analytics Extension 6.1.1\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:49:28+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,12 +18,12 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: MainWP Google Analytics Extension\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 5.0.1\n"
+"X-Plugin-Version: 6.1.1\n"
 
 #. Plugin Name of the plugin
 #: mainwp-google-analytics-extension.php
 msgid "MainWP Google Analytics Extension"
-msgstr "MainWP Google Analytics kiegészítő"
+msgstr "MainWP Google Analytics Extension"
 
 #. Plugin URI of the plugin
 #. Author URI of the plugin
@@ -37,358 +37,370 @@ msgid ""
 "MainWP Google Analytics Extension is an extension for the MainWP plugin that"
 " enables you to monitor detailed statistics about your child sites traffic. "
 "It integrates seamlessly with your Google Analytics account."
-msgstr ""
-"A MainWP Google Analytics kiegészítő a MainWP bővítmény kiegészítője, "
-"amellyel figyelemmel kísérheti gyermek webhelyei forgalmának részletes "
-"statisztikáit. Zökkenőmentesen integrálódik a Google Analytics-fiókjával."
+msgstr "A MainWP Google Analytics-kiterjesztés a MainWP bővítményhez készült, és lehetővé teszi, hogy nyomon kövesse az alárendelt webhelyei forgalmának részletes statisztikáit. Zökkenőmentesen integrálódik a Google Analytics-fiókjával."
 
 #. Author of the plugin
 #: mainwp-google-analytics-extension.php
 msgid "MainWP"
 msgstr "MainWP"
 
-#: class/class-mainwp-ga-main.php:64 class/class-mainwp-ga-main.php:225
-#: class/class-mainwp-ga.php:485 mainwp-google-analytics-extension.php:127
-msgid "Google Analytics"
-msgstr "Google Analytics"
+#: class/class-mainwp-ga-ajax.php:186
+msgid "Remove account successfully."
+msgstr "Fiók sikeresen eltávolítva."
 
-#: class/class-mainwp-ga-main.php:226
-msgid "See your visitor's search and traffic patterns"
-msgstr "Tekintse meg látogatói keresési és forgalmi mintáit"
+#: class/class-mainwp-ga-ajax.php:235 class/class-mainwp-ga-ajax.php:390
+msgid "Site secret not found."
+msgstr "A webhely titkos kulcsa nem található."
 
-#: class/class-mainwp-ga-main.php:250
-#, php-format
+#: class/class-mainwp-ga-ajax.php:265
+msgid "Unable to securely store authentication credentials."
+msgstr "A hitelesítési adatok biztonságos tárolása nem sikerült."
+
+#: class/class-mainwp-ga-ajax.php:318 class/class-mainwp-ga-ajax.php:363
+msgid "Authentication data saved successfully."
+msgstr "A hitelesítési adatok sikeresen mentve."
+
+#: class/class-mainwp-ga-ajax.php:425
+msgid "Sign in URL generated successfully."
+msgstr "A bejelentkezési URL sikeresen létrehozva."
+
+#: class/class-mainwp-ga-ajax.php:442
+msgid "Invalid account email."
+msgstr "Hibás fiókhoz tartozó e-mail cím."
+
+#: class/class-mainwp-ga-ajax.php:496
+msgid "Connection saved successfully."
+msgstr "A kapcsolat sikeresen mentve."
+
+#: class/class-mainwp-ga-ajax.php:558
+msgid "Refresh data failed. Please try again."
+msgstr "Az adatok frissítése sikertelen. Kérjük, próbálja meg újra."
+
+#: class/class-mainwp-ga-ajax.php:560
+msgid "Refresh data successfully."
+msgstr "Az adatok frissítése sikeres."
+
+#: class/class-mainwp-ga-ajax.php:581 class/class-mainwp-ga-ajax.php:612
+msgid "No pending accounts found."
+msgstr "Nem található függőben lévő fiók."
+
+#: class/class-mainwp-ga-ajax.php:585
+msgid "Pending accounts loaded."
+msgstr "A függőben lévő fiókok betöltve."
+
+#: class/class-mainwp-ga-ajax.php:626
+msgid "Account not found in pending list."
+msgstr "A fiók nem található a függőben lévő fiókok listájában."
+
+#: class/class-mainwp-ga-ajax.php:636
+msgid "Import account failed."
+msgstr "A fiók importálása sikertelen."
+
+#: class/class-mainwp-ga-ajax.php:652
+msgid "Account imported successfully."
+msgstr "A fiók sikeresen importálva."
+
+#: class/class-mainwp-ga-ajax.php:685
+msgid "An error occurred, the secret could not be refreshed."
+msgstr "Hiba történt, a titkos kulcs frissítése nem sikerült."
+
+#: class/class-mainwp-ga-ajax.php:692
 msgid ""
-"%sNo Google Analytics data available.%s Please ensure you have connected "
-"your Google Analytics account and %sassigned GA properties%s to your MainWP "
-"sites to view analytics data."
-msgstr ""
-"%sNem állnak rendelkezésre Google Analytics-adatok.%s Kérjük, győződjön meg "
-"róla, hogy csatlakoztatta a Google Analytics-fiókját, és %sGA-tulajdonokat "
-"rendelt%s MainWP webhelyeihez az analitikai adatok megtekintéséhez."
+"Refresh successfully. OAuth accounts must be reconnected before Google "
+"Analytics tokens can refresh again."
+msgstr "A frissítés sikeres. Az OAuth-fiókokat újra össze kell kapcsolni, mielőtt a Google Analytics-tokenek ismét frissíthetők lennének."
 
-#: class/class-mainwp-ga-main.php:278
-msgid "Select Graph"
-msgstr "Grafikon kiválasztása"
-
-#: class/class-mainwp-ga-main.php:280 class/class-mainwp-ga-ui.php:253
-#: class/class-mainwp-ga-ui.php:655 class/class-mainwp-ga-widgets.php:49
-msgid "Views"
-msgstr "Megtekintések"
-
-#: class/class-mainwp-ga-main.php:281 class/class-mainwp-ga-ui.php:209
-#: class/class-mainwp-ga-ui.php:297 class/class-mainwp-ga-ui.php:372
-#: class/class-mainwp-ga-ui.php:659 class/class-mainwp-ga-widgets.php:50
-msgid "Users"
-msgstr "Felhasználók"
-
-#: class/class-mainwp-ga-main.php:282 class/class-mainwp-ga-ui.php:373
-#: class/class-mainwp-ga-ui.php:663 class/class-mainwp-ga-widgets.php:51
-msgid "New Users"
-msgstr "Új felhasználók"
-
-#: class/class-mainwp-ga-main.php:283 class/class-mainwp-ga-ui.php:667
-#: class/class-mainwp-ga-widgets.php:52
-msgid "Average Engagement Time"
-msgstr "Átlagos elköteleződési idő"
-
-#: class/class-mainwp-ga-main.php:292
-msgid "Select website"
-msgstr "Webhely kiválasztása"
-
-#: class/class-mainwp-ga-main.php:294
-msgid "No website"
-msgstr "Nincs webhely"
-
-#: class/class-mainwp-ga-main.php:347
+#: class/class-mainwp-ga-main.php:108
 msgid "Visitor Data"
 msgstr "Látogatói adatok"
 
-#: class/class-mainwp-ga-main.php:348
+#: class/class-mainwp-ga-main.php:109
 msgid "Add Account"
 msgstr "Fiók hozzáadása"
 
-#: class/class-mainwp-ga-main.php:349
+#: class/class-mainwp-ga-main.php:110
 msgid "Manage Accounts"
 msgstr "Fiókok kezelése"
 
-#: class/class-mainwp-ga-main.php:350
+#: class/class-mainwp-ga-main.php:111
 msgid "Settings"
 msgstr "Beállítások"
 
-#: class/class-mainwp-ga-main.php:367
+#: class/class-mainwp-ga-main.php:117
+msgid "PHP Requirement Notice"
+msgstr "PHP-követelménnyel kapcsolatos értesítés"
+
+#: class/class-mainwp-ga-main.php:118
 msgid ""
-"Click the button below to access your Google API Console, and there, "
-"activate the Analytics API and create a Client ID in the API Access section."
-msgstr ""
-"Kattintson az alábbi gombra a Google API Console eléréséhez, és ott "
-"aktiválja az Analytics API-t, valamint hozzon létre egy Client ID-t az API "
-"Access szakaszban."
+"Some features of MainWP Google Analytics require PHP 8.1 or higher and are "
+"disabled on this server. This does not affect your child sites, only your "
+"MainWP Dashboard."
+msgstr "A MainWP Google Analytics egyes funkcióihoz PHP 8.1-es vagy újabb verzió szükséges, ezért ezen a szerveren ki vannak kapcsolva. Ez csak a MainWP vezérlőpultot érinti, az alwebhelyeket nem."
 
-#: class/class-mainwp-ga-main.php:368
-msgid "Google API Console"
-msgstr "Google API Console"
+#: class/class-mainwp-ga-main.php:153 class/class-mainwp-ga-widgets.php:241
+msgid "Loading..."
+msgstr "Betöltés..."
 
-#: class/class-mainwp-ga-main.php:372
+#: class/class-mainwp-ga-main.php:213 class/class-mainwp-ga-main.php:224
+#: class/class-mainwp-ga-main.php:323
+#: mainwp-google-analytics-extension.php:282
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: class/class-mainwp-ga-main.php:324
+msgid "See your visitor's search and traffic patterns"
+msgstr "Tekintse meg látogatói keresési és forgalmi mintáit"
+
+#. translators: %1$s = <strong>, %2$s = </strong>, %3$s = <a>, %4$s = </a>.
+#: class/class-mainwp-ga-main.php:361
 #, php-format
 msgid ""
-"For the additional help for the extension, please check the %1$sextension "
-"documentation%2$s."
-msgstr ""
-"További segítségért a kiegészítőhöz tekintse meg a %1$skiegészítő "
-"dokumentációját%2$s."
+"%1$sNo Google Analytics data available.%2$s Please ensure you have connected"
+" your Google Analytics account and %3$sassigned GA properties%4$s to your "
+"MainWP sites to view analytics data."
+msgstr "%1$sNem állnak rendelkezésre Google Analytics-adatok.%2$s Kérjük, ellenőrizze, hogy csatlakoztatta-e Google Analytics-fiókját, és %3$shozzárendelte-e a GA-tulajdonokat%4$s a MainWP-webhelyeihez az elemzési adatok megtekintéséhez."
 
-#: class/class-mainwp-ga-main.php:385
-msgid "Connect Google Analytics Service Account"
-msgstr "Google Analytics szolgáltatásfiók csatlakoztatása"
+#: class/class-mainwp-ga-main.php:397
+msgid "Select Graph"
+msgstr "Grafikon kiválasztása"
 
-#: class/class-mainwp-ga-main.php:396
-msgid "Connect Account"
-msgstr "Fiók csatlakoztatása"
+#: class/class-mainwp-ga-main.php:399 class/class-mainwp-ga-ui.php:426
+#: class/class-mainwp-ga-ui.php:676 class/class-mainwp-ga-widgets.php:175
+msgid "Views"
+msgstr "Megtekintések"
 
-#: class/class-mainwp-ga-main.php:414
-msgid "Project ID"
-msgstr "Projektazonosító"
+#: class/class-mainwp-ga-main.php:400 class/class-mainwp-ga-ui.php:313
+#: class/class-mainwp-ga-ui.php:430 class/class-mainwp-ga-ui.php:630
+#: class/class-mainwp-ga-ui.php:720 class/class-mainwp-ga-widgets.php:176
+msgid "Users"
+msgstr "Felhasználók"
 
-#: class/class-mainwp-ga-main.php:415
-msgid "Status"
-msgstr "Állapot"
+#: class/class-mainwp-ga-main.php:401 class/class-mainwp-ga-utility.php:1527
+#: class/class-mainwp-ga-widgets.php:177
+msgid "New Users"
+msgstr "Új felhasználók"
 
-#: class/class-mainwp-ga-main.php:416
-msgid "Client Email"
-msgstr "Ügyfél e-mail-cím"
+#: class/class-mainwp-ga-main.php:402 class/class-mainwp-ga-ui.php:438
+#: class/class-mainwp-ga-widgets.php:178
+msgid "Average Engagement Time"
+msgstr "Átlagos elköteleződési idő"
 
-#: class/class-mainwp-ga-main.php:417
-msgid "Client ID"
-msgstr "Client ID"
+#: class/class-mainwp-ga-main.php:411
+msgid "Select website"
+msgstr "Webhely kiválasztása"
 
-#: class/class-mainwp-ga-main.php:418
-msgid "Key File JSON"
-msgstr "JSON kulcsfájl"
+#: class/class-mainwp-ga-main.php:413
+msgid "No website"
+msgstr "Nincs webhely"
 
-#: class/class-mainwp-ga-main.php:419
-msgid "Accounts"
-msgstr "Fiókok"
+#: class/class-mainwp-ga-rest-controller.php:60
+msgid "Invalid nonce."
+msgstr "Érvénytelen nonce."
 
-#: class/class-mainwp-ga-main.php:442
-msgid "Connected"
-msgstr "Csatlakoztatva"
+#: class/class-mainwp-ga-rest-controller.php:66
+msgid "Invalid pair id."
+msgstr "Hibás párosítási ID."
 
-#: class/class-mainwp-ga-main.php:442
-msgid "Disonnected"
-msgstr "Leválasztva"
+#: class/class-mainwp-ga-schedule.php:117
+#: class/class-mainwp-ga-schedule.php:161
+msgid "Once hourly"
+msgstr "Óránként egyszer"
 
-#: class/class-mainwp-ga-main.php:447
-msgid "Remove Account"
-msgstr "Fiók eltávolítása"
+#: class/class-mainwp-ga-schedule.php:123
+msgid "Once Every 5 Minutes"
+msgstr "5 percenként egyszer"
 
-#: class/class-mainwp-ga-main.php:455
-msgid "No connected accounts"
-msgstr "Nincsenek csatlakoztatott fiókok"
+#: class/class-mainwp-ga-schedule.php:146
+msgid "Google Analytics Refresh Data"
+msgstr "Google Analytics-adatok frissítése"
 
-#: class/class-mainwp-ga-main.php:479 class/class-mainwp-ga-main.php:481
-#: class/class-mainwp-ga-utility.php:185
-msgid "Settings saved successfully."
-msgstr "A beállítások sikeresen mentve."
+#: class/class-mainwp-ga-schedule.php:148
+msgid "Once every 5 minutes"
+msgstr "5 percenként egyszer"
 
-#: class/class-mainwp-ga-main.php:484
-msgid "Failed."
-msgstr "Sikertelen."
+#: class/class-mainwp-ga-schedule.php:159
+msgid "Google Analytics Refresh Token"
+msgstr "Google Analytics-frissítési token"
 
-#: class/class-mainwp-ga-main.php:500
-msgid "Google Analytics Extension Settings"
-msgstr "Google Analytics kiegészítő beállításai"
-
-#: class/class-mainwp-ga-main.php:503
-msgid "Display interval"
-msgstr "Megjelenítési időszak"
-
-#: class/class-mainwp-ga-main.php:506
-msgid "Week"
-msgstr "Hét"
-
-#: class/class-mainwp-ga-main.php:507
-msgid "Month"
-msgstr "Hónap"
-
-#: class/class-mainwp-ga-main.php:512
-msgid "Data refresh frequency"
-msgstr "Adatfrissítés gyakorisága"
-
-#: class/class-mainwp-ga-main.php:515
-msgid "Every hour"
-msgstr "Óránként"
-
-#: class/class-mainwp-ga-main.php:516
-msgid "Every 3 hours"
-msgstr "3 óránként"
-
-#: class/class-mainwp-ga-main.php:517
-msgid "Every 9 hours"
-msgstr "9 óránként"
-
-#: class/class-mainwp-ga-main.php:518
-msgid "Every 15 hours"
-msgstr "15 óránként"
-
-#: class/class-mainwp-ga-main.php:519
-msgid "Every 18 hours"
-msgstr "18 óránként"
-
-#: class/class-mainwp-ga-main.php:520
-msgid "Every 24 hours"
-msgstr "24 óránként"
-
-#: class/class-mainwp-ga-main.php:536 class/class-mainwp-ga-widgets.php:296
-msgid "Save Settings"
-msgstr "Beállítások mentése"
-
-#: class/class-mainwp-ga-main.php:537
-msgid "Refresh Data"
-msgstr "Adatok frissítése"
-
-#: class/class-mainwp-ga-ui.php:162
-msgid "Session source"
-msgstr "Munkamenet forrása"
-
-#: class/class-mainwp-ga-ui.php:163
-msgid "Sessions"
-msgstr "Munkamenetek"
-
-#: class/class-mainwp-ga-ui.php:208
-msgid "Country"
-msgstr "Ország"
-
-#: class/class-mainwp-ga-ui.php:252
-msgid "Pages"
-msgstr "Oldalak"
-
-#: class/class-mainwp-ga-ui.php:296
-msgid "Device"
-msgstr "Eszköz"
-
-#: class/class-mainwp-ga-ui.php:370
-msgid "Visits"
-msgstr "Látogatások"
-
-#: class/class-mainwp-ga-ui.php:371
-msgid "New Visits"
-msgstr "Új látogatások"
-
-#: class/class-mainwp-ga-ui.php:374
-msgid "Pages/Visit"
-msgstr "Oldalak/látogatás"
-
-#: class/class-mainwp-ga-ui.php:375
-msgid "Bounce Rate"
-msgstr "Visszafordulási arány"
-
-#: class/class-mainwp-ga-ui.php:376
-msgid "Pageviews"
-msgstr "Oldalmegtekintések"
-
-#: class/class-mainwp-ga-ui.php:377
-msgid "Avg. Time on Site"
-msgstr "Átlagos idő a webhelyen"
-
-#: class/class-mainwp-ga-ui.php:447
-msgid "This: "
-msgstr "Ez: "
-
-#: class/class-mainwp-ga-ui.php:450
-msgid "Previous: "
-msgstr "Előző: "
-
-#: class/class-mainwp-ga-ui.php:551
+#: class/class-mainwp-ga-ui.php:169
 msgid "Loading"
 msgstr "Betöltés"
 
-#: class/class-mainwp-ga-ui.php:599
-msgid " Last "
-msgstr " Utolsó "
+#. translators: %d: number of days
+#: class/class-mainwp-ga-ui.php:222
+#, php-format
+msgid "Last %d days"
+msgstr "Az elmúlt %d nap"
 
-#: class/class-mainwp-ga-ui.php:599
-msgid " Preceding period "
-msgstr " Megelőző időszak "
+#. translators: %s: interval
+#: class/class-mainwp-ga-ui.php:230
+#, php-format
+msgid "Preceding period %s"
+msgstr "Előző időszak: %s"
 
-#: class/class-mainwp-ga-ui.php:656
+#: class/class-mainwp-ga-ui.php:311
+msgid "Visits"
+msgstr "Látogatások"
+
+#: class/class-mainwp-ga-ui.php:312
+msgid "New Visits"
+msgstr "Új látogatások"
+
+#: class/class-mainwp-ga-ui.php:315
+msgid "Pages/Visit"
+msgstr "Oldalak/látogatás"
+
+#: class/class-mainwp-ga-ui.php:316
+msgid "Bounce Rate"
+msgstr "Visszafordulási arány"
+
+#: class/class-mainwp-ga-ui.php:317
+msgid "Pageviews"
+msgstr "Oldalmegtekintések"
+
+#: class/class-mainwp-ga-ui.php:318
+msgid "Avg. Time on Site"
+msgstr "Átlagos idő a webhelyen"
+
+#: class/class-mainwp-ga-ui.php:387
+msgid "This: "
+msgstr "Ez: "
+
+#: class/class-mainwp-ga-ui.php:390
+msgid "Previous: "
+msgstr "Előző: "
+
+#: class/class-mainwp-ga-ui.php:427
 msgid "Total views in the last "
 msgstr "Összes megtekintés az elmúlt "
 
-#: class/class-mainwp-ga-ui.php:660
+#: class/class-mainwp-ga-ui.php:431
 msgid "Total users in the last "
 msgstr "Összes felhasználó az elmúlt "
 
-#: class/class-mainwp-ga-ui.php:664
+#: class/class-mainwp-ga-ui.php:435
 msgid "New users in the last "
 msgstr "Új felhasználók az elmúlt "
 
-#: class/class-mainwp-ga-ui.php:668
+#: class/class-mainwp-ga-ui.php:439
 msgid "Average engagement time during the last "
 msgstr "Átlagos elköteleződési idő az elmúlt "
 
-#: class/class-mainwp-ga-ui.php:671 class/class-mainwp-ga-widgets.php:54
+#: class/class-mainwp-ga-ui.php:442 class/class-mainwp-ga-widgets.php:180
 msgid "Sessions by Source"
 msgstr "Munkamenetek forrás szerint"
 
-#: class/class-mainwp-ga-ui.php:672
+#: class/class-mainwp-ga-ui.php:443
 msgid "Sessions by source during the last "
 msgstr "Munkamenetek forrás szerint az elmúlt "
 
-#: class/class-mainwp-ga-ui.php:675 class/class-mainwp-ga-widgets.php:53
+#: class/class-mainwp-ga-ui.php:446 class/class-mainwp-ga-widgets.php:179
 msgid "Summary"
 msgstr "Összegzés"
 
-#: class/class-mainwp-ga-ui.php:676
+#: class/class-mainwp-ga-ui.php:447
 msgid "Summary data in the last "
 msgstr "Összegző adatok az elmúlt "
 
-#: class/class-mainwp-ga-ui.php:679 class/class-mainwp-ga-widgets.php:55
+#: class/class-mainwp-ga-ui.php:450 class/class-mainwp-ga-widgets.php:181
 msgid "Users by Country"
 msgstr "Felhasználók ország szerint"
 
-#: class/class-mainwp-ga-ui.php:680
+#: class/class-mainwp-ga-ui.php:451
 msgid "Users by country counts during the last "
-msgstr "Felhasználók száma ország szerint az elmúlt "
+msgstr "Az országonkénti felhasználók száma az elmúlt "
 
-#: class/class-mainwp-ga-ui.php:683
+#: class/class-mainwp-ga-ui.php:454
 msgid "Views by Page title and screen class"
 msgstr "Megtekintések oldalcím és képernyőosztály szerint"
 
-#: class/class-mainwp-ga-ui.php:684
+#: class/class-mainwp-ga-ui.php:455
 msgid "Views by Page title and screen class counts during the "
-msgstr "Megtekintések oldalcím és képernyőosztály szerinti számai az "
+msgstr "Az oldalcím és képernyőosztály szerinti megtekintések száma az elmúlt "
 
-#: class/class-mainwp-ga-ui.php:687 class/class-mainwp-ga-widgets.php:57
+#: class/class-mainwp-ga-ui.php:458 class/class-mainwp-ga-widgets.php:183
 msgid "Users by Device"
 msgstr "Felhasználók eszköz szerint"
 
-#: class/class-mainwp-ga-ui.php:688
+#: class/class-mainwp-ga-ui.php:459
 msgid "Users by device counts during the last "
-msgstr "Felhasználók eszköz szerinti számai az elmúlt "
+msgstr "Az eszközönkénti felhasználók száma az elmúlt "
 
-#: class/class-mainwp-ga-utility.php:189
+#: class/class-mainwp-ga-ui.php:550
+msgid "Session source"
+msgstr "Munkamenet forrása"
+
+#: class/class-mainwp-ga-ui.php:551
+msgid "Sessions"
+msgstr "Munkamenetek"
+
+#: class/class-mainwp-ga-ui.php:629
+msgid "Country"
+msgstr "Ország"
+
+#: class/class-mainwp-ga-ui.php:675
+msgid "Pages"
+msgstr "Oldalak"
+
+#: class/class-mainwp-ga-ui.php:719
+msgid "Device"
+msgstr "Eszköz"
+
+#: class/class-mainwp-ga-utility.php:303
+#: pages/class-mainwp-ga-page-settings.php:106
+#: pages/class-mainwp-ga-page-settings.php:108
+msgid "Settings saved successfully."
+msgstr "A beállítások sikeresen elmentve."
+
+#: class/class-mainwp-ga-utility.php:309
 msgid "Connect failed."
 msgstr "Csatlakozás sikertelen."
 
-#: class/class-mainwp-ga-utility.php:193
+#: class/class-mainwp-ga-utility.php:315
 #, php-format
 msgid ""
 "Please upload the correct Service Account JSON Key file. Refer to %1$sour "
 "help document%2$s for more information."
-msgstr ""
-"Kérjük, töltse fel a megfelelő Service Account JSON Key file-t. További "
-"információkért tekintse meg %1$ssúgódokumentumunkat%2$s."
+msgstr "Kérjük, töltse fel a megfelelő szolgáltatásfiókhoz tartozó JSON-kulcsfájlt. További információkért tekintse meg %1$sa súgódokumentumunkat%2$s."
 
-#: class/class-mainwp-ga-utility.php:197
+#: class/class-mainwp-ga-utility.php:322
 msgid "Error: upload file."
 msgstr "Hiba: fájl feltöltése."
 
-#: class/class-mainwp-ga-widgets.php:56
+#. translators: %1$s - opening link tag, %2$s - closing link tag.
+#: class/class-mainwp-ga-utility.php:587
+#, php-format
+msgid ""
+"Google OAuth requires the WordPress REST API to be enabled and reachable. "
+"Please review the %1$stroubleshooting guide%2$s."
+msgstr "A Google OAuth használatához a WordPress REST API-nak bekapcsolva és elérhetőnek kell lennie. Kérjük, tekintse meg a %1$shibaelhárítási útmutatót%2$s."
+
+#: class/class-mainwp-ga-utility.php:724
+msgid "Unknown error occurred"
+msgstr "Ismeretlen hiba történt"
+
+#: class/class-mainwp-ga-utility.php:1528
+msgid "Security check failed."
+msgstr "A biztonsági ellenőrzés sikertelen."
+
+#: class/class-mainwp-ga-utility.php:1529
+msgid "Invalid account id."
+msgstr "Érvénytelen fiókazonosító (ID)."
+
+#: class/class-mainwp-ga-utility.php:1530
+msgid "Invalid response from authentication service"
+msgstr "Hibás válasz a hitelesítési szolgáltatástól"
+
+#: class/class-mainwp-ga-utility.php:1531
+msgid ""
+"Google OAuth requires the WordPress REST API to be enabled and reachable."
+msgstr "A Google OAuth használatához a WordPress REST API-nak bekapcsolva és elérhetőnek kell lennie."
+
+#: class/class-mainwp-ga-widgets.php:182
 msgid "Views by Page"
 msgstr "Megtekintések oldal szerint"
 
-#: class/class-mainwp-ga-widgets.php:194
+#: class/class-mainwp-ga-widgets.php:215
 #, php-format
 msgid ""
 "To hide or show a widget, click the Cog (%s) icon and select options from "
@@ -397,11 +409,11 @@ msgstr ""
 "Egy widget elrejtéséhez vagy megjelenítéséhez kattintson a Fogaskerék (%s) "
 "ikonra, majd válasszon a \"Widgetek megjelenítése\" beállításai közül"
 
-#: class/class-mainwp-ga-widgets.php:267 class/class-mainwp-ga-widgets.php:414
+#: class/class-mainwp-ga-widgets.php:296 class/class-mainwp-ga-widgets.php:455
 msgid "Page Settings"
 msgstr "Oldalbeállítások"
 
-#: class/class-mainwp-ga-widgets.php:293
+#: class/class-mainwp-ga-widgets.php:325
 msgid ""
 "Returns this page to the state it was in when installed. The feature also "
 "restores any widgets you have moved through the drag and drop feature on the"
@@ -411,43 +423,520 @@ msgstr ""
 "azokat a widgeteket is, amelyeket az oldalon a fogd és vidd funkcióval "
 "áthelyezett."
 
-#: class/class-mainwp-ga-widgets.php:293
+#: class/class-mainwp-ga-widgets.php:328
 msgid "Reset Page"
-msgstr "Oldal visszaállítása"
+msgstr "Oldal alaphelyzetbe állítása"
 
-#: class/class-mainwp-ga-widgets.php:297
+#: class/class-mainwp-ga-widgets.php:332
+#: pages/class-mainwp-ga-page-settings.php:158
+msgid "Save Settings"
+msgstr "Beállítások mentése"
+
+#: class/class-mainwp-ga-widgets.php:333
 msgid "Close"
 msgstr "Bezárás"
 
-#: class/class-mainwp-ga-widgets.php:365
+#: class/class-mainwp-ga-widgets.php:385
 msgid "Show widgets"
 msgstr "Widgetek megjelenítése"
 
-#: class/class-mainwp-ga-widgets.php:366
+#: class/class-mainwp-ga-widgets.php:386
 msgid "Select widgets that you want to hide in the MainWP Overview page."
 msgstr ""
 "Válassza ki azokat a widgeteket, amelyeket el szeretne rejteni a MainWP "
 "áttekintő oldalon."
 
-#: class/class-mainwp-ga.php:487
+#. translators: %1$s = <strong>, %2$s = email address, %3$s = </strong>.
+#: class/class-mainwp-ga-widgets.php:534
+#, php-format
+msgid ""
+"%1$sGoogle Analytics %2$s accounts%3$s need to be verified. Please visit the"
+" Manage Accounts page to re-verify."
+msgstr "A %1$sGoogle Analytics %2$sfiókokat%3$s ellenőrizni kell. Kérjük, az újbóli ellenőrzéshez keresse fel a Fiókok kezelése oldalt."
+
+#: class/class-mainwp-ga-widgets.php:541
+msgid "Verify Now"
+msgstr "Ellenőrzés most"
+
+#: class/class-mainwp-ga-widgets.php:569
+msgid "Nothing to show here!"
+msgstr "Itt nincs megjeleníthető tartalom!"
+
+#: class/class-mainwp-ga-widgets.php:575
+msgid "Check back later."
+msgstr "Nézzen vissza később."
+
+#. translators: %1$s: line break, %2$s: line break
+#: class/class-mainwp-ga-widgets.php:598
+#, php-format
+msgid ""
+"Your server has the PHP function getmypid() disabled. The MainWP Google "
+"Analytics Extension requires it to run background processes used during the "
+"OAuth Sign In flow.%1$sThis affects only the Sign In authentication method. "
+"The legacy authentication method using an uploaded JSON credentials file "
+"will still work normally.%2$sPlease ask your host to enable getmypid() (or "
+"remove it from the disable_functions restriction) if you want to use Sign In"
+" authentication."
+msgstr "A szerveren ki van kapcsolva a PHP getmypid() függvénye. A MainWP Google Analytics Extensionnek szüksége van rá az OAuth-bejelentkezési folyamat során használt háttérfolyamatok futtatásához.%1$sEz csak a bejelentkezéses hitelesítési módot érinti. A feltöltött JSON-hitelesítőadat-fájlt használó régi hitelesítési mód továbbra is megfelelően működik.%2$sHa bejelentkezéses hitelesítést szeretne használni, kérje meg tárhelyszolgáltatóját, hogy kapcsolja be a getmypid() függvényt, vagy távolítsa el a disable_functions korlátozásból."
+
+#. translators: %1$s: line break
+#: class/class-mainwp-ga-widgets.php:622
+#, php-format
+msgid ""
+"Your server does not have the PHP BCMath extension enabled. The MainWP "
+"Google Analytics Extension requires it to run background processes used "
+"during the Report generation. %1$s Please ask your host to enable the BCMath"
+" extension if you want to use reporting."
+msgstr "A szerveren nincs bekapcsolva a PHP BCMath kiterjesztése. A MainWP Google Analytics Extensionnek szüksége van rá a jelentéskészítés során használt háttérfolyamatok futtatásához. %1$s Kérje meg tárhelyszolgáltatóját, hogy kapcsolja be a BCMath kiterjesztést, ha jelentéseket szeretne készíteni."
+
+#: class/class-mainwp-ga-widgets.php:643
+msgid ""
+"The lost secret for the MainWP Google Analytics Extension is corrupted. You "
+"need to recover it to be able to use the extension."
+msgstr "A MainWP Google Analytics Extension elveszett titkos kulcsa sérült. A kiterjesztés használatához helyre kell állítania a titkos kulcsot."
+
+#: class/class-mainwp-ga-widgets.php:644
+msgid "Reset Now"
+msgstr "Alaphelyzetbe állítás most"
+
+#: class/class-mainwp-ga.php:517
+msgid "Google Analytics Settings"
+msgstr "Google Analytics-beállítások"
+
+#: class/class-mainwp-ga.php:518
+msgid ""
+"Select which Google Analytics property this child site should use. This "
+"setting is managed per-site and can be changed anytime."
+msgstr "Válassza ki, hogy ez az alwebhely melyik Google Analytics-tulajdont használja. Ez a beállítás webhelyenként kezelhető, és bármikor módosítható."
+
+#: class/class-mainwp-ga.php:522
 msgid "Google Analytics property"
 msgstr "Google Analytics-tulajdon"
 
-#: class/class-mainwp-ga.php:492
+#: class/class-mainwp-ga.php:527
 msgid "Select account"
 msgstr "Fiók kiválasztása"
 
-#: class/class-mainwp-ga.php:494
+#: class/class-mainwp-ga.php:529
 msgid "No property"
-msgstr "Nincs tulajdon"
+msgstr "Nincs webhely"
 
-#: mainwp-google-analytics-extension.php:153
+#: mainwp-google-analytics-extension.php:309
 msgid ""
-"MainWP Google Analytics extension requires PHP 5.5 or higher. Activating the"
-" extension on older versions of PHP can cause fatal errors. Please contact "
-"your host support and have them update PHP for you."
-msgstr ""
-"A MainWP Google Analytics kiterjesztéshez PHP 5.5 vagy újabb szükséges. A "
-"kiterjesztés régebbi PHP-verziókon történő aktiválása végzetes hibákat "
-"okozhat. Kérjük, lépjen kapcsolatba a tárhelyszolgáltató támogatásával, és "
-"kérje meg őket, hogy frissítsék a PHP-t."
+"MainWP Google Analytics Add-on requires PHP 8.1 or higher. Activating the "
+"add-on on older versions of PHP can cause fatal errors. Please contact your "
+"host support and have them update PHP for you."
+msgstr "A MainWP Google Analytics kiegészítőhöz PHP 8.1-es vagy újabb verzió szükséges. A kiegészítő régebbi PHP-verzión történő bekapcsolása végzetes hibákat okozhat. Kérjük, vegye fel a kapcsolatot tárhelyszolgáltatója támogatásával, és kérje meg őket a PHP frissítésére."
+
+#: mainwp-google-analytics-extension.php:322
+#, php-format
+msgid ""
+"MainWP Google Analytics Extension requires %1$sMainWP Dashboard Plugin%2$s "
+"to be activated in order to work. Please install and activate %3$sMainWP "
+"Dashboard Plugin%4$s first."
+msgstr "A MainWP Google Analytics Extension működéséhez be kell kapcsolni a %1$sMainWP vezérlőpult bővítményt%2$s. Kérjük, először telepítse és kapcsolja be a %3$sMainWP vezérlőpult bővítményt%4$s."
+
+#: mainwp-google-analytics-extension.php:325
+msgid ""
+"MainWP Google Analytics could not add its encryption key to wp-config.php."
+msgstr "A MainWP Google Analytics nem tudta hozzáadni a titkosítási kulcsot a wp-config.php fájlhoz."
+
+#: mainwp-google-analytics-extension.php:325
+#, php-format
+msgid ""
+"Add the following line manually before the wp-settings.php require line. "
+"Generate a key with: %s"
+msgstr "Adja hozzá manuálisan a következő sort a wp-settings.php behívását tartalmazó sor elé. Kulcs létrehozása ezzel: %s"
+
+#: mainwp-google-analytics-extension.php:325
+msgid ""
+"If automatic setup cannot write the configuration safely, use this manual "
+"setup path. Do not grant PHP permission to change file ownership."
+msgstr "Ha az automatikus beállítás nem tudja biztonságosan módosítani a konfigurációt, használja ezt a manuális beállítási módot. Ne adjon a PHP-nak engedélyt a fájl tulajdonosának módosítására."
+
+#: mainwp-google-analytics-extension.php:325
+#, php-format
+msgid "For general wp-config.php editing guidance, see the %s."
+msgstr "A wp-config.php szerkesztésével kapcsolatos általános útmutatóért tekintse meg a következőt: %s."
+
+#: mainwp-google-analytics-extension.php:325
+msgid "WordPress documentation"
+msgstr "WordPress-dokumentáció"
+
+#: mainwp-google-analytics-extension.php:328
+msgid ""
+"MainWP Google Analytics could not safely restore wp-config.php after a "
+"failed update."
+msgstr "A MainWP Google Analytics nem tudta biztonságosan visszaállítani a wp-config.php fájlt egy sikertelen frissítés után."
+
+#: mainwp-google-analytics-extension.php:328
+msgid ""
+"Stop automatic retries and restore wp-config.php from a known-good backup "
+"immediately. If no backup is available, use the manual encryption-key setup "
+"instructions shown above, then contact your hosting provider to check disk "
+"space, permissions, ACLs and security context."
+msgstr "Azonnal állítsa le az automatikus újrapróbálkozásokat, és állítsa vissza a wp-config.php fájlt egy megbízható biztonsági mentésből. Ha nincs elérhető biztonsági mentés, kövesse a fent megjelenített, titkosítási kulcs manuális beállítására vonatkozó utasításokat, majd kérje meg tárhelyszolgáltatóját, hogy ellenőrizze a lemezterületet, az engedélyeket, az ACL-eket és a biztonsági környezetet."
+
+#: pages/class-mainwp-ga-page-accounts.php:114
+msgid "No accounts connected."
+msgstr "Nincs csatlakoztatott fiók."
+
+#: pages/class-mainwp-ga-page-accounts.php:115
+msgid "Go to the Add Account tab to connect your account."
+msgstr "Fiókja csatlakoztatásához lépjen a Fiók hozzáadása fülre."
+
+#: pages/class-mainwp-ga-page-accounts.php:129
+msgid "Accounts by Sign In"
+msgstr "Bejelentkezéssel csatlakoztatott fiókok"
+
+#: pages/class-mainwp-ga-page-accounts.php:130
+msgid ""
+"Accounts connected with the simple OAuth sign-in flow through MainWP Bridge."
+msgstr "A MainWP Bridge-en keresztüli egyszerű OAuth-bejelentkezési folyamattal csatlakoztatott fiókok."
+
+#: pages/class-mainwp-ga-page-accounts.php:133
+msgid "No Sign In accounts."
+msgstr "Nincsenek bejelentkezéssel csatlakoztatott fiókok."
+
+#: pages/class-mainwp-ga-page-accounts.php:138
+msgid "Accounts by JSON"
+msgstr "JSON-kulccsal csatlakoztatott fiókok"
+
+#: pages/class-mainwp-ga-page-accounts.php:139
+msgid "Accounts connected using your own Google Cloud JSON key file."
+msgstr "Saját Google Cloud JSON-kulcsfájljával csatlakoztatott fiókok."
+
+#: pages/class-mainwp-ga-page-accounts.php:142
+msgid "No connected accounts."
+msgstr "Nincsenek csatlakoztatott fiókok."
+
+#: pages/class-mainwp-ga-page-accounts.php:148
+#: pages/class-mainwp-ga-page-new.php:196
+msgid "Select Google Analytics Project"
+msgstr "Google Analytics-projekt kiválasztása"
+
+#: pages/class-mainwp-ga-page-accounts.php:152
+#: pages/class-mainwp-ga-page-new.php:198
+msgid "Choose the Google Analytics project you want to connect with MainWP."
+msgstr "Válassza ki azt a Google Analytics-projektet, amelyet csatlakoztatni szeretne a MainWP-hez."
+
+#: pages/class-mainwp-ga-page-accounts.php:157
+#: pages/class-mainwp-ga-page-new.php:206
+msgid "Google Analytics Account"
+msgstr "Google Analytics-fiók"
+
+#: pages/class-mainwp-ga-page-accounts.php:166
+#: pages/class-mainwp-ga-page-new.php:211
+msgid "Select Account"
+msgstr "Válasszon fiókot"
+
+#: pages/class-mainwp-ga-page-accounts.php:178
+msgid "Cancel"
+msgstr "Mégse"
+
+#: pages/class-mainwp-ga-page-accounts.php:180
+#: pages/class-mainwp-ga-page-new.php:162
+#: pages/class-mainwp-ga-page-new.php:235
+msgid "Continue"
+msgstr "Folytatás"
+
+#: pages/class-mainwp-ga-page-accounts.php:187
+#: pages/class-mainwp-ga-page-new.php:247
+msgid "Confirm Google Analytics Connection"
+msgstr "Google Analytics-kapcsolat megerősítése"
+
+#: pages/class-mainwp-ga-page-accounts.php:191
+#: pages/class-mainwp-ga-page-new.php:250
+msgid "Please review your selection and confirm to complete the setup."
+msgstr "Kérjük, ellenőrizze a kijelölést, és erősítse meg a beállítás befejezéséhez."
+
+#: pages/class-mainwp-ga-page-accounts.php:198
+#: pages/class-mainwp-ga-page-new.php:258
+msgid "Connection Summary"
+msgstr "Kapcsolat összefoglalása"
+
+#: pages/class-mainwp-ga-page-accounts.php:204
+#: pages/class-mainwp-ga-page-new.php:263
+msgid "Google Account"
+msgstr "Google-fiók"
+
+#: pages/class-mainwp-ga-page-accounts.php:209
+#: pages/class-mainwp-ga-page-new.php:268
+msgid "Analytics Account"
+msgstr "Analytics-fiók"
+
+#: pages/class-mainwp-ga-page-accounts.php:222
+#: pages/class-mainwp-ga-page-new.php:229
+#: pages/class-mainwp-ga-page-new.php:285
+msgid "Back"
+msgstr "Vissza"
+
+#: pages/class-mainwp-ga-page-accounts.php:224
+#: pages/class-mainwp-ga-page-new.php:129
+#: pages/class-mainwp-ga-page-new.php:291
+msgid "Confirm"
+msgstr "Megerősítés"
+
+#: pages/class-mainwp-ga-page-accounts.php:378
+msgid "No Properties Found"
+msgstr "Nem található tulajdon"
+
+#: pages/class-mainwp-ga-page-accounts.php:379
+msgid "No properties found"
+msgstr "Nem található tulajdon"
+
+#: pages/class-mainwp-ga-page-accounts.php:383
+msgid "Retry Properties"
+msgstr "Tulajdonok újbóli lekérése"
+
+#: pages/class-mainwp-ga-page-accounts.php:391
+#: pages/class-mainwp-ga-page-accounts.php:465
+msgid "Connected"
+msgstr "Csatlakoztatva"
+
+#: pages/class-mainwp-ga-page-accounts.php:396
+#: pages/class-mainwp-ga-page-accounts.php:433
+#: pages/class-mainwp-ga-page-settings.php:159
+msgid "Refresh Data"
+msgstr "Adatok frissítése"
+
+#: pages/class-mainwp-ga-page-accounts.php:403
+msgid "Disconnected"
+msgstr "Leválasztva"
+
+#: pages/class-mainwp-ga-page-accounts.php:408
+msgid "Reconnect Account"
+msgstr "Fiók újbóli csatlakoztatása"
+
+#: pages/class-mainwp-ga-page-accounts.php:431
+msgid "Bulk Actions"
+msgstr "Tömeges műveletek"
+
+#: pages/class-mainwp-ga-page-accounts.php:434
+#: pages/class-mainwp-ga-page-accounts.php:546
+msgid "Remove Account"
+msgstr "Fiók eltávolítása"
+
+#: pages/class-mainwp-ga-page-accounts.php:438
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#: pages/class-mainwp-ga-page-accounts.php:447
+msgid "Select all accounts."
+msgstr "Összes fiók kiválasztása."
+
+#: pages/class-mainwp-ga-page-accounts.php:448
+msgid "Select all accounts"
+msgstr "Összes fiók kiválasztása"
+
+#: pages/class-mainwp-ga-page-accounts.php:453
+msgid "Project ID"
+msgstr "Projektazonosító"
+
+#: pages/class-mainwp-ga-page-accounts.php:455
+msgid "Status"
+msgstr "Állapot"
+
+#: pages/class-mainwp-ga-page-accounts.php:457
+msgid "Client Email"
+msgstr "Ügyfél e-mail-címe"
+
+#: pages/class-mainwp-ga-page-accounts.php:458
+msgid "Client ID"
+msgstr "Ügyfél-ID"
+
+#: pages/class-mainwp-ga-page-accounts.php:459
+msgid "Key File JSON"
+msgstr "JSON-kulcsfájl"
+
+#: pages/class-mainwp-ga-page-accounts.php:461
+msgid "Accounts"
+msgstr "Fiókok"
+
+#: pages/class-mainwp-ga-page-accounts.php:463
+msgid "Properties / Apps"
+msgstr "Tulajdonok / alkalmazások"
+
+#: pages/class-mainwp-ga-page-accounts.php:493
+#, php-format
+msgid "Select account %s"
+msgstr "%s fiók kiválasztása"
+
+#: pages/class-mainwp-ga-page-new.php:93
+#: pages/class-mainwp-ga-page-new.php:182
+msgid "Sign In with Google"
+msgstr "Bejelentkezés Google-fiókkal"
+
+#: pages/class-mainwp-ga-page-new.php:96
+msgid "Import JSON File"
+msgstr "JSON-fájl importálása"
+
+#: pages/class-mainwp-ga-page-new.php:104
+msgid ""
+"Sign In with Google is disabled on this PHP version. Please upgrade to PHP "
+"8.1 or higher, or use the \"Import JSON File\" tab to connect with a Service"
+" Account."
+msgstr "A Google-fiókkal való bejelentkezés ezen a PHP-verzión ki van kapcsolva. Kérjük, frissítsen PHP 8.1-es vagy újabb verzióra, vagy használja a „JSON-fájl importálása” fület a szolgáltatásfiók csatlakoztatásához."
+
+#: pages/class-mainwp-ga-page-new.php:113
+msgid "Sign In"
+msgstr "Bejelentkezés"
+
+#: pages/class-mainwp-ga-page-new.php:115
+msgid "Connect with Google"
+msgstr "Kapcsolódás a Google-hoz"
+
+#: pages/class-mainwp-ga-page-new.php:121
+msgid "Select Project"
+msgstr "Válassza ki a projektet"
+
+#: pages/class-mainwp-ga-page-new.php:123
+msgid "Choose your GA project"
+msgstr "GA-projekt kiválasztása"
+
+#: pages/class-mainwp-ga-page-new.php:131
+msgid "Review and confirm"
+msgstr "Áttekintés és megerősítés"
+
+#: pages/class-mainwp-ga-page-new.php:141
+msgid "Connect to Google Analytics"
+msgstr "Kapcsolódás a Google Analyticshez"
+
+#: pages/class-mainwp-ga-page-new.php:146
+msgid ""
+"You are already signed in with Google Analytics. Would you like to continue "
+"with the current connection or start over?"
+msgstr "Már bejelentkezett a Google Analyticsbe. Szeretné folytatni a jelenlegi kapcsolat használatát, vagy újrakezdeni?"
+
+#: pages/class-mainwp-ga-page-new.php:155
+msgid "Start Over"
+msgstr "Kezdés elölről"
+
+#: pages/class-mainwp-ga-page-new.php:172
+msgid ""
+"Click the button below to sign in with your Google account and authorize "
+"access to your Analytics data."
+msgstr "Kattintson az alábbi gombra a Google-fiókjába való bejelentkezéshez és az Analytics-adatokhoz való hozzáférés engedélyezéséhez."
+
+#: pages/class-mainwp-ga-page-new.php:302
+msgid ""
+"Click the button below to access your Google API Console, and there, "
+"activate the Analytics API and create a Client ID in the API Access section."
+msgstr "Kattintson az alábbi gombra a Google API Console eléréséhez, majd ott kapcsolja be az Analytics API-t, és hozzon létre egy Client ID-t az API Access szakaszban."
+
+#: pages/class-mainwp-ga-page-new.php:305
+msgid "Google API Console"
+msgstr "Google API Console"
+
+#. translators: %1$s - open link, %2$s - close link.
+#: pages/class-mainwp-ga-page-new.php:313
+#, php-format
+msgid ""
+"For the additional help for the extension, please check the %1$sextension "
+"documentation%2$s."
+msgstr "A kiterjesztéssel kapcsolatos további segítségért tekintse meg a %1$skiterjesztés dokumentációját%2$s."
+
+#: pages/class-mainwp-ga-page-new.php:332
+msgid "Connect Google Analytics Service Account"
+msgstr "Google Analytics szolgáltatásfiók csatlakoztatása"
+
+#: pages/class-mainwp-ga-page-new.php:348
+msgid "Connect Account"
+msgstr "Fiók csatlakoztatása"
+
+#: pages/class-mainwp-ga-page-new.php:356
+msgid "Data Synchronization"
+msgstr "Adatszinkronizálás"
+
+#: pages/class-mainwp-ga-page-new.php:360
+msgid "synced"
+msgstr "szinkronizálva"
+
+#: pages/class-mainwp-ga-page-settings.php:111
+msgid "Failed."
+msgstr "Sikertelen."
+
+#: pages/class-mainwp-ga-page-settings.php:128
+msgid "Graphs display interval"
+msgstr "Grafikonok megjelenítési időköze"
+
+#: pages/class-mainwp-ga-page-settings.php:131
+msgid "Week"
+msgstr "Hét"
+
+#: pages/class-mainwp-ga-page-settings.php:132
+msgid "Month"
+msgstr "Hónap"
+
+#: pages/class-mainwp-ga-page-settings.php:138
+msgid "Schedule data refresh process."
+msgstr "Az adatfrissítési folyamat időzítése."
+
+#: pages/class-mainwp-ga-page-settings.php:144
+msgid "Auto fetch GA data frequency"
+msgstr "A GA-adatok automatikus lekérésének gyakorisága"
+
+#: pages/class-mainwp-ga-page-settings.php:147
+msgid "Every hour"
+msgstr "Óránként"
+
+#: pages/class-mainwp-ga-page-settings.php:148
+msgid "Every 3 hours"
+msgstr "3 óránként"
+
+#: pages/class-mainwp-ga-page-settings.php:149
+msgid "Every 9 hours"
+msgstr "9 óránként"
+
+#: pages/class-mainwp-ga-page-settings.php:150
+msgid "Every 15 hours"
+msgstr "15 óránként"
+
+#: pages/class-mainwp-ga-page-settings.php:151
+msgid "Every 18 hours"
+msgstr "18 óránként"
+
+#: pages/class-mainwp-ga-page-settings.php:152
+msgid "Every 24 hours"
+msgstr "24 óránként"
+
+#, php-format
+#~ msgid ""
+#~ "%sNo Google Analytics data available.%s Please ensure you have connected "
+#~ "your Google Analytics account and %sassigned GA properties%s to your MainWP "
+#~ "sites to view analytics data."
+#~ msgstr ""
+#~ "%sNem állnak rendelkezésre Google Analytics-adatok.%s Kérjük, győződjön meg "
+#~ "róla, hogy csatlakoztatta a Google Analytics-fiókját, és %sGA-tulajdonokat "
+#~ "rendelt%s MainWP webhelyeihez az analitikai adatok megtekintéséhez."
+
+#~ msgid "Disonnected"
+#~ msgstr "Leválasztva"
+
+#~ msgid "No connected accounts"
+#~ msgstr "Nincsenek csatlakoztatott fiókok"
+
+#~ msgid "Google Analytics Extension Settings"
+#~ msgstr "Google Analytics kiegészítő beállításai"
+
+#~ msgid "Display interval"
+#~ msgstr "Megjelenítési időszak"
+
+#~ msgid "Data refresh frequency"
+#~ msgstr "Adatfrissítés gyakorisága"
+
+#~ msgid " Last "
+#~ msgstr " Utolsó "
+
+#~ msgid " Preceding period "
+#~ msgstr " Megelőző időszak "
+
+#~ msgid ""
+#~ "MainWP Google Analytics extension requires PHP 5.5 or higher. Activating the"
+#~ " extension on older versions of PHP can cause fatal errors. Please contact "
+#~ "your host support and have them update PHP for you."
+#~ msgstr ""
+#~ "A MainWP Google Analytics kiterjesztéshez PHP 5.5 vagy újabb szükséges. A "
+#~ "kiterjesztés régebbi PHP-verziókon történő aktiválása végzetes hibákat "
+#~ "okozhat. Kérjük, lépjen kapcsolatba a tárhelyszolgáltató támogatásával, és "
+#~ "kérje meg őket, hogy frissítsék a PHP-t."

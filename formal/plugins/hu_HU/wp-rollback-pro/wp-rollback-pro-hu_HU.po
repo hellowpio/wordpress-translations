@@ -1,0 +1,2847 @@
+# Copyright (C) 2026 WP Rollback
+# This file is distributed under the same license as the WP Rollback Pro plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Rollback Pro 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-rollback-pro\n"
+"POT-Creation-Date: 2026-10-08T05:11:33+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: wp-rollback-pro\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: WP Rollback Pro\n"
+"X-Plugin-Tone: formal\n"
+"X-Plugin-Version: 2.0.0\n"
+
+#. Plugin Name of the plugin
+#: wp-rollback-pro.php src/Rollbacks/Actions/RegisterAdminMenu.php:26
+#: src/Rollbacks/Actions/RegisterAdminMenu.php:34 build/tools.js:1
+msgid "WP Rollback Pro"
+msgstr "WP Rollback Pro"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: wp-rollback-pro.php
+msgid "https://wprollback.com/"
+msgstr "https://wprollback.com/"
+
+#. Description of the plugin
+#: wp-rollback-pro.php
+msgid ""
+"Roll back any WordPress plugin or theme — free OR premium — with advanced "
+"controls and features built in."
+msgstr "Állítson vissza bármilyen WordPress-bővítményt vagy -sablont – ingyeneset VAGY prémiumot – a beépített haladó vezérlőkkel és funkciókkal."
+
+#. Author of the plugin
+#: wp-rollback-pro.php src/Abilities/RollbackAbilities.php:55
+msgid "WP Rollback"
+msgstr "WP Rollback"
+
+#: src/Abilities/RollbackAbilities.php:56
+msgid ""
+"Roll back plugins and themes to other versions, and review past rollbacks."
+msgstr "Állítsa vissza a bővítményeket és sablonokat egyéb verziókra, és tekintse át a korábbi visszaállításokat."
+
+#: src/Abilities/RollbackAbilities.php:72
+msgid "Whether the asset is a plugin or a theme."
+msgstr "Azt jelzi, hogy az eszköz bővítmény vagy sablon-e."
+
+#: src/Abilities/RollbackAbilities.php:77
+msgid ""
+"The plugin or theme slug: its folder name, for example \"woocommerce\" or "
+"\"astra\"."
+msgstr "A bővítmény vagy sablon slugja: a mappa neve, például „woocommerce” vagy „astra”."
+
+#: src/Abilities/RollbackAbilities.php:84
+msgid "Get available versions"
+msgstr "Elérhető verziók lekérése"
+
+#: src/Abilities/RollbackAbilities.php:85
+msgid ""
+"Lists the versions an installed plugin or theme can be rolled back to, "
+"newest first, and which one is installed. Each version says where it comes "
+"from: WordPress.org, a Local backup made on this site, or Plugin Vault. Use "
+"it before a rollback to pick a version."
+msgstr "Felsorolja a telepített bővítmény vagy sablon visszaállítható verzióit a legújabbal kezdve, valamint megadja a telepített verziót. Minden verziónál látható, honnan származik: a WordPress.org-ról, egy ezen a webhelyen létrehozott helyi biztonsági mentésből vagy a Plugin Vaultból. Verzió kiválasztásához használja a visszaállítás előtt."
+
+#: src/Abilities/RollbackAbilities.php:95
+msgid "The plugin or theme name."
+msgstr "A bővítmény vagy sablon neve."
+
+#: src/Abilities/RollbackAbilities.php:96
+msgid "The installed version."
+msgstr "A telepített verzió."
+
+#: src/Abilities/RollbackAbilities.php:106
+msgid ""
+"Where the version comes from. Null for an installed premium version with no "
+"backup."
+msgstr "A verzió forrása. Értéke null, ha prémium verzió van telepítve, és nincs róla biztonsági mentés."
+
+#: src/Abilities/RollbackAbilities.php:108
+msgid "Release time as a Unix timestamp, when known."
+msgstr "A kiadás időpontja Unix-időbélyegként, ha ismert."
+
+#: src/Abilities/RollbackAbilities.php:124
+msgid "Roll back a plugin or theme"
+msgstr "Bővítmény vagy sablon visszaállítása"
+
+#: src/Abilities/RollbackAbilities.php:125
+msgid ""
+"Replaces an installed plugin or theme with another version, the same way the"
+" WP Rollback screen does: it turns on maintenance mode, downloads the "
+"version, backs up the installed one, checks the package, replaces the files "
+"and reactivates the plugin if it was active. Settings in the database are "
+"kept. Get the available versions first."
+msgstr "A telepített bővítményt vagy sablont egy másik verzióra cseréli, ugyanúgy, ahogy a WP Rollback felülete: bekapcsolja a karbantartási módot, letölti a verziót, biztonsági mentést készít a telepített változatról, ellenőrzi a csomagot, lecseréli a fájlokat, majd újraaktiválja a bővítményt, ha az aktív volt. Az adatbázisban tárolt beállítások megmaradnak. Először kérje le az elérhető verziókat."
+
+#: src/Abilities/RollbackAbilities.php:132
+msgid "The version to install, as listed by wp-rollback/get-versions."
+msgstr "A telepítendő verzió a wp-rollback/get-versions által felsoroltak közül."
+
+#: src/Abilities/RollbackAbilities.php:143
+msgid "The version now installed."
+msgstr "A jelenleg telepített verzió."
+
+#: src/Abilities/RollbackAbilities.php:157
+msgid "Get rollback history"
+msgstr "Visszaállítási előzmények lekérése"
+
+#: src/Abilities/RollbackAbilities.php:158
+msgid ""
+"Returns recent plugin and theme rollbacks from the Activity Log, newest "
+"first: what was rolled back, from and to which version, whether it worked, "
+"who did it and when."
+msgstr "A történések naplójából visszaadja a bővítmények és sablonok legutóbbi visszaállításait, a legújabbal kezdve: mit állítottak vissza, melyik verzióról melyikre, sikeres volt-e a művelet, ki végezte el és mikor."
+
+#: src/Abilities/RollbackAbilities.php:186
+msgid "When it happened, in ISO 8601 with the site's UTC offset."
+msgstr "Az esemény időpontja ISO 8601-formátumban, a webhely UTC-eltolásával."
+
+#: src/ActivityLog/Manager/RollbackMetaManager.php:31
+msgid "Admin notes about the rollback operation"
+msgstr "Adminjegyzetek a visszaállítási műveletről"
+
+#: src/ActivityLog/Privacy/ActivityLogPrivacy.php:39
+msgid ""
+"WP Rollback Pro records a log entry whenever a plugin or theme on this site "
+"is rolled back or a restore point (backup archive) is created, including the"
+" WordPress user who triggered the action and the time it occurred. These "
+"records are shown on the WP Rollback Pro dashboard. When a user is erased "
+"via the Privacy tools, their identifier is removed from these rows, but the "
+"activity itself (which plugin/theme, which version, when) is retained as an "
+"operational audit record."
+msgstr "A WP Rollback Pro naplóbejegyzést rögzít, amikor ezen a webhelyen egy bővítményt vagy sablont visszaállítanak, illetve visszaállítási pontot (biztonsági mentési archívumot) hoznak létre. A bejegyzés tartalmazza a műveletet kezdeményező WordPress-felhasználót és a művelet időpontját. Ezek a bejegyzések a WP Rollback Pro vezérlőpultján jelennek meg. Ha egy felhasználót az adatvédelmi eszközökkel törölnek, az azonosítója eltávolításra kerül ezekből a sorokból, de a művelet adatai (melyik bővítmény vagy sablon, melyik verzió, mikor) megmaradnak működési naplóbejegyzésként."
+
+#: src/ActivityLog/Privacy/ActivityLogPrivacy.php:54
+#: src/ActivityLog/Privacy/ActivityLogPrivacy.php:67
+#: src/ActivityLog/Privacy/ActivityLogPrivacy.php:106
+msgid "WP Rollback Pro Activity Log"
+msgstr "WP Rollback Pro történések naplója"
+
+#: src/ActivityLog/Privacy/ActivityLogPrivacy.php:109
+msgid "Type"
+msgstr "Típus"
+
+#: src/ActivityLog/Privacy/ActivityLogPrivacy.php:110 build/tools.js:31
+msgid "Asset"
+msgstr "Eszköz"
+
+#: src/ActivityLog/Privacy/ActivityLogPrivacy.php:111
+msgid "Slug"
+msgstr "Slug"
+
+#: src/ActivityLog/Privacy/ActivityLogPrivacy.php:112
+msgid "Version from"
+msgstr "Kiinduló verzió"
+
+#: src/ActivityLog/Privacy/ActivityLogPrivacy.php:113
+msgid "Version to"
+msgstr "Célverzió"
+
+#: src/ActivityLog/Privacy/ActivityLogPrivacy.php:114
+#: src/Reports/Privacy/PrivacyContent.php:100
+#: src/Reports/Privacy/PrivacyContent.php:116 build/tools.js:31
+#: build/tools.js:35
+msgid "Status"
+msgstr "Állapot"
+
+#: src/ActivityLog/Privacy/ActivityLogPrivacy.php:115 build/tools.js:31
+msgid "Action"
+msgstr "Művelet"
+
+#: src/ActivityLog/Privacy/ActivityLogPrivacy.php:116
+msgid "Context"
+msgstr "Kontextus"
+
+#: src/ActivityLog/Privacy/ActivityLogPrivacy.php:117
+msgid "Recorded at"
+msgstr "Rögzítés időpontja"
+
+#: src/ActivityLog/Privacy/ActivityLogPrivacy.php:155
+msgid ""
+"Activity log rows have been de-identified (action history retained as an "
+"operational audit record)."
+msgstr "A történések naplójának sorait anonimizáltuk (a műveleti előzmények működési naplóbejegyzésként megmaradnak)."
+
+#: src/ActivityLog/REST/ActivityLogController.php:119
+msgid "Unique identifier for the activity log item."
+msgstr "A történések naplójában szereplő tétel egyedi azonosítója."
+
+#: src/ActivityLog/REST/ActivityLogController.php:124
+msgid "Admin note for the rollback activity."
+msgstr "Admin megjegyzés a visszaállítási műveletről."
+
+#: src/ActivityLog/REST/ActivityLogController.php:175
+msgid "System Update"
+msgstr "Rendszerfrissítés"
+
+#: src/ActivityLog/REST/ActivityLogController.php:209
+msgid "ago"
+msgstr "ezelőtt"
+
+#: src/ActivityLog/REST/ActivityLogController.php:245
+msgid "Activity log item not found."
+msgstr "A történések naplójában szereplő tétel nem található."
+
+#: src/ActivityLog/REST/ActivityLogController.php:256
+msgid "Failed to update activity log item."
+msgstr "A történések naplójában szereplő tétel frissítése sikertelen."
+
+#: src/ActivityLog/REST/ActivityLogController.php:263
+msgid "Activity log item updated successfully."
+msgstr "A történések naplójának tétele sikeresen frissítve."
+
+#: src/ActivityLog/REST/ArchivesController.php:90
+#: src/ActivityLog/REST/ArchivesController.php:111
+msgid "Archive ID"
+msgstr "Archívumazonosító (ID)"
+
+#: src/ActivityLog/REST/ArchivesController.php:133
+msgid "You do not have permission to view archives."
+msgstr "Önnek nincs jogosultsága az archívumok megtekintésére."
+
+#: src/ActivityLog/REST/ArchivesController.php:186
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: src/ActivityLog/REST/ArchivesController.php:209
+msgid "Failed to fetch archives."
+msgstr "Az archívumok lekérése sikertelen."
+
+#: src/ActivityLog/REST/ArchivesController.php:228
+msgid "You must be logged in to download archives."
+msgstr "Az archívumok letöltéséhez be kell jelentkeznie."
+
+#: src/ActivityLog/REST/ArchivesController.php:236
+msgid "You do not have permission to download archives."
+msgstr "Önnek nincs jogosultsága az archívumok letöltésére."
+
+#: src/ActivityLog/REST/ArchivesController.php:260
+msgid "Archive record not found."
+msgstr "Az archívumbejegyzés nem található."
+
+#: src/ActivityLog/REST/ArchivesController.php:268
+msgid "No file path found for this archive."
+msgstr "Nem található fájlútvonal ehhez az archívumhoz."
+
+#. translators: %s: file path
+#: src/ActivityLog/REST/ArchivesController.php:281
+#, php-format
+msgid "Archive file not found at path: %s"
+msgstr "Az archívum fájlja nem található ezen az útvonalon: %s"
+
+#: src/ActivityLog/REST/ArchivesController.php:291
+#: src/ActivityLog/REST/ArchivesController.php:395
+msgid "Archive file path is outside the allowed directory."
+msgstr "Az archívum fájlja az engedélyezett könyvtáron kívül található."
+
+#: src/ActivityLog/REST/ArchivesController.php:299
+msgid "Archive file exists but is not readable."
+msgstr "Az archívum fájlja létezik, de nem olvasható."
+
+#: src/ActivityLog/REST/ArchivesController.php:333
+msgid "Failed to open archive file."
+msgstr "Nem sikerült megnyitni az archívum fájlját."
+
+#: src/ActivityLog/REST/ArchivesController.php:358
+msgid "You do not have permission to delete archives."
+msgstr "Nincs engedélye archívumok törlésére."
+
+#: src/ActivityLog/REST/ArchivesController.php:382
+msgid "Archive not found."
+msgstr "Az archívum nem található."
+
+#: src/ActivityLog/REST/ArchivesController.php:403
+msgid "Failed to delete archive file."
+msgstr "Nem sikerült törölni az archívum fájlját."
+
+#: src/ActivityLog/REST/ArchivesController.php:410
+msgid "Failed to delete archive from database."
+msgstr "Nem sikerült törölni az archívumot az adatbázisból."
+
+#: src/ActivityLog/REST/ArchivesController.php:417
+msgid "Archive deleted successfully."
+msgstr "Az archívum törlése sikerült."
+
+#: src/ActivityLog/REST/ArchivesController.php:430
+msgid "Current page of the collection."
+msgstr "A gyűjtemény aktuális oldala."
+
+#: src/ActivityLog/REST/ArchivesController.php:438
+msgid "Maximum number of items to be returned in result set."
+msgstr "Az eredményhalmazban visszaadandó tételek maximális száma."
+
+#: src/ActivityLog/REST/ArchivesController.php:447
+msgid "Filter by asset type."
+msgstr "Szűrés eszköztípus szerint."
+
+#: src/ActivityLog/REST/ArchivesController.php:454
+msgid "Sort collection by field."
+msgstr "A gyűjtemény rendezése mező szerint."
+
+#: src/ActivityLog/REST/ArchivesController.php:462
+msgid "Order sort attribute ascending or descending."
+msgstr "Sorrendezési attribútum növekvő vagy csökkenő sorrendben."
+
+#. translators: %s: asset type
+#: src/CLI/RollbackCommand.php:88 src/CLI/RollbackCommand.php:176
+#, php-format
+msgid "Please provide a %s slug."
+msgstr "Adja meg a(z) %s slugot."
+
+#. translators: 1: asset type, 2: slug
+#: src/CLI/RollbackCommand.php:100
+#, php-format
+msgid "Fetching available versions for %1$s \"%2$s\"…"
+msgstr "A(z) %1$s „%2$s” elérhető verzióinak lekérése…"
+
+#. translators: %s: slug
+#: src/CLI/RollbackCommand.php:118
+#, php-format
+msgid "No versions found for \"%s\"."
+msgstr "Nem található verzió ehhez: „%s”."
+
+#: src/CLI/RollbackCommand.php:183
+msgid "Please provide a version to roll back to."
+msgstr "Adja meg a visszaállítás célverzióját."
+
+#. translators: 1: asset type, 2: slug, 3: version
+#: src/CLI/RollbackCommand.php:194
+#, php-format
+msgid "Roll back %1$s \"%2$s\" to version %3$s?"
+msgstr "Visszaállítja a(z) %1$s „%2$s” elemet a(z) %3$s verzióra?"
+
+#. translators: 1: slug, 2: version
+#: src/CLI/RollbackCommand.php:215
+#, php-format
+msgid "Rolling back \"%1$s\" to %2$s"
+msgstr "A „%1$s” visszaállítása erre: %2$s"
+
+#. translators: %s: error message
+#: src/CLI/RollbackCommand.php:238
+#, php-format
+msgid "Rollback failed: %s"
+msgstr "A visszaállítás sikertelen: %s"
+
+#. translators: 1: asset type, 2: slug, 3: version
+#: src/CLI/RollbackCommand.php:247
+#, php-format
+msgid "Successfully rolled back %1$s \"%2$s\" to version %3$s."
+msgstr "A(z) %1$s „%2$s” visszaállítása a(z) %3$s verzióra sikerült."
+
+#: src/Dashboard/REST/DashboardController.php:66
+msgid "You do not have permission to view the WP Rollback dashboard."
+msgstr "Nincs engedélye a WP Rollback vezérlőpultjának megtekintésére."
+
+#: src/Licensing/LicenseNotice.php:30 build/tools.js:2
+msgid "License required."
+msgstr "Licenc szükséges."
+
+#: src/Licensing/LicenseNotice.php:31
+msgid ""
+"A valid license is required to access WP Rollback Pro features. Please "
+"activate your license to continue."
+msgstr "A WP Rollback Pro funkcióinak eléréséhez érvényes licenc szükséges. Kérjük, aktiválja a licencet a folytatáshoz."
+
+#: src/Licensing/LicenseNotice.php:33 build/tools.js:35
+msgid "Activate License"
+msgstr "Licenc aktiválása"
+
+#: src/Licensing/LicenseNotice.php:36 build/tools.js:2
+msgid "License expired."
+msgstr "A licenc lejárt."
+
+#: src/Licensing/LicenseNotice.php:37
+msgid ""
+"Your WP Rollback Pro license has expired. Please renew your license to "
+"continue using Pro features."
+msgstr "A WP Rollback Pro licence lejárt. Kérjük, újítsa meg a licencet a Pro funkciók további használatához."
+
+#: src/Licensing/LicenseNotice.php:39
+msgid "Renew License"
+msgstr "Licenc megújítása"
+
+#: src/Licensing/LicenseNotice.php:42 build/tools.js:2
+msgid "License registration required."
+msgstr "Licenc-regisztráció szükséges."
+
+#: src/Licensing/LicenseNotice.php:43
+msgid ""
+"Your WP Rollback Pro license is active but not registered for this domain."
+msgstr "A WP Rollback Pro licence aktív, de nincs regisztrálva ehhez a domainhez."
+
+#: src/Licensing/LicenseNotice.php:45
+msgid "Register License"
+msgstr "Licenc regisztrálása"
+
+#: src/Licensing/LicenseNotice.php:48 build/tools.js:2
+msgid "Invalid license."
+msgstr "Érvénytelen licenc."
+
+#: src/Licensing/LicenseNotice.php:49
+msgid "Your WP Rollback Pro license key is invalid or has been disabled."
+msgstr "A WP Rollback Pro licenckulcsa hibás vagy ki van kapcsolva."
+
+#: src/Licensing/LicenseNotice.php:51
+msgid "Manage License"
+msgstr "Licenc kezelése"
+
+#: src/PluginSetup/FreePluginConflictNotice.php:107
+msgid ""
+"WP Rollback Pro is now active. The free version was deactivated "
+"automatically, and your existing rollback archives are preserved."
+msgstr "A WP Rollback Pro mostantól aktív. Az ingyenes verzió automatikusan kikapcsolásra került, a meglévő visszaállítási archívumok pedig megmaradtak."
+
+#: src/PluginSetup/FreePluginConflictNotice.php:135
+msgid "Deactivate WP Rollback (Free)"
+msgstr "A WP Rollback (ingyenes) kikapcsolása"
+
+#: src/PluginSetup/FreePluginConflictNotice.php:136
+msgid "Open Plugins screen"
+msgstr "A bővítmények képernyő megnyitása"
+
+#: src/PluginSetup/FreePluginConflictNotice.php:140
+msgid "WP Rollback Pro is paused while WP Rollback (Free) is active."
+msgstr "A WP Rollback Pro szünetel, amíg a WP Rollback (ingyenes) aktív."
+
+#: src/PluginSetup/PluginMeta.php:36 build/tools.js:1
+msgid "Dashboard"
+msgstr "Vezérlőpult"
+
+#: src/PluginSetup/PluginMeta.php:68 build/tools.js:1
+msgid "Documentation"
+msgstr "Dokumentáció"
+
+#: src/PluginSetup/PluginMeta.php:82 build/tools.js:1
+msgid "Support"
+msgstr "Támogatás"
+
+#: src/Reports/Cron/CronSchedules.php:35
+msgid "Once Monthly"
+msgstr "Havonta egyszer"
+
+#: src/Reports/Cron/CronSchedules.php:42
+msgid "Once Quarterly"
+msgstr "Negyedévente"
+
+#: src/Reports/Engine/ReportPeriod.php:167
+msgid "week"
+msgstr "hét"
+
+#: src/Reports/Engine/ReportPeriod.php:169
+msgid "quarter"
+msgstr "negyedév"
+
+#: src/Reports/Engine/ReportPeriod.php:172
+msgid "month"
+msgstr "hónap"
+
+#: src/Reports/Engine/Stats/AlertCollector.php:80
+msgid "Your WP Rollback Pro license has expired"
+msgstr "A WP Rollback Pro licence lejárt"
+
+#: src/Reports/Engine/Stats/AlertCollector.php:81
+msgid ""
+"Renew now to keep receiving updates and Plugin Vault access. Status reports "
+"will continue to send."
+msgstr "Újítsa meg most, hogy továbbra is megkapja a frissítéseket, és hozzáférjen a bővítménytárhoz. Az állapotjelentések küldése folytatódik."
+
+#: src/Reports/Engine/Stats/AlertCollector.php:87
+msgid "Your WP Rollback Pro license is no longer active"
+msgstr "A WP Rollback Pro licence már nem aktív"
+
+#: src/Reports/Engine/Stats/AlertCollector.php:88
+msgid ""
+"Renew or reactivate it in Tools → WP Rollback Pro → Settings → License to "
+"keep receiving updates and Plugin Vault access. Status reports will continue"
+" to send."
+msgstr "Újítsa meg vagy aktiválja újra a licencet az Eszközök → WP Rollback Pro → Beállítások → Licenc résznél, hogy továbbra is megkapja a frissítéseket és hozzáférjen a Plugin Vault szolgáltatáshoz. Az állapotjelentések továbbra is elküldésre kerülnek."
+
+#. translators: %d: asset count
+#: src/Reports/Engine/Stats/AlertCollector.php:123
+#, php-format
+msgid "%d asset is near its archive limit"
+msgid_plural "%d assets are near their archive limit"
+msgstr[0] "%d elem közel van az archívumkorlátjához"
+msgstr[1] "%d elem közel van az archívumkorlátjához"
+
+#. translators: %d: configured archive limit
+#: src/Reports/Engine/Stats/AlertCollector.php:128
+#, php-format
+msgid ""
+"Older versions will be deleted to make room for new ones. Raise the per-"
+"asset archive limit (currently %d) in Settings → Archives if you want to "
+"keep more."
+msgstr "A régebbi verziók törlődnek, hogy helyet biztosítsanak az újaknak. Ha többet szeretne megőrizni, növelje az eszközönkénti archívumkorlátot (jelenleg %d) a Beállítások → Archívumok résznél."
+
+#. translators: %d: failed rollback count
+#: src/Reports/Engine/Stats/AlertCollector.php:159
+#, php-format
+msgid "%d rollback failed this period"
+msgid_plural "%d rollbacks failed this period"
+msgstr[0] "Ebben az időszakban %d visszaállítás sikertelen"
+msgstr[1] "Ebben az időszakban %d visszaállítás sikertelen"
+
+#: src/Reports/Engine/Stats/AlertCollector.php:162
+msgid ""
+"Check Rollback history on the Dashboard in Tools → WP Rollback Pro for the "
+"failure reason — usually a corrupted ZIP or a permission issue."
+msgstr "A hiba okát az Eszközök → WP Rollback Pro alatt elérhető Vezérlőpult visszaállítási előzményeiben ellenőrizheti. A hiba oka általában sérült ZIP-fájl vagy jogosultsági probléma."
+
+#: src/Reports/Engine/Stats/AlertCollector.php:186
+msgid "WP-Cron may not be running on schedule"
+msgstr "Előfordulhat, hogy a WP-Cron nem a beállított időzítés szerint fut"
+
+#: src/Reports/Engine/Stats/AlertCollector.php:187
+msgid ""
+"Your scheduled status report is overdue. On low-traffic sites, set "
+"DISABLE_WP_CRON to true in wp-config.php and add a real OS cron entry for "
+"tighter scheduling."
+msgstr "Az ütemezett állapotjelentés késik. Alacsony forgalmú webhelyeken állítsa a DISABLE_WP_CRON értékét true-ra a wp-config.php fájlban, és adjon hozzá egy valódi operációsrendszer-szintű cron-bejegyzést a pontosabb időzítéshez."
+
+#: src/Reports/Engine/Stats/HeroStatCollector.php:49
+msgid "Welcome to WP Rollback Pro reports"
+msgstr "Üdvözöljük a WP Rollback Pro jelentéseiben"
+
+#. translators: %s: noun like "month" or "week"
+#: src/Reports/Engine/Stats/HeroStatCollector.php:52
+#, php-format
+msgid ""
+"You'll get one of these every %s. Here's a snapshot of what we're already "
+"protecting today."
+msgstr "Ilyen jelentést %s rendszerességgel fog kapni. Íme egy pillanatkép arról, hogy mit védünk már ma."
+
+#: src/Reports/Engine/Stats/HeroStatCollector.php:65
+#: src/Reports/Engine/Stats/HeroStatCollector.php:76
+msgid "WP Rollback Pro is protecting your site"
+msgstr "A WP Rollback Pro védi a webhelyét"
+
+#: src/Reports/Engine/Stats/HeroStatCollector.php:66
+msgid ""
+"Your local backups and premium plugin coverage are in place and ready, so "
+"one bad update is never more than a click away from being undone."
+msgstr "A helyi biztonsági mentések és a prémium bővítmények védelme készen állnak, így egy hibás frissítés egyetlen kattintással visszavonható."
+
+#. translators: 1: rollback count, 2: noun like "month"
+#: src/Reports/Engine/Stats/HeroStatCollector.php:79
+#, php-format
+msgid ""
+"It stepped in with %1$s rollback for you this %2$s, and your backups and "
+"premium plugin coverage are ready for the next one."
+msgid_plural ""
+"It stepped in with %1$s rollbacks for you this %2$s, and your backups and "
+"premium plugin coverage are ready for the next one."
+msgstr[0] "Ebben a %2$s időszakban a rendszer %1$s visszaállítással segített Önnek, a biztonsági mentések és a prémium bővítmények védelme pedig készen állnak a következő alkalomra."
+msgstr[1] "Ebben a %2$s időszakban a rendszer %1$s visszaállítással segített Önnek, a biztonsági mentések és a prémium bővítmények védelme pedig készen állnak a következő alkalomra."
+
+#: src/Reports/Engine/Stats/SectionDto/AlertSectionDto.php:60
+#: src/Reports/Rendering/email-templates/layout.php:432
+msgid "Things that need your attention"
+msgstr "Teendők"
+
+#: src/Reports/Engine/Stats/SectionDto/ArchiveSummaryDto.php:91
+#: src/Reports/Rendering/email-templates/layout.php:537
+msgid "Local archives"
+msgstr "Helyi archívumok"
+
+#. translators: 1: count, 2: limit
+#: src/Reports/Engine/Stats/SectionDto/ArchiveSummaryDto.php:96
+#, php-format
+msgid "* Stored archives: %1$s (per-asset limit: %2$s)"
+msgstr "* Tárolt archívumok: %1$s (elemenkénti korlát: %2$s)"
+
+#. translators: %s: human-readable byte size
+#: src/Reports/Engine/Stats/SectionDto/ArchiveSummaryDto.php:103
+#, php-format
+msgid "* Disk usage: %s"
+msgstr "* Lemezhasználat: %s"
+
+#. translators: %s: date label
+#: src/Reports/Engine/Stats/SectionDto/ArchiveSummaryDto.php:110
+#, php-format
+msgid "* Oldest archive: %s"
+msgstr "* Legrégebbi archívum: %s"
+
+#. translators: %s: count
+#: src/Reports/Engine/Stats/SectionDto/HeroSectionDto.php:103
+#, php-format
+msgid "* Archives kept: %s"
+msgstr "* Megőrzött archívumok: %s"
+
+#. translators: %s: count
+#: src/Reports/Engine/Stats/SectionDto/HeroSectionDto.php:110
+#, php-format
+msgid "* Premium plugins covered by Plugin Vault: %s"
+msgstr "* A Plugin Vault által védett prémium bővítmények: %s"
+
+#: src/Reports/Engine/Stats/SectionDto/RollbackSummaryDto.php:102
+#: src/Reports/Rendering/email-templates/layout.php:714
+msgid "Rollback activity"
+msgstr "Visszaállítási tevékenység"
+
+#. translators: %s: noun like "month" or "week"
+#: src/Reports/Engine/Stats/SectionDto/RollbackSummaryDto.php:108
+#, php-format
+msgid "No rollbacks needed this %s."
+msgstr "Ezen a %s időszakon nem volt szükség visszaállításra."
+
+#. translators: 1: total, 2: success, 3: failed
+#: src/Reports/Engine/Stats/SectionDto/RollbackSummaryDto.php:116
+#, php-format
+msgid "Total: %1$s rollbacks (%2$s successful, %3$s failed)"
+msgstr "Összesen: %1$s visszaállítás (%2$s sikeres, %3$s sikertelen)"
+
+#: src/Reports/Engine/Stats/SectionDto/RollbackSummaryDto.php:131
+msgid "unknown user"
+msgstr "ismeretlen felhasználó"
+
+#: src/Reports/Engine/Stats/SectionDto/TipSectionDto.php:55
+#: src/Reports/Rendering/email-templates/layout.php:878
+msgid "Tip"
+msgstr "Tipp"
+
+#: src/Reports/Engine/Stats/SectionDto/VaultProtectionDto.php:71
+#: src/Reports/Rendering/email-templates/layout.php:625
+msgid "Plugin Vault protection"
+msgstr "Plugin Vault-védelem"
+
+#: src/Reports/Engine/Stats/SectionDto/VaultProtectionDto.php:75
+msgid ""
+"Vault not connected. Activate your license to enable shared rollbacks for "
+"premium plugins and themes."
+msgstr "A Vault nincs csatlakoztatva. Aktiválja a licencet, hogy engedélyezze a prémium bővítmények és sablonok közös visszaállításait."
+
+#. translators: 1: covered count, 2: total premium count
+#: src/Reports/Engine/Stats/SectionDto/VaultProtectionDto.php:81
+#, php-format
+msgid ""
+"* %1$s of %2$s premium plugins/themes are rollback-able via the Plugin "
+"Vault."
+msgstr "* A %2$s prémium bővítményből/sablonból %1$s visszaállítható a Plugin Vaulton keresztül."
+
+#: src/Reports/Engine/Stats/Tips/TipPool.php:27
+msgid "Use the Command Palette"
+msgstr "A parancspaletta használata"
+
+#: src/Reports/Engine/Stats/Tips/TipPool.php:28
+msgid ""
+"Press Cmd+K (or Ctrl+K) anywhere in wp-admin to instantly find and roll back"
+" any plugin or theme without navigating menus."
+msgstr "Nyomja meg bárhol a wp-admin felületén a Cmd+K (vagy Ctrl+K) billentyűkombinációt, hogy menük közötti navigálás nélkül azonnal megkeressen és visszaállítson egy bővítményt vagy sablont."
+
+#: src/Reports/Engine/Stats/Tips/TipPool.php:31
+msgid "Roll back from the terminal"
+msgstr "Visszaállítás a terminálból"
+
+#: src/Reports/Engine/Stats/Tips/TipPool.php:32
+msgid ""
+"WP Rollback Pro ships with WP-CLI commands. Run `wp rollback plugin run "
+"<slug> <version>` from your deploy script to ship rollbacks with the rest of"
+" your infrastructure."
+msgstr "A WP Rollback Pro WP-CLI-parancsokat tartalmaz. Futtassa a `wp rollback plugin run <slug> <version>` parancsot a telepítési szkriptből, hogy a visszaállításokat az infrastruktúra többi részével együtt végezze el."
+
+#: src/Reports/Engine/Stats/Tips/TipPool.php:35
+msgid "Keep more archives"
+msgstr "Több archívum megőrzése"
+
+#: src/Reports/Engine/Stats/Tips/TipPool.php:36
+msgid ""
+"Settings → Archives lets you raise the per-asset archive limit (default 25)."
+" Useful if you maintain a long history of premium plugin updates."
+msgstr "A Beállítások → Archívumok résznél növelheti az eszközönkénti archívumkorlátot (alapértelmezés szerint 25). Ez akkor hasznos, ha hosszú előzményeket szeretne megőrizni a prémium bővítmények frissítéseiről."
+
+#: src/Reports/Engine/Stats/Tips/TipPool.php:39
+msgid "Premium plugins, covered automatically"
+msgstr "A prémium bővítmények automatikus védelme"
+
+#: src/Reports/Engine/Stats/Tips/TipPool.php:40
+msgid ""
+"Plugin Vault keeps a community-verified library of premium plugin and theme "
+"versions. Even versions that pre-date your install are usually available — "
+"no manual upload required."
+msgstr "A Plugin Vault a prémium bővítmények és sablonok verzióinak közösség által ellenőrzött gyűjteményét tartja fenn. Általában még a telepítésénél régebbi verziók is elérhetők – kézi feltöltés nem kötelező."
+
+#: src/Reports/Engine/Stats/Tips/TipPool.php:43
+msgid "Verify what you install"
+msgstr "Ellenőrizze, mit telepít"
+
+#: src/Reports/Engine/Stats/Tips/TipPool.php:44
+msgid ""
+"Every rollback verifies the package against a SHA-256 checksum before "
+"unpacking it onto your site. If the checksum fails, the rollback is aborted."
+msgstr "Minden visszaállítás során a rendszer SHA-256 ellenőrzőösszeg alapján ellenőrzi a csomagot, mielőtt kicsomagolná a webhelyére. Ha az ellenőrzés sikertelen, a visszaállítás megszakad."
+
+#: src/Reports/Engine/Stats/Tips/TipPool.php:47
+msgid "Add a teammate to this report"
+msgstr "Csapattag hozzáadása ehhez a jelentéshez"
+
+#: src/Reports/Engine/Stats/Tips/TipPool.php:48
+msgid ""
+"Status reports can go to multiple administrators or to external email "
+"addresses (developers, agency partners). Manage recipients in Tools → WP "
+"Rollback Pro → Settings → Email Reports."
+msgstr "Az állapotjelentések több adminisztrátornak vagy külső e-mail címekre is elküldhetők (például fejlesztőknek vagy ügynökségi partnereknek). A címzetteket az Eszközök → WP Rollback Pro → Beállítások → E-mail-jelentések résznél kezelheti."
+
+#: src/Reports/Engine/Stats/Tips/TipPool.php:51
+msgid "Inspect what changed"
+msgstr "A módosítások áttekintése"
+
+#: src/Reports/Engine/Stats/Tips/TipPool.php:52
+msgid ""
+"The Activity Log records every rollback with from/to versions and the user "
+"who performed it. Useful when reviewing site changes during a maintenance "
+"window."
+msgstr "A Tevékenységnapló minden visszaállítást rögzít a korábbi és az új verzióval, valamint a műveletet végrehajtó felhasználóval együtt. Hasznos a webhelyen végzett módosítások áttekintésekor egy karbantartási időszak alatt."
+
+#: src/Reports/Engine/Stats/Tips/TipPool.php:55
+msgid "Rolling back keeps your data"
+msgstr "A visszaállítás megőrzi az adatait"
+
+#: src/Reports/Engine/Stats/Tips/TipPool.php:56
+msgid ""
+"WP Rollback only swaps plugin and theme files. Posts, comments, settings, "
+"and uploads stay exactly where they are. It's the precise opposite of "
+"restoring from a full-site backup."
+msgstr "A WP Rollback csak a bővítmények és sablonok fájljait cseréli le. A bejegyzések, hozzászólások, beállítások és feltöltések változatlanok maradnak. Ez éppen az ellenkezője a teljes webhelyről készült biztonsági mentés visszaállításának."
+
+#. translators: 1: site name, 2: period label
+#: src/Reports/Mailer/ReportMailer.php:76
+#, php-format
+msgid "[%1$s] WP Rollback report — %2$s"
+msgstr "[%1$s] WP Rollback-jelentés — %2$s"
+
+#: src/Reports/Privacy/PrivacyContent.php:46
+msgid ""
+"WP Rollback Pro can send recurring status report emails to recipients you "
+"configure (administrators on this site, plus any external email addresses "
+"you add). For each delivery attempt, we store the recipient email address, "
+"the report period, and a success/failure status in the local database for 90"
+" days, after which the row is automatically deleted. Each email contains a "
+"one-click unsubscribe link backed by a signed token; recipients can "
+"unsubscribe themselves without contacting us."
+msgstr "A WP Rollback Pro rendszeres állapotjelentő e-maileket küldhet az Ön által beállított címzetteknek (a webhely adminisztrátorainak, valamint az Ön által hozzáadott külső e-mail címek tulajdonosainak). Minden kézbesítési kísérletről 90 napig tároljuk a címzett e-mail címét, a jelentési időszakot és a sikeres/sikertelen állapotot a helyi adatbázisban; ezt követően a sor automatikusan törlődik. Minden e-mail egy kattintással használható, aláírt tokennel védett leiratkozási linket tartalmaz, így a címzettek kapcsolatfelvétel nélkül leiratkozhatnak."
+
+#: src/Reports/Privacy/PrivacyContent.php:61
+#: src/Reports/Privacy/PrivacyContent.php:74
+msgid "WP Rollback Pro Status Reports"
+msgstr "WP Rollback Pro állapotjelentések"
+
+#: src/Reports/Privacy/PrivacyContent.php:92
+msgid "WP Rollback Pro Status Report Recipients"
+msgstr "WP Rollback Pro állapotjelentéseinek címzettjei"
+
+#: src/Reports/Privacy/PrivacyContent.php:96
+msgid "Email"
+msgstr "E-mail"
+
+#: src/Reports/Privacy/PrivacyContent.php:101
+msgid "Configured as a recipient of status report emails."
+msgstr "Az állapotjelentések e-mailjeinek címzettjeként van beállítva."
+
+#: src/Reports/Privacy/PrivacyContent.php:110
+msgid "WP Rollback Pro Status Report Send Log"
+msgstr "WP Rollback Pro állapotjelentéseinek küldési naplója"
+
+#: src/Reports/Privacy/PrivacyContent.php:113
+msgid "Sent at"
+msgstr "Elküldés időpontja"
+
+#: src/Reports/Privacy/PrivacyContent.php:114
+msgid "Period start"
+msgstr "Időszak kezdete"
+
+#: src/Reports/Privacy/PrivacyContent.php:115
+msgid "Period end"
+msgstr "Időszak vége"
+
+#: src/Reports/Privacy/PrivacyContent.php:117 build/tools.js:35
+msgid "Error"
+msgstr "Hiba"
+
+#. translators: 1. Site name 2. Period label
+#: src/Reports/Rendering/email-templates/layout.php:14
+#, php-format
+msgid "%1$s — WP Rollback report (%2$s)"
+msgstr "%1$s — WP Rollback-jelentés (%2$s)"
+
+#: src/Reports/Rendering/email-templates/layout.php:178
+msgid "WP Rollback Pro report"
+msgstr "WP Rollback Pro-jelentés"
+
+#: src/Reports/Rendering/email-templates/layout.php:330
+msgid "local backups"
+msgstr "helyi biztonsági mentések"
+
+#: src/Reports/Rendering/email-templates/layout.php:372
+msgid "premium plugins & themes covered"
+msgstr "lefedett prémium bővítmények és sablonok"
+
+#. translators: 1. Total archives 2. Archive limit 3. Disk space in use
+#: src/Reports/Rendering/email-templates/layout.php:524
+#, php-format
+msgid "%1$s archives stored (per-asset limit: %2$s) using %3$s of disk."
+msgstr "%1$s archívum tárolva (eszközönkénti korlát: %2$s), a lemezterület felhasználása: %3$s."
+
+#. translators: 1. Oldest archive on disk
+#: src/Reports/Rendering/email-templates/layout.php:557
+#, php-format
+msgid "Oldest archive on disk: %s."
+msgstr "A lemezen található legrégebbi archívum: %s."
+
+#: src/Reports/Rendering/email-templates/layout.php:637
+msgid ""
+"Plugin Vault is not connected. Activate your WP Rollback Pro license to "
+"enable shared rollbacks for premium plugins and themes."
+msgstr "A Plugin Vault nincs csatlakoztatva. Aktiválja a WP Rollback Pro licencét a prémium bővítmények és sablonok közös visszaállításainak engedélyezéséhez."
+
+#. translators: 1. Covered count 2. Total premium asset count
+#: src/Reports/Rendering/email-templates/layout.php:645
+#, php-format
+msgid ""
+"%1$s of %2$s premium plugins and themes on this site are rollback-able via "
+"the Plugin Vault."
+msgstr "A webhelyen található %2$s prémium bővítmény és sablon közül %1$s visszaállítható a Plugin Vaulton keresztül."
+
+#. translators: 1. Period noun (e.g. week, month)
+#: src/Reports/Rendering/email-templates/layout.php:738
+#, php-format
+msgid "No rollbacks needed this %s. Your safety net is on standby."
+msgstr "Nem volt szükség visszaállításra ebben az időszakban (%s). A biztonsági háló készenlétben áll."
+
+#. translators: 1. Total rollbacks 2. Successful count 3. Failed count
+#: src/Reports/Rendering/email-templates/layout.php:757
+#, php-format
+msgid "%1$s rollbacks (%2$s successful, %3$s failed)"
+msgstr "%1$s visszaállítás (%2$s sikeres, %3$s sikertelen)"
+
+#: src/Reports/Rendering/email-templates/layout.php:778 build/tools.js:10
+msgid "Success"
+msgstr "Siker"
+
+#: src/Reports/Rendering/email-templates/layout.php:778 build/tools.js:2
+#: build/tools.js:10
+msgid "Failed"
+msgstr "Sikertelen"
+
+#. translators: 1. Name of user who performed rollback
+#: src/Reports/Rendering/email-templates/layout.php:799
+#, php-format
+msgid "Performed by %s"
+msgstr "Végrehajtotta: %s"
+
+#. translators: 1. Site name 2. Plugin version
+#: src/Reports/Rendering/email-templates/layout.php:957
+#, php-format
+msgid "Sent by WP Rollback Pro %2$s on behalf of %1$s."
+msgstr "Küldő: WP Rollback Pro %2$s, %1$s nevében."
+
+#: src/Reports/Rendering/email-templates/layout.php:978
+msgid "Open WP Rollback Dashboard"
+msgstr "WP Rollback vezérlőpult megnyitása"
+
+#: src/Reports/Rendering/email-templates/layout.php:1040
+msgid "Learn more about status reports"
+msgstr "További tudnivalók az állapotjelentésekről"
+
+#: src/Reports/Rendering/email-templates/layout.php:1044
+msgid "Unsubscribe"
+msgstr "Leiratkozás"
+
+#. translators: %s: report period label
+#: src/Reports/Rendering/PlainTextRenderer.php:38
+#, php-format
+msgid "WP Rollback report — %s"
+msgstr "WP Rollback-jelentés — %s"
+
+#. translators: %s: dashboard URL
+#: src/Reports/Rendering/PlainTextRenderer.php:55
+#, php-format
+msgid "Manage your reports: %s"
+msgstr "Jelentések kezelése: %s"
+
+#: src/Reports/Rendering/PlainTextRenderer.php:59
+msgid "Unsubscribe (one click):"
+msgstr "Leiratkozás (egy kattintással):"
+
+#: src/Reports/RestAPI/ReportSettingsController.php:87
+msgid "You do not have permission to manage status report settings."
+msgstr "Önnek nincs jogosultsága az állapotjelentések beállításainak kezeléséhez."
+
+#: src/Reports/RestAPI/ReportSettingsController.php:142
+msgid "Status report settings saved."
+msgstr "Az állapotjelentések beállításai elmentve."
+
+#: src/Reports/RestAPI/ReportSettingsController.php:143
+msgid "No settings were changed."
+msgstr "Nem módosultak a beállítások."
+
+#: src/Reports/RestAPI/ReportSettingsController.php:156
+msgid ""
+"Your account does not have a valid email address. Update your profile to "
+"send a test report."
+msgstr "Fiókjához nincs érvényes e-mail cím társítva. Frissítse a profilját tesztjelentés küldéséhez."
+
+#: src/Reports/RestAPI/ReportSettingsController.php:165
+msgid "Test send limit reached. Try again in a few minutes."
+msgstr "Elérte a tesztküldési korlátot. Próbálja újra néhány perc múlva."
+
+#. translators: %s: error message
+#: src/Reports/RestAPI/ReportSettingsController.php:181
+#, php-format
+msgid "Test send failed: %s"
+msgstr "A tesztküldés sikertelen: %s"
+
+#. translators: %s: recipient email address
+#: src/Reports/RestAPI/ReportSettingsController.php:191
+#, php-format
+msgid "Test report sent to %s. Check your inbox (and spam folder)."
+msgstr "A tesztjelentés elküldve ide: %s. Ellenőrizze a beérkező levelek mappáját (és a levélszemét mappát)."
+
+#: src/Reports/RestAPI/UnsubscribeController.php:158
+msgid "Unsubscribed"
+msgstr "Leiratkozott"
+
+#: src/Reports/RestAPI/UnsubscribeController.php:159
+msgid ""
+"You have been unsubscribed from WP Rollback Pro status reports for this "
+"site."
+msgstr "Leiratkozott a WP Rollback Pro állapotjelentéseiről ezen a webhelyen."
+
+#: src/Reports/RestAPI/UnsubscribeController.php:165
+msgid "Confirm unsubscribe"
+msgstr "Leiratkozás megerősítése"
+
+#: src/Reports/RestAPI/UnsubscribeController.php:166
+msgid ""
+"Click the button below to stop receiving WP Rollback Pro status reports for "
+"this site."
+msgstr "Kattintson az alábbi gombra, ha nem szeretne többé WP Rollback Pro állapotjelentéseket kapni erről a webhelyről."
+
+#: src/Reports/RestAPI/UnsubscribeController.php:167
+msgid "Yes, unsubscribe me"
+msgstr "Igen, kérem a leiratkozást"
+
+#: src/Reports/RestAPI/UnsubscribeController.php:189
+msgid "Sent by"
+msgstr "Küldő"
+
+#: src/RestAPI/PluginInfoParser.php:245 src/RestAPI/PluginInfoParser.php:372
+msgid "No detailed changelog available for this version."
+msgstr "Ehhez a verzióhoz nem érhető el részletes változásnapló."
+
+#: src/RestAPI/PluginInfoParser.php:393
+msgid "Premium plugin - detailed changelog not available."
+msgstr "Prémium bővítmény – részletes változásnapló nem érhető el."
+
+#: src/RestAPI/SettingsController.php:116
+msgid "You do not have permission to manage settings."
+msgstr "Önnek nincs jogosultsága a beállítások kezeléséhez."
+
+#: src/RestAPI/SettingsController.php:158
+msgid "Failed to update settings."
+msgstr "A beállítások frissítése nem sikerült."
+
+#: src/RestAPI/SettingsController.php:165
+msgid "Settings updated successfully."
+msgstr "A beállítások sikeresen frissítve."
+
+#. translators: %d: number of archives deleted
+#: src/RestAPI/SettingsController.php:193
+#, php-format
+msgid "%d archive deleted."
+msgid_plural "%d archives deleted."
+msgstr[0] "%d archívum törölve."
+msgstr[1] "%d archívum törölve."
+
+#. translators: %d: number of archives deleted
+#: src/RestAPI/SettingsController.php:222
+#, php-format
+msgid "Successfully deleted %d archive(s)."
+msgstr "Sikeresen törölve: %d archívum."
+
+#: src/Rollbacks/AvailableVersions.php:55
+msgid "Could not retrieve version data."
+msgstr "Nem sikerült lekérni a verzióadatokat."
+
+#: src/Rollbacks/RollbackRunner.php:125
+msgid "No rollback steps registered."
+msgstr "Nincs regisztrált visszaállítási lépés."
+
+#. translators: %s: theme slug
+#: src/Rollbacks/RollbackRunner.php:162
+#, php-format
+msgid ""
+"The theme \"%s\" isn't installed on this site, so there's nothing to roll "
+"back."
+msgstr "A(z) „%s” sablon nincs telepítve ezen a webhelyen, ezért nincs mit visszaállítani."
+
+#. translators: %s: plugin slug
+#: src/Rollbacks/RollbackRunner.php:169
+#, php-format
+msgid ""
+"The plugin \"%s\" isn't installed on this site, so there's nothing to roll "
+"back."
+msgstr "A(z) „%s” bővítmény nincs telepítve ezen a webhelyen, ezért nincs mit visszaállítani."
+
+#: src/Rollbacks/RollbackSteps/VerifyAsset.php:50
+msgid "No vault checksum available — skipping integrity check."
+msgstr "Nem érhető el tároló-ellenőrzőösszeg – az integritás ellenőrzése kihagyva."
+
+#: src/Rollbacks/RollbackSteps/VerifyAsset.php:59
+msgid "Downloaded package file not found."
+msgstr "A letöltött csomagfájl nem található."
+
+#: src/Rollbacks/RollbackSteps/VerifyAsset.php:68
+msgid "Failed to compute checksum of downloaded package."
+msgstr "Nem sikerült kiszámítani a letöltött csomag ellenőrzőösszegét."
+
+#. translators: 1: expected checksum, 2: actual checksum
+#: src/Rollbacks/RollbackSteps/VerifyAsset.php:80
+#, php-format
+msgid "Integrity check failed. Expected %1$s but got %2$s."
+msgstr "Az integritás ellenőrzése sikertelen. Elvárt érték: %1$s, kapott érték: %2$s."
+
+#: src/Rollbacks/RollbackSteps/VerifyAsset.php:93
+msgid "Package integrity verified."
+msgstr "A csomag integritása ellenőrizve."
+
+#: src/Rollbacks/RollbackSteps/VerifyAsset.php:102
+msgid "Verifying package integrity…"
+msgstr "A csomag integritásának ellenőrzése…"
+
+#: src/Vault/VaultDownloadAsset.php:54
+msgid "Using local backup — download skipped."
+msgstr "Helyi biztonsági mentés használata – letöltés kihagyva."
+
+#. translators: 1: version number, 2: error message
+#: src/Vault/VaultDownloadAsset.php:80
+#, php-format
+msgid "Failed to download version %1$s: %2$s"
+msgstr "Nem sikerült letölteni a(z) %1$s verziót: %2$s"
+
+#. translators: %s: Plugin name
+#: build/commandPalette.js:4
+#, js-format
+msgid "Roll back plugin: %s"
+msgstr "Bővítmény visszaállítása: %s"
+
+#. translators: %s: Theme name
+#: build/commandPalette.js:7
+#, js-format
+msgid "Roll back theme: %s"
+msgstr "Sablon visszaállítása: %s"
+
+#: build/themesAdmin.js:1 build/tools.js:9 build/tools.js:31 build/tools.js:35
+msgid "Rollback"
+msgstr "Visszaállítás"
+
+#: build/themesAdmin.js:1
+msgid "Rollback not available"
+msgstr "Visszaállítás nem érhető el"
+
+#: build/tools.js:1
+msgid "Close navigation menu"
+msgstr "Navigációs menü bezárása"
+
+#: build/tools.js:1
+msgid "Open navigation menu"
+msgstr "Navigációs menü megnyitása"
+
+#: build/tools.js:1 build/tools.js:6 build/tools.js:31 build/tools.js:35
+msgid "Plugins"
+msgstr "Bővítmények"
+
+#: build/tools.js:1 build/tools.js:6 build/tools.js:35
+msgid "Themes"
+msgstr "Sablonok"
+
+#: build/tools.js:1 build/tools.js:6
+msgid "Archives"
+msgstr "Archívum"
+
+#: build/tools.js:1
+msgid "Settings"
+msgstr "Beállítások"
+
+#: build/tools.js:1
+msgid "WP Rollback sections"
+msgstr "WP Rollback-szakaszok"
+
+#: build/tools.js:1
+msgid "Navigation menu"
+msgstr "Navigációs menü"
+
+#: build/tools.js:1
+msgid "Navigation"
+msgstr "Navigáció"
+
+#: build/tools.js:1
+msgid "Close menu"
+msgstr "Menü bezárása"
+
+#. translators: %d: Number of files validated
+#: build/tools.js:2
+#, js-format
+msgid "Validated (%d files)"
+msgstr "Érvényesítve (%d fájl)"
+
+#: build/tools.js:2
+msgid "Validated"
+msgstr "Ellenőrizve"
+
+#: build/tools.js:2
+msgid "Package validated using WordPress Core methods"
+msgstr "A csomag érvényesítése a WordPress Core módszereivel megtörtént"
+
+#: build/tools.js:2
+msgid "Warning"
+msgstr "Figyelem"
+
+#: build/tools.js:2
+msgid "Package validation completed with warnings"
+msgstr "A csomag érvényesítése figyelmeztetésekkel fejeződött be"
+
+#: build/tools.js:2
+msgid "Package validation failed"
+msgstr "A csomag érvényesítése sikertelen"
+
+#: build/tools.js:2
+msgid "Validating…"
+msgstr "Érvényesítés…"
+
+#: build/tools.js:2
+msgid "Validating package using WordPress Core methods"
+msgstr "Csomag érvényesítése a WordPress Core módszereivel"
+
+#: build/tools.js:2
+msgid ""
+"Your WP Rollback Pro license has expired. Please renew your license or enter"
+" an active license key below to continue using Pro features."
+msgstr "A WP Rollback Pro licence lejárt. Kérjük, újítsa meg a licencét, vagy adjon meg alább egy aktív licenckulcsot a Pro-funkciók további használatához."
+
+#: build/tools.js:2
+msgid ""
+"Your license is active but not registered for this domain. Please register "
+"your license below to continue."
+msgstr "A licence aktív, de nincs regisztrálva ehhez a domainhez. Kérjük, a folytatáshoz regisztrálja alább a licencét."
+
+#: build/tools.js:2
+msgid ""
+"Your WP Rollback Pro license key is invalid or has been disabled. Please "
+"enter a valid license key below to continue."
+msgstr "A WP Rollback Pro licenckulcsa hibás vagy ki van kapcsolva. Kérjük, adjon meg alább egy érvényes licenckulcsot a folytatáshoz."
+
+#: build/tools.js:2
+msgid ""
+"A valid license is required to access WP Rollback Pro features. Please "
+"activate your license below to continue."
+msgstr "A WP Rollback Pro funkcióinak eléréséhez érvényes licenc szükséges. Kérjük, aktiválja lent a licencet a folytatáshoz."
+
+#: build/tools.js:2
+msgid "License Management"
+msgstr "Licenckezelés"
+
+#: build/tools.js:2
+msgid ""
+"Activate your WP Rollback Pro license to unlock Plugin Vault, premium "
+"plugin/theme rollbacks, the WP-CLI commands, and email status reports."
+msgstr "Aktiválja a WP Rollback Pro licencét a Plugin Vault, a prémium bővítmények és sablonok visszaállítása, a WP-CLI-parancsok és az e-mailes állapotjelentések használatához."
+
+#: build/tools.js:2
+msgid "License status"
+msgstr "A licenc állapota"
+
+#: build/tools.js:2
+msgid "Current activation state and the domain this license is bound to."
+msgstr "A licenc aktuális aktiválási állapota és az a domain, amelyhez a licenc hozzá van rendelve."
+
+#: build/tools.js:2
+msgid "Domain"
+msgstr "Domain"
+
+#: build/tools.js:2
+msgid "License key"
+msgstr "Licenckulcs"
+
+#: build/tools.js:2 build/tools.js:35
+msgid "Activate your license"
+msgstr "Aktiválja licencét"
+
+#: build/tools.js:2
+msgid "Manage your license"
+msgstr "Licenc kezelése"
+
+#: build/tools.js:2
+msgid ""
+"Paste the license key from your purchase confirmation email to activate this"
+" site."
+msgstr "A webhely aktiválásához illessze be a vásárlást visszaigazoló e-mailben kapott licenckulcsot."
+
+#: build/tools.js:2
+msgid ""
+"Deactivate this license here if you need to move it to a different site."
+msgstr "Ha másik webhelyre szeretné áthelyezni, itt kapcsolja ki ezt a licencet."
+
+#: build/tools.js:2
+msgid "Configuration error"
+msgstr "Konfigurációs hiba"
+
+#: build/tools.js:2
+msgid ""
+"License configuration could not be loaded. Please check your plugin setup or"
+" contact support."
+msgstr "A licenc konfigurációja nem tölthető be. Kérjük, ellenőrizze a bővítmény beállításait, vagy kérjen támogatást."
+
+#: build/tools.js:2
+msgid "Archive Settings"
+msgstr "Archívumbeállítások"
+
+#: build/tools.js:2
+msgid ""
+"Configure how many version archives are stored for each plugin and theme. "
+"When an asset is updated, the previous version is automatically backed up "
+"for rollback purposes."
+msgstr "Állítsa be, hogy bővítményenként és sablononként hány verzióarchívumot tároljon. Egy elem frissítésekor az előző verzió automatikusan biztonsági mentésként kerül tárolásra a visszaállításhoz."
+
+#: build/tools.js:2
+msgid "Storage limits"
+msgstr "Tárolási korlátok"
+
+#: build/tools.js:2
+msgid ""
+"Each plugin and theme keeps up to this many backup versions on disk. Older "
+"backups roll off automatically when the limit is reached."
+msgstr "Minden bővítmény és sablon legfeljebb ennyi biztonsági mentési verziót tárol a lemezen. A korlát elérésekor a régebbi mentések automatikusan törlődnek."
+
+#: build/tools.js:2
+msgid "Number of version archives per asset"
+msgstr "Verzióarchívumok száma elemenként"
+
+#: build/tools.js:2
+msgid ""
+"The maximum number of backup versions to keep for each plugin and theme. "
+"Minimum: 1, Maximum: 100."
+msgstr "Az egyes bővítményekhez és sablonokhoz megőrzendő biztonsági mentési verziók maximális száma. Minimum: 1, maximum: 100."
+
+#: build/tools.js:2
+msgid ""
+"Reducing the archive limit will permanently delete older backup versions to "
+"match the new limit. This action cannot be undone."
+msgstr "Az archívumkorlát csökkentése véglegesen törli a régebbi biztonsági mentési verziókat, hogy megfeleljenek az új korlátnak. Ez a művelet nem vonható vissza."
+
+#: build/tools.js:2 build/tools.js:5
+msgid "Saving…"
+msgstr "Mentés…"
+
+#: build/tools.js:2 build/tools.js:5
+msgid "Save changes"
+msgstr "Módosítások mentése"
+
+#: build/tools.js:2 build/tools.js:6 build/tools.js:31 build/tools.js:35
+#: build/tools.js:36
+msgid "Cancel"
+msgstr "Mégse"
+
+#: build/tools.js:2
+msgid "Clear all archives"
+msgstr "Összes archívum kiürítése"
+
+#: build/tools.js:2
+msgid ""
+"Permanently remove every stored backup archive. This will delete all "
+"previous versions of every plugin and theme. This action cannot be undone."
+msgstr "Véglegesen eltávolítja az összes tárolt biztonsági mentési archívumot. Ezzel törli az összes bővítmény és sablon összes korábbi verzióját. Ez a művelet nem vonható vissza."
+
+#: build/tools.js:2
+msgid "Loading…"
+msgstr "Betöltés…"
+
+#: build/tools.js:2
+msgid ""
+"You have unsaved changes. Save them before leaving this page — closing the "
+"tab or switching pages will discard them."
+msgstr "Nem mentette a módosításokat. Kérjük, mentse őket, mielőtt elhagyja ezt az oldalt — a fül bezárásával vagy másik oldalra váltással elveszíti őket."
+
+#: build/tools.js:2 build/tools.js:5
+msgid "Discard changes"
+msgstr "Módosítások elvetése"
+
+#: build/tools.js:2
+msgid "Unsaved changes"
+msgstr "Nem mentett módosítások"
+
+#: build/tools.js:2
+msgid ""
+"You have unsaved changes on this page. If you leave now, your changes will "
+"be discarded."
+msgstr "Nem mentette a módosításokat ezen az oldalon. Ha most elhagyja az oldalt, elveszíti őket."
+
+#: build/tools.js:2
+msgid "Stay on this page"
+msgstr "Maradás ezen az oldalon"
+
+#: build/tools.js:2
+msgid "Discard changes and leave"
+msgstr "Módosítások elvetése és kilépés"
+
+#: build/tools.js:2
+msgid "Weekly"
+msgstr "Heti"
+
+#: build/tools.js:2
+msgid "Monthly"
+msgstr "Havi"
+
+#: build/tools.js:2
+msgid "Quarterly"
+msgstr "Negyedéves"
+
+#: build/tools.js:2
+msgid "Loading email report settings…"
+msgstr "E-mail-jelentések beállításainak betöltése…"
+
+#: build/tools.js:2 build/tools.js:6
+msgid "Email Reports"
+msgstr "E-mail-jelentések"
+
+#: build/tools.js:2
+msgid ""
+"Email reports are not yet available on multisite installs. Track progress at"
+" docs.wprollback.com/status-reports."
+msgstr "A többwebhelyes telepítéseken az e-mail-jelentések még nem érhetők el. Kövesse a fejleményeket a docs.wprollback.com/status-reports oldalon."
+
+#: build/tools.js:2
+msgid ""
+"Recurring email reports that show admins exactly how WP Rollback Pro is "
+"protecting this site — rollbacks performed, archives stored, and premium "
+"plugins covered."
+msgstr "Rendszeresen küldött e-mail-jelentések, amelyek pontosan megmutatják az adminisztrátoroknak, hogyan védi a WP Rollback Pro ezt a webhelyet — a végrehajtott visszaállításokat, a tárolt archívumokat és a lefedett prémium bővítményeket."
+
+#: build/tools.js:2
+msgid ""
+"Email reports require HTTPS because the unsubscribe link must be HTTPS-only "
+"per RFC 8058. Configure HTTPS before enabling reports in production."
+msgstr "Az e-mail-jelentésekhez HTTPS szükséges, mert az RFC 8058 előírása szerint a leiratkozási link csak HTTPS-t használhat. A jelentések éles környezetben történő bekapcsolása előtt állítsa be a HTTPS-t."
+
+#: build/tools.js:2
+msgid ""
+"Local development site detected — reports will send over HTTP for testing. "
+"Production sites must be served over HTTPS for unsubscribe links to comply "
+"with RFC 8058."
+msgstr "Helyi fejlesztői webhelyet észleltünk — a jelentések tesztelés céljából HTTP-n keresztül lesznek elküldve. Az éles webhelyeket HTTPS-en kell kiszolgálni, hogy a leiratkozási linkek megfeleljenek az RFC 8058 előírásainak."
+
+#: build/tools.js:2
+msgid ""
+"Your site’s admin email address is missing or invalid. Set a valid address "
+"in Settings → General before enabling email reports."
+msgstr "Hiányzik vagy hibás a webhely admin e-mail címe. Adjon meg egy érvényes címet a Beállítások → Általános résznél, mielőtt engedélyezi az e-mail-jelentéseket."
+
+#: build/tools.js:2
+msgid "Schedule"
+msgstr "Ütemezés"
+
+#: build/tools.js:2
+msgid ""
+"Choose how often a report is sent and confirm when the next one will "
+"dispatch."
+msgstr "Válassza ki, milyen gyakran küldjön jelentést, és erősítse meg, mikor kerül sor a következő küldésre."
+
+#: build/tools.js:2
+msgid "Send email reports"
+msgstr "E-mail-jelentések küldése"
+
+#: build/tools.js:2
+msgid ""
+"When enabled, recipients receive an email summary on the cadence you choose "
+"below."
+msgstr "Bekapcsolás esetén a címzettek az alább kiválasztott ütemezés szerint kapnak e-mailes összefoglalót."
+
+#: build/tools.js:2
+msgid "Frequency"
+msgstr "Gyakoriság"
+
+#: build/tools.js:2
+msgid "Next scheduled report"
+msgstr "Következő ütemezett jelentés"
+
+#: build/tools.js:2
+msgid "Not scheduled"
+msgstr "Nincs időzítve"
+
+#: build/tools.js:2
+msgid "(after saving)"
+msgstr "(mentés után)"
+
+#: build/tools.js:2
+msgid "Recipients"
+msgstr "Címzettek"
+
+#: build/tools.js:2
+msgid ""
+"Reports are sent individually to each recipient with a per-recipient one-"
+"click unsubscribe link."
+msgstr "A jelentéseket minden címzettnek külön küldjük el, címzettenként egykattintásos leiratkozási linkkel."
+
+#. translators: %d: total recipients
+#: build/tools.js:3
+#, js-format
+msgid ""
+"You have %d recipients on the list. Sending to many recipients may slow down"
+" the cron run; the hard cap is 50."
+msgstr "%d címzett szerepel a listán. Sok címzett esetén lelassulhat a cron-futtatás; a felső korlát 50."
+
+#: build/tools.js:3
+msgid "WordPress administrators"
+msgstr "WordPress-adminisztrátorok"
+
+#: build/tools.js:3
+msgid ""
+"You’ve customized the recipient list. New administrators added later will "
+"not automatically receive reports unless added here."
+msgstr "Testre szabta a címzettek listáját. A később hozzáadott új adminisztrátorok nem kapnak automatikusan jelentéseket, hacsak nem adja hozzá őket itt."
+
+#: build/tools.js:3
+msgid ""
+"Currently sending to all current and future administrators. Un-check anyone "
+"below to lock the list to specific users."
+msgstr "Jelenleg az összes jelenlegi és jövőbeli adminisztrátornak küldünk. Az egyes személyek kijelölésének törlésével csak meghatározott felhasználókra korlátozhatja a listát."
+
+#: build/tools.js:3
+msgid "(unsubscribed)"
+msgstr "(leiratkozott)"
+
+#. translators: %d: count of stale user IDs
+#: build/tools.js:4
+#, js-format
+msgid "%d stored recipient no longer matches an active administrator."
+msgid_plural "%d stored recipients no longer match an active administrator."
+msgstr[0] "%d tárolt címzett már nem egyezik meg egy aktív adminisztrátorral."
+msgstr[1] "%d tárolt címzett már nem egyezik meg egy aktív adminisztrátorral."
+
+#. translators: %d: user ID
+#: build/tools.js:5
+#, js-format
+msgid "Remove user #%d"
+msgstr "A #%d azonosítójú felhasználó eltávolítása"
+
+#: build/tools.js:5
+msgid "External email addresses"
+msgstr "Külső e-mail-címek"
+
+#: build/tools.js:5
+msgid ""
+"Add anyone without a WordPress account on this site (developers, agency "
+"partners, ops contacts)."
+msgstr "Adjon hozzá bárkit, akinek nincs WordPress-fiókja ezen a webhelyen (fejlesztőket, ügynökségi partnereket, üzemeltetési kapcsolattartókat)."
+
+#: build/tools.js:5
+msgid ""
+"It has been over 90 days since you reviewed the external recipient list. "
+"Take a moment to confirm everyone here should still receive reports."
+msgstr "Több mint 90 napja ellenőrizte utoljára a külső címzettek listáját. Szánjon rá egy percet, és erősítse meg, hogy az itt szereplőknek továbbra is meg kell kapniuk a jelentéseket."
+
+#: build/tools.js:5
+msgid "No external recipients yet."
+msgstr "Még nincsenek külső címzettek."
+
+#: build/tools.js:5
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: build/tools.js:5
+msgid "Add a recipient"
+msgstr "Címzett hozzáadása"
+
+#: build/tools.js:5
+msgid "Please enter a valid email address."
+msgstr "Kérjük, adjon meg érvényes e-mail-címet."
+
+#: build/tools.js:5
+msgid "Add"
+msgstr "Hozzáadás"
+
+#: build/tools.js:5
+msgid "Previously unsubscribed"
+msgstr "Korábban leiratkozott"
+
+#: build/tools.js:5
+msgid ""
+"These recipients clicked an unsubscribe link in a past report. They will not"
+" receive future reports unless you re-subscribe them here."
+msgstr "Ezek a címzettek egy korábbi jelentésben a leiratkozási linkre kattintottak. Nem kapnak további jelentéseket, hacsak itt újra fel nem iratkoztatja őket."
+
+#: build/tools.js:5
+msgid "Re-subscribe"
+msgstr "Újrafeliratkozás"
+
+#: build/tools.js:5
+msgid "Deliverability tips"
+msgstr "Kézbesítési tippek"
+
+#: build/tools.js:5
+msgid "Use authenticated SMTP."
+msgstr "Használjon hitelesített SMTP-t."
+
+#: build/tools.js:5
+msgid ""
+"WordPress’s default mailer often delivers reports to spam. Install WP Mail "
+"SMTP or FluentSMTP and configure an authenticated SMTP provider for reliable"
+" delivery."
+msgstr "A WordPress alapértelmezett levelezője gyakran a spam mappába kézbesíti a jelentéseket. Telepítse a WP Mail SMTP vagy FluentSMTP bővítményt, és állítson be hitelesített SMTP-szolgáltatót a megbízható kézbesítéshez."
+
+#: build/tools.js:5
+msgid "Check DKIM coverage."
+msgstr "Ellenőrizze a DKIM-lefedettséget."
+
+#: build/tools.js:5
+msgid ""
+"For Gmail’s one-click unsubscribe button to appear, your sending domain’s "
+"DKIM signature must cover the List-Unsubscribe headers. Most transactional "
+"providers handle this automatically."
+msgstr "Ahhoz, hogy megjelenjen a Gmail egykattintásos leiratkozási gombja, a küldő domain DKIM-aláírásának ki kell terjednie a List-Unsubscribe fejlécekre. A legtöbb tranzakciós e-mail-szolgáltató ezt automatikusan kezeli."
+
+#: build/tools.js:5
+msgid ""
+"You have unsaved changes. Save them before leaving this tab — closing the "
+"page or switching tabs will discard them."
+msgstr "Nem mentett módosításai vannak. Mielőtt elhagyja ezt a fület, mentse el őket — az oldal bezárásakor vagy a fülek közötti váltáskor elvesznek."
+
+#: build/tools.js:5
+msgid "Email report settings saved."
+msgstr "Az e-mail-jelentés beállításai elmentve."
+
+#: build/tools.js:5
+msgid "Could not save settings."
+msgstr "Nem sikerült menteni a beállításokat."
+
+#: build/tools.js:5
+msgid "Test send failed."
+msgstr "A tesztküldés sikertelen."
+
+#: build/tools.js:5
+msgid "Test send limit reached."
+msgstr "Elérte a tesztküldési korlátot."
+
+#. translators: %d: seconds remaining
+#: build/tools.js:6
+#, js-format
+msgid "Try again in %ds"
+msgstr "Próbálja újra %d másodperc múlva"
+
+#: build/tools.js:6
+msgid "Send test report"
+msgstr "Tesztjelentés küldése"
+
+#: build/tools.js:6
+msgid ""
+"You have unsaved changes to your email report settings. If you leave now, "
+"those changes will be lost."
+msgstr "Nem mentett módosításai vannak az e-mail-jelentés beállításaiban. Ha most kilép, ezek a módosítások elvesznek."
+
+#: build/tools.js:6
+msgid "Confirm Archive Cleanup"
+msgstr "Archívumok törlésének megerősítése"
+
+#: build/tools.js:6
+msgid ""
+"You are about to reduce the archive limit. This will permanently delete "
+"older backup versions for all plugins and themes to match the new limit."
+msgstr "Éppen csökkenteni készül az archívumkorlátot. Ezzel véglegesen törli az összes bővítmény és sablon régebbi biztonsági mentéseit, hogy megfeleljenek az új korlátnak."
+
+#: build/tools.js:6 build/tools.js:35
+msgid "This action cannot be undone."
+msgstr "Ez a művelet nem vonható vissza."
+
+#: build/tools.js:6
+msgid "Delete Excess Archives"
+msgstr "Felesleges archívumok törlése"
+
+#: build/tools.js:6
+msgid "Clear All Archives?"
+msgstr "Összes archívum kiürítése?"
+
+#: build/tools.js:6
+msgid ""
+"Are you sure you want to delete all backup archives? This will permanently "
+"remove all stored versions of plugins and themes."
+msgstr "Biztosan törli az összes biztonsági mentési archívumot? Ezzel véglegesen eltávolítja a bővítmények és sablonok összes tárolt verzióját."
+
+#: build/tools.js:6
+msgid "Delete All Archives"
+msgstr "Összes archívum törlése"
+
+#: build/tools.js:6
+msgid "License configuration not available"
+msgstr "A licencbeállítások nem érhetők el"
+
+#: build/tools.js:6
+msgid "License is active and registered"
+msgstr "A licenc aktív és regisztrálva van"
+
+#: build/tools.js:6
+msgid "License activation required"
+msgstr "A licenc aktiválása kötelező"
+
+#: build/tools.js:6
+msgid "License is active but not registered"
+msgstr "A licenc aktív, de nincs regisztrálva"
+
+#: build/tools.js:6
+msgid "Settings saved and archives cleaned up successfully."
+msgstr "A beállítások mentése és az archívumok tisztítása sikerült."
+
+#: build/tools.js:6
+msgid "Settings saved successfully."
+msgstr "A beállítások sikeresen elmentve."
+
+#: build/tools.js:6
+msgid "Failed to save settings. Please try again."
+msgstr "Nem sikerült menteni a beállításokat. Kérjük, próbálja újra."
+
+#: build/tools.js:6
+msgid "WP Rollback Pro Settings"
+msgstr "WP Rollback Pro beállításai"
+
+#: build/tools.js:6
+msgid "Manage your WP Rollback Pro license and configure plugin settings."
+msgstr "Kezelje a WP Rollback Pro licencét, és állítsa be a bővítmény beállításait."
+
+#: build/tools.js:6
+msgid "Pro License"
+msgstr "Pro licenc"
+
+#: build/tools.js:6
+msgid "All archives have been cleared successfully."
+msgstr "Az összes archívum kiürítése sikerült."
+
+#: build/tools.js:6
+msgid "Failed to clear archives. Please try again."
+msgstr "Nem sikerült kiüríteni az archívumokat. Kérjük, próbálja újra."
+
+#: build/tools.js:6
+msgid "All"
+msgstr "Összes"
+
+#: build/tools.js:6
+msgid "Restore a previous version"
+msgstr "Korábbi verzió visszaállítása"
+
+#: build/tools.js:6
+msgid ""
+"Switch any installed WordPress plugin or theme, free or premium, to another "
+"available version. A restore point is created automatically."
+msgstr "Váltson bármely telepített WordPress-bővítményt vagy -sablont – akár ingyenes, akár prémium kategóriájú – egy másik elérhető verzióra. A rendszer automatikusan létrehoz egy visszaállítási pontot."
+
+#: build/tools.js:6
+msgid "Search plugins and themes"
+msgstr "Bővítmények és sablonok keresése"
+
+#: build/tools.js:6
+msgid "Search plugins & themes…"
+msgstr "Bővítmények és sablonok keresése…"
+
+#: build/tools.js:6 build/tools.js:31
+msgid "Filter by type"
+msgstr "Szűrés típus szerint"
+
+#. translators: 1: type (plugin/theme), 2: version
+#: build/tools.js:7
+#, js-format
+msgid "Installed %1$s %2$s"
+msgstr "Telepítve: %1$s %2$s"
+
+#: build/tools.js:7
+msgid "Choose version"
+msgstr "Verzió kiválasztása"
+
+#. translators: %s: search term
+#: build/tools.js:8
+#, js-format
+msgid "No installed plugin or theme matches “%s”."
+msgstr "Nincs olyan telepített bővítmény vagy sablon, amely illeszkedik ehhez: „%s”."
+
+#. translators: %s: count of installed plugins/themes
+#: build/tools.js:9
+#, js-format
+msgid "%s installed plugin or theme is ready to roll back."
+msgid_plural "%s installed plugins and themes are ready to roll back."
+msgstr[0] "%s telepített bővítmény vagy sablon készen áll a visszaállításra."
+msgstr[1] "A visszaállításra kész telepített bővítmények és sablonok száma: %s."
+
+#: build/tools.js:9
+msgid "No Activity Found"
+msgstr "Nem találhatók történések"
+
+#. translators: %s: Type of activity (Plugin/Theme)
+#: build/tools.js:10
+#, js-format
+msgid "%s activity will be logged here."
+msgstr "%s történései itt lesznek naplózva."
+
+#: build/tools.js:10
+msgid "Available updates"
+msgstr "Elérhető frissítések"
+
+#: build/tools.js:10
+msgid "Roll back plugins and themes with available updates."
+msgstr "Állítsa vissza azokat a bővítményeket és sablonokat, amelyekhez frissítések érhetők el."
+
+#: build/tools.js:10
+msgid "No updates available"
+msgstr "Nincs elérhető frissítés"
+
+#: build/tools.js:10
+msgid "Every installed plugin and theme is on its latest version."
+msgstr "Minden telepített bővítmény és sablon a legújabb verziójú."
+
+#: build/tools.js:10
+msgid "Recently rolled back"
+msgstr "Legutóbb visszaállítva"
+
+#: build/tools.js:10
+msgid "Recent rollback events for plugins and themes on this site."
+msgstr "A webhely bővítményeinek és sablonjainak legutóbbi visszaállítási eseményei."
+
+#: build/tools.js:10
+msgid "No rollbacks yet"
+msgstr "Még nem történt visszaállítás"
+
+#: build/tools.js:10
+msgid "When you roll a plugin or theme back, it will show up here."
+msgstr "Amikor visszaállít egy bővítményt vagy sablont, az itt jelenik meg."
+
+#. translators: %s: field label
+#: build/tools.js:31
+msgid "No Data Found"
+msgstr "Nem található adat"
+
+#: build/tools.js:31
+msgid "Data will appear here when available."
+msgstr "Az adatok akkor jelennek meg itt, ha elérhetők."
+
+#: build/tools.js:31
+msgid "Rollback Note"
+msgstr "Visszaállítási megjegyzés"
+
+#: build/tools.js:31
+msgid "Plugin Name:"
+msgstr "Bővítmény neve:"
+
+#: build/tools.js:31
+msgid "Theme Name:"
+msgstr "Sablon neve:"
+
+#: build/tools.js:31
+msgid "Version:"
+msgstr "Verzió:"
+
+#: build/tools.js:31
+msgid "Date:"
+msgstr "Dátum:"
+
+#: build/tools.js:31
+msgid "Note"
+msgstr "Megjegyzés"
+
+#: build/tools.js:31
+msgid "characters"
+msgstr "karakter"
+
+#: build/tools.js:31
+msgid "Record details, reasons, or context about this rollback."
+msgstr "Rögzítse a visszaállítással kapcsolatos részleteket, okokat vagy körülményeket."
+
+#: build/tools.js:31
+msgid "Enter your note here…"
+msgstr "Itt adja meg a megjegyzését…"
+
+#: build/tools.js:31
+msgid "No note available."
+msgstr "Nincs elérhető megjegyzés."
+
+#: build/tools.js:31
+msgid "Note saved successfully!"
+msgstr "A megjegyzés mentése sikerült!"
+
+#: build/tools.js:31
+msgid "Failed to save note. Please try again."
+msgstr "Nem sikerült menteni a megjegyzést. Kérjük, próbálja újra."
+
+#: build/tools.js:31
+msgid "Save Note"
+msgstr "Jegyzet mentése"
+
+#: build/tools.js:31
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: build/tools.js:31 build/tools.js:35
+msgid "Close"
+msgstr "Bezárás"
+
+#: build/tools.js:31
+msgid "—"
+msgstr "—"
+
+#: build/tools.js:31
+msgid "View Note"
+msgstr "Megjegyzés megtekintése"
+
+#: build/tools.js:31
+msgid "Add Note"
+msgstr "Megjegyzés hozzáadása"
+
+#: build/tools.js:31
+msgid "Install"
+msgstr "Telepítés"
+
+#: build/tools.js:31 build/tools.js:35
+msgid "Update"
+msgstr "Frissítés"
+
+#: build/tools.js:31
+msgid "Delete"
+msgstr "Törlés"
+
+#: build/tools.js:31
+msgid "Activate"
+msgstr "Bekapcsolás"
+
+#: build/tools.js:31
+msgid "Deactivate"
+msgstr "Kikapcsolás"
+
+#: build/tools.js:31
+msgid "Archive"
+msgstr "Archiválás"
+
+#: build/tools.js:31 build/tools.js:35
+msgid "Version"
+msgstr "Verzió"
+
+#: build/tools.js:31
+msgid "By"
+msgstr "Szerint"
+
+#: build/tools.js:31
+msgid "When"
+msgstr "Mikor"
+
+#: build/tools.js:31
+msgid "Notes"
+msgstr "Jegyzetek"
+
+#: build/tools.js:31
+msgid "Plugins + Themes"
+msgstr "Bővítmények + sablonok"
+
+#: build/tools.js:31
+msgid "Plugins only"
+msgstr "Csak bővítmények"
+
+#: build/tools.js:31
+msgid "Themes only"
+msgstr "Csak sablonok"
+
+#: build/tools.js:31
+msgid "Rollback history"
+msgstr "Visszaállítási előzmények"
+
+#: build/tools.js:31
+msgid "A complete log of past rollbacks and restore points."
+msgstr "A korábbi visszaállítások és visszaállítási pontok teljes naplója."
+
+#: build/tools.js:31
+msgid "No history yet"
+msgstr "Még nincs előzmény"
+
+#: build/tools.js:31
+msgid "Rollbacks and restore points will be listed here as you create them."
+msgstr "A létrehozott visszaállítások és visszaállítási pontok itt jelennek meg."
+
+#: build/tools.js:31
+msgid "Search history…"
+msgstr "Előzmények keresése…"
+
+#: build/tools.js:31
+msgid "We could not load the dashboard data. Please refresh."
+msgstr "Nem sikerült betölteni a vezérlőpult adatait. Kérjük, frissítse az oldalt."
+
+#: build/tools.js:31
+msgid "Active"
+msgstr "Aktív"
+
+#: build/tools.js:31
+msgid "Inactive"
+msgstr "Inaktív"
+
+#: build/tools.js:31 build/tools.js:35
+msgid "Actions"
+msgstr "Műveletek"
+
+#: build/tools.js:31
+msgid "Plugin Name"
+msgstr "Bővítmény neve"
+
+#: build/tools.js:31
+msgid "No Plugins Found"
+msgstr "Nem található bővítmény"
+
+#: build/tools.js:31
+msgid "No plugins available for rollback."
+msgstr "Nincs elérhető bővítmény a visszaállításhoz."
+
+#: build/tools.js:31
+msgid "Select a plugin below to roll back to a previous version."
+msgstr "Válasszon ki egy bővítményt az alábbi listából a korábbi verzióra való visszaállításhoz."
+
+#: build/tools.js:31
+msgid "Failed to fetch rollback data."
+msgstr "Nem sikerült lekérni a visszaállítási adatokat."
+
+#: build/tools.js:31
+msgid "Error fetching rollback data"
+msgstr "Hiba történt a visszaállítási adatok lekérésekor"
+
+#. translators: %s: PHP error message
+#: build/tools.js:33
+#, js-format
+msgid "A PHP fatal error stopped the rollback: %s"
+msgstr "Végzetes PHP-hiba miatt leállt a visszaállítás: %s"
+
+#. translators: 1: wp-config.php code, 2: wp-config.php, 3: debug log path
+#: build/tools.js:34
+#, js-format
+msgid ""
+"A PHP fatal error stopped the rollback. Your site's PHP error log shows "
+"which plugin or theme caused it. If you can't find the log, add %1$s to "
+"%2$s, try again, and check %3$s."
+msgstr "Végzetes PHP-hiba állította le a visszaállítást. A webhely PHP-hibanaplójából kiderül, melyik bővítmény vagy sablon okozta a hibát. Ha nem találja a naplót, adja hozzá a(z) %1$s értéket ehhez: %2$s, próbálja újra, majd ellenőrizze ezt: %3$s."
+
+#: build/tools.js:34 build/tools.js:35
+msgid "Plugin"
+msgstr "Bővítmény"
+
+#: build/tools.js:34 build/tools.js:35
+msgid "Theme"
+msgstr "Sablon"
+
+#: build/tools.js:34
+msgid "Reinstall Now"
+msgstr "Újratelepítés most"
+
+#: build/tools.js:34
+msgid "Update Now"
+msgstr "Frissítés most"
+
+#: build/tools.js:34 build/tools.js:35
+msgid "Roll Back Now"
+msgstr "Visszaállítás most"
+
+#: build/tools.js:34
+msgid "Rolling Back To"
+msgstr "Visszaállítás erre"
+
+#: build/tools.js:34
+msgid "Updating To"
+msgstr "Frissítés erre"
+
+#: build/tools.js:34
+msgid "Reinstalling"
+msgstr "Újratelepítés"
+
+#: build/tools.js:34
+msgid "Unknown Plugin"
+msgstr "Ismeretlen bővítmény"
+
+#: build/tools.js:34
+msgid "WordPress Plugin"
+msgstr "WordPress-bővítmény"
+
+#: build/tools.js:34
+msgid "WordPress Theme"
+msgstr "WordPress-sablon"
+
+#: build/tools.js:34
+msgid "Same version will be reinstalled"
+msgstr "Ugyanaz a verzió lesz újratelepítve"
+
+#: build/tools.js:34 build/tools.js:35
+msgid "Installed"
+msgstr "Telepítve"
+
+#: build/tools.js:34
+msgid ""
+"Back up your files and database before continuing. WP Rollback is not "
+"responsible for issues resulting from this action."
+msgstr "A folytatás előtt készítsen biztonsági másolatot a fájlokról és az adatbázisról. A WP Rollback nem vállal felelősséget az ebből a műveletből eredő problémákért."
+
+#: build/tools.js:34
+msgid "Rollback version not specified."
+msgstr "Nincs megadva a visszaállítandó verzió."
+
+#: build/tools.js:34
+msgid "Failed to fetch rollback steps."
+msgstr "Nem sikerült lekérni a visszaállítás lépéseit."
+
+#: build/tools.js:34
+msgid "An unknown error occurred."
+msgstr "Ismeretlen hiba történt."
+
+#: build/tools.js:34
+msgid "Step completed successfully"
+msgstr "A lépés sikeresen befejeződött"
+
+#: build/tools.js:34
+msgid "Rolling back <assetName/> to version <assetVersion/>…"
+msgstr "A(z) <assetName/> visszaállítása a(z) <assetVersion/> verzióra…"
+
+#: build/tools.js:34
+msgid "Please wait — this may take a few moments."
+msgstr "Kérjük, várjon — ez eltarthat néhány pillanatig."
+
+#: build/tools.js:34
+msgid "An error occurred during the rollback process."
+msgstr "Hiba történt a visszaállítási folyamat során."
+
+#: build/tools.js:34
+msgid "All steps completed successfully."
+msgstr "Minden lépés sikeresen befejeződött."
+
+#: build/tools.js:34
+msgid "Rollback in Progress…"
+msgstr "Visszaállítás folyamatban…"
+
+#: build/tools.js:34 build/tools.js:35
+msgid "Rollback Failed"
+msgstr "A visszaállítás sikertelen"
+
+#: build/tools.js:34 build/tools.js:38
+msgid "Continue"
+msgstr "Folytatás"
+
+#: build/tools.js:34
+msgid "An error occurred while attempting to roll back <rollbackName/>:"
+msgstr "Hiba történt a(z) <rollbackName/> visszaállításakor:"
+
+#: build/tools.js:34
+msgid "Error:"
+msgstr "Hiba:"
+
+#: build/tools.js:34
+msgid "An unknown error occurred"
+msgstr "Ismeretlen hiba történt"
+
+#: build/tools.js:34 build/tools.js:38
+msgid "Need help?"
+msgstr "Segítségre van szüksége?"
+
+#: build/tools.js:34
+msgid "Read our troubleshooting guide"
+msgstr "Hibaelhárítási útmutató megtekintése"
+
+#. translators: 1: Asset slug
+#: build/tools.js:35
+#, js-format
+msgid ""
+"Sorry, we could not find a changelog entry for this version. Try checking "
+"the <a href=\"https://wordpress.org/plugins/%1$s/#developers\" "
+"target=\"_blank\">Development tab</a> on WP.org."
+msgstr "Sajnáljuk, ehhez a verzióhoz nem található változásnapló-bejegyzés. Próbálja meg megnézni a <a href=\"https://wordpress.org/plugins/%1$s/#developers\" target=\"_blank\">Fejlesztés fület</a> a WP.org oldalon."
+
+#: build/tools.js:35
+msgid "Confirm Rollback"
+msgstr "Visszaállítás megerősítése"
+
+#: build/tools.js:35
+msgid "Rolling Back…"
+msgstr "Visszaállítás…"
+
+#: build/tools.js:35
+msgid "Try Again"
+msgstr "Újrapróbálás"
+
+#: build/tools.js:35
+msgid "View Changelog"
+msgstr "Változásnapló megtekintése"
+
+#: build/tools.js:35
+msgid "Plugin Rollback"
+msgstr "Bővítmény-visszaállítás"
+
+#: build/tools.js:35
+msgid "Theme Rollback"
+msgstr "Sablon visszaállítása"
+
+#: build/tools.js:35
+msgid "All versions listed below are available directly from WordPress.org."
+msgstr "Az alábbi verziók mindegyike közvetlenül a WordPress.org webhelyről érhető el."
+
+#: build/tools.js:35
+msgid "Select a release to roll back."
+msgstr "Válasszon ki egy kiadást a visszaállításhoz."
+
+#: build/tools.js:35
+msgid "Reinstall"
+msgstr "Újratelepítés"
+
+#: build/tools.js:35
+msgid ""
+"The active development version — latest code changes not yet released to the"
+" public. Intended for developers and testers."
+msgstr "Az aktív fejlesztői verzió — a legújabb, még nyilvánosan ki nem adott kódmódosításokkal. Fejlesztőknek és tesztelőknek készült."
+
+#: build/tools.js:35
+msgid "From Plugin Vault — community-contributed ZIPs verified for integrity."
+msgstr "A Plugin Vaultból származó, közösségi közreműködéssel készült, sértetlenség szempontjából ellenőrzött ZIP-fájlok."
+
+#: build/tools.js:35
+msgid "Vault"
+msgstr "Tároló"
+
+#: build/tools.js:35
+msgid "A local backup saved on this site."
+msgstr "Ezen a webhelyen mentett helyi biztonsági másolat."
+
+#: build/tools.js:35
+msgid "Local"
+msgstr "Helyi"
+
+#: build/tools.js:35
+msgid "Available on WordPress.org."
+msgstr "Elérhető a WordPress.org webhelyen."
+
+#: build/tools.js:35
+msgid "Repo"
+msgstr "Repozitórium"
+
+#: build/tools.js:35
+msgid "No versions available"
+msgstr "Nincs elérhető verzió"
+
+#: build/tools.js:35
+msgid "No versions found"
+msgstr "Nem található verzió"
+
+#: build/tools.js:35
+msgid "Installed version:"
+msgstr "Telepített verzió:"
+
+#: build/tools.js:35
+msgid "Plugin author:"
+msgstr "Bővítmény szerzője:"
+
+#: build/tools.js:35
+msgid "Theme author:"
+msgstr "Sablon szerzője:"
+
+#: build/tools.js:35
+msgid "Read less"
+msgstr "Kevesebb megjelenítése"
+
+#: build/tools.js:35
+msgid "Read more"
+msgstr "Bővebben"
+
+#: build/tools.js:35
+msgid "Required plugin information is missing."
+msgstr "Hiányoznak a bővítmény szükséges adatai."
+
+#: build/tools.js:35
+msgid ""
+"No rollback versions are currently available. Versions become available "
+"after updating — backups are stored automatically, and additional versions "
+"may be available via the WP Rollback Plugin Vault."
+msgstr "Jelenleg nem érhetők el visszaállítható verziók. A verziók frissítés után válnak elérhetővé — a biztonsági mentések automatikusan készülnek, további verziók pedig a WP Rollback Plugin Vaultban lehetnek elérhetők."
+
+#: build/tools.js:35
+msgid ""
+"Versions are sourced directly from WordPress.org. Select any release below "
+"to roll back."
+msgstr "A verziók közvetlenül a WordPress.org webhelyről származnak. Válasszon ki alább egy kiadást a visszaállításhoz."
+
+#: build/tools.js:35
+msgid "Versions come from automatic backups created during updates."
+msgstr "A verziók a frissítések során automatikusan létrehozott biztonsági mentésekből származnak."
+
+#: build/tools.js:35
+msgid "Versions come from the WP Rollback Plugin Vault."
+msgstr "A verziók a WP Rollback Plugin Vaultból származnak."
+
+#: build/tools.js:35
+msgid ""
+"Versions come from two sources: automatic backups created during updates, "
+"and the WP Rollback Plugin Vault."
+msgstr "A verziók két forrásból származnak: a frissítések során automatikusan létrehozott biztonsági mentésekből és a WP Rollback Plugin Vaultból."
+
+#: build/tools.js:35
+msgid "Select any release below to roll back."
+msgstr "Válasszon ki alább egy kiadást a visszaállításhoz."
+
+#: build/tools.js:35
+msgid "Visit plugin website"
+msgstr "Bővítmény honlapjának felkeresése"
+
+#: build/tools.js:35
+msgid "Get Support"
+msgstr "Támogatás kérése"
+
+#: build/tools.js:35
+msgid "Requires WordPress:"
+msgstr "Szükséges WordPress-verzió:"
+
+#: build/tools.js:35
+msgid "Tested up to:"
+msgstr "Tesztelve eddig:"
+
+#: build/tools.js:35
+msgid "Requires PHP:"
+msgstr "Szükséges PHP-verzió:"
+
+#: build/tools.js:35
+msgid "Available Versions"
+msgstr "Elérhető verziók"
+
+#: build/tools.js:35
+msgid "Screenshot"
+msgstr "Képernyőkép"
+
+#: build/tools.js:35
+msgid "Theme Name"
+msgstr "Sablon neve"
+
+#: build/tools.js:35
+msgid "No Themes Found"
+msgstr "Nem található sablon"
+
+#: build/tools.js:35
+msgid "No themes available for rollback."
+msgstr "Nincs visszaállítható sablon."
+
+#: build/tools.js:35
+msgid "Select a theme below to roll back to a previous version."
+msgstr "Válasszon ki alább egy sablont, amelyet egy korábbi verzióra szeretne visszaállítani."
+
+#: build/tools.js:35
+msgid "Delete this archive"
+msgstr "Archívum törlése"
+
+#: build/tools.js:35
+msgid "Download failed."
+msgstr "A letöltés sikertelen."
+
+#: build/tools.js:35
+msgid "Download this version"
+msgstr "Verzió letöltése"
+
+#: build/tools.js:35
+msgid "Download URL not available"
+msgstr "A letöltési URL nem érhető el"
+
+#: build/tools.js:35
+msgid "Archive file not found"
+msgstr "Az archívumfájl nem található"
+
+#: build/tools.js:35
+msgid "Roll back to this version"
+msgstr "Visszaállítás erre a verzióra"
+
+#: build/tools.js:35
+msgid "Delete Archive"
+msgstr "Archívum törlése"
+
+#: build/tools.js:35
+msgid "Are you sure you want to delete this archive?"
+msgstr "Biztosan törölni szeretné ezt az archívumot?"
+
+#: build/tools.js:35
+msgid "Delete failed."
+msgstr "A törlés sikertelen."
+
+#: build/tools.js:35
+msgid "No Plugin Archives Found"
+msgstr "Nem található bővítményarchívum"
+
+#: build/tools.js:35
+msgid "No Theme Archives Found"
+msgstr "Nem található sablonarchívum"
+
+#: build/tools.js:35
+msgid "No Archives Found"
+msgstr "Nem találhatók archívumok"
+
+#: build/tools.js:35
+msgid ""
+"When a premium plugin is updated, an archive of the previous version is "
+"automatically created and will appear here."
+msgstr "Prémium bővítmény frissítésekor automatikusan létrejön az előző verzió archívuma, amely itt fog megjelenni."
+
+#: build/tools.js:35
+msgid ""
+"When a premium theme is updated, an archive of the previous version is "
+"automatically created and will appear here."
+msgstr "Prémium sablon frissítésekor automatikusan létrejön az előző verzió archívuma, amely itt fog megjelenni."
+
+#: build/tools.js:35
+msgid ""
+"When a premium plugin or theme is updated, an archive of the previous "
+"version is automatically created and will appear here."
+msgstr "Prémium bővítmény vagy sablon frissítésekor automatikusan létrejön az előző verzió archívuma, amely itt fog megjelenni."
+
+#: build/tools.js:35
+msgid "Asset Name"
+msgstr "Eszköz neve"
+
+#: build/tools.js:35
+msgid "Archived By"
+msgstr "Archiválta"
+
+#: build/tools.js:35
+msgid "Date Created"
+msgstr "Létrehozás dátuma"
+
+#: build/tools.js:35
+msgid "All Archives"
+msgstr "Összes archívum"
+
+#: build/tools.js:35
+msgid "Premium Asset Archives"
+msgstr "Prémium eszközök archívumai"
+
+#: build/tools.js:35
+msgid "View and manage archived versions of your premium plugins and themes."
+msgstr "Prémium bővítmények és sablonok archivált verzióinak megtekintése és kezelése."
+
+#: build/tools.js:35
+msgid "Plugin Vault"
+msgstr "Plugin Vault"
+
+#: build/tools.js:35
+msgid "Premium plugin & theme rollbacks"
+msgstr "Prémium bővítmények és sablonok visszaállítása"
+
+#: build/tools.js:35
+msgid "WP-CLI commands"
+msgstr "WP-CLI-parancsok"
+
+#: build/tools.js:35
+msgid "Email status reports"
+msgstr "E-mailben küldött állapotjelentések"
+
+#: build/tools.js:35
+msgid "Unlock the full rollback toolkit"
+msgstr "A teljes visszaállítási eszköztár feloldása"
+
+#: build/tools.js:35
+msgid "Your key unlocks WP Rollback Pro on this site."
+msgstr "A kulcs feloldja a WP Rollback Pro használatát ezen a webhelyen."
+
+#: build/tools.js:35
+msgid "Invalid license key. Please check your key and try again."
+msgstr "Hibás licenckulcs. Kérjük, ellenőrizze a kulcsot, és próbálja újra."
+
+#: build/tools.js:35
+msgid "An error occurred while activating your license."
+msgstr "Hiba történt a licenc aktiválásakor."
+
+#: build/tools.js:35
+msgid "Please enter a license key."
+msgstr "Kérjük, adja meg a licenckulcsot."
+
+#: build/tools.js:35
+msgid "License Key"
+msgstr "Licenckulcs"
+
+#: build/tools.js:35
+msgid "Registering to:"
+msgstr "Regisztráció erre:"
+
+#: build/tools.js:35
+msgid "Activating..."
+msgstr "Aktiválás..."
+
+#: build/tools.js:35
+msgid "Your license key is securely transmitted and stored."
+msgstr "A licenckulcs biztonságosan kerül továbbításra és tárolásra."
+
+#: build/tools.js:35
+msgid "Choose a plan"
+msgstr "Csomag kiválasztása"
+
+#: build/tools.js:35
+msgid "Contact support"
+msgstr "Kapcsolatfelvétel a támogatással"
+
+#: build/tools.js:35
+msgid "Failed to fetch migrations."
+msgstr "Nem sikerült lekérni az áttelepítéseket."
+
+#: build/tools.js:35
+msgid "Migration Task"
+msgstr "Áttelepítési feladat"
+
+#: build/tools.js:35
+msgid "Timestamp"
+msgstr "Időbélyeg"
+
+#: build/tools.js:35
+msgid "Description"
+msgstr "Leírás"
+
+#: build/tools.js:35
+msgid "View Error Log"
+msgstr "Hibanapló megtekintése"
+
+#: build/tools.js:35
+msgid "Run"
+msgstr "Futtatás"
+
+#: build/tools.js:35
+msgid "Revert"
+msgstr "Visszaállítás"
+
+#: build/tools.js:35
+msgid "Retry"
+msgstr "Újrapróbálás"
+
+#: build/tools.js:35
+msgid "Revert Migration?"
+msgstr "Áttelepítés visszaállítása?"
+
+#: build/tools.js:35
+msgid "Revert Migration"
+msgstr "Áttelepítés visszaállítása"
+
+#: build/tools.js:35
+msgid "Retry Migration?"
+msgstr "Megpróbálja újra az áttelepítést?"
+
+#: build/tools.js:35
+msgid "Retry Migration"
+msgstr "Migráció újrapróbálása"
+
+#: build/tools.js:35
+msgid "Run Migration?"
+msgstr "Futtatja az áttelepítést?"
+
+#: build/tools.js:35
+msgid "Run Migration"
+msgstr "Áttelepítés futtatása"
+
+#: build/tools.js:35
+msgid "Refresh Status"
+msgstr "Állapot frissítése"
+
+#: build/tools.js:35
+msgid "No Migrations Registered"
+msgstr "Nincs regisztrált áttelepítés"
+
+#: build/tools.js:35
+msgid "No database or storage migrations have been registered."
+msgstr "Nincs regisztrált adatbázis- vagy tárhely-áttelepítés."
+
+#. translators: 1: action name (run, revert, retry), 2: migration label or ID
+#: build/tools.js:36
+#, js-format
+msgid "Are you sure you want to %1$s the migration \"%2$s\"?"
+msgstr "Biztosan szeretné %1$s a(z) „%2$s” áttelepítést?"
+
+#. translators: %s: Action name (e.g. run, revert, retry)
+#: build/tools.js:37
+#, js-format
+msgid "Failed to %s migration."
+msgstr "Az áttelepítést nem sikerült %s."
+
+#: build/tools.js:37
+msgid "Database & Storage Migrations"
+msgstr "Adatbázis- és tárhely-áttelepítések"
+
+#: build/tools.js:37
+msgid "Inspect, run, revert, and debug system migrations."
+msgstr "Rendszeráttelepítések vizsgálata, futtatása, visszaállítása és hibakeresése."
+
+#: build/tools.js:37
+msgid ""
+"Add optional notes about this rollback. These notes will be stored in the "
+"activity log."
+msgstr "Adjon meg opcionális jegyzeteket a visszaállításhoz. Ezek a jegyzetek a történések naplójába kerülnek."
+
+#: build/tools.js:37
+msgid "Rollback Notes"
+msgstr "Visszaállítási jegyzetek"
+
+#: build/tools.js:37
+msgid "Enter any notes about why this rollback is being performed."
+msgstr "Adja meg, miért hajtja végre ezt a visszaállítást."
+
+#: build/tools.js:37
+msgid ""
+"Check your website to verify the rollback resolved any visual or functional "
+"issues"
+msgstr "Ellenőrizze honlapját, hogy megbizonyosodjon arról, a visszaállítás megoldotta a megjelenítési vagy működési problémákat"
+
+#: build/tools.js:37
+msgid ""
+"If you rolled back due to an error message, review your error logs to "
+"confirm it's resolved"
+msgstr "Ha hibaüzenet miatt állította vissza a verziót, ellenőrizze a hibanaplókat, hogy megbizonyosodjon a hiba elhárításáról"
+
+#: build/tools.js:37
+msgid ""
+"Test key functionality on your site to ensure everything works as expected"
+msgstr "Tesztelje honlapja fontos funkcióit, hogy megbizonyosodjon azok megfelelő működéséről"
+
+#: build/tools.js:37
+msgid ""
+"Review the rollback logs in your WP Rollback Pro dashboard for detailed "
+"information about this rollback"
+msgstr "A visszaállítással kapcsolatos részletes információkért tekintse át a WP Rollback Pro vezérlőpultján található visszaállítási naplókat"
+
+#: build/tools.js:37 build/tools.js:38
+msgid "Return to Dashboard"
+msgstr "Vissza a vezérlőpultra"
+
+#. translators: 1: Asset name 2: Asset version
+#: build/tools.js:38
+#, js-format
+msgid "%1$s has been successfully rolled back to version %2$s."
+msgstr "A(z) %1$s sikeresen vissza lett állítva a %2$s verzióra."
+
+#: build/tools.js:38
+msgid "Rollback Complete"
+msgstr "A visszaállítás befejeződött"
+
+#: build/tools.js:38
+msgid "What's next?"
+msgstr "Mi a következő lépés?"
+
+#: build/tools.js:38
+msgid "Contact our premium support team"
+msgstr "Vegye fel a kapcsolatot prémium támogatási csapatunkkal"
+
+#: build/tools.js:38
+msgid "Add Rollback Notes"
+msgstr "Visszaállítási jegyzetek hozzáadása"
+
+#: build/tools.js:38
+msgid "Back"
+msgstr "Vissza"
+
+#: build/tools.js:38
+msgid "Return to <type/> Screen"
+msgstr "Vissza a(z) <type/> képernyőre"
+
+#: vendor/wp-rollback/shared-core/src/Core/Traits/HandleMultipleApiRoutes.php:62
+msgid "Route not found."
+msgstr "Az útvonal nem található."
+
+#: vendor/wp-rollback/shared-core/src/RestAPI/MigrationsController.php:109
+msgid "You do not have permission to view migrations."
+msgstr "Nincs jogosultsága az áttelepítések megtekintéséhez."
+
+#: vendor/wp-rollback/shared-core/src/RestAPI/MigrationsController.php:135
+msgid "You do not have permission to execute migrations."
+msgstr "Nincs jogosultsága az áttelepítések végrehajtásához."
+
+#. translators: %s: Migration ID
+#: vendor/wp-rollback/shared-core/src/RestAPI/MigrationsController.php:206
+#, php-format
+msgid "Migration \"%s\" executed successfully."
+msgstr "A(z) „%s” áttelepítés sikeresen végrehajtva."
+
+#. translators: %s: Migration ID
+#: vendor/wp-rollback/shared-core/src/RestAPI/MigrationsController.php:213
+#, php-format
+msgid "Migration \"%s\" failed to run."
+msgstr "A(z) „%s” áttelepítés futtatása sikertelen."
+
+#. translators: %s: Migration ID
+#: vendor/wp-rollback/shared-core/src/RestAPI/MigrationsController.php:240
+#, php-format
+msgid "Migration \"%s\" reverted successfully."
+msgstr "A(z) „%s” áttelepítés sikeresen visszaállítva."
+
+#. translators: %s: Migration ID
+#: vendor/wp-rollback/shared-core/src/RestAPI/MigrationsController.php:247
+#, php-format
+msgid "Migration \"%s\" failed to revert."
+msgstr "A(z) „%s” áttelepítés visszaállítása sikertelen."
+
+#. translators: %s: Migration ID
+#: vendor/wp-rollback/shared-core/src/RestAPI/MigrationsController.php:274
+#, php-format
+msgid "Migration \"%s\" retried and completed successfully."
+msgstr "A(z) „%s” áttelepítés újrapróbálása sikeresen befejeződött."
+
+#. translators: %s: Migration ID
+#: vendor/wp-rollback/shared-core/src/RestAPI/MigrationsController.php:281
+#, php-format
+msgid "Migration \"%s\" retry failed."
+msgstr "A(z) „%s” áttelepítés újrapróbálása sikertelen."
+
+#: vendor/wp-rollback/shared-core/src/RestAPI/ProcessRollbackApiRoute.php:146
+msgid "Invalid request. Required parameters are missing."
+msgstr "Hibás kérés. Hiányoznak a kötelező paraméterek."
+
+#. translators: %s: WP Rollback website URL
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Admin/AdminFooter.php:68
+#, php-format
+msgid ""
+"Thank you for using <a href=\"%s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">WP Rollback</a>."
+msgstr "Köszönjük, hogy a <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">WP Rollback</a> bővítményt használja."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Admin/AdminPageHeaderLinks.php:68
+msgid "Roll Back Plugins"
+msgstr "Bővítmények visszaállítása"
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Admin/AdminPageHeaderLinks.php:86
+msgid "Roll Back Themes"
+msgstr "Sablonok visszaállítása"
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/BackupAsset.php:56
+msgid "Archive creation skipped for WordPress.org asset."
+msgstr "A WordPress.org-ról származó elem esetében kimaradt az archívum létrehozása."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/BackupAsset.php:67
+msgid "Archive already exists for this version."
+msgstr "Ehhez a verzióhoz már létezik archívum."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/BackupAsset.php:75
+msgid "Archive created successfully."
+msgstr "Az archívum sikeresen létrehozva."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/BackupAsset.php:83
+msgid "Archive creation failed but rollback will continue."
+msgstr "Az archívum létrehozása sikertelen, de a visszaállítás folytatódik."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/BackupAsset.php:92
+msgid "Creating version archive…"
+msgstr "Verzióarchívum létrehozása…"
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/Cleanup.php:62
+msgid "Maintenance mode required forced cleanup."
+msgstr "A karbantartási mód kényszerített tisztítást tett szükségessé."
+
+#. translators: %s: Package file path
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/Cleanup.php:75
+#, php-format
+msgid "Could not delete package file: %s"
+msgstr "Nem sikerült törölni a csomagfájlt: %s"
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/Cleanup.php:86
+msgid "Cleanup completed successfully."
+msgstr "A tisztítás sikeresen befejeződött."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/Cleanup.php:87
+msgid "Cleanup completed with warnings."
+msgstr "A tisztítás figyelmeztetésekkel fejeződött be."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/Cleanup.php:111
+msgid "Cleaning up temporary files…"
+msgstr "Ideiglenes fájlok tisztítása…"
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/DownloadAsset.php:67
+msgid "Download requested version…"
+msgstr "A kért verzió letöltése…"
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/MaintenanceMode.php:74
+msgid "Maintenance mode is already active."
+msgstr "A karbantartási mód már aktív."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/MaintenanceMode.php:92
+msgid "Maintenance mode not needed for inactive asset."
+msgstr "Kikapcsolt elem esetén nincs szükség karbantartási módra."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/MaintenanceMode.php:110
+msgid "Could not enable maintenance mode, but continuing with rollback."
+msgstr "Nem sikerült bekapcsolni a karbantartási módot, de a visszaállítás folytatódik."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/MaintenanceMode.php:135
+msgid "Maintenance mode enabled successfully."
+msgstr "A karbantartási mód sikeresen bekapcsolva."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/MaintenanceMode.php:152
+msgid "Enabling maintenance mode…"
+msgstr "Karbantartási mód bekapcsolása…"
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/ReplaceAsset.php:62
+msgid "Unable to access the filesystem to replace the files."
+msgstr "Nem sikerült elérni a fájlrendszert a fájlok cseréjéhez."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/ReplaceAsset.php:148
+msgid "Downloaded package for rollback not found."
+msgstr "Nem található a visszaállításhoz letöltött csomag."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/ReplaceAsset.php:160
+msgid "Downloaded package for rollback is not a valid ZIP file."
+msgstr "A visszaállításhoz letöltött csomag nem érvényes ZIP-fájl."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/ReplaceAsset.php:437
+msgid ""
+"Unable to unzip the downloaded package. The version you had has been put "
+"back."
+msgstr "Nem sikerült kicsomagolni a letöltött csomagot. A korábbi verzió visszaállt."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/ReplaceAsset.php:441
+msgid "Unable to unzip the downloaded package."
+msgstr "Nem sikerült kicsomagolni a letöltött csomagot."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/ReplaceAsset.php:473
+msgid "Files replaced successfully."
+msgstr "A fájlok cseréje sikeres."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/ReplaceAsset.php:588
+msgid "Replacing files…"
+msgstr "Fájlok cseréje…"
+
+#. translators: %s: Error message
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/ValidatePackage.php:68
+#, php-format
+msgid "Package error during validation: %s"
+msgstr "Csomaghiba az ellenőrzés során: %s"
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/ValidatePackage.php:79
+msgid "No package found for validation."
+msgstr "Nem található csomag az ellenőrzéshez."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/ValidatePackage.php:88
+msgid "Package file not found for validation."
+msgstr "Nem található csomagfájl az ellenőrzéshez."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/RollbackSteps/ValidatePackage.php:139
+msgid "Validating package integrity…"
+msgstr "Csomagintegritás ellenőrzése…"
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/MaintenanceService.php:49
+msgid ""
+"Site is temporarily unavailable for scheduled maintenance. Please check back"
+" in a minute."
+msgstr "A webhely ütemezett karbantartás miatt átmenetileg nem érhető el. Kérjük, próbálja újra egy perc múlva."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/MaintenanceService.php:114
+msgid "Briefly unavailable for scheduled maintenance. Check back in a minute."
+msgstr "Ütemezett karbantartás miatt átmenetileg nem érhető el. Egy perc múlva próbálja újra."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/MaintenanceService.php:122
+msgid "Maintenance"
+msgstr "Karbantartás"
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/MaintenanceService.php:154
+msgid "Maintenance Mode"
+msgstr "Karbantartási mód"
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:43
+msgid "Package file does not exist for validation."
+msgstr "Az ellenőrizendő csomagfájl nem létezik."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:50
+msgid "Invalid asset type for package validation."
+msgstr "A csomag ellenőrzéséhez megadott elemtípus hibás."
+
+#. translators: %s: Error message
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:66
+#, php-format
+msgid "WordPress Core validation failed: %s"
+msgstr "A WordPress alaprendszerének ellenőrzése sikertelen: %s"
+
+#. translators: %s: Error message
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:80
+#, php-format
+msgid "ZIP validation failed: %s"
+msgstr "A ZIP-ellenőrzés sikertelen: %s"
+
+#. translators: %s: Error message
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:94
+#, php-format
+msgid "Package structure validation failed: %s"
+msgstr "A csomagstruktúra ellenőrzése sikertelen: %s"
+
+#. translators: %1$s: Asset type, %2$s: Number of files validated
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:109
+#, php-format
+msgid ""
+"Package validation successful: %1$s package validated with %2$d files "
+"checked."
+msgstr "Sikeres csomagellenőrzés: a(z) %1$s csomag ellenőrzése megtörtént, %2$d fájl vizsgálatával."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:135
+msgid "File modifications are not allowed on this installation."
+msgstr "Ezen a telepítésen nem engedélyezettek a fájlmódosítások."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:144
+msgid "Package is not a valid ZIP file format."
+msgstr "A csomag formátuma nem érvényes ZIP-formátum."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:161
+msgid "Package is not a valid ZIP file according to WordPress."
+msgstr "A WordPress szerint a csomag nem érvényes ZIP-fájl."
+
+#. translators: %s: MIME type
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:179
+#, php-format
+msgid "Package MIME type \"%s\" is not allowed by WordPress."
+msgstr "A WordPress nem engedélyezi a csomag „%s” MIME-típusát."
+
+#. translators: %s: Maximum file size
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:200
+#, php-format
+msgid "Package exceeds WordPress maximum upload size of %s."
+msgstr "A csomag mérete meghaladja a WordPress maximális feltöltési méretét (%s)."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:211
+msgid "Package file path contains invalid characters."
+msgstr "A csomag fájlútvonala hibás karaktereket tartalmaz."
+
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:239
+msgid "Package file is too large for processing."
+msgstr "A csomagfájl túl nagy a feldolgozáshoz."
+
+#. translators: 1: Path of a file in the package, 2: Plugin or theme folder
+#. name
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:281
+#, php-format
+msgid ""
+"The package can't be installed because \"%1$s\" isn't a valid path inside "
+"the %2$s/ folder. Your installed version hasn't been changed."
+msgstr "A csomag nem telepíthető, mert a(z) „%1$s” nem érvényes elérési útvonal a(z) %2$s/ mappán belül. A telepített verzió nem változott."
+
+#. translators: %s: Asset type
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:313
+#, php-format
+msgid "Package does not appear to contain valid %s files."
+msgstr "Úgy tűnik, a csomag nem tartalmaz érvényes %s fájlokat."
+
+#. translators: %d: ZIP library error code
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:472
+#: vendor/wp-rollback/shared-core/src/Rollbacks/Services/PackageValidationService.php:521
+#, php-format
+msgid "ZIP file appears to be corrupted or invalid. Error code: %d"
+msgstr "Úgy tűnik, a ZIP-fájl sérült vagy hibás. Hibakód: %d"

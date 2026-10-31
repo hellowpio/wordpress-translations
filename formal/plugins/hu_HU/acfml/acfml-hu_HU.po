@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: Advanced Custom Fields Multilingual 2.1.5\n"
+"Project-Id-Version: Advanced Custom Fields Multilingual 5.2.0\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19 08:18+0200\n"
-"PO-Revision-Date: 2025-10-21 10:11+0200\n"
+"PO-Revision-Date: 2026-10-31 19:26+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,14 +18,40 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: Advanced Custom Fields Multilingual\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 2.1.5\n"
+"X-Plugin-Version: 5.2.0\n"
 
-#: classes/TranslationDataMetaboxHooks.php:68
-#, php-format
-msgid "%1$sChange translation settings%2$s"
-msgstr "%1$sFordítási beállítások módosítása%2$s"
+#. Plugin Name of the plugin
+#: wpml-acf.php
+msgid "Advanced Custom Fields Multilingual"
+msgstr "Advanced Custom Fields Multilingual"
 
-#: classes/class-wpml-acf-field-annotations.php:98
+#. Plugin URI of the plugin
+#: wpml-acf.php
+msgid "https://wpml.org/documentation/wpml-core-and-add-on-plugins/acfml/"
+msgstr "https://wpml.org/documentation/wpml-core-and-add-on-plugins/acfml/"
+
+#. Description of the plugin
+#: wpml-acf.php
+msgid ""
+"Adds compatibility between WPML and Advanced Custom Fields | <a "
+"href=\"https://wpml.org/documentation/translating-your-"
+"contents/acf/?utm_source=plugin&utm_medium=gui&utm_campaign=acfml\">Documentation</a>"
+msgstr "Kompatibilitást biztosít a WPML és az Advanced Custom Fields között | <a href=\"https://wpml.org/documentation/translating-your-contents/acf/?utm_source=plugin&utm_medium=gui&utm_campaign=acfml\">dokumentáció</a>"
+
+#. Author of the plugin
+#: wpml-acf.php
+msgid "OnTheGoSystems"
+msgstr "OnTheGoSystems"
+
+#. Author URI of the plugin
+#: wpml-acf.php
+msgid "http://www.onthegosystems.com/"
+msgstr "http://www.onthegosystems.com/"
+
+#. translators: Displayed when editing an ACF field in a translation, showing
+#. its value in the original language; %1$s and %2$s turn the string into
+#. bold, and %3$s is the actual original value.
+#: classes/class-wpml-acf-field-annotations.php:62
 #, php-format
 msgctxt ""
 "Displayed when editing an ACF field in a translation, showing its value in "
@@ -34,48 +60,117 @@ msgctxt ""
 msgid "%1$sOriginal%2$s: %3$s"
 msgstr "%1$sEredeti%2$s: %3$s"
 
-#: classes/Notice/Activation.php:20
-#, php-format
-msgid "%1$sSet translation options%2$s"
-msgstr "%1$sFordítási beállítások megadása%2$s"
+#. translators: Note under a field in the translation editor. The quoted text
+#. is the name of a translation preference and is translated the same way in
+#. the preference list.
+#: classes/class-wpml-acf-field-annotations.php:124
+msgid "This type of ACF field will always be set to \"Copy once\"."
+msgstr "Az ilyen típusú ACF-mezőnél mindig az „Egyszeri másolás” lesz beállítva."
 
-#: classes/TranslationDataMetaboxHooks.php:85
-#, php-format
-msgid "%1$sTranslate labels%2$s"
-msgstr "%1$sCímkék fordítása%2$s"
-
-#: classes/FieldGroup/UIHooks.php:191
-msgid "A Much Simpler Way to Translate Your ACF Sites"
-msgstr "Sokkal egyszerűbb mód ACF-webhelyei fordításához"
-
-#: classes/Tools/LocalUI.php:37
-#, php-format
-msgid ""
-"ACF allows you to %1$sregister fields via PHP%2$s or %3$ssave field settings"
-" as JSON files%4$s and WPML integrates with these features."
-msgstr ""
-"Az ACF lehetővé teszi, hogy %1$sPHP-n keresztül regisztrálja a mezőket%2$s "
-"vagy %3$sa mezőbeállításokat JSON-fájlokként mentse%4$s, a WPML pedig "
-"integrálódik ezekkel a funkciókkal."
-
-#: classes/class-wpml-acf-field-annotations.php:159
+#. translators: Label of the field's name in the note shown under a field in
+#. the translation editor; the name follows the colon.
+#: classes/class-wpml-acf-field-annotations.php:129
 msgid "ACF field name:"
 msgstr "ACF-mező neve:"
 
-#: classes/class-wpml-acf-field-annotations.php:161
+#. translators: Label of the field's kind in the note shown under a field in
+#. the translation editor; the kind follows the colon.
+#: classes/class-wpml-acf-field-annotations.php:132
 msgid "ACF field type:"
 msgstr "ACF-mező típusa:"
 
-#: classes/strategy/repeater-sync/CheckboxUI.php:42
-msgid "ACFML Synchronise translations"
-msgstr "ACFML fordítások szinkronizálása"
+#. translators: Label of the radio group on an ACF field that sets how the
+#. field is translated.
+#: classes/class-wpml-acf-field-settings.php:56
+msgid "Translation preferences"
+msgstr "Fordítási beállítások"
 
-#: classes/class-wpml-acf-requirements.php:14
-msgid "ACFML is enabled but not effective. It requires WPML in order to work."
+#. translators: Explanation under the translation-preferences radio group of
+#. an ACF field.
+#: classes/class-wpml-acf-field-settings.php:58
+msgid "What to do with field's value when post/page is going to be translated"
 msgstr ""
-"Az ACFML engedélyezve van, de nem működik. A működéshez WPML szükséges."
+"Mi történjen a mező értékével, amikor a bejegyzés/oldal fordításra kerül"
 
-#: classes/class-wpml-acf-migrate-block-preferences.php:65
+#. translators: Option kept on a field that was already set to Translate, for
+#. a field type where the option is no longer offered. "Translate" is the
+#. preference's name, translated the same way in the preference list.
+#: classes/class-wpml-acf-field-settings.php:148
+msgid ""
+"Translate (your current setting, no longer offered for this field type)"
+msgstr "Fordítás (az Ön aktuális beállítása, amely ennél a mezőtípusnál már nem érhető el)"
+
+#. translators: Explanation under the Translate option that was kept on a
+#. field type where it is no longer offered.
+#: classes/class-wpml-acf-field-settings.php:206
+msgid ""
+"Kept because it is your current setting. This value is no longer offered for"
+" this field type."
+msgstr "Megmaradt, mert ez az Ön aktuális beállítása. Ez az érték ennél a mezőtípusnál már nem érhető el."
+
+#. translators: Warning under a translation preference that WPML advises
+#. against for the field being edited.
+#: classes/class-wpml-acf-field-settings.php:211
+msgid "Not recommended for this field type."
+msgstr "Ennél a mezőtípusnál nem ajánlott."
+
+#. translators: First line describing the "Don't translate" preference of an
+#. ACF field.
+#: classes/class-wpml-acf-field-settings.php:221
+msgid "Translated pages start without this content."
+msgstr "A lefordított oldalak e tartalom nélkül indulnak."
+
+#. translators: Second line describing the "Don't translate" preference of an
+#. ACF field.
+#: classes/class-wpml-acf-field-settings.php:223
+msgid "Editable in other languages, and starts empty."
+msgstr "Más nyelveken szerkeszthető, és üresen indul."
+
+#. translators: First line describing the "Copy" preference of an ACF field.
+#: classes/class-wpml-acf-field-settings.php:227
+msgid "Visitors in every language always see exactly what the original shows."
+msgstr "A látogatók minden nyelven pontosan azt látják, ami az eredetiben szerepel."
+
+#. translators: Second line describing the "Copy" preference of an ACF field;
+#. "it" is the field.
+#: classes/class-wpml-acf-field-settings.php:229
+msgid "Shown locked in other languages, so it cannot be edited there."
+msgstr "Más nyelveken zárolva jelenik meg, ezért ott nem szerkeszthető."
+
+#. translators: First line describing the "Copy once" preference of an ACF
+#. field.
+#: classes/class-wpml-acf-field-settings.php:233
+msgid "Starts the same as the original, then each language goes its own way."
+msgstr "Az eredetivel azonos tartalommal indul, majd minden nyelv a saját útját járja."
+
+#. translators: Second line describing the "Copy once" preference of an ACF
+#. field.
+#: classes/class-wpml-acf-field-settings.php:235
+msgid "Editable in every language, and permanently yours to maintain by hand."
+msgstr "Minden nyelven szerkeszthető, a tartalom kézi karbantartása pedig végig az Ön feladata."
+
+#. translators: First line describing the "Translate" preference of an ACF
+#. field; "this" is the field's value.
+#: classes/class-wpml-acf-field-settings.php:239
+msgid "Visitors see this in their own language."
+msgstr "A látogatók a saját nyelvükön látják ezt."
+
+#. translators: Second line describing the "Translate" preference of an ACF
+#. field.
+#: classes/class-wpml-acf-field-settings.php:241
+msgid "Filled by the translation and edited in the translation editor."
+msgstr "A fordítás tölti ki, és a fordításszerkesztőben szerkeszthető."
+
+#. translators: Tooltip of the warning icon next to a field whose translation
+#. preference has not been chosen.
+#: classes/class-wpml-acf-field-settings.php:543
+msgid "Edit the field to set the translation preference."
+msgstr "Szerkessze a mezőt a fordítási beállítás megadásához."
+
+#. translators: Admin notice shown while the plugin updates preferences in the
+#. background. "ACFML" is the plugin's short name and "Gutenberg" is the
+#. WordPress editor's name; both stay in English.
+#: classes/class-wpml-acf-migrate-block-preferences.php:44
 msgid ""
 "ACFML is updating translation preferences for strings in Gutenberg Blocks. "
 "Keep using your site as usual. This notice will disappear when the process "
@@ -85,277 +180,98 @@ msgstr ""
 "beállításait. Használja tovább a webhelyét a szokott módon. Ez az értesítés "
 "eltűnik, amikor a folyamat befejeződik."
 
-#: classes/FieldGroup/UIHooks.php:94
-msgid "Activate String Translation"
-msgstr "String Translation aktiválása"
+#. translators: Admin notice shown when the plugin is active but WPML is not;
+#. "It" is this plugin.
+#: classes/class-wpml-acf-requirements.php:24
+msgid "ACFML is enabled but not effective. It requires WPML in order to work."
+msgstr "Az ACFML engedélyezve van, de nem működik. A működéshez WPML szükséges."
 
-#: classes/FieldGroup/UIHooks.php:101
-msgid "Activate now"
-msgstr "Aktiválja most"
-
-#: classes/FieldGroup/UIHooks.php:206
-msgid "Are you sure you want to change the translation option?"
-msgstr "Biztosan meg szeretné változtatni a fordítási beállítást?"
-
-#: classes/Notice/Activation.php:10
+#. translators: Admin notice shown when this plugin is active but Advanced
+#. Custom Fields is not; "It" is this plugin.
+#: classes/class-wpml-acf-requirements.php:40
 msgid ""
-"Before you can start translating, you need to edit each ACF Field Group to "
-"set a translation option for the fields inside it."
-msgstr ""
-"Mielőtt elkezdhetne fordítani, szerkessze mindegyik ACF-mezőcsoportot, és "
-"állítson be fordítási beállítást a benne lévő mezőkhöz."
+"ACFML is enabled but not effective. It requires Advanced Custom Fields or "
+"ACF PRO in order to work."
+msgstr "Az ACFML be van kapcsolva, de nem működik. A működéséhez az Advanced Custom Fields vagy az ACF PRO szükséges."
 
-#: classes/FieldGroup/UIHooks.php:189
-msgid "Change option"
-msgstr "Beállítás módosítása"
+#. translators: Button on the notice shown when Advanced Custom Fields is
+#. installed but not active.
+#: classes/class-wpml-acf-requirements.php:52
+msgid "Activate Advanced Custom Fields"
+msgstr "Advanced Custom Fields bekapcsolása"
 
-#: classes/class-wpml-acf-translatable-groups-checker.php:41
-msgid "Change the field group translation setting"
-msgstr "A mezőcsoport fordítási beállításának módosítása"
+#. translators: Button on the notice shown when Advanced Custom Fields is not
+#. installed.
+#: classes/class-wpml-acf-requirements.php:69
+msgid "Install Advanced Custom Fields"
+msgstr "Advanced Custom Fields telepítése"
 
-#: classes/FieldGroup/UIHooks.php:188
-msgid "Choose"
-msgstr "Válasszon"
+#. translators: First sentence of the admin notice about the ACF field group
+#. post type being translatable. The quoted word is the setting's value in
+#. WPML and is translated the same way there.
+#: classes/class-wpml-acf-translatable-groups-checker.php:86
+msgid ""
+"Field groups are set to \"Translatable\" in WPML settings, which prevents "
+"ACF fields from being translated."
+msgstr "A WPML beállításaiban a mezőcsoportok „Fordítható” értékre vannak állítva, ami megakadályozza az ACF-mezők fordítását."
 
-#: classes/Strings/Package.php:253
-msgid "Complete"
-msgstr "Kész"
+#. translators: Second sentence of that notice; "This" is the field groups
+#. being set to Translatable.
+#: classes/class-wpml-acf-translatable-groups-checker.php:88
+msgid "This is almost never intended."
+msgstr "Ez szinte soha nem szándékos."
 
-#: classes/class-wpml-acf-field-settings.php:125
-msgid "Copy"
-msgstr "Másolás"
+#. translators: Line in that notice when the setting comes from a file. Keep
+#. the file name in English; "Not translatable" is the setting's value in
+#. WPML.
+#: classes/class-wpml-acf-translatable-groups-checker.php:92
+msgid ""
+"A configuration file (wpml-config.xml) controls this setting on this site, "
+"so it cannot be changed from here. Edit that file, or ask whoever maintains "
+"it to set the ACF field group post type to Not translatable."
+msgstr "Ezen a webhelyen egy konfigurációs fájl (wpml-config.xml) szabályozza ezt a beállítást, ezért itt nem módosítható. Szerkessze a fájlt, vagy kérje meg a karbantartásáért felelős személyt, hogy állítsa be az ACF mezőcsoport bejegyzéstípusát nem fordíthatóra."
 
-#: classes/class-wpml-acf-field-settings.php:126
-msgid "Copy once"
-msgstr "Egyszeri másolás"
+#. translators: Last line of that notice; "them" are the copies of the field
+#. groups.
+#: classes/class-wpml-acf-translatable-groups-checker.php:96
+msgid ""
+"Field group copies already created in other languages stay on the site. "
+"Changing this setting does not delete them."
+msgstr "A más nyelveken már létrehozott mezőcsoport-másolatok a webhelyen maradnak. A beállítás módosítása nem törli őket."
 
-#: classes/FieldGroup/TranslationModeColumnHooks.php:50
-#: classes/FieldGroup/UIHooks.php:176
-msgid "Different fields across languages"
-msgstr "Különböző mezők nyelvenként"
+#. translators: Button in the admin notice about translatable field groups; it
+#. applies the fix. "Not translatable" is the setting's value in WPML and is
+#. translated the same way there. Verb phrase, imperative.
+#: classes/class-wpml-acf-translatable-groups-checker.php:118
+msgid "Set field groups to Not translatable"
+msgstr "Mezőcsoportok beállítása nem fordíthatóra"
 
-#: classes/FieldGroup/UIHooks.php:212
-msgid "Documentation"
-msgstr "Dokumentáció"
+#. translators: Link in that notice; it opens the ACFML documentation.
+#: classes/class-wpml-acf-translatable-groups-checker.php:129
+msgid "Why this matters"
+msgstr "Miért fontos ez"
 
-#: classes/class-wpml-acf-field-settings.php:124
-msgid "Don't translate"
-msgstr "Ne fordítsa"
-
-#: classes/FieldGroup/UIHooks.php:126
+#. translators: %d is the number of posts using this field group.
+#: classes/FieldGroup/AttachedPosts.php:46
 #, php-format
 msgid ""
-"Don’t want to translate field labels? %1$sLearn how to disable field label "
-"translation%2$s"
-msgstr ""
-"Nem szeretné lefordítani a mezőcímkéket? %1$sTudja meg, hogyan tilthatja le "
-"a mezőcímkék fordítását%2$s"
+"If any field is set to \"Translatable\", WPML will re-translate the %d posts"
+" using this field group."
+msgstr "Ha bármelyik mező „Fordítható” értékre van állítva, a WPML újrafordítja az ezt a mezőcsoportot használó %d bejegyzést."
 
-#: classes/Notice/FieldGroupModes.php:45
+#. translators: Warning shown before a field group's translation option is
+#. changed, when the update will take under a minute.
+#: classes/FieldGroup/AttachedPosts.php:54
 msgid ""
-"Edit each Field Group to select a translation option for the fields inside "
-"it. If you don't set a translation option, you will not be able to translate"
-" your fields."
+"Some posts using this field group have translations. Once you change the "
+"translation option, WPML needs to update the translation status of the "
+"posts. This can take up to 1 minute."
 msgstr ""
-"Szerkessze mindegyik mezőcsoportot, és válasszon fordítási beállítást a "
-"benne lévő mezőkhöz. Ha nem állít be fordítási beállítást, nem tudja majd "
-"lefordítani a mezőit."
+"Néhány, ezt a mezőcsoportot használó bejegyzésnek van fordítása. A fordítási"
+" opció módosítása után a WPML-nek frissítenie kell a bejegyzések fordítási "
+"állapotát. Ez legfeljebb 1 percet vehet igénybe."
 
-#: classes/class-wpml-acf-field-settings.php:310
-msgid "Edit the field to set the translation preference."
-msgstr "Szerkessze a mezőt a fordítási beállítás megadásához."
-
-#: classes/FieldGroup/TranslationModeColumnHooks.php:48
-#: classes/FieldGroup/UIHooks.php:181
-msgid "Expert"
-msgstr "Haladó"
-
-#: classes/FieldGroup/UIHooks.php:185
-msgid "Expert setup documentation"
-msgstr "Haladó beállítások dokumentációja"
-
-#: classes/FieldGroup/UIHooks.php:136
-msgid "Fields Labels Already Translated"
-msgstr "A mezőcímkék már lefordítva"
-
-#: classes/Notice/Activation.php:9
-msgid "Finish the ACF Multilingual Setup"
-msgstr "Fejezze be az ACF Multilingual beállítását"
-
-#: vendor/wpml-shared/wpml-lib-dependencies/src/dependencies/class-wpml-dependencies.php:349
-#, php-format
-msgid ""
-"For WPML components you can receive updates from your %s or automatically, "
-"after you register WPML."
-msgstr ""
-"A WPML összetevőihez frissítéseket kaphat a(z) %s-ból/ből, vagy "
-"automatikusan, miután regisztrálta a WPML-t."
-
-#: classes/FieldGroup/UIHooks.php:102 classes/FieldGroup/UIHooks.php:139
-#: classes/FieldGroup/UIHooks.php:203
-msgid "Go back"
-msgstr "Vissza"
-
-#: classes/FieldGroup/UIHooks.php:138
-msgid "Go to Translation Management"
-msgstr "Ugrás a Fordításkezeléshez"
-
-#: classes/FieldGroup/UIHooks.php:202
-msgid "Go to WPML Settings"
-msgstr "Ugrás a WPML beállításaihoz"
-
-#: classes/Post/MixedFieldGroupModesHooks.php:92
-msgid "Go to documentation"
-msgstr "Ugrás a dokumentációhoz"
-
-#: classes/FieldGroup/UIHooks.php:213
-msgid "How to translate field labels »"
-msgstr "Hogyan fordítsa le a mezőcímkéket »"
-
-#: classes/FieldGroup/UIHooks.php:182
-msgid ""
-"If you are migrating a site, your existing field groups will use the Expert "
-"setup. This allows you to manually choose the translation option for each "
-"field in the group."
-msgstr ""
-"Ha egy webhelyet migrál, a meglévő mezőcsoportok a Haladó beállítást fogják "
-"használni. Ez lehetővé teszi, hogy manuálisan válassza ki a csoportban lévő "
-"minden mező fordítási beállítását."
-
-#: classes/Tools/LocalUI.php:44
-msgid ""
-"If you select this option, ACF Multilingual will scan your field groups "
-"stored in PHP files and the \"acf-json\" directory. It will then sync any "
-"changes to translation preferences."
-msgstr ""
-"Ha ezt az opciót választja, az ACF Multilingual átvizsgálja a PHP-fájlokban "
-"és az \"acf-json\" könyvtárban tárolt mezőcsoportjait. Ezután szinkronizálja"
-" a fordítási beállításokban történt módosításokat."
-
-#: classes/FieldGroup/DetectNonTranslatableLocations.php:113
-#, php-format
-msgid ""
-"If you want to translate your fields, go to the WPML Settings page and "
-"%1$smake the post type attached to this field group translatable%2$s."
-msgstr ""
-"Ha szeretné lefordítani a mezőit, lépjen a WPML beállítások oldalra, és "
-"%1$stegye fordíthatóvá az ehhez a mezőcsoporthoz kapcsolt "
-"bejegyzéstípust%2$s."
-
-#: classes/FieldGroup/DetectNonTranslatableLocations.php:110
-msgid ""
-"If you want to translate your fields, go to the WPML Settings page and make "
-"the taxonomy attached to this field group translatable. "
-msgstr ""
-"Ha szeretné lefordítani a mezőit, lépjen a WPML beállítások oldalra, és "
-"tegye fordíthatóvá az ehhez a mezőcsoporthoz kapcsolt taxonómiát. "
-
-#: classes/Strings/Package.php:256
-msgid "In progress"
-msgstr "Folyamatban"
-
-#: classes/strategy/repeater-sync/CheckboxUI.php:26
-msgid ""
-"Keep repeater and flexible sub-fields in the same order as the default "
-"language."
-msgstr ""
-"Tartsa a Repeater és Flexible almezőket ugyanabban a sorrendben, mint az "
-"alapértelmezett nyelven."
-
-#: classes/Helper/Cpt.php:81 classes/Helper/Taxonomy.php:81
-#: classes/Helper/OptionsPage.php:81
-msgid "Labels Translation"
-msgstr "Címkék fordítása"
-
-#: classes/Notice/FieldGroupModes.php:44
-msgid "Let's Start Translating!"
-msgstr "Kezdjük el a fordítást!"
-
-#: classes/FieldGroup/UIHooks.php:30
-msgid "Loading..."
-msgstr "Betöltés..."
-
-#: classes/TranslationDataMetaboxHooks.php:38
-#: classes/FieldGroup/UIHooks.php:28
-msgid "Multilingual Setup"
-msgstr "Többnyelvű beállítás"
-
-#: classes/FieldGroup/UIHooks.php:211
-msgid "Need help choosing?"
-msgstr "Segítségre van szüksége a választáshoz?"
-
-#: classes/FieldGroup/UIHooks.php:209
-msgid "No, go back"
-msgstr "Nem, vissza"
-
-#: classes/TranslationDataTrait.php:43
-msgid "Not translatable"
-msgstr "Nem fordítható"
-
-#: classes/Strings/Package.php:259
-msgid "Not translated"
-msgstr "Nincs lefordítva"
-
-#: classes/FieldGroup/UIHooks.php:111 classes/FieldGroup/UIHooks.php:197
-msgid "OK"
-msgstr "OK"
-
-#: vendor/wpml-shared/wpml-lib-dependencies/src/dependencies/class-wpml-dependencies.php:347
-msgid "Please update all components which you are using."
-msgstr "Kérjük, frissítse az összes használt komponenst."
-
-#: classes/Helper/Cpt.php:74
-msgid "Post Type Translation"
-msgstr "Bejegyzéstípus fordítása"
-
-#: classes/Notice/Activation.php:13 classes/Notice/FieldGroupModes.php:48
-#, php-format
-msgid "Read more about %1$show to translate your ACF custom fields%2$s"
-msgstr ""
-"További információ arról, %1$shogyan fordíthatja le ACF egyedi mezőit%2$s"
-
-#: classes/FieldGroup/TranslationModeColumnHooks.php:49
-#: classes/FieldGroup/UIHooks.php:171
-msgid "Same fields across languages"
-msgstr "Ugyanazok a mezők minden nyelven"
-
-#: classes/Tools/LocalUI.php:64
-msgid "Save"
-msgstr "Mentés"
-
-#: classes/Tools/LocalUI.php:55
-msgid "Scan local fields for changes to translation preferences."
-msgstr ""
-"Helyi mezők átvizsgálása a fordítási beállítások változásainak észleléséhez."
-
-#: classes/FieldGroup/UIHooks.php:195
-msgid "Select a Translation Option"
-msgstr "Válasszon fordítási opciót"
-
-#: classes/FieldGroup/UIHooks.php:168
-msgid "Select a translation option for this field group"
-msgstr "Válasszon fordítási opciót ehhez a mezőcsoporthoz"
-
-#: classes/FieldGroup/UIHooks.php:196
-msgid ""
-"Select a translation option in the Multilingual Setup section to save your "
-"changes."
-msgstr ""
-"Válasszon fordítási opciót a Multilingual Setup szakaszban a módosítások "
-"mentéséhez."
-
-#: classes/FieldGroup/UIHooks.php:109
-msgid "Set Up Field Group Translation"
-msgstr "Mezőcsoport fordításának beállítása"
-
-#: classes/FieldGroup/DetectNonTranslatableLocations.php:100
-msgid "Set translation preferences for the attached post type"
-msgstr "Fordítási beállítások megadása a csatolt bejegyzéstípushoz"
-
-#: classes/FieldGroup/DetectNonTranslatableLocations.php:99
-msgid "Set translation preferences for the attached taxonomy"
-msgstr "Fordítási beállítások megadása a csatolt taxonómiához"
-
+#. translators: %d is the number of hours.
 #: classes/FieldGroup/AttachedPosts.php:57
 #, php-format
 msgid ""
@@ -367,6 +283,7 @@ msgstr ""
 " opció módosítása után a WPML-nek frissítenie kell a bejegyzések fordítási "
 "állapotát. Ez akár %d órát is igénybe vehet."
 
+#. translators: %d is the number of minutes.
 #: classes/FieldGroup/AttachedPosts.php:61
 #, php-format
 msgid ""
@@ -378,58 +295,876 @@ msgstr ""
 " opció módosítása után a WPML-nek frissítenie kell a bejegyzések fordítási "
 "állapotát. Ez akár %d percet is igénybe vehet."
 
-#: classes/FieldGroup/AttachedPosts.php:54
+#. translators: Tooltip of the padlock next to a post type's translation
+#. setting that WPML holds; "it" is that setting.
+#: classes/FieldGroup/CptLockHooks.php:91
 msgid ""
-"Some posts using this field group have translations. Once you change the "
-"translation option, WPML needs to update the translation status of the "
-"posts. This can take up to 1 minute."
-msgstr ""
-"Néhány, ezt a mezőcsoportot használó bejegyzésnek van fordítása. A fordítási"
-" opció módosítása után a WPML-nek frissítenie kell a bejegyzések fordítási "
-"állapotát. Ez legfeljebb 1 percet vehet igénybe."
+"Locked by WPML so that ACF fields stay translatable. Click here to unlock "
+"and change it anyway."
+msgstr "A WPML zárolta, hogy az ACF-mezők fordíthatók maradjanak. Kattintson ide a zárolás feloldásához, ha mégis módosítani szeretné."
 
-#: classes/Tools/LocalUI.php:22
-msgid "Sync Translation Preferences for Local Fields"
-msgstr "Helyi mezők fordítási beállításainak szinkronizálása"
+#. translators: Title of the notice on a field group whose taxonomy cannot be
+#. translated yet. Verb phrase, imperative.
+#: classes/FieldGroup/DetectNonTranslatableLocations.php:106
+msgid "Set translation preferences for the attached taxonomy"
+msgstr "Fordítási beállítások megadása a csatolt osztályozáshoz (taxonomy)"
 
-#: classes/strategy/repeater-sync/CheckboxUI.php:20
-msgid "Synchronise translations"
-msgstr "Fordítások szinkronizálása"
+#. translators: Title of the notice on a field group whose post type cannot be
+#. translated yet. Verb phrase, imperative.
+#: classes/FieldGroup/DetectNonTranslatableLocations.php:108
+msgid "Set translation preferences for the attached post type"
+msgstr "Fordítási beállítások megadása a csatolt bejegyzéstípushoz"
 
-#: classes/Helper/Taxonomy.php:74
-msgid "Taxonomy Translation"
-msgstr "Taxonómia fordítása"
-
-#: vendor/wpml-shared/wpml-lib-dependencies/src/dependencies/class-wpml-dependencies.php:316
-msgid "The following components are not updated:"
-msgstr "A következő komponensek nincsenek frissítve:"
-
-#: classes/Tools/LocalUI.php:46
+#. translators: Body of the notice on a field group whose taxonomy cannot be
+#. translated yet. Keep the trailing space: a link follows on the same line.
+#: classes/FieldGroup/DetectNonTranslatableLocations.php:120
 msgid ""
-"This can harm the site's performance if you have a significant number of "
-"fields stored this way."
+"If you want to translate your fields, go to the WPML Settings page and make "
+"the taxonomy attached to this field group translatable. "
 msgstr ""
-"Ez ronthatja a webhely teljesítményét, ha jelentős számú mezőt tárol ilyen "
-"módon."
+"Ha szeretné lefordítani a mezőit, lépjen a WPML beállítások oldalra, és "
+"tegye fordíthatóvá az ehhez a mezőcsoporthoz kapcsolt taxonómiát. "
 
-#: classes/TranslationEditor/DisableHooks.php:41
+#. translators: %1$s and %2$s will wrap the string in a <a> link html tag
+#: classes/FieldGroup/DetectNonTranslatableLocations.php:123
 #, php-format
 msgid ""
-"This content must be translated manually due to the translation option you "
-"selected for the \"%1$s\" field group."
+"If you want to translate your fields, go to the WPML Settings page and "
+"%1$smake the post type attached to this field group translatable%2$s."
 msgstr ""
-"Ezt a tartalmat kézzel kell lefordítani a \"%1$s\" mezőcsoporthoz választott"
-" fordítási opció miatt."
+"Ha szeretné lefordítani a mezőit, lépjen a WPML beállítások oldalra, és "
+"%1$stegye fordíthatóvá az ehhez a mezőcsoporthoz kapcsolt "
+"bejegyzéstípust%2$s."
 
-#: classes/Post/NativeEditorTranslationHooks.php:163
+#. translators: Name of the field group translation mode where each field's
+#. preference is set by hand. Noun used as a mode name.
+#: classes/FieldGroup/Mode.php:39
+msgid "Expert"
+msgstr "Haladó"
+
+#. translators: Name of the field group translation mode where the fields are
+#. sent for translation.
+#: classes/FieldGroup/Mode.php:41
+msgid "Same content in every language, translated"
+msgstr "Ugyanaz a tartalom minden nyelven, lefordítva"
+
+#. translators: Name of the field group translation mode where every language
+#. keeps its own field values.
+#: classes/FieldGroup/Mode.php:43
+msgid "Each language has its own content"
+msgstr "Minden nyelv saját tartalommal rendelkezik"
+
+#. translators: Explanation shown on a repeater, group or flexible-content
+#. field. "Translate" is the name of a translation preference and is
+#. translated the same way it is in the preference list.
+#: classes/FieldGroup/ModeValidity.php:79
 msgid ""
-"This field value is copied from the default language and will be kept in "
-"sync across languages."
-msgstr ""
-"Ennek a mezőnek az értéke az alapértelmezett nyelvből kerül átmásolásra, és "
-"nyelvek között szinkronban marad."
+"Translate is not offered on container fields, because it replaces the value "
+"your theme reads. The fields inside carry their own preferences."
+msgstr "A „Fordítás” beállítás nem érhető el a konténermezőknél, mert lecseréli a sablon által beolvasott értéket. A bennük lévő mezők saját beállításokkal rendelkeznek."
 
-#: classes/FieldGroup/UIHooks.php:192
+#. translators: Explanation shown on a URL field. "Translate" is the name of a
+#. translation preference.
+#: classes/FieldGroup/ModeValidity.php:85
+msgid ""
+"Translate lets each language point at its own address, which an external "
+"link often needs. A link to a page on this site already points at that page "
+"in the reader's language, so leave it as it is."
+msgstr "A „Fordítás” lehetővé teszi, hogy minden nyelv a saját címére mutasson, amire egy külső link esetében gyakran szükség van. A webhely egyik oldalára mutató link már az olvasó nyelvén jeleníti meg az oldalt, ezért hagyja változatlanul."
+
+#. translators: Explanation shown on a link field, which stores a link text, a
+#. URL and a target.
+#: classes/FieldGroup/ModeValidity.php:88
+msgid ""
+"Translate sends the link text and the URL. The target keeps the value you "
+"set, and a URL you leave as it is points at the page in the reader's "
+"language."
+msgstr "A „Fordítás” a linkszöveget és az URL-t is elküldi fordításra. A link célbeállítása az Ön által megadott érték marad, a változatlanul hagyott URL pedig az olvasó nyelvén jeleníti meg az oldalt."
+
+#. translators: Explanation shown on an e-mail field for why translation is
+#. not offered.
+#: classes/FieldGroup/ModeValidity.php:91
+msgid ""
+"Translating an address produces one that does not exist. An e-mail address "
+"is the same in every language."
+msgstr "Egy cím lefordításával nem létező cím jöhet létre. Az e-mail-cím minden nyelven azonos."
+
+#. translators: Explanation shown on a colour-picker field for why translation
+#. is not offered.
+#: classes/FieldGroup/ModeValidity.php:94
+msgid ""
+"A color code is not language content. Translating it changes the color your "
+"visitors see."
+msgstr "A színkód nem nyelvi tartalom. A lefordítása megváltoztatja a látogatók által látott színt."
+
+#. translators: Explanation shown on a date or time field for why translation
+#. is not offered.
+#: classes/FieldGroup/ModeValidity.php:99
+msgid ""
+"The stored value is a fixed date format that your theme reads. Translating "
+"it breaks the format."
+msgstr "A tárolt érték egy rögzített dátumformátum, amelyet a sablon olvas be. A lefordítása tönkreteszi a formátumot."
+
+#. translators: Explanation shown on a select, checkbox, radio or button-group
+#. field for why translation is not offered. Keep the bold tags around the
+#. WPML screen name.
+#: classes/FieldGroup/ModeValidity.php:105
+msgid ""
+"The stored value is the choice key, not the label your visitors see. "
+"Translating it stops the key from matching your choices. Translate the "
+"labels in <b>String Translation</b> instead."
+msgstr "A tárolt érték a választási lehetőség kulcsa, nem a látogatók által látható címke. Ha lefordítja, a kulcs többé nem fog egyezni a választási lehetőségekkel. Ehelyett a címkéket a <b>String Translation</b> bővítményben fordítsa le."
+
+#. translators: Explanation shown on a number or true/false field for why
+#. translation is not offered.
+#: classes/FieldGroup/ModeValidity.php:109
+msgid ""
+"This value is read by your theme or plugin code. A translated value can stop"
+" matching what the code expects."
+msgstr "Ezt az értéket a sablon vagy a bővítmény kódja olvassa be. A lefordított érték nem feltétlenül egyezik azzal, amit a kód elvár."
+
+#. translators: Line in the tooltip of a field whose translation preference
+#. comes from a wpml-config.xml file; "this" is the preference.
+#: classes/FieldGroup/PreferenceSource.php:230
+msgid ""
+"The file decides this again on every import, so changes made elsewhere do "
+"not stick."
+msgstr "Az importálás során a fájl minden alkalommal újra megadja ezt az értéket, ezért a máshol végzett módosítások nem maradnak meg."
+
+#. translators: %s is a configuration file path, for example themes/acme/wpml-
+#. config.xml.
+#: classes/FieldGroup/PreferenceSource.php:233
+#, php-format
+msgid ""
+"Edit %s, or remove the entry there, to manage this field on this screen."
+msgstr "Szerkessze a(z) %s elemet, vagy távolítsa el ott a bejegyzést a mező kezeléséhez ezen a képernyőn."
+
+#. translators: Last line of the tooltip of a field whose preference comes
+#. from a configuration file whose path is unknown.
+#: classes/FieldGroup/PreferenceSource.php:235
+msgid ""
+"Edit the configuration file, or remove the entry there, to manage this field"
+" on this screen."
+msgstr "Szerkessze a konfigurációs fájlt, vagy távolítsa el belőle a bejegyzést a mező kezeléséhez ezen a képernyőn."
+
+#. translators: Warning in the tooltip when the stored preference of a field
+#. differs from the one now chosen on the screen.
+#: classes/FieldGroup/PreferenceSource.php:247
+msgid ""
+"That is not the value selected above. Saving this field group applies the "
+"value above."
+msgstr "Ez nem a fent kiválasztott érték. A mezőcsoport mentése a fenti értéket alkalmazza."
+
+#. translators: %s is a local JSON file path, for example acf-
+#. json/group_640ab1.json.
+#: classes/FieldGroup/PreferenceSource.php:253
+#, php-format
+msgid ""
+"This field group is also in %s. That file re-applies these settings the next"
+" time the group is synced."
+msgstr "Ez a mezőcsoport a(z) %s fájlban is szerepel. A fájl a csoport következő szinkronizálásakor újra alkalmazza ezeket a beállításokat."
+
+#. translators: First line of the tooltip of a field whose translation
+#. preference the theme sets. Keep the file name in English.
+#: classes/FieldGroup/PreferenceSource.php:268
+msgid "Locked. Managed by your theme, in its wpml-config.xml file."
+msgstr "Zárolva. A sablon kezeli a saját wpml-config.xml fájljában."
+
+#. translators: First line of the tooltip of a field whose translation
+#. preference a plugin sets. Keep the file name in English.
+#: classes/FieldGroup/PreferenceSource.php:272
+msgid "Locked. Managed by a plugin, in its wpml-config.xml file."
+msgstr "Zárolva. Egy bővítmény kezeli a saját wpml-config.xml fájljában."
+
+#. translators: First line of the tooltip of a field whose translation
+#. preference comes from a configuration file WPML fetched.
+#: classes/FieldGroup/PreferenceSource.php:276
+msgid ""
+"Locked. Managed by a configuration file WPML downloaded for one of your "
+"plugins or themes."
+msgstr "Zárolva. Egy olyan konfigurációs fájl kezeli, amelyet a WPML az egyik bővítményhez vagy sablonhoz töltött le."
+
+#. translators: First line of the tooltip of a field whose translation
+#. preference comes from the XML the site owner pasted into WPML's settings.
+#: classes/FieldGroup/PreferenceSource.php:280
+msgid ""
+"Locked. Managed by the custom XML configuration saved in WPML settings."
+msgstr "Zárolva. A WPML beállításaiban mentett egyéni XML-konfiguráció kezeli."
+
+#. translators: First line of the tooltip of a field whose translation
+#. preference comes from a configuration file WPML cannot name.
+#: classes/FieldGroup/PreferenceSource.php:284
+msgid "Locked. Managed by a configuration file on this site."
+msgstr "Zárolva. A webhelyen található konfigurációs fájl kezeli."
+
+#. translators: %s is another field group's title.
+#: classes/FieldGroup/PreferenceSource.php:294
+#, php-format
+msgid "Set in the field group \"%s\", which uses the same field name."
+msgstr "A(z) „%s” mezőcsoportban van beállítva, amely ugyanazt a mezőnevet használja."
+
+#. translators: Line in the tooltip saying where a field's translation
+#. preference comes from, when the JSON file's path is unknown.
+#: classes/FieldGroup/PreferenceSource.php:305
+msgid "Set in the field group's local JSON file."
+msgstr "A mezőcsoport helyi JSON-fájljában van beállítva."
+
+#. translators: %s is a local JSON file path, for example acf-
+#. json/group_640ab1.json.
+#: classes/FieldGroup/PreferenceSource.php:308
+#, php-format
+msgid "Set in the field group's local JSON file, %s."
+msgstr "A mezőcsoport helyi JSON-fájljában, a(z) %s fájlban van beállítva."
+
+#. translators: Line in the tooltip saying where a field's translation
+#. preference comes from.
+#: classes/FieldGroup/PreferenceSource.php:314
+msgid "Registered with PHP by your theme or a plugin."
+msgstr "A sablon vagy egy bővítmény PHP-kóddal regisztrálta."
+
+#. translators: Link in the tooltip saying where a field's translation
+#. preference comes from; "Custom Fields Translation" is the name of the
+#. section on that screen.
+#: classes/FieldGroup/PreferenceSource.php:319
+msgid "Set on the WPML Settings screen (Custom Fields Translation)."
+msgstr "Beállítás a WPML beállítások képernyőjén (egyéni mezők fordítása)."
+
+#. translators: Line in the tooltip saying that a field's translation
+#. preference was set on the field group screen the reader is looking at.
+#: classes/FieldGroup/PreferenceSource.php:324
+msgid "Set here, on this screen."
+msgstr "Itt, ezen a képernyőn van beállítva."
+
+#. translators: Line in the tooltip saying what a field's current translation
+#. preference does.
+#: classes/FieldGroup/PreferenceSource.php:336
+msgid ""
+"Right now this field is translated, so visitors see it in their own "
+"language."
+msgstr "Ez a mező jelenleg le van fordítva, így a látogatók a saját nyelvükön látják."
+
+#. translators: Line in the tooltip saying what a field's current translation
+#. preference does.
+#: classes/FieldGroup/PreferenceSource.php:340
+msgid "Right now this field stays identical in every language."
+msgstr "Ez a mező jelenleg minden nyelven azonos marad."
+
+#. translators: Line in the tooltip saying what a field's current translation
+#. preference does.
+#: classes/FieldGroup/PreferenceSource.php:344
+msgid ""
+"Right now this field starts as a copy in every language, then each language "
+"keeps its own."
+msgstr "Ez a mező jelenleg kezdetben minden nyelven másolatként jelenik meg, majd minden nyelv saját példányt kap."
+
+#. translators: Line in the tooltip saying what a field's current translation
+#. preference does.
+#: classes/FieldGroup/PreferenceSource.php:348
+msgid "Right now this field stays out of translations."
+msgstr "Ez a mező jelenleg kimarad a fordításokból."
+
+#. translators: Name of the translation preference that leaves a field out of
+#. translations. Verb phrase, imperative.
+#: classes/FieldGroup/PreferenceSource.php:358
+msgid "Don't translate"
+msgstr "Fordítás mellőzése"
+
+#. translators: Name of the translation preference that gives every language
+#. the original's value. Verb, imperative: the action, not a duplicate.
+#: classes/FieldGroup/PreferenceSource.php:360
+msgid "Copy"
+msgstr "Másolás"
+
+#. translators: Name of the translation preference that seeds each language
+#. from the original and then lets it diverge. Verb phrase, imperative.
+#: classes/FieldGroup/PreferenceSource.php:362
+msgid "Copy once"
+msgstr "Egyszeri másolás"
+
+#. translators: Name of the translation preference that sends a field for
+#. translation. Verb, imperative: the action, not the noun "translation".
+#: classes/FieldGroup/PreferenceSource.php:364
+msgid "Translate"
+msgstr "Fordítás"
+
+#. translators: Label of the count of ACF field groups on the setup notice.
+#. Noun, plural.
+#: classes/FieldGroup/PreflightHooks.php:58
+msgid "Field groups"
+msgstr "Mezőcsoportok"
+
+#. translators: Label of the count of ACF fields on the setup notice, and the
+#. column heading for that count on the translation setup screen. Noun,
+#. plural.
+#: classes/FieldGroup/PreflightHooks.php:60
+#: classes/FieldGroup/SetupScreen.php:133
+msgid "Fields"
+msgstr "Mezők"
+
+#. translators: Label of the count of posts using these field groups, on the
+#. setup notice. Noun, plural.
+#: classes/FieldGroup/PreflightHooks.php:62
+msgid "Posts"
+msgstr "Bejegyzések"
+
+#. translators: Button on the setup notice that opens the ACF field-groups
+#. list; "them" are the field groups. Verb phrase, imperative.
+#: classes/FieldGroup/PreflightHooks.php:71
+msgid "Review them one by one"
+msgstr "Egyenkénti ellenőrzés"
+
+#. translators: %d is the number of field groups that have no translation
+#. setup.
+#: classes/FieldGroup/PreflightHooks.php:82
+#, php-format
+msgid "Apply the recommended setup to %d group"
+msgid_plural "Apply the recommended setup to all %d"
+msgstr[0] "Az ajánlott beállítás alkalmazása %d csoportra"
+msgstr[1] "Az ajánlott beállítás alkalmazása mind a %d csoportra"
+
+#. translators: %d is the number of ACF field groups with no translation
+#. setup.
+#: classes/FieldGroup/PreflightHooks.php:97
+#, php-format
+msgid "%d ACF field group is not configured for translation."
+msgid_plural "%d ACF field groups are not configured for translation."
+msgstr[0] "%d ACF-mezőcsoport fordítása nincs beállítva."
+msgstr[1] "%d ACF-mezőcsoport fordítása nincs beállítva."
+
+#. translators: %d is a number of posts.
+#: classes/FieldGroup/PreflightHooks.php:111
+#, php-format
+msgid "%d post"
+msgid_plural "%d posts"
+msgstr[0] "%d bejegyzés"
+msgstr[1] "%d bejegyzés"
+
+#. translators: %1$s is the number of fields in these field groups, %2$s is
+#. "41 posts", %3$s the site's default language.
+#: classes/FieldGroup/PreflightHooks.php:121
+#, php-format
+msgid "%1$s field, used on %2$s, would be skipped and stay in %3$s."
+msgid_plural "%1$s fields, used on %2$s, would be skipped and stay in %3$s."
+msgstr[0] "A(z) %1$s mező kimaradna, és a(z) %3$s nyelven maradna. A mezőt a(z) %2$s használja."
+msgstr[1] "A(z) %1$s mező kimaradna, és a(z) %3$s nyelven maradna. A mezőt a(z) %2$s használja."
+
+#. translators: %1$s is the number of fields in these field groups, %2$s is
+#. "41 posts".
+#: classes/FieldGroup/PreflightHooks.php:136
+#, php-format
+msgid "%1$s field, used on %2$s, would be skipped and stay untranslated."
+msgid_plural ""
+"%1$s fields, used on %2$s, would be skipped and stay untranslated."
+msgstr[0] "A(z) %1$s mező kimaradna, és lefordítatlan maradna. A mezőt a(z) %2$s használja."
+msgstr[1] "A(z) %1$s mező kimaradna, és lefordítatlan maradna. A mezőt a(z) %2$s használja."
+
+#. translators: Error page shown when the logged-in user may not change the
+#. field groups' translation setup.
+#: classes/FieldGroup/PreflightHooks.php:214
+msgid ""
+"You are not allowed to change the translation setup of ACF field groups."
+msgstr "Nincs jogosultsága az ACF-mezőcsoportok fordítási beállításainak módosításához."
+
+#. translators: Error page shown when the logged-in user may not change WPML's
+#. translation settings.
+#: classes/FieldGroup/SetCptNotTranslatable.php:62
+msgid ""
+"You are not allowed to change the WPML translation settings on this site."
+msgstr "Nincs jogosultsága a WPML fordítási beállításainak módosításához ezen a webhelyen."
+
+#. translators: %s is the field group title.
+#: classes/FieldGroup/SettingsLockHooks.php:75
+#, php-format
+msgid ""
+"To change the translation options for custom fields, edit the field group "
+"\"%s\"."
+msgstr "Az egyéni mezők fordítási opcióinak módosításához szerkessze a(z) „%s” mezőcsoportot."
+
+#. translators: Tooltip of the padlock on fields that come from ACF's local
+#. JSON files. "ACF" and "Field Groups" are that plugin's own screen names;
+#. the arrow separates the menu item from the screen inside it.
+#: classes/FieldGroup/SettingsLockHooks.php:89
+msgid ""
+"These fields come from ACF’s Local JSON files. To change their translation "
+"options, go to ACF → Field Groups, sync them, and then edit their settings."
+msgstr "Ezek a mezők az ACF Local JSON-fájljaiból származnak. A fordítási opciók módosításához lépjen az ACF → mezőcsoportok menüpontra, szinkronizálja a mezőcsoportokat, majd szerkessze a beállításaikat."
+
+#. translators: Tooltip of the information icon on a field the theme or a
+#. plugin registers in code.
+#: classes/FieldGroup/SettingsLockHooks.php:101
+msgid ""
+"This field and its translation setting are registered via PHP by your theme "
+"or plugin. Changes made here will override the original configuration."
+msgstr "Ezt a mezőt és a fordítási beállítását a sablon vagy a bővítmény PHP-kóddal regisztrálta. Az itt végzett módosítások felülbírálják az eredeti konfigurációt."
+
+#. translators: Title of the screen that lists every field group and its
+#. translation setup, used as the browser page title and as the heading.
+#: classes/FieldGroup/SetupScreen.php:31 classes/FieldGroup/SetupScreen.php:98
+msgid "ACF translation setup"
+msgstr "ACF-fordítás beállítása"
+
+#. translators: Menu item under WPML that opens the ACF translation setup
+#. screen.
+#: classes/FieldGroup/SetupScreen.php:33
+msgid "Translation setup"
+msgstr "Fordítás beállítása"
+
+#. translators: Error page shown when the logged-in user may not open the ACF
+#. translation setup screen.
+#: classes/FieldGroup/SetupScreen.php:84
+msgid ""
+"You are not allowed to review the translation setup of ACF field groups."
+msgstr "Nincs jogosultsága az ACF-mezőcsoportok fordítási beállításainak ellenőrzéséhez."
+
+#. translators: Column heading naming the field group of a row, on the
+#. translation setup screen. Noun, singular.
+#: classes/FieldGroup/SetupScreen.php:131
+msgid "Field group"
+msgstr "Mezőcsoport"
+
+#. translators: Column heading for how a field group's translation is set up,
+#. on the translation setup screen. Noun.
+#: classes/FieldGroup/SetupScreen.php:132
+msgid "Setup"
+msgstr "Beállítás"
+
+#. translators: Accessible label (screen readers) of the column holding the
+#. links of each row on the translation setup screen. Noun, plural.
+#: classes/FieldGroup/SetupScreen.php:134
+msgid "Actions"
+msgstr "Műveletek"
+
+#. translators: Shown in place of the table on the translation setup screen
+#. when no field group exists.
+#: classes/FieldGroup/SetupScreen.php:140
+msgid "This site has no ACF field groups yet."
+msgstr "Ezen a webhelyen még nincsenek ACF-mezőcsoportok."
+
+#. translators: Text read out by screen readers in place of the warning
+#. triangle, before the warning that follows it. Keep the colon.
+#: classes/FieldGroup/SetupScreen.php:178
+msgid "Alert:"
+msgstr "Figyelmeztetés:"
+
+#. translators: Link at the end of a warning on the translation setup screen;
+#. it opens the ACFML documentation. "That" is what the warning asks for.
+#: classes/FieldGroup/SetupScreen.php:180
+msgid "How to do that"
+msgstr "Hogyan végezheti el"
+
+#. translators: Link in a row of the translation setup screen; it opens that
+#. field group in ACF. Verb phrase, imperative.
+#: classes/FieldGroup/SetupScreen.php:187
+msgid "View fields"
+msgstr "Mezők megtekintése"
+
+#. translators: Link in a row of the translation setup screen; it opens WPML's
+#. Translation Dashboard. Verb phrase, imperative.
+#: classes/FieldGroup/SetupScreen.php:190
+msgid "Open Dashboard"
+msgstr "Vezérlőpult megnyitása"
+
+#. translators: Heading and button of the screen that gives every field the
+#. translation preference WPML recommends. Verb phrase, imperative.
+#: classes/FieldGroup/SetupScreen.php:200
+#: classes/FieldGroup/SetupScreen.php:217
+msgid "Apply the recommended setup"
+msgstr "Az ajánlott beállítás alkalmazása"
+
+#. translators: Shown on the confirmation screen when no field group is left
+#. to set up.
+#: classes/FieldGroup/SetupScreen.php:204
+msgid ""
+"Every field group stored in this site’s database already has a translation "
+"setup."
+msgstr "A webhely adatbázisában tárolt összes mezőcsoporthoz már van fordítási beállítás."
+
+#. translators: Button that returns to the translation setup screen. Verb
+#. phrase, imperative.
+#: classes/FieldGroup/SetupScreen.php:205
+msgid "Back to the field groups"
+msgstr "Vissza a mezőcsoportokhoz"
+
+#. translators: Warning on the screen that confirms applying the recommended
+#. setup; "those groups" are the field groups counted in the line above.
+#: classes/FieldGroup/SetupScreen.php:209
+msgid ""
+"Every field in those groups then gets the translation preference WPML "
+"recommends for its field type. A preference that was set by hand in one of "
+"them is replaced."
+msgstr "Ezután az adott csoportok minden mezője megkapja a WPML által a mező típusa alapján ajánlott fordítási beállítást. Az egyik mezőnél kézzel megadott beállítás felülíródik."
+
+#. translators: Second warning on the screen that confirms applying the
+#. recommended setup. Keep "acf-json" in English: it is a folder name.
+#: classes/FieldGroup/SetupScreen.php:210
+msgid ""
+"Field groups that come from your theme, a plugin’s code, or an acf-json file"
+" are not changed. They cannot be saved from here."
+msgstr "A sablonból, egy bővítmény kódjából vagy egy acf-json fájlból származó mezőcsoportok nem módosulnak. Ezek innen nem menthetők."
+
+#. translators: Button that leaves the confirmation screen without applying
+#. the recommended setup. Verb, imperative: the action, not the state
+#. "cancelled".
+#: classes/FieldGroup/SetupScreen.php:218
+msgid "Cancel"
+msgstr "Mégse"
+
+#. translators: %d is the number of ACF field groups on the site.
+#: classes/FieldGroup/SetupScreen.php:247
+#, php-format
+msgid "%d field group."
+msgid_plural "%d field groups."
+msgstr[0] "%d mezőcsoport."
+msgstr[1] "%d mezőcsoport."
+
+#. translators: Second half of the summary line on the translation setup
+#. screen; the first half counts the field groups, and "them" are those
+#. groups.
+#: classes/FieldGroup/SetupScreen.php:253
+msgid "All of them have a translation setup."
+msgstr "Mindegyikhez tartozik fordítási beállítás."
+
+#. translators: %d is the number of ACF field groups with no translation
+#. setup.
+#: classes/FieldGroup/SetupScreen.php:258
+#, php-format
+msgid "%d is not configured."
+msgid_plural "%d are not configured."
+msgstr[0] "%d nincs beállítva."
+msgstr[1] "%d nincs beállítva."
+
+#. translators: %d is the number of ACF field groups the action would
+#. configure.
+#: classes/FieldGroup/SetupScreen.php:268
+#, php-format
+msgid "Apply recommended setup to the %d unconfigured group"
+msgid_plural "Apply recommended setup to all %d unconfigured groups"
+msgstr[0] "Ajánlott beállítás alkalmazása a be nem állított %d csoportra"
+msgstr[1] "Ajánlott beállítás alkalmazása az összes be nem állított %d csoportra"
+
+#. translators: %1$d is a number of field groups, %2$s the name of the
+#. recommended setup.
+#: classes/FieldGroup/SetupScreen.php:281
+#, php-format
+msgid "This sets %1$d field group to “%2$s”."
+msgid_plural "This sets %1$d field groups to “%2$s”."
+msgstr[0] "Ez %1$d mezőcsoport beállítását „%2$s” értékre állítja."
+msgstr[1] "Ez %1$d mezőcsoport beállítását „%2$s” értékre állítja."
+
+#. translators: %d is the number of code defined field groups with no
+#. translation setup.
+#: classes/FieldGroup/SetupScreen.php:295
+#, php-format
+msgid ""
+"%d field group is defined in code, so it cannot be configured from here."
+msgid_plural ""
+"%d field groups are defined in code, so they cannot be configured from here."
+msgstr[0] "%d mezőcsoport kódban van definiálva, ezért innen nem állítható be."
+msgstr[1] "%d mezőcsoport kódban van definiálva, ezért innen nem állíthatók be."
+
+#. translators: Value in the Setup column of the translation setup screen, for
+#. a field group with no translation option chosen yet.
+#: classes/FieldGroup/SetupScreen.php:310
+msgid "Not configured"
+msgstr "Nincs beállítva"
+
+#. translators: Value in the Setup column of the translation setup screen, for
+#. a field group with no translation option chosen that a theme or plugin
+#. defines in code.
+#: classes/FieldGroup/SetupScreen.php:312
+msgid "Not configured (defined in code)"
+msgstr "Nincs beállítva (kódban definiálva)"
+
+#. translators: Value in the Setup column of the translation setup screen, for
+#. a field group defined in code whose fields carry their own translation
+#. preferences.
+#: classes/FieldGroup/SetupScreen.php:315
+msgid "Set for each field (defined in code)"
+msgstr "Beállítás mezőnként (kódban definiálva)"
+
+#. translators: Value in the Setup column of the translation setup screen, for
+#. a field group defined in code whose fields are set on WPML > Settings >
+#. Custom Fields Translation.
+#: classes/FieldGroup/SetupScreen.php:318
+msgid "Set for each field in WPML Settings (defined in code)"
+msgstr "Beállítás minden mezőhöz a WPML beállításaiban (kódban definiálva)"
+
+#. translators: %d is the number of fields whose preference differs from the
+#. group's own setup.
+#: classes/FieldGroup/SetupScreen.php:327
+#, php-format
+msgid "%d field set manually"
+msgid_plural "%d fields set manually"
+msgstr[0] "%d mező manuálisan beállítva"
+msgstr[1] "%d mező manuálisan beállítva"
+
+#. translators: %s is the name of an ACF field setting, shown as code.
+#: classes/FieldGroup/SetupScreen.php:335
+#, php-format
+msgid ""
+"Nothing decides how these fields are translated. Set %s on the fields in the"
+" code that registers this group."
+msgstr "A mezők fordításának módját semmi sem határozza meg. Állítsa be a %s értéket a csoportot regisztráló kódban szereplő mezőknél."
+
+#. translators: Second half of a sentence naming where a field group comes
+#. from; it follows the group's name. Keep "acf-json" in English: it is a
+#. folder name.
+#: classes/FieldGroup/SetupScreen.php:344
+msgid "from an acf-json file"
+msgstr "acf-json fájlból"
+
+#. translators: Second half of a sentence naming where a field group comes
+#. from; it follows the group's name. Keep "acf-json" in English: it is a
+#. folder name.
+#: classes/FieldGroup/SetupScreen.php:347
+msgid "from an acf-json file that is newer than this site’s copy"
+msgstr "a webhelyen tárolt példánynál újabb acf-json fájlból"
+
+#. translators: Second half of a sentence naming where a field group comes
+#. from; it follows the group's name.
+#: classes/FieldGroup/SetupScreen.php:350
+msgid "from your theme or a plugin’s code"
+msgstr "a sablon vagy egy bővítmény kódjából"
+
+#. translators: %d is the number of ACF field groups that were just
+#. configured.
+#: classes/FieldGroup/SetupScreen.php:357
+#, php-format
+msgid "%d field group now uses the recommended setup."
+msgid_plural "%d field groups now use the recommended setup."
+msgstr[0] "%d mezőcsoport mostantól az ajánlott beállítást használja."
+msgstr[1] "%d mezőcsoport mostantól az ajánlott beállítást használja."
+
+#. translators: %d is the number of field groups whose acf-json file is newer
+#. than the database copy.
+#: classes/FieldGroup/SetupScreen.php:370
+#, php-format
+msgid ""
+"%d field group has a newer acf-json file waiting to be synced, so that file "
+"decides its setup."
+msgid_plural ""
+"%d field groups have a newer acf-json file waiting to be synced, so those "
+"files decide their setup."
+msgstr[0] "%d mezőcsoport esetében egy újabb acf-json fájl vár szinkronizálásra, ezért annak a fájlnak a beállításai érvényesülnek."
+msgstr[1] "%d mezőcsoport esetében újabb acf-json fájlok várnak szinkronizálásra, ezért ezeknek a fájloknak a beállításai érvényesülnek."
+
+#. translators: Column heading in the ACF field-groups list, showing how each
+#. group is translated.
+#: classes/FieldGroup/TranslationModeColumnHooks.php:27
+msgid "Translation Option"
+msgstr "Fordítási opció"
+
+#. translators: Title of the WPML panel on the ACF field group screen and on
+#. the post editor. Used as a name elsewhere in this plugin, so translate it
+#. the same way each time.
+#: classes/FieldGroup/UIHooks.php:33
+#: classes/TranslationDataMetaboxHooks.php:34
+msgid "Multilingual Setup"
+msgstr "Többnyelvű beállítás"
+
+#. translators: Shown in the Multilingual Setup panel while its contents are
+#. fetched. Keep the three dots.
+#: classes/FieldGroup/UIHooks.php:36
+msgid "Loading..."
+msgstr "Betöltés..."
+
+#. translators: Title of the dialog shown when the WPML String Translation
+#. plugin is installed but switched off. Keep the bold tags around the plugin
+#. name. Verb phrase, imperative.
+#: classes/FieldGroup/UIHooks.php:139
+msgid "Activate <b>String Translation</b>"
+msgstr "A <b>String Translation</b> bekapcsolása"
+
+#. translators: %1$s and %2$s will wrap the string in a <a> link html tag
+#: classes/FieldGroup/UIHooks.php:142
+#, php-format
+msgid ""
+"To translate field group names and labels, please %1$sinstall and activate "
+"WPML’s String Translation add-on%2$s."
+msgstr "A mezőcsoportok nevének és címkéinek fordításához kérjük, %1$stelepítse és kapcsolja be a WPML String Translation kiegészítőt%2$s."
+
+#. translators: Button in that dialog; it opens the WordPress plugins screen.
+#. Verb phrase, imperative.
+#: classes/FieldGroup/UIHooks.php:147
+msgid "Activate now"
+msgstr "Aktiválás most"
+
+#. translators: Button that closes a dialog and returns to the field group.
+#. Verb phrase, imperative.
+#: classes/FieldGroup/UIHooks.php:149 classes/FieldGroup/UIHooks.php:194
+#: classes/FieldGroup/UIHooks.php:209 classes/FieldGroup/UIHooks.php:268
+msgid "Go back"
+msgstr "Vissza"
+
+#. translators: Title of the dialog shown when the field group's labels are
+#. not registered for translation yet. Keep the bold tags. Verb phrase,
+#. imperative.
+#: classes/FieldGroup/UIHooks.php:157
+msgid "Set Up <b>Field Group Translation</b>"
+msgstr "A <b>mezőcsoport fordításának beállítása</b>"
+
+#. translators: Body of that dialog. Keep the bold tags around the two WPML
+#. screen names.
+#: classes/FieldGroup/UIHooks.php:159
+msgid ""
+"To translate field labels from the <b>Translation Management</b> dashboard, "
+"finish the <b>Multilingual Setup</b> and save your field group settings."
+msgstr "A mezőcímkék <b>Fordításkezelés</b> vezérlőpultról történő fordításához fejezze be a <b>Többnyelvű beállítást</b>, és mentse a mezőcsoport beállításait."
+
+#. translators: Button that closes a dialog with nothing further to do.
+#: classes/FieldGroup/UIHooks.php:161
+msgid "OK"
+msgstr "OK"
+
+#. translators: Title of the dialog offering to translate the names of the
+#. fields, not their values. Verb phrase, imperative.
+#: classes/FieldGroup/UIHooks.php:170
+msgid "Translate Field Labels"
+msgstr "Mezőcímkék fordítása"
+
+#. translators: Body of that dialog. Keep the bold tags around the WPML screen
+#. name.
+#: classes/FieldGroup/UIHooks.php:172
+msgid ""
+"To translate field labels, use the <b>Translation Management</b> dashboard."
+msgstr "A mezőcímkék fordításához használja a <b>Fordításkezelés</b> vezérlőpultot."
+
+#. translators: Button that opens WPML's Translation Management dashboard.
+#. Keep the bold tags around the screen name. Verb, imperative.
+#: classes/FieldGroup/UIHooks.php:174 classes/FieldGroup/UIHooks.php:192
+msgid "Translate in <b>Translation Management</b>"
+msgstr "Fordítás a <b>Fordításkezelésben</b>"
+
+#. translators: %1$s and %2$s will wrap the string in a <a> link html tag
+#: classes/FieldGroup/UIHooks.php:179
+#, php-format
+msgid ""
+"Don’t want to translate field labels? %1$sLearn how to disable field label "
+"translation%2$s"
+msgstr "Nem szeretné lefordítani a mezőcímkéket? %1$sTudja meg, hogyan tilthatja le a mezőcímkék fordítását%2$s"
+
+#. translators: Title of the dialog shown when some of the field group's
+#. labels are still untranslated.
+#: classes/FieldGroup/UIHooks.php:188
+msgid "Field Labels Partly Translated"
+msgstr "A mezőcímkék részben vannak lefordítva"
+
+#. translators: Body of that dialog. Keep the bold tags around the WPML screen
+#. name.
+#: classes/FieldGroup/UIHooks.php:190
+msgid ""
+"Some field labels in this group are still untranslated. To finish "
+"translating them, go to the <b>Translation Management</b> dashboard."
+msgstr "A csoport néhány mezőcímkéje még nincs lefordítva. A fordítás befejezéséhez lépjen a <b>Fordításkezelés</b> vezérlőpultra."
+
+#. translators: Title of the dialog shown when every label of the field group
+#. is translated.
+#: classes/FieldGroup/UIHooks.php:203
+msgid "Fields Labels Already Translated"
+msgstr "A mezőcímkék már lefordítva"
+
+#. translators: Body of that dialog. Keep the bold tags around the WPML screen
+#. name.
+#: classes/FieldGroup/UIHooks.php:205
+msgid ""
+"You already translated all field labels in this group. To update any "
+"translations, go to the <b>Translation Management</b> dashboard."
+msgstr "Már lefordította a csoport összes mezőcímkéjét. A fordítások frissítéséhez lépjen a <b>Fordításkezelés</b> vezérlőpultra."
+
+#. translators: Button that opens WPML's Translation Management dashboard.
+#. Keep the bold tags around the screen name. Verb phrase, imperative.
+#: classes/FieldGroup/UIHooks.php:207
+msgid "Go to <b>Translation Management</b>"
+msgstr "Ugrás a <b>Fordításkezeléshez</b>"
+
+#. translators: Heading of the Multilingual Setup panel, above the three
+#. translation options. Verb phrase, imperative.
+#: classes/FieldGroup/UIHooks.php:224
+msgid "Select a translation option for this field group"
+msgstr "Válasszon fordítási opciót ehhez a mezőcsoporthoz"
+
+#. translators: First paragraph describing the "Same content in every
+#. language, translated" option.
+#: classes/FieldGroup/UIHooks.php:229
+msgid ""
+"Visitors everywhere see the same pages, in their own language. Text is "
+"translated; layout and settings stay identical."
+msgstr "A látogatók mindenhol ugyanazokat az oldalakat látják, a saját nyelvükön. A szöveg le van fordítva; az elrendezés és a beállítások azonosak maradnak."
+
+#. translators: Second paragraph describing that same option. Keep the bold
+#. tags around the two WPML feature names.
+#: classes/FieldGroup/UIHooks.php:231
+msgid ""
+"You translate in the WPML <b>Translation Editor</b>. This works with "
+"automatic translation and <b>Translate Everything</b>."
+msgstr "A fordítást a WPML <b>Fordításszerkesztőjében</b> végzi. Ez automatikus fordítással és a <b>Minden lefordítása</b> funkcióval is működik."
+
+#. translators: First paragraph describing the "Each language has its own
+#. content" option.
+#: classes/FieldGroup/UIHooks.php:236
+msgid ""
+"Every language’s pages are written and maintained on their own. Fields start"
+" as a copy of the original, then go their own way."
+msgstr "Az egyes nyelvek oldalai külön készülnek és külön kerülnek karbantartásra. A mezők az eredeti másolataként indulnak, majd külön fejlődnek."
+
+#. translators: Second paragraph describing that same option; "them" are the
+#. language versions.
+#: classes/FieldGroup/UIHooks.php:238
+msgid ""
+"You edit each language in the WordPress editor. WPML does not sync them "
+"afterwards, and automatic translation does not apply."
+msgstr "Az egyes nyelvi változatokat a WordPress szerkesztőjében szerkeszti. A WPML ezután nem szinkronizálja ezeket, és az automatikus fordítás nem alkalmazható."
+
+#. translators: First paragraph describing the Expert option; "Expert" is the
+#. option's own name, translated the same way in the option list.
+#: classes/FieldGroup/UIHooks.php:243
+msgid ""
+"If you are migrating a site, your existing field groups will use the Expert "
+"setup. This allows you to manually choose the translation option for each "
+"field in the group."
+msgstr ""
+"Ha egy webhelyet migrál, a meglévő mezőcsoportok a Haladó beállítást fogják "
+"használni. Ez lehetővé teszi, hogy manuálisan válassza ki a csoportban lévő "
+"minden mező fordítási beállítását."
+
+#. translators: %1$s and %2$s will wrap the string in a <b> html tag
+#: classes/FieldGroup/UIHooks.php:245
+#, php-format
+msgid "This option is %1$snot recommended%2$s for new field groups."
+msgstr "Ez az opció %1$snem ajánlott%2$s új mezőcsoportokhoz."
+
+#. translators: Link under the Expert option; it opens the ACFML
+#. documentation.
+#: classes/FieldGroup/UIHooks.php:247
+msgid "Expert setup documentation"
+msgstr "Haladó beállítások dokumentációja"
+
+#. translators: Button under each translation option that picks it. Verb,
+#. imperative.
+#: classes/FieldGroup/UIHooks.php:251
+msgid "Choose"
+msgstr "Kiválasztás"
+
+#. translators: Badge next to the translation option WPML suggests. Lower
+#. case, as it sits inside the option card.
+#: classes/FieldGroup/UIHooks.php:253
+msgid "recommended for this site"
+msgstr "ehhez a webhelyhez ajánlott"
+
+#. translators: Button that reopens the translation options after one was
+#. chosen. Verb phrase, imperative.
+#: classes/FieldGroup/UIHooks.php:255
+msgid "Change option"
+msgstr "Beállítás módosítása"
+
+#. translators: Title of the tooltip introducing the new field group setup.
+#: classes/FieldGroup/UIHooks.php:258
+msgid "A Much Simpler Way to Translate Your ACF Sites"
+msgstr "Sokkal egyszerűbb mód ACF-webhelyei fordításához"
+
+#. translators: Body of the tooltip introducing the new field group setup.
+#. "ACFML" is the plugin's short name and stays in English.
+#: classes/FieldGroup/UIHooks.php:260
 msgid ""
 "This new release of ACFML allows you to configure multilingual sites in one-"
 "click, instead of many complex settings. Choose how to setup the translation"
@@ -439,209 +1174,968 @@ msgstr ""
 "kattintással, a sok összetett beállítás helyett. Válassza ki, hogyan állítsa"
 " be a mezők fordítását."
 
-#: classes/FieldGroup/UIHooks.php:184
+#. translators: Button that opens WPML's settings, in the dialog about a post
+#. type or taxonomy that cannot be translated. Verb phrase, imperative.
+#: classes/FieldGroup/UIHooks.php:266
+msgid "Go to WPML Settings"
+msgstr "Ugrás a WPML beállításaihoz"
+
+#. translators: Link under the translation options that opens the
+#. documentation.
+#: classes/FieldGroup/UIHooks.php:273
+msgid "Need help choosing?"
+msgstr "Segítségre van szüksége a választáshoz?"
+
+#. translators: Link in the Multilingual Setup panel that opens the ACFML
+#. documentation. Noun.
+#: classes/FieldGroup/UIHooks.php:275
+msgid "Documentation"
+msgstr "Dokumentáció"
+
+#. translators: Link in the Multilingual Setup panel about translating the
+#. fields' names. Keep the arrow at the end.
+#: classes/FieldGroup/UIHooks.php:277
+msgid "How to translate field labels »"
+msgstr "Hogyan fordítsa le a mezőcímkéket »"
+
+#. translators: Line in the Multilingual Setup panel saying what the chosen
+#. option covers: what is typed into the fields, not their names.
+#: classes/FieldGroup/UIHooks.php:279
+msgid "This setup translates field values."
+msgstr "Ez a beállítás a mezőértékeket fordítja le."
+
+#. translators: Line in the Multilingual Setup panel about translating the
+#. fields' names. "ACF Field Group" is the type the Translation Dashboard
+#. shows for these strings; keep the bold tags around the screen name.
+#: classes/FieldGroup/UIHooks.php:281
+msgid ""
+"Translate field labels and dropdown choice labels separately. Find them "
+"under ACF Field Group in the <b>Translation Dashboard</b>."
+msgstr "A mezőcímkéket és a legördülő menük választási lehetőségeinek címkéit külön fordítsa le. Ezeket az ACF mezőcsoport alatt találja a <b>Fordítási vezérlőpulton</b>."
+
+#. translators: Title of the dialog listing what saving the field group will
+#. change. Verb phrase, imperative.
+#: classes/FieldGroup/UIHooks.php:290
+msgid "Review these translation setting changes"
+msgstr "A fordítási beállítások módosításainak áttekintése"
+
+#. translators: Line above the list of changes in that dialog; the list
+#. follows the colon.
+#: classes/FieldGroup/UIHooks.php:292
+msgid "Saving this field group makes these changes:"
+msgstr "A mezőcsoport mentése a következő módosításokat hajtja végre:"
+
+#. translators: %1$s is a field label, %2$s the preference it had, %3$s the
+#. preference it gets. Keep the quotation marks your language uses around the
+#. two values.
+#: classes/FieldGroup/UIHooks.php:294
 #, php-format
-msgid "This option is %1$snot recommended%2$s for new field groups."
-msgstr "Ez az opció %1$snem ajánlott%2$s új mezőcsoportokhoz."
+msgid "%1$s: from “%2$s” to “%3$s”"
+msgstr "%1$s: „%2$s” helyett „%3$s”"
 
-#: classes/class-wpml-acf-field-annotations.php:155
-msgid "This type of ACF field will always be set to \"Copy once\"."
-msgstr "Az ACF-mező ilyen típusánál mindig a \"Copy once\" lesz beállítva."
+#. translators: Line in that dialog shown when the field group moves to the
+#. Expert option.
+#: classes/FieldGroup/UIHooks.php:296
+msgid ""
+"Switching to the field-by-field setup keeps every field's current setting. "
+"From here you set each field yourself."
+msgstr "A mezőnkénti beállításra váltás megőrzi minden mező aktuális beállítását. Innentől Ön állítja be az egyes mezőket."
 
-#: classes/FieldGroup/SettingsLockHooks.php:65
+#. translators: Line in that dialog about content translated from now on.
+#: classes/FieldGroup/UIHooks.php:298
+msgid "New translations use the new settings automatically."
+msgstr "Az új fordítások automatikusan az új beállításokat használják."
+
+#. translators: Shown in a change row in place of the old value, when the
+#. field had no translation preference before.
+#: classes/FieldGroup/UIHooks.php:300
+msgid "Not set"
+msgstr "Nincs beállítva"
+
+#. translators: Line in that dialog when no translated post uses the field
+#. group.
+#: classes/FieldGroup/UIHooks.php:303
+msgid ""
+"No posts with translations use this field group yet, so nothing has to be "
+"sent again."
+msgstr "Még egyetlen fordítással rendelkező bejegyzés sem használja ezt a mezőcsoportot, ezért semmit sem kell újra elküldeni."
+
+#. translators: Line in that dialog when no translated category, tag or other
+#. term uses the field group.
+#: classes/FieldGroup/UIHooks.php:305
+msgid ""
+"No terms with translations use this field group yet, so nothing has to be "
+"sent again."
+msgstr "Még egyetlen fordítással rendelkező kifejezés sem használja ezt a mezőcsoportot, ezért semmit sem kell újra elküldeni."
+
+#. translators: Line in that dialog when neither a translated post nor a
+#. translated term uses the field group.
+#: classes/FieldGroup/UIHooks.php:307
+msgid ""
+"No posts or terms with translations use this field group yet, so nothing has"
+" to be sent again."
+msgstr "Még egyetlen fordítással rendelkező bejegyzés vagy kifejezés sem használja ezt a mezőcsoportot, ezért semmit sem kell újra elküldeni."
+
+#. translators: Label of the option that leaves existing translations alone.
+#. Verb phrase, imperative.
+#: classes/FieldGroup/UIHooks.php:309
+msgid "Only apply to new translations"
+msgstr "Alkalmazás csak az új fordításokra"
+
+#. translators: Shown in that dialog while the affected posts are being
+#. counted. Keep the three dots.
+#: classes/FieldGroup/UIHooks.php:311
+msgid "Checking how much content this affects..."
+msgstr "Annak ellenőrzése, hogy ez mennyi tartalmat érint..."
+
+#. translators: Button that confirms the dialog and saves the field group.
+#. Verb phrase, imperative.
+#: classes/FieldGroup/UIHooks.php:315
+msgid "Save changes"
+msgstr "Módosítások mentése"
+
+#. translators: Button that closes the dialog without saving the field group.
+#: classes/FieldGroup/UIHooks.php:317
+msgid "No, go back"
+msgstr "Nem, vissza"
+
+#. translators: Line in that dialog about the posts that already have
+#. translations; "them" are those posts.
+#: classes/FieldGroup/UIHooks.php:326
+msgid ""
+"Updating them sends them for translation again, which may use translation "
+"words."
+msgstr "Frissítésük ismét fordításra küldi őket, ami fordítási szavakat használhat fel."
+
+#. translators: Line in that dialog about the posts that already have
+#. translations, when WPML does not translate content automatically; "them"
+#. and "their" are those posts.
+#: classes/FieldGroup/UIHooks.php:330
+msgid ""
+"Updating them marks their translations as needing an update. WPML does not "
+"send them for translation. You can send them from the Translation Dashboard."
+msgstr "Frissítésük jelzi, hogy fordításaik frissítésre szorulnak. A WPML nem küldi el őket fordításra. A Fordítási vezérlőpultról küldheti el őket."
+
+#. translators: %d is the number of fields in the field group.
+#: classes/FieldGroup/UIHooks.php:337 classes/FieldGroup/UIHooks.php:346
 #, php-format
 msgid ""
-"To change the translation options for custom fields, edit the field group "
-"\"%s\"."
-msgstr ""
-"Az egyedi mezők fordítási opcióinak módosításához szerkessze a(z) \"%s\" "
-"mezőcsoportot."
+"Switching the setup applies the recommended value to the %d field in this "
+"group."
+msgid_plural ""
+"Switching the setup applies the recommended value to all %d fields in this "
+"group."
+msgstr[0] "A beállítás váltásakor a csoport %d mezője az ajánlott értéket kapja."
+msgstr[1] "A beállítás váltásakor a csoportban lévő %d mező mindegyike az ajánlott értéket kapja."
 
-#: classes/FieldGroup/UIHooks.php:97
+#. translators: %d is the number of posts that already have translations.
+#: classes/FieldGroup/UIHooks.php:355 classes/FieldGroup/UIHooks.php:364
+#, php-format
+msgid "%d post already has translations that used the old settings."
+msgid_plural "%d posts already have translations that used the old settings."
+msgstr[0] "%d bejegyzés fordítása már a régi beállításokat használja."
+msgstr[1] "%d bejegyzés fordítása már a régi beállításokat használja."
+
+#. translators: %d is the number of terms that already have translations.
+#: classes/FieldGroup/UIHooks.php:373 classes/FieldGroup/UIHooks.php:382
+#, php-format
+msgid "%d term already has translations that used the old settings."
+msgid_plural "%d terms already have translations that used the old settings."
+msgstr[0] "%d kifejezés fordítása már a régi beállításokat használja."
+msgstr[1] "%d kifejezés fordítása már a régi beállításokat használja."
+
+#. translators: %d is the number of posts using this field group.
+#: classes/FieldGroup/UIHooks.php:391 classes/FieldGroup/UIHooks.php:400
+#, php-format
+msgid "%d post uses this field group."
+msgid_plural "%d posts use this field group."
+msgstr[0] "%d bejegyzés használja ezt a mezőcsoportot."
+msgstr[1] "%d bejegyzés használja ezt a mezőcsoportot."
+
+#. translators: %d is the number of posts with translations that have their
+#. own content in each language.
+#: classes/FieldGroup/UIHooks.php:409 classes/FieldGroup/UIHooks.php:418
 #, php-format
 msgid ""
-"To translate field group names and labels, please %1$sinstall and activate "
-"WPML’s String Translation add-on%2$s."
-msgstr ""
-"A mezőcsoportok neveinek és címkéinek fordításához kérjük, %1$stelepítse és "
-"aktiválja a WPML String Translation kiegészítőt%2$s."
+"%d post is translated by hand, so WPML does not send it for translation."
+msgid_plural ""
+"%d posts are translated by hand, so WPML does not send them for translation."
+msgstr[0] "A(z) %d bejegyzés kézi fordítással készült, ezért a WPML nem küldi el fordításra."
+msgstr[1] "A(z) %d bejegyzés kézi fordítással készült, ezért a WPML nem küldi el őket fordításra."
 
-#: classes/FieldGroup/UIHooks.php:110
+#. translators: %d is the number of posts that already have translations.
+#: classes/FieldGroup/UIHooks.php:427 classes/FieldGroup/UIHooks.php:436
+#, php-format
+msgid "Also update the %d existing post"
+msgid_plural "Also update the %d existing posts"
+msgstr[0] "A meglévő %d bejegyzés frissítése is"
+msgstr[1] "A meglévő %d bejegyzés frissítése is"
+
+#. translators: %d is the number of terms that already have translations.
+#: classes/FieldGroup/UIHooks.php:445 classes/FieldGroup/UIHooks.php:454
+#, php-format
+msgid "Also update the %d existing term"
+msgid_plural "Also update the %d existing terms"
+msgstr[0] "A meglévő %d kifejezés frissítése is"
+msgstr[1] "A meglévő %d kifejezés frissítése is"
+
+#. translators: %1$d is a number of posts, %2$d a number of terms.
+#: classes/FieldGroup/UIHooks.php:462
+#, php-format
+msgid "Also update the %1$d existing posts and %2$d terms"
+msgstr "A meglévő %1$d bejegyzés és %2$d kifejezés frissítése is"
+
+#. translators: %1$d is a number of posts, %2$d a number of terms.
+#: classes/FieldGroup/UIHooks.php:464
+#, php-format
+msgid "Also update the %1$d existing post and %2$d terms"
+msgstr "A meglévő %1$d bejegyzés és %2$d kifejezés frissítése is"
+
+#. translators: %1$d is a number of posts, %2$d a number of terms.
+#: classes/FieldGroup/UIHooks.php:466
+#, php-format
+msgid "Also update the %1$d existing posts and %2$d term"
+msgstr "A meglévő %1$d bejegyzés és %2$d kifejezés frissítése is"
+
+#. translators: %1$d is a number of posts, %2$d a number of terms.
+#: classes/FieldGroup/UIHooks.php:468
+#, php-format
+msgid "Also update the %1$d existing post and %2$d term"
+msgstr "A meglévő %1$d bejegyzés és %2$d kifejezés frissítése is"
+
+#. translators: First sentence of the notice on a field group attached to an
+#. ACF options page. "Options page" is ACF's own name for that screen.
+#: classes/FieldGroup/UIHooks.php:477
+msgid "This field group is shown on an Options page."
+msgstr "Ez a mezőcsoport egy opciókat tartalmazó oldalon jelenik meg."
+
+#. translators: Second sentence of that notice; "That" is the content on an
+#. options page.
+#: classes/FieldGroup/UIHooks.php:479
 msgid ""
-"To translate field labels from the Translation Management dashboard, finish "
-"the Multilingual Setup and save your field group settings."
-msgstr ""
-"A mezőcímkék fordításához a Translation Management irányítópulton fejezze be"
-" a Multilingual Setup folyamatot, és mentse a mezőcsoport beállításait."
+"That is usually site-wide content like your header, footer, or global "
+"blocks."
+msgstr "Ez általában a webhely egészére kiterjedő tartalom, például a fejléc, a lábléc vagy a globális blokkok."
 
-#: classes/FieldGroup/UIHooks.php:120
-msgid "To translate field labels, use the Translation Management dashboard."
-msgstr ""
-"A mezőcímkék fordításához használja a Translation Management irányítópultot."
+#. translators: %1$s and %2$s will wrap the string in a <a> link html tag
+#: classes/FieldGroup/UIHooks.php:482
+#, php-format
+msgid "To translate that content, use the %1$sWPML Translation Dashboard%2$s."
+msgstr "A tartalom fordításához használja a %1$sWPML fordítási vezérlőpultot%2$s."
 
-#: classes/TranslationDataTrait.php:46
-msgid "Translatable"
-msgstr "Fordítható"
-
-#: classes/class-wpml-acf-field-settings.php:127
-msgid "Translate"
-msgstr "Fordítás"
-
-#: classes/FieldGroup/UIHooks.php:119
-msgid "Translate Field Labels"
-msgstr "Mezőcímkék fordítása"
-
-#: classes/FieldGroup/UIHooks.php:121
-msgid "Translate in Translation Management"
-msgstr "Fordítás a Translation Managementben"
-
-#: classes/FieldGroup/UIHooks.php:172
+#. translators: Last sentence of that notice; "the options below" are the
+#. translation options of the panel.
+#: classes/FieldGroup/UIHooks.php:487
 msgid ""
-"Translate your site’s content while keeping the same visual design across "
-"all languages. All languages will share the same field order, number of "
-"fields, and field types. All you need to do is translate the content."
-msgstr ""
-"Fordítsa le webhelye tartalmát úgy, hogy minden nyelven ugyanaz a vizuális "
-"megjelenés maradjon. Minden nyelv ugyanazt a mezősorrendet, mezőszámot és "
-"mezőtípusokat fogja használni. Csak a tartalmat kell lefordítania."
+"The options below still decide how each field behaves: translated, copied to"
+" every language, or kept separately per language."
+msgstr "Az alábbi opciók továbbra is meghatározzák az egyes mezők kezelését: lefordítás, másolás minden nyelvre vagy külön kezelés nyelvenként."
 
-#: classes/FieldGroup/TranslationModeColumnHooks.php:34
-msgid "Translation Option"
-msgstr "Fordítási opció"
+#. translators: First sentence of the notice on a field group used both on an
+#. ACF options page and elsewhere.
+#: classes/FieldGroup/UIHooks.php:489
+msgid "This field group also appears on an Options page."
+msgstr "Ez a mezőcsoport egy opciós oldalon is megjelenik."
 
-#: classes/class-wpml-acf-field-settings.php:66
-msgid "Translation preferences"
-msgstr "Fordítási beállítások"
-
-#: classes/Tools/LocalUI.php:82
-msgid "Translation preferences scanning options saved."
-msgstr "A fordítási beállítások vizsgálati opciói mentve."
-
-#: classes/FieldGroup/UIHooks.php:177
-msgid ""
-"Use a different visual design in different languages. You can have a "
-"different field order, layout, and number of fields per language. With this "
-"option, you cannot use WPML’s Advanced Translation Editor or translation "
-"services."
-msgstr ""
-"Használjon eltérő vizuális megjelenést különböző nyelveken. Nyelvenként "
-"eltérő mezősorrend, elrendezés és mezőszám lehet. Ezzel az opcióval nem "
-"használhatja a WPML Advanced Translation Editort vagy a fordítási "
-"szolgáltatásokat."
-
-#: vendor/wpml-shared/wpml-lib-dependencies/src/dependencies/class-wpml-dependencies.php:294
-msgid "WPML Update is Incomplete"
-msgstr "A WPML frissítése hiányos"
-
-#: vendor/wpml-shared/wpml-lib-dependencies/src/dependencies/class-wpml-dependencies.php:343
-msgid "WPML.org account"
-msgstr "WPML.org-fiók"
-
-#: classes/class-wpml-acf-field-settings.php:67
-msgid "What to do with field's value when post/page is going to be translated"
-msgstr ""
-"Mi történjen a mező értékével, amikor a bejegyzés/oldal fordításra kerül"
-
-#: classes/FieldGroup/UIHooks.php:208
-msgid "Yes, continue"
-msgstr "Igen, folytatás"
-
-#: classes/FieldGroup/UIHooks.php:137
-msgid ""
-"You already translated all field labels in this group. To update any "
-"translations, go to the Translation Management dashboard."
-msgstr ""
-"Már lefordított minden mezőcímkét ebben a csoportban. A fordítások "
-"frissítéséhez lépjen a Translation Management irányítópultra."
-
-#: vendor/wpml-shared/wpml-lib-dependencies/src/dependencies/class-wpml-dependencies.php:310
+#. translators: %1$s and %2$s will wrap the string in a <a> link html tag
+#: classes/FieldGroup/UIHooks.php:492
 #, php-format
 msgid ""
-"You are running updated %s and %s, but the following components are not "
-"updated:"
-msgstr ""
-"A(z) %s és %s naprakész, de a következő komponensek nincsenek frissítve:"
+"That content is translated in the %1$sWPML Translation Dashboard%2$s, and "
+"the option you choose here decides how each of its fields behaves."
+msgstr "A tartalom fordítása a %1$sWPML fordítási vezérlőpulton%2$s történik, az itt kiválasztott opció pedig meghatározza, hogyan működik az egyes mezők fordítása."
 
-#: vendor/wpml-shared/wpml-lib-dependencies/src/dependencies/class-wpml-dependencies.php:307
+#. translators: Name of the WPML screen that decides which post types are
+#. translated, used inside the panel that links to it.
+#: classes/Helper/Cpt.php:49
+msgid "Post Type Translation"
+msgstr "Bejegyzéstípus fordítása"
+
+#. translators: Row label in the Multilingual Setup panel, saying how the
+#. names of a post type, taxonomy or options page are translated.
+#: classes/Helper/Cpt.php:54 classes/Helper/OptionsPage.php:53
+#: classes/Helper/Taxonomy.php:54
+msgid "Labels Translation"
+msgstr "Címkék fordítása"
+
+#. translators: Name of the WPML screen that decides which taxonomies are
+#. translated, used inside the panel that links to it.
+#: classes/Helper/Taxonomy.php:49
+msgid "Taxonomy Translation"
+msgstr "Osztályozás (taxonómia) fordítása"
+
+#. translators: Heading of the admin notice shown after the plugin is switched
+#. on. Keep the bold tags around the panel's name. Verb phrase, imperative.
+#: classes/Notice/ActivationNotice.php:51
+msgid "Finish the ACF <b>Multilingual Setup</b>"
+msgstr "Az ACF <b>Multilingual beállításának</b> befejezése"
+
+#. translators: Body of that admin notice; "Field Group" is ACF's own name for
+#. the screen.
+#: classes/Notice/ActivationNotice.php:53
+msgid ""
+"Before you can start translating, you need to edit each ACF Field Group to "
+"set a translation option for the fields inside it."
+msgstr ""
+"Mielőtt elkezdhetne fordítani, szerkessze mindegyik ACF-mezőcsoportot, és "
+"állítson be fordítási beállítást a benne lévő mezőkhöz."
+
+#. translators: The placeholders are replaced by an HTML link pointing to the
+#. documentation.
+#: classes/Notice/ActivationNotice.php:56
+#: classes/Notice/FieldGroupModes.php:52
+#, php-format
+msgid "Read more about %1$show to translate your ACF custom fields%2$s"
+msgstr "Bővebben arról, %1$shogyan fordíthatja le az ACF egyéni mezőit%2$s"
+
+#. translators: The placeholders are replaced by an HTML link pointing to
+#. field groups list.
+#: classes/Notice/ActivationNotice.php:63
+#, php-format
+msgid "%1$sSet translation options%2$s"
+msgstr "%1$sFordítási beállítások megadása%2$s"
+
+#. translators: Heading of the admin notice inviting the site owner to set a
+#. translation option on each field group.
+#: classes/Notice/FieldGroupModes.php:47
+msgid "Let's Start Translating!"
+msgstr "Kezdjük el a fordítást!"
+
+#. translators: Body of that admin notice; "Field Group" is ACF's own name for
+#. the screen.
+#: classes/Notice/FieldGroupModes.php:49
+msgid ""
+"Edit each Field Group to select a translation option for the fields inside "
+"it. If you don't set a translation option, you will not be able to translate"
+" your fields."
+msgstr ""
+"Szerkessze mindegyik mezőcsoportot, és válasszon fordítási beállítást a "
+"benne lévő mezőkhöz. Ha nem állít be fordítási beállítást, nem tudja majd "
+"lefordítani a mezőit."
+
+#. translators: %s is the title of the field group being saved.
+#: classes/Notice/FieldNameCollisions.php:50
 #, php-format
 msgid ""
-"You are running updated %s, but the following component is not updated:"
-msgstr "A(z) %s naprakész, de a következő komponens nincs frissítve:"
+"A field in \"%s\" has the same name as a field in another field group. WPML "
+"stores translation preferences by field name, so two fields that share a "
+"name cannot be set differently."
+msgstr "A(z) „%s” egyik mezőjének neve megegyezik egy másik mezőcsoportban található mező nevével. A WPML a fordítási beállításokat mezőnév szerint tárolja, ezért az azonos nevű mezőkhöz nem állíthatók be eltérő beállítások."
 
-#: vendor/wpml-shared/wpml-lib-dependencies/src/dependencies/class-wpml-php-version-check.php:87
+#. translators: %s is the title of the field group being saved.
+#: classes/Notice/FieldNameCollisions.php:52
 #, php-format
 msgid ""
-"You can find version of the plugin suitable for your environment <a "
-"href=\"%s\">here</a>."
-msgstr ""
-"A környezetéhez megfelelő bővítményverziót <a href=\\\"%s\\\">itt</a> "
-"találja."
+"Some fields in \"%s\" have the same name as fields in other field groups. "
+"WPML stores translation preferences by field name, so fields that share a "
+"name cannot be set differently."
+msgstr "A(z) „%s” néhány mezőjének neve megegyezik más mezőcsoportok mezőinek nevével. A WPML a fordítási beállításokat mezőnév szerint tárolja, ezért az azonos nevű mezőkhöz nem állíthatók be eltérő beállítások."
 
-#: classes/class-wpml-acf-translatable-groups-checker.php:46
+#. translators: Heading of the admin notice about two fields in different
+#. groups sharing a name; "here" is the field group being edited.
+#: classes/Notice/FieldNameCollisions.php:55
+msgid "What you set here may not be what your visitors get"
+msgstr "Előfordulhat, hogy a látogatók nem azt látják, amit itt beállít"
+
+#. translators: %1$s is a field name, %2$s is the title of another field
+#. group.
+#: classes/Notice/FieldNameCollisions.php:70
 #, php-format
 msgid ""
-"You can translate field labels and labels for Choices using String "
-"Translation. To do this, %1$sset the field group post type to %2$sNot "
-"Translatable%3$s%4$s."
-msgstr ""
-"A mezőcímkéket és a Choices címkéit a String Translation segítségével "
-"fordíthatja. Ehhez %1$sállítsa a mezőcsoport bejegyzéstípusát %2$sNot "
-"Translatable%3$s értékre%4$s."
+"The field %1$s also exists in \"%2$s\". Rename this field to give it a "
+"translation setting of its own."
+msgstr "A(z) %1$s mező a(z) „%2$s” mezőcsoportban is létezik. Nevezze át ezt a mezőt, hogy saját fordítási beállítást kapjon."
 
-#: classes/Post/MixedFieldGroupModesHooks.php:62
+#. translators: Link at the end of a line in that notice; it opens the other
+#. field group. Verb phrase, imperative.
+#: classes/Notice/FieldNameCollisions.php:78
+msgid "See both fields"
+msgstr "Mindkét mező megtekintése"
+
+#. translators: Button in the admin notice about untranslated media texts; it
+#. opens WPML's Media Translation settings. Verb phrase, imperative.
+#: classes/Notice/MediaTexts.php:45
+msgid "Go to Media Translation settings"
+msgstr "Ugrás a Médiafordítás beállításaihoz"
+
+#. translators: Body of the admin notice about untranslated media texts. The
+#. quoted text is the name of a WPML setting and is translated the same way
+#. there.
+#: classes/Notice/MediaTexts.php:84
+msgid ""
+"This content has ACF image, gallery, or file fields, but the alt text, "
+"caption, and title of their media will not be sent for translation. To "
+"include them, turn on \"Translate Media Library texts when translating "
+"content\" in WPML Media Translation settings."
+msgstr "Ez a tartalom ACF-kép-, galéria- vagy fájlmezőket tartalmaz, de a médiához tartozó helyettesítő szöveg, képaláírás és cím nem lesz elküldve fordításra. Ezek bevonásához kapcsolja be a „Médiatár szövegeinek fordítása tartalom fordításakor” opciót a WPML Médiafordítás beállításaiban."
+
+#. translators: Heading of the admin notice about untranslated media texts.
+#: classes/Notice/MediaTexts.php:89
+msgid "Media texts are not being translated"
+msgstr "A médiaszövegek fordítása ki van kapcsolva"
+
+#. translators: The placeholders are replaced by an HTML link pointing to the
+#. WPML Media settings page.
+#: classes/Notice/MediaTexts.php:93
+#, php-format
+msgid "%1$sGo to Media Translation settings%2$s"
+msgstr "%1$sUgrás a Médiafordítás beállításaihoz%2$s"
+
+#. translators: Heading of the admin notice on an ACF options page. Keep the
+#. bold tags around the WPML screen name; "Options page" is ACF's own name for
+#. that screen. Verb, imperative.
+#: classes/Options/EditorHooks.php:364
+msgid "Translate this Options page from the <b>Translation Dashboard</b>"
+msgstr "Ennek az opciós oldalnak a fordítása a <b>fordítási vezérlőpulton</b>"
+
+#. translators: Text in the notice on an ACF options page in a secondary
+#. language. %1$s: opening link tag, %2$s: closing link tag; the link opens
+#. WPML's Translation Dashboard.
+#: classes/Options/EditorHooks.php:367
+#, php-format
+msgid ""
+"You no longer need to switch the admin language to translate options "
+"manually. Translate all your options from the %1$sTranslation Dashboard%2$s."
+msgstr "Többé nem kell az adminisztráció nyelvét átváltania az opciók kézi fordításához. Fordítsa le az összes opciót a %1$sfordítási vezérlőpulton%2$s."
+
+#. translators: Tooltip of the link in that notice; it opens WPML's
+#. Translation Dashboard.
+#: classes/Options/EditorHooks.php:369
+msgid "Go to the Translation Dashboard"
+msgstr "Ugrás a fordítási vezérlőpultra"
+
+#. translators: Text in the notice on an ACF options page in a secondary
+#. language. %1$s: opening link tag, %2$s: closing link tag; the link opens
+#. WPML's Translation Jobs list. "Edit Translation" is the tooltip of the
+#. pencil icon in that list: use the same words as WPML's own translation of
+#. that tooltip.
+#: classes/Options/EditorHooks.php:374
+#, php-format
+msgid ""
+"To change a finished translation, go to %1$sTranslation Jobs%2$s and click "
+"on the Edit Translation icon."
+msgstr "A kész fordítás módosításához lépjen a %1$sfordítási feladatokhoz%2$s, majd kattintson a Fordítás szerkesztése ikonra."
+
+#. translators: Tooltip of the link in that notice; it opens WPML's
+#. Translation Jobs list.
+#: classes/Options/EditorHooks.php:376
+msgid "Go to Translation Jobs"
+msgstr "Ugrás a fordítási feladatokhoz"
+
+#. translators: 1: number of fields the form sent, 2: the max_input_vars limit
+#: classes/Post/MaxInputVarsGuard.php:24
+#, php-format
+msgid ""
+"WPML blocked this save to prevent data loss. The form sent about %1$s "
+"fields, but the PHP max_input_vars limit on this server (%2$s) let fewer "
+"through. Saving now would permanently delete the fields that did not arrive,"
+" including repeater rows. Nothing was saved. Ask your host to raise "
+"max_input_vars above %1$s and save again."
+msgstr "A WPML az adatvesztés megelőzése érdekében letiltotta ezt a mentést. Az űrlap körülbelül %1$s mezőt küldött el, de ezen a kiszolgálón a PHP max_input_vars korlátja (%2$s) ennél kevesebbet engedett át. Ha most mentene, véglegesen törölné a be nem érkezett mezőket, beleértve az ismétlő sorokat is. Semmi sem lett elmentve. Kérje meg a tárhelyszolgáltatóját, hogy emelje a max_input_vars értékét %1$s fölé, majd próbálja meg újra a mentést."
+
+#. translators: Title of the error page shown when a field group has more
+#. fields than the server will accept in one save.
+#: classes/Post/MaxInputVarsGuard.php:36
+msgid "Save blocked to prevent data loss"
+msgstr "A mentés letiltva az adatvesztés megelőzése érdekében"
+
+#. translators: %1$s: opening <a> tag, %2$s: closing </a> tag.
+#: classes/Post/MixedFieldGroupModesHooks.php:93
 #, php-format
 msgid ""
 "You need to %1$stranslate this post manually%2$s because the field groups "
-"attached to it use different translation options."
-msgstr ""
-"A(z) %1$sbejegyzést kézzel kell lefordítania%2$s, mert a hozzá csatolt "
-"mezőcsoportok eltérő fordítási opciókat használnak."
+"attached to it use different translation options:"
+msgstr "Ezt a bejegyzést %1$skézzel kell lefordítania%2$s, mert a hozzá tartozó mezőcsoportok eltérő fordítási opciókat használnak:"
 
-#: classes/Post/MixedFieldGroupModesHooks.php:85
-msgid ""
-"You need to translate this post manually because the field groups attached "
-"to it use different translation options."
-msgstr ""
-"Ezt a bejegyzést kézzel kell lefordítani, mert a hozzá csatolt mezőcsoportok"
-" eltérő fordítási beállításokat használnak."
+#. translators: %d: number of additional field groups not listed.
+#: classes/Post/MixedFieldGroupModesHooks.php:115
+#, php-format
+msgid "and %d more."
+msgstr "és még %d."
 
-#: vendor/wpml-shared/wpml-lib-dependencies/src/dependencies/class-wpml-php-version-check.php:83
+#. translators: Link and button that open the ACF field-groups list, in the
+#. notice about field groups set up differently from one another. Verb phrase,
+#. imperative.
+#: classes/Post/MixedFieldGroupModesHooks.php:118
+#: classes/Post/MixedFieldGroupModesHooks.php:185
+msgid "Show all field groups"
+msgstr "Összes mezőcsoport megjelenítése"
+
+#. translators: %d: number of additional field groups not listed.
+#: classes/Post/MixedFieldGroupModesHooks.php:159
+#, php-format
+msgid "and %d more"
+msgstr "és még %d"
+
+#. translators: %s: comma-separated list of field groups with their
+#. translation options.
+#: classes/Post/MixedFieldGroupModesHooks.php:164
 #, php-format
 msgid ""
-"Your server is running PHP version %1$s but %2$s requires at least %3$s."
-msgstr ""
-"A szerver a PHP %1$s verzióját futtatja, de a(z) %2$s legalább %3$s verziót "
-"igényel."
+"You need to translate this post manually because the field groups attached "
+"to it use different translation options: %s."
+msgstr "Ezt a bejegyzést kézzel kell lefordítania, mert a hozzá tartozó mezőcsoportok eltérő fordítási opciókat használnak: %s."
 
-#: vendor/wpml-shared/wpml-lib-dependencies/src/dependencies/class-wpml-dependencies.php:345
-msgid "Your site will not work as it should in this configuration"
-msgstr "Az oldal nem fog megfelelően működni ebben a konfigurációban"
+#. translators: %s: field group name.
+#: classes/Post/MixedFieldGroupModesHooks.php:176
+#, php-format
+msgid "Edit %s"
+msgstr "%s szerkesztése"
 
-#: classes/FieldGroup/UIHooks.php:173
+#. translators: Button in that notice; it opens the ACFML documentation. Verb
+#. phrase, imperative.
+#: classes/Post/MixedFieldGroupModesHooks.php:192
+msgid "Go to documentation"
+msgstr "Ugrás a dokumentációhoz"
+
+#. translators: Tooltip of a field locked in the WordPress editor of a
+#. translation.
+#: classes/Post/NativeEditorTranslationHooks.php:147
 msgid ""
-"You’ll be able to use automatic translation, WPML’s Advanced Translation "
-"Editor, and translation services."
+"This field value is copied from the default language and will be kept in "
+"sync across languages."
 msgstr ""
-"Lehetőség lesz az automatikus fordítás, a WPML Advanced Translation Editor "
-"és a fordítási szolgáltatások használatára."
+"Ennek a mezőnek az értéke az alapértelmezett nyelvből kerül átmásolásra, és "
+"nyelvek között szinkronban marad."
 
-#: classes/FieldGroup/UIHooks.php:178
+#. translators: Heading of the checkbox that keeps repeater rows in the same
+#. order across languages, in the post editor. Verb phrase, imperative.
+#: classes/strategy/repeater-sync/CheckboxUI.php:14
+msgid "Synchronise translations"
+msgstr "Fordítások szinkronizálása"
+
+#. translators: Label of that checkbox; "repeater" and "flexible" are ACF
+#. field types.
+#: classes/strategy/repeater-sync/CheckboxUI.php:20
 msgid ""
-"You’ll need to create each translation with the native WordPress editor."
-msgstr ""
-"Minden fordítást a WordPress beépített szerkesztőjével kell létrehozni."
+"Keep repeater and flexible sub-fields in the same order as the default "
+"language."
+msgstr "Tartsa az ismétlő és rugalmas almezőket az alapértelmezett nyelvű változatban használt sorrendben."
 
-#: classes/TranslationDataTrait.php:59
+#. translators: Title of the panel holding that checkbox in the post editor.
+#. "ACFML" is the plugin's short name and stays in English.
+#: classes/strategy/repeater-sync/CheckboxUI.php:31
+msgid "ACFML Synchronise translations"
+msgstr "ACFML fordítások szinkronizálása"
+
+#. translators: Title of the WPML tool that registers fields defined outside
+#. the database. "Local JSON" is ACF's own name for that storage. Verb phrase,
+#. imperative.
+#: classes/Tools/LocalUI.php:32
+msgid "Translate ACF Local JSON and PHP-Registered Fields"
+msgstr "Az ACF helyi JSON-fájljainak és PHP-val regisztrált mezőinek fordítása"
+
+#. translators: %1$s, %2$s, %3$s and %4$s are placeholders for two <a> link
+#. tags.
+#: classes/Tools/LocalUI.php:51
+#, php-format
+msgid ""
+"ACF allows you to %1$sregister fields via PHP%2$s or %3$ssave field settings"
+" as JSON files%4$s. You can also save post types, taxonomies, or options "
+"pages settings to JSON files."
+msgstr "Az ACF lehetővé teszi, hogy %1$smezőket regisztráljon PHP-n keresztül%2$s, vagy %3$smezőbeállításokat mentsen JSON-fájlokként%4$s. A bejegyzéstípusok, az osztályozások (taxonómiák) vagy az opciós oldalak beállításait is mentheti JSON-fájlokba."
+
+#. translators: Line under the tool's heading; "these items" are the field
+#. groups, post types, taxonomies and options pages defined in code or in acf-
+#. json files.
+#: classes/Tools/LocalUI.php:60
+msgid "Configure how ACF Multilingual handles translations for these items."
+msgstr "Állítsa be, hogyan kezelje az ACF Multilingual ezeknek a tételeknek a fordítását."
+
+#. translators: Heading of the first setting of that tool. Keep the bold tags
+#. around the name of the preference set. Verb phrase, imperative.
+#: classes/Tools/LocalUI.php:64
+msgid "Sync <b>Translation Preferences</b> for Local Fields"
+msgstr "A <b>fordítási beállítások</b> szinkronizálása helyi mezőkhöz"
+
+#. translators: First option of that setting: leave the preferences of code-
+#. defined fields alone.
+#: classes/Tools/LocalUI.php:70
+msgid "Don’t sync translation preferences"
+msgstr "Fordítási beállítások szinkronizálásának mellőzése"
+
+#. translators: Second option of that setting: copy the preferences a single
+#. time. Verb phrase, imperative.
+#: classes/Tools/LocalUI.php:77
+msgid "Sync once now"
+msgstr "Egyszeri szinkronizálás most"
+
+#. translators: Third option of that setting: copy the preferences on every
+#. page load. Verb phrase, imperative.
+#: classes/Tools/LocalUI.php:84
+msgid "Sync on every request (may affect performance)"
+msgstr "Szinkronizálás minden kéréskor (befolyásolhatja a teljesítményt)"
+
+#. translators: Heading of the second setting of the tool, about making field
+#. names translatable. Verb phrase, imperative.
+#: classes/Tools/LocalUI.php:91
+msgid "Register Labels for Translation"
+msgstr "Címkék regisztrálása fordításhoz"
+
+#. translators: Explanation under that heading. Keep "acf-json" in English: it
+#. is a folder name.
+#: classes/Tools/LocalUI.php:95
+msgid ""
+"Scans post types, taxonomies, options pages, and field groups stored in the "
+"\"acf-json\" directory, then registers their labels with WPML so you can "
+"translate them."
+msgstr "Átvizsgálja az „acf-json” könyvtárban tárolt bejegyzéstípusokat, osztályozásokat (taxonómiákat), opciós oldalakat és mezőcsoportokat, majd regisztrálja a címkéiket a WPML-ben, hogy lefordíthassa őket."
+
+#. translators: First option of the label-registration setting: leave the
+#. names alone.
+#: classes/Tools/LocalUI.php:104
+msgid "Don’t register labels"
+msgstr "Címkék regisztrálásának mellőzése"
+
+#. translators: Second option of the label-registration setting: make the
+#. names translatable straight away. Verb phrase, imperative.
+#: classes/Tools/LocalUI.php:111
+msgid "Register labels now"
+msgstr "Címkék regisztrálása most"
+
+#. translators: Button that saves the tool's settings and runs it. Verb,
+#. imperative.
+#: classes/Tools/LocalUI.php:121
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#. translators: Confirmation shown after the tool ran with syncing switched
+#. off.
+#: classes/Tools/LocalUI.php:150
+msgid "The synchronization of translation preferences is disabled."
+msgstr "A fordítási beállítások szinkronizálása ki van kapcsolva."
+
+#. translators: Confirmation shown after the tool copied the preferences once.
+#: classes/Tools/LocalUI.php:155
+msgid "Translation preferences synchronized."
+msgstr "A fordítási beállítások szinkronizálása megtörtént."
+
+#. translators: Confirmation shown after the tool ran with syncing switched
+#. on.
+#: classes/Tools/LocalUI.php:160
+msgid "The synchronization of translation preferences is enabled."
+msgstr "A fordítási beállítások szinkronizálása be van kapcsolva."
+
+#. translators: Item in the list of what the tool registered, joined with the
+#. others by "and". %s: how many field groups.
+#: classes/Tools/LocalUI.php:209
+#, php-format
+msgid "%s group"
+msgid_plural "%s groups"
+msgstr[0] "%s csoport"
+msgstr[1] "%s csoport"
+
+#. translators: Item in the list of what the tool registered, joined with the
+#. others by "and". %s: how many post types.
+#: classes/Tools/LocalUI.php:212
+#, php-format
+msgid "%s post type"
+msgid_plural "%s post types"
+msgstr[0] "%s bejegyzéstípus"
+msgstr[1] "%s bejegyzéstípus"
+
+#. translators: Item in the list of what the tool registered, joined with the
+#. others by "and". %s: how many taxonomies.
+#: classes/Tools/LocalUI.php:215
+#, php-format
+msgid "%s taxonomy"
+msgid_plural "%s taxonomies"
+msgstr[0] "%s osztályozás (taxonomy)"
+msgstr[1] "%s osztályozás (taxonomy)"
+
+#. translators: Item in the list of what the tool registered, joined with the
+#. others by "and". %s: how many ACF options pages.
+#: classes/Tools/LocalUI.php:218
+#, php-format
+msgid "%s options page"
+msgid_plural "%s options pages"
+msgstr[0] "%s opcióoldal"
+msgstr[1] "%s opcióoldal"
+
+#. translators: Result shown when the tool found nothing defined in code or in
+#. acf-json files.
+#: classes/Tools/LocalUI.php:227
+msgid ""
+"No local field groups, post types, taxonomies, or Options pages were found."
+msgstr "Nem találhatók helyi mezőcsoportok, bejegyzéstípusok, osztályozások (taxonomy) vagy opcióoldalak."
+
+#. translators: The word joining the only two items of a list, inside the
+#. sentence saying what the tool registered. Keep the space on each side.
+#: classes/Tools/LocalUI.php:239
+msgctxt "Used between elements of a two elements list"
+msgid " and "
+msgstr " és "
+
+#. translators: The comma and word placed before the last item of a list of
+#. three or more, inside the sentence saying what the tool registered. Keep
+#. the trailing space.
+#: classes/Tools/LocalUI.php:245
+msgctxt "Used before the last element of a three or more elements list"
+msgid ", and "
+msgstr ", és "
+
+#. translators: %s: List of registered labels.
+#: classes/Tools/LocalUI.php:250
+#, php-format
+msgid "Successfully registered labels for %s."
+msgstr "Címkék sikeresen regisztrálva ehhez: %s."
+
+#. translators: %1$s and %2$s are placeholders for bold tags.
+#: classes/TranslationDataMetaboxHooks.php:60
+#, php-format
+msgid "%1$sChange translation settings%2$s"
+msgstr "%1$sFordítási beállítások módosítása%2$s"
+
+#. translators: %1$s and %2$s are placeholders for link tags.
+#: classes/TranslationDataMetaboxHooks.php:74
+#, php-format
+msgid "%1$sTranslate labels%2$s"
+msgstr "%1$sCímkék fordítása%2$s"
+
+#. translators: Status shown in the Multilingual Setup panel for a post type
+#. or taxonomy WPML does not translate. Adjective.
+#: classes/TranslationDataTrait.php:32
+msgid "Not translatable"
+msgstr "Nem fordítható"
+
+#. translators: Status shown in the Multilingual Setup panel for a post type
+#. or taxonomy WPML translates. Adjective.
+#: classes/TranslationDataTrait.php:36
+msgid "Translatable"
+msgstr "Fordítható"
+
+#. translators: Second half of a status line in the Multilingual Setup panel;
+#. it follows "Translatable" and a dash. Lower case for that reason.
+#: classes/TranslationDataTrait.php:45
 msgid "only show translated items"
 msgstr "csak a lefordított elemek megjelenítése"
 
-#: vendor/wpml-shared/wpml-lib-dependencies/src/dependencies/class-wpml-dependencies.php:324
-#, php-format
-msgid "required version: %s"
-msgstr "szükséges verzió: %s"
-
-#: classes/TranslationDataTrait.php:61
+#. translators: Second half of a status line in the Multilingual Setup panel;
+#. it follows "Translatable" and a dash. Lower case for that reason.
+#: classes/TranslationDataTrait.php:48
 msgid "use translation if available or fallback to default language"
-msgstr ""
-"ha elérhető, használja a fordítást, különben visszaáll az alapértelmezett "
-"nyelvre"
+msgstr "Ha elérhető, használja a fordítást, különben térjen vissza az alapértelmezett nyelvhez."
+
+#. translators: %1$s: ACF field group name.
+#: classes/TranslationEditor/DisableHooks.php:35
+#, php-format
+msgid ""
+"This content must be translated manually due to the translation option you "
+"selected for the \"%1$s\" field group."
+msgstr "Ezt a tartalmat kézzel kell lefordítani a „%1$s” mezőcsoporthoz választott fordítási opció miatt."
+
+#, php-format
+#~ msgid ""
+#~ "ACF allows you to %1$sregister fields via PHP%2$s or %3$ssave field settings"
+#~ " as JSON files%4$s and WPML integrates with these features."
+#~ msgstr ""
+#~ "Az ACF lehetővé teszi, hogy %1$sPHP-n keresztül regisztrálja a mezőket%2$s "
+#~ "vagy %3$sa mezőbeállításokat JSON-fájlokként mentse%4$s, a WPML pedig "
+#~ "integrálódik ezekkel a funkciókkal."
+
+#~ msgid "Activate String Translation"
+#~ msgstr "String Translation aktiválása"
+
+#~ msgid "Are you sure you want to change the translation option?"
+#~ msgstr "Biztosan meg szeretné változtatni a fordítási beállítást?"
+
+#~ msgid "Change the field group translation setting"
+#~ msgstr "A mezőcsoport fordítási beállításának módosítása"
+
+#~ msgid "Complete"
+#~ msgstr "Kész"
+
+#~ msgid "Different fields across languages"
+#~ msgstr "Különböző mezők nyelvenként"
+
+#~ msgid "Finish the ACF Multilingual Setup"
+#~ msgstr "Fejezze be az ACF Multilingual beállítását"
+
+#, php-format
+#~ msgid ""
+#~ "For WPML components you can receive updates from your %s or automatically, "
+#~ "after you register WPML."
+#~ msgstr ""
+#~ "A WPML összetevőihez frissítéseket kaphat a(z) %s-ból/ből, vagy "
+#~ "automatikusan, miután regisztrálta a WPML-t."
+
+#~ msgid "Go to Translation Management"
+#~ msgstr "Ugrás a Fordításkezeléshez"
+
+#~ msgid ""
+#~ "If you select this option, ACF Multilingual will scan your field groups "
+#~ "stored in PHP files and the \"acf-json\" directory. It will then sync any "
+#~ "changes to translation preferences."
+#~ msgstr ""
+#~ "Ha ezt az opciót választja, az ACF Multilingual átvizsgálja a PHP-fájlokban "
+#~ "és az \"acf-json\" könyvtárban tárolt mezőcsoportjait. Ezután szinkronizálja"
+#~ " a fordítási beállításokban történt módosításokat."
+
+#~ msgid "In progress"
+#~ msgstr "Folyamatban"
+
+#~ msgid "Not translated"
+#~ msgstr "Nincs lefordítva"
+
+#~ msgid "Please update all components which you are using."
+#~ msgstr "Kérjük, frissítse az összes használt komponenst."
+
+#~ msgid "Same fields across languages"
+#~ msgstr "Ugyanazok a mezők minden nyelven"
+
+#~ msgid "Save"
+#~ msgstr "Mentés"
+
+#~ msgid "Scan local fields for changes to translation preferences."
+#~ msgstr ""
+#~ "Helyi mezők átvizsgálása a fordítási beállítások változásainak észleléséhez."
+
+#~ msgid "Select a Translation Option"
+#~ msgstr "Válasszon fordítási opciót"
+
+#~ msgid ""
+#~ "Select a translation option in the Multilingual Setup section to save your "
+#~ "changes."
+#~ msgstr ""
+#~ "Válasszon fordítási opciót a Multilingual Setup szakaszban a módosítások "
+#~ "mentéséhez."
+
+#~ msgid "Set Up Field Group Translation"
+#~ msgstr "Mezőcsoport fordításának beállítása"
+
+#~ msgid "Sync Translation Preferences for Local Fields"
+#~ msgstr "Helyi mezők fordítási beállításainak szinkronizálása"
+
+#~ msgid "The following components are not updated:"
+#~ msgstr "A következő komponensek nincsenek frissítve:"
+
+#~ msgid ""
+#~ "This can harm the site's performance if you have a significant number of "
+#~ "fields stored this way."
+#~ msgstr ""
+#~ "Ez ronthatja a webhely teljesítményét, ha jelentős számú mezőt tárol ilyen "
+#~ "módon."
+
+#~ msgid ""
+#~ "To translate field labels from the Translation Management dashboard, finish "
+#~ "the Multilingual Setup and save your field group settings."
+#~ msgstr ""
+#~ "A mezőcímkék fordításához a Translation Management irányítópulton fejezze be"
+#~ " a Multilingual Setup folyamatot, és mentse a mezőcsoport beállításait."
+
+#~ msgid "To translate field labels, use the Translation Management dashboard."
+#~ msgstr ""
+#~ "A mezőcímkék fordításához használja a Translation Management irányítópultot."
+
+#~ msgid "Translate in Translation Management"
+#~ msgstr "Fordítás a Translation Managementben"
+
+#~ msgid ""
+#~ "Translate your site’s content while keeping the same visual design across "
+#~ "all languages. All languages will share the same field order, number of "
+#~ "fields, and field types. All you need to do is translate the content."
+#~ msgstr ""
+#~ "Fordítsa le webhelye tartalmát úgy, hogy minden nyelven ugyanaz a vizuális "
+#~ "megjelenés maradjon. Minden nyelv ugyanazt a mezősorrendet, mezőszámot és "
+#~ "mezőtípusokat fogja használni. Csak a tartalmat kell lefordítania."
+
+#~ msgid "Translation preferences scanning options saved."
+#~ msgstr "A fordítási beállítások vizsgálati opciói mentve."
+
+#~ msgid ""
+#~ "Use a different visual design in different languages. You can have a "
+#~ "different field order, layout, and number of fields per language. With this "
+#~ "option, you cannot use WPML’s Advanced Translation Editor or translation "
+#~ "services."
+#~ msgstr ""
+#~ "Használjon eltérő vizuális megjelenést különböző nyelveken. Nyelvenként "
+#~ "eltérő mezősorrend, elrendezés és mezőszám lehet. Ezzel az opcióval nem "
+#~ "használhatja a WPML Advanced Translation Editort vagy a fordítási "
+#~ "szolgáltatásokat."
+
+#~ msgid "WPML Update is Incomplete"
+#~ msgstr "A WPML frissítése hiányos"
+
+#~ msgid "WPML.org account"
+#~ msgstr "WPML.org-fiók"
+
+#~ msgid "Yes, continue"
+#~ msgstr "Igen, folytatás"
+
+#~ msgid ""
+#~ "You already translated all field labels in this group. To update any "
+#~ "translations, go to the Translation Management dashboard."
+#~ msgstr ""
+#~ "Már lefordított minden mezőcímkét ebben a csoportban. A fordítások "
+#~ "frissítéséhez lépjen a Translation Management irányítópultra."
+
+#, php-format
+#~ msgid ""
+#~ "You are running updated %s and %s, but the following components are not "
+#~ "updated:"
+#~ msgstr ""
+#~ "A(z) %s és %s naprakész, de a következő komponensek nincsenek frissítve:"
+
+#, php-format
+#~ msgid ""
+#~ "You are running updated %s, but the following component is not updated:"
+#~ msgstr "A(z) %s naprakész, de a következő komponens nincs frissítve:"
+
+#, php-format
+#~ msgid ""
+#~ "You can find version of the plugin suitable for your environment <a "
+#~ "href=\"%s\">here</a>."
+#~ msgstr ""
+#~ "A környezetéhez megfelelő bővítményverziót <a href=\\\"%s\\\">itt</a> "
+#~ "találja."
+
+#, php-format
+#~ msgid ""
+#~ "You can translate field labels and labels for Choices using String "
+#~ "Translation. To do this, %1$sset the field group post type to %2$sNot "
+#~ "Translatable%3$s%4$s."
+#~ msgstr ""
+#~ "A mezőcímkéket és a Choices címkéit a String Translation segítségével "
+#~ "fordíthatja. Ehhez %1$sállítsa a mezőcsoport bejegyzéstípusát %2$sNot "
+#~ "Translatable%3$s értékre%4$s."
+
+#, php-format
+#~ msgid ""
+#~ "You need to %1$stranslate this post manually%2$s because the field groups "
+#~ "attached to it use different translation options."
+#~ msgstr ""
+#~ "A(z) %1$sbejegyzést kézzel kell lefordítania%2$s, mert a hozzá csatolt "
+#~ "mezőcsoportok eltérő fordítási opciókat használnak."
+
+#~ msgid ""
+#~ "You need to translate this post manually because the field groups attached "
+#~ "to it use different translation options."
+#~ msgstr ""
+#~ "Ezt a bejegyzést kézzel kell lefordítani, mert a hozzá csatolt mezőcsoportok"
+#~ " eltérő fordítási beállításokat használnak."
+
+#, php-format
+#~ msgid ""
+#~ "Your server is running PHP version %1$s but %2$s requires at least %3$s."
+#~ msgstr ""
+#~ "A szerver a PHP %1$s verzióját futtatja, de a(z) %2$s legalább %3$s verziót "
+#~ "igényel."
+
+#~ msgid "Your site will not work as it should in this configuration"
+#~ msgstr "Az oldal nem fog megfelelően működni ebben a konfigurációban"
+
+#~ msgid ""
+#~ "You’ll be able to use automatic translation, WPML’s Advanced Translation "
+#~ "Editor, and translation services."
+#~ msgstr ""
+#~ "Lehetőség lesz az automatikus fordítás, a WPML Advanced Translation Editor "
+#~ "és a fordítási szolgáltatások használatára."
+
+#~ msgid ""
+#~ "You’ll need to create each translation with the native WordPress editor."
+#~ msgstr ""
+#~ "Minden fordítást a WordPress beépített szerkesztőjével kell létrehozni."
+
+#, php-format
+#~ msgid "required version: %s"
+#~ msgstr "szükséges verzió: %s"

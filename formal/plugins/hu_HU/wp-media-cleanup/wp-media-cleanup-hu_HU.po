@@ -1,0 +1,1981 @@
+# Copyright (C) 2026 WP Media Cleanup Team
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Media Cleanup 1.0.16\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-media-cleanup\n"
+"POT-Creation-Date: 2026-10-31T11:20:30+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: wp-media-cleanup\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: WP Media Cleanup\n"
+"X-Plugin-Tone: formal\n"
+"X-Plugin-Version: 1.0.16\n"
+
+#. Plugin Name of the plugin
+#: wp-media-cleanup.php
+msgid "WP Media Cleanup"
+msgstr "WP Media Cleanup"
+
+#. Plugin URI of the plugin
+#: wp-media-cleanup.php
+msgid "https://wordpress.org/plugins/wp-media-cleanup"
+msgstr "https://wordpress.org/plugins/wp-media-cleanup"
+
+#. Description of the plugin
+#: wp-media-cleanup.php
+msgid ""
+"Safely remove unused image size variations to free up disk space while "
+"preserving your original images."
+msgstr "A fel nem használt képméret-változatok biztonságos eltávolításával tárhelyet szabadíthat fel, miközben megőrzi az eredeti képeket."
+
+#. Author of the plugin
+#: wp-media-cleanup.php
+msgid "WP Media Cleanup Team"
+msgstr "WP Media Cleanup Team"
+
+#: admin/classes/Admin.php:90 admin/classes/Admin.php:91
+#: admin/classes/Admin.php:127
+msgid "Media Cleanup"
+msgstr "Médiatár tisztítása"
+
+#: admin/classes/Admin.php:103 admin/classes/Admin.php:104
+#: admin/classes/Admin.php:167 admin/classes/Admin.php:168
+msgid "License"
+msgstr "Licenc"
+
+#: admin/classes/Admin.php:117 admin/classes/Admin.php:118
+#: admin/classes/Admin.php:436
+msgid "Dashboard"
+msgstr "Vezérlőpult"
+
+#: admin/classes/Admin.php:128
+msgid "Cleanup"
+msgstr "Tisztítás"
+
+#: admin/classes/Admin.php:137 admin/classes/Admin.php:1367
+msgid "Restore Backups"
+msgstr "Biztonsági mentések visszaállítása"
+
+#: admin/classes/Admin.php:138 admin/classes/Admin.php:335
+#: admin/classes/Admin.php:1472
+msgid "Restore"
+msgstr "Visszaállítás"
+
+#: admin/classes/Admin.php:147 admin/classes/Admin.php:949
+msgid "Cleanup History"
+msgstr "Tisztítási előzmények"
+
+#: admin/classes/Admin.php:148
+msgid "History"
+msgstr "Előzmények"
+
+#: admin/classes/Admin.php:157 admin/classes/Admin.php:158
+#: admin/classes/Admin.php:437 admin/classes/Admin.php:605
+msgid "Settings"
+msgstr "Beállítások"
+
+#: admin/classes/Admin.php:220
+msgid "Scanning..."
+msgstr "Vizsgálat folyamatban..."
+
+#: admin/classes/Admin.php:221
+msgid "Scan complete"
+msgstr "A vizsgálat befejeződött"
+
+#: admin/classes/Admin.php:222
+msgid "Deleting..."
+msgstr "Törlés..."
+
+#: admin/classes/Admin.php:223 admin/classes/Admin.php:242
+#, php-format
+msgid ""
+"Delete this image variation?\n"
+"\n"
+"✓ Original image will NOT be deleted\n"
+"✓ File will be backed up first\n"
+"✓ Can be restored for %d days\n"
+"\n"
+"Click OK to proceed."
+msgstr "Törli ezt a képméret-változatot?\n\n✓ Az eredeti kép NEM lesz törölve\n✓ A fájlról először biztonsági mentés készül\n✓ %d napig visszaállítható\n\nKattintson az OK gombra a folytatáshoz."
+
+#: admin/classes/Admin.php:230 admin/classes/Admin.php:249
+#, php-format
+msgid ""
+"Delete all selected variations?\n"
+"\n"
+"✓ Original images will NOT be deleted\n"
+"✓ Files will be backed up first\n"
+"✓ Can be restored for %d days\n"
+"\n"
+"Click OK to proceed."
+msgstr "Törli az összes kiválasztott változatot?\n\n✓ Az eredeti képek NEM lesznek törölve\n✓ A fájlokról először biztonsági mentés készül\n✓ %d napig visszaállíthatók\n\nKattintson az OK gombra a folytatáshoz."
+
+#: admin/classes/Admin.php:237 admin/classes/Admin.php:397
+msgid "An error occurred. Please try again."
+msgstr "Hiba történt. Kérjük, próbálja újra."
+
+#: admin/classes/Admin.php:238
+msgid "Please select at least one file to delete."
+msgstr "Kérjük, jelöljön ki legalább egy törlendő fájlt."
+
+#: admin/classes/Admin.php:239
+msgid "Scanning for unused image variations..."
+msgstr "A fel nem használt képméret-változatok keresése..."
+
+#: admin/classes/Admin.php:240
+msgid "Image variation scan complete"
+msgstr "A képméret-változatok vizsgálata befejeződött"
+
+#: admin/classes/Admin.php:241
+msgid "Deleting image variations..."
+msgstr "Képméret-változatok törlése..."
+
+#: admin/classes/Admin.php:256
+msgid "Please select at least one image variation to delete."
+msgstr "Kérjük, jelöljön ki legalább egy törlendő képméret-változatot."
+
+#: admin/classes/Admin.php:257
+#, php-format
+msgid ""
+"⚠️ Clean Temporary Storage?\n"
+"\n"
+"This will permanently delete all files in the temporary storage directory.\n"
+"\n"
+"✓ What gets deleted:\n"
+"  • Temporary storage files (%d-day recovery)\n"
+"  • Frees ~50% of current backup space immediately\n"
+"\n"
+"✓ What remains safe:\n"
+"  • Permanent backups (can still be restored)\n"
+"  • Backups remain available for the full retention period\n"
+"\n"
+"💡 Recommended: Test restore functionality first (Backups page) before cleaning temporary files.\n"
+"\n"
+"Click OK to proceed with cleanup."
+msgstr ""
+
+#: admin/classes/Admin.php:272
+msgid "Cleaning..."
+msgstr "Tisztítás..."
+
+#: admin/classes/Admin.php:273
+msgid "Starting scan... Analyzing your media library"
+msgstr "Vizsgálat indítása... A médiatár elemzése"
+
+#: admin/classes/Admin.php:274
+#, php-format
+msgid "Connection issue. Retrying... (attempt %d)"
+msgstr "Kapcsolódási hiba. Újrapróbálkozás... (a próbálkozás sorszáma: %d)"
+
+#: admin/classes/Admin.php:275
+#, php-format
+msgid ""
+"List building failed after %d retry attempts. Please check your connection "
+"and try again."
+msgstr "A lista összeállítása %d újrapróbálkozás után sem sikerült. Kérjük, ellenőrizze a kapcsolatot, majd próbálja újra."
+
+#: admin/classes/Admin.php:276
+msgid ""
+"List building timed out. Please try reducing the chunk size in settings."
+msgstr "A lista összeállítása időtúllépés miatt megszakadt. Kérjük, próbálja csökkenteni a részek méretét a beállításokban."
+
+#: admin/classes/Admin.php:277
+#, php-format
+msgid "Used images list completed (%d images found). Starting scan..."
+msgstr "A felhasznált képek listája elkészült (%d kép található). Vizsgálat indítása..."
+
+#: admin/classes/Admin.php:278
+#, php-format
+msgid "Failed to build used images list: %s"
+msgstr "A felhasznált képek listájának összeállítása nem sikerült: %s"
+
+#: admin/classes/Admin.php:279
+#, php-format
+msgid "Error building used images list: %s"
+msgstr "Hiba a felhasznált képek listájának összeállításakor: %s"
+
+#: admin/classes/Admin.php:280
+msgid "Extracting image references..."
+msgstr "Képhivatkozások kinyerése..."
+
+#: admin/classes/Admin.php:281
+msgid "Checking widgets for images..."
+msgstr "Képek keresése a widgetekben..."
+
+#: admin/classes/Admin.php:282
+msgid "Checking customizer settings..."
+msgstr "A Testreszabó beállításainak ellenőrzése..."
+
+#: admin/classes/Admin.php:283
+msgid "Checking custom fields..."
+msgstr "Egyéni mezők ellenőrzése..."
+
+#: admin/classes/Admin.php:284
+msgid "Checking theme files..."
+msgstr "Sablonfájlok ellenőrzése..."
+
+#: admin/classes/Admin.php:285
+msgid "Checking responsive images..."
+msgstr "Reszponzív képek ellenőrzése..."
+
+#: admin/classes/Admin.php:286
+msgid "Extraction step failed after maximum retries. Please try again."
+msgstr "A kinyerési lépés a maximális számú újrapróbálkozás után is sikertelen. Kérjük, próbálja újra."
+
+#: admin/classes/Admin.php:287
+msgid "Unused variations:"
+msgstr "Használatlan változatok:"
+
+#: admin/classes/Admin.php:288
+msgid "Total size:"
+msgstr "Összesített méret:"
+
+#: admin/classes/Admin.php:289
+msgid "Show Details"
+msgstr "Részletek megjelenítése"
+
+#: admin/classes/Admin.php:290
+msgid "Hide Details"
+msgstr "Részletek elrejtése"
+
+#: admin/classes/Admin.php:291
+msgid "Unused image variations:"
+msgstr "Használatlan képváltozatok:"
+
+#: admin/classes/Admin.php:292
+msgid "Size:"
+msgstr "Méret:"
+
+#: admin/classes/Admin.php:293
+msgid "Type:"
+msgstr "Típus:"
+
+#: admin/classes/Admin.php:294
+msgid "Date:"
+msgstr "Dátum:"
+
+#: admin/classes/Admin.php:295 admin/classes/Admin.php:760
+msgid "Scan for Unused Variations"
+msgstr "Használatlan változatok keresése"
+
+#: admin/classes/Admin.php:296
+msgid "Start Scan"
+msgstr "Keresés indítása"
+
+#: admin/classes/Admin.php:297
+msgid "Delete"
+msgstr "Törlés"
+
+#: admin/classes/Admin.php:298
+msgid "Bulk Delete"
+msgstr "Tömeges törlés"
+
+#: admin/classes/Admin.php:299
+msgid ""
+"Great news! No unused image variations found. Your media library is "
+"optimized!"
+msgstr "Jó hír! Nem találhatók használatlan képváltozatok. A médiatár optimalizált!"
+
+#: admin/classes/Admin.php:300
+msgid "All unused files have been deleted!"
+msgstr "Az összes használatlan fájl törlése megtörtént!"
+
+#: admin/classes/Admin.php:301
+msgid "No items to delete!"
+msgstr "Nincs törlendő tétel!"
+
+#: admin/classes/Admin.php:302
+msgid "No valid items to delete!"
+msgstr "Nincs érvényes, törölhető tétel!"
+
+#: admin/classes/Admin.php:303
+#, php-format
+msgid "Showing page %1$d of %2$d (%3$d items total)"
+msgstr "%1$d. oldal / összesen %2$d oldal (%3$d tétel)"
+
+#: admin/classes/Admin.php:304
+msgid "&laquo;"
+msgstr "&laquo;"
+
+#: admin/classes/Admin.php:305
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: admin/classes/Admin.php:306
+#, php-format
+msgid "Processing batch %1$d of %2$d..."
+msgstr "A(z) %1$d. köteg feldolgozása (összesen %2$d)..."
+
+#: admin/classes/Admin.php:307
+msgid "Bulk deletion completed! "
+msgstr "A tömeges törlés befejeződött! "
+
+#: admin/classes/Admin.php:308
+#, php-format
+msgid "Deleted %1$d unused image variations from %2$d files."
+msgstr "%2$d fájlból %1$d használatlan képváltozat törölve."
+
+#: admin/classes/Admin.php:309
+msgid "No unused image variations were found to delete."
+msgstr "Nem találhatók törölhető használatlan képváltozatok."
+
+#: admin/classes/Admin.php:310
+#, php-format
+msgid "Error in batch %d: "
+msgstr "Hiba a(z) %d. kötegben: "
+
+#: admin/classes/Admin.php:311
+msgid "Unknown error"
+msgstr "Ismeretlen hiba"
+
+#: admin/classes/Admin.php:312
+#, php-format
+msgid "Network error in batch %d: "
+msgstr "Hálózati hiba a(z) %d. kötegben: "
+
+#: admin/classes/Admin.php:313
+#, php-format
+msgid "Preparing to delete %d items..."
+msgstr "%d tétel törlésének előkészítése..."
+
+#: admin/classes/Admin.php:314
+#, php-format
+msgid "Delete All (%d items)"
+msgstr "Összes törlése (%d tétel)"
+
+#: admin/classes/Admin.php:315
+msgid "Are you sure you want to restore this backup?"
+msgstr "Biztosan vissza szeretné állítani ezt a biztonsági mentést?"
+
+#: admin/classes/Admin.php:316
+msgid "Original path:"
+msgstr "Eredeti elérési út:"
+
+#: admin/classes/Admin.php:317
+msgid "Restoring..."
+msgstr "Visszaállítás..."
+
+#: admin/classes/Admin.php:318
+msgid "Backup restored successfully."
+msgstr "A biztonsági mentés visszaállítása sikerült."
+
+#: admin/classes/Admin.php:319 admin/classes/Admin.php:1428
+msgid "No backups found."
+msgstr "Nem találhatók biztonsági mentések."
+
+#: admin/classes/Admin.php:320
+msgid "An error occurred while restoring the backup."
+msgstr "Hiba történt a biztonsági mentés visszaállítása közben."
+
+#: admin/classes/Admin.php:321
+msgid "An error occurred during restore operation."
+msgstr "Hiba történt a visszaállítási művelet során."
+
+#: admin/classes/Admin.php:322
+#, php-format
+msgid "Are you sure you want to restore %d backups?"
+msgstr "Biztosan vissza szeretné állítani a(z) %d biztonsági mentést?"
+
+#: admin/classes/Admin.php:323
+msgid "Backups restored successfully."
+msgstr "A biztonsági mentések visszaállítása sikerült."
+
+#: admin/classes/Admin.php:324
+msgid "An error occurred during bulk restore."
+msgstr "Hiba történt a tömeges visszaállítás során."
+
+#: admin/classes/Admin.php:325
+msgid ""
+"Are you sure you want to restore ALL backups? This will restore all backed-"
+"up files across all pages to their original locations."
+msgstr "Biztosan vissza szeretné állítani az ÖSSZES biztonsági mentést? Ez minden oldal összes mentett fájlját visszaállítja az eredeti helyükre."
+
+#: admin/classes/Admin.php:326
+msgid "All backups have been restored successfully!"
+msgstr "Az összes biztonsági mentés visszaállítása sikerült!"
+
+#: admin/classes/Admin.php:327
+#, php-format
+msgid "Restore Selected (%d)"
+msgstr "Kijelöltek visszaállítása (%d)"
+
+#: admin/classes/Admin.php:328 admin/classes/Admin.php:1392
+msgid "Restore Selected"
+msgstr "Kijelöltek visszaállítása"
+
+#: admin/classes/Admin.php:329
+#, php-format
+msgid "Found %d backup(s)"
+msgstr "%d biztonsági mentés található"
+
+#: admin/classes/Admin.php:330
+#, php-format
+msgid "No backups found matching \"%s\""
+msgstr "Nem találhatók a „%s” kifejezésnek megfelelő biztonsági mentések"
+
+#: admin/classes/Admin.php:331
+msgid "Type at least 2 characters to search"
+msgstr "Adjon meg legalább 2 karaktert a kereséshez"
+
+#: admin/classes/Admin.php:332
+msgid "Searching..."
+msgstr "Keresés..."
+
+#: admin/classes/Admin.php:333
+msgid "Clear search to show all backups"
+msgstr "A keresési mező kiürítésével az összes biztonsági mentés megjelenik"
+
+#: admin/classes/Admin.php:334 admin/classes/Admin.php:1461
+msgid "Expired"
+msgstr "Lejárt"
+
+#: admin/classes/Admin.php:336
+msgid "⚠️ DESTRUCTIVE OPERATION - DELETE ALL"
+msgstr "⚠️ VESZÉLYES MŰVELET – AZ ÖSSZES TÖRLÉSE"
+
+#: admin/classes/Admin.php:337
+msgid "🛡️ REQUIRED: Create a full site backup FIRST!"
+msgstr "🛡️ KÖTELEZŐ: Először készítsen teljes biztonsági mentést a webhelyről!"
+
+#: admin/classes/Admin.php:338
+msgid ""
+"Before proceeding, create a complete site backup. We strongly recommend "
+"using Duplicator for full protection. This is a destructive operation that "
+"will delete:"
+msgstr "A folytatás előtt készítsen teljes biztonsági mentést a webhelyről. A teljes védelem érdekében nyomatékosan javasoljuk a Duplicator használatát. Ez egy veszélyes művelet, amely a következőket törli:"
+
+#: admin/classes/Admin.php:339
+msgid "This will delete:"
+msgstr "A művelet törli a következőket:"
+
+#: admin/classes/Admin.php:340
+#, php-format
+msgid "%d images with unused variations"
+msgstr "%d kép használatlan változatokkal"
+
+#: admin/classes/Admin.php:341
+#, php-format
+msgid "%d total image variations"
+msgstr "%d képváltozat összesen"
+
+#: admin/classes/Admin.php:342
+#, php-format
+msgid "%s of disk space"
+msgstr "%s lemezterület"
+
+#: admin/classes/Admin.php:343
+msgid "✓ Plugin Safety Features:"
+msgstr "✓ A bővítmény biztonsági funkciói:"
+
+#: admin/classes/Admin.php:344
+msgid "- Items moved to plugin backup (not permanently deleted)"
+msgstr "- A tételek a bővítmény biztonsági mentésébe kerülnek (nem törlődnek véglegesen)"
+
+#: admin/classes/Admin.php:345
+#, php-format
+msgid "- %d-day plugin retention period"
+msgstr "- A bővítmény biztonsági mentéseinek megőrzési ideje %d nap"
+
+#: admin/classes/Admin.php:346
+msgid "- Can be restored from plugin backups if needed"
+msgstr "- Szükség esetén a tételek visszaállíthatók a bővítmény biztonsági mentéseiből"
+
+#: admin/classes/Admin.php:347
+msgid "⚠️ Important Warnings:"
+msgstr "⚠️ Fontos figyelmeztetések:"
+
+#: admin/classes/Admin.php:348
+msgid "- This affects ALL pages in the scan results"
+msgstr "- Ez a vizsgálati eredményekben szereplő összes oldalt érinti"
+
+#: admin/classes/Admin.php:349
+msgid "- Scan may miss images in theme files or custom code"
+msgstr "– A vizsgálat nem biztos, hogy megtalálja a sablonfájlokban vagy egyéni kódban szereplő képeket"
+
+#: admin/classes/Admin.php:350
+msgid "- Consider reviewing items individually instead"
+msgstr "Érdemes inkább egyenként átnézni a tételeket"
+
+#: admin/classes/Admin.php:351
+msgid "Have you backed up with Duplicator? Continue with deletion?"
+msgstr "Készített biztonsági mentést a Duplicatorral? Folytatja a törlést?"
+
+#: admin/classes/Admin.php:352
+msgid "⚠️⚠️ FINAL WARNING ⚠️⚠️"
+msgstr "⚠️⚠️ VÉGSŐ FIGYELMEZTETÉS ⚠️⚠️"
+
+#: admin/classes/Admin.php:353
+#, php-format
+msgid "You are about to delete %d items."
+msgstr "%d tétel törlésére készül."
+
+#: admin/classes/Admin.php:354
+msgid "This is a LARGE operation that will:"
+msgstr "Ez egy nagy művelet, amely:"
+
+#: admin/classes/Admin.php:355
+msgid "• Take several minutes to complete"
+msgstr "• Több percet vesz igénybe"
+
+#: admin/classes/Admin.php:356
+msgid "• Cannot be easily undone"
+msgstr "• Nehezen vonható vissza"
+
+#: admin/classes/Admin.php:357
+msgid "• Should only proceed if you trust the scan"
+msgstr "• Csak akkor folytassa, ha megbízik a vizsgálat eredményében"
+
+#: admin/classes/Admin.php:358
+msgid "Are you ABSOLUTELY SURE?"
+msgstr "TELJESEN BIZTOS BENNE?"
+
+#: admin/classes/Admin.php:359
+msgid "Deleting the following items:"
+msgstr "A következő tételek törlése:"
+
+#: admin/classes/Admin.php:360
+#, php-format
+msgid "Deleting %d items. First 10:"
+msgstr "%d tétel törlése. Az első 10:"
+
+#: admin/classes/Admin.php:361
+#, php-format
+msgid "... and %d more items"
+msgstr "… és még %d tétel"
+
+#: admin/classes/Admin.php:362
+#, php-format
+msgid ""
+"Scan failed after %d retry attempts. Please check your connection and try "
+"again."
+msgstr "A vizsgálat %d újrapróbálkozás után sikertelen volt. Kérjük, ellenőrizze a kapcsolatot, és próbálja újra."
+
+#: admin/classes/Admin.php:363
+msgid "Request timed out. Try reducing batch size in settings."
+msgstr "A kérés időtúllépés miatt megszakadt. Próbálja csökkenteni a köteg méretét a beállításokban."
+
+#: admin/classes/Admin.php:364
+#, php-format
+msgid "Image variations for: %s"
+msgstr "Képméret-változatok ehhez: %s"
+
+#: admin/classes/Admin.php:365
+#, php-format
+msgid "Building used images list: %1$d / %2$d posts processed"
+msgstr "A használt képek listájának összeállítása: %1$d / %2$d bejegyzés feldolgozva"
+
+#: admin/classes/Admin.php:366
+#, php-format
+msgid " (%d images found)"
+msgstr " (%d kép található)"
+
+#: admin/classes/Admin.php:367
+#, php-format
+msgid "Delete Selected (%d)"
+msgstr "Kijelöltek törlése (%d)"
+
+#: admin/classes/Admin.php:368
+#, php-format
+msgid "Delete Selected Variations (%d)"
+msgstr "Kijelölt képméret-változatok törlése (%d)"
+
+#: admin/classes/Admin.php:369
+msgid "Delete Selected"
+msgstr "Kijelöltek törlése"
+
+#: admin/classes/Admin.php:370 admin/classes/Admin.php:765
+msgid "Delete Selected Variations"
+msgstr "Kijelölt képméret-változatok törlése"
+
+#: admin/classes/Admin.php:371
+#, php-format
+msgid "Found %d used images. Scanning attachments..."
+msgstr "%d használt kép található. Mellékletek vizsgálata…"
+
+#: admin/classes/Admin.php:372
+#, php-format
+msgid "About %d seconds remaining"
+msgstr "Körülbelül %d másodperc van hátra"
+
+#: admin/classes/Admin.php:373
+#, php-format
+msgid "About %d minute remaining"
+msgstr "Körülbelül %d perc van hátra"
+
+#: admin/classes/Admin.php:374
+#, php-format
+msgid "About %d minutes remaining"
+msgstr "Körülbelül %d perc van hátra"
+
+#: admin/classes/Admin.php:375
+#, php-format
+msgid "About %d hour"
+msgstr "Körülbelül %d óra"
+
+#: admin/classes/Admin.php:376
+#, php-format
+msgid "About %d hours"
+msgstr "Körülbelül %d óra"
+
+#: admin/classes/Admin.php:377
+#, php-format
+msgid " %d min"
+msgstr " %d perc"
+
+#: admin/classes/Admin.php:378
+msgid " remaining"
+msgstr " van hátra"
+
+#: admin/classes/Admin.php:380 admin/classes/Admin.php:863
+msgid "Large Site Detected"
+msgstr "Nagy webhely észlelve"
+
+#: admin/classes/Admin.php:381
+msgid "Your site has a large number of posts. You can choose how to proceed:"
+msgstr "Webhelyén sok bejegyzés található. Kiválaszthatja, hogyan folytatja:"
+
+#: admin/classes/Admin.php:382
+msgid "Full Scan (Recommended)"
+msgstr "Teljes vizsgálat (ajánlott)"
+
+#: admin/classes/Admin.php:383 admin/classes/Admin.php:890
+msgid ""
+"Analyzes all post content to accurately detect which images are in use. More"
+" thorough but takes longer."
+msgstr "A bejegyzések teljes tartalmát elemzi annak pontos megállapításához, hogy mely képek vannak használatban. Alaposabb, de több időt vesz igénybe."
+
+#: admin/classes/Admin.php:384 admin/classes/Admin.php:387
+#: admin/classes/Admin.php:895 admin/classes/Admin.php:914
+msgid "Quick Scan"
+msgstr "Gyors vizsgálat"
+
+#: admin/classes/Admin.php:385
+msgid ""
+"Skips post content analysis for faster results. May flag more images as "
+"unused. All deletions are still backed up and recoverable."
+msgstr "A gyorsabb eredmény érdekében kihagyja a bejegyzések tartalmának elemzését. Előfordulhat, hogy több képet jelöl használaton kívüliként. Minden törlésről továbbra is készül biztonsági mentés, és a törölt elemek visszaállíthatók."
+
+#: admin/classes/Admin.php:386 admin/classes/Admin.php:915
+msgid "Continue Full Scan"
+msgstr "Teljes vizsgálat folytatása"
+
+#: admin/classes/Admin.php:388 admin/classes/Admin.php:708
+#: admin/classes/Admin.php:913
+msgid "Cancel"
+msgstr "Mégse"
+
+#: admin/classes/Admin.php:389 admin/classes/Admin.php:878
+msgid "Estimated time:"
+msgstr "Becsült idő:"
+
+#: admin/classes/Admin.php:390 admin/classes/Admin.php:874
+msgid "Posts to scan:"
+msgstr "Vizsgálandó bejegyzések:"
+
+#: admin/classes/Admin.php:391
+#, php-format
+msgid ""
+"Note: Even with quick scan, all deletions are backed up and can be restored "
+"for %d days."
+msgstr "Megjegyzés: gyors vizsgálat esetén is minden törlésről biztonsági mentés készül, és az elemek %d napig visszaállíthatók."
+
+#: admin/classes/Admin.php:393
+msgid "Activating license..."
+msgstr "Licenc aktiválása…"
+
+#: admin/classes/Admin.php:394
+msgid "Deactivating license..."
+msgstr "Licenc deaktiválása…"
+
+#: admin/classes/Admin.php:395 includes/classes/License.php:283
+msgid "License activated successfully!"
+msgstr "A licenc aktiválása sikerült!"
+
+#: admin/classes/Admin.php:396 includes/classes/License.php:338
+msgid "License deactivated successfully."
+msgstr "A licenc kikapcsolása sikerült."
+
+#: admin/classes/Admin.php:398 includes/classes/License.php:226
+msgid "Please enter a license key."
+msgstr "Kérjük, adja meg a licenckulcsot."
+
+#: admin/classes/Admin.php:470
+msgid "⚡ Performance Mode Active"
+msgstr "⚡ A teljesítménymód aktív"
+
+#: admin/classes/Admin.php:472
+#, php-format
+msgid "Your site has %s posts."
+msgstr "Webhelyén %s bejegyzés található."
+
+#: admin/classes/Admin.php:475
+msgid ""
+"To maintain optimal performance, the following features are automatically "
+"disabled:"
+msgstr "Az optimális teljesítmény fenntartása érdekében a következő funkciók automatikusan ki vannak kapcsolva:"
+
+#: admin/classes/Admin.php:478
+msgid ""
+"<strong>Widget scanning</strong> - Widget content will not be scanned for "
+"image usage"
+msgstr "<strong>Widgetek vizsgálata</strong> – a widgetek tartalmában nem történik meg a képek használatának ellenőrzése"
+
+#: admin/classes/Admin.php:479
+msgid ""
+"<strong>Customizer scanning</strong> - Theme customizer settings will not be"
+" checked"
+msgstr "<strong>A sablon testreszabási felületének vizsgálata</strong> – a sablon testreszabási beállításait a rendszer nem ellenőrzi"
+
+#: admin/classes/Admin.php:480
+msgid ""
+"<strong>Custom field scanning</strong> - Post meta fields will not be "
+"scanned"
+msgstr "<strong>Egyéni mezők vizsgálata</strong> – a bejegyzés metaadatmezőinek vizsgálata elmarad"
+
+#: admin/classes/Admin.php:481
+msgid ""
+"<strong>Post content scanning</strong> - Limited to prevent timeouts (if "
+">5000 posts)"
+msgstr "<strong>Bejegyzések tartalmának vizsgálata</strong> – az időtúllépések elkerülése érdekében korlátozott (5000-nél több bejegyzés esetén)"
+
+#: admin/classes/Admin.php:484
+msgid "What is still scanned:"
+msgstr "Amit a rendszer továbbra is vizsgál:"
+
+#: admin/classes/Admin.php:485
+msgid ""
+"Featured images, gallery blocks, image blocks, and direct file references in"
+" your WordPress database."
+msgstr "Kiemelt képek, galéria- és képblokkok, valamint közvetlen fájlhivatkozások a WordPress-adatbázisban."
+
+#: admin/classes/Admin.php:488
+msgid ""
+"This is normal for large sites and helps prevent timeouts. The scan will "
+"focus on the most common image usage locations."
+msgstr "Ez nagy webhelyek esetén normális, és segít megelőzni az időtúllépést. A vizsgálat a képek leggyakoribb felhasználási helyeire összpontosít."
+
+#: admin/classes/Admin.php:517
+msgid "Image Variation Cleanup Dashboard"
+msgstr "Képméret-változatok tisztítása – vezérlőpult"
+
+#: admin/classes/Admin.php:523
+msgid ""
+"WordPress creates multiple size variations for every image. We scan your "
+"site to identify which variations are actually used, then safely remove the "
+"unused ones to free up disk space."
+msgstr "A WordPress minden képhez többféle méretváltozatot hoz létre. Átvizsgáljuk a webhelyét, hogy megállapítsuk, mely változatokat használja ténylegesen, majd biztonságosan eltávolítjuk a nem használtakat, így tárhelyet szabadítunk fel."
+
+#: admin/classes/Admin.php:527
+msgid "🛡️ Safety Features:"
+msgstr "🛡️ Biztonsági funkciók:"
+
+#: admin/classes/Admin.php:530
+#, php-format
+msgid "Originals never deleted • Automatic backups • %d-day recovery window"
+msgstr "Az eredeti fájlok soha nem törlődnek • automatikus biztonsági mentések • %d napos helyreállítási időszak"
+
+#: admin/classes/Admin.php:536
+msgid "💡 Best Practice:"
+msgstr "💡 Javasolt eljárás:"
+
+#: admin/classes/Admin.php:537
+msgid "Back up your site with "
+msgstr "Készítsen biztonsági mentést a webhelyéről a következővel: "
+
+#: admin/classes/Admin.php:538 admin/classes/Admin.php:750
+msgid "Duplicator"
+msgstr "Duplicator"
+
+#: admin/classes/Admin.php:539
+msgid ""
+" before cleanup. While our scanner checks posts, pages, widgets, and theme "
+"settings, theme files and custom code may reference images we can't detect. "
+"We recommend reviewing files individually rather than bulk deletion for "
+"maximum safety."
+msgstr " a tisztítás előtt. A vizsgálat ellenőrzi a bejegyzéseket, oldalakat, widgeteket és sablonbeállításokat, de a sablonfájlok és az egyéni kód olyan képekre hivatkozhatnak, amelyeket nem tudunk észlelni. A maximális biztonság érdekében javasoljuk, hogy a fájlokat egyenként ellenőrizze ahelyett, hogy tömegesen törölné őket."
+
+#: admin/classes/Admin.php:548
+msgid "Media Library Images"
+msgstr "Médiatár képei"
+
+#: admin/classes/Admin.php:550
+msgid "Total images in your WordPress media library"
+msgstr "A WordPress médiatárában található összes kép"
+
+#: admin/classes/Admin.php:554
+msgid "Total Storage Used"
+msgstr "Felhasznált tárhely összesen"
+
+#: admin/classes/Admin.php:556
+msgid "Disk space used by all image files"
+msgstr "Az összes képfájl által felhasznált tárhely"
+
+#: admin/classes/Admin.php:560
+msgid "Variations Removed"
+msgstr "Eltávolított változatok"
+
+#: admin/classes/Admin.php:562
+msgid "Unused image variations successfully cleaned"
+msgstr "A nem használt képméret-változatok sikeresen törölve"
+
+#: admin/classes/Admin.php:566
+msgid "Space Recovered"
+msgstr "Felszabadított tárhely"
+
+#: admin/classes/Admin.php:568
+msgid "Total disk space freed by cleanup"
+msgstr "A tisztítással összesen felszabadított tárhely"
+
+#: admin/classes/Admin.php:572
+msgid "Backup Storage"
+msgstr "Biztonsági mentések tárolóhelye"
+
+#: admin/classes/Admin.php:576
+#, php-format
+msgid "%s total • Auto-cleanup after retention (see details below)"
+msgstr "%s összesen • automatikus tisztítás a megőrzési időszak lejárta után (részletek alább)"
+
+#: admin/classes/Admin.php:578
+msgid "No backup files stored"
+msgstr "Nincsenek tárolt biztonsági mentési fájlok"
+
+#: admin/classes/Admin.php:586
+msgid "Quick Actions"
+msgstr "Gyors műveletek"
+
+#: admin/classes/Admin.php:592
+msgid "Find Unused Image Variations"
+msgstr "Nem használt képméret-változatok keresése"
+
+#: admin/classes/Admin.php:599
+msgid "View History"
+msgstr "Előzmények megtekintése"
+
+#: admin/classes/Admin.php:612
+msgid "Recent Activity"
+msgstr "Legutóbbi tevékenység"
+
+#: admin/classes/Admin.php:620
+msgid "WP-CLI Automation Support"
+msgstr "WP-CLI-automatizálás támogatása"
+
+#: admin/classes/Admin.php:624
+msgid ""
+"For advanced users with SSH/terminal access, this plugin includes "
+"comprehensive WP-CLI commands for automation and server management:"
+msgstr "Az SSH-/terminálhozzáféréssel rendelkező haladó felhasználók számára ez a bővítmény átfogó WP-CLI-parancsokat kínál az automatizáláshoz és a szerverkezeléshez:"
+
+#: admin/classes/Admin.php:627
+msgid "Available Commands:"
+msgstr "Elérhető parancsok:"
+
+#: admin/classes/Admin.php:631
+msgid "# Find unused image sizes"
+msgstr "# Nem használt képméretek keresése"
+
+#: admin/classes/Admin.php:634
+msgid "--format=table|json|csv  # Output format"
+msgstr "--format=table|json|csv  # Kimeneti formátum"
+
+#: admin/classes/Admin.php:639
+msgid "# Delete unused variations"
+msgstr "# Nem használt változatok törlése"
+
+#: admin/classes/Admin.php:642
+msgid "--yes           # Skip confirmation"
+msgstr "--yes           # A megerősítés kihagyása"
+
+#: admin/classes/Admin.php:643
+msgid "--limit=N       # Limit number to delete"
+msgstr "--limit=N       # Törlendő elemek számának korlátozása"
+
+#: admin/classes/Admin.php:648
+msgid "# List available backups"
+msgstr "# Az elérhető biztonsági mentések listázása"
+
+#: admin/classes/Admin.php:653
+msgid "# Restore from backups"
+msgstr "# Visszaállítás biztonsági mentésekből"
+
+#: admin/classes/Admin.php:656
+msgid "--all          # Restore all backups"
+msgstr "--all          # Az összes biztonsági mentés visszaállítása"
+
+#: admin/classes/Admin.php:657
+msgid "--id=N         # Restore specific backup"
+msgstr "--id=N         # Adott biztonsági mentés visszaállítása"
+
+#: admin/classes/Admin.php:658
+msgid "--yes          # Skip confirmation"
+msgstr "--yes          # A megerősítés kihagyása"
+
+#: admin/classes/Admin.php:663
+msgid "# Show storage statistics"
+msgstr "# Tárhelystatisztikák megjelenítése"
+
+#: admin/classes/Admin.php:668
+msgid "# Run performance benchmark"
+msgstr "# Teljesítményteszt futtatása"
+
+#: admin/classes/Admin.php:674
+msgid "Example Workflow:"
+msgstr "Példa a munkafolyamatra:"
+
+#: admin/classes/Admin.php:687
+msgid ""
+"All CLI commands use the same secure backend as the dashboard and respect "
+"your plugin settings."
+msgstr "Minden CLI-parancs ugyanazt a biztonságos háttérrendszert használja, mint a vezérlőpult, és figyelembe veszi a bővítmény beállításait."
+
+#: admin/classes/Admin.php:699 admin/classes/Admin.php:865
+msgid "Close"
+msgstr "Bezárás"
+
+#: admin/classes/Admin.php:725
+msgid "Image Variation Cleanup"
+msgstr "Képméret-változatok tisztítása"
+
+#: admin/classes/Admin.php:730
+msgid "🔍 How the Scan Works"
+msgstr "🔍 A vizsgálat működése"
+
+#: admin/classes/Admin.php:732
+msgid "Step 1 - Build Used Images List:"
+msgstr "1. lépés – A használt képek listájának összeállítása:"
+
+#: admin/classes/Admin.php:733
+msgid ""
+"We analyze your posts, pages, widgets, sidebars, theme customizer settings, "
+"and custom fields (ACF, meta boxes) to build a complete list of which image "
+"variations are actively referenced in your content."
+msgstr "Elemezzük a bejegyzéseket, oldalakat, widgeteket, oldalsávokat, a sablon testreszabási beállításait és az egyéni mezőket (ACF, metadobozok), hogy összeállítsuk a tartalomban ténylegesen hivatkozott képméret-változatok teljes listáját."
+
+#: admin/classes/Admin.php:736
+msgid "Step 2 - Identify Unused Variations:"
+msgstr "2. lépés – A nem használt változatok azonosítása:"
+
+#: admin/classes/Admin.php:737
+msgid ""
+"After mapping referenced images, we scan your media library to identify "
+"image size variations (like thumbnail-150x150.jpg, medium-300x300.jpg) that "
+"exist on your server but aren't found in the areas we scanned."
+msgstr "A hivatkozott képek feltérképezése után átvizsgáljuk a médiatárat, és megkeressük azokat a képméret-változatokat (például thumbnail-150x150.jpg, medium-300x300.jpg), amelyek megtalálhatók a szerveren, de az átvizsgált területeken nem hivatkoznak rájuk."
+
+#: admin/classes/Admin.php:740
+msgid "Step 3 - Safe Review & Deletion:"
+msgstr "3. lépés – Biztonságos ellenőrzés és törlés:"
+
+#: admin/classes/Admin.php:743
+#, php-format
+msgid ""
+"You review the results and choose which variations to delete. All files are "
+"backed up for %d days before removal. Your original full-size images are "
+"never touched - we only remove the smaller copies that WordPress created "
+"automatically."
+msgstr "Ellenőrizze az eredményeket, majd válassza ki, mely változatokat szeretné törölni. Eltávolítás előtt minden fájlról biztonsági mentést készítünk, amely %d napig visszaállítható. Az eredeti, teljes méretű képekhez nem nyúlunk – csak a WordPress által automatikusan létrehozott kisebb másolatokat távolítjuk el."
+
+#: admin/classes/Admin.php:747
+msgid "💡 Note:"
+msgstr "💡 megjegyzés:"
+
+#: admin/classes/Admin.php:748
+msgid ""
+"The scanner checks content areas managed by WordPress. Theme template files "
+"and custom JavaScript are not scanned automatically. "
+msgstr "A vizsgáló a WordPress által kezelt tartalmi területeket ellenőrzi. A sablonfájlok és az egyéni JavaScript automatikus vizsgálata nem történik meg. "
+
+#: admin/classes/Admin.php:749
+msgid "Always back up with "
+msgstr "Mindenképpen készítsen biztonsági mentést a következővel: "
+
+#: admin/classes/Admin.php:751
+msgid " before cleanup."
+msgstr " a tisztítás előtt."
+
+#: admin/classes/Admin.php:770
+msgid "Delete All Unused Variations"
+msgstr "Az összes nem használt változat törlése"
+
+#: admin/classes/Admin.php:778
+msgid "⚠️ Keep This Page Open"
+msgstr "⚠️ Tartsa nyitva ezt az oldalt"
+
+#: admin/classes/Admin.php:779
+msgid ""
+"The scan is running in your browser. Do not close this page or navigate "
+"away, or the scan will pause. You can resume later if needed, but it's best "
+"to keep this page open until completion."
+msgstr "A vizsgálat a böngészőjében fut. Ne zárja be ezt az oldalt, és ne navigáljon el róla, mert a vizsgálat szünetelni fog. Szükség esetén később folytathatja, de a legjobb, ha a befejezésig nyitva tartja ezt az oldalt."
+
+#: admin/classes/Admin.php:787
+msgid "Scanning Progress"
+msgstr "A vizsgálat előrehaladása"
+
+#: admin/classes/Admin.php:809
+msgid "Found:"
+msgstr "Találatok:"
+
+#: admin/classes/Admin.php:820
+msgid "Ready to Find Unused Image Variations?"
+msgstr "Készen áll a nem használt képméret-változatok keresésére?"
+
+#: admin/classes/Admin.php:822
+msgid ""
+"Click \"Scan for Unused Variations\" above to analyze your media library. "
+"The scanner will identify which image sizes are not being used anywhere on "
+"your site."
+msgstr "A médiatár elemzéséhez kattintson fent a „Nem használt változatok keresése” lehetőségre. A vizsgálat azonosítja azokat a képméreteket, amelyeket a webhelyen sehol nem használnak."
+
+#: admin/classes/Admin.php:825
+msgid "What happens during a scan?"
+msgstr "Mi történik a vizsgálat során?"
+
+#: admin/classes/Admin.php:826
+msgid ""
+"The plugin checks your posts, pages, widgets, theme settings, and custom "
+"fields to build a list of images currently in use, then identifies which "
+"variations appear unused."
+msgstr "A bővítmény ellenőrzi a bejegyzéseket, az oldalakat, a widgeteket, a sablonbeállításait és az egyéni mezőket, hogy listát készítsen a jelenleg használt képekről, majd megkeresi a nem használt változatokat."
+
+#: admin/classes/Admin.php:834
+msgid "images have unused variations"
+msgstr "képnek van nem használt változata"
+
+#: admin/classes/Admin.php:835
+msgid "unused variations total,"
+msgstr "nem használt változat összesen,"
+
+#: admin/classes/Admin.php:836
+msgid "can be freed"
+msgstr "szabadítható fel"
+
+#: admin/classes/Admin.php:841
+msgid "Select All"
+msgstr "Összes kiválasztása"
+
+#: admin/classes/Admin.php:887
+msgid "Full Scan"
+msgstr "Teljes vizsgálat"
+
+#: admin/classes/Admin.php:888
+msgid "Recommended"
+msgstr "Ajánlott"
+
+#: admin/classes/Admin.php:897
+msgid ""
+"Skips post content analysis for faster results. May flag more images as "
+"unused."
+msgstr "A gyorsabb eredmény érdekében kihagyja a bejegyzések tartalmának elemzését. Emiatt több kép is nem használtként jelenhet meg."
+
+#. translators: %d: number of days backups are retained
+#: admin/classes/Admin.php:906
+#, php-format
+msgid ""
+"Note: Regardless of scan type, all deletions are backed up and can be "
+"restored for %d days."
+msgstr "Megjegyzés: A vizsgálat típusától függetlenül minden törölt fájlról biztonsági mentés készül, amely %d napig visszaállítható."
+
+#: admin/classes/Admin.php:952
+msgid ""
+"View a complete audit trail of all cleanup operations performed by this "
+"plugin. Each entry shows which files were deleted, when, by whom, and the "
+"operation status. Click the arrow next to any entry to see detailed "
+"information about the image variations that were cleaned."
+msgstr "Tekintse meg a bővítmény által végzett összes tisztítási művelet teljes naplóját. Minden bejegyzés megmutatja, mely fájlokat törölték, mikor és ki végezte a műveletet, valamint annak állapotát. Kattintson bármelyik bejegyzés melletti nyílra a megtisztított képméret-változatok részleteinek megtekintéséhez."
+
+#: admin/classes/Admin.php:957
+#, php-format
+msgid ""
+"<strong>Note:</strong> History entries are automatically deleted after the "
+"retention period set in Settings. Default is %d days."
+msgstr "<strong>Megjegyzés:</strong> Az előzménybejegyzések a Beállításokban megadott megőrzési időszak után automatikusan törlődnek. Az alapértelmezett érték %d nap."
+
+#: admin/classes/Admin.php:968
+msgid "Date"
+msgstr "Dátum"
+
+#: admin/classes/Admin.php:969
+msgid "Action"
+msgstr "Művelet"
+
+#: admin/classes/Admin.php:970
+msgid "File Path"
+msgstr "Fájl elérési útja"
+
+#: admin/classes/Admin.php:971
+msgid "Size"
+msgstr "Méret"
+
+#: admin/classes/Admin.php:972
+msgid "Status"
+msgstr "Állapot"
+
+#: admin/classes/Admin.php:973
+msgid "User"
+msgstr "Felhasználó"
+
+#: admin/classes/Admin.php:981
+msgid "No cleanup history found."
+msgstr "Nem található tisztítási előzmény."
+
+#: admin/classes/Admin.php:982
+msgid ""
+"History entries will appear here after you delete image variations. Each "
+"cleanup operation is logged for your records."
+msgstr "A képméret-változatok törlése után itt jelennek meg a naplóbejegyzések. A nyilvántartás érdekében minden tisztítási művelet bekerül a naplóba."
+
+#: admin/classes/Admin.php:1012
+msgid "Show/Hide details"
+msgstr "Részletek megjelenítése/elrejtése"
+
+#: admin/classes/Admin.php:1028
+#, php-format
+msgid "%d sizes cleaned"
+msgstr "%d képméret törölve"
+
+#: admin/classes/Admin.php:1041
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: admin/classes/Admin.php:1049
+msgid "Deleted image sizes:"
+msgstr "Törölt képméretek:"
+
+#: admin/classes/Admin.php:1056
+msgid "Attachment info:"
+msgstr "Csatolmány adatai:"
+
+#: admin/classes/Admin.php:1148
+msgid "Settings saved successfully."
+msgstr "A beállítások sikeresen elmentve."
+
+#: admin/classes/Admin.php:1153
+msgid "Image Variation Cleanup Settings"
+msgstr "Képméret-változatok tisztításának beállításai"
+
+#: admin/classes/Admin.php:1156
+msgid ""
+"Configure how the image variation cleanup tool works. This plugin helps you "
+"free up disk space by removing unused image variations. Your highest quality"
+" images (full size) and thumbnails are protected by default."
+msgstr "A legjobb minőségű, teljes méretű képek és a bélyegképek alapértelmezés szerint védettek."
+
+#: admin/classes/Admin.php:1164
+msgid "Safety & Backup Settings"
+msgstr "Védelmi és biztonsági mentési beállítások"
+
+#: admin/classes/Admin.php:1168
+msgid "✓ Always-On Safety Features:"
+msgstr "✓ Mindig aktív biztonsági funkciók:"
+
+#: admin/classes/Admin.php:1171
+#, php-format
+msgid ""
+"For your protection, all deletions automatically create backups AND use "
+"temporary deletion (soft delete). This provides two layers of recovery: "
+"backup files you can restore instantly, and a %d-day temporary holding "
+"period before permanent deletion."
+msgstr "Az Ön védelme érdekében minden törlésről automatikusan biztonsági másolat készül, és a törlés ideiglenes (soft delete). Ez kétféle visszaállítási lehetőséget biztosít: azonnal visszaállítható biztonsági mentési fájlokat, valamint egy %d napos ideiglenes megőrzési időszakot a végleges törlés előtt."
+
+#: admin/classes/Admin.php:1177
+msgid "Keep backups for (days):"
+msgstr "Biztonsági másolatok megőrzése (nap):"
+
+#: admin/classes/Admin.php:1183
+msgid ""
+"How long to keep backup files before automatically deleting them. Default: "
+"30 days. Increase this if you want longer recovery time, but note it will "
+"use more disk space."
+msgstr "Mennyi ideig őrizze meg a biztonsági másolatokat az automatikus törlésük előtt. Alapértelmezett érték: 30 nap. Növelje ezt az értéket, ha hosszabb visszaállítási időt szeretne, de vegye figyelembe, hogy így több tárhelyet használ fel."
+
+#: admin/classes/Admin.php:1187
+msgid "Keep activity history for (days):"
+msgstr "A történések előzményeinek megőrzése (nap):"
+
+#: admin/classes/Admin.php:1193
+msgid ""
+"How long to keep the activity log entries in the History page. Log entries "
+"older than this will be automatically deleted during daily cleanup. Increase"
+" this value if you need longer audit trails for compliance or record-"
+"keeping."
+msgstr "Mennyi ideig őrizze meg az előzmények oldalon a naplóbejegyzéseket. Az ennél régebbi bejegyzések a napi tisztítás során automatikusan törlődnek. Növelje ezt az értéket, ha megfelelőségi vagy nyilvántartási okokból hosszabb naplózási időszakra van szüksége."
+
+#: admin/classes/Admin.php:1199
+msgid "What to Scan"
+msgstr "Mit vizsgáljon meg"
+
+#: admin/classes/Admin.php:1202
+msgid "⚠️ Important:"
+msgstr "⚠️ Fontos:"
+
+#: admin/classes/Admin.php:1202
+msgid ""
+"The scanner checks these locations to identify which images are currently in"
+" use. Disabling options may cause the scanner to mark in-use images as "
+"\"unused,\" potentially leading to accidental deletion. Only disable an "
+"option if you're certain images are not used in that location."
+msgstr "A vizsgáló ellenőrzi ezeket a helyeket, hogy megállapítsa, mely képeket használja jelenleg a webhely. Ha kikapcsolja valamelyik opciót, a vizsgáló a használt képeket is „nem használtként” jelölheti meg, ami véletlen törléshez vezethet. Csak akkor kapcsoljon ki egy opciót, ha biztos benne, hogy az adott helyen nem használ képeket."
+
+#: admin/classes/Admin.php:1208
+msgid "Scan posts and pages"
+msgstr "Bejegyzések és oldalak vizsgálata"
+
+#: admin/classes/Admin.php:1211
+msgid ""
+"Check your posts and pages for images in use. <strong>Recommended: Keep "
+"enabled</strong> to avoid deleting images that appear in your content."
+msgstr "Ellenőrizze a bejegyzéseket és az oldalakat a használt képek megkereséséhez. <strong>Javasolt: hagyja bekapcsolva</strong>, hogy elkerülje a tartalomban szereplő képek törlését."
+
+#: admin/classes/Admin.php:1217
+msgid "Scan sidebar widgets"
+msgstr "Oldalsáv-widgetek vizsgálata"
+
+#: admin/classes/Admin.php:1220
+msgid ""
+"Check sidebar widgets (like Image Widget or Text Widget) for images. Leave "
+"enabled if you use images in your sidebars or footer areas."
+msgstr "Ellenőrizze az oldalsáv widgetjeit (például a kép- vagy szövegwidgetet) a bennük használt képek megkereséséhez. Hagyja bekapcsolva, ha képeket használ az oldalsávokban vagy a láblécben."
+
+#: admin/classes/Admin.php:1226
+msgid "Scan theme settings"
+msgstr "Sablonbeállítások vizsgálata"
+
+#: admin/classes/Admin.php:1229
+msgid ""
+"Check your theme settings (like site logo, header image, background image) "
+"for images. <strong>Recommended: Keep enabled</strong> to protect your theme"
+" images from being marked as unused."
+msgstr "Ellenőrizze a sablon beállításait (például a webhely logóját, a fejléc képét és a háttérképet) a használt képek megkereséséhez. <strong>Javasolt: hagyja bekapcsolva</strong>, hogy a sablon képeit ne jelölje meg nem használtként."
+
+#: admin/classes/Admin.php:1235
+msgid "Scan custom fields (Advanced)"
+msgstr "Egyéni mezők vizsgálata (haladó)"
+
+#: admin/classes/Admin.php:1238
+msgid ""
+"Check custom fields and post metadata for images. If you use page builders "
+"(Elementor, Divi, WPBakery, etc.), ACF custom fields, or WooCommerce product"
+" galleries, <strong>keep this enabled</strong> to protect those images."
+msgstr "Ellenőrizze az egyéni mezőket és a bejegyzések metaadatait a bennük használt képek megkereséséhez. Ha oldalkészítőt (Elementor, Divi, WPBakery stb.), ACF egyéni mezőket vagy WooCommerce-termékgalériákat használ, <strong>hagyja bekapcsolva ezt az opciót</strong>, hogy megóvja ezeket a képeket."
+
+#: admin/classes/Admin.php:1245
+msgid "Image Size Settings"
+msgstr "Képméret-beállítások"
+
+#: admin/classes/Admin.php:1259
+msgid "Protected Image Variations"
+msgstr "Védett képméret-változatok"
+
+#: admin/classes/Admin.php:1261
+msgid ""
+"Select which image variations should <strong>never</strong> be deleted, even"
+" if they appear unused. For example, your theme might dynamically load "
+"certain sizes that the scanner cannot detect, or you may want to preserve "
+"standard WordPress sizes for consistency."
+msgstr "Válassza ki, hogy mely képméret-változatokat <strong>soha</strong> ne törölje a rendszer, még akkor sem, ha nem használtként jelennek meg. Például előfordulhat, hogy a sablon dinamikusan tölt be olyan méreteket, amelyeket a vizsgáló nem tud felismerni, vagy meg szeretné őrizni a WordPress szabványos méreteit az egységesség érdekében."
+
+#: admin/classes/Admin.php:1278
+msgid "WordPress Default"
+msgstr "WordPress alapértelmezett"
+
+#: admin/classes/Admin.php:1280
+msgid "Required - WordPress uses thumbnails in the admin dashboard"
+msgstr "Kötelező – a WordPress bélyegképeket használ az admin vezérlőpulton"
+
+#: admin/classes/Admin.php:1283
+msgid "Required - This is your highest quality original image"
+msgstr "Kötelező – ez az eredeti kép legjobb minőségű változata"
+
+#: admin/classes/Admin.php:1300
+msgid "Custom Size"
+msgstr "Egyéni méret"
+
+#: admin/classes/Admin.php:1311
+msgid "Performance Settings"
+msgstr "Teljesítmény-beállítások"
+
+#: admin/classes/Admin.php:1314
+msgid "Items per batch:"
+msgstr "Tételek kötegenként:"
+
+#: admin/classes/Admin.php:1320
+msgid "What is this?"
+msgstr "Mi ez?"
+
+#: admin/classes/Admin.php:1320
+msgid ""
+"How many items to process in each batch. If you experience timeouts or "
+"errors during deletion, <strong>lower this number</strong> (try 10-15). "
+"Default of 25 works for most sites."
+msgstr "Hány tételt dolgozzon fel egy kötegben. Ha a törlés során időtúllépést vagy hibát tapasztal, <strong>csökkentse ezt az értéket</strong> (próbálja ki a 10–15-öt). Az alapértelmezett 25-ös érték a legtöbb webhelyen megfelelő."
+
+#: admin/classes/Admin.php:1324
+msgid "💡 Hosting Recommendations:"
+msgstr "💡 Tárhelyszolgáltatási javaslatok:"
+
+#: admin/classes/Admin.php:1325
+msgid "<strong>Shared Hosting</strong> (GoDaddy, Bluehost, etc.): Use 10-15"
+msgstr "<strong>Megosztott tárhely</strong> (GoDaddy, Bluehost stb.): használjon 10–15-öt"
+
+#: admin/classes/Admin.php:1326
+msgid "<strong>Managed WordPress</strong> (WP Engine, Kinsta): Use 20-25"
+msgstr "<strong>Felügyelt WordPress-tárhely</strong> (WP Engine, Kinsta): használjon 20–25-öt"
+
+#: admin/classes/Admin.php:1327
+msgid "<strong>VPS/Dedicated Server</strong>: Use 25-50"
+msgstr "<strong>VPS/dedikált szerver</strong>: használjon 25–50-et"
+
+#: admin/classes/Admin.php:1371
+msgid "How Backups Work"
+msgstr "Hogyan működnek a biztonsági mentések"
+
+#: admin/classes/Admin.php:1373
+msgid ""
+"<strong>Automatic Backup:</strong> When you delete image variations, they "
+"are first backed up to a secure folder inside your WordPress uploads "
+"directory"
+msgstr "<strong>automatikus biztonsági mentés:</strong> A képek változatainak törlésekor a rendszer először biztonságos mappába menti őket a WordPress feltöltési könyvtárán belül."
+
+#: admin/classes/Admin.php:1377
+#, php-format
+msgid ""
+"<strong>Retention Period:</strong> Backups are kept for %d days by default "
+"(configurable in Settings → Backup Settings)"
+msgstr "<strong>Megőrzési időszak:</strong> A biztonsági mentések alapértelmezés szerint %d napig maradnak meg (a Beállítások → Biztonsági mentések beállításai résznél módosítható)"
+
+#: admin/classes/Admin.php:1380
+msgid ""
+"<strong>Easy Restore:</strong> Click the \"Restore\" button to copy a "
+"backed-up file back to its original location"
+msgstr "<strong>Egyszerű visszaállítás:</strong> Kattintson a „Visszaállítás” gombra, ha egy biztonsági mentésből származó fájlt vissza szeretne másolni az eredeti helyére"
+
+#: admin/classes/Admin.php:1381
+msgid ""
+"<strong>Automatic Cleanup:</strong> Expired backups are automatically "
+"deleted during daily maintenance to free up space"
+msgstr "<strong>automatikus tisztítás:</strong> A lejárt biztonsági mentések a napi karbantartás során automatikusan törlődnek, hogy tárhely szabaduljon fel."
+
+#: admin/classes/Admin.php:1383
+msgid "💡 Tip:"
+msgstr "💡 Tipp:"
+
+#: admin/classes/Admin.php:1383
+msgid ""
+"If you don't see a backup here, it may have already expired and been "
+"deleted, or backups may be disabled in Settings."
+msgstr "Ha itt nem lát biztonsági mentést, előfordulhat, hogy az már lejárt és törölve lett, vagy a biztonsági mentések ki vannak kapcsolva a beállításokban."
+
+#: admin/classes/Admin.php:1396
+#, php-format
+msgid "Restore All (%d)"
+msgstr "Összes visszaállítása (%d)"
+
+#: admin/classes/Admin.php:1401
+msgid "Search backups"
+msgstr "Biztonsági mentések keresése"
+
+#: admin/classes/Admin.php:1402
+msgid "Search by filename..."
+msgstr "Keresés fájlnév alapján..."
+
+#: admin/classes/Admin.php:1415
+msgid "Backup ID"
+msgstr "Biztonsági mentés ID-ja"
+
+#: admin/classes/Admin.php:1416
+msgid "Original Path"
+msgstr "Eredeti elérési út"
+
+#: admin/classes/Admin.php:1417
+msgid "Backup Date"
+msgstr "Biztonsági mentés dátuma"
+
+#: admin/classes/Admin.php:1418
+msgid "File Size"
+msgstr "Fájlméret"
+
+#: admin/classes/Admin.php:1419
+msgid "Expires"
+msgstr "Lejárat"
+
+#: admin/classes/Admin.php:1420
+msgid "Actions"
+msgstr "Műveletek"
+
+#: admin/classes/Admin.php:1432
+#, php-format
+msgid ""
+"Backups appear here after you delete image variations. They are kept for %d "
+"days before being automatically removed."
+msgstr "A biztonsági mentések a képméret-változatok törlése után jelennek meg itt. Automatikus törlésük előtt %d napig maradnak meg."
+
+#: admin/classes/Admin.php:1435
+msgid "Why are there no backups?"
+msgstr "Miért nincsenek biztonsági mentések?"
+
+#: admin/classes/Admin.php:1437
+msgid "You haven't deleted any image variations yet"
+msgstr "Még nem törölt képméret-változatokat"
+
+#: admin/classes/Admin.php:1438
+msgid "Previous backups have expired and been automatically deleted"
+msgstr "A korábbi biztonsági mentések lejártak és automatikusan törlődtek"
+
+#: admin/classes/Admin.php:1523
+msgid "WP Media Cleanup License"
+msgstr "WP Media Cleanup-licenc"
+
+#: admin/classes/Admin.php:1528
+msgid "✓ Licensed via Partner"
+msgstr "✓ Partneren keresztül licencelve"
+
+#. translators: %s: Partner name
+#: admin/classes/Admin.php:1533
+#, php-format
+msgid "Your license is provided by %s. All plugin features are available."
+msgstr "A licencet %s biztosítja. A bővítmény összes funkciója elérhető."
+
+#: admin/classes/Admin.php:1541 admin/classes/Admin.php:1621
+msgid "License Information"
+msgstr "Licencinformációk"
+
+#: admin/classes/Admin.php:1544 admin/classes/Admin.php:1627
+msgid "License Status"
+msgstr "Licenc állapota"
+
+#: admin/classes/Admin.php:1547
+msgid "ACTIVE"
+msgstr "AKTÍV"
+
+#: admin/classes/Admin.php:1552
+msgid "License Type"
+msgstr "Licenctípus"
+
+#. translators: %s: Partner name
+#: admin/classes/Admin.php:1557
+#, php-format
+msgid "Partner License (%s)"
+msgstr "Partnerlicenc (%s)"
+
+#: admin/classes/Admin.php:1565 admin/classes/Admin.php:1636
+msgid "Expiration Date"
+msgstr "Lejárati dátum"
+
+#: admin/classes/Admin.php:1566 admin/classes/Admin.php:1637
+msgid "Lifetime"
+msgstr "Élettartam"
+
+#. translators: %s: Partner name
+#: admin/classes/Admin.php:1574
+#, php-format
+msgid ""
+"This license is managed by %s and cannot be changed from this interface."
+msgstr "Ezt a licencet %s kezeli, és ezen a felületen nem módosítható."
+
+#: admin/classes/Admin.php:1584
+msgid "⚠ Partner License Validation Required"
+msgstr "⚠ Partnerlicenc érvényesítése szükséges"
+
+#. translators: %s: Partner name
+#: admin/classes/Admin.php:1589
+#, php-format
+msgid ""
+"A partner license from %s was detected but could not be validated. Please "
+"contact your hosting provider for assistance."
+msgstr "A rendszer észlelt egy partnerlicencet, amelyet %s biztosít, de nem tudta érvényesíteni. Kérjük, segítségért forduljon a tárhelyszolgáltatójához."
+
+#: admin/classes/Admin.php:1599
+msgid "🔒 License Activation Required"
+msgstr "🔒 Licencaktiválás szükséges"
+
+#: admin/classes/Admin.php:1601
+msgid ""
+"Please activate your license to use WP Media Cleanup. All plugin "
+"functionality is locked until a valid license is activated."
+msgstr "Kérjük, aktiválja a licencet a WP Media Cleanup használatához. A bővítmény minden funkciója zárolva marad, amíg nem aktivál egy érvényes licencet."
+
+#: admin/classes/Admin.php:1604
+msgid "Need a license?"
+msgstr "Licencre van szüksége?"
+
+#: admin/classes/Admin.php:1605
+msgid "Purchase a license here"
+msgstr "Licenc vásárlása itt"
+
+#: admin/classes/Admin.php:1611
+msgid "✓ License Active"
+msgstr "✓ A licenc aktív"
+
+#: admin/classes/Admin.php:1613
+msgid "Your license is active and all plugin features are available."
+msgstr "A licenc aktív, és a bővítmény összes funkciója elérhető."
+
+#: admin/classes/Admin.php:1642
+msgid "Activation Limit"
+msgstr "Aktiválási korlát"
+
+#: admin/classes/Admin.php:1646 admin/classes/Admin.php:1663
+msgid "Unlimited"
+msgstr "Korlátlan"
+
+#: admin/classes/Admin.php:1656
+msgid "Active Installations"
+msgstr "Aktív telepítések"
+
+#: admin/classes/Admin.php:1662
+msgid "Activations Remaining"
+msgstr "Hátralévő bekapcsolások"
+
+#: admin/classes/Admin.php:1676
+msgid "License Key"
+msgstr "Licenckulcs"
+
+#: admin/classes/Admin.php:1684
+msgid "Enter your license key"
+msgstr "Adja meg a licenckulcsát"
+
+#: admin/classes/Admin.php:1688
+msgid ""
+"To change your license key, please deactivate the current license first."
+msgstr "A licenckulcs módosításához először kapcsolja ki az aktuális licencet."
+
+#: admin/classes/Admin.php:1692
+msgid "Enter the license key you received after purchase."
+msgstr "Adja meg a vásárlás után kapott licenckulcsot."
+
+#: admin/classes/Admin.php:1702
+msgid "Deactivate License"
+msgstr "Licenc deaktiválása"
+
+#: admin/classes/Admin.php:1705
+msgid "Check License Status"
+msgstr "Licenc állapotának ellenőrzése"
+
+#: admin/classes/Admin.php:1711
+msgid "Activate License"
+msgstr "Licenc aktiválása"
+
+#: admin/classes/Admin.php:1719
+msgid "Support & Documentation"
+msgstr "Támogatás és dokumentáció"
+
+#: admin/classes/Admin.php:1721
+msgid ""
+"For assistance with your license or plugin functionality, please visit:"
+msgstr "Licenccel vagy a bővítmény működésével kapcsolatos segítségért kérjük, keresse fel az alábbi oldalt:"
+
+#: admin/classes/Admin.php:1724
+msgid "Support Portal"
+msgstr "Támogatási portál"
+
+#: admin/classes/Admin.php:1725
+msgid "Documentation"
+msgstr "Dokumentáció"
+
+#: admin/classes/Admin.php:1726
+msgid "Manage Your Licenses"
+msgstr "Licencek kezelése"
+
+#: admin/classes/Admin.php:1774
+msgid "No cleanup activity yet"
+msgstr "Még nincsenek tisztítással kapcsolatos történések"
+
+#: admin/classes/Admin.php:1775
+msgid ""
+"Get started by clicking \"Find Unused Image Variations\" above to scan your "
+"media library."
+msgstr "Kezdésként kattintson fent a „Nem használt képváltozatok keresése” gombra a médiatár átvizsgálásához."
+
+#: admin/classes/Admin.php:1811
+#, php-format
+msgid "Cleaned %d sizes"
+msgstr "%d képméret megtisztítva"
+
+#: admin/classes/Admin.php:1815
+#, php-format
+msgid "%s freed"
+msgstr "%s hely szabadult fel"
+
+#: admin/classes/Admin.php:1816
+#, php-format
+msgid "%s ago"
+msgstr "%s ezelőtt"
+
+#: includes/classes/CleanupEngine.php:62
+#: includes/classes/CleanupEngine.php:666 includes/classes/Core.php:712
+#: includes/classes/Core.php:881
+msgid "Invalid attachment ID"
+msgstr "Hibás csatolmányazonosító (ID)"
+
+#: includes/classes/CleanupEngine.php:68
+msgid "Media file is still in use and cannot be deleted"
+msgstr "A médiafájl még használatban van, ezért nem törölhető"
+
+#: includes/classes/CleanupEngine.php:132
+#: includes/classes/CleanupEngine.php:940
+#, php-format
+msgid ""
+"Insufficient disk space for bulk operation. Required: %s, Available: %s"
+msgstr "Nincs elegendő lemezterület a tömeges művelethez. Szükséges: %s, elérhető: %s"
+
+#: includes/classes/CleanupEngine.php:181
+msgid "Media removed from database (file was already missing)"
+msgstr "A média eltávolítva az adatbázisból (a fájl már hiányzott)"
+
+#: includes/classes/CleanupEngine.php:200
+msgid "Failed to move file to temporary directory"
+msgstr "Nem sikerült áthelyezni a fájlt az ideiglenes könyvtárba"
+
+#: includes/classes/CleanupEngine.php:231
+#, php-format
+msgid ""
+"Media moved to temporary directory (will be permanently deleted in %d days)"
+msgstr "A média áthelyezve az ideiglenes könyvtárba (végleges törlése %d nap múlva történik)"
+
+#: includes/classes/CleanupEngine.php:257
+#: includes/classes/CleanupEngine.php:845
+msgid "No backup needed - file does not exist"
+msgstr "Nincs szükség biztonsági mentésre – a fájl nem létezik"
+
+#: includes/classes/CleanupEngine.php:281
+msgid "Insufficient disk space to create backup"
+msgstr "Nincs elegendő lemezterület a biztonsági mentés létrehozásához"
+
+#: includes/classes/CleanupEngine.php:295
+msgid "Failed to create backup copy"
+msgstr "Nem sikerült biztonsági másolatot létrehozni"
+
+#: includes/classes/CleanupEngine.php:304
+msgid "Backup verification failed"
+msgstr "A biztonsági másolat ellenőrzése sikertelen"
+
+#: includes/classes/CleanupEngine.php:339
+msgid "Backup created successfully"
+msgstr "A biztonsági másolat sikeresen létrehozva"
+
+#: includes/classes/CleanupEngine.php:407
+msgid "Backup not found"
+msgstr "A biztonsági mentés nem található"
+
+#: includes/classes/CleanupEngine.php:411
+msgid "Backup file not found"
+msgstr "A biztonsági másolat fájlja nem található"
+
+#: includes/classes/CleanupEngine.php:425
+msgid "Security error: Attempted to restore file outside uploads directory"
+msgstr "Biztonsági hiba: a rendszer megpróbált egy fájlt a feltöltések könyvtárán kívüli helyre visszaállítani"
+
+#: includes/classes/CleanupEngine.php:436
+msgid "Failed to restore file from backup"
+msgstr "Nem sikerült visszaállítani a fájlt a biztonsági másolatból"
+
+#: includes/classes/CleanupEngine.php:486
+#, php-format
+msgid "File restored successfully: %s"
+msgstr "A fájl sikeresen visszaállítva: %s"
+
+#: includes/classes/CleanupEngine.php:580
+#, php-format
+msgid "Insufficient disk space for bulk restore. Required: %s, Available: %s"
+msgstr "Nincs elegendő lemezterület a csoportos visszaállításhoz. Szükséges: %s, elérhető: %s"
+
+#: includes/classes/CleanupEngine.php:708
+#, php-format
+msgid "Deleted %d image sizes, %d failed. Space freed: %s"
+msgstr "%d képméret törölve, %d művelet sikertelen. Felszabadított tárhely: %s"
+
+#: includes/classes/CleanupEngine.php:746
+msgid "Cannot delete original full-size image for safety reasons"
+msgstr "Biztonsági okokból az eredeti, teljes méretű kép nem törölhető"
+
+#: includes/classes/CleanupEngine.php:773
+msgid "Security error: Invalid file path"
+msgstr "Biztonsági hiba: hibás fájlútvonal"
+
+#: includes/classes/CleanupEngine.php:781
+#, php-format
+msgid "Image size file not found: %s"
+msgstr "A képméret fájlja nem található: %s"
+
+#: includes/classes/CleanupEngine.php:793
+#, php-format
+msgid "Backup failed for %s: %s"
+msgstr "Nem sikerült biztonsági másolatot készíteni erről: %s. Hiba: %s"
+
+#: includes/classes/CleanupEngine.php:802
+#, php-format
+msgid "Deleted %s"
+msgstr "%s törölve"
+
+#: includes/classes/CleanupEngine.php:808
+#, php-format
+msgid "Failed to delete %s"
+msgstr "Nem sikerült törölni: %s"
+
+#: includes/classes/CleanupEngine.php:869
+#, php-format
+msgid "Insufficient disk space to create backup for %s"
+msgstr "Nincs elegendő lemezterület biztonsági másolat készítéséhez erről: %s"
+
+#: includes/classes/CleanupEngine.php:878
+#, php-format
+msgid "Failed to create backup copy of %s"
+msgstr "Nem sikerült biztonsági másolatot készíteni erről: %s"
+
+#: includes/classes/CleanupEngine.php:886
+#, php-format
+msgid "Backup created for %s"
+msgstr "Biztonsági másolat készült erről: %s"
+
+#: includes/classes/CleanupEngine.php:1283
+#: includes/classes/CleanupEngine.php:1325
+msgid "unknown"
+msgstr "ismeretlen"
+
+#: includes/classes/Core.php:164
+msgid ""
+"A valid license is required to use this feature. Please activate your "
+"license."
+msgstr "A funkció használatához érvényes licenc szükséges. Kérjük, aktiválja a licencet."
+
+#: includes/classes/Core.php:207
+msgid "Cache cleared successfully"
+msgstr "A gyorsítótár sikeresen törölve"
+
+#: includes/classes/Core.php:234 includes/classes/Core.php:518
+#: includes/classes/Core.php:665 includes/classes/Core.php:704
+#: includes/classes/Core.php:752 includes/classes/Core.php:842
+#: includes/classes/Core.php:873 includes/classes/Core.php:916
+#: includes/classes/Core.php:971 includes/classes/Core.php:1317
+#: includes/classes/Core.php:1381 includes/classes/Core.php:1420
+#: includes/classes/Core.php:1485 includes/classes/Core.php:1570
+#: includes/classes/Core.php:1606
+msgid "You do not have sufficient permissions"
+msgstr "Ön nem rendelkezik elegendő jogosultsággal"
+
+#: includes/classes/Core.php:274
+#, php-format
+msgid "%d seconds"
+msgstr "%d másodperc"
+
+#: includes/classes/Core.php:275
+#, php-format
+msgid "%d-%d minutes"
+msgstr "%d–%d perc"
+
+#. translators: %1$s: number of posts, %2$s: estimated time
+#: includes/classes/Core.php:285
+#, php-format
+msgid "Your site has %1$s posts to scan. This may take approximately %2$s."
+msgstr "Az Ön webhelyén %1$s bejegyzés vár vizsgálatra. Ez körülbelül %2$s időt vehet igénybe."
+
+#: includes/classes/Core.php:308
+msgid "Quick scan mode: Skipped post content analysis for faster results."
+msgstr "Gyors vizsgálati mód: a gyorsabb eredmény érdekében kimaradt a bejegyzések tartalmának elemzése."
+
+#: includes/classes/Core.php:354
+msgid "Scan progress not found"
+msgstr "A vizsgálat állapota nem található"
+
+#: includes/classes/Core.php:424 includes/classes/Core.php:468
+msgid "Failed to update scan progress"
+msgstr "Nem sikerült frissíteni a vizsgálat állapotát"
+
+#: includes/classes/Core.php:531
+msgid "Missing scan_id or step parameter"
+msgstr "Hiányzik a scan_id vagy a step paraméter"
+
+#: includes/classes/Core.php:539
+msgid "Invalid extractor step"
+msgstr "Hibás kinyerési lépés"
+
+#: includes/classes/Core.php:547
+msgid "Scan data expired. Please restart the scan."
+msgstr "A vizsgálati adatok lejártak. Kérjük, indítsa újra a vizsgálatot."
+
+#: includes/classes/Core.php:723
+msgid "No unused image sizes found for this attachment"
+msgstr "Ehhez a csatolmányhoz nem találhatók használaton kívüli képméretek"
+
+#: includes/classes/Core.php:813
+msgid "No attachments with unused image sizes selected"
+msgstr "Nincs kiválasztva olyan csatolmány, amelyhez használaton kívüli képméretek tartoznak"
+
+#: includes/classes/Core.php:887
+msgid "No image sizes selected"
+msgstr "Nincs kiválasztva képméret"
+
+#: includes/classes/Core.php:923
+msgid "No attachments selected"
+msgstr "Nincs kiválasztva csatolmány"
+
+#: includes/classes/Core.php:930
+msgid "Invalid attachments data format"
+msgstr "Hibás csatolmányadat-formátum"
+
+#: includes/classes/Core.php:941
+msgid "Invalid attachment data structure"
+msgstr "Hibás csatolmány-adatszerkezet"
+
+#: includes/classes/Core.php:1225
+msgid "Temporary directory does not exist or is empty."
+msgstr "Az ideiglenes könyvtár nem létezik vagy üres."
+
+#: includes/classes/Core.php:1235
+msgid "Temporary directory is already empty."
+msgstr "Az ideiglenes könyvtár már üres."
+
+#: includes/classes/Core.php:1262
+#, php-format
+msgid "Failed to delete: %s"
+msgstr "Nem sikerült törölni: %s"
+
+#: includes/classes/Core.php:1286
+#, php-format
+msgid "Cleanup completed. Deleted %d files (%s), %d failures."
+msgstr "A tisztítás befejezve. Törölt fájlok: %d (%s), sikertelen műveletek: %d."
+
+#: includes/classes/Core.php:1294
+#, php-format
+msgid "Error during cleanup: %s"
+msgstr "Hiba történt a tisztítás során: %s"
+
+#: includes/classes/Core.php:1351
+msgid "ago"
+msgstr "ezelőtt"
+
+#: includes/classes/Core.php:1353
+msgid "Never"
+msgstr "Soha"
+
+#: includes/classes/Core.php:1388
+msgid "Invalid backup ID"
+msgstr "Hibás biztonsági másolat ID"
+
+#: includes/classes/Core.php:1401
+#, php-format
+msgid "Error restoring backup: %s"
+msgstr "Hiba a biztonsági másolat visszaállítása során: %s"
+
+#: includes/classes/Core.php:1429
+msgid "No backup IDs provided"
+msgstr "A biztonsági másolatokhoz tartozó ID-k nincsenek megadva"
+
+#: includes/classes/Core.php:1435
+msgid ""
+"Too many backups selected. Maximum 1000 backups can be restored at once."
+msgstr "Túl sok biztonsági másolat van kiválasztva. Egyszerre legfeljebb 1000 biztonsági másolat állítható vissza."
+
+#: includes/classes/Core.php:1444
+#, php-format
+msgid "Restored %d of %d backups successfully."
+msgstr "A(z) %d biztonsági másolatból %d sikeresen visszaállítva."
+
+#: includes/classes/Core.php:1451
+#, php-format
+msgid "%d failed."
+msgstr "%d sikertelen."
+
+#: includes/classes/Core.php:1465
+#, php-format
+msgid "Error during bulk restore: %s"
+msgstr "Hiba történt a csoportos visszaállítás során: %s"
+
+#: includes/classes/Core.php:1503
+msgid "No backups found to restore"
+msgstr "Nem található visszaállítható biztonsági másolat"
+
+#: includes/classes/Core.php:1517
+msgid "All backups have been restored."
+msgstr "Az összes biztonsági másolat visszaállítása megtörtént."
+
+#: includes/classes/Core.php:1543
+#, php-format
+msgid "Batch %d of %d: Restored %d backups"
+msgstr "%d. köteg a(z) %d közül: %d biztonsági másolat visszaállítva"
+
+#: includes/classes/Core.php:1551
+#, php-format
+msgid "Error during restore all (batch %d): %s"
+msgstr "Hiba történt az összes biztonsági másolat visszaállítása során (%d. köteg): %s"
+
+#: includes/classes/Core.php:1580
+msgid "No backups found"
+msgstr "Nem található biztonsági mentés"
+
+#: includes/classes/Core.php:1613
+msgid "Search term must be at least 2 characters"
+msgstr "A keresőkifejezésnek legalább 2 karakter hosszúnak kell lennie"
+
+#: includes/classes/Core.php:1634
+msgid "No backups found matching your search."
+msgstr "Nem található a keresésnek megfelelő biztonsági mentés."
+
+#: includes/classes/Core.php:2432
+msgid "You do not have permission to manage plugins."
+msgstr "Önnek nincs jogosultsága a bővítmények kezelésére."
+
+#: includes/classes/Core.php:2468
+msgid "You do not have permission to activate plugins."
+msgstr "Önnek nincs jogosultsága a bővítmények bekapcsolására."
+
+#: includes/classes/Core.php:2482
+msgid "Duplicator plugin not found. Please install it first."
+msgstr "A Duplicator bővítmény nem található. Kérjük, először telepítse."
+
+#: includes/classes/Core.php:2492
+#, php-format
+msgid "Failed to activate Duplicator: %s"
+msgstr "A Duplicator bekapcsolása sikertelen: %s"
+
+#: includes/classes/Core.php:2499
+msgid "Duplicator activated successfully!"
+msgstr "A Duplicator bekapcsolása sikeres!"
+
+#: includes/classes/License.php:153
+msgid "Hosting Partner"
+msgstr "Tárhelyszolgáltató partner"
+
+#: includes/classes/License.php:252
+msgid "An error occurred, please try again."
+msgstr "Hiba történt. Kérjük, próbálja meg újra."
+
+#: includes/classes/License.php:268
+msgid "Invalid response from licensing server."
+msgstr "Hibás válasz érkezett a licenckiszolgálótól."
+
+#: includes/classes/License.php:417
+msgid "Your license key has expired. Please renew your license."
+msgstr "A licenckulcsa lejárt. Kérjük, újítsa meg a licencét."
+
+#: includes/classes/License.php:419
+msgid "Your license key has been disabled."
+msgstr "A licenckulcsa ki van kapcsolva."
+
+#: includes/classes/License.php:421
+msgid "Your license is not active for this site."
+msgstr "Az Ön licence nem aktív ezen a webhelyen."
+
+#: includes/classes/License.php:424
+msgid "This license key is not valid for this product."
+msgstr "Ez a licenckulcs nem érvényes ehhez a termékhez."
+
+#: includes/classes/License.php:426
+msgid "Your license key has reached its activation limit."
+msgstr "A licenckulcs elérte az aktiválási korlátot."
+
+#: includes/classes/License.php:429
+msgid "Invalid license key. Please check your key and try again."
+msgstr "Hibás licenckulcs. Kérjük, ellenőrizze a kulcsot, és próbálja újra."
+
+#: src/Plugin.php:81
+msgid "Security check failed"
+msgstr "A biztonsági ellenőrzés sikertelen"

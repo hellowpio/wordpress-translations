@@ -1,0 +1,458 @@
+# Copyright (C) 2026 WP Desk
+# This file is distributed under the same license as the Flexible Subscriptions Stock Management plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Flexible Subscriptions Stock Management 1.0.16\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flexible-subscriptions-stock-management\n"
+"POT-Creation-Date: 2026-10-07T01:36:42+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: flexible-subscriptions-stock-management\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: Flexible Subscriptions Stock Management\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 1.0.16\n"
+
+#. Plugin Name of the plugin
+#. Description of the plugin
+#: flexible-subscriptions-stock-management.php
+msgid "Flexible Subscriptions Stock Management"
+msgstr "Flexible Subscriptions Stock Management"
+
+#. Plugin URI of the plugin
+#: flexible-subscriptions-stock-management.php
+msgid ""
+"https://www.wpdesk.pl/sk/flexible-subscriptions-stock-management-stock-"
+"plugin/"
+msgstr "https://www.wpdesk.pl/sk/flexible-subscriptions-stock-management-stock-plugin/"
+
+#. Author of the plugin
+#: flexible-subscriptions-stock-management.php
+msgid "WP Desk"
+msgstr "WP Desk"
+
+#. Author URI of the plugin
+#: flexible-subscriptions-stock-management.php
+msgid ""
+"https://www.wpdesk.net/sk/flexible-subscriptions-stock-management-stock-"
+"author/"
+msgstr "https://www.wpdesk.net/sk/flexible-subscriptions-stock-management-stock-author/"
+
+#: src/Emails/AdminRenewalCancelledEmail.php:20
+msgid "Flexible Subscriptions: Renewal Cancelled - insufficient stock"
+msgstr "Flexible Subscriptions: megújítás lemondva – elégtelen készlet"
+
+#: src/Emails/AdminRenewalCancelledEmail.php:21
+msgid ""
+"Email is sent to admin when a renewal is cancelled due to insufficient "
+"stock."
+msgstr "E-mailt küldünk az adminnak, ha elégtelen készlet miatt lemondanak egy megújítást."
+
+#: src/Emails/AdminRenewalCancelledEmail.php:22
+#: src/Emails/AdminRenewalCancelledEmail.php:23
+#: src/Emails/AdminRenewalCancelledEmail.php:47
+#: src/Emails/CustomerRenewalCancelledEmail.php:22
+#: src/Emails/CustomerRenewalCancelledEmail.php:23
+#: src/Emails/CustomerRenewalCancelledEmail.php:41
+msgid "Renewal Cancelled"
+msgstr "Megújítás lemondva"
+
+#: src/Emails/AdminRenewalCancelledEmail.php:43
+#: src/Emails/CustomerRenewalCancelledEmail.php:37
+msgid ""
+"[{site_title}] Subscription renewal for {order_number} has been cancelled "
+"due to insufficient stock"
+msgstr "[{site_title}] A(z) {order_number} rendeléshez tartozó előfizetés megújítását elégtelen készlet miatt lemondtuk"
+
+#: src/Emails/CustomerRenewalCancelledEmail.php:20
+msgid ""
+"Flexible Subscriptions: Customer Renewal Cancelled - insufficient stock"
+msgstr "Flexible Subscriptions: vásárlói megújítás lemondva – elégtelen készlet"
+
+#: src/Emails/CustomerRenewalCancelledEmail.php:21
+msgid ""
+"Email is sent to the customer when a renewal is cancelled due to "
+"insufficient stock."
+msgstr "E-mailt küldünk a vásárlónak, ha elégtelen készlet miatt lemondanak egy megújítást."
+
+#: src/HookProviders/Admin/PluginLinks.php:30
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:188
+msgid "Settings"
+msgstr "Beállítások"
+
+#: src/HookProviders/Admin/PluginLinks.php:31
+msgid "https://wpdesk.net/sk/flexible-subscriptions-stock-management-docs-en"
+msgstr "https://wpdesk.net/sk/flexible-subscriptions-stock-management-docs-en"
+
+#: src/HookProviders/Admin/PluginLinks.php:31
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:184
+msgid "Docs"
+msgstr "Dokumentáció"
+
+#: src/HookProviders/Admin/PluginLinks.php:32
+msgid ""
+"https://wpdesk.net/sk/flexible-subscriptions-stock-management-support-en/"
+msgstr "https://wpdesk.net/sk/flexible-subscriptions-stock-management-support-en/"
+
+#: src/HookProviders/Admin/PluginLinks.php:32
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:181
+msgid "Support"
+msgstr "Támogatás"
+
+#: src/HookProviders/Settings/StockSettingsTabs.php:23
+msgid "Stock Rules"
+msgstr "Készletszabályok"
+
+#: src/HookProviders/Subscriptions/RenewalInterceptor.php:37
+msgid ""
+"Subscription coudn't be renewed because of insufficient stock of products."
+msgstr "Az előfizetést nem lehetett megújítani, mert a termékek készlete nem volt elegendő."
+
+#: src/Settings/Tab/StockManagementTab.php:30
+msgid "Suspend subscriptions based on product stock"
+msgstr "Előfizetések felfüggesztése a termékkészlet alapján"
+
+#: src/Settings/Tab/StockManagementTab.php:31
+msgid "Suspend subscriptions when product stock is equal or below threshold."
+msgstr "Előfizetések felfüggesztése, ha a termékkészlet eléri vagy a küszöbérték alá csökken."
+
+#: src/Settings/Tab/StockManagementTab.php:36
+msgid "Low stock threshold"
+msgstr "Alacsony készletküszöb"
+
+#: src/Settings/Tab/StockManagementTab.php:37
+msgid "Enter the number of product stock after which the renewal will fail"
+msgstr "Add meg azt a készletmennyiséget, amely alatt a megújítás sikertelen lesz."
+
+#: src/Settings/Tab/StockManagementTab.php:41
+msgid "Email customer"
+msgstr "E-mail küldése a vásárlónak"
+
+#: src/Settings/Tab/StockManagementTab.php:42
+msgid ""
+"Send email to customer when their subscription has been suspended due to low"
+" stock."
+msgstr "Küldj e-mailt a vásárlónak, ha az előfizetését alacsony készlet miatt felfüggesztették."
+
+#: src/Settings/Tab/StockManagementTab.php:46
+msgid "Email admin"
+msgstr "E-mail az adminnak"
+
+#: src/Settings/Tab/StockManagementTab.php:47
+msgid ""
+"Send email to admin when a subscription has been suspended due to low stock."
+msgstr "Küldj e-mailt az adminnak, ha egy előfizetést alacsony készlet miatt felfüggesztettek."
+
+#: src/Settings/Tab/StockManagementTab.php:52
+msgid "Subscriptions stock settings"
+msgstr "Előfizetések készletbeállításai"
+
+#. translators: %1$s %2$s HTML <a> tag
+#: src/Settings/Tab/StockManagementTab.php:56
+#, php-format
+msgid ""
+"Enable an automated process to suspend subscriptions when a product's stock "
+"reaches the specified threshold. You can also enable or disable email "
+"notifications for both the customer and the admin when this occurs. "
+"%1$sLearn more about how the plugin works from the documentation →%2$s"
+msgstr "Kapcsold be az előfizetések automatikus felfüggesztését, amikor egy termék készlete eléri a megadott küszöbértéket. A vásárlóknak és az adminnak küldött e-mail értesítéseket is be- vagy kikapcsolhatod. %1$sA bővítmény működéséről a dokumentációban tudhatsz meg többet →%2$s"
+
+#. translators: %1$s url for plugin's support
+#: src/Settings/Tab/StockManagementTab.php:58
+msgid "https://wpdesk.net/sk/flexible-subscriptions-stock-management-stock-en"
+msgstr "https://wpdesk.net/sk/flexible-subscriptions-stock-management-stock-en"
+
+#: templates/emails/admin-renewal-cancelled-html.php:20
+msgid ""
+"Products which were necessary to continue subscription, are currently out of"
+" stock or not available in the required quantity."
+msgstr "Az előfizetés folytatásához szükséges termékek jelenleg elfogytak, vagy nem érhetők el a szükséges mennyiségben."
+
+#: templates/emails/admin-renewal-cancelled-html.php:24
+msgid "Product"
+msgstr "Termék"
+
+#: templates/emails/admin-renewal-cancelled-html.php:25
+msgid "In stock"
+msgstr "Raktáron"
+
+#: templates/emails/admin-renewal-cancelled-html.php:36
+msgid ""
+"Please pay attention to this product's availability to avoid similar issues "
+"in the future."
+msgstr "Figyelj oda ennek a terméknek az elérhetőségére, hogy a jövőben elkerüld a hasonló problémákat."
+
+#: templates/emails/customer-renewal-cancelled-html.php:44
+msgid ""
+"Some of the products which were necessary to continue your subscription, are"
+" currently out of stock or not available in the required quantity."
+msgstr "Az előfizetésed folytatásához szükséges termékek közül néhány jelenleg elfogyott, vagy nem érhető el a szükséges mennyiségben."
+
+#: templates/emails/customer-renewal-cancelled-html.php:45
+msgid ""
+"As a result, your subscription has been paused until the product is "
+"available again."
+msgstr "Ennek eredményeként az előfizetésed szünetel, amíg a termék újra elérhetővé nem válik."
+
+#: templates/emails/customer-renewal-cancelled-html.php:46
+msgid ""
+"Products which are currently out of stock or not available in the required "
+"quantity:"
+msgstr "A termékek jelenleg elfogytak, vagy nem érhetők el a szükséges mennyiségben:"
+
+#: templates/emails/customer-renewal-cancelled-html.php:52
+msgid ""
+"Please be patient and keep an eye on the product's availability on our "
+"website."
+msgstr "Légy türelmes, és figyeld a termék elérhetőségét a honlapunkon."
+
+#: templates/emails/customer-renewal-cancelled-html.php:53
+msgid "Thank you for your understanding."
+msgstr "Köszönjük a megértésedet."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:206
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on PHP versions older than %s. Please"
+" contact your host and ask them to upgrade."
+msgstr "A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi PHP-verzióval. Kérd meg a tárhelyszolgáltatódat a frissítésre."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:209
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WordPress versions older than %s. "
+"Please update WordPress."
+msgstr "A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi WordPress-verzióval. Frissítsd a WordPress-t."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:212
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WooCommerce versions older than "
+"%s. Please update WooCommerce."
+msgstr "A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi WooCommerce-verzióval. Frissítsd a WooCommerce-t."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:215
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without OpenSSL module version at "
+"least %s. Please update OpenSSL module."
+msgstr "A(z) &#8222;%s&#8221; bővítmény futtatásához legalább %s verziójú OpenSSL-modul szükséges. Frissítsd az OpenSSL-modult."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:310
+#, php-format
+msgid ""
+"The &#8220;%1$s&#8221; plugin requires at least %2$s version of %3$s to work"
+" correctly. Please update it to its latest release."
+msgstr "A(z) &#8222;%1$s&#8221; bővítmény megfelelő működéséhez legalább a(z) %3$s %2$s verziója szükséges. Frissítsd a legújabb verzióra."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:416
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s active. Please install and"
+" activate %s plugin."
+msgstr "A(z) &#8222;%s&#8221; bővítmény futtatásához aktív %s szükséges. Telepítsd és kapcsold be a(z) %s bővítményt."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:468
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin requires free %s plugin. <a href=\"%s\">Install "
+"%s</a>"
+msgstr "A(z) &#8222;%s&#8221; bővítményhez az ingyenes %s bővítmény szükséges. <a href=\"%s\">A(z) %s telepítése</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:474
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin requires activating %s plugin. <a "
+"href=\"%s\">Activate %s</a>"
+msgstr "A(z) &#8222;%s&#8221; bővítményhez be kell kapcsolnod a(z) %s bővítményt. <a href=\"%s\">A(z) %s bekapcsolása</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:516
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP module installed. "
+"Please contact your host and ask them to install %s."
+msgstr ""
+"A(z) &#8220;%s&#8221; bővítmény futtatásához telepíteni kell a(z) %s PHP-"
+"modult. Kérd meg a tárhelyszolgáltatódat a(z) %s telepítésére."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:541
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP setting set to %s. "
+"Please contact your host and ask them to set %s."
+msgstr "A(z) &#8220;%s&#8221; bővítmény futtatásához a(z) %s PHP-beállítás értéke legyen %s. Kérd meg a tárhelyszolgáltatódat, hogy állítsa be a(z) %s értékét."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker_With_Update_Disable.php:29
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin is temporarily disabled since the required %s "
+"plugin is being upgraded."
+msgstr ""
+"A(z) &#8220;%s&#8221; bővítmény átmenetileg ki van kapcsolva, mert a "
+"szükséges %s bővítmény frissítése folyamatban van."
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Disabled"
+msgstr "Letiltva"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Emergency"
+msgstr "Vészhelyzet"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Alert"
+msgstr "Riasztás"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Critical"
+msgstr "Kritikus"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Error"
+msgstr "Hiba"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Warning"
+msgstr "Figyelem"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Notice"
+msgstr "Értesítés"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Info"
+msgstr "Információ"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Debug"
+msgstr "Hibakeresés"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:23
+#, php-format
+msgid ""
+"Can not enable WP Desk Debug log! Cannot create directory %s or this "
+"directory is not writeable!"
+msgstr ""
+"Nem sikerült bekapcsolni a WP Desk hibakeresési naplóját! Nem lehet "
+"létrehozni a(z) %s könyvtárat, vagy a könyvtár nem írható!"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:36
+#, php-format
+msgid "Can not enable WP Desk Debug log! Cannot create file %s!"
+msgstr ""
+"Nem sikerült bekapcsolni a WP Desk hibakeresési naplóját! Nem lehet "
+"létrehozni a(z) %s fájlt!"
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/NoticeReminder.php:53
+#, php-format
+msgid ""
+"You're using an outdated version of the following plugin: %s This may cause "
+"serious compatibility issues with WooCommerce. Update it immediately to "
+"avoid potential disruptions."
+msgid_plural ""
+"You're using outdated versions of the following plugins: %s This may cause "
+"serious compatibility issues with WooCommerce. Update them immediately to "
+"avoid potential disruptions."
+msgstr[0] "A következő bővítmény elavult verzióját használod: %s. Ez komoly kompatibilitási problémákat okozhat a WooCommerce-szel. A lehetséges fennakadások elkerülése érdekében azonnal frissítsd."
+msgstr[1] "A következő bővítmények elavult verzióit használod: %s. Ezek komoly kompatibilitási problémákat okozhatnak a WooCommerce-szel. A lehetséges fennakadások elkerülése érdekében azonnal frissítsd őket."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/NoticeReminder.php:60
+#, php-format
+msgid ""
+"You're using an older version of the following plugin: %s This version "
+"hasn't been tested with the latest WooCommerce versions. Please update it to"
+" the latest version to ensure smooth compatibility."
+msgid_plural ""
+"You're using older versions of the following plugins: %s These versions "
+"haven't been tested with the latest WooCommerce versions. Please update them"
+" to the latest version to ensure smooth compatibility."
+msgstr[0] "A következő bővítmény régebbi verzióját használod: %s. Ezt a verziót nem tesztelték a WooCommerce legújabb verzióival. A zökkenőmentes kompatibilitás érdekében frissítsd a legújabb verzióra."
+msgstr[1] "A következő bővítmények régebbi verzióit használod: %s. Ezeket a verziókat nem tesztelték a WooCommerce legújabb verzióival. A zökkenőmentes kompatibilitás érdekében frissítsd őket a legújabb verzióra."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/ReminderData.php:71
+#, php-format
+msgid ""
+"You're using an outdated version of %1$s plugin, which may cause serious "
+"compatibility issues with WooCommerce. %2$sUpdate immediately%3$s to avoid "
+"potential disruptions."
+msgstr ""
+"A(z) %1$s bővítmény elavult verzióját használod, ami súlyos kompatibilitási "
+"problémákat okozhat a WooCommerce-szel. A lehetséges fennakadások elkerülése"
+" érdekében %2$sfrissítsd azonnal%3$s."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/ReminderData.php:75
+#, php-format
+msgid ""
+"You're using an older version of %1$s plugin that hasn't been tested with "
+"the latest WooCommerce versions. Please %2$supdate to the latest version%3$s"
+" to ensure smooth compatibility."
+msgstr ""
+"A(z) %1$s bővítmény régebbi verzióját használod, amelyet nem teszteltek a "
+"WooCommerce legújabb verzióival. A zökkenőmentes kompatibilitás érdekében "
+"%2$sfrissíts a legújabb verzióra%3$s."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/SiteHealthReminder.php:39
+msgid "You should update plugin"
+msgstr "A bővítmény frissítése ajánlott"
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/SiteHealthReminder.php:39
+msgid "Compatibility"
+msgstr "Kompatibilitás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginExternalBlocking.php:32
+#, php-format
+msgid ""
+"<b>Warning!</b> You're blocking external requests which means you won't be "
+"able to get %1$s updates. Please add %2$s to %3$s."
+msgstr ""
+"<b>figyelem!</b> Külső kéréseket tiltasz le, ezért nem fogsz tudni "
+"%1$s-frissítéseket kapni. Add hozzá a %2$s értéket a %3$s-hoz."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:81
+#, php-format
+msgid ""
+"Error while connecting to remote server %s. Please contact your hosting "
+"provider or try again later. Errors:  "
+msgstr ""
+"Hiba történt a(z) %s távoli szerverhez való csatlakozáskor. Lépj kapcsolatba"
+" a tárhelyszolgáltatóddal, vagy próbáld újra később. Hibák:  "
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:152
+msgid "License server is currently unavailable. Please, try again later."
+msgstr "A licencszerver jelenleg nem érhető el. Próbáld újra később."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:154
+#, php-format
+msgid ""
+"Error while connecting to remote server %1$s. Please contact with your "
+"hosting provider. Cannot parse response. Response code: %2$s Message: %3$s"
+msgstr ""
+"Hiba történt a távoli %1$s szerverhez való csatlakozáskor. Vedd fel a "
+"kapcsolatot a tárhelyszolgáltatóddal. Nem sikerült értelmezni a választ. "
+"Válaszkód: %2$s üzenet: %3$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:157
+#, php-format
+msgid ""
+"Error while connecting to remote server %1$s. Please contact with your "
+"hosting provider. Cannot parse response: %2$s"
+msgstr ""
+"Hiba történt a(z) %1$s távoli szerverhez való csatlakozáskor. Lépj "
+"kapcsolatba a tárhelyszolgáltatóddal. A válasz nem dolgozható fel: %2$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/templates/impossible-to-upgrade.php:12
+#, php-format
+msgid ""
+"This version of %1$s plugin cannot be automatically upgraded. Download the "
+"plugin from %2$syour account%3$s to receive automatic updates in future."
+msgstr ""
+"A(z) %1$s bővítmény ezen verziója nem frissíthető automatikusan. A jövőbeli "
+"automatikus frissítésekhez töltsd le a bővítményt a %2$sfiókodból%3$s."

@@ -1,0 +1,1438 @@
+# Copyright (C) 2026 WP Desk
+# This file is distributed under the same license as the Flexible Refund Order for WooCommerce Pro plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Flexible Refund Order for WooCommerce Pro 1.3.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flexible-refunds-pro\n"
+"POT-Creation-Date: 2026-04-23T10:12:17+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: flexible-refunds-pro\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: Flexible Refund Order for WooCommerce Pro\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 1.3.3\n"
+
+#. Plugin Name of the plugin
+#: flexible-refunds-pro.php
+msgid "Flexible Refund Order for WooCommerce Pro"
+msgstr "Flexible Refund Order for WooCommerce Pro"
+
+#. Plugin URI of the plugin
+#: flexible-refunds-pro.php
+msgid "https://wpdesk.net/sk/flexible-refunds-pro-plugin"
+msgstr "https://wpdesk.net/sk/flexible-refunds-pro-plugin"
+
+#. Description of the plugin
+#: flexible-refunds-pro.php
+msgid ""
+"The plugin to handle the refund form on My Account and automates the refund "
+"process for the WooCommerce store support."
+msgstr "A bővítmény kezeli a Saját fiók oldalon található visszatérítési űrlapot, és automatizálja a WooCommerce-áruház visszatérítési folyamatát a támogatási csapat számára."
+
+#. Author of the plugin
+#: flexible-refunds-pro.php
+msgid "WP Desk"
+msgstr "WP Desk"
+
+#. Author URI of the plugin
+#: flexible-refunds-pro.php
+msgid "https://www.wpdesk.net/sk/flexible-refunds-pro-author"
+msgstr "https://www.wpdesk.net/sk/flexible-refunds-pro-author"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/AbstractRefundEmail.php:110
+msgid "If you want to learn more about the returns process, please refer to "
+msgstr "Ha további tudnivalókat szeretnél a visszaküldési folyamatról, olvasd el a következőt: "
+
+#. Translators: %s placeholders.
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/AbstractRefundEmail.php:123
+#, php-format
+msgid "Available placeholders: %s"
+msgstr "Elérhető helyőrzők: %s"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundApproved.php:11
+msgid "[Flexible Refund] Refund Request Approved"
+msgstr "[Flexible Refund] A visszatérítési kérelem jóváhagyva"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundApproved.php:12
+msgid ""
+"Order cancellation request approved email is sent to customer when "
+"cancellation request is approved by store manager."
+msgstr "A rendelés lemondási kérelmének jóváhagyásáról szóló e-mailt akkor küldjük el a vásárlónak, amikor az áruház kezelője jóváhagyja a kérelmet."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundApproved.php:17
+msgid ""
+"[{shop_title}] Refund request for order number #{order_number} is approved"
+msgstr "[{shop_title}] A(z) #{order_number} rendelés visszatérítési kérelmét jóváhagytuk"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundApproved.php:21
+msgid "The order refund request has been approved!"
+msgstr "Jóváhagytuk a rendelés visszatérítési kérelmét!"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundApproved.php:25
+msgid ""
+"Hi {customer_name},\n"
+"\n"
+"Your refund request has been accepted! Your refund payment has been processed automatically by {order_payment_method}.\n"
+"\n"
+"Let us know how you liked our service and rate us on Google Map or Trustpilot.Note from store team: {refund_note}. \n"
+"\n"
+"Sincerely,\n"
+"Store Team"
+msgstr "Szia, {customer_name}!\n\nElfogadtuk a visszatérítési kérelmedet! A visszatérítés összegét automatikusan feldolgoztuk a(z) {order_payment_method} fizetési móddal.\n\nÍrd meg, hogyan tetszett a szolgáltatásunk, és értékelj minket a Google Térképen vagy a Trustpiloton. Megjegyzés az áruház csapatától: {refund_note}. \n\nÜdvözlettel,\nAz áruház csapata"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRefused.php:11
+msgid "[Flexible Refund] Refund Request Refused"
+msgstr "[Flexible Refund] A visszatérítési kérelmet elutasítottuk"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRefused.php:12
+msgid ""
+"Order cancellation request declined email is sent to customer when "
+"cancellation request is declined by store manager."
+msgstr "A rendelés lemondási kérelmének elutasításáról szóló e-mailt akkor küldjük el a vásárlónak, amikor az áruház kezelője elutasítja a kérelmet."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRefused.php:17
+msgid ""
+"[{shop_title}] Refund request for order number #{order_number} is refused"
+msgstr "[{shop_title}] A(z) #{order_number} rendelés visszatérítési kérelmét elutasítottuk"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRefused.php:21
+msgid "The order refund request has been refused!"
+msgstr "Elutasítottuk a rendelés visszatérítési kérelmét!"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRefused.php:25
+msgid ""
+"Hi {customer_name},\n"
+"\n"
+"Unfortunately, we could not agree to a refund. Below you will find information about the reason for the refund:\n"
+"\n"
+"{refund_note}\n"
+"\n"
+"If you do not agree with our feedback, please email us at support@store.com and include the order ID you are writing about.{refund_info_page}\n"
+"\n"
+"Sincerely,\n"
+"Store Team"
+msgstr "Szia, {customer_name}!\n\nSajnos nem tudjuk jóváhagyni a visszatérítést. Alább megtalálod a visszatérítés okát:\n\n{refund_note}\n\nHa nem értesz egyet a visszajelzésünkkel, írj nekünk a support@store.com címre, és tüntesd fel az érintett rendelés ID-ját.{refund_info_page}\n\nÜdvözlettel,\nAz áruház csapata"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRequested.php:11
+msgid "[Flexible Refund] Refund Request Requested"
+msgstr "[Flexible Refund] A visszatérítési kérelem beküldve"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRequested.php:12
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundShipment.php:13
+msgid ""
+"Order cancellation request emails are sent to chosen recipient(s) when a new"
+" cancellation request is received."
+msgstr "Az új lemondási kérelemről szóló e-maileket a kiválasztott címzetteknek küldjük el."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRequested.php:17
+msgid "[{shop_title}] New refund request for order number #{order_number}"
+msgstr "[{shop_title}] Új visszatérítési kérelem a(z) #{order_number} rendeléshez"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRequested.php:21
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundShipment.php:22
+msgid "The order refund request has been requested!"
+msgstr "Beküldték a rendelés visszatérítési kérelmét!"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRequested.php:25
+msgid ""
+"Hi {customer_name},\n"
+"\n"
+"Thank you for your return request! We will review it and let you know in the next email if a refund will be granted. <a href='{refund_url}' target='_blank'>Click here to cancel your refund</a>.\n"
+"\n"
+"Below you will find a table with the products you requested to refund.\n"
+"\n"
+"{refund_order_table}\n"
+"\n"
+"{refund_info_page}\n"
+"\n"
+"Sincerely,\n"
+"Store Team"
+msgstr "Szia, {customer_name}!\n\nKöszönjük a visszaküldési kérelmedet! Átnézzük, és a következő e-mailben értesítünk, hogy jóváhagytuk-e a visszatérítést. <a href='{refund_url}' target='_blank'>Kattints ide a visszatérítési kérelem visszavonásához</a>.\n\nAlább megtalálod a visszatérítésre kért termékek listáját.\n\n{refund_order_table}\n\n{refund_info_page}\n\nÜdvözlettel,\nAz áruház csapata"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRequestedAdmin.php:14
+msgid "[Flexible Refund] New Refund Request"
+msgstr "[Flexible Refund] Új visszatérítési kérelem"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRequestedAdmin.php:15
+msgid "New refund request"
+msgstr "Új visszatérítési kérelem"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRequestedAdmin.php:26
+msgid "Recipient(s)"
+msgstr "Címzett(ek)"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRequestedAdmin.php:26
+msgid "Enter recipient(s). Defaults to administrator email address."
+msgstr "Add meg a címzetteket. Alapértelmezés szerint az adminisztrátor e-mail címe a címzett."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRequestedAdmin.php:26
+#, php-format
+msgid ""
+"Edit the recipient’s email, or add a new address with the PRO version of the"
+" plugin. %1$sUpgrade to PRO &rarr;%2$s"
+msgstr "A címzett e-mail címét a bővítmény PRO verziójával szerkesztheted, vagy új címet adhatsz hozzá. %1$sVáltás a PRO verzióra &rarr;%2$s"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRequestedAdmin.php:31
+msgid "[{shop_title}] New refund request #{order_number}"
+msgstr "[{shop_title}] Új visszatérítési kérelem a(z) #{order_number} rendeléshez"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRequestedAdmin.php:35
+msgid "The new order refund request has been requested!"
+msgstr "Beérkezett az új rendelés-visszatérítési kérelem!"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundRequestedAdmin.php:39
+msgid ""
+"Hi Admin,\n"
+"\n"
+"A new refund request for the order {order_number} appeared in {shop_url}\n"
+"\n"
+"<a href=\"{admin_order_url}\" target=\"_blank\">Click here to go to the order.</a>\n"
+"<a href=\"{admin_refunds_url}\" target=\"_blank\">Or click here to go to refund requests list.</a>"
+msgstr "Szia, admin!\n\nÚj visszatérítési kérelem érkezett a(z) {order_number} rendeléshez a(z) {shop_url} áruházban.\n\n<a href=\"{admin_order_url}\" target=\"_blank\">Kattints ide a rendelés megnyitásához.</a>\n<a href=\"{admin_refunds_url}\" target=\"_blank\">VAGY kattints ide a visszatérítési kérelmek listájának megnyitásához.</a>"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundShipment.php:12
+msgid "[Flexible Refund] Refund Request Shipping"
+msgstr "[Flexible Refund] visszatérítési kérelem: szállítás"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundShipment.php:18
+msgid ""
+"[{shop_title}] Refund request for order number #{order_number} is changed to"
+" shipping"
+msgstr "[{shop_title}] A(z) #{order_number} rendelés visszatérítési kérelmének állapota szállításra változott"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundShipment.php:26
+msgid ""
+"Hi {customer_name},\n"
+"\n"
+"I wanted to let you know that we have accepted your return and are waiting for a package from you. Please send it to the following address: {shop_address}\n"
+"\n"
+"The money for the order will be refunded as soon as the package arrives.\n"
+"\n"
+"Optional administrator note: {refund_note}\n"
+"\n"
+"If you have changed your mind and wish to withdraw the return - please email us at {shop_email}\n"
+"\n"
+"Sincerely,\n"
+"Store Team"
+msgstr "Szia {customer_name},\n\nSzeretnélek tájékoztatni, hogy elfogadtuk a visszaküldési kérelmedet, és várjuk a csomagodat. Küldd el a következő címre: {shop_address}\n\nA rendelés árát visszatérítjük, amint megérkezik a csomag.\n\nOpcionális adminisztrátori megjegyzés: {refund_note}\n\nHa meggondoltad magad, és vissza szeretnéd vonni a visszaküldést, írj nekünk erre az e-mail címre: {shop_email}\n\nÜdvözlettel,\nAz üzlet csapata"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundVerifying.php:11
+msgid "[Flexible Refund] E-mail for shipment status"
+msgstr "[Flexible Refund] E-mail a szállítási állapotról"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundVerifying.php:12
+msgid "E-mail about waiting for customer to send shipment"
+msgstr "E-mail a vászárlótól várt csomagról"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundVerifying.php:17
+msgid ""
+"[{shop_title}] Refund request for order number #{order_number} is verified"
+msgstr "[{shop_title}] A(z) #{order_number} rendelés visszatérítési kérelmét ellenőriztük"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundVerifying.php:21
+msgid "The order refund request is verifying"
+msgstr "A rendelés visszatérítési kérelmének ellenőrzése folyamatban van"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Emails/EmailRefundVerifying.php:25
+msgid ""
+"Hi {customer_name},\n"
+"\n"
+"I wanted to let you know that your refund request is currently being reviewed.\n"
+"We have 7 days to do so and will let you know if a refund has been granted.\n"
+"\n"
+"{refund_info_page}\n"
+"\n"
+"Note from store team: {refund_note}\n"
+"\n"
+"<a href='{refund_url}' target='_blank'>Click here if you wish to cancel your refund</a>.\n"
+"\n"
+"Sincerely,\n"
+"Store Team"
+msgstr "Szia {customer_name},\n\nSzeretnélek tájékoztatni, hogy a visszatérítési kérelmedet jelenleg elbíráljuk.\n7 napunk van erre, és értesítünk, ha jóváhagytuk a visszatérítést.\n\n{refund_info_page}\n\nAz üzlet csapatának megjegyzése: {refund_note}\n\n<a href='{refund_url}' target='_blank'>Kattints ide, ha vissza szeretnéd vonni a visszatérítést</a>.\n\nÜdvözlettel,\nAz üzlet csapata"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Helpers/FormBuilder.php:22
+msgid "Text"
+msgstr "Szöveg"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Helpers/FormBuilder.php:22
+msgid "Textarea"
+msgstr "Szövegmező"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Helpers/FormBuilder.php:22
+msgid "Checkbox"
+msgstr "Jelölőnégyzet"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Helpers/FormBuilder.php:22
+msgid "Radio"
+msgstr "Választógomb"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Helpers/FormBuilder.php:22
+msgid "Select"
+msgstr "Kiválasztás"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Helpers/FormBuilder.php:22
+msgid "Multi Select"
+msgstr "Többszörös kijelölés"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Helpers/FormBuilder.php:22
+msgid "Upload"
+msgstr "Feltöltés"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Helpers/FormBuilder.php:22
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:55
+msgid "HTML"
+msgstr "HTML"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Helpers/Statuses.php:14
+msgid "Requested"
+msgstr "Igényelve"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Helpers/Statuses.php:14
+msgid "Approved"
+msgstr "Jóváhagyva"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Helpers/Statuses.php:14
+msgid "Shipment"
+msgstr "Szállítás"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Helpers/Statuses.php:14
+msgid "Verifying"
+msgstr "Ellenőrzés"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Helpers/Statuses.php:14
+msgid "Refused"
+msgstr "Elutasítva"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/AdminMenu.php:17
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/AdminMenu.php:18
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/AdminMenu.php:38
+msgctxt "Admin menu name"
+msgid "Refund Request"
+msgstr "Visszatérítési kérelem"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Ajax.php:65
+msgid "You are not allowed to create refund!"
+msgstr "Nem hozhatsz létre visszatérítést!"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Ajax.php:73
+msgid "Order missing!"
+msgstr "A rendelés nem található!"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Assets.php:53
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:43
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:99
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder.php:78
+msgid "Label"
+msgstr "Címke"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Assets.php:53
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:111
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder.php:89
+msgid "Name"
+msgstr "Név"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Assets.php:53
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:32
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:42
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:76
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:132
+msgid "Enable"
+msgstr "Bekapcsolás"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Assets.php:53
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:143
+msgid "Required"
+msgstr "Kötelező"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Assets.php:53
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:152
+msgid "Options"
+msgstr "Beállítások"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Assets.php:53
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:166
+msgid "Value"
+msgstr "Érték"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Assets.php:53
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Assets.php:53
+msgid "Remove item?"
+msgstr "Eltávolítod a tételt?"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Assets.php:53
+msgid "Remove condition?"
+msgstr "Eltávolítod a feltételt?"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Assets.php:53
+msgid "Select a field type from the list!"
+msgstr "Válassz mezőtípust a listából!"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Assets.php:53
+msgid "Fill the Label field!"
+msgstr "Töltsd ki a címke mezőt!"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Assets.php:53
+msgid "Fill the Name field!"
+msgstr "Töltsd ki a név mezőt!"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Assets.php:81
+msgid "Select the amount of products to refund!"
+msgstr "Válaszd ki a visszatérítendő termékek mennyiségét!"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Assets.php:81
+msgid "This field is required!"
+msgstr "Ez a mező kötelező!"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/Assets.php:81
+msgid "You have exceeded the file limit. Upload files again"
+msgstr "Túllépted a fájllimitet. Töltsd fel újra a fájlokat"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/MyAccount.php:71
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:93
+msgid "Refund"
+msgstr "Visszatérítés"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/MyAccount.php:107
+msgid "This order cannot be cancelled."
+msgstr "Ezt a rendelést nem lehet lemondani."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/MyAccount.php:110
+msgid "Order cancelled by customer via My Account."
+msgstr "A vásárló lemondta a rendelést a Fiókom oldalon keresztül."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/MyAccount.php:111
+msgid "Order has been cancelled."
+msgstr "A rendelést lemondták."
+
+#. translators: %s: order number.
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/MyAccount.php:139
+#, php-format
+msgid "Order Refund #%s"
+msgstr "Rendelés-visszatérítés #%s"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/MyAccount.php:330
+msgid "Your refund request has been accepted!"
+msgstr "Elfogadtuk a visszatérítési kérelmedet!"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/OrderMetaBox.php:37
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/RegisterOrderStatus.php:22
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/RegisterOrderStatus.php:31
+msgid "Refund Request"
+msgstr "Visszatérítési kérelem"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/PublicRefundShortcode.php:37
+msgid "Form has expired. Please try again."
+msgstr "Az űrlap lejárt. Próbáld újra."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Integration/RegisterOrderStatus.php:22
+#, php-format
+msgid "Refund Request <span class=\"count\">(%s)</span>"
+msgid_plural "Refund Request <span class=\"count\">(%s)</span>"
+msgstr[0] "Visszatérítési kérelem <span class=\"count\">(%s)</span>"
+msgstr[1] "Visszatérítési kérelmek <span class=\"count\">(%s)</span>"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Requests/AbstractRequest.php:39
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Requests/Approved.php:44
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Requests/Refused.php:21
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-free.php:25
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-free.php:26
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-pro.php:26
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-pro.php:25
+#, php-format
+msgid "Refund status: %s"
+msgstr "Visszatérítés állapota: %s"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Requests/RequestsFactory.php:35
+#, php-format
+msgid "Unknown request status: %s"
+msgstr "Ismeretlen kérelemállapot: %s"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/SettingsIntegration.php:26
+msgid "Flexible Refund"
+msgstr "Flexible Refund"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/SettingsIntegration.php:44
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:32
+msgid "Order Refund"
+msgstr "Rendelés-visszatérítés"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/SettingsIntegration.php:44
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/FormBuilderTab.php:25
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/refund-meta-box.php:22
+msgid "Refund Form"
+msgstr "Visszatérítési űrlap"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/SettingsIntegration.php:44
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/SupportTab.php:55
+msgid "Start Here"
+msgstr "Kezdés"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/FormBuilderTab.php:25
+#, php-format
+msgid ""
+"Customize the refund form. Read more in the %1$splugin documentation "
+"&rarr;%2$s"
+msgstr "Szabd testre a visszatérítési űrlapot. Bővebben a %1$sbővítmény dokumentációjában &rarr;%2$s"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/FormBuilderTab.php:48
+msgid "Form"
+msgstr "Űrlap"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:28
+msgid "On coupon"
+msgstr "Kupon formájában"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:28
+msgid "On coupon (PRO)"
+msgstr "Kupon formájában (PRO)"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:32
+#, php-format
+msgid ""
+"Define the settings for the refund button and the approval process. Read "
+"more in the %1$splugin documentation &rarr;%2$s"
+msgstr "Add meg a visszatérítési gomb és a jóváhagyási folyamat beállításait. Bővebben a %1$sbővítmény dokumentációjában &rarr;%2$s"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:32
+msgid "Refund order button"
+msgstr "Rendelés-visszatérítési gomb"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:32
+msgid "Check this option to enable refund process button."
+msgstr "Jelöld be ezt a lehetőséget a visszatérítési folyamat indítására szolgáló gomb bekapcsolásához."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:33
+msgid "Refund type"
+msgstr "Visszatérítés típusa"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:38
+msgid "On bank account / On cash"
+msgstr "Bankszámlára / készpénzben"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:42
+msgid "Auto refund"
+msgstr "Automatikus visszatérítés"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:42
+msgid "Check this option to automatically accept order refund requests."
+msgstr "Jelöld be ezt a lehetőséget a rendelés-visszatérítési kérelmek automatikus elfogadásához."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:42
+#, php-format
+msgid ""
+"Check this option to automatically accept order refund requests.%1$sUpgrade "
+"to PRO &rarr;%2$s"
+msgstr "Jelöld be ezt a lehetőséget a rendelés-visszatérítési kérelmek automatikus elfogadásához.%1$sFrissíts PRO-ra &rarr;%2$s"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:42
+msgid "Auto hide refund button"
+msgstr "Visszatérítési gomb automatikus elrejtése"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:42
+msgid "Check this option to hide the refund button after a specified time."
+msgstr "Jelöld be ezt a lehetőséget a visszatérítési gomb megadott idő utáni elrejtéséhez."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:42
+#, php-format
+msgid ""
+"Check this option to hide the refund button after a specified "
+"time.%1$sUpgrade to PRO &rarr;%2$s"
+msgstr "Jelöld be ezt a lehetőséget a visszatérítési gomb megadott idő utáni elrejtéséhez.%1$sFrissíts PRO-ra &rarr;%2$s"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:42
+msgid "Allow to shipment refund"
+msgstr "Szállítási díj visszatérítésének engedélyezése"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:42
+msgid "Cancel unpaid order button"
+msgstr "Kifizetetlen rendelés lemondására szolgáló gomb"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:42
+msgid "Check this if you want to show cancel order button."
+msgstr "Jelöld be, ha meg szeretnéd jeleníteni a rendelés lemondására szolgáló gombot."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:42
+#, php-format
+msgid ""
+"Check this if you want to show cancel order button. %1$sUpgrade to PRO "
+"&rarr;%2$s"
+msgstr "Jelöld be, ha meg szeretnéd jeleníteni a rendelés lemondására szolgáló gombot. %1$sFrissíts PRO-ra &rarr;%2$s"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:42
+msgid "Return Policy"
+msgstr "Visszaküldési szabályzat"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Settings/Tabs/RefundOrderTab.php:42
+msgid ""
+"Indicate a page with a return policy, a link to it will be included in the "
+"emails"
+msgstr "Válaszd ki a visszaküldési szabályzatot tartalmazó oldalt; az erre mutató link szerepel majd az e-mailekben"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/invalid-order-or-user-id.php:8
+msgid "Invalid request"
+msgstr "Érvénytelen kérés"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/invalid-order-or-user-id.php:11
+msgid "The order could not be associated with your account."
+msgstr "A rendelést nem lehetett összekapcsolni a fiókoddal."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-free.php:48
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-free.php:69
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-pro.php:69
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-pro.php:48
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-table.php:30
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/refund-table.php:32
+msgid "Product"
+msgstr "Termék"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-free.php:51
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-free.php:72
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-pro.php:72
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-pro.php:51
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-table.php:33
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/refund-table.php:35
+msgid "Cost"
+msgstr "Költség"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-free.php:54
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-free.php:75
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-pro.php:75
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-pro.php:54
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-table.php:36
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/refund-table.php:38
+msgid "Total"
+msgstr "Összeg"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-free.php:57
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-free.php:81
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-pro.php:81
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-pro.php:57
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-table.php:39
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/refund-table.php:41
+msgid "Quantity to refund"
+msgstr "Visszatérítendő mennyiség"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-free.php:60
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-free.php:84
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-table.php:42
+msgid "Refund Total"
+msgstr "Visszatérítés összege"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-free.php:115
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-free.php:204
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-free.php:134
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-free.php:225
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-pro.php:134
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-pro.php:224
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-pro.php:128
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-pro.php:219
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/refund-table.php:120
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/refund-table.php:203
+msgid "Refunded"
+msgstr "Visszatérítve"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-free.php:185
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-free.php:206
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-pro.php:205
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-pro.php:200
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-table.php:105
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/refund-table.php:184
+#, php-format
+msgid "Shipping: %s"
+msgstr "Szállítás: %s"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-free.php:264
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-pro.php:300
+msgid "Send request"
+msgstr "Kérelem küldése"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-free.php:43
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-pro.php:43
+msgid ""
+"You can cancel the request until the administrator accepts or rejects your "
+"request"
+msgstr "A kérelmet addig vonhatod vissza, amíg az adminisztrátor el nem fogadja vagy el nem utasítja."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-free.php:46
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-pro.php:46
+msgid "Cancel Request"
+msgstr "Kérelem visszavonása"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-free.php:49
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-pro.php:49
+msgid "No, not yet!"
+msgstr "Nem, még ne!"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-free.php:54
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-pro.php:54
+msgid "Yes, cancel request!"
+msgstr "Igen, a kérelem visszavonása!"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-free.php:62
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-pro.php:62
+msgid "Order details"
+msgstr "Rendelés részletei"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-free.php:78
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-pro.php:78
+msgid "Quantity"
+msgstr "Mennyiség"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-in-progress-pro.php:84
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-pro.php:60
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/refund-table.php:44
+msgid "Requested refund Total"
+msgstr "Igényelt visszatérítés összege"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-pro.php:276
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-pro.php:284
+msgid "Check all"
+msgstr "Összes kijelölése"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-pro.php:279
+msgid "Uncheck all"
+msgstr "Összes kijelölésének megszüntetése"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/myaccount/refund-table.php:23
+msgid "Refund details"
+msgstr "Visszatérítés részletei"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/refund-meta-box.php:25
+msgid "Below you will find the content from the return form fields"
+msgstr "Alább találod a visszaküldési űrlap mezőinek tartalmát"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/refund-meta-box.php:35
+#, php-format
+msgid ""
+"The return form has not been created yet, you can do it %1$shere &rarr;%2$s"
+msgstr "A visszaküldési űrlap még nem készült el, %1$sitt hozhatod létre &rarr;%2$s"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/refund-table.php:22
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/conditions.php:19
+msgid "Products"
+msgstr "Termékek"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/refund-table.php:25
+msgid ""
+"Select your return status. Confirming the selection will send a message to "
+"the customer."
+msgstr "Válaszd ki a visszaküldés állapotát. A kijelölés megerősítésével üzenetet küldesz a vásárlónak."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/table-footer.php:21
+msgid "Refund status"
+msgstr "Visszatérítés állapota"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/table-footer.php:25
+msgid ""
+"Once the refund is verified, add a note, select a status and send the "
+"information to the customer."
+msgstr "Miután ellenőrizted a visszatérítést, adj hozzá egy megjegyzést, válassz ki egy állapotot, majd küldd el az információt a vásárlónak."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/table-footer.php:30
+#, php-format
+msgid "Current refund status: %s."
+msgstr "A visszatérítés aktuális állapota: %s."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/table-footer.php:35
+msgid "Refund note"
+msgstr "Visszatérítési megjegyzés"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/table-footer.php:42
+msgid "--- select status ---"
+msgstr "--- állapot kiválasztása ---"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/order/table-footer.php:61
+msgid "Update &rarr;"
+msgstr "Frissítés →"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/public-refund/invalid-order-id-or-email.php:9
+msgid "Order not found"
+msgstr "Rendelés nem található"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/public-refund/invalid-order-id-or-email.php:12
+msgid "No order found with associated number and email address"
+msgstr "Nem található rendelés a megadott rendelésszámmal és e-mail címmel"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/public-refund/public-refund.php:22
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/public-refund/public-refund.php:33
+msgid "Order number"
+msgstr "Rendelésszám"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/public-refund/public-refund.php:42
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/public-refund/public-refund.php:53
+msgid "Email"
+msgstr "E-mail-cím"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/public-refund/public-refund.php:63
+msgid "Send"
+msgstr "Küldés"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/auto_hide.php:13
+msgid "Hour(s)"
+msgstr "Óra"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/auto_hide.php:13
+msgid "Day(s)"
+msgstr "Nap(ok)"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/auto_hide.php:13
+msgid "Week(s)"
+msgstr "Hét(ek)"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/auto_hide.php:13
+msgid "Month(s)"
+msgstr "Hónap(ok)"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/auto_hide.php:13
+msgid "Year(s)"
+msgstr "Év(ek)"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/auto_hide.php:21
+msgid "Hide the time button after"
+msgstr "Az időpont gomb elrejtése ennyi idő után"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/auto_hide.php:56
+msgid "after placing the order."
+msgstr "a rendelés leadása után."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/conditions.php:19
+msgid "User roles"
+msgstr "Felhasználói szerepkörök"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/conditions.php:19
+msgid "Order statuses"
+msgstr "Rendelési állapotok"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/conditions.php:19
+msgid "Product categories"
+msgstr "Termékkategóriák"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/conditions.php:19
+msgid "Payment methods"
+msgstr "Fizetési módok"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/conditions.php:20
+msgid "is"
+msgstr "egyenlő"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/conditions.php:20
+msgid "is not"
+msgstr "nem egyenlő"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/conditions.php:23
+msgid "Button visibility"
+msgstr "A gomb láthatósága"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/conditions.php:33
+msgid "Add rule &rarr;"
+msgstr "Szabály hozzáadása →"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/conditions.php:51
+#, php-format
+msgid ""
+"It is available in the PRO version of the plugin. Read about the option in "
+"the %1$splugin documentation%2$s. %3$sUpgrade to PRO &rarr;%4$s"
+msgstr "A bővítmény PRO verziójában érhető el. A beállításról a %1$sbővítmény dokumentációjában%2$s olvashatsz. %3$sVáltás PRO verzióra →%4$s"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/conditions.php:70
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/conditions.php:166
+msgid "Enable if"
+msgstr "Bekapcsolás, ha"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/conditions.php:119
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/conditions.php:210
+msgid "and"
+msgstr "és"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:86
+msgid "General"
+msgstr "Általános"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:89
+msgid "Advanced"
+msgstr "Haladó"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:92
+msgid "Appearance"
+msgstr "Megjelenés"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:192
+msgid "Description"
+msgstr "Leírás"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:207
+msgid "Min length"
+msgstr "Minimális hossz"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:219
+msgid "Max length"
+msgstr "Maximális hossz"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:237
+msgid "Files Limit"
+msgstr "Fájlok maximális darabszáma"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:254
+msgid "Placeholder"
+msgstr "Helykitöltő"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder-field.php:266
+msgid "CSS class"
+msgstr "CSS-osztály"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder.php:18
+msgid "Add new field"
+msgstr "Új mező hozzáadása"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder.php:25
+msgid "Field type"
+msgstr "Mező típusa"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder.php:28
+msgid "&darr; select field type &darr;"
+msgstr "↓ mezőtípus kiválasztása ↓"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder.php:65
+msgid "This field is available in the PRO version."
+msgstr "Ez a mező a PRO verzióban érhető el."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder.php:71
+msgid "Upgrade to PRO &rarr;"
+msgstr "Váltás PRO verzióra →"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder.php:81
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder.php:92
+msgid "&darr; fill the field &darr;"
+msgstr "↓ mező kitöltése ↓"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder.php:84
+msgid "Customer Name"
+msgstr "Ügyfél neve"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder.php:99
+msgid "Add field"
+msgstr "Mező hozzáadása"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/form-builder.php:111
+msgid "Edit form"
+msgstr "Űrlap szerkesztése"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/marketing-page.php:25
+msgid "Get support"
+msgstr "Támogatás kérése"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/marketing-page.php:33
+msgid "Before sending a message please:"
+msgstr "Üzenet küldése előtt:"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/marketing-page.php:37
+msgid ""
+"Prepare the information about the version of WordPress, WooCommerce, and "
+"Flexible Refund (preferably your system status from WooCommerce->Status)"
+msgstr "Készítsd elő a WordPress, a WooCommerce és a Flexible Refund verziójára vonatkozó információkat (lehetőleg a WooCommerce->állapot résznél található rendszerállapotot)"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/marketing-page.php:40
+msgid "Describe the issue you have"
+msgstr "Írd le a problémát"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/marketing-page.php:43
+msgid "Attach any log files & printscreens of the issue"
+msgstr "Csatolj naplófájlokat és képernyőképeket a problémáról"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/marketing-page.php:50
+msgid "Ok, take me to support"
+msgstr "OK, irány a támogatás"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/marketing-page.php:53
+msgid "No, I'll wait"
+msgstr "Nem, várok"
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/post-select.php:42
+msgid "Search for a page..."
+msgstr "Keress egy oldalt..."
+
+#: vendor_prefixed/wpdesk/flexible-refunds-core/src/Views/settings/rate-box-footer.php:21
+#, php-format
+msgid ""
+"Created with %1$s by Heroes from %2$sWP Desk%3$s - if you like Flexible "
+"Refund rate us &rarr;"
+msgstr "A %2$sWP Desk%3$s hősei %1$s használatával készítették – ha tetszik a Flexible Refund, értékelj minket →"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:65
+msgid "Grow your business with WP Desk"
+msgstr "Növeld vállalkozásod a WP Desk segítségével"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:291
+msgid "Buy now"
+msgstr "Azonnali vásárlás"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:293
+msgid "Learn more"
+msgstr "További tudnivalók"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:296
+msgid "Download"
+msgstr "Letöltés"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:307
+msgid "More info"
+msgstr "További információ"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:206
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on PHP versions older than %s. Please"
+" contact your host and ask them to upgrade."
+msgstr "A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi PHP-verzióval. Kérd meg a tárhelyszolgáltatódat a frissítésre."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:209
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WordPress versions older than %s. "
+"Please update WordPress."
+msgstr "A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi WordPress-verzióval. Frissítsd a WordPress-t."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:212
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WooCommerce versions older than "
+"%s. Please update WooCommerce."
+msgstr "A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi WooCommerce-verzióval. Frissítsd a WooCommerce-t."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:215
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without OpenSSL module version at "
+"least %s. Please update OpenSSL module."
+msgstr "A(z) &#8222;%s&#8221; bővítmény futtatásához legalább %s verziójú OpenSSL-modul szükséges. Frissítsd az OpenSSL-modult."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:310
+#, php-format
+msgid ""
+"The &#8220;%1$s&#8221; plugin requires at least %2$s version of %3$s to work"
+" correctly. Please update it to its latest release."
+msgstr "A(z) &#8222;%1$s&#8221; bővítmény megfelelő működéséhez legalább a(z) %3$s %2$s verziója szükséges. Frissítsd a legújabb verzióra."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:416
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s active. Please install and"
+" activate %s plugin."
+msgstr "A(z) &#8222;%s&#8221; bővítmény futtatásához aktív %s szükséges. Telepítsd és kapcsold be a(z) %s bővítményt."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:468
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin requires free %s plugin. <a href=\"%s\">Install "
+"%s</a>"
+msgstr "A(z) &#8222;%s&#8221; bővítményhez az ingyenes %s bővítmény szükséges. <a href=\"%s\">A(z) %s telepítése</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:474
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin requires activating %s plugin. <a "
+"href=\"%s\">Activate %s</a>"
+msgstr "A(z) &#8222;%s&#8221; bővítményhez be kell kapcsolnod a(z) %s bővítményt. <a href=\"%s\">A(z) %s bekapcsolása</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:516
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP module installed. "
+"Please contact your host and ask them to install %s."
+msgstr ""
+"A(z) &#8220;%s&#8221; bővítmény futtatásához telepíteni kell a(z) %s PHP-"
+"modult. Kérd meg a tárhelyszolgáltatódat a(z) %s telepítésére."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:541
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP setting set to %s. "
+"Please contact your host and ask them to set %s."
+msgstr "A(z) &#8220;%s&#8221; bővítmény futtatásához a(z) %s PHP-beállítás értéke legyen %s. Kérd meg a tárhelyszolgáltatódat, hogy állítsa be a(z) %s értékét."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker_With_Update_Disable.php:29
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin is temporarily disabled since the required %s "
+"plugin is being upgraded."
+msgstr ""
+"A(z) &#8220;%s&#8221; bővítmény átmenetileg ki van kapcsolva, mert a "
+"szükséges %s bővítmény frissítése folyamatban van."
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:181
+msgid "Support"
+msgstr "Támogatás"
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:184
+msgid "Docs"
+msgstr "Dokumentáció"
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:188
+msgid "Settings"
+msgstr "Beállítások"
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/input-image.php:46
+msgid "Set image"
+msgstr "Kép beállítása"
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/input-image.php:57
+msgid "Remove image"
+msgstr "Kép eltávolítása"
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/input-image.php:82
+msgid "Select or Upload Media"
+msgstr "Média kiválasztása vagy feltöltése"
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/input-image.php:86
+msgid "Use this media"
+msgstr "Média használata"
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/product-select.php:22
+msgid "Search for a product&hellip;"
+msgstr "Termék keresése&hellip;"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Disabled"
+msgstr "Letiltva"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Emergency"
+msgstr "Vészhelyzet"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Alert"
+msgstr "Riasztás"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Critical"
+msgstr "Kritikus"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Error"
+msgstr "Hiba"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Warning"
+msgstr "Figyelem"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Notice"
+msgstr "Értesítés"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Info"
+msgstr "Információ"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Debug"
+msgstr "Hibakeresés"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:23
+#, php-format
+msgid ""
+"Can not enable WP Desk Debug log! Cannot create directory %s or this "
+"directory is not writeable!"
+msgstr ""
+"Nem sikerült bekapcsolni a WP Desk hibakeresési naplóját! Nem lehet "
+"létrehozni a(z) %s könyvtárat, vagy a könyvtár nem írható!"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:36
+#, php-format
+msgid "Can not enable WP Desk Debug log! Cannot create file %s!"
+msgstr ""
+"Nem sikerült bekapcsolni a WP Desk hibakeresési naplóját! Nem lehet "
+"létrehozni a(z) %s fájlt!"
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/NoticeReminder.php:53
+#, php-format
+msgid ""
+"You're using an outdated version of the following plugin: %s This may cause "
+"serious compatibility issues with WooCommerce. Update it immediately to "
+"avoid potential disruptions."
+msgid_plural ""
+"You're using outdated versions of the following plugins: %s This may cause "
+"serious compatibility issues with WooCommerce. Update them immediately to "
+"avoid potential disruptions."
+msgstr[0] "A következő bővítmény elavult verzióját használod: %s. Ez komoly kompatibilitási problémákat okozhat a WooCommerce-szel. A lehetséges fennakadások elkerülése érdekében azonnal frissítsd."
+msgstr[1] "A következő bővítmények elavult verzióit használod: %s. Ezek komoly kompatibilitási problémákat okozhatnak a WooCommerce-szel. A lehetséges fennakadások elkerülése érdekében azonnal frissítsd őket."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/NoticeReminder.php:60
+#, php-format
+msgid ""
+"You're using an older version of the following plugin: %s This version "
+"hasn't been tested with the latest WooCommerce versions. Please update it to"
+" the latest version to ensure smooth compatibility."
+msgid_plural ""
+"You're using older versions of the following plugins: %s These versions "
+"haven't been tested with the latest WooCommerce versions. Please update them"
+" to the latest version to ensure smooth compatibility."
+msgstr[0] "A következő bővítmény régebbi verzióját használod: %s. Ezt a verziót nem tesztelték a WooCommerce legújabb verzióival. A zökkenőmentes kompatibilitás érdekében frissítsd a legújabb verzióra."
+msgstr[1] "A következő bővítmények régebbi verzióit használod: %s. Ezeket a verziókat nem tesztelték a WooCommerce legújabb verzióival. A zökkenőmentes kompatibilitás érdekében frissítsd őket a legújabb verzióra."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/ReminderData.php:65
+#, php-format
+msgid ""
+"You're using an outdated version of %1$s plugin, which may cause serious "
+"compatibility issues with WooCommerce. %2$sUpdate immediately%3$s to avoid "
+"potential disruptions."
+msgstr ""
+"A(z) %1$s bővítmény elavult verzióját használod, ami súlyos kompatibilitási "
+"problémákat okozhat a WooCommerce-szel. A lehetséges fennakadások elkerülése"
+" érdekében %2$sfrissítsd azonnal%3$s."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/ReminderData.php:69
+#, php-format
+msgid ""
+"You're using an older version of %1$s plugin that hasn't been tested with "
+"the latest WooCommerce versions. Please %2$supdate to the latest version%3$s"
+" to ensure smooth compatibility."
+msgstr ""
+"A(z) %1$s bővítmény régebbi verzióját használod, amelyet nem teszteltek a "
+"WooCommerce legújabb verzióival. A zökkenőmentes kompatibilitás érdekében "
+"%2$sfrissíts a legújabb verzióra%3$s."
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/SiteHealthReminder.php:39
+msgid "You should update plugin"
+msgstr "A bővítmény frissítése ajánlott"
+
+#: vendor_prefixed/wpdesk/wp-plugin-update-reminder/src/SiteHealthReminder.php:39
+msgid "Compatibility"
+msgstr "Kompatibilitás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginExternalBlocking.php:32
+#, php-format
+msgid ""
+"<b>Warning!</b> You're blocking external requests which means you won't be "
+"able to get %1$s updates. Please add %2$s to %3$s."
+msgstr ""
+"<b>figyelem!</b> Külső kéréseket tiltasz le, ezért nem fogsz tudni "
+"%1$s-frissítéseket kapni. Add hozzá a %2$s értéket a %3$s-hoz."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:81
+#, php-format
+msgid ""
+"Error while connecting to remote server %s. Please contact your hosting "
+"provider or try again later. Errors:  "
+msgstr ""
+"Hiba történt a(z) %s távoli szerverhez való csatlakozáskor. Lépj kapcsolatba"
+" a tárhelyszolgáltatóddal, vagy próbáld újra később. Hibák:  "
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:152
+msgid "License server is currently unavailable. Please, try again later."
+msgstr "A licencszerver jelenleg nem érhető el. Próbáld újra később."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:154
+#, php-format
+msgid ""
+"Error while connecting to remote server %1$s. Please contact with your "
+"hosting provider. Cannot parse response. Response code: %2$s Message: %3$s"
+msgstr ""
+"Hiba történt a távoli %1$s szerverhez való csatlakozáskor. Vedd fel a "
+"kapcsolatot a tárhelyszolgáltatóddal. Nem sikerült értelmezni a választ. "
+"Válaszkód: %2$s üzenet: %3$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:157
+#, php-format
+msgid ""
+"Error while connecting to remote server %1$s. Please contact with your "
+"hosting provider. Cannot parse response: %2$s"
+msgstr ""
+"Hiba történt a(z) %1$s távoli szerverhez való csatlakozáskor. Lépj "
+"kapcsolatba a tárhelyszolgáltatóddal. A válasz nem dolgozható fel: %2$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/templates/impossible-to-upgrade.php:12
+#, php-format
+msgid ""
+"This version of %1$s plugin cannot be automatically upgraded. Download the "
+"plugin from %2$syour account%3$s to receive automatic updates in future."
+msgstr ""
+"A(z) %1$s bővítmény ezen verziója nem frissíthető automatikusan. A jövőbeli "
+"automatikus frissítésekhez töltsd le a bővítményt a %2$sfiókodból%3$s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/class-wpdesk-tracker.php:164
+msgid "Submit &amp; Deactivate"
+msgstr "Küldés és kikapcsolás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/OptOut.php:42
+#, php-format
+msgid ""
+"You successfully opted out of collecting usage data by %1$s. If you change "
+"your mind, you can always opt in later in the plugin's quick links."
+msgstr ""
+"Sikeresen leiratkoztál a használati adatok gyűjtéséről ezzel: %1$s. Ha "
+"meggondolod magad, később bármikor feliratkozhatsz a bővítmény "
+"gyorshivatkozásain keresztül."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/PluginActionLinks.php:70
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:41
+msgid "Enable usage tracking"
+msgstr "Használatkövetés bekapcsolása"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/PluginActionLinks.php:75
+msgid "Disable usage tracking"
+msgstr "Használatkövetés kikapcsolása"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:23
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:15
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:19
+#, php-format
+msgid "Hey %s,"
+msgstr "Szia %s,"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:26
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:18
+msgid ""
+"Please help us improve our plugins! If you opt-in, we will collect some non-"
+"sensitive data and usage information anonymously. If you skip this, that's "
+"okay! All plugins will work just fine."
+msgstr ""
+"Segíts nekünk jobbá tenni a bővítményeinket! Ha engedélyezed az "
+"adatgyűjtést, névtelenül gyűjtünk néhány nem érzékeny adatot és használati "
+"információt. Ha kihagyod ezt, az is rendben van! Minden bővítményünk így is "
+"megfelelően működik."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:35
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:27
+msgid "Allow & Continue &rarr;"
+msgstr "Engedélyezés és folytatás &rarr;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:40
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:32
+msgid "Skip"
+msgstr "Kihagyás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:47
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:39
+msgid "What permissions are being granted?"
+msgstr "Milyen engedélyeket adsz meg?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:56
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:48
+msgid "Your Site Overview"
+msgstr "A webhelyed áttekintése"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:59
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:51
+msgid "WP version, PHP info"
+msgstr "WP-verzió, PHP-adatok"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:67
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:59
+msgid "Plugin Usage"
+msgstr "Bővítményhasználat"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:70
+#, php-format
+msgid "Current settings and usage information of %1$s plugins"
+msgstr "A(z) %1$s bővítményeinek aktuális beállításai és használati adatai"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:78
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:70
+msgid "Your Store Overview"
+msgstr "Az áruházad áttekintése"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:81
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:73
+msgid "Anonymized and non-sensitive store usage information"
+msgstr "Anonimizált, nem érzékeny áruházi használati adatok"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:91
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:83
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:27
+msgid "Find out more &raquo;"
+msgstr "Tudj meg többet &raquo;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:62
+msgid "Current settings and usage information of WP Desk plugins"
+msgstr "A WP Desk bővítményeinek aktuális beállításai és használati adatai"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:11
+#, php-format
+msgid "You are deactivating %s plugin."
+msgstr "Kikapcsolod a(z) %s bővítményt."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:19
+msgid ""
+" If you have a moment, please let us know why you are deactivating plugin "
+"(anonymous feedback):"
+msgstr ""
+"Ha van egy perced, mondd el, miért kapcsolod ki a bővítményt (névtelen "
+"visszajelzés):"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:28
+msgid "The plugin suddenly stopped working"
+msgstr "A bővítmény váratlanul leállt"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:38
+msgid "The plugin broke my site"
+msgstr "A bővítmény tönkretette a webhelyemet"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:48
+msgid "I found a better plugin"
+msgstr "Találtam egy jobb bővítményt"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:53
+msgid "What's the plugin's name?"
+msgstr "Mi a bővítmény neve?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:63
+msgid "I only needed the plugin for a short period"
+msgstr "Csak rövid ideig volt szükségem a bővítményre"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:73
+msgid "I no longer need the plugin"
+msgstr "Többé nincs szükségem erre a bővítményre"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:83
+msgid "It's a temporary deactivation. I'm just debugging an issue."
+msgstr "Ez csak ideiglenes kikapcsolás. Épp egy probléma elhárításán dolgozom."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:93
+msgid "Other"
+msgstr "Egyéb"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:98
+msgid "Kindly tell us the reason so we can improve"
+msgstr "Mondd el az okát, hogy továbbfejleszthessük"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:107
+msgid "Cancel"
+msgstr "Mégse"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:110
+msgid "Skip &amp; Deactivate"
+msgstr "Kihagyás és kikapcsolás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:22
+msgid ""
+"We need your help to improve <strong>WP Desk plugins</strong>, so they are "
+"more useful for you and the rest of <strong>30,000+ users</strong>. By "
+"collecting data on how you use our plugins, you will help us a lot. We will "
+"not collect any sensitive data, so you can feel safe."
+msgstr ""
+"Segíts nekünk továbbfejleszteni a <strong>WP Desk bővítményeket</strong>, "
+"hogy hasznosabbak legyenek neked és a többi <strong>30 000+ "
+"felhasználónak</strong>. Ha adatokat gyűjtünk arról, hogyan használod a "
+"bővítményeinket, azzal sokat segítesz nekünk. Nem gyűjtünk érzékeny "
+"adatokat, ezért nyugodt lehetsz."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-opt-out-notice.php:11
+msgid ""
+"You successfully opted out of collecting usage data by WP Desk. If you "
+"change your mind, you can always opt in later in the plugin's quick links."
+msgstr ""
+"Sikeresen letiltottad a WP Desk használati adatainak gyűjtését. Ha "
+"meggondolod magad, később bármikor engedélyezheted a bővítmény "
+"gyorshivatkozásainál."

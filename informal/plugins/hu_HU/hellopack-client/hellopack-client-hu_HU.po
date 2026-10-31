@@ -1,0 +1,2797 @@
+# Copyright (C) 2026 HelloWP.io
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: HelloPack Client 3.2.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/hellopack-client\n"
+"POT-Creation-Date: 2026-10-21T14:40:39+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: hellopack-client\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: HelloPack Client\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 3.2.5\n"
+
+#. Plugin Name of the plugin
+#: hellopack-client.php
+msgid "HelloPack Client"
+msgstr "HelloPack Client"
+
+#. Plugin URI of the plugin
+#: hellopack-client.php
+msgid "https://hellowp.io/"
+msgstr "https://hellowp.io/"
+
+#. Description of the plugin
+#: hellopack-client.php
+msgid "Centralized updater for premium WordPress plugins and themes."
+msgstr "Központi frissítéskezelő prémium WordPress-bővítményekhez és -sablonokhoz."
+
+#. Author of the plugin
+#: hellopack-client.php
+msgid "HelloWP.io"
+msgstr "HelloWP.io"
+
+#. Author URI of the plugin
+#: hellopack-client.php
+msgid "https://hellowp.io"
+msgstr "https://hellowp.io"
+
+#. translators: 1: required PHP version, 2: current PHP version
+#: hellopack-client.php:35
+#, php-format
+msgid ""
+"Requires PHP %1$s or higher. Your current version is %2$s. Please upgrade "
+"PHP."
+msgstr "PHP %1$s vagy újabb verzió szükséges. Az aktuális verziód: %2$s. Frissítsd a PHP-t."
+
+#: includes/Abilities.php:63 includes/Admin/DomainMismatchNotice.php:57
+#: includes/Admin/SettingsPage.php:54 modules/system-php-security.php:179
+msgid "HelloPack"
+msgstr "HelloPack"
+
+#: includes/Abilities.php:64
+msgid "HelloPack package manager abilities."
+msgstr "A HelloPack csomagkezelő képességei."
+
+#: includes/Abilities.php:158
+msgid "List plugins"
+msgstr "Bővítmények listázása"
+
+#: includes/Abilities.php:159
+msgid "List all available HelloPack plugins with install and update status."
+msgstr "Az összes elérhető HelloPack-bővítmény listázása a telepítési és frissítési állapotukkal együtt."
+
+#: includes/Abilities.php:208
+msgid "List themes"
+msgstr "Sablonok listázása"
+
+#: includes/Abilities.php:209
+msgid "List all available HelloPack themes with install and update status."
+msgstr "Az összes elérhető HelloPack-sablon listázása a telepítési és frissítési állapotukkal együtt."
+
+#: includes/Abilities.php:258
+msgid "List modules"
+msgstr "Modulok listázása"
+
+#: includes/Abilities.php:259
+msgid "List all registered HelloPack modules with their status."
+msgstr "Az összes regisztrált HelloPack-modul listázása az állapotukkal együtt."
+
+#: includes/Abilities.php:317
+msgid "Connection status"
+msgstr "Kapcsolat állapota"
+
+#: includes/Abilities.php:318
+msgid "Get the current HelloPack license connection status."
+msgstr "A HelloPack-licenckapcsolat aktuális állapotának lekérése."
+
+#: includes/Abilities.php:363
+msgid "Check updates"
+msgstr "Frissítések keresése"
+
+#: includes/Abilities.php:364
+msgid "List HelloPack plugins and themes that have an update available."
+msgstr "Az elérhető frissítéssel rendelkező HelloPack-bővítmények és -sablonok listázása."
+
+#: includes/Abilities.php:431
+msgid "Toggle module"
+msgstr "Modul be- vagy kikapcsolása"
+
+#: includes/Abilities.php:432
+msgid "Enable or disable a HelloPack module."
+msgstr "Egy HelloPack-modul bekapcsolása vagy kikapcsolása."
+
+#: includes/Abilities.php:439
+msgid "The module ID to toggle."
+msgstr "A be- vagy kikapcsolandó modul ID-ja."
+
+#: includes/Abilities.php:443
+msgid "Whether to enable or disable the module."
+msgstr "A modul be- vagy kikapcsolása."
+
+#: includes/Abilities.php:482 includes/Admin/Rest/ModuleController.php:123
+msgid "Module not found."
+msgstr "A modul nem található."
+
+#: includes/Abilities.php:512 includes/Admin/Rest/ModuleController.php:134
+msgid "Module enabled."
+msgstr "A modul bekapcsolva."
+
+#: includes/Abilities.php:513 includes/Admin/Rest/ModuleController.php:135
+msgid "Module disabled."
+msgstr "A modul kikapcsolva."
+
+#: includes/Abilities.php:656
+msgid "Install plugin"
+msgstr "Bővítmény telepítése"
+
+#: includes/Abilities.php:657
+msgid "Install a premium plugin from the HelloPack catalog by slug."
+msgstr "Prémium bővítmény telepítése a HelloPack katalógusából slug alapján."
+
+#: includes/Abilities.php:664
+msgid "Plugin slug from the HelloPack catalog."
+msgstr "A HelloPack katalógusából származó plugin slug."
+
+#: includes/Abilities.php:669
+msgid "Activate the plugin after install."
+msgstr "A bővítmény bekapcsolása a telepítés után."
+
+#: includes/Abilities.php:706 includes/Abilities.php:884
+#: includes/Abilities.php:1061
+msgid "A plugin slug is required."
+msgstr "A plugin slug megadása kötelező."
+
+#. translators: %s: plugin slug
+#: includes/Abilities.php:719
+#, php-format
+msgid "Plugin \"%s\" is not in the HelloPack catalog."
+msgstr "A(z) „%s” bővítmény nem található a HelloPack katalógusában."
+
+#: includes/Abilities.php:728 includes/Abilities.php:820
+#: includes/Abilities.php:906 includes/Abilities.php:992
+#: includes/Abilities.php:1083 includes/Abilities.php:1165
+msgid "Installer service is not available."
+msgstr "A telepítőszolgáltatás nem érhető el."
+
+#: includes/Abilities.php:748
+msgid "Install theme"
+msgstr "Sablon telepítése"
+
+#: includes/Abilities.php:749
+msgid "Install a premium theme from the HelloPack catalog by slug."
+msgstr "Prémium sablon telepítése a HelloPack katalógusából slug alapján."
+
+#: includes/Abilities.php:756
+msgid "Theme slug from the HelloPack catalog."
+msgstr "A HelloPack katalógusából származó sablon slugja."
+
+#: includes/Abilities.php:761
+msgid "Switch to the theme after install."
+msgstr "Váltás a sablonra a telepítés után."
+
+#: includes/Abilities.php:798 includes/Abilities.php:970
+#: includes/Abilities.php:1143
+msgid "A theme slug is required."
+msgstr "A sablon slugja kötelező."
+
+#. translators: %s: theme slug
+#: includes/Abilities.php:811
+#, php-format
+msgid "Theme \"%s\" is not in the HelloPack catalog."
+msgstr "A(z) „%s” sablon nem található a HelloPack katalógusában."
+
+#: includes/Abilities.php:840
+msgid "Update plugin"
+msgstr "Bővítmény frissítése"
+
+#: includes/Abilities.php:841
+msgid "Update an installed HelloPack plugin to its latest available version."
+msgstr "Egy telepített HelloPack-bővítmény frissítése a legújabb elérhető verzióra."
+
+#: includes/Abilities.php:848
+msgid "Plugin slug to update."
+msgstr "A frissítendő plugin slugja."
+
+#: includes/Abilities.php:889 includes/Abilities.php:975
+#: includes/Abilities.php:1066 includes/Abilities.php:1148
+msgid "Slug resolver service is not available."
+msgstr "A slugfeloldó szolgáltatás nem érhető el."
+
+#. translators: %s: plugin slug
+#: includes/Abilities.php:897 includes/Abilities.php:1074
+#: includes/Cli/PluginCommand.php:371
+#, php-format
+msgid "Plugin \"%s\" is not installed."
+msgstr "A(z) „%s” bővítmény nincs telepítve."
+
+#: includes/Abilities.php:926
+msgid "Update theme"
+msgstr "Sablon frissítése"
+
+#: includes/Abilities.php:927
+msgid "Update an installed HelloPack theme to its latest available version."
+msgstr "Egy telepített HelloPack-sablon frissítése a legújabb elérhető verzióra."
+
+#: includes/Abilities.php:934
+msgid "Theme slug to update."
+msgstr "A frissítendő sablon slugja."
+
+#. translators: %s: theme slug
+#: includes/Abilities.php:983 includes/Abilities.php:1156
+#: includes/Cli/ThemeCommand.php:262
+#, php-format
+msgid "Theme \"%s\" is not installed."
+msgstr "A(z) „%s” sablon nincs telepítve."
+
+#: includes/Abilities.php:1012
+msgid "Delete plugin"
+msgstr "Bővítmény törlése"
+
+#: includes/Abilities.php:1013
+msgid "Remove an installed HelloPack plugin from this site."
+msgstr "Egy telepített HelloPack-bővítmény eltávolítása erről a webhelyről."
+
+#: includes/Abilities.php:1020
+msgid "Plugin slug to remove."
+msgstr "Az eltávolítandó plugin slugja."
+
+#: includes/Abilities.php:1025
+msgid "Deactivate before delete if the plugin is currently active."
+msgstr "A bővítmény kikapcsolása törlés előtt, ha jelenleg aktív."
+
+#: includes/Abilities.php:1101
+msgid "Delete theme"
+msgstr "Sablon törlése"
+
+#: includes/Abilities.php:1102
+msgid ""
+"Remove an installed HelloPack theme from this site (cannot delete the active"
+" theme)."
+msgstr "Egy telepített HelloPack-sablon eltávolítása erről a webhelyről (az aktív sablon nem törölhető)."
+
+#: includes/Abilities.php:1109
+msgid "Theme slug to remove."
+msgstr "Az eltávolítandó sablon slugja."
+
+#: includes/Abilities.php:1183
+msgid "Refresh catalog"
+msgstr "Katalógus frissítése"
+
+#: includes/Abilities.php:1184
+msgid "Force-refresh the cached HelloPack plugin and theme catalog."
+msgstr "A HelloPack bővítmény- és sablonkatalógus gyorsítótárazott adatainak kényszerített frissítése."
+
+#: includes/Abilities.php:1193
+msgid "Which catalog to refresh."
+msgstr "A frissítendő katalógus."
+
+#. translators: %s: plugin or brand name.
+#: includes/Admin/DomainMismatchNotice.php:66
+#, php-format
+msgid "%s: this API key belongs to a different domain."
+msgstr "%s: ez az API-kulcs egy másik domainhez tartozik."
+
+#. translators: 1: domain the key was issued for, 2: domain of this site.
+#: includes/Admin/DomainMismatchNotice.php:73
+#, php-format
+msgid ""
+"The key was issued for <code>%1$s</code>, but this site is "
+"<code>%2$s</code>. Updates and installs will not work until the key matches "
+"this domain."
+msgstr "A kulcsot a(z) <code>%1$s</code> domainhez adták ki, ez a webhely viszont a(z) <code>%2$s</code> domainen van. A frissítések és a telepítések nem működnek, amíg a kulcs nem ehhez a domainhez tartozik."
+
+#: includes/Admin/DomainMismatchNotice.php:82
+msgid "Enter a key for this domain"
+msgstr "Adj meg egy kulcsot ehhez a domainhez"
+
+#: includes/Admin/Rest/ConnectionController.php:77
+msgid "Invalid API token."
+msgstr "Hibás API-token."
+
+#: includes/Admin/Rest/ConnectionController.php:101
+msgid "API connection successful!"
+msgstr "Az API-kapcsolat sikeres!"
+
+#: includes/Admin/Rest/ConnectionController.php:111
+#: includes/Admin/Rest/ConnectionController.php:160
+#: includes/Cli/LicenseCommand.php:70
+msgid "Invalid token or insufficient permissions."
+msgstr "Hibás token vagy elégtelen jogosultságok."
+
+#: includes/Admin/Rest/ConnectionController.php:124
+#: includes/Admin/SettingsPage.php:327
+msgid "Cannot disconnect: token is defined in wp-config.php."
+msgstr "A kapcsolat nem szakítható meg: a token a wp-config.php fájlban van megadva."
+
+#: includes/Admin/Rest/ConnectionController.php:133
+#: includes/Admin/SettingsPage.php:302
+msgid "API disconnected."
+msgstr "Az API-kapcsolat megszakadt."
+
+#: includes/Admin/Rest/ConnectionController.php:154
+msgid "Connection successful."
+msgstr "A kapcsolat sikeresen létrejött."
+
+#. translators: 1: domain the key was issued for, 2: domain of this site.
+#: includes/Admin/Rest/ConnectionController.php:181
+#, php-format
+msgid ""
+"This API key belongs to a different domain. It was issued for %1$s, but this"
+" site is %2$s. Generate a key for this domain and enter it here."
+msgstr "Ez az API-kulcs egy másik domainhez tartozik. A(z) %1$s domainhez adták ki, ez a webhely viszont a(z) %2$s domainen van. Hozz létre egy kulcsot ehhez a domainhez, és add meg itt."
+
+#. translators: %s: memory limit value
+#. translators: %s: upload max filesize value
+#. translators: %s: PHP version string
+#: includes/Admin/Rest/HealthController.php:134
+#: includes/Admin/Rest/HealthController.php:159
+#: includes/Admin/Rest/HealthController.php:229
+#, php-format
+msgid "%s — OK."
+msgstr "%s — OK."
+
+#. translators: 1: current value, 2: required value
+#: includes/Admin/Rest/HealthController.php:136
+#, php-format
+msgid "%1$s — at least %2$s required."
+msgstr "%1$s — legalább %2$s szükséges."
+
+#: includes/Admin/Rest/HealthController.php:137
+msgid ""
+"Add or update the following line in wp-config.php: define( "
+"'WP_MEMORY_LIMIT', '256M' ); — or ask your hosting provider to increase the "
+"PHP memory limit."
+msgstr "A következő sort add hozzá a wp-config.php fájlhoz, vagy frissítsd: define( 'WP_MEMORY_LIMIT', '256M' ); — vagy kérd meg a tárhelyszolgáltatódat a PHP-memóriakorlát növelésére."
+
+#. translators: %s: upload max filesize value
+#: includes/Admin/Rest/HealthController.php:161
+#, php-format
+msgid "%s — at least 80M required."
+msgstr "%s — legalább 80M szükséges."
+
+#: includes/Admin/Rest/HealthController.php:162
+msgid ""
+"Increase upload_max_filesize and post_max_size in your php.ini or .htaccess "
+"file. Contact your hosting provider if you cannot change this."
+msgstr "Növeld az upload_max_filesize és a post_max_size értékét a php.ini vagy a .htaccess fájlban. Ha ezt nem tudod módosítani, vedd fel a kapcsolatot a tárhelyszolgáltatóddal."
+
+#. translators: %d: max input vars value
+#: includes/Admin/Rest/HealthController.php:183
+#, php-format
+msgid "%d — OK."
+msgstr "%d — OK."
+
+#. translators: %1$d: current value, %2$d: minimum required
+#: includes/Admin/Rest/HealthController.php:185
+#, php-format
+msgid "%1$d — at least %2$d required."
+msgstr "%1$d — legalább %2$d szükséges."
+
+#: includes/Admin/Rest/HealthController.php:186
+msgid ""
+"Add max_input_vars = 10000 to your php.ini file, or ask your hosting "
+"provider to increase it."
+msgstr "Add hozzá a max_input_vars = 10000 sort a php.ini fájlhoz, vagy kérd meg a tárhelyszolgáltatódat az érték növelésére."
+
+#. translators: %d: max execution time in seconds
+#: includes/Admin/Rest/HealthController.php:207
+#, php-format
+msgid "%ds — OK."
+msgstr "%ds — OK."
+
+#. translators: %1$d: current seconds, %2$d: minimum required seconds
+#: includes/Admin/Rest/HealthController.php:209
+#, php-format
+msgid "%1$ds — at least %2$ds required."
+msgstr "%1$ds — legalább %2$ds szükséges."
+
+#: includes/Admin/Rest/HealthController.php:210
+msgid ""
+"Add max_execution_time = 60 to your php.ini file, or ask your hosting "
+"provider to increase it."
+msgstr "Add hozzá a max_execution_time = 60 sort a php.ini fájlodhoz, vagy kérd meg a tárhelyszolgáltatódat az érték növelésére."
+
+#. translators: %s: PHP version string
+#: includes/Admin/Rest/HealthController.php:231
+#, php-format
+msgid "%s — at least 8.2 required."
+msgstr "%s — legalább 8.2 szükséges."
+
+#: includes/Admin/Rest/HealthController.php:232
+msgid ""
+"Contact your hosting provider to upgrade PHP to version 8.2 or higher. Most "
+"hosts offer this in the control panel under PHP settings."
+msgstr "Kérd meg a tárhelyszolgáltatódat, hogy frissítse a PHP-t a 8.2-es vagy újabb verzióra. A legtöbb tárhelyszolgáltatónál ezt a vezérlőpult PHP-beállításainál teheted meg."
+
+#: includes/Admin/Rest/HealthController.php:249
+#: includes/Admin/Rest/HealthController.php:268
+msgid "Available."
+msgstr "Elérhető."
+
+#: includes/Admin/Rest/HealthController.php:250
+msgid "Not available — cURL extension is required."
+msgstr "Nem érhető el — a cURL kiterjesztés kötelező."
+
+#: includes/Admin/Rest/HealthController.php:251
+msgid ""
+"Ask your hosting provider to enable the PHP cURL extension. It is required "
+"for API communication."
+msgstr "Kérd meg a tárhelyszolgáltatódat, hogy kapcsolja be a PHP cURL kiterjesztést. Ez az API-kommunikációhoz kötelező."
+
+#: includes/Admin/Rest/HealthController.php:269
+msgid "Not available — ZipArchive extension is required."
+msgstr "Nem érhető el — a ZipArchive kiterjesztés kötelező."
+
+#: includes/Admin/Rest/HealthController.php:270
+msgid ""
+"Ask your hosting provider to enable the PHP zip extension. It is required "
+"for installing and updating plugins/themes."
+msgstr "Kérd meg a tárhelyszolgáltatódat, hogy kapcsolja be a PHP zip kiterjesztést. Ez a bővítmények és sablonok telepítéséhez és frissítéséhez kötelező."
+
+#: includes/Admin/Rest/HealthController.php:295
+#: includes/Admin/Rest/HealthController.php:322
+#: includes/Admin/Rest/HealthController.php:349
+msgid "Connection OK."
+msgstr "A kapcsolat rendben van."
+
+#: includes/Admin/Rest/HealthController.php:296
+#: includes/Admin/Rest/HealthController.php:323
+#: includes/Admin/Rest/HealthController.php:350
+msgid "Not reachable — check your firewall settings."
+msgstr "Nem érhető el — ellenőrizd a tűzfal beállításait."
+
+#: includes/Admin/Rest/HealthController.php:297
+msgid ""
+"Your server cannot reach api.hellowp.io. Ask your hosting provider to "
+"whitelist this domain, or check if a security plugin is blocking outgoing "
+"requests."
+msgstr "A szervered nem éri el az api.hellowp.io címet. Kérd meg a tárhelyszolgáltatódat, hogy engedélyezze ezt a domaint, vagy ellenőrizd, hogy nem blokkolja-e egy biztonsági bővítmény a kimenő kéréseket."
+
+#: includes/Admin/Rest/HealthController.php:324
+msgid ""
+"Your server cannot reach hellowp.io. Ask your hosting provider to whitelist "
+"this domain, or check if a security plugin is blocking outgoing requests."
+msgstr "A szervered nem éri el a hellowp.io címet. Kérd meg a tárhelyszolgáltatódat, hogy engedélyezze ezt a domaint, vagy ellenőrizd, hogy nem blokkolja-e egy biztonsági bővítmény a kimenő kéréseket."
+
+#: includes/Admin/Rest/HealthController.php:351
+msgid ""
+"Your server cannot reach the Content API. Ask your hosting provider to "
+"whitelist api.hellowp.io, or check if a security plugin is blocking outgoing"
+" requests."
+msgstr "A szervered nem éri el a Content API-t. Kérd meg a tárhelyszolgáltatódat, hogy engedélyezze az api.hellowp.io címet, vagy ellenőrizd, hogy nem blokkolja-e egy biztonsági bővítmény a kimenő kéréseket."
+
+#: includes/Admin/Rest/HealthController.php:361
+msgid ""
+"Go to the Settings tab and re-enter your API token. If the problem persists,"
+" generate a new token at hellowp.io."
+msgstr "Nyisd meg a beállítások fület, és add meg újra az API-tokenedet. Ha a probléma továbbra is fennáll, hozz létre új tokent a hellowp.io oldalon."
+
+#: includes/Admin/Rest/HealthController.php:374
+msgid ""
+"Open the API Key Generator, create a key for this exact domain, then paste "
+"it on the Settings tab."
+msgstr "Nyisd meg az API-kulcsgenerátort, hozz létre egy kulcsot pontosan ehhez a domainhez, majd illeszd be a beállítások fülön."
+
+#: includes/Admin/Rest/HealthController.php:385
+msgid "Authentication successful."
+msgstr "A hitelesítés sikeres."
+
+#: includes/Admin/Rest/HealthController.php:386
+msgid "Authentication failed — check your API token."
+msgstr "A hitelesítés sikertelen — ellenőrizd az API-tokenedet."
+
+#: includes/Admin/Rest/HealthController.php:404
+msgid "Enabled — recommended to disable on production."
+msgstr "Bekapcsolva — éles webhelyen ajánlott kikapcsolni."
+
+#: includes/Admin/Rest/HealthController.php:405
+msgid "Disabled — OK."
+msgstr "Kikapcsolva — OK."
+
+#: includes/Admin/Rest/HealthController.php:406
+msgid ""
+"Set WP_DEBUG to false in wp-config.php. Debug mode can expose sensitive "
+"information and slow down your site."
+msgstr "Állítsd a WP_DEBUG értékét false-ra a wp-config.php fájlban. A hibakeresési mód bizalmas információkat tehet közzé, és lelassíthatja a webhelyedet."
+
+#: includes/Admin/Rest/HealthController.php:428
+msgid "direct — OK."
+msgstr "direct — OK."
+
+#. translators: %s: filesystem method
+#: includes/Admin/Rest/HealthController.php:430
+#, php-format
+msgid "%s — \"direct\" method is required."
+msgstr "%s — a „direct” mód kötelező."
+
+#: includes/Admin/Rest/HealthController.php:431
+msgid ""
+"Add define( 'FS_METHOD', 'direct' ); to wp-config.php, or fix file ownership"
+" so WordPress can write files directly."
+msgstr "Add hozzá a define( 'FS_METHOD', 'direct' ); sort a wp-config.php fájlhoz, vagy javítsd a fájlok tulajdonosi beállításait, hogy a WordPress közvetlenül írhasson fájlokat."
+
+#: includes/Admin/Rest/HealthController.php:449
+msgid "Writable — OK."
+msgstr "Írható — OK."
+
+#: includes/Admin/Rest/HealthController.php:450
+msgid "Not writable — check file permissions."
+msgstr "Nem írható — ellenőrizd a fájljogosultságokat."
+
+#: includes/Admin/Rest/HealthController.php:451
+msgid ""
+"Set the wp-content/uploads directory permissions to 755 (or 775), and ensure"
+" the web server user owns the directory."
+msgstr "Állítsd be a wp-content/uploads könyvtár jogosultságait 755-re (vagy 775-re), és gondoskodj róla, hogy a könyvtár a webszerver felhasználójának tulajdonában legyen."
+
+#. translators: %d: number of active plugins
+#: includes/Admin/Rest/HealthController.php:478
+#, php-format
+msgid "%d active plugins — OK."
+msgstr "%d aktív bővítmény — OK."
+
+#. translators: %d: number of active plugins
+#: includes/Admin/Rest/HealthController.php:480
+#, php-format
+msgid "%d active plugins — fewer than 15 recommended."
+msgstr "%d aktív bővítmény — 15-nél kevesebb ajánlott."
+
+#: includes/Admin/Rest/HealthController.php:481
+msgid ""
+"Deactivate and remove plugins you no longer need. Too many active plugins "
+"can cause conflicts and slow down your site."
+msgstr "Kapcsold ki és távolítsd el a már nem használt bővítményeket. A túl sok aktív bővítmény ütközéseket okozhat, és lelassíthatja a webhelyedet."
+
+#: includes/Admin/Rest/PluginController.php:107
+msgid "Plugin install failed."
+msgstr "A bővítmény telepítése sikertelen."
+
+#: includes/Admin/Rest/PluginController.php:133
+#: includes/Admin/Rest/PluginController.php:166
+#: includes/Admin/Rest/PluginController.php:227
+#: includes/Admin/Rest/PluginController.php:251
+msgid "Invalid plugin path."
+msgstr "Hibás bővítményútvonal."
+
+#: includes/Admin/Rest/PluginController.php:141
+#: includes/Cli/PluginCommand.php:394
+msgid "Plugin update failed."
+msgstr "A bővítmény frissítése sikertelen."
+
+#: includes/Admin/Rest/PluginController.php:184
+msgid "Plugin activated."
+msgstr "A bővítmény bekapcsolva."
+
+#: includes/Admin/Rest/PluginController.php:212
+msgid "You are not allowed to change plugins for the whole network."
+msgstr "Nem módosíthatod a hálózat egészére vonatkozó bővítményeket."
+
+#: includes/Admin/Rest/PluginController.php:238
+msgid "Plugin deactivated."
+msgstr "A bővítmény kikapcsolva."
+
+#: includes/Admin/Rest/PluginController.php:258
+msgid "Plugin delete failed."
+msgstr "A bővítmény törlése sikertelen."
+
+#: includes/Admin/Rest/StatusController.php:100
+msgid "Not applicable on this site."
+msgstr "Ezen a webhelyen nem alkalmazható."
+
+#: includes/Admin/Rest/ThemeController.php:105
+msgid "Theme install failed."
+msgstr "A sablon telepítése sikertelen."
+
+#: includes/Admin/Rest/ThemeController.php:129
+#: includes/Admin/Rest/ThemeController.php:161
+msgid "Invalid theme stylesheet."
+msgstr "Hibás sablonstíluslap."
+
+#: includes/Admin/Rest/ThemeController.php:137
+#: includes/Cli/ThemeCommand.php:271
+msgid "Theme update failed."
+msgstr "A sablon frissítése sikertelen."
+
+#: includes/Admin/Rest/ThemeController.php:168
+msgid "Theme delete failed."
+msgstr "A sablon törlése sikertelen."
+
+#: includes/Admin/Rest/TranslationController.php:58
+#: includes/Admin/Rest/TranslationController.php:99
+msgid "Invalid parameters."
+msgstr "Érvénytelen paraméterek."
+
+#: includes/Admin/Rest/TranslationController.php:65
+#: includes/Admin/Rest/TranslationController.php:106
+msgid "Unknown slug."
+msgstr "Ismeretlen slug."
+
+#: includes/Admin/Rest/TranslationController.php:83
+#: includes/Admin/SettingsPage.php:376
+msgid "Translation installed."
+msgstr "A fordítás telepítve."
+
+#: includes/Admin/Rest/TranslationController.php:117
+#: includes/Admin/SettingsPage.php:377
+msgid "Translation deleted."
+msgstr "A fordítás törölve."
+
+#: includes/Admin/SettingsPage.php:70 includes/Admin/SettingsPage.php:71
+#: includes/Admin/SettingsPage.php:487
+msgid "Status"
+msgstr "Állapot"
+
+#: includes/Admin/SettingsPage.php:81 includes/Admin/SettingsPage.php:388
+msgid "About HelloPack"
+msgstr "A HelloPack névjegye"
+
+#: includes/Admin/SettingsPage.php:82 includes/Admin/SettingsPage.php:387
+msgid "About"
+msgstr "Névjegy"
+
+#: includes/Admin/SettingsPage.php:93 includes/Admin/SettingsPage.php:94
+#: includes/Admin/SettingsPage.php:371
+msgid "Bug Report"
+msgstr "Hibajelentés"
+
+#: includes/Admin/SettingsPage.php:251
+msgid "Settings"
+msgstr "Beállítások"
+
+#: includes/Admin/SettingsPage.php:252
+msgid "Plugins"
+msgstr "Bővítmények"
+
+#: includes/Admin/SettingsPage.php:253
+msgid "Themes"
+msgstr "Sablonok"
+
+#: includes/Admin/SettingsPage.php:254
+msgid "Modules"
+msgstr "Modulok"
+
+#: includes/Admin/SettingsPage.php:255
+msgid "Plugin Modules"
+msgstr "Bővítménymodulok"
+
+#: includes/Admin/SettingsPage.php:256
+msgid "Theme Modules"
+msgstr "Sablonmodulok"
+
+#: includes/Admin/SettingsPage.php:257
+msgid "Connect to HelloPack API"
+msgstr "Kapcsolódás a HelloPack API-hoz"
+
+#: includes/Admin/SettingsPage.php:258
+msgid "Get Token"
+msgstr "Token beszerzése"
+
+#: includes/Admin/SettingsPage.php:259
+msgid "Get your API token from hellowp.io"
+msgstr "Szerezd be az API-tokenedet a hellowp.io oldalon"
+
+#: includes/Admin/SettingsPage.php:260
+msgid "Paste Token"
+msgstr "Token beillesztése"
+
+#: includes/Admin/SettingsPage.php:261
+msgid "Paste your token below"
+msgstr "Illeszd be alább a tokenedet"
+
+#: includes/Admin/SettingsPage.php:262
+msgid "Verify"
+msgstr "Ellenőrzés"
+
+#: includes/Admin/SettingsPage.php:263
+msgid "Click Save to verify connection"
+msgstr "Kattints a mentésre a kapcsolat ellenőrzéséhez"
+
+#: includes/Admin/SettingsPage.php:264
+msgid "API Token"
+msgstr "API-token"
+
+#: includes/Admin/SettingsPage.php:265
+msgid "Paste your HelloPack API token here"
+msgstr "Illeszd be ide a HelloPack API-tokenedet"
+
+#: includes/Admin/SettingsPage.php:266
+msgid "Save & Verify"
+msgstr "Mentés és ellenőrzés"
+
+#: includes/Admin/SettingsPage.php:267
+msgid "API Connection"
+msgstr "API-kapcsolat"
+
+#: includes/Admin/SettingsPage.php:268
+msgid "Active"
+msgstr "Aktív"
+
+#: includes/Admin/SettingsPage.php:269
+msgid "Registered Domain"
+msgstr "Regisztrált domain"
+
+#: includes/Admin/SettingsPage.php:270
+msgid "Copy"
+msgstr "Másolás"
+
+#: includes/Admin/SettingsPage.php:271
+msgid "Test Connection"
+msgstr "Kapcsolat tesztelése"
+
+#: includes/Admin/SettingsPage.php:272
+msgid "Disconnect"
+msgstr "Leválasztás"
+
+#: includes/Admin/SettingsPage.php:273
+msgid "Total"
+msgstr "Összeg"
+
+#: includes/Admin/SettingsPage.php:274
+msgid "Installed"
+msgstr "Telepítve"
+
+#: includes/Admin/SettingsPage.php:275
+msgid "Available"
+msgstr "Elérhető"
+
+#: includes/Admin/SettingsPage.php:276
+msgid "Updates"
+msgstr "Frissítések"
+
+#: includes/Admin/SettingsPage.php:277
+msgid "Update Available"
+msgstr "Elérhető frissítés"
+
+#: includes/Admin/SettingsPage.php:278
+msgid "Active Theme"
+msgstr "Aktív sablon"
+
+#: includes/Admin/SettingsPage.php:279
+msgid "Search..."
+msgstr "Keresés..."
+
+#: includes/Admin/SettingsPage.php:280
+msgid "All"
+msgstr "Mind"
+
+#: includes/Admin/SettingsPage.php:281
+msgid "page"
+msgstr "oldal"
+
+#: includes/Admin/SettingsPage.php:282
+msgid "Install"
+msgstr "Telepítés"
+
+#: includes/Admin/SettingsPage.php:283
+msgid "Update"
+msgstr "Frissítés"
+
+#: includes/Admin/SettingsPage.php:284
+msgid "Activate"
+msgstr "Aktiválás"
+
+#: includes/Admin/SettingsPage.php:285
+msgid "Deactivate"
+msgstr "Kikapcsolás"
+
+#: includes/Admin/SettingsPage.php:286
+msgid "Delete"
+msgstr "Törlés"
+
+#: includes/Admin/SettingsPage.php:287
+msgid "Installing"
+msgstr "Telepítés"
+
+#: includes/Admin/SettingsPage.php:288
+msgid "Updating"
+msgstr "Frissítés"
+
+#: includes/Admin/SettingsPage.php:289
+msgid "Activating"
+msgstr "Aktiválás"
+
+#: includes/Admin/SettingsPage.php:290
+msgid "Deactivating"
+msgstr "Deaktiválás"
+
+#: includes/Admin/SettingsPage.php:291
+msgid "Deleting"
+msgstr "Törlés folyamatban"
+
+#: includes/Admin/SettingsPage.php:292
+msgid "Done"
+msgstr "Kész"
+
+#: includes/Admin/SettingsPage.php:293
+msgid "Processing..."
+msgstr "Feldolgozás alatt..."
+
+#: includes/Admin/SettingsPage.php:294
+msgid "Operation failed."
+msgstr "A művelet sikertelen."
+
+#: includes/Admin/SettingsPage.php:295
+msgid "Ready"
+msgstr "Kész"
+
+#: includes/Admin/SettingsPage.php:296
+msgid "Disabled"
+msgstr "Letiltva"
+
+#: includes/Admin/SettingsPage.php:297
+msgid "Always Active"
+msgstr "Mindig aktív"
+
+#: includes/Admin/SettingsPage.php:298
+msgid "No plugins found."
+msgstr "Nem található bővítmény."
+
+#: includes/Admin/SettingsPage.php:299
+msgid "No themes found."
+msgstr "Nem található sablon."
+
+#: includes/Admin/SettingsPage.php:300
+msgid "No modules available."
+msgstr "Nem érhetők el modulok."
+
+#: includes/Admin/SettingsPage.php:301
+msgid "Are you sure you want to disconnect?"
+msgstr "Biztosan meg szeretnéd szakítani a kapcsolatot?"
+
+#: includes/Admin/SettingsPage.php:303
+msgid "Open API Key Generator"
+msgstr "API-kulcsgenerátor megnyitása"
+
+#: includes/Admin/SettingsPage.php:304
+msgid "Your domain"
+msgstr "A domained"
+
+#: includes/Admin/SettingsPage.php:305
+msgid "Copied!"
+msgstr "Másolva!"
+
+#: includes/Admin/SettingsPage.php:306
+msgid "Step 1: Open the API Key Generator on hellowp.io"
+msgstr "1. lépés: Nyisd meg az API-kulcsgenerátort a hellowp.io oldalon"
+
+#: includes/Admin/SettingsPage.php:307
+msgid "Step 2: Your domain is automatically included. Copy it if needed."
+msgstr "2. lépés: A domained automatikusan bekerül. Ha szükséges, másold ki."
+
+#: includes/Admin/SettingsPage.php:308
+msgid "Step 3: Paste the generated API token and click Save & Verify."
+msgstr "3. lépés: Illeszd be a létrehozott API-tokent, majd kattints a mentés és ellenőrzés gombra."
+
+#: includes/Admin/SettingsPage.php:309
+msgid "Domain copied to clipboard."
+msgstr "A domain a vágólapra másolva."
+
+#: includes/Admin/SettingsPage.php:310
+msgid "Failed to copy domain."
+msgstr "Nem sikerült a domain másolása."
+
+#: includes/Admin/SettingsPage.php:311
+msgid "Disconnect failed."
+msgstr "A kapcsolat megszakítása sikertelen."
+
+#: includes/Admin/SettingsPage.php:312
+msgid "Connection test failed."
+msgstr "A kapcsolat tesztelése sikertelen."
+
+#: includes/Admin/SettingsPage.php:313
+msgid "Verification failed."
+msgstr "Az ellenőrzés sikertelen."
+
+#: includes/Admin/SettingsPage.php:314
+msgid "Toggle failed."
+msgstr "Az átkapcsolás sikertelen."
+
+#: includes/Admin/SettingsPage.php:315
+msgid "Please enter a valid API token (min 20 characters)."
+msgstr "Adj meg egy érvényes API-tokent (legalább 20 karakter)."
+
+#: includes/Admin/SettingsPage.php:316
+msgid "This API key belongs to a different domain."
+msgstr "Ez az API-kulcs egy másik domainhez tartozik."
+
+#: includes/Admin/SettingsPage.php:317
+msgid ""
+"Plugins activated here apply to this site only. Settings, modules and "
+"translations are managed for the whole network."
+msgstr "Az itt aktivált bővítmények csak ezen a webhelyen érvényesek. A beállítások, modulok és fordítások kezelése a teljes hálózatra kiterjed."
+
+#: includes/Admin/SettingsPage.php:318
+msgid "Open Network Admin"
+msgstr "Hálózati admin megnyitása"
+
+#. translators: %s: comma-separated list of site addresses.
+#: includes/Admin/SettingsPage.php:320
+#, php-format
+msgid "Active on: %s"
+msgstr "Aktív itt: %s"
+
+#: includes/Admin/SettingsPage.php:321
+msgid "Not active on any site"
+msgstr "Egyik webhelyen sem aktív"
+
+#. translators: 1: domain the key was issued for, 2: domain of this site.
+#: includes/Admin/SettingsPage.php:323
+#, php-format
+msgid "The key was issued for %1$s, but this site is %2$s."
+msgstr "A kulcsot a(z) %1$s domainhez adták ki, ez a webhely viszont a(z) %2$s domainen van."
+
+#: includes/Admin/SettingsPage.php:324
+msgid "Generate a key for this domain and enter it below."
+msgstr "Hozz létre egy kulcsot ehhez a domainhez, és add meg alább."
+
+#: includes/Admin/SettingsPage.php:325
+msgid "Defined in wp-config.php"
+msgstr "A wp-config.php fájlban van megadva"
+
+#: includes/Admin/SettingsPage.php:326
+msgid ""
+"The API token is defined via the HELLOPACK_CLIENT_API_TOKEN constant. "
+"Verification will be retried automatically."
+msgstr "Az API-token a HELLOPACK_CLIENT_API_TOKEN konstansban van megadva. A rendszer automatikusan újra megpróbálja az ellenőrzést."
+
+#: includes/Admin/SettingsPage.php:328
+msgid "News"
+msgstr "Hírek"
+
+#: includes/Admin/SettingsPage.php:329
+msgid "Latest news and announcements from HelloPack."
+msgstr "A HelloPack legfrissebb hírei és bejelentései."
+
+#: includes/Admin/SettingsPage.php:330
+msgid "No news yet."
+msgstr "Még nincsenek hírek."
+
+#: includes/Admin/SettingsPage.php:331
+msgid "Check back later for news and announcements."
+msgstr "Nézz vissza később a hírekért és bejelentésekért."
+
+#: includes/Admin/SettingsPage.php:332
+msgid "Help"
+msgstr "Súgó"
+
+#: includes/Admin/SettingsPage.php:333
+msgid "System Diagnostics"
+msgstr "Rendszerdiagnosztika"
+
+#: includes/Admin/SettingsPage.php:334
+msgid "Run Diagnostics"
+msgstr "Diagnosztika futtatása"
+
+#: includes/Admin/SettingsPage.php:335
+msgid "All checks passed."
+msgstr "Minden ellenőrzés sikeres."
+
+#: includes/Admin/SettingsPage.php:336
+msgid "Some issues found."
+msgstr "Néhány problémát találtunk."
+
+#: includes/Admin/SettingsPage.php:337
+msgid "Copy Results"
+msgstr "Eredmények másolása"
+
+#: includes/Admin/SettingsPage.php:338
+msgid "Results copied to clipboard."
+msgstr "Az eredmények a vágólapra másolva."
+
+#: includes/Admin/SettingsPage.php:339
+msgid "Recommended Actions"
+msgstr "Javasolt műveletek"
+
+#: includes/Admin/SettingsPage.php:340
+msgid "Cancel"
+msgstr "Mégse"
+
+#: includes/Admin/SettingsPage.php:341
+msgid "Auto-Updates"
+msgstr "Automatikus frissítések"
+
+#: includes/Admin/SettingsPage.php:342
+msgid "Beta Channel"
+msgstr "Béta csatorna"
+
+#: includes/Admin/SettingsPage.php:343
+msgid "Receive beta versions of HelloPack Client for early testing."
+msgstr "A HelloPack Client béta verzióinak fogadása korai teszteléshez."
+
+#: includes/Admin/SettingsPage.php:344
+msgid ""
+"You are running a beta version. Enable the Beta Channel to receive future "
+"beta updates."
+msgstr "Béta verziót használsz. Kapcsold be a Béta csatornát, hogy megkapd a későbbi bétafrissítéseket."
+
+#: includes/Admin/SettingsPage.php:345
+msgid ""
+"Enable WordPress auto-update toggles for HelloPack-managed plugins on the "
+"Plugins page."
+msgstr "Kapcsold be a WordPress automatikus frissítési kapcsolóit a HelloPack által kezelt bővítményeknél a bővítmények oldalon."
+
+#: includes/Admin/SettingsPage.php:346
+msgid "Deprecated"
+msgstr "Elavult"
+
+#: includes/Admin/SettingsPage.php:347
+msgid "Admin Notification Cleaner"
+msgstr "Admin Notification Cleaner"
+
+#: includes/Admin/SettingsPage.php:348
+msgid ""
+"This module has been deprecated. For a more complete and customizable admin "
+"experience, install the ZenAdmin plugin."
+msgstr "Ez a modul elavult. Teljesebb és személyre szabhatóbb adminfelületért telepítsd a ZenAdmin bővítményt."
+
+#: includes/Admin/SettingsPage.php:349
+msgid "Install ZenAdmin"
+msgstr "ZenAdmin telepítése"
+
+#: includes/Admin/SettingsPage.php:350
+msgid "ZenAdmin"
+msgstr "ZenAdmin"
+
+#: includes/Admin/SettingsPage.php:351
+msgid ""
+"Cleaner admin experience — replaces the deprecated Admin Notification "
+"Cleaner module."
+msgstr "Letisztultabb adminfelület – az elavult Admin Notification Cleaner modult váltja fel."
+
+#: includes/Admin/SettingsPage.php:352
+msgid "Try adjusting the search or filter to find what you are looking for."
+msgstr "Próbáld módosítani a keresést vagy a szűrést, hogy megtaláld, amit keresel."
+
+#: includes/Admin/SettingsPage.php:353
+msgid "Clear Filters"
+msgstr "Szűrők törlése"
+
+#: includes/Admin/SettingsPage.php:354
+msgid "WP Rollback Pro"
+msgstr "WP Rollback Pro"
+
+#: includes/Admin/SettingsPage.php:355
+msgid "Plugin Rollback"
+msgstr "Bővítmény-visszaállítás"
+
+#: includes/Admin/SettingsPage.php:356
+msgid ""
+"Enables version rollback for HelloPack-managed plugins and themes. Requires "
+"WP Rollback Pro."
+msgstr "Verzió-visszaállítást tesz lehetővé a HelloPack által kezelt bővítményeknél és sablonoknál. A használatához WP Rollback Pro szükséges."
+
+#: includes/Admin/SettingsPage.php:357
+msgid "Inactive"
+msgstr "Inaktív"
+
+#: includes/Admin/SettingsPage.php:358
+msgid "Hard Disabled"
+msgstr "Teljesen kikapcsolva"
+
+#: includes/Admin/SettingsPage.php:359
+msgid "Module Statuses"
+msgstr "Modulállapotok"
+
+#: includes/Admin/SettingsPage.php:360
+msgid ""
+"The module is enabled and running. The associated plugin or theme is "
+"installed and active on the site."
+msgstr "A modul be van kapcsolva és fut. A hozzá tartozó bővítmény vagy sablon telepítve van és aktív a webhelyen."
+
+#: includes/Admin/SettingsPage.php:361
+msgid ""
+"The module is disabled or its target plugin/theme is not active. You can "
+"enable it with the toggle switch."
+msgstr "A modul ki van kapcsolva, vagy a hozzá tartozó bővítmény vagy sablon nem aktív. A kapcsolóval bekapcsolhatod."
+
+#: includes/Admin/SettingsPage.php:362
+msgid ""
+"The module has been disabled via the HP_DISABLE_MODULES constant in wp-"
+"config.php. It cannot be toggled from the admin interface. To re-enable it, "
+"remove it from the constant."
+msgstr "A modult a wp-config.php fájlban található HP_DISABLE_MODULES konstans kapcsolta ki. Az adminfelületen nem kapcsolhatod be vagy ki. Az újbóli bekapcsoláshoz távolítsd el a konstansból."
+
+#: includes/Admin/SettingsPage.php:363
+msgid "Browse, install and update plugins from the HelloPack library."
+msgstr "Böngéssz a HelloPack könyvtárában, és telepíts vagy frissíts bővítményeket."
+
+#: includes/Admin/SettingsPage.php:364
+msgid "Browse, install and update themes from the HelloPack library."
+msgstr "Böngéssz a HelloPack könyvtárában, és telepíts vagy frissíts sablonokat."
+
+#: includes/Admin/SettingsPage.php:365
+msgid ""
+"Manage license interception modules for your installed plugins and themes."
+msgstr "Kezeld a telepített bővítményeidhez és sablonjaidhoz tartozó licencellenőrzéseket elfogó modulokat."
+
+#: includes/Admin/SettingsPage.php:366
+msgid "Manage your HelloPack API connection and plugin settings."
+msgstr "Kezeld a HelloPack API-kapcsolatodat és a bővítmény beállításait."
+
+#: includes/Admin/SettingsPage.php:367
+msgid ""
+"Run system diagnostics to check your server configuration and connectivity."
+msgstr "Futtass rendszerdiagnosztikát a szerverbeállítások és a kapcsolódás ellenőrzéséhez."
+
+#: includes/Admin/SettingsPage.php:368
+msgid "Tester"
+msgstr "Tesztelő"
+
+#: includes/Admin/SettingsPage.php:369
+msgid "Documentation"
+msgstr "Dokumentáció"
+
+#: includes/Admin/SettingsPage.php:370
+msgid "Changelog"
+msgstr "Változásnapló"
+
+#: includes/Admin/SettingsPage.php:372
+msgid "Support"
+msgstr "Támogatás"
+
+#: includes/Admin/SettingsPage.php:373
+msgid "Translations"
+msgstr "Fordítások"
+
+#: includes/Admin/SettingsPage.php:374
+msgid "Browse and manage translations for your installed plugins and themes."
+msgstr "Böngészd és kezeld a telepített bővítményeid és sablonjaid fordításait."
+
+#: includes/Admin/SettingsPage.php:375
+msgid "No translations found."
+msgstr "Nem találhatók fordítások."
+
+#: includes/Admin/SettingsPage.php:378
+msgid "Translation install failed."
+msgstr "A fordítás telepítése sikertelen."
+
+#: includes/Admin/SettingsPage.php:379
+msgid "Translation delete failed."
+msgstr "A fordítás törlése sikertelen."
+
+#: includes/Admin/SettingsPage.php:380
+msgid "Plugin"
+msgstr "Bővítmény"
+
+#: includes/Admin/SettingsPage.php:381
+msgid "Theme"
+msgstr "Sablon"
+
+#: includes/Admin/SettingsPage.php:382
+msgid "Files"
+msgstr "Fájlok"
+
+#: includes/Admin/SettingsPage.php:383
+msgid "Up to date"
+msgstr "Naprakész"
+
+#: includes/Admin/SettingsPage.php:384
+msgid ""
+"Are you sure you want to delete this translation? The translation files will"
+" be removed from your site."
+msgstr "Biztosan törölni szeretnéd ezt a fordítást? A fordításfájlok törlődnek a webhelyedről."
+
+#: includes/Admin/SettingsPage.php:385
+msgid ""
+"Are you sure you want to delete this plugin? The plugin files will be "
+"removed from your site."
+msgstr "Biztosan törölni szeretnéd ezt a bővítményt? A bővítmény fájljai törlődnek a webhelyedről."
+
+#: includes/Admin/SettingsPage.php:386
+msgid ""
+"Are you sure you want to delete this theme? The theme files will be removed "
+"from your site."
+msgstr "Biztosan törölni szeretnéd ezt a sablont? A sablon fájljai törlődnek a webhelyedről."
+
+#: includes/Admin/SettingsPage.php:389
+msgid ""
+"Centralized updater, license manager, and package manager for premium "
+"WordPress plugins and themes."
+msgstr "Központosított frissítéskezelő, licenckezelő és csomagkezelő prémium WordPress-bővítményekhez és -sablonokhoz."
+
+#: includes/Admin/SettingsPage.php:390
+msgid "Why HelloWP Package Manager?"
+msgstr "Miért a HelloWP Package Manager?"
+
+#: includes/Admin/SettingsPage.php:391
+msgid ""
+"When building and maintaining WooCommerce stores, we consistently ran into "
+"the same problem: a single serious project requires 20–30 premium plugins "
+"and themes."
+msgstr "A WooCommerce-áruházak építése és karbantartása során újra meg újra ugyanazzal a problémával találkoztunk: egyetlen komoly projekthez 20–30 prémium bővítményre és sablonra van szükség."
+
+#: includes/Admin/SettingsPage.php:392
+msgid ""
+"The plugins themselves were not the issue - the overhead that came with them"
+" was:"
+msgstr "Nem maguk a bővítmények jelentették a problémát, hanem a velük járó többletterhelés:"
+
+#: includes/Admin/SettingsPage.php:393
+msgid "Constant update checks running in the background"
+msgstr "A frissítések folyamatos ellenőrzése a háttérben zajlik"
+
+#: includes/Admin/SettingsPage.php:394
+msgid "Dozens of parallel API calls to external servers"
+msgstr "Tucatnyi párhuzamos API-hívás külső szerverek felé"
+
+#: includes/Admin/SettingsPage.php:395
+msgid "License verification requests on every page load"
+msgstr "Licencellenőrzési kérések minden oldalbetöltéskor"
+
+#: includes/Admin/SettingsPage.php:396
+msgid "Background communication with third-party servers"
+msgstr "Háttérben zajló kommunikáció harmadik fél szervereivel"
+
+#: includes/Admin/SettingsPage.php:397
+msgid "Ads and promotional notices cluttering the admin"
+msgstr "Hirdetések és promóciós értesítések zsúfolják tele az adminfelületet"
+
+#: includes/Admin/SettingsPage.php:398
+msgid ""
+"In such an environment, constant background traffic runs on every page load."
+" Dozens of API calls fire in parallel, putting significant load on the "
+"server, slowing down the site, and often making the admin panel unstable or "
+"barely usable."
+msgstr "Ilyen környezetben minden oldalbetöltéskor folyamatos háttérforgalom zajlik. Tucatnyi API-hívás indul párhuzamosan, jelentősen terhelve a szervert, lassítva a webhelyet, és gyakran instabillá vagy alig használhatóvá téve az adminfelületet."
+
+#: includes/Admin/SettingsPage.php:399
+msgid ""
+"We want to work. We pay for premium tools, and in return we expect stable, "
+"fast, predictable operation - not ads and unnecessary background noise."
+msgstr "Dolgozni szeretnénk. Fizetünk a prémium eszközökért, cserébe pedig stabil, gyors és kiszámítható működést várunk – nem hirdetéseket és szükségtelen háttérzajt."
+
+#: includes/Admin/SettingsPage.php:400
+msgid "That is why we created the HelloWP Package Manager - HelloPack."
+msgstr "Ezért hoztuk létre a HelloWP Package Manager – HelloPack bővítményt."
+
+#: includes/Admin/SettingsPage.php:401
+msgid "What HelloPack does"
+msgstr "Mit tud a HelloPack"
+
+#: includes/Admin/SettingsPage.php:402
+msgid "Unified update management"
+msgstr "Egységes frissítéskezelés"
+
+#: includes/Admin/SettingsPage.php:403
+msgid ""
+"All plugin and theme updates handled through a single, efficient channel."
+msgstr "Minden bővítmény és sablon frissítése egyetlen hatékony csatornán keresztül történik."
+
+#: includes/Admin/SettingsPage.php:404
+msgid "Centralized licensing"
+msgstr "Központosított licenckezelés"
+
+#: includes/Admin/SettingsPage.php:405
+msgid "One license system replaces dozens of individual checks and API calls."
+msgstr "Egyetlen licencrendszer váltja ki a tucatnyi egyedi ellenőrzést és API-hívást."
+
+#: includes/Admin/SettingsPage.php:406
+msgid "Minimal external API calls"
+msgstr "Minimális számú külső API-hívás"
+
+#: includes/Admin/SettingsPage.php:407
+msgid "Eliminates unnecessary background traffic that slows down your site."
+msgstr "Megszünteti a webhelyedet lassító szükségtelen háttérforgalmat."
+
+#: includes/Admin/SettingsPage.php:408
+msgid "Composer & CLI support"
+msgstr "Composer- és CLI-támogatás"
+
+#: includes/Admin/SettingsPage.php:409
+msgid "Install and manage plugins via Composer or the command line."
+msgstr "Telepíts és kezelj bővítményeket Composerrel vagy parancssorból."
+
+#: includes/Admin/SettingsPage.php:410
+msgid "Full ecosystem control"
+msgstr "Teljes körű irányítás az ökoszisztéma felett"
+
+#: includes/Admin/SettingsPage.php:411
+msgid "Complete oversight of your WordPress stack from a single dashboard."
+msgstr "A WordPress-környezeted teljes felügyelete egyetlen vezérlőpultról."
+
+#: includes/Admin/SettingsPage.php:412
+msgid ""
+"The goal of HelloPack is simple: reduce the noise, increase performance, and"
+" give control back to the developer."
+msgstr "A HelloPack célja egyszerű: csökkenteni a háttérzajt, növelni a teljesítményt, és visszaadni az irányítást a fejlesztőnek."
+
+#: includes/Admin/SettingsPage.php:413
+msgid "Plugin Information"
+msgstr "Bővítményadatok"
+
+#: includes/Admin/SettingsPage.php:414
+msgid "Version"
+msgstr "Verzió"
+
+#: includes/Admin/SettingsPage.php:415
+msgid "Developer"
+msgstr "Fejlesztő"
+
+#: includes/Admin/SettingsPage.php:416
+msgid "Website"
+msgstr "Weboldal"
+
+#: includes/Admin/SettingsPage.php:417
+msgid "License"
+msgstr "Licenc"
+
+#: includes/Admin/SettingsPage.php:418
+msgid "Useful Links"
+msgstr "Hasznos hivatkozások"
+
+#: includes/Admin/SettingsPage.php:419
+msgid "HelloPack Documentation"
+msgstr "HelloPack-dokumentáció"
+
+#: includes/Admin/SettingsPage.php:420
+msgid "Installation guides, module references, and troubleshooting."
+msgstr "Telepítési útmutatók, modulreferenciák és hibaelhárítás."
+
+#: includes/Admin/SettingsPage.php:421
+msgid "Found a bug? Report it so we can fix it quickly."
+msgstr "Szoftverhibát találtál? Jelentsd, hogy gyorsan kijavíthassuk."
+
+#: includes/Admin/SettingsPage.php:422
+msgid "Get help from the HelloWP support team."
+msgstr "Kérj segítséget a HelloWP támogatási csapatától."
+
+#: includes/Admin/SettingsPage.php:423
+msgid "HelloWP Blog"
+msgstr "HelloWP Blog"
+
+#: includes/Admin/SettingsPage.php:424
+msgid "WordPress news, tips, and tutorials in Hungarian."
+msgstr "WordPress-hírek, tippek és oktatóanyagok magyarul."
+
+#: includes/Admin/SettingsPage.php:425
+msgid "Submit a Bug Report"
+msgstr "Szoftverhiba bejelentése"
+
+#: includes/Admin/SettingsPage.php:426
+msgid "Title"
+msgstr "Cím"
+
+#: includes/Admin/SettingsPage.php:427
+msgid "Description"
+msgstr "Leírás"
+
+#: includes/Admin/SettingsPage.php:428
+msgid "Attachments"
+msgstr "Mellékletek"
+
+#: includes/Admin/SettingsPage.php:429
+msgid "Add Files"
+msgstr "Fájlok hozzáadása"
+
+#: includes/Admin/SettingsPage.php:430
+msgid "Max 10MB per file. Allowed: png, jpg, gif, webp, txt, log, pdf"
+msgstr "Fájlonként legfeljebb 10 MB. Engedélyezett fájltípusok: png, jpg, gif, webp, txt, log, pdf"
+
+#: includes/Admin/SettingsPage.php:431
+msgid "System info (auto-appended)"
+msgstr "Rendszerinformáció (automatikusan hozzáfűzve)"
+
+#: includes/Admin/SettingsPage.php:432
+msgid "Submit Bug Report"
+msgstr "Szoftverhiba-jelentés küldése"
+
+#: includes/Admin/SettingsPage.php:433
+msgid "Submitting..."
+msgstr "Beküldés..."
+
+#: includes/Admin/SettingsPage.php:434
+msgid "Title is required."
+msgstr "A cím kötelező."
+
+#: includes/Admin/SettingsPage.php:435
+msgid "Description is required."
+msgstr "A leírás megadása kötelező."
+
+#: includes/Admin/SettingsPage.php:436
+msgid "Bug report submitted successfully."
+msgstr "A szoftverhiba-jelentés sikeresen elküldve."
+
+#: includes/Admin/SettingsPage.php:437
+msgid "Failed to submit bug report. Please try again."
+msgstr "Nem sikerült elküldeni a szoftverhiba-jelentést. Próbáld újra."
+
+#: includes/Admin/SettingsPage.php:438
+msgid "Name"
+msgstr "Név"
+
+#: includes/Admin/SettingsPage.php:439
+msgid "Email"
+msgstr "E-mail-cím"
+
+#: includes/Admin/SettingsPage.php:440
+msgid "optional"
+msgstr "opcionális"
+
+#: includes/Admin/SettingsPage.php:441
+msgid "Your name"
+msgstr "A neved"
+
+#: includes/Admin/SettingsPage.php:442
+msgid "Your email address"
+msgstr "Az e-mail címed"
+
+#: includes/Admin/SettingsPage.php:443
+msgid "Category"
+msgstr "Kategória"
+
+#: includes/Admin/SettingsPage.php:444
+msgid "Token, authentication or connection issues."
+msgstr "Tokennel, hitelesítéssel vagy kapcsolattal kapcsolatos problémák."
+
+#: includes/Admin/SettingsPage.php:445
+msgid "Installing, updating, activating or deleting plugins."
+msgstr "Bővítmények telepítése, frissítése, bekapcsolása vagy törlése."
+
+#: includes/Admin/SettingsPage.php:446
+msgid "Installing, updating or switching themes."
+msgstr "Sablonok telepítése, frissítése vagy váltása."
+
+#: includes/Admin/SettingsPage.php:447
+msgid "License interception modules, toggling on/off."
+msgstr "Licencelfogó modulok be- és kikapcsolása."
+
+#: includes/Admin/SettingsPage.php:448
+msgid "Translation management, missing or broken translations."
+msgstr "Fordítások kezelése, hiányzó vagy hibás fordítások."
+
+#: includes/Admin/SettingsPage.php:449
+msgid "Display issues, layout problems or navigation bugs."
+msgstr "Megjelenítési problémák, elrendezési gondok vagy navigációs szoftverhibák."
+
+#: includes/Admin/SettingsPage.php:450
+msgid "Feature Request"
+msgstr "Funkciókérés"
+
+#: includes/Admin/SettingsPage.php:451
+msgid "Suggest a new feature or improvement."
+msgstr "Javasolj új funkciót vagy fejlesztést."
+
+#: includes/Admin/SettingsPage.php:452
+msgid "Other"
+msgstr "Egyéb"
+
+#: includes/Admin/SettingsPage.php:453
+msgid "Anything that does not fit the categories above."
+msgstr "Bármi, ami nem illik a fenti kategóriákba."
+
+#: includes/Admin/SettingsPage.php:454
+msgid "Admin Interface"
+msgstr "Adminfelület"
+
+#: includes/Admin/SettingsPage.php:455
+msgid "Brief summary of the issue"
+msgstr "A probléma rövid összefoglalása"
+
+#: includes/Admin/SettingsPage.php:456
+msgid "Describe the issue in detail. Include steps to reproduce if possible."
+msgstr "Írd le részletesen a problémát. Ha lehetséges, add meg az előidézéséhez szükséges lépéseket is."
+
+#. translators: %s is the file name.
+#: includes/Admin/SettingsPage.php:458
+#, php-format
+msgid "Invalid file type: %s"
+msgstr "Hibás fájltípus: %s"
+
+#. translators: %s is the file name.
+#: includes/Admin/SettingsPage.php:460
+#, php-format
+msgid "File too large (max 10MB): %s"
+msgstr "Túl nagy a fájl (legfeljebb 10 MB): %s"
+
+#. translators: %s is the (white-label) product name.
+#: includes/Admin/SettingsPage.php:464
+#, php-format
+msgid "About %s"
+msgstr "A %s névjegye"
+
+#. translators: %s is the (white-label) product name.
+#: includes/Admin/SettingsPage.php:466
+#, php-format
+msgid "%s Documentation"
+msgstr "%s dokumentációja"
+
+#. translators: %s is the (white-label) product name.
+#: includes/Admin/SettingsPage.php:468
+#, php-format
+msgid "Connect to %s API"
+msgstr "Kapcsolódás a(z) %s API-hoz"
+
+#: includes/Admin/SettingsPage.php:469
+msgid "Step 1: Get your API token from your provider."
+msgstr "1. lépés: Kérd el a szolgáltatódtól az API-tokent."
+
+#. translators: %s is the (white-label) product name.
+#: includes/Admin/SettingsPage.php:471
+#, php-format
+msgid "Paste your %s API token here"
+msgstr "Illeszd be ide a %s API-tokenjét"
+
+#. translators: %s is the (white-label) product name.
+#: includes/Admin/SettingsPage.php:473
+#, php-format
+msgid "Manage your %s API connection and plugin settings."
+msgstr "Kezeld a %s API-kapcsolatát és bővítménybeállításait."
+
+#. translators: %s is the (white-label) product name.
+#: includes/Admin/SettingsPage.php:475
+#, php-format
+msgid "Browse, install and update plugins from the %s library."
+msgstr "Böngéssz a %s könyvtárában található bővítmények között, és telepítsd vagy frissítsd őket."
+
+#. translators: %s is the (white-label) product name.
+#: includes/Admin/SettingsPage.php:477
+#, php-format
+msgid "Browse, install and update themes from the %s library."
+msgstr "Böngéssz a %s könyvtárában található sablonok között, és telepítsd vagy frissítsd őket."
+
+#. translators: %s is the (white-label) product name.
+#: includes/Admin/SettingsPage.php:479
+#, php-format
+msgid ""
+"Enable WordPress auto-update toggles for %s-managed plugins on the Plugins "
+"page."
+msgstr "Kapcsold be a WordPress automatikus frissítési kapcsolóit a %s által kezelt bővítményeknél a bővítmények oldalon."
+
+#. translators: %s is the (white-label) product name.
+#: includes/Admin/SettingsPage.php:481
+#, php-format
+msgid "Receive beta versions of %s for early testing."
+msgstr "Kapd meg a %s béta verzióit korai teszteléshez."
+
+#. translators: %s is the (white-label) product name.
+#: includes/Admin/SettingsPage.php:483
+#, php-format
+msgid ""
+"Enables version rollback for %s-managed plugins and themes. Requires WP "
+"Rollback Pro."
+msgstr "Bekapcsolja a %s által kezelt bővítmények és sablonok verzió-visszaállítását. A WP Rollback Pro szükséges hozzá."
+
+#: includes/Admin/SettingsPage.php:484
+msgid "Contact your provider for help."
+msgstr "Kérj segítséget a szolgáltatódtól."
+
+#: includes/Admin/SettingsPage.php:488
+msgid "Status endpoint"
+msgstr "Állapotvégpont"
+
+#: includes/Admin/SettingsPage.php:489
+msgid ""
+"A read-only report of this site's health for an external monitoring service."
+" It measures; it never changes anything. Off by default."
+msgstr "A webhely állapotáról készült, csak olvasható jelentés egy külső felügyeleti szolgáltatás számára. Méréseket végez, de semmit sem módosít. Alapértelmezés szerint ki van kapcsolva."
+
+#: includes/Admin/SettingsPage.php:490
+msgid "Enabled"
+msgstr "Bekapcsolva"
+
+#: includes/Admin/SettingsPage.php:491
+msgid "Access"
+msgstr "Hozzáférés"
+
+#: includes/Admin/SettingsPage.php:492 modules/system-php-security.php:215
+msgid "Copied"
+msgstr "Másolva"
+
+#: includes/Admin/SettingsPage.php:493
+msgid "Status URL copied to clipboard."
+msgstr "Az állapot-URL a vágólapra másolva."
+
+#: includes/Admin/SettingsPage.php:494
+msgid "Could not copy. Select the text and copy it by hand."
+msgstr "Nem sikerült másolni. Jelöld ki a szöveget, és másold ki kézzel."
+
+#: includes/Admin/SettingsPage.php:495
+msgid "Status URL"
+msgstr "Állapot-URL"
+
+#: includes/Admin/SettingsPage.php:496
+msgid "Give this address to your monitoring service."
+msgstr "Add meg ezt a címet a felügyeleti szolgáltatásodnak."
+
+#: includes/Admin/SettingsPage.php:497
+msgid ""
+"The key in it is the only protection — anyone who knows the address can read"
+" the report."
+msgstr "A benne lévő kulcs az egyetlen védelem — aki ismeri a címet, elolvashatja a jelentést."
+
+#: includes/Admin/SettingsPage.php:498
+msgid "Created"
+msgstr "Létrehozva"
+
+#: includes/Admin/SettingsPage.php:499
+msgid "No address yet. Generate one and hand it to your monitoring service."
+msgstr "Még nincs cím. Hozz létre egyet, és add meg a felügyeleti szolgáltatásodnak."
+
+#: includes/Admin/SettingsPage.php:500
+msgid "Generate URL"
+msgstr "URL létrehozása"
+
+#: includes/Admin/SettingsPage.php:501
+msgid "Generate new URL"
+msgstr "Új URL létrehozása"
+
+#: includes/Admin/SettingsPage.php:502
+msgid "The current URL stops working immediately. Continue?"
+msgstr "Az aktuális URL azonnal érvénytelenné válik. Folytatod?"
+
+#: includes/Admin/SettingsPage.php:503
+msgid "Reuse a result for"
+msgstr "Eredmény újrafelhasználása ennyi ideig"
+
+#: includes/Admin/SettingsPage.php:504
+msgid "1 minute"
+msgstr "1 perc"
+
+#: includes/Admin/SettingsPage.php:505
+msgid "5 minutes"
+msgstr "5 perc"
+
+#: includes/Admin/SettingsPage.php:506
+msgid "15 minutes"
+msgstr "15 perc"
+
+#: includes/Admin/SettingsPage.php:507
+msgid ""
+"A stored result is served for this long; after that the next request runs "
+"the checks again."
+msgstr "Ennyi ideig egy tárolt eredmény jelenik meg; ezután a következő kérés ismét lefuttatja az ellenőrzéseket."
+
+#: includes/Admin/SettingsPage.php:508
+msgid "Checks"
+msgstr "Ellenőrzések"
+
+#: includes/Admin/SettingsPage.php:509
+msgid ""
+"Each check can be switched on or off. Disabled and not-applicable checks are"
+" left out of the report."
+msgstr "Minden ellenőrzést be- vagy ki lehet kapcsolni. A kikapcsolt és nem alkalmazható ellenőrzések kimaradnak a jelentésből."
+
+#: includes/Admin/SettingsPage.php:510
+msgid "Run now"
+msgstr "Futtatás most"
+
+#: includes/Admin/SettingsPage.php:511
+msgid "Running…"
+msgstr "Folyamatban…"
+
+#: includes/Admin/SettingsPage.php:512
+msgid "Check"
+msgstr "Ellenőrzés"
+
+#: includes/Admin/SettingsPage.php:513
+msgid "Source"
+msgstr "Forrás"
+
+#: includes/Admin/SettingsPage.php:514
+msgid "Last result"
+msgstr "Utolsó eredmény"
+
+#: includes/Admin/SettingsPage.php:515
+msgid "Not applicable"
+msgstr "Nem alkalmazható"
+
+#: includes/Admin/SettingsPage.php:516
+msgid "Not run yet"
+msgstr "Még nem futott le"
+
+#: includes/Admin/SettingsPage.php:517
+msgid "Details"
+msgstr "Részletek"
+
+#: includes/Admin/SettingsPage.php:518
+msgid "Overall"
+msgstr "Összesen"
+
+#: includes/Admin/SettingsPage.php:519
+msgid "last run"
+msgstr "utolsó futtatás"
+
+#: includes/Admin/SettingsPage.php:520
+msgid "cached"
+msgstr "gyorsítótárazott"
+
+#: includes/Admin/SettingsPage.php:521
+msgid "fresh"
+msgstr "friss"
+
+#: includes/Admin/SettingsPage.php:522
+msgid "checks"
+msgstr "ellenőrzések"
+
+#: includes/Admin/SettingsPage.php:523
+msgid "fine"
+msgstr "rendben"
+
+#: includes/Admin/SettingsPage.php:524
+msgid "needs attention"
+msgstr "figyelmet igényel"
+
+#: includes/Admin/SettingsPage.php:525
+msgid "broken"
+msgstr "hibás"
+
+#: includes/Admin/SettingsPage.php:526
+msgid "not measurable"
+msgstr "nem mérhető"
+
+#: includes/Admin/SettingsPage.php:527
+msgid "Settings saved."
+msgstr "Beállítások elmentve."
+
+#: includes/Admin/SettingsPage.php:528
+msgid "Previous"
+msgstr "Előző"
+
+#: includes/Admin/SettingsPage.php:529
+msgid "Next"
+msgstr "Következő"
+
+#: includes/Admin/SettingsPage.php:530
+msgid "First"
+msgstr "Első"
+
+#: includes/Admin/SettingsPage.php:531
+msgid "Last"
+msgstr "Utolsó"
+
+#: includes/Admin/SettingsPage.php:532
+msgid "More pages"
+msgstr "További oldalak"
+
+#: includes/Admin/SettingsPage.php:533
+msgid "Close"
+msgstr "Bezárás"
+
+#: includes/Admin/SettingsPage.php:534
+msgid "1 issue"
+msgstr "1 probléma"
+
+#. translators: %d: number of failed checks.
+#: includes/Admin/SettingsPage.php:536
+#, php-format
+msgid "%d issues"
+msgstr "%d probléma"
+
+#: includes/Admin/SettingsPage.php:537
+msgid "Starting process…"
+msgstr "Folyamat indítása…"
+
+#: includes/Admin/SettingsPage.php:538
+msgid "Downloading update package…"
+msgstr "Frissítési csomag letöltése…"
+
+#: includes/Admin/SettingsPage.php:539
+msgid "Unpacking the update…"
+msgstr "Frissítés kicsomagolása…"
+
+#: includes/Admin/SettingsPage.php:540
+msgid "Installing the latest version…"
+msgstr "Legújabb verzió telepítése…"
+
+#: includes/Admin/SettingsPage.php:541
+msgid "Removing the old version…"
+msgstr "Régi verzió eltávolítása…"
+
+#: includes/Admin/SettingsPage.php:542
+msgid "Downloading package…"
+msgstr "Csomag letöltése…"
+
+#: includes/Admin/SettingsPage.php:543
+msgid "Unpacking the package…"
+msgstr "Csomag kicsomagolása…"
+
+#: includes/Admin/SettingsPage.php:544
+msgid "Installing…"
+msgstr "Telepítés…"
+
+#: includes/Admin/SettingsPage.php:545
+msgid "Activating…"
+msgstr "Aktiválás…"
+
+#: includes/Admin/SettingsPage.php:546
+msgid "Verifying activation…"
+msgstr "Aktiválás ellenőrzése…"
+
+#: includes/Admin/SettingsPage.php:547
+msgid "Deactivating…"
+msgstr "Kikapcsolás…"
+
+#: includes/Admin/SettingsPage.php:548
+msgid "Removing files…"
+msgstr "Fájlok eltávolítása…"
+
+#: includes/Admin/SettingsPage.php:549
+msgid "Cleaning up…"
+msgstr "Tisztítás…"
+
+#: includes/Admin/SettingsPage.php:550
+#: includes/Admin/Upgrader/AjaxSkin.php:118
+msgid "Process completed."
+msgstr "A folyamat befejezve."
+
+#: includes/Admin/SettingsPage.php:551
+msgid "Configuration Overrides"
+msgstr "Konfigurációs felülbírálások"
+
+#: includes/Admin/SettingsPage.php:552
+msgid ""
+"These items are excluded from HelloPack in wp-config.php. To manage them "
+"here again, remove them from the constant."
+msgstr "Ezek a tételek ki vannak zárva a HelloPack kezeléséből a wp-config.php fájlban. Ha ismét itt szeretnéd kezelni őket, távolítsd el őket a konstansból."
+
+#: includes/Admin/SettingsPage.php:553
+msgid "HelloPack does not update these plugins or manage their licences."
+msgstr "A HelloPack nem frissíti ezeket a bővítményeket, és nem kezeli a licenceiket."
+
+#: includes/Admin/SettingsPage.php:554
+msgid "HelloPack does not update these themes or manage their licences."
+msgstr "A HelloPack nem frissíti ezeket a sablonokat, és nem kezeli a licenceiket."
+
+#: includes/Admin/SettingsPage.php:555
+msgid ""
+"These licence modules stay switched off and cannot be turned on from the "
+"Modules page."
+msgstr "Ezek a licencmodulok kikapcsolva maradnak, és nem lehet őket bekapcsolni a Modulok oldalon."
+
+#: includes/Admin/Upgrader/AjaxSkin.php:107
+msgid "Starting process..."
+msgstr "Folyamat indítása..."
+
+#: includes/Api/Client.php:67
+msgid "API requests must use HTTPS."
+msgstr "Az API-kéréseknek HTTPS-t kell használniuk."
+
+#: includes/Api/Client.php:81
+msgid "An API token is required."
+msgstr "API-token szükséges."
+
+#: includes/Api/Client.php:101
+msgid "An unknown API error occurred."
+msgstr "Ismeretlen API-hiba történt."
+
+#: includes/Api/Client.php:108
+msgid "Invalid JSON response."
+msgstr "Hibás JSON-válasz."
+
+#: includes/Cli/LicenseCommand.php:49
+msgid "Invalid API token — must be at least 20 characters."
+msgstr "Hibás API-token — legalább 20 karakter hosszúnak kell lennie."
+
+#: includes/Cli/LicenseCommand.php:65
+msgid "API token activated successfully."
+msgstr "Az API-token aktiválása sikerült."
+
+#: includes/Cli/LicenseCommand.php:87
+msgid "HelloPack license deactivated."
+msgstr "A HelloPack-licenc deaktiválva."
+
+#. translators: %d: number of options.
+#: includes/Cli/LicenseCommand.php:194
+#, php-format
+msgid "Dry run: %d licence options would be written."
+msgstr "Próbaüzem: %d licencopció kerülne kiírásra."
+
+#. translators: 1: number of options written, 2: number of modules cleaned.
+#: includes/Cli/LicenseCommand.php:200
+#, php-format
+msgid "%1$d licence options written, %2$d modules cleaned."
+msgstr "%1$d licencopció kiírva, %2$d modul megtisztítva."
+
+#. translators: %s: module ID.
+#: includes/Cli/ModuleCommand.php:154
+#, php-format
+msgid "Module not found: %s"
+msgstr "A modul nem található: %s"
+
+#: includes/Cli/ModuleCommand.php:158
+msgid "for the whole network"
+msgstr "a teljes hálózaton"
+
+#: includes/Cli/ModuleCommand.php:159
+msgid "for this site"
+msgstr "ezen a webhelyen"
+
+#. translators: 1: module name, 2: scope ("for this site" / "for the whole
+#. network").
+#: includes/Cli/ModuleCommand.php:164
+#, php-format
+msgid "Module %1$s enabled %2$s."
+msgstr "A(z) %1$s modul bekapcsolva (%2$s)."
+
+#. translators: 1: module name, 2: scope ("for this site" / "for the whole
+#. network").
+#: includes/Cli/ModuleCommand.php:166
+#, php-format
+msgid "Module %1$s disabled %2$s."
+msgstr "A(z) %1$s modul kikapcsolva (%2$s)."
+
+#: includes/Cli/NetworkCommand.php:105
+msgid "This is not a multisite install; showing the single site."
+msgstr "Ez nem többwebhelyes telepítés; az egyetlen webhely jelenik meg."
+
+#: includes/Cli/PluginCommand.php:102
+msgid "No purchased plugins found."
+msgstr "Nem találhatók megvásárolt bővítmények."
+
+#. translators: 1: number installed, 2: total number requested.
+#: includes/Cli/PluginCommand.php:170 includes/Cli/PluginCommand.php:180
+#, php-format
+msgid "Installed %1$d of %2$d plugins."
+msgstr "A %2$d bővítményből %1$d telepítve."
+
+#. translators: %s: plugin slug or ID
+#: includes/Cli/PluginCommand.php:205
+#, php-format
+msgid "Plugin \"%s\" not found in purchased items."
+msgstr "A(z) „%s” bővítmény nem található a megvásárolt tételek között."
+
+#. translators: %s: plugin name
+#: includes/Cli/PluginCommand.php:215
+#, php-format
+msgid "Installing plugin: %s"
+msgstr "Bővítmény telepítése: %s"
+
+#: includes/Cli/PluginCommand.php:223
+msgid "Plugin installation failed."
+msgstr "A bővítmény telepítése sikertelen."
+
+#. translators: %s: plugin name
+#: includes/Cli/PluginCommand.php:230
+#, php-format
+msgid "Plugin \"%s\" installed successfully."
+msgstr "A(z) „%s” bővítmény telepítése sikeres."
+
+#. translators: 1: plugin name, 2: reason the plugin could not be activated
+#: includes/Cli/PluginCommand.php:242
+#, php-format
+msgid "Plugin \"%1$s\" could not be activated automatically. %2$s"
+msgstr "A(z) „%1$s” bővítményt nem sikerült automatikusan bekapcsolni. %2$s"
+
+#. translators: %s: plugin name
+#: includes/Cli/PluginCommand.php:248
+#, php-format
+msgid "Plugin \"%s\" could not be activated automatically."
+msgstr "A(z) „%s” bővítményt nem sikerült automatikusan bekapcsolni."
+
+#. translators: %s: plugin name
+#: includes/Cli/PluginCommand.php:256
+#, php-format
+msgid "Plugin \"%s\" activated."
+msgstr "A(z) „%s” bővítmény bekapcsolva."
+
+#: includes/Cli/PluginCommand.php:292
+msgid "No HelloPack plugins are installed."
+msgstr "Nincs telepítve HelloPack-bővítmény."
+
+#: includes/Cli/PluginCommand.php:298
+msgid "Specify at least one plugin slug, or use --all."
+msgstr "Adj meg legalább egy plugin slugot, vagy használd a --all kapcsolót."
+
+#. translators: 1: number updated, 2: total number requested.
+#: includes/Cli/PluginCommand.php:319
+#, php-format
+msgid "Updated %1$d of %2$d plugins."
+msgstr "%1$d/%2$d bővítmény frissítve."
+
+#: includes/Cli/PluginCommand.php:361
+msgid "Invalid plugin slug."
+msgstr "Hibás plugin slug."
+
+#. translators: %s: plugin slug
+#: includes/Cli/PluginCommand.php:387
+#, php-format
+msgid "Plugin \"%s\" is already up to date."
+msgstr "A(z) „%s” bővítmény már naprakész."
+
+#. translators: 1: plugin slug, 2: from version, 3: to version
+#: includes/Cli/PluginCommand.php:401
+#, php-format
+msgid "Plugin \"%1$s\" updated %2$s → %3$s."
+msgstr "A(z) „%1$s” bővítmény frissítve: %2$s → %3$s."
+
+#: includes/Cli/SiteIterator.php:83
+msgid "Invalid --sites value. Use a comma-separated list of site IDs."
+msgstr "Hibás --sites érték. Vesszővel elválasztott webhelyazonosítókat adj meg."
+
+#: includes/Cli/StatusCommand.php:80
+msgid "No valid check ids given; running all checks."
+msgstr "Nem adtál meg érvényes ellenőrzésazonosítókat; az összes ellenőrzés futtatása következik."
+
+#. translators: 1: status, 2: age
+#: includes/Cli/StatusCommand.php:105
+#, php-format
+msgid "Overall: %1$s  (cached %2$s ago — use --fresh to re-run)"
+msgstr "Összesített állapot: %1$s (a gyorsítótárazás óta eltelt idő: %2$s – az ismételt futtatáshoz használd a --fresh kapcsolót)"
+
+#. translators: %s: status
+#: includes/Cli/StatusCommand.php:107
+#, php-format
+msgid "Overall: %s"
+msgstr "Összesített állapot: %s"
+
+#: includes/Cli/StatusCommand.php:125
+msgid "Status endpoint enabled."
+msgstr "Az állapot-végpont bekapcsolva."
+
+#: includes/Cli/StatusCommand.php:139
+msgid "Status endpoint disabled."
+msgstr "Az állapot-végpont kikapcsolva."
+
+#: includes/Cli/StatusCommand.php:190
+msgid "Action must be list, enable or disable."
+msgstr "A művelet értéke lista, bekapcsolás vagy kikapcsolás lehet."
+
+#. translators: %s: check id
+#: includes/Cli/StatusCommand.php:198
+#, php-format
+msgid "Unknown check: %s"
+msgstr "Ismeretlen ellenőrzés: %s"
+
+#. translators: %d: number of checks
+#: includes/Cli/StatusCommand.php:209
+#, php-format
+msgid "%d check enabled."
+msgid_plural "%d checks enabled."
+msgstr[0] "%d ellenőrzés bekapcsolva."
+msgstr[1] "%d ellenőrzés bekapcsolva."
+
+#. translators: %d: number of checks
+#: includes/Cli/StatusCommand.php:211
+#, php-format
+msgid "%d check disabled."
+msgid_plural "%d checks disabled."
+msgstr[0] "%d ellenőrzés kikapcsolva."
+msgstr[1] "%d ellenőrzés kikapcsolva."
+
+#: includes/Cli/StatusCommand.php:241
+msgid "New status URL generated. The previous one no longer works."
+msgstr "Új állapot-URL készült. Az előző már nem működik."
+
+#. translators: %s: action given
+#: includes/Cli/StatusCommand.php:247
+#, php-format
+msgid "Unknown action \"%s\". Use \"regenerate\" or no action."
+msgstr "Ismeretlen művelet: „%s”. Használd a „regenerate” értéket, vagy ne adj meg műveletet."
+
+#: includes/Cli/StatusCommand.php:251
+msgid ""
+"No status URL yet. Run `wp hellopack status url regenerate` to create one."
+msgstr "Még nincs állapot-URL. Hozz létre egyet a `wp hellopack status url regenerate` paranccsal."
+
+#. translators: %d: seconds
+#: includes/Cli/StatusCommand.php:277
+#, php-format
+msgid "Cache TTL set to %d seconds."
+msgstr "A gyorsítótár TTL-értéke %d másodpercre van beállítva."
+
+#: includes/Cli/ThemeCommand.php:102
+msgid "No purchased themes found."
+msgstr "Nem található megvásárolt sablon."
+
+#. translators: 1: number installed, 2: total number requested.
+#: includes/Cli/ThemeCommand.php:161
+#, php-format
+msgid "Installed %1$d of %2$d themes."
+msgstr "%1$d/%2$d sablon telepítve."
+
+#. translators: %s: theme slug or ID
+#: includes/Cli/ThemeCommand.php:190
+#, php-format
+msgid "Theme \"%s\" not found in purchased items."
+msgstr "A(z) „%s” sablon nem található a megvásárolt tételek között."
+
+#. translators: %s: theme name
+#: includes/Cli/ThemeCommand.php:200
+#, php-format
+msgid "Installing theme: %s"
+msgstr "Sablon telepítése: %s"
+
+#: includes/Cli/ThemeCommand.php:208
+msgid "Theme installation failed."
+msgstr "A sablon telepítése sikertelen."
+
+#. translators: %s: theme name
+#: includes/Cli/ThemeCommand.php:215
+#, php-format
+msgid "Theme \"%s\" installed successfully."
+msgstr "A(z) „%s” sablon telepítése sikeres."
+
+#. translators: %s: theme name
+#: includes/Cli/ThemeCommand.php:224
+#, php-format
+msgid "Theme \"%s\" activated."
+msgstr "A(z) „%s” sablon aktiválva."
+
+#: includes/Cli/ThemeCommand.php:253
+msgid "Invalid theme slug."
+msgstr "A sablon slugja hibás."
+
+#. translators: 1: theme slug, 2: from version, 3: to version
+#: includes/Cli/ThemeCommand.php:277
+#, php-format
+msgid "Theme \"%1$s\" updated %2$s → %3$s."
+msgstr "A(z) „%1$s” sablon frissítve: %2$s → %3$s."
+
+#: includes/Cron/AuthCheck.php:72
+msgid "Every 10 minutes"
+msgstr "10 percenként"
+
+#: includes/Cron/AuthCheck.php:147
+msgid ""
+"HelloPack: Automatic reconnection failed. Please check your API connection "
+"manually."
+msgstr "HelloPack: Az automatikus újracsatlakozás sikertelen. Ellenőrizd manuálisan az API-kapcsolatot."
+
+#: includes/Status/Checks/ActionSchedulerCheck.php:52
+msgid "Background jobs (Action Scheduler)"
+msgstr "Háttérfeladatok (Action Scheduler)"
+
+#: includes/Status/Checks/ActionSchedulerCheck.php:61
+msgid ""
+"Overdue and failed background actions, and whether anything ran recently."
+msgstr "Lejárt és sikertelen háttérműveletek, valamint annak ellenőrzése, hogy futott-e bármi mostanában."
+
+#: includes/Status/Checks/ActionSchedulerCheck.php:84
+msgid "Action Scheduler has no table."
+msgstr "Az Action Scheduler táblája nem létezik."
+
+#. translators: %d: number of overdue actions
+#: includes/Status/Checks/ActionSchedulerCheck.php:105
+#, php-format
+msgid ""
+"%d background actions are overdue and nothing has run for over an hour."
+msgstr "%d háttérművelet késedelmes, és több mint egy órája semmi sem futott le."
+
+#. translators: %d: number of overdue actions
+#: includes/Status/Checks/ActionSchedulerCheck.php:110
+#, php-format
+msgid "%d actions are past due."
+msgstr "%d művelet határideje lejárt."
+
+#. translators: %d: number of overdue actions
+#: includes/Status/Checks/ActionSchedulerCheck.php:115
+#, php-format
+msgid "%d background actions are overdue."
+msgstr "%d háttérművelet késedelmes."
+
+#: includes/Status/Checks/ActionSchedulerCheck.php:118
+msgid "Background jobs are keeping up."
+msgstr "A háttérfeladatok rendben haladnak."
+
+#: includes/Status/Checks/AutoloadCheck.php:45
+msgid "Autoloaded options"
+msgstr "Automatikusan betöltött opciók"
+
+#: includes/Status/Checks/AutoloadCheck.php:54
+msgid "Total size of options loaded on every page view, and the largest ones."
+msgstr "Az oldal minden megtekintésekor betöltődő opciók összmérete és a legnagyobb opciók."
+
+#. translators: %s: size
+#: includes/Status/Checks/AutoloadCheck.php:101
+#, php-format
+msgid "Autoloaded options total %s — every page view loads all of it."
+msgstr "Az automatikusan betöltött opciók összmérete %s – minden oldalmegtekintéskor mind betöltődik."
+
+#. translators: %s: size
+#: includes/Status/Checks/AutoloadCheck.php:106
+#, php-format
+msgid "Autoloaded options total %s; WordPress recommends under 800 KB."
+msgstr "Az automatikusan betöltött opciók összmérete %s; a WordPress 800 KB alatti méretet javasol."
+
+#. translators: %s: size
+#: includes/Status/Checks/AutoloadCheck.php:110
+#, php-format
+msgid "Autoloaded options total %s."
+msgstr "Az automatikusan betöltött opciók összmérete %s."
+
+#: includes/Status/Checks/BackupCheck.php:54
+msgid "Backups"
+msgstr "Biztonsági mentések"
+
+#: includes/Status/Checks/BackupCheck.php:63
+msgid ""
+"How old the last successful backup is (UpdraftPlus or All-in-One WP "
+"Migration)."
+msgstr "Az utolsó sikeres biztonsági mentés óta eltelt idő (UpdraftPlus vagy All-in-One WP Migration)."
+
+#: includes/Status/Checks/BackupCheck.php:84
+msgid "No supported backup plugin found."
+msgstr "Nem található támogatott biztonsági mentési bővítmény."
+
+#: includes/Status/Checks/BackupCheck.php:91
+msgid "No backup has ever completed."
+msgstr "Még egyetlen biztonsági mentés sem fejeződött be."
+
+#: includes/Status/Checks/BackupCheck.php:107
+msgid "The last backup failed."
+msgstr "Az utolsó mentés sikertelen volt."
+
+#. translators: %d: days
+#: includes/Status/Checks/BackupCheck.php:112
+#: includes/Status/Checks/BackupCheck.php:117
+#, php-format
+msgid "The last successful backup is %d days old."
+msgstr "Az utolsó sikeres mentés %d napos."
+
+#. translators: %d: days
+#: includes/Status/Checks/BackupCheck.php:121
+#, php-format
+msgid "Last successful backup: %d days ago."
+msgstr "Az utolsó sikeres mentés: %d napja."
+
+#: includes/Status/Checks/CronCheck.php:50
+msgid "Scheduled tasks (WP-Cron)"
+msgstr "Ütemezett feladatok (WP-Cron)"
+
+#: includes/Status/Checks/CronCheck.php:59
+msgid "Scheduled events that were due but have not run."
+msgstr "Esedékes, de még le nem futott ütemezett események."
+
+#. translators: 1: number of overdue events, 2: minutes
+#: includes/Status/Checks/CronCheck.php:104
+#, php-format
+msgid "%1$d scheduled events are overdue; the oldest for %2$d minutes."
+msgstr "%1$d ütemezett esemény késett; a legrégebbi %2$d perce."
+
+#. translators: %d: number of overdue events
+#: includes/Status/Checks/CronCheck.php:116
+#, php-format
+msgid "%d scheduled event is overdue."
+msgid_plural "%d scheduled events are overdue."
+msgstr[0] "%d ütemezett esemény késik."
+msgstr[1] "%d ütemezett esemény késik."
+
+#: includes/Status/Checks/CronCheck.php:123
+msgid "Scheduled tasks are running on time."
+msgstr "Az ütemezett feladatok időben futnak."
+
+#: includes/Status/Checks/FatalErrorsCheck.php:59
+msgid "Fatal errors"
+msgstr "Végzetes hibák"
+
+#: includes/Status/Checks/FatalErrorsCheck.php:68
+msgid "Recovery mode and PHP fatal errors logged in the last 24 hours."
+msgstr "Helyreállítási mód és az elmúlt 24 órában naplózott végzetes PHP-hibák."
+
+#: includes/Status/Checks/FatalErrorsCheck.php:89
+msgid "WordPress is in recovery mode: a plugin or theme caused a fatal error."
+msgstr "A WordPress helyreállítási módban van: egy bővítmény vagy sablon végzetes hibát okozott."
+
+#: includes/Status/Checks/FatalErrorsCheck.php:94
+msgid "No debug log to inspect."
+msgstr "Nincs vizsgálható hibakeresési napló."
+
+#. translators: %d: number of fatal errors
+#: includes/Status/Checks/FatalErrorsCheck.php:133
+#, php-format
+msgid "%d fatal error was logged in the last 24 hours."
+msgid_plural "%d fatal errors were logged in the last 24 hours."
+msgstr[0] "Az elmúlt 24 órában %d végzetes hiba került a naplóba."
+msgstr[1] "Az elmúlt 24 órában %d végzetes hiba került a naplóba."
+
+#: includes/Status/Checks/FatalErrorsCheck.php:140
+msgid "No fatal errors in the last 24 hours."
+msgstr "Az elmúlt 24 órában nem történt végzetes hiba."
+
+#: includes/Status/Checks/HellopackCheck.php:44
+msgid "HelloPack connection"
+msgstr "HelloPack-kapcsolat"
+
+#: includes/Status/Checks/HellopackCheck.php:53
+msgid ""
+"Whether HelloPack is connected, the key belongs to this domain, and licence "
+"modules are running."
+msgstr "Hogy a HelloPack csatlakozik-e, a kulcs ehhez a domainhez tartozik-e, és futnak-e a licencmodulok."
+
+#: includes/Status/Checks/HellopackCheck.php:85
+msgid "HelloPack is not connected: no API key is set."
+msgstr "A HelloPack nincs csatlakoztatva: nincs beállítva API-kulcs."
+
+#: includes/Status/Checks/HellopackCheck.php:89
+msgid "The HelloPack API key was issued for a different domain."
+msgstr "A HelloPack API-kulcsot egy másik domainhez adták ki."
+
+#: includes/Status/Checks/HellopackCheck.php:93
+msgid "HelloPack is not active: the last connection check failed."
+msgstr "A HelloPack nem aktív: az utolsó kapcsolódási ellenőrzés sikertelen volt."
+
+#. translators: %d: number of modules
+#: includes/Status/Checks/HellopackCheck.php:98
+#, php-format
+msgid "%d licence module is enabled but not running."
+msgid_plural "%d licence modules are enabled but not running."
+msgstr[0] "%d licencmodul be van kapcsolva, de nem fut."
+msgstr[1] "%d licencmodul be van kapcsolva, de nem fut."
+
+#: includes/Status/Checks/HellopackCheck.php:101
+msgid "HelloPack is connected and active."
+msgstr "A HelloPack csatlakoztatva van és aktív."
+
+#: includes/Status/Checks/MailCheck.php:49
+msgid "Outgoing email"
+msgstr "Kimenő e-mail"
+
+#: includes/Status/Checks/MailCheck.php:58
+msgid ""
+"Whether the most recent emails were delivered, from the FluentSMTP log."
+msgstr "Hogy a FluentSMTP naplója szerint kézbesítették-e a legutóbbi e-maileket."
+
+#: includes/Status/Checks/MailCheck.php:83
+msgid "FluentSMTP has no log table."
+msgstr "A FluentSMTP-nek nincs naplótáblája."
+
+#: includes/Status/Checks/MailCheck.php:91
+msgid "FluentSMTP has not logged any email yet."
+msgstr "A FluentSMTP még nem naplózott e-mailt."
+
+#. translators: %d: number of emails
+#: includes/Status/Checks/MailCheck.php:107
+#, php-format
+msgid "The last %d emails all failed to send."
+msgstr "Az utolsó %d e-mail küldése mind sikertelen volt."
+
+#. translators: 1: failed, 2: window
+#: includes/Status/Checks/MailCheck.php:112
+#, php-format
+msgid "%1$d of the last %2$d emails failed to send."
+msgstr "Az utolsó %2$d e-mail közül %1$d küldése sikertelen volt."
+
+#. translators: %d: number of emails
+#: includes/Status/Checks/MailCheck.php:116
+#, php-format
+msgid "The last %d emails were sent."
+msgstr "Sikerült elküldeni az utolsó %d e-mailt."
+
+#: includes/Status/Checks/PerformanceCheck.php:82
+msgid "Server load"
+msgstr "Szerverterhelés"
+
+#: includes/Status/Checks/PerformanceCheck.php:91
+msgid ""
+"Load per CPU core, WordPress boot time and database latency, judged over the"
+" last two hours."
+msgstr "Az egy processzormagra jutó terhelés, a WordPress indulási ideje és az adatbázis válaszideje az elmúlt két óra adatai alapján értékelve."
+
+#: includes/Status/Checks/PerformanceCheck.php:160
+msgid "The server is responding normally."
+msgstr "A szerver normálisan válaszol."
+
+#. translators: %s: load per core
+#: includes/Status/Checks/PerformanceCheck.php:174
+#, php-format
+msgid ""
+"The server has been under sustained load for the last two hours (%s per "
+"core)."
+msgstr "A szerver az elmúlt két órában folyamatos terhelés alatt állt (%s processzormagonként)."
+
+#. translators: %d: milliseconds
+#: includes/Status/Checks/PerformanceCheck.php:179
+#, php-format
+msgid "The database answers slowly (%d ms round-trip)."
+msgstr "Az adatbázis lassan válaszol (%d ms oda-vissza)."
+
+#: includes/Status/Checks/PerformanceCheck.php:183
+msgid "PHP OPcache is off — PHP runs two to three times slower than it could."
+msgstr "A PHP OPcache ki van kapcsolva — a PHP két-háromszor lassabban fut, mint ahogy futhatna."
+
+#: includes/Status/Checks/PerformanceCheck.php:186
+msgid "WordPress takes over a second to boot on this server."
+msgstr "A WordPress indulása több mint egy másodpercig tart ezen a szerveren."
+
+#: includes/Status/Checks/PermalinksCheck.php:42
+msgid "Permalinks"
+msgstr "Közvetlen hivatkozások"
+
+#: includes/Status/Checks/PermalinksCheck.php:51
+msgid ""
+"Whether the stored rewrite rules are current, and on Apache whether "
+".htaccess matches."
+msgstr "Hogy a tárolt átírási szabályok aktuálisak-e, és Apache esetén egyezik-e a .htaccess fájl tartalma."
+
+#. translators: %d: number of rules
+#: includes/Status/Checks/PermalinksCheck.php:92
+#, php-format
+msgid ""
+"Permalinks are out of date: %d rewrite rules are missing. Saving the "
+"permalink settings regenerates them."
+msgstr "A közvetlen hivatkozások elavultak: %d átírási szabály hiányzik. A közvetlen hivatkozások beállításainak mentése újragenerálja ezeket."
+
+#: includes/Status/Checks/PermalinksCheck.php:100
+msgid ""
+"The WordPress block in .htaccess does not match the current rewrite rules."
+msgstr "A .htaccess fájl WordPress-blokkja nem egyezik az aktuális átírási szabályokkal."
+
+#: includes/Status/Checks/PermalinksCheck.php:104
+msgid ""
+"Pretty permalinks are on, but .htaccess has no WordPress block. Saving the "
+"permalink settings recreates it."
+msgstr "A beszédes közvetlen hivatkozások be vannak kapcsolva, de a .htaccess fájlban nincs WordPress-blokk. A közvetlen hivatkozások beállításainak mentése létrehozza."
+
+#: includes/Status/Checks/PermalinksCheck.php:107
+msgid "Rewrite rules are current."
+msgstr "Az átírási szabályok aktuálisak."
+
+#: includes/Status/Checks/SiteUrlCheck.php:41
+msgid "Site address"
+msgstr "Webhely címe"
+
+#: includes/Status/Checks/SiteUrlCheck.php:50
+msgid ""
+"Whether the site address uses https and the two WordPress address settings "
+"agree."
+msgstr "Hogy a webhely címe https-t használ-e, és egyezik-e egymással a két WordPress-címbeállítás."
+
+#: includes/Status/Checks/SiteUrlCheck.php:86
+msgid "The site address and the WordPress address do not match."
+msgstr "A webhely címe és a WordPress címe nem egyezik."
+
+#: includes/Status/Checks/SiteUrlCheck.php:90
+msgid "The site address uses http:// — every generated link is insecure."
+msgstr "A webhely címe http:// címet használ — minden létrehozott link nem biztonságos."
+
+#: includes/Status/Checks/SiteUrlCheck.php:93
+msgid "Site address uses https and the settings agree."
+msgstr "A webhely címe https-t használ, és a beállítások egyeznek."
+
+#: includes/Status/Checks/UpdatesCheck.php:40
+msgid "Pending updates"
+msgstr "Függőben lévő frissítések"
+
+#: includes/Status/Checks/UpdatesCheck.php:49
+msgid "WordPress core, plugin and theme updates waiting to be installed."
+msgstr "Telepítésre váró WordPress-mag-, bővítmény- és sablonfrissítések."
+
+#: includes/Status/Checks/UpdatesCheck.php:75
+msgid "WordPress has not checked for updates yet."
+msgstr "A WordPress még nem ellenőrizte, hogy vannak-e frissítések."
+
+#. translators: %s: version
+#: includes/Status/Checks/UpdatesCheck.php:98
+#, php-format
+msgid ""
+"WordPress %s is a maintenance/security release and is waiting to be "
+"installed."
+msgstr "A WordPress %s karbantartási/biztonsági kiadás telepítésre vár."
+
+#. translators: %d: number of updates
+#: includes/Status/Checks/UpdatesCheck.php:105
+#, php-format
+msgid "%d update is waiting."
+msgid_plural "%d updates are waiting."
+msgstr[0] "%d frissítés van függőben."
+msgstr[1] "%d frissítés van függőben."
+
+#: includes/Status/Checks/UpdatesCheck.php:108
+msgid "Everything is up to date."
+msgstr "Minden naprakész."
+
+#: includes/Status/Checks/VisibilityCheck.php:64
+msgid "Search visibility"
+msgstr "Keresőmotoros láthatóság"
+
+#: includes/Status/Checks/VisibilityCheck.php:73
+msgid ""
+"Whether search engines are discouraged or a maintenance mode is active on "
+"the live site."
+msgstr "Hogy a keresőmotorokat visszatartják-e a webhely indexelésétől, vagy aktív-e karbantartási mód az éles webhelyen."
+
+#: includes/Status/Checks/VisibilityCheck.php:115
+msgid "Search engines are discouraged from indexing this site."
+msgstr "A keresőmotorok számára nem javasolt ennek a webhelynek az indexelése."
+
+#: includes/Status/Checks/VisibilityCheck.php:119
+msgid "A maintenance or coming-soon mode is active."
+msgstr "Karbantartási vagy „Hamarosan érkezik” mód aktív."
+
+#: includes/Status/Checks/VisibilityCheck.php:122
+msgid "The site is visible to search engines."
+msgstr "A webhely látható a keresőmotorok számára."
+
+#: includes/Status/Checks/WooCommerceComingSoonCheck.php:47
+msgid "WooCommerce coming soon"
+msgstr "WooCommerce „Hamarosan érkezik” mód"
+
+#: includes/Status/Checks/WooCommerceComingSoonCheck.php:56
+msgid "Whether the store is hidden behind WooCommerce's coming-soon page."
+msgstr "Hogy az áruház a WooCommerce „Hamarosan érkezik” oldala mögé van-e rejtve."
+
+#: includes/Status/Checks/WooCommerceComingSoonCheck.php:85
+msgid ""
+"The shop pages are in coming soon mode; the rest of the site is visible."
+msgstr "Az áruház oldalai „Hamarosan érkezik” módban vannak; a webhely többi része látható."
+
+#: includes/Status/Checks/WooCommerceComingSoonCheck.php:86
+msgid "The whole site is in WooCommerce coming soon mode."
+msgstr "A teljes webhely WooCommerce „Hamarosan érkezik” módban van."
+
+#: includes/Status/Checks/WooCommerceComingSoonCheck.php:91
+msgid "The store is live."
+msgstr "Az áruház élesben működik."
+
+#: includes/Status/Registry.php:125
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: includes/Status/Runner.php:169
+msgid "Skipped: time budget exhausted."
+msgstr "Kihagyva: elfogyott az időkeret."
+
+#. translators: %s: exception class name
+#: includes/Status/Runner.php:188
+#, php-format
+msgid "Check failed (%s)."
+msgstr "Az ellenőrzés sikertelen (%s)."
+
+#: includes/Translate/FileInstaller.php:57
+msgid "No translation files found for this item."
+msgstr "Ehhez a tételhez nem találhatók fordítási fájlok."
+
+#: includes/Translate/FileInstaller.php:122
+msgid "Could not determine local path."
+msgstr "Nem sikerült meghatározni a helyi elérési utat."
+
+#. translators: %s: local file path
+#: includes/Translate/FileInstaller.php:137
+#, php-format
+msgid "Could not write file: %s"
+msgstr "Nem sikerült írni a fájlba: %s"
+
+#: includes/Translate/FileInstaller.php:174
+msgid "Could not initialize filesystem."
+msgstr "Nem sikerült inicializálni a fájlrendszert."
+
+#. translators: %d: HTTP status code
+#: includes/Translate/GitHubClient.php:97
+#, php-format
+msgid "GitHub API returned status %d."
+msgstr "A GitHub API %d állapotkóddal válaszolt."
+
+#: includes/Translate/GitHubClient.php:104
+msgid "Invalid tree response."
+msgstr "Hibás faadatokat tartalmazó válasz."
+
+#. translators: 1: file path, 2: HTTP status code
+#: includes/Translate/GitHubClient.php:142
+#, php-format
+msgid "Failed to download %1$s (HTTP %2$d)."
+msgstr "Nem sikerült letölteni a(z) %1$s fájlt (HTTP %2$d)."
+
+#: includes/Update/Installer.php:127 includes/Update/Installer.php:276
+msgid "Could not get download URL."
+msgstr "Nem sikerült lekérni a letöltési URL-t."
+
+#: includes/Update/Installer.php:154
+msgid "Plugin installed successfully."
+msgstr "A bővítmény telepítése sikerült."
+
+#. translators: %s: which plugin is still missing.
+#: includes/Update/Installer.php:158
+#, php-format
+msgid "Plugin installed, but it cannot be activated yet. %s"
+msgstr "A bővítmény telepítése sikerült, de még nem aktiválható. %s"
+
+#. translators: %s: reason the plugin could not be activated.
+#: includes/Update/Installer.php:164
+#, php-format
+msgid "Plugin installed, but it could not be activated. %s"
+msgstr "A bővítmény telepítése sikerült, de nem sikerült aktiválni. %s"
+
+#: includes/Update/Installer.php:165
+msgid "Plugin installed, but it could not be activated."
+msgstr "A bővítmény telepítése sikerült, de nem sikerült aktiválni."
+
+#: includes/Update/Installer.php:218
+msgid "Plugin updated successfully."
+msgstr "A bővítmény frissítése sikerült."
+
+#: includes/Update/Installer.php:248
+msgid "Plugin could not be deleted."
+msgstr "A bővítményt nem sikerült törölni."
+
+#: includes/Update/Installer.php:257
+msgid "Plugin deleted."
+msgstr "Bővítmény törölve."
+
+#: includes/Update/Installer.php:306
+msgid "Theme installed successfully."
+msgstr "A sablon telepítése sikerült."
+
+#: includes/Update/Installer.php:341
+msgid "Theme updated successfully."
+msgstr "A sablon frissítése sikerült."
+
+#: includes/Update/Installer.php:359
+msgid "Cannot delete the active theme."
+msgstr "Az aktív sablont nem lehet törölni."
+
+#: includes/Update/Installer.php:374
+msgid "Theme could not be deleted."
+msgstr "Nem sikerült törölni a sablont."
+
+#: includes/Update/Installer.php:383
+msgid "Theme deleted."
+msgstr "Sablon törölve."
+
+#: includes/Update/Installer.php:503 includes/Update/UpgraderError.php:60
+msgid "The operation failed."
+msgstr "A művelet nem sikerült."
+
+#. translators: 1: plugin name, 2: comma-separated list of required plugin
+#. slugs.
+#: includes/Update/Installer.php:553
+#, php-format
+msgid ""
+"%1$s needs another plugin that is not installed on this site: %2$s. Install "
+"that first."
+msgid_plural ""
+"%1$s needs other plugins that are not installed on this site: %2$s. Install "
+"those first."
+msgstr[0] "A(z) %1$s működéséhez szükség van egy olyan bővítményre, amely nincs telepítve ezen a webhelyen: %2$s. Először ezt telepítsd."
+msgstr[1] "A(z) %1$s működéséhez szükség van olyan bővítményekre, amelyek nincsenek telepítve ezen a webhelyen: %2$s. Először ezeket telepítsd."
+
+#. translators: 1: plugin name, 2: required PHP version, 3: PHP version on the
+#. server.
+#: includes/Update/Installer.php:616
+#, php-format
+msgid "%1$s requires PHP %2$s or newer, but this site runs PHP %3$s."
+msgstr "A(z) %1$s működéséhez legalább PHP %2$s szükséges, ezen a webhelyen azonban PHP %3$s fut."
+
+#. translators: 1: plugin name, 2: required WordPress version, 3: WordPress
+#. version on the site.
+#: includes/Update/Installer.php:626
+#, php-format
+msgid ""
+"%1$s requires WordPress %2$s or newer, but this site runs WordPress %3$s."
+msgstr "A(z) %1$s működéséhez legalább WordPress %2$s szükséges, ezen a webhelyen azonban WordPress %3$s fut."
+
+#: includes/Update/UpgraderError.php:77
+msgid "This is already installed. Use Update instead of Install."
+msgstr "Ez már telepítve van. A telepítés helyett válaszd a frissítést."
+
+#: modules/ithemes-security-pro.php:138
+msgid "This Site Scan request is not supported."
+msgstr "Ez a Site Scan-kérés nem támogatott."
+
+#: modules/ithemes-security-pro.php:178
+msgid ""
+"The vulnerability database could not be reached. Please try again later."
+msgstr "Nem sikerült elérni a sebezhetőségi adatbázist. Próbáld újra később."
+
+#: modules/ithemes-security-pro.php:230
+msgid ""
+"The malware and blocklist checks could not be run. Please try again later."
+msgstr "Nem sikerült futtatni a kártevő- és tiltólistás ellenőrzéseket. Próbáld újra később."
+
+#. translators: %s: check name, "malware" or "blacklist"
+#: modules/ithemes-security-pro.php:251
+#, php-format
+msgid "The %s check could not be run. Please try again later."
+msgstr "Nem sikerült futtatni a(z) %s ellenőrzést. Próbáld újra később."
+
+#. translators: %s: package slug and version
+#: modules/ithemes-security-pro.php:348
+#, php-format
+msgid "Could not check %s: the vulnerability database is unreachable."
+msgstr "Nem sikerült ellenőrizni a(z) %s elemet: a sebezhetőségi adatbázis nem érhető el."
+
+#. translators: 1: package slug and version, 2: HTTP status code
+#: modules/ithemes-security-pro.php:366
+#, php-format
+msgid ""
+"Could not check %1$s: the vulnerability database answered with status %2$d."
+msgstr "Nem sikerült ellenőrizni a(z) %1$s elemet: a sebezhetőségi adatbázis %2$d állapotkóddal válaszolt."
+
+#: modules/ninja-forms.php:384
+msgid "Add-Ons"
+msgstr "Kiegészítők"
+
+#: modules/system-php-security.php:151
+msgid "You are not allowed to do this."
+msgstr "Ezt nem teheted meg."
+
+#. translators: %s: plugin or brand name.
+#: modules/system-php-security.php:195
+#, php-format
+msgid "%s security alert"
+msgstr "%s biztonsági riasztás"
+
+#: modules/system-php-security.php:202
+msgid "The PHP version on your hosting must be updated now"
+msgstr "Most frissítened kell a tárhelyeden futó PHP-verziót"
+
+#: modules/system-php-security.php:203
+msgid ""
+"On 21 October 2026 the PHP project fixed two critical flaws that let an "
+"attacker run code on the server without logging in. This site is vulnerable "
+"on its current PHP version."
+msgstr "2026. október 21-én a PHP-projekt kijavított két kritikus hibát, amelyek lehetővé tették, hogy egy támadó bejelentkezés nélkül kódot futtasson a szerveren. A webhely a jelenlegi PHP-verziójával sebezhető."
+
+#: modules/system-php-security.php:205
+msgid "This site"
+msgstr "Ez a webhely"
+
+#: modules/system-php-security.php:206
+msgid "Required at least"
+msgstr "Szükséges minimum"
+
+#: modules/system-php-security.php:209
+msgid ""
+"PHP 8.1 and older no longer get official fixes. Here the real fix is to "
+"switch to PHP 8.2 or newer."
+msgstr "A PHP 8.1-es és annál régebbi verziók már nem kapnak hivatalos javításokat. A valódi megoldás az áttérés PHP 8.2-re vagy újabb verzióra."
+
+#: modules/system-php-security.php:211
+msgid ""
+"Do not wait for the next maintenance window. Write to your hosting provider "
+"today."
+msgstr "Ne várd meg a következő karbantartási időszakot. Írj még ma a tárhelyszolgáltatódnak."
+
+#: modules/system-php-security.php:212
+msgid "Send this to your hosting provider:"
+msgstr "Küldd el ezt a tárhelyszolgáltatódnak:"
+
+#: modules/system-php-security.php:215
+msgid "Copy message"
+msgstr "Üzenet másolása"
+
+#: modules/system-php-security.php:219
+msgid "My hosting provider confirmed it is fixed"
+msgstr "A tárhelyszolgáltatóm megerősítette, hogy kijavították"
+
+#: modules/system-php-security.php:221
+msgid "The PHP project's announcement"
+msgstr "A PHP-projekt közleménye"
+
+#. translators: %s: minimum fixed PHP version.
+#: modules/system-php-security.php:239
+#, php-format
+msgid ""
+"Please move the site to PHP %s or newer. The PHP 8.1 branch and older no "
+"longer get official fixes."
+msgstr "Állítsd át a webhely PHP-verzióját legalább a(z) %s verzióra. A PHP 8.1-es ága és a korábbi verziók már nem kapnak hivatalos javításokat."
+
+#. translators: %s: minimum fixed PHP version.
+#: modules/system-php-security.php:241
+#, php-format
+msgid "Please update PHP to at least version %s."
+msgstr "Frissítsd a PHP-t legalább a(z) %s verzióra."
+
+#. translators: 1: site domain, 2: running PHP version, 3: what to do, 4:
+#. announcement URL.
+#: modules/system-php-security.php:245
+#, php-format
+msgid ""
+"Subject: Urgent PHP security update – %1$s\n"
+"\n"
+"Hello,\n"
+"\n"
+"The hosting of %1$s currently runs PHP %2$s. This version is affected by the two critical flaws published on 21 October 2026 (CVE-2026-109618, CVE-2026-109619), which allow remote code execution without authentication.\n"
+"\n"
+"%3$s\n"
+"If your package already includes a backported fix, please confirm this.\n"
+"\n"
+"The PHP project's announcement: %4$s\n"
+"\n"
+"Thank you for your quick help!"
+msgstr "Tárgy: Sürgős PHP-biztonsági frissítés – %1$s\n\nSzia,\n\nA(z) %1$s tárhelyén jelenleg PHP %2$s fut. Ezt a verziót érinti a 2026. október 21-én közzétett két kritikus biztonsági hiba (CVE-2026-109618, CVE-2026-109619), amelyek hitelesítés nélkül teszik lehetővé a távoli kódfuttatást.\n\n%3$s\nHa a csomagod már tartalmaz visszaportolt javítást, kérlek, erősítsd meg.\n\nA PHP-projekt közleménye: %4$s\n\nKöszönjük a gyors segítségedet!"
+
+#: modules/wp-rocket.php:181
+msgid ""
+"RocketCDN is not available with HelloPack. We recommend Cloudflare instead: "
+"its free plan delivers your whole site through its global CDN, and nothing "
+"needs to be set up here."
+msgstr "A RocketCDN nem érhető el a HelloPack csomaggal. Helyette a Cloudflare-t javasoljuk: az ingyenes csomagja a globális CDN-en keresztül szolgálja ki a teljes webhelyet, és itt nincs szükség semmilyen beállításra."

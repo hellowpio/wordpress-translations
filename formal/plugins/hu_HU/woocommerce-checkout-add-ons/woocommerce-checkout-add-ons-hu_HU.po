@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Checkout Add-Ons 2.7.4\n"
+"Project-Id-Version: WooCommerce Checkout Add-Ons 2.8.2\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:50:40+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,10 +18,10 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: WooCommerce Checkout Add-Ons\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 2.7.4\n"
+"X-Plugin-Version: 2.8.2\n"
 
 #. Plugin Name of the plugin
-#: woocommerce-checkout-add-ons.php src/Plugin.php:461
+#: woocommerce-checkout-add-ons.php src/Plugin.php:488
 msgid "WooCommerce Checkout Add-Ons"
 msgstr "WooCommerce Checkout Add-Ons"
 
@@ -35,10 +35,7 @@ msgstr "http://www.woocommerce.com/products/woocommerce-checkout-add-ons/"
 msgid ""
 "Easily create paid add-ons for your WooCommerce checkout and display them in"
 " the Orders admin, the My Orders section, and even order emails!"
-msgstr ""
-"Könnyedén hozhat létre fizetős kiegészítőket a WooCommerce pénztárhoz, és "
-"megjelenítheti azokat a Rendelések adminban, a Saját rendelések szakaszban, "
-"sőt még a rendelési e-mailekben is!"
+msgstr "Könnyedén hozhat létre fizetős kiegészítőket a WooCommerce pénztárához, és megjelenítheti azokat az adminfelület Rendelések részében, a Saját rendelések szakaszban, sőt még a rendelési e-mailekben is!"
 
 #. Author of the plugin
 #: woocommerce-checkout-add-ons.php
@@ -50,32 +47,144 @@ msgstr "SkyVerge"
 msgid "http://www.woocommerce.com"
 msgstr "http://www.woocommerce.com"
 
-#: src/Add_Ons/Add_On.php:240
+#: src/Abilities/Provider.php:58 src/Admin/Admin.php:673
+msgid "Checkout Add-Ons"
+msgstr "Pénztári kiegészítők"
+
+#: src/Abilities/Provider.php:59
+msgid "Abilities related to checkout add-ons."
+msgstr "A pénztári kiegészítőkkel kapcsolatos képességek."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:51
+msgid "Create Checkout Add-On"
+msgstr "Pénztári kiegészítő létrehozása"
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:52
+msgid "Creates a new checkout add-on."
+msgstr "Új pénztári kiegészítőt hoz létre."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:80
+msgid "The add-on type is required."
+msgstr "A kiegészítő típusa kötelező."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:90
+msgid "Invalid add-on type."
+msgstr "Hibás kiegészítőtípus."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:122
+msgid "The add-on field type."
+msgstr "A kiegészítő mezőjének típusa."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:128
+msgid "The add-on internal name."
+msgstr "A kiegészítő belső neve."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:133
+msgid "The add-on display label shown at checkout."
+msgstr "A pénztárnál megjelenő kiegészítő címkéje."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:137
+msgid "The add-on description."
+msgstr "A kiegészítő leírása."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:141
+msgid "The default value for the add-on field."
+msgstr "A kiegészítő mező alapértelmezett értéke."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:145
+msgid "Whether the add-on is enabled. Defaults to true."
+msgstr "Hogy a kiegészítő be van-e kapcsolva. Alapértelmezés szerint true."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:150
+msgid "The cost adjustment amount."
+msgstr "A költségmódosítás összege."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:154
+msgid "The type of cost adjustment."
+msgstr "A költségmódosítás típusa."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:159
+msgid "Whether the add-on cost is taxable."
+msgstr "Hogy a kiegészítő költsége adóköteles-e."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:163
+msgid "The tax class applied to the add-on."
+msgstr "A kiegészítőre alkalmazott adóosztály."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:167
+msgid "The add-on behavioral attributes."
+msgstr "A kiegészítő viselkedési attribútumai."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:176
+msgid "Options for select, multiselect, radio, and multicheckbox types."
+msgstr "A kiválasztás, a többszörös kiválasztás, a rádiógomb és a több jelölőnégyzet típusaihoz tartozó opciók."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:182
+msgid "The option display label."
+msgstr "Az opció megjelenő címkéje."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:186
+msgid "Cost adjustment for this option."
+msgstr "Az opció költségmódosítása."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:190
+msgid "Type of cost adjustment."
+msgstr "A költségmódosítás típusa."
+
+#: src/Add_Ons/Abilities/CreateAddOn.php:195
+msgid "Whether this option is selected by default."
+msgstr "Hogy ez az opció legyen-e alapértelmezés szerint kiválasztva."
+
+#: src/Add_Ons/Abilities/GetAddOn.php:49
+msgid "Get Checkout Add-On"
+msgstr "Pénztári kiegészítő lekérése"
+
+#: src/Add_Ons/Abilities/GetAddOn.php:50
+msgid "Retrieves a checkout add-on by ID."
+msgstr "Pénztári kiegészítő lekérése ID alapján."
+
+#: src/Add_Ons/Abilities/GetAddOn.php:80
+msgid "Add-on not found."
+msgstr "A kiegészítő nem található."
+
+#: src/Add_Ons/Abilities/GetAddOn.php:99
+msgid "The add-on ID."
+msgstr "A kiegészítő ID-je."
+
+#: src/Add_Ons/Abilities/ListAddOns.php:48
+msgid "List Checkout Add-Ons"
+msgstr "Pénztári kiegészítők listázása"
+
+#: src/Add_Ons/Abilities/ListAddOns.php:49
+msgid "Retrieves all checkout add-ons."
+msgstr "Az összes pénztári kiegészítő lekérése."
+
+#: src/Add_Ons/Add_On.php:241
 msgid "(no name)"
 msgstr "(nincs név)"
 
-#: src/Add_Ons/Add_On.php:460
+#: src/Add_Ons/Add_On.php:461
 msgid "Free!"
 msgstr "Ingyenes!"
 
-#: src/Add_Ons/Add_On.php:890 src/Admin/Add_Ons_List_Table.php:70
+#: src/Add_Ons/Add_On.php:891 src/Admin/Add_Ons_List_Table.php:70
 #: src/Admin/Add_Ons_List_Table.php:591
 msgid "Required"
 msgstr "Kötelező"
 
-#: src/Add_Ons/Add_On.php:891
+#: src/Add_Ons/Add_On.php:892
 msgid "Display in View Orders screen"
 msgstr "Megjelenítés a Rendelések képernyőn"
 
-#: src/Add_Ons/Add_On.php:892
+#: src/Add_Ons/Add_On.php:893
 msgid "Allow Sorting on View Orders screen"
 msgstr "Rendezés engedélyezése a Rendelések képernyőn"
 
-#: src/Add_Ons/Add_On.php:893
+#: src/Add_Ons/Add_On.php:894
 msgid "Allow Filtering on View Orders screen"
 msgstr "Szűrés engedélyezése a Rendelések képernyőn"
 
-#: src/Add_Ons/Add_On.php:897
+#: src/Add_Ons/Add_On.php:898
 msgid "Renew with Subscriptions"
 msgstr "Megújítás a Subscriptions segítségével"
 
@@ -122,15 +231,13 @@ msgstr "Érvénytelen kiegészítő"
 
 #: src/Add_Ons/Display_Rules/Cart_Subtotal.php:51
 msgid "Cart subtotal"
-msgstr "Kosár részösszeg"
+msgstr "Kosár részösszege"
 
 #: src/Add_Ons/Display_Rules/Cart_Subtotal.php:53
 msgid ""
 "Cart subtotal required to display this add-on. You may enter both minimum "
 "and maximum values, or enter one value to use an open-ended rule."
-msgstr ""
-"A kiegészítő megjelenítéséhez szükséges kosár részösszeg. Megadhat minimum- "
-"és maximumértéket is, vagy csak egyet a nyitott végű szabályhoz."
+msgstr "A kiegészítő megjelenítéséhez a kosár részösszegére van szükség. Megadhatja mind a minimum-, mind a maximumértéket, vagy csak egy értéket a nyitott végű szabály használatához."
 
 #: src/Add_Ons/Display_Rules/Cart_Subtotal.php:94
 msgid "Cart minimum"
@@ -159,23 +266,20 @@ msgstr " és "
 #. translators: Placeholders: %1$s - minimum value, %2$s - maximum value, %3$s
 #. - <strong> tag, %4$s - </strong> tag
 #: src/Add_Ons/Display_Rules/Cart_Subtotal.php:174
-#, php-format
 msgid "%3$sCart subtotal %4$s%1$s - %2$s"
-msgstr "%3$sKosár részösszeg %4$s%1$s - %2$s"
+msgstr "%3$sKosár részösszege %4$s%1$s - %2$s"
 
 #. translators: Placeholders: %1$s - minimum value, %2$s - <strong> tag, %3$s
 #. - </strong> tag
 #: src/Add_Ons/Display_Rules/Cart_Subtotal.php:185
-#, php-format
 msgid "%2$sCart subtotal %3$s > %1$s"
-msgstr "%2$sKosár részösszeg %3$s > %1$s"
+msgstr "%2$sKosár részösszege %3$s > %1$s"
 
 #. translators: Placeholders: %1$s - maximum value, %2$s - <strong> tag, %3$s
 #. - </strong> tag
 #: src/Add_Ons/Display_Rules/Cart_Subtotal.php:195
-#, php-format
 msgid "%2$sCart subtotal %3$s < %1$s"
-msgstr "%2$sKosár részösszeg %3$s < %1$s"
+msgstr "%2$sKosár részösszege %3$s < %1$s"
 
 #: src/Add_Ons/Display_Rules/Other_Add_On.php:58
 msgid ""
@@ -250,7 +354,7 @@ msgstr "Keresés... vagy hagyja üresen a termékek figyelmen kívül hagyásáh
 
 #: src/Add_Ons/Display_Rules/Product_Or_Category.php:120
 msgid "Search... or leave blank to ignore categories"
-msgstr "Keresés... vagy hagyja üresen a kategóriák figyelmen kívül hagyásához"
+msgstr "Keressen... vagy hagyja üresen, ha figyelmen kívül szeretné hagyni a kategóriákat"
 
 #. translators: Placeholders: %1$s - product links, %2$s - <strong> tag, %3$s
 #. - </strong> tag
@@ -258,7 +362,6 @@ msgstr "Keresés... vagy hagyja üresen a kategóriák figyelmen kívül hagyás
 #. - </strong> tag
 #: src/Add_Ons/Display_Rules/Product_Or_Category.php:297
 #: src/Add_Ons/Display_Rules/Product_Or_Category.php:315
-#, php-format
 msgid "%2$sCart contains%3$s %1$s"
 msgstr "%2$sA kosár tartalmaz%3$s %1$s"
 
@@ -272,14 +375,13 @@ msgid "Uploaded files:"
 msgstr "Feltöltött fájlok:"
 
 #: src/Add_Ons/File.php:108
-#, php-format
 msgid "File %d"
 msgstr "Fájl %d"
 
 #: src/Add_Ons/File.php:112 src/Add_Ons/File.php:125
 #: src/Admin/Handlers/Shop_Order.php:213
 msgid "(File has been removed)"
-msgstr "(A fájl el lett távolítva)"
+msgstr "(A fájlt eltávolították)"
 
 #: src/Add_Ons/File.php:121
 msgid "Uploaded file"
@@ -288,7 +390,7 @@ msgstr "Feltöltött fájl"
 #: src/Add_Ons/Multiselect.php:54
 msgctxt "Add-on type"
 msgid "Multiselect"
-msgstr "Többes kiválasztás"
+msgstr "Többszörös kiválasztás"
 
 #: src/Add_Ons/Multi_Checkbox.php:54
 msgctxt "Add-on type"
@@ -347,11 +449,11 @@ msgstr "Ármódosítás"
 
 #: src/Admin/Add_Ons_List_Table.php:204
 msgid "Display When"
-msgstr "Megjelenítés, ha"
+msgstr "Megjelenítés feltétele"
 
 #: src/Admin/Add_Ons_List_Table.php:237
 msgid "Make a duplicate from this add-on"
-msgstr "Készítsen másolatot erről a kiegészítőről"
+msgstr "Duplikálja ezt a kiegészítőt"
 
 #: src/Admin/Add_Ons_List_Table.php:238
 msgctxt "Duplicate this Add-On"
@@ -397,7 +499,6 @@ msgstr "Szűrés"
 
 #. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
 #: src/Admin/Add_Ons_List_Table.php:504
-#, php-format
 msgid ""
 "You haven't created any Checkout Add-Ons yet &mdash; %1$sClick Here%2$s to "
 "create your first one!"
@@ -407,11 +508,8 @@ msgstr ""
 
 #. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
 #: src/Admin/Add_Ons_List_Table.php:509
-#, php-format
 msgid "No add-ons found &mdash; %1$sClick Here%2$s to create one!"
-msgstr ""
-"Nem találhatók kiegészítők &mdash; %1$sKattintson ide%2$s egy "
-"létrehozásához!"
+msgstr "Nem találhatók kiegészítők &mdash; %1$sKattintson ide%2$s egy kiegészítő létrehozásához!"
 
 #: src/Admin/Add_Ons_List_Table.php:554
 msgid "Bulk Edit"
@@ -424,34 +522,31 @@ msgstr "Nincs jogosultsága a művelet végrehajtásához."
 #. translators: Placeholders: %1$s - action name present tense, %2$s - add-on
 #. ID
 #: src/Admin/Add_On_List_Screen.php:162
-#, php-format
 msgid "Unable to %1$s add-on with ID: %2$s"
-msgstr "Nem sikerült %1$s a(z) %2$s azonosítójú kiegészítőt"
+msgstr "Nem sikerült %1$s ezt a kiegészítőt (ID: %2$s)"
 
 #. translators: Placeholders: %1$s - add-on ID
 #: src/Admin/Add_On_List_Screen.php:170
-#, php-format
 msgid "Unable to find add-on ID: %1$s"
-msgstr "Nem található kiegészítő ezzel azonosítóval: %1$s"
+msgstr "Nem található kiegészítő (ID: %1$s)"
 
 #. translators: Placeholders: %1$s - action name past tense, %2$s - number of
 #. add-ons affected
 #: src/Admin/Add_On_List_Screen.php:186
-#, php-format
 msgid "Successfully %1$s %2$s Add-On."
 msgid_plural "Successfully %1$s %2$s Add-Ons."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%2$s kiegészítő sikeresen %1$s."
+msgstr[1] "%2$s kiegészítő sikeresen %1$s."
 
 #: src/Admin/Add_On_List_Screen.php:206
 msgctxt "bulk action present tense"
 msgid "enable"
-msgstr "engedélyezni"
+msgstr "bekapcsolni"
 
 #: src/Admin/Add_On_List_Screen.php:206
 msgctxt "bulk action present tense"
 msgid "disable"
-msgstr "letiltani"
+msgstr "kikapcsolni"
 
 #: src/Admin/Add_On_List_Screen.php:207
 msgctxt "bulk action past tense"
@@ -525,7 +620,7 @@ msgstr "Nincs elegendő jogosultsága a művelet végrehajtásához."
 
 #: src/Admin/Add_On_Screen.php:236
 msgid "Invalid Add-On Type"
-msgstr "Érvénytelen kiegészítő típus"
+msgstr "Hibás kiegészítőtípus"
 
 #: src/Admin/Add_On_Screen.php:276
 msgid "Add-On Duplicated."
@@ -561,19 +656,15 @@ msgctxt "menu title"
 msgid "Checkout Add-Ons"
 msgstr "Pénztári kiegészítők"
 
-#: src/Admin/Admin.php:631 src/Admin/Admin.php:633
+#: src/Admin/Admin.php:634 src/Admin/Admin.php:636
 msgid "Checkout Add-on Value"
 msgstr "Pénztári kiegészítő értéke"
 
-#: src/Admin/Admin.php:670
-msgid "Checkout Add-Ons"
-msgstr "Pénztári kiegészítők"
-
-#: src/Admin/Admin.php:677
+#: src/Admin/Admin.php:680
 msgid "Display Position"
 msgstr "Megjelenítési pozíció"
 
-#: src/Admin/Admin.php:678
+#: src/Admin/Admin.php:681
 msgid ""
 "This controls where on the Checkout page your custom add-ons will be "
 "displayed."
@@ -581,55 +672,53 @@ msgstr ""
 "Ez szabályozza, hogy a Pénztár oldalon hol jelenjenek meg az egyedi "
 "kiegészítők."
 
-#: src/Admin/Admin.php:731
+#: src/Admin/Admin.php:734
 msgid "Checkout Add-ons display"
 msgstr "Pénztári kiegészítők megjelenítése"
 
-#: src/Admin/Admin.php:764
+#: src/Admin/Admin.php:767
 msgid "Calculate add-on percentage-based prices from"
-msgstr "A kiegészítő százalékos alapú árait számolja ebből"
+msgstr "A kiegészítő százalékos árainak számítási alapja"
 
-#: src/Admin/Admin.php:801
+#: src/Admin/Admin.php:804
 msgid "Before Billing Details"
 msgstr "Számlázási adatok előtt"
 
-#: src/Admin/Admin.php:802
+#: src/Admin/Admin.php:805
 msgid "After Billing Details"
 msgstr "Számlázási adatok után"
 
-#: src/Admin/Admin.php:803
+#: src/Admin/Admin.php:806
 msgid "Before Order Summary"
 msgstr "Rendelés összegzése előtt"
 
-#: src/Admin/Admin.php:838
+#: src/Admin/Admin.php:841
 msgid "Order subtotal"
 msgstr "Rendelés részösszege"
 
-#: src/Admin/Admin.php:839
+#: src/Admin/Admin.php:842
 msgid "Order total"
 msgstr "Rendelés végösszege"
 
 #: src/Admin/Handlers/Shop_Order.php:206
-#, php-format
 msgid "%d file"
 msgid_plural "%d files"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d fájl"
+msgstr[1] "%d fájl"
 
 #. translators: Placeholder: %s - Add on name
 #. translators: Placeholder: %s - Add on label
-#: src/Admin/Handlers/Shop_Order.php:411 src/Admin/Handlers/Shop_Order.php:432
-#, php-format
+#: src/Admin/Handlers/Shop_Order.php:408 src/Admin/Handlers/Shop_Order.php:430
 msgid "Show all %s"
 msgstr "Összes %s megjelenítése"
 
-#: src/Admin/Handlers/Shop_Order.php:437
+#: src/Admin/Handlers/Shop_Order.php:442
 msgid "Show all "
 msgstr "Összes megjelenítése "
 
 #: src/Admin/Meta_Boxes/Add_On_Data.php:94
 msgid "Enables or disables this add-on"
-msgstr "Engedélyezi vagy letiltja ezt a kiegészítőt"
+msgstr "Bekapcsolja vagy kikapcsolja ezt a kiegészítőt"
 
 #: src/Admin/Meta_Boxes/Add_On_Data.php:100
 msgid "Checkout Label"
@@ -700,9 +789,7 @@ msgstr ""
 msgid ""
 "Optional price adjustment for this add-on - can be fixed or percentage-"
 "based, and either positive (fee) or negative (discount)"
-msgstr ""
-"Opcionális ármódosítás ehhez a kiegészítőhöz – lehet fix vagy százalékos, "
-"illetve pozitív (díj) vagy negatív (kedvezmény)"
+msgstr "Opcionális ármódosítás ehhez a kiegészítőhöz – lehet fix vagy százalékos, illetve pozitív (díj) vagy negatív (kedvezmény)"
 
 #: src/Admin/Meta_Boxes/Add_On_Data.php:157
 msgid "Taxable?"
@@ -710,7 +797,7 @@ msgstr "Adóköteles?"
 
 #: src/Admin/Meta_Boxes/Add_On_Data.php:158
 msgid "Enable to apply taxes to the add-on cost"
-msgstr "Engedélyezze az adó felszámítását a kiegészítő költségére"
+msgstr "Kapcsolja be, ha adót szeretne felszámítani a kiegészítő költségére"
 
 #: src/Admin/Meta_Boxes/Add_On_Data.php:164
 msgid "Tax Rate"
@@ -724,9 +811,7 @@ msgstr "Attribútumok"
 msgid ""
 "Price adjustment for this option - can be fixed or percentage-based, and "
 "either positive (fee) or negative (discount)"
-msgstr ""
-"Ármódosítás ehhez az opcióhoz – lehet fix vagy százalékos, illetve pozitív "
-"(díj) vagy negatív (kedvezmény)"
+msgstr "Ármódosítás ehhez az opcióhoz – lehet fix vagy százalékos, illetve pozitív (díj) vagy negatív (kedvezmény)"
 
 #: src/Admin/Meta_Boxes/Add_On_Data.php:216
 msgid "General"
@@ -762,9 +847,7 @@ msgstr "Alapértelmezett"
 msgid ""
 "You don't have any options yet! Click the 'Add new option' button below to "
 "get started."
-msgstr ""
-"Még nincsenek opciók! Kezdéshez kattintson az alábbi 'Új opció hozzáadása' "
-"gombra."
+msgstr "Még nincsenek opciók! Kezdéshez kattintson az alábbi „Új opció hozzáadása” gombra."
 
 #: src/Admin/Meta_Boxes/Add_On_Data.php:770
 msgid "Add new option"
@@ -780,7 +863,6 @@ msgstr "Általános adókulcs"
 
 #. translators: Placeholders: %1$s - <strong> tag, %2$s - </strong> tag
 #: src/Admin/Meta_Boxes/Add_On_Data.php:976
-#, php-format
 msgid ""
 "Add values below to restrict the display of this add-on unless it meets "
 "%1$sall rules%2$s. Leave this section blank to %1$salways show%2$s this add-"
@@ -828,36 +910,43 @@ msgstr "Kiegészítő hozzáadása"
 msgid "Add-on name (internal)"
 msgstr "Kiegészítő neve (belső)"
 
-#: src/Frontend/Frontend.php:261
+#: src/Frontend/Frontend.php:146
+msgid "File uploads are not enabled."
+msgstr "A fájlfeltöltés nincs bekapcsolva."
+
+#: src/Frontend/Frontend.php:165
+msgid "This file type is not allowed."
+msgstr "Ez a fájltípus nem engedélyezett."
+
+#: src/Frontend/Frontend.php:325
 msgid "Select an Option"
 msgstr "Válasszon egy opciót"
 
-#: src/Frontend/Frontend.php:262
+#: src/Frontend/Frontend.php:326
 msgid "Select Some Options"
 msgstr "Válasszon néhány opciót"
 
-#: src/Frontend/Frontend.php:263
+#: src/Frontend/Frontend.php:327
 msgid "No results match"
 msgstr "Nincs találat"
 
 #. translators: Placeholder: %s - Checkout add-on label
-#: src/Frontend/Frontend.php:539
-#, php-format
+#: src/Frontend/Frontend.php:603
 msgid "%s is a required field."
-msgstr "%s kötelező mező."
+msgstr "A(z) %s mező kitöltése kötelező."
 
-#: src/Frontend/Frontend.php:1036
+#: src/Frontend/Frontend.php:1106
 msgid "required"
 msgstr "kötelező"
 
-#: src/Frontend/Frontend.php:1173
+#: src/Frontend/Frontend.php:1243
 msgid "Drag file here or click to upload"
 msgstr "Húzza ide a fájlt, vagy kattintson a feltöltéshez"
 
-#: src/Frontend/Frontend.php:1179
+#: src/Frontend/Frontend.php:1249
 msgid "Remove"
 msgstr "Eltávolítás"
 
-#: src/Frontend/Frontend.php:1184
+#: src/Frontend/Frontend.php:1254
 msgid "You need to enable Javascript to upload files"
-msgstr "A fájlok feltöltéséhez engedélyeznie kell a Javascriptet"
+msgstr "A fájlok feltöltéséhez engedélyeznie kell a JavaScriptet"

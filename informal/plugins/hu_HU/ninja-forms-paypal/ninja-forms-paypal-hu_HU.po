@@ -1,0 +1,629 @@
+# Copyright (C) 2026 Saturday Drive
+# This file is distributed under the same license as the Ninja Forms - PayPal plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ninja Forms - PayPal 3.2.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ninja-forms-paypal-checkout\n"
+"POT-Creation-Date: 2026-10-31T10:20:22+00:00\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: ninja-forms-paypal\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: Ninja Forms - PayPal\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 3.2.3\n"
+
+#. Plugin Name of the plugin
+#: ninja-forms-paypal.php
+msgid "Ninja Forms - PayPal"
+msgstr "Ninja Forms - PayPal"
+
+#. Plugin URI of the plugin
+#: ninja-forms-paypal.php
+msgid "https://ninjaforms.com/extensions/paypal/"
+msgstr "https://ninjaforms.com/extensions/paypal/"
+
+#. Description of the plugin
+#: ninja-forms-paypal.php
+msgid "Use PayPal to accept payments using your Ninja Forms."
+msgstr "Fogadj el fizetéseket a Ninja Forms űrlapjaival a PayPal használatával."
+
+#. Author of the plugin
+#: ninja-forms-paypal.php
+msgid "Saturday Drive"
+msgstr "Saturday Drive"
+
+#. Author URI of the plugin
+#: ninja-forms-paypal.php
+msgid "http://ninjaforms.com"
+msgstr "http://ninjaforms.com"
+
+#: Common/Routes/DebugLog.php:80 Common/Routes/DebugLog.php:101
+msgid "Nonce failed for authorization"
+msgstr "Az engedélyezéshez szükséges nonce ellenőrzése sikertelen."
+
+#: Common/Routes/DebugLog.php:99
+msgid "Request made to delete all plugin log entries"
+msgstr "Kérés érkezett az összes bővítmény-naplóbejegyzés törlésére"
+
+#: includes/Actions/Checkout.php:94
+msgid "PayPal Checkout"
+msgstr "PayPal Checkout"
+
+#: includes/Actions/Checkout.php:758 includes/Actions/SotCheckout.php:773
+msgid "Your payment was declined. Please try a different payment method."
+msgstr "A fizetésedet elutasították. Próbálkozz másik fizetési móddal."
+
+#: includes/Actions/Checkout.php:760 includes/Actions/SotCheckout.php:775
+msgid ""
+"Your payment is pending. Please contact the merchant for more information."
+msgstr "A fizetésed függőben van. További információért vedd fel a kapcsolatot az eladóval."
+
+#: includes/Actions/Checkout.php:762 includes/Actions/SotCheckout.php:777
+msgid "Your payment was voided. Please try again."
+msgstr "A fizetésedet érvénytelenítették. Próbáld újra."
+
+#: includes/Actions/Checkout.php:764 includes/Actions/SotCheckout.php:779
+msgid ""
+"Your payment failed. Please try again or use a different payment method."
+msgstr "A fizetésed sikertelen volt. Próbáld újra, vagy használj másik fizetési módot."
+
+#: includes/Actions/Checkout.php:766 includes/Actions/SotCheckout.php:781
+msgid "There was a problem processing your payment. Please try again."
+msgstr "Hiba történt a fizetés feldolgozása közben. Próbáld újra."
+
+#: includes/Admin/AddOnboardingPage.php:327
+msgid "Form Id: "
+msgstr "Űrlap ID: "
+
+#: includes/Admin/Metaboxes/MetaboxEntityConstructorPaypal.php:24
+msgid "PayPal Payment Details"
+msgstr "PayPal-fizetés részletei"
+
+#: includes/Admin/Metaboxes/MetaboxEntityConstructorPaypal.php:47
+#: includes/Admin/Metaboxes/Submission.php:36
+msgid "Status"
+msgstr "Állapot"
+
+#: includes/Admin/Metaboxes/MetaboxEntityConstructorPaypal.php:55
+#: includes/MergeTags.php:37
+msgid "Order ID"
+msgstr "Rendelés ID"
+
+#: includes/Admin/Metaboxes/MetaboxEntityConstructorPaypal.php:65
+#: includes/Admin/Metaboxes/MetaboxEntityConstructorPaypal.php:103
+#: includes/Admin/Metaboxes/Submission.php:38 includes/MergeTags.php:44
+msgid "Transaction ID"
+msgstr "Tranzakció ID"
+
+#: includes/Admin/Metaboxes/MetaboxEntityConstructorPaypal.php:80
+#: includes/Admin/Metaboxes/Submission.php:37
+msgid "Total"
+msgstr "Összeg"
+
+#: includes/Admin/Metaboxes/MetaboxEntityConstructorPaypal.php:89
+msgid "Payment Status"
+msgstr "Fizetési állapot"
+
+#: includes/Admin/Metaboxes/MetaboxEntityConstructorPaypal.php:96
+msgid "Payment Total"
+msgstr "Fizetés végösszege"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:80
+msgid "Email Address"
+msgstr "E-mail cím"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:83
+msgid ""
+"Map a form email field to send the payer's email to PayPal. Required for "
+"PayPal to send payment confirmation emails to buyers using guest checkout."
+msgstr "Rendelj hozzá egy e-mail-cím mezőt az űrlapodból, hogy elküldhesd a fizető e-mail-címét a PayPalnak. Ez szükséges ahhoz, hogy a PayPal fizetési visszaigazoló e-maileket küldhessen a vendégként fizető vásárlóknak."
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:98
+msgid ""
+"Apple Pay requires domain verification to function. If you have not done so,"
+" Apple Pay will not appear as a payment option at checkout."
+msgstr "Az Apple Pay működéséhez domainellenőrzés szükséges. Ha ezt még nem végezted el, az Apple Pay nem jelenik meg fizetési lehetőségként a pénztárnál."
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:99
+msgid "Please see our documentation for more information."
+msgstr "További információért tekintsd meg a dokumentációnkat."
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:111
+msgid "Enable Payment Options"
+msgstr "Fizetési opciók bekapcsolása"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:118
+msgid "PayPal Credit"
+msgstr "PayPal Credit"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:125
+msgid "Pay Later"
+msgstr "Fizetés később"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:132
+msgid "Guest Checkout"
+msgstr "Vendégként történő fizetés"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:139
+msgid "Apple Pay"
+msgstr "Apple Pay"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:146
+msgid "Google Pay"
+msgstr "Google Pay"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:153
+msgid "Bancontact"
+msgstr "Bancontact"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:160
+msgid "BLIK"
+msgstr "BLIK"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:167
+msgid "eps"
+msgstr "eps"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:174
+msgid "giropay"
+msgstr "giropay"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:181
+msgid "iDEAL"
+msgstr "iDEAL"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:188
+msgid "Mercado Pago"
+msgstr "Mercado Pago"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:195
+msgid "MyBank"
+msgstr "MyBank"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:202
+msgid "Przelewy24"
+msgstr "Przelewy24"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:209
+msgid "SEPA-Lastschrift"
+msgstr "SEPA-beszedés"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:216
+msgid "Sofort"
+msgstr "Sofort"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:223
+msgid "Venmo"
+msgstr "Venmo"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:232
+msgid "Order Description"
+msgstr "Rendelés leírása"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:236
+#, php-format
+msgid ""
+"A description of the transaction that appears in PayPal Order Details. Limit"
+" %s characters."
+msgstr "A tranzakció leírása, amely a PayPal rendelési részletei között jelenik meg. Legfeljebb %s karakter."
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:243
+msgid "Note to Buyer"
+msgstr "Megjegyzés a vásárlónak"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:247
+#, php-format
+msgid ""
+"A note from the merchant displayed to the buyer during PayPal checkout. "
+"Limit %s characters."
+msgstr "A kereskedőtől származó megjegyzés, amely a vásárlónak a PayPal-fizetés során jelenik meg. Legfeljebb %s karakter lehet."
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:254
+msgid "Include Shipping Address"
+msgstr "Szállítási cím továbbítása"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:258
+msgid ""
+"Pass shipping address data to PayPal so it appears in Order Details on your "
+"PayPal account."
+msgstr "Továbbítsd a szállítási cím adatait a PayPalnak, hogy megjelenjenek a PayPal-fiókod rendelési részletei között."
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:264
+msgid "Recipient Name"
+msgstr "Címzett neve"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:269
+msgid ""
+"Full name of the shipping recipient. Use merge tags to map a form field."
+msgstr "A szállítás címzettjének teljes neve. Űrlapmező hozzárendeléséhez használj összevonási címkéket."
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:276
+msgid "Address Line 1"
+msgstr "Cím 1. sora"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:281
+msgid "Street address, P.O. Box, etc. Use merge tags to map a form field."
+msgstr "Utca, postafiók stb. Űrlapmező hozzárendeléséhez használj összevonási címkéket."
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:288
+msgid "Address Line 2"
+msgstr "Cím 2. sora"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:293
+msgid ""
+"Apartment, suite, unit, building, floor, etc. Use merge tags to map a form "
+"field."
+msgstr "Lakás, lakosztály, egység, épület, emelet stb. Űrlapmező hozzárendeléséhez használj összevonási címkéket."
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:300
+#: includes/Templates/checkout-standard.html.php:76
+msgid "City"
+msgstr "Város"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:305
+msgid "City, suburb, town, or village."
+msgstr "Település, külváros, város vagy falu."
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:312
+msgid "State / Province"
+msgstr "Állam / tartomány"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:317
+msgid "State, province, prefecture, or region."
+msgstr "Állam, tartomány, prefektúra vagy régió."
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:324
+msgid "Postal Code"
+msgstr "Irányítószám"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:329
+msgid "ZIP code, postal code, or equivalent."
+msgstr "Irányítószám vagy annak megfelelője."
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:336
+msgid "Country Code"
+msgstr "Országkód"
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:341
+msgid ""
+"Required. Two-letter ISO country code (e.g. US, GB, CA). PayPal will not "
+"accept a shipping address without it — if this is left blank, none of the "
+"shipping address fields above will be sent, even if they are filled in."
+msgstr "Kötelező. Kétbetűs ISO-országkód (pl. US, GB, CA). A PayPal nem fogad el szállítási címet enélkül. Ha üresen hagyod, a fenti szállítási címmezők egyike sem lesz elküldve, akkor sem, ha ki vannak töltve."
+
+#: includes/Config/ActionPayPalCheckoutSettings.php:353
+msgid "Use PayPal Checkout sandbox credentials to test transaction."
+msgstr "A tranzakció teszteléséhez használd a PayPal Checkout tesztkörnyezetének hitelesítő adatait."
+
+#: includes/Config/i18nFrontEnd.php:5
+msgid "Please select a country"
+msgstr "Kérlek, válassz egy országot"
+
+#: includes/Config/i18nFrontEnd.php:6
+msgid "Invalid Name"
+msgstr "Hibás név"
+
+#: includes/Config/i18nFrontEnd.php:7
+msgid "Card Type Not Accepted"
+msgstr "A kártyatípust nem fogadjuk el"
+
+#: includes/Config/i18nFrontEnd.php:8
+msgid "Invalid Card Number"
+msgstr "Hibás kártyaszám"
+
+#: includes/Config/i18nFrontEnd.php:9
+msgid "Invalid Expiry Date"
+msgstr "Hibás lejárati dátum"
+
+#: includes/Config/i18nFrontEnd.php:10
+msgid "Invalid Security Code"
+msgstr "Hibás biztonsági kód"
+
+#: includes/Config/i18nFrontEnd.php:11
+msgid ""
+"Your payment could not be processed. Please check your card details and try "
+"again."
+msgstr "A fizetés feldolgozása nem sikerült. Ellenőrizd a kártya adatait, majd próbáld újra."
+
+#: includes/Config/PluginSettings.php:7
+msgid "Clear debug log"
+msgstr "Hibakeresési napló kiürítése"
+
+#: includes/Config/PluginSettings.php:7
+msgid ""
+"Clear logs when debugging is complete and the logger has been turned off."
+msgstr "Ürítsd ki a naplókat, ha befejezted a hibakeresést, és kikapcsoltad a naplózót."
+
+#: includes/Config/PluginSettings.php:8
+msgid "Download debug log"
+msgstr "Hibakeresési napló letöltése"
+
+#: includes/Config/PluginSettings.php:8
+msgid "Providing log data with support requests helps diagnose issues."
+msgstr "A naplóadatok megadása a támogatási kérések mellé segít a problémák diagnosztizálásában."
+
+#: includes/Config/PluginSettings.php:46
+msgid "Turn on Debug Logger"
+msgstr "Hibakeresési naplózó bekapcsolása"
+
+#: includes/Config/PluginSettings.php:47
+msgid ""
+"The debug logger records diagnostic data that can be exported and sent to "
+"our support team if you suspect there's an issue with this add-on. Only "
+"active when turned on."
+msgstr "A hibakeresési naplózó diagnosztikai adatokat rögzít, amelyeket exportálhatsz és elküldhetsz a támogatási csapatunknak, ha úgy gondolod, hogy probléma van ezzel a kiegészítővel. Csak bekapcsolt állapotban aktív."
+
+#: includes/Config/PluginSettings.php:47
+msgid "Learn more"
+msgstr "További tudnivalók"
+
+#: includes/Config/PluginSettings.php:52
+msgid "Logger Commands"
+msgstr "Naplózási parancsok"
+
+#: includes/Config/Translate/OnboardingPage.php:8
+msgid ""
+"You currently are onboarded to your LIVE PayPal account, but you can "
+"regenerate a new authorization at any time you wish by clicking the button "
+"link."
+msgstr "Jelenleg csatlakoztatva vagy az ÉLES PayPal-fiókodhoz, de bármikor új engedélyezést hozhatsz létre a gombra kattintva."
+
+#: includes/Config/Translate/OnboardingPage.php:12
+msgid "Regenerate new LIVE onboarding authorization"
+msgstr "Új éles csatlakozási engedély létrehozása"
+
+#: includes/Config/Translate/OnboardingPage.php:17
+msgid ""
+"You currently are onboarded to your SANDBOX PayPal account, but you can "
+"regenerate a new authorization at any time you wish by clicking the button "
+"link."
+msgstr "Jelenleg csatlakoztatva vagy a TESZTKÖRNYEZETI PayPal-fiókodhoz, de bármikor új engedélyezést hozhatsz létre a gombra kattintva."
+
+#: includes/Config/Translate/OnboardingPage.php:21
+msgid "Regenerate new SANDBOX onboarding authorization"
+msgstr "Új tesztkörnyezeti csatlakozási engedély létrehozása"
+
+#: includes/Config/Translate/OnboardingPage.php:26
+msgid ""
+"You currently have PayPal Express actions active.  We recommend migrating "
+"those to the new PayPal Checkout. "
+msgstr "Jelenleg aktív PayPal Express-műveleteid vannak. Javasoljuk, hogy válts az új PayPal Checkoutra."
+
+#: includes/Config/Translate/OnboardingPage.php:32
+msgid ""
+"You are not currently onboarded to your LIVE PayPal Checkout account.  "
+"Please start the onboarding process."
+msgstr "Jelenleg nem vagy csatlakoztatva az éles PayPal Checkout-fiókodhoz. Kezdd el a csatlakoztatási folyamatot."
+
+#: includes/Config/Translate/OnboardingPage.php:36
+msgid "Begin LIVE onboarding authorizaton"
+msgstr "Éles csatlakoztatás indítása"
+
+#: includes/Config/Translate/OnboardingPage.php:41
+msgid ""
+"You are not currently onboarded to your SANDBOX PayPal Checkout account.  "
+"Please start the onboarding process."
+msgstr "Jelenleg nem vagy csatlakoztatva a tesztkörnyezeti PayPal Checkout-fiókodhoz. Kezdd el a csatlakoztatási folyamatot."
+
+#: includes/Config/Translate/OnboardingPage.php:45
+msgid "Begin SANDBOX onboarding authorizaton"
+msgstr "Tesztkörnyezeti csatlakoztatás indítása"
+
+#: includes/Config/Translate/OnboardingPage.php:50
+msgid "Your sandbox account is set up correctly and ready to receive payments"
+msgstr "A tesztkörnyezeti fiókod megfelelően van beállítva, és készen áll a fizetések fogadására"
+
+#: includes/Config/Translate/OnboardingPage.php:55
+msgid ""
+"Please check your sandbox account and ensure that `payments_receivable` and "
+"`primary_email_confirmed` are true"
+msgstr "Ellenőrizd a tesztkörnyezeti fiókodat, és győződj meg róla, hogy a `payments_receivable` és a `primary_email_confirmed` értéke true"
+
+#: includes/Config/Translate/OnboardingPage.php:59
+msgid ""
+"Please complete onboarding to your sandbox account so we can check the "
+"settings to accept payments."
+msgstr "Fejezd be a tesztkörnyezeti fiókod csatlakoztatását, hogy ellenőrizhessük a fizetések fogadásához szükséges beállításokat."
+
+#: includes/Config/Translate/OnboardingPage.php:63
+msgid "Unable to verify your sandbox merchant status"
+msgstr "Nem sikerült ellenőrizni a tesztkörnyezeti kereskedői állapotodat"
+
+#: includes/Config/Translate/OnboardingPage.php:67
+msgid "Your live account is set up correctly and ready to receive payments"
+msgstr "Az éles fiókod megfelelően van beállítva, és készen áll a fizetések fogadására"
+
+#: includes/Config/Translate/OnboardingPage.php:71
+msgid ""
+"Please check your live account and ensure that `payments_receivable` and "
+"`primary_email_confirmed` are true"
+msgstr "Ellenőrizd az éles fiókodat, és győződj meg róla, hogy a `payments_receivable` és a `primary_email_confirmed` értéke true"
+
+#: includes/Config/Translate/OnboardingPage.php:75
+msgid ""
+"Please complete onboarding to your live account so we can check the settings"
+" to accept payments."
+msgstr "Fejezd be az éles fiókod csatlakoztatását, hogy ellenőrizhessük a fizetések fogadásához szükséges beállításokat."
+
+#: includes/Config/Translate/OnboardingPage.php:79
+msgid "Unable to verify your live merchant status"
+msgstr "Nem sikerült ellenőrizni az éles kereskedői állapotodat"
+
+#: includes/Config/Translate/PluginSettingsStrings.php:10
+msgid ""
+"You currently have active PayPal Express payment actions on your site.  We "
+"recommend you migrate those to the new PayPal Checkout payment action for "
+"the best experience.  Click the button to visit the onboarding page."
+msgstr "Jelenleg aktív PayPal Express-fizetési műveleteid vannak a webhelyeden. A legjobb élmény érdekében javasoljuk, hogy válts az új PayPal Checkout fizetési műveletre. Kattints a gombra a csatlakoztatási oldal megnyitásához."
+
+#: includes/Config/Translate/PluginSettingsStrings.php:16
+msgid ""
+"You are using PayPal Checkout.  Click the button to view/modify your "
+"connection."
+msgstr "PayPal Checkoutot használsz. Kattints a gombra a kapcsolat megtekintéséhez vagy módosításához."
+
+#: includes/Handlers/ExportCsvData.php:33
+msgid "PayPal Status"
+msgstr "PayPal-állapot"
+
+#: includes/Handlers/ExportCsvData.php:34
+msgid "PayPal Order ID"
+msgstr "PayPal-rendelés ID"
+
+#: includes/Handlers/ExportCsvData.php:35
+msgid "PayPal Total"
+msgstr "PayPal-összeg"
+
+#: includes/HttpResponses/CapturePayment.php:232
+msgid "Transaction not authorized. Please contact customer support."
+msgstr "A tranzakció nem engedélyezett. Fordulj az ügyféltámogatáshoz."
+
+#: includes/HttpResponses/CapturePayment.php:236
+msgid "Permission denied."
+msgstr "Hozzáférés megtagadva."
+
+#: includes/HttpResponses/CapturePayment.php:240
+#: includes/HttpResponses/CapturePayment.php:268
+msgid "Order not found."
+msgstr "A rendelés nem található."
+
+#: includes/HttpResponses/CapturePayment.php:248
+#: includes/HttpResponses/CapturePayment.php:351
+msgid "Something went wrong."
+msgstr "Valami hiba történt."
+
+#: includes/HttpResponses/CapturePayment.php:265
+msgid "Agreement cancelled"
+msgstr "A megállapodást visszavonták"
+
+#: includes/HttpResponses/CapturePayment.php:271
+msgid "Card expired."
+msgstr "A kártya lejárt."
+
+#: includes/HttpResponses/CapturePayment.php:274
+#: includes/HttpResponses/CapturePayment.php:284
+#: includes/HttpResponses/CapturePayment.php:295
+#: includes/HttpResponses/CapturePayment.php:326
+msgid "Transaction declined."
+msgstr "A tranzakciót elutasították."
+
+#: includes/HttpResponses/CapturePayment.php:277
+msgid ""
+"You must reside in the same country as this merchant to complete the "
+"transaction."
+msgstr "A tranzakció befejezéséhez ugyanabban az országban kell élned, mint a kereskedőnek."
+
+#: includes/HttpResponses/CapturePayment.php:281
+msgid "Duplicate invoice ID detected."
+msgstr "Duplikált számla-ID-t észleltünk."
+
+#: includes/HttpResponses/CapturePayment.php:288
+msgid "Order not approved."
+msgstr "A rendelést nem hagyták jóvá."
+
+#: includes/HttpResponses/CapturePayment.php:291
+msgid "Maximum number of payment attempts has been exceeded."
+msgstr "A fizetési próbálkozások darabszáma meghaladta a megengedett maximumot."
+
+#: includes/HttpResponses/CapturePayment.php:298
+msgid "Account locked."
+msgstr "A fiók zárolva van."
+
+#: includes/HttpResponses/CapturePayment.php:301
+msgid "Account restricted."
+msgstr "A fiók korlátozva van."
+
+#: includes/HttpResponses/CapturePayment.php:304
+msgid "Unable to collect payment."
+msgstr "Nem sikerült beszedni a fizetést."
+
+#: includes/HttpResponses/CapturePayment.php:307
+msgid "Transaction exceeds the single transaction limit."
+msgstr "A tranzakció meghaladja az egyedi tranzakciós limitet."
+
+#: includes/HttpResponses/CapturePayment.php:310
+msgid "Transaction exceeds the single transaction limit for this merchant."
+msgstr "A tranzakció meghaladja az egyedi tranzakciós limitet ennél a kereskedőnél."
+
+#: includes/HttpResponses/CapturePayment.php:313
+msgid "Transaction refused."
+msgstr "A tranzakciót elutasították."
+
+#: includes/HttpResponses/CapturePayment.php:317
+msgid "Transaction failed."
+msgstr "A tranzakció sikertelen."
+
+#: includes/HttpResponses/CapturePayment.php:322
+msgid "This order has already been processed."
+msgstr "Ezt a rendelést már feldolgozták."
+
+#: includes/HttpResponses/CapturePayment.php:330
+msgid "Authorization and capture is not enabled for this merchant."
+msgstr "Ennél a kereskedőnél nincs bekapcsolva az engedélyezés és a terhelés."
+
+#: includes/HttpResponses/CapturePayment.php:334
+msgid "Unable to process card. Please contact customer support."
+msgstr "Nem sikerült feldolgozni a kártyát. Vedd fel a kapcsolatot az ügyfélszolgálattal."
+
+#: includes/HttpResponses/CapturePayment.php:337
+msgid "This account is not setup for processing card payments."
+msgstr "Ez a fiók nincs beállítva kártyás fizetések feldolgozására."
+
+#: includes/HttpResponses/CapturePayment.php:341
+msgid "Invalid pickup address."
+msgstr "Hibás átvételi cím."
+
+#: includes/HttpResponses/CapturePayment.php:344
+msgid "Invalid shipping address."
+msgstr "Hibás szállítási cím."
+
+#: includes/HttpResponses/CapturePayment.php:347
+msgid "This card is closed."
+msgstr "Ez a kártya le van zárva."
+
+#: includes/MergeTags.php:30
+msgid "PayPal"
+msgstr "PayPal"
+
+#: includes/Templates/checkout-standard.html.php:22
+msgid "Billing Address"
+msgstr "Számlázási cím"
+
+#: includes/Templates/checkout-standard.html.php:29
+msgid "Street Address"
+msgstr "Utca és házszám"
+
+#: includes/Templates/checkout-standard.html.php:38
+msgid "Apartment or Suite Number"
+msgstr "Lakás vagy lakosztály száma"
+
+#: includes/Templates/checkout-standard.html.php:61
+#: includes/Templates/checkout-standard.html.php:62
+msgid "Select state/province"
+msgstr "Állam/tartomány kiválasztása"
+
+#: includes/Templates/checkout-standard.html.php:87
+msgid "Postal/zip code"
+msgstr "Irányítószám"
+
+#: includes/Templates/checkout-standard.html.php:95
+msgid "Pay Now"
+msgstr "Fizetés most"
+
+#: ninja-forms-paypal.php:335
+msgid "Ninja Forms PayPal Debug Logger"
+msgstr "Ninja Forms PayPal hibakeresési naplózó"
+
+#: ninja-forms-paypal.php:336
+#, php-format
+msgid ""
+"%sThe debug logger records data to help solve issues, but should be turned "
+"off as soon as you capture enough information.%s"
+msgstr "%sA hibakeresési naplózó a problémák megoldásához adatokat rögzít, de amint elegendő információt gyűjtöttél, kapcsold ki.%s"

@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: MainWP Favorites Extension 5.1.3\n"
+"Project-Id-Version: MainWP Favorites Extension 5.4\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T19:14:00+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,12 +18,12 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: MainWP Favorites Extension\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 5.1.3\n"
+"X-Plugin-Version: 5.4\n"
 
 #. Plugin Name of the plugin
 #: mainwp-favorites-extension.php
 msgid "MainWP Favorites Extension"
-msgstr "MainWP Kedvencek kiegészítő"
+msgstr "MainWP Favorites Extension"
 
 #. Plugin URI of the plugin
 #. Author URI of the plugin
@@ -37,106 +37,217 @@ msgid ""
 "MainWP Favorites add-on simplifies site setup by letting you create a "
 "personal repository of preferred plugins and themes. Quickly access and "
 "install them across your child sites without repetitive searches or uploads."
-msgstr ""
-"A MainWP Kedvencek kiegészítő egyszerűsíti a webhelyek beállítását: "
-"személyes gyűjteményt hozhat létre a preferált bővítményekből és "
-"sablonokból. Gyorsan elérheti és telepítheti ezeket a gyermekwebhelyein, "
-"ismételt keresések és feltöltések nélkül."
+msgstr "A MainWP Kedvencek kiegészítő egyszerűsíti a webhelyek beállítását: személyes gyűjteményt hozhat létre kedvenc bővítményeiből és sablonjaiból. Gyorsan elérheti és telepítheti ezeket a gyermekwebhelyein, ismételt keresések és feltöltések nélkül."
 
 #. Author of the plugin
 #: mainwp-favorites-extension.php
 msgid "MainWP"
 msgstr "MainWP"
 
-#: class/class-mainwp-favorites-bulk-installer.php:67
-msgid "Invalid download url or not found. Please try again."
-msgstr "Érvénytelen letöltési URL vagy nem található. Próbálja újra."
+#: class/class-mainwp-favorites-abilities.php:28
+msgid "MainWP Favorites"
+msgstr "MainWP Favorites"
 
-#: class/class-mainwp-favorites-db.php:195
+#: class/class-mainwp-favorites-abilities.php:29
+msgid "Read saved favorite plugins, themes, and groups."
+msgstr "A mentett kedvenc bővítmények, sablonok és csoportok olvasása."
+
+#: class/class-mainwp-favorites-abilities.php:41
+msgid "List Favorite Items"
+msgstr "Kedvenc tételek listázása"
+
+#: class/class-mainwp-favorites-abilities.php:41
+msgid ""
+"List saved favorite plugins and themes with optional type and group filters."
+msgstr "A mentett kedvenc bővítmények és sablonok listázása, opcionális típus- és csoportszűrőkkel."
+
+#: class/class-mainwp-favorites-abilities.php:42
+msgid "Get Favorite Item"
+msgstr "Kedvenc tétel lekérése"
+
+#: class/class-mainwp-favorites-abilities.php:42
+msgid "Read one saved favorite plugin or theme."
+msgstr "Egy mentett kedvenc bővítmény vagy sablon olvasása."
+
+#: class/class-mainwp-favorites-abilities.php:43
+msgid "List Favorite Groups"
+msgstr "Kedvenc csoportok listázása"
+
+#: class/class-mainwp-favorites-abilities.php:43
+msgid "List saved favorite groups and their item counts."
+msgstr "A mentett kedvenc csoportok és a bennük található tételek számának listázása."
+
+#: class/class-mainwp-favorites-abilities.php:77
+msgid "Favorites abilities are unavailable."
+msgstr "A Favorites funkciói nem érhetők el."
+
+#: class/class-mainwp-favorites-abilities.php:84
+#: class/class-mainwp-favorites-abilities.php:87
+#: class/class-mainwp-favorites-abilities.php:90
+#: class/class-mainwp-favorites-abilities.php:93
+msgid "You cannot read Favorites."
+msgstr "Ön nem olvashatja a Favorites adatait."
+
+#: class/class-mainwp-favorites-abilities.php:127
+msgid "Favorite item not found."
+msgstr "A kedvenc tétel nem található."
+
+#: class/class-mainwp-favorites-abilities.php:267
+#: class/class-mainwp-favorites-abilities.php:279
+msgid "Invalid Favorites input."
+msgstr "Hibás Favorites-bemenet."
+
+#: class/class-mainwp-favorites-bulk-installer.php:70
+msgid "Invalid download url or not found. Please try again."
+msgstr "A letöltési URL hibás vagy nem található. Próbálja újra."
+
+#: class/class-mainwp-favorites-db.php:324
 msgid "Favorite plugin already exists. Please try again."
 msgstr "A kedvenc bővítmény már létezik. Próbálja újra."
 
-#: class/class-mainwp-favorites-db.php:195
+#: class/class-mainwp-favorites-db.php:324
 msgid "Favorite theme already exists. Please try again."
 msgstr "A kedvenc sablon már létezik. Próbálja újra."
 
-#: class/class-mainwp-favorites-helper.php:107
+#: class/class-mainwp-favorites-db.php:351
+#: class/class-mainwp-favorites-db.php:407
+msgid "Invalid favorite item."
+msgstr "Hibás kedvenc tétel."
+
+#: class/class-mainwp-favorites-db.php:356
+#: class/class-mainwp-favorites-db.php:412
+msgid "Invalid favorite group."
+msgstr "Hibás kedvenc csoport."
+
+#: class/class-mainwp-favorites-db.php:363
+#: class/class-mainwp-favorites-db.php:419
+msgid "Item and group types do not match."
+msgstr "A tétel és a csoport típusa nem egyezik."
+
+#: class/class-mainwp-favorites-helper.php:117
 msgid "Plugins"
 msgstr "Bővítmények"
 
-#: class/class-mainwp-favorites-helper.php:107
+#: class/class-mainwp-favorites-helper.php:117
 msgid "Themes"
 msgstr "Sablonok"
 
-#: class/class-mainwp-favorites-helper.php:111
+#: class/class-mainwp-favorites-helper.php:121
 msgid "Add New"
 msgstr "Új hozzáadása"
 
-#: class/class-mainwp-favorites-helper.php:115
+#: class/class-mainwp-favorites-helper.php:124
+#: class/class-mainwp-favorites-helper.php:1064
+msgid "Manage Groups"
+msgstr "Csoportok kezelése"
+
+#: class/class-mainwp-favorites-helper.php:127
+msgid "Install Favorites"
+msgstr "Kedvencek telepítése"
+
+#: class/class-mainwp-favorites-helper.php:131
 msgid "Update Versions Info"
 msgstr "Verzióinformációk frissítése"
 
-#: class/class-mainwp-favorites-helper.php:188
-#: class/class-mainwp-favorites-helper.php:309
+#: class/class-mainwp-favorites-helper.php:218
+#: class/class-mainwp-favorites-helper.php:568
+msgid "Filter by Group:"
+msgstr "Szűrés csoport szerint:"
+
+#: class/class-mainwp-favorites-helper.php:222
+#: class/class-mainwp-favorites-helper.php:572
+msgid "All Groups"
+msgstr "Összes csoport"
+
+#: class/class-mainwp-favorites-helper.php:235
+#: class/class-mainwp-favorites-helper.php:600
 msgid " Name"
 msgstr " Név"
 
-#: class/class-mainwp-favorites-helper.php:189
-#: class/class-mainwp-favorites-helper.php:310
+#: class/class-mainwp-favorites-helper.php:236
+#: class/class-mainwp-favorites-helper.php:602
 msgid "Version"
 msgstr "Verzió"
 
-#: class/class-mainwp-favorites-helper.php:190
-#: class/class-mainwp-favorites-helper.php:311
+#: class/class-mainwp-favorites-helper.php:237
+#: class/class-mainwp-favorites-helper.php:603
 msgid "URL"
 msgstr "URL"
 
-#: class/class-mainwp-favorites-helper.php:220
-msgid "Version update fetched:."
-msgstr "Verziófrissítés lekérve:."
+#: class/class-mainwp-favorites-helper.php:238
+#: class/class-mainwp-favorites-helper.php:601
+msgid "Groups"
+msgstr "Csoportok"
 
-#: class/class-mainwp-favorites-helper.php:220
+#: class/class-mainwp-favorites-helper.php:391
+msgid "Select groups"
+msgstr "Válasszon csoportokat"
+
+#: class/class-mainwp-favorites-helper.php:401
+msgid "No groups available"
+msgstr "Nincsenek elérhető csoportok"
+
+#: class/class-mainwp-favorites-helper.php:413
+msgid "Version update fetched:"
+msgstr "Verziófrissítés lekérve:"
+
+#: class/class-mainwp-favorites-helper.php:413
 msgid "Click to sync version number."
 msgstr "Kattintson a verziószám szinkronizálásához."
 
-#: class/class-mainwp-favorites-helper.php:222
+#: class/class-mainwp-favorites-helper.php:415
 msgid "Update Version Info"
 msgstr "Verzióinformáció frissítése"
 
-#: class/class-mainwp-favorites-helper.php:225
-#: class/class-mainwp-favorites-helper.php:229
+#: class/class-mainwp-favorites-helper.php:418
+#: class/class-mainwp-favorites-helper.php:422
 msgid "Edit"
 msgstr "Szerkesztés"
 
-#: class/class-mainwp-favorites-helper.php:228
+#: class/class-mainwp-favorites-helper.php:421
 msgid "Legacy item. Not editable."
 msgstr "Örökölt elem. Nem szerkeszthető."
 
-#: class/class-mainwp-favorites-helper.php:234
+#: class/class-mainwp-favorites-helper.php:427
 msgid "Download"
 msgstr "Letöltés"
 
-#: class/class-mainwp-favorites-helper.php:238
+#: class/class-mainwp-favorites-helper.php:431
 msgid "Delete"
 msgstr "Törlés"
 
-#: class/class-mainwp-favorites-helper.php:296
+#: class/class-mainwp-favorites-helper.php:512
+#: class/class-mainwp-favorites.php:349 class/class-mainwp-favorites.php:457
+msgid "Selected group was not found. Showing all groups."
+msgstr "A kiválasztott csoport nem található. Az összes csoport megjelenik."
+
+#: class/class-mainwp-favorites-helper.php:561
+msgid ""
+"Want to add, edit, or organize your list? You can manage all your favorites "
+"on"
+msgstr "Szeretné bővíteni, szerkeszteni vagy rendszerezni a listáját? Az összes kedvencét kezelheti ezen"
+
+#: class/class-mainwp-favorites-helper.php:563
+msgid "this page"
+msgstr "az oldalon"
+
+#: class/class-mainwp-favorites-helper.php:587
 msgid "How to Install Your Favorites"
 msgstr "A kedvencek telepítése"
 
-#: class/class-mainwp-favorites-helper.php:298
+#: class/class-mainwp-favorites-helper.php:589
 msgid "Select the items you want to install from your favorites list."
 msgstr "Válassza ki a telepíteni kívánt elemeket a kedvencek listájából."
 
-#: class/class-mainwp-favorites-helper.php:299
+#: class/class-mainwp-favorites-helper.php:590
 msgid "Choose the sites where you want to install them."
 msgstr "Válassza ki azokat a webhelyeket, ahová telepíteni szeretné őket."
 
-#: class/class-mainwp-favorites-helper.php:300
+#: class/class-mainwp-favorites-helper.php:591
 msgid "Click Complete Installation, and MainWP will handle the rest!"
 msgstr "Kattintson a Telepítés befejezése gombra, a többit a MainWP intézi!"
 
-#: class/class-mainwp-favorites-helper.php:317
+#: class/class-mainwp-favorites-helper.php:644
 msgid ""
 "No favorites added yet. Save time by adding your most-used plugins and "
 "themes to your favorites for quick access!"
@@ -144,84 +255,211 @@ msgstr ""
 "Még nincsenek kedvencek. Takarítson meg időt: adja hozzá a leggyakrabban "
 "használt bővítményeket és sablonokat a kedvencekhez a gyors elérésért!"
 
-#: class/class-mainwp-favorites-helper.php:404
+#: class/class-mainwp-favorites-helper.php:749
+#, php-format
+msgid "Local: %s"
+msgstr "Helyi: %s"
+
+#: class/class-mainwp-favorites-helper.php:810
 msgid "Manage Favorites"
 msgstr "Kedvencek kezelése"
 
-#: class/class-mainwp-favorites-helper.php:445
+#: class/class-mainwp-favorites-helper.php:851
 msgid "File type not allowed. Only ZIP files can be downloaded"
-msgstr "A fájltípus nem engedélyezett. Csak ZIP fájlok tölthetők le"
+msgstr "A fájltípus nem engedélyezett. Csak ZIP-fájlok tölthetők le"
 
-#: class/class-mainwp-favorites-helper.php:482
+#: class/class-mainwp-favorites-helper.php:888
 msgid "Download failed:"
 msgstr "A letöltés nem sikerült:"
 
-#: class/class-mainwp-favorites-helper.php:484
+#: class/class-mainwp-favorites-helper.php:890
 msgid "Download failed. File is missing or empty."
 msgstr "A letöltés nem sikerült. A fájl hiányzik vagy üres."
 
-#: class/class-mainwp-favorites-helper.php:602
+#: class/class-mainwp-favorites-helper.php:1008
 msgid "Add New Plugin"
 msgstr "Új bővítmény hozzáadása"
 
-#: class/class-mainwp-favorites-helper.php:611
+#: class/class-mainwp-favorites-helper.php:1017
 msgid "Plugin URL"
-msgstr "Bővítmény URL"
+msgstr "Bővítmény URL-je"
 
-#: class/class-mainwp-favorites-helper.php:614
+#: class/class-mainwp-favorites-helper.php:1020
 msgid ""
 "Enter the URL of the plugin or theme. You can use a WordPress.org link or a "
 "custom URL where your custom plugin/theme is stored."
-msgstr ""
-"Adja meg a bővítmény vagy sablon URL-jét. Használhat WordPress.org "
-"hivatkozást vagy egyedi URL-t, ahol az egyedi bővítménye/sablonja található."
+msgstr "Adja meg a bővítmény vagy sablon URL-jét. Használhat WordPress.org-linket vagy egyéni URL-t, ahol az egyéni bővítménye vagy sablonja található."
 
-#: class/class-mainwp-favorites-helper.php:617
+#: class/class-mainwp-favorites-helper.php:1022
+msgid "Or"
+msgstr "Vagy"
+
+#: class/class-mainwp-favorites-helper.php:1024
+msgid "Plugin ZIP"
+msgstr "Bővítmény ZIP-fájl"
+
+#: class/class-mainwp-favorites-helper.php:1029
+msgid ""
+"Upload a ZIP file. It will be stored in the site uploads folder for "
+"favorites."
+msgstr "Töltsön fel egy ZIP-fájlt. A rendszer a fájlt a webhely kedvencek számára fenntartott feltöltési mappájában tárolja."
+
+#: class/class-mainwp-favorites-helper.php:1031
+msgid "Details"
+msgstr "Részletek"
+
+#: class/class-mainwp-favorites-helper.php:1033
 msgid "Name (Optional)"
 msgstr "Név (opcionális)"
 
-#: class/class-mainwp-favorites-helper.php:620
+#: class/class-mainwp-favorites-helper.php:1036
 msgid ""
 "Optional: If left blank, the system will automatically use the name from the"
-" item's meta info."
-msgstr ""
-"Opcionális: Ha üresen hagyja, a rendszer automatikusan az elem metaadataiból"
-" veszi a nevet."
+" item's meta info. Applies to both URL and ZIP uploads."
+msgstr "Opcionális: Ha üresen hagyja, a rendszer automatikusan a tétel metaadataiból származó nevet használja. URL-es és ZIP-fájlos feltöltésre egyaránt érvényes."
 
-#: class/class-mainwp-favorites-helper.php:629
+#: class/class-mainwp-favorites-helper.php:1045
 msgid "Save"
 msgstr "Mentés"
 
-#: class/class-mainwp-favorites-helper.php:648
+#: class/class-mainwp-favorites-helper.php:1069
+#: class/class-mainwp-favorites-helper.php:1103
+msgid "No groups yet. Create your first group to organize favorites."
+msgstr "Még nincsenek csoportok. Hozza létre az első csoportját a kedvencek rendszerezéséhez."
+
+#: class/class-mainwp-favorites-helper.php:1074
+msgid "Group Name"
+msgstr "Csoport neve"
+
+#: class/class-mainwp-favorites-helper.php:1079
+msgid "Description (Optional)"
+msgstr "Leírás (opcionális)"
+
+#: class/class-mainwp-favorites-helper.php:1085
+msgid "Add Group"
+msgstr "Csoport hozzáadása"
+
+#: class/class-mainwp-favorites-helper.php:1112
+msgid "Edit group"
+msgstr "Csoport szerkesztése"
+
+#: class/class-mainwp-favorites-helper.php:1113
+msgid "Delete group"
+msgstr "Csoport törlése"
+
+#: class/class-mainwp-favorites-helper.php:1138
 msgid "Favorites Installation"
 msgstr "Kedvencek telepítése"
 
-#: class/class-mainwp-favorites-helper.php:666
+#: class/class-mainwp-favorites-helper.php:1156
 msgid "Version Information Check"
 msgstr "Verzióinformációk ellenőrzése"
 
-#: class/class-mainwp-favorites.php:111 class/class-mainwp-favorites.php:113
+#: class/class-mainwp-favorites.php:106
+msgid "Unable to save the favorite item. Please try again."
+msgstr "Nem sikerült menteni a kedvenc tételt. Kérjük, próbálja meg újra."
+
+#: class/class-mainwp-favorites.php:120
+msgid "Unable to sync the favorite item. Please try again."
+msgstr "Nem sikerült szinkronizálni a kedvenc tételt. Kérjük, próbálja meg újra."
+
+#: class/class-mainwp-favorites.php:166 class/class-mainwp-favorites.php:168
 msgid "The favorite item was not found. Please try again."
 msgstr "A kedvenc elem nem található. Próbálja újra."
 
-#: class/class-mainwp-favorites.php:136
+#: class/class-mainwp-favorites.php:206
 msgid "Invalid or can not get download link of the plugin."
-msgstr ""
-"Érvénytelen a bővítmény letöltési hivatkozása, vagy nem szerezhető be."
+msgstr "A bővítmény letöltési linkje hibás vagy nem kérhető le."
 
-#: class/class-mainwp-favorites.php:136
+#: class/class-mainwp-favorites.php:206
 msgid "Invalid or can not get download link of the theme."
-msgstr "Érvénytelen a sablon letöltési hivatkozása, vagy nem szerezhető be."
+msgstr "A sablon letöltési linkje hibás vagy nem kérhető le."
 
-#: class/class-mainwp-favorites.php:225
+#: class/class-mainwp-favorites.php:271
+msgid "Invalid item ID."
+msgstr "Érvénytelen tétel-ID."
+
+#: class/class-mainwp-favorites.php:279 class/class-mainwp-favorites.php:290
+msgid "Unable to remove the favorite item. Please try again."
+msgstr "Nem sikerült eltávolítani a kedvenc tételt. Kérjük, próbálja meg újra."
+
+#: class/class-mainwp-favorites.php:309 class/class-mainwp-favorites.php:417
+msgid "Invalid favorites type."
+msgstr "Hibás kedvenctípus."
+
+#: class/class-mainwp-favorites.php:378 class/class-mainwp-favorites.php:471
+msgid "Unable to filter favorites. Please try again."
+msgstr "Nem sikerült szűrni a kedvenceket. Kérjük, próbálja meg újra."
+
+#: class/class-mainwp-favorites.php:502 class/class-mainwp-favorites.php:560
+msgid "Invalid group type."
+msgstr "Hibás csoporttípus."
+
+#: class/class-mainwp-favorites.php:514
+msgid "Unable to load groups. Please try again."
+msgstr "Nem sikerült betölteni a csoportokat. Kérjük, próbálja meg újra."
+
+#: class/class-mainwp-favorites.php:546
+msgid "Group name cannot be empty."
+msgstr "A csoport neve nem lehet üres."
+
+#: class/class-mainwp-favorites.php:552
+msgid "Group name must be at least 2 characters long."
+msgstr "A csoport nevének legalább 2 karakterből kell állnia."
+
+#: class/class-mainwp-favorites.php:556
+msgid "Group name must be 100 characters or fewer."
+msgstr "A csoport neve legfeljebb 100 karakterből állhat."
+
+#: class/class-mainwp-favorites.php:569 class/class-mainwp-favorites.php:622
+msgid "Invalid group ID."
+msgstr "Érvénytelen csoport-ID."
+
+#: class/class-mainwp-favorites.php:574
+msgid "Selected group does not match the favorites type."
+msgstr "A kiválasztott csoport nem egyezik a kedvencek típusával."
+
+#: class/class-mainwp-favorites.php:581
+msgid "A group with this name already exists."
+msgstr "Már létezik ilyen nevű csoport."
+
+#: class/class-mainwp-favorites.php:596 class/class-mainwp-favorites.php:600
+msgid "Unable to save the group. Please try again."
+msgstr "Nem sikerült menteni a csoportot. Kérjük, próbálja meg újra."
+
+#: class/class-mainwp-favorites.php:606
+msgid "Group saved successfully"
+msgstr "A csoport mentése sikeres"
+
+#: class/class-mainwp-favorites.php:628 class/class-mainwp-favorites.php:632
+msgid "Unable to delete the group. Please try again."
+msgstr "Nem sikerült törölni a csoportot. Kérjük, próbálja meg újra."
+
+#: class/class-mainwp-favorites.php:635
+msgid "Group deleted successfully"
+msgstr "A csoport törlése sikeres"
+
+#: class/class-mainwp-favorites.php:650 class/class-mainwp-favorites.php:682
+msgid "Invalid item or group."
+msgstr "Hibás tétel vagy csoport."
+
+#: class/class-mainwp-favorites.php:656 class/class-mainwp-favorites.php:664
+msgid "Unable to assign the group to the item."
+msgstr "Nem sikerült hozzárendelni a csoportot a tételhez."
+
+#: class/class-mainwp-favorites.php:688 class/class-mainwp-favorites.php:696
+msgid "Unable to remove the group from the item."
+msgstr "Nem sikerült eltávolítani a csoportot a tételről."
+
+#: class/class-mainwp-favorites.php:755
 msgid "Install from Favorites"
 msgstr "Telepítés a kedvencekből"
 
-#: class/class-mainwp-favorites.php:291
+#: class/class-mainwp-favorites.php:841
 msgid "The HTTP status code returned for the parsed download link:"
-msgstr "A feldolgozott letöltési hivatkozás HTTP állapotkódja:"
+msgstr "A feldolgozott letöltési link HTTP-állapotkódja:"
 
-#: class/class-mainwp-favorites.php:368
+#: class/class-mainwp-favorites.php:918
 msgid ""
 "An error occurred: Unable to access the destination folder. Please check the"
 " file permissions and try again."
@@ -229,48 +467,96 @@ msgstr ""
 "Hiba történt: Nem érhető el a célmappa. Ellenőrizze a fájljogosultságokat, "
 "majd próbálja újra."
 
-#: class/class-mainwp-favorites.php:508
+#: class/class-mainwp-favorites.php:926
+msgid "Uploaded ZIP file is missing. Please try again."
+msgstr "A feltöltött ZIP-fájl hiányzik. Kérjük, próbálja meg újra."
+
+#: class/class-mainwp-favorites.php:930
+msgid "Unable to read the uploaded ZIP file. Please try again."
+msgstr "Nem sikerült beolvasni a feltöltött ZIP-fájlt. Kérjük, próbálja meg újra."
+
+#: class/class-mainwp-favorites.php:1068
 msgid "Error: Unable to save plugin data. Please try again."
 msgstr "Hiba: A bővítmény adatai nem menthetők. Próbálja újra."
 
-#: class/class-mainwp-favorites.php:508
+#: class/class-mainwp-favorites.php:1068
 msgid "Error: Unable to save theme data. Please try again."
 msgstr "Hiba: A sablon adatai nem menthetők. Próbálja újra."
 
-#: class/class-mainwp-favorites.php:597 class/class-mainwp-favorites.php:648
+#: class/class-mainwp-favorites.php:1195
+msgid "You do not have permission to upload files."
+msgstr "Nincs jogosultsága fájlok feltöltéséhez."
+
+#: class/class-mainwp-favorites.php:1199 class/class-mainwp-favorites.php:1205
+msgid "No ZIP file uploaded."
+msgstr "Nem töltött fel ZIP-fájlt."
+
+#: class/class-mainwp-favorites.php:1209
+msgid "ZIP upload failed. Please try again."
+msgstr "A ZIP-fájl feltöltése sikertelen. Kérjük, próbálja meg újra."
+
+#: class/class-mainwp-favorites.php:1213
+msgid "Invalid ZIP upload."
+msgstr "Hibás ZIP-feltöltés."
+
+#: class/class-mainwp-favorites.php:1219
+msgid "Invalid file type. Please upload a ZIP file."
+msgstr "Hibás fájltípus. Kérjük, ZIP-fájlt töltsön fel."
+
+#: class/class-mainwp-favorites.php:1224
+msgid ""
+"Unable to access upload folder. Please check the file permissions and try "
+"again."
+msgstr "Nem sikerült hozzáférni a feltöltési mappához. Kérjük, ellenőrizze a fájljogosultságokat, majd próbálja meg újra."
+
+#: class/class-mainwp-favorites.php:1237
+msgid "Unable to save the uploaded ZIP file. Please try again."
+msgstr "Nem sikerült menteni a feltöltött ZIP-fájlt. Kérjük, próbálja meg újra."
+
+#: class/class-mainwp-favorites.php:1359 class/class-mainwp-favorites.php:1410
 msgid "Failed to create folder. Please check files permission and try again."
 msgstr ""
 "Nem sikerült mappát létrehozni. Ellenőrizze a fájljogosultságokat, majd "
 "próbálja újra."
 
-#: class/class-mainwp-favorites.php:604
+#: class/class-mainwp-favorites.php:1366
 msgid "Extraction failed:"
 msgstr "A kibontás nem sikerült:"
 
-#: class/class-mainwp-favorites.php:614
+#: class/class-mainwp-favorites.php:1376
 msgid "No valid plugin folder found."
 msgstr "Nem található érvényes bővítménymappa."
 
-#: class/class-mainwp-favorites.php:632
+#: class/class-mainwp-favorites.php:1394
 msgid "No valid plugin file found."
 msgstr "Nem található érvényes bővítményfájl."
 
-#: class/class-mainwp-favorites.php:655
+#: class/class-mainwp-favorites.php:1417
 msgid "Extraction failed: "
 msgstr "Kicsomagolás sikertelen: "
 
-#: class/class-mainwp-favorites.php:665
+#: class/class-mainwp-favorites.php:1427
 msgid "No valid theme folder found."
-msgstr "Nem található érvényes témamappa."
+msgstr "Nem található érvényes sablonmappa."
 
-#: class/class-mainwp-favorites.php:677
+#: class/class-mainwp-favorites.php:1439
 msgid "style.css not found in theme folder."
-msgstr "A style.css nem található a témamappában."
+msgstr "A style.css nem található a sablonmappában."
 
-#: class/class-mainwp-favorites.php:685
+#: class/class-mainwp-favorites.php:1447
 msgid "Invalid theme structure."
-msgstr "Érvénytelen témastruktúra."
+msgstr "Hibás sablonszerkezet."
 
 #: mainwp-favorites-extension.php:111
 msgid "Favorites"
 msgstr "Kedvencek"
+
+#~ msgid "Version update fetched:."
+#~ msgstr "Verziófrissítés lekérve:."
+
+#~ msgid ""
+#~ "Optional: If left blank, the system will automatically use the name from the"
+#~ " item's meta info."
+#~ msgstr ""
+#~ "Opcionális: Ha üresen hagyja, a rendszer automatikusan az elem metaadataiból"
+#~ " veszi a nevet."

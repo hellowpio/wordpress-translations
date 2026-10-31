@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Measurement Price Calculator 3.23.9\n"
+"Project-Id-Version: WooCommerce Measurement Price Calculator 3.24.2\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:50:43+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,13 +18,13 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: WooCommerce Measurement Price Calculator\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 3.23.9\n"
+"X-Plugin-Version: 3.24.2\n"
 
 #. Plugin Name of the plugin
 #: woocommerce-measurement-price-calculator.php
-#: class-wc-measurement-price-calculator.php:250
+#: class-wc-measurement-price-calculator.php:265
 msgid "WooCommerce Measurement Price Calculator"
-msgstr "WooCommerce mérés alapú árkalkulátor"
+msgstr "WooCommerce mérésalapú árkalkulátor"
 
 #. Plugin URI of the plugin
 #: woocommerce-measurement-price-calculator.php
@@ -49,9 +49,25 @@ msgstr "SkyVerge"
 msgid "http://www.woocommerce.com"
 msgstr "http://www.woocommerce.com"
 
+#: src/Abilities/Provider.php:55
+msgid "Measurement Price Calculator Products"
+msgstr "Mérésalapú árkalkulátort használó termékek"
+
+#: src/Abilities/Provider.php:56
+msgid ""
+"Abilities related to products that use the measurement price calculator."
+msgstr "A mérésalapú árkalkulátort használó termékekkel kapcsolatos képességek."
+
+#: src/Abilities/Provider.php:60
+msgid "Measurement Price Calculator Measurements"
+msgstr "Mérésalapú árkalkulátor mérései"
+
+#: src/Abilities/Provider.php:61
+msgid "Abilities related to measurement values and unit conversion."
+msgstr "A mérési értékekkel és a mértékegység-átváltással kapcsolatos képességek."
+
 #. translators: Placeholder: %s - Measurement unit
 #: src/admin/post-types/writepanels/writepanel-product-type-variable.php:78
-#, php-format
 msgid "Area (%s)"
 msgstr "Terület (%s)"
 
@@ -68,7 +84,6 @@ msgstr ""
 
 #. translators: Placeholder: %s - Measurement unit
 #: src/admin/post-types/writepanels/writepanel-product-type-variable.php:96
-#, php-format
 msgid "Volume (%s)"
 msgstr "Térfogat (%s)"
 
@@ -83,11 +98,9 @@ msgstr ""
 "Felülírja a Mérési árkalkulátor által a szélesség/hossz/magasság méretekből "
 "számított térfogatot."
 
-#. translators: Placeholder: %s - currency symbol
 #. translators: Placeholders: %s - currency symbol
-#: src/admin/post-types/writepanels/writepanel-product-type-variable.php:138
+#: src/admin/post-types/writepanels/writepanel-product-type-variable.php:137
 #: src/admin/post-types/writepanels/writepanel-product_data.php:131
-#, php-format
 msgid "Minimum Price (%s)"
 msgstr "Minimális ár (%s)"
 
@@ -119,7 +132,7 @@ msgstr "Méretek"
 #: src/class-wc-price-calculator-product.php:258
 #: src/class-wc-price-calculator-product.php:278
 #: src/class-wc-price-calculator-product.php:283
-#: src/class-wc-price-calculator-settings.php:875
+#: src/class-wc-price-calculator-settings.php:877
 msgid "Area"
 msgstr "Terület"
 
@@ -161,15 +174,13 @@ msgstr "Súly"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:101
 msgid "Room Walls"
-msgstr "Szobafalak"
+msgstr "Szoba falai"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:112
 msgid ""
 "Select the product measurement to calculate quantity by or define pricing "
 "within."
-msgstr ""
-"Válassza ki azt a termékmérést, amely alapján a mennyiséget kiszámítja, vagy"
-" amelyben az árazást meghatározza."
+msgstr "Válassza ki, hogy a termék mely mérési módja alapján számítsa ki a mennyiséget, illetve határozza meg az árazást."
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:116
 msgid ""
@@ -177,28 +188,19 @@ msgid ""
 " calculate the area required.  When pricing is disabled (no custom "
 "dimensions) this calculator uses the product area attribute or otherwise the"
 " length and width attributes to determine the product area."
-msgstr ""
-"Ezzel a méréssel kérheti be az ügyféltől a hosszt és a szélességet a "
-"szükséges terület kiszámításához.  Ha az árazás le van tiltva (nincsenek "
-"egyéni méretek), ez a kalkulátor a termék terület attribútumát, ennek "
-"hiányában pedig a hossz és szélesség attribútumokat használja a termék "
-"területének meghatározásához."
+msgstr "Ezzel a méréssel kérheti be a vásárlótól a hosszt és a szélességet a szükséges terület kiszámításához.  Ha az árazás ki van kapcsolva (nincsenek egyéni méretek), ez a kalkulátor a termék területattribútumát, ennek hiányában pedig a hossz és szélesség attribútumait használja a termék területének meghatározásához."
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:117
 msgid ""
 "Use this measurement to have the customer prompted for a length and width to"
 " calculate the linear distance (L * 2 + W * 2)."
-msgstr ""
-"Ezzel a méréssel kérheti be az ügyféltől a hosszt és a szélességet a "
-"lineáris távolság kiszámításához (L * 2 + W * 2)."
+msgstr "Ezzel a méréssel kérheti be az ügyféltől a hosszt és a szélességet a lineáris távolság kiszámításához (L * 2 + W * 2)."
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:118
 msgid ""
 "Use this measurement to have the customer prompted for a length, width and "
 "height to calculate the surface area 2 * (L * W + W * H + L * H)."
-msgstr ""
-"Ezzel a méréssel kérheti be az ügyféltől a hosszt, a szélességet és a "
-"magasságot a felület kiszámításához 2 * (L * W + W * H + L * H)."
+msgstr "Ezzel a méréssel kérheti be az ügyféltől a hosszt, a szélességet és a magasságot a felület kiszámításához 2 * (L * W + W * H + L * H)."
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:119
 msgid ""
@@ -207,12 +209,7 @@ msgid ""
 "custom dimensions) this calculator uses the product volume attribute or "
 "otherwise the length, width and height attributes to determine the product "
 "volume."
-msgstr ""
-"Ezzel a méréssel kérheti be az ügyféltől a hosszt, a szélességet és a "
-"magasságot a szükséges térfogat kiszámításához.  Ha az árazás le van tiltva "
-"(nincsenek egyéni méretek), ez a kalkulátor a termék térfogat attribútumát, "
-"ennek hiányában pedig a hossz, szélesség és magasság attribútumokat "
-"használja a termék térfogatának meghatározásához."
+msgstr "Ezzel a méréssel kérheti be a vásárlótól a hosszt, a szélességet és a magasságot a szükséges térfogat kiszámításához.  Ha az árazás ki van kapcsolva (nincsenek egyéni méretek), ez a kalkulátor a termék térfogatattribútumát, ennek hiányában pedig a hossz, szélesség és magasság attribútumait használja a termék térfogatának meghatározásához."
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:120
 msgid ""
@@ -220,12 +217,7 @@ msgid ""
 " calculate the volume required.  When pricing is disabled (no custom "
 "dimensions) this calculator uses the product volume attribute or otherwise "
 "the length, width and height attributes to determine the product volume."
-msgstr ""
-"Ezzel a méréssel kérheti be az ügyféltől a területet és a magasságot a "
-"szükséges térfogat kiszámításához.  Ha az árazás le van tiltva (nincsenek "
-"egyéni méretek), ez a kalkulátor a termék térfogat attribútumát, ennek "
-"hiányában pedig a hossz, szélesség és magasság attribútumokat használja a "
-"termék térfogatának meghatározásához."
+msgstr "Ezzel a méréssel kérheti be a vásárlótól a területet és a magasságot a szükséges térfogat kiszámításához.  Ha az árazás ki van kapcsolva (nincsenek egyéni méretek), ez a kalkulátor a termék térfogatattribútumát, ennek hiányában pedig a hossz, szélesség és magasság attribútumait használja a termék térfogatának meghatározásához."
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:121
 msgid ""
@@ -234,12 +226,7 @@ msgid ""
 "is disabled (no custom dimensions) this calculator uses the product area "
 "attribute or otherwise the length and width attributes to determine the wall"
 " surface area."
-msgstr ""
-"Ezt a mérést használja olyan felhasználásokhoz, mint a tapéta; az ügyféltől "
-"a fal magasságát és a szoba körbefutó távolságát fogja bekérni.  Ha az "
-"árazás le van tiltva (nincsenek egyéni méretek), ez a kalkulátor a termék "
-"terület attribútumát, ennek hiányában pedig a hossz és szélesség "
-"attribútumokat használja a fal felületének meghatározásához."
+msgstr "Ezt a mérési módot például tapétázáshoz használja; a rendszer a vásárlótól bekéri a fal magasságát és a szoba kerületét.  Ha az árazás ki van kapcsolva (nincsenek egyéni méretek), ez a kalkulátor a termék területattribútumát, ennek hiányában pedig a hossz- és szélességattribútumokat használja a fal felületének meghatározásához."
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:128
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:334
@@ -280,7 +267,7 @@ msgstr ""
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1167
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1259
 msgid "Pricing Label"
-msgstr "Ár felirat"
+msgstr "Árazási címke"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:136
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:342
@@ -293,8 +280,7 @@ msgstr "Ár felirat"
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1168
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1260
 msgid "Label to display next to the product price (defaults to pricing unit)"
-msgstr ""
-"A termék ára mellett megjelenítendő felirat (alapértelmezésben az áregység)"
+msgstr "A termék ára mellett megjelenítendő címke (alapértelmezés szerint az áregység)"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:143
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:349
@@ -348,9 +334,7 @@ msgstr "Számított ár"
 msgid ""
 "Check this box to define product pricing per unit and allow customers to "
 "provide custom measurements"
-msgstr ""
-"Jelölje be ezt a négyzetet az egységre vetített termékár meghatározásához, "
-"és hogy lehetővé tegye az ügyfelek számára egyéni méretek megadását"
+msgstr "Jelölje be ezt a négyzetet a termék egységárának meghatározásához, így engedélyezheti a vásárlóknak az egyéni méretek megadását"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:160
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:366
@@ -369,9 +353,7 @@ msgstr "Számított súly"
 msgid ""
 "Check this box to define the product weight per unit and calculate the item "
 "weight based on the product dimension"
-msgstr ""
-"Jelölje be ezt a négyzetet a termék egységre vetített súlyának "
-"meghatározásához, és az elem súlyának kiszámításához a termék mérete alapján"
+msgstr "Jelölje be ezt a négyzetet a termék egységenkénti súlyának meghatározásához, valamint ahhoz, hogy a termék méretei alapján kiszámítsa a tétel súlyát"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:168
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:374
@@ -390,9 +372,7 @@ msgstr "Számított készlet"
 msgid ""
 "Check this box to define inventory per unit and calculate inventory based on"
 " the product dimension"
-msgstr ""
-"Jelölje be ezt a négyzetet az egységre vetített készlet meghatározásához, és"
-" a készlet kiszámításához a termék mérete alapján"
+msgstr "Jelölje be ezt a négyzetet, ha egységenként szeretné megadni a készletet, és a termék mérete alapján szeretné kiszámítani a készletet"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:182
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:211
@@ -401,7 +381,7 @@ msgstr ""
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:721
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:960
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1316
-#: src/class-wc-price-calculator-settings.php:869
+#: src/class-wc-price-calculator-settings.php:871
 msgid "Length"
 msgstr "Hossz"
 
@@ -416,7 +396,7 @@ msgstr "Válassza ezt, hogy a termék hossza megjelenjen az árkalkulátorban"
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:945
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1301
 msgid "Length Label"
-msgstr "Hossz felirat"
+msgstr "Hosszúság címkéje"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:190
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:475
@@ -424,7 +404,7 @@ msgstr "Hossz felirat"
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:707
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:946
 msgid "Length input field label to display on the frontend"
-msgstr "A hossz beviteli mező felirata, amely a frontenden jelenik meg"
+msgstr "A felhasználói felületen megjelenő hosszbeviteli mező címkéje"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:196
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:481
@@ -433,7 +413,7 @@ msgstr "A hossz beviteli mező felirata, amely a frontenden jelenik meg"
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:952
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1308
 msgid "Length Unit"
-msgstr "Hossz egysége"
+msgstr "Hosszúság mértékegysége"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:198
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:483
@@ -441,18 +421,16 @@ msgstr "Hossz egysége"
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:715
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:954
 msgid "The frontend length input field unit"
-msgstr "A frontenden látható hossz beviteli mező egysége"
+msgstr "A felhasználói felületen megjelenő hosszbeviteli mező mértékegysége"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:204
 msgid "Length Editable"
-msgstr "Hossz szerkeszthető"
+msgstr "Hossz szerkeszthetősége"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:206
 msgid ""
 "Check this box to allow the needed length to be entered by the customer"
-msgstr ""
-"Jelölje be ezt a négyzetet, hogy a vásárló megadhassa a szükséges "
-"hosszúságot"
+msgstr "Jelölje be ezt a négyzetet, hogy engedélyezze a vásárlónak a szükséges hosszúság megadását"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:219
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:497
@@ -469,7 +447,7 @@ msgstr "Hosszúság beállításai"
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:637
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:753
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:992
-#: src/class-wc-price-calculator-settings.php:871
+#: src/class-wc-price-calculator-settings.php:873
 msgid "Width"
 msgstr "Szélesség"
 
@@ -491,7 +469,7 @@ msgstr "Szélesség címkéje"
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:739
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:978
 msgid "Width input field label to display on the frontend"
-msgstr "A frontend szélesség beviteli mező címkéje"
+msgstr "A felhasználói felületen megjelenő szélességbeviteli mező címkéje"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:247
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:513
@@ -507,17 +485,15 @@ msgstr "Szélesség mértékegysége"
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:747
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:986
 msgid "The frontend width input field unit"
-msgstr "A frontend szélesség beviteli mező mértékegysége"
+msgstr "A felhasználói felületen megjelenő szélességbeviteli mező mértékegysége"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:255
 msgid "Width Editable"
-msgstr "Szélesség szerkeszthető"
+msgstr "Szélesség szerkeszthetősége"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:257
 msgid "Check this box to allow the needed width to be entered by the customer"
-msgstr ""
-"Jelölje be ezt a négyzetet, hogy a vásárló megadhassa a szükséges "
-"szélességet"
+msgstr "Jelölje be ezt a négyzetet, hogy engedélyezze a vásárlónak a szükséges szélesség megadását"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:270
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:529
@@ -533,7 +509,7 @@ msgstr "Szélesség beállításai"
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1024
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1140
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1348
-#: src/class-wc-price-calculator-settings.php:873
+#: src/class-wc-price-calculator-settings.php:875
 msgid "Height"
 msgstr "Magasság"
 
@@ -554,7 +530,7 @@ msgstr "Magasság címkéje"
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1010
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1126
 msgid "Height input field label to display on the frontend"
-msgstr "A frontend magasság beviteli mező címkéje"
+msgstr "A felhasználói felületen megjelenő magasságbeviteli mező címkéje"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:298
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:777
@@ -569,11 +545,11 @@ msgstr "Magasság mértékegysége"
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1018
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1134
 msgid "The frontend height input field unit"
-msgstr "A frontend magasság beviteli mező mértékegysége"
+msgstr "A felhasználói felületen megjelenő magasságbeviteli mező mértékegysége"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:306
 msgid "Height Editable"
-msgstr "Magasság szerkeszthető"
+msgstr "Magasság szerkeszthetősége"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:308
 msgid ""
@@ -621,7 +597,7 @@ msgstr "Terület címkéje"
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:384
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1094
 msgid "Area input field label to display on the frontend"
-msgstr "A frontend terület beviteli mező címkéje"
+msgstr "A weboldalon megjelenő területbeviteli mező címkéje"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:390
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1100
@@ -632,7 +608,7 @@ msgstr "Terület mértékegysége"
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:392
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1102
 msgid "The frontend area input field unit"
-msgstr "A frontend terület beviteli mező mértékegysége"
+msgstr "A weboldalon megjelenő területbeviteli mező mértékegysége"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:398
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:869
@@ -679,7 +655,7 @@ msgstr "Térfogat címkéje"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:855
 msgid "Volume input field label to display on the frontend"
-msgstr "A frontend térfogat beviteli mező címkéje"
+msgstr "A weboldalon megjelenő térfogatbeviteli mező címkéje"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:861
 #: src/admin/woocommerce-measurement-price-calculator-admin-init.php:188
@@ -688,7 +664,7 @@ msgstr "Térfogat mértékegysége"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:863
 msgid "The frontend volume input field unit"
-msgstr "A frontend térfogat beviteli mező mértékegysége"
+msgstr "A weboldalon megjelenő térfogatbeviteli mező mértékegysége"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:884
 msgid "Volume Options"
@@ -716,7 +692,7 @@ msgstr "Súly címkéje"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1210
 msgid "Weight input field label to display on the frontend"
-msgstr "A frontend súly beviteli mező címkéje"
+msgstr "A weboldalon megjelenő súlybeviteli mező címkéje"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1216
 msgid "Weight Unit"
@@ -724,7 +700,7 @@ msgstr "Súly mértékegysége"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1218
 msgid "The frontend weight input field unit"
-msgstr "A frontend súly beviteli mező mértékegysége"
+msgstr "A weboldalon megjelenő súlybeviteli mező mértékegysége"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1239
 msgid "Weight Options"
@@ -732,31 +708,27 @@ msgstr "Súly beállításai"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1302
 msgid "Wall length input field label to display on the frontend"
-msgstr "A frontend falhossz beviteli mező címkéje"
+msgstr "A weboldalon megjelenő falhosszbeviteli mező címkéje"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1310
 msgid "The frontend wall length input field unit"
-msgstr "A frontend falhossz beviteli mező mértékegysége"
+msgstr "A weboldalon megjelenő falhosszbeviteli mező mértékegysége"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1334
 msgid "Room wall height input field label to display on the frontend"
-msgstr "A frontend szobafal magassága beviteli mező címkéje"
+msgstr "A weboldalon megjelenő, a szobafal magasságának megadására szolgáló mező címkéje"
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1342
 msgid "The frontend room wall height input field unit"
-msgstr "A frontend szobafal magassága beviteli mező mértékegysége"
+msgstr "A weboldalon megjelenő, a szobafal magasságának megadására szolgáló mező mértékegysége"
 
 #. translators: Placeholder: %s - delimiter to use in the input
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1951
-#, php-format
 msgid ""
 "Use a single number to set a fixed value for this field on the frontend, or "
 "a %s-separated list of numbers to create a select box for the customer to "
 "choose between."
-msgstr ""
-"Használjon egyetlen számot, hogy rögzített értéket állítson be ehhez a "
-"mezőhöz a frontenden, vagy egy %s karakterrel elválasztott számlistát, hogy "
-"legördülő listát hozzon létre, amelyből a vásárló választhat."
+msgstr "Használjon egyetlen számot a mező rögzített értékének a weboldalon történő beállításához, vagy hozzon létre egy legördülő listát a %s jellel elválasztott számokból, amelyből a vásárló választhat."
 
 #: src/admin/post-types/writepanels/writepanel-product_data-calculator.php:1954
 msgid "Example: 1/8; 0,5; 2"
@@ -865,15 +837,15 @@ msgstr "mi"
 
 #: src/admin/post-types/writepanels/writepanels-init.php:154
 msgid "sq mm"
-msgstr "sq mm"
+msgstr "négyzetmilliméter"
 
 #: src/admin/post-types/writepanels/writepanels-init.php:155
 msgid "sq cm"
-msgstr "sq cm"
+msgstr "négyzetcentiméter"
 
 #: src/admin/post-types/writepanels/writepanels-init.php:156
 msgid "sq m"
-msgstr "sq m"
+msgstr "négyzetméter"
 
 #: src/admin/post-types/writepanels/writepanels-init.php:157
 msgid "ha"
@@ -881,7 +853,7 @@ msgstr "ha"
 
 #: src/admin/post-types/writepanels/writepanels-init.php:158
 msgid "sq km"
-msgstr "sq km"
+msgstr "négyzetkilométer"
 
 #: src/admin/post-types/writepanels/writepanels-init.php:159
 msgid "sq. in."
@@ -897,7 +869,7 @@ msgstr "sq. yd."
 
 #: src/admin/post-types/writepanels/writepanels-init.php:162
 msgid "acs"
-msgstr "acs"
+msgstr "acre"
 
 #: src/admin/post-types/writepanels/writepanels-init.php:163
 msgid "sq. mi."
@@ -913,12 +885,12 @@ msgstr "l"
 
 #: src/admin/post-types/writepanels/writepanels-init.php:190
 msgid "cu m"
-msgstr "cu m"
+msgstr "köbméter"
 
 #: src/admin/post-types/writepanels/writepanels-init.php:191
 #: src/admin/woocommerce-measurement-price-calculator-admin-init.php:202
 msgid "cup"
-msgstr "cup"
+msgstr "csésze"
 
 #: src/admin/post-types/writepanels/writepanels-init.php:192
 msgid "pt"
@@ -956,52 +928,47 @@ msgstr "Ráhagyás hozzáadása "
 msgid ""
 "If you need to add and charge for a cut or overage estimate in addition to "
 "the customer input, enter the percentage of the total measurement to use."
-msgstr ""
-"Ha az ügyfél által megadott értéken felül vágási veszteséget vagy ráhagyást "
-"is hozzá kell adnia és felszámítania, adja meg a felhasználandó teljes mérés"
-" százalékát."
+msgstr "Ha a vásárló által megadott értéken felül vágási veszteséget vagy ráhagyást is hozzá kell adnia és fel kell számítania, adja meg, hogy a teljes mérési mennyiség hány százalékát kell felhasználni."
 
-#: src/admin/post-types/writepanels/writepanels-init.php:312
-#, php-format
+#. translators: %s: input label
+#: src/admin/post-types/writepanels/writepanels-init.php:313
 msgid "%s Input"
-msgstr "%s bevitel"
-
-#: src/admin/post-types/writepanels/writepanels-init.php:314
-msgid "Accept free-form customer input"
-msgstr "Szabad formátumú ügyfélbevitel elfogadása"
+msgstr "%s megadása"
 
 #: src/admin/post-types/writepanels/writepanels-init.php:315
-msgid "Accept a limited set of customer inputs"
-msgstr "Korlátozott körű ügyfélbevitelek elfogadása"
+msgid "Accept free-form customer input"
+msgstr "Szabad formátumú vásárlói adatbevitel elfogadása"
 
-#: src/admin/post-types/writepanels/writepanels-init.php:330
-#, php-format
+#: src/admin/post-types/writepanels/writepanels-init.php:316
+msgid "Accept a limited set of customer inputs"
+msgstr "A vásárló által megadható értékek korlátozott körének elfogadása"
+
+#. translators: %s: input label
+#: src/admin/post-types/writepanels/writepanels-init.php:332
 msgid "%s Options"
 msgstr "%s beállításai"
 
-#: src/admin/post-types/writepanels/writepanels-init.php:332
+#: src/admin/post-types/writepanels/writepanels-init.php:334
 msgid "Min value"
 msgstr "Minimum érték"
 
-#: src/admin/post-types/writepanels/writepanels-init.php:336
+#: src/admin/post-types/writepanels/writepanels-init.php:338
 msgid "Max value"
 msgstr "Maximális érték"
 
-#: src/admin/post-types/writepanels/writepanels-init.php:340
+#: src/admin/post-types/writepanels/writepanels-init.php:342
 msgid "Increment"
 msgstr "Lépésköz"
 
-#: src/admin/post-types/writepanels/writepanels-init.php:345
+#: src/admin/post-types/writepanels/writepanels-init.php:347
 msgid ""
 "If applicable, enter limits to restrict customer input, such as an accepted "
 "increment and/or maximum value."
-msgstr ""
-"Ha alkalmazható, adjon meg korlátokat a vevői bevitel korlátozásához, "
-"például engedélyezett lépésközt és/vagy maximális értéket."
+msgstr "Ha alkalmazható, adjon meg a vásárlói adatbevitelre vonatkozó korlátokat, például elfogadott lépésközt és/vagy maximális értéket."
 
 #: src/admin/woocommerce-measurement-price-calculator-admin-init.php:72
 msgid "Cannot edit price while a pricing table is active"
-msgstr "Az ár nem szerkeszthető, amíg egy árképzési tábla aktív."
+msgstr "Az ár nem szerkeszthető, amíg egy árképzési tábla aktív"
 
 #: src/admin/woocommerce-measurement-price-calculator-admin-init.php:128
 msgctxt "metric ton"
@@ -1117,7 +1084,7 @@ msgstr "ml"
 #: src/admin/woocommerce-measurement-price-calculator-admin-init.php:199
 msgctxt "gallon"
 msgid "gal"
-msgstr "gal"
+msgstr "csésze"
 
 #: src/admin/woocommerce-measurement-price-calculator-admin-init.php:200
 msgctxt "quart"
@@ -1150,34 +1117,29 @@ msgid "cu. in."
 msgstr "in³"
 
 #. translators: Placeholders: %s - measurement label
-#: src/class-wc-price-calculator-cart.php:202
-#, php-format
+#: src/class-wc-price-calculator-cart.php:220
 msgid "%s missing."
 msgstr "%s hiányzik."
 
 #. translators: Placeholders: %1$s - measurement label, %2$s - measurement
 #. value (number)
-#: src/class-wc-price-calculator-cart.php:218
-#, php-format
+#: src/class-wc-price-calculator-cart.php:236
 msgid "%1$s value must be greater than or equal to %2$s."
-msgstr ""
-"A(z) %1$s értékének nagyobbnak vagy egyenlőnek kell lennie, mint %2$s."
+msgstr "A(z) %1$s értéke nem lehet kisebb, mint %2$s."
 
 #. translators: Placeholders: %1$s - measurement label, %2$s - measurement
 #. value (number)
-#: src/class-wc-price-calculator-cart.php:227
-#, php-format
+#: src/class-wc-price-calculator-cart.php:245
 msgid "%1$s value must be less than or equal to %2$s."
-msgstr "A(z) %1$s értékének kisebbnek vagy egyenlőnek kell lennie, mint %2$s."
+msgstr "A(z) %1$s értéke nem lehet nagyobb, mint %2$s."
 
 #. translators: Placeholders: %1$s - measurement label, %2$s - input measure
 #. increment value (step amount)
-#: src/class-wc-price-calculator-cart.php:242
-#, php-format
+#: src/class-wc-price-calculator-cart.php:260
 msgid "%1$s value must be in increments of %2$s."
 msgstr "A(z) %1$s értékének %2$s többszörösének kell lennie."
 
-#: src/class-wc-price-calculator-cart.php:291
+#: src/class-wc-price-calculator-cart.php:312
 msgid ""
 "No price available for a product with this measurement, please contact the "
 "store for assistance."
@@ -1185,76 +1147,70 @@ msgstr ""
 "Ehhez a méréshez nem érhető el ár, kérjük, segítségért vegye fel a "
 "kapcsolatot az üzlettel."
 
-#: src/class-wc-price-calculator-cart.php:1239
-#, php-format
+#. translators: %s: measurement unit label
+#: src/class-wc-price-calculator-cart.php:1267
 msgid "Overage Estimate (%s)"
 msgstr "Ráhagyás becslése (%s)"
 
 #. translators: Placeholders: %1$s - measurement label, %2$s - measurement
 #. unit label
-#: src/class-wc-price-calculator-cart.php:1254
+#: src/class-wc-price-calculator-cart.php:1282
 #: templates/single-product/price-calculator.php:45
-#, php-format
 msgid "Total %1$s (%2$s)"
 msgstr "Összesen %1$s (%2$s)"
 
 #. translators: Placeholders: %s - measurement label
-#: src/class-wc-price-calculator-cart.php:1256
+#: src/class-wc-price-calculator-cart.php:1284
 #: templates/single-product/price-calculator.php:47
-#, php-format
 msgid "Total %s"
 msgstr "Összesen %s"
 
 #. translators: Placeholders: %1$s - measurement label, %2$s - measurement
 #. unit label
-#: src/class-wc-price-calculator-cart.php:1265
-#, php-format
+#: src/class-wc-price-calculator-cart.php:1293
 msgid "Overage %1$s (%2$s)"
 msgstr "Ráhagyás %1$s (%2$s)"
 
 #. translators: Placeholders: %s - measurement label
-#: src/class-wc-price-calculator-cart.php:1267
-#, php-format
+#: src/class-wc-price-calculator-cart.php:1295
 msgid "Overage %s"
 msgstr "Ráhagyás %s"
 
-#: src/class-wc-price-calculator-cart.php:1279
-#, php-format
+#. translators: %s: overage percentage
+#: src/class-wc-price-calculator-cart.php:1308
 msgid "Overage Cost (%s%%)"
 msgstr "Ráhagyás költsége (%s%%)"
 
-#: src/class-wc-price-calculator-inventory.php:340
-#, php-format
-msgid "Only %s %s left in stock"
-msgstr "Csak %s %s maradt raktáron"
+#. translators: %1$s: stock amount; %2$s: pricing unit
+#: src/class-wc-price-calculator-inventory.php:432
+msgid "Only %1$s %2$s left in stock"
+msgstr "Már csak %1$s %2$s van készleten"
 
-#: src/class-wc-price-calculator-inventory.php:340
+#. translators: %1$s: stock amount; %2$s: pricing unit
+#: src/class-wc-price-calculator-inventory.php:432
 msgid "In stock"
 msgstr "Raktáron"
 
-#: src/class-wc-price-calculator-inventory.php:343
-#, php-format
-msgid "%s %s in stock"
-msgstr "%s %s raktáron"
+#. translators: %1$s: stock amount; %2$s: pricing unit
+#: src/class-wc-price-calculator-inventory.php:436
+msgid "%1$s %2$s in stock"
+msgstr "%1$s %2$s van készleten"
 
-#: src/class-wc-price-calculator-inventory.php:350
+#: src/class-wc-price-calculator-inventory.php:443
 msgid "(backorders allowed)"
 msgstr "(utánrendelés engedélyezett)"
 
 #. translators: %1$s item ID number; %2$s previous stock count; %3$s stock
 #. count we failed to change
-#: src/class-wc-price-calculator-inventory.php:780
-#, php-format
+#: src/class-wc-price-calculator-inventory.php:873
 msgid "Failed to increase Item #%1$s stock of %2$s by %3$s."
 msgstr "Nem sikerült a(z) #%1$s tétel %2$s készletét %3$s értékkel növelni."
 
 #. translators: %1$s item ID number; %2$s previous stock count; %3$s new stock
 #. count
-#: src/class-wc-price-calculator-inventory.php:794
-#, php-format
+#: src/class-wc-price-calculator-inventory.php:887
 msgid "Item #%1$s stock increased by MPC Plugin from %2$s to %3$s."
-msgstr ""
-"A(z) #%1$s tétel készletét az MPC Plugin %2$s értékről %3$s értékre növelte."
+msgstr "A(z) #%1$s tétel készletét az MPC Plugin %2$s értékről %3$s értékre növelte."
 
 #: src/class-wc-price-calculator-product-loop.php:81
 msgid "Select options"
@@ -1274,55 +1230,191 @@ msgstr "Kerület"
 msgid "Surface Area"
 msgstr "Felület"
 
-#: src/class-wc-price-calculator-settings.php:680
 #: src/class-wc-price-calculator-settings.php:682
+#: src/class-wc-price-calculator-settings.php:684
 msgid "Free!"
 msgstr "Ingyenes!"
 
-#: src/class-wc-price-calculator-settings.php:870
+#: src/class-wc-price-calculator-settings.php:872
 msgid "Required Length"
 msgstr "Szükséges hosszúság"
 
-#: src/class-wc-price-calculator-settings.php:872
+#: src/class-wc-price-calculator-settings.php:874
 msgid "Required Width"
 msgstr "Szükséges szélesség"
 
-#: src/class-wc-price-calculator-settings.php:874
+#: src/class-wc-price-calculator-settings.php:876
 msgid "Required Height"
 msgstr "Szükséges magasság"
 
-#: src/class-wc-price-calculator-settings.php:876
+#: src/class-wc-price-calculator-settings.php:878
 msgid "Required Area"
 msgstr "Szükséges terület"
 
-#: src/class-wc-price-calculator-settings.php:877
+#: src/class-wc-price-calculator-settings.php:879
 msgid "Required Volume"
 msgstr "Szükséges térfogat"
 
-#: src/class-wc-price-calculator-settings.php:878
+#: src/class-wc-price-calculator-settings.php:880
 msgid "Required Weight"
 msgstr "Szükséges tömeg"
 
-#: src/class-wc-price-calculator-settings.php:879
+#: src/class-wc-price-calculator-settings.php:881
 msgid "Distance around your room"
 msgstr "Az Ön szobájának kerülete"
 
+#: src/Measurements/Abilities/MeasurementConvert.php:48
+msgid "Convert Measurement"
+msgstr "Mérés átváltása"
+
+#: src/Measurements/Abilities/MeasurementConvert.php:49
+msgid "Converts a measurement value from one unit to another."
+msgstr "Egy mérési érték átváltása egyik mértékegységről a másikra."
+
+#. translators: 1: source unit, 2: target unit
+#: src/Measurements/Abilities/MeasurementConvert.php:92
+msgid "Units \"%1$s\" and \"%2$s\" are not compatible for conversion."
+msgstr "A(z) „%1$s” és „%2$s” mértékegységek nem válthatók át egymásba."
+
+#: src/Measurements/Abilities/MeasurementConvert.php:117
+msgid "The measurement value to convert."
+msgstr "Az átváltandó mérési érték."
+
+#: src/Measurements/Abilities/MeasurementConvert.php:122
+msgid "The source unit (e.g. \"ft\", \"sq m\", \"kg\")."
+msgstr "A forrásmértékegység (pl. „ft”, „sq m”, „kg”)."
+
+#: src/Measurements/Abilities/MeasurementConvert.php:127
+msgid "The target unit to convert to (e.g. \"m\", \"sq. ft.\", \"lbs\")."
+msgstr "Az átváltás célmértékegysége (pl. „m”, „sq. ft.”, „lbs”)."
+
+#: src/Measurements/Abilities/MeasurementConvert.php:146
+msgid "The converted measurement value in the target unit."
+msgstr "Az átváltott mérési érték a célmértékegységben."
+
+#: src/Measurements/Abilities/MeasurementConvert.php:150
+msgid "The target unit of the converted value."
+msgstr "Az átváltott érték célmértékegysége."
+
+#: src/Measurements/Adapters/JsonSerializers/MeasurementSerializer.php:70
+msgid "The measurement name (e.g. \"length\", \"width\", \"area\", \"volume\", \"weight\")."
+msgstr "A mérés neve (pl. „hossz”, „szélesség”, „terület”, „térfogat”, „súly”)."
+
+#: src/Measurements/Adapters/JsonSerializers/MeasurementSerializer.php:74
+msgid "The unit abbreviation for the measurement (e.g. \"ft\", \"sq m\", \"kg\")."
+msgstr "A mérés mértékegységének rövidítése (pl. „ft”, „sq m”, „kg”)."
+
+#: src/Measurements/Adapters/JsonSerializers/MeasurementSerializer.php:78
+msgid "Display label shown to the customer."
+msgstr "A vásárlónak megjelenített címke."
+
+#: src/Measurements/Adapters/JsonSerializers/MeasurementSerializer.php:82
+msgid "Whether the customer can edit this measurement in the calculator."
+msgstr "Annak megadása, hogy a vásárló szerkesztheti-e ezt a mérést a kalkulátorban."
+
+#: src/Measurements/Adapters/JsonSerializers/MeasurementSerializer.php:86
+msgid "Preset options keyed by value with display label as the value."
+msgstr "Előre beállított opciók, amelyek kulcsa az érték, értékük pedig a megjelenített címke."
+
+#: src/Products/Abilities/GetProductCalculatorSettings.php:49
+msgid "Get Product Calculator Settings"
+msgstr "Termékkalkulátor-beállítások lekérése"
+
+#: src/Products/Abilities/GetProductCalculatorSettings.php:50
+msgid ""
+"Retrieves the measurement price calculator configuration for a product."
+msgstr "Lekéri a termék mérésalapú árkalkulátorának beállításait."
+
+#. translators: %d: product ID
+#: src/Products/Abilities/GetProductCalculatorSettings.php:59
+msgid "Product with ID %d was not found."
+msgstr "A(z) %d ID-jű termék nem található."
+
+#: src/Products/Abilities/GetProductCalculatorSettings.php:87
+#: src/Products/Adapters/JsonSerializers/ProductCalculatorSettingsSerializer.php:87
+msgid "The product ID."
+msgstr "A termék ID-ja."
+
+#: src/Products/Adapters/JsonSerializers/PricingRuleSerializer.php:72
+msgid "Inclusive lower bound of the measurement range, in the pricing unit."
+msgstr "A mérési tartomány alsó határa, az árképzési egységben, a határt is beleértve."
+
+#: src/Products/Adapters/JsonSerializers/PricingRuleSerializer.php:75
+msgid ""
+"Inclusive upper bound of the measurement range, in the pricing unit. Null if"
+" the range is open-ended."
+msgstr "A mérési tartomány felső határa, az árképzési egységben, a határt is beleértve. Null, ha a tartománynak nincs felső határa."
+
+#: src/Products/Adapters/JsonSerializers/PricingRuleSerializer.php:78
+msgid ""
+"The effective price for this range (sale price if active, otherwise regular "
+"price)."
+msgstr "A tartomány érvényes ára (aktív akciós ár esetén az akciós ár, egyébként a normál ár)."
+
+#: src/Products/Adapters/JsonSerializers/PricingRuleSerializer.php:81
+msgid "The regular price for this range."
+msgstr "A tartomány normál ára."
+
+#: src/Products/Adapters/JsonSerializers/PricingRuleSerializer.php:84
+msgid "The sale price for this range, or null if no sale is configured."
+msgstr "A tartomány akciós ára, vagy null, ha nincs beállítva akció."
+
+#: src/Products/Adapters/JsonSerializers/ProductCalculatorSettingsSerializer.php:91
+msgid "Whether the measurement calculator is enabled for this product."
+msgstr "Annak jelzése, hogy a mérésalapú árkalkulátor be van-e kapcsolva ennél a terméknél."
+
+#: src/Products/Adapters/JsonSerializers/ProductCalculatorSettingsSerializer.php:95
+msgid ""
+"The calculator type (e.g. \"dimension\", \"area\", \"volume\", \"weight\"). "
+"Empty string if no calculator is configured."
+msgstr "A kalkulátor típusa (például: „dimension”, „area”, „volume”, „weight”). Üres karakterlánc, ha nincs beállítva kalkulátor."
+
+#: src/Products/Adapters/JsonSerializers/ProductCalculatorSettingsSerializer.php:99
+msgid "Whether \"show price per unit\" is enabled."
+msgstr "Annak jelzése, hogy a „termékegységenkénti ár mutatása” be van-e kapcsolva."
+
+#: src/Products/Adapters/JsonSerializers/ProductCalculatorSettingsSerializer.php:103
+msgid ""
+"Whether the product price is defined per unit (e.g. $/sq ft) and the "
+"customer purchases a custom amount."
+msgstr "Annak jelzése, hogy a termék ára egységenként van-e meghatározva (például $/négyzetláb), és a vásárló egyéni összeget vásárol-e."
+
+#: src/Products/Adapters/JsonSerializers/ProductCalculatorSettingsSerializer.php:107
+msgid ""
+"Whether inventory is tracked in measurement units rather than per item."
+msgstr "Annak jelzése, hogy a készletet mérési egységek, nem pedig tételek szerint tartják-e nyilván."
+
+#: src/Products/Adapters/JsonSerializers/ProductCalculatorSettingsSerializer.php:111
+msgid ""
+"The unit used for pricing (e.g. \"ft\", \"sq m\"). Empty string if pricing "
+"is not enabled."
+msgstr "Az árképzéshez használt egység (például: „ft”, „sq m”). Üres karakterlánc, ha az árképzés nincs bekapcsolva."
+
+#: src/Products/Adapters/JsonSerializers/ProductCalculatorSettingsSerializer.php:115
+msgid "Display label for the pricing unit (e.g. \"ft\", \"square metre\")."
+msgstr "Az árképzési egység megjelenítési címkéje (például: „ft”, „négyzetméter”)."
+
+#: src/Products/Adapters/JsonSerializers/ProductCalculatorSettingsSerializer.php:119
+msgid "The measurement inputs defined for the calculator."
+msgstr "A kalkulátorhoz meghatározott mérési mezők."
+
+#: src/Products/Adapters/JsonSerializers/ProductCalculatorSettingsSerializer.php:124
+msgid "Tiered pricing rules, in terms of the pricing unit."
+msgstr "Az árképzési egység szerinti sávos árképzési szabályok."
+
 #. translators: Placeholders: %s - pricing unit
-#: src/shortcodes/class-wc-price-calculator-shortcode-pricing-table.php:156
-#, php-format
+#: src/shortcodes/class-wc-price-calculator-shortcode-pricing-table.php:159
 msgid "Range (%s)"
 msgstr "Tartomány (%s)"
 
 #. translators: Placeholders: %s - currency symbol
-#: src/shortcodes/class-wc-price-calculator-shortcode-pricing-table.php:158
-#, php-format
+#: src/shortcodes/class-wc-price-calculator-shortcode-pricing-table.php:161
 msgid "Price (%s)"
 msgstr "Ár (%s)"
 
 #. translators: Placeholder: %s - format example
 #: templates/single-product/price-calculator.php:101
 #: templates/single-product/quantity-calculator.php:78
-#, php-format
 msgid "Please enter the desired amount with this format: %s"
 msgstr "Kérjük, adja meg a kívánt mennyiséget ebben a formátumban: %s"
 
@@ -1330,33 +1422,38 @@ msgstr "Kérjük, adja meg a kívánt mennyiséget ebben a formátumban: %s"
 #. unit label
 #: templates/single-product/price-calculator.php:117
 #: templates/single-product/quantity-calculator.php:64
-#, php-format
 msgid "%1$s (%2$s)"
 msgstr "%1$s (%2$s)"
 
-#: templates/single-product/price-calculator.php:221
-#, php-format
+#. translators: %s: overage percentage
+#: templates/single-product/price-calculator.php:222
 msgid "Overage estimate (%s%%)"
 msgstr "Ráhagyás becslése (%s%%)"
 
-#: templates/single-product/price-calculator.php:231
+#: templates/single-product/price-calculator.php:232
 #: templates/single-product/quantity-calculator.php:109
 msgid "Total Price"
 msgstr "Végösszeg"
 
-#: templates/single-product/price-calculator.php:231
+#: templates/single-product/price-calculator.php:232
 msgid "Product Price"
 msgstr "Termék ára"
 
 #. translators: Placeholders: %1$s - measurement label, %2$s - measurement
 #. unit label
 #: templates/single-product/quantity-calculator.php:44
-#, php-format
 msgid "Actual %1$s (%2$s)"
 msgstr "Tényleges %1$s (%2$s)"
 
 #. translators: Placeholders: %s - measurement label
 #: templates/single-product/quantity-calculator.php:46
-#, php-format
 msgid "Actual %s"
 msgstr "Tényleges %s"
+
+#, php-format
+#~ msgid "Only %s %s left in stock"
+#~ msgstr "Csak %s %s maradt raktáron"
+
+#, php-format
+#~ msgid "%s %s in stock"
+#~ msgstr "%s %s raktáron"

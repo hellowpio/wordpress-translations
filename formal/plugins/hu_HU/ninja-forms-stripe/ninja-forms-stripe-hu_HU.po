@@ -4,10 +4,10 @@
 # Translator Team <hello@hellowp.io>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: Ninja Forms - Stripe 3.2.8\n"
+"Project-Id-Version: Ninja Forms - Stripe 3.2.13\n"
 "Report-Msgid-Bugs-To: support@hellowp.io\n"
 "POT-Creation-Date: 2025-10-19T20:49:36+00:00\n"
-"PO-Revision-Date: 2025-10-21 10:10+0200\n"
+"PO-Revision-Date: 2026-10-31 19:27+0100\n"
 "Last-Translator: HelloWP <translate@hellowp.io>\n"
 "Language-Team: HelloWP <translate@hellowp.io>\n"
 "Language: hu_HU\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: sinann-po-translator\n"
 "X-Plugin-Name: Ninja Forms - Stripe\n"
 "X-Plugin-Tone: formal\n"
-"X-Plugin-Version: 3.2.8\n"
+"X-Plugin-Version: 3.2.13\n"
 
 #. Plugin Name of the plugin
 #: ninja-forms-stripe.php
@@ -47,74 +47,92 @@ msgstr "http://ninjaforms.com"
 
 #: Common/Routes/DebugLog.php:80 Common/Routes/DebugLog.php:101
 msgid "Nonce failed for authorization"
-msgstr "A nonce ellenőrzése az engedélyezéshez sikertelen."
+msgstr "Az engedélyezéshez szükséges nonce ellenőrzése sikertelen."
 
 #: Common/Routes/DebugLog.php:99
 msgid "Request made to delete all plugin log entries"
 msgstr "Kérés érkezett az összes bővítmény-naplóbejegyzés törlésére"
 
+#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:24
+#: ninja-forms-stripe.php:655
+msgid "Stripe Payment"
+msgstr "Stripe-fizetés"
+
 #: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:48
-#: includes/Admin/Metaboxes/Submission.php:21
+#: includes/Admin/Metaboxes/Submission.php:26
 msgid "This is a test transaction."
 msgstr "Ez egy teszttranzakció."
 
 #: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:54
-#: includes/Admin/Metaboxes/Submission.php:29
+#: includes/Admin/Metaboxes/Submission.php:34
 msgid "Payment Status"
 msgstr "Fizetési állapot"
 
-#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:61
-#: includes/Admin/Metaboxes/Submission.php:38
+#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:65
+#: includes/Admin/Metaboxes/Submission.php:47
 msgid "Token"
 msgstr "Token"
 
-#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:69
-#: includes/Admin/Metaboxes/Submission.php:48 includes/Config/MergeTags.php:21
+#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:73
+#: includes/Admin/Metaboxes/Submission.php:57 includes/Config/MergeTags.php:21
 msgid "Customer ID"
 msgstr "Ügyfélazonosító"
 
-#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:77
-#: includes/Admin/Metaboxes/Submission.php:58 includes/Config/MergeTags.php:28
+#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:81
+#: includes/Admin/Metaboxes/Submission.php:67 includes/Config/MergeTags.php:28
 msgid "Charge ID"
 msgstr "Terhelésazonosító"
 
-#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:86
-#: includes/Admin/Metaboxes/Submission.php:68
+#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:90
+#: includes/Admin/Metaboxes/Submission.php:77 includes/Config/MergeTags.php:42
 msgid "Subscription ID"
 msgstr "Előfizetésazonosító"
 
-#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:104
-#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:150
-#: ninja-forms-stripe.php:512
+#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:108
+#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:154
+#: ninja-forms-stripe.php:562
 msgid "Payment Method"
 msgstr "Fizetési mód"
 
-#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:112
-#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:156
-#: includes/Admin/Metaboxes/Submission.php:121
+#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:116
+#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:160
+#: includes/Admin/Metaboxes/Submission.php:130
 msgid "Card"
 msgstr "Kártya"
 
-#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:120
-#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:128
+#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:124
+#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:132
 msgid "Bank"
 msgstr "Bank"
 
-#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:136
-#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:162
+#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:140
+#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:166
 #: includes/Config/MergeTags.php:7
 msgid "Last 4"
 msgstr "Utolsó 4"
 
-#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:171
-#: includes/Admin/Metaboxes/Submission.php:137
+#: includes/Admin/Metaboxes/MetaboxEntityPaymentStatus.php:175
+#: includes/Admin/Metaboxes/Submission.php:146
 msgid "Error Response"
 msgstr "Hibaválasz"
 
-#: includes/Admin/Settings.php:26 includes/PaymentGateway.php:75
-#: ninja-forms-stripe.php:642
+#: includes/Admin/Settings.php:26 includes/MergeTags.php:15
+#: includes/PaymentGateway.php:97 includes/SotPaymentGateway.php:881
+#: ninja-forms-stripe.php:749
 msgid "Stripe"
 msgstr "Stripe"
+
+#: includes/Admin/VersionCheck.php:73
+#, php-format
+msgid ""
+"Please update Ninja Forms. The version you are using is not compatible with "
+"this version of Stripe.. %sIf you have questions or need help, please "
+"%scontact our support team%s."
+msgstr "Kérjük, frissítse a Ninja Forms bővítményt. Az Ön által használt verzió nem kompatibilis a Stripe ezen verziójával. %sHa kérdése van, vagy segítségre van szüksége, kérjük, %slépjen kapcsolatba támogatási csapatunkkal%s."
+
+#: includes/Config/ActionSettings.php:11
+msgid "HTML"
+msgstr "HTML"
 
 #: includes/Config/ActionSettings.php:17
 #, php-format
@@ -125,19 +143,25 @@ msgstr "API-kulcsok szerkesztéséhez %skattintson ide%s."
 msgid "Customer Email Address"
 msgstr "Ügyfél e-mail-címe"
 
-#: includes/Config/ActionSettings.php:42
+#: includes/Config/ActionSettings.php:24
+msgid ""
+"Insert your form's Email field. Needed for Stripe receipts and for the "
+"Stripe Customer ID on one-time payments."
+msgstr "Válassza ki az űrlap e-mail-cím mezőjét. Erre a Stripe-nyugtákhoz és az egyszeri fizetéseknél használt Stripe Customer ID-hez van szükség."
+
+#: includes/Config/ActionSettings.php:43
 msgid "Card Only"
 msgstr "Csak kártya"
 
-#: includes/Config/ActionSettings.php:43
+#: includes/Config/ActionSettings.php:44
 msgid "All Methods"
 msgstr "Összes fizetési mód"
 
-#: includes/Config/ActionSettings.php:46
+#: includes/Config/ActionSettings.php:47
 msgid "Accepted Payment Methods"
 msgstr "Elfogadott fizetési módok"
 
-#: includes/Config/ActionSettings.php:47
+#: includes/Config/ActionSettings.php:48
 msgid ""
 "If enabled, additional payment methods will be automatically selected, based"
 " upon the settings in your Stripe account."
@@ -145,62 +169,78 @@ msgstr ""
 "Ha engedélyezve van, a Stripe-fiókjában lévő beállítások alapján a rendszer "
 "automatikusan kiválasztja a további fizetési módokat."
 
-#: includes/Config/ActionSettings.php:60
+#: includes/Config/ActionSettings.php:61
 msgid "Accept Bitcoin With Stripe"
 msgstr "Bitcoin elfogadása a Stripe használatával"
 
-#: includes/Config/ActionSettings.php:75
+#: includes/Config/ActionSettings.php:76
 msgid "Shipping Address Details"
 msgstr "Szállítási cím adatai"
 
-#: includes/Config/ActionSettings.php:85
+#: includes/Config/ActionSettings.php:86
 msgid "Show Shipping Address"
 msgstr "Szállítási cím megjelenítése"
 
-#: includes/Config/ActionSettings.php:95
+#: includes/Config/ActionSettings.php:96
 msgid "Customer Name"
 msgstr "Ügyfél neve"
 
-#: includes/Config/ActionSettings.php:96
-#: includes/Config/ActionSettings.php:109
+#: includes/Config/ActionSettings.php:97
+#: includes/Config/ActionSettings.php:110
 msgid "(required)"
 msgstr "(kötelező)"
 
-#: includes/Config/ActionSettings.php:108
+#: includes/Config/ActionSettings.php:109
 msgid "Address"
 msgstr "Cím"
 
-#: includes/Config/ActionSettings.php:121
+#: includes/Config/ActionSettings.php:122
 msgid "City"
 msgstr "Város"
 
-#: includes/Config/ActionSettings.php:133
+#: includes/Config/ActionSettings.php:134
 msgid "State"
 msgstr "Állam"
 
-#: includes/Config/ActionSettings.php:145
+#: includes/Config/ActionSettings.php:146
 msgid "Postal Code"
 msgstr "Irányítószám"
 
-#: includes/Config/ActionSettings.php:157
+#: includes/Config/ActionSettings.php:158
 msgid "Country"
 msgstr "Ország"
 
-#: includes/Config/ActionSettings.php:175
+#: includes/Config/ActionSettings.php:176
 msgid "Recurring Payment Plan ID"
-msgstr "Ismétlődő fizetési terv azonosítója"
+msgstr "Ismétlődő fizetési terv ID-ja"
 
-#: includes/Config/ActionSettings.php:181
+#: includes/Config/ActionSettings.php:182
 msgid ""
-"If you do not want to create a recurring payment, leave this field blank."
-msgstr ""
-"Ha nem szeretne ismétlődő fizetést létrehozni, hagyja ezt a mezőt üresen."
+"Enter the Stripe Price or Plan ID for recurring payments. IMPORTANT: When a "
+"Recurring Payment Plan ID is set, the \"Get Total From\" field is ignored — "
+"the subscription amount is determined entirely by the plan configured in "
+"your Stripe Dashboard. To change the subscription amount, update the plan in"
+" your Stripe Dashboard. Leave this field blank for one-time payments."
+msgstr "Adja meg az ismétlődő fizetésekhez tartozó Stripe-ár vagy -csomag ID-ját. FONTOS: ha be van állítva az ismétlődő fizetési csomag ID-ja, a „Teljes összeg lekérése innen” mező figyelmen kívül marad — az előfizetés összegét teljes egészében a Stripe vezérlőpultján beállított csomag határozza meg. Az előfizetés összegének módosításához frissítse a csomagot a Stripe vezérlőpultján. Egyszeri fizetés esetén hagyja üresen ezt a mezőt."
 
-#: includes/Config/ActionSettings.php:188
+#: includes/Config/ActionSettings.php:189
+msgid "Additional One-Time Charge"
+msgstr "További egyszeri díj"
+
+#: includes/Config/ActionSettings.php:195
+msgid ""
+"Charge a one-time amount at checkout in addition to the recurring "
+"subscription, for example a setup fee. Only applies when a Recurring Payment"
+" Plan ID is set, and is charged once on the first payment. This is separate "
+"from \"Get Total From\", which stays unused whenever a plan is set. Leave "
+"blank to charge the subscription alone."
+msgstr "Az ismétlődő előfizetés mellett egyszeri összeget is felszámíthat a fizetéskor, például beállítási díjként. Csak akkor érvényes, ha be van állítva egy ismétlődő fizetési csomag ID-ja; az összeg felszámítása az első fizetéskor történik. Ez különálló a „Teljes összeg lekérése innen” beállítástól, amely csomag megadásakor használaton kívül marad. Hagyja üresen, ha csak az előfizetés díját szeretné felszámítani."
+
+#: includes/Config/ActionSettings.php:202
 msgid "Subscription Trial Period"
 msgstr "Előfizetés próbaidőszaka"
 
-#: includes/Config/ActionSettings.php:195
+#: includes/Config/ActionSettings.php:209
 msgid ""
 "This allows you to set a trial period (in days) for the subscription plan. "
 "Trial periods set in the Stripe Dashboard return errors from the Stripe "
@@ -210,26 +250,30 @@ msgstr ""
 "Stripe Vezérlőpulton beállított próbaidőszakok hibát okoznak a Stripe "
 "Connect API-ban."
 
-#: includes/Config/ActionSettings.php:210
+#: includes/Config/ActionSettings.php:218
+msgid "Test Mode"
+msgstr "Tesztüzemmód"
+
+#: includes/Config/ActionSettings.php:224
 msgid "Use Stripe test credentials to test transaction."
 msgstr ""
 "Használja a Stripe teszt hitelesítő adatait a tranzakció teszteléséhez."
 
-#: includes/Config/ActionSettings.php:216
+#: includes/Config/ActionSettings.php:230
 msgid "Product Name (Required By Stripe)"
 msgstr "Terméknév (a Stripe megköveteli)"
 
-#: includes/Config/ActionSettings.php:229
+#: includes/Config/ActionSettings.php:243
 msgid "Product Description"
 msgstr "Termékleírás"
 
-#: includes/Config/ActionSettings.php:241
+#: includes/Config/ActionSettings.php:255
 msgid "Product Image Url"
-msgstr "Termékkép Url"
+msgstr "Termékkép URL-je"
 
-#: includes/Config/ActionSettings.php:247
+#: includes/Config/ActionSettings.php:261
 msgid "This must be a valid url to the image you want to use."
-msgstr "Ennek egy érvényes url-nek kell lennie a használni kívánt képhez."
+msgstr "A megadott URL-nek a használni kívánt képre kell mutatnia, és érvényesnek kell lennie."
 
 #: includes/Config/MergeTags.php:14
 msgid "Card Type (Brand)"
@@ -242,7 +286,7 @@ msgstr "Fizetési mód típusa"
 #: includes/Config/PluginSettings.php:18
 #, php-format
 msgid "Test Publishable Key%s"
-msgstr "Teszt közzétehető kulcs%s"
+msgstr "Teszt nyilvános kulcs%s"
 
 #: includes/Config/PluginSettings.php:24 includes/Templates/Modal.html.php:15
 msgid "Test Secret Key"
@@ -256,45 +300,87 @@ msgstr "Éles közzétehető kulcs"
 msgid "Live Secret Key"
 msgstr "Éles titkos kulcs"
 
-#: includes/Config/PluginSettings.php:72
+#: includes/Config/PluginSettings.php:77
+msgid "Webhook Endpoint"
+msgstr "Webhook-végpont"
+
+#: includes/Config/PluginSettings.php:81
+msgid ""
+"Optional. Add this URL as a webhook endpoint in your Stripe Dashboard "
+"(separately for Test mode and Live mode), listening for the "
+"checkout.session.completed, checkout.session.async_payment_succeeded, "
+"checkout.session.async_payment_failed and checkout.session.expired events. "
+"Paste each mode's signing secret below."
+msgstr "Opcionális. Adja hozzá ezt az URL-t webhook-végpontként a Stripe vezérlőpultján (külön a teszt- és éles módhoz), és figyelje a checkout.session.completed, checkout.session.async_payment_succeeded, checkout.session.async_payment_failed és checkout.session.expired eseményeket. Illessze be alább az egyes módok aláírási titkos kulcsát."
+
+#: includes/Config/PluginSettings.php:82
+msgid ""
+"Until a signing secret is saved below, this endpoint is not active and "
+"payment confirmation works exactly as it always has."
+msgstr "Amíg nem menti el alább az aláírási titkos kulcsot, ez a végpont nem aktív, és a fizetés megerősítése a megszokott módon működik."
+
+#: includes/Config/PluginSettings.php:89
+msgid "Test Webhook Signing Secret"
+msgstr "Teszt webhook-aláírási titkos kulcs"
+
+#: includes/Config/PluginSettings.php:95
+msgid "Live Webhook Signing Secret"
+msgstr "Éles webhook-aláírási titkos kulcs"
+
+#: includes/Config/PluginSettings.php:113
 msgid "Turn on Debug Logger"
 msgstr "Hibakeresési naplózó bekapcsolása"
 
-#: includes/Config/PluginSettings.php:73
+#: includes/Config/PluginSettings.php:114
 msgid ""
 "The debug logger records diagnostic data that can be exported and sent to "
 "our support team if you suspect there's an issue with this add-on. Only "
 "active when turned on."
-msgstr ""
-"A hibakeresési naplózó diagnosztikai adatokat rögzít, amelyeket exportálhat "
-"és elküldhet támogatási csapatunknak, ha problémát gyanít ezzel a "
-"kiegészítővel. Csak bekapcsolva aktív."
+msgstr "A hibakeresési naplózó diagnosztikai adatokat rögzít, amelyeket exportálhat és elküldhet a támogatási csapatunknak, ha úgy gondolja, hogy probléma van ezzel a kiegészítővel. Csak bekapcsolt állapotban aktív."
 
-#: includes/Config/PluginSettings.php:73
+#: includes/Config/PluginSettings.php:114
 msgid "Learn more"
 msgstr "További információ"
 
-#: includes/Config/PluginSettings.php:78
+#: includes/Config/PluginSettings.php:119
 msgid "Logger Commands"
 msgstr "Naplózó parancsok"
 
-#: includes/PaymentGateway.php:158
+#: includes/PaymentGateway.php:170
+msgid ""
+"Stripe payment skipped: payment total is not a valid number. If you are "
+"using a Radio or Select field to set the payment amount, make sure each "
+"option uses \"Calc Value\" (not \"Value\") and that your Calculation field "
+"references those options."
+msgstr "Stripe-fizetés kihagyva: a fizetés összege nem érvényes szám. Ha a fizetési összeg megadásához rádiógombos vagy legördülő mezőt használ, győződjön meg arról, hogy minden opciónál a „Calc Value” (nem a „Value”) értéket használja, és a számítási mező hivatkozik ezekre az opciókra."
+
+#: includes/PaymentGateway.php:222 includes/SotPaymentGateway.php:182
 msgid "Payment Cancelled"
 msgstr "Fizetés törölve"
 
-#: includes/PaymentGateway.php:313
+#: includes/PaymentGateway.php:334 includes/SotPaymentGateway.php:288
+msgid ""
+"Payment failed. Your card was not charged and this submission was not "
+"completed."
+msgstr "A fizetés sikertelen. A kártyáját nem terheltük meg, és az űrlap beküldése nem fejeződött be."
+
+#: includes/PaymentGateway.php:595 includes/SotPaymentGateway.php:517
 msgid "Error completing payment session."
 msgstr "Hiba a fizetési munkamenet befejezésekor."
 
-#: includes/PaymentGateway.php:557
+#: includes/PaymentGateway.php:836 includes/SotPaymentGateway.php:762
+msgid "One-Time Charge"
+msgstr "Egyszeri díj"
+
+#: includes/PaymentGateway.php:927 includes/SotPaymentGateway.php:840
 msgid "Error creating payment session."
 msgstr "Hiba a fizetési munkamenet létrehozásakor."
 
-#: includes/PaymentGateway.php:649
+#: includes/PaymentGateway.php:1027 includes/SotPaymentGateway.php:941
 msgid "Unkown Stripe Error. Please try again."
-msgstr "Ismeretlen Stripe hiba. Kérjük, próbálja újra."
+msgstr "Ismeretlen Stripe-hiba. Kérjük, próbálja újra."
 
-#: includes/PaymentGateway.php:664
+#: includes/PaymentGateway.php:1042 includes/SotPaymentGateway.php:956
 #, php-format
 msgid ""
 "The method our Credit Card Fields use to send information to Stripe has been"
@@ -302,13 +388,23 @@ msgid ""
 " removing any Credit Card Fields from your Forms, which will allow your "
 "Forms to submit data to Stripe through the Checkout modal.%sFor more "
 "information on these changes and PCI compliance, please visit %s"
-msgstr ""
-"A bankkártya-mezőink által a Stripe felé történő adatok küldésére használt "
-"módszer elavult.%sA webhely PCI-megfelelőségének fenntartása érdekében "
-"javasoljuk, hogy távolítsa el az összes bankkártya-mezőt az űrlapjaiból, így"
-" az űrlapok a Checkout modálablakon keresztül tudnak adatokat küldeni a "
-"Stripe-nak.%sTovábbi információért ezekről a változásokról és a PCI-"
-"megfelelőségről látogasson el ide: %s"
+msgstr "Elavult az a módszer, amellyel a bankkártyamezőink adatokat küldenek a Stripe-nak.%sA webhely PCI-megfelelőségének fenntartása érdekében javasoljuk, hogy távolítsa el az összes bankkártyamezőt az űrlapjaiból. Így az űrlapjai a Checkout modális ablakán keresztül küldhetnek adatokat a Stripe-nak.%sA változásokról és a PCI-megfelelőségről további információért látogasson el ide: %s"
+
+#: includes/PaymentStatus.php:101
+msgid "Paid"
+msgstr "Fizetve"
+
+#: includes/PaymentStatus.php:103
+msgid "Processing"
+msgstr "Feldolgozás alatt"
+
+#: includes/PaymentStatus.php:105
+msgid "Incomplete"
+msgstr "Befejezetlen"
+
+#: includes/PaymentStatus.php:107
+msgid "Cancelled"
+msgstr "Lemondva"
 
 #: includes/Templates/Modal.html.php:3
 msgid "Please input your Stripe API keys."
@@ -342,23 +438,31 @@ msgstr "A Stripe API-kulcsait sikeresen hozzáadtuk."
 msgid "Get Started!"
 msgstr "Első lépések!"
 
-#: ninja-forms-stripe.php:240
+#: ninja-forms-stripe.php:267
 msgid "Ninja Forms Stripe Debug Logger"
 msgstr "Ninja Forms Stripe hibakeresési naplózó"
 
-#: ninja-forms-stripe.php:241
+#: ninja-forms-stripe.php:268
 #, php-format
 msgid ""
 "%sThe debug logger records data to help solve issues, but should be turned "
 "off as soon as you capture enough information.%s"
-msgstr ""
-"%sA hibakeresési naplózó a problémák megoldásához adatokat rögzít, de amint "
-"elegendő információt rögzített, ki kell kapcsolni.%s"
+msgstr "%sA hibakeresési naplózó adatokat rögzít a problémák megoldásának elősegítésére, de amint elegendő információt gyűjtött, kapcsolja ki.%s"
 
-#: ninja-forms-stripe.php:510
+#: ninja-forms-stripe.php:560
 msgid "Stripe Customer ID"
-msgstr "Stripe ügyfélazonosító"
+msgstr "Stripe-vásárlói ID"
 
-#: ninja-forms-stripe.php:511
+#: ninja-forms-stripe.php:561
 msgid "Stripe Charge ID"
-msgstr "Stripe terhelésazonosító"
+msgstr "Stripe-terhelési ID"
+
+#: ninja-forms-stripe.php:656
+msgid ""
+"Collect a payment using Stripe. You can add and remove fields as needed."
+msgstr "Fizetés beszedése a Stripe használatával. Szükség szerint adhat hozzá és távolíthat el mezőket."
+
+#~ msgid ""
+#~ "If you do not want to create a recurring payment, leave this field blank."
+#~ msgstr ""
+#~ "Ha nem szeretne ismétlődő fizetést létrehozni, hagyja ezt a mezőt üresen."
