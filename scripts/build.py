@@ -134,7 +134,11 @@ def po_stats(po):
 
 
 def run_wp(args):
-    r = subprocess.run(wp_cmd() + args, capture_output=True, text=True)
+    try:
+        r = subprocess.run(wp_cmd() + args, capture_output=True, text=True)
+    except FileNotFoundError:
+        sys.exit('Nem található a WP-CLI ({}): telepítsd, vagy add meg a WP környezeti változóban.'.format(
+            ' '.join(wp_cmd())))
     if r.returncode != 0:
         sys.stderr.write(r.stdout + r.stderr)
         sys.exit('A WP-CLI hibával állt le: wp ' + ' '.join(args))

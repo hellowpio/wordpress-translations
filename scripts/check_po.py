@@ -27,6 +27,7 @@ import collections
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 
@@ -220,6 +221,8 @@ def main(argv):
     if not files:
         print('Nincs ellenőrizendő .po fájl.')
         return 0
+    if not shutil.which('msgfmt'):
+        sys.exit('Nem található a msgfmt (gettext): telepítsd, vagy tedd a PATH-ba.')
 
     glossary = load_glossary(glossary_path) if warnings else []
     n_err = collections.Counter()
