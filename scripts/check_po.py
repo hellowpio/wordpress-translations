@@ -1,0 +1,247 @@
+#!/usr/bin/env python3
+"""A .po fájlok ellenőrzése: msgfmt -c, helyőrzők, kötelező fejlécek, szótár.
+
+Hibák (kilépési kód 1):
+  msgfmt     a `msgfmt -c` hibái
+  helyorzo   a msgid és a msgstr helyőrzői nem egyeznek (printf: %s, %1$s, %d;
+             {név}; HTML-címkék) — a sorrend számít, ha nincs pozíció (%1$s)
+  fejlec     hiányzik vagy üres az X-Plugin-Name / X-Plugin-Version / X-Plugin-Tone,
+             vagy a Tone nem egyezik a mappával (formal / informal)
+
+Figyelmeztetés (nem hiba):
+  szotar     egy `translation-glossary.json` tétel (csak a "forras": "kezi" tételek)
+             angol kifejezése a msgid-ben van, de a magyar alak nincs a msgstr-ben
+             (csak hu_HU fájloknál)
+
+Használat:
+  scripts/check_po.py <fájl.po>…              a megadott fájlok
+  scripts/check_po.py --all                   minden .po a formal/ és informal/ alatt
+  scripts/check_po.py --changed-since <ref>   a <ref> óta változott .po fájlok (git diff)
+  --glossary <fájl>                           más szótárfájl (alapból: translation-glossary.json)
+  --no-warnings                               a szótár-figyelmeztetések kihagyása
+  --summary                                   csak az összesítés, soronkénti lista nélkül
+
+Függőség: polib (pip install polib), msgfmt (gettext).
+"""
+import collections
+import json
+import os
+import re
+import subprocess
+import sys
+
+try:
+    import polib
+except ImportError:
+    sys.exit('Hiányzik a polib: pip install polib')
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+TONES = ('formal', 'informal')
+REQUIRED_HEADERS = ('X-Plugin-Name', 'X-Plugin-Version', 'X-Plugin-Tone')
+
+# printf: %s, %d, %1$s, %05.2f — a szóköz-flaget szándékosan kihagyjuk („100% of” ne legyen helyőrző)
+PRINTF = re.compile(r"%(?:(\d+)\$)?([-+0#']*)(\d*)(?:\.\d+)?([bcdeEfFgGosuxX])")
+BRACE = re.compile(r'\{[A-Za-z0-9_]+\}')
+TAG = re.compile(r'<(/?)([A-Za-z][A-Za-z0-9]*)\b[^<>]*>')
+HTML_TAGS = set('''a abbr b blockquote br button code del details div em h1 h2 h3 h4 h5 h6 hr i img input
+    ins kbd label li mark ol p pre q s small span strike strong sub summary sup table tbody td th thead
+    tr u ul'''.split())
+
+
+def printf_tokens(text):
+    """A valódi printf-helyőrzők: (pozíció vagy None, típus).
+
+    Kimarad, ami a magyar szövegben nem helyőrző: „30%-os”, „100%-ban” (kötőjel-flag
+    szélesség nélkül), és a „%1kattintson%2” típusú, nem printf-jelölés (szélesség pozíció
+    nélkül, utána rögtön betű).
+    """
+    for m in PRINTF.finditer(text):
+        pos, flags, width, conv = m.group(1), m.group(2), m.group(3), m.group(4)
+        if '-' in flags and not width:
+            continue
+        if width and not pos and text[m.end():m.end() + 1].isalpha():
+            continue
+        yield (int(pos) if pos else None), conv
+
+
+def placeholders(text):
+    """A szöveg helyőrzőinek multihalmaza.
+
+    A printf-helyőrzők (pozíció, típus) párként számítanak: a %s %s és a %2$s %1$s egyezik,
+    a %s %d és a %d %s nem. A HTML-címkéknél (csak az ismert HTML-elemek) a név és a
+    nyitó/záró jelleg számít, az attribútum (pl. title="…") fordítható. A kiírásban a printf
+    helyőrzők pozícióval szerepelnek (a %s első helyen %1$s).
+    """
+    text = text.replace('%%', '')
+    out = collections.Counter()
+    seq = 0
+    for pos, conv in printf_tokens(text):
+        if pos is None:
+            seq += 1
+            pos = seq
+        out['%{}${}'.format(pos, conv)] += 1
+    for m in BRACE.finditer(text):
+        out[m.group(0)] += 1
+    for m in TAG.finditer(text):
+        if m.group(2).lower() not in HTML_TAGS:
+            continue
+        out['<{}{}>'.format(m.group(1), m.group(2).lower())] += 1  # <br> = <br/> = <br />
+    return out
+
+
+def fmt_ph(counter):
+    return ' '.join(sorted(counter.elements())) or '(nincs)'
+
+
+def tone_of(path):
+    rel = os.path.relpath(os.path.abspath(path), ROOT).split(os.sep)
+    return rel[0] if rel and rel[0] in TONES else None
+
+
+def locale_of(path):
+    rel = os.path.relpath(os.path.abspath(path), ROOT).split(os.sep)
+    return rel[2] if len(rel) >= 4 else None
+
+
+def load_glossary(path):
+    if not path or not os.path.exists(path):
+        return []
+    data = json.load(open(path, encoding='utf-8')).get('glossary', {})
+    terms = []
+    for en, v in data.items():
+        if not isinstance(v, dict) or v.get('forras') != 'kezi' or not v.get('hu'):
+            continue
+        # a csupa nagybetűs rövidítések (API, URL, ID) kis- és nagybetű-érzékenyen
+        flags = 0 if en.isupper() else re.IGNORECASE
+        rx = re.compile(r'(?<![A-Za-z0-9])' + re.escape(en) + r'(?![A-Za-z0-9])', flags)
+        terms.append((en, v['hu'], rx))
+    return terms
+
+
+def run_msgfmt(path):
+    r = subprocess.run(['msgfmt', '-c', '-o', os.devnull, path], capture_output=True, text=True)
+    if r.returncode == 0:
+        return []
+    errs = []
+    for line in r.stderr.splitlines():
+        line = line.strip()
+        # az összesítő sort („msgfmt: found N fatal errors”) nem számoljuk külön
+        if not line or line.startswith('msgfmt:'):
+            continue
+        errs.append(line[len(path) + 1:] if line.startswith(path + ':') else line)
+    return errs or ['msgfmt kilépési kód {}'.format(r.returncode)]
+
+
+def check_file(path, glossary, warnings=True):
+    errors, warns = [], []  # (típus, sor, üzenet)
+    for e in run_msgfmt(path):
+        m = re.match(r'(\d+):\s*(.*)', e)
+        errors.append(('msgfmt', int(m.group(1)) if m else 0, m.group(2) if m else e))
+
+    try:
+        po = polib.pofile(path, wrapwidth=0)
+    except Exception as ex:  # a msgfmt már jelezte; a polib nem tud tovább menni
+        errors.append(('msgfmt', 0, 'a fájl nem olvasható: {}'.format(ex)))
+        return errors, warns
+
+    meta = po.metadata
+    for h in REQUIRED_HEADERS:
+        if not meta.get(h, '').strip():
+            errors.append(('fejlec', 1, 'hiányzik vagy üres: {}'.format(h)))
+    tone = tone_of(path)
+    have = meta.get('X-Plugin-Tone', '').strip()
+    if tone and have and have != tone:
+        errors.append(('fejlec', 1, 'X-Plugin-Tone: {} (a mappa szerint: {})'.format(have, tone)))
+
+    check_glossary = warnings and glossary and locale_of(path) == 'hu_HU'
+    for e in po:
+        if e.obsolete or 'fuzzy' in e.flags or not e.msgid:
+            continue
+        if e.msgid_plural:
+            allowed = [placeholders(e.msgid), placeholders(e.msgid_plural)]
+            strs = [s for _, s in sorted(e.msgstr_plural.items()) if s]
+        else:
+            allowed = [placeholders(e.msgid)]
+            strs = [e.msgstr] if e.msgstr else []
+        for s in strs:
+            got = placeholders(s)
+            if got not in allowed:
+                errors.append(('helyorzo', e.linenum, 'msgid: {} | msgstr: {} | {!r}'.format(
+                    fmt_ph(allowed[-1] if e.msgid_plural else allowed[0]), fmt_ph(got), e.msgid[:80])))
+        if check_glossary and strs:
+            for en, hu, rx in glossary:
+                if rx.search(e.msgid) and not any(hu.lower() in s.lower() for s in strs):
+                    warns.append(('szotar', e.linenum, '{} = {} | {!r}'.format(en, hu, e.msgid[:80])))
+    return errors, warns
+
+
+def all_po_files():
+    out = []
+    for tone in TONES:
+        for dirpath, _, files in os.walk(os.path.join(ROOT, tone)):
+            out += [os.path.join(dirpath, f) for f in files if f.endswith('.po')]
+    return sorted(out)
+
+
+def changed_po_files(ref):
+    r = subprocess.run(['git', 'diff', '--name-only', '--diff-filter=ACMR', ref, '--', 'formal', 'informal'],
+                       cwd=ROOT, capture_output=True, text=True, check=True)
+    return [os.path.join(ROOT, f) for f in r.stdout.split() if f.endswith('.po')]
+
+
+def main(argv):
+    args = list(argv)
+    glossary_path = os.path.join(ROOT, 'translation-glossary.json')
+    warnings, summary_only, files = True, False, []
+    while args:
+        a = args.pop(0)
+        if a == '--all':
+            files += all_po_files()
+        elif a == '--changed-since':
+            files += changed_po_files(args.pop(0))
+        elif a == '--glossary':
+            glossary_path = args.pop(0)
+        elif a == '--no-warnings':
+            warnings = False
+        elif a == '--summary':
+            summary_only = True
+        elif a in ('-h', '--help'):
+            print(__doc__)
+            return 0
+        else:
+            files.append(os.path.abspath(a))
+    files = sorted(set(files))
+    if not files:
+        print('Nincs ellenőrizendő .po fájl.')
+        return 0
+
+    glossary = load_glossary(glossary_path) if warnings else []
+    n_err = collections.Counter()
+    n_warn = 0
+    bad_files = collections.Counter()
+    n_bad = 0
+    for f in files:
+        rel = os.path.relpath(f, ROOT)
+        errors, warns = check_file(f, glossary, warnings)
+        for typ, line, msg in errors:
+            n_err[typ] += 1
+            if not summary_only:
+                print('{}:{}: HIBA [{}] {}'.format(rel, line, typ, msg))
+        for typ in {t for t, _, _ in errors}:
+            bad_files[typ] += 1
+        n_bad += 1 if errors else 0
+        for typ, line, msg in warns:
+            n_warn += 1
+            if not summary_only:
+                print('{}:{}: figyelmeztetés [{}] {}'.format(rel, line, typ, msg))
+
+    total = sum(n_err.values())
+    print('\nEllenőrizve: {} fájl. Hiba: {} ({} fájlban), figyelmeztetés: {}.'.format(len(files), total, n_bad, n_warn))
+    for typ in ('msgfmt', 'helyorzo', 'fejlec'):
+        if n_err[typ]:
+            print('  {:<9} {:>6} hiba {:>4} fájlban'.format(typ, n_err[typ], bad_files[typ]))
+    return 1 if total else 0
+
+
+if __name__ == '__main__':
+    sys.exit(main(sys.argv[1:]))
