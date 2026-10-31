@@ -67,10 +67,8 @@ jobs:
       - name: Build
         run: python3 scripts/build.py --dist
 
-      - name: Csomagok és translations-*.json
-        run: |
-          python3 scripts/package.py \
-            --base-url "https://github.com/${{ github.repository }}/releases/download/${{ steps.tag.outputs.tag }}"
+      - name: Csomag (egy zip)
+        run: python3 scripts/package.py
 
       - name: Release-jegyzet
         run: |
@@ -80,10 +78,9 @@ jobs:
           print('Bővítmények: {plugins}, sablonok: {themes}, .po fájlok: {files}.'.format(**s))
           print('Bejegyzések: {entries}, lefordítva: {translated} ({coverage}%).'.format(**s))
           print()
-          print('Csomagonként egy zip (`<mappa>-<locale>-<tone>.zip`): .po, .mo, .l10n.php, .json —')
-          print('a `wp-content/languages/plugins/` vagy `wp-content/languages/themes/` mappába.')
-          print('A `translations-formal.json` és a `translations-informal.json` a WordPress fordítás-API')
-          print('szerkezetében sorolja fel a csomagokat; a `stats.json` a részletes statisztika.')
+          print('Minden fordítás egy zipben (`wordpress-translations.zip`): a választott hangnem')
+          print('`<plugins|themes>/<locale>/` mappájának tartalma a `wp-content/languages/<plugins|themes>/`')
+          print('mappába másolható. A `stats.json` a részletes statisztika.')
           print()
           print('Változások:')
           PY

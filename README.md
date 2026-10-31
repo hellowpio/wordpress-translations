@@ -42,21 +42,15 @@ A CI hibát ad, ha egy fájlnév nem illik a szabályra, vagy ha a `.po` mellől
 
 ## Letöltés és telepítés kézzel (bővítmény nélkül)
 
-A [legutóbbi release](https://github.com/hellowpio/wordpress-translations/releases/latest) csomagonként egy zipet tartalmaz:
-`<mappa>-<locale>-<tone>.zip`, például `woocommerce-subscriptions-hu_HU-formal.zip`. A zipben a `.po`, `.mo`,
-`.l10n.php` és a JavaScript-fordítások `.json` fájljai vannak; a tartalmát ide kell kicsomagolni:
+A [legutóbbi release](https://github.com/hellowpio/wordpress-translations/releases/latest) egyetlen zipet
+tartalmaz, benne az összes fordítással:
+[wordpress-translations.zip](https://github.com/hellowpio/wordpress-translations/releases/latest/download/wordpress-translations.zip).
+A zipben `<tone>/<plugins|themes>/<locale>/` mappák vannak, bennük a csomagok `.po`, `.mo`, `.l10n.php` és
+JavaScript-fordítási `.json` fájljai. A választott hangnem mappájának tartalmát ide kell másolni (elég a
+használt bővítmények és sablonok fájljait):
 
-- bővítménynél: `wp-content/languages/plugins/`
-- sablonnál: `wp-content/languages/themes/`
-
-Ugyanitt van két jegyzék a WordPress fordítás-API szerkezetében (`type`, `slug`, `language`, `version`, `updated`,
-`package`, `autoupdate`), automatikus frissítéshez:
-
-- [translations-formal.json](https://github.com/hellowpio/wordpress-translations/releases/latest/download/translations-formal.json)
-- [translations-informal.json](https://github.com/hellowpio/wordpress-translations/releases/latest/download/translations-informal.json)
-
-A `version` az a bővítmény- vagy sablonverzió, amelyből a fordítás készült (a `.po` `X-Plugin-Version` fejléce),
-az `updated` a `.po` `PO-Revision-Date` fejléce.
+- bővítményeknél: `formal/plugins/hu_HU/` (vagy `informal/…`) → `wp-content/languages/plugins/`
+- sablonoknál: `formal/themes/hu_HU/` (vagy `informal/…`) → `wp-content/languages/themes/`
 
 **Melyik változat?** A `formal` hivatalos, üzleti oldalakhoz (webshop, cégoldal), az `informal` közvetlen hangú
 oldalakhoz (blog, közösségi oldal) való. Váltáskor elég a másik változat fájljait bemásolni.
@@ -87,7 +81,7 @@ A `<mappa>` a bővítmény vagy sablon telepítési könyvtárneve (nem a text d
 |---|---|---|
 | `.po` | a forrás, ezt szerkesztjük | — |
 | `.mo` | bináris fordítás a PHP-szövegekhez | minden verzió |
-| `.l10n.php` | PHP-tömb a PHP-szövegekhez, gyorsabban töltődik a `.mo`-nál | 6.5+ |
+| `.l10n.php` | PHP-tömb a PHP-szövegekhez, gyorsabban töltődik a `.mo`-nál (csak a release-zipben) | 6.5+ |
 | `-<hash>.json` | a JavaScript-szövegek (blokkszerkesztő, React-felületek) fordítása | 5.0+ |
 
 A `.mo` és a `.json` a gitben is megvan (az lw-translate onnan tölti le), a `.l10n.php` csak a release-zipben.
@@ -121,7 +115,7 @@ python3 scripts/check_po.py --all             # minden .po és minden mappa
 python3 scripts/check_po.py --changed-since main
 python3 scripts/build.py [<mappa>…]           # .mo és .json a .po mellé (alapértelmezés)
 python3 scripts/build.py --dist [<mappa>…]    # .po, .mo, .l10n.php, .json és stats.json a dist/ alá (release)
-python3 scripts/package.py --base-url <URL>   # zipek és translations-*.json a dist/release/ alá
+python3 scripts/package.py                    # egy zip (wordpress-translations.zip) a dist/release/ alá
 ```
 
 A `check_po.py` hibának veszi a `msgfmt -c` hibáit, a msgid és a msgstr eltérő helyőrzőit (`%s`, `%1$s`, `%d`,
@@ -142,7 +136,7 @@ ebből jön.
 - **CI** (`ci-cd.yml`): pull requestnél és pushnál a `check_po.py` a változott csomagmappákon (`.po`, `.mo`,
   `.json`, fájlnevek). A repóban lévő régebbi hibák nem blokkolnak, csak a módosított csomagok hibái.
 - **Release** (`release.yml`, kiegészítő terjesztés): a main ágra pusholt fordítás-változás után
-  `build.py --dist`, csomagolás és GitHub Release dátum-alapú taggel (`v2026.10.31`, ugyanazon a napon `v2026.10.31-2`).
+  `build.py --dist`, egyetlen zip és GitHub Release dátum-alapú taggel (`v2026.10.31`, ugyanazon a napon `v2026.10.31-2`).
 - **Dependabot**: a workflow-k GitHub Actions-verziói.
 
 ## Statisztikák
