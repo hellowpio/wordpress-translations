@@ -245,9 +245,16 @@ def all_po_files():
 
 def changed_dirs(ref):
     """A <ref> óta változott (törölt fájlt is beleértve) mappák a formal/ és informal/ alatt."""
-    r = subprocess.run(['git', 'diff', '--name-only', '--diff-filter=ACMRD', ref, '--', 'formal', 'informal'],
+    r = subprocess.run(['git', 'diff', '--name-status', '--diff-filter=ACMRD', ref, '--', 'formal', 'informal'],
                        cwd=ROOT, capture_output=True, text=True, check=True)
-    return sorted({os.path.dirname(os.path.join(ROOT, f)) for f in r.stdout.split()})
+    utak = []
+    for sor in r.stdout.splitlines():
+        allapot, *nevek = sor.split('\t')
+        # A .l10n.php nincs a gitben (a release és az lw-translate maga készíti): a törlése nem változás.
+        if allapot == 'D' and nevek[0].endswith('.l10n.php'):
+            continue
+        utak += nevek
+    return sorted({os.path.dirname(os.path.join(ROOT, f)) for f in utak})
 
 
 def po_files_in(directory):
