@@ -12,7 +12,7 @@ Ez a repository WordPress bővítmények és témák fordításait tartalmazza k
 
 Minden visszajelzésnek örülünk! Az új fordításkezelő rendszer gyors fordítás-frissítést tesz lehetővé - akár tömegesen is tudunk javítani hibákat néhány percen belül.
 
-**➡️ [Fordítási hiba bejelentése](https://forms.gle/txaarRuogaEVfFRq9)**
+**➡️ [Fordítási hiba bejelentése](https://github.com/hellowpio/wordpress-translations/issues/new?template=forditasi-hiba.yml)**
 
 Köszönjük az együttműködést! 🙏
 

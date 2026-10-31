@@ -1,0 +1,62 @@
+name: Fordítási hiba
+description: Hibás, hiányzó vagy félrevezető magyar fordítás egy bővítményben vagy sablonban.
+title: "[Fordítási hiba]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Köszönjük a bejelentést. Ha több szöveg hibás ugyanabban a bővítményben, egy bejelentésbe is írhatod őket.
+        Előfordul, hogy egy szöveg a fordítás ellenére angolul marad: ilyenkor a bővítmény nem a fordítási
+        rendszeren keresztül írja ki. Ezt is jelezd, megnézzük.
+
+  - type: input
+    id: nev
+    attributes:
+      label: Bővítmény vagy sablon neve
+      placeholder: "pl. WooCommerce Subscriptions"
+    validations:
+      required: true
+
+  - type: input
+    id: verzio
+    attributes:
+      label: Verzió
+      description: A bővítmény vagy sablon telepített verziója (Bővítmények oldal).
+      placeholder: "pl. 7.2.1"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: hangnem
+    attributes:
+      label: Hangnem
+      description: Melyik változatot használod?
+      options:
+        - formal (magázó)
+        - informal (tegező)
+        - nem tudom
+    validations:
+      required: true
+
+  - type: textarea
+    id: hibas-szoveg
+    attributes:
+      label: A hibás szöveg
+      description: Ahogy most megjelenik (magyarul vagy angolul).
+    validations:
+      required: true
+
+  - type: textarea
+    id: javaslat
+    attributes:
+      label: Javasolt fordítás
+    validations:
+      required: false
+
+  - type: textarea
+    id: hol
+    attributes:
+      label: Hol látszik?
+      description: Az admin felület melyik oldalán, vagy melyik nyilvános oldalon (URL). Képernyőkép is jól jön.
+    validations:
+      required: false
