@@ -1,7 +1,7 @@
 version: 2
 updates:
-  # NPM dependencies
-  - package-ecosystem: "npm"
+  # GitHub Actions (actions/checkout, …)
+  - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
@@ -9,10 +9,6 @@ updates:
     open-pull-requests-limit: 10
     labels:
       - "dependencies"
-      - "npm"
-    commit-message:
-      prefix: "npm"
-      include: "scope"
     assignees:
       - "trueqap"
     reviewers:
