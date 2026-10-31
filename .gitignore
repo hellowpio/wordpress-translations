@@ -1,11 +1,9 @@
-# Build kimenet (scripts/build.py); a generált fordítási fájlok a GitHub Release-ben vannak
+# Build kimenet (scripts/build.py --dist); a release-csomagok forrása
 dist/
-formal/**/*.mo
-informal/**/*.mo
+# A .l10n.php-t az lw-translate maga generálja a .mo-ból, ezért nincs a gitben.
+# A .mo és a fordítási .json a gitben marad: az lw-translate a main ágról tölti le őket.
 formal/**/*.l10n.php
 informal/**/*.l10n.php
-formal/**/*.json
-informal/**/*.json
 
 # OS files
 .DS_Store
