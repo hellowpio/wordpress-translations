@@ -39,7 +39,7 @@ import sys
 
 try:
     import polib
-except ImportError:  # helyben a projekt .venv-jéből (mint a bin/hwpt)
+except ImportError:  # helyben a projekt .venv-jéből
     import glob
     sys.path[:0] = glob.glob(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
                                           '.venv/lib/python*/site-packages'))

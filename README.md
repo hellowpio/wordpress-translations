@@ -5,6 +5,25 @@ WordPress-bővítmények és -sablonok fordításai, elsősorban magyarul (`hu_H
 JavaScript-fordítások `.json` fájljai is. A [Releases](https://github.com/hellowpio/wordpress-translations/releases)
 oldalon ugyanezek csomagonként zipben is letölthetők.
 
+## Telepítés az LW Translate bővítménnyel (ajánlott)
+
+A legegyszerűbb az [LW Translate](https://github.com/lwplugins/lw-translate) bővítmény: a WordPress
+adminfelületéről listázza a telepített bővítményekhez és sablonokhoz elérhető fordításokat ebből a repóból, és
+egy kattintással telepíti, frissíti vagy törli őket. A frissítést magától jelzi, ha itt újabb fordítás jelent meg.
+
+Kell hozzá: PHP 8.1+ és WordPress 6.6+.
+
+1. Telepítsd a bővítményt:
+   - Composerrel: `composer require lwplugins/lw-translate`
+   - vagy kézzel: a [legutóbbi release](https://github.com/lwplugins/lw-translate/releases) zipjét töltsd fel
+     a `wp-content/plugins/` mappába, és kapcsold be.
+2. Az **LW Plugins → Translate Settings** oldalon válaszd ki a hangnemet (`formal` = magázó, `informal` =
+   tegező) és a nyelvet (`hu_HU`).
+3. Az **LW Plugins → Translate** oldalon telepítsd vagy frissítsd a fordításokat, egyenként vagy
+   tömegesen.
+
+A bővítmény leírása: [lwplugins/lw-translate](https://github.com/lwplugins/lw-translate).
+
 ## Az lw-translate és a fájlnév-szabály
 
 Az lw-translate bővítmény ezt a repót élesben olvassa: a GitHub Trees API-ból (`git/trees/main?recursive=1`) listázza
@@ -21,7 +40,7 @@ nem használ, a `.l10n.php`-t a `.mo`-ból maga készíti. Ezért:
 
 A CI hibát ad, ha egy fájlnév nem illik a szabályra, vagy ha a `.po` mellől hiányzik a `<mappa>-<locale>.mo`.
 
-## Letöltés és telepítés kézzel
+## Letöltés és telepítés kézzel (bővítmény nélkül)
 
 A [legutóbbi release](https://github.com/hellowpio/wordpress-translations/releases/latest) csomagonként egy zipet tartalmaz:
 `<mappa>-<locale>-<tone>.zip`, például `woocommerce-subscriptions-hu_HU-formal.zip`. A zipben a `.po`, `.mo`,
@@ -124,17 +143,7 @@ ebből jön.
   `.json`, fájlnevek). A repóban lévő régebbi hibák nem blokkolnak, csak a módosított csomagok hibái.
 - **Release** (`release.yml`, kiegészítő terjesztés): a main ágra pusholt fordítás-változás után
   `build.py --dist`, csomagolás és GitHub Release dátum-alapú taggel (`v2026.10.31`, ugyanazon a napon `v2026.10.31-2`).
-- **Verzió-figyelés** (`verziok.yml`): hetente összeveti a fordítások verzióját a HelloPack legújabb
-  verzióival, és az eredményt az „Elavult fordítások” issue-ba írja.
 - **Dependabot**: a workflow-k GitHub Actions-verziói.
-
-## Fordításfrissítő eszköz (`bin/hwpt`)
-
-A `bin/hwpt` (`tools/hwpt.py`) a HelloPack-csomagok fordításának karbantartója: kiírja, melyik fordítás
-melyik verzióról készült és mi a legújabb (`allapot`), letölti az új verziót, abból POT-ot készít és
-összefésüli a `.po`-val (`frissit`), a hiányzó szövegeket fordítási memóriából és gépi fordítással tölti ki,
-és ellenőriz (`ellenoriz`). A HelloPack-tokent és az API-kulcsot a gitignore-olt `.env`-ből olvassa. A
-parancsok és a munkamenet leírása: [CLAUDE.md](CLAUDE.md).
 
 ## Statisztikák
 
