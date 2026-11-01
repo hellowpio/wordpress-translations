@@ -1,0 +1,2150 @@
+# Copyright (C) 2026 WP Desk
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Flexible Subscriptions 1.8.9\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flexible-subscriptions\n"
+"POT-Creation-Date: 2026-10-22T12:56:50+00:00\n"
+"PO-Revision-Date: 2026-11-01 08:56+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: flexible-subscriptions\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Plugin-Name: Flexible Subscriptions\n"
+"X-Plugin-Tone: informal\n"
+"X-Plugin-Version: 1.8.9\n"
+
+#. Plugin Name of the plugin
+#: flexible-subscriptions.php:3 src/HookProvider/Admin/Menu.php:16
+#: src/HookProvider/Admin/Menu.php:17 templates/admin/forms/settings.php:12
+msgid "Flexible Subscriptions"
+msgstr "Flexible Subscriptions"
+
+#. Plugin URI of the plugin
+#: flexible-subscriptions.php:4
+msgid "https://www.wpdesk.net/sk/flexible-subscriptions-plugin/"
+msgstr "https://www.wpdesk.net/sk/flexible-subscriptions-plugin/"
+
+#. Description of the plugin
+#: flexible-subscriptions.php:5
+msgid ""
+"Flexible Subscriptions is a WooCommerce extension that allows you to create "
+"flexible subscription products."
+msgstr "A Flexible Subscriptions egy WooCommerce-kiterjesztés, amellyel rugalmas előfizetéses termékeket hozhatsz létre."
+
+#. Author of the plugin
+#: flexible-subscriptions.php:7
+msgid "WP Desk"
+msgstr "WP Desk"
+
+#. Author URI of the plugin
+#: flexible-subscriptions.php:8
+msgid "https://www.wpdesk.net/sk/flexible-subscriptions-author/"
+msgstr "https://www.wpdesk.net/sk/flexible-subscriptions-author/"
+
+#: compat/woocommerce-subscriptions/class-wc-subscription.php:86
+msgid "Subscription renewal payment failed."
+msgstr "Az előfizetés megújításához szükséges fizetés sikertelen."
+
+#: compat/woocommerce-subscriptions/class-wc-subscription.php:89
+msgid "Payment failed."
+msgstr "A fizetés sikertelen."
+
+#: compat/woocommerce-subscriptions/class-wc-subscription.php:95
+msgid "Subscription Cancelled: maximum number of failed payments reached."
+msgstr "Előfizetés lemondva: elérte a sikertelen fizetések maximális számát."
+
+#: compat/woocommerce-subscriptions/class-wc-subscriptions-change-payment-gateway.php:85
+msgid "Invalid payment method meta data."
+msgstr "A fizetési mód metaadatai hibásak."
+
+#. translators: %1$s old payment method title, %2$s new payment method title
+#: compat/woocommerce-subscriptions/class-wc-subscriptions-change-payment-gateway.php:93
+#, php-format
+msgid "Subscription payment method changed from %1$s to %2$s by customer."
+msgstr "A vásárló megváltoztatta az előfizetés fizetési módját: %1$s helyett %2$s."
+
+#. translators: placeholder is number of days. (e.g. "Bill this every day / 4
+#. days")
+#: compat/woocommerce-subscriptions/wcs-time-functions.php:18
+msgctxt "Subscription billing period."
+msgid "day"
+msgid_plural "%s days"
+msgstr[0] "nap"
+msgstr[1] "%s nap"
+
+#. translators: placeholder is number of weeks. (e.g. "Bill this every week /
+#. 4 weeks")
+#: compat/woocommerce-subscriptions/wcs-time-functions.php:20
+msgctxt "Subscription billing period."
+msgid "week"
+msgid_plural "%s weeks"
+msgstr[0] "hét"
+msgstr[1] "%s hét"
+
+#. translators: placeholder is number of months. (e.g. "Bill this every month
+#. / 4 months")
+#: compat/woocommerce-subscriptions/wcs-time-functions.php:22
+msgctxt "Subscription billing period."
+msgid "month"
+msgid_plural "%s months"
+msgstr[0] "hónap"
+msgstr[1] "%s hónap"
+
+#. translators: placeholder is number of years. (e.g. "Bill this every year /
+#. 4 years")
+#: compat/woocommerce-subscriptions/wcs-time-functions.php:24
+msgctxt "Subscription billing period."
+msgid "year"
+msgid_plural "%s years"
+msgstr[0] "év"
+msgstr[1] "%s év"
+
+#: src/Admin/Settings/AccountTab.php:19
+msgid "Account endpoints"
+msgstr "Fiókvégpontok"
+
+#: src/Admin/Settings/AccountTab.php:21
+msgid ""
+"Endpoints are appended to your page URLs to handle specific actions on the "
+"accounts pages. They should be unique and can be left blank to disable the "
+"endpoint.\n"
+msgstr "A végpontok a fiókoldalak URL-jeinek végére kerülnek, hogy meghatározott műveleteket kezeljenek. Egyedinek kell lenniük; a végpont kikapcsolásához hagyd üresen a mezőt.\n"
+
+#: src/Admin/Settings/PaymentsTab.php:25
+msgid "Zero initial payment"
+msgstr "Nulla összegű kezdeti fizetés"
+
+#: src/Admin/Settings/PaymentsTab.php:26
+msgid ""
+"Require a payment method when the initial subscription order total is zero"
+msgstr "Adj meg fizetési módot, ha az előfizetés kezdeti rendelésének összege nulla."
+
+#: src/Admin/Settings/PaymentsTab.php:27
+msgid ""
+"Allows a supported payment gateway to save the payment method for automatic "
+"renewals when a future subscription payment is due."
+msgstr "Engedélyezi, hogy egy támogatott fizetési átjáró elmentse a fizetési módot az automatikus megújításokhoz, amikor esedékessé válik egy későbbi előfizetési díj."
+
+#: src/Admin/Settings/PaymentsTab.php:31
+msgid "Manual payments"
+msgstr "Manuális fizetések"
+
+#: src/Admin/Settings/PaymentsTab.php:32
+msgid "Allow payment methods that require manual subscription renewals"
+msgstr "Engedélyezd azokat a fizetési módokat, amelyeknél az előfizetés megújítását manuálisan kell elvégezni."
+
+#: src/Admin/Settings/PaymentsTab.php:33
+msgid ""
+"When disabled, only payment gateways supporting automatic subscription "
+"renewals are available during checkout."
+msgstr "Kikapcsolt állapotban a pénztárnál csak az automatikus előfizetés-megújítást támogató fizetési átjárók érhetők el."
+
+#: src/Admin/Settings/PaymentsTab.php:36
+msgid "Payment options"
+msgstr "Fizetési opciók"
+
+#: src/Admin/Settings/PaymentsTab.php:37
+msgid ""
+"Configure how payment methods are collected and which gateways can be used "
+"for subscriptions."
+msgstr "Állítsd be, hogyan történjen a fizetési módok begyűjtése, és mely fizetési átjárók legyenek használhatók az előfizetésekhez."
+
+#: src/Admin/Settings/ProductsTab.php:21 src/Admin/SettingsForm.php:37
+msgid "Products"
+msgstr "Termékek"
+
+#: src/Admin/Settings/ProductsTab.php:30 src/Admin/Settings/ProductsTab.php:35
+#: src/HookProvider/Product/ChangeAddButtonText.php:37
+#: src/Product/SubscriptionProductWrapper.php:82
+msgid "Sign up now"
+msgstr "Előfizetés indítása"
+
+#: src/Admin/Settings/ProductsTab.php:31
+msgid "Add to cart button text"
+msgstr "Kosárba teszem gomb szövege"
+
+#: src/Admin/Settings/ProductsTab.php:37
+msgid "Place order button text"
+msgstr "Megrendelés gomb szövege"
+
+#: src/Admin/Settings/ProductsTab.php:40
+msgid "Button text"
+msgstr "Gomb szövege"
+
+#: src/Admin/Settings/ProductsTab.php:41
+msgid ""
+"At your store, buttons are labeled with regular products in mind (i.e. \"Add"
+" to cart\", \"Place order\"). By default, a subscription changes this to "
+"more appropiate labels, like \"Sign up now\" or \"Subscribe now\". You can "
+"customise the button text for subscriptions here."
+msgstr "Az áruházban a gombok alapértelmezés szerint hagyományos termékekhez illő feliratokat kapnak (például „Kosárba teszem”, „Megrendelés”). Az előfizetés ezeket alapértelmezés szerint megfelelőbb feliratokra cseréli, például „Előfizetés most” vagy „Feliratkozás most”. Itt egyéni gombszöveget adhatsz meg az előfizetésekhez."
+
+#: src/Admin/SettingsForm.php:40
+msgid "Payments"
+msgstr "Fizetések"
+
+#: src/Admin/SettingsForm.php:43
+msgid "Account"
+msgstr "Fiók"
+
+#: src/Admin/SettingsForm.php:54
+msgid "Save changes"
+msgstr "Módosítások mentése"
+
+#: src/Form/Fields/AccountEndpointFields.php:17
+#: src/HookProvider/Account/AccountEndpoints.php:57
+#: src/HookProvider/Account/SubscriptionsPage.php:75
+#: src/HookProvider/Account/SubscriptionViewPage.php:77
+#: src/HookProvider/SubscriptionOrderType.php:28
+#: src/HookProvider/SubscriptionOrderType.php:41
+msgid "Subscriptions"
+msgstr "Előfizetések"
+
+#: src/Form/Fields/AccountEndpointFields.php:18
+msgid "Endpoint for the My Account &rarr; Subscriptions page"
+msgstr "Végpont a Fiókom &rarr; előfizetések oldalhoz"
+
+#: src/Form/Fields/AccountEndpointFields.php:22
+msgid "View subscription"
+msgstr "Előfizetés megtekintése"
+
+#: src/Form/Fields/AccountEndpointFields.php:23
+msgid "Endpoint for the My Account &rarr; View Subscription page"
+msgstr "Végpont a Fiókom &rarr; előfizetés megtekintése oldalhoz"
+
+#. translators: placeholder is price string, denotes tax included in
+#. cart/order total.
+#: src/Formatting/Price/CartTotals.php:41
+#, php-format
+msgctxt "includes tax"
+msgid "(includes %s)"
+msgstr "(a benne foglalt adó összege: %s)"
+
+#. translators: 1$: recurring amount, 2$: subscription period (e.g. "month" or
+#. "3 months") (e.g. "$15 / month" or "$15 every 2nd month").
+#: src/Formatting/Price/CartTotals.php:48
+#: src/Formatting/Price/ProductFullPrice.php:46
+#, php-format
+msgid "%1$s every %2$s"
+msgstr "%1$s minden %2$s"
+
+#. translators: 1$: subscription string (e.g. "$10 up front then $5 on March
+#. 23rd every 3rd year"), 2$: length (e.g. "4 years").
+#: src/Formatting/Price/CartTotals.php:57
+#: src/Formatting/Price/ProductFullPrice.php:64
+#: src/Formatting/Price/VariableProductEnhancedPrice.php:45
+#, php-format
+msgid "%1$s for %2$s"
+msgstr "A(z) %2$s esetén: %1$s"
+
+#. translators: %1$s Total price, %2$s Number of items.
+#: src/Formatting/Price/PaymentRequestTotal.php:21
+#, php-format
+msgid "%1$s for %2$s item"
+msgid_plural "%1$s for %2$s items"
+msgstr[0] "%1$s ehhez: %2$s tétel"
+msgstr[1] "%1$s ehhez: %2$s tétel"
+
+#. translators: %1$s Total price, %2$s Billing frequency.
+#: src/Formatting/Price/PriceFormat.php:59
+#, php-format
+msgid "%1$s / %2$s"
+msgstr "%1$s / %2$s"
+
+#. translators: 1$: subscription string (e.g. "$15 on March 15th every 3 years
+#. for 6 years"), 2$: trial length (e.g.: "with 4 months free trial").
+#: src/Formatting/Price/ProductFullPrice.php:74
+#: src/Formatting/Price/VariableProductEnhancedPrice.php:55
+#, php-format
+msgid "%1$s with %2$s free trial"
+msgstr "%1$s, %2$s ingyenes próbaidővel"
+
+#. translators: 1$: subscription string (e.g. "$15 on March 15th every 3 years
+#. for 6 years with 2 months free trial"), 2$: signup fee price (e.g. "and a
+#. $30 sign-up fee").
+#: src/Formatting/Price/ProductFullPrice.php:80
+#: src/Formatting/Price/VariableProductEnhancedPrice.php:61
+#, php-format
+msgid "%1$s and a %2$s sign-up fee"
+msgstr "%1$s és %2$s regisztrációs díj"
+
+#. translators: 1$: recurring amount, 2$: subscription period (e.g. "month" or
+#. "3 months") (e.g. "$15 / month" or "$15 every 2nd month").
+#: src/Formatting/Price/VariableProductEnhancedPrice.php:33
+#, php-format
+msgid "From %1$s every %2$s"
+msgstr "Már %1$s / %2$s"
+
+#: src/HookProvider/Account/AccountEndpoints.php:55
+msgid "My Subscription"
+msgstr "Előfizetésem"
+
+#: src/HookProvider/Account/CustomerActionsController.php:72
+msgid "Subscription cancelled by customer."
+msgstr "Az előfizetést a vásárló mondta le."
+
+#. translators: placeholder is a page number.
+#: src/HookProvider/Account/SubscriptionsPage.php:72
+#, php-format
+msgid "Subscriptions (page %d)"
+msgstr "Előfizetések (oldal: %d)"
+
+#: src/HookProvider/Account/SubscriptionViewPage.php:46
+msgid "Invalid subscription."
+msgstr "Hibás előfizetés."
+
+#. translators: placeholder is a subscription ID.
+#: src/HookProvider/Account/SubscriptionViewPage.php:74
+#, php-format
+msgctxt "hash before order number"
+msgid "Subscription #%s"
+msgstr "Előfizetés #%s"
+
+#: src/HookProvider/Admin/AccountSettings.php:20
+msgid "When cart contains subscription products"
+msgstr "Ha a kosár előfizetéses terméket tartalmaz"
+
+#: src/HookProvider/Admin/AccountSettings.php:21
+msgid ""
+"Account creation is required for the Flexible Subscriptions to work "
+"correctly"
+msgstr "A Flexible Subscriptions megfelelő működéséhez felhasználói fiók létrehozása szükséges."
+
+#: src/HookProvider/Admin/CustomerLoginReminder.php:38
+msgid "Note that purchasing a subscription still requires an account."
+msgstr "Ne feledd, hogy előfizetés vásárlásához továbbra is fiók szükséges."
+
+#. translators: %1$d number of failure occurrences
+#: src/HookProvider/Admin/FailedPaymentRequestNotice.php:47
+#, php-format
+msgid ""
+"<strong>There was %1$d failed payment request when processing subscription "
+"renewal.</strong> Please check the <a href=\"%2$s\"><em>WooCommerce "
+"logs</em></a> for details."
+msgid_plural ""
+"<strong>There were %1$d failed payment requests when processing subscription"
+" renewal.</strong> Please check the <a href=\"%2$s\"><em>WooCommerce "
+"logs</em></a> for details."
+msgstr[0] "<strong>Az előfizetés megújításának feldolgozásakor %1$d sikertelen fizetési kérelem érkezett.</strong> A részletekért nézd meg a <a href=\"%2$s\"><em>WooCommerce-naplókat</em></a>."
+msgstr[1] "<strong>Az előfizetés megújításának feldolgozásakor %1$d sikertelen fizetési kérelem érkezett.</strong> A részletekért nézd meg a <a href=\"%2$s\"><em>WooCommerce-naplókat</em></a>."
+
+#: src/HookProvider/Admin/OrderColumns.php:42
+msgctxt "An order type"
+msgid "Non-subscription"
+msgstr "Nem előfizetéses"
+
+#: src/HookProvider/Admin/OrderColumns.php:43
+msgctxt "An order type"
+msgid "Subscription Parent"
+msgstr "Szülő előfizetés"
+
+#: src/HookProvider/Admin/OrderColumns.php:44
+msgctxt "An order type"
+msgid "Subscription Renewal"
+msgstr "Előfizetés megújítása"
+
+#: src/HookProvider/Admin/OrderColumns.php:45
+msgctxt "An order type"
+msgid "Order Shipping"
+msgstr "Szállítási rendelés"
+
+#: src/HookProvider/Admin/OrderColumns.php:62
+msgid "Related subscription"
+msgstr "Kapcsolódó előfizetés"
+
+#. translators: 1: subscription ID, 2: user display name
+#: src/HookProvider/Admin/OrphanSubscriptionsRemover.php:45
+#, php-format
+msgid ""
+"The subscription #%1$d was deleted after the customer was removed by %2$s."
+msgstr "A #%1$d számú előfizetést töröltük, miután %2$s eltávolította a vásárlót."
+
+#: src/HookProvider/Admin/OrphanSubscriptionsRemover.php:92
+#, php-format
+msgid ""
+"Warning: The %s you are about to delete has purchased subscriptions. "
+"Deleting them will cancel any active subscriptions immediately."
+msgstr "Figyelem: A törölni kívánt %s előfizetéseket vásárolt. A törlésük azonnal lemondja az összes aktív előfizetést."
+
+#: src/HookProvider/Admin/OrphanSubscriptionsRemover.php:93
+msgid "user"
+msgid_plural "users"
+msgstr[0] "felhasználó"
+msgstr[1] "felhasználók"
+
+#. translators: 1: User ID, 2: User Display Name, 3: Number of subscriptions,
+#. 4: "subscription" or "subscriptions", 5: Number of active subscriptions, 6:
+#. "active subscription" or "active subscriptions"
+#: src/HookProvider/Admin/OrphanSubscriptionsRemover.php:120
+#, php-format
+msgid ""
+"User (ID #%1$d: %2$s) has %3$d %4$s in total, including %5$d active %6$s."
+msgstr "A(z) %2$s nevű felhasználónak (ID: #%1$d) összesen %3$d %4$s van, ebből %5$d aktív %6$s."
+
+#: src/HookProvider/Admin/OrphanSubscriptionsRemover.php:127
+#: src/HookProvider/Admin/OrphanSubscriptionsRemover.php:129
+msgid "subscription"
+msgid_plural "subscriptions"
+msgstr[0] "előfizetés"
+msgstr[1] "előfizetések"
+
+#: src/HookProvider/Admin/OrphanSubscriptionsRemover.php:144
+msgid "Check user's subscriptions here."
+msgstr "Itt nézd meg a felhasználó előfizetéseit."
+
+#: src/HookProvider/Admin/PluginLinks.php:32
+msgid "Start here"
+msgstr "Kezdés itt"
+
+#: src/HookProvider/Admin/PluginLinks.php:33
+#: src/HookProvider/Admin/SettingsPage.php:31
+msgid "Settings"
+msgstr "Beállítások"
+
+#: src/HookProvider/Admin/PluginLinks.php:34
+msgid "https://wpdesk.net/sk/flexible-subscriptions-docs-en"
+msgstr "https://wpdesk.net/sk/flexible-subscriptions-docs-en"
+
+#: src/HookProvider/Admin/PluginLinks.php:34
+msgid "Docs"
+msgstr "Dokumentáció"
+
+#: src/HookProvider/Admin/PluginLinks.php:35
+msgid "Support"
+msgstr "Támogatás"
+
+#: src/HookProvider/Admin/PluginLinks.php:36
+msgid "Add-on"
+msgstr "Kiegészítő"
+
+#: src/HookProvider/Admin/SettingsPage.php:30
+msgid "Flexible Subscriptions settings"
+msgstr "Flexible Subscriptions beállításai"
+
+#: src/HookProvider/Admin/Subscription/PaymentRequestsMetaBox.php:41
+#: templates/myaccount/payment-requests.php:13
+msgid "Subscription history"
+msgstr "Előfizetési előzmények"
+
+#: src/HookProvider/Admin/Subscription/ScheduleMetaBox.php:38
+msgctxt "meta box title"
+msgid "Payment cycles"
+msgstr "Fizetési ciklusok"
+
+#: src/HookProvider/Admin/Subscription/SubscriptionDataMetaBox.php:43
+msgctxt "meta box title"
+msgid "Subscription data"
+msgstr "Előfizetési adatok"
+
+#: src/HookProvider/Admin/Subscription/SubscriptionErrorsNotice.php:44
+msgid ""
+"There is a known issue with manually editing subscriptions while using HPOS "
+"sync mode. For the best experience, we recommend using either High-"
+"performance order storage or WordPress posts storage mode."
+msgstr "Ismert probléma, hogy HPOS-szinkronizálási mód használatakor az előfizetések manuális szerkesztése hibásan működhet. A lehető legjobb működés érdekében javasoljuk, hogy a nagy teljesítményű rendeléstárolási módot vagy a WordPress-bejegyzések tárolási módját használd."
+
+#: src/HookProvider/Admin/Subscription/SubscriptionErrorsNotice.php:52
+msgid ""
+"Subscription misconfiguration: The start date for this subscription is not "
+"set. This will likely cause errors with subscription functionality. Please "
+"edit the subscription and set the start date to resolve this issue."
+msgstr "Előfizetési konfigurációs hiba: Az előfizetés kezdő dátuma nincs beállítva. Ez valószínűleg hibákat okoz az előfizetés működésében. A probléma megoldásához szerkeszd az előfizetést, és állítsd be a kezdő dátumot."
+
+#: src/HookProvider/Admin/Subscription/SubscriptionErrorsNotice.php:65
+msgid ""
+"Subscription misconfiguration: The billing frequency for this subscription "
+"is not set. This will likely cause errors with subscription functionality. "
+"Please edit the subscription and set the billing frequency to resolve this "
+"issue."
+msgstr "Előfizetési konfigurációs hiba: Az előfizetés számlázási gyakorisága nincs beállítva. Ez valószínűleg hibákat okoz az előfizetés működésében. A probléma megoldásához szerkeszd az előfizetést, és állítsd be a számlázási gyakoriságot."
+
+#. translators: %s: subscription status
+#: src/HookProvider/Admin/Subscription/SubscriptionsList.php:57
+#, php-format
+msgid "Change status to %s"
+msgstr "Állapot módosítása erre: %s"
+
+#. translators: %d: number of subscriptions
+#: src/HookProvider/Admin/Subscription/SubscriptionsList.php:121
+#, php-format
+msgid "%d subscription status changed."
+msgid_plural "%d subscription statuses changed."
+msgstr[0] "%d előfizetés állapota módosult."
+msgstr[1] "%d előfizetés állapota módosult."
+
+#. translators: 1: number of subscriptions, 2: current status, 3: requested
+#. status
+#: src/HookProvider/Admin/Subscription/SubscriptionsList.php:136
+#, php-format
+msgid "%1$d subscription could not be changed from %2$s to %3$s."
+msgid_plural "%1$d subscriptions could not be changed from %2$s to %3$s."
+msgstr[0] "Nem sikerült módosítani %1$d előfizetés állapotát. A módosítás nem sikerült a következő állapotok között: %2$s → %3$s."
+msgstr[1] "Nem sikerült módosítani %1$d előfizetés állapotát. A módosítás nem sikerült a következő állapotok között: %2$s → %3$s."
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:62
+#: templates/admin/subscription/metabox/related-orders.php:81
+#: templates/myaccount/my-subscriptions.php:26
+#: templates/myaccount/my-subscriptions.php:40
+#: templates/myaccount/payment-requests.php:23
+#: templates/myaccount/payment-requests.php:70
+#: templates/myaccount/related-subscriptions.php:21
+#: templates/myaccount/related-subscriptions.php:36
+#: templates/myaccount/view-subscription.php:25
+msgid "Status"
+msgstr "Állapot"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:63
+#: src/HookProvider/Product/SubscriptionProductType.php:25
+#: src/HookProvider/SubscriptionOrderType.php:29
+#: templates/myaccount/my-subscriptions.php:25
+#: templates/myaccount/related-subscriptions.php:20
+msgid "Subscription"
+msgstr "Előfizetés"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:64
+msgid "Items"
+msgstr "Tételek"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:65
+#: assets/blocks/index.js:170 assets/dist/index.js:10
+msgid "Total"
+msgstr "Összeg"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:66
+#: templates/admin/subscription/metabox/schedule.php:54
+msgid "Start Date"
+msgstr "Kezdés dátuma"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:67
+msgid "Trial End"
+msgstr "Próbaidőszak vége"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:68
+msgid "Next Payment"
+msgstr "Következő fizetés"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:69
+msgid "Last Transaction"
+msgstr "Utolsó tranzakció"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:70
+#: templates/admin/subscription/metabox/schedule.php:128
+msgid "End Date"
+msgstr "Befejezés dátuma"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:71
+msgctxt "number of payment requests linked to a subscription"
+msgid "Related orders"
+msgstr "Kapcsolódó rendelések"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:152
+#: templates/emails/subscription-info.php:45
+msgid "N/A"
+msgstr "N/A"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:221
+msgid "Reactivate"
+msgstr "Újraaktiválás"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:222
+msgid "Suspend"
+msgstr "Felfüggesztés"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:223
+#: templates/myaccount/payment-requests.php:96
+msgctxt "an action on a subscription"
+msgid "Cancel"
+msgstr "Lemondás"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:224
+#: src/HookProvider/Admin/SubscriptionColumns.php:240
+msgid "Trash"
+msgstr "Lomtár"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:225
+#: src/HookProvider/Admin/SubscriptionColumns.php:244
+msgid "Delete Permanently"
+msgstr "Végleges törlés"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:240
+msgid "Move this item to the Trash"
+msgstr "Elem áthelyezése a Lomtárba"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:244
+msgid "Delete this item permanently"
+msgstr "Elem végleges törlése"
+
+#: src/HookProvider/Admin/SubscriptionColumns.php:250
+msgid "Cancel Now"
+msgstr "Lemondás most"
+
+#. translators: placeholder is the display name of a payment gateway a
+#. subscription was paid by.
+#: src/HookProvider/Admin/SubscriptionColumns.php:286
+#: templates/checkout/recurring-item-totals/shipping/shipping-cost.php:19
+#: assets/blocks/index.js:148 assets/dist/index.js:10
+#, php-format, js-format
+msgid "Via %s"
+msgstr "A következőn keresztül: %s"
+
+#: src/HookProvider/Admin/SubscriptionEditedMessages.php:26
+#: src/HookProvider/Admin/SubscriptionEditedMessages.php:29
+#: src/HookProvider/Admin/SubscriptionEditedMessages.php:32
+msgid "Subscription updated."
+msgstr "Előfizetés frissítve."
+
+#: src/HookProvider/Admin/SubscriptionEditedMessages.php:27
+msgid "Custom field updated."
+msgstr "Egyéni mező frissítve."
+
+#: src/HookProvider/Admin/SubscriptionEditedMessages.php:28
+msgid "Custom field deleted."
+msgstr "Egyéni mező törölve."
+
+#. translators: placeholder is previous post title.
+#: src/HookProvider/Admin/SubscriptionEditedMessages.php:31
+#, php-format
+msgctxt "used in post updated messages"
+msgid "Subscription restored to revision from %s"
+msgstr "Előfizetés visszaállítva a(z) %s verzióra"
+
+#: src/HookProvider/Admin/SubscriptionEditedMessages.php:33
+msgid "Subscription saved."
+msgstr "Előfizetés mentve."
+
+#: src/HookProvider/Admin/SubscriptionEditedMessages.php:34
+msgid "Subscription submitted."
+msgstr "Előfizetés elküldve."
+
+#: src/HookProvider/Admin/SubscriptionEditedMessages.php:35
+msgid "Subscription draft updated."
+msgstr "Előfizetés piszkozata frissítve."
+
+#: src/HookProvider/Admin/SupportedGateways.php:23
+msgid "Automatic Renewals"
+msgstr "Automatikus megújítások"
+
+#: src/HookProvider/Admin/SupportedGateways.php:40
+msgid "Supports Flexible Subscriptions"
+msgstr "Támogatja a Flexible Subscriptions bővítményt"
+
+#: src/HookProvider/Admin/SupportedGateways.php:40
+msgid "Yes"
+msgstr "Igen"
+
+#: src/HookProvider/Admin/SupportedGateways.php:54
+msgid ""
+"Flexible Subscriptions does not support any payment method available in your"
+" store except manual payments. <a target=\"_blank\" "
+"href=“https://wpdesk.net/sk/flexible-subscriptions-supported-methods”>See "
+"which methods we support →</a>"
+msgstr "A Flexible Subscriptions nem támogatja az áruházadban elérhető fizetési módokat, kivéve a kézi fizetést. <a target=\"_blank\" href=“https://wpdesk.net/sk/flexible-subscriptions-supported-methods”>Tekintsd meg a támogatott fizetési módok listáját →</a>"
+
+#: src/HookProvider/Ajax/AddingNonSubscriptionProducts.php:31
+msgid ""
+"This product is not a type of subscription product and therefore cannot be "
+"added to a subscription."
+msgstr "Ez a termék nem előfizetéses terméktípus, ezért nem adható hozzá előfizetéshez."
+
+#: src/HookProvider/Blocks/ExtendStoreApi.php:91
+msgid "Billing period for the subscription."
+msgstr "Az előfizetés számlázási időszaka."
+
+#: src/HookProvider/Blocks/ExtendStoreApi.php:96
+msgid "The number of billing periods between subscription renewals."
+msgstr "Az előfizetés megújításai közötti számlázási időszakok darabszáma."
+
+#: src/HookProvider/Blocks/ExtendStoreApi.php:101
+msgid "Subscription Product trial length."
+msgstr "Az előfizetéses termék próbaidőszakának hossza."
+
+#: src/HookProvider/Blocks/ExtendStoreApi.php:106
+msgid "Subscription Product trial period."
+msgstr "Előfizetéses termék próbaidőszaka."
+
+#: src/HookProvider/Blocks/ExtendStoreApi.php:111
+msgid "Subscription Product sign-up fee."
+msgstr "Az előfizetéses termék regisztrációs díja."
+
+#: src/HookProvider/Blocks/ExtendStoreApi.php:174
+msgid "A list of recurring totals for subscriptions in the cart."
+msgstr "A kosárban lévő előfizetések ismétlődő végösszegeinek listája."
+
+#: src/HookProvider/Blocks/ExtendStoreApi.php:182
+msgid "Localized first renewal date for the subscription."
+msgstr "Az előfizetés első megújításának lokalizált dátuma."
+
+#: src/HookProvider/Blocks/ExtendStoreApi.php:187
+msgid "Human-readable billing frequency for the subscription."
+msgstr "Az előfizetés számlázási gyakoriságának közérthető formája."
+
+#: src/HookProvider/Blocks/ExtendStoreApi.php:192
+msgid "Human-readable expiration for the subscription."
+msgstr "Az előfizetés közérthetően megjelenített lejárata."
+
+#: src/HookProvider/Blocks/ExtendStoreApi.php:198
+msgid "Recurring shipping packages with rates."
+msgstr "Ismétlődő szállítási csomagok díjakkal."
+
+#: src/HookProvider/Cart/ShippingDetails.php:29
+msgid "Initial Shipment"
+msgstr "Első szállítás"
+
+#: src/HookProvider/Coupons/SubscriptionCouponTypes.php:94
+msgid "Sign Up Fee Discount"
+msgstr "Regisztrációs díjkedvezmény"
+
+#: src/HookProvider/Coupons/SubscriptionCouponTypes.php:95
+msgid "Sign Up Fee % Discount"
+msgstr "Regisztrációs díjkedvezmény (%)"
+
+#: src/HookProvider/Coupons/SubscriptionCouponTypes.php:96
+msgid "Recurring Product Discount"
+msgstr "Ismétlődő termékkedvezmény"
+
+#: src/HookProvider/Coupons/SubscriptionCouponTypes.php:97
+msgid "Recurring Product % Discount"
+msgstr "Ismétlődő termékkedvezmény (%)"
+
+#. translators: 1-2: opening/closing tags - link to documentation.
+#: src/HookProvider/Gateways/AvailableGateways.php:93
+#, php-format
+msgid ""
+"Sorry, it seems there are no available payment methods which support "
+"subscriptions. Please see %1$sEnabling Payment Gateways for "
+"Subscriptions%2$s if you require assistance."
+msgstr ""
+"Sajnáljuk, úgy tűnik, nincs elérhető, előfizetéseket támogató fizetési mód. "
+"Segítségért lásd: %1$sElőfizetésekhez használható fizetési átjárók "
+"engedélyezése%2$s."
+
+#: src/HookProvider/Gateways/AvailableGateways.php:95
+msgid ""
+"Sorry, it seems there are no available payment methods which support "
+"subscriptions. Please contact us if you require assistance or wish to make "
+"alternate arrangements."
+msgstr ""
+"Sajnáljuk, úgy tűnik, nincs elérhető, előfizetéseket támogató fizetési mód. "
+"Lépj kapcsolatba velünk, ha segítségre van szükséged, vagy más megoldást "
+"szeretnél."
+
+#: src/HookProvider/Gateways/WooPaymentsIncompatibility.php:27
+msgid "Flexible Subscriptions: Important Notice Regarding WooPayments"
+msgstr "Flexible Subscriptions: fontos tájékoztató a WooPayments szolgáltatásról"
+
+#. translators: %1$s: WooPayments, %2$s: WooCommerce Subscriptions, %3$s:
+#. Opening link tag, %4$s: Closing link tag
+#: src/HookProvider/Gateways/WooPaymentsIncompatibility.php:30
+#, php-format
+msgid ""
+"We've detected that %1$s is active. Please be aware that this gateway is not"
+" compatible with Flexible Subscriptions. To ensure a smooth checkout "
+"process, it will be unavailable when a subscription product is in the cart. "
+"You can continue to use it for all other standard products. %2$sSee our list"
+" of supported gateways%3$s."
+msgstr "Észleltük, hogy a(z) %1$s aktív. Vedd figyelembe, hogy ez a fizetési mód nem kompatibilis a Flexible Subscriptions bővítménnyel. A zavartalan fizetési folyamat biztosítása érdekében nem lesz elérhető, ha előfizetéses termék van a kosárban. Minden más normál terméknél továbbra is használhatod. %2$sTekintsd meg a támogatott fizetési módok listáját%3$s."
+
+#: src/HookProvider/Gateways/WooPaymentsIncompatibility.php:53
+msgid "Unsupported by Flexible Subscriptions"
+msgstr "A Flexible Subscriptions bővítmény nem támogatja"
+
+#: src/HookProvider/Gateways/WooPaymentsIncompatibility.php:53
+msgid "Unsupported"
+msgstr "Nem támogatott"
+
+#. translators: 1: WooCommerce 2:: five stars
+#: src/HookProvider/Marketing/EncourageRating.php:23
+#, php-format
+msgid ""
+"If you like %1$s please leave us a %2$s rating. A huge thanks in advance!"
+msgstr ""
+"Ha tetszik %1$s, adj nekünk %2$s értékelést. Előre is nagyon köszönjük!"
+
+#: src/HookProvider/Marketing/EncourageRating.php:25
+msgid "five star"
+msgstr "ötcsillagos"
+
+#: src/HookProvider/Marketing/SupportPage.php:37
+#: src/HookProvider/Marketing/SupportPage.php:38
+msgid "Start Here"
+msgstr "Kezdés"
+
+#: src/HookProvider/Product/SubscriptionProductType.php:26
+msgid "Variable Subscription"
+msgstr "Változó előfizetés"
+
+#: src/HookProvider/Subscription/AutorecoverOnHoldSubscriptions.php:74
+msgid ""
+"Subscription reactivated because the last payment request was successful."
+msgstr "Az előfizetés újraaktiválva, mert az utolsó fizetési kérelem sikeres volt."
+
+#: src/HookProvider/SubscriptionOrderType.php:21
+msgid ""
+"Subscriptions will appear here for you to view and manage once purchased by "
+"a customer."
+msgstr "Az előfizetések akkor jelennek meg itt megtekintésre és kezelésre, amikor egy vásárló megvásárolja őket."
+
+#: src/HookProvider/SubscriptionOrderType.php:30
+msgctxt "custom post type setting"
+msgid "Add Subscription"
+msgstr "Előfizetés hozzáadása"
+
+#: src/HookProvider/SubscriptionOrderType.php:31
+msgctxt "custom post type setting"
+msgid "Add New Subscription"
+msgstr "Új előfizetés hozzáadása"
+
+#: src/HookProvider/SubscriptionOrderType.php:32
+msgctxt "custom post type setting"
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: src/HookProvider/SubscriptionOrderType.php:33
+msgctxt "custom post type setting"
+msgid "Edit Subscription"
+msgstr "Előfizetés szerkesztése"
+
+#: src/HookProvider/SubscriptionOrderType.php:34
+msgctxt "custom post type setting"
+msgid "New Subscription"
+msgstr "Új előfizetés"
+
+#: src/HookProvider/SubscriptionOrderType.php:35
+#: src/HookProvider/SubscriptionOrderType.php:36
+msgctxt "custom post type setting"
+msgid "View Subscription"
+msgstr "Előfizetés megtekintése"
+
+#: src/HookProvider/SubscriptionOrderType.php:37
+msgid "Search Subscriptions"
+msgstr "Előfizetések keresése"
+
+#: src/HookProvider/SubscriptionOrderType.php:39
+msgctxt "custom post type setting"
+msgid "No Subscriptions found in trash"
+msgstr "Nem található előfizetés a lomtárban"
+
+#: src/HookProvider/SubscriptionOrderType.php:40
+msgctxt "custom post type setting"
+msgid "Parent Subscriptions"
+msgstr "Szülő előfizetések"
+
+#: src/HookProvider/SubscriptionOrderType.php:43
+msgid "This is where subscriptions are stored."
+msgstr "Itt tároljuk az előfizetéseket."
+
+#: src/HookProvider/WooCommerceSubscriptionsDetector.php:33
+msgid ""
+"We have detected that you currently use WooCommerce Subscriptions. "
+"Unfortunately, you cannot use Flexible Subscriptions along the other plugin."
+" Flexible Subscriptions will not be active, until you deactivate WooCommerce"
+" Subscriptions."
+msgstr "Észleltük, hogy jelenleg a WooCommerce Subscriptions bővítményt használod. Sajnos a Flexible Subscriptions bővítmény nem használható együtt a másik bővítménnyel. A Flexible Subscriptions csak a WooCommerce Subscriptions kikapcsolása után lesz aktív."
+
+#: src/HookProvider/WooCommerceSubscriptionsDetector.php:41
+msgid "Deactivate WooCommerce Subscriptions"
+msgstr "A WooCommerce Subscriptions kikapcsolása"
+
+#: src/PaymentMethodSeeker.php:32 src/Subscription/Subscription.php:644
+msgid "Manual Renewal"
+msgstr "Kézi megújítás"
+
+#: src/PeriodIterator.php:24
+msgctxt "period"
+msgid "day(s)"
+msgstr "nap"
+
+#: src/PeriodIterator.php:25
+msgctxt "period"
+msgid "week(s)"
+msgstr "hét"
+
+#: src/PeriodIterator.php:26
+msgctxt "period"
+msgid "month(s)"
+msgstr "hónap"
+
+#: src/PeriodIterator.php:27
+msgctxt "period"
+msgid "year(s)"
+msgstr "év"
+
+#: src/Product/ProductEditTips.php:13
+msgid ""
+"Automatically expire the subscription after this length of time. This length"
+" is in addition to any free trial or amount of time provided before a "
+"synchronised first renewal date."
+msgstr "Az előfizetés automatikus lejárata ennyi idő elteltével. Ez az időtartam hozzáadódik az ingyenes próbaidőszakhoz vagy az összehangolt első megújítási dátum előtt megadott időtartamhoz."
+
+#: src/Product/ProductEditTips.php:20
+msgctxt "Trial period field tooltip on Edit Product administration screen"
+msgid ""
+"An optional period of time to wait before charging the first recurring "
+"payment. Any sign up fee will still be charged at the outset of the "
+"subscription."
+msgstr "Opcionális várakozási idő az első ismétlődő fizetés felszámítása előtt. Az esetleges regisztrációs díjat az előfizetés kezdetekor továbbra is felszámítjuk."
+
+#: src/Product/ProductEditTips.php:28
+msgid "Choose the subscription price, billing interval and period."
+msgstr ""
+"Válaszd ki az előfizetési árat, a számlázási intervallumot és az időszakot."
+
+#: src/Product/ProductEditTips.php:32
+msgid ""
+"Optionally include an amount to be charged at the outset of the "
+"subscription. The sign-up fee will be charged immediately, even if the "
+"product has a free trial or the payment dates are synced."
+msgstr ""
+"Opcionálisan megadható egy összeg, amelyet az előfizetés kezdetekor "
+"számítunk fel. A belépési díj azonnal felszámításra kerül, még akkor is, ha "
+"a termékhez ingyenes próbaidő tartozik vagy a fizetési dátumok "
+"szinkronizáltak."
+
+#: src/Product/ProductEditTips.php:36
+msgid ""
+"Shipping for subscription products is normally charged on the initial order "
+"and all renewal orders. Enable this to only charge shipping once on the "
+"initial order. Note: for this setting to be enabled the subscription must "
+"not have a free trial or a synced renewal date."
+msgstr ""
+"Az előfizetéses termékek szállítási díja alapértelmezés szerint a kezdeti és"
+" minden megújító rendelésnél felszámításra kerül. Ennek engedélyezésével a "
+"szállítási díj csak a kezdeti rendelésnél kerül felszámításra. Megjegyzés: a"
+" beállítás engedélyezéséhez az előfizetéshez nem tartozhat ingyenes próbaidő"
+" vagy szinkronizált megújítási dátum."
+
+#: src/Product/SubscriptionProductWrapper.php:82
+msgid "Select options"
+msgstr "Opciók kiválasztása"
+
+#: src/Subscription/Actions/CancelRefundedSubscriptions.php:42
+#, php-format
+msgid "Subscription cancelled for refunded order %1$s#%2$s%3$s."
+msgstr "Az előfizetés lemondva a visszatérített %1$s#%2$s%3$s rendelés miatt."
+
+#. translators: %s: billing frequency (e.g. "month" or "every 2 weeks").
+#: src/Subscription/Proposal/RecurringShippingResolver.php:54
+#: templates/checkout/recurring-shipping.php:42
+#, php-format
+msgid "Shipment every %s"
+msgstr "Szállítási gyakoriság: %s"
+
+#: src/Subscription/Renewal/ManualRenewal.php:20
+msgid "Manual renewal order awaiting customer payment."
+msgstr "A kézi megújítási rendelés a vásárló fizetésére vár."
+
+#. translators: 1: old order status 2: new order status
+#: src/Subscription/Subscription.php:493
+#, php-format
+msgid "Order status changed from %1$s to %2$s."
+msgstr "A megrendelés állapota %1$s értékről %2$s értékre változott."
+
+#. translators: %s: new order status
+#: src/Subscription/Subscription.php:497
+#, php-format
+msgid "Order status set to %s."
+msgstr "A megrendelés állapota %s értékre lett beállítva."
+
+#: src/Subscription/Subscription.php:610
+msgid "Payment status marked complete."
+msgstr "Fizetési állapot teljesítettként megjelölve."
+
+#. translators: 1: parent order number, 2: update origin label.
+#: src/Subscription/SubscriptionUpdater.php:33
+#, php-format
+msgctxt "subscription note after linking to a parent order"
+msgid "Subscription linked to parent order %1$s via %2$s."
+msgstr "Az előfizetés a(z) %2$s segítségével kapcsolódik a(z) %1$s számú szülő megrendeléshez."
+
+#: src/Subscription/SubscriptionUpdater.php:69
+msgid "Start date"
+msgstr "Kezdés dátuma"
+
+#: src/Subscription/SubscriptionUpdater.php:70
+msgid "Next payment date"
+msgstr "Következő fizetés dátuma"
+
+#: src/Subscription/SubscriptionUpdater.php:71
+msgid "Trial end date"
+msgstr "A próbaidő befejezésének dátuma"
+
+#: src/Subscription/SubscriptionUpdater.php:72
+msgid "End date"
+msgstr "Befejezés dátuma"
+
+#. translators: %s: update origin label.
+#: src/Subscription/SubscriptionUpdater.php:98
+#, php-format
+msgid "Subscription dates updated via %s"
+msgstr "Az előfizetés dátumai frissítve a(z) %s segítségével"
+
+#: src/Subscription/SubscriptionUpdater.php:111
+msgid "REST API"
+msgstr "REST API"
+
+#: src/Subscription/SubscriptionUpdater.php:115
+msgid "admin AJAX"
+msgstr "admin AJAX"
+
+#: src/Subscription/SubscriptionUpdater.php:119
+msgid "admin panel"
+msgstr "adminfelület"
+
+#: src/Subscription/SubscriptionUpdater.php:123
+msgid "WP-CLI"
+msgstr "WP-CLI"
+
+#: src/Subscription/SubscriptionUpdater.php:126
+msgid "system"
+msgstr "rendszer"
+
+#: src/Subscription/Utils/Status.php:23
+msgctxt "Subscription status"
+msgid "Active"
+msgstr "Aktív"
+
+#: src/Subscription/Utils/Status.php:24
+msgctxt "Subscription status"
+msgid "Pending"
+msgstr "Függőben"
+
+#: src/Subscription/Utils/Status.php:25
+msgctxt "Subscription status"
+msgid "On hold"
+msgstr "Felfüggesztve"
+
+#: src/Subscription/Utils/Status.php:26
+msgctxt "Subscription status"
+msgid "Cancelled"
+msgstr "Lemondva"
+
+#: src/Subscription/Utils/Status.php:27
+msgctxt "Subscription status"
+msgid "Switched"
+msgstr "Átváltva"
+
+#: src/Subscription/Utils/Status.php:28
+msgctxt "Subscription status"
+msgid "Expired"
+msgstr "Lejárt"
+
+#: src/Subscription/Utils/Status.php:29
+msgctxt "Subscription status"
+msgid "Pending Cancellation"
+msgstr "Lemondás függőben"
+
+#: src/Subscription/Utils/Status.php:30
+msgctxt "Subscription status"
+msgid "Trashed"
+msgstr "Lomtárba helyezve"
+
+#: src/Subscription/Utils/Status.php:38
+msgctxt "Subscription status"
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: templates/admin/order/order-type-filter.php:8
+msgid "All orders types"
+msgstr "Összes rendeléstípus"
+
+#: templates/admin/order/related-subscription.php:7
+msgid "Related subscription: "
+msgid_plural "Related subscriptions: "
+msgstr[0] "Kapcsolódó előfizetés: "
+msgstr[1] "Kapcsolódó előfizetések: "
+
+#. translators: placeholder is an order number.
+#: templates/admin/order/related-subscription.php:12
+#: templates/admin/subscription/metabox/details.php:114
+#, php-format
+msgid "#%1$s"
+msgstr "#%1$s"
+
+#: templates/admin/product/general-fields.php:15
+msgid "Billing schedule"
+msgstr "Számlázási időzítés"
+
+#: templates/admin/product/general-fields.php:17
+#: templates/admin/product/variable-general-fields.php:19
+msgid "Payment frequency"
+msgstr "Fizetési gyakoriság"
+
+#: templates/admin/product/general-fields.php:19
+#: templates/admin/product/variable-general-fields.php:23
+msgctxt ""
+"Prepended in product configuration inputs to form i.e. \"every 3 day(s)\""
+msgid "every"
+msgstr "minden"
+
+#: templates/admin/product/general-fields.php:25
+#: templates/admin/product/variable-general-fields.php:29
+msgid "Interval"
+msgstr "Időköz"
+
+#: templates/admin/product/general-fields.php:38
+#: templates/admin/product/variable-general-fields.php:43
+msgid "Period"
+msgstr "Időszak"
+
+#: templates/admin/product/general-fields.php:48
+#: templates/admin/product/variable-general-fields.php:53
+msgid "Billing cycles"
+msgstr "Számlázási ciklusok"
+
+#: templates/admin/product/general-fields.php:55
+#: templates/admin/product/variable-general-fields.php:62
+msgid "Total billing cycles"
+msgstr "Számlázási ciklusok száma összesen"
+
+#. translators: %s is the length of subscription, i.e. "3 days"
+#: templates/admin/product/general-fields.php:64
+#: templates/admin/product/variable-general-fields.php:72
+#, php-format
+msgid "Expire subscription after %s"
+msgstr "Előfizetés lejárata %s után"
+
+#: templates/admin/product/general-fields.php:81
+#: templates/admin/product/variable-general-fields.php:88
+msgid "Free trial"
+msgstr "Ingyenes próbaidő"
+
+#: templates/admin/product/general-fields.php:88
+#: templates/admin/product/variable-general-fields.php:97
+msgid "trail length"
+msgstr "próbaidőszak hossza"
+
+#: templates/admin/product/general-fields.php:101
+#: templates/admin/product/variable-general-fields.php:112
+msgid "trial period"
+msgstr "próbaidőszak"
+
+#. translators: %s is a currency symbol / code.
+#: templates/admin/product/pricing-fields.php:12
+#: templates/admin/product/variable-pricing-fields.php:20
+#, php-format
+msgid "Sign-up fee (%s)"
+msgstr "Belépési díj (%s)"
+
+#: templates/admin/product/pricing-fields.php:13
+msgctxt "example price"
+msgid "e.g. 9.90"
+msgstr "pl. 9.90"
+
+#: templates/admin/product/shipping-fields.php:11
+msgid "One time shipping"
+msgstr "Egyszeri szállítás"
+
+#. translators: placeholder is the ID of the subscription.
+#: templates/admin/subscription/metabox/details.php:31
+#, php-format
+msgctxt "edit subscription header"
+msgid "Subscription #%s details"
+msgstr "Előfizetés #%s részletei"
+
+#: templates/admin/subscription/metabox/details.php:37
+msgid "General"
+msgstr "Általános"
+
+#: templates/admin/subscription/metabox/details.php:42
+msgid "Customer:"
+msgstr "Vásárló:"
+
+#: templates/admin/subscription/metabox/details.php:53
+msgid "View other subscriptions &rarr;"
+msgstr "További előfizetések megtekintése &rarr;"
+
+#: templates/admin/subscription/metabox/details.php:58
+msgid "Profile &rarr;"
+msgstr "Profil &rarr;"
+
+#: templates/admin/subscription/metabox/details.php:66
+msgid "Search for a customer&hellip;"
+msgstr "Vásárló keresése&hellip;"
+
+#: templates/admin/subscription/metabox/details.php:78
+msgid "Subscription status:"
+msgstr "Előfizetés állapota:"
+
+#: templates/admin/subscription/metabox/details.php:110
+msgid "Initial order: "
+msgstr "Kezdeti megrendelés: "
+
+#: templates/admin/subscription/metabox/details.php:122
+msgid "Initial order:"
+msgstr "Kezdeti megrendelés:"
+
+#: templates/admin/subscription/metabox/details.php:126
+msgid "Select an order&hellip;"
+msgstr "Válassz egy rendelést&hellip;"
+
+#: templates/admin/subscription/metabox/details.php:138
+msgid "Billing"
+msgstr "Számlázás"
+
+#: templates/admin/subscription/metabox/details.php:139
+#: templates/admin/subscription/metabox/details.php:231
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: templates/admin/subscription/metabox/details.php:141
+msgid "Load billing address"
+msgstr "Számlázási cím betöltése"
+
+#: templates/admin/subscription/metabox/details.php:149
+#: templates/admin/subscription/metabox/details.php:151
+#: templates/admin/subscription/metabox/details.php:242
+#: templates/admin/subscription/metabox/details.php:244
+msgid "Address"
+msgstr "Cím"
+
+#: templates/admin/subscription/metabox/details.php:151
+msgid "No billing address set."
+msgstr "Nincs megadva számlázási cím."
+
+#: templates/admin/subscription/metabox/details.php:172
+#: templates/admin/subscription/metabox/details.php:319
+#: templates/admin/subscription/metabox/details.php:332
+msgid "Payment Method"
+msgstr "Fizetési mód"
+
+#. translators: %s: gateway ID.
+#: templates/admin/subscription/metabox/details.php:177
+#: templates/admin/subscription/metabox/details.php:334
+#, php-format
+msgctxt ""
+"The gateway ID displayed on the Edit Subscriptions screen when editing "
+"payment method."
+msgid "Gateway ID: [%s]"
+msgstr "Átjáró ID: [%s]"
+
+#: templates/admin/subscription/metabox/details.php:220
+msgid "Customer change payment method page &rarr;"
+msgstr "A vásárló fizetési módjának módosítására szolgáló oldal &rarr;"
+
+#: templates/admin/subscription/metabox/details.php:222
+msgid "Customer add payment method page &rarr;"
+msgstr "A vásárló fizetési módjának hozzáadására szolgáló oldal &rarr;"
+
+#: templates/admin/subscription/metabox/details.php:230
+#: templates/checkout/recurring-item-totals/shipping/failed-to-calculate.php:5
+#: templates/checkout/recurring-item-totals/shipping/no-shipping.php:5
+#: templates/checkout/recurring-item-totals/shipping/not-selected.php:5
+#: templates/checkout/recurring-item-totals/shipping/shipping-cost.php:16
+#: assets/blocks/index.js:144 assets/dist/index.js:10
+msgid "Shipping"
+msgstr "Szállítás"
+
+#: templates/admin/subscription/metabox/details.php:233
+msgid "Load shipping address"
+msgstr "Szállítási cím betöltése"
+
+#: templates/admin/subscription/metabox/details.php:234
+msgid "Copy billing address"
+msgstr "Számlázási cím másolása"
+
+#: templates/admin/subscription/metabox/details.php:244
+msgid "No shipping address set."
+msgstr "Nincs megadva szállítási cím."
+
+#: templates/admin/subscription/metabox/details.php:267
+#: templates/admin/subscription/metabox/details.php:304
+msgid "Customer Provided Note"
+msgstr "Ügyfél által megadott megjegyzés"
+
+#: templates/admin/subscription/metabox/details.php:305
+msgid "Customer's notes about the order"
+msgstr "A vásárló rendeléshez fűzött jegyzetei"
+
+#: templates/admin/subscription/metabox/related-orders.php:78
+#: templates/myaccount/payment-requests.php:43
+msgid "Order Number"
+msgstr "Rendelésszám"
+
+#: templates/admin/subscription/metabox/related-orders.php:79
+#: templates/myaccount/payment-requests.php:22
+#: templates/myaccount/payment-requests.php:53
+msgid "Relationship"
+msgstr "Kapcsolat"
+
+#: templates/admin/subscription/metabox/related-orders.php:80
+#: templates/myaccount/payment-requests.php:21
+#: templates/myaccount/payment-requests.php:48
+msgid "Date"
+msgstr "Dátum"
+
+#: templates/admin/subscription/metabox/related-orders.php:82
+#: templates/myaccount/my-subscriptions.php:28
+#: templates/myaccount/payment-requests.php:24
+#: templates/myaccount/related-subscriptions.php:23
+#: templates/myaccount/view-subscription.php:122
+msgctxt "table heading"
+msgid "Total"
+msgstr "Összeg"
+
+#. translators: placeholder is an order number.
+#: templates/admin/subscription/metabox/related-orders.php:93
+#: templates/myaccount/my-subscriptions.php:38
+#: templates/myaccount/payment-requests.php:45
+#: templates/myaccount/related-subscriptions.php:33
+#, php-format
+msgctxt "hash before order number"
+msgid "#%s"
+msgstr "#%s"
+
+#: templates/admin/subscription/metabox/related-orders.php:100
+#: templates/admin/subscription/metabox/related-orders.php:102
+#: templates/myaccount/payment-requests.php:56
+#: templates/myaccount/payment-requests.php:58
+msgid "Renewal"
+msgstr "Megújítás"
+
+#: templates/admin/subscription/metabox/related-orders.php:122
+msgid "Unpublished"
+msgstr "Nincs közzétéve"
+
+#: templates/admin/subscription/metabox/schedule.php:29
+msgid "Billing frequency"
+msgstr "Számlázási gyakoriság"
+
+#: templates/admin/subscription/metabox/schedule.php:45
+msgid "Day(s)"
+msgstr "Nap(ok)"
+
+#: templates/admin/subscription/metabox/schedule.php:46
+msgid "Week(s)"
+msgstr "Hét(ek)"
+
+#: templates/admin/subscription/metabox/schedule.php:47
+msgid "Month(s)"
+msgstr "Hónap(ok)"
+
+#: templates/admin/subscription/metabox/schedule.php:48
+msgid "Year(s)"
+msgstr "Év(ek)"
+
+#: templates/admin/subscription/metabox/schedule.php:69
+msgid "Last Payment Date"
+msgstr "Utolsó fizetés dátuma"
+
+#: templates/admin/subscription/metabox/schedule.php:84
+msgid "Trial End Date"
+msgstr "Próbaidőszak befejezésének dátuma"
+
+#: templates/admin/subscription/metabox/schedule.php:99
+msgid "Next Payment Date"
+msgstr "Következő fizetés dátuma"
+
+#: templates/admin/subscription/metabox/schedule.php:114
+msgid "Cancelled Date"
+msgstr "Lemondás dátuma"
+
+#. translators: placeholder is a subscription ID.
+#: templates/admin/subscription/table/not-found.php:12
+#, php-format
+msgctxt "hash before subscription number"
+msgid "#%s"
+msgstr "#%s"
+
+#. translators: Placeholder is a <br> HTML tag.
+#: templates/admin/subscription/table/not-found.php:19
+#, php-format
+msgid ""
+"This subscription couldn't be loaded from the database. %s Click to learn "
+"more."
+msgstr ""
+"Ezt az előfizetést nem sikerült betölteni az adatbázisból. %s Kattints ide "
+"további tudnivalókért."
+
+#: templates/admin/subscription/table/order-title.php:12
+msgctxt "meaning billing address"
+msgid "Billing:"
+msgstr "Számlázás:"
+
+#. translators: placeholder is customer's billing email.
+#: templates/admin/subscription/table/order-title.php:17
+#, php-format
+msgid "Email: %s"
+msgstr "E-mail: %s"
+
+#. translators: placeholder is customer's billing phone number.
+#: templates/admin/subscription/table/order-title.php:22
+#, php-format
+msgid "Tel: %s"
+msgstr "Telefon: %s"
+
+#. translators: %s is user's name.
+#: templates/admin/subscription/table/order-title.php:55
+#, php-format
+msgctxt "Subscription title on admin table. Composes to \"#123 for Jane Doe\""
+msgid "for %s"
+msgstr "– Előfizető: %s"
+
+#: templates/admin/subscription/table/order-title.php:60
+msgid "Show more details"
+msgstr "További részletek megjelenítése"
+
+#. translators: Number of items in the subscription order.
+#: templates/admin/subscription/table/subscription-items-table.php:15
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d tétel"
+msgstr[1] "%d tétel"
+
+#: templates/checkout/recurring-item-details.php:12 assets/blocks/index.js:124
+#: assets/dist/index.js:10
+msgid "Details"
+msgstr "Részletek"
+
+#: templates/checkout/recurring-item-totals/discount.php:21
+#: assets/blocks/index.js:134 assets/dist/index.js:10
+msgid "Discount"
+msgstr "Kedvezmény"
+
+#: templates/checkout/recurring-item-totals/shipping/failed-to-calculate.php:8
+msgid "Failed to calculate shipping cost."
+msgstr "A szállítási költség kiszámítása sikertelen."
+
+#: templates/checkout/recurring-item-totals/shipping/no-shipping.php:8
+msgid "No shipping methods available."
+msgstr "Nem érhetők el szállítási módok."
+
+#: templates/checkout/recurring-item-totals/shipping/not-selected.php:8
+msgid "Select shipping method, to see recurring shipping cost."
+msgstr "Válassz szállítási módot az ismétlődő szállítási költség megtekintéséhez."
+
+#: templates/checkout/recurring-item-totals/subtotal.php:11
+msgid "Subtotal"
+msgstr "Részösszeg"
+
+#: templates/checkout/recurring-item-totals/tax.php:39
+msgid "Tax"
+msgstr "Adó"
+
+#: templates/checkout/recurring-shipping.php:47
+msgid "Recurring shipping"
+msgstr "Ismétlődő szállítás"
+
+#: templates/checkout/recurring-totals.php:35 assets/blocks/index.js:348
+#: assets/dist/index.js:10
+msgid "Total due today"
+msgstr "Ma fizetendő összeg"
+
+#: templates/checkout/recurring-totals.php:56
+#, php-format
+msgid "Recurring total every %s"
+msgstr "Ismétlődő összeg %s időközönként"
+
+#: templates/checkout/recurring-totals.php:60
+#, php-format
+msgid "Starting: %s"
+msgstr "Kezdés: %s"
+
+#: templates/checkout/recurring-totals.php:62
+#, php-format
+msgid "For %s"
+msgstr "Időtartam: %s"
+
+#: templates/emails/subscription-info.php:24
+msgid "Subscription information"
+msgstr "Előfizetési adatok"
+
+#: templates/emails/subscription-info.php:28
+msgctxt "subscription ID table heading"
+msgid "ID"
+msgstr "ID"
+
+#: templates/emails/subscription-info.php:29
+msgctxt "table heading"
+msgid "Start date"
+msgstr "Kezdés dátuma"
+
+#: templates/emails/subscription-info.php:30
+msgctxt "table heading"
+msgid "End date"
+msgstr "Befejezés dátuma"
+
+#: templates/emails/subscription-info.php:31
+msgctxt "table heading"
+msgid "Recurring total"
+msgstr "Rendszeres összeg"
+
+#: templates/emails/subscription-info.php:38
+#, php-format
+msgctxt "subscription number in email table. (eg: #106)"
+msgid "#%s"
+msgstr "#%s"
+
+#: templates/emails/subscription-info.php:55
+msgctxt "Used as end date for an indefinite subscription"
+msgid "When cancelled"
+msgstr "Lemondás időpontja"
+
+#: templates/emails/subscription-info.php:80
+#, php-format
+msgid ""
+"This subscription is set to renew automatically using your payment method on"
+" file. You can manage or cancel this subscription from your %1$saccount "
+"page%2$s."
+msgid_plural ""
+"These subscriptions are set to renew automatically using your payment method"
+" on file. You can manage or cancel your subscriptions from your %1$saccount "
+"page%2$s."
+msgstr[0] "Ez az előfizetés a mentett fizetési módoddal automatikusan megújul. Előfizetésedet a %1$sfiókoldaladon%2$s kezelheted vagy mondhatod le."
+msgstr[1] "Ezek az előfizetések a mentett fizetési módoddal automatikusan megújulnak. Előfizetéseidet a %1$sfiókoldaladon%2$s kezelheted vagy mondhatod le."
+
+#: templates/myaccount/my-subscriptions.php:27
+#: templates/myaccount/related-subscriptions.php:22
+#: templates/myaccount/related-subscriptions.php:39
+msgctxt "table heading"
+msgid "Next payment"
+msgstr "Következő fizetés"
+
+#: templates/myaccount/my-subscriptions.php:37
+#: templates/myaccount/related-subscriptions.php:31
+msgid "ID"
+msgstr "ID"
+
+#: templates/myaccount/my-subscriptions.php:43
+msgctxt "table heading"
+msgid "Next Payment"
+msgstr "Következő fizetés"
+
+#: templates/myaccount/my-subscriptions.php:49
+#: templates/myaccount/payment-requests.php:73
+#: templates/myaccount/related-subscriptions.php:42
+msgctxt "Used in data attribute. Escaped"
+msgid "Total"
+msgstr "Összeg"
+
+#: templates/myaccount/my-subscriptions.php:53
+#: templates/myaccount/payment-requests.php:102
+#: templates/myaccount/related-subscriptions.php:46
+msgctxt "view a subscription"
+msgid "View"
+msgstr "Megtekintés"
+
+#: templates/myaccount/my-subscriptions.php:63
+msgid "Previous"
+msgstr "Előző"
+
+#: templates/myaccount/my-subscriptions.php:67
+msgid "Next"
+msgstr "Következő"
+
+#: templates/myaccount/my-subscriptions.php:75
+#, php-format
+msgid ""
+"You have reached the end of subscriptions. Go to the %1$sfirst page%2$s."
+msgstr "Elérted az előfizetések végét. Lépj az %1$selső oldalra%2$s."
+
+#: templates/myaccount/my-subscriptions.php:77
+msgid "You have no active subscriptions."
+msgstr "Nincs aktív előfizetésed."
+
+#: templates/myaccount/my-subscriptions.php:80
+msgid "Browse products"
+msgstr "Termékek böngészése"
+
+#: templates/myaccount/payment-requests.php:20
+msgid "Order"
+msgstr "Sorrend"
+
+#: templates/myaccount/payment-requests.php:85
+msgctxt "pay for a subscription"
+msgid "Pay"
+msgstr "Fizetés"
+
+#: templates/myaccount/related-subscriptions.php:14
+msgid "Related subscriptions"
+msgstr "Kapcsolódó előfizetések"
+
+#: templates/myaccount/view-subscription.php:30
+msgctxt "customer subscription table header"
+msgid "Start date"
+msgstr "Kezdés dátuma"
+
+#: templates/myaccount/view-subscription.php:31
+msgctxt "customer subscription table header"
+msgid "Last order date"
+msgstr "Utolsó rendelés dátuma"
+
+#: templates/myaccount/view-subscription.php:32
+msgctxt "customer subscription table header"
+msgid "Next payment date"
+msgstr "Következő fizetés dátuma"
+
+#: templates/myaccount/view-subscription.php:33
+msgctxt "customer subscription table header"
+msgid "Trial end date"
+msgstr "Próbaidőszak befejezésének dátuma"
+
+#: templates/myaccount/view-subscription.php:34
+msgctxt "customer subscription table header"
+msgid "End date"
+msgstr "Befejezés dátuma"
+
+#: templates/myaccount/view-subscription.php:53
+msgid "Payment"
+msgstr "Fizetés"
+
+#: templates/myaccount/view-subscription.php:73
+msgctxt "cancel subscription"
+msgid "Cancel"
+msgstr "Mégse"
+
+#: templates/myaccount/view-subscription.php:79
+msgid "Actions"
+msgstr "Műveletek"
+
+#: templates/myaccount/view-subscription.php:91
+msgid "Subscription updates"
+msgstr "Előfizetés frissítései"
+
+#: templates/myaccount/view-subscription.php:97
+msgctxt "date on subscription updates list. Will be localized"
+msgid "l jS \\o\\f F Y, h:ia"
+msgstr "l jS \\o\\f F Y, h:ia"
+
+#: templates/myaccount/view-subscription.php:116
+msgid "Subscription totals"
+msgstr "Előfizetés összesen"
+
+#: templates/myaccount/view-subscription.php:121
+msgctxt "table headings in notification email"
+msgid "Product"
+msgstr "Termék"
+
+#: templates/single-product/add-to-cart/subscription.php:26
+msgid "You have an active subscription to this product already."
+msgstr "Már van aktív előfizetésed erre a termékre."
+
+#: templates/single-product/add-to-cart/variable-subscription.php:26
+msgid "This product is currently out of stock and unavailable."
+msgstr "Ez a termék jelenleg elfogyott, és nem érhető el."
+
+#: templates/single-product/add-to-cart/variable-subscription.php:29
+msgid "You have added a variation of this product to the cart already."
+msgstr "Már hozzáadtad ennek a terméknek egy variációját a kosárhoz."
+
+#: templates/single-product/add-to-cart/variable-subscription.php:49
+msgid "Clear"
+msgstr "Törlés"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:206
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on PHP versions older than %s. Please"
+" contact your host and ask them to upgrade."
+msgstr ""
+"A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi PHP-verzióval."
+" Kérd meg a tárhelyszolgáltatódat a frissítésre."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:209
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WordPress versions older than %s. "
+"Please update WordPress."
+msgstr ""
+"A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi WordPress-"
+"verzióval. Frissítsd a WordPress-t."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:212
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run on WooCommerce versions older than "
+"%s. Please update WooCommerce."
+msgstr ""
+"A(z) &#8222;%s&#8221; bővítmény nem futtatható %s-nél régebbi WooCommerce-"
+"verzióval. Frissítsd a WooCommerce-t."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:215
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without OpenSSL module version at "
+"least %s. Please update OpenSSL module."
+msgstr ""
+"A(z) &#8222;%s&#8221; bővítmény futtatásához legalább %s verziójú OpenSSL-"
+"modul szükséges. Frissítsd az OpenSSL-modult."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:310
+#, php-format
+msgid ""
+"The &#8220;%1$s&#8221; plugin requires at least %2$s version of %3$s to work"
+" correctly. Please update it to its latest release."
+msgstr ""
+"A(z) &#8222;%1$s&#8221; bővítmény megfelelő működéséhez legalább a(z) %3$s "
+"%2$s verziója szükséges. Frissítsd a legújabb verzióra."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:416
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s active. Please install and"
+" activate %s plugin."
+msgstr ""
+"A(z) &#8222;%s&#8221; bővítmény futtatásához aktív %s szükséges. Telepítsd "
+"és kapcsold be a(z) %s bővítményt."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:468
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin requires free %s plugin. <a href=\"%s\">Install "
+"%s</a>"
+msgstr ""
+"A(z) &#8222;%s&#8221; bővítményhez az ingyenes %s bővítmény szükséges. <a "
+"href=\"%s\">A(z) %s telepítése</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:474
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin requires activating %s plugin. <a "
+"href=\"%s\">Activate %s</a>"
+msgstr ""
+"A(z) &#8222;%s&#8221; bővítményhez be kell kapcsolnod a(z) %s bővítményt. <a"
+" href=\"%s\">A(z) %s bekapcsolása</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:516
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP module installed. "
+"Please contact your host and ask them to install %s."
+msgstr ""
+"A(z) &#8220;%s&#8221; bővítmény futtatásához telepíteni kell a(z) %s PHP-"
+"modult. Kérd meg a tárhelyszolgáltatódat a(z) %s telepítésére."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:541
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin cannot run without %s PHP setting set to %s. "
+"Please contact your host and ask them to set %s."
+msgstr ""
+"A(z) &#8220;%s&#8221; bővítmény futtatásához a(z) %s PHP-beállítás értéke "
+"legyen %s. Kérd meg a tárhelyszolgáltatódat, hogy állítsa be a(z) %s "
+"értékét."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker_With_Update_Disable.php:29
+#, php-format
+msgid ""
+"The &#8220;%s&#8221; plugin is temporarily disabled since the required %s "
+"plugin is being upgraded."
+msgstr ""
+"A(z) &#8220;%s&#8221; bővítmény átmenetileg ki van kapcsolva, mert a "
+"szükséges %s bővítmény frissítése folyamatban van."
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/input-image.php:46
+msgid "Set image"
+msgstr "Kép beállítása"
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/input-image.php:57
+msgid "Remove image"
+msgstr "Kép eltávolítása"
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/input-image.php:82
+msgid "Select or Upload Media"
+msgstr "Média kiválasztása vagy feltöltése"
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/input-image.php:86
+msgid "Use this media"
+msgstr "Média használata"
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/product-select.php:22
+msgid "Search for a product&hellip;"
+msgstr "Termék keresése&hellip;"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:160
+msgid "day"
+msgstr "nap"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:162
+msgid "week"
+msgstr "hét"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:164
+msgid "month"
+msgstr "hónap"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:166
+msgid "year"
+msgstr "év"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:168
+msgid "hour"
+msgstr "óra"
+
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:170
+msgid "minute"
+msgstr "perc"
+
+#. translators: %d: number of days.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:178
+#, php-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d nap"
+msgstr[1] "%d nap"
+
+#. translators: %d: number of weeks.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:181
+#, php-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] "%d hét"
+msgstr[1] "%d hét"
+
+#. translators: %d: number of months.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:184
+#, php-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d hónap"
+msgstr[1] "%d hónap"
+
+#. translators: %d: number of years.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:187
+#, php-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d év"
+msgstr[1] "%d év"
+
+#. translators: %d: number of hours.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:190
+#, php-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d óra"
+msgstr[1] "%d óra"
+
+#. translators: %d: number of minutes.
+#: vendor_prefixed/wpdesk/wp-interval/src/WPInterval.php:193
+#, php-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d perc"
+msgstr[1] "%d perc"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Disabled"
+msgstr "Letiltva"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Emergency"
+msgstr "Vészhelyzet"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Alert"
+msgstr "Riasztás"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Critical"
+msgstr "Kritikus"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Error"
+msgstr "Hiba"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Warning"
+msgstr "Figyelem"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Notice"
+msgstr "Értesítés"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Info"
+msgstr "Információ"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Debug"
+msgstr "Hibakeresés"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:23
+#, php-format
+msgid ""
+"Can not enable WP Desk Debug log! Cannot create directory %s or this "
+"directory is not writeable!"
+msgstr ""
+"Nem sikerült bekapcsolni a WP Desk hibakeresési naplóját! Nem lehet "
+"létrehozni a(z) %s könyvtárat, vagy a könyvtár nem írható!"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:36
+#, php-format
+msgid "Can not enable WP Desk Debug log! Cannot create file %s!"
+msgstr ""
+"Nem sikerült bekapcsolni a WP Desk hibakeresési naplóját! Nem lehet "
+"létrehozni a(z) %s fájlt!"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/class-wpdesk-tracker.php:194
+msgid "Submit &amp; Deactivate"
+msgstr "Küldés és kikapcsolás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/OptOut.php:41
+#, php-format
+msgid ""
+"You successfully opted out of collecting usage data by %1$s. If you change "
+"your mind, you can always opt in later in the plugin's quick links."
+msgstr ""
+"Sikeresen leiratkoztál a használati adatok gyűjtéséről ezzel: %1$s. Ha "
+"meggondolod magad, később bármikor feliratkozhatsz a bővítmény "
+"gyorshivatkozásain keresztül."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/PluginActionLinks.php:69
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:43
+msgid "Enable usage tracking"
+msgstr "Használatkövetés bekapcsolása"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/PluginActionLinks.php:74
+msgid "Disable usage tracking"
+msgstr "Használatkövetés kikapcsolása"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:23
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:19
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:21
+#, php-format
+msgid "Hey %s,"
+msgstr "Szia %s,"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:26
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:22
+msgid ""
+"Please help us improve our plugins! If you opt-in, we will collect some non-"
+"sensitive data and usage information anonymously. If you skip this, that's "
+"okay! All plugins will work just fine."
+msgstr ""
+"Segíts nekünk jobbá tenni a bővítményeinket! Ha engedélyezed az "
+"adatgyűjtést, névtelenül gyűjtünk néhány nem érzékeny adatot és használati "
+"információt. Ha kihagyod ezt, az is rendben van! Minden bővítményünk így is "
+"megfelelően működik."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:35
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:31
+msgid "Allow & Continue &rarr;"
+msgstr "Engedélyezés és folytatás &rarr;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:40
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:36
+msgid "Skip"
+msgstr "Kihagyás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:47
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:43
+msgid "What permissions are being granted?"
+msgstr "Milyen engedélyeket adsz meg?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:56
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:52
+msgid "Your Site Overview"
+msgstr "A webhelyed áttekintése"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:59
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:55
+msgid "WP version, PHP info"
+msgstr "WP-verzió, PHP-adatok"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:67
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:63
+msgid "Plugin Usage"
+msgstr "Bővítményhasználat"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:70
+#, php-format
+msgid "Current settings and usage information of %1$s plugins"
+msgstr "A(z) %1$s bővítményeinek aktuális beállításai és használati adatai"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:78
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:74
+msgid "Your Store Overview"
+msgstr "Az áruházad áttekintése"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:81
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:77
+msgid "Anonymized and non-sensitive store usage information"
+msgstr "Anonimizált, nem érzékeny áruházi használati adatok"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/views/tracker-connect.php:91
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:87
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:29
+msgid "Find out more &raquo;"
+msgstr "Tudj meg többet &raquo;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:66
+msgid "Current settings and usage information of WP Desk plugins"
+msgstr "A WP Desk bővítményeinek aktuális beállításai és használati adatai"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:12
+#, php-format
+msgid "You are deactivating %s plugin."
+msgstr "Kikapcsolod a(z) %s bővítményt."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:20
+msgid ""
+" If you have a moment, please let us know why you are deactivating plugin "
+"(anonymous feedback):"
+msgstr ""
+"Ha van egy perced, mondd el, miért kapcsolod ki a bővítményt (névtelen "
+"visszajelzés):"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:29
+msgid "The plugin suddenly stopped working"
+msgstr "A bővítmény váratlanul leállt"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:39
+msgid "The plugin broke my site"
+msgstr "A bővítmény tönkretette a webhelyemet"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:49
+msgid "I found a better plugin"
+msgstr "Találtam egy jobb bővítményt"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:54
+msgid "What's the plugin's name?"
+msgstr "Mi a bővítmény neve?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:64
+msgid "I only needed the plugin for a short period"
+msgstr "Csak rövid ideig volt szükségem a bővítményre"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:74
+msgid "I no longer need the plugin"
+msgstr "Többé nincs szükségem erre a bővítményre"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:84
+msgid "It's a temporary deactivation. I'm just debugging an issue."
+msgstr ""
+"Ez csak ideiglenes kikapcsolás. Épp egy probléma elhárításán dolgozom."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:94
+msgid "Other"
+msgstr "Egyéb"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:99
+msgid "Kindly tell us the reason so we can improve"
+msgstr "Mondd el az okát, hogy továbbfejleszthessük"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:108
+msgid "Cancel"
+msgstr "Mégse"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:111
+msgid "Skip &amp; Deactivate"
+msgstr "Kihagyás és kikapcsolás"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:24
+msgid ""
+"We need your help to improve <strong>WP Desk plugins</strong>, so they are "
+"more useful for you and the rest of <strong>30,000+ users</strong>. By "
+"collecting data on how you use our plugins, you will help us a lot. We will "
+"not collect any sensitive data, so you can feel safe."
+msgstr ""
+"Segíts nekünk továbbfejleszteni a <strong>WP Desk bővítményeket</strong>, "
+"hogy hasznosabbak legyenek neked és a többi <strong>30 000+ "
+"felhasználónak</strong>. Ha adatokat gyűjtünk arról, hogyan használod a "
+"bővítményeinket, azzal sokat segítesz nekünk. Nem gyűjtünk érzékeny "
+"adatokat, ezért nyugodt lehetsz."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-opt-out-notice.php:11
+msgid ""
+"You successfully opted out of collecting usage data by WP Desk. If you "
+"change your mind, you can always opt in later in the plugin's quick links."
+msgstr ""
+"Sikeresen letiltottad a WP Desk használati adatainak gyűjtését. Ha "
+"meggondolod magad, később bármikor engedélyezheted a bővítmény "
+"gyorshivatkozásainál."
+
+#: assets/admin/js/product.js:183
+msgid "Subscription pricing"
+msgstr "Előfizetési árképzés"
+
+#: assets/admin/js/product.js:187
+msgid "Learn more about subscription pricing"
+msgstr "További tudnivalók az előfizetéses árakról"
+
+#: assets/admin/js/product.js:189
+msgid "https://wpdesk.net/sk/flexible-subscriptions-docs-sub-product-en"
+msgstr "https://wpdesk.net/sk/flexible-subscriptions-docs-sub-product-en"
+
+#: assets/admin/js/subscription-schedule.js:33
+msgid "Please select a future start date."
+msgstr "Válassz egy jövőbeli kezdő dátumot."
+
+#: assets/admin/js/subscription-schedule.js:41
+msgid "Trial end date should be before the subscription end date."
+msgstr "A próbaidőszak befejezési dátumának meg kell előznie az előfizetés befejezési dátumát."
+
+#: assets/admin/js/subscription-schedule.js:43
+msgid "Trial end date should be after the start date."
+msgstr "A próbaidőszak befejezési dátumának a kezdő dátum után kell lennie."
+
+#: assets/admin/js/subscription-schedule.js:45
+msgid "Trial end date cannot be after the next payment date."
+msgstr "A próbaidőszak befejezési dátuma nem lehet a következő fizetési dátum után."
+
+#: assets/admin/js/subscription-schedule.js:55
+msgid "End date must be after the start date."
+msgstr "A befejezés dátumának a kezdő dátum után kell lennie."
+
+#: assets/admin/js/subscription-schedule.js:57
+msgid "End date must be after the last payment date date."
+msgstr "A befejezés dátumának az utolsó fizetési dátum után kell lennie."
+
+#: assets/admin/js/subscription-schedule.js:65
+msgid "Next payment date must be after the start date."
+msgstr "A következő fizetési dátumnak a kezdő dátum után kell lennie."
+
+#: assets/admin/js/subscription-schedule.js:67
+msgid "Next payment date must be after the last payment date."
+msgstr "A következő fizetési dátumnak az utolsó fizetési dátum után kell lennie."
+
+#: assets/admin/js/subscription-schedule.js:69
+msgid "Next payment date should be before the end date."
+msgstr "A következő fizetési dátumnak a befejezés dátuma előtt kell lennie."
+
+#: assets/admin/js/subscription-schedule.js:71
+msgid "Next payment date cannot be in the past."
+msgstr "A következő fizetési dátum nem lehet múltbeli."
+
+#: assets/admin/js/subscription-schedule.js:118
+msgid "Next payment date aligned to trial end date."
+msgstr "A következő fizetési dátum a próbaidőszak befejezési dátumához igazodik."
+
+#: assets/admin/js/subscription-schedule.js:164
+msgid "Next payment date updated because billing period changed."
+msgstr "A számlázási időszak módosulása miatt frissült a következő fizetési dátum."
+
+#. translators: %s: recurring interval string (e.g. "month" or "every 2
+#. weeks").
+#: assets/blocks/index.js:82 assets/dist/index.js:4
+#, js-format
+msgid "Recurring total (every %s)"
+msgstr "Ismétlődő összeg (%s időközönként)"
+
+#. translators: %s: expiration period (e.g. "for 6 months").
+#: assets/blocks/index.js:90 assets/dist/index.js:7
+#, js-format
+msgid "for %s"
+msgstr "%s számára"
+
+#. translators: %s: formatted date.
+#: assets/blocks/index.js:97 assets/dist/index.js:10
+#, js-format
+msgid "First renewal: %s"
+msgstr "Első megújítás: %s"
+
+#: assets/blocks/index.js:107 assets/dist/index.js:10
+msgid "Free"
+msgstr "Ingyenes"
+
+#. translators: %s is the subscription price to pay immediately (e.g. "$10").
+#: assets/blocks/index.js:359 assets/dist/index.js:13
+#, js-format
+msgid "%s due today"
+msgstr "%s ma esedékes"
